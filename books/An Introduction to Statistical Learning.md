@@ -1,3 +1,5 @@
+An Introduction To Statistical Learning with Applications in R (ISLR Sixth Printing)을 읽으며 
+
 # 1. Introduction
 
 ## Organization of This Book
@@ -22,5 +24,5 @@ In order to motivate our study of statistical learning, we begin with a simple e
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDg5ODQ4OTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE5OTIwOTc2NzIsNzMwOTk4MTE2XX0=
 -->
