@@ -1,5 +1,4 @@
-# ISLR()
-
+# 1. Introduction
 
 ## Organization of This Book
 
@@ -13,14 +12,15 @@ The remaining chapters move into the world of non-linear statistical learning. W
 
 At the end of each chapter, we present one or more R lab sections in which we systematically work through applications of the various meth- ods discussed in that chapter. These labs demonstrate the strengths and weaknesses of the various approaches, and also provide a useful reference for the syntax required to implement the various methods. The reader may choose to work through the labs at his or her own pace, or the labs may be the focus of group sessions as part of a classroom environment. Within each R lab, we present the results that we obtained when we performed the lab at the time of writing this book. However, new versions of R are continuously released, and over time, the packages called in the labs will be updated. Therefore, in the future, it is possible that the results shown in the lab sections may no longer correspond precisely to the results obtained by the reader who performs the labs. As necessary, we will post updates to the labs on the book website.
 
-# 1. Introduction
-
 # 2. Statistical Learning
 
+## 2.1 What Is Statistical Learning?
+
+In order to motivate our study of statistical learning, we begin with a simple example. Suppose that we are statistical consultants hired by a client to provide advice on how to improve sales of a particular product. The Advertising data set consists of the sales of that product in 200 different markets, along with advertising budgets for the product in each of those markets for three different media: TV, radio, and newspaper. The data are displayed in Figure 2.1. It is not possible for our client to directly increase sales of the product. On the other hand, they can control the advertising expenditure in each of the three media. Therefore, if we determine that there is an association between advertising and sales, then we can instruct our client to adjust advertising budgets, thereby indirectly increasing sales. In other words, our goal is to develop an accurate model that can be used to predict sales on the basis of the three media budgets.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDk5NzkyODQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE0NDg5ODQ4OTQsNzMwOTk4MTE2XX0=
 -->
