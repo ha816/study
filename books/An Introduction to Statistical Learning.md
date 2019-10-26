@@ -13,12 +13,14 @@ The remaining chapters move into the world of non-linear statistical learning. W
 
 At the end of each chapter, we present one or more R lab sections in which we systematically work through applications of the various meth- ods discussed in that chapter. These labs demonstrate the strengths and weaknesses of the various approaches, and also provide a useful reference for the syntax required to implement the various methods. The reader may choose to work through the labs at his or her own pace, or the labs may be the focus of group sessions as part of a classroom environment. Within each R lab, we present the results that we obtained when we performed the lab at the time of writing this book. However, new versions of R are continuously released, and over time, the packages called in the labs will be updated. Therefore, in the future, it is possible that the results shown in the lab sections may no longer correspond precisely to the results obtained by the reader who performs the labs. As necessary, we will post updates to the labs on the book website.
 
+# 1. Introduction
 
+# 2. Statistical Learning
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTU0MDA4Miw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE2NDk5NzkyODQsNzMwOTk4MTE2XX0=
 -->
