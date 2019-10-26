@@ -1,7 +1,18 @@
-#
+# ISLR()
+
+
+## Organization of This Book
+
+Chapter 2 introduces the basic terminology(용어, 단어 and concepts behind statisti- cal learning. This chapter also presents the K-nearest neighbor classifier, a very simple method that works surprisingly well on many problems. Chap- ters 3 and 4 cover classical linear methods for regression and classification. In particular, Chapter 3 reviews linear regression, the fundamental start- ing point for all regression methods. In Chapter 4 we discuss two of the most important classical classification methods, logistic regression and lin- ear discriminant analysis.
+
+A central problem in all statistical learning situations involves choosing the best method for a given application. Hence, in Chapter 5 we intro- duce cross-validation and the bootstrap, which can be used to estimate the accuracy of a number of different methods in order to choose the best one.
+
+Much of the recent research in statistical learning has concentrated on non-linear methods. However, linear methods often have advantages over their non-linear competitors in terms of interpretability and sometimes also accuracy. Hence, in Chapter 6 we consider a host of linear methods, both classical and more modern, which offer potential improvements over stan- dard linear regression. These include stepwise selection, ridge regression, principal components regression, partial least squares, and the lasso.
+
+The remaining chapters move into the world of non-linear statistical learning. We first introduce in Chapter 7 a number of non-linear methods that work well for problems with a single input variable. We then show how these methods can be used to fit non-linear additive models for which there is more than one input. In Chapter 8, we investigate tree-based methods, including bagging, boosting, and random forests. Support vector machines, a set of approaches for performing both linear and non-linear classification
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDM2MzQ0NjcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMjA1NjgxNzgxMiw3MzA5OTgxMTZdfQ==
 -->
