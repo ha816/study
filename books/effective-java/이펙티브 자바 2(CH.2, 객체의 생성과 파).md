@@ -31,7 +31,7 @@ public static Boolean valueOf(boolean b) {
 
 #### 4. 입력 매개변수에 따라 매번 다른 클래스의 객체를 반환할 수 있다. 
 
-반환 타입ㅇ
+반환 타입의 하위 타입이기만 하면 어떤 클래스의 객체를 반환하든 상관이 없다. 
 
 
 
@@ -55,7 +55,7 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzcxNTYwMTUsMTQ1NjgwNDQwNywtMT
-U1MzU0OTQzNiwtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNTUw
-NTEzMjk2LC0xMTM3NzE5MDE1XX0=
+eyJoaXN0b3J5IjpbMTU0NDY3OTE2MywxNDU2ODA0NDA3LC0xNT
+UzNTQ5NDM2LC0xMzgxNjMwOTU0LC0xODgwMDA0MjA2LDE1NTA1
+MTMyOTYsLTExMzc3MTkwMTVdfQ==
 -->
