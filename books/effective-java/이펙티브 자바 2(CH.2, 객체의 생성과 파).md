@@ -17,7 +17,7 @@ public static Boolean valueOf(boolean b) {
 먼저 장점 다섯 가지를 알아보자
 
 #### 1. 이름을 가질 수 있다.  
-생성자에 넘기는 매개변수와 생성자 자체만으로는 반활된 객체의 특성을 제대로 설명하지 못한다.
+기존에 생성자를 사용하면 생성자에 넘기는 매개변수와 생성자 자체만으로는 반환될 객체의 특성을 제대로 설명하지 못한다. 
 
 
 
@@ -40,6 +40,6 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzg4MDE3OTksMTU1MDUxMzI5NiwtMT
-EzNzcxOTAxNV19
+eyJoaXN0b3J5IjpbMzE4Mjg0MDAsMTU1MDUxMzI5NiwtMTEzNz
+cxOTAxNV19
 -->
