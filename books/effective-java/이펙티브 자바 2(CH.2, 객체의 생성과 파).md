@@ -27,7 +27,8 @@ public static Boolean valueOf(boolean b) {
 
 #### 3. 반환 타입의 하위 타입 객체를 반환할 수 있는 능력이 있다.
 
-기존의 생성자에서는 자기자신 클래스의 인스턴스만 반환할 수 있다. 반면에 정적 팩토리 메서드는 반환될 객체의 클래스를 자유롭게 선택할 수 있다. 따라서 실제 구현 클래스를 대신 인터페이스를 반환 타입으로 하여 
+기존의 생성자에서는 자기자신 클래스의 인스턴스만 반환할 수 있다. 반면에 정적 팩토리 메서드는 반환될 객체의 클래스를 자유롭게 선택할 수 있다. 따라서 실제 구현 클래스를 대신 인터페이스를 반환할 수 있다. 물론 이는 일반적으로 좋은 코딩 습관이다. 또 인터페이스 기반 프레임워크를 만드는데 핵심 기술이기도 한다. 
+
 
 API를 만들때 실제 구현 클래스를 공개하지 않고도 그 객체를 반환 할 수 있어 API를 작게 유지가 가능하다.  이는 인터페이스를 정적 페터리 메서드의 반환 타입으로 사용하는 인터페이스 기반 프레임워크를 만드는데 핵심 기술이기도 한다. 
 
@@ -53,7 +54,7 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE0NTE5OTY0LC0xNTUzNTQ5NDM2LC0xMz
-gxNjMwOTU0LC0xODgwMDA0MjA2LDE1NTA1MTMyOTYsLTExMzc3
-MTkwMTVdfQ==
+eyJoaXN0b3J5IjpbMTY1ODQ1Mjc0NiwtMTU1MzU0OTQzNiwtMT
+M4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNTUwNTEzMjk2LC0xMTM3
+NzE5MDE1XX0=
 -->
