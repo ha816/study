@@ -23,7 +23,9 @@ public static Boolean valueOf(boolean b) {
 
 #### 2. 호출될 때마다 인스턴스를 새로 생성하지 않아도 된다.
 
+생성자는 호출될 때마다 새로운 인스턴스를 
 불변 클래스는 
+
 
 
 
@@ -46,6 +48,6 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4OTIzODEyLC0xODgwMDA0MjA2LDE1NT
+eyJoaXN0b3J5IjpbODY1NjcyNjE2LC0xODgwMDA0MjA2LDE1NT
 A1MTMyOTYsLTExMzc3MTkwMTVdfQ==
 -->
