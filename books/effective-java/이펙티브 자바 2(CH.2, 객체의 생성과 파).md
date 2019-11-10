@@ -31,7 +31,7 @@ public static Boolean valueOf(boolean b) {
 
 #### 4. 입력 매개변수에 따라 매번 다른 클래스의 객체를 반환할 수 있다. 
 
-사실 반환 타입의 하위 타입이기만 하면 어떤 클래스의 객체를 반환하든 상관이 없다. 
+사실 정적 팩터리 메서드는 반환 타입의 하위 타입이기만 하면 어떤 클래스의 객체를 반환하든 상관이 없다. 
 
 
 
@@ -55,7 +55,7 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI0NjI2OTk5LDE0NTY4MDQ0MDcsLTE1NT
+eyJoaXN0b3J5IjpbMTg4ODI5MzgyLDE0NTY4MDQ0MDcsLTE1NT
 M1NDk0MzYsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUx
 MzI5NiwtMTEzNzcxOTAxNV19
 -->
