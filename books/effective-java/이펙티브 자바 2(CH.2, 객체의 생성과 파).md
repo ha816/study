@@ -2,7 +2,9 @@
 
 ## 생성자 대신 정적 팩토리 메서드를 고려하라.
 
-클라이언트가 클래스의 인스턴스를 얻는 전통적 수단은 public 생성자다. 
+클라이언트가 클래스의 인스턴스를 얻는 전통적 수단은 public 생성자다. 하지만 그 뿐만아니라 클래스는 생성자와 별도로 **정적 팩터리 메서드(static factory method)**를 제공할 수 있다. 
+
+
 
 
 From, With,
@@ -22,5 +24,5 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjkyNTczNjJdfQ==
+eyJoaXN0b3J5IjpbLTg5MzI4OTMxNl19
 -->
