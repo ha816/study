@@ -33,7 +33,7 @@ public static Boolean valueOf(boolean b) {
 
 사실 정적 팩터리 메서드는 반환 타입의 하위 타입이기만 하면 어떤 클래스의 객체를 반환하든 상관이 없다. 클라이언트는 팩터리가 던져주는 객체가 어느 클래스의 인스턴스인지 알  수 없고 알 필요도 없다. 그저 반환 타입이 인스턴스를 사용하기에 문제만 없으면 된다. 
 
-상황에 따라 그 상황에 맞는 적절한 인스턴스를 사용할 필요가 있다. 입력 매개변수에 포함된 어떤 상황에 따라서, 정적 팩토리 메서드에서는 적절한 객체를 반환한다. 예를 들어 EnumSet 클래스는 원소가 64개 이하면 원소들을 long 변수 하나로 관리하는 RegularEnumSet
+상황에 따라 그 상황에 맞는 적절한 인스턴스를 사용할 필요가 있다. 입력 매개변수에 포함된 어떤 상황에 따라서, 정적 팩토리 메서드에서는 적절한 객체를 반환한다. 예를 들어 EnumSet 클래스의 정적 팩터 원소가 64개 이하면 원소들을 long 변수 하나로 관리하는 RegularEnumSet을 반환하고 
 
 
 
@@ -57,7 +57,8 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MTI4NjgyNywtOTk5MjU4MzIyLDE0NT
-Y4MDQ0MDcsLTE1NTM1NDk0MzYsLTEzODE2MzA5NTQsLTE4ODAw
-MDQyMDYsMTU1MDUxMzI5NiwtMTEzNzcxOTAxNV19
+eyJoaXN0b3J5IjpbLTMyMzcxNTM1MiwtMzgxMjg2ODI3LC05OT
+kyNTgzMjIsMTQ1NjgwNDQwNywtMTU1MzU0OTQzNiwtMTM4MTYz
+MDk1NCwtMTg4MDAwNDIwNiwxNTUwNTEzMjk2LC0xMTM3NzE5MD
+E1XX0=
 -->
