@@ -49,7 +49,11 @@ public static Boolean valueOf(boolean b) {
 
 #### 1. 상속을 하려면 public이나 protected 생성자가 필요하니 정적 팩토리 메서드만 제공하면 하위 클래스를 만들수가 없다. 
 
-생성자 없이 정적 팩토리 메서드만 제공하는 클래스가 있다고 하자. 그러면 생성자가 없기 때문에 이 클래스를 상속하는 하위 클래스를 만들수가 없다. 어찌 보면 이 제약은 상속보다 컴포지션을 사용하는 것이 좋다는 관점과 불변 타입 클래스는  관점에서는 장점으로 느껴질수도 있다. 
+생성자 없이 정적 팩토리 메서드만 제공하는 클래스가 있다고 하자. 그러면 생성자가 없기 때문에 이 클래스를 상속하는 하위 클래스를 만들수가 없다. 어찌 보면 이 제약은 상속보다 컴포지션을 사용하는 것이 좋다는 관점과 불변 타입 클래스는 상속이 불가하다는 관점에서는 장점으로 느껴질수도 있다. 
+
+#### 2. 정적 팩터리 메서드는 프로그래머가 찾기 어렵다. 
+
+생성자 처럼 API 설명에 명확히 드러나지 않으니 사용자는 정적 팩터리 메서드 방식 클래스를 인스턴스화하는 방법을 찾아봐야 한다.  따라서 정적 팩터리 메서드에  
 
 
 
@@ -77,9 +81,9 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ0NDUyODUyLC0xOTcyMDAzNjA0LDI3Mj
-U1MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0MzI5NiwtMzgxMjg2
-ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywtMTU1MzU0OTQzNi
-wtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNTUwNTEzMjk2LC0x
-MTM3NzE5MDE1XX0=
+eyJoaXN0b3J5IjpbLTE1MDA1MDcyNDAsLTE5NzIwMDM2MDQsMj
+cyNTUwMzAwLC0yMTE1MzgwNjUyLC0xNTg4MzQzMjk2LC0zODEy
+ODY4MjcsLTk5OTI1ODMyMiwxNDU2ODA0NDA3LC0xNTUzNTQ5ND
+M2LC0xMzgxNjMwOTU0LC0xODgwMDA0MjA2LDE1NTA1MTMyOTYs
+LTExMzc3MTkwMTVdfQ==
 -->
