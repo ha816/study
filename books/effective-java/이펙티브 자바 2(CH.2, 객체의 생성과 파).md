@@ -33,8 +33,8 @@ instance, getInstance
 create, new Instance
 : instance, getInstance와 같지만, 언제나 새로운 인스턴스를 생성해서 반환한다.
 
-getType
-: 생성할 클래스가 아닌 다른 클래스에 팩터리 메서드를 정의할때 쓴다. "Type"은 팩터리 메서드가 반환할 객체의 타입이다. 
+get[Type]
+: 정적 팩터리 메서드를 가지는 생성할 클래스가 아닌 다른 클래스에 팩터리 메서드를 정의할때 쓴다. "Type"은 팩터리 메서드가 반환할 객체의 타입이다. 
 FileStore fs = Files.getFileStore(path);
 
 
@@ -112,9 +112,9 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0Njg1NjU4NCwtMTk3MjAwMzYwNCwyNz
-I1NTAzMDAsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4
-NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1NDk0Mz
-YsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMzI5Niwt
-MTEzNzcxOTAxNV19
+eyJoaXN0b3J5IjpbNzA5NzU5MDgzLC0xOTcyMDAzNjA0LDI3Mj
+U1MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0MzI5NiwtMzgxMjg2
+ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywtMTU1MzU0OTQzNi
+wtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNTUwNTEzMjk2LC0x
+MTM3NzE5MDE1XX0=
 -->
