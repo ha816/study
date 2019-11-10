@@ -47,7 +47,7 @@ public static Boolean valueOf(boolean b) {
 
 ### 정적 팩터리 메서드의 단점
 
-
+#### 1.
 
 
 
@@ -75,8 +75,9 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcyNTUwMzAwLC0yMTE1MzgwNjUyLC0xNT
-g4MzQzMjk2LC0zODEyODY4MjcsLTk5OTI1ODMyMiwxNDU2ODA0
-NDA3LC0xNTUzNTQ5NDM2LC0xMzgxNjMwOTU0LC0xODgwMDA0Mj
-A2LDE1NTA1MTMyOTYsLTExMzc3MTkwMTVdfQ==
+eyJoaXN0b3J5IjpbNDY5NTc4NTc1LDI3MjU1MDMwMCwtMjExNT
+M4MDY1MiwtMTU4ODM0MzI5NiwtMzgxMjg2ODI3LC05OTkyNTgz
+MjIsMTQ1NjgwNDQwNywtMTU1MzU0OTQzNiwtMTM4MTYzMDk1NC
+wtMTg4MDAwNDIwNiwxNTUwNTEzMjk2LC0xMTM3NzE5MDE1XX0=
+
 -->
