@@ -17,15 +17,15 @@ public static Boolean valueOf(boolean b) {
 
 from
 : 매개변수를 하나 받아서 해당 타입의 인스턴스를 반환하는 형변환 메서드 이름
-Date d = Date.from(instant);
+```Date d = Date.from(instant);```
 
 of
 : 여러 매개변수를 받아 적합한 타입의 인스턴스를 반환하는 집계 메서드
-Set<Rank> faceCards = EnumSet.of(JACK, QUEEN, KING);
+```Set<Rank> faceCards = EnumSet.of(JACK, QUEEN, KING);```
 
 valueOf
 : from과 of의 더 자세한 버전
-BigInteger prime = BigInter.valueOf(Integer.MAX_VALUE)
+```BigInteger prime = BigInter.valueOf(Integer.MAX_VALUE)```
 
 instance, getInstance
 : (매개변수를 받는다면) 매개변수로 명시한 인스턴스를 반환하지만, 같은 인스턴스임을 보장하지는 않는다. 
@@ -34,8 +34,8 @@ create, new Instance
 : instance, getInstance와 같지만, 언제나 새로운 인스턴스를 생성해서 반환한다.
 
 get[Type]
-: 정적 팩터리 메서드를 가지는 생성할 클래스가 아닌 다른 클래스에 팩터리 메서드를 정의할때 쓴다. "Type"은 팩터리 메서드가 반환할 객체의 타입이다. 
-FileStore fs = Files.getFileStore(path);
+: 정적 팩터리 메서드를 가지는 클래스가 아닌 다른 클래스 인스턴스를 반환할때 쓴다. `Type`은 팩터리 메서드가 반환할 다른 클래스 객체의 타입이다. 
+```FileStore fs = Files.getFileStore(path); ```
 
 
 
@@ -112,9 +112,9 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA5NzU5MDgzLC0xOTcyMDAzNjA0LDI3Mj
-U1MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0MzI5NiwtMzgxMjg2
-ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywtMTU1MzU0OTQzNi
-wtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNTUwNTEzMjk2LC0x
-MTM3NzE5MDE1XX0=
+eyJoaXN0b3J5IjpbMTAyMDQ0NjExMSwtMTk3MjAwMzYwNCwyNz
+I1NTAzMDAsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4
+NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1NDk0Mz
+YsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMzI5Niwt
+MTEzNzcxOTAxNV19
 -->
