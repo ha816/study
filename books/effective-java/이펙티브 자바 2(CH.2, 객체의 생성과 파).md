@@ -31,7 +31,9 @@ public static Boolean valueOf(boolean b) {
 
 #### 4. 입력 매개변수에 따라 매번 다른 클래스의 객체를 반환할 수 있다. 
 
-사실 정적 팩터리 메서드는 반환 타입의 하위 타입이기만 하면 어떤 클래스의 객체를 반환하든 상관이 없다. 클라이언트는 팩터리가 던져주는 객체가 어느 클래스의 인스턴스인지 알  수 없고 알 필요도 없다. 그저 반환 타입을 
+사실 정적 팩터리 메서드는 반환 타입의 하위 타입이기만 하면 어떤 클래스의 객체를 반환하든 상관이 없다. 클라이언트는 팩터리가 던져주는 객체가 어느 클래스의 인스턴스인지 알  수 없고 알 필요도 없다. 그저 반환 타입이 인스턴스를 사용하기에 문제만 없으면 된다. 
+
+상황에 따라 적절한 인스턴스를 
 
 
 
@@ -55,7 +57,7 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NDAwNDk3MSwxNDU2ODA0NDA3LC0xNT
+eyJoaXN0b3J5IjpbMjExODI5Mzg5NywxNDU2ODA0NDA3LC0xNT
 UzNTQ5NDM2LC0xMzgxNjMwOTU0LC0xODgwMDA0MjA2LDE1NTA1
 MTMyOTYsLTExMzc3MTkwMTVdfQ==
 -->
