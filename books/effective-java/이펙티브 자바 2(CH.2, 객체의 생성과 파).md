@@ -42,19 +42,8 @@ new[Type]
 ```BufferedReader br = Files.newBufferedReader(path)```
 
 type
-: get[Type]과 new[Type]의 간결한 버전
-```List```
-
-
-
-
-
-
-
-
-
-
-
+: get[Type]과 new[Type]의 간결한 버전. 따라서 언제나 새로운 인스턴스인지 같은 인스턴스인지 알수가 없다.
+```List<Complaint> litany = Collections.list(legacyLitany);```
 
 ### 정적 팩터리 메서드의 장점
 먼저 장점 다섯 가지를 알아보자
@@ -122,9 +111,9 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNjkwNDMwMSwtMTk3MjAwMzYwNCwyNz
-I1NTAzMDAsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4
-NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1NDk0Mz
-YsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMzI5Niwt
-MTEzNzcxOTAxNV19
+eyJoaXN0b3J5IjpbNDExMTQ4OTMyLC0xOTcyMDAzNjA0LDI3Mj
+U1MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0MzI5NiwtMzgxMjg2
+ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywtMTU1MzU0OTQzNi
+wtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNTUwNTEzMjk2LC0x
+MTM3NzE5MDE1XX0=
 -->
