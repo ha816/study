@@ -13,7 +13,10 @@ public static Boolean valueOf(boolean b) {
 >주의!!
 >여기서 이야기하는 정적 팩터리 메서드는 디자인 패턴에서의 팩터리 메서드(Factory Method)와 다르다. 디자인 패턴 중에서 이와 일치하는 패턴은 없다. 
 
-* 
+### 정적 팩터리 메서드의 장점과 단점
+
+###
+
 
 
 From, With,
@@ -33,5 +36,6 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MDUxMzI5NiwtMTEzNzcxOTAxNV19
+eyJoaXN0b3J5IjpbLTIwMzAxMzUwNTQsMTU1MDUxMzI5NiwtMT
+EzNzcxOTAxNV19
 -->
