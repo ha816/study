@@ -49,7 +49,7 @@ public static Boolean valueOf(boolean b) {
 
 #### 1. 상속을 하려면 public이나 protected 생성자가 필요하니 정적 팩토리 메서드만 제공하면 하위 클래스를 만들수가 없다. 
 
-생성자 없이 정적 팩토리 메서드만 제공하는 클래스가 있다고 하자. 그러면 생성자가 없기 때문에 이 클래스를 상속하는 하위 클래스를 만들수가 없다. 어찌 보면 이 제약을 상속보다 컴포지션을 사용하도록 유도하고 
+생성자 없이 정적 팩토리 메서드만 제공하는 클래스가 있다고 하자. 그러면 생성자가 없기 때문에 이 클래스를 상속하는 하위 클래스를 만들수가 없다. 어찌 보면 이 제약은 상속보다 컴포지션을 사용하는 것이 좋ㄱ 불변 타입을 사용하는 관점에서는 장점으로 느껴질수도 있다. 
 
 
 
@@ -77,9 +77,9 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzk3MzQyMSwtMTk3MjAwMzYwNCwyNz
-I1NTAzMDAsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4
-NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1NDk0Mz
-YsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMzI5Niwt
-MTEzNzcxOTAxNV19
+eyJoaXN0b3J5IjpbLTE4Mjc2NDc5NDYsLTE5NzIwMDM2MDQsMj
+cyNTUwMzAwLC0yMTE1MzgwNjUyLC0xNTg4MzQzMjk2LC0zODEy
+ODY4MjcsLTk5OTI1ODMyMiwxNDU2ODA0NDA3LC0xNTUzNTQ5ND
+M2LC0xMzgxNjMwOTU0LC0xODgwMDA0MjA2LDE1NTA1MTMyOTYs
+LTExMzc3MTkwMTVdfQ==
 -->
