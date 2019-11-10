@@ -15,6 +15,10 @@ public static Boolean valueOf(boolean b) {
 
 ### 정적 팩터리 메서드의 명명법
 
+from
+: 매개변수를 하나 받아서 
+
+
 ### 정적 팩터리 메서드의 장점
 먼저 장점 다섯 가지를 알아보자
 
@@ -53,7 +57,7 @@ public static Boolean valueOf(boolean b) {
 
 #### 2. 정적 팩터리 메서드는 프로그래머가 찾기 어렵다. 
 
-생성자 처럼 API 설명에 명확히 드러나지 않으니 사용자는 정적 팩터리 메서드 방식 클래스를 인스턴스화하는 방법을 찾아봐야 한다.  따라서 정적 팩터리 메서드에  
+생성자 처럼 API 설명에 명확히 드러나지 않으니 사용자는 정적 팩터리 메서드 방식 클래스를 인스턴스화하는 방법을 찾아봐야 한다.  따라서 정적 팩터리 메서드에  JavaDoc 주석으로 문서화를 해놓고 메서드 이름도 잘 알려진 규약을 따라 짓는 식으로 문제를 완화해줘야 한다. 
 
 
 
@@ -81,9 +85,9 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDA1MDcyNDAsLTE5NzIwMDM2MDQsMj
-cyNTUwMzAwLC0yMTE1MzgwNjUyLC0xNTg4MzQzMjk2LC0zODEy
-ODY4MjcsLTk5OTI1ODMyMiwxNDU2ODA0NDA3LC0xNTUzNTQ5ND
-M2LC0xMzgxNjMwOTU0LC0xODgwMDA0MjA2LDE1NTA1MTMyOTYs
-LTExMzc3MTkwMTVdfQ==
+eyJoaXN0b3J5IjpbLTE5NjQ2NjYzNCwtMTk3MjAwMzYwNCwyNz
+I1NTAzMDAsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4
+NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1NDk0Mz
+YsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMzI5Niwt
+MTEzNzcxOTAxNV19
 -->
