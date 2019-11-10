@@ -23,7 +23,7 @@ public static Boolean valueOf(boolean b) {
 
 #### 2. 호출될 때마다 인스턴스를 새로 생성하지 않아도 된다.
 
-생성자는 호출될 때마다 반드시 새로운 인스턴스를 만든다. 반면에 정적 팩터리 메서드는 필요에 따라 매번 새로운 인스턴스를 반환 할수도 있고 이미 이전 시점에 호출이 되었을때 만들어진 인스턴스를 그대로 반환돌
+생성자는 호출될 때마다 반드시 새로운 인스턴스를 만든다. 반면에 정적 팩터리 메서드는 필요에 따라 매번 새로운 인스턴스를 반환 할수도 있고 이미 이전 시점에 호출이 되었을때 만들어진 인스턴스를 그대로 반환하도록 할 수 있다. 불변 클래스 인스턴스를 미리 만들어 놓거나 이전 시점에 만들어진 인스턴스를 캐싱하여 재활용하느 식으로 
 
 
 
@@ -47,6 +47,6 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyODI0MzE0NSwtMTg4MDAwNDIwNiwxNT
-UwNTEzMjk2LC0xMTM3NzE5MDE1XX0=
+eyJoaXN0b3J5IjpbMjMwNjg0MTc0LC0xODgwMDA0MjA2LDE1NT
+A1MTMyOTYsLTExMzc3MTkwMTVdfQ==
 -->
