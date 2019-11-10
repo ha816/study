@@ -18,6 +18,7 @@ public static Boolean valueOf(boolean b) {
 
 #### 1. 이름을 가질 수 있다.  
 기존에 생성자를 사용하면 생성자에 넘기는 매개변수와 생성자 자체만으로는 반환될 객체의 특성을 제대로 이해하기 힘들다. 반면에 정적 팩터리 메서드는 메서드 이름만 잘 지으면 반환될 객체의 특성을 쉽게 파악할 수 있다. 
+기존 
 
 
 
@@ -40,6 +41,6 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk1NDQ2NCwxNTUwNTEzMjk2LC0xMTM3Nz
-E5MDE1XX0=
+eyJoaXN0b3J5IjpbLTE4ODAwMDQyMDYsMTU1MDUxMzI5NiwtMT
+EzNzcxOTAxNV19
 -->
