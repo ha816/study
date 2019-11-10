@@ -18,7 +18,7 @@ public static Boolean valueOf(boolean b) {
 
 
 
-### 정적 팩터리 메서드의 장점과 단점
+### 정적 팩터리 메서드의 장점
 먼저 장점 다섯 가지를 알아보자
 
 #### 1. 이름을 가질 수 있다.  
@@ -74,8 +74,8 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLT
-M4MTI4NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1
-NDk0MzYsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMz
-I5NiwtMTEzNzcxOTAxNV19
+eyJoaXN0b3J5IjpbMTE0ODg3MjA5NiwtMjExNTM4MDY1MiwtMT
+U4ODM0MzI5NiwtMzgxMjg2ODI3LC05OTkyNTgzMjIsMTQ1Njgw
+NDQwNywtMTU1MzU0OTQzNiwtMTM4MTYzMDk1NCwtMTg4MDAwND
+IwNiwxNTUwNTEzMjk2LC0xMTM3NzE5MDE1XX0=
 -->
