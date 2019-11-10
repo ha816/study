@@ -15,9 +15,6 @@ public static Boolean valueOf(boolean b) {
 
 ### 정적 팩터리 메서드의 명명법
 
-
-
-
 ### 정적 팩터리 메서드의 장점
 먼저 장점 다섯 가지를 알아보자
 
@@ -48,6 +45,10 @@ public static Boolean valueOf(boolean b) {
 
 클라이언트는 서비스 접근 API를 사용할때 원하는 구현체의 조건을 명시할 수 있다. 조건을 명시하지 않으면 기본 구현체나 지원하는 구현체를 하나씩 돌아가며 반환한다. 이것이 바로 서비스 제공 프레임워크의 근간인 유연한 정적 팩터리의 실체이다. 사실 의존객체 주입(dependency injection) 프레임워크도 서비스 제공자라고 생각할 수 있다. 
 
+### 정적 팩터리 메서드의 단점
+
+
+
 
 
 
@@ -74,8 +75,8 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0ODg3MjA5NiwtMjExNTM4MDY1MiwtMT
-U4ODM0MzI5NiwtMzgxMjg2ODI3LC05OTkyNTgzMjIsMTQ1Njgw
-NDQwNywtMTU1MzU0OTQzNiwtMTM4MTYzMDk1NCwtMTg4MDAwND
-IwNiwxNTUwNTEzMjk2LC0xMTM3NzE5MDE1XX0=
+eyJoaXN0b3J5IjpbMjcyNTUwMzAwLC0yMTE1MzgwNjUyLC0xNT
+g4MzQzMjk2LC0zODEyODY4MjcsLTk5OTI1ODMyMiwxNDU2ODA0
+NDA3LC0xNTUzNTQ5NDM2LC0xMzgxNjMwOTU0LC0xODgwMDA0Mj
+A2LDE1NTA1MTMyOTYsLTExMzc3MTkwMTVdfQ==
 -->
