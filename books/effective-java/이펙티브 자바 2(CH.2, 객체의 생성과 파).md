@@ -27,7 +27,7 @@ public static Boolean valueOf(boolean b) {
 
 #### 3. 반환 타입의 하위 타입 객체를 반환할 수 있는 능력이 있다.
 
-
+반환될 객체의 클래스를 
 
 
 
@@ -51,6 +51,6 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4Nzg2NjQ0NiwtMTM4MTYzMDk1NCwtMT
+eyJoaXN0b3J5IjpbLTYyMjA2Mjc0NywtMTM4MTYzMDk1NCwtMT
 g4MDAwNDIwNiwxNTUwNTEzMjk2LC0xMTM3NzE5MDE1XX0=
 -->
