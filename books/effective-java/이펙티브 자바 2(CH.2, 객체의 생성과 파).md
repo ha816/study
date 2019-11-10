@@ -10,7 +10,7 @@ public static Boolean valueOf(boolean b) {
 	return b ? Boolean.true : Boolean.false;
 }
 ```
-여기서 
+여기서 이야기 하는 정적 팩터리 메서드는 디자인 패턴에서의 팩터리 메서드와 다르다. 
 
 
 From, With,
@@ -30,5 +30,5 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzUyMV19
+eyJoaXN0b3J5IjpbLTExMzc3MTkwMTVdfQ==
 -->
