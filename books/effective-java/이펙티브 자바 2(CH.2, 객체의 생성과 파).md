@@ -1,6 +1,9 @@
-## 2장 객체의 생성과 파괴
+# 2장 객체의 생성과 파괴
 
-### 생성자 대신 정적 팩터리 메서드를 사용할수 없는지 생각해 보자
+## 생성자 대신 정적 팩토리 메서드를 고려하라.
+
+
+
 
 From, With,
 Cleaner;
@@ -19,5 +22,5 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NjE1OTQxXX0=
+eyJoaXN0b3J5IjpbLTg0NDUxOTE2XX0=
 -->
