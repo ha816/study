@@ -42,8 +42,7 @@ public static Boolean valueOf(boolean b) {
 
 #### 5. 정적 팩터리 메서드를 작성하는 시점에는 반환할 객체의 클래스가 존재하지 않아도 된다. 
 
-적절한 인스턴스를 클라이언트에게 제공하고 관리하는 것을 담당하는 프레임워크를 서비스 제공자 프레임워크()라고 한다.
-이 프레임워크에서 제공자(provider)는 서비스의 구현체이다. 그리고 이 구현체들을 클라이언트에 제공하는 역활을 프레임워크가 통제하여, 클라이언트를 구현체로부터 분리해준다. 
+적절한 인스턴스를 클라이언트에게 제공하고 관리하는 것을 담당하는 프레임워크를 서비스 제공자 프레임워크(service provider framework)라고 한다. 이 프레임워크에서 제공자(provider)는 서비스의 구현체이다. 그리고 이 서비스 구현체들을 클라이언트에 제공하는 역활을 프레임워크가 통제하여, 클라이언트를 구현체로부터 분리해준다. 
 
 서비스 제공자 프레임워크(service provider framework)는 3개의 핵심 컴포넌트로 이루어 진다. 구현체의 동작을 정의하는 서비스 인터페이스, 제공가자 구현체를 등록할때 사용하는 제공자 등록 API(provider registration API), 클라이언트가 서비스의 인스턴스를 얻을때 사용하는 서비스 접근 API(service access API)가 그것이다.
 
@@ -75,8 +74,8 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2NTk0ODM5LC0xNTg4MzQzMjk2LC0zOD
-EyODY4MjcsLTk5OTI1ODMyMiwxNDU2ODA0NDA3LC0xNTUzNTQ5
-NDM2LC0xMzgxNjMwOTU0LC0xODgwMDA0MjA2LDE1NTA1MTMyOT
-YsLTExMzc3MTkwMTVdfQ==
+eyJoaXN0b3J5IjpbLTY2MTc4NzQwOSwtMTU4ODM0MzI5NiwtMz
+gxMjg2ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywtMTU1MzU0
+OTQzNiwtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNTUwNTEzMj
+k2LC0xMTM3NzE5MDE1XX0=
 -->
