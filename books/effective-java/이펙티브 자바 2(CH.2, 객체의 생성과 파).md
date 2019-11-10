@@ -37,7 +37,9 @@ public static Boolean valueOf(boolean b) {
 
 #### 5. 정적 팩터리 메서드를 작성하는 시점에는 반환할 객체의 클래스가 존재하지 않아도 된다. 
 
-서비스 제공자 프레임워크(service provider framework)는 3개의 핵심 컴포넌트로 이루어 진다. 구현체의 동작을 정의하는 서비스 인터페이스, 
+서비스 제공자 프레임워크(service provider framework)는 3개의 핵심 컴포넌트로 이루어 진다. 구현체의 동작을 정의하는 서비스 인터페이스, 제공가자 구현체를 등록할때 사용하는 제공자 등록 API(provider registration API), 클라이언트가 서비스의 인스턴스를 얻을때 사용하는 서비스 접근 API(service access API)가 그것이다.
+
+클라이언트는 서비스 접근 API를 사용할때 원
 
 
 
@@ -65,7 +67,7 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NjU1NjQxOCwtMTU4ODM0MzI5NiwtMz
+eyJoaXN0b3J5IjpbLTE2MTc5MTM3MiwtMTU4ODM0MzI5NiwtMz
 gxMjg2ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywtMTU1MzU0
 OTQzNiwtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNTUwNTEzMj
 k2LC0xMTM3NzE5MDE1XX0=
