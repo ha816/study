@@ -47,7 +47,9 @@ public static Boolean valueOf(boolean b) {
 
 ### 정적 팩터리 메서드의 단점
 
-#### 1.
+#### 1. 상속을 하려면 public이나 protected 생성자가 필요하니 정적 팩토리 메서드만 제공하면 하위 클래스를 만들수가 없다. 
+
+즉 
 
 
 
@@ -75,7 +77,7 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY5NTc4NTc1LDI3MjU1MDMwMCwtMjExNT
+eyJoaXN0b3J5IjpbNjczNjg0NzQ5LDI3MjU1MDMwMCwtMjExNT
 M4MDY1MiwtMTU4ODM0MzI5NiwtMzgxMjg2ODI3LC05OTkyNTgz
 MjIsMTQ1NjgwNDQwNywtMTU1MzU0OTQzNiwtMTM4MTYzMDk1NC
 wtMTg4MDAwNDIwNiwxNTUwNTEzMjk2LC0xMTM3NzE5MDE1XX0=
