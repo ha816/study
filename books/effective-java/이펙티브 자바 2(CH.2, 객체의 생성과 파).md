@@ -1,6 +1,6 @@
 # 2장 객체의 생성과 파괴
 
-## 생성자 대신 정적 팩토리 메서드를 고려하라.
+## Item1. 생성자 대신 정적 팩토리 메서드를 고려하라.
 
 클라이언트가 클래스의 인스턴스를 얻는 전통적 수단은 public 생성자다. 하지만 그 뿐만아니라 클래스는 생성자와 별도로 **정적 팩터리 메서드(static factory method)**를 제공할 수 있다. 
 
@@ -85,6 +85,8 @@ type
 
 생성자 처럼 API 설명에 명확히 드러나지 않으니 사용자는 정적 팩터리 메서드 방식 클래스를 인스턴스화하는 방법을 찾아봐야 한다.  따라서 정적 팩터리 메서드에  JavaDoc 주석으로 문서화를 해놓고 메서드 이름도 잘 알려진 규약을 따라 짓는 식으로 문제를 완화해줘야 한다. 
 
+> 핵심정리
+> 정적 펙터리 메서드와 public 생성자는 각자의 쓰임새가 있으므로 장단점을 이해하고 적절히 사용하는 것이 좋다. 읿
 
 
 
@@ -111,9 +113,9 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDExMTQ4OTMyLC0xOTcyMDAzNjA0LDI3Mj
-U1MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0MzI5NiwtMzgxMjg2
-ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywtMTU1MzU0OTQzNi
-wtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNTUwNTEzMjk2LC0x
-MTM3NzE5MDE1XX0=
+eyJoaXN0b3J5IjpbLTkzNjg1MDcyMSwtMTk3MjAwMzYwNCwyNz
+I1NTAzMDAsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4
+NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1NDk0Mz
+YsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMzI5Niwt
+MTEzNzcxOTAxNV19
 -->
