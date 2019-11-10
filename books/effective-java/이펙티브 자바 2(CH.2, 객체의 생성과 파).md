@@ -2,7 +2,7 @@
 
 ## 생성자 대신 정적 팩토리 메서드를 고려하라.
 
-
+클라이언트가 클래스의 인스턴스를 얻는 전통적 수단은 public 생성자다. 
 
 
 From, With,
@@ -22,5 +22,5 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NDUxOTE2XX0=
+eyJoaXN0b3J5IjpbLTIwNjkyNTczNjJdfQ==
 -->
