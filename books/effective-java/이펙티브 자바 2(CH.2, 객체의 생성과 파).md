@@ -4,7 +4,12 @@
 
 클라이언트가 클래스의 인스턴스를 얻는 전통적 수단은 public 생성자다. 하지만 그 뿐만아니라 클래스는 생성자와 별도로 **정적 팩터리 메서드(static factory method)**를 제공할 수 있다. 
 
-
+예를 들어 boolean의 박싱 클래스인 Boolean 클래스를 보자. 
+```
+public static Boolean valueOf(boolean b) {
+	return b ? Boolean.true : Boolean.false;
+}
+```
 
 
 From, With,
@@ -24,5 +29,5 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MzI4OTMxNl19
+eyJoaXN0b3J5IjpbMzg3NDE3MDUxXX0=
 -->
