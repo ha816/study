@@ -27,8 +27,14 @@ valueOf
 : from과 of의 더 자세한 버전
 BigInteger prime = BigInter.valueOf(Integer.MAX_VALUE)
 
-instance, getInst
-: from과 of의 더 자세한 버전
+instance, getInstance
+: 매개변수를 ㅂ매개변수로 명시한 인스턴스를 반환하지만, 같은 인스턴스임을 보장하지는 않는다. 
+
+create, new Instance
+: 매개변수로 명시한 인스턴스를 반환하지만, 같은 인스턴스임을 보장하지는 않는다. 
+
+
+
 
 
 
@@ -99,7 +105,7 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjU2ODA3OCwtMTk3MjAwMzYwNCwyNz
+eyJoaXN0b3J5IjpbMTk3NzM4MDQxMywtMTk3MjAwMzYwNCwyNz
 I1NTAzMDAsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4
 NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1NDk0Mz
 YsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMzI5Niwt
