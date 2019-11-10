@@ -15,13 +15,21 @@ public static Boolean valueOf(boolean b) {
 
 ### 정적 팩터리 메서드의 명명법
 
-from매
-개변수를 하나 받아서 해당 타입의 인스턴스를 반환하는 형변환 메서드 이름
+from
+: 매개변수를 하나 받아서 해당 타입의 인스턴스를 반환하는 형변환 메서드 이름
 Date d = Date.from(instant);
 
->of
->여러 매개변수를 받아 적합한 타입의 인스턴스를 반환하는 집계 메서드
->Set<Rank> faceCards = EnumSet.of(JACK, QUEEN, KING);
+of
+: 여러 매개변수를 받아 적합한 타입의 인스턴스를 반환하는 집계 메서드
+Set<Rank> faceCards = EnumSet.of(JACK, QUEEN, KING);
+
+valueOf
+: from과 of의 더 자세한 버전
+BigInteger prime = BigInter.valueOf(Integer.MAX_VALUE)
+
+instance, getInst
+: from과 of의 더 자세한 버전
+
 
 
 
@@ -91,7 +99,7 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3OTQwMzI4NCwtMTk3MjAwMzYwNCwyNz
+eyJoaXN0b3J5IjpbLTg2MjU2ODA3OCwtMTk3MjAwMzYwNCwyNz
 I1NTAzMDAsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4
 NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1NDk0Mz
 YsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMzI5Niwt
