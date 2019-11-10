@@ -38,8 +38,15 @@ get[Type]
 ```FileStore fs = Files.getFileStore(path); ```
 
 new[Type]
-: get[Type]과 같이 정적 팩터리 메서드를 가지는 클래스가 아닌 다른 클래스 인스턴스를 반환할때 쓴다. 
-```FileStore fs = Files.getFileStore(path); ```
+: get[Type]과 같이 정적 팩터리 메서드를 가지는 클래스가 아닌 다른 클래스 인스턴스를 반환할때 쓴다. 다만 이렇게 생성된 객체는 언제나 새로운 인스턴스를 반환한다.
+```BufferedReader br = Files.newBufferedReader(path)```
+
+type
+: get[Type]과 new[Type]의 간결한 버전
+```List```
+
+
+
 
 
 
@@ -115,7 +122,7 @@ equals, 재정의시는 hashCode
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNDU4NDkzMywtMTk3MjAwMzYwNCwyNz
+eyJoaXN0b3J5IjpbMTYyNjkwNDMwMSwtMTk3MjAwMzYwNCwyNz
 I1NTAzMDAsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4
 NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1NDk0Mz
 YsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMzI5Niwt
