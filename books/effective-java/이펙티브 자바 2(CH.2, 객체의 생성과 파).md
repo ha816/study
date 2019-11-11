@@ -186,7 +186,6 @@ private Object readResolve() {
 ```
 
 마지막으로 싱글턴을 만드는 방법은 원소가 하나인 열거 타입을 선언하는 것이다. 
-
 ```
 public enum Elvis {
 	INSTANCE;
@@ -227,7 +226,7 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNjEwMTM3NiwxNDU5OTkyMDUzLDE1Mz
+eyJoaXN0b3J5IjpbLTE3MDcxMjY4NiwxNDU5OTkyMDUzLDE1Mz
 k4NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3LDYwMDAzMTgxOCwx
 MzU3ODI0ODg0LDE4MzY3NzAyMyw1MTg3NzkyMjgsNDM4ODc3Mz
 AxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1NjQ2ODIz
