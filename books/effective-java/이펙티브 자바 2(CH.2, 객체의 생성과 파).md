@@ -173,9 +173,9 @@ getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므�
 * 정적 팩터리를 제네릭 싱글턴 팩터리로 만들 수 있다.(item 30)
 * 정적 팩터리의 메서드 참조를 공급자(supplier)로 사용할 수 있다. 
 
-정적 팩터리 메서드의 장점을 사용할 일이 없다면 일반적인 방법(
+정적 팩터리 메서드의 장점을 사용할 일이 없다면 일반적인 방법(public 필드로 제공)을 이용하는 것이 좋다.
 
-public 필드 방식
+위 두가지 방식으로 만든 싱글턴 클래스를 직렬화(serializable)하려면 단순히 Serializable을 구현한다고 선언하는 것만으로는 부족하다. 모든 인스턴스 필드를 일시적(trans
 
 
 
@@ -202,7 +202,7 @@ public 필드 방식
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NDMzMDYwMCwxNTM5ODYyMjY2LDk2OT
+eyJoaXN0b3J5IjpbMTAxODkxNjkzNSwxNTM5ODYyMjY2LDk2OT
 UwNDAwMCw0MDY2ODcxNyw2MDAwMzE4MTgsMTM1NzgyNDg4NCwx
 ODM2NzcwMjMsNTE4Nzc5MjI4LDQzODg3NzMwMSwtMTIyMzg0Nj
 U0OSwtMTUxNjc1NDg2NCwtMTAzNTY0NjgyMywxMTU0NDM5MjY4
