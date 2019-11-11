@@ -166,7 +166,9 @@ getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므�
 이제 일반적인 방법과 정적 팩터리 메서드 방법간의 장점과 단점을 이야기 해보자. 
 
 일반적인 방법의 가장 큰 장점은 해당 클래스가 싱글턴임이 API에 명백히 들어난다는 점이다. public static 필드가 final이니 절대로 다른 객체를 참조할 수 없다. 그리고 다른 장점은 간결함이다. 
-반면에 정적 팩터리 메서드의 장점은 후에 변경이 발생했을때, API를 바꾸지 않고 싱
+반면에 정적 팩터리 메서드의 장점은 후에 변경이 발생했을때, API를 바꾸지 않고도 싱글턴이 아니게 변경이 가능하다는 점이다. 유일한 인스턴스를 반환하던 팩터리 메서드가 상황에 따라(매개변수에 따라) 다른 인스턴스를 넘겨주도록 수정이 가능하다. 
+
+
 
 
 
@@ -193,11 +195,11 @@ getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzgyNTY5MjUsOTY5NTA0MDAwLDQwNj
-Y4NzE3LDYwMDAzMTgxOCwxMzU3ODI0ODg0LDE4MzY3NzAyMyw1
-MTg3NzkyMjgsNDM4ODc3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2Nz
-U0ODY0LC0xMDM1NjQ2ODIzLDExNTQ0MzkyNjgsMTM4NjA2NzUx
-OSwtMTIyMjg0NjAzNSwtMTU0NTMxNzAzNywtMTE1MjkxNDA2Ny
-wtNDc0OTU5OTk3LC05NzM5NDM1NDEsNTQ0MDE3OTc0LC0xODU3
-ODU0MjY4XX0=
+eyJoaXN0b3J5IjpbMTUzOTg2MjI2Niw5Njk1MDQwMDAsNDA2Nj
+g3MTcsNjAwMDMxODE4LDEzNTc4MjQ4ODQsMTgzNjc3MDIzLDUx
+ODc3OTIyOCw0Mzg4NzczMDEsLTEyMjM4NDY1NDksLTE1MTY3NT
+Q4NjQsLTEwMzU2NDY4MjMsMTE1NDQzOTI2OCwxMzg2MDY3NTE5
+LC0xMjIyODQ2MDM1LC0xNTQ1MzE3MDM3LC0xMTUyOTE0MDY3LC
+00NzQ5NTk5OTcsLTk3Mzk0MzU0MSw1NDQwMTc5NzQsLTE4NTc4
+NTQyNjhdfQ==
 -->
