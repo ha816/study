@@ -140,6 +140,15 @@ public class NyPizza extends Pizza {
 클래스를 싱글턴으로 만들면 이를 사용하는 클라이언트에서 테스트하기가 어려워질 수 있다. 타입을 인터페이스로 정의한 다음 그 인터페이스를 구현해서 만든 싱글턴이 아니라면 싱글턴 인스턴스를 가자(mock) 구현으로 대체할 수 없기 때문이다. 
 
 싱글턴을 만드는 방식은 보통 둘 중 하나다. 모두 생성자는 private으로 감춰두고, 유일한 하나의 인스턴스에 접근하는 수단으로 public static 멤버를 하나 마련해둔다.
+```
+public class Elvis {
+	public static final Elvis INSTANCE = new Elvis();
+	private Elvis() { ... }
+}
+```
+
+private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출
+
 
 
 
@@ -158,7 +167,7 @@ public class NyPizza extends Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NDg0MTI0Miw2MDAwMzE4MTgsMTM1Nz
+eyJoaXN0b3J5IjpbMTUzOTU1OTQyMSw2MDAwMzE4MTgsMTM1Nz
 gyNDg4NCwxODM2NzcwMjMsNTE4Nzc5MjI4LDQzODg3NzMwMSwt
 MTIyMzg0NjU0OSwtMTUxNjc1NDg2NCwtMTAzNTY0NjgyMywxMT
 U0NDM5MjY4LDEzODYwNjc1MTksLTEyMjI4NDYwMzUsLTE1NDUz
