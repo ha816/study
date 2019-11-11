@@ -101,7 +101,7 @@ type
 
 잘못된 매개변수를 최대한 일찍 발견하려면 빌더의 생성자와 메서드에서 입력 매개변수를 검사하고, build 메서드에서 여러 매개변수에 걸친 불변식을 검사하자. 공격에 대비해 불변식을 보장하려면 빌더로부터 매개변수를 복사한 후 해당 객체 필드들도 검사해야 한다. 검사해서 잘못된 점을 발견하려면 어떤 매개변수가 잘못되었는지를 메세지에 담아 예외를 던지면 된다. 
 
-
+빌더 패턴은 
 
 
 
@@ -116,11 +116,11 @@ type
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxOTgxMTAxNywtMTE1MjkxNDA2NywtND
-c0OTU5OTk3LC05NzM5NDM1NDEsNTQ0MDE3OTc0LC0xODU3ODU0
-MjY4LC05NjU3OTU4MjQsNjA5MjAxMTYsLTcxNzE3NTE3NSwtMT
-UzMTMwOTYzNCwtMTg0MjgwMjQxOCwyMDI5MDA4NTY2LC0yNjc5
-MDk5OTgsLTE5NzIwMDM2MDQsMjcyNTUwMzAwLC0yMTE1MzgwNj
-UyLC0xNTg4MzQzMjk2LC0zODEyODY4MjcsLTk5OTI1ODMyMiwx
-NDU2ODA0NDA3XX0=
+eyJoaXN0b3J5IjpbLTE1NDUzMTcwMzcsLTExNTI5MTQwNjcsLT
+Q3NDk1OTk5NywtOTczOTQzNTQxLDU0NDAxNzk3NCwtMTg1Nzg1
+NDI2OCwtOTY1Nzk1ODI0LDYwOTIwMTE2LC03MTcxNzUxNzUsLT
+E1MzEzMDk2MzQsLTE4NDI4MDI0MTgsMjAyOTAwODU2NiwtMjY3
+OTA5OTk4LC0xOTcyMDAzNjA0LDI3MjU1MDMwMCwtMjExNTM4MD
+Y1MiwtMTU4ODM0MzI5NiwtMzgxMjg2ODI3LC05OTkyNTgzMjIs
+MTQ1NjgwNDQwN119
 -->
