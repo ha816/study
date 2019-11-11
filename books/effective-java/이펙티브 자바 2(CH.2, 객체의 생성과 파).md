@@ -152,7 +152,16 @@ private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출된다. pu
 
 하지만 사실 리플렉션 API인 AccessibleObject.setAccessible을 사용해서 private 생성자를 호출할 수 있다. 이러한 것을 방어하려면 생성자를 수정하여 두 번째 객체가 생성되려할때 예외를 던지게 하면 된다. 
 
-다음으로 아래 코드는 
+다음으로 아래 코드는 정적 팩터리 메서드를 public static 멤버로 제공한다. 
+
+```
+public class Elvis {
+	private static final Elvis INSTANCE = new Elvis();
+	private Elvis() { ... }
+	public static Elvis getInstance() { ... }
+}
+```
+
 
 
 
@@ -174,7 +183,7 @@ private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출된다. pu
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA4NzgyNjE3LDQwNjY4NzE3LDYwMDAzMT
+eyJoaXN0b3J5IjpbOTY5NTA0MDAwLDQwNjY4NzE3LDYwMDAzMT
 gxOCwxMzU3ODI0ODg0LDE4MzY3NzAyMyw1MTg3NzkyMjgsNDM4
 ODc3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1Nj
 Q2ODIzLDExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMTIyMjg0NjAz
