@@ -197,7 +197,9 @@ public enum Elvis {
 
 다소 부자연스러워 보일수는 있으나 **대부분 상황에서 원소가 하나뿐인 열거 타입이 싱글턴을 만드는 가장 좋은 방법이다.**  단, 만들려는 싱글턴이 Enum이외에 클래스를 상속해야 한다면 이 방법은 사용불가하다. (열거 타입이 다른 인터페이스를 구현하도록 선언은 가능하다.)
 
-## Item4. private 생성자나 열거 타입으로 싱글턴임을 보증하라. 
+## Item4. 인스턴스화를 막으려거든 private  생성자를 사용하라. 
+
+
 
 
 
@@ -226,11 +228,11 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzM2NjMyNTUsMTQ1OTk5MjA1MywxNT
-M5ODYyMjY2LDk2OTUwNDAwMCw0MDY2ODcxNyw2MDAwMzE4MTgs
-MTM1NzgyNDg4NCwxODM2NzcwMjMsNTE4Nzc5MjI4LDQzODg3Nz
-MwMSwtMTIyMzg0NjU0OSwtMTUxNjc1NDg2NCwtMTAzNTY0Njgy
-MywxMTU0NDM5MjY4LDEzODYwNjc1MTksLTEyMjI4NDYwMzUsLT
-E1NDUzMTcwMzcsLTExNTI5MTQwNjcsLTQ3NDk1OTk5NywtOTcz
-OTQzNTQxXX0=
+eyJoaXN0b3J5IjpbMjEyODk1NDI3MiwtMTA3MzY2MzI1NSwxND
+U5OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3
+LDYwMDAzMTgxOCwxMzU3ODI0ODg0LDE4MzY3NzAyMyw1MTg3Nz
+kyMjgsNDM4ODc3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0
+LC0xMDM1NjQ2ODIzLDExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMT
+IyMjg0NjAzNSwtMTU0NTMxNzAzNywtMTE1MjkxNDA2NywtNDc0
+OTU5OTk3XX0=
 -->
