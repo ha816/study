@@ -104,7 +104,7 @@ type
 public abstract class Pizza {
 	abstract static class Builder<T extends Builder<T>> {
 		abstract Pizza build();
-		protected abstract T self(); // 하위 클래스는 
+		protected abstract T self(); // 하위 클래스는 이 메서드를 재정의 하여 this를 반환해야 한다.
 
 	}
 
@@ -125,11 +125,11 @@ public abstract class Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NDI2NzM0NSwtMTAzNTY0NjgyMywxMT
-U0NDM5MjY4LDEzODYwNjc1MTksLTEyMjI4NDYwMzUsLTE1NDUz
-MTcwMzcsLTExNTI5MTQwNjcsLTQ3NDk1OTk5NywtOTczOTQzNT
-QxLDU0NDAxNzk3NCwtMTg1Nzg1NDI2OCwtOTY1Nzk1ODI0LDYw
-OTIwMTE2LC03MTcxNzUxNzUsLTE1MzEzMDk2MzQsLTE4NDI4MD
-I0MTgsMjAyOTAwODU2NiwtMjY3OTA5OTk4LC0xOTcyMDAzNjA0
-LDI3MjU1MDMwMF19
+eyJoaXN0b3J5IjpbLTE1MTY3NTQ4NjQsLTEwMzU2NDY4MjMsMT
+E1NDQzOTI2OCwxMzg2MDY3NTE5LC0xMjIyODQ2MDM1LC0xNTQ1
+MzE3MDM3LC0xMTUyOTE0MDY3LC00NzQ5NTk5OTcsLTk3Mzk0Mz
+U0MSw1NDQwMTc5NzQsLTE4NTc4NTQyNjgsLTk2NTc5NTgyNCw2
+MDkyMDExNiwtNzE3MTc1MTc1LC0xNTMxMzA5NjM0LC0xODQyOD
+AyNDE4LDIwMjkwMDg1NjYsLTI2NzkwOTk5OCwtMTk3MjAwMzYw
+NCwyNzI1NTAzMDBdfQ==
 -->
