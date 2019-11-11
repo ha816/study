@@ -108,9 +108,17 @@ public abstract class Pizza {
 	}
 }
 ```
-
 위에서 정의한 Pizza.Builder 클래스는 재귀적 타입 한정을 이용하는 제네릭 타입이다.  여기서 말한 재귀적 타입 한정은 ```<T extends Builder<T>>``` 으로 T의 타입으로는 Builder<T>를 상속하는 하위 타입만 가능하다는 의미이다. 
-추상 메서드인 self는 하위 클래스에서 형변환 하지 않고도 메서드 연쇄를 가능하게 한다. 이러한 방법을 시뮬레이티드한 셀프 타입(simulated self-type) 관용구라 한다. 
+추상 메서드인 self는 하위 클래스에서 형변환 하지 않고도 메서드 연쇄를 가능하게 한다. 이러한 방법을 시뮬레이티드한 셀프 타입(simulated self-type) 관용구라 한다. 이제 구현 클래스(concrete class)를 보자. 
+
+```
+public class NyPizza extends Pizza {
+	public static class Builder exte
+
+}
+
+```
+
  
 
 
@@ -126,11 +134,11 @@ public abstract class Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE4Nzc5MjI4LDQzODg3NzMwMSwtMTIyMz
-g0NjU0OSwtMTUxNjc1NDg2NCwtMTAzNTY0NjgyMywxMTU0NDM5
-MjY4LDEzODYwNjc1MTksLTEyMjI4NDYwMzUsLTE1NDUzMTcwMz
-csLTExNTI5MTQwNjcsLTQ3NDk1OTk5NywtOTczOTQzNTQxLDU0
-NDAxNzk3NCwtMTg1Nzg1NDI2OCwtOTY1Nzk1ODI0LDYwOTIwMT
-E2LC03MTcxNzUxNzUsLTE1MzEzMDk2MzQsLTE4NDI4MDI0MTgs
-MjAyOTAwODU2Nl19
+eyJoaXN0b3J5IjpbMTQwODY1Nzc1MSw1MTg3NzkyMjgsNDM4OD
+c3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1NjQ2
+ODIzLDExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMTIyMjg0NjAzNS
+wtMTU0NTMxNzAzNywtMTE1MjkxNDA2NywtNDc0OTU5OTk3LC05
+NzM5NDM1NDEsNTQ0MDE3OTc0LC0xODU3ODU0MjY4LC05NjU3OT
+U4MjQsNjA5MjAxMTYsLTcxNzE3NTE3NSwtMTUzMTMwOTYzNCwt
+MTg0MjgwMjQxOF19
 -->
