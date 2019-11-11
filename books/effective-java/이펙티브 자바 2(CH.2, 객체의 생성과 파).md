@@ -90,7 +90,7 @@ type
 
 ## Item2. 생성자에 매개변수가 많다면 빌더를 고려하라. 
 
-정적팩터리와 생성자 모두 똑같은 이슈가 하나 있다. 매개변수가 많을때 이를 적절히 처리하히가 어렵다는 점이다. 
+정적팩터리와 생성자 모두 똑같은 이슈가 하나 있다. 매개변수가 많을때 이를 적절히 처리하기가 어렵다는 점이다. 
 
 
 
@@ -98,9 +98,9 @@ type
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyOTAwODU2NiwtMjY3OTA5OTk4LC0xOT
-cyMDAzNjA0LDI3MjU1MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0
-MzI5NiwtMzgxMjg2ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNy
-wtMTU1MzU0OTQzNiwtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwx
-NTUwNTEzMjk2LC0xMTM3NzE5MDE1XX0=
+eyJoaXN0b3J5IjpbLTE4NDI4MDI0MTgsMjAyOTAwODU2NiwtMj
+Y3OTA5OTk4LC0xOTcyMDAzNjA0LDI3MjU1MDMwMCwtMjExNTM4
+MDY1MiwtMTU4ODM0MzI5NiwtMzgxMjg2ODI3LC05OTkyNTgzMj
+IsMTQ1NjgwNDQwNywtMTU1MzU0OTQzNiwtMTM4MTYzMDk1NCwt
+MTg4MDAwNDIwNiwxNTUwNTEzMjk2LC0xMTM3NzE5MDE1XX0=
 -->
