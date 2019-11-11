@@ -163,10 +163,14 @@ public class Elvis {
 ```
 getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므로 제 2의 Elvis 객체는 만들어지지 않는다. 하지만 리플렉션을 이용하면 생성자를 호출할 수 있기 때문에 완벽하지 않다. 
 
-이제 일반적인 방법과 정적 팩터리 메서드 방법간의 장점과 단점을 이야기 해보자. 
+이제 일반적인 방법과 정적 팩터리 메서드 방법간의 장점을 보자.
 
-일반적인 방법의 가장 큰 장점은 해당 클래스가 싱글턴임이 API에 명백히 들어난다는 점이다. public static 필드가 final이니 절대로 다른 객체를 참조할 수 없다. 그리고 다른 장점은 간결함이다. 
-반면에 정적 팩터리 메서드의 장점은 후에 변경이 발생했을때, API를 바꾸지 않고도 싱글턴이 아니게 변경이 가능하다는 점이다. 유일한 인스턴스를 반환하던 팩터리 메서드가 상황에 따라(매개변수에 따라) 다른 인스턴스를 넘겨주도록 수정이 가능하다. 
+일반적인 방법의 장점
+* 해당 클래스가 싱글턴임이 API에 명백히 들어난다. public static 필드가 final이니 절대로 다른 객체를 참조할 수 없다. 
+* 간결하다. 
+
+정적 팩터리 메서드의 장점
+* 후에 변경이 발생했을때, API를 바꾸지 않고도 싱글턴이 아니게 변경이 가능하다는 점이다. 유일한 인스턴스를 반환하던 팩터리 메서드가 상황에 따라(매개변수에 따라) 다른 인스턴스를 넘겨주도록 수정이 가능하다. 두
 
 
 
@@ -195,11 +199,11 @@ getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzOTg2MjI2Niw5Njk1MDQwMDAsNDA2Nj
-g3MTcsNjAwMDMxODE4LDEzNTc4MjQ4ODQsMTgzNjc3MDIzLDUx
-ODc3OTIyOCw0Mzg4NzczMDEsLTEyMjM4NDY1NDksLTE1MTY3NT
-Q4NjQsLTEwMzU2NDY4MjMsMTE1NDQzOTI2OCwxMzg2MDY3NTE5
-LC0xMjIyODQ2MDM1LC0xNTQ1MzE3MDM3LC0xMTUyOTE0MDY3LC
-00NzQ5NTk5OTcsLTk3Mzk0MzU0MSw1NDQwMTc5NzQsLTE4NTc4
-NTQyNjhdfQ==
+eyJoaXN0b3J5IjpbMjAwMDY0NzM3NiwxNTM5ODYyMjY2LDk2OT
+UwNDAwMCw0MDY2ODcxNyw2MDAwMzE4MTgsMTM1NzgyNDg4NCwx
+ODM2NzcwMjMsNTE4Nzc5MjI4LDQzODg3NzMwMSwtMTIyMzg0Nj
+U0OSwtMTUxNjc1NDg2NCwtMTAzNTY0NjgyMywxMTU0NDM5MjY4
+LDEzODYwNjc1MTksLTEyMjI4NDYwMzUsLTE1NDUzMTcwMzcsLT
+ExNTI5MTQwNjcsLTQ3NDk1OTk5NywtOTczOTQzNTQxLDU0NDAx
+Nzk3NF19
 -->
