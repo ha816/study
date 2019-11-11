@@ -91,7 +91,9 @@ type
 ## Item2. 생성자에 매개변수가 많다면 빌더를 고려하라. 
 
 정적 팩터리 메서드와 생성자 모두 똑같은 이슈가 하나 있다. 매개변수가 많을때 이를 적절히 처리하기 어렵다는 점이다. 
-개발자들은 이럴때 점층적 생성자 패턴(telescoping constructor pattern)을 즐겨 사용했다.  오버로딩을 이용한 다양한 형태의 생성자를 제공하고 사용자는 그 중 원하는 매개변수를 모두 포함하는 생성자를 선택해서 사용했다. 그런데 이 방법도매개변수의 수가 어느정도 이상이 되면 금세 걷잡을 수 없다. 즉 근본으로 좋은 해결방법은 아니다. 
+개발자들은 이럴때 점층적 생성자 패턴(telescoping constructor pattern)을 즐겨 사용했다.  오버로딩을 이용한 다양한 형태의 생성자를 제공하고 사용자는 그 중 원하는 매개변수를 모두 포함하는 생성자를 선택해서 사용했다. 그런데 이 방법도매개변수의 수가 어느정도 이상이 되면 금세 걷잡을 수 없다. 즉 점층적 생성자 패턴은 근본적으로 좋은 해결방법은 아니다. 
+
+
 
 
 
@@ -99,10 +101,10 @@ type
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzEzMDk2MzQsLTE4NDI4MDI0MTgsMj
-AyOTAwODU2NiwtMjY3OTA5OTk4LC0xOTcyMDAzNjA0LDI3MjU1
-MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0MzI5NiwtMzgxMjg2OD
-I3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywtMTU1MzU0OTQzNiwt
-MTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNTUwNTEzMjk2LC0xMT
-M3NzE5MDE1XX0=
+eyJoaXN0b3J5IjpbLTE1NzIzMDM3NjcsLTE1MzEzMDk2MzQsLT
+E4NDI4MDI0MTgsMjAyOTAwODU2NiwtMjY3OTA5OTk4LC0xOTcy
+MDAzNjA0LDI3MjU1MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0Mz
+I5NiwtMzgxMjg2ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywt
+MTU1MzU0OTQzNiwtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNT
+UwNTEzMjk2LC0xMTM3NzE5MDE1XX0=
 -->
