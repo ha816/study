@@ -95,7 +95,7 @@ type
 
 다음으로 매개변수가 많을때 활용할 수 있는 두 번째 대안인 **자바빈즈 패턴(JavaBeans pattern)**을 보자.  매개변수가 없는 생성자로 객체를 만든 후 세터setter 메서드로 필요한 매개변수를 설정하는 방법이다. 자바빈즈 패턴을 쓰면 객체를 만들기가 쉽고, 필요한 변수만 설정하여 더 읽기 쉬운 코드가 된다. 하지만 불행히도 자바빈즈 패턴은 치명적인 단점이 있다. **자바빈즈 패턴에서는 객체를 하나 만들려면 여러 메서드를 호출해야 하고, 객체가 완전히 생성되기 전까지는 일관성(consistency)이 무너진 상태에 놓인다.** 일관성이 깨진 객체가 사용되면 논리적 오류가 발생할 수 있어 큰 문제에 처할 수도 있다. 일관성이 깨지는 상황에 놓인다면 클래스를 불변으로 만들 수 없고 쓰레드 안전성을 얻으려면 프로그래머가 추가 작업을 해야만 한다.
 
-마지막만 대안인 점층적 생성자 패턴의 안정성과 자바빈즈패턴의 가독성을 겸비한빌더 패턴(Builder pattern)을 알아보자. 클라이언트는 필요한 객체를 지겁 만드는 대신, 필수 매개변수만으로 
+마지막만 대안인 점층적 생성자 패턴의 안정성과 자바빈즈패턴의 가독성을 겸비한빌더 패턴(Builder pattern)을 알아보자. 클라이언트는 필요한 객체를 직접 만드는 대신, 필수 매개변수만으로 생성자나 정적 펙터리 호출해 빌더 객체를 얻는다. 
 
 
 
@@ -108,11 +108,11 @@ type
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTgxNTQwMzIsLTk2NTc5NTgyNCw2MD
-kyMDExNiwtNzE3MTc1MTc1LC0xNTMxMzA5NjM0LC0xODQyODAy
-NDE4LDIwMjkwMDg1NjYsLTI2NzkwOTk5OCwtMTk3MjAwMzYwNC
-wyNzI1NTAzMDAsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4
-MTI4NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1ND
-k0MzYsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMzI5
-NiwtMTEzNzcxOTAxNV19
+eyJoaXN0b3J5IjpbLTY3NTU4NDA1MiwtOTY1Nzk1ODI0LDYwOT
+IwMTE2LC03MTcxNzUxNzUsLTE1MzEzMDk2MzQsLTE4NDI4MDI0
+MTgsMjAyOTAwODU2NiwtMjY3OTA5OTk4LC0xOTcyMDAzNjA0LD
+I3MjU1MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0MzI5NiwtMzgx
+Mjg2ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywtMTU1MzU0OT
+QzNiwtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwxNTUwNTEzMjk2
+LC0xMTM3NzE5MDE1XX0=
 -->
