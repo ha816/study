@@ -170,7 +170,9 @@ getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므�
 * 간결하다. 
 
 정적 팩터리 메서드의 장점
-* 후에 변경이 발생했을때, API를 바꾸지 않고도 싱글턴이 아니게 변경이 가능하다는 점이다. 유일한 인스턴스를 반환하던 팩터리 메서드가 상황에 따라(매개변수에 따라) 다른 인스턴스를 넘겨주도록 수정이 가능하다. 두
+* 나중에 변경이 발생했을때, API를 바꾸지 않고도 싱글턴이 아니게 변경이 가능하다는 점이다. 유일한 인스턴스를 반환하던 팩터리 메서드가 상황에 따라(매개변수에 따라) 다른 인스턴스를 넘겨주도록 수정이 가능하다. 
+* 정적 팩터리를 제네릭 싱글턴 팩터리로 만들 수 있다.(item 30)
+* 정적 팩터리의 메서드 참조를 공급자(supplier)로 사용할 수 있다. 
 
 
 
@@ -199,7 +201,7 @@ getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMDY0NzM3NiwxNTM5ODYyMjY2LDk2OT
+eyJoaXN0b3J5IjpbMTQ1NTE5NDE1MSwxNTM5ODYyMjY2LDk2OT
 UwNDAwMCw0MDY2ODcxNyw2MDAwMzE4MTgsMTM1NzgyNDg4NCwx
 ODM2NzcwMjMsNTE4Nzc5MjI4LDQzODg3NzMwMSwtMTIyMzg0Nj
 U0OSwtMTUxNjc1NDg2NCwtMTAzNTY0NjgyMywxMTU0NDM5MjY4
