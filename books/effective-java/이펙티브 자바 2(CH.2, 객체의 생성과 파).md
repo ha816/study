@@ -149,6 +149,8 @@ public class Elvis {
 
 private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출된다. public이나 protected 생성자가 없으므로 Elvis 클래스가 초기화 될때 new Elvis()로 만들어진 인스턴스가 전체 시스템에서 유일한것이 보장된다. 
 
+하지만 사실 리플렉션 API인 AccessibleObject.setAccessible을 사용해서 private 생성자를 호출할 수 있다. 이러한 것을 방어하려면 생성자를 수정하여 두 번째 객체가 생성되려할때 예외를 
+
 
 
 
@@ -167,11 +169,11 @@ private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출된다. pu
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA2Njg3MTcsNjAwMDMxODE4LDEzNTc4Mj
-Q4ODQsMTgzNjc3MDIzLDUxODc3OTIyOCw0Mzg4NzczMDEsLTEy
-MjM4NDY1NDksLTE1MTY3NTQ4NjQsLTEwMzU2NDY4MjMsMTE1ND
-QzOTI2OCwxMzg2MDY3NTE5LC0xMjIyODQ2MDM1LC0xNTQ1MzE3
-MDM3LC0xMTUyOTE0MDY3LC00NzQ5NTk5OTcsLTk3Mzk0MzU0MS
-w1NDQwMTc5NzQsLTE4NTc4NTQyNjgsLTk2NTc5NTgyNCw2MDky
-MDExNl19
+eyJoaXN0b3J5IjpbODg5MTYxNTcsNDA2Njg3MTcsNjAwMDMxOD
+E4LDEzNTc4MjQ4ODQsMTgzNjc3MDIzLDUxODc3OTIyOCw0Mzg4
+NzczMDEsLTEyMjM4NDY1NDksLTE1MTY3NTQ4NjQsLTEwMzU2ND
+Y4MjMsMTE1NDQzOTI2OCwxMzg2MDY3NTE5LC0xMjIyODQ2MDM1
+LC0xNTQ1MzE3MDM3LC0xMTUyOTE0MDY3LC00NzQ5NTk5OTcsLT
+k3Mzk0MzU0MSw1NDQwMTc5NzQsLTE4NTc4NTQyNjgsLTk2NTc5
+NTgyNF19
 -->
