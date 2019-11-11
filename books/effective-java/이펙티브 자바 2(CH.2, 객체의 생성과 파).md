@@ -104,7 +104,7 @@ type
 public abstract class Pizza {
 	abstract static class Builder<T extends Builder<T>> {
 		abstract Pizza build();
-		protected abstract T self();
+		protected abstract T self(); // 하위 클래스는 
 
 	}
 
@@ -125,11 +125,11 @@ public abstract class Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzU2NDY4MjMsMTE1NDQzOTI2OCwxMz
-g2MDY3NTE5LC0xMjIyODQ2MDM1LC0xNTQ1MzE3MDM3LC0xMTUy
-OTE0MDY3LC00NzQ5NTk5OTcsLTk3Mzk0MzU0MSw1NDQwMTc5Nz
-QsLTE4NTc4NTQyNjgsLTk2NTc5NTgyNCw2MDkyMDExNiwtNzE3
-MTc1MTc1LC0xNTMxMzA5NjM0LC0xODQyODAyNDE4LDIwMjkwMD
-g1NjYsLTI2NzkwOTk5OCwtMTk3MjAwMzYwNCwyNzI1NTAzMDAs
-LTIxMTUzODA2NTJdfQ==
+eyJoaXN0b3J5IjpbMTk0NDI2NzM0NSwtMTAzNTY0NjgyMywxMT
+U0NDM5MjY4LDEzODYwNjc1MTksLTEyMjI4NDYwMzUsLTE1NDUz
+MTcwMzcsLTExNTI5MTQwNjcsLTQ3NDk1OTk5NywtOTczOTQzNT
+QxLDU0NDAxNzk3NCwtMTg1Nzg1NDI2OCwtOTY1Nzk1ODI0LDYw
+OTIwMTE2LC03MTcxNzUxNzUsLTE1MzEzMDk2MzQsLTE4NDI4MD
+I0MTgsMjAyOTAwODU2NiwtMjY3OTA5OTk4LC0xOTcyMDAzNjA0
+LDI3MjU1MDMwMF19
 -->
