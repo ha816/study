@@ -90,8 +90,7 @@ type
 
 ## Item2. 생성자에 매개변수가 많다면 빌더를 고려하라. 
 
-정적 팩터리 메서드와 생성자 모두 똑같은 이슈가 하나 있다. 매개변수가 많을때 이를 적절히 처리하기 어렵다는 점이다. 
-개발자들은 이럴때 **점층적 생성자 패턴(telescoping constructor pattern)**을 즐겨 사용했다.  오버로딩을 이용한 다양한 형태의 생성자를 제공하고 사용자는 그 중 원하는 매개변수를 모두 포함하는 생성자를 선택해서 사용했다. 그런데 이 방법도매개변수의 수가 어느정도 이상이 되면 금세 걷잡을 수 없다. 즉 점층적 생성자 패턴은 근본적으로 좋은 해결방법이 아니다. 매개변수가 많아지면 클라이언트 코드를 작성하거나 읽기 어렵다. 각 매개변수의 의미가 무엇인지 헷갈릴 것이고, 매개변수가 몇개인지도 주의해서 세어보아야 할것이다. 
+정적 팩터리 메서드와 생성자 모두 똑같은 이슈가 하나 있다. 매개변수가 많을때 이를 적절히 처리하기 어렵다는 점이다. 개발자들은 이런 상황에서 **점층적 생성자 패턴(telescoping constructor pattern)**을 즐겨 사용했다.  오버로딩을 이용한 다양한 형태의 생성자를 제공하고 사용자는 그 중 원하는 매개변수를 모두 포함하는 생성자를 선택해서 사용했다. 그런데 이 방법도매개변수의 수가 어느정도 이상이 되면 금세 걷잡을 수 없다. 즉 점층적 생성자 패턴은 근본적으로 좋은 해결방법이 아니다. 매개변수가 많아지면 클라이언트 코드를 작성하거나 읽기 어렵다. 각 매개변수의 의미가 무엇인지 헷갈릴 것이고, 매개변수가 몇개인지도 주의해서 세어보아야 할것이다. 
 
 다음으로 매개변수가 많을때 활용할 수 있는 두 번째 대안인 **자바빈즈 패턴(JavaBeans pattern)**을 보자.  매개변수가 없는 생성자로 객체를 만든 후 세터setter 메서드로 필요한 매개변수를 설정하는 방법이다. 자바빈즈 패턴을 쓰면 객체를 만들기가 쉽고, 필요한 변수만 설정하여 더 읽기 쉬운 코드가 된다. 하지만 불행히도 자바빈즈 패턴은 치명적인 단점이 있다. **자바빈즈 패턴에서는 객체를 하나 만들려면 여러 메서드를 호출해야 하고, 객체가 완전히 생성되기 전까지는 일관성(consistency)이 무너진 상태에 놓인다.** 일관성이 깨진 객체가 사용되면 논리적 오류가 발생할 수 있어 큰 문제에 처할 수도 있다. 일관성이 깨지는 상황에 놓인다면 클래스를 불변으로 만들 수 없고 쓰레드 안전성을 얻으려면 프로그래머가 추가 작업을 해야만 한다.
 
@@ -101,7 +100,7 @@ type
 
 잘못된 매개변수를 최대한 일찍 발견하려면 빌더의 생성자와 메서드에서 입력 매개변수를 검사하고, build 메서드에서 여러 매개변수에 걸친 불변식을 검사하자. 공격에 대비해 불변식을 보장하려면 빌더로부터 매개변수를 복사한 후 해당 객체 필드들도 검사해야 한다. 검사해서 잘못된 점을 발견하려면 어떤 매개변수가 잘못되었는지를 메세지에 담아 예외를 던지면 된다. 
 
-빌더 패턴은 
+추가적으로 빌더 패턴은  계층적으로 설계된 클래스와 함께 쓰기 좋다.
 
 
 
@@ -116,11 +115,11 @@ type
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDUzMTcwMzcsLTExNTI5MTQwNjcsLT
-Q3NDk1OTk5NywtOTczOTQzNTQxLDU0NDAxNzk3NCwtMTg1Nzg1
-NDI2OCwtOTY1Nzk1ODI0LDYwOTIwMTE2LC03MTcxNzUxNzUsLT
-E1MzEzMDk2MzQsLTE4NDI4MDI0MTgsMjAyOTAwODU2NiwtMjY3
-OTA5OTk4LC0xOTcyMDAzNjA0LDI3MjU1MDMwMCwtMjExNTM4MD
-Y1MiwtMTU4ODM0MzI5NiwtMzgxMjg2ODI3LC05OTkyNTgzMjIs
-MTQ1NjgwNDQwN119
+eyJoaXN0b3J5IjpbNjAyNTQwODQzLC0xNTQ1MzE3MDM3LC0xMT
+UyOTE0MDY3LC00NzQ5NTk5OTcsLTk3Mzk0MzU0MSw1NDQwMTc5
+NzQsLTE4NTc4NTQyNjgsLTk2NTc5NTgyNCw2MDkyMDExNiwtNz
+E3MTc1MTc1LC0xNTMxMzA5NjM0LC0xODQyODAyNDE4LDIwMjkw
+MDg1NjYsLTI2NzkwOTk5OCwtMTk3MjAwMzYwNCwyNzI1NTAzMD
+AsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4NjgyNywt
+OTk5MjU4MzIyXX0=
 -->
