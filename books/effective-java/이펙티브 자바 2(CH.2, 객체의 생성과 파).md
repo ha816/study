@@ -105,12 +105,11 @@ public abstract class Pizza {
 	abstract static class Builder<T extends Builder<T>> {
 		abstract Pizza build();
 		protected abstract T self(); // 하위 클래스는 이 메서드를 재정의 하여 this를 반환해야 한다.
-
 	}
-
 }
-
 ```
+
+위에서 정의한 Pizza.Builder 클래스는 재귀적 타입 한정을 이용하는 제네릭 타입이다. 
 
 
 
@@ -125,11 +124,11 @@ public abstract class Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTY3NTQ4NjQsLTEwMzU2NDY4MjMsMT
-E1NDQzOTI2OCwxMzg2MDY3NTE5LC0xMjIyODQ2MDM1LC0xNTQ1
-MzE3MDM3LC0xMTUyOTE0MDY3LC00NzQ5NTk5OTcsLTk3Mzk0Mz
-U0MSw1NDQwMTc5NzQsLTE4NTc4NTQyNjgsLTk2NTc5NTgyNCw2
-MDkyMDExNiwtNzE3MTc1MTc1LC0xNTMxMzA5NjM0LC0xODQyOD
-AyNDE4LDIwMjkwMDg1NjYsLTI2NzkwOTk5OCwtMTk3MjAwMzYw
-NCwyNzI1NTAzMDBdfQ==
+eyJoaXN0b3J5IjpbMTE3NjQxNDE2LC0xNTE2NzU0ODY0LC0xMD
+M1NjQ2ODIzLDExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMTIyMjg0
+NjAzNSwtMTU0NTMxNzAzNywtMTE1MjkxNDA2NywtNDc0OTU5OT
+k3LC05NzM5NDM1NDEsNTQ0MDE3OTc0LC0xODU3ODU0MjY4LC05
+NjU3OTU4MjQsNjA5MjAxMTYsLTcxNzE3NTE3NSwtMTUzMTMwOT
+YzNCwtMTg0MjgwMjQxOCwyMDI5MDA4NTY2LC0yNjc5MDk5OTgs
+LTE5NzIwMDM2MDRdfQ==
 -->
