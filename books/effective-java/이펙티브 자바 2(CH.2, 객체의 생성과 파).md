@@ -147,7 +147,7 @@ public class Elvis {
 }
 ```
 
-private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출
+private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출된다. public이나 protected 생성자가 없으므로 Elvis 클래스가 초기화 될때 new Elvis()로 만들어진 인스턴스가 전체 시스템에서 유일한것이 보장된다. 
 
 
 
@@ -167,11 +167,11 @@ private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzOTU1OTQyMSw2MDAwMzE4MTgsMTM1Nz
-gyNDg4NCwxODM2NzcwMjMsNTE4Nzc5MjI4LDQzODg3NzMwMSwt
-MTIyMzg0NjU0OSwtMTUxNjc1NDg2NCwtMTAzNTY0NjgyMywxMT
-U0NDM5MjY4LDEzODYwNjc1MTksLTEyMjI4NDYwMzUsLTE1NDUz
-MTcwMzcsLTExNTI5MTQwNjcsLTQ3NDk1OTk5NywtOTczOTQzNT
-QxLDU0NDAxNzk3NCwtMTg1Nzg1NDI2OCwtOTY1Nzk1ODI0LDYw
-OTIwMTE2XX0=
+eyJoaXN0b3J5IjpbNDA2Njg3MTcsNjAwMDMxODE4LDEzNTc4Mj
+Q4ODQsMTgzNjc3MDIzLDUxODc3OTIyOCw0Mzg4NzczMDEsLTEy
+MjM4NDY1NDksLTE1MTY3NTQ4NjQsLTEwMzU2NDY4MjMsMTE1ND
+QzOTI2OCwxMzg2MDY3NTE5LC0xMjIyODQ2MDM1LC0xNTQ1MzE3
+MDM3LC0xMTUyOTE0MDY3LC00NzQ5NTk5OTcsLTk3Mzk0MzU0MS
+w1NDQwMTc5NzQsLTE4NTc4NTQyNjgsLTk2NTc5NTgyNCw2MDky
+MDExNl19
 -->
