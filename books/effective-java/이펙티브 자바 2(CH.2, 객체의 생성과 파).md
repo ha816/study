@@ -194,7 +194,9 @@ public enum Elvis {
 ```
 열거 타입을 사용하면 public 필드 방식과 비슷하지만, 더 간결하고, 추가 노력없이 직렬화 할 수 있고, 심지어 아주 복잡한 직렬화 상황이나 리플렉션을 사용해도 제 2의 인스턴스가 생기는 일을 완벽히 만아준다. 
 
-다소 부자연스러워 보일수는 있으나 대부분 상황에서 원소가 하나뿐인 열거 타입이 싱글턴을 만드는 ㄱ
+다소 부자연스러워 보일수는 있으나 **대부분 상황에서 원소가 하나뿐인 열거 타입이 싱글턴을 만드는 가장 좋은 방법이다.** 
+
+단, 만들려는 싱글턴이 Enum이외에 클래스를 상속해야 한다면 이 방법은 사용불가하다. (열거 타입이 다른 인터페이스를 구현하도록 선언은 가능하다.)
 
 
 
@@ -225,11 +227,11 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODY0NTQ3ODIsMTQ1OTk5MjA1MywxNT
-M5ODYyMjY2LDk2OTUwNDAwMCw0MDY2ODcxNyw2MDAwMzE4MTgs
-MTM1NzgyNDg4NCwxODM2NzcwMjMsNTE4Nzc5MjI4LDQzODg3Nz
-MwMSwtMTIyMzg0NjU0OSwtMTUxNjc1NDg2NCwtMTAzNTY0Njgy
-MywxMTU0NDM5MjY4LDEzODYwNjc1MTksLTEyMjI4NDYwMzUsLT
-E1NDUzMTcwMzcsLTExNTI5MTQwNjcsLTQ3NDk1OTk5NywtOTcz
-OTQzNTQxXX0=
+eyJoaXN0b3J5IjpbMTkyNjEwMTM3NiwxNDU5OTkyMDUzLDE1Mz
+k4NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3LDYwMDAzMTgxOCwx
+MzU3ODI0ODg0LDE4MzY3NzAyMyw1MTg3NzkyMjgsNDM4ODc3Mz
+AxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1NjQ2ODIz
+LDExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMTIyMjg0NjAzNSwtMT
+U0NTMxNzAzNywtMTE1MjkxNDA2NywtNDc0OTU5OTk3LC05NzM5
+NDM1NDFdfQ==
 -->
