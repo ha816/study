@@ -175,7 +175,12 @@ getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므�
 
 정적 팩터리 메서드의 장점을 사용할 일이 없다면 일반적인 방법(public 필드로 제공)을 이용하는 것이 좋다.
 
-위 두가지 방식으로 만든 싱글턴 클래스를 직렬화(serializable)하려면 단순히 Serializable을 구현한다고 선언하는 것만으로는 부족하다. 모든 인스턴스 필드를 일시적(trans
+위 두가지 방식으로 만든 싱글턴 클래스를 직렬화(serializable)하려면 단순히 Serializable을 구현한다고 선언하는 것만으로는 부족하다. 모든 인스턴스 필드를 일시적(transient)이라 선언하고 readResolve 메서드를 제공해야 한다. 이렇게 하지 않으면 직렬화된 인스턴드를 역직렬화 할때마다 새로운 인스턴스가 생성된다. 
+즉 싱글턴 클래스의 성질이 파괴된다. 
+
+싱글턴을 지키고 싶다면 readResolve
+
+
 
 
 
@@ -202,7 +207,7 @@ getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODkxNjkzNSwxNTM5ODYyMjY2LDk2OT
+eyJoaXN0b3J5IjpbMTM1OTM5OTY0OSwxNTM5ODYyMjY2LDk2OT
 UwNDAwMCw0MDY2ODcxNyw2MDAwMzE4MTgsMTM1NzgyNDg4NCwx
 ODM2NzcwMjMsNTE4Nzc5MjI4LDQzODg3NzMwMSwtMTIyMzg0Nj
 U0OSwtMTUxNjc1NDg2NCwtMTAzNTY0NjgyMywxMTU0NDM5MjY4
