@@ -126,7 +126,7 @@ public class NyPizza extends Pizza {
 	}
 }
 ```
-구현 클래스의 빌더가 재정의한 build메서드는 해당 구현 하위 클래스를 반환하도록 정의한다.  즉 NyPizza.Builder는 NyPizza를 반환한다. 이렇게 하위 클래스의 메서드가 상위 클래스의 메서드가 정의한 반환 타입(Pizza)이 아닌, 그 하위 타입을 반환하는 기능을 공변 반환 타이핑(covariant return typing)이라 한다. 
+구현 클래스의 빌더가 재정의한 build메서드는 해당 구현 하위 클래스를 반환하도록 정의한다.  즉 NyPizza.Builder는 NyPizza를 반환한다. 이렇게 하위 클래스의 메서드가 상위 클래스의 메서드가 정의한 반환 타입(Pizza)이 아닌, 그 하위 타입을 반환하는 기능을 공변 반환 타이핑(covariant return typing)이라 한다. 따라서 클라이언트가 형변환에 신경쓰지 않고 빌더를 편하게 사용이 가능하다. 
 
 
  
@@ -144,11 +144,11 @@ public class NyPizza extends Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MjAxMzcxLDE4MzY3NzAyMyw1MTg3Nz
-kyMjgsNDM4ODc3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0
-LC0xMDM1NjQ2ODIzLDExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMT
-IyMjg0NjAzNSwtMTU0NTMxNzAzNywtMTE1MjkxNDA2NywtNDc0
-OTU5OTk3LC05NzM5NDM1NDEsNTQ0MDE3OTc0LC0xODU3ODU0Mj
-Y4LC05NjU3OTU4MjQsNjA5MjAxMTYsLTcxNzE3NTE3NSwtMTUz
-MTMwOTYzNF19
+eyJoaXN0b3J5IjpbLTE5NTcwNzAwNDksMTgzNjc3MDIzLDUxOD
+c3OTIyOCw0Mzg4NzczMDEsLTEyMjM4NDY1NDksLTE1MTY3NTQ4
+NjQsLTEwMzU2NDY4MjMsMTE1NDQzOTI2OCwxMzg2MDY3NTE5LC
+0xMjIyODQ2MDM1LC0xNTQ1MzE3MDM3LC0xMTUyOTE0MDY3LC00
+NzQ5NTk5OTcsLTk3Mzk0MzU0MSw1NDQwMTc5NzQsLTE4NTc4NT
+QyNjgsLTk2NTc5NTgyNCw2MDkyMDExNiwtNzE3MTc1MTc1LC0x
+NTMxMzA5NjM0XX0=
 -->
