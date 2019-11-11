@@ -91,9 +91,9 @@ type
 ## Item2. 생성자에 매개변수가 많다면 빌더를 고려하라. 
 
 정적 팩터리 메서드와 생성자 모두 똑같은 이슈가 하나 있다. 매개변수가 많을때 이를 적절히 처리하기 어렵다는 점이다. 
-개발자들은 이럴때 점층적 생성자 패턴(telescoping constructor pattern)을 즐겨 사용했다.  오버로딩을 이용한 다양한 형태의 생성자를 제공하고 사용자는 그 중 원하는 매개변수를 모두 포함하는 생성자를 선택해서 사용했다. 그런데 이 방법도매개변수의 수가 어느정도 이상이 되면 금세 걷잡을 수 없다. 즉 점층적 생성자 패턴은 근본적으로 좋은 해결방법이 아니다. 매개변수가 많아지면 클라이언트 코드를 작성하거나 읽기 어렵다. 각 매개변수의 의미가 무엇인지 헷갈릴 것이고, 매개변수가 몇개인지도 주의해서 세어보아야 할것이다. 
+개발자들은 이럴때 **점층적 생성자 패턴(telescoping constructor pattern)**을 즐겨 사용했다.  오버로딩을 이용한 다양한 형태의 생성자를 제공하고 사용자는 그 중 원하는 매개변수를 모두 포함하는 생성자를 선택해서 사용했다. 그런데 이 방법도매개변수의 수가 어느정도 이상이 되면 금세 걷잡을 수 없다. 즉 점층적 생성자 패턴은 근본적으로 좋은 해결방법이 아니다. 매개변수가 많아지면 클라이언트 코드를 작성하거나 읽기 어렵다. 각 매개변수의 의미가 무엇인지 헷갈릴 것이고, 매개변수가 몇개인지도 주의해서 세어보아야 할것이다. 
 
-다음으로 매개변수가 많을때 활용할 수 있는 두 번째 대안인 자바빈즈 패턴(JavaBeans pattern)을 보자.  매개변수가 없는 생성자로 객체를 만든 후 세터setter 메서드로 필요한 매개변수를 설정하는 방법이다. 
+다음으로 매개변수가 많을때 활용할 수 있는 두 번째 대안인 **자바빈즈 패턴(JavaBeans pattern)**을 보자.  매개변수가 없는 생성자로 객체를 만든 후 세터setter 메서드로 필요한 매개변수를 설정하는 방법이다.  
 
 
 
@@ -103,10 +103,10 @@ type
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNzE3NTE3NSwtMTUzMTMwOTYzNCwtMT
-g0MjgwMjQxOCwyMDI5MDA4NTY2LC0yNjc5MDk5OTgsLTE5NzIw
-MDM2MDQsMjcyNTUwMzAwLC0yMTE1MzgwNjUyLC0xNTg4MzQzMj
-k2LC0zODEyODY4MjcsLTk5OTI1ODMyMiwxNDU2ODA0NDA3LC0x
-NTUzNTQ5NDM2LC0xMzgxNjMwOTU0LC0xODgwMDA0MjA2LDE1NT
-A1MTMyOTYsLTExMzc3MTkwMTVdfQ==
+eyJoaXN0b3J5IjpbLTcwMjIzNjM1NywtNzE3MTc1MTc1LC0xNT
+MxMzA5NjM0LC0xODQyODAyNDE4LDIwMjkwMDg1NjYsLTI2Nzkw
+OTk5OCwtMTk3MjAwMzYwNCwyNzI1NTAzMDAsLTIxMTUzODA2NT
+IsLTE1ODgzNDMyOTYsLTM4MTI4NjgyNywtOTk5MjU4MzIyLDE0
+NTY4MDQ0MDcsLTE1NTM1NDk0MzYsLTEzODE2MzA5NTQsLTE4OD
+AwMDQyMDYsMTU1MDUxMzI5NiwtMTEzNzcxOTAxNV19
 -->
