@@ -130,7 +130,8 @@ public class NyPizza extends Pizza {
 
 빌더 패턴은 다양한 응용이 가능하기 때문에 상당히 유연하다. 하지만 빌더 패턴이 장점만 있는 것은 아니다. 우선, 객체를 만들려면 빌더 부터 만들어야 한다. 빌더 자체의 생성 비용이 크지는 않지만 성능에 민감한 상황이라면 문제가 될수 있다. 다음으로 매개변수가 최소 4개 이상은 되어야 값어치를 한다. 하지만 API는 시간이 지날수록 매개변수가 많아지는 경향이 있기 때문에 생성자나 팩터리 방식으로 시작했다가 나중에 빌더 패턴으로 전환하는것 보다는 애초에 빌더 패턴으로 시작하는 편이 나을때가 많다. 
 
-
+> 핵심정리
+> 생성자나 정적 팩터리가 처리해야 할 매개변수가 많다면 빌더 패턴을 선택하는 것이 낫다. 매개변수 중 다수가 피
  
 
 
@@ -146,7 +147,7 @@ public class NyPizza extends Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5ODU0NTYxNCwxODM2NzcwMjMsNTE4Nz
+eyJoaXN0b3J5IjpbLTY5NTQ2ODE3OSwxODM2NzcwMjMsNTE4Nz
 c5MjI4LDQzODg3NzMwMSwtMTIyMzg0NjU0OSwtMTUxNjc1NDg2
 NCwtMTAzNTY0NjgyMywxMTU0NDM5MjY4LDEzODYwNjc1MTksLT
 EyMjI4NDYwMzUsLTE1NDUzMTcwMzcsLTExNTI5MTQwNjcsLTQ3
