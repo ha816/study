@@ -135,8 +135,8 @@ public class NyPizza extends Pizza {
 
 ## Item3. private 생성자나 열거 타입으로 싱글턴임을 보증하라. 
 
-싱글턴 패턴의 전형적인 예로는 함수와 같은 무상태 객체나 설계상 유일해야하는 시스템 컴포넌트가 있다. 
-싱글턴(singleton) 클래스란 인스턴스를 오직 하나만 생성이 가능한 클래스를 말한다.  
+싱글턴(singleton)이란 인스턴스를 오직 하나만 생성이 가능한 클래스를 말한다.  싱글턴 패턴의 전형적인 예로는 함수와 같은 무상태 객체(stateless)나 설계상 유일해야하는 시스템 컴포넌트가 있다. 
+
 
 
  
@@ -154,7 +154,7 @@ public class NyPizza extends Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjUwMDkwMzYsMTM1NzgyNDg4NCwxOD
+eyJoaXN0b3J5IjpbLTE3NTI1MTIwMTcsMTM1NzgyNDg4NCwxOD
 M2NzcwMjMsNTE4Nzc5MjI4LDQzODg3NzMwMSwtMTIyMzg0NjU0
 OSwtMTUxNjc1NDg2NCwtMTAzNTY0NjgyMywxMTU0NDM5MjY4LD
 EzODYwNjc1MTksLTEyMjI4NDYwMzUsLTE1NDUzMTcwMzcsLTEx
