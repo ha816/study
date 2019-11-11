@@ -88,16 +88,19 @@ type
 > 핵심정리
 > 정적 펙터리 메서드와 public 생성자는 각자의 쓰임새가 있으므로 장단점을 이해하고 적절히 사용하는 것이 좋다. 일반적으로는 정적 펙터리 메서드를 사용하는게 유리한 경우가 많기 때문에 생각 없이 public 생성자를 이용하는 습관이 있었다면 고치도록 하자.
 
-## Item2. 생성자 대신 정적 팩토리 메서드를 고려하라.
+## Item2. 생성자에 매개변수가 많다면 빌더를 고려하라. 
+
+정적팩터리와 생성자 모두 똑같은 이슈가 하나 있다. 매개변수가 많을때 이를 적절히 처리하히가 어렵다는 점이다. 
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzkwOTk5OCwtMTk3MjAwMzYwNCwyNz
-I1NTAzMDAsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4
-NjgyNywtOTk5MjU4MzIyLDE0NTY4MDQ0MDcsLTE1NTM1NDk0Mz
-YsLTEzODE2MzA5NTQsLTE4ODAwMDQyMDYsMTU1MDUxMzI5Niwt
-MTEzNzcxOTAxNV19
+eyJoaXN0b3J5IjpbMjAyOTAwODU2NiwtMjY3OTA5OTk4LC0xOT
+cyMDAzNjA0LDI3MjU1MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0
+MzI5NiwtMzgxMjg2ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNy
+wtMTU1MzU0OTQzNiwtMTM4MTYzMDk1NCwtMTg4MDAwNDIwNiwx
+NTUwNTEzMjk2LC0xMTM3NzE5MDE1XX0=
 -->
