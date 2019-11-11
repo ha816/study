@@ -135,7 +135,9 @@ public class NyPizza extends Pizza {
 
 ## Item3. private 생성자나 열거 타입으로 싱글턴임을 보증하라. 
 
-싱글턴(singleton)이란 인스턴스를 오직 하나만 생성이 가능한 클래스를 말한다.  싱글턴 패턴의 전형적인 예로는 함수와 같은 무상태 객체(stateless)나 설계상 유일해야하는 시스템 컴포넌트가 있다. 
+싱글턴(singleton)이란 인스턴스를 오직 하나만 생성이 가능한 클래스를 말한다. 싱글턴 패턴의 전형적인 예로는 함수와 같은 무상태 객체(stateless)나 설계 목적상 유일해야하는 시스템 컴포넌트가 있다. 
+
+클래스를 싱글턴으로 만들면 이를 사용하는 클라이언트를 테스트하기가 어려워질 수 있다. 타입을 인터페이스로 정의한 다음 그 인터페이스를 구현해서 만든 싱글턴이 아니라면 싱글턴 인스턴스를 가자(mock) 구현으로 대체할 수 없기 때문이다. 
 
 
 
@@ -154,11 +156,11 @@ public class NyPizza extends Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTI1MTIwMTcsMTM1NzgyNDg4NCwxOD
-M2NzcwMjMsNTE4Nzc5MjI4LDQzODg3NzMwMSwtMTIyMzg0NjU0
-OSwtMTUxNjc1NDg2NCwtMTAzNTY0NjgyMywxMTU0NDM5MjY4LD
-EzODYwNjc1MTksLTEyMjI4NDYwMzUsLTE1NDUzMTcwMzcsLTEx
-NTI5MTQwNjcsLTQ3NDk1OTk5NywtOTczOTQzNTQxLDU0NDAxNz
-k3NCwtMTg1Nzg1NDI2OCwtOTY1Nzk1ODI0LDYwOTIwMTE2LC03
-MTcxNzUxNzVdfQ==
+eyJoaXN0b3J5IjpbNjAwMDMxODE4LDEzNTc4MjQ4ODQsMTgzNj
+c3MDIzLDUxODc3OTIyOCw0Mzg4NzczMDEsLTEyMjM4NDY1NDks
+LTE1MTY3NTQ4NjQsLTEwMzU2NDY4MjMsMTE1NDQzOTI2OCwxMz
+g2MDY3NTE5LC0xMjIyODQ2MDM1LC0xNTQ1MzE3MDM3LC0xMTUy
+OTE0MDY3LC00NzQ5NTk5OTcsLTk3Mzk0MzU0MSw1NDQwMTc5Nz
+QsLTE4NTc4NTQyNjgsLTk2NTc5NTgyNCw2MDkyMDExNiwtNzE3
+MTc1MTc1XX0=
 -->
