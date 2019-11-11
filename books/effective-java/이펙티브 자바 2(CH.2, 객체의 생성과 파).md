@@ -128,7 +128,7 @@ public class NyPizza extends Pizza {
 ```
 구현 클래스의 빌더가 재정의한 build메서드는 해당 구현 하위 클래스를 반환하도록 정의한다.  즉 NyPizza.Builder는 NyPizza를 반환한다. 이렇게 하위 클래스의 메서드가 상위 클래스의 메서드가 정의한 반환 타입(Pizza)이 아닌, 그 하위 타입을 반환하는 기능을 공변 반환 타이핑(covariant return typing)이라 한다. 따라서 클라이언트가 형변환에 신경쓰지 않고 빌더를 편하게 사용이 가능하다. 
 
-빌더 패턴은 다양한 응용이 가능하기 때문에 상당히 유연하다. 하지만 빌더 패턴이 장점만 있는 것은 아니다. 
+빌더 패턴은 다양한 응용이 가능하기 때문에 상당히 유연하다. 하지만 빌더 패턴이 장점만 있는 것은 아니다. 우선, 객체를 만들려면 빌더 부터 만들어야 한다. 빌더 자체의 생성 비용이 크지는 않지만 성능에 민감한 상황이라면 문제가 될수 있다. 다음으
 
 
  
@@ -146,7 +146,7 @@ public class NyPizza extends Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNDY5NzM2NywxODM2NzcwMjMsNTE4Nz
+eyJoaXN0b3J5IjpbMTMyMzA1NjUwOSwxODM2NzcwMjMsNTE4Nz
 c5MjI4LDQzODg3NzMwMSwtMTIyMzg0NjU0OSwtMTUxNjc1NDg2
 NCwtMTAzNTY0NjgyMywxMTU0NDM5MjY4LDEzODYwNjc1MTksLT
 EyMjI4NDYwMzUsLTE1NDUzMTcwMzcsLTExNTI5MTQwNjcsLTQ3
