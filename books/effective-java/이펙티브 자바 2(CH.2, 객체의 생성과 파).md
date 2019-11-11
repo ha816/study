@@ -158,7 +158,7 @@ private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출된다. pu
 public class Elvis {
 	private static final Elvis INSTANCE = new Elvis();
 	private Elvis() { ... }
-	public static Elvis getInstance() { ... }
+	public static Elvis getInstance() { re }
 }
 ```
 
@@ -183,11 +183,11 @@ public class Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY5NTA0MDAwLDQwNjY4NzE3LDYwMDAzMT
-gxOCwxMzU3ODI0ODg0LDE4MzY3NzAyMyw1MTg3NzkyMjgsNDM4
-ODc3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1Nj
-Q2ODIzLDExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMTIyMjg0NjAz
-NSwtMTU0NTMxNzAzNywtMTE1MjkxNDA2NywtNDc0OTU5OTk3LC
-05NzM5NDM1NDEsNTQ0MDE3OTc0LC0xODU3ODU0MjY4LC05NjU3
-OTU4MjRdfQ==
+eyJoaXN0b3J5IjpbMTkyNzMwNzY0OSw5Njk1MDQwMDAsNDA2Nj
+g3MTcsNjAwMDMxODE4LDEzNTc4MjQ4ODQsMTgzNjc3MDIzLDUx
+ODc3OTIyOCw0Mzg4NzczMDEsLTEyMjM4NDY1NDksLTE1MTY3NT
+Q4NjQsLTEwMzU2NDY4MjMsMTE1NDQzOTI2OCwxMzg2MDY3NTE5
+LC0xMjIyODQ2MDM1LC0xNTQ1MzE3MDM3LC0xMTUyOTE0MDY3LC
+00NzQ5NTk5OTcsLTk3Mzk0MzU0MSw1NDQwMTc5NzQsLTE4NTc4
+NTQyNjhdfQ==
 -->
