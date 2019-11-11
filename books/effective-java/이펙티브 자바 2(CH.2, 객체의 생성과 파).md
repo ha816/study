@@ -97,7 +97,7 @@ type
 
 마지막 대안인 점층적 생성자 패턴의 안정성과 자바빈즈패턴의 가독성을 겸비한 빌더 패턴(Builder pattern)을 알아보자. 클라이언트는 필요한 객체를 직접 만드는 대신, 필수 매개변수만으로 생성자나 정적 펙터리 호출해 빌더 객체를 얻는다. 그 다음 빌더 객체가 제공하는 일종의 세터 메서드들로 원하는 매개변수를 설정한다. 마지막으로 build 메서드를 호출해 드디어 우리에게 필요한 일관성 있는 객체를 얻는다. 빌더는 보통 생성할 클래스 안에 정적 멤버 클래스로 만든다. 
 
-빌더의 세터 메서드들은 빌더 자신을 반환하기 때문ㅇ
+빌더의 세터 메서드들은 빌더 자신을 반환하기 때문에 연쇄적으로 호출할 수 있다. 
 
 
 
@@ -110,11 +110,11 @@ type
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NTY3NDU0MiwtMTg1Nzg1NDI2OCwtOT
-Y1Nzk1ODI0LDYwOTIwMTE2LC03MTcxNzUxNzUsLTE1MzEzMDk2
-MzQsLTE4NDI4MDI0MTgsMjAyOTAwODU2NiwtMjY3OTA5OTk4LC
-0xOTcyMDAzNjA0LDI3MjU1MDMwMCwtMjExNTM4MDY1MiwtMTU4
-ODM0MzI5NiwtMzgxMjg2ODI3LC05OTkyNTgzMjIsMTQ1NjgwND
-QwNywtMTU1MzU0OTQzNiwtMTM4MTYzMDk1NCwtMTg4MDAwNDIw
-NiwxNTUwNTEzMjk2XX0=
+eyJoaXN0b3J5IjpbNTQ0MDE3OTc0LC0xODU3ODU0MjY4LC05Nj
+U3OTU4MjQsNjA5MjAxMTYsLTcxNzE3NTE3NSwtMTUzMTMwOTYz
+NCwtMTg0MjgwMjQxOCwyMDI5MDA4NTY2LC0yNjc5MDk5OTgsLT
+E5NzIwMDM2MDQsMjcyNTUwMzAwLC0yMTE1MzgwNjUyLC0xNTg4
+MzQzMjk2LC0zODEyODY4MjcsLTk5OTI1ODMyMiwxNDU2ODA0ND
+A3LC0xNTUzNTQ5NDM2LC0xMzgxNjMwOTU0LC0xODgwMDA0MjA2
+LDE1NTA1MTMyOTZdfQ==
 -->
