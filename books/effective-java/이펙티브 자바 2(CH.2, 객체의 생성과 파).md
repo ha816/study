@@ -177,8 +177,8 @@ getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므�
 
 위 두가지 방식으로 만든 싱글턴 클래스를 직렬화(serializable)하려면 단순히 Serializable을 구현 선언하는 것만으로는 부족하다. 구현하려면 모든 인스턴스 필드를 일시적(transient)이라 선언하고 readResolve 메서드를 제공해야 한다. 이렇게 하지 않으면 직렬화된 인스턴드를 역직렬화 할때마다 새로운 인스턴스가 생성된다. 
 
-transient 
-
+transient
+: a variables modifier used in Serialization. At the time of serialization, if we don’t want to save value of a particular variable in a file, then we use **transient** keyword. When JVM comes across **transient** keyword, it ignores original value of the variable and save default value of that variable data type. 
 
 싱글턴을 지키고 싶다면 아래와 같은 readResolve 메서드를 추가하자.
 ```
@@ -195,11 +195,9 @@ public enum Elvis {
 ```
 열거 타입을 사용하면 public 필드 방식과 비슷하지만, 더 간결하고, 추가 노력없이 직렬화 할 수 있고, 심지어 아주 복잡한 직렬화 상황이나 리플렉션을 사용해도 제 2의 인스턴스가 생기는 일을 완벽히 만아준다. 
 
-다소 부자연스러워 보일수는 있으나 **대부분 상황에서 원소가 하나뿐인 열거 타입이 싱글턴을 만드는 가장 좋은 방법이다.** 
+다소 부자연스러워 보일수는 있으나 **대부분 상황에서 원소가 하나뿐인 열거 타입이 싱글턴을 만드는 가장 좋은 방법이다.**  단, 만들려는 싱글턴이 Enum이외에 클래스를 상속해야 한다면 이 방법은 사용불가하다. (열거 타입이 다른 인터페이스를 구현하도록 선언은 가능하다.)
 
-단, 만들려는 싱글턴이 Enum이외에 클래스를 상속해야 한다면 이 방법은 사용불가하다. (열거 타입이 다른 인터페이스를 구현하도록 선언은 가능하다.)
-
-
+## Item4. private 생성자나 열거 타입으로 싱글턴임을 보증하라. 
 
 
 
@@ -228,7 +226,7 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTQzODk4NTksMTQ1OTk5MjA1MywxNT
+eyJoaXN0b3J5IjpbLTEwNzM2NjMyNTUsMTQ1OTk5MjA1MywxNT
 M5ODYyMjY2LDk2OTUwNDAwMCw0MDY2ODcxNyw2MDAwMzE4MTgs
 MTM1NzgyNDg4NCwxODM2NzcwMjMsNTE4Nzc5MjI4LDQzODg3Nz
 MwMSwtMTIyMzg0NjU0OSwtMTUxNjc1NDg2NCwtMTAzNTY0Njgy
