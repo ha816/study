@@ -109,7 +109,7 @@ public abstract class Pizza {
 }
 ```
 
-위에서 정의한 Pizza.Builder 클래스는 재귀적 타입 한정을 이용하는 제네릭 타입이다. 재귀 ```<T extends Builder<T>>``` 
+위에서 정의한 Pizza.Builder 클래스는 재귀적 타입 한정을 이용하는 제네릭 타입이다.  여기서 말한 재귀적 타입 한정은 ```<T extends Builder<T>>``` 으로 주어진 T 타입은 반드시 T를 T를 가지는 Builder를 상속하는 
  
 
 
@@ -125,11 +125,11 @@ public abstract class Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNDYzNDIyLC0xMjIzODQ2NTQ5LC0xNT
-E2NzU0ODY0LC0xMDM1NjQ2ODIzLDExNTQ0MzkyNjgsMTM4NjA2
-NzUxOSwtMTIyMjg0NjAzNSwtMTU0NTMxNzAzNywtMTE1MjkxND
-A2NywtNDc0OTU5OTk3LC05NzM5NDM1NDEsNTQ0MDE3OTc0LC0x
-ODU3ODU0MjY4LC05NjU3OTU4MjQsNjA5MjAxMTYsLTcxNzE3NT
-E3NSwtMTUzMTMwOTYzNCwtMTg0MjgwMjQxOCwyMDI5MDA4NTY2
-LC0yNjc5MDk5OThdfQ==
+eyJoaXN0b3J5IjpbODA5MjAwMjksLTEyMjM4NDY1NDksLTE1MT
+Y3NTQ4NjQsLTEwMzU2NDY4MjMsMTE1NDQzOTI2OCwxMzg2MDY3
+NTE5LC0xMjIyODQ2MDM1LC0xNTQ1MzE3MDM3LC0xMTUyOTE0MD
+Y3LC00NzQ5NTk5OTcsLTk3Mzk0MzU0MSw1NDQwMTc5NzQsLTE4
+NTc4NTQyNjgsLTk2NTc5NTgyNCw2MDkyMDExNiwtNzE3MTc1MT
+c1LC0xNTMxMzA5NjM0LC0xODQyODAyNDE4LDIwMjkwMDg1NjYs
+LTI2NzkwOTk5OF19
 -->
