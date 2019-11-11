@@ -141,7 +141,7 @@ public class NyPizza extends Pizza {
 
 싱글턴을 만드는 방식은 보통 둘 중 하나다. 두 가지 방법 모두 생성자는 private으로 감춰두고, 유일한 하나의 인스턴스에 접근하는 수단으로 public static 멤버를 하나 마련해둔다.
 
-아래 코드는 싱글턴을 만드는 일반적인 방법의 예이다.
+아래 코드는 싱글턴을 만드는 일반적인 방법의 예이다. 
 ```
 public class Elvis {
 	public static final Elvis INSTANCE = new Elvis();
@@ -153,7 +153,6 @@ private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출된다. pu
 하지만 사실 리플렉션 API인 AccessibleObject.setAccessible을 사용해서 private 생성자를 호출할 수 있다. 이러한 것을 방어하려면 생성자를 수정하여 두 번째 객체가 생성되려할때 예외를 던지게 하면 된다. 
 
 다음으로 아래 코드는 정적 팩터리 메서드를 public static 멤버로 제공한다. 
-
 ```
 public class Elvis {
 	private static final Elvis INSTANCE = new Elvis();
@@ -174,7 +173,9 @@ getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므�
 * 정적 팩터리를 제네릭 싱글턴 팩터리로 만들 수 있다.(item 30)
 * 정적 팩터리의 메서드 참조를 공급자(supplier)로 사용할 수 있다. 
 
+정적 팩터리 메서드의 장점을 사용할 일이 없다면 일반적인 방법(
 
+public 필드 방식
 
 
 
@@ -201,7 +202,7 @@ getInstance 메서드를 통해서 항상 같은 객체 참조를 반환하므�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTE5NDE1MSwxNTM5ODYyMjY2LDk2OT
+eyJoaXN0b3J5IjpbLTc0NDMzMDYwMCwxNTM5ODYyMjY2LDk2OT
 UwNDAwMCw0MDY2ODcxNyw2MDAwMzE4MTgsMTM1NzgyNDg4NCwx
 ODM2NzcwMjMsNTE4Nzc5MjI4LDQzODg3NzMwMSwtMTIyMzg0Nj
 U0OSwtMTUxNjc1NDg2NCwtMTAzNTY0NjgyMywxMTU0NDM5MjY4
