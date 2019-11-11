@@ -98,7 +98,7 @@ type
 
 빌더의 세터 메서드들은 빌더 자신을 반환하기 때문에 연쇄적으로 호출할 수 있다. 이런 방식을 메서드 호출이 계속 연결된다는 뜻으로 플루언트 API(fluent API) 혹은 메서드 연쇄(method chaining)이라고 한다. 잘못된 매개변수를 최대한 일찍 발견하려면 빌더의 생성자와 메서드에서 입력 매개변수를 검사하고, build 메서드에서 여러 매개변수에 걸친 불변식을 검사하자. 공격에 대비해 불변식을 보장하려면 빌더로부터 매개변수를 복사한 후 해당 객체 필드들도 검사해야 한다. 검사해서 잘못된 점을 발견하려면 어떤 매개변수가 잘못되었는지를 메세지에 담아 예외를 던지면 된다. 
 
-추가적으로 빌더 패턴은  계층적으로 설계된 클래스와 함께 쓰기 좋다. 여러 계층의 클래스에서 관련 빌더를 멤버로 정의하자. 즉 추상클래스는 추상빌더를, 구현 클래스(concrete class)는 
+추가적으로 빌더 패턴은  계층적으로 설계된 클래스와 함께 쓰기 좋다. 여러 계층의 클래스에서 관련 빌더를 멤버로 정의하자. 즉 추상클래스는 추상빌더를, 구현 클래스(concrete class)는 구현 빌더를 갖도록 한다.
 
 
 
@@ -113,11 +113,11 @@ type
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEwMzEzNTUwLC0xNTQ1MzE3MDM3LC0xMT
-UyOTE0MDY3LC00NzQ5NTk5OTcsLTk3Mzk0MzU0MSw1NDQwMTc5
-NzQsLTE4NTc4NTQyNjgsLTk2NTc5NTgyNCw2MDkyMDExNiwtNz
-E3MTc1MTc1LC0xNTMxMzA5NjM0LC0xODQyODAyNDE4LDIwMjkw
-MDg1NjYsLTI2NzkwOTk5OCwtMTk3MjAwMzYwNCwyNzI1NTAzMD
-AsLTIxMTUzODA2NTIsLTE1ODgzNDMyOTYsLTM4MTI4NjgyNywt
-OTk5MjU4MzIyXX0=
+eyJoaXN0b3J5IjpbLTEyMjI4NDYwMzUsLTE1NDUzMTcwMzcsLT
+ExNTI5MTQwNjcsLTQ3NDk1OTk5NywtOTczOTQzNTQxLDU0NDAx
+Nzk3NCwtMTg1Nzg1NDI2OCwtOTY1Nzk1ODI0LDYwOTIwMTE2LC
+03MTcxNzUxNzUsLTE1MzEzMDk2MzQsLTE4NDI4MDI0MTgsMjAy
+OTAwODU2NiwtMjY3OTA5OTk4LC0xOTcyMDAzNjA0LDI3MjU1MD
+MwMCwtMjExNTM4MDY1MiwtMTU4ODM0MzI5NiwtMzgxMjg2ODI3
+LC05OTkyNTgzMjJdfQ==
 -->
