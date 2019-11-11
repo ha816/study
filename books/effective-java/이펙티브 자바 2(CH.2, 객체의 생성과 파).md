@@ -113,18 +113,18 @@ public abstract class Pizza {
 
 ```
 public class NyPizza extends Pizza {
+	private NyPizza(Builder builder) {
+		super()
+	}
 	public static class Builder extends Pizza.Builder<Builder>{
 		@Override public NyPizza build(){
 			return new NyPizza();
 		}
-		@Override prote NyPizza build(){
-			return new NyPizza();
+		@Override protected Builder self(){
+			return this;
 		}
-
 	}
-
 }
-
 ```
 
  
@@ -142,11 +142,11 @@ public class NyPizza extends Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTg3MzU5LDUxODc3OTIyOCw0Mzg4Nz
-czMDEsLTEyMjM4NDY1NDksLTE1MTY3NTQ4NjQsLTEwMzU2NDY4
-MjMsMTE1NDQzOTI2OCwxMzg2MDY3NTE5LC0xMjIyODQ2MDM1LC
-0xNTQ1MzE3MDM3LC0xMTUyOTE0MDY3LC00NzQ5NTk5OTcsLTk3
-Mzk0MzU0MSw1NDQwMTc5NzQsLTE4NTc4NTQyNjgsLTk2NTc5NT
-gyNCw2MDkyMDExNiwtNzE3MTc1MTc1LC0xNTMxMzA5NjM0LC0x
-ODQyODAyNDE4XX0=
+eyJoaXN0b3J5IjpbMTgxMjA2NTE3Miw1MTg3NzkyMjgsNDM4OD
+c3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1NjQ2
+ODIzLDExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMTIyMjg0NjAzNS
+wtMTU0NTMxNzAzNywtMTE1MjkxNDA2NywtNDc0OTU5OTk3LC05
+NzM5NDM1NDEsNTQ0MDE3OTc0LC0xODU3ODU0MjY4LC05NjU3OT
+U4MjQsNjA5MjAxMTYsLTcxNzE3NTE3NSwtMTUzMTMwOTYzNCwt
+MTg0MjgwMjQxOF19
 -->
