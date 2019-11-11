@@ -139,17 +139,22 @@ public class NyPizza extends Pizza {
 
 클래스를 싱글턴으로 만들면 이를 사용하는 클라이언트에서 테스트하기가 어려워질 수 있다. 타입을 인터페이스로 정의한 다음 그 인터페이스를 구현해서 만든 싱글턴이 아니라면 싱글턴 인스턴스를 가자(mock) 구현으로 대체할 수 없기 때문이다. 
 
-싱글턴을 만드는 방식은 보통 둘 중 하나다. 모두 생성자는 private으로 감춰두고, 유일한 하나의 인스턴스에 접근하는 수단으로 public static 멤버를 하나 마련해둔다.
+싱글턴을 만드는 방식은 보통 둘 중 하나다. 두 가지 방법 모두 생성자는 private으로 감춰두고, 유일한 하나의 인스턴스에 접근하는 수단으로 public static 멤버를 하나 마련해둔다.
+
+아래 코드는 싱글턴을 만드는 일반적인 방법의 예이다.
 ```
 public class Elvis {
 	public static final Elvis INSTANCE = new Elvis();
 	private Elvis() { ... }
 }
 ```
-
 private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출된다. public이나 protected 생성자가 없으므로 Elvis 클래스가 초기화 될때 new Elvis()로 만들어진 인스턴스가 전체 시스템에서 유일한것이 보장된다. 
 
-하지만 사실 리플렉션 API인 AccessibleObject.setAccessible을 사용해서 private 생성자를 호출할 수 있다. 이러한 것을 방어하려면 생성자를 수정하여 두 번째 객체가 생성되려할때 예외를 
+하지만 사실 리플렉션 API인 AccessibleObject.setAccessible을 사용해서 private 생성자를 호출할 수 있다. 이러한 것을 방어하려면 생성자를 수정하여 두 번째 객체가 생성되려할때 예외를 던지게 하면 된다. 
+
+다음으로 아래 코드는 
+
+
 
 
 
@@ -169,11 +174,11 @@ private 생성자는 INSTANCE를 초기화 하는데 딱 한번 호출된다. pu
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg5MTYxNTcsNDA2Njg3MTcsNjAwMDMxOD
-E4LDEzNTc4MjQ4ODQsMTgzNjc3MDIzLDUxODc3OTIyOCw0Mzg4
-NzczMDEsLTEyMjM4NDY1NDksLTE1MTY3NTQ4NjQsLTEwMzU2ND
-Y4MjMsMTE1NDQzOTI2OCwxMzg2MDY3NTE5LC0xMjIyODQ2MDM1
-LC0xNTQ1MzE3MDM3LC0xMTUyOTE0MDY3LC00NzQ5NTk5OTcsLT
-k3Mzk0MzU0MSw1NDQwMTc5NzQsLTE4NTc4NTQyNjgsLTk2NTc5
-NTgyNF19
+eyJoaXN0b3J5IjpbOTA4NzgyNjE3LDQwNjY4NzE3LDYwMDAzMT
+gxOCwxMzU3ODI0ODg0LDE4MzY3NzAyMyw1MTg3NzkyMjgsNDM4
+ODc3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1Nj
+Q2ODIzLDExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMTIyMjg0NjAz
+NSwtMTU0NTMxNzAzNywtMTE1MjkxNDA2NywtNDc0OTU5OTk3LC
+05NzM5NDM1NDEsNTQ0MDE3OTc0LC0xODU3ODU0MjY4LC05NjU3
+OTU4MjRdfQ==
 -->
