@@ -99,7 +99,7 @@ type
 
 빌더의 세터 메서드들은 빌더 자신을 반환하기 때문에 연쇄적으로 호출할 수 있다. 이런 방식을 메서드 호출이 계속 연결된다는 뜻으로 플루언트 API(fluent API) 혹은 메서드 연쇄(method chaining)이라고 한다. 
 
-잘못된 매개변수를 최대한 일찍 발견하려면 빌더의 생성자와 메서드에서 입력 매개변수를 검사하고, build 메서드가 호출하는 생성자에서 여러 매개변수에 걸친 불변식을 검사하자. 공격에 대비해 불변식을 보장하려면 빌더로부터 매개변수를 복산한 후 해당 객체 필드들도 검사해야 한다. 검사해서 잘못된 점을 발견하려면 어떤 매개변수가 잘못되었는지를 자세히 알려주는 메세지를 담아 예외를 던지면 된다. 
+잘못된 매개변수를 최대한 일찍 발견하려면 빌더의 생성자와 메서드에서 입력 매개변수를 검사하고, build 메서드에서 여러 매개변수에 걸친 불변식을 검사하자. 공격에 대비해 불변식을 보장하려면 빌더로부터 매개변수를 복사한 후 해당 객체 필드들도 검사해야 한다. 검사해서 잘못된 점을 발견하려면 어떤 매개변수가 잘못되었는지를 메세지에 담아 예외를 던지면 된다. 
 
 
 
@@ -114,11 +114,11 @@ type
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NDk1OTk5NywtOTczOTQzNTQxLDU0ND
-AxNzk3NCwtMTg1Nzg1NDI2OCwtOTY1Nzk1ODI0LDYwOTIwMTE2
-LC03MTcxNzUxNzUsLTE1MzEzMDk2MzQsLTE4NDI4MDI0MTgsMj
-AyOTAwODU2NiwtMjY3OTA5OTk4LC0xOTcyMDAzNjA0LDI3MjU1
-MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0MzI5NiwtMzgxMjg2OD
-I3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywtMTU1MzU0OTQzNiwt
-MTM4MTYzMDk1NF19
+eyJoaXN0b3J5IjpbLTExNTI5MTQwNjcsLTQ3NDk1OTk5NywtOT
+czOTQzNTQxLDU0NDAxNzk3NCwtMTg1Nzg1NDI2OCwtOTY1Nzk1
+ODI0LDYwOTIwMTE2LC03MTcxNzUxNzUsLTE1MzEzMDk2MzQsLT
+E4NDI4MDI0MTgsMjAyOTAwODU2NiwtMjY3OTA5OTk4LC0xOTcy
+MDAzNjA0LDI3MjU1MDMwMCwtMjExNTM4MDY1MiwtMTU4ODM0Mz
+I5NiwtMzgxMjg2ODI3LC05OTkyNTgzMjIsMTQ1NjgwNDQwNywt
+MTU1MzU0OTQzNl19
 -->
