@@ -114,7 +114,7 @@ public abstract class Pizza {
 ```
 public class NyPizza extends Pizza {
 	private NyPizza(Builder builder) {
-		super()
+		super(builder);
 	}
 	public static class Builder extends Pizza.Builder<Builder>{
 		@Override public NyPizza build(){
@@ -142,7 +142,7 @@ public class NyPizza extends Pizza {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMjA2NTE3Miw1MTg3NzkyMjgsNDM4OD
+eyJoaXN0b3J5IjpbLTg5MTg3MDA4OCw1MTg3NzkyMjgsNDM4OD
 c3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1NjQ2
 ODIzLDExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMTIyMjg0NjAzNS
 wtMTU0NTMxNzAzNywtMTE1MjkxNDA2NywtNDc0OTU5OTk3LC05
