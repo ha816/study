@@ -219,7 +219,9 @@ public class UtilityClass {
 
 이렇게 private 생성자를 사용하면 상속을 불가능하게 하는 효과도 있다. 모든 생성자는 명시적이든 묵시적이든 상위 클래스의 생성자를 호출하게 되는데, 이를 private으로 선언했으니 하위 클래스가 상위 클래스 생성자에 접근하는것이 불가능하다. 
 
-## Item5. 자원. 
+## Item5. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라.
+
+ 
 
 
 
@@ -249,7 +251,7 @@ public class UtilityClass {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ1NTgzMzQ5LC02NzQzNjczMTcsMzM1ND
+eyJoaXN0b3J5IjpbNjk0OTE0NjEzLC02NzQzNjczMTcsMzM1ND
 k3NDkzLC04Nzk2ODAwOTUsMTA3MDM3OTQ4MSw4Mzk5OTI5Mjgs
 LTE2NzY2MjM2NTAsLTEwMzcxODg1OTIsMjEyODk1NDI3MiwtMT
 A3MzY2MzI1NSwxNDU5OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0
