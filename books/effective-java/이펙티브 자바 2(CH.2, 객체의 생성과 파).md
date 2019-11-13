@@ -204,8 +204,8 @@ public enum Elvis {
 
 사실 정적 멤버만 담은 유틸리티 클래스는 인스턴스로 만들어 쓰려고 설계한 클래스가 아니다. 하지만 생성자를 명시하지 않으면 컴파일러가 자동으로 기본 생성자를 만들어 준다. 즉, 매개변수를 받지 않는 public 생성자가 만들어지며, 사용자는 생성자가 자동 생성된 것인지 구분할 수 없다. 실제로 공개된 API들에서도 이처럼 의도치 않게 인스턴스화를 할 수 있게 된 클래스가 종종 목격된다. 
 
-그럼 인스턴스화를 어떻게 막아야 할까? 참고로 **추상 클래스로 만드는 것만으로는 인스턴스화를 막을 수 없다.** 왜냐하면 하위 클래스를 만들어 인스턴스화 하면 그만이다. 더욱이 사용자는 추상 클래스를 보고 상속 받아 쓰라는 뜻으로 오해할 수도 있으니 더 큰 문제다. 다행히도 인스턴스화를 막는 방법은 아주 간단하다. 
-컴파일러가 기본생성자를 만드는 경우는 오직 명시된 생성자가 하나도 없을때 뿐이니 **private 생성자를 추가하면 클래스의 인스턴스화를 막을 수 있다.** 
+그럼 인스턴스화를 어떻게 막아야 할까? 참고로 **추상 클래스로 만드는 것만으로는 인스턴스화를 막을 수 없다.** 왜냐하면 하위 클래스를 만들어면 인스턴스화가 가능하기 때문이다. 더욱이 사용자는 추상 클래스를 보고 상속 받아 쓰라는 뜻으로 오해할 수도 있으니 더 큰 문제를 야기할 수 있다. 
+다행히도 인스턴스화를 막는 방법은 아주 간단하다. 컴파일러가 기본생성자를 만드는 경우는 오직 명시된 생성자가 하나도 없을때 뿐이니 **private 생성자를 추가하면 클래스의 인스턴스화를 막을 수 있다.** 
 
 ```
 public class UtilityClass {
@@ -218,6 +218,8 @@ public class UtilityClass {
 명시적 생성자가 private이니 클래스 바깥에서는 접근할 수 없다. private 생성자내에서 꼭 Error를 던질 필요는 없지만, 생성자를 호출하지 않도록 경고를 한다. 그런데 생성자가 분명 존재하는데 호출할 수는 없다니, 그다지 직관적이지 않다. 그러니 적절한 주석을 달아두도록 하자. 
 
 이렇게 private 생성자를 사용하면 상속을 불가능하게 하는 효과도 있다. 모든 생성자는 명시적이든 묵시적이든 상위 클래스의 생성자를 호출하게 되는데, 이를 private으로 선언했으니 하위 클래스가 상위 클래스 생성자에 접근하는것이 불가능하다. 
+
+## Item5. 자원. 
 
 
 
@@ -247,11 +249,11 @@ public class UtilityClass {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MzQxMjAzNiwtNjc0MzY3MzE3LDMzNT
-Q5NzQ5MywtODc5NjgwMDk1LDEwNzAzNzk0ODEsODM5OTkyOTI4
-LC0xNjc2NjIzNjUwLC0xMDM3MTg4NTkyLDIxMjg5NTQyNzIsLT
-EwNzM2NjMyNTUsMTQ1OTk5MjA1MywxNTM5ODYyMjY2LDk2OTUw
-NDAwMCw0MDY2ODcxNyw2MDAwMzE4MTgsMTM1NzgyNDg4NCwxOD
-M2NzcwMjMsNTE4Nzc5MjI4LDQzODg3NzMwMSwtMTIyMzg0NjU0
-OV19
+eyJoaXN0b3J5IjpbNzQ1NTgzMzQ5LC02NzQzNjczMTcsMzM1ND
+k3NDkzLC04Nzk2ODAwOTUsMTA3MDM3OTQ4MSw4Mzk5OTI5Mjgs
+LTE2NzY2MjM2NTAsLTEwMzcxODg1OTIsMjEyODk1NDI3MiwtMT
+A3MzY2MzI1NSwxNDU5OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0
+MDAwLDQwNjY4NzE3LDYwMDAzMTgxOCwxMzU3ODI0ODg0LDE4Mz
+Y3NzAyMyw1MTg3NzkyMjgsNDM4ODc3MzAxLC0xMjIzODQ2NTQ5
+XX0=
 -->
