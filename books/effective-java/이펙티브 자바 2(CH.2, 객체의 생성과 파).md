@@ -207,6 +207,16 @@ public enum Elvis {
 **추상 클래스로 만드는 것만으로는 인스턴스화를 막을 수 없다.** 하위 클래스를 만들어 인스턴스화 하면 그만이다. 더욱이 사용자는 추상 클래스를 보고 상속 받아 쓰라는 뜻으로 오해할 수도 있으니 더 큰 문제다. 다행히도 인스턴스화를 막는 방버븝 아주 간단하다. 
 컴파일러가 기본생성자를 만드는 경우는 오직 명시된 생성자가 하나도 없을때 뿐이니 **private 생성자를 추가하면 클래스의 인스턴스화를 막을 수 있다.** 
 
+```
+public class UtilityClass {
+	private UtilityClass() {
+		throw new AssertionError();
+	}
+}
+```
+
+명시적 생성자가 private이니 클래스 바깥에서는 접근할 수 없다. private 생성자내에서 꼭 Error를 던질 필요는 없지만, 생성자를 홏
+
 
 
 
@@ -235,11 +245,11 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MDM3OTQ4MSw4Mzk5OTI5MjgsLTE2Nz
-Y2MjM2NTAsLTEwMzcxODg1OTIsMjEyODk1NDI3MiwtMTA3MzY2
-MzI1NSwxNDU5OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0MDAwLD
-QwNjY4NzE3LDYwMDAzMTgxOCwxMzU3ODI0ODg0LDE4MzY3NzAy
-Myw1MTg3NzkyMjgsNDM4ODc3MzAxLC0xMjIzODQ2NTQ5LC0xNT
-E2NzU0ODY0LC0xMDM1NjQ2ODIzLDExNTQ0MzkyNjgsMTM4NjA2
-NzUxOV19
+eyJoaXN0b3J5IjpbLTEyMDIxNTM2OCwxMDcwMzc5NDgxLDgzOT
+k5MjkyOCwtMTY3NjYyMzY1MCwtMTAzNzE4ODU5MiwyMTI4OTU0
+MjcyLC0xMDczNjYzMjU1LDE0NTk5OTIwNTMsMTUzOTg2MjI2Ni
+w5Njk1MDQwMDAsNDA2Njg3MTcsNjAwMDMxODE4LDEzNTc4MjQ4
+ODQsMTgzNjc3MDIzLDUxODc3OTIyOCw0Mzg4NzczMDEsLTEyMj
+M4NDY1NDksLTE1MTY3NTQ4NjQsLTEwMzU2NDY4MjMsMTE1NDQz
+OTI2OF19
 -->
