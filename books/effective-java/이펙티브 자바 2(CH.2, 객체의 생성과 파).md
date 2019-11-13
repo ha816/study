@@ -215,7 +215,7 @@ public class UtilityClass {
 }
 ```
 
-명시적 생성자가 private이니 클래스 바깥에서는 접근할 수 없다. private 생성자내에서 꼭 Error를 던질 필요는 없지만, 생성자를 홏
+명시적 생성자가 private이니 클래스 바깥에서는 접근할 수 없다. private 생성자내에서 꼭 Error를 던질 필요는 없지만, 생성자를 호출하지 않도록 경고를 한다.
 
 
 
@@ -245,7 +245,7 @@ public class UtilityClass {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDIxNTM2OCwxMDcwMzc5NDgxLDgzOT
+eyJoaXN0b3J5IjpbLTg3OTY4MDA5NSwxMDcwMzc5NDgxLDgzOT
 k5MjkyOCwtMTY3NjYyMzY1MCwtMTAzNzE4ODU5MiwyMTI4OTU0
 MjcyLC0xMDczNjYzMjU1LDE0NTk5OTIwNTMsMTUzOTg2MjI2Ni
 w5Njk1MDQwMDAsNDA2Njg3MTcsNjAwMDMxODE4LDEzNTc4MjQ4
