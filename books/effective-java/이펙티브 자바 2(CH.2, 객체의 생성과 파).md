@@ -200,7 +200,7 @@ public enum Elvis {
 
 가끔씩 단순 정적 메서드와 정적 필드만을 담은 클래스를 만들고 싶을때가 있다. 분명 객체 지향적이지 않고, 남용할 수도 있는 방식이라 그리 곱게 보이지는 않지만, 분명 나름대로 쓰임새가 있다.
 
-예를 들면, 
+예를 들면, java.lang.Math
 
 
 
@@ -229,11 +229,11 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzY2MjM2NTAsLTEwMzcxODg1OTIsMj
-EyODk1NDI3MiwtMTA3MzY2MzI1NSwxNDU5OTkyMDUzLDE1Mzk4
-NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3LDYwMDAzMTgxOCwxMz
-U3ODI0ODg0LDE4MzY3NzAyMyw1MTg3NzkyMjgsNDM4ODc3MzAx
-LC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1NjQ2ODIzLD
-ExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMTIyMjg0NjAzNSwtMTU0
-NTMxNzAzN119
+eyJoaXN0b3J5IjpbNTc2NTYyNjE4LC0xNjc2NjIzNjUwLC0xMD
+M3MTg4NTkyLDIxMjg5NTQyNzIsLTEwNzM2NjMyNTUsMTQ1OTk5
+MjA1MywxNTM5ODYyMjY2LDk2OTUwNDAwMCw0MDY2ODcxNyw2MD
+AwMzE4MTgsMTM1NzgyNDg4NCwxODM2NzcwMjMsNTE4Nzc5MjI4
+LDQzODg3NzMwMSwtMTIyMzg0NjU0OSwtMTUxNjc1NDg2NCwtMT
+AzNTY0NjgyMywxMTU0NDM5MjY4LDEzODYwNjc1MTksLTEyMjI4
+NDYwMzVdfQ==
 -->
