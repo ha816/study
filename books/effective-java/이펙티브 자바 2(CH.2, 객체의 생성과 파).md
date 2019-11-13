@@ -200,6 +200,8 @@ public enum Elvis {
 
 가끔씩 단순 정적 메서드와 정적 필드만을 담은 클래스를 만들고 싶을때가 있다. 분명 객체 지향적이지 않고, 남용할 수도 있는 방식이라 그리 곱게 보이지는 않지만, 분명 나름대로 쓰임새가 있다.
 
+예를 들면, 
+
 
 
 
@@ -227,11 +229,11 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNzU1NDk0LC0xMDM3MTg4NTkyLDIxMj
-g5NTQyNzIsLTEwNzM2NjMyNTUsMTQ1OTk5MjA1MywxNTM5ODYy
-MjY2LDk2OTUwNDAwMCw0MDY2ODcxNyw2MDAwMzE4MTgsMTM1Nz
-gyNDg4NCwxODM2NzcwMjMsNTE4Nzc5MjI4LDQzODg3NzMwMSwt
-MTIyMzg0NjU0OSwtMTUxNjc1NDg2NCwtMTAzNTY0NjgyMywxMT
-U0NDM5MjY4LDEzODYwNjc1MTksLTEyMjI4NDYwMzUsLTE1NDUz
-MTcwMzddfQ==
+eyJoaXN0b3J5IjpbLTE2NzY2MjM2NTAsLTEwMzcxODg1OTIsMj
+EyODk1NDI3MiwtMTA3MzY2MzI1NSwxNDU5OTkyMDUzLDE1Mzk4
+NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3LDYwMDAzMTgxOCwxMz
+U3ODI0ODg0LDE4MzY3NzAyMyw1MTg3NzkyMjgsNDM4ODc3MzAx
+LC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1NjQ2ODIzLD
+ExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMTIyMjg0NjAzNSwtMTU0
+NTMxNzAzN119
 -->
