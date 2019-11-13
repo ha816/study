@@ -2,7 +2,7 @@
 
 ## Item1. 생성자 대신 정적 팩토리 메서드를 고려하라.
 
-클라이언트가 클래스의 인스턴스를 얻는 전통적 수단은 public 생성자다. 하지만 그 뿐만아니라 클래스는 생성자와 별도로 정적 팩터리 메서드(static factory method)를 제공할 수 있다. 
+클라이언트가 클래스의 인스턴스를 얻는 전통적 수단은 public 생성자다. 하지만 그 뿐만아니라 클래스는 생성자와 별도로 **정적 팩터리 메서드(static factory method)**를 제공할 수 있다. 
 
 예를 들어 boolean의 박싱 클래스인 Boolean 클래스를 보자. 
 ```
@@ -46,7 +46,6 @@ type
 ```List<Complaint> litany = Collections.list(legacyLitany);```
 
 ### 정적 팩터리 메서드의 장점
-먼저 장점 다섯 가지를 알아보자
 
 #### 1. 이름을 가질 수 있다.  
 기존에 생성자를 사용하면 생성자에 넘기는 매개변수와 생성자 자체만으로는 반환될 객체의 특성을 제대로 이해하기 힘들다. 반면에 정적 팩터리 메서드는 메서드 이름만 잘 지으면 반환될 객체의 특성을 쉽게 파악할 수 있다. 
@@ -228,7 +227,7 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTcxODQ1NDQsMjEyODk1NDI3MiwtMT
+eyJoaXN0b3J5IjpbLTEwMzcxODg1OTIsMjEyODk1NDI3MiwtMT
 A3MzY2MzI1NSwxNDU5OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0
 MDAwLDQwNjY4NzE3LDYwMDAzMTgxOCwxMzU3ODI0ODg0LDE4Mz
 Y3NzAyMyw1MTg3NzkyMjgsNDM4ODc3MzAxLC0xMjIzODQ2NTQ5
