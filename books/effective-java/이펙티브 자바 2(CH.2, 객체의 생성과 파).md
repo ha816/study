@@ -204,7 +204,7 @@ public enum Elvis {
 
 정적 멤버만 담은 유틸리티 클래스는 인스턴스로 만들어 쓰려고 설계한 클래스가 아니다. 하지만 생성자를 명시하지 않으면 컴파일러가 자동으로 기본 생성자를 만들어 준다. 즉, 매개변수를 받지 않는 public 생성자가 만들어지며, 사용자는 생성자가 자동 생성된 것인지 구분할 수 없다. 실제로 공개된 API들에서도 이처럼 의도치 않게 인스턴스화를 할 수 있게 된 클래스가 종종 목격된다. 
 
-**추상 클래스로 만드는 것으로는 인스턴스화를 막을 수 없다.**
+**추상 클래스로 만드는 것으로는 인스턴스화를 막을 수 없다.** 하위 클래스를 만들어 인스턴스화 하면 그만이다. 더욱이 사용자는 추상 클래스를 보고 상속 받아 쓰라는 뜻으로 오해할 수도 있으니 더 큰 문제다. 다행히도 
 
 
 
@@ -234,11 +234,11 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNzQ4NTQ4NSw4Mzk5OTI5MjgsLTE2Nz
-Y2MjM2NTAsLTEwMzcxODg1OTIsMjEyODk1NDI3MiwtMTA3MzY2
-MzI1NSwxNDU5OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0MDAwLD
-QwNjY4NzE3LDYwMDAzMTgxOCwxMzU3ODI0ODg0LDE4MzY3NzAy
-Myw1MTg3NzkyMjgsNDM4ODc3MzAxLC0xMjIzODQ2NTQ5LC0xNT
-E2NzU0ODY0LC0xMDM1NjQ2ODIzLDExNTQ0MzkyNjgsMTM4NjA2
-NzUxOV19
+eyJoaXN0b3J5IjpbNjU2NDU3MTExLDgzOTk5MjkyOCwtMTY3Nj
+YyMzY1MCwtMTAzNzE4ODU5MiwyMTI4OTU0MjcyLC0xMDczNjYz
+MjU1LDE0NTk5OTIwNTMsMTUzOTg2MjI2Niw5Njk1MDQwMDAsND
+A2Njg3MTcsNjAwMDMxODE4LDEzNTc4MjQ4ODQsMTgzNjc3MDIz
+LDUxODc3OTIyOCw0Mzg4NzczMDEsLTEyMjM4NDY1NDksLTE1MT
+Y3NTQ4NjQsLTEwMzU2NDY4MjMsMTE1NDQzOTI2OCwxMzg2MDY3
+NTE5XX0=
 -->
