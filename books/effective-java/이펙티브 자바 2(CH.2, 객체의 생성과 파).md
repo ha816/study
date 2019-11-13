@@ -2,7 +2,7 @@
 
 ## Item1. 생성자 대신 정적 팩토리 메서드를 고려하라.
 
-클라이언트가 클래스의 인스턴스를 얻는 전통적 수단은 public 생성자다. 하지만 그 뿐만아니라 클래스는 생성자와 별도로 **정적 팩터리 메서드(static factory method)**를 제공할 수 있다. 
+클라이언트가 클래스의 인스턴스를 얻는 전통적 수단은 public 생성자다. 하지만 그 뿐만아니라 클래스는 생성자와 별도로 정적 팩터리 메서드(static factory method)를 제공할 수 있다. 
 
 예를 들어 boolean의 박싱 클래스인 Boolean 클래스를 보자. 
 ```
@@ -228,11 +228,11 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyODk1NDI3MiwtMTA3MzY2MzI1NSwxND
-U5OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3
-LDYwMDAzMTgxOCwxMzU3ODI0ODg0LDE4MzY3NzAyMyw1MTg3Nz
-kyMjgsNDM4ODc3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0
-LC0xMDM1NjQ2ODIzLDExNTQ0MzkyNjgsMTM4NjA2NzUxOSwtMT
-IyMjg0NjAzNSwtMTU0NTMxNzAzNywtMTE1MjkxNDA2NywtNDc0
-OTU5OTk3XX0=
+eyJoaXN0b3J5IjpbLTEwNTcxODQ1NDQsMjEyODk1NDI3MiwtMT
+A3MzY2MzI1NSwxNDU5OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0
+MDAwLDQwNjY4NzE3LDYwMDAzMTgxOCwxMzU3ODI0ODg0LDE4Mz
+Y3NzAyMyw1MTg3NzkyMjgsNDM4ODc3MzAxLC0xMjIzODQ2NTQ5
+LC0xNTE2NzU0ODY0LC0xMDM1NjQ2ODIzLDExNTQ0MzkyNjgsMT
+M4NjA2NzUxOSwtMTIyMjg0NjAzNSwtMTU0NTMxNzAzNywtMTE1
+MjkxNDA2N119
 -->
