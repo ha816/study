@@ -200,9 +200,9 @@ public enum Elvis {
 
 가끔씩 단순 정적 메서드와 정적 필드만을 담은 클래스를 만들고 싶을때가 있다. 분명 객체 지향적이지 않고, 남용할 수도 있는 방식이라 그리 곱게 보이지는 않지만, 분명 나름대로 쓰임새가 있다.
 
-예를 들면, java.lang.Math와 java.util.Arryas처럼 기본 타입 값이나 배열 관련 메서드들을 모아놓을 수 있다. 또한, java.util.Collections처럼 특정 인터페이스를 구현하는 객체를 생성해주는 정적 메서드(혹은 팩터리)를 모아놓을수도 있다. 마지막으로, final 클래스와 관련한 메서드들을 모아놓을 때도 사용한다. final 클래스를 상속해서 하위 클래스에 메서드를 넣는 건 불가능하기 때문이다. 
+예를 들면, java.lang.Math와 java.util.Arrays처럼 기본 타입 값이나 배열 관련 메서드들을 모아놓을 수 있다. 또한, java.util.Collections처럼 특정 인터페이스를 구현하는 객체를 생성해주는 정적 메서드(혹은 팩터리)를 모아놓을수도 있다. 마지막으로, final 클래스와 관련한 메서드들을 모아놓을 때도 사용한다. final 클래스를 상속해서 하위 클래스에 메서드를 넣는 건 불가능하기 때문이다. 
 
-정적 멤버만 담은 유틸리티 클래스는 인스턴스로 만들
+정적 멤버만 담은 유틸리티 클래스는 인스턴스로 만들어 쓰려고 설계한 클래스가 아니다. 하지만 생성자를 명시하지 않으면 
 
 
 
@@ -231,7 +231,7 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc1NzI5NDM5LDgzOTk5MjkyOCwtMTY3Nj
+eyJoaXN0b3J5IjpbLTU3ODY5NDA4LDgzOTk5MjkyOCwtMTY3Nj
 YyMzY1MCwtMTAzNzE4ODU5MiwyMTI4OTU0MjcyLC0xMDczNjYz
 MjU1LDE0NTk5OTIwNTMsMTUzOTg2MjI2Niw5Njk1MDQwMDAsND
 A2Njg3MTcsNjAwMDMxODE4LDEzNTc4MjQ4ODQsMTgzNjc3MDIz
