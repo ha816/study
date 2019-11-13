@@ -200,7 +200,7 @@ public enum Elvis {
 
 가끔씩 단순 정적 메서드와 정적 필드만을 담은 클래스를 만들고 싶을때가 있다. 분명 객체 지향적이지 않고, 남용할 수도 있는 방식이라 그리 좋아보이지는 않지만 분명 나름대로 쓰임새가 있다.
 
-예를 들면, java.lang.Math와 java.util.Arrays처럼 기본 타입 값이나 배열 관련 메서드들을 모아놓을 수 있다. 또한, java.util.Collections처럼 특정 인터페이스를 구현하는 객체를 생성해주는 정적 메서드(혹은 팩터리)를 모아놓을수도 있다. 마지막으로, final 클래스와 관련한 메서드들을 모아놓을 때도 사용한다. final 클래스를 상속해서 하위 클래스에 메서드를 넣는 건 불가능하기 때문이다. 
+예를 들면, java.lang.Math와 java.util.Arrays처럼 기본 타입 값이나 배열 관련 메서드들을 모아놓을 수 있다. 또한, java.util.Collections처럼 특정 인터페이스를 구현하는 객체를 생성해주는 정적 메서드(혹은 팩터리)를 모아놓을수도 있다. 마지막으로, final 클래스와 관련한 메서드들을 모아놓을 때도 사용한다. final 클래스는 확장(상속) 불가능한 클래스를 의미하기 때문에 
 
 정적 멤버만 담은 유틸리티 클래스는 인스턴스로 만들어 쓰려고 설계한 클래스가 아니다. 하지만 생성자를 명시하지 않으면 컴파일러가 자동으로 기본 생성자를 만들어 준다. 즉, 매개변수를 받지 않는 public 생성자가 만들어지며, 사용자는 생성자가 자동 생성된 것인지 구분할 수 없다. 실제로 공개된 API들에서도 이처럼 의도치 않게 인스턴스화를 할 수 있게 된 클래스가 종종 목격된다. 
 
@@ -247,11 +247,11 @@ public class UtilityClass {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM1NDk3NDkzLC04Nzk2ODAwOTUsMTA3MD
-M3OTQ4MSw4Mzk5OTI5MjgsLTE2NzY2MjM2NTAsLTEwMzcxODg1
-OTIsMjEyODk1NDI3MiwtMTA3MzY2MzI1NSwxNDU5OTkyMDUzLD
-E1Mzk4NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3LDYwMDAzMTgx
-OCwxMzU3ODI0ODg0LDE4MzY3NzAyMyw1MTg3NzkyMjgsNDM4OD
-c3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1NjQ2
-ODIzXX0=
+eyJoaXN0b3J5IjpbLTM0NTI1NTgxOSwzMzU0OTc0OTMsLTg3OT
+Y4MDA5NSwxMDcwMzc5NDgxLDgzOTk5MjkyOCwtMTY3NjYyMzY1
+MCwtMTAzNzE4ODU5MiwyMTI4OTU0MjcyLC0xMDczNjYzMjU1LD
+E0NTk5OTIwNTMsMTUzOTg2MjI2Niw5Njk1MDQwMDAsNDA2Njg3
+MTcsNjAwMDMxODE4LDEzNTc4MjQ4ODQsMTgzNjc3MDIzLDUxOD
+c3OTIyOCw0Mzg4NzczMDEsLTEyMjM4NDY1NDksLTE1MTY3NTQ4
+NjRdfQ==
 -->
