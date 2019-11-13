@@ -204,7 +204,7 @@ public enum Elvis {
 
 사실 정적 멤버만 담은 유틸리티 클래스는 인스턴스로 만들어 쓰려고 설계한 클래스가 아니다. 하지만 생성자를 명시하지 않으면 컴파일러가 자동으로 기본 생성자를 만들어 준다. 즉, 매개변수를 받지 않는 public 생성자가 만들어지며, 사용자는 생성자가 자동 생성된 것인지 구분할 수 없다. 실제로 공개된 API들에서도 이처럼 의도치 않게 인스턴스화를 할 수 있게 된 클래스가 종종 목격된다. 
 
-**추상 클래스로 만드는 것만으로는 인스턴스화를 막을 수 없다.** 하위 클래스를 만들어 인스턴스화 하면 그만이다. 더욱이 사용자는 추상 클래스를 보고 상속 받아 쓰라는 뜻으로 오해할 수도 있으니 더 큰 문제다. 다행히도 인스턴스화를 막는 방버븝 아주 간단하다. 
+그럼 인스턴스화를 어떻게 막아야 할까? 참고로 **추상 클래스로 만드는 것만으로는 인스턴스화를 막을 수 없다.** 왜냐하면 하위 클래스를 만들어 인스턴스화 하면 그만이다. 더욱이 사용자는 추상 클래스를 보고 상속 받아 쓰라는 뜻으로 오해할 수도 있으니 더 큰 문제다. 다행히도 인스턴스화를 막는 방법은 아주 간단하다. 
 컴파일러가 기본생성자를 만드는 경우는 오직 명시된 생성자가 하나도 없을때 뿐이니 **private 생성자를 추가하면 클래스의 인스턴스화를 막을 수 있다.** 
 
 ```
@@ -247,7 +247,7 @@ public class UtilityClass {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MDI2MDcxNywtNjc0MzY3MzE3LDMzNT
+eyJoaXN0b3J5IjpbLTU4MzQxMjAzNiwtNjc0MzY3MzE3LDMzNT
 Q5NzQ5MywtODc5NjgwMDk1LDEwNzAzNzk0ODEsODM5OTkyOTI4
 LC0xNjc2NjIzNjUwLC0xMDM3MTg4NTkyLDIxMjg5NTQyNzIsLT
 EwNzM2NjMyNTUsMTQ1OTk5MjA1MywxNTM5ODYyMjY2LDk2OTUw
