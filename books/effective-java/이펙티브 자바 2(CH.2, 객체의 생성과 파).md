@@ -200,7 +200,7 @@ public enum Elvis {
 
 가끔씩 단순 정적 메서드와 정적 필드만을 담은 클래스를 만들고 싶을때가 있다. 분명 객체 지향적이지 않고, 남용할 수도 있는 방식이라 그리 곱게 보이지는 않지만, 분명 나름대로 쓰임새가 있다.
 
-예를 들면, java.lang.Math
+예를 들면, java.lang.Math와 java.util.Arryas처럼 기본 타입 값이나 배열 관련 메서드들을 모아놓을 수 있다. 또한, java.util.Collections처럼 특정 인터페이스를 구현하는 객체를 생성해주는 정적 메서드(혹은 팩터리)를 모아놓을수도 있다. 
 
 
 
@@ -229,7 +229,7 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2NTYyNjE4LC0xNjc2NjIzNjUwLC0xMD
+eyJoaXN0b3J5IjpbODM5OTkyOTI4LC0xNjc2NjIzNjUwLC0xMD
 M3MTg4NTkyLDIxMjg5NTQyNzIsLTEwNzM2NjMyNTUsMTQ1OTk5
 MjA1MywxNTM5ODYyMjY2LDk2OTUwNDAwMCw0MDY2ODcxNyw2MD
 AwMzE4MTgsMTM1NzgyNDg4NCwxODM2NzcwMjMsNTE4Nzc5MjI4
