@@ -202,7 +202,10 @@ public enum Elvis {
 
 예를 들면, java.lang.Math와 java.util.Arrays처럼 기본 타입 값이나 배열 관련 메서드들을 모아놓을 수 있다. 또한, java.util.Collections처럼 특정 인터페이스를 구현하는 객체를 생성해주는 정적 메서드(혹은 팩터리)를 모아놓을수도 있다. 마지막으로, final 클래스와 관련한 메서드들을 모아놓을 때도 사용한다. final 클래스를 상속해서 하위 클래스에 메서드를 넣는 건 불가능하기 때문이다. 
 
-정적 멤버만 담은 유틸리티 클래스는 인스턴스로 만들어 쓰려고 설계한 클래스가 아니다. 하지만 생성자를 명시하지 않으면 
+정적 멤버만 담은 유틸리티 클래스는 인스턴스로 만들어 쓰려고 설계한 클래스가 아니다. 하지만 생성자를 명시하지 않으면 컴파일러가 자동으로 기본 생성자를 만들어 준다. 즉, 매개변수를 받지 않는 public 생성자가 만들어지며, 사용자는 생성자가 자동 생성된 것인지 구분할 수 없다. 실제로 공개된 API들에서도 이처럼 의도치 않게 인스턴스화를 할 수 있게 된 클래스가 종종 목격된다. 
+
+**추상 클래스로 만드는 것으로는 인스턴스화를 막을 수 없다.**
+
 
 
 
@@ -231,11 +234,11 @@ public enum Elvis {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3ODY5NDA4LDgzOTk5MjkyOCwtMTY3Nj
-YyMzY1MCwtMTAzNzE4ODU5MiwyMTI4OTU0MjcyLC0xMDczNjYz
-MjU1LDE0NTk5OTIwNTMsMTUzOTg2MjI2Niw5Njk1MDQwMDAsND
-A2Njg3MTcsNjAwMDMxODE4LDEzNTc4MjQ4ODQsMTgzNjc3MDIz
-LDUxODc3OTIyOCw0Mzg4NzczMDEsLTEyMjM4NDY1NDksLTE1MT
-Y3NTQ4NjQsLTEwMzU2NDY4MjMsMTE1NDQzOTI2OCwxMzg2MDY3
-NTE5XX0=
+eyJoaXN0b3J5IjpbLTQzNzQ4NTQ4NSw4Mzk5OTI5MjgsLTE2Nz
+Y2MjM2NTAsLTEwMzcxODg1OTIsMjEyODk1NDI3MiwtMTA3MzY2
+MzI1NSwxNDU5OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0MDAwLD
+QwNjY4NzE3LDYwMDAzMTgxOCwxMzU3ODI0ODg0LDE4MzY3NzAy
+Myw1MTg3NzkyMjgsNDM4ODc3MzAxLC0xMjIzODQ2NTQ5LC0xNT
+E2NzU0ODY0LC0xMDM1NjQ2ODIzLDExNTQ0MzkyNjgsMTM4NjA2
+NzUxOV19
 -->
