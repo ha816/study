@@ -217,6 +217,8 @@ public class UtilityClass {
 
 명시적 생성자가 private이니 클래스 바깥에서는 접근할 수 없다. private 생성자내에서 꼭 Error를 던질 필요는 없지만, 생성자를 호출하지 않도록 경고를 한다. 그런데 생성자가 분명 존재하는데 호출할 수는 없다니, 그다지 직관적이지 않다. 그러니 적절한 주석을 달아두도록 하자. 
 
+이렇게 private 생성자를 사용하면 상속을 불가능하게 하는 효과도 있다. 모든 생성자는 명시적이든 묵시적이든 상위 클래스의 생성자를 호출하게 되는데, 이를 private으로 선언했으니 하위 클래스가 상위 클래스 생성자에 접근하는것
+
 
 
 
@@ -245,11 +247,11 @@ public class UtilityClass {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTAxODIzNjksLTg3OTY4MDA5NSwxMD
-cwMzc5NDgxLDgzOTk5MjkyOCwtMTY3NjYyMzY1MCwtMTAzNzE4
-ODU5MiwyMTI4OTU0MjcyLC0xMDczNjYzMjU1LDE0NTk5OTIwNT
-MsMTUzOTg2MjI2Niw5Njk1MDQwMDAsNDA2Njg3MTcsNjAwMDMx
-ODE4LDEzNTc4MjQ4ODQsMTgzNjc3MDIzLDUxODc3OTIyOCw0Mz
-g4NzczMDEsLTEyMjM4NDY1NDksLTE1MTY3NTQ4NjQsLTEwMzU2
-NDY4MjNdfQ==
+eyJoaXN0b3J5IjpbMTk0MTcyOTcyLC04Nzk2ODAwOTUsMTA3MD
+M3OTQ4MSw4Mzk5OTI5MjgsLTE2NzY2MjM2NTAsLTEwMzcxODg1
+OTIsMjEyODk1NDI3MiwtMTA3MzY2MzI1NSwxNDU5OTkyMDUzLD
+E1Mzk4NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3LDYwMDAzMTgx
+OCwxMzU3ODI0ODg0LDE4MzY3NzAyMyw1MTg3NzkyMjgsNDM4OD
+c3MzAxLC0xMjIzODQ2NTQ5LC0xNTE2NzU0ODY0LC0xMDM1NjQ2
+ODIzXX0=
 -->
