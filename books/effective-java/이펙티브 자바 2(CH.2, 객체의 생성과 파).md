@@ -307,7 +307,7 @@ private static long sum() {
 	return sum;
 }
 ```
-sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 
+sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면 훨씬 느리다. sum변수를 long이 아닌 Long으로 선언해서 불필요한 Long인스턴스가 엄청나게 많이 만들어졌다. 교훈은 명확하다. 박싱된 기본 타입 보다는 기본 타입을 사용하고, 의도치 않은 오토박싱이 숨어들지 않도록
 
 
 
@@ -350,7 +350,7 @@ sum의 값은 원하는 답을 내지만, 제대로 구현했을때에
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NTcyMjcyOCwtMTUzMDE3NTQxNCwtNz
+eyJoaXN0b3J5IjpbMTU5MjgzNTY5OCwtMTUzMDE3NTQxNCwtNz
 A0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1
 ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3MTgxLD
 E2NTY5MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1MzE0MTAxMSwzMjky
