@@ -232,7 +232,7 @@ SpellChecker는 private static final의 단 하나만의 사전을 사용한다.
 
 자 이제 SpellChecker가 여러 사전을 사용할 수 있도록 하자. 간단히 ditionary필드에서 final을 제거하고 다른 사전으로 교체하는 메서드를 추가할 수 있지만, 아쉽게도 이 방식은 어색하고 오류가 나기 쉬우며 멀티쓰레드 환경에서는 사용이 불가하다. 
 
-**사용하는 자원(사전)에 따라 동작이 달라지는 클래스에는 정적 유틸리티 클래스나 싱글턴 방식이 적합하지 않다.** 대신 클래스(SpellChecker)가 여러 자원 인스턴스를 지원해야 하며, 클라이언트가 원하는 자원(ditionar
+**사용하는 자원(사전)에 따라 동작이 달라지는 클래스에는 정적 유틸리티 클래스나 싱글턴 방식이 적합하지 않다.** 대신 클래스(SpellChecker)가 여러 자원 인스턴스를 지원해야 하며, 클라이언트가 원하는 자원(dictionary)를 사용해야한다.
 
 
  
@@ -265,11 +265,11 @@ SpellChecker는 private static final의 단 하나만의 사전을 사용한다.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzQxMDA2NCwtOTU2MDQ1NzE5LC0xND
-k0Njc1MDI1LC0xODcyOTY5Mzc2LC0xNzU5NTYwMzEyLDY5NDkx
-NDYxMywtNjc0MzY3MzE3LDMzNTQ5NzQ5MywtODc5NjgwMDk1LD
-EwNzAzNzk0ODEsODM5OTkyOTI4LC0xNjc2NjIzNjUwLC0xMDM3
-MTg4NTkyLDIxMjg5NTQyNzIsLTEwNzM2NjMyNTUsMTQ1OTk5Mj
-A1MywxNTM5ODYyMjY2LDk2OTUwNDAwMCw0MDY2ODcxNyw2MDAw
-MzE4MThdfQ==
+eyJoaXN0b3J5IjpbNzEwMjk2MDE2LC05NTYwNDU3MTksLTE0OT
+Q2NzUwMjUsLTE4NzI5NjkzNzYsLTE3NTk1NjAzMTIsNjk0OTE0
+NjEzLC02NzQzNjczMTcsMzM1NDk3NDkzLC04Nzk2ODAwOTUsMT
+A3MDM3OTQ4MSw4Mzk5OTI5MjgsLTE2NzY2MjM2NTAsLTEwMzcx
+ODg1OTIsMjEyODk1NDI3MiwtMTA3MzY2MzI1NSwxNDU5OTkyMD
+UzLDE1Mzk4NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3LDYwMDAz
+MTgxOF19
 -->
