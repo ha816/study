@@ -267,7 +267,9 @@ String s = "bikini";
 
 위 코드는 새로운 인스턴스를 매번 반드는 대신 하나의 String 인스턴스를 재사용한다. 나아가 이 방식을 사용하면 같은 가상 머신안에서 똑같은 문자열 리터럴을 사용하는 모든 코드가 같은 객체를 사용함이 보장된다. (constant pool)
 
-생성자 대신 정적 팩터리 메서드를 제공하는 불변 클래스에서는 정적 팩터리 메서드를 사용해 불필요한 객체 생성을 피할 수 있다. 생성자는 호출할때 마다 새로운 객체를 만들지만, 팩터리 메서드는 우리가 원하는대로 가능하다. 상불변 객체가 꼭 가변 객체라 해도 사용 도중에 변경이 더이상 변경이 이루어지지 않을 것임을 안다면 재사용이 가능하다. 
+생성자 대신 정적 팩터리 메서드를 제공하는 불변 클래스에서는 정적 팩터리 메서드를 사용해 불필요한 객체 생성을 피할 수 있다. 생성자는 호출할때 마다 새로운 객체를 만들지만, 팩터리 메서드는 우리가 원하는대로 가능하다. 사용하는 객체가 꼭 불변 객체가 아닌 가변 객체라 해도 사용 도중에 더 이상 변경이 이루어지지 않을 것임을 안다면 재사용이 가능하다. 
+
+생성 비용이 아주 비싼 객체도 더러 있다. 
 
 
 
@@ -305,7 +307,7 @@ String s = "bikini";
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNjA2Njk3OCwtMTUyNjc5ODk3MiwtND
+eyJoaXN0b3J5IjpbMTY1NjkzNDYxMiwtMTUyNjc5ODk3MiwtND
 UzMTQxMDExLDMyOTI2MzQyMCw1MDc0NDgzODcsLTIwNTM1NTUx
 NzQsOTA5MjEzNTg0LC0yMDg4NDI4ODE1LC0xOTQxMjg2ODQ0LD
 E3MTkxODg1MDQsLTI1ODI4MjU2Myw3MTAyOTYwMTYsLTk1NjA0
