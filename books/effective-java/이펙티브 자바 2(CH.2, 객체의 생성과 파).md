@@ -221,6 +221,7 @@ public class UtilityClass {
 
 ## Item5. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라.
 
+많은 클래스가 하나 이상의 자원에 의존한다. 가령 맞춤법 검사기는 사전(dictionary)에 의존하는데, 이런 클래스를 정적 유틸리티
  
 
 
@@ -251,11 +252,11 @@ public class UtilityClass {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk0OTE0NjEzLC02NzQzNjczMTcsMzM1ND
-k3NDkzLC04Nzk2ODAwOTUsMTA3MDM3OTQ4MSw4Mzk5OTI5Mjgs
-LTE2NzY2MjM2NTAsLTEwMzcxODg1OTIsMjEyODk1NDI3MiwtMT
-A3MzY2MzI1NSwxNDU5OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0
-MDAwLDQwNjY4NzE3LDYwMDAzMTgxOCwxMzU3ODI0ODg0LDE4Mz
-Y3NzAyMyw1MTg3NzkyMjgsNDM4ODc3MzAxLC0xMjIzODQ2NTQ5
+eyJoaXN0b3J5IjpbLTE3ODgxMzU2MTksNjk0OTE0NjEzLC02Nz
+QzNjczMTcsMzM1NDk3NDkzLC04Nzk2ODAwOTUsMTA3MDM3OTQ4
+MSw4Mzk5OTI5MjgsLTE2NzY2MjM2NTAsLTEwMzcxODg1OTIsMj
+EyODk1NDI3MiwtMTA3MzY2MzI1NSwxNDU5OTkyMDUzLDE1Mzk4
+NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3LDYwMDAzMTgxOCwxMz
+U3ODI0ODg0LDE4MzY3NzAyMyw1MTg3NzkyMjgsNDM4ODc3MzAx
 XX0=
 -->
