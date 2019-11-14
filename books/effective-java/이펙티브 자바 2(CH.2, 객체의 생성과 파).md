@@ -312,7 +312,7 @@ sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면
 마지막으로 이번 Item6을 `객체 생성은 비싸니 피해야 한다`로 오해하면 안된다. 특히 요즘의 JVM에서 별다른 일을 하지 않는 작은 객체를 생성하고 회수하는 일은 크게 부담 되지 않는다. 프로그램 코드의 간결성, 명확성, 기능을 위해서 객체를 추가로 생성하는 것이라면 일반적으로 좋은 일이다. 
 거꾸로, 아주 무거운 객체가 아닌 경우라면 단순히 객체 생성을 피하고자 객체 풀(pool)을 만들지는 말자. 물론 객체 풀을 만드는게 나은 경우가 있다. 하지만 데이터 베이스 연결 같은 경우 생성 비용이 워낙 비싸니 재사용하는 편이 낫다. 하지만 일반적으로는 자체 객체 풀은 코드를 어렵게 만들고 메모리 사용량을 늘리고 성능을 떨어뜨린다. 요즘 JVM의 가비지 컬렉터는 상당히 최적화가 잘되어 있어서 가벼운 객체를 다룰 때는 직접 만든 객체 풀보다 훨씬 빠르다. 
 
-이번 Item 6은 방어적 복사(defensive copy)를 다루는 Item 50 과는 대조적이다. 이번 Item의 주제가 `기존 객체를 재사용해야 한다면 새로운 객체를 만들지 마라`라면,  Item 50은 `새로운 객체를 만들어야 한다면 기존 객체를 재사용하지마라`다. 방
+이번 Item 6은 방어적 복사(defensive copy)를 다루는 Item 50 과는 대조적이다. 이번 Item의 주제가 `기존 객체를 재사용해야 한다면 새로운 객체를 만들지 마라`라면,  Item 50은 `새로운 객체를 만들어야 한다면 기존 객체를 재사용하지마라`다. 방어적 복사가 필요한 상황에서 객체를 재사용했을때 발생하는 피해는 불필요하게 객체를 반복해서 생성했을때의 피해보다 훨씬 크다는 사실을 명심하자. 방어적 복사에 실패하면 언제 터져 나올지 모르는 논리적 오류와 봉
 
 
 
@@ -356,11 +356,11 @@ sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczMTI4NTc4LC01OTcwOTkyNzEsNzEwNT
-kzMzQyLC0xMTE4ODAzODA0LC0xNTMwMTc1NDE0LC03MDQxNTA0
-MywtOTg0OTg3MDQ2LDEyOTkwNDExODAsLTEwNzk4NDU4NjIsLT
-Q3MzM3MTU4MCwtNzk1NzQzMDEsLTExMzc1MjcxODEsMTY1Njkz
-NDYxMiwtMTUyNjc5ODk3MiwtNDUzMTQxMDExLDMyOTI2MzQyMC
-w1MDc0NDgzODcsLTIwNTM1NTUxNzQsOTA5MjEzNTg0LC0yMDg4
-NDI4ODE1XX0=
+eyJoaXN0b3J5IjpbLTE0OTk2NDAxNjksLTU5NzA5OTI3MSw3MT
+A1OTMzNDIsLTExMTg4MDM4MDQsLTE1MzAxNzU0MTQsLTcwNDE1
+MDQzLC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0NTg2Mi
+wtNDczMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MSwxNjU2
+OTM0NjEyLC0xNTI2Nzk4OTcyLC00NTMxNDEwMTEsMzI5MjYzND
+IwLDUwNzQ0ODM4NywtMjA1MzU1NTE3NCw5MDkyMTM1ODQsLTIw
+ODg0Mjg4MTVdfQ==
 -->
