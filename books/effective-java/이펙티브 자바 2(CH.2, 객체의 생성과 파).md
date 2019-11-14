@@ -259,7 +259,13 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 	String s = new String("bikini"); // never ever!	
 ```
 
-위의 코드는 실행될때마다 새로운 String 인스턴스를 만든다. 정말 쓸데 없는 행위다. 
+위의 코드는 실행될때마다 새로운 String 인스턴스를 만든다. 정말 쓸데 없는 행위다. 이 코드가 반복문이나 빈번히 호출되는 메서드 안에 있다면 쓸데 없는 String 인스턴스가 수백만게가 만들어질 수도 있다. 
+
+```
+String s = "bikini";
+```
+
+위 코드는 새로운 인스턴스를 매번 반드는 대신 하나의 String 인스턴스를 재사용한다. 나아가 이 방식을 사용하면 같은 가상 머신안에서 똑같은 문자열 리터럴을 상
 
 
 
@@ -297,11 +303,11 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjY3OTg5NzIsLTQ1MzE0MTAxMSwzMj
-kyNjM0MjAsNTA3NDQ4Mzg3LC0yMDUzNTU1MTc0LDkwOTIxMzU4
-NCwtMjA4ODQyODgxNSwtMTk0MTI4Njg0NCwxNzE5MTg4NTA0LC
-0yNTgyODI1NjMsNzEwMjk2MDE2LC05NTYwNDU3MTksLTE0OTQ2
-NzUwMjUsLTE4NzI5NjkzNzYsLTE3NTk1NjAzMTIsNjk0OTE0Nj
-EzLC02NzQzNjczMTcsMzM1NDk3NDkzLC04Nzk2ODAwOTUsMTA3
-MDM3OTQ4MV19
+eyJoaXN0b3J5IjpbMTc4MjgyMjY2MSwtMTUyNjc5ODk3MiwtND
+UzMTQxMDExLDMyOTI2MzQyMCw1MDc0NDgzODcsLTIwNTM1NTUx
+NzQsOTA5MjEzNTg0LC0yMDg4NDI4ODE1LC0xOTQxMjg2ODQ0LD
+E3MTkxODg1MDQsLTI1ODI4MjU2Myw3MTAyOTYwMTYsLTk1NjA0
+NTcxOSwtMTQ5NDY3NTAyNSwtMTg3Mjk2OTM3NiwtMTc1OTU2MD
+MxMiw2OTQ5MTQ2MTMsLTY3NDM2NzMxNywzMzU0OTc0OTMsLTg3
+OTY4MDA5NV19
 -->
