@@ -221,7 +221,9 @@ public class UtilityClass {
 
 ## Item5. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라.
 
-많은 클래스가 하나 이상의 자원에 의존한다. 가령 맞춤법 검사기는 사전(dictionary)에 의존하는데, 이런 클래스를 정적 유틸리티
+많은 클래스가 하나 이상의 자원에 의존한다. 가령 맞춤법 검사기는 사전(dictionary)에 의존하는데, 이런 클래스를 정적 유틸리티 클래스로 구현한 모습을 드물지 않게 볼 수 있다.
+
+
  
 
 
@@ -252,7 +254,7 @@ public class UtilityClass {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODgxMzU2MTksNjk0OTE0NjEzLC02Nz
+eyJoaXN0b3J5IjpbLTE3NTk1NjAzMTIsNjk0OTE0NjEzLC02Nz
 QzNjczMTcsMzM1NDk3NDkzLC04Nzk2ODAwOTUsMTA3MDM3OTQ4
 MSw4Mzk5OTI5MjgsLTE2NzY2MjM2NTAsLTEwMzcxODg1OTIsMj
 EyODk1NDI3MiwtMTA3MzY2MzI1NSwxNDU5OTkyMDUzLDE1Mzk4
