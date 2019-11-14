@@ -309,7 +309,8 @@ private static long sum() {
 ```
 sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면 훨씬 느리다. sum변수를 long이 아닌 Long으로 선언해서 불필요한 Long인스턴스가 엄청나게 많이 만들어졌다. **교훈은 명확하다. 박싱된 기본 타입 보다는 기본 타입을 사용하고, 의도치 않은 오토박싱이 숨어들지 않도록 주의하자.** 
 
-마지막으로 이번 아이테
+마지막으로 이번 Item6을 `객체 생성은 비싸니 피해야 한다`로 오해하면 안된다. 특히 요즘의 JVM에서 별다른 일을 하지 않는 작은 객체를 생성하고 회수하는 일은 크게 부담 되지 않는다. 프로그램 코드의 간결성, 명확성, 기능을 위해서 객체를 추가로 생성하는 것이라면 일반적으로 좋은 일이다. 
+거꾸로, 아주 무거운 객체가 아닌 경우라면 단순히 객체 생성을 피하고자 객체 풀(pool0
 
 
 
@@ -353,7 +354,7 @@ sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MDQ2NjIyNiwtMTUzMDE3NTQxNCwtNz
+eyJoaXN0b3J5IjpbLTMzMjI4NDU5NSwtMTUzMDE3NTQxNCwtNz
 A0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1
 ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3MTgxLD
 E2NTY5MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1MzE0MTAxMSwzMjky
