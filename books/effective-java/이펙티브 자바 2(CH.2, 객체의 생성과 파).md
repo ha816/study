@@ -295,6 +295,9 @@ public class RomanNumerals {
 
 예컨대 Map 인터페이스의 KeySet메서드는 Map안에 키값을 전부 담은 **Set 뷰(어댑터)** 를 반환한다. KeySet을 호출할 때마다 새로운 인스턴스가 만들어진다고 생각 할 수도 있지만, 사실은 매번 같은 Set 인스턴스를 반환할지도 모른다. 반환된 Set 인스턴스가 일반적으로 가변적이더라도 반환된 인스턴스들은 기능적으로 모두 똑같다. 즉 반환한 객체 중 하나를 수정하면 다른 모든 객체가 같이 바뀐다. 모두가 똑같은 Map 인스턴스에서 왔기 때문이다. 따라서 KeySet이 뷰 객체를 여러개 만들어도 상관 없지만, 그럴필요도 없고 이득도 없다. 
 
+오토박싱(auto boxing)
+: 프로그래머가 기본 타입과 박싱된 기본 타입을 섞어 쓸 때 자동으로 상호 변환해주는 기술이다. 오토박싱은 기본 타입(primitive type)과 그에 대응하는  박싱된 기본타입(wrapping 
+
 
 
 
@@ -335,11 +338,11 @@ public class RomanNumerals {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NDA1OTE4MSwtMTUzMDE3NTQxNCwtNz
-A0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1
-ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3MTgxLD
-E2NTY5MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1MzE0MTAxMSwzMjky
-NjM0MjAsNTA3NDQ4Mzg3LC0yMDUzNTU1MTc0LDkwOTIxMzU4NC
-wtMjA4ODQyODgxNSwtMTk0MTI4Njg0NCwxNzE5MTg4NTA0LC0y
-NTgyODI1NjNdfQ==
+eyJoaXN0b3J5IjpbNjk0NzIzMjc5LC0xNTMwMTc1NDE0LC03MD
+QxNTA0MywtOTg0OTg3MDQ2LDEyOTkwNDExODAsLTEwNzk4NDU4
+NjIsLTQ3MzM3MTU4MCwtNzk1NzQzMDEsLTExMzc1MjcxODEsMT
+Y1NjkzNDYxMiwtMTUyNjc5ODk3MiwtNDUzMTQxMDExLDMyOTI2
+MzQyMCw1MDc0NDgzODcsLTIwNTM1NTUxNzQsOTA5MjEzNTg0LC
+0yMDg4NDI4ODE1LC0xOTQxMjg2ODQ0LDE3MTkxODg1MDQsLTI1
+ODI4MjU2M119
 -->
