@@ -252,6 +252,7 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 >핵심정리
 >클래스가 내부적으로 하나 이상의 자원에 의존하고, 그 클래스가 동작에 영향을 준다면 싱글턴과 정적 유틸리티 클래스는 사용하지 않는게 좋다. 이 자원들을 클래스가 직접 만들게 해서도 안된다. 대신 필요한 자원을 (혹은 그 자원을 만들어주는 팩터리를) 생성자에 (혹은 정적 팩터리나 빌더에) 넘겨주자. 의존 객체 주입은 클래스의 유연성, 재사용성, 테스트 용이성을 굉장히 개선해준다. 
 
+## Item6. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라.
 
 
 
@@ -290,11 +291,11 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA3NDQ4Mzg3LC0yMDUzNTU1MTc0LDkwOT
-IxMzU4NCwtMjA4ODQyODgxNSwtMTk0MTI4Njg0NCwxNzE5MTg4
-NTA0LC0yNTgyODI1NjMsNzEwMjk2MDE2LC05NTYwNDU3MTksLT
-E0OTQ2NzUwMjUsLTE4NzI5NjkzNzYsLTE3NTk1NjAzMTIsNjk0
-OTE0NjEzLC02NzQzNjczMTcsMzM1NDk3NDkzLC04Nzk2ODAwOT
-UsMTA3MDM3OTQ4MSw4Mzk5OTI5MjgsLTE2NzY2MjM2NTAsLTEw
-MzcxODg1OTJdfQ==
+eyJoaXN0b3J5IjpbMzI5MjYzNDIwLDUwNzQ0ODM4NywtMjA1Mz
+U1NTE3NCw5MDkyMTM1ODQsLTIwODg0Mjg4MTUsLTE5NDEyODY4
+NDQsMTcxOTE4ODUwNCwtMjU4MjgyNTYzLDcxMDI5NjAxNiwtOT
+U2MDQ1NzE5LC0xNDk0Njc1MDI1LC0xODcyOTY5Mzc2LC0xNzU5
+NTYwMzEyLDY5NDkxNDYxMywtNjc0MzY3MzE3LDMzNTQ5NzQ5My
+wtODc5NjgwMDk1LDEwNzAzNzk0ODEsODM5OTkyOTI4LC0xNjc2
+NjIzNjUwXX0=
 -->
