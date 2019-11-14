@@ -242,7 +242,9 @@ public class SpellChecker {
 
 이런 패턴의 쓸만한 변형으로 생성자에 자원 팩터리를 넘겨주는 방식이 있다. **팩터리란 호출할 때마다 특정 타입의 인스턴스를 반혹해서 만들어주는 객체를 말한다.** 이것이 바로 팩터리 메서드 패턴(Factory Method Pattern)을 구현한 것이다. 
 
-자바 8에서 소개한 Supplier<T> 인터페이스가 팩터리를 표현한 완벽한 예이다. Supplier<T>를 입력으로 받는 메서드는 일반적으로 한정적 와일드카드 타입(bounded wildcard type)을 사용해 팩터리의 타입 매
+자바 8에서 소개한 Supplier<T> 인터페이스가 팩터리를 표현한 완벽한 예이다. Supplier<T>를 입력으로 받는 메서드는 일반적으로 한정적 와일드카드 타입(bounded wildcard type)을 사용해 팩터리의 타입 매개변수를 제한해야 한다. 이런한 방법을 통해 클라이언는 자신이 명시한 타입의 하위 타입이라면 무엇이든 생성 할 수 있는 팩터리를 넘길수 있다. 다음 코드는 클라이언트가 제공한 팩터리가 생성한 타일(Tile)들로 구성된 모자이크(Mosaic)를 만드는 메서드다.
+
+
 
 
 
@@ -279,11 +281,11 @@ public class SpellChecker {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE4MjgyMTc5LDE3MTkxODg1MDQsLTI1OD
-I4MjU2Myw3MTAyOTYwMTYsLTk1NjA0NTcxOSwtMTQ5NDY3NTAy
-NSwtMTg3Mjk2OTM3NiwtMTc1OTU2MDMxMiw2OTQ5MTQ2MTMsLT
-Y3NDM2NzMxNywzMzU0OTc0OTMsLTg3OTY4MDA5NSwxMDcwMzc5
-NDgxLDgzOTk5MjkyOCwtMTY3NjYyMzY1MCwtMTAzNzE4ODU5Mi
-wyMTI4OTU0MjcyLC0xMDczNjYzMjU1LDE0NTk5OTIwNTMsMTUz
-OTg2MjI2Nl19
+eyJoaXN0b3J5IjpbLTE5NDEyODY4NDQsMTcxOTE4ODUwNCwtMj
+U4MjgyNTYzLDcxMDI5NjAxNiwtOTU2MDQ1NzE5LC0xNDk0Njc1
+MDI1LC0xODcyOTY5Mzc2LC0xNzU5NTYwMzEyLDY5NDkxNDYxMy
+wtNjc0MzY3MzE3LDMzNTQ5NzQ5MywtODc5NjgwMDk1LDEwNzAz
+Nzk0ODEsODM5OTkyOTI4LC0xNjc2NjIzNjUwLC0xMDM3MTg4NT
+kyLDIxMjg5NTQyNzIsLTEwNzM2NjMyNTUsMTQ1OTk5MjA1Mywx
+NTM5ODYyMjY2XX0=
 -->
