@@ -240,7 +240,12 @@ public class SpellChecker {
 ```
 의존 객체 주입 패턴(Dependency Injection, DI)은 아주 단순하여 많은 프로그래머가 이 방식에 이름이 있다는 사실도 모른 채 사용해 왔다. 예제에서는 dictionary라는 딱 하나의 자원만 사용하지만, 자원이 몇개 든 의존 관계가 어떻든 상관 없이 잘 동작한다. 또 불변성을 보장하여 같은 자원을 사용하려는 여러 클라이언트가 의존 객체들을 안심하고 공유할 수 있기도 한다. 의존 객체 주입은 생성자, 정적 팩터리, 빌더 모두에 똑같이 응용 가능하다. 
 
-이런 패턴의 쓸만한 변형으로 생성자에 자원 팩터리를 넘겨주는 방식이 있다. **팩터리란 호출할 때마다 특정 타입의 인스턴스를 반혹해서 만들어주는 객체를 말한다.** 이것이 바로 팩터리 메서드 패턴(Factory Met
+이런 패턴의 쓸만한 변형으로 생성자에 자원 팩터리를 넘겨주는 방식이 있다. **팩터리란 호출할 때마다 특정 타입의 인스턴스를 반혹해서 만들어주는 객체를 말한다.** 이것이 바로 팩터리 메서드 패턴(Factory Method Pattern)을 구현한 것이다. 
+
+자바 8에서 소개한 Supplier<T> 인터페이스가 팩터리를 표현한 완벽한 예이다. Supplier<T>를 입력으로 받는 메서드는 일반적으로 한정적 와일드카드 타입(bounded wildcard type)을 사용해 팩터리의 타입 매
+
+
+
 
 
 
@@ -274,11 +279,11 @@ public class SpellChecker {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3OTkxMzQwOCwxNzE5MTg4NTA0LC0yNT
-gyODI1NjMsNzEwMjk2MDE2LC05NTYwNDU3MTksLTE0OTQ2NzUw
-MjUsLTE4NzI5NjkzNzYsLTE3NTk1NjAzMTIsNjk0OTE0NjEzLC
-02NzQzNjczMTcsMzM1NDk3NDkzLC04Nzk2ODAwOTUsMTA3MDM3
-OTQ4MSw4Mzk5OTI5MjgsLTE2NzY2MjM2NTAsLTEwMzcxODg1OT
-IsMjEyODk1NDI3MiwtMTA3MzY2MzI1NSwxNDU5OTkyMDUzLDE1
-Mzk4NjIyNjZdfQ==
+eyJoaXN0b3J5IjpbODE4MjgyMTc5LDE3MTkxODg1MDQsLTI1OD
+I4MjU2Myw3MTAyOTYwMTYsLTk1NjA0NTcxOSwtMTQ5NDY3NTAy
+NSwtMTg3Mjk2OTM3NiwtMTc1OTU2MDMxMiw2OTQ5MTQ2MTMsLT
+Y3NDM2NzMxNywzMzU0OTc0OTMsLTg3OTY4MDA5NSwxMDcwMzc5
+NDgxLDgzOTk5MjkyOCwtMTY3NjYyMzY1MCwtMTAzNzE4ODU5Mi
+wyMTI4OTU0MjcyLC0xMDczNjYzMjU1LDE0NTk5OTIwNTMsMTUz
+OTg2MjI2Nl19
 -->
