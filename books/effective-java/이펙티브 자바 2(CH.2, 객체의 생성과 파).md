@@ -280,10 +280,10 @@ static boolean isRomanNumeral(String s) {
 
 ```
 public class RomanNumerals {
-	private static final Pattern = R
+	private static final Pattern = ROMAN = Pattern.comile("^ ... "+"({})$");
 
 	static boolean isRomanNumeral(String s) {
-		return s.matches("^ ... "+"({})$");
+		return ROMAN.matcher(s).matches();
 	}
 }
 ```
@@ -323,11 +323,11 @@ public class RomanNumerals {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODIzODgwMSwtNDczMzcxNTgwLC03OT
-U3NDMwMSwtMTEzNzUyNzE4MSwxNjU2OTM0NjEyLC0xNTI2Nzk4
-OTcyLC00NTMxNDEwMTEsMzI5MjYzNDIwLDUwNzQ0ODM4NywtMj
-A1MzU1NTE3NCw5MDkyMTM1ODQsLTIwODg0Mjg4MTUsLTE5NDEy
-ODY4NDQsMTcxOTE4ODUwNCwtMjU4MjgyNTYzLDcxMDI5NjAxNi
-wtOTU2MDQ1NzE5LC0xNDk0Njc1MDI1LC0xODcyOTY5Mzc2LC0x
-NzU5NTYwMzEyXX0=
+eyJoaXN0b3J5IjpbLTEwNzk4NDU4NjIsLTQ3MzM3MTU4MCwtNz
+k1NzQzMDEsLTExMzc1MjcxODEsMTY1NjkzNDYxMiwtMTUyNjc5
+ODk3MiwtNDUzMTQxMDExLDMyOTI2MzQyMCw1MDc0NDgzODcsLT
+IwNTM1NTUxNzQsOTA5MjEzNTg0LC0yMDg4NDI4ODE1LC0xOTQx
+Mjg2ODQ0LDE3MTkxODg1MDQsLTI1ODI4MjU2Myw3MTAyOTYwMT
+YsLTk1NjA0NTcxOSwtMTQ5NDY3NTAyNSwtMTg3Mjk2OTM3Niwt
+MTc1OTU2MDMxMl19
 -->
