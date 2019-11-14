@@ -250,7 +250,7 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 의존 객체 주입이 항상 옳은 것은 아니다. 의존성이 수천 개나 되는 큰 프로젝트에서는 코드를 어지럽게 만들기도 한다. Spring, Dagger, Guice와 같은 의존 객체 주입 프레임워크를 사용하면 이런 문제를 해소할 수 있다. 이 책에서 다룰 주제는 아니지만, 이들 프레임워크는 의존 객체를 직접 주입하도록 설계된 API를 알맞게 응용해서 사용하고 있다. 
 
 >핵심정리
->클래스가 내부적으로 하나 이상의 자원에 의존하고, 그 클래스가 동작에 영향을 준다면 싱글턴과 정적 유틸리티 클래스는 사용하지 않는게 좋다. 
+>클래스가 내부적으로 하나 이상의 자원에 의존하고, 그 클래스가 동작에 영향을 준다면 싱글턴과 정적 유틸리티 클래스는 사용하지 않는게 좋다. 이 자원들을 클래스가 직접 만들게 해서도 안된다. 대신 필요한 자원을 (혹은 그 자원을 만들어주는 팩터리를) 생성자에 (혹은 정적 팩터리나 빌더에) 넘겨주자. 의존 객체 주입은 클래스의 유연성, 재사용성, 테스트 용이성을 굉장히 개선해준다. 
 
 
 
@@ -290,11 +290,11 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTM1NTUxNzQsOTA5MjEzNTg0LC0yMD
-g4NDI4ODE1LC0xOTQxMjg2ODQ0LDE3MTkxODg1MDQsLTI1ODI4
-MjU2Myw3MTAyOTYwMTYsLTk1NjA0NTcxOSwtMTQ5NDY3NTAyNS
-wtMTg3Mjk2OTM3NiwtMTc1OTU2MDMxMiw2OTQ5MTQ2MTMsLTY3
-NDM2NzMxNywzMzU0OTc0OTMsLTg3OTY4MDA5NSwxMDcwMzc5ND
-gxLDgzOTk5MjkyOCwtMTY3NjYyMzY1MCwtMTAzNzE4ODU5Miwy
-MTI4OTU0MjcyXX0=
+eyJoaXN0b3J5IjpbNTA3NDQ4Mzg3LC0yMDUzNTU1MTc0LDkwOT
+IxMzU4NCwtMjA4ODQyODgxNSwtMTk0MTI4Njg0NCwxNzE5MTg4
+NTA0LC0yNTgyODI1NjMsNzEwMjk2MDE2LC05NTYwNDU3MTksLT
+E0OTQ2NzUwMjUsLTE4NzI5NjkzNzYsLTE3NTk1NjAzMTIsNjk0
+OTE0NjEzLC02NzQzNjczMTcsMzM1NDk3NDkzLC04Nzk2ODAwOT
+UsMTA3MDM3OTQ4MSw4Mzk5OTI5MjgsLTE2NzY2MjM2NTAsLTEw
+MzcxODg1OTJdfQ==
 -->
