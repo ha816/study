@@ -221,12 +221,14 @@ public class UtilityClass {
 
 ## Item5. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라.
 
-많은 클래스가 하나 이상의 자원에 의존한다. 가령 맞춤법 검사기는 사전(dictionary)에 의존하는데, 이런 클래스를 정적 유틸리티 클래스로 구현한 모습을 드물지 않게 볼 수 있다.
+많은 클래스가 하나 이상의 자원에 의존한다. 가령 맞춤법 검사기(SpellChecker)는 사전(dictionary)에 의존하는데, 이런 클래스를 정적 유틸리티 클래스로 구현한 모습을 드물지 않게 볼 수 있다.
 
 ```
-
+public class SpellChecker {
+	private static final Lexicon ditionary = ...;
+}
 ```
-
+SpellChecker는 private static final
 
 사용하는 자원에 따라 동작이 달라지는 클래스에는 정적 유틸리티 클래스나 싱글턴 방식이 적합하지 않다. 
 
@@ -261,11 +263,11 @@ public class UtilityClass {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYzMDYzMDA2LC0xODcyOTY5Mzc2LC0xNz
-U5NTYwMzEyLDY5NDkxNDYxMywtNjc0MzY3MzE3LDMzNTQ5NzQ5
-MywtODc5NjgwMDk1LDEwNzAzNzk0ODEsODM5OTkyOTI4LC0xNj
-c2NjIzNjUwLC0xMDM3MTg4NTkyLDIxMjg5NTQyNzIsLTEwNzM2
-NjMyNTUsMTQ1OTk5MjA1MywxNTM5ODYyMjY2LDk2OTUwNDAwMC
-w0MDY2ODcxNyw2MDAwMzE4MTgsMTM1NzgyNDg4NCwxODM2Nzcw
-MjNdfQ==
+eyJoaXN0b3J5IjpbLTEzMDU4Mjg2OCwtMTg3Mjk2OTM3NiwtMT
+c1OTU2MDMxMiw2OTQ5MTQ2MTMsLTY3NDM2NzMxNywzMzU0OTc0
+OTMsLTg3OTY4MDA5NSwxMDcwMzc5NDgxLDgzOTk5MjkyOCwtMT
+Y3NjYyMzY1MCwtMTAzNzE4ODU5MiwyMTI4OTU0MjcyLC0xMDcz
+NjYzMjU1LDE0NTk5OTIwNTMsMTUzOTg2MjI2Niw5Njk1MDQwMD
+AsNDA2Njg3MTcsNjAwMDMxODE4LDEzNTc4MjQ4ODQsMTgzNjc3
+MDIzXX0=
 -->
