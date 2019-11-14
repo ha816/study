@@ -247,7 +247,7 @@ public class SpellChecker {
 ```
 Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 ```
-의존 객체 주입이 항상 옳은 것은 아니다. 의존성이 수천 개나 되는 큰 프로젝트에서는 코드를 어지럽게 만들기도 한다. 
+의존 객체 주입이 항상 옳은 것은 아니다. 의존성이 수천 개나 되는 큰 프로젝트에서는 코드를 어지럽게 만들기도 한다. Spring, Dagger, Guice와 같은 의존 객체 주입 프레임워크를 사용하면 이런 문제를 해소할 수 있다. 
 
 
 
@@ -285,11 +285,11 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA5MjEzNTg0LC0yMDg4NDI4ODE1LC0xOT
-QxMjg2ODQ0LDE3MTkxODg1MDQsLTI1ODI4MjU2Myw3MTAyOTYw
-MTYsLTk1NjA0NTcxOSwtMTQ5NDY3NTAyNSwtMTg3Mjk2OTM3Ni
-wtMTc1OTU2MDMxMiw2OTQ5MTQ2MTMsLTY3NDM2NzMxNywzMzU0
-OTc0OTMsLTg3OTY4MDA5NSwxMDcwMzc5NDgxLDgzOTk5MjkyOC
-wtMTY3NjYyMzY1MCwtMTAzNzE4ODU5MiwyMTI4OTU0MjcyLC0x
-MDczNjYzMjU1XX0=
+eyJoaXN0b3J5IjpbNjc5OTM0NjA4LDkwOTIxMzU4NCwtMjA4OD
+QyODgxNSwtMTk0MTI4Njg0NCwxNzE5MTg4NTA0LC0yNTgyODI1
+NjMsNzEwMjk2MDE2LC05NTYwNDU3MTksLTE0OTQ2NzUwMjUsLT
+E4NzI5NjkzNzYsLTE3NTk1NjAzMTIsNjk0OTE0NjEzLC02NzQz
+NjczMTcsMzM1NDk3NDkzLC04Nzk2ODAwOTUsMTA3MDM3OTQ4MS
+w4Mzk5OTI5MjgsLTE2NzY2MjM2NTAsLTEwMzcxODg1OTIsMjEy
+ODk1NDI3Ml19
 -->
