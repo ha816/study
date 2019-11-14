@@ -247,7 +247,7 @@ public class SpellChecker {
 ```
 Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 ```
-의존 객체 주입이 
+의존 객체 주입이 항상 옳은 것은 아니다. 의존성이 수천 개나 되는 큰 프로젝트에서는 코드를 어지럽게 만들기도 한다. 
 
 
 
@@ -285,11 +285,11 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODg0Mjg4MTUsLTE5NDEyODY4NDQsMT
-cxOTE4ODUwNCwtMjU4MjgyNTYzLDcxMDI5NjAxNiwtOTU2MDQ1
-NzE5LC0xNDk0Njc1MDI1LC0xODcyOTY5Mzc2LC0xNzU5NTYwMz
-EyLDY5NDkxNDYxMywtNjc0MzY3MzE3LDMzNTQ5NzQ5MywtODc5
-NjgwMDk1LDEwNzAzNzk0ODEsODM5OTkyOTI4LC0xNjc2NjIzNj
-UwLC0xMDM3MTg4NTkyLDIxMjg5NTQyNzIsLTEwNzM2NjMyNTUs
-MTQ1OTk5MjA1M119
+eyJoaXN0b3J5IjpbOTA5MjEzNTg0LC0yMDg4NDI4ODE1LC0xOT
+QxMjg2ODQ0LDE3MTkxODg1MDQsLTI1ODI4MjU2Myw3MTAyOTYw
+MTYsLTk1NjA0NTcxOSwtMTQ5NDY3NTAyNSwtMTg3Mjk2OTM3Ni
+wtMTc1OTU2MDMxMiw2OTQ5MTQ2MTMsLTY3NDM2NzMxNywzMzU0
+OTc0OTMsLTg3OTY4MDA5NSwxMDcwMzc5NDgxLDgzOTk5MjkyOC
+wtMTY3NjYyMzY1MCwtMTAzNzE4ODU5MiwyMTI4OTU0MjcyLC0x
+MDczNjYzMjU1XX0=
 -->
