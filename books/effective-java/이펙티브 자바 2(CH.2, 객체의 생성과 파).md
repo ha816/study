@@ -275,7 +275,7 @@ statuc boolean isRomanNumeral(String s) {
 	return s.matches("^ ... "+"({})$");
 }
 ```
-위 코드의 문제는 String.matches 메서드를 사용하는데 있다. String.
+위 코드의 문제는 String.matches 메서드를 사용하는데 있다. String.matches는 정규표현식으로 문자열 형태를 확인하는 가장 쉬운 방법이지만, 성능이 중요한 상황에서 반복해 사용하기엔 적합하지 않다. 이 메서드가 내부에서 만드는 정규표현식용 Pattern 인스턴스는, 한번 쓰고 버려져서 곧바로 가비지 컬렉션 대상이 된다. Pattern은 입력 받은 정규표현식에 해당하는 유한 상태 머신을 ㅁ
 
 
 
@@ -314,7 +314,7 @@ statuc boolean isRomanNumeral(String s) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4Mjg4Mzg1OSwtNzk1NzQzMDEsLTExMz
+eyJoaXN0b3J5IjpbMTAwNTg2MzI0NCwtNzk1NzQzMDEsLTExMz
 c1MjcxODEsMTY1NjkzNDYxMiwtMTUyNjc5ODk3MiwtNDUzMTQx
 MDExLDMyOTI2MzQyMCw1MDc0NDgzODcsLTIwNTM1NTUxNzQsOT
 A5MjEzNTg0LC0yMDg4NDI4ODE1LC0xOTQxMjg2ODQ0LDE3MTkx
