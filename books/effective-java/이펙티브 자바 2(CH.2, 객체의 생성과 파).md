@@ -256,8 +256,10 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 
 똑같은 기능의 객체를 매번 생성하기보다는 객체 하나를 재사용하는편이 나을 때가 많다. 재사용은 빠르고 세련되다. 특히 불변객체는 언제든 재사용할 수 있다. 아래 코드는 극단적으로 쓰지 말아야할 예의 코드다. 
 ```
-	String s = new String("bi")	
+	String s = new String("bikini"); // never ever!	
 ```
+
+위의 코드는 실행될때마다 새로운 String 인스턴스를 만든다. 정말 쓸데 없는 행위다. 
 
 
 
@@ -295,7 +297,7 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDM2MzcwMjUsLTQ1MzE0MTAxMSwzMj
+eyJoaXN0b3J5IjpbLTE1MjY3OTg5NzIsLTQ1MzE0MTAxMSwzMj
 kyNjM0MjAsNTA3NDQ4Mzg3LC0yMDUzNTU1MTc0LDkwOTIxMzU4
 NCwtMjA4ODQyODgxNSwtMTk0MTI4Njg0NCwxNzE5MTg4NTA0LC
 0yNTgyODI1NjMsNzEwMjk2MDE2LC05NTYwNDU3MTksLTE0OTQ2
