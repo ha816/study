@@ -254,7 +254,10 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 
 ## Item6. 불필요한 객체 생성을 피하라.
 
-
+똑같은 기능의 객체를 매번 생성하기보다는 객체 하나를 재사용하는편이 나을 때가 많다. 재사용은 빠르고 세련되다. 특히 불변객체는 언제든 재사용할 수 있다. 아래 코드는 극단적으로 쓰지 말아야할 예의 코드다. 
+```
+	
+```
 
 
 
@@ -292,7 +295,7 @@ Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NjUzMDMwMywtNDUzMTQxMDExLDMyOT
+eyJoaXN0b3J5IjpbLTg2MTc1MDUwNSwtNDUzMTQxMDExLDMyOT
 I2MzQyMCw1MDc0NDgzODcsLTIwNTM1NTUxNzQsOTA5MjEzNTg0
 LC0yMDg4NDI4ODE1LC0xOTQxMjg2ODQ0LDE3MTkxODg1MDQsLT
 I1ODI4MjU2Myw3MTAyOTYwMTYsLTk1NjA0NTcxOSwtMTQ5NDY3
