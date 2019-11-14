@@ -298,12 +298,16 @@ public class RomanNumerals {
 오토박싱(auto boxing)
 : 프로그래머가 기본 타입과 박싱된 기본 타입을 섞어 쓸 때 자동으로 상호 변환해주는 기술이다. 오토박싱은 기본 타입(primitive type)과 그에 대응하는  박싱된 기본타입(wrapping class)의 구분을 흐려주지만, 완전히 없애주는 것은 아니다. 의미상으로는 별다를 것 없지만 성능에서는 그렇지 않다.
 
-
 ```
 private static long sum() {
-	Long sum = 
+	Long sum = 0L;
+	for(long i = 0; i <= Integer.MAX_VALUE; i++){
+		sum += i;
+	}
+	return sum;
 }
 ```
+sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 
 
 
 
@@ -346,11 +350,11 @@ private static long sum() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDIyNjQxOTksLTE1MzAxNzU0MTQsLT
-cwNDE1MDQzLC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0
-NTg2MiwtNDczMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MS
-wxNjU2OTM0NjEyLC0xNTI2Nzk4OTcyLC00NTMxNDEwMTEsMzI5
-MjYzNDIwLDUwNzQ0ODM4NywtMjA1MzU1NTE3NCw5MDkyMTM1OD
-QsLTIwODg0Mjg4MTUsLTE5NDEyODY4NDQsMTcxOTE4ODUwNCwt
-MjU4MjgyNTYzXX0=
+eyJoaXN0b3J5IjpbMTU0NTcyMjcyOCwtMTUzMDE3NTQxNCwtNz
+A0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1
+ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3MTgxLD
+E2NTY5MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1MzE0MTAxMSwzMjky
+NjM0MjAsNTA3NDQ4Mzg3LC0yMDUzNTU1MTc0LDkwOTIxMzU4NC
+wtMjA4ODQyODgxNSwtMTk0MTI4Njg0NCwxNzE5MTg4NTA0LC0y
+NTgyODI1NjNdfQ==
 -->
