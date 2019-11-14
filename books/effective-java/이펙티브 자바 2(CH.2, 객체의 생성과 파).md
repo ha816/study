@@ -223,7 +223,7 @@ public class UtilityClass {
 
 많은 클래스가 하나 이상의 자원에 의존한다. 가령 맞춤법 검사기는 사전(dictionary)에 의존하는데, 이런 클래스를 정적 유틸리티 클래스로 구현한 모습을 드물지 않게 볼 수 있다.
 
-
+사용하는 자원에 따라 동작이 달라지는 클래스에는 정적 유틸리티 클래스나 싱글턴 방식이 적합하지 않을 수 된다.
 
 
  
@@ -256,11 +256,11 @@ public class UtilityClass {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNzE4Nzc0MCwtMTc1OTU2MDMxMiw2OT
-Q5MTQ2MTMsLTY3NDM2NzMxNywzMzU0OTc0OTMsLTg3OTY4MDA5
-NSwxMDcwMzc5NDgxLDgzOTk5MjkyOCwtMTY3NjYyMzY1MCwtMT
-AzNzE4ODU5MiwyMTI4OTU0MjcyLC0xMDczNjYzMjU1LDE0NTk5
-OTIwNTMsMTUzOTg2MjI2Niw5Njk1MDQwMDAsNDA2Njg3MTcsNj
-AwMDMxODE4LDEzNTc4MjQ4ODQsMTgzNjc3MDIzLDUxODc3OTIy
-OF19
+eyJoaXN0b3J5IjpbLTE4NzI5NjkzNzYsLTE3NTk1NjAzMTIsNj
+k0OTE0NjEzLC02NzQzNjczMTcsMzM1NDk3NDkzLC04Nzk2ODAw
+OTUsMTA3MDM3OTQ4MSw4Mzk5OTI5MjgsLTE2NzY2MjM2NTAsLT
+EwMzcxODg1OTIsMjEyODk1NDI3MiwtMTA3MzY2MzI1NSwxNDU5
+OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3LD
+YwMDAzMTgxOCwxMzU3ODI0ODg0LDE4MzY3NzAyMyw1MTg3Nzky
+MjhdfQ==
 -->
