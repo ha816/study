@@ -272,9 +272,10 @@ String s = "bikini";
 생성 비용이 아주 비싼 객체도 더러 있다. 이런 비싼 객체가 반복해서 필요하다면 캐싱하여 재사용하길 권한다. 안타깝게도 자신이 만드는 객체가 비싼객체인지를 매번 명확히 알 수는 없다. 예를 들어 주어진 문자열이 유효한 로마 숫자인지 확인하는 메서드를 작성한다고 하자. 그러면 아래 정규표현식을 활용한 코드가 가장 쉬운 방법이다. 
 ```
 statuc boolean isRomanNumeral(String s) {
-	return s.matches("")
+	return s.matches("^ ... "+"({})$");
 }
 ```
+위 코드의 문제는 String.matches 메서드를 사용하는데 있다. String.
 
 
 
@@ -313,11 +314,11 @@ statuc boolean isRomanNumeral(String s) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDc4OTg0NTAsLTc5NTc0MzAxLC0xMT
-M3NTI3MTgxLDE2NTY5MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1MzE0
-MTAxMSwzMjkyNjM0MjAsNTA3NDQ4Mzg3LC0yMDUzNTU1MTc0LD
-kwOTIxMzU4NCwtMjA4ODQyODgxNSwtMTk0MTI4Njg0NCwxNzE5
-MTg4NTA0LC0yNTgyODI1NjMsNzEwMjk2MDE2LC05NTYwNDU3MT
-ksLTE0OTQ2NzUwMjUsLTE4NzI5NjkzNzYsLTE3NTk1NjAzMTIs
-Njk0OTE0NjEzXX0=
+eyJoaXN0b3J5IjpbMTI4Mjg4Mzg1OSwtNzk1NzQzMDEsLTExMz
+c1MjcxODEsMTY1NjkzNDYxMiwtMTUyNjc5ODk3MiwtNDUzMTQx
+MDExLDMyOTI2MzQyMCw1MDc0NDgzODcsLTIwNTM1NTUxNzQsOT
+A5MjEzNTg0LC0yMDg4NDI4ODE1LC0xOTQxMjg2ODQ0LDE3MTkx
+ODg1MDQsLTI1ODI4MjU2Myw3MTAyOTYwMTYsLTk1NjA0NTcxOS
+wtMTQ5NDY3NTAyNSwtMTg3Mjk2OTM3NiwtMTc1OTU2MDMxMiw2
+OTQ5MTQ2MTNdfQ==
 -->
