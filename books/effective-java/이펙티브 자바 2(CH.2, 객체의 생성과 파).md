@@ -269,7 +269,7 @@ String s = "bikini";
 
 생성자 대신 정적 팩터리 메서드를 제공하는 불변 클래스에서는 정적 팩터리 메서드를 사용해 불필요한 객체 생성을 피할 수 있다. 생성자는 호출할때 마다 새로운 객체를 만들지만, 팩터리 메서드는 우리가 원하는대로 가능하다. 사용하는 객체가 꼭 불변 객체가 아닌 가변 객체라 해도 사용 도중에 더 이상 변경이 이루어지지 않을 것임을 안다면 재사용이 가능하다. 
 
-생성 비용이 아주 비싼 객체도 더러 있다. 이런 비싼 객체가 반복해서 필요하다면 캐싱하여 재사용하길 권한다. 안타깝게도 자신이 만드는 객체가 비싼객체인지를 매번 명확히 알 수는 없다. 
+생성 비용이 아주 비싼 객체도 더러 있다. 이런 비싼 객체가 반복해서 필요하다면 캐싱하여 재사용하길 권한다. 안타깝게도 자신이 만드는 객체가 비싼객체인지를 매번 명확히 알 수는 없다. 예를 들어 ㅈ
 
 
 
@@ -307,11 +307,11 @@ String s = "bikini";
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzc1MjcxODEsMTY1NjkzNDYxMiwtMT
-UyNjc5ODk3MiwtNDUzMTQxMDExLDMyOTI2MzQyMCw1MDc0NDgz
-ODcsLTIwNTM1NTUxNzQsOTA5MjEzNTg0LC0yMDg4NDI4ODE1LC
-0xOTQxMjg2ODQ0LDE3MTkxODg1MDQsLTI1ODI4MjU2Myw3MTAy
-OTYwMTYsLTk1NjA0NTcxOSwtMTQ5NDY3NTAyNSwtMTg3Mjk2OT
-M3NiwtMTc1OTU2MDMxMiw2OTQ5MTQ2MTMsLTY3NDM2NzMxNywz
-MzU0OTc0OTNdfQ==
+eyJoaXN0b3J5IjpbLTE5ODIxMzg4MywtMTEzNzUyNzE4MSwxNj
+U2OTM0NjEyLC0xNTI2Nzk4OTcyLC00NTMxNDEwMTEsMzI5MjYz
+NDIwLDUwNzQ0ODM4NywtMjA1MzU1NTE3NCw5MDkyMTM1ODQsLT
+IwODg0Mjg4MTUsLTE5NDEyODY4NDQsMTcxOTE4ODUwNCwtMjU4
+MjgyNTYzLDcxMDI5NjAxNiwtOTU2MDQ1NzE5LC0xNDk0Njc1MD
+I1LC0xODcyOTY5Mzc2LC0xNzU5NTYwMzEyLDY5NDkxNDYxMywt
+Njc0MzY3MzE3XX0=
 -->
