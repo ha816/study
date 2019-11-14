@@ -228,11 +228,9 @@ public class SpellChecker {
 	private static final Lexicon ditionary = ...;
 }
 ```
-SpellChecker는 private static final의 단 하나만의 사전을 사용한다. 하지만 실전에서는 사전이 언어별로 다를 수도 있고, 특수 어휘용 사전이 있을 수도 있다. 단 하나만의 사전으로 모든 맞춤법을 검사한다는 것은 너무 순진한 생각이다. 
+SpellChecker는 private static final의 단 하나만의 사전을 사용한다. 하지만 실전에서는 사전이 언어별로 다를 수도 있고, 특수 어휘용 사전이 있을 수도 있다. 단 하나만의 사전으로 모든 맞춤법을 검사한다는 것은 너무 순진한 생각이다. 자 이제 SpellChecker가 여러 사전을 사용할 수 있도록 하자. 간단히 ditionary필드에서 final을 제거하고 다른 사전으로 교체하는 메서드를 추가할 수 있지만, 아쉽게도 이 방식은 어색하고 오류가 나기 쉬우며 멀티쓰레드 환경에서는 사용이 불가하다. 
 
-자 이제 SpellChecker가 여러 사전을 사용할 수 있도록 하자. 간단히 ditionary필드에서 final을 제거하고 다른 사전으로 교체하는 메서드를 추가할 수 있지만, 아쉽게도 이 방식은 어색하고 오류가 나기 쉬우며 멀티쓰레드 환경에서는 사용이 불가하다. 
-
-**사용하는 자원(사전)에 따라 동작이 달라지는 클래스에는 정적 유틸리티 클래스나 싱글턴 방식이 적합하지 않다.** 대신 클래스(SpellChecker)가 여러 자원 인스턴스를 지원해야 하며, 클라이언트가 원하는 자원(dictionary)를 사용해야한다.
+**사용하는 자원(사전)에 따라 동작이 달라지는 클래스에는 정적 유틸리티 클래스나 싱글턴 방식이 적합하지 않다.** 대신 클래스(SpellChecker)가 여러 자원 인스턴스를 지원해야 하며, 클라이언트가 원하는 자원(dictionary)를 사용해야한다. 이 조건을 만족하는 간단한 패턴이 있으니, 바로 인스턴스를 생성할때 생성자에 필요한 자원을 넘겨주는 방식이다. 이는 의존 객체 주입의 한 형태로, 검사기(SpellChecker) 생성할 때, 의존 객체인 사전을 주입해주면 된다. 
 
 
  
@@ -265,11 +263,11 @@ SpellChecker는 private static final의 단 하나만의 사전을 사용한다.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEwMjk2MDE2LC05NTYwNDU3MTksLTE0OT
-Q2NzUwMjUsLTE4NzI5NjkzNzYsLTE3NTk1NjAzMTIsNjk0OTE0
-NjEzLC02NzQzNjczMTcsMzM1NDk3NDkzLC04Nzk2ODAwOTUsMT
-A3MDM3OTQ4MSw4Mzk5OTI5MjgsLTE2NzY2MjM2NTAsLTEwMzcx
-ODg1OTIsMjEyODk1NDI3MiwtMTA3MzY2MzI1NSwxNDU5OTkyMD
-UzLDE1Mzk4NjIyNjYsOTY5NTA0MDAwLDQwNjY4NzE3LDYwMDAz
-MTgxOF19
+eyJoaXN0b3J5IjpbMTQzMjU5MjA1Miw3MTAyOTYwMTYsLTk1Nj
+A0NTcxOSwtMTQ5NDY3NTAyNSwtMTg3Mjk2OTM3NiwtMTc1OTU2
+MDMxMiw2OTQ5MTQ2MTMsLTY3NDM2NzMxNywzMzU0OTc0OTMsLT
+g3OTY4MDA5NSwxMDcwMzc5NDgxLDgzOTk5MjkyOCwtMTY3NjYy
+MzY1MCwtMTAzNzE4ODU5MiwyMTI4OTU0MjcyLC0xMDczNjYzMj
+U1LDE0NTk5OTIwNTMsMTUzOTg2MjI2Niw5Njk1MDQwMDAsNDA2
+Njg3MTddfQ==
 -->
