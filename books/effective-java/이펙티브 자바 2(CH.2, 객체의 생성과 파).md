@@ -244,6 +244,10 @@ public class SpellChecker {
 
 자바 8에서 소개한 Supplier<T> 인터페이스가 팩터리를 표현한 완벽한 예이다. Supplier<T>를 입력으로 받는 메서드는 일반적으로 한정적 와일드카드 타입(bounded wildcard type)을 사용해 팩터리의 타입 매개변수를 제한해야 한다. 이런한 방법을 통해 클라이언는 자신이 명시한 타입의 하위 타입이라면 무엇이든 생성 할 수 있는 팩터리를 넘길수 있다. 다음 코드는 클라이언트가 제공한 팩터리가 생성한 타일(Tile)들로 구성된 모자이크(Mosaic)를 만드는 메서드다.
 
+```
+Mosaic create(Supplier<? extends Tile> tileFactory){ ... }
+```
+의존 객체 주입이 
 
 
 
@@ -281,11 +285,11 @@ public class SpellChecker {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDEyODY4NDQsMTcxOTE4ODUwNCwtMj
-U4MjgyNTYzLDcxMDI5NjAxNiwtOTU2MDQ1NzE5LC0xNDk0Njc1
-MDI1LC0xODcyOTY5Mzc2LC0xNzU5NTYwMzEyLDY5NDkxNDYxMy
-wtNjc0MzY3MzE3LDMzNTQ5NzQ5MywtODc5NjgwMDk1LDEwNzAz
-Nzk0ODEsODM5OTkyOTI4LC0xNjc2NjIzNjUwLC0xMDM3MTg4NT
-kyLDIxMjg5NTQyNzIsLTEwNzM2NjMyNTUsMTQ1OTk5MjA1Mywx
-NTM5ODYyMjY2XX0=
+eyJoaXN0b3J5IjpbLTIwODg0Mjg4MTUsLTE5NDEyODY4NDQsMT
+cxOTE4ODUwNCwtMjU4MjgyNTYzLDcxMDI5NjAxNiwtOTU2MDQ1
+NzE5LC0xNDk0Njc1MDI1LC0xODcyOTY5Mzc2LC0xNzU5NTYwMz
+EyLDY5NDkxNDYxMywtNjc0MzY3MzE3LDMzNTQ5NzQ5MywtODc5
+NjgwMDk1LDEwNzAzNzk0ODEsODM5OTkyOTI4LC0xNjc2NjIzNj
+UwLC0xMDM3MTg4NTkyLDIxMjg5NTQyNzIsLTEwNzM2NjMyNTUs
+MTQ1OTk5MjA1M119
 -->
