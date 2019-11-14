@@ -238,7 +238,7 @@ public class SpellChecker {
 	}
 }
 ```
-의존 객체 주입 패턴(Dependency Injection, DI)은 아주 단순하여 많은 ㅍ
+의존 객체 주입 패턴(Dependency Injection, DI)은 아주 단순하여 많은 프로그래머가 이 방식에 이름이 있다는 사실도 모른 채 사용해 왔다. 예제에서는 dictionary라는 딱 하나의 자원만 사용하지만, 자원이 몇개 든 의존 관계가 어떻든 상관 없이 잘 동작한다. 또 불변성을 보장하여 같은 자원을 사용하려는 여러 클라이언트가 의존 객체들을 안심하고 공유할 수 있기도 한다. 의존 객체 주입은 생성자, 정적 팩터리, 빌더 모두에 똑같이 응용 가능하다. 
 
 
 
@@ -273,7 +273,7 @@ public class SpellChecker {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODQzNjEyMywtMjU4MjgyNTYzLDcxMD
+eyJoaXN0b3J5IjpbMTcxOTE4ODUwNCwtMjU4MjgyNTYzLDcxMD
 I5NjAxNiwtOTU2MDQ1NzE5LC0xNDk0Njc1MDI1LC0xODcyOTY5
 Mzc2LC0xNzU5NTYwMzEyLDY5NDkxNDYxMywtNjc0MzY3MzE3LD
 MzNTQ5NzQ5MywtODc5NjgwMDk1LDEwNzAzNzk0ODEsODM5OTky
