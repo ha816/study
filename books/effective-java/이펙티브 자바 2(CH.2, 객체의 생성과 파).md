@@ -295,7 +295,7 @@ public class RomanNumerals {
 어댑터
 : 어댑터는 뷰(view)라고도 한다. 어댑터는 실제 작업은 뒷단 객체에 위임하고, 자신은 제2의 인터페이스 역할을 해주는 객체다. 어댑터는 뒷단 객체만 관리하면되는데, 즉 뒷단 객체 외에는 관리할 상태가 없으므로 뒷단 객체 하나당 어댑터 하나씩만 만들면 충분하다. 
 
-예컨대 Map 인터페이스의 KeySet메서드는 Map안에 키값을 전부 담은 **Set 뷰**를 반환한다. KeySet을 호출할 때마다 새로운 인스턴스가 만들어진다고 생각 할 수도 있지만, 사실은 매번 같은 Set 인스턴스를 반환할지도 모른다. 반환된 Set 인스턴스가 일반적으로 가변적이더라도 반환된 인스턴스들은 기능적으로 모두 똑같다. 즉 반환한 객체 중 하나를 수정하면 다른 모든 객체가 같이 바뀐다. 모두가 똑같은 Map 인스턴스로 왔기 때문이다. 따라서 KeySet이 뷰 객체를 여러개 만들어도 상관 없지만, 그럴필요도 없고 이득도 없다. 
+예컨대 Map 인터페이스의 KeySet메서드는 Map안에 키값을 전부 담은 **Set 뷰(어댑터)** 를 반환한다. KeySet을 호출할 때마다 새로운 인스턴스가 만들어진다고 생각 할 수도 있지만, 사실은 매번 같은 Set 인스턴스를 반환할지도 모른다. 반환된 Set 인스턴스가 일반적으로 가변적이더라도 반환된 인스턴스들은 기능적으로 모두 똑같다. 즉 반환한 객체 중 하나를 수정하면 다른 모든 객체가 같이 바뀐다. 모두가 똑같은 Map 인스턴스로 왔기 때문이다. 따라서 KeySet이 뷰 객체를 여러개 만들어도 상관 없지만, 그럴필요도 없고 이득도 없다. 
 
 
 
@@ -337,11 +337,11 @@ public class RomanNumerals {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzYyMzUxMiwtNzA0MTUwNDMsLTk4ND
-k4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1ODYyLC00NzMzNzE1
-ODAsLTc5NTc0MzAxLC0xMTM3NTI3MTgxLDE2NTY5MzQ2MTIsLT
-E1MjY3OTg5NzIsLTQ1MzE0MTAxMSwzMjkyNjM0MjAsNTA3NDQ4
-Mzg3LC0yMDUzNTU1MTc0LDkwOTIxMzU4NCwtMjA4ODQyODgxNS
-wtMTk0MTI4Njg0NCwxNzE5MTg4NTA0LC0yNTgyODI1NjMsNzEw
-Mjk2MDE2XX0=
+eyJoaXN0b3J5IjpbLTE1MzAxNzU0MTQsLTcwNDE1MDQzLC05OD
+Q5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0NTg2MiwtNDczMzcx
+NTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MSwxNjU2OTM0NjEyLC
+0xNTI2Nzk4OTcyLC00NTMxNDEwMTEsMzI5MjYzNDIwLDUwNzQ0
+ODM4NywtMjA1MzU1NTE3NCw5MDkyMTM1ODQsLTIwODg0Mjg4MT
+UsLTE5NDEyODY4NDQsMTcxOTE4ODUwNCwtMjU4MjgyNTYzLDcx
+MDI5NjAxNl19
 -->
