@@ -228,7 +228,7 @@ public class SpellChecker {
 	private static final Lexicon ditionary = ...;
 }
 ```
-SpellChecker는 private static final의 단 하나만의 사전을 사용한다. 하지만 실전에서는 사전이 언어별로 다를 수도 있고, 특수 어휘용 사전이 있을 수도 있다. 단 하나만의 사전으로 모든 맞춤법을 검사한다는 것은 너무 순진한 생각ㅇ
+SpellChecker는 private static final의 단 하나만의 사전을 사용한다. 하지만 실전에서는 사전이 언어별로 다를 수도 있고, 특수 어휘용 사전이 있을 수도 있다. 단 하나만의 사전으로 모든 맞춤법을 검사한다는 것은 너무 순진한 생각이다. 
 
 사용하는 자원에 따라 동작이 달라지는 클래스에는 정적 유틸리티 클래스나 싱글턴 방식이 적합하지 않다. 
 
@@ -263,11 +263,11 @@ SpellChecker는 private static final의 단 하나만의 사전을 사용한다.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4ODkyMzQzOCwtMTg3Mjk2OTM3NiwtMT
-c1OTU2MDMxMiw2OTQ5MTQ2MTMsLTY3NDM2NzMxNywzMzU0OTc0
-OTMsLTg3OTY4MDA5NSwxMDcwMzc5NDgxLDgzOTk5MjkyOCwtMT
-Y3NjYyMzY1MCwtMTAzNzE4ODU5MiwyMTI4OTU0MjcyLC0xMDcz
-NjYzMjU1LDE0NTk5OTIwNTMsMTUzOTg2MjI2Niw5Njk1MDQwMD
-AsNDA2Njg3MTcsNjAwMDMxODE4LDEzNTc4MjQ4ODQsMTgzNjc3
-MDIzXX0=
+eyJoaXN0b3J5IjpbLTE0OTQ2NzUwMjUsLTE4NzI5NjkzNzYsLT
+E3NTk1NjAzMTIsNjk0OTE0NjEzLC02NzQzNjczMTcsMzM1NDk3
+NDkzLC04Nzk2ODAwOTUsMTA3MDM3OTQ4MSw4Mzk5OTI5MjgsLT
+E2NzY2MjM2NTAsLTEwMzcxODg1OTIsMjEyODk1NDI3MiwtMTA3
+MzY2MzI1NSwxNDU5OTkyMDUzLDE1Mzk4NjIyNjYsOTY5NTA0MD
+AwLDQwNjY4NzE3LDYwMDAzMTgxOCwxMzU3ODI0ODg0LDE4MzY3
+NzAyM119
 -->
