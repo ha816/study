@@ -233,7 +233,10 @@ SpellChecker는 private static final의 단 하나만의 사전을 사용한다.
 
 ```
 public class SpellChecker {
-	private static final Lexicon ditionary = ...;
+	private final Lexicon ditionary;
+	public SpellChecker(Lexicon ditionary) {
+		this.dictionary
+	}
 }
 ```
 
@@ -270,11 +273,11 @@ public class SpellChecker {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1ODI4MjU2Myw3MTAyOTYwMTYsLTk1Nj
-A0NTcxOSwtMTQ5NDY3NTAyNSwtMTg3Mjk2OTM3NiwtMTc1OTU2
-MDMxMiw2OTQ5MTQ2MTMsLTY3NDM2NzMxNywzMzU0OTc0OTMsLT
-g3OTY4MDA5NSwxMDcwMzc5NDgxLDgzOTk5MjkyOCwtMTY3NjYy
-MzY1MCwtMTAzNzE4ODU5MiwyMTI4OTU0MjcyLC0xMDczNjYzMj
-U1LDE0NTk5OTIwNTMsMTUzOTg2MjI2Niw5Njk1MDQwMDAsNDA2
-Njg3MTddfQ==
+eyJoaXN0b3J5IjpbMTU4NjQ1MzUxMiwtMjU4MjgyNTYzLDcxMD
+I5NjAxNiwtOTU2MDQ1NzE5LC0xNDk0Njc1MDI1LC0xODcyOTY5
+Mzc2LC0xNzU5NTYwMzEyLDY5NDkxNDYxMywtNjc0MzY3MzE3LD
+MzNTQ5NzQ5MywtODc5NjgwMDk1LDEwNzAzNzk0ODEsODM5OTky
+OTI4LC0xNjc2NjIzNjUwLC0xMDM3MTg4NTkyLDIxMjg5NTQyNz
+IsLTEwNzM2NjMyNTUsMTQ1OTk5MjA1MywxNTM5ODYyMjY2LDk2
+OTUwNDAwMF19
 -->
