@@ -310,7 +310,10 @@ private static long sum() {
 sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면 훨씬 느리다. sum변수를 long이 아닌 Long으로 선언해서 불필요한 Long인스턴스가 엄청나게 많이 만들어졌다. **교훈은 명확하다. 박싱된 기본 타입 보다는 기본 타입을 사용하고, 의도치 않은 오토박싱이 숨어들지 않도록 주의하자.** 
 
 마지막으로 이번 Item6을 `객체 생성은 비싸니 피해야 한다`로 오해하면 안된다. 특히 요즘의 JVM에서 별다른 일을 하지 않는 작은 객체를 생성하고 회수하는 일은 크게 부담 되지 않는다. 프로그램 코드의 간결성, 명확성, 기능을 위해서 객체를 추가로 생성하는 것이라면 일반적으로 좋은 일이다. 
-거꾸로, 아주 무거운 객체가 아닌 경우라면 단순히 객체 생성을 피하고자 객체 풀(pool0
+거꾸로, 아주 무거운 객체가 아닌 경우라면 단순히 객체 생성을 피하고자 객체 풀(pool)을 만들지는 말자. 물론 객체 풀을 만드는게 나은 경우가 있다. 하지만 데이터 베이스 연결 같은 경우 생성 비용이 워낙 비싸니 재사용하는 편이 낫다. 하지만 일반적으로는 자체 객체 풀은 코드를 어렵게 만들고 메모리 사용량을 늘리고 성능을 떨어뜨린다. 요즘 JVM의 가비지 컬렉터는 상당히 최적화가 잘되어 있어서 가벼운 객체를 다룰 때는 직접 만든 객체 풀보다 훨씬 빠르다. 
+
+>핵심 정리
+>
 
 
 
@@ -354,11 +357,11 @@ sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMjI4NDU5NSwtMTUzMDE3NTQxNCwtNz
-A0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1
-ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3MTgxLD
-E2NTY5MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1MzE0MTAxMSwzMjky
-NjM0MjAsNTA3NDQ4Mzg3LC0yMDUzNTU1MTc0LDkwOTIxMzU4NC
-wtMjA4ODQyODgxNSwtMTk0MTI4Njg0NCwxNzE5MTg4NTA0LC0y
-NTgyODI1NjNdfQ==
+eyJoaXN0b3J5IjpbLTExMTg4MDM4MDQsLTE1MzAxNzU0MTQsLT
+cwNDE1MDQzLC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0
+NTg2MiwtNDczMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MS
+wxNjU2OTM0NjEyLC0xNTI2Nzk4OTcyLC00NTMxNDEwMTEsMzI5
+MjYzNDIwLDUwNzQ0ODM4NywtMjA1MzU1NTE3NCw5MDkyMTM1OD
+QsLTIwODg0Mjg4MTUsLTE5NDEyODY4NDQsMTcxOTE4ODUwNCwt
+MjU4MjgyNTYzXX0=
 -->
