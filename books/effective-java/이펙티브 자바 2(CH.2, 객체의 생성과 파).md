@@ -277,7 +277,6 @@ static boolean isRomanNumeral(String s) {
 ```
 위 코드의 문제는 String.matches 메서드를 사용하는데 있다. String.matches는 정규표현식으로 문자열 형태를 확인하는 가장 쉬운 방법이지만, 성능이 중요한 상황에서 반복해 사용하기엔 적합하지 않다. 이 메서드가 내부에서 만드는 정규표현식용 Pattern 인스턴스는, 한번 쓰고 버려져서 곧바로 가비지 컬렉션 대상이 된다. Pattern은 입력 받은 정규표현식에 해당하는 유한 상태 머신(finite state machine)을 만들기 때문에 인스턴스 생성 비용이 높다. 
 성능을 개선하려면 정규표현식을 표현하는 불변 Pattern인스턴스를 클래스 초기화 과정에서 직접 생성해 캐싱해두고, isRomanNumeral이 호출될때마다 이 인스턴스를 재사용한다. 
-
 ```
 public class RomanNumerals {
 	private static final Pattern = ROMAN = Pattern.comile("^ ... "+"({})$");
@@ -287,6 +286,9 @@ public class RomanNumerals {
 	}
 }
 ```
+이렇게 개선하면 isRomanNumeral이 빈번히 호출되는 상황에서 성능을 상당히 끌어올릴 수 있다. 내 컴퓨터에서 
+
+
 
 
 
@@ -323,11 +325,11 @@ public class RomanNumerals {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzk4NDU4NjIsLTQ3MzM3MTU4MCwtNz
-k1NzQzMDEsLTExMzc1MjcxODEsMTY1NjkzNDYxMiwtMTUyNjc5
-ODk3MiwtNDUzMTQxMDExLDMyOTI2MzQyMCw1MDc0NDgzODcsLT
-IwNTM1NTUxNzQsOTA5MjEzNTg0LC0yMDg4NDI4ODE1LC0xOTQx
-Mjg2ODQ0LDE3MTkxODg1MDQsLTI1ODI4MjU2Myw3MTAyOTYwMT
-YsLTk1NjA0NTcxOSwtMTQ5NDY3NTAyNSwtMTg3Mjk2OTM3Niwt
-MTc1OTU2MDMxMl19
+eyJoaXN0b3J5IjpbMTI5OTA0MTE4MCwtMTA3OTg0NTg2MiwtND
+czMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MSwxNjU2OTM0
+NjEyLC0xNTI2Nzk4OTcyLC00NTMxNDEwMTEsMzI5MjYzNDIwLD
+UwNzQ0ODM4NywtMjA1MzU1NTE3NCw5MDkyMTM1ODQsLTIwODg0
+Mjg4MTUsLTE5NDEyODY4NDQsMTcxOTE4ODUwNCwtMjU4MjgyNT
+YzLDcxMDI5NjAxNiwtOTU2MDQ1NzE5LC0xNDk0Njc1MDI1LC0x
+ODcyOTY5Mzc2XX0=
 -->
