@@ -286,8 +286,7 @@ public class RomanNumerals {
 	}
 }
 ```
-이렇게 개선하면 isRomanNumeral이 빈번히 호출되는 상황에서 성능을 상당히 끌어올릴 수 있다. 내 컴퓨터에서 길이가 888888888888ㅣㄴ 문
-
+이렇게 개선하면 isRomanNumeral이 빈번히 호출되는 상황에서 성능을 상당히 끌어올릴 수 있다. 또한 개선전에는 존재조차 몰랐던 Pattern 인스턴스를 static final 필드로 끄집어내고 이름을 지어주어 코드의 의미가 잘 들어난다. 하지만 개선된 isRoanNumeral 클래스가 초기화된 이후 이 메서드를 한 번도 호출하지 않는다면 ROMAN 필드는 쓸데없이 초기화된 
 
 
 
@@ -325,11 +324,11 @@ public class RomanNumerals {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDI4NDIwMSwxMjk5MDQxMTgwLC0xMD
-c5ODQ1ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3
-MTgxLDE2NTY5MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1MzE0MTAxMS
-wzMjkyNjM0MjAsNTA3NDQ4Mzg3LC0yMDUzNTU1MTc0LDkwOTIx
-MzU4NCwtMjA4ODQyODgxNSwtMTk0MTI4Njg0NCwxNzE5MTg4NT
-A0LC0yNTgyODI1NjMsNzEwMjk2MDE2LC05NTYwNDU3MTksLTE0
-OTQ2NzUwMjVdfQ==
+eyJoaXN0b3J5IjpbLTEwMjE0MjEyODIsMTI5OTA0MTE4MCwtMT
+A3OTg0NTg2MiwtNDczMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUy
+NzE4MSwxNjU2OTM0NjEyLC0xNTI2Nzk4OTcyLC00NTMxNDEwMT
+EsMzI5MjYzNDIwLDUwNzQ0ODM4NywtMjA1MzU1NTE3NCw5MDky
+MTM1ODQsLTIwODg0Mjg4MTUsLTE5NDEyODY4NDQsMTcxOTE4OD
+UwNCwtMjU4MjgyNTYzLDcxMDI5NjAxNiwtOTU2MDQ1NzE5LC0x
+NDk0Njc1MDI1XX0=
 -->
