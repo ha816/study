@@ -352,7 +352,10 @@ public Object pop() {
 }
 ```
 
-다 쓴 참조를 null처리하면 다른 이점도 따라온다. 만약 null 처리한 참조를 실수로 사용하려하면 즉시 NullPointe
+다 쓴 참조를 null처리하면 다른 이점도 따라온다. 만약 null 처리한 참조를 실수로 사용하려하면 즉시 NullPointerException을 던지며 종료된다(미리 null 처리하지 않았다면 아무 내색없이 무언가 잘못된 일을 수행할것이다.) 프로그램 오류는 가능한 조기에 발견하는게 좋다. 
+
+그렇지만 null처
+
 
 
 
@@ -403,11 +406,11 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDQ5MzcxMjksMTA1MDI2MjQyLDU0MT
-A3NDc0NSwtMTc2OTQ4Mzg3MCwtMjYyOTI5Mjc4LDY0MDE2NDk3
-NiwyNDM3NTAyMTQsMTczMjY2OTQ4MywtNTk3MDk5MjcxLDcxMD
-U5MzM0MiwtMTExODgwMzgwNCwtMTUzMDE3NTQxNCwtNzA0MTUw
-NDMsLTk4NDk4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1ODYyLC
-00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3MTgxLDE2NTY5
-MzQ2MTJdfQ==
+eyJoaXN0b3J5IjpbMzIyNzc0MTc3LDEwNTAyNjI0Miw1NDEwNz
+Q3NDUsLTE3Njk0ODM4NzAsLTI2MjkyOTI3OCw2NDAxNjQ5NzYs
+MjQzNzUwMjE0LDE3MzI2Njk0ODMsLTU5NzA5OTI3MSw3MTA1OT
+MzNDIsLTExMTg4MDM4MDQsLTE1MzAxNzU0MTQsLTcwNDE1MDQz
+LC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0NTg2MiwtND
+czMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MSwxNjU2OTM0
+NjEyXX0=
 -->
