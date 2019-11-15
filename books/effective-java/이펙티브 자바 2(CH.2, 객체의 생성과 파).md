@@ -367,7 +367,10 @@ public Object pop() {
 
 ### 리스터 혹은 콜백
 
-메모리 누수의 세 번째 주범은 리스터 
+메모리 누수의 세 번째 주범은 리스터 또는 콜백이다. 클라이언트가 콜백을 등록만 하고 명확히 해지 하지 않는다면, 뭔가 조치가 오지 않는한 콜백은 계속 쌓여만 갈것이다. 이때 콜백을 약한 참조(weak reference)로 저장하면 가비지 컬렉터가 즉시 수거해 간다. 대표적으로 WeakHashMap에 키로 저장하면 된다. 
+
+>핵심 정리
+>메모리 누수는 겉으로 잘 드러나지 않아 시스템에 
 
 
 
@@ -424,7 +427,7 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MjI3MzA0Miw1OTU0NTMxMzEsMTA3Mj
+eyJoaXN0b3J5IjpbLTg0ODk5MDI3Miw1OTU0NTMxMzEsMTA3Mj
 Y1NTYxNCwxMDUwMjYyNDIsNTQxMDc0NzQ1LC0xNzY5NDgzODcw
 LC0yNjI5MjkyNzgsNjQwMTY0OTc2LDI0Mzc1MDIxNCwxNzMyNj
 Y5NDgzLC01OTcwOTkyNzEsNzEwNTkzMzQyLC0xMTE4ODAzODA0
