@@ -327,8 +327,6 @@ public class Stack {
 	public void push(Object e) {
 		elemnets[size++] = e;
 	}
-
-
 	public Object pop() {
 		if (size == 0){throw EmptyStackException()};
 		return elements[--size]
@@ -343,6 +341,17 @@ public class Stack {
 
 가비지 컬렉션 언에서는 (의도치 않게 객체를 살려두는) 메모리 누수를 찾기가 아주 어렵다. 객체 참조 하나를 살려두면 가비지 컬렉터는 그 객체 뿐만이 아니라 그 객체가 참조하는 모든 객체(그리고 또 그 객체가 참조하는 모든 객체 ...)를 회수해가지 못한다. 그래서 단 몇 개의 객체가 매우 많은 객체를 회수하지 못하게 막을수 있고 이는 잠재적으로 성능에 악영향을 줄 수 있다. 
 
+해법은 해당 참조를 다 썼을때 null처리(참조 해제)하면 된다. 
+
+```
+	public Object pop() {
+		if (size == 0){throw EmptyStackException()};
+		Object result = elements[--size];
+		element
+	}
+	...
+}
+```
 
 
 
@@ -391,11 +400,11 @@ public class Stack {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OT
-Q4Mzg3MCwtMjYyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQs
-MTczMjY2OTQ4MywtNTk3MDk5MjcxLDcxMDU5MzM0MiwtMTExOD
-gwMzgwNCwtMTUzMDE3NTQxNCwtNzA0MTUwNDMsLTk4NDk4NzA0
-NiwxMjk5MDQxMTgwLC0xMDc5ODQ1ODYyLC00NzMzNzE1ODAsLT
-c5NTc0MzAxLC0xMTM3NTI3MTgxLDE2NTY5MzQ2MTIsLTE1MjY3
-OTg5NzJdfQ==
+eyJoaXN0b3J5IjpbMTU5OTA4NTMyLDEwNTAyNjI0Miw1NDEwNz
+Q3NDUsLTE3Njk0ODM4NzAsLTI2MjkyOTI3OCw2NDAxNjQ5NzYs
+MjQzNzUwMjE0LDE3MzI2Njk0ODMsLTU5NzA5OTI3MSw3MTA1OT
+MzNDIsLTExMTg4MDM4MDQsLTE1MzAxNzU0MTQsLTcwNDE1MDQz
+LC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0NTg2MiwtND
+czMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MSwxNjU2OTM0
+NjEyXX0=
 -->
