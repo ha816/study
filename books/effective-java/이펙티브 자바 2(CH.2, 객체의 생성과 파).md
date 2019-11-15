@@ -319,6 +319,8 @@ sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면
 
 C, C++처럼 메모리를 직접 관리해야 하는 언어를 쓰다가 자바처럼 가비지 컬렉터를 갖춘 언어로 넘어오면 프로그래머의 삶이 훨씬 평안해진다. 다 쓴 객체를 알아서 회수해가니 말이다. **하지만 자칫 메모리 관리에 더 이상 신경쓰지 않아도 된다고 오해할 수 있는지 절대 사실이 아니다.**
 
+**자기 메모리를 직접 관리하는 클래스라면 프로그래머는 항시 
+
 ```
 public class Stack {
 	private Object[] elements;
@@ -370,7 +372,7 @@ public Object pop() {
 메모리 누수의 세 번째 주범은 리스터 또는 콜백이다. 클라이언트가 콜백을 등록만 하고 명확히 해지 하지 않는다면, 뭔가 조치가 오지 않는한 콜백은 계속 쌓여만 갈것이다. 이때 콜백을 약한 참조(weak reference)로 저장하면 가비지 컬렉터가 즉시 수거해 간다. 대표적으로 WeakHashMap에 키로 저장하면 된다. 
 
 >핵심 정리
->메모리 누수는 겉으로 잘 드러나지 않아 시스템에 
+>메모리 누수는 겉으로 잘 드러나지 않아 시스템에 수년간 잠복하는 경우도 있다. 이런 누수는 철저한 코드 리뷰나 힙 프로파일러 같은 디버깅 도구를 동원해야만 발견되기도 한다. 그래서 이런 종류의 문제는 사전 예방법을 익혀두는 것이 매우 중요하다.
 
 
 
@@ -427,11 +429,11 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0ODk5MDI3Miw1OTU0NTMxMzEsMTA3Mj
-Y1NTYxNCwxMDUwMjYyNDIsNTQxMDc0NzQ1LC0xNzY5NDgzODcw
-LC0yNjI5MjkyNzgsNjQwMTY0OTc2LDI0Mzc1MDIxNCwxNzMyNj
-Y5NDgzLC01OTcwOTkyNzEsNzEwNTkzMzQyLC0xMTE4ODAzODA0
-LC0xNTMwMTc1NDE0LC03MDQxNTA0MywtOTg0OTg3MDQ2LDEyOT
-kwNDExODAsLTEwNzk4NDU4NjIsLTQ3MzM3MTU4MCwtNzk1NzQz
-MDFdfQ==
+eyJoaXN0b3J5IjpbLTIxMzc4NjUyNzcsNTk1NDUzMTMxLDEwNz
+I2NTU2MTQsMTA1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OTQ4Mzg3
+MCwtMjYyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQsMTczMj
+Y2OTQ4MywtNTk3MDk5MjcxLDcxMDU5MzM0MiwtMTExODgwMzgw
+NCwtMTUzMDE3NTQxNCwtNzA0MTUwNDMsLTk4NDk4NzA0NiwxMj
+k5MDQxMTgwLC0xMDc5ODQ1ODYyLC00NzMzNzE1ODAsLTc5NTc0
+MzAxXX0=
 -->
