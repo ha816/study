@@ -323,6 +323,12 @@ C, C++처럼 메모리를 직접 관리해야 하는 언어를 쓰다가 자바�
 public class Stack {
 	private Object[] elements;
 	private int size = 0;
+	...
+	public Object pop() {
+		if (size == 0){throw EmptyStackException()};
+		return elements[--size]
+	}
+	...
 }
 ```
 
@@ -373,11 +379,11 @@ public class Stack {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzkzMDYxNjIsLTI2MjkyOTI3OCw2ND
-AxNjQ5NzYsMjQzNzUwMjE0LDE3MzI2Njk0ODMsLTU5NzA5OTI3
-MSw3MTA1OTMzNDIsLTExMTg4MDM4MDQsLTE1MzAxNzU0MTQsLT
-cwNDE1MDQzLC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0
-NTg2MiwtNDczMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MS
-wxNjU2OTM0NjEyLC0xNTI2Nzk4OTcyLC00NTMxNDEwMTEsMzI5
-MjYzNDIwXX0=
+eyJoaXN0b3J5IjpbMTgyMzY2Nzk0NywtMjYyOTI5Mjc4LDY0MD
+E2NDk3NiwyNDM3NTAyMTQsMTczMjY2OTQ4MywtNTk3MDk5Mjcx
+LDcxMDU5MzM0MiwtMTExODgwMzgwNCwtMTUzMDE3NTQxNCwtNz
+A0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1
+ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3MTgxLD
+E2NTY5MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1MzE0MTAxMSwzMjky
+NjM0MjBdfQ==
 -->
