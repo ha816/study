@@ -315,6 +315,8 @@ sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면
 이번 Item 6은 방어적 복사(defensive copy)를 다루는 Item 50 과는 대조적이다. 이번 Item의 주제가 `기존 객체를 재사용해야 한다면 새로운 객체를 만들지 마라`라면,  Item 50은 `새로운 객체를 만들어야 한다면 기존 객체를 재사용하지마라`다. 방어적 복사가 필요한 상황에서 객체를 재사용했을때 발생하는 피해는 불필요하게 객체를 반복해서 생성했을때의 피해보다 훨씬 크다는 사실을 명심하자. 방어적 복사에 실패하면 언제 터져 나올지 모르는 논리적 오류와 보안의 구멍으로 이어지지만, 불필요한 객체 생성은 단지 코드 형태와 성능에만 영향을 준다. 
 
 
+## Item7. 불필요한 객체 생성을 피하라.
+
 
 
 
@@ -358,11 +360,11 @@ sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMjY2OTQ4MywtNTk3MDk5MjcxLDcxMD
-U5MzM0MiwtMTExODgwMzgwNCwtMTUzMDE3NTQxNCwtNzA0MTUw
-NDMsLTk4NDk4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1ODYyLC
-00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3MTgxLDE2NTY5
-MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1MzE0MTAxMSwzMjkyNjM0Mj
-AsNTA3NDQ4Mzg3LC0yMDUzNTU1MTc0LDkwOTIxMzU4NCwtMjA4
-ODQyODgxNV19
+eyJoaXN0b3J5IjpbMjQzNzUwMjE0LDE3MzI2Njk0ODMsLTU5Nz
+A5OTI3MSw3MTA1OTMzNDIsLTExMTg4MDM4MDQsLTE1MzAxNzU0
+MTQsLTcwNDE1MDQzLC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMT
+A3OTg0NTg2MiwtNDczMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUy
+NzE4MSwxNjU2OTM0NjEyLC0xNTI2Nzk4OTcyLC00NTMxNDEwMT
+EsMzI5MjYzNDIwLDUwNzQ0ODM4NywtMjA1MzU1NTE3NCw5MDky
+MTM1ODRdfQ==
 -->
