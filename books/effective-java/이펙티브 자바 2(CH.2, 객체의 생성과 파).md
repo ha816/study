@@ -318,6 +318,8 @@ sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면
 ## Item7. 다 쓴 객체 참조를 해제하라. 
 
 C, C++처럼 메모리를 직접 관리해야 하는 언어를 쓰다가 자바처럼 가비지 컬렉터를 갖춘 언어로 넘어오면 프로그래머의 삶이 훨씬 평안해진다. 다 쓴 객체를 알아서 회수해가니 말이다. **하지만 자칫 메모리 관리에 더 이상 신경쓰지 않아도 된다고 오해할 수 있는지 절대 사실이 아니다.**
+₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩₩
+
 
 
  
@@ -365,11 +367,11 @@ C, C++처럼 메모리를 직접 관리해야 하는 언어를 쓰다가 자바�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MjkyOTI3OCw2NDAxNjQ5NzYsMjQzNz
-UwMjE0LDE3MzI2Njk0ODMsLTU5NzA5OTI3MSw3MTA1OTMzNDIs
-LTExMTg4MDM4MDQsLTE1MzAxNzU0MTQsLTcwNDE1MDQzLC05OD
-Q5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0NTg2MiwtNDczMzcx
-NTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MSwxNjU2OTM0NjEyLC
-0xNTI2Nzk4OTcyLC00NTMxNDEwMTEsMzI5MjYzNDIwLDUwNzQ0
-ODM4N119
+eyJoaXN0b3J5IjpbMTQ5ODgxMjI0MywtMjYyOTI5Mjc4LDY0MD
+E2NDk3NiwyNDM3NTAyMTQsMTczMjY2OTQ4MywtNTk3MDk5Mjcx
+LDcxMDU5MzM0MiwtMTExODgwMzgwNCwtMTUzMDE3NTQxNCwtNz
+A0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1
+ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3MTgxLD
+E2NTY5MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1MzE0MTAxMSwzMjky
+NjM0MjBdfQ==
 -->
