@@ -344,14 +344,17 @@ public class Stack {
 해법은 해당 참조를 다 썼을때 null처리(참조 해제)하면 된다. 
 
 ```
-	public Object pop() {
-		if (size == 0){throw EmptyStackException()};
-		Object result = elements[--size];
-		element
-	}
-	...
+public Object pop() {
+	if (size == 0){throw EmptyStackException()};
+	Object result = elements[--size];
+	element[size] = null; //다 쓴객체 해제
+	return result;
 }
 ```
+
+다 쓴 참조를 null처리하면 다른 이점도 따라온다. 만약 null 처리한 참조를 실수로 사용하려하면 즉시 NullPointe
+
+
 
 
 
@@ -400,11 +403,11 @@ public class Stack {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTA4NTMyLDEwNTAyNjI0Miw1NDEwNz
-Q3NDUsLTE3Njk0ODM4NzAsLTI2MjkyOTI3OCw2NDAxNjQ5NzYs
-MjQzNzUwMjE0LDE3MzI2Njk0ODMsLTU5NzA5OTI3MSw3MTA1OT
-MzNDIsLTExMTg4MDM4MDQsLTE1MzAxNzU0MTQsLTcwNDE1MDQz
-LC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0NTg2MiwtND
-czMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MSwxNjU2OTM0
-NjEyXX0=
+eyJoaXN0b3J5IjpbLTEzNDQ5MzcxMjksMTA1MDI2MjQyLDU0MT
+A3NDc0NSwtMTc2OTQ4Mzg3MCwtMjYyOTI5Mjc4LDY0MDE2NDk3
+NiwyNDM3NTAyMTQsMTczMjY2OTQ4MywtNTk3MDk5MjcxLDcxMD
+U5MzM0MiwtMTExODgwMzgwNCwtMTUzMDE3NTQxNCwtNzA0MTUw
+NDMsLTk4NDk4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1ODYyLC
+00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3MTgxLDE2NTY5
+MzQ2MTJdfQ==
 -->
