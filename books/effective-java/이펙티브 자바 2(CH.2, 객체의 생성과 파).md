@@ -354,7 +354,7 @@ public Object pop() {
 
 다 쓴 참조를 null처리하면 다른 이점도 따라온다. 만약 null 처리한 참조를 실수로 사용하려하면 즉시 NullPointerException을 던지며 종료된다(미리 null 처리하지 않았다면 아무 내색없이 무언가 잘못된 일을 수행할것이다.) 프로그램 오류는 가능한 조기에 발견하는게 좋다. 
 
-그렇지만 null처
+그렇지만 모든 객체를 사용 후에 null처리하는 것은 그럴 필요도 없고 코드도 지저분해지기 때문에 바람직하지 않다. **객체 참조를 null 처리하는것은 예외적인 경우여야 한다.** 
 
 
 
@@ -406,11 +406,11 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIyNzc0MTc3LDEwNTAyNjI0Miw1NDEwNz
-Q3NDUsLTE3Njk0ODM4NzAsLTI2MjkyOTI3OCw2NDAxNjQ5NzYs
-MjQzNzUwMjE0LDE3MzI2Njk0ODMsLTU5NzA5OTI3MSw3MTA1OT
-MzNDIsLTExMTg4MDM4MDQsLTE1MzAxNzU0MTQsLTcwNDE1MDQz
-LC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0NTg2MiwtND
-czMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MSwxNjU2OTM0
-NjEyXX0=
+eyJoaXN0b3J5IjpbMTA3MjY1NTYxNCwxMDUwMjYyNDIsNTQxMD
+c0NzQ1LC0xNzY5NDgzODcwLC0yNjI5MjkyNzgsNjQwMTY0OTc2
+LDI0Mzc1MDIxNCwxNzMyNjY5NDgzLC01OTcwOTkyNzEsNzEwNT
+kzMzQyLC0xMTE4ODAzODA0LC0xNTMwMTc1NDE0LC03MDQxNTA0
+MywtOTg0OTg3MDQ2LDEyOTkwNDExODAsLTEwNzk4NDU4NjIsLT
+Q3MzM3MTU4MCwtNzk1NzQzMDEsLTExMzc1MjcxODEsMTY1Njkz
+NDYxMl19
 -->
