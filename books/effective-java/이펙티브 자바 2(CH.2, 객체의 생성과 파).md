@@ -338,6 +338,8 @@ public class Stack {
 ```
 위의 코드를 테스트 해보면 특별한 문제 없이 잘 동작할 것이다. 하지만 꼭꼭 숨겨져 있는 문제가 있는데 바로 `메모리누수(memory leak)`이다. 이 스택을 사용하는 프로그램을 쓰다보면 언젠가 가비지 컬랙션 활동과 메모리 사용량이 늘어나 성능이 저하될 것이다. 
 
+자 그럼 앞의 코드에서 메모리 누수는 어디서 일어날까? 이 코드에서는 스택이 커졌다 줄어들었을때(pop) 스택에서 꺼내진 객체들을 가비지 컬렉터가 회수 하지 않는다. 
+
 
 
 
@@ -386,11 +388,11 @@ public class Stack {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0ODE1MDk3NCwtMTc2OTQ4Mzg3MCwtMj
-YyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQsMTczMjY2OTQ4
-MywtNTk3MDk5MjcxLDcxMDU5MzM0MiwtMTExODgwMzgwNCwtMT
-UzMDE3NTQxNCwtNzA0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MDQx
-MTgwLC0xMDc5ODQ1ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAxLC
-0xMTM3NTI3MTgxLDE2NTY5MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1
-MzE0MTAxMV19
+eyJoaXN0b3J5IjpbNTQxMDc0NzQ1LC0xNzY5NDgzODcwLC0yNj
+I5MjkyNzgsNjQwMTY0OTc2LDI0Mzc1MDIxNCwxNzMyNjY5NDgz
+LC01OTcwOTkyNzEsNzEwNTkzMzQyLC0xMTE4ODAzODA0LC0xNT
+MwMTc1NDE0LC03MDQxNTA0MywtOTg0OTg3MDQ2LDEyOTkwNDEx
+ODAsLTEwNzk4NDU4NjIsLTQ3MzM3MTU4MCwtNzk1NzQzMDEsLT
+ExMzc1MjcxODEsMTY1NjkzNDYxMiwtMTUyNjc5ODk3MiwtNDUz
+MTQxMDExXX0=
 -->
