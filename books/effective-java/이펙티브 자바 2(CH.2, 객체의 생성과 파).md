@@ -354,7 +354,9 @@ public Object pop() {
 
 다 쓴 참조를 null처리하면 다른 이점도 따라온다. 만약 null 처리한 참조를 실수로 사용하려하면 즉시 NullPointerException을 던지며 종료된다(미리 null 처리하지 않았다면 아무 내색없이 무언가 잘못된 일을 수행할것이다.) 프로그램 오류는 가능한 조기에 발견하는게 좋다. 
 
-그렇지만 모든 객체를 사용 후에 null처리하는 것은 그럴 필요도 없고 코드도 지저분해지기 때문에 바람직하지 않다. **객체 참조를 null 처리하는것은 예외적인 경우여야 한다.** 다
+그렇지만 모든 객체를 사용 후에 null처리하는 것은 그럴 필요도 없고 코드도 지저분해지기 때문에 바람직하지 않다. **객체 참조를 null 처리하는것은 예외적인 경우여야 한다.** 다 쓴 참조(obsolete reference)를 해제하는 가장 좋은 방법은 그 참조를 다음  변수를 유효범위(scope) 밖으로 밀어내는 것이다. 이 변수의 범위를 최소가 되게 정의했다면 자연스럽게 이루어 진다. 
+
+
 
 
 
@@ -406,11 +408,11 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1Mzc2MTM3OCwxMDcyNjU1NjE0LDEwNT
-AyNjI0Miw1NDEwNzQ3NDUsLTE3Njk0ODM4NzAsLTI2MjkyOTI3
-OCw2NDAxNjQ5NzYsMjQzNzUwMjE0LDE3MzI2Njk0ODMsLTU5Nz
-A5OTI3MSw3MTA1OTMzNDIsLTExMTg4MDM4MDQsLTE1MzAxNzU0
-MTQsLTcwNDE1MDQzLC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMT
-A3OTg0NTg2MiwtNDczMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUy
-NzE4MV19
+eyJoaXN0b3J5IjpbNTk1NDUzMTMxLDEwNzI2NTU2MTQsMTA1MD
+I2MjQyLDU0MTA3NDc0NSwtMTc2OTQ4Mzg3MCwtMjYyOTI5Mjc4
+LDY0MDE2NDk3NiwyNDM3NTAyMTQsMTczMjY2OTQ4MywtNTk3MD
+k5MjcxLDcxMDU5MzM0MiwtMTExODgwMzgwNCwtMTUzMDE3NTQx
+NCwtNzA0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MDQxMTgwLC0xMD
+c5ODQ1ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAxLC0xMTM3NTI3
+MTgxXX0=
 -->
