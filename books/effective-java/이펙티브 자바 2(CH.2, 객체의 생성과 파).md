@@ -356,6 +356,7 @@ public Object pop() {
 
 그렇지만 모든 객체를 사용 후에 null처리하는 것은 그럴 필요도 없고 코드도 지저분해지기 때문에 바람직하지 않다. **객체 참조를 null 처리하는것은 예외적인 경우여야 한다.** 다 쓴 참조(obsolete reference)를 해제하는 가장 좋은 방법은 그 참조를 다음  변수를 유효범위(scope) 밖으로 밀어내는 것이다. 이 변수의 범위를 최소가 되게 정의했다면 자연스럽게 이루어 진다. 
 
+그렇다면 null 처리는 언제 해야 할까? 앞서 보았던 Stack 클래스가 메모리 누수에 취약한 이유는 바로 스택이 자기 메모리를 직접 관리 하기때문이다. 스택은 객체 자체가 아니라 객체 참조를 담는 elements 배열로 저장소 풀을 만들어 원소들을 관리한다. 그리고 배열의 활성 영역에 속하는 
 
 
 
@@ -409,7 +410,7 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MTMzOTM2Myw1OTU0NTMxMzEsMTA3Mj
+eyJoaXN0b3J5IjpbLTQyMTA0MDYzNSw1OTU0NTMxMzEsMTA3Mj
 Y1NTYxNCwxMDUwMjYyNDIsNTQxMDc0NzQ1LC0xNzY5NDgzODcw
 LC0yNjI5MjkyNzgsNjQwMTY0OTc2LDI0Mzc1MDIxNCwxNzMyNj
 Y5NDgzLC01OTcwOTkyNzEsNzEwNTkzMzQyLC0xMTE4ODAzODA0
