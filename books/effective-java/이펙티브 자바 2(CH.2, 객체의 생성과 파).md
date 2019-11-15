@@ -338,7 +338,7 @@ public class Stack {
 ```
 위의 코드를 테스트 해보면 특별한 문제 없이 잘 동작할 것이다. 하지만 꼭꼭 숨겨져 있는 문제가 있는데 바로 `메모리누수(memory leak)`이다. 이 스택을 사용하는 프로그램을 쓰다보면 언젠가 가비지 컬랙션 활동과 메모리 사용량이 늘어나 성능이 저하될 것이다. 
 
-자 그럼 앞의 코드에서 메모리 누수는 어디서 일어날까? 이 코드에서는 스택이 커졌다 줄어들었을때(pop) 스택에서 꺼내진 객체들을 가비지 컬렉터가 회수 하지 않는다. 심지어 프로그램에서 그 객체를 더 이상 사용하지 않아도 말이다. 왜냐하면 이 스택이 그 객체들의 다 쓴 참조(obsolete reference)를 여전히 가지고 있기 때문이다. 다 쓴 참조란 문자 그대로 앞으로 다시 쓰지 않을 참조를 뜻한다. elements 배열의 활성 영역 밖의 참조들이 모두 여기에 해당한다. 
+자 그럼 앞의 코드에서 메모리 누수는 어디서 일어날까? 이 코드에서는 스택이 커졌다 줄어들었을때(pop) 스택에서 꺼내진 객체들을 가비지 컬렉터가 회수 하지 않는다. 심지어 프로그램에서 그 객체를 더 이상 사용하지 않아도 말이다. 왜냐하면 이 스택이 그 객체들의 다 쓴 참조(obsolete reference)를 여전히 가지고 있기 때문이다. 다 쓴 참조란 문자 그대로 앞으로 다시 쓰지 않을 참조를 뜻한다. elements 배열의 활성 영역은 인덱스가 size 보다 작은 영역을 말하고 그 밖의 여역에 해당참조들이 모두 여기에 해당한다. 
 
 
 
@@ -388,7 +388,7 @@ public class Stack {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTEzNzA0Myw1NDEwNzQ3NDUsLTE3Nj
+eyJoaXN0b3J5IjpbMTkwMTI4Nzc2Miw1NDEwNzQ3NDUsLTE3Nj
 k0ODM4NzAsLTI2MjkyOTI3OCw2NDAxNjQ5NzYsMjQzNzUwMjE0
 LDE3MzI2Njk0ODMsLTU5NzA5OTI3MSw3MTA1OTMzNDIsLTExMT
 g4MDM4MDQsLTE1MzAxNzU0MTQsLTcwNDE1MDQzLC05ODQ5ODcw
