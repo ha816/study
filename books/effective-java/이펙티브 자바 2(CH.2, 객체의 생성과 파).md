@@ -319,7 +319,6 @@ sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면
 
 C, C++처럼 메모리를 직접 관리해야 하는 언어를 쓰다가 자바처럼 가비지 컬렉터를 갖춘 언어로 넘어오면 프로그래머의 삶이 훨씬 평안해진다. 다 쓴 객체를 알아서 회수해가니 말이다. **하지만 자칫 메모리 관리에 더 이상 신경쓰지 않아도 된다고 오해할 수 있는지 절대 사실이 아니다.**
 
-**자기 메모리를 직접 관리하는 클래스라면 프로그래머는 항시 
 
 ```
 public class Stack {
@@ -341,7 +340,9 @@ public class Stack {
 자 그럼 앞의 코드에서 메모리 누수는 어디서 일어날까? 이 코드에서는 스택이 커졌다 줄어들었을때(pop) 스택에서 꺼내진 객체들을 가비지 컬렉터가 회수 하지 않는다. 심지어 프로그램에서 그 객체를 더 이상 사용하지 않아도 말이다. 왜냐하면 이 스택이 그 객체들의 다 쓴 참조(obsolete reference)를 여전히 가지고 있기 때문이다. 다 쓴 참조란 문자 그대로 앞으로 다시 쓰지 않을 참조를 뜻한다. elements 배열의 활성 영역은 인덱스가 size 보다 작은 영역을 말하고 그 밖의 영역에 해당하는 참조들이 모두 
 다 쓴 참조(obsolete reference)에 해당한다. 
 
-가비지 컬렉션 언에서는 (의도치 않게 객체를 살려두는) 메모리 누수를 찾기가 아주 어렵다. 객체 참조 하나를 살려두면 가비지 컬렉터는 그 객체 뿐만이 아니라 그 객체가 참조하는 모든 객체(그리고 또 그 객체가 참조하는 모든 객체 ...)를 회수해가지 못한다. 그래서 단 몇 개의 객체가 매우 많은 객체를 회수하지 못하게 막을수 있고 이는 잠재적으로 성능에 악영향을 줄 수 있다. 
+**자기 메모리를 직접 관리하는 클래스**
+
+가비지 컬렉션 안에서는 (의도치 않게 객체를 살려두는) 메모리 누수를 찾기가 아주 어렵다. 객체 참조 하나를 살려두면 가비지 컬렉터는 그 객체 뿐만이 아니라 그 객체가 참조하는 모든 객체(그리고 또 그 객체가 참조하는 모든 객체 ...)를 회수해가지 못한다. 그래서 단 몇 개의 객체가 매우 많은 객체를 회수하지 못하게 막을수 있고 이는 잠재적으로 성능에 악영향을 줄 수 있다. 
 
 해법은 해당 참조를 다 썼을때 null처리(참조 해제)하면 된다. 
 
@@ -429,11 +430,11 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzc4NjUyNzcsNTk1NDUzMTMxLDEwNz
-I2NTU2MTQsMTA1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OTQ4Mzg3
-MCwtMjYyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQsMTczMj
-Y2OTQ4MywtNTk3MDk5MjcxLDcxMDU5MzM0MiwtMTExODgwMzgw
-NCwtMTUzMDE3NTQxNCwtNzA0MTUwNDMsLTk4NDk4NzA0NiwxMj
-k5MDQxMTgwLC0xMDc5ODQ1ODYyLC00NzMzNzE1ODAsLTc5NTc0
-MzAxXX0=
+eyJoaXN0b3J5IjpbMTkzNTg4ODAxNiw1OTU0NTMxMzEsMTA3Mj
+Y1NTYxNCwxMDUwMjYyNDIsNTQxMDc0NzQ1LC0xNzY5NDgzODcw
+LC0yNjI5MjkyNzgsNjQwMTY0OTc2LDI0Mzc1MDIxNCwxNzMyNj
+Y5NDgzLC01OTcwOTkyNzEsNzEwNTkzMzQyLC0xMTE4ODAzODA0
+LC0xNTMwMTc1NDE0LC03MDQxNTA0MywtOTg0OTg3MDQ2LDEyOT
+kwNDExODAsLTEwNzk4NDU4NjIsLTQ3MzM3MTU4MCwtNzk1NzQz
+MDFdfQ==
 -->
