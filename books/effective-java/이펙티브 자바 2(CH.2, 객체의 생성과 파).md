@@ -341,7 +341,7 @@ public class Stack {
 자 그럼 앞의 코드에서 메모리 누수는 어디서 일어날까? 이 코드에서는 스택이 커졌다 줄어들었을때(pop) 스택에서 꺼내진 객체들을 가비지 컬렉터가 회수 하지 않는다. 심지어 프로그램에서 그 객체를 더 이상 사용하지 않아도 말이다. 왜냐하면 이 스택이 그 객체들의 다 쓴 참조(obsolete reference)를 여전히 가지고 있기 때문이다. 다 쓴 참조란 문자 그대로 앞으로 다시 쓰지 않을 참조를 뜻한다. elements 배열의 활성 영역은 인덱스가 size 보다 작은 영역을 말하고 그 밖의 영역에 해당하는 참조들이 모두 
 다 쓴 참조(obsolete reference)에 해당한다. 
 
-가비지 컬렉션 언에서는 (의도치 않게 객체를 살려두는) 메모리 누수를 찾기가 아주 어렵다. 객체 참조 하나를 살려두면 가비지 컬렉터는 그 객체 뿐만이 아니라 그 객체가 참조하는 모든 객체
+가비지 컬렉션 언에서는 (의도치 않게 객체를 살려두는) 메모리 누수를 찾기가 아주 어렵다. 객체 참조 하나를 살려두면 가비지 컬렉터는 그 객체 뿐만이 아니라 그 객체가 참조하는 모든 객체(그리고 또 그 객체가 참조하는 모든 객체 ...)를 회수해가지 못한다. 그래서 단 몇 개의 객체가 매우 많은 객체를 회수하지 못하게 막을수 있고 이는 잠재적으로 성능에 악영향을 줄 수 있다. 
 
 
 
@@ -391,7 +391,7 @@ public class Stack {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgwNjI5MTcxLDU0MTA3NDc0NSwtMTc2OT
+eyJoaXN0b3J5IjpbMTA1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OT
 Q4Mzg3MCwtMjYyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQs
 MTczMjY2OTQ4MywtNTk3MDk5MjcxLDcxMDU5MzM0MiwtMTExOD
 gwMzgwNCwtMTUzMDE3NTQxNCwtNzA0MTUwNDMsLTk4NDk4NzA0
