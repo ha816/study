@@ -356,7 +356,11 @@ public Object pop() {
 
 그렇지만 모든 객체를 사용 후에 null처리하는 것은 그럴 필요도 없고 코드도 지저분해지기 때문에 바람직하지 않다. **객체 참조를 null 처리하는것은 예외적인 경우여야 한다.** 다 쓴 참조(obsolete reference)를 해제하는 가장 좋은 방법은 그 참조를 다음  변수를 유효범위(scope) 밖으로 밀어내는 것이다. 이 변수의 범위를 최소가 되게 정의했다면 자연스럽게 이루어 진다. 
 
-그렇다면 null 처리는 언제 해야 할까? 앞서 보았던 Stack 클래스가 메모리 누수에 취약한 이유는 바로 스택이 자기 메모리를 직접 관리 하기때문이다. 스택은 객체 자체가 아니라 객체 참조를 담는 elements 배열로 저장소 풀을 만들어 원소들을 관리한다. 그리고 배열의 활성 영역에 속하는 객체는 사용하고 비활성 영역은 사용하지 않는다. 문제는 가비지 컬렉터가 이 사실을 알길이 없다. 가비지 컬렉터가 보기에는 비활성 영역에서 참조하는 객체도 똑같이 유효한 객체다. 비활성 영역 객체가 쓸모 없다는 건 프로그래머만 아는 사실이다. 따라서 비활성 영역이 되는 순간
+그렇다면 null 처리는 언제 해야 할까? 앞서 보았던 Stack 클래스가 메모리 누수에 취약한 이유는 바로 스택이 자기 메모리를 직접 관리 하기때문이다. 스택은 객체 자체가 아니라 객체 참조를 담는 elements 배열로 저장소 풀을 만들어 원소들을 관리한다. 그리고 배열의 활성 영역에 속하는 객체는 사용하고 비활성 영역은 사용하지 않는다. 문제는 가비지 컬렉터가 이 사실을 알길이 없다. 가비지 컬렉터가 보기에는 비활성 영역에서 참조하는 객체도 똑같이 유효한 객체다. 비활성 영역 객체가 쓸모 없다는 건 프로그래머만 아는 사실이다. 따라서 비활성 영역이 되는 순간 null 처리해서 해당 객체를 쓰지 않음을 가비지 컬렉터에게 알려줘야 한다. 
+
+일반적으로 **자기 메모리를 직접 관리하는 클래스라면 프로그래머는 항시 메모리 누수에 주의해야 한다. 원소를 다 사용한 즉시 그 원소가 참조한 객체들을 다 null 처리해줘야 한다.** 
+
+
 
 
 
@@ -410,11 +414,11 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTE0NjYwNzUsNTk1NDUzMTMxLDEwNz
-I2NTU2MTQsMTA1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OTQ4Mzg3
-MCwtMjYyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQsMTczMj
-Y2OTQ4MywtNTk3MDk5MjcxLDcxMDU5MzM0MiwtMTExODgwMzgw
-NCwtMTUzMDE3NTQxNCwtNzA0MTUwNDMsLTk4NDk4NzA0NiwxMj
-k5MDQxMTgwLC0xMDc5ODQ1ODYyLC00NzMzNzE1ODAsLTc5NTc0
-MzAxXX0=
+eyJoaXN0b3J5IjpbMzc5NzYzMDMsNTk1NDUzMTMxLDEwNzI2NT
+U2MTQsMTA1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OTQ4Mzg3MCwt
+MjYyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQsMTczMjY2OT
+Q4MywtNTk3MDk5MjcxLDcxMDU5MzM0MiwtMTExODgwMzgwNCwt
+MTUzMDE3NTQxNCwtNzA0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MD
+QxMTgwLC0xMDc5ODQ1ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAx
+XX0=
 -->
