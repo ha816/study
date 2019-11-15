@@ -360,7 +360,12 @@ public Object pop() {
 
 일반적으로 **자기 메모리를 직접 관리하는 클래스라면 프로그래머는 항시 메모리 누수에 주의해야 한다. 원소를 다 사용한 즉시 그 원소가 참조한 객체들을 다 null 처리해줘야 한다.** 
 
-**캐시 역시 메모리 누스를 일으키는 주범이다.** 객체 참조를 캐시에 넣고나서, 이 사실을 잊은채 그 객체를 다 쓴 뒤로도 한참을 그냥 놔두는 일을 자주 접할 수 있다. 해법은 다양하다. 
+### 캐시
+
+**캐시 역시 메모리 누스를 일으키는 주범이다.** 객체 참조를 캐시에 넣고나서, 이 사실을 잊은채 그 객체를 다 쓴 뒤로도 한참을 그냥 놔두는 일을 자주 접할 수 있다. 해법은 다양하다. 운 좋게 캐시 외부에서 키를 참조하는 동안만(값이 아닌) 엔트리가 살아 있는 캐시가 필요한 상황이라면 WeakHashMap을 사용해 캐시를 만들자. 다 쓴 엔트리는 즉시 자동으로 제거된다. 단 WeakHashMap은 이러한 상황에서만 유용하다. 
+캐시를 만들때보
+
+
 
 
 
@@ -415,7 +420,7 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzODc3OTg5LDU5NTQ1MzEzMSwxMDcyNj
+eyJoaXN0b3J5IjpbNDc2OTA5Njc5LDU5NTQ1MzEzMSwxMDcyNj
 U1NjE0LDEwNTAyNjI0Miw1NDEwNzQ3NDUsLTE3Njk0ODM4NzAs
 LTI2MjkyOTI3OCw2NDAxNjQ5NzYsMjQzNzUwMjE0LDE3MzI2Nj
 k0ODMsLTU5NzA5OTI3MSw3MTA1OTMzNDIsLTExMTg4MDM4MDQs
