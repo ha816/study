@@ -336,7 +336,7 @@ public class Stack {
 	...
 }
 ```
-위의 코드를 테스트 해보면 특별한 문제 없이 잘
+위의 코드를 테스트 해보면 특별한 문제 없이 잘 동작할 것이다. 
 
 
 
@@ -386,7 +386,7 @@ public class Stack {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjIwNTM3NzEsLTI2MjkyOTI3OCw2ND
+eyJoaXN0b3J5IjpbLTE3Njk0ODM4NzAsLTI2MjkyOTI3OCw2ND
 AxNjQ5NzYsMjQzNzUwMjE0LDE3MzI2Njk0ODMsLTU5NzA5OTI3
 MSw3MTA1OTMzNDIsLTExMTg4MDM4MDQsLTE1MzAxNzU0MTQsLT
 cwNDE1MDQzLC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0
