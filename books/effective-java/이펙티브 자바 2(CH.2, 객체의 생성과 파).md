@@ -336,7 +336,7 @@ public class Stack {
 	...
 }
 ```
-위의 코드를 테스트 해보면 특별한 문제 없이 잘 동작할 것이다. 
+위의 코드를 테스트 해보면 특별한 문제 없이 잘 동작할 것이다. 하지만 꼭꼭 숨겨져 있는 문제가 있는데 바로 `메모리누수(memory leak)`이다. 이 스택을 사용하는 프로그램을 쓰다보면 언젠가 가비지 컬랙션 활동과 메모리 사용량이 늘어나 성능이 저하될 것이다. 
 
 
 
@@ -386,11 +386,11 @@ public class Stack {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njk0ODM4NzAsLTI2MjkyOTI3OCw2ND
-AxNjQ5NzYsMjQzNzUwMjE0LDE3MzI2Njk0ODMsLTU5NzA5OTI3
-MSw3MTA1OTMzNDIsLTExMTg4MDM4MDQsLTE1MzAxNzU0MTQsLT
-cwNDE1MDQzLC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0
-NTg2MiwtNDczMzcxNTgwLC03OTU3NDMwMSwtMTEzNzUyNzE4MS
-wxNjU2OTM0NjEyLC0xNTI2Nzk4OTcyLC00NTMxNDEwMTEsMzI5
-MjYzNDIwXX0=
+eyJoaXN0b3J5IjpbMTg0ODE1MDk3NCwtMTc2OTQ4Mzg3MCwtMj
+YyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQsMTczMjY2OTQ4
+MywtNTk3MDk5MjcxLDcxMDU5MzM0MiwtMTExODgwMzgwNCwtMT
+UzMDE3NTQxNCwtNzA0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MDQx
+MTgwLC0xMDc5ODQ1ODYyLC00NzMzNzE1ODAsLTc5NTc0MzAxLC
+0xMTM3NTI3MTgxLDE2NTY5MzQ2MTIsLTE1MjY3OTg5NzIsLTQ1
+MzE0MTAxMV19
 -->
