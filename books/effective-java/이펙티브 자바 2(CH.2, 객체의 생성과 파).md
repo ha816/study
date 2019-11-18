@@ -387,7 +387,7 @@ finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비�
 
 굼뜬 finalizer 처리는 현업에서도 실제로 문제를 일으킨다. 클래스에 finalizer를 달아두면 그 인스턴스의 자원 회수는 제멋대로 지연될 수 있다. 한편 cleaner는 자신을 수행할 스레드를 제어할 수 있다는 점에서 조금 낫다. 하지만 여전히 백그라운드에서 수행되며 컬렉터의 통제하에 있으니 즉각 수행되리라는 보장은 없다. 
 
-자
+자바 언어 명세는 finalizer와 수행 시점뿐 아니라 수행 여부조차 보장하지 않는다. 접근할 수 없는 일부 객체에 딸린 종료 작업을 전혀 수행하지 못한채 프로그램이 중단될 수도 있다는 이야기다. 
 
 
 
@@ -445,7 +445,7 @@ finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2Mjk3Mzg2MywtMTcwMzI5MDYsLTE3MD
+eyJoaXN0b3J5IjpbLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MD
 U5OTk2NDcsLTcyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4
 NywtMTgwMTI0MTkxMiwxOTM1ODg4MDE2LDU5NTQ1MzEzMSwxMD
 cyNjU1NjE0LDEwNTAyNjI0Miw1NDEwNzQ3NDUsLTE3Njk0ODM4
