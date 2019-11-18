@@ -8,8 +8,10 @@
 
 Comparable은 비교하려는 객체간의 자연스러운 순서로 정렬할때 사용하고 Comparator는 원하는 대로 정렬 순서를 정하고 싶을 때 사용한다. 
 
+Arrays.sort, Collections.sort 등 정렬 메서드를 사용할때는 정렬할 객체들이 Comparable 인터페이스를 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTUxMjkxLDE4NjM2MzA0OTVdfQ==
+eyJoaXN0b3J5IjpbLTYzNDcxMjc1OSwxODYzNjMwNDk1XX0=
 -->
