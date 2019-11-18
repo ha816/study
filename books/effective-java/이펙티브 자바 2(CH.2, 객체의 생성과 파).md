@@ -383,7 +383,7 @@ C++ 프로그래머라면 주의할 내용이 있다. 자바의 finalizer와 cle
 
 **finalizer와 cleaner는 즉시 수행된다는 보장이 없다.** 객체의 접근 할 수 없게 된 후 finalizer나 cleaner가 실행되기 까지 얼마나 걸릴지 알 수 없다. **즉 finalizer와 cleaner로는 제때 실행되어야 하는 작업을 절대 할 수 없다.** 예를 들어 파일 닫기를 finalizer와 cleaner에 맡기면 중대한 오류를 일으킬 수 있다. 시스템이 동시에 열 수 있는 파일 개수에는 한계가 있기 때문이다. 시스템이 finalizer와 cleaner 실행을 게을리해서 파일을 계속 열어 둔다면 새로운 파일을 열지 못해 프로그램이 실패할 수 있다. 
 
-finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비지 컬렉터 알고리즘에 달렸으며, 이는 가비지 컬렉터 구현마다 천차만별이다. finalizer와 cleaner 수행 시점에 의존하는 프로그램의 동작 또한 마찬가지다. 
+finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비지 컬렉터 알고리즘에 달렸으며, 이는 가비지 컬렉터 구현마다 천차만별이다. finalizer와 cleaner 수행 시점에 의존하는 프로그램의 동작 또한 마찬가지다. 여러분이 테스트한 JVM에서는 완벽하게 동작하던 프로그램이 가장 중요한 곡객의 시스템에서는 엄청난 재앙을 일으킬지도 모른다.
 
 
 
@@ -441,11 +441,11 @@ finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDMyOTA2LC0xNzA1OTk5NjQ3LC03Mj
-Y1MjkxMjIsMTU4ODQ1MTEwLC04MzM1MzA0ODcsLTE4MDEyNDE5
-MTIsMTkzNTg4ODAxNiw1OTU0NTMxMzEsMTA3MjY1NTYxNCwxMD
-UwMjYyNDIsNTQxMDc0NzQ1LC0xNzY5NDgzODcwLC0yNjI5Mjky
-NzgsNjQwMTY0OTc2LDI0Mzc1MDIxNCwxNzMyNjY5NDgzLC01OT
-cwOTkyNzEsNzEwNTkzMzQyLC0xMTE4ODAzODA0LC0xNTMwMTc1
-NDE0XX0=
+eyJoaXN0b3J5IjpbLTE0NDg1MzQwNjIsLTE3MDMyOTA2LC0xNz
+A1OTk5NjQ3LC03MjY1MjkxMjIsMTU4ODQ1MTEwLC04MzM1MzA0
+ODcsLTE4MDEyNDE5MTIsMTkzNTg4ODAxNiw1OTU0NTMxMzEsMT
+A3MjY1NTYxNCwxMDUwMjYyNDIsNTQxMDc0NzQ1LC0xNzY5NDgz
+ODcwLC0yNjI5MjkyNzgsNjQwMTY0OTc2LDI0Mzc1MDIxNCwxNz
+MyNjY5NDgzLC01OTcwOTkyNzEsNzEwNTkzMzQyLC0xMTE4ODAz
+ODA0XX0=
 -->
