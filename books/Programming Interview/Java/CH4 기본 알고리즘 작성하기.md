@@ -16,8 +16,10 @@ Arrays.sort, Collections.sort 등 정렬 메서드를 사용할때는 정렬할 
 >퀵정 정렬 알고리즘은 어떻게 구현하는가?
 >병항 정렬 알고리즘은 어떻게 구현하는가? 
 
+#리스
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NjE1Mjg3OSwxMzE1NjkxNzgyLDIwNz
-c1NTMzNDksMTg2MzYzMDQ5NV19
+eyJoaXN0b3J5IjpbMjA1NjI4MjU2MiwxOTg2MTUyODc5LDEzMT
+U2OTE3ODIsMjA3NzU1MzM0OSwxODYzNjMwNDk1XX0=
 -->
