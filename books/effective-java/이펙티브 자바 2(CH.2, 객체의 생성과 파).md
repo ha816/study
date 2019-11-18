@@ -379,7 +379,9 @@ public Object pop() {
 
 자바는 두 가지 객체 소멸자를 제공하는데 finalizer와 cleaner가 있다. 그중 **finalizer는 예측할 수 없고, 상황에 따라 위험할 수 있어 일반적으로 불필요하다.** 또한 오동작, 낮은 성능, 이식성 문제의 원인이 되기도 한다. finalizer는 몇가지 쓰임새가 있기는 하지만 기본적으로 쓰지 말아야 한다. 그래서 자바 9세어슨 finalizer를 사용 자제(deprecated) API로 지정하고 cleaner를 그 대안으로 소개했다(하지만 자바 라이브러리에서도 finalizer를 여전히 사용한다). cleaner는 finalizer보다는 덜 위험하지만, 여전히 예측할 수 없고, 느리고, 일반적으로 불필요하다. 
 
-C++ 프로그래머라면 주의할 내용이 있다. 자바의 finalizer와 cleaner는 C++의 파괴자와 다른 개념이다. C++의 파괴자는 특정 객체와 관련된 자원을 ㅎ
+C++ 프로그래머라면 주의할 내용이 있다. 자바의 finalizer와 cleaner는 C++의 파괴자와 다른 개념이다. C++의 파괴자는 특정 객체와 관련된 자원을 회수하는 보편적인 방법이다. 자바에서는 접근할 수 없게 된 객체를 회수하는 역할을 가비지 컬렉터가 담당하고, 프로그래머에게는 아무런 작업도 요구하지 않는다. C++ 의 파괴자는 비메모리 자원을 회수하는 용도로도 쓰이는데 반면에 자바에서는 try-with-resources와 try-finally를 사용해 해결한다. 
+
+finalizer와 cleaner는 즉시 수행된다는 보장이 없다. 
 
 
 
@@ -435,11 +437,11 @@ C++ 프로그래머라면 주의할 내용이 있다. 자바의 finalizer와 cle
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk1ODgwOTAxLDE1ODg0NTExMCwtODMzNT
-MwNDg3LC0xODAxMjQxOTEyLDE5MzU4ODgwMTYsNTk1NDUzMTMx
-LDEwNzI2NTU2MTQsMTA1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OT
-Q4Mzg3MCwtMjYyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQs
-MTczMjY2OTQ4MywtNTk3MDk5MjcxLDcxMDU5MzM0MiwtMTExOD
-gwMzgwNCwtMTUzMDE3NTQxNCwtNzA0MTUwNDMsLTk4NDk4NzA0
-Nl19
+eyJoaXN0b3J5IjpbLTcyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMz
+UzMDQ4NywtMTgwMTI0MTkxMiwxOTM1ODg4MDE2LDU5NTQ1MzEz
+MSwxMDcyNjU1NjE0LDEwNTAyNjI0Miw1NDEwNzQ3NDUsLTE3Nj
+k0ODM4NzAsLTI2MjkyOTI3OCw2NDAxNjQ5NzYsMjQzNzUwMjE0
+LDE3MzI2Njk0ODMsLTU5NzA5OTI3MSw3MTA1OTMzNDIsLTExMT
+g4MDM4MDQsLTE1MzAxNzU0MTQsLTcwNDE1MDQzLC05ODQ5ODcw
+NDZdfQ==
 -->
