@@ -368,13 +368,14 @@ public Object pop() {
 **캐시 역시 메모리 누스를 일으키는 주범이다.** 객체 참조를 캐시에 넣고나서, 이 사실을 잊은채 그 객체를 다 쓴 뒤로도 한참을 그냥 놔두는 일을 자주 접할 수 있다. 해법은 다양하다. 운 좋게 캐시 외부에서 키를 참조하는 동안만(값이 아닌) 엔트리가 살아 있는 캐시가 필요한 상황이라면 WeakHashMap을 사용해 캐시를 만들자. 다 쓴 엔트리는 즉시 자동으로 제거된다. 단 WeakHashMap은 이러한 상황에서만 유용하다. 
 캐시를 만들때 보통은 캐시 엔트리의 유효기간을 정화히 정의하기 어렵기 때문에 시간이 지날수록 엔트리의 가치를 떨어뜨리는 방식을 흔히 사용한다. 이런 방식에서는 쓰지 않는 엔트리를 이따금 청소를 해줘야 한다. (Scheduled ThreadPoolExcutor 같은) 백그라운드 스레드를 활용하거나 캐시에 새 엔트리를 추가 할때 부수 작업으로 수행하는 방법이 있다. 참고로 LinkedHashMap은 removeEldestEntry 메서드를 써서 후자의 방식을 구현한다. 더 복잡한 캐시를 만들고 싶다면 java.lang.ref 패키지를 직접 활용해야 할 것이다. 
 
-### 리스터 혹은 콜백
+### 리스너 혹은 콜백
 
 메모리 누수의 세 번째 주범은 리스터 또는 콜백이다. 클라이언트가 콜백을 등록만 하고 명확히 해지 하지 않는다면, 뭔가 조치가 오지 않는한 콜백은 계속 쌓여만 갈것이다. 이때 콜백을 약한 참조(weak reference)로 저장하면 가비지 컬렉터가 즉시 수거해 간다. 대표적으로 WeakHashMap에 키로 저장하면 된다. 
 
 >핵심 정리
 >메모리 누수는 겉으로 잘 드러나지 않아 시스템에 수년간 잠복하는 경우도 있다. 이런 누수는 철저한 코드 리뷰나 힙 프로파일러 같은 디버깅 도구를 동원해야만 발견되기도 한다. 그래서 이런 종류의 문제는 사전 예방법을 익혀두는 것이 매우 중요하다.
 
+## Item8. 다 쓴 객체 참조를 해제하라. 
 
 
 
@@ -430,11 +431,11 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNTg4ODAxNiw1OTU0NTMxMzEsMTA3Mj
-Y1NTYxNCwxMDUwMjYyNDIsNTQxMDc0NzQ1LC0xNzY5NDgzODcw
-LC0yNjI5MjkyNzgsNjQwMTY0OTc2LDI0Mzc1MDIxNCwxNzMyNj
-Y5NDgzLC01OTcwOTkyNzEsNzEwNTkzMzQyLC0xMTE4ODAzODA0
-LC0xNTMwMTc1NDE0LC03MDQxNTA0MywtOTg0OTg3MDQ2LDEyOT
-kwNDExODAsLTEwNzk4NDU4NjIsLTQ3MzM3MTU4MCwtNzk1NzQz
-MDFdfQ==
+eyJoaXN0b3J5IjpbMTEzNTkzNjg2LDE5MzU4ODgwMTYsNTk1ND
+UzMTMxLDEwNzI2NTU2MTQsMTA1MDI2MjQyLDU0MTA3NDc0NSwt
+MTc2OTQ4Mzg3MCwtMjYyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NT
+AyMTQsMTczMjY2OTQ4MywtNTk3MDk5MjcxLDcxMDU5MzM0Miwt
+MTExODgwMzgwNCwtMTUzMDE3NTQxNCwtNzA0MTUwNDMsLTk4ND
+k4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1ODYyLC00NzMzNzE1
+ODBdfQ==
 -->
