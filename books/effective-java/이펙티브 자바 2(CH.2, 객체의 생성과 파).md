@@ -400,7 +400,7 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 구체적 구현 방법의 관점에서 각 인스턴스는 자신이 닫혀는지를 추적하는 것이 좋다. 다시 말해, close 메서드에서 이 객체는 더 이상 유효하지 않음을 필드에 기록하고, 다른 메서드는 이 필드를 검사해서 객체가 닫힌 후에 불렀다면 IllegalStateException을 던지는 것이다.
 
-이쯤이면 finalizer와 cleaner는 대체 어디에 쓰는 물건인지 궁금해진다. 적절한 쓰임새는 아마도 구자기가 있다. 하나는 자원의 소유자가 close 메서드를 호출하지 않을 것이라는 것에 대비한 안정망 역할이다. finalizer와 cleaner가 즉시 (혹은 끝까지) 호출되리라는 보장은 없지만, 클라이언트가 하지 않은 자원 회수를 늦게라도 해주는 것이 아예 안하는 것보다 나으니 말이다.  
+이쯤이면 finalizer와 cleaner는 대체 어디에 쓰는 물건인지 궁금해진다. 적절한 쓰임새는 아마도 두가지가  있다. **하나는 자원의 소유자가 close 메서드를 호출하지 않을 것이라는 것에 대비한 안정망 역할**이다. finalizer와 cleaner가 즉시 (혹은 끝까지) 호출되리라는 보장은 없지만, 클라이언트가 하지 않은 자원 회수를 늦게라도 해주는 것이 아예 안하는 것보다 나으니 말이다. 이런 안정망 역할을 하는 finalizer를 작성할때는 그럴하
 
 
 
@@ -457,11 +457,11 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ3MjE0NzA1LC0xMjU5Mzg0NDc4LDIwNT
-A1ODkxNjcsNTM3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5ODUwOTM1
-MSwtNTIwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0NywtNz
-I2NTI5MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xODAxMjQx
-OTEyLDE5MzU4ODgwMTYsNTk1NDUzMTMxLDEwNzI2NTU2MTQsMT
-A1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OTQ4Mzg3MCwtMjYyOTI5
-Mjc4XX0=
+eyJoaXN0b3J5IjpbMTI4MzAzMDA3MCwtMTI1OTM4NDQ3OCwyMD
+UwNTg5MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1MDkz
+NTEsLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2NDcsLT
+cyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgwMTI0
+MTkxMiwxOTM1ODg4MDE2LDU5NTQ1MzEzMSwxMDcyNjU1NjE0LD
+EwNTAyNjI0Miw1NDEwNzQ3NDUsLTE3Njk0ODM4NzAsLTI2Mjky
+OTI3OF19
 -->
