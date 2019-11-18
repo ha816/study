@@ -389,7 +389,7 @@ finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비�
 
 자바 언어 명세는 finalizer와 수행 시점뿐 아니라 수행 여부조차 보장하지 않는다. 접근할 수 없는 일부 객체에 딸린 종료 작업을 전혀 수행하지 못한채 프로그램이 중단될 수도 있다는 이야기다. 따라서 프로그램 생애주기와 상관 없는, 상태를 영구적으로 수정하는 작업에서는 절대 finalizer나 cleaner에 의존해서는 안된다. 예를 들어 데이터 베이스 같은 공유 자원의 영구 락(lock) 해제를 맡겨 놓으면 시스템 전체가 서서히 망가질것이다. 
 
-finalizer의 부작용은 여기서 긑이 아니다. finalizer 동작 중 발생한 예외는 무시되며, 처리할 작업이 남았더라도 그 순간 종료된다. 
+finalizer의 부작용은 여기서 긑이 아니다. finalizer 동작 중 발생한 예외는 무시되며, 처리할 작업이 남았더라도 그 순간 종료된다. 이런 예외 때문에 해당 객체는 자칫 마무리가 덜 된 상태로 남을 수 있다. 그리고 다른 스레드가 이 객체를 재사용하면 어떻게 동작할지 알수가 없다. 그나마 cleaner를 사용하는 라이브러리는 자신의 스레드를 통제하기 때문에 이런 문제는 발생하지 않는다. 
 
 
 
@@ -447,11 +447,11 @@ finalizer의 부작용은 여기서 긑이 아니다. finalizer 동작 중 발�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM3MTYxMzMzLC01MjAwMDgwMjEsLTE3MD
-MyOTA2LC0xNzA1OTk5NjQ3LC03MjY1MjkxMjIsMTU4ODQ1MTEw
-LC04MzM1MzA0ODcsLTE4MDEyNDE5MTIsMTkzNTg4ODAxNiw1OT
-U0NTMxMzEsMTA3MjY1NTYxNCwxMDUwMjYyNDIsNTQxMDc0NzQ1
-LC0xNzY5NDgzODcwLC0yNjI5MjkyNzgsNjQwMTY0OTc2LDI0Mz
-c1MDIxNCwxNzMyNjY5NDgzLC01OTcwOTkyNzEsNzEwNTkzMzQy
-XX0=
+eyJoaXN0b3J5IjpbLTQ5ODUwOTM1MSwtNTIwMDA4MDIxLC0xNz
+AzMjkwNiwtMTcwNTk5OTY0NywtNzI2NTI5MTIyLDE1ODg0NTEx
+MCwtODMzNTMwNDg3LC0xODAxMjQxOTEyLDE5MzU4ODgwMTYsNT
+k1NDUzMTMxLDEwNzI2NTU2MTQsMTA1MDI2MjQyLDU0MTA3NDc0
+NSwtMTc2OTQ4Mzg3MCwtMjYyOTI5Mjc4LDY0MDE2NDk3NiwyND
+M3NTAyMTQsMTczMjY2OTQ4MywtNTk3MDk5MjcxLDcxMDU5MzM0
+Ml19
 -->
