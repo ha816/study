@@ -396,7 +396,9 @@ finalizer의 부작용은 여기서 긑이 아니다. finalizer 동작 중 발�
 finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 보안 문제를 야기할 수 있다. 생성자나 직렬화 과정에서 예외가 발생하면, 이 생성되다 만 객체에서 악의적인 하위 클래스의 finalizer가 수행할 수 있게 된다. 
 일반적으로 객체 생성을 막으려면 생성자에서 예외를 던지는 것만으로도 충분하지만, finalizer가 있다면 그렇지도 않다. 이럴땐 클래스를 final 클래스로 만들어 그 누구도 하위 클래스를 만들수 없도록 하자. final이 아닌 클래스를 finalizer 공격으로 부터 방어하려면 아무 일도 하지 않는 finalize 메서드를 만들고 final로 선언하자. 
 
-그렇다면 파일이나 스레드 등 종료해야 할 자원을 담고 있는 객체의 클래스에서 finalizer나 cleaner를 대신해줄 묘안은 무엇일까? 그저 AutoClosable을 구현해주고, 클아이언트에서 인스턴스를 다 쓰고 나면 close 메서드를 호출하면 된다. 
+그렇다면 파일이나 스레드 등 종료해야 할 자원을 담고 있는 객체의 클래스에서 finalizer나 cleaner를 대신해줄 묘안은 무엇일까? 그저 AutoCloseable을 구현해주고, 클라이언트에서 인스턴스를 다 쓰고 나면 close 메서드를 호출하면 된다. 
+
+구체적 구현 방법에서 각 인스턴스는 자신이 닫혀는지를 추적하는 것이 좋다.
 
 
 
@@ -453,11 +455,11 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjY5NDk2NDIsMjAzODM0MTU1MSwtND
-k4NTA5MzUxLC01MjAwMDgwMjEsLTE3MDMyOTA2LC0xNzA1OTk5
-NjQ3LC03MjY1MjkxMjIsMTU4ODQ1MTEwLC04MzM1MzA0ODcsLT
-E4MDEyNDE5MTIsMTkzNTg4ODAxNiw1OTU0NTMxMzEsMTA3MjY1
-NTYxNCwxMDUwMjYyNDIsNTQxMDc0NzQ1LC0xNzY5NDgzODcwLC
-0yNjI5MjkyNzgsNjQwMTY0OTc2LDI0Mzc1MDIxNCwxNzMyNjY5
-NDgzXX0=
+eyJoaXN0b3J5IjpbNTM3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5OD
+UwOTM1MSwtNTIwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0
+NywtNzI2NTI5MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xOD
+AxMjQxOTEyLDE5MzU4ODgwMTYsNTk1NDUzMTMxLDEwNzI2NTU2
+MTQsMTA1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OTQ4Mzg3MCwtMj
+YyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQsMTczMjY2OTQ4
+M119
 -->
