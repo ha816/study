@@ -402,6 +402,8 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 이쯤이면 finalizer와 cleaner는 대체 어디에 쓰는 물건인지 궁금해진다. 적절한 쓰임새는 아마도 두가지가  있다. **하나는 자원의 소유자가 close 메서드를 호출하지 않을 것이라는 것에 대비한 안정망 역할**이다. finalizer와 cleaner가 즉시 (혹은 끝까지) 호출되리라는 보장은 없지만, 클라이언트가 하지 않은 자원 회수를 늦게라도 해주는 것이 아예 안하는 것보다 나으니 말이다. 이런 안정망 역할을 하는 finalizer를 작성할때는 그럴만한 값어치가 있는지를 심사숙고하자. 자바 라이브러리의 일부 클래스는 안전망 역할의 finalizer를 제공한다. FileInputStream, FileOutputStream, ThreadPoolExecutor가 대표적이다. 
 
+  finalizer와 cleaner를 적절히 활용하는 두 번재 예는 네이티브 피어(native peer)와 연결된 객체에서다. 네이티브 피어란 일반 자바 객체가 네이티브 메서드를 통해 기능을 위임한 네이티브 객체를 말한다. 
+
 
 
 
@@ -457,11 +459,11 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMyNTY5NzEsLTEyNTkzODQ0NzgsMjA1MD
-U4OTE2Nyw1Mzc3MDQwNjEsMjAzODM0MTU1MSwtNDk4NTA5MzUx
-LC01MjAwMDgwMjEsLTE3MDMyOTA2LC0xNzA1OTk5NjQ3LC03Mj
-Y1MjkxMjIsMTU4ODQ1MTEwLC04MzM1MzA0ODcsLTE4MDEyNDE5
-MTIsMTkzNTg4ODAxNiw1OTU0NTMxMzEsMTA3MjY1NTYxNCwxMD
-UwMjYyNDIsNTQxMDc0NzQ1LC0xNzY5NDgzODcwLC0yNjI5Mjky
-NzhdfQ==
+eyJoaXN0b3J5IjpbLTUxMjAzOTY1Miw0MzI1Njk3MSwtMTI1OT
+M4NDQ3OCwyMDUwNTg5MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUx
+LC00OTg1MDkzNTEsLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MD
+U5OTk2NDcsLTcyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4
+NywtMTgwMTI0MTkxMiwxOTM1ODg4MDE2LDU5NTQ1MzEzMSwxMD
+cyNjU1NjE0LDEwNTAyNjI0Miw1NDEwNzQ3NDUsLTE3Njk0ODM4
+NzBdfQ==
 -->
