@@ -381,7 +381,9 @@ public Object pop() {
 
 C++ 프로그래머라면 주의할 내용이 있다. 자바의 finalizer와 cleaner는 C++의 파괴자와 다른 개념이다. C++의 파괴자는 특정 객체와 관련된 자원을 회수하는 보편적인 방법이다. 자바에서는 접근할 수 없게 된 객체를 회수하는 역할을 가비지 컬렉터가 담당하고, 프로그래머에게는 아무런 작업도 요구하지 않는다. C++ 의 파괴자는 비메모리 자원을 회수하는 용도로도 쓰이는데 반면에 자바에서는 try-with-resources와 try-finally를 사용해 해결한다. 
 
-**finalizer와 cleaner는 즉시 수행된다는 보장이 없다.** 객체의 접근 할 수 없게 된 후 finalizer나 cleaner가 실행되기 까지 얼마나 걸릴지 알 수 없다. **즉 finalizer와 cleaner로는 제때 실행되어야 하는 작업을 절대 할 수 없다.** 예를 들어 파일 닫기를 finalizer와 cleaner에 맡기면 중대한 오류를 일으킬 수 있다. 시스템이 동시에 열 수 있는 파일 개수에는 한계가 있기 때문이다. 시스템이 finalizer와 cleaner 실행을 게을리해서 파일을 계속 여
+**finalizer와 cleaner는 즉시 수행된다는 보장이 없다.** 객체의 접근 할 수 없게 된 후 finalizer나 cleaner가 실행되기 까지 얼마나 걸릴지 알 수 없다. **즉 finalizer와 cleaner로는 제때 실행되어야 하는 작업을 절대 할 수 없다.** 예를 들어 파일 닫기를 finalizer와 cleaner에 맡기면 중대한 오류를 일으킬 수 있다. 시스템이 동시에 열 수 있는 파일 개수에는 한계가 있기 때문이다. 시스템이 finalizer와 cleaner 실행을 게을리해서 파일을 계속 열어 둔다면 새로운 파일을 열지 못해 프로그램이 실패할 수 있다. 
+
+finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비지 컬렉터 알고리즘에 달렸으며, 이는 가비지 컬렉터 구현마다 천차만별이다. 
 
 
 
@@ -439,11 +441,11 @@ C++ 프로그래머라면 주의할 내용이 있다. 자바의 finalizer와 cle
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyODA5MDE0MSwtMTcwNTk5OTY0NywtNz
-I2NTI5MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xODAxMjQx
-OTEyLDE5MzU4ODgwMTYsNTk1NDUzMTMxLDEwNzI2NTU2MTQsMT
-A1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OTQ4Mzg3MCwtMjYyOTI5
-Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQsMTczMjY2OTQ4MywtNT
-k3MDk5MjcxLDcxMDU5MzM0MiwtMTExODgwMzgwNCwtMTUzMDE3
-NTQxNF19
+eyJoaXN0b3J5IjpbLTIwMzc3MzMxOTcsLTE3MDU5OTk2NDcsLT
+cyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgwMTI0
+MTkxMiwxOTM1ODg4MDE2LDU5NTQ1MzEzMSwxMDcyNjU1NjE0LD
+EwNTAyNjI0Miw1NDEwNzQ3NDUsLTE3Njk0ODM4NzAsLTI2Mjky
+OTI3OCw2NDAxNjQ5NzYsMjQzNzUwMjE0LDE3MzI2Njk0ODMsLT
+U5NzA5OTI3MSw3MTA1OTMzNDIsLTExMTg4MDM4MDQsLTE1MzAx
+NzU0MTRdfQ==
 -->
