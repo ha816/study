@@ -387,7 +387,9 @@ finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비�
 
 굼뜬 finalizer 처리는 현업에서도 실제로 문제를 일으킨다. 클래스에 finalizer를 달아두면 그 인스턴스의 자원 회수는 제멋대로 지연될 수 있다. 한편 cleaner는 자신을 수행할 스레드를 제어할 수 있다는 점에서 조금 낫다. 하지만 여전히 백그라운드에서 수행되며 컬렉터의 통제하에 있으니 즉각 수행되리라는 보장은 없다. 
 
-자바 언어 명세는 finalizer와 수행 시점뿐 아니라 수행 여부조차 보장하지 않는다. 접근할 수 없는 일부 객체에 딸린 종료 작업을 전혀 수행하지 못한채 프로그램이 중단될 수도 있다는 이야기다. 
+자바 언어 명세는 finalizer와 수행 시점뿐 아니라 수행 여부조차 보장하지 않는다. 접근할 수 없는 일부 객체에 딸린 종료 작업을 전혀 수행하지 못한채 프로그램이 중단될 수도 있다는 이야기다. 따라서 프로그램 생애주기와 상관 없는, 상태를 영구적으로 수정하는 작업에서는 절대 finalizer나 cleaner에 의존해서는 안된다. 예를 들어 데이터 베이스 같은 공유 자원의 영구 락(lock) 해제를 맡겨 놓으면 시스템 전체가 서서히 망가질것이다. 
+
+
 
 
 
@@ -445,11 +447,11 @@ finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MD
-U5OTk2NDcsLTcyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4
-NywtMTgwMTI0MTkxMiwxOTM1ODg4MDE2LDU5NTQ1MzEzMSwxMD
-cyNjU1NjE0LDEwNTAyNjI0Miw1NDEwNzQ3NDUsLTE3Njk0ODM4
-NzAsLTI2MjkyOTI3OCw2NDAxNjQ5NzYsMjQzNzUwMjE0LDE3Mz
-I2Njk0ODMsLTU5NzA5OTI3MSw3MTA1OTMzNDIsLTExMTg4MDM4
-MDRdfQ==
+eyJoaXN0b3J5IjpbLTEwMzI1MDk1NywtNTIwMDA4MDIxLC0xNz
+AzMjkwNiwtMTcwNTk5OTY0NywtNzI2NTI5MTIyLDE1ODg0NTEx
+MCwtODMzNTMwNDg3LC0xODAxMjQxOTEyLDE5MzU4ODgwMTYsNT
+k1NDUzMTMxLDEwNzI2NTU2MTQsMTA1MDI2MjQyLDU0MTA3NDc0
+NSwtMTc2OTQ4Mzg3MCwtMjYyOTI5Mjc4LDY0MDE2NDk3NiwyND
+M3NTAyMTQsMTczMjY2OTQ4MywtNTk3MDk5MjcxLDcxMDU5MzM0
+Ml19
 -->
