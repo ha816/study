@@ -402,7 +402,9 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 이쯤이면 finalizer와 cleaner는 대체 어디에 쓰는 물건인지 궁금해진다. 적절한 쓰임새는 아마도 두가지가  있다. **하나는 자원의 소유자가 close 메서드를 호출하지 않을 것이라는 것에 대비한 안정망 역할**이다. finalizer와 cleaner가 즉시 (혹은 끝까지) 호출되리라는 보장은 없지만, 클라이언트가 하지 않은 자원 회수를 늦게라도 해주는 것이 아예 안하는 것보다 나으니 말이다. 이런 안정망 역할을 하는 finalizer를 작성할때는 그럴만한 값어치가 있는지를 심사숙고하자. 자바 라이브러리의 일부 클래스는 안전망 역할의 finalizer를 제공한다. FileInputStream, FileOutputStream, ThreadPoolExecutor가 대표적이다. 
 
-  finalizer와 cleaner를 적절히 활용하는 두 번재 예는 네이티브 피어(native peer)와 연결된 객체에서다. 네이티브 피어란 일반 자바 객체가 네이티브 메서드를 통해 기능을 위임한 네이티브 객체를 말한다. 네이티브 피어는 자바 객체가 아니니 가비지 컬렉터는 그 존재를 알지 못한다. 그 결과로 자바 피어를 회수할때 네이티브 객체까지 회수하지 못한다. cleaner나 finalizer가 나서서 처리하기 적당한 작업이다. 단 성능 저하를 감당할 수 있고 네이티브 피어가 심각한 자원을 가지고 있지 않을 때에만 해당된다. 성능 저하를 감당할 수 없거나 네이티브 피어가 사용하는 자원을 즉시 회수행
+  finalizer와 cleaner를 적절히 활용하는 두 번재 예는 네이티브 피어(native peer)와 연결된 객체에서다. 네이티브 피어란 일반 자바 객체가 네이티브 메서드를 통해 기능을 위임한 네이티브 객체를 말한다. 네이티브 피어는 자바 객체가 아니니 가비지 컬렉터는 그 존재를 알지 못한다. 그 결과로 자바 피어를 회수할때 네이티브 객체까지 회수하지 못한다. cleaner나 finalizer가 나서서 처리하기 적당한 작업이다. 단 성능 저하를 감당할 수 있고 네이티브 피어가 심각한 자원을 가지고 있지 않을 때에만 해당된다. 성능 저하를 감당할 수 없거나 네이티브 피어가 사용하는 자원을 즉시 회수해야 한다면 앞서 설명한 close 메서드를 사용해야 한다. 
+
+cleaner는 사용하기에 조금 까다롭다. 
 
 
 
@@ -459,11 +461,11 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMxNDA1MzQ4LC0xMjEyNjc5MjUzLDQzMj
-U2OTcxLC0xMjU5Mzg0NDc4LDIwNTA1ODkxNjcsNTM3NzA0MDYx
-LDIwMzgzNDE1NTEsLTQ5ODUwOTM1MSwtNTIwMDA4MDIxLC0xNz
-AzMjkwNiwtMTcwNTk5OTY0NywtNzI2NTI5MTIyLDE1ODg0NTEx
-MCwtODMzNTMwNDg3LC0xODAxMjQxOTEyLDE5MzU4ODgwMTYsNT
-k1NDUzMTMxLDEwNzI2NTU2MTQsMTA1MDI2MjQyLDU0MTA3NDc0
-NV19
+eyJoaXN0b3J5IjpbLTE4Nzc0MzkzMzMsLTEyMTI2NzkyNTMsND
+MyNTY5NzEsLTEyNTkzODQ0NzgsMjA1MDU4OTE2Nyw1Mzc3MDQw
+NjEsMjAzODM0MTU1MSwtNDk4NTA5MzUxLC01MjAwMDgwMjEsLT
+E3MDMyOTA2LC0xNzA1OTk5NjQ3LC03MjY1MjkxMjIsMTU4ODQ1
+MTEwLC04MzM1MzA0ODcsLTE4MDEyNDE5MTIsMTkzNTg4ODAxNi
+w1OTU0NTMxMzEsMTA3MjY1NTYxNCwxMDUwMjYyNDIsNTQxMDc0
+NzQ1XX0=
 -->
