@@ -404,7 +404,7 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
   finalizer와 cleaner를 적절히 활용하는 두 번재 예는 네이티브 피어(native peer)와 연결된 객체에서다. 네이티브 피어란 일반 자바 객체가 네이티브 메서드를 통해 기능을 위임한 네이티브 객체를 말한다. 네이티브 피어는 자바 객체가 아니니 가비지 컬렉터는 그 존재를 알지 못한다. 그 결과로 자바 피어를 회수할때 네이티브 객체까지 회수하지 못한다. cleaner나 finalizer가 나서서 처리하기 적당한 작업이다. 단 성능 저하를 감당할 수 있고 네이티브 피어가 심각한 자원을 가지고 있지 않을 때에만 해당된다. 성능 저하를 감당할 수 없거나 네이티브 피어가 사용하는 자원을 즉시 회수해야 한다면 앞서 설명한 close 메서드를 사용해야 한다. 
 
-cleaner는 사용하기에 조금 까다롭다. 
+cleaner는 사용하기에 조금 까다롭다. 다음의 ㅋ
 
 
 
@@ -461,11 +461,11 @@ cleaner는 사용하기에 조금 까다롭다.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzc0MzkzMzMsLTEyMTI2NzkyNTMsND
-MyNTY5NzEsLTEyNTkzODQ0NzgsMjA1MDU4OTE2Nyw1Mzc3MDQw
-NjEsMjAzODM0MTU1MSwtNDk4NTA5MzUxLC01MjAwMDgwMjEsLT
-E3MDMyOTA2LC0xNzA1OTk5NjQ3LC03MjY1MjkxMjIsMTU4ODQ1
-MTEwLC04MzM1MzA0ODcsLTE4MDEyNDE5MTIsMTkzNTg4ODAxNi
-w1OTU0NTMxMzEsMTA3MjY1NTYxNCwxMDUwMjYyNDIsNTQxMDc0
-NzQ1XX0=
+eyJoaXN0b3J5IjpbMjEyMzU3NjAxNiwtMTg3NzQzOTMzMywtMT
+IxMjY3OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OCwyMDUwNTg5
+MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1MDkzNTEsLT
+UyMDAwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2NDcsLTcyNjUy
+OTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgwMTI0MTkxMi
+wxOTM1ODg4MDE2LDU5NTQ1MzEzMSwxMDcyNjU1NjE0LDEwNTAy
+NjI0Ml19
 -->
