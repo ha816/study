@@ -398,7 +398,7 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 그렇다면 파일이나 스레드 등 종료해야 할 자원을 담고 있는 객체의 클래스에서 finalizer나 cleaner를 대신해줄 묘안은 무엇일까? 그저 AutoCloseable을 구현해주고, 클라이언트에서 인스턴스를 다 쓰고 나면 close 메서드를 호출하면 된다. 
 
-구체적 구현 방법에서 각 인스턴스는 자신이 닫혀는지를 추적하는 것이 좋다.
+구체적 구현 방법의 관점에서 각 인스턴스는 자신이 닫혀는지를 추적하는 것이 좋다. 다시 말해, close 메서드에서 이 객체는 더 이상 유효하지 않음을 필드에 기록하고, 다른 메서드는 이 필드를 검사해서 객체가 닫힌 후에 불렀다면 IllegalStateException을 던지는 것이다.
 
 
 
@@ -455,11 +455,11 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5OD
-UwOTM1MSwtNTIwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0
-NywtNzI2NTI5MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xOD
-AxMjQxOTEyLDE5MzU4ODgwMTYsNTk1NDUzMTMxLDEwNzI2NTU2
-MTQsMTA1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OTQ4Mzg3MCwtMj
-YyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQsMTczMjY2OTQ4
-M119
+eyJoaXN0b3J5IjpbMjA1MDU4OTE2Nyw1Mzc3MDQwNjEsMjAzOD
+M0MTU1MSwtNDk4NTA5MzUxLC01MjAwMDgwMjEsLTE3MDMyOTA2
+LC0xNzA1OTk5NjQ3LC03MjY1MjkxMjIsMTU4ODQ1MTEwLC04Mz
+M1MzA0ODcsLTE4MDEyNDE5MTIsMTkzNTg4ODAxNiw1OTU0NTMx
+MzEsMTA3MjY1NTYxNCwxMDUwMjYyNDIsNTQxMDc0NzQ1LC0xNz
+Y5NDgzODcwLC0yNjI5MjkyNzgsNjQwMTY0OTc2LDI0Mzc1MDIx
+NF19
 -->
