@@ -400,7 +400,7 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 구체적 구현 방법의 관점에서 각 인스턴스는 자신이 닫혀는지를 추적하는 것이 좋다. 다시 말해, close 메서드에서 이 객체는 더 이상 유효하지 않음을 필드에 기록하고, 다른 메서드는 이 필드를 검사해서 객체가 닫힌 후에 불렀다면 IllegalStateException을 던지는 것이다.
 
-이쯤이면 finalizer와 cleaner는 대체 어디에 쓰는 물건인지 궁금해진다. 적절한 쓰임새는 아마도 두가지가  있다. **하나는 자원의 소유자가 close 메서드를 호출하지 않을 것이라는 것에 대비한 안정망 역할**이다. finalizer와 cleaner가 즉시 (혹은 끝까지) 호출되리라는 보장은 없지만, 클라이언트가 하지 않은 자원 회수를 늦게라도 해주는 것이 아예 안하는 것보다 나으니 말이다. 이런 안정망 역할을 하는 finalizer를 작성할때는 그럴하
+이쯤이면 finalizer와 cleaner는 대체 어디에 쓰는 물건인지 궁금해진다. 적절한 쓰임새는 아마도 두가지가  있다. **하나는 자원의 소유자가 close 메서드를 호출하지 않을 것이라는 것에 대비한 안정망 역할**이다. finalizer와 cleaner가 즉시 (혹은 끝까지) 호출되리라는 보장은 없지만, 클라이언트가 하지 않은 자원 회수를 늦게라도 해주는 것이 아예 안하는 것보다 나으니 말이다. 이런 안정망 역할을 하는 finalizer를 작성할때는 그럴만한 값어치가 있는지를 심사숙고하자. 자바 라이브러리의 일부 클래스는 안전망 역할의 finalizer를 제공한다. FileInputStream, FileOutputStream, ThreadPoolExecutor가 대표적이다. 
 
 
 
@@ -457,11 +457,11 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MzAzMDA3MCwtMTI1OTM4NDQ3OCwyMD
-UwNTg5MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1MDkz
-NTEsLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2NDcsLT
-cyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgwMTI0
-MTkxMiwxOTM1ODg4MDE2LDU5NTQ1MzEzMSwxMDcyNjU1NjE0LD
-EwNTAyNjI0Miw1NDEwNzQ3NDUsLTE3Njk0ODM4NzAsLTI2Mjky
-OTI3OF19
+eyJoaXN0b3J5IjpbNDMyNTY5NzEsLTEyNTkzODQ0NzgsMjA1MD
+U4OTE2Nyw1Mzc3MDQwNjEsMjAzODM0MTU1MSwtNDk4NTA5MzUx
+LC01MjAwMDgwMjEsLTE3MDMyOTA2LC0xNzA1OTk5NjQ3LC03Mj
+Y1MjkxMjIsMTU4ODQ1MTEwLC04MzM1MzA0ODcsLTE4MDEyNDE5
+MTIsMTkzNTg4ODAxNiw1OTU0NTMxMzEsMTA3MjY1NTYxNCwxMD
+UwMjYyNDIsNTQxMDc0NzQ1LC0xNzY5NDgzODcwLC0yNjI5Mjky
+NzhdfQ==
 -->
