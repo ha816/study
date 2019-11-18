@@ -391,9 +391,9 @@ finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비�
 
 finalizer의 부작용은 여기서 긑이 아니다. finalizer 동작 중 발생한 예외는 무시되며, 처리할 작업이 남았더라도 그 순간 종료된다. 이런 예외 때문에 해당 객체는 자칫 마무리가 덜 된 상태로 남을 수 있다. 그리고 다른 스레드가 이 객체를 재사용하면 어떻게 동작할지 알수가 없다. 그나마 cleaner를 사용하는 라이브러리는 자신의 스레드를 통제하기 때문에 이런 문제는 발생하지 않는다. 
 
-finalizer와 cleaner는 심각한 성능 문제도 동반한다. 간단한 AutoCloseable 객체를 생성하고 가비지 컬렉터가 수거하기 까지 12ns가 걸렸는데 finalizer를 사용하면 550ns가 걸렸다. 다시 말해 finalizer가 카비지 컬렉터의 효율을 떨어트리기 때문에 객체를 생성하고 파괴하는데 엄청난 시간이 걸렸다. 
+**finalizer와 cleaner는 심각한 성능 문제도 동반한다.** 간단한 AutoCloseable 객체를 생성하고 가비지 컬렉터가 수거하기 까지 12ns가 걸렸는데 finalizer를 사용하면 550ns가 걸렸다. 다시 말해 finalizer가 카비지 컬렉터의 효율을 떨어트리기 때문에 객체를 생성하고 파괴하는데 엄청난 시간이 걸렸다. 
 
-
+finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 보안 문제를 야기할 수 있다. 생성자나 직렬화 과정에서 예외가 발생하면, 이 생성되마
 
 
 
@@ -449,11 +449,11 @@ finalizer와 cleaner는 심각한 성능 문제도 동반한다. 간단한 AutoC
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODM1MjMyNzksLTQ5ODUwOTM1MSwtNT
-IwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0NywtNzI2NTI5
-MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xODAxMjQxOTEyLD
-E5MzU4ODgwMTYsNTk1NDUzMTMxLDEwNzI2NTU2MTQsMTA1MDI2
-MjQyLDU0MTA3NDc0NSwtMTc2OTQ4Mzg3MCwtMjYyOTI5Mjc4LD
-Y0MDE2NDk3NiwyNDM3NTAyMTQsMTczMjY2OTQ4MywtNTk3MDk5
-MjcxXX0=
+eyJoaXN0b3J5IjpbLTg4NjA3ODUwNiwtNDk4NTA5MzUxLC01Mj
+AwMDgwMjEsLTE3MDMyOTA2LC0xNzA1OTk5NjQ3LC03MjY1Mjkx
+MjIsMTU4ODQ1MTEwLC04MzM1MzA0ODcsLTE4MDEyNDE5MTIsMT
+kzNTg4ODAxNiw1OTU0NTMxMzEsMTA3MjY1NTYxNCwxMDUwMjYy
+NDIsNTQxMDc0NzQ1LC0xNzY5NDgzODcwLC0yNjI5MjkyNzgsNj
+QwMTY0OTc2LDI0Mzc1MDIxNCwxNzMyNjY5NDgzLC01OTcwOTky
+NzFdfQ==
 -->
