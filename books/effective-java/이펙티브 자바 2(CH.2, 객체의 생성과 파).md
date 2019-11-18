@@ -394,7 +394,7 @@ finalizer의 부작용은 여기서 긑이 아니다. finalizer 동작 중 발�
 **finalizer와 cleaner는 심각한 성능 문제도 동반한다.** 간단한 AutoCloseable 객체를 생성하고 가비지 컬렉터가 수거하기 까지 12ns가 걸렸는데 finalizer를 사용하면 550ns가 걸렸다. 다시 말해 finalizer가 카비지 컬렉터의 효율을 떨어트리기 때문에 객체를 생성하고 파괴하는데 엄청난 시간이 걸렸다. 
 
 finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 보안 문제를 야기할 수 있다. 생성자나 직렬화 과정에서 예외가 발생하면, 이 생성되다 만 객체에서 악의적인 하위 클래스의 finalizer가 수행할 수 있게 된다. 
-일반적으로 객체 생성을 막으려면 생성자에서 예외를 던지는 것만으로도 충분하지만, finalizer가 있다면 그렇지도 않다. 
+일반적으로 객체 생성을 막으려면 생성자에서 예외를 던지는 것만으로도 충분하지만, finalizer가 있다면 그렇지도 않다. 이럴땐 클래스를 final 클래스로 만들어 그 누구도 하위 클래스를 만들수 없도록 하자. 
 
 
 
@@ -451,11 +451,11 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM2MTgxOTgyLC00OTg1MDkzNTEsLTUyMD
-AwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2NDcsLTcyNjUyOTEy
-MiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgwMTI0MTkxMiwxOT
-M1ODg4MDE2LDU5NTQ1MzEzMSwxMDcyNjU1NjE0LDEwNTAyNjI0
-Miw1NDEwNzQ3NDUsLTE3Njk0ODM4NzAsLTI2MjkyOTI3OCw2ND
-AxNjQ5NzYsMjQzNzUwMjE0LDE3MzI2Njk0ODMsLTU5NzA5OTI3
-MV19
+eyJoaXN0b3J5IjpbMjAzODM0MTU1MSwtNDk4NTA5MzUxLC01Mj
+AwMDgwMjEsLTE3MDMyOTA2LC0xNzA1OTk5NjQ3LC03MjY1Mjkx
+MjIsMTU4ODQ1MTEwLC04MzM1MzA0ODcsLTE4MDEyNDE5MTIsMT
+kzNTg4ODAxNiw1OTU0NTMxMzEsMTA3MjY1NTYxNCwxMDUwMjYy
+NDIsNTQxMDc0NzQ1LC0xNzY5NDgzODcwLC0yNjI5MjkyNzgsNj
+QwMTY0OTc2LDI0Mzc1MDIxNCwxNzMyNjY5NDgzLC01OTcwOTky
+NzFdfQ==
 -->
