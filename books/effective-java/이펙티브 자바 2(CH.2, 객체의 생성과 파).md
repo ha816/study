@@ -375,7 +375,9 @@ public Object pop() {
 >핵심 정리
 >메모리 누수는 겉으로 잘 드러나지 않아 시스템에 수년간 잠복하는 경우도 있다. 이런 누수는 철저한 코드 리뷰나 힙 프로파일러 같은 디버깅 도구를 동원해야만 발견되기도 한다. 그래서 이런 종류의 문제는 사전 예방법을 익혀두는 것이 매우 중요하다.
 
-## Item8. finalizer와 clean
+## Item8. finalizer와 cleaner 사용을 피하라 
+
+자바는 두 가지 객체 소멸자를 제공한다. 
 
 
 
@@ -431,11 +433,11 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5NzU4OTUwLDE5MzU4ODgwMTYsNTk1ND
-UzMTMxLDEwNzI2NTU2MTQsMTA1MDI2MjQyLDU0MTA3NDc0NSwt
-MTc2OTQ4Mzg3MCwtMjYyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NT
-AyMTQsMTczMjY2OTQ4MywtNTk3MDk5MjcxLDcxMDU5MzM0Miwt
-MTExODgwMzgwNCwtMTUzMDE3NTQxNCwtNzA0MTUwNDMsLTk4ND
-k4NzA0NiwxMjk5MDQxMTgwLC0xMDc5ODQ1ODYyLC00NzMzNzE1
-ODBdfQ==
+eyJoaXN0b3J5IjpbLTE4MDEyNDE5MTIsMTkzNTg4ODAxNiw1OT
+U0NTMxMzEsMTA3MjY1NTYxNCwxMDUwMjYyNDIsNTQxMDc0NzQ1
+LC0xNzY5NDgzODcwLC0yNjI5MjkyNzgsNjQwMTY0OTc2LDI0Mz
+c1MDIxNCwxNzMyNjY5NDgzLC01OTcwOTkyNzEsNzEwNTkzMzQy
+LC0xMTE4ODAzODA0LC0xNTMwMTc1NDE0LC03MDQxNTA0MywtOT
+g0OTg3MDQ2LDEyOTkwNDExODAsLTEwNzk4NDU4NjIsLTQ3MzM3
+MTU4MF19
 -->
