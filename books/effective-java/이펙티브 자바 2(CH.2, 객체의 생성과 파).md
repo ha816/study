@@ -385,7 +385,9 @@ C++ 프로그래머라면 주의할 내용이 있다. 자바의 finalizer와 cle
 
 finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비지 컬렉터 알고리즘에 달렸으며, 이는 가비지 컬렉터 구현마다 천차만별이다. finalizer와 cleaner 수행 시점에 의존하는 프로그램의 동작 또한 마찬가지다. 여러분이 테스트한 JVM에서는 완벽하게 동작하던 프로그램이 가장 중요한 고객의 시스템에서는 엄청난 재앙을 일으킬지도 모른다.
 
-굼뜬 finalizer 처리는 현업에서도 실제로 문제를 일으킨다. 클래스에 fianlizer를 달아
+굼뜬 finalizer 처리는 현업에서도 실제로 문제를 일으킨다. 클래스에 finalizer를 달아두면 그 인스턴스의 자원 회수는 제멋대로 지연될 수 있다. 한편 cleaner는 자신을 수행할 스레드를 제어할 수 있다는 점에서 조금 낫다. 하지만 여전히 백그라운드에서 수행되며 컬렉터의 통제하에 있으니 즉각 수행되리라는 보장은 없다. 
+
+자
 
 
 
@@ -443,7 +445,7 @@ finalizer와 cleaner를 얼마나 신속히 수행할지는 전적으로 가비�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NDU1NTcwOCwtMTcwMzI5MDYsLTE3MD
+eyJoaXN0b3J5IjpbLTk2Mjk3Mzg2MywtMTcwMzI5MDYsLTE3MD
 U5OTk2NDcsLTcyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4
 NywtMTgwMTI0MTkxMiwxOTM1ODg4MDE2LDU5NTQ1MzEzMSwxMD
 cyNjU1NjE0LDEwNTAyNjI0Miw1NDEwNzQ3NDUsLTE3Njk0ODM4
