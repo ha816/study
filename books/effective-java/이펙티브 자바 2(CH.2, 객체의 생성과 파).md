@@ -377,7 +377,7 @@ public Object pop() {
 
 ## Item8. finalizer와 cleaner 사용을 피하라 
 
-자바는 두 가지 객체 소멸자를 제공하는데 finalizer와 cleaner가 있다. 그중 **finalizer는 예측할 수 없고, 상황에 따라 위험할 수 있어 일반적으로 불필요하다.** 또한 오동작, 낮은 성능, 이식성 문제의 원인이 되기도 한다. finalizer는 몇가지 쓰임새가 있기는 하지만 기본적으로 쓰지 말아야 한다. 
+자바는 두 가지 객체 소멸자를 제공하는데 finalizer와 cleaner가 있다. 그중 **finalizer는 예측할 수 없고, 상황에 따라 위험할 수 있어 일반적으로 불필요하다.** 또한 오동작, 낮은 성능, 이식성 문제의 원인이 되기도 한다. finalizer는 몇가지 쓰임새가 있기는 하지만 기본적으로 쓰지 말아야 한다. 그래서 자바 9세어슨 fina
 
 
 
@@ -433,11 +433,11 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMzUzMDQ4NywtMTgwMTI0MTkxMiwxOT
-M1ODg4MDE2LDU5NTQ1MzEzMSwxMDcyNjU1NjE0LDEwNTAyNjI0
-Miw1NDEwNzQ3NDUsLTE3Njk0ODM4NzAsLTI2MjkyOTI3OCw2ND
-AxNjQ5NzYsMjQzNzUwMjE0LDE3MzI2Njk0ODMsLTU5NzA5OTI3
-MSw3MTA1OTMzNDIsLTExMTg4MDM4MDQsLTE1MzAxNzU0MTQsLT
-cwNDE1MDQzLC05ODQ5ODcwNDYsMTI5OTA0MTE4MCwtMTA3OTg0
-NTg2Ml19
+eyJoaXN0b3J5IjpbMjEyMTMwNzc2NCwtODMzNTMwNDg3LC0xOD
+AxMjQxOTEyLDE5MzU4ODgwMTYsNTk1NDUzMTMxLDEwNzI2NTU2
+MTQsMTA1MDI2MjQyLDU0MTA3NDc0NSwtMTc2OTQ4Mzg3MCwtMj
+YyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NTAyMTQsMTczMjY2OTQ4
+MywtNTk3MDk5MjcxLDcxMDU5MzM0MiwtMTExODgwMzgwNCwtMT
+UzMDE3NTQxNCwtNzA0MTUwNDMsLTk4NDk4NzA0NiwxMjk5MDQx
+MTgwXX0=
 -->
