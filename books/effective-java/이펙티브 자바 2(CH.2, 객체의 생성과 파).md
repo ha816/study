@@ -375,7 +375,7 @@ public Object pop() {
 >핵심 정리
 >메모리 누수는 겉으로 잘 드러나지 않아 시스템에 수년간 잠복하는 경우도 있다. 이런 누수는 철저한 코드 리뷰나 힙 프로파일러 같은 디버깅 도구를 동원해야만 발견되기도 한다. 그래서 이런 종류의 문제는 사전 예방법을 익혀두는 것이 매우 중요하다.
 
-## Item8. 다 쓴 객체 참조를 해제하라. 
+## Item8. finalizer와 clean
 
 
 
@@ -431,7 +431,7 @@ public Object pop() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNTkzNjg2LDE5MzU4ODgwMTYsNTk1ND
+eyJoaXN0b3J5IjpbNDk5NzU4OTUwLDE5MzU4ODgwMTYsNTk1ND
 UzMTMxLDEwNzI2NTU2MTQsMTA1MDI2MjQyLDU0MTA3NDc0NSwt
 MTc2OTQ4Mzg3MCwtMjYyOTI5Mjc4LDY0MDE2NDk3NiwyNDM3NT
 AyMTQsMTczMjY2OTQ4MywtNTk3MDk5MjcxLDcxMDU5MzM0Miwt
