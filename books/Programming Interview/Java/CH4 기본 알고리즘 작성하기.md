@@ -10,8 +10,10 @@ Comparable은 비교하려는 객체간의 자연스러운 순서로 정렬할�
 
 Arrays.sort, Collections.sort 등 정렬 메서드를 사용할때는 정렬할 객체들이 Comparable 인터페이스를 구현해야 한다. 만약 구현하지 않으면 ClassCastException이 발생한다. 
 
+일반적인 순서에 반대되는것 같이 원하는 순서를 정의하고 싶으면 sort 메서드에서 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg4NTQzNjk5LDE4NjM2MzA0OTVdfQ==
+eyJoaXN0b3J5IjpbMjAwMjg3MjUzMywxODYzNjMwNDk1XX0=
 -->
