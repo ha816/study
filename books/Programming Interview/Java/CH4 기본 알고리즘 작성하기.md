@@ -13,10 +13,10 @@ Arrays.sort, Collections.sort 등 정렬 메서드를 사용할때는 정렬할 
 
 >버블 정렬 알고리즘은 어떻게 구현하는가? 
 
-
+>삽입 정렬 알고리즘은 어떻게 구현하는가? 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNTY5MTc4MiwyMDc3NTUzMzQ5LDE4Nj
-M2MzA0OTVdfQ==
+eyJoaXN0b3J5IjpbMTgzOTA3MjU3OSwxMzE1NjkxNzgyLDIwNz
+c1NTMzNDksMTg2MzYzMDQ5NV19
 -->
