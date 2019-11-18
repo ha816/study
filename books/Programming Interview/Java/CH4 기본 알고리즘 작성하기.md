@@ -12,11 +12,11 @@ Arrays.sort, Collections.sort 등 정렬 메서드를 사용할때는 정렬할 
 일반적인 순서에 반대되는것 같이 원하는 순서를 정의하고 싶으면 sort 메서드에서 사용할 Comparator 인터페이스에 compare 메서드를  구현해줘야 한다. 
 
 >버블 정렬 알고리즘은 어떻게 구현하는가? 
-
 >삽입 정렬 알고리즘은 어떻게 구현하는가? 
+>퀵정 정렬 알고리즘은 어떻게 구현하는가?
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzOTA3MjU3OSwxMzE1NjkxNzgyLDIwNz
-c1NTMzNDksMTg2MzYzMDQ5NV19
+eyJoaXN0b3J5IjpbODUyMjI5ODcyLDEzMTU2OTE3ODIsMjA3Nz
+U1MzM0OSwxODYzNjMwNDk1XX0=
 -->
