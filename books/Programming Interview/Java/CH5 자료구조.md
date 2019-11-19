@@ -83,6 +83,13 @@ TreeMap은 키를 정렬가능한 순서에 따라 저장하기 때문에 HashCo
 LinkedHashMap은 기본적으로 HashMap가 같은 방식으로 동작한다. 하지만 키를 반복해서 찾을때 삽입한 순서를 유지하는 특성이 있다. 
 
 ```
+LinkedHashMap map
+map.put(4, "four");
+map.put(3, "four")
+map.put(2, "four")
+
+map.keySet().iterator()
+```
 
 ## ConcurrentHashMap
 
@@ -105,7 +112,7 @@ ConcurrentHashMap 클래스의 구조는 원본 Map과 비교해서 약간 차�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzIxOTg3NDMsMzE4OTQzNzUxLC0xMD
+eyJoaXN0b3J5IjpbLTE1OTE0MzkxNDksMzE4OTQzNzUxLC0xMD
 gwNzQ4Mzc3LC0xMjI5MjI2Njg3LDE4MzcyODg1MTcsLTgwMzQ5
 NTE0NCwxNTU5NTY5MDY3LDIwNTkxMDQyMTVdfQ==
 -->
