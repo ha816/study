@@ -55,6 +55,8 @@ Binary Heap의 두 가지 중요한 특성
 
 맵은 해시라고도 하며, 키-값 형태의 저장 자료구조다.  맵을 구현할 때는 Map  인터페이스를 사용한다. 자바 컬렉션 API의 일부지만 List 인터페이스와 달리 Collection 인터페이스를 구현하지는 않는다. 
 
+맵의 키 값은 유니크하다. 
+
 
 
 
@@ -66,6 +68,6 @@ Binary Heap의 두 가지 중요한 특성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NjAxMzU0OCwxODM3Mjg4NTE3LC04MD
-M0OTUxNDQsMTU1OTU2OTA2NywyMDU5MTA0MjE1XX0=
+eyJoaXN0b3J5IjpbLTEyMjkyMjY2ODcsMTgzNzI4ODUxNywtOD
+AzNDk1MTQ0LDE1NTk1NjkwNjcsMjA1OTEwNDIxNV19
 -->
