@@ -404,11 +404,7 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
   finalizer와 cleaner를 적절히 활용하는 두 번재 예는 네이티브 피어(native peer)와 연결된 객체에서다. 네이티브 피어란 일반 자바 객체가 네이티브 메서드를 통해 기능을 위임한 네이티브 객체를 말한다. 네이티브 피어는 자바 객체가 아니니 가비지 컬렉터는 그 존재를 알지 못한다. 그 결과로 자바 피어를 회수할때 네이티브 객체까지 회수하지 못한다. cleaner나 finalizer가 나서서 처리하기 적당한 작업이다. 단 성능 저하를 감당할 수 있고 네이티브 피어가 심각한 자원을 가지고 있지 않을 때에만 해당된다. 성능 저하를 감당할 수 없거나 네이티브 피어가 사용하는 자원을 즉시 회수해야 한다면 앞서 설명한 close 메서드를 사용해야 한다. 
 
-cleaner는 사용하기에 조금 까다롭다. 다음의 Room 클래스로 이 기능을 설명해보겠다. 방(room) 자원을 수거하기 전에 반드시 청소(clean)해야 한다고 가정해보자. Room 클래스는 AutoCloseable을 구현한다. 사실 자동 청소 안정망이 cleaner를 사용할지 말지는 순전히 내부 구현 방식에 관한 문제다. 즉 finalizer와 달리 cleaner는 클래스의 public API에 나타나지 않는다는 이야기다. 
-
-중첩 클래스(Inner  Class)는 기본적으로 바깥 객체의 참조를 갖게 된다. 따라서 바깥 객체를 참조하는 경우 순환 참조가 생겨 가비지 컬렉터가 인스턴스를 회수해갈 기회가 없어진다. 
-
-이를 피하고 싶다면 중첩 클래스를 정적으로 선언해라. 정적 중첩 클래스는 바깥 클래스를 참조할 수 없다. 
+중첩 클래스(Inner  Class)는 기본적으로 바깥 객체의 참조를 갖게 된다. 따라서 바깥 객체를 참조하는 경우 순환 참조가 생겨 가비지 컬렉터가 인스턴스를 회수해갈 기회가 없어진다. 이를 피하고 싶다면 중첩 클래스를 정적으로 선언해라. 정적 중첩 클래스는 바깥 클래스를 참조할 수 없다. 
 
 
 
@@ -467,11 +463,11 @@ cleaner는 사용하기에 조금 까다롭다. 다음의 Room 클래스로 이 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM2MzM1NDQsLTU0MzIxMTAxNywtMTQzMT
-Q5MDM2NCwxMjI0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQzOTMz
-MywtMTIxMjY3OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OCwyMD
-UwNTg5MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1MDkz
-NTEsLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2NDcsLT
-cyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgwMTI0
-MTkxMl19
+eyJoaXN0b3J5IjpbLTE5MDQ3MzkxMDMsLTU0MzIxMTAxNywtMT
+QzMTQ5MDM2NCwxMjI0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQz
+OTMzMywtMTIxMjY3OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OC
+wyMDUwNTg5MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1
+MDkzNTEsLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2ND
+csLTcyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgw
+MTI0MTkxMl19
 -->
