@@ -20,9 +20,10 @@ Arrays.sort, Collections.sort 등 정렬 메서드를 사용할때는 정렬할 
 
 >이진 검색은 어떻게 구현하는가?
 
+이진 검색은 이미 정렬된 원소로 구성된  리스트가 주어졌을때, 내가 찾고자하는 원소가 어디에 있는지  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzA5ODIyMiwxOTg2MTUyODc5LDEzMT
-U2OTE3ODIsMjA3NzU1MzM0OSwxODYzNjMwNDk1XX0=
+eyJoaXN0b3J5IjpbLTE1MzEwNDI5NzEsMTk4NjE1Mjg3OSwxMz
+E1NjkxNzgyLDIwNzc1NTMzNDksMTg2MzYzMDQ5NV19
 -->
