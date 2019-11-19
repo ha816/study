@@ -416,7 +416,7 @@ System.exit을 호출할 때의 cleaner 동작은 구현하기 나름이다. 청
 
 ## Item9. try-finally 보다는 try-with-resources를 사용하라.
 
-
+자바 라이브러리에는 close 메서드를 호출해 직접 닫아줘야 하는 자원이 많다. 
 
 
 
@@ -475,11 +475,11 @@ System.exit을 호출할 때의 cleaner 동작은 구현하기 나름이다. 청
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNzI2MjAxMSwtNTQzMjExMDE3LC0xND
-MxNDkwMzY0LDEyMjQ0Nzg5MDgsNzQ2MjM0MTM2LC0xODc3NDM5
-MzMzLC0xMjEyNjc5MjUzLDQzMjU2OTcxLC0xMjU5Mzg0NDc4LD
-IwNTA1ODkxNjcsNTM3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5ODUw
-OTM1MSwtNTIwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0Ny
-wtNzI2NTI5MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xODAx
-MjQxOTEyXX0=
+eyJoaXN0b3J5IjpbLTExMjk0NzU4NzYsLTU0MzIxMTAxNywtMT
+QzMTQ5MDM2NCwxMjI0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQz
+OTMzMywtMTIxMjY3OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OC
+wyMDUwNTg5MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1
+MDkzNTEsLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2ND
+csLTcyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgw
+MTI0MTkxMl19
 -->
