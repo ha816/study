@@ -420,7 +420,12 @@ System.exit을 호출할 때의 cleaner 동작은 구현하기 나름이다. 청
 
 전통적으로는 자원이 제대로 닫힘을 보장하는 수단으로 try-finally구문이 쓰였다. 
 ```
-
+BufferedReader br = new BufferedReader();
+try {
+	return br.readLine()
+} finally {
+	br.close();
+}
 ```
 
 
@@ -480,11 +485,11 @@ System.exit을 호출할 때의 cleaner 동작은 구현하기 나름이다. 청
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTE2MDkxMywtNTQzMjExMDE3LC0xND
-MxNDkwMzY0LDEyMjQ0Nzg5MDgsNzQ2MjM0MTM2LC0xODc3NDM5
-MzMzLC0xMjEyNjc5MjUzLDQzMjU2OTcxLC0xMjU5Mzg0NDc4LD
-IwNTA1ODkxNjcsNTM3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5ODUw
-OTM1MSwtNTIwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0Ny
-wtNzI2NTI5MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xODAx
-MjQxOTEyXX0=
+eyJoaXN0b3J5IjpbODY1NjE5OTQ3LC01NDMyMTEwMTcsLTE0Mz
+E0OTAzNjQsMTIyNDQ3ODkwOCw3NDYyMzQxMzYsLTE4Nzc0Mzkz
+MzMsLTEyMTI2NzkyNTMsNDMyNTY5NzEsLTEyNTkzODQ0NzgsMj
+A1MDU4OTE2Nyw1Mzc3MDQwNjEsMjAzODM0MTU1MSwtNDk4NTA5
+MzUxLC01MjAwMDgwMjEsLTE3MDMyOTA2LC0xNzA1OTk5NjQ3LC
+03MjY1MjkxMjIsMTU4ODQ1MTEwLC04MzM1MzA0ODcsLTE4MDEy
+NDE5MTJdfQ==
 -->
