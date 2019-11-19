@@ -74,21 +74,21 @@ hashCode 메서드를 간단히 설명하자면 두 개의 같은 인스턴스�
 ## TreeMap
 
 TreeMap은 Map 인터페이스를 구현하는데 이진 트리 구조를 이용한다. 
-즉 트리의 각 노드가 키-값 쌍(Entry)가 된다. 
-
-TreeMap은 키를 정렬가능한 순서에 따라 저장하기 때문에 HashCode는 전혀 사용되지 않는다. TreeMap클래스는 균형을 맞춘 트리 구조로 구성되기 때문에 검색, 추가, 삭제 같은 모든 동작이 항상 $O(log n)$에 처리된다. 
+즉 트리의 각 노드가 키-값 쌍(Entry)가 된다. TreeMap은 키를 정렬가능한 순서에 따라 저장하기 때문에 HashCode는 전혀 사용되지 않는다. TreeMap클래스는 균형을 맞춘 트리 구조로 구성되기 때문에 검색, 추가, 삭제 같은 모든 동작이 항상 $O(log n)$에 처리된다. 
 
 ## LinkedHashMap
 
-LinkedHashMap은 기본적으로 HashMap가 같은 방식으로 동작한다. 하지만 키를 반복해서 찾을때 삽입한 순서를 유지하는 특성이 있다. 
+LinkedHashMap은 기본적으로 HashMap가 같은 방식으로 동작한다. 하지만 키를 반복해서 찾을 때 **삽입한 했던 순서를 유지하는 특성**이 있다. 
 
 ```
 LinkedHashMap map
 map.put(4, "four");
 map.put(3, "four")
 map.put(2, "four")
-
-map.keySet().iterator()
+Iterator keys = map.keySet().iterator();
+print(keys.next); //4
+print(keys.next); //3
+print(keys.next); //2
 ```
 
 ## ConcurrentHashMap
@@ -112,7 +112,7 @@ ConcurrentHashMap 클래스의 구조는 원본 Map과 비교해서 약간 차�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTE0MzkxNDksMzE4OTQzNzUxLC0xMD
-gwNzQ4Mzc3LC0xMjI5MjI2Njg3LDE4MzcyODg1MTcsLTgwMzQ5
-NTE0NCwxNTU5NTY5MDY3LDIwNTkxMDQyMTVdfQ==
+eyJoaXN0b3J5IjpbNzE3NDA2ODIyLDMxODk0Mzc1MSwtMTA4MD
+c0ODM3NywtMTIyOTIyNjY4NywxODM3Mjg4NTE3LC04MDM0OTUx
+NDQsMTU1OTU2OTA2NywyMDU5MTA0MjE1XX0=
 -->
