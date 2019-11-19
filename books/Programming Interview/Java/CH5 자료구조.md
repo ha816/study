@@ -105,23 +105,13 @@ ConcurrentHashMap 클래스의 구조는 원본 Map과 비교해서 약간 차�
 # 집합
 
 집합은 중복을 허용하지 않고 순서가 없는 객체들의 모임이다.
-
 Set은 Collection 인터페이스를 확장한다. 
-
-
-
-
-
-# 집합
-
-
-
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwODcxMzUzLDE1NzA1NDIzMjYsMzE4OT
-QzNzUxLC0xMDgwNzQ4Mzc3LC0xMjI5MjI2Njg3LDE4MzcyODg1
-MTcsLTgwMzQ5NTE0NCwxNTU5NTY5MDY3LDIwNTkxMDQyMTVdfQ
-==
+eyJoaXN0b3J5IjpbMTc3OTY5MjkyNiwxNTcwNTQyMzI2LDMxOD
+k0Mzc1MSwtMTA4MDc0ODM3NywtMTIyOTIyNjY4NywxODM3Mjg4
+NTE3LC04MDM0OTUxNDQsMTU1OTU2OTA2NywyMDU5MTA0MjE1XX
+0=
 -->
