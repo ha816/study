@@ -452,13 +452,14 @@ try {
 ```
 try (
 	InputStream in = new FileInputStream(src);
-	OutputStream out = new FileOutputStream(dst);) {
+	OutputStream out = new FileOutputStream(dst);){
 	byte[] buf = new byte[];
 	while(in.read(bf) >= 0 ){
 		out.write(buf, 0, n);
 	}
 } 
 ```
+try-with-resources 버전은 짧고 읽기 수월할 뿐만 아니라 문제 진단도 훨씬 좋다. 실전에서는 프로그래머에게 보여줄 예외 하나만 보존되고 다른 여러 예외가 숨겨질수도 있다. 이렇게 숨겨진 예외도 그냥 버려지지는 않고, 스택 추적 내역에 (
 
 
 
@@ -515,7 +516,7 @@ try (
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MjgyMjAwNyw4MjcwMjIzMjYsMzYxNT
+eyJoaXN0b3J5IjpbMTYxMTA3MTI1Nyw4MjcwMjIzMjYsMzYxNT
 gwNjMyLC00MTcyOTQ1MTcsLTU0MzIxMTAxNywtMTQzMTQ5MDM2
 NCwxMjI0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQzOTMzMywtMT
 IxMjY3OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OCwyMDUwNTg5
