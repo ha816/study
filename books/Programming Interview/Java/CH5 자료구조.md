@@ -36,6 +36,11 @@ Deque(덱이라 발음)
 
 # 트리
 
+트리는 자식이라 부르는 서로 다른 원소를 많이 나열할 수 있는 자료구조다. 
+
+
+
+
 # 맵
 
 # 집합
@@ -46,6 +51,6 @@ Deque(덱이라 발음)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMzQ5NTE0NCwxNTU5NTY5MDY3LDIwNT
-kxMDQyMTVdfQ==
+eyJoaXN0b3J5IjpbLTEzNjUwODQxNjUsLTgwMzQ5NTE0NCwxNT
+U5NTY5MDY3LDIwNTkxMDQyMTVdfQ==
 -->
