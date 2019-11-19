@@ -7,7 +7,9 @@
 
 배열은 정의할때 크기를 지정해야 한다. 
 배열 원소에 인덱스 값으로 직접 접근하는 것을 랜덤 접근이라 한다.
-배열 전체를 사용 중이라면 
+배열 전체를 사용 중일때 원소를 추가하려면 배열의 크기를 늘려야 하는데 실제로는 더 큰 배열을 만들고 현재 배열에 있는 원소를 복사하는 방식으로 복사를 한다. 
+
+ArrayList는 내부적으로 배열을 사용한다
 
 
 
@@ -23,5 +25,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMyMTE5NzgzXX0=
+eyJoaXN0b3J5IjpbLTgwMzY2MDIwOF19
 -->
