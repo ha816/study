@@ -3,7 +3,8 @@
 >빌더 패턴은 얼마나 유용한가?
 
 * 다루고자 하는 객체 생성시 객체가 가지는 필드가 많을 경우 유용한 패턴.
-* 일반적으로 내부에 생성하고자 하는 객체
+* 일반적으로 생성하고자 하는 객체 내부에 중첩 클래스(inner class)로 빌더 클래스를 만든다.
+* 빌더는 세터메서드 호출마다 빌더 자신을 반환한다.(chain 
 
 # 스트레티지 패턴
 
@@ -30,5 +31,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzI3OTI5NDFdfQ==
+eyJoaXN0b3J5IjpbMzc2OTU2Mjc3XX0=
 -->
