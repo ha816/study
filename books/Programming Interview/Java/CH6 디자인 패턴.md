@@ -25,13 +25,13 @@
 > 데코레이터 패턴의 예를 설명할 수 있는가?
 
 * 다수의 데코레이터 객체가 작업에 관여하여 원하는 작업을 완성하는 패턴.
-* 데코레이터 객체는 내부 필드로 다른 데코레이터 객체를 전달 받고 필요한 메서드를 호출하면서 자신이 해야하는 추가 작업을 
-* 데코레이터 객체는 메서드로 
-
+* 데코레이터 객체는 내부 필드로 다른 데코레이터 객체를 전달 받는다. 전달 받은 객체의 필요 메서드를 호출하면서 자신이 해야하는 작업을 수행한 다음 데코레이터 객체를 반환한다. 
 
 # 플라이웨이트 패턴
 
 > 플라이웨이트 패턴의 구현 방법을 설명할 수 있는가?
+
+* 대표적인 예로 Integer.valueOf()가 있다. 플라이 웨이트 패턴은 불필요한 객
 
 # 싱글턴 패턴
 
@@ -42,6 +42,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MzY0MzMyOCwyMTExNDIzNTkyLDIxMj
+eyJoaXN0b3J5IjpbLTMzMDgyMDg2OCwyMTExNDIzNTkyLDIxMj
 MxMTI3MDZdfQ==
 -->
