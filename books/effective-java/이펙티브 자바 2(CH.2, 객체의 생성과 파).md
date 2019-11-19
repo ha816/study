@@ -414,6 +414,9 @@ System.exit을 호출할 때의 cleaner 동작은 구현하기 나름이다. 청
 >핵심정리
 >cleaner(자바 8까지는 finalizer)는 안정만 역활이나 중요하지 않은 네이티브 자원을 회수하는 용으로만 사용하자. 물론 이런 경우라도 불확실성과 성능 저하에 주의해야 한다. 
 
+## Item9. try-finally 보다는 try-with-resources를 사용하라.
+
+
 
 
 
@@ -472,11 +475,11 @@ System.exit을 호출할 때의 cleaner 동작은 구현하기 나름이다. 청
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg5NTU1MTMxLC01NDMyMTEwMTcsLTE0Mz
-E0OTAzNjQsMTIyNDQ3ODkwOCw3NDYyMzQxMzYsLTE4Nzc0Mzkz
-MzMsLTEyMTI2NzkyNTMsNDMyNTY5NzEsLTEyNTkzODQ0NzgsMj
-A1MDU4OTE2Nyw1Mzc3MDQwNjEsMjAzODM0MTU1MSwtNDk4NTA5
-MzUxLC01MjAwMDgwMjEsLTE3MDMyOTA2LC0xNzA1OTk5NjQ3LC
-03MjY1MjkxMjIsMTU4ODQ1MTEwLC04MzM1MzA0ODcsLTE4MDEy
-NDE5MTJdfQ==
+eyJoaXN0b3J5IjpbLTMxNzI2MjAxMSwtNTQzMjExMDE3LC0xND
+MxNDkwMzY0LDEyMjQ0Nzg5MDgsNzQ2MjM0MTM2LC0xODc3NDM5
+MzMzLC0xMjEyNjc5MjUzLDQzMjU2OTcxLC0xMjU5Mzg0NDc4LD
+IwNTA1ODkxNjcsNTM3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5ODUw
+OTM1MSwtNTIwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0Ny
+wtNzI2NTI5MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xODAx
+MjQxOTEyXX0=
 -->
