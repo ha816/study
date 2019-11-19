@@ -23,8 +23,8 @@ LinkedList의 특징
 * 삭제 : 삭제도 간단하며, 크기도 즉각 줄어든다. 
 
 정리
-* 일반적으로 원소에 빠른 속도로 접근해야 하거나, 리스트의 크기가 클수록 ArrayList가 좋다.
-* 
+* 일반적으로 원소에 빠른 속도로 접근해야 하거나, 리스트의 크기가 클수록 ArrayList가 좋다. 그리고 첫 부분이나 중간에 원소를 추가/삭제 해야하는 경우가 적으면 더 좋다. 
+*LinkedList는  중간
 
 
 
@@ -40,5 +40,5 @@ LinkedList의 특징
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MDQ1MTgyOCwyMDU5MTA0MjE1XX0=
+eyJoaXN0b3J5IjpbMzM4ODM3Mjk3LDIwNTkxMDQyMTVdfQ==
 -->
