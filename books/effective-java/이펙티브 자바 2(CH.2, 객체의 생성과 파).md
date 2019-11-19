@@ -439,15 +439,12 @@ try {
 		}
 	} finally {
 		out.close();
-	}
-	
-
-	return br.readLine()
+	}	
 } finally {
-	br.close();
+	in.close();
 }
 ```
-
+위와 같은 실수를 훌륭한 프로그래머 조차 흔히 한다. 또 try-finally문을 제대로 사용한 앞의 두 코프조차 미묘한 결점이 있다. 
 
 
 
@@ -506,11 +503,11 @@ try {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzY1MjM1OTksLTQxNzI5NDUxNywtNT
-QzMjExMDE3LC0xNDMxNDkwMzY0LDEyMjQ0Nzg5MDgsNzQ2MjM0
-MTM2LC0xODc3NDM5MzMzLC0xMjEyNjc5MjUzLDQzMjU2OTcxLC
-0xMjU5Mzg0NDc4LDIwNTA1ODkxNjcsNTM3NzA0MDYxLDIwMzgz
-NDE1NTEsLTQ5ODUwOTM1MSwtNTIwMDA4MDIxLC0xNzAzMjkwNi
-wtMTcwNTk5OTY0NywtNzI2NTI5MTIyLDE1ODg0NTExMCwtODMz
-NTMwNDg3XX0=
+eyJoaXN0b3J5IjpbLTQxNzY2NTM0MywtNDE3Mjk0NTE3LC01ND
+MyMTEwMTcsLTE0MzE0OTAzNjQsMTIyNDQ3ODkwOCw3NDYyMzQx
+MzYsLTE4Nzc0MzkzMzMsLTEyMTI2NzkyNTMsNDMyNTY5NzEsLT
+EyNTkzODQ0NzgsMjA1MDU4OTE2Nyw1Mzc3MDQwNjEsMjAzODM0
+MTU1MSwtNDk4NTA5MzUxLC01MjAwMDgwMjEsLTE3MDMyOTA2LC
+0xNzA1OTk5NjQ3LC03MjY1MjkxMjIsMTU4ODQ1MTEwLC04MzM1
+MzA0ODddfQ==
 -->
