@@ -82,9 +82,13 @@ TreeMap은 키를 정렬가능한 순서에 따라 저장하기 때문에 HashCo
 
 LinkedHashMap은 기본적으로 HashMap가 같은 방식으로 동작한다. 하지만 키를 반복해서 찾을때 삽입한 순서를 유지하는 특성이 있다. 
 
+```
+
 ## ConcurrentHashMap
 
-하나의 맵 인스턴스를 많은 쓰레드에서 공유하고자 한다면 ConcurrentHashMap을 쓰자. 
+하나의 맵 인스턴스를 많은 쓰레드에서 공유하고자 한다면 ConcurrentHashMap을 쓰자. 이름에서 보듯 쓰레드 세이프(Thread Safe)하고, 맵에 값을 쓰는 도중이라도 값을 읽어서 변환할 수 있다. 
+
+ConcurrentHashMap 클래스의 구조는 원본 Map과 비교해서 약간 차이가 있는데 Size 메서드가 맵의 예상 크기를 반환한다. 현재 수행중인 모든 쓰기 작업을 고려하지 않기 때문이다.
 
 
 
@@ -101,7 +105,7 @@ LinkedHashMap은 기본적으로 HashMap가 같은 방식으로 동작한다. �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTg0MDkwMCwzMTg5NDM3NTEsLTEwOD
-A3NDgzNzcsLTEyMjkyMjY2ODcsMTgzNzI4ODUxNywtODAzNDk1
-MTQ0LDE1NTk1NjkwNjcsMjA1OTEwNDIxNV19
+eyJoaXN0b3J5IjpbLTEzMzIxOTg3NDMsMzE4OTQzNzUxLC0xMD
+gwNzQ4Mzc3LC0xMjI5MjI2Njg3LDE4MzcyODg1MTcsLTgwMzQ5
+NTE0NCwxNTU5NTY5MDY3LDIwNTkxMDQyMTVdfQ==
 -->
