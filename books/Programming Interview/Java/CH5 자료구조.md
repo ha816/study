@@ -40,11 +40,14 @@ Deque(덱이라 발음)
 
 대표적으로 이진트리가 있는데 이 트리는 최대 두개의 자식을 가질 수 있는 트리를 말한다. 이진 트리의 구현으로 이진 검색 트리가 있다. 
 
-
 이진 검색 트리의 효율은 트리의 균형에서 나온다. 균형 있는 트리를 만들기 위해 다양한 트리 기법이 있고 대표적으로는 AVL 트리가 있다. 
-일반적으로 트리의 균형이 맞을때는 검색, 삽입, 삭제시 $O(log n)$)
+일반적으로 트리의 균형이 맞을때는 검색, 삽입, 삭제시 $O(log n)$의 처리시간이 소요된다.
 
-> 이진검색트리 
+> AVL 특성(이진검색트리) 
+
+이진 트리의 또 다른 응용법으로 B
+
+> Heap 특성(이진검색트리)
 
 
 
@@ -58,6 +61,6 @@ Deque(덱이라 발음)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNTk1NTg3NywtODAzNDk1MTQ0LDE1NT
-k1NjkwNjcsMjA1OTEwNDIxNV19
+eyJoaXN0b3J5IjpbLTIxNDcyMDEwNDEsLTgwMzQ5NTE0NCwxNT
+U5NTY5MDY3LDIwNTkxMDQyMTVdfQ==
 -->
