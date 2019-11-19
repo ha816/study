@@ -452,15 +452,12 @@ try {
 ```
 try (
 	InputStream in = new FileInputStream(src);
-	OutputStream out = new FileOutputStream(dst);
-) {
+	OutputStream out = new FileOutputStream(dst);) {
 	byte[] buf = new byte[];
-		while(in.read(bf) >= 0 ){
-			out.write(buf, 0, n);
-		}
-} finally {
-	in.close();
-}
+	while(in.read(bf) >= 0 ){
+		out.write(buf, 0, n);
+	}
+} 
 ```
 
 
@@ -518,7 +515,7 @@ try (
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDUzOTkyNSw4MjcwMjIzMjYsMzYxNT
+eyJoaXN0b3J5IjpbLTU2MjgyMjAwNyw4MjcwMjIzMjYsMzYxNT
 gwNjMyLC00MTcyOTQ1MTcsLTU0MzIxMTAxNywtMTQzMTQ5MDM2
 NCwxMjI0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQzOTMzMywtMT
 IxMjY3OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OCwyMDUwNTg5
