@@ -406,6 +406,10 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 중첩 클래스(Inner  Class)는 기본적으로 바깥 객체의 참조를 갖게 된다. 따라서 바깥 객체를 참조하는 경우 순환 참조가 생겨 가비지 컬렉터가 인스턴스를 회수해갈 기회가 없어진다. 이를 피하고 싶다면 중첩 클래스를 정적으로 선언해라. 정적 중첩 클래스는 바깥 클래스를 참조할 수 없다. 
 
+cleaner의 명세에는 이렇게 쓰여있다. 
+```
+System.exit을 호출할 때의 cleaner 동작은 구현하기 나름이다. 청소가 이뤄질지 보장하지 않는다.```
+
 
 
 
@@ -463,11 +467,11 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDQ3MzkxMDMsLTU0MzIxMTAxNywtMT
-QzMTQ5MDM2NCwxMjI0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQz
-OTMzMywtMTIxMjY3OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OC
-wyMDUwNTg5MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1
-MDkzNTEsLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2ND
-csLTcyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgw
-MTI0MTkxMl19
+eyJoaXN0b3J5IjpbMTQyODgwNzQwOCwtNTQzMjExMDE3LC0xND
+MxNDkwMzY0LDEyMjQ0Nzg5MDgsNzQ2MjM0MTM2LC0xODc3NDM5
+MzMzLC0xMjEyNjc5MjUzLDQzMjU2OTcxLC0xMjU5Mzg0NDc4LD
+IwNTA1ODkxNjcsNTM3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5ODUw
+OTM1MSwtNTIwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0Ny
+wtNzI2NTI5MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xODAx
+MjQxOTEyXX0=
 -->
