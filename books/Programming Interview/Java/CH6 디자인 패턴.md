@@ -24,7 +24,7 @@
 
 > 데코레이터 패턴의 예를 설명할 수 있는가?
 
-* proxy
+* 여러 단계 작업으로 원하는  사용할때 
 
 
 # 플라이웨이트 패턴
@@ -40,6 +40,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NDQ5NDM1MiwyMTExNDIzNTkyLDIxMj
-MxMTI3MDZdfQ==
+eyJoaXN0b3J5IjpbODY5MDU4NjEzLDIxMTE0MjM1OTIsMjEyMz
+ExMjcwNl19
 -->
