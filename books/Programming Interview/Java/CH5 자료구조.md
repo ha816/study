@@ -59,6 +59,8 @@ Binary Heap의 두 가지 중요한 특성
 
 HashMap 클래스는 해시 테이블을 자바로 구현한 것으로, 클래스 구현에는 키-값 쌍을 나타내는 Entry라는 내부 클래스가 있다. 
 
+특정 키 인스턴스의 값은 테이블 어디에 해당 값이 있는지를 정의한다. Object 클래스에 정의된 hashCode()는 int 타입값을 반환하며 이 값이 테이블 어디에 키-값 쌍이 있는지 확인하는데 사용된다 
+
 
 
 
@@ -73,7 +75,7 @@ HashMap 클래스는 해시 테이블을 자바로 구현한 것으로, 클래�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4OTY3Nzg0NCwtMTIyOTIyNjY4NywxOD
-M3Mjg4NTE3LC04MDM0OTUxNDQsMTU1OTU2OTA2NywyMDU5MTA0
-MjE1XX0=
+eyJoaXN0b3J5IjpbMzM4NzYyODgyLC0xMjI5MjI2Njg3LDE4Mz
+cyODg1MTcsLTgwMzQ5NTE0NCwxNTU5NTY5MDY3LDIwNTkxMDQy
+MTVdfQ==
 -->
