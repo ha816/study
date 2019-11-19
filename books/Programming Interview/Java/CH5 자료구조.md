@@ -28,7 +28,13 @@ LinkedList의 특징
 
 > Queue와 Deque는 무엇인가?
 
-Queue는 FI
+Queue
+: FIFO(first-in first-out) 자료구조를 구현한 자바 인터페이스
+
+Deque(덱이라 발음)
+: 
+
+
 
 
 # 트리
@@ -43,6 +49,6 @@ Queue는 FI
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNTcwMzM0MiwxNTU5NTY5MDY3LDIwNT
+eyJoaXN0b3J5IjpbLTk0NjE2NTE4MSwxNTU5NTY5MDY3LDIwNT
 kxMDQyMTVdfQ==
 -->
