@@ -5,12 +5,15 @@ Object는 기본적으로 상속해서 사용하도록 설계되어있다. Objec
 이번 장에서는 final이 아닌 메서드들을 언제 어떻게 재정의해야하는지를 다룬다. 또한 Comparable.compareTo의 경우 Object메서드는 아니지만 성격이 비슷하여 함께 다룬다. 
 
 핵심 키워드
-: Object 클래스
+: Object 클래스의 final이 아닌 메서드(equals, hashCode, toString, clone, finalize)
 
-##
+## Item10. equals는 일반 규약을 지켜 재정의하라. 
+
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUzODM5MTUxXX0=
+eyJoaXN0b3J5IjpbLTExMjQxNjI3NjBdfQ==
 -->
