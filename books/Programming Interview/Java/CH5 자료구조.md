@@ -34,9 +34,6 @@ Queue
 Deque(덱이라 발음)
 : Queue 인터페이스의 확장으로 자료구조의 양 끝에 원소를 추가하고 삭제할 수 있다. 
 
-
-
-
 # 트리
 
 # 맵
@@ -49,6 +46,6 @@ Deque(덱이라 발음)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MTk2MjU3NCwxNTU5NTY5MDY3LDIwNT
+eyJoaXN0b3J5IjpbLTgwMzQ5NTE0NCwxNTU5NTY5MDY3LDIwNT
 kxMDQyMTVdfQ==
 -->
