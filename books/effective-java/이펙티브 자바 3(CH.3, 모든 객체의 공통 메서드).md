@@ -9,11 +9,11 @@ Object는 기본적으로 상속해서 사용하도록 설계되어있다. Objec
 
 ## Item10. equals는 일반 규약을 지켜 재정의하라. 
 
-
+eq
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjQxNjI3NjBdfQ==
+eyJoaXN0b3J5IjpbMzI1OTIyNTcyLC0xMTI0MTYyNzYwXX0=
 -->
