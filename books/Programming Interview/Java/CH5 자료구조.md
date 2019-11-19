@@ -49,7 +49,9 @@ Deque(덱이라 발음)
 
 Binary Heap은 두 가지 중요한 특성을 가진다.
 1. Complete Binary Tree
-2. Max Heap일 경우, 부모는 자식 보다 큰 값을 가진다. 반대로 Min Heap
+2. Max Heap일 경우, 부모는 자식 보다 큰 값을 가진다. 반대로 Min Heap에선, 부모가 자식보다 작은 값을 가진다. 
+
+
 
 > Heap 특성(이진검색트리)
 
@@ -65,6 +67,6 @@ Binary Heap은 두 가지 중요한 특성을 가진다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTg3NTYyOSwtODAzNDk1MTQ0LDE1NT
+eyJoaXN0b3J5IjpbMTA2ODIzNDI4OSwtODAzNDk1MTQ0LDE1NT
 k1NjkwNjcsMjA1OTEwNDIxNV19
 -->
