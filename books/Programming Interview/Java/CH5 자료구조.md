@@ -17,6 +17,8 @@ ArrayList의 특징
 * 정리하자면 원소개 개수가 계속 변경되는 리스트라면 ArrayList의 특징이 단점으로 작용할 수 있다. 
 
 LinkedList의 특징
+*원소들을 배열에 저장하지 않고, 리스트 안에서 다음 원소를 가리키는 내부 참조를 이용한다. 
+*LinkedList의 참조는 리스트의 첫 원소를 가리키는 head를 참조한다. 
 
 
 
@@ -34,5 +36,5 @@ LinkedList의 특징
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1OTEwNDIxNV19
+eyJoaXN0b3J5IjpbLTk1MzA2NjczLDIwNTkxMDQyMTVdfQ==
 -->
