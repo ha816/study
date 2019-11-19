@@ -4,10 +4,24 @@
 
 # 스트레티지 패턴
 
->
+>스트레티지 패턴의 예를 보여줄 수 있는가?
+
+# 템플릿 메서드 패턴
+
+> 템플릿 메서드 패턴은 어떻게 사용하는가?
+
+# 데코레이터 패턴
+
+> 데코레이터 패턴의 예를 설명할 수 있는가?
+
+# 플라이웨이트 패턴
+
+> 플라이웨이트 패턴의 구현 방법을 설명할 수 있는가?
+
+# 싱글턴 패턴
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MDYzNjc2NF19
+eyJoaXN0b3J5IjpbLTEyMTg1NzkwMzFdfQ==
 -->
