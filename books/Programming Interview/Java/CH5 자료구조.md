@@ -12,7 +12,7 @@
 
 ArrayList의 특징
 * 내부적으로 배열을 사용한다. 즉 배열의 특징을 그대로 가져간다.(랜덤 접근, 전체 복사)
-* 
+* 배열의 시작 위치나 중간 위치에 새로운 원소를 추가하려고 하면, 그 뒤에 있는 원소를 
 
 
 
@@ -29,5 +29,5 @@ ArrayList의 특징
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzkxMDgzMTddfQ==
+eyJoaXN0b3J5IjpbOTU5MDMxNTYxXX0=
 -->
