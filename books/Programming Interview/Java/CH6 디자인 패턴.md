@@ -11,7 +11,9 @@
 # 스트레티지 패턴
 
 >스트레티지 패턴의 예를 보여줄 수 있는가?
-
+* 사실 너무나 자연스럽게 쓰고 있는 패턴
+* 대표적인 예로 DI(Dependency Injection)
+* 
 
 
 # 템플릿 메서드 패턴
@@ -35,5 +37,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MzA0MjQ4XX0=
+eyJoaXN0b3J5IjpbMjEyMzExMjcwNl19
 -->
