@@ -449,7 +449,19 @@ try {
 
 이러한 문제들은 자바 7이 투척한 try-with-resources  덕에 모두 해결되었다. 이 구조를 사용하려면 해당 자원이 AutoCloseable 인터페이스를 구현해야 한다. 단순히 void를 반환하는 close 메서드 하나만 덩그러니 정의한 인터페이스다. 자바 라이브러리와 서드파티 라이브러리들의 수많은 클래스와 인터페이스가 이미 AutoCloseable을 구현하거나 확장해뒀다. 여러분도 닫아야 하는 자원을 뜻하는 클래스를 작성한다면 AutoCloseable을 반드시 구현하도록 하자. 
 
-
+```
+try (
+	InputStream in = new FileInputStream(src);
+	OutputStream out = new FileOutputStream(dst);
+) {
+	byte[] buf = new byte[];
+		while(in.read(bf) >= 0 ){
+			out.write(buf, 0, n);
+		}
+} finally {
+	in.close();
+}
+```
 
 
 
@@ -506,11 +518,11 @@ try {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQyODIwODksODI3MDIyMzI2LDM2MT
-U4MDYzMiwtNDE3Mjk0NTE3LC01NDMyMTEwMTcsLTE0MzE0OTAz
-NjQsMTIyNDQ3ODkwOCw3NDYyMzQxMzYsLTE4Nzc0MzkzMzMsLT
-EyMTI2NzkyNTMsNDMyNTY5NzEsLTEyNTkzODQ0NzgsMjA1MDU4
-OTE2Nyw1Mzc3MDQwNjEsMjAzODM0MTU1MSwtNDk4NTA5MzUxLC
-01MjAwMDgwMjEsLTE3MDMyOTA2LC0xNzA1OTk5NjQ3LC03MjY1
-MjkxMjJdfQ==
+eyJoaXN0b3J5IjpbMTg0NDUzOTkyNSw4MjcwMjIzMjYsMzYxNT
+gwNjMyLC00MTcyOTQ1MTcsLTU0MzIxMTAxNywtMTQzMTQ5MDM2
+NCwxMjI0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQzOTMzMywtMT
+IxMjY3OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OCwyMDUwNTg5
+MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1MDkzNTEsLT
+UyMDAwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2NDcsLTcyNjUy
+OTEyMl19
 -->
