@@ -40,6 +40,8 @@ Deque(덱이라 발음)
 
 대표적으로 이진트리가 있는데 이 트리는 최대 두개의 자식을 가질 수 있는 트리를 말한다. 이진 트리의 구현 중 하나는 이진 검색 트리가 있다. 
 
+> 이진검색트리 구현하기
+
 
 
 # 맵
@@ -52,6 +54,6 @@ Deque(덱이라 발음)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzI1MzM3NjcsLTgwMzQ5NTE0NCwxNT
-U5NTY5MDY3LDIwNTkxMDQyMTVdfQ==
+eyJoaXN0b3J5IjpbNjA1NzE3MTYyLC04MDM0OTUxNDQsMTU1OT
+U2OTA2NywyMDU5MTA0MjE1XX0=
 -->
