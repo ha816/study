@@ -53,7 +53,7 @@ Binary Heap의 두 가지 중요한 특성
 
 # 맵
 
-맵은 해시라고도 하며, 키-값 형태의 저장 자료구조다.  맵을 구현할 때는 Map  인터페이스를 사용한다. 자바 컬렉션 API의 일부지만 List 인터페이스와 달리 Collection 인터페이스를 구현하지는 않는다. 맵의 키 값은 유니크하다. 
+맵은 키-값 형태로 데이터를 저장하는 저장 자료구조다.  맵을 구현할 때는 Map  인터페이스를 사용한다. 자바 컬렉션 API의 일부지만 List 인터페이스와 달리 Collection 인터페이스를 구현하지는 않는다. 맵의 키 값은 유니크하다. 
 
 ## HashMap 클래스
 
@@ -112,7 +112,7 @@ ConcurrentHashMap 클래스의 구조는 원본 Map과 비교해서 약간 차�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE3NDA2ODIyLDMxODk0Mzc1MSwtMTA4MD
-c0ODM3NywtMTIyOTIyNjY4NywxODM3Mjg4NTE3LC04MDM0OTUx
-NDQsMTU1OTU2OTA2NywyMDU5MTA0MjE1XX0=
+eyJoaXN0b3J5IjpbLTEwNDUwODA4OTksMzE4OTQzNzUxLC0xMD
+gwNzQ4Mzc3LC0xMjI5MjI2Njg3LDE4MzcyODg1MTcsLTgwMzQ5
+NTE0NCwxNTU5NTY5MDY3LDIwNTkxMDQyMTVdfQ==
 -->
