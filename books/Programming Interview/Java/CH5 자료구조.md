@@ -61,6 +61,8 @@ HashMap 클래스는 해시 테이블을 자바로 구현한 것으로, 클래�
 
 특정 키 인스턴스의 값은 테이블 어디에 해당 값이 있는지를 정의한다. Object 클래스에 정의된 hashCode()는 int 타입값을 반환하며 이 값이 테이블 어디에 키-값 쌍이 있는지 확인하는데 사용된다 
 
+hashCode 메서드를 간단히 설명하자면 두 개의 같은 인스턴스는 같은 hashCode값을 반환해야 한다. 하지만 같은 hashCode값을 가진다고 해서 두 인스턴스가 같은 것은 아니다. 
+
 
 
 
@@ -75,7 +77,7 @@ HashMap 클래스는 해시 테이블을 자바로 구현한 것으로, 클래�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4NzYyODgyLC0xMjI5MjI2Njg3LDE4Mz
-cyODg1MTcsLTgwMzQ5NTE0NCwxNTU5NTY5MDY3LDIwNTkxMDQy
-MTVdfQ==
+eyJoaXN0b3J5IjpbLTEwODA3NDgzNzcsLTEyMjkyMjY2ODcsMT
+gzNzI4ODUxNywtODAzNDk1MTQ0LDE1NTk1NjkwNjcsMjA1OTEw
+NDIxNV19
 -->
