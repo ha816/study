@@ -9,11 +9,11 @@ Object는 기본적으로 상속해서 사용하도록 설계되어있다. Objec
 
 ## Item10. equals는 일반 규약을 지켜 재정의하라. 
 
-eq
+equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도사리고 있어 조심해야 한다. 문제를 회피하는 가장 쉬운 방법은 재정의를 하지 않는 것이다. 그냥 두면 **클래스의 인스턴스는 오직 자기자신과만 같게된다.** 따라서 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI1OTIyNTcyLC0xMTI0MTYyNzYwXX0=
+eyJoaXN0b3J5IjpbLTU4MjMyOTcsLTExMjQxNjI3NjBdfQ==
 -->
