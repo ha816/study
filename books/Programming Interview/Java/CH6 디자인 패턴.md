@@ -3,13 +3,16 @@
 >빌더 패턴은 얼마나 유용한가?
 
 * 다루고자 하는 객체 생성시 객체가 가지는 필드가 많을 경우 유용한 패턴.
+* 객체 생성시 필요한 필드가 많아지면 가독성이 저하되고 필드 관리가 안된다. 
 * 일반적으로 생성하고자 하는 객체 내부에 중첩 클래스(inner class)로 빌더 클래스를 만든다.
 * 빌더는 세터메서드 호출마다 빌더 자신을 반환한다.(메서드 연쇄;method chaining) 또한 아직 완성되지 않은 객체를 build 메서드에서 판별한다.
-* 단점으로는 builder를 
+* 단점으로는 builder라는 객체를 추가로 생성해야 한다. 
 
 # 스트레티지 패턴
 
 >스트레티지 패턴의 예를 보여줄 수 있는가?
+
+
 
 # 템플릿 메서드 패턴
 
@@ -32,5 +35,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM3NDM2MDQ0XX0=
+eyJoaXN0b3J5IjpbLTQ1MzA0MjQ4XX0=
 -->
