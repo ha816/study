@@ -76,7 +76,12 @@ hashCode 메서드를 간단히 설명하자면 두 개의 같은 인스턴스�
 TreeMap은 Map 인터페이스를 구현하는데 이진 트리 구조를 이용한다. 
 즉 트리의 각 노드가 키-값 쌍(Entry)가 된다. 
 
-TreeMap은 키를 정렬가능한 순서에 따라 저장하기 때문에 HashCode는 전혀 사용되지 않는다. TreeMap클래스에 
+TreeMap은 키를 정렬가능한 순서에 따라 저장하기 때문에 HashCode는 전혀 사용되지 않는다. TreeMap클래스는 균형을 맞춘 트리 구조로 구성되기 때문에 검색, 추가, 삭제 같은 모든 동작이 항상 $O(log n)$에 처리된다. 
+
+## LinkedHashMap
+
+LinkedHashMap은 기본적으로 HashMap가 같은 방식으로 동작한다. 
+
 
 
 
@@ -92,7 +97,7 @@ TreeMap은 키를 정렬가능한 순서에 따라 저장하기 때문에 HashCo
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMjU3NDI4MiwzMTg5NDM3NTEsLTEwOD
+eyJoaXN0b3J5IjpbMTMxNTEyNDY0NywzMTg5NDM3NTEsLTEwOD
 A3NDgzNzcsLTEyMjkyMjY2ODcsMTgzNzI4ODUxNywtODAzNDk1
 MTQ0LDE1NTk1NjkwNjcsMjA1OTEwNDIxNV19
 -->
