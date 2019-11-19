@@ -63,9 +63,7 @@ HashMap 클래스는 해시 테이블을 자바로 구현한 것으로, 클래�
 
 ### Hash Function
 
-해시 함수는 어떤 키를 입력으로 받아 적당한 값을 반환하는 함수이다. 해시 함수의 수행시간은 $O(C)$ 이어야 하고, 
-
-Object 클래스에 정의된 hashCode()는 int 타입값을 반환하며 이 값이 테이블 어디에 키-값 쌍이 있는지 확인하는데 사용된다 
+해시 함수는 어떤 키를 입력으로 받아 적당한 값을 반환하는 함수이다. 해시 함수의 수행시간은 $O(C)$이어야 한다. 이 해시 함수를 자바는 Object 클래스에 정의된 hashCode()로 구현한다. hashCode로 계산된 값은 해시 테이블 인덱스를  어디에 키-값 쌍이 있는지 확인하는데 사용된다 
 
 hashCode 메서드를 간단히 설명하자면 두 개의 같은 인스턴스는 같은 hashCode값을 반환해야 한다. 하지만 같은 hashCode값을 가진다고 해서 두 인스턴스가 같은 것은 아니다. 
 
@@ -120,7 +118,7 @@ ConcurrentHashMap 클래스의 구조는 원본 Map과 비교해서 약간 차�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTE1OTQwMzAsMzE4OTQzNzUxLC0xMD
-gwNzQ4Mzc3LC0xMjI5MjI2Njg3LDE4MzcyODg1MTcsLTgwMzQ5
-NTE0NCwxNTU5NTY5MDY3LDIwNTkxMDQyMTVdfQ==
+eyJoaXN0b3J5IjpbMTU3MDU0MjMyNiwzMTg5NDM3NTEsLTEwOD
+A3NDgzNzcsLTEyMjkyMjY2ODcsMTgzNzI4ODUxNywtODAzNDk1
+MTQ0LDE1NTk1NjkwNjcsMjA1OTEwNDIxNV19
 -->
