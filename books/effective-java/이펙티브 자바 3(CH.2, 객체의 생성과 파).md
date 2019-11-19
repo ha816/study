@@ -2,7 +2,7 @@
 
 핵심 키워드
 : 정적 팩터리 메서드(static factory method), 
-빌더(builder),
+빌더(builder), 싱글턴(singleton)
 
 
 ## Item1. 생성자 대신 정적 팩토리 메서드를 고려하라.
@@ -527,5 +527,5 @@ try-with-resources 버전은 짧고 읽기 수월할 뿐만 아니라 문제 진
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjA2OTI3NTBdfQ==
+eyJoaXN0b3J5IjpbLTEyNjk5MjcyMTddfQ==
 -->
