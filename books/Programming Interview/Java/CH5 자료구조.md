@@ -45,7 +45,11 @@ Deque(덱이라 발음)
 
 > AVL 특성(이진검색트리) 
 
-이진 트리의 또 다른 응용법으로 B
+이진 트리의 또 다른 응용법으로 Binary Heap이 있다.
+
+Binary Heap은 두 가지 중요한 특성을 가진다.
+1. Complete Binary Tree
+2. Max Heap일 경우, 부모는 자식 보다 큰 값을 가진다. 반대로 Min Heap
 
 > Heap 특성(이진검색트리)
 
@@ -61,6 +65,6 @@ Deque(덱이라 발음)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDcyMDEwNDEsLTgwMzQ5NTE0NCwxNT
-U5NTY5MDY3LDIwNTkxMDQyMTVdfQ==
+eyJoaXN0b3J5IjpbLTE2MTg3NTYyOSwtODAzNDk1MTQ0LDE1NT
+k1NjkwNjcsMjA1OTEwNDIxNV19
 -->
