@@ -38,6 +38,7 @@ Deque(덱이라 발음)
 
 트리는 자식이라 부르는 서로 다른 원소를 많이 나열할 수 있는 자료구조다. 
 
+대표적으로 이진트리가 있는데 이 트리는 최대 두개의 자식을 가질 수 있는 트리를 말한다. 이진 트리의 구현 중 하나는 이진 검색 트리가 있다. 
 
 
 
@@ -51,6 +52,6 @@ Deque(덱이라 발음)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjUwODQxNjUsLTgwMzQ5NTE0NCwxNT
+eyJoaXN0b3J5IjpbLTEwNzI1MzM3NjcsLTgwMzQ5NTE0NCwxNT
 U5NTY5MDY3LDIwNTkxMDQyMTVdfQ==
 -->
