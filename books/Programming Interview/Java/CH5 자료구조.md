@@ -57,6 +57,9 @@ Binary Heap의 두 가지 중요한 특성
 
 ## HashMap 클래스
 
+HashMap 클래스는 해시 테이블을 자바로 구현한 것으로, 클래스 구현에는 키-값 쌍을 나타내는 Entry라는 내부 클래스가 있다. 
+
+
 
 
 
@@ -70,7 +73,7 @@ Binary Heap의 두 가지 중요한 특성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5MTc3ODk1LC0xMjI5MjI2Njg3LDE4Mz
-cyODg1MTcsLTgwMzQ5NTE0NCwxNTU5NTY5MDY3LDIwNTkxMDQy
-MTVdfQ==
+eyJoaXN0b3J5IjpbLTc4OTY3Nzg0NCwtMTIyOTIyNjY4NywxOD
+M3Mjg4NTE3LC04MDM0OTUxNDQsMTU1OTU2OTA2NywyMDU5MTA0
+MjE1XX0=
 -->
