@@ -418,7 +418,10 @@ System.exit을 호출할 때의 cleaner 동작은 구현하기 나름이다. 청
 
 자바 라이브러리에는 close 메서드를 호출해 직접 닫아줘야 하는 자원이 많다. InputStream, OutputStream, java.sql.Connection등이 좋은 예다. 자원 닫기는 클라이언트가 놓치기 쉬워서 예측할 수 없는 성능 문제로 이어지기도 한다. 상당수가 안전망으로 finalizer를 활용하지만 finalizer는 그리 믿을만하지 못하다. 
 
-전통적으로는 자원이 제대로 닫힘을 보장하는 수단으로 try-finally구문이 쓰였다.
+전통적으로는 자원이 제대로 닫힘을 보장하는 수단으로 try-finally구문이 쓰였다. 
+```
+
+```
 
 
 
@@ -477,11 +480,11 @@ System.exit을 호출할 때의 cleaner 동작은 구현하기 나름이다. 청
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTE3NzE0NjUsLTU0MzIxMTAxNywtMT
-QzMTQ5MDM2NCwxMjI0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQz
-OTMzMywtMTIxMjY3OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OC
-wyMDUwNTg5MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1
-MDkzNTEsLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2ND
-csLTcyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgw
-MTI0MTkxMl19
+eyJoaXN0b3J5IjpbLTk2MTE2MDkxMywtNTQzMjExMDE3LC0xND
+MxNDkwMzY0LDEyMjQ0Nzg5MDgsNzQ2MjM0MTM2LC0xODc3NDM5
+MzMzLC0xMjEyNjc5MjUzLDQzMjU2OTcxLC0xMjU5Mzg0NDc4LD
+IwNTA1ODkxNjcsNTM3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5ODUw
+OTM1MSwtNTIwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0Ny
+wtNzI2NTI5MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xODAx
+MjQxOTEyXX0=
 -->
