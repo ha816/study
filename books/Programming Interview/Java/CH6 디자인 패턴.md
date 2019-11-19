@@ -17,8 +17,8 @@
 # 템플릿 메서드 패턴
 
 > 템플릿 메서드 패턴은 어떻게 사용하는가?
-* 공통적으로 여러 객체가 사용할 메서드를 미리 템플릿으로 정의해두고 재사용 하는것
-* 
+* 공통적으로 여러 객체가 사용할 메서드를 미리 템플릿으로 정의해두고 재사용 하는것.
+* 템플릿 메서드를 추상 클래스에 구현해두고, 구현 클래스는 이를 재사용해도 되고, 재정의를 통해 
 
 # 데코레이터 패턴
 
@@ -37,6 +37,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTA5NTU0MjcsMjExMTQyMzU5MiwyMT
-IzMTEyNzA2XX0=
+eyJoaXN0b3J5IjpbMTk2MzEwMzY2NiwyMTExNDIzNTkyLDIxMj
+MxMTI3MDZdfQ==
 -->
