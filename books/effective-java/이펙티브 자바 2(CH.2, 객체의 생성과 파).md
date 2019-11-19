@@ -406,7 +406,7 @@ finalizer를 사용한 클래스는 finalizer공격에 노출되어 심각한 �
 
 cleaner는 사용하기에 조금 까다롭다. 다음의 Room 클래스로 이 기능을 설명해보겠다. 방(room) 자원을 수거하기 전에 반드시 청소(clean)해야 한다고 가정해보자. Room 클래스는 AutoCloseable을 구현한다. 사실 자동 청소 안정망이 cleaner를 사용할지 말지는 순전히 내부 구현 방식에 관한 문제다. 즉 finalizer와 달리 cleaner는 클래스의 public API에 나타나지 않는다는 이야기다. 
 
-내부 클래스(중첩 클래스; )
+중첩 클래스(Inner  Class)는 기본적으로 바깥 객체의 참조를 갖게 된다. 이를 피하고 싶다면 정적 
 
 
 
@@ -465,11 +465,11 @@ cleaner는 사용하기에 조금 까다롭다. 다음의 Room 클래스로 이 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxOTA3NTQ0LC0xNDMxNDkwMzY0LDEyMj
-Q0Nzg5MDgsNzQ2MjM0MTM2LC0xODc3NDM5MzMzLC0xMjEyNjc5
-MjUzLDQzMjU2OTcxLC0xMjU5Mzg0NDc4LDIwNTA1ODkxNjcsNT
-M3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5ODUwOTM1MSwtNTIwMDA4
-MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0NywtNzI2NTI5MTIyLD
-E1ODg0NTExMCwtODMzNTMwNDg3LC0xODAxMjQxOTEyLDE5MzU4
-ODgwMTZdfQ==
+eyJoaXN0b3J5IjpbMTUxODk3NzY1MCwtMTQzMTQ5MDM2NCwxMj
+I0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQzOTMzMywtMTIxMjY3
+OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OCwyMDUwNTg5MTY3LD
+UzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1MDkzNTEsLTUyMDAw
+ODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2NDcsLTcyNjUyOTEyMi
+wxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgwMTI0MTkxMiwxOTM1
+ODg4MDE2XX0=
 -->
