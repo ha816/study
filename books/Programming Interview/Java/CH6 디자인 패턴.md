@@ -5,7 +5,7 @@
 * 다루고자 하는 객체 생성시 객체가 가지는 필드가 많을 경우 유용한 패턴.
 * 일반적으로 생성하고자 하는 객체 내부에 중첩 클래스(inner class)로 빌더 클래스를 만든다.
 * 빌더는 세터메서드 호출마다 빌더 자신을 반환한다.(메서드 연쇄;method chaining) 또한 아직 완성되지 않은 객체를 build 메서드에서 판별한다.
-* 
+* 단점으로는 builder를 
 
 # 스트레티지 패턴
 
@@ -32,5 +32,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDM4NjQ3OTFdfQ==
+eyJoaXN0b3J5IjpbNzM3NDM2MDQ0XX0=
 -->
