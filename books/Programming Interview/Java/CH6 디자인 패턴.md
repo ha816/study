@@ -12,8 +12,7 @@
 
 >스트레티지 패턴의 예를 보여줄 수 있는가?
 * 사실 너무나 자연스럽게 쓰고 있는 패턴. 대표적인 예로 DI(Dependency Injection)
-* 사용하려는 객체를 직접 만들어 쓰는 것이 아니라  그 객체를 사용하는 방법이다. 
-* 
+* 사용하려는 객체를 직접 만들어 쓰는 것이 아니라 사용하고 싶은 기능을 구현한 상위 객체를 받아 사용하는것이다. 
 
 
 # 템플릿 메서드 패턴
@@ -37,6 +36,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyODc4NDQ5LDIxMTE0MjM1OTIsMjEyMz
+eyJoaXN0b3J5IjpbNDE5ODg3Njk4LDIxMTE0MjM1OTIsMjEyMz
 ExMjcwNl19
 -->
