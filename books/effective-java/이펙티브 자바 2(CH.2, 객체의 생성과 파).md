@@ -461,7 +461,10 @@ try (
 ```
 try-with-resources 버전은 짧고 읽기 수월할 뿐만 아니라 문제 진단도 훨씬 좋다. 실전에서는 프로그래머에게 보여줄 예외 하나만 보존되고 다른 여러 예외가 숨겨질수도 있다. 이렇게 숨겨진 예외도 그냥 버려지지는 않고, 스택 추적 내역에 숨겨짐(suppressed)이라는 꼬리표를 달고 출력된다. 또한, 자바 7에서 Throwable에 추가된 getSuppressed 메서드를 사용하면 프로그램 코드에서 가져올 수도 있다. 
 
+보통의 try-finally에서처럼 try-with-resources에서도 catch 절을 쓸쑤가 있다. catch 덕분에 try문을 더 중첩하지 않고도 다수의 예외를 처리 할 수 있다. 
 
+>핵심 정리
+>꼭 회수 
 
 
 
@@ -518,11 +521,11 @@ try-with-resources 버전은 짧고 읽기 수월할 뿐만 아니라 문제 진
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI3ODU1MzUzLDgyNzAyMjMyNiwzNjE1OD
-A2MzIsLTQxNzI5NDUxNywtNTQzMjExMDE3LC0xNDMxNDkwMzY0
-LDEyMjQ0Nzg5MDgsNzQ2MjM0MTM2LC0xODc3NDM5MzMzLC0xMj
-EyNjc5MjUzLDQzMjU2OTcxLC0xMjU5Mzg0NDc4LDIwNTA1ODkx
-NjcsNTM3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5ODUwOTM1MSwtNT
-IwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0NywtNzI2NTI5
-MTIyXX0=
+eyJoaXN0b3J5IjpbLTgxNTI1OTQ2OCwzMjc4NTUzNTMsODI3MD
+IyMzI2LDM2MTU4MDYzMiwtNDE3Mjk0NTE3LC01NDMyMTEwMTcs
+LTE0MzE0OTAzNjQsMTIyNDQ3ODkwOCw3NDYyMzQxMzYsLTE4Nz
+c0MzkzMzMsLTEyMTI2NzkyNTMsNDMyNTY5NzEsLTEyNTkzODQ0
+NzgsMjA1MDU4OTE2Nyw1Mzc3MDQwNjEsMjAzODM0MTU1MSwtND
+k4NTA5MzUxLC01MjAwMDgwMjEsLTE3MDMyOTA2LC0xNzA1OTk5
+NjQ3XX0=
 -->
