@@ -14,10 +14,11 @@
 * 사실 너무나 자연스럽게 쓰고 있는 패턴. 대표적인 예로 DI(Dependency Injection)
 * 사용하려는 객체를 직접 만들어 쓰는 것이 아니라 사용하고 싶은 기능을 구현한 상위 객체를 받아 사용하는것이다. 
 
-
 # 템플릿 메서드 패턴
 
 > 템플릿 메서드 패턴은 어떻게 사용하는가?
+* 공통적으로 여러 객체가 사용할 메서드를 미리 템플릿으로 정의해두고 재사용 하는것
+* 
 
 # 데코레이터 패턴
 
@@ -36,6 +37,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE5ODg3Njk4LDIxMTE0MjM1OTIsMjEyMz
-ExMjcwNl19
+eyJoaXN0b3J5IjpbLTEyMTA5NTU0MjcsMjExMTQyMzU5MiwyMT
+IzMTEyNzA2XX0=
 -->
