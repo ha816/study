@@ -408,7 +408,7 @@ cleaner는 사용하기에 조금 까다롭다. 다음의 Room 클래스로 이 
 
 중첩 클래스(Inner  Class)는 기본적으로 바깥 객체의 참조를 갖게 된다. 따라서 바깥 객체를 참조하는 경우 순환 참조가 생겨 가비지 컬렉터가 인스턴스를 회수해갈 기회가 없어진다. 
 
-이를 피하고 싶다면 정적 
+이를 피하고 싶다면 중첩 클래스를 정적으로 선언해라. 정적 중첩 클래스는 바깥 클래스를 참조할 수 없다. 
 
 
 
@@ -467,11 +467,11 @@ cleaner는 사용하기에 조금 까다롭다. 다음의 Room 클래스로 이 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MzIxMTAxNywtMTQzMTQ5MDM2NCwxMj
-I0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQzOTMzMywtMTIxMjY3
-OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OCwyMDUwNTg5MTY3LD
-UzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1MDkzNTEsLTUyMDAw
-ODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2NDcsLTcyNjUyOTEyMi
-wxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgwMTI0MTkxMiwxOTM1
-ODg4MDE2XX0=
+eyJoaXN0b3J5IjpbNjM2MzM1NDQsLTU0MzIxMTAxNywtMTQzMT
+Q5MDM2NCwxMjI0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQzOTMz
+MywtMTIxMjY3OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OCwyMD
+UwNTg5MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1MDkz
+NTEsLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2NDcsLT
+cyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgwMTI0
+MTkxMl19
 -->
