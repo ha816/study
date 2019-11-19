@@ -464,7 +464,7 @@ try-with-resources 버전은 짧고 읽기 수월할 뿐만 아니라 문제 진
 보통의 try-finally에서처럼 try-with-resources에서도 catch 절을 쓸쑤가 있다. catch 덕분에 try문을 더 중첩하지 않고도 다수의 예외를 처리 할 수 있다. 
 
 >핵심 정리
->꼭 회수 
+>꼭 회수해야 하는 자원을 다룰때는 try-finally를 쓰지말고, try-with-resources를 사용하자. 예외는 없다. 코드는 더 짧고 
 
 
 
@@ -521,7 +521,7 @@ try-with-resources 버전은 짧고 읽기 수월할 뿐만 아니라 문제 진
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNTI1OTQ2OCwzMjc4NTUzNTMsODI3MD
+eyJoaXN0b3J5IjpbMTc3OTQ4Nzk1MSwzMjc4NTUzNTMsODI3MD
 IyMzI2LDM2MTU4MDYzMiwtNDE3Mjk0NTE3LC01NDMyMTEwMTcs
 LTE0MzE0OTAzNjQsMTIyNDQ3ODkwOCw3NDYyMzQxMzYsLTE4Nz
 c0MzkzMzMsLTEyMTI2NzkyNTMsNDMyNTY5NzEsLTEyNTkzODQ0
