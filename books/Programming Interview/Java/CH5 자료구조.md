@@ -6,6 +6,8 @@
 # 배열과 리스트의 관계
 
 배열은 정의할때 크기를 지정해야 한다. 
+배열 원소에 인덱스 값으로 직접 접근하는 것을 랜덤 접근이라 한다.
+배열 전체를 사용 중이라면 
 
 
 
@@ -21,5 +23,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTgxMjUwN119
+eyJoaXN0b3J5IjpbMzMyMTE5NzgzXX0=
 -->
