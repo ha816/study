@@ -433,7 +433,10 @@ InputStream in = new FileInputStream(src);
 try {
 	OutputStream out = new FileOutputStream(dst);
 	try {
-
+		byte[] buf = new byte[];
+		while(in.read(bf) >= 0 ){
+			out.write(buf, 0, n);
+		}
 	} finally {
 		out.close();
 	}
@@ -503,11 +506,11 @@ try {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNzI5NDUxNywtNTQzMjExMDE3LC0xND
-MxNDkwMzY0LDEyMjQ0Nzg5MDgsNzQ2MjM0MTM2LC0xODc3NDM5
-MzMzLC0xMjEyNjc5MjUzLDQzMjU2OTcxLC0xMjU5Mzg0NDc4LD
-IwNTA1ODkxNjcsNTM3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5ODUw
-OTM1MSwtNTIwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0Ny
-wtNzI2NTI5MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xODAx
-MjQxOTEyXX0=
+eyJoaXN0b3J5IjpbLTE4NzY1MjM1OTksLTQxNzI5NDUxNywtNT
+QzMjExMDE3LC0xNDMxNDkwMzY0LDEyMjQ0Nzg5MDgsNzQ2MjM0
+MTM2LC0xODc3NDM5MzMzLC0xMjEyNjc5MjUzLDQzMjU2OTcxLC
+0xMjU5Mzg0NDc4LDIwNTA1ODkxNjcsNTM3NzA0MDYxLDIwMzgz
+NDE1NTEsLTQ5ODUwOTM1MSwtNTIwMDA4MDIxLC0xNzAzMjkwNi
+wtMTcwNTk5OTY0NywtNzI2NTI5MTIyLDE1ODg0NTExMCwtODMz
+NTMwNDg3XX0=
 -->
