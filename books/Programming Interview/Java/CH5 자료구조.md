@@ -12,8 +12,12 @@
 
 ArrayList의 특징
 * 내부적으로 배열을 사용한다. 즉 배열의 특징을 그대로 가져간다.(랜덤 접근, 전체 복사)
-* 원소 추가 : 배열의 시작 위치나 중간 위치에 새로운 원소를 추가하려고 하면, 그 뒤에 있는 원소들은 모두 이동해야 한다. 
-* 삭제 추가 : 
+* 추가 : 배열의 시작 위치나 중간 위치에 새로운 원소를 추가하려고 하면, 그 뒤에 있는 원소들은 모두 이동해야 한다. 
+* 삭제  : 많은 원소를 삭제해도 차지하는 배열의 크기는 줄어들지 않는다.
+* 정리하자면 원소개 개수가 계속 변경되는 리스트라면 ArrayList의 특징이 단점으로 작용할 수 있다. 
+
+LinkedList의 특징
+
 
 
 
@@ -30,5 +34,5 @@ ArrayList의 특징
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MTIxNTM1N119
+eyJoaXN0b3J5IjpbMjA1OTEwNDIxNV19
 -->
