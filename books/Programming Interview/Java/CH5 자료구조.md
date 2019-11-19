@@ -53,6 +53,11 @@ Binary Heap의 두 가지 중요한 특성
 
 # 맵
 
+맵은 해시라고도 하며, 키-값 형태의 저장 자료구조다. 
+
+ㅁ
+
+
 
 
 # 집합
@@ -63,6 +68,6 @@ Binary Heap의 두 가지 중요한 특성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNzI4ODUxNywtODAzNDk1MTQ0LDE1NT
-k1NjkwNjcsMjA1OTEwNDIxNV19
+eyJoaXN0b3J5IjpbLTE4NjIyNTQzNDAsMTgzNzI4ODUxNywtOD
+AzNDk1MTQ0LDE1NTk1NjkwNjcsMjA1OTEwNDIxNV19
 -->
