@@ -445,7 +445,7 @@ try {
 }
 ```
 위와 같은 실수를 훌륭한 프로그래머 조차 흔히 한다. 사실 2007년 당시 자바 라이브러리에서 close메서드를 제대로 구현한 비율은 겨우 1/3정도다.
-위에 try-finally문을 제대로 사용한 앞의 두 코프조차 미묘한 결점이 있다. 예외는 try 블록과 finally블록 모두에서 발생할 수 있는데, 예컨데 기기의 물리적인 문제가 생긴다면, readLine()에서 예외가 던져지고 close 메서드에서도 예외가 던져질 것이다. 이런 상황이면 두번째 예외가 첫번째 예외를 완전히 집어삼켜 버린다. 
+위에 try-finally문을 제대로 사용한 앞의 두 코프조차 미묘한 결점이 있다. 예외는 try 블록과 finally블록 모두에서 발생할 수 있는데, 예컨데 기기의 물리적인 문제가 생긴다면, readLine()에서 예외가 던져지고 close 메서드에서도 예외가 던져질 것이다. 이런 상황이면 두번째 예외가 첫번째 예외를 완전히 집어삼켜 버린다. 그러면 스택 추적 내역에 첫 번재 예외에 관한 정보는 남지 않게 되어, 실제 시스템에서 디버깅을 몹시 어렵게 한다. 물론 두 번째 예외 대신 첫번째 예외를 기록하도록 코드를 수정할 수 있지만, 코드가 너무 지저분하고 실제로 그렇게 하는 경우는 거의 없다. 
 
 
 
@@ -504,11 +504,11 @@ try {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYxNTgwNjMyLC00MTcyOTQ1MTcsLTU0Mz
-IxMTAxNywtMTQzMTQ5MDM2NCwxMjI0NDc4OTA4LDc0NjIzNDEz
-NiwtMTg3NzQzOTMzMywtMTIxMjY3OTI1Myw0MzI1Njk3MSwtMT
-I1OTM4NDQ3OCwyMDUwNTg5MTY3LDUzNzcwNDA2MSwyMDM4MzQx
-NTUxLC00OTg1MDkzNTEsLTUyMDAwODAyMSwtMTcwMzI5MDYsLT
-E3MDU5OTk2NDcsLTcyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUz
-MDQ4N119
+eyJoaXN0b3J5IjpbODI3MDIyMzI2LDM2MTU4MDYzMiwtNDE3Mj
+k0NTE3LC01NDMyMTEwMTcsLTE0MzE0OTAzNjQsMTIyNDQ3ODkw
+OCw3NDYyMzQxMzYsLTE4Nzc0MzkzMzMsLTEyMTI2NzkyNTMsND
+MyNTY5NzEsLTEyNTkzODQ0NzgsMjA1MDU4OTE2Nyw1Mzc3MDQw
+NjEsMjAzODM0MTU1MSwtNDk4NTA5MzUxLC01MjAwMDgwMjEsLT
+E3MDMyOTA2LC0xNzA1OTk5NjQ3LC03MjY1MjkxMjIsMTU4ODQ1
+MTEwXX0=
 -->
