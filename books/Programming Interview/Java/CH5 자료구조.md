@@ -43,14 +43,18 @@ Deque(덱이라 발음)
 > AVL 특성(이진검색트리) 
 
 이진 트리의 또 다른 응용법으로 Binary Heap이 있다.
-
 Binary Heap은 두 가지 중요한 특성을 가진다.
 1. Complete Binary Tree
 2. Max Heap일 경우, 부모는 자식 보다 큰 값을 가진다. 반대로 Min Heap에선, 부모가 자식보다 작은 값을 가진다. 
 
 
 
-> Heap 특성(이진검색트리)
+### [Heap](https://gmlwjd9405.github.io/2018/05/10/algorithm-heap-sort.html)(자료구조)   
+
+힙은 여러 값들 중에서 최댓값이나 최솟값을 빠르게 찾아내도록 만들어진 자료구조이다. 최대값을 빠르게 찾아내는 힙을 최대힙(max heap), 최소값을 빠르게 찾아내는 힙을 최소힙(min heap)이라고 한다.
+ 
+최대 힙(max heap)은 모든 부모 노드의 값이 자식 노드의 값보다 크거나 같은 규칙을 만족하는 완전 이진 트리(Complete Binary Tree)를 말한다. 반대로 최소 힙(min heap) 모든 부모 노드의 값이 자식 노드의 값보다 작거나 같은 완전 이진 트리(Complete Binary Tree)이다. 참고로 힙 트리에서는 중복된 값을 허용한다. (이진 탐색 트리에서는 중복된 값을 허용하지 않는다.)
+
 
 
 
@@ -64,6 +68,6 @@ Binary Heap은 두 가지 중요한 특성을 가진다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDk1NjkzOTIsLTgwMzQ5NTE0NCwxNT
-U5NTY5MDY3LDIwNTkxMDQyMTVdfQ==
+eyJoaXN0b3J5IjpbLTc1MDYzOTAxNiwtODAzNDk1MTQ0LDE1NT
+k1NjkwNjcsMjA1OTEwNDIxNV19
 -->
