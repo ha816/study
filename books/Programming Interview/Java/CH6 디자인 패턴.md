@@ -2,6 +2,9 @@
 
 >빌더 패턴은 얼마나 유용한가?
 
+* 다루고자 하는 객체 생성시 객체가 가지는 필드가 많을 경우 유용한 패턴.
+* 일반적으로 내부에 생성하고자 하는 객체
+
 # 스트레티지 패턴
 
 >스트레티지 패턴의 예를 보여줄 수 있는가?
@@ -20,8 +23,12 @@
 
 # 싱글턴 패턴
 
+> 싱글턴 패턴은 어떻게 사용하는가?
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTg1NzkwMzFdfQ==
+eyJoaXN0b3J5IjpbLTE3NzI3OTI5NDFdfQ==
 -->
