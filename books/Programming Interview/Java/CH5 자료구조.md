@@ -24,7 +24,7 @@ LinkedList의 특징
 
 정리
 * 일반적으로 원소에 빠른 속도로 접근해야 하거나, 리스트의 크기가 클수록 ArrayList가 좋다. 그리고 첫 부분이나 중간에 원소를 추가/삭제 해야하는 경우가 적으면 더 좋다. 
-*LinkedList는  중간
+*LinkedList는  첫 부분이나 중간에 원소를 추가/삭제 할일이 많을때 사용하자. 혹시 스택처럼 특수한 자료구조를 만들었다면 LinkedList를 쓰는게 좋은데 어떤 위치든 원소를 넣고 빼기가 간단하기 때문이다. 
 
 
 
@@ -40,5 +40,5 @@ LinkedList의 특징
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4ODM3Mjk3LDIwNTkxMDQyMTVdfQ==
+eyJoaXN0b3J5IjpbMTU1OTU2OTA2NywyMDU5MTA0MjE1XX0=
 -->
