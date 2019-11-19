@@ -71,6 +71,8 @@ hashCode 메서드를 간단히 설명하자면 두 개의 같은 인스턴스�
 
 해시 충돌이 일어나는 얼마나 자주 일어날것인지는 테이블의 크기와 밀접한 연관이 있다. HashMap은 객체를 생성할 때 0에서 1값을 가지는 부하계수를 명시 할 수 있다. 그리고 이 부하 계수를 다 채우게 되면 테이블의 크기를 두배로 늘린다. 이때 테이블의 원소를 재배치하는데,  해시 값을 테이블 인덱스에 맞게 재 할당한다. 많은 원소가 있는 테이블에서 전부다시 재할당하는건 많이 자원이 투입되므로 처음부터 적당히 큰 테이블로 만드는 것이 좋다. 
 
+## Tre
+
 
 
 
@@ -85,7 +87,7 @@ hashCode 메서드를 간단히 설명하자면 두 개의 같은 인스턴스�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE4OTQzNzUxLC0xMDgwNzQ4Mzc3LC0xMj
-I5MjI2Njg3LDE4MzcyODg1MTcsLTgwMzQ5NTE0NCwxNTU5NTY5
-MDY3LDIwNTkxMDQyMTVdfQ==
+eyJoaXN0b3J5IjpbMTUwNjM5NTcwOCwzMTg5NDM3NTEsLTEwOD
+A3NDgzNzcsLTEyMjkyMjY2ODcsMTgzNzI4ODUxNywtODAzNDk1
+MTQ0LDE1NTk1NjkwNjcsMjA1OTEwNDIxNV19
 -->
