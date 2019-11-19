@@ -29,7 +29,7 @@ LinkedList의 특징
 > Queue와 Deque는 무엇인가?
 
 Queue
-: FIFO(first-in first-out) 자료구조를 구현한 자바 인터페이스. 새 원소를 가장 마지막 위치에 추가하는 add, 
+: FIFO(first-in first-out) 자료구조를 구현한 자바 인터페이스. 구조의 가장 끝(최근)에 에 추가하는 add, 가장 앞(오래된) 원소를 제거하고 반환하는 remove, 반환만 하는 peek 메서드를 가진다.
 
 Deque(덱이라 발음)
 : Queue 인터페이스의 확장으로 자료구조의 양 끝에 원소를 추가하고 삭제할 수 있다. 
@@ -49,6 +49,6 @@ Deque(덱이라 발음)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNjEwNDgxOCwxNTU5NTY5MDY3LDIwNT
+eyJoaXN0b3J5IjpbMTU1MTk2MjU3NCwxNTU5NTY5MDY3LDIwNT
 kxMDQyMTVdfQ==
 -->
