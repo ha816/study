@@ -65,6 +65,8 @@ hashCode 메서드를 간단히 설명하자면 두 개의 같은 인스턴스�
 
 동일하지 않은 객체들이 같은 hashCode값을 가지는 상황도 고려해야 한다. 구조상 서로 다른 객체가 같은 해시 테이블에 들어가는 상황이 발생할 수 있기 때문이다. 이것을 해쉬 충돌이라고 한다. 
 
+해쉬 충돌을 해결하기 위한 한 방법은 두 번째 해시함수를 갖는 것이다
+
 
 
 
@@ -79,7 +81,7 @@ hashCode 메서드를 간단히 설명하자면 두 개의 같은 인스턴스�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY2MjU4NDA1LC0xMDgwNzQ4Mzc3LC0xMj
-I5MjI2Njg3LDE4MzcyODg1MTcsLTgwMzQ5NTE0NCwxNTU5NTY5
-MDY3LDIwNTkxMDQyMTVdfQ==
+eyJoaXN0b3J5IjpbLTM0MjU0OTc4NSwtMTA4MDc0ODM3NywtMT
+IyOTIyNjY4NywxODM3Mjg4NTE3LC04MDM0OTUxNDQsMTU1OTU2
+OTA2NywyMDU5MTA0MjE1XX0=
 -->
