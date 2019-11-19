@@ -427,7 +427,22 @@ try {
 	br.close();
 }
 ```
-나쁘진 ㅇ
+나쁘진 않지만 만약 자원을 하나 더 사용한다면?
+```
+InputStream in = new FileInputStream(src);
+try {
+	OutputStream out = new FileOutputStream(dst);
+	try {
+
+	} fina
+	
+
+	return br.readLine()
+} finally {
+	br.close();
+}
+```
+
 
 
 
@@ -486,11 +501,11 @@ try {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MjYxNzc5OCwtNTQzMjExMDE3LC0xND
-MxNDkwMzY0LDEyMjQ0Nzg5MDgsNzQ2MjM0MTM2LC0xODc3NDM5
-MzMzLC0xMjEyNjc5MjUzLDQzMjU2OTcxLC0xMjU5Mzg0NDc4LD
-IwNTA1ODkxNjcsNTM3NzA0MDYxLDIwMzgzNDE1NTEsLTQ5ODUw
-OTM1MSwtNTIwMDA4MDIxLC0xNzAzMjkwNiwtMTcwNTk5OTY0Ny
-wtNzI2NTI5MTIyLDE1ODg0NTExMCwtODMzNTMwNDg3LC0xODAx
-MjQxOTEyXX0=
+eyJoaXN0b3J5IjpbLTEwOTkxNDkxMDQsLTU0MzIxMTAxNywtMT
+QzMTQ5MDM2NCwxMjI0NDc4OTA4LDc0NjIzNDEzNiwtMTg3NzQz
+OTMzMywtMTIxMjY3OTI1Myw0MzI1Njk3MSwtMTI1OTM4NDQ3OC
+wyMDUwNTg5MTY3LDUzNzcwNDA2MSwyMDM4MzQxNTUxLC00OTg1
+MDkzNTEsLTUyMDAwODAyMSwtMTcwMzI5MDYsLTE3MDU5OTk2ND
+csLTcyNjUyOTEyMiwxNTg4NDUxMTAsLTgzMzUzMDQ4NywtMTgw
+MTI0MTkxMl19
 -->
