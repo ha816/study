@@ -2,7 +2,7 @@
 
 핵심 키워드
 : 정적 팩터리 메서드(static factory method), 
-빌더(builder), 싱글턴(singleton), 열거 타입(enum), private 생성자, 의존 객체 주입 패턴(Dependency Injection, DI), 
+빌더(builder), 싱글턴(singleton), 열거 타입(enum), private 생성자, 의존 객체 주입 패턴(Dependency Injection, DI), 오토박싱(auto boxing), 메모리누수(memory leak), finalizer와 cleaner, try-with-resources
 
 
 ## Item1. 생성자 대신 정적 팩토리 메서드를 고려하라.
@@ -323,8 +323,6 @@ sum의 값은 원하는 답을 내지만, 제대로 구현했을때에 비하면
 ## Item7. 다 쓴 객체 참조를 해제하라. 
 
 C, C++처럼 메모리를 직접 관리해야 하는 언어를 쓰다가 자바처럼 가비지 컬렉터를 갖춘 언어로 넘어오면 프로그래머의 삶이 훨씬 평안해진다. 다 쓴 객체를 알아서 회수해가니 말이다. **하지만 자칫 메모리 관리에 더 이상 신경쓰지 않아도 된다고 오해할 수 있는지 절대 사실이 아니다.**
-
-
 ```
 public class Stack {
 	private Object[] elements;
@@ -527,5 +525,5 @@ try-with-resources 버전은 짧고 읽기 수월할 뿐만 아니라 문제 진
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzI5NDEyNDNdfQ==
+eyJoaXN0b3J5IjpbLTE0Mjg4NzA3OTNdfQ==
 -->
