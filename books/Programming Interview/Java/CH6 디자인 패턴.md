@@ -25,7 +25,8 @@
 > 데코레이터 패턴의 예를 설명할 수 있는가?
 
 * 다수의 데코레이터 객체가 작업에 관여하여 원하는 작업을 완성하는 패턴.
-*데코레이터 객체는 내부 필드로 다른 데코레이터를 참조한다. 
+* 데코레이터 객체는 내부 필드로 다른 데코레이터를 참조하거나 
+* 데코레이터 객체는 메서드로 
 
 
 # 플라이웨이트 패턴
@@ -41,6 +42,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTE2Nzk5NDMsMjExMTQyMzU5MiwyMT
-IzMTEyNzA2XX0=
+eyJoaXN0b3J5IjpbMTY5Mjg0NjQ4MiwyMTExNDIzNTkyLDIxMj
+MxMTI3MDZdfQ==
 -->
