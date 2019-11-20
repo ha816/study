@@ -67,22 +67,22 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 * 플라이웨이트 패턴은 불필요한 객체 생성을 줄이고 불변 객체의 재사용성을 높여 성능 향상을 꾀하는 패턴이다. 
 * 대표적인 예로 Integer.valueOf 메서드가 있다.
 * valueOf 메서드는 매개변수의 값을 보고 이전에 캐시된 값이면 새로운 인스턴스를 만들지 않고 이전해 생성해둔 인스턴스를 반환한다. 이 캐시의 기본범위는 -128 ~ 127이까지다.  
-* 
-*
 
 # 싱글턴 패턴
 
 > 싱글턴 패턴은 어떻게 사용하는가?
 
+* 싱글턴 패턴은 클래스가 오직 하나인 인스턴스만 생성한다는 것을 보장하는 패턴이다. 
+* 하나의 인스턴스만 있기 때문에 관리하기가 편하고 성능 향상이 있다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NzQ4MDg5LC0yNzY2OTE1NDEsLTM1Mz
-I0NTk3NSwtMTAzMDczNTI4MCwtMjIwNzI5OTgxLC0xNjI3MDA0
-MjgzLC0xNzM5NDQ1MjYxLDEzMTA4MjMxNDEsNDQ5NDg5MDI0LD
-E5MzQ0NjE2OSwtMjA4MzY3OTAwNiwyMTM3MTU3MzE2LC0yMDYx
-NDgwNTgyLC0zMzA4MjA4NjgsMjExMTQyMzU5MiwyMTIzMTEyNz
-A2XX0=
+eyJoaXN0b3J5IjpbMjE0NTA4NTQwMywtMjc2NjkxNTQxLC0zNT
+MyNDU5NzUsLTEwMzA3MzUyODAsLTIyMDcyOTk4MSwtMTYyNzAw
+NDI4MywtMTczOTQ0NTI2MSwxMzEwODIzMTQxLDQ0OTQ4OTAyNC
+wxOTM0NDYxNjksLTIwODM2NzkwMDYsMjEzNzE1NzMxNiwtMjA2
+MTQ4MDU4MiwtMzMwODIwODY4LDIxMTE0MjM1OTIsMjEyMzExMj
+cwNl19
 -->
