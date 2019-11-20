@@ -21,11 +21,12 @@
 
 * 템플릿 메서드 매턴은 알고리즘의 일부 또는 전부를 하위 클래스에서 구현하거나 위임하는데 사용한다. 
 * 공통적으로 여러 객체가 사용할 메서드를 미리 부모 클래스(템플릿)으로 정의해두고 자식 클래스에서는 있는 그대로 사용해도 되고, 재정의를 통해 원하는 기능을 구현해도 된다. 
-* 
 
 # 데코레이터 패턴
 
 > 데코레이터 패턴의 예를 설명할 수 있는가?
+
+* 
 
 * 다수의 데코레이터 객체가 작업에 관여하여 원하는 작업을 완성하는 패턴.
 * 데코레이터 객체는 내부 필드로 다른 데코레이터 객체를 전달 받는다. 전달 받은 객체의 필요 메서드를 호출하면서 자신이 해야하는 작업을 수행한 다음 데코레이터 객체를 반환한다. 
@@ -45,7 +46,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNDQ2MTY5LC0yMDgzNjc5MDA2LDIxMz
-cxNTczMTYsLTIwNjE0ODA1ODIsLTMzMDgyMDg2OCwyMTExNDIz
-NTkyLDIxMjMxMTI3MDZdfQ==
+eyJoaXN0b3J5IjpbLTEwNzY0MjU1NDEsMTkzNDQ2MTY5LC0yMD
+gzNjc5MDA2LDIxMzcxNTczMTYsLTIwNjE0ODA1ODIsLTMzMDgy
+MDg2OCwyMTExNDIzNTkyLDIxMjMxMTI3MDZdfQ==
 -->
