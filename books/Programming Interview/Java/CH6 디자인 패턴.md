@@ -37,7 +37,7 @@ Component
 Decorator
 : 기본 Component를 확장하여 추가 기능을 정의 한 후 데코레이터를 정의한다.
 
-JVM 외부 소스를 읽고 저장하는 자바의 기본 입.출력 클래스는 데커레이터 패턴을 사용한다. InputStream, OutputStream 클래스 그리고 하위 클래스는 구현 클래스에서 정의한 방법으로 데이터를 읽
+JVM 외부 소스를 읽고 저장하는 자바의 기본 입.출력 클래스는 데커레이터 패턴을 사용한다. InputStream, OutputStream 클래스 그리고 하위 그 클래스는 구현 클래스에서 정의한 방법으로 데이터를 읽고 저장하는데 이것이 바로 데커레이터 패턴이다. 
 
 
 # 플라이웨이트 패턴
@@ -55,8 +55,8 @@ JVM 외부 소스를 읽고 저장하는 자바의 기본 입.출력 클래스�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI0NTgxNDg3LDEzMTA4MjMxNDEsNDQ5ND
-g5MDI0LDE5MzQ0NjE2OSwtMjA4MzY3OTAwNiwyMTM3MTU3MzE2
-LC0yMDYxNDgwNTgyLC0zMzA4MjA4NjgsMjExMTQyMzU5MiwyMT
-IzMTEyNzA2XX0=
+eyJoaXN0b3J5IjpbLTE3Mzk0NDUyNjEsMTMxMDgyMzE0MSw0ND
+k0ODkwMjQsMTkzNDQ2MTY5LC0yMDgzNjc5MDA2LDIxMzcxNTcz
+MTYsLTIwNjE0ODA1ODIsLTMzMDgyMDg2OCwyMTExNDIzNTkyLD
+IxMjMxMTI3MDZdfQ==
 -->
