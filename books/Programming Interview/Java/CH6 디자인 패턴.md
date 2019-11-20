@@ -43,6 +43,11 @@ OutputStream은 클래스에서 구현한 메서드 대부분은 필요한 수�
 
 반면에 FileOutputStream이나 SocketOutputStream 같은 클래스의 실제 데이터를 저장하는 OutputStream 클래스는 write 메서드를 다른 클래스에 위임하지 않는다. 
 
+```
+@Test
+public void decoratorPattern() throws IOException
+```
+
 
 
 # 플라이웨이트 패턴
@@ -60,7 +65,7 @@ OutputStream은 클래스에서 구현한 메서드 대부분은 필요한 수�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNjUxMDU4OCwtMTYyNzAwNDI4MywtMT
+eyJoaXN0b3J5IjpbLTIyMDcyOTk4MSwtMTYyNzAwNDI4MywtMT
 czOTQ0NTI2MSwxMzEwODIzMTQxLDQ0OTQ4OTAyNCwxOTM0NDYx
 NjksLTIwODM2NzkwMDYsMjEzNzE1NzMxNiwtMjA2MTQ4MDU4Mi
 wtMzMwODIwODY4LDIxMTE0MjM1OTIsMjEyMzExMjcwNl19
