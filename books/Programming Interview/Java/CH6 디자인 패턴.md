@@ -27,6 +27,8 @@
 > 데코레이터 패턴의 예를 설명할 수 있는가?
 
 * 다수 데코레이터의 조합을 통해 기능을 동적으로 유연하게 확장 할 수 있게 해주는 패턴.
+* * 다수의 데코레이터 객체가 작업에 관여하여 원하는 작업을 완성하는 패턴.
+
 * 기본 기능에 추가할 수 있는 기능의 종류가 많은 경우에 추가 기능을 데코레이터 클래스로 정의 한 후 필요한 데코레이터 객체를 조합하여 사용한다.
 
 * 예를 들어, 기본 도로 표시 기능에 차선 표시, 교통량 표시, 교차로 표시, 단속 카메라 표시의 4가지 추가 기능이 있을 때 추가 기능의 모든 조합은 15가지가 된다. 이를 데코레이터 패턴을 이용하여 필요 추가 기능의 조합을 동적으로 생성할 수 있다.
@@ -35,17 +37,9 @@ Component
 : 기본 기능은 Component를 통해 구현한다. 즉, 클라이언트는 Component를 통해 실제 객체를 사용함
 
 Decorator
-: 기본 기능의 Component를 확장하여 
-
-ConcreteComponent와 추가 기능을 뜻하는 Decorator의 공통 기능을 정의
+: 기본 Component를 확장하여 추가 기능을 정의 한 후 데코레이터를 정의한다.
 
 
-Decorator
-많은 수가 존재하는 구체적인 Decorator의 공통 기능을 제공
-https://gmlwjd9405.github.io/2018/07/09/decorator-pattern.html
-
-* 다수의 데코레이터 객체가 작업에 관여하여 원하는 작업을 완성하는 패턴.
-* 데코레이터 객체는 내부 필드로 다른 데코레이터 객체를 전달 받는다. 전달 받은 객체의 필요 메서드를 호출하면서 자신이 해야하는 작업을 수행한 다음 데코레이터 객체를 반환한다. 
 
 # 플라이웨이트 패턴
 
@@ -62,8 +56,8 @@ https://gmlwjd9405.github.io/2018/07/09/decorator-pattern.html
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTE4MjY1MCwxMzEwODIzMTQxLDQ0OT
-Q4OTAyNCwxOTM0NDYxNjksLTIwODM2NzkwMDYsMjEzNzE1NzMx
-NiwtMjA2MTQ4MDU4MiwtMzMwODIwODY4LDIxMTE0MjM1OTIsMj
-EyMzExMjcwNl19
+eyJoaXN0b3J5IjpbMzgxNjY1MjE2LDEzMTA4MjMxNDEsNDQ5ND
+g5MDI0LDE5MzQ0NjE2OSwtMjA4MzY3OTAwNiwyMTM3MTU3MzE2
+LC0yMDYxNDgwNTgyLC0zMzA4MjA4NjgsMjExMTQyMzU5MiwyMT
+IzMTEyNzA2XX0=
 -->
