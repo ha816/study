@@ -53,7 +53,9 @@ ObjectOutputStream oos = new ObjectOutputStream(fos);
 ```
 
 FileOutputstream 클래스는 디스크에 파일을 저장하고,
+BufferedOutputStream 클래스는 파이을 저장하는데 필요한 호출들을 캐시하고 한번에 여러 바이트씩 저장한다. 이렇게 하면 디스크에 파이을 저장할대 효율이 크게 향상된다. 
 
+ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트림에 저장하는 직렬화 클래스다.
 
 
 # 플라이웨이트 패턴
@@ -71,7 +73,7 @@ FileOutputstream 클래스는 디스크에 파일을 저장하고,
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDc4MzU4NDgsLTIyMDcyOTk4MSwtMT
+eyJoaXN0b3J5IjpbLTEwMDczNzYzNzcsLTIyMDcyOTk4MSwtMT
 YyNzAwNDI4MywtMTczOTQ0NTI2MSwxMzEwODIzMTQxLDQ0OTQ4
 OTAyNCwxOTM0NDYxNjksLTIwODM2NzkwMDYsMjEzNzE1NzMxNi
 wtMjA2MTQ4MDU4MiwtMzMwODIwODY4LDIxMTE0MjM1OTIsMjEy
