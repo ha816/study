@@ -20,8 +20,8 @@
 > 템플릿 메서드 패턴은 어떻게 사용하는가?
 
 * 템플릿 메서드 매턴은 알고리즘의 일부 또는 전부를 하위 클래스에서 구현하거나 위임하는데 사용한다. 
-* 공통적으로 여러 객체가 사용할 메서드를 미리 템플릿으로 정의해두고 재사용 하는것.
-* 템플릿 메서드를 추상 클래스에 구현해두고, 구현 클래스는 이를 재사용해도 되고, 재정의를 하여 원하는 기능을 직접 구현해도 된다. 
+* 공통적으로 여러 객체가 사용할 메서드를 미리 부모 클래스(템플릿)으로 정의해두고 자식 클래스에서는 있는 그대로 사용해도 되고, 재정의를 통해 원하는 기능을 구현해도 된다. 
+* 
 
 # 데코레이터 패턴
 
@@ -45,7 +45,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODM2NzkwMDYsMjEzNzE1NzMxNiwtMj
-A2MTQ4MDU4MiwtMzMwODIwODY4LDIxMTE0MjM1OTIsMjEyMzEx
-MjcwNl19
+eyJoaXN0b3J5IjpbMTkzNDQ2MTY5LC0yMDgzNjc5MDA2LDIxMz
+cxNTczMTYsLTIwNjE0ODA1ODIsLTMzMDgyMDg2OCwyMTExNDIz
+NTkyLDIxMjMxMTI3MDZdfQ==
 -->
