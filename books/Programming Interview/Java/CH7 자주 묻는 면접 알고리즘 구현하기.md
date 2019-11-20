@@ -15,11 +15,17 @@ function fibonachi(int n){
 동적계획법으로 캐시를 걸어서 반복되는 계산을 메모리에 두자
 
 ```
+cacheMap
 function fibonachi(int n){
 	if(n == 1 || n == 2){
 		return 1;
 	}
-	int fibonachi(n-1) + fibonachi(n-2);
+	if(cache.contain(n)){	
+		return cache
+	}
+
+	int result = fibonachi(n-1) + fibonachi(n-2);
+	cache.put(n, result);
 }
 ```
 
@@ -36,5 +42,5 @@ function fibonachi(int n){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3Mjc1MjI2NCwxNzU5MTg3MTcyXX0=
+eyJoaXN0b3J5IjpbLTcxMDc4NjgzLDE3NTkxODcxNzJdfQ==
 -->
