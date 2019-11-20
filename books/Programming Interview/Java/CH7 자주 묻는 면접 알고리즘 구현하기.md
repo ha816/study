@@ -1,15 +1,7 @@
-# FizzBuzz 구현하기
-
-> 1에서 n까지 숫자를 출력하되 3의 배수는 Fizz, 5의 배수는 Buzz, 15의 배수는 FizzBuzz라는 문자열을 출력하는 알고리즘을 작성하라
-
-for(i){
-	if()i % 3 == 0 Fizz
-	i & 5 == 0 Buzz
-	i 
-}
-
-
 # 피보나치 수열 구하기
+> 1에서 n까지의 피보나치 수열을 반환하는 메서드를 정의하라
+
+$f(n) = 1 + 1 + 2 + 3 + 5 + 8 + 13 + 21 + \cdots$
 
 # 팩토리얼 구하기
 
@@ -22,5 +14,5 @@ for(i){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTE4NzE3Ml19
+eyJoaXN0b3J5IjpbLTE0MDc1Mjk2ODYsMTc1OTE4NzE3Ml19
 -->
