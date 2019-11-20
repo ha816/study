@@ -37,15 +37,17 @@ function fibonachi(int n){
 $n! = 1*2*\cdots n$
 
 ```
-Long factorial = 1;\
-function factorial(int n){
-	return factorial()n
+function factorial(int n){ //재귀버전
+	if(n == 1){
+		return 1;
+	}
+	return factorial(n-1) * n;
 }
 ```
 
 ```
-Long factorial = 1;
-for(int i = 1; i <= n ; i++){
+Long factorial = 1; //재
+for(int i = 1; i <= n ; i++){ 
 	factorial *= i
 }
 ```
@@ -61,6 +63,6 @@ for(int i = 1; i <= n ; i++){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNzc1Njk1MywtNzEwNzg2ODMsMTc1OT
-E4NzE3Ml19
+eyJoaXN0b3J5IjpbODY5NjUyMjE3LC03MTA3ODY4MywxNzU5MT
+g3MTcyXX0=
 -->
