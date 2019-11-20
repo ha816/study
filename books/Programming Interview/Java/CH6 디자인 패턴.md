@@ -28,11 +28,8 @@
 
 * 특정 객체의 기능을 설정하거나 변경할 수 있게 해준다. 
 * 객체의 결합 을 통해 기능을 동적으로 유연하게 확장 할 수 있게 해주는 패턴.
-* 기본 기능에 추가할 수 있는 기능의 종류가 많은 경우에 각 추가 기능을 Decorator 클래스로 정의 한 후 필요한 Decorator 객체를 조합함으로써 추가 기능
-* 예를 들어, 기본 도로 표시 기능에 차선 표시, 교통량 표시, 교차로 표시, 단속 카메라 표시의 4가지 추가 기능이 있을 때 추가 기능의 모든 조합은 15가지가 된다.
--> 데코레이터 패턴을 이용하여 필요 추가 기능의 조합을 동적으로 생성할 수 있다.
-https://gmlwjd9405.github.io/2018/07/09/decorator-pattern.html
-
+* 기본 기능에 추가할 수 있는 기능의 종류가 많은 경우에 각 추가 기능을 데코레이터 클래스로 정의 한 후 필요한 Decorator 객체를 조합함으로써 추가 기능
+* 예를 들어, 기본 도로 표시 기능에 차선 표시, 교통량 표시, 교차로 표시, 단속 카메라 표시의 4가지 추가 기능이 있을 때 추가 기능의 모든 조합은 15가지가 된다. 이를 데코레이터 패턴을 이용하여 필요 추가 기능의 조합을 동적으로 생성할 수 있다.
 
 * 다수의 데코레이터 객체가 작업에 관여하여 원하는 작업을 완성하는 패턴.
 * 데코레이터 객체는 내부 필드로 다른 데코레이터 객체를 전달 받는다. 전달 받은 객체의 필요 메서드를 호출하면서 자신이 해야하는 작업을 수행한 다음 데코레이터 객체를 반환한다. 
@@ -52,7 +49,7 @@ https://gmlwjd9405.github.io/2018/07/09/decorator-pattern.html
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTExMjQwMzM3LDE5MzQ0NjE2OSwtMjA4Mz
-Y3OTAwNiwyMTM3MTU3MzE2LC0yMDYxNDgwNTgyLC0zMzA4MjA4
-NjgsMjExMTQyMzU5MiwyMTIzMTEyNzA2XX0=
+eyJoaXN0b3J5IjpbMTIzNzQzNzIwMiwxOTM0NDYxNjksLTIwOD
+M2NzkwMDYsMjEzNzE1NzMxNiwtMjA2MTQ4MDU4MiwtMzMwODIw
+ODY4LDIxMTE0MjM1OTIsMjEyMzExMjcwNl19
 -->
