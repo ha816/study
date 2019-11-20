@@ -55,7 +55,7 @@ ObjectOutputStream oos = new ObjectOutputStream(fos);
 ```
 
 FileOutputstream 클래스는 디스크에 파일을 저장하고,
-BufferedOutputStream 클래스는 파일을 저장하는데 필요한 작업을 버퍼에 쌓아두고 캐시하고 한번에 여러 바이트씩 저장한다. 이렇게 하면 디스크에 파이을 저장할대 효율이 크게 향상된다. 
+BufferedOutputStream 클래스는 파일을 저장하는데 필요한 작업을 버퍼에 쌓아두고 한번에 여러 바이트씩 저장한다. 이렇게 하면 디스크에 파일을 저장할대 효율이 크게 향상된다. 
 
 ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트림에 저장하는 직렬화 클래스다. 이 클래스는 파일이 어디에 기록되는 지 모른다. 다른 OutputStream클래스에 간단히 저장 권한을 위임할 뿐이다. 
 
@@ -63,8 +63,9 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 # 플라이웨이트 패턴
 
 > 플라이웨이트 패턴의 구현 방법을 설명할 수 있는가?
+> 
+* 대표적인 예로 Integer.valueOf()가 있다. 
 
-* 대표적인 예로 Integer.valueOf()가 있다. 플라이 웨이트 패턴은 불필요한 객
 
 # 싱글턴 패턴
 
@@ -75,7 +76,7 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NjAxMDEwNSwtMTAzMDczNTI4MCwtMj
+eyJoaXN0b3J5IjpbLTkwNzk3NDkxNCwtMTAzMDczNTI4MCwtMj
 IwNzI5OTgxLC0xNjI3MDA0MjgzLC0xNzM5NDQ1MjYxLDEzMTA4
 MjMxNDEsNDQ5NDg5MDI0LDE5MzQ0NjE2OSwtMjA4MzY3OTAwNi
 wyMTM3MTU3MzE2LC0yMDYxNDgwNTgyLC0zMzA4MjA4NjgsMjEx
