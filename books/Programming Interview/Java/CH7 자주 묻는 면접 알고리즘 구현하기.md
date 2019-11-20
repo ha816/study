@@ -30,8 +30,13 @@ function fibonachi(int n){
 }
 ```
 
-
 # 팩토리얼 구하기
+
+> 재귀적 방법을 사용하지 않는 팩토리얼을 작성하라
+
+$F(n)$
+
+
 
 # 라이브러리 기능 구현하기
 
@@ -42,6 +47,6 @@ function fibonachi(int n){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDUyODU0NzcsLTcxMDc4NjgzLDE3NT
+eyJoaXN0b3J5IjpbLTE5MTU4Nzg4MjUsLTcxMDc4NjgzLDE3NT
 kxODcxNzJdfQ==
 -->
