@@ -41,6 +41,9 @@ JVM 외부 소스를 읽고 저장하는 자바의 기본 입.출력 클래스�
 
 OutputStream은 클래스에서 구현한 메서드 대부분은 필요한 수행을 동작 후, 다른 OutputStream 클래스에 수행을 위임한다. 이 위임할 대상은 이미 OutputStream객체를 만들때 매개변수로 받는다.  
 
+반면에 FileOutputStream이나 SocketOutputStream 같은 클래스의 실제 데이터를 저장하는 OutputStream 클래스는 write 메서드를 다른 클래스에 위임하지 않는다. 
+
+
 
 # 플라이웨이트 패턴
 
@@ -57,8 +60,8 @@ OutputStream은 클래스에서 구현한 메서드 대부분은 필요한 수�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjcwMDQyODMsLTE3Mzk0NDUyNjEsMT
-MxMDgyMzE0MSw0NDk0ODkwMjQsMTkzNDQ2MTY5LC0yMDgzNjc5
-MDA2LDIxMzcxNTczMTYsLTIwNjE0ODA1ODIsLTMzMDgyMDg2OC
-wyMTExNDIzNTkyLDIxMjMxMTI3MDZdfQ==
+eyJoaXN0b3J5IjpbMjEwNjUxMDU4OCwtMTYyNzAwNDI4MywtMT
+czOTQ0NTI2MSwxMzEwODIzMTQxLDQ0OTQ4OTAyNCwxOTM0NDYx
+NjksLTIwODM2NzkwMDYsMjEzNzE1NzMxNiwtMjA2MTQ4MDU4Mi
+wtMzMwODIwODY4LDIxMTE0MjM1OTIsMjEyMzExMjcwNl19
 -->
