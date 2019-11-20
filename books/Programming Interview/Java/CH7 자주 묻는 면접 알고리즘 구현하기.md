@@ -1,6 +1,6 @@
 # 피보나치 수열 구하기
 
-> 1에서 n까지의 피보나치 수열을 반환하는 메서드를 정의하라
+> 피보나치 수열의 n번째 값을 구하는 메서드 작성
 
 $L(k) = L(k-2) + L(k-1)$, $L(1) = L(2) = 1$
 
@@ -31,7 +31,6 @@ function fibonachi(int n){
 ```
 
 
-
 # 팩토리얼 구하기
 
 # 라이브러리 기능 구현하기
@@ -43,6 +42,6 @@ function fibonachi(int n){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NTU4NzU1NSwtNzEwNzg2ODMsMTc1OT
-E4NzE3Ml19
+eyJoaXN0b3J5IjpbLTIxNDUyODU0NzcsLTcxMDc4NjgzLDE3NT
+kxODcxNzJdfQ==
 -->
