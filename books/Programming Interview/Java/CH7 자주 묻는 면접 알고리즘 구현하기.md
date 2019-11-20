@@ -34,7 +34,15 @@ function fibonachi(int n){
 
 > 재귀적 방법을 사용하지 않는 팩토리얼을 작성하라
 
-$F(n)$
+$n! = 1*2*\cdots n$
+
+```
+Long factorial = 1;
+for(int i = 1; i <= n ; i++){
+	factorial*
+}
+
+```
 
 
 
@@ -47,6 +55,6 @@ $F(n)$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTU4Nzg4MjUsLTcxMDc4NjgzLDE3NT
-kxODcxNzJdfQ==
+eyJoaXN0b3J5IjpbLTU0MDMwNDY2OCwtNzEwNzg2ODMsMTc1OT
+E4NzE3Ml19
 -->
