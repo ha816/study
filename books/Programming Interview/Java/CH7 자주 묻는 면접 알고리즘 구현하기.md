@@ -11,6 +11,19 @@ function fibonachi(int n){
 	return fibonachi(n-1) + fibonachi(n-2);
 }
 ```
+그런데 이렇게 하면 많이 느릴거야 ...
+동적계획법으로 캐시를 걸어서 반복되는 계산을 메모리에 두자
+
+```
+function fibonachi(int n){
+	if(n == 1 || n == 2){
+		return 1;
+	}
+	int fibonachi(n-1) + fibonachi(n-2);
+}
+```
+
+
 
 # 팩토리얼 구하기
 
@@ -23,5 +36,5 @@ function fibonachi(int n){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzMwNDUxMjQsMTc1OTE4NzE3Ml19
+eyJoaXN0b3J5IjpbLTI3Mjc1MjI2NCwxNzU5MTg3MTcyXX0=
 -->
