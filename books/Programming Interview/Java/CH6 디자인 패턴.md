@@ -12,14 +12,16 @@
 
 >스트레티지 패턴의 예를 보여줄 수 있는가?
 
+* 스트레티지(전략)이란 어떤 목적을 달성하기 위해 일을 수행하는 방식, 비즈니스 규칙, 문제를 해결하는 알고리즘 등
+* 
+
+* 즉, 전략을 쉽게 바꿀 수 있도록 해주는 디자인 패턴이다.
+
+
 * 지정된 알고리즘의 세부 구현을 변경할 필요 없이 쉽게 교환할 수 있게 해주는 패턴.  실행중이라도 구현된 알고리즘을 구현할 수 있어 의존성 주입에 자주 사용된다. 
 * 행위를 클래스로 캡슐화해 동적으로 행위를 자유롭게 바꿀 수 있게 해주는 패턴
 * 같은 문제를 해결하는 여러 알고리즘이 클래스별로 캡슐화되어 있고 이들이 필요할 때 교체할 수 있도록 함으로써 동일한 문제를 다른 알고리즘으로 해결할 수 있게 하는 디자인 패턴
-‘행위(Behavioral) 패턴’의 하나 (아래 참고)
-즉, 전략을 쉽게 바꿀 수 있도록 해주는 디자인 패턴이다.
-전략이란
-어떤 목적을 달성하기 위해 일을 수행하는 방식, 비즈니스 규칙, 문제를 해결하는 알고리즘 등
-https://gmlwjd9405.github.io/2018/07/06/strategy-pattern.html
+‘행위(Behavioral) 패턴’의 하나 
 
 
 * 사실 너무나 자연스럽게 쓰고 있는 패턴. 대표적인 예로 DI(Dependency Injection)
@@ -53,6 +55,6 @@ https://gmlwjd9405.github.io/2018/07/06/strategy-pattern.html
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjU2NTIzNTQsLTIwNjE0ODA1ODIsLT
-MzMDgyMDg2OCwyMTExNDIzNTkyLDIxMjMxMTI3MDZdfQ==
+eyJoaXN0b3J5IjpbMTg4NDIwMDI0OCwtMjA2MTQ4MDU4MiwtMz
+MwODIwODY4LDIxMTE0MjM1OTIsMjEyMzExMjcwNl19
 -->
