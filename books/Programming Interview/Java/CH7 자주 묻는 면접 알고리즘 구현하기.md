@@ -4,6 +4,8 @@
 $L(k) = L(k-2) + L(k-1)$
 $L(1) = L(2) = 1$
 
+$L(n) = L(n-1)+ L(n-2) = \cdots$
+
 # 팩토리얼 구하기
 
 # 라이브러리 기능 구현하기
@@ -15,5 +17,5 @@ $L(1) = L(2) = 1$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY1NzE0Nzg5LDE3NTkxODcxNzJdfQ==
+eyJoaXN0b3J5IjpbMTU2NTczMzQ5LDE3NTkxODcxNzJdfQ==
 -->
