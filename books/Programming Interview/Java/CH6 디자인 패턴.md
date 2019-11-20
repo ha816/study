@@ -35,7 +35,7 @@ Component
 : 기본 기능은 Component를 통해 구현한다. 즉, 클라이언트는 Component를 통해 실제 객체를 사용함
 
 Decorator
-: 많은 수가 존재하는 구체적인 Decorator의 공통 기능을 제공
+: 기본 기능의 Component를 확장하여 
 
 ConcreteComponent와 추가 기능을 뜻하는 Decorator의 공통 기능을 정의
 
@@ -62,8 +62,8 @@ https://gmlwjd9405.github.io/2018/07/09/decorator-pattern.html
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI5NjUyODE2LDEzMTA4MjMxNDEsNDQ5ND
-g5MDI0LDE5MzQ0NjE2OSwtMjA4MzY3OTAwNiwyMTM3MTU3MzE2
-LC0yMDYxNDgwNTgyLC0zMzA4MjA4NjgsMjExMTQyMzU5MiwyMT
-IzMTEyNzA2XX0=
+eyJoaXN0b3J5IjpbLTU3NTE4MjY1MCwxMzEwODIzMTQxLDQ0OT
+Q4OTAyNCwxOTM0NDYxNjksLTIwODM2NzkwMDYsMjEzNzE1NzMx
+NiwtMjA2MTQ4MDU4MiwtMzMwODIwODY4LDIxMTE0MjM1OTIsMj
+EyMzExMjcwNl19
 -->
