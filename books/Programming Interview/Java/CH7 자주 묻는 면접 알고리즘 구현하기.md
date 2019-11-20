@@ -3,9 +3,6 @@
 
 $L(k) = L(k-2) + L(k-1)$, $L(1) = L(2) = 1$
 
-
-$L(n) = L(n-1)+ L(n-2) = \cdots$
-
 ```
 function fibonachi(int n){
 	if(n == 1 || n == 2){
@@ -26,5 +23,5 @@ function fibonachi(int n){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzAzNzQwNzAsMTc1OTE4NzE3Ml19
+eyJoaXN0b3J5IjpbLTEzMzMwNDUxMjQsMTc1OTE4NzE3Ml19
 -->
