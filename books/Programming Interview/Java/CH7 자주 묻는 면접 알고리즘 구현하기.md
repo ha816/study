@@ -1,7 +1,8 @@
 # 피보나치 수열 구하기
 > 1에서 n까지의 피보나치 수열을 반환하는 메서드를 정의하라
 
-$f(n) = 1 + 1 + 2 + 3 + 5 + 8 + 13 + 21 + \cdots$
+$L(k) = L(k-2) + L(k-1)$
+$L(1) = L(2) = 1$
 
 # 팩토리얼 구하기
 
@@ -14,5 +15,5 @@ $f(n) = 1 + 1 + 2 + 3 + 5 + 8 + 13 + 21 + \cdots$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDc1Mjk2ODYsMTc1OTE4NzE3Ml19
+eyJoaXN0b3J5IjpbMzY1NzE0Nzg5LDE3NTkxODcxNzJdfQ==
 -->
