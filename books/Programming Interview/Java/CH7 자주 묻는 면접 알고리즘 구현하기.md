@@ -1,5 +1,7 @@
 # FizzBuzz 구현하기
 
+> 1에서 n까지 숫자를 출력하되 3의 배수는 
+
 
 # 피보나치 수열 구하기
 
@@ -14,5 +16,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0ODMwNzgzOV19
+eyJoaXN0b3J5IjpbLTE2ODU1OTc1MTFdfQ==
 -->
