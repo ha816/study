@@ -63,7 +63,8 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 # 플라이웨이트 패턴
 
 > 플라이웨이트 패턴의 구현 방법을 설명할 수 있는가?
-> 
+
+플라이웨이트 패턴은 몇 개의 객체에 많은 값을 공유해야 할때 유용하다. 이런 인스턴스들은 객체가 없어지지 않으면 해당 값들을 공유할 수 있다.  
 * 대표적인 예로 Integer.valueOf()가 있다. 
 
 
@@ -76,7 +77,7 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNzk3NDkxNCwtMTAzMDczNTI4MCwtMj
+eyJoaXN0b3J5IjpbLTM1MzI0NTk3NSwtMTAzMDczNTI4MCwtMj
 IwNzI5OTgxLC0xNjI3MDA0MjgzLC0xNzM5NDQ1MjYxLDEzMTA4
 MjMxNDEsNDQ5NDg5MDI0LDE5MzQ0NjE2OSwtMjA4MzY3OTAwNi
 wyMTM3MTU3MzE2LC0yMDYxNDgwNTgyLC0zMzA4MjA4NjgsMjEx
