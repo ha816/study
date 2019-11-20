@@ -52,7 +52,8 @@ BufferedOutputStream bos = new BufferedOutputStream(fos);
 ObjectOutputStream oos = new ObjectOutputStream(fos);
 ```
 
-FileOutputstream 클래스는 디스크에 파일을 저장하고 
+FileOutputstream 클래스는 디스크에 파일을 저장하고,
+
 
 
 # 플라이웨이트 패턴
@@ -70,9 +71,9 @@ FileOutputstream 클래스는 디스크에 파일을 저장하고
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5NjM2MTE4LC0yMjA3Mjk5ODEsLTE2Mj
-cwMDQyODMsLTE3Mzk0NDUyNjEsMTMxMDgyMzE0MSw0NDk0ODkw
-MjQsMTkzNDQ2MTY5LC0yMDgzNjc5MDA2LDIxMzcxNTczMTYsLT
-IwNjE0ODA1ODIsLTMzMDgyMDg2OCwyMTExNDIzNTkyLDIxMjMx
-MTI3MDZdfQ==
+eyJoaXN0b3J5IjpbLTIwMDc4MzU4NDgsLTIyMDcyOTk4MSwtMT
+YyNzAwNDI4MywtMTczOTQ0NTI2MSwxMzEwODIzMTQxLDQ0OTQ4
+OTAyNCwxOTM0NDYxNjksLTIwODM2NzkwMDYsMjEzNzE1NzMxNi
+wtMjA2MTQ4MDU4MiwtMzMwODIwODY4LDIxMTE0MjM1OTIsMjEy
+MzExMjcwNl19
 -->
