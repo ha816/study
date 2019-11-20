@@ -48,10 +48,11 @@ OutputStream은 클래스에서 구현한 메서드 대부분은 필요한 수�
 public void decoratorPattern() throws IOException
 File f = new File();
 FileOutputStream fos = new FileOutputStream(f);
-Buffere
-
+BufferedOutputStream bos = new BufferedOutputStream(fos);
+ObjectOutputStream oos = new ObjectOutputStream(fos);
 ```
 
+FileOutputstream 클래스는 디스크에 파일을 저장하고 
 
 
 # 플라이웨이트 패턴
@@ -69,7 +70,7 @@ Buffere
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk0NzI0MDAwLC0yMjA3Mjk5ODEsLTE2Mj
+eyJoaXN0b3J5IjpbMzk5NjM2MTE4LC0yMjA3Mjk5ODEsLTE2Mj
 cwMDQyODMsLTE3Mzk0NDUyNjEsMTMxMDgyMzE0MSw0NDk0ODkw
 MjQsMTkzNDQ2MTY5LC0yMDgzNjc5MDA2LDIxMzcxNTczMTYsLT
 IwNjE0ODA1ODIsLTMzMDgyMDg2OCwyMTExNDIzNTkyLDIxMjMx
