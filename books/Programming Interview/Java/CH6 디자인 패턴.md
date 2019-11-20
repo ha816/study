@@ -65,9 +65,10 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 > 플라이웨이트 패턴의 구현 방법을 설명할 수 있는가?
 
 * 플라이웨이트 패턴은 불필요한 객체 생성을 줄이고 불변 객체의 재사용성을 높여 성능 향상을 꾀하는 패턴이다. 
-* 대표적인 예로 Integer.valueOf()가 있다. 
+* 대표적인 예로 Integer.valueOf 메서드가 있다.
 * valueOf 메서드는 매개변수의 값을 보고 이전에 캐시된 값이면 새로운 인스턴스를 만들지 않고 이전해 생성해둔 인스턴스를 반환한다. 이 캐시의 기본범위는 -128 ~ 127이까지다.  
-
+* 
+*
 
 # 싱글턴 패턴
 
@@ -78,7 +79,7 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxMzMyMDE4LC0yNzY2OTE1NDEsLTM1Mz
+eyJoaXN0b3J5IjpbMTQ3NzQ4MDg5LC0yNzY2OTE1NDEsLTM1Mz
 I0NTk3NSwtMTAzMDczNTI4MCwtMjIwNzI5OTgxLC0xNjI3MDA0
 MjgzLC0xNzM5NDQ1MjYxLDEzMTA4MjMxNDEsNDQ5NDg5MDI0LD
 E5MzQ0NjE2OSwtMjA4MzY3OTAwNiwyMTM3MTU3MzE2LC0yMDYx
