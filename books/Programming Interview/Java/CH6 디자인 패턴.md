@@ -48,7 +48,7 @@ OutputStream은 클래스에서 구현한 메서드 대부분은 필요한 수�
 ```
 @Test
 public void decoratorPattern() throws IOException
-File f = new File();
+File f = new File("File");
 FileOutputStream fos = new FileOutputStream(f);
 BufferedOutputStream bos = new BufferedOutputStream(fos);
 ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -75,9 +75,9 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMjYzOTM0NiwtMTAzMDczNTI4MCwtMj
-IwNzI5OTgxLC0xNjI3MDA0MjgzLC0xNzM5NDQ1MjYxLDEzMTA4
-MjMxNDEsNDQ5NDg5MDI0LDE5MzQ0NjE2OSwtMjA4MzY3OTAwNi
-wyMTM3MTU3MzE2LC0yMDYxNDgwNTgyLC0zMzA4MjA4NjgsMjEx
-MTQyMzU5MiwyMTIzMTEyNzA2XX0=
+eyJoaXN0b3J5IjpbNzQ4NDc5MjU4LC0xMDMwNzM1MjgwLC0yMj
+A3Mjk5ODEsLTE2MjcwMDQyODMsLTE3Mzk0NDUyNjEsMTMxMDgy
+MzE0MSw0NDk0ODkwMjQsMTkzNDQ2MTY5LC0yMDgzNjc5MDA2LD
+IxMzcxNTczMTYsLTIwNjE0ODA1ODIsLTMzMDgyMDg2OCwyMTEx
+NDIzNTkyLDIxMjMxMTI3MDZdfQ==
 -->
