@@ -75,16 +75,16 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 * 싱글턴 패턴은 클래스가 오직 하나인 인스턴스만 생성한다는 것을 보장하는 패턴이다. 
 * 하나의 인스턴스만 있기 때문에 관리하기가 편하고 성능 향상이 있을 수 있다.
 
-싱글턴의 구현 방법에 따라 다르지만 쓰레드 세이프 핮
+싱글턴의 구현 방법에 따라 다르지만 쓰레드 세이프하지 않을 수 있기 때문에, 자바 5에서 공개된 Enum 타입으로 싱글턴 패턴을 구현하는 것이 좋다. 싱글턴 패턴을 적용할 인스턴스를 하나의 원소만 가지는 Enum 타입으로 생성하면 JVM 에서 싱글턴을 보장한다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTczNjY0NjAsMjE0NTA4NTQwMywtMj
-c2NjkxNTQxLC0zNTMyNDU5NzUsLTEwMzA3MzUyODAsLTIyMDcy
-OTk4MSwtMTYyNzAwNDI4MywtMTczOTQ0NTI2MSwxMzEwODIzMT
-QxLDQ0OTQ4OTAyNCwxOTM0NDYxNjksLTIwODM2NzkwMDYsMjEz
-NzE1NzMxNiwtMjA2MTQ4MDU4MiwtMzMwODIwODY4LDIxMTE0Mj
-M1OTIsMjEyMzExMjcwNl19
+eyJoaXN0b3J5IjpbODQxNzM0MzU1LDIxNDUwODU0MDMsLTI3Nj
+Y5MTU0MSwtMzUzMjQ1OTc1LC0xMDMwNzM1MjgwLC0yMjA3Mjk5
+ODEsLTE2MjcwMDQyODMsLTE3Mzk0NDUyNjEsMTMxMDgyMzE0MS
+w0NDk0ODkwMjQsMTkzNDQ2MTY5LC0yMDgzNjc5MDA2LDIxMzcx
+NTczMTYsLTIwNjE0ODA1ODIsLTMzMDgyMDg2OCwyMTExNDIzNT
+kyLDIxMjMxMTI3MDZdfQ==
 -->
