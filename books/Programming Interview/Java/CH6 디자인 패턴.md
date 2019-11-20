@@ -32,10 +32,14 @@
 * 예를 들어, 기본 도로 표시 기능에 차선 표시, 교통량 표시, 교차로 표시, 단속 카메라 표시의 4가지 추가 기능이 있을 때 추가 기능의 모든 조합은 15가지가 된다. 이를 데코레이터 패턴을 이용하여 필요 추가 기능의 조합을 동적으로 생성할 수 있다.
 
 Component
-: 기본 기능을 뜻하는 ConcreteComponent와 추가 기능을 뜻하는 Decorator의 공통 기능을 정의
-즉, 클라이언트는 Component를 통해 실제 객체를 사용함
-ConcreteComponent
-기본 기능을 구현하는 클래스
+: 기본 기능은 Component를 통해 구현한다. 즉, 클라이언트는 Component를 통해 실제 객체를 사용함
+
+Decorator
+: 많은 수가 존재하는 구체적인 Decorator의 공통 기능을 제공
+
+ConcreteComponent와 추가 기능을 뜻하는 Decorator의 공통 기능을 정의
+
+
 Decorator
 많은 수가 존재하는 구체적인 Decorator의 공통 기능을 제공
 https://gmlwjd9405.github.io/2018/07/09/decorator-pattern.html
@@ -58,8 +62,8 @@ https://gmlwjd9405.github.io/2018/07/09/decorator-pattern.html
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMDgyMzE0MSw0NDk0ODkwMjQsMTkzND
-Q2MTY5LC0yMDgzNjc5MDA2LDIxMzcxNTczMTYsLTIwNjE0ODA1
-ODIsLTMzMDgyMDg2OCwyMTExNDIzNTkyLDIxMjMxMTI3MDZdfQ
-==
+eyJoaXN0b3J5IjpbMzI5NjUyODE2LDEzMTA4MjMxNDEsNDQ5ND
+g5MDI0LDE5MzQ0NjE2OSwtMjA4MzY3OTAwNiwyMTM3MTU3MzE2
+LC0yMDYxNDgwNTgyLC0zMzA4MjA4NjgsMjExMTQyMzU5MiwyMT
+IzMTEyNzA2XX0=
 -->
