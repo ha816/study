@@ -1,4 +1,5 @@
 # 피보나치 수열 구하기
+
 > 1에서 n까지의 피보나치 수열을 반환하는 메서드를 정의하라
 
 $L(k) = L(k-2) + L(k-1)$, $L(1) = L(2) = 1$
@@ -23,10 +24,9 @@ function fibonachi(int n){
 	if(cache.contain(n)){	
 		return cache
 	}
-
 	int result = fibonachi(n-1) + fibonachi(n-2);
 	cache.put(n, result);
-	retu
+	return result;
 }
 ```
 
@@ -43,6 +43,6 @@ function fibonachi(int n){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDMyMTU0ODUsLTcxMDc4NjgzLDE3NT
-kxODcxNzJdfQ==
+eyJoaXN0b3J5IjpbLTk5NTU4NzU1NSwtNzEwNzg2ODMsMTc1OT
+E4NzE3Ml19
 -->
