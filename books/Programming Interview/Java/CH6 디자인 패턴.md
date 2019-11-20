@@ -26,8 +26,7 @@
 
 > 데코레이터 패턴의 예를 설명할 수 있는가?
 
-* 
-
+* 특정 객체의 기능을 설정하거나 변경할 수 있게 해준다. 
 * 다수의 데코레이터 객체가 작업에 관여하여 원하는 작업을 완성하는 패턴.
 * 데코레이터 객체는 내부 필드로 다른 데코레이터 객체를 전달 받는다. 전달 받은 객체의 필요 메서드를 호출하면서 자신이 해야하는 작업을 수행한 다음 데코레이터 객체를 반환한다. 
 
@@ -46,7 +45,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzY0MjU1NDEsMTkzNDQ2MTY5LC0yMD
-gzNjc5MDA2LDIxMzcxNTczMTYsLTIwNjE0ODA1ODIsLTMzMDgy
-MDg2OCwyMTExNDIzNTkyLDIxMjMxMTI3MDZdfQ==
+eyJoaXN0b3J5IjpbMTM4MjczOTk3LDE5MzQ0NjE2OSwtMjA4Mz
+Y3OTAwNiwyMTM3MTU3MzE2LC0yMDYxNDgwNTgyLC0zMzA4MjA4
+NjgsMjExMTQyMzU5MiwyMTIzMTEyNzA2XX0=
 -->
