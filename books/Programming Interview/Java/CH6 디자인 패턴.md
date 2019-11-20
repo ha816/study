@@ -27,10 +27,8 @@
 > 데코레이터 패턴의 예를 설명할 수 있는가?
 
 * 다수 데코레이터의 조합을 통해 기능을 동적으로 유연하게 확장 할 수 있게 해주는 패턴.
-* * 다수의 데코레이터 객체가 작업에 관여하여 원하는 작업을 완성하는 패턴.
-
+* 다수의 데코레이터 객체가 작업에 관여하여 원하는 작업을 완성하는 패턴.
 * 기본 기능에 추가할 수 있는 기능의 종류가 많은 경우에 추가 기능을 데코레이터 클래스로 정의 한 후 필요한 데코레이터 객체를 조합하여 사용한다.
-
 * 예를 들어, 기본 도로 표시 기능에 차선 표시, 교통량 표시, 교차로 표시, 단속 카메라 표시의 4가지 추가 기능이 있을 때 추가 기능의 모든 조합은 15가지가 된다. 이를 데코레이터 패턴을 이용하여 필요 추가 기능의 조합을 동적으로 생성할 수 있다.
 
 Component
@@ -38,6 +36,7 @@ Component
 
 Decorator
 : 기본 Component를 확장하여 추가 기능을 정의 한 후 데코레이터를 정의한다.
+
 
 
 
@@ -56,8 +55,8 @@ Decorator
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgxNjY1MjE2LDEzMTA4MjMxNDEsNDQ5ND
-g5MDI0LDE5MzQ0NjE2OSwtMjA4MzY3OTAwNiwyMTM3MTU3MzE2
-LC0yMDYxNDgwNTgyLC0zMzA4MjA4NjgsMjExMTQyMzU5MiwyMT
-IzMTEyNzA2XX0=
+eyJoaXN0b3J5IjpbLTE2MTUxMDU1NzIsMTMxMDgyMzE0MSw0ND
+k0ODkwMjQsMTkzNDQ2MTY5LC0yMDgzNjc5MDA2LDIxMzcxNTcz
+MTYsLTIwNjE0ODA1ODIsLTMzMDgyMDg2OCwyMTExNDIzNTkyLD
+IxMjMxMTI3MDZdfQ==
 -->
