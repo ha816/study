@@ -11,6 +11,8 @@
 # 스트레티지 패턴
 
 >스트레티지 패턴의 예를 보여줄 수 있는가?
+
+* 지정된 알고리즘의 세부 구현을 변경할 필요 없이 쉽게 교환할 수 이 
 * 사실 너무나 자연스럽게 쓰고 있는 패턴. 대표적인 예로 DI(Dependency Injection)
 * 사용하려는 객체를 직접 만들어 쓰는 것이 아니라 사용하고 싶은 기능을 구현한 상위 객체를 받아 사용하는것이다. 
 
@@ -42,6 +44,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMDgyMDg2OCwyMTExNDIzNTkyLDIxMj
-MxMTI3MDZdfQ==
+eyJoaXN0b3J5IjpbMzY2ODM1MTMsLTMzMDgyMDg2OCwyMTExND
+IzNTkyLDIxMjMxMTI3MDZdfQ==
 -->
