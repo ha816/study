@@ -13,19 +13,13 @@
 >스트레티지 패턴의 예를 보여줄 수 있는가?
 
 * 스트레티지(전략)이란 어떤 목적을 달성하기 위해 일을 수행하는 방식, 비즈니스 규칙, 문제를 해결하는 알고리즘 등
-* 스트레티지 패턴은 **전략을 쉽게 바꿀 수 있도록 해주는 디자인 패턴** 세부 구현을 변경할 필요 없이 실행중이라도 교환할 수 있어 의존성 주입에 자주 사용된다. 
-
-* 행위를 클래스로 캡슐화해 동적으로 행위를 자유롭게 바꿀 수 있게 해주는 패턴
-* 같은 문제를 해결하는 여러 클래스별로 캡슐화되어 있고 이들이 필요할 때 교체할 수 있도록 함으로써 동일한 문제를 다른 알고리즘으로 해결할 수 있게 하는 디자인 패턴
-‘행위(Behavioral) 패턴’의 하나 
-
-
-* 사실 너무나 자연스럽게 쓰고 있는 패턴. 대표적인 예로 DI(Dependency Injection)
-* 사용하려는 객체를 직접 만들어 쓰는 것이 아니라 사용하고 싶은 기능을 구현한 상위 객체를 받아 사용하는것이다. 
+* 스트레티지 패턴은 **전략을 쉽게 바꿀 수 있도록 해주는 디자인 패턴** 세부 구현을 변경할 필요 없이 실행중이라도 교환할 수 있어 의존성 주입(DI; Dependency Injection)에 자주 사용된다. 
 
 # 템플릿 메서드 패턴
 
 > 템플릿 메서드 패턴은 어떻게 사용하는가?
+
+* 템플릿 메서드 매턴은 알고리즘의 일부 또는 전부를 하위 클래스에서 구현하거나 위임하는데 사용한다. 
 * 공통적으로 여러 객체가 사용할 메서드를 미리 템플릿으로 정의해두고 재사용 하는것.
 * 템플릿 메서드를 추상 클래스에 구현해두고, 구현 클래스는 이를 재사용해도 되고, 재정의를 하여 원하는 기능을 직접 구현해도 된다. 
 
@@ -51,7 +45,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NjUxMDQzNywyMTM3MTU3MzE2LC0yMD
-YxNDgwNTgyLC0zMzA4MjA4NjgsMjExMTQyMzU5MiwyMTIzMTEy
-NzA2XX0=
+eyJoaXN0b3J5IjpbLTIwODM2NzkwMDYsMjEzNzE1NzMxNiwtMj
+A2MTQ4MDU4MiwtMzMwODIwODY4LDIxMTE0MjM1OTIsMjEyMzEx
+MjcwNl19
 -->
