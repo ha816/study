@@ -21,7 +21,7 @@ int, long 원시타입은 숫자 값 뒤에 L을 붙이면 long이다.  안붙�
 char는 unsigned이므로 0 ~ 65535 까지 담을수 있다. 
 
 > 왜 Integer.MIN_VALUES에 대응하는 양수가 없는가?
-> Integer값은 $2^{32}$가지의 값을 표현할수 있다. 그리고 signed이기 때문에 절반 만큼은 음수를 위해 써야한다.  즉 $2^{31}$에 해당하는
+> Integer값은 $2^{32}$가지의 값을 표현할수 있다. 그리고 signed이기 때문에 절반 만큼은 음수를 위해 써야한다.  그런데 0도 양수의 표현해야하기 때문에 $2^{31}$
 
 
 # 객체 이용하기
@@ -47,7 +47,7 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDIxNjk0NDksMjEzNjU0NDI1OSw1Mj
+eyJoaXN0b3J5IjpbLTE0NDU3NTgwOTYsMjEzNjU0NDI1OSw1Mj
 k5Nzg3MCw0MDM1MjQwMDAsODMyODQ3Njc5LDIxMzY3NTg0MDld
 fQ==
 -->
