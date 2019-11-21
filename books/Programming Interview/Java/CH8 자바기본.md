@@ -25,7 +25,9 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 # 객체 이용하기
 
-객체는 변수들의 컬렉션으로 정의할 수 있다. 복잡한
+원시 타입을 제외하면 자바 언어의 모든 변수들은 참조 타입이다. 이것들은 객체로 원시타입과 차이점은 빈객체를 의미하는 null 표현이 존재한다는 것이다.
+
+객체는 참조 타입이라는 말이 어떤 의미 일까
 
 
 # 자바 배열
@@ -49,7 +51,7 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzYwNTE4NzIsLTE1MTQ3MzY3NDksLT
-E0NDU3NTgwOTYsMjEzNjU0NDI1OSw1Mjk5Nzg3MCw0MDM1MjQw
-MDAsODMyODQ3Njc5LDIxMzY3NTg0MDldfQ==
+eyJoaXN0b3J5IjpbLTU0ODQ1NTcwMSwtMTAzNjA1MTg3MiwtMT
+UxNDczNjc0OSwtMTQ0NTc1ODA5NiwyMTM2NTQ0MjU5LDUyOTk3
+ODcwLDQwMzUyNDAwMCw4MzI4NDc2NzksMjEzNjc1ODQwOV19
 -->
