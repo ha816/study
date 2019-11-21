@@ -106,8 +106,10 @@ otherReversedList = reverseList(next);
 next.next = origin;
 
 return otherReversedList;
-
 ```
+
+> 단어가 필랜드롬인지 어떻게 확인 할 수 있는가?
+
 
 
 # 제네릭 사용하기
@@ -117,10 +119,10 @@ return otherReversedList;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NTk5MzcyNiwtMTE4MzcyNzEyMiwxMD
-U0Nzg5Mjk4LDE4MDE0NTczMTUsLTExMTYxODYxMzgsLTE0NDEz
-MTE1MiwtMTEzNzg5NTI4OCwtMTQwNzQ1NTA2OSwzNDg1NjYxMj
-AsMTM2OTYyNTUxMyw4NDczNDE1MDEsLTY2ODQ2NjYwNywtMTk3
-MzUzODYyMywtMTkyNTQ2NjAxNiw1NTkwMzkwMiwtNzEwNzg2OD
-MsMTc1OTE4NzE3Ml19
+eyJoaXN0b3J5IjpbLTE5MDkxNTc0MDUsMTE0NTk5MzcyNiwtMT
+E4MzcyNzEyMiwxMDU0Nzg5Mjk4LDE4MDE0NTczMTUsLTExMTYx
+ODYxMzgsLTE0NDEzMTE1MiwtMTEzNzg5NTI4OCwtMTQwNzQ1NT
+A2OSwzNDg1NjYxMjAsMTM2OTYyNTUxMyw4NDczNDE1MDEsLTY2
+ODQ2NjYwNywtMTk3MzUzODYyMywtMTkyNTQ2NjAxNiw1NTkwMz
+kwMiwtNzEwNzg2ODMsMTc1OTE4NzE3Ml19
 -->
