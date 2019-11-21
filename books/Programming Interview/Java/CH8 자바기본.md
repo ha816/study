@@ -31,7 +31,7 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > final 키워드는 객체 참조에 어떤 영향을 미치는가?
 
-객체에 선언하는  fianl 키워드는 원시타입에 선언하는 final 키워드와 동일하다. 
+객체에 선언하는 final 키워드는 원시타입에 선언하는 final 키워드와 동일하다. 
 
 # 자바 배열
 
@@ -54,8 +54,8 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgzMjM3MTAsLTE2NTE5NDE4MTEsLTU0OD
-Q1NTcwMSwtMTAzNjA1MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1
-ODA5NiwyMTM2NTQ0MjU5LDUyOTk3ODcwLDQwMzUyNDAwMCw4Mz
-I4NDc2NzksMjEzNjc1ODQwOV19
+eyJoaXN0b3J5IjpbODExMTk2NDA4LC0xNjUxOTQxODExLC01ND
+g0NTU3MDEsLTEwMzYwNTE4NzIsLTE1MTQ3MzY3NDksLTE0NDU3
+NTgwOTYsMjEzNjU0NDI1OSw1Mjk5Nzg3MCw0MDM1MjQwMDAsOD
+MyODQ3Njc5LDIxMzY3NTg0MDldfQ==
 -->
