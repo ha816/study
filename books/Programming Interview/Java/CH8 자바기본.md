@@ -48,6 +48,8 @@ private의 일반적인 오해는 private으로 선언한 변수는 해당 인�
 
 > 메서드와 변수에 사용되는 static 키워드의 역할은 무엇인가?
 
+static은 정적 변수와 메서드를 만드는데 사용하느 키워드이다. 정적이란 인스턴스가 생성되기 전에 이미 존재하는걸 의미하는데, 대개 특정 인스턴스 보다는 클래스 이름을 통해 정적 메서드와 정적 변수에 접근한다. 정적변수 또는 정적메서드는 그 클래스를 통틀어서 하나만 
+
 
 # 자바 배열
 
@@ -70,9 +72,9 @@ private의 일반적인 오해는 private으로 선언한 변수는 해당 인�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ5NTM4ODg1LC0xMzE4NTU5NTQ2LDgxMT
-E5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1NzAxLC0xMDM2MDUx
-ODcyLC0xNTE0NzM2NzQ5LC0xNDQ1NzU4MDk2LDIxMzY1NDQyNT
-ksNTI5OTc4NzAsNDAzNTI0MDAwLDgzMjg0NzY3OSwyMTM2NzU4
-NDA5XX0=
+eyJoaXN0b3J5IjpbLTMxNDQyNjM5NSw2NDk1Mzg4ODUsLTEzMT
+g1NTk1NDYsODExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0NTU3
+MDEsLTEwMzYwNTE4NzIsLTE1MTQ3MzY3NDksLTE0NDU3NTgwOT
+YsMjEzNjU0NDI1OSw1Mjk5Nzg3MCw0MDM1MjQwMDAsODMyODQ3
+Njc5LDIxMzY3NTg0MDldfQ==
 -->
