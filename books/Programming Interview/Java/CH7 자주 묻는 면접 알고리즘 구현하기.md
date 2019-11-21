@@ -99,7 +99,8 @@ if(origin.getNext() == null){
 	return list;
 }
 
-next = origin.getNext(); //orgin -> next -> next.next
+next = origin.getNext(); //orgin -> next -> next.next -> ... ->End
+origin.next = null;
 
 otherReversedList = reverseList(next);
 next.next = original;
@@ -116,10 +117,10 @@ return otherReversedList;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4ODUwMzE3MSwxMDU0Nzg5Mjk4LDE4MD
-E0NTczMTUsLTExMTYxODYxMzgsLTE0NDEzMTE1MiwtMTEzNzg5
-NTI4OCwtMTQwNzQ1NTA2OSwzNDg1NjYxMjAsMTM2OTYyNTUxMy
-w4NDczNDE1MDEsLTY2ODQ2NjYwNywtMTk3MzUzODYyMywtMTky
-NTQ2NjAxNiw1NTkwMzkwMiwtNzEwNzg2ODMsMTc1OTE4NzE3Ml
-19
+eyJoaXN0b3J5IjpbLTExODM3MjcxMjIsMTA1NDc4OTI5OCwxOD
+AxNDU3MzE1LC0xMTE2MTg2MTM4LC0xNDQxMzExNTIsLTExMzc4
+OTUyODgsLTE0MDc0NTUwNjksMzQ4NTY2MTIwLDEzNjk2MjU1MT
+MsODQ3MzQxNTAxLC02Njg0NjY2MDcsLTE5NzM1Mzg2MjMsLTE5
+MjU0NjYwMTYsNTU5MDM5MDIsLTcxMDc4NjgzLDE3NTkxODcxNz
+JdfQ==
 -->
