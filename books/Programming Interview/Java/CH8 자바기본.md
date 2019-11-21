@@ -48,7 +48,9 @@ private의 일반적인 오해는 private으로 선언한 변수는 해당 인�
 
 > 메서드와 변수에 사용되는 static 키워드의 역할은 무엇인가?
 
-static은 정적 변수와 메서드를 만드는데 사용하느 키워드이다. 정적이란 인스턴스가 생성되기 전에 이미 존재하는걸 의미하는데, 대개 특정 인스턴스 보다는 클래스 이름을 통해 정적 메서드와 정적 변수에 접근한다. 정적변수 또는 정적메서드는 그 클래스를 통틀어서 하나만 
+static은 정적 변수와 메서드를 만드는데 사용하느 키워드이다. 정적이란 인스턴스가 생성되기 전에 이미 존재하는걸 의미하는데, 대개 특정 인스턴스 보다는 클래스 이름을 통해 정적 메서드와 정적 변수에 접근한다. 정적변수 또는 정적메서드는 그 클래스를 통틀어서 하나만 공통으로 사용한다.
+
+> 다형성과 상속이란 무엇인가
 
 
 # 자바 배열
@@ -72,9 +74,9 @@ static은 정적 변수와 메서드를 만드는데 사용하느 키워드이�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNDQyNjM5NSw2NDk1Mzg4ODUsLTEzMT
-g1NTk1NDYsODExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0NTU3
-MDEsLTEwMzYwNTE4NzIsLTE1MTQ3MzY3NDksLTE0NDU3NTgwOT
-YsMjEzNjU0NDI1OSw1Mjk5Nzg3MCw0MDM1MjQwMDAsODMyODQ3
-Njc5LDIxMzY3NTg0MDldfQ==
+eyJoaXN0b3J5IjpbNDExODg3MzUxLDY0OTUzODg4NSwtMTMxOD
+U1OTU0Niw4MTExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1NTcw
+MSwtMTAzNjA1MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1ODA5Ni
+wyMTM2NTQ0MjU5LDUyOTk3ODcwLDQwMzUyNDAwMCw4MzI4NDc2
+NzksMjEzNjc1ODQwOV19
 -->
