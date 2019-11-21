@@ -1,6 +1,6 @@
-## 클래스와 인터페이스
+# 클래스와 인터페이스
 
-### 13. 클래스와 멤버의 접근 권한은 최소화하라
+## Item13. 클래스와 멤버의 접근 권한은 최소화하라
 
  - 정보 은닉(information hiding), 캡슐화(encapsulation)
 	 - 의존성을 낮춰서 각자 개별적으로 개발, 테스트, 변경하자 
@@ -163,5 +163,6 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODM0MzIzMjNdfQ==
+eyJoaXN0b3J5IjpbLTE3NzI0MjM3MzIsLTE1ODM0MzIzMjNdfQ
+==
 -->
