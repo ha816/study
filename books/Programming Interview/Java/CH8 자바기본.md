@@ -4,8 +4,14 @@
 
 원시타입(primitive type)은 Null이 될수 없다. 즉 언제나 값을 가지는 상태다. 
 
-int, long 원시타입은 숫자 값 뒤에 L을 붙이면 long이다. 
-비슷하게 float, double도 숫자값 뒤에 
+int, long 원시타입은 숫자 값 뒤에 L을 붙이면 long이다.  안붙이면 자연스럽게 int이다. 비슷하게 float, double도 숫자값 뒤에 D를 붙이면 double, F를 붙이면 float이다.
+
+원시 타입의 크기
+
+|  |  |
+|--|--|
+|  |  |
+
 
 
 # 객체 이용하기
@@ -31,5 +37,5 @@ int, long 원시타입은 숫자 값 뒤에 L을 붙이면 long이다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjg3NzUyMCwyMTM2NzU4NDA5XX0=
+eyJoaXN0b3J5IjpbMTUzMzcwMjE4OSwyMTM2NzU4NDA5XX0=
 -->
