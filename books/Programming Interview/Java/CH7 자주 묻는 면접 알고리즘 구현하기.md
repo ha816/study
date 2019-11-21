@@ -59,15 +59,14 @@ for(int i = 1; i <= n ; i++){
 
 한 단어의 가능한 어떤 애너그램도 정렬을 하면 모두 같은 단어가 된다. 
 ```
-given a word : w
-
-sortedWord = sw
-list of string : L
+given a word : w, list of string : L
+sortedWord = sw;
 for(s : L ) {
 	sorted ss = sort(s);
-
+	if(sw.equals(ss)){
+	findAnagram()
+	} 
 }
-
 ```
 
 
@@ -80,7 +79,7 @@ for(s : L ) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4NjQyMjg0LDEzNjk2MjU1MTMsODQ3Mz
+eyJoaXN0b3J5IjpbMzQ4NTY2MTIwLDEzNjk2MjU1MTMsODQ3Mz
 QxNTAxLC02Njg0NjY2MDcsLTE5NzM1Mzg2MjMsLTE5MjU0NjYw
 MTYsNTU5MDM5MDIsLTcxMDc4NjgzLDE3NTkxODcxNzJdfQ==
 -->
