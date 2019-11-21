@@ -15,8 +15,9 @@ int, long 원시타입은 숫자 값 뒤에 L을 붙이면 long이다.  안붙�
 |short | 16(2byte) |
 |int | 32(4byte) |
 |long | 64(8byte) |
-|float | 4 |
-|double | 8 |
+|float | 32(4byte) |
+|double | 64(8byte) |
+
 
 
 # 객체 이용하기
@@ -42,6 +43,6 @@ int, long 원시타입은 숫자 값 뒤에 L을 붙이면 long이다.  안붙�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAzNTI0MDAwLDgzMjg0NzY3OSwyMTM2Nz
-U4NDA5XX0=
+eyJoaXN0b3J5IjpbLTE1OTgzMTIxNDksNDAzNTI0MDAwLDgzMj
+g0NzY3OSwyMTM2NzU4NDA5XX0=
 -->
