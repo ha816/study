@@ -35,21 +35,11 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > 객체의 가시성 수정자(visibility modifier)는 어떻게 작동하는가? 
 
-가시성 수정자는 객체의 정보은닉에 도움을 준다. 클래스의 내부 필드나 메서드의 접근을 제어하는데 4가지 종류가 있다. 
-
- 최상위 레벨(중첩되지 않은) 클래스와 인터페이스에 부여할 수 있는 접근 권한은 크게 package-private과 public이 있다.
+가시성 수정자는 객체의 정보은닉에 도움을 준다. 필드나 메서드, 중첩 클래스(nested class), 중첩 인터페이스(nested interface) 같은  멤버(필드, 메서드)의 접근 권한은 크게 4가지 종류가 있다. 
 
 | 접근 권한 수정자 | 설명 |
 |--|--|
-|package-private| 해당 패키지 내에서만 유효한 개체 |
-|public| 전역적 개체|
-
-
-필드나 메서드, 중첩 클래스(nested class), 중첩 인터페이스(nested interface) 같은  멤버의 접근 권한은 크게 4가지
-
-| 접근 권한 수정자 | 설명 |
-|--|--|
-|private| 이렇게 선언된 멤버는 선언된 최상위 레벨 클래스 내부에서만 접근 가능  |
+|private| 선언된 멤버는 선언된 최상위 레벨 클래스 내부에서만 접근 가능  |
 |package-private| 이렇게 선언된 멤버는 같은 패키지내의 아무 클래스에서 사용 가능; 기본 접근 권한으로 알려져 있음 |
 |protected| 이렇게 선언된 멤버는 선언된 클래스 및 그 하위 클래스만 사용할 수 있다. 선언된 클래스와 같은 패키지에서도 사용이 가능  |
 |public| 선언된 멤버는 어디서도 사용이 가능하다  |
@@ -77,8 +67,9 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTg1NTk1NDYsODExMTk2NDA4LC0xNj
-UxOTQxODExLC01NDg0NTU3MDEsLTEwMzYwNTE4NzIsLTE1MTQ3
-MzY3NDksLTE0NDU3NTgwOTYsMjEzNjU0NDI1OSw1Mjk5Nzg3MC
-w0MDM1MjQwMDAsODMyODQ3Njc5LDIxMzY3NTg0MDldfQ==
+eyJoaXN0b3J5IjpbMjY2NzMwNDk0LC0xMzE4NTU5NTQ2LDgxMT
+E5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1NzAxLC0xMDM2MDUx
+ODcyLC0xNTE0NzM2NzQ5LC0xNDQ1NzU4MDk2LDIxMzY1NDQyNT
+ksNTI5OTc4NzAsNDAzNTI0MDAwLDgzMjg0NzY3OSwyMTM2NzU4
+NDA5XX0=
 -->
