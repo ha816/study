@@ -8,10 +8,15 @@ int, long 원시타입은 숫자 값 뒤에 L을 붙이면 long이다.  안붙�
 
 원시 타입의 크기
 
-|  |  |
+| type| 크기  |
 |--|--|
-|  |  |
-
+|char | 1 |
+|boolean | 1 |
+|short | 2 |
+|int | 4 |
+|long | 8 |
+|float |  |
+|double |  |
 
 
 # 객체 이용하기
@@ -37,5 +42,5 @@ int, long 원시타입은 숫자 값 뒤에 L을 붙이면 long이다.  안붙�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMzcwMjE4OSwyMTM2NzU4NDA5XX0=
+eyJoaXN0b3J5IjpbLTgxNzAzMzg4MywyMTM2NzU4NDA5XX0=
 -->
