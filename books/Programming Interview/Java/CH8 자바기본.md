@@ -35,7 +35,7 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > 객체의 가시성 수정자(visibility modifier)는 어떻게 작동하는가? 
 
-가시성 수정자는 정보클래스의 내부 필드나 메서드의 접근을 제어하는 역할을 한다. 객체 내부에 캡슐화된 변수나 메서드 4가지가 있다.
+가시성 수정자는 객체의 정보은닉에 도움을 준다. 클래스의 내부 필드나 메서드의 접근을 제어하는데 4가지 종류가 있다. 
 
 
 
@@ -61,8 +61,8 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc5MDg2NzExLDgxMTE5NjQwOCwtMTY1MT
-k0MTgxMSwtNTQ4NDU1NzAxLC0xMDM2MDUxODcyLC0xNTE0NzM2
-NzQ5LC0xNDQ1NzU4MDk2LDIxMzY1NDQyNTksNTI5OTc4NzAsND
-AzNTI0MDAwLDgzMjg0NzY3OSwyMTM2NzU4NDA5XX0=
+eyJoaXN0b3J5IjpbLTc3MDQ0MDIzMyw4MTExOTY0MDgsLTE2NT
+E5NDE4MTEsLTU0ODQ1NTcwMSwtMTAzNjA1MTg3MiwtMTUxNDcz
+Njc0OSwtMTQ0NTc1ODA5NiwyMTM2NTQ0MjU5LDUyOTk3ODcwLD
+QwMzUyNDAwMCw4MzI4NDc2NzksMjEzNjc1ODQwOV19
 -->
