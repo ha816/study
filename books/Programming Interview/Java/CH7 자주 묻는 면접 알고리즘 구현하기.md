@@ -94,16 +94,17 @@ function improvedReverse(String input){
 > 연결 리스트의 위치를 어떻게 뒤집을 수 있는가?
 
 ```
-function reverseList(list){
-if(list.getNext() == null){
+function reverseList(origin){
+if(origin.getNext() == null){
 	return list;
 }
 
-next = list.getNext(); //orgin -> next -> next.next
+next = origin.getNext(); //orgin -> next -> next.next
 
+otherReversedList = reverseList(next);
+next.next = original;
 
-reversedList = reverseList(next);
-reversedList.next = origin;
+return otherReversedList;
 
 ```
 
@@ -115,10 +116,10 @@ reversedList.next = origin;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDc1MDA4NjAsMTA1NDc4OTI5OCwxOD
-AxNDU3MzE1LC0xMTE2MTg2MTM4LC0xNDQxMzExNTIsLTExMzc4
-OTUyODgsLTE0MDc0NTUwNjksMzQ4NTY2MTIwLDEzNjk2MjU1MT
-MsODQ3MzQxNTAxLC02Njg0NjY2MDcsLTE5NzM1Mzg2MjMsLTE5
-MjU0NjYwMTYsNTU5MDM5MDIsLTcxMDc4NjgzLDE3NTkxODcxNz
-JdfQ==
+eyJoaXN0b3J5IjpbLTk4ODUwMzE3MSwxMDU0Nzg5Mjk4LDE4MD
+E0NTczMTUsLTExMTYxODYxMzgsLTE0NDEzMTE1MiwtMTEzNzg5
+NTI4OCwtMTQwNzQ1NTA2OSwzNDg1NjYxMjAsMTM2OTYyNTUxMy
+w4NDczNDE1MDEsLTY2ODQ2NjYwNywtMTk3MzUzODYyMywtMTky
+NTQ2NjAxNiw1NTkwMzkwMiwtNzEwNzg2ODMsMTc1OTE4NzE3Ml
+19
 -->
