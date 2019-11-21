@@ -2,10 +2,10 @@
 
 ## Item13. 클래스와 멤버의 접근 권한은 최소화하라
 
-어설프게 설계된 컴포넌트와 잘 설계된 컴포넌트의 가장 큰 차이는 바로 클래스 내부 데이터와 내부 구현 정보를 외부 컴포넌트로 부터 얼마나 잘 숨겼느냐이다. 정보은닉(information hiding), 혹은 캡슐화(capsulation)이라 하는 이 개념은 소프트웨어 설계의 근간이 되는 원리다. 
+어설프게 설계된 컴포넌트와 잘 설계된 컴포넌트의 가장 큰 차이는 바로 클래스 내부 데이터와 내부 구현 정보를 외부 컴포넌트로 부터 얼마나 잘 숨겼느냐이다. 정보은닉 (information hiding), 혹은 캡슐화(capsulation)으로 불리는 이 개념은 소프트웨어 설계의 근간이 되는 원리다. 
 
-
- - 정보 은닉(information hiding), 캡슐화(encapsulation)
+ - 정보 은닉(information hiding)의 장점
+	 - 의존성을 낮춰서 각자 개별적으로 개발, 테스트, 변경하자 ㅇ 
 	 - 의존성을 낮춰서 각자 개별적으로 개발, 테스트, 변경하자 
 		 - 병렬적 개발 가능
 		 - 유지보수 부담 하락
@@ -166,6 +166,6 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNDg3NTkwMCwtMTc3MjQyMzczMiwtMT
-U4MzQzMjMyM119
+eyJoaXN0b3J5IjpbMTQ3MjU0MzczLC0xNzcyNDIzNzMyLC0xNT
+gzNDMyMzIzXX0=
 -->
