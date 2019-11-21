@@ -86,7 +86,7 @@ function improvedReverse(String input){
 	for(int i = 0; i < input.length / 2 ; i--){
 		int j = input.length - i - 1;
 		char origin = input.charAt(i);
-		input.setch
+		input[i] = input.charAt(j);
 	}
 }
 ```
@@ -101,8 +101,8 @@ function improvedReverse(String input){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEzMzI2MTUxLC0xMTM3ODk1Mjg4LC0xND
-A3NDU1MDY5LDM0ODU2NjEyMCwxMzY5NjI1NTEzLDg0NzM0MTUw
-MSwtNjY4NDY2NjA3LC0xOTczNTM4NjIzLC0xOTI1NDY2MDE2LD
-U1OTAzOTAyLC03MTA3ODY4MywxNzU5MTg3MTcyXX0=
+eyJoaXN0b3J5IjpbLTQ0ODcyMTA4NSwtMTEzNzg5NTI4OCwtMT
+QwNzQ1NTA2OSwzNDg1NjYxMjAsMTM2OTYyNTUxMyw4NDczNDE1
+MDEsLTY2ODQ2NjYwNywtMTk3MzUzODYyMywtMTkyNTQ2NjAxNi
+w1NTkwMzkwMiwtNzEwNzg2ODMsMTc1OTE4NzE3Ml19
 -->
