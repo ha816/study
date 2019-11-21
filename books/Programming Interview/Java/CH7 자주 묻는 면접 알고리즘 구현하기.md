@@ -53,6 +53,7 @@ for(int i = 1; i <= n ; i++){
 
 # 라이브러리 기능 구현하기
 
+>  애너그램
 > 특정 단어와 단어의 목록이 주어진다. 단어의 목록 중에서 특정 단어의 애너그램에 해당하는 단어목록을 모두 구하라. 
 
 애너그램은 단어의 절차를 재배열해서 다른 단어를 만드는 것을 말한다. 규칙은 글자를 삭제해서는 안된다는 것과 멀리 가져다 놓는 것은 가능하다는 것이다.
@@ -69,6 +70,9 @@ for(s : L ) {
 }
 ```
 
+> 문자열 뒤지기를 위한 메서드 작성하라
+
+
 
 
 
@@ -79,7 +83,8 @@ for(s : L ) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ4NTY2MTIwLDEzNjk2MjU1MTMsODQ3Mz
-QxNTAxLC02Njg0NjY2MDcsLTE5NzM1Mzg2MjMsLTE5MjU0NjYw
-MTYsNTU5MDM5MDIsLTcxMDc4NjgzLDE3NTkxODcxNzJdfQ==
+eyJoaXN0b3J5IjpbMTAzOTMxODgzOCwzNDg1NjYxMjAsMTM2OT
+YyNTUxMyw4NDczNDE1MDEsLTY2ODQ2NjYwNywtMTk3MzUzODYy
+MywtMTkyNTQ2NjAxNiw1NTkwMzkwMiwtNzEwNzg2ODMsMTc1OT
+E4NzE3Ml19
 -->
