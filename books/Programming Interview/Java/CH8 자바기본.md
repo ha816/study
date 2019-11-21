@@ -27,7 +27,8 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 원시 타입을 제외하면 자바 언어의 모든 변수들은 참조 타입이다. 이것들은 객체로 원시타입과 차이점은 빈객체를 의미하는 null 표현이 존재한다는 것이다.
 
-객체는 참조 타입이라는 말이 어떤 의미 일까
+원시 타입은 메모리 값을 그대로
+
 
 
 # 자바 배열
@@ -51,7 +52,8 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0ODQ1NTcwMSwtMTAzNjA1MTg3MiwtMT
-UxNDczNjc0OSwtMTQ0NTc1ODA5NiwyMTM2NTQ0MjU5LDUyOTk3
-ODcwLDQwMzUyNDAwMCw4MzI4NDc2NzksMjEzNjc1ODQwOV19
+eyJoaXN0b3J5IjpbLTE2NzkyMzgwMTQsLTU0ODQ1NTcwMSwtMT
+AzNjA1MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1ODA5NiwyMTM2
+NTQ0MjU5LDUyOTk3ODcwLDQwMzUyNDAwMCw4MzI4NDc2NzksMj
+EzNjc1ODQwOV19
 -->
