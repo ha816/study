@@ -79,10 +79,9 @@ function reverse(String input){
 	}
 }
 ```
-
 ```
 function improvedReverse(String input){
-	String reverse = ""; []
+	String reverse = "";
 	for(int i = 0; i < input.length / 2 ; i--){
 		int j = input.length - i - 1;
 		char temp = input.charAt(i);
@@ -91,6 +90,8 @@ function improvedReverse(String input){
 	}
 }
 ```
+
+> 연결 리스트의 위치를 어떻게 뒤집을 수 있는가?
 
 
 
@@ -102,8 +103,8 @@ function improvedReverse(String input){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU2NjAxNzg5LC0xMTM3ODk1Mjg4LC0xND
-A3NDU1MDY5LDM0ODU2NjEyMCwxMzY5NjI1NTEzLDg0NzM0MTUw
-MSwtNjY4NDY2NjA3LC0xOTczNTM4NjIzLC0xOTI1NDY2MDE2LD
-U1OTAzOTAyLC03MTA3ODY4MywxNzU5MTg3MTcyXX0=
+eyJoaXN0b3J5IjpbLTE0NDEzMTE1MiwtMTEzNzg5NTI4OCwtMT
+QwNzQ1NTA2OSwzNDg1NjYxMjAsMTM2OTYyNTUxMyw4NDczNDE1
+MDEsLTY2ODQ2NjYwNywtMTk3MzUzODYyMywtMTkyNTQ2NjAxNi
+w1NTkwMzkwMiwtNzEwNzg2ODMsMTc1OTE4NzE3Ml19
 -->
