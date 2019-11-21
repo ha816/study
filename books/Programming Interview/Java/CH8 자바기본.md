@@ -2,7 +2,10 @@
 
 > 몇 가지 자바 원시 타입의 이름을 말하고 이 타입이  JVM에서 어떻게 처리되는지 설명하라.
 
+원시타입(primitive type)은 Null이 될수 없다. 즉 언제나 값을 가지는 상태다. 
 
+int, long 원시타입은 숫자 값 뒤에 L을 붙이면 long이다. 
+비슷하게 float, double도 숫자값 뒤에 
 
 
 # 객체 이용하기
@@ -28,5 +31,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMDc2NjQ5MSwyMTM2NzU4NDA5XX0=
+eyJoaXN0b3J5IjpbMTQyMjg3NzUyMCwyMTM2NzU4NDA5XX0=
 -->
