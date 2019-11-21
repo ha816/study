@@ -102,7 +102,7 @@ if(origin.getNext() == null){
 List next = origin.getNext(); //orgin -> next -> next.next -> ... ->End
 origin.next = null;
 
-otherReversedList = reverseList(next);
+List otherReversedList = reverseList(next);
 next.next = origin;
 
 return otherReversedList;
@@ -119,11 +119,11 @@ return otherReversedList;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ3OTQxMjg1LC0xOTA5MTU3NDA1LDExND
-U5OTM3MjYsLTExODM3MjcxMjIsMTA1NDc4OTI5OCwxODAxNDU3
-MzE1LC0xMTE2MTg2MTM4LC0xNDQxMzExNTIsLTExMzc4OTUyOD
-gsLTE0MDc0NTUwNjksMzQ4NTY2MTIwLDEzNjk2MjU1MTMsODQ3
-MzQxNTAxLC02Njg0NjY2MDcsLTE5NzM1Mzg2MjMsLTE5MjU0Nj
-YwMTYsNTU5MDM5MDIsLTcxMDc4NjgzLDE3NTkxODcxNzJdfQ==
+eyJoaXN0b3J5IjpbMTEwNDAzNjY5NSwtMTkwOTE1NzQwNSwxMT
+Q1OTkzNzI2LC0xMTgzNzI3MTIyLDEwNTQ3ODkyOTgsMTgwMTQ1
+NzMxNSwtMTExNjE4NjEzOCwtMTQ0MTMxMTUyLC0xMTM3ODk1Mj
+g4LC0xNDA3NDU1MDY5LDM0ODU2NjEyMCwxMzY5NjI1NTEzLDg0
+NzM0MTUwMSwtNjY4NDY2NjA3LC0xOTczNTM4NjIzLC0xOTI1ND
+Y2MDE2LDU1OTAzOTAyLC03MTA3ODY4MywxNzU5MTg3MTcyXX0=
 
 -->
