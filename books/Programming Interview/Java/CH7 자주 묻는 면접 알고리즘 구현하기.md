@@ -99,7 +99,7 @@ if(origin.getNext() == null){
 	return orgin;
 }
 
-List next = origin.getNext(); //orgin -> next -> next.next -> ... ->End
+List next = origin.getNext(); List -> List -> ,,,
 origin.next = null;
 
 List otherReversedList = reverseList(next);
@@ -110,6 +110,7 @@ return otherReversedList;
 
 > 단어가 필랜드롬인지 어떻게 확인 할 수 있는가?
 
+팰린드롬(palindrom, 회문)은 철자 순서가 반대로 배열되어도 스페링이 같은 단어나 문장이다. 예로는 eve, level이 있고
 
 
 # 제네릭 사용하기
@@ -119,11 +120,11 @@ return otherReversedList;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNDAzNjY5NSwtMTkwOTE1NzQwNSwxMT
-Q1OTkzNzI2LC0xMTgzNzI3MTIyLDEwNTQ3ODkyOTgsMTgwMTQ1
-NzMxNSwtMTExNjE4NjEzOCwtMTQ0MTMxMTUyLC0xMTM3ODk1Mj
-g4LC0xNDA3NDU1MDY5LDM0ODU2NjEyMCwxMzY5NjI1NTEzLDg0
-NzM0MTUwMSwtNjY4NDY2NjA3LC0xOTczNTM4NjIzLC0xOTI1ND
-Y2MDE2LDU1OTAzOTAyLC03MTA3ODY4MywxNzU5MTg3MTcyXX0=
-
+eyJoaXN0b3J5IjpbLTc0MzI2NDQyMCwxMTA0MDM2Njk1LC0xOT
+A5MTU3NDA1LDExNDU5OTM3MjYsLTExODM3MjcxMjIsMTA1NDc4
+OTI5OCwxODAxNDU3MzE1LC0xMTE2MTg2MTM4LC0xNDQxMzExNT
+IsLTExMzc4OTUyODgsLTE0MDc0NTUwNjksMzQ4NTY2MTIwLDEz
+Njk2MjU1MTMsODQ3MzQxNTAxLC02Njg0NjY2MDcsLTE5NzM1Mz
+g2MjMsLTE5MjU0NjYwMTYsNTU5MDM5MDIsLTcxMDc4NjgzLDE3
+NTkxODcxNzJdfQ==
 -->
