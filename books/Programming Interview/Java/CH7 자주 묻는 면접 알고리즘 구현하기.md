@@ -83,8 +83,10 @@ function reverse(String input){
 ```
 function improvedReverse(String input){
 	String reverse = "";
-	for(int i = 0; i < input.length ; i--){
+	for(int i = 0; i < input.length / 2 ; i--){
 		int j = input.length - i - 1;
+		char origin = input.charAt(i);
+		input.setch
 	}
 }
 ```
@@ -99,8 +101,8 @@ function improvedReverse(String input){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzc4OTUyODgsLTE0MDc0NTUwNjksMz
-Q4NTY2MTIwLDEzNjk2MjU1MTMsODQ3MzQxNTAxLC02Njg0NjY2
-MDcsLTE5NzM1Mzg2MjMsLTE5MjU0NjYwMTYsNTU5MDM5MDIsLT
-cxMDc4NjgzLDE3NTkxODcxNzJdfQ==
+eyJoaXN0b3J5IjpbMzEzMzI2MTUxLC0xMTM3ODk1Mjg4LC0xND
+A3NDU1MDY5LDM0ODU2NjEyMCwxMzY5NjI1NTEzLDg0NzM0MTUw
+MSwtNjY4NDY2NjA3LC0xOTczNTM4NjIzLC0xOTI1NDY2MDE2LD
+U1OTAzOTAyLC03MTA3ODY4MywxNzU5MTg3MTcyXX0=
 -->
