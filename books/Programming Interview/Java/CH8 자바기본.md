@@ -29,7 +29,9 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 원시 타입은 값을 메모리에 그대로 저장한다. 그에 반해 참조 값은 객체가 할당된 메모리의 주소(위치)를 저장한다. 표면적으로 둘다 비슷하게 동작하는 것으로 보이지만 실제로는 그렇지 않다. 
 
+> final 키워드는 객체 참조에 어떤 영향을 미치는가?
 
+객체에 선언하는  fianl 키워드는 원시타입에 선언하는 final 키워드와 동일하다. 
 
 # 자바 배열
 
@@ -52,8 +54,8 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTE5NDE4MTEsLTU0ODQ1NTcwMSwtMT
-AzNjA1MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1ODA5NiwyMTM2
-NTQ0MjU5LDUyOTk3ODcwLDQwMzUyNDAwMCw4MzI4NDc2NzksMj
-EzNjc1ODQwOV19
+eyJoaXN0b3J5IjpbNTgzMjM3MTAsLTE2NTE5NDE4MTEsLTU0OD
+Q1NTcwMSwtMTAzNjA1MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1
+ODA5NiwyMTM2NTQ0MjU5LDUyOTk3ODcwLDQwMzUyNDAwMCw4Mz
+I4NDc2NzksMjEzNjc1ODQwOV19
 -->
