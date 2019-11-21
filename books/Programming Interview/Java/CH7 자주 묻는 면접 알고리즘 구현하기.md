@@ -94,8 +94,11 @@ function improvedReverse(String input){
 > 연결 리스트의 위치를 어떻게 뒤집을 수 있는가?
 
 ```
-reverse
-
+function reverseList(list){
+if(list.getNext() == null){
+	return list;
+}
+next = list.getNext();
 
 ```
 
@@ -107,9 +110,9 @@ reverse
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTE4MzA5OTYsLTExMTYxODYxMzgsLT
-E0NDEzMTE1MiwtMTEzNzg5NTI4OCwtMTQwNzQ1NTA2OSwzNDg1
-NjYxMjAsMTM2OTYyNTUxMyw4NDczNDE1MDEsLTY2ODQ2NjYwNy
-wtMTk3MzUzODYyMywtMTkyNTQ2NjAxNiw1NTkwMzkwMiwtNzEw
-Nzg2ODMsMTc1OTE4NzE3Ml19
+eyJoaXN0b3J5IjpbMTgwMTQ1NzMxNSwtMTExNjE4NjEzOCwtMT
+Q0MTMxMTUyLC0xMTM3ODk1Mjg4LC0xNDA3NDU1MDY5LDM0ODU2
+NjEyMCwxMzY5NjI1NTEzLDg0NzM0MTUwMSwtNjY4NDY2NjA3LC
+0xOTczNTM4NjIzLC0xOTI1NDY2MDE2LDU1OTAzOTAyLC03MTA3
+ODY4MywxNzU5MTg3MTcyXX0=
 -->
