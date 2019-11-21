@@ -35,7 +35,6 @@ function fibonachi(int n){
 > 재귀적 방법을 사용하지 않는 팩토리얼을 작성하라
 
 $n! = 1*2*\cdots n$
-
 ```
 function factorial(int n){ //재귀버전
 	if(n == 1){
@@ -46,15 +45,15 @@ function factorial(int n){ //재귀버전
 ```
 
 ```
-Long factorial = 1; //재
+Long factorial = 1; // Non 재귀
 for(int i = 1; i <= n ; i++){ 
 	factorial *= i
 }
 ```
 
-
-
 # 라이브러리 기능 구현하기
+
+
 
 # 제네릭 사용하기
 
@@ -63,6 +62,6 @@ for(int i = 1; i <= n ; i++){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5NjUyMjE3LC03MTA3ODY4MywxNzU5MT
-g3MTcyXX0=
+eyJoaXN0b3J5IjpbNTU5MDM5MDIsLTcxMDc4NjgzLDE3NTkxOD
+cxNzJdfQ==
 -->
