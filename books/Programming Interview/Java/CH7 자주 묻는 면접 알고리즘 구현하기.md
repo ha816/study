@@ -57,7 +57,8 @@ for(int i = 1; i <= n ; i++){
 
 애너그램은 단어의 절차를 재배열해서 다른 단어를 만드는 것을 말한다. 규칙은 글자를 삭제해서는 안된다는 것과 멀리 가져다 놓는 것은 가능하다는 것이다.
 
-즉 애너그램은 중복되는 문자가 있고 순서를 지켜야 하므로 사실 가능한 중복 순열을 구하는 것과 같다. 모든 문자가 다르다면 최악의 경우 $O(n!)$이다. 
+
+
 
 
 # 제네릭 사용하기
@@ -67,7 +68,7 @@ for(int i = 1; i <= n ; i++){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2ODQ2NjYwNywtMTk3MzUzODYyMywtMT
-kyNTQ2NjAxNiw1NTkwMzkwMiwtNzEwNzg2ODMsMTc1OTE4NzE3
-Ml19
+eyJoaXN0b3J5IjpbMTMzMDcyNjcyNCwtNjY4NDY2NjA3LC0xOT
+czNTM4NjIzLC0xOTI1NDY2MDE2LDU1OTAzOTAyLC03MTA3ODY4
+MywxNzU5MTg3MTcyXX0=
 -->
