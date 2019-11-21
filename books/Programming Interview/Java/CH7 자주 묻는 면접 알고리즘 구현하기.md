@@ -110,7 +110,9 @@ return otherReversedList;
 
 > 단어가 필랜드롬인지 어떻게 확인 할 수 있는가?
 
-팰린드롬(palindrom, 회문)은 철자 순서가 반대로 배열되어도 스페링이 같은 단어나 문장이다. 예로는 eve, level이 있고
+팰린드롬(palindrom, 회문)은 철자 순서가 반대로 배열되어도 스페링이 같은 단어나 문장이다. 예로는 eve, level이 있고 공백을 무시하면 top spot도 해당된다.
+
+
 
 
 # 제네릭 사용하기
@@ -120,11 +122,11 @@ return otherReversedList;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MzI2NDQyMCwxMTA0MDM2Njk1LC0xOT
-A5MTU3NDA1LDExNDU5OTM3MjYsLTExODM3MjcxMjIsMTA1NDc4
-OTI5OCwxODAxNDU3MzE1LC0xMTE2MTg2MTM4LC0xNDQxMzExNT
-IsLTExMzc4OTUyODgsLTE0MDc0NTUwNjksMzQ4NTY2MTIwLDEz
-Njk2MjU1MTMsODQ3MzQxNTAxLC02Njg0NjY2MDcsLTE5NzM1Mz
-g2MjMsLTE5MjU0NjYwMTYsNTU5MDM5MDIsLTcxMDc4NjgzLDE3
-NTkxODcxNzJdfQ==
+eyJoaXN0b3J5IjpbLTE3MjY5NTAwMTQsMTEwNDAzNjY5NSwtMT
+kwOTE1NzQwNSwxMTQ1OTkzNzI2LC0xMTgzNzI3MTIyLDEwNTQ3
+ODkyOTgsMTgwMTQ1NzMxNSwtMTExNjE4NjEzOCwtMTQ0MTMxMT
+UyLC0xMTM3ODk1Mjg4LC0xNDA3NDU1MDY5LDM0ODU2NjEyMCwx
+MzY5NjI1NTEzLDg0NzM0MTUwMSwtNjY4NDY2NjA3LC0xOTczNT
+M4NjIzLC0xOTI1NDY2MDE2LDU1OTAzOTAyLC03MTA3ODY4Mywx
+NzU5MTg3MTcyXX0=
 -->
