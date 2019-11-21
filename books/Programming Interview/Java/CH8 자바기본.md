@@ -41,7 +41,7 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 |--|--|
 |private| 선언된 멤버는 선언된 같은 클래스에서만 접근가능 |
 |package-private| 선언된 멤버는 같은 패키지안에선 모든 클래스에서 접근가능; 기본 접근 권한으로 알려져 있음 |
-|protected| 선언된 멤버는 선언된 클래스 및 그 하위 클래스만 사용할 수 있다. 선언된 클래스와 같은 패키지에서도 사용이 가능  |
+|protected| 선언된 멤버는 선언된 클래스를 포함한 그 하위 클래스만 사용할 수 있다. 선언된 클래스와 같은 패키지에서도 사용이 가능  |
 |public| 선언된 멤버는 어디서도 사용이 가능하다  |
 
 
@@ -67,9 +67,9 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyOTYzMzAyLC0xMzE4NTU5NTQ2LDgxMT
-E5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1NzAxLC0xMDM2MDUx
-ODcyLC0xNTE0NzM2NzQ5LC0xNDQ1NzU4MDk2LDIxMzY1NDQyNT
-ksNTI5OTc4NzAsNDAzNTI0MDAwLDgzMjg0NzY3OSwyMTM2NzU4
-NDA5XX0=
+eyJoaXN0b3J5IjpbLTE3ODAzNzExNjcsLTEzMTg1NTk1NDYsOD
+ExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0NTU3MDEsLTEwMzYw
+NTE4NzIsLTE1MTQ3MzY3NDksLTE0NDU3NTgwOTYsMjEzNjU0ND
+I1OSw1Mjk5Nzg3MCw0MDM1MjQwMDAsODMyODQ3Njc5LDIxMzY3
+NTg0MDldfQ==
 -->
