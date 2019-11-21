@@ -41,8 +41,10 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 |--|--|
 |private| 선언된 멤버는 선언된 같은 클래스에서만 접근가능 |
 |package-private| 선언된 멤버는 같은 패키지 안에 모든 클래스가 접근가능; 기본 접근 권한으로 알려져 있음 |
-|protected| 선언된 멤버는 같은 패키지 안에 모든 클래스가 접근가능할 뿐만 아니라 다른 패키지에서 선언된 클래스를 확장하는 하위 클래스에서도 접근가능|
+|protected| 선언된 멤버는 같은 패키지 안에 모든 클래스가 접근가능할 뿐만 아니라 (다른 패키지에서) 선언된 클래스를 확장하는 하위 클래스에서도 접근가능|
 |public| 선언된 멤버는 어디서도 접근가능|
+
+private의 일반적인 오해는 private으로 선언한 변수는 해당 인스턴스만 접근할 수 있다고 생각하는 것이다. 같은 인스턴스는 아니지만 같은 타입의 모든 인스턴스가 pr 멤버 변수에 접근이 가능하다. 
 
 
 
@@ -67,7 +69,7 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyOTg1MTcwMiwtMTMxODU1OTU0Niw4MT
+eyJoaXN0b3J5IjpbLTcwNzU0MDgwMCwtMTMxODU1OTU0Niw4MT
 ExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1NTcwMSwtMTAzNjA1
 MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1ODA5NiwyMTM2NTQ0Mj
 U5LDUyOTk3ODcwLDQwMzUyNDAwMCw4MzI4NDc2NzksMjEzNjc1
