@@ -7,10 +7,8 @@
  - 정보 은닉(information hiding)의 장점
 	 - 의존성을 낮아 여러 컴포넌트를 병렬적으로 개발, 테스트가 가능
 	 - 시스템 관리 비용을 낮춘다. 각 컴포넌트를 더 빨리 파악하여 디버깅할 수 있고, 다른 컴포넌트로 교체 부담도 적다.
-	 - 정보 으닉 자체가 성능을 높이지는 않지만, 성능 최적화에 도움을 준다.
-	 - 의존성을 낮춰서 각자 개별적으로 개발, 테스트, 변경하자 
-		 - 병렬적 개발 가능
-		 - 유지보수 부담 하락
+	 - 정보 은닉 자체가 성능을 높이지는 않지만, 성능 최적화에 도움을 준다.
+	 - 재사용성을 높인다. 외부에 의존하지 않고 독자적으로 동작하는 컴포넌트라면 그 ㅋ
 		 - 안전한 디버깅 
 		 - 좋은 성능을 자동적으로 보장 아니지만 효과적인 성능 튜닝이 가능
  
@@ -168,6 +166,6 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NzA0NDY4OCwtMTc3MjQyMzczMiwtMT
-U4MzQzMjMyM119
+eyJoaXN0b3J5IjpbNTI2MzY3MjYxLC0xNzcyNDIzNzMyLC0xNT
+gzNDMyMzIzXX0=
 -->
