@@ -13,7 +13,7 @@
 	 - 재사용성을 높인다. 외부에 의존하지 않고 독자적으로 동작하는 컴포넌트라면 낯선 환경에서도 유용하게 쓰실 가능성이 크다.
 	 - 큰 시스템의 제작 난이도를 낮춰준다. 시스템 전체가 완성되지 않은 상태에서도 개별 컴포넌트의 동작을 검증할 수 있다.
 
-자바는 정보 은닉을 위한 다양한  
+자바는 정보 은닉을 위한 다양한 장치를 제공하는데, 그 중 접근 제어 매커니즘으로 클래스, 인터페이스, 멤버의 접근성(접근 허용 범위)을 명시하고 있다. 각 요송 
 
  최상위 레벨(중첩되지 않은) 클래스와 인터페이스에 부여할 수 있는 접근 권한은 크게 package-private과 public
 
@@ -168,6 +168,6 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDcwNzI1MjcsLTIwNjg2NTE0MjIsLT
-E3NzI0MjM3MzIsLTE1ODM0MzIzMjNdfQ==
+eyJoaXN0b3J5IjpbMTMwNDYwNTA4MSwtMjA2ODY1MTQyMiwtMT
+c3MjQyMzczMiwtMTU4MzQzMjMyM119
 -->
