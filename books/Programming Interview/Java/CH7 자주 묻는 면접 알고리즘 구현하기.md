@@ -75,9 +75,8 @@ for(s : L ) {
 function reverse(String input){
 	String reverse = "";
 	for(int i = input.length - 1; i >= 0 ; i--){
-		revserse.concat()
+		revserse.concat(input.charAt(i));
 	}
-
 }
 ```
 
@@ -92,8 +91,8 @@ function reverse(String input){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NDk3NjYzOSwtMTQwNzQ1NTA2OSwzND
-g1NjYxMjAsMTM2OTYyNTUxMyw4NDczNDE1MDEsLTY2ODQ2NjYw
-NywtMTk3MzUzODYyMywtMTkyNTQ2NjAxNiw1NTkwMzkwMiwtNz
-EwNzg2ODMsMTc1OTE4NzE3Ml19
+eyJoaXN0b3J5IjpbNzA5MzkxODYxLC0xNDA3NDU1MDY5LDM0OD
+U2NjEyMCwxMzY5NjI1NTEzLDg0NzM0MTUwMSwtNjY4NDY2NjA3
+LC0xOTczNTM4NjIzLC0xOTI1NDY2MDE2LDU1OTAzOTAyLC03MT
+A3ODY4MywxNzU5MTg3MTcyXX0=
 -->
