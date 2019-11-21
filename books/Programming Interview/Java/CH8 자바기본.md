@@ -52,6 +52,9 @@ static은 정적 변수와 메서드를 만드는데 사용하느 키워드이�
 
 > 다형성과 상속이란 무엇인가
 
+다형성(polymorphism)과 상속은 객체 지향 개발의 두가지 핵심 개념이다. 
+다형성은 하나의 객체가 수많은 역할을 
+
 
 # 자바 배열
 
@@ -74,9 +77,9 @@ static은 정적 변수와 메서드를 만드는데 사용하느 키워드이�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDExODg3MzUxLDY0OTUzODg4NSwtMTMxOD
-U1OTU0Niw4MTExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1NTcw
-MSwtMTAzNjA1MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1ODA5Ni
-wyMTM2NTQ0MjU5LDUyOTk3ODcwLDQwMzUyNDAwMCw4MzI4NDc2
-NzksMjEzNjc1ODQwOV19
+eyJoaXN0b3J5IjpbLTEzOTUxMjc3NjYsNDExODg3MzUxLDY0OT
+UzODg4NSwtMTMxODU1OTU0Niw4MTExOTY0MDgsLTE2NTE5NDE4
+MTEsLTU0ODQ1NTcwMSwtMTAzNjA1MTg3MiwtMTUxNDczNjc0OS
+wtMTQ0NTc1ODA5NiwyMTM2NTQ0MjU5LDUyOTk3ODcwLDQwMzUy
+NDAwMCw4MzI4NDc2NzksMjEzNjc1ODQwOV19
 -->
