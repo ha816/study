@@ -95,7 +95,9 @@ function improvedReverse(String input){
 
 ```
 reverseList;
-for(ele e : List)
+for(ele e : List){
+
+}
 
 
 ```
@@ -108,9 +110,9 @@ for(ele e : List)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTYxODYxMzgsLTE0NDEzMTE1MiwtMT
-EzNzg5NTI4OCwtMTQwNzQ1NTA2OSwzNDg1NjYxMjAsMTM2OTYy
-NTUxMyw4NDczNDE1MDEsLTY2ODQ2NjYwNywtMTk3MzUzODYyMy
-wtMTkyNTQ2NjAxNiw1NTkwMzkwMiwtNzEwNzg2ODMsMTc1OTE4
-NzE3Ml19
+eyJoaXN0b3J5IjpbLTE0NjExNDk4NTIsLTExMTYxODYxMzgsLT
+E0NDEzMTE1MiwtMTEzNzg5NTI4OCwtMTQwNzQ1NTA2OSwzNDg1
+NjYxMjAsMTM2OTYyNTUxMyw4NDczNDE1MDEsLTY2ODQ2NjYwNy
+wtMTk3MzUzODYyMywtMTkyNTQ2NjAxNiw1NTkwMzkwMiwtNzEw
+Nzg2ODMsMTc1OTE4NzE3Ml19
 -->
