@@ -25,6 +25,7 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 # 객체 이용하기
 
+객체는 변수들의 컬렉션으로 정의할 수 있다. 복잡한
 
 
 # 자바 배열
@@ -48,7 +49,7 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTQ3MzY3NDksLTE0NDU3NTgwOTYsMj
-EzNjU0NDI1OSw1Mjk5Nzg3MCw0MDM1MjQwMDAsODMyODQ3Njc5
-LDIxMzY3NTg0MDldfQ==
+eyJoaXN0b3J5IjpbLTEwMzYwNTE4NzIsLTE1MTQ3MzY3NDksLT
+E0NDU3NTgwOTYsMjEzNjU0NDI1OSw1Mjk5Nzg3MCw0MDM1MjQw
+MDAsODMyODQ3Njc5LDIxMzY3NTg0MDldfQ==
 -->
