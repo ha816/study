@@ -55,7 +55,7 @@ for(int i = 1; i <= n ; i++){
 
 > 주어진 단어의 목록에서 특정 단어에 대한 전체 애너그램 목록을 반환하는 알고리즘을 작성하라.
 
-애너그램은 단어의 절차를 재배열해서 다른 단어를 만드는 것을 말한다. 규칙은 글자를 삭제해서는 안
+애너그램은 단어의 절차를 재배열해서 다른 단어를 만드는 것을 말한다. 규칙은 글자를 삭제해서는 안된다는 것과 멀리 가져다 놓는 것은 가능하다는 것이다.
 
 
 # 제네릭 사용하기
@@ -65,6 +65,6 @@ for(int i = 1; i <= n ; i++){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDI1MTIyNzEsNTU5MDM5MDIsLTcxMD
+eyJoaXN0b3J5IjpbLTE5MjU0NjYwMTYsNTU5MDM5MDIsLTcxMD
 c4NjgzLDE3NTkxODcxNzJdfQ==
 -->
