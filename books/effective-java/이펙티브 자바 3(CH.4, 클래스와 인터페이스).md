@@ -5,7 +5,9 @@
 어설프게 설계된 컴포넌트와 잘 설계된 컴포넌트의 가장 큰 차이는 바로 클래스 내부 데이터와 내부 구현 정보를 외부 컴포넌트로 부터 얼마나 잘 숨겼느냐이다. 정보은닉 (information hiding), 혹은 캡슐화(capsulation)으로 불리는 이 개념은 소프트웨어 설계의 근간이 되는 원리다. 
 
  - 정보 은닉(information hiding)의 장점
-	 - 의존성을 낮춰서 각자 개별적으로 개발, 테스트, 변경하자 ㅇ 
+	 - 의존성을 낮아 여러 컴포넌트를 병렬적으로 개발, 테스트가 가능
+	 - 시스템 관리 비용을 낮춘다. 각 컴포넌트를 더 빨리 파악하여 디버깅할 수 있고, 다른 컴포넌트로 교체 부담도 적다.
+	 - 정보 으닉 자체가 성능을 높이지는 않지만, 성능 최적화에 도움을 준다.
 	 - 의존성을 낮춰서 각자 개별적으로 개발, 테스트, 변경하자 
 		 - 병렬적 개발 가능
 		 - 유지보수 부담 하락
@@ -166,6 +168,6 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MjU0MzczLC0xNzcyNDIzNzMyLC0xNT
-gzNDMyMzIzXX0=
+eyJoaXN0b3J5IjpbMTA0NzA0NDY4OCwtMTc3MjQyMzczMiwtMT
+U4MzQzMjMyM119
 -->
