@@ -71,6 +71,11 @@ for(s : L ) {
 ```
 
 > 문자열 뒤지기를 위한 메서드 작성하라
+```
+function reverse(String input){
+
+}
+```
 
 
 
@@ -83,7 +88,7 @@ for(s : L ) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzOTMxODgzOCwzNDg1NjYxMjAsMTM2OT
+eyJoaXN0b3J5IjpbLTg1MDQ1NjE1NCwzNDg1NjYxMjAsMTM2OT
 YyNTUxMyw4NDczNDE1MDEsLTY2ODQ2NjYwNywtMTk3MzUzODYy
 MywtMTkyNTQ2NjAxNiw1NTkwMzkwMiwtNzEwNzg2ODMsMTc1OT
 E4NzE3Ml19
