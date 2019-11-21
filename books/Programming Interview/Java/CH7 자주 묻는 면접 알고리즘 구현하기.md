@@ -60,8 +60,11 @@ for(int i = 1; i <= n ; i++){
 한 단어의 가능한 어떤 애너그램도 정렬을 하면 모두 같은 단어가 된다. 
 ```
 given a word : w
-list of string : l
-for(){
+
+sortedWord = sw
+list of string : L
+for(s : L ) {
+	sorted ss = sort(s);
 
 }
 
@@ -77,7 +80,7 @@ for(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTIzNDk2MDIsMTM2OTYyNTUxMyw4ND
-czNDE1MDEsLTY2ODQ2NjYwNywtMTk3MzUzODYyMywtMTkyNTQ2
-NjAxNiw1NTkwMzkwMiwtNzEwNzg2ODMsMTc1OTE4NzE3Ml19
+eyJoaXN0b3J5IjpbOTc4NjQyMjg0LDEzNjk2MjU1MTMsODQ3Mz
+QxNTAxLC02Njg0NjY2MDcsLTE5NzM1Mzg2MjMsLTE5MjU0NjYw
+MTYsNTU5MDM5MDIsLTcxMDc4NjgzLDE3NTkxODcxNzJdfQ==
 -->
