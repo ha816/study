@@ -33,7 +33,12 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 객체에 선언하는 final 키워드는 원시타입에 선언하는 final 키워드와 동일하다. 즉 메모리 변수에 값이나 메모리 주소가 할당되면 그 값과 메모리 주소는 변하지 않는다. 변수에 할당된 메모리 주소는 변경하지 못하지만 객체 자체는 당연히 수정이 가능하다.
 
->객체의 가시성 수정자는 어떻게 작동하는
+> 객체의 가시성 수정자(visibility modifier)는 어떻게 작동하는가? 
+
+가시성 수정자는 클래스의 캡슐화된 상태와 인스턴스 행동을 조정하는 메서드의 접근 
+
+
+
 
 # 자바 배열
 
@@ -56,8 +61,8 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjIxMjAzNTEsODExMTk2NDA4LC0xNj
-UxOTQxODExLC01NDg0NTU3MDEsLTEwMzYwNTE4NzIsLTE1MTQ3
-MzY3NDksLTE0NDU3NTgwOTYsMjEzNjU0NDI1OSw1Mjk5Nzg3MC
-w0MDM1MjQwMDAsODMyODQ3Njc5LDIxMzY3NTg0MDldfQ==
+eyJoaXN0b3J5IjpbODA0NzQ0OTU4LDgxMTE5NjQwOCwtMTY1MT
+k0MTgxMSwtNTQ4NDU1NzAxLC0xMDM2MDUxODcyLC0xNTE0NzM2
+NzQ5LC0xNDQ1NzU4MDk2LDIxMzY1NDQyNTksNTI5OTc4NzAsND
+AzNTI0MDAwLDgzMjg0NzY3OSwyMTM2NzU4NDA5XX0=
 -->
