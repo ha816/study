@@ -11,14 +11,16 @@ int, long 원시타입은 숫자 값 뒤에 L을 붙이면 long이다.  안붙�
 | type| 크기(bit)  |
 |--|--|
 |boolean | 1bit |
-|char | 8(1byte) |
+|char | **16(2byte)** |
 |short | 16(2byte) |
 |int | 32(4byte) |
 |long | 64(8byte) |
 |float | 32(4byte) |
 |double | 64(8byte) |
 
+char는 unsigned이므로 0 ~ 65535 까지 담을수 있다. 
 
+> 왜 Integer.MIN_VAL
 
 # 객체 이용하기
 
@@ -43,6 +45,6 @@ int, long 원시타입은 숫자 값 뒤에 L을 붙이면 long이다.  안붙�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTgzMTIxNDksNDAzNTI0MDAwLDgzMj
-g0NzY3OSwyMTM2NzU4NDA5XX0=
+eyJoaXN0b3J5IjpbLTU2NDYyNDEwLDQwMzUyNDAwMCw4MzI4ND
+c2NzksMjEzNjc1ODQwOV19
 -->
