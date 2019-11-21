@@ -98,6 +98,7 @@ function reverseList(list){
 if(list.getNext() == null){
 	return list;
 }
+
 next = list.getNext(); //orgin -> next -> next.next
 
 
@@ -113,9 +114,10 @@ reverseList(next);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NDc4OTI5OCwxODAxNDU3MzE1LC0xMT
-E2MTg2MTM4LC0xNDQxMzExNTIsLTExMzc4OTUyODgsLTE0MDc0
-NTUwNjksMzQ4NTY2MTIwLDEzNjk2MjU1MTMsODQ3MzQxNTAxLC
-02Njg0NjY2MDcsLTE5NzM1Mzg2MjMsLTE5MjU0NjYwMTYsNTU5
-MDM5MDIsLTcxMDc4NjgzLDE3NTkxODcxNzJdfQ==
+eyJoaXN0b3J5IjpbMTAyNjU5MDM2OCwxMDU0Nzg5Mjk4LDE4MD
+E0NTczMTUsLTExMTYxODYxMzgsLTE0NDEzMTE1MiwtMTEzNzg5
+NTI4OCwtMTQwNzQ1NTA2OSwzNDg1NjYxMjAsMTM2OTYyNTUxMy
+w4NDczNDE1MDEsLTY2ODQ2NjYwNywtMTk3MzUzODYyMywtMTky
+NTQ2NjAxNiw1NTkwMzkwMiwtNzEwNzg2ODMsMTc1OTE4NzE3Ml
+19
 -->
