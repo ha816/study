@@ -94,10 +94,7 @@ function improvedReverse(String input){
 > 연결 리스트의 위치를 어떻게 뒤집을 수 있는가?
 
 ```
-reverseList;
-for(ele e : List){
-
-}
+reverse
 
 
 ```
@@ -110,7 +107,7 @@ for(ele e : List){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjExNDk4NTIsLTExMTYxODYxMzgsLT
+eyJoaXN0b3J5IjpbLTE4OTE4MzA5OTYsLTExMTYxODYxMzgsLT
 E0NDEzMTE1MiwtMTEzNzg5NTI4OCwtMTQwNzQ1NTA2OSwzNDg1
 NjYxMjAsMTM2OTYyNTUxMyw4NDczNDE1MDEsLTY2ODQ2NjYwNy
 wtMTk3MzUzODYyMywtMTkyNTQ2NjAxNiw1NTkwMzkwMiwtNzEw
