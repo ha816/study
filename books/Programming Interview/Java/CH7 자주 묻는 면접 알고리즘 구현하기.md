@@ -80,6 +80,14 @@ function reverse(String input){
 }
 ```
 
+```
+function improvedReverse(String input){
+	String reverse = "";
+	for(int i = 0; i < input.length ; i--){
+		revserse.concat(input.charAt(i));
+	}
+}
+```
 
 
 
@@ -91,8 +99,8 @@ function reverse(String input){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA5MzkxODYxLC0xNDA3NDU1MDY5LDM0OD
-U2NjEyMCwxMzY5NjI1NTEzLDg0NzM0MTUwMSwtNjY4NDY2NjA3
-LC0xOTczNTM4NjIzLC0xOTI1NDY2MDE2LDU1OTAzOTAyLC03MT
-A3ODY4MywxNzU5MTg3MTcyXX0=
+eyJoaXN0b3J5IjpbMTkwOTIzOTIxMywtMTQwNzQ1NTA2OSwzND
+g1NjYxMjAsMTM2OTYyNTUxMyw4NDczNDE1MDEsLTY2ODQ2NjYw
+NywtMTk3MzUzODYyMywtMTkyNTQ2NjAxNiw1NTkwMzkwMiwtNz
+EwNzg2ODMsMTc1OTE4NzE3Ml19
 -->
