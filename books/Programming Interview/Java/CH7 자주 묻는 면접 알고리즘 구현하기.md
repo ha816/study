@@ -57,6 +57,7 @@ for(int i = 1; i <= n ; i++){
 
 애너그램은 단어의 절차를 재배열해서 다른 단어를 만드는 것을 말한다. 규칙은 글자를 삭제해서는 안된다는 것과 멀리 가져다 놓는 것은 가능하다는 것이다.
 
+한 단어의 가능한 어떤 애너그램도 정렬을 하면 모두 같은 단어가 된다. 
 
 
 
@@ -68,7 +69,7 @@ for(int i = 1; i <= n ; i++){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDcyNjcyNCwtNjY4NDY2NjA3LC0xOT
-czNTM4NjIzLC0xOTI1NDY2MDE2LDU1OTAzOTAyLC03MTA3ODY4
-MywxNzU5MTg3MTcyXX0=
+eyJoaXN0b3J5IjpbODQ3MzQxNTAxLC02Njg0NjY2MDcsLTE5Nz
+M1Mzg2MjMsLTE5MjU0NjYwMTYsNTU5MDM5MDIsLTcxMDc4Njgz
+LDE3NTkxODcxNzJdfQ==
 -->
