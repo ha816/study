@@ -17,6 +17,7 @@
 
 기본 원칙은 모든 클래스와 멤버의 접근성을 가능한 좁혀야 한다. 소프트웨어가 올바르게 동작하는 한 항상 가장 낮은 수준을 부여해야 한다는 뜻이다. 
 
+가장 바깥이라는 
  최상위 레벨(중첩되지 않은) 클래스와 인터페이스에 부여할 수 있는 접근 권한은 크게 package-private과 public
 
 | 접근 권한 수정자 | 설명 |
@@ -170,7 +171,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NjI4NzE4Nyw4Njk4MzM2NzEsMTMzMz
-k4OTE1NSwtMjA2ODY1MTQyMiwtMTc3MjQyMzczMiwtMTU4MzQz
-MjMyM119
+eyJoaXN0b3J5IjpbLTE4NjMwMzc3MSwxNDc2Mjg3MTg3LDg2OT
+gzMzY3MSwxMzMzOTg5MTU1LC0yMDY4NjUxNDIyLC0xNzcyNDIz
+NzMyLC0xNTgzNDMyMzIzXX0=
 -->
