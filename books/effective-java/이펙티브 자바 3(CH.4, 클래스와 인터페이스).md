@@ -26,8 +26,10 @@ public으로 선언하면 공개 API가 되고, package-private으로 하면 해
 |package-private| 해당 패키지 내에서만 유효한 개체 |
 |public| 전역적 개체|
 
+멤버
+: 필드, 메서드, 중첩 클래스(nested class), 중첩 인터페이스()
 
-필드나 메서드, 중첩 클래스(nested class), 중첩 인터페이스(nested interface) 같은  멤버의 접근 권한은 크게 4가지
+필드나 메서드, 중첩 클래스(nested class), 중첩 인터페이스(nested interface) 같은 멤버의 접근 권한은 크게 4가지
 
 | 접근 권한 수정자 | 설명 |
 |--|--|
@@ -172,7 +174,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA0MTIzNzUwLDE0NzYyODcxODcsODY5OD
-MzNjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0MjIsLTE3NzI0MjM3
-MzIsLTE1ODM0MzIzMjNdfQ==
+eyJoaXN0b3J5IjpbLTE5ODA1MzUwNTEsMzA0MTIzNzUwLDE0Nz
+YyODcxODcsODY5ODMzNjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0
+MjIsLTE3NzI0MjM3MzIsLTE1ODM0MzIzMjNdfQ==
 -->
