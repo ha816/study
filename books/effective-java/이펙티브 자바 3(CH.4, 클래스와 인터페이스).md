@@ -19,7 +19,7 @@
 
 (가장 바깥이라는 의미의) 탑 클래스와 인터페이스에 부여할 수 있는 접근 수준은 크게 package-private과 public 두가지이다.
 
-public으로 선언하면 공개 API가 되고, package-private으로 하면 해당 패키지내에서만 사용할 수 있다. 원칙에 따라 패키지 내부에서 쓰이는게 아니라면 package-private으로 선언하자. 그러면 이들은 API가 아닌 배구 구현이 되어 언제든 수정이 가능하다. 즉 클라이언트에 수정이 없이 다음 릴리스에 언제든 수정이 가능하다. 반면 public은 
+public으로 선언하면 공개 API가 되고, package-private으로 하면 해당 패키지내에서만 사용할 수 있다. 원칙에 따라 패키지 내부에서 쓰이는게 아니라면 package-private으로 선언하자. 그러면 이들은 API가 아닌 배구 구현이 되어 언제든 수정이 가능하다. 즉 클라이언트에 수정이 없이 다음 릴리스에 언제든 수정이 가능하다. 반면 public은 API가 되므로 하위 호완을 위해 영원히 관리해줘야 한다. 
 
 | 접근 권한 수정자 | 설명 |
 |--|--|
@@ -172,7 +172,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNDU3OTkxMSwxNDc2Mjg3MTg3LDg2OT
-gzMzY3MSwxMzMzOTg5MTU1LC0yMDY4NjUxNDIyLC0xNzcyNDIz
-NzMyLC0xNTgzNDMyMzIzXX0=
+eyJoaXN0b3J5IjpbMzA0MTIzNzUwLDE0NzYyODcxODcsODY5OD
+MzNjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0MjIsLTE3NzI0MjM3
+MzIsLTE1ODM0MzIzMjNdfQ==
 -->
