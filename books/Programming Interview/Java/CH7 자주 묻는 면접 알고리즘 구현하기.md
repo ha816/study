@@ -35,6 +35,7 @@ function fibonachi(int n){
 > 재귀적 방법을 사용하지 않는 팩토리얼을 작성하라
 
 $n! = 1*2*\cdots n$
+
 ```
 function factorial(int n){ //재귀버전
 	if(n == 1){
@@ -45,11 +46,13 @@ function factorial(int n){ //재귀버전
 ```
 
 ```
-Long factorial = 1; // Non 재귀
+Long factorial = 1; // Non 재귀재
 for(int i = 1; i <= n ; i++){ 
 	factorial *= i
 }
 ```
+
+
 
 # 라이브러리 기능 구현하기
 
@@ -106,13 +109,18 @@ List otherReversedList = reverseList(next);
 next.next = origin;
 
 return otherReversedList;
-```
+```# 제네릭 사용하기
+
+
+
+
+> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NDYwMzIxMiwtMTcyNjk1MDAxNCwxMT
-A0MDM2Njk1LC0xOTA5MTU3NDA1LDExNDU5OTM3MjYsLTExODM3
-MjcxMjIsMTA1NDc4OTI5OCwxODAxNDU3MzE1LC0xMTE2MTg2MT
-M4LC0xNDQxMzExNTIsLTExMzc4OTUyODgsLTE0MDc0NTUwNjks
-MzQ4NTY2MTIwLDEzNjk2MjU1MTMsODQ3MzQxNTAxLC02Njg0Nj
-Y2MDcsLTE5NzM1Mzg2MjMsLTE5MjU0NjYwMTYsNTU5MDM5MDIs
-LTcxMDc4NjgzXX0=
+eyJoaXN0b3J5IjpbLTc2NjY1OTM0OSwxNzU0NjAzMjEyLC0xNz
+I2OTUwMDE0LDExMDQwMzY2OTUsLTE5MDkxNTc0MDUsMTE0NTk5
+MzcyNiwtMTE4MzcyNzEyMiwxMDU0Nzg5Mjk4LDE4MDE0NTczMT
+UsLTExMTYxODYxMzgsLTE0NDEzMTE1MiwtMTEzNzg5NTI4OCwt
+MTQwNzQ1NTA2OSwzNDg1NjYxMjAsMTM2OTYyNTUxMyw4NDczND
+E1MDEsLTY2ODQ2NjYwNywtMTk3MzUzODYyMywtMTkyNTQ2NjAx
+Niw1NTkwMzkwMl19
 -->
