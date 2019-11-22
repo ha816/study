@@ -34,12 +34,11 @@ public으로 선언하면 공개 API가 되고, package-private으로 하면 해
 | 접근 권한 수정자 | 설명 |
 |--|--|
 |private| 선언된 멤버는 선언된 같은 클래스에서만 접근가능 |
-|package-private| 선언된 멤버는 같은 패키지 안에 모든 클래스가 접근가능; 기본 접근 권한으로 알려져 있음 |
+|package-private(default)| 선언된 멤버는 같은 패키지 안에 모든 클래스가 접근가능; 기본 접근 권한으로 알려져 있음 |
 |protected| 선언된 멤버는 같은 패키지 안에 모든 클래스가 접근가능할 뿐만 아니라 (다른 패키지에서) 선언된 클래스를 확장하는 하위 클래스에서도 접근가능|
 |public| 선언된 멤버는 어디서도 접근가능|
 
 private의 일반적인 오해는 private으로 선언한 변수는 해당 인스턴스만 접근할 수 있다고 생각하는 것이다. 같은 인스턴스는 아니지만 같은 타입의 모든 인스턴스가 private 멤버 변수에 접근이 가능하다. 
-
 
 
  - 객체 필드(instance field)는 절대로 public으로 선언하면 안된다.
@@ -178,7 +177,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQzNjU0MTMsMzA0MTIzNzUwLDE0Nz
+eyJoaXN0b3J5IjpbLTE0NzI0MTIwNjksMzA0MTIzNzUwLDE0Nz
 YyODcxODcsODY5ODMzNjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0
 MjIsLTE3NzI0MjM3MzIsLTE1ODM0MzIzMjNdfQ==
 -->
