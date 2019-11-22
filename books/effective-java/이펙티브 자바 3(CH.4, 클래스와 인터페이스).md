@@ -15,7 +15,6 @@
 
 자바는 정보 은닉을 위한 다양한 장치를 제공하는데, 그 중 접근 제어 매커니즘으로 클래스, 인터페이스, 멤버의 접근성(접근 허용 범위)을 명시하고 있다. 각 요소의 접근성은 그 요소가 선언된 위치와 접근 제한자(access modifier)로 정해진다. 이 접근 제한자를 제대로 활용하는 것이 정보 은닉의 핵심이다. 
 
-기본 원칙은
 
 
  최상위 레벨(중첩되지 않은) 클래스와 인터페이스에 부여할 수 있는 접근 권한은 크게 package-private과 public
@@ -171,6 +170,6 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMzA3MDEwNSwxMzMzOTg5MTU1LC0yMD
-Y4NjUxNDIyLC0xNzcyNDIzNzMyLC0xNTgzNDMyMzIzXX0=
+eyJoaXN0b3J5IjpbLTUzOTUxOTIsMTMzMzk4OTE1NSwtMjA2OD
+Y1MTQyMiwtMTc3MjQyMzczMiwtMTU4MzQzMjMyM119
 -->
