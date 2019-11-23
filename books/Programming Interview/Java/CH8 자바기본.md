@@ -131,7 +131,7 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 자바의 예외처리 구조를 이루는 주요 클래스를 설명하라. 
 
 Error와 Exception은 모두 Throwable하다. 
-Error는 프로그램이 실행을 멈추게 되는 치명적이 오류로 대표적으로는 RunTimeError, StackOverFlow등이 있다. Exception은 유연하게 프로그래머가 처리 가능한 예외로 nullPointerException등 이 있다. 
+Error는 프로그램이 실행을 멈추게 되는 치명적이 오류로 대표적으로는 RunTimeError, OutOfMemoryError 등이 있다. Exception은 유연하게 프로그래머가 처리 가능한 예외로 nullPointerException등 이 있다. Exception은 명시적 예외와 비명시적 예외가 있는데 상황에 맞게 써야 한다. 
 
 
 # 표준 라이브러리 사용하기 
@@ -141,11 +141,11 @@ Error는 프로그램이 실행을 멈추게 되는 치명적이 오류로 대�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODMzMTA1NywxMDk2NDgwMTM5LDE2NT
-g3NjY5MDAsMjExMzc2MTg3MSwtMTI2Mjc3MzE1OCw2NDAzNDk1
-OTIsMTU5OTAzNTE2MSwtNzkzODM5NDc0LDEwNjk1NTI5NjEsLT
-E1MjQ3MDUyOTUsMTExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTcz
-OTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLT
-EzMTg1NTk1NDYsODExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0
-NTU3MDFdfQ==
+eyJoaXN0b3J5IjpbLTQ4NjE4MTM2LDEwOTY0ODAxMzksMTY1OD
+c2NjkwMCwyMTEzNzYxODcxLC0xMjYyNzczMTU4LDY0MDM0OTU5
+MiwxNTk5MDM1MTYxLC03OTM4Mzk0NzQsMTA2OTU1Mjk2MSwtMT
+UyNDcwNTI5NSwxMTEzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5
+NjcyMCw0MTk2MzA4MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMT
+MxODU1OTU0Niw4MTExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1
+NTcwMV19
 -->
