@@ -86,7 +86,9 @@ String 클래스에서 String 객체 값을 변경하는 것처럼 보이는 모
 
 String 리터럴은 실행할때 JVM이 특별히 관리를 한다. 클래스가 JVM에 로드되면 모든 리터럴이 상수 풀에 위치한다. 그리고 String 리터럴의 모든 반복은 풀안의 같은 상수를 참조하는데 이를 String Interning(인터닝) 이라 한다.
 
-String 인턴 풀은 컴파일 할때 단지 String 리터럴을 가져오는게 아니라 intern메서드로 모든 String 인스턴스를 풀에 추가한다. intern메서드는 해제에는 사용할 수 없다. String이 힙에 저장되어 
+String 인턴 풀은 컴파일 할때 단지 String 리터럴을 가져오는게 아니라 intern메서드로 모든 String 인스턴스를 풀에 추가한다. intern메서드는 해제에는 사용할 수 없다. String이 힙에 저장되어 있지 않더라도 어딘가에 저장되어야 하는데, 저장 장소는 PermGem이다.
+
+String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.valueOf와 비슷하다. 
 
 # 제네릭 이해하기
 
@@ -105,11 +107,11 @@ String 인턴 풀은 컴파일 할때 단지 String 리터럴을 가져오는게
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjExMjg1NzIsMTA2OTU1Mjk2MSwtMT
-UyNDcwNTI5NSwxMTEzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5
-NjcyMCw0MTk2MzA4MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMT
-MxODU1OTU0Niw4MTExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1
-NTcwMSwtMTAzNjA1MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1OD
-A5NiwyMTM2NTQ0MjU5LDUyOTk3ODcwLDQwMzUyNDAwMCw4MzI4
-NDc2NzldfQ==
+eyJoaXN0b3J5IjpbMTkzNDYzODk2MiwxMDY5NTUyOTYxLC0xNT
+I0NzA1Mjk1LDExMTM1NDExMjYsLTY2MDk5ODMwMiwtNzE3Mzk2
+NzIwLDQxOTYzMDgzMyw0MTE4ODczNTEsNjQ5NTM4ODg1LC0xMz
+E4NTU5NTQ2LDgxMTE5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1
+NzAxLC0xMDM2MDUxODcyLC0xNTE0NzM2NzQ5LC0xNDQ1NzU4MD
+k2LDIxMzY1NDQyNTksNTI5OTc4NzAsNDAzNTI0MDAwLDgzMjg0
+NzY3OV19
 -->
