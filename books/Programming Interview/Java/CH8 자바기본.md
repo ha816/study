@@ -114,7 +114,10 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 # 오토박싱과 언박싱
 
-> NullPointerException이 발생했을때 워시 타입에 접근이 가능한가? 
+박싱 VS 언박싱
+
+오토 박싱(Auto Boxing)은 원시 타입을 원시타입에 대응하는 참조 타입으로 자동 변경하는 것이다. 이를 자바 5이전에는 수동으로 해야했는데 이를 박싱(Boxing)이라고 한다. 
+
 
 # 어노테이션
 
@@ -129,7 +132,7 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NzQ1MjU3NSwyMTEzNzYxODcxLC0xMj
+eyJoaXN0b3J5IjpbMTY1ODc2NjkwMCwyMTEzNzYxODcxLC0xMj
 YyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYxLC03OTM4Mzk0
 NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMTEzNTQxMTI2LC
 02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4MzMsNDExODg3
