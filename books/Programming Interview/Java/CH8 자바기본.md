@@ -92,7 +92,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 # 제네릭 이해하기
 
-> 컬렉션 API에서 제네릭을 어떻게 사용하는지 설명하라.
+> 컬렉션 API에서 제네릭을 어떻게 사용하는지 설명하라. 
+
+제네릭은 `매개변수화된 타입`이라고도 알려져 있다. 컬렉션 클래스에서 제네릭을 사용했을때 컴파일러는 특정 타입만 포함될 수 있게 컬렉션을 제한한다. 
+
+
 
 # 오토박싱과 언박싱
 
@@ -109,11 +113,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTAzNTE2MSwtNzkzODM5NDc0LDEwNj
-k1NTI5NjEsLTE1MjQ3MDUyOTUsMTExMzU0MTEyNiwtNjYwOTk4
-MzAyLC03MTczOTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1MSw2ND
-k1Mzg4ODUsLTEzMTg1NTk1NDYsODExMTk2NDA4LC0xNjUxOTQx
-ODExLC01NDg0NTU3MDEsLTEwMzYwNTE4NzIsLTE1MTQ3MzY3ND
-ksLTE0NDU3NTgwOTYsMjEzNjU0NDI1OSw1Mjk5Nzg3MCw0MDM1
-MjQwMDBdfQ==
+eyJoaXN0b3J5IjpbNjQwMzQ5NTkyLDE1OTkwMzUxNjEsLTc5Mz
+gzOTQ3NCwxMDY5NTUyOTYxLC0xNTI0NzA1Mjk1LDExMTM1NDEx
+MjYsLTY2MDk5ODMwMiwtNzE3Mzk2NzIwLDQxOTYzMDgzMyw0MT
+E4ODczNTEsNjQ5NTM4ODg1LC0xMzE4NTU5NTQ2LDgxMTE5NjQw
+OCwtMTY1MTk0MTgxMSwtNTQ4NDU1NzAxLC0xMDM2MDUxODcyLC
+0xNTE0NzM2NzQ5LC0xNDQ1NzU4MDk2LDIxMzY1NDQyNTksNTI5
+OTc4NzBdfQ==
 -->
