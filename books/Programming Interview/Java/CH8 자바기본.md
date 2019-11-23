@@ -72,6 +72,8 @@ hashCode와 equals 메서드 관계에서 반드시 지켜야하는 규칙은 �
 
 String 클래스는 자바 라이브러리에 간단히 저장된 클래스지만 매우 중요하고 광범위하게 사용된다. JVM과 컴파일러는 특정 상황에서 특별한 방법으로 String 객체를 처리한다. 
 
+String 객체는 원시 타입처러 취급된다. String 리터털이 원시 타입처럼 취급되는 String 객체다. 
+
 # 제네릭 이해하기
 
 # 오토박싱과 언박싱
@@ -89,7 +91,7 @@ String 클래스는 자바 라이브러리에 간단히 저장된 클래스지�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MTU3NzQxMiwtMTUyNDcwNTI5NSwxMT
+eyJoaXN0b3J5IjpbMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMT
 EzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4
 MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1OTU0Niw4MT
 ExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1NTcwMSwtMTAzNjA1
