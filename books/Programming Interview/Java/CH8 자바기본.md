@@ -110,7 +110,7 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 본래 구상화 (reified)는 것은 실행 시에 이용할 수 있다는 것이다. **기본적으로 자바의 제네릭 타입은 구상화가 아니다.** 왜냐하면 .class 파일 정의의 일부가 아닌, 제네릭 매개변수를 직접 사용하는 구현 코드의 모든 타입 정보를 컴파일러가 확인하기 때문이다. 
 
-자바 디카
+실제 제네릭을 사용한 코드로 만든 실행 코드를 자바 디컴파일러인 JAD를 이용해서 디컴파일하면 모든 제네릭 타입 정보가 사라진다. 즉 이미 컴파일된 클래스 파일을 
 
 
 # 오토박싱과 언박싱
@@ -128,7 +128,7 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwODMwODEwMywyMTEzNzYxODcxLC0xMj
+eyJoaXN0b3J5IjpbMTk0MDg4NTEyMiwyMTEzNzYxODcxLC0xMj
 YyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYxLC03OTM4Mzk0
 NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMTEzNTQxMTI2LC
 02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4MzMsNDExODg3
