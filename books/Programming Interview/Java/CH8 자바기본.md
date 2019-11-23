@@ -60,7 +60,7 @@ static은 정적 변수와 메서드를 만드는데 사용하느 키워드이�
 
 JVM에서 실행되는 모든 클래스는 Object를 상속하므로 final 메서드를 제외한 public, protected 메서드는 오버라이드 할 수 있다. 
 
-hashCode와 equals 메서드 관계에서 반드시 지켜야하는 규칙은 두 메서드 중 하나를 오버라이딩 할때 반드시 둘다 함께 오버라이드 해야한다. 
+hashCode와 equals 메서드 관계에서 반드시 지켜야하는 규칙은 두 메서드 중 하나를 오버라이딩 할때 반드시 둘다 함께 오버라이드 해야한다. 왜냐하면 HashSet 같은 경우, equals 메서드가 구현되어 있지 않아서, 그냥 쓰면 객체 참조 값만 비교 한다. 
 
 
 # 자바 배열
@@ -84,10 +84,11 @@ hashCode와 equals 메서드 관계에서 반드시 지켜야하는 규칙은 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjQ3MDUyOTUsMTExMzU0MTEyNiwtNj
-YwOTk4MzAyLC03MTczOTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1
-MSw2NDk1Mzg4ODUsLTEzMTg1NTk1NDYsODExMTk2NDA4LC0xNj
-UxOTQxODExLC01NDg0NTU3MDEsLTEwMzYwNTE4NzIsLTE1MTQ3
-MzY3NDksLTE0NDU3NTgwOTYsMjEzNjU0NDI1OSw1Mjk5Nzg3MC
-w0MDM1MjQwMDAsODMyODQ3Njc5LDIxMzY3NTg0MDldfQ==
+eyJoaXN0b3J5IjpbMTY2OTk2MTU2OCwtMTUyNDcwNTI5NSwxMT
+EzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4
+MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1OTU0Niw4MT
+ExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1NTcwMSwtMTAzNjA1
+MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1ODA5NiwyMTM2NTQ0Mj
+U5LDUyOTk3ODcwLDQwMzUyNDAwMCw4MzI4NDc2NzksMjEzNjc1
+ODQwOV19
 -->
