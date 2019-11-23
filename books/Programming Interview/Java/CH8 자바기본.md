@@ -23,6 +23,15 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 > 왜 Integer.MIN_VALUES에 대응하는 양수가 없는가?
 > Integer값은 $2^{32}$가지의 값을 표현할수 있다. 그리고 signed이기 때문에 절반 만큼은 음수를 위해 써야한다.  그런데 0도 양수의 표현해야하기 때문에 $2^{31}-1$만큼은 양수로 나머지는 음수로 표현한다.
 
+오토박싱과 언박싱
+
+박싱 VS 언박싱
+
+오토 박싱(Auto Boxing)은 원시 타입을 원시타입에 대응하는 참조 타입으로 자동 변경하는 것이다. 
+
+자바 5이전에는 수동으로 원시 타입을 참조 타입으로 바꿧는데 이를 박싱(Boxing)이라고 한다. 반대로 언박싱(Unboxing)은 참조 타입을 대응하는 원시 타입으로 바꾼다. 
+
+
 # 객체 이용하기
 
 원시 타입을 제외하면 자바 언어의 모든 변수들은 참조 타입이다. 이것들은 객체로 원시타입과 차이점은 빈객체를 의미하는 null 표현이 존재한다는 것이다.
@@ -112,15 +121,6 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 실제 제네릭을 사용한 코드로 만든 실행 코드를 자바 디컴파일러인 JAD를 이용해서 디컴파일하면 모든 제네릭 타입 정보가 사라진다. 
 
-# 오토박싱과 언박싱
-
-박싱 VS 언박싱
-
-오토 박싱(Auto Boxing)은 원시 타입을 원시타입에 대응하는 참조 타입으로 자동 변경하는 것이다. 
-
-자바 5이전에는 수동으로 해야했는데 이를 박싱(Boxing)이라고 한다. 반대로 언박싱(Un
-
-
 # 어노테이션
 
 # 명명규칙 이해하기
@@ -134,11 +134,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMjczOTI3LDE2NTg3NjY5MDAsMjExMz
-c2MTg3MSwtMTI2Mjc3MzE1OCw2NDAzNDk1OTIsMTU5OTAzNTE2
-MSwtNzkzODM5NDc0LDEwNjk1NTI5NjEsLTE1MjQ3MDUyOTUsMT
-ExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3MjAsNDE5NjMw
-ODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1NTk1NDYsOD
-ExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0NTU3MDEsLTEwMzYw
-NTE4NzJdfQ==
+eyJoaXN0b3J5IjpbLTE2NTYxODEzMzIsMTY1ODc2NjkwMCwyMT
+EzNzYxODcxLC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1
+MTYxLC03OTM4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NS
+wxMTEzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2
+MzA4MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1OTU0Ni
+w4MTExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1NTcwMSwtMTAz
+NjA1MTg3Ml19
 -->
