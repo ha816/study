@@ -74,7 +74,8 @@ hashCode와 equals 메서드 관계에서 반드시 지켜야하는 규칙은 �
 
 > @Override 애노테이션은 어떤 역할을 하는가? 
 
-컴파일러에게 슈퍼 크
+컴파일러에게 상위 클래스의 메서드가 오버라이드 되었다는 것을 알려주므로 컴파일 할때 유용하다. 일반적으로 메서드를 오버라이딩 할때 이 애노테이션으로 실수하지 않게 하는 용도로 쓰인다.
+만약 상위 클래스에 일치하는 메서드 시그니처가 없으면 에러가 발생한다. 
 
 # String 이용하기
 
@@ -133,11 +134,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEzMzYyMTkxLDE2NTg3NjY5MDAsMjExMz
-c2MTg3MSwtMTI2Mjc3MzE1OCw2NDAzNDk1OTIsMTU5OTAzNTE2
-MSwtNzkzODM5NDc0LDEwNjk1NTI5NjEsLTE1MjQ3MDUyOTUsMT
-ExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3MjAsNDE5NjMw
-ODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1NTk1NDYsOD
-ExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0NTU3MDEsLTEwMzYw
-NTE4NzJdfQ==
+eyJoaXN0b3J5IjpbLTU3Mjc1Nzk2NiwxNjU4NzY2OTAwLDIxMT
+M3NjE4NzEsLTEyNjI3NzMxNTgsNjQwMzQ5NTkyLDE1OTkwMzUx
+NjEsLTc5MzgzOTQ3NCwxMDY5NTUyOTYxLC0xNTI0NzA1Mjk1LD
+ExMTM1NDExMjYsLTY2MDk5ODMwMiwtNzE3Mzk2NzIwLDQxOTYz
+MDgzMyw0MTE4ODczNTEsNjQ5NTM4ODg1LC0xMzE4NTU5NTQ2LD
+gxMTE5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1NzAxLC0xMDM2
+MDUxODcyXX0=
 -->
