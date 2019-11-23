@@ -78,7 +78,9 @@ String 객체는 원시 타입처러 취급된다. String 리터털이 원시 �
 
 String 클래스에서 String 객체 값을 변경하는 것처럼 보이는 모든 메서드가 실제로는  String 인스턴스를 반환한다. 
 
-String 값은 절대 변하지 않으며 바꿀수 ㅇ
+**String 값은 절대 변하지 않으며 바꿀수 없다**
+
+이러한 불변성은 많은 장점이 있다. 하나는 스레드에 안전하다는 것이다. 참고로 String 뿐만 아니라 Integer, Double, Charactrer, BigInteger와 같은 모든 숫자형 클래스도 불변형이다. 
 
 # 제네릭 이해하기
 
@@ -97,7 +99,7 @@ String 값은 절대 변하지 않으며 바꿀수 ㅇ
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNzg4NTUxMCwxMDY5NTUyOTYxLC0xNT
+eyJoaXN0b3J5IjpbLTQ1NDM1MzUxNSwxMDY5NTUyOTYxLC0xNT
 I0NzA1Mjk1LDExMTM1NDExMjYsLTY2MDk5ODMwMiwtNzE3Mzk2
 NzIwLDQxOTYzMDgzMyw0MTE4ODczNTEsNjQ5NTM4ODg1LC0xMz
 E4NTU5NTQ2LDgxMTE5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1
