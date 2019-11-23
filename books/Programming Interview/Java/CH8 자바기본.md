@@ -162,17 +162,19 @@ public String getHostName() throws Exception
 
 자바 컬렉션은 java.util 패키지에 포함된다. 자바 컬렉션 구조는 크게 Collection과 Map인터페이스가 있다. Collection에는 List인터페이스와 Set인터페이스가 있다. 
 
+그러나 Collection은 
+
 
 # 자바 8
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzI4OTU4MzIsLTIxMzMxOTM3NTksOT
-AzMTM0OTQ0LC00ODYxODEzNiwxMDk2NDgwMTM5LDE2NTg3NjY5
-MDAsMjExMzc2MTg3MSwtMTI2Mjc3MzE1OCw2NDAzNDk1OTIsMT
-U5OTAzNTE2MSwtNzkzODM5NDc0LDEwNjk1NTI5NjEsLTE1MjQ3
-MDUyOTUsMTExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3Mj
-AsNDE5NjMwODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1
-NTk1NDZdfQ==
+eyJoaXN0b3J5IjpbMjAzNDk1NDE1NCwtMjEzMzE5Mzc1OSw5MD
+MxMzQ5NDQsLTQ4NjE4MTM2LDEwOTY0ODAxMzksMTY1ODc2Njkw
+MCwyMTEzNzYxODcxLC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNT
+k5MDM1MTYxLC03OTM4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcw
+NTI5NSwxMTEzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMC
+w0MTk2MzA4MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1
+OTU0Nl19
 -->
