@@ -96,7 +96,7 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 제네릭은 `매개변수화된 타입`이라고도 알려져 있다. 매개변수를 받는 타입? 컬렉션 클래스에서 제네릭을 사용했을때 컴파일러는 특정 타입만 포함될 수 있게 컬렉션을 제한한다. 
 
-
+컬렉션 API에 있는 모든 클래스는 제네리릭을 사용해서 만들었다. List인터페이스와 그 구현은 한 가지 타입의 매개변수만 받는다. Map인터페이스는 두가지 타입 매개변수를 받는다. 
 
 
 
@@ -115,11 +115,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NDY0MTYxNyw2NDAzNDk1OTIsMTU5OT
-AzNTE2MSwtNzkzODM5NDc0LDEwNjk1NTI5NjEsLTE1MjQ3MDUy
-OTUsMTExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3MjAsND
-E5NjMwODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1NTk1
-NDYsODExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0NTU3MDEsLT
-EwMzYwNTE4NzIsLTE1MTQ3MzY3NDksLTE0NDU3NTgwOTYsMjEz
-NjU0NDI1OV19
+eyJoaXN0b3J5IjpbLTEyNjI3NzMxNTgsNjQwMzQ5NTkyLDE1OT
+kwMzUxNjEsLTc5MzgzOTQ3NCwxMDY5NTUyOTYxLC0xNTI0NzA1
+Mjk1LDExMTM1NDExMjYsLTY2MDk5ODMwMiwtNzE3Mzk2NzIwLD
+QxOTYzMDgzMyw0MTE4ODczNTEsNjQ5NTM4ODg1LC0xMzE4NTU5
+NTQ2LDgxMTE5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1NzAxLC
+0xMDM2MDUxODcyLC0xNTE0NzM2NzQ5LC0xNDQ1NzU4MDk2LDIx
+MzY1NDQyNTldfQ==
 -->
