@@ -60,7 +60,7 @@ static은 정적 변수와 메서드를 만드는데 사용하느 키워드이�
 
 JVM에서 실행되는 모든 클래스는 Object를 상속하므로 final 메서드를 제외한 public, protected 메서드는 오버라이드 할 수 있다. 
 
-ov
+hashCode와 equals 메서드 관계에서 반드시 지켜야하는 규칙은 두 메서드 중 하나를 오버라이딩 할때 반드시 둘다 함께 오버라이드 해야한다. 
 
 
 # 자바 배열
@@ -84,7 +84,7 @@ ov
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzUxNjk0NDUsMTExMzU0MTEyNiwtNj
+eyJoaXN0b3J5IjpbLTE1MjQ3MDUyOTUsMTExMzU0MTEyNiwtNj
 YwOTk4MzAyLC03MTczOTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1
 MSw2NDk1Mzg4ODUsLTEzMTg1NTk1NDYsODExMTk2NDA4LC0xNj
 UxOTQxODExLC01NDg0NTU3MDEsLTEwMzYwNTE4NzIsLTE1MTQ3
