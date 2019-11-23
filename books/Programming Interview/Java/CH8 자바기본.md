@@ -116,7 +116,9 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 박싱 VS 언박싱
 
-오토 박싱(Auto Boxing)은 원시 타입을 원시타입에 대응하는 참조 타입으로 자동 변경하는 것이다. 이를 자바 5이전에는 수동으로 해야했는데 이를 박싱(Boxing)이라고 한다. 
+오토 박싱(Auto Boxing)은 원시 타입을 원시타입에 대응하는 참조 타입으로 자동 변경하는 것이다. 
+
+자바 5이전에는 수동으로 해야했는데 이를 박싱(Boxing)이라고 한다. 반대로 언박싱(Un
 
 
 # 어노테이션
@@ -132,11 +134,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1ODc2NjkwMCwyMTEzNzYxODcxLC0xMj
-YyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYxLC03OTM4Mzk0
-NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMTEzNTQxMTI2LC
-02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4MzMsNDExODg3
-MzUxLDY0OTUzODg4NSwtMTMxODU1OTU0Niw4MTExOTY0MDgsLT
-E2NTE5NDE4MTEsLTU0ODQ1NTcwMSwtMTAzNjA1MTg3MiwtMTUx
-NDczNjc0OV19
+eyJoaXN0b3J5IjpbMTczMjczOTI3LDE2NTg3NjY5MDAsMjExMz
+c2MTg3MSwtMTI2Mjc3MzE1OCw2NDAzNDk1OTIsMTU5OTAzNTE2
+MSwtNzkzODM5NDc0LDEwNjk1NTI5NjEsLTE1MjQ3MDUyOTUsMT
+ExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3MjAsNDE5NjMw
+ODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1NTk1NDYsOD
+ExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0NTU3MDEsLTEwMzYw
+NTE4NzJdfQ==
 -->
