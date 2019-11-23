@@ -137,7 +137,11 @@ Error는 프로그램이 실행을 멈추게 되는 치명적이 오류로 대�
 
 >런타임 예외와 명시적 예외 중 어떤것이 더 좋은가?
 
-명시적 예외에서는 코드에서 무엇인 잘못되었는지 직접 확인해야하
+명시적 예외에서는 코드에서 무엇이 잘못되었는지 직접 예외 처리를 해줘야 한다. 이때 어떤 동작이 잘못되었는지 정확한 예외를 던져줘야 한다. 
+
+```
+public String getHostName() throws Exception
+```
 
 # 표준 라이브러리 사용하기 
 
@@ -146,7 +150,7 @@ Error는 프로그램이 실행을 멈추게 되는 치명적이 오류로 대�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNDY1MzQ2MSw5MDMxMzQ5NDQsLTQ4Nj
+eyJoaXN0b3J5IjpbLTQzOTYyNTM4OSw5MDMxMzQ5NDQsLTQ4Nj
 E4MTM2LDEwOTY0ODAxMzksMTY1ODc2NjkwMCwyMTEzNzYxODcx
 LC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYxLC03OT
 M4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMTEzNTQx
