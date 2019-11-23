@@ -74,6 +74,12 @@ String 클래스는 자바 라이브러리에 간단히 저장된 클래스지�
 
 String 객체는 원시 타입처러 취급된다. String 리터털이 원시 타입처럼 취급되는 String 객체다. String 릴터럴을 생성 할때 new 키워드를 사용할 필요가 없다. 실제 컴파일할때 쌍따옴표로 표현된 String 리터럴은 모두 객체로 생성된다. 
 
+> String 객체의 값을 변경할 수 있는가?
+
+String 클래스에서 String 객체 값을 변경하는 것처럼 보이는 모든 메서드가 실제로는  String 인스턴스를 반환한다. 
+
+String 값은 절대 변하지 않으며 바꿀수 ㅇ
+
 # 제네릭 이해하기
 
 # 오토박싱과 언박싱
@@ -91,11 +97,11 @@ String 객체는 원시 타입처러 취급된다. String 리터털이 원시 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDM4MDk5NzQsMTA2OTU1Mjk2MSwtMT
-UyNDcwNTI5NSwxMTEzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5
-NjcyMCw0MTk2MzA4MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMT
-MxODU1OTU0Niw4MTExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1
-NTcwMSwtMTAzNjA1MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1OD
-A5NiwyMTM2NTQ0MjU5LDUyOTk3ODcwLDQwMzUyNDAwMCw4MzI4
-NDc2NzldfQ==
+eyJoaXN0b3J5IjpbMjEwNzg4NTUxMCwxMDY5NTUyOTYxLC0xNT
+I0NzA1Mjk1LDExMTM1NDExMjYsLTY2MDk5ODMwMiwtNzE3Mzk2
+NzIwLDQxOTYzMDgzMyw0MTE4ODczNTEsNjQ5NTM4ODg1LC0xMz
+E4NTU5NTQ2LDgxMTE5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1
+NzAxLC0xMDM2MDUxODcyLC0xNTE0NzM2NzQ5LC0xNDQ1NzU4MD
+k2LDIxMzY1NDQyNTksNTI5OTc4NzAsNDAzNTI0MDAwLDgzMjg0
+NzY3OV19
 -->
