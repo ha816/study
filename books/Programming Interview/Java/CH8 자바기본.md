@@ -60,6 +60,8 @@ static은 정적 변수와 메서드를 만드는데 사용하느 키워드이�
 
 JVM에서 실행되는 모든 클래스는 Object를 상속하므로 final 메서드를 제외한 public, protected 메서드는 오버라이드 할 수 있다. 
 
+ov
+
 
 # 자바 배열
 
@@ -82,10 +84,10 @@ JVM에서 실행되는 모든 클래스는 Object를 상속하므로 final 메�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMzU0MTEyNiwtNjYwOTk4MzAyLC03MT
-czOTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUs
-LTEzMTg1NTk1NDYsODExMTk2NDA4LC0xNjUxOTQxODExLC01ND
-g0NTU3MDEsLTEwMzYwNTE4NzIsLTE1MTQ3MzY3NDksLTE0NDU3
-NTgwOTYsMjEzNjU0NDI1OSw1Mjk5Nzg3MCw0MDM1MjQwMDAsOD
-MyODQ3Njc5LDIxMzY3NTg0MDldfQ==
+eyJoaXN0b3J5IjpbLTEyNzUxNjk0NDUsMTExMzU0MTEyNiwtNj
+YwOTk4MzAyLC03MTczOTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1
+MSw2NDk1Mzg4ODUsLTEzMTg1NTk1NDYsODExMTk2NDA4LC0xNj
+UxOTQxODExLC01NDg0NTU3MDEsLTEwMzYwNTE4NzIsLTE1MTQ3
+MzY3NDksLTE0NDU3NTgwOTYsMjEzNjU0NDI1OSw1Mjk5Nzg3MC
+w0MDM1MjQwMDAsODMyODQ3Njc5LDIxMzY3NTg0MDldfQ==
 -->
