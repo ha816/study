@@ -148,9 +148,9 @@ public String getHostName() throws Exception
 
 필자는 일반적으로 런타이므 예외를 선호한다. 하지만 클라이언트가 해당 메서드를 호출했을때 어떤 예외가 발생하는지를 문서에 꼭 남긴다. 런타임 예외를 선호하는 이유는 명시적 예외에서는 try문을 기본 코드에 추가해야 할 뿐만 아니라 유지보수가 어려워지기 때문이다. 
 
->연쇄 예외란 무엇인가?
+> try-with resource는 무엇인가?
 
-에러를 해결하기위해 예외를 처리할때는 해당 예외를 다시 처리하거
+자바 7에서 추가된 try-with resource는 기존 try-catch-fi
 
 # 표준 라이브러리 사용하기 
 
@@ -159,11 +159,11 @@ public String getHostName() throws Exception
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY0Njg3NTU4LDkwMzEzNDk0NCwtNDg2MT
-gxMzYsMTA5NjQ4MDEzOSwxNjU4NzY2OTAwLDIxMTM3NjE4NzEs
-LTEyNjI3NzMxNTgsNjQwMzQ5NTkyLDE1OTkwMzUxNjEsLTc5Mz
-gzOTQ3NCwxMDY5NTUyOTYxLC0xNTI0NzA1Mjk1LDExMTM1NDEx
-MjYsLTY2MDk5ODMwMiwtNzE3Mzk2NzIwLDQxOTYzMDgzMyw0MT
-E4ODczNTEsNjQ5NTM4ODg1LC0xMzE4NTU5NTQ2LDgxMTE5NjQw
-OF19
+eyJoaXN0b3J5IjpbMjA5MTk5OTkzOSw5MDMxMzQ5NDQsLTQ4Nj
+E4MTM2LDEwOTY0ODAxMzksMTY1ODc2NjkwMCwyMTEzNzYxODcx
+LC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYxLC03OT
+M4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMTEzNTQx
+MTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4MzMsND
+ExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1OTU0Niw4MTExOTY0
+MDhdfQ==
 -->
