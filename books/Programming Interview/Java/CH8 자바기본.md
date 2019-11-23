@@ -133,7 +133,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 Error와 Exception은 모두 Throwable하다. 
 Error는 프로그램이 실행을 멈추게 되는 치명적이 오류로 대표적으로는 RunTimeError, OutOfMemoryError 등이 있다. Exception은 유연하게 프로그래머가 처리 가능한 예외로 nullPointerException등 이 있다. 
 
-예외는 확인해야하는 명시적 예외(Checked Exception)와 그것이 아닌 예외(Runtime Exception)가 있다. 
+예외는 확인해야하는 명시적 예외(Checked Exception)와 그것이 아닌 예외(Runtime Exception)가 있다. 명시적 예외로 처리된 메서드는 반드시 해당 예외를 try구문으로 처리해야 한다. 
+
+>런타임 예외와 명시적 예외 중 어떤것이 더 좋은가?
+
+
 
 # 표준 라이브러리 사용하기 
 
@@ -142,11 +146,11 @@ Error는 프로그램이 실행을 멈추게 되는 치명적이 오류로 대�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTMzNTMyOTIsLTQ4NjE4MTM2LDEwOT
-Y0ODAxMzksMTY1ODc2NjkwMCwyMTEzNzYxODcxLC0xMjYyNzcz
-MTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYxLC03OTM4Mzk0NzQsMT
-A2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMTEzNTQxMTI2LC02NjA5
-OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4MzMsNDExODg3MzUxLD
-Y0OTUzODg4NSwtMTMxODU1OTU0Niw4MTExOTY0MDgsLTE2NTE5
-NDE4MTFdfQ==
+eyJoaXN0b3J5IjpbOTAzMTM0OTQ0LC00ODYxODEzNiwxMDk2ND
+gwMTM5LDE2NTg3NjY5MDAsMjExMzc2MTg3MSwtMTI2Mjc3MzE1
+OCw2NDAzNDk1OTIsMTU5OTAzNTE2MSwtNzkzODM5NDc0LDEwNj
+k1NTI5NjEsLTE1MjQ3MDUyOTUsMTExMzU0MTEyNiwtNjYwOTk4
+MzAyLC03MTczOTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1MSw2ND
+k1Mzg4ODUsLTEzMTg1NTk1NDYsODExMTk2NDA4LC0xNjUxOTQx
+ODExXX0=
 -->
