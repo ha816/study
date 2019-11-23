@@ -156,6 +156,9 @@ public String getHostName() throws Exception
 
 > 왜 private인 필드가 변하지 않도록 하기 위해 final 키워드를 선언해야 하는가?
 
+그런데 자바 relection을 쓰면 private 메서드도 사용이 가능하고 private 필드도 접근이 되고 심지어 final로 지정되어 값을 수정할 수 있다.
+
+> 다른 모든 컬렉션 API에서 상속되는 클래스는 어떤것이 이
 
 
 # 자바 8
@@ -163,11 +166,11 @@ public String getHostName() throws Exception
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzMxOTM3NTksOTAzMTM0OTQ0LC00OD
-YxODEzNiwxMDk2NDgwMTM5LDE2NTg3NjY5MDAsMjExMzc2MTg3
-MSwtMTI2Mjc3MzE1OCw2NDAzNDk1OTIsMTU5OTAzNTE2MSwtNz
-kzODM5NDc0LDEwNjk1NTI5NjEsLTE1MjQ3MDUyOTUsMTExMzU0
-MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3MjAsNDE5NjMwODMzLD
-QxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1NTk1NDYsODExMTk2
-NDA4XX0=
+eyJoaXN0b3J5IjpbMTcxNTkwMDMyMSwtMjEzMzE5Mzc1OSw5MD
+MxMzQ5NDQsLTQ4NjE4MTM2LDEwOTY0ODAxMzksMTY1ODc2Njkw
+MCwyMTEzNzYxODcxLC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNT
+k5MDM1MTYxLC03OTM4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcw
+NTI5NSwxMTEzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMC
+w0MTk2MzA4MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1
+OTU0Nl19
 -->
