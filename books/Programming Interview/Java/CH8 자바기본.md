@@ -128,7 +128,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 # 예외처리 하기
 
-자바의 예외처리 구조를 이루는 주요 클래스를 설명하라.
+자바의 예외처리 구조를 이루는 주요 클래스를 설명하라. 
+
+Error와 Exception은 모두 Throwable하다. 
+Error는 프로그램이 실행을 
+
 
 # 표준 라이브러리 사용하기 
 
@@ -137,11 +141,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NjQ4MDEzOSwxNjU4NzY2OTAwLDIxMT
-M3NjE4NzEsLTEyNjI3NzMxNTgsNjQwMzQ5NTkyLDE1OTkwMzUx
-NjEsLTc5MzgzOTQ3NCwxMDY5NTUyOTYxLC0xNTI0NzA1Mjk1LD
-ExMTM1NDExMjYsLTY2MDk5ODMwMiwtNzE3Mzk2NzIwLDQxOTYz
-MDgzMyw0MTE4ODczNTEsNjQ5NTM4ODg1LC0xMzE4NTU5NTQ2LD
-gxMTE5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1NzAxLC0xMDM2
-MDUxODcyXX0=
+eyJoaXN0b3J5IjpbMTg0OTUyMDU2MywxMDk2NDgwMTM5LDE2NT
+g3NjY5MDAsMjExMzc2MTg3MSwtMTI2Mjc3MzE1OCw2NDAzNDk1
+OTIsMTU5OTAzNTE2MSwtNzkzODM5NDc0LDEwNjk1NTI5NjEsLT
+E1MjQ3MDUyOTUsMTExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTcz
+OTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLT
+EzMTg1NTk1NDYsODExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0
+NTU3MDFdfQ==
 -->
