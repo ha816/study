@@ -137,7 +137,7 @@ Error는 프로그램이 실행을 멈추게 되는 치명적이 오류로 대�
 
 >런타임 예외와 명시적 예외 중 어떤것이 더 좋은가?
 
-
+명시적 예외에서는 코드에서 무엇인 잘못되었는지 직접 확인해야하
 
 # 표준 라이브러리 사용하기 
 
@@ -146,11 +146,11 @@ Error는 프로그램이 실행을 멈추게 되는 치명적이 오류로 대�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAzMTM0OTQ0LC00ODYxODEzNiwxMDk2ND
-gwMTM5LDE2NTg3NjY5MDAsMjExMzc2MTg3MSwtMTI2Mjc3MzE1
-OCw2NDAzNDk1OTIsMTU5OTAzNTE2MSwtNzkzODM5NDc0LDEwNj
-k1NTI5NjEsLTE1MjQ3MDUyOTUsMTExMzU0MTEyNiwtNjYwOTk4
-MzAyLC03MTczOTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1MSw2ND
-k1Mzg4ODUsLTEzMTg1NTk1NDYsODExMTk2NDA4LC0xNjUxOTQx
-ODExXX0=
+eyJoaXN0b3J5IjpbLTQxNDY1MzQ2MSw5MDMxMzQ5NDQsLTQ4Nj
+E4MTM2LDEwOTY0ODAxMzksMTY1ODc2NjkwMCwyMTEzNzYxODcx
+LC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYxLC03OT
+M4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMTEzNTQx
+MTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4MzMsND
+ExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1OTU0Niw4MTExOTY0
+MDhdfQ==
 -->
