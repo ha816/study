@@ -124,9 +124,7 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 # 명명규칙 이해하기
 
-클래스의 첫글자는 대문자이고 카멜 케이스를 따른다. 변수와 메서드는 첫 글자는 항상 소문자이고 카멜케이스를 따른다. 
-
-
+클래스의 첫글자는 대문자이고 카멜 케이스를 따른다. 변수와 메서드는 첫 글자는 항상 소문자이고 카멜케이스를 따른다. 상수는 변경불가한 상수로 모두 대문자에 사이는 밑줄로 
 
 # 예외처리 하기
 
@@ -137,11 +135,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNTA2ODk2NCwxNjU4NzY2OTAwLDIxMT
-M3NjE4NzEsLTEyNjI3NzMxNTgsNjQwMzQ5NTkyLDE1OTkwMzUx
-NjEsLTc5MzgzOTQ3NCwxMDY5NTUyOTYxLC0xNTI0NzA1Mjk1LD
-ExMTM1NDExMjYsLTY2MDk5ODMwMiwtNzE3Mzk2NzIwLDQxOTYz
-MDgzMyw0MTE4ODczNTEsNjQ5NTM4ODg1LC0xMzE4NTU5NTQ2LD
-gxMTE5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1NzAxLC0xMDM2
-MDUxODcyXX0=
+eyJoaXN0b3J5IjpbMzMxODg2MTgsMTY1ODc2NjkwMCwyMTEzNz
+YxODcxLC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYx
+LC03OTM4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMT
+EzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4
+MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1OTU0Niw4MT
+ExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1NTcwMSwtMTAzNjA1
+MTg3Ml19
 -->
