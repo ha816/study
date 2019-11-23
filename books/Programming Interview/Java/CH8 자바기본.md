@@ -124,7 +124,9 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 # 명명규칙 이해하기
 
-클래스는 카멜 케이슬 
+클래스의 첫글자는 대문자이고 카멜 케이스를 따른다. 변수와 메서드는 첫 글자는 항상 소문자이고 카멜케이스를 따른다. 
+
+
 
 # 예외처리 하기
 
@@ -135,7 +137,7 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMDIyOTkzMiwxNjU4NzY2OTAwLDIxMT
+eyJoaXN0b3J5IjpbLTcyNTA2ODk2NCwxNjU4NzY2OTAwLDIxMT
 M3NjE4NzEsLTEyNjI3NzMxNTgsNjQwMzQ5NTkyLDE1OTkwMzUx
 NjEsLTc5MzgzOTQ3NCwxMDY5NTUyOTYxLC0xNTI0NzA1Mjk1LD
 ExMTM1NDExMjYsLTY2MDk5ODMwMiwtNzE3Mzk2NzIwLDQxOTYz
