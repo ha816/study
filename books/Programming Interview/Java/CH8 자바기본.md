@@ -29,6 +29,10 @@ char는 unsigned이므로 0 ~ 65535 까지 담을수 있다.
 
 원시 타입은 값을 메모리에 그대로 저장한다. 그에 반해 참조 값은 객체가 할당된 메모리의 주소(위치)를 저장한다. 표면적으로 둘다 비슷하게 동작하는 것으로 보이지만 실제로는 그렇지 않다. 
 
+> 자바에서는 배열을 어떻게 표현하는가?
+
+중요한 점은 자바에서 배열을 객체로 취급한다는 것이다. 배열은 toString()을 호출할수 있고 다양한 방법으로 이용이 가능하다. 또 배열이 객체라는 의미는 참조로 전달될 수 있다는 뜻이다. 따라서 해당 객체는 참조하는 모든 것에 의해서 변경이 발생할 수 있다. 따라서 사용에 주의해야 한다. 
+
 > final 키워드는 객체 참조에 어떤 영향을 미치는가?
 
 객체에 선언하는 final 키워드는 원시타입에 선언하는 final 키워드와 동일하다. 즉 메모리 변수에 값이나 메모리 주소가 할당되면 그 값과 메모리 주소는 변하지 않는다. 변수에 할당된 메모리 주소는 변경하지 못하지만 객체 자체는 당연히 수정이 가능하다.
@@ -64,6 +68,10 @@ hashCode와 equals 메서드 관계에서 반드시 지켜야하는 규칙은 �
 
 # String 이용하기
 
+>String은 메모리에 어떻게 저장되는가?
+
+String 클래스는 자바 라이브러리에 간단히 저장된 클래스지만 매우 중요하고 광범위하게 사용된다. JVM과 컴파일러는 특정 상황에서 특별한 방법으로 String 객체를 처리한다. 
+
 # 제네릭 이해하기
 
 # 오토박싱과 언박싱
@@ -81,11 +89,11 @@ hashCode와 equals 메서드 관계에서 반드시 지켜야하는 규칙은 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTkwODgyOTcsLTE1MjQ3MDUyOTUsMT
-ExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3MjAsNDE5NjMw
-ODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1NTk1NDYsOD
-ExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0NTU3MDEsLTEwMzYw
-NTE4NzIsLTE1MTQ3MzY3NDksLTE0NDU3NTgwOTYsMjEzNjU0ND
-I1OSw1Mjk5Nzg3MCw0MDM1MjQwMDAsODMyODQ3Njc5LDIxMzY3
-NTg0MDldfQ==
+eyJoaXN0b3J5IjpbMTM5MTU3NzQxMiwtMTUyNDcwNTI5NSwxMT
+EzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4
+MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1OTU0Niw4MT
+ExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1NTcwMSwtMTAzNjA1
+MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1ODA5NiwyMTM2NTQ0Mj
+U5LDUyOTk3ODcwLDQwMzUyNDAwMCw4MzI4NDc2NzksMjEzNjc1
+ODQwOV19
 -->
