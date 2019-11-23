@@ -164,17 +164,13 @@ public String getHostName() throws Exception
 
 그러나 Collection과 Map은 서로 연결되어 있다 Map 인터페이스에는 Collection 인터페이스에서 Map 구성요소를 접근할 수 있는 entrySet, keySet 메서드가 있다. 
 
-
-# 자바 8
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMDU0OTg0MywtMjEzMzE5Mzc1OSw5MD
-MxMzQ5NDQsLTQ4NjE4MTM2LDEwOTY0ODAxMzksMTY1ODc2Njkw
-MCwyMTEzNzYxODcxLC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNT
-k5MDM1MTYxLC03OTM4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcw
-NTI5NSwxMTEzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMC
-w0MTk2MzA4MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1
-OTU0Nl19
+eyJoaXN0b3J5IjpbMzY2MjcwNjAsLTIxMzMxOTM3NTksOTAzMT
+M0OTQ0LC00ODYxODEzNiwxMDk2NDgwMTM5LDE2NTg3NjY5MDAs
+MjExMzc2MTg3MSwtMTI2Mjc3MzE1OCw2NDAzNDk1OTIsMTU5OT
+AzNTE2MSwtNzkzODM5NDc0LDEwNjk1NTI5NjEsLTE1MjQ3MDUy
+OTUsMTExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3MjAsND
+E5NjMwODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1NTk1
+NDZdfQ==
 -->
