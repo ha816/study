@@ -106,6 +106,9 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 예를들어 List<? extends A>는 컴파일러에게 A 클래스를 확장한 모든 인스턴스를 List원소로가지는 매개변수 타입이다.  
 
+> 구상화한다는 건 어떤 의미인가? 
+
+본래 구상화 (reified)는 것은 실행 시에 이용할 수 있다는 것이다. 기본적으로 자바의 제네릭 타입은 구상화가 아니다. 
 
 
 # 오토박싱과 언박싱
@@ -123,11 +126,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMzc2MTg3MSwtMTI2Mjc3MzE1OCw2ND
-AzNDk1OTIsMTU5OTAzNTE2MSwtNzkzODM5NDc0LDEwNjk1NTI5
-NjEsLTE1MjQ3MDUyOTUsMTExMzU0MTEyNiwtNjYwOTk4MzAyLC
-03MTczOTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1MSw2NDk1Mzg4
-ODUsLTEzMTg1NTk1NDYsODExMTk2NDA4LC0xNjUxOTQxODExLC
-01NDg0NTU3MDEsLTEwMzYwNTE4NzIsLTE1MTQ3MzY3NDksLTE0
-NDU3NTgwOTZdfQ==
+eyJoaXN0b3J5IjpbLTEzODI0MjYxNywyMTEzNzYxODcxLC0xMj
+YyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYxLC03OTM4Mzk0
+NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMTEzNTQxMTI2LC
+02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4MzMsNDExODg3
+MzUxLDY0OTUzODg4NSwtMTMxODU1OTU0Niw4MTExOTY0MDgsLT
+E2NTE5NDE4MTEsLTU0ODQ1NTcwMSwtMTAzNjA1MTg3MiwtMTUx
+NDczNjc0OV19
 -->
