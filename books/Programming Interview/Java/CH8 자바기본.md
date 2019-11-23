@@ -84,7 +84,7 @@ String 클래스에서 String 객체 값을 변경하는 것처럼 보이는 모
 
 > 인터닝이란 무엇인가?
 
-
+String 리터럴은 실행할때 JVM이 특별히 관리를 한다. 클래스가 JVM에 로드되면 모든 리터럴이 상수 풀에 위치한다. 그리고 String 리터럴의 모든 반복은 풀안의 같은 상수를 참조하는데 이를 String Interning(인터닝) 이라 한다
 
 # 제네릭 이해하기
 
@@ -103,7 +103,7 @@ String 클래스에서 String 객체 값을 변경하는 것처럼 보이는 모
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQ2OTM4MzIsMTA2OTU1Mjk2MSwtMT
+eyJoaXN0b3J5IjpbLTEyNzk3NDMyNTksMTA2OTU1Mjk2MSwtMT
 UyNDcwNTI5NSwxMTEzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5
 NjcyMCw0MTk2MzA4MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMT
 MxODU1OTU0Niw4MTExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1
