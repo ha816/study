@@ -62,12 +62,6 @@ JVM에서 실행되는 모든 클래스는 Object를 상속하므로 final 메�
 
 hashCode와 equals 메서드 관계에서 반드시 지켜야하는 규칙은 두 메서드 중 하나를 오버라이딩 할때 반드시 둘다 함께 오버라이드 해야한다. 왜냐하면 HashSet 같은 경우, equals 메서드가 구현되어 있지 않아서, 그냥 쓰면 객체 참조 값만 비교 한다. 
 
-# 자바 배열
-
-> 자바에서는 배열을 어떻게 표현하는가?
-
-중요한 점은 자바에서 배열을 객체로 취급한다는 것이다. 배열은 toString()을 호출할수 있고 다양한 방법으로 이용이 가능하다. 
-
 # String 이용하기
 
 # 제네릭 이해하기
@@ -87,7 +81,7 @@ hashCode와 equals 메서드 관계에서 반드시 지켜야하는 규칙은 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzc3OTgyNzQsLTE1MjQ3MDUyOTUsMT
+eyJoaXN0b3J5IjpbLTE1NTkwODgyOTcsLTE1MjQ3MDUyOTUsMT
 ExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3MjAsNDE5NjMw
 ODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1NTk1NDYsOD
 ExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0NTU3MDEsLTEwMzYw
