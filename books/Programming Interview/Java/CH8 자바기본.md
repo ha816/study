@@ -72,6 +72,10 @@ JVM에서 실행되는 모든 클래스는 Object를 상속하므로 final 메�
 
 hashCode와 equals 메서드 관계에서 반드시 지켜야하는 규칙은 두 메서드 중 하나를 오버라이딩 할때 반드시 둘다 함께 오버라이드 해야한다. 왜냐하면 HashSet 같은 경우, equals 메서드가 구현되어 있지 않아서, 그냥 쓰면 객체 참조 값만 비교 한다. 
 
+> @Override 애노테이션은 어떤 역할을 하는가? 
+
+컴파일러에게 슈퍼 크
+
 # String 이용하기
 
 >String은 메모리에 어떻게 저장되는가?
@@ -129,11 +133,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMTY0MDA2NywxNjU4NzY2OTAwLDIxMT
-M3NjE4NzEsLTEyNjI3NzMxNTgsNjQwMzQ5NTkyLDE1OTkwMzUx
-NjEsLTc5MzgzOTQ3NCwxMDY5NTUyOTYxLC0xNTI0NzA1Mjk1LD
-ExMTM1NDExMjYsLTY2MDk5ODMwMiwtNzE3Mzk2NzIwLDQxOTYz
-MDgzMyw0MTE4ODczNTEsNjQ5NTM4ODg1LC0xMzE4NTU5NTQ2LD
-gxMTE5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1NzAxLC0xMDM2
-MDUxODcyXX0=
+eyJoaXN0b3J5IjpbNTEzMzYyMTkxLDE2NTg3NjY5MDAsMjExMz
+c2MTg3MSwtMTI2Mjc3MzE1OCw2NDAzNDk1OTIsMTU5OTAzNTE2
+MSwtNzkzODM5NDc0LDEwNjk1NTI5NjEsLTE1MjQ3MDUyOTUsMT
+ExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3MjAsNDE5NjMw
+ODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1NTk1NDYsOD
+ExMTk2NDA4LC0xNjUxOTQxODExLC01NDg0NTU3MDEsLTEwMzYw
+NTE4NzJdfQ==
 -->
