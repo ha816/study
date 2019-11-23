@@ -142,6 +142,11 @@ Error는 프로그램이 실행을 멈추게 되는 치명적이 오류로 대�
 ```
 public String getHostName() throws Exception
 ```
+위와 같은 명시는 예외가 발생했을때 무엇인 잘못되었는지 단서를 찾을 수 없다. 
+
+런타임 예외의 경우 메서드에 예외를 정의하는 것이나 다시 처리하는것 모두 선택 사항이다. 
+
+필자는 일반적으로 런타이므 예외를 선호한다. 하지만 클라이언트가 해당 메서드를 호추
 
 # 표준 라이브러리 사용하기 
 
@@ -150,7 +155,7 @@ public String getHostName() throws Exception
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzOTYyNTM4OSw5MDMxMzQ5NDQsLTQ4Nj
+eyJoaXN0b3J5IjpbMTk3MDE4MDkzMCw5MDMxMzQ5NDQsLTQ4Nj
 E4MTM2LDEwOTY0ODAxMzksMTY1ODc2NjkwMCwyMTEzNzYxODcx
 LC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYxLC03OT
 M4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMTEzNTQx
