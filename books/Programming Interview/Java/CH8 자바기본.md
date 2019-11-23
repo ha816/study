@@ -102,7 +102,9 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 클래스 B가 A를 확장하면 B는 A의 하위 타입이다. 하지만 List<B>는 List<A>의 하위 타입이 아니다. 공분산이라 알려진 자바의 제네릭 시스템이는 이에 관한 모델링 방법이 없다. 
 
-제네릭 타입을 다룰때는 때때로 클래스의 하위타입을 받아들여야 하는 경우도 있다. 
+제네릭 타입을 다룰때는 때때로 클래스의 하위타입을 받아들여야 하는 경우도 있다. 이럴때 `?`인 와이들 카드를 사용한다. 
+
+예를들어 List<? extends A>는 컴파일러에게 A 클래스를 확장한 모든 인스턴스를 List원소로가지는 매개변수 타입이다.  
 
 
 
@@ -121,11 +123,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMDAxODUzNiwtMTI2Mjc3MzE1OCw2ND
-AzNDk1OTIsMTU5OTAzNTE2MSwtNzkzODM5NDc0LDEwNjk1NTI5
-NjEsLTE1MjQ3MDUyOTUsMTExMzU0MTEyNiwtNjYwOTk4MzAyLC
-03MTczOTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1MSw2NDk1Mzg4
-ODUsLTEzMTg1NTk1NDYsODExMTk2NDA4LC0xNjUxOTQxODExLC
-01NDg0NTU3MDEsLTEwMzYwNTE4NzIsLTE1MTQ3MzY3NDksLTE0
-NDU3NTgwOTZdfQ==
+eyJoaXN0b3J5IjpbNjA2OTQzNTk3LC0xMjYyNzczMTU4LDY0MD
+M0OTU5MiwxNTk5MDM1MTYxLC03OTM4Mzk0NzQsMTA2OTU1Mjk2
+MSwtMTUyNDcwNTI5NSwxMTEzNTQxMTI2LC02NjA5OTgzMDIsLT
+cxNzM5NjcyMCw0MTk2MzA4MzMsNDExODg3MzUxLDY0OTUzODg4
+NSwtMTMxODU1OTU0Niw4MTExOTY0MDgsLTE2NTE5NDE4MTEsLT
+U0ODQ1NTcwMSwtMTAzNjA1MTg3MiwtMTUxNDczNjc0OSwtMTQ0
+NTc1ODA5Nl19
 -->
