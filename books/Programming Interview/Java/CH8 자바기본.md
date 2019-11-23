@@ -150,20 +150,24 @@ public String getHostName() throws Exception
 
 > try-with resource는 무엇인가?
 
-자바 7에서 추가된 try-with resource는 기존 try-catch-fi
+자바 7에서 추가된 try-with resource는 기존 try-catch-finally를 대체한다. try 뒤에 붙은 자원은 반드시 자원종료를 해주기 때문에 finally를 붙여 구구절절 처리를 해주지 않아도 된다. 
 
 # 표준 라이브러리 사용하기 
+
+> 왜 private인 필드가 변하지 않도록 하기 위해 final 키워드를 선언해야 하는가?
+
+
 
 # 자바 8
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MTk5OTkzOSw5MDMxMzQ5NDQsLTQ4Nj
-E4MTM2LDEwOTY0ODAxMzksMTY1ODc2NjkwMCwyMTEzNzYxODcx
-LC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYxLC03OT
-M4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMTEzNTQx
-MTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4MzMsND
-ExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1OTU0Niw4MTExOTY0
-MDhdfQ==
+eyJoaXN0b3J5IjpbLTIxMzMxOTM3NTksOTAzMTM0OTQ0LC00OD
+YxODEzNiwxMDk2NDgwMTM5LDE2NTg3NjY5MDAsMjExMzc2MTg3
+MSwtMTI2Mjc3MzE1OCw2NDAzNDk1OTIsMTU5OTAzNTE2MSwtNz
+kzODM5NDc0LDEwNjk1NTI5NjEsLTE1MjQ3MDUyOTUsMTExMzU0
+MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3MjAsNDE5NjMwODMzLD
+QxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1NTk1NDYsODExMTk2
+NDA4XX0=
 -->
