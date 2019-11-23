@@ -162,7 +162,7 @@ public String getHostName() throws Exception
 
 자바 컬렉션은 java.util 패키지에 포함된다. 자바 컬렉션 구조는 크게 Collection과 Map인터페이스가 있다. Collection에는 List인터페이스와 Set인터페이스가 있다. 
 
-그러나 Collection은 
+그러나 Collection과 Map은 서로 연결되어 있다 Map 인터페이스에는 Collection 인터페이스에서 Map 구성요소를 접근할 수 있는 entrySet, keySet 메서드가 있다. 
 
 
 # 자바 8
@@ -170,7 +170,7 @@ public String getHostName() throws Exception
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNDk1NDE1NCwtMjEzMzE5Mzc1OSw5MD
+eyJoaXN0b3J5IjpbMTUyMDU0OTg0MywtMjEzMzE5Mzc1OSw5MD
 MxMzQ5NDQsLTQ4NjE4MTM2LDEwOTY0ODAxMzksMTY1ODc2Njkw
 MCwyMTEzNzYxODcxLC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNT
 k5MDM1MTYxLC03OTM4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcw
