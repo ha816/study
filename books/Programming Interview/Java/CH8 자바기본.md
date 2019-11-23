@@ -56,6 +56,7 @@ static은 정적 변수와 메서드를 만드는데 사용하느 키워드이�
 다형성은 하나의 클래스가 수많은 클래스가 되도록 한다.
 상속은 부모클래스에서 행동과 정의를 가져와 사용할 수 있게 해준다. 이전 클래스의 행동과 정의를 가져와 새로운 행동을 추가하거나 기존 행동을 재정의(오버라이드)해서 사용이 가능하다. 
 
+> 객체의 일부 메섣
 # 자바 배열
 
 # String 이용하기
@@ -77,10 +78,10 @@ static은 정적 변수와 메서드를 만드는데 사용하느 키워드이�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MDk5ODMwMiwtNzE3Mzk2NzIwLDQxOT
-YzMDgzMyw0MTE4ODczNTEsNjQ5NTM4ODg1LC0xMzE4NTU5NTQ2
-LDgxMTE5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1NzAxLC0xMD
-M2MDUxODcyLC0xNTE0NzM2NzQ5LC0xNDQ1NzU4MDk2LDIxMzY1
-NDQyNTksNTI5OTc4NzAsNDAzNTI0MDAwLDgzMjg0NzY3OSwyMT
-M2NzU4NDA5XX0=
+eyJoaXN0b3J5IjpbMTM0MjEyNjM4NiwtNjYwOTk4MzAyLC03MT
+czOTY3MjAsNDE5NjMwODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUs
+LTEzMTg1NTk1NDYsODExMTk2NDA4LC0xNjUxOTQxODExLC01ND
+g0NTU3MDEsLTEwMzYwNTE4NzIsLTE1MTQ3MzY3NDksLTE0NDU3
+NTgwOTYsMjEzNjU0NDI1OSw1Mjk5Nzg3MCw0MDM1MjQwMDAsOD
+MyODQ3Njc5LDIxMzY3NTg0MDldfQ==
 -->
