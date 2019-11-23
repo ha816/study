@@ -98,6 +98,9 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 컬렉션 API에 있는 모든 클래스는 제네리릭을 사용해서 만들었다. List인터페이스와 그 구현은 한 가지 타입의 매개변수만 받는다. Map인터페이스는 두가지 타입 매개변수를 받는다. 
 
+> 타입의 변화는 제네릭에 어떤 영향을 미치는가? 
+
+
 
 
 # 오토박싱과 언박싱
@@ -115,11 +118,11 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjI3NzMxNTgsNjQwMzQ5NTkyLDE1OT
-kwMzUxNjEsLTc5MzgzOTQ3NCwxMDY5NTUyOTYxLC0xNTI0NzA1
-Mjk1LDExMTM1NDExMjYsLTY2MDk5ODMwMiwtNzE3Mzk2NzIwLD
-QxOTYzMDgzMyw0MTE4ODczNTEsNjQ5NTM4ODg1LC0xMzE4NTU5
-NTQ2LDgxMTE5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1NzAxLC
-0xMDM2MDUxODcyLC0xNTE0NzM2NzQ5LC0xNDQ1NzU4MDk2LDIx
-MzY1NDQyNTldfQ==
+eyJoaXN0b3J5IjpbOTI4NTkzNTE3LC0xMjYyNzczMTU4LDY0MD
+M0OTU5MiwxNTk5MDM1MTYxLC03OTM4Mzk0NzQsMTA2OTU1Mjk2
+MSwtMTUyNDcwNTI5NSwxMTEzNTQxMTI2LC02NjA5OTgzMDIsLT
+cxNzM5NjcyMCw0MTk2MzA4MzMsNDExODg3MzUxLDY0OTUzODg4
+NSwtMTMxODU1OTU0Niw4MTExOTY0MDgsLTE2NTE5NDE4MTEsLT
+U0ODQ1NTcwMSwtMTAzNjA1MTg3MiwtMTUxNDczNjc0OSwtMTQ0
+NTc1ODA5Nl19
 -->
