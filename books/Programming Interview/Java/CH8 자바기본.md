@@ -82,6 +82,10 @@ String 클래스에서 String 객체 값을 변경하는 것처럼 보이는 모
 
 이러한 불변성은 많은 장점이 있다. 하나는 스레드에 안전하다는 것이다. 참고로 String 뿐만 아니라 Integer, Double, Charactrer, BigInteger와 같은 모든 숫자형 클래스도 불변형이다. 
 
+> 인터닝이란 무엇인가?
+
+
+
 # 제네릭 이해하기
 
 # 오토박싱과 언박싱
@@ -99,11 +103,11 @@ String 클래스에서 String 객체 값을 변경하는 것처럼 보이는 모
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NDM1MzUxNSwxMDY5NTUyOTYxLC0xNT
-I0NzA1Mjk1LDExMTM1NDExMjYsLTY2MDk5ODMwMiwtNzE3Mzk2
-NzIwLDQxOTYzMDgzMyw0MTE4ODczNTEsNjQ5NTM4ODg1LC0xMz
-E4NTU5NTQ2LDgxMTE5NjQwOCwtMTY1MTk0MTgxMSwtNTQ4NDU1
-NzAxLC0xMDM2MDUxODcyLC0xNTE0NzM2NzQ5LC0xNDQ1NzU4MD
-k2LDIxMzY1NDQyNTksNTI5OTc4NzAsNDAzNTI0MDAwLDgzMjg0
-NzY3OV19
+eyJoaXN0b3J5IjpbLTE3MDQ2OTM4MzIsMTA2OTU1Mjk2MSwtMT
+UyNDcwNTI5NSwxMTEzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5
+NjcyMCw0MTk2MzA4MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMT
+MxODU1OTU0Niw4MTExOTY0MDgsLTE2NTE5NDE4MTEsLTU0ODQ1
+NTcwMSwtMTAzNjA1MTg3MiwtMTUxNDczNjc0OSwtMTQ0NTc1OD
+A5NiwyMTM2NTQ0MjU5LDUyOTk3ODcwLDQwMzUyNDAwMCw4MzI4
+NDc2NzldfQ==
 -->
