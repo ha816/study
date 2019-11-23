@@ -158,7 +158,9 @@ public String getHostName() throws Exception
 
 그런데 자바 relection을 쓰면 private 메서드도 사용이 가능하고 private 필드도 접근이 되고 심지어 final로 지정되어 값을 수정할 수 있다.
 
-> 다른 모든 컬렉션 API에서 상속되는 클래스는 어떤것이 이
+> 다른 모든 컬렉션 API에서 상속되는 클래스는 어떤것이 있나?
+
+자바 컬렉션은 java.util 패키지에 포함된다. 자바 컬렉션 구조는 크게 Collection과 Map인터페이스가 있다. Collection에는 List인터페이스와 Set인터페이스가 있다. 
 
 
 # 자바 8
@@ -166,11 +168,11 @@ public String getHostName() throws Exception
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNTkwMDMyMSwtMjEzMzE5Mzc1OSw5MD
-MxMzQ5NDQsLTQ4NjE4MTM2LDEwOTY0ODAxMzksMTY1ODc2Njkw
-MCwyMTEzNzYxODcxLC0xMjYyNzczMTU4LDY0MDM0OTU5MiwxNT
-k5MDM1MTYxLC03OTM4Mzk0NzQsMTA2OTU1Mjk2MSwtMTUyNDcw
-NTI5NSwxMTEzNTQxMTI2LC02NjA5OTgzMDIsLTcxNzM5NjcyMC
-w0MTk2MzA4MzMsNDExODg3MzUxLDY0OTUzODg4NSwtMTMxODU1
-OTU0Nl19
+eyJoaXN0b3J5IjpbLTEzNzI4OTU4MzIsLTIxMzMxOTM3NTksOT
+AzMTM0OTQ0LC00ODYxODEzNiwxMDk2NDgwMTM5LDE2NTg3NjY5
+MDAsMjExMzc2MTg3MSwtMTI2Mjc3MzE1OCw2NDAzNDk1OTIsMT
+U5OTAzNTE2MSwtNzkzODM5NDc0LDEwNjk1NTI5NjEsLTE1MjQ3
+MDUyOTUsMTExMzU0MTEyNiwtNjYwOTk4MzAyLC03MTczOTY3Mj
+AsNDE5NjMwODMzLDQxMTg4NzM1MSw2NDk1Mzg4ODUsLTEzMTg1
+NTk1NDZdfQ==
 -->
