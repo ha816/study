@@ -108,7 +108,9 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > 구상화한다는 건 어떤 의미인가? 
 
-본래 구상화 (reified)는 것은 실행 시에 이용할 수 있다는 것이다. 기본적으로 자바의 제네릭 타입은 구상화가 아니다. 
+본래 구상화 (reified)는 것은 실행 시에 이용할 수 있다는 것이다. **기본적으로 자바의 제네릭 타입은 구상화가 아니다.** 왜냐하면 .class 파일 정의의 일부가 아닌, 제네릭 매개변수를 직접 사용하는 구현 코드의 모든 타입 정보를 컴파일러가 확인하기 때문이다. 
+
+자바 디카
 
 
 # 오토박싱과 언박싱
@@ -126,7 +128,7 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODI0MjYxNywyMTEzNzYxODcxLC0xMj
+eyJoaXN0b3J5IjpbMTcwODMwODEwMywyMTEzNzYxODcxLC0xMj
 YyNzczMTU4LDY0MDM0OTU5MiwxNTk5MDM1MTYxLC03OTM4Mzk0
 NzQsMTA2OTU1Mjk2MSwtMTUyNDcwNTI5NSwxMTEzNTQxMTI2LC
 02NjA5OTgzMDIsLTcxNzM5NjcyMCw0MTk2MzA4MzMsNDExODg3
