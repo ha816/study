@@ -67,7 +67,7 @@ JUnit 실행기는 Runner 추상 클래스의 실제 구현이다. 따라서 Run
 사실 JUnit은 단위 테스트와 통합 테스트 모두에 사용 가능하여 JUnit(유닛)이라는 이름은 부적절할때가 있다. 
 클래스를 외부의존성을 귾기 위해서는 의존성 주입(Depencency Injection)과 목 두가지를 사용할 수 있으며 둘 사이에는 협력 관계가 있다. 
 
-mockito라는 자바 라이브러리 언어오 
+mockito라는 자바 라이브러리인데 목은 매우 유연하다. 다른 라이브러리들은 단지 목 인터페이스만 구현하지만 Mockito 목은 목을 구체적으로 구현한다.
 
 
 
@@ -76,7 +76,7 @@ mockito라는 자바 라이브러리 언어오
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcwNTQ1NzMyLC04MzQ3ODIzNiwtMTkzOT
-A5OTMzOSwtMTIzOTA5NDQ4OSwtMTU0NDkxNTQyNSwtMTc3NTY1
-MjczNCwxOTg0OTAyMzUzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEzNTAyMTUxODksLTgzNDc4MjM2LC0xOT
+M5MDk5MzM5LC0xMjM5MDk0NDg5LC0xNTQ0OTE1NDI1LC0xNzc1
+NjUyNzM0LDE5ODQ5MDIzNTMsNzMwOTk4MTE2XX0=
 -->
