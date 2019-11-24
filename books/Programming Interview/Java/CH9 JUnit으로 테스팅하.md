@@ -6,13 +6,12 @@
 
 JUnit 테스트는 보통 TDD(Test-Driven Development)라는 개발 방법론에 기반을 둔다. 코드가 어떻게 작동하길 바라는지에 관한 예상이나 가정을 기반으로 짧은 실행을 반복하는 테스트를 만드는 절차다.
 
-* 보통 테스트에 관한 코드가 처음부터 존재하지는 않는다. 그래서 테스트에는 문제가 발생할 수 있다.
-* 앞에서 설명한 것처럼 코드가 원하는 대로 작동 하는지에 관한 예상과 가정을 통해 테스트가 통과하도록 코드를 작성한다. 
+> JUnit 테스트는 어떻게 실행하는가?
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDk4OTU4NywtMTc3NTY1MjczNCwxOT
-g0OTAyMzUzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE1NDQ5MTU0MjUsLTE3NzU2NTI3MzQsMT
+k4NDkwMjM1Myw3MzA5OTgxMTZdfQ==
 -->
