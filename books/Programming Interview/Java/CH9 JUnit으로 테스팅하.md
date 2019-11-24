@@ -4,11 +4,11 @@
 
 > JUnit 테스트를 통해 얻는 가치는 무엇인가?
 
-JUnit 테스트는 보통 TDD(Test-Driven Development)라는 개발 방법론에 기반을 둔다. 코
+JUnit 테스트는 보통 TDD(Test-Driven Development)라는 개발 방법론에 기반을 둔다. 코드가 어떻게 작동하길 바라는지에 관한 예상이나 가정을 기반으로 짧은 실행을 반복하는 테스트를 만드는 절차다.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ0NTAyNzMyLC0xNzc1NjUyNzM0LDE5OD
-Q5MDIzNTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTk2NTU1NzQzNiwtMTc3NTY1MjczNCwxOT
+g0OTAyMzUzLDczMDk5ODExNl19
 -->
