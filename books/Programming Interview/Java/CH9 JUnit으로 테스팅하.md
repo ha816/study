@@ -35,11 +35,16 @@ JUnit 테스트는 독립적이고 원자적이어야만 한다.
 
 JUnit 라이브러리의 핵심 클래스 중 하나는 Assert 클래스다. 이 클래스는 가정을 표현하는데 사용하는 많은 정적 메서드가 있다. 그리고 가정이 참이라는 것을 증명한다. 
 
-* aasert
+* assertEquals 
+* assertTrue
+* assertNotNull
+* assertArrayEquals
+
+가정이 맞지 않으면 예외가 발생한다. 이미 예상 할 수 있는 예외가 아니라면 JUnit 테스트를 통과하지 못한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNjY2MjY1MSwtMTIzOTA5NDQ4OSwtMT
-U0NDkxNTQyNSwtMTc3NTY1MjczNCwxOTg0OTAyMzUzLDczMDk5
-ODExNl19
+eyJoaXN0b3J5IjpbLTEyMDE1MDg4NjEsLTEyMzkwOTQ0ODksLT
+E1NDQ5MTU0MjUsLTE3NzU2NTI3MzQsMTk4NDkwMjM1Myw3MzA5
+OTgxMTZdfQ==
 -->
