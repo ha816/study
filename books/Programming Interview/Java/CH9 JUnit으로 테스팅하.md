@@ -52,13 +52,18 @@ JUnit 라이브러리의 핵심 클래스 중 하나는 Assert 클래스다. 이
 
 >테스트가 예상시간 보다 오래 걸리면 테스트가 실패한것으로 취급하기
 
-@Test애노테이션은 두개의 매개변수를 받을 수 있다. 하나는 expected 또 하나는 timeout이다. timeout의 매개변수는 long타입 값을 
+@Test애노테이션은 두개의 매개변수를 받을 수 있다. 하나는 expected 또 하나는 timeout이다. timeout의 매개변수는 long타입 값을 받고 밀리세컨드가 단위다. 이 정해진 시간보다 오래 걸리면 테스트가 실패한다.
+
+>@RunWith 어노테이션은 어떻게 작동하는가?
+
+@RunWith 어노테이션은 클래스 수준의 어노테이션으로 테스트 실행기의 기본동작ㅇ
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM2NDAyODEwLC0xOTM5MDk5MzM5LC0xMj
-M5MDk0NDg5LC0xNTQ0OTE1NDI1LC0xNzc1NjUyNzM0LDE5ODQ5
-MDIzNTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTc4OTIwNjQzNiwtMTkzOTA5OTMzOSwtMT
+IzOTA5NDQ4OSwtMTU0NDkxNTQyNSwtMTc3NTY1MjczNCwxOTg0
+OTAyMzUzLDczMDk5ODExNl19
 -->
