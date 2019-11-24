@@ -29,10 +29,10 @@ JUnit 테스트는 독립적이고 원자적이어야만 한다.
 : 모든 테스트가 완료된 후에 실행 하는 메서드.
 
 
-@Ignore 어노테이션을 선언한 모든 테스트 메서드는 무시된다. 일부 테스트를 이 어
+@Ignore 어노테이션을 선언한 모든 테스트 메서드는 무시된다. 일부 테스트를 이 어노테이션으로 선언하려면 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NTM1Mzg0NywtMTU0NDkxNTQyNSwtMT
-c3NTY1MjczNCwxOTg0OTAyMzUzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEyMzkwOTQ0ODksLTE1NDQ5MTU0MjUsLT
+E3NzU2NTI3MzQsMTk4NDkwMjM1Myw3MzA5OTgxMTZdfQ==
 -->
