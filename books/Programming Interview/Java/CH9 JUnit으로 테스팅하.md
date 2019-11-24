@@ -42,9 +42,14 @@ JUnit 라이브러리의 핵심 클래스 중 하나는 Assert 클래스다. 이
 
 가정이 맞지 않으면 예외가 발생한다. 이미 예상 할 수 있는 예외가 아니라면 JUnit 테스트를 통과하지 못한다. 
 
+> 어떻게 특정 예외를 예상할 수 있는가?
+
+@Test 에노테이션의 매개변수는 이 테
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDE1MDg4NjEsLTEyMzkwOTQ0ODksLT
-E1NDQ5MTU0MjUsLTE3NzU2NTI3MzQsMTk4NDkwMjM1Myw3MzA5
-OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTEzMjU1ODc5NCwtMTIzOTA5NDQ4OSwtMT
+U0NDkxNTQyNSwtMTc3NTY1MjczNCwxOTg0OTAyMzUzLDczMDk5
+ODExNl19
 -->
