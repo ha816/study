@@ -62,6 +62,7 @@ JUnit 실행기는 Runner 추상 클래스의 실제 구현이다. 따라서 Run
 
 ## 목으로 의존성 제거하기
 
+> 단위 테스트와 통합 테스트의 차이는 무엇인가?
 
 
 
@@ -71,7 +72,7 @@ JUnit 실행기는 Runner 추상 클래스의 실제 구현이다. 따라서 Run
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MjIzNDI5MiwtMTkzOTA5OTMzOSwtMT
-IzOTA5NDQ4OSwtMTU0NDkxNTQyNSwtMTc3NTY1MjczNCwxOTg0
-OTAyMzUzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTgzNDc4MjM2LC0xOTM5MDk5MzM5LC0xMj
+M5MDk0NDg5LC0xNTQ0OTE1NDI1LC0xNzc1NjUyNzM0LDE5ODQ5
+MDIzNTMsNzMwOTk4MTE2XX0=
 -->
