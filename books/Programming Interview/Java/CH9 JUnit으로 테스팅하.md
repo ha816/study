@@ -16,10 +16,12 @@ JUnit 테스트는 보통 TDD(Test-Driven Development)라는 개발 방법론에
 테스트 클래스의 인스턴스 생성. 모든 자바 클래스 처럼 매개변수가 없는 단일 생성자를 선언한다. 
 
 @Before
-:  객체 생성이 끝난 후에 이 어노테이션과 void 타입을 반환하는 모든 public 메서드가 실행된다. 각
+:  객체 생성이 끝난 후에 이 어노테이션과 void 타입을 반환하는 모든 public 메서드가 실행된다. 대게 목(mock)객체나 상태를 갖는 객체처럼 모든 테스트에 공통으로 설정된다. 각 테스트 이전에 이 단계가 반복해서 수행하기 때문에 객체가 올바른 상태를 유지하는데 이용이 가능하다. 
+
+테스트가 수행된다. @Test 어노테이션으로 정의된 테스트는
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NjQ5ODU2MiwtMTU0NDkxNTQyNSwtMT
-c3NTY1MjczNCwxOTg0OTAyMzUzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNDAxNjEyODQ0LC0xNTQ0OTE1NDI1LC0xNz
+c1NjUyNzM0LDE5ODQ5MDIzNTMsNzMwOTk4MTE2XX0=
 -->
