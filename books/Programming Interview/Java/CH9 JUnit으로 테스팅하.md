@@ -9,6 +9,8 @@ JUnit 테스트는 보통 TDD(Test-Driven Development)라는 개발 방법론에
 ## JUnit 생명주기
 
 > JUnit 테스트를 실행할때 어떤 일이 일어나는가? 
+
+JUnit 테스트는 독립적이고 원자적이어야만 한다. 
  
 @BeforeClass
 : 이 어노테이션이 붙은 메서드는 public static이고 void 타입을 반환해야 한다. 클래스 (객체) 생성 전에 호출되므로 정적 메서드만 처리가 가능하다.
@@ -29,6 +31,6 @@ JUnit 테스트는 보통 TDD(Test-Driven Development)라는 개발 방법론에
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDk3MzM5OTgsLTE1NDQ5MTU0MjUsLT
-E3NzU2NTI3MzQsMTk4NDkwMjM1Myw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTAwMzU1ODM4OCwtMTU0NDkxNTQyNSwtMT
+c3NTY1MjczNCwxOTg0OTAyMzUzLDczMDk5ODExNl19
 -->
