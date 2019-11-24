@@ -29,10 +29,17 @@ JUnit 테스트는 독립적이고 원자적이어야만 한다.
 : 모든 테스트가 완료된 후에 실행 하는 메서드.
 
 
-@Ignore 어노테이션을 선언한 모든 테스트 메서드는 무시된다. 일부 테스트를 이 어노테이션으로 선언하려면 
+@Ignore 어노테이션을 선언한 모든 테스트 메서드는 무시된다. 일부 테스트를 이 어노테이션으로 선언하려면 정당한 이유가 있어야 한다. 왜 테스트를 무시하는지, 언제 어떻게 이 부분을 수정해야 하는지
+
+> 테스트가 성공인지 실패인지 어떻게 증명하는가? 
+
+JUnit 라이브러리의 핵심 클래스 중 하나는 Assert 클래스다. 이 클래스는 가정을 표현하는데 사용하는 많은 정적 메서드가 있다. 그리고 가정이 참이라는 것을 증명한다. 
+
+* aasert
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzkwOTQ0ODksLTE1NDQ5MTU0MjUsLT
-E3NzU2NTI3MzQsMTk4NDkwMjM1Myw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTAxNjY2MjY1MSwtMTIzOTA5NDQ4OSwtMT
+U0NDkxNTQyNSwtMTc3NTY1MjczNCwxOTg0OTAyMzUzLDczMDk5
+ODExNl19
 -->
