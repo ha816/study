@@ -48,13 +48,17 @@ JUnit 라이브러리의 핵심 클래스 중 하나는 Assert 클래스다. 이
 ```
 @Test(expected=NoSuchFileException.class)
 ```
-매개변수로 Exception같은 예외를 하면 어떤 예외도 통과하기 때문에 대부분 하나의 예외를 정ㅎ
+매개변수로 Exception같은 예외를 하면 어떤 예외도 통과하기 때문에 대부분 하나의 예외를 정확하게 처리한다. 
+
+>테스트가 예상시간 보다 오래 걸리면 테스트가 실패한것으로 취급하기?
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk3MjU2MjQ4LC0xMjM5MDk0NDg5LC0xNT
-Q0OTE1NDI1LC0xNzc1NjUyNzM0LDE5ODQ5MDIzNTMsNzMwOTk4
-MTE2XX0=
+eyJoaXN0b3J5IjpbLTE5MzkwOTkzMzksLTEyMzkwOTQ0ODksLT
+E1NDQ5MTU0MjUsLTE3NzU2NTI3MzQsMTk4NDkwMjM1Myw3MzA5
+OTgxMTZdfQ==
 -->
