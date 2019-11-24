@@ -58,14 +58,14 @@ JUnit 라이브러리의 핵심 클래스 중 하나는 Assert 클래스다. 이
 
 @RunWith 어노테이션은 클래스 수준의 어노테이션으로 테스트 실행기의 기본동작을 변경할 수 있다. 이 매개변수는 Runner 클래스의 하위 클래스다. JUnit은 기본적으로 몇가지 실행기가 있고 일반적으로 Parameterized 클래스다.
 
-
+JUnit 실행기는 Runner 추상 클래스의 실제 구현이다. 따라서 Runner 클래스를 직접 만
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgyNzgyOTUxLC0xOTM5MDk5MzM5LC0xMj
-M5MDk0NDg5LC0xNTQ0OTE1NDI1LC0xNzc1NjUyNzM0LDE5ODQ5
-MDIzNTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTAyMzgzNDk2MywtMTkzOTA5OTMzOSwtMT
+IzOTA5NDQ4OSwtMTU0NDkxNTQyNSwtMTc3NTY1MjczNCwxOTg0
+OTAyMzUzLDczMDk5ODExNl19
 -->
