@@ -44,12 +44,17 @@ JUnit 라이브러리의 핵심 클래스 중 하나는 Assert 클래스다. 이
 
 > 어떻게 특정 예외를 예상할 수 있는가?
 
-@Test 에노테이션의 매개변수는 이 테
+@Test 에노테이션의 매개변수는 이 테스트가 예외를 처리해야만 한다고 테스트 실행기에 알려준다. 
+```
+@Test(expected=NoSuchFileException.class)
+```
+매개변수로 Exception같은 예외를 하면 어떤 예외도 통과하기 때문에 대부분 하나의 예외를 정ㅎ
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMjU1ODc5NCwtMTIzOTA5NDQ4OSwtMT
-U0NDkxNTQyNSwtMTc3NTY1MjczNCwxOTg0OTAyMzUzLDczMDk5
-ODExNl19
+eyJoaXN0b3J5IjpbNjk3MjU2MjQ4LC0xMjM5MDk0NDg5LC0xNT
+Q0OTE1NDI1LC0xNzc1NjUyNzM0LDE5ODQ5MDIzNTMsNzMwOTk4
+MTE2XX0=
 -->
