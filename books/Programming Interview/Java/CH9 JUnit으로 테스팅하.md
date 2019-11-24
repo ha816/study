@@ -50,15 +50,15 @@ JUnit 라이브러리의 핵심 클래스 중 하나는 Assert 클래스다. 이
 ```
 매개변수로 Exception같은 예외를 하면 어떤 예외도 통과하기 때문에 대부분 하나의 예외를 정확하게 처리한다. 
 
->테스트가 예상시간 보다 오래 걸리면 테스트가 실패한것으로 취급하기?
+>테스트가 예상시간 보다 오래 걸리면 테스트가 실패한것으로 취급하기
 
-
+@Test애노테이션은 두개의 매개변수를 받을 수 있다. 하나는 expected 또 하나는 timeout이다. timeout의 매개변수는 long타입 값을 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzkwOTkzMzksLTEyMzkwOTQ0ODksLT
-E1NDQ5MTU0MjUsLTE3NzU2NTI3MzQsMTk4NDkwMjM1Myw3MzA5
-OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbOTM2NDAyODEwLC0xOTM5MDk5MzM5LC0xMj
+M5MDk0NDg5LC0xNTQ0OTE1NDI1LC0xNzc1NjUyNzM0LDE5ODQ5
+MDIzNTMsNzMwOTk4MTE2XX0=
 -->
