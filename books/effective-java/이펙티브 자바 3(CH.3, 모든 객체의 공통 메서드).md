@@ -14,7 +14,14 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 * 각 인스턴스가 본질적으로 고유하다. 값을 표현하는게 아니라 동작하는 개체를 표현하는 클래스가 해당된다. Thread가 좋은 예로, Object의 equals 메서드는 이러한 클래스에 딱 맞게 구현되었다.
 * 인스턴스의 논리적 동치성(logical equality)를 검사할 일이 없다. 예를 들어 regex.Pattern은 equals를 재정의해서 Pattern의 인스턴스가 같은 정규표현식을 나타내는지 검사하는, 즉 논리적 동치성을 검사하는데 애초에 이 방식이 필요하지 않다고 판단되면 Object의 기본 equals만으로도 해결된다.
 * 상위 클래스에서 재정의한 equals가 하위 클래스에도 딱 맞는다. 
-* 클래스가 private이거나 package-private이고 equals 메서드를 호출할 일이 없다.  
+* 클래스가 private이거나 package-private이고 equals 메서드를 호출할 일이 없다. 여러분이 위험을 철저히 하고 싶어서 equals가 실수로 라도 호출되는 걸 막고 싶다면 아래와 같은 코드를 넣자
+
+```
+@Override public boolean equals(Object o){
+	throw new AssertionError();
+}
+
+``` 
 
 
 
@@ -22,7 +29,7 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzIzMTI4NSwtOTI4MzUxOTA1LC02OD
-ExMTEzNzEsLTE4NTM2MzEzNDUsMTc5MTU4MTcyMywtNTgyMzI5
-NywtMTEyNDE2Mjc2MF19
+eyJoaXN0b3J5IjpbLTIwNzMwNzc2OTgsLTkyODM1MTkwNSwtNj
+gxMTExMzcxLC0xODUzNjMxMzQ1LDE3OTE1ODE3MjMsLTU4MjMy
+OTcsLTExMjQxNjI3NjBdfQ==
 -->
