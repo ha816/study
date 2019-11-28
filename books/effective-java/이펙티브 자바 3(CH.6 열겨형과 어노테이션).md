@@ -5,7 +5,7 @@
 - 열거 자료형(enum type) 새로운 종류 클래스
 - 어노테이션 자료형 새로운 종류 인터페이스
 
-### 30. int 상수 대신 enum을 사용해라
+### Item.30 int 상수 대신 enum을 사용해라
 
 열거 자료형(enumerated type) : 고정 개수의 상수들의 값으로 구성되는 자료형 
 
@@ -108,5 +108,6 @@ testRunner와 같은 프로그램에서 특별히 힌트를 주는 역활
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDA4MjQ5NzldfQ==
+eyJoaXN0b3J5IjpbLTE4MzMzNjE2NzYsLTEyNDA4MjQ5NzldfQ
+==
 -->
