@@ -23,8 +23,9 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 ``` 
 
 자 그럼 equals를 재정의 할땐 언제일까? 
-객체 식별성(object identify; 두 객체가 물리적으로 같은가)이 아니라 논리적 동치성(logical identify)를 확인해야하고 상위 클래스의 equals가 논리적 동치성을 비교하도록 재정의 되지 않았을때다. 
+**객체 식별성(object identify; 두 객체가 물리적으로 같은가)이 아니라 논리적 동치성(logical identify)를 확인해야하고 상위 클래스의 equals가 논리적 동치성을 비교하도록 재정의 되지 않았을때다.** 
 
+주로 값 클래스들이 여기에 해당한다. 값 클래스는 Integer와 String 같은 값을 표현하는 클래스를 말한다. 두 객체를 equals로 비교하는 프로그래머는 두 객체가 같은지가 아니라 객체의 값이 
 
 
 
@@ -32,8 +33,8 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg1NjYyMDM3LC03MTY1ODYwNzcsLTIwNz
-MwNzc2OTgsLTkyODM1MTkwNSwtNjgxMTExMzcxLC0xODUzNjMx
-MzQ1LDE3OTE1ODE3MjMsLTU4MjMyOTcsLTExMjQxNjI3NjBdfQ
-==
+eyJoaXN0b3J5IjpbLTQ1ODg5OTY4MSwtNzE2NTg2MDc3LC0yMD
+czMDc3Njk4LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMTg1MzYz
+MTM0NSwxNzkxNTgxNzIzLC01ODIzMjk3LC0xMTI0MTYyNzYwXX
+0=
 -->
