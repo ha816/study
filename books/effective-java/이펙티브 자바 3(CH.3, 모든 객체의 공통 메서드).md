@@ -33,7 +33,9 @@ equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 �
 
 * 반사성(reflexivity) : null이 아닌 모든 참조 값 x에 대해, x.equals(x)는 true.
 * 대칭성(symmetry) : null이 아닌 모든 참조 값 x,y에 대해 x.equals(y) == y.equals(x)를 만족한다.
-* 추이성(transitivity) : null이 아닌 모든 참조 값 x, y, z에 대해, x.equals(y), y.equals(z)가 true이면 
+* 추이성(transitivity) : null이 아닌 모든 참조 값 x, y, z에 대해, x.equals(y), y.equals(z)가 true이면 x.equals(z)도 true다.
+* 일관성(consistency) : null이 아닌 모든 참조 값 x,y에 대해, x.equals(y)를 반복해서 호출해도 항상 true이거나 false이다. 
+* 
 
 
 
@@ -43,7 +45,7 @@ equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0Mjg0MTQzLC03MTY1ODYwNzcsLTIwNz
+eyJoaXN0b3J5IjpbMTU5NzU0NDk0LC03MTY1ODYwNzcsLTIwNz
 MwNzc2OTgsLTkyODM1MTkwNSwtNjgxMTExMzcxLC0xODUzNjMx
 MzQ1LDE3OTE1ODE3MjMsLTU4MjMyOTcsLTExMjQxNjI3NjBdfQ
 ==
