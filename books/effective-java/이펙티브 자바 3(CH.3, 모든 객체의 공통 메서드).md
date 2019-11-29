@@ -20,8 +20,11 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 @Override public boolean equals(Object o){
 	throw new AssertionError();
 }
-
 ``` 
+
+자 그럼 equals를 재정의 할땐 언제일까? 
+객체 식별성(object identify; 두 객체가 물리적으로 같은가)이 아니라 논리적 동치서
+
 
 
 
@@ -29,7 +32,7 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzMwNzc2OTgsLTkyODM1MTkwNSwtNj
-gxMTExMzcxLC0xODUzNjMxMzQ1LDE3OTE1ODE3MjMsLTU4MjMy
-OTcsLTExMjQxNjI3NjBdfQ==
+eyJoaXN0b3J5IjpbLTEwMTcyMTk0NCwtMjA3MzA3NzY5OCwtOT
+I4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMTc5MTU4
+MTcyMywtNTgyMzI5NywtMTEyNDE2Mjc2MF19
 -->
