@@ -31,6 +31,7 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 조건을 만족해야 한다. 
 
+* 반사성(reflexivity) : null이 아닌 모든 참조 값 x
 
 
 
@@ -40,7 +41,7 @@ equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NTI5Mzk3MSwtNzE2NTg2MDc3LC0yMD
+eyJoaXN0b3J5IjpbLTEwMDM4NDY3MywtNzE2NTg2MDc3LC0yMD
 czMDc3Njk4LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMTg1MzYz
 MTM0NSwxNzkxNTgxNzIzLC01ODIzMjk3LC0xMTI0MTYyNzYwXX
 0=
