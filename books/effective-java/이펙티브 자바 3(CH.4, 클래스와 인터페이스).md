@@ -40,9 +40,10 @@ public으로 선언하면 공개 API가 되고, package-private으로 하면 해
 
 private의 일반적인 오해는 private으로 선언한 변수는 해당 인스턴스만 접근할 수 있다고 생각하는 것이다. 같은 인스턴스는 아니지만 같은 타입의 모든 인스턴스가 private 멤버 변수에 접근이 가능하다. 
 
-
-
-
+ - 객체 필드(instance field)는 절대로 public으로 선언하면 안된다.
+	 - 필드에 저장될 값을 제한할 수 없다; 불변식을 강제 불가
+	 - 변경가능 필드를 가진 클래스는 다중 스레드에 안전하지 않다.
+- 예외적으로 public static final은 사용 가능하나 참조하는 객체는 변경 불가능 객체로 만들어야 한다.
 
 ### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
 
@@ -174,8 +175,8 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQ1MTc2LDEzNzE2NzE3NzEsMzA0MT
-IzNzUwLDE0NzYyODcxODcsODY5ODMzNjcxLDEzMzM5ODkxNTUs
-LTIwNjg2NTE0MjIsLTE3NzI0MjM3MzIsLTE1ODM0MzIzMjNdfQ
-==
+eyJoaXN0b3J5IjpbMTM3MTY3MTc3MSwtMTI1NDUxNzYsMTM3MT
+Y3MTc3MSwzMDQxMjM3NTAsMTQ3NjI4NzE4Nyw4Njk4MzM2NzEs
+MTMzMzk4OTE1NSwtMjA2ODY1MTQyMiwtMTc3MjQyMzczMiwtMT
+U4MzQzMjMyM119
 -->
