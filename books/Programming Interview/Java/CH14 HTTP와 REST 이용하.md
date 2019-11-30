@@ -37,12 +37,14 @@ CONTENT
 HTTP메서드는 동사와 같은 역할을 한다. 웹 서버에 요청한 자원을 이용해서 무엇을 할지 알려주기 때문이다.  서버가 일반적으로 구현하는 메서드 중 HEAD, GET, POST는 필수적인 메서드이다. 
 
 HEAD
-: 
+: GET 요청과 비슷하지만 응답 코드와 헤더만 반환한다. 서버의 다운 여부 점검(Health Check)이나 웹 서버 정보(버전 등)등을 얻기 위해 사용될 수 있다.  
 
+POST와 PUT의 
+  
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NzQ0ODUyNCwtMTgzMjk4NTM3OCw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTIwNTczNDgwMzUsLTE4MzI5ODUzNzgsNz
+MwOTk4MTE2XX0=
 -->
