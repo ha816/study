@@ -45,11 +45,15 @@ POST와 PUT의 차이점이 혼란스러울수 있다. POST는 자원을 새로 
 
 ## HTTP 응답 코드
 
-응답 코드의 숫자는 첫번째 숫자에 따라 부  
+응답 코드의 첫번째 숫자에 따라 응답의 분류가 있는데, 2로 시작하는 코드는 요청과 응답이 성공적이라는 것을 알려준다. 
+
+* 201 Created: 주로 PUT요청이 성공했고 자원이 생성되었다는걸 말한다.
+* 
+  
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk4ODIyODAzLC0xODMyOTg1Mzc4LDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbMTQ0NjM4MjMyNSwtMTgzMjk4NTM3OCw3Mz
+A5OTgxMTZdfQ==
 -->
