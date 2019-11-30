@@ -26,7 +26,8 @@ CONTENT
 </html>
 ```
 
-
+첫번째 행 HTTP/1.0 200 OK은 1.0버전의 HTTP 프로토콜을 잉요하여 클라이언트에 응답을 하고 성공적인 응답인 200 OK 결과를 보낸다.(이 서버는 1.1버전의 요청을 받아들인 후 1.0응답으로 응답한다)
+두번째 행 부터는 응답에 대한 
 
 
 
@@ -38,6 +39,6 @@ CONTENT
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNDc2OTg1NiwtMTgzMjk4NTM3OCw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbODc0MTcxMTcyLC0xODMyOTg1Mzc4LDczMD
+k5ODExNl19
 -->
