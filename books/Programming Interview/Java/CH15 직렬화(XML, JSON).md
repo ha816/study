@@ -23,12 +23,14 @@ SerialVersionUID
 직렬화가 가능한 클래스는 클래스 고유의 UID를 필드에 선언이 가능한데, 반드시 정적이고 final 키워드를 붙이고 long 타입이어야 한다. 
 UID를  명시하지 않아도 직렬화시 자동으로 환경에 따라서 UID를 선언한다. 그러나 모든 직렬화 가능 클래스는 UID를 명시적으로 선언하도록 하자. 왜냐하면 자동으로 UID를 계산하는 과정이 다양한 환경에 따라 매우 민감하기 때문이다. 
 
-# XML(eXtended Markup Langu
+# XML(eXtensible Markup Language)
 
-도메인 객체를 정의하는 데 많이 사용하는 다른 표기법은 XML이다.
+도메인 객체를 정의하는 데 많이 사용하는 다른 표기법은 XML이다. XML을 데이터를 구조화하는데 표현하는 언어로 대부분의 언어에서 XML을 파싱하고 기록하는 라이브러리들이 많다.
+
+메타언어인 XSD(XML Schema Definition)은 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg4OTc4NjY4XX0=
+eyJoaXN0b3J5IjpbLTEzNTAxNzkzNDVdfQ==
 -->
