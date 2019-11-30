@@ -41,12 +41,15 @@ HEAD
 
 POST와 PUT의 차이점이 혼란스러울수 있다. POST는 자원을 새로 생성하고 PUT은 기존 자원이 없으면 새로 생성하고 있으면 덮어쓴다. 다른 말로는 PUT은 **멱등성**(idempotent)은 따르고 POST는 따르지 않는다. 
 
-추가적으로 HTTP 명세에서는 OPTIONS라는 메서드를 구현하라고 강조하는데, 이 메서드는 클라이언트 입장에서 어떤 메서드를 사용할 수 있는지 
-  
+추가적으로 HTTP 명세에서는 OPTIONS라는 메서드를 구현하라고 강조하는데, 이 메서드는 클라이언트 입장에서 어떤 메서드를 사용할 수 있는지 알려주는 메서드이다. 
+
+## HTTP 응답 코드
+
+응답 코드의 숫자는 첫번째 숫자에 따라 부  
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODA5NzMwLC0xODMyOTg1Mzc4LDczMD
+eyJoaXN0b3J5IjpbOTk4ODIyODAzLC0xODMyOTg1Mzc4LDczMD
 k5ODExNl19
 -->
