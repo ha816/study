@@ -67,11 +67,14 @@ REpresentational State Transrfer 줄여서 REST라고 부른다. 사전적 의�
 
 REST의 목적 중 하나는 이미 널리 퍼져 사용하는 HTTP 프로토콜을 사용하여 손쉽게 시스텀간 API 통신을 하도록 돕는 것이다. 
 
-REST URI는 하나의 자원 또는 다수의 자원의 묶음을 말한다.   
+REST URI는 하나의 자원 또는 다수의 자원의 묶음을 말한다. 예를들어 user/1234는 ID가 1234인 사용자의 세부정보. /users는 모든 사용자의 목록일것으로 생각할 수 있다. 
+
+> ㄱ
+  
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxODcyOTc2NSwtMTQzNjQ0MzUzMCwtMT
-I3MTMxNTMyMiwtMTgzMjk4NTM3OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE4NDQ5OTU1NTgsLTE0MzY0NDM1MzAsLT
+EyNzEzMTUzMjIsLTE4MzI5ODUzNzgsNzMwOTk4MTE2XX0=
 -->
