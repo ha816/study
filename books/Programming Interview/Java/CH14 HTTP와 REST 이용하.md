@@ -63,15 +63,15 @@ POST와 PUT의 차이점이 혼란스러울수 있다. POST는 자원을 새로 
 
 # REST(Representational State Transfer)
 
-REpresentational State Transrfer 줄여서 REST라고 부른다. 사전적 의미로 보면 '대의적인 상태 전송'
-REST는 시스템간 API를 만드는데 HTTP를 활용하도록 하는 규격이다. 
+REpresentational State Transrfer 줄여서 REST라고 부른다. 사전적 의미로 보면 '대세의 추상적 상태 전송'인데 사실 와닿는 말은 아니다. 그보다는 REST를 아래와 같은 의미로 이해하도록 하자. **REST는 시스템간 API를 만드는데 HTTP를 활용하도록 하는 규격이다.** 
 
 REST의 목적 중 하나는 이미 널리 퍼져 사용하는 HTTP 프로토콜을 사용하여 손쉽게 시스텀간 API 통신을 하도록 돕는 것이다. 
-  
+
+REST URI는 하나의 자원 또는 다수의 자원의 묶음을 말한다.   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjYzMzk3MDUsLTE0MzY0NDM1MzAsLT
-EyNzEzMTUzMjIsLTE4MzI5ODUzNzgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTIxODcyOTc2NSwtMTQzNjQ0MzUzMCwtMT
+I3MTMxNTMyMiwtMTgzMjk4NTM3OCw3MzA5OTgxMTZdfQ==
 -->
