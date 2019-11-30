@@ -27,10 +27,10 @@ UID를  명시하지 않아도 직렬화시 자동으로 환경에 따라서 UID
 
 도메인 객체를 정의하는 데 많이 사용하는 다른 표기법은 XML이다. XML을 데이터를 구조화하는데 표현하는 언어로 대부분의 언어에서 XML을 파싱하고 기록하는 라이브러리들이 많다.
 
-메타언어인 XSD(XML Schema Definition)은 
+메타언어인 XSD(XML Schema Definition)은 XML문서를 작성
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTAxNzkzNDVdfQ==
+eyJoaXN0b3J5IjpbLTMwNzU2ODY4Ml19
 -->
