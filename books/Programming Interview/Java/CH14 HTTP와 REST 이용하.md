@@ -22,8 +22,9 @@ X-Content-Type
 </html>
 ```
 `GET / HTTP/1.1` 의 의미는 순서대로 Get메서드를 이용해서 '/' 페이지를 얻고 '1.1'버전의 HTTP을 사용한다라는 의미이다. 
-다음으로 키-값형태의 헤더들은 GET아래 줄부터 시작된다.
+다음으로 키-값형태의 헤더들은 GET 아래 줄부터 시작된다.
 
+키값 형태의 헤더들에는 어떤 형식의 응답을 
  
 
 ## HTTP 메서드
@@ -32,5 +33,5 @@ X-Content-Type
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTk2MDMxODEsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE2Mjk3NjQ4MDYsNzMwOTk4MTE2XX0=
 -->
