@@ -33,7 +33,9 @@ UID를  명시하지 않아도 직렬화시 자동으로 환경에 따라서 UID
 자바에는 XSD 표현을 이해해서 자바 객체를 생성할 수 있는 JAXB라는 라이브러리가 있다. 
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk2MzkzMDA3XX0=
+eyJoaXN0b3J5IjpbMTU4NDc0MTc3MV19
 -->
