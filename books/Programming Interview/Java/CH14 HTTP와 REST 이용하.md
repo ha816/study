@@ -69,14 +69,16 @@ REST의 목적 중 하나는 이미 널리 퍼져 사용하는 HTTP 프로토콜
 
 **REST URI는 하나의 자원 또는 다수의 자원의 묶음을 말한다.** 예를 들어 user/1234는 ID가 1234인 사용자의 세부정보. /users는 모든 사용자의 목록일것으로 생각할 수 있다. 
 
-> REST 서비스를 어떻게 구현할까?
 
 잘 알려진 프레임워크에서는 모두 REST 서비스를 생성할 수 있다. 
+REST 서비스의 중요한 기능하나는 또 멱등성의 개념인데 
+
+
   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDYwNTc2NTMsLTE0MzY0NDM1MzAsLT
-EyNzEzMTUzMjIsLTE4MzI5ODUzNzgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTI2NDEzMjU0NCwtMTQzNjQ0MzUzMCwtMT
+I3MTMxNTMyMiwtMTgzMjk4NTM3OCw3MzA5OTgxMTZdfQ==
 -->
