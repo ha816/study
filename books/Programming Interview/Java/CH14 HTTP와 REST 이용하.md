@@ -6,11 +6,21 @@ HTTP(Hyper Text Transfer Protocol)는 인터넷을 통해 데이터를 주고 �
 
 탐캣과 같은 HTTP 서버는 요청을 체계적으로 처리하여 적절한 응답을 한다. 
 
+## HTTP 요청
+
+```
+GET /HTTP/1.1
+
+HTTP/1.0 200 OK
+Server
+
+```
+
 ## HTTP 메서드
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMDM4MDI4Myw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEyMDc3NTE3NDMsNzMwOTk4MTE2XX0=
 -->
