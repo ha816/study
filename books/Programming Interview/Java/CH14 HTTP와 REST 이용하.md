@@ -45,15 +45,19 @@ POST와 PUT의 차이점이 혼란스러울수 있다. POST는 자원을 새로 
 
 ## HTTP 응답 코드
 
-응답 코드의 첫번째 숫자에 따라 응답의 분류가 있는데, 2로 시작하는 코드는 요청과 응답이 성공적이라는 것을 알려준다. 
+응답 코드의 첫번째 숫자에 따라 응답의 분류가 있는데, 2XX로 시작하는 코드는 요청과 응답이 성공적이라는 것을 알려준다. 
 
 * 201 Created: 주로 PUT요청이 성공했고 자원이 생성되었다는걸 말한다.
-* 
+* 204 Content: 요청은 성공했지만, 서버는 추가 컨텐츠 정보를 제공하지 않는다. 보통 PUT, POST, DELETE에 성공했을때 사용한다.
+
+4XX는 클라이언트의 에러, 즉 요청이 잘못되었다는것을 뜻한다. 
+* 400 Bad: 주로 PUT요청이 성공했고 자원이 생성되었다는걸 말한다.
+
   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NjM4MjMyNSwtMTgzMjk4NTM3OCw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE5Mzc0MzM4NDEsLTE4MzI5ODUzNzgsNz
+MwOTk4MTE2XX0=
 -->
