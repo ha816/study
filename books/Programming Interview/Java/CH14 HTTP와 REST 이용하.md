@@ -14,7 +14,7 @@ GET / HTTP/1.1
 
 HTTP/1.0 200 OK
 Server: Apache
-X-Content-Type: notsniff
+X-Content-Type: nosniff
 ...
 
 <!DOCTYPE html>
@@ -26,6 +26,7 @@ X-Content-Type: notsniff
 
 
 
+
  
 
 ## HTTP 메서드
@@ -34,5 +35,6 @@ X-Content-Type: notsniff
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzI5ODUzNzgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTU5MzU4NTg0LC0xODMyOTg1Mzc4LDczMD
+k5ODExNl19
 -->
