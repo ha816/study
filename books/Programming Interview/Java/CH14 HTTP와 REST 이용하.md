@@ -12,9 +12,11 @@ HTTP(Hyper Text Transfer Protocol)는 인터넷을 통해 데이터를 주고 �
 GET /HTTP/1.1
 
 HTTP/1.0 200 OK
-Server
-
+Server: Apache
+X-Content-Type
+...
 ```
+Get / HTTP/1.1을 입력하면 Get메서드를 통해 페이지를 
 
 ## HTTP 메서드
 
@@ -22,5 +24,5 @@ Server
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDc3NTE3NDMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE3MTMxNDMwMDcsNzMwOTk4MTE2XX0=
 -->
