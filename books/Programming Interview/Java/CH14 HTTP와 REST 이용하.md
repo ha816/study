@@ -51,13 +51,16 @@ POST와 PUT의 차이점이 혼란스러울수 있다. POST는 자원을 새로 
 * 204 Content: 요청은 성공했지만, 서버는 추가 컨텐츠 정보를 제공하지 않는다. 보통 PUT, POST, DELETE에 성공했을때 사용한다.
 
 4XX는 클라이언트의 에러, 즉 요청이 잘못되었다는것을 뜻한다. 
-* 400 Bad: 주로 PUT요청이 성공했고 자원이 생성되었다는걸 말한다.
+* 400 Bad Request: 클라이언트가 잘못된 요청을 보냈다. 보통 필수적인 파라미터를 뺀경우 많이 발생한다.
+* 403 Forbidden: 로그인했지만 주어진 자원을 요청할 권한이 없음
+* 404 Not Found: 요청한 자원이 존재하지 않음
+* 405 Method Not Allowed: 지원하지 않는 HTTP 메서드를 이용ㅎ
 
   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzc0MzM4NDEsLTE4MzI5ODUzNzgsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMjIyMzU1NTEzLC0xODMyOTg1Mzc4LDczMD
+k5ODExNl19
 -->
