@@ -19,6 +19,8 @@ HTTP 응답은 아래와 같다. 응답의 경우 크게 헤더와 컨텐츠로 
 HTTP/1.0 200 OK
 Server: Apache
 X-Content-Type: nosniff
+Content-Length: 6071
+Content-Type: text/html; charset=utf-8
 ...
 <!DOCTYPE html>
 ...
@@ -27,7 +29,8 @@ CONTENT
 ```
 
 첫번째 행 HTTP/1.0 200 OK은 1.0버전의 HTTP 프로토콜을 잉요하여 클라이언트에 응답을 하고 성공적인 응답인 200 OK 결과를 보낸다.(이 서버는 1.1버전의 요청을 받아들인 후 1.0응답으로 응답한다)
-두번째 행 부터는 응답에 대한 
+두번째 행 부터는 응답에 대한 관련 메타 데이터가 있는 응답헤더들이다. 
+위의 예엣
 
 
 
@@ -39,6 +42,6 @@ CONTENT
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc0MTcxMTcyLC0xODMyOTg1Mzc4LDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbMjE0NDk5ODk2OCwtMTgzMjk4NTM3OCw3Mz
+A5OTgxMTZdfQ==
 -->
