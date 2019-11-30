@@ -34,12 +34,15 @@ CONTENT
 
 ## HTTP 메서드
 
-HTTP메서드는 동사와 같은 역할을 한다. 웹 서버에 요청한 자원을 
+HTTP메서드는 동사와 같은 역할을 한다. 웹 서버에 요청한 자원을 이용해서 무엇을 할지 알려주기 때문이다.  서버가 일반적으로 구현하는 메서드 중 HEAD, GET, POST는 필수적인 메서드이다. 
+
+HEAD
+: 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAwMjQ3MDI3LC0xODMyOTg1Mzc4LDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbMjA1NzQ0ODUyNCwtMTgzMjk4NTM3OCw3Mz
+A5OTgxMTZdfQ==
 -->
