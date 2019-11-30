@@ -8,6 +8,7 @@ HTTP(Hyper Text Transfer Protocol)는 인터넷을 통해 데이터를 주고 �
 
 ## HTTP 요청
 
+HTTP 요청은 크게 헤더와 컨텐츠로 나누어진다. 
 ```
 GET / HTTP/1.1
 
@@ -15,8 +16,15 @@ HTTP/1.0 200 OK
 Server: Apache
 X-Content-Type
 ...
+
+<!DOCTYPE html>
+...CONTENT
+</html>
 ```
-`GET / HTTP/1.1` 의 의미는 순서대로 Get메서드를 이용해서 '/' 페이지를 얻고 '1.1'버전의 HTTP을 사용한다라는 의미ㅣ
+`GET / HTTP/1.1` 의 의미는 순서대로 Get메서드를 이용해서 '/' 페이지를 얻고 '1.1'버전의 HTTP을 사용한다라는 의미이다. 
+다음으로 키-값형태의 헤더들은 GET아래 줄부터 시작된다.
+
+ 
 
 ## HTTP 메서드
 
@@ -24,5 +32,5 @@ X-Content-Type
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNzA5ODQ0Nyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE5OTk2MDMxODEsNzMwOTk4MTE2XX0=
 -->
