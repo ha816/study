@@ -61,12 +61,16 @@ POST와 PUT의 차이점이 혼란스러울수 있다. POST는 자원을 새로 
 * 500 Internal Server Error: 일반적인 메세지로, 보통 전체 서버를 이용할수 없는 상황이 아니라 일부의 자원만 이용할 수 없을때 발생한다.
 * 503 Service Unavailable: 현재 서버를 이용할 수 없다. 일시적인 중단 상태이다. 
 
+## HTTP 클라이언트
+
+
+
 
   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwODE5MzQ0MiwtMTgzMjk4NTM3OCw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMjQwMjI4OTAyLC0xODMyOTg1Mzc4LDczMD
+k5ODExNl19
 -->
