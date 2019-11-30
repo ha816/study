@@ -39,12 +39,12 @@ HTTP메서드는 동사와 같은 역할을 한다. 웹 서버에 요청한 자�
 HEAD
 : GET 요청과 비슷하지만 응답 코드와 헤더만 반환한다. 서버의 다운 여부 점검(Health Check)이나 웹 서버 정보(버전 등)등을 얻기 위해 사용될 수 있다.  
 
-POST와 PUT의 
+POST와 PUT의 차이점이 혼란스러울수 있다. POST는 컨텐츠를 생성하는데 기존 자원이 존재하면 덮어쓰는데 PUT을 사용한다. 
   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTczNDgwMzUsLTE4MzI5ODUzNzgsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTMwNjc5Njc3NywtMTgzMjk4NTM3OCw3Mz
+A5OTgxMTZdfQ==
 -->
