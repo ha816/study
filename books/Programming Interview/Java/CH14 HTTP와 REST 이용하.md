@@ -63,12 +63,14 @@ POST와 PUT의 차이점이 혼란스러울수 있다. POST는 자원을 새로 
 
 # REST(Representational State Transfer)
 
-REpresentational State Transrfer 줄여서 REST라고 부른다. REST는 HTTP를 활용하여 시스템 사이에 API를  제공하는 규격이다. 
+REpresentational State Transrfer 줄여서 REST라고 부른다. REST는 시스템간 API를 만드는데 HTTP를 잘 활용할수 있도록 하는 규격이다. 
+
+즉 
   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NzI3OTQzOSwtMTI3MTMxNTMyMiwtMT
-gzMjk4NTM3OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbOTkyNzQ1ODU4LC0xMjcxMzE1MzIyLC0xOD
+MyOTg1Mzc4LDczMDk5ODExNl19
 -->
