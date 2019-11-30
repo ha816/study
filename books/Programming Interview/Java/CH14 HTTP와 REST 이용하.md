@@ -54,13 +54,18 @@ POST와 PUT의 차이점이 혼란스러울수 있다. POST는 자원을 새로 
 * 400 Bad Request: 클라이언트가 잘못된 요청을 보냈다. 보통 필수적인 파라미터를 뺀경우 많이 발생한다.
 * 403 Forbidden: 로그인했지만 주어진 자원을 요청할 권한이 없음
 * 404 Not Found: 요청한 자원이 존재하지 않음
-* 405 Method Not Allowed: 지원하지 않는 HTTP 메서드를 이용ㅎ
+* 405 Method Not Allowed: 지원하지 않는 HTTP 메서드를 이용
+
+5XX는 서버측에 문제가 있다는 응답이다. 대개는 서버에서 조취를 취해줘야 예외상황이 해결된다. 
+
+* 500 Internal Server Error: 일반적인 메세지로, 보통 전체
+
 
   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyMzU1NTEzLC0xODMyOTg1Mzc4LDczMD
+eyJoaXN0b3J5IjpbNTAyNjk1MDA4LC0xODMyOTg1Mzc4LDczMD
 k5ODExNl19
 -->
