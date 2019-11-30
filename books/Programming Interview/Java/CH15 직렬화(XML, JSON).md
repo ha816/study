@@ -34,6 +34,9 @@ UID를  명시하지 않아도 직렬화시 자동으로 환경에 따라서 UID
 
 # JSON(Javascript Object Notation)
 
+JSON은 자바스크립트에서 유래되었고 XML보다 구문이 적어 부담이 덜해 많이 사용된다.
+문자열은 따옴표로 둘러싸인 텍스트고 실수와 정수는 차이가 없다. boolean 값으로 true와 false가 사용할 수 있다. 
+리스트는 
 
 
 
@@ -41,5 +44,5 @@ UID를  명시하지 않아도 직렬화시 자동으로 환경에 따라서 UID
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NTI1MzA1M119
+eyJoaXN0b3J5IjpbLTE0NDk1OTU5OTNdfQ==
 -->
