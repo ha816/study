@@ -33,10 +33,11 @@ public class PoolingDateSourceCofig {
 		@Value("${database.url}") String url,
 		...
 		) {
-	
+		BasicDataSoucre dataSource= new BasicDataSource();
+		dataSource.setDriverClassName(driverClassName);
+		...
+		return dataSource;
 	}
-	)
-
 }
 
 
@@ -49,5 +50,5 @@ public class PoolingDateSourceCofig {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2Mzg3MjEyXX0=
+eyJoaXN0b3J5IjpbOTIxOTQzOTEyXX0=
 -->
