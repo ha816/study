@@ -235,8 +235,14 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 <beans ...>
 	<import resource="classpath:java.properties">
 	<bean id="transactionManager" class="org. ... DataSourceTransactionManager">
-		<property name = "dataSource" ref="dataSource"
+		<property name = "dataSource" ref="dataSource" />
 	</bean>
+	<tx:advice id="txAdvice">
+		<tx:attributes>
+			<tx:attributes>
+		</tx:attributes>
+	</tx:advice>
+
 </beans>
 
 ```
@@ -255,10 +261,10 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM3NzI2NzI5LC02MzUxODg0MjIsLTUxOD
-IzNDU0LDE4NTQ4NzI0MDMsLTE1NjU3MDA4NTgsNjc5ODc1NDI1
-LDExODA1ODczODgsMTM2MDEzMjkyNCwtNjA3Nzk1MjI4LC00ND
-QyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5
-NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksOD
-A0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbNzUwMTA3NDcsLTYzNTE4ODQyMiwtNTE4Mj
+M0NTQsMTg1NDg3MjQwMywtMTU2NTcwMDg1OCw2Nzk4NzU0MjUs
+MTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUyMjgsLTQ0ND
+I4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5MTk0
+MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOSw4MD
+Q2NDU4NDAsMTA1ODk1MTczMF19
 -->
