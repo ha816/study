@@ -229,7 +229,14 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트랜잭션 전용 XML 스키마를 사용한다.**
 
-동작 로직은 @Transactional을 이용한 트랜잭션과 같지만 차이점은 @Transactional 애너테이션이 어이데오 부여되지 않았다는 점이다. @Transactional 과 마찬가지로 Transactional 
+동작 로직은 @Transactional을 이용한 트랜잭션과 같지만 차이점은 @Transactional 애너테이션이 어이데오 부여되지 않았다는 점이다. @Transactional 과 마찬가지로 TransactionalManager 빈을 정의한다. 
+
+```
+<beans ...>
+	<import resource="classpath:java"
+</beans>
+
+```
 
 
 
@@ -245,10 +252,10 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4NjU1MDQsLTYzNTE4ODQyMiwtNTE4Mj
-M0NTQsMTg1NDg3MjQwMywtMTU2NTcwMDg1OCw2Nzk4NzU0MjUs
-MTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUyMjgsLTQ0ND
-I4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5MTk0
-MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOSw4MD
-Q2NDU4NDAsMTA1ODk1MTczMF19
+eyJoaXN0b3J5IjpbMTgyNzgwMDc4MCwtNjM1MTg4NDIyLC01MT
+gyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQy
+NSwxMTgwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtND
+Q0MjgyNjY0LDE1Nzc3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkx
+OTQzNiwtNzg4MDIwMTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LD
+gwNDY0NTg0MCwxMDU4OTUxNzMwXX0=
 -->
