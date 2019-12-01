@@ -101,9 +101,11 @@ XML 기반 설정방식
 
 ## JdbcTemplate 
 
+스프링 JDBC는 JdbcTemplate, ParameterJdbcTemplate와 같이 SQL만 가지고도 데이터베이스를 쉽게 다를 수 있게 도와주는 클래스를 제공한다. 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjkyODMxMDEsLTU2MjM0NTkwOSw4MD
-Q2NDU4NDAsMTA1ODk1MTczMF19
+eyJoaXN0b3J5IjpbMjAzMjY0OTEwOSwtNTYyMzQ1OTA5LDgwND
+Y0NTg0MCwxMDU4OTUxNzMwXX0=
 -->
