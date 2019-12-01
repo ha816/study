@@ -109,7 +109,7 @@ JdbcTemplate이 제공하는 주요 메서드
 
 |메서드명| 설명 |
 |--|--|
-|queryForObject  |  |
+|queryForObject  | 하나의 결과 |
 
 
 
@@ -117,7 +117,7 @@ JdbcTemplate이 제공하는 주요 메서드
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODM1MDA3NCwtMjUxOTE5NDM2LC03OD
+eyJoaXN0b3J5IjpbMTY4MjAxNDc1OCwtMjUxOTE5NDM2LC03OD
 gwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQw
 LDEwNTg5NTE3MzBdfQ==
 -->
