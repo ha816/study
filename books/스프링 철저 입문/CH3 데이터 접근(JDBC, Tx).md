@@ -167,7 +167,9 @@ RowCallbackHandler
 
 ## 트랜잭션 관리
 
-관계형 DB를 다룰때 트랜잭션의 경계가 어디까지이고 어떻게 관리되는지 이해하고 있어야 한다. 실제로 트랜잭션을 염두에 두고 관련 코드를 구현하는 것은 상당히 힘들도 번거로울 수 
+관계형 DB를 다룰때 트랜잭션의 경계가 어디까지이고 어떻게 관리되는지 이해하고 있어야 한다. 실제로 트랜잭션을 염두에 두고 관련 코드를 구현하는 것은 상당히 힘들도 번거로울 수 있는데, 다행이 스프링은 이를 도와주는 기능이 있다. 
+
+스프링 트랜잭션 처리에 중심이 되는 인터페이스는 PlatformTransactionManager이다. 이 인터페이스는 트랜잭션 처리에 필요한 API를 제공하며 개발자가 API를 호출하여 트랜잭션 조작이 가능하다. PlatformTransactionManager은 트랜잭션 관리의 구현 방식을 추상화하기 위
 
 
 
@@ -178,8 +180,8 @@ RowCallbackHandler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MTU5MDUzMywtNDQ0MjgyNjY0LDE1Nz
-c3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIw
-MTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMD
-U4OTUxNzMwXX0=
+eyJoaXN0b3J5IjpbLTEzOTg5MjkwMjIsLTQ0NDI4MjY2NCwxNT
+c3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5MTk0MzYsLTc4ODAy
+MDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMT
+A1ODk1MTczMF19
 -->
