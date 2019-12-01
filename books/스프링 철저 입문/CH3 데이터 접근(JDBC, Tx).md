@@ -133,7 +133,7 @@ public class JdbcRoomDao {
 
 ```
 <beans xlms =... >
-	<import resource="classpath:datesource-embedded.xml" />
+	<import resource="classpath:" />
 	<context:component-scan base-package="com.example" />
 	<bean id="jdbcTemplate" class="org.spring.framework.jdbc.core.JdbcTemplate"/>
 		<property name="dataSource" ref="dataSource" />
@@ -151,7 +151,7 @@ public class JdbcRoomDao {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNDY2MTg5LC0yMDA3OTg2MDgxLC0yNT
-E5MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0NTkw
-OSw4MDQ2NDU4NDAsMTA1ODk1MTczMF19
+eyJoaXN0b3J5IjpbLTE2NjAzMzIyMiwtMjAwNzk4NjA4MSwtMj
+UxOTE5NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5
+MDksODA0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
 -->
