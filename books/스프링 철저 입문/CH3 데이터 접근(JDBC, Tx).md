@@ -260,7 +260,9 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 </beans>
 ```
 
-```<tx:Advice>``` 요소를 이용해서 트랜잭션 정의에 관한 어드바이스를 정의한다. 
+```<tx:Advice>``` 요소를 이용해서 트랜잭션 정의에 관한 어드바이스를 정의한다. 그리고 ```<tx:attributes>```를 이용해서 트랜잭션 관리 대상이 되는 메서드 정의 및 트랜잭션 설정을 수행한다. 메서드 명이 get으로 시작하는것은 읽기 전용 그 외에는 쓰기 가능한 트랜잭션으로 정의한다. 
+
+```<aop:config>```를 이용해서 포인트컷과 어드바이저를 정의한다. 
 
 
 
@@ -275,10 +277,10 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAyMTg2MTc2LC02MzUxODg0MjIsLTUxOD
-IzNDU0LDE4NTQ4NzI0MDMsLTE1NjU3MDA4NTgsNjc5ODc1NDI1
-LDExODA1ODczODgsMTM2MDEzMjkyNCwtNjA3Nzk1MjI4LC00ND
-QyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5
-NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksOD
-A0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbLTE1NDYzNTc0ODAsLTYzNTE4ODQyMiwtNT
+E4MjM0NTQsMTg1NDg3MjQwMywtMTU2NTcwMDg1OCw2Nzk4NzU0
+MjUsMTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUyMjgsLT
+Q0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5
+MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOS
+w4MDQ2NDU4NDAsMTA1ODk1MTczMF19
 -->
