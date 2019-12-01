@@ -157,9 +157,13 @@ DAO 클래스응 이용한 데이터 조회
 Spring JDBC에서는 기본적인 결과값을 형태 변환하기 쉽도록 아래 세 가지 인터페이스를 제공한다. 
 
 RowMapper
-: dJDBC의 ResultSet을 순차적으로 읽으면서 원하는 POJO형태로 매핑하고 싶을때 사용한다. ResultSet의 한 행을 읽어 하나의 POJO로 변환할 수 있다. 
+: dJDBC의 ResultSet을 순차적으로 읽으면서 원하는 POJO형태로 매핑하고 싶을때 사용한다. ResultSet의 한 행을 읽어 하나의 POJO로 변환할 수 있다. 뒤에 나오는 ResultSetExtractor과 차이는 ResultSet의 다음 해으로 넘어가는 커서를 스프링 프레임워크가 대신한다는 점이다. 즉 특정 행을 자유롭게 이동할수가 없다.
+
 ResultSetExtractor
 : RowMapper와 마찬가지로 원하는 POJO형태로 매핑을 하고 싶을때 사용한다. RowMapper와 차이점은 여러 행을 자유롭게 이동할 수 있다는 점이다. 그래서 ResultSetExtractor는 여러 행에서 필요한 값을 꺼내서 POJO로 만들수 있다.
+
+RowCallbackHandler
+: 이 인터페이스는ㅇ
 
 
 
@@ -171,8 +175,8 @@ ResultSetExtractor
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMyNTc2MjM2LC00NDQyODI2NjQsMTU3Nz
-cxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAx
-NDAsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQwLDEwNT
-g5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbMjAwNTA0ODU2NSwtNDQ0MjgyNjY0LDE1Nz
+c3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIw
+MTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMD
+U4OTUxNzMwXX0=
 -->
