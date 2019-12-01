@@ -70,13 +70,11 @@ public class JndiDateSourceCofig {
 	@Bean
 	public DataSource dateSource(){
 		JndiTemplate jndiTemplate = new JndiTempate();
-		dataSource.setDriverClassName(driverClassName);
-		...
-		return dataSource;
-
+		return jnditemplate.lookup("java:comp/env/jdbc.mydb", DataSource.class)		
 	}
 }
 ```
+lookup 메서드를 통해서 JNDI 명이 "java:comp/env/jdbc.mydb"인 리소스
 
 # 스프링 JDBC
 
@@ -85,5 +83,6 @@ public class JndiDateSourceCofig {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbLTY5NDc0Nzc4NSw4MDQ2NDU4NDAsMTA1OD
+k1MTczMF19
 -->
