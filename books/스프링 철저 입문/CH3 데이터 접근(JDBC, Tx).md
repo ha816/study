@@ -252,7 +252,9 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 		<property name='roomDao' ref="jdbcRoomDao" />
 	</bean>
 
-	<bean id="jdbcRo"
+	<bean id="jdbcRoomDao" class="com.example.RoomServiceXmlImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
 </beans>
 
 ```
@@ -271,10 +273,10 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcyMTk3MDcyLC02MzUxODg0MjIsLTUxOD
-IzNDU0LDE4NTQ4NzI0MDMsLTE1NjU3MDA4NTgsNjc5ODc1NDI1
-LDExODA1ODczODgsMTM2MDEzMjkyNCwtNjA3Nzk1MjI4LC00ND
-QyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5
-NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksOD
-A0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbLTQ5NDI4MTAzMCwtNjM1MTg4NDIyLC01MT
+gyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQy
+NSwxMTgwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtND
+Q0MjgyNjY0LDE1Nzc3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkx
+OTQzNiwtNzg4MDIwMTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LD
+gwNDY0NTg0MCwxMDU4OTUxNzMwXX0=
 -->
