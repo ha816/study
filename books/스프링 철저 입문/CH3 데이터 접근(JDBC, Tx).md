@@ -141,7 +141,7 @@ XML 기반 설정방식으로 JdbcTemplate 정의
 	</bean>
 </beans>
 ```
-위 코드를 완료 하면 Jdbc
+위 코드를 완료 하면 jdbc.properties에 있는 정보로 dataSource빈이 생성된다. 
 
 
 
@@ -153,7 +153,7 @@ XML 기반 설정방식으로 JdbcTemplate 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODE5NDIsLTIwMDc5ODYwODEsLTI1MT
-kxOTQzNiwtNzg4MDIwMTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5
-LDgwNDY0NTg0MCwxMDU4OTUxNzMwXX0=
+eyJoaXN0b3J5IjpbMTU3NzcxNTYyMywtMjAwNzk4NjA4MSwtMj
+UxOTE5NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5
+MDksODA0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
 -->
