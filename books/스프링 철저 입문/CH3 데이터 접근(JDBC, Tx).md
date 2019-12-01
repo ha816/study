@@ -177,8 +177,15 @@ RowCallbackHandler
 |--|--|
 |DataSourceTransactionManager  | JDBC, MyBatis등 JDBC 기반 라이브러리로 데이터베이스에 접근하는 경우 사용  |
 |HibernateTransactionManager  | 하이버네이트를 이용해 데이터베이스에 접근하는 경우 사용  |
-|JpaTransactionManager  | JTA로 데이터베이스에 접근하는 경우 사용  |
-|JpaTransactionManager  | JDBC, MyBatis등 JDBC 기반 라이브러리로 데이터베이스에 접근하는 경우 사용  |
+|JpaTransactionManager  | JPA로 데이터베이스에 접근하는 경우 사용  |
+|JtaTransactionManager  | JTA로 데이터베이스에 접근하는 경우 사용 |
+
+### 트랜잭션 관리자 정의(TransactionManager)
+
+
+
+
+
 
 
 
@@ -192,7 +199,7 @@ RowCallbackHandler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNDkxNTk2MiwtNjA3Nzk1MjI4LC00ND
+eyJoaXN0b3J5IjpbLTk2MTE2ODQzOCwtNjA3Nzk1MjI4LC00ND
 QyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5
 NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksOD
 A0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
