@@ -245,9 +245,8 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 	</tx:advice>
 
 	<aop:config>
-		<aop:pointcut id="txPointcut"
-		/>
-		<aop:advisor advice-
+		<aop:pointcut id="txPointcut" expression="execution(* com.example.RooServiceXmlImpl.*(..))"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut" />
 	</aop:config>
 
 </beans>
@@ -268,10 +267,10 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjI5ODczMDgsLTYzNTE4ODQyMiwtNT
-E4MjM0NTQsMTg1NDg3MjQwMywtMTU2NTcwMDg1OCw2Nzk4NzU0
-MjUsMTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUyMjgsLT
-Q0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5
-MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOS
-w4MDQ2NDU4NDAsMTA1ODk1MTczMF19
+eyJoaXN0b3J5IjpbMTIxMTMxNTc4MiwtNjM1MTg4NDIyLC01MT
+gyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQy
+NSwxMTgwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtND
+Q0MjgyNjY0LDE1Nzc3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkx
+OTQzNiwtNzg4MDIwMTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LD
+gwNDY0NTg0MCwxMDU4OTUxNzMwXX0=
 -->
