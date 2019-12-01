@@ -206,6 +206,8 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 스프링 프레임워크는 선언적 트랜잭션으로 @Transactional 또는 XML설정을 이용하는 두 방법을 제공한다. 
 
+#### @Transactional 이용한 선언적 트랜잭션
+
 @Transactional 에너테이션을 빈의 public 메서드에 추가하는 것으로 대상 메서드의 시작 종료에 맞춰 트랜잭션 시작, 커밋, 롤백이 가능하다. 또한 기본적으로 메서드 안에서 비검사 예외(unchecked exception; runtimeException)가 발생하면 처리가 중단되었을때 자동으로 롤백을 한다. 
 
 @Transactional의 동작방식이나 상세한 설정을 변경하고 싶으면 변경이 가능하다. [옵션 정보](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/transaction/annotation/Transactional.html)
@@ -223,7 +225,9 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 클래스에 적용하면 클래스에 어떤 메서드를 실행해도 기본적으로 트랜잭션이 적용된다.  클래스에 적용하지 않고 특정 메서드에만 붙이면 그 메서드만 트랜잭션이 적용된다. 클래스와 메서드에 모두 붙이면 메서드에 정의한 애너테이션을 따라간다. 
 
+#### XML설정을 이용한 선언적 트랜잭션
 
+@Tran
 
 
 
@@ -240,7 +244,7 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg3NDcyMDQzLC01MTgyMzQ1NCwxODU0OD
+eyJoaXN0b3J5IjpbNjMyMzA5MzExLC01MTgyMzQ1NCwxODU0OD
 cyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQyNSwxMTgwNTg3Mzg4
 LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nz
 c3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIw
