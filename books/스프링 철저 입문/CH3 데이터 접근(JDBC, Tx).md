@@ -208,9 +208,11 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 @Transactional 에너테이션을 빈의 public 메서드에 추가하는 것으로 대상 메서드의 시작 종료에 맞춰 트랜잭션 시작, 커밋, 롤백이 가능하다. 또한 기본적으로 메서드 안에서 비검사 예외(unchecked exception; runtimeException)가 발생하면 처리가 중단되었을때 자동으로 롤백을 한다. 
 
-@Transactional의 동작방식이나 상세한 설정을 변경하고 싶으면 변경이 가능하다. 
+@Transactional의 동작방식이나 상세한 설정을 변경하고 싶으면 변경이 가능하다. [옵션 정보](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/transaction/annotation/Transactional.html)
 
-
+대표적인 예제
+* @Transactional(readOnly = true, timeout=60)
+	* 깆
 
 
 
@@ -227,9 +229,10 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NDg3MjQwMywtMTU2NTcwMDg1OCw2Nz
-k4NzU0MjUsMTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUy
-MjgsLTQ0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC
-0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0
-NTkwOSw4MDQ2NDU4NDAsMTA1ODk1MTczMF19
+eyJoaXN0b3J5IjpbLTE4NjE3MTIyMzcsMTg1NDg3MjQwMywtMT
+U2NTcwMDg1OCw2Nzk4NzU0MjUsMTE4MDU4NzM4OCwxMzYwMTMy
+OTI0LC02MDc3OTUyMjgsLTQ0NDI4MjY2NCwxNTc3NzE1NjIzLC
+0yMDA3OTg2MDgxLC0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIy
+NTQyODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMTA1ODk1MTczMF
+19
 -->
