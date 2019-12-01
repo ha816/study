@@ -167,8 +167,7 @@ RowCallbackHandler
 
 ## 트랜잭션 관리
 
-### 트랜잭션 관리자 
-
+관계형 DB를 다룰때 트랜잭션의 경계가 어디까지이고 어떻게 관리되는지 이해하고 있어야 한다. 실제로 트랜잭션을 염두에 두고 관련 코드를 구현하는 것은 상당히 힘들도 번거로울 수 
 
 
 
@@ -179,7 +178,7 @@ RowCallbackHandler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMDUyMzE4OSwtNDQ0MjgyNjY0LDE1Nz
+eyJoaXN0b3J5IjpbMTY5MTU5MDUzMywtNDQ0MjgyNjY0LDE1Nz
 c3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIw
 MTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMD
 U4OTUxNzMwXX0=
