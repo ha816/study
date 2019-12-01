@@ -192,9 +192,10 @@ XML 기반 설정 방식을 이용한 빈 정의
 ```
 <bean id="transactionManager"
 	class="org.springframework.jdbc.datasource.DateSourceTransactionManager">
-	<property name="dataSource" ref="
+	<property name="dataSource" ref="dataSource"
 </bean>
-
+// @Transaction 애너테이션을 사용하는 경우
+<tx:annotation-driven>
 ```
 
 
@@ -212,9 +213,9 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3Njc1Mzg2OCwxMTgwNTg3Mzg4LDEzNj
-AxMzI5MjQsLTYwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nzc3MTU2
-MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIwMTQwLD
-M4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMDU4OTUx
-NzMwXX0=
+eyJoaXN0b3J5IjpbNjc5ODc1NDI1LDExODA1ODczODgsMTM2MD
+EzMjkyNCwtNjA3Nzk1MjI4LC00NDQyODI2NjQsMTU3NzcxNTYy
+MywtMjAwNzk4NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAxNDAsMz
+gyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQwLDEwNTg5NTE3
+MzBdfQ==
 -->
