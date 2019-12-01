@@ -109,7 +109,9 @@ JdbcTemplate이 제공하는 주요 메서드
 
 |메서드명| 설명 |
 |--|--|
-|queryForObject  | 하나의 결과 레코드 중에서 하나의  |
+|queryForObject  | 하나의 결과 레코드 중에서 하나의 칼럼 값을 가져올때 사용함; RowMapper아 함께 사용하면 하나의 레코드 정보를 객체에 매핑할 수 있음 |
+|queryForMap  | 하나의 결과 레코드 중에서 하나의 칼럼 값을 가져올때 사용함; RowMapper아 함께 사용하면 하나의 레코드 정보를 객체에 매핑할 수 있음 |
+
 
 
 
@@ -117,7 +119,7 @@ JdbcTemplate이 제공하는 주요 메서드
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTc0MjE4ODksLTI1MTkxOTQzNiwtNz
-g4MDIwMTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0
-MCwxMDU4OTUxNzMwXX0=
+eyJoaXN0b3J5IjpbOTM5MDMyODYzLC0yNTE5MTk0MzYsLTc4OD
+AyMDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAs
+MTA1ODk1MTczMF19
 -->
