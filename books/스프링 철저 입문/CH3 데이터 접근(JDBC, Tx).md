@@ -147,6 +147,7 @@ DAO 클래스응 이용한 데이터 조회
 ```
 	ApplicationContext context = new ClassPathXmlApplicationContext("JdbcTemplateConfig.xml);
 	JdbcRoomDao dao = context.getBean("jdbcRoomDao", JdbcRoomDao.class);
+	int maxCapacitiy = dao.findMaxCapacity();
 ```
 
 
@@ -159,8 +160,7 @@ DAO 클래스응 이용한 데이터 조회
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTg5OTA1OTAsMTU3NzcxNTYyMywtMj
-AwNzk4NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAxNDAsMzgyMjU0
-MjgwLC01NjIzNDU5MDksODA0NjQ1ODQwLDEwNTg5NTE3MzBdfQ
-==
+eyJoaXN0b3J5IjpbLTQ0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMD
+A3OTg2MDgxLC0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQy
+ODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMTA1ODk1MTczMF19
 -->
