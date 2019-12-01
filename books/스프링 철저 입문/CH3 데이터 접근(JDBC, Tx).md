@@ -105,9 +105,14 @@ XML 기반 설정방식
 
 JdbcTemplate을 애플리케이션에서 사용할때는 DI 컨테이너에서 만든 JdbcTemplate을 주입받아 쓰는게 일반적이다. 
 
+JdbcTemplate이 제공하는 주요 메서드
+//
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyMjU0MjgwLC01NjIzNDU5MDksODA0Nj
-Q1ODQwLDEwNTg5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2Mj
+M0NTkwOSw4MDQ2NDU4NDAsMTA1ODk1MTczMF19
 -->
