@@ -21,6 +21,13 @@
 ### 애플리케이션 모듈이 제공하는 데이터 소스
 
 Commons DBCP, DriverManagerDataSource를 데이터 소스로 사용할때 설정 방식을 알아보자. JDBC 접속에 필요한 각종 정보와 커넥션 풀의 설정 등은 jdbc.properties에 기재되어 있다고 가정한다. 
+``` //jdbc.properties
+database.url = jdbc:mysql://localhost
+database.driverClassName = org.mysql.Driver
+cp.maxTotal = 100; //connection pool
+...
+```
+
 
 자바 기반 설정방식
 ```
@@ -50,5 +57,5 @@ public class PoolingDateSourceCofig {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIxOTQzOTEyXX0=
+eyJoaXN0b3J5IjpbMTEzMzE0MTA3Nl19
 -->
