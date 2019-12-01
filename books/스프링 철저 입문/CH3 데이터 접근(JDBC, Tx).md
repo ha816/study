@@ -190,6 +190,10 @@ RowCallbackHandler
 
 XML 기반 설정 방식을 이용한 빈 정의
 ```
+<bean id="transactionManager"
+	class="org.springframework.jdbc.datasource.DateSourceTransactionManager">
+	<property name="dataSource" ref="
+</bean>
 
 ```
 
@@ -208,8 +212,9 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MD
-c3OTUyMjgsLTQ0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2
-MDgxLC0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLT
-U2MjM0NTkwOSw4MDQ2NDU4NDAsMTA1ODk1MTczMF19
+eyJoaXN0b3J5IjpbMTQ3Njc1Mzg2OCwxMTgwNTg3Mzg4LDEzNj
+AxMzI5MjQsLTYwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nzc3MTU2
+MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIwMTQwLD
+M4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMDU4OTUx
+NzMwXX0=
 -->
