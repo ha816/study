@@ -131,15 +131,17 @@ public class JdbcRoomDao {
 }
 ```
 
+XML 기반 설정방식으로 JdbcTemplate 정의
 ```
 <beans xlms =... >
-	<import resource="classpath:" />
-	<context:component-scan base-package="com.example" />
+	<import resource="classpath:jdbc.properties" />
+	<context:component-scan base-package="com.example" /> // JdbcRoomDao를 스캐닝하기 위해
 	<bean id="jdbcTemplate" class="org.spring.framework.jdbc.core.JdbcTemplate"/>
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 </beans>
 ```
+위 코드를 완료 하면 Jdbc
 
 
 
@@ -151,7 +153,7 @@ public class JdbcRoomDao {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjAzMzIyMiwtMjAwNzk4NjA4MSwtMj
-UxOTE5NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5
-MDksODA0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbLTc5ODE5NDIsLTIwMDc5ODYwODEsLTI1MT
+kxOTQzNiwtNzg4MDIwMTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5
+LDgwNDY0NTg0MCwxMDU4OTUxNzMwXX0=
 -->
