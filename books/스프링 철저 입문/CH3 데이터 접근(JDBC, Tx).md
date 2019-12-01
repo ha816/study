@@ -143,6 +143,9 @@ XML 기반 설정방식으로 JdbcTemplate 정의
 ```
 위 코드를 완료 하면 jdbc.properties에 있는 정보로 dataSource빈이 생성된다. 그 빈을 DAO 인 JdbcRoomDao에 Autowired로 주입한다. 
 
+DAO 클래스으
+```
+
 
 
 
@@ -153,7 +156,7 @@ XML 기반 설정방식으로 JdbcTemplate 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODU0MTUzMiwxNTc3NzE1NjIzLC0yMD
+eyJoaXN0b3J5IjpbMTM1ODE1NDI3NiwxNTc3NzE1NjIzLC0yMD
 A3OTg2MDgxLC0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQy
 ODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMTA1ODk1MTczMF19
 -->
