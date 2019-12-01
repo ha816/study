@@ -198,7 +198,7 @@ XML 기반 설정 방식을 이용한 빈 정의
 <tx:annotation-driven>
 ```
 
-글로벌 트랜잭션은 여러 데이터 저장소를 걸쳐서 적용되는 트랜잭션이다. 
+글로벌 트랜잭션은 여러 데이터 저장소를 걸쳐서 적용되는 트랜잭션이다. 예를 들면 여러 데이터 베이스를 묶되, 각 데이터 베이스에서 각각의 조작을 수행하고 그 조작들을 하나의 트랜잭션으로 묶어 모두 성공하거나 모두 실패할 것으로 처리해야 하는 경우라면 로컬 트랜잭션을 사용할 수 없다. 이런 경우에는 글로벌 트랜잭션은 JTA(Java Transaction API)라는 Java EE 사양으로 표준화 되어 있고 Jta
 
 
 
@@ -214,9 +214,9 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjU3MDA4NTgsNjc5ODc1NDI1LDExOD
-A1ODczODgsMTM2MDEzMjkyNCwtNjA3Nzk1MjI4LC00NDQyODI2
-NjQsMTU3NzcxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5NDM2LC
-03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1
-ODQwLDEwNTg5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbLTEyNzIxNzgwMSwtMTU2NTcwMDg1OCw2Nz
+k4NzU0MjUsMTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUy
+MjgsLTQ0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC
+0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0
+NTkwOSw4MDQ2NDU4NDAsMTA1ODk1MTczMF19
 -->
