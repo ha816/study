@@ -166,6 +166,8 @@ RowCallbackHandler
 : 이 인터페이스는의 메서드는 반환값이 없다. 그래서 ResultSet 정보를 처리결과를 반환하기 위해 쓰는것이 아니라 별도의 다른 처리를 하고 싶을때 사용한다. ResultSet에 읽은 데이터를 파일형태나, 조회된 데이터를 검증하는 용도로 활용할 수 있다. 
 
 
+## 트랜잭션 관리
+
 
 
 
@@ -177,8 +179,8 @@ RowCallbackHandler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0ODI2Mzc5MCwtNDQ0MjgyNjY0LDE1Nz
-c3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIw
-MTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMD
-U4OTUxNzMwXX0=
+eyJoaXN0b3J5IjpbODg1MzgxMzU3LC00NDQyODI2NjQsMTU3Nz
+cxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAx
+NDAsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQwLDEwNT
+g5NTE3MzBdfQ==
 -->
