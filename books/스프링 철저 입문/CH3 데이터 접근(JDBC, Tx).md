@@ -82,6 +82,8 @@ XML 기반 설정방식
 	<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/mydb" />
 </beans>
 ```
+```<jee:jndi-lookup>```요소로 JNDI를 통해 찾아올 데이터 소스를 정의한다. 
+
 
 # 스프링 JDBC
 
@@ -90,6 +92,6 @@ XML 기반 설정방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0OTk3NjAwNCw4MDQ2NDU4NDAsMTA1OD
-k1MTczMF19
+eyJoaXN0b3J5IjpbLTE0MDU3MDgzMDEsODA0NjQ1ODQwLDEwNT
+g5NTE3MzBdfQ==
 -->
