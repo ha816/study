@@ -25,7 +25,14 @@ Commons DBCP, DriverManagerDataSource를 데이터 소스로 사용할때 설정
 자바 기반 설정방식
 ```
 @Configuration
-@
+@PropertySoucre("jdbc.properties")
+public class PoolingDateSourceCofig {
+	@Bean(destoryMethod = "close")
+	public DataSource dateSource(
+		
+	)
+
+}
 
 
 ```
@@ -37,5 +44,5 @@ Commons DBCP, DriverManagerDataSource를 데이터 소스로 사용할때 설정
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NDYyOTA1NV19
+eyJoaXN0b3J5IjpbLTEzMTA0NTI0MTFdfQ==
 -->
