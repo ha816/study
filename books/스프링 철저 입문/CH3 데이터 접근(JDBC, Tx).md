@@ -113,7 +113,7 @@ JdbcTemplate이 제공하는 주요 메서드
 |queryForMap  | 하나의 결과 레코드 정보를 Map형태로 매핑할 수 있음 |
 |queryForList  | 여러개의 결과레코드를 다룬다. List의 한 요소가 레코드에 대응|
 |query | ResultSetExtractor, RowCallbackHandler와 함께 조회할때 사용|
-|ㅔ  | 여러개의 결과레코드를 다룬다. List의 한 요소가 레코드에 대응|
+|update  | 데이터를 변경하는 SQL(Insert, DELETE, UPDATE)를 실행할때 사용|
 
 
 
@@ -124,7 +124,7 @@ JdbcTemplate이 제공하는 주요 메서드
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0OTg0NDc3NCwtMjUxOTE5NDM2LC03OD
-gwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQw
-LDEwNTg5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbLTE4MTQyMzIzMTEsLTI1MTkxOTQzNiwtNz
+g4MDIwMTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0
+MCwxMDU4OTUxNzMwXX0=
 -->
