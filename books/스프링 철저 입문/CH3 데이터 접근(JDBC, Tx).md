@@ -120,7 +120,15 @@ JdbcTemplate이 제공하는 주요 메서드
 데이터배이스에 접근해서 데이터를 다룰 DAO(Data Access Object) 클래스를 정의해보자. 여기선 JdbcTemplate 클래스를 사용하기 위해 빈 컨테이너가 초히과해둔것을 @Autowired로 주입받아 사용한다.
 
 ```
-@Comp
+@Component
+public class JdbcRoomDao {
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+	public int findMaxCapacity() {
+		String sql = "select MAX FROM ";
+		return jdbcTemplate.queryForObject(sql, Integer.class)
+	}
+}
 ```
 
 
@@ -131,7 +139,7 @@ JdbcTemplate이 제공하는 주요 메서드
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxODA0ODMzLC0yNTE5MTk0MzYsLTc4OD
-AyMDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAs
-MTA1ODk1MTczMF19
+eyJoaXN0b3J5IjpbMTQwMjA5NzMxMiwtMjUxOTE5NDM2LC03OD
+gwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQw
+LDEwNTg5NTE3MzBdfQ==
 -->
