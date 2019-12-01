@@ -54,7 +54,8 @@ XML 기반 설정방식
 	...
 	<context:propery-placeholder location="classpath:META-INF/jdbc.properties"/>
 
-	<bean id = "dataSource" clas>
+	<bean id = "dataSource" class = "org.apache,commons.dbcp2.BasicDataSource" destory-method="close">
+		<property name="driverClassName" value="${database.driverClassName}"/>
 		
 	</bean>
 </beans>
@@ -66,5 +67,5 @@ XML 기반 설정방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU2NTQ5NzFdfQ==
+eyJoaXN0b3J5IjpbNzQ4Njc5MjQzXX0=
 -->
