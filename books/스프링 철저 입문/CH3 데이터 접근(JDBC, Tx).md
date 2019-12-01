@@ -198,7 +198,12 @@ XML 기반 설정 방식을 이용한 빈 정의
 <tx:annotation-driven>
 ```
 
-글로벌 트랜잭션은 여러 데이터 저장소를 걸쳐서 적용되는 트랜잭션이다. 예를 들면 여러 데이터 베이스를 묶되, 각 데이터 베이스에서 각각의 조작을 수행하고 그 조작들을 하나의 트랜잭션으로 묶어 모두 성공하거나 모두 실패할 것으로 처리해야 하는 경우라면 로컬 트랜잭션을 사용할 수 없다. 이런 경우에는 글로벌 트랜잭션은 JTA(Java Transaction API)라는 Java EE 사양으로 표준화 되어 있고 Jta
+**글로벌 트랜잭션**은 여러 데이터 저장소를 걸쳐서 적용되는 트랜잭션이다. 예를 들면 여러 데이터 베이스를 묶되, 각 데이터 베이스에서 각각의 조작을 수행하고 그 조작들을 하나의 트랜잭션으로 묶어 모두 성공하거나 모두 실패할 것으로 처리해야 하는 경우라면 로컬 트랜잭션을 사용할 수 없다. 이런 경우에는 글로벌 트랜잭션은 JTA(Java Transaction API)라는 Java EE 사양으로 표준화 되어 있고 JtaTransactionManager를 사용하면 된다. 
+
+### 선언적 트랜잭션
+
+선언적 트랜잭션은 미리 선언된 룰에 따라 트랜잭션을 제어하는 방법이다. 선언적 트랜잭션의 장점은 정해진 룰을 준수함으로써 트랜잭션의 시작과 커밋, 롤백 등의 처리를 비즈니스 로직안에 서술할 필요가 없다는 점이다.
+
 
 
 
@@ -214,7 +219,7 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzIxNzgwMSwtMTU2NTcwMDg1OCw2Nz
+eyJoaXN0b3J5IjpbMjA1NDY4MjUwMSwtMTU2NTcwMDg1OCw2Nz
 k4NzU0MjUsMTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUy
 MjgsLTQ0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC
 0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0
