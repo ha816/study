@@ -154,7 +154,13 @@ DAO 클래스응 이용한 데이터 조회
 
 스프링 JDBC는 처리 결과값을 자바가 기본적으로 제공하는 데이터 타입이나 Map, List 같은 컬렉션 타입으로 반환한다. 보통 애프리케이션을 개발할 때는 자바에서 제공하는 타입이 아니라 비즈니스에 맞는 데이터 타입을 POJO형태로 만들어 쓰는 경향이 있기 때문에 반환 값을 가공해야할 수 있다. 
 
-Spring JDBC에서는 기본적
+Spring JDBC에서는 기본적인 결과값을 형태 변환하기 쉽도록 아래 세 가지 인터페이스를 제공한다. 
+
+RowMapper
+: dJDBC의 ResultSet을 순차적으로 읽으면서 원하는 POJO형태로 매핑하고 싶을때 사용한다. ResultSet의 한 행을 읽어 하나의 POJO로 변환할 수 있다. 
+ResultSetExtractor
+
+
 
 
 
@@ -165,8 +171,8 @@ Spring JDBC에서는 기본적
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcxMzk4NDkwLC00NDQyODI2NjQsMTU3Nz
-cxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAx
-NDAsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQwLDEwNT
-g5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbLTExMjQ4Mzg4MzQsLTQ0NDI4MjY2NCwxNT
+c3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5MTk0MzYsLTc4ODAy
+MDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMT
+A1ODk1MTczMF19
 -->
