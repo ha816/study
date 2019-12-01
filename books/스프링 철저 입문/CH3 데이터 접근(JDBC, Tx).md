@@ -186,7 +186,7 @@ RowCallbackHandler
 * PlatformTransactionManager의 빈을 구현한다.
 * 트랜잭션을 관리하는 메서드를 정의한다. 
 
-로컬 트랜잭션은 단일 데이터 저장소에 대한 트랜잭션으로 일반적으로 자주 사용되는 트랜잭션이다. 예를 들어, 단일 데이터 저장소에 대한 여러 조작을 하나의 논리적 단위로 처리하고 싶을때 사용한다. 이럴 경우, **DataSourceTransactionManager**를 사용한다. 이때 빈 ID는 transactionManager로 사용하는 것이 좋다. 왜냐하면 스프링 프레임워크에서 기본적으로 트랜잭션 관리자의 빈 ID를 transactionManager로 가정하기 때문이다. 이 관례를 따르면 각종 설정을 간단히 할 수 있다. 
+**로컬 트랜잭션(Local Transaction)** 은 단일 데이터 저장소에 대한 트랜잭션으로 일반적으로 자주 사용되는 트랜잭션이다. 예를 들어, 단일 데이터 저장소에 대한 여러 조작을 하나의 논리적 단위로 처리하고 싶을때 사용한다. 이럴 경우, **DataSourceTransactionManager**를 사용한다. 이때 빈 ID는 transactionManager로 사용하는 것이 좋다. 왜냐하면 스프링 프레임워크에서 기본적으로 트랜잭션 관리자의 빈 ID를 transactionManager로 가정하기 때문이다. 이 관례를 따르면 각종 설정을 간단히 할 수 있다. 
 
 XML 기반 설정 방식을 이용한 빈 정의
 ```
@@ -198,6 +198,7 @@ XML 기반 설정 방식을 이용한 빈 정의
 <tx:annotation-driven>
 ```
 
+글로벌 트랜잭션은 여러 데이터 저장소를 걸쳐서 적용되는 트랜잭션이다. 
 
 
 
@@ -213,9 +214,9 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc5ODc1NDI1LDExODA1ODczODgsMTM2MD
-EzMjkyNCwtNjA3Nzk1MjI4LC00NDQyODI2NjQsMTU3NzcxNTYy
-MywtMjAwNzk4NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAxNDAsMz
-gyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQwLDEwNTg5NTE3
-MzBdfQ==
+eyJoaXN0b3J5IjpbLTE1NjU3MDA4NTgsNjc5ODc1NDI1LDExOD
+A1ODczODgsMTM2MDEzMjkyNCwtNjA3Nzk1MjI4LC00NDQyODI2
+NjQsMTU3NzcxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5NDM2LC
+03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1
+ODQwLDEwNTg5NTE3MzBdfQ==
 -->
