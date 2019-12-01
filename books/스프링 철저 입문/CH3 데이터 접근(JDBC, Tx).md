@@ -150,6 +150,10 @@ DAO 클래스응 이용한 데이터 조회
 	int maxCapacitiy = dao.findMaxCapacity();
 ```
 
+### SQL 질의 결과를 POJO로 변환
+
+스프링 JDBC는 처리 결과값을 자바가 기본적으로 제공하는 데이터 타입이나 Map, List 같은 컬렉션 타입으로 반환한다. 보통 애프리케이션을 개발할 때는 
+
 
 
 
@@ -160,7 +164,8 @@ DAO 클래스응 이용한 데이터 조회
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMD
-A3OTg2MDgxLC0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQy
-ODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMTA1ODk1MTczMF19
+eyJoaXN0b3J5IjpbMTYzMjY2NzIyMiwtNDQ0MjgyNjY0LDE1Nz
+c3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIw
+MTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMD
+U4OTUxNzMwXX0=
 -->
