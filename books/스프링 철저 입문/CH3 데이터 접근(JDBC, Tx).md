@@ -186,7 +186,7 @@ RowCallbackHandler
 * PlatformTransactionManager의 빈을 구현한다.
 * 트랜잭션을 관리하는 메서드를 정의한다. 
 
-로컬 트랜잭션은 단일 데이터
+로컬 트랜잭션은 단일 데이터 저장소에 대한 트랜잭션으로 일반적으로 자주 사용되는 트랜잭션이다. 예를 들어, 단일 데이터 저장소에 대한 여러 조작을 하나의 논리적 단위로 처리하고 싶을때 사용한다. 이럴 경우, DataSourceTransactionManager를 사용한다. 이때 빈 ID는 transactionManager로 사용하는 것이 좋다. 왜냐하면 스프링 프레임워크에서 기본저
 
 
 
@@ -203,7 +203,7 @@ RowCallbackHandler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjYzMDgyOTUsMTM2MDEzMjkyNCwtNj
+eyJoaXN0b3J5IjpbLTExNzAzOTYwOTIsMTM2MDEzMjkyNCwtNj
 A3Nzk1MjI4LC00NDQyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4
 NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC
 01NjIzNDU5MDksODA0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
