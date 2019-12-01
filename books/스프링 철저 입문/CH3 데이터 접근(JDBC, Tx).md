@@ -97,11 +97,11 @@ XML 기반 설정방식
 
 * SQL문 정의
 * 파라미터 설정
-* ResultSet의 결과를 가져
+* ResultSet의 결과를 가져온 후, 필요한 처리 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNjQ3ODU1MCwtNTYyMzQ1OTA5LDgwND
-Y0NTg0MCwxMDU4OTUxNzMwXX0=
+eyJoaXN0b3J5IjpbOTAwODgwNTAsLTU2MjM0NTkwOSw4MDQ2ND
+U4NDAsMTA1ODk1MTczMF19
 -->
