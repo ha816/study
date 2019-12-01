@@ -89,14 +89,19 @@ XML 기반 설정방식
 스프링 JDBC(Spring JDBC)를 사용할 때 중요한 역할을 하는 JdbcTemplate 클래스를 공부해보자. 스프링 JDBC는 SQL의 내용과는 무관하게 공통적이면서 반복적으로 수행되는 JDBC의 처리를 프레임워크가 대행하는 기능을 제공한다. 여기서 말하는 공통적이고 반복적으로 수행되는 처리에는 아래와 같은 것이 있다. 
 
 * connection 연결과 종료
-* SQL문의 실행
-* SQL무느이 실행 결과 행에 대한 반복 처리
+* SQL문 실행
+* SQL문의 실행 결과인 행에 대한 반복 처리
 * 예외처리 
 
+스프링 JDBC를 쓰면 위의 공통적이고 반복적인 작업을 거의 모두 처리해준다. 처리된 내용을 제외하면 개발자가 직접 구현할 부분은 아래와 같다. 
+
+* SQL문 정의
+* 파라미터 설정
+* ResultSet의 결과를 가져
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDE4MDY4OCwtNTYyMzQ1OTA5LDgwND
+eyJoaXN0b3J5IjpbLTUwNjQ3ODU1MCwtNTYyMzQ1OTA5LDgwND
 Y0NTg0MCwxMDU4OTUxNzMwXX0=
 -->
