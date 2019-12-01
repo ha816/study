@@ -186,7 +186,7 @@ RowCallbackHandler
 * PlatformTransactionManager의 빈을 구현한다.
 * 트랜잭션을 관리하는 메서드를 정의한다. 
 
-
+로컬 트랜잭션은 단일 데이터
 
 
 
@@ -203,8 +203,8 @@ RowCallbackHandler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MDEzMjkyNCwtNjA3Nzk1MjI4LC00ND
-QyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5
-NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksOD
-A0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbLTExNjYzMDgyOTUsMTM2MDEzMjkyNCwtNj
+A3Nzk1MjI4LC00NDQyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4
+NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC
+01NjIzNDU5MDksODA0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
 -->
