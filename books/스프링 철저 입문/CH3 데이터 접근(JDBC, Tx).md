@@ -1,5 +1,5 @@
 # 데이터 소스(Data Source)
-데이터 소스는 애플리케이션이 데이터베이스에 접근 하는데 추상화된 연결 방식을 제공하는 역할을 한다. 즉 커넥션을 제공한다. 그리고 스프링에서 제공하는 데이터 소스에서는 세가지 종류가 있다. 
+데이터 소스는 애플리케이션이 데이터베이스에 접근 하는데 필요한 연결을 제공한다. 즉 추상화된 커넥션을 제공한다. 그리고 스프링에서 제공하는 데이터 소스에서는 세가지 종류가 있다. 
 
 * 애플리케이션 모듈이 제공하는 데이터 소스
 	* Commons DBCP나 Tomcat JDBC Connection Pool과 같은 서드파티나 DriverManagerDataSource같이 스프링이 제공하는 데이터 소스를 빈으로 등록해서 사용하는 방식을 말한다. 이런 방식은 데이터베이스에 접속하기 위한 ID와 패스워드, 접속 대상 URL 같은 정보를 애플리케이션이 직접 관리하고 데이터 소스에 설정해야 한다. 
@@ -84,14 +84,14 @@ XML 기반 설정방식
 ```
 ```<jee:jndi-lookup>```요소로 JNDI를 통해 찾아올 데이터 소스를 정의한다. 
 
-
 # 스프링 JDBC
 
-스프링 JDBC(Spring JDBC)를 사용할 때 중요한 역할을 하는 JdbcTemplate 클래스를 공부해보자. 
+스프링 JDBC(Spring JDBC)를 사용할 때 중요한 역할을 하는 JdbcTemplate 클래스를 공부해보자. 스프링 JDBC는 SQL의 내용과는 무관하게 공통적이면
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMTA1OD
-k1MTczMF19
+eyJoaXN0b3J5IjpbNDg1NDg3NDM4LC01NjIzNDU5MDksODA0Nj
+Q1ODQwLDEwNTg5NTE3MzBdfQ==
 -->
