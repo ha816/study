@@ -66,18 +66,14 @@ XML 기반 설정방식
 자바 기반 설정방식
 ```
 @Configuration
-@PropertySoucre("jdbc.properties")
-public class PoolingDateSourceCofig {
-	@Bean(destoryMethod = "close")
-	public DataSource dateSource(
-		@Value("${database.driverClassName}") String driverClassName,
-		@Value("${database.url}") String url,
-		...
-		) {
-		BasicDataSoucre dataSource= new BasicDataSource();
+public class JndiDateSourceCofig {
+	@Bean
+	public DataSource dateSource(){
+		JndiTemplate jndiTemplate = new JndiTempate();
 		dataSource.setDriverClassName(driverClassName);
 		...
 		return dataSource;
+
 	}
 }
 ```
@@ -89,5 +85,5 @@ public class PoolingDateSourceCofig {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwOTk0MzcxMSwxMDU4OTUxNzMwXX0=
+eyJoaXN0b3J5IjpbODA0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
 -->
