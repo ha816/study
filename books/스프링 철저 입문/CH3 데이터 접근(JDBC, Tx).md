@@ -212,7 +212,11 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 대표적인 예제
 * @Transactional(readOnly = true, timeout=60)
-	* 깆
+	* 기본 트랜잭션 관리자를 읽기 전용 트랜잭션으로 이용하고 제한시간은 60초다.
+* @Transactional("tx1")
+	* "tx1" id를 가지는 트랜잭션 관리자를 사용한다.
+* @Transactional(value = "tx2", propagation=Propagation.REQUIRES_NEW)
+	* tx2 트랜잭션 관리자를 사용하고 전ㅍ
 
 
 
@@ -229,10 +233,10 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjE3MTIyMzcsMTg1NDg3MjQwMywtMT
-U2NTcwMDg1OCw2Nzk4NzU0MjUsMTE4MDU4NzM4OCwxMzYwMTMy
-OTI0LC02MDc3OTUyMjgsLTQ0NDI4MjY2NCwxNTc3NzE1NjIzLC
-0yMDA3OTg2MDgxLC0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIy
-NTQyODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMTA1ODk1MTczMF
-19
+eyJoaXN0b3J5IjpbLTM2MjUwNTMzMiwxODU0ODcyNDAzLC0xNT
+Y1NzAwODU4LDY3OTg3NTQyNSwxMTgwNTg3Mzg4LDEzNjAxMzI5
+MjQsLTYwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nzc3MTU2MjMsLT
+IwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIwMTQwLDM4MjI1
+NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMDU4OTUxNzMwXX
+0=
 -->
