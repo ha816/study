@@ -1,5 +1,5 @@
 # 데이터 소스(Data Source)
-데이터 소스는 애플리케이션이 데이터베이스에 접근하기 위한 추상화된 연결 방식을 제공하는 역할을 한다. 즉 커넥션을 제공한다. 그리고 스프링에서 제공하는 데이터 소스에서는 세가지 종류가 있다. 
+데이터 소스는 애플리케이션이 데이터베이스에 접근 하는데 추상화된 연결 방식을 제공하는 역할을 한다. 즉 커넥션을 제공한다. 그리고 스프링에서 제공하는 데이터 소스에서는 세가지 종류가 있다. 
 
 * 애플리케이션 모듈이 제공하는 데이터 소스
 	* Commons DBCP나 Tomcat JDBC Connection Pool과 같은 서드파티나 DriverManagerDataSource같이 스프링이 제공하는 데이터 소스를 빈으로 등록해서 사용하는 방식을 말한다. 이런 방식은 데이터베이스에 접속하기 위한 ID와 패스워드, 접속 대상 URL 같은 정보를 애플리케이션이 직접 관리하고 데이터 소스에 설정해야 한다. 
@@ -92,6 +92,6 @@ XML 기반 설정방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDU3MDgzMDEsODA0NjQ1ODQwLDEwNT
-g5NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMTA1OD
+k1MTczMF19
 -->
