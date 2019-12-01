@@ -159,7 +159,7 @@ Spring JDBC에서는 기본적인 결과값을 형태 변환하기 쉽도록 아
 RowMapper
 : dJDBC의 ResultSet을 순차적으로 읽으면서 원하는 POJO형태로 매핑하고 싶을때 사용한다. ResultSet의 한 행을 읽어 하나의 POJO로 변환할 수 있다. 
 ResultSetExtractor
-
+: RowMapper와 마찬가지로 원하는 POJO형태로 매핑을 하고 싶을때 사용한다. RowMapper와 차이점은 여러 행을 자유롭게 이동할 수 있다는 점이다. 그래서 ResultSetExtractor는 여러 행에서 필요한 값을 꺼내서 POJO로 만들수 있다.
 
 
 
@@ -171,8 +171,8 @@ ResultSetExtractor
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjQ4Mzg4MzQsLTQ0NDI4MjY2NCwxNT
-c3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5MTk0MzYsLTc4ODAy
-MDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMT
-A1ODk1MTczMF19
+eyJoaXN0b3J5IjpbODMyNTc2MjM2LC00NDQyODI2NjQsMTU3Nz
+cxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAx
+NDAsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQwLDEwNT
+g5NTE3MzBdfQ==
 -->
