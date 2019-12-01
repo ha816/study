@@ -264,6 +264,8 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 ```<aop:config>```를 이용해서 포인트컷과 어드바이저를 정의한다. 포인트 컷은 인터페이스 구현 클래스의 메서드를 대상으로 한다. 어드바이저는 앞서 ```<tx:Advice>``` 에서 정의한 어드바이스와 포인트 컷을 조합한다. 
 
+나머지 인터페이스 구현 클래스의 빈을 정의한다.
+
 
 
 
@@ -277,10 +279,11 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTM1NjQzNzksMTgwODE1NjE0OCwtNj
-M1MTg4NDIyLC01MTgyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAw
-ODU4LDY3OTg3NTQyNSwxMTgwNTg3Mzg4LDEzNjAxMzI5MjQsLT
-YwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nzc3MTU2MjMsLTIwMDc5
-ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIwMTQwLDM4MjI1NDI4MC
-wtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMDU4OTUxNzMwXX0=
+eyJoaXN0b3J5IjpbMTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxOD
+A4MTU2MTQ4LC02MzUxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0
+MDMsLTE1NjU3MDA4NTgsNjc5ODc1NDI1LDExODA1ODczODgsMT
+M2MDEzMjkyNCwtNjA3Nzk1MjI4LC00NDQyODI2NjQsMTU3Nzcx
+NTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAxND
+AsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQwLDEwNTg5
+NTE3MzBdfQ==
 -->
