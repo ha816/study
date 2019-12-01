@@ -107,13 +107,17 @@ JdbcTemplate을 애플리케이션에서 사용할때는 DI 컨테이너에서 �
 
 JdbcTemplate이 제공하는 주요 메서드
 
+|메서드명| 설명 |
+|--|--|
+|queryForObject  |  |
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MTkxOTQzNiwtNzg4MDIwMTQwLDM4Mj
-I1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMDU4OTUxNzMw
-XX0=
+eyJoaXN0b3J5IjpbMTgwODM1MDA3NCwtMjUxOTE5NDM2LC03OD
+gwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQw
+LDEwNTg5NTE3MzBdfQ==
 -->
