@@ -175,7 +175,7 @@ RowCallbackHandler
 
 |클래스명| 설명  |
 |--|--|
-|DataSourceTransactionManager  | JDBC, MyBatis등 JDBC기반 ㄹ  |
+|DataSourceTransactionManager  | JDBC, MyBatis등 JDBC 기반 라이브러리로 데이터베이스에 접근하는 경우 사용  |
 
 
 
@@ -189,7 +189,7 @@ RowCallbackHandler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3ODQ3MzM1NCwtNDQ0MjgyNjY0LDE1Nz
+eyJoaXN0b3J5IjpbLTYwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nz
 c3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIw
 MTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMD
 U4OTUxNzMwXX0=
