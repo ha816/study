@@ -202,7 +202,11 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 ### 선언적 트랜잭션
 
-선언적 트랜잭션은 미리 선언된 룰에 따라 트랜잭션을 제어하는 방법이다. 선언적 트랜잭션의 장점은 정해진 룰을 준수함으로써 트랜잭션의 시작과 커밋, 롤백 등의 처리를 비즈니스 로직안에 서술할 필요가 없다는 점이다.
+선언적 트랜잭션은 미리 선언된 룰에 따라 트랜잭션을 제어하는 방법이다. 선언적 트랜잭션의 장점은 정해진 룰을 준수함으로써 **트랜잭션의 시작과 커밋, 롤백 등의 처리를 비즈니스 로직안에 서술할 필요가 없다는 점이다.**
+
+스프링 프레임워크는 선언적 트랜잭션으로 @Transactional 또는 XML설정을 이용하는 두 방법을 제공한다. 
+
+@Transactional 에너테이션을 빈의 public 메서드에 추가하는 것으로 대상 메서드의 시작 종료에 맞춰 트랜잭션 시작, 커밋, 롤백이 가능하다. 
 
 
 
@@ -219,9 +223,9 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NDY4MjUwMSwtMTU2NTcwMDg1OCw2Nz
-k4NzU0MjUsMTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUy
-MjgsLTQ0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC
-0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0
-NTkwOSw4MDQ2NDU4NDAsMTA1ODk1MTczMF19
+eyJoaXN0b3J5IjpbLTEyMDU5NDgyNDQsLTE1NjU3MDA4NTgsNj
+c5ODc1NDI1LDExODA1ODczODgsMTM2MDEzMjkyNCwtNjA3Nzk1
+MjI4LC00NDQyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4NjA4MS
+wtMjUxOTE5NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIz
+NDU5MDksODA0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
 -->
