@@ -18,6 +18,9 @@
 </dependency>
 ```
 
+### 애플리케이션 모듈이 제공하는 데이터 소스
+
+Commons DBCP, DriverManagerDataSource를 데이터 소스로 사용할때 설정 방식을 알아보자. JDBC 접속에 필요한 각종 정보와 커넥션 풀의 설정 등은 
 
 
 # 스프링 JDBC
@@ -27,5 +30,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDI4ODk2MTddfQ==
+eyJoaXN0b3J5IjpbMjgwMzQ4ODcxXX0=
 -->
