@@ -4,8 +4,9 @@
 * 애플리케이션 모듈이 제공하는 데이터 소스
 	* Commons DBCP나 Tomcat JDBC Connection Pool과 같은 서드파티나 DriverManagerDataSource같이 스프링이 제공하는 데이터 소스를 빈으로 등록해서 사용하는 방식을 말한다. 이런 방식은 데이터베이스에 접속하기 위한 ID와 패스워드, 접속 대상 URL 같은 정보를 애플리케이션이 직접 관리하고 데이터 소스에 설정해야 한다. 
 * 애플리케이션 서버가 제공하는 데이터 소스
-	* 
+	* 애플리케이션 서버가 정의한 데이터 소스를 JNDI(Java Naming and Directory Interface)를 통해 가져와서 사용하는 방식이다. 이 방식은 데이터 베이스에 접근하기 위해 필요한 각종 정보를 애플리케이션 서버에서 제공하기 때문에 애플리케이션이 데이터 베이스 정보를 관리할 필요가 없다. 
 * 내장형 데이터베이스를 사용하는 데이터 소스
+	* HSQDB, H@같은 내ㅈ
 
 # 스프링 JDBC
 
@@ -14,5 +15,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODQwNDc5MTJdfQ==
+eyJoaXN0b3J5IjpbOTQ4MjMwMzc1XX0=
 -->
