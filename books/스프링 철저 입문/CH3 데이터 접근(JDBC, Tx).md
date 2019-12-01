@@ -131,6 +131,13 @@ public class JdbcRoomDao {
 }
 ```
 
+```
+<beans xlms =... >
+	<import resource="classpath:datesource-embedded.xml" />
+	<context:component-scan base-package="com.example"
+</beans>
+```
+
 
 
 
@@ -141,7 +148,7 @@ public class JdbcRoomDao {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MDY0MjEwNywtMjAwNzk4NjA4MSwtMj
+eyJoaXN0b3J5IjpbLTUwMjAwOTc3NiwtMjAwNzk4NjA4MSwtMj
 UxOTE5NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5
 MDksODA0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
 -->
