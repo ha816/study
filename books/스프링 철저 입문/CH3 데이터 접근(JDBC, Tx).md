@@ -163,7 +163,9 @@ ResultSetExtractor
 : RowMapper와 마찬가지로 원하는 POJO형태로 매핑을 하고 싶을때 사용한다. RowMapper와 차이점은 여러 행을 자유롭게 이동할 수 있다는 점이다. 그래서 ResultSetExtractor는 여러 행에서 필요한 값을 꺼내서 POJO로 만들수 있다.
 
 RowCallbackHandler
-: 이 인터페이스는ㅇ
+: 이 인터페이스는의 메서드는 반환값이 없다. 그래서 ResultSet 정보를 처리결과를 반환하기 위해 쓰는것이 아니라 별도의 다른 처리를 하고 싶을때 사용한다. ResultSet에 읽은 데이터를 파일형태나, 조회된 데이터를 검증하는 용도로 활용할 수 있다. 
+
+
 
 
 
@@ -175,7 +177,7 @@ RowCallbackHandler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTA0ODU2NSwtNDQ0MjgyNjY0LDE1Nz
+eyJoaXN0b3J5IjpbMTQ0ODI2Mzc5MCwtNDQ0MjgyNjY0LDE1Nz
 c3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIw
 MTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMD
 U4OTUxNzMwXX0=
