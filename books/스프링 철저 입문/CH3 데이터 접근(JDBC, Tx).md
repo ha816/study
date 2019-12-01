@@ -101,11 +101,11 @@ XML 기반 설정방식
 
 ## JdbcTemplate 
 
-스프링 JDBC는 JdbcTemplate, ParameterJdbcTemplate와 같이 SQL만 가지고도 데이터베이스를 쉽게 다를 수 있게 도와주는 클래스를 제공한다. 
+스프링 JDBC는 JdbcTemplate, NamedParameterJdbcTemplate와 같이 SQL만 가지고도 데이터베이스를 쉽게 다를 수 있게 도와주는 클래스를 제공한다. 특히 NamedParameterJdbcTemplate는 사실상 데이터를 조작하는 처리를 JdbcTemplate에 위임하게 되는데, 이 둘의 차이는 JdbcTemplate가 데이터 바인딩시 '?'문자를 플레이스 홀더로 쓰는 반면, NamedParameterJdbcTemplate는 바인딩시 파라미터 이름을 쓸수가 있어서 '?'를 좀더 직괁
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMjY0OTEwOSwtNTYyMzQ1OTA5LDgwND
-Y0NTg0MCwxMDU4OTUxNzMwXX0=
+eyJoaXN0b3J5IjpbLTE5MzU3NDkwMjEsLTU2MjM0NTkwOSw4MD
+Q2NDU4NDAsMTA1ODk1MTczMF19
 -->
