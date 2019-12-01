@@ -93,6 +93,7 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 
 ### 의존성 주입
 
+
 * 설정자 기반 의존성 주입 방식(setter-based dependency injection)
 * 생성자 기반 의존성 주입 방식(constructor-based dependency injection)
 * 필드 기반 의존성 주입 방식(field-based injection)
@@ -123,5 +124,5 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAzNzMxMzQzLDE4MzgxNTE2OTNdfQ==
+eyJoaXN0b3J5IjpbLTM5Mzg4NjkxNSwxODM4MTUxNjkzXX0=
 -->
