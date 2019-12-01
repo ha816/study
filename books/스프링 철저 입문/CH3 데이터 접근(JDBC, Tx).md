@@ -182,6 +182,10 @@ RowCallbackHandler
 
 ### 트랜잭션 관리자 정의(TransactionManager)
 
+트랜잭션 관리자를 사용할때는 두 가지 작업을 해야 한다. 
+* PlatformTransactionManager의 빈을 구현한다.
+* 트랜잭션을 관리하는 메서드를 정의한다. 
+
 
 
 
@@ -199,7 +203,7 @@ RowCallbackHandler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTE2ODQzOCwtNjA3Nzk1MjI4LC00ND
+eyJoaXN0b3J5IjpbMTM2MDEzMjkyNCwtNjA3Nzk1MjI4LC00ND
 QyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5
 NDM2LC03ODgwMjAxNDAsMzgyMjU0MjgwLC01NjIzNDU5MDksOD
 A0NjQ1ODQwLDEwNTg5NTE3MzBdfQ==
