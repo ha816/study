@@ -262,7 +262,7 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 ```<tx:Advice>``` 요소를 이용해서 트랜잭션 정의에 관한 어드바이스를 정의한다. 그리고 ```<tx:attributes>```를 이용해서 트랜잭션 관리 대상이 되는 메서드 정의 및 트랜잭션 설정을 수행한다. 메서드 명이 get으로 시작하는것은 읽기 전용 그 외에는 쓰기 가능한 트랜잭션으로 정의한다. 
 
-```<aop:config>```를 이용해서 포인트컷과 어드바이저를 정의한다. 포인트 컷은 인터페이스 구현 클래스의 메서드를 대상으로 한다. 어드바이저는 앞서 ```<tx:Advice>``` djem
+```<aop:config>```를 이용해서 포인트컷과 어드바이저를 정의한다. 포인트 컷은 인터페이스 구현 클래스의 메서드를 대상으로 한다. 어드바이저는 앞서 ```<tx:Advice>``` 정ㅇ
 
 
 
@@ -277,7 +277,7 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2ODM1OTc4NCwtNjM1MTg4NDIyLC01MT
+eyJoaXN0b3J5IjpbMTgwODE1NjE0OCwtNjM1MTg4NDIyLC01MT
 gyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQy
 NSwxMTgwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtND
 Q0MjgyNjY0LDE1Nzc3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkx
