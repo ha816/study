@@ -216,7 +216,12 @@ XML 기반 설정 방식을 이용한 빈 정의
 * @Transactional("tx1")
 	* "tx1" id를 가지는 트랜잭션 관리자를 사용한다.
 * @Transactional(value = "tx2", propagation=Propagation.REQUIRES_NEW)
-	* tx2 트랜잭션 관리자를 사용하고 전ㅍ
+	* tx2 트랜잭션 관리자를 사용하고 전파방식은 REQUIRES_NEW이다. 
+
+@Transactional의 사용법
+@Transactional애너테이션은 클래스와 메서드에 부여할 수 있다. 차이는 애너테이션이 적용되는 범위이다. 
+
+
 
 
 
@@ -233,10 +238,10 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjUwNTMzMiwxODU0ODcyNDAzLC0xNT
-Y1NzAwODU4LDY3OTg3NTQyNSwxMTgwNTg3Mzg4LDEzNjAxMzI5
-MjQsLTYwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nzc3MTU2MjMsLT
-IwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIwMTQwLDM4MjI1
-NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMDU4OTUxNzMwXX
-0=
+eyJoaXN0b3J5IjpbLTUxODIzNDU0LDE4NTQ4NzI0MDMsLTE1Nj
+U3MDA4NTgsNjc5ODc1NDI1LDExODA1ODczODgsMTM2MDEzMjky
+NCwtNjA3Nzk1MjI4LC00NDQyODI2NjQsMTU3NzcxNTYyMywtMj
+AwNzk4NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAxNDAsMzgyMjU0
+MjgwLC01NjIzNDU5MDksODA0NjQ1ODQwLDEwNTg5NTE3MzBdfQ
+==
 -->
