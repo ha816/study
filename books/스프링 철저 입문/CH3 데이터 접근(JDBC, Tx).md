@@ -221,7 +221,7 @@ XML 기반 설정 방식을 이용한 빈 정의
 @Transactional의 사용법
 @Transactional애너테이션은 클래스와 메서드에 부여할 수 있다. 차이는 애너테이션이 적용되는 범위이다. 
 
-클래스에 적용하면 클래스에 어떤 메서드를 실행해도 기본적으
+클래스에 적용하면 클래스에 어떤 메서드를 실행해도 기본적으로 트랜잭션이 적용된다.  클래스에 적용하지 않고 특정 메서드에만 붙이면 그 메서드만 트랜잭션이 적용된다. 클래스와 메서드에 모두 붙이면 메서드에 정의한 애너테이션을 따라간다. 
 
 
 
@@ -240,10 +240,10 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2ODMzNDA3NiwtNTE4MjM0NTQsMTg1ND
-g3MjQwMywtMTU2NTcwMDg1OCw2Nzk4NzU0MjUsMTE4MDU4NzM4
-OCwxMzYwMTMyOTI0LC02MDc3OTUyMjgsLTQ0NDI4MjY2NCwxNT
-c3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5MTk0MzYsLTc4ODAy
-MDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMT
-A1ODk1MTczMF19
+eyJoaXN0b3J5IjpbNDg3NDcyMDQzLC01MTgyMzQ1NCwxODU0OD
+cyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQyNSwxMTgwNTg3Mzg4
+LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nz
+c3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIw
+MTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMD
+U4OTUxNzMwXX0=
 -->
