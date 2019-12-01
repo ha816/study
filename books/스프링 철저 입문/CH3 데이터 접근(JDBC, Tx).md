@@ -49,14 +49,13 @@ public class PoolingDateSourceCofig {
 
 XML 기반 설정방식
 ```
-<beans
-	xlms=...
-	...
+<beans xlms =...... >
 	<context:propery-placeholder location="classpath:META-INF/jdbc.properties"/>
 
 	<bean id = "dataSource" class = "org.apache,commons.dbcp2.BasicDataSource" destory-method="close">
 		<property name="driverClassName" value="${database.driverClassName}"/>
-		
+		<property name="url" value="${database.url}"/>
+		...		
 	</bean>
 </beans>
 ```
@@ -67,5 +66,5 @@ XML 기반 설정방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ4Njc5MjQzXX0=
+eyJoaXN0b3J5IjpbMTgxMjI2MjQ0Nl19
 -->
