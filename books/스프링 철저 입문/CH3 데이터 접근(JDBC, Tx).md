@@ -46,7 +46,6 @@ public class PoolingDateSourceCofig {
 	}
 }
 ```
-
 XML 기반 설정방식
 ```
 <beans xlms =... >
@@ -62,6 +61,26 @@ XML 기반 설정방식
 
 ### 애플리케이션 서버가 제공하는 데이터 소스
 
+애플리케이션 서버에 'jdbc/mydb'라는 JNDI명으로 커넥션 풀이 만들어져 있다고 하자. 
+
+자바 기반 설정방식
+```
+@Configuration
+@PropertySoucre("jdbc.properties")
+public class PoolingDateSourceCofig {
+	@Bean(destoryMethod = "close")
+	public DataSource dateSource(
+		@Value("${database.driverClassName}") String driverClassName,
+		@Value("${database.url}") String url,
+		...
+		) {
+		BasicDataSoucre dataSource= new BasicDataSource();
+		dataSource.setDriverClassName(driverClassName);
+		...
+		return dataSource;
+	}
+}
+```
 
 # 스프링 JDBC
 
@@ -70,5 +89,5 @@ XML 기반 설정방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODk1MTczMF19
+eyJoaXN0b3J5IjpbLTQwOTk0MzcxMSwxMDU4OTUxNzMwXX0=
 -->
