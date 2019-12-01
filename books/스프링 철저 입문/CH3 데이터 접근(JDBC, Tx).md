@@ -74,7 +74,14 @@ public class JndiDateSourceCofig {
 	}
 }
 ```
-lookup 메서드를 통해서 JNDI 명이 "java:comp/env/jdbc.mydb"인 리소스
+lookup 메서드를 통해서 JNDI 명이 "java:comp/env/jdbc.mydb"인 리소스(데이터소스)를 찾아온다. 
+XML 기반 설정방식
+```
+<beans xlms =... >
+	<context:propery-placeholder location="classpath:META-INF/jdbc.properties"/>
+	<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/mydb" />
+</beans>
+```
 
 # 스프링 JDBC
 
@@ -83,6 +90,6 @@ lookup 메서드를 통해서 JNDI 명이 "java:comp/env/jdbc.mydb"인 리소스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NDc0Nzc4NSw4MDQ2NDU4NDAsMTA1OD
+eyJoaXN0b3J5IjpbMTY0OTk3NjAwNCw4MDQ2NDU4NDAsMTA1OD
 k1MTczMF19
 -->
