@@ -227,8 +227,7 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 #### XML설정을 이용한 선언적 트랜잭션
 
-@Tran
-
+XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트랜잭션 전용 XML 스키마를 사용한다.**
 
 
 
@@ -244,10 +243,10 @@ XML 기반 설정 방식을 이용한 빈 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMyMzA5MzExLC01MTgyMzQ1NCwxODU0OD
-cyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQyNSwxMTgwNTg3Mzg4
-LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nz
-c3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNiwtNzg4MDIw
-MTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0NTg0MCwxMD
-U4OTUxNzMwXX0=
+eyJoaXN0b3J5IjpbLTYzNTE4ODQyMiwtNTE4MjM0NTQsMTg1ND
+g3MjQwMywtMTU2NTcwMDg1OCw2Nzk4NzU0MjUsMTE4MDU4NzM4
+OCwxMzYwMTMyOTI0LC02MDc3OTUyMjgsLTQ0NDI4MjY2NCwxNT
+c3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5MTk0MzYsLTc4ODAy
+MDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOSw4MDQ2NDU4NDAsMT
+A1ODk1MTczMF19
 -->
