@@ -239,9 +239,16 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 	</bean>
 	<tx:advice id="txAdvice">
 		<tx:attributes>
-			<tx:attributes>
+			<tx:method name="get*" readonly="true">
+			<tx:method name="*">
 		</tx:attributes>
 	</tx:advice>
+
+	<aop:config>
+		<aop:pointcut id="txPointcut"
+		/>
+		<aop:advisor advice-
+	</aop:config>
 
 </beans>
 
@@ -261,10 +268,10 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUwMTA3NDcsLTYzNTE4ODQyMiwtNTE4Mj
-M0NTQsMTg1NDg3MjQwMywtMTU2NTcwMDg1OCw2Nzk4NzU0MjUs
-MTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUyMjgsLTQ0ND
-I4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5MTk0
-MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOSw4MD
-Q2NDU4NDAsMTA1ODk1MTczMF19
+eyJoaXN0b3J5IjpbLTEzNjI5ODczMDgsLTYzNTE4ODQyMiwtNT
+E4MjM0NTQsMTg1NDg3MjQwMywtMTU2NTcwMDg1OCw2Nzk4NzU0
+MjUsMTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUyMjgsLT
+Q0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5
+MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0NTkwOS
+w4MDQ2NDU4NDAsMTA1ODk1MTczMF19
 -->
