@@ -29,7 +29,12 @@ Commons DBCP, DriverManagerDataSource를 데이터 소스로 사용할때 설정
 public class PoolingDateSourceCofig {
 	@Bean(destoryMethod = "close")
 	public DataSource dateSource(
-		
+		@Value("${database.driverClassName}") String driverClassName,
+		@Value("${database.url}") String url,
+		...
+		) {
+	
+	}
 	)
 
 }
@@ -44,5 +49,5 @@ public class PoolingDateSourceCofig {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTA0NTI0MTFdfQ==
+eyJoaXN0b3J5IjpbNTc2Mzg3MjEyXX0=
 -->
