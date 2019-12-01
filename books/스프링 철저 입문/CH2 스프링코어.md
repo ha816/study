@@ -74,7 +74,9 @@ UserService userService = (UserService) context.getBean("userService");
 ```
 @Configuration
 @ComponentScan("com.example.demo")
-public class AppConfig { // }
+public class AppConfig { 
+... 
+}
 ```
 
 애플리케이션 컨텍스트 생성시 사용할 Configuration에 @ComponentScan("com.example.demo") 애노테이션을 부여하면 해당 패키지(com.example.demo) 이하의 범위에서 애너테이션이 붙은 클래스를 스캔하여, 애플리케이션 컨텍스트에 자동으로 등록한다. 
@@ -121,5 +123,5 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzODE1MTY5M119
+eyJoaXN0b3J5IjpbLTYzNzQ5NzMzNSwxODM4MTUxNjkzXX0=
 -->
