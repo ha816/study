@@ -52,7 +52,11 @@ XML 기반 설정방식
 <beans
 	xlms=...
 	...
-	<context:component-scan base-package="com.example.demo" />
+	<context:propery-placeholder location="classpath:META-INF/jdbc.properties"/>
+
+	<bean id = "dataSource" clas>
+		
+	</bean>
 </beans>
 ```
 # 스프링 JDBC
@@ -62,5 +66,5 @@ XML 기반 설정방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4NzI1NjhdfQ==
+eyJoaXN0b3J5IjpbLTE3MTU2NTQ5NzFdfQ==
 -->
