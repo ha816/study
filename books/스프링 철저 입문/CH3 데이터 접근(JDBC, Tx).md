@@ -268,7 +268,8 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 ### 명시적 트랜잭션
 
-명시적 트랜잭션이란 커밋이나 롤백 같은 트랜잭션 처리를 코드에 직접 기술하는 방법이다. 
+명시적 트랜잭션이란 커밋이나 롤백 같은 트랜잭션 처리를 코드에 직접 기술하는 방법이다. 메서드 단위보다 더 작은 단위로 트랜잭션을 제어하고 싶거나 선언전 트랜잭션으로 표현하기 어려운 섬세한 제어를 할때 이 방법을 쓴다. 
+스프링 프레임워크는  명시적 트랜잭션을 이용하는 방법으로 PlatfromTransactionManager와 TransactionTemplate을 사용하는 두갖
 
 
 
@@ -281,11 +282,11 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYyOTQ5OTY5LDMzNDEwMzExNiwxMjIxNT
-U0MzIyLC0xNzEzNTY0Mzc5LDE4MDgxNTYxNDgsLTYzNTE4ODQy
-MiwtNTE4MjM0NTQsMTg1NDg3MjQwMywtMTU2NTcwMDg1OCw2Nz
-k4NzU0MjUsMTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUy
-MjgsLTQ0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC
-0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0
-NTkwOV19
+eyJoaXN0b3J5IjpbNzQ3NjM4ODE2LDQ2Mjk0OTk2OSwzMzQxMD
+MxMTYsMTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxODA4MTU2MTQ4
+LC02MzUxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0MDMsLTE1Nj
+U3MDA4NTgsNjc5ODc1NDI1LDExODA1ODczODgsMTM2MDEzMjky
+NCwtNjA3Nzk1MjI4LC00NDQyODI2NjQsMTU3NzcxNTYyMywtMj
+AwNzk4NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAxNDAsMzgyMjU0
+MjgwXX0=
 -->
