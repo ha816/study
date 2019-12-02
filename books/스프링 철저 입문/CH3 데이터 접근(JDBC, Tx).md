@@ -268,7 +268,7 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 ### 명시적 트랜잭션
 
-
+명시적 트랜잭션이란 커밋이나 롤백 같은 트랜잭션 처리를 코드에 직접 기술하는 방법이다. 
 
 
 
@@ -281,11 +281,11 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM0MTAzMTE2LDEyMjE1NTQzMjIsLTE3MT
-M1NjQzNzksMTgwODE1NjE0OCwtNjM1MTg4NDIyLC01MTgyMzQ1
-NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQyNSwxMT
-gwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtNDQ0Mjgy
-NjY0LDE1Nzc3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNi
-wtNzg4MDIwMTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0
-NTg0MF19
+eyJoaXN0b3J5IjpbNDYyOTQ5OTY5LDMzNDEwMzExNiwxMjIxNT
+U0MzIyLC0xNzEzNTY0Mzc5LDE4MDgxNTYxNDgsLTYzNTE4ODQy
+MiwtNTE4MjM0NTQsMTg1NDg3MjQwMywtMTU2NTcwMDg1OCw2Nz
+k4NzU0MjUsMTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUy
+MjgsLTQ0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC
+0yNTE5MTk0MzYsLTc4ODAyMDE0MCwzODIyNTQyODAsLTU2MjM0
+NTkwOV19
 -->
