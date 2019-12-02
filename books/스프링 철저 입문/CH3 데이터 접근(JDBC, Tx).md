@@ -266,6 +266,8 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 나머지 인터페이스 구현 클래스의 빈을 정의한다.
 
+### 명시적 트랜잭션
+
 
 
 
@@ -279,11 +281,11 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxOD
-A4MTU2MTQ4LC02MzUxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0
-MDMsLTE1NjU3MDA4NTgsNjc5ODc1NDI1LDExODA1ODczODgsMT
-M2MDEzMjkyNCwtNjA3Nzk1MjI4LC00NDQyODI2NjQsMTU3Nzcx
-NTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5NDM2LC03ODgwMjAxND
-AsMzgyMjU0MjgwLC01NjIzNDU5MDksODA0NjQ1ODQwLDEwNTg5
-NTE3MzBdfQ==
+eyJoaXN0b3J5IjpbMzM0MTAzMTE2LDEyMjE1NTQzMjIsLTE3MT
+M1NjQzNzksMTgwODE1NjE0OCwtNjM1MTg4NDIyLC01MTgyMzQ1
+NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQyNSwxMT
+gwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtNDQ0Mjgy
+NjY0LDE1Nzc3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkxOTQzNi
+wtNzg4MDIwMTQwLDM4MjI1NDI4MCwtNTYyMzQ1OTA5LDgwNDY0
+NTg0MF19
 -->
