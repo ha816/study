@@ -275,6 +275,11 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 PlatfromTransactionManager을 이용한 명시적 트랜잭션 제어
 ```
 @Autowired
+PlatfromTransactionManager txManager;
+
+@Autowired
+jdbcDao dao;
+
 
 ```
 
@@ -289,11 +294,11 @@ PlatfromTransactionManager을 이용한 명시적 트랜잭션 제어
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MTUyMzQ4OSwtNzEyMTIyNzAxLC00Mj
-E5OTk0MCw0NjI5NDk5NjksMzM0MTAzMTE2LDEyMjE1NTQzMjIs
-LTE3MTM1NjQzNzksMTgwODE1NjE0OCwtNjM1MTg4NDIyLC01MT
-gyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQy
-NSwxMTgwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtND
-Q0MjgyNjY0LDE1Nzc3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkx
-OTQzNl19
+eyJoaXN0b3J5IjpbLTEwOTkwODYyOTEsLTcxMjEyMjcwMSwtND
+IxOTk5NDAsNDYyOTQ5OTY5LDMzNDEwMzExNiwxMjIxNTU0MzIy
+LC0xNzEzNTY0Mzc5LDE4MDgxNTYxNDgsLTYzNTE4ODQyMiwtNT
+E4MjM0NTQsMTg1NDg3MjQwMywtMTU2NTcwMDg1OCw2Nzk4NzU0
+MjUsMTE4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUyMjgsLT
+Q0NDI4MjY2NCwxNTc3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5
+MTk0MzZdfQ==
 -->
