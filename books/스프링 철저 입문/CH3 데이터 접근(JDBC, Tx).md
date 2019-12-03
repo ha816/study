@@ -331,6 +331,8 @@ TransactionTemplate 자바 기반 설정 방식
 
 ### 트랜잭션 격리 수준과 전파방식
 
+트랜잭션 격리 수준(Transaction Isolation Level)
+참조하는 데이터나 변경한 데이터를 다른 트랜잭션으로 부터 어떻게 격리할 것인지를 결정한다. 격리 수준은 여러 트랜잭션의 동시 실행과 데이터의 일관성과 관련이 깊다. 
 
 
 
@@ -344,11 +346,11 @@ TransactionTemplate 자바 기반 설정 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2ODQ5Njg4MywtMjAwNDIwNzUyMCwxNz
-c0NDIzOTczLC03MTIxMjI3MDEsLTQyMTk5OTQwLDQ2Mjk0OTk2
-OSwzMzQxMDMxMTYsMTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxOD
-A4MTU2MTQ4LC02MzUxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0
-MDMsLTE1NjU3MDA4NTgsNjc5ODc1NDI1LDExODA1ODczODgsMT
-M2MDEzMjkyNCwtNjA3Nzk1MjI4LC00NDQyODI2NjQsMTU3Nzcx
-NTYyM119
+eyJoaXN0b3J5IjpbMTQ0ODU0MDE3LC0yNjg0OTY4ODMsLTIwMD
+QyMDc1MjAsMTc3NDQyMzk3MywtNzEyMTIyNzAxLC00MjE5OTk0
+MCw0NjI5NDk5NjksMzM0MTAzMTE2LDEyMjE1NTQzMjIsLTE3MT
+M1NjQzNzksMTgwODE1NjE0OCwtNjM1MTg4NDIyLC01MTgyMzQ1
+NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQyNSwxMT
+gwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtNDQ0Mjgy
+NjY0XX0=
 -->
