@@ -299,6 +299,7 @@ TransactionTemplate을 이용한 명시적 트랜잭션 제어
 
 TransactionTemplate을 이용하면 PlatfromTransactionManager 보다도 구조적으로 트랜잭션 제어를 기술할 수 있다. 
 
+```
 
 ```
 
@@ -312,11 +313,11 @@ TransactionTemplate을 이용하면 PlatfromTransactionManager 보다도 구조�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDQyMDc1MjAsMTc3NDQyMzk3MywtNz
-EyMTIyNzAxLC00MjE5OTk0MCw0NjI5NDk5NjksMzM0MTAzMTE2
-LDEyMjE1NTQzMjIsLTE3MTM1NjQzNzksMTgwODE1NjE0OCwtNj
-M1MTg4NDIyLC01MTgyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAw
-ODU4LDY3OTg3NTQyNSwxMTgwNTg3Mzg4LDEzNjAxMzI5MjQsLT
-YwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nzc3MTU2MjMsLTIwMDc5
-ODYwODFdfQ==
+eyJoaXN0b3J5IjpbLTc0NTMxMzAyNiwtMjAwNDIwNzUyMCwxNz
+c0NDIzOTczLC03MTIxMjI3MDEsLTQyMTk5OTQwLDQ2Mjk0OTk2
+OSwzMzQxMDMxMTYsMTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxOD
+A4MTU2MTQ4LC02MzUxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0
+MDMsLTE1NjU3MDA4NTgsNjc5ODc1NDI1LDExODA1ODczODgsMT
+M2MDEzMjkyNCwtNjA3Nzk1MjI4LC00NDQyODI2NjQsMTU3Nzcx
+NTYyM119
 -->
