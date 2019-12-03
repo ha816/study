@@ -318,7 +318,15 @@ public void doTransaction(){
 
 TransactionTemplate 자바 기반 설정 방식
 
+```
+@Configuration
 
+	@Bean
+	public TransactionTemplate transactionTemplate(PlatformTransactionManager transactionManager) {
+	TransactionTemplate transactionTemplate = new Transactio
+}
+
+```
 
 
 
@@ -331,11 +339,11 @@ TransactionTemplate 자바 기반 설정 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUwNzc0MDExLC0yMDA0MjA3NTIwLDE3Nz
-Q0MjM5NzMsLTcxMjEyMjcwMSwtNDIxOTk5NDAsNDYyOTQ5OTY5
-LDMzNDEwMzExNiwxMjIxNTU0MzIyLC0xNzEzNTY0Mzc5LDE4MD
-gxNTYxNDgsLTYzNTE4ODQyMiwtNTE4MjM0NTQsMTg1NDg3MjQw
-MywtMTU2NTcwMDg1OCw2Nzk4NzU0MjUsMTE4MDU4NzM4OCwxMz
-YwMTMyOTI0LC02MDc3OTUyMjgsLTQ0NDI4MjY2NCwxNTc3NzE1
-NjIzXX0=
+eyJoaXN0b3J5IjpbMTkyNzQwNjU4NywtMjAwNDIwNzUyMCwxNz
+c0NDIzOTczLC03MTIxMjI3MDEsLTQyMTk5OTQwLDQ2Mjk0OTk2
+OSwzMzQxMDMxMTYsMTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxOD
+A4MTU2MTQ4LC02MzUxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0
+MDMsLTE1NjU3MDA4NTgsNjc5ODc1NDI1LDExODA1ODczODgsMT
+M2MDEzMjkyNCwtNjA3Nzk1MjI4LC00NDQyODI2NjQsMTU3Nzcx
+NTYyM119
 -->
