@@ -300,7 +300,16 @@ TransactionTemplate을 이용한 명시적 트랜잭션 제어
 TransactionTemplate을 이용하면 PlatfromTransactionManager 보다도 구조적으로 트랜잭션 제어를 기술할 수 있다. 
 
 ```
+@Autowired
+TransactionTemplate transactionTemplate;
 
+@Autowired
+jdbcDao dao;
+
+public void doTransaction(){
+	DefaultTransactionDefinition def = new DefaultTransactionDefinition();
+	def.setName("transactionName);
+	def.setReadOnly(false);
 ```
 
 
@@ -313,7 +322,7 @@ TransactionTemplate을 이용하면 PlatfromTransactionManager 보다도 구조�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NTMxMzAyNiwtMjAwNDIwNzUyMCwxNz
+eyJoaXN0b3J5IjpbLTk3MzMzNTEzNiwtMjAwNDIwNzUyMCwxNz
 c0NDIzOTczLC03MTIxMjI3MDEsLTQyMTk5OTQwLDQ2Mjk0OTk2
 OSwzMzQxMDMxMTYsMTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxOD
 A4MTU2MTQ4LC02MzUxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0
