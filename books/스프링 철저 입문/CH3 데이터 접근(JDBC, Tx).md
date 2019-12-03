@@ -289,7 +289,10 @@ public void doTransaction(){
 	try {
 		// do Something
 	} catch (Exception e){
+		txManager.rollback(status);
+		throw new DateAccessException("error oucucred");
 	}
+	t
 
 }
 
@@ -307,11 +310,11 @@ public void doTransaction(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NDQyMzk3MywtNzEyMTIyNzAxLC00Mj
-E5OTk0MCw0NjI5NDk5NjksMzM0MTAzMTE2LDEyMjE1NTQzMjIs
-LTE3MTM1NjQzNzksMTgwODE1NjE0OCwtNjM1MTg4NDIyLC01MT
-gyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQy
-NSwxMTgwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtND
-Q0MjgyNjY0LDE1Nzc3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkx
-OTQzNl19
+eyJoaXN0b3J5IjpbLTgxOTY3MDUzMSwxNzc0NDIzOTczLC03MT
+IxMjI3MDEsLTQyMTk5OTQwLDQ2Mjk0OTk2OSwzMzQxMDMxMTYs
+MTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxODA4MTU2MTQ4LC02Mz
+UxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0MDMsLTE1NjU3MDA4
+NTgsNjc5ODc1NDI1LDExODA1ODczODgsMTM2MDEzMjkyNCwtNj
+A3Nzk1MjI4LC00NDQyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4
+NjA4MV19
 -->
