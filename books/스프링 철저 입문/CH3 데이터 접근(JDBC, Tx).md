@@ -308,6 +308,10 @@ jdbcDao dao;
 
 public void doTransaction(){
 	transactionTemplate.execute(new TransactionCallbackWithoutResult(){
+		@Ovveride
+		protected void doInTransactionWithoutResult(Transaction status){
+			
+		}
 	}
 }
 ```
@@ -322,11 +326,11 @@ public void doTransaction(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAyMjAzMzk4LC0yMDA0MjA3NTIwLDE3Nz
-Q0MjM5NzMsLTcxMjEyMjcwMSwtNDIxOTk5NDAsNDYyOTQ5OTY5
-LDMzNDEwMzExNiwxMjIxNTU0MzIyLC0xNzEzNTY0Mzc5LDE4MD
-gxNTYxNDgsLTYzNTE4ODQyMiwtNTE4MjM0NTQsMTg1NDg3MjQw
-MywtMTU2NTcwMDg1OCw2Nzk4NzU0MjUsMTE4MDU4NzM4OCwxMz
-YwMTMyOTI0LC02MDc3OTUyMjgsLTQ0NDI4MjY2NCwxNTc3NzE1
-NjIzXX0=
+eyJoaXN0b3J5IjpbLTE1ODA1Njc3MTYsLTIwMDQyMDc1MjAsMT
+c3NDQyMzk3MywtNzEyMTIyNzAxLC00MjE5OTk0MCw0NjI5NDk5
+NjksMzM0MTAzMTE2LDEyMjE1NTQzMjIsLTE3MTM1NjQzNzksMT
+gwODE1NjE0OCwtNjM1MTg4NDIyLC01MTgyMzQ1NCwxODU0ODcy
+NDAzLC0xNTY1NzAwODU4LDY3OTg3NTQyNSwxMTgwNTg3Mzg4LD
+EzNjAxMzI5MjQsLTYwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nzc3
+MTU2MjNdfQ==
 -->
