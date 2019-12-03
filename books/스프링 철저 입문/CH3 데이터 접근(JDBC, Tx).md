@@ -323,10 +323,15 @@ TransactionTemplate 자바 기반 설정 방식
 
 	@Bean
 	public TransactionTemplate transactionTemplate(PlatformTransactionManager transactionManager) {
-	TransactionTemplate transactionTemplate = new Transactio
+	TransactionTemplate transactionTemplate = new TransactionTemplate(transactionManager);
+	transactionTemplate .setIsolationLevel(...)
+	return transactionTemplate;
 }
-
 ```
+
+### 트랜잭션 격리 수준과 전파방식
+
+
 
 
 
@@ -339,7 +344,7 @@ TransactionTemplate 자바 기반 설정 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNzQwNjU4NywtMjAwNDIwNzUyMCwxNz
+eyJoaXN0b3J5IjpbLTI2ODQ5Njg4MywtMjAwNDIwNzUyMCwxNz
 c0NDIzOTczLC03MTIxMjI3MDEsLTQyMTk5OTQwLDQ2Mjk0OTk2
 OSwzMzQxMDMxMTYsMTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxOD
 A4MTU2MTQ4LC02MzUxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0
