@@ -342,7 +342,7 @@ TransactionTemplate 자바 기반 설정 방식
 | READ_UNCOMMITTED| 더티리드(Dirty Read), 반복되지 않은 읽기(Unrepeatable Read), 팬텀 읽기(Phantom Read)가 발생한다. 이 격리 수준은 커밋되지 않은 변경 데이터를 다른 트랜잭션에서 참조하는 것을 허용한다. 만약 변경 데이터가 롤백된 경우 다음 트랜잭션에서는 무효한 데이터를 조회하게 된다. |
 | READ_COMMITTED| 더티리드(Dirty Read)는 방지하지만, 반복되지 않은 읽기(Unrepeatable Read), 팬텀 읽기(Phantom Read)는 발생한다. 이 격리 수준은 커밋되지 않은 변경 데이터를 다른 트랜잭션에서 참조하는 것을 금지한다. |
 | REPEATABLE_READ| 더티리드, 반복되지 않은 읽기를 방지하지만 팬텀읽기는 발생한다. |
-| SE| 더티리드, 반복되지 않은 읽기를 방지하지만 팬텀읽기는 발생한다. |
+| SERIALIZABLE| 더티리드, 반복되지 않은 읽기를 방지하지만 팬텀읽기는 발생한다. |
 
 
 
@@ -360,7 +360,7 @@ TransactionTemplate 자바 기반 설정 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjY1MzY2NzUsMTgyNzYwNjM1MywtMj
+eyJoaXN0b3J5IjpbLTE1NTUwMzAyNjIsMTgyNzYwNjM1MywtMj
 Y4NDk2ODgzLC0yMDA0MjA3NTIwLDE3NzQ0MjM5NzMsLTcxMjEy
 MjcwMSwtNDIxOTk5NDAsNDYyOTQ5OTY5LDMzNDEwMzExNiwxMj
 IxNTU0MzIyLC0xNzEzNTY0Mzc5LDE4MDgxNTYxNDgsLTYzNTE4
