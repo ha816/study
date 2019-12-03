@@ -331,8 +331,15 @@ TransactionTemplate 자바 기반 설정 방식
 
 ### 트랜잭션 격리 수준과 전파방식
 
-트랜잭션 격리 수준(Transaction Isolation Level)
-참조하는 데이터나 변경한 데이터를 다른 트랜잭션으로 부터 어떻게 격리할 것인지를 결정한다. 격리 수준은 여러 트랜잭션의 동시 실행과 데이터의 일관성과 관련이 깊다. 
+>트랜잭션 격리 수준(Transaction Isolation Level)참조하는 데이터나 변경한 데이터를 다른 트랜잭션으로 부터 어떻게 격리할 것인지를 결정한다. 격리 수준은 여러 트랜잭션의 동시 실행과 데이터의 일관성과 관련이 깊다. 
+
+스프링 프레임 워크에서는 데이터베이스의 기본 설정과 4개의 트랜잭션 격리 수준을 이용할수 있다. 스프링 프레임워크에서 지원하는 격리 수준은 아래와 같다. 다만 지원하는 모든 격리 수준이 실제로 사용할 수 있는지는 사용하는 데이터베이스를 어떻게 구현했느냐에 따라 달라질 수 있다. 
+
+|  |  |
+|--|--|
+|  |  |
+
+
 
 
 
@@ -346,11 +353,11 @@ TransactionTemplate 자바 기반 설정 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0ODU0MDE3LC0yNjg0OTY4ODMsLTIwMD
-QyMDc1MjAsMTc3NDQyMzk3MywtNzEyMTIyNzAxLC00MjE5OTk0
-MCw0NjI5NDk5NjksMzM0MTAzMTE2LDEyMjE1NTQzMjIsLTE3MT
-M1NjQzNzksMTgwODE1NjE0OCwtNjM1MTg4NDIyLC01MTgyMzQ1
-NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQyNSwxMT
-gwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtNDQ0Mjgy
-NjY0XX0=
+eyJoaXN0b3J5IjpbMTUxMTUzMjc1MSwtMjY4NDk2ODgzLC0yMD
+A0MjA3NTIwLDE3NzQ0MjM5NzMsLTcxMjEyMjcwMSwtNDIxOTk5
+NDAsNDYyOTQ5OTY5LDMzNDEwMzExNiwxMjIxNTU0MzIyLC0xNz
+EzNTY0Mzc5LDE4MDgxNTYxNDgsLTYzNTE4ODQyMiwtNTE4MjM0
+NTQsMTg1NDg3MjQwMywtMTU2NTcwMDg1OCw2Nzk4NzU0MjUsMT
+E4MDU4NzM4OCwxMzYwMTMyOTI0LC02MDc3OTUyMjgsLTQ0NDI4
+MjY2NF19
 -->
