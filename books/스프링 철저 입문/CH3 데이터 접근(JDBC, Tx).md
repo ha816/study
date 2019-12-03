@@ -336,10 +336,10 @@ TransactionTemplate 자바 기반 설정 방식
 
 스프링 프레임 워크에서는 데이터베이스의 기본 설정(DEFAULT)과 4개의 트랜잭션 격리 수준을 이용할수 있다. 스프링 프레임워크에서 지원하는 격리 수준은 아래와 같다. 다만 지원하는 모든 격리 수준이 실제로 사용할 수 있는지는 사용하는 데이터베이스를 어떻게 구현했느냐에 따라 달라질 수 있다. 
 
-| 격리수준| 설명 | |
-|--|--|
+| 격리수준| 설명 | Dirty Read, Unrepeatable Read, Phantom Read |
+|--|--|--|
 | DEFAULT  | 사용하는 데이터베이스의 기본 격리수준을 사용  |
-| READ_UNCOMMITTED| 더티리드(Dirty Read), 반복되지 않은 읽기(Unrepeatable Read), 팬텀 읽기(Phantom Read)가 발생한다. 이 격리 수준은 커밋되지 않은 변경 데이터를 다른 트랜잭션에서 참조하는 것을 허용한다. 만약 변경 데이터가 롤백된 경우 다음 트랜잭션에서는 무효한 데이터를 조회하게 된다. |
+| READ_UNCOMMITTED| 더티리드(Dirty Read), 반복되지 않은 읽기(Unrepeatable Read), 팬텀 읽기(Phantom Read)가 발생한다. 이 격리 수준은 커밋되지 않은 변경 데이터를 다른 트랜잭션에서 참조하는 것을 허용한다. 만약 변경 데이터가 롤백된 경우 다음 트랜잭션에서는 무효한 데이터를 조회하게 된다. | 
 | READ_COMMITTED| 더티리드(Dirty Read)는 방지하지만, 반복되지 않은 읽기(Unrepeatable Read), 팬텀 읽기(Phantom Read)는 발생한다. 이 격리 수준은 커밋되지 않은 변경 데이터를 다른 트랜잭션에서 참조하는 것을 금지한다. |
 | REPEATABLE_READ| 더티리드, 반복되지 않은 읽기를 방지하지만 팬텀읽기는 발생한다. |
 | SERIALIZABLE| 더티리드, 반복되지 않은 읽기, 팬텀읽기를 방지한다.|
@@ -360,11 +360,11 @@ TransactionTemplate 자바 기반 설정 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgxNTUxNjQ5LC0xNTU1MDMwMjYyLDE4Mj
-c2MDYzNTMsLTI2ODQ5Njg4MywtMjAwNDIwNzUyMCwxNzc0NDIz
-OTczLC03MTIxMjI3MDEsLTQyMTk5OTQwLDQ2Mjk0OTk2OSwzMz
-QxMDMxMTYsMTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxODA4MTU2
-MTQ4LC02MzUxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0MDMsLT
-E1NjU3MDA4NTgsNjc5ODc1NDI1LDExODA1ODczODgsMTM2MDEz
-MjkyNF19
+eyJoaXN0b3J5IjpbLTIxOTQ1NzAwMCwtMTU1NTAzMDI2MiwxOD
+I3NjA2MzUzLC0yNjg0OTY4ODMsLTIwMDQyMDc1MjAsMTc3NDQy
+Mzk3MywtNzEyMTIyNzAxLC00MjE5OTk0MCw0NjI5NDk5NjksMz
+M0MTAzMTE2LDEyMjE1NTQzMjIsLTE3MTM1NjQzNzksMTgwODE1
+NjE0OCwtNjM1MTg4NDIyLC01MTgyMzQ1NCwxODU0ODcyNDAzLC
+0xNTY1NzAwODU4LDY3OTg3NTQyNSwxMTgwNTg3Mzg4LDEzNjAx
+MzI5MjRdfQ==
 -->
