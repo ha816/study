@@ -292,9 +292,12 @@ public void doTransaction(){
 		txManager.rollback(status);
 		throw new DateAccessException("error oucucred");
 	}
-	t
-
+	txManager.commit(status);
 }
+```
+TransactionTemplate을 이용한 명시적 트랜잭션 제어
+
+TransactionTemplate을 이용하면 PlatfromTransactionManager 보다도 구조적으로 트랜잭션 제어를 기술할 수 있다. 
 
 
 ```
@@ -307,14 +310,13 @@ public void doTransaction(){
 
 
 
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxOTY3MDUzMSwxNzc0NDIzOTczLC03MT
-IxMjI3MDEsLTQyMTk5OTQwLDQ2Mjk0OTk2OSwzMzQxMDMxMTYs
-MTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxODA4MTU2MTQ4LC02Mz
-UxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0MDMsLTE1NjU3MDA4
-NTgsNjc5ODc1NDI1LDExODA1ODczODgsMTM2MDEzMjkyNCwtNj
-A3Nzk1MjI4LC00NDQyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4
-NjA4MV19
+eyJoaXN0b3J5IjpbLTIwMDQyMDc1MjAsMTc3NDQyMzk3MywtNz
+EyMTIyNzAxLC00MjE5OTk0MCw0NjI5NDk5NjksMzM0MTAzMTE2
+LDEyMjE1NTQzMjIsLTE3MTM1NjQzNzksMTgwODE1NjE0OCwtNj
+M1MTg4NDIyLC01MTgyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAw
+ODU4LDY3OTg3NTQyNSwxMTgwNTg3Mzg4LDEzNjAxMzI5MjQsLT
+YwNzc5NTIyOCwtNDQ0MjgyNjY0LDE1Nzc3MTU2MjMsLTIwMDc5
+ODYwODFdfQ==
 -->
