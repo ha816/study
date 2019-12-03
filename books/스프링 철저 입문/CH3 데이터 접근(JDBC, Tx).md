@@ -281,7 +281,11 @@ PlatfromTransactionManager txManager;
 jdbcDao dao;
 
 public void doTransaction(){
-	DefaultTransactionDefinition d
+	DefaultTransactionDefinition def = new DefaultTransactionDefinition();
+	def.setName("transactionName);
+	def.setReadOnly(false);
+		def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRED)
+
 }
 
 
@@ -298,7 +302,7 @@ public void doTransaction(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ3NTI3NzI4LC03MTIxMjI3MDEsLTQyMT
+eyJoaXN0b3J5IjpbMTg1MDY0OTY2LC03MTIxMjI3MDEsLTQyMT
 k5OTQwLDQ2Mjk0OTk2OSwzMzQxMDMxMTYsMTIyMTU1NDMyMiwt
 MTcxMzU2NDM3OSwxODA4MTU2MTQ4LC02MzUxODg0MjIsLTUxOD
 IzNDU0LDE4NTQ4NzI0MDMsLTE1NjU3MDA4NTgsNjc5ODc1NDI1
