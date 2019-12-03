@@ -284,7 +284,12 @@ public void doTransaction(){
 	DefaultTransactionDefinition def = new DefaultTransactionDefinition();
 	def.setName("transactionName);
 	def.setReadOnly(false);
-		def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRED)
+	def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRED)
+	TransactionStatus status = txManager.getTransaction(def);
+	try {
+		// do Something
+	} catch (Exception e){
+	}
 
 }
 
@@ -302,11 +307,11 @@ public void doTransaction(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MDY0OTY2LC03MTIxMjI3MDEsLTQyMT
-k5OTQwLDQ2Mjk0OTk2OSwzMzQxMDMxMTYsMTIyMTU1NDMyMiwt
-MTcxMzU2NDM3OSwxODA4MTU2MTQ4LC02MzUxODg0MjIsLTUxOD
-IzNDU0LDE4NTQ4NzI0MDMsLTE1NjU3MDA4NTgsNjc5ODc1NDI1
-LDExODA1ODczODgsMTM2MDEzMjkyNCwtNjA3Nzk1MjI4LC00ND
-QyODI2NjQsMTU3NzcxNTYyMywtMjAwNzk4NjA4MSwtMjUxOTE5
-NDM2XX0=
+eyJoaXN0b3J5IjpbMTc3NDQyMzk3MywtNzEyMTIyNzAxLC00Mj
+E5OTk0MCw0NjI5NDk5NjksMzM0MTAzMTE2LDEyMjE1NTQzMjIs
+LTE3MTM1NjQzNzksMTgwODE1NjE0OCwtNjM1MTg4NDIyLC01MT
+gyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQy
+NSwxMTgwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtND
+Q0MjgyNjY0LDE1Nzc3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkx
+OTQzNl19
 -->
