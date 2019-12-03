@@ -272,6 +272,11 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 스프링 프레임워크는  명시적 트랜잭션을 이용하는 방법으로 PlatfromTransactionManager(TransactionManager들의 인터페이스)와 TransactionTemplate을 사용하는 두가지 방법을 제공한다.
 
 
+PlatfromTransactionManager을 이용한 명시적 트랜잭션 제어
+```
+@Autowired
+
+```
 
 
 
@@ -284,11 +289,11 @@ XML설정에서는 ```<tx:advice>``` 요소와 같은 **tx로 시작하는 트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjEyMjcwMSwtNDIxOTk5NDAsNDYyOT
-Q5OTY5LDMzNDEwMzExNiwxMjIxNTU0MzIyLC0xNzEzNTY0Mzc5
-LDE4MDgxNTYxNDgsLTYzNTE4ODQyMiwtNTE4MjM0NTQsMTg1ND
-g3MjQwMywtMTU2NTcwMDg1OCw2Nzk4NzU0MjUsMTE4MDU4NzM4
-OCwxMzYwMTMyOTI0LC02MDc3OTUyMjgsLTQ0NDI4MjY2NCwxNT
-c3NzE1NjIzLC0yMDA3OTg2MDgxLC0yNTE5MTk0MzYsLTc4ODAy
-MDE0MF19
+eyJoaXN0b3J5IjpbMTQ4MTUyMzQ4OSwtNzEyMTIyNzAxLC00Mj
+E5OTk0MCw0NjI5NDk5NjksMzM0MTAzMTE2LDEyMjE1NTQzMjIs
+LTE3MTM1NjQzNzksMTgwODE1NjE0OCwtNjM1MTg4NDIyLC01MT
+gyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQy
+NSwxMTgwNTg3Mzg4LDEzNjAxMzI5MjQsLTYwNzc5NTIyOCwtND
+Q0MjgyNjY0LDE1Nzc3MTU2MjMsLTIwMDc5ODYwODEsLTI1MTkx
+OTQzNl19
 -->
