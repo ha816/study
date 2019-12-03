@@ -347,13 +347,14 @@ TransactionTemplate 자바 기반 설정 방식
 더티리드(Dirty Read)
 : ㄴㅇㄹ
 
+반복되지 않은 읽기(Unrepeatable Read)
+: ㄴㅇㄹㄴㅇㄹ
 
+팬텀 읽기(Phantom Read)
+: ㄴㅇㄹㄴㅇㄹ
 
-
-
-
-
-
+>트랜잭션 전파 방식(Propagation)
+>참조하는 데이터나 변경한 데이터를 다른 트랜잭션으로 부터 어떻게 격리할 것인지를 결정한다. 격리 수준은 여러 트랜잭션의 동시 실행과 데이터의 일관성과 관련이 깊다. 
 
 
 
@@ -362,11 +363,11 @@ TransactionTemplate 자바 기반 설정 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MzU3MDIzLC0xNTU1MDMwMjYyLDE4Mj
-c2MDYzNTMsLTI2ODQ5Njg4MywtMjAwNDIwNzUyMCwxNzc0NDIz
-OTczLC03MTIxMjI3MDEsLTQyMTk5OTQwLDQ2Mjk0OTk2OSwzMz
-QxMDMxMTYsMTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxODA4MTU2
-MTQ4LC02MzUxODg0MjIsLTUxODIzNDU0LDE4NTQ4NzI0MDMsLT
-E1NjU3MDA4NTgsNjc5ODc1NDI1LDExODA1ODczODgsMTM2MDEz
-MjkyNF19
+eyJoaXN0b3J5IjpbLTEyNzE5MjYwOTQsLTE1NTUwMzAyNjIsMT
+gyNzYwNjM1MywtMjY4NDk2ODgzLC0yMDA0MjA3NTIwLDE3NzQ0
+MjM5NzMsLTcxMjEyMjcwMSwtNDIxOTk5NDAsNDYyOTQ5OTY5LD
+MzNDEwMzExNiwxMjIxNTU0MzIyLC0xNzEzNTY0Mzc5LDE4MDgx
+NTYxNDgsLTYzNTE4ODQyMiwtNTE4MjM0NTQsMTg1NDg3MjQwMy
+wtMTU2NTcwMDg1OCw2Nzk4NzU0MjUsMTE4MDU4NzM4OCwxMzYw
+MTMyOTI0XX0=
 -->
