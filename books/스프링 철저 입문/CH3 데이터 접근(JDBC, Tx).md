@@ -348,10 +348,10 @@ TransactionTemplate 자바 기반 설정 방식
 : A dirty read occurs when a transaction is allowed to read data from a row that has been modified by another running transaction and not yet committed.
 더티리드는 한 트랜잭션이 아직 커밋하지 않은 상태로 수정 중일때 데이터 row 읽기가 가능하다면 발생한다. 예를 들면, TX1에서 가져온 row 데이터가 있고, TX2에서 커밋하지 않은 상태로 데이터를 수정했다. 커밋되지 않은 상태로 TX1이 동일한 row 데이터를 가져오면 수정된 데이터를 가져온다. 이때 TX2에서 롤백이 발생한다면, TX1에서 가져온 수정된 데이터는 잘못된 데이터가 된다. 
 
-
-
 반복되지 않은 읽기(Unrepeatable Read)
-: ㄴㅇㄹㄴㅇㄹ
+: A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads.
+
+_Non-repeatable reads_  phenomenon may occur in a lock-based concurrency control method when read locks are not acquired when performing a  [SELECT](https://en.wikipedia.org/wiki/Select_(SQL) "Select (SQL)"), or when the acquired locks on affected rows are released as soon as the SELECT operation is performed. Under the  [multiversion concurrency control](https://en.wikipedia.org/wiki/Multiversion_concurrency_control "Multiversion concurrency control")  method,  _non-repeatable reads_  may occur when the requirement that a transaction affected by a  [commit conflict](https://en.wikipedia.org/w/index.php?title=Commit_conflict&action=edit&redlink=1 "Commit conflict (page does not exist)")  must roll back is relaxed.
 
 팬텀 읽기(Phantom Read)
 : ㄴㅇㄹㄴㅇㄹ
@@ -366,11 +366,11 @@ TransactionTemplate 자바 기반 설정 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNDY0ODA3OSwtMTI2MTk4NDM1NywtMT
-I3MTkyNjA5NCwtMTU1NTAzMDI2MiwxODI3NjA2MzUzLC0yNjg0
-OTY4ODMsLTIwMDQyMDc1MjAsMTc3NDQyMzk3MywtNzEyMTIyNz
-AxLC00MjE5OTk0MCw0NjI5NDk5NjksMzM0MTAzMTE2LDEyMjE1
-NTQzMjIsLTE3MTM1NjQzNzksMTgwODE1NjE0OCwtNjM1MTg4ND
-IyLC01MTgyMzQ1NCwxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3
-OTg3NTQyNV19
+eyJoaXN0b3J5IjpbOTkxNzU5NzQxLC0xMjYxOTg0MzU3LC0xMj
+cxOTI2MDk0LC0xNTU1MDMwMjYyLDE4Mjc2MDYzNTMsLTI2ODQ5
+Njg4MywtMjAwNDIwNzUyMCwxNzc0NDIzOTczLC03MTIxMjI3MD
+EsLTQyMTk5OTQwLDQ2Mjk0OTk2OSwzMzQxMDMxMTYsMTIyMTU1
+NDMyMiwtMTcxMzU2NDM3OSwxODA4MTU2MTQ4LC02MzUxODg0Mj
+IsLTUxODIzNDU0LDE4NTQ4NzI0MDMsLTE1NjU3MDA4NTgsNjc5
+ODc1NDI1XX0=
 -->
