@@ -354,6 +354,10 @@ TransactionTemplate 자바 기반 설정 방식
 반복되지 않는 읽기 현상은 아마 락 기반 동시성 제어 상황에서 발생할지도 모른다. 읽기 락이 얻어지지 않은 상태에서 select를 실행하거나 또는 복수의 row에 영향을 주는 얻어진 락이 SELECT 동작이 수행되자마자 풀려버린 경우에
 반복되지 않는 읽기는 한 트랜잭션이 커밋 컨플릭에 노출되면 반드시 롤백하라는 요구사항이 있다면 이를 편하게 해줄수도 있다.
 
+예를 들어 TX1에서 과거 한 row의 데이터 
+
+Transaction 2 commits successfully, which means that its changes to the row with id 1 should become visible. However, Transaction 1 has already seen a different value for _age_ in that row. At the SERIALIZABLE and REPEATABLE READ isolation levels, the DBMS must return the old value for the second SELECT. At READ COMMITTED and READ UNCOMMITTED, the DBMS may return the updated value; this is a non-repeatable read.
+
 
 
 
@@ -370,11 +374,11 @@ TransactionTemplate 자바 기반 설정 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzgwMjQxNjAsNzg3MDc3MTA2LDE0OT
-E1NTUxMzUsLTE3NzY1MTc4OTAsLTIxNDM1NDk0NTEsLTMwODI4
-Mjc1NSw5OTE3NTk3NDEsLTEyNjE5ODQzNTcsLTEyNzE5MjYwOT
-QsLTE1NTUwMzAyNjIsMTgyNzYwNjM1MywtMjY4NDk2ODgzLC0y
-MDA0MjA3NTIwLDE3NzQ0MjM5NzMsLTcxMjEyMjcwMSwtNDIxOT
-k5NDAsNDYyOTQ5OTY5LDMzNDEwMzExNiwxMjIxNTU0MzIyLC0x
-NzEzNTY0Mzc5XX0=
+eyJoaXN0b3J5IjpbNjYwMDA3NjQyLDc4NzA3NzEwNiwxNDkxNT
+U1MTM1LC0xNzc2NTE3ODkwLC0yMTQzNTQ5NDUxLC0zMDgyODI3
+NTUsOTkxNzU5NzQxLC0xMjYxOTg0MzU3LC0xMjcxOTI2MDk0LC
+0xNTU1MDMwMjYyLDE4Mjc2MDYzNTMsLTI2ODQ5Njg4MywtMjAw
+NDIwNzUyMCwxNzc0NDIzOTczLC03MTIxMjI3MDEsLTQyMTk5OT
+QwLDQ2Mjk0OTk2OSwzMzQxMDMxMTYsMTIyMTU1NDMyMiwtMTcx
+MzU2NDM3OV19
 -->
