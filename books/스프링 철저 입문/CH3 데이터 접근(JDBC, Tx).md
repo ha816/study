@@ -349,7 +349,7 @@ TransactionTemplate 자바 기반 설정 방식
 더티리드는 한 트랜잭션이 아직 커밋하지 않은 상태로 수정 중일때 데이터 row 읽기가 가능하다면 발생한다. 예를 들면, TX1에서 가져온 row 데이터가 있고, TX2에서 커밋하지 않은 상태로 데이터를 수정했다. 커밋되지 않은 상태로 TX1이 동일한 row 데이터를 가져오면 수정된 데이터를 가져온다. 이때 TX2에서 롤백이 발생한다면, TX1에서 가져온 수정된 데이터는 잘못된 데이터가 된다. 
 
 반복되지 않은 읽기(Unrepeatable Read)
-: A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads.
+: A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads. 반복되지 않는 읽기
 
 _Non-repeatable reads_  phenomenon may occur in a lock-based concurrency control method when read locks are not acquired when performing a  [SELECT](https://en.wikipedia.org/wiki/Select_(SQL) "Select (SQL)"), or when the acquired locks on affected rows are released as soon as the SELECT operation is performed. Under the  [multiversion concurrency control](https://en.wikipedia.org/wiki/Multiversion_concurrency_control "Multiversion concurrency control")  method,  _non-repeatable reads_  may occur when the requirement that a transaction affected by a  [commit conflict](https://en.wikipedia.org/w/index.php?title=Commit_conflict&action=edit&redlink=1 "Commit conflict (page does not exist)")  must roll back is relaxed.
 
@@ -366,11 +366,11 @@ _Non-repeatable reads_  phenomenon may occur in a lock-based concurrency control
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkxNzU5NzQxLC0xMjYxOTg0MzU3LC0xMj
-cxOTI2MDk0LC0xNTU1MDMwMjYyLDE4Mjc2MDYzNTMsLTI2ODQ5
-Njg4MywtMjAwNDIwNzUyMCwxNzc0NDIzOTczLC03MTIxMjI3MD
-EsLTQyMTk5OTQwLDQ2Mjk0OTk2OSwzMzQxMDMxMTYsMTIyMTU1
-NDMyMiwtMTcxMzU2NDM3OSwxODA4MTU2MTQ4LC02MzUxODg0Mj
-IsLTUxODIzNDU0LDE4NTQ4NzI0MDMsLTE1NjU3MDA4NTgsNjc5
-ODc1NDI1XX0=
+eyJoaXN0b3J5IjpbLTMwODI4Mjc1NSw5OTE3NTk3NDEsLTEyNj
+E5ODQzNTcsLTEyNzE5MjYwOTQsLTE1NTUwMzAyNjIsMTgyNzYw
+NjM1MywtMjY4NDk2ODgzLC0yMDA0MjA3NTIwLDE3NzQ0MjM5Nz
+MsLTcxMjEyMjcwMSwtNDIxOTk5NDAsNDYyOTQ5OTY5LDMzNDEw
+MzExNiwxMjIxNTU0MzIyLC0xNzEzNTY0Mzc5LDE4MDgxNTYxND
+gsLTYzNTE4ODQyMiwtNTE4MjM0NTQsMTg1NDg3MjQwMywtMTU2
+NTcwMDg1OF19
 -->
