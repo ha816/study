@@ -346,8 +346,8 @@ TransactionTemplate 자바 기반 설정 방식
 
 더티리드(Dirty Read)
 : A dirty read occurs when a transaction is allowed to read data from a row that has been modified by another running transaction and not yet committed.
-더티리드는 다른 트랜잭션이 수
-아직 커밋하지 않은 상태로 
+더티리드는 한 트랜잭션이 아직 커밋하지 않은 상태로 수정 중인 데이터 row를 읽기 가능하다면 발생 한다. 
+
 
 
 반복되지 않은 읽기(Unrepeatable Read)
@@ -366,11 +366,11 @@ TransactionTemplate 자바 기반 설정 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MzU4MzQ2NCwtMTI3MTkyNjA5NCwtMT
-U1NTAzMDI2MiwxODI3NjA2MzUzLC0yNjg0OTY4ODMsLTIwMDQy
-MDc1MjAsMTc3NDQyMzk3MywtNzEyMTIyNzAxLC00MjE5OTk0MC
-w0NjI5NDk5NjksMzM0MTAzMTE2LDEyMjE1NTQzMjIsLTE3MTM1
-NjQzNzksMTgwODE1NjE0OCwtNjM1MTg4NDIyLC01MTgyMzQ1NC
-wxODU0ODcyNDAzLC0xNTY1NzAwODU4LDY3OTg3NTQyNSwxMTgw
-NTg3Mzg4XX0=
+eyJoaXN0b3J5IjpbODU0MDI4MDE1LC0xMjcxOTI2MDk0LC0xNT
+U1MDMwMjYyLDE4Mjc2MDYzNTMsLTI2ODQ5Njg4MywtMjAwNDIw
+NzUyMCwxNzc0NDIzOTczLC03MTIxMjI3MDEsLTQyMTk5OTQwLD
+Q2Mjk0OTk2OSwzMzQxMDMxMTYsMTIyMTU1NDMyMiwtMTcxMzU2
+NDM3OSwxODA4MTU2MTQ4LC02MzUxODg0MjIsLTUxODIzNDU0LD
+E4NTQ4NzI0MDMsLTE1NjU3MDA4NTgsNjc5ODc1NDI1LDExODA1
+ODczODhdfQ==
 -->
