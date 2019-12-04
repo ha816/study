@@ -350,7 +350,8 @@ TransactionTemplate 자바 기반 설정 방식
 
 반복되지 않은 읽기(Unrepeatable Read)
 : A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads. 
-반복되지 않는 일기는 한 트랜잭션의 과정 중에, 데이터 row의 복구가 두번이 되고 
+반복되지 않는 일기는 발생ㅎ
+한 트랜잭션의 과정 중에, 데이터 row의 복구가 두번이 되고 
 
 _Non-repeatable reads_  phenomenon may occur in a lock-based concurrency control method when read locks are not acquired when performing a  [SELECT](https://en.wikipedia.org/wiki/Select_(SQL) "Select (SQL)"), or when the acquired locks on affected rows are released as soon as the SELECT operation is performed. Under the  [multiversion concurrency control](https://en.wikipedia.org/wiki/Multiversion_concurrency_control "Multiversion concurrency control")  method,  _non-repeatable reads_  may occur when the requirement that a transaction affected by a  [commit conflict](https://en.wikipedia.org/w/index.php?title=Commit_conflict&action=edit&redlink=1 "Commit conflict (page does not exist)")  must roll back is relaxed.
 
@@ -367,11 +368,11 @@ _Non-repeatable reads_  phenomenon may occur in a lock-based concurrency control
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzY1MTc4OTAsLTIxNDM1NDk0NTEsLT
-MwODI4Mjc1NSw5OTE3NTk3NDEsLTEyNjE5ODQzNTcsLTEyNzE5
-MjYwOTQsLTE1NTUwMzAyNjIsMTgyNzYwNjM1MywtMjY4NDk2OD
-gzLC0yMDA0MjA3NTIwLDE3NzQ0MjM5NzMsLTcxMjEyMjcwMSwt
-NDIxOTk5NDAsNDYyOTQ5OTY5LDMzNDEwMzExNiwxMjIxNTU0Mz
-IyLC0xNzEzNTY0Mzc5LDE4MDgxNTYxNDgsLTYzNTE4ODQyMiwt
-NTE4MjM0NTRdfQ==
+eyJoaXN0b3J5IjpbLTE5MTMyOTI2OTMsLTE3NzY1MTc4OTAsLT
+IxNDM1NDk0NTEsLTMwODI4Mjc1NSw5OTE3NTk3NDEsLTEyNjE5
+ODQzNTcsLTEyNzE5MjYwOTQsLTE1NTUwMzAyNjIsMTgyNzYwNj
+M1MywtMjY4NDk2ODgzLC0yMDA0MjA3NTIwLDE3NzQ0MjM5NzMs
+LTcxMjEyMjcwMSwtNDIxOTk5NDAsNDYyOTQ5OTY5LDMzNDEwMz
+ExNiwxMjIxNTU0MzIyLC0xNzEzNTY0Mzc5LDE4MDgxNTYxNDgs
+LTYzNTE4ODQyMl19
 -->
