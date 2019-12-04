@@ -350,9 +350,13 @@ TransactionTemplate 자바 기반 설정 방식
 
 반복되지 않은 읽기(Unrepeatable Read)
 : A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads. 
-반복되지 않는 읽기는 한 트랜잭션의 과정 중에, 데이터 row 복구가 두번이 되고 데이터 row 안에 값들이 읽는 
+반복되지 않는 읽기는 한 트랜잭션의 과정 중에, 데이터 row 복구가 두번이 되고 데이터 row 안에 값들이 읽는 과정에서 달라지는 상황에 발생한다. 
+반복되지 않는 읽기 현상은 아마 락 기반 동시성 제어 상황에서 발생할지도 모른다. 읽기 락이 얻어지지 
 
-_Non-repeatable reads_  phenomenon may occur in a lock-based concurrency control method when read locks are not acquired when performing a  [SELECT](https://en.wikipedia.org/wiki/Select_(SQL) "Select (SQL)"), or when the acquired locks on affected rows are released as soon as the SELECT operation is performed. Under the  [multiversion concurrency control](https://en.wikipedia.org/wiki/Multiversion_concurrency_control "Multiversion concurrency control")  method,  _non-repeatable reads_  may occur when the requirement that a transaction affected by a  [commit conflict](https://en.wikipedia.org/w/index.php?title=Commit_conflict&action=edit&redlink=1 "Commit conflict (page does not exist)")  must roll back is relaxed.
+_Non-repeatable reads_  phenomenon may occur in a lock-based concurrency control method when read locks are not acquired when performing a  [SELECT](https://en.wikipedia.org/wiki/Select_(SQL) "Select (SQL)"), or when the acquired locks on affected rows are released as soon as the SELECT operation is performed. 
+
+
+Under the  [multiversion concurrency control](https://en.wikipedia.org/wiki/Multiversion_concurrency_control "Multiversion concurrency control")  method,  _non-repeatable reads_  may occur when the requirement that a transaction affected by a  [commit conflict](https://en.wikipedia.org/w/index.php?title=Commit_conflict&action=edit&redlink=1 "Commit conflict (page does not exist)")  must roll back is relaxed.
 
 팬텀 읽기(Phantom Read)
 : ㄴㅇㄹㄴㅇㄹ
@@ -367,11 +371,11 @@ _Non-repeatable reads_  phenomenon may occur in a lock-based concurrency control
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc3MDA1OTk2LC0xNzc2NTE3ODkwLC0yMT
-QzNTQ5NDUxLC0zMDgyODI3NTUsOTkxNzU5NzQxLC0xMjYxOTg0
-MzU3LC0xMjcxOTI2MDk0LC0xNTU1MDMwMjYyLDE4Mjc2MDYzNT
-MsLTI2ODQ5Njg4MywtMjAwNDIwNzUyMCwxNzc0NDIzOTczLC03
-MTIxMjI3MDEsLTQyMTk5OTQwLDQ2Mjk0OTk2OSwzMzQxMDMxMT
-YsMTIyMTU1NDMyMiwtMTcxMzU2NDM3OSwxODA4MTU2MTQ4LC02
-MzUxODg0MjJdfQ==
+eyJoaXN0b3J5IjpbMTU3NDAyNDA0OCwtMTc3NjUxNzg5MCwtMj
+E0MzU0OTQ1MSwtMzA4MjgyNzU1LDk5MTc1OTc0MSwtMTI2MTk4
+NDM1NywtMTI3MTkyNjA5NCwtMTU1NTAzMDI2MiwxODI3NjA2Mz
+UzLC0yNjg0OTY4ODMsLTIwMDQyMDc1MjAsMTc3NDQyMzk3Mywt
+NzEyMTIyNzAxLC00MjE5OTk0MCw0NjI5NDk5NjksMzM0MTAzMT
+E2LDEyMjE1NTQzMjIsLTE3MTM1NjQzNzksMTgwODE1NjE0OCwt
+NjM1MTg4NDIyXX0=
 -->
