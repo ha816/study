@@ -352,10 +352,9 @@ TransactionTemplate 자바 기반 설정 방식
 : A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads. 
 반복되지 않는 읽기는 한 트랜잭션의 과정 중에, 데이터 row 복구가 두번이 되고 데이터 row 안에 값들이 읽는 과정에서 달라지는 상황에 발생한다. 
 반복되지 않는 읽기 현상은 아마 락 기반 동시성 제어 상황에서 발생할지도 모른다. 읽기 락이 얻어지지 않은 상태에서 select를 실행하거나 또는 복수의 row에 영향을 주는 얻어진 락이 SELECT 동작이 수행되자마자 풀려버린 경우에
-반복되지 않는 읽기는 한 트랜잭션이 커밋 컨플릭에 노출되면 반드시 롤백하라는 
+반복되지 않는 읽기는 한 트랜잭션이 커밋 컨플릭에 노출되면 반드시 롤백하라는 요구사항이 있다면 이를 편하게 해줄수도 있다.
 
 
-Under the  [multiversion concurrency control](https://en.wikipedia.org/wiki/Multiversion_concurrency_control "Multiversion concurrency control")  method,  _non-repeatable reads_  may occur when the requirement that a transaction affected by a  [commit conflict](https://en.wikipedia.org/w/index.php?title=Commit_conflict&action=edit&redlink=1 "Commit conflict (page does not exist)")  must roll back is relaxed.
 
 팬텀 읽기(Phantom Read)
 : ㄴㅇㄹㄴㅇㄹ
@@ -370,11 +369,11 @@ Under the  [multiversion concurrency control](https://en.wikipedia.org/wiki/Mult
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTY3NDUzODUsMTQ5MTU1NTEzNSwtMT
-c3NjUxNzg5MCwtMjE0MzU0OTQ1MSwtMzA4MjgyNzU1LDk5MTc1
-OTc0MSwtMTI2MTk4NDM1NywtMTI3MTkyNjA5NCwtMTU1NTAzMD
-I2MiwxODI3NjA2MzUzLC0yNjg0OTY4ODMsLTIwMDQyMDc1MjAs
-MTc3NDQyMzk3MywtNzEyMTIyNzAxLC00MjE5OTk0MCw0NjI5ND
-k5NjksMzM0MTAzMTE2LDEyMjE1NTQzMjIsLTE3MTM1NjQzNzks
-MTgwODE1NjE0OF19
+eyJoaXN0b3J5IjpbNzg3MDc3MTA2LDE0OTE1NTUxMzUsLTE3Nz
+Y1MTc4OTAsLTIxNDM1NDk0NTEsLTMwODI4Mjc1NSw5OTE3NTk3
+NDEsLTEyNjE5ODQzNTcsLTEyNzE5MjYwOTQsLTE1NTUwMzAyNj
+IsMTgyNzYwNjM1MywtMjY4NDk2ODgzLC0yMDA0MjA3NTIwLDE3
+NzQ0MjM5NzMsLTcxMjEyMjcwMSwtNDIxOTk5NDAsNDYyOTQ5OT
+Y5LDMzNDEwMzExNiwxMjIxNTU0MzIyLC0xNzEzNTY0Mzc5LDE4
+MDgxNTYxNDhdfQ==
 -->
