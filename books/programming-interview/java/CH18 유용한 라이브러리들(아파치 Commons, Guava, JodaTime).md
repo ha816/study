@@ -73,6 +73,10 @@ BiMap<String, String> companyToStock= stockToCompany.inverse();
 
 stockToCompany.put("GOOGLE", "GOOG");
 stockToCompany.put("APPLE", "APPL");
+
+"GOOGLE" = stockToCompnay.get("GOOG");
+"AAPL" = companyToStock.get("APPLE");
+
 ```
 
 
@@ -87,7 +91,7 @@ stockToCompany.put("APPLE", "APPL");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNDUxODY4MSwtMTMzMzU3NzYwOSwyNz
-Q4NDczNzksLTEzNzA4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4
-OTAsLTEzNjMwODEwOTBdfQ==
+eyJoaXN0b3J5IjpbLTYzNDcyMzkzMCwxODM0NTE4NjgxLC0xMz
+MzNTc3NjA5LDI3NDg0NzM3OSwtMTM3MDgwMTIxNywyMTM5OTI4
+MzcsMTM2OTY1Nzg5MCwtMTM2MzA4MTA5MF19
 -->
