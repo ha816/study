@@ -134,11 +134,14 @@ DateTime 클래스는 자바의 Calendar 클래스를 대체하고, 시간과 �
 
 DateTime 객체는 불변이고 변경하는 연산은 실제로 새로운 DateTime을 만든다. 
 
+> Joda Time의 Duration과 Period 클래스의 차이점은 무엇인가?
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NDk2MzYyMiw0NTAzMDY5MzcsMjgzMj
+eyJoaXN0b3J5IjpbLTcwMzY3MTg2Niw0NTAzMDY5MzcsMjgzMj
 YxMzM1LDE3MTg2NTkyNDcsMTczODAzNjk0Nyw3MzgwMTE5ODIs
 MTgzNDUxODY4MSwtMTMzMzU3NzYwOSwyNzQ4NDczNzksLTEzNz
 A4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4OTAsLTEzNjMwODEw
