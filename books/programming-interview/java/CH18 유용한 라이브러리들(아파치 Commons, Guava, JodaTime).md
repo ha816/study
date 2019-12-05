@@ -60,6 +60,9 @@ Collection<String;> one = mapping.get(1)
 2 == one.size();
 1 == mapping.get(2).size();
 ```
+HashMultimap의  get 메서드는 Collection 객체를 반환한다는 것을 기억하자.
+Multimap 인터페이스는 자바 Map과 약간의 차이가 있다. 
+get 메서드는 존
 
 
 ## Collections 유틸리티 클래스
@@ -72,7 +75,7 @@ Collection<String;> one = mapping.get(1)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzM1Nzc2MDksMjc0ODQ3Mzc5LC0xMz
-cwODAxMjE3LDIxMzk5MjgzNywxMzY5NjU3ODkwLC0xMzYzMDgx
-MDkwXX0=
+eyJoaXN0b3J5IjpbODcxMzMyMTQ1LC0xMzMzNTc3NjA5LDI3ND
+g0NzM3OSwtMTM3MDgwMTIxNywyMTM5OTI4MzcsMTM2OTY1Nzg5
+MCwtMTM2MzA4MTA5MF19
 -->
