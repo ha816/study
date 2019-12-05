@@ -25,9 +25,10 @@ Set<String> stringSet = strings.elementSet();
 3 == stringSet.size();
 ```
 
-즉 HashMultiset은 분명 set이지만 모든 원소가 다 저장된다. 
+즉 HashMultiset은 분명 set이지만 모든 원소가 다 저장된다. Multi라는 의미는 다양한 기능을 제공한다는 의미로 해석하면 될거 같다.
 
-Multiset: A collection that supports order-independent equality, like Set, but may have duplicate elements.
+Multiset
+: A collection that supports order-independent equality, like Set, but may have duplicate elements.
 
 
 
@@ -44,7 +45,7 @@ Multiset: A collection that supports order-independent equality, like Set, but m
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTE3MzUwNzAsMjc0ODQ3Mzc5LC0xMz
-cwODAxMjE3LDIxMzk5MjgzNywxMzY5NjU3ODkwLC0xMzYzMDgx
-MDkwXX0=
+eyJoaXN0b3J5IjpbLTYwMzUxNzkyMCwyNzQ4NDczNzksLTEzNz
+A4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4OTAsLTEzNjMwODEw
+OTBdfQ==
 -->
