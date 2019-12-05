@@ -103,7 +103,8 @@ numberSet.add(10);
 numberSet.add(20);
 numberSet.add(30);
 
-
+Set<Integer> immutableSet = ImmutableSet.copyOf(numbersSet);
+numberS
 
 ```
 
@@ -118,7 +119,7 @@ numberSet.add(30);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTk1ODU2MywxNzE4NjU5MjQ3LDE3Mz
+eyJoaXN0b3J5IjpbMTM4MDUxOTYwNCwxNzE4NjU5MjQ3LDE3Mz
 gwMzY5NDcsNzM4MDExOTgyLDE4MzQ1MTg2ODEsLTEzMzM1Nzc2
 MDksMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMzk5MjgzNywxMz
 Y5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
