@@ -80,7 +80,12 @@ stockToCompany.put("APPLE", "APPL");
 
 ## Collections 유틸리티 클래스
 
-자바 컬력센 API의 Collections 유틸리티 클래스는 
+자바 컬력센 API의 Collections 유틸리티 클래스는 수정할 수 없는 컬렉션을 생성하는데 필요한 몇 가지 유틸리티 메서드를 제공한다. 
+```
+
+
+```
+
 
 
 ## Iterables 클래스
@@ -91,7 +96,7 @@ stockToCompany.put("APPLE", "APPL");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMzAxOTQzNCwxODM0NTE4NjgxLC0xMz
-MzNTc3NjA5LDI3NDg0NzM3OSwtMTM3MDgwMTIxNywyMTM5OTI4
-MzcsMTM2OTY1Nzg5MCwtMTM2MzA4MTA5MF19
+eyJoaXN0b3J5IjpbNzM4MDExOTgyLDE4MzQ1MTg2ODEsLTEzMz
+M1Nzc2MDksMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMzk5Mjgz
+NywxMzY5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
 -->
