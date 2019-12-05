@@ -136,17 +136,17 @@ DateTime 객체는 불변이고 변경하는 연산은 실제로 새로운 DateT
 
 > Joda Time의 Duration과 Period 클래스의 차이점은 무엇인가?
 
-Duration 두 기간의 차이를 실제 값으로 계산을 한다. 
+Duration는 두 기간의 차이를 실제 값으로 계산을 한다. 
 
-Period는
+Period는 두 기간의 차이를 년, 월, 일, 시간 단위등으로 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjQ1MjAwODMsLTcwMzY3MTg2Niw0NT
-AzMDY5MzcsMjgzMjYxMzM1LDE3MTg2NTkyNDcsMTczODAzNjk0
-Nyw3MzgwMTE5ODIsMTgzNDUxODY4MSwtMTMzMzU3NzYwOSwyNz
-Q4NDczNzksLTEzNzA4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4
-OTAsLTEzNjMwODEwOTBdfQ==
+eyJoaXN0b3J5IjpbMTUxMjg0NjQzMiwtNzAzNjcxODY2LDQ1MD
+MwNjkzNywyODMyNjEzMzUsMTcxODY1OTI0NywxNzM4MDM2OTQ3
+LDczODAxMTk4MiwxODM0NTE4NjgxLC0xMzMzNTc3NjA5LDI3ND
+g0NzM3OSwtMTM3MDgwMTIxNywyMTM5OTI4MzcsMTM2OTY1Nzg5
+MCwtMTM2MzA4MTA5MF19
 -->
