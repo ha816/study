@@ -71,7 +71,8 @@ get 메서드는 키로 값을 얻으려면 null 을 반환하지 않고 빈 컬
 BiMap<String, String> stockToCompany = HashBiMap.create();
 BiMap<String, String> companyToStock= stockToCompany.inverse();
 
-stockToCompany.put("GOOGLE", )
+stockToCompany.put("GOOGLE", "GOOG");
+stockToCompany.put("APPLE", "APPL");
 ```
 
 
@@ -86,7 +87,7 @@ stockToCompany.put("GOOGLE", )
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyMTA3Mjg0LC0xMzMzNTc3NjA5LDI3ND
-g0NzM3OSwtMTM3MDgwMTIxNywyMTM5OTI4MzcsMTM2OTY1Nzg5
-MCwtMTM2MzA4MTA5MF19
+eyJoaXN0b3J5IjpbMTgzNDUxODY4MSwtMTMzMzU3NzYwOSwyNz
+Q4NDczNzksLTEzNzA4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4
+OTAsLTEzNjMwODEwOTBdfQ==
 -->
