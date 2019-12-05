@@ -120,7 +120,7 @@ list1 = {1,2,3};
 list2 = {...};
 list3 = {...};
 
-Iterable<Integer>
+Iterable<Integer> iterable = Iterables.concat(list1, list2, list3);
 
 ```
 
@@ -130,8 +130,8 @@ Iterable<Integer>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MjUzNTczNywxNzE4NjU5MjQ3LDE3Mz
-gwMzY5NDcsNzM4MDExOTgyLDE4MzQ1MTg2ODEsLTEzMzM1Nzc2
-MDksMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMzk5MjgzNywxMz
-Y5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
+eyJoaXN0b3J5IjpbMjgzMjYxMzM1LDE3MTg2NTkyNDcsMTczOD
+AzNjk0Nyw3MzgwMTE5ODIsMTgzNDUxODY4MSwtMTMzMzU3NzYw
+OSwyNzQ4NDczNzksLTEzNzA4MDEyMTcsMjEzOTkyODM3LDEzNj
+k2NTc4OTAsLTEzNjMwODEwOTBdfQ==
 -->
