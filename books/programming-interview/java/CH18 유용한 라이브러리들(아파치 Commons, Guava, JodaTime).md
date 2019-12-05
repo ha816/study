@@ -104,9 +104,12 @@ numberSet.add(20);
 numberSet.add(30);
 
 Set<Integer> immutableSet = ImmutableSet.copyOf(numbersSet);
-numberS
+numberSet.remove(10);
+immutableSet.contains(10);
 
+immutableSet.remove(10); // throw exception
 ```
+모든 유틸리티 클래스는 컬렉션의 완벽한 복사본을 만들기 때문에 수정할 수 없는 접근법과 매우 다르다. 
 
 
 
@@ -119,7 +122,7 @@ numberS
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MDUxOTYwNCwxNzE4NjU5MjQ3LDE3Mz
+eyJoaXN0b3J5IjpbLTk1MDA4MTk2NiwxNzE4NjU5MjQ3LDE3Mz
 gwMzY5NDcsNzM4MDExOTgyLDE4MzQ1MTg2ODEsLTEzMzM1Nzc2
 MDksMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMzk5MjgzNywxMz
 Y5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
