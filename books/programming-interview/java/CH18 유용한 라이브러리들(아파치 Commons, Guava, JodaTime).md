@@ -25,16 +25,11 @@ Set<String> stringSet = strings.elementSet();
 3 == stringSet.size();
 ```
 
-즉 HashMultiset은 분명 set이지만 모든 원소가 다 저장된다. Multi라는 의미는 기능의 확장 정도로 받아드리면 될거 같다. 사실 HashMultiset은 아래와 같이 Map구조로 표현이 가능하다.
+즉 HashMultiset은 분명 set이지만 모든 원소가 다 저장된다. Multi라는 의미는 기능의 확장 정도로 받아드리면 될거 같다. 사실 HashMultiset은 아래와 같이 Map구조로 표현이 가능하다. 맵의 키로는 실제 입력 값들이 들어가고, 대응 하는 값으로 입력 값의 횟수를 저장한다.
 ```
 Multiset<String> strings = HashMultiset.create();
 Map<String, Integer> StringToCount = new HashMap();
 ```
-
-Multiset
-: A collection that supports order-independent equality, like Set, but may have duplicate elements.
-
-
 
 
 ## BiMap 인터페이스
@@ -49,7 +44,7 @@ Multiset
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDYxOTgxOTMsMjc0ODQ3Mzc5LC0xMz
-cwODAxMjE3LDIxMzk5MjgzNywxMzY5NjU3ODkwLC0xMzYzMDgx
-MDkwXX0=
+eyJoaXN0b3J5IjpbMTA2NDY2NTk4MiwyNzQ4NDczNzksLTEzNz
+A4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4OTAsLTEzNjMwODEw
+OTBdfQ==
 -->
