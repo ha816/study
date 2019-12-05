@@ -113,7 +113,16 @@ immutableSet.remove(10); // throw exception
 
 ## Iterables 클래스
 
-반복자들의 반복자
+반복자들의 반복자들을 만드는 것은 굉장히 어렵다. 이때 Iterables를 사용하면 한결 수월하다. 
+
+```
+list1 = {1,2,3};
+list2 = {...};
+list3 = {...};
+
+Iterable<Integer>
+
+```
 
 # Joda Time
 
@@ -121,7 +130,7 @@ immutableSet.remove(10); // throw exception
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5ODA0MTM4MSwxNzE4NjU5MjQ3LDE3Mz
+eyJoaXN0b3J5IjpbLTk0MjUzNTczNywxNzE4NjU5MjQ3LDE3Mz
 gwMzY5NDcsNzM4MDExOTgyLDE4MzQ1MTg2ODEsLTEzMzM1Nzc2
 MDksMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMzk5MjgzNywxMz
 Y5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
