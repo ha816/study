@@ -89,6 +89,12 @@ numbers.add(3);
 
 fianl List<Integer> unmodifiableNumbers = Collections.unmodifiableList(numbers);
 
+numbers.remove();
+
+
+
+
+
 
 
 ```
@@ -103,8 +109,8 @@ fianl List<Integer> unmodifiableNumbers = Collections.unmodifiableList(numbers);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczODAzNjk0Nyw3MzgwMTE5ODIsMTgzND
-UxODY4MSwtMTMzMzU3NzYwOSwyNzQ4NDczNzksLTEzNzA4MDEy
-MTcsMjEzOTkyODM3LDEzNjk2NTc4OTAsLTEzNjMwODEwOTBdfQ
-==
+eyJoaXN0b3J5IjpbMTY4ODAzNzA5MywxNzM4MDM2OTQ3LDczOD
+AxMTk4MiwxODM0NTE4NjgxLC0xMzMzNTc3NjA5LDI3NDg0NzM3
+OSwtMTM3MDgwMTIxNywyMTM5OTI4MzcsMTM2OTY1Nzg5MCwtMT
+M2MzA4MTA5MF19
 -->
