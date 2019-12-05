@@ -81,6 +81,8 @@ stockToCompany.put("APPLE", "APPL");
 ## Collections 유틸리티 클래스
 
 자바 컬력센 API의 Collections 유틸리티 클래스는 수정할 수 없는 컬렉션을 생성하는데 필요한 몇 가지 유틸리티 메서드를 제공한다. 
+
+Collections.unmodifiabl
 ```
 List<Integer> numbers = new ArrayList();
 numbers.add(1);
@@ -89,18 +91,12 @@ numbers.add(3);
 
 fianl List<Integer> unmodifiableNumbers = Collections.unmodifiableList(numbers);
 
-int = unmodifiableNumbers.get(0);
-
+int first = unmodifiableNumbers.get(0);
 numbers.remove();
-
-unmodifiableNumbers.get(0) == 
-
-
-
-
-
-
+unmodifiableNumbers.get(0) != first
 ```
+
+
 
 
 
@@ -112,8 +108,8 @@ unmodifiableNumbers.get(0) ==
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzc4NzEwNTAsMTczODAzNjk0Nyw3Mz
-gwMTE5ODIsMTgzNDUxODY4MSwtMTMzMzU3NzYwOSwyNzQ4NDcz
-NzksLTEzNzA4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4OTAsLT
-EzNjMwODEwOTBdfQ==
+eyJoaXN0b3J5IjpbNzI4ODU4MTgxLDE3MzgwMzY5NDcsNzM4MD
+ExOTgyLDE4MzQ1MTg2ODEsLTEzMzM1Nzc2MDksMjc0ODQ3Mzc5
+LC0xMzcwODAxMjE3LDIxMzk5MjgzNywxMzY5NjU3ODkwLC0xMz
+YzMDgxMDkwXX0=
 -->
