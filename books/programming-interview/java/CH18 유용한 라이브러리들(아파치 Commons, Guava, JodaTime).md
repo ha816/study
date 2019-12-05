@@ -150,17 +150,17 @@ Period는 두 기간의 차이를 년, 월, 일, 시간등의 단위로 계산�
 DateTime dateTime1 = new DateTime(2010,1,1);
 DateTime dateTime2 = new DateTime(2010,2,1);
 
-Period duration = new Duration(dateTime1, dateTime2);
-// duration : 31일치의 밀리세컨드
+Period period = new Period(dateTime1, dateTime2);
+// 두 날짜의 
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTI5NzI1NCwxNjQzNjE1MzQ0LC03MD
-M2NzE4NjYsNDUwMzA2OTM3LDI4MzI2MTMzNSwxNzE4NjU5MjQ3
-LDE3MzgwMzY5NDcsNzM4MDExOTgyLDE4MzQ1MTg2ODEsLTEzMz
-M1Nzc2MDksMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMzk5Mjgz
-NywxMzY5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
+eyJoaXN0b3J5IjpbMTQxNjY1MzU4LDE2NDM2MTUzNDQsLTcwMz
+Y3MTg2Niw0NTAzMDY5MzcsMjgzMjYxMzM1LDE3MTg2NTkyNDcs
+MTczODAzNjk0Nyw3MzgwMTE5ODIsMTgzNDUxODY4MSwtMTMzMz
+U3NzYwOSwyNzQ4NDczNzksLTEzNzA4MDEyMTcsMjEzOTkyODM3
+LDEzNjk2NTc4OTAsLTEzNjMwODEwOTBdfQ==
 -->
