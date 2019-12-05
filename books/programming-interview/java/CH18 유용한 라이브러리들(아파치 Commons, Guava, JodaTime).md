@@ -138,20 +138,19 @@ DateTime 객체는 불변이고 변경하는 연산은 실제로 새로운 DateT
 
 Duration는 두 기간의 차이를 실제 계산을 한다. 이때 시간 단위는 밀리세컨드로 시간의 양을 측정한다.
 ```
-DateTime dateTime1 = new DateTime(2010,1,2);
+DateTime dateTime1 = new DateTime(2010,1,1);
 DateTime dateTime2 = new DateTime(2010,2,1);
 
 Duration duration = new Duration(dateTime1, dateTime2);
-duration
+// duration : 31일치의 밀리세컨드
 ```
-
 Period는 두 기간의 차이를 년, 월, 일, 시간등의 단위로 계산을 한다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NDM0NDg3MCwxNjQzNjE1MzQ0LC03MD
+eyJoaXN0b3J5IjpbLTUyNTg0NTk5OSwxNjQzNjE1MzQ0LC03MD
 M2NzE4NjYsNDUwMzA2OTM3LDI4MzI2MTMzNSwxNzE4NjU5MjQ3
 LDE3MzgwMzY5NDcsNzM4MDExOTgyLDE4MzQ1MTg2ODEsLTEzMz
 M1Nzc2MDksMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMzk5Mjgz
