@@ -55,13 +55,11 @@ method put(key, value){
 	mapping.put("1", "Smith");
 	mapping.put("1", "Simon");
 	mapping.put("2", "Min");
-	
-	mapping.get(1);
-	
+	Collection<String> one = mapping.get(1);
+	2 == one.size();
+	1 == mapping.get(2).size();
 ```
 
-
-```
 
 
 
@@ -76,7 +74,7 @@ method put(key, value){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjE4MDk2NDcsMjc0ODQ3Mzc5LC0xMz
-cwODAxMjE3LDIxMzk5MjgzNywxMzY5NjU3ODkwLC0xMzYzMDgx
-MDkwXX0=
+eyJoaXN0b3J5IjpbMTgwNTI1NTYxNywyNzQ4NDczNzksLTEzNz
+A4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4OTAsLTEzNjMwODEw
+OTBdfQ==
 -->
