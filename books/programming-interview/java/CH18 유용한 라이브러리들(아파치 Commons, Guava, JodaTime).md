@@ -95,7 +95,17 @@ int first = unmodifiableNumbers.get(0);
 numbers.remove();
 unmodifiableNumbers.get(0) != first
 ```
-완전한 불변성 있는, 수정 불가능한 컬렉션을 생성하기 위해 Guava는 유틸리티를 
+완전한 불변성 있는, 수정 불가능한 컬렉션을 생성하기 위해 Guava는 유틸리티를 제공한다. 
+
+```
+Set<Integer> numberSet = new HashSet<>();
+numberSet.add(10);
+numberSet.add(20);
+numberSet.add(30);
+
+
+
+```
 
 
 
@@ -108,8 +118,8 @@ unmodifiableNumbers.get(0) != first
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1MTMxODEyLDE3MTg2NTkyNDcsMTczOD
-AzNjk0Nyw3MzgwMTE5ODIsMTgzNDUxODY4MSwtMTMzMzU3NzYw
-OSwyNzQ4NDczNzksLTEzNzA4MDEyMTcsMjEzOTkyODM3LDEzNj
-k2NTc4OTAsLTEzNjMwODEwOTBdfQ==
+eyJoaXN0b3J5IjpbMTQ0NTk1ODU2MywxNzE4NjU5MjQ3LDE3Mz
+gwMzY5NDcsNzM4MDExOTgyLDE4MzQ1MTg2ODEsLTEzMzM1Nzc2
+MDksMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMzk5MjgzNywxMz
+Y5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
 -->
