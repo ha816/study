@@ -32,7 +32,22 @@ Multiset<String> strings = HashMultiset.create();
 Map<String, Integer> StringToCount = new HashMap();
 ```
 
-, Multimap 인터페이스
+## Multimap 인터페이스
+
+Multimap 인터페이스는 Multiset과 유사하며 Map 구현에서 키가 한번 이상 될 수 있다. 
+
+```
+method put(key, value){
+	if(map contains key){
+		let collection = map(key);
+	}
+}
+
+
+```
+
+
+
 
 ## Collections 유틸리티 클래스
 
@@ -44,7 +59,7 @@ Map<String, Integer> StringToCount = new HashMap();
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MjU1ODE4NCwyNzQ4NDczNzksLTEzNz
+eyJoaXN0b3J5IjpbMTE3NTU2MzkwMywyNzQ4NDczNzksLTEzNz
 A4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4OTAsLTEzNjMwODEw
 OTBdfQ==
 -->
