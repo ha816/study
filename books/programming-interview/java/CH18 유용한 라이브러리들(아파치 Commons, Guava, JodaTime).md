@@ -80,7 +80,7 @@ stockToCompany.put("APPLE", "APPL");
 
 ## Collections 유틸리티 클래스
 
-자바 컬력센 
+자바 컬력센 API의 Collections 유틸리티 클래스는 
 
 
 ## Iterables 클래스
@@ -91,7 +91,7 @@ stockToCompany.put("APPLE", "APPL");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjM3NDAyNTEsMTgzNDUxODY4MSwtMT
-MzMzU3NzYwOSwyNzQ4NDczNzksLTEzNzA4MDEyMTcsMjEzOTky
-ODM3LDEzNjk2NTc4OTAsLTEzNjMwODEwOTBdfQ==
+eyJoaXN0b3J5IjpbMTcxMzAxOTQzNCwxODM0NTE4NjgxLC0xMz
+MzNTc3NjA5LDI3NDg0NzM3OSwtMTM3MDgwMTIxNywyMTM5OTI4
+MzcsMTM2OTY1Nzg5MCwtMTM2MzA4MTA5MF19
 -->
