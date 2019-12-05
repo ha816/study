@@ -10,7 +10,10 @@ Guava는 원래 구글이 자바 프로젝트에 이용하려고 개발한 라�
 
 특정 원소의 개수를 셀수있게 만들거나 원소를 일반 집합으로 변경도 할 수 있게 해준다.  컬렉션 라이브러리와 비슷하게 HashMultiset, TreeMultiset, ConcurrentHashMultiset등 몇 가지 구현 클래스가 존재한다.
 
+```
+Multiset<String> = HashMultiset.create();
 
+```
 
 
 
@@ -27,6 +30,6 @@ Guava는 원래 구글이 자바 프로젝트에 이용하려고 개발한 라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NzE4NTc2NCwtMTM3MDgwMTIxNywyMT
-M5OTI4MzcsMTM2OTY1Nzg5MCwtMTM2MzA4MTA5MF19
+eyJoaXN0b3J5IjpbODc2OTM1MjI4LC0xMzcwODAxMjE3LDIxMz
+k5MjgzNywxMzY5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
 -->
