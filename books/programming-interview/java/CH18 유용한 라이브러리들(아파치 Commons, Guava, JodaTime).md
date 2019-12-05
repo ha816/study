@@ -136,14 +136,17 @@ DateTime 객체는 불변이고 변경하는 연산은 실제로 새로운 DateT
 
 > Joda Time의 Duration과 Period 클래스의 차이점은 무엇인가?
 
+Duration 실제 
+
+Period
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMzY3MTg2Niw0NTAzMDY5MzcsMjgzMj
-YxMzM1LDE3MTg2NTkyNDcsMTczODAzNjk0Nyw3MzgwMTE5ODIs
-MTgzNDUxODY4MSwtMTMzMzU3NzYwOSwyNzQ4NDczNzksLTEzNz
-A4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4OTAsLTEzNjMwODEw
-OTBdfQ==
+eyJoaXN0b3J5IjpbNTQzNjI4NzU1LC03MDM2NzE4NjYsNDUwMz
+A2OTM3LDI4MzI2MTMzNSwxNzE4NjU5MjQ3LDE3MzgwMzY5NDcs
+NzM4MDExOTgyLDE4MzQ1MTg2ODEsLTEzMzM1Nzc2MDksMjc0OD
+Q3Mzc5LC0xMzcwODAxMjE3LDIxMzk5MjgzNywxMzY5NjU3ODkw
+LC0xMzYzMDgxMDkwXX0=
 -->
