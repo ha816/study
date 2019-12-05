@@ -130,14 +130,15 @@ Joda Time 라이브러리는 자바의 Date와 Calendar 클래스의 대체제 �
 
 ## DateTime 클래스
 
-DateTime 클래스는 자바의 Calendar 클래스를 대체하고, 시간과 날짜의 표현을 검새하고 수정하기 위한 많은 메서드를 제공한다. 
+DateTime 클래스는 자바의 Calendar 클래스를 대체하고, 시간과 날짜의 표현을 검하고 수정하기 위한 많은 메서드를 제공한다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUwMzA2OTM3LDI4MzI2MTMzNSwxNzE4Nj
-U5MjQ3LDE3MzgwMzY5NDcsNzM4MDExOTgyLDE4MzQ1MTg2ODEs
-LTEzMzM1Nzc2MDksMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMz
-k5MjgzNywxMzY5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
+eyJoaXN0b3J5IjpbLTE0MjI0NTczMDEsNDUwMzA2OTM3LDI4Mz
+I2MTMzNSwxNzE4NjU5MjQ3LDE3MzgwMzY5NDcsNzM4MDExOTgy
+LDE4MzQ1MTg2ODEsLTEzMzM1Nzc2MDksMjc0ODQ3Mzc5LC0xMz
+cwODAxMjE3LDIxMzk5MjgzNywxMzY5NjU3ODkwLC0xMzYzMDgx
+MDkwXX0=
 -->
