@@ -82,7 +82,7 @@ stockToCompany.put("APPLE", "APPL");
 
 자바 컬력센 API의 Collections 유틸리티 클래스는 수정할 수 없는 컬렉션을 생성하는데 필요한 몇 가지 유틸리티 메서드를 제공한다. 
 
-Collections.unmodifiableList(list)로 만들어진 참조 
+Collections.unmodifiableList(list)로 만들어진 참조는 해당 참조로는 변경이 불가능하다. 하지만 원본 리스트에 대한 참조가 있다면 다른 참조로 변경이 가능하다. 
 ```
 List<Integer> numbers = new ArrayList();
 numbers.add(1);
@@ -95,7 +95,7 @@ int first = unmodifiableNumbers.get(0);
 numbers.remove();
 unmodifiableNumbers.get(0) != first
 ```
-
+완전한 불변성 있는, 수정 불가능한 컬렉션을 생성하기 위해 Guava는 유틸리티를 
 
 
 
@@ -108,8 +108,8 @@ unmodifiableNumbers.get(0) != first
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxODY1OTI0NywxNzM4MDM2OTQ3LDczOD
-AxMTk4MiwxODM0NTE4NjgxLC0xMzMzNTc3NjA5LDI3NDg0NzM3
-OSwtMTM3MDgwMTIxNywyMTM5OTI4MzcsMTM2OTY1Nzg5MCwtMT
-M2MzA4MTA5MF19
+eyJoaXN0b3J5IjpbMjE1MTMxODEyLDE3MTg2NTkyNDcsMTczOD
+AzNjk0Nyw3MzgwMTE5ODIsMTgzNDUxODY4MSwtMTMzMzU3NzYw
+OSwyNzQ4NDczNzksLTEzNzA4MDEyMTcsMjEzOTkyODM3LDEzNj
+k2NTc4OTAsLTEzNjMwODEwOTBdfQ==
 -->
