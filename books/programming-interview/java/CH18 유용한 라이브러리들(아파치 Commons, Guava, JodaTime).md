@@ -62,7 +62,12 @@ Collection<String;> one = mapping.get(1)
 ```
 HashMultimap의  get 메서드는 Collection 객체를 반환한다는 것을 기억하자.
 Multimap 인터페이스는 자바 Map과 약간의 차이가 있다. 
-get 메서드는 존
+get 메서드는 키로 값을 얻으려면 null 을 반환하지 않고 빈 컬렉션을 반환한다. 
+
+## BiMap 인터페이스
+
+맵의 또다른 타입으로 양방향 조회를 가능하게 하는 BiMap 인터페이스가 있다. 양방향이란 키로 
+
 
 
 ## Collections 유틸리티 클래스
@@ -75,7 +80,7 @@ get 메서드는 존
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxMzMyMTQ1LC0xMzMzNTc3NjA5LDI3ND
-g0NzM3OSwtMTM3MDgwMTIxNywyMTM5OTI4MzcsMTM2OTY1Nzg5
-MCwtMTM2MzA4MTA5MF19
+eyJoaXN0b3J5IjpbMTg2NDA3NTU5NSwtMTMzMzU3NzYwOSwyNz
+Q4NDczNzksLTEzNzA4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4
+OTAsLTEzNjMwODEwOTBdfQ==
 -->
