@@ -48,6 +48,7 @@ method put(key, value){
 		map.put(key, collection);
 	}
 }
+```
 위 코드는 불확실하고 에러가 발생하기 쉬우며 스레드 세이프한지 생각해봐야한다. 이때 Multimap을 스면 이러한 문제를 해결해준다.
 
 ```
@@ -56,8 +57,9 @@ mapping.put("1", "Smith");
 mapping.put("1", "Simon");
 mapping.put("2", "Min");
 Collection<String;> one = mapping.get(1)
-one.size
-mapping.get(2).size()
+2 == one.size();
+1 == mapping.get(2).size();
+```
 
 
 ## Collections 유틸리티 클래스
@@ -70,7 +72,7 @@ mapping.get(2).size()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MjI3NjYyOSwyNzQ4NDczNzksLTEzNz
-A4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4OTAsLTEzNjMwODEw
-OTBdfQ==
+eyJoaXN0b3J5IjpbLTEzMzM1Nzc2MDksMjc0ODQ3Mzc5LC0xMz
+cwODAxMjE3LDIxMzk5MjgzNywxMzY5NjU3ODkwLC0xMzYzMDgx
+MDkwXX0=
 -->
