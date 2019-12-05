@@ -36,7 +36,7 @@ Map<String, Integer> StringToCount = new HashMap();
 
 Multimap 인터페이스는 Multiset과 유사하며 Map 구현에서 키가 한번 이상 될 수 있다. 
 
-
+한 키에 대해서 중복되는 값이 있다면 이를 저장하기 위해 Map 구현을 쓸때는 일반적으로 중복되는 값들을 List나 Collection으로 저장을 한다. 그러면 아래와 같은 의사코드를 자주 사용하게 된다.
 ```
 method put(key, value){
 	if(map contains key){
@@ -48,6 +48,11 @@ method put(key, value){
 		map.put(key, collection);
 	}
 }
+위 코드는 불확실하고 에러가 발생하기 쉬우며 스레드 세이프한지 생각해봐야한다. 이때 Multimap을 스면 이러한 문제를 해결해준다.
+
+```
+	Mul
+```
 
 
 ```
@@ -65,7 +70,7 @@ method put(key, value){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNzM2OTgxNywyNzQ4NDczNzksLTEzNz
+eyJoaXN0b3J5IjpbLTE5NjkwNzYxOSwyNzQ4NDczNzksLTEzNz
 A4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4OTAsLTEzNjMwODEw
 OTBdfQ==
 -->
