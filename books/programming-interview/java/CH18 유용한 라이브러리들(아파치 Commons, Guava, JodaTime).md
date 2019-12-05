@@ -21,9 +21,12 @@ strings.add("3");
 
 6 == strings.size;
 2 == strings.count("2");
-Set<String> stringSet strings.elementSet();
-
+Set<String> stringSet = strings.elementSet();
+3 == stringSet.size();
 ```
+
+즉 HashMultiset은 분명 set이지만 모든 원소가 다 저장된다. 
+
 
 
 
@@ -40,6 +43,6 @@ Set<String> stringSet strings.elementSet();
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NzQ1NzM2NywtMTM3MDgwMTIxNywyMT
-M5OTI4MzcsMTM2OTY1Nzg5MCwtMTM2MzA4MTA5MF19
+eyJoaXN0b3J5IjpbMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMz
+k5MjgzNywxMzY5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
 -->
