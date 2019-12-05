@@ -109,12 +109,11 @@ immutableSet.contains(10);
 
 immutableSet.remove(10); // throw exception
 ```
-모든 유틸리티 클래스는 컬렉션의 완벽한 복사본을 만들기 때문에 수정할 수 없는 접근법과 매우 다르다. 
-
-
-
+모든 유틸리티 클래스는 컬렉션의 완벽한 복사본을 만들기 때문에 수정할 수 없는 접근법과 매우 다르다. 당연한 이야기지만 불변성이 보장되면 스레드 세이프하다. 그리고 대신에 추가적인 메모리를 사용한다. 
 
 ## Iterables 클래스
+
+반복자들의 반복자
 
 # Joda Time
 
@@ -122,7 +121,7 @@ immutableSet.remove(10); // throw exception
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MDA4MTk2NiwxNzE4NjU5MjQ3LDE3Mz
+eyJoaXN0b3J5IjpbMTg5ODA0MTM4MSwxNzE4NjU5MjQ3LDE3Mz
 gwMzY5NDcsNzM4MDExOTgyLDE4MzQ1MTg2ODEsLTEzMzM1Nzc2
 MDksMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMzk5MjgzNywxMz
 Y5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
