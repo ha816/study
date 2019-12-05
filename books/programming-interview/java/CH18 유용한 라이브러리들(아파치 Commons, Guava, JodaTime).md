@@ -138,13 +138,13 @@ DateTime 객체는 불변이고 변경하는 연산은 실제로 새로운 DateT
 
 Duration는 두 기간의 차이를 실제 값으로 계산을 한다. 
 
-Period는 두 기간의 차이를 년, 월, 일, 시간 단위등으로 
+Period는 두 기간의 차이를 년, 월, 일, 시간등의 단위로 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjg0NjQzMiwtNzAzNjcxODY2LDQ1MD
+eyJoaXN0b3J5IjpbLTc4MjMzNzY3OCwtNzAzNjcxODY2LDQ1MD
 MwNjkzNywyODMyNjEzMzUsMTcxODY1OTI0NywxNzM4MDM2OTQ3
 LDczODAxMTk4MiwxODM0NTE4NjgxLC0xMzMzNTc3NjA5LDI3ND
 g0NzM3OSwtMTM3MDgwMTIxNywyMTM5OTI4MzcsMTM2OTY1Nzg5
