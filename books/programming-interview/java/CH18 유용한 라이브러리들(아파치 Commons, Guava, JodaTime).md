@@ -66,7 +66,9 @@ get 메서드는 키로 값을 얻으려면 null 을 반환하지 않고 빈 컬
 
 ## BiMap 인터페이스
 
-맵의 또다른 타입으로 양방향 조회를 가능하게 하는 BiMap 인터페이스가 있다. 양방향이란 키로 
+BiMap은 맵의 또다른 타입으로 양방향 조회를 가능하게 하는 인터페이스이다. 양방향이란 키로 값을 조회할수 있고 반대로 값으로 키를 조회한다는 이야기다. 자바의 Map으로 이를 구현하는건 굉장히 까다롭다. 하지만 BiMap을 쓰면 쉽다. 
+```
+```
 
 
 
@@ -80,7 +82,7 @@ get 메서드는 키로 값을 얻으려면 null 을 반환하지 않고 빈 컬
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NDA3NTU5NSwtMTMzMzU3NzYwOSwyNz
-Q4NDczNzksLTEzNzA4MDEyMTcsMjEzOTkyODM3LDEzNjk2NTc4
-OTAsLTEzNjMwODEwOTBdfQ==
+eyJoaXN0b3J5IjpbODUyNTIxMjg2LC0xMzMzNTc3NjA5LDI3ND
+g0NzM3OSwtMTM3MDgwMTIxNywyMTM5OTI4MzcsMTM2OTY1Nzg5
+MCwtMTM2MzA4MTA5MF19
 -->
