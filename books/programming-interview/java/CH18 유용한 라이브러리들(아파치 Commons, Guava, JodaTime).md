@@ -151,10 +151,9 @@ DateTime dateTime1 = new DateTime(2010,2,1);
 DateTime dateTime2 = new DateTime(2010,3,1);
 
 Period period = new Period(dateTime1, dateTime2);
-DateTime dateTime3 = new DateTime(2010,2,1);
+DateTime dateTime3 = new DateTime(2011,2,1);
+2011년 3월 1일 == dateTime3.withPeriodAdded(period, 1);
 
-3월 == 
-dateTime3.withPeriodAdded(period, 1);
 
 //  두 DateTime의 각 필드로 비교한다(year, month, day)
 // 실제 시간의 차이는 28일이지만 period.get
@@ -166,9 +165,9 @@ dateTime3.withPeriodAdded(period, 1);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM4Nzc4ODgwLDE2NDM2MTUzNDQsLTcwMz
-Y3MTg2Niw0NTAzMDY5MzcsMjgzMjYxMzM1LDE3MTg2NTkyNDcs
-MTczODAzNjk0Nyw3MzgwMTE5ODIsMTgzNDUxODY4MSwtMTMzMz
-U3NzYwOSwyNzQ4NDczNzksLTEzNzA4MDEyMTcsMjEzOTkyODM3
-LDEzNjk2NTc4OTAsLTEzNjMwODEwOTBdfQ==
+eyJoaXN0b3J5IjpbMTYzNjYwOTA1MCwxNjQzNjE1MzQ0LC03MD
+M2NzE4NjYsNDUwMzA2OTM3LDI4MzI2MTMzNSwxNzE4NjU5MjQ3
+LDE3MzgwMzY5NDcsNzM4MDExOTgyLDE4MzQ1MTg2ODEsLTEzMz
+M1Nzc2MDksMjc0ODQ3Mzc5LC0xMzcwODAxMjE3LDIxMzk5Mjgz
+NywxMzY5NjU3ODkwLC0xMzYzMDgxMDkwXX0=
 -->
