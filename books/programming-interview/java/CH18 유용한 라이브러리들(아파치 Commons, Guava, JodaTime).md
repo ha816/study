@@ -140,6 +140,8 @@ Duration는 두 기간의 차이를 실제 계산을 한다. 이때 시간 단�
 ```
 DateTime dateTime1 = new DateTime(2010,1,2);
 DateTime dateTime2 = new DateTime(2010,2,1);
+
+Duration duration = new Duration(dateTime1, dateTime2);
 ```
 
 Period는 두 기간의 차이를 년, 월, 일, 시간등의 단위로 계산을 한다.
@@ -148,9 +150,9 @@ Period는 두 기간의 차이를 년, 월, 일, 시간등의 단위로 계산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MzYxNTM0NCwtNzAzNjcxODY2LDQ1MD
-MwNjkzNywyODMyNjEzMzUsMTcxODY1OTI0NywxNzM4MDM2OTQ3
-LDczODAxMTk4MiwxODM0NTE4NjgxLC0xMzMzNTc3NjA5LDI3ND
-g0NzM3OSwtMTM3MDgwMTIxNywyMTM5OTI4MzcsMTM2OTY1Nzg5
-MCwtMTM2MzA4MTA5MF19
+eyJoaXN0b3J5IjpbMTk1OTk2MzUyLDE2NDM2MTUzNDQsLTcwMz
+Y3MTg2Niw0NTAzMDY5MzcsMjgzMjYxMzM1LDE3MTg2NTkyNDcs
+MTczODAzNjk0Nyw3MzgwMTE5ODIsMTgzNDUxODY4MSwtMTMzMz
+U3NzYwOSwyNzQ4NDczNzksLTEzNzA4MDEyMTcsMjEzOTkyODM3
+LDEzNjk2NTc4OTAsLTEzNjMwODEwOTBdfQ==
 -->
