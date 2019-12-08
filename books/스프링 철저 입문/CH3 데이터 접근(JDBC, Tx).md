@@ -383,11 +383,8 @@ The **Phantom Read Concurrency Problem** happens in SQL Server when one transact
 $$\begin{bmatrix}
 T1 & T2 \\
 Select(T) & \\
-&Insert(T) \\
-&Commit \\
-R(A) &\\
-W(A)&\\
-Commit&\\
+&Insert(T) \text{ or } Delete(T) \\
+Select(T) &\\
 \end{bmatrix}$$
 
 
@@ -404,11 +401,11 @@ Commit&\\
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4NjI4OTAzLC02MDc5ODQ2NTcsLTEyMj
-UwOTIzNDcsLTE5ODQ4NzE4ODEsODk2NDQwNTkzLDIxMTA3OTk1
-MTEsMTQ1MDE4NDU3MSw5NjM0MDU2NjUsLTExNDk0OTc1NzgsNj
-YwMDA3NjQyLDc4NzA3NzEwNiwxNDkxNTU1MTM1LC0xNzc2NTE3
-ODkwLC0yMTQzNTQ5NDUxLC0zMDgyODI3NTUsOTkxNzU5NzQxLC
-0xMjYxOTg0MzU3LC0xMjcxOTI2MDk0LC0xNTU1MDMwMjYyLDE4
-Mjc2MDYzNTNdfQ==
+eyJoaXN0b3J5IjpbLTE3ODQ1MDk1Nyw3Mzg2Mjg5MDMsLTYwNz
+k4NDY1NywtMTIyNTA5MjM0NywtMTk4NDg3MTg4MSw4OTY0NDA1
+OTMsMjExMDc5OTUxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMT
+E0OTQ5NzU3OCw2NjAwMDc2NDIsNzg3MDc3MTA2LDE0OTE1NTUx
+MzUsLTE3NzY1MTc4OTAsLTIxNDM1NDk0NTEsLTMwODI4Mjc1NS
+w5OTE3NTk3NDEsLTEyNjE5ODQzNTcsLTEyNzE5MjYwOTQsLTE1
+NTUwMzAyNjJdfQ==
 -->
