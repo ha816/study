@@ -415,19 +415,18 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 
 MANDATORY의 경우, 만들어진 트랜잭션 메서드 1의 경계에서 부터 이미 만들어진 트랜잭션이 없기 때문에 예외가 발생한다. (의무적인, 위임된, 강압적인)
 
-NEVER, NOT_SUPPORTED는 모두 트랜잭션을 관리하지 않는다. 트랜잭션 메서드1의 경계에서 만들어진 트랜잭션이 존재하고 트랜잭션 메서드 2가 NEVER라면 트랜잭션을 절대 쓰지 않는다로 설정된 트랜잭션 메서드2를 호출하였으므로 예외가 발생한다. 
-트랜잭션 메서드 2가 NOT_SUPPORTED의 경우,  트랜잭션처리가 되지 않는다.
+NEVER, NOT_SUPPORTED는 모두 트랜잭션을 관리하지 않는다. 트랜잭션 메서드1의 경계에서 만들어진 트랜잭션이 존재하고 트랜잭션 메서드 2가 NEVER라면 트랜잭션을 절대 쓰지 않는다로 설정된 트랜잭션 메서드2를 호출하였으므로 예외가 발생한다. 트랜잭션 메서드 2 ㄱNOT_SUPPORTED의 경우,  트랜잭션처리가 되지 않는다.
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI1MjY1MDMzLDI2ODE3NDY1MSwxNzM2Mz
-UwMjM3LDE4MDI4OTc2MjgsLTIwMTg2Nzk0NjQsODQxNzI3ODAs
-LTU1OTcwNzMxNSwxMTIwMzM5MDQ1LC0xNjI2NjM3ODUsNzM4Nj
-I4OTAzLC02MDc5ODQ2NTcsLTEyMjUwOTIzNDcsLTE5ODQ4NzE4
-ODEsODk2NDQwNTkzLDIxMTA3OTk1MTEsMTQ1MDE4NDU3MSw5Nj
-M0MDU2NjUsLTExNDk0OTc1NzgsNjYwMDA3NjQyLDc4NzA3NzEw
-Nl19
+eyJoaXN0b3J5IjpbLTExNDQ1NjY1NTIsMjY4MTc0NjUxLDE3Mz
+YzNTAyMzcsMTgwMjg5NzYyOCwtMjAxODY3OTQ2NCw4NDE3Mjc4
+MCwtNTU5NzA3MzE1LDExMjAzMzkwNDUsLTE2MjY2Mzc4NSw3Mz
+g2Mjg5MDMsLTYwNzk4NDY1NywtMTIyNTA5MjM0NywtMTk4NDg3
+MTg4MSw4OTY0NDA1OTMsMjExMDc5OTUxMSwxNDUwMTg0NTcxLD
+k2MzQwNTY2NSwtMTE0OTQ5NzU3OCw2NjAwMDc2NDIsNzg3MDc3
+MTA2XX0=
 -->
