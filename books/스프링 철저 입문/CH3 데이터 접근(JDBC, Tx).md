@@ -421,15 +421,15 @@ NOT_SUPPORTED일 경우,  트랜잭션처리를 하지 않는 메서드라는 �
 
 SUPPORTED 메서드라면 만들어진 트랜잭션이 존재하면 그 트랜잭션과 함께 처리되고 아니라면 트랜잭션 처리가 되지 않는다. 메서드의 트랜잭션 행위는 매우 다양하기 때문에, SUPPORTED는 매우 조심히 써야한다. 
 
-NESTED 메서드라면 REQUIRED와 매우 유사하다. 하지만 NESTED 메서드 구간안에서는 중첩된 트랜잭션 취급하게 된다. NESTED 구간안에서 롤백이 되면 NESTED 구간안의 모든 내용은 롤백 되지만 구간 밖에 내용은 롤백 되지 않는다. 
+NESTED 메서드라면 REQUIRED와 매우 유사하다. 하지만 NESTED 메서드 구간안에서는 중첩된 트랜잭션 취급하게 된다. NESTED 구간안에서 롤백이 되면 NESTED 구간안의 모든 내용은 롤백 되지만 구간 밖에 내용은 롤백 되지 않는다. 즉 REQUIRED는 어떤 구간에서 예외가 발생하든 모두 롤백이 되지만, NESTED는 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NDcwNTQsLTM3NTgwODI4MiwxMzQwMT
-M3NDMxLDU5MzM2ODI2MiwzNzE5MDMwOCwyNjgxNzQ2NTEsMTcz
-NjM1MDIzNywxODAyODk3NjI4LC0yMDE4Njc5NDY0LDg0MTcyNz
-gwLC01NTk3MDczMTUsMTEyMDMzOTA0NSwtMTYyNjYzNzg1LDcz
-ODYyODkwMywtNjA3OTg0NjU3LC0xMjI1MDkyMzQ3LC0xOTg0OD
-cxODgxLDg5NjQ0MDU5MywyMTEwNzk5NTExLDE0NTAxODQ1NzFd
-fQ==
+eyJoaXN0b3J5IjpbMTUyODQyOTMzMSwtMzc1ODA4MjgyLDEzND
+AxMzc0MzEsNTkzMzY4MjYyLDM3MTkwMzA4LDI2ODE3NDY1MSwx
+NzM2MzUwMjM3LDE4MDI4OTc2MjgsLTIwMTg2Nzk0NjQsODQxNz
+I3ODAsLTU1OTcwNzMxNSwxMTIwMzM5MDQ1LC0xNjI2NjM3ODUs
+NzM4NjI4OTAzLC02MDc5ODQ2NTcsLTEyMjUwOTIzNDcsLTE5OD
+Q4NzE4ODEsODk2NDQwNTkzLDIxMTA3OTk1MTEsMTQ1MDE4NDU3
+MV19
 -->
