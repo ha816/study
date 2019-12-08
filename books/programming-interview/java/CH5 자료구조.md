@@ -1,6 +1,5 @@
 # 리스트
-리스트는 특정 타입 값들이 순차적으로 정렬된 컬렉션이다. 
-리스트는 자바의 내장 컬렉션인 배열하고 다르다. 리스트는 크기 지정에 한계가 없으므로 리스트를 사용하기 전에 크기를 지정할 필요가 없다. 자바에서는 일반적으로 ArrayList나 LinkedList 클래스를 사용한다. ArrayList와 LinkedList는 상황에 따라 성능의 차이가 있다. 
+특정 타입 값들이 정렬된 컬렉션이다. 리스트는 자바의 내장 컬렉션인 배열하고 다르다. 리스트는 크기 지정에 한계가 없으므로 리스트를 사용하기 전에 크기를 지정할 필요가 없다. 자바에서는 일반적으로 ArrayList나 LinkedList 클래스를 사용한다. ArrayList와 LinkedList는 상황에 따라 성능의 차이가 있다. 
 
 
 # 배열과 리스트의 관계
@@ -110,5 +109,5 @@ Set은 Collection 인터페이스를 확장한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3OTY5MjkyNl19
+eyJoaXN0b3J5IjpbLTIyOTM3MTAzMywxNzc5NjkyOTI2XX0=
 -->
