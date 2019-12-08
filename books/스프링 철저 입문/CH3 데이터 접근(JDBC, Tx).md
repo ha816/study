@@ -386,21 +386,23 @@ Select(T) &\\
 
 T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 같은 테이블에 Insert 또는 Delete 쿼리를 한다면, 두 번재 Select 쿼리는 결과가 달라질 수 있다. 
 
+--- 
+
 >트랜잭션 전파 방식(Propagation)
 >참조하는 데이터나 변경한 데이터를 다른 트랜잭션으로 부터 어떻게 격리할 것인지를 결정한다. 격리 수준은 여러 트랜잭션의 동시 실행과 데이터의 일관성과 관련이 깊다. 
 
-
+ㅑ
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjY2Mzc4NSw3Mzg2Mjg5MDMsLTYwNz
-k4NDY1NywtMTIyNTA5MjM0NywtMTk4NDg3MTg4MSw4OTY0NDA1
-OTMsMjExMDc5OTUxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMT
-E0OTQ5NzU3OCw2NjAwMDc2NDIsNzg3MDc3MTA2LDE0OTE1NTUx
-MzUsLTE3NzY1MTc4OTAsLTIxNDM1NDk0NTEsLTMwODI4Mjc1NS
-w5OTE3NTk3NDEsLTEyNjE5ODQzNTcsLTEyNzE5MjYwOTQsLTE1
-NTUwMzAyNjJdfQ==
+eyJoaXN0b3J5IjpbLTE4NzkzMTIwMzUsLTE2MjY2Mzc4NSw3Mz
+g2Mjg5MDMsLTYwNzk4NDY1NywtMTIyNTA5MjM0NywtMTk4NDg3
+MTg4MSw4OTY0NDA1OTMsMjExMDc5OTUxMSwxNDUwMTg0NTcxLD
+k2MzQwNTY2NSwtMTE0OTQ5NzU3OCw2NjAwMDc2NDIsNzg3MDc3
+MTA2LDE0OTE1NTUxMzUsLTE3NzY1MTc4OTAsLTIxNDM1NDk0NT
+EsLTMwODI4Mjc1NSw5OTE3NTk3NDEsLTEyNjE5ODQzNTcsLTEy
+NzE5MjYwOTRdfQ==
 -->
