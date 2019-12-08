@@ -416,9 +416,9 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 MANDATORY의 경우, 만들어진 트랜잭션 메서드 1의 경계에서 부터 이미 만들어진 트랜잭션이 없기 때문에 예외가 발생한다. (의무적인, 위임된, 강압적인)
 
 NEVER, NOT_SUPPORTED는 모두 트랜잭션을 관리하지 않는다. 트랜잭션 메서드1의 경계에서 만들어진 트랜잭션이 존재하고 트랜잭션 메서드 2가 NEVER라면 트랜잭션을 절대 쓰지 않는다로 설정된 트랜잭션 메서드2를 호출하였으므로 예외가 발생한다. 트랜잭션 메서드 2 가NOT_SUPPORTED일 경우,  트랜잭션처리가 되지 않는다. 이미 트랜잭션이 있기 때문에 트랜잭션 1은 트랜잭션 메서드 2를 호출할때 보류된다. 
+트랜잭션 메서드가 끝나면 트랜잭션 1은 재개 된다.
+NOT_SUPPORTED는 트랜잭션이 불필요할때 사용하는데, 트랜잭션이 오버헤드를 
 
-
-If the client is running within a transaction and invokes the enterprise bean’s method, the container suspends the client’s transaction before invoking the method. After the method has completed, the container resumes the client’s transaction.
 
 If the client is not associated with a transaction, the container does not start a new transaction before running the method.
 
@@ -429,11 +429,11 @@ Use the  NotSupported  attribute for methods that don’t need transactions. Bec
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NDc1MDgxOSwzNzE5MDMwOCwyNjgxNz
-Q2NTEsMTczNjM1MDIzNywxODAyODk3NjI4LC0yMDE4Njc5NDY0
-LDg0MTcyNzgwLC01NTk3MDczMTUsMTEyMDMzOTA0NSwtMTYyNj
-YzNzg1LDczODYyODkwMywtNjA3OTg0NjU3LC0xMjI1MDkyMzQ3
-LC0xOTg0ODcxODgxLDg5NjQ0MDU5MywyMTEwNzk5NTExLDE0NT
-AxODQ1NzEsOTYzNDA1NjY1LC0xMTQ5NDk3NTc4LDY2MDAwNzY0
-Ml19
+eyJoaXN0b3J5IjpbLTE4MTUwOTI0MTUsMzcxOTAzMDgsMjY4MT
+c0NjUxLDE3MzYzNTAyMzcsMTgwMjg5NzYyOCwtMjAxODY3OTQ2
+NCw4NDE3Mjc4MCwtNTU5NzA3MzE1LDExMjAzMzkwNDUsLTE2Mj
+Y2Mzc4NSw3Mzg2Mjg5MDMsLTYwNzk4NDY1NywtMTIyNTA5MjM0
+NywtMTk4NDg3MTg4MSw4OTY0NDA1OTMsMjExMDc5OTUxMSwxND
+UwMTg0NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3OCw2NjAwMDc2
+NDJdfQ==
 -->
