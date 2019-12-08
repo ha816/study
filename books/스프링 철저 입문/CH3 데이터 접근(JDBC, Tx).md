@@ -418,16 +418,18 @@ MANDATORY의 경우, 만들어진 트랜잭션 메서드 1의 경계에서 부�
 NEVER, NOT_SUPPORTED는 모두 트랜잭션을 관리하지 않는다. 트랜잭션 메서드1의 경계에서 만들어진 트랜잭션이 존재하고 트랜잭션 메서드 2가 NEVER라면 트랜잭션을 절대 쓰지 않는다로 설정된 트랜잭션 메서드2를 호출하였으므로 예외가 발생한다. 트랜잭션 메서드 2 가NOT_SUPPORTED일 경우,  트랜잭션처리가 되지 않는다. 이미 트랜잭션이 있기 때문에 트랜잭션 1은 트랜잭션 메서드 2를 호출할때 보류된다. 
 트랜잭션 메서드가 끝나면 트랜잭션 1은 재개 된다. NOT_SUPPORTED는 트랜잭션이 불필요할때 사용하는데, 트랜잭션이 오버헤드를 가지기 때문에 이것이 성능을 개선할수도 있기 때문이다. 
 
-트랜잭션 메서드 1이 존재하고, 트랜잭션 2메서드가 SUPPORTED라면 
+트랜잭션 메서드 1이 존재하고, 트랜잭션 2메서드가 SUPPORTED라면 이미 만들어진 트랜잭션이 있기 때문에 앞선 트랜잭션으로 함께 처리한다. 만약 트랜잭션이 없다면 트랜잭션 관리를 하지 않는다. 메서드의 트랜잭션 행위는 매우 다양하기 때문에, Supports는 
+
+Because the transactional behavior of the method may vary, you should use the Supports attribute with caution.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYzNzg5OTYsMzcxOTAzMDgsMjY4MTc0Nj
-UxLDE3MzYzNTAyMzcsMTgwMjg5NzYyOCwtMjAxODY3OTQ2NCw4
-NDE3Mjc4MCwtNTU5NzA3MzE1LDExMjAzMzkwNDUsLTE2MjY2Mz
-c4NSw3Mzg2Mjg5MDMsLTYwNzk4NDY1NywtMTIyNTA5MjM0Nywt
-MTk4NDg3MTg4MSw4OTY0NDA1OTMsMjExMDc5OTUxMSwxNDUwMT
-g0NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3OCw2NjAwMDc2NDJd
-fQ==
+eyJoaXN0b3J5IjpbLTYxNjM5OTc0OSwzNzE5MDMwOCwyNjgxNz
+Q2NTEsMTczNjM1MDIzNywxODAyODk3NjI4LC0yMDE4Njc5NDY0
+LDg0MTcyNzgwLC01NTk3MDczMTUsMTEyMDMzOTA0NSwtMTYyNj
+YzNzg1LDczODYyODkwMywtNjA3OTg0NjU3LC0xMjI1MDkyMzQ3
+LC0xOTg0ODcxODgxLDg5NjQ0MDU5MywyMTEwNzk5NTExLDE0NT
+AxODQ1NzEsOTYzNDA1NjY1LC0xMTQ5NDk3NTc4LDY2MDAwNzY0
+Ml19
 -->
