@@ -378,7 +378,20 @@ However, when T1 reads from A, it discovers two different versions of A, and T1 
 : A  phantom read  occurs when, in the course of a transaction, new rows are added or removed by another transaction to the records being read.
 
 The **Phantom Read Concurrency Problem** happens in SQL Server when one transaction executes a query twice and it gets a different number of rows in the result set each time. This generally happens when a second transaction inserts some new rows in between the first and second query execution of the first transaction that matches the WHERE clause of the query executed by the first transaction.
- The phantom reads anomaly is a special case of **Non-repeatable reads** when Transaction 1 repeats a ranged  _SELECT ... WHERE_  query and, between both operations, Transaction 2 creates (i.e.  [INSERT](https://en.wikipedia.org/wiki/INSERT "INSERT")) new rows (in the target table) which fulfil that  _WHERE_  clause.
+ The phantom reads anomaly is a special case of **Non-repeatable reads** when Transaction 1 repeats a ranged  _SELECT ... WHERE_  query and, between both operations, Transaction 2 creates Insert new rows (in the target table) which fulfil that  WHERE  clause.
+ 
+$$\begin{bmatrix}
+T1 & T2 \\
+Sele(A) & \\
+& \\
+&W(A) \\
+&Commit \\
+R(A) &\\
+W(A)&\\
+Commit&\\
+\end{bmatrix}$$
+
+
 
 
 
@@ -392,11 +405,11 @@ The **Phantom Read Concurrency Problem** happens in SQL Server when one transact
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNzk4NDY1NywtMTIyNTA5MjM0NywtMT
-k4NDg3MTg4MSw4OTY0NDA1OTMsMjExMDc5OTUxMSwxNDUwMTg0
-NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3OCw2NjAwMDc2NDIsNz
-g3MDc3MTA2LDE0OTE1NTUxMzUsLTE3NzY1MTc4OTAsLTIxNDM1
-NDk0NTEsLTMwODI4Mjc1NSw5OTE3NTk3NDEsLTEyNjE5ODQzNT
-csLTEyNzE5MjYwOTQsLTE1NTUwMzAyNjIsMTgyNzYwNjM1Mywt
-MjY4NDk2ODgzXX0=
+eyJoaXN0b3J5IjpbLTEzMTEwNTA2NjQsLTYwNzk4NDY1NywtMT
+IyNTA5MjM0NywtMTk4NDg3MTg4MSw4OTY0NDA1OTMsMjExMDc5
+OTUxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3OC
+w2NjAwMDc2NDIsNzg3MDc3MTA2LDE0OTE1NTUxMzUsLTE3NzY1
+MTc4OTAsLTIxNDM1NDk0NTEsLTMwODI4Mjc1NSw5OTE3NTk3ND
+EsLTEyNjE5ODQzNTcsLTEyNzE5MjYwOTQsLTE1NTUwMzAyNjIs
+MTgyNzYwNjM1M119
 -->
