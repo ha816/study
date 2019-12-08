@@ -362,6 +362,10 @@ W(A)&\\
 Commit&\\
 \end{bmatrix}$$
 
+T1 has read the original value of A, and is waiting for T2 to finish. T2 also reads the original value of A, overwrites A, and commits.
+
+However, when T1 reads from A, it discovers two different versions of A, and T1 would be forced to  [abort](https://en.wikipedia.org/wiki/Abort_(computing) "Abort (computing)"), because T1 would not know what to do. This is an unrepeatable read. This could never occur in a serial schedule.  [Strict two-phase locking](https://en.wikipedia.org/wiki/Strict_two-phase_locking "Strict two-phase locking")  (Strict 2PL) prevents this conflict.
+
 
 팬텀 읽기(Phantom Read)
 : ㄴㅇㄹㄴㅇㄹ
@@ -376,11 +380,11 @@ Commit&\\
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjk4NTA1NTgsMTQ1MDE4NDU3MSw5Nj
-M0MDU2NjUsLTExNDk0OTc1NzgsNjYwMDA3NjQyLDc4NzA3NzEw
-NiwxNDkxNTU1MTM1LC0xNzc2NTE3ODkwLC0yMTQzNTQ5NDUxLC
-0zMDgyODI3NTUsOTkxNzU5NzQxLC0xMjYxOTg0MzU3LC0xMjcx
-OTI2MDk0LC0xNTU1MDMwMjYyLDE4Mjc2MDYzNTMsLTI2ODQ5Nj
-g4MywtMjAwNDIwNzUyMCwxNzc0NDIzOTczLC03MTIxMjI3MDEs
-LTQyMTk5OTQwXX0=
+eyJoaXN0b3J5IjpbNzQ0NzU4MTQzLDE0NTAxODQ1NzEsOTYzND
+A1NjY1LC0xMTQ5NDk3NTc4LDY2MDAwNzY0Miw3ODcwNzcxMDYs
+MTQ5MTU1NTEzNSwtMTc3NjUxNzg5MCwtMjE0MzU0OTQ1MSwtMz
+A4MjgyNzU1LDk5MTc1OTc0MSwtMTI2MTk4NDM1NywtMTI3MTky
+NjA5NCwtMTU1NTAzMDI2MiwxODI3NjA2MzUzLC0yNjg0OTY4OD
+MsLTIwMDQyMDc1MjAsMTc3NDQyMzk3MywtNzEyMTIyNzAxLC00
+MjE5OTk0MF19
 -->
