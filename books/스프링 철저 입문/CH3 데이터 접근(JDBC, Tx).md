@@ -395,20 +395,24 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 
 트랜잭션 관리 대상이 되는 메서드 안에서 또 다른 트랜잭션 관리 대상 되는 메서드를 호출한 경우에는 트랜잭션의 전파 방식을 고려해야 한다. 예를 들어, 두 메서드가 독립적으로 처리될지 혹은 같은 트랜잭션의 관리 범위에 들어가는지는 설정한 전파 방식에 따라 좌우된다. 
 
-스프링 프래임 워크에서는 7가지 트랜잭션 전파 방식을 이용할 수 있다. 기본적인 전파 방식은 REQUIRED이고 바꾹
+스프링 프래임 워크에서는 7가지 트랜잭션 전파 방식을 이용할 수 있다. 기본적인 전파 방식은 REQUIRED이고 바꾸고 싶다면 @Transactional에서 propagtion의 속성을 바꾸면 된다. 
 
-
-
-
+|전파방식|설명|
+|--|--|
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTI5Mjk1MCwtNTU5NzA3MzE1LDExMj
-AzMzkwNDUsLTE2MjY2Mzc4NSw3Mzg2Mjg5MDMsLTYwNzk4NDY1
-NywtMTIyNTA5MjM0NywtMTk4NDg3MTg4MSw4OTY0NDA1OTMsMj
-ExMDc5OTUxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMTE0OTQ5
-NzU3OCw2NjAwMDc2NDIsNzg3MDc3MTA2LDE0OTE1NTUxMzUsLT
-E3NzY1MTc4OTAsLTIxNDM1NDk0NTEsLTMwODI4Mjc1NSw5OTE3
-NTk3NDFdfQ==
+eyJoaXN0b3J5IjpbODQxNzI3ODAsLTU1OTcwNzMxNSwxMTIwMz
+M5MDQ1LC0xNjI2NjM3ODUsNzM4NjI4OTAzLC02MDc5ODQ2NTcs
+LTEyMjUwOTIzNDcsLTE5ODQ4NzE4ODEsODk2NDQwNTkzLDIxMT
+A3OTk1MTEsMTQ1MDE4NDU3MSw5NjM0MDU2NjUsLTExNDk0OTc1
+NzgsNjYwMDA3NjQyLDc4NzA3NzEwNiwxNDkxNTU1MTM1LC0xNz
+c2NTE3ODkwLC0yMTQzNTQ5NDUxLC0zMDgyODI3NTUsOTkxNzU5
+NzQxXX0=
 -->
