@@ -375,7 +375,12 @@ However, when T1 reads from A, it discovers two different versions of A, and T1 
 
 
 팬텀 읽기(Phantom Read)
-: The **Phantom Read Concurrency Problem** happens in SQL Server when one transaction executes a query twice and it gets a different number of rows in the result set each time. This generally happens when a second transaction inserts some new rows in between the first and second query execution of the first transaction that matches the WHERE clause of the query executed by the first transaction.
+: A  phantom read  occurs when, in the course of a transaction, new rows are added or removed by another transaction to the records being read.
+
+The **Phantom Read Concurrency Problem** happens in SQL Server when one transaction executes a query twice and it gets a different number of rows in the result set each time. This generally happens when a second transaction inserts some new rows in between the first and second query execution of the first transaction that matches the WHERE clause of the query executed by the first transaction.
+The  _phantom reads_  anomaly is a special case of  _Non-repeatable reads_  when Transaction 1 repeats a ranged  _SELECT ... WHERE_  query and, between both operations, Transaction 2 creates (i.e.  [INSERT](https://en.wikipedia.org/wiki/INSERT "INSERT")) new rows (in the target table) which fulfil that  _WHERE_  clause.
+
+
 
 >트랜잭션 전파 방식(Propagation)
 >참조하는 데이터나 변경한 데이터를 다른 트랜잭션으로 부터 어떻게 격리할 것인지를 결정한다. 격리 수준은 여러 트랜잭션의 동시 실행과 데이터의 일관성과 관련이 깊다. 
@@ -387,11 +392,11 @@ However, when T1 reads from A, it discovers two different versions of A, and T1 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjUwOTIzNDcsLTE5ODQ4NzE4ODEsOD
-k2NDQwNTkzLDIxMTA3OTk1MTEsMTQ1MDE4NDU3MSw5NjM0MDU2
-NjUsLTExNDk0OTc1NzgsNjYwMDA3NjQyLDc4NzA3NzEwNiwxND
-kxNTU1MTM1LC0xNzc2NTE3ODkwLC0yMTQzNTQ5NDUxLC0zMDgy
-ODI3NTUsOTkxNzU5NzQxLC0xMjYxOTg0MzU3LC0xMjcxOTI2MD
-k0LC0xNTU1MDMwMjYyLDE4Mjc2MDYzNTMsLTI2ODQ5Njg4Mywt
-MjAwNDIwNzUyMF19
+eyJoaXN0b3J5IjpbLTc5MzAyNDU3MywtMTIyNTA5MjM0NywtMT
+k4NDg3MTg4MSw4OTY0NDA1OTMsMjExMDc5OTUxMSwxNDUwMTg0
+NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3OCw2NjAwMDc2NDIsNz
+g3MDc3MTA2LDE0OTE1NTUxMzUsLTE3NzY1MTc4OTAsLTIxNDM1
+NDk0NTEsLTMwODI4Mjc1NSw5OTE3NTk3NDEsLTEyNjE5ODQzNT
+csLTEyNzE5MjYwOTQsLTE1NTUwMzAyNjIsMTgyNzYwNjM1Mywt
+MjY4NDk2ODgzXX0=
 -->
