@@ -350,7 +350,7 @@ TransactionTemplate 자바 기반 설정 방식
 
 반복되지 않은 읽기(Unrepeatable Read)
 : A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads. 
-반복되지 않는 읽기는 트랜잭션 중에서, 한 데이터가 두번 읽기가 되고 읽기 작업간에 데이터 값이 달라질때 발생한다. 
+반복되지 않는 읽기는 트랜잭션 중에서, 한 데이터가 두번 읽기가 되고 읽기 작업간에 데이터 값이 달라질때 발생한다. 이는 read-write conflict라고도 하는데
 
 
 read–write conflict, also known as unrepeatable reads, is a computational anomaly associated with interleaved execution of transactions.
@@ -383,11 +383,11 @@ However, when T1 reads from A, it discovers two different versions of A, and T1 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMDc5OTUxMSwxNDUwMTg0NTcxLDk2Mz
-QwNTY2NSwtMTE0OTQ5NzU3OCw2NjAwMDc2NDIsNzg3MDc3MTA2
-LDE0OTE1NTUxMzUsLTE3NzY1MTc4OTAsLTIxNDM1NDk0NTEsLT
-MwODI4Mjc1NSw5OTE3NTk3NDEsLTEyNjE5ODQzNTcsLTEyNzE5
-MjYwOTQsLTE1NTUwMzAyNjIsMTgyNzYwNjM1MywtMjY4NDk2OD
-gzLC0yMDA0MjA3NTIwLDE3NzQ0MjM5NzMsLTcxMjEyMjcwMSwt
-NDIxOTk5NDBdfQ==
+eyJoaXN0b3J5IjpbLTE3NTYwMzk0NzUsMjExMDc5OTUxMSwxND
+UwMTg0NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3OCw2NjAwMDc2
+NDIsNzg3MDc3MTA2LDE0OTE1NTUxMzUsLTE3NzY1MTc4OTAsLT
+IxNDM1NDk0NTEsLTMwODI4Mjc1NSw5OTE3NTk3NDEsLTEyNjE5
+ODQzNTcsLTEyNzE5MjYwOTQsLTE1NTUwMzAyNjIsMTgyNzYwNj
+M1MywtMjY4NDk2ODgzLC0yMDA0MjA3NTIwLDE3NzQ0MjM5NzMs
+LTcxMjEyMjcwMV19
 -->
