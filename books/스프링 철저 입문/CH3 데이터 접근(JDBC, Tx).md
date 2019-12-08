@@ -411,18 +411,18 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 
 각 트랜잭션 메서드는 자신의 트랜잭션 경계에서 전파 설정에 따라 트랜잭션을 진행한다. 트랜잭션 메서드1 과 2 모두 REQUIRED라면 메서드 1에서 새로운 트랜잭션을 만들고 트랜잭션 2의 트랜잭션 경계에서는 만들어진 트랜잭션이 있다는 걸을 알고 같은 트랜잭션으로 묶여 처리가 된다. 
 
-만약 트랜잭션 메서드1 과 2 모두 REQUIRED_NEW라면 메서드1에서 새로운 트랜잭션을 만들고 트랜잭션 2에서도 새로운 트랜잭션을 만든다. 트랜잭션 2는 트랜잭션 1이 끝나고 나서야 트랜잭션 2를 진행한다. 
+만약 트랜잭션 메서드1 과 2 모두 REQUIRED_NEW라면 메서드1에서 새로운 트랜잭션을 만들고 트랜잭션 2 경계에서도 새로운 트랜잭션을 만들어 처리한다. 둘다 독립적인 트랜잭션이기 때문에 트랜잭션 2에서 예외가 발생해도 트랜잭션 메서드 1은 롤백이 되지 않는다.
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODcyNDkwMjYsMTczNjM1MDIzNywxOD
-AyODk3NjI4LC0yMDE4Njc5NDY0LDg0MTcyNzgwLC01NTk3MDcz
-MTUsMTEyMDMzOTA0NSwtMTYyNjYzNzg1LDczODYyODkwMywtNj
-A3OTg0NjU3LC0xMjI1MDkyMzQ3LC0xOTg0ODcxODgxLDg5NjQ0
-MDU5MywyMTEwNzk5NTExLDE0NTAxODQ1NzEsOTYzNDA1NjY1LC
-0xMTQ5NDk3NTc4LDY2MDAwNzY0Miw3ODcwNzcxMDYsMTQ5MTU1
-NTEzNV19
+eyJoaXN0b3J5IjpbMTE1NjkwOTI4MiwxNzM2MzUwMjM3LDE4MD
+I4OTc2MjgsLTIwMTg2Nzk0NjQsODQxNzI3ODAsLTU1OTcwNzMx
+NSwxMTIwMzM5MDQ1LC0xNjI2NjM3ODUsNzM4NjI4OTAzLC02MD
+c5ODQ2NTcsLTEyMjUwOTIzNDcsLTE5ODQ4NzE4ODEsODk2NDQw
+NTkzLDIxMTA3OTk1MTEsMTQ1MDE4NDU3MSw5NjM0MDU2NjUsLT
+ExNDk0OTc1NzgsNjYwMDA3NjQyLDc4NzA3NzEwNiwxNDkxNTU1
+MTM1XX0=
 -->
