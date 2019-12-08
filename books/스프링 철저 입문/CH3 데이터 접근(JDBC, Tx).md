@@ -393,14 +393,14 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 
 트랜잭션 전파 방식을 고려해야하는 경우는 트랜잭션 경계가 중첩될때다. **여러개의 트랜잭션 경계가 중첩되지 않았다면 트랜잭션을 순차적으로 제어만 하면 되기 때문에 굳이 전파 방식을 의식할 필요는 없다.** 
 
-
+트랜잭션 관리 대상이 되는 메서드 안에서 또 다른 트랜잭션 관리 대상 되는 메서드를 호출한 경우에는 트랜잭션의 전파 방식을 고려해야 한다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5Mzg0NjE1NSwxMTIwMzM5MDQ1LC0xNj
+eyJoaXN0b3J5IjpbLTU1OTcwNzMxNSwxMTIwMzM5MDQ1LC0xNj
 I2NjM3ODUsNzM4NjI4OTAzLC02MDc5ODQ2NTcsLTEyMjUwOTIz
 NDcsLTE5ODQ4NzE4ODEsODk2NDQwNTkzLDIxMTA3OTk1MTEsMT
 Q1MDE4NDU3MSw5NjM0MDU2NjUsLTExNDk0OTc1NzgsNjYwMDA3
