@@ -348,6 +348,15 @@ TransactionTemplate 자바 기반 설정 방식
 : A dirty read occurs when a transaction is allowed to read data from a row that has been modified by another running transaction and not yet committed.
 더티리드는 한 트랜잭션이 아직 커밋하지 않은 상태로 수정 중일때 데이터 row 읽기가 가능하다면 발생한다. 예를 들면, TX1에서 가져온 row 데이터가 있고, TX2에서 커밋하지 않은 상태로 데이터를 수정했다. 커밋되지 않은 상태로 TX1이 동일한 row 데이터를 가져오면 수정된 데이터를 가져온다. 이때 TX2에서 롤백이 발생한다면, TX1에서 가져온 수정된 데이터는 잘못된 데이터가 된다. 
 
+In  [computer science](https://en.wikipedia.org/wiki/Computer_science "Computer science"), in the field of  [databases](https://en.wikipedia.org/wiki/Database "Database"),  **write–read conflict**, also known as  **reading uncommitted data**, is a computational anomaly associated with interleaved execution of transactions.
+
+Given a schedule S
+
+{\displaystyle S={\begin{bmatrix}T1&T2\\R(A)&\\W(A)&\\&R(A)\\&W(A)\\&R(B)\\&W(B)\\&Com.\\R(B)&\\W(B)&\\Com.&\end{bmatrix}}}![S={\begin{bmatrix}T1&T2\\R(A)&\\W(A)&\\&R(A)\\&W(A)\\&R(B)\\&W(B)\\&Com.\\R(B)&\\W(B)&\\Com.&\end{bmatrix}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/c2c428bcd42bb658cb5515cae499ed3425c9ff5c)
+
+T2 could read a database object A, modified by T1 which hasn't committed. This is a  _**dirty read**_.
+
+
 반복되지 않은 읽기(Unrepeatable Read)
 : A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads. 
 반복되지 않는 읽기는 트랜잭션 중에서, 한 데이터가 두번 읽기가 되고 읽기 작업간에 데이터 값이 달라질때 발생한다. 이는 read-write conflict 라고도 한다.
@@ -365,7 +374,8 @@ Commit&\\
 
 T1 has read the original value of A, and is waiting for T2 to finish. T2 also reads the original value of A, overwrites A, and commits.
 
-However, when T1 reads from A, it discovers two different versions of A, and T1 would be forced to  [abort]"Abort (computing)"), because T1 would not know what to do. This is an unrepeatable read. 
+However, when T1 reads from A, it discovers two different versions of A, and T1 would be forced to  abort, because T1 would not know what to do.
+
 
 팬텀 읽기(Phantom Read)
 : ㄴㅇㄹㄴㅇㄹ
@@ -380,7 +390,7 @@ However, when T1 reads from A, it discovers two different versions of A, and T1 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMDgxOTgyMCw4OTY0NDA1OTMsMjExMD
+eyJoaXN0b3J5IjpbMTc2NDQxMDI5MCw4OTY0NDA1OTMsMjExMD
 c5OTUxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3
 OCw2NjAwMDc2NDIsNzg3MDc3MTA2LDE0OTE1NTUxMzUsLTE3Nz
 Y1MTc4OTAsLTIxNDM1NDk0NTEsLTMwODI4Mjc1NSw5OTE3NTk3
