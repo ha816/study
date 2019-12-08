@@ -389,22 +389,24 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 --- 
 
 >트랜잭션 전파 방식(Propagation)
-> 트랜잭션 전파 방식은 트랜잭션 경계에서 트랜잭션에 참여하는 방법을 결정한다. 지원하는 방식에 따라 '새로운 트랜잭션을 시작, '이미 시작된 트랜잭션에 참여하는 것'과 같이 몇가지 선택지가 있다.
+> 트랜잭션 전파 방식은 트랜잭션 경계에서 트랜잭션에 참여하는 방법을 결정한다. 
 
 트랜잭션 전파 방식을 고려해야하는 경우는 트랜잭션 경계가 중첩될때다. **여러개의 트랜잭션 경계가 중첩되지 않았다면 트랜잭션을 순차적으로 제어만 하면 되기 때문에 굳이 전파 방식을 의식할 필요는 없다.** 
 
-트랜잭션 관리 대상이 되는 메서드 안에서 또 다른 트랜잭션 관리 대상 되는 메서드를 호출한 경우에는 트랜잭션의 전파 방식을 고려해야 한다. 예를 들어, 두 메
+트랜잭션 관리 대상이 되는 메서드 안에서 또 다른 트랜잭션 관리 대상 되는 메서드를 호출한 경우에는 트랜잭션의 전파 방식을 고려해야 한다. 예를 들어, 두 메서드가 독립적으로 처리될지 혹은 같은 트랜잭션의 관리 범위에 들어가는지는 설정한 전파 방식에 따라 좌우된다. 
+
+스프링 프래임 워크에서는 7가지 트랜잭션 전파 방식을 이용할 수 있다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDcwMjc5LC01NTk3MDczMTUsMTEyMD
-MzOTA0NSwtMTYyNjYzNzg1LDczODYyODkwMywtNjA3OTg0NjU3
-LC0xMjI1MDkyMzQ3LC0xOTg0ODcxODgxLDg5NjQ0MDU5MywyMT
-EwNzk5NTExLDE0NTAxODQ1NzEsOTYzNDA1NjY1LC0xMTQ5NDk3
-NTc4LDY2MDAwNzY0Miw3ODcwNzcxMDYsMTQ5MTU1NTEzNSwtMT
-c3NjUxNzg5MCwtMjE0MzU0OTQ1MSwtMzA4MjgyNzU1LDk5MTc1
-OTc0MV19
+eyJoaXN0b3J5IjpbNzMzNjU1ODcsLTU1OTcwNzMxNSwxMTIwMz
+M5MDQ1LC0xNjI2NjM3ODUsNzM4NjI4OTAzLC02MDc5ODQ2NTcs
+LTEyMjUwOTIzNDcsLTE5ODQ4NzE4ODEsODk2NDQwNTkzLDIxMT
+A3OTk1MTEsMTQ1MDE4NDU3MSw5NjM0MDU2NjUsLTExNDk0OTc1
+NzgsNjYwMDA3NjQyLDc4NzA3NzEwNiwxNDkxNTU1MTM1LC0xNz
+c2NTE3ODkwLC0yMTQzNTQ5NDUxLC0zMDgyODI3NTUsOTkxNzU5
+NzQxXX0=
 -->
