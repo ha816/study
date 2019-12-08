@@ -389,13 +389,14 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 --- 
 
 >트랜잭션 전파 방식(Propagation)
-> 트랜잭션 전파 방식은 트랜잭션 경계에서 트랜잭션에 참여하는 방법을 결정한다. 지원하는 방식에 따라 '새로운 트랜잭션으 시작하는것
+> 트랜잭션 전파 방식은 트랜잭션 경계에서 트랜잭션에 참여하는 방법을 결정한다. 지원하는 방식에 따라 '새로운 트랜잭션을 시작, '이미 시작된 트랜잭션에 참여하는 것'과 같이 몇가지 선택지가 있다.
 
+트랜잭션 전파 방식을 고려해야하는 경우는 트랜잭션 경계가 중첩될때다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNjkwODY5MiwtMTYyNjYzNzg1LDczOD
+eyJoaXN0b3J5IjpbMTEyMDMzOTA0NSwtMTYyNjYzNzg1LDczOD
 YyODkwMywtNjA3OTg0NjU3LC0xMjI1MDkyMzQ3LC0xOTg0ODcx
 ODgxLDg5NjQ0MDU5MywyMTEwNzk5NTExLDE0NTAxODQ1NzEsOT
 YzNDA1NjY1LC0xMTQ5NDk3NTc4LDY2MDAwNzY0Miw3ODcwNzcx
