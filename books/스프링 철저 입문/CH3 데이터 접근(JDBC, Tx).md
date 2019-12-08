@@ -375,10 +375,7 @@ However, when T1 reads from A, it discovers two different versions of A, and T1 
 
 
 팬텀 읽기(Phantom Read)
-: A  phantom read  occurs when, in the course of a transaction, new rows are added or removed by another transaction to the records being read.
-
-The **Phantom Read Concurrency Problem** happens in SQL Server when one transaction executes a query twice and it gets a different number of rows in the result set each time. This generally happens when a second transaction inserts some new rows in between the first and second query execution of the first transaction that matches the WHERE clause of the query executed by the first transaction.
- The phantom reads anomaly is a special case of **Non-repeatable reads** when Transaction 1 repeats a ranged  _SELECT ... WHERE_  query and, between both operations, Transaction 2 creates Insert new rows (in the target table) which fulfil that  WHERE  clause.
+: A  phantom read  occurs when, in the course of a transaction, new rows are added or removed by another transaction to the records being read. The phantom reads anomaly is a special case of **Non-repeatable reads** when Transaction 1 repeats a ranged  _SELECT ... WHERE_  query and, between both operations, Transaction 2 creates Insert new rows (in the target table) which fulfil that  WHERE  clause.
  
 $$\begin{bmatrix}
 T1 & T2 \\
@@ -386,6 +383,10 @@ Select(T) & \\
 &Insert(T) \text{ or } Delete(T) \\
 Select(T) &\\
 \end{bmatrix}$$
+
+T1이 읽었던 
+
+executes a query twice and it gets a different number of rows in the result set each time. This generally happens when a second transaction inserts some new rows in between the first and second query execution of the first transaction that matches the WHERE clause of the query executed by the first transaction.
 
 
 
@@ -401,7 +402,7 @@ Select(T) &\\
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODQ1MDk1Nyw3Mzg2Mjg5MDMsLTYwNz
+eyJoaXN0b3J5IjpbMTIzMDY4OTI0NCw3Mzg2Mjg5MDMsLTYwNz
 k4NDY1NywtMTIyNTA5MjM0NywtMTk4NDg3MTg4MSw4OTY0NDA1
 OTMsMjExMDc5OTUxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMT
 E0OTQ5NzU3OCw2NjAwMDc2NDIsNzg3MDc3MTA2LDE0OTE1NTUx
