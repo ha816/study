@@ -353,9 +353,8 @@ TransactionTemplate 자바 기반 설정 방식
 
 $$
 \begin{bmatrix}
-0 & \cdots & 0 \\
-\vdots & \ddots & \vdots \\
-0 & \cdots & 0
+0 & 0 \\
+0 & 0\\
 \end{bmatrix}
 $$
 
@@ -373,7 +372,7 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MDY3NjE3Myw5NjM0MDU2NjUsLTExND
+eyJoaXN0b3J5IjpbMTQ1MDE4NDU3MSw5NjM0MDU2NjUsLTExND
 k0OTc1NzgsNjYwMDA3NjQyLDc4NzA3NzEwNiwxNDkxNTU1MTM1
 LC0xNzc2NTE3ODkwLC0yMTQzNTQ5NDUxLC0zMDgyODI3NTUsOT
 kxNzU5NzQxLC0xMjYxOTg0MzU3LC0xMjcxOTI2MDk0LC0xNTU1
