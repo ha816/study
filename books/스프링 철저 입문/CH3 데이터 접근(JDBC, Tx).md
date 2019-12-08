@@ -319,7 +319,7 @@ public void doTransaction(){
 TransactionTemplate 자바 기반 설정 방식
 
 ```
-@Configuration
+@Configuration          .    트랜잭션  데이터    
 
 	@Bean
 	public TransactionTemplate transactionTemplate(PlatformTransactionManager transactionManager) {
@@ -332,14 +332,12 @@ TransactionTemplate 자바 기반 설정 방식
 ### 트랜잭션 격리 수준과 전파방식
 
 >트랜잭션 격리 수준(Transaction Isolation Level)
->참조하는 데이터나 변경한 데이터를 다른 트랜잭션으로 부터 어떻게 격리할 것인지를 결정한다. 격리 수준은 여러 트랜잭션의 동시 실행과 데이터의 일관성과 관련이 깊다. 
-
-스프링 프레임 워크에서는 데이터베이스의 기본 설정(DEFAULT)과 4개의 트랜잭션 격리 수준을 이용할수 있다. 스프링 프레임워크에서 지원하는 격리 수준은 아래와 같다. 다만 지원하는 모든 격리 수준이 실제로 사용할 수 있는지는 사용하는 데이터베이스를 어떻게 구현했느냐에 따라 달라질 수 있다. 
+>참조하는 데이터스프링 프레임 워크에서는 데이터베이스의 기본 설정(DEFAULT)과 4개의 트랜잭션 격리 수준을 이용할수 있다. 스프링 프레임워크에서 지원하는 격리 수준은 아래와 같다. 다만 지원하는 모든 격리 수준이 실제로 사용할 수 있는지는 사용하는 데이터베이스를 어떻게 구현했느냐에 따라 달라질 수 있다. 
 
 | 격리수준| 설명 | Dirty Read, Unrepeatable Read, Phantom Read |
 |--|--|--|
 | DEFAULT  | 사용하는 데이터베이스의 기본 격리수준을 사용  |
-| READ_UNCOMMITTED| 더티리드(Dirty Read), 반복되지 않은 읽기(Unrepeatable Read), 팬텀 읽기(Phantom Read)가 발생한다. 이 격리 수준은 커밋되지 않은 변경 데이터를 다른 트랜잭션에서 참조하는 것을 허용한다. 만약 변경 데이터가 롤백된 경우 다음 트랜잭션에서는 무효한 데이터를 조회하게 된다. | O, O, O|
+| READ_UNCOMMITTED| 더티리드(Dirty Read), 반복되지 않은 읽기(Unrepeatable Read), ad)가 발생한다. 이 격리 수준은 커밋되지 않은 변경 데이터를 다른 트랜잭션에서 참조하는 것을 허용한다. 만약 변경 데이터가 롤백된 경우 다음 트랜잭션에서는 무효한 데이터를 조회하게 된다. | O, O, O|
 | READ_COMMITTED| 더티리드(Dirty Read)는 방지하지만, 반복되지 않은 읽기(Unrepeatable Read), 팬텀 읽기(Phantom Read)는 발생한다. 이 격리 수준은 커밋되지 않은 변경 데이터를 다른 트랜잭션에서 참조하는 것을 금지한다. |X, O, O|
 | REPEATABLE_READ| 더티리드, 반복되지 않은 읽기를 방지하지만 팬텀읽기는 발생한다. |X, X, O|
 | SERIALIZABLE| 더티리드, 반복되지 않은 읽기, 팬텀읽기를 방지한다.|X, X, X| 
@@ -353,10 +351,11 @@ $$
 $$
 
 T2 could read a database object A, modified by T1 which hasn't committed. This is a **dirty read**. T1 may write some value into A which makes the database inconsistent. It is possible that interleaved execution can expose this inconsistency and lead to inconsistent final database state, violating ACID rules.
+더티리드는 한 트랜잭션이 아직 커밋하지 않은 상태로 수정 중일때 데이터 row 읽기가 가능하다면 발생한다. 예를 들면, TX1에서 가져온 row 데이터가 있고, TX2에서 커밋하지 않은 상태로 데이터를 수정했다. 커밋되지 않은 상태로 TX1이 동일한 row 데이터를 가져오면 수정된 데이터를 가져온다. 이때 TX2에서 롤백이 발생한다면, TX1에서 가져온 수정된 데이터는 잘못된 데이터가 된다. 
 
 반복되지 않은 읽기(Unrepeatable Read)
 : A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads. 
-반복되지 않는 읽기는 트랜잭션 중에서, 한 데이터가 두번 읽기가 되고 읽기 작업간에 데이터 값이 달라질때 발생한다. 이는 read-write conflict 라고도 한다.
+반복되지 않는 읽기는 한 트랜잭션의 과정 중에서, 한 데이터가 두번 읽기가 되고 읽기 작업간에 데이터 값이 달라질때 발생한다. 이는 read-write conflict 라고도 한다.
 
 $$\begin{bmatrix}
 T1 & T2 \\
@@ -371,7 +370,13 @@ Commit&\\
 
 T1 has read the original value of A, and is waiting for T2 to finish. T2 also reads the original value of A, overwrites A, and commits.
 
-However, when T1 reads from A, it discovers two different versions of A, and T1 would be forced to  abort, because T1 would not know what to do.
+However, when T1 r row 복구가 두번이 되고 데이터 row 안에 값들이 읽는 과정에서 달라지는 상황에 발생한다. 
+반복되지 않는 읽기 현상은 아마 락 기반 동시성 제어 상황에서 발생할지도 모른다. 읽기 락이 얻어지지 않은 상태에서 select를 실행하거나 또는 복수의 row에 영향을 주는 얻어진 락이 SELECT 동작이 수행되자마자 풀려버린 경우에
+반복되지 않는 읽기는 한 트랜잭션이 커밋 컨플릭에 노출되면 반드시 롤백하라는 요구사항이 있다면 이를 편하게 해줄수도 있다.
+
+예를 들어 TX1에서 과거 한 row의 데이터 
+
+Transaction 2 commits successfully, which meadns from A, it discoverthat its changes two different versions of A, anthe row with id T1 wshould be forced to  abort, because T1 would not know what to do.
 
 
 팬텀 읽기(Phantom Read)
@@ -421,15 +426,29 @@ NOT_SUPPORTED일 경우,  트랜잭션처리를 하지 않는 메서드라는 �
 
 SUPPORTED 메서드라면 만들어진 트랜잭션이 존재하면 그 트랜잭션과 함께 처리되고 아니라면 트랜잭션 처리가 되지 않는다. 메서드의 트랜잭션 행위는 매우 다양하기 때문에, SUPPORTED는 매우 조심히 써야한다. 
 
-NESTED 메서드라면 REQUIRED와 매우 유사하다. 하지만 NESTED 메서드 구간안에서는 중첩된 트랜잭션 취급하게 된다. NESTED 구간안에서 롤백이 되면 NESTED 구간안의 모든 내용은 롤백 되지만 구간 밖에 내용은 롤백 되지 않는다. 즉 REQUIRED는 어떤 구간에서 예외가 발생하든 모두 롤백이 되지만, NESTED는 
+NESTED 메서드라면 REQUIRED와 매우 유사하다. 하지만 NESTED 메서드 구간안에서는 중첩된 트랜잭션 취급하게 된다. NESTED 구간안에서 롤백이 되면 NESTED 구간안의 모든 내용은 롤백 되지만 구간 밖에 내용은 롤백 되지 않는다. 즉 REQUIRED는 어떤 구간에서 예외가 발생하든 모두 롤백이 되지만, NESTED는 come visible. However, Transaction 1 has already seen a different value for _age_ in that row. At the SERIALIZABLE and REPEATABLE READ isolation levels, the DBMS must return the old value for the second SELECT. At READ COMMITTED and READ UNCOMMITTED, the DBMS may return the updated value; this is a non-repeatable read.
+
+
+
+
+팬텀 읽기(Phantom Read)
+: ㄴㅇㄹㄴㅇㄹ
+
+>트랜잭션 전파 방식(Propagation)
+>참조하는 데이터나 변경한 데이터를 다른 트랜잭션으로 부터 어떻게 격리할 것인지를 결정한다. 격리 수준은 여러 트랜잭션의 동시 실행과 데이터의 일관성과 관련이 깊다. 
+
+
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyODQyOTMzMSwtMzc1ODA4MjgyLDEzND
-AxMzc0MzEsNTkzMzY4MjYyLDM3MTkwMzA4LDI2ODE3NDY1MSwx
-NzM2MzUwMjM3LDE4MDI4OTc2MjgsLTIwMTg2Nzk0NjQsODQxNz
-I3ODAsLTU1OTcwNzMxNSwxMTIwMzM5MDQ1LC0xNjI2NjM3ODUs
-NzM4NjI4OTAzLC02MDc5ODQ2NTcsLTEyMjUwOTIzNDcsLTE5OD
-Q4NzE4ODEsODk2NDQwNTkzLDIxMTA3OTk1MTEsMTQ1MDE4NDU3
-MV19
+eyJoaXN0b3J5IjpbODg5NzE2Njc5LDE1Mjg0MjkzMzEsLTM3NT
+gwODI4MiwxMzQwMTM3NDMxLDU5MzM2ODI2MiwzNzE5MDMwOCwy
+NjgxNzQ2NTEsMTczNjM1MDIzNywxODAyODk3NjI4LC0yMDE4Nj
+c5NDY0LDg0MTcyNzgwLC01NTk3MDczMTUsMTEyMDMzOTA0NSwt
+MTYyNjYzNzg1LDczODYyODkwMywtNjA3OTg0NjU3LC0xMjI1MD
+kyMzQ3LC0xOTg0ODcxODgxLDg5NjQ0MDU5MywyMTEwNzk5NTEx
+XX0=
 -->
