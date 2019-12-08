@@ -384,13 +384,7 @@ Select(T) & \\
 Select(T) &\\
 \end{bmatrix}$$
 
-T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 같은 테이블에 
-
-executes a query twice and it gets a different number of rows in the result set each time. This generally happens when a second transaction inserts some new rows in between the first and second query execution of the first transaction that matches the WHERE clause of the query executed by the first transaction.
-
-
-
-
+T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 같은 테이블에 Insert 또는 Delete 쿼리를 한다면, 두 번재 Select 쿼리는 결과가 달라질 수 있다. 
 
 >트랜잭션 전파 방식(Propagation)
 >참조하는 데이터나 변경한 데이터를 다른 트랜잭션으로 부터 어떻게 격리할 것인지를 결정한다. 격리 수준은 여러 트랜잭션의 동시 실행과 데이터의 일관성과 관련이 깊다. 
@@ -402,7 +396,7 @@ executes a query twice and it gets a different number of rows in the result set 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0Nzk5NjU3MCw3Mzg2Mjg5MDMsLTYwNz
+eyJoaXN0b3J5IjpbLTE2MjY2Mzc4NSw3Mzg2Mjg5MDMsLTYwNz
 k4NDY1NywtMTIyNTA5MjM0NywtMTk4NDg3MTg4MSw4OTY0NDA1
 OTMsMjExMDc5OTUxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMT
 E0OTQ5NzU3OCw2NjAwMDc2NDIsNzg3MDc3MTA2LDE0OTE1NTUx
