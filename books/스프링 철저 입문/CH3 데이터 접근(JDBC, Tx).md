@@ -415,20 +415,20 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 
 MANDATORY의 경우, 만들어진 트랜잭션 메서드 1의 경계에서 부터 이미 만들어진 트랜잭션이 없기 때문에 예외가 발생한다. (의무적인, 위임된, 강압적인)
 
-NEVER의 경우도 트랜잭션 메서드 1의 경계에서 만들어진 트랜잭션이 없으므로 예외가 발생한다. 
+NEVER, NOT_SUPPORED는 모두 트랜잭션을 관리하지 않는다는 읨의 경우도 트랜잭션 메서드 1의 경계에서 만들어진 트랜잭션이 없으므로 예외가 발생한다. 
 
-NOT_SUPPORED의 경우 트랜잭션 메서드 1의 경계에서 만들어진 트랜잭션이 없으므로 예외가 발생한다. 
+NOT_SUPPORED의 경우,  트랜잭션 메서드 1의 경계에서 만들어진 트랜잭션이 없으므로 예외가 발생한다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjA4MzUxNCwxNzM2MzUwMjM3LDE4MD
-I4OTc2MjgsLTIwMTg2Nzk0NjQsODQxNzI3ODAsLTU1OTcwNzMx
-NSwxMTIwMzM5MDQ1LC0xNjI2NjM3ODUsNzM4NjI4OTAzLC02MD
-c5ODQ2NTcsLTEyMjUwOTIzNDcsLTE5ODQ4NzE4ODEsODk2NDQw
-NTkzLDIxMTA3OTk1MTEsMTQ1MDE4NDU3MSw5NjM0MDU2NjUsLT
-ExNDk0OTc1NzgsNjYwMDA3NjQyLDc4NzA3NzEwNiwxNDkxNTU1
-MTM1XX0=
+eyJoaXN0b3J5IjpbLTE0MTkxMjc1MDcsMTczNjM1MDIzNywxOD
+AyODk3NjI4LC0yMDE4Njc5NDY0LDg0MTcyNzgwLC01NTk3MDcz
+MTUsMTEyMDMzOTA0NSwtMTYyNjYzNzg1LDczODYyODkwMywtNj
+A3OTg0NjU3LC0xMjI1MDkyMzQ3LC0xOTg0ODcxODgxLDg5NjQ0
+MDU5MywyMTEwNzk5NTExLDE0NTAxODQ1NzEsOTYzNDA1NjY1LC
+0xMTQ5NDk3NTc4LDY2MDAwNzY0Miw3ODcwNzcxMDYsMTQ5MTU1
+NTEzNV19
 -->
