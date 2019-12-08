@@ -349,9 +349,15 @@ TransactionTemplate 자바 기반 설정 방식
 더티리드는 한 트랜잭션이 아직 커밋하지 않은 상태로 수정 중일때 데이터 row 읽기가 가능하다면 발생한다. 예를 들면, TX1에서 가져온 row 데이터가 있고, TX2에서 커밋하지 않은 상태로 데이터를 수정했다. 커밋되지 않은 상태로 TX1이 동일한 row 데이터를 가져오면 수정된 데이터를 가져온다. 이때 TX2에서 롤백이 발생한다면, TX1에서 가져온 수정된 데이터는 잘못된 데이터가 된다. 
 
 반복되지 않은 읽기(Unrepeatable Read)
-: A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads. 
-**read–write conflict**, also known as **unrepeatable reads**, is a computational anomaly associated with interleaved execution of transactions.
+: A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads. read–write conflict, also known as unrepeatable reads, is a computational anomaly associated with interleaved execution of transactions.
 
+$$
+\begin{bmatrix}
+0 & \cdots & 0 \\
+\vdots & \ddots & \vdots \\
+0 & \cdots & 0
+\end{bmatrix}
+$$
 
 
 팬텀 읽기(Phantom Read)
@@ -367,11 +373,11 @@ TransactionTemplate 자바 기반 설정 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYzNDA1NjY1LC0xMTQ5NDk3NTc4LDY2MD
-AwNzY0Miw3ODcwNzcxMDYsMTQ5MTU1NTEzNSwtMTc3NjUxNzg5
-MCwtMjE0MzU0OTQ1MSwtMzA4MjgyNzU1LDk5MTc1OTc0MSwtMT
-I2MTk4NDM1NywtMTI3MTkyNjA5NCwtMTU1NTAzMDI2MiwxODI3
-NjA2MzUzLC0yNjg0OTY4ODMsLTIwMDQyMDc1MjAsMTc3NDQyMz
-k3MywtNzEyMTIyNzAxLC00MjE5OTk0MCw0NjI5NDk5NjksMzM0
-MTAzMTE2XX0=
+eyJoaXN0b3J5IjpbMTM0MDY3NjE3Myw5NjM0MDU2NjUsLTExND
+k0OTc1NzgsNjYwMDA3NjQyLDc4NzA3NzEwNiwxNDkxNTU1MTM1
+LC0xNzc2NTE3ODkwLC0yMTQzNTQ5NDUxLC0zMDgyODI3NTUsOT
+kxNzU5NzQxLC0xMjYxOTg0MzU3LC0xMjcxOTI2MDk0LC0xNTU1
+MDMwMjYyLDE4Mjc2MDYzNTMsLTI2ODQ5Njg4MywtMjAwNDIwNz
+UyMCwxNzc0NDIzOTczLC03MTIxMjI3MDEsLTQyMTk5OTQwLDQ2
+Mjk0OTk2OV19
 -->
