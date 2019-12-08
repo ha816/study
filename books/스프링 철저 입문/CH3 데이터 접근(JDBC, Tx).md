@@ -407,17 +407,17 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 |SUPPORTS| 이미 만들어진 트랜잭션이 있다면 그 범위 안에 들어가고, 만약 트랜잭션이 없다면 트랜잭션 관리를 하지 않는다.|
 |NESTED|REQUIRED와 마찬가지로 트랜잭션이 존재하지 않으면 새로 만들고 이미 존재하면 계속 이용한다. 하지만 NESTED가 적용된 구간은 중첩된 트랜잭션 처럼 취급한다. NESTED안에서 롤백이 발생한 경우 NESTED 구간 안의 처리 내용은 모두 롤백 되지만 NESTED 구간 밖에 실행된 내용은 롤백 되지 않는다. 단 부모 트랜잭션에서 롤백되면 NESTED 구간의 트랜잭션은 모두 롤백된다.|
 
-
+호출자 -> 트랜잭션 경계 -> 트랜잭션  -> tx2
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMjg5NzYyOCwtMjAxODY3OTQ2NCw4ND
-E3Mjc4MCwtNTU5NzA3MzE1LDExMjAzMzkwNDUsLTE2MjY2Mzc4
-NSw3Mzg2Mjg5MDMsLTYwNzk4NDY1NywtMTIyNTA5MjM0NywtMT
-k4NDg3MTg4MSw4OTY0NDA1OTMsMjExMDc5OTUxMSwxNDUwMTg0
-NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3OCw2NjAwMDc2NDIsNz
-g3MDc3MTA2LDE0OTE1NTUxMzUsLTE3NzY1MTc4OTAsLTIxNDM1
-NDk0NTFdfQ==
+eyJoaXN0b3J5IjpbMTkxNjgzMjY0MiwxODAyODk3NjI4LC0yMD
+E4Njc5NDY0LDg0MTcyNzgwLC01NTk3MDczMTUsMTEyMDMzOTA0
+NSwtMTYyNjYzNzg1LDczODYyODkwMywtNjA3OTg0NjU3LC0xMj
+I1MDkyMzQ3LC0xOTg0ODcxODgxLDg5NjQ0MDU5MywyMTEwNzk5
+NTExLDE0NTAxODQ1NzEsOTYzNDA1NjY1LC0xMTQ5NDk3NTc4LD
+Y2MDAwNzY0Miw3ODcwNzcxMDYsMTQ5MTU1NTEzNSwtMTc3NjUx
+Nzg5MF19
 -->
