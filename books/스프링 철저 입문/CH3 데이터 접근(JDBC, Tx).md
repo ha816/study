@@ -411,9 +411,7 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 
 각 트랜잭션 메서드는 자신의 트랜잭션 경계에서 전파 설정에 따라 트랜잭션을 진행한다. 트랜잭션 메서드1 과 2 모두 REQUIRED라면 메서드 1에서 새로운 트랜잭션을 만들고 트랜잭션 2의 트랜잭션 경계에서는 만들어진 트랜잭션이 있다는 걸을 알고 같은 트랜잭션으로 묶여 처리가 된다. 
 
-만약 트랜잭션 메서드1 과 2 모두 REQUIRED_NEW라면 메서드1에서 새로운 트랜잭션을 만들고 트랜잭션 2 경계에서도 새로운 트랜잭션을 만들어 처리한다. 둘다 독립적인 트랜잭션이기 때문에 트랜잭션 2에서 예외가 발생해도 트랜잭션 메서드 1은 롤백이 되지 않는다. REQUIRED_NEW는 작동하
-You should use the RequiresNew attribute when you want to ensure that the method always runs within a new transaction.
-
+만약 트랜잭션 메서드1 과 2 모두 REQUIRED_NEW라면 메서드1에서 새로운 트랜잭션을 만들고 트랜잭션 2 경계에서도 새로운 트랜잭션을 만들어 처리한다. 둘다 독립적인 트랜잭션이기 때문에 트랜잭션 2에서 예외가 발생해도 트랜잭션 메서드 1은 롤백이 되지 않는다. REQUIRED_NEW는 메서드가 항상 새로운 트랜잭션에서 동작하도록 보장할때 쓴다. 
 
 MANDATORY의 경우, 만들어진 트랜잭션 메서드 1의 경계에서 부터 이미 만들어진 트랜잭션이 없기 때문에 예외가 발생한다. (의무적인, 위임된, 강압적인)
 
@@ -424,11 +422,11 @@ NEVER, NOT_SUPPORTED는 모두 트랜잭션을 관리하지 않는다. 트랜잭
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTU3NTYxMDIsNTkzMzY4MjYyLDM3MT
-kwMzA4LDI2ODE3NDY1MSwxNzM2MzUwMjM3LDE4MDI4OTc2Mjgs
-LTIwMTg2Nzk0NjQsODQxNzI3ODAsLTU1OTcwNzMxNSwxMTIwMz
-M5MDQ1LC0xNjI2NjM3ODUsNzM4NjI4OTAzLC02MDc5ODQ2NTcs
-LTEyMjUwOTIzNDcsLTE5ODQ4NzE4ODEsODk2NDQwNTkzLDIxMT
-A3OTk1MTEsMTQ1MDE4NDU3MSw5NjM0MDU2NjUsLTExNDk0OTc1
-NzhdfQ==
+eyJoaXN0b3J5IjpbMjY2NjczMjA5LDU5MzM2ODI2MiwzNzE5MD
+MwOCwyNjgxNzQ2NTEsMTczNjM1MDIzNywxODAyODk3NjI4LC0y
+MDE4Njc5NDY0LDg0MTcyNzgwLC01NTk3MDczMTUsMTEyMDMzOT
+A0NSwtMTYyNjYzNzg1LDczODYyODkwMywtNjA3OTg0NjU3LC0x
+MjI1MDkyMzQ3LC0xOTg0ODcxODgxLDg5NjQ0MDU5MywyMTEwNz
+k5NTExLDE0NTAxODQ1NzEsOTYzNDA1NjY1LC0xMTQ5NDk3NTc4
+XX0=
 -->
