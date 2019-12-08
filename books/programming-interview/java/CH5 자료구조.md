@@ -37,12 +37,13 @@ Deque(덱이라 발음)
 
 트리는 자식이라 부르는 서로 다른 원소를 많이 나열할 수 있는 자료구조다. 대표적으로 이진트리가 있는데 최대 두개의 자식을 가질 수 있는 트리를 말한다. 
 
+## 이진트리(Binary Tree)
+
 이진 트리를 활용하는 구현체로 이진 검색 트리가 있다. 이진 검색 트리의 효율은 트리의 균형에서 나온다. 균형 있는 트리를 만들기 위해 다양한 트리 기법이 있고 대표적으로는 AVL 트리가 있다. 일반적으로 트리의 균형이 맞을때는 검색, 삽입, 삭제시 $O(log n)$의 처리시간이 소요된다.
 
-> AVL 특성(이진검색트리) 
+> AVL 트리란?
 
-
-
+## 이진힙(Binary Heap)
 
 이진 트리의 또 다른 응용법으로 Binary Heap이 있다. 참고로 Heap의 사전적 의미는 더미, 무더기라는 의미이다. 힙은 여러 값들 중에서 최댓값이나 최솟값을 빠르게 찾아내도록 만들어진 자료구조이다. 최대값을 빠르게 찾아내는 힙을 최대힙(max heap), 최소값을 빠르게 찾아내는 힙을 최소힙(min heap)이라고 한다.
 
@@ -112,6 +113,6 @@ Set은 Collection 인터페이스를 확장한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIwMTU1MDUsMTQ5OTA4MzAxOCwtMjI5Mz
-cxMDMzLDE3Nzk2OTI5MjZdfQ==
+eyJoaXN0b3J5IjpbLTE2MzY5MTk3NzUsNjIwMTU1MDUsMTQ5OT
+A4MzAxOCwtMjI5MzcxMDMzLDE3Nzk2OTI5MjZdfQ==
 -->
