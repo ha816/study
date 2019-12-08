@@ -419,15 +419,16 @@ NEVER, NOT_SUPPORTED는 모두 트랜잭션을 관리하지 않는다. 트랜잭
 
 NOT_SUPPORTED일 경우,  트랜잭션처리를 하지 않는 메서드라는 의미이다. 만약 이미 트랜잭션이 있다면 앞선 트랜잭션은 NOT_SUPPORTED 메서드를 호출할때 보류된다. 호출한 메서드가 끝나면 원래 트랜잭션은 재개 된다. NOT_SUPPORTED는 트랜잭션이 불필요할때 사용하는데, 트랜잭션이 오버헤드를 가지기 때문에 이것이 성능을 개선할수도 있기 때문이다. 
 
-트랜잭션 메서드 1이 존재하고, 트랜잭션 2메서드가 SUPPORTED라면 이미 만들어진 트랜잭션이 있기 때문에 앞선 트랜잭션으로 함께 처리한다. 만약 트랜잭션이 없다면 트랜잭션 관리를 하지 않는다. 메서드의 트랜잭션 행위는 매우 다양하기 때문에, Supports는 매우 조심히 써야한다. 
+SUPPORTED 메서드라면 만들어진 트랜잭션이 존재하면 그 트랜잭션과 함께 처리되고 아니라면 트랜잭션 처리가 되지 않는다.
+만약 트랜잭션이 없다면 트랜잭션 관리를 하지 않는다. 메서드의 트랜잭션 행위는 매우 다양하기 때문에, Supports는 매우 조심히 써야한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MDEzNzQzMSw1OTMzNjgyNjIsMzcxOT
-AzMDgsMjY4MTc0NjUxLDE3MzYzNTAyMzcsMTgwMjg5NzYyOCwt
-MjAxODY3OTQ2NCw4NDE3Mjc4MCwtNTU5NzA3MzE1LDExMjAzMz
-kwNDUsLTE2MjY2Mzc4NSw3Mzg2Mjg5MDMsLTYwNzk4NDY1Nywt
-MTIyNTA5MjM0NywtMTk4NDg3MTg4MSw4OTY0NDA1OTMsMjExMD
-c5OTUxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3
-OF19
+eyJoaXN0b3J5IjpbNDk2OTk5MDg3LDEzNDAxMzc0MzEsNTkzMz
+Y4MjYyLDM3MTkwMzA4LDI2ODE3NDY1MSwxNzM2MzUwMjM3LDE4
+MDI4OTc2MjgsLTIwMTg2Nzk0NjQsODQxNzI3ODAsLTU1OTcwNz
+MxNSwxMTIwMzM5MDQ1LC0xNjI2NjM3ODUsNzM4NjI4OTAzLC02
+MDc5ODQ2NTcsLTEyMjUwOTIzNDcsLTE5ODQ4NzE4ODEsODk2ND
+QwNTkzLDIxMTA3OTk1MTEsMTQ1MDE4NDU3MSw5NjM0MDU2NjVd
+fQ==
 -->
