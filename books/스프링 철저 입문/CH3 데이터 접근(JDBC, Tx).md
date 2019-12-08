@@ -351,9 +351,9 @@ TransactionTemplate 자바 기반 설정 방식
 $$
 \begin{bmatrix}T1&T2\\R(A)&\\W(A)&\\&R(A)\\&W(A)\\&R(B)\\&W(B)\\&Com.\\R(B)&\\W(B)&\\Com.&\end{bmatrix}
 $$
-![S={\begin{bmatrix}T1&T2\\R(A)&\\W(A)&\\&R(A)\\&W(A)\\&R(B)\\&W(B)\\&Com.\\R(B)&\\W(B)&\\Com.&\end{bmatrix}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/c2c428bcd42bb658cb5515cae499ed3425c9ff5c
 
 T2 could read a database object A, modified by T1 which hasn't committed. This is a  _**dirty read**_.
+T1 may write some value into A which makes the database inconsistent. It is possible that interleaved execution can expose this inconsistency and lead to inconsistent final database state, violating [ACID](https://en.wikipedia.org/wiki/ACID "ACID") rules.
 
 
 반복되지 않은 읽기(Unrepeatable Read)
@@ -389,11 +389,11 @@ However, when T1 reads from A, it discovers two different versions of A, and T1 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzIzNjMzNSw4OTY0NDA1OTMsMjExMD
-c5OTUxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3
-OCw2NjAwMDc2NDIsNzg3MDc3MTA2LDE0OTE1NTUxMzUsLTE3Nz
-Y1MTc4OTAsLTIxNDM1NDk0NTEsLTMwODI4Mjc1NSw5OTE3NTk3
-NDEsLTEyNjE5ODQzNTcsLTEyNzE5MjYwOTQsLTE1NTUwMzAyNj
-IsMTgyNzYwNjM1MywtMjY4NDk2ODgzLC0yMDA0MjA3NTIwLDE3
-NzQ0MjM5NzNdfQ==
+eyJoaXN0b3J5IjpbLTI4NTM1NSw4OTY0NDA1OTMsMjExMDc5OT
+UxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3OCw2
+NjAwMDc2NDIsNzg3MDc3MTA2LDE0OTE1NTUxMzUsLTE3NzY1MT
+c4OTAsLTIxNDM1NDk0NTEsLTMwODI4Mjc1NSw5OTE3NTk3NDEs
+LTEyNjE5ODQzNTcsLTEyNzE5MjYwOTQsLTE1NTUwMzAyNjIsMT
+gyNzYwNjM1MywtMjY4NDk2ODgzLC0yMDA0MjA3NTIwLDE3NzQ0
+MjM5NzNdfQ==
 -->
