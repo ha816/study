@@ -400,7 +400,7 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 |전파방식|설명|
 |--|--|
 |REQUIRED | 이미 만들어진 트랜잭션이 존재하면 해당 트랜잭션 안으로 들어가 함께 처리한다. 이미 만들어진 트랜잭션이 없다면 새로운 트랜잭션을 만든다.|
-|REQUIRES_NEW| 이미 만들어진 트랜잭션에 들어가지 않고 반드시 새로운 트랜잭션을 만든다. 이미 만들어진 트랜잭션이 종료되지 않았다면 새로운 트랜잭션은 보류가 되어 앞선 트랜잭션이 끝날때 까지 기다려야 한다. |
+|REQUIRES_NEW| 이미 만들어진 트랜잭션에 들어가지 않고 반드시 새로운 트랜잭션을 만든다. 이미 만들어진 트랜잭션은 보류가 되어 새로운 트랜잭션이 끝날때 까지 기다려야 한다. |
 | MANDATORY| 이미 만들어진 트랜잭션 범위 안에 들어가야 한다. 만약 기존에 만들어진 트랜잭션이 없다면 예외가 발생한다. |
 | NEVER | 트랜잭션 관리를 하지 않는다. 이미 만들어진 트랜잭션이 있으며 예외가 발생  |
 |NOT_SUPPORTED| 트랜잭션을 관리하지 않는다. 만약 이미 만들어진 트랜잭션이 있다면 이전 트랜잭션이 끝나는 것을 기다려야 한다.|
@@ -422,11 +422,11 @@ NEVER, NOT_SUPPORTED는 모두 트랜잭션을 관리하지 않는다. 트랜잭
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkzMzY4MjYyLDM3MTkwMzA4LDI2ODE3ND
-Y1MSwxNzM2MzUwMjM3LDE4MDI4OTc2MjgsLTIwMTg2Nzk0NjQs
-ODQxNzI3ODAsLTU1OTcwNzMxNSwxMTIwMzM5MDQ1LC0xNjI2Nj
-M3ODUsNzM4NjI4OTAzLC02MDc5ODQ2NTcsLTEyMjUwOTIzNDcs
-LTE5ODQ4NzE4ODEsODk2NDQwNTkzLDIxMTA3OTk1MTEsMTQ1MD
-E4NDU3MSw5NjM0MDU2NjUsLTExNDk0OTc1NzgsNjYwMDA3NjQy
+eyJoaXN0b3J5IjpbNDIyNDE4NzgwLDU5MzM2ODI2MiwzNzE5MD
+MwOCwyNjgxNzQ2NTEsMTczNjM1MDIzNywxODAyODk3NjI4LC0y
+MDE4Njc5NDY0LDg0MTcyNzgwLC01NTk3MDczMTUsMTEyMDMzOT
+A0NSwtMTYyNjYzNzg1LDczODYyODkwMywtNjA3OTg0NjU3LC0x
+MjI1MDkyMzQ3LC0xOTg0ODcxODgxLDg5NjQ0MDU5MywyMTEwNz
+k5NTExLDE0NTAxODQ1NzEsOTYzNDA1NjY1LC0xMTQ5NDk3NTc4
 XX0=
 -->
