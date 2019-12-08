@@ -365,7 +365,7 @@ Commit&\\
 
 T1 has read the original value of A, and is waiting for T2 to finish. T2 also reads the original value of A, overwrites A, and commits.
 
-However, when T1 reads from A, it discovers two different versions of A, and T1 would be forced to  [abort](https://en.wikipedia.org/wiki/Abort_(computing) "Abort (computing)"), because T1 would not know what to do. This is an unrepeatable read. 
+However, when T1 reads from A, it discovers two different versions of A, and T1 would be forced to  [abort]"Abort (computing)"), because T1 would not know what to do. This is an unrepeatable read. 
 
 팬텀 읽기(Phantom Read)
 : ㄴㅇㄹㄴㅇㄹ
@@ -380,11 +380,11 @@ However, when T1 reads from A, it discovers two different versions of A, and T1 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2NDQwNTkzLDIxMTA3OTk1MTEsMTQ1MD
-E4NDU3MSw5NjM0MDU2NjUsLTExNDk0OTc1NzgsNjYwMDA3NjQy
-LDc4NzA3NzEwNiwxNDkxNTU1MTM1LC0xNzc2NTE3ODkwLC0yMT
-QzNTQ5NDUxLC0zMDgyODI3NTUsOTkxNzU5NzQxLC0xMjYxOTg0
-MzU3LC0xMjcxOTI2MDk0LC0xNTU1MDMwMjYyLDE4Mjc2MDYzNT
-MsLTI2ODQ5Njg4MywtMjAwNDIwNzUyMCwxNzc0NDIzOTczLC03
-MTIxMjI3MDFdfQ==
+eyJoaXN0b3J5IjpbMTUyMDgxOTgyMCw4OTY0NDA1OTMsMjExMD
+c5OTUxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3
+OCw2NjAwMDc2NDIsNzg3MDc3MTA2LDE0OTE1NTUxMzUsLTE3Nz
+Y1MTc4OTAsLTIxNDM1NDk0NTEsLTMwODI4Mjc1NSw5OTE3NTk3
+NDEsLTEyNjE5ODQzNTcsLTEyNzE5MjYwOTQsLTE1NTUwMzAyNj
+IsMTgyNzYwNjM1MywtMjY4NDk2ODgzLC0yMDA0MjA3NTIwLDE3
+NzQ0MjM5NzNdfQ==
 -->
