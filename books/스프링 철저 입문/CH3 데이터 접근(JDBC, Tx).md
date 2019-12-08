@@ -352,9 +352,7 @@ $$
 \begin{bmatrix}T1&T2\\R(A)&\\W(A)&\\&R(A)\\&W(A)\\&R(B)\\&W(B)\\&Com.\\R(B)&\\W(B)&\\Com.&\end{bmatrix}
 $$
 
-T2 could read a database object A, modified by T1 which hasn't committed. This is a  _**dirty read**_.
-T1 may write some value into A which makes the database inconsistent. It is possible that interleaved execution can expose this inconsistency and lead to inconsistent final database state, violating [ACID](https://en.wikipedia.org/wiki/ACID "ACID") rules.
-
+T2 could read a database object A, modified by T1 which hasn't committed. This is a **dirty read**. T1 may write some value into A which makes the database inconsistent. It is possible that interleaved execution can expose this inconsistency and lead to inconsistent final database state, violating ACID rules.
 
 반복되지 않은 읽기(Unrepeatable Read)
 : A non-repeatable read occurs, when during the course of a transaction, a row is retrieved twice and the values within the row differ between reads. 
@@ -389,11 +387,11 @@ However, when T1 reads from A, it discovers two different versions of A, and T1 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NTM1NSw4OTY0NDA1OTMsMjExMDc5OT
-UxMSwxNDUwMTg0NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3OCw2
-NjAwMDc2NDIsNzg3MDc3MTA2LDE0OTE1NTUxMzUsLTE3NzY1MT
-c4OTAsLTIxNDM1NDk0NTEsLTMwODI4Mjc1NSw5OTE3NTk3NDEs
-LTEyNjE5ODQzNTcsLTEyNzE5MjYwOTQsLTE1NTUwMzAyNjIsMT
-gyNzYwNjM1MywtMjY4NDk2ODgzLC0yMDA0MjA3NTIwLDE3NzQ0
-MjM5NzNdfQ==
+eyJoaXN0b3J5IjpbLTE5ODQ4NzE4ODEsODk2NDQwNTkzLDIxMT
+A3OTk1MTEsMTQ1MDE4NDU3MSw5NjM0MDU2NjUsLTExNDk0OTc1
+NzgsNjYwMDA3NjQyLDc4NzA3NzEwNiwxNDkxNTU1MTM1LC0xNz
+c2NTE3ODkwLC0yMTQzNTQ5NDUxLC0zMDgyODI3NTUsOTkxNzU5
+NzQxLC0xMjYxOTg0MzU3LC0xMjcxOTI2MDk0LC0xNTU1MDMwMj
+YyLDE4Mjc2MDYzNTMsLTI2ODQ5Njg4MywtMjAwNDIwNzUyMCwx
+Nzc0NDIzOTczXX0=
 -->
