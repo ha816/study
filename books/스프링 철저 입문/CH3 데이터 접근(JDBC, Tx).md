@@ -399,7 +399,7 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 
 |전파방식|설명|
 |--|--|
-|REQUIRED  | 이미 만들어진 트랜잭션이 존재하면 해당 트랜잭션 안으로 들어가 함께 처리한다. 이미 만들어진 트랜잭션이 없다면 새로운 트랜잭션을 만든다. |
+|REQUIRED  | 이미 만들어진 트랜잭션이 존재하면 해당 트랜잭션 안으로 들어가 함께 처리한다. 이미 만들어진 트랜잭션이 없다면 새로운 트랜잭션을 만든다.|
 |  |  |
 |  |  |
 |  |  |
@@ -408,11 +408,11 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTg2Nzk0NjQsODQxNzI3ODAsLTU1OT
-cwNzMxNSwxMTIwMzM5MDQ1LC0xNjI2NjM3ODUsNzM4NjI4OTAz
-LC02MDc5ODQ2NTcsLTEyMjUwOTIzNDcsLTE5ODQ4NzE4ODEsOD
-k2NDQwNTkzLDIxMTA3OTk1MTEsMTQ1MDE4NDU3MSw5NjM0MDU2
-NjUsLTExNDk0OTc1NzgsNjYwMDA3NjQyLDc4NzA3NzEwNiwxND
-kxNTU1MTM1LC0xNzc2NTE3ODkwLC0yMTQzNTQ5NDUxLC0zMDgy
-ODI3NTVdfQ==
+eyJoaXN0b3J5IjpbLTM0MTU0OTg2OCwtMjAxODY3OTQ2NCw4ND
+E3Mjc4MCwtNTU5NzA3MzE1LDExMjAzMzkwNDUsLTE2MjY2Mzc4
+NSw3Mzg2Mjg5MDMsLTYwNzk4NDY1NywtMTIyNTA5MjM0NywtMT
+k4NDg3MTg4MSw4OTY0NDA1OTMsMjExMDc5OTUxMSwxNDUwMTg0
+NTcxLDk2MzQwNTY2NSwtMTE0OTQ5NzU3OCw2NjAwMDc2NDIsNz
+g3MDc3MTA2LDE0OTE1NTUxMzUsLTE3NzY1MTc4OTAsLTIxNDM1
+NDk0NTFdfQ==
 -->
