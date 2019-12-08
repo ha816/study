@@ -375,7 +375,7 @@ However, when T1 reads from A, it discovers two different versions of A, and T1 
 
 
 팬텀 읽기(Phantom Read)
-: ㄴㅇㄹㄴㅇㄹ
+: The **Phantom Read Concurrency Problem** happens in SQL Server when one transaction executes a query twice and it gets a different number of rows in the result set each time. This generally happens when a second transaction inserts some new rows in between the first and second query execution of the first transaction that matches the WHERE clause of the query executed by the first transaction.
 
 >트랜잭션 전파 방식(Propagation)
 >참조하는 데이터나 변경한 데이터를 다른 트랜잭션으로 부터 어떻게 격리할 것인지를 결정한다. 격리 수준은 여러 트랜잭션의 동시 실행과 데이터의 일관성과 관련이 깊다. 
@@ -387,11 +387,11 @@ However, when T1 reads from A, it discovers two different versions of A, and T1 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQ4NzE4ODEsODk2NDQwNTkzLDIxMT
-A3OTk1MTEsMTQ1MDE4NDU3MSw5NjM0MDU2NjUsLTExNDk0OTc1
-NzgsNjYwMDA3NjQyLDc4NzA3NzEwNiwxNDkxNTU1MTM1LC0xNz
-c2NTE3ODkwLC0yMTQzNTQ5NDUxLC0zMDgyODI3NTUsOTkxNzU5
-NzQxLC0xMjYxOTg0MzU3LC0xMjcxOTI2MDk0LC0xNTU1MDMwMj
-YyLDE4Mjc2MDYzNTMsLTI2ODQ5Njg4MywtMjAwNDIwNzUyMCwx
-Nzc0NDIzOTczXX0=
+eyJoaXN0b3J5IjpbLTEyMjUwOTIzNDcsLTE5ODQ4NzE4ODEsOD
+k2NDQwNTkzLDIxMTA3OTk1MTEsMTQ1MDE4NDU3MSw5NjM0MDU2
+NjUsLTExNDk0OTc1NzgsNjYwMDA3NjQyLDc4NzA3NzEwNiwxND
+kxNTU1MTM1LC0xNzc2NTE3ODkwLC0yMTQzNTQ5NDUxLC0zMDgy
+ODI3NTUsOTkxNzU5NzQxLC0xMjYxOTg0MzU3LC0xMjcxOTI2MD
+k0LC0xNTU1MDMwMjYyLDE4Mjc2MDYzNTMsLTI2ODQ5Njg4Mywt
+MjAwNDIwNzUyMF19
 -->
