@@ -12,13 +12,18 @@
 >요청을 받아서 모델과 뷰의 호출을 제어하는 콤포넌트. 컨트롤러라는 이름처럼 요청과 응답의 처리 흐름을 제어한다. 
 
 
-## 웹 애플리케이션 개발의 특징
+## 스프링의 MVC를 
 
-*
+* POJO 구현
+* 애너테이션을 이용한 정의 정보실정
+* 유연한 메서드 시그니처 정의
+* Servelet API 추상화
+* 뷰 구현 기술의 추상화
+* 스프링의 DI 컨테이너와 연계
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MzA5NjcyOSwxODM3OTc4ODAzLDEzMj
+eyJoaXN0b3J5IjpbLTU5NTk0MjI3OCwxODM3OTc4ODAzLDEzMj
 k0MzMyMzIsLTIwNzEyMzU4MV19
 -->
