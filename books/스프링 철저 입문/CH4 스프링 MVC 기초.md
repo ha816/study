@@ -14,10 +14,11 @@
 
 ## 웹 애플리케이션 개발의 특징
 
+*
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMD
-cxMjM1ODFdfQ==
+eyJoaXN0b3J5IjpbMTY1MzA5NjcyOSwxODM3OTc4ODAzLDEzMj
+k0MzMyMzIsLTIwNzEyMzU4MV19
 -->
