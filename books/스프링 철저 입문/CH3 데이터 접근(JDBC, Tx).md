@@ -429,26 +429,13 @@ SUPPORTED 메서드라면 만들어진 트랜잭션이 존재하면 그 트랜�
 NESTED 메서드라면 REQUIRED와 매우 유사하다. 하지만 NESTED 메서드 구간안에서는 중첩된 트랜잭션 취급하게 된다. NESTED 구간안에서 롤백이 되면 NESTED 구간안의 모든 내용은 롤백 되지만 구간 밖에 내용은 롤백 되지 않는다. 즉 REQUIRED는 어떤 구간에서 예외가 발생하든 모두 롤백이 되지만, NESTED는 come visible. However, Transaction 1 has already seen a different value for _age_ in that row. At the SERIALIZABLE and REPEATABLE READ isolation levels, the DBMS must return the old value for the second SELECT. At READ COMMITTED and READ UNCOMMITTED, the DBMS may return the updated value; this is a non-repeatable read.
 
 
-
-
-팬텀 읽기(Phantom Read)
-: ㄴㅇㄹㄴㅇㄹ
-
->트랜잭션 전파 방식(Propagation)
->참조하는 데이터나 변경한 데이터를 다른 트랜잭션으로 부터 어떻게 격리할 것인지를 결정한다. 격리 수준은 여러 트랜잭션의 동시 실행과 데이터의 일관성과 관련이 깊다. 
-
-
-
-
-NESTED 구간 내용만 모두 롤백이 된다. 
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDcwMDUzNDYsODg5NzE2Njc5LC0zNz
-U4MDgyODIsMTM0MDEzNzQzMSw1OTMzNjgyNjIsMzcxOTAzMDgs
-MjY4MTc0NjUxLDE3MzYzNTAyMzcsMTgwMjg5NzYyOCwtMjAxOD
-Y3OTQ2NCw4NDE3Mjc4MCwtNTU5NzA3MzE1LDExMjAzMzkwNDUs
-LTE2MjY2Mzc4NSw3Mzg2Mjg5MDMsLTYwNzk4NDY1NywtMTIyNT
-A5MjM0NywtMTk4NDg3MTg4MSw4OTY0NDA1OTMsMjExMDc5OTUx
-MV19
+eyJoaXN0b3J5IjpbNDQxMjk4MTcxLDg4OTcxNjY3OSwtMzc1OD
+A4MjgyLDEzNDAxMzc0MzEsNTkzMzY4MjYyLDM3MTkwMzA4LDI2
+ODE3NDY1MSwxNzM2MzUwMjM3LDE4MDI4OTc2MjgsLTIwMTg2Nz
+k0NjQsODQxNzI3ODAsLTU1OTcwNzMxNSwxMTIwMzM5MDQ1LC0x
+NjI2NjM3ODUsNzM4NjI4OTAzLC02MDc5ODQ2NTcsLTEyMjUwOT
+IzNDcsLTE5ODQ4NzE4ODEsODk2NDQwNTkzLDIxMTA3OTk1MTFd
+fQ==
 -->
