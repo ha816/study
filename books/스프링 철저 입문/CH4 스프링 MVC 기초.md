@@ -12,9 +12,12 @@
 >요청을 받아서 모델과 뷰의 호출을 제어하는 콤포넌트. 컨트롤러라는 이름처럼 요청과 응답의 처리 흐름을 제어한다. 
 
 
+## 웹 애플리케이션 개발의 특징
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyOTQzMzIzMiwtMjA3MTIzNTgxXX0=
+eyJoaXN0b3J5IjpbMTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMD
+cxMjM1ODFdfQ==
 -->
