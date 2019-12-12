@@ -137,6 +137,10 @@ DispatcherServlet용은 스프링 MVC 프런트 컨트롤러의 구성 컴포넌
 ```
 		웹 애플리케이션 용
 
+RestAPI					UI
+
+Dispatcher Servlet		Dispatcher Servlet
+(Rest API용)				(UI용)
 ```
 
 
@@ -147,7 +151,7 @@ DispatcherServlet용은 스프링 MVC 프런트 컨트롤러의 구성 컴포넌
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc5MTgyNjkxLDU3ODM0MjI2LC02ODUxNj
+eyJoaXN0b3J5IjpbNjI3MDU5Mjg1LDU3ODM0MjI2LC02ODUxNj
 c3MDMsNzM1MDMzNDUwLDE4MTU3MDU3MjYsLTMzNTQwNjM1NSwt
 OTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MT
 IzNTgxXX0=
