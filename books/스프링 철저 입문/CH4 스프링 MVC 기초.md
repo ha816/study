@@ -88,6 +88,7 @@
 
 ### HandlerAdapter
 
+핸들러 메서드를 호출하는 역할을 한다. 앞서 RequestMappingHandlerMapping에서 선택되어 가져온 핸들러 메서드를 호출할 때는 RequestMappingHandlerAdapter 클래스를 사용한다.  RequestMappingHandlerAdapter클래스에는 핸들러 메서드에 매개변수를 전달하고 메서드의 처리결
 
 
 
@@ -96,7 +97,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NTE2NzcwMyw3MzUwMzM0NTAsMTgxNT
-cwNTcyNiwtMzM1NDA2MzU1LC05NDk3ODE4NzcsMTgzNzk3ODgw
-MywxMzI5NDMzMjMyLC0yMDcxMjM1ODFdfQ==
+eyJoaXN0b3J5IjpbMTI0MjE5Mjg0OSwtNjg1MTY3NzAzLDczNT
+AzMzQ1MCwxODE1NzA1NzI2LC0zMzU0MDYzNTUsLTk0OTc4MTg3
+NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNzEyMzU4MV19
 -->
