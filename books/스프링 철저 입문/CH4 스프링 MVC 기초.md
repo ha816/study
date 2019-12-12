@@ -81,9 +81,12 @@
 
 @RequestMapping 애너테이션이 붙은 메서드는 핸들러 메서드이다. 
 
-||  |
+|요청매핑 정보| 핸들러 |
 |--|--|
-|  |  |
+|/hello  | 핸들러 메서드1  |
+|/goodbye  | 핸들러 메서드2 |
+
+### HandlerAdapter
 
 
 
@@ -93,7 +96,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MjA3MTEwNCw3MzUwMzM0NTAsMTgxNT
+eyJoaXN0b3J5IjpbLTY4NTE2NzcwMyw3MzUwMzM0NTAsMTgxNT
 cwNTcyNiwtMzM1NDA2MzU1LC05NDk3ODE4NzcsMTgzNzk3ODgw
 MywxMzI5NDMzMjMyLC0yMDcxMjM1ODFdfQ==
 -->
