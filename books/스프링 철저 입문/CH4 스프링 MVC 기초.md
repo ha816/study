@@ -57,13 +57,13 @@
 
 ### DispatcherServlet
 
-프런트 컨트롤러이자 기본적인 처리 흐름을 제어하는 사령탑 역할을 한다. 그림에서는 표현되지 않았지만 아래와 같은 인터페이스와도 연동되어 프레임워크 전체 기능을 수행한다. 
+프런트 컨트롤러이자 기본적인 처리 흐름을 제어하는 사령탑 역할을 한다. 그림에서는 표현되지 않았지만 아래와 같은 인터페이스와도 연동되어 프레임워크 전체 기능을 수행한다. 모두 기본적으로 적용되어 있다.
 
 |인터페이스명|역할|
 |--|--|
 |HandlerExceptionReolver  |예외처리를 위한 인터페이스, 스프링 MVC가 제공하는 기본 구현 클래스가 적용되어 있다.  |
 |LocalResolver, LocaleContextResolver  |클라이언트의 로컬 정보를 확인하기 위한 인터페이스, 기본적으로 적용 되어있다. |
-|ㅆ  |예외처리를 위한 인터페이스, 스프링 MVC가 제공하는 기본 구현 클래스가 적용되어 있다.  |
+|ThemeResolver  |클라이언트의 테마를 결정하기 위한 인터페이스|
 
 
 
@@ -75,7 +75,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTA0MDg0MTksMTgxNTcwNTcyNiwtMz
-M1NDA2MzU1LC05NDk3ODE4NzcsMTgzNzk3ODgwMywxMzI5NDMz
-MjMyLC0yMDcxMjM1ODFdfQ==
+eyJoaXN0b3J5IjpbNjM4MTE1Nzc2LDE4MTU3MDU3MjYsLTMzNT
+QwNjM1NSwtOTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIz
+MiwtMjA3MTIzNTgxXX0=
 -->
