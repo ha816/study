@@ -101,7 +101,7 @@
 
 핸들러에서 반환한 뷰 이름을 보고, 이후에 사용할 View 인터페이스의 구현 클래스를 선택하는 역할을 한다. 
 
-스프링에서는 다양한 ViewResolver의 구현 클래스를 제공하는데 주요 클래스만 몇개 
+스프링에서는 다양한 ViewResolver의 구현 클래스를 제공하는데 주요 클래스만 몇개 소개한다.
 |클래스명  | 설명|
 |--|--|
 |InternalResourceViewResolver  | View가 JSP일때 사용하는 기본적인 ViewResolver |
@@ -116,7 +116,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMjQwMzM1NiwtNjg1MTY3NzAzLDczNT
+eyJoaXN0b3J5IjpbLTQ0MzY5MjI2OCwtNjg1MTY3NzAzLDczNT
 AzMzQ1MCwxODE1NzA1NzI2LC0zMzU0MDYzNTUsLTk0OTc4MTg3
 NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNzEyMzU4MV19
 -->
