@@ -135,10 +135,10 @@ DispatcherServlet용은 스프링 MVC 프런트 컨트롤러의 구성 컴포넌
 
 앱 애플리케이션 용은 부모이고 DispatcherServlet은 자식관계로 되어 있어 자식은 부모에 등록되어 있는 빈을 사용할 수 있다. 
 ```
-		웹 애플리케이션 용
-
-RestAPI					UI
-
+			애플리케이션 컨텍스트(ROOT)
+			/					\
+애플리케이션 컨텍스트1		애플리케이션 컨텍스트2
+		|						|
 Dispatcher Servlet		Dispatcher Servlet
 (Rest API용)				(UI용)
 ```
@@ -149,10 +149,11 @@ Dispatcher Servlet		Dispatcher Servlet
 
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI3MDU5Mjg1LDU3ODM0MjI2LC02ODUxNj
-c3MDMsNzM1MDMzNDUwLDE4MTU3MDU3MjYsLTMzNTQwNjM1NSwt
-OTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MT
-IzNTgxXX0=
+eyJoaXN0b3J5IjpbLTE2NTEzODUxMjUsNjI3MDU5Mjg1LDU3OD
+M0MjI2LC02ODUxNjc3MDMsNzM1MDMzNDUwLDE4MTU3MDU3MjYs
+LTMzNTQwNjM1NSwtOTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOT
+QzMzIzMiwtMjA3MTIzNTgxXX0=
 -->
