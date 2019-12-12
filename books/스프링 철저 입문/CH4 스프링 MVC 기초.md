@@ -149,7 +149,10 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 
 초기화 단계 : 애플리케이션 컨텍스트를 생성하는 단계로 서블릿 컨테이너를 기동할때 수행한다.
 사용 단계 : 애플리케이션 컨텍스트에서 빈을 사용하는 단계.
-파기 단계 : 애플리케이션 컨텍스트를 사
+파기 단계 : 애플리케이션 컨텍스트를 삭제하는 단계로 서블릿 컨테이너가 중지할때 수행한다. 
+
+
+
 
 
 
@@ -161,8 +164,8 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTQzNDU5MjgsNjI3MDU5Mjg1LDU3OD
-M0MjI2LC02ODUxNjc3MDMsNzM1MDMzNDUwLDE4MTU3MDU3MjYs
-LTMzNTQwNjM1NSwtOTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOT
-QzMzIzMiwtMjA3MTIzNTgxXX0=
+eyJoaXN0b3J5IjpbNDY0ODY4MzI0LDYyNzA1OTI4NSw1NzgzND
+IyNiwtNjg1MTY3NzAzLDczNTAzMzQ1MCwxODE1NzA1NzI2LC0z
+MzU0MDYzNTUsLTk0OTc4MTg3NywxODM3OTc4ODAzLDEzMjk0Mz
+MyMzIsLTIwNzEyMzU4MV19
 -->
