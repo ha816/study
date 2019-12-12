@@ -45,11 +45,11 @@
 
 ![enter image description here](https://howtodoinjava.com/wp-content/uploads/2015/02/Spring-dispatcher-servlet.png)
 
-Servlet은 Handler
+Servlet은 Handler Mapping 이너페이스의 getHandler 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgzMzQxODk2LC0zMzU0MDYzNTUsLTk0OT
-c4MTg3NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNzEyMzU4
-MV19
+eyJoaXN0b3J5IjpbLTQ2OTY0OTc5NCwtMzM1NDA2MzU1LC05ND
+k3ODE4NzcsMTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1
+ODFdfQ==
 -->
