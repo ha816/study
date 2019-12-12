@@ -133,6 +133,11 @@
 
 DispatcherServlet용은 스프링 MVC 프런트 컨트롤러의 구성 컴포넌트(HandlerMapping, HandlerAdapter, ViewResolver)와 컨트롤러의 빈을 등로한다. 
 
+앱 애플리케이션 용은 부모이고 DispatcherServlet은 자식관계로 되어 있어 자식은 부모에 등록되어 있는 빈을 사용할 수 있다. 
+```
+		웹 애플리케이션 용
+
+```
 
 
 
@@ -142,8 +147,8 @@ DispatcherServlet용은 스프링 MVC 프런트 컨트롤러의 구성 컴포넌
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MzU3NTg0NCw1NzgzNDIyNiwtNjg1MT
-Y3NzAzLDczNTAzMzQ1MCwxODE1NzA1NzI2LC0zMzU0MDYzNTUs
-LTk0OTc4MTg3NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNz
-EyMzU4MV19
+eyJoaXN0b3J5IjpbNjc5MTgyNjkxLDU3ODM0MjI2LC02ODUxNj
+c3MDMsNzM1MDMzNDUwLDE4MTU3MDU3MjYsLTMzNTQwNjM1NSwt
+OTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MT
+IzNTgxXX0=
 -->
