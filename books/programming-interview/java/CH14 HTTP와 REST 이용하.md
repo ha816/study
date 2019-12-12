@@ -9,10 +9,9 @@ HTTP 프로토콜을 사용하여 원하는 정보를 요청한다. 아주 간�
 ```
 GET / HTTP/1.1
 ```
-`GET / HTTP/1.1` 의 의미는 순서대로 Get메서드를 이용해서 '/' 페이지를 얻고 '1.1'버전의 HTTP을 사용한다라는 의미이다. 
+위 요청은 Get메서드를 이용해서 '/' 페이지를 얻고 '1.1'버전의 HTTP을 사용한다라는 의미다. 
 
 ## HTTP 응답
-HTTP 응답은 아래와 같다. 응답의 경우 크게 헤더와 컨텐츠로 나누어진다. 
 ```
 HTTP/1.0 200 OK
 Server: Apache
@@ -25,7 +24,7 @@ Content-Type: text/html; charset=utf-8
 CONTENT
 </html>
 ```
-첫번째 행 `HTTP/1.0 200 OK`은 1.0버전의 HTTP 프로토콜로 클라이언트에 성공적인 응답인 200 OK 결과를 보낸다.
+응답의 경우 크게 헤더와 컨텐츠로 나누어진다. 첫번째 행 `HTTP/1.0 200 OK`은 1.0버전의 HTTP 프로토콜로 클라이언트에 성공적인 응답인 200 OK 결과를 보낸다.
 두번째 행 부터는 응답 관련 메타 정보인 응답 헤더들이다. 
 Content-Type 헤더로는 html 뿐만 다양한 컨텐츠가 가능하다. 예를 들면 순수한 텍스트나 바이너리 데이터도 된다. 
 
@@ -84,6 +83,6 @@ REST는 리소스에 기반을 두기 때문에 리소스 기반 아키텍처(Re
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NTQ2ODQzMSwxNDA2MTI3NTY3LC0xOT
-k4OTUxNjI2XX0=
+eyJoaXN0b3J5IjpbLTEwOTMzOTEwNzMsMTQwNjEyNzU2NywtMT
+k5ODk1MTYyNl19
 -->
