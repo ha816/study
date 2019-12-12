@@ -124,12 +124,14 @@
 
 스프링 MVC는 두 가지 애플리케이션 컨텍스트를 사용한다
 
-* 앱 애플리케이션용 애플리케이션 컨텍스트
+* 앱 애플리케이션용 애플리케이션 컨텍스트(Root 애플리케이션 컨텍스트)
 * DispatcherServlet용 애플리케이션 컨텍스트
 
 앱 애플리케이션용은 전체를 통틀어 하나, DispatcherServlet용은 Servlet마다 인스턴스가 생성 된다. 
 
-웹 애플리케이션용에는 전체에서 사용하는 컴포넌트(Serice, Repository, DateSource, ORM)등의 빈을 등록한다. 기본적으로 스프링 MVC용 컴포넌트는
+웹 애플리케이션용에는 전체에서 사용하는 컴포넌트(Serice, Repository, DateSource, ORM)등의 빈을 등록한다. 기본적으로 스프링 MVC용 컴포넌트는 여기 등록하지 않는다. 
+
+DispatcherServlet용은 스프링 MVC 프런트 컨트롤러의 구성 컴포넌트(HandlerMapping, HandlerAdapter, ViewResolver)와 컨트롤러의 빈을 등로한다. 
 
 
 
@@ -140,7 +142,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MTE1ODM3MSw1NzgzNDIyNiwtNjg1MT
+eyJoaXN0b3J5IjpbMTQ5MzU3NTg0NCw1NzgzNDIyNiwtNjg1MT
 Y3NzAzLDczNTAzMzQ1MCwxODE1NzA1NzI2LC0zMzU0MDYzNTUs
 LTk0OTc4MTg3NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNz
 EyMzU4MV19
