@@ -30,10 +30,12 @@
 
 스프링 MVC는 프론트 컨트롤러 패턴(front controller)라는 아키텍처를 채택하고 있다. 프런트 컨트롤러 패턴은 클라이언트 요청을 프런트 컨트롤러 컴포넌트가 받아 요청 내용에 따라 수행하는 핸들러를 선택하는 아키텍처다. 
 
+![enter image description here](https://www.tutorialspoint.com/design_pattern/images/frontcontroller_pattern_uml_diagram.jpg)
 
+이 프론트 컨트롤러 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NTM1NzI0LC05NDk3ODE4NzcsMTgzNz
-k3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1ODFdfQ==
+eyJoaXN0b3J5IjpbMTMyODcwMjAxOSwtOTQ5NzgxODc3LDE4Mz
+c5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MTIzNTgxXX0=
 -->
