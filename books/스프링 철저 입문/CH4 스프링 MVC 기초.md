@@ -122,6 +122,13 @@
 
 ### 애플리케이션 컨텍스트 구성 
 
+스프링 MVC는 두 가지 애플리케이션 컨텍스트를 사용한다
+
+* 앱 애플리케이션용 애플리케이션 컨텍스트
+* DispatcherServlet용 애플리케이션 컨텍스트
+
+앱 애플리케이션용은 전체를 통틀어 하나, 
+
 
 
 
@@ -131,7 +138,8 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc4MzQyMjYsLTY4NTE2NzcwMyw3MzUwMz
-M0NTAsMTgxNTcwNTcyNiwtMzM1NDA2MzU1LC05NDk3ODE4Nzcs
-MTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1ODFdfQ==
+eyJoaXN0b3J5IjpbNjgwNDE2ODE3LDU3ODM0MjI2LC02ODUxNj
+c3MDMsNzM1MDMzNDUwLDE4MTU3MDU3MjYsLTMzNTQwNjM1NSwt
+OTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MT
+IzNTgxXX0=
 -->
