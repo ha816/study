@@ -73,11 +73,18 @@
 
 핸들러 객체가 하는 일은 받은 요청에 따라 필요한 처리를 수행하는 것이다. 용어가 헷갈릴수 있는 데 짚고 가자면, 프레임 워크 관점에서는 핸들러라 부르지만 개발자가 작성하는 클래스의 관점에서는 컨트롤러라고 부른다. 
 
+핸들러는 @Controller 애너테이션을 클래스에 지정하고 요청 처리를 수행하는 메서드에 @RequestMapping을 지정하면 만들 수 있다. 
+
+### HandlerMapping 인터페이스
+
+요
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNTgyOTY2OSwxODE1NzA1NzI2LC0zMz
-U0MDYzNTUsLTk0OTc4MTg3NywxODM3OTc4ODAzLDEzMjk0MzMy
-MzIsLTIwNzEyMzU4MV19
+eyJoaXN0b3J5IjpbLTE5MzczNDE4MzcsMTgxNTcwNTcyNiwtMz
+M1NDA2MzU1LC05NDk3ODE4NzcsMTgzNzk3ODgwMywxMzI5NDMz
+MjMyLC0yMDcxMjM1ODFdfQ==
 -->
