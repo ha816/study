@@ -105,6 +105,8 @@
 |클래스명  | 설명|
 |--|--|
 |InternalResourceViewResolver  | View가 JSP일때 사용하는 기본적인 ViewResolver |
+|BeanNameViewResolver  | DI 컨테이너에 등록 |
+
 
 
 
@@ -116,7 +118,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MzY5MjI2OCwtNjg1MTY3NzAzLDczNT
-AzMzQ1MCwxODE1NzA1NzI2LC0zMzU0MDYzNTUsLTk0OTc4MTg3
-NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNzEyMzU4MV19
+eyJoaXN0b3J5IjpbOTEzMzg1MDAzLC02ODUxNjc3MDMsNzM1MD
+MzNDUwLDE4MTU3MDU3MjYsLTMzNTQwNjM1NSwtOTQ5NzgxODc3
+LDE4Mzc5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MTIzNTgxXX0=
 -->
