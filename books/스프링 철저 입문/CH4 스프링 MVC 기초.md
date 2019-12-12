@@ -65,8 +65,8 @@
 |LocalResolver, LocaleContextResolver  |클라이언트의 로컬 정보를 확인하기 위한 인터페이스, 기본적으로 적용 되어있다. |
 |ThemeResolver  |클라이언트의 테마를 결정하기 위한 인터페이스|
 |FlashMapManager|FlashMap이란 객체를 관리하기 위한 인터페이스. FlashMap은 PRG 패턴의 Redirect와 Get사이에 모델을 공유하기 위한 Map객체다.|
-|RequestToViewNameTranslator|
-|RequestToViewNameTranslator|
+|RequestToViewNameTranslator|핸들러가 뷰이름과 뷰를 제공하지 않는 경우 뷰이름을 해결하기 위한 인터페이스|
+|HandlerInterceptor|핸들러 실행 전후에 공통 처리를 구현하기 위한 인터페이스|
 |RequestToViewNameTranslator|
 
 
@@ -81,7 +81,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk3ODc4Mzk5LDE4MTU3MDU3MjYsLTMzNT
+eyJoaXN0b3J5IjpbMjQ4MDQ3MzcxLDE4MTU3MDU3MjYsLTMzNT
 QwNjM1NSwtOTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIz
 MiwtMjA3MTIzNTgxXX0=
 -->
