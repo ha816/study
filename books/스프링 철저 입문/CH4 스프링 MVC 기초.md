@@ -57,13 +57,21 @@
 
 ### DispatcherServlet
 
-프런트 컨트롤러이자 기본적인 처리 흐름을 제어하는 사령탑 역할을 한다. 
+프런트 컨트롤러이자 기본적인 처리 흐름을 제어하는 사령탑 역할을 한다. 그림에서는 표현되지 않았지만 아래와 같은 인터페이스와도 연동되어 프레임워크 전체 기능을 수행한다. 
+
+|인터페이스명|역할|
+|--|--|
+|  |  |
+
+
+
+### Handler
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNzU1NTMwMywtMzM1NDA2MzU1LC05ND
+eyJoaXN0b3J5IjpbMTgxNTcwNTcyNiwtMzM1NDA2MzU1LC05ND
 k3ODE4NzcsMTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1
 ODFdfQ==
 -->
