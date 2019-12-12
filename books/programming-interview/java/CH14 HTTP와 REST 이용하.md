@@ -4,11 +4,10 @@
 
 HTTP(Hyper Text Transfer Protocol)는 인터넷을 통해 데이터를 주고 받는데 하나의 프로토콜이다. HTTP는 월드와이드웹(WWW)을 통해 소통하는데 주로 사용된다. 
 
-탐캣과 같은 HTTP 서버는 요청을 체계적으로 처리하여 적절한 응답을 한다. 
-
 ## HTTP 요청
 
-HTTP 요청은 아래와 같다.
+HTTP 프로토콜을 사용하여 
+
 ```
 GET / HTTP/1.1
 ```
@@ -77,5 +76,5 @@ REST 서비스의 중요한 기능하나는 또 멱등성의 개념인데 REST�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTg5NTE2MjZdfQ==
+eyJoaXN0b3J5IjpbLTk4MjUxMTc1NCwtMTk5ODk1MTYyNl19
 -->
