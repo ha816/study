@@ -95,9 +95,11 @@
 |인터페이스명| 역할|
 |--|--|
 |HandlerMethodArgumentResolver  | 핸들러 메서드 매개변수에 전달하는 값을 다루는 인터페이스|
-|HandlerMethodReturnValueHandler  | 핸들러 메서드 매개변수에 전달하는 값을 다루는 인터페이스|
+|HandlerMethodReturnValueHandler  | 핸들러 메서드에 반한된 값을 처리하기 위한 인터페이스|
 
+## ViewResolver
 
+핸들러에서 반환한 뷰 이름을 보고, 이후
 
 
 
@@ -108,8 +110,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzg5MjQ4OTMsLTY4NTE2NzcwMyw3Mz
-UwMzM0NTAsMTgxNTcwNTcyNiwtMzM1NDA2MzU1LC05NDk3ODE4
-NzcsMTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1ODFdfQ
-==
+eyJoaXN0b3J5IjpbMTIyNzQwMjU1OCwtNjg1MTY3NzAzLDczNT
+AzMzQ1MCwxODE1NzA1NzI2LC0zMzU0MDYzNTUsLTk0OTc4MTg3
+NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNzEyMzU4MV19
 -->
