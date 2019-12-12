@@ -64,6 +64,12 @@
 |HandlerExceptionReolver  |예외처리를 위한 인터페이스, 스프링 MVC가 제공하는 기본 구현 클래스가 적용되어 있다.  |
 |LocalResolver, LocaleContextResolver  |클라이언트의 로컬 정보를 확인하기 위한 인터페이스, 기본적으로 적용 되어있다. |
 |ThemeResolver  |클라이언트의 테마를 결정하기 위한 인터페이스|
+|FlashMapManager|FlashMap이란 객체를 관리하기 위한 인터페이스. FlashMap은 PRG 패턴의 Redirect와 Get사이에 모델을 공유하기 위한 Map객체다.|
+|RequestToViewNameTranslator|
+|RequestToViewNameTranslator|
+|RequestToViewNameTranslator|
+
+
 
 
 
@@ -75,7 +81,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4MTE1Nzc2LDE4MTU3MDU3MjYsLTMzNT
+eyJoaXN0b3J5IjpbMzk3ODc4Mzk5LDE4MTU3MDU3MjYsLTMzNT
 QwNjM1NSwtOTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIz
 MiwtMjA3MTIzNTgxXX0=
 -->
