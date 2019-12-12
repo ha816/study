@@ -143,6 +143,11 @@ Dispatcher Servlet		Dispatcher Servlet
 (Rest API용)				(UI용)
 ```
 
+DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서로간의 빈은 참조할 수 없다. 
+
+### 애플리케이션 컨텍스트의 라이프 사이클
+
+초기화 : 
 
 
 
@@ -152,8 +157,8 @@ Dispatcher Servlet		Dispatcher Servlet
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTEzODUxMjUsNjI3MDU5Mjg1LDU3OD
-M0MjI2LC02ODUxNjc3MDMsNzM1MDMzNDUwLDE4MTU3MDU3MjYs
-LTMzNTQwNjM1NSwtOTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOT
-QzMzIzMiwtMjA3MTIzNTgxXX0=
+eyJoaXN0b3J5IjpbMTc1ODIzMTQ4OCw2MjcwNTkyODUsNTc4Mz
+QyMjYsLTY4NTE2NzcwMyw3MzUwMzM0NTAsMTgxNTcwNTcyNiwt
+MzM1NDA2MzU1LC05NDk3ODE4NzcsMTgzNzk3ODgwMywxMzI5ND
+MzMjMyLC0yMDcxMjM1ODFdfQ==
 -->
