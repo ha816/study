@@ -118,7 +118,9 @@
 
 ## 스프링 DI 컨테이너와 연계
 
-스프링은 기본적으로 DI  컨테이너에서 관리하는 빈 객체를 통해 요청을 처리하는 구조이다. 스프링 MVC가 
+스프링은 기본적으로 DI  컨테이너에서 관리하는 빈 객체를 통해 요청을 처리하는 구조이다. 스프링 MVC가 어떻게 DI 컨테이너와 연계하는지 알아봐도록 하자.
+
+### 애플리케이션 컨텍스트 구성 
 
 
 
@@ -129,7 +131,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMTM3NDUzOCwtNjg1MTY3NzAzLDczNT
-AzMzQ1MCwxODE1NzA1NzI2LC0zMzU0MDYzNTUsLTk0OTc4MTg3
-NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNzEyMzU4MV19
+eyJoaXN0b3J5IjpbNTc4MzQyMjYsLTY4NTE2NzcwMyw3MzUwMz
+M0NTAsMTgxNTcwNTcyNiwtMzM1NDA2MzU1LC05NDk3ODE4Nzcs
+MTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1ODFdfQ==
 -->
