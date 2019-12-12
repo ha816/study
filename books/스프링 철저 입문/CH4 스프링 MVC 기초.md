@@ -53,14 +53,17 @@
 6. 마지막으로 서블릿은 클라이언트에 응답을 반환한다. 
 
 흐름을 보면 알겠지만, 처리 내용 대부분이 인터페이스를 통해 실행되고 이는 프레임워크의 기능을 확장하기 쉽게 한다. 
+이제 프론트 컨트롤러를 구성하는 컴포넌트에 대해 알아보자.
 
+### DispatcherServlet
 
+프런트 컨트롤러이자 기본적인 처리 흐름을 제어하는 사령탑 역할을 한다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjM0NzcyMzEsLTMzNTQwNjM1NSwtOT
-Q5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MTIz
-NTgxXX0=
+eyJoaXN0b3J5IjpbMTAxNzU1NTMwMywtMzM1NDA2MzU1LC05ND
+k3ODE4NzcsMTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1
+ODFdfQ==
 -->
