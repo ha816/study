@@ -34,12 +34,18 @@
 
 이 프론트 컨트롤러 패턴은 공통적인 처리를 하는 프런트 컨트롤러에서 통합 할 수 있어 핸들러에서 처리하는 내용을 줄일 수 있다. 스프링에서는 아래와 같은 기능을 프론트 컨트롤러가 대행하고 있다. 
 
-* 클라이언트의 요청 접수
+* 클라이언트의 요청 접수, 요청 결과 응답
 * 요청 데이터를 자바 객체로 변환
 * 입력값 검사(Bean Validation)
+* 핸들러 호출
+* 뷰 선택
+* 예외처리
+
+스프링의 MVC 프론트 컨트롤러는 DispatcherServelet 클래스로 구현한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNTQwNjM1NSwtOTQ5NzgxODc3LDE4Mz
-c5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MTIzNTgxXX0=
+eyJoaXN0b3J5IjpbMjA4ODc0MTk2OSwtMzM1NDA2MzU1LC05ND
+k3ODE4NzcsMTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1
+ODFdfQ==
 -->
