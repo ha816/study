@@ -47,14 +47,14 @@
 
 1. Servlet은 Handler Mapping 인터페이스의 getHandler 메서드를 호출해서 실제 요청을 처리하는 Handler 객체(컨트롤러)를 가져온다. 
 2. Servlet은 HandlerAdapter 인터페이스의 handle 메서드를 호출해서 Handler(컨트롤러) 객체의 메서드 호출을 의뢰한다.
-3. HandlerAdapter 인터페이스의 구현 클래스는 Handler 객체에 구현된 메서드로 요청 처리를 한다.
+3. HandlerAdapter 인터페이스의 구현 클래스인 Handler객체(컨트롤러)에 구현된 메서드로 요청 처리를 한다.
 4. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MTkyOTk3MiwtMzM1NDA2MzU1LC05ND
+eyJoaXN0b3J5IjpbMTQwMjAxMTMxMSwtMzM1NDA2MzU1LC05ND
 k3ODE4NzcsMTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1
 ODFdfQ==
 -->
