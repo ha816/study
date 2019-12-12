@@ -26,12 +26,14 @@
 * 엔터프라이즈 애플리케이션에 필요한 기능 제공
 * 서드파티 라이브러리와의 연계 지원
 
-## 프로젝트 생성
+## 스프링의 아키텍처
+
+스프링 MVC는 프론트 컨트롤러 패턴(front controller)라는 아키텍처를 채택하고 있다. 프런트 컨트롤러 패턴은 클라이언트 요청을 프런트 컨트롤러 컴포넌트가 받아 요청 내용에 따라 수행하는 핸들러를 선택하는 아키텍처다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0OTc4MTg3NywxODM3OTc4ODAzLDEzMj
-k0MzMyMzIsLTIwNzEyMzU4MV19
+eyJoaXN0b3J5IjpbLTY1NTM1NzI0LC05NDk3ODE4NzcsMTgzNz
+k3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1ODFdfQ==
 -->
