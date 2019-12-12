@@ -113,7 +113,7 @@
 |클래스명  | 설명|
 |--|--|
 |InternalResourceView| 템플릿 엔진으로 JSP를 사용하는 클래스 |
-|Jstl  | DI 컨테이너에 등록된 빈 형태로 뷰객체를 가져온다. |
+|JstlView  | 템플릿 엔진으로 JSP+JSTL을 사용하는 클래스|
 
 
 
@@ -126,7 +126,8 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTY0MzQwMCwtNjg1MTY3NzAzLDczNT
-AzMzQ1MCwxODE1NzA1NzI2LC0zMzU0MDYzNTUsLTk0OTc4MTg3
-NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNzEyMzU4MV19
+eyJoaXN0b3J5IjpbLTEwMTQ2NjM2NDUsLTY4NTE2NzcwMyw3Mz
+UwMzM0NTAsMTgxNTcwNTcyNiwtMzM1NDA2MzU1LC05NDk3ODE4
+NzcsMTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1ODFdfQ
+==
 -->
