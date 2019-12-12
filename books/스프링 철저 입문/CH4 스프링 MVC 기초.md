@@ -105,7 +105,15 @@
 |클래스명  | 설명|
 |--|--|
 |InternalResourceViewResolver  | View가 JSP일때 사용하는 기본적인 ViewResolver |
-|BeanNameViewResolver  | DI 컨테이너에 등록 |
+|BeanNameViewResolver  | DI 컨테이너에 등록된 빈 형태로 뷰객체를 가져온다. |
+
+## View
+
+클라이언트에 반환하는 응답 데이터를 생성하는 역할을 한다. 스프링에서 다양한 구현 클래스를 제공하는데 몇가지만 소개한다. 
+|클래스명  | 설명|
+|--|--|
+|InternalResourceView| 템플릿 엔진으로 JSP를 사용하는 클래스 |
+|Jstl  | DI 컨테이너에 등록된 빈 형태로 뷰객체를 가져온다. |
 
 
 
@@ -118,7 +126,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEzMzg1MDAzLC02ODUxNjc3MDMsNzM1MD
-MzNDUwLDE4MTU3MDU3MjYsLTMzNTQwNjM1NSwtOTQ5NzgxODc3
-LDE4Mzc5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MTIzNTgxXX0=
+eyJoaXN0b3J5IjpbLTU3NTY0MzQwMCwtNjg1MTY3NzAzLDczNT
+AzMzQ1MCwxODE1NzA1NzI2LC0zMzU0MDYzNTUsLTk0OTc4MTg3
+NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNzEyMzU4MV19
 -->
