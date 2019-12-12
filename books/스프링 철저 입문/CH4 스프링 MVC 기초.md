@@ -61,7 +61,11 @@
 
 |인터페이스명|역할|
 |--|--|
-|  |  |
+|HandlerExceptionReolver  |예외처리를 위한 인터페이스, 스프링 MVC가 제공하는 기본 구현 클래스가 적용되어 있다.  |
+|LocalResolver, LocaleContextResolver  |클라이언트의 로컬 정보를 확인하기 위한 인터페이스, 기본적으로 적용 되어있다. |
+|ㅆ  |예외처리를 위한 인터페이스, 스프링 MVC가 제공하는 기본 구현 클래스가 적용되어 있다.  |
+
+
 
 
 
@@ -71,7 +75,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNTcwNTcyNiwtMzM1NDA2MzU1LC05ND
-k3ODE4NzcsMTgzNzk3ODgwMywxMzI5NDMzMjMyLC0yMDcxMjM1
-ODFdfQ==
+eyJoaXN0b3J5IjpbLTE5MTA0MDg0MTksMTgxNTcwNTcyNiwtMz
+M1NDA2MzU1LC05NDk3ODE4NzcsMTgzNzk3ODgwMywxMzI5NDMz
+MjMyLC0yMDcxMjM1ODFdfQ==
 -->
