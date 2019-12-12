@@ -41,13 +41,15 @@
 * 뷰 선택
 * 예외처리
 
-스프링의 MVC 프론트 컨트롤러는 DispatcherServelet 클래스로 구현한다. dlfq
+스프링의 MVC 프론트 컨트롤러는 DispatcherServelet 클래스로 구현한다. 그리고 일반적인 처리 흐름은 아래와 같다. 
 
+![enter image description here](https://howtodoinjava.com/wp-content/uploads/2015/02/Spring-dispatcher-servlet.png)
 
+Servlet은 Handler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzE3MTM5MjYsLTMzNTQwNjM1NSwtOT
-Q5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MTIz
-NTgxXX0=
+eyJoaXN0b3J5IjpbOTgzMzQxODk2LC0zMzU0MDYzNTUsLTk0OT
+c4MTg3NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNzEyMzU4
+MV19
 -->
