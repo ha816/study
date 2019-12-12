@@ -127,7 +127,9 @@
 * 앱 애플리케이션용 애플리케이션 컨텍스트
 * DispatcherServlet용 애플리케이션 컨텍스트
 
-앱 애플리케이션용은 전체를 통틀어 하나, 
+앱 애플리케이션용은 전체를 통틀어 하나, DispatcherServlet용은 Servlet마다 인스턴스가 생성 된다. 
+
+웹 애플리케이션용에는 전체에서 사용하는 컴포넌트(Serice, Repository, DateSource, ORM)등의 빈을 등록한다. 기본적으로 스프링 MVC용 컴포넌트는
 
 
 
@@ -138,8 +140,8 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgwNDE2ODE3LDU3ODM0MjI2LC02ODUxNj
-c3MDMsNzM1MDMzNDUwLDE4MTU3MDU3MjYsLTMzNTQwNjM1NSwt
-OTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MT
-IzNTgxXX0=
+eyJoaXN0b3J5IjpbMTc4MTE1ODM3MSw1NzgzNDIyNiwtNjg1MT
+Y3NzAzLDczNTAzMzQ1MCwxODE1NzA1NzI2LC0zMzU0MDYzNTUs
+LTk0OTc4MTg3NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNz
+EyMzU4MV19
 -->
