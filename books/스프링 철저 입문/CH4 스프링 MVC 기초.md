@@ -88,7 +88,11 @@
 
 ### HandlerAdapter
 
-핸들러 메서드를 호출하는 역할을 한다. 앞서 RequestMappingHandlerMapping에서 선택되어 가져온 핸들러 메서드를 호출할 때는 RequestMappingHandlerAdapter 클래스를 사용한다.  RequestMappingHandlerAdapter클래스에는 핸들러 메서드에 매개변수를 전달하고 메서드의 처리결
+핸들러 메서드를 호출하는 역할을 한다. 앞서 RequestMappingHandlerMapping에서 선택되어 가져온 핸들러 메서드를 호출할 때는 RequestMappingHandlerAdapter 클래스를 사용한다.  RequestMappingHandlerAdapter클래스에는 핸들러 메서드에 매개변수를 전달하고 메서드의 처리결과를 반환 값으로 돌려 보내는 것과 같은 스프링의 상당히 중요한 역할을 담당한다. 핸들러 메서드에 매개변수를 전달할때는 요청 받은 데이터를 자바 객체로 변환하고, 입력값이 올바른지 검사(Bean Validation)하는 것 까지 한꺼번에 이뤄진다. 
+
+파라미터나 
+
+
 
 
 
@@ -97,7 +101,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MjE5Mjg0OSwtNjg1MTY3NzAzLDczNT
+eyJoaXN0b3J5IjpbLTgzODAwMjkyMywtNjg1MTY3NzAzLDczNT
 AzMzQ1MCwxODE1NzA1NzI2LC0zMzU0MDYzNTUsLTk0OTc4MTg3
 NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNzEyMzU4MV19
 -->
