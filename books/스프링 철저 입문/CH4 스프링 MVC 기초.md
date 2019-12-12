@@ -67,21 +67,16 @@
 |FlashMapManager|FlashMap이란 객체를 관리하기 위한 인터페이스. FlashMap은 PRG 패턴의 Redirect와 Get사이에 모델을 공유하기 위한 Map객체다.|
 |RequestToViewNameTranslator|핸들러가 뷰이름과 뷰를 제공하지 않는 경우 뷰이름을 해결하기 위한 인터페이스|
 |HandlerInterceptor|핸들러 실행 전후에 공통 처리를 구현하기 위한 인터페이스|
-|RequestToViewNameTranslator|
+|MultipartResolver|멀티파트 요청 처리를 위한 인터페이스, 예외적으로 기본 적용이 되어 있지 않다.|
 
+### Handler(Controller)
 
-
-
-
-
-
-### Handler
-
+핸들러 객체가 하는 일은 받은 요청에 따라 필요한 처리를 수행하는 것이다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ4MDQ3MzcxLDE4MTU3MDU3MjYsLTMzNT
-QwNjM1NSwtOTQ5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIz
-MiwtMjA3MTIzNTgxXX0=
+eyJoaXN0b3J5IjpbMTQxMDk2NjUwNywxODE1NzA1NzI2LC0zMz
+U0MDYzNTUsLTk0OTc4MTg3NywxODM3OTc4ODAzLDEzMjk0MzMy
+MzIsLTIwNzEyMzU4MV19
 -->
