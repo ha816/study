@@ -49,13 +49,14 @@
 2. Servlet은 HandlerAdapter 인터페이스의 handle 메서드를 호출해서 Handler(컨트롤러) 객체의 메서드 호출을 의뢰한다.
 3. HandlerAdapter 인터페이스의 구현 클래스인 Handler객체(컨트롤러)에 구현된 메서드로 요청 처리를 한다.
 4. 서블릿은 ViewResolver 인터페이스의 resolveViewName 메서드를 호출해서 Handler 객체에서 반환된 뷰 이름에 대응하느 View 인터페이스 객체를 가져온다.
-5. 서블릿은 View 인터
+5. 서블릿은 View 인터페이스의 render 메서드를 호출해서 응답 데이터에 대한 렌더링을 요청한다. View인터페이스의 구현 클래스는 JSP와 같은 렌더링 데이터를 생성한다.
+6. 마지막으로 서블릿은 클라이언트에 응답을 반
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDA3ODE5NzgsLTMzNTQwNjM1NSwtOT
-Q5NzgxODc3LDE4Mzc5Nzg4MDMsMTMyOTQzMzIzMiwtMjA3MTIz
-NTgxXX0=
+eyJoaXN0b3J5IjpbOTM5NTE0ODIwLC0zMzU0MDYzNTUsLTk0OT
+c4MTg3NywxODM3OTc4ODAzLDEzMjk0MzMyMzIsLTIwNzEyMzU4
+MV19
 -->
