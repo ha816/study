@@ -79,7 +79,7 @@
 
 요청에 대응할 핸드러를 선택하는 역할을 담당한다. 구현 클래스로는 RequestMappingHandlerMapping 클래스로 @RequestMapping 애너테이션에 정의된 정보로 실행할 핸들러를 선택한다. 
 
-핸들러로 인식된 메서드
+@RequestMapping 애너테이션이 붙은 메서드는 핸들러 메서드로 
 
 
 
@@ -88,7 +88,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NTM1OTcyNyw3MzUwMzM0NTAsMTgxNT
-cwNTcyNiwtMzM1NDA2MzU1LC05NDk3ODE4NzcsMTgzNzk3ODgw
-MywxMzI5NDMzMjMyLC0yMDcxMjM1ODFdfQ==
+eyJoaXN0b3J5IjpbLTExMzI1MzMzNTIsNzM1MDMzNDUwLDE4MT
+U3MDU3MjYsLTMzNTQwNjM1NSwtOTQ5NzgxODc3LDE4Mzc5Nzg4
+MDMsMTMyOTQzMzIzMiwtMjA3MTIzNTgxXX0=
 -->
