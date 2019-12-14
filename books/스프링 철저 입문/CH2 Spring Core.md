@@ -18,9 +18,9 @@ UserService service = context.getBean(UserService.class);
 ```
 이렇게 DI 컨테이너를 통해 각 컴포넌트의 인스턴스를 생성하고 통합 관리하면서 얻을 수 있는 장점은 컴포넌트간의 의존성 해결 뿐만이아니다. 어떤 컴포넌트는 싱글턴 객체로 만들어야 하고 어떤 컴포넌트는 매번 필요할때마다 새 인스턴스를 사용하도록 프로토 타입(prototype) 객체를 만들어야 한다. 이러한 인스턴스의 스코프 관리를 DI컨테이너가 대신한다. 심지어 각 인스턴스가 필요로 하는 공통 처리 코드를 외부에서 자동으로 끼워넣는 AOP 기능도 DI 컨테이너가 한다. 
 
-### DI 개요
+## DI 개요
 
-DI는 의존섭 주인, Ioc(Inverse of Control)이라 하는 디자인 패턴 중에 하나다.  Ioc는 인스턴스를 제어하는 주도권이 역전된다는 의미인데 컴포넌트를 구성하는 인스턴스의 생성과 의존관계를 해당 소크가 아닌 DI 컨테이너가 대신해주기 때문이다. 
+DI는 의존성 주입, **IoC(Inverse of Control)** 이라 하는 디자인 패턴 중에 하나다.  Ioc는 인스턴스를 제어하는 주도권이 역전된다는 의미인데 컴포넌트를 구성하는 인스턴스의 생성과 의존관계를 해당 소크가 아닌 DI 컨테이너가 대신해주기 때문이다. 
 
 DI 컨테이너에서 인스턴스를 관리하는 방식으로 하면 아래와 같은 장점이 있다. 
 * 인스턴스의 스코프를 관리할 수 있다.
@@ -103,5 +103,5 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE0NjU4MDAzLC0xOTI1MTUwNzI3XX0=
+eyJoaXN0b3J5IjpbLTMxMDM2Nzg1OSwtMTkyNTE1MDcyN119
 -->
