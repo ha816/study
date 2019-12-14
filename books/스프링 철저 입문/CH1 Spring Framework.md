@@ -57,19 +57,13 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 
 ## 빈을 담는 그릇, 컨테이너
+빈팩토리; 가장 단순한 컨테이너
+객체들의 삶의 터전인 스프링 컨테이너, 객체 생성 및 객체가 의존성 생성, 생명주기 관리
 
-객체들의 삶의 터전인 스프링 컨테이너,
-객체 생성 및 객체가 의존성 생성, 생명주기 관리 
-스프링의 컨테이너는 크게 두가지로 분류된다. 
-1. 빈팩토리; 가장 단순한 컨테이너
-2. 애플리케이션 컨텍스트; 빈팩토리를 확장해 프로퍼티 파일에 설정을 읽고 이벤트 리스너에 대한 이벤트 발행 같은 애플리케이션 프레임워크 서비를 제공
 
-### 또 하나의 컨테이너, 애플리케이션 컨텍스트
+## 또 하나의 컨테이너, 애플리케이션 컨텍스트
 
-AnnotaionConfingApplicationContext
-AnnotaionConfingWebApplicationContext
-ClassPathXmlApplicationContext
-FileSystemXmlApplicationContext
+2. 애플리케이션 컨텍스트; 빈팩토리를 확장해 프로퍼티 파일에 설정을 읽고 이벤트 리스너에 대한 이벤트 발행 같은 서비스를 제공
 
 ### 빈의 일생 
 
@@ -114,5 +108,5 @@ FileSystemXmlApplicationContext
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA4MTk3NTQyLC05NzI2Mjk1OF19
+eyJoaXN0b3J5IjpbLTIxMzA0MjAxMjcsLTk3MjYyOTU4XX0=
 -->
