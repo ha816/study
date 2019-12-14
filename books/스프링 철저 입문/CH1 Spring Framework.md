@@ -2,7 +2,7 @@
 
 > Spring Framework란 무엇인가요?
 
-규모가 있는 엔터프라이즈급 애플리케이션을 개발하는데 유용한 자바기반의 오프소스 프레임워크입니다. 스프링 프레임워크의 핵심은 DI(Dependency Injection), AOP(Aspect Oriendted Programming), 그리고 상투적 코드의 축소를 통해 개발의 효율성을 높이고자 합니다. 그 밖에 
+규모가 있는 엔터프라이즈급 애플리케이션을 개발하는데 유용한 자바기반의 오프소스 프레임워크입니다. 스프링 프레임워크의 핵심은 DI(Dependency Injection), AOP(Aspect Oriendted Programming)이라고 합니다. 스프링 프레임 워크는 이 뿐만 아니라 추상화를 통해 다양한 라이브러리와 
 
 하지만 스프링을 넘어서 웹서비스, REST, 모바일 그리고  NoSQL영역으로 스프링을 확장하여 코어 프레임워크를 구축하려는 큰 생태계가 존재 
 
@@ -94,6 +94,6 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzODg0MSwtMjEzMDQyMDEyNywtOTcyNj
-I5NThdfQ==
+eyJoaXN0b3J5IjpbMTg4MjYwODYxNCwtMjEzMDQyMDEyNywtOT
+cyNjI5NThdfQ==
 -->
