@@ -1,11 +1,8 @@
-# 스프링 프레임워크
+# Spring Core
 
+스프링 코어 중에서 가장 중요한 것은 **DI(dependency injection)** 과 **AOP(aspect oriented programming)** 이다.
 
-## 스프링 코어(DI, AOP)
-
-스프링 코어 중에서 가장 중요한 것은 DI(dependency injection)과 AOP(aspect oriented programming)이다.
-
-DI의 경우, 하나의 애플리케이션을 동작하기 위해 여러개의 컴포너느를 통합해서 사용한다. 이때 의존성 주입이라는 접근방식이 큰 힘을 발휘한다. 
+DI의 경우, 하나의 애플리케이션을 동작하기 위해 여러개의 컴포넌트를 통합해서 사용한다. 이때 의존성 주입이라는 접근방식이 큰 힘을 발휘한다. 
 
 일반적으로 특정 컴포넌트를 사용할때 한 클래스에서 구현 클래스를 직접 생성해서 할당하면 두 클래스간의 결합도가 높아진다. 
 
@@ -106,5 +103,5 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MDI5NDY1MywtMTkyNTE1MDcyN119
+eyJoaXN0b3J5IjpbODE0NjU4MDAzLC0xOTI1MTUwNzI3XX0=
 -->
