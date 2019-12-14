@@ -4,10 +4,12 @@
 
 규모가 있는 엔터프라이즈급 애플리케이션을 개발하는데 유용한 자바기반의 오프소스 프레임워크 입니다. 
 
-# 엔터프라이즈(Enterprise JavaBeans) 
+## 엔터프라이즈 자바(Enterprise JavaBeans) 
 
-### Java EE (Java Platform, Enterprise Edition)
-커뮤니티([JCP](https://www.jcp.org/), Java Community Process)에서 주도하는 엔터프라이즈 소프트웨어의 표준  
+> Java EE? EJB?
+
+Java EE는 커뮤니티([JCP](https://www.jcp.org/), Java Community Process)에서 주도하는 엔터프라이즈 소프트웨어의 표준을 말한다. 이런 Java EE 표준을 구현하기 위한 아키텍처가 바로 EJB이다.
+
 
 ### Java EE를 위한 서버사이드 컴포넌트 아키텍처  
 즉 Java EE 표준을 구현하기 위해 아키텍쳐
@@ -208,5 +210,5 @@ JNDI, 서블릿 그리고 포틀릿과 동작하는 코드의 단위 테스트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDE5NTA1NTIsLTk3MjYyOTU4XX0=
+eyJoaXN0b3J5IjpbNzE4NzkwNTgyLC05NzI2Mjk1OF19
 -->
