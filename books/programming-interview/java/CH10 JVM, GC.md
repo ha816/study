@@ -56,14 +56,14 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 ](https://www.cubrid.org/blog/understanding-java-garbage-collection)
 
 
-전통적인 알고리즘은 mark-and-sweep이다. Heap에 Old 제너레이션은 **mark-sweep-compact** 
+전통적인 GC는 Old 제너레이션에서  **mark-sweep-compact** 방법을 사용한다. 
 
 1.  The first step of this algorithm is to mark the surviving objects in the old generation.
 2.  Then, it checks the heap from the front and leaves only the surviving ones behind (sweep).
 3.  In the last step, it fills up the heap from the front with the objects so that the objects are piled up consecutively, and divides the heap into two parts: one with objects and one without objects (compact).
 
 
-자바 6에는 G1(Garbage First)라는 새로운 알고리즘이 투입되었다. 
+자바 1.6에는 G1(Garbage First)라는 새로운 알고리즘이 투입되었다. 
 
 If you want to understand G1 GC, forget everything you know about the young generation and the old generation. As you can see in the picture, one object is allocated to each grid, and then a GC is executed. Then, once one area is full, the objects are allocated to another area, and then a GC is executed. The steps where the data moves from the three spaces of the young generation to the old generation cannot be found in this GC type. This type was created to replace the CMS GC, which has causes a lot of issues and complaints in the long term.
 
@@ -86,9 +86,9 @@ I would like to note that I referred to a new book released in December 2011 cal
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MTEyMzMwOSwtMTcyNDk5NDM5NCwyMD
-E1NTA1NDc5LDc5MDk4NDQ2OSwtMTg4NDMwOTE4OSwtMjE4Mjk3
-MzU0LC0xMTM2NDc1NjIyLC05NzY2Mzk0NTAsLTc4Njg1MjU1My
-wxMzk1OTU1Mjg4LC0xNTU4ODYxMjg1LC0xNjY5Mjk4MDE5LC0x
-NDE5NzM5MjIxLDEyNjg2NjIxODhdfQ==
+eyJoaXN0b3J5IjpbOTQ1NDY4MTQzLC0xNzI0OTk0Mzk0LDIwMT
+U1MDU0NzksNzkwOTg0NDY5LC0xODg0MzA5MTg5LC0yMTgyOTcz
+NTQsLTExMzY0NzU2MjIsLTk3NjYzOTQ1MCwtNzg2ODUyNTUzLD
+EzOTU5NTUyODgsLTE1NTg4NjEyODUsLTE2NjkyOTgwMTksLTE0
+MTk3MzkyMjEsMTI2ODY2MjE4OF19
 -->
