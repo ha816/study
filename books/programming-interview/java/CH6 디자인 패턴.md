@@ -39,7 +39,7 @@ Decorator
 
 ## Stream 클래스
 
-JVM 외부 소스를 읽고 저장하는 자바의 기본 입.출력 클래스는 데커레이터 패턴을 사용한다. InputStream, OutputStream 클래스 그리고 하위 그 클래스는 구현 클래스에서 정의한 방법으로 데이터를 읽고 저장하는데 이를 상황에 따라 효율적으로 하기 위해서 함께 조합하여 사용한다. 
+JVM 외부 소스를 읽고 저장하는 자바의 기본 입.출력 클래스는 데커레이터 패턴을 사용한다. InputStream, OutputStream 클래스 그리고 그 하위 클래스는 구현 클래스에서 정의한 방법으로 데이터를 읽고 저장하는데 이를 상황에 따라 효율적으로 하기 위해서 조합하여 사용한다. 
 
 OutputStream은 클래스에서 구현한 메서드 대부분은 필요한 수행을 동작 후, 다른  OutputStream 클래스에 수행을 위임한다. 이 위임할 대상은 이미 OutputStream객체를 만들때 매개변수로 받는다.  
 
@@ -81,7 +81,7 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NjcxNjU4MywxMjIxNjc1MzI0LC0yMD
-M4MTQwOCwtNTY0MDgxNiwtMzc2Nzc4MTY3LC00MDc0OTgxNCwt
-MTExMTg1MTQ3OV19
+eyJoaXN0b3J5IjpbLTIzMjY0MzA2MywxNDk2NzE2NTgzLDEyMj
+E2NzUzMjQsLTIwMzgxNDA4LC01NjQwODE2LC0zNzY3NzgxNjcs
+LTQwNzQ5ODE0LC0xMTExODUxNDc5XX0=
 -->
