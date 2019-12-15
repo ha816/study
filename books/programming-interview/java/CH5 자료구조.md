@@ -71,7 +71,7 @@ HashMap 클래스는 해시 테이블을 자바로 구현한 것으로, 클래�
 
 hashCode는 두 객체의 메모리 주소가 완전히 같다면 같은 값을 반환해야  하지만 같은 hashCode값을 가진다고 해서 두 객체의 메모리 주소가 같은 것은 아니다. 
 
-### Hash Collision
+> Hash Collision? 해쉬 충돌이란?
 
 서로 다른 객체가 같은 해시 테이블 공간에 들어가는 상황을 해쉬 충돌이라고 한다. 
 
@@ -113,6 +113,7 @@ Set은 Collection 인터페이스를 확장한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzY5MTk3NzUsNjIwMTU1MDUsMTQ5OT
-A4MzAxOCwtMjI5MzcxMDMzLDE3Nzk2OTI5MjZdfQ==
+eyJoaXN0b3J5IjpbLTIwMjIxMzI5NzMsLTE2MzY5MTk3NzUsNj
+IwMTU1MDUsMTQ5OTA4MzAxOCwtMjI5MzcxMDMzLDE3Nzk2OTI5
+MjZdfQ==
 -->
