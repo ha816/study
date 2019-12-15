@@ -1,6 +1,5 @@
 # 배열
 
-배열의 특징
 * 배열은 정의할때 크기를 지정해야 한다. 
 * 배열에 특정 원소에 인덱스 값으로 접근하는 것을 랜덤 접근(Random Access)이라 하며 굉장히 빠르다. 
 * 배열 전체를 사용 중일때 원소를 추가하려면 더 큰 배열을 만들고 현재 배열에 있는 원소를 모두 복사하는 방식으로 새 배열을 만든다. 
@@ -112,7 +111,7 @@ Set은 Collection 인터페이스를 확장한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMxMjMyMjAxLC0yMDIyMTMyOTczLC0xNj
+eyJoaXN0b3J5IjpbMzkyMTYyNDAzLC0yMDIyMTMyOTczLC0xNj
 M2OTE5Nzc1LDYyMDE1NTA1LDE0OTkwODMwMTgsLTIyOTM3MTAz
 MywxNzc5NjkyOTI2XX0=
 -->
