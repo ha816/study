@@ -65,14 +65,14 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 자바 1.6에는 G1([Garbage First](https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html))라는 새로운 방법을 사용하게 되었다. 
 
-The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. But in JDK 6, this is called an  _early access_  and can be used only for a test. It is officially included in JDK 7. In my personal opinion, we need to go through a long test period (at least 1 year) before NHN can use JDK7 in actual services, so you probably should wait a while. Also, I heard a few times that a JVM crash occurred after applying the G1 in JDK 6. Please wait until it is more stable.
+The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDk5MjY0NzAsLTE1MDk4NzY3MjAsLT
-E4Mzg0NjMwNDUsLTE3MjQ5OTQzOTQsMjAxNTUwNTQ3OSw3OTA5
-ODQ0NjksLTE4ODQzMDkxODksLTIxODI5NzM1NCwtMTEzNjQ3NT
-YyMiwtOTc2NjM5NDUwLC03ODY4NTI1NTMsMTM5NTk1NTI4OCwt
-MTU1ODg2MTI4NSwtMTY2OTI5ODAxOSwtMTQxOTczOTIyMSwxMj
-Y4NjYyMTg4XX0=
+eyJoaXN0b3J5IjpbOTI5NjYxNDU1LC0xNTA5ODc2NzIwLC0xOD
+M4NDYzMDQ1LC0xNzI0OTk0Mzk0LDIwMTU1MDU0NzksNzkwOTg0
+NDY5LC0xODg0MzA5MTg5LC0yMTgyOTczNTQsLTExMzY0NzU2Mj
+IsLTk3NjYzOTQ1MCwtNzg2ODUyNTUzLDEzOTU5NTUyODgsLTE1
+NTg4NjEyODUsLTE2NjkyOTgwMTksLTE0MTk3MzkyMjEsMTI2OD
+Y2MjE4OF19
 -->
