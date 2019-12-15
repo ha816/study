@@ -14,8 +14,25 @@
 
 객체들의 관계를 트리 구조로 구성하며, 사용자가 단일 객체와 복합 객체 모두 동일하게 다루도록 한다.
 
-![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Composite_UML_class_diagram_%28fixed%29.svg/600px-Composite_UML_class_diagram_%28fixed%29.svg.png)
+하나 이상의 유사한 객체를 구성으로 설계된 객체로 모두 유사한 기능을 나타낸다.
 
+컴포지트 패턴은 클라이언트가 복합 객체(group of object) 나 단일 객체를 동일하게 취급하는 것을 목적으로 한다.
+
+여기서 컴포지트의 의도는 트리 구조로 작성하여, 전체-부분(whole-part) 관계를 표현하는 것이다.
+
+  
+
+트리 구조를 다룰 때, 프로그래머는 리프 노드와 브랜치를 구별해야한다.
+
+여기서 코드는 많은 복잡성을 만들어 많은 에러를 초래한다.
+
+이를 해결하기 위해, 복잡하고 원시적인 객체를 동일하게 취급하기 위한 인터페이스를 작성할 수 있다.
+
+  
+  
+출처: [https://mygumi.tistory.com/343](https://mygumi.tistory.com/343) [마이구미의 HelloWorld]
+
+![enter image description here](https://t1.daumcdn.net/cfile/tistory/99E9FF455C84AF1E20)
 
 
 # 스트레티지 패턴
@@ -95,5 +112,6 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNzQ5ODE0LC0xMTExODUxNDc5XX0=
+eyJoaXN0b3J5IjpbLTE5MDkzNTE3MjgsLTQwNzQ5ODE0LC0xMT
+ExODUxNDc5XX0=
 -->
