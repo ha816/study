@@ -22,11 +22,12 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 ### Heap영역
 
 객체를 저장하기 위해 동적으로(실행시간에) 할당하여 쓰는 메모리 영역, new 연산자를 통하여 개체를 동적으로 생성한다. 객체를 할당할때 이용할 수 있는 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 한다. 그래도 충분한 메모리가 없으면 OutOfMemoryError가 발생하며 JVM이 종료된다. 
-
   
 #### Heap's Generation
 
 [힙 메모리 영역의 흐름](https://dzone.com/articles/understanding-the-java-memory-model-and-the-garbag)
+
+![enter image description here](https://cdn.journaldev.com/wp-content/uploads/2014/05/Java-Memory-Model.png)
 
 | generation name | explanation |
 |--|--|
@@ -63,8 +64,8 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3OTU1MjEyNCwtMjE4Mjk3MzU0LC0xMT
-M2NDc1NjIyLC05NzY2Mzk0NTAsLTc4Njg1MjU1MywxMzk1OTU1
-Mjg4LC0xNTU4ODYxMjg1LC0xNjY5Mjk4MDE5LC0xNDE5NzM5Mj
-IxLDEyNjg2NjIxODhdfQ==
+eyJoaXN0b3J5IjpbLTE4ODQzMDkxODksLTIxODI5NzM1NCwtMT
+EzNjQ3NTYyMiwtOTc2NjM5NDUwLC03ODY4NTI1NTMsMTM5NTk1
+NTI4OCwtMTU1ODg2MTI4NSwtMTY2OTI5ODAxOSwtMTQxOTczOT
+IyMSwxMjY4NjYyMTg4XX0=
 -->
