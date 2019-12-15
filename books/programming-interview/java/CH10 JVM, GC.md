@@ -40,7 +40,8 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 객체를 할�
 | Perm(PermGen) | 일반적으로 String이나 상수 같이 불변 값이 저장된다. 자바 8에서 PermGen은 물리 메모리에 위치할 MetaSpace라는 새로운 영역으로 변경되었다.|
 
 ### 메소드 영역(Method Area)
-* 자바 프로그램을 구성하고 있는 **메소드와 클래스 변수(static으로 선언된 변수)를 저장**하기 위한 공간이다.  
+
+정적 메소드와 정석 클래스 변수를 저장**하기 위한 공간이다.  
 * JVM은 복수개의 스레드가 메소드를 정상적으로 사용하기 위한 동기화 기법을 제공
 
 
@@ -76,8 +77,8 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 객체를 할�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxODI5NzM1NCwtMTEzNjQ3NTYyMiwtOT
-c2NjM5NDUwLC03ODY4NTI1NTMsMTM5NTk1NTI4OCwtMTU1ODg2
-MTI4NSwtMTY2OTI5ODAxOSwtMTQxOTczOTIyMSwxMjY4NjYyMT
-g4XX0=
+eyJoaXN0b3J5IjpbMjM0Njg2OTQ2LC0yMTgyOTczNTQsLTExMz
+Y0NzU2MjIsLTk3NjYzOTQ1MCwtNzg2ODUyNTUzLDEzOTU5NTUy
+ODgsLTE1NTg4NjEyODUsLTE2NjkyOTgwMTksLTE0MTk3MzkyMj
+EsMTI2ODY2MjE4OF19
 -->
