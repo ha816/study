@@ -32,7 +32,7 @@
 * 대표적인 예로 Java Stream 클래스가 데코레이터 패턴을 사용한다.
 
 Component
-: 기본 기능은 Component 객체 즉, 클라이언트는 Component를 통해 실제 객체를 사용함
+: 기본 기능을 제공하는 Component 객체 즉, 클라이언트는 Component를 통해 실제 객체를 사용함
 
 Decorator
 : 기본 Component를 확장하여 추가 기능을 정의 한 후 데코레이터를 정의한다.
@@ -81,7 +81,7 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODYzMTEzNTIsMTIyMTY3NTMyNCwtMj
-AzODE0MDgsLTU2NDA4MTYsLTM3Njc3ODE2NywtNDA3NDk4MTQs
-LTExMTE4NTE0NzldfQ==
+eyJoaXN0b3J5IjpbMTQ5NjcxNjU4MywxMjIxNjc1MzI0LC0yMD
+M4MTQwOCwtNTY0MDgxNiwtMzc2Nzc4MTY3LC00MDc0OTgxNCwt
+MTExMTg1MTQ3OV19
 -->
