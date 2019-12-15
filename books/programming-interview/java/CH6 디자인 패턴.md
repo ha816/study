@@ -8,6 +8,10 @@
 * 빌더는 세터메서드 호출마다 빌더 자신을 반환한다.(메서드 연쇄;method chaining) 또한 아직 완성되지 않은 객체를 build 메서드에서 판별한다.
 * 단점으로는 builder라는 객체를 추가로 생성해야 한다. 
 
+# 컴포지트 패턴
+
+![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Composite_UML_class_diagram_%28fixed%29.svg/600px-Composite_UML_class_diagram_%28fixed%29.svg.png)
+
 # 스트레티지 패턴
 
 >스트레티지 패턴의 예를 보여줄 수 있는가?
@@ -85,5 +89,5 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTE4NTE0NzldfQ==
+eyJoaXN0b3J5IjpbOTE2OTc3MzY4LC0xMTExODUxNDc5XX0=
 -->
