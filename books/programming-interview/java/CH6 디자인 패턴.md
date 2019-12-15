@@ -16,7 +16,9 @@
 
 # 스트레티지 패턴
 
-* 스트레티지 패턴은 **전략을 쉽게 바꿀 수 있도록 해주는 디자인 패턴** 세부 구현을 변경할 필요 없이 실행중이라도 교환할 수 있어 의존성 주입(DI; Dependency Injection)에 자주 사용된다.  
+* 스트레티지 패턴은 **전략을 쉽게 바꿀 수 있도록 해주는 디자인 패턴** 
+* 스트레티지(전략)이란 어떤 목적을 달성하기 위한 작업 방식, 문제를 해결하는 알고리즘 등을 뜻한다.
+* 세부 구현을 변경할 필요 없이 실행중이라도 교환할 수 있어 의존성 주입(DI; Dependency Injection)에 자주 사용된다.  
 
 # 템플릿 메서드 패턴
 
@@ -84,7 +86,7 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODE4MjMzMjcsLTIwMzgxNDA4LC01Nj
-QwODE2LC0zNzY3NzgxNjcsLTQwNzQ5ODE0LC0xMTExODUxNDc5
-XX0=
+eyJoaXN0b3J5IjpbLTE4NzE0Nzc4NiwtMjAzODE0MDgsLTU2ND
+A4MTYsLTM3Njc3ODE2NywtNDA3NDk4MTQsLTExMTE4NTE0Nzld
+fQ==
 -->
