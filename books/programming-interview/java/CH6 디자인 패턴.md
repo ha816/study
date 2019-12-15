@@ -35,11 +35,7 @@
 
 JVM 외부 소스를 읽고 저장하는 자바의 기본 입.출력 클래스는 데커레이터 패턴을 사용한다. InputStream, OutputStream 클래스 그리고 그 하위 클래스는 효율적으로 입출력을 하기 위해 여러 조합을 사용한다. 
 
-OutputStream은 추상 클래스로 필요한 수행을 동작 후, 다른 하위의 OutputStream 클래스에 수행을 위임한다. 이 위임할 대상은 이미 OutputStream객체를 만들때 매개변수로 받는다.  (예를 들면 FileOutputStream)
-
-BufferedOutputStream은 객체 생성시 OutputStream의 구현체(예를 들면, FileOutputStream)를 받아 write 메서드 호출시 OutputStream의  write 메서드를 호출한다. 
-
-반면에 FileOutputStream이나 SocketOutputStream 같은 실제 데이터를 저장하는 OutputStream 클래스는 write 메서드를 다른 클래스에 위임하지 않는다. 
+BufferedOutputStream은 객체 생성시 OutputStream의 구현체(예를 들면, FileOutputStream)를 받아 write 메서드 호출시 OutputStream의  write 메서드를 호출한다. 반면에 FileOutputStream이나 SocketOutputStream 같은 실제 데이터를 저장하는 OutputStream 클래스는 write 메서드를 다른 클래스에 위임하지 않는다. 
 
 ```
 @Test
@@ -77,8 +73,8 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDAzNTc1NjAsMTI2MTU4MDAyOCwtMT
-UzMDQ3NTU5LC0xMjA2NDA5MjQwLC0yMzI2NDMwNjMsMTQ5Njcx
-NjU4MywxMjIxNjc1MzI0LC0yMDM4MTQwOCwtNTY0MDgxNiwtMz
-c2Nzc4MTY3LC00MDc0OTgxNCwtMTExMTg1MTQ3OV19
+eyJoaXN0b3J5IjpbMTcyMzgyODYxNywxMjYxNTgwMDI4LC0xNT
+MwNDc1NTksLTEyMDY0MDkyNDAsLTIzMjY0MzA2MywxNDk2NzE2
+NTgzLDEyMjE2NzUzMjQsLTIwMzgxNDA4LC01NjQwODE2LC0zNz
+Y3NzgxNjcsLTQwNzQ5ODE0LC0xMTExODUxNDc5XX0=
 -->
