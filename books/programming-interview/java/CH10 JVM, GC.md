@@ -63,30 +63,16 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 3.  In the last step, it fills up the heap from the front with the objects so that the objects are piled up consecutively, and divides the heap into two parts: one with objects and one without objects (compact).
 
 
-자바 1.6에는 G1(Garbage First)라는 새로운 방법을 사용하게 되었다. 
-
-![enter image description here](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/G1GettingStarted/images/slide9.png)
-
-
-
-
+자바 1.6에는 G1([Garbage First](https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html))라는 새로운 방법을 사용하게 되었다. 
 
 The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. But in JDK 6, this is called an  _early access_  and can be used only for a test. It is officially included in JDK 7. In my personal opinion, we need to go through a long test period (at least 1 year) before NHN can use JDK7 in actual services, so you probably should wait a while. Also, I heard a few times that a JVM crash occurred after applying the G1 in JDK 6. Please wait until it is more stable.
 
-결국 가비지 컬렉션은 다른 제너레이션으로의 이동과 가능한 한 많은 여유 공간을 남겨두려는 목적으로 메모리에서 객체들을 옮기고 자주 접근되는 객체들을 묶어두는등 연산을 수행한다. 이러한 연산들을 컴팩션(compaction)이라고 한다. 컴패션은 live로 표시한 객체들을 다른 물리적인 메모리 위치로 옮김으로써 JVM이 stop-the-world인 메모리 공간을 확보한다. 
-
-
-
-
-
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MTg0MDM1MSwtMTUwOTg3NjcyMCwtMT
-gzODQ2MzA0NSwtMTcyNDk5NDM5NCwyMDE1NTA1NDc5LDc5MDk4
-NDQ2OSwtMTg4NDMwOTE4OSwtMjE4Mjk3MzU0LC0xMTM2NDc1Nj
-IyLC05NzY2Mzk0NTAsLTc4Njg1MjU1MywxMzk1OTU1Mjg4LC0x
-NTU4ODYxMjg1LC0xNjY5Mjk4MDE5LC0xNDE5NzM5MjIxLDEyNj
-g2NjIxODhdfQ==
+eyJoaXN0b3J5IjpbLTEyMDk5MjY0NzAsLTE1MDk4NzY3MjAsLT
+E4Mzg0NjMwNDUsLTE3MjQ5OTQzOTQsMjAxNTUwNTQ3OSw3OTA5
+ODQ0NjksLTE4ODQzMDkxODksLTIxODI5NzM1NCwtMTEzNjQ3NT
+YyMiwtOTc2NjM5NDUwLC03ODY4NTI1NTMsMTM5NTk1NTI4OCwt
+MTU1ODg2MTI4NSwtMTY2OTI5ODAxOSwtMTQxOTczOTIyMSwxMj
+Y4NjYyMTg4XX0=
 -->
