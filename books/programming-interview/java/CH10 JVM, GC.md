@@ -42,7 +42,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 ### 스택영역(Stack Area)  
 
-스택영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 곳으로 스레드가 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
+스택 영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 곳으로 스레드가 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
 
 # GC(Garbage Collection)
 
@@ -64,8 +64,8 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODQzMDkxODksLTIxODI5NzM1NCwtMT
-EzNjQ3NTYyMiwtOTc2NjM5NDUwLC03ODY4NTI1NTMsMTM5NTk1
-NTI4OCwtMTU1ODg2MTI4NSwtMTY2OTI5ODAxOSwtMTQxOTczOT
-IyMSwxMjY4NjYyMTg4XX0=
+eyJoaXN0b3J5IjpbNzkwOTg0NDY5LC0xODg0MzA5MTg5LC0yMT
+gyOTczNTQsLTExMzY0NzU2MjIsLTk3NjYzOTQ1MCwtNzg2ODUy
+NTUzLDEzOTU5NTUyODgsLTE1NTg4NjEyODUsLTE2NjkyOTgwMT
+ksLTE0MTk3MzkyMjEsMTI2ODY2MjE4OF19
 -->
