@@ -37,6 +37,8 @@ JVM 외부 소스를 읽고 저장하는 자바의 기본 입.출력 클래스�
 
 BufferedOutputStream은 객체 생성시 OutputStream의 구현체(예를 들면, FileOutputStream)를 받아 write 메서드 호출시 OutputStream의  write 메서드를 호출한다. 반면에 FileOutputStream이나 SocketOutputStream 같은 실제 데이터를 저장하는 OutputStream 클래스는 write 메서드를 다른 클래스에 위임하지 않는다. 
 
+FileOutputStream, SocketOutputStream가 바로 기본 클래스(Component)이다. 그리고 BufferedOutputStream는 데코레이터 클래스이다.
+
 ```
 @Test
 public void decoratorPattern() throws IOException
@@ -73,7 +75,7 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMzgyODYxNywxMjYxNTgwMDI4LC0xNT
+eyJoaXN0b3J5IjpbLTk3MjUwNDQ3NCwxMjYxNTgwMDI4LC0xNT
 MwNDc1NTksLTEyMDY0MDkyNDAsLTIzMjY0MzA2MywxNDk2NzE2
 NTgzLDEyMjE2NzUzMjQsLTIwMzgxNDA4LC01NjQwODE2LC0zNz
 Y3NzgxNjcsLTQwNzQ5ODE0LC0xMTExODUxNDc5XX0=
