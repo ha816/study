@@ -35,6 +35,9 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 힙은 애플�
   
 JVM에서 실행되는 모든 프로그램들(스레드)들은 메소드 영역과 힙 영역을 공유하게 된다.  
 
+![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
+
+
 메소드 영역(Method Area)
 * 자바 프로그램을 구성하고 있는 **메소드와 클래스 변수(static으로 선언된 변수)를 저장**하기 위한 공간이다.  
 * JVM은 복수개의 스레드가 메소드를 정상적으로 사용하기 위한 동기화 기법을 제공
@@ -70,6 +73,6 @@ JVM에서 실행되는 모든 프로그램들(스레드)들은 메소드 영역�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTg4NjEyODUsLTE2NjkyOTgwMTksLT
-E0MTk3MzkyMjEsMTI2ODY2MjE4OF19
+eyJoaXN0b3J5IjpbLTM0NDcxMjM5NSwtMTU1ODg2MTI4NSwtMT
+Y2OTI5ODAxOSwtMTQxOTczOTIyMSwxMjY4NjYyMTg4XX0=
 -->
