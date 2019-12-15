@@ -88,12 +88,8 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 싱글턴의 구현 방법에 따라 다르지만 쓰레드 세이프하지 않을 수 있기 때문에, 자바 5에서 공개된 Enum 타입으로 싱글턴 패턴을 구현하는 것이 좋다. 싱글턴 패턴을 적용할 인스턴스를 하나의 원소만 가지는 Enum 타입으로 생성하면 JVM 에서 싱글턴을 보장한다. > 
 
-
-
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NjM4MzkyLC0zNzY3NzgxNjcsLTQwNz
-Q5ODE0LC0xMTExODUxNDc5XX0=
+eyJoaXN0b3J5IjpbLTU2NDA4MTYsLTM3Njc3ODE2NywtNDA3ND
+k4MTQsLTExMTE4NTE0NzldfQ==
 -->
