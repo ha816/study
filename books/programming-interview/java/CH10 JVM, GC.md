@@ -55,8 +55,27 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 [GC types
 ](https://www.cubrid.org/blog/understanding-java-garbage-collection)
 
-자바 6에는 G1(Garbage First)라는 새로운 알고리즘이 투입되었다. 
+
 전통적인 알고리즘은 mark-and-sweep이다.
+The GC in the young generation uses the type we explained in the previous paragraph. The GC in the old generation uses an algorithm called "**mark-sweep-compact**."
+
+1.  The first step of this algorithm is to mark the surviving objects in the old generation.
+2.  Then, it checks the heap from the front and leaves only the surviving ones behind (sweep).
+3.  In the last step, it fills up the heap from the front with the objects so that the objects are piled up consecutively, and divides the heap into two parts: one with objects and one without objects (compact).
+
+
+자바 6에는 G1(Garbage First)라는 새로운 알고리즘이 투입되었다. 
+
+If you want to understand G1 GC, forget everything you know about the young generation and the old generation. As you can see in the picture, one object is allocated to each grid, and then a GC is executed. Then, once one area is full, the objects are allocated to another area, and then a GC is executed. The steps where the data moves from the three spaces of the young generation to the old generation cannot be found in this GC type. This type was created to replace the CMS GC, which has causes a lot of issues and complaints in the long term.
+
+The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. But in JDK 6, this is called an  _early access_  and can be used only for a test. It is officially included in JDK 7. In my personal opinion, we need to go through a long test period (at least 1 year) before NHN can use JDK7 in actual services, so you probably should wait a while. Also, I heard a few times that a JVM crash occurred after applying the G1 in JDK 6. Please wait until it is more stable.
+
+I will talk about the  **GC tuning**  in the next issue, but I would like to ask you one thing in advance. If the size and the type of all objects created in the application are identical, all the GC options for WAS used in our company can be the same. But the size and the lifespan of the objects created by WAS vary depending on the service, and the type of equipment varies as well. In other words, just because a certain service uses the GC option "A," it does not mean that the same option will bring the best results for a different service. It is necessary to find the best values for the WAS threads, WAS instances for each equipment and each GC option by constant tuning and monitoring. This did not come from my personal experience, but from the discussion of the engineers making Oracle JVM for JavaOne 2010.
+
+In this issue, we have only glanced at the GC for Java. Please look forward to our next issue, where I will talk about  **how to monitor the Java GC status and tune GC**.
+
+I would like to note that I referred to a new book released in December 2011 called "_Java Performance_" ([Amazon](http://amzn.com/0137142528), it can also be viewed from safari online, if the company provides an account), as well as “_Memory Management in the Java HotSpotTM Virtual Machine_,” a white paper provided by the Oracle website. (The book is different from "_Java Performance Tuning_.")
+
 
 결국 가비지 컬렉션은 다른 제너레이션으로의 이동과 가능한 한 많은 여유 공간을 남겨두려는 목적으로 메모리에서 객체들을 옮기고 자주 접근되는 객체들을 묶어두는등 연산을 수행한다. 이러한 연산들을 컴팩션(compaction)이라고 한다. 컴패션은 live로 표시한 객체들을 다른 물리적인 메모리 위치로 옮김으로써 JVM이 stop-the-world인 메모리 공간을 확보한다. 
 
@@ -64,11 +83,13 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTczMzY1MDQsMjAxNTUwNTQ3OSw3OT
-A5ODQ0NjksLTE4ODQzMDkxODksLTIxODI5NzM1NCwtMTEzNjQ3
-NTYyMiwtOTc2NjM5NDUwLC03ODY4NTI1NTMsMTM5NTk1NTI4OC
-wtMTU1ODg2MTI4NSwtMTY2OTI5ODAxOSwtMTQxOTczOTIyMSwx
-MjY4NjYyMTg4XX0=
+eyJoaXN0b3J5IjpbLTY3NDI2NzQ4MCwyMDE1NTA1NDc5LDc5MD
+k4NDQ2OSwtMTg4NDMwOTE4OSwtMjE4Mjk3MzU0LC0xMTM2NDc1
+NjIyLC05NzY2Mzk0NTAsLTc4Njg1MjU1MywxMzk1OTU1Mjg4LC
+0xNTU4ODYxMjg1LC0xNjY5Mjk4MDE5LC0xNDE5NzM5MjIxLDEy
+Njg2NjIxODhdfQ==
 -->
