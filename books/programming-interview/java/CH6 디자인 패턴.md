@@ -12,7 +12,7 @@
 
 > 컴포지트 패턴이란?
 
-객체들의 관계를 트리 구조로 구성하며, 사용자가 단일 객체와 복합 객체 모두 동일하게 다루도록 한다. 복합 객체와 단일 객체의 처리 방법이 다르지 않을 경우, 전체-부분 관계로 정의할 수 있다. 전체-부분 관계의 대표적인 예는 Directory-File 이 존재한다.
+객체들의 관계를 트리 구조로 구성하며, 사용자가 단일 객체와 복합 객체 모두 동일하게 다루도록 한다. 단일 객체와 복합 객체의 처리 방법이 다르지 않은 경우, 부분-전체 관계로 정의할 수 있다. 대표적인 예는 File-Directory가 존재한다.
 
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/99E9FF455C84AF1E20)
 
@@ -94,6 +94,6 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDQzMDYwNTcsLTM3Njc3ODE2NywtND
-A3NDk4MTQsLTExMTE4NTE0NzldfQ==
+eyJoaXN0b3J5IjpbLTM2NjM4MzkyLC0zNzY3NzgxNjcsLTQwNz
+Q5ODE0LC0xMTExODUxNDc5XX0=
 -->
