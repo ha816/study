@@ -56,7 +56,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 ](https://www.cubrid.org/blog/understanding-java-garbage-collection)
 
 
-전통적인 알고리즘은 mark-and-sweep이다. The GC in the young generation uses the type we explained in the previous paragraph. The GC in the old generation uses an algorithm called "**mark-sweep-compact**."
+전통적인 알고리즘은 mark-and-sweep이다. Heap에 Old 제너레이션은 **mark-sweep-compact** 
 
 1.  The first step of this algorithm is to mark the surviving objects in the old generation.
 2.  Then, it checks the heap from the front and leaves only the surviving ones behind (sweep).
@@ -86,9 +86,9 @@ I would like to note that I referred to a new book released in December 2011 cal
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjQ5OTQzOTQsMjAxNTUwNTQ3OSw3OT
-A5ODQ0NjksLTE4ODQzMDkxODksLTIxODI5NzM1NCwtMTEzNjQ3
-NTYyMiwtOTc2NjM5NDUwLC03ODY4NTI1NTMsMTM5NTk1NTI4OC
-wtMTU1ODg2MTI4NSwtMTY2OTI5ODAxOSwtMTQxOTczOTIyMSwx
-MjY4NjYyMTg4XX0=
+eyJoaXN0b3J5IjpbLTk4MTEyMzMwOSwtMTcyNDk5NDM5NCwyMD
+E1NTA1NDc5LDc5MDk4NDQ2OSwtMTg4NDMwOTE4OSwtMjE4Mjk3
+MzU0LC0xMTM2NDc1NjIyLC05NzY2Mzk0NTAsLTc4Njg1MjU1My
+wxMzk1OTU1Mjg4LC0xNTU4ODYxMjg1LC0xNjY5Mjk4MDE5LC0x
+NDE5NzM5MjIxLDEyNjg2NjIxODhdfQ==
 -->
