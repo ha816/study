@@ -1,13 +1,13 @@
 # 정렬(Sorting)
 
->버블 정렬 알고리즘은 어떻게 구현하는가? 
->삽입 정렬 알고리즘은 어떻게 구현하는가? 
->퀵정렬 알고리즘은 어떻게 구현하는가?
->머지 정렬 알고리즘은 어떻게 구현하는가? 
+> 버블 정렬 알고리즘은 어떻게 구현하는가? 
+> 삽입 정렬 알고리즘은 어떻게 구현하는가? 
+> 퀵정렬 알고리즘은 어떻게 구현하는가?
+> 머지 정렬 알고리즘은 어떻게 구현하는가? 
 
 # 이진검색
 
->이진 검색은 어떻게 구현하는가?
+> 이진 검색은 어떻게 구현하는가?
 
 이진 검색(binary search)는 이미 정렬된 원소로 구성된  리스트가 주어졌을때, 내가 찾고자하는 원소가 어디에 있는지 시간 복잡도 O(log n)으로 찾는 방법이다.  
 
@@ -129,5 +129,6 @@ return otherReversedList;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNDMzOTYwNywtNzY2NjU5MzQ5XX0=
+eyJoaXN0b3J5IjpbLTI2OTMyODk1OSwxOTM0MzM5NjA3LC03Nj
+Y2NTkzNDldfQ==
 -->
