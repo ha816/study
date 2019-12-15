@@ -104,9 +104,7 @@ String 상수 풀은 플라이 웨이트 패턴을 구현한것으로 Integer.va
 
 > 컬렉션 API에서 제네릭을 어떻게 사용하는지 설명하라. 
 
-제네릭은 `매개변수화된 타입`이라고도 알려져 있다. 즉 어떤 타입인데 
-
-매개변수를 받는 타입 클래스에서 제네릭을 사용했을때 컴파일러는 특정 타입만 포함될 수 있게 컬렉션을 제한한다. 
+제네릭은 `매개변수화된 타입`이라고도 알려져 있다. 즉 매개변수로 어떤 타입을 입력받은 타입을 말한다. 특정 클래스에서 매개변수로 특정 타입을 입력 받으면 컴파일러는 그 트겆ㅇ 타입만 포함될 수 있게 컬렉션을 제한한다. 
 
 컬렉션 API에 있는 모든 클래스는 제네리릭을 사용해서 만들었다. List인터페이스와 그 구현은 한 가지 타입의 매개변수만 받는다. Map인터페이스는 두가지 타입 매개변수를 받는다. 
 
@@ -168,5 +166,5 @@ public String getHostName() throws Exception
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMjkxNjc2LDM2NjI3MDYwXX0=
+eyJoaXN0b3J5IjpbMTkxMTYxNDI3NywzNjYyNzA2MF19
 -->
