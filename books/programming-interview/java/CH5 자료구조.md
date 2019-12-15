@@ -15,8 +15,6 @@
 
 내부적으로 배열을 사용하는 리스트이다. 즉 배열의 특징을 그대로 가져간다.(랜덤 접근, 전체 복사) 배열의 시작 위치나 중간 위치에 새로운 원소를 추가하려고 하면, 그 뒤에 있는 원소들은 모두 이동해야 한다. 많은 원소를 삭제해도 차지하는 배열의 크기는 줄어들지 않는다. 
 
-원소 개수가 계속 변경되는 리스트라면 ArrayList의 특징이 단점으로 작용할 수 있다. 
-
 ## LinkedList
 
 원소들을 배열에 저장하지 않고, 리스트 안에서 다음 원소를 가리키는 내부 참조를 이용하는 리스트이다. 
@@ -25,10 +23,9 @@
 * 삭제 : 삭제도 간단하며, 크기도 즉각 줄어든다. 
 
 ## ArrayList vs LinkedList
-* 일반적으로 빠른 속도로 특정 인덱스에 접근하거나 리스트의 크기가 클수록 ArrayList가 좋다. 그리고 첫 부분이나 중간에 원소를 추가/삭제 해야하는 경우가 적으면 더 좋다. 
-*LinkedList는  첫 부분이나 중간에 원소를 추가/삭제 할일이 많을때 사용하자. 혹시 스택처럼 특수한 자료구조를 만들었다면 LinkedList를 쓰는게 좋은데 어떤 위치든 원소를 넣고 빼기가 간단하기 때문이다. 
 
-> Queue와 Deque는 무엇인가?
+* ArrayList의 경우, 일반적으로 빠른 속도로 특정 인덱스에 접근하거나 리스트의 크기가 클수록 좋다. 또한, 첫 부분이나 중간에 원소를 추가/삭제 해야하는 경우가 적으면 더 좋다. 
+* LinkedList는 첫 부분이나 중간에 원소를 추가/삭제 할일이 많을때 사용하는 것이 좋다. 혹시 스택처럼 특수한 자료구조를 만들었다면 LinkedList를 쓰는게 좋은데 어떤 위치든 원소를 넣고 빼기가 간단하기 때문이다. 
 
 ## Queue
 : FIFO(first-in first-out) 자료구조를 구현한 자바 인터페이스. 구조의 가장 끝(최근)에 에 추가하는 add, 가장 앞(오래된) 원소를 제거하고 반환하는 remove, 반환만 하는 peek 메서드를 가진다.
@@ -116,7 +113,7 @@ Set은 Collection 인터페이스를 확장한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDEzNzkzNjcsLTIwMjIxMzI5NzMsLT
-E2MzY5MTk3NzUsNjIwMTU1MDUsMTQ5OTA4MzAxOCwtMjI5Mzcx
-MDMzLDE3Nzk2OTI5MjZdfQ==
+eyJoaXN0b3J5IjpbLTE5ODgwMzE3MCwtMjAyMjEzMjk3MywtMT
+YzNjkxOTc3NSw2MjAxNTUwNSwxNDk5MDgzMDE4LC0yMjkzNzEw
+MzMsMTc3OTY5MjkyNl19
 -->
