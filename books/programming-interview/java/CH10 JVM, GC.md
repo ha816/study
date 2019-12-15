@@ -1,10 +1,9 @@
 # JVM 이해하기
 
-JVM은 프로그램이 실행되는 플랫폼이다. 
-각 운영체제와 아키텍처용으로 만들어져 있고 운영체제와 애플리케이션 사이에 위치하면서 애플리케이션이 플랫폼에 상관없이 독립적으로 실행되도록 한다. 
+JVM은 프로그램이 실행되는 플랫폼이다.  각 운영체제와 아키텍처용으로 만들어져 있고 운영체제와 애플리케이션 사이에 위치하면서 애플리케이션이 플랫폼에 상관없이 독립적으로 실행되도록 한다. 
 
 
-## GC(Garbage Collection)
+# GC(Garbage Collection)
 
 > 메모리는 어떻게 할당하는가?
 
@@ -66,5 +65,5 @@ JVM에서 가장 먼저 해야할 일은 컴파일이다. 컴파일을 하면 .c
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2ODY2MjE4OF19
+eyJoaXN0b3J5IjpbLTE0MTk3MzkyMjEsMTI2ODY2MjE4OF19
 -->
