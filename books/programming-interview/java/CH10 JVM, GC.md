@@ -14,8 +14,7 @@ JVM의 핵심적 작업은 compile이다. 컴파일을 하면 .class확장자를
 
 ## JVM 메모리 영역
 
-JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역으로 나뉜다. 
-Shared Me
+JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역으로 나뉜다. Shared Memory영역ㅇ 메서드 영역(Method Area)과 Heap 영역으로 구성된다. 
 
 ### Heap영역
 
@@ -71,7 +70,7 @@ JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDkyNTc1MTMsMTM5NTk1NTI4OCwtMT
-U1ODg2MTI4NSwtMTY2OTI5ODAxOSwtMTQxOTczOTIyMSwxMjY4
-NjYyMTg4XX0=
+eyJoaXN0b3J5IjpbMTg0MjMyMTUzNywxMzk1OTU1Mjg4LC0xNT
+U4ODYxMjg1LC0xNjY5Mjk4MDE5LC0xNDE5NzM5MjIxLDEyNjg2
+NjIxODhdfQ==
 -->
