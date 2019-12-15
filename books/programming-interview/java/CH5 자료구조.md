@@ -24,16 +24,16 @@
 * 추가 : 배열의 시작, 중간 위치에도 간단하다
 * 삭제 : 삭제도 간단하며, 크기도 즉각 줄어든다. 
 
-정리
-* 일반적으로 원소에 빠른 속도로 접근해야 하거나, 리스트의 크기가 클수록 ArrayList가 좋다. 그리고 첫 부분이나 중간에 원소를 추가/삭제 해야하는 경우가 적으면 더 좋다. 
+## ArrayList vs LinkedList
+* 일반적으로 빠른 속도로 특정 인덱스에 접근하거나 리스트의 크기가 클수록 ArrayList가 좋다. 그리고 첫 부분이나 중간에 원소를 추가/삭제 해야하는 경우가 적으면 더 좋다. 
 *LinkedList는  첫 부분이나 중간에 원소를 추가/삭제 할일이 많을때 사용하자. 혹시 스택처럼 특수한 자료구조를 만들었다면 LinkedList를 쓰는게 좋은데 어떤 위치든 원소를 넣고 빼기가 간단하기 때문이다. 
 
 > Queue와 Deque는 무엇인가?
 
-Queue
+## Queue
 : FIFO(first-in first-out) 자료구조를 구현한 자바 인터페이스. 구조의 가장 끝(최근)에 에 추가하는 add, 가장 앞(오래된) 원소를 제거하고 반환하는 remove, 반환만 하는 peek 메서드를 가진다.
 
-Deque(덱이라 발음)
+## Deque(덱)
 : Queue 인터페이스의 확장으로 자료구조의 양 끝에 원소를 추가하고 삭제할 수 있다. 
 
 # 트리(TREE)
@@ -116,7 +116,7 @@ Set은 Collection 인터페이스를 확장한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIwNzQyMDQyLC0yMDIyMTMyOTczLC0xNj
-M2OTE5Nzc1LDYyMDE1NTA1LDE0OTkwODMwMTgsLTIyOTM3MTAz
-MywxNzc5NjkyOTI2XX0=
+eyJoaXN0b3J5IjpbLTE2NDEzNzkzNjcsLTIwMjIxMzI5NzMsLT
+E2MzY5MTk3NzUsNjIwMTU1MDUsMTQ5OTA4MzAxOCwtMjI5Mzcx
+MDMzLDE3Nzk2OTI5MjZdfQ==
 -->
