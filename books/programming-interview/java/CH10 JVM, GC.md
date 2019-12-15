@@ -65,9 +65,11 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 자바 1.6에는 G1(Garbage First)라는 새로운 방법을 사용하게 되었다. 
 
-![enter image description here](https://www.cubrid.org/files/attach/images/1744/745/001/e295a0637c82f92c23d5cca6e0599300.png)
+![enter image description here](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/G1GettingStarted/images/slide9.png)
 
-If you want to understand G1 GC, forget everything you know about the young generation and the old generation. As you can see in the picture, one object is allocated to each grid, and then a GC is executed. Then, once one area is full, the objects are allocated to another area, and then a GC is executed. The steps where the data moves from the three spaces of the young generation to the old generation cannot be found in this GC type. This type was created to replace the CMS GC, which has causes a lot of issues and complaints in the long term.
+
+
+
 
 The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. But in JDK 6, this is called an  _early access_  and can be used only for a test. It is officially included in JDK 7. In my personal opinion, we need to go through a long test period (at least 1 year) before NHN can use JDK7 in actual services, so you probably should wait a while. Also, I heard a few times that a JVM crash occurred after applying the G1 in JDK 6. Please wait until it is more stable.
 
@@ -81,9 +83,10 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDk4NzY3MjAsLTE4Mzg0NjMwNDUsLT
-E3MjQ5OTQzOTQsMjAxNTUwNTQ3OSw3OTA5ODQ0NjksLTE4ODQz
-MDkxODksLTIxODI5NzM1NCwtMTEzNjQ3NTYyMiwtOTc2NjM5ND
-UwLC03ODY4NTI1NTMsMTM5NTk1NTI4OCwtMTU1ODg2MTI4NSwt
-MTY2OTI5ODAxOSwtMTQxOTczOTIyMSwxMjY4NjYyMTg4XX0=
+eyJoaXN0b3J5IjpbMTY5MTg0MDM1MSwtMTUwOTg3NjcyMCwtMT
+gzODQ2MzA0NSwtMTcyNDk5NDM5NCwyMDE1NTA1NDc5LDc5MDk4
+NDQ2OSwtMTg4NDMwOTE4OSwtMjE4Mjk3MzU0LC0xMTM2NDc1Nj
+IyLC05NzY2Mzk0NTAsLTc4Njg1MjU1MywxMzk1OTU1Mjg4LC0x
+NTU4ODYxMjg1LC0xNjY5Mjk4MDE5LC0xNDE5NzM5MjIxLDEyNj
+g2NjIxODhdfQ==
 -->
