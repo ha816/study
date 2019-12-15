@@ -103,15 +103,14 @@ print(keys.next); //2
 
 ConcurrentHashMap 클래스의 구조는 원본 Map과 비교해서 약간 차이가 있는데 Size 메서드가 맵의 예상 크기를 반환한다. 현재 수행중인 모든 쓰기 작업을 고려하지 않기 때문이다.
 
-# 집합
+# Set(집합)
 
-집합은 중복을 허용하지 않고 순서가 없는 객체들의 모임이다.
-Set은 Collection 인터페이스를 확장한다. 
+집합은 중복을 허용하지 않고 순서가 없는 객체들의 모임이다. Set은 Collection 인터페이스를 확장한다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MTE2MDgwNiwtNzQ3NDU3Mzk2LC0yMD
+eyJoaXN0b3J5IjpbLTYzMDYwMDQ4OSwtNzQ3NDU3Mzk2LC0yMD
 IyMTMyOTczLC0xNjM2OTE5Nzc1LDYyMDE1NTA1LDE0OTkwODMw
 MTgsLTIyOTM3MTAzMywxNzc5NjkyOTI2XX0=
 -->
