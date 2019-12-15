@@ -64,11 +64,11 @@ JUnit 실행기는 Runner 추상 클래스의 실제 구현이다. 따라서 Run
 
 > 단위 테스트와 통합 테스트의 차이는 무엇인가?
 
-사실 JUnit은 단위 테스트와 통합 테스트 모두에 사용 가능하여 JUnit(유닛)이라는 이름은 부적절할때가 있다. 
-클래스를 외부의존성을 귾기 위해서는 의존성 주입(Depencency Injection)과 목 두가지를 사용할 수 있으며 둘 사이에는 협력 관계가 있다. 
+사실 JUnit은 단위 테스트와 통합 테스트 모두에 사용 가능하여 JUnit(유닛)이라는 이름은 부적절할때가 있다. 클래스를 외부의존성을 귾기 위해서는 의존성 주입(Depencency Injection)과 목 두가지를 사용할 수 있으며 둘 사이에는 협력 관계가 있다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODY1Njc5MCwtMTk5MjAxNDY5OF19
+eyJoaXN0b3J5IjpbNzcyMjY5NDY0LC05NTg2NTY3OTAsLTE5OT
+IwMTQ2OThdfQ==
 -->
