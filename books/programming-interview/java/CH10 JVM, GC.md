@@ -14,6 +14,9 @@ JVM의 핵심적 작업은 compile이다. 컴파일을 하면 .class확장자를
 
 ## JVM 메모리 영역
 
+
+### Heap영역
+
 new 키워드는 자바 heap영역에 메모리를 할당한다. 힙은 애플리케이션 영역에 접근할 수 있는 메모리의 영역이다. 객체를 할당할때 이용할 수 있는 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 한다. 그래도 충분한 메모리가 없으면 OutOfMemoryError가 발생하며 JVM이 종료된다. 
 
 ![enter image description here](https://cdn.journaldev.com/wp-content/uploads/2014/05/Java-Memory-Model.png)
@@ -66,7 +69,7 @@ JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4ODA4NzUzNCwxMzk1OTU1Mjg4LC0xNT
+eyJoaXN0b3J5IjpbMTc5ODY2ODA5OSwxMzk1OTU1Mjg4LC0xNT
 U4ODYxMjg1LC0xNjY5Mjk4MDE5LC0xNDE5NzM5MjIxLDEyNjg2
 NjIxODhdfQ==
 -->
