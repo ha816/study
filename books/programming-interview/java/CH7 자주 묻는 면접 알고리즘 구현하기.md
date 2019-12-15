@@ -5,7 +5,7 @@
 >퀵정렬 알고리즘은 어떻게 구현하는가?
 >머지 정렬 알고리즘은 어떻게 구현하는가? 
 
-# 리스트 검색하기
+# 이진검색
 
 >이진 검색은 어떻게 구현하는가?
 
@@ -129,5 +129,5 @@ return otherReversedList;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MzgwNTUwMywtNzY2NjU5MzQ5XX0=
+eyJoaXN0b3J5IjpbMTkzNDMzOTYwNywtNzY2NjU5MzQ5XX0=
 -->
