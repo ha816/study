@@ -37,6 +37,8 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 객체를 할�
 | Tenured(Old) | Survivor 공간에서 gc의 수집대상에서 제외되는 객체가 거주하는 곳으로 낮은 빈도로 gc의 대상이 된다.|
 | Perm(PermGen) | 일반적으로 String이나 상수 같이 불변 값이 저장된다. 자바 8에서 PermGen은 물리 메모리에 위치할 MetaSpace라는 새로운 영역으로 변경되었다.|
 
+reach to max tenured threshold during the minor GC or young GC, will be moved to “_**Tenured Space**_” or “**Old Generation Space**“.
+
 
 ### 메소드 영역(Method Area)
 * 자바 프로그램을 구성하고 있는 **메소드와 클래스 변수(static으로 선언된 변수)를 저장**하기 위한 공간이다.  
@@ -75,7 +77,7 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 객체를 할�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwOTc2NjM4NywtNzg2ODUyNTUzLDEzOT
+eyJoaXN0b3J5IjpbLTk3NjYzOTQ1MCwtNzg2ODUyNTUzLDEzOT
 U5NTUyODgsLTE1NTg4NjEyODUsLTE2NjkyOTgwMTksLTE0MTk3
 MzkyMjEsMTI2ODY2MjE4OF19
 -->
