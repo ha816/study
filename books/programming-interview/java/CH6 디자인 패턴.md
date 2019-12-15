@@ -8,7 +8,7 @@
 
 # 컴포지트 패턴
 
-객체들의 관계를 트리 구조로 구성하며, 사용자가 단일 객체와 복합 객체 모두 동일하게 다루도록 한다. 단일 객체와 복합 객체의 처리 방법이 다르지 않은 경우,대표적인 예는 File-Directory가 존재한다.
+객체들의 관계를 트리 구조로 구성하며, 사용자가 단일 객체와 복합 객체 모두 동일하게 다루도록 한다. 대표적인 예는 File(단일)-Directory(복합)가 존재한다.
 
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/99E9FF455C84AF1E20)
 
@@ -86,6 +86,6 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MzA3OTI5MywtNTY0MDgxNiwtMzc2Nz
-c4MTY3LC00MDc0OTgxNCwtMTExMTg1MTQ3OV19
+eyJoaXN0b3J5IjpbLTIwMzgxNDA4LC01NjQwODE2LC0zNzY3Nz
+gxNjcsLTQwNzQ5ODE0LC0xMTExODUxNDc5XX0=
 -->
