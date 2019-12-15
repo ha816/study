@@ -17,9 +17,7 @@
 
 ## LinkedList
 
-원소들을 배열에 저장하지 않고, 리스트 안에서 다음 원소를 가리키는 내부 참조를 이용하는 리스트이다. LinkedList를 참조하는 변수는 리스트의 첫 원소인 Head를  참조한다. 그리고 각 원소는 다음 원소를 참조하는 next 변수를 가진다.
-* 추가 : 배열의 시작, 중간 위치에도 간단하다
-* 삭제 : 삭제도 간단하며, 크기도 즉각 줄어든다. 
+원소들을 배열에 저장하지 않고, 리스트 안에서 다음 원소를 가리키는 내부 참조를 이용하는 리스트이다. LinkedList를 참조하는 변수는 리스트의 첫 원소인 Head를  참조한다. 그리고 각 원소는 다음 원소를 참조하는 next 변수를 가진다. LinkedList는 원소 추가, 삭제도 간단하며, 크기도 즉각 줄어든다. 
 
 ## ArrayList vs LinkedList
 
@@ -112,7 +110,7 @@ Set은 Collection 인터페이스를 확장한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MjIxNDg4OCwtMjAyMjEzMjk3MywtMT
+eyJoaXN0b3J5IjpbLTc0NzQ1NzM5NiwtMjAyMjEzMjk3MywtMT
 YzNjkxOTc3NSw2MjAxNTUwNSwxNDk5MDgzMDE4LC0yMjkzNzEw
 MzMsMTc3OTY5MjkyNl19
 -->
