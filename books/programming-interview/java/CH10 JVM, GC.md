@@ -33,7 +33,10 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 객체를 할�
 | generation name | explanation |
 |--|--|
 | Eden |객체가 처음 생겼을때 할당되는 메모리 영역 |
-| Survivor | 가비지 컬렉션의 수집 대상에서 제외되면 Survivor이라고 하는 메모리 영역으로 |
+| Survivor | Minor GC의 수집대상에서 제외된 객체가 있는 영역으로  
+have survived from the Young garbage collection or Minor garbage collection. We have two equally divided survivor spaces called S0 and S1.
+
+|
 | Tenured(Old) | Survivor 공간에서 gc의 수집대상에서 제외되는 객체가 거주하는 곳으로 낮은 빈도로 gc의 대상이 된다.|
 | Perm(PermGen) | 일반적으로 String이나 상수 같이 불변 값이 저장된다. 자바 8에서 PermGen은 물리 메모리에 위치할 MetaSpace라는 새로운 영역으로 변경되었다.|
 
@@ -75,7 +78,7 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 객체를 할�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4Njg1MjU1MywxMzk1OTU1Mjg4LC0xNT
-U4ODYxMjg1LC0xNjY5Mjk4MDE5LC0xNDE5NzM5MjIxLDEyNjg2
-NjIxODhdfQ==
+eyJoaXN0b3J5IjpbMTM0MjEzODE5NywtNzg2ODUyNTUzLDEzOT
+U5NTUyODgsLTE1NTg4NjEyODUsLTE2NjkyOTgwMTksLTE0MTk3
+MzkyMjEsMTI2ODY2MjE4OF19
 -->
