@@ -25,14 +25,16 @@
 * LinkedList는 첫 부분이나 중간에 원소를 추가/삭제 할일이 많을때 사용하는 것이 좋다. 혹시 스택처럼 특수한 자료구조를 만들었다면 LinkedList를 쓰는게 좋은데 어떤 위치든 원소를 넣고 빼기가 간단하기 때문이다. 
 
 ## Queue
-: FIFO(first-in first-out) 자료구조를 구현한 자바 인터페이스. 구조의 가장 끝(최근)에 에 추가하는 add, 가장 앞(오래된) 원소를 제거하고 반환하는 remove, 반환만 하는 peek 메서드를 가진다.
+
+**FIFO(first-in first-out) 자료구조를 구현한 자바 인터페이스**. 구조의 가장 끝(최근)에 추가하는 add 메서드, 가장 앞(오래된) 원소를 제거하고 반환하는 remove 메서드, 반환만 하는 peek 메서드를 가진다.
 
 ## Deque(덱)
-: Queue 인터페이스의 확장으로 자료구조의 양 끝에 원소를 추가하고 삭제할 수 있다. 
+
+Queue 인터페이스의 확장으로 자료구조의 양 끝에 원소를 추가하고 삭제할 수 있다. 
 
 # 트리(TREE)
 
-트리는 자식이라 부르는 서로 다른 원소를 많이 나열할 수 있는 자료구조다. 대표적으로 이진트리가 있는데 최대 두개의 자식을 가질 수 있는 트리를 말한다. 
+트리는 루트에서 부터 시작하여 자식이라 부르는 서로 다른 원소를 많이 나열할 수 있는 자료구조다. 대표적으로 이진트리가 있는데 최대 두개의 자식을 가질 수 있는 트리를 말한다. 
 
 ## 이진트리(Binary Tree)
 
@@ -110,7 +112,7 @@ Set은 Collection 인터페이스를 확장한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NzQ1NzM5NiwtMjAyMjEzMjk3MywtMT
-YzNjkxOTc3NSw2MjAxNTUwNSwxNDk5MDgzMDE4LC0yMjkzNzEw
-MzMsMTc3OTY5MjkyNl19
+eyJoaXN0b3J5IjpbNzMxNzI0OTUsLTc0NzQ1NzM5NiwtMjAyMj
+EzMjk3MywtMTYzNjkxOTc3NSw2MjAxNTUwNSwxNDk5MDgzMDE4
+LC0yMjkzNzEwMzMsMTc3OTY5MjkyNl19
 -->
