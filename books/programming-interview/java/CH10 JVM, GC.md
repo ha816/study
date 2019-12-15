@@ -21,10 +21,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 ### Heap영역
 
-힙 영역(Heap)
-* 프로그램 상에서 데이터를 저장하기 위해 동적으로(실행시간에)할당하여 쓸 수 있는 메모리 영역, new 연산자를 통하여 개체를 동적으로 생성한다. 
-
-new 키워드는 자바 heap영역에 메모리를 할당한다. 객체를 할당할때 이용할 수 있는 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 한다. 그래도 충분한 메모리가 없으면 OutOfMemoryError가 발생하며 JVM이 종료된다. 
+객체를 저장하기 위해 동적으로(실행시간에) 할당하여 쓰는 메모리 영역, new 연산자를 통하여 개체를 동적으로 생성한다. 객체를 할당할때 이용할 수 있는 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 한다. 그래도 충분한 메모리가 없으면 OutOfMemoryError가 발생하며 JVM이 종료된다. 
 
 ![enter image description here](https://cdn.journaldev.com/wp-content/uploads/2014/05/Java-Memory-Model.png)
   
@@ -67,7 +64,7 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 객체를 할�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NTgxNzg0LC0yMTgyOTczNTQsLTExMz
+eyJoaXN0b3J5IjpbNTA4NzMwMzg1LC0yMTgyOTczNTQsLTExMz
 Y0NzU2MjIsLTk3NjYzOTQ1MCwtNzg2ODUyNTUzLDEzOTU5NTUy
 ODgsLTE1NTg4NjEyODUsLTE2NjkyOTgwMTksLTE0MTk3MzkyMj
 EsMTI2ODY2MjE4OF19
