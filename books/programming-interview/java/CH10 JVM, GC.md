@@ -14,7 +14,7 @@ JVM의 핵심적 작업은 compile이다. 컴파일을 하면 .class확장자를
 
 ## JVM 메모리 영역
 
-JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역으로 나뉜다. Shared Memory영역은 메서드 영역(Method Area)과 Heap 영역으로 구성된다. Non-shared memory는 스레드가 별로 할당되는 고유 영역을 말한다. 각 스레드는 
+JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역으로 나뉜다.  JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다. Non-shared memory는 스레드가 별로 할당되는 고유 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
 
 ### Heap영역
 
@@ -30,7 +30,6 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 힙은 애플�
 
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
-JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다.  
 
 메소드 영역(Method Area)
 * 자바 프로그램을 구성하고 있는 **메소드와 클래스 변수(static으로 선언된 변수)를 저장**하기 위한 공간이다.  
@@ -70,7 +69,7 @@ JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjIwNjMzNDQsMTM5NTk1NTI4OCwtMT
-U1ODg2MTI4NSwtMTY2OTI5ODAxOSwtMTQxOTczOTIyMSwxMjY4
-NjYyMTg4XX0=
+eyJoaXN0b3J5IjpbLTM1MDQyMzgyLDEzOTU5NTUyODgsLTE1NT
+g4NjEyODUsLTE2NjkyOTgwMTksLTE0MTk3MzkyMjEsMTI2ODY2
+MjE4OF19
 -->
