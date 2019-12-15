@@ -71,13 +71,6 @@ If you want to understand G1 GC, forget everything you know about the young gene
 
 The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. But in JDK 6, this is called an  _early access_  and can be used only for a test. It is officially included in JDK 7. In my personal opinion, we need to go through a long test period (at least 1 year) before NHN can use JDK7 in actual services, so you probably should wait a while. Also, I heard a few times that a JVM crash occurred after applying the G1 in JDK 6. Please wait until it is more stable.
 
-I will talk about the  **GC tuning**  in the next issue, but I would like to ask you one thing in advance. If the size and the type of all objects created in the application are identical, all the GC options for WAS used in our company can be the same. But the size and the lifespan of the objects created by WAS vary depending on the service, and the type of equipment varies as well. In other words, just because a certain service uses the GC option "A," it does not mean that the same option will bring the best results for a different service. It is necessary to find the best values for the WAS threads, WAS instances for each equipment and each GC option by constant tuning and monitoring. This did not come from my personal experience, but from the discussion of the engineers making Oracle JVM for JavaOne 2010.
-
-In this issue, we have only glanced at the GC for Java. Please look forward to our next issue, where I will talk about  **how to monitor the Java GC status and tune GC**.
-
-I would like to note that I referred to a new book released in December 2011 called "_Java Performance_" ([Amazon](http://amzn.com/0137142528), it can also be viewed from safari online, if the company provides an account), as well as “_Memory Management in the Java HotSpotTM Virtual Machine_,” a white paper provided by the Oracle website. (The book is different from "_Java Performance Tuning_.")
-
-
 결국 가비지 컬렉션은 다른 제너레이션으로의 이동과 가능한 한 많은 여유 공간을 남겨두려는 목적으로 메모리에서 객체들을 옮기고 자주 접근되는 객체들을 묶어두는등 연산을 수행한다. 이러한 연산들을 컴팩션(compaction)이라고 한다. 컴패션은 live로 표시한 객체들을 다른 물리적인 메모리 위치로 옮김으로써 JVM이 stop-the-world인 메모리 공간을 확보한다. 
 
 
@@ -88,9 +81,9 @@ I would like to note that I referred to a new book released in December 2011 cal
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNDA3ODk3NywtMTgzODQ2MzA0NSwtMT
-cyNDk5NDM5NCwyMDE1NTA1NDc5LDc5MDk4NDQ2OSwtMTg4NDMw
-OTE4OSwtMjE4Mjk3MzU0LC0xMTM2NDc1NjIyLC05NzY2Mzk0NT
-AsLTc4Njg1MjU1MywxMzk1OTU1Mjg4LC0xNTU4ODYxMjg1LC0x
-NjY5Mjk4MDE5LC0xNDE5NzM5MjIxLDEyNjg2NjIxODhdfQ==
+eyJoaXN0b3J5IjpbLTE1MDk4NzY3MjAsLTE4Mzg0NjMwNDUsLT
+E3MjQ5OTQzOTQsMjAxNTUwNTQ3OSw3OTA5ODQ0NjksLTE4ODQz
+MDkxODksLTIxODI5NzM1NCwtMTEzNjQ3NTYyMiwtOTc2NjM5ND
+UwLC03ODY4NTI1NTMsMTM5NTk1NTI4OCwtMTU1ODg2MTI4NSwt
+MTY2OTI5ODAxOSwtMTQxOTczOTIyMSwxMjY4NjYyMTg4XX0=
 -->
