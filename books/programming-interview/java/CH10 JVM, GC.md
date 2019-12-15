@@ -30,6 +30,8 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 객체를 할�
   
 #### Heap's Generation
 
+[힙 메모리 영역의 흐름](https://dzone.com/articles/understanding-the-java-memory-model-and-the-garbag)
+
 | generation name | explanation |
 |--|--|
 | Eden |객체가 처음 생겼을때 할당되는 메모리 영역 |
@@ -77,7 +79,7 @@ reach to max tenured threshold during the minor GC or young GC, will be moved to
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NjYzOTQ1MCwtNzg2ODUyNTUzLDEzOT
-U5NTUyODgsLTE1NTg4NjEyODUsLTE2NjkyOTgwMTksLTE0MTk3
-MzkyMjEsMTI2ODY2MjE4OF19
+eyJoaXN0b3J5IjpbLTE2OTE0Mjg3MDEsLTk3NjYzOTQ1MCwtNz
+g2ODUyNTUzLDEzOTU5NTUyODgsLTE1NTg4NjEyODUsLTE2Njky
+OTgwMTksLTE0MTk3MzkyMjEsMTI2ODY2MjE4OF19
 -->
