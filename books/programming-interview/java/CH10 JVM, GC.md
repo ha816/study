@@ -50,7 +50,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 가비지 컬렉션은 기존에 할당된 메모리 중 사용되지 않는 메모리를 재사용하는 메커니즘이다. 가비지 컬렉션을 쓰면 메모리를 직접 해제할 필요가 없다. 
 
-가비지 컬렉션 알고리즘은 몇 가지가 있다. 모두 공동턱즈올 작동 중인 코드에서 더 이상 참조하지 않는 메모리를 찾은 후 메모리를 할당할 때 이용할 수 있도록 반환한다는 공통점이 있다. 전통적인 방법은 mark-and-sweep방식이다. 실행 중인 코드에서 참조하는 객체는 live로 표시되고 참조하는 것도 live로 한다. 
+가비지 컬렉션 알고리즘은 몇 가지가 있다. 모두 작동 중인 코드에서 더 이상 참조하지 않는 메모리를 찾은 후 메모리를 할당할 때 이용한다는 공통점이 있다. 전통적인 알고리즘은 mark-and-sweep으로 실행 중인 코드에서 참조하는 객체는 live로 표시되고 참조하는 것도 live로 한다. 
 
 이 과정이 끝나면 live로 표시되지 않는 메모리르 할당할 수 있게 만든다. 이때 메모리를 재배치하려고 JVM의 모든 쓰레드가 정지되는데 이를 stop-the-world라고 한다. 
 
@@ -64,9 +64,9 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyNjY5MTM5LDc5MDk4NDQ2OSwtMTg4ND
-MwOTE4OSwtMjE4Mjk3MzU0LC0xMTM2NDc1NjIyLC05NzY2Mzk0
-NTAsLTc4Njg1MjU1MywxMzk1OTU1Mjg4LC0xNTU4ODYxMjg1LC
-0xNjY5Mjk4MDE5LC0xNDE5NzM5MjIxLDEyNjg2NjIxODhdfQ==
+eyJoaXN0b3J5IjpbMjAxNTUwNTQ3OSw3OTA5ODQ0NjksLTE4OD
+QzMDkxODksLTIxODI5NzM1NCwtMTEzNjQ3NTYyMiwtOTc2NjM5
+NDUwLC03ODY4NTI1NTMsMTM5NTk1NTI4OCwtMTU1ODg2MTI4NS
+wtMTY2OTI5ODAxOSwtMTQxOTczOTIyMSwxMjY4NjYyMTg4XX0=
 
 -->
