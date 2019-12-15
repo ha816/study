@@ -1,13 +1,12 @@
-# 리스트(LIST)
-특정 타입 값들이 정렬된 컬렉션이다. 리스트는 자바의 내장 컬렉션인 배열하고 다르다. 리스트는 크기 지정에 한계가 없으므로 리스트를 사용하기 전에 크기를 지정할 필요가 없다. 자바에서는 일반적으로 ArrayList나 LinkedList 클래스를 사용한다. ArrayList와 LinkedList는 상황에 따라 성능의 차이가 있다. 
-
-
-# 배열과 리스트의 관계
+# 배열
 
 배열의 특징
 * 배열은 정의할때 크기를 지정해야 한다. 
-* 배열에 특정 원소에 인덱스 값으로 접근하는 것을 랜덤 접근이라 하며 굉장히 빠르다. 
+* 배열에 특정 원소에 인덱스 값으로 접근하는 것을 랜덤 접근(Random Access)이라 하며 굉장히 빠르다. 
 * 배열 전체를 사용 중일때 원소를 추가하려면 더 큰 배열을 만들고 현재 배열에 있는 원소를 모두 복사하는 방식으로 새 배열을 만든다. 
+
+# 리스트(LIST)
+특정 타입 값들이 정렬된 컬렉션이다. 리스트는 자바의 내장 컬렉션인 배열하고 다르다. 리스트는 크기 지정에 한계가 없으므로 리스트를 사용하기 전에 크기를 지정할 필요가 없다. 자바에서는 일반적으로 ArrayList나 LinkedList 클래스를 사용한다. ArrayList와 LinkedList는 상황에 따라 성능의 차이가 있다. 
 
 ArrayList의 특징
 * 내부적으로 배열을 사용한다. 즉 배열의 특징을 그대로 가져간다.(랜덤 접근, 전체 복사)
@@ -113,7 +112,7 @@ Set은 Collection 인터페이스를 확장한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjIxMzI5NzMsLTE2MzY5MTk3NzUsNj
-IwMTU1MDUsMTQ5OTA4MzAxOCwtMjI5MzcxMDMzLDE3Nzk2OTI5
-MjZdfQ==
+eyJoaXN0b3J5IjpbNjMxMjMyMjAxLC0yMDIyMTMyOTczLC0xNj
+M2OTE5Nzc1LDYyMDE1NTA1LDE0OTkwODMwMTgsLTIyOTM3MTAz
+MywxNzc5NjkyOTI2XX0=
 -->
