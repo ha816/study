@@ -15,6 +15,40 @@ JVM에서 가장 먼저 해야할 일은 컴파일이다. 컴파일을 하면 .c
 
 자바에서는 C나 C++의 잘 정의된 헤더를 사용할 수 있는 native 메서드를 사용할 수 있다. 코드가 JVM에 로드됐을때 고유(native) 코드를 등록해야 한다 그래야 메서드 호출시 코드를 실행하는데 정확히 필요한 것을 알 수 있다. 
 
+## JVM 메모리 영역
+
+new 키워드는 자바 heap영역에 메모리를 할당한다. 힙은 애플리케이션 영역에 접근할 수 있는 메모리의 영역이다. 객체를 할당할때 이용할 수 있는 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 한다. 그래도 충분한 메모리가 없으면 OutOfMemoryError가 발생하며 JVM이 종료된다. 
+
+![enter image description here](https://cdn.journaldev.com/wp-content/uploads/2014/05/Java-Memory-Model.png)
+  
+힙은 제네레이션이라는 몇 가지 영역으로 구분된다. 객체가 처음 생겼을때는 Eden이라는 메모리영역에 할당된다. 그 후에 가비지 컬렉션의 수집 대상에서 제외되면 Survivor이라고 하는 메모리 영역으로 간다. 이 공간에서도 수집 대상에서 제외되는 객체는 Tenured(Old)에 옮겨진다. 이 제네레이션은 더 낮은 빈도로 가비지 컬렉터의 대상이 된다. 
+
+마지막으로 PermGen이라고 하는 제네레이션도 있다. 여기 속한 객체는 가비지 컬렉션에서 선택되지 않고, 일반적으로 String이나 상수 같이 JVM에서 실행되는데 필요한 불변상태가 포함된다. 자바 8에서 PermGen은 물리 메모리에 위치할 MetaSpace라는 새로운 영역으로 변경되었다. 
+
+
+JVM에서 실행되는 모든 프로그램들(스레드)들은 메소드 영역과 힙 영역을 공유하게 된다.  
+
+![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
+
+
+메소드 영역(Method Area)
+* 자바 프로그램을 구성하고 있는 **메소드와 클래스 변수(static으로 선언된 변수)를 저장**하기 위한 공간이다.  
+* JVM은 복수개의 스레드가 메소드를 정상적으로 사용하기 위한 동기화 기법을 제공
+
+힙 영역(Heap)
+* 프로그램 상에서 데이터를 저장하기 위해 동적으로(실행시간에)할당하여 쓸 수 있는 메모리 영역, new 연산자를 통하여 개체를 동적으로 생성시  
+* 메소드 영역과 같이 모든 프로그램에 의해 공유되는 공간
+
+스택영역(Stack area)  
+* LIFO(Last-In-First-Out)  
+* **메소드가 호출되어 실행될 때**  멤소드의 매개변수, 메소드 내에 선언된 메소드 지역변수, 번호나 값, 임시 변수 등을 저장하기 위한 공간
+* 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환
+
+> 스택과 힙의 차이는?
+
+스택은 기본값, 객체의 참조, 메서드가 저장되는 위치이다. 따라서 스택은 변수의 생애주기는 코드의 스코프에 영향을 받는다. 특정 스코프의 실행이 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
+
+
 # GC(Garbage Collection)
 
 > GC(가비지 컬렉션)이란 무엇인가?
@@ -35,6 +69,6 @@ JVM에서 가장 먼저 해야할 일은 컴파일이다. 컴파일을 하면 .c
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NDgyMjk3MywtMTU1ODg2MTI4NSwtMT
-Y2OTI5ODAxOSwtMTQxOTczOTIyMSwxMjY4NjYyMTg4XX0=
+eyJoaXN0b3J5IjpbLTEzOTU4MzAzNzIsLTE1NTg4NjEyODUsLT
+E2NjkyOTgwMTksLTE0MTk3MzkyMjEsMTI2ODY2MjE4OF19
 -->
