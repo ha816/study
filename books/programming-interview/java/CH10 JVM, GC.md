@@ -48,7 +48,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 > GC(가비지 컬렉션)이란 무엇인가?
 
-가비지 컬렉션은 기존에 할당된 메모리를 재사용하는 메커니즘으로, 나중에 메모리를 할당할때 재사용할 수 있다. 대부분의 프로그래밍 언어는 가비지 컬렉션을 자동으로 실행한다. 가비지 컬렉션을 쓰면 메모리를 직접 해제할 필요가 없다. 
+가비지 컬렉션은 기존에 할당된 메모리 중 사용되지 않는 메모리를  재사용하는 메커니즘이다.가비지 컬렉션을 쓰면 메모리를 직접 해제할 필요가 없다. 
 
 가비지 컬렉션 알고리즘은 몇 가지가 있다. 모두 작동 중인 코드에서 더 이상 참조하지 않는 메모리를 찾은 후 메모리를 할당할 때 이용할 수 있도록 반환한다는 공통점이 있다. 전통적인 방법은 mark-and-sweep방식이다. 실행 중인 코드에서 참조하는 객체는 live로 표시되고 참조하는 것도 live로 한다. 
 
@@ -64,8 +64,9 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkwOTg0NDY5LC0xODg0MzA5MTg5LC0yMT
-gyOTczNTQsLTExMzY0NzU2MjIsLTk3NjYzOTQ1MCwtNzg2ODUy
-NTUzLDEzOTU5NTUyODgsLTE1NTg4NjEyODUsLTE2NjkyOTgwMT
-ksLTE0MTk3MzkyMjEsMTI2ODY2MjE4OF19
+eyJoaXN0b3J5IjpbMTM4Nzc5MzQwNiw3OTA5ODQ0NjksLTE4OD
+QzMDkxODksLTIxODI5NzM1NCwtMTEzNjQ3NTYyMiwtOTc2NjM5
+NDUwLC03ODY4NTI1NTMsMTM5NTk1NTI4OCwtMTU1ODg2MTI4NS
+wtMTY2OTI5ODAxOSwtMTQxOTczOTIyMSwxMjY4NjYyMTg4XX0=
+
 -->
