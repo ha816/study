@@ -14,10 +14,6 @@
 
 객체들의 관계를 트리 구조로 구성하며, 사용자가 단일 객체와 복합 객체 모두 동일하게 다루도록 한다. 복합 객체와 단일 객체의 처리 방법이 다르지 않을 경우, 전체-부분 관계로 정의할 수 있다. 전체-부분 관계의 대표적인 예는 Directory-File 이 존재한다.
 
-하나 이상의 유사한 객체를 구성으로 설계된 객체로 모두 유사한 기능을 나타낸다.
-
-컴포지트 패턴은 클라이언트가 복합 객체(group of object) 나 단일 객체를 동일하게 취급하는 것을 목적으로 한다. (whole-part) 관계를 표현하는 것이다.
-
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/99E9FF455C84AF1E20)
 
 
@@ -98,6 +94,6 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjgyNDM0NjIsLTM3Njc3ODE2NywtND
+eyJoaXN0b3J5IjpbLTE1MDQzMDYwNTcsLTM3Njc3ODE2NywtND
 A3NDk4MTQsLTExMTE4NTE0NzldfQ==
 -->
