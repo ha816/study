@@ -45,7 +45,7 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 객체를 할�
 
 ### 스택영역(Stack Area)  
 
-스택영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 객체의 참조, 메서드가 저장되는 위치이다. 따라서 스택은 변수의 생애주기는 코드의 스코프에 영향을 받는다. 특정 스코프의 실행이 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
+스택영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 위치이다. 스택 변수의 생애주기는 코드의 스코프에 영향을 받는다. 특정 스코프의 실행이 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
 
 스택영역(Stack area)  
 * LIFO(Last-In-First-Out)  
@@ -75,8 +75,8 @@ new 키워드는 자바 heap영역에 메모리를 할당한다. 객체를 할�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgxNTcxODE4LC0yMTgyOTczNTQsLTExMz
-Y0NzU2MjIsLTk3NjYzOTQ1MCwtNzg2ODUyNTUzLDEzOTU5NTUy
-ODgsLTE1NTg4NjEyODUsLTE2NjkyOTgwMTksLTE0MTk3MzkyMj
-EsMTI2ODY2MjE4OF19
+eyJoaXN0b3J5IjpbMTM0MDgzMjYxMCwtMjE4Mjk3MzU0LC0xMT
+M2NDc1NjIyLC05NzY2Mzk0NTAsLTc4Njg1MjU1MywxMzk1OTU1
+Mjg4LC0xNTU4ODYxMjg1LC0xNjY5Mjk4MDE5LC0xNDE5NzM5Mj
+IxLDEyNjg2NjIxODhdfQ==
 -->
