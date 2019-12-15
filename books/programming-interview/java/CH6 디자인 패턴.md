@@ -1,6 +1,6 @@
 # 빌더 패턴
 
->빌더 패턴은 얼마나 유용한가?
+
 
 * 다루고자 하는 객체 생성시 객체가 가지는 필드가 많을 경우 유용한 패턴.
 * 객체 생성시 필요한 필드가 많아지면 가독성이 저하되고 필드 관리가 안된다. 
@@ -90,6 +90,6 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NDA4MTYsLTM3Njc3ODE2NywtNDA3ND
-k4MTQsLTExMTE4NTE0NzldfQ==
+eyJoaXN0b3J5IjpbNTQwMzY3NzI2LC01NjQwODE2LC0zNzY3Nz
+gxNjcsLTQwNzQ5ODE0LC0xMTExODUxNDc5XX0=
 -->
