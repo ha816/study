@@ -2,10 +2,9 @@
 
 > JVM?
 
-JVM은 Java Virtual Machine의 약자로 Java 프로그램이 실행되는 장소다. 운영체제와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 
-그리고 JVM은 메모리 관리를 위해 GC를 수행한다. 
+JVM은 Java Virtual Machine의 약자로 Java 프로그램이 실행되는 장소다. 운영체제와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 그리고 JVM은 메모리 관리를 위해 GC를 수행한다. 
 
-## JVM과 Java간 상호작용
+> JVM의 역할
 
 JVM의 핵심적 작업은 compile이다. 컴파일을 하면 .class확장자를 가진 바이트 코드가 생성된다. 이러한 바이트코드를 실행 중인 JVM의 메모리로 가져오는 걸 class loading(클래스 로딩)이라고 한다. 이것을 클래스 로더가 한다. 이 클래스 로더는 클래스 파일을 추상화해 디스크, JAR 같은 것들을 메모리로 불러 올 수 있다. 
 
@@ -67,6 +66,7 @@ JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NTk1NTI4OCwtMTU1ODg2MTI4NSwtMT
-Y2OTI5ODAxOSwtMTQxOTczOTIyMSwxMjY4NjYyMTg4XX0=
+eyJoaXN0b3J5IjpbMTg4ODA4NzUzNCwxMzk1OTU1Mjg4LC0xNT
+U4ODYxMjg1LC0xNjY5Mjk4MDE5LC0xNDE5NzM5MjIxLDEyNjg2
+NjIxODhdfQ==
 -->
