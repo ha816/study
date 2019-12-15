@@ -10,7 +10,13 @@
 
 # 컴포지트 패턴
 
+> 컴포지트 패턴이란?
+
+객체들의 관계를 트리 구조로 구성하며, 사용자가 단일 객체와 복합 객체 모두 동일하게 다루도록 한다.
+
 ![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Composite_UML_class_diagram_%28fixed%29.svg/600px-Composite_UML_class_diagram_%28fixed%29.svg.png)
+
+
 
 # 스트레티지 패턴
 
@@ -89,5 +95,5 @@ ObjectOutputStream은 자바에 내장된 객체나 primitive 타입을 스트�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE2OTc3MzY4LC0xMTExODUxNDc5XX0=
+eyJoaXN0b3J5IjpbLTQwNzQ5ODE0LC0xMTExODUxNDc5XX0=
 -->
