@@ -103,13 +103,12 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 
 
 ## AOP(aspect oriented programming)
-
 액스펙트 지향 프로그래밍은 소프트웨어 시스템 내부의 관심사들을 서로 분리하는 기술이다. 관심사의 분리(separation of concerns)
 
 시스템은 보통 특정 기능을 책임지는 여러개의 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 본연의 기능 외에 로깅이나 트랜잭션 관리, 보안등 시스템 서비스도 수행해야 하는 경우가 많다. 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다
 
 이렇게 관심사가 여러 컴포넌트에 퍼지면 코드는 두가지 관점에서 복잡해진다.
-1. 여러 컴포넌트에 같은 코드가 중복외더 나타난다. 만약 코드가 변경되어야 하는 경우 모든 컴포넌트를 변경해야 한다. 
+1. 여러 컴포넌트에 같은 코드가 중복되어 나타난다. 만약 코드가 변경되어야 하는 경우 모든 컴포넌트를 변경해야 한다. 
 2. 컴포넌트가 본연의 기능과 관련 없는 기능 코드로 지저분해진다. 메소드의 보안이나 로깅 같은 기능을 위해 코드가 지저분해지는것을 피하도록 하자 
  
 AOP는 시스템 서비스를 모듈화해서 컴포넌트에 선언적으로 작용한다. 
@@ -133,6 +132,6 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAyODMwMTg5LDE3OTU4OTIwMTUsLTMxMD
+eyJoaXN0b3J5IjpbODQxMzE2MDU5LDE3OTU4OTIwMTUsLTMxMD
 M2Nzg1OSwtMTkyNTE1MDcyN119
 -->
