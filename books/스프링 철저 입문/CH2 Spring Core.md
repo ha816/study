@@ -116,7 +116,14 @@ AOP를 사용하면 시스템 서비스에 대해서는 전혀 알지 못하지�
 
 애스펙트를 애플리케이션의 여러 컴포넌트를 덮는 담요처럼 생각하면 도움이 된다. 이 담요에 포함되면 해당 트랜잭션, 로깅, 보안 등에 관리된 기능을 사용할 수 있다. 
 
-## 애스펙트 사용하기
+### 대표적 용어
+
+* 애스펙트(Aspect)
+	* df
+
+
+
+### 애스펙트 사용하기
 
 스프링의 aop 설정 네임스페이스를 사용해서 빈이 액스펙트라고 선언 
 ```
@@ -135,6 +142,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzE2MjMxNzEsMzEzODYyOTY3LDE3OT
-U4OTIwMTUsLTMxMDM2Nzg1OSwtMTkyNTE1MDcyN119
+eyJoaXN0b3J5IjpbLTEyNjM3NTI1NywtMTUzMTYyMzE3MSwzMT
+M4NjI5NjcsMTc5NTg5MjAxNSwtMzEwMzY3ODU5LC0xOTI1MTUw
+NzI3XX0=
 -->
