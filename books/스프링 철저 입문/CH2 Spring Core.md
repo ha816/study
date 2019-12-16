@@ -101,7 +101,41 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 : 
 
-> Written with [StackEdit](https://stackedit.io/).
+
+## AOP(aspect oriented programming)
+애스펙트와 공통 규약을 통한 선언적 프로그래밍 
+DI 가 소프트웨어 컴포넌트의 결합도를 낮춰 준다면 애스펙트 지향 프로그래밍은 애플리케이션 전체에 걸쳐 사용되는 기능을 재사용할 수 있는 컴포넌트에 담는다 .
+
+액스펙트 지향 프로그래밍은 소프트웨어 시스템 내부의 관심사들을 서로 분리하는 기술이다. 
+관심사의 분리(separation of concerns)
+
+시스템은 보통 특정한 기능을 책임지는 여러개의 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 본연의 기능 외에 로깅이나 트랜잭션 관리, 보안등 시스템 서비스도 수행해야 하는 경우가 많다. 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사라고 한다.(cross-cutting concerns)라고 한다. 
+
+이렇게 관심사가 여러 컴포넌트에 퍼지면 코드는 두가지 관점에서 복잡해진다.
+1. 여러 컴포넌트에 같은 코드가 중복외더 나타난다. 만약 코드가 변경되어야 하는 경우 모든 컴포넌트를 변경해야 한다. 
+2. 컴포넌트가 본연의 기능과 관련 없는 기능 코드로 지저분해진다. 메소드의 보안이나 로깅 같은 기능을 위해 코드가 지저분해지는것을 피하도록 하자 
+ 
+AOP는 시스템 서비스를 모듈화해서 컴포넌트에 선언적으로 작용한다. 
+AOP를 사용하면 시스템 서비스에 대해서는 전혀 알지 못하지만, 본연에 관심사에 집중하는 컴포넌트를 만든다. 
+
+애스펙트를 애플리케이션의 여러 컴포넌트를 덮는 담요처럼 생각하면 도움이 된다. 이 담요에 포함되면 해당 트랜잭션, 로깅, 보안 등에 관리된 기능을 사용할 수 있다. 
+
+코드 1.11 Minstrel를 애스펙트로 선언하기 
+
+스프링의 aop 설정 네임스페이스를 사용해서 빈이 액스펙트라고 선언 
+<aop:aspect>
+	<aop:pointcut id="embark" expression = "execution(* *.embarkOnQuest(..))" // 포인트컷 정의
+
+embark라는 이름의 포인트 컷을 정의, 어드바이스가 적용될 위치를 expression 어트리뷰트에서 표현; * *.embarkOnQuest(..)는 AspectJ의 포인트커트 표현식언어
+	
+<aop: before point-cut-ref="embark"
+method = "singBeforeQuest"/> //before 어드바이스 정의
+
+<aop: after point-cut-ref="embark"
+method = "singAfterQuest"/> // after 어드바이스 정의 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMDM2Nzg1OSwtMTkyNTE1MDcyN119
+eyJoaXN0b3J5IjpbNzA0MDEyNDk2LC0zMTAzNjc4NTksLTE5Mj
+UxNTA3MjddfQ==
 -->
