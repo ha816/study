@@ -119,19 +119,22 @@ AOP를 사용하면 시스템 서비스에 대해서는 전혀 알지 못하지�
 ## 애스펙트 사용하기
 
 스프링의 aop 설정 네임스페이스를 사용해서 빈이 액스펙트라고 선언 
+```
 <aop:aspect>
 	<aop:pointcut id="embark" expression = "execution(* *.embarkOnQuest(..))" // 포인트컷 정의
+```
 
-embark라는 이름의 포인트 컷을 정의, 어드바이스가 적용될 위치를 expression 어트리뷰트에서 표현; * *.embarkOnQuest(..)는 AspectJ의 포인트커트 표현식언어
-	
+embark라는 이름의 포인트 컷을 정의, 어드바이스가 적용될 위치를 expression 어트리뷰트에서 표현; .embarkOnQuest(..)는 AspectJ의 포인트커트 표현식언어
+
+```	
 <aop: before point-cut-ref="embark"
 method = "singBeforeQuest"/> //before 어드바이스 정의
 
 <aop: after point-cut-ref="embark"
 method = "singAfterQuest"/> // after 어드바이스 정의 
-
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEzODYyOTY3LDE3OTU4OTIwMTUsLTMxMD
-M2Nzg1OSwtMTkyNTE1MDcyN119
+eyJoaXN0b3J5IjpbLTE1MzE2MjMxNzEsMzEzODYyOTY3LDE3OT
+U4OTIwMTUsLTMxMDM2Nzg1OSwtMTkyNTE1MDcyN119
 -->
