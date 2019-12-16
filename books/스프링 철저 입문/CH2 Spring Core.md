@@ -131,8 +131,6 @@ AOP를 사용하면 시스템 서비스에 대해서는 전혀 알지 못하지�
 * 타깃(Target)
 	* AOP 처리에 의해 처리 흐름에 변화가 생긴 객체를 말한다. 
 
-
-
 ### 애스펙트 사용하기
 
 스프링의 aop 설정 네임스페이스를 사용해서 빈이 액스펙트라고 선언 
@@ -152,7 +150,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwMDYxNTAwLC0xNTMxNjIzMTcxLDMxMz
-g2Mjk2NywxNzk1ODkyMDE1LC0zMTAzNjc4NTksLTE5MjUxNTA3
-MjddfQ==
+eyJoaXN0b3J5IjpbLTE5MTI4OTY0MTYsNTcwMDYxNTAwLC0xNT
+MxNjIzMTcxLDMxMzg2Mjk2NywxNzk1ODkyMDE1LC0zMTAzNjc4
+NTksLTE5MjUxNTA3MjddfQ==
 -->
