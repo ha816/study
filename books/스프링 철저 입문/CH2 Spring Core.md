@@ -119,7 +119,7 @@ AOP를 사용하면 시스템 서비스에 대해서는 전혀 알지 못하지�
 ### 대표적 용어
 
 * 애스펙트(Aspect)
-	* df
+	* Aop의 단위가 되는 횡단 관심사에 속한다. 예를 들어 "로그를 출력한다", "예외를 처리한다", "트랜잭션으 "
 
 
 
@@ -142,7 +142,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjM3NTI1NywtMTUzMTYyMzE3MSwzMT
-M4NjI5NjcsMTc5NTg5MjAxNSwtMzEwMzY3ODU5LC0xOTI1MTUw
-NzI3XX0=
+eyJoaXN0b3J5IjpbNTQxNDczMDk5LC0xNTMxNjIzMTcxLDMxMz
+g2Mjk2NywxNzk1ODkyMDE1LC0zMTAzNjc4NTksLTE5MjUxNTA3
+MjddfQ==
 -->
