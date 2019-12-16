@@ -20,7 +20,7 @@
 
 ### 애플리케이션 모듈이 제공하는 데이터 소스
 
-Commons DBCP, DriverManagerDataSource를 데이터 소스로 사용할때 설정 방식을 알아보자. JDBC 접속에 필요한 각종 정보와 커넥션 풀의 설정 등은 jdbc.properties에 기재되어 있다고 가정한다. 
+DriverManagerDataSource를 데이터 소스로 사용할때 설정 방식을 알아보자. JDBC 접속에 필요한 각종 정보와 커넥션 풀의 설정 등은 jdbc.properties에 기재되어 있다고 가정한다. 
 ``` //jdbc.properties
 database.url = jdbc:mysql://localhost
 database.driverClassName = org.mysql.Driver
@@ -431,11 +431,11 @@ NESTED 메서드라면 REQUIRED와 매우 유사하다. 하지만 NESTED 메서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY0MTcyNyw0NDEyOTgxNzEsODg5NzE2Nj
-c5LC0zNzU4MDgyODIsMTM0MDEzNzQzMSw1OTMzNjgyNjIsMzcx
-OTAzMDgsMjY4MTc0NjUxLDE3MzYzNTAyMzcsMTgwMjg5NzYyOC
-wtMjAxODY3OTQ2NCw4NDE3Mjc4MCwtNTU5NzA3MzE1LDExMjAz
-MzkwNDUsLTE2MjY2Mzc4NSw3Mzg2Mjg5MDMsLTYwNzk4NDY1Ny
-wtMTIyNTA5MjM0NywtMTk4NDg3MTg4MSw4OTY0NDA1OTNdfQ==
+eyJoaXN0b3J5IjpbLTEwMjQ0ODg2ODIsNDY0MTcyNyw0NDEyOT
+gxNzEsODg5NzE2Njc5LC0zNzU4MDgyODIsMTM0MDEzNzQzMSw1
+OTMzNjgyNjIsMzcxOTAzMDgsMjY4MTc0NjUxLDE3MzYzNTAyMz
+csMTgwMjg5NzYyOCwtMjAxODY3OTQ2NCw4NDE3Mjc4MCwtNTU5
+NzA3MzE1LDExMjAzMzkwNDUsLTE2MjY2Mzc4NSw3Mzg2Mjg5MD
+MsLTYwNzk4NDY1NywtMTIyNTA5MjM0NywtMTk4NDg3MTg4MV19
 
 -->
