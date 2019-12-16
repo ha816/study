@@ -103,8 +103,7 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 
 
 ## AOP(aspect oriented programming)
-애스펙트와 공통 규약을 통한 선언적 프로그래밍 
-DI 가 소프트웨어 컴포넌트의 결합도를 낮춰 준다면 애스펙트 지향 프로그래밍은 애플리케이션 전체에 걸쳐 사용되는 기능을 재사용할 수 있는 컴포넌트에 담는다 .
+DI 가 컴포넌트의 결합도를 낮춰 준다면 애스펙트 지향 프로그래밍은 애플리케이션 전체에 걸쳐 사용되는 기능을 재사용할 수 있는 컴포넌트에 담는다 .
 
 액스펙트 지향 프로그래밍은 소프트웨어 시스템 내부의 관심사들을 서로 분리하는 기술이다. 
 관심사의 분리(separation of concerns)
@@ -136,6 +135,6 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA0MDEyNDk2LC0zMTAzNjc4NTksLTE5Mj
-UxNTA3MjddfQ==
+eyJoaXN0b3J5IjpbMTc5NTg5MjAxNSwtMzEwMzY3ODU5LC0xOT
+I1MTUwNzI3XX0=
 -->
