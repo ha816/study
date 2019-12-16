@@ -2,7 +2,7 @@
 데이터 소스는 애플리케이션이 데이터베이스에 접근 하는데 필요한 연결을 제공한다. 즉 추상화된 커넥션을 제공한다. 그리고 스프링에서 제공하는 데이터 소스에서는 세가지 종류가 있다. 
 
 * 애플리케이션 모듈이 제공하는 데이터 소스
-	* Commons DBCP나 Tomcat JDBC Connection Pool과 같은 서드파티나 DriverManagerDataSource같이 스프링이 제공하는 데이터 소스를 빈으로 등록해서 사용하는 방식을 말한다. 이런 방식은 데이터베이스에 접속하기 위한 ID와 패스워드, 접속 대상 URL 같은 정보를 애플리케이션이 직접 관리하고 데이터 소스에 설정해야 한다. 
+	* Commons DBCP 나 Tomcat JDBC Connection Pool과 같은 서드파티나 DriverManagerDataSource같이 스프링이 제공하는 데이터 소스를 빈으로 등록해서 사용하는 방식을 말한다. 이런 방식은 데이터베이스에 접속하기 위한 ID와 패스워드, 접속 대상 URL 같은 정보를 애플리케이션이 직접 관리하고 데이터 소스에 설정해야 한다. 
 * 애플리케이션 서버가 제공하는 데이터 소스
 	* 애플리케이션 서버가 정의한 데이터 소스를 JNDI(Java Naming and Directory Interface)를 통해 가져와서 사용하는 방식이다. 이 방식은 데이터 베이스에 접근하기 위해 필요한 각종 정보를 애플리케이션 서버에서 제공하기 때문에 애플리케이션이 데이터 베이스 정보를 관리할 필요가 없다. 
 * 내장형 데이터베이스를 사용하는 데이터 소스
@@ -431,11 +431,11 @@ NESTED 메서드라면 REQUIRED와 매우 유사하다. 하지만 NESTED 메서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQxMjk4MTcxLDg4OTcxNjY3OSwtMzc1OD
-A4MjgyLDEzNDAxMzc0MzEsNTkzMzY4MjYyLDM3MTkwMzA4LDI2
-ODE3NDY1MSwxNzM2MzUwMjM3LDE4MDI4OTc2MjgsLTIwMTg2Nz
-k0NjQsODQxNzI3ODAsLTU1OTcwNzMxNSwxMTIwMzM5MDQ1LC0x
-NjI2NjM3ODUsNzM4NjI4OTAzLC02MDc5ODQ2NTcsLTEyMjUwOT
-IzNDcsLTE5ODQ4NzE4ODEsODk2NDQwNTkzLDIxMTA3OTk1MTFd
-fQ==
+eyJoaXN0b3J5IjpbNDY0MTcyNyw0NDEyOTgxNzEsODg5NzE2Nj
+c5LC0zNzU4MDgyODIsMTM0MDEzNzQzMSw1OTMzNjgyNjIsMzcx
+OTAzMDgsMjY4MTc0NjUxLDE3MzYzNTAyMzcsMTgwMjg5NzYyOC
+wtMjAxODY3OTQ2NCw4NDE3Mjc4MCwtNTU5NzA3MzE1LDExMjAz
+MzkwNDUsLTE2MjY2Mzc4NSw3Mzg2Mjg5MDMsLTYwNzk4NDY1Ny
+wtMTIyNTA5MjM0NywtMTk4NDg3MTg4MSw4OTY0NDA1OTNdfQ==
+
 -->
