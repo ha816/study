@@ -46,6 +46,8 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 스파크 SQL은 스파크와 하이브 SQL이 지원하는 SQL을 사용해 대규모 분산 정형 데이터를 다룰 수 있는 기능을 제공한다. JSON 파일, 관계형 데이터 베이스 테이블등 다양한 정형 데이터를 읽고 쓰는데 스파크 SQL을 사용할 수 있다. 
 
+스파크 SQL은 DataFrame과 Dateset에 적용된 연산을 일정 시점에 RDD 연산으로 변환해 일반 스파크 잡으로 실행한다. 
+
 ## Streaming
 
 ## GraphX
@@ -61,7 +63,7 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NDQyODU3OSw4MTAxMTYwMzgsLTE5OT
-EwMzI5MzQsMzU2MTczNDY1LDIwOTIzNjY1MzAsLTE4NzkyNTc3
-NTddfQ==
+eyJoaXN0b3J5IjpbMTU1NzA5ODY1OSwxNDQ0NDI4NTc5LDgxMD
+ExNjAzOCwtMTk5MTAzMjkzNCwzNTYxNzM0NjUsMjA5MjM2NjUz
+MCwtMTg3OTI1Nzc1N119
 -->
