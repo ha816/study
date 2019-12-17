@@ -56,7 +56,7 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 ## GraphX
 
-그래프는 정점과 두 정점을 있는 간선으로 구성된 데이터 구조다. 
+그래프는 정점과 두 정점을 있는 간선으로 구성된 데이터 구조다. 그래프X는 그래프 RDD(EdgeRdd 및 VertexRDD) 형태의 그래프 구조를 만들 수 있는 다양한 기능을 제공한다.  GraphX에는 패이지 랭크, 최단경로, SVD등 그래프 인
 
 ## MLlib
 
@@ -69,7 +69,7 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU1MDI1NTU4LDE0NDQ0Mjg1NzksODEwMT
-E2MDM4LC0xOTkxMDMyOTM0LDM1NjE3MzQ2NSwyMDkyMzY2NTMw
-LC0xODc5MjU3NzU3XX0=
+eyJoaXN0b3J5IjpbLTE2MDA2MTIyNyw1NTUwMjU1NTgsMTQ0ND
+QyODU3OSw4MTAxMTYwMzgsLTE5OTEwMzI5MzQsMzU2MTczNDY1
+LDIwOTIzNjY1MzAsLTE4NzkyNTc3NTddfQ==
 -->
