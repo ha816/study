@@ -3,8 +3,10 @@
 스파크(Apache Spark)는 고속 범용 분산 컴퓨팅 플랫폼이다. 
 * 메모리 기반으로 하둡 맵 리듀스보다 10배 ~100배 빠르다.
 * 컬렉션 기반의 API로 사용자는 클러스터를 다루는 사실을 인지할 필요없다.
+* 파이썬, 자바, R, 스칼라도 사용가능하다.
 
-스파크는 자바
+스파크는 또한 맵리듀스와 유사한 일괄 처리기능, 실시간 데이터 처리, SQL과 유사한 정형 데이터 처리, 그래프 알고리즘, 머신 러닝 알고리즘을 모두 단일 프레임워크로 통합했다.
+
 
 # 스파크 구성 컴포넌트
 
@@ -17,5 +19,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg5NjY3OTQwXX0=
+eyJoaXN0b3J5IjpbLTE4NzkyNTc3NTddfQ==
 -->
