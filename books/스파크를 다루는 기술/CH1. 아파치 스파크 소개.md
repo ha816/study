@@ -4,7 +4,7 @@
 * 메모리 기반으로 하둡 맵 리듀스보다 10배 ~100배 빠르다.
 * 컬렉션 기반의 API로 사용자는 클러스터를 다루는 사실을 인지할 필요없다.
 
-스팤
+스파크는 자바
 
 # 스파크 구성 컴포넌트
 
@@ -17,5 +17,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODk2OTIzNDhdfQ==
+eyJoaXN0b3J5IjpbNzg5NjY3OTQwXX0=
 -->
