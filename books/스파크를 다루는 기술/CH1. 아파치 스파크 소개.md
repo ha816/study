@@ -61,7 +61,9 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 ## MLlib
 
 스파크 MLlib는 UC 버클리의 MLbase 프로젝트에서 개발한 머신 러닝 알고리즘 라이브러리이다. 
-로지스틱 회귀, 나이브 베이즈 분류, 서포트 벡터 머신, 의사 결정 트리, 랜덤 포레스트, 선형 회귀, k-평균 군집화등 
+로지스틱 회귀, 나이브 베이즈 분류, 서포트 벡터 머신, 의사 결정 트리, 랜덤 포레스트, 선형 회귀, k-평균 군집화등 다양한 머신 러닝 알고리즘을 지원한다. 
+
+스파크 MLlib를 사용해 RDD 또는 DataFrame의 데이터 셋을 변환하는 머신러닝 모델을 구현할 수 있다.
 
 # 스파크 프로그램의 실행 과정
 
@@ -72,7 +74,7 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1Mzc2MjU4LDU1NTAyNTU1OCwxNDQ0ND
-I4NTc5LDgxMDExNjAzOCwtMTk5MTAzMjkzNCwzNTYxNzM0NjUs
-MjA5MjM2NjUzMCwtMTg3OTI1Nzc1N119
+eyJoaXN0b3J5IjpbMTg4MjEwMDg4MCw1NTUwMjU1NTgsMTQ0ND
+QyODU3OSw4MTAxMTYwMzgsLTE5OTEwMzI5MzQsMzU2MTczNDY1
+LDIwOTIzNjY1MzAsLTE4NzkyNTc3NTddfQ==
 -->
