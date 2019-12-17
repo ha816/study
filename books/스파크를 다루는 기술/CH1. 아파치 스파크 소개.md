@@ -56,9 +56,12 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 ## GraphX
 
-그래프는 정점과 두 정점을 있는 간선으로 구성된 데이터 구조다. 그래프X는 그래프 RDD(EdgeRdd 및 VertexRDD) 형태의 그래프 구조를 만들 수 있는 다양한 기능을 제공한다.  GraphX에는 패이지 랭크, 최단경로, SVD등 그래프 인
+그래프는 정점과 두 정점을 있는 간선으로 구성된 데이터 구조다. 그래프X는 그래프 RDD(EdgeRdd 및 VertexRDD) 형태의 그래프 구조를 만들 수 있는 다양한 기능을 제공한다.  GraphX에는 패이지 랭크, 최단경로, SVD등 그래프 이론에서 가장 중요한 알고리즘이 구현되어 있다. 
 
 ## MLlib
+
+스파크 MLlib는 UC 버클리의 MLbase 프로젝트에서 개발한 머신 러닝 알고리즘 라이브러리이다. 
+로지스틱 회귀, 나이브 베이즈 분류, 서포트 벡터 머신, 의사 결정 트리, 랜덤 포레스트, 선형 회귀, k-평균 군집화등 
 
 # 스파크 프로그램의 실행 과정
 
@@ -69,7 +72,7 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDA2MTIyNyw1NTUwMjU1NTgsMTQ0ND
-QyODU3OSw4MTAxMTYwMzgsLTE5OTEwMzI5MzQsMzU2MTczNDY1
-LDIwOTIzNjY1MzAsLTE4NzkyNTc3NTddfQ==
+eyJoaXN0b3J5IjpbMTE1Mzc2MjU4LDU1NTAyNTU1OCwxNDQ0ND
+I4NTc5LDgxMDExNjAzOCwtMTk5MTAzMjkzNCwzNTYxNzM0NjUs
+MjA5MjM2NjUzMCwtMTg3OTI1Nzc1N119
 -->
