@@ -34,9 +34,11 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 # 스파크 구성 컴포넌트
 
-
+스파크는 아래와 같은 다양한 컴포넌트를 통해 여러 기능이 집약된 통합 플랫폼으로 발전했다. 
 
 ## 코어
+
+스파크 코어는 스파크 잡과 다른 스파크 컴포넌트에 필요한 기본 기능을 제공한다. 가장 중요한 개념은 스파크 API에서 핵심요소인 RDD(Resilient Distributed Dataset)이다. RDD는 분산 데이터 컬렉션(데이터 셋)을 추상화한 객체로 ㄷ
 
 ## SQL
 
@@ -55,6 +57,6 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA0OTQ2MDg1LC0xOTkxMDMyOTM0LDM1Nj
+eyJoaXN0b3J5IjpbNDE5NjkxMzYxLC0xOTkxMDMyOTM0LDM1Nj
 E3MzQ2NSwyMDkyMzY2NTMwLC0xODc5MjU3NzU3XX0=
 -->
