@@ -34,6 +34,18 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 # 스파크 구성 컴포넌트
 
+
+
+## 코어
+
+## SQL
+
+## Streaming
+
+## GraphX
+
+## MLlib
+
 # 스파크 프로그램의 실행 과정
 
 # 스파크 생태계
@@ -43,6 +55,6 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA2MjY5MTI1LC0xOTkxMDMyOTM0LDM1Nj
+eyJoaXN0b3J5IjpbNzA0OTQ2MDg1LC0xOTkxMDMyOTM0LDM1Nj
 E3MzQ2NSwyMDkyMzY2NTMwLC0xODc5MjU3NzU3XX0=
 -->
