@@ -12,7 +12,11 @@
 
 ## 하둡의 HDFS과 맵리듀스의 한계
 
+HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 프레임 워크는 분산 컴퓨터팅을 최초로 대중화 하는데 성공했다. 하둡은 데이터 분산 처리에서 반드시 고민해야 하는 다음 세 가지 문제를 해결했다.
 
+* 병렬처리(parallelization): 전체 연산을 잘게 나누어 동시에 처리하는법
+* 데이터 분산
+* 장애 내성
 
 
 # 스파크 구성 컴포넌트
@@ -26,5 +30,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQwMjQ0NzQxLC0xODc5MjU3NzU3XX0=
+eyJoaXN0b3J5IjpbMjA5MjM2NjUzMCwtMTg3OTI1Nzc1N119
 -->
