@@ -70,6 +70,8 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 300MB 크기의 로그 파일이 노드 세 개로 구성된 HDFS 클러스트에 분산 저장되어 있다고 하자. HDFS는 이 파일을 자동으로 128MB의 청크로 분할하고 (하둡에서는 블록이라는 용어로 사용), 각 블록을 클러스터의 여러 노드에 나누어 저장한다. 여기선 YARN 스파크를 실행하며, YARN 또한 스파크와 동일한 하둡 클러스터에서 실행한다고 가정한다. 
 
 
+
+
 # 스파크 생태계
 
 # 가상머신 설정
@@ -77,7 +79,7 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NDUwNDc2Myw1NTUwMjU1NTgsMTQ0ND
-QyODU3OSw4MTAxMTYwMzgsLTE5OTEwMzI5MzQsMzU2MTczNDY1
-LDIwOTIzNjY1MzAsLTE4NzkyNTc3NTddfQ==
+eyJoaXN0b3J5IjpbMTk0ODQxNjI4OSwtNDQ0NTA0NzYzLDU1NT
+AyNTU1OCwxNDQ0NDI4NTc5LDgxMDExNjAzOCwtMTk5MTAzMjkz
+NCwzNTYxNzM0NjUsMjA5MjM2NjUzMCwtMTg3OTI1Nzc1N119
 -->
