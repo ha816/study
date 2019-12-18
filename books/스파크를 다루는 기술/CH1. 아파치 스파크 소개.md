@@ -67,6 +67,7 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 # 스파크 프로그램의 실행 과정
 
+300MB 크기의 로그 파일이 노드 세 개로 구성된 HDFS 클러스트에 분산 저장되어 있다고 하자. HDFS는 이 파일을 자동으로 128MB의 청크로 분할하고 
 
 
 # 스파크 생태계
@@ -76,7 +77,7 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1OTQ3MTU5Niw1NTUwMjU1NTgsMTQ0ND
-QyODU3OSw4MTAxMTYwMzgsLTE5OTEwMzI5MzQsMzU2MTczNDY1
-LDIwOTIzNjY1MzAsLTE4NzkyNTc3NTddfQ==
+eyJoaXN0b3J5IjpbOTk4OTQxNDAsNTU1MDI1NTU4LDE0NDQ0Mj
+g1NzksODEwMTE2MDM4LC0xOTkxMDMyOTM0LDM1NjE3MzQ2NSwy
+MDkyMzY2NTMwLC0xODc5MjU3NzU3XX0=
 -->
