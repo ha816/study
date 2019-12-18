@@ -74,6 +74,8 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 데이터 전송이 완료되면 스파클 셀에서 RAM에 저장된 각 블록(스파크 용어로 파티션)을 참조 할 수 있다. 이 블록, 즉 파티션의 집ㅎ바이 바로 RDD가 참조하는 분산 컬렉션이며, 이 컬렉션에는 로그파일 줄(line)이 저장되어 있다. 간단히 말해 RDD를 사용하면 비-분산(non-distributed) 로컬 컬렉션을 처리하는 것과 같은 방식으로 대규모 분산 컬렉션을 다를 수 있다. 사용자는 컬렉션이 여러 클러스터 노드에 분산 저장된다는 사실을 굳이 알 필요가 없고, 노드 장애에 따로 대비할 필요도 없다. 
 
 
+
+
 # 스파크 생태계
 
 # 가상머신 설정
@@ -81,8 +83,8 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTI0ODc0MjUsLTQ0NDUwNDc2Myw1NT
-UwMjU1NTgsMTQ0NDQyODU3OSw4MTAxMTYwMzgsLTE5OTEwMzI5
-MzQsMzU2MTczNDY1LDIwOTIzNjY1MzAsLTE4NzkyNTc3NTddfQ
-==
+eyJoaXN0b3J5IjpbLTE0NTYyNjkxNywtMTkxMjQ4NzQyNSwtND
+Q0NTA0NzYzLDU1NTAyNTU1OCwxNDQ0NDI4NTc5LDgxMDExNjAz
+OCwtMTk5MTAzMjkzNCwzNTYxNzM0NjUsMjA5MjM2NjUzMCwtMT
+g3OTI1Nzc1N119
 -->
