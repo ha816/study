@@ -52,7 +52,6 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 #### 대칭성(symmetry) 
 
 대칭성은 두 객체는 서로 equals 여부가 같아야 한다는 뜻이다. 
-
 ```
 public final class CaseInsensitiveString {
 	private final String s;
@@ -133,18 +132,66 @@ public class ColorPoint extends Point {
 }
 ```
 
-위의 방식
+```
+Point p = new Point(1,2);
+ColorPoint cp = new ColorPoint(1,2, Color.RED);
+p.equals(cp) == true // cp instanceof Point == true; 
+// ColorPoint는 Point의 하위 클래스로 Point로 형변환이 가능하다.
+cp.equals(p) == false // p instanceof ColorPoint == false;
+// Point는 ColorPoint의 상위 클래스로 ColorPoint로 형변환이 불가하다.
+```
+위의 코드는 대칭성이 깨진다. 그러면 ColorPoint equals가 Point와 비교할때는 색상을 무시하도록 하면 해결될까?
+
+``` 
+@Override public boolean equals(Object o){ //ColorPoint
+	if(!(o instanceof Point)){
+		return false;
+	}
+	if(!(o instanceof ColorPoint)){ // Point클래스지만 ColorPoint가 아닌경우
+		return o.equals(this); // 색상을 무시하고 o가 가지는 equals로 판단
+	}
+	return super.equals(o) && ((ColorPoint) o).color == color;
+}
+```
+```
+ColorPoint p1 = new ColorPoint(1,2, Color.RED);
+Point p2 = new ColorPoint(1,2);
+ColorPoint p3 = new ColorPoint(1,2, Color.BLUE);
+p1.equals(p2) == p2.equals(p3) == true;
+p1.equals(p3) == false;
+```
+위의 코드는 전이성이 미성립함을 보인다. 위의 예제에서 보았듯이 다양한 경우에서 동치 요건이 맞지 않는 경우가 발생할 수 있다. 그렇다면 근본적인 해법은 무엇일까? **사실 이 현상은 모든 객체 지향 언어의 동치 관계에서 나타나는 근본적인 문제다.**
+
+**구체 클래스를 확장해 새로운 값을 추가하면서 equals 규약을 만족시킬 방법은 존재하지 않는다.**   객체 지향적 추상화의 이점을 포기하지 않는 한 말이다. 
+
+이 말은 얼핏, instanceof 검사를 getClass 검사로 바꾸면 규약도 지키고 값도 추가하면서 구체 클래스를 상속할 수 있다는 뜻으로 보인다. 
+
+```
+@Override public boolean equals(Object o){ 
+	if( o == null || o.getClass() != getClass())
+		return false;
+	Point p = (Point) o;
+ 	return p.x == x && p.y == y;
+}
+```
+instaceof 대신 getClass를 쓰면 완전히 같은 클래스 객체와 비교할때만 true 값이 나올 수 있다. 하지만 실제로 활용할 수는 없다. Point의 하위클래스는 여전히 Point이므로 어디서는 Point로써 활용되어야 한다. 이 말을 유식하게 리스코프 치환원칙을 말한다. 
+**리스코프 치환 원칙(Liskov substitution principle)은 어떤 타입에 있어 중요한 속성이라면 그 하위타입에서도 마찬가지로 중요하다. 따라서 그 타입의 모든 메서드가 하위 타입에서도 똑같이 잘 동작해야 한다.**
+
+구체 클래스의 하위 클래스에서 값을 추가할 방법은 없지만 괜찮은 우회 방법이 하나 있다. 
+
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MjgxMzQ1LC0zNjUyOTQ2MzAsLTEwMj
-gxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0xMjkyMzA5
-MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2LDEyND
-k4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5NzU0NDk0
-LC03MTY1ODYwNzcsLTIwNzMwNzc2OTgsLTkyODM1MTkwNSwtNj
-gxMTExMzcxLC0xODUzNjMxMzQ1LDE3OTE1ODE3MjMsLTU4MjMy
-OTddfQ==
+eyJoaXN0b3J5IjpbLTI4NzMxMjgwNSwtNDgyODEzNDUsLTM2NT
+I5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIy
+OTUsLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNj
+YxNDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0
+NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5OCwtOT
+I4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMTc5MTU4
+MTcyM119
 -->
