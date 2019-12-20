@@ -43,7 +43,11 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 먼저 Object 명세에서 말하는 동치 관계란 무엇일까? 쉽게 말해 **집합을 서로 같은 원소들로 이루어진 부분집합으로 나누는 연산**이다. 이 부분 집합을 동치류(equivalence class; 동치 클래스)라 한다. equls 메서드가 쓸모있으려면 모든 원소가 같은 동치류에 속한 어떤 원소와도 서로 교환할 수 있어야 한다. 
 
-동치관계에 속하는 객체가 되려면 위에서 이야기한 5요건을 만족해야 한다. 
+동치관계에 속하는 객체가 되려면 위에서 이야기한 다섯 요건을 만족해야 한다.  하나씩 자사히 보기로 하자. 
+
+#### 반사성(reflexivity)
+
+단순히 말해 자기
 
 
 
@@ -55,8 +59,8 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMyMTA3MTkyLC02MTcxMjA4NiwxMjgwMT
-gwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMDc3Njk4
-LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMTg1MzYzMTM0NSwxNz
-kxNTgxNzIzLC01ODIzMjk3LC0xMTI0MTYyNzYwXX0=
+eyJoaXN0b3J5IjpbLTQ1OTYwNDM3NCwtNjE3MTIwODYsMTI4MD
+E4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5
+OCwtOTI4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMT
+c5MTU4MTcyMywtNTgyMzI5NywtMTEyNDE2Mjc2MF19
 -->
