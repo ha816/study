@@ -123,6 +123,7 @@ public class ColorPoint extends Point {
 	...
 }
 ```
+여기서 ColorPoint의 equals는 어떻게 하는게 좋을까? 그대로 두면 Point의 equals가 그대로 사용되어 Color 정보를 무시한채로 비교를 수행한다.
 ```
 @Override public boolean equals(Object o){
 	if(!(o instanceof ColorPoint)){
@@ -131,17 +132,17 @@ public class ColorPoint extends Point {
 	return super.equals(o) && ((ColorPoint) o).color == color;
 }
 ```
-위 메서드는 Point와 ColorPoint를 비교할때 결과가 다를 수 있다. 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjcyMTM5NTcsLTEwMjgxMzg5NDgsMT
-M4NDA5NzIwMywxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLDE3MjU2
-NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLT
-YxNzEyMDg2LDEyODAxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYw
-NzcsLTIwNzMwNzc2OTgsLTkyODM1MTkwNSwtNjgxMTExMzcxLC
-0xODUzNjMxMzQ1LDE3OTE1ODE3MjMsLTU4MjMyOTcsLTExMjQx
-NjI3NjBdfQ==
+eyJoaXN0b3J5IjpbLTM2NTI5NDYzMCwtMTAyODEzODk0OCwxMz
+g0MDk3MjAzLDE2NDI3ODIyOTUsLTEyOTIzMDkzMjMsMTcyNTY3
+MzA1LDkxNzA1OTA0NSwzNjYxNDU5NzYsMTI0OTgyNTcxMywtNj
+E3MTIwODYsMTI4MDE4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3
+NywtMjA3MzA3NzY5OCwtOTI4MzUxOTA1LC02ODExMTEzNzEsLT
+E4NTM2MzEzNDUsMTc5MTU4MTcyMywtNTgyMzI5NywtMTEyNDE2
+Mjc2MF19
 -->
