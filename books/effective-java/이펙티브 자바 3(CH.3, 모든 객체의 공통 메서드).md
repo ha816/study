@@ -240,13 +240,17 @@ public boolean equals(Object o){
 기본적으로 float과 double을 제외한 모든 기본 타입 필드는 ==로 비교하고 참조타입은 equals로 비교한다. float과 double는 Float.compare(), Double.compare()로 비교한다. float과 double을 특별 취급하는 이유는 Float.Nan, -0.0f와 같은 특수한 부동소수 값을 다뤄야 하기 때문이다. Float.equals(), Double.equals()를 써도 되지만 오토박싱이 될수도 있어 성능상 안좋을 수 있다. 
 배열의 경우 모든 원소를 하나씩 비교해 봐야한다면 Arrays.equals 메서드를 쓰도록 하자. 
 
+어떤 필드를 먼저 비교하느냐에 따라 equals의 성능이 달라질 수 있다. 이왕이면 가능성이 더 크거나 비용이 싼 필드를 먼저 비교하자. 
+
+마지막으로 equ
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NTA2MzkwNywtNzIzNjcxNDU3LDE3OT
+eyJoaXN0b3J5IjpbLTc3NTMzNTE4OCwtNzIzNjcxNDU3LDE3OT
 cxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMTc2NTQ0
 ODk2MiwtMTkxMjI3NDE1MiwtNDgyODEzNDUsLTM2NTI5NDYzMC
 wtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOTUsLTEy
