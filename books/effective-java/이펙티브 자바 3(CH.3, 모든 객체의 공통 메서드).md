@@ -194,6 +194,14 @@ public class ColorPoint {
 	public Point asPoint() {
 		return point;
 	}
+	@Override 
+	public boolean equals(Object o){
+		if(!(o instanceof ColorPoint)){ 
+			return false;
+		return o.equals(this); // 색상을 무시하고 o가 가지는 equals로 판단
+	}
+
+	}
 }
 ```
 
@@ -208,11 +216,11 @@ public class ColorPoint {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NTIzMzcyOSwxNzY1NDQ4OTYyLC0xOT
-EyMjc0MTUyLC00ODI4MTM0NSwtMzY1Mjk0NjMwLC0xMDI4MTM4
-OTQ4LDEzODQwOTcyMDMsMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMy
-wxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3NiwxMjQ5ODI1
-NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNz
-E2NTg2MDc3LC0yMDczMDc3Njk4LC05MjgzNTE5MDUsLTY4MTEx
-MTM3MV19
+eyJoaXN0b3J5IjpbNDM4MzYyNzI0LDE3NjU0NDg5NjIsLTE5MT
+IyNzQxNTIsLTQ4MjgxMzQ1LC0zNjUyOTQ2MzAsLTEwMjgxMzg5
+NDgsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLD
+E3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3
+MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5NzU0NDk0LC03MT
+Y1ODYwNzcsLTIwNzMwNzc2OTgsLTkyODM1MTkwNSwtNjgxMTEx
+MzcxXX0=
 -->
