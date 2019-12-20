@@ -109,19 +109,16 @@ public class Point {
 		if(!(o instanceof Point)){
 			return false;
 		}
-		if( o instance of String){
-			return s.equalsIgnoreCase((String) o);
-		}
-		return false;
+		Point p = (Point) o
 	}
 }
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgwMTIyNzc0LDE2NDI3ODIyOTUsLTEyOT
-IzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYxNDU5NzYs
-MTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0NiwxNTk3NT
-Q0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5OCwtOTI4MzUxOTA1
-LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMTc5MTU4MTcyMywtNT
-gyMzI5NywtMTEyNDE2Mjc2MF19
+eyJoaXN0b3J5IjpbLTE4ODE1MDQwODAsMTY0Mjc4MjI5NSwtMT
+I5MjMwOTMyMywxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3
+NiwxMjQ5ODI1NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OT
+c1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMDc3Njk4LC05MjgzNTE5
+MDUsLTY4MTExMTM3MSwtMTg1MzYzMTM0NSwxNzkxNTgxNzIzLC
+01ODIzMjk3LC0xMTI0MTYyNzYwXX0=
 -->
