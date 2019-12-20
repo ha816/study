@@ -244,7 +244,9 @@ public boolean equals(Object o){
 
 ### 정리하면서 
 
-마지막으로 equals 를 다 구현했다면 대칭적, 추이성, 일관성을 만족하는지만 자문해보자. 자문에서 끝내지 말고 실제 단위 테스트를 하자. 
+마지막으로 equals 를 다 구현했다면 대칭적, 추이성, 일관성을 만족하는지만 자문해보자. 자문에서 끝내지 말고 실제 단위 테스트를 하자. 세 요건 중 하나라도 실패하면 원인을 찾아 고치자 나머지 요건은 사실 문제가 되는 경우가 별로 없다.
+
+
 
 
 
@@ -255,11 +257,11 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDczMTg4NDQsLTcyMzY3MTQ1NywxNz
-k3MTE4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3NjU0
-NDg5NjIsLTE5MTIyNzQxNTIsLTQ4MjgxMzQ1LC0zNjUyOTQ2Mz
-AsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0x
-MjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OT
-c2LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5
-NzU0NDk0XX0=
+eyJoaXN0b3J5IjpbNzI0NzI3MTM0LC03MjM2NzE0NTcsMTc5Nz
+ExODkxNiwtMTMyOTA0Mzk2MCwtMjA0ODg0MzAzNywxNzY1NDQ4
+OTYyLC0xOTEyMjc0MTUyLC00ODI4MTM0NSwtMzY1Mjk0NjMwLC
+0xMDI4MTM4OTQ4LDEzODQwOTcyMDMsMTY0Mjc4MjI5NSwtMTI5
+MjMwOTMyMywxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3Ni
+wxMjQ5ODI1NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1
+NDQ5NF19
 -->
