@@ -76,13 +76,7 @@ CaseInsensitiveString의 equals 메서드를 보면 순진하게도 일반 문�
 ```
 @Override 
 public boolean equals(Object o){
-	if( o instanceof CaseInsensitiveString){
-		return s.equalsIgnoreCase( (CaseInsensitiveString)o.s )
-	}
-	if( o instance of String){
-		return s.equalsIgnoreCase((String) o);
-	}
-	return false;
+	return o instance of CaseInsensitiveString && 
 }
 ```
 
@@ -99,9 +93,9 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODcxMjE2MzAsMTcyNTY3MzA1LDkxNz
-A1OTA0NSwzNjYxNDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwODYs
-MTI4MDE4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3Mz
-A3NzY5OCwtOTI4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEz
-NDUsMTc5MTU4MTcyMywtNTgyMzI5NywtMTEyNDE2Mjc2MF19
+eyJoaXN0b3J5IjpbLTQ2MTA2ODM0OSwxNzI1NjczMDUsOTE3MD
+U5MDQ1LDM2NjE0NTk3NiwxMjQ5ODI1NzEzLC02MTcxMjA4Niwx
+MjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMD
+c3Njk4LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMTg1MzYzMTM0
+NSwxNzkxNTgxNzIzLC01ODIzMjk3LC0xMTI0MTYyNzYwXX0=
 -->
