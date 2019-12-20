@@ -251,7 +251,7 @@ public boolean equals(Object o){
 * 너무 복잡하게 해결하지 말자. 필드의 동치성만 검사해도 규약을 어렵지 않게 지킬 수 있다. 일반적으로 필드의 별칭(alias)는 비교 대상에 넣지 말자.
 * Object가 아닌 타입을 매개변수로 받는 equals 메서드는 선언하지 말자. equals 메서드는 반드시 Object이다. 만약 Object아닌 타입을 받게 만들었다면 그건 Override가 아닌 Overloading이다.
 
->꼭 필요한 경우가 아니라면 equals는 재정의하지 말자. 많은 경우에 Object의 equals가 여러분이 원하는 
+>꼭 필요한 경우가 아니라면 equals는 재정의하지 말자. 대다수 Object의 equals가 원하는 비교를 정확히 해준다. equals를 재정의 할때는 그 클래스의 핵심 필드를 빠짐없이, 다섯 요건을 지켜가며 비교를 해야 한다. 
 
 
 
@@ -262,11 +262,11 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NTYwMTM2LC03MjM2NzE0NTcsMTc5Nz
-ExODkxNiwtMTMyOTA0Mzk2MCwtMjA0ODg0MzAzNywxNzY1NDQ4
-OTYyLC0xOTEyMjc0MTUyLC00ODI4MTM0NSwtMzY1Mjk0NjMwLC
-0xMDI4MTM4OTQ4LDEzODQwOTcyMDMsMTY0Mjc4MjI5NSwtMTI5
-MjMwOTMyMywxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3Ni
-wxMjQ5ODI1NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1
-NDQ5NF19
+eyJoaXN0b3J5IjpbLTE1MTE3NjA4MTEsLTcyMzY3MTQ1NywxNz
+k3MTE4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3NjU0
+NDg5NjIsLTE5MTIyNzQxNTIsLTQ4MjgxMzQ1LC0zNjUyOTQ2Mz
+AsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0x
+MjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OT
+c2LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5
+NzU0NDk0XX0=
 -->
