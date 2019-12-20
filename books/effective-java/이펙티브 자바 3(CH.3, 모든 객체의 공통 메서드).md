@@ -61,17 +61,24 @@ public final class CaseInsensitiveString {
 	}
 	@Override 
 	public boolean equals(Object o){
-	if( o instanceof CaseInsensitiveString){
-		return s.equalsIgnoreCase( (CaseInsensitiveString)o.s )
+		if( o instanceof CaseInsensitiveString){
+			return s.equalsIgnoreCase( (CaseInsensitiveString)o.s )
+		}
+		if( o instance of String){
+			return s.equalsIgnoreCase((String) o);
+		}
+		return false;
 	}
-	if( o instance of String){
-		return s.equalsIgnoreCase((String) o);
-	}
-	return false;
-}
-
 }
 ```
+CaseInsensitiveString의 equals 메서드를 보면 순진하게도 일반 문자열과도 비교를 시도한다. 
+
+```
+CaseInsensitiveString cis = new CaseInsensitiveString("Polish");
+String s = "polish"
+
+```
+
 
 
 
@@ -84,9 +91,9 @@ public final class CaseInsensitiveString {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNjM1NjE4MiwxMjQ5ODI1NzEzLC02MT
-cxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3
-LC0yMDczMDc3Njk4LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMT
-g1MzYzMTM0NSwxNzkxNTgxNzIzLC01ODIzMjk3LC0xMTI0MTYy
-NzYwXX0=
+eyJoaXN0b3J5IjpbLTE0NDM4OTIyNjIsMTI0OTgyNTcxMywtNj
+E3MTIwODYsMTI4MDE4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3
+NywtMjA3MzA3NzY5OCwtOTI4MzUxOTA1LC02ODExMTEzNzEsLT
+E4NTM2MzEzNDUsMTc5MTU4MTcyMywtNTgyMzI5NywtMTEyNDE2
+Mjc2MF19
 -->
