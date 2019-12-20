@@ -95,13 +95,14 @@ public boolean equals(Object o){
 	// 
 }
 ```
+위처럼 String을 처리는 제외하고 CaseInsensitiveString 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMywxNz
-I1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3NiwxMjQ5ODI1NzEz
-LC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNzE2NT
-g2MDc3LC0yMDczMDc3Njk4LC05MjgzNTE5MDUsLTY4MTExMTM3
-MSwtMTg1MzYzMTM0NSwxNzkxNTgxNzIzLC01ODIzMjk3LC0xMT
-I0MTYyNzYwXX0=
+eyJoaXN0b3J5IjpbLTUxMDgyNDgwMiwxNjQyNzgyMjk1LC0xMj
+kyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2
+LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5Nz
+U0NDk0LC03MTY1ODYwNzcsLTIwNzMwNzc2OTgsLTkyODM1MTkw
+NSwtNjgxMTExMzcxLC0xODUzNjMxMzQ1LDE3OTE1ODE3MjMsLT
+U4MjMyOTcsLTExMjQxNjI3NjBdfQ==
 -->
