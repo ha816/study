@@ -200,13 +200,12 @@ public class ColorPoint {
 			return false;
 		}
 		ColorPoint cp = (ColorPoint) o; // o는 ColorPoint를 포함한 하위 클래스가 될수 있다. 
-		return 		
-	}
-
+		return cp.point.equals(point) && cp.color.equals(color); 		
 	}
 }
 ```
 
+> 추상 클래스의 하위 클래스
 
 
 
@@ -218,11 +217,11 @@ public class ColorPoint {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDE4MDUxMDQsMTc2NTQ0ODk2MiwtMT
-kxMjI3NDE1MiwtNDgyODEzNDUsLTM2NTI5NDYzMCwtMTAyODEz
-ODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOTUsLTEyOTIzMDkzMj
-MsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYxNDU5NzYsMTI0OTgy
-NTcxMywtNjE3MTIwODYsMTI4MDE4MDA0NiwxNTk3NTQ0OTQsLT
-cxNjU4NjA3NywtMjA3MzA3NzY5OCwtOTI4MzUxOTA1LC02ODEx
-MTEzNzFdfQ==
+eyJoaXN0b3J5IjpbLTIzNDM4MjM2NSwxNzY1NDQ4OTYyLC0xOT
+EyMjc0MTUyLC00ODI4MTM0NSwtMzY1Mjk0NjMwLC0xMDI4MTM4
+OTQ4LDEzODQwOTcyMDMsMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMy
+wxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3NiwxMjQ5ODI1
+NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNz
+E2NTg2MDc3LC0yMDczMDc3Njk4LC05MjgzNTE5MDUsLTY4MTEx
+MTM3MV19
 -->
