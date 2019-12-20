@@ -206,7 +206,7 @@ public class ColorPoint {
 ```
 
 #### 일관성(consistency) 
-일관성은 두 객체가 같은 상황이라면 ( 어느 한 객체 또는 두 객체 모두가 수정되지 않는한) 앞으로도 영원히 같아야 한다는 점이다. 가변 객체는 비교 시점에 따라 달라질수도 있지만, 불변 객체는 한번 다르면 영원히 달라야 한다. 클래스를 작성할때 불변 클
+일관성은 두 객체가 같은 상황이라면 ( 어느 한 객체 또는 두 객체 모두가 수정되지 않는한) 앞으로도 영원히 같아야 한다는 점이다. 가변 객체는 비교 시점에 따라 달라질수도 있지만, 불변 객체는 한번 다르면 영원히 달라야 한다. 클래스를 작성할때 불변 클래스로 만들기로 했다면 equals 결과는 영원히 같아야 한다. 
 
 
 
@@ -215,11 +215,11 @@ public class ColorPoint {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgzNjIxNiwxNzY1NDQ4OTYyLC0xOTEyMj
-c0MTUyLC00ODI4MTM0NSwtMzY1Mjk0NjMwLC0xMDI4MTM4OTQ4
-LDEzODQwOTcyMDMsMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMywxNz
-I1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3NiwxMjQ5ODI1NzEz
-LC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNzE2NT
-g2MDc3LC0yMDczMDc3Njk4LC05MjgzNTE5MDUsLTY4MTExMTM3
-MV19
+eyJoaXN0b3J5IjpbLTIwNDg4NDMwMzcsMTc2NTQ0ODk2MiwtMT
+kxMjI3NDE1MiwtNDgyODEzNDUsLTM2NTI5NDYzMCwtMTAyODEz
+ODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOTUsLTEyOTIzMDkzMj
+MsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYxNDU5NzYsMTI0OTgy
+NTcxMywtNjE3MTIwODYsMTI4MDE4MDA0NiwxNTk3NTQ0OTQsLT
+cxNjU4NjA3NywtMjA3MzA3NzY5OCwtOTI4MzUxOTA1LC02ODEx
+MTEzNzFdfQ==
 -->
