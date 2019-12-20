@@ -255,18 +255,21 @@ public boolean equals(Object o){
 
 
 
+위의 방식으로 하면 일반 Point를 ColorPoint와 비교한 결과와 그 뒤를 바꿧을때 결과가 다를 수 있다. 즉 대칭성이 위반이 되는 것이다. 
+```
 
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTE3NjA4MTEsLTcyMzY3MTQ1NywxNz
-k3MTE4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3NjU0
-NDg5NjIsLTE5MTIyNzQxNTIsLTQ4MjgxMzQ1LC0zNjUyOTQ2Mz
-AsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0x
-MjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OT
-c2LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5
-NzU0NDk0XX0=
+eyJoaXN0b3J5IjpbLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwtNz
+IzNjcxNDU3LDE3OTcxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4
+NDMwMzcsMTc2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtMzY1Mjk0Nj
+MwLC0xMDI4MTM4OTQ4LDEzODQwOTcyMDMsMTY0Mjc4MjI5NSwt
+MTI5MjMwOTMyMywxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NT
+k3NiwxMjQ5ODI1NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1
+OTc1NDQ5NF19
 -->
