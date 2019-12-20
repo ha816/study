@@ -232,7 +232,9 @@ public boolean equals(Object o){
 ### 양질의 equals 메서드 구현 
 
 1. == 연산자를 사용해서 입력이 자기 참조인지 확인한다. 단순한 성능 최적화용으로, 비교 작업이 복잡하다면 equals 과정을 거친다.
-2. instance
+2. instanceof 연산자로 입력이 올바른 타입인지 확인한다. 
+3. 입력을 올바른 타입으로 형변환한다. 2번에서 instanceof로 검사했기 때문에 반드시 성공한다. 
+4. 
 
 
 
@@ -241,11 +243,11 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTM0MjkwMjYsLTEzMjkwNDM5NjAsLT
-IwNDg4NDMwMzcsMTc2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtNDgy
-ODEzNDUsLTM2NTI5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3Mj
-AzLDE2NDI3ODIyOTUsLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkx
-NzA1OTA0NSwzNjYxNDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwOD
-YsMTI4MDE4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3
-MzA3NzY5OF19
+eyJoaXN0b3J5IjpbMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwtMj
+A0ODg0MzAzNywxNzY1NDQ4OTYyLC0xOTEyMjc0MTUyLC00ODI4
+MTM0NSwtMzY1Mjk0NjMwLC0xMDI4MTM4OTQ4LDEzODQwOTcyMD
+MsMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMywxNzI1NjczMDUsOTE3
+MDU5MDQ1LDM2NjE0NTk3NiwxMjQ5ODI1NzEzLC02MTcxMjA4Ni
+wxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3LC0yMDcz
+MDc3Njk4XX0=
 -->
