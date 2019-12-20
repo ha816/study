@@ -52,9 +52,11 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 #### 대칭성(symmetry) 
 
 대칭성은 두 객체는 서로 equals 여부가 같아야 한다는 뜻이다. 
+
 ```
-
-
+@Override public boolean equals(Object o){
+	if( o instanceof C)
+}
 ```
 
 
@@ -68,8 +70,8 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI2NDQxODUwLC02MTcxMjA4NiwxMjgwMT
-gwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMDc3Njk4
-LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMTg1MzYzMTM0NSwxNz
-kxNTgxNzIzLC01ODIzMjk3LC0xMTI0MTYyNzYwXX0=
+eyJoaXN0b3J5IjpbLTQ4NTc1OTAzNSwtNjE3MTIwODYsMTI4MD
+E4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5
+OCwtOTI4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMT
+c5MTU4MTcyMywtNTgyMzI5NywtMTEyNDE2Mjc2MF19
 -->
