@@ -77,9 +77,9 @@ CaseInsensitiveString의 equals 메서드를 보면 순진하게도 일반 문�
 CaseInsensitiveString cis = new CaseInsensitiveString("Polish");
 String s = "polish";
 cis.equals(s) == true; // Polish.equalsIgnoreCase(polish);
-
+s.equals(cis) == false; 
 ```
-문제는 CaseInsensitiveString의 equals는 일반 String을 알고 있지만 String의 eqauls는 CaseInsensitiveString의 존재를 모른다. 
+문제는 CaseInsensitiveString의 equals는 일반 String을 알고 있지만 String의 eqauls는 CaseInsensitiveString의 존재를 모른다. 따라서 대칭성이 명백히 위반된다. 
 
 
 
@@ -93,9 +93,9 @@ cis.equals(s) == true; // Polish.equalsIgnoreCase(polish);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTQ5MTI3OTcsOTE3MDU5MDQ1LDM2Nj
-E0NTk3NiwxMjQ5ODI1NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2
-LDE1OTc1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMDc3Njk4LC05Mj
-gzNTE5MDUsLTY4MTExMTM3MSwtMTg1MzYzMTM0NSwxNzkxNTgx
-NzIzLC01ODIzMjk3LC0xMTI0MTYyNzYwXX0=
+eyJoaXN0b3J5IjpbMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYxND
+U5NzYsMTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0Niwx
+NTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5OCwtOTI4Mz
+UxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMTc5MTU4MTcy
+MywtNTgyMzI5NywtMTEyNDE2Mjc2MF19
 -->
