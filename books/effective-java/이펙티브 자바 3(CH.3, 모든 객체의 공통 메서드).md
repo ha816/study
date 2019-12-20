@@ -234,7 +234,7 @@ public boolean equals(Object o){
 1. == 연산자를 사용해서 입력이 자기 참조인지 확인한다. 단순한 성능 최적화용으로, 비교 작업이 복잡하다면 equals 과정을 거친다.
 2. instanceof 연산자로 입력이 올바른 타입인지 확인한다. 
 3. 입력을 올바른 타입으로 형변환한다. 2번에서 instanceof로 검사했기 때문에 반드시 성공한다. 
-4. 
+4. 입력 객체와 자기 자신의 대응되는 핵심 필드들이 모두 일치하는지 하나씩 검사한다. 모든 필드가 일치하면 true, 그외라면 false이다.
 
 
 
@@ -243,11 +243,11 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwtMj
-A0ODg0MzAzNywxNzY1NDQ4OTYyLC0xOTEyMjc0MTUyLC00ODI4
-MTM0NSwtMzY1Mjk0NjMwLC0xMDI4MTM4OTQ4LDEzODQwOTcyMD
-MsMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMywxNzI1NjczMDUsOTE3
-MDU5MDQ1LDM2NjE0NTk3NiwxMjQ5ODI1NzEzLC02MTcxMjA4Ni
-wxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3LC0yMDcz
-MDc3Njk4XX0=
+eyJoaXN0b3J5IjpbMTE4Mzk4NTQxMSwxNzk3MTE4OTE2LC0xMz
+I5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MTIy
+NzQxNTIsLTQ4MjgxMzQ1LC0zNjUyOTQ2MzAsLTEwMjgxMzg5ND
+gsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLDE3
+MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3MT
+MsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5NzU0NDk0LC03MTY1
+ODYwNzddfQ==
 -->
