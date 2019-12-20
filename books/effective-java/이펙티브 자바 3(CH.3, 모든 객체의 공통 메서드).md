@@ -54,7 +54,13 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 대칭성은 두 객체는 서로 equals 여부가 같아야 한다는 뜻이다. 
 
 ```
-@Override public boolean equals(Object o){
+public final class CaseInsensitiveString {
+	private final String s;
+	public CaseInsensitiveString(String s){
+		this.s = Ob
+	}
+	@Override 
+	public boolean equals(Object o){
 	if( o instanceof CaseInsensitiveString){
 		return s.equalsIgnoreCase( (CaseInsensitiveString)o.s )
 	}
@@ -62,6 +68,8 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 		return s.equalsIgnoreCase((String) o);
 	}
 	return false;
+}
+
 }
 ```
 
@@ -76,8 +84,9 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MD
-E4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5
-OCwtOTI4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMT
-c5MTU4MTcyMywtNTgyMzI5NywtMTEyNDE2Mjc2MF19
+eyJoaXN0b3J5IjpbMTk4NjA1NTY0NSwxMjQ5ODI1NzEzLC02MT
+cxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3
+LC0yMDczMDc3Njk4LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMT
+g1MzYzMTM0NSwxNzkxNTgxNzIzLC01ODIzMjk3LC0xMTI0MTYy
+NzYwXX0=
 -->
