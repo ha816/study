@@ -214,18 +214,24 @@ public class ColorPoint {
 
 null-아님은 이름처럼 도느 객체가 null과는 값지 않아야 한다. 의도하지 않았음에도 equals(null)이 true가 반환되는 상황은 상상하기 어렵지만, 실수로 NPE을 던지는 코드는 흔할것이다. 
 
-
+```
+@Override 
+	public boolean equals(Object o){
+		if(!(o instanceof ColorPoint)){ 
+			return false;
+		}
+	```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMT
-c2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtNDgyODEzNDUsLTM2NTI5
-NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOT
-UsLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYx
-NDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0Ni
-wxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5OCwtOTI4
-MzUxOTA1XX0=
+eyJoaXN0b3J5IjpbNDI2MDI1MzI2LC0xMzI5MDQzOTYwLC0yMD
+Q4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MTIyNzQxNTIsLTQ4Mjgx
+MzQ1LC0zNjUyOTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMy
+wxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcw
+NTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLTYxNzEyMDg2LD
+EyODAxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYwNzcsLTIwNzMw
+Nzc2OThdfQ==
 -->
