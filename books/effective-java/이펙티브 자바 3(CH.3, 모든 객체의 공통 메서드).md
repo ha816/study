@@ -92,14 +92,16 @@ s.equals(cis) == false;
 public boolean equals(Object o){
 	return o instance of CaseInsensitiveString && 
 		((CaseInsensitiveString) o).s.equalsIgnoreCase(s);
+	// 
 }
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkxNz
-A1OTA0NSwzNjYxNDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwODYs
-MTI4MDE4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3Mz
-A3NzY5OCwtOTI4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEz
-NDUsMTc5MTU4MTcyMywtNTgyMzI5NywtMTEyNDE2Mjc2MF19
+eyJoaXN0b3J5IjpbMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMywxNz
+I1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3NiwxMjQ5ODI1NzEz
+LC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNzE2NT
+g2MDc3LC0yMDczMDc3Njk4LC05MjgzNTE5MDUsLTY4MTExMTM3
+MSwtMTg1MzYzMTM0NSwxNzkxNTgxNzIzLC01ODIzMjk3LC0xMT
+I0MTYyNzYwXX0=
 -->
