@@ -180,6 +180,12 @@ instaceof 대신 getClass를 쓰면 완전히 같은 클래스 객체와 비교�
 구체 클래스의 하위 클래스에서 값을 추가할 방법은 없지만 괜찮은 우회 방법이 하나 있다. 
 바로 상속 대신 컴포지션을 사용하는 방법이다. Point를 상속하는 대신 Point를 ColorPoint의 private 필드로 두고, ColorPoint와 같은 위치의 일반 Point를 반환하는 뷰 메서드를 public으로 추가하는 식이다. **기존 클래스가 새로운 클래스의 구성요소로 쓰인다**는 뜻에서 이를 **컴포지션(Composition)**이라고 한다.
 
+여기서 주의할 점은 컴포지션(Composition)과 컴포짓 패턴(Composite Pattern)은 아무 연관이 없다. 컴포지션은 한 오
+This is a design concept (not really a pattern). This term is used when you want to describe one object containing another one. It occurs very often in  [Composition over inheritance](http://en.wikipedia.org/wiki/Composition_over_inheritance)  discussion.
+
+Moreover, composition implies strong ownership. One objects  _owns_  (i.e. manages the lifecycle) of another object. When parent is destroyed, all children are destroyed as well. If there is no such strong relationship (children can outlive parent) we are talking about  **aggregation**.
+
+
 
 
 
@@ -188,11 +194,11 @@ instaceof 대신 getClass를 쓰면 완전히 같은 클래스 객체와 비교�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyMDA1MDEsLTE5MTIyNzQxNTIsLTQ4Mj
-gxMzQ1LC0zNjUyOTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5NzIw
-MywxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLDE3MjU2NzMwNSw5MT
-cwNTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLTYxNzEyMDg2
-LDEyODAxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYwNzcsLTIwNz
-MwNzc2OTgsLTkyODM1MTkwNSwtNjgxMTExMzcxLC0xODUzNjMx
-MzQ1XX0=
+eyJoaXN0b3J5IjpbLTE5MTcwNzE2NDMsLTE5MTIyNzQxNTIsLT
+Q4MjgxMzQ1LC0zNjUyOTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5
+NzIwMywxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLDE3MjU2NzMwNS
+w5MTcwNTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLTYxNzEy
+MDg2LDEyODAxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYwNzcsLT
+IwNzMwNzc2OTgsLTkyODM1MTkwNSwtNjgxMTExMzcxLC0xODUz
+NjMxMzQ1XX0=
 -->
