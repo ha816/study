@@ -37,7 +37,7 @@ equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 �
 * 일관성(consistency) : null이 아닌 모든 참조 값 x,y에 대해, x.equals(y)를 반복해서 호출해도 항상 true이거나 false이다. 
 * null-아님 : null이 아닌 모든 참조값 x에 대해, x.equls(null)은 반드시 false이다. 
 
-
+수학에 익숙하지 않
 
 
 
@@ -47,8 +47,8 @@ equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5Nz
-U0NDk0LC03MTY1ODYwNzcsLTIwNzMwNzc2OTgsLTkyODM1MTkw
-NSwtNjgxMTExMzcxLC0xODUzNjMxMzQ1LDE3OTE1ODE3MjMsLT
-U4MjMyOTcsLTExMjQxNjI3NjBdfQ==
+eyJoaXN0b3J5IjpbODk5MzIzNzQ3LC02MTcxMjA4NiwxMjgwMT
+gwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMDc3Njk4
+LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMTg1MzYzMTM0NSwxNz
+kxNTgxNzIzLC01ODIzMjk3LC0xMTI0MTYyNzYwXX0=
 -->
