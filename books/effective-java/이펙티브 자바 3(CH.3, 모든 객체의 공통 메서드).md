@@ -95,14 +95,19 @@ public boolean equals(Object o){
 	// 
 }
 ```
-위처럼 String을 처리는 제외하고 같은 CaseInsensitiveString  일때만 서로 내부에 String s 필드간 equalsIgnoreCase
+위처럼 String을 처리는 제외하고 같은 CaseInsensitiveString  일때만 서로 내부에 String s 필드간 equalsIgnoreCase 메서드를 실행한다. 
+
+#### 추이성(transitivity) 
+
+추이성은 첫 번째 객체와 두 번째 겍체가 같고
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NjQzODMzMCwxNjQyNzgyMjk1LC0xMj
-kyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2
-LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5Nz
-U0NDk0LC03MTY1ODYwNzcsLTIwNzMwNzc2OTgsLTkyODM1MTkw
-NSwtNjgxMTExMzcxLC0xODUzNjMxMzQ1LDE3OTE1ODE3MjMsLT
-U4MjMyOTcsLTExMjQxNjI3NjBdfQ==
+eyJoaXN0b3J5IjpbMjA1MDI0NzA0LDE2NDI3ODIyOTUsLTEyOT
+IzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYxNDU5NzYs
+MTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0NiwxNTk3NT
+Q0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5OCwtOTI4MzUxOTA1
+LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMTc5MTU4MTcyMywtNT
+gyMzI5NywtMTEyNDE2Mjc2MF19
 -->
