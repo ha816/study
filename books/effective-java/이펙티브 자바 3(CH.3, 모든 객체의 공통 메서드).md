@@ -133,12 +133,14 @@ public class ColorPoint extends Point {
 }
 ```
 
+위의 방식
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM1NTQ0NDE3LC0zNjUyOTQ2MzAsLTEwMj
+eyJoaXN0b3J5IjpbLTQ4MjgxMzQ1LC0zNjUyOTQ2MzAsLTEwMj
 gxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0xMjkyMzA5
 MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2LDEyND
 k4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5NzU0NDk0
