@@ -248,7 +248,8 @@ public boolean equals(Object o){
 다음은 마지막 주의사항이다
 
 * equals를 재정의할땐 hashCode도 반드시 재정의하자.
-* 너무 복잡하게 해결하지 말자. 필드의 동치성만 검사해도 귱
+* 너무 복잡하게 해결하지 말자. 필드의 동치성만 검사해도 규약을 어렵지 않게 지킬 수 있다. 일반적으로 필드의 별칭(alias)는 비교 대상에 넣지 말자.
+* Object가 아닌 타입을 매개변수로 받는 equals 메서드는 선언하지 말자. equals 메서드는 반드시 Object이다. 만약 Object아닌 타입을 받게 만들었다면 그건 Override가 아닌 Overl
 
 
 
@@ -259,11 +260,11 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzYyMzIyMzMsLTcyMzY3MTQ1NywxNz
-k3MTE4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3NjU0
-NDg5NjIsLTE5MTIyNzQxNTIsLTQ4MjgxMzQ1LC0zNjUyOTQ2Mz
-AsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0x
-MjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OT
-c2LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5
-NzU0NDk0XX0=
+eyJoaXN0b3J5IjpbMjA5OTM2ODU2MywtNzIzNjcxNDU3LDE3OT
+cxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMTc2NTQ0
+ODk2MiwtMTkxMjI3NDE1MiwtNDgyODEzNDUsLTM2NTI5NDYzMC
+wtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOTUsLTEy
+OTIzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYxNDU5Nz
+YsMTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0NiwxNTk3
+NTQ0OTRdfQ==
 -->
