@@ -183,10 +183,11 @@ instaceof 대신 getClass를 쓰면 완전히 같은 클래스 객체와 비교�
 여기서 주의할 점은 컴포지션(Composition)과 컴포짓 패턴(Composite Pattern)은 아무 연관이 없다. 단순히 컴포지션은 한 객체가 다른 객체를 포함하고 있는 현상을 말한다. 
 
 ```
-public class ColorPoint extends Point {
+public class ColorPoint {
+	private final Point point;
 	private final Color color;
 	public ColorPoint(int x, int y, Color color){
-		super(x,y);
+		point = new Point(x,)
 		this.color = color;
 	}
 	...
@@ -201,13 +202,14 @@ public class ColorPoint extends Point {
 
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MzQ5NjA0NSwxNzY1NDQ4OTYyLC0xOT
-EyMjc0MTUyLC00ODI4MTM0NSwtMzY1Mjk0NjMwLC0xMDI4MTM4
-OTQ4LDEzODQwOTcyMDMsMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMy
-wxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3NiwxMjQ5ODI1
-NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNz
-E2NTg2MDc3LC0yMDczMDc3Njk4LC05MjgzNTE5MDUsLTY4MTEx
-MTM3MV19
+eyJoaXN0b3J5IjpbMzc4NTQwODM2LDE3NjU0NDg5NjIsLTE5MT
+IyNzQxNTIsLTQ4MjgxMzQ1LC0zNjUyOTQ2MzAsLTEwMjgxMzg5
+NDgsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLD
+E3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3
+MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5NzU0NDk0LC03MT
+Y1ODYwNzcsLTIwNzMwNzc2OTgsLTkyODM1MTkwNSwtNjgxMTEx
+MzcxXX0=
 -->
