@@ -95,11 +95,11 @@ public boolean equals(Object o){
 	// 
 }
 ```
-위처럼 String을 처리는 제외하고 CaseInsensitiveString 
+위처럼 String을 처리는 제외하고 같은 CaseInsensitiveString  일때만 서로 내부에 String s 필드간 equalsIgnoreCase
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMDgyNDgwMiwxNjQyNzgyMjk1LC0xMj
+eyJoaXN0b3J5IjpbMTk2NjQzODMzMCwxNjQyNzgyMjk1LC0xMj
 kyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2
 LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5Nz
 U0NDk0LC03MTY1ODYwNzcsLTIwNzMwNzc2OTgsLTkyODM1MTkw
