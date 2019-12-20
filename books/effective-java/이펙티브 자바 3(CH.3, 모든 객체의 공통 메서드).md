@@ -242,7 +242,12 @@ public boolean equals(Object o){
 
 어떤 필드를 먼저 비교하느냐에 따라 equals의 성능이 달라질 수 있다. 이왕이면 가능성이 더 크거나 비용이 싼 필드를 먼저 비교하자. 
 
-마지막으로 equ
+### 정리하면서 
+
+마지막으로 equals 를 다 구현했다면 대칭적, 추이성, 일관성을 만족하는지만 자문해보자. 자문에서 끝내지 말고 실제 단위 테스트를 하자. 
+
+
+
 
 
 
@@ -250,11 +255,11 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NTMzNTE4OCwtNzIzNjcxNDU3LDE3OT
-cxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMTc2NTQ0
-ODk2MiwtMTkxMjI3NDE1MiwtNDgyODEzNDUsLTM2NTI5NDYzMC
-wtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOTUsLTEy
-OTIzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYxNDU5Nz
-YsMTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0NiwxNTk3
-NTQ0OTRdfQ==
+eyJoaXN0b3J5IjpbLTE1MDczMTg4NDQsLTcyMzY3MTQ1NywxNz
+k3MTE4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3NjU0
+NDg5NjIsLTE5MTIyNzQxNTIsLTQ4MjgxMzQ1LC0zNjUyOTQ2Mz
+AsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0x
+MjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OT
+c2LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5
+NzU0NDk0XX0=
 -->
