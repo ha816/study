@@ -37,7 +37,7 @@ equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 �
 * 일관성(consistency) : null이 아닌 모든 참조 값 x,y에 대해, x.equals(y)를 반복해서 호출해도 항상 true이거나 false이다. 
 * null-아님 : null이 아닌 모든 참조값 x에 대해, x.equls(null)은 반드시 false이다. 
 
-수학에 익숙하지 않
+수학에 익숙하지 않다면 다소 어려울수 있지만 굉장히 중요한 내용이다. 컬렉션에서는 여러 객체를 전달 받는데 equals 규약을 지킨다고 가정하고 상equals를 제대로 지키지 않은 상태의 객체가 
 
 
 
@@ -47,8 +47,8 @@ equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk5MzIzNzQ3LC02MTcxMjA4NiwxMjgwMT
-gwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMDc3Njk4
-LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMTg1MzYzMTM0NSwxNz
-kxNTgxNzIzLC01ODIzMjk3LC0xMTI0MTYyNzYwXX0=
+eyJoaXN0b3J5IjpbLTE2MTI1OTQxNywtNjE3MTIwODYsMTI4MD
+E4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5
+OCwtOTI4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMT
+c5MTU4MTcyMywtNTgyMzI5NywtMTEyNDE2Mjc2MF19
 -->
