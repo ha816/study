@@ -39,7 +39,7 @@ equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 �
 
 수학에 익숙하지 않다면 다소 어려울수 있지만 굉장히 중요한 내용이다. 컬렉션에서는 여러 객체를 전달 받는데 equals 규약을 지킨다고 가정한다. 만약 equals를 제대로 지키지 않은 상태의 객체가 컬렉션에 들어간다면 어떻게 동작할지 예측이 어렵다.
 
-먼저 Object 명세에서 말하는 동치 관계란 무엇일까? 쉽게 말해 
+먼저 Object 명세에서 말하는 동치 관계란 무엇일까? 쉽게 말해 집합을 서로 같은 원소들로 이루어진 부분집합으로 나누는 연산이다. 이 부분 집합을 동치류(equivalence class; 동치 클래스)라 한다. 
 
 
 
@@ -51,8 +51,8 @@ equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NDg5MDY1MSwtNjE3MTIwODYsMTI4MD
-E4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5
-OCwtOTI4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMT
-c5MTU4MTcyMywtNTgyMzI5NywtMTEyNDE2Mjc2MF19
+eyJoaXN0b3J5IjpbLTE3OTA0NzI4MjIsLTYxNzEyMDg2LDEyOD
+AxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYwNzcsLTIwNzMwNzc2
+OTgsLTkyODM1MTkwNSwtNjgxMTExMzcxLC0xODUzNjMxMzQ1LD
+E3OTE1ODE3MjMsLTU4MjMyOTcsLTExMjQxNjI3NjBdfQ==
 -->
