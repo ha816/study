@@ -125,19 +125,19 @@ public class ColorPoint extends Point {
 ```
 ```
 @Override public boolean equals(Object o){
-		if(!(o instanceof ColorPoint)){
-			return false;
-		}
-		return super.equals(o) && ((ColorPoint) o).color == color;
+	if(!(o instanceof ColorPoint)){
+		return false;
 	}
+	return super.equals(o) && ((ColorPoint) o).color == color;
+}
 ```
-
+위 메서드는 Point와 ColorPoint를 비교할때 결과가 다를 수 있다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDQwMDg2OTQsLTEwMjgxMzg5NDgsMT
+eyJoaXN0b3J5IjpbLTEwNjcyMTM5NTcsLTEwMjgxMzg5NDgsMT
 M4NDA5NzIwMywxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLDE3MjU2
 NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLT
 YxNzEyMDg2LDEyODAxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYw
