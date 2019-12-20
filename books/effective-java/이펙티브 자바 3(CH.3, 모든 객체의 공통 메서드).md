@@ -76,7 +76,7 @@ CaseInsensitiveString의 equals 메서드를 보면 순진하게도 일반 문�
 ```
 CaseInsensitiveString cis = new CaseInsensitiveString("Polish");
 String s = "polish";
-cis.equals(s) == true;
+cis.equals(s) == true; // Polish.equalsIgnoreCase(polish);
 ```
 
 
@@ -91,9 +91,9 @@ cis.equals(s) == true;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLTYxNz
-EyMDg2LDEyODAxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYwNzcs
-LTIwNzMwNzc2OTgsLTkyODM1MTkwNSwtNjgxMTExMzcxLC0xOD
-UzNjMxMzQ1LDE3OTE1ODE3MjMsLTU4MjMyOTcsLTExMjQxNjI3
-NjBdfQ==
+eyJoaXN0b3J5IjpbOTE3MDU5MDQ1LDM2NjE0NTk3NiwxMjQ5OD
+I1NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwt
+NzE2NTg2MDc3LC0yMDczMDc3Njk4LC05MjgzNTE5MDUsLTY4MT
+ExMTM3MSwtMTg1MzYzMTM0NSwxNzkxNTgxNzIzLC01ODIzMjk3
+LC0xMTI0MTYyNzYwXX0=
 -->
