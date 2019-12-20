@@ -212,7 +212,7 @@ public class ColorPoint {
 
 #### null-아님
 
-
+null-아님은 이름처럼 도느 객체가 null과는 값지 않아야 한다. 의도하지 않았음에도 equals(null)이 true가 반환되는 상황은 상상하기 어렵지만, 실수로 NPE을 던지는 코드는 흔할것이다. 
 
 
 
@@ -221,11 +221,11 @@ public class ColorPoint {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NDMzODUyMiwtMjA0ODg0MzAzNywxNz
-Y1NDQ4OTYyLC0xOTEyMjc0MTUyLC00ODI4MTM0NSwtMzY1Mjk0
-NjMwLC0xMDI4MTM4OTQ4LDEzODQwOTcyMDMsMTY0Mjc4MjI5NS
-wtMTI5MjMwOTMyMywxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0
-NTk3NiwxMjQ5ODI1NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LD
-E1OTc1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMDc3Njk4LC05Mjgz
-NTE5MDVdfQ==
+eyJoaXN0b3J5IjpbLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMT
+c2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtNDgyODEzNDUsLTM2NTI5
+NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOT
+UsLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYx
+NDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0Ni
+wxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5OCwtOTI4
+MzUxOTA1XX0=
 -->
