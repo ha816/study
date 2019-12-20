@@ -113,12 +113,26 @@ public class Point {
 	}
 }
 ```
+```
+public class ColorPoint extends Point {
+	@Override 
+	public boolean equals(Object o){
+		if(!(o instanceof Point)){
+			return false;
+		}
+		Point p = (Point) o
+		return p.x == x && p.y == y;
+	}
+}
+
+```
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0xMj
-kyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2
-LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5Nz
-U0NDk0LC03MTY1ODYwNzcsLTIwNzMwNzc2OTgsLTkyODM1MTkw
-NSwtNjgxMTExMzcxLC0xODUzNjMxMzQ1LDE3OTE1ODE3MjMsLT
-U4MjMyOTcsLTExMjQxNjI3NjBdfQ==
+eyJoaXN0b3J5IjpbLTEwMjgxMzg5NDgsMTM4NDA5NzIwMywxNj
+QyNzgyMjk1LC0xMjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkw
+NDUsMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyOD
+AxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYwNzcsLTIwNzMwNzc2
+OTgsLTkyODM1MTkwNSwtNjgxMTExMzcxLC0xODUzNjMxMzQ1LD
+E3OTE1ODE3MjMsLTU4MjMyOTcsLTExMjQxNjI3NjBdfQ==
 -->
