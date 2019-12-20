@@ -237,7 +237,8 @@ public boolean equals(Object o){
 4. 입력 객체와 자기 자신의 대응되는 핵심 필드들이 모두 일치하는지 하나씩 검사한다. 모든 필드가 일치하면 true, 그외라면 false이다.
 
 
-기본적으로 float과 double을 제외한 모든 기본 타입 필드는 ==로 비교하고 참조타입은 equals로 비교한다. float과 double는 Float.compare(), Double.compare()로 
+기본적으로 float과 double을 제외한 모든 기본 타입 필드는 ==로 비교하고 참조타입은 equals로 비교한다. float과 double는 Float.compare(), Double.compare()로 비교한다. float과 double을 특별 취급하는 이유는 Float.Nan, -0.0f와 같은 특수한 부동소수 값을 다뤄야 하기 때문이다. Float.equals(), Double.equals()를 써도 되지만 오토박싱이 될수도 있어 성능상 안좋을 수 있다. 
+배열의 경
 
 
 
@@ -245,11 +246,11 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAyMjUzNzIsLTcyMzY3MTQ1NywxNzk3MT
-E4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3NjU0NDg5
-NjIsLTE5MTIyNzQxNTIsLTQ4MjgxMzQ1LC0zNjUyOTQ2MzAsLT
-EwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0xMjky
-MzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2LD
-EyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5NzU0
-NDk0XX0=
+eyJoaXN0b3J5IjpbMjEzNzA0ODEwNCwtNzIzNjcxNDU3LDE3OT
+cxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMTc2NTQ0
+ODk2MiwtMTkxMjI3NDE1MiwtNDgyODEzNDUsLTM2NTI5NDYzMC
+wtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOTUsLTEy
+OTIzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYxNDU5Nz
+YsMTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0NiwxNTk3
+NTQ0OTRdfQ==
 -->
