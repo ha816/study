@@ -103,22 +103,22 @@ public boolean equals(Object o){
 
 ```
 public class Point {
-
 	@Override 
 	public boolean equals(Object o){
 		if(!(o instanceof Point)){
 			return false;
 		}
 		Point p = (Point) o
+		return p.x == x && p.y == y;
 	}
 }
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODE1MDQwODAsMTY0Mjc4MjI5NSwtMT
-I5MjMwOTMyMywxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3
-NiwxMjQ5ODI1NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OT
-c1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMDc3Njk4LC05MjgzNTE5
-MDUsLTY4MTExMTM3MSwtMTg1MzYzMTM0NSwxNzkxNTgxNzIzLC
-01ODIzMjk3LC0xMTI0MTYyNzYwXX0=
+eyJoaXN0b3J5IjpbMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0xMj
+kyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2
+LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAwNDYsMTU5Nz
+U0NDk0LC03MTY1ODYwNzcsLTIwNzMwNzc2OTgsLTkyODM1MTkw
+NSwtNjgxMTExMzcxLC0xODUzNjMxMzQ1LDE3OTE1ODE3MjMsLT
+U4MjMyOTcsLTExMjQxNjI3NjBdfQ==
 -->
