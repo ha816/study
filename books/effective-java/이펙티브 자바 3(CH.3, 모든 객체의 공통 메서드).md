@@ -102,15 +102,12 @@ public boolean equals(Object o){
 추이성은 첫 번째 객체와 두 번째 겍체가 같고, 두 번째 겍체와 세 번째 객체가 같으면, 첫 번째 객체와 세 번째 객체도 같아야 한다는 뜻이다. 간단해 보이지만 자칫하면 어기기 쉽다. 상위 클래스에 없는 새로운 필드를 하위 클래스에 추가하는 상황을 생각해보자. equals 비교에 영향을 주는 정보를 추가한 것이다.  예를 들어 2차워 점을 나타내는 Point 클래스로 생각해보자.
 
 ```
-public final class CaseInsensitiveString {
-	private final String s;
-	public CaseInsensitiveString(String s){
-		this.s = Objects.requireNonNull(s);
-	}
+public class Point {
+
 	@Override 
 	public boolean equals(Object o){
-		if( o instanceof CaseInsensitiveString){
-			return s.equalsIgnoreCase( (CaseInsensitiveString)o.s )
+		if(!(o instanceof Point)){
+			return false;
 		}
 		if( o instance of String){
 			return s.equalsIgnoreCase((String) o);
@@ -121,7 +118,7 @@ public final class CaseInsensitiveString {
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYyMTQ0MzE4LDE2NDI3ODIyOTUsLTEyOT
+eyJoaXN0b3J5IjpbMzgwMTIyNzc0LDE2NDI3ODIyOTUsLTEyOT
 IzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYxNDU5NzYs
 MTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0NiwxNTk3NT
 Q0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5OCwtOTI4MzUxOTA1
