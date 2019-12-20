@@ -115,24 +115,34 @@ public class Point {
 ```
 ```
 public class ColorPoint extends Point {
-	@Override 
-	public boolean equals(Object o){
+	private final Color color;
+	public ColorPoint(int x, int y, Color color){
+		super(x,y);
+		this.color = color;
+	}
+	...
+}
+```
+```
+@Override public boolean equals(Object o){
 		if(!(o instanceof Point)){
 			return false;
 		}
 		Point p = (Point) o
 		return p.x == x && p.y == y;
 	}
-}
 ```
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDk3MjQ1MDIsLTEwMjgxMzg5NDgsMT
-M4NDA5NzIwMywxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLDE3MjU2
-NzMwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLT
-YxNzEyMDg2LDEyODAxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYw
-NzcsLTIwNzMwNzc2OTgsLTkyODM1MTkwNSwtNjgxMTExMzcxLC
-0xODUzNjMxMzQ1LDE3OTE1ODE3MjMsLTU4MjMyOTcsLTExMjQx
-NjI3NjBdfQ==
+eyJoaXN0b3J5IjpbMTI1MTg4NzE4LC0xMDI4MTM4OTQ4LDEzOD
+QwOTcyMDMsMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMywxNzI1Njcz
+MDUsOTE3MDU5MDQ1LDM2NjE0NTk3NiwxMjQ5ODI1NzEzLC02MT
+cxMjA4NiwxMjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3
+LC0yMDczMDc3Njk4LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMT
+g1MzYzMTM0NSwxNzkxNTgxNzIzLC01ODIzMjk3LC0xMTI0MTYy
+NzYwXX0=
 -->
