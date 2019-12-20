@@ -99,17 +99,15 @@ public boolean equals(Object o){
 
 #### 추이성(transitivity) 
 
-추이성은 첫 번째 객체와 두 번째 겍체가 같고, 두 번째 겍체와 세 번째 객체가 같으면, 첫 번째 객체와 세 번째 객체도 같아야 한다는 뜻이다. 간단해 보이지만 자칫하면 어기기 쉽다. 상위 클래스에 없는 새로운 필드를 하위 클래스에 추가하는 상황을 생각해보자. equals 비교에 영향을 주는 정보를 추가한 것이다. 
-
-
+추이성은 첫 번째 객체와 두 번째 겍체가 같고, 두 번째 겍체와 세 번째 객체가 같으면, 첫 번째 객체와 세 번째 객체도 같아야 한다는 뜻이다. 간단해 보이지만 자칫하면 어기기 쉽다. 상위 클래스에 없는 새로운 필드를 하위 클래스에 추가하는 상황을 생각해보자. equals 비교에 영향을 주는 정보를 추가한 것이다.  예를 들어 2차워 점을 나타내는 Point 클래스로 생각해보자.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTAwOTYyMTIsMTY0Mjc4MjI5NSwtMT
-I5MjMwOTMyMywxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3
-NiwxMjQ5ODI1NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1OT
-c1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMDc3Njk4LC05MjgzNTE5
-MDUsLTY4MTExMTM3MSwtMTg1MzYzMTM0NSwxNzkxNTgxNzIzLC
-01ODIzMjk3LC0xMTI0MTYyNzYwXX0=
+eyJoaXN0b3J5IjpbODkxMTE2MzA4LDE2NDI3ODIyOTUsLTEyOT
+IzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYxNDU5NzYs
+MTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0NiwxNTk3NT
+Q0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5OCwtOTI4MzUxOTA1
+LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMTc5MTU4MTcyMywtNT
+gyMzI5NywtMTEyNDE2Mjc2MF19
 -->
