@@ -229,6 +229,11 @@ public boolean equals(Object o){
 	}
 ```
 
+### 양질의 equals 메서드 구현 
+
+1. == 연산자를 사용해서 입력이 자기 참조인지 확인한다. 단순한 성능 최적화용으로, 비교 작업이 복잡하다면 equals 과정을 거친다.
+2. instance
+
 
 
 
@@ -236,11 +241,11 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4ODI4Njk5LC0xMzI5MDQzOTYwLC0yMD
-Q4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MTIyNzQxNTIsLTQ4Mjgx
-MzQ1LC0zNjUyOTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMy
-wxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcw
-NTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLTYxNzEyMDg2LD
-EyODAxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYwNzcsLTIwNzMw
-Nzc2OThdfQ==
+eyJoaXN0b3J5IjpbLTExOTM0MjkwMjYsLTEzMjkwNDM5NjAsLT
+IwNDg4NDMwMzcsMTc2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtNDgy
+ODEzNDUsLTM2NTI5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3Mj
+AzLDE2NDI3ODIyOTUsLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkx
+NzA1OTA0NSwzNjYxNDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwOD
+YsMTI4MDE4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3
+MzA3NzY5OF19
 -->
