@@ -212,26 +212,35 @@ public class ColorPoint {
 
 #### null-아님
 
-null-아님은 이름처럼 도느 객체가 null과는 값지 않아야 한다. 의도하지 않았음에도 equals(null)이 true가 반환되는 상황은 상상하기 어렵지만, 실수로 NPE을 던지는 코드는 흔할것이다. 
+null-아님은 이름처럼 도느 객체가 null과는 값지 않아야 한다. 의도하지 않았음에도 equals(null)이 true가 반환되는 상황은 상상하기 어렵지만, 실수로 NPE을 던지는 코드는 흔할것이다. 따라서 아래와 같이 명시하는 방법이 있다.
+```
+@Override 
+public boolean equals(Object o){
+	if(o == null){ 
+		return false;
+	}
+```
+하지만 이런 검사는 불필요하다고 한다.
 
 ```
 @Override 
-	public boolean equals(Object o){
-		if(!(o instanceof ColorPoint)){ 
-			return false;
-		}
-	```
+public boolean equals(Object o){
+	if(!(o instanceof MyType)){  //o가 null
+		return false;
+	}
+```
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI2MDI1MzI2LC0xMzI5MDQzOTYwLC0yMD
-Q4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MTIyNzQxNTIsLTQ4Mjgx
-MzQ1LC0zNjUyOTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMy
-wxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcw
-NTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLTYxNzEyMDg2LD
-EyODAxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYwNzcsLTIwNzMw
-Nzc2OThdfQ==
+eyJoaXN0b3J5IjpbLTE3Mjc0MzQ5OTEsLTEzMjkwNDM5NjAsLT
+IwNDg4NDMwMzcsMTc2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtNDgy
+ODEzNDUsLTM2NTI5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3Mj
+AzLDE2NDI3ODIyOTUsLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkx
+NzA1OTA0NSwzNjYxNDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwOD
+YsMTI4MDE4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3
+MzA3NzY5OF19
 -->
