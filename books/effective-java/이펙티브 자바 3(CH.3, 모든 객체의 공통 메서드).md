@@ -55,7 +55,9 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 ```
 @Override public boolean equals(Object o){
-	if( o instanceof C)
+	if( o instanceof CaseInsensitiveString){
+		return s.equalsIgnoreCase( (CaseInsensitiveString)o.s )
+	}
 }
 ```
 
@@ -70,7 +72,7 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NTc1OTAzNSwtNjE3MTIwODYsMTI4MD
+eyJoaXN0b3J5IjpbLTU3NTM4MjA4NCwtNjE3MTIwODYsMTI4MD
 E4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5
 OCwtOTI4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMT
 c5MTU4MTcyMywtNTgyMzI5NywtMTEyNDE2Mjc2MF19
