@@ -29,7 +29,7 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 논리적 동치성을 확인하도록 재정의 해두면, Map의 키와, Set의 원소로 사용할 수 있게 된다. 값 클래스라고 해도, 값이 같은 클래스가 둘 이상 만들어지지 않음을 보장하는 클래스라면 equals를 재정의 하지 않아도 된다. 이런 클래스는 당연히 논리적으로 같은 인스턴스가 2개이상 만들어지지 않으니 논리적 동치성과 객체 식별성이 같다.
 
-### 동치 관계
+### 동치 관계(equivalence relation)
 
  equals 메서드를 재정의할때는 반드시 일반 규약을 따라야한다. 다음은 Object명세에 적힌 규약이다. equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 조건을 만족해야 한다. 
 
@@ -47,7 +47,12 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 #### 반사성(reflexivity)
 
-단순히 말해 자기
+단순히 말해 객체는 자기자신과 같아야 한다. 
+
+#### 대칭성(symmetry) 
+
+대칭성은 두 객체는 서로 
+
 
 
 
@@ -59,8 +64,8 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1OTYwNDM3NCwtNjE3MTIwODYsMTI4MD
-E4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5
-OCwtOTI4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMT
-c5MTU4MTcyMywtNTgyMzI5NywtMTEyNDE2Mjc2MF19
+eyJoaXN0b3J5IjpbMzc4NzEzNDk5LC02MTcxMjA4NiwxMjgwMT
+gwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMDc3Njk4
+LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMTg1MzYzMTM0NSwxNz
+kxNTgxNzIzLC01ODIzMjk3LC0xMTI0MTYyNzYwXX0=
 -->
