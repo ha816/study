@@ -77,6 +77,7 @@ CaseInsensitiveString의 equals 메서드를 보면 순진하게도 일반 문�
 @Override 
 public boolean equals(Object o){
 	return o instance of CaseInsensitiveString && 
+		((CaseInsensitiveString) o).s.equalsIgnoreCase(s);
 }
 ```
 
@@ -93,7 +94,7 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MTA2ODM0OSwxNzI1NjczMDUsOTE3MD
+eyJoaXN0b3J5IjpbMTgyNDA3OTMyNSwxNzI1NjczMDUsOTE3MD
 U5MDQ1LDM2NjE0NTk3NiwxMjQ5ODI1NzEzLC02MTcxMjA4Niwx
 MjgwMTgwMDQ2LDE1OTc1NDQ5NCwtNzE2NTg2MDc3LC0yMDczMD
 c3Njk4LC05MjgzNTE5MDUsLTY4MTExMTM3MSwtMTg1MzYzMTM0
