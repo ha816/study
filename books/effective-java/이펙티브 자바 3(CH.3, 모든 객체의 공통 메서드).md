@@ -178,6 +178,7 @@ instaceof 대신 getClass를 쓰면 완전히 같은 클래스 객체와 비교�
 **리스코프 치환 원칙(Liskov substitution principle)은 어떤 타입에 있어 중요한 속성이라면 그 하위타입에서도 마찬가지로 중요하다. 따라서 그 타입의 모든 메서드가 하위 타입에서도 똑같이 잘 동작해야 한다.**
 
 구체 클래스의 하위 클래스에서 값을 추가할 방법은 없지만 괜찮은 우회 방법이 하나 있다. 
+바로 상속 대신 컴포지션을 사용하는 방법이다. Point를 상속하는 대신 Point를 ColorPoint의 private 필드로 두고, ColorPoint와 같은 위치의 일반 Point를 반환하는 뷰 메서드를 public으로 추가하는 식이다. 
 
 
 
@@ -187,11 +188,11 @@ instaceof 대신 getClass를 쓰면 완전히 같은 클래스 객체와 비교�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NzMxMjgwNSwtNDgyODEzNDUsLTM2NT
-I5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIy
-OTUsLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNj
-YxNDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwODYsMTI4MDE4MDA0
-NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3MzA3NzY5OCwtOT
-I4MzUxOTA1LC02ODExMTEzNzEsLTE4NTM2MzEzNDUsMTc5MTU4
-MTcyM119
+eyJoaXN0b3J5IjpbLTE5MTIyNzQxNTIsLTQ4MjgxMzQ1LC0zNj
+UyOTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgy
+Mjk1LC0xMjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMz
+Y2MTQ1OTc2LDEyNDk4MjU3MTMsLTYxNzEyMDg2LDEyODAxODAw
+NDYsMTU5NzU0NDk0LC03MTY1ODYwNzcsLTIwNzMwNzc2OTgsLT
+kyODM1MTkwNSwtNjgxMTExMzcxLC0xODUzNjMxMzQ1LDE3OTE1
+ODE3MjNdfQ==
 -->
