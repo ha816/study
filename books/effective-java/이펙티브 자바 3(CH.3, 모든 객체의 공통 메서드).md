@@ -220,12 +220,11 @@ public boolean equals(Object o){
 		return false;
 	}
 ```
-하지만 이런 검사는 불필요하다고 한다.
-
+하지만 이런 검사는 불필요하다고 한다. instanceof 비교를 null 객체로 하면 무조건 false가 반환되기 때문이다. 
 ```
 @Override 
 public boolean equals(Object o){
-	if(!(o instanceof MyType)){  //o가 null
+	if(!(o instanceof MyType)){  //o가 null이면 무조건 false가 된다.
 		return false;
 	}
 ```
@@ -234,13 +233,14 @@ public boolean equals(Object o){
 
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjc0MzQ5OTEsLTEzMjkwNDM5NjAsLT
-IwNDg4NDMwMzcsMTc2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtNDgy
-ODEzNDUsLTM2NTI5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3Mj
-AzLDE2NDI3ODIyOTUsLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkx
-NzA1OTA0NSwzNjYxNDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwOD
-YsMTI4MDE4MDA0NiwxNTk3NTQ0OTQsLTcxNjU4NjA3NywtMjA3
-MzA3NzY5OF19
+eyJoaXN0b3J5IjpbODU4ODI4Njk5LC0xMzI5MDQzOTYwLC0yMD
+Q4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MTIyNzQxNTIsLTQ4Mjgx
+MzQ1LC0zNjUyOTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMy
+wxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcw
+NTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLTYxNzEyMDg2LD
+EyODAxODAwNDYsMTU5NzU0NDk0LC03MTY1ODYwNzcsLTIwNzMw
+Nzc2OThdfQ==
 -->
