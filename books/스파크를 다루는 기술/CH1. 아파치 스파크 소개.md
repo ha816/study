@@ -75,17 +75,11 @@ HDFS(Hadoop File System)과 맵리듀스 처리 엔진으로 구성된 하둡 �
 
 스파크는 자동화 장애 내성(fault tolerance)과 데이터 분산 기능외에도 RDD의 컬렉션 함수평 프로그래밍을 사용할 수 있는 정교한 API를 제공한다. RDD API를 통해 컬렉션을 필터링, 사용자 정의함수에 매핑, 누적 값하나로 리듀스하고, 두 RDD를 서로 빼거나 교차하거나 결합하는 등 다양한 작업을 할 수 있다.
 
-
-
-
-
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQyNDk0MzAsLTMzMDE2NTg2NiwtMT
-g5MzY1MTY0NSwxNTA3MzgxNjE5LC0xOTEyNDg3NDI1LC00NDQ1
-MDQ3NjMsNTU1MDI1NTU4LDE0NDQ0Mjg1NzksODEwMTE2MDM4LC
-0xOTkxMDMyOTM0LDM1NjE3MzQ2NSwyMDkyMzY2NTMwLC0xODc5
-MjU3NzU3XX0=
+eyJoaXN0b3J5IjpbLTMzMDE2NTg2NiwtMTU1NDI0OTQzMCwtMz
+MwMTY1ODY2LC0xODkzNjUxNjQ1LDE1MDczODE2MTksLTE5MTI0
+ODc0MjUsLTQ0NDUwNDc2Myw1NTUwMjU1NTgsMTQ0NDQyODU3OS
+w4MTAxMTYwMzgsLTE5OTEwMzI5MzQsMzU2MTczNDY1LDIwOTIz
+NjY1MzAsLTE4NzkyNTc3NTddfQ==
 -->
