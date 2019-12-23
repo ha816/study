@@ -253,17 +253,21 @@ public boolean equals(Object o){
 
 >꼭 필요한 경우가 아니라면 equals는 재정의하지 말자. 대다수 Object의 equals가 원하는 비교를 정확히 해준다. equals를 재정의 할때는 그 클래스의 핵심 필드를 빠짐없이, 다섯 요건z을 지켜가며 비교를 해야 한다. 
 
-## Item11. equals는 일반 규약을 지켜 재정의하라. 
+## Item11. equals를 재정의하려거든 hashCode도 재정의하라
+
+반드시 equals를 재정의한 클래스 모두에서 hashCode도 재정의해야 한다. 그렇지 않으면 hashCode 일반 규약을 어기게 되어 해당 클래스 인스턴스가 HashMap이나 HashSet같은 컬렉션의 원소로 사용되면 문제가 발생할 것이다. 
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU1MjM0NTA5LC05MTM4NTYxNDUsLTE1MT
-E3NjA4MTEsLTcyMzY3MTQ1NywxNzk3MTE4OTE2LC0xMzI5MDQz
-OTYwLC0yMDQ4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MTIyNzQxNT
-IsLTM2NTI5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2
-NDI3ODIyOTUsLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OT
-A0NSwzNjYxNDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwODYsMTI4
-MDE4MDA0Nl19
+eyJoaXN0b3J5IjpbMTMxOTE1NzEzLDk1NTIzNDUwOSwtOTEzOD
+U2MTQ1LC0xNTExNzYwODExLC03MjM2NzE0NTcsMTc5NzExODkx
+NiwtMTMyOTA0Mzk2MCwtMjA0ODg0MzAzNywxNzY1NDQ4OTYyLC
+0xOTEyMjc0MTUyLC0zNjUyOTQ2MzAsLTEwMjgxMzg5NDgsMTM4
+NDA5NzIwMywxNjQyNzgyMjk1LC0xMjkyMzA5MzIzLDE3MjU2Nz
+MwNSw5MTcwNTkwNDUsMzY2MTQ1OTc2LDEyNDk4MjU3MTMsLTYx
+NzEyMDg2XX0=
 -->
