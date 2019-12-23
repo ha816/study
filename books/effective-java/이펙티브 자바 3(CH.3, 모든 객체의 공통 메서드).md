@@ -258,7 +258,8 @@ public boolean equals(Object o){
 반드시 equals를 재정의한 클래스 모두에서 hashCode도 재정의해야 한다. 그렇지 않으면 hashCode 일반 규약을 어기게 되어 해당 클래스 인스턴스가 HashMap이나 HashSet같은 컬렉션의 원소로 사용되면 문제가 발생할 것이다. 
 
 * equals 비교에서 사용되는 정보가 변하지 않았다면, 애플리케이션이 동작하는 동안 그 객체의 hashCode 메서드는 몇번을 호출해도 일관되게 항상 같은 값을 유지해야 한다. 단 애플리케이션이 다시 실행한다면 이 값은 달라져도 괜찮다. 
-* 
+* equals(Object)가 두 객체가 같다고 판단했다면, 두 객체의 hashCode도 똑같은 값을 반환해야 한다
+* equals(Object)가 두 객체가 같다고 다르다고 판단다면, 두 객체의 hashCode는 같을 수도 다를 수도 있다. 
 
 
 
@@ -266,11 +267,11 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAxNDQyNTc4LDEzMTkxNTcxMyw5NTUyMz
-Q1MDksLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwtNzIzNjcxNDU3
-LDE3OTcxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMT
-c2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtMzY1Mjk0NjMwLC0xMDI4
-MTM4OTQ4LDEzODQwOTcyMDMsMTY0Mjc4MjI5NSwtMTI5MjMwOT
-MyMywxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NTk3NiwxMjQ5
-ODI1NzEzXX0=
+eyJoaXN0b3J5IjpbMTg3Mzg5MDU3NSw5MDE0NDI1NzgsMTMxOT
+E1NzEzLDk1NTIzNDUwOSwtOTEzODU2MTQ1LC0xNTExNzYwODEx
+LC03MjM2NzE0NTcsMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwtMj
+A0ODg0MzAzNywxNzY1NDQ4OTYyLC0xOTEyMjc0MTUyLC0zNjUy
+OTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMj
+k1LC0xMjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2
+MTQ1OTc2XX0=
 -->
