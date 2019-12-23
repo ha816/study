@@ -31,7 +31,9 @@ equals 메서드는 재정의하기 쉬워보이지만 곳곳에 함정이 도�
 
 ### 동치 관계(equivalence relation)
 
- equals 메서드를 재정의할때는 반드시 일반 규약을 따라야한다. 다음은 Object명세에 적힌 규약이다. equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 조건을 만족해야 한다. 
+ equals 메서드를 재정의할때는 반드시 일반 규약을 따라야한다. 다음은 Object명세에 적힌 규약이다. 
+
+equals 메서드는 동치관계(equivalence relation)을 구현하며 아래 조건을 만족해야 한다. 
 
 * 반사성(reflexivity) : null이 아닌 모든 참조 값 x에 대해, x.equals(x)는 true.
 * 대칭성(symmetry) : null이 아닌 모든 참조 값 x,y에 대해 x.equals(y) == y.equals(x)를 만족한다.
@@ -277,11 +279,11 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNTMyNTYwNCw2Mzc5OTIzNjksOTAxND
-QyNTc4LDEzMTkxNTcxMyw5NTUyMzQ1MDksLTkxMzg1NjE0NSwt
-MTUxMTc2MDgxMSwtNzIzNjcxNDU3LDE3OTcxMTg5MTYsLTEzMj
-kwNDM5NjAsLTIwNDg4NDMwMzcsMTc2NTQ0ODk2MiwtMTkxMjI3
-NDE1MiwtMzY1Mjk0NjMwLC0xMDI4MTM4OTQ4LDEzODQwOTcyMD
-MsMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMywxNzI1NjczMDUsOTE3
-MDU5MDQ1XX0=
+eyJoaXN0b3J5IjpbNzE3Njg1MjAsMTgwNTMyNTYwNCw2Mzc5OT
+IzNjksOTAxNDQyNTc4LDEzMTkxNTcxMyw5NTUyMzQ1MDksLTkx
+Mzg1NjE0NSwtMTUxMTc2MDgxMSwtNzIzNjcxNDU3LDE3OTcxMT
+g5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMTc2NTQ0ODk2
+MiwtMTkxMjI3NDE1MiwtMzY1Mjk0NjMwLC0xMDI4MTM4OTQ4LD
+EzODQwOTcyMDMsMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMywxNzI1
+NjczMDVdfQ==
 -->
