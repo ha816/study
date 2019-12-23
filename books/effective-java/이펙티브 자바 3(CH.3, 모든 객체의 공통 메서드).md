@@ -251,25 +251,19 @@ public boolean equals(Object o){
 * 너무 복잡하게 해결하지 말자. 필드의 동치성만 검사해도 규약을 어렵지 않게 지킬 수 있다. 일반적으로 필드의 별칭(alias)는 비교 대상에 넣지 말자.
 * Object가 아닌 타입을 매개변수로 받는 equals 메서드는 선언하지 말자. equals 메서드는 반드시 Object이다. 만약 Object아닌 타입을 받게 만들었다면 그건 Override가 아닌 Overloading이다.
 
->꼭 필요한 경우가 아니라면 equals는 재정의하지 말자. 대다수 Object의 equals가 원하는 비교를 정확히 해준다. equals를 재정의 할때는 그 클래스의 핵심 필드를 빠짐없이, 다섯 요건을 지켜가며 비교를 해야 한다. 
+>꼭 필요한 경우가 아니라면 equals는 재정의하지 말자. 대다수 Object의 equals가 원하는 비교를 정확히 해준다. equals를 재정의 할때는 그 클래스의 핵심 필드를 빠짐없이, 다섯 요건z을 지켜가며 비교를 해야 한다. 
 
-
-
-위의 방식으로 하면 일반 Point를 ColorPoint와 비교한 결과와 그 뒤를 바꿧을때 결과가 다를 수 있다. 즉 대칭성이 위반이 되는 것이다. 
-```
-
-```
-
+## Item11. equals는 일반 규약을 지켜 재정의하라. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwtNz
-IzNjcxNDU3LDE3OTcxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4
-NDMwMzcsMTc2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtMzY1Mjk0Nj
-MwLC0xMDI4MTM4OTQ4LDEzODQwOTcyMDMsMTY0Mjc4MjI5NSwt
-MTI5MjMwOTMyMywxNzI1NjczMDUsOTE3MDU5MDQ1LDM2NjE0NT
-k3NiwxMjQ5ODI1NzEzLC02MTcxMjA4NiwxMjgwMTgwMDQ2LDE1
-OTc1NDQ5NF19
+eyJoaXN0b3J5IjpbOTU1MjM0NTA5LC05MTM4NTYxNDUsLTE1MT
+E3NjA4MTEsLTcyMzY3MTQ1NywxNzk3MTE4OTE2LC0xMzI5MDQz
+OTYwLC0yMDQ4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MTIyNzQxNT
+IsLTM2NTI5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2
+NDI3ODIyOTUsLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OT
+A0NSwzNjYxNDU5NzYsMTI0OTgyNTcxMywtNjE3MTIwODYsMTI4
+MDE4MDA0Nl19
 -->
