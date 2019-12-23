@@ -263,9 +263,9 @@ public boolean equals(Object o){
 * equals(Object)가 두 객체가 같다고 판단했다면, 두 객체의 hashCode도 똑같은 값을 반환해야 한다
 * equals(Object)가 두 객체가 같다고 다르다고 판단다면, 두 객체의 hashCode는 같을 수도 다를 수도 있다. 단, 다른 객체에 대해서는 다른 hashCode 값을 반환해야 해시 테이블의 성능이 좋아진다.
 
-hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아래 규약이다. `equals(Object)가 두 객체가 같다고 판단했다면, 두 객체의 hashCode도 똑같은 값을 반환해야 한다` **즉 논리적으로 같은 두 객체는 같은 hashCode를 반환해야 한다.** 
+hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아래 규약이다. `equals(Object)가 두 객체가 같다고 판단했다면, 두 객체의 hashCode도 똑같은 값을 반환해야 한다` **즉 논리적으로 같은 두 객체는 반드시 같은 hashCode를 반환해야 한다.** 
 
-
+좋은 해시 함수라면 서로 다른 인스턴스에 대해서 다른 해시코드를 반환해야 한다. 세번째 규약은 
 
 
 
@@ -276,11 +276,11 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTcxNjg3Niw5MDE0NDI1NzgsMTMxOT
-E1NzEzLDk1NTIzNDUwOSwtOTEzODU2MTQ1LC0xNTExNzYwODEx
-LC03MjM2NzE0NTcsMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwtMj
-A0ODg0MzAzNywxNzY1NDQ4OTYyLC0xOTEyMjc0MTUyLC0zNjUy
-OTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMj
-k1LC0xMjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2
-MTQ1OTc2XX0=
+eyJoaXN0b3J5IjpbLTExNzQwNjMzNTgsOTAxNDQyNTc4LDEzMT
+kxNTcxMyw5NTUyMzQ1MDksLTkxMzg1NjE0NSwtMTUxMTc2MDgx
+MSwtNzIzNjcxNDU3LDE3OTcxMTg5MTYsLTEzMjkwNDM5NjAsLT
+IwNDg4NDMwMzcsMTc2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtMzY1
+Mjk0NjMwLC0xMDI4MTM4OTQ4LDEzODQwOTcyMDMsMTY0Mjc4Mj
+I5NSwtMTI5MjMwOTMyMywxNzI1NjczMDUsOTE3MDU5MDQ1LDM2
+NjE0NTk3Nl19
 -->
