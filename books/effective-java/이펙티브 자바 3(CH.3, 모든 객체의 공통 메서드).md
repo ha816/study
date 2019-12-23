@@ -259,7 +259,7 @@ public boolean equals(Object o){
 
 * equals 비교에서 사용되는 정보가 변하지 않았다면, 애플리케이션이 동작하는 동안 그 객체의 hashCode 메서드는 몇번을 호출해도 일관되게 항상 같은 값을 유지해야 한다. 단 애플리케이션이 다시 실행한다면 이 값은 달라져도 괜찮다. 
 * equals(Object)가 두 객체가 같다고 판단했다면, 두 객체의 hashCode도 똑같은 값을 반환해야 한다
-* equals(Object)가 두 객체가 같다고 다르다고 판단다면, 두 객체의 hashCode는 같을 수도 다를 수도 있다. 
+* equals(Object)가 두 객체가 같다고 다르다고 판단다면, 두 객체의 hashCode는 같을 수도 다를 수도 있다. 단, 다른 객체에 대해서는 다른 hashCode 값을 반환해야 해시 테이블의 성능이 좋아진다.
 
 
 
@@ -267,11 +267,11 @@ public boolean equals(Object o){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3Mzg5MDU3NSw5MDE0NDI1NzgsMTMxOT
-E1NzEzLDk1NTIzNDUwOSwtOTEzODU2MTQ1LC0xNTExNzYwODEx
-LC03MjM2NzE0NTcsMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwtMj
-A0ODg0MzAzNywxNzY1NDQ4OTYyLC0xOTEyMjc0MTUyLC0zNjUy
-OTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMj
-k1LC0xMjkyMzA5MzIzLDE3MjU2NzMwNSw5MTcwNTkwNDUsMzY2
-MTQ1OTc2XX0=
+eyJoaXN0b3J5IjpbOTAyNTg1MjA2LDkwMTQ0MjU3OCwxMzE5MT
+U3MTMsOTU1MjM0NTA5LC05MTM4NTYxNDUsLTE1MTE3NjA4MTEs
+LTcyMzY3MTQ1NywxNzk3MTE4OTE2LC0xMzI5MDQzOTYwLC0yMD
+Q4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MTIyNzQxNTIsLTM2NTI5
+NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOT
+UsLTEyOTIzMDkzMjMsMTcyNTY3MzA1LDkxNzA1OTA0NSwzNjYx
+NDU5NzZdfQ==
 -->
