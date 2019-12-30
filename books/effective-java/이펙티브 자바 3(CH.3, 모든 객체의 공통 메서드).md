@@ -272,7 +272,7 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 2. 나머지 핵심 필드 각각에 대해서...
 	3. 기본 타입필드라면, Type.hashCode()를 사용한다. Type은 기본 타입의 박싱 클래스
 	4. 참조 타입필드이고 
-	5. 필드가 배열이라면, 핵심
+	5. 필드가 배열이라면, 배열의 각 원소를 별도의 필드처럼 다룬다. 배열에서 사용될 핵심 원소들로 해시코드를 계산한다. 모든 원소가 핵시
 
 
 
@@ -285,11 +285,11 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MzU1NjEsNzE3Njg1MjAsMTgwNTMyNT
-YwNCw2Mzc5OTIzNjksOTAxNDQyNTc4LDEzMTkxNTcxMyw5NTUy
-MzQ1MDksLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwtNzIzNjcxND
-U3LDE3OTcxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcs
-MTc2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtMzY1Mjk0NjMwLC0xMD
-I4MTM4OTQ4LDEzODQwOTcyMDMsMTY0Mjc4MjI5NSwtMTI5MjMw
-OTMyM119
+eyJoaXN0b3J5IjpbNzkyMDE1MzMwLDcxNzY4NTIwLDE4MDUzMj
+U2MDQsNjM3OTkyMzY5LDkwMTQ0MjU3OCwxMzE5MTU3MTMsOTU1
+MjM0NTA5LC05MTM4NTYxNDUsLTE1MTE3NjA4MTEsLTcyMzY3MT
+Q1NywxNzk3MTE4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3
+LDE3NjU0NDg5NjIsLTE5MTIyNzQxNTIsLTM2NTI5NDYzMCwtMT
+AyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOTUsLTEyOTIz
+MDkzMjNdfQ==
 -->
