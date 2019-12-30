@@ -311,7 +311,7 @@ int hashCode;
 }
 ```
 
-**성능을 높이기 위해 해시코드를 계산할때 필요한 핵심 필드를 생략해서는 안된다.** 속도야 빨라지겠지만, 해시 품질이 나빠져 해시 테이블의 성능을 심각하게 떨어뜨릴 수도 있다. 어떤 핵심 필드는 공통적으로 몰린 해시 코드값을 넓은 범위로 고르게 퍼트려주는 효과가 있을 수 있다. 하필 이런 핵심 필드를 생략한다면 테이블의 속도가 선형으로 느려질 것이다. 실제로 자바2 이전의 String은 문자열의 앞자리 16자리로만 해시 코드를 계산했다. URL 처럼 계층적 이름으로 대량의 문자열을 
+**성능을 높이기 위해 해시코드를 계산할때 필요한 핵심 필드를 생략해서는 안된다.** 속도야 빨라지겠지만, 해시 품질이 나빠져 해시 테이블의 성능을 심각하게 떨어뜨릴 수도 있다. 어떤 핵심 필드는 공통적으로 몰린 해시 코드값을 넓은 범위로 고르게 퍼트려주는 효과가 있을 수 있다. 하필 이런 핵심 필드를 생략한다면 테이블의 속도가 선형으로 느려질 것이다. 실제로 자바2 이전의 String은 문자열의 앞자리 16자리로만 해시 코드를 계산했다. URL 처럼 계층적 이름으로 대량의 문자열을 다룬다면 심각한 문제가 발생한다. 
 
 
 
@@ -328,7 +328,7 @@ int hashCode;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTI4MDkxOSwxMzI3MjA3MjUsMTAzMT
+eyJoaXN0b3J5IjpbLTY5MTYyMTE0MSwxMzI3MjA3MjUsMTAzMT
 c4NzQ1NiwyODk1NTgxNTEsNzE3Njg1MjAsMTgwNTMyNTYwNCw2
 Mzc5OTIzNjksOTAxNDQyNTc4LDEzMTkxNTcxMyw5NTUyMzQ1MD
 ksLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwtNzIzNjcxNDU3LDE3
