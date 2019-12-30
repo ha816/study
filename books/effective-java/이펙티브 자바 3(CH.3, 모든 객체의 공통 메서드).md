@@ -285,10 +285,11 @@ result 값을 계속해서 31을 곱하는 과정은 필드에 곱하는 순서�
 @Override public int hashCode(){
 	int result = Short.hashCode(shortCode);//첫번째 primitive 핵심 필드
 	result = 31 * result + Object.hashCode // 두번째 참조 핵심 필드 
-	
-
+	result = 31 * result + Arrays.hashCode // 세번째 배열 핵심 필드 
+	return result;
 ```
 
+이런 식으로 만든 해시 함수 제작 요령은 최첨단은 아니지만 충분히 훌륭하다. 
 
 
 
@@ -302,11 +303,11 @@ result 값을 계속해서 31을 곱하는 과정은 필드에 곱하는 순서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA3MTA3OTExLDEwMzE3ODc0NTYsMjg5NT
-U4MTUxLDcxNzY4NTIwLDE4MDUzMjU2MDQsNjM3OTkyMzY5LDkw
-MTQ0MjU3OCwxMzE5MTU3MTMsOTU1MjM0NTA5LC05MTM4NTYxND
-UsLTE1MTE3NjA4MTEsLTcyMzY3MTQ1NywxNzk3MTE4OTE2LC0x
-MzI5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MT
-IyNzQxNTIsLTM2NTI5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3
-MjAzXX0=
+eyJoaXN0b3J5IjpbMTA4MTUyNzkwMCwxMDMxNzg3NDU2LDI4OT
+U1ODE1MSw3MTc2ODUyMCwxODA1MzI1NjA0LDYzNzk5MjM2OSw5
+MDE0NDI1NzgsMTMxOTE1NzEzLDk1NTIzNDUwOSwtOTEzODU2MT
+Q1LC0xNTExNzYwODExLC03MjM2NzE0NTcsMTc5NzExODkxNiwt
+MTMyOTA0Mzk2MCwtMjA0ODg0MzAzNywxNzY1NDQ4OTYyLC0xOT
+EyMjc0MTUyLC0zNjUyOTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5
+NzIwM119
 -->
