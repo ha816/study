@@ -275,7 +275,9 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 	5. 필드가 배열이라면, 배열의 각 원소를 별도의 필드처럼 다룬다. 배열에서 사용될 핵심 원소들로 해시코드를 계산한다. 모든 원소가 핵심 원소라면 Arrays.hashCode를 사용하자. 만약 하나도 없다면 상수(0)을 넣자.
 3. 2번에서 계산한 해시 코드 각각에 대해서 반복적으로 결과를 갱신한다. 옆에 식처럼 result = 31 * result + 해시코드(2번)
 
-다른 필드로부터 계산할 수 있는 필드를 파생 필드라고 하는데 핵심 필드가 아니기 때문에 모두 무시한다. 
+다른 필드로부터 계산할 수 있는 필드를 파생 필드라고 하는데 핵심 필드가 아니기 때문에 모두 무시한다. 또한 **equals 비교에 사용되지 않는 필드는 반드세 제외해야 한다.** 그렇지 않으면 논리적 동치를 만족하는 두 객체가 hashCode값이 달라지는 위험이 생길 수 있다. 
+
+
 
 
 
@@ -287,11 +289,11 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg5NTU4MTUxLDcxNzY4NTIwLDE4MDUzMj
-U2MDQsNjM3OTkyMzY5LDkwMTQ0MjU3OCwxMzE5MTU3MTMsOTU1
-MjM0NTA5LC05MTM4NTYxNDUsLTE1MTE3NjA4MTEsLTcyMzY3MT
-Q1NywxNzk3MTE4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3
-LDE3NjU0NDg5NjIsLTE5MTIyNzQxNTIsLTM2NTI5NDYzMCwtMT
-AyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOTUsLTEyOTIz
-MDkzMjNdfQ==
+eyJoaXN0b3J5IjpbNzQwNDY5OTUyLDI4OTU1ODE1MSw3MTc2OD
+UyMCwxODA1MzI1NjA0LDYzNzk5MjM2OSw5MDE0NDI1NzgsMTMx
+OTE1NzEzLDk1NTIzNDUwOSwtOTEzODU2MTQ1LC0xNTExNzYwOD
+ExLC03MjM2NzE0NTcsMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwt
+MjA0ODg0MzAzNywxNzY1NDQ4OTYyLC0xOTEyMjc0MTUyLC0zNj
+UyOTQ2MzAsLTEwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgy
+Mjk1XX0=
 -->
