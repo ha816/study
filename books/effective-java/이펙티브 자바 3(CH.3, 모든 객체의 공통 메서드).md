@@ -293,7 +293,7 @@ result 값을 계속해서 31을 곱하는 과정은 필드에 곱하는 순서�
 
 Objects 클래스는 임의의 갯수만큼 객체를 받아 해시 코드를 계산해주는 정적 메서드인 hash를 제공한다. 이 메서드를 활용하면 앞서 구현한 코드와 비슷한 수준의 해시함수를 한줄로 작성할 수 있다. 하지만 속도는 느리다. 따라서 성능에 민감하지 않은 상황에서만 사용하자. 
 
-
+클래스가 불변이고 해시 코드를 계산하는 비용이 크다면, 매번 해시코드를 호출하는 것보다 캐싱하는 방식을 고려할 수 있다.  이 객체가 해시의 키로 주로 사용될 것 같다면 인스턴스가 만들어질때 해시코드를 계산해두자. 
 
 
 
@@ -308,11 +308,11 @@ Objects 클래스는 임의의 갯수만큼 객체를 받아 해시 코드를 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNzIwNzI1LDEwMzE3ODc0NTYsMjg5NT
-U4MTUxLDcxNzY4NTIwLDE4MDUzMjU2MDQsNjM3OTkyMzY5LDkw
-MTQ0MjU3OCwxMzE5MTU3MTMsOTU1MjM0NTA5LC05MTM4NTYxND
-UsLTE1MTE3NjA4MTEsLTcyMzY3MTQ1NywxNzk3MTE4OTE2LC0x
-MzI5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MT
-IyNzQxNTIsLTM2NTI5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3
-MjAzXX0=
+eyJoaXN0b3J5IjpbODk5ODUwNzkwLDEzMjcyMDcyNSwxMDMxNz
+g3NDU2LDI4OTU1ODE1MSw3MTc2ODUyMCwxODA1MzI1NjA0LDYz
+Nzk5MjM2OSw5MDE0NDI1NzgsMTMxOTE1NzEzLDk1NTIzNDUwOS
+wtOTEzODU2MTQ1LC0xNTExNzYwODExLC03MjM2NzE0NTcsMTc5
+NzExODkxNiwtMTMyOTA0Mzk2MCwtMjA0ODg0MzAzNywxNzY1ND
+Q4OTYyLC0xOTEyMjc0MTUyLC0zNjUyOTQ2MzAsLTEwMjgxMzg5
+NDhdfQ==
 -->
