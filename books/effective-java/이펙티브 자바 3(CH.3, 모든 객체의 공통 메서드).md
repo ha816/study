@@ -268,6 +268,8 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 
 좋은 해시 함수라면 서로 다른 인스턴스에 대해서 다른 해시코드를 반환해야 한다. 이상적인 해시 함수는 주어진 서로 다른 객체에 대해서 32bit 정수 범위에 균등하게 분배해야 한다. 이상을 완벽히 구현하는것은 어렵지만 비슷하게 만들기는 어렵지 않다. 아래는 좋은 hashCode를 작성하는 간단한 요령이다.
 
+1. int 변수 result를 선언한 후 해당 객체의 첫번째 핵심 필드로 계삲
+
 
 
 
@@ -279,11 +281,11 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE3Njg1MjAsMTgwNTMyNTYwNCw2Mzc5OT
-IzNjksOTAxNDQyNTc4LDEzMTkxNTcxMyw5NTUyMzQ1MDksLTkx
-Mzg1NjE0NSwtMTUxMTc2MDgxMSwtNzIzNjcxNDU3LDE3OTcxMT
-g5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMTc2NTQ0ODk2
-MiwtMTkxMjI3NDE1MiwtMzY1Mjk0NjMwLC0xMDI4MTM4OTQ4LD
-EzODQwOTcyMDMsMTY0Mjc4MjI5NSwtMTI5MjMwOTMyMywxNzI1
-NjczMDVdfQ==
+eyJoaXN0b3J5IjpbOTkyNDQ0MjkxLDcxNzY4NTIwLDE4MDUzMj
+U2MDQsNjM3OTkyMzY5LDkwMTQ0MjU3OCwxMzE5MTU3MTMsOTU1
+MjM0NTA5LC05MTM4NTYxNDUsLTE1MTE3NjA4MTEsLTcyMzY3MT
+Q1NywxNzk3MTE4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3
+LDE3NjU0NDg5NjIsLTE5MTIyNzQxNTIsLTM2NTI5NDYzMCwtMT
+AyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOTUsLTEyOTIz
+MDkzMjNdfQ==
 -->
