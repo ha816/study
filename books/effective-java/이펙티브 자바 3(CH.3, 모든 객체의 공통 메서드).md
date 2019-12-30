@@ -281,7 +281,12 @@ result 값을 계속해서 31을 곱하는 과정은 필드에 곱하는 순서�
 
 값이 31인 이유는 홀수이면서 소수(prime)이기 때문인데, 만약 숫자가 짝수이고 오버플로가 발생하면 정보를 읽데 된다. 2를 곱하는 것은 시프트 연산과 같은 결과를 내기 때문이다. 소수를 곱하는 이유는 정확하지 않지만 전통적으로 그리해왔다. 결과적으로 31을 이용하면 곱셈을 시프트 연산과 뺄셈으로 대체해서 최적화할 수 있다. (31 * i 는 i << 5 - 1)과 같다.
 
+```
+@Override public int hashCode(){
+	int result = Short.hashCode(shortCode);//첫번째 primitive 핵심 필드
+	result = 31 * result + 
 
+```
 
 
 
@@ -296,7 +301,7 @@ result 값을 계속해서 31을 곱하는 과정은 필드에 곱하는 순서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwOTQ4MTg2MywyODk1NTgxNTEsNzE3Nj
+eyJoaXN0b3J5IjpbMTAzMTc4NzQ1NiwyODk1NTgxNTEsNzE3Nj
 g1MjAsMTgwNTMyNTYwNCw2Mzc5OTIzNjksOTAxNDQyNTc4LDEz
 MTkxNTcxMyw5NTUyMzQ1MDksLTkxMzg1NjE0NSwtMTUxMTc2MD
 gxMSwtNzIzNjcxNDU3LDE3OTcxMTg5MTYsLTEzMjkwNDM5NjAs
