@@ -277,6 +277,8 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 
 다른 필드로부터 계산할 수 있는 필드를 파생 필드라고 하는데 핵심 필드가 아니기 때문에 모두 무시한다. 또한 **equals 비교에 사용되지 않는 필드는 반드세 제외해야 한다.** 그렇지 않으면 논리적 동치를 만족하는 두 객체가 hashCode값이 달라지는 위험이 생길 수 있다. 
 
+result 값을 계속해서 31을 곱하는 과정은 필드에 곱하는 순서에 따라 result값이 크게 달라지게 한다. 그 결과 클래스에 비슷한 필드가 여러 개일때 효과
+
 
 
 
@@ -289,7 +291,7 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQwNDY5OTUyLDI4OTU1ODE1MSw3MTc2OD
+eyJoaXN0b3J5IjpbMTM4NjY4MjMxLDI4OTU1ODE1MSw3MTc2OD
 UyMCwxODA1MzI1NjA0LDYzNzk5MjM2OSw5MDE0NDI1NzgsMTMx
 OTE1NzEzLDk1NTIzNDUwOSwtOTEzODU2MTQ1LC0xNTExNzYwOD
 ExLC03MjM2NzE0NTcsMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwt
