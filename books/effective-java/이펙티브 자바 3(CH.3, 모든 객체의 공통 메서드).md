@@ -279,7 +279,9 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 
 result 값을 계속해서 31을 곱하는 과정은 필드에 곱하는 순서에 따라 result값이 크게 달라지게 한다. 그 결과 클래스에 비슷한 필드가 여러 개일때 효과가 좋다. 무슨 말이냐면 만약 String의 hashCode를 곱셈 없이 구현하면 모든 아나그램(구성하는 철자는 같지만, 그 순서만 다른 문자열)의 해시 코드가 같아진다. 
 
-값이 31인 이유는 홀수이면서 소수(prime)이기 때문인데, 만약 숫자가 짝수이고 오버플로가 발생하면 정보를 읽데 된다. 2를 곱하는 것은 시프트 연산과 같은 결과를 내기 때문이다. 소수를 곱하는 이유는 정확하지 않지만 전통적으로 그리해왔다. 결과적으로 31을 이용하면 
+값이 31인 이유는 홀수이면서 소수(prime)이기 때문인데, 만약 숫자가 짝수이고 오버플로가 발생하면 정보를 읽데 된다. 2를 곱하는 것은 시프트 연산과 같은 결과를 내기 때문이다. 소수를 곱하는 이유는 정확하지 않지만 전통적으로 그리해왔다. 결과적으로 31을 이용하면 곱셈을 시프트 연산과 뺄셈으로 대체해서 최적화할 수 있다. (31 * i 는 i << 5 - 1)과 같다.
+
+
 
 
 
@@ -294,11 +296,11 @@ result 값을 계속해서 31을 곱하는 과정은 필드에 곱하는 순서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzg3NTkyNTYsMjg5NTU4MTUxLDcxNz
-Y4NTIwLDE4MDUzMjU2MDQsNjM3OTkyMzY5LDkwMTQ0MjU3OCwx
-MzE5MTU3MTMsOTU1MjM0NTA5LC05MTM4NTYxNDUsLTE1MTE3Nj
-A4MTEsLTcyMzY3MTQ1NywxNzk3MTE4OTE2LC0xMzI5MDQzOTYw
-LC0yMDQ4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MTIyNzQxNTIsLT
-M2NTI5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3
-ODIyOTVdfQ==
+eyJoaXN0b3J5IjpbMTkwOTQ4MTg2MywyODk1NTgxNTEsNzE3Nj
+g1MjAsMTgwNTMyNTYwNCw2Mzc5OTIzNjksOTAxNDQyNTc4LDEz
+MTkxNTcxMyw5NTUyMzQ1MDksLTkxMzg1NjE0NSwtMTUxMTc2MD
+gxMSwtNzIzNjcxNDU3LDE3OTcxMTg5MTYsLTEzMjkwNDM5NjAs
+LTIwNDg4NDMwMzcsMTc2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtMz
+Y1Mjk0NjMwLC0xMDI4MTM4OTQ4LDEzODQwOTcyMDMsMTY0Mjc4
+MjI5NV19
 -->
