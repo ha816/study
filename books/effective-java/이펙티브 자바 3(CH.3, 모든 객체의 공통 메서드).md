@@ -271,8 +271,8 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 1. int 변수 result를 선언한 후 해당 객체의 첫번째 핵심 필드로 계산한 해시코드 값을 넣는다. 여기서 핵심 필드란 equals 비교해 사용된 필드를 말한다.
 2. 나머지 핵심 필드 각각에 대해서...
 	3. 기본 타입필드라면, Type.hashCode()를 사용한다. Type은 기본 타입의 박싱 클래스
-	4. 참조 타입필드이고 
-	5. 필드가 배열이라면, 배열의 각 원소를 별도의 필드처럼 다룬다. 배열에서 사용될 핵심 원소들로 해시코드를 계산한다. 모든 원소가 핵시
+	4. 참조 타입필드이면, 이 클래스 
+	5. 필드가 배열이라면, 배열의 각 원소를 별도의 필드처럼 다룬다. 배열에서 사용될 핵심 원소들로 해시코드를 계산한다. 모든 원소가 핵심 원소라면 Arrays.hashCode를 사용하자. 만약 하나도 없다면 상수(0)을 넣자.
 
 
 
@@ -285,11 +285,11 @@ hashCode 재정의를 잘못했을때 가장 문제가 되는 점은 바로 아�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkyMDE1MzMwLDcxNzY4NTIwLDE4MDUzMj
-U2MDQsNjM3OTkyMzY5LDkwMTQ0MjU3OCwxMzE5MTU3MTMsOTU1
-MjM0NTA5LC05MTM4NTYxNDUsLTE1MTE3NjA4MTEsLTcyMzY3MT
-Q1NywxNzk3MTE4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3
-LDE3NjU0NDg5NjIsLTE5MTIyNzQxNTIsLTM2NTI5NDYzMCwtMT
-AyODEzODk0OCwxMzg0MDk3MjAzLDE2NDI3ODIyOTUsLTEyOTIz
-MDkzMjNdfQ==
+eyJoaXN0b3J5IjpbMTE5Njk2NDQwMiw3MTc2ODUyMCwxODA1Mz
+I1NjA0LDYzNzk5MjM2OSw5MDE0NDI1NzgsMTMxOTE1NzEzLDk1
+NTIzNDUwOSwtOTEzODU2MTQ1LC0xNTExNzYwODExLC03MjM2Nz
+E0NTcsMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwtMjA0ODg0MzAz
+NywxNzY1NDQ4OTYyLC0xOTEyMjc0MTUyLC0zNjUyOTQ2MzAsLT
+EwMjgxMzg5NDgsMTM4NDA5NzIwMywxNjQyNzgyMjk1LC0xMjky
+MzA5MzIzXX0=
 -->
