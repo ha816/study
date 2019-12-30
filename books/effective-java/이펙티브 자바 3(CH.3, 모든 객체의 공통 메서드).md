@@ -318,7 +318,7 @@ int hashCode;
 >핵심 정리
 >equals를 재정의 할때는 hashCode도 재정의해야 한다. 그렇지 않으면 프로그램이 제대로 동작하지 않을 수 있다. 재정의한 hashCode는 Object의 API 문서에 정의된 일반 규약을 따라야 하며, 논리적 동치에 따라 다른 객체라면 해시코드가 서로 다른 값어야 좋다. 
 
-## Item12.
+## Item12. toString을 항상 재정의하라.
 
 
 
@@ -329,11 +329,11 @@ int hashCode;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDM2Mzc4MjUsMTMyNzIwNzI1LDEwMz
-E3ODc0NTYsMjg5NTU4MTUxLDcxNzY4NTIwLDE4MDUzMjU2MDQs
-NjM3OTkyMzY5LDkwMTQ0MjU3OCwxMzE5MTU3MTMsOTU1MjM0NT
-A5LC05MTM4NTYxNDUsLTE1MTE3NjA4MTEsLTcyMzY3MTQ1Nywx
-Nzk3MTE4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3Nj
-U0NDg5NjIsLTE5MTIyNzQxNTIsLTM2NTI5NDYzMCwtMTAyODEz
-ODk0OF19
+eyJoaXN0b3J5IjpbMTc0NjY0MDgzMiwxMzI3MjA3MjUsMTAzMT
+c4NzQ1NiwyODk1NTgxNTEsNzE3Njg1MjAsMTgwNTMyNTYwNCw2
+Mzc5OTIzNjksOTAxNDQyNTc4LDEzMTkxNTcxMyw5NTUyMzQ1MD
+ksLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwtNzIzNjcxNDU3LDE3
+OTcxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMTc2NT
+Q0ODk2MiwtMTkxMjI3NDE1MiwtMzY1Mjk0NjMwLC0xMDI4MTM4
+OTQ4XX0=
 -->
