@@ -284,7 +284,8 @@ result 값을 계속해서 31을 곱하는 과정은 필드에 곱하는 순서�
 ```
 @Override public int hashCode(){
 	int result = Short.hashCode(shortCode);//첫번째 primitive 핵심 필드
-	result = 31 * result + 
+	result = 31 * result + Object.hashCode // 두번째 참조 핵심 필드 
+	
 
 ```
 
@@ -301,11 +302,11 @@ result 값을 계속해서 31을 곱하는 과정은 필드에 곱하는 순서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMTc4NzQ1NiwyODk1NTgxNTEsNzE3Nj
-g1MjAsMTgwNTMyNTYwNCw2Mzc5OTIzNjksOTAxNDQyNTc4LDEz
-MTkxNTcxMyw5NTUyMzQ1MDksLTkxMzg1NjE0NSwtMTUxMTc2MD
-gxMSwtNzIzNjcxNDU3LDE3OTcxMTg5MTYsLTEzMjkwNDM5NjAs
-LTIwNDg4NDMwMzcsMTc2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtMz
-Y1Mjk0NjMwLC0xMDI4MTM4OTQ4LDEzODQwOTcyMDMsMTY0Mjc4
-MjI5NV19
+eyJoaXN0b3J5IjpbNjA3MTA3OTExLDEwMzE3ODc0NTYsMjg5NT
+U4MTUxLDcxNzY4NTIwLDE4MDUzMjU2MDQsNjM3OTkyMzY5LDkw
+MTQ0MjU3OCwxMzE5MTU3MTMsOTU1MjM0NTA5LC05MTM4NTYxND
+UsLTE1MTE3NjA4MTEsLTcyMzY3MTQ1NywxNzk3MTE4OTE2LC0x
+MzI5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3NjU0NDg5NjIsLTE5MT
+IyNzQxNTIsLTM2NTI5NDYzMCwtMTAyODEzODk0OCwxMzg0MDk3
+MjAzXX0=
 -->
