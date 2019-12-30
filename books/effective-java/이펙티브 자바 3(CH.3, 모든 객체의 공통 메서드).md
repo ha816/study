@@ -300,9 +300,18 @@ Objects 클래스는 임의의 갯수만큼 객체를 받아 해시 코드를 �
 ```
 int hashCode;
 
-@Override public int hashCode()
-
+@Override public int hashCode(){
+	int result = hashCode;
+	if(result == 0){ // Thread Safe해야 한다. 
+		...
+		result = 계산된 hasoCode;
+		hashCode = result;
+	}
+	return result;
+}
 ```
+
+성능을 
 
 
 
@@ -319,7 +328,7 @@ int hashCode;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUwOTUxMDI5LDEzMjcyMDcyNSwxMDMxNz
+eyJoaXN0b3J5IjpbNTY4NjgzNjY5LDEzMjcyMDcyNSwxMDMxNz
 g3NDU2LDI4OTU1ODE1MSw3MTc2ODUyMCwxODA1MzI1NjA0LDYz
 Nzk5MjM2OSw5MDE0NDI1NzgsMTMxOTE1NzEzLDk1NTIzNDUwOS
 wtOTEzODU2MTQ1LC0xNTExNzYwODExLC03MjM2NzE0NTcsMTc5
