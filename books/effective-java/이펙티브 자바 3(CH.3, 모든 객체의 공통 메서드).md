@@ -295,6 +295,17 @@ Objects 클래스는 임의의 갯수만큼 객체를 받아 해시 코드를 �
 
 클래스가 불변이고 해시 코드를 계산하는 비용이 크다면, 매번 해시코드를 호출하는 것보다 캐싱하는 방식을 고려할 수 있다.  이 객체가 해시의 키로 주로 사용될 것 같다면 인스턴스가 만들어질때 해시코드를 계산해두자. 
 
+해시 키로 사용되지 않다면, hashCode를 불릴때 계산하는 지연 초기화 전략도 사용 가능하다. 지연 초기화를 하려면 사실 스레드 safe를 고려해야 한다. 
+
+```
+int hashCode;
+
+@Override public int hashCode()
+
+```
+
+
+
 
 
 
@@ -308,7 +319,7 @@ Objects 클래스는 임의의 갯수만큼 객체를 받아 해시 코드를 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk5ODUwNzkwLDEzMjcyMDcyNSwxMDMxNz
+eyJoaXN0b3J5IjpbNzUwOTUxMDI5LDEzMjcyMDcyNSwxMDMxNz
 g3NDU2LDI4OTU1ODE1MSw3MTc2ODUyMCwxODA1MzI1NjA0LDYz
 Nzk5MjM2OSw5MDE0NDI1NzgsMTMxOTE1NzEzLDk1NTIzNDUwOS
 wtOTEzODU2MTQ1LC0xNTExNzYwODExLC03MjM2NzE0NTcsMTc5
