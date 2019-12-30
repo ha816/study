@@ -316,7 +316,7 @@ int hashCode;
 **hashCode를 생성하는 규칙을 API 사용자에게 자세히 알려주지 말자.** 그래야 사용자가 이 값에 의지하지 않고, 추후에 계산 방식을 바꿀수도 있다. 자세한 규칙을 밝히지 않으면, 해시 기능에 결함이 발견되었을 때 더 나은 해시 방식으로 고쳐서 수정 할 수 있다. 
 
 >핵심 정리
->equals를 재정의 할때는 hashCode도 재정의해야 한다. 그렇지 않으면 프로그램이 제대로 동작하지 않을 수 있다. 재정의한 has
+>equals를 재정의 할때는 hashCode도 재정의해야 한다. 그렇지 않으면 프로그램이 제대로 동작하지 않을 수 있다. 재정의한 hashCode는 Object의 API 문서에 정의된 일반 규약을 따라야 하며, 논리적 동치에 따라 다른 객체라면 해시코드가 서로 다른 ㄱ
 
 
 
@@ -333,11 +333,11 @@ int hashCode;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0OTMwMDUyNywxMzI3MjA3MjUsMTAzMT
-c4NzQ1NiwyODk1NTgxNTEsNzE3Njg1MjAsMTgwNTMyNTYwNCw2
-Mzc5OTIzNjksOTAxNDQyNTc4LDEzMTkxNTcxMyw5NTUyMzQ1MD
-ksLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwtNzIzNjcxNDU3LDE3
-OTcxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMTc2NT
-Q0ODk2MiwtMTkxMjI3NDE1MiwtMzY1Mjk0NjMwLC0xMDI4MTM4
-OTQ4XX0=
+eyJoaXN0b3J5IjpbNTM1MDQ4ODY1LDEzMjcyMDcyNSwxMDMxNz
+g3NDU2LDI4OTU1ODE1MSw3MTc2ODUyMCwxODA1MzI1NjA0LDYz
+Nzk5MjM2OSw5MDE0NDI1NzgsMTMxOTE1NzEzLDk1NTIzNDUwOS
+wtOTEzODU2MTQ1LC0xNTExNzYwODExLC03MjM2NzE0NTcsMTc5
+NzExODkxNiwtMTMyOTA0Mzk2MCwtMjA0ODg0MzAzNywxNzY1ND
+Q4OTYyLC0xOTEyMjc0MTUyLC0zNjUyOTQ2MzAsLTEwMjgxMzg5
+NDhdfQ==
 -->
