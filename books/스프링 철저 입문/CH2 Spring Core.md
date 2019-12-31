@@ -6,8 +6,7 @@ DI의 경우, 하나의 애플리케이션을 동작하기 위해 여러개의 �
 
 일반적으로 특정 컴포넌트를 사용할때 한 클래스에서 구현 클래스를 직접 생성해서 할당하면 두 클래스간의 결합도가 높아진다. 많은 컴포넌트에 의존해야 하는 클래스가 이 같은 방식으로 개발하는 건 큰 문제가 생길 수 있다. 이 결합도를 낮추는 방법으로 클래스의 외부에서 컴포넌트를 생성 한 후, 내부에 주입하여 사용가능하게 만드는 과정을 `의존성 주입` 또는 인젝션(injection)이라 한다. 그리고 이러한 의존성 주입을 자동으로 처리하는 기반을 DI 컨테이너라고 한다. 
 
-스프링 프레임워크가 제공하는 기능 중 가장 중요한것이 바로 이 DI 컨테이너의 기능이다. 스프링의 DI 컨테이너로는 빈 팩토리과 애플리케이션 컨텍스트가 있다. 빈 팩토리는 빈 객체 생성, 의존성 주입, 생명주기를 하는 아주 단순한 역할을 한다. 그에 반해 애플리케이션 컨텍스트는 빈 팩토리를 확장해 프로퍼티 파일에 설정을 읽고 이벤트 리스너에 대한 이벤트 발행 같은 추가 기능을 제공한다.
-앞으로 DI 컨테이너라 하면 바로 애플리케이션 컨텍스트를 뜻한다.
+스프링 프레임워크가 제공하는 기능 중 가장 중요한것이 바로 이 DI 컨테이너의 기능이다. 스프링의 DI 컨테이너로는 빈 팩토리과 애플리케이션 컨텍스트가 있다. 빈 팩토리는 빈 객체 생성, 의존성 주입, 생명주기를 하는 아주 단순한 역할을 한다. 그에 반해 애플리케이션 컨텍스트는 빈 팩토리를 확장해 프로퍼티 파일에 설정을 읽고 이벤트 리스너에 대한 이벤트 발행 같은 추가 기능을 제공한다. 앞으로 DI 컨테이너라 하면 바로 애플리케이션 컨텍스트를 뜻한다.
 
 ```
 ApplicationContext context = ...; //DI 컨테이너
@@ -148,7 +147,8 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTY4NDIzMTYsLTE5MTI4OTY0MTYsNT
-cwMDYxNTAwLC0xNTMxNjIzMTcxLDMxMzg2Mjk2NywxNzk1ODky
-MDE1LC0zMTAzNjc4NTksLTE5MjUxNTA3MjddfQ==
+eyJoaXN0b3J5IjpbNDMxMDIxNjU0LC0yMDU2ODQyMzE2LC0xOT
+EyODk2NDE2LDU3MDA2MTUwMCwtMTUzMTYyMzE3MSwzMTM4NjI5
+NjcsMTc5NTg5MjAxNSwtMzEwMzY3ODU5LC0xOTI1MTUwNzI3XX
+0=
 -->
