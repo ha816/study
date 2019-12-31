@@ -64,7 +64,7 @@ UserService userService = (UserService) context.getBean("userService");
 
 **애너테이션 기반 설정 방식**
  
- 이 방법은 DI 컨테이너에서 관리할 빈 자체에 빈을 정의하는 애너테이션을 부여한다. **이 애너테이션이 붙은 클래스를 탐색해서 DI 컨테이너에 자동으로 등록하는데 이를 컴포넌트 스캔(Component Scan)이라고 한다.** 또한 의존성 주입도 이제까지 처럼 명시적으로 설정하는 것이 아니라 **애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하며 이를 오토 와이어링(Auto Wiring)이라 한다.**
+ 이 방법은 DI 컨테이너에서 관리해야하는 빈을 알려주는 애너테이션을  **이 애너테이션이 붙은 클래스를 탐색해서 DI 컨테이너에 자동으로 등록하는데 이를 컴포넌트 스캔(Component Scan)이라고 한다.** 또한 의존성 주입도 이제까지 처럼 명시적으로 설정하는 것이 아니라 **애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하며 이를 오토 와이어링(Auto Wiring)이라 한다.**
 
 컴포넌트 스캔을 수행할때는 스캔할 범위를 지정해야 하는데 자바 기반 설정 방식과 XML 기반 설정 방식을 사용할 수 있다. 
 
@@ -148,7 +148,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NjY1MDU4MCwxNDM0MjYxMTIyLDExNT
+eyJoaXN0b3J5IjpbLTcwOTYyODc3NywxNDM0MjYxMTIyLDExNT
 MyNTcwMzIsNDMxMDIxNjU0LC0yMDU2ODQyMzE2LC0xOTEyODk2
 NDE2LDU3MDA2MTUwMCwtMTUzMTYyMzE3MSwzMTM4NjI5NjcsMT
 c5NTg5MjAxNSwtMzEwMzY3ODU5LC0xOTI1MTUwNzI3XX0=
