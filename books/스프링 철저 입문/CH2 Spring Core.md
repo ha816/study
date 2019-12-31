@@ -67,7 +67,6 @@ UserService userService = (UserService) context.getBean("userService");
  이 방법은 DI 컨테이너에서 관리해야하는 클래스에 애너테이션을 붙인다. **이 애너테이션이 붙은 클래스를 탐색해서 DI 컨테이너에 자동으로 등록하는데 이를 컴포넌트 스캔(Component Scan)이라고 한다.** 또한 의존성 주입도 이제까지 처럼 명시적으로 설정하는 것이 아니라 **애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하며 이를 오토 와이어링(Auto Wiring)이라 한다.**
 
 컴포넌트 스캔을 수행할때는 스캔할 범위를 지정해야 하는데 자바 기반 설정 방식과 XML 기반 설정 방식을 사용할 수 있다. 
-
 ```
 @Configuration
 @ComponentScan("com.example.demo")
@@ -148,8 +147,9 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc5NzQ0MDQyLDE0MzQyNjExMjIsMTE1Mz
-I1NzAzMiw0MzEwMjE2NTQsLTIwNTY4NDIzMTYsLTE5MTI4OTY0
-MTYsNTcwMDYxNTAwLC0xNTMxNjIzMTcxLDMxMzg2Mjk2NywxNz
-k1ODkyMDE1LC0zMTAzNjc4NTksLTE5MjUxNTA3MjddfQ==
+eyJoaXN0b3J5IjpbLTE3MDE3Nzk4ODAsNjc5NzQ0MDQyLDE0Mz
+QyNjExMjIsMTE1MzI1NzAzMiw0MzEwMjE2NTQsLTIwNTY4NDIz
+MTYsLTE5MTI4OTY0MTYsNTcwMDYxNTAwLC0xNTMxNjIzMTcxLD
+MxMzg2Mjk2NywxNzk1ODkyMDE1LC0zMTAzNjc4NTksLTE5MjUx
+NTA3MjddfQ==
 -->
