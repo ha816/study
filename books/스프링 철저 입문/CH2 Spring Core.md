@@ -114,7 +114,7 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 ### 대표적 용어
 
 * 애스펙트(Aspect)
-	* Aop의 단위가 되는 횡단 관심사에 속한다. 예를 들어 "로그를 출력한다", "예외를 처리한다", "트랜잭션을 관리한다" 와 같은 관심사가 애스펙트다.
+	* Aop의 단위가 되는 횡단 관심사를 말한다. 예를 들어 "로그를 출력한다", "예외를 처리한다", "트랜잭션을 관리한다" 와 같은 관심사가 애스펙트다.
 * 조인 포인트(Join Point)
 	* 횡단 관심사가 실행될 지점이나 시점(메서드 실행이나 예외 발생 등)을 말한다. 조인 포인트는 AOP를 구현한 라이브러리에 따라 사양이 다를 수 있는데 스프링에서는 메서드 단위로 조인 포인트를 잡는다.
 * 어드바이스(Advice)
@@ -145,10 +145,10 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTUwNjM0NiwtMTg1NjczMTA5NCw3Nz
-AzNjUzNjksLTE3MDE3Nzk4ODAsNjc5NzQ0MDQyLDE0MzQyNjEx
-MjIsMTE1MzI1NzAzMiw0MzEwMjE2NTQsLTIwNTY4NDIzMTYsLT
-E5MTI4OTY0MTYsNTcwMDYxNTAwLC0xNTMxNjIzMTcxLDMxMzg2
-Mjk2NywxNzk1ODkyMDE1LC0zMTAzNjc4NTksLTE5MjUxNTA3Mj
-ddfQ==
+eyJoaXN0b3J5IjpbLTIxMjc1NjQ5MDMsMTkxOTUwNjM0NiwtMT
+g1NjczMTA5NCw3NzAzNjUzNjksLTE3MDE3Nzk4ODAsNjc5NzQ0
+MDQyLDE0MzQyNjExMjIsMTE1MzI1NzAzMiw0MzEwMjE2NTQsLT
+IwNTY4NDIzMTYsLTE5MTI4OTY0MTYsNTcwMDYxNTAwLC0xNTMx
+NjIzMTcxLDMxMzg2Mjk2NywxNzk1ODkyMDE1LC0zMTAzNjc4NT
+ksLTE5MjUxNTA3MjddfQ==
 -->
