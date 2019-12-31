@@ -109,7 +109,7 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
  
 AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 공통적인 시스템 서비스에 대해서는 전혀 알지 못하지만, 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다.
 
-관점(액스펙트) 지향 프로그래밍은 관심사의 분리(separation of concerns)라고도 한다. 
+즉 관점(액스펙트) 지향 프로그래밍은 본연의 관심사에 집중할 수 있는 프로그래밍이므로, 관심사의 분리(separation of concerns)라고도 한다. 
 
 애스펙트를 애플리케이션의 여러 컴포넌트를 덮는 담요처럼 생각하면 도움이 된다. 이 담요에 포함되면 해당 트랜잭션, 로깅, 보안 등에 관리된 기능을 사용할 수 있다. 
 
@@ -147,7 +147,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTg1MjQxMzgsNzcwMzY1MzY5LC0xNz
+eyJoaXN0b3J5IjpbLTE4NTY3MzEwOTQsNzcwMzY1MzY5LC0xNz
 AxNzc5ODgwLDY3OTc0NDA0MiwxNDM0MjYxMTIyLDExNTMyNTcw
 MzIsNDMxMDIxNjU0LC0yMDU2ODQyMzE2LC0xOTEyODk2NDE2LD
 U3MDA2MTUwMCwtMTUzMTYyMzE3MSwzMTM4NjI5NjcsMTc5NTg5
