@@ -17,7 +17,7 @@ UserService service = context.getBean(UserService.class);
 
 ## DI 개요
 
-DI는 의존성 주입, **IoC(Inverse of Control)** 이라 하는 디자인 패턴 중에 하나다.  Ioc는 인스턴스를 제어하는 주도권이 역전된다는 의미이다. 컴포넌트를 구성하는 인스턴스의 생성과 의존관계를 해당 소크가 아닌 DI 컨테이너가 대신해주기 때문이다. 
+DI는 의존성 주입, **IoC(Inverse of Control)** 이라 하는 디자인 패턴 중에 하나다.  Ioc는 인스턴스를 제어하는 주도권이 역전된다는 의미이다. 컴포넌트를 구성하는 인스턴스의 생성과 의존관계를 해당 클래스가 아닌 DI 컨테이너가 대신해주기 때문이다. 
 
 DI 컨테이너에서 인스턴스를 관리하는 방식으로 하면 아래와 같은 장점이 있다. 
 * 인스턴스의 스코프를 관리할 수 있다.
@@ -147,7 +147,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMjU3OTQyMCw0MzEwMjE2NTQsLTIwNT
+eyJoaXN0b3J5IjpbMTE1MzI1NzAzMiw0MzEwMjE2NTQsLTIwNT
 Y4NDIzMTYsLTE5MTI4OTY0MTYsNTcwMDYxNTAwLC0xNTMxNjIz
 MTcxLDMxMzg2Mjk2NywxNzk1ODkyMDE1LC0zMTAzNjc4NTksLT
 E5MjUxNTA3MjddfQ==
