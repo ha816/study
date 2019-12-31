@@ -107,7 +107,7 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 1. 여러 컴포넌트에 같은 코드가 중복되어 나타난다. 만약 코드가 변경되어야 하는 경우 모든 컴포넌트를 변경해야 한다. 
 2. 컴포넌트가 본연의 기능과 관련 없는 기능 코드로 지저분해진다. 메소드의 보안이나 로깅 같은 기능을 위해 코드가 지저분해지는것을 피하도록 하자 
  
-AOP는 시스템 서비스를 모듈화해서 컴포넌트에 선언적으로 작용한다.  AOP를 사용하면 시스템 서비스에 대해서는 전혀 알지 못하지만, 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다.
+AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 공통적인 시스템 서비스에 대해서는 전혀 알지 못하지만, 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다.
 
 관점(액스펙트) 지향 프로그래밍은 관심사의 분리(separation of concerns)라고도 한다. 
 
@@ -147,7 +147,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzE0Nzk1MTUsNzcwMzY1MzY5LC0xNz
+eyJoaXN0b3J5IjpbLTE2OTg1MjQxMzgsNzcwMzY1MzY5LC0xNz
 AxNzc5ODgwLDY3OTc0NDA0MiwxNDM0MjYxMTIyLDExNTMyNTcw
 MzIsNDMxMDIxNjU0LC0yMDU2ODQyMzE2LC0xOTEyODk2NDE2LD
 U3MDA2MTUwMCwtMTUzMTYyMzE3MSwzMTM4NjI5NjcsMTc5NTg5
