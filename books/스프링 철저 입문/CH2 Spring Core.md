@@ -39,9 +39,9 @@ public class AppConfig {
 }
 ```
 
-@Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에 컴포넌트를 등록하면 애플리케이션은 DI 컨테이너에 있는 Bean을 DI 컨테이너로 부터 가져 올 수 있다. 
+@Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에 컴포넌트를 등록하면 애플리케이션은 DI 컨테이너에 있는 Bean을 DI 컨테이너로 가져 올 수 있다. 
 
-스프링 프레임워크에서는 DI 컨테이너에 등록하는 컴포넌트를 Bean이라고 하고, 이 빈에 대한 설정 정보를 빈 정의(Bean Definition). 도한 DI 컨테이너에서 빈을 찾아오는 행위를 룩업(look up)이라고 한다. 
+**스프링 프레임워크에서는 DI 컨테이너에 등록하는 컴포넌트를 Bean이라고 하고, 이 빈에 대한 설정 정보를 빈 정의(Bean Definition). 또한 DI 컨테이너에서 빈을 찾아오는 행위를 룩업(look up)이라고 한다.** 
 
 룩업을 하는 방법에는 몇 가지 유형이 있다. 
 ```
@@ -147,8 +147,8 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MzI1NzAzMiw0MzEwMjE2NTQsLTIwNT
-Y4NDIzMTYsLTE5MTI4OTY0MTYsNTcwMDYxNTAwLC0xNTMxNjIz
-MTcxLDMxMzg2Mjk2NywxNzk1ODkyMDE1LC0zMTAzNjc4NTksLT
-E5MjUxNTA3MjddfQ==
+eyJoaXN0b3J5IjpbMTkwODA0MTI2NiwxMTUzMjU3MDMyLDQzMT
+AyMTY1NCwtMjA1Njg0MjMxNiwtMTkxMjg5NjQxNiw1NzAwNjE1
+MDAsLTE1MzE2MjMxNzEsMzEzODYyOTY3LDE3OTU4OTIwMTUsLT
+MxMDM2Nzg1OSwtMTkyNTE1MDcyN119
 -->
