@@ -144,9 +144,9 @@ public String getHostName() throws Exception
 ```
 위와 같은 명시는 예외가 발생했을때 무엇인 잘못되었는지 단서를 찾을 수 없다. 
 
-런타임 예외의 경우 메서드에 예외를 정의하는 것이나 다시 처리하는것 모두 선택 사항이다. 
+런타임 예외의 경우 예외를 정의하는 것이나 다시 처리하는것 모두 선택 사항이다. 
 
-필자는 일반적으로 런타이므 예외를 선호한다. 하지만 클라이언트가 해당 메서드를 호출했을때 어떤 예외가 발생하는지를 문서에 꼭 남긴다. 런타임 예외를 선호하는 이유는 명시적 예외에서는 try문을 기본 코드에 추가해야 할 뿐만 아니라 유지보수가 어려워지기 때문이다. 
+필자는 일반적으로 런타임 예외를 선호한다. 하지만 클라이언트가 해당 메서드를 호출했을때 어떤 예외가 발생하는지를 문서에 꼭 남긴다. 런타임 예외를 선호하는 이유는 명시적 예외에서는 try문을 기본 코드에 추가해야 할 뿐만 아니라 유지보수가 어려워지기 때문이다. 
 
 > try-with resource는 무엇인가?
 
@@ -176,6 +176,6 @@ Arrays.sort, Collections.sort 등 정렬 메서드를 사용할때는 정렬할 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NTM2MDI0NCw2NzA5OTI2ODgsMzY2Mj
-cwNjBdfQ==
+eyJoaXN0b3J5IjpbNTIyODAxNDcyLDExODUzNjAyNDQsNjcwOT
+kyNjg4LDM2NjI3MDYwXX0=
 -->
