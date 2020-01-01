@@ -38,7 +38,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 ### 메소드 영역(Method Area)
 
-정적 메소드와 정석 클래스 변수를 저장하기 위한 공간이다.  
+  
 
 ### 스택영역(Stack Area)  
 
@@ -69,10 +69,10 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5NjYxNDU1LC0xNTA5ODc2NzIwLC0xOD
-M4NDYzMDQ1LC0xNzI0OTk0Mzk0LDIwMTU1MDU0NzksNzkwOTg0
-NDY5LC0xODg0MzA5MTg5LC0yMTgyOTczNTQsLTExMzY0NzU2Mj
-IsLTk3NjYzOTQ1MCwtNzg2ODUyNTUzLDEzOTU5NTUyODgsLTE1
-NTg4NjEyODUsLTE2NjkyOTgwMTksLTE0MTk3MzkyMjEsMTI2OD
-Y2MjE4OF19
+eyJoaXN0b3J5IjpbLTIwMzA4MTc3MTksOTI5NjYxNDU1LC0xNT
+A5ODc2NzIwLC0xODM4NDYzMDQ1LC0xNzI0OTk0Mzk0LDIwMTU1
+MDU0NzksNzkwOTg0NDY5LC0xODg0MzA5MTg5LC0yMTgyOTczNT
+QsLTExMzY0NzU2MjIsLTk3NjYzOTQ1MCwtNzg2ODUyNTUzLDEz
+OTU5NTUyODgsLTE1NTg4NjEyODUsLTE2NjkyOTgwMTksLTE0MT
+k3MzkyMjEsMTI2ODY2MjE4OF19
 -->
