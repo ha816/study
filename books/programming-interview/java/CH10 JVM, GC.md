@@ -77,6 +77,7 @@ The method area stores per-class information such as:
                 -   End point
                 -   PC offset for handler code
                 -   Constant pool index for exception class being caught
+
 ### 스택영역(Stack Area)  
 
 스택 영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 곳으로 스레드가 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
@@ -106,10 +107,10 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMTg5MjQ2LDkyOTY2MTQ1NSwtMTUwOT
-g3NjcyMCwtMTgzODQ2MzA0NSwtMTcyNDk5NDM5NCwyMDE1NTA1
-NDc5LDc5MDk4NDQ2OSwtMTg4NDMwOTE4OSwtMjE4Mjk3MzU0LC
-0xMTM2NDc1NjIyLC05NzY2Mzk0NTAsLTc4Njg1MjU1MywxMzk1
-OTU1Mjg4LC0xNTU4ODYxMjg1LC0xNjY5Mjk4MDE5LC0xNDE5Nz
-M5MjIxLDEyNjg2NjIxODhdfQ==
+eyJoaXN0b3J5IjpbLTEwMzI5Mzk5NTIsMjEzMTg5MjQ2LDkyOT
+Y2MTQ1NSwtMTUwOTg3NjcyMCwtMTgzODQ2MzA0NSwtMTcyNDk5
+NDM5NCwyMDE1NTA1NDc5LDc5MDk4NDQ2OSwtMTg4NDMwOTE4OS
+wtMjE4Mjk3MzU0LC0xMTM2NDc1NjIyLC05NzY2Mzk0NTAsLTc4
+Njg1MjU1MywxMzk1OTU1Mjg4LC0xNTU4ODYxMjg1LC0xNjY5Mj
+k4MDE5LC0xNDE5NzM5MjIxLDEyNjg2NjIxODhdfQ==
 -->
