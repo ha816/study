@@ -38,8 +38,45 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 ### 메소드 영역(Method Area)
 
-  
-
+The method area stores per-class information such as:
+- Classloader Reference
+- Run Time Constant Pool  
+    -   Numeric constants
+    -   Field references
+    -   Method References
+    -   Attributes
+-   Field data    
+    -   Per field
+        -   Name
+        -   Type
+        -   Modifiers
+        -   Attributes
+        
+-   **Method data**
+    -   Per method        
+        -   Name
+        -   Return Type
+        -   Parameter Types (in order)
+        -   Modifiers
+        -   Attributes
+        
+    
+-   **Method code**
+    
+    -   Per method
+        
+        -   Bytecodes
+        -   Operand stack size
+        -   Local variable size
+        -   Local variable table
+        -   Exception table
+            
+            -   Per exception handler
+                
+                -   Start point
+                -   End point
+                -   PC offset for handler code
+                -   Constant pool index for exception class being caught
 ### 스택영역(Stack Area)  
 
 스택 영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 곳으로 스레드가 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
@@ -69,10 +106,10 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzA4MTc3MTksOTI5NjYxNDU1LC0xNT
-A5ODc2NzIwLC0xODM4NDYzMDQ1LC0xNzI0OTk0Mzk0LDIwMTU1
-MDU0NzksNzkwOTg0NDY5LC0xODg0MzA5MTg5LC0yMTgyOTczNT
-QsLTExMzY0NzU2MjIsLTk3NjYzOTQ1MCwtNzg2ODUyNTUzLDEz
-OTU5NTUyODgsLTE1NTg4NjEyODUsLTE2NjkyOTgwMTksLTE0MT
-k3MzkyMjEsMTI2ODY2MjE4OF19
+eyJoaXN0b3J5IjpbMjEzMTg5MjQ2LDkyOTY2MTQ1NSwtMTUwOT
+g3NjcyMCwtMTgzODQ2MzA0NSwtMTcyNDk5NDM5NCwyMDE1NTA1
+NDc5LDc5MDk4NDQ2OSwtMTg4NDMwOTE4OSwtMjE4Mjk3MzU0LC
+0xMTM2NDc1NjIyLC05NzY2Mzk0NTAsLTc4Njg1MjU1MywxMzk1
+OTU1Mjg4LC0xNTU4ODYxMjg1LC0xNjY5Mjk4MDE5LC0xNDE5Nz
+M5MjIxLDEyNjg2NjIxODhdfQ==
 -->
