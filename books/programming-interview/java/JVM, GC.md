@@ -20,7 +20,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
-###  스택 영역 Stack Area([설명](https://yaboong.github.io/java/2018/05/26/java-memory-management/))
+###  스택 영역(Stack Area)([링크](https://yaboong.github.io/java/2018/05/26/java-memory-management/))
 
 - 각 Thread 는 자신만의 stack 을 가진다.
 -   지역변수들은 scope 에 따른 visibility 를 가진다.
@@ -83,7 +83,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDY5MTAyNSwtMTI2MTI5MTc0OCwxOT
-YzNTM0MTIyLC00ODc5ODgyMDcsLTE2MDQyNzU1OTEsLTEwMzI5
-Mzk5NTJdfQ==
+eyJoaXN0b3J5IjpbMjA3NDc3NTIxOCwtMTkwNjkxMDI1LC0xMj
+YxMjkxNzQ4LDE5NjM1MzQxMjIsLTQ4Nzk4ODIwNywtMTYwNDI3
+NTU5MSwtMTAzMjkzOTk1Ml19
 -->
