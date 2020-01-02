@@ -22,7 +22,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 
 ### 변수별 할당 메모리 영역
 
-로컬 변수는 모두 스택 영역에 들어간다. 
+로컬 변수는 중  모두 스택 영역에 들어간다. 
 
 
 ###  스택 영역 Stack Area
@@ -82,6 +82,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA1MzM3NTYxLDE5NjM1MzQxMjIsLTQ4Nz
-k4ODIwNywtMTYwNDI3NTU5MSwtMTAzMjkzOTk1Ml19
+eyJoaXN0b3J5IjpbLTEyNjEyOTE3NDgsMTk2MzUzNDEyMiwtND
+g3OTg4MjA3LC0xNjA0Mjc1NTkxLC0xMDMyOTM5OTUyXX0=
 -->
