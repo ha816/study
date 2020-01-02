@@ -49,12 +49,12 @@ PreparedStatement에서 "?" 바인딩 변수 또는 변수 홀더(variable holde
 
 이렇게 **변수를 사용하는 쿼리를 바인딩 쿼리** 라고 하며, **바인딩 변수 없이 사용하는 쿼리를 동적 쿼리 또는 다이나믹 쿼리**라고 한다. 
 
-MyBatis에서는 #{}으로 변수를 바인딩 하는데, 기본적으로 #{}을 사용하면 PreparedStatement 특성을 생성하고 사용하고 값을 안정적으로 바인딩한다. 그리고 이 방식이 안전하고 빠르고 거의 항상 추천된다. 그러나 가끔 수정이 없는 SQL Statement를 그대로 넣고 싶을때가 있다. 그럴때는 ${}를 사용한다. 예를 들어, ORDER BY나 LIKE 키워드에 변수를 넣을때는 
+MyBatis에서는 #{}으로 변수를 바인딩 하는데, 기본적으로 #{}을 사용하면 PreparedStatement 특성을 생성하고 사용하고 값을 안정적으로 바인딩한다. 그리고 이 방식이 안전하고 빠르고 거의 항상 추천된다. 그러나 가끔 수정이 없는 SQL Statement를 그대로 넣고 싶을때가 있다. 그럴때는 ${}를 사용한다. 예를 들어, ORDER BY나 LIKE 키워드에 변수를 넣을때는 아래와 같이 쓰자.
 ```
 name like '%${word}%,  ${orderAs}
 ```
+그렇지만 이렇게 Statement 쿼리(동적 쿼리)를 직접 쓰는 것은 SQL Injection이 있을 수 있기 때문에 조심해야 한다. 사용자의 입력이 
 
-> 
 > NOTE It's not safe to accept input from a user and supply it to a statement unmodified in this way. This leads to potential SQL Injection attacks and therefore you should either disallow user input in these fields, or always perform your own escapes and checks.
 
 So definitively in  `name like '%${word}%' or`order by name ${orderAs}` you need to use String substitution not a prepared statement.
@@ -107,7 +107,8 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2ODk5NTgwMSwtMTczNzc1NzU5NywxMj
-Q5MTYyMTk0LC0zODk1MTU2MjgsMTA4OTk3MDcxNCw3MTA2NTQ5
-NjYsLTE1NDA4ODQ3MDIsLTU4MTgwNTA5OF19
+eyJoaXN0b3J5IjpbOTkyMjM0NDkxLC03Njg5OTU4MDEsLTE3Mz
+c3NTc1OTcsMTI0OTE2MjE5NCwtMzg5NTE1NjI4LDEwODk5NzA3
+MTQsNzEwNjU0OTY2LC0xNTQwODg0NzAyLC01ODE4MDUwOThdfQ
+==
 -->
