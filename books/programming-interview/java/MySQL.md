@@ -25,7 +25,7 @@ Durability
 
 > Statement와 PreparedStatement의 차이
 
-Statement와 PreparedStatement의 차이를 알려면 우선 MySQL 서버가 쿼리를 처리하는 각 단계를 이해해야 한다. 
+Statement와 PreparedStatement의 차이를 알려면 우선 MySQL 서버가 쿼리를 처리하는 각 단계를 이해해야 한다. 아래 절차는 MySQL 서버로 쿼리를 요청하
 
 쿼리요청 -> 쿼리 분석 -> 최적화 -> 권한체크 -> 쿼리실행
 
@@ -65,6 +65,6 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTc0MzIwODQsNzEwNjU0OTY2LC0xNT
-QwODg0NzAyLC01ODE4MDUwOThdfQ==
+eyJoaXN0b3J5IjpbLTczOTYwNzk2NSw3MTA2NTQ5NjYsLTE1ND
+A4ODQ3MDIsLTU4MTgwNTA5OF19
 -->
