@@ -34,7 +34,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 여기서 클래스 변수의 실제 객체는 Heap 영역에 저장된다. 단지 메서드 영역의 로드되는 변수는 주소값만을 가진다. 
 
 ```
-static int i = 1; //the value 1 is stored in the PermGen section
+static int i = 1; //the value 1 is stored in the RunTime Constant Pool(PermGen section
 static Object o = new SomeObject()
 ```
 
@@ -88,6 +88,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMjAyMzc1OSwtNDg3OTg4MjA3LC0xNj
+eyJoaXN0b3J5IjpbLTM5MDk5MDk1MSwtNDg3OTg4MjA3LC0xNj
 A0Mjc1NTkxLC0xMDMyOTM5OTUyXX0=
 -->
