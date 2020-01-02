@@ -12,6 +12,8 @@ JVM의 핵심적 작업은 compile이다. 컴파일을 하면 .class확장자를
 
 자바에서는 C나 C++의 잘 정의된 헤더를 사용할 수 있는 native 메서드를 사용할 수 있다. 코드가 JVM에 로드됐을때 고유(native) 코드를 등록해야 한다 그래야 메서드 호출시 코드를 실행하는데 정확히 필요한 것을 알 수 있다. 
 
+
+
 ## JVM 메모리 영역
 
 JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역으로 나뉜다.  JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다. Non-Shared memory는 스레드가 별로 할당되는 고유 메모리 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
@@ -66,5 +68,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMTM0OTU0NywtMTAzMjkzOTk1Ml19
+eyJoaXN0b3J5IjpbLTE2MDQyNzU1OTEsLTEwMzI5Mzk5NTJdfQ
+==
 -->
