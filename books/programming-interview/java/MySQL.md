@@ -49,7 +49,7 @@ PreparedStatement에서 "?" 바인딩 변수 또는 변수 홀더(variable holde
 
 이렇게 **변수를 사용하는 쿼리를 바인딩 쿼리** 라고 하며, **바인딩 변수 없이 사용하는 쿼리를 동적 쿼리 또는 다이나믹 쿼리**라고 한다. 
 
-MyBatis에서는 #{}으로 변수를 바인딩 하는데, 기본적으로 #{}을 사용하면 PreparedStatement 특성을 생성하고 사용하고 값을 안정적으로 바인딩한다. 그리고 이 방식이 안전하고 빠르고 거의 항상 추천된다. 그러나 가끔 수정이 없는 SQL Statement를 그대로 넣고 싶을때가 있다. 그럴때는 ${}를 사용한다. 예를 들어, ORDER BY나 LIKE 키워드에 변수를 넣을때는 아래와 같이 써야한다. ${}안에는 변수값 자체가 들어가기 때문에 ""가 들어가지 않는다. 따라서 LIKE
+MyBatis에서는 #{}으로 변수를 바인딩 하는데, 기본적으로 #{}을 사용하면 PreparedStatement 특성을 생성하고 사용하고 값을 안정적으로 바인딩한다. 그리고 이 방식이 안전하고 빠르고 거의 항상 추천된다. 그러나 가끔 수정이 없는 SQL Statement를 그대로 넣고 싶을때가 있다. 그럴때는 ${}를 사용한다. 예를 들어, ORDER BY나 LIKE 키워드에 변수를 넣을때는 아래와 같이 써야한다. ${}안에는 변수값 자체가 들어가기 때문에 ""가 들어가지 않는다. 따라서 LIKE, ORDER BY와 같이 더블 스퀏이 들어가지 않는 쿼리에는 $
 ```
 LIKE %${word}%, ORDER BY ${orderAS}
 ```
@@ -96,8 +96,8 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0NjkyODM0LC0yMDQyMDkxMjM5LDk5Mj
-IzNDQ5MSwtNzY4OTk1ODAxLC0xNzM3NzU3NTk3LDEyNDkxNjIx
-OTQsLTM4OTUxNTYyOCwxMDg5OTcwNzE0LDcxMDY1NDk2NiwtMT
-U0MDg4NDcwMiwtNTgxODA1MDk4XX0=
+eyJoaXN0b3J5IjpbLTM2MDY2MzcyOSwtMjA0MjA5MTIzOSw5OT
+IyMzQ0OTEsLTc2ODk5NTgwMSwtMTczNzc1NzU5NywxMjQ5MTYy
+MTk0LC0zODk1MTU2MjgsMTA4OTk3MDcxNCw3MTA2NTQ5NjYsLT
+E1NDA4ODQ3MDIsLTU4MTgwNTA5OF19
 -->
