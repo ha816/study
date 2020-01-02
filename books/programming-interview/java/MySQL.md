@@ -51,7 +51,7 @@ PreparedStatement에서 "?" 바인딩 변수 또는 변수 홀더(variable holde
 
 MyBatis에서는 #{}으로 변수를 바인딩 하는데, 기본적으로 #{}을 사용하면 PreparedStatement 특성을 생성하고 사용하고 값을 안정적으로 바인딩한다. 그리고 이 방식이 안전하고 빠르고 거의 항상 추천된다. 그러나 가끔 수정이 없는 SQL Statement를 그대로 넣고 싶을때가 있다. 그럴때는 ${}를 사용한다. 예를 들어, ORDER BY나 LIKE 키워드에 변수를 넣을때는 아래와 같이 쓰자.
 ```
-LIKE '%${word}%, ORDER BY ${orderAs}
+LIKE %${word}%, ORDER BY ${orderAs}
 ```
 그렇지만 이렇게 Statement 쿼리(동적 쿼리)를 직접 쓰는 것은 SQL Injection이 있을 수 있기 때문에 조심해야 한다. 사용자의 입력이 직접 들어오지 못하게 해야하거나 특수 문자들을 체크 해야 한다. 
 
@@ -96,8 +96,8 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3Njg0MTU4OCw5OTIyMzQ0OTEsLTc2OD
-k5NTgwMSwtMTczNzc1NzU5NywxMjQ5MTYyMTk0LC0zODk1MTU2
-MjgsMTA4OTk3MDcxNCw3MTA2NTQ5NjYsLTE1NDA4ODQ3MDIsLT
-U4MTgwNTA5OF19
+eyJoaXN0b3J5IjpbLTIwNDIwOTEyMzksOTkyMjM0NDkxLC03Nj
+g5OTU4MDEsLTE3Mzc3NTc1OTcsMTI0OTE2MjE5NCwtMzg5NTE1
+NjI4LDEwODk5NzA3MTQsNzEwNjU0OTY2LC0xNTQwODg0NzAyLC
+01ODE4MDUwOThdfQ==
 -->
