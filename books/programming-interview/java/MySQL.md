@@ -65,6 +65,10 @@ https://logical-code.tistory.com/25
 
 MyBatis에서는 변수를 바인딩 하는데 #{}, ${}를 활용하는 방법이 있다. 
 
+- #{}
+	- PrepareStatment를 활용한다. SQL 인젝션에 안정적이고 일반적으로 MySQL 캐시가 걸려 빠르다. 그
+
+
  #{}으로 변수를 바인딩 하는데, 기본적으로 #{}을 사용하면 PreparedStatement 특성을 생성하고 사용하고 값을 안정적으로 바인딩한다. 그리고 이 방식이 안전하고 빠르고 거의 항상 추천된다. 그러나 가끔 수정이 없는 SQL Statement를 그대로 넣고 싶을때가 있다. 그럴때는 ${}를 사용한다. 예를 들어, ORDER BY나 LIKE 키워드에 변수를 넣을때는 아래와 같이 써야한다. ${}안에는 변수값 자체가 들어가기 때문에 ""가 들어가지 않는다. 따라서 LIKE, ORDER BY와 같이 더블 스퀏이 들어가지 않는 쿼리에는 ${}를 넣는다. 
 ```
 LIKE %${word}%, ORDER BY ${orderAS}
@@ -105,7 +109,7 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NzExOTE3OSwtMTA1MTk1NTMwLDM2MD
+eyJoaXN0b3J5IjpbMTQ0NzA4NzM4MCwtMTA1MTk1NTMwLDM2MD
 Y2NjM0NCwtMzYwNjYzNzI5LC0yMDQyMDkxMjM5LDk5MjIzNDQ5
 MSwtNzY4OTk1ODAxLC0xNzM3NzU3NTk3LDEyNDkxNjIxOTQsLT
 M4OTUxNTYyOCwxMDg5OTcwNzE0LDcxMDY1NDk2NiwtMTU0MDg4
