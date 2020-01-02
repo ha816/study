@@ -4,6 +4,8 @@
 
 SQL은 관계형 데이터베이스에 데이터를 관리하고 질의를 하기 위해 사용하는 선언전 언어다. 관계형 데이터 베이스의 표준 언어이며, 특정 데이터베이스 구현에 얽메이지 않는다. 
 
+--- 
+
 > 트랜잭션(transaction)이란 무엇인가?
 
 트랜잭션은 작은 작업들을 하나로 묶은 큰 작업을 말한다. 트래잭션은 ACID 속성을 만족해야 한다.
@@ -20,6 +22,7 @@ Isolation
 Durability
 : 트랜잭션이 커밋되면 그 내용은 영구히 남아야 한다. 심지어 시스템이 실패해도 남아야 한다. (e.g., power outage or crash. This usually means that completed transactions (or their effects) are recorded in non-volatile memory
 
+--- 
 > Statement와 PreparedStatement의 차이
 
 Statement와 PreparedStatement의 차이를 알려면 우선 MySQL 서버가 쿼리를 처리하는 각 단계를 이해해야 한다. 아래 절차는 쿼리를 수행하기 위한 절차를 나타낸다. 
@@ -53,6 +56,7 @@ PreparedStatement를 사용할 때는 SQL 쿠러ㅣ 문장을 이용해 Prepared
 
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
+---
 > JDBC는 무엇인가?
 
 JDBC(Java Database Connectivity)는 데이터 베이스에 연결하기 위한 표준 자바 라이브러리에 내장된 매커니즘이다.
@@ -86,7 +90,7 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTY2NjgyNCwxMjQ5MTYyMTk0LC0zOD
+eyJoaXN0b3J5IjpbMTI2Njk3MzQ3NSwxMjQ5MTYyMTk0LC0zOD
 k1MTU2MjgsMTA4OTk3MDcxNCw3MTA2NTQ5NjYsLTE1NDA4ODQ3
 MDIsLTU4MTgwNTA5OF19
 -->
