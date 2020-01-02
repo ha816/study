@@ -14,7 +14,7 @@ JVM의 핵심적 작업은 compile이다. 컴파일을 하면 .class확장자를
 
 ## JVM 메모리 영역
 
-JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역으로 나뉜다.  JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다. Non-shared memory는 스레드가 별로 할당되는 고유 메모리 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
+JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역으로 나뉜다.  JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다. Non-Shared memory는 스레드가 별로 할당되는 고유 메모리 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
 
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
@@ -38,47 +38,6 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-shared Memory 영역�
 
 ### 메소드 영역(Method Area)
 
-The method area stores per-class information such as:
-- Classloader Reference
-- Run Time Constant Pool  
-    -   Numeric constants
-    -   Field references
-    -   Method References
-    -   Attributes
--   Field data    
-    -   Per field
-        -   Name
-        -   Type
-        -   Modifiers
-        -   Attributes
-        
--   **Method data**
-    -   Per method        
-        -   Name
-        -   Return Type
-        -   Parameter Types (in order)
-        -   Modifiers
-        -   Attributes
-        
-    
--   **Method code**
-    
-    -   Per method
-        
-        -   Bytecodes
-        -   Operand stack size
-        -   Local variable size
-        -   Local variable table
-        -   Exception table
-            
-            -   Per exception handler
-                
-                -   Start point
-                -   End point
-                -   PC offset for handler code
-                -   Constant pool index for exception class being caught
-
-### 스택영역(Stack Area)  
 
 스택 영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 곳으로 스레드가 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
 
@@ -107,5 +66,5 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzI5Mzk5NTJdfQ==
+eyJoaXN0b3J5IjpbLTUzMTM0OTU0NywtMTAzMjkzOTk1Ml19
 -->
