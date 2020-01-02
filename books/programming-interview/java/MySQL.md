@@ -30,6 +30,8 @@ Statement와 PreparedStatement의 차이를 알려면 우선 MySQL 서버가 쿼
 쿼리요청 -> 쿼리 분석 -> 최적화 -> 권한체크 -> 쿼리실행
 
 자바 프로그램에서 Statement로 실행되는 쿼리는 위의 절차를 매번 걸쳐서 쿼리가 실행된다. 
+하지만 PreparedStatement를 사용하면 쿼리 분석이나 최적화의 일부작업을 처음 한번만 수행해 별도로 저장해 두고, 다음 부터 요청되는 쿼리는 저장된 분석결과를 재사용한다. 이렇게 하여 매붠 궈리를 실행해야 하는 쿼리분석이나 최적화의 일부 작업을 건너띌 수 있다. 
+
 
 
 # JDBC
@@ -67,6 +69,6 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTk3MDcxNCw3MTA2NTQ5NjYsLTE1ND
-A4ODQ3MDIsLTU4MTgwNTA5OF19
+eyJoaXN0b3J5IjpbMjA2NTE5OTg1MywxMDg5OTcwNzE0LDcxMD
+Y1NDk2NiwtMTU0MDg4NDcwMiwtNTgxODA1MDk4XX0=
 -->
