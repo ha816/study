@@ -1,13 +1,9 @@
-# MySQL
+> SQL은?
 
--> 
 SQL은 관계형 데이터베이스에 데이터를 관리하고 질의를 하기 위해 사용하는 선언전 언어다. 관계형 데이터 베이스의 표준 언어이며, 특정 데이터베이스 구현에 얽메이지 않는다. 
 
->참조 무결성(Referential integrity)이란?
+# MySQL
 
-관련있는 테이블 간 데이터의 무결성(청렴)을 말한다.
-
-![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Referential_integrity_broken.png/250px-Referential_integrity_broken.png)
 
 > 트랜잭션(transaction)이란 무엇인가?
 
@@ -45,6 +41,7 @@ ResultSet rs = stmt.executeQuery("");
 
 
 
+
 ## 인메모리 데이터베이스 테스팅
 
 데이터 베이스에 접속할 애플리케이션을 개발할때 데이터 베이스를 테스트 할 수 있는 상태로 유지하는 건 가끔 문제가 될 수 있다. 
@@ -60,5 +57,5 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODczODkzODBdfQ==
+eyJoaXN0b3J5IjpbLTc3NDI5OTI4Nl19
 -->
