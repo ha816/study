@@ -49,7 +49,18 @@ PreparedStatement에서 "?" 바인딩 변수 또는 변수 홀더(variable holde
 
 이렇게 **변수를 사용하는 쿼리를 바인딩 쿼리** 라고 하며, **바인딩 변수 없이 사용하는 쿼리를 동적 쿼리 또는 다이나믹 쿼리**라고 한다. 
 
-MyBatis에서는 #{}으로 변수를 바인딩 하는데 
+MyBatis에서는 #{}으로 변수를 바인딩 하는데, 기본적으로 #{}을 사용하면 PreparedStatement 특성을 생성하고  사용하고 값을 안정적으로 
+
+using the #{} syntax will cause MyBatis to generate PreparedStatement properties and set the values safely against the PreparedStatement parameters (e.g. ?). While this is safer, faster and almost always preferred, sometimes you just want to directly inject a string unmodified into the SQL Statement. For example, for ORDER BY, you might use something like this:
+> 
+> ORDER BY ${columnName}
+> 
+> Here MyBatis won't modify or escape the string.
+> 
+> NOTE It's not safe to accept input from a user and supply it to a statement unmodified in this way. This leads to potential SQL Injection attacks and therefore you should either disallow user input in these fields, or always perform your own escapes and checks.
+
+So definitively in  `name like '%${word}%' or`order by name ${orderAs}` you need to use String substitution not a prepared statement.
+
 
 25
 
@@ -98,7 +109,7 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4ODM5MjE3OCwtMTczNzc1NzU5NywxMj
-Q5MTYyMTk0LC0zODk1MTU2MjgsMTA4OTk3MDcxNCw3MTA2NTQ5
-NjYsLTE1NDA4ODQ3MDIsLTU4MTgwNTA5OF19
+eyJoaXN0b3J5IjpbLTY4NDA1MzQyLC0xNzM3NzU3NTk3LDEyND
+kxNjIxOTQsLTM4OTUxNTYyOCwxMDg5OTcwNzE0LDcxMDY1NDk2
+NiwtMTU0MDg4NDcwMiwtNTgxODA1MDk4XX0=
 -->
