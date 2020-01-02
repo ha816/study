@@ -24,7 +24,8 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 
 스택 영역에는 지역변수와 매개변수가 저장된다. 
 
-힙 영역에는 인스턴스 변수가 저장된다. 
+
+참조 변수들은 실행될때마다 많은 객체 데이터를 스택 영역에 두었다가 빼는게 비효율적이라 힙영역에 실제 값을 저장하고 스택에는 그 주소만 저장한다. 
 
 
 
@@ -76,6 +77,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDk2MDE5MiwtMTYwNDI3NTU5MSwtMT
+eyJoaXN0b3J5IjpbLTM5MzgwNTk5NCwtMTYwNDI3NTU5MSwtMT
 AzMjkzOTk1Ml19
 -->
