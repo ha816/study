@@ -68,10 +68,11 @@ MyBatis에서는 변수를 바인딩 하는데 #{}, ${}를 활용하는 방법�
 - #{}
 	- PrepareStatment를 활용한다. 
 	- 자동적으로 값 앞뒤로`'#{value}'` 생성되어 바인딩 된다. 
+	- 
 	- SQL 인젝션에 안정적이고 일반적으로 MySQL 캐시가 걸려 빠르다. 그래서 거의 항상 사용이 추천된다.
 - ${}	
 	- Statment를 활용한다. 
-	-  ${} 전체를 변환(REPLACE)
+	-  ${} 전체를 완전히 대체 한다.
 	- SQL 인젝션에 불안정적이고 캐시를 사용하지 않기 때문에 느릴 수 있다. 
 
 그러면 언제 ${}를 써야할까? 가끔 수정이 없이 SQL Statement를 그대로 넣고 싶을때가 있다. 
@@ -116,9 +117,9 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTExMzM0MDI1LC0xMjI5NDk1MTk1LC0xMD
-UxOTU1MzAsMzYwNjY2MzQ0LC0zNjA2NjM3MjksLTIwNDIwOTEy
-MzksOTkyMjM0NDkxLC03Njg5OTU4MDEsLTE3Mzc3NTc1OTcsMT
-I0OTE2MjE5NCwtMzg5NTE1NjI4LDEwODk5NzA3MTQsNzEwNjU0
-OTY2LC0xNTQwODg0NzAyLC01ODE4MDUwOThdfQ==
+eyJoaXN0b3J5IjpbLTE4OTk2NDE5OTMsLTEyMjk0OTUxOTUsLT
+EwNTE5NTUzMCwzNjA2NjYzNDQsLTM2MDY2MzcyOSwtMjA0MjA5
+MTIzOSw5OTIyMzQ0OTEsLTc2ODk5NTgwMSwtMTczNzc1NzU5Ny
+wxMjQ5MTYyMTk0LC0zODk1MTU2MjgsMTA4OTk3MDcxNCw3MTA2
+NTQ5NjYsLTE1NDA4ODQ3MDIsLTU4MTgwNTA5OF19
 -->
