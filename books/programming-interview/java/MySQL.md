@@ -56,11 +56,6 @@ PreparedStatement를 사용할 때는 SQL 쿠러ㅣ 문장을 이용해 Prepared
 
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
-PreparedStatement의 보안상 장점을 살펴보자면, MySQL 뿐만 아니라 SQL 문장을 사용하는 경우 SQL 인젝션이라는 취약성이 있다. PreparedStatement를 사용해 코드를 개산하면 SQL 인젝션 
-
-
-
-
 # JDBC
 
 > 관계형 데이터베이스에 접근하기 위해 자바를 어떻게 사용하는가?
@@ -96,7 +91,7 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4MTgyODYsMTI0OTE2MjE5NCwtMzg5NT
-E1NjI4LDEwODk5NzA3MTQsNzEwNjU0OTY2LC0xNTQwODg0NzAy
-LC01ODE4MDUwOThdfQ==
+eyJoaXN0b3J5IjpbLTMxMDI0ODM0OCwxMjQ5MTYyMTk0LC0zOD
+k1MTU2MjgsMTA4OTk3MDcxNCw3MTA2NTQ5NjYsLTE1NDA4ODQ3
+MDIsLTU4MTgwNTA5OF19
 -->
