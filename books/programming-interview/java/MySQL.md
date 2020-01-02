@@ -52,7 +52,7 @@ PreparedStatement에서 "?" 바인딩 변수 또는 변수 홀더(variable holde
 ```
 conn.prepareStatement("SELECT * FROM employees WHERE emp_no=?")
 ```
-PreparedStatement를 사용할 때는 SQL 쿠러ㅣ 문장을 이용해 PreparedStatement 객체를 준비해야 한다. 위 메서드를 실행하면 Connector는 주어진 SQL 문장을 서버로 전송해서 쿼리를 분석하고 그 결과를 저장해 둔다. 
+PreparedStatement를 사용할 때는 SQL 쿠러ㅣ 문장을 이용해 PreparedStatement 객체를 준비해야 한다. 위 메서드를 실행하면 Connector는 주어진 SQL 문장을 서버로 전송해서 쿼리를 분석하고 그 결과를 저장해 둔다. 그리고 MySQL 서버는 쿼리의 분석 결과의 포인터와 같은 해시 값을 반환하고 이 값으로 PreparedStatement 객체를 생성한다. 이렇게 생성된 PreparedStatement 바인딩 변수 값만 변경하면서 
 
 
 
@@ -92,7 +92,7 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAxMDQxNTU2LC0zODk1MTU2MjgsMTA4OT
-k3MDcxNCw3MTA2NTQ5NjYsLTE1NDA4ODQ3MDIsLTU4MTgwNTA5
-OF19
+eyJoaXN0b3J5IjpbLTIxNDQxNDg2ODgsLTM4OTUxNTYyOCwxMD
+g5OTcwNzE0LDcxMDY1NDk2NiwtMTU0MDg4NDcwMiwtNTgxODA1
+MDk4XX0=
 -->
