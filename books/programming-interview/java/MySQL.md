@@ -69,19 +69,16 @@ MyBatis에서는 변수를 바인딩 하는데 #{}, ${}를 활용하는 방법�
 	- PrepareStatment를 활용한다. 
 	- 자동적으로 값 앞뒤로`'#{value}'` 생성되어 바인딩 된다. 
 	- SQL 인젝션에 안정적이고 일반적으로 MySQL 캐시가 걸려 빠르다. 그래서 거의 항상 사용이 추천된다.
-	- 
+	- `SELECT NAME FROM TEST WHERE NAME=#{name}`
+	- `SELECT NAME FROM TEST WHERE NAME='JOHN'`
 - ${}	
 	- Statment를 활용한다. 
 	-  ${} 전체를 완전히 대체 한다.
 	- SQL 인젝션에 불안정적이고 캐시를 사용하지 않기 때문에 느릴 수 있다. 
-
-
-
-
-
-
+	- 	`SELECT NAME FROM TEST WHERE SCORE=${score}`
+	- 	`SELECT NAME FROM TEST WHERE SCORE= 99`  
+  
 그러면 언제 ${}를 써야할까? 가끔 수정이 없이 SQL Statement를 그대로 넣고 싶을때가 있다. 
-
 예를 들어, ORDER BY나 LIKE 키워드에 변수를 넣을때는 아래와 같이 써야한다. ${}안에는 변수값 자체가 들어가기 때문에 ""가 들어가지 않는다. 따라서 LIKE, ORDER BY와 같이 더블 스퀏이 들어가지 않는 쿼리에는 ${}를 넣는다. 
 ```
 LIKE %${word}%, ORDER BY ${orderAS}
@@ -122,7 +119,7 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjAyMTkyMywtMTIyOTQ5NTE5NSwtMT
+eyJoaXN0b3J5IjpbMTEwMTI2MDgxNywtMTIyOTQ5NTE5NSwtMT
 A1MTk1NTMwLDM2MDY2NjM0NCwtMzYwNjYzNzI5LC0yMDQyMDkx
 MjM5LDk5MjIzNDQ5MSwtNzY4OTk1ODAxLC0xNzM3NzU3NTk3LD
 EyNDkxNjIxOTQsLTM4OTUxNTYyOCwxMDg5OTcwNzE0LDcxMDY1
