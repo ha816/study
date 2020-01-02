@@ -51,8 +51,8 @@ PreparedStatement에서 "?" 바인딩 변수 또는 변수 홀더(variable holde
 
 ```
 conn.prepareStatement("SELECT * FROM employees WHERE emp_no=?")
-
 ```
+PreparedStatement를 사용할 때는 SQL 쿠러ㅣ 문장을 이용해 PreparedStatement 객체를 준비해야 한다. 위 메서드를 실행하면 Connector는 주어진 SQL 문장을 
 
 
 
@@ -92,7 +92,7 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTgzNTU5MywtMzg5NTE1NjI4LDEwOD
+eyJoaXN0b3J5IjpbLTc0OTI4MzIwNSwtMzg5NTE1NjI4LDEwOD
 k5NzA3MTQsNzEwNjU0OTY2LC0xNTQwODg0NzAyLC01ODE4MDUw
 OThdfQ==
 -->
