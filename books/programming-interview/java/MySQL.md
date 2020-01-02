@@ -45,7 +45,7 @@ SELECT * FROM employees WHERE emp_no = 10003;
 ```
 SELECT * FROM employees WHERE emp_no = ?;
 ```
-Pre
+PreparedStatement에서 "?" 바인딩 변수 또는 변수 홀더(variable holder)라고 하는데, 실제 쿼리를 실행할때는 변수 대신에 상수 값을 대입해야 한다. 
 
 
 
@@ -85,6 +85,6 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0OTY0OTUxLDEwODk5NzA3MTQsNzEwNj
-U0OTY2LC0xNTQwODg0NzAyLC01ODE4MDUwOThdfQ==
+eyJoaXN0b3J5IjpbLTM4OTUxNTYyOCwxMDg5OTcwNzE0LDcxMD
+Y1NDk2NiwtMTU0MDg4NDcwMiwtNTgxODA1MDk4XX0=
 -->
