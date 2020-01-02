@@ -29,9 +29,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 
 ### 메소드 영역(Method Area, Class Area)
 
-클래스 파일의 바이트 코드가 로드되는 곳이다. 
-사용하는 클래스와 static 변수(클래스 변수)가 있을 텐데 이것이 메서드 영역에 올라간다.
-
+클래스 파일의 바이트 코드가 로드되는 곳이다. 사용하는 클래스와 static 변수(클래스 변수)가 로드 된다. 여기서 클래스 변수의 실제 
 
 
 
@@ -82,6 +80,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4Nzk4ODIwNywtMTYwNDI3NTU5MSwtMT
-AzMjkzOTk1Ml19
+eyJoaXN0b3J5IjpbLTExODk2MjQ2MjYsLTQ4Nzk4ODIwNywtMT
+YwNDI3NTU5MSwtMTAzMjkzOTk1Ml19
 -->
