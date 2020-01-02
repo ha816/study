@@ -27,7 +27,10 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 
 참조 변수들은 실행될때마다 많은 객체 데이터를 스택 영역에 두었다가 빼는게 비효율적이라 힙영역에 실제 값을 저장하고 스택에는 그 주소만 저장한다. 
 
-### 메소드 영역(Method Area, Class Are)
+### 메소드 영역(Method Area, Class Area)
+
+클래스 파일의 바이트 코드가 로드되는 곳이다. 
+사용하는 클래스와 static 변수(클래스 변수)가 있을 텐데 이것이 메서드 영역에 올라간다.
 
 
 
@@ -79,6 +82,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NjE4NzYzNCwtMTYwNDI3NTU5MSwtMT
+eyJoaXN0b3J5IjpbLTQ4Nzk4ODIwNywtMTYwNDI3NTU5MSwtMT
 AzMjkzOTk1Ml19
 -->
