@@ -45,7 +45,9 @@ SELECT * FROM employees WHERE emp_no = 10003;
 ```
 SELECT * FROM employees WHERE emp_no = ?;
 ```
-PreparedStatement에서 "?" 바인딩 변수 또는 변수 홀더(variable holder)라고 하는데, 실제 쿼리를 실행할때는 변수 대신에 상수 값을 대입해야 한다. 
+PreparedStatement에서 "?" 바인딩 변수 또는 변수 홀더(variable holder)라고 하는데, 실제 쿼리를 실행할때는 변수 대신에 상수 값을 대입해야 한다.  이렇게 바인딩 변수를 사용하면 쿼리를 템플릿화 할 수 있고, Statement 쿼리에 비해서 쿼리 문장의 수를 대폭 줄일 수 있다. 덕분에 MySQL 서버에서 보관해야하는 정보가 줄어 메모리 사용량을 줄일 수 있다.
+
+이렇게 변수를 사용하는 쿼리를 
 
 
 
@@ -85,6 +87,7 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4OTUxNTYyOCwxMDg5OTcwNzE0LDcxMD
-Y1NDk2NiwtMTU0MDg4NDcwMiwtNTgxODA1MDk4XX0=
+eyJoaXN0b3J5IjpbLTE3NDU4ODM3MywtMzg5NTE1NjI4LDEwOD
+k5NzA3MTQsNzEwNjU0OTY2LC0xNTQwODg0NzAyLC01ODE4MDUw
+OThdfQ==
 -->
