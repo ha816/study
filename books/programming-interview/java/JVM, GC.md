@@ -20,8 +20,13 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
-
 ###  스택 영역 Stack Area([설명](https://yaboong.github.io/java/2018/05/26/java-memory-management/))
+
+- 각 Thread 는 자신만의 stack 을 가진다.
+-   지역변수들은 scope 에 따른 visibility 를 가진다.
+-   Heap 영역에 생성된 Object 타입의 데이터의 참조값이 할당된다.
+-   원시타입의 데이터가 값과 함께 할당된다.
+
 스택 영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 곳으로 스레드가 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
 
 ### 메소드 영역(Method Area, Class Area)
@@ -78,7 +83,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4ODI1MzA4OCwtMTI2MTI5MTc0OCwxOT
+eyJoaXN0b3J5IjpbLTE5MDY5MTAyNSwtMTI2MTI5MTc0OCwxOT
 YzNTM0MTIyLC00ODc5ODgyMDcsLTE2MDQyNzU1OTEsLTEwMzI5
 Mzk5NTJdfQ==
 -->
