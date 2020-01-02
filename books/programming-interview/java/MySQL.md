@@ -59,8 +59,7 @@ PreparedStatement를 사용할 때는 SQL 쿠러ㅣ 문장을 이용해 Prepared
 --- 
 > MyBatis에서 #{}과 ${}의 차이는?
 
-https://logical-code.tistory.com/25
-[https://www.donnert.net/65](https://www.donnert.net/65)
+https://logical-code.tistory.com/25 [https://www.donnert.net/65](https://www.donnert.net/65)
 
 
 MyBatis에서는 변수를 바인딩 하는데 #{}, ${}를 활용하는 방법이 있다. 
@@ -74,7 +73,7 @@ MyBatis에서는 변수를 바인딩 하는데 #{}, ${}를 활용하는 방법�
 - ${}	
 	- Statment를 활용한다. 
 	-  ${} 전체를 완전히 대체 한다.
-	- SQL 인젝션에 위험하고 캐시를 사용하지 않기 때문에 느릴 수 있다. 
+	- SQL 인젝션에 위험하고 캐시를 사용하지 않기 때문에 느릴 수 있다.  사용자의 입력이 직접 들어오지 못하게 해야하거나 특수 문자들을 체크 해야 한다. 
 	- 	`SELECT NAME FROM TEST WHERE SCORE=${score}`
 	- 	`SELECT NAME FROM TEST WHERE SCORE= 99`  
   
@@ -83,7 +82,6 @@ MyBatis에서는 변수를 바인딩 하는데 #{}, ${}를 활용하는 방법�
 ```
 LIKE %${word}%, ORDER BY ${orderAS}
 ```
-그렇지만 이렇게 Statement 쿼리(동적 쿼리)를 직접 쓰는 것은 SQL Injection이 있을 수 있기 때문에 조심해야 한다. 사용자의 입력이 직접 들어오지 못하게 해야하거나 특수 문자들을 체크 해야 한다. 
 
 ---
 > JDBC는 무엇인가?
@@ -119,9 +117,9 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNjQ5MDg4NSwtMTIyOTQ5NTE5NSwtMT
-A1MTk1NTMwLDM2MDY2NjM0NCwtMzYwNjYzNzI5LC0yMDQyMDkx
-MjM5LDk5MjIzNDQ5MSwtNzY4OTk1ODAxLC0xNzM3NzU3NTk3LD
-EyNDkxNjIxOTQsLTM4OTUxNTYyOCwxMDg5OTcwNzE0LDcxMDY1
-NDk2NiwtMTU0MDg4NDcwMiwtNTgxODA1MDk4XX0=
+eyJoaXN0b3J5IjpbODU1MjEyNjksLTEyMjk0OTUxOTUsLTEwNT
+E5NTUzMCwzNjA2NjYzNDQsLTM2MDY2MzcyOSwtMjA0MjA5MTIz
+OSw5OTIyMzQ0OTEsLTc2ODk5NTgwMSwtMTczNzc1NzU5NywxMj
+Q5MTYyMTk0LC0zODk1MTU2MjgsMTA4OTk3MDcxNCw3MTA2NTQ5
+NjYsLTE1NDA4ODQ3MDIsLTU4MTgwNTA5OF19
 -->
