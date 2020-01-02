@@ -47,7 +47,15 @@ SELECT * FROM employees WHERE emp_no = ?;
 ```
 PreparedStatement에서 "?" 바인딩 변수 또는 변수 홀더(variable holder)라고 하는데, 실제 쿼리를 실행할때는 변수 대신에 상수 값을 대입해야 한다.  이렇게 바인딩 변수를 사용하면 쿼리를 템플릿화 할 수 있고, Statement 쿼리에 비해서 쿼리 문장의 수를 대폭 줄일 수 있다. 덕분에 MySQL 서버에서 보관해야하는 정보가 줄어 메모리 사용량을 줄일 수 있다.
 
-이렇게 변수를 사용하는 쿼리를 Statement 쿼리 또는 바인딩 쿼리 라고 하며, **바인딩 변수 없이 사용하는 쿼리를 동적 쿼리 또는 다이나믹 쿼리**라고 한다. 
+이렇게 **변수를 사용하는 쿼리를 바인딩 쿼리** 라고 하며, **바인딩 변수 없이 사용하는 쿼리를 동적 쿼리 또는 다이나믹 쿼리**라고 한다. 
+
+MyBatis에서는 #{}으로 변수를 바인딩 하는데 
+
+25
+
+Following the  `myBatis`  guidelines  `#{}`  is used in your sql statements.
+
+If you take a look any of MyBatis Reference in the Section  [Mapper XML Files](http://www.mybatis.org/mybatis-3/sqlmap-xml.html#select)  it says explicity:
 
 ```
 conn.prepareStatement("SELECT * FROM employees WHERE emp_no=?")
@@ -90,7 +98,7 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzc3NTc1OTcsMTI0OTE2MjE5NCwtMz
-g5NTE1NjI4LDEwODk5NzA3MTQsNzEwNjU0OTY2LC0xNTQwODg0
-NzAyLC01ODE4MDUwOThdfQ==
+eyJoaXN0b3J5IjpbMTE4ODM5MjE3OCwtMTczNzc1NzU5NywxMj
+Q5MTYyMTk0LC0zODk1MTU2MjgsMTA4OTk3MDcxNCw3MTA2NTQ5
+NjYsLTE1NDA4ODQ3MDIsLTU4MTgwNTA5OF19
 -->
