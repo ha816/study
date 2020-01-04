@@ -34,32 +34,8 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
---- 
-> MyBatis에서 #{}과 ${}의 차이는?
-
-https://logical-code.tistory.com/25 [https://www.donnert.net/65](https://www.donnert.net/65)
 
 
-MyBatis에서는 변수를 바인딩 하는데 #{}, ${}를 활용하는 방법이 있다. 
-
-- #{}
-	- PrepareStatment를 활용한다. 
-	- 자동적으로 값 앞뒤로`'#{value}'` 생성되어 바인딩 된다. 
-	- SQL 인젝션에 안정적이고 일반적으로 MySQL 캐시가 걸려 빠르다. 그래서 거의 항상 사용이 추천된다.
-	- `SELECT NAME FROM TEST WHERE NAME=#{name}`
-	- `SELECT NAME FROM TEST WHERE NAME='JOHN'`
-- ${}	
-	- Statment를 활용한다. 
-	-  ${} 전체를 완전히 대체 한다.
-	- SQL 인젝션에 위험하고 캐시를 사용하지 않기 때문에 느릴 수 있다.  사용자의 입력이 직접 들어오지 못하게 해야하거나 특수 문자들을 체크 해야 한다. 
-	- 	`SELECT NAME FROM TEST WHERE SCORE=${score}`
-	- 	`SELECT NAME FROM TEST WHERE SCORE= 99`  
-  
-그러면 언제 ${}를 써야할까? 가끔 수정이 없이 SQL Statement를 그대로 넣고 싶을때가 있다. 
-예를 들어, ORDER BY나 LIKE 키워드에 변수를 넣을때는 ''스쿼트가 들어가면 안된다. 
-```
-LIKE %${word}%, ORDER BY ${orderAS}
-```
 
 ---
 > JDBC는 무엇인가?
@@ -95,5 +71,5 @@ ResultSet rs = stmt.executeQuery("");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNzY2ODI1MF19
+eyJoaXN0b3J5IjpbLTQ5MTc3MDQwN119
 -->
