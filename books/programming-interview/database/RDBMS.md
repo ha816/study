@@ -3,6 +3,28 @@
 > SQL은?
 SQL은 관계형 데이터베이스에 데이터를 관리하고 질의를 하기 위해 사용하는 선언전 언어다. 관계형 데이터 베이스의 표준 언어이며, 특정 데이터베이스 구현에 얽메이지 않는다. 
 
+>참조 무결성(Referential integrity)이란?
+
+관련있는 테이블 간 데이터의 무결성(청렴)을 말한다.
+
+![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Referential_integrity_broken.png/250px-Referential_integrity_broken.png)
+
+
+## 인메모리 데이터베이스 테스팅
+
+데이터 베이스에 접속할 애플리케이션을 개발할때 데이터 베이스를 테스트 할 수 있는 상태로 유지하는 건 가끔 문제가 될 수 있다. 
+
+인메모리 데이터 베이스의 자료는 JVM 실행을 종료하면 사라지는데, 이는 인메모리 데이터 베이스를 데이터 유지에 신경쓰지 않고 테스트 데이터로 작업하기 쉽게 만든다. 인메모리 데이터베이스는 로컬 장비에서 실행되므로 네트워크 트래픽이 없고 귀찮은 연결관리를 하지 않아도 된다. 
+
+
+## 프로시저 
+
+저장 프로시저는  SQL이 제공하는 단순한 생성, 읽기, 수정, 삭제 보다 더 많은 기능을 제공한다. 프로시저는 DB서버에서 제공하는 함수와 비슷하다.
+
+저장 프로시저는 정해진 방법으로 데이터를 처리하는 배치성 구문에 유용하다.   
+
+
+
 > 트랜잭션(transaction)이란 무엇인가?
 
 트랜잭션은 작은 작업들을 하나로 묶은 큰 작업을 말한다. 트래잭션은 ACID 속성을 만족해야 한다.
@@ -25,5 +47,5 @@ Durability
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NDEyMzYzN119
+eyJoaXN0b3J5IjpbLTcwNTE0MDcwNl19
 -->
