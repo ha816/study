@@ -10,7 +10,9 @@
 
 TCP는 발신지와 수신지를 연결하여 패킷을 전송하기 위한 논리적 경로를 배정한다. 그리고 3-way handshaking과정은 목적지와 수신지를 확실히하고 정확한 전송을 보장하기 위해서 세션을 수립하는 과정을 의미합니다. 이러한 과정은 TCP 서비스의 신뢰성을 보장한다. 
 
-### UDP(# **UDP(User Datagram Protocol)**
+### UDP(User Datagram Protocol)
+
+데이터를 데이터그램 단위로 처리하는 프로토콜
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTE4NTQzNzQsMTc2ODE0NDQ2M119
+eyJoaXN0b3J5IjpbLTE5NTI4ODYwMTQsMTc2ODE0NDQ2M119
 -->
