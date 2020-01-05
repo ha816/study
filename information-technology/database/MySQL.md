@@ -4,9 +4,9 @@
 
 파티셔닝이란 데이터를 테이블로 분리해서 저장하지만 사용자 입장에서는 여전히 하나의 테이블 사용하는 솔루션이다. 
 
-### 사용 이유
-테이블의 데이터가 많아진다고 무조건 파티션을 적용하는 것이 효율적인 것은 아니다. 하나의 
+테이블의 데이터가 많아진다고 무조건 파티션을 적용하는 것이 효율적인 것은 아니다. 하나의 테이블이 너무 커서 인덱스의 크기가 물리적인 메모리 보다 훨씬 크거나, 데이터 특성상 주기적인 삭제 작업이 필요한 경우 등이 파티션이 필요한 대표적인 예다. 
 
+###
 
 ## Cluster
 
@@ -78,7 +78,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NzA0MDM3MSw4NTE0NjcwMDgsMTUzOD
+eyJoaXN0b3J5IjpbMTEyOTY2Mzc3OCw4NTE0NjcwMDgsMTUzOD
 A4NTU4OCwxMzM4NTUzNjUyLC0xODg4NzU5OTQzLDg1MTcyNzE1
 LDE2MzczNDA5OTRdfQ==
 -->
