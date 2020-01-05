@@ -13,7 +13,6 @@
 **2계층 – 데이터 링크 계층(Data Link)**: 데이터 링크 계층은 (두 개의 직접 연결된 노드 사이의) 노드 간 데이터 전송을 제공하며 물리 계층의 오류 수정도 처리한다. 여기에는 2개의 부계층도 존재한다. 하나는 매체 접근 제어(MAC; Media Access Control) 계층이고 다른 하나는 논리적 연결 제어(LLC) 계층이다. 네트워킹 세계에서 대부분 스위치는 2계층에서 작동한다.  
 
 참고문헌 : [https://tyeolrik.github.io/network/2017/02/14/Networking-4-Data-Link-Layer.html](https://tyeolrik.github.io/network/2017/02/14/Networking-4-Data-Link-Layer.html)
-
   
 **1계층 – 물리 계층(Physical)**: OSI 디핑 소스의 밑바닥에는 물리 계층이 있다. 시스템의 전기적, 물리적 표현을 나타낸다. 케이블 종류, (802.11 무선 시스템에서와 같은) 무선 주파수 링크는 물론 핀 배치, 전압, 물리 요건 등이 포함된다. 네트워킹 문제가 발생하면 많은 네트워크 전문가가 물리 계층으로 바로 가서 모든 케이블이 제대로 연결돼 있는지, 라우터나 스위치 또는 컴퓨터에서 전원 플러그가 빠지지 않았는지 확인한다.  
   
@@ -50,6 +49,7 @@ UDP는 비연결형 프로토콜이다. 즉, 연결을 위해 할당되는 논�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzg3ODYzMSw1MTYwNDcwNjAsLTY1Mj
-k1NDk1MiwxMzk3ODAwMjIzLDE3NjgxNDQ0NjNdfQ==
+eyJoaXN0b3J5IjpbMTI3NzYzNjc5MywxMDA3ODc4NjMxLDUxNj
+A0NzA2MCwtNjUyOTU0OTUyLDEzOTc4MDAyMjMsMTc2ODE0NDQ2
+M119
 -->
