@@ -10,11 +10,7 @@
 
 TCP는 발신지와 수신지를 연결하여 패킷을 전송하기 위한 논리적 경로를 배정한다. 그리고 3-way handshaking과정은 목적지와 수신지를 확실히하고 정확한 전송을 보장하기 위해서 세션을 수립하는 과정을 의미합니다. 이러한 과정은 TCP 서비스의 신뢰성을 보장한다. 
 
-데이터의 흐름제어나 혼잡 제어와 같은 기능도 합니다. 하지만 이러한 기능때문에 UDP보다 속도가 느리게 됩니다.
-
-(이러한 기능은 CPU를 사용하기 때문에 속도에 영향을 주는 것입니다.)
-
-그렇기에  TCP는 연속성보다 신뢰성있는 전송이 중요할 때에 사용하는 프로토콜입니다!
+### UDP(# **UDP(User Datagram Protocol)**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NDkyMzMxMSwxNzY4MTQ0NDYzXX0=
+eyJoaXN0b3J5IjpbLTE2OTE4NTQzNzQsMTc2ODE0NDQ2M119
 -->
