@@ -1,5 +1,7 @@
 # MySQL
 
+> Cluster와 Replication의 
+
 > Statement와 PreparedStatement의 차이
 Statement와 PreparedStatement의 차이를 알려면 우선 MySQL 서버가 쿼리를 처리하는 각 단계를 이해해야 한다. 아래 절차는 쿼리를 수행하기 위한 절차를 나타낸다. 
 
@@ -33,6 +35,6 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODg3NTk5NDMsODUxNzI3MTUsMTYzNz
-M0MDk5NF19
+eyJoaXN0b3J5IjpbMjExMTY3NDY4MSwtMTg4ODc1OTk0Myw4NT
+E3MjcxNSwxNjM3MzQwOTk0XX0=
 -->
