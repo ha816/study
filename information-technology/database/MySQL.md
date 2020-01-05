@@ -15,8 +15,7 @@ SELECT * FROM employees WHERE emp_no = 10002;
 SELECT * FROM employees WHERE emp_no = 10003;
 ...
 ```
-똑같은 패턴의 쿼리임에도 MySQL 쿼리는 100개의 쿼리 분석 결과를 보관해야 한다. 이럴 
-부분을 보완하고자 PreparedStatement에서는 쿼리에 변수를 사용이 가능하다.
+똑같은 패턴의 쿼리임에도 MySQL 쿼리는 100개의 쿼리 분석 결과를 보관해야 한다. 이런 부분을 보완하고자 PreparedStatement에서는 쿼리에 변수를 사용이 가능하다.
 
 ```
 SELECT * FROM employees WHERE emp_no = ?;
@@ -34,5 +33,6 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUxNzI3MTUsMTYzNzM0MDk5NF19
+eyJoaXN0b3J5IjpbLTE4ODg3NTk5NDMsODUxNzI3MTUsMTYzNz
+M0MDk5NF19
 -->
