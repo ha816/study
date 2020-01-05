@@ -2,6 +2,9 @@
 
 ## Cluster
 
+클러스터는 NDB(Network DataBase) 클러스터 스토리지 엔진을 사용하여, 클러스터에서 여러 개의 서버가 함께 돌아가도록 한다. [MySQL](http://wiki.kldp.org/wiki.php/MySQL) 클러스터가 지원하는 운영 체제는 Linux, Mac OS X,  
+  
+출처: [https://unabated.tistory.com/entry/MySQL-Cluster](https://unabated.tistory.com/entry/MySQL-Cluster) [랄라라]
 
 
 ## Replication
@@ -61,6 +64,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzODA4NTU4OCwxMzM4NTUzNjUyLC0xOD
-g4NzU5OTQzLDg1MTcyNzE1LDE2MzczNDA5OTRdfQ==
+eyJoaXN0b3J5IjpbLTE0Njc2NTMwNTcsMTUzODA4NTU4OCwxMz
+M4NTUzNjUyLC0xODg4NzU5OTQzLDg1MTcyNzE1LDE2MzczNDA5
+OTRdfQ==
 -->
