@@ -2,11 +2,10 @@
 
 ## Cluster
 
-클러스터는 NDB(Network DataBase) 클러스터 스토리지 엔진을 사용하여, 클러스터에서 여러 개의 서버가 함께 돌아가도록 한다. [MySQL](http://wiki.kldp.org/wiki.php/MySQL) 클러스터가 지원하는 운영 체제는 Linux, Mac OS X,  
+클러스터는 NDB(Network DataBase) 클러스터 스토리지 엔진을 사용한다. 이 엔진은 네트워크를 통해 데이터 분산을 지원하는 스토리지 엔진이다. 
+
+NDB 
   
-출처: [https://unabated.tistory.com/entry/MySQL-Cluster](https://unabated.tistory.com/entry/MySQL-Cluster) [랄라라]
-
-
 ## Replication
 데이터베이스의 데이터가 갈수록 대용량화 되어가는 것을 고려하여 확장성(Scalability)는 DBMS에서 아주 중요한 요소이다. MySQL은 확장성을 위해 다양한 기술을 제공하는데 그중 가장 일반적인 방법이 Replication이다. 
 
@@ -64,7 +63,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njc2NTMwNTcsMTUzODA4NTU4OCwxMz
-M4NTUzNjUyLC0xODg4NzU5OTQzLDg1MTcyNzE1LDE2MzczNDA5
-OTRdfQ==
+eyJoaXN0b3J5IjpbLTk5NTU3MDkxNCwxNTM4MDg1NTg4LDEzMz
+g1NTM2NTIsLTE4ODg3NTk5NDMsODUxNzI3MTUsMTYzNzM0MDk5
+NF19
 -->
