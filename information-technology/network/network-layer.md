@@ -8,17 +8,19 @@
 
 ### TCP(Transmission Control Protocol)
 
--   연결형 서비스로 가상 회선 방식을 제공한다.
-    
--   3-way handshaking과정을 통해 연결을 설정하고 4-way handshaking을 통해 해제한다.
-    
--   흐름 제어 및 혼잡 제어.
-    
--   높은 신뢰성을 보장한다.
-    
--   UDP보다 속도가 느리다.
-    
--   전이중(Full-Duplex), 점대점(Point to Point) 방식.
+TCP가 가상 회선 방식을 제공한다는 것은 발신지와 수신지를 연결하여 패킷을 전송하기 위한 논리적 경로를
+
+배정한다는 말입니다. 그리고 3-way handshaking과정은 목적지와 수신지를 확실히 하여 정확한 전송을 보장하기 위해서
+
+세션을 수립하는 과정을 의미합니다. TCP가 이러한 특징을 지니는 이유는 간단명료합니다.
+
+바로 TCP는 연결형 서비스로 신뢰성을 보장하기 때문입니다. 그래서 3-way handshaking의 과정도 사용하는 것이고,
+
+데이터의 흐름제어나 혼잡 제어와 같은 기능도 합니다. 하지만 이러한 기능때문에 UDP보다 속도가 느리게 됩니다.
+
+(이러한 기능은 CPU를 사용하기 때문에 속도에 영향을 주는 것입니다.)
+
+그렇기에  TCP는 연속성보다 신뢰성있는 전송이 중요할 때에 사용하는 프로토콜입니다!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2ODE0NDQ2M119
+eyJoaXN0b3J5IjpbMTE1MTYxNDk5NSwxNzY4MTQ0NDYzXX0=
 -->
