@@ -3,7 +3,9 @@
 
 ## Replication
 
-데이터베이스의 데이터가 갈수록 대용량화 되어가는 것을 고려하여 확장성(Scalability
+데이터베이스의 데이터가 갈수록 대용량화 되어가는 것을 고려하여 확장성(Scalability)는 DBMS에서 아주 중요한 요소이다. MySQL은 확장성을 위해 다양한 기술을 제공하는데 그중 가장 일반적인 방법이 Replication이다. 
+
+Replication은 2대 이상의 MySQL 서버가 동일한 데이터를 가지도록 실시간으로 동기화하는 기술이다.  일반적으로 마스터 서버는 바
 
 > [Cluster와 Replication의 차이](https://blog.seulgi.kim/2015/05/what-is-mysql-replication.html)
 
@@ -55,6 +57,6 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTc5NzUyNTgsMTMzODU1MzY1MiwtMT
-g4ODc1OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0XX0=
+eyJoaXN0b3J5IjpbMTMxMTg0MTMzMywxMzM4NTUzNjUyLC0xOD
+g4NzU5OTQzLDg1MTcyNzE1LDE2MzczNDA5OTRdfQ==
 -->
