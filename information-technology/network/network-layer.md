@@ -4,9 +4,11 @@
 
 
 ## Transport
+참고 문헌:  [[TCP/UDP]](https://mangkyu.tistory.com/15)
 
-참고 문헌: ### [[TCP/UDP] TCP와 UDP의 특징과 차이](https://mangkyu.tistory.com/15)
-전송계층은 송신자와 수신자를 연결하는 통신서비스를 제공하는 계층으로, 쉽게 말해 데이터의 전달을 담당합니다. 그리고 데이터를 보내기 위해 사용하는 프로토콜이 있는데, 그 프로콜들이 바로 오늘의 주인공 TCP와 UDP입니다.
+전송계층은 송신자와 수신자를 연결하는 통신서비스를 제공하는 계층으로, 쉽게 말해 데이터의 전달을 담당합니다. 그리고 데이터를 보내기 위해 사용하는 프로토콜이 TCP와 UDP이다. 
+
+![enter image description here](https://t1.daumcdn.net/cfile/tistory/990C0F3359FDD3F80C)
 
 ### TCP(Transmission Control Protocol)
 
@@ -23,5 +25,5 @@ TCP는 발신지와 수신지를 연결하여 패킷을 전송하기 위한 논�
 다른 경로로 독립적으로 처리하게 되고, 이러한 프로토콜을 UDP라고 합니다.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNDc2MjMyNCwxNzY4MTQ0NDYzXX0=
+eyJoaXN0b3J5IjpbMTI4ODQ5NjA0LDE3NjgxNDQ0NjNdfQ==
 -->
