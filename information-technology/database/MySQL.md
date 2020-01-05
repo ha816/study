@@ -5,14 +5,15 @@
 
 데이터베이스의 데이터가 갈수록 대용량화 되어가는 것을 고려하여 확장성(Scalability)는 DBMS에서 아주 중요한 요소이다. MySQL은 확장성을 위해 다양한 기술을 제공하는데 그중 가장 일반적인 방법이 Replication이다. 
 
-Replication은 2대 이상의 MySQL 서버가 동일한 데이터를 가지도록 실시간으로 동기화하는 기술이다.  일반적으로 마스터 서버는 반드시 1개이며, 슬래이브는 1개 이상으로 구성한다. 
+Replication은 2대 이상의 MySQL 서버가 동일한 데이터를 가지도록 동기화하는 기술이다. 하지만 Replication은 동기화가 비동기적으로 발생한다. 따라서 어떤 데이터베이스에는 데이터가 업데이트되어 있지만, 다른 데이터베이스에서는 업데이트되지 않을 수도 있다.  
+일반적으로 마스터 서버는 반드시 1개이며, 슬래이브는 1개 이상으로 구성한다. 
 
+  
+또한, 마스터와 슬레이브로 나누어지기 때문에 데이터를 변경하는 쿼리는 단 하나의 데이터베이스에만 요청할 수 있다. 다시 말해서 슬레이브의 데이터를 변경하면, 마스터에 그 변경은 반영되지 않고, 동기화하는 도중 에러를 발생시키기도 한다.  
 
 
 > [Cluster와 Replication의 차이](https://blog.seulgi.kim/2015/05/what-is-mysql-replication.html)
-
-
-
+ 
 MySQL replication은 데이터베이스를 그대로 복사하여 데이터베이스를 한 벌 더 만드는 기능이다. 언뜻 보면 MySQL cluster와 비슷하지만, 말 그대로 분산환경을 만들어서 [single point of failure](http://en.wikipedia.org/wiki/Single_point_of_failure)를 없애려는 cluster와는 달리 MySQL replication은 단순히 데이터를 복제한다.  
   
 따라서 모든 데이터가 동기화되는 cluster와는 달리, replication은 동기화가 비동기적으로 발생한다. 따라서 어떤 데이터베이스에는 데이터가 업데이트되어 있지만, 다른 데이터베이스에서는 업데이트되지 않을 수도 있다.  
@@ -59,6 +60,6 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NjE2OTkzMSwxMzM4NTUzNjUyLC0xOD
-g4NzU5OTQzLDg1MTcyNzE1LDE2MzczNDA5OTRdfQ==
+eyJoaXN0b3J5IjpbNDU0MzU0NzQ1LDEzMzg1NTM2NTIsLTE4OD
+g3NTk5NDMsODUxNzI3MTUsMTYzNzM0MDk5NF19
 -->
