@@ -4,7 +4,7 @@
 
 클러스터는 NDB(Network DataBase) 클러스터 스토리지 엔진을 사용한다. 이 엔진은 네트워크를 통해 데이터 분산을 지원하는 스토리지 엔진이다. 
 
-NDB 클러스터의 특징
+### NDB 클러스터의 특징
 
 - 무공유 클러스터링
 	- NDB 클러스터는 클러스터 그룹내의 모든 노드가 아무것도 공유하지 않는 무공유 아키텍처로 구현되어 있다. NDB 클러스터는 데이터를 저장하는 스토리지가 분산되어 관리되기 때문에 한 데이터 저장소가 작동을 멈추더라도 서비스에 영향이 없다. 
@@ -70,7 +70,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTQ1NzE3MDksMTUzODA4NTU4OCwxMz
-M4NTUzNjUyLC0xODg4NzU5OTQzLDg1MTcyNzE1LDE2MzczNDA5
-OTRdfQ==
+eyJoaXN0b3J5IjpbODUxNDY3MDA4LDE1MzgwODU1ODgsMTMzOD
+U1MzY1MiwtMTg4ODc1OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0
+XX0=
 -->
