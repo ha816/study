@@ -1,6 +1,13 @@
 # MySQL
 
+
+## Replication
+
+데이터베이스의 데이터가 갈수록 대용량화 되어가는 것을 고려하여 확장성(Scalability
+
 > [Cluster와 Replication의 차이](https://blog.seulgi.kim/2015/05/what-is-mysql-replication.html)
+
+
 
 MySQL replication은 데이터베이스를 그대로 복사하여 데이터베이스를 한 벌 더 만드는 기능이다. 언뜻 보면 MySQL cluster와 비슷하지만, 말 그대로 분산환경을 만들어서 [single point of failure](http://en.wikipedia.org/wiki/Single_point_of_failure)를 없애려는 cluster와는 달리 MySQL replication은 단순히 데이터를 복제한다.  
   
@@ -48,6 +55,6 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODU1MzY1MiwtMTg4ODc1OTk0Myw4NT
-E3MjcxNSwxNjM3MzQwOTk0XX0=
+eyJoaXN0b3J5IjpbLTExOTc5NzUyNTgsMTMzODU1MzY1MiwtMT
+g4ODc1OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0XX0=
 -->
