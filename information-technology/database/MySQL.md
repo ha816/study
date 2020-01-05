@@ -7,7 +7,7 @@
 NDB 클러스터의 특징
 
 - 무공유 클러스터링
-	- 
+	- NDB 클러스터는 클러스터 그룹내의 모든 노드가 아무것도 공유하지 않는 무공유 아키텍처로 구현되어 있다. NDB 클러스터는 데이터를 저장하는 스토리지가 분산되어 관리되기 때문에 한 데이터 저장소가 작동을 멈추더라도 서비스에 영향이 없다. 
 - 메모리 기반의 스토리지 엔진
 - 자동화된 Fail-over
 - 분산된 데이터 저장소간의 동기 방식 복제
@@ -70,7 +70,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MjI3MzI5OCwxNTM4MDg1NTg4LDEzMz
-g1NTM2NTIsLTE4ODg3NTk5NDMsODUxNzI3MTUsMTYzNzM0MDk5
-NF19
+eyJoaXN0b3J5IjpbLTE0NTQ1NzE3MDksMTUzODA4NTU4OCwxMz
+M4NTUzNjUyLC0xODg4NzU5OTQzLDg1MTcyNzE1LDE2MzczNDA5
+OTRdfQ==
 -->
