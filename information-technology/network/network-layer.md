@@ -13,6 +13,8 @@ TCP는 발신지와 수신지를 연결하여 패킷을 전송하기 위한 논�
 ### UDP(User Datagram Protocol)
 
 데이터를 데이터그램 단위로 처리하는 프로토콜
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTI4ODYwMTQsMTc2ODE0NDQ2M119
+eyJoaXN0b3J5IjpbNjM2ODMyNDc4LDE3NjgxNDQ0NjNdfQ==
 -->
