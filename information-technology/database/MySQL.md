@@ -4,7 +4,14 @@
 
 클러스터는 NDB(Network DataBase) 클러스터 스토리지 엔진을 사용한다. 이 엔진은 네트워크를 통해 데이터 분산을 지원하는 스토리지 엔진이다. 
 
-NDB 
+NDB 클러스터의 특징
+
+- 무공유 클러스터링
+	- 
+- 메모리 기반의 스토리지 엔진
+- 자동화된 Fail-over
+- 분산된 데이터 저장소간의 동기 방식 복제
+
   
 ## Replication
 데이터베이스의 데이터가 갈수록 대용량화 되어가는 것을 고려하여 확장성(Scalability)는 DBMS에서 아주 중요한 요소이다. MySQL은 확장성을 위해 다양한 기술을 제공하는데 그중 가장 일반적인 방법이 Replication이다. 
@@ -63,7 +70,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NTU3MDkxNCwxNTM4MDg1NTg4LDEzMz
+eyJoaXN0b3J5IjpbMTU4MjI3MzI5OCwxNTM4MDg1NTg4LDEzMz
 g1NTM2NTIsLTE4ODg3NTk5NDMsODUxNzI3MTUsMTYzNzM0MDk5
 NF19
 -->
