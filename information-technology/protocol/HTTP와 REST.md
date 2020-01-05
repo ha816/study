@@ -79,6 +79,12 @@ POST와 PUT의 차이점이 혼란스러울수 있다. POST는 자원을 새로 
 * 500 Internal Server Error: 일반적인 메세지로, 보통 전체 서버를 이용할수 없는 상황이 아니라 일부의 자원만 이용할 수 없을때 발생한다.
 * 503 Service Unavailable: 현재 서버를 이용할 수 없다. 일시적인 중단 상태이다. 
 
+
+## HTTP 1.1 VS HTTP 2.0
+
+HTTP1.1은 기본적으로 연결당 하나의 요청과 응답을 처리하기 때문에 동시전송 문제와 다수의 리소스를 처리하기에 속도와 성능 이슈를 가지고 있습니다.
+
+
 # REST(Representational State Transfer)
 
 > REST란? REST API란?
@@ -93,10 +99,12 @@ REST는 리소스에 기반을 두기 때문에 리소스 기반 아키텍처(Re
 REST 서비스의 중요한 기능 하나는 또 멱등성의 개념인데 REST에서 PUT, DELTE, GET요청은 여러번 호출해도 결과가 달라지지 않는다. 멱등성의 장점은 클라이언트가 요청이 성공적이었는지 여부에 상관없이 요청을 여러번 다시 보내도 된다는 것이다. 
 
 
+
+
   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzM2NjA0NzNdfQ==
+eyJoaXN0b3J5IjpbMjExMDkwNTU4OSwtMjA3MzY2MDQ3M119
 -->
