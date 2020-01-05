@@ -1,5 +1,13 @@
 # MySQL
 
+## Partitioning
+
+파티셔닝이란 데이터를 테이블로 분리해서 저장하지만 사용자 입장에서는 여전히 하나의 테이블 사용하는 솔루션이다. 
+
+### 사용 이유
+테이블의 데이터가 많아진다고 무조건 파티션을 적용하는 것이 효율적인 것은 아니다. 하나의 
+
+
 ## Cluster
 
 클러스터는 NDB(Network DataBase) 클러스터 스토리지 엔진을 사용한다. 이 엔진은 네트워크를 통해 데이터 분산을 지원하는 스토리지 엔진이다. 
@@ -70,7 +78,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUxNDY3MDA4LDE1MzgwODU1ODgsMTMzOD
-U1MzY1MiwtMTg4ODc1OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0
-XX0=
+eyJoaXN0b3J5IjpbLTQ4NzA0MDM3MSw4NTE0NjcwMDgsMTUzOD
+A4NTU4OCwxMzM4NTUzNjUyLC0xODg4NzU5OTQzLDg1MTcyNzE1
+LDE2MzczNDA5OTRdfQ==
 -->
