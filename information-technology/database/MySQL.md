@@ -26,6 +26,12 @@
 * 키 파티션
 	* 키 파티션은 해시 파티션과 거의 비슷하다. 차이점은 키 파티션의 경우 해시 값의 계산을 MySQL 서버가 MD5() 함수를 이용해서 해시 값을 계산하고, 그 값을 MOD하여 각 파티션에 분배한다.
 
+### 파티션 
+
+파티셔닝에는 일반적으로 **수평 파티셔닝(행으로 파티션을 나누는 방식)**과 **수직 파티셔닝(컬럼별로 파티셔닝을 나누는 방법, 특정 컬럼만을 고속 스캔할 때 유용)** 두 가지 방법이 있다. 보통 일반적으로 수평 파티셔닝(행으로 파티션을 나누는) 방식을 대부분 사용하고 해당 포스팅에서도 수평 파티셔닝에 대해서만 정리하도록 하겠습니다.  
+  
+출처: [https://brocess.tistory.com/205](https://brocess.tistory.com/205) [행복한디벨로퍼]
+
 ### Sharding(Vertical Partitioning)
 
 Sharding은 파티셔닝을 레코드 수평(horizontal) 단위로 하는것이 아니라 컬럼 (vertical) 단위로 하는 것이다. 
@@ -103,7 +109,8 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NjIzODA0LC0xNjM0ODUxMzAyLC0xMz
-gzNTkxODkwLDg1MTQ2NzAwOCwxNTM4MDg1NTg4LDEzMzg1NTM2
-NTIsLTE4ODg3NTk5NDMsODUxNzI3MTUsMTYzNzM0MDk5NF19
+eyJoaXN0b3J5IjpbMTA3OTQwMTM3OCwxMzQ2MjM4MDQsLTE2Mz
+Q4NTEzMDIsLTEzODM1OTE4OTAsODUxNDY3MDA4LDE1MzgwODU1
+ODgsMTMzODU1MzY1MiwtMTg4ODc1OTk0Myw4NTE3MjcxNSwxNj
+M3MzQwOTk0XX0=
 -->
