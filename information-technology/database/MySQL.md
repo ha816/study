@@ -29,6 +29,8 @@
 ### Sharding(Vertical Partitioning)
 
 
+
+
 	
 ## Cluster
 
@@ -100,7 +102,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTkzNzMxMjIsLTEzODM1OTE4OTAsOD
+eyJoaXN0b3J5IjpbLTE2MzQ4NTEzMDIsLTEzODM1OTE4OTAsOD
 UxNDY3MDA4LDE1MzgwODU1ODgsMTMzODU1MzY1MiwtMTg4ODc1
 OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0XX0=
 -->
