@@ -14,7 +14,7 @@ Shard는 도자기의 파편이라는 의미로 Sharding은 수평, 수직 파�
 
 ![enter image description here](https://assets.digitalocean.com/articles/understanding_sharding/DB_image_1_cropped.png)
 
-
+데이터를 파편화 하려면, 샤딩 키라 불리는 키를 정하고 키를 기준으로 데이터를 나누어야 한다. 
 To shard your data, you need to decide a key, called a sharding key, to partition your data on. The shard key is either an indexed field or indexed compound fields that exist in every document in the collection.
 
 There is no general rule to select a sharding key; what key you choose depends on your application. For instance, you may choose userID as the shard key in a social media app.  
@@ -110,8 +110,8 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQyMTE0MTYxLDM5OTgyMjU2MywxMzQ2Mj
-M4MDQsLTE2MzQ4NTEzMDIsLTEzODM1OTE4OTAsODUxNDY3MDA4
-LDE1MzgwODU1ODgsMTMzODU1MzY1MiwtMTg4ODc1OTk0Myw4NT
-E3MjcxNSwxNjM3MzQwOTk0XX0=
+eyJoaXN0b3J5IjpbLTIxMDA1NjU1MjUsMzk5ODIyNTYzLDEzND
+YyMzgwNCwtMTYzNDg1MTMwMiwtMTM4MzU5MTg5MCw4NTE0Njcw
+MDgsMTUzODA4NTU4OCwxMzM4NTUzNjUyLC0xODg4NzU5OTQzLD
+g1MTcyNzE1LDE2MzczNDA5OTRdfQ==
 -->
