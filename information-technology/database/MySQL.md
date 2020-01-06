@@ -25,9 +25,11 @@
 	* 테이블의 모든 레코드가 비슷한 사용 빈도를 보이지만 테이블이 너무 커서 파티션을 적용해야 할때
 * 키 파티션
 	* 키 파티션은 해시 파티션과 거의 비슷하다. 차이점은 키 파티션의 경우 해시 값의 계산을 MySQL 서버가 MD5() 함수를 이용해서 해시 값을 계산하고, 그 값을 MOD하여 각 파티션에 분배한다.
+
+### Sharding(Vertical Partitioning)
+
+
 	
-
-
 ## Cluster
 
 클러스터는 NDB(Network DataBase) 클러스터 스토리지 엔진을 사용한다. 이 엔진은 네트워크를 통해 데이터 분산을 지원하는 스토리지 엔진이다. 
@@ -98,7 +100,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODM1OTE4OTAsODUxNDY3MDA4LDE1Mz
-gwODU1ODgsMTMzODU1MzY1MiwtMTg4ODc1OTk0Myw4NTE3Mjcx
-NSwxNjM3MzQwOTk0XX0=
+eyJoaXN0b3J5IjpbLTE1MTkzNzMxMjIsLTEzODM1OTE4OTAsOD
+UxNDY3MDA4LDE1MzgwODU1ODgsMTMzODU1MzY1MiwtMTg4ODc1
+OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0XX0=
 -->
