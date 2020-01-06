@@ -14,7 +14,11 @@ Shard는 도자기의 파편이라는 의미로 Sharding은 수평, 수직 파�
 
 ![enter image description here](https://assets.digitalocean.com/articles/understanding_sharding/DB_image_1_cropped.png)
 
-  
+
+To shard your data, you need to decide a key, called a sharding key, to partition your data on. The shard key is either an indexed field or indexed compound fields that exist in every document in the collection.
+
+There is no general rule to select a sharding key; what key you choose depends on your application. For instance, you may choose userID as the shard key in a social media app.  
+
 
 ### MySQL Partition Method
 다른 DBMS와 마찬가지로 MySQL에서도 4가지 기본 파티셔닝 기법을 제공하고 있다. 
@@ -106,8 +110,8 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MTYwOTY1NywzOTk4MjI1NjMsMTM0Nj
-IzODA0LC0xNjM0ODUxMzAyLC0xMzgzNTkxODkwLDg1MTQ2NzAw
-OCwxNTM4MDg1NTg4LDEzMzg1NTM2NTIsLTE4ODg3NTk5NDMsOD
-UxNzI3MTUsMTYzNzM0MDk5NF19
+eyJoaXN0b3J5IjpbNjQyMTE0MTYxLDM5OTgyMjU2MywxMzQ2Mj
+M4MDQsLTE2MzQ4NTEzMDIsLTEzODM1OTE4OTAsODUxNDY3MDA4
+LDE1MzgwODU1ODgsMTMzODU1MzY1MiwtMTg4ODc1OTk0Myw4NT
+E3MjcxNSwxNjM3MzQwOTk0XX0=
 -->
