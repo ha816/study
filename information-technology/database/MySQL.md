@@ -28,7 +28,7 @@
 
 ### Sharding(Vertical Partitioning)
 
-Sharding은 파티셔닝을
+Sharding은 파티셔닝을 레코드 수평(horizontal) 단위로 하는것이 아니라 컬럼 (vertical) 단위로 하는 것이다. 
 
 
 
@@ -103,8 +103,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTg2ODg4NDEsLTE2MzQ4NTEzMDIsLT
-EzODM1OTE4OTAsODUxNDY3MDA4LDE1MzgwODU1ODgsMTMzODU1
-MzY1MiwtMTg4ODc1OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0XX
-0=
+eyJoaXN0b3J5IjpbMTM0NjIzODA0LC0xNjM0ODUxMzAyLC0xMz
+gzNTkxODkwLDg1MTQ2NzAwOCwxNTM4MDg1NTg4LDEzMzg1NTM2
+NTIsLTE4ODg3NTk5NDMsODUxNzI3MTUsMTYzNzM0MDk5NF19
 -->
