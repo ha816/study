@@ -6,9 +6,10 @@
 
 테이블의 데이터가 많아진다고 무조건 파티션을 적용하는 것이 효율적인 것은 아니다. 하나의 테이블이 너무 커서 인덱스의 크기가 물리적인 메모리 보다 훨씬 크거나, 데이터 특성상 주기적인 삭제 작업이 필요한 경우 등이 파티션이 필요한 대표적인 예다. 
 
-### Partitioning Types
+### Partitioning Types 
 
-파티셔닝에는 일반적으로 **수평 파티셔닝(행으로 파티션을 나누는 방식)**과 **수직 파티셔닝(컬럼별로 파티셔닝을 나누는 방법, 특정 컬럼만을 고속 스캔할 때 유용)** 두 가지 방법이 있다. 보통 일반적으로 수평 파티셔닝(행으로 파티션을 나누는) 방식을 대부분 사용하고 해당 포스팅에서도 수평 파티셔닝에 대해서만 정리하도록 하겠습니다.  
+참고 문헌: [\[1\]](https://www.educative.io/edpresso/what-is-database-sharding?https://www.educative.io/courses/grokking-the-object-oriented-design-interview?aid=5082902844932096&utm_source=google&utm_medium=cpc&utm_campaign=blog-dynamic&gclid=CjwKCAiA0svwBRBhEiwAHqKjFt0Wayq2LHSSpRhSAhIaRTm8rN1wTwFXRJrDx3MmnFd9bL7a_ToSJBoCtFoQAvD_BwE)
+파티셔닝에는 일반적으로 **수평 파티셔닝(행으로 파티션을 나누는 방식)**과 **수직 파티셔닝(컬럼별로 파티셔닝을 나누는 방법, 특정 컬럼만을 고속 스캔할 때 유용)** 두 가지 방법이 있다. 
   
 ### Sharding(Vertical Partitioning)
 
@@ -105,8 +106,8 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMTg0MzMyMCwxMzQ2MjM4MDQsLTE2Mz
-Q4NTEzMDIsLTEzODM1OTE4OTAsODUxNDY3MDA4LDE1MzgwODU1
-ODgsMTMzODU1MzY1MiwtMTg4ODc1OTk0Myw4NTE3MjcxNSwxNj
-M3MzQwOTk0XX0=
+eyJoaXN0b3J5IjpbMjc5OTUxMjI2LDEzNDYyMzgwNCwtMTYzND
+g1MTMwMiwtMTM4MzU5MTg5MCw4NTE0NjcwMDgsMTUzODA4NTU4
+OCwxMzM4NTUzNjUyLC0xODg4NzU5OTQzLDg1MTcyNzE1LDE2Mz
+czNDA5OTRdfQ==
 -->
