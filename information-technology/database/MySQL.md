@@ -12,6 +12,8 @@
 
 Shard는 도자기의 파편이라는 의미로 Sharding은 수평, 수직 파티셔닝을 모두 아우르는 말이다. 
 
+![enter image description here](https://assets.digitalocean.com/articles/understanding_sharding/DB_image_1_cropped.png)
+
   
 
 ### MySQL Partition Method
@@ -104,8 +106,8 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5ODIyNTYzLDEzNDYyMzgwNCwtMTYzND
-g1MTMwMiwtMTM4MzU5MTg5MCw4NTE0NjcwMDgsMTUzODA4NTU4
-OCwxMzM4NTUzNjUyLC0xODg4NzU5OTQzLDg1MTcyNzE1LDE2Mz
-czNDA5OTRdfQ==
+eyJoaXN0b3J5IjpbMTQ1MTYwOTY1NywzOTk4MjI1NjMsMTM0Nj
+IzODA0LC0xNjM0ODUxMzAyLC0xMzgzNTkxODkwLDg1MTQ2NzAw
+OCwxNTM4MDg1NTg4LDEzMzg1NTM2NTIsLTE4ODg3NTk5NDMsOD
+UxNzI3MTUsMTYzNzM0MDk5NF19
 -->
