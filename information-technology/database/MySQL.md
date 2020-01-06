@@ -8,13 +8,11 @@
 
 ### Partitioning Types 
 
-참고 문헌: [\[1\]](https://www.educative.io/edpresso/what-is-database-sharding?https://www.educative.io/courses/grokking-the-object-oriented-design-interview?aid=5082902844932096&utm_source=google&utm_medium=cpc&utm_campaign=blog-dynamic&gclid=CjwKCAiA0svwBRBhEiwAHqKjFt0Wayq2LHSSpRhSAhIaRTm8rN1wTwFXRJrDx3MmnFd9bL7a_ToSJBoCtFoQAvD_BwE)
 파티셔닝에는 일반적으로 **수평 파티셔닝(행으로 파티션을 나누는 방식)**과 **수직 파티셔닝(컬럼별로 파티셔닝을 나누는 방법, 특정 컬럼만을 고속 스캔할 때 유용)** 두 가지 방법이 있다. 
+
+Shard는 도자기의 파편이라는 의미로 Sharding은 수평, 수직 파티셔닝을 모두 아우르는 말이다. 
+
   
-### Sharding(Vertical Partitioning)
-
-Sharding은 파티셔닝을 레코드 수평(horizontal) 단위로 하는것이 아니라 컬럼 (vertical) 단위로 하는 것이다. 
-
 
 ### MySQL Partition Method
 다른 DBMS와 마찬가지로 MySQL에서도 4가지 기본 파티셔닝 기법을 제공하고 있다. 
@@ -106,7 +104,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc5OTUxMjI2LDEzNDYyMzgwNCwtMTYzND
+eyJoaXN0b3J5IjpbMzk5ODIyNTYzLDEzNDYyMzgwNCwtMTYzND
 g1MTMwMiwtMTM4MzU5MTg5MCw4NTE0NjcwMDgsMTUzODA4NTU4
 OCwxMzM4NTUzNjUyLC0xODg4NzU5OTQzLDg1MTcyNzE1LDE2Mz
 czNDA5OTRdfQ==
