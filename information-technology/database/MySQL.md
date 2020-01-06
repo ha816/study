@@ -6,7 +6,18 @@
 
 테이블의 데이터가 많아진다고 무조건 파티션을 적용하는 것이 효율적인 것은 아니다. 하나의 테이블이 너무 커서 인덱스의 크기가 물리적인 메모리 보다 훨씬 크거나, 데이터 특성상 주기적인 삭제 작업이 필요한 경우 등이 파티션이 필요한 대표적인 예다. 
 
-### MySQL 파티션의 종류
+### MySQL Partition Types
+
+파티셔닝에는 일반적으로 **수평 파티셔닝(행으로 파티션을 나누는 방식)**과 **수직 파티셔닝(컬럼별로 파티셔닝을 나누는 방법, 특정 컬럼만을 고속 스캔할 때 유용)** 두 가지 방법이 있다. 보통 일반적으로 수평 파티셔닝(행으로 파티션을 나누는) 방식을 대부분 사용하고 해당 포스팅에서도 수평 파티셔닝에 대해서만 정리하도록 하겠습니다.  
+  
+출처: [https://brocess.tistory.com/205](https://brocess.tistory.com/205) [행복한디벨로퍼]
+
+### Sharding(Vertical Partitioning)
+
+Sharding은 파티셔닝을 레코드 수평(horizontal) 단위로 하는것이 아니라 컬럼 (vertical) 단위로 하는 것이다. 
+
+
+### MySQL Partition Method
 다른 DBMS와 마찬가지로 MySQL에서도 4가지 기본 파티셔닝 기법을 제공하고 있다. 
 
 * 레인지 파티션
@@ -25,19 +36,6 @@
 	* 테이블의 모든 레코드가 비슷한 사용 빈도를 보이지만 테이블이 너무 커서 파티션을 적용해야 할때
 * 키 파티션
 	* 키 파티션은 해시 파티션과 거의 비슷하다. 차이점은 키 파티션의 경우 해시 값의 계산을 MySQL 서버가 MD5() 함수를 이용해서 해시 값을 계산하고, 그 값을 MOD하여 각 파티션에 분배한다.
-
-### 파티션 
-
-파티셔닝에는 일반적으로 **수평 파티셔닝(행으로 파티션을 나누는 방식)**과 **수직 파티셔닝(컬럼별로 파티셔닝을 나누는 방법, 특정 컬럼만을 고속 스캔할 때 유용)** 두 가지 방법이 있다. 보통 일반적으로 수평 파티셔닝(행으로 파티션을 나누는) 방식을 대부분 사용하고 해당 포스팅에서도 수평 파티셔닝에 대해서만 정리하도록 하겠습니다.  
-  
-출처: [https://brocess.tistory.com/205](https://brocess.tistory.com/205) [행복한디벨로퍼]
-
-### Sharding(Vertical Partitioning)
-
-Sharding은 파티셔닝을 레코드 수평(horizontal) 단위로 하는것이 아니라 컬럼 (vertical) 단위로 하는 것이다. 
-
-
-
 	
 ## Cluster
 
@@ -109,7 +107,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3OTQwMTM3OCwxMzQ2MjM4MDQsLTE2Mz
+eyJoaXN0b3J5IjpbMTM2MTkzMzI4OSwxMzQ2MjM4MDQsLTE2Mz
 Q4NTEzMDIsLTEzODM1OTE4OTAsODUxNDY3MDA4LDE1MzgwODU1
 ODgsMTMzODU1MzY1MiwtMTg4ODc1OTk0Myw4NTE3MjcxNSwxNj
 M3MzQwOTk0XX0=
