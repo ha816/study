@@ -28,6 +28,7 @@
 
 ### Sharding(Vertical Partitioning)
 
+Sharding은 파티셔닝을
 
 
 
@@ -102,7 +103,8 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzQ4NTEzMDIsLTEzODM1OTE4OTAsOD
-UxNDY3MDA4LDE1MzgwODU1ODgsMTMzODU1MzY1MiwtMTg4ODc1
-OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0XX0=
+eyJoaXN0b3J5IjpbLTEyOTg2ODg4NDEsLTE2MzQ4NTEzMDIsLT
+EzODM1OTE4OTAsODUxNDY3MDA4LDE1MzgwODU1ODgsMTMzODU1
+MzY1MiwtMTg4ODc1OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0XX
+0=
 -->
