@@ -14,7 +14,7 @@ Shard는 도자기의 파편이라는 의미로 Sharding은 수평, 수직 파�
 
 ![enter image description here](https://assets.digitalocean.com/articles/understanding_sharding/DB_image_1_cropped.png)
 
-데이터를 파편화 하려면, 샤딩 키라 불리는 키를 정하고 키를 기준으로 데이터를 나누어야 한다. 샤딩키는 테이블 인덱스 또는 복합 인덱스가 걸린 필드가 될 수 있다. 
+데이터를 파편화 하려면, 샤딩 키라 불리는 키를 정하고 키를 기준으로 파티션을 나누어야 한다. 샤딩키는 테이블 인덱스 또는 복합 인덱스가 걸린 필드가 될 수 있다. 
 
 ### MySQL Partition Method
 다른 DBMS와 마찬가지로 MySQL에서도 4가지 기본 파티셔닝 기법을 제공하고 있다. 
@@ -106,8 +106,8 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjI5NjU3MjYsMzk5ODIyNTYzLDEzND
-YyMzgwNCwtMTYzNDg1MTMwMiwtMTM4MzU5MTg5MCw4NTE0Njcw
-MDgsMTUzODA4NTU4OCwxMzM4NTUzNjUyLC0xODg4NzU5OTQzLD
-g1MTcyNzE1LDE2MzczNDA5OTRdfQ==
+eyJoaXN0b3J5IjpbLTM3NjU4OTUzNCwzOTk4MjI1NjMsMTM0Nj
+IzODA0LC0xNjM0ODUxMzAyLC0xMzgzNTkxODkwLDg1MTQ2NzAw
+OCwxNTM4MDg1NTg4LDEzMzg1NTM2NTIsLTE4ODg3NTk5NDMsOD
+UxNzI3MTUsMTYzNzM0MDk5NF19
 -->
