@@ -13,7 +13,7 @@
 >클래스는 생성할 객체의 일종의 명세서이다. 그리고 객체는 그러한 명세에 따라 생성되고 다른 객체와 상호작용하여 필요한 동작을 하는 주체다. 
 
 >JVM의 역할은? 그리고 GC(가비지 컬렉션)은  어떤 역할을 하는가?
->JVM은 Java Virtual Machine의 약자로, 
+>JVM은 Java Virtual Machine의 약자로, 자바 코드가 동작하는 가상 머신이다. JVM은 OS와 같은 환경에 상관 없이 자바 코드가 동작하도록 하며, GC를 수행하
 
 >자바의 메모리 구조는? 변수별로 저장되는 위치는?
 
@@ -217,5 +217,5 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY1ODExNTI1XX0=
+eyJoaXN0b3J5IjpbLTE4NjM5Mzk0MzhdfQ==
 -->
