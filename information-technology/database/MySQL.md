@@ -26,7 +26,9 @@ MySQL은 프로세스 기반이 아니라 스레드 기반으로 동작한다.
 : MySQL서버에 접속한 클라이언트의 수 많큼 존재한다. 주로 각 클라이언트에 사용자의 요청쿼리를 처리하는 역할을 한다. 클라이언트의 커넥션이 종료되면 다시 Thread pool로 돌아간다. 
 
 백그라운드 스레드(Background Thread)
-: 여러 작업이 백그라운드로 처리될 수 있는데, 버퍼의 데이터를 디스크로 쓰는 쓰기 쓰레드(Write Thread)와 로그 쓰레드(Log Thread)가 중요하다. 
+: 여러 중요한 작업이 백그라운드 스레드로 수행된다. 버퍼의 데이터를 디스크로 쓰는 쓰기 쓰레드(Write Thread)와 로그 쓰레드(Log Thread)가 대표적이다.
+
+사실 쓰기 작업은 지연(버퍼링, 누적)하여 처리될 수 있지만, 읽기 작업은 절대 지연되면 안된다. 일반적인 DBMS은 쓰기작업을 버퍼링하여 일괄 처리하는 기능
 
 
 
@@ -136,7 +138,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMzY0ODc3MywxODkyMTk4NTI5LDE1Nj
+eyJoaXN0b3J5IjpbMTA4NjE2Nzc3MiwxODkyMTk4NTI5LDE1Nj
 cwMTQzMTUsMzMzMjczMTY3LC0zNzY1ODk1MzQsMzk5ODIyNTYz
 LDEzNDYyMzgwNCwtMTYzNDg1MTMwMiwtMTM4MzU5MTg5MCw4NT
 E0NjcwMDgsMTUzODA4NTU4OCwxMzM4NTUzNjUyLC0xODg4NzU5
