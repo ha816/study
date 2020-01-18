@@ -121,7 +121,7 @@ Slave
 사용자 실수나 애플리케이션 오류로 마스터가 아닌 슬레이브로 접속해서 데이텨 변경을 수행하는 경우가 있다. 이런 실수를 막기 위해 슬레이브는 ReadOnly로 설정하는것이 일반적이다. 
 
 **슬레이브 서버용 장비는 마스터와 동일한 사양이 좋다.**
-마스터 서버에서 수많은 데이터 변
+마스터 서버에서 수많은 데이터 변경 쿼리 문장이 슬레이브 서버에서는 하나의 스레드로 처리되어야 한다. 그래서 변경이 잦은 서버 일수록 마스터 서버의 사양보다 슬레이브의 사양이 더 좋아야 슬레이브에서 지연되지 않고 하나의 스레드로 처리된다. 또한 슬레이브 서버는 마스터가 다운된 경우, 복구 대안으로도 사용될수 있기 때문에 사양을 동일하게 맞추는게 좋다.
 
 replication의 가장 큰 장점은 cluster에 비해서 값을 변경하는 쿼리가 매우 빠르게 실행된다. 그래서 주로 실시간 동기화가 필요 없는 경우 cluster대신 replication을 사용한다.
 
@@ -172,10 +172,10 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDUyMjg1LC0xNTk2OTIyNDI2LDkyMT
-YzNjE0NCw3MTQxNDg0NTMsMzM2MjY0MjM4LDE4OTIxOTg1Mjks
-MTU2NzAxNDMxNSwzMzMyNzMxNjcsLTM3NjU4OTUzNCwzOTk4Mj
-I1NjMsMTM0NjIzODA0LC0xNjM0ODUxMzAyLC0xMzgzNTkxODkw
-LDg1MTQ2NzAwOCwxNTM4MDg1NTg4LDEzMzg1NTM2NTIsLTE4OD
-g3NTk5NDMsODUxNzI3MTUsMTYzNzM0MDk5NF19
+eyJoaXN0b3J5IjpbLTgxNjgzNzQyMiwtMTU5NjkyMjQyNiw5Mj
+E2MzYxNDQsNzE0MTQ4NDUzLDMzNjI2NDIzOCwxODkyMTk4NTI5
+LDE1NjcwMTQzMTUsMzMzMjczMTY3LC0zNzY1ODk1MzQsMzk5OD
+IyNTYzLDEzNDYyMzgwNCwtMTYzNDg1MTMwMiwtMTM4MzU5MTg5
+MCw4NTE0NjcwMDgsMTUzODA4NTU4OCwxMzM4NTUzNjUyLC0xOD
+g4NzU5OTQzLDg1MTcyNzE1LDE2MzczNDA5OTRdfQ==
 -->
