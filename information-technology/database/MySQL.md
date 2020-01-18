@@ -5,10 +5,10 @@
 MySQL서버는 크게 MySQL엔진과 스토리지 엔진으로 나뉜다. 
 
 MySQL엔진
-: 커넥션핸들러와 SQL파서 및 전처리기 그리고 옵티마이저가 중심을 이룬다. 그리고 성능 향상을 위해 MyISAM의 키 캐시나 InnoDB의 버퍼풀과 같은 보조 저장소 기능이 포함되어 있다. 
+: 커넥션핸들러와 SQL파서 및 전처리기 그리고 옵티마이저가 중심을 이룬다. 그리고 성능 향상을 위해 MyISAM의 키 캐시나 InnoDB의 버퍼풀과 같은 보조 저장소 기능이 포함되어 있다. MySQL엔진은 DBMS의 두뇌와 같은 처리를 수행한다. 
 
 스토리지 엔진
-: 
+: 실제 데이터를 디스크 스토리지에 저장하거나 데이터를 읽어오는 역할은 스토리지 엔진이 담당한다.  MySQL엔진은 하나지만 스토리지 엔진은 여러개를 동시에 사용할 수 있다. 
 
 
 
@@ -118,9 +118,9 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTIzMjAxNSwxNTY3MDE0MzE1LDMzMz
-I3MzE2NywtMzc2NTg5NTM0LDM5OTgyMjU2MywxMzQ2MjM4MDQs
-LTE2MzQ4NTEzMDIsLTEzODM1OTE4OTAsODUxNDY3MDA4LDE1Mz
-gwODU1ODgsMTMzODU1MzY1MiwtMTg4ODc1OTk0Myw4NTE3Mjcx
-NSwxNjM3MzQwOTk0XX0=
+eyJoaXN0b3J5IjpbLTE1MjU4ODgxODMsMTU2NzAxNDMxNSwzMz
+MyNzMxNjcsLTM3NjU4OTUzNCwzOTk4MjI1NjMsMTM0NjIzODA0
+LC0xNjM0ODUxMzAyLC0xMzgzNTkxODkwLDg1MTQ2NzAwOCwxNT
+M4MDg1NTg4LDEzMzg1NTM2NTIsLTE4ODg3NTk5NDMsODUxNzI3
+MTUsMTYzNzM0MDk5NF19
 -->
