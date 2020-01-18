@@ -35,6 +35,9 @@ MySQL은 프로세스 기반이 아니라 스레드 기반으로 동작한다.
 글로벌 메모리 영역(Global Memory Area)
 : 모든 스레드가 공유하는 영역이다. 2개 이상의 글로벌 메모리 영역을 받을 수도 있지만, 마찬가지로 모든 스레드가 볼 수 있다.
 
+로컬 메모리 영역(Local Memory Area, Session Memory Area)
+: 클라이언트 쓰레드가 사용하는 대표적인 메모리 영역이다. 
+
 ## Partitioning
 
 파티셔닝이란 데이터를 테이블로 분리해서 저장하지만 사용자 입장에서는 여전히 하나의 테이블 사용하는 솔루션이다. 
@@ -140,9 +143,9 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3Njk5NzA1MiwxODkyMTk4NTI5LDE1Nj
-cwMTQzMTUsMzMzMjczMTY3LC0zNzY1ODk1MzQsMzk5ODIyNTYz
-LDEzNDYyMzgwNCwtMTYzNDg1MTMwMiwtMTM4MzU5MTg5MCw4NT
-E0NjcwMDgsMTUzODA4NTU4OCwxMzM4NTUzNjUyLC0xODg4NzU5
-OTQzLDg1MTcyNzE1LDE2MzczNDA5OTRdfQ==
+eyJoaXN0b3J5IjpbLTE1MTg2MjY1MTAsMTg5MjE5ODUyOSwxNT
+Y3MDE0MzE1LDMzMzI3MzE2NywtMzc2NTg5NTM0LDM5OTgyMjU2
+MywxMzQ2MjM4MDQsLTE2MzQ4NTEzMDIsLTEzODM1OTE4OTAsOD
+UxNDY3MDA4LDE1MzgwODU1ODgsMTMzODU1MzY1MiwtMTg4ODc1
+OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0XX0=
 -->
