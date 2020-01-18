@@ -45,7 +45,7 @@ MySQL은 프로세스 기반이 아니라 스레드 기반으로 동작한다.
 :  들어온 쿼리를 토큰(MySQL이 인식하는 최소 단위의 어휘)으로 분리해 트리 형태의 구조를 만드는 작업을 한다. 이 과정에서 문법 오류가 있으면 오류 메세지를 반환한다.
 
 전처리기
-: 파서 과정에서 만들어진 트리를 기반으로 쿠러각 토큰을 테이블 이름, 컬럼 이름 등과 매핑해 존재 여부와 접근 권한 소유 여부를 확인한다. 
+: 파서 과정에서 만들어진 트리를 기반으로 다른 유형의 문제점을 확인한다. 예를 들면, 접근 권한 여부와 해당 테이블, 테이 를 확인한다. 
 
 
 ## Partitioning
@@ -153,9 +153,9 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTE0NTYyOTMsMzM2MjY0MjM4LDE4OT
-IxOTg1MjksMTU2NzAxNDMxNSwzMzMyNzMxNjcsLTM3NjU4OTUz
-NCwzOTk4MjI1NjMsMTM0NjIzODA0LC0xNjM0ODUxMzAyLC0xMz
-gzNTkxODkwLDg1MTQ2NzAwOCwxNTM4MDg1NTg4LDEzMzg1NTM2
-NTIsLTE4ODg3NTk5NDMsODUxNzI3MTUsMTYzNzM0MDk5NF19
+eyJoaXN0b3J5IjpbLTk3NjY3OTYyOSwzMzYyNjQyMzgsMTg5Mj
+E5ODUyOSwxNTY3MDE0MzE1LDMzMzI3MzE2NywtMzc2NTg5NTM0
+LDM5OTgyMjU2MywxMzQ2MjM4MDQsLTE2MzQ4NTEzMDIsLTEzOD
+M1OTE4OTAsODUxNDY3MDA4LDE1MzgwODU1ODgsMTMzODU1MzY1
+MiwtMTg4ODc1OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0XX0=
 -->
