@@ -2,6 +2,7 @@
 
 ## Architecture
 
+### ENGINE
 MySQL서버는 크게 MySQL엔진과 스토리지 엔진으로 나뉜다. 
 
 MySQL엔진
@@ -11,13 +12,15 @@ MySQL엔진
 : 실제 데이터를 디스크 스토리지에 저장하거나 데이터를 읽어오는 역할은 스토리지 엔진이 담당한다.  MySQL엔진은 하나지만 스토리지 엔진은 여러개를 동시에 사용할 수 있다. 
 
 핸들러 API
-: MySQL엔진이 쿼리 수행을 위해 각 스토리지 엔진에게 쓰기 또는 일기를 요청하는데 이러한 요청을 핸들러 요청이라고 한다. 
+: MySQL엔진이 쿼리 수행을 위해 각 스토리지 엔진에게 쓰기 또는 일기를 요청하는데 이러한 요청을 핸들러 요청이라고 한다. 그리고 이때 사용되는 API를 핸들러 API라고 한다. 
 
 ```
 create table test_table (...) ENGINE =INNODB, MyISAM;
 ```
 
+### THREAD Structure
 
+MySQL
 
 
 
@@ -128,9 +131,9 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4OTA1MjMwMCwxODkyMTk4NTI5LDE1Nj
-cwMTQzMTUsMzMzMjczMTY3LC0zNzY1ODk1MzQsMzk5ODIyNTYz
-LDEzNDYyMzgwNCwtMTYzNDg1MTMwMiwtMTM4MzU5MTg5MCw4NT
-E0NjcwMDgsMTUzODA4NTU4OCwxMzM4NTUzNjUyLC0xODg4NzU5
-OTQzLDg1MTcyNzE1LDE2MzczNDA5OTRdfQ==
+eyJoaXN0b3J5IjpbNjA5MzE4MzYwLDE4OTIxOTg1MjksMTU2Nz
+AxNDMxNSwzMzMyNzMxNjcsLTM3NjU4OTUzNCwzOTk4MjI1NjMs
+MTM0NjIzODA0LC0xNjM0ODUxMzAyLC0xMzgzNTkxODkwLDg1MT
+Q2NzAwOCwxNTM4MDg1NTg4LDEzMzg1NTM2NTIsLTE4ODg3NTk5
+NDMsODUxNzI3MTUsMTYzNzM0MDk5NF19
 -->
