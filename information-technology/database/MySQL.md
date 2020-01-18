@@ -124,7 +124,11 @@ Slave
 마스터 서버에서 수많은 데이터 변경 쿼리 문장이 슬레이브 서버에서는 하나의 스레드로 처리되어야 한다. 그래서 변경이 잦은 서버 일수록 마스터 서버의 사양보다 슬레이브의 사양이 더 좋아야 슬레이브에서 지연되지 않고 하나의 스레드로 처리된다. 또한 슬레이브 서버는 마스터가 다운된 경우, 복구 대안으로도 사용될수 있기 때문에 사양을 동일하게 맞추는게 좋다.
 
 **복제가 불필요한 경우 바이너리 로그 수행 중지하자.**
-바이너리 로그를 작성하기 위해 MySQL이 많은 성능을 소모하고 있다. 바이너리의 안정적 기록을 위해 갭락(Gap Lock)을 유지하고, 트랜잭션이 커밋될때마다 바이너리 로그에 기록을 해야 한다. 바이너리를 기록하는 작업은 AutoCommit이 활성화된 MySQL 서버에 
+바이너리 로그를 작성하기 위해 MySQL이 많은 성능을 소모하고 있다. 바이너리의 안정적 기록을 위해 갭락(Gap Lock)을 유지하고, 트랜잭션이 커밋될때마다 바이너리 로그에 기록을 해야 한다. 바이너리를 기록하는 작업은 AutoCommit이 활성화된 MySQL 서버에 더 크게 나타난다. 
+
+**바이너리 로그와 트랜잭션 격리 수준**
+
+
 
 replication의 가장 큰 장점은 cluster에 비해서 값을 변경하는 쿼리가 매우 빠르게 실행된다. 그래서 주로 실시간 동기화가 필요 없는 경우 cluster대신 replication을 사용한다.
 
@@ -175,11 +179,11 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNDg4NTc3NCwtOTQ2OTIzMzI4LC0xNT
-k2OTIyNDI2LDkyMTYzNjE0NCw3MTQxNDg0NTMsMzM2MjY0MjM4
-LDE4OTIxOTg1MjksMTU2NzAxNDMxNSwzMzMyNzMxNjcsLTM3Nj
-U4OTUzNCwzOTk4MjI1NjMsMTM0NjIzODA0LC0xNjM0ODUxMzAy
-LC0xMzgzNTkxODkwLDg1MTQ2NzAwOCwxNTM4MDg1NTg4LDEzMz
-g1NTM2NTIsLTE4ODg3NTk5NDMsODUxNzI3MTUsMTYzNzM0MDk5
-NF19
+eyJoaXN0b3J5IjpbLTQ3NjY1NDM2LC05NDY5MjMzMjgsLTE1OT
+Y5MjI0MjYsOTIxNjM2MTQ0LDcxNDE0ODQ1MywzMzYyNjQyMzgs
+MTg5MjE5ODUyOSwxNTY3MDE0MzE1LDMzMzI3MzE2NywtMzc2NT
+g5NTM0LDM5OTgyMjU2MywxMzQ2MjM4MDQsLTE2MzQ4NTEzMDIs
+LTEzODM1OTE4OTAsODUxNDY3MDA4LDE1MzgwODU1ODgsMTMzOD
+U1MzY1MiwtMTg4ODc1OTk0Myw4NTE3MjcxNSwxNjM3MzQwOTk0
+XX0=
 -->
