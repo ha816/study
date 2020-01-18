@@ -1,9 +1,7 @@
-# MySQL
 
-## Architecture
+# Architecture
 
-### ENGINE
-MySQL서버는 크게 MySQL엔진과 스토리지 엔진으로 나뉜다. 
+## ENGINE
 
 MySQL엔진
 : 커넥션핸들러와 SQL파서 및 전처리기 그리고 옵티마이저가 중심을 이룬다. 그리고 성능 향상을 위해 MyISAM의 키 캐시나 InnoDB의 버퍼풀과 같은 보조 저장소 기능이 포함되어 있다. MySQL엔진은 DBMS의 두뇌와 같은 처리를 수행한다. 
@@ -18,7 +16,7 @@ MySQL엔진
 create table test_table (...) ENGINE =INNODB, MyISAM;
 ```
 
-### THREAD Structure
+## THREAD Structure
 MySQL은 프로세스 기반이 아니라 스레드 기반으로 동작한다. 
 스레드는 크게 포그라운드 스레드(클라이언트 스레드)와 백그라운드 스레드로 구분할 수 있다.
 
@@ -28,9 +26,7 @@ MySQL은 프로세스 기반이 아니라 스레드 기반으로 동작한다.
 백그라운드 스레드(Background Thread)
 : 여러 중요한 작업이 백그라운드 스레드로 수행된다. 버퍼의 데이터를 디스크로 쓰는 쓰기 쓰레드(Write Thread)와 로그 쓰레드(Log Thread)가 대표적이다.
 
-사실 쓰기 작업은 지연(버퍼링, 누적)하여 처리될 수 있지만, 읽기 작업은 절대 지연되면 안된다. 일반적인 DBMS은 쓰기작업을 버퍼링하여 일괄 처리하는 기능
-
-
+사실 쓰기 작업은 지연(버퍼링, 누적)하여 처리될 수 있지만, 읽기 작업은 절대 지연되면 안된다. 일반적인 DBMS은 쓰기작업을 버퍼링하여 일괄 처리하는 기능이 있다.
 
 
 ## Partitioning
@@ -138,7 +134,7 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NjE2Nzc3MiwxODkyMTk4NTI5LDE1Nj
+eyJoaXN0b3J5IjpbLTUyNzczOTQ1MiwxODkyMTk4NTI5LDE1Nj
 cwMTQzMTUsMzMzMjczMTY3LC0zNzY1ODk1MzQsMzk5ODIyNTYz
 LDEzNDYyMzgwNCwtMTYzNDg1MTMwMiwtMTM4MzU5MTg5MCw4NT
 E0NjcwMDgsMTUzODA4NTU4OCwxMzM4NTUzNjUyLC0xODg4NzU5
