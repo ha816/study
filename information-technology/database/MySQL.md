@@ -51,8 +51,7 @@ MySQL은 프로세스 기반이 아니라 스레드 기반으로 동작한다.
 : 쿼리를 어떻게 가장 저렴한 비용으로 빠르게 처리할지 결정하는 역할을 담당한다. 어떻게 하면 옵티마이저가 나은 선택을 하도록 유도하는가가 중요하다.
 
 실행기
-: 실행기는 옵티마이저에서 만든 계획대로 여러 핸들러에게 필요한 작업을 요청하고 받은 결과를 클라이언트에게 반환한다. 핸들러는 MySQL 가장 말단에서 실행기의 요청에 따라  
-
+: 실행기는 옵티마이저에서 만든 계획대로 여러 핸들러에게 필요한 작업을 요청하고 받은 결과를 클라이언트에게 반환한다. 핸들러는 실행기의 요청에 따라 핸들러가 대응하는 스토리지 엔진을 조작하여 필요한 작업을 수행한다. 
 
 ## Partitioning
 
@@ -159,9 +158,9 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkwMTU5OTQyLDMzNjI2NDIzOCwxODkyMT
-k4NTI5LDE1NjcwMTQzMTUsMzMzMjczMTY3LC0zNzY1ODk1MzQs
-Mzk5ODIyNTYzLDEzNDYyMzgwNCwtMTYzNDg1MTMwMiwtMTM4Mz
-U5MTg5MCw4NTE0NjcwMDgsMTUzODA4NTU4OCwxMzM4NTUzNjUy
-LC0xODg4NzU5OTQzLDg1MTcyNzE1LDE2MzczNDA5OTRdfQ==
+eyJoaXN0b3J5IjpbLTE2NTEzMjUxODIsMzM2MjY0MjM4LDE4OT
+IxOTg1MjksMTU2NzAxNDMxNSwzMzMyNzMxNjcsLTM3NjU4OTUz
+NCwzOTk4MjI1NjMsMTM0NjIzODA0LC0xNjM0ODUxMzAyLC0xMz
+gzNTkxODkwLDg1MTQ2NzAwOCwxNTM4MDg1NTg4LDEzMzg1NTM2
+NTIsLTE4ODg3NTk5NDMsODUxNzI3MTUsMTYzNzM0MDk5NF19
 -->
