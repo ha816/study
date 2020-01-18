@@ -108,10 +108,10 @@ Shard는 도자기의 파편이라는 의미로 Sharding은 수평 파티션을 
 Replication은 2대 이상의 MySQL 서버가 동일한 데이터를 가지도록 동기화하는 기술이다. 하지만 Replication은 동기화가 비동기적으로 발생한다. 따라서 어떤 데이터베이스에는 데이터가 업데이트되어 있지만, 다른 데이터베이스에서는 업데이트되지 않을 수도 있다.  
 
 Master
-: 마스터 서버는 주로 데이터변경 작업의 주체이다.  **마스터 서버는 DML, DDL에 해당하는 모든 쿼리 문장을 바이너리 로그에 기록한다.** 슬레이브 서버에서 변경 내역을 요청하면 바이너리 로그를 읽어 슬레이브서버에 넘기는데 Binlog dump라는 쓰레드가 이 작업을 수행한다.
+: 마스터 서버는 주로 데이터변경 작업의 주체이다.  **마스터 서버는 DML, DDL에 해당하는 모든 쿼리 문장을 바이너리 로그에 기록한다.** 슬레이브 서버에서 변경 내역을 요청하면 **바이너리 로그**를 읽어 슬레이브서버에 넘기는데 Binlog dump라는 쓰레드가 이 작업을 수행한다.
 
 Slave
-: 바이너리 로그를 받아 마스터 서버의 정보(IP, Port, 접속 계정)를 가지고 있는 경우 슬레이브가 된다. 마스터 서버가 
+: 바이너리 로그를 받아 마스터 서버의 정보(IP, Port, 접속 계정)를 가지고 있는 경우 슬레이브가 된다. 마스터 서버가 바이너리 로그를 가지고 있다면, 슬레이브 서버는 **릴레이 로그**를 가진다. 이 릴레이 로그는 마스터 서버에서 변겨
  
 
 
@@ -166,10 +166,10 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 결론적으로 PreparedStatement의 성능적 장점은 한번 실행된 쿼리는 매번 쿼리 분석 과정을 거치지 않고 재사용한다는 점이다. SQL 문장의 길이가 길다면 SQL 문장 자체가 네트워크로 전송되지 않고 바인딩할 변수 값만 서버로 전달하기 때문에 네트워크 측면에서 다소 효율적이다. 또 다른 장점으로는 바이너리 프로토콜을 사용한다는 점이다.  MySQL 5.0 전에는 내부적으로MySQL서버에 쿼리를 보내기 위해서 문자열 타입으로 데이터를 변환했다. 그러다 보니 데이터의 크기가 커지는 현상이 있었는데 5.0이상에서는 PreparedStatement를 사용할때 타입변환을 하지않는 바이너리 통신 프로토콜을 사용하기 때문에 좋다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTQ2OTkwNjUsNzE0MTQ4NDUzLDMzNj
-I2NDIzOCwxODkyMTk4NTI5LDE1NjcwMTQzMTUsMzMzMjczMTY3
-LC0zNzY1ODk1MzQsMzk5ODIyNTYzLDEzNDYyMzgwNCwtMTYzND
-g1MTMwMiwtMTM4MzU5MTg5MCw4NTE0NjcwMDgsMTUzODA4NTU4
-OCwxMzM4NTUzNjUyLC0xODg4NzU5OTQzLDg1MTcyNzE1LDE2Mz
-czNDA5OTRdfQ==
+eyJoaXN0b3J5IjpbLTY1MjM3MDc5NSw3MTQxNDg0NTMsMzM2Mj
+Y0MjM4LDE4OTIxOTg1MjksMTU2NzAxNDMxNSwzMzMyNzMxNjcs
+LTM3NjU4OTUzNCwzOTk4MjI1NjMsMTM0NjIzODA0LC0xNjM0OD
+UxMzAyLC0xMzgzNTkxODkwLDg1MTQ2NzAwOCwxNTM4MDg1NTg4
+LDEzMzg1NTM2NTIsLTE4ODg3NTk5NDMsODUxNzI3MTUsMTYzNz
+M0MDk5NF19
 -->
