@@ -20,6 +20,10 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
+Shared Memory영역과 Non-Shared Memory 영역으로 나누는게 아니라 Heap 영역과 Heap영ㅇ
+![enter image description here](https://i.stack.imgur.com/4ySVX.png)
+
+
 ###  스택 영역(Stack Area)([링크](https://yaboong.github.io/java/2018/05/26/java-memory-management/))
 
 - 각 Thread 는 자신만의 stack 을 가진다.
@@ -55,8 +59,6 @@ static Object o = new SomeObject()
 | Tenured(Old) | Survivor 공간에서 최대 나이 임계값에 다다른 객체가 이주하는 공간으로 낮은 빈도로 gc의 대상이 된다.|
 | Perm(PermGen) | 일반적으로 String이나 상수 같이 불변 값이 저장된다. 자바 8에서 PermGen은 물리 메모리에 위치할 MetaSpace라는 새로운 영역으로 변경되었다.|
 
-![enter image description here](https://i.stack.imgur.com/4ySVX.png)
-
 # GC(Garbage Collection)
 
 > GC(가비지 컬렉션)이란 무엇인가?
@@ -82,5 +84,5 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MDM0MDY2NiwxMjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbMTQ2NTQ1NzQ2MCwxMjAzNTA1OTM0XX0=
 -->
