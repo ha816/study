@@ -16,7 +16,7 @@
 >JVM은 Java Virtual Machine의 약자로, 자바 프로그램이 실행되는 곳이다. JVM은 운영체제 OS와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 또한 JVM은 메모리 관리를 위해 GC를 수행한다. 
 
 >자바의 메모리 구조는? 변수별로 저장되는 위치는?
-> 자바 메모리는 쓰레드 전체가 공유하는 메모리 영역(Shared Memory)과 개별 쓰레드가 가지는 고유 메모리 영역(Non-Shared Memory) 두 가지로 나뉜다. 공유 메모리 영역에는 Method 영역, Heap 영역이 있다. Method 영역은 클래스 영역이라고도 불리는데 클래스 정보(이름, 필드, 메서드), 클래스 변수, Constant pool 이 존재하는 영역이다. 
+> 자바 메모리는 쓰레드 전체가 공유하는 메모리 영역(Shared Memory)과 개별 쓰레드가 가지는 고유 메모리 영역(Non-Shared Memory) 두 가지로 나뉜다. 공유 메모리 영역에는 Method 영역, Heap 영역이 있다. Method 영역은 클래스 영역이라고도 불리는데 클래스 정보(이름, 필드, 메서드), 클래스 변수, Run-Time Constant pool 이 저장되는 영역이다. 
 
 Heap 영역은 객체들이 저장되는 공간이다. 
 
@@ -220,6 +220,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjM0MTQ1ODMsOTU1MDI1MzI2LDg5Nj
-MzMjgwOSwtMTYwNTE0MDc3MCwxNDM0NzQ5NTk4XX0=
+eyJoaXN0b3J5IjpbLTE5NDM1ODU3NTcsLTE4MjM0MTQ1ODMsOT
+U1MDI1MzI2LDg5NjMzMjgwOSwtMTYwNTE0MDc3MCwxNDM0NzQ5
+NTk4XX0=
 -->
