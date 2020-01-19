@@ -23,12 +23,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 메모리 영역은 Heap 영역과 Non Heap영역으로도 나누어 생각할 수 있다. 
 ![enter image description here](https://i.stack.imgur.com/4ySVX.png)
 
--   **Permanent Generation**  that contains
-    
-    -   the method area
-    -   interned strings
-    
--   **Code Cache**  used for compilation and storage of methods that have been compiled to native code by the JIT compiler
+PermGeneration은 자바 8이후부터는 MetaSpace로 명칭이 변경되었다. PermGeneration은 Method Area와 interned strings를 포함한다. 
 
 ###  스택 영역(Stack Area)([링크](https://yaboong.github.io/java/2018/05/26/java-memory-management/))
 
@@ -90,5 +85,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMj
+AzNTA1OTM0XX0=
 -->
