@@ -12,7 +12,7 @@
 >**자바의 클래스와 객체의 차이는?**
 >클래스는 생성할 객체의 일종의 명세서이다. 그리고 객체는 그러한 명세에 따라 생성되고 다른 객체와 상호작용하여 필요한 동작을 하는 주체다. 
 
->JVM의 역할은? 그리고 GC(가비지 컬렉션)은  어떤 역할을 하는가?
+>**JVM의 역할은? 그리고 GC(가비지 컬렉션)은  어떤 역할을 하는가?**
 >JVM은 Java Virtual Machine의 약자로, 자바 프로그램이 실행되는 곳이다. JVM은 운영체제 OS와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 또한 JVM은 메모리 관리를 위해 GC를 수행한다. 
 
 >자바의 메모리 구조는? 변수별로 저장되는 위치는?
@@ -218,5 +218,5 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNDc0OTU5OF19
+eyJoaXN0b3J5IjpbLTE2MDUxNDA3NzAsMTQzNDc0OTU5OF19
 -->
