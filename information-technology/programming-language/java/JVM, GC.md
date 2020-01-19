@@ -55,6 +55,7 @@ static Object o = new SomeObject()
 | Tenured(Old) | Survivor 공간에서 최대 나이 임계값에 다다른 객체가 이주하는 공간으로 낮은 빈도로 gc의 대상이 된다.|
 | Perm(PermGen) | 일반적으로 String이나 상수 같이 불변 값이 저장된다. 자바 8에서 PermGen은 물리 메모리에 위치할 MetaSpace라는 새로운 영역으로 변경되었다.|
 
+![enter image description here](https://i.stack.imgur.com/4ySVX.png)
 
 # GC(Garbage Collection)
 
@@ -81,5 +82,5 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbMTI1MDM0MDY2NiwxMjAzNTA1OTM0XX0=
 -->
