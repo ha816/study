@@ -22,8 +22,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 메모리 영역은 Heap 영역과 Non Heap영역으로도 나누어 생각할 수 있다. 
 ![enter image description here](https://i.stack.imgur.com/4ySVX.png)
 
-PermGeneration은 자바 8이후부터는 MetaSpace로 명칭이 변경되었다. Perm(PermGen)은 일반적으로 String이나 상수 같이 불변 값이 저장된다. MetaSpace라는 새로운 영역으로 변경되었다.|
-PermGeneration은 Method Area와 interned strings를 포함한다. 
+Perm(PermGen)은 자바 8이후부터는 MetaSpace로 명칭이 변경되었다. 일반적으로 String이나 상수 같이 불변 값이 저장된다. PermGeneration은 Method Area와 interned strings를 포함한다. 
 
 ### 메소드 영역(Method Area, Class Area)
 
@@ -86,6 +85,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY3MDAyNTE0LDEzMTk2Mzg5MDQsLTE3Mj
-IxMDgzODUsMTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbLTQxMzA3Nzc3MiwxMzE5NjM4OTA0LC0xNz
+IyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
 -->
