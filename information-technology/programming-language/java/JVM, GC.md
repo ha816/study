@@ -17,22 +17,12 @@ JVM의 핵심적 작업은 compile이다. 컴파일을 하면 .class확장자를
 ## JVM 메모리 영역
 
 JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역으로 나뉜다.  JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다. Non-Shared memory는 스레드가 별로 할당되는 고유 메모리 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
-
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
 메모리 영역은 Heap 영역과 Non Heap영역으로도 나누어 생각할 수 있다. 
 ![enter image description here](https://i.stack.imgur.com/4ySVX.png)
 
 PermGeneration은 자바 8이후부터는 MetaSpace로 명칭이 변경되었다. PermGeneration은 Method Area와 interned strings를 포함한다. 
-
-###  스택 영역(Stack Area)([링크](https://yaboong.github.io/java/2018/05/26/java-memory-management/))
-
-- 각 Thread 는 자신만의 stack 을 가진다.
--   지역변수들은 scope 에 따른 visibility 를 가진다.
--   Heap 영역에 생성된 Object 타입의 데이터의 참조값이 할당된다.
--   원시타입의 데이터가 값과 함께 할당된다.
-
-스택 영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 곳으로 스레드가 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
 
 ### 메소드 영역(Method Area, Class Area)
 
@@ -60,6 +50,16 @@ static Object o = new SomeObject()
 | Tenured(Old) | Survivor 공간에서 최대 나이 임계값에 다다른 객체가 이주하는 공간으로 낮은 빈도로 gc의 대상이 된다.|
 | Perm(PermGen) | 일반적으로 String이나 상수 같이 불변 값이 저장된다. 자바 8에서 PermGen은 물리 메모리에 위치할 MetaSpace라는 새로운 영역으로 변경되었다.|
 
+###  스택 영역(Stack Area)([링크](https://yaboong.github.io/java/2018/05/26/java-memory-management/))
+
+- 각 Thread 는 자신만의 stack 을 가진다.
+-   지역변수들은 scope 에 따른 visibility 를 가진다.
+-   Heap 영역에 생성된 Object 타입의 데이터의 참조값이 할당된다.
+-   원시타입의 데이터가 값과 함께 할당된다.
+
+스택 영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 곳으로 스레드가 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
+
+
 # GC(Garbage Collection)
 
 > GC(가비지 컬렉션)이란 무엇인가?
@@ -85,6 +85,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMj
-AzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbLTE2MDM3OTI4NjgsMTMxOTYzODkwNCwtMT
+cyMjEwODM4NSwxMjAzNTA1OTM0XX0=
 -->
