@@ -16,7 +16,7 @@
 >JVM은 Java Virtual Machine의 약자로, 자바 프로그램이 실행되는 곳이다. JVM은 운영체제 OS와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 또한 JVM은 메모리 관리를 위해 GC를 수행한다. 
 
 >자바의 메모리 구조는? 변수별로 저장되는 위치는?
-> 자바 메모리는 쓰레드 전체가 공유하는 메모리 영역(Shared Memory)과 개별 쓰레드가 가지는 고유 메모리 영역(Non-Shared Memory) 두 가지로 나뉜다. 공유 메모리 영역에는 Method Area, 
+> 자바 메모리는 쓰레드 전체가 공유하는 메모리 영역(Shared Memory)과 개별 쓰레드가 가지는 고유 메모리 영역(Non-Shared Memory) 두 가지로 나뉜다. 공유 메모리 영역에는 Method 영역, Heap 영역이 있다. 고
 
 >불변객체란? 왜 사용하는지?
 
@@ -218,6 +218,6 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg4MTMzNjcyLDg5NjMzMjgwOSwtMTYwNT
-E0MDc3MCwxNDM0NzQ5NTk4XX0=
+eyJoaXN0b3J5IjpbLTE1ODg5MDU4ODUsODk2MzMyODA5LC0xNj
+A1MTQwNzcwLDE0MzQ3NDk1OThdfQ==
 -->
