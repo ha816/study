@@ -1,22 +1,16 @@
 # JAVA 
 
 >**자바의 원시 타입은?** 
->자바에는 8가지 원시 타입이 있다. boolean(1byte), byte(1), char(2), short(2), int(4), long(8), float(4), double(8). 
 
 >**자바의 Wrapper 클래스는? 그리고 AutoBoxing이란?**
-> Wrapper 클래스는 원시 타입에 대응하는 클래스이다.  객체 생성시 내부 필드에 final 키워드가 붙어있다. 즉 불변 객체이다. 원시 타입을 대응하는 Wrapper로 만들어 사용해야 할때가 있는데 이를 자동으로 해주는 것이 AutoBoxing이다. 반대는 UnBoxing이다. 
 
 >**자바의 변수의 종류는?**
-> 변수가 가지는 값의 종류에 따라 참조 변수(reference variable), 원시 변수(primitive variable)가 있다. 그리고 클래스에 선언한 위치에 따라서 멤버 변수, 로컬 변수로 나뉜다. 멤버 변수는 다시 인스턴스 변수와 클래스변수로 나뉘는데 클래스 변수는 Static이 붙은 정적 변수를 말한다. 
 
 >**자바의 클래스와 객체의 차이는?**
->클래스는 생성할 객체의 일종의 명세서이다. 그리고 객체는 그러한 명세에 따라 생성되고 다른 객체와 상호작용하여 필요한 동작을 하는 주체다. 
 
 >**JVM의 역할은? 그리고 GC(가비지 컬렉션)은  어떤 역할을 하는가?**
->JVM은 Java Virtual Machine의 약자로, 자바 프로그램이 실행되는 곳이다. JVM은 운영체제 OS와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 또한 JVM은 메모리 관리를 위해 GC를 수행한다. 
 
 >자바의 메모리 구조는? 변수별로 저장되는 위치는?
->
 
 >불변객체란? 왜 사용하는지?
 
@@ -53,13 +47,7 @@
 # DesignPattern
 
 >Singleton, Decorator, Composite, Strategy, Builder, Template method, Fly-weight
->Singleton: Singleton 클래스는 시스템에서 유일무이한 객체를 말한다. 
->Decorator: Decorator 객체는 본연의 기능을 수행하는 Component 객체를 주입받아 클라이언트 입장에서는 같은 기능을 사용하지만 내부적으로 본연의 기능 뿐만 아니라 상황에 맞는 추가 기능을 사용할 수 있게 된다.
->Composite: 클라이언트 입장에서 단일-복합 객체를 모두 공통적인 객체로 사용할 수 있는 패턴. FileSystem의 구조가 대표적인 Composite 패턴의 예이다. Directory-File(복잡, 단일).
->Strategy: 객체간 의존성을 줄이기 위해 사용하는 패턴으로 사용할 객체를 주입 받아 사용한다. IoC이라고도 불린다.
->Builder: 한 객체에 필드가 너무 많을 경우 사용하는 패턴이다. 보통 클래스 내부에 builer 클래스를 정의해서 사용하며, 메서드 채인 방식으로 필요한 필드를 채워 최종적으로 build 메서드를 호출해 필요한 객체를 생성한다.
->Template method : 공통적으로 사용한 메서드를 미리 상위 클래스에 정의를 하고 하위 클래스에서 정의해둔 메서드를 사용하거나 재정의해서 사용한다.
->Fly-weight : 자주 사용되는 객체를 캐시 해두어, 필요시 캐시에 있던 객체를 재사용하는 패턴.
+
 
 # MultiThread
 
@@ -162,5 +150,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NDE3NDgzN119
+eyJoaXN0b3J5IjpbMTc0MDQ5NzUxMF19
 -->
