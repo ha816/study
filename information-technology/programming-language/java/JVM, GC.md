@@ -20,9 +20,15 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
-Shared Memory영역과 Non-Shared Memory 영역으로 나누는게 아니라 Heap 영역과 Heap영ㅇ
+메모리 영역은 Heap 영역과 Non Heap영역으로도 나누어 생각할 수 있다. 
 ![enter image description here](https://i.stack.imgur.com/4ySVX.png)
 
+-   **Permanent Generation**  that contains
+    
+    -   the method area
+    -   interned strings
+    
+-   **Code Cache**  used for compilation and storage of methods that have been compiled to native code by the JIT compiler
 
 ###  스택 영역(Stack Area)([링크](https://yaboong.github.io/java/2018/05/26/java-memory-management/))
 
@@ -84,5 +90,5 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NTQ1NzQ2MCwxMjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
 -->
