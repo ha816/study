@@ -13,8 +13,10 @@ JVM 메모리 영역은 관점에 따라 설명이 다르다.
 
 ### SharedMemory VS Non-SharedMermory
 
-JVM에서 실행되는 쓰레드의 관점에서 보자면 메모리 영역은 크게 공유 영역과 비공유 영역으로 나눌 수 있다. 모든 쓰레드는 공유 영역의 메소드 영역(Method Area)와 힙(Heap)영역을 공유한다. 비공유 영역은 각 스레드가 가지는 고유 메모리 영역을 말한다. 스레드는 
+JVM에서 실행되는 쓰레드의 관점에서 보자면 메모리 영역은 크게 공유 영역과 비공유 영역으로 나눌 수 있다. 모든 쓰레드는 공유 영역의 메소드 영역(Method Area)와 힙(Heap)영역을 공유한다. 비공유 영역은 각 스레드가 가지는 고유 메모리 영역을 말한다. 스레드는 스택 영역(Stack Area), PC Registers, Native Method Area 영역을 가진다.  
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
+
+### Heap VS Non-Heap
 
 메모리 영역은 Heap 영역과 Non Heap영역으로도 나누어 생각할 수 있다. 
 ![enter image description here](https://i.stack.imgur.com/4ySVX.png)
@@ -93,6 +95,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTU5Nzk3NDMsLTE3OTI0NzQ4MDgsMT
+eyJoaXN0b3J5IjpbLTE0ODQwMTE2NTAsLTE3OTI0NzQ4MDgsMT
 MxOTYzODkwNCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
 -->
