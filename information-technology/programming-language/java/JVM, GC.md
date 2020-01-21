@@ -28,12 +28,11 @@ PC Register
 : 각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 (메서드 영역안) JVM 명령어 주소를 기억하한다. 
 Program Counter Register is used to control each execution of each thread.
 
-At any point, each Java Virtual Machine thread is executing the code of a single method, namely the  **current method**  for that thread. The pc register contains the address of the Java Virtual Machine instruction (in the method area) currently being executed.
-
-Note: If the method currently being executed by the thread is native, the value of the Java Virtual Machine’s pc register is undefined.The Java Virtual Machine’s pc register is wide enough to hold a returnAddress or a native pointer on the specific platform.
-
 Native method stack
-: This is a stack for native code written in a language other than Java and called through JNI (Java Native Interface). Since it’s a “native” stack, the behavior of this stack is entirely dependent of the underlying OS.
+: 자바 네이티브 인터페이스를 통한 다른 언어로 쓰인 
+This is a stack for native code written in a language other than Java and called through JNI (Java Native Interface). 
+
+Since it’s a “native” stack, the behavior of this stack is entirely dependent of the underlying OS.
 
 
 Stack
@@ -191,7 +190,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxODA0Nzc1LDcyNzg5MTgwNywxNzMxOT
+eyJoaXN0b3J5IjpbMzExMTgxNDA4LDcyNzg5MTgwNywxNzMxOT
 M2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgz
 ODUsMTIwMzUwNTkzNF19
 -->
