@@ -40,7 +40,7 @@ This diagram gives on overview of the JVM:
 
 ### 메소드 영역(Shared; Method Area, Class Area)
 
-클래스 로더가 클래스 파일의 바이트 코드를 로드하는 공간이다. 각 클래스 마다 저장되는 정보는 아래와 같다. 
+클래스 로더가  클래스 파일 다수의 바이트 코드를 로드하는 공간이다. 각 클래스 마다 저장되는 정보는 아래와 같다. 
 
 -   class information (number of fields/methods, super class name, interfaces names, version, …)
 -   the bytecode of methods and constructors.
@@ -114,9 +114,9 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMzAzMDE3LDE2ODY1ODUsMTI2MjM4MT
-M0LC0xNTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4
-MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0OD
-A4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
-
+eyJoaXN0b3J5IjpbMjA0NDUwMjk3MywxNjg2NTg1LDEyNjIzOD
+EzNCwtMTU3NTIzMzQxNiw0NzY5NjM5MTAsNjMxMTAzODM2LC05
+ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNjE1MywtMTc5MjQ3ND
+gwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMDM1MDU5MzRd
+fQ==
 -->
