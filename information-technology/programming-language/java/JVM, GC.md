@@ -36,7 +36,7 @@ This diagram gives on overview of the JVM:
 >**Local Variable Array**
 현재 메서드 스코프안의 모든 지역 변수 저장하는 배열. 원시 타입, 참조, 반환 주소등을 가질 수 있다. JVM은 메서드 호출시 파라미터 전달을 위해 로컬 변수들을 사용한다. 
 >**Run-Time Constant Pool Reference**
-현재 실행 중인 메서드의 클래스의 상수 풀에 대한 참조를 말한다. 실제 메모리 참조에 대한 심블릭 메서드/변수 참조를 번역하는데 JVM이 사용한다. 
+현재 실행 중인 메서드의 클래스의 상수 풀에 대한 참조를 말한다. JVM이 실제 메모리에 대한 심블릭 참조를 번역하는데 . 
 
 --- 
 
@@ -118,7 +118,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NDg5MDEwNiwxMDA1MzA1MjU5LC0xMD
+eyJoaXN0b3J5IjpbMjA3MjY3MDg3NCwxMDA1MzA1MjU5LC0xMD
 E1MTMwMzY4LDIyNDc0NTE1NCwtMTQ3Mzk3MzEzNCwyNzQxNTQ1
 NzAsMTA4NjM2MDUwMCwxNjg2NTg1LDEyNjIzODEzNCwtMTU3NT
 IzMzQxNiw0NzY5NjM5MTAsNjMxMTAzODM2LC05ODAyNTU5Myw3
