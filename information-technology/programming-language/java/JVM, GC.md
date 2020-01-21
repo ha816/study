@@ -25,9 +25,13 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 ### Thread Memory Area
 
 PC Register 
-: Each thread has its own pc (program counter) register, created at the same time as the thread. At any point, each Java Virtual Machine thread is executing the code of a single method, namely the  **current method**  for that thread. The pc register contains the address of the Java Virtual Machine instruction (in the method area) currently being executed.
+: 각 스레드는 고유의 프로그램 카운터(program counter) Each thread has its own pc (program counter) register, created at the same time as the thread. At any point, each Java Virtual Machine thread is executing the code of a single method, namely the  **current method**  for that thread. The pc register contains the address of the Java Virtual Machine instruction (in the method area) currently being executed.
 
 Note: If the method currently being executed by the thread is native, the value of the Java Virtual Machine’s pc register is undefined.The Java Virtual Machine’s pc register is wide enough to hold a returnAddress or a native pointer on the specific platform.
+
+Native method stack
+: This is a stack for native code written in a language other than Java and called through JNI (Java Native Interface). Since it’s a “native” stack, the behavior of this stack is entirely dependent of the underlying OS.
+
 
 Stack
 :  The stack area stores multiples frames so before talking about stacks I’ll present the frames.
@@ -76,9 +80,7 @@ Note: the functioning of this stack makes it dynamically expandable and contract
 
 With Oracle HotSpot, you can specify this limit with the parameter -Xss.
 
-## Native method stack (Per Thread)
-
-This is a stack for native code written in a language other than Java and called through JNI (Java Native Interface). Since it’s a “native” stack, the behavior of this stack is entirely dependent of the underlying OS.
+## 
 
 
 ## Heap
@@ -186,7 +188,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTAyNzUwMjQsNzI3ODkxODA3LDE3Mz
-E5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEw
-ODM4NSwxMjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbLTI2MTY1ODYwNCw3Mjc4OTE4MDcsMTczMT
+kzNjE1MywtMTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4
+Mzg1LDEyMDM1MDU5MzRdfQ==
 -->
