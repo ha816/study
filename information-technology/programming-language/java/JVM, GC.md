@@ -31,15 +31,13 @@ Program Counter Register is used to control each execution of each thread.
 Native method stack
 : 다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 그리고 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출된다. 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적된다. 
 
-
 Stack
 :  The stack area stores multiples frames so before talking about stacks I’ll present the frames.
 
-### Frames
+Frames
+: A frame is a data structure that contains multiples data that represent the state of the thread in the  **current method**  (the method being called):
 
-A frame is a data structure that contains multiples data that represent the state of the thread in the  **current method**  (the method being called):
-
--   **Operand Stack**: I’ve already presented the operand stack in the chapter about stack based architecture. This stack is used by the bytecode instructions for handling parameters. This stack is also used to pass parameters in a (java) method call and to get the result of the called method at the top of the stack of the calling method.
+Operand Stack: This stack is used by the bytecode instructions for handling parameters. This stack is also used to pass parameters in a (java) method call and to get the result of the called method at the top of the stack of the calling method.
 
 -   **Local variable array**: This array contains all the local variables in a scope of the current method. This array can hold values of primitive types, reference, or returnAddress. The size of this array is computed at compilation time. The Java Virtual Machine uses local variables to pass parameters on method invocation, the array of the called method is created from the operand stack of the calling method.
 
@@ -187,7 +185,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOT
-M2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgz
-ODUsMTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbLTI2MzM3MTY0MCwtOTgwMjU1OTMsNzI3OD
+kxODA3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkw
+NCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
 -->
