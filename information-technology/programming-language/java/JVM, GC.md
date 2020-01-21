@@ -51,22 +51,13 @@ This diagram gives on overview of the JVM:
 -   the bytecode of methods and constructors.
 -   a runtime constant pool per class loaded.
 
-상세서에서는 Heap영역에 메서드 영역을 구현하도록 강제하지 않았다. 예를 들어, 자바 7에서는 PermGen이라는 영역에 메서드 여역을 저장하였다.  PermGen은 힙처럼 JVM에 의해서 관리되는 공간으로 사용 공간의 제한이 있었다. 그러나 자바 8에서 메서드 영역은 MetaSpace라 불리는, 사용 공간을 동적으로 할당하는 메모리 공간에 있다. 
-
-
-
 클래스 변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
-
 ```
 static int i = 1; //the value 1 is stored in the RunTime Constant Pool(PermGen section(Heap))
 static Object o = new SomeObject()
 ```
 
-
-
-
-
-
+상세서에서는 Heap영역에 메서드 영역을 구현하도록 강제하지 않았다. 예를 들어, 자바 7에서는 PermGen이라는 영역에 메서드 여역을 저장하였다.  PermGen은 힙처럼 JVM에 의해서 관리되는 공간으로 사용 공간의 제한이 있었다. 그러나 자바 8에서 메서드 영역은 MetaSpace라 불리는, 사용 공간을 동적으로 할당하는 메모리 공간에 있다. 
 
 ### Heap영역
 
@@ -130,8 +121,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjAyMjY0NzcsMTI2MjM4MTM0LC0xNT
-c1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NTkz
-LDcyNzg5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMT
-k2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbLTg3NDUwNjI1OSwxMjYyMzgxMzQsLTE1Nz
+UyMzM0MTYsNDc2OTYzOTEwLDYzMTEwMzgzNiwtOTgwMjU1OTMs
+NzI3ODkxODA3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOT
+YzODkwNCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
 -->
