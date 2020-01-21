@@ -52,7 +52,6 @@ This diagram gives on overview of the JVM:
 -   a runtime constant pool per class loaded. 
 	- A _run-time constant pool_ is a per-class or per-interface run-time representation of the `constant_pool` table in a `class` file
 
-
 클래스 변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
 ```
 static int i = 1; //the value 1 is stored in the RunTime Constant Pool(PermGen section(Heap))
@@ -117,7 +116,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIwOTQ2NjkxLDE2ODY1ODUsMTI2MjM4MT
+eyJoaXN0b3J5IjpbOTY4MjQzOTUzLDE2ODY1ODUsMTI2MjM4MT
 M0LC0xNTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4
 MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0OD
 A4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
