@@ -31,7 +31,9 @@ Native method stack
 : 다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 그리고 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출된다. 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적된다. 
 
 Stack
-:  The stack area stores multiples frames so before talking about stacks I’ll present the frames.
+:  각 스레드는 고유의 스택을 가지는데 스택은 다수의 frames를 저장한다. 새로운 프레임은 메서드가 발생할때 마다 생기고 스택frame is created and put in the stack each time a method is invoked. A frame is destroyed when its method invocation completes, whether that completion is normal or abrupt (it throws an uncaught exception).
+
+Only one frame, the frame for the executing method, is active at any point in a given thread. This frame is referred to as the  **_current frame_**, and its method is known as the  **_current method_**. The class in which the current method is defined is the  **_current class_**. Operations on local variables and the operand stack are typically with reference to the current frame.
 
 Frames
 : A frame is a data structure that contains multiples data that represent the state of the thread in the  **current method**  (the method being called):
@@ -46,9 +48,8 @@ Run-time constant pool reference
 
 ### Stack
 
-Each Java Virtual Machine thread has a private  _Java Virtual Machine stack_, created at the same time as the thread. A Java Virtual Machine stack stores frames. A new frame is created and put in the stack each time a method is invoked. A frame is destroyed when its method invocation completes, whether that completion is normal or abrupt (it throws an uncaught exception).
 
-Only one frame, the frame for the executing method, is active at any point in a given thread. This frame is referred to as the  **_current frame_**, and its method is known as the  **_current method_**. The class in which the current method is defined is the  **_current class_**. Operations on local variables and the operand stack are typically with reference to the current frame.
+
 
 
 
@@ -168,7 +169,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTI3MDcwOCwtOTgwMjU1OTMsNzI3OD
-kxODA3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkw
-NCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbLTE2NzgzMjIwMTAsLTk4MDI1NTkzLDcyNz
+g5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5
+MDQsLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
 -->
