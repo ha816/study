@@ -46,9 +46,8 @@ This diagram gives on overview of the JVM:
 -   static variables
 -   a runtime constant pool  
 
-클래스 파일은 고유의 constant pool을 가지고 JVM에 의해 실제 메모리에 올라가면 **runtime constant pool**이 된다. 즉 은 클래스 파일에 constant pool의 구현체가 runtime constant pool다.  
-
-한 클래스 파일의 모든 심블릭 참조(**symbolic reference**)는 상수풀에 저장된다. 심블릭 참조란 문자열인데 실제 대응하는 객체를 찾기위해 사용한다.
+클래스 파일은 고유의 constant pool을 가지고 JVM에 의해 실제 메모리에 올라가면 **runtime constant pool**이 된다. 즉 클래스 파일 constant pool의 구현체가 runtime constant pool이다.
+ 한 클래스 파일의 모든 심블릭 참조(**symbolic reference**)는 상수풀에 저장된다. 심블릭 참조란 문자열인데 실제 사용하려는 객체를 찾기위해 사용한다.
 
 ```
 if (obj.getClass() == String.class) { // do something }
@@ -129,7 +128,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4OTk4MjU0LC0xNDczOTczMTM0LDI3ND
+eyJoaXN0b3J5IjpbOTMyMzgwNDUwLC0xNDczOTczMTM0LDI3ND
 E1NDU3MCwxMDg2MzYwNTAwLDE2ODY1ODUsMTI2MjM4MTM0LC0x
 NTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NT
 kzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEz
