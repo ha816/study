@@ -22,15 +22,15 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 
 ![enter image description here](http://coding-geek.com/wp-content/uploads/2015/04/jvm_memory_overview.jpg)
 
-## The pc Register (Per Thread)
+### Thread Memory Area
 
-Each thread has its own pc (program counter) register, created at the same time as the thread. At any point, each Java Virtual Machine thread is executing the code of a single method, namely the  **current method**  for that thread. The pc register contains the address of the Java Virtual Machine instruction (in the method area) currently being executed.
+PC Register 
+: Each thread has its own pc (program counter) register, created at the same time as the thread. At any point, each Java Virtual Machine thread is executing the code of a single method, namely the  **current method**  for that thread. The pc register contains the address of the Java Virtual Machine instruction (in the method area) currently being executed.
 
 Note: If the method currently being executed by the thread is native, the value of the Java Virtual Machine’s pc register is undefined.The Java Virtual Machine’s pc register is wide enough to hold a returnAddress or a native pointer on the specific platform.
 
-## Java Virtual Machine Stacks (Per Thread)
-
-The stack area stores multiples frames so before talking about stacks I’ll present the frames.
+Stack
+:  The stack area stores multiples frames so before talking about stacks I’ll present the frames.
 
 ### Frames
 
@@ -186,7 +186,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUxNzUzOTExLDcyNzg5MTgwNywxNzMxOT
-M2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgz
-ODUsMTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbLTE1OTAyNzUwMjQsNzI3ODkxODA3LDE3Mz
+E5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEw
+ODM4NSwxMjAzNTA1OTM0XX0=
 -->
