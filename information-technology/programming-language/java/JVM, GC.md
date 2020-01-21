@@ -46,9 +46,9 @@ This diagram gives on overview of the JVM:
 -   the bytecode of methods and constructors.
 -   a runtime constant pool  
 
-여기서 주목할 점은 constant pool인데 한 클래스 파일의 모든 심블릭 참조는 이constant pool에 저장된다. 심블릭 참조는 문자열로 실제 대응하는 객체를 찾기위해 사용될 수 있다. 
+한 클래스 파일의 모든 심블릭 참조(symbolic reference)는 constant pool에 저장된다. 심블릭 참조는 문자열인데 실제 대응하는 객체를 찾기위해 사용한다.
 
-따라서 각 클래스 파일은 하나의 컨스탄트 풀을 가지고 JVM에 의해서 메모리 상에 올라간 내부 버전의 컨스탄트 풀을 runtime constant pool이라 한다. 런타임 컨스탄트 풀은 클래스 파일에 컨스탄트 풀에 대응하는 구현체다.  
+각 클래스 파일은 컨스탄트 풀을 가지고 JVM에 의해서 메모리 상에 올라간 내부 버전의 컨스탄트 풀을 runtime constant pool이라 한다. 런타임 컨스탄트 풀은 클래스 파일에 컨스탄트 풀에 대응하는 구현체다.  
 
 ----------
 
@@ -134,9 +134,9 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTM1MTQwODQsMjc0MTU0NTcwLDEwOD
-YzNjA1MDAsMTY4NjU4NSwxMjYyMzgxMzQsLTE1NzUyMzM0MTYs
-NDc2OTYzOTEwLDYzMTEwMzgzNiwtOTgwMjU1OTMsNzI3ODkxOD
-A3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwt
-MTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbNjA4MjIxNjI3LDI3NDE1NDU3MCwxMDg2Mz
+YwNTAwLDE2ODY1ODUsMTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3
+Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNy
+wxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3
+MjIxMDgzODUsMTIwMzUwNTkzNF19
 -->
