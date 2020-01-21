@@ -90,6 +90,9 @@ static Object o = new SomeObject()
 
 JVM이 동작하면, 각 클래스에 대한 정보를 Metaspace에 있는 Method Area에 로드한다. Method Area는 각 클래스에 대한 메타 정보와 런타임 컨스탄트 풀을 가진다. 
 
+쓰레드는 고유의 
+
+
 # GC(Garbage Collection)
 
 > GC(가비지 컬렉션)이란 무엇인가?
@@ -123,7 +126,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTA0NTA3NCwyMjQ3NDUxNTQsLTE0Nz
+eyJoaXN0b3J5IjpbMTg1NDUzNzU0MiwyMjQ3NDUxNTQsLTE0Nz
 M5NzMxMzQsMjc0MTU0NTcwLDEwODYzNjA1MDAsMTY4NjU4NSwx
 MjYyMzgxMzQsLTE1NzUyMzM0MTYsNDc2OTYzOTEwLDYzMTEwMz
 gzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTMsLTE3
