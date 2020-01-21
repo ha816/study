@@ -28,7 +28,7 @@ This diagram gives on overview of the JVM:
 
 ### Stack(Per Thread, Non-shared)
 
-각 스레드는 자신만의 고유한 스택을 가진다. 스택은 다수의 프레임(Frame)으로 구성된다. 또 프레임은 쓰레드의 상태를 나타내는 데이터 구조들로 이루어져 있다. (Operand Stack, Local variable array, Run-time constant pool reference) 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. static이 붙지 않은 참조 변수인 인스턴스 변수는 Stack에 저장된다.
+각 스레드는 자신만의 고유한 스택을 가진다. 스택은 다수의 프레임(Frame)으로 구성된다. 또 프레임은 쓰레드의 상태를 나타내는 데이터 구조들로 이루어져 있다. (Operand Stack, Local variable array, Run-time constant pool reference) 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. static이 붙지 않은 변수인 인스턴스 변수는 Stack에 저장된다.
 
 >**Operand Stack**
 파라미터를 다루기 위한 바이트코드 명령어가 사용하는 스택이다. 호출한 메서드에 파라미터를 전달하거나 스택 최상단의 호출된 메서드의 결과를 얻기위해 사용된다. 
@@ -41,7 +41,7 @@ This diagram gives on overview of the JVM:
 
 ### 메소드 영역(Shared; Method Area, Class Area)
 
-클래스 로더가  클래스파일  바이트 코드를 로드하는 공간이다. 각 클래스 별로 저장하는 정보는 아래와 같다. 클래스 별로 클래스 정보가 저장되기 때문에 Class Area라고도 불린다. 
+클래스 로더가  클래스파일  바이트 코드를 로드하는 공간이다. 각 클래스 별로 저장하는 정보는 아래와 같다. 클래스 별로 클래스 정보가 저장되기 때문에 Class Area라고도 불린다. static이 붙은 클래스 변수도 
 
 -   class information (number of fields/methods, super class name, interfaces names, version, …)
 -   a runtime constant pool
@@ -117,11 +117,11 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMTg3NzU3LC00MTI0MTE3MjcsMTAwNT
-MwNTI1OSwtMTAxNTEzMDM2OCwyMjQ3NDUxNTQsLTE0NzM5NzMx
-MzQsMjc0MTU0NTcwLDEwODYzNjA1MDAsMTY4NjU4NSwxMjYyMz
-gxMzQsLTE1NzUyMzM0MTYsNDc2OTYzOTEwLDYzMTEwMzgzNiwt
-OTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTMsLTE3OTI0Nz
-Q4MDgsMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0
+eyJoaXN0b3J5IjpbMTIyNzcxOTg4NCwxNDExODc3NTcsLTQxMj
+QxMTcyNywxMDA1MzA1MjU5LC0xMDE1MTMwMzY4LDIyNDc0NTE1
+NCwtMTQ3Mzk3MzEzNCwyNzQxNTQ1NzAsMTA4NjM2MDUwMCwxNj
+g2NTg1LDEyNjIzODEzNCwtMTU3NTIzMzQxNiw0NzY5NjM5MTAs
+NjMxMTAzODM2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNj
+E1MywtMTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1
 XX0=
 -->
