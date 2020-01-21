@@ -90,7 +90,7 @@ static Object o = new SomeObject()
 
 JVM이 동작하면, 각 클래스에 대한 정보를 Metaspace에 있는 Method Area에 로드한다. Method Area는 각 클래스에 대한 메타 정보와 런타임 컨스탄트 풀을 가진다. 
 
-쓰레드는 고유의 
+쓰레드는 고유의 메모리 영역인 ProgramCounter, Stack, Native Stack으로 구성된다. Stack은 Frame으로 구성된다. 
 
 
 # GC(Garbage Collection)
@@ -126,10 +126,10 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NDUzNzU0MiwyMjQ3NDUxNTQsLTE0Nz
-M5NzMxMzQsMjc0MTU0NTcwLDEwODYzNjA1MDAsMTY4NjU4NSwx
-MjYyMzgxMzQsLTE1NzUyMzM0MTYsNDc2OTYzOTEwLDYzMTEwMz
-gzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTMsLTE3
-OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMjAzNT
-A1OTM0XX0=
+eyJoaXN0b3J5IjpbLTIwODM5MjA1NDIsMjI0NzQ1MTU0LC0xND
+czOTczMTM0LDI3NDE1NDU3MCwxMDg2MzYwNTAwLDE2ODY1ODUs
+MTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMD
+M4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0x
+NzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMz
+UwNTkzNF19
 -->
