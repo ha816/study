@@ -80,8 +80,6 @@ static Object o = new SomeObject()
 
 ![enter image description here](https://i.stack.imgur.com/4ySVX.png)
 
-Perm(PermGen)은 자바 8이후부터는 MetaSpace로 명칭이 변경되었다. 일반적으로 String이나 상수 같이 불변 값이 저장된다. PermGeneration은 Method Area와 interned strings를 포함한다. 
-
 
 # GC(Garbage Collection)
 
@@ -116,8 +114,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NzYyMTExMiwxMjYyMzgxMzQsLTE1Nz
-UyMzM0MTYsNDc2OTYzOTEwLDYzMTEwMzgzNiwtOTgwMjU1OTMs
-NzI3ODkxODA3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOT
-YzODkwNCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbMTY4NjU4NSwxMjYyMzgxMzQsLTE1NzUyMz
+M0MTYsNDc2OTYzOTEwLDYzMTEwMzgzNiwtOTgwMjU1OTMsNzI3
+ODkxODA3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzOD
+kwNCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
 -->
