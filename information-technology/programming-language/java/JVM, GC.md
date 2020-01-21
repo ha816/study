@@ -22,13 +22,11 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 
 ![enter image description here](http://coding-geek.com/wp-content/uploads/2015/04/jvm_memory_overview.jpg)
 
-### Thread Memory Area(Non-Shared Memory)
+### PC Register(Per Thread, Non-Shared)
+각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 (메서드 영역안) JVM 명령어 주소를 기억한다.
 
-#### PC Register 
-: 각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 (메서드 영역안) JVM 명령어 주소를 기억한다.
-
-#### Native Method Stack
-: 다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 그리고 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출된다. 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적된다. 
+### Native Method Stack(Per Thread, Non-shared)
+다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 그리고 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출된다. 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적된다. 
 
 #### Stack
 
@@ -152,8 +150,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjg0NTk1NDUsNDc2OTYzOTEwLDYzMT
-EwMzgzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTMs
-LTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMj
-AzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbLTc1NzkxMjU4Nyw0NzY5NjM5MTAsNjMxMT
+AzODM2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNjE1Mywt
+MTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMD
+M1MDU5MzRdfQ==
 -->
