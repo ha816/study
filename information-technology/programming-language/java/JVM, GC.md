@@ -1,7 +1,5 @@
 # JVM 
 
-> JVM?
-
 JVM은 Java Virtual Machine의 약자로 Java 프로그램이 실행되는 장소다. 운영체제와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 그리고 JVM은 메모리 관리를 위해 GC를 수행한다. 
 
 > JVM의 역할
@@ -85,6 +83,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMzA3Nzc3MiwxMzE5NjM4OTA0LC0xNz
+eyJoaXN0b3J5IjpbMjE0MTM1MTc2MCwxMzE5NjM4OTA0LC0xNz
 IyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
 -->
