@@ -4,10 +4,21 @@ JVM은 Java 프로그램이 실행되는 장소다. 운영체제와 애플리케
 
 ## 주요 역할
 
+![enter image description here](http://coding-geek.com/wp-content/uploads/2015/04/jvm_overview.jpg)
+
 JVM의 핵심적 역할은 컴파일(compile)과 클래스 로딩(class loading)이다. 컴파일을 하면 .class확장자를 가진 **바이트 코드**가 생성된다. 이러한 바이트코드를 실행 중인 JVM의 메모리로 가져오는 걸 **class loading(클래스 로딩)**이라고 한다. 이것을 클래스 로더가 한다. 클래스 로더는 클래스 파일을 추상하여 JAR 같은 파일을 읽어 JVM의 메모리에 올릴 수 있다. 
+
+This diagram gives on overview of the JVM:
+
+-   The JVM  **interprets**  bytecode which is  **produced**  by the compilation of the source code of a class. Though the term JVM stands for “Java Virtual Machine”, it runs other languages like scala or groovy, as long as they can be compiled into java bytecode.
+-   In order to avoid disk I/O, the bytecode is loaded into the JVM by  **classloaders** in one of the the runtime data areas. This code stays in memory until the JVM is stopped or the classloader (that loaded it) is destroyed.
+-   The loaded code is then  **interpreted**  and executed by an  **execution engine**.
+-   The execution engine needs to store data like a pointer to the ligne of code being executed. It also needs to store the data handled in the developer’s code.
+-   The execution engine also takes care of dealing with the underlying OS.
 
 
 ## [MemoryModel](http://coding-geek.com/jvm-memory-model/)
+
 
 JVM 메모리 영역은 관점에 따라 설명이 다르다.
 
@@ -106,7 +117,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NDQ3MzM3OSwxNzMxOTM2MTUzLC0xNz
-kyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMzUw
-NTkzNF19
+eyJoaXN0b3J5IjpbNzI3ODkxODA3LDE3MzE5MzYxNTMsLTE3OT
+I0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMjAzNTA1
+OTM0XX0=
 -->
