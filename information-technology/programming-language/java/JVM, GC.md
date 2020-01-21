@@ -28,8 +28,9 @@ This diagram gives on overview of the JVM:
 
 ### Stack
 
-각 스레드는 자신만의 고유한 스택을 가진다. 스택은 다수의 Frame으로 구성된다. 이 지역변수, 메서드 정보가 저장되는 곳으로 메소드 호출시 필요로 하는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다.
+각 스레드는 자신만의 고유한 스택을 가진다. 스택은 다수의 프레임(Frame)으로 구성된다. 이 프레임은 지역변수, 메서드 정보가 저장되는 곳이다. 
 
+메소드 호출시 필요로 하는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다.
 
 >Frame
 >프레임은 일종의 데이터 구조로 쓰레드의 상태를 나타내는 데이터로 구성된다. 이 다양한 데이터에는 Operand Stack, Local variable array, Run-time constant pool reference가 있다.
@@ -140,7 +141,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI0MTIxMzEyLDQ3Njk2MzkxMCw2MzExMD
+eyJoaXN0b3J5IjpbNTA1OTUyOTE5LDQ3Njk2MzkxMCw2MzExMD
 M4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0x
 NzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMz
 UwNTkzNF19
