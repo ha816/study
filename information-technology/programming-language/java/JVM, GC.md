@@ -37,7 +37,7 @@ Frames
 : 프레임은 데이터 구조로 쓰레드의 상태를 나타내는 다양한 데이터를 포함한다. 이 다양한 데이터에는 Operand Stack, Local variable array, Run-time constant pool reference가 있다.
 
 Operand Stack
-: 이 스택은 This stack is used by the bytecode instructions for handling parameters. This stack is also used to pass parameters in a (java) method call and to get the result of the called method at the top of the stack of the calling method.
+: 이 스택은 파라미터를 다루기 위한 바이트코드 명령어에 의해서 사용된다. 또는 메서드 콜에 파라미터를 전달하거나 스택 최상단의 호출된 메서드의 결과를used to pass parameters in a (java) method call and to get the result of the called method at the top of the stack of the calling method.
 
 Local variable array
 : This array contains all the local variables in a scope of the current method. This array can hold values of primitive types, reference, or returnAddress. The size of this array is computed at compilation time. The Java Virtual Machine uses local variables to pass parameters on method invocation, the array of the called method is created from the operand stack of the calling method.
@@ -168,7 +168,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTg1NDEwLC05ODAyNTU5Myw3Mjc4OT
-E4MDcsMTczMTkzNjE1MywtMTc5MjQ3NDgwOCwxMzE5NjM4OTA0
-LC0xNzIyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
+eyJoaXN0b3J5IjpbMTEwNzA3MDE4MSwtOTgwMjU1OTMsNzI3OD
+kxODA3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkw
+NCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
 -->
