@@ -47,7 +47,31 @@ This diagram gives on overview of the JVM:
 -   a runtime constant pool per class loaded. 
 	- A _run-time constant pool_ is a per-class or per-interface run-time representation of the `constant_pool` table in a `class` file
 
-여기서 주목할 점은 constant pool인데 한 클래스 파일의 모든 심블릭 참조는 이constant pool에 저장된다. 따라서 각 클래스 파일은 하나의 컨스탄트 풀을 가지고 JVM에 의해서 메모리 상에 올라간 내부 버전의 컨스탄트 풀을 runtime constant pool이라 한다. 런타임 컨스탄트 풀은 클래스 파일에 컨스탄트 풀에 대응하는 구현체다.  클래스 변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
+여기서 주목할 점은 constant pool인데 한 클래스 파일의 모든 심블릭 참조는 이constant pool에 저장된다. 심블릭 참조는 문자열로 실제 대응하는 객체를 찾기위해 사용될 수 있다. 
+
+따라서 각 클래스 파일은 하나의 컨스탄트 풀을 가지고 JVM에 의해서 메모리 상에 올라간 내부 버전의 컨스탄트 풀을 runtime constant pool이라 한다. 런타임 컨스탄트 풀은 클래스 파일에 컨스탄트 풀에 대응하는 구현체다.  
+
+----------
+An example:
+
+```
+if (obj.getClass() == String.class) {
+    // do something
+}
+```
+Becomes the following bytecode:
+```
+aload_1
+invokevirtual   #21; //Method java/lang/Object.getClass:()Ljava/lang/Class;
+ldc     #25; //class java/lang/String
+if_acmpne       20
+```
+
+In this case, the  `ldc`  operation refers to a class that is stored symbolically. When the JVM executes this opcode, it will use the symbolic reference to identify the actual class within the current classloader, and return a reference to the class instance.
+
+
+
+클래스 변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
 ```
 static int i = 1; //the value 1 is stored in the RunTime Constant Pool(PermGen section(Heap))
 static Object o = new SomeObject()
@@ -114,9 +138,9 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc0MTU0NTcwLDEwODYzNjA1MDAsMTY4Nj
-U4NSwxMjYyMzgxMzQsLTE1NzUyMzM0MTYsNDc2OTYzOTEwLDYz
-MTEwMzgzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNT
-MsLTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEwODM4NSwx
-MjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbMzkwNTc4ODQ1LDI3NDE1NDU3MCwxMDg2Mz
+YwNTAwLDE2ODY1ODUsMTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3
+Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNy
+wxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3
+MjIxMDgzODUsMTIwMzUwNTkzNF19
 -->
