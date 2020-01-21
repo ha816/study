@@ -69,7 +69,7 @@ static Object o = new SomeObject()
 
 ### Heap(Shared)
 
-힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 가비지 컬렉터는 힙공간에 더 사용되지 않는 객체를 제거한다. 힙은 동적으로 확장되거나 축소 될수 있다.  객체를 저장하기 위해 동적으로(실행시간에) 할당하여 쓰는 메모리 영역, new 연산자를 통하여 개체를 동적으로 생성한다. 객체를 할당할때 이용할 수 있는 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 한다. 그래도 충분한 메모리가 없으면 OutOfMemoryError가 발생하며 JVM이 종료된다. 
+힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 힙은 동적으로 확장되거나 축소 될수 있다.  객체를 할당할때 이용할 수 있는 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 한다. 그래도 충분한 메모리가 없으면 OutOfMemoryError가 발생하며 JVM이 종료된다. 
   
 #### Heap's Generation
 
@@ -87,6 +87,7 @@ static Object o = new SomeObject()
 ## 마치며 
 
 ![enter image description here](https://i.stack.imgur.com/4ySVX.png)
+
 
 
 # GC(Garbage Collection)
@@ -122,9 +123,9 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5ODM1OTg5NywtMTQ3Mzk3MzEzNCwyNz
-QxNTQ1NzAsMTA4NjM2MDUwMCwxNjg2NTg1LDEyNjIzODEzNCwt
-MTU3NTIzMzQxNiw0NzY5NjM5MTAsNjMxMTAzODM2LC05ODAyNT
-U5Myw3Mjc4OTE4MDcsMTczMTkzNjE1MywtMTc5MjQ3NDgwOCwx
-MzE5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
+eyJoaXN0b3J5IjpbMjI0NzQ1MTU0LC0xNDczOTczMTM0LDI3ND
+E1NDU3MCwxMDg2MzYwNTAwLDE2ODY1ODUsMTI2MjM4MTM0LC0x
+NTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NT
+kzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEz
+MTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
 -->
