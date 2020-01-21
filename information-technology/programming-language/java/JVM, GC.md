@@ -2,19 +2,14 @@
 
 JVM은 Java 프로그램이 실행되는 장소다. 운영체제와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 추가적으로 JVM은 메모리 관리를 위해 GC를 수행한다. 
 
-## JVM의 역할
+## 주요 역할
 
-JVM의 핵심적 역할은 컴파일(compile)과 클래스 로딩(class loading)이다. 컴파일을 하면 .class확장자를 가진 **바이트 코드**가 생성된다. 이러한 바이트코드를 실행 중인 JVM의 메모리로 가져오는 걸 **class loading(클래스 로딩)**이라고 한다. 이것을 클래스 로더가 한다. 클래스 로더는 클래스 파일을 추상하여 JAR 같은 파일을 읽어 JVM의 메모리에 올릴 수 있다.  A JAR is a package file format typically used to aggregate many Java class files a
-
-> native 메서드란 무엇인가?
-
-자바에서는 C나 C++의 잘 정의된 헤더를 사용할 수 있는 native 메서드를 사용할 수 있다. 코드가 JVM에 로드됐을때 고유(native) 코드를 등록해야 한다 그래야 메서드 호출시 코드를 실행하는데 정확히 필요한 것을 알 수 있다. 
+JVM의 핵심적 역할은 컴파일(compile)과 클래스 로딩(class loading)이다. 컴파일을 하면 .class확장자를 가진 **바이트 코드**가 생성된다. 이러한 바이트코드를 실행 중인 JVM의 메모리로 가져오는 걸 **class loading(클래스 로딩)**이라고 한다. 이것을 클래스 로더가 한다. 클래스 로더는 클래스 파일을 추상하여 JAR 같은 파일을 읽어 JVM의 메모리에 올릴 수 있다. 
 
 
+## 메모리 영역
 
-## JVM 메모리 영역
-
-JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역으로 나뉜다.  JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다. Non-Shared memory는 스레드가 별로 할당되는 고유 메모리 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
+JVM 메모리 영역은 크게 Shared Memory 영역과 Non-Shared Memory 영역으로 나뉜다.  JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다. Non-Shared memory는 스레드가 별로 할당되는 고유 메모리 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
 메모리 영역은 Heap 영역과 Non Heap영역으로도 나누어 생각할 수 있다. 
@@ -82,7 +77,15 @@ static Object o = new SomeObject()
 The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. 
 
 > Written with [StackEdit](https://stackedit.io/).
+
+> native 메서드란 무엇인가?
+
+자바에서는 C나 C++의 잘 정의된 헤더를 사용할 수 있는 native 메서드를 사용할 수 있다. 코드가 JVM에 로드됐을때 고유(native) 코드를 등록해야 한다 그래야 메서드 호출시 코드를 실행하는데 정확히 필요한 것을 알 수 있다. 
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMDAxOTEzOSwxMzE5NjM4OTA0LC0xNz
-IyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
+eyJoaXN0b3J5IjpbLTEyODg5NDI4MjYsMTMxOTYzODkwNCwtMT
+cyMjEwODM4NSwxMjAzNTA1OTM0XX0=
 -->
