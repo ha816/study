@@ -4,7 +4,7 @@ JVM은 Java 프로그램이 실행되는 장소다. 운영체제와 애플리케
 
 ## JVM의 역할
 
-JVM의 핵심적 역할은 컴파일(compile)과 클래스 로딩(class loading)이다. 컴파일을 하면 .class확장자를 가진 **바이트 코드**가 생성된다. 이러한 바이트코드를 실행 중인 JVM의 메모리로 가져오는 걸 **class loading(클래스 로딩)**이라고 한다. 이것을 클래스 로더가 한다. 클래스 로더는 클래스 파일을 추상하여 JAR 같은 것들을 메모리로 불러 올 수 있다. 
+JVM의 핵심적 역할은 컴파일(compile)과 클래스 로딩(class loading)이다. 컴파일을 하면 .class확장자를 가진 **바이트 코드**가 생성된다. 이러한 바이트코드를 실행 중인 JVM의 메모리로 가져오는 걸 **class loading(클래스 로딩)**이라고 한다. 이것을 클래스 로더가 한다. 클래스 로더는 클래스 파일을 추상하여 JAR 같은 파일을 읽어 JVM의 메모리에 올릴 수 있다.  A JAR is a package file format typically used to aggregate many Java class files a
 
 > native 메서드란 무엇인가?
 
@@ -83,6 +83,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNDIwNTU4MSwxMzE5NjM4OTA0LC0xNz
+eyJoaXN0b3J5IjpbMTkyMDAxOTEzOSwxMzE5NjM4OTA0LC0xNz
 IyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
 -->
