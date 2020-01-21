@@ -43,7 +43,7 @@ Local variable array
 : 이 배열은 현재 메서드 스코프의 지역 변수 모두를 포함한다. 이 배열은 원시 타입, 참조 또는 반환 주소등을 가질 수 있다. JVM은 메서드 호출시 파라미터 전달을 위해 로컬 변수들을 사용한다. 호출된 메서드의 지역 변수 배열은 호출하는 메서드의 operand stack으로 부터 생성된다.  
 
 Run-time constant pool reference
-: 현재 실행 중인 메서드의 클래스에 참조하는 상수 풀에 대한 참reference to the constant pool of the  **current class**  of the  **current method**  being executed. It is used by the JVM to translate symbolic method/variable reference ( ex: myInstance.method()) to the real memory reference.
+: 현재 실행 중인 메서드의 클래스의 상수 풀에 대한 참조를 말한다. 이 참조는 실제 메모리 참조에 대한 심블릭 메서드/변수 참조를 번역하는데 JVM이 사용한다. 
 
 ### Stack
 
@@ -168,8 +168,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzg1NzUwNDcsNjMxMTAzODM2LC05OD
-AyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNjE1MywtMTc5MjQ3NDgw
-OCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMDM1MDU5MzRdfQ
-==
+eyJoaXN0b3J5IjpbNDc2OTYzOTEwLDYzMTEwMzgzNiwtOTgwMj
+U1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgs
+MTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
 -->
