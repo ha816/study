@@ -51,7 +51,7 @@ This diagram gives on overview of the JVM:
 -   the bytecode of methods and constructors.
 -   a runtime constant pool per class loaded.
 
-상세서에서는 Heap영역에 메서드 영역을 구현하도록 강제하지 않았다. 예를 들어, 자바 7에서는 PermGen
+상세서에서는 Heap영역에 메서드 영역을 구현하도록 강제하지 않았다. 예를 들어, 자바 7에서는 PermGen이라는 영역에 메서드 여역을 저장하였다.  PermGen은 힙처럼 JVM에 의해서 관리되는 공간으로 사용 공간의 제한이 있었다. 그러나 자바 8에서 
 The specifications don’t force to implement the method area in the heap. For example, until JAVA7, Oracle  **HotSpot**  used a zone called PermGen to store the Method Area. This  **PermGen**  was contiguous with the Java heap (and memory managed by the JVM like the heap) and was limited to a default space of 64Mo (modified by the argument -XX:MaxPermSize). Since Java 8, HotSpot now stores the Method Area in a separated native memory space called the  **Metaspace**, the max available space is the total available system memory.
 
 Note: There is a maximum size that the method area can’t exceed. If this limit is exceeded the JVM throws an  **OutOfMemoryError.**
@@ -132,8 +132,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM2MjUzNjQ1LDEyNjIzODEzNCwtMTU3NT
-IzMzQxNiw0NzY5NjM5MTAsNjMxMTAzODM2LC05ODAyNTU5Myw3
-Mjc4OTE4MDcsMTczMTkzNjE1MywtMTc5MjQ3NDgwOCwxMzE5Nj
-M4OTA0LC0xNzIyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
+eyJoaXN0b3J5IjpbLTE3MzY2MzkwODIsMTI2MjM4MTM0LC0xNT
+c1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NTkz
+LDcyNzg5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMT
+k2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
 -->
