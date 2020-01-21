@@ -51,12 +51,22 @@ Inside functionA() the Frame A is the top of the stack frame and is the current 
 
 ### Non-Shared Memory
 
+
 #### Heap
 
 힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 가비지 컬렉터는 힙공간에 더 사용되지 않는 객체를 제거한다. 힙은 동적으로 확장되거나 축소 될수 있다. 
 
 
-## Method area
+## 메소드 영역(Method Area, , Class Area)
+
+클래스 파일의 바이트 코드가 로드되는 곳이다. 사용하는 클래스와 static 변수(클래스 변수)가 로드 된다. 여기서 클래스 변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
+
+```
+static int i = 1; //the value 1 is stored in the RunTime Constant Pool(PermGen section(Heap))
+static Object o = new SomeObject()
+```
+
+
 
 The Method area is a memory shared among all Java Virtual Machine Threads. It is created on virtual machine start-up and is loaded by  **classloaders**  from bytecode. The data in the Method Area stay in memory as long as the classloader which loaded them is alive.
 
@@ -70,31 +80,12 @@ The specifications don’t force to implement the method area in the heap. For e
 
 Note: There is a maximum size that the method area can’t exceed. If this limit is exceeded the JVM throws an  **OutOfMemoryError.**
 
-
-
-### SharedMemory VS Non-SharedMermory
-
-JVM에서 실행되는 쓰레드의 관점에서 보자면 메모리 영역은 크게 공유 영역과 비공유 영역으로 나눌 수 있다. 모든 쓰레드는 공유 영역의 메소드 영역(Method Area)와 힙(Heap)영역을 공유한다. 비공유 영역은 각 스레드가 가지는 고유 메모리 영역을 말한다. 스레드는 스택 영역(Stack Area), PC Registers, Native Method Area 영역을 가진다.  
-![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
-
 ### Heap VS Non-Heap
 
 메모리 영역은 Heap 영역과 Non Heap영역으로도 나누어 생각할 수 있다. 
 ![enter image description here](https://i.stack.imgur.com/4ySVX.png)
 
 Perm(PermGen)은 자바 8이후부터는 MetaSpace로 명칭이 변경되었다. 일반적으로 String이나 상수 같이 불변 값이 저장된다. PermGeneration은 Method Area와 interned strings를 포함한다. 
-
-
-
-
-### 메소드 영역(Method Area, Class Area)
-
-클래스 파일의 바이트 코드가 로드되는 곳이다. 사용하는 클래스와 static 변수(클래스 변수)가 로드 된다. 여기서 클래스 변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
-
-```
-static int i = 1; //the value 1 is stored in the RunTime Constant Pool(PermGen section(Heap))
-static Object o = new SomeObject()
-```
 
 ### Heap영역
 
@@ -156,8 +147,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU5NTk3MzY1LDQ3Njk2MzkxMCw2MzExMD
-M4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0x
-NzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMz
-UwNTkzNF19
+eyJoaXN0b3J5IjpbLTE2MDAxMDI5MTIsNDc2OTYzOTEwLDYzMT
+EwMzgzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTMs
+LTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMj
+AzNTA1OTM0XX0=
 -->
