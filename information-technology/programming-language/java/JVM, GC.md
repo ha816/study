@@ -11,6 +11,13 @@ JVM의 핵심적 역할은 컴파일(compile)과 클래스 로딩(class loading)
 
 JVM 메모리 영역은 관점에 따라 설명이 다르다.
 
+### 쓰레드 메모리 영역
+
+Program Counter Register is used to control each execution of each thread.  
+JVM Stack contains frames which is demonstrated in the diagram below.  
+Native Method Stack is used to support native methods, i.e., non-Java language methods.
+
+
 ### SharedMemory VS Non-SharedMermory
 
 JVM에서 실행되는 쓰레드의 관점에서 보자면 메모리 영역은 크게 공유 영역과 비공유 영역으로 나눌 수 있다. 모든 쓰레드는 공유 영역의 메소드 영역(Method Area)와 힙(Heap)영역을 공유한다. 비공유 영역은 각 스레드가 가지는 고유 메모리 영역을 말한다. 스레드는 스택 영역(Stack Area), PC Registers, Native Method Area 영역을 가진다.  
@@ -95,6 +102,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQwMTE2NTAsLTE3OTI0NzQ4MDgsMT
-MxOTYzODkwNCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbLTU0MTQzMzYzMSwtMTc5MjQ3NDgwOCwxMz
+E5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
 -->
