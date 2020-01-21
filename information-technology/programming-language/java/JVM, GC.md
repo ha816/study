@@ -43,19 +43,14 @@ This diagram gives on overview of the JVM:
 힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 가비지 컬렉터는 힙공간에 더 사용되지 않는 객체를 제거한다. 힙은 동적으로 확장되거나 축소 될수 있다. 
 
 
-## 메소드 영역(Method Area, , Class Area)
+### 메소드 영역(Method Area, , Class Area)
 
-클래스 파일의 바이트 코드가 로드되는 곳이다. 사용하는 클래스와 static 변수(클래스 변수)가 로드 된다. 여기서 클래스 변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
+클래스 로더가 클래스 파일의 바이트 코드를 로드하는 공간이다. 메서드 영역은 클래스 로더가 살아 있는 동안 계속 남아 있는다. 사용하는 클래스와 static 변수(클래스 변수)가 로드 된다. 여기서 클래스 변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
 
 ```
 static int i = 1; //the value 1 is stored in the RunTime Constant Pool(PermGen section(Heap))
 static Object o = new SomeObject()
 ```
-
-
-
-The Method area is a memory shared among all Java Virtual Machine Threads. It is created on virtual machine start-up and is loaded by  **classloaders**  from bytecode. The data in the Method Area stay in memory as long as the classloader which loaded them is alive.
-
 The method area stores:
 
 -   class information (number of fields/methods, super class name, interfaces names, version, …)
@@ -130,8 +125,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODg5NjY1NzEsMTI2MjM4MTM0LC0xNT
-c1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NTkz
-LDcyNzg5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMT
-k2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbNDg4NzQ3MDc1LDEyNjIzODEzNCwtMTU3NT
+IzMzQxNiw0NzY5NjM5MTAsNjMxMTAzODM2LC05ODAyNTU5Myw3
+Mjc4OTE4MDcsMTczMTkzNjE1MywtMTc5MjQ3NDgwOCwxMzE5Nj
+M4OTA0LC0xNzIyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
 -->
