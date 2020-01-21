@@ -13,9 +13,13 @@ JVM 메모리 영역은 관점에 따라 설명이 다르다.
 
 ### 쓰레드 메모리 영역
 
+![enter image description here](https://www.programcreek.com/wp-content/uploads/2013/04/JVM-runtime-data-area.jpg)
+
 Program Counter Register is used to control each execution of each thread.  
 JVM Stack contains frames which is demonstrated in the diagram below.  
 Native Method Stack is used to support native methods, i.e., non-Java language methods.
+
+
 
 
 ### SharedMemory VS Non-SharedMermory
@@ -31,7 +35,7 @@ JVM에서 실행되는 쓰레드의 관점에서 보자면 메모리 영역은 �
 Perm(PermGen)은 자바 8이후부터는 MetaSpace로 명칭이 변경되었다. 일반적으로 String이나 상수 같이 불변 값이 저장된다. PermGeneration은 Method Area와 interned strings를 포함한다. 
 
 
-![enter image description here](https://www.programcreek.com/wp-content/uploads/2013/04/JVM-runtime-data-area.jpg)
+
 
 ### 메소드 영역(Method Area, Class Area)
 
@@ -102,6 +106,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MTQzMzYzMSwtMTc5MjQ3NDgwOCwxMz
+eyJoaXN0b3J5IjpbMTczMTkzNjE1MywtMTc5MjQ3NDgwOCwxMz
 E5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
 -->
