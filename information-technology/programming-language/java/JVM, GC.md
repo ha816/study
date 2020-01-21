@@ -31,23 +31,14 @@ This diagram gives on overview of the JVM:
 각 스레드는 자신만의 고유한 스택을 가진다. 스택은 다수의 프레임(Frame)으로 구성된다. 또 프레임은 쓰레드의 상태를 나타내는 데이터 구조들로 이루어져 있다. (Operand Stack, Local variable array, Run-time constant pool reference)
 메소드 호출시 필요로 하는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다.
 
-Operand Stack
-: 이 스택은 파라미터를 다루기 위한 바이트코드 명령어에 의해서 사용된다. 또는 메서드 콜에 파라미터를 전달하거나 스택 최상단의 호출된 메서드의 결과를 얻기위해 사용된다. 
+>Operand Stack
+이 스택은 파라미터를 다루기 위한 바이트코드 명령어에 의해서 사용된다. 또는 메서드 콜에 파라미터를 전달하거나 스택 최상단의 호출된 메서드의 결과를 얻기위해 사용된다. 
+>Local Variable Array
+이 배열은 현재 메서드 스코프의 지역 변수 모두를 포함한다. 이 배열은 원시 타입, 참조 또는 반환 주소등을 가질 수 있다. JVM은 메서드 호출시 파라미터 전달을 위해 로컬 변수들을 사용한다. 호출된 메서드의 지역 변수 배열은 호출하는 메서드의 operand stack으로 부터 생성된다.
+>Run-Time Constant Pool Reference
+현재 실행 중인 메서드의 클래스의 상수 풀에 대한 참조를 말한다. 이 참조는 실제 메모리 참조에 대한 심블릭 메서드/변수 참조를 번역하는데 JVM이 사용한다. 
 
-Local Variable Array
-: 이 배열은 현재 메서드 스코프의 지역 변수 모두를 포함한다. 이 배열은 원시 타입, 참조 또는 반환 주소등을 가질 수 있다. JVM은 메서드 호출시 파라미터 전달을 위해 로컬 변수들을 사용한다. 호출된 메서드의 지역 변수 배열은 호출하는 메서드의 operand stack으로 부터 생성된다.
-
-Run-Time Constant Pool Reference
-: 현재 실행 중인 메서드의 클래스의 상수 풀에 대한 참조를 말한다. 이 참조는 실제 메모리 참조에 대한 심블릭 메서드/변수 참조를 번역하는데 JVM이 사용한다. 
-
-![example of the state of a jvm method stack during after and before an inner call](http://coding-geek.com/wp-content/uploads/2015/04/state_of_jvm_method_stack.jpg)
-
-Inside functionA() the Frame A is the top of the stack frame and is the current frame. At the beginning of the inner call to add () a new frame (Frame B) is put inside the Stack. Frame B becomes the current frame. The local variable array of frame B is populated from popping the operand stack of frame A. When add() finished, Frame B is destroyed and Frame A becomes again the current frame. The result of add() is put on the operand stack of Frame A so that functionA() can use it by popping its operand stack.
-
-### Non-Shared Memory
-
-
-#### Heap
+### Heap
 
 힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 가비지 컬렉터는 힙공간에 더 사용되지 않는 객체를 제거한다. 힙은 동적으로 확장되거나 축소 될수 있다. 
 
@@ -139,8 +130,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3Nj
-k2MzkxMCw2MzExMDM4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywx
-NzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3Mj
-IxMDgzODUsMTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbLTE3MzAxODY4NzEsMTI2MjM4MTM0LC0xNT
+c1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NTkz
+LDcyNzg5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMT
+k2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
 -->
