@@ -33,10 +33,9 @@ Native method stack
 Stack
 :  각 스레드는 고유의 스택을 가지는데 스택은 다수의 frames를 저장한다. 프레임은 메서드가 호출될때 마다 생겨 스택에 올라 간다. 그리고 그 메서드가 끝나면 제거된다. 
 
-Only one frame, the frame for the executing method, is active at any point in a given thread. This frame is referred to as the  **_current frame_**, and its method is known as the  **_current method_**. The class in which the current method is defined is the  **_current class_**. Operations on local variables and the operand stack are typically with reference to the current frame.
-
-Frames
-: A frame is a data structure that contains multiples data that represent the state of the thread in the  **current method**  (the method being called):
+Frames 
+: 프레임은 데이터 구조로 쓰레드의 상태를 나타내는 다양한 데이터를 포함한다. 
+Operations on local variables and the operand stack are typically with reference to the current frame.
 
 Operand Stack: This stack is used by the bytecode instructions for handling parameters. This stack is also used to pass parameters in a (java) method call and to get the result of the called method at the top of the stack of the calling method.
 
@@ -169,7 +168,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTgxNzI2MywtOTgwMjU1OTMsNzI3OD
-kxODA3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkw
-NCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbLTEwMzIyODg2NjEsLTk4MDI1NTkzLDcyNz
+g5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5
+MDQsLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
 -->
