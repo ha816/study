@@ -88,7 +88,7 @@ static Object o = new SomeObject()
 
 ![enter image description here](https://i.stack.imgur.com/4ySVX.png)
 
-
+JVM이 동작하면, 각 클래스에 대한 정ㅂ
 
 # GC(Garbage Collection)
 
@@ -123,9 +123,10 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI0NzQ1MTU0LC0xNDczOTczMTM0LDI3ND
-E1NDU3MCwxMDg2MzYwNTAwLDE2ODY1ODUsMTI2MjM4MTM0LC0x
-NTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NT
-kzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEz
-MTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbNzkwOTg2MTc5LDIyNDc0NTE1NCwtMTQ3Mz
+k3MzEzNCwyNzQxNTQ1NzAsMTA4NjM2MDUwMCwxNjg2NTg1LDEy
+NjIzODEzNCwtMTU3NTIzMzQxNiw0NzY5NjM5MTAsNjMxMTAzOD
+M2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNjE1MywtMTc5
+MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMDM1MD
+U5MzRdfQ==
 -->
