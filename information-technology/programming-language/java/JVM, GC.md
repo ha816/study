@@ -18,9 +18,7 @@ This diagram gives on overview of the JVM:
 
 ## 메모리 영역
 
-The runtime data areas are the in-memory areas designed to store data. Those data are used by the developer’s program or by the JVM for its inner working.
-
-![enter image description here](http://coding-geek.com/wp-content/uploads/2015/04/jvm_memory_overview.jpg)
+![실행 중인 데이터 영역](http://coding-geek.com/wp-content/uploads/2015/04/jvm_memory_overview.jpg)
 
 ### PC Register(Per Thread, Non-Shared)
 각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 (메서드 영역안) JVM 명령어 주소를 기억한다.
@@ -32,15 +30,11 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 
 각 스레드는 고유의 스택을 가지는데 스택은 다수의 Frame으로 구성된다. 프레임은 메서드가 호출될때 마다 생겨 스택에 올라 간다. 그리고 그 메서드가 끝나면 제거된다. 
 
-#### Frame
-
-프레임은 일종의 데이터 구조로 쓰레드의 상태를 나타내는 데이터로 구성된다. 이 다양한 데이터에는 Operand Stack, Local variable array, Run-time constant pool reference가 있다.
-
-Operand Stack
+>Frame
+>프레임은 일종의 데이터 구조로 쓰레드의 상태를 나타내는 데이터로 구성된다. 이 다양한 데이터에는 Operand Stack, Local variable array, Run-time constant pool reference가 있다.
+>>Operand Stack
 : 이 스택은 파라미터를 다루기 위한 바이트코드 명령어에 의해서 사용된다. 또는 메서드 콜에 파라미터를 전달하거나 스택 최상단의 호출된 메서드의 결과를 얻기위해 사용된다. 
-
-Local variable array
-: 이 배열은 현재 메서드 스코프의 지역 변수 모두를 포함한다. 이 배열은 원시 타입, 참조 또는 반환 주소등을 가질 수 있다. JVM은 메서드 호출시 파라미터 전달을 위해 로컬 변수들을 사용한다. 호출된 메서드의 지역 변수 배열은 호출하는 메서드의 operand stack으로 부터 생성된다.  
+>>Local variable array이 배열은 현재 메서드 스코프의 지역 변수 모두를 포함한다. 이 배열은 원시 타입, 참조 또는 반환 주소등을 가질 수 있다. JVM은 메서드 호출시 파라미터 전달을 위해 로컬 변수들을 사용한다. 호출된 메서드의 지역 변수 배열은 호출하는 메서드의 operand stack으로 부터 생성된다.  
 
 Run-time constant pool reference
 : 현재 실행 중인 메서드의 클래스의 상수 풀에 대한 참조를 말한다. 이 참조는 실제 메모리 참조에 대한 심블릭 메서드/변수 참조를 번역하는데 JVM이 사용한다. 
@@ -150,8 +144,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzNTQzNTc5LDQ3Njk2MzkxMCw2MzExMD
-M4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0x
-NzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMz
-UwNTkzNF19
+eyJoaXN0b3J5IjpbMTM1NjM1NTIyNiw0NzY5NjM5MTAsNjMxMT
+AzODM2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNjE1Mywt
+MTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMD
+M1MDU5MzRdfQ==
 -->
