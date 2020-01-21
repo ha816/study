@@ -2,7 +2,7 @@
 
 JVM은 Java 프로그램이 실행되는 장소다. 운영체제와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 추가적으로 JVM은 메모리 관리를 위해 GC를 수행한다. 
 
-## 주요 역할
+## Overview
 
 ![enter image description here](http://coding-geek.com/wp-content/uploads/2015/04/jvm_overview.jpg)
 
@@ -117,7 +117,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3ODkxODA3LDE3MzE5MzYxNTMsLTE3OT
-I0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMjAzNTA1
-OTM0XX0=
+eyJoaXN0b3J5IjpbMzUwODAwNzg3LDcyNzg5MTgwNywxNzMxOT
+M2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgz
+ODUsMTIwMzUwNTkzNF19
 -->
