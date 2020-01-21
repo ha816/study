@@ -59,9 +59,7 @@ invokevirtual   #21; //Method java/lang/Object.getClass:()Ljava/lang/Class;
 ldc     #25; //class java/lang/String
 if_acmpne       20
 ```
-위의 경우 `idc` 명령어는 심블릭하게 저장되어 있는 한 클래스를 참조한다(#25 == String클래스). JVM이 위에 바이트 코드를 실행할때, 사용할 클래스를 식별하는데 심블릭 참조를 사용하여 실제 객체의 참조를 반환한다. 
-
-객체의 참조를 반환한다는 점에 주의하자. 실제 모든 객체는 Heap에 저장된다. 단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
+`idc` 명령은 심블릭하게 저장되어 있는 클래스를 참조한다(#25 == String클래스). JVM이 바이트 코드를 실행할때, 사용할 클래스를 식별하는데 심블릭 참조를 사용하여 실제 객체의 주소값을 반환한다. 여기서 객체의 주소값을 반환한다는 점에 주의하자. 실제 모든 객체는 Heap에 저장된다. 변수에는 단지 Heap에 있는 객체의 주소값만을 가진다. 
 ```
 static int i = 1; //the value 1 is stored in the RunTime Constant Pool(PermGen section(Heap))
 static Object o = new SomeObject()
@@ -128,7 +126,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMyMzgwNDUwLC0xNDczOTczMTM0LDI3ND
+eyJoaXN0b3J5IjpbNDY0ODc3ODkxLC0xNDczOTczMTM0LDI3ND
 E1NDU3MCwxMDg2MzYwNTAwLDE2ODY1ODUsMTI2MjM4MTM0LC0x
 NTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NT
 kzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEz
