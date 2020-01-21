@@ -52,7 +52,6 @@ This diagram gives on overview of the JVM:
 따라서 각 클래스 파일은 하나의 컨스탄트 풀을 가지고 JVM에 의해서 메모리 상에 올라간 내부 버전의 컨스탄트 풀을 runtime constant pool이라 한다. 런타임 컨스탄트 풀은 클래스 파일에 컨스탄트 풀에 대응하는 구현체다.  
 
 ----------
-An example:
 
 ```
 if (obj.getClass() == String.class) {
@@ -136,7 +135,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA4NTU4MjQwLDI3NDE1NDU3MCwxMDg2Mz
+eyJoaXN0b3J5IjpbNDI3MTIxNDc1LDI3NDE1NDU3MCwxMDg2Mz
 YwNTAwLDE2ODY1ODUsMTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3
 Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNy
 wxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3
