@@ -47,7 +47,7 @@ This diagram gives on overview of the JVM:
 -   a runtime constant pool per class loaded. 
 	- A _run-time constant pool_ is a per-class or per-interface run-time representation of the `constant_pool` table in a `class` file
 
-여기서 주목할 점은 constant pool인데 한 클래스 파일의 모든 심블릭 참조는 이constant pool에 저장된다. 따라서 각 클래스 파일은 하나의 컨스탄트 풀을 가지고 내부 버전의 컨스탄트 풀을 runtime constant pool이라 한다. 런타임 컨스탄트 풀은 클래스 파일에 컨스탄트 풀에 대응한다. 그러므로 한 타입이 로드 된 후, 그 타입으로 부터 모든 심볼릭 참조는 그 타입의 런타임 컨스턴트 풀에 거주하낟. 
+여기서 주목할 점은 constant pool인데 한 클래스 파일의 모든 심블릭 참조는 이constant pool에 저장된다. 따라서 각 클래스 파일은 하나의 컨스탄트 풀을 가지고 JVM에 의해서 메모리 상에 올라간 내부 버전의 컨스탄트 풀을 runtime constant pool이라 한다. 런타임 컨스탄트 풀은 클래스 파일에 컨스탄트 풀에 대응하는 구현체다. 그러므로 한 타입이 로드 된 후, 그 타입으로 부터 모든 심볼릭 참조는 그 타입의 런타임 컨스턴트 풀에 거주하낟. 
 
 A class file keeps all its symbolic references in one place, the constant pool. Each class file has a constant pool, and each class or interface loaded by the Java virtual machine has an internal version of its constant pool called the **runtime constant pool** . The runtime constant pool is an implementation-specific data structure that maps to the constant pool in the class file. Thus, after a type is initially loaded, all the symbolic references from the type reside in the type's runtime constant pool.
 
@@ -119,9 +119,9 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MjY5MDUxOCwxMDg2MzYwNTAwLDE2OD
-Y1ODUsMTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3Njk2MzkxMCw2
-MzExMDM4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MT
-UzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUs
-MTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbLTIwMTk2OTI1ODgsMTA4NjM2MDUwMCwxNj
+g2NTg1LDEyNjIzODEzNCwtMTU3NTIzMzQxNiw0NzY5NjM5MTAs
+NjMxMTAzODM2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNj
+E1MywtMTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1
+LDEyMDM1MDU5MzRdfQ==
 -->
