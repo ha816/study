@@ -11,9 +11,9 @@ JVM의 핵심적 역할은 컴파일(compile)과 클래스 로딩(class loading)
 
 JVM 메모리 영역은 관점에 따라 설명이 다르다.
 
-### SharedMemory VS NonSharedMermory
+### SharedMemory VS Non-SharedMermory
 
-Shared Memory 영역과 Non-Shared Memory 영역으로 나뉜다.  JVM에서 실행되는 모든 쓰레드는 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다. Non-Shared Memory는 스레드가 가지는 고유 메모리 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
+JVM에서 실행되는 쓰레드의 관점에서 보자면 메모리 영역은 크게 공유 영역과 비공유 영역으로 나눌 수 있다. 모든 쓰레드는 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다. Non-Shared Memory는 스레드가 가지는 고유 메모리 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
 메모리 영역은 Heap 영역과 Non Heap영역으로도 나누어 생각할 수 있다. 
@@ -93,6 +93,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNDQyMzQ1MCwtMTc5MjQ3NDgwOCwxMz
+eyJoaXN0b3J5IjpbMTYxNTA1MjkzMywtMTc5MjQ3NDgwOCwxMz
 E5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
 -->
