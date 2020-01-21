@@ -25,7 +25,7 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 ### Thread Memory Area
 
 PC Register 
-: 각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 
+: 각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 (메서드 영역안) JVM 명령어 주소를 기억하한다. 
 Program Counter Register is used to control each execution of each thread.
 
 At any point, each Java Virtual Machine thread is executing the code of a single method, namely the  **current method**  for that thread. The pc register contains the address of the Java Virtual Machine instruction (in the method area) currently being executed.
@@ -191,7 +191,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxMDQxMTU0LDcyNzg5MTgwNywxNzMxOT
+eyJoaXN0b3J5IjpbNDkxODA0Nzc1LDcyNzg5MTgwNywxNzMxOT
 M2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgz
 ODUsMTIwMzUwNTkzNF19
 -->
