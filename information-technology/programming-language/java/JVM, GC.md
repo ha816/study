@@ -22,13 +22,68 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 
 ![enter image description here](http://coding-geek.com/wp-content/uploads/2015/04/jvm_memory_overview.jpg)
 
+## The pc Register (Per Thread)
+
+Each thread has its own pc (program counter) register, created at the same time as the thread. At any point, each Java Virtual Machine thread is executing the code of a single method, namely the  **current method**  for that thread. The pc register contains the address of the Java Virtual Machine instruction (in the method area) currently being executed.
+
+Note: If the method currently being executed by the thread is native, the value of the Java Virtual Machine’s pc register is undefined.The Java Virtual Machine’s pc register is wide enough to hold a returnAddress or a native pointer on the specific platform.
+
+## Java Virtual Machine Stacks (Per Thread)
+
+The stack area stores multiples frames so before talking about stacks I’ll present the frames.
+
+### Frames
+
+A frame is a data structure that contains multiples data that represent the state of the thread in the  **current method**  (the method being called):
+
+-   **Operand Stack**: I’ve already presented the operand stack in the chapter about stack based architecture. This stack is used by the bytecode instructions for handling parameters. This stack is also used to pass parameters in a (java) method call and to get the result of the called method at the top of the stack of the calling method.
+
+-   **Local variable array**: This array contains all the local variables in a scope of the current method. This array can hold values of primitive types, reference, or returnAddress. The size of this array is computed at compilation time. The Java Virtual Machine uses local variables to pass parameters on method invocation, the array of the called method is created from the operand stack of the calling method.
+
+-   **Run-time constant pool reference**: reference to the constant pool of the  **current class**  of the  **current method**  being executed. It is used by the JVM to translate symbolic method/variable reference ( ex: myInstance.method()) to the real memory reference.
+
+### Stack
+
+Each Java Virtual Machine thread has a private  _Java Virtual Machine stack_, created at the same time as the thread. A Java Virtual Machine stack stores frames. A new frame is created and put in the stack each time a method is invoked. A frame is destroyed when its method invocation completes, whether that completion is normal or abrupt (it throws an uncaught exception).
+
+Only one frame, the frame for the executing method, is active at any point in a given thread. This frame is referred to as the  **_current frame_**, and its method is known as the  **_current method_**. The class in which the current method is defined is the  **_current class_**. Operations on local variables and the operand stack are typically with reference to the current frame.
+
+Let’s look at the following example which is a simple addition
+
+`public` `int` `add(``int` `a,` `int` `b){`
+
+`return` `a + b;`
+
+`}`
+
+`public` `void` `functionA(){`
+
+`// some code without function call`
+
+`int` `result = add(``2``,``3``);` `//call to function B`
+
+`// some code without function call`
+
+`}`
+
+Here is how it works inside the JVM when the functionA() is running on:
+
+[![example of the state of a jvm method stack during after and before an inner call](http://coding-geek.com/wp-content/uploads/2015/04/state_of_jvm_method_stack.jpg)](http://coding-geek.com/wp-content/uploads/2015/04/state_of_jvm_method_stack.jpg)
+
+Inside functionA() the Frame A is the top of the stack frame and is the current frame. At the beginning of the inner call to add () a new frame (Frame B) is put inside the Stack. Frame B becomes the current frame. The local variable array of frame B is populated from popping the operand stack of frame A. When add() finished, Frame B is destroyed and Frame A becomes again the current frame. The result of add() is put on the operand stack of Frame A so that functionA() can use it by popping its operand stack.
+
+Note: the functioning of this stack makes it dynamically expandable and contractable. There is a maximum size that a stack can’t exceed, which limit the number of recursive calls. If this limit is exceeded the JVM throws a **StackOverflowError**.
+
+With Oracle HotSpot, you can specify this limit with the parameter -Xss.
+
+## Native method stack (Per Thread)
+
+This is a stack for native code written in a language other than Java and called through JNI (Java Native Interface). Since it’s a “native” stack, the behavior of this stack is entirely dependent of the underlying OS.
+
+
 ## Heap
 
-힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 가비지 컬렉터는 힙공간에 더 사용되지 않는 객체를 제거한다.
-
-The heap can be dynamically expanded or contracted and can have a fixed minimum and maximum size. For example, in Oracle Hotspot, the user can specify the minimum size of the heap with the Xms and Xmx parameters by the following way “java -Xms=512m -Xmx=1024m …”
-
-Note: There is a maximum size that the heap can’t exceed. If this limit is exceeded the JVM throws an  **OutOfMemoryError.**
+힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 가비지 컬렉터는 힙공간에 더 사용되지 않는 객체를 제거한다. 힙은 동적으로 확장되거나 축소 될수 있다. 
 
 
 ## Method area
@@ -131,7 +186,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjgyODY0MTcsNzI3ODkxODA3LDE3Mz
-E5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEw
-ODM4NSwxMjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbOTUxNzUzOTExLDcyNzg5MTgwNywxNzMxOT
+M2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgz
+ODUsMTIwMzUwNTkzNF19
 -->
