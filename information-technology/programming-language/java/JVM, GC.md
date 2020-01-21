@@ -17,8 +17,9 @@ This diagram gives on overview of the JVM:
 -   The execution engine also takes care of dealing with the underlying OS.
 
 
-## [MemoryModel](http://coding-geek.com/jvm-memory-model/)
+## 메모리 영역
 
+![enter image description here](http://coding-geek.com/wp-content/uploads/2015/04/jvm_memory_overview.jpg)
 
 JVM 메모리 영역은 관점에 따라 설명이 다르다.
 
@@ -117,7 +118,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUwODAwNzg3LDcyNzg5MTgwNywxNzMxOT
-M2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgz
-ODUsMTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbMTA4NjYyMDI1MCw3Mjc4OTE4MDcsMTczMT
+kzNjE1MywtMTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4
+Mzg1LDEyMDM1MDU5MzRdfQ==
 -->
