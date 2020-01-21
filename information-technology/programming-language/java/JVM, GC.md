@@ -41,9 +41,10 @@ This diagram gives on overview of the JVM:
 
 ### 메소드 영역(Shared; Method Area, Class Area)
 
-클래스 로더가  클래스파일  바이트 코드를 로드하는 공간이다. 각 클래스 별로 저장하는 정보는 아래와 같다. 클래스 별로 클래스 정보가 저장되기 때문에 Class Area라고도 불린다. static이 붙은 클래스 변수도 
+클래스 로더가  클래스파일  바이트 코드를 로드하는 공간이다. 각 클래스 별로 저장하는 정보는 아래와 같다. 클래스 별로 클래스 정보가 저장되기 때문에 Class Area라고도 불린다. static이 붙은 클래스 변수도 메서드 영역에 저장한다. 
 
 -   class information (number of fields/methods, super class name, interfaces names, version, …)
+-  static variables(class variables)
 -   a runtime constant pool
 
 클래스 파일은 고유의 constant pool을 가지고 JVM에 의해 실제 메모리에 올라가면 **runtime constant pool**이 된다. 즉 클래스 파일 constant pool의 구현체가 runtime constant pool이다.
@@ -117,7 +118,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNzcxOTg4NCwxNDExODc3NTcsLTQxMj
+eyJoaXN0b3J5IjpbMjA3NTc4MDMyMywxNDExODc3NTcsLTQxMj
 QxMTcyNywxMDA1MzA1MjU5LC0xMDE1MTMwMzY4LDIyNDc0NTE1
 NCwtMTQ3Mzk3MzEzNCwyNzQxNTQ1NzAsMTA4NjM2MDUwMCwxNj
 g2NTg1LDEyNjIzODEzNCwtMTU3NTIzMzQxNiw0NzY5NjM5MTAs
