@@ -24,23 +24,24 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 
 ### Thread Memory Area(Non-Shared Memory)
 
-PC Register 
+#### PC Register 
 : 각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 (메서드 영역안) JVM 명령어 주소를 기억한다.
 
-Native method stack
+#### Native method stack
 : 다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 그리고 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출된다. 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적된다. 
 
-Stack
+#### Stack
 :  각 스레드는 고유의 스택을 가지는데 스택은 다수의 frames를 저장한다. 프레임은 메서드가 호출될때 마다 생겨 스택에 올라 간다. 그리고 그 메서드가 끝나면 제거된다. 
 
 Frames 
 : 프레임은 데이터 구조로 쓰레드의 상태를 나타내는 다양한 데이터를 포함한다. 이 다양한 데이터에는 Operand Stack, Local variable array, Run-time constant pool reference가 있다.
 
 Operand Stack
-: 이 스택은 파라미터를 다루기 위한 바이트코드 명령어에 의해서 사용된다. 또는 메서드 콜에 파라미터를 전달하거나 스택 최상단의 호출된 메서드의 결과를used to pass parameters in a (java) method call and to get the result of the called method at the top of the stack of the calling method.
+: 이 스택은 파라미터를 다루기 위한 바이트코드 명령어에 의해서 사용된다. 또는 메서드 콜에 파라미터를 전달하거나 스택 최상단의 호출된 메서드의 결과를 얻기위해 사용된다. 
 
 Local variable array
-: This array contains all the local variables in a scope of the current method. This array can hold values of primitive types, reference, or returnAddress. The size of this array is computed at compilation time. The Java Virtual Machine uses local variables to pass parameters on method invocation, the array of the called method is created from the operand stack of the calling method.
+: 현재 메서드의 스코프의 지역 변수르
+This array contains all the local variables in a scope of the current method. This array can hold values of primitive types, reference, or returnAddress. The size of this array is computed at compilation time. The Java Virtual Machine uses local variables to pass parameters on method invocation, the array of the called method is created from the operand stack of the calling method.
 
 Run-time constant pool reference
 : reference to the constant pool of the  **current class**  of the  **current method**  being executed. It is used by the JVM to translate symbolic method/variable reference ( ex: myInstance.method()) to the real memory reference.
@@ -168,7 +169,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNzA3MDE4MSwtOTgwMjU1OTMsNzI3OD
-kxODA3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkw
-NCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbLTEyMDkyMzE5MTcsLTk4MDI1NTkzLDcyNz
+g5MTgwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5
+MDQsLTE3MjIxMDgzODUsMTIwMzUwNTkzNF19
 -->
