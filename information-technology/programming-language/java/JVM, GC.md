@@ -38,6 +38,8 @@ This diagram gives on overview of the JVM:
 >**Run-Time Constant Pool Reference**
 현재 실행 중인 메서드의 클래스의 상수 풀에 대한 참조를 말한다. 이 참조는 실제 메모리 참조에 대한 심블릭 메서드/변수 참조를 번역하는데 JVM이 사용한다. 
 
+--- 
+
 ### 메소드 영역(Shared; Method Area, Class Area)
 
 클래스 로더가  클래스파일  바이트 코드를 로드하는 공간이다. 각 클래스 별로 저장하는 정보는 아래와 같다. 클래스 별로 클래스 정보가 저장되기 때문에 Class Area라고도 불린다. 
@@ -117,10 +119,10 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE0ODczMDAxLDIyNDc0NTE1NCwtMTQ3Mz
-k3MzEzNCwyNzQxNTQ1NzAsMTA4NjM2MDUwMCwxNjg2NTg1LDEy
-NjIzODEzNCwtMTU3NTIzMzQxNiw0NzY5NjM5MTAsNjMxMTAzOD
-M2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNjE1MywtMTc5
-MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMDM1MD
-U5MzRdfQ==
+eyJoaXN0b3J5IjpbLTEwMTUxMzAzNjgsMjI0NzQ1MTU0LC0xND
+czOTczMTM0LDI3NDE1NDU3MCwxMDg2MzYwNTAwLDE2ODY1ODUs
+MTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMD
+M4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0x
+NzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMz
+UwNTkzNF19
 -->
