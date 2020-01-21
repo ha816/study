@@ -28,11 +28,11 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 ### Native Method Stack(Per Thread, Non-shared)
 다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 그리고 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출된다. 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적된다. 
 
-#### Stack
+### Stack
 
 각 스레드는 고유의 스택을 가지는데 스택은 다수의 Frame으로 구성된다. 프레임은 메서드가 호출될때 마다 생겨 스택에 올라 간다. 그리고 그 메서드가 끝나면 제거된다. 
 
-##### Frame
+#### Frame
 
 프레임은 일종의 데이터 구조로 쓰레드의 상태를 나타내는 데이터로 구성된다. 이 다양한 데이터에는 Operand Stack, Local variable array, Run-time constant pool reference가 있다.
 
@@ -150,8 +150,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NzkxMjU4Nyw0NzY5NjM5MTAsNjMxMT
-AzODM2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNjE1Mywt
-MTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMD
-M1MDU5MzRdfQ==
+eyJoaXN0b3J5IjpbODUzNTQzNTc5LDQ3Njk2MzkxMCw2MzExMD
+M4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0x
+NzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMz
+UwNTkzNF19
 -->
