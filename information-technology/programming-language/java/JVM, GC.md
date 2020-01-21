@@ -66,9 +66,7 @@ invokevirtual   #21; //Method java/lang/Object.getClass:()Ljava/lang/Class;
 ldc     #25; //class java/lang/String
 if_acmpne       20
 ```
-위의 경우 `idc` 명령어는 심블릭하게 저장되어 있는 한 클래스를 참조한다. JVM이 위에 바이트 코드를 실행할때, 심블릭 참조를 사용 
-In this case, the  `ldc`  operation refers to a class that is stored symbolically. When the JVM executes this opcode, it will use the symbolic reference to identify the actual class within the current classloader, and return a reference to the class instance.
-
+위의 경우 `idc` 명령어는 심블릭하게 저장되어 있는 한 클래스를 참조한다. JVM이 위에 바이트 코드를 실행할때, 현재 클래스로더 내의 실제 클래스를 식별하는데  심블릭 참조를 사용하고 대응하는 객체의 참조를 반환한다. 
 
 
 클래스 변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
@@ -138,9 +136,9 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NTQxMDQ1MiwyNzQxNTQ1NzAsMTA4Nj
-M2MDUwMCwxNjg2NTg1LDEyNjIzODEzNCwtMTU3NTIzMzQxNiw0
-NzY5NjM5MTAsNjMxMTAzODM2LC05ODAyNTU5Myw3Mjc4OTE4MD
-csMTczMTkzNjE1MywtMTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0x
-NzIyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
+eyJoaXN0b3J5IjpbNzA4NTU4MjQwLDI3NDE1NDU3MCwxMDg2Mz
+YwNTAwLDE2ODY1ODUsMTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3
+Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNy
+wxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3
+MjIxMDgzODUsMTIwMzUwNTkzNF19
 -->
