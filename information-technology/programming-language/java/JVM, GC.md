@@ -113,20 +113,16 @@ JVM이 동작하면, 각 클래스에 대한 정보를 Metaspace에 있는 Metho
 
 The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. 
 
-> Written with [StackEdit](https://stackedit.io/).
 
-> native 메서드란 무엇인가?
-
-자바에서는 C나 C++의 잘 정의된 헤더를 사용할 수 있는 native 메서드를 사용할 수 있다. 코드가 JVM에 로드됐을때 고유(native) 코드를 등록해야 한다 그래야 메서드 호출시 코드를 실행하는데 정확히 필요한 것을 알 수 있다. 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NDI3Mjk3NCwyMjQ3NDUxNTQsLTE0Nz
-M5NzMxMzQsMjc0MTU0NTcwLDEwODYzNjA1MDAsMTY4NjU4NSwx
-MjYyMzgxMzQsLTE1NzUyMzM0MTYsNDc2OTYzOTEwLDYzMTEwMz
-gzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTMsLTE3
-OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMjAzNT
-A1OTM0XX0=
+eyJoaXN0b3J5IjpbLTE0MjcwMTk0MzYsMjI0NzQ1MTU0LC0xND
+czOTczMTM0LDI3NDE1NDU3MCwxMDg2MzYwNTAwLDE2ODY1ODUs
+MTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMD
+M4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0x
+NzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMz
+UwNTkzNF19
 -->
