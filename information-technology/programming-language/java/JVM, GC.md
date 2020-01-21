@@ -32,10 +32,11 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 
 #### Stack
 
-각 스레드는 고유의 스택을 가지는데 스택은 다수의 frames를 저장한다. 프레임은 메서드가 호출될때 마다 생겨 스택에 올라 간다. 그리고 그 메서드가 끝나면 제거된다. 
+각 스레드는 고유의 스택을 가지는데 스택은 다수의 Frame으로 구성된다. 프레임은 메서드가 호출될때 마다 생겨 스택에 올라 간다. 그리고 그 메서드가 끝나면 제거된다. 
 
-Frames 
-: 프레임은 데이터 구조로 쓰레드의 상태를 나타내는 다양한 데이터를 포함한다. 이 다양한 데이터에는 Operand Stack, Local variable array, Run-time constant pool reference가 있다.
+##### Frame
+
+프레임은 일종의 데이터 구조로 쓰레드의 상태를 나타내는 데이터로 구성된다. 이 다양한 데이터에는 Operand Stack, Local variable array, Run-time constant pool reference가 있다.
 
 Operand Stack
 : 이 스택은 파라미터를 다루기 위한 바이트코드 명령어에 의해서 사용된다. 또는 메서드 콜에 파라미터를 전달하거나 스택 최상단의 호출된 메서드의 결과를 얻기위해 사용된다. 
@@ -151,8 +152,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMjgzODMzMSw0NzY5NjM5MTAsNjMxMT
-AzODM2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNjE1Mywt
-MTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMD
-M1MDU5MzRdfQ==
+eyJoaXN0b3J5IjpbLTEzNjg0NTk1NDUsNDc2OTYzOTEwLDYzMT
+EwMzgzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTMs
+LTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMj
+AzNTA1OTM0XX0=
 -->
