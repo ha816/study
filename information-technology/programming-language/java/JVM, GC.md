@@ -53,15 +53,14 @@ This diagram gives on overview of the JVM:
 ```
 if (obj.getClass() == String.class) { // do something }
 ```
-위의 코드를 컴파일하면 아래와 같은 바이트 코드가 생성
+위의 코드를 컴파일하면 아래와 같은 바이트 코드가 생성된다. 
 ```
 aload_1
 invokevirtual   #21; //Method java/lang/Object.getClass:()Ljava/lang/Class;
 ldc     #25; //class java/lang/String
 if_acmpne       20
 ```
-위의 경우 `idc` 명령어는 심블릭하게 저장되어 있는 한 클래스를 참조한다. JVM이 위에 바이트 코드를 실행할때, 현재 클래스로더 내의 실제 클래스를 식별하는데  심블릭 참조를 사용하고 대응하는 객체의 참조를 반환한다. 
-
+위의 경우 `idc` 명령어는 심블릭하게 저장되어 있는 한 클래스를 참조한다(#25 == String클래스). JVM이 위에 바이트 코드를 실행할때, 현재 클래스로더 내의 실제 클래스를 식별하는데  심블릭 참조를 사용하고 대응하는 객체의 참조를 반환한다. 
 
 클래스 변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
 ```
@@ -130,9 +129,9 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjkwNzAwNDcsMjc0MTU0NTcwLDEwOD
-YzNjA1MDAsMTY4NjU4NSwxMjYyMzgxMzQsLTE1NzUyMzM0MTYs
-NDc2OTYzOTEwLDYzMTEwMzgzNiwtOTgwMjU1OTMsNzI3ODkxOD
-A3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwt
-MTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbMTAwNjMyMjg2NSwyNzQxNTQ1NzAsMTA4Nj
+M2MDUwMCwxNjg2NTg1LDEyNjIzODEzNCwtMTU3NTIzMzQxNiw0
+NzY5NjM5MTAsNjMxMTAzODM2LC05ODAyNTU5Myw3Mjc4OTE4MD
+csMTczMTkzNjE1MywtMTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0x
+NzIyMTA4Mzg1LDEyMDM1MDU5MzRdfQ==
 -->
