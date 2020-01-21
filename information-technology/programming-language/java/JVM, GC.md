@@ -28,16 +28,23 @@ This diagram gives on overview of the JVM:
 
 ### Stack
 
-각 스레드는 고유의 스택을 가지는데 스택은 다수의 Frame으로 구성된다. 프레임은 메서드가 호출될때 마다 생겨 스택에 올라 간다. 그리고 그 메서드가 끝나면 제거된다. 
+각 스레드는 자신만의 고유한 스택을 가진스택은 다수의 Frame으로 구성된다. 프레임은 메서드가 호출될때 마다 생겨 스택에 올라 간다. 그리고 그 메서드가 끝나면 제거된다. 
+- 각 Thread 는 자신만의 stack 을 가진다.
+-   지역변수들은 scope 에 따른 visibility 를 가진다.
+-   Heap 영역에 생성된 Object 타입의 데이터의 참조값이 할당된다.
+-   원시타입의 데이터가 값과 함께 할당된다.
+
+스택 영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 곳으로 스레드가 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다.
 
 >Frame
 >프레임은 일종의 데이터 구조로 쓰레드의 상태를 나타내는 데이터로 구성된다. 이 다양한 데이터에는 Operand Stack, Local variable array, Run-time constant pool reference가 있다.
 >>Operand Stack
 : 이 스택은 파라미터를 다루기 위한 바이트코드 명령어에 의해서 사용된다. 또는 메서드 콜에 파라미터를 전달하거나 스택 최상단의 호출된 메서드의 결과를 얻기위해 사용된다. 
->>Local variable array이 배열은 현재 메서드 스코프의 지역 변수 모두를 포함한다. 이 배열은 원시 타입, 참조 또는 반환 주소등을 가질 수 있다. JVM은 메서드 호출시 파라미터 전달을 위해 로컬 변수들을 사용한다. 호출된 메서드의 지역 변수 배열은 호출하는 메서드의 operand stack으로 부터 생성된다.  
-
-Run-time constant pool reference
-: 현재 실행 중인 메서드의 클래스의 상수 풀에 대한 참조를 말한다. 이 참조는 실제 메모리 참조에 대한 심블릭 메서드/변수 참조를 번역하는데 JVM이 사용한다. 
+>>Local variable array
+>이 배열은 현재 메서드 스코프의 지역 변수 모두를 포함한다. 이 배열은 원시 타입, 참조 또는 반환 주소등을 가질 수 있다. JVM은 메서드 호출시 파라미터 전달을 위해 로컬 변수들을 사용한다. 호출된 메서드의 지역 변수 배열은 호출하는 메서드의 operand stack으로 부터 생성된다.  
+>
+>>Run-time constant pool reference
+>현재 실행 중인 메서드의 클래스의 상수 풀에 대한 참조를 말한다. 이 참조는 실제 메모리 참조에 대한 심블릭 메서드/변수 참조를 번역하는데 JVM이 사용한다. 
 
 ![example of the state of a jvm method stack during after and before an inner call](http://coding-geek.com/wp-content/uploads/2015/04/state_of_jvm_method_stack.jpg)
 
@@ -93,14 +100,8 @@ Note: There is a maximum size that the method area can’t exceed. If this limit
 | Tenured(Old) | Survivor 공간에서 최대 나이 임계값에 다다른 객체가 이주하는 공간으로 낮은 빈도로 gc의 대상이 된다.|
 | Perm(PermGen) | 일반적으로 String이나 상수 같이 불변 값이 저장된다. 자바 8에서 PermGen은 물리 메모리에 위치할 MetaSpace라는 새로운 영역으로 변경되었다.|
 
-###  스택 영역(Stack Area)([링크](https://yaboong.github.io/java/2018/05/26/java-memory-management/))
 
-- 각 Thread 는 자신만의 stack 을 가진다.
--   지역변수들은 scope 에 따른 visibility 를 가진다.
--   Heap 영역에 생성된 Object 타입의 데이터의 참조값이 할당된다.
--   원시타입의 데이터가 값과 함께 할당된다.
-
-스택 영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 곳으로 스레드가 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
+ 
 
 ## 마치며 
 
@@ -144,8 +145,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NjM1NTIyNiw0NzY5NjM5MTAsNjMxMT
-AzODM2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNjE1Mywt
-MTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMD
-M1MDU5MzRdfQ==
+eyJoaXN0b3J5IjpbLTE5OTMyNDYyNzgsNDc2OTYzOTEwLDYzMT
+EwMzgzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTMs
+LTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMj
+AzNTA1OTM0XX0=
 -->
