@@ -29,10 +29,9 @@ PC Register
 Program Counter Register is used to control each execution of each thread.
 
 Native method stack
-: 자바 네이티브 인터페이스를 통한 다른 언어로 쓰인 
+: 다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 
 This is a stack for native code written in a language other than Java and called through JNI (Java Native Interface). 
-
-Since it’s a “native” stack, the behavior of this stack is entirely dependent of the underlying OS.
+말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적된다. 
 
 
 Stack
@@ -190,7 +189,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzExMTgxNDA4LDcyNzg5MTgwNywxNzMxOT
-M2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgz
-ODUsMTIwMzUwNTkzNF19
+eyJoaXN0b3J5IjpbMjAxOTY2MDgxNSw3Mjc4OTE4MDcsMTczMT
+kzNjE1MywtMTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4
+Mzg1LDEyMDM1MDU5MzRdfQ==
 -->
