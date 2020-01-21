@@ -88,7 +88,7 @@ static Object o = new SomeObject()
 
 ![enter image description here](https://i.stack.imgur.com/4ySVX.png)
 
-JVM이 동작하면, 각 클래스에 대한 정ㅂ
+JVM이 동작하면, 각 클래스에 대한 정보를 Metaspace에 있는 Method Area에 로드한다. Method Area는 각 클래스에 대한 메타 정보와 컨스턴트 풀을 
 
 # GC(Garbage Collection)
 
@@ -123,7 +123,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkwOTg2MTc5LDIyNDc0NTE1NCwtMTQ3Mz
+eyJoaXN0b3J5IjpbOTM5MDgwMDIyLDIyNDc0NTE1NCwtMTQ3Mz
 k3MzEzNCwyNzQxNTQ1NzAsMTA4NjM2MDUwMCwxNjg2NTg1LDEy
 NjIzODEzNCwtMTU3NTIzMzQxNiw0NzY5NjM5MTAsNjMxMTAzOD
 M2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNjE1MywtMTc5
