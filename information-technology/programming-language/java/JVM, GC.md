@@ -27,11 +27,12 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 #### PC Register 
 : 각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 (메서드 영역안) JVM 명령어 주소를 기억한다.
 
-#### Native method stack
+#### Native Method Stack
 : 다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 그리고 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출된다. 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적된다. 
 
 #### Stack
-:  각 스레드는 고유의 스택을 가지는데 스택은 다수의 frames를 저장한다. 프레임은 메서드가 호출될때 마다 생겨 스택에 올라 간다. 그리고 그 메서드가 끝나면 제거된다. 
+
+각 스레드는 고유의 스택을 가지는데 스택은 다수의 frames를 저장한다. 프레임은 메서드가 호출될때 마다 생겨 스택에 올라 간다. 그리고 그 메서드가 끝나면 제거된다. 
 
 Frames 
 : 프레임은 데이터 구조로 쓰레드의 상태를 나타내는 다양한 데이터를 포함한다. 이 다양한 데이터에는 Operand Stack, Local variable array, Run-time constant pool reference가 있다.
@@ -80,12 +81,7 @@ The specifications don’t force to implement the method area in the heap. For e
 
 Note: There is a maximum size that the method area can’t exceed. If this limit is exceeded the JVM throws an  **OutOfMemoryError.**
 
-### Heap VS Non-Heap
 
-메모리 영역은 Heap 영역과 Non Heap영역으로도 나누어 생각할 수 있다. 
-![enter image description here](https://i.stack.imgur.com/4ySVX.png)
-
-Perm(PermGen)은 자바 8이후부터는 MetaSpace로 명칭이 변경되었다. 일반적으로 String이나 상수 같이 불변 값이 저장된다. PermGeneration은 Method Area와 interned strings를 포함한다. 
 
 ### Heap영역
 
@@ -112,6 +108,14 @@ Perm(PermGen)은 자바 8이후부터는 MetaSpace로 명칭이 변경되었다.
 -   원시타입의 데이터가 값과 함께 할당된다.
 
 스택 영역은 각 스레드들이 가지는 고유 영역이다. 지역변수, 메서드 정보가 저장되는 곳으로 스레드가 메소드 호출시 필요로 되는 변수들을 스택에 저장하고, 메소드 실행이 끝나면 스택을 반환한다. 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 
+
+## 마치며 
+
+![enter image description here](https://i.stack.imgur.com/4ySVX.png)
+
+Perm(PermGen)은 자바 8이후부터는 MetaSpace로 명칭이 변경되었다. 일반적으로 String이나 상수 같이 불변 값이 저장된다. PermGeneration은 Method Area와 interned strings를 포함한다. 
+
+
 
 
 # GC(Garbage Collection)
@@ -147,8 +151,8 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDAxMDI5MTIsNDc2OTYzOTEwLDYzMT
-EwMzgzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTMs
-LTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEwODM4NSwxMj
-AzNTA1OTM0XX0=
+eyJoaXN0b3J5IjpbMTAxMjgzODMzMSw0NzY5NjM5MTAsNjMxMT
+AzODM2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNjE1Mywt
+MTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1LDEyMD
+M1MDU5MzRdfQ==
 -->
