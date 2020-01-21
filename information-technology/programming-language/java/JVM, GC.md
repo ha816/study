@@ -37,14 +37,19 @@ The heap can be dynamically expanded or contracted and can have a fixed minimum 
 Note: There is a maximum size that the heap can’t exceed. If this limit is exceeded the JVM throws an  **OutOfMemoryError.**
 
 
-### 쓰레드 메모리 영역
+## Method area
 
-![enter image description here](https://www.programcreek.com/wp-content/uploads/2013/04/JVM-runtime-data-area.jpg)
+The Method area is a memory shared among all Java Virtual Machine Threads. It is created on virtual machine start-up and is loaded by  **classloaders**  from bytecode. The data in the Method Area stay in memory as long as the classloader which loaded them is alive.
 
-Program Counter Register is used to control each execution of each thread.  
-JVM Stack contains frames which is demonstrated in the diagram below.  
-Native Method Stack is used to support native methods, i.e., non-Java language methods.
+The method area stores:
 
+-   class information (number of fields/methods, super class name, interfaces names, version, …)
+-   the bytecode of methods and constructors.
+-   a runtime constant pool per class loaded.
+
+The specifications don’t force to implement the method area in the heap. For example, until JAVA7, Oracle  **HotSpot**  used a zone called PermGen to store the Method Area. This  **PermGen**  was contiguous with the Java heap (and memory managed by the JVM like the heap) and was limited to a default space of 64Mo (modified by the argument -XX:MaxPermSize). Since Java 8, HotSpot now stores the Method Area in a separated native memory space called the  **Metaspace**, the max available space is the total available system memory.
+
+Note: There is a maximum size that the method area can’t exceed. If this limit is exceeded the JVM throws an  **OutOfMemoryError.**
 
 
 
@@ -132,7 +137,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDM1NjYyNDksNzI3ODkxODA3LDE3Mz
+eyJoaXN0b3J5IjpbLTE5MzQwNTg0NDgsNzI3ODkxODA3LDE3Mz
 E5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEw
 ODM4NSwxMjAzNTA1OTM0XX0=
 -->
