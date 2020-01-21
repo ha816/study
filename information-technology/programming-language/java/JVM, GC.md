@@ -16,12 +16,26 @@ This diagram gives on overview of the JVM:
 -   The execution engine needs to store data like a pointer to the ligne of code being executed. It also needs to store the data handled in the developer’s code.
 -   The execution engine also takes care of dealing with the underlying OS.
 
-
 ## 메모리 영역
+
+The runtime data areas are the in-memory areas designed to store data. Those data are used by the developer’s program or by the JVM for its inner working.
 
 ![enter image description here](http://coding-geek.com/wp-content/uploads/2015/04/jvm_memory_overview.jpg)
 
-JVM 메모리 영역은 관점에 따라 설명이 다르다.
+## Heap
+
+The heap is a memory area shared among all Java Virtual Machine Threads. It is created on virtual machine start-up. All class  **instances**  and  **arrays**  are  **allocated**  in the heap (with the  **new**  operator).
+
+`MyClass myVariable =` `new` `MyClass();`
+
+`MyClass[] myArrayClass =` `new` `MyClass[``1024``];`
+
+This zone must be managed by a  **garbage collector** to remove the instances allocated by the developer when they are not used anymore. The strategy for cleaning the memory is up to the JVM implementation (for example, Oracle Hotspot provides multiple algorithms).
+
+The heap can be dynamically expanded or contracted and can have a fixed minimum and maximum size. For example, in Oracle Hotspot, the user can specify the minimum size of the heap with the Xms and Xmx parameters by the following way “java -Xms=512m -Xmx=1024m …”
+
+Note: There is a maximum size that the heap can’t exceed. If this limit is exceeded the JVM throws an  **OutOfMemoryError.**
+
 
 ### 쓰레드 메모리 영역
 
@@ -118,7 +132,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NjYyMDI1MCw3Mjc4OTE4MDcsMTczMT
-kzNjE1MywtMTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4
-Mzg1LDEyMDM1MDU5MzRdfQ==
+eyJoaXN0b3J5IjpbLTExNDM1NjYyNDksNzI3ODkxODA3LDE3Mz
+E5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEw
+ODM4NSwxMjAzNTA1OTM0XX0=
 -->
