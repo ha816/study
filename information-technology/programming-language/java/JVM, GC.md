@@ -22,11 +22,10 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 
 ![enter image description here](http://coding-geek.com/wp-content/uploads/2015/04/jvm_memory_overview.jpg)
 
-### Thread Memory Area
+### Thread Memory Area(Non-Shared Memory)
 
 PC Register 
-: 각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 (메서드 영역안) JVM 명령어 주소를 기억하한다. 
-Program Counter Register is used to control each execution of each thread.
+: 각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 (메서드 영역안) JVM 명령어 주소를 기억한다.
 
 Native method stack
 : 다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 그리고 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출된다. 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적된다. 
@@ -39,9 +38,11 @@ Frames
 
 Operand Stack: This stack is used by the bytecode instructions for handling parameters. This stack is also used to pass parameters in a (java) method call and to get the result of the called method at the top of the stack of the calling method.
 
--   **Local variable array**: This array contains all the local variables in a scope of the current method. This array can hold values of primitive types, reference, or returnAddress. The size of this array is computed at compilation time. The Java Virtual Machine uses local variables to pass parameters on method invocation, the array of the called method is created from the operand stack of the calling method.
+Local variable array
+: This array contains all the local variables in a scope of the current method. This array can hold values of primitive types, reference, or returnAddress. The size of this array is computed at compilation time. The Java Virtual Machine uses local variables to pass parameters on method invocation, the array of the called method is created from the operand stack of the calling method.
 
--   **Run-time constant pool reference**: reference to the constant pool of the  **current class**  of the  **current method**  being executed. It is used by the JVM to translate symbolic method/variable reference ( ex: myInstance.method()) to the real memory reference.
+Run-time constant pool reference
+: reference to the constant pool of the  **current class**  of the  **current method**  being executed. It is used by the JVM to translate symbolic method/variable reference ( ex: myInstance.method()) to the real memory reference.
 
 ### Stack
 
@@ -49,25 +50,7 @@ Each Java Virtual Machine thread has a private  _Java Virtual Machine stack_, cr
 
 Only one frame, the frame for the executing method, is active at any point in a given thread. This frame is referred to as the  **_current frame_**, and its method is known as the  **_current method_**. The class in which the current method is defined is the  **_current class_**. Operations on local variables and the operand stack are typically with reference to the current frame.
 
-Let’s look at the following example which is a simple addition
 
-`public` `int` `add(``int` `a,` `int` `b){`
-
-`return` `a + b;`
-
-`}`
-
-`public` `void` `functionA(){`
-
-`// some code without function call`
-
-`int` `result = add(``2``,``3``);` `//call to function B`
-
-`// some code without function call`
-
-`}`
-
-Here is how it works inside the JVM when the functionA() is running on:
 
 [![example of the state of a jvm method stack during after and before an inner call](http://coding-geek.com/wp-content/uploads/2015/04/state_of_jvm_method_stack.jpg)](http://coding-geek.com/wp-content/uploads/2015/04/state_of_jvm_method_stack.jpg)
 
@@ -185,7 +168,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MzM3MTY0MCwtOTgwMjU1OTMsNzI3OD
+eyJoaXN0b3J5IjpbLTE2OTI3MDcwOCwtOTgwMjU1OTMsNzI3OD
 kxODA3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkw
 NCwtMTcyMjEwODM4NSwxMjAzNTA1OTM0XX0=
 -->
