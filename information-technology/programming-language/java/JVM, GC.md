@@ -45,8 +45,7 @@ This diagram gives on overview of the JVM:
 클래스 로더가  클래스파일  바이트 코드를 로드하는 공간이다. 각 클래스 별로 저장하는 정보는 아래와 같다. 클래스 별로 클래스 정보가 저장되기 때문에 Class Area라고도 불린다. 
 
 -   class information (number of fields/methods, super class name, interfaces names, version, …)
--   static variables
--   a runtime constant pool  
+-   a runtime constant pool()
 
 클래스 파일은 고유의 constant pool을 가지고 JVM에 의해 실제 메모리에 올라가면 **runtime constant pool**이 된다. 즉 클래스 파일 constant pool의 구현체가 runtime constant pool이다.
  한 클래스 파일의 모든 심블릭 참조(**symbolic reference**)는 상수풀에 저장된다. 심블릭 참조란 문자열인데 실제 사용하려는 객체를 찾기위해 사용한다.
@@ -119,10 +118,10 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTUxMzAzNjgsMjI0NzQ1MTU0LC0xND
-czOTczMTM0LDI3NDE1NDU3MCwxMDg2MzYwNTAwLDE2ODY1ODUs
-MTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMD
-M4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzLC0x
-NzkyNDc0ODA4LDEzMTk2Mzg5MDQsLTE3MjIxMDgzODUsMTIwMz
-UwNTkzNF19
+eyJoaXN0b3J5IjpbMTAwNTMwNTI1OSwtMTAxNTEzMDM2OCwyMj
+Q3NDUxNTQsLTE0NzM5NzMxMzQsMjc0MTU0NTcwLDEwODYzNjA1
+MDAsMTY4NjU4NSwxMjYyMzgxMzQsLTE1NzUyMzM0MTYsNDc2OT
+YzOTEwLDYzMTEwMzgzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3
+MzE5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMj
+EwODM4NSwxMjAzNTA1OTM0XX0=
 -->
