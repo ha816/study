@@ -24,11 +24,8 @@ The runtime data areas are the in-memory areas designed to store data. Those dat
 
 ## Heap
 
-The heap is a memory area shared among all Java Virtual Machine Threads. It is created on virtual machine start-up. All class  **instances**  and  **arrays**  are  **allocated**  in the heap (with the  **new**  operator).
-
-`MyClass myVariable =` `new` `MyClass();`
-
-`MyClass[] myArrayClass =` `new` `MyClass[``1024``];`
+힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 힙은 
+가비지 컬렉터에 의해서 관리된다. 
 
 This zone must be managed by a  **garbage collector** to remove the instances allocated by the developer when they are not used anymore. The strategy for cleaning the memory is up to the JVM implementation (for example, Oracle Hotspot provides multiple algorithms).
 
@@ -137,7 +134,7 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzQwNTg0NDgsNzI3ODkxODA3LDE3Mz
+eyJoaXN0b3J5IjpbLTE5ODkxNjQ1NjAsNzI3ODkxODA3LDE3Mz
 E5MzYxNTMsLTE3OTI0NzQ4MDgsMTMxOTYzODkwNCwtMTcyMjEw
 ODM4NSwxMjAzNTA1OTM0XX0=
 -->
