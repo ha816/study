@@ -97,9 +97,9 @@ JVM이 동작하면, 각 클래스에 대한 정보를 Metaspace에 있는 Metho
 
 가비지 컬렉션은 기존에 할당된 메모리 중 사용되지 않는 메모리를 재사용하는 메커니즘이다. 가비지 컬렉션을 쓰면 메모리를 직접 해제할 필요가 없다. 
 
-가비지 컬렉션 알고리즘은 몇 가지가 있는데, 모든 알고리즘은 더 이상 참조하지 않는 메모리를 찾은 후 메모리를 할당할 때 이용한다는 공통점이 있다. 
+가비지 컬렉션 알고리즘은 몇 가지가 있는데, 모든 알고리즘은 더 이상 참조하지 않는 메모리를 찾은 후 메모리를 할당할 때 이용한다는 공통점이 있다. [GC types](https://www.cubrid.org/blog/understanding-java-garbage-collection)
 
-[GC types](https://www.cubrid.org/blog/understanding-java-garbage-collection)
+
 
 전통적인 GC는 Old 제너레이션에서  **mark-sweep-compact** 방법을 사용한다. 
 
@@ -118,11 +118,11 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NTc4MDMyMywxNDExODc3NTcsLTQxMj
-QxMTcyNywxMDA1MzA1MjU5LC0xMDE1MTMwMzY4LDIyNDc0NTE1
-NCwtMTQ3Mzk3MzEzNCwyNzQxNTQ1NzAsMTA4NjM2MDUwMCwxNj
-g2NTg1LDEyNjIzODEzNCwtMTU3NTIzMzQxNiw0NzY5NjM5MTAs
-NjMxMTAzODM2LC05ODAyNTU5Myw3Mjc4OTE4MDcsMTczMTkzNj
-E1MywtMTc5MjQ3NDgwOCwxMzE5NjM4OTA0LC0xNzIyMTA4Mzg1
-XX0=
+eyJoaXN0b3J5IjpbMjA2NDAzOTA2NywyMDc1NzgwMzIzLDE0MT
+E4Nzc1NywtNDEyNDExNzI3LDEwMDUzMDUyNTksLTEwMTUxMzAz
+NjgsMjI0NzQ1MTU0LC0xNDczOTczMTM0LDI3NDE1NDU3MCwxMD
+g2MzYwNTAwLDE2ODY1ODUsMTI2MjM4MTM0LC0xNTc1MjMzNDE2
+LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NTkzLDcyNzg5MT
+gwNywxNzMxOTM2MTUzLC0xNzkyNDc0ODA4LDEzMTk2Mzg5MDRd
+fQ==
 -->
