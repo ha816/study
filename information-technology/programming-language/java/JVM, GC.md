@@ -22,14 +22,6 @@ This diagram gives on overview of the JVM:
 -   The execution engine needs to store data like a pointer to the ligne of code being executed. It also needs to store the data handled in the developer’s code.
 -   The execution engine also takes care of dealing with the underlying OS.
 
-## 메모리 영역
-
-![실행 중인 데이터 영역> native 메서드란 무엇인가?
-
-자바에서는 C나 C++의 잘 정의된 헤더를 사용할 수 있는 native 메서드를 사용할 수 있다. 코드가 JVM에 로드됐을때 고유(native) 코드를 등록해야 한다 그래야 메서드 호출시 코드를 실행하는데 정확히 필요한 것을 알 수 있다. 
-
-
-
 ## JVM 메모리 영역
 
 JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역으로 나뉜다.  JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다. Non-Shared memory는 스레드가 별로 할당되는 고유 메모리 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
@@ -161,11 +153,11 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk5NzI2MDcxLDEyNDAwODg1NjIsLTc3Mz
-g2MDk3MSwyMDc1NzgwMzIzLDE0MTE4Nzc1NywtNDEyNDExNzI3
-LDEwMDUzMDUyNTksLTEwMTUxMzAzNjgsMjI0NzQ1MTU0LC0xND
-czOTczMTM0LDI3NDE1NDU3MCwxMDg2MzYwNTAwLDE2ODY1ODUs
-MTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMD
-M4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzXX0=
-
+eyJoaXN0b3J5IjpbLTEzMDk0OTYxODksMTI0MDA4ODU2MiwtNz
+czODYwOTcxLDIwNzU3ODAzMjMsMTQxMTg3NzU3LC00MTI0MTE3
+MjcsMTAwNTMwNTI1OSwtMTAxNTEzMDM2OCwyMjQ3NDUxNTQsLT
+E0NzM5NzMxMzQsMjc0MTU0NTcwLDEwODYzNjA1MDAsMTY4NjU4
+NSwxMjYyMzgxMzQsLTE1NzUyMzM0MTYsNDc2OTYzOTEwLDYzMT
+EwMzgzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTNd
+fQ==
 -->
