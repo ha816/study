@@ -34,7 +34,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 (메서드 영역안) JVM 명령어 주소를 기억한다.
 
 ### Native Method Stack(Per Thread, Non-shared)
-다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 그리고 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출된다. 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적5/26/java-memory-management/))
+다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 그리고 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출된다. 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적이다. 
 
 - 각 Thread 는 자신만의 stack 을 가진다.
 -   지역변수들은 scope 에 따른 visibility 를 가진다.
@@ -153,11 +153,11 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDk0OTYxODksMTI0MDA4ODU2MiwtNz
-czODYwOTcxLDIwNzU3ODAzMjMsMTQxMTg3NzU3LC00MTI0MTE3
-MjcsMTAwNTMwNTI1OSwtMTAxNTEzMDM2OCwyMjQ3NDUxNTQsLT
-E0NzM5NzMxMzQsMjc0MTU0NTcwLDEwODYzNjA1MDAsMTY4NjU4
-NSwxMjYyMzgxMzQsLTE1NzUyMzM0MTYsNDc2OTYzOTEwLDYzMT
-EwMzgzNiwtOTgwMjU1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTNd
+eyJoaXN0b3J5IjpbLTI4MTUxMTU4OSwtMTMwOTQ5NjE4OSwxMj
+QwMDg4NTYyLC03NzM4NjA5NzEsMjA3NTc4MDMyMywxNDExODc3
+NTcsLTQxMjQxMTcyNywxMDA1MzA1MjU5LC0xMDE1MTMwMzY4LD
+IyNDc0NTE1NCwtMTQ3Mzk3MzEzNCwyNzQxNTQ1NzAsMTA4NjM2
+MDUwMCwxNjg2NTg1LDEyNjIzODEzNCwtMTU3NTIzMzQxNiw0Nz
+Y5NjM5MTAsNjMxMTAzODM2LC05ODAyNTU5Myw3Mjc4OTE4MDdd
 fQ==
 -->
