@@ -70,7 +70,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 -  static variables(class variables)
 -   a runtime constant pool
 
-클래스 파일은 고유의 constant pool을 가지고 JVM에 의해 실제 메모리에 올라가면 **runtime constant pool**이)가 로드 된다. 즉여기서 클래스 파일 constant pool의 구현체가 runtime constant pool이다.
+클래스 파일은 고유의 constant pool을 가지고 JVM에 의해 실제 메모리에 올라가면 **runtime constant pool**이)가 로드 된다. 여기서 클래스 파일 constant pool의 구현체가 runtime constant pool이다.
  한 클래스 파일의 모든 심블릭 참조(**symbolic reference**)는 상수풀에 저장된다. 심블릭 참조란 문자열인데 실제 사용하려는 객체를 찾기위해 사용한다.
 
 ```
@@ -90,13 +90,13 @@ static int i = 1; //the value 1 is stored in the RunTime Constant Pool(PermGen s
 static Object o = new SomeObject()
 ```
 
-**명세서에서는 Heap에 메서드 영역을 구현하도록 강제하지 않았다.** 자바 7 이전에는 PermGen이라는 영역에 메서드 영역이 있었다. PermGen은 힙처럼 JVM에 의해서 관리되는 공간으로 사용 공간의 제한이 있었다. 그러나 자바 8에서 메서드 영역은 MetaSpace라 불리는, 사용 공간을 동적으로### Heap영역
-
-객체를 저장하기 위해 동적으로(실행시간에) 할당하여 쓰는 메모리 공간에 있다. 
+**명세서에서는 Heap에 메서드 영역을 구현하도록 강제하지 않았다.** 자바 7 이전에는 PermGen이라는 영역에 메서드 영역이 있었다. PermGen은 힙처럼 JVM에 의해서 관리되는 공간으로 사용 공간의 제한이 있었다. 그러나 자바 8에서 메서드 영역은 MetaSpace라 불리는, 사용 공간을 동적으로동적으로(실행시간에) 할당하여 쓰는 메모리 공간에 있다. 
 
 ### Heap(Shared)
 
-힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 힙은 동적으로 확장되거나 축소 될수 있영역, new 연산자를 통하여 개체를 동적으로 생성한다.  객체를 할당할때 이용할 수 있는 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 한다. 그래도 충분한 메모리가 없으면 OutOfMemoryError가 발생하며 JVM이 종료된다. 
+힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 힙은 동적으로 확장되거나 축소 될수 있### Heap영역
+
+객체를 저장하기 위해 영역, new 연산자를 통하여 개체를 동적으로 생성한다.  객체를 할당할때 이용할 수 있는 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 한다. 그래도 충분한 메모리가 없으면 OutOfMemoryError가 발생하며 JVM이 종료된다. 
   
 #### Heap's Generation
 
@@ -161,11 +161,11 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MDA4ODU2MiwtNzczODYwOTcxLDIwNz
-U3ODAzMjMsMTQxMTg3NzU3LC00MTI0MTE3MjcsMTAwNTMwNTI1
-OSwtMTAxNTEzMDM2OCwyMjQ3NDUxNTQsLTE0NzM5NzMxMzQsMj
-c0MTU0NTcwLDEwODYzNjA1MDAsMTY4NjU4NSwxMjYyMzgxMzQs
-LTE1NzUyMzM0MTYsNDc2OTYzOTEwLDYzMTEwMzgzNiwtOTgwMj
-U1OTMsNzI3ODkxODA3LDE3MzE5MzYxNTMsLTE3OTI0NzQ4MDhd
-fQ==
+eyJoaXN0b3J5IjpbMjk5NzI2MDcxLDEyNDAwODg1NjIsLTc3Mz
+g2MDk3MSwyMDc1NzgwMzIzLDE0MTE4Nzc1NywtNDEyNDExNzI3
+LDEwMDUzMDUyNTksLTEwMTUxMzAzNjgsMjI0NzQ1MTU0LC0xND
+czOTczMTM0LDI3NDE1NDU3MCwxMDg2MzYwNTAwLDE2ODY1ODUs
+MTI2MjM4MTM0LC0xNTc1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMD
+M4MzYsLTk4MDI1NTkzLDcyNzg5MTgwNywxNzMxOTM2MTUzXX0=
+
 -->
