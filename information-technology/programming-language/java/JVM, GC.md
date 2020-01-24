@@ -43,7 +43,7 @@ JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역�
 
 ### Stack(Per Thread, Non-shared)
 
-각 스레드는 자신만의 고유한 스택을 가진다. 스택은 다수의 프레임(Frame)으로 구성된다. 또 프레임은 쓰레드의 상태를 나타내는 데이터 구조들로 이루어져 있다. (Operand Stack, Local variable array, Run-time constant pool reference) 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 클래스 변수(static)와 원시 타입의 변수를 제외한 변수 중에서 
+각 스레드는 자신만의 고유한 스택을 가진다. 스택은 다수의 프레임(Frame)으로 구성된다. 또 프레임은 쓰레드의 상태를 나타내는 데이터 구조들로 이루어져 있다. (Operand Stack, Local variable array, Run-time constant pool reference) 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 클래스 변수(static)와 원시 타입의 변수를 제외한 변수가 스택에 속한다. 여기서 주의할점은 변수가 가리키는 실제 객체는 힙에 들어가 있다는 것을 주의해야 한다. 
 
 >**Operand Stack**
 파라미터를 다루기 위한 바이트코드 명령어가 사용하는 스택이다. 호출한 메서드에 파라미터를 전달하거나 스택 최상단의 호출된 메서드의 결과를 얻기위해 사용된다. 
@@ -153,11 +153,11 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4ODM5NjU4NiwtMTMwOTQ5NjE4OSwxMj
-QwMDg4NTYyLC03NzM4NjA5NzEsMjA3NTc4MDMyMywxNDExODc3
-NTcsLTQxMjQxMTcyNywxMDA1MzA1MjU5LC0xMDE1MTMwMzY4LD
-IyNDc0NTE1NCwtMTQ3Mzk3MzEzNCwyNzQxNTQ1NzAsMTA4NjM2
-MDUwMCwxNjg2NTg1LDEyNjIzODEzNCwtMTU3NTIzMzQxNiw0Nz
-Y5NjM5MTAsNjMxMTAzODM2LC05ODAyNTU5Myw3Mjc4OTE4MDdd
-fQ==
+eyJoaXN0b3J5IjpbLTMxNDY5NTE4NCwxNzg4Mzk2NTg2LC0xMz
+A5NDk2MTg5LDEyNDAwODg1NjIsLTc3Mzg2MDk3MSwyMDc1Nzgw
+MzIzLDE0MTE4Nzc1NywtNDEyNDExNzI3LDEwMDUzMDUyNTksLT
+EwMTUxMzAzNjgsMjI0NzQ1MTU0LC0xNDczOTczMTM0LDI3NDE1
+NDU3MCwxMDg2MzYwNTAwLDE2ODY1ODUsMTI2MjM4MTM0LC0xNT
+c1MjMzNDE2LDQ3Njk2MzkxMCw2MzExMDM4MzYsLTk4MDI1NTkz
+XX0=
 -->
