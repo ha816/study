@@ -114,7 +114,7 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 일반적으로 레코드 레벨의 트랜잭션을 지원하는 DBMS가 제공하는 기능이다. 가장 큰 목적은 잠금을 사용하지 않는 일관된 읽기를 제공하는데 있는데, 이때 Undo 로그를 사용해 기능을 구현한다.   
 
-멀티 버전이라는 것은 한개의 레코드에 대해서 여러 버전이 동시에 관리된다는 의미이다. 
+멀티 버전이라는 것은 한개의 레코드에 대해서 여러 버전이 동시에 관리된다는 의미이다. 한 레코드는 InnoDB 
 
 
 
@@ -134,8 +134,8 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjg5NDA0MjAsLTE4NDI5OTQ4OSwtMT
-Y4NDUxNTYxMywtMzQ0NTQ1NjA2LC0xMjY3Mzc5OTM1LDcxNjkw
-MzQsLTY1Njk0NzYyOSwtMTM1MjgzNDgyMiwtMTY3NDk4MjA1NF
-19
+eyJoaXN0b3J5IjpbODY5NjgwNDQwLC0xODQyOTk0ODksLTE2OD
+Q1MTU2MTMsLTM0NDU0NTYwNiwtMTI2NzM3OTkzNSw3MTY5MDM0
+LC02NTY5NDc2MjksLTEzNTI4MzQ4MjIsLTE2NzQ5ODIwNTRdfQ
+==
 -->
