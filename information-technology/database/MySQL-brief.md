@@ -112,7 +112,7 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 ## Log Buffer
 
-쿼리 문장으로 데이터를 변경하고 커밋하면 DBMS는 트랜잭션 보장을 위해  변경된 데이터의 내용을 데이터 파일로 기록해야 한다. 이 작업은 랜덤하게 디스크에 기록해야 하기 때문에 디스크를 바쁘게 만드는 작업이다. 이 부하를 줄이기 위해 변경된 데이터를 저장하기 위해 InnoDB 버퍼풀과 같은 장치가 있다. 하지만 이것 만으로 트랜잭션을 보장 할 수 없는데, 변경된 내용을 순차적으로 디스크에 기록하는 로그 파일을 가지고 있다. 이 로그파일이 리두 로라 하며(Redo log), 
+쿼리 문장으로 데이터를 변경하고 커밋하면 DBMS는 트랜잭션 보장을 위해  변경된 데이터의 내용을 데이터 파일로 기록해야 한다. 이 작업은 랜덤하게 디스크에 기록해야 하기 때문에 디스크를 바쁘게 만드는 작업이다. 이 부하를 줄이기 위해 변경된 데이터를 저장하기 위해 InnoDB 버퍼풀과 같은 장치가 있다. 하지만 이것 만으로 트랜잭션을 보장 할 수 없는데, 변경된 내용을 순차적으로 디스크에 기록하는 로그 파일을 가지고 있다. 이 로그파일이 리두 로라 하며(Redo log), DBMS에서 로그라 하면 일반적으로 이 리두 로그를 말한다. 이 리두 로그는 사람 눈으로 확인 할 수 있는 내용이 아니다. 리두 로그 덕분에 DBMS 데이터는 버퍼링을 통해 한껍
 
 
 
@@ -125,7 +125,7 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQxMTAwMTUxLC0xMjY3Mzc5OTM1LDcxNj
-kwMzQsLTY1Njk0NzYyOSwtMTM1MjgzNDgyMiwtMTY3NDk4MjA1
-NF19
+eyJoaXN0b3J5IjpbLTEyNzIzNDMwMCwtMTI2NzM3OTkzNSw3MT
+Y5MDM0LC02NTY5NDc2MjksLTEzNTI4MzQ4MjIsLTE2NzQ5ODIw
+NTRdfQ==
 -->
