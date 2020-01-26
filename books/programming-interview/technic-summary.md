@@ -19,6 +19,7 @@
 > 자바 메모리는 쓰레드 전체가 공유하는 메모리 영역(Shared Memory)과 개별 쓰레드가 가지는 고유 메모리 영역(Non-Shared Memory) 두 가지로 나뉜다. 공유 메모리 영역에는 Method 영역, Heap 영역이 있다. Method 영역은 클래스 영역이라고도 불리는데 클래스 정보(이름, 필드, 메서드), 클래스 변수, Run-Time Constant pool 이 저장되는 영역이다. Heap 영역은 객체들이 저장되는 공간이다. 
 
 >불변객체란? 왜 사용하는지?
+>불변 객체는 객체의 상태가 절대 변하지 않는 것을 보장하는 객체를 맗
 
 >final 키워드는? 어디에 사용하는지?
 
@@ -218,7 +219,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NjA5OTgzLC0xODIzNDE0NTgzLDk1NT
-AyNTMyNiw4OTYzMzI4MDksLTE2MDUxNDA3NzAsMTQzNDc0OTU5
-OF19
+eyJoaXN0b3J5IjpbMTEzMzA5MjkxNiwxNzU2MDk5ODMsLTE4Mj
+M0MTQ1ODMsOTU1MDI1MzI2LDg5NjMzMjgwOSwtMTYwNTE0MDc3
+MCwxNDM0NzQ5NTk4XX0=
 -->
