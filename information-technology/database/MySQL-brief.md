@@ -112,9 +112,9 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 ## Log Buffer & Redo Log
 
-트랜잭션 보장을 위해서는 앞서 보았던 Buffer Pool만으로는 부족하다. 트랜잭션 보장을 위해서 변경된 내용을 순차적으로 데이터 파일로 기록해야 한다. 이 데이터 파일이 우리가 일반적으로 부르는 로그파일이고 리두로그(Redo Log)라고 부른다. DBMS에서 로그라 하면 일반적으로 이 리두 로그(Redo Log)를 말한다. 
+트랜잭션 보장을 위해서는 앞서 보았던 Buffer Pool만으로는 부족하다. 트랜잭션 보장을 위해선 변경된 내용을 순차적으로 데이터 파일로 기록해야 한다. 이 데이터 파일이 우리가 일반적으로 부르는 로그파일이고 리두로그(Redo Log)라고 부른다. 일반적으로 DBMS에서 로그라 하면 일반적으로 이 리두 로그(Redo Log)를 말한다. 
 
-변경작업이 많은 서버에서는 리도 로그 기록작업이 큰 문제가 되는데, 이 부분을 보완하기 위해 버퍼링을 하기 된다. 그리고 리두 로그 버퍼링에 사용되는 공간이 로그 버퍼이다. 
+변경작업이 많은 서버에서는 로그 기록작업도 큰 문제가 되는데, 이 부분을 보완하기 위해 Log Buffer를 사용한다. 로그 버퍼이다. 
 
 
 
@@ -127,7 +127,8 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDI5OTQ4OSwtMTY4NDUxNTYxMywtMz
-Q0NTQ1NjA2LC0xMjY3Mzc5OTM1LDcxNjkwMzQsLTY1Njk0NzYy
-OSwtMTM1MjgzNDgyMiwtMTY3NDk4MjA1NF19
+eyJoaXN0b3J5IjpbLTEyNjIxODQ2MjMsLTE4NDI5OTQ4OSwtMT
+Y4NDUxNTYxMywtMzQ0NTQ1NjA2LC0xMjY3Mzc5OTM1LDcxNjkw
+MzQsLTY1Njk0NzYyOSwtMTM1MjgzNDgyMiwtMTY3NDk4MjA1NF
+19
 -->
