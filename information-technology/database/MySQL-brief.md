@@ -116,7 +116,9 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 멀티 버전이라는 것은 한개의 레코드에 대해서 여러 버전이 동시에 관리된다는 의미이다. 한 레코드는 Data Page Buffer, Undo Record, Disk file에 3가지 버전으로 기록이 된다. 
 
-UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Data Page Buffer으 새로운 값으로 수정되고, 디스크의 데이터도 일반적으로 동일한 상태의 데이터가 된다. 
+UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Data Page Buffer으 새로운 값으로 수정되고, 디스크의 데이터도 일반적으로 동일한 상태의 데이터가 된다.  그러면 아직 COMMIT이나 ROLLBACK이 일어나지 않은 상태에서 다른 사용자가 작업 중이던 레코드를 조회하면 어떤 버전의 데이터를 조회할까??
+
+이는 설정된 격리 수준(Isolation level)에 따라 다르다. READ_UNCOMMITED의 경우, 데이터가 COMMIT되었든 아니든 
 
 
 
@@ -136,8 +138,8 @@ UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Data Page B
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE0MDE0MzEsLTE4NDI5OTQ4OSwtMT
-Y4NDUxNTYxMywtMzQ0NTQ1NjA2LC0xMjY3Mzc5OTM1LDcxNjkw
-MzQsLTY1Njk0NzYyOSwtMTM1MjgzNDgyMiwtMTY3NDk4MjA1NF
-19
+eyJoaXN0b3J5IjpbLTk3NzkyMjQxMywtMTg0Mjk5NDg5LC0xNj
+g0NTE1NjEzLC0zNDQ1NDU2MDYsLTEyNjczNzk5MzUsNzE2OTAz
+NCwtNjU2OTQ3NjI5LC0xMzUyODM0ODIyLC0xNjc0OTgyMDU0XX
+0=
 -->
