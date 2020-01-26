@@ -115,9 +115,9 @@ MVCC는 일반적으로 레코드 레벨의 트랜잭션을 지원하는 DBMS가
 
 UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Buffer Pool이 새로운 값으로 수정되고, 디스크의 레코드도 일반적으로 동일한 상태의 데이터가 된다. 아직 COMMIT이나 ROLLBACK이 일어나지 않은 상태에서 다른 트랜잭션에서 작업 중이던 레코드를 조회하면 어떤 버전의 데이터를 조회할까?
 
-이는 설정된 격리 수준(Isolation level)에 따라 다르다. READ_UNCOMMITED의 경우, 아직 변경되지 않은 데이터를 Buffer Pool이나 Disk에서 읽어 온다. READ_COMMIT 또는 그 이상의 수준일때는 Buffer Pool이나 Disk 대신에 Undo Record에서 데이터를 가져온다. 즉 하나의 레코드가 2개의 버전이 존재하고, 상황에 따라 다른 데이터가 반환되는 구조이다. 
+SELECT의 반환 결과는 설정된 격리 수준(Isolation level)에 따라 다르다. READ_UNCOMMITED의 경우, 아직 변경되지 않은 데이터를 Buffer Pool이나 Disk에서 읽어 온다. READ_COMMIT 또는 그 이상의 수준일때는 Buffer Pool이나 Disk 대신에 Undo Record에서 데이터를 가져온다. 즉 하나의 레코드가 2개의 버전이 존재하고, 상황에 따라 다른 데이터가 반환되는 구조이다. 
 
-만약 롤백을 실행하면, 언두 영역의 백업된 데이터를 Data Page Buffer로 복구하고, 언두 영역의 내용을 삭제한다. 커밋이 안된다 언두 데이터가 바로 삭제 되는 ㅅ은 아니다. 언두 영역필요로 하는 트랜잭션이 더 없을때 비로소 삭제 된다. 
+만약 ROLLBACK을 하면, 언두 영역의 백업된 데이터를 Buffer Pool과 Disk로 복구하고, 언두 영역의 내용을 삭제한다. 그렇다고 언두 데이터가 바로 삭제 되는것은 아니고 언두 영역필요로 하는 트랜잭션이 더 없을때 비로소 삭제 된다. 
 
 격리 수준이 SERIALIZABLE이 아닌 경우, SELECT 작업은 다른 트랙잭션과 관계없이 항상 잠금 없이 바로 실행된다. 심지어 어떤 사용자가 레코드를 변경하고 아직 커밋을 수행하지 않았다고 하더라도 다른 SELECT작업을 방해하지 않는다. 이를 위해 Undo 로그를 사용한다. 
 
@@ -137,8 +137,8 @@ UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Buffer Pool
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5OTk1MTMzLDE0MTM4MzM3NzgsLTE4ND
-I5OTQ4OSwtMTY4NDUxNTYxMywtMzQ0NTQ1NjA2LC0xMjY3Mzc5
-OTM1LDcxNjkwMzQsLTY1Njk0NzYyOSwtMTM1MjgzNDgyMiwtMT
-Y3NDk4MjA1NF19
+eyJoaXN0b3J5IjpbLTkzODA5Mzk3NSwxNDEzODMzNzc4LC0xOD
+QyOTk0ODksLTE2ODQ1MTU2MTMsLTM0NDU0NTYwNiwtMTI2NzM3
+OTkzNSw3MTY5MDM0LC02NTY5NDc2MjksLTEzNTI4MzQ4MjIsLT
+E2NzQ5ODIwNTRdfQ==
 -->
