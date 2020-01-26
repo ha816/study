@@ -113,10 +113,8 @@ Undo 영역은 UPDATE, DELETE 같은 문장으로 데이터 변경 전에 이전
 #### MVCC(Multi Version Concurrency Control)
 MVCC는 일반적으로 레코드 레벨의 트랜잭션을 지원하는 DBMS가 제공하는 기능이다.  멀티 버전이라는 것은 한개의 레코드에 대해서 여러 버전이 동시에 관리된다는 의미이다. 한 레코드는 Buffer Pool(undo영역을 제외한...), Undo Record, Disk file에 3가지 버전으로 기록이 된다. 주요 목적은 잠금을 사용하지 않는 일관된 읽기(Non-locking consistent read)를 제공하는데 있는데, 이때 Undo 기록을 사용한다.
 
-UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Buffer Pool이 새로운 값으로 수정되고, 디스크의 레코드도 일반적으로 동일한 상태의 데이터가 된다. 그리고 이전의 레코드가 
-
-
- 아직 COMMIT이나 ROLLBACK이 일어나지 않은 상태에서 다른 트랜잭션에서 작업 중이던 레코드를 조회하면 어떤 버전의 데이터를 조회할까?
+UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Buffer Pool이 새로운 값으로 수정되고, 디스크의 레코드도 일반적으로 동일한 상태의 데이터가 된다. 그리고 이전의 레코드를 Undo영역에 저장한다.
+아직 COMMIT이나 ROLLBACK이 일어나지 않은 상태에서 다른 트랜잭션에서 작업 중이던 레코드를 조회하면 어떤 버전의 데이터를 조회할까?
 
 SELECT의 반환 결과는 설정된 격리 수준(Isolation level)에 따라 다르다. READ_UNCOMMITED의 경우, 데이터를 단순히 Buffer Pool이나 Disk에서 읽어 온다. READ_COMMIT 또는 그 이상의 수준일때는 Buffer Pool이나 Disk 대신에 Undo Record에서 데이터를 가져온다. 즉 하나의 레코드가 2개의 버전이 존재하고, 상황에 따라 다른 데이터가 반환되는 구조이다. 
 
@@ -144,7 +142,7 @@ SELECT의 반환 결과는 설정된 격리 수준(Isolation level)에 따라 �
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNDQxMTMyNCw1MTM2NzMwNDYsMTQxMz
+eyJoaXN0b3J5IjpbMTk1MzA4NTQ3Myw1MTM2NzMwNDYsMTQxMz
 gzMzc3OCwtMTg0Mjk5NDg5LC0xNjg0NTE1NjEzLC0zNDQ1NDU2
 MDYsLTEyNjczNzk5MzUsNzE2OTAzNCwtNjU2OTQ3NjI5LC0xMz
 UyODM0ODIyLC0xNjc0OTgyMDU0XX0=
