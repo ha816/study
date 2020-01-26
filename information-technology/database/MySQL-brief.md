@@ -110,7 +110,9 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 
 Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 데이터를 보관하는 곳이다. Undo 데이터는 트랜잭션 롤백을 위해 사용되기도 하고, 트랜잭션의 격리 수준을 유지하면서 높은 동시성을 제공하기 위해 사용된다. 
 
-## 
+## Log Buffer
+
+쿼리 문장으로 데이터를 변경하고 커밋하면 DBMS는 트랜잭션 보장을 위해  변경된 데이터의 내용을 데이터 파일로 기록해야 한다. 이 작업은 랜덤하게 디스크에 기록해야 하기 때문에 디스크를 바쁘게 만드는 작업이다. 
 
 
 
@@ -123,6 +125,6 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NDUwNDg2Miw3MTY5MDM0LC02NTY5ND
-c2MjksLTEzNTI4MzQ4MjIsLTE2NzQ5ODIwNTRdfQ==
+eyJoaXN0b3J5IjpbLTEyNjczNzk5MzUsNzE2OTAzNCwtNjU2OT
+Q3NjI5LC0xMzUyODM0ODIyLC0xNjc0OTgyMDU0XX0=
 -->
