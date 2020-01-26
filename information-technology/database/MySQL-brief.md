@@ -100,7 +100,7 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 
 ## InnoDB Buffer Pool
 
-디스크의 데이터 파일이나 인덱스 정보를 메모리에 캐시해 두는 공간이다. 쓰기 작업을 지연시켜 일괄 작업으로 처리할 수 있게 해주는 버퍼 역할도 함께 한다. 일반적인 애플리케이션에서은 테이블의 레코드를 변경하는데 이를 버퍼 풀에 모아서 처리하면 디스크 변경 작업의 횟수를 줄일 수 있다. 
+파일 디스크의 데이터 파일이나 인덱스 정보를 메모리에 캐시해 두는 공간이다. 쓰기 작업을 지연시켜 일괄 작업으로 처리할 수 있게 해주는 버퍼 역할도 함께 한다. 일반적인 애플리케이션에서은 테이블의 레코드를 변경하는데 이를 버퍼 풀에 모아서 처리하면 디스크 변경 작업의 횟수를 줄일 수 있다. 
 
 ### Insert Buffer
 
@@ -122,6 +122,6 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE2OTAzNCwtNjU2OTQ3NjI5LC0xMzUyOD
-M0ODIyLC0xNjc0OTgyMDU0XX0=
+eyJoaXN0b3J5IjpbMjA1MzY2ODc5OCw3MTY5MDM0LC02NTY5ND
+c2MjksLTEzNTI4MzQ4MjIsLTE2NzQ5ODIwNTRdfQ==
 -->
