@@ -161,8 +161,21 @@ MVCC의 주요 목적은 잠금 없는 일관된 읽기(Non-locking consistent r
 
 변경작업이 많은 서버에서는 로그 기록작업도 부하가 커서, 버퍼링을 사용하게 되는데, 이때 사용하는 버퍼가 Log Buffer이다.
 
+# NDB Cluster Storage Engine
+
+## Cluster
+
+클러스터는 NDB(Network DataBase) 클러스터 스토리지 엔진을 사용한다. 이 엔진은 네트워크를 통해 데이터 분산을 지원하는 스토리지 엔진이다. 
+
+## NDB 클러스터의 특징
+
+- 무공유 클러스터링
+	- NDB 클러스터는 클러스터 그룹내의 모든 노드가 아무것도 공유하지 않는 무공유 아키텍처로 구현되어 있다. NDB 클러스터는 데이터를 저장하는 스토리지가 분산되어 관리되기 때문에 한 데이터 저장소가 작동을 멈추더라도 서비스에 영향이 없다. 
+- 메모리 기반의 스토리지 엔진
+- 자동화된 Fail-over
+- 분산된 데이터 저장소간의 동기 방식 복제
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MTYzNTg0OV19
+eyJoaXN0b3J5IjpbODU4MjQxMjgwXX0=
 -->
