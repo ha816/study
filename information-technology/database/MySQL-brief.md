@@ -82,12 +82,16 @@ Slave
 
 
 # InnoDB Storage Engine 
-MySQL에서 사용할 수 있는 스토리지 엔진 
+MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일하게 레코드 기반 잠금 기능이 있다.** 따라서 높은 동시성 처가 가능하고 안정적이며 성능이 뛰어나다. 
+
+## 특성
+
+## InnoDB Buffer Pool
 
 
 # NDB Cluster Storage Engine
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMjIxMjA2OV19
+eyJoaXN0b3J5IjpbLTE2OTgyMjI1MjJdfQ==
 -->
