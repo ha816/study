@@ -63,8 +63,6 @@ Master
 Slave
 : 바이너리 로그를 받아 마스터 서버의 정보(IP, Port, 접속 계정)를 가지고 있는 경우 슬레이브가 된다. 마스터 서버가 바이너리 로그를 가지고 있다면, 슬레이브 서버는 **릴레이 로그**를 가진다. 마스터 서버와의 동일한 데이터 유지를 위해 슬레이브 서버는 마스터서버에 접속해 변경 내역을 가져와 릴레이 로그에 기록한다.(Slave_IO_Thread). SQL 스레드(Slave_SQL_Thread)가 릴레이 로그의 변경 작업을 재실행(replay)하여 데이터의 일관성을 유지한다. 
 
-
-
 ## 쿼리 캐시(Query Cache)
 
 쿼리 캐시는 타 DBMS에서는 볼 수 없는 MySQL만의 독특한 기능이다. **쿼리 캐시는 단어의 의미와는 달리 SQL 문장을 캐시하는 것이 아니라 쿼리의 결과를 메모리에 캐시해두는 기능이다.** 
@@ -130,7 +128,6 @@ MVCC의 주요 목적은 잠금 없는 일관된 읽기(Non-locking consistent r
 
 
 
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2OTA4MzUzXX0=
+eyJoaXN0b3J5IjpbMTk3NTUwODM5N119
 -->
