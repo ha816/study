@@ -122,27 +122,17 @@ SELECT의 반환 결과는 설정된 격리 수준(Isolation level)에 따라 �
 
 MVCC의 주요 목적은 잠금 없는 일관된 읽기(Non-locking consistent read)를 사용하기이라 이야기 했다. 일관된 읽기를 사용하기 위해서는 두 조건이 따르는데 일단 격리 수준이 SERIALIZABLE이 아니고, 다른 트랜잭션에서 INSERT 작업을 하지 말아야 한다. SERIALIZABLE보다 낮은 수준에서 INSERT 작업 중이면 PhantomRead 상황이 발생할 수 있기 때문에 여기서는 잠금 없는 일관된 읽기가 불가능하다. 
 
-심지어 어떤 사용자가 레코드를 변경하고 아직 커밋을 수행하지 않았다고 하더라도 다른 SELECT작업을 방해하지 않는다. 
-
-
-
-
 ## Log Buffer & Redo Log
 
 트랜잭션 보장을 위해서는 앞서 보았던 Buffer Pool만으로는 부족하다. 트랜잭션 보장을 위해선 변경된 내용을 순차적으로 데이터 파일로 기록해야 한다. 이 데이터 파일이 우리가 일반적으로 부르는 로그파일이고 리두로그(Redo Log)라고 부른다. 일반적으로 DBMS에서 로그라 하면 일반적으로 이 리두 로그(Redo Log)를 말한다. 
 
 변경작업이 많은 서버에서는 로그 기록작업도 부하가 커서, 버퍼링을 사용하게 되는데, 이때 사용하는 버퍼가 Log Buffer이다.
 
-## MVCC(Multi Version Concurreny Control)
-
-## Non-locking consistent read
-
-
 # NDB Cluster Storage Engine
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTc4MjI5NzMsNTEzNjczMDQ2LDE0MT
+eyJoaXN0b3J5IjpbLTE3NTM0OTAwMjIsNTEzNjczMDQ2LDE0MT
 M4MzM3NzgsLTE4NDI5OTQ4OSwtMTY4NDUxNTYxMywtMzQ0NTQ1
 NjA2LC0xMjY3Mzc5OTM1LDcxNjkwMzQsLTY1Njk0NzYyOSwtMT
 M1MjgzNDgyMiwtMTY3NDk4MjA1NF19
