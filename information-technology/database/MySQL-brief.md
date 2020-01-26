@@ -112,7 +112,7 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 ## Log Buffer
 
-쿼리 문장으로 데이터를 변경하고 커밋하면 DBMS는 트랜잭션 보장을 위해  변경된 데이터의 내용을 데이터 파일로 기록해야 한다. 이 작업은 랜덤하게 디스크에 기록해야 하기 때문에 디스크를 바쁘게 만드는 작업이다. 
+쿼리 문장으로 데이터를 변경하고 커밋하면 DBMS는 트랜잭션 보장을 위해  변경된 데이터의 내용을 데이터 파일로 기록해야 한다. 이 작업은 랜덤하게 디스크에 기록해야 하기 때문에 디스크를 바쁘게 만드는 작업이다. 이 부하를 줄이기 위해 
 
 
 
@@ -125,6 +125,7 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjczNzk5MzUsNzE2OTAzNCwtNjU2OT
-Q3NjI5LC0xMzUyODM0ODIyLC0xNjc0OTgyMDU0XX0=
+eyJoaXN0b3J5IjpbNTQ3ODgxMTc5LC0xMjY3Mzc5OTM1LDcxNj
+kwMzQsLTY1Njk0NzYyOSwtMTM1MjgzNDgyMiwtMTY3NDk4MjA1
+NF19
 -->
