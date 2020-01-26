@@ -106,6 +106,8 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 ## Insert Buffer
 
+레코드가 INSERT되거나 UPDATE 될때는 데이터 파일을 변경하는 것 뿐만아니라 해당 테이블에 인덱스를 업데이트 ㅏ
+
 ## MVCC(Multi Version Concurreny Control)
 
 ## Non-locking consistent read
@@ -115,6 +117,6 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTI4MzQ4MjIsLTE2NzQ5ODIwNTRdfQ
-==
+eyJoaXN0b3J5IjpbMTU3NDI5MjM2NCwtMTM1MjgzNDgyMiwtMT
+Y3NDk4MjA1NF19
 -->
