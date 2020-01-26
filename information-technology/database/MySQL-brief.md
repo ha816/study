@@ -108,7 +108,7 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 
 ### Undo Record
 
-Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 데이터를 보관하는 곳이다. Undo 데이터는 트랜잭션 롤백을 위해 사용되기도 하고, 트랜잭션의 격리 수준을 유지하면서 높은 동시성을 제공하기 위해 사용된다. 후자의 기능이 바로 MVCC의 기능을 구현하기 위해 사용된다. 
+Undo 영역은 UPDATE, DELETE 같은 문장으로 데이터 변경 전에 이전 데이터를 보관하는 곳이다. Undo 데이터는 트랜잭션 롤백을 위해 사용되기도 하고, 트랜잭션의 격리 수준을 유지하면서 높은 동시성을 제공하기 위해 사용된다. 후자의 기능이 바로 MVCC의 기능을 구현하기 위해 사용된다. 
 
 #### MVCC(Multi Version Concurrency Control)
 
@@ -121,7 +121,11 @@ UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Data Page B
 이는 설정된 격리 수준(Isolation level)에 따라 다르다. READ_UNCOMMITED의 경우, 데이터가 COMMIT되었든 아니든 변경되지 않은 데이터를 읽어 온다. 
 READ_COMMIT나 그 이상의 수준일때는 아직 변경이 커밋 되지 않았기 때문에 Data Page Buffer이나 Disk file 대신에 Undo Record에 데이터를 반환한다. 즉 하나의 레코드가 2개의 버전이 존재하고, 상황에 따라 다른 데이터가 반환되는 구조이다. 
 
+만약 롤백을 실행하면, 언두 영역의 백업된 데이터를 Data Page Buffer로 복구하고, 언두 영역의 내용을 삭제한다. 커밋이 안된다 언두 데이터가 바로 삭제 되는 ㅅ은 아니다. 언두 영역필요로 하는 트랜잭션이 더 없을때 비로소 삭제 된다. 
 
+#### 잠금 없는 일관된 읽기 
+
+격리 수준이 SERIALIZABLE이 아닌 경우, SELECT 작업은 다른 트랙잭션과 관계없이 항상 잠금 없이 바로 실행된다. 심지어 어떤 사용자가 레코드를 변경하고 아직 커밋을 수행하지 않았다고 하더라도 다른 SELECT작업을 방해하지 않는다. 이를 위해 Undo 로그를 사용한다. 
 
 
 
@@ -140,7 +144,7 @@ READ_COMMIT나 그 이상의 수준일때는 아직 변경이 커밋 되지 않�
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDczODg1OSwtMTg0Mjk5NDg5LC0xNj
+eyJoaXN0b3J5IjpbMTI4NjQzNjYwNywtMTg0Mjk5NDg5LC0xNj
 g0NTE1NjEzLC0zNDQ1NDU2MDYsLTEyNjczNzk5MzUsNzE2OTAz
 NCwtNjU2OTQ3NjI5LC0xMzUyODM0ODIyLC0xNjc0OTgyMDU0XX
 0=
