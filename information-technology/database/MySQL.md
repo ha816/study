@@ -55,16 +55,15 @@ MySQL은 프로세스 기반이 아니라 스레드 기반으로 동작한다.
 ## 쿼리 캐시(Query Cache)
 
 쿼리 캐시는 타 DBMS에서는 볼 수 없는 MySQL만의 독특한 기능이다. **쿼리 캐시는 단어의 의미와는 달리 SQL 문장을 캐시하는 것이 아니라 쿼리의 결과를 메모리에 캐시해두는 기능이다.** 
-쿼리 캐시 구조는 Map으로 구현되어 있다. 키는 쿼리 문장 자체이고, 값은 해당 쿼리의 결과이다. 실제 쿼리할 때는 상당한 부분의 처리 절차가 있다. 이를 무시하고 동일한 쿼리 문장이 요청되었다고 해서 바로 캐시된 결과를 보내선 안된다. 캐시 결과를 내려보기 
+쿼리 캐시 구조는 Map으로 구현되어 있다. 키는 쿼리 문장 자체이고, 값은 해당 쿼리의 결과이다. 실제 쿼리할 때는 복잡한 처리 절차가 있다. 이를 무시하고 동일한 쿼리 문장이 요청되었다고 해서 바로 캐시된 결과를 보내선 안된다. 캐시 결과를 내려보기 전에 아래와 같은 확인 절차를 거친다. 
 
-쿼리 캐시의 결과를 내려보내기 전 확인 절차
+### 쿼리 캐시 결과 확인 절차
 
 1. 요청된 쿼리 문장이 캐시에 존재하는가?
 2. 해당 사용자가 쿼리를 볼 수 있는 권한이 있는가?
 3. 트랜잭션 내에 실행된 쿼리의 경우, 그 결과가 범위내의 트랜잭션에서 만들어진 결과인가?
 4. 캐시가 만들어지고 난 후 데이터가 다른 사용자에 의해 변경되지 않았는가?
 5. 쿼리에 사용된 내장함수, 저장함수등이 캐시되어도 동일한 결과를 보장하는가?
-	6. 
 6. 쿼리 결과가 캐시해두기에는 너무 크지 않은가?
 7. 그 밖에 캐시를 사용하지 못하게 하는 요소가 있는가?
 
@@ -74,11 +73,11 @@ MySQL은 프로세스 기반이 아니라 스레드 기반으로 동작한다.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MjExMjI4MCwtOTU1MDQ3NDE1LC0xMD
-M1NDk4NTYxLDUxMDM4MTQwOSwtOTQ2OTIzMzI4LC0xNTk2OTIy
-NDI2LDkyMTYzNjE0NCw3MTQxNDg0NTMsMzM2MjY0MjM4LDE4OT
-IxOTg1MjksMTU2NzAxNDMxNSwzMzMyNzMxNjcsLTM3NjU4OTUz
-NCwzOTk4MjI1NjMsMTM0NjIzODA0LC0xNjM0ODUxMzAyLC0xMz
-gzNTkxODkwLDg1MTQ2NzAwOCwxNTM4MDg1NTg4LDEzMzg1NTM2
-NTJdfQ==
+eyJoaXN0b3J5IjpbLTIwODcyNTg2NjcsLTk1NTA0NzQxNSwtMT
+AzNTQ5ODU2MSw1MTAzODE0MDksLTk0NjkyMzMyOCwtMTU5Njky
+MjQyNiw5MjE2MzYxNDQsNzE0MTQ4NDUzLDMzNjI2NDIzOCwxOD
+kyMTk4NTI5LDE1NjcwMTQzMTUsMzMzMjczMTY3LC0zNzY1ODk1
+MzQsMzk5ODIyNTYzLDEzNDYyMzgwNCwtMTYzNDg1MTMwMiwtMT
+M4MzU5MTg5MCw4NTE0NjcwMDgsMTUzODA4NTU4OCwxMzM4NTUz
+NjUyXX0=
 -->
