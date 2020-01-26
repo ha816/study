@@ -108,7 +108,7 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 
 ### Undo Record
 
-Undo 영역은 UPDATE, DELETE 같은 문장으로 데이터 변경 전에 이전 데이터를 보관하는 곳이다. Undo 데이터는 트랜잭션 롤백을 위해 사용되기도 하고, 트랜잭션의 격리 수준을 유지하면서 높은 동시성을 제공하기 위해 사용된다. 후자의 기능이 바로 MVCC의 기능을 구현하기 위해 사용된다. 
+Undo 영역은 UPDATE, DELETE 같은 문장으로 데이터 변경 전에 이전 데이터를 보관하는 곳이다. Undo 데이터는 트랜잭션 롤백을 위해 사용되기도 하고, 트랜잭션의 격리 수준에 따라 을 유지하면서 높은 동시성을 제공하기 위해 사용된다. 후자의 기능이 바로 MVCC의 기능을 구현하기 위해 사용된다. 
 
 #### MVCC(Multi Version Concurrency Control)
 
@@ -123,10 +123,7 @@ READ_COMMIT나 그 이상의 수준일때는 아직 변경이 커밋 되지 않�
 
 만약 롤백을 실행하면, 언두 영역의 백업된 데이터를 Data Page Buffer로 복구하고, 언두 영역의 내용을 삭제한다. 커밋이 안된다 언두 데이터가 바로 삭제 되는 ㅅ은 아니다. 언두 영역필요로 하는 트랜잭션이 더 없을때 비로소 삭제 된다. 
 
-#### 잠금 없는 일관된 읽기 
-
 격리 수준이 SERIALIZABLE이 아닌 경우, SELECT 작업은 다른 트랙잭션과 관계없이 항상 잠금 없이 바로 실행된다. 심지어 어떤 사용자가 레코드를 변경하고 아직 커밋을 수행하지 않았다고 하더라도 다른 SELECT작업을 방해하지 않는다. 이를 위해 Undo 로그를 사용한다. 
-
 
 
 ## Log Buffer & Redo Log
@@ -144,7 +141,7 @@ READ_COMMIT나 그 이상의 수준일때는 아직 변경이 커밋 되지 않�
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NjQzNjYwNywtMTg0Mjk5NDg5LC0xNj
+eyJoaXN0b3J5IjpbMTIwMzE5MDE4NiwtMTg0Mjk5NDg5LC0xNj
 g0NTE1NjEzLC0zNDQ1NDU2MDYsLTEyNjczNzk5MzUsNzE2OTAz
 NCwtNjU2OTQ3NjI5LC0xMzUyODM0ODIyLC0xNjc0OTgyMDU0XX
 0=
