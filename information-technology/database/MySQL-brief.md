@@ -90,7 +90,9 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 * 잠금이 필요 없는 일관된 읽기(Non-locking consistent read)
 	* MVCC(Multi Version Concurreny Control)이라는 기술로 락을 걸지 않고 읽기 작업을 수행한다. 
 * 외래키 지원
-	* 외래키는 여라가지 제약사항 때문에 실무에서 많이 사용하지는 않지만, 
+	* 외래키는 여라가지 제약사항 때문에 실무에서 많이 사용하지는 않다. 왜냐하면 데이터 변경시 여러 테이블에서 데이터가 있는지 체크하는 작업이 필요해서 잠금이 여러 테이블로 전파되고, 이로 인해 데드락이 발생하는 경우가 많다.
+* 자동 데드락 감지
+	* 그래프 기반의 데드락 체크 방식을 사용하여, 데드락이 발생하면 바로 감지되고 
 
 
 ## InnoDB Buffer Pool
@@ -106,5 +108,5 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk1MTc5NjY0XX0=
+eyJoaXN0b3J5IjpbMTI5MTU4MTk2NF19
 -->
