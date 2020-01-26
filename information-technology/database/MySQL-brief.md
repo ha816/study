@@ -102,9 +102,7 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 
 ## Undo 로그
 
-언두 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 데이터를 보관하는 곳이다. 언두 데이터는 트랜잭션 롤백을 위해 사용되기도 하고, 트랜잭션의 격리 수준을 유지하면서 높은 동시성을 제공하기 위해 사용된다. 
-
-
+Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 데이터를 보관하는 곳이다. Undo 데이터는 트랜잭션 롤백을 위해 사용되기도 하고, 트랜잭션의 격리 수준을 유지하면서 높은 동시성을 제공하기 위해 사용된다. 
 
 ## Insert Buffer
 
@@ -117,5 +115,6 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM0NzI4NjYyLC0xNjc0OTgyMDU0XX0=
+eyJoaXN0b3J5IjpbLTEzNTI4MzQ4MjIsLTE2NzQ5ODIwNTRdfQ
+==
 -->
