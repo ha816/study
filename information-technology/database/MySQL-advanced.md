@@ -40,17 +40,7 @@ There is no general rule to select a sharding key; what key you choose depends o
 * 키 파티션
 	* 키 파티션은 해시 파티션과 거의 비슷하다. 차이점은 키 파티션의 경우 해시 값의 계산을 MySQL 서버가 MD5() 함수를 이용해서 해시 값을 계산하고, 그 값을 MOD하여 각 파티션에 분배한다.
 	
-## Cluster
 
-클러스터는 NDB(Network DataBase) 클러스터 스토리지 엔진을 사용한다. 이 엔진은 네트워크를 통해 데이터 분산을 지원하는 스토리지 엔진이다. 
-
-### NDB 클러스터의 특징
-
-- 무공유 클러스터링
-	- NDB 클러스터는 클러스터 그룹내의 모든 노드가 아무것도 공유하지 않는 무공유 아키텍처로 구현되어 있다. NDB 클러스터는 데이터를 저장하는 스토리지가 분산되어 관리되기 때문에 한 데이터 저장소가 작동을 멈추더라도 서비스에 영향이 없다. 
-- 메모리 기반의 스토리지 엔진
-- 자동화된 Fail-over
-- 분산된 데이터 저장소간의 동기 방식 복제
 
  
 > Statement와 PreparedStatement의 차이
@@ -88,5 +78,5 @@ PreparedStatement를 사용할 때는 SQL 쿼리ㅣ 문장을 이용해 Prepared
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0OTk3NTQ5LDE2Mjg2ODY1NDVdfQ==
+eyJoaXN0b3J5IjpbMTM0NTExNjM1LDE2Mjg2ODY1NDVdfQ==
 -->
