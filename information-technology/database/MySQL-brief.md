@@ -96,6 +96,8 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 * 오라클 아키텍처 적용
 	* InnoDB는 오라클 DBMS와 상당히 비슷한 부분이 많다. MVCC, Undo 데이터가 시스템 테이블 스페이스의 개념등 비슷한 부분이 많다.
 
+![enter image description here](https://t1.daumcdn.net/cfile/tistory/99A451505BDFF70729)
+
 ## InnoDB Buffer Pool
 
 디스크의 데이터 파일이나 인덱스 정보를 메모리에 캐시해 두는 공간이다. 쓰기 작업을 지연시켜 일괄 작업으로 처리할 수 있게 해주는 버퍼 역할도 함께 한다. 일반적인 애플리케이션에서은 테이블의 레코드를 변경하는데 이를 버퍼 풀에 모아서 처리하면 디스크 변경 작업의 횟수를 줄일 수 있다. 
@@ -117,6 +119,6 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1Njk0NzYyOSwtMTM1MjgzNDgyMiwtMT
-Y3NDk4MjA1NF19
+eyJoaXN0b3J5IjpbLTIwNDkwNTE5MDMsLTY1Njk0NzYyOSwtMT
+M1MjgzNDgyMiwtMTY3NDk4MjA1NF19
 -->
