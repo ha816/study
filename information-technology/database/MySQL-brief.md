@@ -72,10 +72,9 @@ MySQL은 프로세스 기반이 아니라 스레드 기반으로 동작한다.
 
 
 
+# NDB Cluster Storage Engine
 
-
-
-
+# MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjcxNjY4MDddfQ==
+eyJoaXN0b3J5IjpbMzY1NzcxODA2XX0=
 -->
