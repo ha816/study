@@ -106,7 +106,7 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 ## Insert Buffer
 
-레코드가 INSERT되거나 UPDATE 될때는 데이터 파일을 변경하는 것 뿐만아니라 해당 테이블에 인덱스를 업데이트 ㅏ
+레코드가 INSERT되거나 UPDATE 될때는 데이터 파일을 변경하는 것 뿐만아니라 해당 테이블에 인덱스를 업데이트하는 작업도 필요하다. 이 작업을 위해서 디스크를 읽고 쓰는 작업이 필요한데 이게 리스크하다. 그래서 변경할 인덱스 페이지가 버퍼 풀에 있으면 바로 업데이트를 수행하고, 없다면 디스크로부터 읽어와 업데이트를 해야할때는 임시 공간에 저장해 두고 바로 사용자에게 결과를 반환하는 형태로 성능을 향상 시킨다. 이때 사용하는 임시 메모리 공간을 Insert Buffer라 한다.  
 
 ## MVCC(Multi Version Concurreny Control)
 
@@ -117,6 +117,6 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NDI5MjM2NCwtMTM1MjgzNDgyMiwtMT
+eyJoaXN0b3J5IjpbLTY1Njk0NzYyOSwtMTM1MjgzNDgyMiwtMT
 Y3NDk4MjA1NF19
 -->
