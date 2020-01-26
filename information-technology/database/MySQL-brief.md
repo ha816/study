@@ -117,8 +117,6 @@ UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Buffer Pool
 
 SELECT의 반환 결과는 설정된 격리 수준(Isolation level)에 따라 다르다. READ_UNCOMMITED의 경우, 아직 변경되지 않은 데이터를 Buffer Pool이나 Disk에서 읽어 온다. READ_COMMIT 또는 그 이상의 수준일때는 Buffer Pool이나 Disk 대신에 Undo Record에서 데이터를 가져온다. 즉 하나의 레코드가 2개의 버전이 존재하고, 상황에 따라 다른 데이터가 반환되는 구조이다. 
 
-격리 수준이 SERIALIZABLE이 아닌 경우, SELECT 작업은 다른 트랙잭션과 관계없이 항상 잠금 없이 바로 실행된다. 심지어 어떤 사용자가 레코드를 변경하고 아직 커밋을 수행하지 않았다고 하더라도 다른 SELECT작업을 방해하지 않는다. 
-
 만약 ROLLBACK을 하면, 언두 영역의 백업된 데이터를 Buffer Pool과 Disk로 복구하고, 언두 영역의 내용을 삭제한다. 그렇다고 언두 데이터가 바로 삭제 되는것은 아니고 언두 영역을 필요로 하는 트랜잭션이 더 없을때 비로소 삭제 된다. 
 
 
@@ -139,8 +137,8 @@ SELECT의 반환 결과는 설정된 격리 수준(Isolation level)에 따라 �
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEzNjczMDQ2LDE0MTM4MzM3NzgsLTE4ND
-I5OTQ4OSwtMTY4NDUxNTYxMywtMzQ0NTQ1NjA2LC0xMjY3Mzc5
-OTM1LDcxNjkwMzQsLTY1Njk0NzYyOSwtMTM1MjgzNDgyMiwtMT
-Y3NDk4MjA1NF19
+eyJoaXN0b3J5IjpbLTg3NzMzNDEwNCw1MTM2NzMwNDYsMTQxMz
+gzMzc3OCwtMTg0Mjk5NDg5LC0xNjg0NTE1NjEzLC0zNDQ1NDU2
+MDYsLTEyNjczNzk5MzUsNzE2OTAzNCwtNjU2OTQ3NjI5LC0xMz
+UyODM0ODIyLC0xNjc0OTgyMDU0XX0=
 -->
