@@ -118,7 +118,9 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Data Page Buffer으 새로운 값으로 수정되고, 디스크의 데이터도 일반적으로 동일한 상태의 데이터가 된다.  그러면 아직 COMMIT이나 ROLLBACK이 일어나지 않은 상태에서 다른 사용자가 작업 중이던 레코드를 조회하면 어떤 버전의 데이터를 조회할까??
 
-이는 설정된 격리 수준(Isolation level)에 따라 다르다. READ_UNCOMMITED의 경우, 데이터가 COMMIT되었든 아니든 
+이는 설정된 격리 수준(Isolation level)에 따라 다르다. READ_UNCOMMITED의 경우, 데이터가 COMMIT되었든 아니든 변경되지 않은 데이터를 읽어 온다. 
+READ_COMMIT나 그 이상의 수준일때는 아직 변경이 커밋 되지 않았기 때문에 Data Page Buffer이나 Disk file 대신에 Undo Record에 데이터를 반환한다. 즉 하나의 레코드가 2개의 버전이 존재하고, 상황에 따라 다른 데이터가 반환되는 구조이다. 
+
 
 
 
@@ -138,7 +140,7 @@ UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Data Page B
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NzkyMjQxMywtMTg0Mjk5NDg5LC0xNj
+eyJoaXN0b3J5IjpbMTg5NDczODg1OSwtMTg0Mjk5NDg5LC0xNj
 g0NTE1NjEzLC0zNDQ1NDU2MDYsLTEyNjczNzk5MzUsNzE2OTAz
 NCwtNjU2OTQ3NjI5LC0xMzUyODM0ODIyLC0xNjc0OTgyMDU0XX
 0=
