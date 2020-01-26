@@ -119,7 +119,7 @@ SELECT의 반환 결과는 설정된 격리 수준(Isolation level)에 따라 �
 
 만약 ROLLBACK을 하면, 언두 영역의 백업된 데이터를 Buffer Pool과 Disk로 복구하고, 언두 영역의 내용을 삭제한다. 그렇다고 언두 데이터가 바로 삭제 되는것은 아니고 언두 영역을 필요로 하는 트랜잭션이 더 없을때 비로소 삭제 된다. 
 
-잠금 없는 일관된 읽기를 사용하기 위해서는 일단 격리 수준이 SERIALIZABLE이 아니여야 한다. 그리고 다른 트랜잭션에서 INSERT 작업을 하지 않을때, 잠금 없이 바로 실행된다. 심지어 어떤 사용자가 레코드를 변경하고 아직 커밋을 수행하지 않았다고 하더라도 다른 SELECT작업을 방해하지 않는다. 
+잠금 없는 일관된 읽기(Non-locking consistent read)를 사용하기 위해서는 일단 격리 수준이 SERIALIZABLE이 아니여야 한다. 그리고 다른 트랜잭션에서 INSERT 작업을 하지 않을때, 잠금 없이 바로 실행된다. 심지어 어떤 사용자가 레코드를 변경하고 아직 커밋을 수행하지 않았다고 하더라도 다른 SELECT작업을 방해하지 않는다. 
 
 
 
@@ -139,8 +139,8 @@ SELECT의 반환 결과는 설정된 격리 수준(Isolation level)에 따라 �
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODIxNjcwMjksNTEzNjczMDQ2LDE0MT
-M4MzM3NzgsLTE4NDI5OTQ4OSwtMTY4NDUxNTYxMywtMzQ0NTQ1
-NjA2LC0xMjY3Mzc5OTM1LDcxNjkwMzQsLTY1Njk0NzYyOSwtMT
-M1MjgzNDgyMiwtMTY3NDk4MjA1NF19
+eyJoaXN0b3J5IjpbOTQwMTc5MjksNTEzNjczMDQ2LDE0MTM4Mz
+M3NzgsLTE4NDI5OTQ4OSwtMTY4NDUxNTYxMywtMzQ0NTQ1NjA2
+LC0xMjY3Mzc5OTM1LDcxNjkwMzQsLTY1Njk0NzYyOSwtMTM1Mj
+gzNDgyMiwtMTY3NDk4MjA1NF19
 -->
