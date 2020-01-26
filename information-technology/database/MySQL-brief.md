@@ -116,6 +116,8 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 멀티 버전이라는 것은 한개의 레코드에 대해서 여러 버전이 동시에 관리된다는 의미이다. 한 레코드는 Data Page Buffer, Undo Record, Disk file에 3가지 버전으로 기록이 된다. 
 
+UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Data Page Buffer으 새로운 
+
 
 
 
@@ -134,8 +136,8 @@ Undo 영역은 UPDATE, DELETE같은 문장으로 데이터 변경 전에 이전 
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODk1NDE1MjUsLTE4NDI5OTQ4OSwtMT
-Y4NDUxNTYxMywtMzQ0NTQ1NjA2LC0xMjY3Mzc5OTM1LDcxNjkw
-MzQsLTY1Njk0NzYyOSwtMTM1MjgzNDgyMiwtMTY3NDk4MjA1NF
-19
+eyJoaXN0b3J5IjpbMTEzOTMwNjE5NSwtMTg0Mjk5NDg5LC0xNj
+g0NTE1NjEzLC0zNDQ1NDU2MDYsLTEyNjczNzk5MzUsNzE2OTAz
+NCwtNjU2OTQ3NjI5LC0xMzUyODM0ODIyLC0xNjc0OTgyMDU0XX
+0=
 -->
