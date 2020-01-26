@@ -159,16 +159,13 @@ MVCC의 주요 목적은 잠금 없는 일관된 읽기(Non-locking consistent r
 - 자동화된 Fail-over
 - 분산된 데이터 저장소간의 동기 방식 복제
 
-## Cluster VS Replication
+## [Cluster VS Replication](https://blog.seulgi.kim/2015/05/what-is-mysql-replication.html)
 
-클러스터와 리플리케이션의 차이는 굉장히 자주 비교 대상이 도니다
-replication의 가장 큰 장점은 cluster에 비해서 값을 변경하는 쿼리가 매우 빠르게 실행된다. 그래서 주로 실시간 동기화가 필요 없는 경우 cluster대신 replication을 사용한다.
-
-> [Cluster와 Replication의 차이](https://blog.seulgi.kim/2015/05/what-is-mysql-replication.html)
+클러스터와 리플리케이션은 자주 비교 대상이 된다. replication의 가장 큰 장점은 cluster에 비해서 값을 변경하는 쿼리가 매우 빠르게 실행된다. 그래서 주로 실시간 동기화가 필요 없는 경우 cluster대신 replication을 사용한다.
  
-MySQL replication은 데이터베이스를 그대로 복사하여 데이터베이스를 한 벌 더 만드는 기능이다. 언뜻 보면 MySQL cluster와 비슷하지만, 말 그대로 분산환경을 만들어서 [single point of failure](http://en.wikipedia.org/wiki/Single_point_of_failure)를 없애려는 cluster와는 달리 MySQL replication은 단순히 데이터를 복제한다.  
+MySQL replication은 데이터베이스를 그대로 복사하여 데이터베이스를 한 벌 더 만드는 기능이다. 언뜻 보면 MySQL cluster와 비슷하지만, 분산환경을 만들어서 [single point of failure](http://en.wikipedia.org/wiki/Single_point_of_failure)를 없애려는 cluster와는 달리 MySQL replication은 단순히 데이터를 복제한다.  
   
-따라서 모든 데이터가 동기화되는 cluster와는 달리, replication은 동기화가 비동기적으로 발생한다. 따라서 어떤 데이터베이스에는 데이터가 업데이트되어 있지만, 다른 데이터베이스에서는 업데이트되지 않을 수도 있다.  
+모든 데이터가 실시간 동기화되는 cluster와는 달리, replication은 동기화가 비동기적으로 발생한다. 따라서 어떤 데이터베이스에는 데이터가 업데이트되어 있지만, 다른 데이터베이스에서는 업데이트되지 않을 수도 있다.  
   
 또한, 마스터와 슬레이브로 나누어지기 때문에 데이터를 변경하는 쿼리는 단 하나의 데이터베이스에만 요청할 수 있다. 다시 말해서 슬레이브의 데이터를 변경하면, 마스터에 그 변경은 반영되지 않고, 동기화하는 도중 에러를 발생시키기도 한다.  
   
@@ -178,5 +175,5 @@ replication이 cluster에 비해서 가지는 가장 큰 장점은 cluster에 �
   
 그래서 주로 실시간 동기화가 필요 없는 경우 cluster대신 replication을 사용한다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTkxOTY0Niw4NTgyNDEyODBdfQ==
+eyJoaXN0b3J5IjpbOTE0NTU2MzI4LDg1ODI0MTI4MF19
 -->
