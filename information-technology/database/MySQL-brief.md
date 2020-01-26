@@ -111,10 +111,8 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 Undo 영역은 UPDATE, DELETE 같은 문장으로 데이터 변경 전에 이전 데이터를 보관하는 곳이다. Undo 데이터는 트랜잭션 롤백을 위해 사용된다. 또 트랜잭션 격리 수준에 맞는 MVCC를 위해 사용된다.
 
 #### MVCC(Multi Version Concurrency Control)
+MVCC는 일반적으로 레코드 레벨의 트랜잭션을 지원하는 DBMS가 제공하는 기능이다.  멀티 버전이라는 것은 한개의 레코드에 대해서 여러 버전이 동시에 관리된다는 의미이다. 한 레코드는 Data Page Buffer, Undo Record, Disk file에 3가지 버전으로 기록이 된다. 주요 목적은 잠금을 사용하지 않는 일관된 읽기(Non-locking consistent read)를 제공하는데 있는데, 이때 Undo 기록을 사용한다.
 
-일반적으로 레코드 레벨의 트랜잭션을 지원하는 DBMS가 제공하는 기능이다. 가장 큰 목적은 잠금을 사용하지 않는 일관된 읽기를 제공하는데 있는데, 이때 Undo 로그를 사용해 기능을 구현한다.   
-
-멀티 버전이라는 것은 한개의 레코드에 대해서 여러 버전이 동시에 관리된다는 의미이다. 한 레코드는 Data Page Buffer, Undo Record, Disk file에 3가지 버전으로 기록이 된다. 
 
 UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Data Page Buffer으 새로운 값으로 수정되고, 디스크의 데이터도 일반적으로 동일한 상태의 데이터가 된다.  그러면 아직 COMMIT이나 ROLLBACK이 일어나지 않은 상태에서 다른 사용자가 작업 중이던 레코드를 조회하면 어떤 버전의 데이터를 조회할까??
 
@@ -141,7 +139,7 @@ READ_COMMIT나 그 이상의 수준일때는 아직 변경이 커밋 되지 않�
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MTIyMjUzMCwtMTg0Mjk5NDg5LC0xNj
+eyJoaXN0b3J5IjpbMTQxMzgzMzc3OCwtMTg0Mjk5NDg5LC0xNj
 g0NTE1NjEzLC0zNDQ1NDU2MDYsLTEyNjczNzk5MzUsNzE2OTAz
 NCwtNjU2OTQ3NjI5LC0xMzUyODM0ODIyLC0xNjc0OTgyMDU0XX
 0=
