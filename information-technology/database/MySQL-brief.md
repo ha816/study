@@ -84,6 +84,9 @@ Slave
 # InnoDB Storage Engine 
 MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일하게 레코드 기반 잠금 기능이 있다.** 따라서 높은 동시성 처가 가능하고 안정적이며 성능이 뛰어나다. 
 
+엔진 특성
+* 프라이머리 키에 의한 클러스터링
+	* 모든 테이블은 기본적으로 프라이머리 키를 기준으로 클러스터링 되어 저장된다. 즉 프라이머리 키 값의 순서대로 저장된다. 
 
 
 ## InnoDB Buffer Pool
@@ -99,5 +102,5 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDU3NTQxNTJdfQ==
+eyJoaXN0b3J5IjpbNzE5MTY3ODBdfQ==
 -->
