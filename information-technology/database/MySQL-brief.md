@@ -96,8 +96,9 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 * 오라클 아키텍처 적용
 	* InnoDB는 오라클 DBMS와 상당히 비슷한 부분이 많다. MVCC, Undo 데이터가 시스템 테이블 스페이스의 개념등 비슷한 부분이 많다.
 
-
 ## InnoDB Buffer Pool
+
+디스크의 데이터 파일이나 인덱스 정보를 메모리에 캐시해 두는 공간이다. 쓰기 작업을 지연시켜 일괄 작업으로 처리할 수 있게 해주는 버퍼 역할도 함께 한다. 일반적인 애플리케이션에서는 테이블의 레코드를 변경하는데 이를 버퍼 풀에 모아서 처리하면 랜덤
 
 ## Insert Buffer
 
@@ -110,5 +111,6 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 
 # MySQL 로그 파일
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NzU1MzI5LC0xNjc0OTgyMDU0XX0=
+eyJoaXN0b3J5IjpbLTEzOTg2MDc5MDksLTE2NzQ5ODIwNTRdfQ
+==
 -->
