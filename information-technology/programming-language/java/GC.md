@@ -17,6 +17,8 @@ Java는 프로그램 코드에서 메모리를 명시적으로 지정하여 해�
 
 ## GC Algorithms
 
+[https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
+
 효율적인 가비지 컬렉션을 위한 정책은 두 가지 가설 하에 만들어졌다/(사실 가설이라기보다는 가정 또는 전제 조건이라 표현하는 것이 맞다).
 
 >**weak generational hypothesis**
@@ -51,5 +53,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODc2Nzk2MDZdfQ==
+eyJoaXN0b3J5IjpbLTE0NTg1MzQ4MTksLTIwODc2Nzk2MDZdfQ
+==
 -->
