@@ -96,17 +96,12 @@ Parallel Old (-XX:+UseParallelOldGC)
  Initial Mark 단계에서는 클래스 로더에서 가장 가까운 객체 중 살아 있는 객체만 찾아 냅니다. 따라서 초기에 STW가 발생되는 시간이 매우 짧게 형성되어 이점을 가져 올 수 있습니다. 
 Concurrent Mark 단계에서는 Initial Mark에서 확인된 객체에서 참조하고 있는 객체들을 따라가면서 확인을 하게 됩니다.
 Remark 단계에서는 Concurrent Mark 단계에서 새로 추가되거나 참조가 끊어진 객체를 확인합니다.
-마지막으로 Concurrent Sweep 단계에서는 GC를 수행하는 작업을 실행합니다.
+마지막으로 Concurrent Sweep 단계에서는 실제 GC(가비지 컬렉션)을 수행합니다. 
 
 ![enter image description here](https://www.cubrid.org/files/attach/images/1744/745/001/10ce40d924aebd3fc7a050dc7bcdba19.png)
 
-특징은 Concurrent Mark / Concurrent Sweep을 수행하는 과정에서 다른 쓰레드 들이 실행되고 있는 상황에서 진행된다는 것이 성능상 이점을 가져 옵니다.
-
-CMS는 STW가 짧다는 장점과 더불어 다음과 같은 단점이 존재합니다.
-
-**a. 다른 GC 방식보다 메모리와 CPU를 더 많이 사용한다.**
-
-**b. Compaction 단계가 기본적으로 제공되지 않는다.**
+CMS은 STW가 짧다는 장점과 Concurrent Mark / Concurrent Sweep을 수행하는 과정에서 다른 쓰레드 들이 실행되고 있는 상황에서 진행된다는 것이 성능상 이점을 가져 옵니다.
+단점으로는 다른 GC 방식보다 메모리와 CPU를 더 많이 사용하고 Compaction 단계가 기본적으로 제공되지 않는다.**
 
 결국 초기 STW를 줄일 수 있지만, Compaction이 없어 조각난 메모리가 많아지만 오히려 STW가 늘어날 수 있다는 단점을 보유하고 있습니다.
 
@@ -122,6 +117,6 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODA1ODc4NSwtMTM5NTM2MjM2Niw4OD
-k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
+eyJoaXN0b3J5IjpbLTIwMjYyODI3NjEsLTEzOTUzNjIzNjYsOD
+g5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
 -->
