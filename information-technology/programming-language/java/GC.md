@@ -55,6 +55,8 @@ concurrent collector
 ![enter image description here](https://codeahoy.com/img/blogs/gc-compared.png)
 
 
+![enter image description here](https://codeahoy.com/img/blogs/gc-collectors-pairing.jpg)
+
 
 전통적인 GC는 Old 제너레이션에서  **mark-sweep-compact** 방법을 사용한다. 
 
@@ -70,5 +72,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
+eyJoaXN0b3J5IjpbODg5NTU2MTE4LDE3NDY0MDU1MjEsLTIwOD
+c2Nzk2MDZdfQ==
 -->
