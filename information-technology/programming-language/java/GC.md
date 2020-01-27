@@ -39,9 +39,12 @@ Java는 프로그램 코드에서 메모리를 명시적으로 지정하여 해�
 
 ## GC Algorithms
 
-[https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
+[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
 
 일반적으로 3개의 GC Algorithms 타입이 있다. 
+
+serial collector
+: uses a single thread to perform all garbage collection work, which makes it relatively efficient because there is no communication overhead between threads. It is best-suited to single processor machines -XX:+UseSerialGC.
 
 Now that we have covered generations, let’s look at garbage collection algorithms. HotSpot JVM comes with several algorithms for young and old generations. At a high level, there are three general types of collection algorithms, each with its own  [performance characteristic](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/collectors.html):
 
@@ -51,6 +54,7 @@ Now that we have covered generations, let’s look at garbage collection algorit
 > 
 > **concurrent collector**  performs most of its work concurrently (for example, while the application is still running) to keep garbage collection pauses short. It is designed for applications with medium-sized to large-sized data sets in which response time is more important than overall throughput because the techniques used to minimize pauses can reduce application performance.
 
+![enter image description here](https://codeahoy.com/img/blogs/gc-compared.png)
 
 
 
@@ -68,6 +72,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTY3MTE2MjEsLTIwODc2Nzk2MDZdfQ
+eyJoaXN0b3J5IjpbLTExOTY3NDY1NDIsLTIwODc2Nzk2MDZdfQ
 ==
 -->
