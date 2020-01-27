@@ -17,19 +17,19 @@ Java는 프로그램 코드에서 메모리를 명시적으로 지정하여 해�
 
 ## GC Heap Strucuture
 
-효율적인 가비지 컬렉션을 위한 정책은 두 가지 가설 하에 만들어졌다/(사실 가설이라기보다는 가정 또는 전제 조건이라 표현하는 것이 맞다).
+효율적인 가비지 컬렉션을 위한 정책은 두 가지 가설 하에 만들어졌다.(사실 가설이라기보다는 가정 또는 전제 조건이라 표현하는 것이 맞다).
 
 >**weak generational hypothesis**
 >대부분의 객체는 금방 접근 불가능 상태(unreachable)가 된다.
 >오래된 객체에서 젊은 객체로의 참조는 아주 적게 존재한다.
 
-이 가설의 장점을 최대한 살리기 위해서 HotSpot VM에서는 크게 2개로 물리적 공간을 나누었다. 둘로 나눈 공간이 바로 앞서 보았던 Young 영역과 Old 영역이다.
-
-### Young Generation
-
-새롭게 생성한 객체의 대부분이 위치한다. Young 영역은 Eden, Survivor 영역으로 구성되어 있다. 다시 Survivor는 From과 To로 이루어져 있으며, Eden에서 살아남은 Object는 From으로 이동한다. 이후 From에서 살아남은 객체는 To로 이동하고 여기서 또 살아남은 객체는 다시 To로 이동한다. 이를 반복적 수행하다가 Hit(GC에서 살아남은 횟수)가 Tenuring Threshold 만큼 수행된 객체들은 Old 영역으로 이동된다.
+이 가설의 장점을 최대한 살리기 위해서 HotSpot VM에서는 크게 2개로 물리적 공간을 나누었다. 둘로 나눈 공간이 Young 영역과 Old 영역이다.
 
 ![enter image description here](https://i.stack.imgur.com/8ZtFA.png)
+
+### Young Generation(Eden, From Survivor, To Survivor)
+
+새롭게 생성한 객체의 대부분이 위치한다. Young 영역은 Eden, Survivor 영역으로 구성되어 있다. 다시 Survivor는 From과 To로 이루어져 있으며, Eden에서 살아남은 Object는 From으로 이동한다. 이후 From에서 살아남은 객체는 To로 이동하고 여기서 또 살아남은 객체는 다시 To로 이동한다. 이를 반복적 수행하다가 Hit(GC에서 살아남은 횟수)가 Tenuring Threshold 만큼 수행된 객체들은 Old 영역으로 이동된다.
 
 대부분의 객체가 금방 접근 불가능 상태가 되기 때문에 매우 많은 객체가 Young 영역에 생성되었다가 사라진다. 이 영역에서 객체가 사라질때 Minor GC가 발생한다고 말한다.
 
@@ -41,9 +41,7 @@ Java는 프로그램 코드에서 메모리를 명시적으로 지정하여 해�
 
 [https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
 
-
-
-
+일반적으로 3개의 GC Algorithms 타입이 있다. 
 
 Now that we have covered generations, let’s look at garbage collection algorithms. HotSpot JVM comes with several algorithms for young and old generations. At a high level, there are three general types of collection algorithms, each with its own  [performance characteristic](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/collectors.html):
 
@@ -70,5 +68,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNDE5MzE1MSwtMjA4NzY3OTYwNl19
+eyJoaXN0b3J5IjpbLTEwOTY3MTE2MjEsLTIwODc2Nzk2MDZdfQ
+==
 -->
