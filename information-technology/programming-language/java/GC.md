@@ -69,19 +69,17 @@ CMS와 ParNew은 굉장이 잘 동작한다. 또 Parallel Scavenge, Parallel Old
 
 ### Mark-Sweep-Compact
 
-전통적인 GC 기본적인 알고리즘은 Serial Old에서 쓰이는 Mark-Sweep-Compact 알고리즘이다. 먼저 이해를 돕기 위해 용어를 정리하면 아래와 같다. 
+전통적인 GC 기본적인 알고리즘은 Serial Old(Major GC)에서 쓰이는 Mark-Sweep-Compact 알고리즘이다. 먼저 이해를 돕기 위해 용어를 정리하면 아래와 같다. 
 
 Mark
 : 계속 남아 있을 객체를 식별한다. 즉 gc 대상이 아닌 참조 중인 객체임을 판별한다.
 
 Sweep
-: Heap의 앞 부분부터 Mark에서 식별된 Object를 제외하고 제거합니다.
+: Heap의 앞 부분부터 Mark되지 않은 객체를 제거한다.
 
-Compact는 Sweep 이후 비어있는 Heap 공간들을 연속되게 쌓이도록 힙의 앞 부분부터 채우는 과정입니다.
+Compact
+: Sweep 이후, 비어있는 Heap 공간들을 연속되게 쌓이도록 힙의 앞 부분부터 채운다.
 
-1.  The first step of this algorithm is to mark the surviving objects in the old generation.
-2.  Then, it checks the heap from the front and leaves only the surviving ones behind (sweep).
-3.  In the last step, it fills up the heap from the front with the objects so that the objects are piled up consecutively, and divides the heap into two parts: one with objects and one without objects (compact).
 
 ### G1(Garbage-First) 
 사실 Java 9에서 부터 CMS(Concurrent Mark Sweep)은 deprecated되었고, 오라클은 새로운 Concurrent Collector를 추천했다. 바로 G1(Garbage-First) 컬렉터이다.
@@ -91,6 +89,6 @@ Compact는 Sweep 이후 비어있는 Heap 공간들을 연속되게 쌓이도록
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NjE2NzYxNywtMTM5NTM2MjM2Niw4OD
-k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
+eyJoaXN0b3J5IjpbLTEzNDQxNTQ2MjEsLTEzOTUzNjIzNjYsOD
+g5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
 -->
