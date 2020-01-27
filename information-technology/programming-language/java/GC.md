@@ -1,11 +1,15 @@
 
 # GC(Garbage Collection)
+[GC types](https://www.cubrid.org/blog/understanding-java-garbage-collection)
+[Java Garbage Collection](https://d2.naver.com/helloworld/1329)
+[GC 잘하는 법
+](https://waspro.tistory.com/380)
 
 > GC(가비지 컬렉션)이란 무엇인가?
 
 가비지 컬렉션은 기존에 할당된 메모리 중 사용되지 않는 메모리를 재사용하는 메커니즘이다. 가비지 컬렉션을 쓰면 메모리를 직접 해제할 필요가 없다. 
 
-가비지 컬렉션 알고리즘은 몇 가지가 있는데, 모든 알고리즘은다. 모두 작동 중인 코드에서 더 이상 참조하지 않는 메모리를 찾은 후 메모리를 할당할 때 이용한다는 공통점이 있다. 
+가비지 컬렉션 알고리즘은 더 이상 참조하지 않는 메모리를 찾아 메모리를 할당할 때 이용하는 공통점이 있다. 
 
 GC에 대해서 알아보기 전에 알아야 할 용어가 있다. 바로 'stop-the-world'이다. stop-the-world란, GC을 실행하기 위해 JVM이 애플리케이션 실행을 멈추는 것이다. stop-the-world가 발생하면 GC를 실행하는 쓰레드를 제외한 나머지 쓰레드는 모두 작업을 멈춘다. GC 작업을 완료한 이후에야 중단했던 작업을 다시 시작한다. 어떤 GC 알고리즘을 사용하더라도 stop-the-world는 발생한다. 대개의 경우 GC 튜닝이란 이 stop-the-world 시간을 줄이는 것이다.
 
@@ -36,5 +40,5 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMjU4OTI5MV19
+eyJoaXN0b3J5IjpbMTY0NjAxNTM1MV19
 -->
