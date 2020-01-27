@@ -82,7 +82,8 @@ Compact
 
 ## GC 종류
 
-**- Serial (-XX:+UseSerialGC) : Serial GC는 적은 메모리와 CPU 코어 개수가 적을 때 적합한 방식**
+Serial (-XX:+UseSerialGC)
+: Serial GC는 적은 메모리와 CPU 코어 개수가 적을 때 적합한 방식dmfh
 
 **- Parallel  (-XX:+UseParallelGC) : Serial GC와 기본적인 알고리즘은 같지만 여러개의 Thread가 나누어져 처리하는 방식**
 
@@ -109,14 +110,18 @@ CMS는 STW가 짧다는 장점과 더불어 다음과 같은 단점이 존재합
 
 결국 초기 STW를 줄일 수 있지만, Compaction이 없어 조각난 메모리가 많아지만 오히려 STW가 늘어날 수 있다는 단점을 보유하고 있습니다.
 
+
 ### G1(Garbage-First) 
 사실 Java 9에서 부터 CMS(Concurrent Mark Sweep)은 deprecated되었고, 오라클은 새로운 Concurrent Collector를 추천했다. 바로 G1(Garbage-First) 컬렉터이다.
 
 **G1**  works on both old and young generation. The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. 
 
+G1GC는 메모리를 바둑판처럼 각각의 영역으로 구분하고 각 영역에 객체를 할당하여 GC를 실행합니다. 그러다가, 해당 영역이 꽉 차면 다른 영역에서 객체를 할당하고 GC를 실행합니다. 즉 기존의 Young, Old 영역에서 진행하는 메모리 처리 방식이 한 영역에서 모두 담당한다고 이해하면 됩니다.
+
+G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체 방안으로 고안되었으며, 성능상 뛰어나다는 장점이 있습니다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU4NzcyOTIzLC0xMzk1MzYyMzY2LDg4OT
+eyJoaXN0b3J5IjpbMzY2MTM0ODkxLC0xMzk1MzYyMzY2LDg4OT
 U1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
 -->
