@@ -77,7 +77,8 @@ CMS와 ParNew은 굉장이 잘 동작한다. 또 Parallel Scavenge, Parallel Old
 
 ### 
 
-One important thing to know about the CMS is that there have been  **[calls to deprecate](https://openjdk.java.net/jeps/291)**  it and it will probably happen in Java 9 :’( Oracle recommends that the new concurrent collector, the  [Garbage-First](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/G1.html)  or the  **G1**, introduced first with Java, be used instead:
+사실 Java 9에서 부터 CMS(Concurrent Mark Sweep)은 deprecated되었고, 오라클은 새로운 Concurrent Collector를 추천했다. 바로 G1(Garbage-First) 컬렉터이다.
+collector, the  [Garbage-First](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/G1.html)  or the  **G1**, introduced first with Java, be used instead:
 
 > The G1 collector is a server-style garbage collector, targeted for multi-processor machines with large memories. It meets garbage collection (GC) pause time goals with high probability, while achieving high throughput.
 
@@ -91,6 +92,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE2MTg5NDY0LC0xMzk1MzYyMzY2LDg4OT
-U1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
+eyJoaXN0b3J5IjpbLTExMzkxMjQ3ODYsLTEzOTUzNjIzNjYsOD
+g5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
 -->
