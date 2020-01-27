@@ -109,8 +109,6 @@ CMS는 STW가 짧다는 장점과 더불어 다음과 같은 단점이 존재합
 
 결국 초기 STW를 줄일 수 있지만, Compaction이 없어 조각난 메모리가 많아지만 오히려 STW가 늘어날 수 있다는 단점을 보유하고 있습니다.
 
-
-
 ### G1(Garbage-First) 
 사실 Java 9에서 부터 CMS(Concurrent Mark Sweep)은 deprecated되었고, 오라클은 새로운 Concurrent Collector를 추천했다. 바로 G1(Garbage-First) 컬렉터이다.
 
@@ -119,6 +117,6 @@ CMS는 STW가 짧다는 장점과 더불어 다음과 같은 단점이 존재합
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MTk4ODg0MSwtMTM5NTM2MjM2Niw4OD
-k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
+eyJoaXN0b3J5IjpbOTU4NzcyOTIzLC0xMzk1MzYyMzY2LDg4OT
+U1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
 -->
