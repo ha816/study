@@ -100,11 +100,8 @@ Remark 단계에서는 Concurrent Mark 단계에서 새로 추가되거나 참�
 
 ![enter image description here](https://www.cubrid.org/files/attach/images/1744/745/001/10ce40d924aebd3fc7a050dc7bcdba19.png)
 
-CMS은 STW가 짧다는 장점과 Concurrent Mark / Concurrent Sweep을 수행하는 과정에서 다른 쓰레드 들이 실행되고 있는 상황에서 진행된다는 것이 성능상 이점을 가져 옵니다.
-단점으로는 다른 GC 방식보다 메모리와 CPU를 더 많이 사용하고 Compaction 단계가 기본적으로 제공되지 않는다.**
-
-결국 초기 STW를 줄일 수 있지만, Compaction이 없어 조각난 메모리가 많아지만 오히려 STW가 늘어날 수 있다는 단점을 보유하고 있습니다.
-
+CMS은 STW가 짧다는 장점과 Concurrent Mark / Concurrent Sweep을 수행하는 과정에서 다른 쓰레드 들이 실행되고 있는 상황에서 진행된다는 것이 성능상 이점을 가져온다.
+단점으로는 다른 GC 방식보다 메모리와 CPU를 더 많이 사용하고 Compaction이 기본적으로 제공되지 않는다. 결국 초기 STW를 줄일 수 있지만, Compaction이 없어 조각난 메모리가 많아지만 오히려 STW가 늘어날 수 있다는 단점을 보유하고 있습니다.
 
 ### G1(Garbage-First) 
 사실 Java 9에서 부터 CMS(Concurrent Mark Sweep)은 deprecated되었고, 오라클은 새로운 Concurrent Collector를 추천했다. 바로 G1(Garbage-First) 컬렉터이다.
@@ -117,6 +114,6 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjYyODI3NjEsLTEzOTUzNjIzNjYsOD
-g5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
+eyJoaXN0b3J5IjpbMTE1NzIyOTc3NCwtMTM5NTM2MjM2Niw4OD
+k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
 -->
