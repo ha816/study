@@ -27,12 +27,11 @@ Java는 프로그램 코드에서 메모리를 명시적으로 지정하여 해�
 
 ### Young Generation
 
-새롭게 생성한 객체의 대부분이 위치한다. Young 영역은 Eden, Survivor 영역으로 구성되어 있다. 다시 Survivor는 From과 To로 이루어져 있으며, Eden에서 살아남은 Object는 From으로 이동합니다.
-
-이후 From에서 살아남은 객체는 To로 이동되면 To를 From으로 From을 To로 변경하여 이를 반복 수행합니다.
+새롭게 생성한 객체의 대부분이 위치한다. Young 영역은 Eden, Survivor 영역으로 구성되어 있다. 다시 Survivor는 From과 To로 이루어져 있으며, Eden에서 살아남은 Object는 From으로 이동한다. 이후 From에서 살아남은 객체는 To로 이동하고 여기서 또 살아남은 객체는 다시 To로 돌아간
 
 Hit(GC에서 살아남은 횟수)가 Tenuring Threshold 만큼 수행된 Object들은 Old 영역으로 이동됩니다.
 
+![enter image description here](https://i.stack.imgur.com/8ZtFA.png)
 
 대부분의 객체가 금방 접근 불가능 상태가 되기 때문에 매우 많은 객체가 Young 영역에 생성되었다가 사라진다. 이 영역에서 객체가 사라질때 Minor GC가 발생한다고 말한다.
 
@@ -59,5 +58,5 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM3NTg4NDY0XX0=
+eyJoaXN0b3J5IjpbLTEwNjQzMTg1ODhdfQ==
 -->
