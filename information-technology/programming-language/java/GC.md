@@ -83,7 +83,12 @@ Summary 단계는 앞서 GC를 수행한 영역에 대해서 별도록 살아 �
 
 ### Mark-Sweep-Compact
 
-전통적인 GC 기본적인 알고리즘은 Serial Old(Major GC)에서 쓰이는 Mark-Sweep-Compact 알고리즘이다. 먼저 이해를 돕기 위해 용어를 정리하면 아래와 같다. Serial GC
+전통적인 GC 알고리즘으로 사용된다.  **- Parallel GC (-XX:+UseParallelGC) : Serial GC오 기본적인 알고리즘은 같지만 여러개의 Thread가 나누어져 처리하는 방식**
+
+Parallel GC는 메모리가 충분하고 코어의 개수가 많을 때 유리하며, Throughput GC라고 부릅니다.
+
+
+먼저 이해를 돕기 위해 용어를 정리하면 아래와 같다. 
 
 Mark
 : 계속 남아 있을 객체를 식별한다. 즉 gc 대상이 아닌 참조 중인 객체임을 판별한다.
@@ -107,6 +112,6 @@ Summary 단계는 앞서 GC를 수행한 영역에 대해서 별도록 살아 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMDAxOTk0NSwtMTM5NTM2MjM2Niw4OD
-k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
+eyJoaXN0b3J5IjpbLTE4NDkxMTEzNTgsLTEzOTUzNjIzNjYsOD
+g5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
 -->
