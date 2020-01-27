@@ -67,20 +67,6 @@ Young 영역과 Old 영역에서 마다 사용할 수 있는 GC 알고리즘이 
 
 CMS와 ParNew은 굉장이 잘 동작한다. 또 Parallel Scavenge, Parallel Old 조합도 좋다.
 
-### Serial
-
-**- Parallel GC (-XX:+UseParallelGC) : Serial GC오 기본적인 알고리즘은 같지만 여러개의 Thread가 나누어져 처리하는 방식**
-
-Parallel GC는 메모리가 충분하고 코어의 개수가 많을 때 유리하며, Throughput GC라고 부릅니다.
-
-**- Parallel Old GC (-XX:+UseParallelOldGC)**
-
-Parallele GC와 비교하여 Old 영역의 GC 알고리즘만 차이가 있습니다.
-
-기존 Mark - Sweep - Compaction 단계에서 Parallel Old GC는 Mark - Summary - Compaction 단계를 거칩니다.
-
-Summary 단계는 앞서 GC를 수행한 영역에 대해서 별도록 살아 있는 객체를 식별한다는 점에서 차이가 있습니다.
-
 ### Mark-Sweep-Compact
 
 전통적인 GC 알고리즘으로 아래 단계를 거쳐 동작한다. 
@@ -94,24 +80,13 @@ Sweep
 Compact
 : Sweep 이후, 비어있는 Heap 공간들을 연속되게 쌓이도록 힙의 앞 부분부터 채운다.
 
-## GC의 종류
+## GC 종류
 
 **- Serial GC (-XX:+UseSerialGC) : Serial GC는 적은 메모리와 CPU 코어 개수가 적을 때 적합한 방식**
 
-mark & sweep & compact를 기준으로 GC를 수행하는 알고리즘 방식입니다.
-
-Mark는 살아있는 객체 즉 gc 대상이 아닌 객체에 대해 식별하는 역할을 합니다.
-
-Sweep은 Heap의 앞 부분부터 mark 된 Object를 제외하고 제거합니다.
-
-Compact는 Sweep 이후 비어있는 Heap 공간들을 연속되게 쌓이도록 힙의 앞 부분부터 채우는 과정입니다.
-
-**- Parallel GC (-XX:+UseParallelGC) : Serial GC오 기본적인 알고리즘은 같지만 여러개의 Thread가 나누어져 처리하는 방식**
-
-Parallel GC는 메모리가 충분하고 코어의 개수가 많을 때 유리하며, Throughput GC라고 부릅니다.
+**- Parallel GC (-XX:+UseParallelGC) : Serial GC와 기본적인 알고리즘은 같지만 여러개의 Thread가 나누어져 처리하는 방식**
 
 **- Parallel Old GC (-XX:+UseParallelOldGC)**
-
 Parallele GC와 비교하여 Old 영역의 GC 알고리즘만 차이가 있습니다.
 
 기존 Mark - Sweep - Compaction 단계에서 Parallel Old GC는 Mark - Summary - Compaction 단계를 거칩니다.
@@ -148,6 +123,6 @@ CMS는 STW가 짧다는 장점과 더불어 다음과 같은 단점이 존재합
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3OTI2MjM1OSwtMTM5NTM2MjM2Niw4OD
+eyJoaXN0b3J5IjpbMTA2NDE0MzgzOSwtMTM5NTM2MjM2Niw4OD
 k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
 -->
