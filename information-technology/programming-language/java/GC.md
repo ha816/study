@@ -82,18 +82,14 @@ Compact
 
 ## GC 종류
 
-**- Serial GC (-XX:+UseSerialGC) : Serial GC는 적은 메모리와 CPU 코어 개수가 적을 때 적합한 방식**
+**- Serial (-XX:+UseSerialGC) : Serial GC는 적은 메모리와 CPU 코어 개수가 적을 때 적합한 방식**
 
-**- Parallel GC (-XX:+UseParallelGC) : Serial GC와 기본적인 알고리즘은 같지만 여러개의 Thread가 나누어져 처리하는 방식**
+**- Parallel  (-XX:+UseParallelGC) : Serial GC와 기본적인 알고리즘은 같지만 여러개의 Thread가 나누어져 처리하는 방식**
 
-**- Parallel Old GC (-XX:+UseParallelOldGC)**
-Parallele GC와 비교하여 Old 영역의 GC 알고리즘만 차이가 있습니다.
+**- Parallel Old (-XX:+UseParallelOldGC)**
+Parallele GC와 비교하여 단계의 차이가 있다. 기존 알고리즘이 Mark - Sweep - Compaction 단계를 거치는데 반해 Parallel Old GC는 Mark - Summary - Compaction 단계를 거친다. Summary 단계는 앞서 GC를 수행한 영역에 대해서 별도로 살아 있는 객체를 식별한다는 점에서 차이가 있습니다.
 
-기존 Mark - Sweep - Compaction 단계에서 Parallel Old GC는 Mark - Summary - Compaction 단계를 거칩니다.
-
-Summary 단계는 앞서 GC를 수행한 영역에 대해서 별도록 살아 있는 객체를 식별한다는 점에서 차이가 있습니다.
-
-**- CMS GC (-XX:+UseConcMarkSweepGC)**
+**- CMS (-XX:+UseConcMarkSweepGC)**
 
 Initial Mark 단계에서는 클래스 로더에서 가장 가까운 객체 중 살아 있는 객체만 찾아 냅니다. 따라서 초기에 STW가 발생되는 시간이 매우 짧게 형성되어 이점을 가져 올 수 있습니다.
 
@@ -123,6 +119,6 @@ CMS는 STW가 짧다는 장점과 더불어 다음과 같은 단점이 존재합
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NDE0MzgzOSwtMTM5NTM2MjM2Niw4OD
+eyJoaXN0b3J5IjpbLTM4MTk4ODg0MSwtMTM5NTM2MjM2Niw4OD
 k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
 -->
