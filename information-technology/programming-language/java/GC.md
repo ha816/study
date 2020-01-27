@@ -89,7 +89,7 @@ Parallel  (-XX:+UseParallelGC)
 : Serial GC와 기본적인 알고리즘은 같지만 여러 개의 Thread가 나누어져 처리하는 방식
 
 Parallel Old (-XX:+UseParallelOldGC)
-: Parallel GC와 비교하여 **단계의 차이가 있다.** 기존 알고리즘이 Mark - Sweep - Compaction 단계를 거치는데 반해 Parallel Old GC는 MSC(Mark - Summary - Compaction) 단계를 거친다. Summary 단계는 앞서 GC를 수행한 영역에 대해서 별도로 살아 있는 객체를 식별한다는 점에서 차이가 있습니다.
+: Parallel GC와 비교하여 **단계의 차이가 있다.** 기존 알고리즘이 Mark - Sweep - Compaction 단계를 거치는데 반해 Parallel Old GC는 MSC(Mark - Summary - Compaction) 단계를 거친다. Summary 단계는 앞서 GC를 수행한 영역에 대해서만 제거를 하여 성능향상을 꾀한다. 
 
 **- CMS (-XX:+UseConcMarkSweepGC)**
 
@@ -123,6 +123,6 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg2NjQ0ODI0LC0xMzk1MzYyMzY2LDg4OT
+eyJoaXN0b3J5IjpbNjM2NTI4MDMzLC0xMzk1MzYyMzY2LDg4OT
 U1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
 -->
