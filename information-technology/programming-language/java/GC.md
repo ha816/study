@@ -65,8 +65,7 @@ Young 영역과 Old 영역에서 마다 사용할 수 있는 GC 알고리즘이 
 5.  **“CMS”**  (Concurrent Mark Sweep) is a mostly concurrent, low-pause collector.
 6.  **“Parallel Old”**  is a compacting collector that uses multiple GC threads.
 
-CMS와 P
-Concurrent Mark Sweep (_CMS_), paired with  _ParNew_, works really well for server-side applications processing live requests from clients. I have been using it with ~ 10GB of heap memory and it keeps response times steady and GC pauses are short. Some developers I know use Parallel collectors (_Parallel Scavenge_  +  _Parallel Old_) and are happy with results.
+CMS와 ParNew은 굉장이 잘 동작한다. 또 Parallel Scavenge, Parallel Old 조합도 좋다.
 
 ### Mark-Sweep-Compact
 
@@ -91,6 +90,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA4NDUwMjIwLC0xMzk1MzYyMzY2LDg4OT
-U1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
+eyJoaXN0b3J5IjpbLTMxMjE2NDE3MSwtMTM5NTM2MjM2Niw4OD
+k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
 -->
