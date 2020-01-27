@@ -80,7 +80,7 @@ Sweep
 Compact
 : Sweep 이후, 비어있는 Heap 공간들을 연속되게 쌓이도록 힙의 앞 부분부터 채운다.
 
-## GC 종류
+## Major GC
 
 Serial (-XX:+UseSerialGC)
 : Serial GC는 적은 메모리와 CPU 코어 개수가 적을 때 적합한 방식이다. 전통적인 MSC 방식을 따른다. 
@@ -123,6 +123,6 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NzExNDMxMCwtMTM5NTM2MjM2Niw4OD
-k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
+eyJoaXN0b3J5IjpbNzg2NjQ0ODI0LC0xMzk1MzYyMzY2LDg4OT
+U1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
 -->
