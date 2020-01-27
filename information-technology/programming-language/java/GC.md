@@ -69,11 +69,13 @@ CMS와 ParNew은 굉장이 잘 동작한다. 또 Parallel Scavenge, Parallel Old
 
 ### Mark-Sweep-Compact
 
-전통적인 GC 기본적인 알고리즘은 Serial Old에서 쓰이는 Mark-Sweep-Compact 알고리즘이다. 먼저 이해를 돕기 위해 용어
+전통적인 GC 기본적인 알고리즘은 Serial Old에서 쓰이는 Mark-Sweep-Compact 알고리즘이다. 먼저 이해를 돕기 위해 용어를 정리하면 아래와 같다. 
 
-Mark는 살아있는 객체 즉 gc 대상이 아닌 객체에 대해 식별하는 역할을 합니다.
+Mark
+: gc 대상이 될 참조가 
 
-Sweep은 Heap의 앞 부분부터 mark 된 Object를 제외하고 제거합니다.
+Sweep
+: Heap의 앞 부분부터 mark 된 Object를 제외하고 제거합니다.
 
 Compact는 Sweep 이후 비어있는 Heap 공간들을 연속되게 쌓이도록 힙의 앞 부분부터 채우는 과정입니다.
 
@@ -89,6 +91,6 @@ Compact는 Sweep 이후 비어있는 Heap 공간들을 연속되게 쌓이도록
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDY0MzU5MzIsLTEzOTUzNjIzNjYsOD
-g5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
+eyJoaXN0b3J5IjpbLTk0MzIwOTAsLTEzOTUzNjIzNjYsODg5NT
+U2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
 -->
