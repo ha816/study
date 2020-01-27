@@ -69,14 +69,13 @@ CMS와 ParNew은 굉장이 잘 동작한다. 또 Parallel Scavenge, Parallel Old
 
 ### Mark-Sweep-Compact
 
-앞에서도 보았지만, 
-
-전통적인 GC는 Old 제너레이션에서  **mark-sweep-compact** 방법을 사용한다. 
+전통적인 GC 기본적인 알고리즘은 Serial Old에서 쓰이는 Mark-Sweep-Compact 알고리즘이다. 
 
 1.  The first step of this algorithm is to mark the surviving objects in the old generation.
 2.  Then, it checks the heap from the front and leaves only the surviving ones behind (sweep).
 3.  In the last step, it fills up the heap from the front with the objects so that the objects are piled up consecutively, and divides the heap into two parts: one with objects and one without objects (compact).
 
+### 
 
 One important thing to know about the CMS is that there have been  **[calls to deprecate](https://openjdk.java.net/jeps/291)**  it and it will probably happen in Java 9 :’( Oracle recommends that the new concurrent collector, the  [Garbage-First](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/G1.html)  or the  **G1**, introduced first with Java, be used instead:
 
@@ -92,6 +91,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzMDQ3MTA3LC0xMzk1MzYyMzY2LDg4OT
+eyJoaXN0b3J5IjpbNjE2MTg5NDY0LC0xMzk1MzYyMzY2LDg4OT
 U1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
 -->
