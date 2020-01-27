@@ -67,12 +67,20 @@ Young 영역과 Old 영역에서 마다 사용할 수 있는 GC 알고리즘이 
 
 Concurrent Mark Sweep (_CMS_), paired with  _ParNew_, works really well for server-side applications processing live requests from clients. I have been using it with ~ 10GB of heap memory and it keeps response times steady and GC pauses are short. Some developers I know use Parallel collectors (_Parallel Scavenge_  +  _Parallel Old_) and are happy with results.
 
+### Mark-Sweep-Compact
 
 전통적인 GC는 Old 제너레이션에서  **mark-sweep-compact** 방법을 사용한다. 
 
 1.  The first step of this algorithm is to mark the surviving objects in the old generation.
 2.  Then, it checks the heap from the front and leaves only the surviving ones behind (sweep).
 3.  In the last step, it fills up the heap from the front with the objects so that the objects are piled up consecutively, and divides the heap into two parts: one with objects and one without objects (compact).
+
+
+One important thing to know about the CMS is that there have been  **[calls to deprecate](https://openjdk.java.net/jeps/291)**  it and it will probably happen in Java 9 :’( Oracle recommends that the new concurrent collector, the  [Garbage-First](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/G1.html)  or the  **G1**, introduced first with Java, be used instead:
+
+> The G1 collector is a server-style garbage collector, targeted for multi-processor machines with large memories. It meets garbage collection (GC) pause time goals with high probability, while achieving high throughput.
+
+**G1**  works on both old and young generation. It is optimized for larger heap sizes (>10 GB). I’ve not experienced G1 collector first-hand and developers in my team are still using CMS, so I can’t yet compare the two. A quick online search reveals benchmarks showing  [CMS outperforming](http://blog.novatec-gmbh.de/g1-action-better-cms/)  [G1](https://dzone.com/articles/g1-vs-cms-vs-parallel-gc). I’d tread carefully, but G1 should be fine. It can be enabled with:
 
 
 자바 1.6에는 G1([Garbage First](https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html))라는 새로운 방법을 사용하게 되었다. 
@@ -82,6 +90,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTUzNjIzNjYsODg5NTU2MTE4LDE3ND
-Y0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
+eyJoaXN0b3J5IjpbMjk4ODc1NjUwLC0xMzk1MzYyMzY2LDg4OT
+U1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
 -->
