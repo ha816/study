@@ -54,6 +54,7 @@ concurrent collector
 
 ![enter image description here](https://codeahoy.com/img/blogs/gc-compared.png)
 
+Young 영역과 Old 영역에서 마다 사용할 수 있는 GC 알고리즘이 다르기 때문에 반드시 Compatiable한 알고리즘을 사용해야 한다.
 
 ![enter image description here](https://codeahoy.com/img/blogs/gc-collectors-pairing.jpg)
 
@@ -72,6 +73,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg5NTU2MTE4LDE3NDY0MDU1MjEsLTIwOD
-c2Nzk2MDZdfQ==
+eyJoaXN0b3J5IjpbLTMyNjcyNTA1MCw4ODk1NTYxMTgsMTc0Nj
+QwNTUyMSwtMjA4NzY3OTYwNl19
 -->
