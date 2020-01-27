@@ -83,7 +83,7 @@ Summary 단계는 앞서 GC를 수행한 영역에 대해서 별도록 살아 �
 
 ### Mark-Sweep-Compact
 
-전통적인 GC 알고리즘으로 사용된다.  **- Parallel GC (-XX:+UseParallelGC) : Serial GC오 기본적인 알고리즘은 같지만 여러개의 Thread가 나누어져 처리하는 방식**
+전통적인 GC 알고리즘으로 사용된다.  Serial GC, **- Parallel GC (-XX:+UseParallelGC) : Serial GC오 기본적인 알고리즘은 같지만 여러개의 Thread가 나누어져 처리하는 방식**
 
 Parallel GC는 메모리가 충분하고 코어의 개수가 많을 때 유리하며, Throughput GC라고 부릅니다.
 
@@ -112,6 +112,6 @@ Summary 단계는 앞서 GC를 수행한 영역에 대해서 별도록 살아 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDkxMTEzNTgsLTEzOTUzNjIzNjYsOD
-g5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
+eyJoaXN0b3J5IjpbMTIxMDY4MzEzOCwtMTM5NTM2MjM2Niw4OD
+k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
 -->
