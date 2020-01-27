@@ -59,9 +59,9 @@ Young 영역과 Old 영역에서 마다 사용할 수 있는 GC 알고리즘이 
 ![enter image description here](https://codeahoy.com/img/blogs/gc-collectors-pairing.jpg)
 
 1.  “Serial” is a stop-the-world, copying collector which uses a single GC thread.
-2.  **“Parallel Scavenge”**  is a stop-the-world, copying collector which uses multiple GC threads.
-3.  **“ParNew”**  is a stop-the-world, copying collector which uses multiple GC threads. It differs from “Parallel Scavenge” in that it has enhancements that make it usable with CMS. For example, “ParNew” does the synchronization needed so that it can run during the concurrent phases of CMS.
- 4.  “Serial Old” is a stop-the-world, mark-sweep-compact collector that uses a single GC thread.
+2. “Serial Old” is a stop-the-world, mark-sweep-compact(MSC) collector that uses a single GC thread.
+3.  **“Parallel Scavenge”**  is a stop-the-world, copying collector which uses multiple GC threads.
+4.  **“ParNew”**  is a stop-the-world, copying collector which uses multiple GC threads. It differs from “Parallel Scavenge” in that it has enhancements that make it usable with CMS. For example, “ParNew” does the synchronization needed so that it can run during the concurrent phases of CMS.
 5.  **“CMS”**  (Concurrent Mark Sweep) is a mostly concurrent, low-pause collector.
 6.  **“Parallel Old”**  is a compacting collector that uses multiple GC threads.
 
@@ -90,6 +90,6 @@ The biggest advantage of the G1 GC is its  **performance**. It is faster than an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4ODc1NjUwLC0xMzk1MzYyMzY2LDg4OT
-U1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
+eyJoaXN0b3J5IjpbMTk1OTkxNDc1MiwtMTM5NTM2MjM2Niw4OD
+k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
 -->
