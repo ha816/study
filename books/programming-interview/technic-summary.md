@@ -37,7 +37,7 @@
 >**Overloading과 Override의 차이? 그리고 Override 애노테이션은 어떤 역할을 하는가?** 
 >Overloading(과적합)은 하나의 메서드 이름을 여러 메서드에서 사용하는 방법이다. 
 >Override(재정의)은 상위 클래스의 메서드를 하위 클래스에서 재정의하는 것을 말한다. 
->@Override 에너테이션은 개발자의 실수를 방지해주는 역할을 한다. 재정의된 메서드의 시그니처를 변경하면, 하위 클래스에 재정의된 메서드는 컴파일 에러를 낸다.
+>@Override 에너테이션은 코드 가독성과 개발자의 실수를 방지해주는 역할을 한다. @Override가 붙은 메서드는 재정의된 메서드를 확실시 한다. 재정의된 메서드의 시그니처를 변경하면, 하위 클래스에 재정의된 메서드는 컴파일 에러를 낸다.
 재정의할 메서드에서  실수를 하면, 컴파일시간에 알려준다. 애너테이션을 쓰지 않으면, 하위 클래스의 새로운 메서드인것처럼 행동한다. 
 >
 
@@ -232,11 +232,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjQwNDExMzksODUzNDA3MTIzLC0yMT
-I4NzMzNTk0LC0xODk3NDIxNTg5LC0xMjAxODgwNjgxLC0yNDcy
-MTM2MjksLTgyNDY1MzIxMiwtOTgzMzM0ODE5LC0xNzYzOTcyMD
-csLTE5MTI5NjY5NTUsLTQ5NTE4NDc2MSwtNzU3Mzc4NTUzLDEy
-MjUzNDkxODIsMTc1NjA5OTgzLC0xODIzNDE0NTgzLDk1NTAyNT
-MyNiw4OTYzMzI4MDksLTE2MDUxNDA3NzAsMTQzNDc0OTU5OF19
-
+eyJoaXN0b3J5IjpbLTE5MDQ5NTAyMTgsLTExMjQwNDExMzksOD
+UzNDA3MTIzLC0yMTI4NzMzNTk0LC0xODk3NDIxNTg5LC0xMjAx
+ODgwNjgxLC0yNDcyMTM2MjksLTgyNDY1MzIxMiwtOTgzMzM0OD
+E5LC0xNzYzOTcyMDcsLTE5MTI5NjY5NTUsLTQ5NTE4NDc2MSwt
+NzU3Mzc4NTUzLDEyMjUzNDkxODIsMTc1NjA5OTgzLC0xODIzND
+E0NTgzLDk1NTAyNTMyNiw4OTYzMzI4MDksLTE2MDUxNDA3NzAs
+MTQzNDc0OTU5OF19
 -->
