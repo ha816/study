@@ -46,6 +46,8 @@
 
 >자바의 예외처리 구조를 이루는 주요 클래스를 설명하라. Error와 Exception의 차이는?
 
+> StringBuilder와 StringBuffer의 차이는?
+
 >Comparable과 Comparator 인터페이스의 차이는?
 
 # DataStrucutre
@@ -228,9 +230,10 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDE4ODA2ODEsLTI0NzIxMzYyOSwtOD
-I0NjUzMjEyLC05ODMzMzQ4MTksLTE3NjM5NzIwNywtMTkxMjk2
-Njk1NSwtNDk1MTg0NzYxLC03NTczNzg1NTMsMTIyNTM0OTE4Mi
-wxNzU2MDk5ODMsLTE4MjM0MTQ1ODMsOTU1MDI1MzI2LDg5NjMz
-MjgwOSwtMTYwNTE0MDc3MCwxNDM0NzQ5NTk4XX0=
+eyJoaXN0b3J5IjpbLTg0MTUzMjU4OSwtMTIwMTg4MDY4MSwtMj
+Q3MjEzNjI5LC04MjQ2NTMyMTIsLTk4MzMzNDgxOSwtMTc2Mzk3
+MjA3LC0xOTEyOTY2OTU1LC00OTUxODQ3NjEsLTc1NzM3ODU1My
+wxMjI1MzQ5MTgyLDE3NTYwOTk4MywtMTgyMzQxNDU4Myw5NTUw
+MjUzMjYsODk2MzMyODA5LC0xNjA1MTQwNzcwLDE0MzQ3NDk1OT
+hdfQ==
 -->
