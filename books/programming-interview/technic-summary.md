@@ -39,11 +39,11 @@
 >Override(재정의)은 상위 클래스의 메서드를 하위 클래스에서 재정의하는 것을 말한다. 
 >@Override 에너테이션은 코드 가독성과 개발자의 실수를 방지해주는 역할을 한다. @Override가 붙은 메서드는 상위 클래스나 인터페이스에 있는 특정 메서드를 재정의했다는 의미이다. 현재 다른 메서드와 차이를 명확히 밝혀 가독성을 높이고, 상위 메서드가 개발자의 실수로 변경이 일어나면 컴파일 에러를 낸다.
 
->String 객체는? 메모리에 어떻게 저장되는가? String 객체의 값을 변경할 수 있는가? 인터닝이란? 
+>**제네릭이란? 구상화(reified)한다는 건 어떤 의미인가?** 
 
->제네릭이란? 구상화(reified)한다는 건 어떤 의미인가? 
+>**String 객체는? String은 어느 메모리 공간에 올라가는가? 인터닝(interning)이란**? 
 
->자바의 예외처리 구조를 이루는 주요 클래스를 설명하라. Error와 Exception의 차이는?
+>**예외처리 구조를 이루는 주요 클래스를 설명하라. 그리고 Error와 Exception의 차이는?**
 
 > **StringBuilder와 StringBuffer의 차이는?**
 > StringBuilder는 Thread Safe하지 않지만 StringBuffer는 그러하다. 따라서 StringBuilder가 더 빠르다.
@@ -230,7 +230,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NTAzNjQ5OCwtMTg4NTQwNzU0NSwtMT
+eyJoaXN0b3J5IjpbMTk5MzA4NTg4NywtMTg4NTQwNzU0NSwtMT
 kwNDk1MDIxOCwtMTEyNDA0MTEzOSw4NTM0MDcxMjMsLTIxMjg3
 MzM1OTQsLTE4OTc0MjE1ODksLTEyMDE4ODA2ODEsLTI0NzIxMz
 YyOSwtODI0NjUzMjEyLC05ODMzMzQ4MTksLTE3NjM5NzIwNywt
