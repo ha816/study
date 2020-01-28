@@ -79,16 +79,16 @@
 > **Executor Framework는? 어떤 특징이 있는가?**
 > 자바 4에서 추가된 프레임 워크이다.
 
->volatile 키워드는?
+>**volatile 키워드는?**
 > volatile 키워드가 붙은 변수는 읽거나 쓸때, CPU 캐시가 아니라 메인 메모리에서 직접 활용한다. 멀티 쓰레드 환경에서 CPU 캐시마다 변수의 상태가 다를 수 있기 때문에 변수값이 불일치하는 현상이 생긴다. 이럴 때 volatile을 사용할 수 있다. volatile 변수에 쓰기 명령이 끝나면, 해당 변수를 사용하는 모든 쓰레드 값을 가장 최근 값으로 바꾼다. 
 > 하지만 volatile이 항상 최선은 아니다. 하나의 Thread가 아닌 여러 Thread가 write하는 상황에서는 적합하지 않다. 그리고 cache가 아닌 메모리에 접근하기 때문에 느리다.
 
-> Atomic 클래스는 무엇을 제공하는가? 
+> **Atomic 클래스는 무엇을 제공하는가?** 
 > 패키지 중 java.concurrent.atomic 을 살펴보면 원자적 연산을 수행할 수 있는 유용한 클래스들을 확인할 수 있다. Synchronized 키워드 없이도 쓰레드 세이프한 처리가 가능하다. 대기 상태에 들어가지 않는 넌블로킹 알고리즘은 비교 후 치환(compare-and-swap)과 같은 저수준의 명령을 활용한다. CAS 연산은 일단 성공적으로 치환할 수 있을 것이라고 희망하는 상태에서 연산을 실행해보고,  값을 마지막으로 확인한 이후에 다른 스레드가 해당하는 값을 변경했다면 그런 사실이 있는지를 확인이나 하자는 의미이다.
 
 # Framework & Application
 
->프레임워크와 라이브러리의 차이
+>**프레임워크와 라이브러리의 차이**
 >라이브러리는 단순히 활용 가능한 도구들의 집합을 말한다.
 >프레임워크는 프레임워크는 뼈대나 기반구조를 뜻하고, 제어의 역전 개념이 적용된 대표적인 기술입니다. 소프트웨어에서의 프레임워크는 '소프트웨어의 특정 문제를 해결하기 위해서 상호 협력하는 클래스와 인터페이스의 집합' 이라 할 수 있으며, 완성된 어플리케이션이 아닌 프로그래머가 완성시키는 작업을 해야합니다.
 >주된 차이는 바로 프레임워크가 **애플리케이션 제어 흐름** 가진다는게 중요합니다. 프레임워크는 전체적인 흐름을 스스로가 쥐고 있으며 사용자는 그 안에서 필요한 코드를 짜 넣으며 반면에 라이브러리는 사용자가 전체적인 흐름을 만들며 라이브러리를 가져다 쓰는 것이라고 할 수 있습니다.
@@ -232,11 +232,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjY3NjI1MTUsLTE4ODU0MDc1NDUsLT
-E5MDQ5NTAyMTgsLTExMjQwNDExMzksODUzNDA3MTIzLC0yMTI4
-NzMzNTk0LC0xODk3NDIxNTg5LC0xMjAxODgwNjgxLC0yNDcyMT
-M2MjksLTgyNDY1MzIxMiwtOTgzMzM0ODE5LC0xNzYzOTcyMDcs
-LTE5MTI5NjY5NTUsLTQ5NTE4NDc2MSwtNzU3Mzc4NTUzLDEyMj
-UzNDkxODIsMTc1NjA5OTgzLC0xODIzNDE0NTgzLDk1NTAyNTMy
-Niw4OTYzMzI4MDldfQ==
+eyJoaXN0b3J5IjpbNzQ0MjIyNzY1LC0xODg1NDA3NTQ1LC0xOT
+A0OTUwMjE4LC0xMTI0MDQxMTM5LDg1MzQwNzEyMywtMjEyODcz
+MzU5NCwtMTg5NzQyMTU4OSwtMTIwMTg4MDY4MSwtMjQ3MjEzNj
+I5LC04MjQ2NTMyMTIsLTk4MzMzNDgxOSwtMTc2Mzk3MjA3LC0x
+OTEyOTY2OTU1LC00OTUxODQ3NjEsLTc1NzM3ODU1MywxMjI1Mz
+Q5MTgyLDE3NTYwOTk4MywtMTgyMzQxNDU4Myw5NTUwMjUzMjYs
+ODk2MzMyODA5XX0=
 -->
