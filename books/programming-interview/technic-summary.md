@@ -64,7 +64,7 @@
 
 # DesignPattern
 
->Singleton, Decorator, Composite, Strategy, Builder, Template method, Fly-weight
+>**Singleton, Decorator, Composite, Strategy, Builder, Template method, Fly-weight, Proxy**
 >Singleton: Singleton 클래스는 시스템에서 유일무이한 객체를 말한다. 
 >Decorator: Decorator 객체는 본연의 기능을 수행하는 Component 객체를 주입받아 클라이언트 입장에서는 같은 기능을 사용하지만 내부적으로 본연의 기능 뿐만 아니라 상황에 맞는 추가 기능을 사용할 수 있게 된다.
 >Composite: 클라이언트 입장에서 단일-복합 객체를 모두 공통적인 객체로 사용할 수 있는 패턴. FileSystem의 구조가 대표적인 Composite 패턴의 예이다. Directory-File(복잡, 단일).
@@ -72,10 +72,12 @@
 >Builder: 한 객체에 필드가 너무 많을 경우 사용하는 패턴이다. 보통 클래스 내부에 builer 클래스를 정의해서 사용하며, 메서드 채인 방식으로 필요한 필드를 채워 최종적으로 build 메서드를 호출해 필요한 객체를 생성한다.
 >Template method : 공통적으로 사용한 메서드를 미리 상위 클래스에 정의를 하고 하위 클래스에서 정의해둔 메서드를 사용하거나 재정의해서 사용한다.
 >Fly-weight : 자주 사용되는 객체를 캐시 해두어, 필요시 캐시에 있던 객체를 재사용하는 패턴.
+>Proxy : 
 
 # MultiThread
 
-> 자바 4에서 도입된 동시성 프레임워크(Executor Framework)가 있다.  Executor 프레임워크은 어떤 특징이 있는가?
+> **Executor Framework는? 어떤 특징이 있는가?**
+> 자바 4에서 추가된 프레임 워크이다.
 
 >volatile 키워드는?
 > volatile 키워드가 붙은 변수는 읽거나 쓸때, CPU 캐시가 아니라 메인 메모리에서 직접 활용한다. 멀티 쓰레드 환경에서 CPU 캐시마다 변수의 상태가 다를 수 있기 때문에 변수값이 불일치하는 현상이 생긴다. 이럴 때 volatile을 사용할 수 있다. volatile 변수에 쓰기 명령이 끝나면, 해당 변수를 사용하는 모든 쓰레드 값을 가장 최근 값으로 바꾼다. 
@@ -230,11 +232,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MzA4NTg4NywtMTg4NTQwNzU0NSwtMT
-kwNDk1MDIxOCwtMTEyNDA0MTEzOSw4NTM0MDcxMjMsLTIxMjg3
-MzM1OTQsLTE4OTc0MjE1ODksLTEyMDE4ODA2ODEsLTI0NzIxMz
-YyOSwtODI0NjUzMjEyLC05ODMzMzQ4MTksLTE3NjM5NzIwNywt
-MTkxMjk2Njk1NSwtNDk1MTg0NzYxLC03NTczNzg1NTMsMTIyNT
-M0OTE4MiwxNzU2MDk5ODMsLTE4MjM0MTQ1ODMsOTU1MDI1MzI2
-LDg5NjMzMjgwOV19
+eyJoaXN0b3J5IjpbLTE0NjY3NjI1MTUsLTE4ODU0MDc1NDUsLT
+E5MDQ5NTAyMTgsLTExMjQwNDExMzksODUzNDA3MTIzLC0yMTI4
+NzMzNTk0LC0xODk3NDIxNTg5LC0xMjAxODgwNjgxLC0yNDcyMT
+M2MjksLTgyNDY1MzIxMiwtOTgzMzM0ODE5LC0xNzYzOTcyMDcs
+LTE5MTI5NjY5NTUsLTQ5NTE4NDc2MSwtNzU3Mzc4NTUzLDEyMj
+UzNDkxODIsMTc1NjA5OTgzLC0xODIzNDE0NTgzLDk1NTAyNTMy
+Niw4OTYzMzI4MDldfQ==
 -->
