@@ -40,9 +40,6 @@
 >@Override 에너테이션은 크게 두 가지 장점이 있다. 
 >개발자가 재정의할 메서드에서 실수를 하면, 컴파일시간에 알려준다. 애너테이션을 쓰지 않으면, 하위 클래스의 새로운 메서드인것처럼 행동한다. 
 >
-
-) If programmer makes any mistake such as wrong method name, wrong parameter types while overriding, you would get a compile time error. As by using this annotation you instruct compiler that you are overriding this method. If you don’t use the annotation then the sub class method would behave as a new method (not the overriding method) in sub class.
-
 2) It improves the readability of the code. So if you change the signature of overridden method then all the sub classes that overrides the particular method would throw a compilation error, which would eventually help you to change the signature in the sub classes.
 
 >String은 메모리에 어떻게 저장되는가? String 객체의 값을 변경할 수 있는가? 인터닝이란? 
@@ -236,10 +233,10 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjg3MzM1OTQsLTE4OTc0MjE1ODksLT
-EyMDE4ODA2ODEsLTI0NzIxMzYyOSwtODI0NjUzMjEyLC05ODMz
-MzQ4MTksLTE3NjM5NzIwNywtMTkxMjk2Njk1NSwtNDk1MTg0Nz
-YxLC03NTczNzg1NTMsMTIyNTM0OTE4MiwxNzU2MDk5ODMsLTE4
-MjM0MTQ1ODMsOTU1MDI1MzI2LDg5NjMzMjgwOSwtMTYwNTE0MD
-c3MCwxNDM0NzQ5NTk4XX0=
+eyJoaXN0b3J5IjpbNjI2ODM4NjI3LC0yMTI4NzMzNTk0LC0xOD
+k3NDIxNTg5LC0xMjAxODgwNjgxLC0yNDcyMTM2MjksLTgyNDY1
+MzIxMiwtOTgzMzM0ODE5LC0xNzYzOTcyMDcsLTE5MTI5NjY5NT
+UsLTQ5NTE4NDc2MSwtNzU3Mzc4NTUzLDEyMjUzNDkxODIsMTc1
+NjA5OTgzLC0xODIzNDE0NTgzLDk1NTAyNTMyNiw4OTYzMzI4MD
+ksLTE2MDUxNDA3NzAsMTQzNDc0OTU5OF19
 -->
