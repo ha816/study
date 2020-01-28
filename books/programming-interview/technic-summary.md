@@ -28,7 +28,7 @@
 >static 키워드는 변수, 메서드, 클래스에 붙일 수 있다. Static이 붙은 변수, 메서드는 해당 클래스내에서 공유되는 자원으로 JVM 동작시 Method Area에서 이미 존재한다. 일반 클래스에는 static 키워드를 붙일 수 없고, 내부 클래스(inner class)에는 붙일 수 있다. static이 붙은 내부 클래스는 마찬가지로 공유되는 자원으로 이미 존재하고 있는 객체다.
 
 >접근 권한 수정자(private, package-private, protected, public)에 대해서 설명해보자.
-> private은 같은 클래스에서만 접근이 
+> 접근 권한 수정자는 클래스, 변수, 메서드에 붙일 수 있다. private이 붙으면 해당 클래스에서만 접근이 가능하다. 
 
 >다형성과 상속이란 무엇인가?
 
@@ -222,7 +222,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzY2Nzc3ODYsLTQ5NTE4NDc2MSwtNz
+eyJoaXN0b3J5IjpbLTE5MTI5NjY5NTUsLTQ5NTE4NDc2MSwtNz
 U3Mzc4NTUzLDEyMjUzNDkxODIsMTc1NjA5OTgzLC0xODIzNDE0
 NTgzLDk1NTAyNTMyNiw4OTYzMzI4MDksLTE2MDUxNDA3NzAsMT
 QzNDc0OTU5OF19
