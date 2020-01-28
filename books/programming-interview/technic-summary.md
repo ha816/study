@@ -35,7 +35,8 @@
 >상속은 상위 클래스의 기능, 설계를 그대로 하위 클래스에 가져오는 것을 말한다. 따라서 하위 클래스는 온전히 상위 클래스의 역할을 할 수 있으면 추가 기능을 추가할 수 도 있다. 
 
 >**Overloading과 Override의 차이? 그리고 Override 애노테이션은 어떤 역할을 하는가?** 
->오버로딩은 같은 이름의 메서드를 여러 메서드로 사용하는 ㅂ
+>Overloading(과적합)은 같은 이름의 메서드를 여러 메서드로 사용하는 방법이다. 
+>
 
 >String은 메모리에 어떻게 저장되는가? String 객체의 값을 변경할 수 있는가? 인터닝이란? 
 
@@ -225,9 +226,9 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTc0NjE2ODAsLTk4MzMzNDgxOSwtMT
-c2Mzk3MjA3LC0xOTEyOTY2OTU1LC00OTUxODQ3NjEsLTc1NzM3
-ODU1MywxMjI1MzQ5MTgyLDE3NTYwOTk4MywtMTgyMzQxNDU4My
-w5NTUwMjUzMjYsODk2MzMyODA5LC0xNjA1MTQwNzcwLDE0MzQ3
-NDk1OThdfQ==
+eyJoaXN0b3J5IjpbLTgyNDY1MzIxMiwtOTgzMzM0ODE5LC0xNz
+YzOTcyMDcsLTE5MTI5NjY5NTUsLTQ5NTE4NDc2MSwtNzU3Mzc4
+NTUzLDEyMjUzNDkxODIsMTc1NjA5OTgzLC0xODIzNDE0NTgzLD
+k1NTAyNTMyNiw4OTYzMzI4MDksLTE2MDUxNDA3NzAsMTQzNDc0
+OTU5OF19
 -->
