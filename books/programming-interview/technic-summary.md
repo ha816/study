@@ -24,11 +24,11 @@
 >**final 키워드는? 어디에 사용하는지?**
 >final 키워드는 변수, 클래스, 메서드에 붙일 수 있다. 원시타입변수에 붙이면, 값을 바꿀 수 없고, 참조변수에 붙이면, 주소값을 변경할 수 없다. 클래스에 붙으면 해당 클래스를 상속받을 수 없다는 것을 말한다. 메서드에 붙이면, 메서드를 오버라이딩(재정의)할 수 없다는 것을 말한다. 
 
->static 키워드는? 
+>**static 키워드는?** 
 >static 키워드는 변수, 메서드, 클래스에 붙일 수 있다. Static이 붙은 변수, 메서드는 해당 클래스내에서 공유되는 자원으로 JVM 동작시 Method Area에서 이미 존재한다. 일반 클래스에는 static 키워드를 붙일 수 없고, 내부 클래스(inner class)에는 붙일 수 있다. static이 붙은 내부 클래스는 마찬가지로 공유되는 자원으로 이미 존재하고 있는 객체다.
 
 >접근 권한 수정자(private, package-private, protected, public)에 대해서 설명해보자.
->
+> private은 같은 클래스에서만 접근이 
 
 >다형성과 상속이란 무엇인가?
 
@@ -222,7 +222,8 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NTE4NDc2MSwtNzU3Mzc4NTUzLDEyMj
-UzNDkxODIsMTc1NjA5OTgzLC0xODIzNDE0NTgzLDk1NTAyNTMy
-Niw4OTYzMzI4MDksLTE2MDUxNDA3NzAsMTQzNDc0OTU5OF19
+eyJoaXN0b3J5IjpbLTIwMzY2Nzc3ODYsLTQ5NTE4NDc2MSwtNz
+U3Mzc4NTUzLDEyMjUzNDkxODIsMTc1NjA5OTgzLC0xODIzNDE0
+NTgzLDk1NTAyNTMyNiw4OTYzMzI4MDksLTE2MDUxNDA3NzAsMT
+QzNDc0OTU5OF19
 -->
