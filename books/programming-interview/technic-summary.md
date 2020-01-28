@@ -37,7 +37,7 @@
 >**Overloading과 Override의 차이? 그리고 Override 애노테이션은 어떤 역할을 하는가?** 
 >Overloading(과적합)은 하나의 메서드 이름을 여러 메서드에서 사용하는 방법이다. 
 >Override(재정의)은 상위 클래스의 메서드를 하위 클래스에서 재정의하는 것을 말한다. 
->@Override 에너테이션은 만약 개발자가 재정의할 메서드에서 
+>@Override 에너테이션은 만약 개발자가 재정의할 메서드에서 실수를 하면, 컴파일시간에 알려준다.  애너테이션을 쓰지 않으면, 하위 클래스에서 
 
 ) If programmer makes any mistake such as wrong method name, wrong parameter types while overriding, you would get a compile time error. As by using this annotation you instruct compiler that you are overriding this method. If you don’t use the annotation then the sub class method would behave as a new method (not the overriding method) in sub class.
 
@@ -234,10 +234,10 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NzM0ODMwMSwtMTg5NzQyMTU4OSwtMT
-IwMTg4MDY4MSwtMjQ3MjEzNjI5LC04MjQ2NTMyMTIsLTk4MzMz
-NDgxOSwtMTc2Mzk3MjA3LC0xOTEyOTY2OTU1LC00OTUxODQ3Nj
-EsLTc1NzM3ODU1MywxMjI1MzQ5MTgyLDE3NTYwOTk4MywtMTgy
-MzQxNDU4Myw5NTUwMjUzMjYsODk2MzMyODA5LC0xNjA1MTQwNz
-cwLDE0MzQ3NDk1OThdfQ==
+eyJoaXN0b3J5IjpbLTIwODg1MTAzLC0xODk3NDIxNTg5LC0xMj
+AxODgwNjgxLC0yNDcyMTM2MjksLTgyNDY1MzIxMiwtOTgzMzM0
+ODE5LC0xNzYzOTcyMDcsLTE5MTI5NjY5NTUsLTQ5NTE4NDc2MS
+wtNzU3Mzc4NTUzLDEyMjUzNDkxODIsMTc1NjA5OTgzLC0xODIz
+NDE0NTgzLDk1NTAyNTMyNiw4OTYzMzI4MDksLTE2MDUxNDA3Nz
+AsMTQzNDc0OTU5OF19
 -->
