@@ -93,11 +93,13 @@
 >프레임워크는 프레임워크는 뼈대나 기반구조를 뜻하고, 제어의 역전 개념이 적용된 대표적인 기술입니다. 소프트웨어에서의 프레임워크는 '소프트웨어의 특정 문제를 해결하기 위해서 상호 협력하는 클래스와 인터페이스의 집합' 이라 할 수 있으며, 완성된 어플리케이션이 아닌 프로그래머가 완성시키는 작업을 해야합니다.
 >주된 차이는 바로 프레임워크가 **애플리케이션 제어 흐름** 가진다는게 중요합니다. 프레임워크는 전체적인 흐름을 스스로가 쥐고 있으며 사용자는 그 안에서 필요한 코드를 짜 넣으며 반면에 라이브러리는 사용자가 전체적인 흐름을 만들며 라이브러리를 가져다 쓰는 것이라고 할 수 있습니다.
 
-> 스프링이 유명한 이유는?
+> **스프링이 유명한 이유는?**
 >엔터프라이즈 시스템은 기본적으로 복잡한 시스템이다. 그래서 스피링이 나타나기 전에 무수히 많은 엔터프라이즈 프로젝트가 실패했다. 그러나 스프링 복잡한 시스템의 요구사항을 DI, AOP, PSA등을 통해 효과적으로 대응했고 살아남아 유명해졌다.
 
->DI는?AOP는?
+>**DI?**
 >DI(Depenceny Injection)는 의존성 주입, **IoC(Inverse of Control)**라고 한다. 애플리케이션을 동작하기 위해 여러개의 컴포넌트를 통합해서 사용한다. 일반적으로 특정 컴포넌트를 사용할때 클래스 내부에서 구현 클래스를 직접 생성해서 사용하면 두 클래스간의 결합도가 높아진다.  결합도를 낮추는 방법으로 클래스의 외부에서 컴포넌트를 생성 한 후, 내부에 주입하여 사용한다. 
+
+>**AOP**
 >AOP는 Aspect Oriendted Programing의 약자로, 시스템은 보통 특정 기능을 책임지는 여러 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다. AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다. 
 
 >Spring의 객체 스코프는?
@@ -134,12 +136,7 @@
 > SERIALIZABLE  : 시리얼화 가능, Phantom Read를 방지한다.
 
 >**PreparedStatement와 Statement의 차이는?**
->Statement는 사용하는 쿼리문 자체를 DB서버에 보낸다. 때문에 SQL Injection에 취약하며 사용하는 쿼리가 비슷하더라도 성능 이점을 얻을 수 없다. PreparedStatement 쿼리에는 바인딩 변수를 사용할 수 있다. 이렇게 템플릿화 된 쿼리를 DB서버에 미리 알려주어 쿼리 작업의 일부 결과를 저장한다. 해당 쿼리를 반복적으로 요청시 저장해둔 결과를 재사용하여 쿼리 수행시 성능상 이득이 있다. 또한 SQL Injection의 예방할 수 있다. 이란?
-
->트랜잭션이란? 
-
-
->PreparedStatement와 Statement의 차이는?
+>Statement는 사용하는 쿼리문 자체를 DB서버에 보낸다. 때문에 SQL Injection에 취약하며 사용하는 쿼리가 비슷하더라도 성능 이점을 얻을 수 없다. PreparedStatement 쿼리에는 바인딩 변수를 사용할 수 있다. 이렇게 템플릿화 된 쿼리를 DB서버에 미리 알려주어 쿼리 작업의 일부 결과를 저장한다. 해당 쿼리를 반복적으로 요청시 저장해둔 결과를 재사용하여 쿼리 수행시 성능상 이득이 있다. 또한 SQL Injection의 예방할 수 있다.
 
 >**클러스터와링과 리플레케이션의 차이**
 >Cluster는 모든 데이터베이스를 실시간으로 동기화하고 데이터 변경을 확인한다. 
@@ -232,11 +229,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ0MjIyNzY1LC0xODg1NDA3NTQ1LC0xOT
-A0OTUwMjE4LC0xMTI0MDQxMTM5LDg1MzQwNzEyMywtMjEyODcz
-MzU5NCwtMTg5NzQyMTU4OSwtMTIwMTg4MDY4MSwtMjQ3MjEzNj
-I5LC04MjQ2NTMyMTIsLTk4MzMzNDgxOSwtMTc2Mzk3MjA3LC0x
-OTEyOTY2OTU1LC00OTUxODQ3NjEsLTc1NzM3ODU1MywxMjI1Mz
-Q5MTgyLDE3NTYwOTk4MywtMTgyMzQxNDU4Myw5NTUwMjUzMjYs
-ODk2MzMyODA5XX0=
+eyJoaXN0b3J5IjpbLTEzMTAyNDc0MzMsLTE4ODU0MDc1NDUsLT
+E5MDQ5NTAyMTgsLTExMjQwNDExMzksODUzNDA3MTIzLC0yMTI4
+NzMzNTk0LC0xODk3NDIxNTg5LC0xMjAxODgwNjgxLC0yNDcyMT
+M2MjksLTgyNDY1MzIxMiwtOTgzMzM0ODE5LC0xNzYzOTcyMDcs
+LTE5MTI5NjY5NTUsLTQ5NTE4NDc2MSwtNzU3Mzc4NTUzLDEyMj
+UzNDkxODIsMTc1NjA5OTgzLC0xODIzNDE0NTgzLDk1NTAyNTMy
+Niw4OTYzMzI4MDldfQ==
 -->
