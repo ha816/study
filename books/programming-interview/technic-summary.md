@@ -39,6 +39,10 @@
 >Override(재정의)은 상위 클래스의 메서드를 하위 클래스에서 재정의하는 것을 말한다. 
 >@Override 에너테이션은 하위 클래스에서는 재정의한 메서드라는 것을 알려주고, 상위 클래스에서는 이 메서드는 반드시 재정의 해야한다는 것을 명시한다.
 
+) If programmer makes any mistake such as wrong method name, wrong parameter types while overriding, you would get a compile time error. As by using this annotation you instruct compiler that you are overriding this method. If you don’t use the annotation then the sub class method would behave as a new method (not the overriding method) in sub class.
+
+2) It improves the readability of the code. So if you change the signature of overridden method then all the sub classes that overrides the particular method would throw a compilation error, which would eventually help you to change the signature in the sub classes.
+
 >String은 메모리에 어떻게 저장되는가? String 객체의 값을 변경할 수 있는가? 인터닝이란? 
 
 >제네릭이란? 구상화(reified)한다는 건 어떤 의미인가? 
@@ -230,7 +234,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDY5MTM0LC0xODk3NDIxNTg5LC0xMj
+eyJoaXN0b3J5IjpbMTI4NDk5ODE3LC0xODk3NDIxNTg5LC0xMj
 AxODgwNjgxLC0yNDcyMTM2MjksLTgyNDY1MzIxMiwtOTgzMzM0
 ODE5LC0xNzYzOTcyMDcsLTE5MTI5NjY5NTUsLTQ5NTE4NDc2MS
 wtNzU3Mzc4NTUzLDEyMjUzNDkxODIsMTc1NjA5OTgzLC0xODIz
