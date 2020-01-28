@@ -30,8 +30,8 @@
 >**접근 권한 수정자(private, package-private, protected, public)?**
 > 접근 권한 수정자는 클래스, 변수, 메서드에 붙일 수 있다. private이 붙으면 해당 클래스에서만 접근이 가능하다. package-private은 디폴트 값으로 해당 패키지내에서 접근이 가능하다. protected는 같은 패키지내에서 또는 상속을 받아 접근이 가능하다. protected 부터는 사실상 다른 클래스에 공유된다고 봐도 무방하다. public은 어떤 곳에서도 접근이 가능하다.
 
->다형성과 상속이란 무엇인가?
->다형성은 Polymorphism이라고 하며, 하나의 객체가 
+>다형성(Polymorphsim), 상속(Inheritance)란 무엇인가?
+>다형성은 Polymorphism이라고 하며, 하나의 객체가 다른 역할을 하는 객체로 사용될 수 있다는 의미이다. 
 
 >Overloading과 Override의 차이? 그리고 Override 애노테이션은 어떤 역할을 하는가?
 
@@ -223,8 +223,8 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0OTAyNjgxNCwtMTc2Mzk3MjA3LC0xOT
-EyOTY2OTU1LC00OTUxODQ3NjEsLTc1NzM3ODU1MywxMjI1MzQ5
-MTgyLDE3NTYwOTk4MywtMTgyMzQxNDU4Myw5NTUwMjUzMjYsOD
-k2MzMyODA5LC0xNjA1MTQwNzcwLDE0MzQ3NDk1OThdfQ==
+eyJoaXN0b3J5IjpbMjQxNjY2OTI0LC0xNzYzOTcyMDcsLTE5MT
+I5NjY5NTUsLTQ5NTE4NDc2MSwtNzU3Mzc4NTUzLDEyMjUzNDkx
+ODIsMTc1NjA5OTgzLC0xODIzNDE0NTgzLDk1NTAyNTMyNiw4OT
+YzMzI4MDksLTE2MDUxNDA3NzAsMTQzNDc0OTU5OF19
 -->
