@@ -21,16 +21,17 @@
 >**불변객체란? 왜 사용하는지?**
 >불변 객체는 객체의 상태가 절대 변하지 않는 것을 보장하는 객체를 말한다. 불변객체를 사용하면 Thread-Safe한 장점이 있다.
 
->**final 키워드는? 어디에 사용하는지?**
+>**final? Where To?**
 >final 키워드는 변수, 클래스, 메서드에 붙일 수 있다. 원시타입변수에 붙이면, 값을 바꿀 수 없고, 참조변수에 붙이면, 주소값을 변경할 수 없다. 클래스에 붙으면 해당 클래스를 상속받을 수 없다는 것을 말한다. 메서드에 붙이면, 메서드를 오버라이딩(재정의)할 수 없다는 것을 말한다. 
 
->**static 키워드는?** 
+>**static?** 
 >static 키워드는 변수, 메서드, 클래스에 붙일 수 있다. Static이 붙은 변수, 메서드는 해당 클래스내에서 공유되는 자원으로 JVM 동작시 Method Area에서 이미 존재한다. 일반 클래스에는 static 키워드를 붙일 수 없고, 내부 클래스(inner class)에는 붙일 수 있다. static이 붙은 내부 클래스는 마찬가지로 공유되는 자원으로 이미 존재하고 있는 객체다.
 
->접근 권한 수정자(private, package-private, protected, public)에 대해서 설명해보자.
+>**접근 권한 수정자(private, package-private, protected, public)?**
 > 접근 권한 수정자는 클래스, 변수, 메서드에 붙일 수 있다. private이 붙으면 해당 클래스에서만 접근이 가능하다. package-private은 디폴트 값으로 해당 패키지내에서 접근이 가능하다. protected는 같은 패키지내에서 또는 상속을 받아 접근이 가능하다. protected 부터는 사실상 다른 클래스에 공유된다고 봐도 무방하다. public은 어떤 곳에서도 접근이 가능하다.
 
 >다형성과 상속이란 무엇인가?
+>다형성은 Polymorphism이라고 하며, 하나의 객체가 
 
 >Overloading과 Override의 차이? 그리고 Override 애노테이션은 어떤 역할을 하는가?
 
@@ -222,8 +223,8 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjM5NzIwNywtMTkxMjk2Njk1NSwtND
-k1MTg0NzYxLC03NTczNzg1NTMsMTIyNTM0OTE4MiwxNzU2MDk5
-ODMsLTE4MjM0MTQ1ODMsOTU1MDI1MzI2LDg5NjMzMjgwOSwtMT
-YwNTE0MDc3MCwxNDM0NzQ5NTk4XX0=
+eyJoaXN0b3J5IjpbLTM0OTAyNjgxNCwtMTc2Mzk3MjA3LC0xOT
+EyOTY2OTU1LC00OTUxODQ3NjEsLTc1NzM3ODU1MywxMjI1MzQ5
+MTgyLDE3NTYwOTk4MywtMTgyMzQxNDU4Myw5NTUwMjUzMjYsOD
+k2MzMyODA5LC0xNjA1MTQwNzcwLDE0MzQ3NDk1OThdfQ==
 -->
