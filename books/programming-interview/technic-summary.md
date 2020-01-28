@@ -36,7 +36,7 @@
 
 >**Overloading과 Override의 차이? 그리고 Override 애노테이션은 어떤 역할을 하는가?** 
 >Overloading(과적합)은 하나의 메서드 이름을 여러 메서드에서 사용하는 방법이다. 
->Override(재정의)은 상위 클래스의 메서드를 재정의하는 방법이다. 이때 재정의한 메서드라는 것을 명시하기 위해 @Ovveride 에너ㅔ이션으
+>Override(재정의)은 상위 클래스의 메서드를 재정의하는 방법이다. 이때 재정의한 메서드라는 것을 명시하기 위해 @Ovveride 에너ㅔ이션을 사용한다. 
 
 >String은 메모리에 어떻게 저장되는가? String 객체의 값을 변경할 수 있는가? 인터닝이란? 
 
@@ -226,9 +226,9 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDczMTYwNzQsLTgyNDY1MzIxMiwtOTgzMz
-M0ODE5LC0xNzYzOTcyMDcsLTE5MTI5NjY5NTUsLTQ5NTE4NDc2
-MSwtNzU3Mzc4NTUzLDEyMjUzNDkxODIsMTc1NjA5OTgzLC0xOD
-IzNDE0NTgzLDk1NTAyNTMyNiw4OTYzMzI4MDksLTE2MDUxNDA3
-NzAsMTQzNDc0OTU5OF19
+eyJoaXN0b3J5IjpbLTI0NzIxMzYyOSwtODI0NjUzMjEyLC05OD
+MzMzQ4MTksLTE3NjM5NzIwNywtMTkxMjk2Njk1NSwtNDk1MTg0
+NzYxLC03NTczNzg1NTMsMTIyNTM0OTE4MiwxNzU2MDk5ODMsLT
+E4MjM0MTQ1ODMsOTU1MDI1MzI2LDg5NjMzMjgwOSwtMTYwNTE0
+MDc3MCwxNDM0NzQ5NTk4XX0=
 -->
