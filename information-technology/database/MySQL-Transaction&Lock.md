@@ -13,9 +13,11 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 
 ### 주의사항 
 
+트랜잭션은 DBMS 커넥션과 동일하게 꼭 필요한 최소의 코드에만 적용하는게 좋다. 이는 프로그램 코드에서 트랜잭션의 범위를 최소화하라는 의미다. 
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNjAyOTM0NCw5Njk3MDU5MTMsMjA0NT
-Y0Nzg4OV19
+eyJoaXN0b3J5IjpbMTk3MzA5ODc2OCwxNDM2MDI5MzQ0LDk2OT
+cwNTkxMywyMDQ1NjQ3ODg5XX0=
 -->
