@@ -11,12 +11,12 @@ Lock과 트랜잭션은 서로 비슷해 보이지만 사실 **잠금은 동시�
 
 트랜잭션은 작업의 완전성을 보장한다고 말한다. 이 말은 작업의 일부만 적용되는 현상(partial update)가 없다는 말이다. 
 
-트랜잭션은 하나의 논리적인 작업 셋에 하나의 쿼리가 있든 두 개 이상의 쿼리가 있든 관계없잉 논리적인 작업 셋 자체가 모두 적용되거나 아무것도 적용되지 않아야 함을 보장한다. 
+MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 InnoDB
 
-### MyISAM과 InnoDB 처리 방식의 차이
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4NTUyMTQ2LDk2OTcwNTkxMywyMDQ1Nj
+eyJoaXN0b3J5IjpbNDA3MzY1MzE3LDk2OTcwNTkxMywyMDQ1Nj
 Q3ODg5XX0=
 -->
