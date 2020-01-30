@@ -110,7 +110,7 @@
 
 >Servelet은 무엇이고 하는 역할은? 
 
-> WAR 파일이란 무엇인가?
+
 
 >Filter와 Interupt의 차이
 
@@ -207,10 +207,12 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >동기는 순차적으로 필요한 처리를 수행한다. 순차적이기 때문에 흐름이 이해하기 쉽지만, 속도 측면에서 비효율적일 수 있다.
 >비동기 처리는 작업 흐름이 순차적이지 않기 때문에 흐름이 이해하기 어렵지만, 속도 측면에서 효율적일 수 있다. 
 
+>**WAR 파일이란 무엇인가?**
+>
 
 # Architecture
 
->**MSA(Micro Service Architecture)는?**
+>**MSA(Micro Service Architecture)?**
 
 _"the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery."_
 
@@ -218,7 +220,6 @@ _"the microservice architectural style is an approach to developing a single app
 >Linux컨테이너를 만들고 사용할 수 있도록 하는 컨테이너화 기술이다. 도커는  **컨테이너 기반의 오픈소스 가상화 플랫폼**입니다. 다양한 프로그램, 실행환경을 컨테이너로 추상화하고 동일한 인터페이스를 제공하여 프로그램의 배포 및 관리를 단순하게 해줍니다. 백엔드 프로그램, 데이터베이스 서버, 메시지 큐등 어떤 프로그램도 컨테이너로 추상화할 수 있고 조립PC, AWS, Azure, Google cloud등 어디에서든 실행할 수 있습니다. 컨테이너는 격리된 공간에서 프로세스가 동작하는 기술입니다. 가상화 기술의 하나지만 기존방식과는 차이가 있다. 기존의 가상화 방식은 주로  **OS를 가상화**하였습니다. 추가적인 OS를 설치하여 가상화하는 방법은 어쨋든 성능문제가 있었고 이를 개선하기 위해  **프로세스를 격리**  하는 방식이 등장합니다.
 
 리눅스에서는 이 방식을 리눅스 컨테이너라고 하고 단순히 프로세스를 격리시키기 때문에 가볍고 빠르게 동작합니다. CPU나 메모리는 딱 프로세스가 필요한 만큼만 추가로 사용하고 성능적으로도 거어의 손실이 없습니다.
-
 
 # TOOL
 
@@ -229,11 +230,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTAyNDc0MzMsLTE4ODU0MDc1NDUsLT
-E5MDQ5NTAyMTgsLTExMjQwNDExMzksODUzNDA3MTIzLC0yMTI4
-NzMzNTk0LC0xODk3NDIxNTg5LC0xMjAxODgwNjgxLC0yNDcyMT
-M2MjksLTgyNDY1MzIxMiwtOTgzMzM0ODE5LC0xNzYzOTcyMDcs
-LTE5MTI5NjY5NTUsLTQ5NTE4NDc2MSwtNzU3Mzc4NTUzLDEyMj
-UzNDkxODIsMTc1NjA5OTgzLC0xODIzNDE0NTgzLDk1NTAyNTMy
-Niw4OTYzMzI4MDldfQ==
+eyJoaXN0b3J5IjpbLTkyMzIwMjI1MSwtMTg4NTQwNzU0NSwtMT
+kwNDk1MDIxOCwtMTEyNDA0MTEzOSw4NTM0MDcxMjMsLTIxMjg3
+MzM1OTQsLTE4OTc0MjE1ODksLTEyMDE4ODA2ODEsLTI0NzIxMz
+YyOSwtODI0NjUzMjEyLC05ODMzMzQ4MTksLTE3NjM5NzIwNywt
+MTkxMjk2Njk1NSwtNDk1MTg0NzYxLC03NTczNzg1NTMsMTIyNT
+M0OTE4MiwxNzU2MDk5ODMsLTE4MjM0MTQ1ODMsOTU1MDI1MzI2
+LDg5NjMzMjgwOV19
 -->
