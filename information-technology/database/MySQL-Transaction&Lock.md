@@ -23,13 +23,15 @@ MySQL 엔진에서는 테이블 데이터 동기화를 위한 테이블 락 말�
 
 ### Global Rock(글로벌 락)
 
-글로벌 락은 "FLUSH TABLES WITH READ LOCK"이라는 명령으로만 획들 할 수 있으며, MySQL에서 제공하는 잠금 가운데 가장 범위가 크다. 
+글로벌 락은 "FLUSH TABLES WITH READ LOCK"이라는 명령으로만 획들 할 수 있으며, MySQL에서 제공하는 잠금 가운데 가장 범위가 크다. 한 세션에서 글로벌 락을 얻으면 다른 세션에서는 SELECT를 제외한 대부분의 DDL 문장이나 DML문장을 실행할 경우, 락이 풀릴때 까지 대기로 남는다.
+
+글로벌 락의 영향은 MySQL 전체 서버이며, 테이블이나 데이터베이스가 다르더라도 동일하게 영향을 미친다. 여러 데이터 베이스에 존재
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3MjQwMjU3LDIwNTQ5ODA5NDYsMTk3Mz
-A5ODc2OCwxNDM2MDI5MzQ0LDk2OTcwNTkxMywyMDQ1NjQ3ODg5
-XX0=
+eyJoaXN0b3J5IjpbLTE0ODcxNzk4MDEsODQ3MjQwMjU3LDIwNT
+Q5ODA5NDYsMTk3MzA5ODc2OCwxNDM2MDI5MzQ0LDk2OTcwNTkx
+MywyMDQ1NjQ3ODg5XX0=
 -->
