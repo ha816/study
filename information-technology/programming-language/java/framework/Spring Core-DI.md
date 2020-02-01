@@ -92,8 +92,17 @@ UserService userService(UserRepository repository){
 XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의 이름을 지정하면 된다. 여기서 프로퍼티 이름은 기준으로 자바빈즈의 관례에 따라 프로퍼티의 이름과 메서드의 이름을 정한다. 위의 예에선 setUserRepository 메서드가 생성된다. 
 
 
+```
+@Autowired //애너테이션 기반 설정 방식으로 ... 
+public void setUserRepository(UserRepository repository){
+	this.userRepository = userRepository;
+}
+```
+
 
 마지막으로 애너테이션 기반 설정 방식에서는 구현체의 세터 메서드에다가 @Autowired를 달아주면 된다. 애너테이션 기반 설정 방식은 자바 기반 설정 방식과 같이 별도의 설정 파일을 둘 필요가 없다. 
+
+
 
 ### 생성자 기반 의존성 주입 방식(constructor-based dependency injection)
 
@@ -111,7 +120,7 @@ XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MzE4NTIyLDIwNjEwMzE5MDIsMTkxOD
+eyJoaXN0b3J5IjpbOTU3ODc1Mzc3LDIwNjEwMzE5MDIsMTkxOD
 g3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYy
 MzBdfQ==
 -->
