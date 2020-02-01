@@ -15,9 +15,15 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 
 트랜잭션은 DBMS 커넥션과 동일하게 꼭 필요한 최소의 코드에만 적용하는게 좋다. 이는 프로그램 코드에서 트랜잭션의 범위를 최소화하라는 의미다. 
 
+## MySQL 잠금
+
+MySQL에서 사용되는 잠금은 크게 스토리지 엔진 레벨과 MySQL엔진 레벨로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호 영향을 미치지 않는다. 
+
+My
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MzA5ODc2OCwxNDM2MDI5MzQ0LDk2OT
-cwNTkxMywyMDQ1NjQ3ODg5XX0=
+eyJoaXN0b3J5IjpbLTE2MTg3MDg5MzgsMTk3MzA5ODc2OCwxND
+M2MDI5MzQ0LDk2OTcwNTkxMywyMDQ1NjQ3ODg5XX0=
 -->
