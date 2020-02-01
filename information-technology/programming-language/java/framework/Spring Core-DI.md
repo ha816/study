@@ -6,10 +6,7 @@
 
 이 결합도를 낮추는 방법으로 **의존성 주입**이라는 접근방식이 큰 힘을 발휘한다.  클래스의 외부에서 컴포넌트를 생성 한 후, 내부에 주입하여 사용가능하게 만드는 과정을 **의존성 주입 또는 인젝션(injection)**이라 한다.  
 
-사실 DI는 Strategy 디자인 패턴 중의 일종이다. 그리고 **IoC(Inverse of Control)** 이라 하는
-
-
- Ioc는 인스턴스를 제어하는 주도권이 역전된다는 의미이다. 컴포넌트를 구성하는 인스턴스의 생성과 의존관계를 해당 클래스가 아닌 DI 컨테이너가 대신해주기 때문이다. 
+사실 DI는 Strategy 디자인 패턴 중에 하나다.  Ioc는 인스턴스를 제어하는 주도권이 역전된다는 의미이다. 컴포넌트를 구성하는 인스턴스의 생성과 의존관계를 해당 클래스가 아닌 DI 컨테이너가 대신해주기 때문이다. 
 
 ## DI 컨테이너
 
@@ -102,5 +99,5 @@ UserService userService = (UserService) context.getBean("userService");
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxOTY5NzQ4LC0xNzIwNDI2MjMwXX0=
+eyJoaXN0b3J5IjpbOTM0NDIzODY5LC0xNzIwNDI2MjMwXX0=
 -->
