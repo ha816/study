@@ -71,7 +71,11 @@ UserService userService = (UserService) context.getBean("userService");
 
 DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 컴포넌트 스캔으로 자동 등록된 빈으로 나뉜다. 컴포넌트 스캔은 클래스 로더를 스캔하면서 특정 클래스를 찾아 DI컨테이너에 등록한다.
 
-별도의 설정이 없는 기본 설정에서는 아래와 같은 애너테이션이 붙은 클래스가 스캔의 탐색 대상이된다
+별도의 설정이 없는 기본 설정에서는 아래와 같은 애너테이션이 붙은 클래스가 스캔의 탐색 대상이된다. 
+
+* @Component
+* @Controller
+
 
 
 
@@ -154,8 +158,8 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjI1Njg1MTEsNzAwNTE0NzY3LC04OD
-EzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NTgzMzIy
-NzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5OTYsMT
-AzODEwOTExNiwtMTcyMDQyNjIzMF19
+eyJoaXN0b3J5IjpbMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MT
+M0OTkyMywtNjU2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1ODMzMjI3
+NSwyMDYxMDMxOTAyLDE5MTg4NzI4NTgsLTIzMzYxNzk5NiwxMD
+M4MTA5MTE2LC0xNzIwNDI2MjMwXX0=
 -->
