@@ -46,14 +46,14 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 ```
 @Configuration //자바 기반 방식
 public class AppConfig {
-	@Bean
-	UserRepository userRepository(){
-		return new UserRepositoryImpl();
-	}
+	@Bean UserRepository userRepository(){ return new UserRepositoryImpl();}
 }
 ```
 
-@Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에 빈 컴포넌트를 등록할 수 있다.  애플리케이션은 DI 컨테이너에 있는 Bean을 DI 컨테이너로 부터 가져 올 수 있다. 이러한 룩업을 하는 방법에는 세 가지 유형이 있다. 
+@Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에 빈 컴포넌트를 등록할 수 있다.  
+
+
+애플리케이션은 DI 컨테이너에 있는 빈을 가져오는 룩업을 아래와 같이 세 방식으로 할 수 있다.  
 ```
 UserService userService = context.getBean(UserService.class);
 UserService userService = context.getBean("userService",UserService.class);
@@ -98,6 +98,6 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MDU2OTcwNiwxMDM4MTA5MTE2LC0xNz
+eyJoaXN0b3J5IjpbMTg0NjE5ODQwNSwxMDM4MTA5MTE2LC0xNz
 IwNDI2MjMwXX0=
 -->
