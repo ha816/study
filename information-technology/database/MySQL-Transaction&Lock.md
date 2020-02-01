@@ -49,13 +49,18 @@ GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 유저락
 ### 네임 락(Name Lock)
 
 데이터 베이스 객체(테이블이나 뷰)의 이름을 변경하는 경우 획득하는 잠금.
+네임 락은 명시적으로 획득하거나 해제하는 게 아니다.
+```
+RENAME TABLE tab_a TO tab_b
+```
+위와 같이 테이블의 이름을 변경하는 경우 자동으로 획득하는 잠금이다.
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3OTEzODAwMSwxNzA5MDc5Mzk5LC0yMT
+eyJoaXN0b3J5IjpbMTc2NTExODE2NCwxNzA5MDc5Mzk5LC0yMT
 AzODE4OTQ1LDQ3NjI0ODc0NSw4NDcyNDAyNTcsMjA1NDk4MDk0
 NiwxOTczMDk4NzY4LDE0MzYwMjkzNDQsOTY5NzA1OTEzLDIwND
 U2NDc4ODldfQ==
