@@ -41,7 +41,10 @@ UNLOCK TABLES
 
 ### 유저 락(USER-LEVEL LOCK)
 
-유저락(USER-LEVEL LOCK)은 단순히 사용자가 지정한 문자열(String)에 대해 획득하고 반납하는 잠금이다. 즉 String으로 주어진 이름에 대한 락을 얻으려고 한다. 
+유저락(USER-LEVEL LOCK)은 단순히 사용자가 지정한 문자열(String)로 락을 획득하고 반납한다. 즉 String으로 주어진 이름에 대한 락을 얻으려고 한다. 
+
+한 세션이 락을 가지고 있으면, 다른 세션은 동일한 이름의 락을 걸지 못한다.
+While held by one session, other sessions cannot obtain a lock of the same name.
 
 
 GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 이때 잠금의 대상은 테이블이나 레코드와 같은 데이터 베이스 객체가 아니다. 
@@ -53,7 +56,7 @@ GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 이때 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc5MDI1NzYwLDQ3NjI0ODc0NSw4NDcyND
-AyNTcsMjA1NDk4MDk0NiwxOTczMDk4NzY4LDE0MzYwMjkzNDQs
-OTY5NzA1OTEzLDIwNDU2NDc4ODldfQ==
+eyJoaXN0b3J5IjpbMTMxMzA3MDA1OCw0NzYyNDg3NDUsODQ3Mj
+QwMjU3LDIwNTQ5ODA5NDYsMTk3MzA5ODc2OCwxNDM2MDI5MzQ0
+LDk2OTcwNTkxMywyMDQ1NjQ3ODg5XX0=
 -->
