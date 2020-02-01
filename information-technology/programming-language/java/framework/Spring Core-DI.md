@@ -67,9 +67,9 @@ UserService userService = (UserService) context.getBean("userService");
 2번 유형은 빈의 타입과 이름을 지정하는 방식이다. 지정한 **타입 객체가 DI 컨테이너에 다수가 있을때** 구분하기 위해 사용한다. 
 3번 유형은 빈의 이름을 지정하는 방식이다. 반환 값이 Object이기 때문에 형변환 해야 원하는 객체를 쓸 수 있다. 
 
-## Spring DI
+## Spring DI 
 
-구체적으로 사용하려는 빈을 스프링에서 주입받는 방법으로 세 가지 방법 이 있다. 
+스프링단에서 사용하려는 빈을 주입받는 방법은 세 가지 방법이 있다. 
 
 ### 설정자 기반 의존성 주입 방식(setter-based dependency injection)
 
@@ -113,7 +113,8 @@ public void setUserRepository(UserRepository repository){
 
 ## AutoWiring
 
-오토 와이어링(Auto Wiring)은 DI 컨테이너에서 관리할 빈을 명시하지 않고도 자동으로 DI에 빈을 주입하는 방식이다. 
+오토 와이어링(Auto Wiring)은 DI 컨테이너의 빈을 자동으로 주입하는 방식이다. 
+
 오토 와이어링을 사용하는 방식에는 타입을 이용하는 방식(autowiring by type)과 이름을 이용하는 방식(autowiring by name) 두가지가 있다. 
 
 
@@ -123,7 +124,7 @@ public void setUserRepository(UserRepository repository){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjcwODg2MDAsLTY1Njg2NDU4MSwxNT
+eyJoaXN0b3J5IjpbLTEyMjkyOTAxNDcsLTY1Njg2NDU4MSwxNT
 A0NzUyMDY1LDE4NTgzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcy
 ODU4LC0yMzM2MTc5OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF
 19
