@@ -54,6 +54,7 @@ public class AppConfig {
 
 ```
 <beans xlms=...> <!--XML 기반 설정 방식-->
+	<bean>
 	<context:component-scan base-package="com.example.demo" />
 </beans>
 ```
@@ -86,6 +87,6 @@ UserService userService = (UserService) context.getBean("userService");
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxOTMzNDQ0NywxMDM4MTA5MTE2LC0xNz
+eyJoaXN0b3J5IjpbMjA0NTI1NTM4MSwxMDM4MTA5MTE2LC0xNz
 IwNDI2MjMwXX0=
 -->
