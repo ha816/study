@@ -39,10 +39,12 @@ UNLOCK TABLES
 
 묵시적인 테이블 락은 테이블에 **데이터를 변경하는 쿼리를 실행**하면 발생한다. MySQL 서버가 데이터가 변경되는 테이블에 잠금을 설정하고 데이터 변경 후, 해제를 한다. 즉 묵시적 테이블 락은 자동적으로 얻고 해제 된다. InnoDB에서는 레코드 기반의 잠금을 제공하기 때문에 데이터 변경 쿼리로 테이블 락이 발생하지는 않는다. 더 정확히는 InnoDB 테이블에도 테이블 락이 설정되지만, 데부분의 데이터 변경 쿼리(DML은 무시되고 스키마를 변경하는 쿼리(DDL)에만 영향을 미친다.
 
-### 유저 락(USER LOCK)
+### 유저 락(USER-LEVEL LOCK)
+
+유저락(USER-LEVEL LOCK)은 단순히 사용자가 지정한 문자열(String)에 대해 획득하고 반납하는 잠금이다. 
 
 GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 이때 잠금의 대상은 테이블이나 레코드와 같은 데이터 베이스 객체가 아니다. 
-유저락은 단순히 사용자가 지정한 문자열에 대한 잠금이다. 유저락은 
+
 
 
 
@@ -50,7 +52,7 @@ GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 이때 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc2MjQ4NzQ1LDg0NzI0MDI1NywyMDU0OT
-gwOTQ2LDE5NzMwOTg3NjgsMTQzNjAyOTM0NCw5Njk3MDU5MTMs
-MjA0NTY0Nzg4OV19
+eyJoaXN0b3J5IjpbMTU5ODUzODkzMCw0NzYyNDg3NDUsODQ3Mj
+QwMjU3LDIwNTQ5ODA5NDYsMTk3MzA5ODc2OCwxNDM2MDI5MzQ0
+LDk2OTcwNTkxMywyMDQ1NjQ3ODg5XX0=
 -->
