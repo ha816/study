@@ -45,17 +45,14 @@ UNLOCK TABLES
 
 한 세션이 락을 가지고 있으면, 다른 세션은 동일한 이름의 락을 걸지 못한다.
 
-
-GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 이때 잠금의 대상은 테이블이나 레코드와 같은 데이터 베이스 객체가 아니다. 
-
-
+GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 유저락은 동기화 문제를 해결하는데 사용될 수 있다. 
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDM4MTg5NDUsNDc2MjQ4NzQ1LDg0Nz
-I0MDI1NywyMDU0OTgwOTQ2LDE5NzMwOTg3NjgsMTQzNjAyOTM0
-NCw5Njk3MDU5MTMsMjA0NTY0Nzg4OV19
+eyJoaXN0b3J5IjpbMTcwOTA3OTM5OSwtMjEwMzgxODk0NSw0Nz
+YyNDg3NDUsODQ3MjQwMjU3LDIwNTQ5ODA5NDYsMTk3MzA5ODc2
+OCwxNDM2MDI5MzQ0LDk2OTcwNTkxMywyMDQ1NjQ3ODg5XX0=
 -->
