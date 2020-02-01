@@ -106,9 +106,9 @@ public void setUserRepository(UserRepository repository){
 
 필드 기반 의존성 주입은 생성자나 설정자 메서드를 쓰지 않고 DI 컨테이너의 힘을 빌려 의존성을 주입한다. 간단히 의존성을 주입하고 싶은 필드에 @Autowired를 달아준다. 필드기반 의존성 주입을 사용하여 생성자나 세터 메서드를 쓰지 않아도 되서 코드가 간결해 보이는 효과가 있다. 
 
-### AutoWiring
+## AutoWiring
 
-오토 와이어링(Auto Wiring)은 자바 기반 설정 
+오토 와이어링(Auto Wiring)은 앞서 보았던 필드 기반 의존성 주입 방식(field-based injection)에서 쓰이는 
 
 
  **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 이라 한다.**
@@ -119,7 +119,7 @@ public void setUserRepository(UserRepository repository){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NzM5MTgyNiwxODU4MzMyMjc1LDIwNj
-EwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkx
-MTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbMjIyODMyMjkyLDE4NTgzMzIyNzUsMjA2MT
+AzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5OTYsMTAzODEwOTEx
+NiwtMTcyMDQyNjIzMF19
 -->
