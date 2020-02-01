@@ -19,11 +19,11 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 
 MySQL에서 사용되는 잠금은 크게 스토리지 엔진 레벨과 MySQL엔진 레벨로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호 영향을 미치지 않는다. 
 
-My
+MySQL 엔진에서는 테이블 데이터 동기화를 위한 테이블 락 말고도 사용자의 필요에 맞게 유저 락과 테이블 명에 대한 잠금을 위한 네임 락이라는 것을 제공한다. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTg3MDg5MzgsMTk3MzA5ODc2OCwxND
-M2MDI5MzQ0LDk2OTcwNTkxMywyMDQ1NjQ3ODg5XX0=
+eyJoaXN0b3J5IjpbMjA1NDk4MDk0NiwxOTczMDk4NzY4LDE0Mz
+YwMjkzNDQsOTY5NzA1OTEzLDIwNDU2NDc4ODldfQ==
 -->
