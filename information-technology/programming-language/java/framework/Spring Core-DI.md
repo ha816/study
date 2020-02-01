@@ -108,7 +108,9 @@ public void setUserRepository(UserRepository repository){
 
 ## AutoWiring
 
-오토 와이어링(Auto Wiring)은 DI 컨테이너에서 관리할 빈을 명시하지 않고도 자동으로 DI에 
+오토 와이어링(Auto Wiring)은 DI 컨테이너에서 관리할 빈을 명시하지 않고도 자동으로 DI에 빈을 주입하는 방식이다. 이때 특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트
+
+오토 와이어링을 사용하는 방식에는 타입을 이용하는 방식(autowiring by type)과 이름을 이용하는 방식(autowiring by name) 두가지가 있다. 
 
 
  **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 이라 한다.**
@@ -119,7 +121,7 @@ public void setUserRepository(UserRepository repository){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkyMDc2OTM2LDE4NTgzMzIyNzUsMjA2MT
-AzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5OTYsMTAzODEwOTEx
-NiwtMTcyMDQyNjIzMF19
+eyJoaXN0b3J5IjpbMTM5MDg4NjMzNCwxODU4MzMyMjc1LDIwNj
+EwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkx
+MTYsLTE3MjA0MjYyMzBdfQ==
 -->
