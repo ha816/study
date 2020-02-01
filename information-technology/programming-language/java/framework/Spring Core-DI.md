@@ -73,11 +73,11 @@ UserService userService = (UserService) context.getBean("userService");
 
 ### 설정자 기반 의존성 주입 방식(setter-based dependency injection)
 
-세터 메서드를 사용해서 필요한 의존성이 주입된 객체를 만드는 방법. 
+세터 메서드를 사용해서 필요한 의존성을 주입한다. 
 ```
 @Bean //세터 인젝션을 자바 기반 설정 방식으로 ... 
 UserService userService(UserRepository repository){
-	UserServiceImpl userService =  new UserServiceImpl();
+	UserServiceImpl userService = new UserServiceImpl();
 	userServce.setUserRepository(repository);
 	return userService;
 }
@@ -110,7 +110,7 @@ XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzM2MDEyMzEsMjA2MTAzMTkwMiwxOT
+eyJoaXN0b3J5IjpbLTEyNTgwNDU0NzAsMjA2MTAzMTkwMiwxOT
 E4ODcyODU4LC0yMzM2MTc5OTYsMTAzODEwOTExNiwtMTcyMDQy
 NjIzMF19
 -->
