@@ -15,7 +15,7 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 
 트랜잭션은 DBMS 커넥션과 동일하게 꼭 필요한 최소의 코드에만 적용하는게 좋다. 이는 프로그램 코드에서 트랜잭션의 범위를 최소화하라는 의미다. 
 
-## MySQL 잠금
+## MySQL 잠금(Lock)
 
 MySQL에서 사용되는 잠금은 크게 스토리지 엔진 레벨과 MySQL엔진 레벨로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호 영향을 미치지 않는다. 
 
@@ -37,7 +37,11 @@ LOCK TABLES table_name [ READ | WRITE ]
 UNLOCK TABLES
 ```
 
-묵시적인 테이블 락은 테이블에 **데이터를 변경하는 쿼리를 실행**하면 발생한다. MySQL 서버가 데이터가 변경되는 테이블에 잠금을 설정하고 데이터 변경 후, 해제를 한다. 즉 묵시적 테이블 락은 자동적으로 얻고 해제 된다. InnoDB에서는 레코드 기반의 잠금을 제공하기 때문에 데이터 변경 쿼리로 테이블 락이 발생하지는 않는다. 더 정확히는 Inno
+묵시적인 테이블 락은 테이블에 **데이터를 변경하는 쿼리를 실행**하면 발생한다. MySQL 서버가 데이터가 변경되는 테이블에 잠금을 설정하고 데이터 변경 후, 해제를 한다. 즉 묵시적 테이블 락은 자동적으로 얻고 해제 된다. InnoDB에서는 레코드 기반의 잠금을 제공하기 때문에 데이터 변경 쿼리로 테이블 락이 발생하지는 않는다. 더 정확히는 InnoDB 테이블에도 테이블 락이 설정되지만, 데부분의 데이터 변경 쿼리(DML은 무시되고 스키마를 변경하는 쿼리(DDL)에만 영향을 미친다.
+
+### 유저 락(USER LOCK)
+
+GET_LOCK 함수를 이용해 임의로 잠ㄱ
 
 
 
@@ -45,7 +49,7 @@ UNLOCK TABLES
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTI5MDQ4OTcsODQ3MjQwMjU3LDIwNT
-Q5ODA5NDYsMTk3MzA5ODc2OCwxNDM2MDI5MzQ0LDk2OTcwNTkx
-MywyMDQ1NjQ3ODg5XX0=
+eyJoaXN0b3J5IjpbMTE5NzgwNzI0NCw4NDcyNDAyNTcsMjA1ND
+k4MDk0NiwxOTczMDk4NzY4LDE0MzYwMjkzNDQsOTY5NzA1OTEz
+LDIwNDU2NDc4ODldfQ==
 -->
