@@ -108,7 +108,7 @@ public void setUserRepository(UserRepository repository){
 
 ## AutoWiring
 
-오토 와이어링(Auto Wiring)은 앞서 보았던 필드 기반 의존성 주입 방식(field-based injection)에서 쓰이는 
+오토 와이어링(Auto Wiring)은 DI 컨테이너에서 관리할 빈을 명시하지 않고도 자동으로 DI에 
 
 
  **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 이라 한다.**
@@ -119,7 +119,7 @@ public void setUserRepository(UserRepository repository){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyODMyMjkyLDE4NTgzMzIyNzUsMjA2MT
+eyJoaXN0b3J5IjpbNjkyMDc2OTM2LDE4NTgzMzIyNzUsMjA2MT
 AzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5OTYsMTAzODEwOTEx
 NiwtMTcyMDQyNjIzMF19
 -->
