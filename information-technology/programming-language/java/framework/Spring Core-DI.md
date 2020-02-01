@@ -22,7 +22,7 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 스프링의 DI 컨테이너로는 **빈 팩토리(Bean Factory)** 와 **애플리케이션 컨텍스트(ApplicationContext)** 가 있다. 
 빈 팩토리(Bean Factory)는 의존성 주입, 빈 객체 생성, 생명주기를 관리하는 단순한 역할을 한다. 애플리케이션 컨텍스트(ApplicationContext)는 빈 팩토리의 기능 뿐만 아니라 프로퍼티 파일에 설정을 읽거나 이벤트 리스너에 대한 이벤트 발행 같은 추가 기능을 제공한다. **일반적으로 DI 컨테이너라 하면 바로 애플리케이션 컨텍스트를 말한다.**
 
-### Bean
+## Bean
 
 빈(Bean)은 스프링 DI 컨테이너에서 관리하는 객체이다. 이 빈에 대한 설정 정보를 빈 정의(Bean Definition). 그리고 DI 컨테이너에서 원하는 빈을 찾아오는 행위를 **룩업(look up)** 이라고 한다.
 
@@ -37,7 +37,7 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
  
 애너테이션 기반 설정 방식은 DI 컨테이너에서 관리해야할 클래스에 마커 애너테이션을 붙인다. 컴포넌트 스캔(Component Scan)은 이런 **마커 애너테이션이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록하는 과정**을 말한다.
 
-### ApplicationContext
+## ApplicationContext
 
 스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 이제 ApplicationContext를 구현하는 과정을 보도록 하자. ApplicationContext를 생성할때는 자바 기반 설정 방식과 XML 기반 설정 방식이 있다. 
 ```
@@ -118,7 +118,7 @@ public void setUserRepository(UserRepository repository){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNDc1MjA2NSwxODU4MzMyMjc1LDIwNj
-EwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkx
-MTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NT
+gzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5
+OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
 -->
