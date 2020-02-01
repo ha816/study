@@ -38,7 +38,7 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 
 자바 기반, XML 기반 두 가지 설정 방식은, **모두 DI 컨테이너를 만들면서 필요한 모든 Bean을 세팅한다.** 따라서 애플리케이션에서 사용할 모든 컴포넌트를 자바나 XML로 정의를 해야 하는 번거로움이 있다. 그래서 애너테이션 기반 설정 방법과 병행해서 사용하는 것이 일반적이다. 
  
-애너테이션 기반 설정 방식은  DI 컨테이너에서 관리해야할 클래스에 마커 애너테이션을 붙인다. **이 애너테이션이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록하는데 이를 컴포넌트 스캔(Component Scan)이라고 한다.** 또한 의존성 주입도 명시적으로 설정하는 것이 아니라 **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 오토 와이어링(Auto Wiring)이라 한다.**
+애너테이션 기반 설정 방식은  DI 컨테이너에서 관리해야할 클래스에 마커 애너테이션을 붙인다. **이 애너테이션이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록하는데 이를 컴포넌트 스캔(Component Scan)이라고 한다.** 
 
 컴포넌트 스캔을 수행할때는 스캔할 범위를 지정해야 하는데 자바 기반 설정 방식과 XML 기반 설정 방식을 사용할 수 있다. 
 ```
@@ -59,6 +59,7 @@ public class AppConfig {
 XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으로 스캔범위를 결정한다. 
 
 
+## ApplicationContext
 
 스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 이제 ApplicationContext를 구현하는 과정을 보도록 하자. ApplicationContext를 생성할때 **설정 클래스(Configuration Class)** 를 전달받아 생성한다. 이러한 설정 클래스를  자바 코드로 구현하는걸 **자바 기반 설정 방식**이라 한다. 
 
@@ -85,6 +86,8 @@ UserService userService = (UserService) context.getBean("userService");
 
 ### 의존성 주입
 
+의존성 주입도 명시적으로 설정하는 것이 아니라 **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 오토 와이어링(Auto Wiring)이라 한다.**
+
 스프링에서 제공하는 의존성 주입은 크게 아래 세 가지 방법이 있다.  설정자 기반 의존성 주입 방식(setter-based dependency injection), 생성자 기반 의존성 주입 방식(constructor-based dependency injection), 필드 기반 의존성 주입 방식(field-based injection).
 
 설정자 기반 의존성 주입 방식(setter-based dependency injection)
@@ -96,5 +99,5 @@ UserService userService = (UserService) context.getBean("userService");
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NjAyNjIxN119
+eyJoaXN0b3J5IjpbLTE3MjA0MjYyMzBdfQ==
 -->
