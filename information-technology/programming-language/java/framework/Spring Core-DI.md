@@ -45,12 +45,17 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 
 ```
 @Configuration //자바 기반 방식
+@ComponentScan("com.example.demo")
 public class AppConfig {
 	@Bean UserRepository userRepository(){ return new UserRepositoryImpl();}
 }
 ```
+@Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에서 관리할 빈 컴포넌트를 등록할 수 있다.  
 
-@Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에 빈 컴포넌트를 등록할 수 있다.  
+애플리케이션 컨텍스트 생성시 사용할 Configuration에 @ComponentScan("com.example.demo") 애노테이션을 부여하면 해당 패키지(com.example.demo) 이하의 범위에서 애너테이션이 붙은 클래스를 스캔하여, 애플리케이션 컨텍스트에 자동으로 등록한다. 
+
+
+
 
 
 애플리케이션은 DI 컨테이너에 있는 빈을 가져오는 룩업을 아래와 같이 세 방식으로 할 수 있다.  
@@ -62,19 +67,6 @@ UserService userService = (UserService) context.getBean("userService");
 1번 유형은 빈의 타입을 지정하는 방식으로 해당 타입의 객체가 DI 컨테이너에 하나만 있을때 사용한다. 
 2번 유형은 빈의 타입과 이름을 지정하는 방식이다. 지정한 **타입 객체가 DI 컨테이너에 여러개 있을때** 구분하기 위해 사용한다. 
 3번 유형은 빈의 이름을 지정하는 방식이다. 반환 값이 Object이기 때문에 형변환 해야 원하는 객체를 쓸 수 있다. 
-
-
-컴포넌트 스캔을 수행할때는 스캔할 범위를 설정하기 
-* 자바 기반 
-```
-@Configuration // 자바 기반 설정 방식
-@ComponentScan("com.example.demo")
-public class AppConfig { 
-... 
-}
-```
-
-애플리케이션 컨텍스트 생성시 사용할 Configuration에 @ComponentScan("com.example.demo") 애노테이션을 부여하면 해당 패키지(com.example.demo) 이하의 범위에서 애너테이션이 붙은 클래스를 스캔하여, 애플리케이션 컨텍스트에 자동으로 등록한다. 
 
 ```
 <beans xlms=...> <!--XML 기반 설정 방식-->
@@ -98,6 +90,6 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NjE5ODQwNSwxMDM4MTA5MTE2LC0xNz
-IwNDI2MjMwXX0=
+eyJoaXN0b3J5IjpbMzc3MzQ4MTY0LDEwMzgxMDkxMTYsLTE3Mj
+A0MjYyMzBdfQ==
 -->
