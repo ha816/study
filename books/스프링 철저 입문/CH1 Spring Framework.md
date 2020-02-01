@@ -10,6 +10,8 @@
 
 Java EE(Enterprise Edition)는 일종의 **엔터프라이즈 소프트웨어의 표준**을 말한다. JCP 커뮤니티(Java Community Process, [JCP](https://www.jcp.org/))에서 주도한다. 
 
+자바 사양은 JCP에서 표준화 절차를 걸쳐 만들어진다. JCP의 멤버가 자바 사양의 안건이 될 JSR(Java Specification Request)을 작성하고 제안하면 참여자들의 리뷰를 통해 내용이 구체화된다. JCP의 집행 위원회는 다수의 안건을 검토하고 그중에서 최종 사양을 채택한다. 
+
 
 
 
@@ -53,6 +55,6 @@ EJB는 침투적인(invasive) 기술로 소스코드 측면에서의 강제사�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg1MjgyNzYsMzcyNTcxMzA3LDEyODc5Mj
-AzMzYsLTIxMzA0MjAxMjcsLTk3MjYyOTU4XX0=
+eyJoaXN0b3J5IjpbMTcyMzY3MDcwMSwzNzI1NzEzMDcsMTI4Nz
+kyMDMzNiwtMjEzMDQyMDEyNywtOTcyNjI5NThdfQ==
 -->
