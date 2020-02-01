@@ -25,9 +25,11 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 빈 팩토리(Bean Factory)는 의존성 주입, 빈 객체 생성, 생명주기를 관리하는 단순한 역할을 한다.
 애플리케이션 컨텍스트(ApplicationContext)는 빈 팩토리의 기능 뿐만 아니라 프로퍼티 파일에 설정을 읽거나 이벤트 리스너에 대한 이벤트 발행 같은 추가 기능을 제공한다. **일반적으로 DI 컨테이너라 하면 바로 애플리케이션 컨텍스트를 말한다.**
 
-## ApplicationContext와 Bean
+## ApplicationContext와 Bean 설정
 
-스프링 프레임 워크에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. ApplicationContext를 생성할때 설정 클래스(configuration class)를 전달받아 생성한다. 이러한 설정 클래스를  자바 코드로 구현하는걸 자바 기반 설정 방식이라 한다. 
+스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 
+이제 ApplicationContext를 구현하는 과정을 보도록 하자.
+ApplicationContext를 생성할때 **설정 클래스(Configuration Class)**를 전달받아 생성한다. 이러한 설정 클래스를  자바 코드로 구현하는걸 자바 기반 설정 방식이라 한다. 
 
 ```
 @Configuration
@@ -98,5 +100,5 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njg3NDUzNjJdfQ==
+eyJoaXN0b3J5IjpbLTE1NzMyNDg4MTZdfQ==
 -->
