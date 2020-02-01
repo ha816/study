@@ -98,15 +98,13 @@ public void setUserRepository(UserRepository repository){
 	this.userRepository = userRepository;
 }
 ```
-
-
-마지막으로 애너테이션 기반 설정 방식에서는 구현체의 세터 메서드에다가 @Autowired를 달아주면 된다. 애너테이션 기반 설정 방식은 자바 기반 설정 방식과 같이 별도의 설정 파일을 둘 필요가 없다. 
-
-
+마지막으로 애너테이션 기반 설정 방식에서는 **구현체의 세터 메서드에다가 @Autowired**를 달아주면 된다. 애너테이션 기반 설정 방식은 자바 기반 설정 방식과 같이 별도의 설정 파일을 둘 필요가 없다. 
 
 ### 생성자 기반 의존성 주입 방식(constructor-based dependency injection)
 
-컨스트런터 인젝션이라고도 하며, XML 기반 설정 방식에서는 <constructor-arg> 요소로 설정하고 애너테이션 기반 방식에서는 생성자에 @Autowired를 부여한다. 
+컨스트런터 인젝션이라고도 하며, 자바 기반 설정 방식에서는 생성자에 의존 컴포넌트를 직업 설정한다. 
+
+ XML 기반 설정 방식에서는 <constructor-arg> 요소로 설정하고 애너테이션 기반 방식에서는 생성자에 @Autowired를 부여한다. 
 
 필드 기반 의존성 주입 방식(field-based injection) 
 
@@ -120,7 +118,7 @@ public void setUserRepository(UserRepository repository){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU3ODc1Mzc3LDIwNjEwMzE5MDIsMTkxOD
-g3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYy
-MzBdfQ==
+eyJoaXN0b3J5IjpbLTE1NDI2NDMwMzUsMjA2MTAzMTkwMiwxOT
+E4ODcyODU4LC0yMzM2MTc5OTYsMTAzODEwOTExNiwtMTcyMDQy
+NjIzMF19
 -->
