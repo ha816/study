@@ -41,7 +41,8 @@ UNLOCK TABLES
 
 ### 유저 락(USER LOCK)
 
-GET_LOCK 함수를 이용해 임의로 잠ㄱ
+GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 이때 잠금의 대상은 테이블이나 레코드와 같은 데이터 베이스 객체가 아니다. 
+유저락은 단순히 사용자가 지정한 문자열에 대한 잠금이다. 유저락은 
 
 
 
@@ -49,7 +50,7 @@ GET_LOCK 함수를 이용해 임의로 잠ㄱ
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NzgwNzI0NCw4NDcyNDAyNTcsMjA1ND
-k4MDk0NiwxOTczMDk4NzY4LDE0MzYwMjkzNDQsOTY5NzA1OTEz
-LDIwNDU2NDc4ODldfQ==
+eyJoaXN0b3J5IjpbNDc2MjQ4NzQ1LDg0NzI0MDI1NywyMDU0OT
+gwOTQ2LDE5NzMwOTg3NjgsMTQzNjAyOTM0NCw5Njk3MDU5MTMs
+MjA0NTY0Nzg4OV19
 -->
