@@ -54,14 +54,11 @@ public class AppConfig {
 
 ```
 <beans xlms=...> <!--XML 기반 설정 방식-->
-<bean id="user" class="org.springframework.context.support.ResourceBundleMessageSource">  
- <property name="basename" value="messages/message"/>  
- <property name="defaultEncoding" value="UTF-8"/>  
-</bean>
+	<bean id="userDao" class="com.example.demo.UserDao"></bean>
 	<context:component-scan base-package="com.example.demo" />
 </beans>
 ```
-XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으로 스캔범위를 결정한다. 
+XML기반은 설정 밧ㄱ인`<context:component-scan>` 태그요소의 base-packages 속성으로 스캔범위를 결정한다. 
 
 
 애플리케이션 코드상에서 DI 컨테이너에 있는 빈을 가져오는 룩업을 아래와 같이 세 방식으로 할 수 있다.  
@@ -90,6 +87,6 @@ UserService userService = (UserService) context.getBean("userService");
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg4NzgxMDI5LDEwMzgxMDkxMTYsLTE3Mj
-A0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbLTE5Njg1OTQ3MDYsMTAzODEwOTExNiwtMT
+cyMDQyNjIzMF19
 -->
