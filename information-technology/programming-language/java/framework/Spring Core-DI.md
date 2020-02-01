@@ -89,7 +89,7 @@ UserService userService(UserRepository repository){
 	<property name="userRepository" ref="userRepository" />
 </bean>	
 ```
-XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의 이름을 지정하면 된다. 
+XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의 이름을 지정하면 된다. 여기서 프로퍼티 이름은 기준으로 자바빈즈의 관례에 따라 프로퍼티의 이름과 메서드의 이름을 정한다. 위의 예에선 setUser
 
 
 마지막으로 애너테이션 기반 설정 방식에서는 세터 메서드에다가 @Autowired를 달아주면 된다. 애너테이션 기반 설정 방식은 자바 기반 설정 방식과 같이 별도의 설정 파일을 둘 필요가 없다. 
@@ -110,7 +110,7 @@ XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTgwNDU0NzAsMjA2MTAzMTkwMiwxOT
+eyJoaXN0b3J5IjpbLTE3MzcxNDQ3NTgsMjA2MTAzMTkwMiwxOT
 E4ODcyODU4LC0yMzM2MTc5OTYsMTAzODEwOTExNiwtMTcyMDQy
 NjIzMF19
 -->
