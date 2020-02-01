@@ -1,12 +1,10 @@
 # Spring Framework
 
-> Spring Framework란 무엇인가요?
-
 **규모가 있는 엔터프라이즈급 애플리케이션을 개발하는데 유용한 자바기반의 오프소스 프레임워크.** 
 
 스프링 프레임워크의 핵심은 DI(Dependency Injection), AOP(Aspect Oriendted Programming)이다. 뿐만 아니라 스프링 프레임워크는 추상화를 통해 다양한 모듈을 사용할 수 있고 프레임워크단에서 제공하는 훌륭한 구현체가 많다.
 
-## Java EE
+# Java EE
 
 Java EE(Enterprise Edition)는 일종의 **엔터프라이즈 소프트웨어의 표준**을 말한다. JCP 커뮤니티(Java Community Process, [JCP](https://www.jcp.org/))에서 주도한다. 
 
@@ -27,33 +25,9 @@ EJB는 보안, 트랜잭션등 EJB 컨테이너의 다양한 서비스를 제공
 
 그래서 스프링은 EJB에서 문제가 되었던 부분을 해결하기 위해 비 침투적인(**non-invasive**) 방식을 도입하였다.
 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NjQyNTA1OCwtNzA3MTM1NjE4LDM3Mj
+eyJoaXN0b3J5IjpbLTkwODE5MjkwNCwtNzA3MTM1NjE4LDM3Mj
 U3MTMwNywxMjg3OTIwMzM2LC0yMTMwNDIwMTI3LC05NzI2Mjk1
 OF19
 -->
