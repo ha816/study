@@ -19,7 +19,8 @@ JavaEE는 사양이며, 여러 소프트웨어 벤더가 이 사양에 맞춰 �
 
 ## 엔터프라이즈 자바빈즈(Enterprise JavaBeans) 
 
-Java EE 표준을 구현하기 위한 아키텍처가 바로 EJB(Enterprise JavaBeans)이다.
+Java EE 표준을 구현하기 위한 아키텍처가 바로 EJB(Enterprise JavaBeans)이다. 태생적인 이유로 EJB는 Spring과 자주 비교가 된다. 
+
 EJB는 침투적인(invasive) 기술로 소스코드 측면에서의 강제사항(EJB 관련 클래스를 반드시 사용)과 개발환경 측면에서의 강제사항(EJB 컨테이너 사용) 떄문에 아래와 같은 문제가 발생한다.
 
 -   개발 생산성 저하
@@ -55,6 +56,7 @@ EJB는 침투적인(invasive) 기술로 소스코드 측면에서의 강제사�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNzEzNTYxOCwzNzI1NzEzMDcsMTI4Nz
-kyMDMzNiwtMjEzMDQyMDEyNywtOTcyNjI5NThdfQ==
+eyJoaXN0b3J5IjpbLTE1OTIwMjEyMDgsLTcwNzEzNTYxOCwzNz
+I1NzEzMDcsMTI4NzkyMDMzNiwtMjEzMDQyMDEyNywtOTcyNjI5
+NThdfQ==
 -->
