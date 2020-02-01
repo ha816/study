@@ -90,8 +90,6 @@ UserService userService(UserRepository repository){
 </bean>	
 ```
 XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의 이름을 지정하면 된다. 여기서 프로퍼티 이름은 기준으로 자바빈즈의 관례에 따라 프로퍼티의 이름과 메서드의 이름을 정한다. 위의 예에선 setUserRepository 메서드가 생성된다. 
-
-
 ```
 @Autowired //애너테이션 기반 설정 방식으로 ... 
 public void setUserRepository(UserRepository repository){
@@ -108,7 +106,12 @@ public void setUserRepository(UserRepository repository){
 
 필드 기반 의존성 주입은 생성자나 설정자 메서드를 쓰지 않고 DI 컨테이너의 힘을 빌려 의존성을 주입한다. 간단히 의존성을 주입하고 싶은 필드에 @Autowired를 달아준다. 필드기반 의존성 주입을 사용하여 생성자나 세터 메서드를 쓰지 않아도 되서 코드가 간결해 보이는 효과가 있다. 
 
- **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 오토 와이어링(Auto Wiring)이라 한다.**
+### AutoWiring
+
+오토 와이어링(Auto Wiring)은 자바 기반 설정 
+
+
+ **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 이라 한다.**
 
 
 
@@ -116,7 +119,7 @@ public void setUserRepository(UserRepository repository){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1ODMzMjI3NSwyMDYxMDMxOTAyLDE5MT
-g4NzI4NTgsLTIzMzYxNzk5NiwxMDM4MTA5MTE2LC0xNzIwNDI2
-MjMwXX0=
+eyJoaXN0b3J5IjpbMTc5NzM5MTgyNiwxODU4MzMyMjc1LDIwNj
+EwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkx
+MTYsLTE3MjA0MjYyMzBdfQ==
 -->
