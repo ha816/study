@@ -57,7 +57,7 @@ public class AppConfig {
 XML기반은 설정 방식은 `<bean>` 태그로 사용하려는 빈을 DI 컨테이너에 등록한다. 
  그리고 컴포넌트 스캔 범위는 `<context:component-scan>` 태그요소의 base-packages 속성으로 결정한다. 
 
-참고로 애플리케이션 컨텍스트에 있는 빈을 가져오는 방법은  아래와 같이 세 가지 방식이 있다.
+참고로 애플리케이션 컨텍스트에 있는 빈을 가져오는 방법(룩업)은  아래와 같이 세 가지 방식이 있다.
 ```
 UserService userService = context.getBean(UserService.class);
 UserService userService = context.getBean("userService",UserService.class);
@@ -69,10 +69,7 @@ UserService userService = (UserService) context.getBean("userService");
 
 ## Spring DI
 
-스프링에서 제공하는 룩업은 크게 세 가지 방법이 있다. 설정자 기반 의존성 주입 방식(setter-based dependency injection), 생성자 기반 의존성 주입 방식(constructor-based dependency injection), 필드 기반 의존성 주입 방식(field-based injection). 
-
-의존성 주입을 명시적으로 설정하는 것이 아니라 **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 오토 와이어링(Auto Wiring)이라 한다.**
-
+스프링에서 제공하는 의존성 주입은 크게 세 가지 방법이 있다. 설정자 기반 의존성 주입 방식(setter-based dependency injection), 생성자 기반 의존성 주입 방식(constructor-based dependency injection), 필드 기반 의존성 주입 방식(field-based injection). 
 
 설정자 기반 의존성 주입 방식(setter-based dependency injection)
 : 세터 메서드를 사용해서 필요한 의존성이 주입된 객체를 만드는 방법. 자바 기반 설정 방식으로는 @Bean 애너테이션을 붙은 Bean 생성 메서드에서 필요한 객체를 만들고 세터메서드로 의존 주입을 통한 객체를 반환한다. XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의 이름을 지정하면 된다. 마지막으로 애너테이션 기반 설정 방식에서는 세터 메서드에다가 @Autowired를 달아주면 된다. 애너테이션 기반 설정 방식은 자바 기반 설정방식과 같이 별도의 설정 파일을 둘 필요가 없다. 
@@ -85,6 +82,6 @@ UserService userService = (UserService) context.getBean("userService");
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzk3NzA2OCwtMjMzNjE3OTk2LDEwMz
-gxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbLTExNDM3MTM3NzAsLTIzMzYxNzk5NiwxMD
+M4MTA5MTE2LC0xNzIwNDI2MjMwXX0=
 -->
