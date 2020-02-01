@@ -31,18 +31,21 @@ MySQL 엔진에서는 테이블 데이터 동기화를 위한 테이블 락 말�
 
 개별 테이블 단위로 설정되는 잠금이다. 
 명시적이나 또는 묵시적으로 특정 테이블의 락을 얻을 수 있다. 
-
+명시적 방법은 아래와 같다. 명시적 테이블 락도 특별한 상황이 아니면 거의 사용할 필요가 없다. 
 ```
 LOCK TABLES table_name [ READ | WRITE ]
-
+UNLOCK TABLES
 ```
+
+묵시적인 테이블 락은 테이블에 데이터를 변경하는 쿼리를 실행하면 발생한다. 
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNTU0NjEyOCw4NDcyNDAyNTcsMjA1ND
-k4MDk0NiwxOTczMDk4NzY4LDE0MzYwMjkzNDQsOTY5NzA1OTEz
-LDIwNDU2NDc4ODldfQ==
+eyJoaXN0b3J5IjpbMTI3NjE1NTUxLDg0NzI0MDI1NywyMDU0OT
+gwOTQ2LDE5NzMwOTg3NjgsMTQzNjAyOTM0NCw5Njk3MDU5MTMs
+MjA0NTY0Nzg4OV19
 -->
