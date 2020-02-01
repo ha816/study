@@ -21,11 +21,15 @@ MySQL에서 사용되는 잠금은 크게 스토리지 엔진 레벨과 MySQL엔
 
 MySQL 엔진에서는 테이블 데이터 동기화를 위한 테이블 락 말고도 사용자의 필요에 맞게 유저 락과 테이블 명에 대한 잠금을 위한 네임 락이라는 것을 제공한다. 
 
+### Global Rock(글로벌 락)
+
+글로벌 락은 "FLUSH TABLES WITH READ LOCK"이라는 명령으로만 획들 할 수 있으며, MySQL에서 제공하는 잠금 가운데 가장 범위가 크다. 
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NTMxODY1NiwyMDU0OTgwOTQ2LDE5Nz
-MwOTg3NjgsMTQzNjAyOTM0NCw5Njk3MDU5MTMsMjA0NTY0Nzg4
-OV19
+eyJoaXN0b3J5IjpbODQ3MjQwMjU3LDIwNTQ5ODA5NDYsMTk3Mz
+A5ODc2OCwxNDM2MDI5MzQ0LDk2OTcwNTkxMywyMDQ1NjQ3ODg5
+XX0=
 -->
