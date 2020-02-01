@@ -21,9 +21,10 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 * AOP 방식으로 공통 기능을 집어 넣을 수 있다.
 * 컴포넌트 간의 결합도를 낮추어 단위 테스트가 용이하다.
 
-### 
-
 스프링의 DI 컨테이너로는 **빈 팩토리(Bean Factory)** 와 **애플리케이션 컨텍스트(ApplicationContext)** 가 있다. 
+
+빈 팩토리(Bean Factory)는 빈 객체 생성, 의존성 주입, 생명주기를 관리하는 단순한 역할
+
 
 빈 팩토리(Bean Factory) 
 : 빈 객체 생성, 의존성 주입, 생명주기를 관리하는 단순한 역할. 
@@ -31,14 +32,7 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 애플리케이션 컨텍스트(ApplicationContext)
 : 빈 팩토리를 확장해 프로퍼티 파일에 설정을 읽고 이벤트 리스너에 대한 이벤트 발행 같은 추가 기능을 제공한다. 일반적으로 DI 컨테이너라 하면 바로 애플리케이션 컨텍스트를 말한다.
 
-
-```
-ApplicationContext context = ...; //DI 컨테이너
-UserService service = context.getBean(UserService.class);
-...
-```
-
-### ApplicationContext와 Bean 정의
+## ApplicationContext와 Bean 정의
 
 스프링 프레임 워크에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. ApplicationContext를 생성할때 설정 클래스(configuration class)를 전달받아 생성한다. 이러한 설정 클래스를  자바 코드로 구현하는걸 자바 기반 설정 방식이라 한다. 
 
@@ -111,5 +105,5 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE4NTIxOTc4XX0=
+eyJoaXN0b3J5IjpbLTIyMzUwMjY4MF19
 -->
