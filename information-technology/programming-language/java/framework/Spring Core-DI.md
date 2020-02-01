@@ -29,7 +29,7 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 
 스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 
 이제 ApplicationContext를 구현하는 과정을 보도록 하자.
-ApplicationContext를 생성할때 **설정 클래스(Configuration Class)**를 전달받아 생성한다. 이러한 설정 클래스를  자바 코드로 구현하는걸 자바 기반 설정 방식이라 한다. 
+ApplicationContext를 생성할때 **설정 클래스(Configuration Class)** 를 전달받아 생성한다. 이러한 설정 클래스를  자바 코드로 구현하는걸 자바 기반 설정 방식이라 한다. 
 
 ```
 @Configuration
@@ -100,5 +100,5 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzMyNDg4MTZdfQ==
+eyJoaXN0b3J5IjpbMjc2ODM3MTBdfQ==
 -->
