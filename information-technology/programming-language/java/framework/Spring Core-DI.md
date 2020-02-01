@@ -106,26 +106,24 @@ public void setUserRepository(UserRepository repository){
 
 필드 기반 의존성 주입은 생성자나 설정자 메서드를 쓰지 않고 DI 컨테이너의 힘을 빌려 의존성을 주입한다. 간단히 의존성을 주입하고 싶은 필드에 @Autowired를 달아준다. 필드기반 의존성 주입을 사용하여 생성자나 세터 메서드를 쓰지 않아도 되서 코드가 간결해 보이는 효과가 있다. 
 
-## Component Scan
-
-클래스 로더를 스캔하면서 특정 클래스를 찾아 DI컨테이너에 등록하는 방법을 말한다. 
-
-
 ## AutoWiring
 
 오토 와이어링(Auto Wiring)은 DI 컨테이너의 빈을 자동으로 주입하는 방식이다. 
 
 오토 와이어링을 사용하는 방식에는 타입을 이용하는 방식(autowiring by type)과 이름을 이용하는 방식(autowiring by name) 두가지가 있다. 
 
+## Component Scan
 
+DI 컨테이너가 관리하는 빈은 명시적으로 설정된 빈과 자동으로 
+클래스 로더를 스캔하면서 특정 클래스를 찾아 DI컨테이너에 등록하는 방법을 말한다. 
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjkyOTAxNDcsLTY1Njg2NDU4MSwxNT
-A0NzUyMDY1LDE4NTgzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcy
-ODU4LC0yMzM2MTc5OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF
-19
+eyJoaXN0b3J5IjpbOTY3MjgxMTY2LC02NTY4NjQ1ODEsMTUwND
+c1MjA2NSwxODU4MzMyMjc1LDIwNjEwMzE5MDIsMTkxODg3Mjg1
+OCwtMjMzNjE3OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYyMzBdfQ
+==
 -->
