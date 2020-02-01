@@ -41,13 +41,10 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 
 ### ApplicationContext
 
-스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 이제 ApplicationContext를 구현하는 과정을 보도록 하자. 
-
-
-ApplicationContext를 생성할때는 아 생성한다. 이러한 설정 클래스를  자바 코드로 구현하는걸 **자바 기반 설정 방식**이라 한다. 
+스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 이제 ApplicationContext를 구현하는 과정을 보도록 하자. ApplicationContext를 생성할때는 자바 기반 설정 방식과 XML 기반 설정 방식이 있다. 
 
 ```
-@Configuration
+@Configuration //자바 기반 방식
 public class AppConfig {
 	@Bean
 	UserRepository userRepository(){
@@ -56,7 +53,7 @@ public class AppConfig {
 }
 ```
 
-@Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에 컴포넌트를 등록하면 애플리케이션은 DI 컨테이너에 있는 Bean을 DI 컨테이너로 부터 가져 올 수 있다. 이러한 룩업을 하는 방법에는 세 가지 유형이 있다. 
+@Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에 빈 컴포넌트를 등록할 수 있다.  애플리케이션은 DI 컨테이너에 있는 Bean을 DI 컨테이너로 부터 가져 올 수 있다. 이러한 룩업을 하는 방법에는 세 가지 유형이 있다. 
 ```
 UserService userService = context.getBean(UserService.class);
 UserService userService = context.getBean("userService",UserService.class);
@@ -101,6 +98,6 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NzkxNTE5MywxMDM4MTA5MTE2LC0xNz
+eyJoaXN0b3J5IjpbLTM4MDU2OTcwNiwxMDM4MTA5MTE2LC0xNz
 IwNDI2MjMwXX0=
 -->
