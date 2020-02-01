@@ -42,27 +42,7 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
  
 애너테이션 기반 설정 방식은  DI 컨테이너에서 관리해야할 클래스에 마커 애너테이션을 붙인다. **이 애너테이션이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록하는데 이를 컴포넌트 스캔(Component Scan)이라고 한다.** 
 
-컴포넌트 스캔을 수행할때는 스캔할 범위를 설정하기 
-* 자바 기반 
-```
-@Configuration // 자바 기반 설정 방식
-@ComponentScan("com.example.demo")
-public class AppConfig { 
-... 
-}
-```
-
-애플리케이션 컨텍스트 생성시 사용할 Configuration에 @ComponentScan("com.example.demo") 애노테이션을 부여하면 해당 패키지(com.example.demo) 이하의 범위에서 애너테이션이 붙은 클래스를 스캔하여, 애플리케이션 컨텍스트에 자동으로 등록한다. 
-
-```
-<beans xlms=...> <!--XML 기반 설정 방식-->
-	<context:component-scan base-package="com.example.demo" />
-</beans>
-```
-XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으로 스캔범위를 결정한다. 
-
-
-## ApplicationContext
+### ApplicationContext
 
 스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 이제 ApplicationContext를 구현하는 과정을 보도록 하자. ApplicationContext를 생성할때 **설정 클래스(Configuration Class)** 를 전달받아 생성한다. 이러한 설정 클래스를  자바 코드로 구현하는걸 **자바 기반 설정 방식**이라 한다. 
 
@@ -87,6 +67,25 @@ UserService userService = (UserService) context.getBean("userService");
 3번 유형은 빈의 이름을 지정하는 방식이다. 반환 값이 Object이기 때문에 형변환 해야 원하는 객체를 쓸 수 있다. 
 
 
+컴포넌트 스캔을 수행할때는 스캔할 범위를 설정하기 
+* 자바 기반 
+```
+@Configuration // 자바 기반 설정 방식
+@ComponentScan("com.example.demo")
+public class AppConfig { 
+... 
+}
+```
+
+애플리케이션 컨텍스트 생성시 사용할 Configuration에 @ComponentScan("com.example.demo") 애노테이션을 부여하면 해당 패키지(com.example.demo) 이하의 범위에서 애너테이션이 붙은 클래스를 스캔하여, 애플리케이션 컨텍스트에 자동으로 등록한다. 
+
+```
+<beans xlms=...> <!--XML 기반 설정 방식-->
+	<context:component-scan base-package="com.example.demo" />
+</beans>
+```
+XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으로 스캔범위를 결정한다. 
+
 ### 의존성 주입
 
 의존성 주입도 명시적으로 설정하는 것이 아니라 **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 오토 와이어링(Auto Wiring)이라 한다.**
@@ -102,5 +101,5 @@ UserService userService = (UserService) context.getBean("userService");
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDk0ODA1OSwtMTcyMDQyNjIzMF19
+eyJoaXN0b3J5IjpbMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
 -->
