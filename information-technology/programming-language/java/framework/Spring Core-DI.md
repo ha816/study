@@ -40,7 +40,6 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 ### ApplicationContext
 
 스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 이제 ApplicationContext를 구현하는 과정을 보도록 하자. ApplicationContext를 생성할때는 자바 기반 설정 방식과 XML 기반 설정 방식이 있다. 
-
 ```
 @Configuration //자바 기반 방식
 @ComponentScan("com.example.demo")
@@ -49,7 +48,6 @@ public class AppConfig {
 }
 ```
 @Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에서 관리할 빈 컴포넌트를 등록할 수 있다.  또 @ComponentScan("com.example.demo") 애노테이션을 부여하면 해당 패키지(com.example.demo) 이하의 범위에서 애너테이션이 붙은 클래스를 스캔하여, 애플리케이션 컨텍스트에 자동으로 등록한다. 
-
 ```
 <beans xlms=...> <!--XML 기반 설정 방식-->
 	<bean id="userDao" class="com.example.demo.UserDao"></bean>
@@ -59,7 +57,7 @@ public class AppConfig {
 XML기반은 설정 방식은 `<bean>` 태그로 사용하려는 빈을 DI 컨테이너에 등록한다. 
  그리고 컴포넌트 스캔 범위는 `<context:component-scan>` 태그요소의 base-packages 속성으로 결정한다. 
 
-애플리케이션 컨텍스트에 있는 빈을 가져오는 룩업은 코드상에서 아래와 같이 세 방식으로 할 수 있다.  
+참고로 애플리케이션 컨텍스트에 있는 빈을 가져오는 방법은  아래와 같이 세 가지 방식이 있다.
 ```
 UserService userService = context.getBean(UserService.class);
 UserService userService = context.getBean("userService",UserService.class);
@@ -89,6 +87,6 @@ UserService userService = (UserService) context.getBean("userService");
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0NDYzOTQ3LC0yMzM2MTc5OTYsMTAzOD
-EwOTExNiwtMTcyMDQyNjIzMF19
+eyJoaXN0b3J5IjpbLTE5OTI5OTE3ODQsLTIzMzYxNzk5NiwxMD
+M4MTA5MTE2LC0xNzIwNDI2MjMwXX0=
 -->
