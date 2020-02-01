@@ -37,13 +37,14 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 
 자바 기반, XML 기반 두 가지 설정 방식은, **모두 DI 컨테이너를 만들면서 필요한 모든 Bean을 세팅한다.** 따라서 애플리케이션에서 사용할 모든 컴포넌트를 자바나 XML로 정의를 해야 하는 번거로움이 있다. 그래서 애너테이션 기반 설정 방법과 병행해서 사용하는 것이 일반적이다. 
  
-애너테이션 기반 설정 방식은  DI 컨테이너에서 관리해야할 클래스에 마커 애너테이션을 붙인다. 
-
-마커 애너테이션이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록하는 과정을 컴포넌트 스캔(Component Scan)이라고 한다.** 
+애너테이션 기반 설정 방식은 DI 컨테이너에서 관리해야할 클래스에 마커 애너테이션을 붙인다. 컴포넌트 스캔(Component Scan)은 이런 **마커 애너테이션이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록하는 과정**을 말한다.
 
 ### ApplicationContext
 
-스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 이제 ApplicationContext를 구현하는 과정을 보도록 하자. ApplicationContext를 생성할때 **설정 클래스(Configuration Class)** 를 전달받아 생성한다. 이러한 설정 클래스를  자바 코드로 구현하는걸 **자바 기반 설정 방식**이라 한다. 
+스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 이제 ApplicationContext를 구현하는 과정을 보도록 하자. 
+
+
+ApplicationContext를 생성할때는 아 생성한다. 이러한 설정 클래스를  자바 코드로 구현하는걸 **자바 기반 설정 방식**이라 한다. 
 
 ```
 @Configuration
@@ -100,6 +101,6 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjE5MDA0LDEwMzgxMDkxMTYsLTE3Mj
-A0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbLTM4NzkxNTE5MywxMDM4MTA5MTE2LC0xNz
+IwNDI2MjMwXX0=
 -->
