@@ -37,7 +37,7 @@ LOCK TABLES table_name [ READ | WRITE ]
 UNLOCK TABLES
 ```
 
-묵시적인 테이블 락은 테이블에 데이터를 변경하는 쿼리를 실행하면 발생한다. 
+묵시적인 테이블 락은 테이블에 **데이터를 변경하는 쿼리를 실행**하면 발생한다. MySQL 서버가 데이터가 변경되는 테이블에 잠금을 설정하고 데이터 변경 후, 해제를 한다. 즉 묵시적 테이블 락은 자동적으로 얻고 해제 된다. InnoDB에서는 레코드 기반의 잠금을 제공하기 때문에 데이터 변경 쿼리로 테이블 락이 발생하지는 않는다. 더 정확히는 Inno
 
 
 
@@ -45,7 +45,7 @@ UNLOCK TABLES
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NjE1NTUxLDg0NzI0MDI1NywyMDU0OT
-gwOTQ2LDE5NzMwOTg3NjgsMTQzNjAyOTM0NCw5Njk3MDU5MTMs
-MjA0NTY0Nzg4OV19
+eyJoaXN0b3J5IjpbLTE0NTI5MDQ4OTcsODQ3MjQwMjU3LDIwNT
+Q5ODA5NDYsMTk3MzA5ODc2OCwxNDM2MDI5MzQ0LDk2OTcwNTkx
+MywyMDQ1NjQ3ODg5XX0=
 -->
