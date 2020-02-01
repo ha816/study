@@ -23,7 +23,9 @@ MySQL 엔진에서는 테이블 데이터 동기화를 위한 테이블 락 말�
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NDk4MDk0NiwxOTczMDk4NzY4LDE0Mz
-YwMjkzNDQsOTY5NzA1OTEzLDIwNDU2NDc4ODldfQ==
+eyJoaXN0b3J5IjpbMTE4NTMxODY1NiwyMDU0OTgwOTQ2LDE5Nz
+MwOTg3NjgsMTQzNjAyOTM0NCw5Njk3MDU5MTMsMjA0NTY0Nzg4
+OV19
 -->
