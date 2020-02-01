@@ -71,11 +71,15 @@ UserService userService = (UserService) context.getBean("userService");
 
 구체적으로 사용하려는 빈을 스프링에서 주입받는 방법에는 크게 세 가지 방법 이 있다. 
 
-설정자 기반 의존성 주입 방식(setter-based dependency injection)
-: 세터 메서드를 사용해서 필요한 의존성이 주입된 객체를 만드는 방법. 자바 기반 설정 방식으로는 @Bean 애너테이션이 붙은 Bean 생성 메서드에서 필요한 객체를 만들고 세터메서드로 의존 주입을 통한 객체를 반환한다. XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의 이름을 지정하면 된다. 마지막으로 애너테이션 기반 설정 방식에서는 세터 메서드에다가 @Autowired를 달아주면 된다. 애너테이션 기반 설정 방식은 자바 기반 설정 방식과 같이 별도의 설정 파일을 둘 필요가 없다. 
+### 설정자 기반 의존성 주입 방식(setter-based dependency injection)
 
-생성자 기반 의존성 주입 방식(constructor-based dependency injection)
-: 컨스트런터 인젝션이라고도 하며, XML 기반 설정 방식에서는 <constructor-arg> 요소로 설정하고 애너테이션 기반 방식에서는 생성자에 @Autowired를 부여한다. 
+세터 메서드를 사용해서 필요한 의존성이 주입된 객체를 만드는 방법. @Bean 애너테이션이 붙은 Bean 생성 메서드로 필요한 객체를 만들고, 세터메서드로 의존 주입을 통한 객체를 반환한다. 
+
+XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의 이름을 지정하면 된다. 마지막으로 애너테이션 기반 설정 방식에서는 세터 메서드에다가 @Autowired를 달아주면 된다. 애너테이션 기반 설정 방식은 자바 기반 설정 방식과 같이 별도의 설정 파일을 둘 필요가 없다. 
+
+### 생성자 기반 의존성 주입 방식(constructor-based dependency injection)
+
+컨스트런터 인젝션이라고도 하며, XML 기반 설정 방식에서는 <constructor-arg> 요소로 설정하고 애너테이션 기반 방식에서는 생성자에 @Autowired를 부여한다. 
 
 필드 기반 의존성 주입 방식(field-based injection) 
 
@@ -89,6 +93,7 @@ UserService userService = (UserService) context.getBean("userService");
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMz
-M2MTc5OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
+eyJoaXN0b3J5IjpbODk5ODUzOTAxLDIwNjEwMzE5MDIsMTkxOD
+g3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYy
+MzBdfQ==
 -->
