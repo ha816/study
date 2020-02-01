@@ -124,7 +124,22 @@ public void setUserRepository(UserRepository repository){
 
 ### Autowiring by Name
 
+
+간단히 말하면, DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 컨테이너가 제공하는 빈을 특정 클래스에서 사용하고 싶어 의존성 주입을 자동으로 받을때 사용하는 방법이다. @Autowired을 세터 메서드, 생성자, 필드에 붙이면 빈 컨테이너로부터 필요한 객체를 주입받을 수 있다. 
+
+클래스에 외부에서 접근 가능한 생성자나 세터 메서드가 없더라도 필드에 @Autowired를 붙일 수 있는데 심지어 private 필드일지라도 적절한 인스턴스를 오토 와이어 한다. DI 컨테이너가 이 클래스가 생성된 후에 리플렉션(reflection)을 이용하여 이 필드에 인스턴스를 오토 와이어 한다.
+
+
 ### Bean Scope
+
+기본적으로 스프링 빈은 애플리케이션 컨텍스트 초기화될 때 생성되는데, 이를 eager Instantiation이라고 한다. 그리고 특별한 설정이 없으면 스프링 빈 인스턴스는 하나만 생성되며, 이를 싱글턴 스코프라고 한다. 
+
+DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴스에서 이용한다는 것을 고려해야 하기 때문에, 스레드 세이프 해야 한다. 
+
+싱글턴 스코프를 사용하느게 아니라 새 인스턴스를 받고 싶다면 prototype을 사용하면 된다. 그러면 DI 컨테이너에서 getBean 메서드를 호출할때마다 새 인스턴스가 반환된다. 이를 프로토타입 빈 스코프(prototype scope)라고 한다.
+
+특정 HTTP 요청이 살아있는 동반 빈이 살아있는 리퀘스트(request scope), HTTP의 세션이 존재하는 동안만 존재하는 세션(session scope) 같은 다른 스코프도 존재한다. 
+
 
 
 ### Bean Life Cycle
@@ -136,8 +151,8 @@ public void setUserRepository(UserRepository repository){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAwNTE0NzY3LC04ODEzNDk5MjMsLTY1Nj
-g2NDU4MSwxNTA0NzUyMDY1LDE4NTgzMzIyNzUsMjA2MTAzMTkw
-MiwxOTE4ODcyODU4LC0yMzM2MTc5OTYsMTAzODEwOTExNiwtMT
-cyMDQyNjIzMF19
+eyJoaXN0b3J5IjpbLTIwOTM1NTY4NDUsNzAwNTE0NzY3LC04OD
+EzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NTgzMzIy
+NzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5OTYsMT
+AzODEwOTExNiwtMTcyMDQyNjIzMF19
 -->
