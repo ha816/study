@@ -22,12 +22,11 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 * 컴포넌트 간의 결합도를 낮추어 단위 테스트가 용이하다.
 
 스프링의 DI 컨테이너로는 **빈 팩토리(Bean Factory)** 와 **애플리케이션 컨텍스트(ApplicationContext)** 가 있다. 
-빈 팩토리(Bean Factory)는 의존성 주입, 빈 객체 생성, 생명주기를 관리하는 단순한 역할을 한다.
-애플리케이션 컨텍스트(ApplicationContext)는 빈 팩토리의 기능 뿐만 아니라 프로퍼티 파일에 설정을 읽거나 이벤트 리스너에 대한 이벤트 발행 같은 추가 기능을 제공한다. **일반적으로 DI 컨테이너라 하면 바로 애플리케이션 컨텍스트를 말한다.**
+빈 팩토리(Bean Factory)는 의존성 주입, 빈 객체 생성, 생명주기를 관리하는 단순한 역할을 한다. 애플리케이션 컨텍스트(ApplicationContext)는 빈 팩토리의 기능 뿐만 아니라 프로퍼티 파일에 설정을 읽거나 이벤트 리스너에 대한 이벤트 발행 같은 추가 기능을 제공한다. **일반적으로 DI 컨테이너라 하면 바로 애플리케이션 컨텍스트를 말한다.**
 
 ### Bean
 
-빈(Bean)은 스프링 DI 컨테이너에서 관리하는 객체이다. 이 빈에 대한 설정 정보를 빈 정의(Bean Definition). 그리고 DI 컨테이너에서 원하는 빈을 찾아오는 행위를 **룩업(look up)**이라고 한다.
+빈(Bean)은 스프링 DI 컨테이너에서 관리하는 객체이다. 이 빈에 대한 설정 정보를 빈 정의(Bean Definition). 그리고 DI 컨테이너에서 원하는 빈을 찾아오는 행위를 **룩업(look up)** 이라고 한다.
 
 빈을 설정하는 방법에는 몇 가지 유형이 있다. 
 |방법| 설명 |
@@ -37,10 +36,10 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 |애너테이션 기반 설정 방식(annotation-based configuration) |@Componet같은 마커 애너테이션이 부여된 클래스를 탐색하여(Component Scan) 자동으로 DI 컨테이너에 빈을 등록하는 방법이다. |
 
 자바 기반, XML 기반 두 가지 설정 방식은, **모두 DI 컨테이너를 만들면서 필요한 모든 Bean을 세팅한다.** 따라서 애플리케이션에서 사용할 모든 컴포넌트를 자바나 XML로 정의를 해야 하는 번거로움이 있다. 그래서 애너테이션 기반 설정 방법과 병행해서 사용하는 것이 일반적이다. 
-
-#### 컴포넌트 스캔(Component Scan)
  
-애너테이션 기반 설정 방식은  DI 컨테이너에서 관리해야할 클래스에 마커 애너테이션을 붙인다. **이 애너테이션이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록하는데 이를 컴포넌트 스캔(Component Scan)이라고 한다.** 
+애너테이션 기반 설정 방식은  DI 컨테이너에서 관리해야할 클래스에 마커 애너테이션을 붙인다. 
+
+마커 애너테이션이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록하는 과정을 컴포넌트 스캔(Component Scan)이라고 한다.** 
 
 ### ApplicationContext
 
@@ -101,5 +100,6 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
+eyJoaXN0b3J5IjpbLTE0MjE5MDA0LDEwMzgxMDkxMTYsLTE3Mj
+A0MjYyMzBdfQ==
 -->
