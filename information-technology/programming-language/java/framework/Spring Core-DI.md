@@ -114,16 +114,20 @@ public void setUserRepository(UserRepository repository){
 
 ## Component Scan
 
-DI 컨테이너가 관리하는 빈은 명시적으로 설정된 빈과 자동으로 
-클래스 로더를 스캔하면서 특정 클래스를 찾아 DI컨테이너에 등록하는 방법을 말한다. 
+DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 컴포넌트 스캔으로 자동 등록된 빈으로 나뉜다. 컴포넌트 스캔은 클래스 로더를 스캔하면서 특정 클래스를 찾아 DI컨테이너에 등록한다.
+
+### 기본 설정
+
+
+### 필터
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY3MjgxMTY2LC02NTY4NjQ1ODEsMTUwND
-c1MjA2NSwxODU4MzMyMjc1LDIwNjEwMzE5MDIsMTkxODg3Mjg1
-OCwtMjMzNjE3OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYyMzBdfQ
-==
+eyJoaXN0b3J5IjpbMTYzOTU5MTUwNSwtNjU2ODY0NTgxLDE1MD
+Q3NTIwNjUsMTg1ODMzMjI3NSwyMDYxMDMxOTAyLDE5MTg4NzI4
+NTgsLTIzMzYxNzk5NiwxMDM4MTA5MTE2LC0xNzIwNDI2MjMwXX
+0=
 -->
