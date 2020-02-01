@@ -27,12 +27,22 @@ MySQL 엔진에서는 테이블 데이터 동기화를 위한 테이블 락 말�
 
 글로벌 락의 영향은 MySQL 전체 서버이며, 테이블이나 데이터베이스가 다르더라도 동일하게 영향을 미친다. 여러 데이터 베이스에 존재하는 테이블에 대해서 mysqldump로 일괄된 백업을 받아야 할때 글로벌 락을 사용한다.
 
-### Table Rock
+### Table Rock(테이블 락)
+
+개별 테이블 단위로 설정되는 잠금이다. 
+명시적이나 또는 묵시적으로 특정 테이블의 락을 얻을 수 있다. 
+
+```
+LOCK TABLES table_name [ READ | WRITE ]
+
+```
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ1NDUzNjk2LDg0NzI0MDI1NywyMDU0OT
-gwOTQ2LDE5NzMwOTg3NjgsMTQzNjAyOTM0NCw5Njk3MDU5MTMs
-MjA0NTY0Nzg4OV19
+eyJoaXN0b3J5IjpbLTIxNTU0NjEyOCw4NDcyNDAyNTcsMjA1ND
+k4MDk0NiwxOTczMDk4NzY4LDE0MzYwMjkzNDQsOTY5NzA1OTEz
+LDIwNDU2NDc4ODldfQ==
 -->
