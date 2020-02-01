@@ -77,7 +77,6 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 ### 필터 적용 설정
 
 
-
 ## Spring DI 
 
 스프링단에서 사용하려는 빈을 주입받는 방법은 세 가지 방법이 있다. 
@@ -138,7 +137,7 @@ public void setUserRepository(UserRepository repository){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjQ2MjA4ODEsLTg4MTM0OTkyMywtNj
+eyJoaXN0b3J5IjpbLTEyMjk5Mjc4NDMsLTg4MTM0OTkyMywtNj
 U2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1ODMzMjI3NSwyMDYxMDMx
 OTAyLDE5MTg4NzI4NTgsLTIzMzYxNzk5NiwxMDM4MTA5MTE2LC
 0xNzIwNDI2MjMwXX0=
