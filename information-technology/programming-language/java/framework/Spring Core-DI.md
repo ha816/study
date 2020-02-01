@@ -69,9 +69,9 @@ UserService userService = (UserService) context.getBean("userService");
 2번 유형은 빈의 타입과 이름을 지정하는 방식이다. 지정한 **타입 객체가 DI 컨테이너에 다수가 있을때** 구분하기 위해 사용한다. 
 3번 유형은 빈의 이름을 지정하는 방식이다. 반환 값이 Object이기 때문에 형변환 해야 원하는 객체를 쓸 수 있다. 
 
-## DI 실행
+## DI 컨테이너 LookUp
 
-지금까지는 DI 컨테이너에게 관리해야할 
+지금까지는 DI 컨테이너에게 관리해야할 빈 컴포넌트를 설정하는 법을 공부했다. 이제 사용하려는 빈 컴포넌트를 DI 컨테이너로 부터 가져오도록 하자. 
 
 스프링에서 제공하는 의존성 주입은 크게 아래 세 가지 방법이 있다.  설정자 기반 의존성 주입 방식(setter-based dependency injection), 생성자 기반 의존성 주입 방식(constructor-based dependency injection), 필드 기반 의존성 주입 방식(field-based injection). 
 
@@ -89,6 +89,6 @@ UserService userService = (UserService) context.getBean("userService");
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTAwODQyNiwtMjMzNjE3OTk2LDEwMz
-gxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbMzk0NDYzOTQ3LC0yMzM2MTc5OTYsMTAzOD
+EwOTExNiwtMTcyMDQyNjIzMF19
 -->
