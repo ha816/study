@@ -51,8 +51,7 @@ public class AppConfig {
 }
 ```
 @Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에서 관리할 빈 컴포넌트를 등록할 수 있다.  
-
-애플리케이션 컨텍스트 생성시 사용할 Configuration에 @ComponentScan("com.example.demo") 애노테이션을 부여하면 해당 패키지(com.example.demo) 이하의 범위에서 애너테이션이 붙은 클래스를 스캔하여, 애플리케이션 컨텍스트에 자동으로 등록한다. 
+@ComponentScan("com.example.demo") 애노테이션을 부여하면 해당 패키지(com.example.demo) 이하의 범위에서 애너테이션이 붙은 클래스를 스캔하여, 애플리케이션 컨텍스트에 자동으로 등록한다. 
 
 
 
@@ -90,6 +89,6 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc3MzQ4MTY0LDEwMzgxMDkxMTYsLTE3Mj
+eyJoaXN0b3J5IjpbNzAyMDI2MjM4LDEwMzgxMDkxMTYsLTE3Mj
 A0MjYyMzBdfQ==
 -->
