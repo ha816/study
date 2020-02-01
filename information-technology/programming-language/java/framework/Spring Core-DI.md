@@ -10,7 +10,13 @@
 
 **의존성 주입**을 자동으로 처리하는 주체를 **DI 컨테이너**라고 한다. 스프링 프레임워크가 제공하는 기능 중 가장 중요한것이 바로 이 DI 컨테이너의 기능이다. 
 
-스프링의 DI 컨테이너로는 **빈 팩토리(Bean Factory)** 와 **애플리케이션 컨텍스트**가 있다. 빈 팩토리는 빈 객체 생성, 의존성 주입, 생명주기를 하는 아주 단순한 역할을 한다. 그에 반해 애플리케이션 컨텍스트는 빈 팩토리를 확장해 프로퍼티 파일에 설정을 읽고 이벤트 리스너에 대한 이벤트 발행 같은 추가 기능을 제공한다. 앞으로 DI 컨테이너라 하면 바로 애플리케이션 컨텍스트를 뜻한다.
+스프링의 DI 컨테이너로는 **빈 팩토리(Bean Factory)** 와 **애플리케이션 컨텍스트(ApplicationContext)** 가 있다. 
+
+빈 팩토리(Bean Factory) 
+: 빈 객체 생성, 의존성 주입, 생명주기를 관리하는 단순한 역할. 
+
+애플리케이션 컨텍스트(ApplicationContext)
+: 빈 팩토리를 확장해 프로퍼티 파일에 설정을 읽고 이벤트 리스너에 대한 이벤트 발행 같은 추가 기능을 제공한다. 일반적으로 DI 컨테이너라 하면 바로 애플리케이션 컨텍스트를 뜻한다.
 
 ```
 ApplicationContext context = ...; //DI 컨테이너
@@ -101,5 +107,5 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NjUzODI5OF19
+eyJoaXN0b3J5IjpbLTEyNTAyOTgzNjZdfQ==
 -->
