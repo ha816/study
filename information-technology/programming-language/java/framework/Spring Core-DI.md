@@ -71,7 +71,8 @@ UserService userService = (UserService) context.getBean("userService");
 
 DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 컴포넌트 스캔으로 자동 등록된 빈으로 나뉜다. 컴포넌트 스캔은 클래스 로더를 스캔하면서 특정 클래스를 찾아 DI컨테이너에 등록한다.
 
-### 기본 설정
+별도의 설정이 없는 기본 설정에서는 아래와 같은 애너테이션이 붙은 클래스가 스캔의 탐색 대상이된다
+
 
 
 ### 필터 적용 설정
@@ -120,14 +121,16 @@ public void setUserRepository(UserRepository repository){
 
 오토 와이어링(Auto Wiring)은 DI 컨테이너의 빈을 자동으로 주입하는 방식이다. 오토 와이어링을 사용하는 방식에는 타입을 이용하는 방식(autowiring by type)과 이름을 이용하는 방식(autowiring by name) 두가지가 있다. 
 
+DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 컨테이너가 제공하는 빈을 특정 클래스에서 사용하고 싶어 의존성 주입을 자동으로 받을때 사용하는 방법이다. @Autowired을 세터 메서드, 생성자, 필드에 붙이면 빈 컨테이너로부터 필요한 객체를 주입받을 수 있다. 
+
+클래스에 외부에서 접근 가능한 생성자나 세터 메서드가 없더라도 필드에 @Autowired를 붙일 수 있는데 심지어 private 필드일지라도 적절한 인스턴스를 오토 와이어 한다. DI 컨테이너가 이 클래스가 생성된 후에 리플렉션(reflection)을 이용하여 이 필드에 인스턴스를 오토 와이어 한다.
+
+
 ### Autowiring by Type
 
 ### Autowiring by Name
 
 
-간단히 말하면, DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 컨테이너가 제공하는 빈을 특정 클래스에서 사용하고 싶어 의존성 주입을 자동으로 받을때 사용하는 방법이다. @Autowired을 세터 메서드, 생성자, 필드에 붙이면 빈 컨테이너로부터 필요한 객체를 주입받을 수 있다. 
-
-클래스에 외부에서 접근 가능한 생성자나 세터 메서드가 없더라도 필드에 @Autowired를 붙일 수 있는데 심지어 private 필드일지라도 적절한 인스턴스를 오토 와이어 한다. DI 컨테이너가 이 클래스가 생성된 후에 리플렉션(reflection)을 이용하여 이 필드에 인스턴스를 오토 와이어 한다.
 
 
 ### Bean Scope
@@ -151,7 +154,7 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTM1NTY4NDUsNzAwNTE0NzY3LC04OD
+eyJoaXN0b3J5IjpbLTEwMjI1Njg1MTEsNzAwNTE0NzY3LC04OD
 EzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NTgzMzIy
 NzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5OTYsMT
 AzODEwOTExNiwtMTcyMDQyNjIzMF19
