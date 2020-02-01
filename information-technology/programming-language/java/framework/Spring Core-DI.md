@@ -75,7 +75,7 @@ UserService userService = (UserService) context.getBean("userService");
 
 세터 메서드를 사용해서 필요한 의존성이 주입된 객체를 만드는 방법. 
 ```
-@Bean
+@Bean //세터 인젝션을 자바 기반 설정 방식으로 ... 
 UserService userService(UserRepository repository){
 	UserServiceImpl userService =  new UserServiceImpl();
 	userServce.setUserRepository(repository);
@@ -84,6 +84,11 @@ UserService userService(UserRepository repository){
 ```
 @Bean 애너테이션이 붙은 Bean 생성 메서드로 필요한 객체를 만드는 과정에서, 객체의 세터 메서드로 의존 주입을 통해 의존성 주입이 완료된 객체를 반환한다. 
 
+```
+<bean id="userDao" class="com.example.demo.UserDao">
+</bean>
+	
+```
 
 XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의 이름을 지정하면 된다. 마지막으로 애너테이션 기반 설정 방식에서는 세터 메서드에다가 @Autowired를 달아주면 된다. 애너테이션 기반 설정 방식은 자바 기반 설정 방식과 같이 별도의 설정 파일을 둘 필요가 없다. 
 
@@ -103,7 +108,7 @@ XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NDQwNjgzLDIwNjEwMzE5MDIsMTkxOD
-g3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYy
-MzBdfQ==
+eyJoaXN0b3J5IjpbMTk5MzkxMjEzNSwyMDYxMDMxOTAyLDE5MT
+g4NzI4NTgsLTIzMzYxNzk5NiwxMDM4MTA5MTE2LC0xNzIwNDI2
+MjMwXX0=
 -->
