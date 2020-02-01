@@ -12,6 +12,9 @@ Java EE(Enterprise Edition)는 일종의 **엔터프라이즈 소프트웨어의
 
 자바 사양은 JCP에서 표준화 절차를 걸쳐 만들어진다. JCP의 멤버가 자바 사양의 안건이 될 JSR(Java Specification Request)을 작성하고 제안하면 참여자들의 리뷰를 통해 내용이 구체화된다. JCP의 집행 위원회는 다수의 안건을 검토하고 그중에서 최종 사양을 채택한다. 
 
+JavaEE는 자바 서블릿, JSP, EJB, JDBC등 서버측 애플리케이션 개발에 필요한 기능을 가지고 있다. 
+JavaEE는 사양이며, 여러 소프트웨어 벤더가 이 사양에 맞춰 서버르
+
 
 
 
@@ -55,6 +58,6 @@ EJB는 침투적인(invasive) 기술로 소스코드 측면에서의 강제사�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMzY3MDcwMSwzNzI1NzEzMDcsMTI4Nz
+eyJoaXN0b3J5IjpbLTQ0MjgxODU3MiwzNzI1NzEzMDcsMTI4Nz
 kyMDMzNiwtMjEzMDQyMDEyNywtOTcyNjI5NThdfQ==
 -->
