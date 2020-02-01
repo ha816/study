@@ -42,9 +42,10 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
  
 애너테이션 기반 설정 방식은  DI 컨테이너에서 관리해야할 클래스에 마커 애너테이션을 붙인다. **이 애너테이션이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록하는데 이를 컴포넌트 스캔(Component Scan)이라고 한다.** 
 
-컴포넌트 스캔을 수행할때는 스캔할 범위를 지정해야 하는데 자바 기반 설정 방식과 XML 기반 설정 방식을 사용할 수 있다. 
+컴포넌트 스캔을 수행할때는 스캔할 범위를 설정하기 
+* 자바 기반 
 ```
-@Configuration
+@Configuration // 자바 기반 설정 방식
 @ComponentScan("com.example.demo")
 public class AppConfig { 
 ... 
@@ -54,7 +55,7 @@ public class AppConfig {
 애플리케이션 컨텍스트 생성시 사용할 Configuration에 @ComponentScan("com.example.demo") 애노테이션을 부여하면 해당 패키지(com.example.demo) 이하의 범위에서 애너테이션이 붙은 클래스를 스캔하여, 애플리케이션 컨텍스트에 자동으로 등록한다. 
 
 ```
-<beans xlms=...>
+<beans xlms=...> <!--XML 기반 설정 방식-->
 	<context:component-scan base-package="com.example.demo" />
 </beans>
 ```
@@ -101,5 +102,5 @@ UserService userService = (UserService) context.getBean("userService");
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MjAzOTUsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbMTYyMDk0ODA1OSwtMTcyMDQyNjIzMF19
 -->
