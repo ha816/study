@@ -54,7 +54,10 @@ public class AppConfig {
 
 ```
 <beans xlms=...> <!--XML 기반 설정 방식-->
-	<bean>
+<bean id="user" class="org.springframework.context.support.ResourceBundleMessageSource">  
+ <property name="basename" value="messages/message"/>  
+ <property name="defaultEncoding" value="UTF-8"/>  
+</bean>
 	<context:component-scan base-package="com.example.demo" />
 </beans>
 ```
@@ -87,6 +90,6 @@ UserService userService = (UserService) context.getBean("userService");
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NTI1NTM4MSwxMDM4MTA5MTE2LC0xNz
-IwNDI2MjMwXX0=
+eyJoaXN0b3J5IjpbMzg4NzgxMDI5LDEwMzgxMDkxMTYsLTE3Mj
+A0MjYyMzBdfQ==
 -->
