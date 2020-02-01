@@ -36,7 +36,6 @@ MySQL 엔진에서는 테이블 데이터 동기화를 위한 테이블 락 말�
 LOCK TABLES table_name [ READ | WRITE ]
 UNLOCK TABLES
 ```
-
 묵시적인 테이블 락은 테이블에 **데이터를 변경하는 쿼리를 실행**하면 발생한다. MySQL 서버가 데이터가 변경되는 테이블에 잠금을 설정하고 데이터 변경 후, 해제를 한다. 즉 묵시적 테이블 락은 자동적으로 얻고 해제 된다. InnoDB에서는 레코드 기반의 잠금을 제공하기 때문에 데이터 변경 쿼리로 테이블 락이 발생하지는 않는다. 더 정확히는 InnoDB 테이블에도 테이블 락이 설정되지만, 데부분의 데이터 변경 쿼리(DML은 무시되고 스키마를 변경하는 쿼리(DDL)에만 영향을 미친다.
 
 ### 유저 락(USER-LEVEL LOCK)
@@ -60,7 +59,7 @@ RENAME TABLE tab_a TO tab_b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NTExODE2NCwxNzA5MDc5Mzk5LC0yMT
+eyJoaXN0b3J5IjpbMTk1NDgzMzc5NCwxNzA5MDc5Mzk5LC0yMT
 AzODE4OTQ1LDQ3NjI0ODc0NSw4NDcyNDAyNTcsMjA1NDk4MDk0
 NiwxOTczMDk4NzY4LDE0MzYwMjkzNDQsOTY5NzA1OTEzLDIwND
 U2NDc4ODldfQ==
