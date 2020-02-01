@@ -67,6 +67,17 @@ UserService userService = (UserService) context.getBean("userService");
 2번 유형은 빈의 타입과 이름을 지정하는 방식이다. 지정한 **타입 객체가 DI 컨테이너에 다수가 있을때** 구분하기 위해 사용한다. 
 3번 유형은 빈의 이름을 지정하는 방식이다. 반환 값이 Object이기 때문에 형변환 해야 원하는 객체를 쓸 수 있다. 
 
+## Component Scan
+
+DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 컴포넌트 스캔으로 자동 등록된 빈으로 나뉜다. 컴포넌트 스캔은 클래스 로더를 스캔하면서 특정 클래스를 찾아 DI컨테이너에 등록한다.
+
+### 기본 설정
+
+
+### 필터 적용 설정
+
+
+
 ## Spring DI 
 
 스프링단에서 사용하려는 빈을 주입받는 방법은 세 가지 방법이 있다. 
@@ -115,16 +126,6 @@ public void setUserRepository(UserRepository repository){
 ### Autowiring by Name
 
 
-## Component Scan
-
-DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 컴포넌트 스캔으로 자동 등록된 빈으로 나뉜다. 컴포넌트 스캔은 클래스 로더를 스캔하면서 특정 클래스를 찾아 DI컨테이너에 등록한다.
-
-### 기본 설정
-
-
-### 필터 적용 설정
-
-
 ### Bean Scope
 
 
@@ -137,8 +138,8 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MTM0OTkyMywtNjU2ODY0NTgxLDE1MD
-Q3NTIwNjUsMTg1ODMzMjI3NSwyMDYxMDMxOTAyLDE5MTg4NzI4
-NTgsLTIzMzYxNzk5NiwxMDM4MTA5MTE2LC0xNzIwNDI2MjMwXX
-0=
+eyJoaXN0b3J5IjpbLTE2NjQ2MjA4ODEsLTg4MTM0OTkyMywtNj
+U2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1ODMzMjI3NSwyMDYxMDMx
+OTAyLDE5MTg4NzI4NTgsLTIzMzYxNzk5NiwxMDM4MTA5MTE2LC
+0xNzIwNDI2MjMwXX0=
 -->
