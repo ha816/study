@@ -71,9 +71,6 @@ UserService userService = (UserService) context.getBean("userService");
 
 구체적으로 사용하려는 빈을 스프링에서 주입받는 방법에는 크게 세 가지 방법 이 있다. 
 
-의존성 주입을 명시적으로 설정하는 것이 아니라 **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 오토 와이어링(Auto Wiring)이라 한다.**
-
-
 설정자 기반 의존성 주입 방식(setter-based dependency injection)
 : 세터 메서드를 사용해서 필요한 의존성이 주입된 객체를 만드는 방법. 자바 기반 설정 방식으로는 @Bean 애너테이션이 붙은 Bean 생성 메서드에서 필요한 객체를 만들고 세터메서드로 의존 주입을 통한 객체를 반환한다. XML 기반 설정 방식으로는 property 요소에 name 속성으로 대상의 이름을 지정하면 된다. 마지막으로 애너테이션 기반 설정 방식에서는 세터 메서드에다가 @Autowired를 달아주면 된다. 애너테이션 기반 설정 방식은 자바 기반 설정 방식과 같이 별도의 설정 파일을 둘 필요가 없다. 
 
@@ -84,10 +81,14 @@ UserService userService = (UserService) context.getBean("userService");
 
 
 
+의존성 주입을 명시적으로 설정하는 것이 아니라 **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 오토 와이어링(Auto Wiring)이라 한다.**
+
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxODg3Mjg1OCwtMjMzNjE3OTk2LDEwMz
-gxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMz
+M2MTc5OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
 -->
