@@ -59,26 +59,19 @@ public class AppConfig {
 XML기반은 설정 방식은 `<bean>` 태그로 사용하려는 빈을 DI 컨테이너에 등록한다. 
  그리고 컴포넌트 스캔 범위는 `<context:component-scan>` 태그요소의 base-packages 속성으로 결정한다. 
 
-코드상에서  애플리케이션 컨텍스트에 있는 빈을 가져오는 룩업은 아래와 같이 세 방식으로 할 수 있다.  
+애플리케이션 컨텍스트에 있는 빈을 가져오는 룩업은 코드상에서 아래와 같이 세 방식으로 할 수 있다.  
 ```
 UserService userService = context.getBean(UserService.class);
 UserService userService = context.getBean("userService",UserService.class);
 UserService userService = (UserService) context.getBean("userService");
 ```
 1번 유형은 빈의 타입을 지정하는 방식으로 해당 타입의 객체가 DI 컨테이너에 하나만 있을때 사용한다. 
-2번 유형은 빈의 타입과 이름을 지정하는 방식이다. 지정한 **타입 객체가 DI 컨테이너에 여러개 있을때** 구분하기 위해 사용한다. 
+2번 유형은 빈의 타입과 이름을 지정하는 방식이다. 지정한 **타입 객체가 DI 컨테이너에 다수가 있을때** 구분하기 위해 사용한다. 
 3번 유형은 빈의 이름을 지정하는 방식이다. 반환 값이 Object이기 때문에 형변환 해야 원하는 객체를 쓸 수 있다. 
 
+## DI 실행
 
-## DI 하기
-
-#### Look Up
-
-
-
-### 의존성 주입
-
-의존성 주입도 명시적으로 설정하는 것이 아니라 **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 오토 와이어링(Auto Wiring)이라 한다.**
+의존성 주입을 명시적으로 설정하는 것이 아니라 **특정 애노테이션이 붙어 있으면 DI 컨테이너가 자동으로 필요로 하는 의존 컴포넌트를 주입하는데 이를 오토 와이어링(Auto Wiring)이라 한다.**
 
 스프링에서 제공하는 의존성 주입은 크게 아래 세 가지 방법이 있다.  설정자 기반 의존성 주입 방식(setter-based dependency injection), 생성자 기반 의존성 주입 방식(constructor-based dependency injection), 필드 기반 의존성 주입 방식(field-based injection).
 
@@ -93,6 +86,6 @@ UserService userService = (UserService) context.getBean("userService");
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTMxODMwOTUsLTIzMzYxNzk5NiwxMD
-M4MTA5MTE2LC0xNzIwNDI2MjMwXX0=
+eyJoaXN0b3J5IjpbLTk1Mjc2MzQzNSwtMjMzNjE3OTk2LDEwMz
+gxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
 -->
