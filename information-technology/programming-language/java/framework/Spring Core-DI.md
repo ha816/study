@@ -41,16 +41,14 @@ public class AppConfig {
 }
 ```
 
-@Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에 컴포넌트를 등록하면 애플리케이션은 DI 컨테이너에 있는 Bean을 DI 컨테이너로 가져 올 수 있다. 
-
-룩업을 하는 방법에는 몇 가지 유형이 있다. 
+@Configuration과 @Bean 애너테이션을 사용해서 DI 컨테이너에 컴포넌트를 등록하면 애플리케이션은 DI 컨테이너에 있는 Bean을 DI 컨테이너로 부터 가져 올 수 있다. 이러한 룩업을 하는 방법에는 세 가지 유형이 있다. 
 ```
 UserService userService = context.getBean(UserService.class);
 UserService userService = context.getBean("userService",UserService.class);
 UserService userService = (UserService) context.getBean("userService");
 ```
 1번 유형은 빈의 타입을 지정하는 방식으로 해당 타입의 객체가 DI 컨테이너에 하나만 있을때 사용한다. 
-2번 유형은 빈의 타입과 이름을 지정하는 방식이다. 지정한 타입 객체가 DI 컨테이너에 여러게 있을때 구분하기 위해 사용한다. 
+2번 유형은 빈의 타입과 이름을 지정하는 방식이다. 지정한 **타입 객체가 DI 컨테이너에 여러개 있을때** 구분하기 위해 사용한다. 
 3번 유형은 빈의 이름을 지정하는 방식이다. 반환 값이 Object이기 때문에 형변환 해야 원하는 객체를 쓸 수 있다. 
 
 빈을 설정하는 방법에도 몇가지 유형이 있다. 
@@ -98,5 +96,5 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTQzNjU1N119
+eyJoaXN0b3J5IjpbLTEzNzM5MDA4MzZdfQ==
 -->
