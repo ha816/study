@@ -59,11 +59,7 @@ public class AppConfig {
 XML기반은 설정 방식은 `<bean>` 태그로 사용하려는 빈을 DI 컨테이너에 등록한다. 
  그리고 컴포넌트 스캔 범위는 `<context:component-scan>` 태그요소의 base-packages 속성으로 결정한다. 
 
-## DI 하기
-
-#### Look Up
-
-코드상에서 DI 컨테이너에 있는 빈을 가져오는 룩업을 아래와 같이 세 방식으로 할 수 있다.  
+코드상에서  애플리케이션 컨텍스트에 있는 빈을 가져오는 룩업은 아래와 같이 세 방식으로 할 수 있다.  
 ```
 UserService userService = context.getBean(UserService.class);
 UserService userService = context.getBean("userService",UserService.class);
@@ -72,6 +68,13 @@ UserService userService = (UserService) context.getBean("userService");
 1번 유형은 빈의 타입을 지정하는 방식으로 해당 타입의 객체가 DI 컨테이너에 하나만 있을때 사용한다. 
 2번 유형은 빈의 타입과 이름을 지정하는 방식이다. 지정한 **타입 객체가 DI 컨테이너에 여러개 있을때** 구분하기 위해 사용한다. 
 3번 유형은 빈의 이름을 지정하는 방식이다. 반환 값이 Object이기 때문에 형변환 해야 원하는 객체를 쓸 수 있다. 
+
+
+## DI 하기
+
+#### Look Up
+
+
 
 ### 의존성 주입
 
@@ -90,6 +93,6 @@ UserService userService = (UserService) context.getBean("userService");
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNjk1NTQxMywtMjMzNjE3OTk2LDEwMz
-gxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbLTE3NTMxODMwOTUsLTIzMzYxNzk5NiwxMD
+M4MTA5MTE2LC0xNzIwNDI2MjMwXX0=
 -->
