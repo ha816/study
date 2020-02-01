@@ -27,6 +27,10 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 
 ## ApplicationContext와 Bean 설정
 
+**스프링 DI 컨테이너에 등록하는 컴포넌트를 Bean이라고 하고, 이 빈에 대한 설정 정보를 빈 정의(Bean Definition). 또한 DI 컨테이너에서 빈을 찾아오는 행위를 룩업(look up)이라고 한다.** 
+
+
+
 스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 
 이제 ApplicationContext를 구현하는 과정을 보도록 하자.
 ApplicationContext를 생성할때 **설정 클래스(Configuration Class)** 를 전달받아 생성한다. 이러한 설정 클래스를  자바 코드로 구현하는걸 자바 기반 설정 방식이라 한다. 
@@ -100,5 +104,5 @@ XML기반은 `<context:component-scan>` 태그요소의 base-packages 속성으�
 필드 기반 의존성 주입 방식(field-based injection) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc2ODM3MTBdfQ==
+eyJoaXN0b3J5IjpbNDI0Njg4Njc0XX0=
 -->
