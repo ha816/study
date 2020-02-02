@@ -62,7 +62,16 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 
 만약 하나의 빈이 또 다른 빈에 의존하고 있다면 DI 컨테이너에 의해 주입된 빈은 원래 자기 자신의 스코프와 상관 없이 주입 받는 빈의 스코프를 따르게 된다.  예를 들어, prototype 스코프의 빈을 singleton 스코프 빈에 주입한다고 생각해보자. 주입된 prototype 빈은 자신을 주입 받은 singleton 스코프의 빈이 살아 있는 한 DI 컨테이너에서 새로 만들 필요가 없기 때문에 결과적으로 singleton과 같은 수명을 살게 된다. 
 ```
+@Bean @Scope("prototype") // singleton으로 쓰이면 안됨
+PasswordEncoder passwordEncoder() { ... }
+```
 
+```
+@Component
+public class UserService {
+	@Autowired
+	PasswordEncoder passwordEncoder
+}
 ```
 
 
@@ -210,11 +219,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzE2NDU5MywxMTUxMTE5MzQwLDc5OD
-YyMjA0MSwtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2
-Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLT
-Y5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0
-OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYyODI5LDUyMDMyNjQ3OS
-wxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgxMzQ5OTIzLC02NTY4
-NjQ1ODFdfQ==
+eyJoaXN0b3J5IjpbLTE1NjA5MDg0NTYsMTE1MTExOTM0MCw3OT
+g2MjIwNDEsLTE5MjUyMjEwOTEsLTE0MjM3OTQxNDQsMTY2NjM1
+NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1MTU0LC
+02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNiwyMDkw
+NDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1MjAzMjY0Nz
+ksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTkyMywtNjU2
+ODY0NTgxXX0=
 -->
