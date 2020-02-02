@@ -64,9 +64,9 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 
 위와 같은 문제를 해결하는 가장 좋은 방법은 주입 받는게 아니라 필요할때 마다 DI 컨테이너에서 빈을 찾아오면 된다. 이때 DI 컨테이너와 관련된 코드를 남가지 않는 방법이 바로 Look Up injection이다. DI 컨테이너가 빈을 Lookup하는 세머드를 만들고, 그 메서드를 의존할 빈에게 주입하면 된다. 
 
-이 기능은 @Lookup 애너테이션을 룩업을 대행하고 싶은 메서드에 붙여주면 된다. 그러면 빈이 DI 컨테이너 등록 시점에 DI 컨테이너에서 빈을 찾는 실제 코드가 @Looup 애너테이션이 붙은 메서드 자리에 주입된다. 
+이 기능은 @Lookup 애너테이션을 룩업을 대행하고 싶은 메서드에 붙여주면 된다. 그러면 빈이 DI 컨테이너 등록 시점에 DI 컨테이너에서 빈을 찾는 실제 코드가 @Lookup 애너테이션이 붙은 메서드 자리에 주입된다. 
 
-구체적으로 설명하자면, DI 컨테이너는 @Looup을 붙인 메서드를 오버라이드
+구체적으로 설명하자면, DI 컨테이너는 @Lookup을 붙인 메서드를 오버라이드한다. 따라서 private 이나 fianl을 사용하면 안되고 매개변수 역시 지정하면 안된다.
 
 
 
@@ -197,11 +197,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQwODUwMzAxLDExNTExMTkzNDAsNzk4Nj
-IyMDQxLC0xOTI1MjIxMDkxLC0xNDIzNzk0MTQ0LDE2NjYzNTY2
-NzYsLTIxMTg1NDkwNjgsMTc5ODU3MzQ1OCw5ODY5NTE1NCwtNj
-k3ODM3ODUyLC0xMzgyNzc0OTQ4LC04MzgyNTY2MzYsMjA5MDQ5
-MTgxNiwtNDU4OTgyMTc5LDE1NzQ5NjI4MjksNTIwMzI2NDc5LD
-E0MTcwMjU2MTAsNzAwNTE0NzY3LC04ODEzNDk5MjMsLTY1Njg2
-NDU4MV19
+eyJoaXN0b3J5IjpbLTE1Njg1MTA1ODksMTE1MTExOTM0MCw3OT
+g2MjIwNDEsLTE5MjUyMjEwOTEsLTE0MjM3OTQxNDQsMTY2NjM1
+NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1MTU0LC
+02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNiwyMDkw
+NDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1MjAzMjY0Nz
+ksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTkyMywtNjU2
+ODY0NTgxXX0=
 -->
