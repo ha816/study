@@ -106,10 +106,9 @@ Bean Factory Post Processor(BFPP)를 사용해 빈 정보를 보완하고 빈 �
 
 이런 빈이 생성된 후에 하는 **초기화 과정은 전 단계의 의존성 주입이 끝난 필드를 활용할 수 있다**는 점이 중요하다.
 
+`종료 단계`는 DI 컨테이너가 역할을 다하고 파괴될 때 관리되던 빈도 파되된다. 경우에 따라 파괴되기 전에 마지막으로 처리해야할 작업이 있을 수 있는데, 이를 위해 스프링에서는 빈이 파괴되기전 전처리(Pre Destory)를 할 수 있는 방법을 제공한다. 
+
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/22107F505693B43E29)
-
-`종료 단계`는 DI 컨테이너가 역할을 다하고 파괴될 때 
-
 [InitializeBean, PostConstruct, DisposableBean, preDeastory](http://wonwoo.ml/index.php/post/1820)
 
 ## ApplicationContext
@@ -237,11 +236,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNjM5MTMwLC0xMzcwOTMxNzUwLC0yMT
-I3NDM5OTk3LC0xNzQ0MzYwNDI4LC02NTg3ODMzNjAsLTE4MjIz
-NDA1ODUsLTM5NzQzNDY2OSwtMTY2OTQzNjY4OSwtNDM3MDQ4Nj
-Y0LDExNTExMTkzNDAsNzk4NjIyMDQxLC0xOTI1MjIxMDkxLC0x
-NDIzNzk0MTQ0LDE2NjYzNTY2NzYsLTIxMTg1NDkwNjgsMTc5OD
-U3MzQ1OCw5ODY5NTE1NCwtNjk3ODM3ODUyLC0xMzgyNzc0OTQ4
-LC04MzgyNTY2MzZdfQ==
+eyJoaXN0b3J5IjpbLTE5NTc1ODIxMTIsMTczNjM5MTMwLC0xMz
+cwOTMxNzUwLC0yMTI3NDM5OTk3LC0xNzQ0MzYwNDI4LC02NTg3
+ODMzNjAsLTE4MjIzNDA1ODUsLTM5NzQzNDY2OSwtMTY2OTQzNj
+Y4OSwtNDM3MDQ4NjY0LDExNTExMTkzNDAsNzk4NjIyMDQxLC0x
+OTI1MjIxMDkxLC0xNDIzNzk0MTQ0LDE2NjYzNTY2NzYsLTIxMT
+g1NDkwNjgsMTc5ODU3MzQ1OCw5ODY5NTE1NCwtNjk3ODM3ODUy
+LC0xMzgyNzc0OTQ4XX0=
 -->
