@@ -92,14 +92,12 @@ PasswordEncoder passwordEncoder() { ... }
 
 빈의 생명 주기는 빈 초기화, 빈 사용단계, 종료단계로 구분할 수 있다. 
 
-빈 초기화 과정은 빈 정보 보완 및 생성 -> 빈 의존 관계 설정 -> 초기화 
+빈 초기화 과정은 빈 정보 보완 및 생성 -> 빈 의존 관계 설정 -> 빈 초기화을 거친다.
 
-먼저 만들 빈 정의를 읽어들인다, 아직 정보만 불러왔을 뿐 실제 빈을 생성한 것은 아니다. 
+1. 만들 빈 정의를 읽어들인다, 아직 정보만 불러왔을 뿐 실제 빈을 생성한 것은 아니다. 
 Bean Factory Post Processor(BFPP)를 사용해 빈 정보를 보완하고 빈 인스턴스를 생성한다. 
-
-다음 단계는 빈 컴포넌트 간의 의존관계를 해결한다. (constructor injection, field injection, setter method injection)
-
-그리고 마지막으로 초기화 작업(Post Construct)를 수행한다. 초기화 작업에는 다양한 설정 방식이 있는데 아래와 같으며 처리 순서도 같다.
+2. 빈 컴포넌트 간의 의존관계를 해결한다. (constructor injection, field injection, setter method injection)
+3. 초기화 작업(Post Construct)를 수행한다. 초기화 작업에는 다양한 설정 방식이 있는데 아래와 같으며 처리 순서도 같다.
 
 * 애터네이션 기반 설정(@PostConstruct)
 * 인터페이스 기반 설정(InitializingBean 인터페이스 내의 afterPropertiesSet 메서드 구현)
@@ -237,11 +235,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIwODY2MjIxLC0yMTI3NDM5OTk3LC0xNz
-Q0MzYwNDI4LC02NTg3ODMzNjAsLTE4MjIzNDA1ODUsLTM5NzQz
-NDY2OSwtMTY2OTQzNjY4OSwtNDM3MDQ4NjY0LDExNTExMTkzND
-AsNzk4NjIyMDQxLC0xOTI1MjIxMDkxLC0xNDIzNzk0MTQ0LDE2
-NjYzNTY2NzYsLTIxMTg1NDkwNjgsMTc5ODU3MzQ1OCw5ODY5NT
-E1NCwtNjk3ODM3ODUyLC0xMzgyNzc0OTQ4LC04MzgyNTY2MzYs
-MjA5MDQ5MTgxNl19
+eyJoaXN0b3J5IjpbLTEzNzA5MzE3NTAsLTIxMjc0Mzk5OTcsLT
+E3NDQzNjA0MjgsLTY1ODc4MzM2MCwtMTgyMjM0MDU4NSwtMzk3
+NDM0NjY5LC0xNjY5NDM2Njg5LC00MzcwNDg2NjQsMTE1MTExOT
+M0MCw3OTg2MjIwNDEsLTE5MjUyMjEwOTEsLTE0MjM3OTQxNDQs
+MTY2NjM1NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Nj
+k1MTU0LC02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYz
+NiwyMDkwNDkxODE2XX0=
 -->
