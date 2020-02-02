@@ -94,7 +94,7 @@ PasswordEncoder passwordEncoder() { ... }
 
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/22107F505693B43E29)
 
-[InitializeBean, PostConstruct, ](http://wonwoo.ml/index.php/post/1820)
+[InitializeBean, PostConstruct, DisposableBean, preDeastory](http://wonwoo.ml/index.php/post/1820)
 
 ## ApplicationContext
 
@@ -221,7 +221,7 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzU2ODIzNjIsLTY1ODc4MzM2MCwtMT
+eyJoaXN0b3J5IjpbLTE3NDQzNjA0MjgsLTY1ODc4MzM2MCwtMT
 gyMjM0MDU4NSwtMzk3NDM0NjY5LC0xNjY5NDM2Njg5LC00Mzcw
 NDg2NjQsMTE1MTExOTM0MCw3OTg2MjIwNDEsLTE5MjUyMjEwOT
 EsLTE0MjM3OTQxNDQsMTY2NjM1NjY3NiwtMjExODU0OTA2OCwx
