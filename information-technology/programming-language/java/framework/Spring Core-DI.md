@@ -75,8 +75,7 @@ public class UserService {
 	///
 }
 ```
-위와 같은 문제를 해결하는 가장 좋은 방법은 주입 받는게 아니라 필요할때 마다 DI 컨테이너에서 빈을 찾아오면 된다. 이때 DI 컨테이너와 관련된 코드를 남가지 않는 방법이 바로 Look Up injection이다. DI 컨테이너가 빈을 Lookup하는 세머드를 만들고, 그 메서드를 의존할 빈에게 주입하면 된다. 
-
+위와 같은 문제를 해결하는 가장 좋은 방법은 주입 받는게 아니라 필요할때 마다 DI 컨테이너에서 빈을 찾아오면 된다. 이때 DI 컨테이너와 관련된 코드를 남가지 않는 방법이 바로 Look Up injection이다. DI 컨테이너가 빈을 Lookup하는 메서드
 이 기능은 @Lookup 애너테이션을 룩업을 대행하고 싶은 메서드에 붙여주면 된다. 그러면 빈이 DI 컨테이너 등록 시점에 DI 컨테이너에서 빈을 찾는 실제 코드가 @Lookup 애너테이션이 붙은 메서드 자리에 주입된다. 
 
 구체적으로 설명하자면, DI 컨테이너는 @Lookup을 붙인 메서드를 오버라이드한다. 따라서 private 이나 fianl을 사용하면 안되고 매개변수 역시 지정하면 안된다.
@@ -219,7 +218,7 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NTkwNDc5NCwxMTUxMTE5MzQwLDc5OD
+eyJoaXN0b3J5IjpbMjA4MzU2NjM1MSwxMTUxMTE5MzQwLDc5OD
 YyMjA0MSwtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2
 Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLT
 Y5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0
