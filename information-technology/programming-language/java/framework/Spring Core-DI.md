@@ -164,6 +164,8 @@ DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 
 이런 필수 조건을 완하하고 싶다면 @Autowried 애너테이션의 required를 false로 설정하면 된다. `requlare = false`로 하면 해당 타입의 빈을 찾지 못하더라도 예외가 발생하지 않는다. 그렇다고 하더라도 의존성 주입은 실패했기 때문에 해당 필드의 값은 null이 된다.
 
 
+
+
 ### Autowiring by Name
 
 
@@ -190,9 +192,10 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDQ5MTgxNiwtNDU4OTgyMTc5LDE1Nz
-Q5NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3
-LC04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NT
-gzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5
-OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
+eyJoaXN0b3J5IjpbLTgzODI1NjYzNiwyMDkwNDkxODE2LC00NT
+g5ODIxNzksMTU3NDk2MjgyOSw1MjAzMjY0NzksMTQxNzAyNTYx
+MCw3MDA1MTQ3NjcsLTg4MTM0OTkyMywtNjU2ODY0NTgxLDE1MD
+Q3NTIwNjUsMTg1ODMzMjI3NSwyMDYxMDMxOTAyLDE5MTg4NzI4
+NTgsLTIzMzYxNzk5NiwxMDM4MTA5MTE2LC0xNzIwNDI2MjMwXX
+0=
 -->
