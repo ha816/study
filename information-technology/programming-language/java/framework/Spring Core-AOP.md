@@ -1,6 +1,10 @@
 # AOP(Aspect Oriented Programming)
 
-시스템은 보통 특정 기능을 책임지는 여러 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다
+소프트웨어 개발시 규모가 커지다보면 본래의 비즈니스 로직과는 크게 관
+
+
+
+그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다
 
 이렇게 관심사가 여러 컴포넌트에 퍼지면 코드는 두 가지 관점에서 복잡해진다.
 1. 여러 컴포넌트에 같은 코드가 중복되어 나타난다. 만약 코드가 변경되어야 하는 경우 모든 컴포넌트를 변경해야 한다. 
@@ -47,5 +51,5 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDM5MjI3OTksLTY4OTY4MjMxOV19
+eyJoaXN0b3J5IjpbMTM4ODQyMzQ3MCwtNjg5NjgyMzE5XX0=
 -->
