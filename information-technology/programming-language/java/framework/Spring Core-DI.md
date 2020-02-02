@@ -99,7 +99,7 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 includeFilters = { @Component.Filter(type = FilterType.REGEX, pattern = {".+DomainService$"}) },
 excludeFilters = {@Component.Filter(type = FilterType.ANNOTATION, pattern = { Exclude.class }
 ```
-useDefaultFilters 태그는 기본적으로 true인데 
+한 가지 주위할 점은 필터를 적용해서 컴포넌트를 스캔할때는 기존 애너테이션이 붙은 스캔 대상도 포함된다. 만약
 
 
 
@@ -179,7 +179,7 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NDY5NjcxNiwtNDU4OTgyMTc5LDE1Nz
+eyJoaXN0b3J5IjpbMTAyMTY1Mjk2MSwtNDU4OTgyMTc5LDE1Nz
 Q5NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3
 LC04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NT
 gzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5
