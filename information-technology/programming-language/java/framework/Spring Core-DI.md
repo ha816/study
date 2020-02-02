@@ -85,7 +85,9 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 
 가능한한 광범위한 범위 설정을 피해야 하는데, **통상 애플리케이션의 최상위나 한 단계 아래 패키지까지를 스캔 대상으로 하는게 적절하다.** 
 
-### 필터 적용 설정
+### 필터 적용
+
+추가로 다른 컴포넌트를 포함하고 싶다면 필터를 적용하는 방법으로 스캔 범위를 커스터마이징할 수 있다. 스프링에서는 아래와 같은 필터를 제공한다.
 
 
 ## Spring DI 
@@ -164,7 +166,7 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MjUzODY3NCwxNTc0OTYyODI5LDUyMD
+eyJoaXN0b3J5IjpbLTQ1ODk4MjE3OSwxNTc0OTYyODI5LDUyMD
 MyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgxMzQ5OTIz
 LC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxODU4MzMyMjc1LDIwNj
 EwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkx
