@@ -1,0 +1,32 @@
+
+## 스프링 JDBC
+
+> JDBC는 무엇인가?
+
+JDBC(Java Database Connectivity)는 데이터 베이스에 연결하기 위한 표준 자바 라이브러리에 내장된 매커니즘이다.
+```
+Connection connection = DriverManager.getConnection();
+Statement stmt = connection.createStatement();
+ResultSet rs = stmt.executeQuery("");
+```
+
+> 스프링은 어떻게 JDBC 코드의 가독성을 높이는가? 
+
+JDBC만 쓰면 Connection, Statement, ResultSet과 같은 무거운 객체들 생성, 사용, 파괴할때 SQLExceptions가 발생할 수 있다. 
+이 예외들은 간단히 무시할 수 없고, close 메서드에서 SQLException 예외가 발생한다면 여전히 데이터베이스와 연결되어 있을것이다. 그래서 java.sql.* 클래스들은 try 블록안에서 모든 데이터 베이스에 접근하고 finally 블록에 있는 close 메서드 역시 데이터베이스 접근에 실패할 수 있으면 try블록이 필요하다.
+
+고맙게도 스프링은 이런 기본적인 사항들을 관리할 수 있는 유틸리티를 제공한다. **JdbcUtils.close*** 로 시작하는 메서드들이 그것인데 구현을 한번 보는것이 좋다. 
+
+> 스프링은 기본 JDBC 코드 대부분을 어떻게 제거할 수 있는가?
+
+JdbcUtils는 순수한 JDBC 코드를 개선하는데 사용하는 클래스다. JDBC를 통해 데이터베이스에 접근하려는 코드를 개발하려면 스프링의 **JdbcTemplate** 클래스를 사용해야 한다. JdbcTemplate은 이름에서 알수 있듯이 템플릿 디자인 패턴을 따른다. 
+
+JdbcTemplate을 사용하면 데이터 베이스 연결이나 데이터베이스 자원 객체들을 직접 관리하지 않아도 되고, 쿼리 실행 후 자원을 해제할 필요도 없다. 템플릿이 이를 모두 해주기 때문이다. 
+
+
+
+
+> Written with [StackEdit](https://stackedit.io/).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE0NjcwNTk4OTNdfQ==
+-->
