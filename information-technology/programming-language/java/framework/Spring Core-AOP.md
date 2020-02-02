@@ -25,7 +25,11 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 * 타깃(Target)
 	* AOP 처리에 의해 처리 흐름에 변화가 생긴 객체를 말한다. 
 
-###  Spring Advice Types
+# Spring AOP
+
+
+
+##  Spring Advice Types
 
 |어드바이스 | 설명 |
 |--|--|
@@ -36,11 +40,11 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 | Around | 조인 포인트 전후에 실행된다|
 
 
+## P
 
 
 
-
-## 애스펙트 사용하기
+## dj
 
 스프링의 aop 설정 네임스페이스를 사용해서 빈이 액스펙트라고 선언 
 ```
@@ -62,7 +66,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTM3MDgwOTMsMTA4ODkxMDA1NywtMz
-czNTExMTE5LC0xNjY0ODEwNDUxLC0xOTkzMjM4OTkxLC04NTMy
-NDcwMTMsLTY4OTY4MjMxOV19
+eyJoaXN0b3J5IjpbMTQyMTM1MDcxMiwxMDg4OTEwMDU3LC0zNz
+M1MTExMTksLTE2NjQ4MTA0NTEsLTE5OTMyMzg5OTEsLTg1MzI0
+NzAxMywtNjg5NjgyMzE5XX0=
 -->
