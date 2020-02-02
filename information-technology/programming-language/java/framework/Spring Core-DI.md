@@ -73,10 +73,12 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 
 별도의 설정이 없는 기본 설정에서는 아래와 같은 애너테이션이 붙은 클래스가 스캔의 탐색 대상이된다. 
 
-* @Component
-* @Controller, @Service, @Repository
-* @Configuration
-* @RestController
+
+|  |  |
+|--|--|
+|  |  |
+
+
 
 컴포넌트 스캔을 할때는 클래스 로더에서 위와 같은 애너테이션이 붙은 클래스를 찾아야 하기 때문에, 이 과정에서 애플리케이션 기동 시간을 느리게 만드는 원인이 되기도 한다. 
 
@@ -162,9 +164,9 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODg0MzM2MywxNTc0OTYyODI5LDUyMD
-MyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgxMzQ5OTIz
-LC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxODU4MzMyMjc1LDIwNj
-EwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkx
-MTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbLTEwNTc1OTUzMDksMTU3NDk2MjgyOSw1Mj
+AzMjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTky
+MywtNjU2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1ODMzMjI3NSwyMD
+YxMDMxOTAyLDE5MTg4NzI4NTgsLTIzMzYxNzk5NiwxMDM4MTA5
+MTE2LC0xNzIwNDI2MjMwXX0=
 -->
