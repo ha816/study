@@ -66,7 +66,7 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 
 이 기능은 @Lookup 애너테이션을 룩업을 대행하고 싶은 메서드에 붙여주면 된다. 그러면 빈이 DI 컨테이너 등록 시점에 DI 컨테이너에서 빈을 찾는 실제 코드가 @Looup 애너테이션이 붙은 메서드 자리에 주입된다. 
 
-구체적으로
+구체적으로 설명하자면, DI 컨테이너는 @Looup을 붙인 메서드를 오버라이드
 
 
 
@@ -197,11 +197,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0OTU4OTc2OSwxMTUxMTE5MzQwLDc5OD
-YyMjA0MSwtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2
-Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLT
-Y5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0
-OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYyODI5LDUyMDMyNjQ3OS
-wxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgxMzQ5OTIzLC02NTY4
-NjQ1ODFdfQ==
+eyJoaXN0b3J5IjpbMjQwODUwMzAxLDExNTExMTkzNDAsNzk4Nj
+IyMDQxLC0xOTI1MjIxMDkxLC0xNDIzNzk0MTQ0LDE2NjYzNTY2
+NzYsLTIxMTg1NDkwNjgsMTc5ODU3MzQ1OCw5ODY5NTE1NCwtNj
+k3ODM3ODUyLC0xMzgyNzc0OTQ4LC04MzgyNTY2MzYsMjA5MDQ5
+MTgxNiwtNDU4OTgyMTc5LDE1NzQ5NjI4MjksNTIwMzI2NDc5LD
+E0MTcwMjU2MTAsNzAwNTE0NzY3LC04ODEzNDk5MjMsLTY1Njg2
+NDU4MV19
 -->
