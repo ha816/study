@@ -143,11 +143,15 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 |사용 단계 | 애플리케이션 컨텍스트에서 빈을 사용하는 단계|
 |파기 단계 | 애플리케이션 컨텍스트를 삭제하는 단계로 서블릿 컨테이너가 중지할때 수행 |
 
-초기화 단계를 먼저 보자. 
+### 초기화 단계 
 웹 애플리케이션 용 애플리케이션 컨텍스트은 아래와 같을 절차로 생성된다. 
 
+서블릿 컨테이너 -> contextInitialized() -> ContextLoaderListener -> new -> Root Application Context
 
-서블릿 컨테이너 -> contextInitialized() -> ContextLoade
+Dispatcher Servlet용 애플리케이션 컨텍스트 생성과정
+
+서블릿 컨테이너 -> contextInitialized() -> ContextLoaderListener -> new -> Root Application Context
+
 
 
 1. 서블릿 컨테이너에서 contextInitialized()로 Context Loader Listener를 호출
@@ -160,7 +164,7 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMjQ4MTY1OCw0Nzc2NjE5ODMsMTk4NT
-kwNDIzNiwxMzAwMzA5NzAwLDExMjEzMzM4NzIsODYxMjkwOTIs
-LTM4MDM5OTQ5N119
+eyJoaXN0b3J5IjpbLTEwMTYzMzM1NzMsNDc3NjYxOTgzLDE5OD
+U5MDQyMzYsMTMwMDMwOTcwMCwxMTIxMzMzODcyLDg2MTI5MDky
+LC0zODAzOTk0OTddfQ==
 -->
