@@ -90,9 +90,9 @@ PasswordEncoder passwordEncoder() { ... }
 ```
 ### Bean Life Cycle
 
-빈의 생명 주기는 빈 초기화, 빈 사용단계, 종료단계로 구분할 수 있다. 
+빈의 생명 주기는 빈 초기화 단계, 빈 사용단계, 종료 단계로 구분할 수 있다. 
 
-빈 초기화 과정은 빈 정보 보완 및 생성 -> 빈 의존 관계 설정 -> 빈 초기화을 거친다.
+`빈 초기화 단계`는 빈 정보 보완 및 생성 -> 빈 의존 관계 설정 -> 빈 초기화을 거친다.
 
 1. 만들 빈 정의를 읽어들인다, 아직 정보만 불러왔을 뿐 실제 빈을 생성한 것은 아니다. 
 Bean Factory Post Processor(BFPP)를 사용해 빈 정보를 보완하고 빈 인스턴스를 생성한다. 
@@ -104,9 +104,11 @@ Bean Factory Post Processor(BFPP)를 사용해 빈 정보를 보완하고 빈 �
 * 자바 기반 설정(@Bean에 initMethod 속성을 지정한 메서드)
 * XML 기반 설정(<bean> 요소에 init-method 속성을 지정한 메서드)
 
-이런 빈이 생성된 후에 하는 초기화 과정은 전 단계의 의존성 주입이 끝난 필드를 활용할 수 있다는 점이 중요하다.
+이런 빈이 생성된 후에 하는 **초기화 과정은 전 단계의 의존성 주입이 끝난 필드를 활용할 수 있다**는 점이 중요하다.
 
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/22107F505693B43E29)
+
+`종료 단계`는 DI 컨테이너가 역할을 다하고 파괴될 때 
 
 [InitializeBean, PostConstruct, DisposableBean, preDeastory](http://wonwoo.ml/index.php/post/1820)
 
@@ -235,11 +237,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyODI2NDMxMCwtMTM3MDkzMTc1MCwtMj
-EyNzQzOTk5NywtMTc0NDM2MDQyOCwtNjU4NzgzMzYwLC0xODIy
-MzQwNTg1LC0zOTc0MzQ2NjksLTE2Njk0MzY2ODksLTQzNzA0OD
-Y2NCwxMTUxMTE5MzQwLDc5ODYyMjA0MSwtMTkyNTIyMTA5MSwt
-MTQyMzc5NDE0NCwxNjY2MzU2Njc2LC0yMTE4NTQ5MDY4LDE3OT
-g1NzM0NTgsOTg2OTUxNTQsLTY5NzgzNzg1MiwtMTM4Mjc3NDk0
-OCwtODM4MjU2NjM2XX0=
+eyJoaXN0b3J5IjpbMTczNjM5MTMwLC0xMzcwOTMxNzUwLC0yMT
+I3NDM5OTk3LC0xNzQ0MzYwNDI4LC02NTg3ODMzNjAsLTE4MjIz
+NDA1ODUsLTM5NzQzNDY2OSwtMTY2OTQzNjY4OSwtNDM3MDQ4Nj
+Y0LDExNTExMTkzNDAsNzk4NjIyMDQxLC0xOTI1MjIxMDkxLC0x
+NDIzNzk0MTQ0LDE2NjYzNTY2NzYsLTIxMTg1NDkwNjgsMTc5OD
+U3MzQ1OCw5ODY5NTE1NCwtNjk3ODM3ODUyLC0xMzgyNzc0OTQ4
+LC04MzgyNTY2MzZdfQ==
 -->
