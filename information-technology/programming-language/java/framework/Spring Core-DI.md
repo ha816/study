@@ -106,9 +106,9 @@ excludeFilters = { @Component.Filter(type = FilterType.ANNOTATION, pattern = { E
 </context:component-scan>
 ```
 
-한 가지 주위할 점은 필터로 스캔할때는 기존 애너테이션이 붙은 스캔 대상도 포함된다.  필터시 애너테이션이 붙은 기존 스캔 대상을 무시하고, 순수하게 필터를 적용해서 탐색되는 컴포넌트만 사용하고 싶다면, userDefaultFilters를 false로 설정하자.
+한 가지 주위할 점은 필터로 스캔할때는 기존 애너테이션이 붙은 스캔 대상도 포함된다.  필터시 애너테이션이 붙은 기존 스캔 대상을 무시하고, 순수하게 필터를 적용해서 탐색되는 컴포넌트만 사용하고 싶다면, **userDefaultFilters**를 false로 설정하자.
 
-추가로 include필터와 exclude 필터가 모두 해당하는 컴포넌트가 있는 경우, 제외하는 필터가 우선순위가 높아 해당 컴포넌트는 스캔 대상에서 제외된다.
+추가로 include필터와 exclude 필터가 모두 해당하는 컴포넌트가 있는 경우, **제외하는 필터가 우선순위가 높아 해당 컴포넌트는 스캔 대상에서 제외된다.**
 
 ## Spring DI 
 
@@ -157,7 +157,6 @@ DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 
 
 클래스에 외부에서 접근 가능한 생성자나 세터 메서드가 없더라도 필드에 @Autowired를 붙일 수 있는데 심지어 private 필드일지라도 적절한 인스턴스를 오토 와이어 한다. DI 컨테이너가 이 클래스가 생성된 후에 리플렉션(reflection)을 이용하여 이 필드에 인스턴스를 오토 와이어 한다.
 
-
 ### Autowiring by Type
 
 ### Autowiring by Name
@@ -186,9 +185,9 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MjE1OTAwMSwtNDU4OTgyMTc5LDE1Nz
-Q5NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3
-LC04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NT
-gzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5
-OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
+eyJoaXN0b3J5IjpbLTExODY1MTk0OTUsLTQ1ODk4MjE3OSwxNT
+c0OTYyODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2
+NywtODgxMzQ5OTIzLC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxOD
+U4MzMyMjc1LDIwNjEwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3
+OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
 -->
