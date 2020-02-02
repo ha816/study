@@ -92,6 +92,7 @@ PasswordEncoder passwordEncoder() { ... }
 
 빈의 생명 주기는 빈 초기화, 빈 사용단계, 종료단계로 구분할 수 있다.
 
+
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/22107F505693B43E29)
 
 [InitializeBean, PostConstruct, DisposableBean, preDeastory](http://wonwoo.ml/index.php/post/1820)
@@ -221,11 +222,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDQzNjA0MjgsLTY1ODc4MzM2MCwtMT
-gyMjM0MDU4NSwtMzk3NDM0NjY5LC0xNjY5NDM2Njg5LC00Mzcw
-NDg2NjQsMTE1MTExOTM0MCw3OTg2MjIwNDEsLTE5MjUyMjEwOT
-EsLTE0MjM3OTQxNDQsMTY2NjM1NjY3NiwtMjExODU0OTA2OCwx
-Nzk4NTczNDU4LDk4Njk1MTU0LC02OTc4Mzc4NTIsLTEzODI3Nz
-Q5NDgsLTgzODI1NjYzNiwyMDkwNDkxODE2LC00NTg5ODIxNzks
-MTU3NDk2MjgyOV19
+eyJoaXN0b3J5IjpbLTMyNzk5MjI1NCwtMTc0NDM2MDQyOCwtNj
+U4NzgzMzYwLC0xODIyMzQwNTg1LC0zOTc0MzQ2NjksLTE2Njk0
+MzY2ODksLTQzNzA0ODY2NCwxMTUxMTE5MzQwLDc5ODYyMjA0MS
+wtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2Njc2LC0y
+MTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLTY5NzgzNz
+g1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0OTE4MTYs
+LTQ1ODk4MjE3OV19
 -->
