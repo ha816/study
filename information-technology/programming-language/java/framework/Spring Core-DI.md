@@ -64,6 +64,8 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 
 
 
+
+
 ## ApplicationContext
 
 스프링에서는 ApplicationContext가 DI 컨테이너의 역할을 한다. 이제 ApplicationContext를 구현하는 과정을 보도록 하자. ApplicationContext를 생성할때는 자바 기반 설정 방식과 XML 기반 설정 방식이 있다. 
@@ -189,11 +191,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg4MTM4MTU1LC0xOTI1MjIxMDkxLC0xND
-IzNzk0MTQ0LDE2NjYzNTY2NzYsLTIxMTg1NDkwNjgsMTc5ODU3
-MzQ1OCw5ODY5NTE1NCwtNjk3ODM3ODUyLC0xMzgyNzc0OTQ4LC
-04MzgyNTY2MzYsMjA5MDQ5MTgxNiwtNDU4OTgyMTc5LDE1NzQ5
-NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3LC
-04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NTgz
-MzIyNzVdfQ==
+eyJoaXN0b3J5IjpbMTU0NDU0NzIwNywtMTkyNTIyMTA5MSwtMT
+QyMzc5NDE0NCwxNjY2MzU2Njc2LC0yMTE4NTQ5MDY4LDE3OTg1
+NzM0NTgsOTg2OTUxNTQsLTY5NzgzNzg1MiwtMTM4Mjc3NDk0OC
+wtODM4MjU2NjM2LDIwOTA0OTE4MTYsLTQ1ODk4MjE3OSwxNTc0
+OTYyODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2Ny
+wtODgxMzQ5OTIzLC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxODU4
+MzMyMjc1XX0=
 -->
