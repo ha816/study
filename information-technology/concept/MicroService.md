@@ -18,8 +18,10 @@ DevOps
 
 컨테이너화(Containerization) 기술은 운영체제의 입장에서 본다면 사적인 가상공간을 제공하는 것이다. 이런 가상 공간을 컨테이너 또는 가상엔진이라 부른다. 
 
+컨테이너는 뚜렷히 구분되는 소프트웨어 컴포넌트를 빌드하고, 탑재하고 실행할 수 있는 편리한 매커니즘이다. 일반적으로 컨테이너는 하나의 애플리케이션을 실행하는데 필수적인 모든 실행 바이너리 파일과 라이브러리를 함께 가진다. 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3ODkzMjc0NCw3NDE0MTI0NzNdfQ==
+eyJoaXN0b3J5IjpbMTQ5MTEwODQxMSw3NDE0MTI0NzNdfQ==
 -->
