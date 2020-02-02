@@ -143,21 +143,18 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 |사용 단계 | 애플리케이션 컨텍스트에서 빈을 사용하는 단계|
 |파기 단계 | 애플리케이션 컨텍스트를 삭제하는 단계로 서블릿 컨테이너가 중지할때 수행 |
 
-* ROOT 애플리케이션 컨텍스트 생성 절차
+### 초기화 단계
+
+* ROOT 애플리케이션 컨텍스트 생성 과정
 	* 서블릿 컨테이너 -> contextInitialized() -> ContextLoaderListener -> new -> Root Application Context
-* Dispatcher Servlet용 애플리케이션 컨텍스트 생성과정
+* Dispatcher Servlet 애플리케이션 컨텍스트 생성 과정
 	* 서블릿 컨테이너 -> init() -> Dispatcher Servlet -> new -> Dispatcher Servelet Application Context
 
 위 두 과정 모두 서블릿 컨테이너가 기동된 후에 발생한다. 그리고 Root 웹 애플리케이션 컨텍스트가 Dispatcher Servlet용 보다 먼저 생성된다. 
 
-### 종료단계 
-
-
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUyNjM3NzU5LDExNDcxMzMwMzYsNDc3Nj
+eyJoaXN0b3J5IjpbLTIyMTI3MTU2LDExNDcxMzMwMzYsNDc3Nj
 YxOTgzLDE5ODU5MDQyMzYsMTMwMDMwOTcwMCwxMTIxMzMzODcy
 LDg2MTI5MDkyLC0zODAzOTk0OTddfQ==
 -->
