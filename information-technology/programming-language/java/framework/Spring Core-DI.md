@@ -61,6 +61,10 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 ### 다른 스코프의 빈 주입(Look Up Injection)
 
 만약 하나의 빈이 또 다른 빈에 의존하고 있다면 DI 컨테이너에 의해 주입된 빈은 원래 자기 자신의 스코프와 상관 없이 주입 받는 빈의 스코프를 따르게 된다.  예를 들어, prototype 스코프의 빈을 singleton 스코프 빈에 주입한다고 생각해보자. 주입된 prototype 빈은 자신을 주입 받은 singleton 스코프의 빈이 살아 있는 한 DI 컨테이너에서 새로 만들 필요가 없기 때문에 결과적으로 singleton과 같은 수명을 살게 된다. 
+```
+
+```
+
 
 위와 같은 문제를 해결하는 가장 좋은 방법은 주입 받는게 아니라 필요할때 마다 DI 컨테이너에서 빈을 찾아오면 된다. 이때 DI 컨테이너와 관련된 코드를 남가지 않는 방법이 바로 Look Up injection이다. DI 컨테이너가 빈을 Lookup하는 세머드를 만들고, 그 메서드를 의존할 빈에게 주입하면 된다. 
 
@@ -71,6 +75,8 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 @Lookup 애너테이션에 value 속성에 빈의 이름을 지정할 수 있지만, 별도로 지정하지 않았다면 메서드의 반환 값 타입을 보고 룩업 대상 빈을 찾는다. 
 
 ```
+@Lookup // 
+PasswordEncoder passwordEncoder() { ... }
 
 
 ```
@@ -204,11 +210,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDQzMTM3OTIsMTE1MTExOTM0MCw3OT
-g2MjIwNDEsLTE5MjUyMjEwOTEsLTE0MjM3OTQxNDQsMTY2NjM1
-NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1MTU0LC
-02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNiwyMDkw
-NDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1MjAzMjY0Nz
-ksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTkyMywtNjU2
-ODY0NTgxXX0=
+eyJoaXN0b3J5IjpbLTE2NzE2NDU5MywxMTUxMTE5MzQwLDc5OD
+YyMjA0MSwtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2
+Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLT
+Y5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0
+OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYyODI5LDUyMDMyNjQ3OS
+wxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgxMzQ5OTIzLC02NTY4
+NjQ1ODFdfQ==
 -->
