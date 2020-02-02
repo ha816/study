@@ -110,7 +110,9 @@ Bean Factory Post Processor(BFPP)를 사용해 빈 정보를 보완하고 빈 �
 이 전처리 과정에는 아래와 같이 다양한 방법으로 정의할 수 있다.
 
 * 애너테이션 기반 설졍(@PreDestory)
-* 인터페이스 기반 설정(DisposableBean  
+* 인터페이스 기반 설정(DisposableBean 인터페이스 내의 destory 메서드 구현)
+* 자바 기반 설정(@Bean에 destoryMethod 속성을 지정한 메서드)
+* XML 기반 설정(<bean> 요소에 destory0method 속성을 지정한 메서드) 
 
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/22107F505693B43E29)
 [InitializeBean, PostConstruct, DisposableBean, preDeastory](http://wonwoo.ml/index.php/post/1820)
@@ -240,11 +242,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMjg1NDU2LC0xOTU3NTgyMTEyLDE3Mz
-YzOTEzMCwtMTM3MDkzMTc1MCwtMjEyNzQzOTk5NywtMTc0NDM2
-MDQyOCwtNjU4NzgzMzYwLC0xODIyMzQwNTg1LC0zOTc0MzQ2Nj
-ksLTE2Njk0MzY2ODksLTQzNzA0ODY2NCwxMTUxMTE5MzQwLDc5
-ODYyMjA0MSwtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2Mz
-U2Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQs
-LTY5NzgzNzg1Ml19
+eyJoaXN0b3J5IjpbLTExNzI2MTQ3NzAsLTE5NTc1ODIxMTIsMT
+czNjM5MTMwLC0xMzcwOTMxNzUwLC0yMTI3NDM5OTk3LC0xNzQ0
+MzYwNDI4LC02NTg3ODMzNjAsLTE4MjIzNDA1ODUsLTM5NzQzND
+Y2OSwtMTY2OTQzNjY4OSwtNDM3MDQ4NjY0LDExNTExMTkzNDAs
+Nzk4NjIyMDQxLC0xOTI1MjIxMDkxLC0xNDIzNzk0MTQ0LDE2Nj
+YzNTY2NzYsLTIxMTg1NDkwNjgsMTc5ODU3MzQ1OCw5ODY5NTE1
+NCwtNjk3ODM3ODUyXX0=
 -->
