@@ -92,7 +92,8 @@ PasswordEncoder passwordEncoder() { ... }
 
 빈의 생명 주기는 빈 초기화, 빈 사용단계, 종료단계로 구분할 수 있다.
 
-#### 
+#### 초기화
+빈을 생성하는데 필요한 정보를 수집한다.이 단계에서는 정보만 불러올뿐 아직 빈을 생성한 것은 아니다. 
 
 
 ## ApplicationContext
@@ -220,11 +221,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Njk0MzY2ODksLTQzNzA0ODY2NCwxMT
-UxMTE5MzQwLDc5ODYyMjA0MSwtMTkyNTIyMTA5MSwtMTQyMzc5
-NDE0NCwxNjY2MzU2Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NT
-gsOTg2OTUxNTQsLTY5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4
-MjU2NjM2LDIwOTA0OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYyOD
-I5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgx
-MzQ5OTIzXX0=
+eyJoaXN0b3J5IjpbLTEzNTc4NzY4NzgsLTE2Njk0MzY2ODksLT
+QzNzA0ODY2NCwxMTUxMTE5MzQwLDc5ODYyMjA0MSwtMTkyNTIy
+MTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2Njc2LC0yMTE4NTQ5MD
+Y4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLTY5NzgzNzg1MiwtMTM4
+Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0OTE4MTYsLTQ1ODk4Mj
+E3OSwxNTc0OTYyODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcw
+MDUxNDc2N119
 -->
