@@ -69,11 +69,10 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 AOP는 스프링 프레임워크의 다양한 기능에서 활용되고 있다. 그 중 대표적인 몇 가지가 설명한다. 
 
-### 트랜잭션 관리
+### 트랜잭션 관리(@Transactional )
 
 트랜잭션 관리가 필요한 메서드에 @Transactional 애너테이션을 지정하면 복잡한 트랜잭션 관리를 스프링 프레임워크가 대신해준다. 
 메서드가 정상적으로 종료한 것이 확인 되면 트랜잭션을 커밋하고, 예외가 발생할 경우, 트랜잭션을 롤백한다. 
-
 
 ### 캐싱
 
@@ -87,8 +86,8 @@ AOP는 스프링 프레임워크의 다양한 기능에서 활용되고 있다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTA0MDIwNCw4MzY4OTcwNzMsLTEyND
-g1MTYzODYsMTA4ODkxMDA1NywtMzczNTExMTE5LC0xNjY0ODEw
-NDUxLC0xOTkzMjM4OTkxLC04NTMyNDcwMTMsLTY4OTY4MjMxOV
-19
+eyJoaXN0b3J5IjpbLTQ2NzU3MjQyNiwxMDg5MDQwMjA0LDgzNj
+g5NzA3MywtMTI0ODUxNjM4NiwxMDg4OTEwMDU3LC0zNzM1MTEx
+MTksLTE2NjQ4MTA0NTEsLTE5OTMyMzg5OTEsLTg1MzI0NzAxMy
+wtNjg5NjgyMzE5XX0=
 -->
