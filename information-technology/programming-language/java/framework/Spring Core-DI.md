@@ -39,7 +39,9 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 
 ### Bean Scope
 
-DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간도 관리한다. **빈의 생존 기간을 빈 스코프**라고 한다. 
+DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간도 관리한다. **빈의 생존 기간을 빈 스코프**라고 한다. 개발자가 직접 빈 스코프를 다루지 않아도 된다는 점이 DI 컨테이너를 사용하는 이유기도 하다. 
+
+스프링에서 제공하는 빈 스코프는 
 
 기본적으로 스프링 빈은 애플리케이션 컨텍스트 초기화될 때 생성되는데, 이를 eager Instantiation이라고 한다. 그리고 특별한 설정이 없으면 스프링 빈 인스턴스는 하나만 생성되며, 이를 싱글턴 스코프라고 한다. 
 
@@ -177,7 +179,7 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTU5MTA1NSwtMTQyMzc5NDE0NCwxNj
+eyJoaXN0b3J5IjpbMTg4MDIwNzc2NywtMTQyMzc5NDE0NCwxNj
 Y2MzU2Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUx
 NTQsLTY5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LD
 IwOTA0OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYyODI5LDUyMDMy
