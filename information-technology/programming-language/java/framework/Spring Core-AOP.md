@@ -31,7 +31,7 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 |--|--|
 | Before  | 조인 포인트 전에 실행된다. 예외를 제외하고는 항상 실행된다.|
 | After Returning  | 조인 포인트가 정상 종료한 후 실행된다. 예외가 발생하면 실행되지 않는다.|
-| After Returning  | 조인 포인트가 정상 종료한 후 실행된다. 예외가 발생하면 실행되지 않는다.|
+| After Throwing  | 조인 포인트가 정상 종료한 후 실행된다. 예외가 발생하면 실행되지 않는다.|
 
 
 
@@ -59,7 +59,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NjMzMjU5MCwxMDg4OTEwMDU3LC0zNz
+eyJoaXN0b3J5IjpbLTE4MjE2NjA3NiwxMDg4OTEwMDU3LC0zNz
 M1MTExMTksLTE2NjQ4MTA0NTEsLTE5OTMyMzg5OTEsLTg1MzI0
 NzAxMywtNjg5NjgyMzE5XX0=
 -->
