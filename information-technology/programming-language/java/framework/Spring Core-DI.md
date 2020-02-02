@@ -99,7 +99,7 @@ Bean Factory Post Processor(BFPP)를 사용해 빈 정보를 보완하고 빈 �
 2. 빈 컴포넌트 간의 의존관계를 해결한다. (constructor injection, field injection, setter method injection)
 3. 초기화 작업(Post Construct)를 수행한다. 초기화 작업에는 다양한 설정 방식이 있는데 아래와 같으며 처리 순서도 같다.
 
-* 애터네이션 기반 설정(@PostConstruct)
+* 애너태이션 기반 설정(@PostConstruct)
 * 인터페이스 기반 설정(InitializingBean 인터페이스 내의 afterPropertiesSet 메서드 구현)
 * 자바 기반 설정(@Bean에 initMethod 속성을 지정한 메서드)
 * XML 기반 설정(<bean> 요소에 init-method 속성을 지정한 메서드)
@@ -107,6 +107,10 @@ Bean Factory Post Processor(BFPP)를 사용해 빈 정보를 보완하고 빈 �
 이런 빈이 생성된 후에 하는 **초기화 과정은 전 단계의 의존성 주입이 끝난 필드를 활용할 수 있다**는 점이 중요하다.
 
 `종료 단계`는 DI 컨테이너가 역할을 다하고 파괴될 때 관리되던 빈도 파되된다. 경우에 따라 파괴되기 전에 마지막으로 처리해야할 작업이 있을 수 있는데, 이를 위해 스프링에서는 빈이 파괴되기전 전처리(Pre Destory)를 할 수 있는 방법을 제공한다. 
+이 전처리 과정에는 아래와 같이 다양한 방법으로 정의할 수 있다.
+
+* 애너테이션 기반 설졍(@PreDestory)
+* 인터페이스 기반 설정(DisposableBean  
 
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/22107F505693B43E29)
 [InitializeBean, PostConstruct, DisposableBean, preDeastory](http://wonwoo.ml/index.php/post/1820)
@@ -236,11 +240,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTc1ODIxMTIsMTczNjM5MTMwLC0xMz
-cwOTMxNzUwLC0yMTI3NDM5OTk3LC0xNzQ0MzYwNDI4LC02NTg3
-ODMzNjAsLTE4MjIzNDA1ODUsLTM5NzQzNDY2OSwtMTY2OTQzNj
-Y4OSwtNDM3MDQ4NjY0LDExNTExMTkzNDAsNzk4NjIyMDQxLC0x
-OTI1MjIxMDkxLC0xNDIzNzk0MTQ0LDE2NjYzNTY2NzYsLTIxMT
-g1NDkwNjgsMTc5ODU3MzQ1OCw5ODY5NTE1NCwtNjk3ODM3ODUy
-LC0xMzgyNzc0OTQ4XX0=
+eyJoaXN0b3J5IjpbMTgxMjg1NDU2LC0xOTU3NTgyMTEyLDE3Mz
+YzOTEzMCwtMTM3MDkzMTc1MCwtMjEyNzQzOTk5NywtMTc0NDM2
+MDQyOCwtNjU4NzgzMzYwLC0xODIyMzQwNTg1LC0zOTc0MzQ2Nj
+ksLTE2Njk0MzY2ODksLTQzNzA0ODY2NCwxMTUxMTE5MzQwLDc5
+ODYyMjA0MSwtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2Mz
+U2Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQs
+LTY5NzgzNzg1Ml19
 -->
