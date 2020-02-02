@@ -158,32 +158,15 @@ DI 컨테이너의 빈을 자동으로 의존성 주입하는 방법이다. 자�
 DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤 것을 써야할지 알 수 없다. 이럴 경우 NoUniqueBeanDefinitionException이 발생한다. 이럴때 `@Qualifier` 애너테이션으로 추가하려는 빈 이름을 지정하면 원하는 빈을 설정할 수 있다. 
 
 
-### Bean Scope
-
-기본적으로 스프링 빈은 애플리케이션 컨텍스트 초기화될 때 생성되는데, 이를 eager Instantiation이라고 한다. 그리고 특별한 설정이 없으면 스프링 빈 인스턴스는 하나만 생성되며, 이를 싱글턴 스코프라고 한다. 
-
-DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴스에서 이용한다는 것을 고려해야 하기 때문에, 스레드 세이프 해야 한다. 
-
-싱글턴 스코프를 사용하느게 아니라 새 인스턴스를 받고 싶다면 prototype을 사용하면 된다. 그러면 DI 컨테이너에서 getBean 메서드를 호출할때마다 새 인스턴스가 반환된다. 이를 프로토타입 빈 스코프(prototype scope)라고 한다.
-
-특정 HTTP 요청이 살아있는 동반 빈이 살아있는 리퀘스트(request scope), HTTP의 세션이 존재하는 동안만 존재하는 세션(session scope) 같은 다른 스코프도 존재한다. 
-
-
-
-### Bean Life Cycle
-
-
-
-
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTg1NDkwNjgsMTc5ODU3MzQ1OCw5OD
-Y5NTE1NCwtNjk3ODM3ODUyLC0xMzgyNzc0OTQ4LC04MzgyNTY2
-MzYsMjA5MDQ5MTgxNiwtNDU4OTgyMTc5LDE1NzQ5NjI4MjksNT
-IwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3LC04ODEzNDk5
-MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NTgzMzIyNzUsMj
-A2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5OTYsMTAzODEw
-OTExNl19
+eyJoaXN0b3J5IjpbLTc0NjU0ODA2MywtMjExODU0OTA2OCwxNz
+k4NTczNDU4LDk4Njk1MTU0LC02OTc4Mzc4NTIsLTEzODI3NzQ5
+NDgsLTgzODI1NjYzNiwyMDkwNDkxODE2LC00NTg5ODIxNzksMT
+U3NDk2MjgyOSw1MjAzMjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3
+NjcsLTg4MTM0OTkyMywtNjU2ODY0NTgxLDE1MDQ3NTIwNjUsMT
+g1ODMzMjI3NSwyMDYxMDMxOTAyLDE5MTg4NzI4NTgsLTIzMzYx
+Nzk5Nl19
 -->
