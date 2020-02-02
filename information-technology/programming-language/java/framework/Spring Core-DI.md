@@ -126,7 +126,6 @@ UserService userService(UserRepository repository){
 }
 ```
 @Bean 애너테이션이 붙은 Bean 생성 메서드로 필요한 객체를 만드는 과정에서, 객체의 세터 메서드로 의존 주입을 통해 의존성 주입이 완료된 객체를 반환한다. 
-
 ```
 <bean id="userSerivce" class="com.example.demo.UserServiceImpl">
 	<property name="userRepository" ref="userRepository" />
@@ -159,6 +158,9 @@ DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 
 
 ### Autowiring by Type
 
+일명 타입으로 오토와이어링 하기. 세터 인젝션, 컨스트럭터 인젝션, 필드 인젝션 모두에서 활용가능하다. 
+
+
 ### Autowiring by Name
 
 
@@ -185,9 +187,9 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODY1MTk0OTUsLTQ1ODk4MjE3OSwxNT
-c0OTYyODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2
-NywtODgxMzQ5OTIzLC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxOD
-U4MzMyMjc1LDIwNjEwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3
-OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbMTQ4MTIyOTU0OCwtNDU4OTgyMTc5LDE1Nz
+Q5NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3
+LC04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NT
+gzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5
+OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
 -->
