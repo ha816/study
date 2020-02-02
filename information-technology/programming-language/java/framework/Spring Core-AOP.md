@@ -25,6 +25,14 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 * 타깃(Target)
 	* AOP 처리에 의해 처리 흐름에 변화가 생긴 객체를 말한다. 
 
+###  Spring Advice Types
+
+|어드바이스 | 설명 |
+|--|--|
+| Before  | 조인 포인트 전에 실행된다. 예외를 제외하고는 항상 실행된다.|
+| After Returning  | 조인 포인트 전에 실행된다. 예외를 제외하고는 항상 실행된다.|
+
+
 
 
 
@@ -50,7 +58,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODkxMDA1NywtMzczNTExMTE5LC0xNj
-Y0ODEwNDUxLC0xOTkzMjM4OTkxLC04NTMyNDcwMTMsLTY4OTY4
-MjMxOV19
+eyJoaXN0b3J5IjpbLTg5OTIxMDM1MCwxMDg4OTEwMDU3LC0zNz
+M1MTExMTksLTE2NjQ4MTA0NTEsLTE5OTMyMzg5OTEsLTg1MzI0
+NzAxMywtNjg5NjgyMzE5XX0=
 -->
