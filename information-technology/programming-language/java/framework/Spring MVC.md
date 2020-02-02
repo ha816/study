@@ -91,16 +91,6 @@ Handler 인터셉터는 DispatcherServlet이 컨트롤러를 호출하기 전과
 
 인터셉터는 HandlerIntercepter인터페이스를 구현해서 사용한다.
 
-## ViewResolver
-
-핸들러에서 반환한 뷰 이름을 보고, 이후에 사용할 View 인터페이스의 구현 클래스를 선택하는 역할을 한다. 
-
-스프링에서는 다양한 ViewResolver의 구현 클래스를 제공하는데 주요 클래스만 몇개 소개한다.
-|클래스명  | 설명|
-|--|--|
-|InternalResourceViewResolver  | View가 JSP일때 사용하는 기본적인 ViewResolver |
-|BeanNameViewResolver  | DI 컨테이너에 등록된 빈 형태로 뷰객체를 가져온다. |
-
 ## View
 
 클라이언트에 반환하는 응답 데이터를 생성하는 역할을 한다. 스프링에서 다양한 구현 클래스를 제공하는데 몇가지만 소개한다. 
@@ -149,6 +139,6 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDMzNzM4NzcsMTEyMTMzMzg3Miw4Nj
+eyJoaXN0b3J5IjpbLTIxNDQzODQxMjUsMTEyMTMzMzg3Miw4Nj
 EyOTA5MiwtMzgwMzk5NDk3XX0=
 -->
