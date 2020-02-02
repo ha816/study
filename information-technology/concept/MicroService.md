@@ -16,9 +16,10 @@ DevOps
 
 ## Container
 
-컨테이너는 기존 통념을 깨는 혁신적 기
+컨테이너는 운영체제 위에서 폐쇠적인 사적 공간을 제공한다. 이 기술은 운영체제 가상화(operating system virtualization)이라고도 한다. 중요한 점은 컨테이너를 사용하면 운영체제의 커널이 독립적인 가상 공간을 제공한다는 점이다. 이런 가상 공간을 컨테이너 또는 가상
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzQyMTkzNDksNzQxNDEyNDczXX0=
+eyJoaXN0b3J5IjpbMTAwNzI0NjQ5Nyw3NDE0MTI0NzNdfQ==
 -->
