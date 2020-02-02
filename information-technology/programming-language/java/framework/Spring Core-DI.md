@@ -167,7 +167,7 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 ### 이름 오토와이어링(Autowiring by Name)
 
-한편 빈의 이름이 
+한편 빈의 이름이 필드명이나 프로퍼티명과 일치할 경우에 빈 이름으로 필드 인젝션을 하는 방법도 있다. 
 
 
 
@@ -193,10 +193,10 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtOD
-M4MjU2NjM2LDIwOTA0OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYy
-ODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2NywtOD
-gxMzQ5OTIzLC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxODU4MzMy
-Mjc1LDIwNjEwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3OTk2LD
-EwMzgxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbOTg2OTUxNTQsLTY5NzgzNzg1MiwtMTM4Mj
+c3NDk0OCwtODM4MjU2NjM2LDIwOTA0OTE4MTYsLTQ1ODk4MjE3
+OSwxNTc0OTYyODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMD
+UxNDc2NywtODgxMzQ5OTIzLC02NTY4NjQ1ODEsMTUwNDc1MjA2
+NSwxODU4MzMyMjc1LDIwNjEwMzE5MDIsMTkxODg3Mjg1OCwtMj
+MzNjE3OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
 -->
