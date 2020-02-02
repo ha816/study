@@ -76,6 +76,7 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 * @Component
 * @Controller, @Service, @Repository
 * @Configuration
+* @RestController
 
 
 
@@ -159,8 +160,9 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNT
-E0NzY3LC04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1
-LDE4NTgzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMz
-M2MTc5OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
+eyJoaXN0b3J5IjpbMTU3NDk2MjgyOSw1MjAzMjY0NzksMTQxNz
+AyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTkyMywtNjU2ODY0NTgx
+LDE1MDQ3NTIwNjUsMTg1ODMzMjI3NSwyMDYxMDMxOTAyLDE5MT
+g4NzI4NTgsLTIzMzYxNzk5NiwxMDM4MTA5MTE2LC0xNzIwNDI2
+MjMwXX0=
 -->
