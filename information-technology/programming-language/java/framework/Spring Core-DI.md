@@ -50,7 +50,7 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 |Request | HTTP 요청이 들어올때마다 새로운 인스턴스가 만들어진다. 웹어플리케이션을 만들때만 사용 가능하다.|
 |Session | HTTP 세션이 만들어질때 마다 새로운 빈 인스턴스가 만들어진다. 웹어플리케이션을 만들때만 사용 가능하다.|
 
-### Bean Life Cycle
+빈을 정의하는 단계에서 `@Scope` 애너테이션을 사용하면 빈의 스코프를 설정할 수 있다.
 
 
 ## ApplicationContext
@@ -178,11 +178,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTkwMjE1MTYsLTE0MjM3OTQxNDQsMT
-Y2NjM1NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1
-MTU0LC02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNi
-wyMDkwNDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1MjAz
-MjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTkyMy
-wtNjU2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1ODMzMjI3NSwyMDYx
-MDMxOTAyXX0=
+eyJoaXN0b3J5IjpbMTMzNjA4MjYxMiwtMTQyMzc5NDE0NCwxNj
+Y2MzU2Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUx
+NTQsLTY5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LD
+IwOTA0OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYyODI5LDUyMDMy
+NjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgxMzQ5OTIzLC
+02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxODU4MzMyMjc1LDIwNjEw
+MzE5MDJdfQ==
 -->
