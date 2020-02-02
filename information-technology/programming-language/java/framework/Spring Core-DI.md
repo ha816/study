@@ -156,7 +156,6 @@ DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 
 
 클래스에 외부에서 접근 가능한 생성자나 세터 메서드가 없더라도 필드에 @Autowired를 붙일 수 있는데 심지어 private 필드일지라도 적절한 인스턴스를 오토 와이어 한다. DI 컨테이너가 이 클래스가 생성된 후에 리플렉션(reflection)을 이용하여 이 필드에 인스턴스를 오토 와이어 한다.
 
-###  타입 오토와이어링(Autowiring by Type)
 
 일명 타입으로 오토와이어링 하기. 세터 인젝션, 컨스트럭터 인젝션, 필드 인젝션 모두에서 활용가능하다. 
 
@@ -164,12 +163,6 @@ DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 
 이런 필수 조건을 완하하고 싶다면 @Autowried 애너테이션의 required를 false로 설정하면 된다. `requlare = false`로 하면 해당 타입의 빈을 찾지 못하더라도 예외가 발생하지 않는다. 그렇다고 하더라도 의존성 주입은 실패했기 때문에 해당 필드의 값은 null이 된다.
 
 DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤 것을 써야할지 알 수 없다. 이럴 경우 NoUniqueBeanDefinitionException이 발생한다. 이럴때 `@Qualifier` 애너테이션으로 추가하려는 빈 이름을 지정하면 원하는 빈을 설정할 수 있다. 
-
-### 이름 오토와이어링(Autowiring by Name)
-
-한편 빈의 이름이 필드명이나 프로퍼티명과 일치할 경우에 빈 이름으로 필드 인젝션을 하는 방법도 있다. 
-
-
 
 
 ### Bean Scope
@@ -193,10 +186,11 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg2OTUxNTQsLTY5NzgzNzg1MiwtMTM4Mj
-c3NDk0OCwtODM4MjU2NjM2LDIwOTA0OTE4MTYsLTQ1ODk4MjE3
-OSwxNTc0OTYyODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMD
-UxNDc2NywtODgxMzQ5OTIzLC02NTY4NjQ1ODEsMTUwNDc1MjA2
-NSwxODU4MzMyMjc1LDIwNjEwMzE5MDIsMTkxODg3Mjg1OCwtMj
-MzNjE3OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbMTY3MzQ0MzQ1NCw5ODY5NTE1NCwtNjk3OD
+M3ODUyLC0xMzgyNzc0OTQ4LC04MzgyNTY2MzYsMjA5MDQ5MTgx
+NiwtNDU4OTgyMTc5LDE1NzQ5NjI4MjksNTIwMzI2NDc5LDE0MT
+cwMjU2MTAsNzAwNTE0NzY3LC04ODEzNDk5MjMsLTY1Njg2NDU4
+MSwxNTA0NzUyMDY1LDE4NTgzMzIyNzUsMjA2MTAzMTkwMiwxOT
+E4ODcyODU4LC0yMzM2MTc5OTYsMTAzODEwOTExNiwtMTcyMDQy
+NjIzMF19
 -->
