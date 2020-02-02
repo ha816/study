@@ -136,16 +136,13 @@ Dispatcher Servlet		Dispatcher Servlet
 
 DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서로간의 빈은 참조할 수 없다. 
 
-## 애플리케이션 컨텍스트의 라이프 사이클
 
-초기화 단계 : 애플리케이션 컨텍스트를 생성하는 단계로 서블릿 컨테이너를 기동할때 수행한다.
-사용 단계 : 애플리케이션 컨텍스트에서 빈을 사용하는 단계.
-파기 단계 : 애플리케이션 컨텍스트를 삭제하는 단계로 서블릿 컨테이너가 중지할때 수행한다. 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NjUxODkyMywxMTIxMzMzODcyLDg2MT
-I5MDkyLC0zODAzOTk0OTddfQ==
+eyJoaXN0b3J5IjpbMjU4MjY0NjM2LDExMjEzMzM4NzIsODYxMj
+kwOTIsLTM4MDM5OTQ5N119
 -->
