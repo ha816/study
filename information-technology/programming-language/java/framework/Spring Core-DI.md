@@ -90,7 +90,9 @@ PasswordEncoder passwordEncoder() { ... }
 ```
 ### Bean Life Cycle
 
-빈의 생명 주기는 빈 초기화, 빈 사용단계, 종료단계로 구분할 수 있다. 여기서 알아둬야 할 점은 빈 초기화 및 종료단계가 중요하다. 
+빈의 생명 주기는 빈 초기화, 빈 사용단계, 종료단계로 구분할 수 있다. 
+
+빈 초기화 과정은 빈 정보 보완 및 생성 -> 빈 의존 관계 설정 -> 초기화 
 
 먼저 만들 빈 정의를 읽어들인다, 아직 정보만 불러왔을 뿐 실제 빈을 생성한 것은 아니다. 
 Bean Factory Post Processor(BFPP)를 사용해 빈 정보를 보완하고 빈 인스턴스를 생성한다. 
@@ -235,7 +237,7 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUxODcxMDI4LC0yMTI3NDM5OTk3LC0xNz
+eyJoaXN0b3J5IjpbNDIwODY2MjIxLC0yMTI3NDM5OTk3LC0xNz
 Q0MzYwNDI4LC02NTg3ODMzNjAsLTE4MjIzNDA1ODUsLTM5NzQz
 NDY2OSwtMTY2OTQzNjY4OSwtNDM3MDQ4NjY0LDExNTExMTkzND
 AsNzk4NjIyMDQxLC0xOTI1MjIxMDkxLC0xNDIzNzk0MTQ0LDE2
