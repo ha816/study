@@ -50,12 +50,15 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 |request | HTTP 요청이 들어올때마다 새로운 인스턴스가 만들어진다. 웹어플리케이션을 만들때만 사용 가능하다.|
 |session | HTTP 세션이 만들어질때 마다 새로운 빈 인스턴스가 만들어진다. 웹어플리케이션을 만들때만 사용 가능하다.|
 
-빈을 정의하는 단계에서 `@Scope` 애너테이션을 사용하면 빈의 스코프를 설정할 수 있다.
+빈을 정의하는 단계에서 Scope를 사용하면 빈의 스코프를 설정할 수 있다.
 ```
 @Bean @Scope("prototype") // 자바 기반
 ...
-<bean id="userService" class="com.example.demo.User">
+<!--XML 기반-->
+<bean id="userService" class="com.example.demo.UserServiceImpl" scope="prototype">
 ```
+빈 간의 스코프가 다르다는 말은 빈의 수
+
 
 
 ## ApplicationContext
@@ -183,11 +186,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTgxMjY0NzcsLTE0MjM3OTQxNDQsMT
-Y2NjM1NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1
-MTU0LC02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNi
-wyMDkwNDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1MjAz
-MjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTkyMy
-wtNjU2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1ODMzMjI3NSwyMDYx
-MDMxOTAyXX0=
+eyJoaXN0b3J5IjpbNzMxMjIyODY1LC0xNDIzNzk0MTQ0LDE2Nj
+YzNTY2NzYsLTIxMTg1NDkwNjgsMTc5ODU3MzQ1OCw5ODY5NTE1
+NCwtNjk3ODM3ODUyLC0xMzgyNzc0OTQ4LC04MzgyNTY2MzYsMj
+A5MDQ5MTgxNiwtNDU4OTgyMTc5LDE1NzQ5NjI4MjksNTIwMzI2
+NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3LC04ODEzNDk5MjMsLT
+Y1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NTgzMzIyNzUsMjA2MTAz
+MTkwMl19
 -->
