@@ -156,7 +156,7 @@ DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 
 
 클래스에 외부에서 접근 가능한 생성자나 세터 메서드가 없더라도 필드에 @Autowired를 붙일 수 있는데 심지어 private 필드일지라도 적절한 인스턴스를 오토 와이어 한다. DI 컨테이너가 이 클래스가 생성된 후에 리플렉션(reflection)을 이용하여 이 필드에 인스턴스를 오토 와이어 한다.
 
-### Autowiring by Type
+###  타입 오토와이어링(Autowiring by Type)
 
 일명 타입으로 오토와이어링 하기. 세터 인젝션, 컨스트럭터 인젝션, 필드 인젝션 모두에서 활용가능하다. 
 
@@ -190,9 +190,9 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM0MzQ0NzU5LC00NTg5ODIxNzksMTU3ND
-k2MjgyOSw1MjAzMjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3Njcs
-LTg4MTM0OTkyMywtNjU2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1OD
-MzMjI3NSwyMDYxMDMxOTAyLDE5MTg4NzI4NTgsLTIzMzYxNzk5
-NiwxMDM4MTA5MTE2LC0xNzIwNDI2MjMwXX0=
+eyJoaXN0b3J5IjpbMjA5MDQ5MTgxNiwtNDU4OTgyMTc5LDE1Nz
+Q5NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3
+LC04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NT
+gzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5
+OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
 -->
