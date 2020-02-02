@@ -10,8 +10,8 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
  
 ## AOP 용어
 
-* 애스펙트(Aspect)
-	* Aop의 단위가 되는 횡단 관심사를 말한다. 예를 들어 "로그를 출력한다", "예외를 처리한다", "트랜잭션을 관리한다" 와 같은 관심사가 애스펙트다.
+![enter image description here](https://www.baeldung.com/wp-content/uploads/2017/11/Program_Execution.jpg)
+
 * 조인 포인트(Join Point)
 	* 횡단 관심사가 실행될 지점이나 시점(메서드 실행이나 예외 발생 등)을 말한다. 조인 포인트는 AOP를 구현한 라이브러리에 따라 사양이 다를 수 있는데 스프링에서는 메서드 단위로 조인 포인트를 잡는다.
 * 어드바이스(Advice)
@@ -23,15 +23,7 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 * 타깃(Target)
 	* AOP 처리에 의해 처리 흐름에 변화가 생긴 객체를 말한다. 
 
-```
-Class X
-methodX() // Join Point --- Pointcut 1 --> Advice1(공통처리
-methodY
 
-Class Y
-methodY() // Join Point --- Pointcut 2
-
-```
 
 
 ## 애스펙트 사용하기
@@ -56,6 +48,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MzUxMTExOSwtMTY2NDgxMDQ1MSwtMT
-k5MzIzODk5MSwtODUzMjQ3MDEzLC02ODk2ODIzMTldfQ==
+eyJoaXN0b3J5IjpbNTE1Mjk5MDgsLTM3MzUxMTExOSwtMTY2ND
+gxMDQ1MSwtMTk5MzIzODk5MSwtODUzMjQ3MDEzLC02ODk2ODIz
+MTldfQ==
 -->
