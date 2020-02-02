@@ -92,8 +92,12 @@ PasswordEncoder passwordEncoder() { ... }
 
 빈의 생명 주기는 빈 초기화, 빈 사용단계, 종료단계로 구분할 수 있다.
 
-#### 초기화
+#### 빈 읽기 및 보완
 빈을 생성하는데 필요한 정보를 수집한다.이 단계에서는 정보만 불러올뿐 아직 빈을 생성한 것은 아니다. 다음으로 Bean Factory Post Processor(BFPP)를 사용해서 빈의 정보를 보완한다. 
+
+#### 빈 생성 후 초기호
+
+
 
 
 ## ApplicationContext
@@ -221,11 +225,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjY0NDMzNSwtMTY2OTQzNjY4OSwtND
-M3MDQ4NjY0LDExNTExMTkzNDAsNzk4NjIyMDQxLC0xOTI1MjIx
-MDkxLC0xNDIzNzk0MTQ0LDE2NjYzNTY2NzYsLTIxMTg1NDkwNj
-gsMTc5ODU3MzQ1OCw5ODY5NTE1NCwtNjk3ODM3ODUyLC0xMzgy
-Nzc0OTQ4LC04MzgyNTY2MzYsMjA5MDQ5MTgxNiwtNDU4OTgyMT
-c5LDE1NzQ5NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAw
-NTE0NzY3XX0=
+eyJoaXN0b3J5IjpbLTE3OTkxNDk5MDcsLTE2Njk0MzY2ODksLT
+QzNzA0ODY2NCwxMTUxMTE5MzQwLDc5ODYyMjA0MSwtMTkyNTIy
+MTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2Njc2LC0yMTE4NTQ5MD
+Y4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLTY5NzgzNzg1MiwtMTM4
+Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0OTE4MTYsLTQ1ODk4Mj
+E3OSwxNTc0OTYyODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcw
+MDUxNDc2N119
 -->
