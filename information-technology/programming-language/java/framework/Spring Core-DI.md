@@ -74,9 +74,10 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 별도의 설정이 없는 기본 설정에서는 아래와 같은 애너테이션이 붙은 클래스가 스캔의 탐색 대상이된다. 
 
 
-|  |  |
+|애너테이션  | 설명 |
 |--|--|
-|  |  |
+|@Controller  | MVC 패턴에서 컨트롤러 역할을 하는 컴포넌트에 붙는 애너테이션 |
+|@Service  | 비즈니스 로직을 처리하는 컴포|
 
 
 
@@ -164,9 +165,9 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTc1OTUzMDksMTU3NDk2MjgyOSw1Mj
-AzMjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTky
-MywtNjU2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1ODMzMjI3NSwyMD
-YxMDMxOTAyLDE5MTg4NzI4NTgsLTIzMzYxNzk5NiwxMDM4MTA5
-MTE2LC0xNzIwNDI2MjMwXX0=
+eyJoaXN0b3J5IjpbMTc4MzE4NzQ3MCwxNTc0OTYyODI5LDUyMD
+MyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgxMzQ5OTIz
+LC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxODU4MzMyMjc1LDIwNj
+EwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkx
+MTYsLTE3MjA0MjYyMzBdfQ==
 -->
