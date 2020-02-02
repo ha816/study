@@ -88,7 +88,9 @@ PasswordEncoder passwordEncoder() { ... }
 	<lookup-method name="passwordEncoder" bean="passwordEncoder">
 </bean>
 ```
-###
+### Bean Life Cycle
+
+빈의 생명 주기는 빈 초기화, 빈 
 
 ## ApplicationContext
 
@@ -215,11 +217,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzA4NjIzOTEsLTQzNzA0ODY2NCwxMT
-UxMTE5MzQwLDc5ODYyMjA0MSwtMTkyNTIyMTA5MSwtMTQyMzc5
-NDE0NCwxNjY2MzU2Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NT
-gsOTg2OTUxNTQsLTY5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4
-MjU2NjM2LDIwOTA0OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYyOD
-I5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgx
-MzQ5OTIzXX0=
+eyJoaXN0b3J5IjpbMjA0ODQ3OTkwMywtNDM3MDQ4NjY0LDExNT
+ExMTkzNDAsNzk4NjIyMDQxLC0xOTI1MjIxMDkxLC0xNDIzNzk0
+MTQ0LDE2NjYzNTY2NzYsLTIxMTg1NDkwNjgsMTc5ODU3MzQ1OC
+w5ODY5NTE1NCwtNjk3ODM3ODUyLC0xMzgyNzc0OTQ4LC04Mzgy
+NTY2MzYsMjA5MDQ5MTgxNiwtNDU4OTgyMTc5LDE1NzQ5NjI4Mj
+ksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3LC04ODEz
+NDk5MjNdfQ==
 -->
