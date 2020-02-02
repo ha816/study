@@ -26,7 +26,7 @@ Spring MVC는 자바 기반의 웹 어플리케이션을 개발할때 사용하�
 * 뷰 선택
 * 예외처리
 
-스프링의 MVC 프론트 컨트롤러는 DispatcherServelet 클래스로 구현한다. 그리고 일반적인 처리 흐름은 아래와 같다. 
+### 
 
 ![enter image description here](https://howtodoinjava.com/wp-content/uploads/2015/02/Spring-dispatcher-servlet.png)
 
@@ -150,6 +150,6 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMTMzMzg3Miw4NjEyOTA5MiwtMzgwMz
-k5NDk3XX0=
+eyJoaXN0b3J5IjpbLTg4MDMzMjU4OSwxMTIxMzMzODcyLDg2MT
+I5MDkyLC0zODAzOTk0OTddfQ==
 -->
