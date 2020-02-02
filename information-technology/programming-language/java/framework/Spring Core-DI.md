@@ -46,7 +46,12 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 |Scope  | 설명|
 |--|--|
 |Singleton  | DI 컨테이너 기동시 빈 인스턴스가 하나만 생성되고, 그 인스턴스를 공유하는 방식. 특별한 설정이 없을때는 Singleton을 사용|
-|Prototype | DI 컨테이너에 빈을 요청할때마다 새로운 빈 인스턴스가 생성된다. 멀티 쓰레드 안전하고 싶다면 protoType을 사용해야 한다.|
+|Prototype | DI 컨테이너에 빈을 요청할때마다 새로운 빈 인스턴스가 생성된다. 멀티 쓰레드 안전하고 싶다면 Prototype을 사용해야 한다.|
+
+|Request | HTTP 요청이 들어올때마다 새로운 인스턴스가 만들어진다. 웹어플리케이션을 만들때만 사용 가능하다.|
+|Session | HTTP 세션이 만들어질때 마다 새로운 빈 인스웹어플리케이션을 만들때만 사용 가능하다.|
+
+
 
 
 
@@ -186,11 +191,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMTc3NjkyOSwtMTQyMzc5NDE0NCwxNj
-Y2MzU2Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUx
-NTQsLTY5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LD
-IwOTA0OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYyODI5LDUyMDMy
-NjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgxMzQ5OTIzLC
-02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxODU4MzMyMjc1LDIwNjEw
-MzE5MDJdfQ==
+eyJoaXN0b3J5IjpbLTE2MTA0NDc0MzEsLTE0MjM3OTQxNDQsMT
+Y2NjM1NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1
+MTU0LC02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNi
+wyMDkwNDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1MjAz
+MjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTkyMy
+wtNjU2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1ODMzMjI3NSwyMDYx
+MDMxOTAyXX0=
 -->
