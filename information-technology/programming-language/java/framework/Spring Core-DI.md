@@ -97,7 +97,10 @@ Bean Factory Post Processor(BFPP)를 사용해 빈 정보를 보완하고 빈 �
 
 다음 단계는 빈 컴포넌트 간의 의존관계를 해결한다. (constructor injection, field injection, setter method injection)
 
-그리고 마지막으로 
+그리고 마지막으로 초기화 작업(Post Construct)를 수행한다. 초기화 작업에는 다양한 설정 방식이 있는데 아래와 같으며 처리 순서도 같다.
+
+* 애터네이션 기반 설정(@PostConstruct)
+* 인터페이스 기반 설정(@InitializingBean)
 
 
 
@@ -231,11 +234,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODkyNzU4ODQsLTE3NDQzNjA0MjgsLT
-Y1ODc4MzM2MCwtMTgyMjM0MDU4NSwtMzk3NDM0NjY5LC0xNjY5
-NDM2Njg5LC00MzcwNDg2NjQsMTE1MTExOTM0MCw3OTg2MjIwND
-EsLTE5MjUyMjEwOTEsLTE0MjM3OTQxNDQsMTY2NjM1NjY3Niwt
-MjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1MTU0LC02OTc4Mz
-c4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNiwyMDkwNDkxODE2
-LC00NTg5ODIxNzldfQ==
+eyJoaXN0b3J5IjpbNjExMTk4NTQxLC0xNzQ0MzYwNDI4LC02NT
+g3ODMzNjAsLTE4MjIzNDA1ODUsLTM5NzQzNDY2OSwtMTY2OTQz
+NjY4OSwtNDM3MDQ4NjY0LDExNTExMTkzNDAsNzk4NjIyMDQxLC
+0xOTI1MjIxMDkxLC0xNDIzNzk0MTQ0LDE2NjYzNTY2NzYsLTIx
+MTg1NDkwNjgsMTc5ODU3MzQ1OCw5ODY5NTE1NCwtNjk3ODM3OD
+UyLC0xMzgyNzc0OTQ4LC04MzgyNTY2MzYsMjA5MDQ5MTgxNiwt
+NDU4OTgyMTc5XX0=
 -->
