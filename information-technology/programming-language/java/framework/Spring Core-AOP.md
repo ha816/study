@@ -40,11 +40,7 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 | Around | 조인 포인트 전후에 실행된다|
 
 
-## P
-
-
-
-## dj
+## Spring AOP 설정
 
 스프링의 aop 설정 네임스페이스를 사용해서 빈이 액스펙트라고 선언 
 ```
@@ -63,10 +59,23 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 
 
+## Pointcut 표현
+
+## 활용되는 AOP 기능
+
+### 캐싱
+
+### 비동기 처리
+
+### 트랜잭션 관리
+
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMTM1MDcxMiwxMDg4OTEwMDU3LC0zNz
-M1MTExMTksLTE2NjQ4MTA0NTEsLTE5OTMyMzg5OTEsLTg1MzI0
-NzAxMywtNjg5NjgyMzE5XX0=
+eyJoaXN0b3J5IjpbLTEyNDg1MTYzODYsMTA4ODkxMDA1NywtMz
+czNTExMTE5LC0xNjY0ODEwNDUxLC0xOTkzMjM4OTkxLC04NTMy
+NDcwMTMsLTY4OTY4MjMxOV19
 -->
