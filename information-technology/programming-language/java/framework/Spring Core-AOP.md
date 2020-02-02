@@ -45,16 +45,14 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 
 ## AOP 구현
 
-
-
-
-스프링의 aop 설정 네임스페이스를 사용해서 빈이 액스펙트라고 선언 
+### XML 기반 설정
+aop 설정 네임스페이스를 사용해서 빈이 액스펙트라고 선언 
 ```
 <aop:aspect>
 	<aop:pointcut id="embark" expression = "execution(* *.embarkOnQuest(..))" // 포인트컷 정의
 ```
 
-embark라는 이름의 포인트 컷을 정의, 어드바이스가 적용될 위치를 expression 어트리뷰트에서 표현; .embarkOnQuest(..)는 AspectJ의 포인트커트 표현식언어
+embark라는 이름의 포인트 컷을 정의, 어드바이스가 적용될 위치를 expression 어트리뷰트에서 표현; .embarkOnQuest(..)는 AspectJ의 포인트컷 표현식
 
 ```	
 <aop: before point-cut-ref="embark"
@@ -63,9 +61,9 @@ method = "singBeforeQuest"/> //before 어드바이스 정의
 <aop: after point-cut-ref="embark"
 method = "singAfterQuest"/> // after 어드바이스 정의 
 ```
+## Pointcut 표현식
 
 
-## Pointcut 표현
 
 ## 활용되는 AOP 기능
 
@@ -81,7 +79,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjA0Nzk0MjMsLTEyNDg1MTYzODYsMT
-A4ODkxMDA1NywtMzczNTExMTE5LC0xNjY0ODEwNDUxLC0xOTkz
-MjM4OTkxLC04NTMyNDcwMTMsLTY4OTY4MjMxOV19
+eyJoaXN0b3J5IjpbOTgyODY3NjUxLC0xMjQ4NTE2Mzg2LDEwOD
+g5MTAwNTcsLTM3MzUxMTExOSwtMTY2NDgxMDQ1MSwtMTk5MzIz
+ODk5MSwtODUzMjQ3MDEzLC02ODk2ODIzMTldfQ==
 -->
