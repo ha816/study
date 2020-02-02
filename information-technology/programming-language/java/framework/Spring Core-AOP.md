@@ -8,7 +8,7 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 1. 여러 컴포넌트에 같은 코드가 중복되어 나타난다. 만약 코드가 변경되어야 하는 경우 모든 컴포넌트를 변경해야 한다. 
 2. 컴포넌트가 본연의 기능과 관련 없는 기능 코드로 지저분해진다. 메소드의 보안이나 로깅 같은 기능을 위해 코드가 지저분해지는것을 피하도록 하자 
  
-## AOP 개념
+## AOP 용어
 
 * 애스펙트(Aspect)
 	* Aop의 단위가 되는 횡단 관심사를 말한다. 예를 들어 "로그를 출력한다", "예외를 처리한다", "트랜잭션을 관리한다" 와 같은 관심사가 애스펙트다.
@@ -23,7 +23,7 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 * 타깃(Target)
 	* AOP 처리에 의해 처리 흐름에 변화가 생긴 객체를 말한다. 
 
-### 애스펙트 사용하기
+## 애스펙트 사용하기
 
 스프링의 aop 설정 네임스페이스를 사용해서 빈이 액스펙트라고 선언 
 ```
@@ -45,6 +45,6 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTMyMzg5OTEsLTg1MzI0NzAxMywtNj
-g5NjgyMzE5XX0=
+eyJoaXN0b3J5IjpbLTE2NjQ4MTA0NTEsLTE5OTMyMzg5OTEsLT
+g1MzI0NzAxMywtNjg5NjgyMzE5XX0=
 -->
