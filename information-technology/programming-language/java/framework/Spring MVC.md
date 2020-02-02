@@ -120,6 +120,7 @@ Handler 인터셉터는 DispatcherServlet이 컨트롤러를 호출하기 전과
 	* 전체에서 사용하는 컴포넌트(Service, Repository, DateSource, ORM)등의 빈을 등록
 * DispatcherServlet용 애플리케이션 컨텍스트
 	* Servelet 마다 인스턴스가 존재
+	* MVC 프런트 컨트롤러의 구성 컴포넌트(HandlerMapping, HandlerAdapter, ViewResolver)와 컨트롤러를 빈으로 등록
 
 웹 애플리케이션용에는 전체에서 사용하는 컴포넌트(Serice, Repository, DateSource, ORM)등의 빈을 등록한다. 기본적으로 스프링 MVC용 컴포넌트는 여기 등록하지 않는다. 
 
@@ -143,6 +144,6 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzgzNDAxMTcsMTEyMTMzMzg3Miw4Nj
+eyJoaXN0b3J5IjpbLTE4NzI4MzE2NjMsMTEyMTMzMzg3Miw4Nj
 EyOTA5MiwtMzgwMzk5NDk3XX0=
 -->
