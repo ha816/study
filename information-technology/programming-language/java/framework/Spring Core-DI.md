@@ -104,7 +104,7 @@ PasswordEncoder passwordEncoder() { ... }
 빈 의존 관계가 정리되면, 마지막으로 빈 생성 후의 초기화 작업을 수행한다. (Post Construct)
 이 작업은 전처리, 초기화 처리, 후처리로 구분된다.
 
-이렇게 빈이 생성된 후에 이뤄지는 
+이렇게 빈이 생성된 후에 이뤄지는 초기화는 빈을 생성할때 해주는 초기화와 큰 차이가 있는데, 그것은 바로 의존성 주입이 끝난 필드 값을 초기화에 활용할 수 있다는 점이다. 
 
 
 
@@ -236,11 +236,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTI5MjU1NDIsLTM5NzQzNDY2OSwtMT
-Y2OTQzNjY4OSwtNDM3MDQ4NjY0LDExNTExMTkzNDAsNzk4NjIy
-MDQxLC0xOTI1MjIxMDkxLC0xNDIzNzk0MTQ0LDE2NjYzNTY2Nz
-YsLTIxMTg1NDkwNjgsMTc5ODU3MzQ1OCw5ODY5NTE1NCwtNjk3
-ODM3ODUyLC0xMzgyNzc0OTQ4LC04MzgyNTY2MzYsMjA5MDQ5MT
-gxNiwtNDU4OTgyMTc5LDE1NzQ5NjI4MjksNTIwMzI2NDc5LDE0
-MTcwMjU2MTBdfQ==
+eyJoaXN0b3J5IjpbLTgwOTUzODYzOSwtMzk3NDM0NjY5LC0xNj
+Y5NDM2Njg5LC00MzcwNDg2NjQsMTE1MTExOTM0MCw3OTg2MjIw
+NDEsLTE5MjUyMjEwOTEsLTE0MjM3OTQxNDQsMTY2NjM1NjY3Ni
+wtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1MTU0LC02OTc4
+Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNiwyMDkwNDkxOD
+E2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1MjAzMjY0NzksMTQx
+NzAyNTYxMF19
 -->
