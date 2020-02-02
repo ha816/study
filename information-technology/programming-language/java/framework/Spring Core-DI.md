@@ -97,10 +97,10 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 ```
 @ComponentScan(BasePackages = "com.example.demo", useDefaultFilters = false,
 includeFilters = { @Component.Filter(type = FilterType.REGEX, pattern = {".+DomainService$"}) },
-excludeFilters = {@Component.Filter(type = FilterType.ANNOTATION, pattern = { }
-
-
+excludeFilters = {@Component.Filter(type = FilterType.ANNOTATION, pattern = { Exclude.class }
 ```
+useDefaultFilters 태그는 기본적으로 true인데 
+
 
 
 ## Spring DI 
@@ -179,9 +179,9 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTE3MDY0OTIsLTQ1ODk4MjE3OSwxNT
-c0OTYyODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2
-NywtODgxMzQ5OTIzLC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxOD
-U4MzMyMjc1LDIwNjEwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3
-OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbMTM2NDY5NjcxNiwtNDU4OTgyMTc5LDE1Nz
+Q5NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3
+LC04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NT
+gzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5
+OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
 -->
