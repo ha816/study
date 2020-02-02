@@ -71,14 +71,12 @@ PasswordEncoder passwordEncoder() { ... }
 @Component @Scope("singleton")
 public class UserService {
 	@Autowired
-	PasswordEncoder passwordEncoder;  // prototype 인코더를 주입, Si
-	///
+	PasswordEncoder passwordEncoder;  // prototype 인코더를 주입
+	...
 }
 ```
 위와 같은 문제를 해결하는 가장 좋은 방법은 주입 받는게 아니라 필요할때 마다 DI 컨테이너에서 빈을 찾아오면 된다. 이때 DI 컨테이너와 관련된 코드를 남가지 않는 방법이 바로 Look Up injection이다. 
-이 기능은 @Lookup 애너테이션을 DI컨테이너의 룩업을 대행하고 싶은 메서드에 붙여주면 된다. 그러면 빈이 DI 컨테이너 등록되는 시점에 Look실제 코드가 @Lookup 애너테이션이 붙은 메서드 자리에 주입된다. 
-
-구체적으로 설명하자면, DI 컨테이너는 @Lookup을 붙인 메서드를 오버라이드한다. 따라서 private 이나 fianl을 사용하면 안되고 매개변수 역시 지정하면 안된다.
+이 기능은 @Lookup 애너테이션을 DI컨테이너의 룩업을 대행하고 싶은 메서드에 붙여주면 된다. 그러면 빈이 DI 컨테이너 등록되는 시점에 LookUp을 하는 실제 코드가 @Lookup 애너테이션이 붙은 메서드로 바뀐다. 구체적으로 설명하자면, DI 컨테이너는 @Lookup을 붙인 메서드를 오버라이드한다. 따라서 private 이나 fianl을 사용하면 안되고 매개변수 역시 지정하면 안된다.
 
 @Lookup 애너테이션에 value 속성에 빈의 이름을 지정할 수 있지만, 별도로 지정하지 않았다면 메서드의 반환 값 타입을 보고 룩업 대상 빈을 찾는다. 
 
@@ -218,7 +216,7 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMjU5Mjk3MSwxMTUxMTE5MzQwLDc5OD
+eyJoaXN0b3J5IjpbLTQzNzA0ODY2NCwxMTUxMTE5MzQwLDc5OD
 YyMjA0MSwtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2
 Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLT
 Y5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0
