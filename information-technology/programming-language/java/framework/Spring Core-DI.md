@@ -165,9 +165,9 @@ DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 
 
 DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤 것을 써야할지 알 수 없다. 이럴 경우 NoUniqueBeanDefinitionException이 발생한다. 이럴때 `@Qualifier` 애너테이션으로 추가하려는 빈 이름을 지정하면 원하는 빈을 설정할 수 있다. 
 
+### 이름 오토와이어링(Autowiring by Name)
 
-
-### Autowiring by Name
+한편 빈의 이름이 
 
 
 
@@ -193,10 +193,10 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODI3NzQ5NDgsLTgzODI1NjYzNiwyMD
-kwNDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1MjAzMjY0
-NzksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTkyMywtNj
-U2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1ODMzMjI3NSwyMDYxMDMx
-OTAyLDE5MTg4NzI4NTgsLTIzMzYxNzk5NiwxMDM4MTA5MTE2LC
-0xNzIwNDI2MjMwXX0=
+eyJoaXN0b3J5IjpbLTY5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtOD
+M4MjU2NjM2LDIwOTA0OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYy
+ODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2NywtOD
+gxMzQ5OTIzLC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxODU4MzMy
+Mjc1LDIwNjEwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3OTk2LD
+EwMzgxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
 -->
