@@ -63,15 +63,20 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 ```
 ## Pointcut 표현식
 
-
+### Named Pointcut
 
 ## 활용되는 AOP 기능
+
+AOP는 스프링 프레임워크의 다양한 기능에서 활용되고 있다. 그 중 대표적인 몇 가지가 설명한다. 
+
+### 트랜잭션 관리
+
 
 ### 캐싱
 
 ### 비동기 처리
 
-### 트랜잭션 관리
+
 
 
 
@@ -79,7 +84,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyODY3NjUxLC0xMjQ4NTE2Mzg2LDEwOD
+eyJoaXN0b3J5IjpbODM2ODk3MDczLC0xMjQ4NTE2Mzg2LDEwOD
 g5MTAwNTcsLTM3MzUxMTExOSwtMTY2NDgxMDQ1MSwtMTk5MzIz
 ODk5MSwtODUzMjQ3MDEzLC02ODk2ODIzMTldfQ==
 -->
