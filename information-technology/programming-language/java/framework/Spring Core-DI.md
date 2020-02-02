@@ -61,6 +61,9 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 ### 다른 스코프의 빈 주입(Look Up Injection)
 
 만약 하나의 빈이 또 다른 빈에 의존하고 있다면 DI 컨테이너에 의해 주입된 빈은 원래 자기 자신의 스코프와 상관 없이 주입 받는 빈의 스코프를 따르게 된다. 
+```
+
+```
 
 
 
@@ -191,11 +194,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NDU0NzIwNywtMTkyNTIyMTA5MSwtMT
-QyMzc5NDE0NCwxNjY2MzU2Njc2LC0yMTE4NTQ5MDY4LDE3OTg1
-NzM0NTgsOTg2OTUxNTQsLTY5NzgzNzg1MiwtMTM4Mjc3NDk0OC
-wtODM4MjU2NjM2LDIwOTA0OTE4MTYsLTQ1ODk4MjE3OSwxNTc0
-OTYyODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2Ny
-wtODgxMzQ5OTIzLC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxODU4
-MzMyMjc1XX0=
+eyJoaXN0b3J5IjpbNzk4NjIyMDQxLC0xOTI1MjIxMDkxLC0xND
+IzNzk0MTQ0LDE2NjYzNTY2NzYsLTIxMTg1NDkwNjgsMTc5ODU3
+MzQ1OCw5ODY5NTE1NCwtNjk3ODM3ODUyLC0xMzgyNzc0OTQ4LC
+04MzgyNTY2MzYsMjA5MDQ5MTgxNiwtNDU4OTgyMTc5LDE1NzQ5
+NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3LC
+04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NTgz
+MzIyNzVdfQ==
 -->
