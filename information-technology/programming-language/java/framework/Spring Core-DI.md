@@ -89,7 +89,7 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 
 추가로 다른 컴포넌트를 포함하고 싶다면 필터를 적용하는 방법으로 스캔 범위를 커스터마이징할 수 있다. 스프링에서는 아래와 같은 필터를 제공한다.
 
-* 애너테이션 필터
+* 애너테이션 필터(ANNOTATION)
 * 할당 가능 타입을 이용 필터(ASSIGNABLE_TYPE)
 * 정규 표현식 필터(REGEX)
 *  ASPECTJ 패턴을 이용한 필터(ASPECTJ)
@@ -97,10 +97,9 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 ```
 @ComponentScan(BasePackages = "com.example.demo", useDefaultFilters = false,
 includeFilters = { @Component.Filter(type = FilterType.REGEX, pattern = {".+DomainService$"}) },
-excludeFilters = {@Component.Filter(type = FilterType.ANNOTATION, pattern = { Exclude.class }
+excludeFilters = { @Component.Filter(type = FilterType.ANNOTATION, pattern = { Exclude.class }
 ```
-한 가지 주위할 점은 필터를 적용해서 컴포넌트를 스캔할때는 기존 애너테이션이 붙은 스캔 대상도 포함된다. 만약
-
+한 가지 주위할 점은 필터를 적용해서 컴포넌트를 스캔할때는 기존 애너테이션이 붙은 스캔 대상도 포함된다. 만약 기본 설정에서 애너테이션이 붙은 스캔 대상을 무시하고, 순수하게 필터를 적용해서 탐색되는 컴포넌트만 사용하고 싶다면, userDefaultFilters를 false로 설정하자.
 
 
 ## Spring DI 
@@ -179,9 +178,9 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMTY1Mjk2MSwtNDU4OTgyMTc5LDE1Nz
-Q5NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3
-LC04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NT
-gzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5
-OTYsMTAzODEwOTExNiwtMTcyMDQyNjIzMF19
+eyJoaXN0b3J5IjpbLTE3MDI4NDEwMjUsLTQ1ODk4MjE3OSwxNT
+c0OTYyODI5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2
+NywtODgxMzQ5OTIzLC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxOD
+U4MzMyMjc1LDIwNjEwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3
+OTk2LDEwMzgxMDkxMTYsLTE3MjA0MjYyMzBdfQ==
 -->
