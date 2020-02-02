@@ -16,11 +16,10 @@ DevOps
 
 ## Containerization(운영체제 가상화; operating system virtualization)
 
-Containerization 컨테이너화 기술은 
-컨테이너는 운영체제 위에서 폐쇠적인 사적 공간을 제공한다. 중요한 점은 컨테이너를 사용하면 운영체제의 커널이 독립적인 가상 공간을 제공한다는 점이다. 이런 가상 공간을 컨테이너 또는 가상엔진이라 부른다. 
+컨테이너화(Containerization) 기술은 운영체제의 입장에서 본다면 사적인 가상공간을 제공하는 것이다. 이런 가상 공간을 컨테이너 또는 가상엔진이라 부른다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NDY4MDE0Nyw3NDE0MTI0NzNdfQ==
+eyJoaXN0b3J5IjpbMjA3ODkzMjc0NCw3NDE0MTI0NzNdfQ==
 -->
