@@ -23,6 +23,17 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 * 타깃(Target)
 	* AOP 처리에 의해 처리 흐름에 변화가 생긴 객체를 말한다. 
 
+```
+Class X
+methodX() // Join Point  --- Pointcut -----> Advice1(공통처리
+methodY
+
+Class Y
+methodX
+
+```
+
+
 ## 애스펙트 사용하기
 
 스프링의 aop 설정 네임스페이스를 사용해서 빈이 액스펙트라고 선언 
@@ -45,6 +56,6 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjQ4MTA0NTEsLTE5OTMyMzg5OTEsLT
-g1MzI0NzAxMywtNjg5NjgyMzE5XX0=
+eyJoaXN0b3J5IjpbMTk3NzMyOTU3MiwtMTY2NDgxMDQ1MSwtMT
+k5MzIzODk5MSwtODUzMjQ3MDEzLC02ODk2ODIzMTldfQ==
 -->
