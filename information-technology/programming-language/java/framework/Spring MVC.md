@@ -143,7 +143,8 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 |사용 단계 | 애플리케이션 컨텍스트에서 빈을 사용하는 단계|
 |파기 단계 | 애플리케이션 컨텍스트를 삭제하는 단계로 서블릿 컨테이너가 중지할때 수행 |
 
-1. 가장 먼저 서블릿 컨테이너에서 contextInitialized
+1. 서블릿 컨테이너에서 contextInitialized()로 Context Loader Listener를 호출
+2. Context
 
 
 ``서블릿컨테이너 웹애플리케이션용 DispatcherServlet WebApplication Context
@@ -152,7 +153,7 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMTY1MDg3MCwxOTg1OTA0MjM2LDEzMD
-AzMDk3MDAsMTEyMTMzMzg3Miw4NjEyOTA5MiwtMzgwMzk5NDk3
-XX0=
+eyJoaXN0b3J5IjpbNDc3NjYxOTgzLDE5ODU5MDQyMzYsMTMwMD
+MwOTcwMCwxMTIxMzMzODcyLDg2MTI5MDkyLC0zODAzOTk0OTdd
+fQ==
 -->
