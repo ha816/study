@@ -100,7 +100,9 @@ Bean Factory Post Processor(BFPP)를 사용해 빈 정보를 보완하고 빈 �
 그리고 마지막으로 초기화 작업(Post Construct)를 수행한다. 초기화 작업에는 다양한 설정 방식이 있는데 아래와 같으며 처리 순서도 같다.
 
 * 애터네이션 기반 설정(@PostConstruct)
-* 인터페이스 기반 설정(@InitializingBean)
+* 인터페이스 기반 설정(InitializingBean 인터페이스 내의 afterPropertiesSet 메서드 구현)
+* 자바 기반 설정(@Bean에 initMethod 지정한 메서드)
+* XML 기반 설정(<bean> 요소에 init-method 속성을 지정한 메서드)
 
 
 
@@ -234,11 +236,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjExMTk4NTQxLC0xNzQ0MzYwNDI4LC02NT
-g3ODMzNjAsLTE4MjIzNDA1ODUsLTM5NzQzNDY2OSwtMTY2OTQz
-NjY4OSwtNDM3MDQ4NjY0LDExNTExMTkzNDAsNzk4NjIyMDQxLC
-0xOTI1MjIxMDkxLC0xNDIzNzk0MTQ0LDE2NjYzNTY2NzYsLTIx
-MTg1NDkwNjgsMTc5ODU3MzQ1OCw5ODY5NTE1NCwtNjk3ODM3OD
-UyLC0xMzgyNzc0OTQ4LC04MzgyNTY2MzYsMjA5MDQ5MTgxNiwt
-NDU4OTgyMTc5XX0=
+eyJoaXN0b3J5IjpbLTQ4ODQzNTY2MiwtMTc0NDM2MDQyOCwtNj
+U4NzgzMzYwLC0xODIyMzQwNTg1LC0zOTc0MzQ2NjksLTE2Njk0
+MzY2ODksLTQzNzA0ODY2NCwxMTUxMTE5MzQwLDc5ODYyMjA0MS
+wtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2Njc2LC0y
+MTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLTY5NzgzNz
+g1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0OTE4MTYs
+LTQ1ODk4MjE3OV19
 -->
