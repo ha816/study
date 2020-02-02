@@ -60,7 +60,8 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 
 ### 다른 스코프의 빈 주입(Look Up Injection)
 
- DI 컨테이너에 의해 주입된 빈은 원래 자신의 스코프와 상관없이 주입된 빈의 스코프를 따르게 된다.  예를 들어, prototype 스코프의 빈을 singleton 스코프 빈에 주입한다고 생각해보자. 주입된 prototype 빈은 자신을 주입 받은 singleton 스코프의 빈이 살아 있는 한 DI 컨테이너에서 새로 만들 필요가 없기 때문에 결과적으로 singleton과 같은 수명을 살게 된다. 
+ DI 컨테이너에 의해 주입된 빈은 원래 자신의 스코프와 상관없이 주입받은 빈의 스코프를 따르게 된다.  예를 들어, prototype 스코프의 빈을 singleton 스코프 빈에 주입한다고 생각해보자. 주입된 prototype 빈은 무시되고 주입받은 singleton 스코프의 빈으로 취급된다. 
+ singleton 스코프의 빈이 살아 있는 한 DI 컨테이너에서 새로 만들 필요가 없기 때문에 결과적으로 singleton과 같은 수명을 살게 된다. 
 ```
 @Bean @Scope("prototype") // singleton으로 쓰이면 안됨
 PasswordEncoder passwordEncoder() { ... }
@@ -220,7 +221,7 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTU4ODkyNDUsMTE1MTExOTM0MCw3OT
+eyJoaXN0b3J5IjpbLTE3NTIzODczMTYsMTE1MTExOTM0MCw3OT
 g2MjIwNDEsLTE5MjUyMjEwOTEsLTE0MjM3OTQxNDQsMTY2NjM1
 NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1MTU0LC
 02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNiwyMDkw
