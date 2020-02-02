@@ -74,7 +74,9 @@ AOP는 스프링 프레임워크의 다양한 기능에서 활용되고 있다. 
 트랜잭션 관리가 필요한 메서드에 @Transactional 애너테이션을 지정하면 복잡한 트랜잭션 관리를 스프링 프레임워크가 대신해준다. 
 메서드가 정상적으로 종료한 것이 확인 되면 트랜잭션을 커밋하고, 예외가 발생할 경우, 트랜잭션을 롤백한다. 
 
-### 캐싱
+### 캐싱(@Cacheable)
+
+스프링 프레임 워크는 간단한 캐싱 기능도 가지고 있다. 캐싱을 활성화하고 메서드에 @Cacheable 애너테이션을 지정하면, 메서드의 매개변수 등을 키로 사용해서 메서드의 실행 결과를 캐시로 관리할 수 있다. 즉 캐시에 키가 등록되어 있지 않다면 메서드 실행 후
 
 ### 비동기 처리
 
@@ -86,8 +88,8 @@ AOP는 스프링 프레임워크의 다양한 기능에서 활용되고 있다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NzU3MjQyNiwxMDg5MDQwMjA0LDgzNj
-g5NzA3MywtMTI0ODUxNjM4NiwxMDg4OTEwMDU3LC0zNzM1MTEx
-MTksLTE2NjQ4MTA0NTEsLTE5OTMyMzg5OTEsLTg1MzI0NzAxMy
-wtNjg5NjgyMzE5XX0=
+eyJoaXN0b3J5IjpbLTEzNTk5MzIwMTAsMTA4OTA0MDIwNCw4Mz
+Y4OTcwNzMsLTEyNDg1MTYzODYsMTA4ODkxMDA1NywtMzczNTEx
+MTE5LC0xNjY0ODEwNDUxLC0xOTkzMjM4OTkxLC04NTMyNDcwMT
+MsLTY4OTY4MjMxOV19
 -->
