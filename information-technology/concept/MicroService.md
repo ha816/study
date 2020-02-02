@@ -14,7 +14,11 @@ DevOps
 
 마이크로 서비스의 관점에서 서비스를 컨테이너화해서 배포할 수 있다면 이상적이다. 컨테이너화(containerization)을 하면 하부의 인프라스트럭처를 포함하므로 더 자기 완비적(self-contained)하고 자율적이게 된다. 따라서 마이크로 서비스가 특정 클라우드 환경에 종속되지 않고 중립성을 유지할 수 있다. 
 
+## Container
+
+컨테이너는 기존 통념을 깨는 혁신적 기
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQxNDEyNDczXX0=
+eyJoaXN0b3J5IjpbLTE3NzQyMTkzNDksNzQxNDEyNDczXX0=
 -->
