@@ -57,8 +57,7 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 <!--XML 기반-->
 <bean id="userService" class="com.example.demo.UserServiceImpl" scope="prototype">
 ```
-
-### 다른 스코프의 빈 주입(Look Up Injection)
+#### 다른 스코프의 빈 주입(Look Up Injection)
 
  DI 컨테이너에 의해 주입된 빈은 원래 자신의 스코프와 상관없이 주입받은 빈의 스코프를 따르게 된다.  예를 들어, prototype 스코프의 빈을 singleton 스코프 빈에 주입한다고 생각해보자. 주입된 prototype 빈은 무시되고 주입받은 singleton 스코프의 빈으로 취급된다. 
  singleton 스코프의 빈이 살아 있는 한 DI 컨테이너에서 새로 만들 필요가 없기 때문에 결과적으로 singleton과 같은 수명을 살게 된다. 
@@ -66,7 +65,6 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 @Bean @Scope("prototype") // singleton으로 쓰이면 안됨
 PasswordEncoder passwordEncoder() { ... }
 ```
-
 ```
 @Component @Scope("singleton")
 public class UserService {
@@ -87,13 +85,10 @@ PasswordEncoder passwordEncoder() { ... }
 ```
 <bean id="passwordEncoder" class="com.example.demo" scope="prototype" />
 <bean id="userService" class="com.example.demo.UserServiceImpl">
-	<lookup-me>
+	<lookup-method name="passwordEncoder" bean="passwordEncoder">
 </bean>
 ```
-
-
-
-
+###
 
 ## ApplicationContext
 
@@ -220,11 +215,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkxMTEwNTA1LC00MzcwNDg2NjQsMTE1MT
-ExOTM0MCw3OTg2MjIwNDEsLTE5MjUyMjEwOTEsLTE0MjM3OTQx
-NDQsMTY2NjM1NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LD
-k4Njk1MTU0LC02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1
-NjYzNiwyMDkwNDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOS
-w1MjAzMjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0
-OTkyM119
+eyJoaXN0b3J5IjpbLTE2MzA4NjIzOTEsLTQzNzA0ODY2NCwxMT
+UxMTE5MzQwLDc5ODYyMjA0MSwtMTkyNTIyMTA5MSwtMTQyMzc5
+NDE0NCwxNjY2MzU2Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NT
+gsOTg2OTUxNTQsLTY5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4
+MjU2NjM2LDIwOTA0OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYyOD
+I5LDUyMDMyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgx
+MzQ5OTIzXX0=
 -->
