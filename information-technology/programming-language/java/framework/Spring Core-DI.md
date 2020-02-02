@@ -160,6 +160,8 @@ DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 
 
 일명 타입으로 오토와이어링 하기. 세터 인젝션, 컨스트럭터 인젝션, 필드 인젝션 모두에서 활용가능하다. 
 
+기본적으로 의존성 주입이 반드시 성공한다고 가정하기 때문에, 주입할 타입에 해당하는 빈을 DI 컨테이너에서 찾지 못한다면 NoSuchBeanDefinitionException 예외가 발생한다.
+
 
 ### Autowiring by Name
 
@@ -187,7 +189,7 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MTIyOTU0OCwtNDU4OTgyMTc5LDE1Nz
+eyJoaXN0b3J5IjpbLTU4MDgzODAxNCwtNDU4OTgyMTc5LDE1Nz
 Q5NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3
 LC04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NT
 gzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5
