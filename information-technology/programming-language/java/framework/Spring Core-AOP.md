@@ -25,11 +25,11 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 
 ```
 Class X
-methodX() // Join Point  --- Pointcut -----> Advice1(공통처리
+methodX() // Join Point --- Pointcut 1 --> Advice1(공통처리
 methodY
 
 Class Y
-methodX
+methodY() // Join Point --- Pointcut 2
 
 ```
 
@@ -56,6 +56,6 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NzMyOTU3MiwtMTY2NDgxMDQ1MSwtMT
+eyJoaXN0b3J5IjpbLTM3MzUxMTExOSwtMTY2NDgxMDQ1MSwtMT
 k5MzIzODk5MSwtODUzMjQ3MDEzLC02ODk2ODIzMTldfQ==
 -->
