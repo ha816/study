@@ -42,9 +42,9 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 | Around | 조인 포인트 전후에 실행된다|
 
 
-## Spring AOP 구현
+## AOP 구현
 
-AspectJ는 개별 현장에서 폭 넓게 사용되어 왔다. AspectJ는 애스펙트와 어드바이스를 정의하기 위한 애너테이션이나 포인트컷 표현 언어, 위빙 메커니즘 등을 제공하는 역할을 한다. 
+스프링 AOP는 개별 현장에서 폭 넓게 사용되어온 AspectJ라는 AOP 프레임워크ㅏ. AspectJ는 애스펙트와 어드바이스를 정의하기 위한 애너테이션이나 포인트컷 표현 언어, 위빙 메커니즘 등을 제공하는 역할을 한다. 
 
 
 스프링의 aop 설정 네임스페이스를 사용해서 빈이 액스펙트라고 선언 
@@ -80,7 +80,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NjUwOTQ3MywtMTI0ODUxNjM4NiwxMD
+eyJoaXN0b3J5IjpbLTIxNzQ3NjQ5MCwtMTI0ODUxNjM4NiwxMD
 g4OTEwMDU3LC0zNzM1MTExMTksLTE2NjQ4MTA0NTEsLTE5OTMy
 Mzg5OTEsLTg1MzI0NzAxMywtNjg5NjgyMzE5XX0=
 -->
