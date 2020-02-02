@@ -143,10 +143,11 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 |사용 단계 | 애플리케이션 컨텍스트에서 빈을 사용하는 단계|
 |파기 단계 | 애플리케이션 컨텍스트를 삭제하는 단계로 서블릿 컨테이너가 중지할때 수행 |
 
-
+구체적으로 아래 시퀀스로 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NTkwNDIzNiwxMzAwMzA5NzAwLDExMj
-EzMzM4NzIsODYxMjkwOTIsLTM4MDM5OTQ5N119
+eyJoaXN0b3J5IjpbLTczNzkwNjcwNywxOTg1OTA0MjM2LDEzMD
+AzMDk3MDAsMTEyMTMzMzg3Miw4NjEyOTA5MiwtMzgwMzk5NDk3
+XX0=
 -->
