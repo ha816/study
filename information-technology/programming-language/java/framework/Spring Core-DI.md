@@ -150,8 +150,7 @@ public void setUserRepository(UserRepository repository){
 
 ## AutoWiring
 
-오토 와이어링(Auto Wiring)은 DI 컨테이너의 빈을 자동으로 주입하는 방식이다. 오토 와이어링을 사용하는 방식에는 타입을 이용하는 방식(autowiring by type)과 이름을 이용하는 방식(autowiring by name) 두가지가 있다. 
-
+**오토 와이어링(Auto Wiring)** 은 DI 컨테이너의 빈을 자동으로 주입하는 방식이다. 
 DI 컨테이너가 자동으로 의존성 주입을 해주는 방법이다. 빈 컨테이너가 제공하는 빈을 특정 클래스에서 사용하고 싶어 의존성 주입을 자동으로 받을때 사용하는 방법이다. @Autowired을 세터 메서드, 생성자, 필드에 붙이면 빈 컨테이너로부터 필요한 객체를 주입받을 수 있다. 
 
 클래스에 외부에서 접근 가능한 생성자나 세터 메서드가 없더라도 필드에 @Autowired를 붙일 수 있는데 심지어 private 필드일지라도 적절한 인스턴스를 오토 와이어 한다. DI 컨테이너가 이 클래스가 생성된 후에 리플렉션(reflection)을 이용하여 이 필드에 인스턴스를 오토 와이어 한다.
@@ -186,7 +185,7 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MzQ0MzQ1NCw5ODY5NTE1NCwtNjk3OD
+eyJoaXN0b3J5IjpbMTc5ODU3MzQ1OCw5ODY5NTE1NCwtNjk3OD
 M3ODUyLC0xMzgyNzc0OTQ4LC04MzgyNTY2MzYsMjA5MDQ5MTgx
 NiwtNDU4OTgyMTc5LDE1NzQ5NjI4MjksNTIwMzI2NDc5LDE0MT
 cwMjU2MTAsNzAwNTE0NzY3LC04ODEzNDk5MjMsLTY1Njg2NDU4
