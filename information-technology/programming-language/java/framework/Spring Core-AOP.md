@@ -1,4 +1,4 @@
-# AOP(Aspect oriented programming)
+# AOP(Aspect Oriented Programming)
 
 시스템은 보통 특정 기능을 책임지는 여러 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다
 
@@ -47,5 +47,5 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NjI5ODY0MSwtNjg5NjgyMzE5XX0=
+eyJoaXN0b3J5IjpbLTE0MDM5MjI3OTksLTY4OTY4MjMxOV19
 -->
