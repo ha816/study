@@ -113,10 +113,12 @@ Handler 인터셉터는 DispatcherServlet이 컨트롤러를 호출하기 전과
 
 ## 애플리케이션 컨텍스트 구성 
 
-스프링 MVC는 두 가지 애플리케이션 컨텍스트를 사용한다
+**스프링 MVC는 두 가지 애플리케이션 컨텍스트를 사용한다.**
 
-* 앱 애플리케이션용 애플리케이션 컨텍스트(Root 애플리케이션 컨텍스트)
+* 웹 애플리케이션용 애플리케이션 컨텍스트(Root 애플리케이션 컨텍스트)
+	* 전체를 통틀어 하나가 존재
 * DispatcherServlet용 애플리케이션 컨텍스트
+	* Se
 
 앱 애플리케이션용은 전체를 통틀어 하나, DispatcherServlet용은 Servlet마다 인스턴스가 생성 된다. 
 
@@ -133,16 +135,15 @@ DispatcherServlet용은 스프링 MVC 프런트 컨트롤러의 구성 컴포넌
 Dispatcher Servlet		Dispatcher Servlet
 (Rest API용)				(UI용)
 ```
-
 DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서로간의 빈은 참조할 수 없다. 
 
-
-
-
+초기화 단계 : 애플리케이션 컨텍스트를 생성하는 단계로 서블릿 컨테이너를 기동할때 수행한다.
+사용 단계 : 애플리케이션 컨텍스트에서 빈을 사용하는 단계.
+파기 단계 : 애플리케이션 컨텍스트를 삭제하는 단계로 서블릿 컨테이너가 중지할때 수행한다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4MjY0NjM2LDExMjEzMzM4NzIsODYxMj
-kwOTIsLTM4MDM5OTQ5N119
+eyJoaXN0b3J5IjpbLTExMjkyOTg1NzEsMTEyMTMzMzg3Miw4Nj
+EyOTA5MiwtMzgwMzk5NDk3XX0=
 -->
