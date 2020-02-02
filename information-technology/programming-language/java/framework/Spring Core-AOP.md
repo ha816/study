@@ -15,9 +15,10 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 * 어드바이스(Advice)
 	* 특정 조인 포인트에서 실행되는 코드로, 횡당 관심사를 실제로 구현해 처리하는 부분이다.
 * 포인트 컷(Pointcut)
-	* 수 많은 조인 포인트 중에 실제로 어드바이스를 적용할 곳을 선별하기위한 표현식. 
+	* 수 많은 조인 포인트 중에 실제로 어드바이스를 적용할 곳을 선별하기 위한 표현식. 
 * 조인 포인트(Join Point)
-	* 횡단 관심사가 실행될 지점이나 시점(메서드 실행이나 예외 발생 등)을 말한다. 조인 포인트는 AOP를 구현한 라이브러리에 따라 사양이 다를 수 있는데 스프링에서는 메서드 단위로 조인 포인트를 잡는다.
+	* 어드바이스가 실행될 지점이나 시점(메서드 실행이나 예외 발생 등)을 말한다. 
+	* 조인 포인트는 AOP를 구현한 라이브러리에 따라 사양이 다를 수 있는데 스프링에서는 메서드 단위로 조인 포인트를 잡는다.
 
 * 위빙(Weaving)
 	* 애플리케이션 코드의 적절한 지점에 애스펙트를 적용하는 것을 말한다. AOP 구현 라이브러리에 따라 시점이 다를 수 있는데, 컴파일 시점이나 클래스 로딩 시점, 실행 시점등 다양한 위빙 시점이 있다. 스프링은 기본적으로 실행 시점에 위빙한다.
@@ -49,7 +50,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MTM0NTI1NiwtMzczNTExMTE5LC0xNj
+eyJoaXN0b3J5IjpbMTA4ODkxMDA1NywtMzczNTExMTE5LC0xNj
 Y0ODEwNDUxLC0xOTkzMjM4OTkxLC04NTMyNDcwMTMsLTY4OTY4
 MjMxOV19
 -->
