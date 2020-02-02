@@ -80,6 +80,13 @@ AOP는 스프링 프레임워크의 다양한 기능에서 활용되고 있다. 
 
 ### 비동기 처리(@Async)
 AOP는 비동기 처리에도 활용할 수 있다. 비동기 처리를 하고 싶은 메서드에 @Async를 붙여주고 반환값으로 CompetableFuture타입이나 DeferredResult 타입의 값을 반환하게 만들면 된다. 해당 메서드는 AOP 방식의 별도의 스레드에서 실행될 수 있다. 
+```
+@Async
+public CompletableFuture<Result> calc() {
+	Result result = doSomething()
+	return CompletableFuture.complet
+}
+```
 
 
 
@@ -89,8 +96,8 @@ AOP는 비동기 처리에도 활용할 수 있다. 비동기 처리를 하고 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTExMTQ1MzQsMTA4OTA0MDIwNCw4Mz
-Y4OTcwNzMsLTEyNDg1MTYzODYsMTA4ODkxMDA1NywtMzczNTEx
-MTE5LC0xNjY0ODEwNDUxLC0xOTkzMjM4OTkxLC04NTMyNDcwMT
-MsLTY4OTY4MjMxOV19
+eyJoaXN0b3J5IjpbMTQ3MTk1MjI4MywtMTk5MTExNDUzNCwxMD
+g5MDQwMjA0LDgzNjg5NzA3MywtMTI0ODUxNjM4NiwxMDg4OTEw
+MDU3LC0zNzM1MTExMTksLTE2NjQ4MTA0NTEsLTE5OTMyMzg5OT
+EsLTg1MzI0NzAxMywtNjg5NjgyMzE5XX0=
 -->
