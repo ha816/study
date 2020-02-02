@@ -13,7 +13,7 @@ Spring MVC는 자바 기반의 웹 어플리케이션을 개발할때 사용하�
 
 ## Spring MVC Architecture
 
-스프링 MVC는 프론트 컨트롤러 패턴(front controller)라는 아키텍처를 채택하고 있다. 프런트 컨트롤러 패턴은 클라이언트 요청을 프런트 컨트롤러 컴포넌트가 받아 요청 내용에 따라 수행하는 핸들러를 선택하는 아키텍처다. 
+사실 **Spring MVC는 프론트 컨트롤러 패턴(front controller)라는 아키텍처를 채택하고 있다.** 프런트 컨트롤러 패턴은 클라이언트 요청을 프런트 컨트롤러 컴포넌트가 받아 요청 내용에 따라 수행하는 핸들러를 선택하는 아키텍처다. 
 
 ![enter image description here](https://www.tutorialspoint.com/design_pattern/images/frontcontroller_pattern_uml_diagram.jpg)
 
@@ -150,5 +150,6 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxMjkwOTIsLTM4MDM5OTQ5N119
+eyJoaXN0b3J5IjpbNDAyOTYzODMyLDg2MTI5MDkyLC0zODAzOT
+k0OTddfQ==
 -->
