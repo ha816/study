@@ -47,21 +47,8 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 |--|--|
 |Singleton  | DI 컨테이너 기동시 빈 인스턴스가 하나만 생성되고, 그 인스턴스를 공유하는 방식. 특별한 설정이 없을때는 Singleton을 사용|
 |Prototype | DI 컨테이너에 빈을 요청할때마다 새로운 빈 인스턴스가 생성된다. 멀티 쓰레드 안전하고 싶다면 Prototype을 사용해야 한다.|
-
 |Request | HTTP 요청이 들어올때마다 새로운 인스턴스가 만들어진다. 웹어플리케이션을 만들때만 사용 가능하다.|
-|Session | HTTP 세션이 만들어질때 마다 새로운 빈 인스웹어플리케이션을 만들때만 사용 가능하다.|
-
-
-
-
-
-기본적으로 스프링 빈은 애플리케이션 컨텍스트 초기화될 때 생성되는데, 이를 eager Instantiation이라고 한다. 그리고 특별한 설정이 없으면 스프링 빈 인스턴스는 하나만 생성되며, 이를 싱글턴 스코프라고 한다. 
-
-DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴스에서 이용한다는 것을 고려해야 하기 때문에, 스레드 세이프 해야 한다. 
-
-싱글턴 스코프를 사용하느게 아니라 새 인스턴스를 받고 싶다면 prototype을 사용하면 된다. 그러면 DI 컨테이너에서 getBean 메서드를 호출할때마다 새 인스턴스가 반환된다. 이를 프로토타입 빈 스코프(prototype scope)라고 한다.
-
-특정 HTTP 요청이 살아있는 동반 빈이 살아있는 리퀘스트(request scope), HTTP의 세션이 존재하는 동안만 존재하는 세션(session scope) 같은 다른 스코프도 존재한다. 
+|Session | HTTP 세션이 만들어질때 마다 새로운 빈 인스턴스가 만들어진다. 웹어플리케이션을 만들때만 사용 가능하다.|
 
 ### Bean Life Cycle
 
@@ -191,7 +178,7 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTA0NDc0MzEsLTE0MjM3OTQxNDQsMT
+eyJoaXN0b3J5IjpbLTE1NTkwMjE1MTYsLTE0MjM3OTQxNDQsMT
 Y2NjM1NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1
 MTU0LC02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNi
 wyMDkwNDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1MjAz
