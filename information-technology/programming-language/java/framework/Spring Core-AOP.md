@@ -1,6 +1,8 @@
 # AOP(Aspect Oriented Programming)
 
-소프트웨어 개발시 규모가 커지다보면 본래의 비즈니스 로직과는 크게 관
+소프트웨어 개발시 규모가 커지다보면 본래의 비즈니스 로직과는 크게 관련 없는 처리 내용이 소스 코드 여기저기에 산재하기 쉽다.  
+이렇게 구현하고자하는 비즈니스 로직과는 다소 거리가 있지만 여러 모듈에 걸쳐 공통적이고 반복적으로 사용되는 작업을 횡단 관심사(Cross-Cutting Concern)라고 한다.
+
 
 
 
@@ -51,5 +53,5 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4ODQyMzQ3MCwtNjg5NjgyMzE5XX0=
+eyJoaXN0b3J5IjpbLTk2MDM1MDgwMSwtNjg5NjgyMzE5XX0=
 -->
