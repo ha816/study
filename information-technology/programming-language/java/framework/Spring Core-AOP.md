@@ -76,9 +76,10 @@ AOP는 스프링 프레임워크의 다양한 기능에서 활용되고 있다. 
 
 ### 캐싱(@Cacheable)
 
-스프링 프레임 워크는 간단한 캐싱 기능도 가지고 있다. 캐싱을 활성화하고 메서드에 @Cacheable 애너테이션을 지정하면, 메서드의 매개변수 등을 키로 사용해서 메서드의 실행 결과를 캐시로 관리할 수 있다. 즉 캐시에 키가 등록되어 있지 않다면 메서드 실행 후
+스프링 프레임 워크는 간단한 캐싱 기능도 가지고 있다. 캐싱을 활성화하고 메서드에 @Cacheable 애너테이션을 지정하면, 메서드의 매개변수 등을 키로 사용해서 메서드의 실행 결과를 캐시로 관리할 수 있다. 즉 캐시에 키가 등록되어 있지 않다면 메서드 실행 후 실행 결과와 키를 캐시에 함께 등록한다. 이후 메서드에 같은 키로 호출이 되면 캐시에 등록된 반환 값을 돌려준다.
 
 ### 비동기 처리
+AOP는 비동기 처리에도 활용할 수 있다. 비동기 처리를 하고 싶은 메서드에 @Async를 붙여주고 반환값으로 CompetableFuture타입이나 DeferredResult 타입의 값을 반환하게 
 
 
 
@@ -88,7 +89,7 @@ AOP는 스프링 프레임워크의 다양한 기능에서 활용되고 있다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTk5MzIwMTAsMTA4OTA0MDIwNCw4Mz
+eyJoaXN0b3J5IjpbLTE1NDgwOTg4NTMsMTA4OTA0MDIwNCw4Mz
 Y4OTcwNzMsLTEyNDg1MTYzODYsMTA4ODkxMDA1NywtMzczNTEx
 MTE5LC0xNjY0ODEwNDUxLC0xOTkzMjM4OTkxLC04NTMyNDcwMT
 MsLTY4OTY4MjMxOV19
