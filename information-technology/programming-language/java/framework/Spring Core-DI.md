@@ -148,14 +148,9 @@ public void setUserRepository(UserRepository repository){
 
 필드 기반 의존성 주입은 생성자나 설정자 메서드를 쓰지 않고 DI 컨테이너의 힘을 빌려 의존성을 주입한다. 간단히 의존성을 주입하고 싶은 필드에 @Autowired를 달아준다. 필드기반 의존성 주입을 사용하여 생성자나 세터 메서드를 쓰지 않아도 되서 코드가 간결해 보이는 효과가 있다. 
 
-## AutoWiring
+### AutoWiring
 
-DI 컨테이너의 빈을 자동으로 의존성 주입하는 방법이다. 자세히는 빈 컨테이너가 제공하는 빈을 특정 클래스에서 사용하고 싶을때 사용하는 방법이다. `@Autowired`을 세터 메서드, 생성자, 필드에 붙이면 빈 컨테이너로부터 필요한 객체를 주입받을 수 있다. 
-
-클래스에 외부에서 접근 가능한 생성자나 세터 메서드가 없더라도 필드에 @Autowired를 붙일 수 있는데 심지어 private 필드일지라도 적절한 인스턴스를 오토 와이어 한다. DI 컨테이너가 이 클래스가 생성된 후에 리플렉션(reflection)을 이용하여 이 필드에 인스턴스를 오토 와이어 한다.
-
-
-일명 타입으로 오토와이어링 하기. 세터 인젝션, 컨스트럭터 인젝션, 필드 인젝션 모두에서 활용가능하다. 
+DI 컨테이너의 빈을 자동으로 의존성 주입하는 방법이다. 자세히는 빈 컨테이너가 제공하는 빈을 특정 클래스에서 사용하고 싶을때 사용하는 방법이다. `@Autowired`을 세터 메서드, 생성자, 필드에 붙이면 빈 컨테이너로부터 필요한 객체를 주입받을 수 있다. 세터 인젝션, 컨스트럭터 인젝션, 필드 인젝션 모두에서 활용가능하다. 
 
 기본적으로 의존성 주입이 반드시 성공한다고 가정하기 때문에, 주입할 타입에 해당하는 빈을 DI 컨테이너에서 찾지 못한다면 NoSuchBeanDefinitionException 예외가 발생한다. 
 이런 필수 조건을 완하하고 싶다면 @Autowried 애너테이션의 required를 false로 설정하면 된다. `requlare = false`로 하면 해당 타입의 빈을 찾지 못하더라도 예외가 발생하지 않는다. 그렇다고 하더라도 의존성 주입은 실패했기 때문에 해당 필드의 값은 null이 된다.
@@ -184,11 +179,11 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzczMjEwMCwxNzk4NTczNDU4LDk4Nj
-k1MTU0LC02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYz
-NiwyMDkwNDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1Mj
-AzMjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTky
-MywtNjU2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1ODMzMjI3NSwyMD
-YxMDMxOTAyLDE5MTg4NzI4NTgsLTIzMzYxNzk5NiwxMDM4MTA5
-MTE2XX0=
+eyJoaXN0b3J5IjpbLTIxMTg1NDkwNjgsMTc5ODU3MzQ1OCw5OD
+Y5NTE1NCwtNjk3ODM3ODUyLC0xMzgyNzc0OTQ4LC04MzgyNTY2
+MzYsMjA5MDQ5MTgxNiwtNDU4OTgyMTc5LDE1NzQ5NjI4MjksNT
+IwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3LC04ODEzNDk5
+MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NTgzMzIyNzUsMj
+A2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5OTYsMTAzODEw
+OTExNl19
 -->
