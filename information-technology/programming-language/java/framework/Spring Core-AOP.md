@@ -88,16 +88,11 @@ public CompletableFuture<Result> calc() {
 }
 ```
 
-
-
-
-
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIyNjg3MDAyLC0xOTkxMTE0NTM0LDEwOD
-kwNDAyMDQsODM2ODk3MDczLC0xMjQ4NTE2Mzg2LDEwODg5MTAw
-NTcsLTM3MzUxMTExOSwtMTY2NDgxMDQ1MSwtMTk5MzIzODk5MS
-wtODUzMjQ3MDEzLC02ODk2ODIzMTldfQ==
+eyJoaXN0b3J5IjpbLTE3MTI1MTk1NDYsOTIyNjg3MDAyLC0xOT
+kxMTE0NTM0LDEwODkwNDAyMDQsODM2ODk3MDczLC0xMjQ4NTE2
+Mzg2LDEwODg5MTAwNTcsLTM3MzUxMTExOSwtMTY2NDgxMDQ1MS
+wtMTk5MzIzODk5MSwtODUzMjQ3MDEzLC02ODk2ODIzMTldfQ==
+
 -->
