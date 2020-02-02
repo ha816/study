@@ -93,7 +93,7 @@ PasswordEncoder passwordEncoder() { ... }
 빈의 생명 주기는 빈 초기화, 빈 사용단계, 종료단계로 구분할 수 있다.
 각 단계의 중요한 개념과 애노테이션에 대해서 정리해보도록 하자.
 
-
+![enter image description here](https://t1.daumcdn.net/cfile/tistory/22107F505693B43E29)
 
 
 #### 빈 읽기 및 보완
@@ -240,11 +240,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODc5MjE2MjMsLTE4MjIzNDA1ODUsLT
-M5NzQzNDY2OSwtMTY2OTQzNjY4OSwtNDM3MDQ4NjY0LDExNTEx
-MTkzNDAsNzk4NjIyMDQxLC0xOTI1MjIxMDkxLC0xNDIzNzk0MT
-Q0LDE2NjYzNTY2NzYsLTIxMTg1NDkwNjgsMTc5ODU3MzQ1OCw5
-ODY5NTE1NCwtNjk3ODM3ODUyLC0xMzgyNzc0OTQ4LC04MzgyNT
-Y2MzYsMjA5MDQ5MTgxNiwtNDU4OTgyMTc5LDE1NzQ5NjI4Mjks
-NTIwMzI2NDc5XX0=
+eyJoaXN0b3J5IjpbLTY1ODc4MzM2MCwtMTgyMjM0MDU4NSwtMz
+k3NDM0NjY5LC0xNjY5NDM2Njg5LC00MzcwNDg2NjQsMTE1MTEx
+OTM0MCw3OTg2MjIwNDEsLTE5MjUyMjEwOTEsLTE0MjM3OTQxND
+QsMTY2NjM1NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4
+Njk1MTU0LC02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1Nj
+YzNiwyMDkwNDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1
+MjAzMjY0NzldfQ==
 -->
