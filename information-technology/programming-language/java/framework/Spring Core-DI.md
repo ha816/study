@@ -68,7 +68,12 @@ DI 컨테이너는 빈 간의 의존관계 뿐만 아니라 빈의 생존 기간
 
 구체적으로 설명하자면, DI 컨테이너는 @Lookup을 붙인 메서드를 오버라이드한다. 따라서 private 이나 fianl을 사용하면 안되고 매개변수 역시 지정하면 안된다.
 
-@Lookup 애너테이션에 value 속성에 빈의 이름을 지정할 수 있지만, 
+@Lookup 애너테이션에 value 속성에 빈의 이름을 지정할 수 있지만, 별도로 지정하지 않았다면 메서드의 반환 값 타입을 보고 룩업 대상 빈을 찾는다. 
+
+```
+
+
+```
 
 
 
@@ -199,11 +204,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NTUyMTE5LDExNTExMTkzNDAsNzk4Nj
-IyMDQxLC0xOTI1MjIxMDkxLC0xNDIzNzk0MTQ0LDE2NjYzNTY2
-NzYsLTIxMTg1NDkwNjgsMTc5ODU3MzQ1OCw5ODY5NTE1NCwtNj
-k3ODM3ODUyLC0xMzgyNzc0OTQ4LC04MzgyNTY2MzYsMjA5MDQ5
-MTgxNiwtNDU4OTgyMTc5LDE1NzQ5NjI4MjksNTIwMzI2NDc5LD
-E0MTcwMjU2MTAsNzAwNTE0NzY3LC04ODEzNDk5MjMsLTY1Njg2
-NDU4MV19
+eyJoaXN0b3J5IjpbLTEzMDQzMTM3OTIsMTE1MTExOTM0MCw3OT
+g2MjIwNDEsLTE5MjUyMjEwOTEsLTE0MjM3OTQxNDQsMTY2NjM1
+NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1MTU0LC
+02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNiwyMDkw
+NDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOSw1MjAzMjY0Nz
+ksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0OTkyMywtNjU2
+ODY0NTgxXX0=
 -->
