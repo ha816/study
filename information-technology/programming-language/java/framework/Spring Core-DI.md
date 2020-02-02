@@ -71,7 +71,7 @@ PasswordEncoder passwordEncoder() { ... }
 @Component @Scope("singleton")
 public class UserService {
 	@Autowired
-	PasswordEncoder passwordEncoder;  // prototype 인코더를 주입
+	PasswordEncoder passwordEncoder;  // prototype 인코더를 주입, Si
 	///
 }
 ```
@@ -221,7 +221,7 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTIzODczMTYsMTE1MTExOTM0MCw3OT
+eyJoaXN0b3J5IjpbLTEwNjE1OTU3ODYsMTE1MTExOTM0MCw3OT
 g2MjIwNDEsLTE5MjUyMjEwOTEsLTE0MjM3OTQxNDQsMTY2NjM1
 NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1MTU0LC
 02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNiwyMDkw
