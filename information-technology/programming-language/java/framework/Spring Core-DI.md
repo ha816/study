@@ -35,7 +35,20 @@ DI 컨테이너에서 인스턴스를 관리하는 방식의 장점 정리
 
 자바 기반, XML 기반 두 가지 설정 방식은, **모두 DI 컨테이너를 만들면서 필요한 모든 Bean을 세팅한다.** 따라서 애플리케이션에서 사용할 모든 컴포넌트를 자바나 XML로 정의를 해야 하는 번거로움이 있다. 그래서 애너테이션 기반 설정 방법과 병행해서 사용하는 것이 일반적이다. 
  
-애너테이션 기반 설정 방식은 DI 컨테이너에서 관리해야할 클래스에 마커 애너테이션을 붙인다. 컴포넌트 스캔(Component Scan)은 이런 **마커 애너테이션이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록하는 과정**을 말한다.
+애너테이션 기반 설정 방식은 DI 컨테이너에서 관리해야할 클래스에 마커 애너테이션을 붙인다. 컴포넌트 스캔(Component Scan)은 이런 **마커 애너테이션이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록하는 과정**을 말한다. 
+
+### Bean Scope
+
+기본적으로 스프링 빈은 애플리케이션 컨텍스트 초기화될 때 생성되는데, 이를 eager Instantiation이라고 한다. 그리고 특별한 설정이 없으면 스프링 빈 인스턴스는 하나만 생성되며, 이를 싱글턴 스코프라고 한다. 
+
+DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴스에서 이용한다는 것을 고려해야 하기 때문에, 스레드 세이프 해야 한다. 
+
+싱글턴 스코프를 사용하느게 아니라 새 인스턴스를 받고 싶다면 prototype을 사용하면 된다. 그러면 DI 컨테이너에서 getBean 메서드를 호출할때마다 새 인스턴스가 반환된다. 이를 프로토타입 빈 스코프(prototype scope)라고 한다.
+
+특정 HTTP 요청이 살아있는 동반 빈이 살아있는 리퀘스트(request scope), HTTP의 세션이 존재하는 동안만 존재하는 세션(session scope) 같은 다른 스코프도 존재한다. 
+
+### Bean Life Cycle
+
 
 ## ApplicationContext
 
@@ -162,7 +175,7 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NjU0ODA2MywtMjExODU0OTA2OCwxNz
+eyJoaXN0b3J5IjpbMTk1NDQyMTc3OCwtMjExODU0OTA2OCwxNz
 k4NTczNDU4LDk4Njk1MTU0LC02OTc4Mzc4NTIsLTEzODI3NzQ5
 NDgsLTgzODI1NjYzNiwyMDkwNDkxODE2LC00NTg5ODIxNzksMT
 U3NDk2MjgyOSw1MjAzMjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3
