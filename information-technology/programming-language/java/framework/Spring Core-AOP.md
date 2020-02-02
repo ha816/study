@@ -27,7 +27,7 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 
 # Spring AOP
 
-스프링
+스프링 안에는 AOP를 지원하는 모듈로 스프링 AOP가 있다. 스프링 AOP는 DI 컨테이너에서 관리하는 빈들을 타깃으로 어드바이스를 적용하는 기능이 있는데, 조인 포인트에 어드바이스를 적용하는 방법은 프락시 객체를 만들어서 대체하는 방법을 쓴다. 그래서 어드바이스가 적용된 이후, DI 컨테이너에서 빈을 꺼내보면 원래의 빈 인스터
 
 ##  Spring Advice Types
 
@@ -75,7 +75,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNTMxNDY1OSwtMTI0ODUxNjM4NiwxMD
+eyJoaXN0b3J5IjpbMTUyNDY2OTM2MywtMTI0ODUxNjM4NiwxMD
 g4OTEwMDU3LC0zNzM1MTExMTksLTE2NjQ4MTA0NTEsLTE5OTMy
 Mzg5OTEsLTg1MzI0NzAxMywtNjg5NjgyMzE5XX0=
 -->
