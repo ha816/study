@@ -27,7 +27,7 @@ AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에
 
 # Spring AOP
 
-
+스프링
 
 ##  Spring Advice Types
 
@@ -75,7 +75,7 @@ method = "singAfterQuest"/> // after 어드바이스 정의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDg1MTYzODYsMTA4ODkxMDA1NywtMz
-czNTExMTE5LC0xNjY0ODEwNDUxLC0xOTkzMjM4OTkxLC04NTMy
-NDcwMTMsLTY4OTY4MjMxOV19
+eyJoaXN0b3J5IjpbLTIxNTMxNDY1OSwtMTI0ODUxNjM4NiwxMD
+g4OTEwMDU3LC0zNzM1MTExMTksLTE2NjQ4MTA0NTEsLTE5OTMy
+Mzg5OTEsLTg1MzI0NzAxMywtNjg5NjgyMzE5XX0=
 -->
