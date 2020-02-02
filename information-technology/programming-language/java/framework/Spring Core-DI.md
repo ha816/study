@@ -94,7 +94,13 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 * 정규 표현식 필터(REGEX)
 *  ASPECTJ 패턴을 이용한 필터(ASPECTJ)
 
+```
+@ComponentScan(BasePackages = "com.example.demo", useDefaultFilters = false,
+includeFilters = { @Component.Filter(type = FilterType.REGEX, 
+pattern = 
 
+
+```
 
 
 ## Spring DI 
@@ -173,7 +179,7 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMTI3MTIyNiwtNDU4OTgyMTc5LDE1Nz
+eyJoaXN0b3J5IjpbLTQ4NzU3NDU0NSwtNDU4OTgyMTc5LDE1Nz
 Q5NjI4MjksNTIwMzI2NDc5LDE0MTcwMjU2MTAsNzAwNTE0NzY3
 LC04ODEzNDk5MjMsLTY1Njg2NDU4MSwxNTA0NzUyMDY1LDE4NT
 gzMzIyNzUsMjA2MTAzMTkwMiwxOTE4ODcyODU4LC0yMzM2MTc5
