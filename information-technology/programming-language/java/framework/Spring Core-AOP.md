@@ -84,7 +84,7 @@ AOP는 비동기 처리에도 활용할 수 있다. 비동기 처리를 하고 �
 @Async
 public CompletableFuture<Result> calc() {
 	Result result = doSomething()
-	return CompletableFuture.complet
+	return CompletableFuture.completedFuture(result);
 }
 ```
 
@@ -96,8 +96,8 @@ public CompletableFuture<Result> calc() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MTk1MjI4MywtMTk5MTExNDUzNCwxMD
-g5MDQwMjA0LDgzNjg5NzA3MywtMTI0ODUxNjM4NiwxMDg4OTEw
-MDU3LC0zNzM1MTExMTksLTE2NjQ4MTA0NTEsLTE5OTMyMzg5OT
-EsLTg1MzI0NzAxMywtNjg5NjgyMzE5XX0=
+eyJoaXN0b3J5IjpbOTIyNjg3MDAyLC0xOTkxMTE0NTM0LDEwOD
+kwNDAyMDQsODM2ODk3MDczLC0xMjQ4NTE2Mzg2LDEwODg5MTAw
+NTcsLTM3MzUxMTExOSwtMTY2NDgxMDQ1MSwtMTk5MzIzODk5MS
+wtODUzMjQ3MDEzLC02ODk2ODIzMTldfQ==
 -->
