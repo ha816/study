@@ -20,10 +20,10 @@
 
 ## 가상 머신과 컨테이너의 차이 
 
-언뜻 보면 가상화와 컨테이너화는 정확하게 동일한 특징을 갖고 있는 것으로 보인다. 하지만 컨테이너와 가상화는 같지 않다. rkt
+언뜻 보면 가상화와 컨테이너화는 정확하게 동일한 특징을 갖고 있는 것으로 보인다. 하지만 컨테이너와 가상화는 같지 않다. **가상머신과 컨테이너는 가상화 분야에서 서로 다른 문제를 해결하는 다른 기법이다.**
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3OTI1NTYwNCw3NDE0MTI0NzNdfQ==
+eyJoaXN0b3J5IjpbMzIxNTMwNDgyLDc0MTQxMjQ3M119
 -->
