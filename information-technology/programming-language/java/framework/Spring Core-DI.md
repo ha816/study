@@ -101,9 +101,10 @@ Bean Factory Post Processor(BFPP)를 사용해 빈 정보를 보완하고 빈 �
 
 * 애터네이션 기반 설정(@PostConstruct)
 * 인터페이스 기반 설정(InitializingBean 인터페이스 내의 afterPropertiesSet 메서드 구현)
-* 자바 기반 설정(@Bean에 initMethod 지정한 메서드)
+* 자바 기반 설정(@Bean에 initMethod 속성을 지정한 메서드)
 * XML 기반 설정(<bean> 요소에 init-method 속성을 지정한 메서드)
 
+이렇게 빈이 생성된 후에 하는 초기화 과정은 전 단계에서 의존성 주입이 끝난 필드 값을 활용할 수 있다는 점이 중요하다.
 
 
 
@@ -236,11 +237,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4ODQzNTY2MiwtMTc0NDM2MDQyOCwtNj
-U4NzgzMzYwLC0xODIyMzQwNTg1LC0zOTc0MzQ2NjksLTE2Njk0
-MzY2ODksLTQzNzA0ODY2NCwxMTUxMTE5MzQwLDc5ODYyMjA0MS
-wtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2Njc2LC0y
-MTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLTY5NzgzNz
-g1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0OTE4MTYs
-LTQ1ODk4MjE3OV19
+eyJoaXN0b3J5IjpbLTIxMjc0Mzk5OTcsLTE3NDQzNjA0MjgsLT
+Y1ODc4MzM2MCwtMTgyMjM0MDU4NSwtMzk3NDM0NjY5LC0xNjY5
+NDM2Njg5LC00MzcwNDg2NjQsMTE1MTExOTM0MCw3OTg2MjIwND
+EsLTE5MjUyMjEwOTEsLTE0MjM3OTQxNDQsMTY2NjM1NjY3Niwt
+MjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1MTU0LC02OTc4Mz
+c4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNiwyMDkwNDkxODE2
+LC00NTg5ODIxNzldfQ==
 -->
