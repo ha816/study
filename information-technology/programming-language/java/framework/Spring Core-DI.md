@@ -89,6 +89,11 @@ DI 컨테이너가 관리하는 빈은 크게 명시적으로 설정된 빈과 �
 
 추가로 다른 컴포넌트를 포함하고 싶다면 필터를 적용하는 방법으로 스캔 범위를 커스터마이징할 수 있다. 스프링에서는 아래와 같은 필터를 제공한다.
 
+* 애너테이션 필터
+* 할당 가능 타입을 이용 필터(ASSIGNABLE_TYPE)
+* 정규 표현식 필터(REGEX)
+*  ASPECTJ 패턴을 이용한 필터(ASPECTJ)
+
 
 ## Spring DI 
 
@@ -166,9 +171,9 @@ DI 컨테이너가 싱글턴 빈을 제공할때는 이 빈이 여러 인스턴�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1ODk4MjE3OSwxNTc0OTYyODI5LDUyMD
-MyNjQ3OSwxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgxMzQ5OTIz
-LC02NTY4NjQ1ODEsMTUwNDc1MjA2NSwxODU4MzMyMjc1LDIwNj
-EwMzE5MDIsMTkxODg3Mjg1OCwtMjMzNjE3OTk2LDEwMzgxMDkx
-MTYsLTE3MjA0MjYyMzBdfQ==
+eyJoaXN0b3J5IjpbNTI4NTQ4NTg2LC00NTg5ODIxNzksMTU3ND
+k2MjgyOSw1MjAzMjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3Njcs
+LTg4MTM0OTkyMywtNjU2ODY0NTgxLDE1MDQ3NTIwNjUsMTg1OD
+MzMjI3NSwyMDYxMDMxOTAyLDE5MTg4NzI4NTgsLTIzMzYxNzk5
+NiwxMDM4MTA5MTE2LC0xNzIwNDI2MjMwXX0=
 -->
