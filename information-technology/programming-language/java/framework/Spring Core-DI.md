@@ -90,8 +90,10 @@ PasswordEncoder passwordEncoder() { ... }
 ```
 ### Bean Life Cycle
 
-빈의 생명 주기는 빈 초기화, 빈 사용단계, 종료단계로 구분할 수 있다.
+빈의 생명 주기는 빈 초기화, 빈 사용단계, 종료단계로 구분할 수 있다. 여기서 알아둬야 할 점은 빈 초기화 및 종료단계가 중요하다. 
 
+먼저 만들 빈 정의를 읽어들인다, 아직 정보만 불러왔을 뿐 실제 빈을 생성한 것은 아니다. 
+다음으로 B
 
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/22107F505693B43E29)
 
@@ -222,11 +224,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNzk5MjI1NCwtMTc0NDM2MDQyOCwtNj
-U4NzgzMzYwLC0xODIyMzQwNTg1LC0zOTc0MzQ2NjksLTE2Njk0
-MzY2ODksLTQzNzA0ODY2NCwxMTUxMTE5MzQwLDc5ODYyMjA0MS
-wtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2Njc2LC0y
-MTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLTY5NzgzNz
-g1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0OTE4MTYs
-LTQ1ODk4MjE3OV19
+eyJoaXN0b3J5IjpbLTIxMDc3MDA2ODYsLTE3NDQzNjA0MjgsLT
+Y1ODc4MzM2MCwtMTgyMjM0MDU4NSwtMzk3NDM0NjY5LC0xNjY5
+NDM2Njg5LC00MzcwNDg2NjQsMTE1MTExOTM0MCw3OTg2MjIwND
+EsLTE5MjUyMjEwOTEsLTE0MjM3OTQxNDQsMTY2NjM1NjY3Niwt
+MjExODU0OTA2OCwxNzk4NTczNDU4LDk4Njk1MTU0LC02OTc4Mz
+c4NTIsLTEzODI3NzQ5NDgsLTgzODI1NjYzNiwyMDkwNDkxODE2
+LC00NTg5ODIxNzldfQ==
 -->
