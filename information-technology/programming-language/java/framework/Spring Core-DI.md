@@ -83,8 +83,12 @@ public class UserService {
 ```
 @Lookup // 
 PasswordEncoder passwordEncoder() { ... }
-
-
+```
+```
+<bean id="passwordEncoder" class="com.example.demo" scope="prototype" />
+<bean id="userService" class="com.example.demo.UserServiceImpl">
+	<lookup-me>
+</bean>
 ```
 
 
@@ -216,11 +220,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNzA0ODY2NCwxMTUxMTE5MzQwLDc5OD
-YyMjA0MSwtMTkyNTIyMTA5MSwtMTQyMzc5NDE0NCwxNjY2MzU2
-Njc2LC0yMTE4NTQ5MDY4LDE3OTg1NzM0NTgsOTg2OTUxNTQsLT
-Y5NzgzNzg1MiwtMTM4Mjc3NDk0OCwtODM4MjU2NjM2LDIwOTA0
-OTE4MTYsLTQ1ODk4MjE3OSwxNTc0OTYyODI5LDUyMDMyNjQ3OS
-wxNDE3MDI1NjEwLDcwMDUxNDc2NywtODgxMzQ5OTIzLC02NTY4
-NjQ1ODFdfQ==
+eyJoaXN0b3J5IjpbOTkxMTEwNTA1LC00MzcwNDg2NjQsMTE1MT
+ExOTM0MCw3OTg2MjIwNDEsLTE5MjUyMjEwOTEsLTE0MjM3OTQx
+NDQsMTY2NjM1NjY3NiwtMjExODU0OTA2OCwxNzk4NTczNDU4LD
+k4Njk1MTU0LC02OTc4Mzc4NTIsLTEzODI3NzQ5NDgsLTgzODI1
+NjYzNiwyMDkwNDkxODE2LC00NTg5ODIxNzksMTU3NDk2MjgyOS
+w1MjAzMjY0NzksMTQxNzAyNTYxMCw3MDA1MTQ3NjcsLTg4MTM0
+OTkyM119
 -->
