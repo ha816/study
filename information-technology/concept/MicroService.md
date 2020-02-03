@@ -88,13 +88,17 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 도커 이미지를 퍼블리싱하고 다운로드할 수 있는 중앙 저장소이다. 도커 허브(hub.docker.com)에서 제공하는 중앙 저장소이다. 도커는 자체적으로 보유하고 있는 환경에 도커 레지스트리를 구성할 수 있는데 사용하는 도커 트러스티드 레지스트리(DTR, Docker Trusted Registry)도 제공한다
 
+### Docker file
+
+도커 이미지를 만들 수 있는 명령어를 포함하고 있는 빌드 파일 또는 스크립트 파일이다. 도커 파일에는 기반 이미지를 가져오는 것 부터 여러 단계가 포함된다. 도커 파리은 maven의 pom.xml에 해당한다고 볼 수 있다.
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMjIyOTMwOCwxMjUwMzQwMjQxLC04OD
+eyJoaXN0b3J5IjpbMTYzMzAxMTEwNCwxMjUwMzQwMjQxLC04OD
 kwMTE1NzAsLTE0ODE0NjYwNDMsMTgxNjI4NzI3LC0xMTg2Nzg5
 MzEzLDIzMDU4ODUzNiw1NjMwNTY1ODEsOTEwNzU4MTUyLDEwMD
 k5NDU0MDgsMTk1MDY1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDcz
