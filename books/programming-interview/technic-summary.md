@@ -40,18 +40,7 @@
 >@Override 에너테이션은 코드 가독성과 개발자의 실수를 방지해주는 역할을 한다. @Override가 붙은 메서드는 상위 클래스나 인터페이스에 있는 특정 메서드를 재정의했다는 의미이다. 현재 다른 메서드와 차이를 명확히 밝혀 가독성을 높이고, 상위 메서드가 개발자의 실수로 변경이 일어나면 컴파일 에러를 낸다.
 
 >**제네릭이란? 실체화(reified)한다는 건 어떤 의미인가?** 
->Generic이란 매개변수화된 타입이라고 한다. 즉 사용하려는 타입을 매개변수로 받는것을 말한다. 예를 들어 List는 담을 원소의 타입을 제네릭을 이용해서 정할 수 있다. 그러면 컴파일러는 list에 특정 타입만 포함되도록 컬렉션을 제한한다. 
-
-실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 자바 제네릭은 실체화가 아니다. 즉  
-제네릭은 reified 하다고 하는데 이는 컴파일 단계에서는 존재하지만 실제 런타임 코드에는 없는것을 말한다.  
-
-> 구상화한다는 건 어떤 의미인가? 
-
-본래 구상화 (reified)는 것은 실행 시에 이용할 수 있다는 것이다. **기본적으로 자바의 제네릭 타입은 구상화가 아니다.** 왜냐하면 .class 파일 정의의 일부가 아닌, 제네릭 매개변수를 직접 사용하는 구현 코드의 모든 타입 정보를 컴파일러가 확인하기 때문이다. 
-
-실제 제네릭을 사용한 코드로 만든 실행 코드를 자바 디컴파일러인 JAD를 이용해서 디컴파일하면 모든 제네릭 타입 정보가 사라진다. 
-
-
+>Generic이란 매개변수화된 타입이라고 한다. 즉 사용하려는 타입을 매개변수로 받는것을 말한다. 예를 들어 List는 담을 원소의 타입을 제네릭을 이용해서 정할 수 있다. 그러면 컴파일러는 list에 특정 타입만 포함되도록 컬렉션을 제한한다. 실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 자바 제네릭은 실체화가 아니다. 컴파일시에는 존재하지만 실제 동작하는 코드에는 존재하지 않는다.
 
 >**String 객체는? String은 어느 메모리 공간에 올라가는가? 인터닝(interning)이란**? 
 
@@ -242,7 +231,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3Mzk5NTg1NywxNzc5OTY1NTcwLC05MT
+eyJoaXN0b3J5IjpbLTMwNDYxNzYxNCwxNzc5OTY1NTcwLC05MT
 c0NTE3NjgsLTkyMzIwMjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1
 MDIxOCwtMTEyNDA0MTEzOSw4NTM0MDcxMjMsLTIxMjg3MzM1OT
 QsLTE4OTc0MjE1ODksLTEyMDE4ODA2ODEsLTI0NzIxMzYyOSwt
