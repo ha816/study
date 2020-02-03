@@ -9,7 +9,7 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 ## Docker Core
 
-도커에넌 도커 테몬과 도커 클라이언트라는 두 핵심 컴포넌트가 있다. 데몬과 클라이언트 모두 별개의 실행파일로 제공된다.
+도커에선 도커 테몬과 도커 클라이언트라는 두 핵심 컴포넌트가 있다. 데몬과 클라이언트 모두 별개의 실행파일로 제공된다.
 
 ![enter image description here](https://19yw4b240vb03ws8qm25h366-wpengine.netdna-ssl.com/wp-content/uploads/Docker-API-infographic-container-devops-nordic-apis.png)
 
@@ -48,5 +48,5 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTA0NjA4MF19
+eyJoaXN0b3J5IjpbLTE2MzcwOTUyNTJdfQ==
 -->
