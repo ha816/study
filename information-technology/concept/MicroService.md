@@ -21,7 +21,9 @@
 ### Container의 장점
 
 * 자기 완비적
+	* 컨테이너는 실행에 필요한 바이너리와 의존하는 모든 라이브러리를 가진다.
 * 경량성
+	* 컨테이너는 크기가 자
 * 확장성
 * 이식성
 * 저렴한 라이센스 비용
@@ -44,6 +46,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA5MDcwNjQsMTAwOTk0NTQwOCwxOTUwNj
-U4NTcwLDMyMTUzMDQ4Miw3NDE0MTI0NzNdfQ==
+eyJoaXN0b3J5IjpbLTIxMTgxNTgxOSwxMDA5OTQ1NDA4LDE5NT
+A2NTg1NzAsMzIxNTMwNDgyLDc0MTQxMjQ3M119
 -->
