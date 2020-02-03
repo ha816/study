@@ -18,6 +18,9 @@
 
 컨테이너는 뚜렷히 구분되는 소프트웨어 컴포넌트를 빌드하고, 탑재하고 실행할 수 있는 편리한 매커니즘이다. 일반적으로 컨테이너는 하나의 애플리케이션을 실행하는데 필수적인 모든 실행 바이너리 파일과 라이브러리를 함께 가진다. 
 
+### Container의 장점
+
+
 ## 가상 머신과 컨테이너의 차이 
 
 언뜻 보면 가상화와 컨테이너화는 정확하게 동일한 특징을 갖고 있는 것으로 보인다. 하지만 컨테이너와 가상화는 같지 않다. **가상머신과 컨테이너는 가상화 분야에서 서로 다른 문제를 해결하는 다른 기법이다.**
@@ -30,6 +33,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg4NTYyMjg2LDEwMDk5NDU0MDgsMTk1MD
+eyJoaXN0b3J5IjpbMzc3MTY3NDg1LDEwMDk5NDU0MDgsMTk1MD
 Y1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDczXX0=
 -->
