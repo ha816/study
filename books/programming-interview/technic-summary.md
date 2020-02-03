@@ -47,8 +47,9 @@
 >String 객체는 대표적인 불변객체로, new 키워드로 생성하지 않는한 String Constant Pool에 올라간다. 
 >String Interning이란 불변의 독립적인 문자열을 저장하는 방법이다. String은 intern메서드를 가지는데, 상수 풀에 해당 문자열이 있으면 풀에 문자열을 가져오고 아니라면, 이 문자열은 풀에 추가되고 반환된다. 
 
->**예외처리의 주요 클래스를 설명하라. 그리고 Error와 Exception의 차이는?**
->예외는 크게 RuntimeException과 명시적 Exception으로 나뉜다. RuntimeE
+>Error와 Exception의 차이는?**
+>예외는 크게 RuntimeException과 명시적 Exception으로 나뉜다. RuntimeException은 런타임시 발생하는 예외로 대표적으로는 NullPoint, ArrayOutofBound 등이 있다. 명시적 예외는 코드 상에 예외처리를 위한 코드를 작성해야 하며, 대표적으로 IO Excetpion이 있다. 
+>Error는 
 
 > **StringBuilder와 StringBuffer의 차이는?**
 > StringBuilder는 Thread Safe하지 않지만 StringBuffer는 그러하다. 따라서 StringBuilder가 더 빠르다.
@@ -235,11 +236,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MTg5MDU3NCwyMjMzNjA1MDMsLTE3Nz
-M1NzAzMTksLTMwNDYxNzYxNCwxNzc5OTY1NTcwLC05MTc0NTE3
-NjgsLTkyMzIwMjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1MDIxOC
-wtMTEyNDA0MTEzOSw4NTM0MDcxMjMsLTIxMjg3MzM1OTQsLTE4
-OTc0MjE1ODksLTEyMDE4ODA2ODEsLTI0NzIxMzYyOSwtODI0Nj
-UzMjEyLC05ODMzMzQ4MTksLTE3NjM5NzIwNywtMTkxMjk2Njk1
-NSwtNDk1MTg0NzYxXX0=
+eyJoaXN0b3J5IjpbNDk5MjY2NDk4LDIyMzM2MDUwMywtMTc3Mz
+U3MDMxOSwtMzA0NjE3NjE0LDE3Nzk5NjU1NzAsLTkxNzQ1MTc2
+OCwtOTIzMjAyMjUxLC0xODg1NDA3NTQ1LC0xOTA0OTUwMjE4LC
+0xMTI0MDQxMTM5LDg1MzQwNzEyMywtMjEyODczMzU5NCwtMTg5
+NzQyMTU4OSwtMTIwMTg4MDY4MSwtMjQ3MjEzNjI5LC04MjQ2NT
+MyMTIsLTk4MzMzNDgxOSwtMTc2Mzk3MjA3LC0xOTEyOTY2OTU1
+LC00OTUxODQ3NjFdfQ==
 -->
