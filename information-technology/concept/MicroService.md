@@ -70,6 +70,8 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 도커 이미지는 **운영체제 라이브러리, 애플리케이션 및 의존 라이브러리의 읽기 전용 복사본이다.** 이미지가 생성되면 아무린 수정도 필요 없이 어떤 도커 플랫폼 위에서든 실행할 수 있다. 
 
+도커 이미지에는 애플리케이션을 실행하고 서비스를 외부에 노출하는 명령들도 포함된다.
+
 
 ### Docker Client
 
@@ -77,8 +79,8 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4OTAxMTU3MCwtMTQ4MTQ2NjA0MywxOD
-E2Mjg3MjcsLTExODY3ODkzMTMsMjMwNTg4NTM2LDU2MzA1NjU4
-MSw5MTA3NTgxNTIsMTAwOTk0NTQwOCwxOTUwNjU4NTcwLDMyMT
-UzMDQ4Miw3NDE0MTI0NzNdfQ==
+eyJoaXN0b3J5IjpbMTI1MDM0MDI0MSwtODg5MDExNTcwLC0xND
+gxNDY2MDQzLDE4MTYyODcyNywtMTE4Njc4OTMxMywyMzA1ODg1
+MzYsNTYzMDU2NTgxLDkxMDc1ODE1MiwxMDA5OTQ1NDA4LDE5NT
+A2NTg1NzAsMzIxNTMwNDgyLDc0MTQxMjQ3M119
 -->
