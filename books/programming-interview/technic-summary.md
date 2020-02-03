@@ -51,7 +51,7 @@
 > StringBuilder는 Thread Safe하지 않지만 StringBuffer는 그러하다. 따라서 StringBuilder가 더 빠르다.
 
 >**Error와 Exception의 차이는?**
->
+>Error는 발생 시 더 이상의 작업을 수행할 수 없는 치명적인 문제를 말한다. Error가 발생하면 JVM이 중단되며 대표적인 Error로는 StackOverFlow, 
 
 >**예외처리의 주요 클래스를 설명하라**
 >RuntimeException -> Exception -> Throwable
@@ -239,11 +239,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkwOTk5Mjc5LDIyMzM2MDUwMywtMTc3Mz
-U3MDMxOSwtMzA0NjE3NjE0LDE3Nzk5NjU1NzAsLTkxNzQ1MTc2
-OCwtOTIzMjAyMjUxLC0xODg1NDA3NTQ1LC0xOTA0OTUwMjE4LC
-0xMTI0MDQxMTM5LDg1MzQwNzEyMywtMjEyODczMzU5NCwtMTg5
-NzQyMTU4OSwtMTIwMTg4MDY4MSwtMjQ3MjEzNjI5LC04MjQ2NT
-MyMTIsLTk4MzMzNDgxOSwtMTc2Mzk3MjA3LC0xOTEyOTY2OTU1
-LC00OTUxODQ3NjFdfQ==
+eyJoaXN0b3J5IjpbLTE2MTk4Nzk1NzQsMjIzMzYwNTAzLC0xNz
+czNTcwMzE5LC0zMDQ2MTc2MTQsMTc3OTk2NTU3MCwtOTE3NDUx
+NzY4LC05MjMyMDIyNTEsLTE4ODU0MDc1NDUsLTE5MDQ5NTAyMT
+gsLTExMjQwNDExMzksODUzNDA3MTIzLC0yMTI4NzMzNTk0LC0x
+ODk3NDIxNTg5LC0xMjAxODgwNjgxLC0yNDcyMTM2MjksLTgyND
+Y1MzIxMiwtOTgzMzM0ODE5LC0xNzYzOTcyMDcsLTE5MTI5NjY5
+NTUsLTQ5NTE4NDc2MV19
 -->
