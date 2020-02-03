@@ -2,13 +2,15 @@
 
 프로그래밍에서 SOLID란 로버트 마틴이 2000년대 초반에 명명한 객체 지향 프로그래밍 및 설계의 다섯 가지 기본 원칙을 마이클 페더가 기억술로 소개한 것이다.  
 
-프로그래머가 
-title=%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84&action=edit&redlink=1 "객체 지향 설계 (없는 문서)")의 다섯 가지 기본 원칙을 마이클 페더스가 [두문자어](https://ko.wikipedia.org/wiki/%EB%91%90%EB%AC%B8%EC%9E%90%EC%96%B4 "두문자어")  [기억술](https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%96%B5%EC%88%A0 "기억술")로 소개한 것이다. 프로그래머가 시간이 지나도 [유지 보수](https://ko.wikipedia.org/wiki/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EC%9C%A0%EC%A7%80_%EB%B3%B4%EC%88%98 "소프트웨어 유지 보수")와 확장이 쉬운 시스템을 만들고자 할 때 이 원칙들을 함께 적용할 수 있다.[[3]](https://ko.wikipedia.org/wiki/SOLID_(%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84)#cite_note-metz-presentation-2009-3) SOLID 원칙들은 소프트웨어 작업에서 프로그래머가 [소스 코드](https://ko.wikipedia.org/wiki/%EC%86%8C%EC%8A%A4_%EC%BD%94%EB%93%9C "소스 코드")가 읽기 쉽고 확장하기 쉽게 될 때까지 소프트웨어 소스 코드를 [리팩터링](https://ko.wikipedia.org/wiki/%EB%A6%AC%ED%8C%A9%ED%84%B0%EB%A7%81 "리팩터링")하여 [코드 냄새](https://ko.wikipedia.org/wiki/%EC%BD%94%EB%93%9C_%EB%83%84%EC%83%88 "코드 냄새")를 제거하기 위해 적용할 수 있는 지침이다. 이 원칙들은 [애자일 소프트웨어 개발](https://ko.wikipedia.org/wiki/%EC%95%A0%EC%9E%90%EC%9D%BC_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EA%B0%9C%EB%B0%9C "애자일 소프트웨어 개발")과 [적응적 소프트웨어 개발](https://ko.wikipedia.org/w/index.php?title=%EC%A0%81%EC%9D%91%EC%A0%81_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EA%B0%9C%EB%B0%9C&action=edit&redlink=1 "적응적 소프트웨어 개발 (없는 문서)")의 전반적 전략의 일부다.[[3]](https://ko.wikipedia.org/wiki/SOLID_(%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84)#cite_note-metz-presentation-2009-3)
+프로그래머가 시간이 지나도 유지 보수와 확장이 쉬운 시스템을 만들고자 할때 이 원칙들 함께 적용할 수 있다. 
+
+
 
 ![enter image description here](https://i.pinimg.com/originals/8a/53/36/8a53363bd595a8af11822020a9342b02.jpg)
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgxNDY4Mjk3LDE1MTMwOTQ0NjddfQ==
+eyJoaXN0b3J5IjpbODY2MjkxOTMyLDU4MTQ2ODI5NywxNTEzMD
+k0NDY3XX0=
 -->
