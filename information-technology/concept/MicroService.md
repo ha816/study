@@ -61,6 +61,10 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 ![enter image description here](https://19yw4b240vb03ws8qm25h366-wpengine.netdna-ssl.com/wp-content/uploads/Docker-API-infographic-container-devops-nordic-apis.png)
 
+### Docker Client
+
+도커 클라이언트는 소켓이나 REST API를 통해 도커 데몬과 상호작용하는 커맨드 라인 인터페이스 프로그램(Command Line Interface)이다. 도커 클라이언트는 데몬이 실행되고 있는 호스트와 동일한 호스트에서 실행할 수도 있고, 다른 호스트에서 실행되고 있는 원격의 데몬과도 연결할 수 있다. 
+
 ### Docker Daemon
 
 도커 데몬은 호스트 장비 위에 설치되는 서버 측 컴포넌트로써 도커 컨테이너를 만들고, 실행하고 배포하는 역할을 담당한다. 또한 도커 클라이언트를 위한 API를 외부에 노출하여 도커 클라이언트가 도커 데몬과 상호작용할 수 있게 한다. 
@@ -74,16 +78,15 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 도커 이미지는 계층형 아키텍처에 바탕을 두고 있고, 가장 아래에 있는 이미지는 리눅스와 같은 운영체제를 포함하고 있다. 일반적으로 개발자가 완전 백지에서 부터 도커 이미지를 만들 일은 없다. 운영체제 이미지나 자바 8 이미지 처럼 신뢰할 수 있는 이미지를 구할 수 있기 때문이다. 기발자는 이런 이미지들로 원하는 이미지를 만들 수 있다. 
 
+### Docker 컨
 
-### Docker Client
 
-도커 클라이언트는 소켓이나 REST API를 통해 도커 데몬과 상호작용하는 커맨드 라인 인터페이스 프로그램(Command Line Interface)이다. 도커 클라이언트는 데몬이 실행되고 있는 호스트와 동일한 호스트에서 실행할 수도 있고, 다른 호스트에서 실행되고 있는 원격의 데몬과도 연결할 수 있다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzIwODA5OCwxMjUwMzQwMjQxLC04OD
-kwMTE1NzAsLTE0ODE0NjYwNDMsMTgxNjI4NzI3LC0xMTg2Nzg5
-MzEzLDIzMDU4ODUzNiw1NjMwNTY1ODEsOTEwNzU4MTUyLDEwMD
-k5NDU0MDgsMTk1MDY1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDcz
-XX0=
+eyJoaXN0b3J5IjpbLTIwOTA3OTU1NTUsMTI1MDM0MDI0MSwtOD
+g5MDExNTcwLC0xNDgxNDY2MDQzLDE4MTYyODcyNywtMTE4Njc4
+OTMxMywyMzA1ODg1MzYsNTYzMDU2NTgxLDkxMDc1ODE1MiwxMD
+A5OTQ1NDA4LDE5NTA2NTg1NzAsMzIxNTMwNDgyLDc0MTQxMjQ3
+M119
 -->
