@@ -41,9 +41,10 @@
 
 >**제네릭? 실체화(reified)한다는 건 어떤 의미인가?** 
 >Generic이란 매개변수화된 타입이라고 한다. 즉 사용하려는 타입을 매개변수로 받는것을 말한다. 예를 들어 List는 담을 원소의 타입을 제네릭을 이용해서 정할 수 있다. 그러면 컴파일러는 list에 특정 타입만 포함되도록 컬렉션을 제한한다. 
->실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 자바 제네릭은 실체화가 아니다. 컴파일시에는 존재하지만 실제 동작하는 코드에는 존재하지 않는다.
+>실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 제네릭은 실체화가 아니다. 컴파일시에는 존재하지만 실제 동작하는 코드에는 존재하지 않는다.
 
 >**String 객체는? String은 어느 메모리 공간에 올라가는가? 인터닝(interning)이란**? 
+>String 객체는 대표적인 불변객체로, new 키워드로 생성하지 않는한 Constant Pool에 올라간다. 
 
 >**예외처리 구조를 이루는 주요 클래스를 설명하라. 그리고 Error와 Exception의 차이는?**
 
@@ -232,11 +233,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA5Mjg5NzYsLTMwNDYxNzYxNCwxNz
-c5OTY1NTcwLC05MTc0NTE3NjgsLTkyMzIwMjI1MSwtMTg4NTQw
-NzU0NSwtMTkwNDk1MDIxOCwtMTEyNDA0MTEzOSw4NTM0MDcxMj
-MsLTIxMjg3MzM1OTQsLTE4OTc0MjE1ODksLTEyMDE4ODA2ODEs
-LTI0NzIxMzYyOSwtODI0NjUzMjEyLC05ODMzMzQ4MTksLTE3Nj
-M5NzIwNywtMTkxMjk2Njk1NSwtNDk1MTg0NzYxLC03NTczNzg1
-NTMsMTIyNTM0OTE4Ml19
+eyJoaXN0b3J5IjpbLTk3NjE2ODI3OCwtMzA0NjE3NjE0LDE3Nz
+k5NjU1NzAsLTkxNzQ1MTc2OCwtOTIzMjAyMjUxLC0xODg1NDA3
+NTQ1LC0xOTA0OTUwMjE4LC0xMTI0MDQxMTM5LDg1MzQwNzEyMy
+wtMjEyODczMzU5NCwtMTg5NzQyMTU4OSwtMTIwMTg4MDY4MSwt
+MjQ3MjEzNjI5LC04MjQ2NTMyMTIsLTk4MzMzNDgxOSwtMTc2Mz
+k3MjA3LC0xOTEyOTY2OTU1LC00OTUxODQ3NjEsLTc1NzM3ODU1
+MywxMjI1MzQ5MTgyXX0=
 -->
