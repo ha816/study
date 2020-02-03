@@ -51,7 +51,7 @@
 
 컨테이너는 그전부터 사용되었지만, Docker가 새 지평을 열었다고 해도 과언이 아니다. 컨테이너화 라는 말 대신 도커화(dockerization)이라는 용어를 쓸정도로 인기가 압도적이다. 
 
-도커는 리눅스 컨
+도커는 리눅스 커널 기반으로 가벼운 컨테이너를 만들고, 탑재하고 실행할 수 있는 플랫폼이다. 
 
 
 
@@ -59,7 +59,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5Mjk5OTAxNyw1NjMwNTY1ODEsOTEwNz
-U4MTUyLDEwMDk5NDU0MDgsMTk1MDY1ODU3MCwzMjE1MzA0ODIs
-NzQxNDEyNDczXX0=
+eyJoaXN0b3J5IjpbMjMwNTg4NTM2LDU2MzA1NjU4MSw5MTA3NT
+gxNTIsMTAwOTk0NTQwOCwxOTUwNjU4NTcwLDMyMTUzMDQ4Miw3
+NDE0MTI0NzNdfQ==
 -->
