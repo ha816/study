@@ -44,7 +44,7 @@
 >실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 제네릭은 실체화가 아니다. 컴파일시에는 존재하지만 실제 동작하는 코드에는 존재하지 않는다.
 
 >**String 객체는? String은 어느 메모리 공간에 올라가는가? 인터닝(interning)이란**? 
->String 객체는 대표적인 불변객체로, new 키워드로 생성하지 않는한 Constant Pool에 올라간다. 
+>String 객체는 대표적인 불변객체로, new 키워드로 생성하지 않는한 String Constant Pool에 올라간다. 이 상수 풀은 
 
 >**예외처리 구조를 이루는 주요 클래스를 설명하라. 그리고 Error와 Exception의 차이는?**
 
@@ -233,7 +233,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NjE2ODI3OCwtMzA0NjE3NjE0LDE3Nz
+eyJoaXN0b3J5IjpbMTcwMTMxNjgxNCwtMzA0NjE3NjE0LDE3Nz
 k5NjU1NzAsLTkxNzQ1MTc2OCwtOTIzMjAyMjUxLC0xODg1NDA3
 NTQ1LC0xOTA0OTUwMjE4LC0xMTI0MDQxMTM5LDg1MzQwNzEyMy
 wtMjEyODczMzU5NCwtMTg5NzQyMTU4OSwtMTIwMTg4MDY4MSwt
