@@ -7,11 +7,7 @@
 
 > DevOps
 > 소프트웨어 개발(Development) + 운영(Operations)의 합성어로, 소프트웨어 개발자와 정보기술 전문가 간의 소통, 협업 및 통합을 강조하는 개발 환경이나 문화를 말한다. 
-
-## MicroService & Dock Container
-
-마이크로 서비스의 관점에서 서비스를 컨테이너화해서 배포할 수 있다면 이상적이다. 컨테이너화(containerization)을 하면 하부의 인프라스트럭처를 포함하므로 더 자기 완비적(self-contained)하고 자율적이게 된다. 따라서 마이크로 서비스가 특정 클라우드 환경에 종속되지 않고 중립성을 유지할 수 있다. 
-
+> 
 ## Containerization(운영체제 가상화; operating system virtualization)
 
 컨테이너화(Containerization) 기술은 운영체제의 입장에서 본다면 사적인 가상공간을 제공하는 것이다. 이런 가상 공간을 컨테이너 또는 가상엔진이라 부른다. 
@@ -27,9 +23,18 @@
 * 이식성
 	* 컨테이너는 장비간 및 클라우드 서비스간 이식이 가능하다.
 * 버전관리
-	* 컨테이너는 버전관리를 지원한다. 아카이브 파일을 관리하듯 컨테이너도 
+	* 컨테이너는 버전관리를 지원한다. 아카이브 파일을 관리하듯 컨테이너도 버전 관리되는 산출물을 만들 수 있다.
 * 재사용성
+	* 컨테이너 이미지는 재사용이 가능하다. 
 * 불변 컨테이너
+	* 컨테이너는 생성되고 폐기 될뿐 수정되지 않는다는 것이 불변 컨테이너다. 
+
+
+## MicroService & Container
+
+마이크로 서비스의 관점에서 서비스를 컨테이너화해서 배포할 수 있다면 이상적이다. 컨테이너화(containerization)을 하면 하부의 인프라스트럭처를 포함하므로 더 자기 완비적(self-contained)하고 자율적이게 된다. 따라서 마이크로 서비스가 특정 클라우드 환경에 종속되지 않고 중립성을 유지할 수 있다. 
+
+
 
 
 
@@ -45,6 +50,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNDY2Mjk5NiwxMDA5OTQ1NDA4LDE5NT
+eyJoaXN0b3J5IjpbMTM3OTAzOTE1NSwxMDA5OTQ1NDA4LDE5NT
 A2NTg1NzAsMzIxNTMwNDgyLDc0MTQxMjQ3M119
 -->
