@@ -82,11 +82,19 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 도커 컨테이너는 실제 실행 중인 **도커 이미지의 구현체이다.** 컨테이너는 호스트 운영체제의 커널을 이용한다. 그래서 동일한 호스트에서 함께 실행 중인 다른 컨테이너와 호스트 커널을 공유한다. 
 
+컨테이너는 인스턴스화 되면 메모리나 CPU 같은 자원을 할당 받는데, 동일한 이미지에서 인스턴스화 된다고 해도 자원할당을 다르게 할 수 있다. 
+
+### Docker Registry
+
+
+
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDc1NzM5NCwxMjUwMzQwMjQxLC04OD
+eyJoaXN0b3J5IjpbMTM4Nzg1NDQwNSwxMjUwMzQwMjQxLC04OD
 kwMTE1NzAsLTE0ODE0NjYwNDMsMTgxNjI4NzI3LC0xMTg2Nzg5
 MzEzLDIzMDU4ODUzNiw1NjMwNTY1ODEsOTEwNzU4MTUyLDEwMD
 k5NDU0MDgsMTk1MDY1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDcz
