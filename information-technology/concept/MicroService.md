@@ -53,13 +53,17 @@
 
 도커는 리눅스 커널 기반으로 가벼운 컨테이너를 만들고, 탑재하고 실행할 수 있는 플랫폼이다. 
 
+AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를 제공한다. 도커는 베어 메탈 장비나, VM ware, 하이버 브이 같은 전통 가상머신에서도 설치 할 수 있다. 
+
+
+## Docker Core
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMwNTg4NTM2LDU2MzA1NjU4MSw5MTA3NT
-gxNTIsMTAwOTk0NTQwOCwxOTUwNjU4NTcwLDMyMTUzMDQ4Miw3
-NDE0MTI0NzNdfQ==
+eyJoaXN0b3J5IjpbLTExODY3ODkzMTMsMjMwNTg4NTM2LDU2Mz
+A1NjU4MSw5MTA3NTgxNTIsMTAwOTk0NTQwOCwxOTUwNjU4NTcw
+LDMyMTUzMDQ4Miw3NDE0MTI0NzNdfQ==
 -->
