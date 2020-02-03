@@ -72,6 +72,8 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 도커 이미지에는 애플리케이션을 실행하고 서비스를 외부에 노출하는 명령들도 포함된다.
 
+도커 이미지는 계층형 아키텍처에 바탕을 두고 있고, 가장 아래에 있는 이미지는 리눅스와 같은 운영체제를 포함하고 있다. 일반적으로 개발자가 완전 백지에서 부터 도커 이미지를 만들 일은 없다. 운영체제 이미지나 자바 8 이미지 처럼 신뢰할 수 있는 이미지를 구할 수 있기 때문이다. 기발자는 이런 이미지들로 원하는 이미지를 만들 수 있다. 
+
 
 ### Docker Client
 
@@ -79,8 +81,9 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MDM0MDI0MSwtODg5MDExNTcwLC0xND
-gxNDY2MDQzLDE4MTYyODcyNywtMTE4Njc4OTMxMywyMzA1ODg1
-MzYsNTYzMDU2NTgxLDkxMDc1ODE1MiwxMDA5OTQ1NDA4LDE5NT
-A2NTg1NzAsMzIxNTMwNDgyLDc0MTQxMjQ3M119
+eyJoaXN0b3J5IjpbLTExNzIwODA5OCwxMjUwMzQwMjQxLC04OD
+kwMTE1NzAsLTE0ODE0NjYwNDMsMTgxNjI4NzI3LC0xMTg2Nzg5
+MzEzLDIzMDU4ODUzNiw1NjMwNTY1ODEsOTEwNzU4MTUyLDEwMD
+k5NDU0MDgsMTk1MDY1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDcz
+XX0=
 -->
