@@ -61,10 +61,13 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 ![enter image description here](https://19yw4b240vb03ws8qm25h366-wpengine.netdna-ssl.com/wp-content/uploads/Docker-API-infographic-container-devops-nordic-apis.png)
 
+### Docker Daemon
+
+도커 데몬은 호스트 장비 위에 설치되는 서버 측 컴포넌트로써 도커 컨테이너를 만들고, 실행하고 배포하는 역할을 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODIxNTI1OTYsLTExODY3ODkzMTMsMj
-MwNTg4NTM2LDU2MzA1NjU4MSw5MTA3NTgxNTIsMTAwOTk0NTQw
-OCwxOTUwNjU4NTcwLDMyMTUzMDQ4Miw3NDE0MTI0NzNdfQ==
+eyJoaXN0b3J5IjpbMTEwODM2NjU4NSwtMTE4Njc4OTMxMywyMz
+A1ODg1MzYsNTYzMDU2NTgxLDkxMDc1ODE1MiwxMDA5OTQ1NDA4
+LDE5NTA2NTg1NzAsMzIxNTMwNDgyLDc0MTQxMjQ3M119
 -->
