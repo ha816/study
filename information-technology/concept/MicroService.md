@@ -45,7 +45,13 @@
 
 ![Image result for docker container](https://i0.wp.com/www.docker.com/blog/wp-content/uploads/011f3ef6-d824-4d43-8b2c-36dab8eaaa72-1.jpg?fit=650%2C530&ssl=1)
 
-위의 그림은 동일한 장비 위에서 실행되는 세 개의 마이크로 서비스를 보여준다. 
+위의 그림은 동일한 장비 위에서 실행되는 세 개의 마이크로 서비스를 보여준다. 컨테이너는 같은 운영체제를 공유하지만 실행환경은 독립적이다. 
+
+# Docker
+
+컨테이너는 그전부터 사용되었지만, Docker가 새 지평을 열었다고 해도 과언이 아니다. 컨테이너화 라는 말 대신 도커화(dockerization)이라는 용어를 쓸정도로 인기가 압도적이다. 
+
+도커는 리눅스 컨
 
 
 
@@ -53,7 +59,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNjA3MTk3Niw1NjMwNTY1ODEsOTEwNz
+eyJoaXN0b3J5IjpbLTM5Mjk5OTAxNyw1NjMwNTY1ODEsOTEwNz
 U4MTUyLDEwMDk5NDU0MDgsMTk1MDY1ODU3MCwzMjE1MzA0ODIs
 NzQxNDEyNDczXX0=
 -->
