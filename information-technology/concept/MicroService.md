@@ -27,7 +27,8 @@
 * 저렴한 라이센스 비용
 * 데브옵스
 * 버전관리
-* 
+* 재사용성
+* 불변 컨테이너
 
 
 
@@ -43,6 +44,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDExODcyLDEwMDk5NDU0MDgsMTk1MD
-Y1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDczXX0=
+eyJoaXN0b3J5IjpbODA5MDcwNjQsMTAwOTk0NTQwOCwxOTUwNj
+U4NTcwLDMyMTUzMDQ4Miw3NDE0MTI0NzNdfQ==
 -->
