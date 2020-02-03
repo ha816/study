@@ -19,7 +19,7 @@
 > 자바 메모리는 쓰레드 전체가 공유하는 메모리 영역(Shared Memory)과 개별 쓰레드가 가지는 고유 메모리 영역(Non-Shared Memory) 두 가지로 나뉜다. 공유 메모리 영역에는 Method 영역, Heap 영역이 있다. Method 영역은 클래스 영역이라고도 불리는데 클래스 정보(이름, 필드, 메서드), 클래스 변수, Run-Time Constant pool 이 저장되는 영역이다. Heap 영역은 객체들이 저장되는 공간이다. 
 
 >**불변객체란? 왜 사용하는지?**
->불변 객체는 객체의 상태가 절대 변하지 않는 것을 보장하는 객체를 말한다. 대표적인불변객체는 String이 있다. 불변 객체를 사용하면 Thread-Safe한 장점이 있다.
+>불변 객체는 객체의 상태가 절대 변하지 않는 것을 보장하는 객체를 말한다. 대표적인불변객체는 String이 있다. 불변 객체를 사용하면 Thread-Safe한 장점이 있고 방어적 복사본 코드를 만들 필요가 없다.
 
 >**final? Where To?**
 >final 키워드는 변수, 클래스, 메서드에 붙일 수 있다. 원시타입변수에 붙이면, 값을 바꿀 수 없고, 참조변수에 붙이면, 주소값을 변경할 수 없다. 클래스에 붙으면 해당 클래스를 상속받을 수 없다는 것을 말한다. 메서드에 붙이면, 메서드를 오버라이딩(재정의)할 수 없다는 것을 말한다. 
@@ -230,11 +230,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNzQ1MTc2OCwtOTIzMjAyMjUxLC0xOD
-g1NDA3NTQ1LC0xOTA0OTUwMjE4LC0xMTI0MDQxMTM5LDg1MzQw
-NzEyMywtMjEyODczMzU5NCwtMTg5NzQyMTU4OSwtMTIwMTg4MD
-Y4MSwtMjQ3MjEzNjI5LC04MjQ2NTMyMTIsLTk4MzMzNDgxOSwt
-MTc2Mzk3MjA3LC0xOTEyOTY2OTU1LC00OTUxODQ3NjEsLTc1Nz
-M3ODU1MywxMjI1MzQ5MTgyLDE3NTYwOTk4MywtMTgyMzQxNDU4
-Myw5NTUwMjUzMjZdfQ==
+eyJoaXN0b3J5IjpbMTMyNDA2MTQxOSwtOTE3NDUxNzY4LC05Mj
+MyMDIyNTEsLTE4ODU0MDc1NDUsLTE5MDQ5NTAyMTgsLTExMjQw
+NDExMzksODUzNDA3MTIzLC0yMTI4NzMzNTk0LC0xODk3NDIxNT
+g5LC0xMjAxODgwNjgxLC0yNDcyMTM2MjksLTgyNDY1MzIxMiwt
+OTgzMzM0ODE5LC0xNzYzOTcyMDcsLTE5MTI5NjY5NTUsLTQ5NT
+E4NDc2MSwtNzU3Mzc4NTUzLDEyMjUzNDkxODIsMTc1NjA5OTgz
+LC0xODIzNDE0NTgzXX0=
 -->
