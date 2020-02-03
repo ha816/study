@@ -55,15 +55,16 @@
 
 AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를 제공한다. 도커는 베어 메탈 장비나, VM ware, 하이버 브이 같은 전통 가상머신에서도 설치 할 수 있다. 
 
-
 ## Docker Core
+
+도커에넌 도커 테몬과 도커 클라이언트라는 두 핵심 컴포넌트가 있다. 데몬과 클라이언트 모두 별개의 실행파일로 제공된다.
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODY3ODkzMTMsMjMwNTg4NTM2LDU2Mz
-A1NjU4MSw5MTA3NTgxNTIsMTAwOTk0NTQwOCwxOTUwNjU4NTcw
-LDMyMTUzMDQ4Miw3NDE0MTI0NzNdfQ==
+eyJoaXN0b3J5IjpbNTA2MTczMTk4LC0xMTg2Nzg5MzEzLDIzMD
+U4ODUzNiw1NjMwNTY1ODEsOTEwNzU4MTUyLDEwMDk5NDU0MDgs
+MTk1MDY1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDczXX0=
 -->
