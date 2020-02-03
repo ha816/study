@@ -40,7 +40,7 @@
 >@Override 에너테이션은 코드 가독성과 개발자의 실수를 방지해주는 역할을 한다. @Override가 붙은 메서드는 상위 클래스나 인터페이스에 있는 특정 메서드를 재정의했다는 의미이다. 현재 다른 메서드와 차이를 명확히 밝혀 가독성을 높이고, 상위 메서드가 개발자의 실수로 변경이 일어나면 컴파일 에러를 낸다.
 
 >**제네릭이란? 구상화(reified)한다는 건 어떤 의미인가?** 
->Generic이란 타입을 매개변수로 받는 것을 말합니다. 제네릭은 대표적인 사용으로는  Collection의 구현체인 List에는 원소로 담은 객체의 타입을 정할 수 
+>Generic이란 타입을 매개변수로 받는 것을 말한다. 예를 들어 List는 담을 원소의 타입을 제네릭을 이용해서 정할 수 있다. 
 
 >**String 객체는? String은 어느 메모리 공간에 올라가는가? 인터닝(interning)이란**? 
 
@@ -231,11 +231,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU1MDQwMzM2LC05MTc0NTE3NjgsLTkyMz
-IwMjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1MDIxOCwtMTEyNDA0
-MTEzOSw4NTM0MDcxMjMsLTIxMjg3MzM1OTQsLTE4OTc0MjE1OD
-ksLTEyMDE4ODA2ODEsLTI0NzIxMzYyOSwtODI0NjUzMjEyLC05
-ODMzMzQ4MTksLTE3NjM5NzIwNywtMTkxMjk2Njk1NSwtNDk1MT
-g0NzYxLC03NTczNzg1NTMsMTIyNTM0OTE4MiwxNzU2MDk5ODMs
-LTE4MjM0MTQ1ODNdfQ==
+eyJoaXN0b3J5IjpbLTIwNTI0ODc3ODcsLTkxNzQ1MTc2OCwtOT
+IzMjAyMjUxLC0xODg1NDA3NTQ1LC0xOTA0OTUwMjE4LC0xMTI0
+MDQxMTM5LDg1MzQwNzEyMywtMjEyODczMzU5NCwtMTg5NzQyMT
+U4OSwtMTIwMTg4MDY4MSwtMjQ3MjEzNjI5LC04MjQ2NTMyMTIs
+LTk4MzMzNDgxOSwtMTc2Mzk3MjA3LC0xOTEyOTY2OTU1LC00OT
+UxODQ3NjEsLTc1NzM3ODU1MywxMjI1MzQ5MTgyLDE3NTYwOTk4
+MywtMTgyMzQxNDU4M119
 -->
