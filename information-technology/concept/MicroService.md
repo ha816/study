@@ -23,12 +23,11 @@
 * 자기 완비적
 	* 컨테이너는 실행에 필요한 바이너리와 의존하는 모든 라이브러리를 가진다.
 * 경량성
-	* 컨테이너는 크기가 자
-* 확장성
+	* 컨테이너는 크기가 작다. (가상 머신 이미지 크기에 비해서)
 * 이식성
-* 저렴한 라이센스 비용
-* 데브옵스
+	* 컨테이너는 장비간 및 클라우드 서비스간 이식이 가능하다.
 * 버전관리
+	* 컨테이너는 버전관리를 지원한다. 아카이브 파일을 관리하듯 컨테이너도 
 * 재사용성
 * 불변 컨테이너
 
@@ -46,6 +45,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTgxNTgxOSwxMDA5OTQ1NDA4LDE5NT
+eyJoaXN0b3J5IjpbMTMyNDY2Mjk5NiwxMDA5OTQ1NDA4LDE5NT
 A2NTg1NzAsMzIxNTMwNDgyLDc0MTQxMjQ3M119
 -->
