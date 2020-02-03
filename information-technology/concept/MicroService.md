@@ -41,8 +41,7 @@
 
 ## MicroService & Container
 
-마이크로 서비스와 컨테이너는 직접적으로 아무런 관련이 없다. 마이크로 서비스는 컨테이너 없이도 수행될 수 있으며, 컨테이너 역시 일체형 애플리케이션을 실행할 수 있다. 
-하지만 둘은 매우 궁합이 잘 맞는다. 컨테이너화(containerization)을 하면 하부의 인프라스트럭처를 포함하므로 더 자기 완비적(self-contained)하고 자율적이게 된다. 따라서 마이크로 서비스가 특정 클라우드 환경에 종속되지 않고 중립성을 유지할 수 있다. 
+마이크로 서비스와 컨테이너는 직접적으로 아무런 관련이 없다. 마이크로 서비스는 컨테이너 없이도 수행될 수 있으며, 컨테이너 역시 일체형 애플리케이션을 실행할 수 있다.  하지만 둘은 매우 궁합이 잘 맞는다.
 
 
 
@@ -52,7 +51,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI0NjA1MDczLDkxMDc1ODE1MiwxMDA5OT
+eyJoaXN0b3J5IjpbNTYzMDU2NTgxLDkxMDc1ODE1MiwxMDA5OT
 Q1NDA4LDE5NTA2NTg1NzAsMzIxNTMwNDgyLDc0MTQxMjQ3M119
 
 -->
