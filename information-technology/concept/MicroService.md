@@ -66,9 +66,14 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 도커 데몬은 호스트 장비 위에 설치되는 서버 측 컴포넌트로써 도커 컨테이너를 만들고, 실행하고 배포하는 역할을 담당한다. 또한 도커 클라이언트를 위한 API를 외부에 노출하여 도커 클라이언트가 도커 데몬과 상호작용할 수 있게 한다. 
 도커 데몬을 호스트 장비위에서 실행되는 컨트롤러 서비스라고 봐도 무리가 없다. 
 
+### Docker Cleint 
+
+도커 클라이언트는 소켓이나 REST API를 통해 도커 데몬과 상호작용하는 커맨드 라인 인터페이스 프로그램(Command Line Interface)이다. 도커 클라이언트는 데몬이 실행되고 있는 호스트와 동일한 호스트에서 실행할 수도 있고, 다른 호스트에서 실행되고 있는 원격의 데몬과도 연결할 수 있다. 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjI4NzI3LC0xMTg2Nzg5MzEzLDIzMD
-U4ODUzNiw1NjMwNTY1ODEsOTEwNzU4MTUyLDEwMDk5NDU0MDgs
-MTk1MDY1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDczXX0=
+eyJoaXN0b3J5IjpbNzcyMzA5MDQ4LDE4MTYyODcyNywtMTE4Nj
+c4OTMxMywyMzA1ODg1MzYsNTYzMDU2NTgxLDkxMDc1ODE1Miwx
+MDA5OTQ1NDA4LDE5NTA2NTg1NzAsMzIxNTMwNDgyLDc0MTQxMj
+Q3M119
 -->
