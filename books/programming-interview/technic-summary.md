@@ -40,18 +40,10 @@
 >@Override 에너테이션은 코드 가독성과 개발자의 실수를 방지해주는 역할을 한다. @Override가 붙은 메서드는 상위 클래스나 인터페이스에 있는 특정 메서드를 재정의했다는 의미이다. 현재 다른 메서드와 차이를 명확히 밝혀 가독성을 높이고, 상위 메서드가 개발자의 실수로 변경이 일어나면 컴파일 에러를 낸다.
 
 >**제네릭이란? 실체화(reified)한다는 건 어떤 의미인가?** 
->Generic이란 매개변수화된 타입이라고 한다. 즉 사용하려는 타입을 매개변수로 받는것을 말한다. 예를 들어 List는 담을 원소의 타입을 제네릭을 이용해서 정할 수 있다. 만약 제네리 제네릭은 reified 하다고 하는데 이는 컴파일 단계에서는 존재하지만 실제 런타임 코드에는 없는것을 말한다.  
->제네릭은 `매개변수화된 타입`이라고도 알려져 있다. 즉 매개변수로 어떤 타입을 입력받은 타입을 말한다. 만약 컬렉션 클래스에서 매개변수로 특정 타입을 입력 받으면 컴파일러는 그 특정 타입만 포함될 수 있게 컬렉션을 제한한다. 
+>Generic이란 매개변수화된 타입이라고 한다. 즉 사용하려는 타입을 매개변수로 받는것을 말한다. 예를 들어 List는 담을 원소의 타입을 제네릭을 이용해서 정할 수 있다. 그러면 컴파일러는 list에 특정 타입만 포함되도록 컬렉션을 제한한다. 
 
-컬렉션 API에 있는 모든 클래스는 제네리릭을 사용해서 만들었다. List인터페이스와 그 구현은 한 가지 타입의 매개변수만 받는다. Map인터페이스는 두가지 타입 매개변수를 받는다. 
-
-> 타입의 변화는 제네릭에 어떤 영향을 미치는가? 
-
-클래스 B가 A를 확장하면 B는 A의 하위 타입이다. 하지만 `List<B>`는 `List<A>`의 하위 타입이 아니다. 공분산이라 알려진 자바의 제네릭 시스템이는 이에 관한 모델링 방법이 없다. 
-
-제네릭 타입을 다룰때는 때때로 클래스의 하위타입을 받아들여야 하는 경우도 있다. 이럴때 `?`인 와이들 카드를 사용한다. 
-
-예를들어 List<? extends A>는 컴파일러에게 A 클래스를 확장한 모든 인스턴스를 List원소로가지는 매개변수 타입이다.  
+실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 자바 제네릭은 실체화가 아니다. 즉  
+제네릭은 reified 하다고 하는데 이는 컴파일 단계에서는 존재하지만 실제 런타임 코드에는 없는것을 말한다.  
 
 > 구상화한다는 건 어떤 의미인가? 
 
@@ -250,11 +242,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk2NzM1MDYsMTc3OTk2NTU3MCwtOTE3ND
-UxNzY4LC05MjMyMDIyNTEsLTE4ODU0MDc1NDUsLTE5MDQ5NTAy
-MTgsLTExMjQwNDExMzksODUzNDA3MTIzLC0yMTI4NzMzNTk0LC
-0xODk3NDIxNTg5LC0xMjAxODgwNjgxLC0yNDcyMTM2MjksLTgy
-NDY1MzIxMiwtOTgzMzM0ODE5LC0xNzYzOTcyMDcsLTE5MTI5Nj
-Y5NTUsLTQ5NTE4NDc2MSwtNzU3Mzc4NTUzLDEyMjUzNDkxODIs
-MTc1NjA5OTgzXX0=
+eyJoaXN0b3J5IjpbLTg3Mzk5NTg1NywxNzc5OTY1NTcwLC05MT
+c0NTE3NjgsLTkyMzIwMjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1
+MDIxOCwtMTEyNDA0MTEzOSw4NTM0MDcxMjMsLTIxMjg3MzM1OT
+QsLTE4OTc0MjE1ODksLTEyMDE4ODA2ODEsLTI0NzIxMzYyOSwt
+ODI0NjUzMjEyLC05ODMzMzQ4MTksLTE3NjM5NzIwNywtMTkxMj
+k2Njk1NSwtNDk1MTg0NzYxLC03NTczNzg1NTMsMTIyNTM0OTE4
+MiwxNzU2MDk5ODNdfQ==
 -->
