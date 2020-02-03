@@ -43,9 +43,9 @@
 
 마이크로 서비스와 컨테이너는 직접적으로 아무런 관련이 없다. 마이크로 서비스는 컨테이너 없이도 수행될 수 있으며, 컨테이너 역시 일체형 애플리케이션을 실행할 수 있다.  하지만 둘은 매우 궁합이 잘 맞는다.
 
+![Image result for docker container](https://i0.wp.com/www.docker.com/blog/wp-content/uploads/011f3ef6-d824-4d43-8b2c-36dab8eaaa72-1.jpg?fit=650%2C530&ssl=1)
 
-
-
+위의 그림은 동일한 장비 위에서 실행되는 세 개의 마이크로 서비스를 보여준다. 
 
 
 
@@ -53,7 +53,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMDg0MzU1Myw1NjMwNTY1ODEsOTEwNz
+eyJoaXN0b3J5IjpbMTQxNjA3MTk3Niw1NjMwNTY1ODEsOTEwNz
 U4MTUyLDEwMDk5NDU0MDgsMTk1MDY1ODU3MCwzMjE1MzA0ODIs
 NzQxNDEyNDczXX0=
 -->
