@@ -20,6 +20,16 @@
 
 ### Container의 장점
 
+* 자기 완비적
+* 경량성
+* 확장성
+* 이식성
+* 저렴한 라이센스 비용
+* 데브옵스
+* 버전관리
+* 
+
+
 
 ## 가상 머신과 컨테이너의 차이 
 
@@ -33,6 +43,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc3MTY3NDg1LDEwMDk5NDU0MDgsMTk1MD
+eyJoaXN0b3J5IjpbLTYwNDExODcyLDEwMDk5NDU0MDgsMTk1MD
 Y1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDczXX0=
 -->
