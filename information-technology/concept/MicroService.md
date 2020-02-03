@@ -22,8 +22,11 @@
 
 언뜻 보면 가상화와 컨테이너화는 정확하게 동일한 특징을 갖고 있는 것으로 보인다. 하지만 컨테이너와 가상화는 같지 않다. **가상머신과 컨테이너는 가상화 분야에서 서로 다른 문제를 해결하는 다른 기법이다.**
 
+가상 머신은 컨테이너에 비해 훨씬 더 로우 레벨에서 동작한다. 가상머신은 CPU, 메인보드, 메모리 등과 같은 하드웨어를 가상화한다. 일반적으로 게스트 OS라 불리는 별도의 운영체제를 가진 고립된 유닛이다. 가상 머신은 운영체제 전체를 복제해서 가상 머신위에서 실행하는데, 이때 호스트 운영체제 환경에 전혀 의존하지 않는다. 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIxNTMwNDgyLDc0MTQxMjQ3M119
+eyJoaXN0b3J5IjpbLTIwNDQ0NDU4MzIsMzIxNTMwNDgyLDc0MT
+QxMjQ3M119
 -->
