@@ -44,7 +44,8 @@
 >실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 제네릭은 실체화가 아니다. 컴파일시에는 존재하지만 실제 동작하는 코드에는 존재하지 않는다.
 
 >**String 객체는? String은 어느 메모리 공간에 올라가는가? 인터닝(interning)이란**? 
->String 객체는 대표적인 불변객체로, new 키워드로 생성하지 않는한 String Constant Pool에 올라간다. 이 상수 풀은 계속해서 변화하는데 
+>String 객체는 대표적인 불변객체로, new 키워드로 생성하지 않는한 String Constant Pool에 올라간다. 이 상수 풀은 계속해서 변화하는데 String의 
+_When the `intern()` method is invoked on a `String` object it looks the string contained by this `String` object in the pool, if the string is found there then the string from the pool is returned. Otherwise, this `String` object is added to the pool and a reference to this `String` object is returned._
 
 >**예외처리 구조를 이루는 주요 클래스를 설명하라. 그리고 Error와 Exception의 차이는?**
 
@@ -233,11 +234,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzM1NzAzMTksLTMwNDYxNzYxNCwxNz
-c5OTY1NTcwLC05MTc0NTE3NjgsLTkyMzIwMjI1MSwtMTg4NTQw
-NzU0NSwtMTkwNDk1MDIxOCwtMTEyNDA0MTEzOSw4NTM0MDcxMj
-MsLTIxMjg3MzM1OTQsLTE4OTc0MjE1ODksLTEyMDE4ODA2ODEs
-LTI0NzIxMzYyOSwtODI0NjUzMjEyLC05ODMzMzQ4MTksLTE3Nj
-M5NzIwNywtMTkxMjk2Njk1NSwtNDk1MTg0NzYxLC03NTczNzg1
-NTMsMTIyNTM0OTE4Ml19
+eyJoaXN0b3J5IjpbLTg3MzMyNTA3OSwtMTc3MzU3MDMxOSwtMz
+A0NjE3NjE0LDE3Nzk5NjU1NzAsLTkxNzQ1MTc2OCwtOTIzMjAy
+MjUxLC0xODg1NDA3NTQ1LC0xOTA0OTUwMjE4LC0xMTI0MDQxMT
+M5LDg1MzQwNzEyMywtMjEyODczMzU5NCwtMTg5NzQyMTU4OSwt
+MTIwMTg4MDY4MSwtMjQ3MjEzNjI5LC04MjQ2NTMyMTIsLTk4Mz
+MzNDgxOSwtMTc2Mzk3MjA3LC0xOTEyOTY2OTU1LC00OTUxODQ3
+NjEsLTc1NzM3ODU1M119
 -->
