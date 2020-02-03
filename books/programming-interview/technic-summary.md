@@ -48,6 +48,7 @@
 >String Interning이란 불변의 독립적인 문자열을 저장하는 방법이다. String은 intern메서드를 가지는데, 상수 풀에 해당 문자열이 있으면 풀에 문자열을 가져오고 아니라면, 이 문자열은 풀에 추가되고 반환된다. 
 
 >**예외처리 구조를 이루는 주요 클래스를 설명하라. 그리고 Error와 Exception의 차이는?**
+>
 
 > **StringBuilder와 StringBuffer의 차이는?**
 > StringBuilder는 Thread Safe하지 않지만 StringBuffer는 그러하다. 따라서 StringBuilder가 더 빠르다.
@@ -234,11 +235,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIzMzYwNTAzLC0xNzczNTcwMzE5LC0zMD
-Q2MTc2MTQsMTc3OTk2NTU3MCwtOTE3NDUxNzY4LC05MjMyMDIy
-NTEsLTE4ODU0MDc1NDUsLTE5MDQ5NTAyMTgsLTExMjQwNDExMz
-ksODUzNDA3MTIzLC0yMTI4NzMzNTk0LC0xODk3NDIxNTg5LC0x
-MjAxODgwNjgxLC0yNDcyMTM2MjksLTgyNDY1MzIxMiwtOTgzMz
-M0ODE5LC0xNzYzOTcyMDcsLTE5MTI5NjY5NTUsLTQ5NTE4NDc2
-MSwtNzU3Mzc4NTUzXX0=
+eyJoaXN0b3J5IjpbLTExMzcyNTgwNTcsMjIzMzYwNTAzLC0xNz
+czNTcwMzE5LC0zMDQ2MTc2MTQsMTc3OTk2NTU3MCwtOTE3NDUx
+NzY4LC05MjMyMDIyNTEsLTE4ODU0MDc1NDUsLTE5MDQ5NTAyMT
+gsLTExMjQwNDExMzksODUzNDA3MTIzLC0yMTI4NzMzNTk0LC0x
+ODk3NDIxNTg5LC0xMjAxODgwNjgxLC0yNDcyMTM2MjksLTgyND
+Y1MzIxMiwtOTgzMzM0ODE5LC0xNzYzOTcyMDcsLTE5MTI5NjY5
+NTUsLTQ5NTE4NDc2MV19
 -->
