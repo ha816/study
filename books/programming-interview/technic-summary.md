@@ -45,9 +45,7 @@
 
 >**String 객체는? String은 어느 메모리 공간에 올라가는가? 인터닝(interning)이란**? 
 >String 객체는 대표적인 불변객체로, new 키워드로 생성하지 않는한 String Constant Pool에 올라간다. 
->String Interning이란 불변의 독립적인 문자열을 저장하는 방법이다. String은 intern메서드를 가지는데, 상수 풀에 
-
-_When the `intern()` method is invoked on a `String` object it looks the string contained by this `String` object in the pool, if the string is found there then the string from the pool is returned. Otherwise, this `String` object is added to the pool and a reference to this `String` object is returned._
+>String Interning이란 불변의 독립적인 문자열을 저장하는 방법이다. String은 intern메서드를 가지는데, 상수 풀에 해당 문자열이 있으면 풀에 문자열을 가져오고 아니라면, 이 문자열은 풀에 추가되고 반환된다. 
 
 >**예외처리 구조를 이루는 주요 클래스를 설명하라. 그리고 Error와 Exception의 차이는?**
 
@@ -236,11 +234,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjI2OTI1OTksLTE3NzM1NzAzMTksLT
-MwNDYxNzYxNCwxNzc5OTY1NTcwLC05MTc0NTE3NjgsLTkyMzIw
-MjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1MDIxOCwtMTEyNDA0MT
-EzOSw4NTM0MDcxMjMsLTIxMjg3MzM1OTQsLTE4OTc0MjE1ODks
-LTEyMDE4ODA2ODEsLTI0NzIxMzYyOSwtODI0NjUzMjEyLC05OD
-MzMzQ4MTksLTE3NjM5NzIwNywtMTkxMjk2Njk1NSwtNDk1MTg0
-NzYxLC03NTczNzg1NTNdfQ==
+eyJoaXN0b3J5IjpbMjIzMzYwNTAzLC0xNzczNTcwMzE5LC0zMD
+Q2MTc2MTQsMTc3OTk2NTU3MCwtOTE3NDUxNzY4LC05MjMyMDIy
+NTEsLTE4ODU0MDc1NDUsLTE5MDQ5NTAyMTgsLTExMjQwNDExMz
+ksODUzNDA3MTIzLC0yMTI4NzMzNTk0LC0xODk3NDIxNTg5LC0x
+MjAxODgwNjgxLC0yNDcyMTM2MjksLTgyNDY1MzIxMiwtOTgzMz
+M0ODE5LC0xNzYzOTcyMDcsLTE5MTI5NjY5NTUsLTQ5NTE4NDc2
+MSwtNzU3Mzc4NTUzXX0=
 -->
