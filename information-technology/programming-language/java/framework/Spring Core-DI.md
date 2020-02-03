@@ -239,19 +239,9 @@ public void setUserRepository(UserRepository repository){
 DI 컨테이너의 빈을 자동으로 의존성 주입하는 방법식이다. 자세히는 빈 컨테이너가 제공하는 빈을 특정 클래스에서 사용하고 싶을때 사용하는 방법이다. `@Autowired`을 세터 메서드, 생성자, 필드에 붙이면 빈 컨테이너로부터 필요한 객체를 주입받을 수 있다. 세터 인젝션, 컨스트럭터 인젝션, 필드 인젝션 모두에서 활용가능하다. 
 
 기본적으로 의존성 주입이 반드시 성공한다고 가정하기 때문에, 주입할 타입에 해당하는 빈을 DI 컨테이너에서 찾지 못한다면 NoSuchBeanDefinitionException 예외가 발생한다. 
-이런 필수 조건을 완하하고 싶다 타입을 이용하는 방식(autowiring by type)과 이름을 이용하는 방식(autowiring by name) 두가지가 있다. 
+이런 필수 조건을 완하하고 싶다면 Autowiried 애너테이션의 required를 false로 설정하면 된다. `requlare = false`로 하면 해당 타입의 빈을 찾지 못하더라도 예외가 발생하지 않는다. 그렇다고 하더라도 의존성 주입은 실패했기 때문에 해당 필드의 값은 null이 된다.
 
-### Autowiried 애너테이션의 required를 false로 설정하면 된다. `requlare = false`로 하면 해당 타입의 빈을 찾지 못하더라도 예외가 발생하지 않는다. 그렇다고 하더라도 의존성 주입은 실패했기 때문에 해당 필드의 값은 null이 된다.
-
-DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤 것을 써야할지 알 수 없다. 이럴 경우 NoUniqueBeanDefinitionException이 발생한다. 이럴때 `@Qualifier` 애너테이션으로 추가하려는 빈 이름을 지정하면 원하는 빈을 설정할 수 있다. ng by Type
-
-### Autowiring by Name
-
-### Bean Scope
-
-
-### Bean Life Cycle
-
+DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤 것을 써야할지 알 수 없다. 이럴 경우 NoUniqueBeanDefinitionException이 발생한다. 이럴때 `@Qualifier` 애너테이션으로 추가하려는 빈 이름을 지정하면 원하는 빈을 설정할 수 있다.
 
 
 
@@ -259,11 +249,11 @@ DI 컨테이너에 같은 타입의 빈이 여럿 발견된다면 그 중 어떤
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2NzQ4NDg1LDIwMjE5NTI2MTYsLTE5NT
-c1ODIxMTIsMTczNjM5MTMwLC0xMzcwOTMxNzUwLC0yMTI3NDM5
-OTk3LC0xNzQ0MzYwNDI4LC02NTg3ODMzNjAsLTE4MjIzNDA1OD
-UsLTM5NzQzNDY2OSwtMTY2OTQzNjY4OSwtNDM3MDQ4NjY0LDEx
-NTExMTkzNDAsNzk4NjIyMDQxLC0xOTI1MjIxMDkxLC0xNDIzNz
-k0MTQ0LDE2NjYzNTY2NzYsLTIxMTg1NDkwNjgsMTc5ODU3MzQ1
-OCw5ODY5NTE1NF19
+eyJoaXN0b3J5IjpbLTEzMDE4MzcxNjYsMjAyMTk1MjYxNiwtMT
+k1NzU4MjExMiwxNzM2MzkxMzAsLTEzNzA5MzE3NTAsLTIxMjc0
+Mzk5OTcsLTE3NDQzNjA0MjgsLTY1ODc4MzM2MCwtMTgyMjM0MD
+U4NSwtMzk3NDM0NjY5LC0xNjY5NDM2Njg5LC00MzcwNDg2NjQs
+MTE1MTExOTM0MCw3OTg2MjIwNDEsLTE5MjUyMjEwOTEsLTE0Mj
+M3OTQxNDQsMTY2NjM1NjY3NiwtMjExODU0OTA2OCwxNzk4NTcz
+NDU4LDk4Njk1MTU0XX0=
 -->
