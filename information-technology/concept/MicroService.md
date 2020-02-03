@@ -78,15 +78,17 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 도커 이미지는 계층형 아키텍처에 바탕을 두고 있고, 가장 아래에 있는 이미지는 리눅스와 같은 운영체제를 포함하고 있다. 일반적으로 개발자가 완전 백지에서 부터 도커 이미지를 만들 일은 없다. 운영체제 이미지나 자바 8 이미지 처럼 신뢰할 수 있는 이미지를 구할 수 있기 때문이다. 기발자는 이런 이미지들로 원하는 이미지를 만들 수 있다. 
 
-### Docker 컨
+### Docker Container
+
+도커 컨테이너는 실제 실행 중인 **도커 이미지의 구현체이다.** 컨테이너는 호스트 운영체제의 커널을 이용한다. 그래서 동일한 호스트에서 함께 실행 중인 다른 컨테이너와 호스트 커널을 공유한다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTA3OTU1NTUsMTI1MDM0MDI0MSwtOD
-g5MDExNTcwLC0xNDgxNDY2MDQzLDE4MTYyODcyNywtMTE4Njc4
-OTMxMywyMzA1ODg1MzYsNTYzMDU2NTgxLDkxMDc1ODE1MiwxMD
-A5OTQ1NDA4LDE5NTA2NTg1NzAsMzIxNTMwNDgyLDc0MTQxMjQ3
-M119
+eyJoaXN0b3J5IjpbMTA1MDc1NzM5NCwxMjUwMzQwMjQxLC04OD
+kwMTE1NzAsLTE0ODE0NjYwNDMsMTgxNjI4NzI3LC0xMTg2Nzg5
+MzEzLDIzMDU4ODUzNiw1NjMwNTY1ODEsOTEwNzU4MTUyLDEwMD
+k5NDU0MDgsMTk1MDY1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDcz
+XX0=
 -->
