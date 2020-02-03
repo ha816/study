@@ -27,8 +27,9 @@
 컨테이너는 전체 하드웨어나 운영체제를 가상화 하지 않는다. 컨테이너는 호스트 커널 및 운영체에 일부를 공유한다. 컨테이너에는 게스트 OS 라는 개념이 있다. 컨테이너는 호스트 운영체제 위에서 고립된 실행 환경을 제공한다. 그래서 가볍고 빠르다. 컨테이너 내부에서 실행되는 프로세스들은 동일한 장비상의 다른 컨테이너에서 실행되는 프로세스들과 완전히 독립적이다. 하지만 동일한 호스트에 있는 컨테이너들이 운영체제 를 공유함으로 제약 사항도 있다. 예를 들어 컨테이너 내부에서는 IP 테이블 방화벽 규칙 같은것을 설정 할 수 없다. 
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwOTk0NTQwOCwxOTUwNjU4NTcwLDMyMT
-UzMDQ4Miw3NDE0MTI0NzNdfQ==
+eyJoaXN0b3J5IjpbMzg4NTYyMjg2LDEwMDk5NDU0MDgsMTk1MD
+Y1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDczXX0=
 -->
