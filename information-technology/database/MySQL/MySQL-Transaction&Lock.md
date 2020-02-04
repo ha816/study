@@ -64,7 +64,8 @@ RENAME TABLE tab_a TO tab_b
 ### 잠금 종류
 
 * 레코드 락(Record lock, Record only lock)
-	* 레코드 자체만 잠그는 락, InnoDB에서는 레코드 자체가 아니라 인덱스를 잠금.
+	* 레코드 자체만 잠그는 락
+	* InnoDB에서는 레코드 자체가 아니라 인덱스를 잠금.
 	* 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 수행
 * 넥스트 키 락(Next key lock)
 	* 레코드 락과 갭락을 합쳐 놓은 형태의 잠금.
@@ -77,5 +78,5 @@ RENAME TABLE tab_a TO tab_b
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjMzNDM0MV19
+eyJoaXN0b3J5IjpbLTEzMzYwNDU0MjVdfQ==
 -->
