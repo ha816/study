@@ -67,8 +67,12 @@ RENAME TABLE tab_a TO tab_b
 	* 레코드 자체만 잠그는 락
 	* InnoDB에서는 레코드 자체가 아니라 인덱스에 레코드를 잠근다.
 	* 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 한다.
+	* 갭 락(Gap lcok)
+		* 다른 DBMS와 다르게 GAP이라는 락이 MySQL에는 존재
+		* 레코드 자체가 아니라 레코드와 바로 인접한 레코드 사이의 간격만 잠근다. 
+		* 갭락의 역할은 레코드와 레코드 사이 간격에 새로운 레코드가 INSERT되는 것을 제어한다.  갭락은 
 * 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjE3Nzg3MjBdfQ==
+eyJoaXN0b3J5IjpbMTA3MjMzMzIyOV19
 -->
