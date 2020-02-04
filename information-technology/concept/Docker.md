@@ -21,7 +21,7 @@
 
 ## Docker Image
 
-도커 이미지는 **운영체제 라이브러리, 애플리케이션 및 의존 라이브러리의 읽기 전용 복사본이다.** 이미지가 생성되면 아무린 수정도 필요 없이 어떤 도커 플랫폼 위에서든 실행할 수 있다. 
+도커 이미지는 **운영체제 라이브러리, 애플리케이션 및 의존 라이브러리 등의 읽기 전용 복사본이다.** 이미지가 생성되면 아무런 수정도 필요 없이 어떤 도커 플랫폼 위에서든 실행할 수 있다. 
 
 도커 이미지에는 애플리케이션을 실행하고 서비스를 외부에 노출하는 명령들도 포함된다.
 
@@ -45,7 +45,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ0NDcyODk3LDE4MDAwODUwNTMsLTExOT
-UyNDM3ODksLTEzMDI2Mzg4MjUsLTE0Nzk3NjIyNDgsLTE2Mzcw
-OTUyNTJdfQ==
+eyJoaXN0b3J5IjpbMTEwNTI1NTg5MCwxODAwMDg1MDUzLC0xMT
+k1MjQzNzg5LC0xMzAyNjM4ODI1LC0xNDc5NzYyMjQ4LC0xNjM3
+MDk1MjUyXX0=
 -->
