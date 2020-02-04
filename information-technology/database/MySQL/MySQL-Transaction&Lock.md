@@ -77,6 +77,9 @@ RENAME TABLE tab_a TO tab_b
 
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
+* 자동증가 락(Auto increment lock)
+	* 자동 증가하는 숫자 값을 추출하기 위해 AUTO_INCREMENT라는 컬럼 속성이 존재한다.
+	* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0Nzc2MTE5Ml19
+eyJoaXN0b3J5IjpbLTM3NjQzODQ2M119
 -->
