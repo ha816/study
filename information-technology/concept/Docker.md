@@ -30,19 +30,17 @@
 도커 컨테이너는 실제 실행 중인 **도커 이미지의 구현체이다.** 컨테이너는 호스트 운영체제의 커널을 이용한다. 그래서 동일한 호스트에서 함께 실행 중인 다른 컨테이너와 호스트 커널을 공유한다. 
 컨테이너는 인스턴스화 되면 메모리나 CPU 같은 자원을 할당 받는데, 동일한 이미지에서 인스턴스화 된다고 해도 자원할당을 다르게 할 수 있다. 
 
+## Docker File
+
+도커 이미지를 만들 수 있는 명령어를 포함하고 있는 빌드 파일 또는 스크립트 파일이다. 도커 파일에는 기반 이미지를 가져오는 것 부터 여러 단계가 포함된다. 도커 파일은 maven의 pom.xml에 해당한다고 볼 수 있다.
+
 ## Docker Registry
 
 도커 이미지를 퍼블리싱하고 다운로드할 수 있는 중앙 저장소이다. 도커 허브(hub.docker.com)에서 제공하는 중앙 저장소이다. 도커는 자체적으로 보유하고 있는 환경에 도커 레지스트리를 구성할 수 있는데 사용하는 도커 트러스티드 레지스트리(DTR, Docker Trusted Registry)도 제공한다
 
-## Docker file
-
-도커 이미지를 만들 수 있는 명령어를 포함하고 있는 빌드 파일 또는 스크립트 파일이다. 도커 파일에는 기반 이미지를 가져오는 것 부터 여러 단계가 포함된다. 도커 파리은 maven의 pom.xml에 해당한다고 볼 수 있다.
-
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMzMjI3NTg4LDE1NTE0MzM5NzAsMTEwNT
-I1NTg5MCwxODAwMDg1MDUzLC0xMTk1MjQzNzg5LC0xMzAyNjM4
-ODI1LC0xNDc5NzYyMjQ4LC0xNjM3MDk1MjUyXX0=
+eyJoaXN0b3J5IjpbLTk3OTU1NzAzMiwxNTUxNDMzOTcwLDExMD
+UyNTU4OTAsMTgwMDA4NTA1MywtMTE5NTI0Mzc4OSwtMTMwMjYz
+ODgyNSwtMTQ3OTc2MjI0OCwtMTYzNzA5NTI1Ml19
 -->
