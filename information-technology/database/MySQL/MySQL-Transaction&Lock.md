@@ -71,12 +71,11 @@ RENAME TABLE tab_a TO tab_b
 	* 레코드 락과 갭락을 합쳐 놓은 형태의 잠금.
 	* 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적
 * 갭 락(Gap lock)
-	* MySQL에만 존재
-	* 레코드 자체가 아니라 레코드와 바로 인접한 레코드 사이의 간격만 잠금.
+	* 레코드 자체가 아니라 레코드와 바로 인접한 레코드 사이의 간격을 잠금
 	* 갭락의 역할은 레코드와 레코드 사이 간격에 새로운 레코드가 INSERT되는 것을 제어한다.  갭락은 개념일뿐 넥스크 키 락의 일부로 사용된다.
 
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzYwNDU0MjVdfQ==
+eyJoaXN0b3J5IjpbLTEyNDUwNjgyN119
 -->
