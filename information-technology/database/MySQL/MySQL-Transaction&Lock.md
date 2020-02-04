@@ -55,7 +55,9 @@ RENAME TABLE tab_a TO tab_b
 
 ## InnoDB 잠금의 잠금방식
 
-
+> 비관적 잠금과 낙관적 잠금
+> 비관적 잠금은 현재 트랜잭션에서 변경하고자 하는 레코드에 대해 잠금을 획득하고 작업을 처리하는 방식. 현재 변경하고자 하는 레코드
+> 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjQ0MTE3NzZdfQ==
+eyJoaXN0b3J5IjpbLTExMTUxNzUwNTFdfQ==
 -->
