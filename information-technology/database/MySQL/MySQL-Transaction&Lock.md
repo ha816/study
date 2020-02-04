@@ -77,9 +77,9 @@ RENAME TABLE tab_a TO tab_b
 	* 레코드 락과 갭락을 합쳐 놓은 형태의 잠금.
 	* 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적
 	* 
-* 
-* 
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNTI5NTIyOF19
+eyJoaXN0b3J5IjpbOTI3MTQ0NzJdfQ==
 -->
