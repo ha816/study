@@ -12,7 +12,8 @@
 
 ## Docker Client
 
-클라이언트는 소켓이나 REST API를 통해 도커 데몬과 상호작용하는 커맨드 라인 인터페이스 프로그램(Command Line Interface)이다. 도커 클라이언트는 데몬이 실행되고 있는 호스트와 동일한 호스트에서 실행할 수도 있고, 다른 호스트에서 실행되고 있는 원격의 데몬과도 연결할 수 있다. 
+클라이언트는 소켓이나 REST API를 통해 도커 데몬과 상호작용하는 커맨드 라인 인터페이스 프로그램(Command Line Interface; CLI)이다. 
+클라이언트는 데몬이 실행되고 있는 호스트와 동일한 호스트에서 실행할 수도 있고, 다른 호스트에서 실행되고 있는 원격의 데몬과도 연결할 수 있다. 
 
 ## Docker Daemon
 
@@ -45,7 +46,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzUzMzc0OTgsLTExOTUyNDM3ODksLT
-EzMDI2Mzg4MjUsLTE0Nzk3NjIyNDgsLTE2MzcwOTUyNTJdfQ==
-
+eyJoaXN0b3J5IjpbLTM1ODk2MzU5MSwtMTE5NTI0Mzc4OSwtMT
+MwMjYzODgyNSwtMTQ3OTc2MjI0OCwtMTYzNzA5NTI1Ml19
 -->
