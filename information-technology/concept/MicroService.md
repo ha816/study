@@ -8,12 +8,10 @@
 > 
 ## Containerization(컨테이너화 가상화; operating system virtualization)
 
-컨테이너화(Containerization) 기술은 운영체제의 입장에서 본다면 사적인 가상공간을 제공하는 것이다. 이런 가상 공간을 컨테이너 또는 가상엔진이라 부른다. 
-
+컨테이너화(Containerization) 기술은 운영체제의 입장에서 본다면 사적인 가상공간을 제공하는 것이다. 그리고 이런 가상 공간을 컨테이너 또는 가상엔진이라 부른다. 
 컨테이너는 뚜렷히 구분되는 소프트웨어 컴포넌트를 빌드하고, 탑재하고 실행할 수 있는 편리한 매커니즘이다. 일반적으로 컨테이너는 하나의 애플리케이션을 실행하는데 필수적인 모든 실행 바이너리 파일과 라이브러리를 함께 가진다. 
 
-### Container의 장점
-
+**컨테이너의 특성**
 * 자기 완비적
 	* 컨테이너는 실행에 필요한 바이너리와 의존하는 모든 라이브러리를 가진다.
 * 경량성
@@ -47,9 +45,9 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNDY3MjUsMTM4NTc3NDM3NiwtMTc4ND
-U0NTQwNCwxMjUwMzQwMjQxLC04ODkwMTE1NzAsLTE0ODE0NjYw
-NDMsMTgxNjI4NzI3LC0xMTg2Nzg5MzEzLDIzMDU4ODUzNiw1Nj
-MwNTY1ODEsOTEwNzU4MTUyLDEwMDk5NDU0MDgsMTk1MDY1ODU3
-MCwzMjE1MzA0ODIsNzQxNDEyNDczXX0=
+eyJoaXN0b3J5IjpbLTExODYzODE1MDgsLTkyNDY3MjUsMTM4NT
+c3NDM3NiwtMTc4NDU0NTQwNCwxMjUwMzQwMjQxLC04ODkwMTE1
+NzAsLTE0ODE0NjYwNDMsMTgxNjI4NzI3LC0xMTg2Nzg5MzEzLD
+IzMDU4ODUzNiw1NjMwNTY1ODEsOTEwNzU4MTUyLDEwMDk5NDU0
+MDgsMTk1MDY1ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDczXX0=
 -->
