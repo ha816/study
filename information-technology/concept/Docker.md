@@ -2,9 +2,7 @@
 # Docker
 
 도커는 컨테이너(화) 기술로 2013년에 오픈소스로 런칭 되었다. 사실 컨테이너화 기술은 사용되는 기술이었지만, Docker가 새 지평을 열었다고 해도 과언이 아니다. 심지어 컨테이너화라는 말 대신 도커화(dockerization)라는 용어가 대명사가 될정도로 인기가 압도적이다. 
-도커는 리눅스 커널 기반으로 가벼운 컨테이너를 만들고, 탑재하고 실행할 수 있는 플랫폼이다. 
-
-AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를 제공한다. 도커는 베어 메탈 장비나, VM ware, 하이버 브이 같은 전통 가상머신에서도 설치 할 수 있다. 
+도커는 리눅스 커널 기반으로 가벼운 컨테이너를 만들고, 탑재하고 실행할 수 있는 플랫폼이다. AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를 제공한다. 도커는 베어 메탈 장비나, VM ware, 하이버 브이 같은 전통 가상머신에서도 설치 할 수 있다. 
 
 ## Docker Core
 
@@ -47,6 +45,6 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDI2Mzg4MjUsLTE0Nzk3NjIyNDgsLT
-E2MzcwOTUyNTJdfQ==
+eyJoaXN0b3J5IjpbLTExOTUyNDM3ODksLTEzMDI2Mzg4MjUsLT
+E0Nzk3NjIyNDgsLTE2MzcwOTUyNTJdfQ==
 -->
