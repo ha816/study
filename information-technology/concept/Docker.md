@@ -1,7 +1,7 @@
 
 # Docker
 
-컨테이너는 그전부터 사용되었지만, Docker가 새 지평을 열었다고 해도 과언이 아니다. 컨테이너화 라는 말 대신 도커화(dockerization)이라는 용어를 쓸정도로 인기가 압도적이다. 
+컨테이너는 과거 부터 사용되는 기술이었지만, Docker가 새 지평을 열었다고 해도 과언이 아니다. 심지어 컨테이너화라는 말 대신 도커화(dockerization)이라는 용어를 쓸정도로 인기가 압도적이다. 
 
 도커는 리눅스 커널 기반으로 가벼운 컨테이너를 만들고, 탑재하고 실행할 수 있는 플랫폼이다. 
 
@@ -48,5 +48,6 @@ AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzcwOTUyNTJdfQ==
+eyJoaXN0b3J5IjpbLTE0Nzk3NjIyNDgsLTE2MzcwOTUyNTJdfQ
+==
 -->
