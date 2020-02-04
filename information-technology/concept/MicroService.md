@@ -1,8 +1,6 @@
 # Micro Service
 
-마이크로 서비스는 독립적이고, 자기 완비적(self-contained)이며 느슨하게 결합된 비즈니스 기능을 모아 전체 시스템을 만드는 아키텍처 스타일이다.**
-
-
+마이크로 서비스는 **독립적이고, 자기 완비적(self-contained)이며 느슨하게 결합된 비즈니스 기능을 모아 전체 시스템을 만드는 아키텍처 스타일**이다. 
 서비스 지향 아키텍처(SOA, Service Oriented Architecture)에 이어 점점 더 많은 인기를 끌고 있는 아키텍처 패턴이다. 데브옵스(DovOps)와 클라우드 진영에서 많은 각광을 받고 있다. 
 
 > DevOps
@@ -49,9 +47,9 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NTc3NDM3NiwtMTc4NDU0NTQwNCwxMj
-UwMzQwMjQxLC04ODkwMTE1NzAsLTE0ODE0NjYwNDMsMTgxNjI4
-NzI3LC0xMTg2Nzg5MzEzLDIzMDU4ODUzNiw1NjMwNTY1ODEsOT
-EwNzU4MTUyLDEwMDk5NDU0MDgsMTk1MDY1ODU3MCwzMjE1MzA0
-ODIsNzQxNDEyNDczXX0=
+eyJoaXN0b3J5IjpbLTE0OTQ1NzYwMTIsMTM4NTc3NDM3NiwtMT
+c4NDU0NTQwNCwxMjUwMzQwMjQxLC04ODkwMTE1NzAsLTE0ODE0
+NjYwNDMsMTgxNjI4NzI3LC0xMTg2Nzg5MzEzLDIzMDU4ODUzNi
+w1NjMwNTY1ODEsOTEwNzU4MTUyLDEwMDk5NDU0MDgsMTk1MDY1
+ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDczXX0=
 -->
