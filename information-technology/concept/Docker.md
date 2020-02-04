@@ -17,7 +17,7 @@
 
 ## Docker Daemon
 
-도커 데몬은 호스트 장비 위에 설치되는 서버 측 컴포넌트로 도커 컨테이너를 만들고, 실행하고 배포하는 역할을 담당한다. 또한 도커 클라이언트를 위한 API를 외부에 노출하여 클라이언트가 도커 데몬과 상호작용할 수 있게 한다. 도커 데몬을 호스트 장비위에서 실행되는 컨트롤러 서비스라고 봐도 무리가 없다. 
+도커 데몬은 호스트 장비 위에 설치되는 서버 측 컴포넌트로 도커 컨테이너를 만들고, 실행하고 배포하는 역할을 담당한다. 또한 도커 클라이언트를 위한 API를 외부에 노출하여 클라이언트가 도커 데몬과 상호작용할 수 있게 한다. 도커 데몬을 호스트 장비 위에서 실행되는 컨트롤러 서비스라고 봐도 무리가 없다. 
 
 ## Docker Image
 
@@ -45,6 +45,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMDA4NTA1MywtMTE5NTI0Mzc4OSwtMT
-MwMjYzODgyNSwtMTQ3OTc2MjI0OCwtMTYzNzA5NTI1Ml19
+eyJoaXN0b3J5IjpbNjQ0NDcyODk3LDE4MDAwODUwNTMsLTExOT
+UyNDM3ODksLTEzMDI2Mzg4MjUsLTE0Nzk3NjIyNDgsLTE2Mzcw
+OTUyNTJdfQ==
 -->
