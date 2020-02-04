@@ -71,10 +71,13 @@ RENAME TABLE tab_a TO tab_b
 		* 다른 DBMS와 다르게 GAP이라는 락이 MySQL에는 존재
 		* 레코드 자체가 아니라 레코드와 바로 인접한 레코드 사이의 간격만 잠근다. 
 		* 갭락의 역할은 레코드와 레코드 사이 간격에 새로운 레코드가 INSERT되는 것을 제어한다.  갭락은 개념일뿐 넥스크 키 락의 일부로 사용된다.
-* 넥스트 키 락(
+* 넥스트 키 락(Next key lock)
+	* 레코드 락과 갭락을 합쳐 놓은 형태의 잠금.
+	* 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적
+	* 
 * 
 * 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyOTk3NjEwXX0=
+eyJoaXN0b3J5IjpbMTk2OTk0NzgyNF19
 -->
