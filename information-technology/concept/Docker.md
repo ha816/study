@@ -4,22 +4,22 @@
 도커는 컨테이너(화) 기술로 2013년에 오픈소스로 런칭 되었다. 사실 컨테이너화 기술은 사용되는 기술이었지만, Docker가 새 지평을 열었다고 해도 과언이 아니다. 심지어 컨테이너화라는 말 대신 도커화(dockerization)라는 용어가 대명사가 될정도로 인기가 압도적이다. 
 도커는 리눅스 커널 기반으로 가벼운 컨테이너를 만들고, 탑재하고 실행할 수 있는 플랫폼이다. AWS에서는 도커를 쉽게 사용할 수 있는 EC2 컨테이너 서비스를 제공한다. 도커는 베어 메탈 장비나, VM ware, 하이버 브이 같은 전통 가상머신에서도 설치 할 수 있다. 
 
-## Docker Core
+# Docker Core
 
-도커에선 도커 테몬과 도커 클라이언트라는 두 핵심 컴포넌트가 있다. 데몬과 클라이언트 모두 별개의 실행파일로 제공된다.
+도커에선 도커 테몬과 도커 클라이언트 두 핵심 컴포넌트가 있다. 데몬과 클라이언트 모두 별개의 실행파일로 제공된다.
 
 ![enter image description here](https://19yw4b240vb03ws8qm25h366-wpengine.netdna-ssl.com/wp-content/uploads/Docker-API-infographic-container-devops-nordic-apis.png)
 
-### Docker Client
+## Docker Client
 
-도커 클라이언트는 소켓이나 REST API를 통해 도커 데몬과 상호작용하는 커맨드 라인 인터페이스 프로그램(Command Line Interface)이다. 도커 클라이언트는 데몬이 실행되고 있는 호스트와 동일한 호스트에서 실행할 수도 있고, 다른 호스트에서 실행되고 있는 원격의 데몬과도 연결할 수 있다. 
+클라이언트는 소켓이나 REST API를 통해 도커 데몬과 상호작용하는 커맨드 라인 인터페이스 프로그램(Command Line Interface)이다. 도커 클라이언트는 데몬이 실행되고 있는 호스트와 동일한 호스트에서 실행할 수도 있고, 다른 호스트에서 실행되고 있는 원격의 데몬과도 연결할 수 있다. 
 
-### Docker Daemon
+## Docker Daemon
 
 도커 데몬은 호스트 장비 위에 설치되는 서버 측 컴포넌트로써 도커 컨테이너를 만들고, 실행하고 배포하는 역할을 담당한다. 또한 도커 클라이언트를 위한 API를 외부에 노출하여 도커 클라이언트가 도커 데몬과 상호작용할 수 있게 한다. 
 도커 데몬을 호스트 장비위에서 실행되는 컨트롤러 서비스라고 봐도 무리가 없다. 
 
-### Docker Image
+## Docker Image
 
 도커 이미지는 **운영체제 라이브러리, 애플리케이션 및 의존 라이브러리의 읽기 전용 복사본이다.** 이미지가 생성되면 아무린 수정도 필요 없이 어떤 도커 플랫폼 위에서든 실행할 수 있다. 
 
@@ -27,17 +27,17 @@
 
 도커 이미지는 계층형 아키텍처에 바탕을 두고 있고, 가장 아래에 있는 이미지는 리눅스와 같은 운영체제를 포함하고 있다. 일반적으로 개발자가 완전 백지에서 부터 도커 이미지를 만들 일은 없다. 운영체제 이미지나 자바 8 이미지 처럼 신뢰할 수 있는 이미지를 구할 수 있기 때문이다. 기발자는 이런 이미지들로 원하는 이미지를 만들 수 있다. 
 
-### Docker Container
+## Docker Container
 
 도커 컨테이너는 실제 실행 중인 **도커 이미지의 구현체이다.** 컨테이너는 호스트 운영체제의 커널을 이용한다. 그래서 동일한 호스트에서 함께 실행 중인 다른 컨테이너와 호스트 커널을 공유한다. 
 
 컨테이너는 인스턴스화 되면 메모리나 CPU 같은 자원을 할당 받는데, 동일한 이미지에서 인스턴스화 된다고 해도 자원할당을 다르게 할 수 있다. 
 
-### Docker Registry
+## Docker Registry
 
 도커 이미지를 퍼블리싱하고 다운로드할 수 있는 중앙 저장소이다. 도커 허브(hub.docker.com)에서 제공하는 중앙 저장소이다. 도커는 자체적으로 보유하고 있는 환경에 도커 레지스트리를 구성할 수 있는데 사용하는 도커 트러스티드 레지스트리(DTR, Docker Trusted Registry)도 제공한다
 
-### Docker file
+## Docker file
 
 도커 이미지를 만들 수 있는 명령어를 포함하고 있는 빌드 파일 또는 스크립트 파일이다. 도커 파일에는 기반 이미지를 가져오는 것 부터 여러 단계가 포함된다. 도커 파리은 maven의 pom.xml에 해당한다고 볼 수 있다.
 
@@ -45,6 +45,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTUyNDM3ODksLTEzMDI2Mzg4MjUsLT
-E0Nzk3NjIyNDgsLTE2MzcwOTUyNTJdfQ==
+eyJoaXN0b3J5IjpbLTE5NzUzMzc0OTgsLTExOTUyNDM3ODksLT
+EzMDI2Mzg4MjUsLTE0Nzk3NjIyNDgsLTE2MzcwOTUyNTJdfQ==
+
 -->
