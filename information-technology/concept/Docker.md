@@ -22,9 +22,7 @@
 ## Docker Image
 
 도커 이미지는 **운영체제 라이브러리, 애플리케이션 및 의존 라이브러리 등의 읽기 전용 복사본이다.** 이미지가 생성되면 아무런 수정도 필요 없이 어떤 도커 플랫폼 위에서든 실행할 수 있다. 
-
-도커 이미지에는 애플리케이션을 실행하고 서비스를 외부에 노출하는 명령들도 포함된다.
-
+도커 이미지에는 애플리케이션을 실행하고 서비스를 외부에 노출하는 명령어들도 포함된다.
 도커 이미지는 계층형 아키텍처에 바탕을 두고 있고, 가장 아래에 있는 이미지는 리눅스와 같은 운영체제를 포함하고 있다. 일반적으로 개발자가 완전 백지에서 부터 도커 이미지를 만들 일은 없다. 운영체제 이미지나 자바 8 이미지 처럼 신뢰할 수 있는 이미지를 구할 수 있기 때문이다. 기발자는 이런 이미지들로 원하는 이미지를 만들 수 있다. 
 
 ## Docker Container
@@ -45,7 +43,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNTI1NTg5MCwxODAwMDg1MDUzLC0xMT
-k1MjQzNzg5LC0xMzAyNjM4ODI1LC0xNDc5NzYyMjQ4LC0xNjM3
-MDk1MjUyXX0=
+eyJoaXN0b3J5IjpbMTU1MTQzMzk3MCwxMTA1MjU1ODkwLDE4MD
+AwODUwNTMsLTExOTUyNDM3ODksLTEzMDI2Mzg4MjUsLTE0Nzk3
+NjIyNDgsLTE2MzcwOTUyNTJdfQ==
 -->
