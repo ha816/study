@@ -5,12 +5,11 @@
 프로그래머가 시간이 지나도 유지 보수와 확장이 쉬운 시스템을 만들고자 할때 이 원칙들 함께 적용할 수 있다. 
 
 
-
 ![enter image description here](https://i.pinimg.com/originals/8a/53/36/8a53363bd595a8af11822020a9342b02.jpg)
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY2MjkxOTMyLDU4MTQ2ODI5NywxNTEzMD
-k0NDY3XX0=
+eyJoaXN0b3J5IjpbLTE0NTIwOTI3OTAsNTgxNDY4Mjk3LDE1MT
+MwOTQ0NjddfQ==
 -->
