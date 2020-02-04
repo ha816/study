@@ -6,7 +6,7 @@
 > DevOps
 > 소프트웨어 개발(Development) + 운영(Operations)의 합성어로, 소프트웨어 개발자와 정보기술 전문가 간의 소통, 협업 및 통합을 강조하는 개발 환경이나 문화를 말한다. 
 > 
-## Containerization(운영체제 가상화; operating system virtualization)
+## Containerization(컨테이너화 가상화; operating system virtualization)
 
 컨테이너화(Containerization) 기술은 운영체제의 입장에서 본다면 사적인 가상공간을 제공하는 것이다. 이런 가상 공간을 컨테이너 또는 가상엔진이라 부른다. 
 
@@ -47,9 +47,9 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTQ1NzYwMTIsMTM4NTc3NDM3NiwtMT
-c4NDU0NTQwNCwxMjUwMzQwMjQxLC04ODkwMTE1NzAsLTE0ODE0
-NjYwNDMsMTgxNjI4NzI3LC0xMTg2Nzg5MzEzLDIzMDU4ODUzNi
-w1NjMwNTY1ODEsOTEwNzU4MTUyLDEwMDk5NDU0MDgsMTk1MDY1
-ODU3MCwzMjE1MzA0ODIsNzQxNDEyNDczXX0=
+eyJoaXN0b3J5IjpbLTkyNDY3MjUsMTM4NTc3NDM3NiwtMTc4ND
+U0NTQwNCwxMjUwMzQwMjQxLC04ODkwMTE1NzAsLTE0ODE0NjYw
+NDMsMTgxNjI4NzI3LC0xMTg2Nzg5MzEzLDIzMDU4ODUzNiw1Nj
+MwNTY1ODEsOTEwNzU4MTUyLDEwMDk5NDU0MDgsMTk1MDY1ODU3
+MCwzMjE1MzA0ODIsNzQxNDEyNDczXX0=
 -->
