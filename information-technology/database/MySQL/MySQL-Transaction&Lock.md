@@ -63,23 +63,17 @@ RENAME TABLE tab_a TO tab_b
 
 ### 잠금 종류
 
-
-
 * 레코드 락(Record lock, Record only lock)
 	* 레코드 자체만 잠그는 락
-	* InnoDB에서는 레코드 자체가 아니라 인덱스에 레코드를 잠근다.
-	* 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 한다.
-* 갭 락(Gap lcok)
-		* 다른 DBMS와 다르게 GAP이라는 락이 MySQL에는 존재
-		* 레코드 자체가 아니라 레코드와 바로 인접한 레코드 사이의 간격만 잠근다. 
-		* 갭락의 역할은 레코드와 레코드 사이 간격에 새로운 레코드가 INSERT되는 것을 제어한다.  갭락은 개념일뿐 넥스크 키 락의 일부로 사용된다.
+	* InnoDB에서는 레코드 자체가 아니라 인덱스를 잠근다.
+	* 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 수행
 * 넥스트 키 락(Next key lock)
 	* 레코드 락과 갭락을 합쳐 놓은 형태의 잠금.
 	* 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적
 	* 
 
-
+![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI3MTQ0NzJdfQ==
+eyJoaXN0b3J5IjpbMzYyOTAyOTQ4XX0=
 -->
