@@ -66,9 +66,9 @@ RENAME TABLE tab_a TO tab_b
 * 레코드 락(Record lock, Record only lock)
 	* 레코드 자체만 잠그는 락
 	* InnoDB에서는 레코드 자체가 아니라 인덱스에 레코드를 잠근다.
-	* 
+	* 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 한다.
 * 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MzYzMTY2OV19
+eyJoaXN0b3J5IjpbLTEwNjE3Nzg3MjBdfQ==
 -->
