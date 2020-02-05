@@ -71,7 +71,7 @@
 >HashMap은 Hash를 이용하여 Key-Value 쌍을 가지는 데이터 구조이다. HashMap은 주어진 키에 대응하는 값을 찾는데 상수시간만에 찾는다. HashMap은 성능은 Hash함수에 달려있는데, 극단적으로 Hash함수가 같은 값만을 반환한다고 가정하면, 항상 Hash Collision이 발생하는 최악의 상황이 발생한다. 이런 최악의 상황은 HashMap의 성능을 떨어트린다.
 
 >HashMap과 LinkedHashMap의 차이, ConcurrentHashMap의 차이는?
->LinkedHashMap은 입력 받은 
+>LinkedHashMap은 입력 받은 Key-Value 쌍의 입력 순서를 기억한다. 
 
 
 >Tree란? HashMap과 TreeMap의 차이는?
@@ -249,7 +249,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5ODg1OTQwLC0zOTAyMjc5MDMsLTE3NT
+eyJoaXN0b3J5IjpbNzQ2MzAyMjgxLC0zOTAyMjc5MDMsLTE3NT
 Y4MDc1NjIsNzI3MDkyMDU0LDIwOTUyOTY1NiwtMTYwNTczOTk2
 MSw5MDA5MTA2ODAsMTQ1OTMzOTI1OSwxMjUxMTYwMzI5LC04Mj
 Q2NzkwMTAsLTk3ODU0OTk3OCwyMjMzNjA1MDMsLTE3NzM1NzAz
