@@ -68,9 +68,11 @@
 >ArrayList는 array기반이기 때문에 랜덤 엑세스로 특정 인덱스를 찾는데 빠르다. 하지만 가장 끝에 원소를 추가하는 것을 제외하고 특정 자리에 원소를 추가할때는 자리 뒤쪽 원소를 모두 뒤로 보내야하기 때문에 추가 연산이 있다. 그리고 배열이 가득 차면 더 넓은 공간의 배열을 새로 만들어야 한다. LinkedList는 다음 원소를 가르키는 추가 공간을 사용한다. 하지만 어떤 자리에 원소를 추가해도 비교적 적은 연산으로 추가가 가능하다. 정리하자면, 처음과 중앙에 원소를 추가, 삭제하는 경우가 적고, 대량의 원소를 다룬다면 ArrayList를 사용하는게 유리하다. 그 외라면 LinkedList가 유리하다. 
 
 >HashMap은 무엇이고 성능은? 최악의 상황은?
->HashMap은 Hash를 이용하여 Key-Value 쌍을 가지는 데이터 구조이다. HashMap은 주어진 키에 대응하는 값을 찾는데 상수시간만에 찾는다. HashMap은 성능은 Hash함수에 달려있는데, 극단적으로 Hash함수가 같은 값만을 반환한다고 가정하면, 항상 Hash Collision이 발생하는 최악의 상황이 발생한다. 이런 최악의 상황은 Hash
+>HashMap은 Hash를 이용하여 Key-Value 쌍을 가지는 데이터 구조이다. HashMap은 주어진 키에 대응하는 값을 찾는데 상수시간만에 찾는다. HashMap은 성능은 Hash함수에 달려있는데, 극단적으로 Hash함수가 같은 값만을 반환한다고 가정하면, 항상 Hash Collision이 발생하는 최악의 상황이 발생한다. 이런 최악의 상황은 HashMap의 성능을 떨어트린다.
 
 >HashMap과 LinkedHashMap의 차이, ConcurrentHashMap의 차이는?
+>LinkedHashMap은 입력 받은 
+
 
 >Tree란? HashMap과 TreeMap의 차이는?
 
@@ -247,11 +249,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTU0MTMyNCwtMzkwMjI3OTAzLC0xNz
-U2ODA3NTYyLDcyNzA5MjA1NCwyMDk1Mjk2NTYsLTE2MDU3Mzk5
-NjEsOTAwOTEwNjgwLDE0NTkzMzkyNTksMTI1MTE2MDMyOSwtOD
-I0Njc5MDEwLC05Nzg1NDk5NzgsMjIzMzYwNTAzLC0xNzczNTcw
-MzE5LC0zMDQ2MTc2MTQsMTc3OTk2NTU3MCwtOTE3NDUxNzY4LC
-05MjMyMDIyNTEsLTE4ODU0MDc1NDUsLTE5MDQ5NTAyMTgsLTEx
-MjQwNDExMzldfQ==
+eyJoaXN0b3J5IjpbNTk5ODg1OTQwLC0zOTAyMjc5MDMsLTE3NT
+Y4MDc1NjIsNzI3MDkyMDU0LDIwOTUyOTY1NiwtMTYwNTczOTk2
+MSw5MDA5MTA2ODAsMTQ1OTMzOTI1OSwxMjUxMTYwMzI5LC04Mj
+Q2NzkwMTAsLTk3ODU0OTk3OCwyMjMzNjA1MDMsLTE3NzM1NzAz
+MTksLTMwNDYxNzYxNCwxNzc5OTY1NTcwLC05MTc0NTE3NjgsLT
+kyMzIwMjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1MDIxOCwtMTEy
+NDA0MTEzOV19
 -->
