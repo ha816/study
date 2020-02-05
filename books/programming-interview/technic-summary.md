@@ -55,7 +55,7 @@
 
 >**예외처리의 주요 클래스를 설명하라**
 >RuntimeException -> Exception -> Throwable
->예외는 크게 RuntimeException과 Unche Exception으로 나뉜다. RuntimeException은 런타임시 발생하는 예외로 대표적으로는 NullPoint, ArrayOutofBound 등이 있다. 명시적 예외는 코드 상에 예외처리를 위한 코드를 작성해야 하며, 대표적으로 IO Excetpion이 있다. 
+>예외는 크게 RuntimeException(unchecked Exception)과 checked Exception으로 나뉜다. RuntimeException은 런타임시 발생하는 예외로 대표적으로는 NullPointException이 있다. 명시적 예외는 코드 상에 예외처리를 위한 코드를 작성해야 하며, 대표적으로 IO Excetpion이 있다. 
 
 >**Comparable과 Comparator 차이는?**
 >Comparable과 Comparator 모두 객체들의 순서를 정하기 위해 사용한다. Collections.sort와 같이 정렬 메서드를 사용하고 싶다면 객체들이 Comparable 인터페이스를 구현해야 한다. Comparable은 자연스러운 순서를 정할때 사용하고 Comparator는 원하는 임의로 순서를 정하고 싶을 때 사용한다. 
@@ -63,6 +63,7 @@
 # DataStrucutre
 
 >ArrayList와 LinkedList의 차이
+>ArrayList는 array기반이기 때문에 랜덤 Ac
 
 >HashMap은 무엇이고 성능은? 최악의 경우를 가정하면 어떤가?
 
@@ -245,11 +246,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTUzMzI2MCwtMTYwNTczOTk2MSw5MD
-A5MTA2ODAsMTQ1OTMzOTI1OSwxMjUxMTYwMzI5LC04MjQ2Nzkw
-MTAsLTk3ODU0OTk3OCwyMjMzNjA1MDMsLTE3NzM1NzAzMTksLT
-MwNDYxNzYxNCwxNzc5OTY1NTcwLC05MTc0NTE3NjgsLTkyMzIw
-MjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1MDIxOCwtMTEyNDA0MT
-EzOSw4NTM0MDcxMjMsLTIxMjg3MzM1OTQsLTE4OTc0MjE1ODks
-LTEyMDE4ODA2ODFdfQ==
+eyJoaXN0b3J5IjpbLTEzNzE5NTczOTQsLTE2MDU3Mzk5NjEsOT
+AwOTEwNjgwLDE0NTkzMzkyNTksMTI1MTE2MDMyOSwtODI0Njc5
+MDEwLC05Nzg1NDk5NzgsMjIzMzYwNTAzLC0xNzczNTcwMzE5LC
+0zMDQ2MTc2MTQsMTc3OTk2NTU3MCwtOTE3NDUxNzY4LC05MjMy
+MDIyNTEsLTE4ODU0MDc1NDUsLTE5MDQ5NTAyMTgsLTExMjQwND
+ExMzksODUzNDA3MTIzLC0yMTI4NzMzNTk0LC0xODk3NDIxNTg5
+LC0xMjAxODgwNjgxXX0=
 -->
