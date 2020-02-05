@@ -62,9 +62,9 @@
 
 # DataStrucutre
 
->Collection에 대해서 아는 클래스를 최대한 설명해보라
+>**Collection에 대해서 아는 클래스를 최대한 설명해보라**
 
->ArrayList와 LinkedList의 차이
+>**ArrayList와 LinkedList의 차이**
 >ArrayList는 array기반이기 때문에 랜덤 엑세스로 특정 인덱스를 찾는데 빠르다. 하지만 가장 끝에 원소를 추가하는 것을 제외하고 특정 자리에 원소를 추가할때는 자리 뒤쪽 원소를 모두 뒤로 보내야하기 때문에 추가 연산이 있다. 그리고 배열이 가득 차면 더 넓은 공간의 배열을 새로 만들어야 한다. LinkedList는 다음 원소를 가르키는 추가 공간을 사용한다. 하지만 어떤 자리에 원소를 추가해도 비교적 적은 연산으로 추가가 가능하다. 정리하자면, 처음과 중앙에 원소를 추가, 삭제하는 경우가 적고, 대량의 원소를 다룬다면 ArrayList를 사용하는게 유리하다. 그 외라면 LinkedList가 유리하다. 
 
 >HashMap은 무엇이고 성능은? 최악의 경우를 가정하면 어떤가?
@@ -247,7 +247,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzM0NDc2MjYsNzI3MDkyMDU0LDIwOT
+eyJoaXN0b3J5IjpbLTE3NTY4MDc1NjIsNzI3MDkyMDU0LDIwOT
 UyOTY1NiwtMTYwNTczOTk2MSw5MDA5MTA2ODAsMTQ1OTMzOTI1
 OSwxMjUxMTYwMzI5LC04MjQ2NzkwMTAsLTk3ODU0OTk3OCwyMj
 MzNjA1MDMsLTE3NzM1NzAzMTksLTMwNDYxNzYxNCwxNzc5OTY1
