@@ -114,8 +114,8 @@
 
 >Spring의 빈 스코프는?
 >애플리케이션 컨텍스트는 모든 빈의 생존기간을 관리한다. 
->Singleton은 컨텍스트 기동시 빈 인스턴스가 하나만 생성되고, 그 빈을 공유한다. 
->
+>singleton은 컨텍스트 기동시 빈 인스턴스가 하나만 생성되고, 그 빈을 공유한다. 
+>prototype은 컨텍스트에 빈을 요청할때
 
 |Scope  | 설명|
 |--|--|
@@ -252,11 +252,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MTE2MDMyOSwtODI0Njc5MDEwLC05Nz
-g1NDk5NzgsMjIzMzYwNTAzLC0xNzczNTcwMzE5LC0zMDQ2MTc2
-MTQsMTc3OTk2NTU3MCwtOTE3NDUxNzY4LC05MjMyMDIyNTEsLT
-E4ODU0MDc1NDUsLTE5MDQ5NTAyMTgsLTExMjQwNDExMzksODUz
-NDA3MTIzLC0yMTI4NzMzNTk0LC0xODk3NDIxNTg5LC0xMjAxOD
-gwNjgxLC0yNDcyMTM2MjksLTgyNDY1MzIxMiwtOTgzMzM0ODE5
-LC0xNzYzOTcyMDddfQ==
+eyJoaXN0b3J5IjpbLTc3MzE3Mjk0OSwxMjUxMTYwMzI5LC04Mj
+Q2NzkwMTAsLTk3ODU0OTk3OCwyMjMzNjA1MDMsLTE3NzM1NzAz
+MTksLTMwNDYxNzYxNCwxNzc5OTY1NTcwLC05MTc0NTE3NjgsLT
+kyMzIwMjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1MDIxOCwtMTEy
+NDA0MTEzOSw4NTM0MDcxMjMsLTIxMjg3MzM1OTQsLTE4OTc0Mj
+E1ODksLTEyMDE4ODA2ODEsLTI0NzIxMzYyOSwtODI0NjUzMjEy
+LC05ODMzMzQ4MTldfQ==
 -->
