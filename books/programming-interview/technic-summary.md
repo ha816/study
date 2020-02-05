@@ -71,14 +71,15 @@
 >HashMap은 Hash를 이용하여 Key-Value 쌍을 가지는 데이터 구조이다. HashMap은 주어진 키에 대응하는 값을 찾는데 상수시간만에 찾는다. HashMap은 성능은 Hash함수에 달려있는데, 극단적으로 Hash함수가 같은 값만을 반환한다고 가정하면, 항상 Hash Collision이 발생하는 최악의 상황이 발생한다. 이런 최악의 상황은 HashMap의 성능을 떨어트린다.
 
 >LinkedHashMap, TreeMap? 
+>LinkedHashMap은 입력 받은 Key-Value 쌍의 입력 순서를 기억한다. TreeMap은 Map 상단에 key-value 
 
 >SynchronizedMap과 ConcurrentHashMap의 차이는?
->LinkedHashMap은 입력 받은 Key-Value 쌍의 입력 순서를 기억한다. ConcurrentHashMap은 HashMap과 다르게 Thread-Safe를 보장한다. 추가적으로 HashMap은 null을 key값으로 받을 수 있지만, ConcurrentHashMap은 null값을 키와 값으로 넣을 수 없다.
+> ConcurrentHashMap은 HashMap과 다르게 Thread-Safe를 보장한다. 추가적으로 HashMap은 null을 key값으로 받을 수 있지만, ConcurrentHashMap은 null값을 키와 값으로 넣을 수 없다.
 
 **ConcurrentHashMap:** It allows concurrent access to the map. Part of the map called _Segment (internal data structure)_ is only getting locked while adding or updating the map. So ConcurrentHashMap allows concurrent threads to read the value without locking at all. This data structure was introduced to improve performance.
 
 
->Tree란? HashMap과 TreeMap의 차이는?
+>Tree란?
 
 # DesignPattern
 
@@ -253,11 +254,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1NTYwNTQxLDE4MjY4NzI0NDksNzQ2Mz
-AyMjgxLC0zOTAyMjc5MDMsLTE3NTY4MDc1NjIsNzI3MDkyMDU0
-LDIwOTUyOTY1NiwtMTYwNTczOTk2MSw5MDA5MTA2ODAsMTQ1OT
-MzOTI1OSwxMjUxMTYwMzI5LC04MjQ2NzkwMTAsLTk3ODU0OTk3
-OCwyMjMzNjA1MDMsLTE3NzM1NzAzMTksLTMwNDYxNzYxNCwxNz
-c5OTY1NTcwLC05MTc0NTE3NjgsLTkyMzIwMjI1MSwtMTg4NTQw
-NzU0NV19
+eyJoaXN0b3J5IjpbMTc0MjUzMTE1NiwxODI2ODcyNDQ5LDc0Nj
+MwMjI4MSwtMzkwMjI3OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1
+NCwyMDk1Mjk2NTYsLTE2MDU3Mzk5NjEsOTAwOTEwNjgwLDE0NT
+kzMzkyNTksMTI1MTE2MDMyOSwtODI0Njc5MDEwLC05Nzg1NDk5
+NzgsMjIzMzYwNTAzLC0xNzczNTcwMzE5LC0zMDQ2MTc2MTQsMT
+c3OTk2NTU3MCwtOTE3NDUxNzY4LC05MjMyMDIyNTEsLTE4ODU0
+MDc1NDVdfQ==
 -->
