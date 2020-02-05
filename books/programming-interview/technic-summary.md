@@ -63,7 +63,7 @@
 # DataStrucutre
 
 >ArrayList와 LinkedList의 차이
->ArrayList는 array기반이기 때문에 랜덤 엑세스로 특정 인덱스를 찾는데 뛰어나다.
+>ArrayList는 array기반이기 때문에 랜덤 엑세스로 특정 인덱스를 찾는데 빠르다. 하지만 가장 끝에 원소를 추가하는 것을 제외하고 특정 자리에 원소를 추가할때는 ㄷ
 
 >HashMap은 무엇이고 성능은? 최악의 경우를 가정하면 어떤가?
 
@@ -246,11 +246,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NTI5NjU2LC0xNjA1NzM5OTYxLDkwMD
-kxMDY4MCwxNDU5MzM5MjU5LDEyNTExNjAzMjksLTgyNDY3OTAx
-MCwtOTc4NTQ5OTc4LDIyMzM2MDUwMywtMTc3MzU3MDMxOSwtMz
-A0NjE3NjE0LDE3Nzk5NjU1NzAsLTkxNzQ1MTc2OCwtOTIzMjAy
-MjUxLC0xODg1NDA3NTQ1LC0xOTA0OTUwMjE4LC0xMTI0MDQxMT
-M5LDg1MzQwNzEyMywtMjEyODczMzU5NCwtMTg5NzQyMTU4OSwt
-MTIwMTg4MDY4MV19
+eyJoaXN0b3J5IjpbLTk4ODEyNzI2MCwyMDk1Mjk2NTYsLTE2MD
+U3Mzk5NjEsOTAwOTEwNjgwLDE0NTkzMzkyNTksMTI1MTE2MDMy
+OSwtODI0Njc5MDEwLC05Nzg1NDk5NzgsMjIzMzYwNTAzLC0xNz
+czNTcwMzE5LC0zMDQ2MTc2MTQsMTc3OTk2NTU3MCwtOTE3NDUx
+NzY4LC05MjMyMDIyNTEsLTE4ODU0MDc1NDUsLTE5MDQ5NTAyMT
+gsLTExMjQwNDExMzksODUzNDA3MTIzLC0yMTI4NzMzNTk0LC0x
+ODk3NDIxNTg5XX0=
 -->
