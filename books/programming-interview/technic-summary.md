@@ -115,7 +115,14 @@
 >AOP는 Aspect Oriendted Programing의 약자로, 시스템은 보통 특정 기능을 책임지는 여러 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다. AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다. 
 
 >**Spring의 MVC패턴은?**
->Spring이 채택한 MVC패턴은 사실 프론트 컨트롤러(FrontController)패턴이다.  컨트롤러 패턴을 사용하면 공통적인 처리를 프런트 컨트롤러에서 통합 할 수 있어 핸들러에서 처리하는 내용을 줄일 수 있다.
+>Spring이 채택한 MVC패턴은 사실 프론트 컨트롤러(FrontController)패턴이다.  컨트롤러 패턴에서 프론트 컨트롤러는 요청을 처리하는 과정 전체의 제어 흐름을 담당한다. 또한,   사용하면 공통적인 기능을 프런트 컨트롤러에서 처리할 수 있다. 예를 들어
+
+클라이언트의 요청 접수, 요청 결과 응답
+* 요청 데이터를 자바 객체로 변환
+* 입력값 검사(Bean Validation)
+* 핸들러 호출
+* 뷰 선택
+* 예외처리
 
 프론트 컨트롤러는 들어온 요청처리하는 과정 전체에서 제어 흐름을 담당한다. 또한, 
 >
@@ -255,11 +262,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAwOTEwNjgwLDE0NTkzMzkyNTksMTI1MT
-E2MDMyOSwtODI0Njc5MDEwLC05Nzg1NDk5NzgsMjIzMzYwNTAz
-LC0xNzczNTcwMzE5LC0zMDQ2MTc2MTQsMTc3OTk2NTU3MCwtOT
-E3NDUxNzY4LC05MjMyMDIyNTEsLTE4ODU0MDc1NDUsLTE5MDQ5
-NTAyMTgsLTExMjQwNDExMzksODUzNDA3MTIzLC0yMTI4NzMzNT
-k0LC0xODk3NDIxNTg5LC0xMjAxODgwNjgxLC0yNDcyMTM2Mjks
-LTgyNDY1MzIxMl19
+eyJoaXN0b3J5IjpbOTE2ODE0NDA5LDkwMDkxMDY4MCwxNDU5Mz
+M5MjU5LDEyNTExNjAzMjksLTgyNDY3OTAxMCwtOTc4NTQ5OTc4
+LDIyMzM2MDUwMywtMTc3MzU3MDMxOSwtMzA0NjE3NjE0LDE3Nz
+k5NjU1NzAsLTkxNzQ1MTc2OCwtOTIzMjAyMjUxLC0xODg1NDA3
+NTQ1LC0xOTA0OTUwMjE4LC0xMTI0MDQxMTM5LDg1MzQwNzEyMy
+wtMjEyODczMzU5NCwtMTg5NzQyMTU4OSwtMTIwMTg4MDY4MSwt
+MjQ3MjEzNjI5XX0=
 -->
