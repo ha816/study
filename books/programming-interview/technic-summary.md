@@ -113,6 +113,7 @@
 >AOP는 Aspect Oriendted Programing의 약자로, 시스템은 보통 특정 기능을 책임지는 여러 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다. AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다. 
 
 >Spring의 객체 스코프는?
+>
 
 >Spring의 MVC패턴은? 
 
@@ -240,11 +241,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNDY3OTAxMCwtOTc4NTQ5OTc4LDIyMz
-M2MDUwMywtMTc3MzU3MDMxOSwtMzA0NjE3NjE0LDE3Nzk5NjU1
-NzAsLTkxNzQ1MTc2OCwtOTIzMjAyMjUxLC0xODg1NDA3NTQ1LC
-0xOTA0OTUwMjE4LC0xMTI0MDQxMTM5LDg1MzQwNzEyMywtMjEy
-ODczMzU5NCwtMTg5NzQyMTU4OSwtMTIwMTg4MDY4MSwtMjQ3Mj
-EzNjI5LC04MjQ2NTMyMTIsLTk4MzMzNDgxOSwtMTc2Mzk3MjA3
-LC0xOTEyOTY2OTU1XX0=
+eyJoaXN0b3J5IjpbLTE4MTcwOTQyMjIsLTgyNDY3OTAxMCwtOT
+c4NTQ5OTc4LDIyMzM2MDUwMywtMTc3MzU3MDMxOSwtMzA0NjE3
+NjE0LDE3Nzk5NjU1NzAsLTkxNzQ1MTc2OCwtOTIzMjAyMjUxLC
+0xODg1NDA3NTQ1LC0xOTA0OTUwMjE4LC0xMTI0MDQxMTM5LDg1
+MzQwNzEyMywtMjEyODczMzU5NCwtMTg5NzQyMTU4OSwtMTIwMT
+g4MDY4MSwtMjQ3MjEzNjI5LC04MjQ2NTMyMTIsLTk4MzMzNDgx
+OSwtMTc2Mzk3MjA3XX0=
 -->
