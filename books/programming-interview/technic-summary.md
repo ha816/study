@@ -115,7 +115,9 @@
 >Spring의 빈 스코프는?
 >애플리케이션 컨텍스트는 모든 빈의 생존기간을 관리한다. 
 >singleton은 컨텍스트 기동시 빈 인스턴스가 하나만 생성되고, 그 빈을 공유한다. 
->prototype은 컨텍스트에 빈을 요청할때
+>prototype은 컨텍스트에 빈을 요청할때마다 새로운 빈이 생성된다.
+>request는 HTTP 요청이 들어올때마다 새로운 빈이 생성된다.
+>session은 HTTP 세션이 만들어질때 마다 새로운 빈이 생성된다.
 
 |Scope  | 설명|
 |--|--|
@@ -252,7 +254,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MzE3Mjk0OSwxMjUxMTYwMzI5LC04Mj
+eyJoaXN0b3J5IjpbMTQ1OTMzOTI1OSwxMjUxMTYwMzI5LC04Mj
 Q2NzkwMTAsLTk3ODU0OTk3OCwyMjMzNjA1MDMsLTE3NzM1NzAz
 MTksLTMwNDYxNzYxNCwxNzc5OTY1NTcwLC05MTc0NTE3NjgsLT
 kyMzIwMjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1MDIxOCwtMTEy
