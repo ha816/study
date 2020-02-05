@@ -66,7 +66,7 @@
 >ArrayList는 array기반이기 때문에 랜덤 엑세스로 특정 인덱스를 찾는데 빠르다. 하지만 가장 끝에 원소를 추가하는 것을 제외하고 특정 자리에 원소를 추가할때는 자리 뒤쪽 원소를 모두 뒤로 보내야하기 때문에 추가 연산이 있다. 그리고 배열이 가득 차면 더 넓은 공간의 배열을 새로 만들어야 한다. LinkedList는 다음 원소를 가르키는 추가 공간을 사용한다. 하지만 어떤 자리에 원소를 추가해도 비교적 적은 연산으로 추가가 가능하다. 정리하자면, 처음과 중앙에 원소를 추가, 삭제하는 경우가 적고, 대량의 원소를 다룬다면 ArrayList를 사용하는게 유리하다. 그 외라면 LinkedList가 유리하다. 
 
 >HashMap은 무엇이고 성능은? 최악의 경우를 가정하면 어떤가?
->HashMap은 Hash를 이용하여 Key-Value 쌍을 가지는 데이터 구조이다.
+>HashMap은 Hash를 이용하여 Key-Value 쌍을 가지는 데이터 구조이다. Hash
 
 >Collection에 대해서 아는 클래스를 최대한 설명해보라
 
@@ -247,11 +247,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3MDkyMDU0LDIwOTUyOTY1NiwtMTYwNT
-czOTk2MSw5MDA5MTA2ODAsMTQ1OTMzOTI1OSwxMjUxMTYwMzI5
-LC04MjQ2NzkwMTAsLTk3ODU0OTk3OCwyMjMzNjA1MDMsLTE3Nz
-M1NzAzMTksLTMwNDYxNzYxNCwxNzc5OTY1NTcwLC05MTc0NTE3
-NjgsLTkyMzIwMjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1MDIxOC
-wtMTEyNDA0MTEzOSw4NTM0MDcxMjMsLTIxMjg3MzM1OTQsLTE4
-OTc0MjE1ODldfQ==
+eyJoaXN0b3J5IjpbLTQzOTM5MzczMCw3MjcwOTIwNTQsMjA5NT
+I5NjU2LC0xNjA1NzM5OTYxLDkwMDkxMDY4MCwxNDU5MzM5MjU5
+LDEyNTExNjAzMjksLTgyNDY3OTAxMCwtOTc4NTQ5OTc4LDIyMz
+M2MDUwMywtMTc3MzU3MDMxOSwtMzA0NjE3NjE0LDE3Nzk5NjU1
+NzAsLTkxNzQ1MTc2OCwtOTIzMjAyMjUxLC0xODg1NDA3NTQ1LC
+0xOTA0OTUwMjE4LC0xMTI0MDQxMTM5LDg1MzQwNzEyMywtMjEy
+ODczMzU5NF19
 -->
