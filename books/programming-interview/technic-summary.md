@@ -74,7 +74,7 @@
 >LinkedHashMap은 입력 받은 Key-Value 쌍의 입력 순서를 기억한다. TreeMap은 Map 상단에 key-value 노드로 구성된 Tree를 만들어 키를 기준으로 정렬이 가능해진다.
 
 >SynchronizedMap과 ConcurrentHashMap의 차이는?
-> SynchronizedMap과 ConcurrentHashMap 모두 Thread-Safe를 보장한다. SynchronizedMap은 데이터 수정이 일어날때 완전히 모든 데이터에 락을 걸고, 다른 쓰레드들은 락이 풀렸을 경우에만 접근이 가능하다. ConcurrentHashMap은 
+> SynchronizedMap과 ConcurrentHashMap 모두 Thread-Safe를 보장한다. SynchronizedMap은 데이터 수정이 일어날때 완전히 모든 데이터에 락을 걸고, 다른 쓰레드들은 락이 풀렸을 경우에만 접근이 가능하다. ConcurrentHashMap은 데잍
 추가적으로 Map은 null을 key값으로 받을 수 있지만, ConcurrentHashMap은 null값을 키와 값으로 넣을 수 없다.
 
 **ConcurrentHashMap:** It allows concurrent access to the map. Part of the map called _Segment (internal data structure)_ is only getting locked while adding or updating the map. So ConcurrentHashMap allows concurrent threads to read the value without locking at all. This data structure was introduced to improve performance.
@@ -255,11 +255,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NzQxNjIxNiwxODI2ODcyNDQ5LDc0Nj
-MwMjI4MSwtMzkwMjI3OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1
-NCwyMDk1Mjk2NTYsLTE2MDU3Mzk5NjEsOTAwOTEwNjgwLDE0NT
-kzMzkyNTksMTI1MTE2MDMyOSwtODI0Njc5MDEwLC05Nzg1NDk5
-NzgsMjIzMzYwNTAzLC0xNzczNTcwMzE5LC0zMDQ2MTc2MTQsMT
-c3OTk2NTU3MCwtOTE3NDUxNzY4LC05MjMyMDIyNTEsLTE4ODU0
-MDc1NDVdfQ==
+eyJoaXN0b3J5IjpbLTc4ODQ2MTk3MywtOTY3NDE2MjE2LDE4Mj
+Y4NzI0NDksNzQ2MzAyMjgxLC0zOTAyMjc5MDMsLTE3NTY4MDc1
+NjIsNzI3MDkyMDU0LDIwOTUyOTY1NiwtMTYwNTczOTk2MSw5MD
+A5MTA2ODAsMTQ1OTMzOTI1OSwxMjUxMTYwMzI5LC04MjQ2Nzkw
+MTAsLTk3ODU0OTk3OCwyMjMzNjA1MDMsLTE3NzM1NzAzMTksLT
+MwNDYxNzYxNCwxNzc5OTY1NTcwLC05MTc0NTE3NjgsLTkyMzIw
+MjI1MV19
 -->
