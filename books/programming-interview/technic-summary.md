@@ -109,8 +109,17 @@
 >**DI?**
 >DI(Depenceny Injection)는 의존성 주입, **IoC(Inverse of Control)**라고 한다. 애플리케이션을 동작하기 위해 여러개의 컴포넌트를 통합해서 사용한다. 일반적으로 특정 컴포넌트를 사용할때 클래스 내부에서 구현 클래스를 직접 생성해서 사용하면 두 클래스간의 결합도가 높아진다.  결합도를 낮추는 방법으로 클래스의 외부에서 컴포넌트를 생성 한 후, 내부에 주입하여 사용한다. 
 
+>**DI 컨테이너?**
+
 >**AOP**
 >AOP는 Aspect Oriendted Programing의 약자로, 시스템은 보통 특정 기능을 책임지는 여러 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다. AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다. 
+
+>**Spring의 MVC패턴은?**
+>Spring이 채택하는  
+
+>Servelet Container는 무엇이고 하는 역할은?
+
+>Servelet은 무엇이고 하는 역할은? 
 
 >Spring의 빈 스코프는?
 >애플리케이션 컨텍스트는 모든 빈의 생존기간을 관리한다. 
@@ -119,20 +128,6 @@
 >request는 HTTP 요청이 들어올때마다 새로운 빈이 생성된다.
 >session은 HTTP 세션이 만들어질때 마다 새로운 빈이 생성된다.
 
-|Scope  | 설명|
-|--|--|
-|singleton  | DI 컨테이너 기동시 빈 인스턴스가 하나만 생성되고, 그 인스턴스를 공유하는 방식. 특별한 설정이 없을때는 Singleton을 사용|
-|prototype | DI 컨테이너에 빈을 요청할때마다 새로운 빈 인스턴스가 생성된다. 멀티 쓰레드 안전하고 싶다면 Prototype을 사용해야 한다.|
-|request | HTTP 요청이 들어올때마다 새로운 인스턴스가 만들어진다. 웹어플리케이션을 만들때만 사용 가능하다.|
-|session | HTTP 세션이 만들어질때 마다 새로운 빈 인스턴스가 만들어진다. 웹어플리케이션을 만들때만 사용 가능하다.|
-
-
-
->Spring의 MVC패턴은? 
-
->Servelet Container는 무엇이고 하는 역할은?
-
->Servelet은 무엇이고 하는 역할은? 
 
 
 
@@ -254,11 +249,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1OTMzOTI1OSwxMjUxMTYwMzI5LC04Mj
-Q2NzkwMTAsLTk3ODU0OTk3OCwyMjMzNjA1MDMsLTE3NzM1NzAz
-MTksLTMwNDYxNzYxNCwxNzc5OTY1NTcwLC05MTc0NTE3NjgsLT
-kyMzIwMjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1MDIxOCwtMTEy
-NDA0MTEzOSw4NTM0MDcxMjMsLTIxMjg3MzM1OTQsLTE4OTc0Mj
-E1ODksLTEyMDE4ODA2ODEsLTI0NzIxMzYyOSwtODI0NjUzMjEy
-LC05ODMzMzQ4MTldfQ==
+eyJoaXN0b3J5IjpbNjE3NDI1NjQ3LDE0NTkzMzkyNTksMTI1MT
+E2MDMyOSwtODI0Njc5MDEwLC05Nzg1NDk5NzgsMjIzMzYwNTAz
+LC0xNzczNTcwMzE5LC0zMDQ2MTc2MTQsMTc3OTk2NTU3MCwtOT
+E3NDUxNzY4LC05MjMyMDIyNTEsLTE4ODU0MDc1NDUsLTE5MDQ5
+NTAyMTgsLTExMjQwNDExMzksODUzNDA3MTIzLC0yMTI4NzMzNT
+k0LC0xODk3NDIxNTg5LC0xMjAxODgwNjgxLC0yNDcyMTM2Mjks
+LTgyNDY1MzIxMl19
 -->
