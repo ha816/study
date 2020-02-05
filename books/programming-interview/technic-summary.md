@@ -57,8 +57,8 @@
 >RuntimeException -> Exception -> Throwable
 >예외는 크게 RuntimeException과 명시적 Exception으로 나뉜다. RuntimeException은 런타임시 발생하는 예외로 대표적으로는 NullPoint, ArrayOutofBound 등이 있다. 명시적 예외는 코드 상에 예외처리를 위한 코드를 작성해야 하며, 대표적으로 IO Excetpion이 있다. 
 
->Comparable과 Comparator 인터페이스의 차이는?
->
+>Comparable과 Comparator 차이는?
+>Comparable과 Comparator 모두 두 객체의 크기
 
 # DataStrucutre
 
@@ -245,11 +245,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDU3Mzk5NjEsOTAwOTEwNjgwLDE0NT
-kzMzkyNTksMTI1MTE2MDMyOSwtODI0Njc5MDEwLC05Nzg1NDk5
-NzgsMjIzMzYwNTAzLC0xNzczNTcwMzE5LC0zMDQ2MTc2MTQsMT
-c3OTk2NTU3MCwtOTE3NDUxNzY4LC05MjMyMDIyNTEsLTE4ODU0
-MDc1NDUsLTE5MDQ5NTAyMTgsLTExMjQwNDExMzksODUzNDA3MT
-IzLC0yMTI4NzMzNTk0LC0xODk3NDIxNTg5LC0xMjAxODgwNjgx
-LC0yNDcyMTM2MjldfQ==
+eyJoaXN0b3J5IjpbLTY3Mzk5MjY3OCwtMTYwNTczOTk2MSw5MD
+A5MTA2ODAsMTQ1OTMzOTI1OSwxMjUxMTYwMzI5LC04MjQ2Nzkw
+MTAsLTk3ODU0OTk3OCwyMjMzNjA1MDMsLTE3NzM1NzAzMTksLT
+MwNDYxNzYxNCwxNzc5OTY1NTcwLC05MTc0NTE3NjgsLTkyMzIw
+MjI1MSwtMTg4NTQwNzU0NSwtMTkwNDk1MDIxOCwtMTEyNDA0MT
+EzOSw4NTM0MDcxMjMsLTIxMjg3MzM1OTQsLTE4OTc0MjE1ODks
+LTEyMDE4ODA2ODFdfQ==
 -->
