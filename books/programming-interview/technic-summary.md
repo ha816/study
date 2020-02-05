@@ -73,6 +73,8 @@
 >HashMap과 LinkedHashMap의 차이, ConcurrentHashMap의 차이는?
 >LinkedHashMap은 입력 받은 Key-Value 쌍의 입력 순서를 기억한다. ConcurrentHashMap은 HashMap과 다르게 Thread-Safe를 보장한다. 추가적으로 HashMap은 null을 key값으로 받을 수 있지만, ConcurrentHashMap은 null값을 key로 넣을 수 없다. 
 
+**ConcurrentHashMap:** It allows concurrent access to the map. Part of the map called _Segment (internal data structure)_ is only getting locked while adding or updating the map. So ConcurrentHashMap allows concurrent threads to read the value without locking at all. This data structure was introduced to improve performance.
+
 
 >Tree란? HashMap과 TreeMap의 차이는?
 
@@ -249,11 +251,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNjg3MjQ0OSw3NDYzMDIyODEsLTM5MD
-IyNzkwMywtMTc1NjgwNzU2Miw3MjcwOTIwNTQsMjA5NTI5NjU2
-LC0xNjA1NzM5OTYxLDkwMDkxMDY4MCwxNDU5MzM5MjU5LDEyNT
-ExNjAzMjksLTgyNDY3OTAxMCwtOTc4NTQ5OTc4LDIyMzM2MDUw
-MywtMTc3MzU3MDMxOSwtMzA0NjE3NjE0LDE3Nzk5NjU1NzAsLT
-kxNzQ1MTc2OCwtOTIzMjAyMjUxLC0xODg1NDA3NTQ1LC0xOTA0
-OTUwMjE4XX0=
+eyJoaXN0b3J5IjpbODgwNjIzMDI3LDE4MjY4NzI0NDksNzQ2Mz
+AyMjgxLC0zOTAyMjc5MDMsLTE3NTY4MDc1NjIsNzI3MDkyMDU0
+LDIwOTUyOTY1NiwtMTYwNTczOTk2MSw5MDA5MTA2ODAsMTQ1OT
+MzOTI1OSwxMjUxMTYwMzI5LC04MjQ2NzkwMTAsLTk3ODU0OTk3
+OCwyMjMzNjA1MDMsLTE3NzM1NzAzMTksLTMwNDYxNzYxNCwxNz
+c5OTY1NTcwLC05MTc0NTE3NjgsLTkyMzIwMjI1MSwtMTg4NTQw
+NzU0NV19
 -->
