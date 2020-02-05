@@ -117,19 +117,12 @@
 >**Spring MVC**
 >Spring이 채택한 MVC패턴은 사실 프론트 컨트롤러(FrontController)패턴이다. 컨트롤러 패턴에서 프론트 컨트롤러는 요청을 처리하는 과정 전체의 제어 흐름을 담당한다. Spring에서는 DispatcherServelet이 대표적인 프론트 컨트롤러이다. 
   
->Servelet Container는 무엇이고 하는 역할은?
-
->Servelet은 무엇이고 하는 역할은? 
-
 >Spring의 빈 스코프는?
 >애플리케이션 컨텍스트는 모든 빈의 생존기간을 관리한다. 
 >singleton은 컨텍스트 기동시 빈 인스턴스가 하나만 생성되고, 그 빈을 공유한다. 
 >prototype은 컨텍스트에 빈을 요청할때마다 새로운 빈이 생성된다.
 >request는 HTTP 요청이 들어올때마다 새로운 빈이 생성된다.
 >session은 HTTP 세션이 만들어질때 마다 새로운 빈이 생성된다.
-
-
-
 
 >Filter와 Interupt의 차이
 
@@ -216,6 +209,9 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >**WebContainer(Servelet Container)의 역할은?**
 >WebContainer는 사용하려는 웹 애플리케이션에서 필요로 하는 Servelet을 생성하고 관리한다. 그 밖에도 WebServer와 통신을 위한 API를 제공하며 요청마다 쓰레드를 생성하여, 하나의 서블릿이 멀티 쓰레드를 처리하도록 한다. 
 
+>**Servelet?** 
+>클라이언트의 요청이 들엉서버측 기능
+
 # ETC
 
 >**Scaling out과 Scaling up의 차이?**
@@ -249,11 +245,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MTA4ODQxNCw5MDA5MTA2ODAsMTQ1OT
-MzOTI1OSwxMjUxMTYwMzI5LC04MjQ2NzkwMTAsLTk3ODU0OTk3
-OCwyMjMzNjA1MDMsLTE3NzM1NzAzMTksLTMwNDYxNzYxNCwxNz
-c5OTY1NTcwLC05MTc0NTE3NjgsLTkyMzIwMjI1MSwtMTg4NTQw
-NzU0NSwtMTkwNDk1MDIxOCwtMTEyNDA0MTEzOSw4NTM0MDcxMj
-MsLTIxMjg3MzM1OTQsLTE4OTc0MjE1ODksLTEyMDE4ODA2ODEs
-LTI0NzIxMzYyOV19
+eyJoaXN0b3J5IjpbLTE3MDgxMjY4ODAsOTAwOTEwNjgwLDE0NT
+kzMzkyNTksMTI1MTE2MDMyOSwtODI0Njc5MDEwLC05Nzg1NDk5
+NzgsMjIzMzYwNTAzLC0xNzczNTcwMzE5LC0zMDQ2MTc2MTQsMT
+c3OTk2NTU3MCwtOTE3NDUxNzY4LC05MjMyMDIyNTEsLTE4ODU0
+MDc1NDUsLTE5MDQ5NTAyMTgsLTExMjQwNDExMzksODUzNDA3MT
+IzLC0yMTI4NzMzNTk0LC0xODk3NDIxNTg5LC0xMjAxODgwNjgx
+LC0yNDcyMTM2MjldfQ==
 -->
