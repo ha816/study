@@ -112,9 +112,10 @@
 >**AOP**
 >AOP는 Aspect Oriendted Programing의 약자로, 시스템은 보통 특정 기능을 책임지는 여러 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다. AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다. 
 
->Spring의 객체 스코프는?
->애플리케이션 컨텍스트는 빈의 생존기간을 관리한다. 개발자가 빈의 생존기간을 관리하지 않아서 편하다. 
-스프링에서 제공하는 빈 스코프의 종류는 아래와 같다. 
+>Spring의 빈 스코프는?
+>애플리케이션 컨텍스트는 모든 빈의 생존기간을 관리한다. 
+>Singleton은 컨텍스트 기동시 빈 인스턴스가 하나만 생성되고, 그 빈을 공유한다. 
+>
 
 |Scope  | 설명|
 |--|--|
@@ -251,7 +252,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMzU4NDMwNSwtODI0Njc5MDEwLC05Nz
+eyJoaXN0b3J5IjpbMTI1MTE2MDMyOSwtODI0Njc5MDEwLC05Nz
 g1NDk5NzgsMjIzMzYwNTAzLC0xNzczNTcwMzE5LC0zMDQ2MTc2
 MTQsMTc3OTk2NTU3MCwtOTE3NDUxNzY4LC05MjMyMDIyNTEsLT
 E4ODU0MDc1NDUsLTE5MDQ5NTAyMTgsLTExMjQwNDExMzksODUz
