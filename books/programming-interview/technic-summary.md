@@ -67,20 +67,17 @@
 >**ArrayList와 LinkedList의 차이**
 >ArrayList는 array기반이기 때문에 랜덤 엑세스로 특정 인덱스를 찾는데 빠르다. 하지만 가장 끝에 원소를 추가하는 것을 제외하고 특정 자리에 원소를 추가할때는 자리 뒤쪽 원소를 모두 뒤로 보내야하기 때문에 추가 연산이 있다. 그리고 배열이 가득 차면 더 넓은 공간의 배열을 새로 만들어야 한다. LinkedList는 다음 원소를 가르키는 추가 공간을 사용한다. 하지만 어떤 자리에 원소를 추가해도 비교적 적은 연산으로 추가가 가능하다. 정리하자면, 처음과 중앙에 원소를 추가, 삭제하는 경우가 적고, 대량의 원소를 다룬다면 ArrayList를 사용하는게 유리하다. 그 외라면 LinkedList가 유리하다. 
 
->HashMap은 무엇이고 성능은? 최악의 상황은?
+>**HashMap은 무엇이고 성능은? 최악의 상황은?**
 >HashMap은 Hash를 이용하여 Key-Value 쌍을 가지는 데이터 구조이다. HashMap은 주어진 키에 대응하는 값을 찾는데 상수시간만에 찾는다. HashMap은 성능은 Hash함수에 달려있는데, 극단적으로 Hash함수가 같은 값만을 반환한다고 가정하면, 항상 Hash Collision이 발생하는 최악의 상황이 발생한다. 이런 최악의 상황은 HashMap의 성능을 떨어트린다.
 
->LinkedHashMap, TreeMap? 
+>**LinkedHashMap, TreeMap?** 
 >LinkedHashMap은 입력 받은 Key-Value 쌍의 입력 순서를 기억한다. TreeMap은 Map 상단에 key-value 노드로 구성된 Tree를 만들어 키를 기준으로 정렬이 가능해진다.
 
->SynchronizedMap과 ConcurrentHashMap의 차이는?
-> SynchronizedMap과 ConcurrentHashMap 모두 Thread-Safe를 보장한다. SynchronizedMap은 데이터 수정이 일어날때 완전히 모든 데이터에 락을 걸고, 다른 쓰레드들은 락이 풀렸을 경우에만 접근이 가능하다. ConcurrentHashMap은 데이터를 추가하거나 수정할때만 segment라는 일부의 맵만 락이 걸린다. 그렇기 때문에 락 없이 
-추가적으로 Map은 null을 key값으로 받을 수 있지만, ConcurrentHashMap은 null값을 키와 값으로 넣을 수 없다.
+>**SynchronizedMap과 ConcurrentHashMap의 차이는?**
+> SynchronizedMap과 ConcurrentHashMap 모두 Thread-Safe를 보장한다. SynchronizedMap은 데이터 수정이 일어날때 완전히 모든 데이터에 락을 걸고, 다른 쓰레드들은 락이 풀렸을 경우에만 접근이 가능하다. ConcurrentHashMap은 데이터를 추가하거나 수정할때만 segment라는 일부의 맵만 락이 걸린다. 그래서 다른 쓰레들들이 락 없이 값을 읽어 들일 수 있다. 
 
-**ConcurrentHashMap:** It allows concurrent access to the map. Part of the map called _Segment (internal data structure)_ is only getting locked while adding or updating the map. So ConcurrentHashMap allows concurrent threads to read the value without locking at all. This data structure was introduced to improve performance.
-
-
->Tree란?
+>**Tree?**
+>
 
 # DesignPattern
 
@@ -255,11 +252,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ1Mjc0MTk0LC02MzI5MjMyMTEsLTk2Nz
-QxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMzkwMjI3OTAz
-LC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMDk1Mjk2NTYsLTE2MD
-U3Mzk5NjEsOTAwOTEwNjgwLDE0NTkzMzkyNTksMTI1MTE2MDMy
-OSwtODI0Njc5MDEwLC05Nzg1NDk5NzgsMjIzMzYwNTAzLC0xNz
-czNTcwMzE5LC0zMDQ2MTc2MTQsMTc3OTk2NTU3MCwtOTE3NDUx
-NzY4XX0=
+eyJoaXN0b3J5IjpbMTU5NDIyNzcxMSwtNjMyOTIzMjExLC05Nj
+c0MTYyMTYsMTgyNjg3MjQ0OSw3NDYzMDIyODEsLTM5MDIyNzkw
+MywtMTc1NjgwNzU2Miw3MjcwOTIwNTQsMjA5NTI5NjU2LC0xNj
+A1NzM5OTYxLDkwMDkxMDY4MCwxNDU5MzM5MjU5LDEyNTExNjAz
+MjksLTgyNDY3OTAxMCwtOTc4NTQ5OTc4LDIyMzM2MDUwMywtMT
+c3MzU3MDMxOSwtMzA0NjE3NjE0LDE3Nzk5NjU1NzAsLTkxNzQ1
+MTc2OF19
 -->
