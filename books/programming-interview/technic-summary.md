@@ -21,7 +21,7 @@
 >**불변객체란? 왜 사용하는지?**
 >불변 객체는 객체의 상태가 절대 변하지 않는 것을 보장하는 객체를 말한다. 대표적인불변객체는 String이 있다. 불변 객체를 사용하면 Thread-Safe한 장점이 있고 방어적 복사본 코드를 만들 필요가 없다.
 
->**final? Where To?**
+>**final?**
 >final 키워드는 변수, 클래스, 메서드에 붙일 수 있다. 원시타입변수에 붙이면, 값을 바꿀 수 없고, 참조변수에 붙이면, 주소값을 변경할 수 없다. 클래스에 붙으면 해당 클래스를 상속받을 수 없다는 것을 말한다. 메서드에 붙이면, 메서드를 오버라이딩(재정의)할 수 없다는 것을 말한다. 
 
 >**static?** 
@@ -253,7 +253,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDYwOTk5NCwxNTk0MjI3NzExLC02Mz
+eyJoaXN0b3J5IjpbMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02Mz
 I5MjMyMTEsLTk2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4
 MSwtMzkwMjI3OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMD
 k1Mjk2NTYsLTE2MDU3Mzk5NjEsOTAwOTEwNjgwLDE0NTkzMzky
