@@ -326,7 +326,7 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 **equals와 hashCode만큼 중요하지 않지만, toString을 잘 구현한 클래스는 사용하기에 즐겁고, 그 클래스를 사용한 시스템은 디버깅이 쉽다.**
 
-**실전에서 toString은 그 객체가 가진 주요 정보 모두를 반환하는게 좋다.** 하지만 개
+**실전에서 toString은 그 객체가 가진 주요 정보 모두를 반환하는게 좋다.** 하지만 객체가 거대하거나 객체의 상태를 문자열로 표현하기에 적합하지 않다면, 요약정보를 담아야 한다. 
 
 
 
@@ -335,7 +335,7 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODI5ODA0NjAsMTc0NjY0MDgzMiwxMz
+eyJoaXN0b3J5IjpbLTE4MDgxODc1NzEsMTc0NjY0MDgzMiwxMz
 I3MjA3MjUsMTAzMTc4NzQ1NiwyODk1NTgxNTEsNzE3Njg1MjAs
 MTgwNTMyNTYwNCw2Mzc5OTIzNjksOTAxNDQyNTc4LDEzMTkxNT
 cxMyw5NTUyMzQ1MDksLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwt
