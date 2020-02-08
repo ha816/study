@@ -328,7 +328,10 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 **실전에서 toString은 그 객체가 가진 주요 정보 모두를 반환하는게 좋다.** 하지만 객체가 거대하거나 객체의 상태를 문자열로 표현하기에 적합하지 않다면, 요약정보를 담아야 한다. 
 
->
+>핵심 정리 
+>모든 구체 클래스에서 Object의 toString을 재정희하자. 상위 클래스에서 이미 알맞게 정의했다면 예외다. toString을 재정의한 클래스는 사용하기 좋고 디버깅이 쉽다. toString은 객체에 대해 최대한 명확하고 유용한 정보를 읽기 좋은 형태로 반환해야 한다.
+
+## Item13. clone 재정의는 주의해서 진행하라.
 
 
 
@@ -337,7 +340,7 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3ODMwODk3MywtMTgwODE4NzU3MSwxNz
+eyJoaXN0b3J5IjpbLTY5MTQwNjIwNCwtMTgwODE4NzU3MSwxNz
 Q2NjQwODMyLDEzMjcyMDcyNSwxMDMxNzg3NDU2LDI4OTU1ODE1
 MSw3MTc2ODUyMCwxODA1MzI1NjA0LDYzNzk5MjM2OSw5MDE0ND
 I1NzgsMTMxOTE1NzEzLDk1NTIzNDUwOSwtOTEzODU2MTQ1LC0x
