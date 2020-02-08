@@ -246,16 +246,20 @@ _"the microservice architectural style is an approach to developing a single app
 
 리눅스에서는 이 방식을 리눅스 컨테이너라고 하고 단순히 프로세스를 격리시키기 때문에 가볍고 빠르게 동작합니다. CPU나 메모리는 딱 프로세스가 필요한 만큼만 추가로 사용하고 성능적으로도 거어의 손실이 없습니다.
 
+# 
+
+
 # TOOL
 
 > MAVEN?
 
 > GIT 형상관리 툴?
 
+
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQ2MzA1MjUsMTA4NDYwNzU2MSw5Mz
+eyJoaXN0b3J5IjpbLTE4MzkwMTE5NjQsMTA4NDYwNzU2MSw5Mz
 QyMjY2NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMy
 MTEsLTk2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMz
 kwMjI3OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMDk1Mjk2
