@@ -118,6 +118,7 @@
 >DI(Depenceny Injection)는 의존성 주입, **IoC(Inverse of Control)**라고 한다. 애플리케이션을 동작하기 위해 여러개의 컴포넌트를 통합해서 사용한다. 일반적으로 특정 컴포넌트를 사용할때 클래스 내부에서 구현 클래스를 직접 생성해서 사용하면 두 클래스간의 결합도가 높아진다.  결합도를 낮추는 방법으로 클래스의 외부에서 컴포넌트를 생성 한 후, 내부에 주입하여 사용한다. 
 
 >**DI 컨테이너?**
+>
 
 >**AOP**
 >AOP는 Aspect Oriendted Programing의 약자로, 시스템은 보통 특정 기능을 책임지는 여러 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다. AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다. 
@@ -133,6 +134,7 @@
 >session은 HTTP 세션이 만들어질때 마다 새로운 빈이 생성된다.
 
 >Filter와 Interupt의 차이
+>
 
 # Database
 
@@ -253,11 +255,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU0MDQ2NTgzLDEwODQ2MDc1NjEsOTM0Mj
-I2NjY5LDE3MDEwOTI3MDUsMTU5NDIyNzcxMSwtNjMyOTIzMjEx
-LC05Njc0MTYyMTYsMTgyNjg3MjQ0OSw3NDYzMDIyODEsLTM5MD
-IyNzkwMywtMTc1NjgwNzU2Miw3MjcwOTIwNTQsMjA5NTI5NjU2
-LC0xNjA1NzM5OTYxLDkwMDkxMDY4MCwxNDU5MzM5MjU5LDEyNT
-ExNjAzMjksLTgyNDY3OTAxMCwtOTc4NTQ5OTc4LDIyMzM2MDUw
-M119
+eyJoaXN0b3J5IjpbLTE0ODQ2MzA1MjUsMTA4NDYwNzU2MSw5Mz
+QyMjY2NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMy
+MTEsLTk2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMz
+kwMjI3OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMDk1Mjk2
+NTYsLTE2MDU3Mzk5NjEsOTAwOTEwNjgwLDE0NTkzMzkyNTksMT
+I1MTE2MDMyOSwtODI0Njc5MDEwLC05Nzg1NDk5NzgsMjIzMzYw
+NTAzXX0=
 -->
