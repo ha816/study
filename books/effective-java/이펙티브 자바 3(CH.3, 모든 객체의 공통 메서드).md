@@ -320,7 +320,9 @@ int hashCode;
 
 ## Item12. toString을 항상 재정의하라.
 
-Object의 기본 toString 메서드는 우리가 만든 클래스에 적합한 문자열을 반환하는 경우는 거의 없
+Object의 기본 toString 메서드는 우리가 만든 클래스에 적합한 문자열을 반환하는 경우는 거의 없다. 이 메서드는 단순히 `클래스_이름@16진수로_표시한_해시코드`를 반환할 뿐이다. 
+
+toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 형태의 유익한 정보를 반환해야 한다.  또한 toString 규약은 모든 하위 클래스에서 이 메서드를 재정의하라 한다.
 
 
 
@@ -329,11 +331,11 @@ Object의 기본 toString 메서드는 우리가 만든 클래스에 적합한 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NTkzNTUzOCwxNzQ2NjQwODMyLDEzMj
-cyMDcyNSwxMDMxNzg3NDU2LDI4OTU1ODE1MSw3MTc2ODUyMCwx
-ODA1MzI1NjA0LDYzNzk5MjM2OSw5MDE0NDI1NzgsMTMxOTE1Nz
-EzLDk1NTIzNDUwOSwtOTEzODU2MTQ1LC0xNTExNzYwODExLC03
-MjM2NzE0NTcsMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwtMjA0OD
-g0MzAzNywxNzY1NDQ4OTYyLC0xOTEyMjc0MTUyLC0zNjUyOTQ2
-MzBdfQ==
+eyJoaXN0b3J5IjpbLTEwMzI2OTMzNzMsMTc0NjY0MDgzMiwxMz
+I3MjA3MjUsMTAzMTc4NzQ1NiwyODk1NTgxNTEsNzE3Njg1MjAs
+MTgwNTMyNTYwNCw2Mzc5OTIzNjksOTAxNDQyNTc4LDEzMTkxNT
+cxMyw5NTUyMzQ1MDksLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwt
+NzIzNjcxNDU3LDE3OTcxMTg5MTYsLTEzMjkwNDM5NjAsLTIwND
+g4NDMwMzcsMTc2NTQ0ODk2MiwtMTkxMjI3NDE1MiwtMzY1Mjk0
+NjMwXX0=
 -->
