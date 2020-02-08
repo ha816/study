@@ -320,7 +320,7 @@ int hashCode;
 
 ## Item12. toString을 항상 재정의하라.
 
-
+Object의 기본 toString 메서드는 우리가 만든 클래스에 적합한 문자열을 반환하는 경우는 거의 없
 
 
 
@@ -329,11 +329,11 @@ int hashCode;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NjY0MDgzMiwxMzI3MjA3MjUsMTAzMT
-c4NzQ1NiwyODk1NTgxNTEsNzE3Njg1MjAsMTgwNTMyNTYwNCw2
-Mzc5OTIzNjksOTAxNDQyNTc4LDEzMTkxNTcxMyw5NTUyMzQ1MD
-ksLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwtNzIzNjcxNDU3LDE3
-OTcxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMwMzcsMTc2NT
-Q0ODk2MiwtMTkxMjI3NDE1MiwtMzY1Mjk0NjMwLC0xMDI4MTM4
-OTQ4XX0=
+eyJoaXN0b3J5IjpbMTY4NTkzNTUzOCwxNzQ2NjQwODMyLDEzMj
+cyMDcyNSwxMDMxNzg3NDU2LDI4OTU1ODE1MSw3MTc2ODUyMCwx
+ODA1MzI1NjA0LDYzNzk5MjM2OSw5MDE0NDI1NzgsMTMxOTE1Nz
+EzLDk1NTIzNDUwOSwtOTEzODU2MTQ1LC0xNTExNzYwODExLC03
+MjM2NzE0NTcsMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwtMjA0OD
+g0MzAzNywxNzY1NDQ4OTYyLC0xOTEyMjc0MTUyLC0zNjUyOTQ2
+MzBdfQ==
 -->
