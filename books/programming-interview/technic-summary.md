@@ -35,6 +35,9 @@
 >다형성은 하나의 객체가 다른 역할을 하는 객체로 사용될 수 있다는 의미이다. 항상 가능한 것은 아니고 특정 상위 클래스를 확장한 하위 클래스는 상위 클래스를 대신할 수 있다. 
 >상속은 상위 클래스의 기능, 설계를 그대로 하위 클래스에 가져오는 것을 말한다. 따라서 하위 클래스는 온전히 상위 클래스의 역할을 할 수 있으면 추가 기능을 추가할 수 도 있다. 
 
+>**abstract와 interface의 차이는?**
+>
+
 >**Overloading과 Override의 차이? 그리고 Override 애노테이션은 어떤 역할을 하는가?** 
 >Overloading(과적합)은 하나의 메서드 이름을 여러 메서드에서 사용하는 방법이다. 
 >Override(재정의)은 상위 클래스의 메서드를 하위 클래스에서 재정의하는 것을 말한다. 
@@ -262,11 +265,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjIyMjUyMCwxOTE0NzkwMTA2LDEwOD
-Q2MDc1NjEsOTM0MjI2NjY5LDE3MDEwOTI3MDUsMTU5NDIyNzcx
-MSwtNjMyOTIzMjExLC05Njc0MTYyMTYsMTgyNjg3MjQ0OSw3ND
-YzMDIyODEsLTM5MDIyNzkwMywtMTc1NjgwNzU2Miw3MjcwOTIw
-NTQsMjA5NTI5NjU2LC0xNjA1NzM5OTYxLDkwMDkxMDY4MCwxND
-U5MzM5MjU5LDEyNTExNjAzMjksLTgyNDY3OTAxMCwtOTc4NTQ5
-OTc4XX0=
+eyJoaXN0b3J5IjpbLTE4Nzc1Mjk3OTYsMTkxNDc5MDEwNiwxMD
+g0NjA3NTYxLDkzNDIyNjY2OSwxNzAxMDkyNzA1LDE1OTQyMjc3
+MTEsLTYzMjkyMzIxMSwtOTY3NDE2MjE2LDE4MjY4NzI0NDksNz
+Q2MzAyMjgxLC0zOTAyMjc5MDMsLTE3NTY4MDc1NjIsNzI3MDky
+MDU0LDIwOTUyOTY1NiwtMTYwNTczOTk2MSw5MDA5MTA2ODAsMT
+Q1OTMzOTI1OSwxMjUxMTYwMzI5LC04MjQ2NzkwMTAsLTk3ODU0
+OTk3OF19
 -->
