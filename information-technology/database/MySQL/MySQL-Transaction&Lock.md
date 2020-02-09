@@ -80,9 +80,9 @@ RENAME TABLE tab_a TO tab_b
 
 자동 증가하는 숫자 값을 추출하기 위해 AUTO_INCREMENT라는 컬럼 속성이 존재한다. AUTO_INCREMENT컬럼이 사용된 테이블에 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 저장된 순서대로 증가한 일련번호를 가져야한다. 이를 위해 InnoDB 스토리지 엔진에서는 내부적으로 AUTO_INCREMENT락이라고 하는 테이블 수준의 잠금을 사용한다.
 
-AUTO_INCREMENT 락은 INSERT와 REPLACE 쿼리 문장과 같이 새로운 레코드를 저장하는 쿼리에서만 필요하며, 
+**AUTO_INCREMENT 락은 INSERT와 REPLACE 쿼리 문장과 같이 새로운 레코드를 저장하는 쿼리에서만 필요**하며, UPDATE나 DELETE 쿼리에서는 걸리지 않는다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3ODA5MzI5NCwtMTQzNDExODUyMywtNz
+eyJoaXN0b3J5IjpbMTgwMjE3ODk1MCwtMTQzNDExODUyMywtNz
 c0MDczODMzLDE1OTkxNDIxMTRdfQ==
 -->
