@@ -85,7 +85,7 @@
 > SynchronizedMap과 ConcurrentHashMap 모두 Thread-Safe를 보장한다. SynchronizedMap은 데이터 수정이 일어날때 완전히 모든 데이터에 락을 걸고, 다른 쓰레드들은 락이 풀렸을 경우에만 접근이 가능하다. ConcurrentHashMap은 데이터를 추가하거나 수정할때만 segment라는 일부의 맵만 락이 걸린다. 그래서 다른 쓰레드들은 그 일부의 맵을 제외하고는 읽기 및 수정이 가능하다. 
 
 >**Tree?**
->
+> Node들의 연결로 이루어지는 구조로 
 
 >**Heap**
 
@@ -270,11 +270,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTczMTk5MywtNDEzMDkwMDkyLC0xOD
-c3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5MzQyMjY2
-NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMyMTEsLT
-k2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMzkwMjI3
-OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMDk1Mjk2NTYsLT
-E2MDU3Mzk5NjEsOTAwOTEwNjgwLDE0NTkzMzkyNTksMTI1MTE2
-MDMyOV19
+eyJoaXN0b3J5IjpbLTE5ODA3NDIzNTksLTQxMzA5MDA5MiwtMT
+g3NzUyOTc5NiwxOTE0NzkwMTA2LDEwODQ2MDc1NjEsOTM0MjI2
+NjY5LDE3MDEwOTI3MDUsMTU5NDIyNzcxMSwtNjMyOTIzMjExLC
+05Njc0MTYyMTYsMTgyNjg3MjQ0OSw3NDYzMDIyODEsLTM5MDIy
+NzkwMywtMTc1NjgwNzU2Miw3MjcwOTIwNTQsMjA5NTI5NjU2LC
+0xNjA1NzM5OTYxLDkwMDkxMDY4MCwxNDU5MzM5MjU5LDEyNTEx
+NjAzMjldfQ==
 -->
