@@ -53,7 +53,7 @@ RENAME TABLE tab_a TO tab_b
 위와 같이 테이블의 이름을 변경하는 경우 자동으로 획득하는 잠금이다.
 
 
-## InnoDB 잠금(스토리지 
+## InnoDB 잠금(스토리지 엔진 레벨)
 
 비관적 잠금(Pessimistic locking)
 : 현재 트랜잭션에서 변경하고자 하는 레코드에 대해 잠금을 획득하고 작업을 처리하는 방식. 현재 변경하고자 하는 레코드를 다른 트랜잭션에서도 변경할 수 있을 거라는 비관적인 가정을 한다는 의미다. 일반적으로 높은 동시성 처리에서는 비관적 잠금이 유리하다고 하며 InnoDB는 비관적 잠금 방식을 쓴다.
@@ -90,12 +90,14 @@ ATUO_INCREMENT 락은 명시적으로 획득하고 해제하는 방법은 없다
 
 ### InnoDB 인덱스와 잠금
 
+InnoDb의 잠금과 인덱스는 상당히 중요한 연관관계가 있다. **InnoDB의 잠금은 레코드를 잠그는 것이 아니라 인덱스를 잠그는 방식이다.**
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NDM5NDg3LC0xMjY5MzA5MTk1LDg1Mj
-A2NjU0NywyMDg4NjcyMzg3LC0xNDM0MTE4NTIzLC03NzQwNzM4
-MzMsMTU5OTE0MjExNF19
+eyJoaXN0b3J5IjpbLTg5NjE4MzQ5MiwxNjY0Mzk0ODcsLTEyNj
+kzMDkxOTUsODUyMDY2NTQ3LDIwODg2NzIzODcsLTE0MzQxMTg1
+MjMsLTc3NDA3MzgzMywxNTk5MTQyMTE0XX0=
 -->
