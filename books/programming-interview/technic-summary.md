@@ -86,6 +86,7 @@
 
 >**Tree?**
 > Node들의 연결로 이루어지는 구조로 
+> 대표적인 Tree로는 Binary Tree가 있다. 
 
 >**Heap**
 
@@ -270,11 +271,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODA3NDIzNTksLTQxMzA5MDA5MiwtMT
-g3NzUyOTc5NiwxOTE0NzkwMTA2LDEwODQ2MDc1NjEsOTM0MjI2
-NjY5LDE3MDEwOTI3MDUsMTU5NDIyNzcxMSwtNjMyOTIzMjExLC
-05Njc0MTYyMTYsMTgyNjg3MjQ0OSw3NDYzMDIyODEsLTM5MDIy
-NzkwMywtMTc1NjgwNzU2Miw3MjcwOTIwNTQsMjA5NTI5NjU2LC
-0xNjA1NzM5OTYxLDkwMDkxMDY4MCwxNDU5MzM5MjU5LDEyNTEx
-NjAzMjldfQ==
+eyJoaXN0b3J5IjpbOTE4Njk1MDI5LC00MTMwOTAwOTIsLTE4Nz
+c1Mjk3OTYsMTkxNDc5MDEwNiwxMDg0NjA3NTYxLDkzNDIyNjY2
+OSwxNzAxMDkyNzA1LDE1OTQyMjc3MTEsLTYzMjkyMzIxMSwtOT
+Y3NDE2MjE2LDE4MjY4NzI0NDksNzQ2MzAyMjgxLC0zOTAyMjc5
+MDMsLTE3NTY4MDc1NjIsNzI3MDkyMDU0LDIwOTUyOTY1NiwtMT
+YwNTczOTk2MSw5MDA5MTA2ODAsMTQ1OTMzOTI1OSwxMjUxMTYw
+MzI5XX0=
 -->
