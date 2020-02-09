@@ -36,7 +36,7 @@
 
 >**abstract와 interface의 차이는?**
 >Java에서 abstract 클래스와 interface클래스는 모두 객체가 될 수 없다. abstract 클래스는 실제 구현된 메서드와 구현되지 않은 추상화 메서드를 모두 가질 수 있다. 하위 클래스에서 abstract 클래스를 상속받으면 해당 메서드를 반드시 구현해야 한다. interface를 상속 받은 하위 클래스에서도 interface에서 정의한 메서드를 구현해야 한다. 
->interface는 access modifier가 어
+>interface는 access modifier가 없고 기본적으로 모두 public이다.
 
 >**Overloading과 Override의 차이? 그리고 Override 애노테이션은 어떤 역할을 하는가?** 
 >Overloading(과적합)은 하나의 메서드 이름을 여러 메서드에서 사용하는 방법이다. 
@@ -267,7 +267,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk2OTg4MDc5LC00MTMwOTAwOTIsLTE4Nz
+eyJoaXN0b3J5IjpbODQwNTE3MDkzLC00MTMwOTAwOTIsLTE4Nz
 c1Mjk3OTYsMTkxNDc5MDEwNiwxMDg0NjA3NTYxLDkzNDIyNjY2
 OSwxNzAxMDkyNzA1LDE1OTQyMjc3MTEsLTYzMjkyMzIxMSwtOT
 Y3NDE2MjE2LDE4MjY4NzI0NDksNzQ2MzAyMjgxLC0zOTAyMjc5
