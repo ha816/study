@@ -35,7 +35,7 @@
 >상속은 상위 클래스의 기능, 설계를 그대로 하위 클래스에 가져오는 것을 말한다. 따라서 하위 클래스는 온전히 상위 클래스의 역할을 할 수 있으면 추가 기능을 추가할 수 도 있다. 
 
 >**abstract와 interface의 차이는?**
->Java에서 abstract 클래스와 interface클래스는 모두 객체가 될 수 없다. abstract 클래스는 실제 구현된 메서드와 구현되지 않은 추상화 메서드를 모두 가질 수 있다. 하위 클래스에서는 추상화 되지 않은 메서드를 구현해야 성공적으로 객체로 만들 수 있다. 
+>Java에서 abstract 클래스와 interface클래스는 모두 객체가 될 수 없다. abstract 클래스는 실제 구현된 메서드와 구현되지 않은 추상화 메서드를 모두 가질 수 있다. 하위 클래스에서 abstract 클래스를 상속받으면 해당 메서드를 반드시 구현해야 한다. 
 
 >**Overloading과 Override의 차이? 그리고 Override 애노테이션은 어떤 역할을 하는가?** 
 >Overloading(과적합)은 하나의 메서드 이름을 여러 메서드에서 사용하는 방법이다. 
@@ -266,11 +266,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTk5NTkyMCwtNDEzMDkwMDkyLC0xOD
-c3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5MzQyMjY2
-NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMyMTEsLT
-k2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMzkwMjI3
-OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMDk1Mjk2NTYsLT
-E2MDU3Mzk5NjEsOTAwOTEwNjgwLDE0NTkzMzkyNTksMTI1MTE2
-MDMyOV19
+eyJoaXN0b3J5IjpbLTEyMjMxOTc0NjUsLTQxMzA5MDA5MiwtMT
+g3NzUyOTc5NiwxOTE0NzkwMTA2LDEwODQ2MDc1NjEsOTM0MjI2
+NjY5LDE3MDEwOTI3MDUsMTU5NDIyNzcxMSwtNjMyOTIzMjExLC
+05Njc0MTYyMTYsMTgyNjg3MjQ0OSw3NDYzMDIyODEsLTM5MDIy
+NzkwMywtMTc1NjgwNzU2Miw3MjcwOTIwNTQsMjA5NTI5NjU2LC
+0xNjA1NzM5OTYxLDkwMDkxMDY4MCwxNDU5MzM5MjU5LDEyNTEx
+NjAzMjldfQ==
 -->
