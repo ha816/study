@@ -102,12 +102,12 @@
 >Builder: 한 객체에 필드가 너무 많을 경우 사용하는 패턴이다. 보통 클래스 내부에 builer 클래스를 정의해서 사용하며, 메서드 채인 방식으로 필요한 필드를 채워 최종적으로 build 메서드를 호출해 필요한 객체를 생성한다.
 >Template method : 공통적으로 사용한 메서드를 미리 상위 클래스에 정의를 하고 하위 클래스에서 정의해둔 메서드를 사용하거나 재정의해서 사용한다.
 >Fly-weight : 자주 사용되는 객체를 캐시 해두어, 필요시 캐시에 있던 객체를 재사용하는 패턴.
->Proxy : 
+>Proxy : Proxy는 우리말로 대리자, 대변인 이라는 뜻이다. 원래 작업을 해야할 객체가 아닌 Proxy가 대신해서 작업을 수행한다. Proxy는 실제 작업해야할 객체를 참조 변수로 가지고 있다. 실제 필요한 작업은 참조하던 객체의 메서드를 호출하는데 호출 전후로 별도의 로직을 수행할 수 있다.
 
 # MultiThread
 
 > **Executor Framework는? 어떤 특징이 있는가?**
-> 자바 4에서 추가된 프레임 워크이다.
+> 자바 4에서 추가된 프레임 워크이다. 
 
 >**volatile 키워드는?**
 > volatile 키워드가 붙은 변수는 읽거나 쓸때, CPU 캐시가 아니라 메인 메모리에서 직접 활용한다. 멀티 쓰레드 환경에서 CPU 캐시마다 변수의 상태가 다를 수 있기 때문에 변수값이 불일치하는 현상이 생긴다. 이럴 때 volatile을 사용할 수 있다. volatile 변수에 쓰기 명령이 끝나면, 해당 변수를 사용하는 모든 쓰레드 값을 가장 최근 값으로 바꾼다. 
@@ -273,11 +273,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI1NDIzODE3LC00MTMwOTAwOTIsLTE4Nz
-c1Mjk3OTYsMTkxNDc5MDEwNiwxMDg0NjA3NTYxLDkzNDIyNjY2
-OSwxNzAxMDkyNzA1LDE1OTQyMjc3MTEsLTYzMjkyMzIxMSwtOT
-Y3NDE2MjE2LDE4MjY4NzI0NDksNzQ2MzAyMjgxLC0zOTAyMjc5
-MDMsLTE3NTY4MDc1NjIsNzI3MDkyMDU0LDIwOTUyOTY1NiwtMT
-YwNTczOTk2MSw5MDA5MTA2ODAsMTQ1OTMzOTI1OSwxMjUxMTYw
-MzI5XX0=
+eyJoaXN0b3J5IjpbMzA4NTQyODQ4LDgyNTQyMzgxNywtNDEzMD
+kwMDkyLC0xODc3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2
+MSw5MzQyMjY2NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02Mz
+I5MjMyMTEsLTk2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4
+MSwtMzkwMjI3OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMD
+k1Mjk2NTYsLTE2MDU3Mzk5NjEsOTAwOTEwNjgwLDE0NTkzMzky
+NTldfQ==
 -->
