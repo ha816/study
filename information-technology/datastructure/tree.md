@@ -42,6 +42,10 @@ Tree
 
 ![](https://gmlwjd9405.github.io/images/data-structure-heap/types-of-heap.png)
 
+## 힙 성능
+가장 큰 값 또는 작은 값을 찾는데는 $O(1)$이 
+힙 트리의 전체 높이가 $\log{n}$이므로 하나의 요소를 힙에 삽입하거나 삭제할 때 힙을 재정비하는 시간이 $\log{n}$만큼 소요된다. 따라서 처음 힙을 만드는데는 O(nlog₂n)의 시간이 걸린다.
+
 ## 힙 구현
 
 힙정렬은 최대힙이나 최소힙을 구성하여 정렬하는 것이다. 힙 정렬을 구현하는데는 크게 삽입(add), 삭제(remove) 두 가지 메서드를 구현해야 한다. 
@@ -58,16 +62,11 @@ Tree
 
 ![](https://gmlwjd9405.github.io/images/data-structure-heap/maxheap-delete.png)
 
-
-### 힙 정렬(Heap Sort)의 성능
-힙 트리의 전체 높이가 $\log{n}$이므로 하나의 요소를 힙에 삽입하거나 삭제할 때 힙을 재정비하는 시간이 $\log{n}$만큼 소요된다. 전체적으로 O(nlog₂n)의 시간이 걸린다.
-
-
 # B+ Tree
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjEwODM4NzIsMTM4MDg2MzcwOF19
+eyJoaXN0b3J5IjpbMTM1MzIwMTgzNiwxMzgwODYzNzA4XX0=
 -->
