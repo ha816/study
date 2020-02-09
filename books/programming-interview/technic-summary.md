@@ -70,7 +70,7 @@
 >Java에서 Collection 인터페이스를 상속하는 클래스는 List, Set이 대표적이다. Collection 인터페이스에는 선형 구조의 데이터 공간에 원소를 추가, 삭제하는 메서드가 정의되어 있다. 
 
 >**List, Set?**
-> 모두 선형 구조 데이터 구조로, List는 가지고 있는 원소들의 중복을 허용하고, 순서도 기억한다. 그에 
+> 모두 선형 구조 데이터 구조로, List는 가지고 있는 원소들의 중복을 허용하고, 순서도 기억한다. 그에 반해 Set은 원소들의 중복을 허용하지 않고, 순서도 기억하지 않는다.
 
 >**ArrayList와 LinkedList의 차이**
 >ArrayList는 array기반이기 때문에 랜덤 엑세스로 특정 인덱스를 찾는데 빠르다. 하지만 가장 끝에 원소를 추가하는 것을 제외하고 특정 자리에 원소를 추가할때는 자리 뒤쪽 원소를 모두 뒤로 보내야하기 때문에 추가 연산이 있다. 그리고 배열이 가득 차면 더 넓은 공간의 배열을 새로 만들어야 한다. LinkedList는 다음 원소를 가르키는 추가 공간을 사용한다. 하지만 어떤 자리에 원소를 추가해도 비교적 적은 연산으로 추가가 가능하다. 정리하자면, 처음과 중앙에 원소를 추가, 삭제하는 경우가 적고, 대량의 원소를 다룬다면 ArrayList를 사용하는게 유리하다. 그 외라면 LinkedList가 유리하다. 
@@ -270,7 +270,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyOTg1ODQ4NSwtNDEzMDkwMDkyLC0xOD
+eyJoaXN0b3J5IjpbLTIxMTczMTk5MywtNDEzMDkwMDkyLC0xOD
 c3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5MzQyMjY2
 NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMyMTEsLT
 k2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMzkwMjI3
