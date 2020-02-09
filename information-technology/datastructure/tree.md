@@ -1,7 +1,7 @@
 # Overview
 
-
-
+Tree
+: Graph의 일종으로 Node와 Edge로 이루어진 자료구조이다. 사이클이 존재하지 않으며 대표적인 Tree로는 Binary Tree가 있다. 
 
 # BinaryTree
 
@@ -91,5 +91,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg4NTEzMDY2XX0=
+eyJoaXN0b3J5IjpbMTM4MDg2MzcwOF19
 -->
