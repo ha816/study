@@ -35,7 +35,7 @@
 >상속은 상위 클래스의 기능, 설계를 그대로 하위 클래스에 가져오는 것을 말한다. 따라서 하위 클래스는 온전히 상위 클래스의 역할을 할 수 있으면 추가 기능을 추가할 수 도 있다. 
 
 >**abstract와 interface의 차이는?**
->
+>Java에서 abstract와 interface는 추상화의 정도가 다르다. 
 
 >**Overloading과 Override의 차이? 그리고 Override 애노테이션은 어떤 역할을 하는가?** 
 >Overloading(과적합)은 하나의 메서드 이름을 여러 메서드에서 사용하는 방법이다. 
@@ -266,11 +266,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzgyODIyMjAsLTE4Nzc1Mjk3OTYsMT
-kxNDc5MDEwNiwxMDg0NjA3NTYxLDkzNDIyNjY2OSwxNzAxMDky
-NzA1LDE1OTQyMjc3MTEsLTYzMjkyMzIxMSwtOTY3NDE2MjE2LD
-E4MjY4NzI0NDksNzQ2MzAyMjgxLC0zOTAyMjc5MDMsLTE3NTY4
-MDc1NjIsNzI3MDkyMDU0LDIwOTUyOTY1NiwtMTYwNTczOTk2MS
-w5MDA5MTA2ODAsMTQ1OTMzOTI1OSwxMjUxMTYwMzI5LC04MjQ2
-NzkwMTBdfQ==
+eyJoaXN0b3J5IjpbMTE1MDgwMDc3LC0xODc3NTI5Nzk2LDE5MT
+Q3OTAxMDYsMTA4NDYwNzU2MSw5MzQyMjY2NjksMTcwMTA5Mjcw
+NSwxNTk0MjI3NzExLC02MzI5MjMyMTEsLTk2NzQxNjIxNiwxOD
+I2ODcyNDQ5LDc0NjMwMjI4MSwtMzkwMjI3OTAzLC0xNzU2ODA3
+NTYyLDcyNzA5MjA1NCwyMDk1Mjk2NTYsLTE2MDU3Mzk5NjEsOT
+AwOTEwNjgwLDE0NTkzMzkyNTksMTI1MTE2MDMyOSwtODI0Njc5
+MDEwXX0=
 -->
