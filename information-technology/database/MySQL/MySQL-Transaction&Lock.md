@@ -86,8 +86,10 @@ RENAME TABLE tab_a TO tab_b
 
 AUTO_INCREMENT 락은 태이블에서 하나만 존재하기 때문에, 두개의 쿼리가 실행되는 경우, 하나의 쿼리가 락을 걸게 되면 나머지 쿼리는 락 해제를 기다려야 한다. 
 
+Auto_INCREMENT 락은 명시적으로 획득하고 해제하는 방법은 없다. 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQ3MDA5NTEsLTE0MzQxMTg1MjMsLT
-c3NDA3MzgzMywxNTk5MTQyMTE0XX0=
+eyJoaXN0b3J5IjpbMjA4ODY3MjM4NywtMTQzNDExODUyMywtNz
+c0MDczODMzLDE1OTkxNDIxMTRdfQ==
 -->
