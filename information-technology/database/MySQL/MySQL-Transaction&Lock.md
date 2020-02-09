@@ -13,9 +13,9 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 
 트랜잭션은 DBMS 커넥션과 동일하게 꼭 필요한 최소의 코드에만 적용하는게 좋다. 이는 프로그램 코드에서 트랜잭션의 범위를 최소화하라는 의미다. 
 
-## MySQL 잠금(Lock
+## MySQL 잠금(Lock)
 
-MySQL에서 사용되는 잠금은 크게 **스토리지 엔진 레벨과 MySQL엔진 레벨**로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호 영향을 미치지 않는다. 
+MySQL에서 사용되는 잠금은 크게 **MySQL엔진 레벨**과 **스토리지 엔진 레벨**로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호 영향을 미치지 않는다. 
 
 MySQL 엔진에서는 테이블 데이터 동기화를 위한 테이블 락 말고도 사용자의 필요에 맞게 유저 락과 테이블 명에 대한 잠금을 위한 네임 락이라는 것을 제공한다. 
 
@@ -53,7 +53,7 @@ RENAME TABLE tab_a TO tab_b
 위와 같이 테이블의 이름을 변경하는 경우 자동으로 획득하는 잠금이다.
 
 
-## InnoDB 잠금
+## InnoDB 잠금(스토리지 
 
 비관적 잠금(Pessimistic locking)
 : 현재 트랜잭션에서 변경하고자 하는 레코드에 대해 잠금을 획득하고 작업을 처리하는 방식. 현재 변경하고자 하는 레코드를 다른 트랜잭션에서도 변경할 수 있을 거라는 비관적인 가정을 한다는 의미다. 일반적으로 높은 동시성 처리에서는 비관적 잠금이 유리하다고 하며 InnoDB는 비관적 잠금 방식을 쓴다.
@@ -95,7 +95,7 @@ ATUO_INCREMENT 락은 명시적으로 획득하고 해제하는 방법은 없다
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODg1NjQyMiwtMTI2OTMwOTE5NSw4NT
-IwNjY1NDcsMjA4ODY3MjM4NywtMTQzNDExODUyMywtNzc0MDcz
-ODMzLDE1OTkxNDIxMTRdfQ==
+eyJoaXN0b3J5IjpbMTY2NDM5NDg3LC0xMjY5MzA5MTk1LDg1Mj
+A2NjU0NywyMDg4NjcyMzg3LC0xNDM0MTE4NTIzLC03NzQwNzM4
+MzMsMTU5OTE0MjExNF19
 -->
