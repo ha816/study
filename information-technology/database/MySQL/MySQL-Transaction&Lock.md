@@ -67,15 +67,14 @@ RENAME TABLE tab_a TO tab_b
 
 ### 갭 락(Gap lock)
 
+레코드가 아니라 레코드와 바로 인접한 레코드 사이의 간격을 잠금다. 레코드와 레코드 사이 간격에 새로운 레코드가 INSERT되는 것을 제어한다. 사실 갭락은 개념일뿐 넥스크 키 락의 일부로 사용된다.
+
 ### 넥스트 키 락(Next key lock)
 
-* 넥스트 키 락(Next key lock)
-	* 레코드 락과 갭락을 합쳐 놓은 형태의 잠금.
-	* 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적
+**레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다.**
+넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적
 * 갭 락(Gap lock)
-	* 레코드가 아니라 레코드와 바로 인접한 레코드 사이의 간격을 잠금
-	* 레코드와 레코드 사이 간격에 새로운 레코드가 INSERT되는 것을 제어한다.  
-	* 갭락은 개념일뿐 넥스크 키 락의 일부로 사용된다.
+	* 
 
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
@@ -84,6 +83,6 @@ RENAME TABLE tab_a TO tab_b
 	* AUTO_INCREMENT컬럼이 사용된 테이블에 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 저장된 순서대로 증가한 일련번호를 가져야한다. 이를 위해 InnoDB 스토리지 엔진에서는 내부적으로 AUTO_INCREMENT락이라고 하는 테이블 수준의 잠금을 사용한다.
 	* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODI4MjI0NzMsLTc3NDA3MzgzMywxNT
+eyJoaXN0b3J5IjpbLTE0MzQxMTg1MjMsLTc3NDA3MzgzMywxNT
 k5MTQyMTE0XX0=
 -->
