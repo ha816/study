@@ -89,7 +89,7 @@
 
 >**Heap**
 >Heap은 최소값이나 최대값을 찾는데 적합한 자료구조이다. 최소값에 적합한 Heap을 MinHeap, 최대값에 적합한 Heap을 MaxHeap이라 한다. 
->Heap은 Complete Binary Tree(완전 이진 트리)이어야 한다. 완전 이진 트리란 최하단과 바로 그 위의 하 레벨 노드들을 제외한 모든 노듣
+>Heap은 Complete Binary Tree(완전 이진 트리)이어야 한다. 완전 이진 트리란 최하단과 바로 그 위의 하 레벨 노드들을 제외한 모든 노드들이 2개의 노드를 자식 노드로 갖는 트리를 말한다.
 >minHeap일 경우 부모 노드가 자식 노드보다 항상 작아야 하며 maxHeap일 경우는 반대로 부모 노드가 자식 노드보다 항상 커야 한다. 
 
 # DesignPattern
@@ -273,7 +273,7 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NTkyODQzNSwtNDEzMDkwMDkyLC0xOD
+eyJoaXN0b3J5IjpbLTQ5NDAwNDQ4NywtNDEzMDkwMDkyLC0xOD
 c3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5MzQyMjY2
 NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMyMTEsLT
 k2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMzkwMjI3
