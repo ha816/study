@@ -82,9 +82,10 @@ RENAME TABLE tab_a TO tab_b
 
 **AUTO_INCREMENT 락은 INSERT와 REPLACE 쿼리 문장과 같이 새로운 레코드를 저장하는 쿼리에서만 필요**하며, **UPDATE나 DELETE 쿼리에서는 걸리지 않는다.** 
 
+다른 잠금과는 달리, 트랜잭션 관계없이 INSERT나 REPLACE 문장에서 AUTO_INCREMENT 값을 가져오는 순간만 AUTO_INCREMENT 락이 걸렸다가 즉시 해제된다. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDI5NzUzOTAsLTE0MzQxMTg1MjMsLT
-c3NDA3MzgzMywxNTk5MTQyMTE0XX0=
+eyJoaXN0b3J5IjpbLTI3MzcwMjM4OSwtMTQzNDExODUyMywtNz
+c0MDczODMzLDE1OTkxNDIxMTRdfQ==
 -->
