@@ -88,7 +88,9 @@
 > Node와 Edge로 이루어진 자료 구조이며 사이클이 존재하지 않는다. 대표적인 Tree로는 Binary Tree가 있다. 
 
 >**Heap**
->Heap은 최소값이나 최대값을 찾는데 적합한 자료구조이다. 최소값에 적합한 Heap을 MinHeap, 최대값에 적합한 Heap을 MaxHeap이라 한다. Heap은 Complete Binary Tree이면서 minHeap일 경우 부모 노드가 자식 노드보다 항상 작아야 하며 maxHeap일 경우는 반대로 부모 노드가 자식 노드보다 항상 커야 한다. 
+>Heap은 최소값이나 최대값을 찾는데 적합한 자료구조이다. 최소값에 적합한 Heap을 MinHeap, 최대값에 적합한 Heap을 MaxHeap이라 한다. 
+>Heap은 Complete Binary Tree(완전 이진 트리)이어야 한다. 완전 이진 트리란 최하단과 바로 그 위의 하 레벨 노드들을 제외한 모든 노듣
+>minHeap일 경우 부모 노드가 자식 노드보다 항상 작아야 하며 maxHeap일 경우는 반대로 부모 노드가 자식 노드보다 항상 커야 한다. 
 
 # DesignPattern
 
@@ -271,11 +273,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1MzU3MzU3LC00MTMwOTAwOTIsLTE4Nz
-c1Mjk3OTYsMTkxNDc5MDEwNiwxMDg0NjA3NTYxLDkzNDIyNjY2
-OSwxNzAxMDkyNzA1LDE1OTQyMjc3MTEsLTYzMjkyMzIxMSwtOT
-Y3NDE2MjE2LDE4MjY4NzI0NDksNzQ2MzAyMjgxLC0zOTAyMjc5
-MDMsLTE3NTY4MDc1NjIsNzI3MDkyMDU0LDIwOTUyOTY1NiwtMT
-YwNTczOTk2MSw5MDA5MTA2ODAsMTQ1OTMzOTI1OSwxMjUxMTYw
-MzI5XX0=
+eyJoaXN0b3J5IjpbMTA5NTkyODQzNSwtNDEzMDkwMDkyLC0xOD
+c3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5MzQyMjY2
+NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMyMTEsLT
+k2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMzkwMjI3
+OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMDk1Mjk2NTYsLT
+E2MDU3Mzk5NjEsOTAwOTEwNjgwLDE0NTkzMzkyNTksMTI1MTE2
+MDMyOV19
 -->
