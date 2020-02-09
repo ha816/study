@@ -79,8 +79,8 @@ RENAME TABLE tab_a TO tab_b
 
 * 자동증가 락(Auto increment lock)
 	* 자동 증가하는 숫자 값을 추출하기 위해 AUTO_INCREMENT라는 컬럼 속성이 존재한다.
-	* AUTO_INCREMENT컬럼이 사용된 테이블에 동시에 여러 INSERT가 되는 경우
+	* AUTO_INCREMENT컬럼이 사용된 테이블에 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 저장된 순서대로 증가한 일련번호를 가져야한다. 이를 위해 Inn
 	* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTE0MjExNF19
+eyJoaXN0b3J5IjpbNTE1MDA4NDg1LDE1OTkxNDIxMTRdfQ==
 -->
