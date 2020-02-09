@@ -61,9 +61,12 @@ RENAME TABLE tab_a TO tab_b
 낙관적 잠금(Optimistic locking)
 : 기본적으로 각 트랜잭션이 같은 레코드를 변경할 가능성이 희박할것이라고 낙관적으로 생각한다. 그래서 변경 작업을 수행하고 마지막에 잠금 충돌이 있었는지 확인해보고 있으면 Rollback 처리를 한다. 
 
-### 
+###  레코드 락(Record lock, Record only lock)
 
-####
+레코드 자체만 잠그는 락으로 InnoDB에서는 레코드 자체가 아니라 인덱스를 잠근다. 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 수행한다.
+
+
+### 넥스트 키 락(Next key lock)
 
 * 레코드 락(Record lock, Record only lock)
 	* 레코드 자체만 잠그는 락
@@ -84,5 +87,6 @@ RENAME TABLE tab_a TO tab_b
 	* AUTO_INCREMENT컬럼이 사용된 테이블에 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 저장된 순서대로 증가한 일련번호를 가져야한다. 이를 위해 InnoDB 스토리지 엔진에서는 내부적으로 AUTO_INCREMENT락이라고 하는 테이블 수준의 잠금을 사용한다.
 	* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NDA3MzgzMywxNTk5MTQyMTE0XX0=
+eyJoaXN0b3J5IjpbLTU5NTEzNTMwNCwtNzc0MDczODMzLDE1OT
+kxNDIxMTRdfQ==
 -->
