@@ -3,11 +3,14 @@
 Tree
 : Graph의 일종으로 Node와 Edge로 이루어진 자료구조이다. 사이클이 존재하지 않으며 대표적인 Tree로는 Binary Tree가 있다. 
 
+![enter image description here](https://i.imgur.com/6UeCp8t.png)
+
 # [BinaryTree](https://ratsgo.github.io/data%20structure&algorithm/2017/10/21/tree/)
 
-[이진트리]()는 자식노드가 최대 두 개인 노드들로 구성된 트리이다. 이러한 이진트리에는 정이진트리(Full Binary Tree), 완전이진트리(Complete Binary Tree), 균형이진트리(Balanced Binary Tree) 등이 있다.
+이진트리는 자식노드가 **최대 두 개인 노드들로 구성된 트리이다.** 이러한 이진트리에는 정이진트리(Full Binary Tree), 완전이진트리(Complete Binary Tree), 균형이진트리(Balanced Binary Tree) 등이 있다.
 
-- 정이진트리: 모든 노드가 0 또는 2개의 자식을 가지는 트리. 
+## 정이진트리(Full Binary Tree)
+모든 노드가 0 또는 2개의 자식을 가지는 트리. 
 ```      
              18
            /    \   
@@ -17,6 +20,8 @@ Tree
     /   \
    30   50
  ```
+
+## 완전이진트리(Complete Binary Tree)
 
 - 완전이진트리:  가장 아래 두 레벨에 있는 노드들을 제외한 모든 노드들이 두개의 자식 노드를 가진다. 그리고 가장 아래 레벨에서 노드는 왼쪽에서 오른쪽으로  채워져야 한다. 
 ``` 
@@ -91,5 +96,5 @@ Tree
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk5NTg5MjM5LDEzODA4NjM3MDhdfQ==
+eyJoaXN0b3J5IjpbLTcxMjMzMTM3MiwxMzgwODYzNzA4XX0=
 -->
