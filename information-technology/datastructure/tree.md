@@ -59,8 +59,8 @@ Tree
 ![](https://gmlwjd9405.github.io/images/data-structure-heap/maxheap-delete.png)
 
 
-### 힙 정렬(Heap Sort)의 
-힙 트리의 전체 높이가 거의 log₂n(완전 이진 트리이므로)이므로 하나의 요소를 힙에 삽입하거나 삭제할 때 힙을 재정비하는 시간이 log₂n만큼 소요된다. 그런데 데이터의 갯수가 n 이므로 전체적으로 O(nlog₂n)의 시간이 걸린다.
+### 힙 정렬(Heap Sort)의 성능
+힙 트리의 전체 높이가 $\log{n}$이므로 하나의 요소를 힙에 삽입하거나 삭제할 때 힙을 재정비하는 시간이 $\log{n}$만큼 소요된다. 전체적으로 O(nlog₂n)의 시간이 걸린다.
 
 
 # B+ Tree
@@ -69,5 +69,5 @@ Tree
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU1MTcwNDk2LDEzODA4NjM3MDhdfQ==
+eyJoaXN0b3J5IjpbLTEwMjEwODM4NzIsMTM4MDg2MzcwOF19
 -->
