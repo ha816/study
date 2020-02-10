@@ -43,25 +43,23 @@
 >Override(재정의)은 상위 클래스의 메서드를 하위 클래스에서 재정의하는 것을 말한다. 
 >@Override 에너테이션은 코드 가독성과 개발자의 실수를 방지해주는 역할을 한다. @Override가 붙은 메서드는 상위 클래스나 인터페이스에 있는 특정 메서드를 재정의했다는 의미이다. 현재 다른 메서드와 차이를 명확히 밝혀 가독성을 높이고, 상위 메서드가 개발자의 실수로 변경이 일어나면 컴파일 에러를 낸다.
 
->**제네릭? 실체화(reified)한다는 건 어떤 의미인가?** 
+>**제네릭? 화(reified)한다는 건 어떤 의미인가?** 
 >Generic이란 매개변수화된 타입이라고 한다. 즉 사용하려는 타입을 매개변수로 받는것을 말한다. 예를 들어 List는 담을 원소의 타입을 제네릭을 이용해서 정할 수 있다. 그러면 컴파일러는 list에 특정 타입만 포함되도록 컬렉션을 제한한다. 
 >실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 제네릭은 실체화가 아니다. 컴파일시에는 존재하지만 실제 동작하는 코드에는 존재하지 않는다.
 
->**String 객체는 어느 메모리 공간에 올라가는가? 인터닝(interning)이란**? 
+>ri 체는어느 메모리 공간에 올라가는가? 인터닝(interning)이란**? 
 >String 객체는 대표적인 불변객체로, new 키워드로 생성하지 않는한 String Constant Pool에 올라간다. 
 >String Interning이란 불변의 독립적인 문자열을 저장하는 방법이다. String은 intern메서드를 가지는데, 상수 풀에 해당 문자열이 있으면 풀에 문자열을 가져오고 아니라면, 이 문자열은 풀에 추가되고 반환된다. 
 
 > **StringBuilder와 StringBuffer의 차이는?**
-> StringBuilder는 Thread Safe하지 않지만 StringBuffer는 그러하다. 따라서 StringBuilder가 더 빠르다.
-
->**Error와 Exception의 차이는?**
+> StringBuilder는 Thread Safe하지 않지만 StringBuffer는 그러하다. 따라서 StringBuilder가 더> 는   하  ro ptin의 이는
 >Error는 발생 시 더 이상의 작업을 수행할 수 없는 치명적인 문제를 말한다. Error가 발생하면 JVM이 중단되며 대표적인 Error로는 StackOverFlow, HeapOutOfMemory이 있다. Exception은 발생해도 개발자가 추가 처리 코드를 통해 처리가 가능하다. 
 
->**Exception 주요 클래스를 설명하라**
+>**Exception예외처리의 주요 클래스를 설명하라**
 >RuntimeException -> Exception -> Throwable
->예외는 크게 RuntimeException(unchecked Exception)과 checked Exception으로 나뉜다. RuntimeException은 런타임시 발생하는 예외로 대표적으로는 NullPointException이 있다. 명시적 예외는 코드 상에 예외처리를 위한 코드를 작성해야 하며, 대표적으로 IO Excetpion이 있다. 
+>예외는 크게 RuntimeException(unchecked Exception)과 checked과 명시적 Exception으로 나뉜다. RuntimeException은 런타임시 발생하는 예외로 대표적으로는 NullPointException, ArrayOutofBound 등이 있다. 명시적 예외는 코드 상에 예외처리를 위한 코드를 작성해야 하며, 대표적으로 IO Excetpion이 있다. 
 
->**Comparable과 Comparator 차이는?**
+>**orepto이는?**
 >Comparable과 Comparator 모두 객체들의 순서를 정하기 위해 사용한다. Collections.sort와 같이 정렬 메서드를 사용하고 싶다면 객체들이 Comparable 인터페이스를 구현해야 한다. Comparable은 자연스러운 순서를 정할때 사용하고 Comparator는 원하는 임의로 순서를 정하고 싶을 때 사용한다. 
 
 # DataStrucutre
@@ -73,9 +71,8 @@
 > 모두 선형 구조 데이터 구조로, List는 가지고 있는 원소들의 중복을 허용하고, 순서도 기억한다. 그에 반해 Set은 원소들의 중복을 허용하지 않고, 순서도 기억하지 않는다.
 
 >**ArrayList와 LinkedList의 차이**
->ArrayList는 array기반이기 때문에 랜덤 엑세스로 특정 인덱스를 찾는데 빠르다. 하지만 가장 끝에 원소를 추가하는 것을 제외하고 특정 자리에 원소를 추가할때는 자리 뒤쪽 원소를 모두 뒤로 보내야하기 때문에 추가 연산이 있다. 그리고 배열이 가득 차면 더 넓은 공간의 배열을 새로 만들어야 한다. LinkedList는 다음 원소를 가르키는 추가 공간을 사용한다. 하지만 어떤 자리에 원소를 추가해도 비교적 적은 연산으로 추가가 가능하다. 정리하자면, 처음과 중앙에 원소를 추가, 삭제하는 경우가 적고, 대량의 원소를 다룬다면 ArrayList를 사용하는게 유리하다. 그 외라면 LinkedList가 유리하다. 
-
->**HashMap은 무엇이고 성능은? 최악의 상황은?**
+>ArrayList는 array기반이기 때문에 랜덤 엑세스로 특정 인덱스를 찾는데 빠르다. 하지만 가장 끝에 원소를 추가하는 것을 제외하고 특정 자리에 원소를 추가할때는 자리 뒤쪽 원소를 모두 뒤로 보내야하기 때문에 추가 연산이 있다. 그리고 배열이 가득 차면 더 넓은 공간의 배열을 새로 만들어야 한다. LinkedList는 다음 원소를 가르키는 추가 공간을 사용한다. 하지만 어떤 자리에 원소를 추가해도 비교적 적은 연산으로 추가가 가능하다. 정리하자면, 처음과 중앙에 원소를 추가, 삭제하는 경우가 적고, 대량의 원소를 다룬다면 ArrayList를 사용하는게 유리하다. 그 외라면 LinkedList가 유리하다. 인의 차이는?
+ rrrr ke HaMp은 은? 최악의 상황은?**
 >HashMap은 Hash를 이용하여 Key-Value 쌍을 가지는 데이터 구조이다. HashMap은 주어진 키에 대응하는 값을 찾는데 상수시간만에 찾는다. HashMap은 성능은 Hash함수에 달려있는데, 극단적으로 Hash함수가 같은 값만을 반환한다고 가정하면, 항상 Hash Collision이 발생하는 최악의 상황이 발생한다. 이런 최악의 상황은 HashMap의 성능을 떨어트린다.
 
 >**LinkedHashMap, TreeMap?** 
@@ -90,7 +87,14 @@
 >**Heap**
 >Heap은 최소값이나 최대값을 찾는데 적합한 자료구조이다. 최소값에 적합한 Heap을 MinHeap, 최대값에 적합한 Heap을 MaxHeap이라 한다. 
 >Heap은 Complete Binary Tree(완전 이진 트리)이어야 한다. 완전 이진 트리란 최하단과 바로 그 위의 레벨 노드들을 제외한 모든 노드들이 온전히 2개의 자식 노드를 갖는 트리를 말한다.
->minHeap일 경우 부모 노드가 자식 노드보다 항상 작아야 한다. 반대로 maxHeap일 경우는 부모 노드가 자식 노드보다 항상 커야 한다. 
+>minHeap일 경우 부모 노드가 자식 노드보다 항상 작아야 한다. 반대로 maxHeap일 경우는 부모 노드가 자식 노드보다 항상 커야 한다. 경우를 가정하면 어떤가?
+
+ 가
+
+>  클래스를 설명라
+>pineha  oncuntp 이는
+
+>re HashMap 의 
 
 # DesignPattern
 
@@ -135,15 +139,18 @@
 >**AOP**
 >AOP는 Aspect Oriendted Programing의 약자로, 시스템은 보통 특정 기능을 책임지는 여러 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다. AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다. 
 
->**Spring MVC**
->Spring이 채택한 MVC패턴은 사실 프론트 컨트롤러(FrontController)패턴이다. 컨트롤러 패턴에서 프론트 컨트롤러는 요청을 처리하는 과정 전체의 제어 흐름을 담당한다. Spring에서는 DispatcherServelet이 대표적인 프론트 컨트롤러이다. 
+>**Spring MVC**의 객체 스코프는?
+
+>Spring이 채택한의 MVC패턴은 사실 프론트 컨트롤러(FrontController)패턴이다. 컨트롤러 패턴에서 프론트 컨트롤러는 요청을 처리하는 과정 전체의 제어 흐름을 담당한다. Spring에서는 DispatcherServelet이 대표적인 프론트 컨트롤러이다. 
   
 >Spring의 빈 스코프는?
 >애플리케이션 컨텍스트는 모든 빈의 생존기간을 관리한다. 
 >singleton은 컨텍스트 기동시 빈 인스턴스가 하나만 생성되고, 그 빈을 공유한다. 
 >prototype은 컨텍스트에 빈을 요청할때마다 새로운 빈이 생성된다.
 >request는 HTTP 요청이 들어올때마다 새로운 빈이 생성된다.
->session은 HTTP 세션이 만들어질때 마다 새로운 빈이 생성된다.
+>session은 HTTP 세션이 만들어질때 마다 새로운 빈이 생성된다.let은 무엇이고 하는 역할은? 
+
+
 
 >Filter와 Interupt의 차이
 >
@@ -262,7 +269,6 @@ _"the microservice architectural style is an approach to developing a single app
 
 
 
-
 # TOOL
 
 > MAVEN?
@@ -273,11 +279,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA4NTQyODQ4LDgyNTQyMzgxNywtNDEzMD
-kwMDkyLC0xODc3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2
-MSw5MzQyMjY2NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02Mz
-I5MjMyMTEsLTk2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4
-MSwtMzkwMjI3OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMD
-k1Mjk2NTYsLTE2MDU3Mzk5NjEsOTAwOTEwNjgwLDE0NTkzMzky
-NTldfQ==
+eyJoaXN0b3J5IjpbLTE1NzUzMzMwMzQsMzA4NTQyODQ4LDgyNT
+QyMzgxNywtNDEzMDkwMDkyLC0xODc3NTI5Nzk2LDE5MTQ3OTAx
+MDYsMTA4NDYwNzU2MSw5MzQyMjY2NjksMTcwMTA5MjcwNSwxNT
+k0MjI3NzExLC02MzI5MjMyMTEsLTk2NzQxNjIxNiwxODI2ODcy
+NDQ5LDc0NjMwMjI4MSwtMzkwMjI3OTAzLC0xNzU2ODA3NTYyLD
+cyNzA5MjA1NCwyMDk1Mjk2NTYsLTE2MDU3Mzk5NjEsOTAwOTEw
+NjgwXX0=
 -->
