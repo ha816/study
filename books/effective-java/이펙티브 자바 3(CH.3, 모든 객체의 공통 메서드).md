@@ -339,6 +339,9 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 ```
 public interface Cloneable { } //정말 아무것도 없다 
+public class Object {
+protected native Object clone() {} //protected ...
+}
 ```
 
 
@@ -346,11 +349,11 @@ public interface Cloneable { } //정말 아무것도 없다
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDE2NTA3MzEsLTE2NTI5OTAzMjQsLT
-Y5MTQwNjIwNCwtMTgwODE4NzU3MSwxNzQ2NjQwODMyLDEzMjcy
-MDcyNSwxMDMxNzg3NDU2LDI4OTU1ODE1MSw3MTc2ODUyMCwxOD
-A1MzI1NjA0LDYzNzk5MjM2OSw5MDE0NDI1NzgsMTMxOTE1NzEz
-LDk1NTIzNDUwOSwtOTEzODU2MTQ1LC0xNTExNzYwODExLC03Mj
-M2NzE0NTcsMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwtMjA0ODg0
-MzAzN119
+eyJoaXN0b3J5IjpbNjU0OTYwNTA5LC0xNjUyOTkwMzI0LC02OT
+E0MDYyMDQsLTE4MDgxODc1NzEsMTc0NjY0MDgzMiwxMzI3MjA3
+MjUsMTAzMTc4NzQ1NiwyODk1NTgxNTEsNzE3Njg1MjAsMTgwNT
+MyNTYwNCw2Mzc5OTIzNjksOTAxNDQyNTc4LDEzMTkxNTcxMyw5
+NTUyMzQ1MDksLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwtNzIzNj
+cxNDU3LDE3OTcxMTg5MTYsLTEzMjkwNDM5NjAsLTIwNDg4NDMw
+MzddfQ==
 -->
