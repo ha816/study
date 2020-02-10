@@ -91,7 +91,8 @@ InnoDb의 잠금과 인덱스는 상당히 중요한 연관관계가 있다. **I
 SELECT * FROM employees WHERE first_name = 'Georgi';
 SELECT * FROM employees WHERE first_name = 'Georgi' And last_name = 'Klassen';
 ...
-UP
+UPDATE employees SET 
+WHERE first_name = 'Gorgi' AND last_name= 'Klassen  '
 
 ```
 UPDATE 문장이 실행되면 1건의 레코드가 
@@ -103,8 +104,8 @@ UPDATE 문장이 실행되면 1건의 레코드가
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzY0MjI5OTcsMTU1ODk3MTU5OCwtMT
-g4NzIxNzc5MywxMzM3NjkyMDkxLC04OTYxODM0OTIsMTY2NDM5
-NDg3LC0xMjY5MzA5MTk1LDg1MjA2NjU0NywyMDg4NjcyMzg3LC
-0xNDM0MTE4NTIzLC03NzQwNzM4MzMsMTU5OTE0MjExNF19
+eyJoaXN0b3J5IjpbODg3MzI2NzUsMTU1ODk3MTU5OCwtMTg4Nz
+IxNzc5MywxMzM3NjkyMDkxLC04OTYxODM0OTIsMTY2NDM5NDg3
+LC0xMjY5MzA5MTk1LDg1MjA2NjU0NywyMDg4NjcyMzg3LC0xND
+M0MTE4NTIzLC03NzQwNzM4MzMsMTU5OTE0MjExNF19
 -->
