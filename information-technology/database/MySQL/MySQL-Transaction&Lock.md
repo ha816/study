@@ -87,10 +87,10 @@ ATUOㅆ_INCREMENT 락은 명시적으로 획득하고 해제하는 방법은 없
 InnoDb의 잠금과 인덱스는 상당히 중요한 연관관계가 있다. **InnoDB의 잠금은 레코드를 잠그는 것이 아니라 인덱스를 잠그는 방식이다.**
 즉, 변경해야할 레코드를 찾기 위해 검색한 인덱스의 레코드를 모두 잠가야 한다. 
 
-`
+```
 SELECT * FROM employees WHERE first_name = 'Georgi';
 SELECT * FROM employees WHERE first_name = 'Georgi' And last_name = 'Klassen';
-``
+```
 
 
 
@@ -99,8 +99,8 @@ SELECT * FROM employees WHERE first_name = 'Georgi' And last_name = 'Klassen';
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzMwMjMyNTQsLTE4ODcyMTc3OTMsMT
-MzNzY5MjA5MSwtODk2MTgzNDkyLDE2NjQzOTQ4NywtMTI2OTMw
-OTE5NSw4NTIwNjY1NDcsMjA4ODY3MjM4NywtMTQzNDExODUyMy
-wtNzc0MDczODMzLDE1OTkxNDIxMTRdfQ==
+eyJoaXN0b3J5IjpbMTU1ODk3MTU5OCwtMTg4NzIxNzc5MywxMz
+M3NjkyMDkxLC04OTYxODM0OTIsMTY2NDM5NDg3LC0xMjY5MzA5
+MTk1LDg1MjA2NjU0NywyMDg4NjcyMzg3LC0xNDM0MTE4NTIzLC
+03NzQwNzM4MzMsMTU5OTE0MjExNF19
 -->
