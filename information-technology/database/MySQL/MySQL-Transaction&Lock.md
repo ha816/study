@@ -92,10 +92,10 @@ SELECT * FROM employees WHERE first_name = 'Georgi';
 SELECT * FROM employees WHERE first_name = 'Georgi' And last_name = 'Klassen';
 ...
 UPDATE employees SET 
-WHERE first_name = 'Gorgi' AND last_name= 'Klassen  ddd'
-
+WHERE first_name = 'Gorgi' AND last_name= 'Klassen'
 ```
-UPDATE 문장이 실행되면 1건의 레코드가 
+UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. 하지만 이 1건의 업데이트를 위해 몇개의 레코드에 락을 걸어야 할까?...
+
 
 
 
@@ -104,9 +104,9 @@ UPDATE 문장이 실행되면 1건의 레코드가
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MjI1MTgwMyw4ODczMjY3NSwxNTU4OT
-cxNTk4LC0xODg3MjE3NzkzLDEzMzc2OTIwOTEsLTg5NjE4MzQ5
-MiwxNjY0Mzk0ODcsLTEyNjkzMDkxOTUsODUyMDY2NTQ3LDIwOD
-g2NzIzODcsLTE0MzQxMTg1MjMsLTc3NDA3MzgzMywxNTk5MTQy
-MTE0XX0=
+eyJoaXN0b3J5IjpbLTE3MzU3MjkxODYsMTg4MjI1MTgwMyw4OD
+czMjY3NSwxNTU4OTcxNTk4LC0xODg3MjE3NzkzLDEzMzc2OTIw
+OTEsLTg5NjE4MzQ5MiwxNjY0Mzk0ODcsLTEyNjkzMDkxOTUsOD
+UyMDY2NTQ3LDIwODg2NzIzODcsLTE0MzQxMTg1MjMsLTc3NDA3
+MzgzMywxNTk5MTQyMTE0XX0=
 -->
