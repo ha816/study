@@ -333,18 +333,19 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 ## Item13. clone 재정의는 주의해서 진행하라.
 
-
+**Cloneable은 복제해도 되는 클래스임을 명시하는 용도의 믹스인 인터페이스이다.** 
+하지만 의도한 못적을 제대로 이루지 못했다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MTQwNjIwNCwtMTgwODE4NzU3MSwxNz
-Q2NjQwODMyLDEzMjcyMDcyNSwxMDMxNzg3NDU2LDI4OTU1ODE1
-MSw3MTc2ODUyMCwxODA1MzI1NjA0LDYzNzk5MjM2OSw5MDE0ND
-I1NzgsMTMxOTE1NzEzLDk1NTIzNDUwOSwtOTEzODU2MTQ1LC0x
-NTExNzYwODExLC03MjM2NzE0NTcsMTc5NzExODkxNiwtMTMyOT
-A0Mzk2MCwtMjA0ODg0MzAzNywxNzY1NDQ4OTYyLC0xOTEyMjc0
-MTUyXX0=
+eyJoaXN0b3J5IjpbLTUyMjAzNDc5MiwtNjkxNDA2MjA0LC0xOD
+A4MTg3NTcxLDE3NDY2NDA4MzIsMTMyNzIwNzI1LDEwMzE3ODc0
+NTYsMjg5NTU4MTUxLDcxNzY4NTIwLDE4MDUzMjU2MDQsNjM3OT
+kyMzY5LDkwMTQ0MjU3OCwxMzE5MTU3MTMsOTU1MjM0NTA5LC05
+MTM4NTYxNDUsLTE1MTE3NjA4MTEsLTcyMzY3MTQ1NywxNzk3MT
+E4OTE2LC0xMzI5MDQzOTYwLC0yMDQ4ODQzMDM3LDE3NjU0NDg5
+NjJdfQ==
 -->
