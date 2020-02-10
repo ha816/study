@@ -337,16 +337,20 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 하지만 의도한 목적을 제대로 이루지 못했다. 가장 큰 문제는 clone메서드가 선언된 곳이 Cloneable이 아닌 Object이고 그마저도 protected라는데 있다. 
 
+```
+public interface Cloneable { } //정말 아무것도 없다 
+```
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTI5OTAzMjQsLTY5MTQwNjIwNCwtMT
-gwODE4NzU3MSwxNzQ2NjQwODMyLDEzMjcyMDcyNSwxMDMxNzg3
-NDU2LDI4OTU1ODE1MSw3MTc2ODUyMCwxODA1MzI1NjA0LDYzNz
-k5MjM2OSw5MDE0NDI1NzgsMTMxOTE1NzEzLDk1NTIzNDUwOSwt
-OTEzODU2MTQ1LC0xNTExNzYwODExLC03MjM2NzE0NTcsMTc5Nz
-ExODkxNiwtMTMyOTA0Mzk2MCwtMjA0ODg0MzAzNywxNzY1NDQ4
-OTYyXX0=
+eyJoaXN0b3J5IjpbLTE4NDE2NTA3MzEsLTE2NTI5OTAzMjQsLT
+Y5MTQwNjIwNCwtMTgwODE4NzU3MSwxNzQ2NjQwODMyLDEzMjcy
+MDcyNSwxMDMxNzg3NDU2LDI4OTU1ODE1MSw3MTc2ODUyMCwxOD
+A1MzI1NjA0LDYzNzk5MjM2OSw5MDE0NDI1NzgsMTMxOTE1NzEz
+LDk1NTIzNDUwOSwtOTEzODU2MTQ1LC0xNTExNzYwODExLC03Mj
+M2NzE0NTcsMTc5NzExODkxNiwtMTMyOTA0Mzk2MCwtMjA0ODg0
+MzAzN119
 -->
