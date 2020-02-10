@@ -62,22 +62,16 @@ RENAME TABLE tab_a TO tab_b
 : 기본적으로 각 트랜잭션이 같은 레코드를 변경할 가능성이 희박할것이라고 낙관적으로 생각한다. 그래서 변경 작업을 수행하고 마지막에 잠금 충돌이 있었는지 확인해보고 있으면 Rollback 처리를 한다. 
 
 ###  레코드 락(Record lock, Record only lock)
+레코드 자체만 잠그는 락 InnoDB에서는 레코드 자체가 아니라 인덱스를 잠. 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 수행한다.
 
-레코드 자체만 잠그는 락으로 InnoDB에서는 레코드 자체가 아니라 인덱스를 잠근다. 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 수행한다.
-
-### 갭 락(Gap lock)
-
-레코드가 아니라 레코드와 바로 인접한 레코드 사이의 간격을 잠금다. 레코드와 레코드 사이 간격에 새로운 레코드가 INSERT되는 것을 제어한다. 사실 갭락은 개념일뿐 넥스크 키 락의 일부로 사용된다.
+###다.
 
 ### 넥스트 키 락(Next key lock)
-
-**레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다.**
-넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이다.
+*레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다.넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이이다.
 
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
-### 자동증가 락(Auto increment lock)
-
+ 자동증가 락(Auto increment lock)
 자동 증가하는 숫자 값을 추출하기 위해 AUTO_INCREMENT라는 컬럼 속성이 존재한다. AUTO_INCREMENT컬럼이 사용된 테이블에 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 저장된 순서대로 증가한 일련번호를 가져야한다. 이를 위해 InnoDB 스토리지 엔진에서는 내부적으로 AUTO_INCREMENT락이라고 하는 테이블 수준의 잠금을 사용한다.
 
 **AUTO_INCREMENT 락은 INSERT와 REPLACE 쿼리 문장과 같이 새로운 레코드를 저장하는 쿼리에서만 필요**하며, **UPDATE나 DELETE 쿼리에서는 걸리지 않는다.** 
@@ -86,7 +80,7 @@ RENAME TABLE tab_a TO tab_b
 
 AUTO_INCREMENT 락은 태이블에서 하나만 존재하기 때문에, 두개의 쿼리가 실행되는 경우, 하나의 쿼리가 락을 걸게 되면 나머지 쿼리는 락 해제를 기다려야 한다. 
 
-ATUO_INCREMENT 락은 명시적으로 획득하고 해제하는 방법은 없다. 하지만 AUTO_INCREMENT 락은 아주 짧은 시간만 걸렸다가 해제가 되기 대문에 보통 큰 문제가 되지 않는다.
+ATUOㅆ_INCREMENT 락은 명시적으로 획득하고 해제하는 방법은 없다. 하지만 AUTO_INCREMENT 락은 아주 짧은 시간만 걸렸다가 해제가 되기 대문에 보통 큰 문제가 되지 않는다.
 
 ### InnoDB 인덱스와 잠금
 
@@ -97,7 +91,8 @@ InnoDb의 잠금과 인덱스는 상당히 중요한 연관관계가 있다. **I
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NjE4MzQ5MiwxNjY0Mzk0ODcsLTEyNj
-kzMDkxOTUsODUyMDY2NTQ3LDIwODg2NzIzODcsLTE0MzQxMTg1
-MjMsLTc3NDA3MzgzMywxNTk5MTQyMTE0XX0=
+eyJoaXN0b3J5IjpbMTMzNzY5MjA5MSwtODk2MTgzNDkyLDE2Nj
+QzOTQ4NywtMTI2OTMwOTE5NSw4NTIwNjY1NDcsMjA4ODY3MjM4
+NywtMTQzNDExODUyMywtNzc0MDczODMzLDE1OTkxNDIxMTRdfQ
+==
 -->
