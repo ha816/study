@@ -92,7 +92,7 @@ SELECT * FROM employees WHERE first_name = 'Georgi';
 SELECT * FROM employees WHERE first_name = 'Georgi' And last_name = 'Klassen';
 ...
 UPDATE employees SET 
-WHERE first_name = 'Gorgi' AND last_name= 'Klassen  '
+WHERE first_name = 'Gorgi' AND last_name= 'Klassen  ddd'
 
 ```
 UPDATE 문장이 실행되면 1건의 레코드가 
@@ -104,8 +104,9 @@ UPDATE 문장이 실행되면 1건의 레코드가
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg3MzI2NzUsMTU1ODk3MTU5OCwtMTg4Nz
-IxNzc5MywxMzM3NjkyMDkxLC04OTYxODM0OTIsMTY2NDM5NDg3
-LC0xMjY5MzA5MTk1LDg1MjA2NjU0NywyMDg4NjcyMzg3LC0xND
-M0MTE4NTIzLC03NzQwNzM4MzMsMTU5OTE0MjExNF19
+eyJoaXN0b3J5IjpbMTg4MjI1MTgwMyw4ODczMjY3NSwxNTU4OT
+cxNTk4LC0xODg3MjE3NzkzLDEzMzc2OTIwOTEsLTg5NjE4MzQ5
+MiwxNjY0Mzk0ODcsLTEyNjkzMDkxOTUsODUyMDY2NTQ3LDIwOD
+g2NzIzODcsLTE0MzQxMTg1MjMsLTc3NDA3MzgzMywxNTk5MTQy
+MTE0XX0=
 -->
