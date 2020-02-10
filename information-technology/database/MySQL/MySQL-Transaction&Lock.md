@@ -85,8 +85,7 @@ ATUOㅆ_INCREMENT 락은 명시적으로 획득하고 해제하는 방법은 없
 ### InnoDB 인덱스와 잠금
 
 InnoDb의 잠금과 인덱스는 상당히 중요한 연관관계가 있다. **InnoDB의 잠금은 레코드를 잠그는 것이 아니라 인덱스를 잠그는 방식이다.**
-
-
+즉, 변경해야할 레코드를 찾기 위해 검색한 엔
 
 
 
@@ -95,7 +94,7 @@ InnoDb의 잠금과 인덱스는 상당히 중요한 연관관계가 있다. **I
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5OTI2MDAxOSwxMzM3NjkyMDkxLC04OT
+eyJoaXN0b3J5IjpbLTg3OTkyNzc3NiwxMzM3NjkyMDkxLC04OT
 YxODM0OTIsMTY2NDM5NDg3LC0xMjY5MzA5MTk1LDg1MjA2NjU0
 NywyMDg4NjcyMzg3LC0xNDM0MTE4NTIzLC03NzQwNzM4MzMsMT
 U5OTE0MjExNF19
