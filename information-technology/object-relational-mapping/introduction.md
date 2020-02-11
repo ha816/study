@@ -32,7 +32,14 @@ JPA는 성능 향상을 위해 지연 로딩이나 즉시 로딩과 같은 몇 �
 @Table(name = "user")
 public class User {
 	@Id
-	private String em
+	private String email;
+	private String name;
+
+	@Temporal(TemporalType,TIMESTAMP)
+	@Column(name = "create_date")
+	private Date createDate;
+	
+	protected User() {}
 
 
 }
@@ -46,5 +53,5 @@ public class User {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMDU1MzQ5NSwtMzMzOTY4NjYwXX0=
+eyJoaXN0b3J5IjpbLTIxNDY3MzYxNDcsLTMzMzk2ODY2MF19
 -->
