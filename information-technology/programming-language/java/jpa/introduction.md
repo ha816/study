@@ -4,10 +4,10 @@ JPA는 Java Persistence API의 약자로 자바 객체와 DB 테이블 간의 �
 
 # JPA 프로바이더
 
-
+JPA 스펙 구현체를 JPA 프로바이더라고 하며, 하이버네이트, 이클립스링크
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNjEzMDMxN119
+eyJoaXN0b3J5IjpbOTQ0MDAwNjY4XX0=
 -->
