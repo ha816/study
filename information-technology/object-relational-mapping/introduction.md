@@ -21,7 +21,9 @@ public class Member {
 
 또 다른 특징으로는 객체를 위한 기능이 있다. 테이블 컬럼간의 참조 관계를 객체간의 연관으로 매핑하는 기능이 있고, 밸류 타입을 위한 매핑, 클래스 상속에 대한 매핑도 지원한다. 이는 객체 모델을 중심으로 사고하는데 도움을 준다. 
 
-JPQL(Java Pers
+그 밖에 JPQL(Java Persistence Query Language)를 지원한다. JPQL은 SQL과 유사하지만 좀 더 객체에 초점을 둔다. 
+
+JPA는 성능 향상을 위해 지연 로딩이나 즉시 로딩과 같은 몇 가지 기법을 제공한다.  
 
 
 
@@ -31,5 +33,5 @@ JPQL(Java Pers
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NjMzMTY0Ml19
+eyJoaXN0b3J5IjpbMTE1OTY1OTEzMF19
 -->
