@@ -40,10 +40,13 @@ public class User {
 	private Date createDate;
 	
 	protected User() {}
-
-
+	...
 }
 ``` 
+
+흔히 보이는 모델 클래스와 비교해보자면 한 가지 차이가 있다 바로 JPA 애노테이션을 사용해서 DB 테이블과 매핑 정보를 설정하고 있다는 것이다. 
+
+@Entitiy는 해당 클래스가 JPA의 엔티티임을 의미한다. JPA에서 엔티티는 DB 테이블과 매핑되는 기본 단윋
 
 
 
@@ -53,5 +56,6 @@ public class User {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDY3MzYxNDcsLTMzMzk2ODY2MF19
+eyJoaXN0b3J5IjpbNTE5NDMzMjg0LC0yMTQ2NzM2MTQ3LC0zMz
+M5Njg2NjBdfQ==
 -->
