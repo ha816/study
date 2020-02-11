@@ -17,7 +17,11 @@ public class Member {
 	private String password;
 }
 ```
-그것을 반영하려면 위처럼 매핑 설정만 추가하면 된다. SQL 쿼리를 사용했다고 하면 member 테이블에 접근하는 INSERT, SELECT, UPDATE 쿼리를 찾아서 컬럼 추가로 인한 변경이 필요한지 확인하고 수정해야 한다. 결과적으로 SQL을 사용하는 것과 비교하면 태이블과 객체사
+그것을 반영하려면 위처럼 매핑 설정만 추가하면 된다. SQL 쿼리를 사용했다고 하면 member 테이블에 접근하는 INSERT, SELECT, UPDATE 쿼리를 찾아서 컬럼 추가로 인한 변경이 필요한지 확인하고 수정해야 한다. 결과적으로 SQL을 사용하는 것과 비교하면 태이블과 객체 사이의 매핑 변경이 쉽기 때문에 상대적으로 유지보수가 편하다. 
+
+또 다른 특징으로는 객체를 위한 기능이 있다. 테이블 컬럼간의 참조 관계를 객체간의 연관으로 매핑하는 기능이 있고, 밸류 타입을 위한 매핑, 클래스 상속에 대한 매핑도 지원한다. 이는 객체 모델을 중심으로 사고하는데 도움을 준다. 
+
+JPQL(Java Pers
 
 
 
@@ -27,5 +31,5 @@ public class Member {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM2ODY3OTkyXX0=
+eyJoaXN0b3J5IjpbMTg1NjMzMTY0Ml19
 -->
