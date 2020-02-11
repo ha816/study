@@ -74,7 +74,9 @@ User 클래스의 인자가 없는 기본 생성자를 이용해서 User 객체�
 
 # 영속 컨텍스트와 영속 객체 개요
 
-@Entity 애노테잇
+@Entity 애노테이션을 붙인 클래스를 JPA에서는 엔티티라고 부른다. 이 엔티티는 DB에 하는 대상이 된다. 
+
+JPA는 이러한 엔티티들을 영속 컨텍스트(persistence context)로 관리한다. 영속 컨텍스트는 JPA가 관리하는 엔티티 객체 집한인데, 이 엔티티 객체를 DB에 반영한다. 
 
 
 
@@ -86,6 +88,6 @@ User 클래스의 인자가 없는 기본 생성자를 이용해서 User 객체�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc4MTczNTMyLDIwNTMwNTE4ODQsLTQ1Mj
-E2NjEyNywtMjE0NjczNjE0NywtMzMzOTY4NjYwXX0=
+eyJoaXN0b3J5IjpbMTQ1MTM0OTI1MywyMDUzMDUxODg0LC00NT
+IxNjYxMjcsLTIxNDY3MzYxNDcsLTMzMzk2ODY2MF19
 -->
