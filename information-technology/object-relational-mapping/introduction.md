@@ -46,7 +46,11 @@ public class User {
 
 흔히 보이는 모델 클래스와 비교해보자면 한 가지 차이가 있다 바로 JPA 애노테이션을 사용해서 DB 테이블과 매핑 정보를 설정하고 있다는 것이다. 
 
-@Entitiy는 해당 클래스가 JPA의 엔티티임을 의미한다. JPA에서 엔티티는 DB 테이블과 매핑되는 기본 단윋
+@Entitiy는 해당 클래스가 JPA의 엔티티임을 의미한다. JPA에서 엔티티는 DB 테이블과 매핑되는 기본 단위다. 
+
+@Table 애노테이션은 그 클래스가 어떤 테이블과 매핑되는지 설정한다. 
+
+DB 테이블에 프라이머리키가 있다면, JPA 엔티티에서 식별할 수 있다. @Id 애노테이션은 엔티티를 식별할 때 사용할 프로퍼티를 말한다. 대부분의 엔티티 클래스의 식별자는 DB 테이블의 프라이머리키와 매핑된다. 
 
 
 
@@ -56,6 +60,6 @@ public class User {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE5NDMzMjg0LC0yMTQ2NzM2MTQ3LC0zMz
-M5Njg2NjBdfQ==
+eyJoaXN0b3J5IjpbLTU0OTk0ODIyNCwtMjE0NjczNjE0NywtMz
+MzOTY4NjYwXX0=
 -->
