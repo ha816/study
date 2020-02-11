@@ -61,7 +61,7 @@ User user = entityManager.find(User.class, "madvirus@..."
 SELECT email, name, create_date FROM user WHERe email.'madvirus@...'
 ```
 
-위 코드는 JPA가 제공하는 EntitiyManager를 이용해서 ㅕㄴㄷㄱ 
+위 코드는 JPA가 제공하는 EntitiyManager를 이용해서 User 객체를 찾는다. @Table 애노테이션을 이용해서 User 테이블을 찾고 식별자를 지정하는 @id로 Where 절에 프라이머리키를 사용한다. 
 
 
 
@@ -73,6 +73,6 @@ SELECT email, name, create_date FROM user WHERe email.'madvirus@...'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA5NTU3MzksLTIxNDY3MzYxNDcsLT
-MzMzk2ODY2MF19
+eyJoaXN0b3J5IjpbLTQ1MjE2NjEyNywtMjE0NjczNjE0NywtMz
+MzOTY4NjYwXX0=
 -->
