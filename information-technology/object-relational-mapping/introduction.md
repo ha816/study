@@ -74,7 +74,7 @@ User 클래스의 인자가 없는 기본 생성자를 이용해서 User 객체�
 
 # 영속 컨텍스트와 영속 객체 개요
 
-
+@Entity 애노테잇
 
 
 
@@ -86,6 +86,6 @@ User 클래스의 인자가 없는 기본 생성자를 이용해서 User 객체�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MzA1MTg4NCwtNDUyMTY2MTI3LC0yMT
-Q2NzM2MTQ3LC0zMzM5Njg2NjBdfQ==
+eyJoaXN0b3J5IjpbNzc4MTczNTMyLDIwNTMwNTE4ODQsLTQ1Mj
+E2NjEyNywtMjE0NjczNjE0NywtMzMzOTY4NjYwXX0=
 -->
