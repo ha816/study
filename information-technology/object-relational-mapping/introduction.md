@@ -78,7 +78,9 @@ User 클래스의 인자가 없는 기본 생성자를 이용해서 User 객체�
 
 JPA는 이러한 엔티티들을 영속 컨텍스트(persistence context)로 관리한다. 영속 컨텍스트는 JPA가 관리하는 엔티티 객체 집한인데, 이 엔티티 객체를 DB에 반영한다. 
 
-영속 컨텍스트에 보관된 객체를 영속 객체(persistent object)라고 부른다. 보통 영속 컨텍스트는 세션(JPA의 EntityManager) 단위로 생긴다. 즉 
+영속 컨텍스트에 보관된 객체를 영속 객체(persistent object)라고 부른다. 보통 영속 컨텍스트는 세션(JPA의 EntityManager) 단위로 생긴다. 
+
+응용 프로그램은 영속 컨텍스트에 직접 접근할 수 없다. 대신 
 
 
 
@@ -90,6 +92,7 @@ JPA는 이러한 엔티티들을 영속 컨텍스트(persistence context)로 관
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NTE2ODE0OSwyMDUzMDUxODg0LC00NT
-IxNjYxMjcsLTIxNDY3MzYxNDcsLTMzMzk2ODY2MF19
+eyJoaXN0b3J5IjpbLTE3OTQ4NDg5NDYsMTk4NTE2ODE0OSwyMD
+UzMDUxODg0LC00NTIxNjYxMjcsLTIxNDY3MzYxNDcsLTMzMzk2
+ODY2MF19
 -->
