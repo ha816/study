@@ -82,6 +82,8 @@ JPA는 이러한 엔티티들을 영속 컨텍스트(persistence context)로 관
 
 응용 프로그램은 영속 컨텍스트에 직접 접근할 수 없다. 대신 EntityManager를 통해서 영속 컨텍스트와 관련된 작업을 수행한다. EntityManager를 통해서 영속 컨텍스트에 엔티티 객체를 추가하고, 반대로 얻어온다. 
 
+# 정리
+
 
 
 
@@ -94,7 +96,7 @@ JPA는 이러한 엔티티들을 영속 컨텍스트(persistence context)로 관
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNjEzNzY4OSwxOTg1MTY4MTQ5LDIwNT
-MwNTE4ODQsLTQ1MjE2NjEyNywtMjE0NjczNjE0NywtMzMzOTY4
-NjYwXX0=
+eyJoaXN0b3J5IjpbMTAyMzQ3NDg5LDE0MzYxMzc2ODksMTk4NT
+E2ODE0OSwyMDUzMDUxODg0LC00NTIxNjYxMjcsLTIxNDY3MzYx
+NDcsLTMzMzk2ODY2MF19
 -->
