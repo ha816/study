@@ -56,8 +56,14 @@ DB 테이블에 프라이머리키가 있다면, JPA 엔티티에서 식별할 �
 
 JPA 프로바이더는 테이블에서 읽어온 데이터로 자바 객체를 생성할때 매핑 정보를 이용한다. 
 ```
+User user = entityManager.find(User.class, "madvirus@..."
 
+SELECT email, name, create_date FROM user WHERe email.'madvirus@...'
 ```
+
+위 코드는 JPA가 제공하는 EntitiyManager를 이용해서 ㅕㄴㄷㄱ 
+
+
 
 
 
@@ -67,6 +73,6 @@ JPA 프로바이더는 테이블에서 읽어온 데이터로 자바 객체를 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODE0NDk4OSwtMjE0NjczNjE0NywtMz
-MzOTY4NjYwXX0=
+eyJoaXN0b3J5IjpbLTEwNjA5NTU3MzksLTIxNDY3MzYxNDcsLT
+MzMzk2ODY2MF19
 -->
