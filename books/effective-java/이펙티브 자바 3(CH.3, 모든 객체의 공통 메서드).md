@@ -346,9 +346,7 @@ public class Object {
 }
 ```
 
-메서드 하나 없는 Cloneable 인터페이스는 무엇을 할까? 
-
-
+메서드 하나 없는 Cloneable 인터페이스는 무엇을 할까? 놀랍게도 Object의 protected 메서드인 clone
 
 
 
@@ -357,11 +355,11 @@ public class Object {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDY2MDc2MjQsLTEyNDk0MTc5NTYsNj
-U0OTYwNTA5LC0xNjUyOTkwMzI0LC02OTE0MDYyMDQsLTE4MDgx
-ODc1NzEsMTc0NjY0MDgzMiwxMzI3MjA3MjUsMTAzMTc4NzQ1Ni
-wyODk1NTgxNTEsNzE3Njg1MjAsMTgwNTMyNTYwNCw2Mzc5OTIz
-NjksOTAxNDQyNTc4LDEzMTkxNTcxMyw5NTUyMzQ1MDksLTkxMz
-g1NjE0NSwtMTUxMTc2MDgxMSwtNzIzNjcxNDU3LDE3OTcxMTg5
-MTZdfQ==
+eyJoaXN0b3J5IjpbLTExOTg0MDIzMDEsLTExNDY2MDc2MjQsLT
+EyNDk0MTc5NTYsNjU0OTYwNTA5LC0xNjUyOTkwMzI0LC02OTE0
+MDYyMDQsLTE4MDgxODc1NzEsMTc0NjY0MDgzMiwxMzI3MjA3Mj
+UsMTAzMTc4NzQ1NiwyODk1NTgxNTEsNzE3Njg1MjAsMTgwNTMy
+NTYwNCw2Mzc5OTIzNjksOTAxNDQyNTc4LDEzMTkxNTcxMyw5NT
+UyMzQ1MDksLTkxMzg1NjE0NSwtMTUxMTc2MDgxMSwtNzIzNjcx
+NDU3XX0=
 -->
