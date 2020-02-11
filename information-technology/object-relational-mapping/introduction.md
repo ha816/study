@@ -84,7 +84,7 @@ JPA는 이러한 엔티티들을 영속 컨텍스트(persistence context)로 관
 
 # 정리
 
-JPA 프로바이더가 SQL 쿼리를 생성하기 때문에 개발자는 
+JPA 프로바이더가 SQL 쿼리를 생성하기 때문에 개발자는 기본적인 추가, 조회, 삭제를 위한 SQL 쿼리를 작성하지 않아도 된다. persist 메서드를 사용하면 자바 객체를 매핑된 테이블에 insert 쿼리를 실행한다. 
 
 
 
@@ -96,7 +96,7 @@ JPA 프로바이더가 SQL 쿼리를 생성하기 때문에 개발자는
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMjE1MzY2MiwxNDM2MTM3Njg5LDE5OD
+eyJoaXN0b3J5IjpbLTk4NDMwNzc1OSwxNDM2MTM3Njg5LDE5OD
 UxNjgxNDksMjA1MzA1MTg4NCwtNDUyMTY2MTI3LC0yMTQ2NzM2
 MTQ3LC0zMzM5Njg2NjBdfQ==
 -->
