@@ -346,7 +346,9 @@ public class Object {
 }
 ```
 
-메서드 하나 없는 Cloneable 인터페이스는 무엇을 할까? 놀랍게도 Object의 protected 메서드인 clone의 동장 방식을 결정한다. Cloneable을 구현한 클래스의 인스턴스에서 Clone을 호출하면 그 객체의 필드들을 하나하나 복사한 객체를 반환하며, 그렇지 않은 클래스의 인스턴스에서 호출하면 CloneNotSupportedException을 던진다. 
+메서드 하나 없는 Cloneable 인터페이스는 무엇을 할까? 놀랍게도 Object의 protected 메서드인 clone의 동작 방식을 결정한다. Cloneable을 구현한 클래스의 인스턴스에서 Clone을 호출하면 그 객체의 필드들을 하나하나 복사한 객체를 반환하며, 그렇지 않은 클래스의 인스턴스에서 호출하면 CloneNotSupportedException을 던진다. 이는 인터페이스를 상당히 이례적으로 사용한 예이다. 따라하지는 말자. 인터페이스를 구현한다는 것은 일반적으로 해당 클래스가 그 인터페이스를 구현한다는 것을 선언하는 행위다. 그런데 Cloneable은 상위 클래스에 정의된 protected 메서드의 동작 방식을 
+
+
 
 
 
@@ -355,11 +357,11 @@ public class Object {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMwMTE5Mzg3LC0xMTQ2NjA3NjI0LC0xMj
-Q5NDE3OTU2LDY1NDk2MDUwOSwtMTY1Mjk5MDMyNCwtNjkxNDA2
-MjA0LC0xODA4MTg3NTcxLDE3NDY2NDA4MzIsMTMyNzIwNzI1LD
-EwMzE3ODc0NTYsMjg5NTU4MTUxLDcxNzY4NTIwLDE4MDUzMjU2
-MDQsNjM3OTkyMzY5LDkwMTQ0MjU3OCwxMzE5MTU3MTMsOTU1Mj
-M0NTA5LC05MTM4NTYxNDUsLTE1MTE3NjA4MTEsLTcyMzY3MTQ1
-N119
+eyJoaXN0b3J5IjpbLTc4Mjg4MjM4MywzMzAxMTkzODcsLTExND
+Y2MDc2MjQsLTEyNDk0MTc5NTYsNjU0OTYwNTA5LC0xNjUyOTkw
+MzI0LC02OTE0MDYyMDQsLTE4MDgxODc1NzEsMTc0NjY0MDgzMi
+wxMzI3MjA3MjUsMTAzMTc4NzQ1NiwyODk1NTgxNTEsNzE3Njg1
+MjAsMTgwNTMyNTYwNCw2Mzc5OTIzNjksOTAxNDQyNTc4LDEzMT
+kxNTcxMyw5NTUyMzQ1MDksLTkxMzg1NjE0NSwtMTUxMTc2MDgx
+MV19
 -->
