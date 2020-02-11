@@ -63,6 +63,19 @@ SELECT email, name, create_date FROM user WHERe email.'madvirus@...'
 
 위 코드는 JPA가 제공하는 EntitiyManager를 이용해서 User 객체를 찾는다. @Table 애노테이션을 이용해서 User 테이블을 찾고 식별자를 지정하는 @id로 Where 절에 프라이머리키를 사용한다. 
 
+위 쿼리 결과가 나오면, JPA는 다음 과정을 거쳐 User 객체를 생성한다.
+
+User 클래스의 인자가 없는 기본 생성자를 이용해서 User 객체를 생성한다. 
+
+* User 클래스의 인자가 없는 기본 생성자를 이용해서 User객체 생성
+* @Column 애노테이션이 없는 필드를 보고 동일한 이름을 갖는 컬럼 값을 할당한다.
+	* @Temporal 애노테이션이 붙어 있으면 해당 타입으로 객체를 불어온 후, Java.Util.Date로 변환한다.
+
+
+# 영속 컨텍스트와 영속 객체 개요
+
+
+
 
 
 
@@ -73,6 +86,6 @@ SELECT email, name, create_date FROM user WHERe email.'madvirus@...'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MjE2NjEyNywtMjE0NjczNjE0NywtMz
-MzOTY4NjYwXX0=
+eyJoaXN0b3J5IjpbMjA1MzA1MTg4NCwtNDUyMTY2MTI3LC0yMT
+Q2NzM2MTQ3LC0zMzM5Njg2NjBdfQ==
 -->
