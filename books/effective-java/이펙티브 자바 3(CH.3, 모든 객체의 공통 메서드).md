@@ -369,11 +369,11 @@ clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래
 
 제대로 동작하는 clone 메서드를 가진 상위 클래스를 상속해 Cloneable을 구현한다고 해보자. 먼저 super.clone을 호출한다. 그렇게 얻은 객체는 원본의 완벽한 복제본일 것이다. 클래스에 정의된 모든 필드는 원본 필드와 같은 값을 갖는다. 모든 필드가 기본 타입이거나 불변 객체라면 더 손볼 것이 없다. 
 
-그런데 쓸데 없는 복사를 지양한다는 관점에서 보면 불변 클래스는 굳이 clone 메서드를 제공하지 않는게 좋다. ㅌㅋ
+그런데 쓸데 없는 복사를 지양한다는 관점에서 보면 불변 클래스는 굳이 clone 메서드를 제공하지 않는게 좋다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxODE3MzA4MSwtMTE5NjIwMzE2LDEyMD
+eyJoaXN0b3J5IjpbMTgzMjExNzE5MCwtMTE5NjIwMzE2LDEyMD
 I2MDEzODAsNTY3MDk3ODIzLC05MDE5NzMwNTYsMTY2NjQzNjg4
 OSwxMTk1OTY0MjQ3LDMzMDExOTM4NywtMTE0NjYwNzYyNCwtMT
 I0OTQxNzk1Niw2NTQ5NjA1MDksLTE2NTI5OTAzMjQsLTY5MTQw
