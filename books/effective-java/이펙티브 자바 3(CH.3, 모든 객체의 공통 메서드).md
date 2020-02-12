@@ -365,6 +365,8 @@ x.clone().equals(x)
 
 > 클래스 B가 클래스 A를 상속 할때, 하위 클래스인 B의 clone은 B 타입의 객체를 반환해야 한다. 그런데 A의 clone이 자신의 생성자, 즉 new A()로 생성한 객체를 반환한다면, B의 clone()도 A 타입의 객체를 반환할 수 밖에 없다. 달리 말해, super.clone()을 연쇄적으로 호출해두면 clone이 처음 호출된 하위 클래스의 객체가 만들어 진다. 
 
+c
+
 
 
 
@@ -374,11 +376,11 @@ x.clone().equals(x)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMjYwMTM4MCw1NjcwOTc4MjMsLTkwMT
-k3MzA1NiwxNjY2NDM2ODg5LDExOTU5NjQyNDcsMzMwMTE5Mzg3
-LC0xMTQ2NjA3NjI0LC0xMjQ5NDE3OTU2LDY1NDk2MDUwOSwtMT
-Y1Mjk5MDMyNCwtNjkxNDA2MjA0LC0xODA4MTg3NTcxLDE3NDY2
-NDA4MzIsMTMyNzIwNzI1LDEwMzE3ODc0NTYsMjg5NTU4MTUxLD
-cxNzY4NTIwLDE4MDUzMjU2MDQsNjM3OTkyMzY5LDkwMTQ0MjU3
-OF19
+eyJoaXN0b3J5IjpbLTE1MzQ4NzMxOSwxMjAyNjAxMzgwLDU2Nz
+A5NzgyMywtOTAxOTczMDU2LDE2NjY0MzY4ODksMTE5NTk2NDI0
+NywzMzAxMTkzODcsLTExNDY2MDc2MjQsLTEyNDk0MTc5NTYsNj
+U0OTYwNTA5LC0xNjUyOTkwMzI0LC02OTE0MDYyMDQsLTE4MDgx
+ODc1NzEsMTc0NjY0MDgzMiwxMzI3MjA3MjUsMTAzMTc4NzQ1Ni
+wyODk1NTgxNTEsNzE3Njg1MjAsMTgwNTMyNTYwNCw2Mzc5OTIz
+NjldfQ==
 -->
