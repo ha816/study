@@ -381,15 +381,15 @@ clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래
 }
 ```
 
-이 메서드가 동작하게 하려면 PhoneNumber의 클래스 선언에 Cloneable을 구현하고 추가해야 한다. Object의 clone 메서드는 Object를 반환하지만 PhoneNumber의 clone 메서드는 PhoneNumber를 반환한다. 자바가 공변 반환 타이핑(covariant return typing)을 지원하니 이렇게 하는 것이 가능하고 권한
+이 메서드가 동작하게 하려면 PhoneNumber의 클래스 선언에 Cloneable을 구현하고 추가해야 한다. Object의 clone 메서드는 Object를 반환하지만 PhoneNumber의 clone 메서드는 PhoneNumber를 반환한다. 자바가 공변 반환 타이핑(covariant return typing)을 지원하니 이렇게 하는 것이 가능하고 권장하기도 한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQyNzY0MTIyLDExMTkwNjkyNTQsMTgzMj
-ExNzE5MCwtMTE5NjIwMzE2LDEyMDI2MDEzODAsNTY3MDk3ODIz
-LC05MDE5NzMwNTYsMTY2NjQzNjg4OSwxMTk1OTY0MjQ3LDMzMD
-ExOTM4NywtMTE0NjYwNzYyNCwtMTI0OTQxNzk1Niw2NTQ5NjA1
-MDksLTE2NTI5OTAzMjQsLTY5MTQwNjIwNCwtMTgwODE4NzU3MS
-wxNzQ2NjQwODMyLDEzMjcyMDcyNSwxMDMxNzg3NDU2LDI4OTU1
-ODE1MV19
+eyJoaXN0b3J5IjpbLTIxODY0NTk0OSwxMTE5MDY5MjU0LDE4Mz
+IxMTcxOTAsLTExOTYyMDMxNiwxMjAyNjAxMzgwLDU2NzA5Nzgy
+MywtOTAxOTczMDU2LDE2NjY0MzY4ODksMTE5NTk2NDI0NywzMz
+AxMTkzODcsLTExNDY2MDc2MjQsLTEyNDk0MTc5NTYsNjU0OTYw
+NTA5LC0xNjUyOTkwMzI0LC02OTE0MDYyMDQsLTE4MDgxODc1Nz
+EsMTc0NjY0MDgzMiwxMzI3MjA3MjUsMTAzMTc4NzQ1NiwyODk1
+NTgxNTFdfQ==
 -->
