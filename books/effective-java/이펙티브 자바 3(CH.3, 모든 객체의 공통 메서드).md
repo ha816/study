@@ -371,13 +371,23 @@ clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래
 
 그런데 쓸데 없는 복사를 지양한다는 관점에서 보면 불변 클래스는 굳이 clone 메서드를 제공하지 않는게 좋다. 
 
+```
+@Ovverride public PhoneNumber clone() 
+	try {
+		return (PhoneNumber) super.clone();
+	} catch ( CloneNotSupportedException e) {
+		throw new AssertionError(); // 일어 날 수 없다.
+	}
+}
+```
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMjExNzE5MCwtMTE5NjIwMzE2LDEyMD
-I2MDEzODAsNTY3MDk3ODIzLC05MDE5NzMwNTYsMTY2NjQzNjg4
-OSwxMTk1OTY0MjQ3LDMzMDExOTM4NywtMTE0NjYwNzYyNCwtMT
-I0OTQxNzk1Niw2NTQ5NjA1MDksLTE2NTI5OTAzMjQsLTY5MTQw
-NjIwNCwtMTgwODE4NzU3MSwxNzQ2NjQwODMyLDEzMjcyMDcyNS
-wxMDMxNzg3NDU2LDI4OTU1ODE1MSw3MTc2ODUyMCwxODA1MzI1
-NjA0XX0=
+eyJoaXN0b3J5IjpbMTExOTA2OTI1NCwxODMyMTE3MTkwLC0xMT
+k2MjAzMTYsMTIwMjYwMTM4MCw1NjcwOTc4MjMsLTkwMTk3MzA1
+NiwxNjY2NDM2ODg5LDExOTU5NjQyNDcsMzMwMTE5Mzg3LC0xMT
+Q2NjA3NjI0LC0xMjQ5NDE3OTU2LDY1NDk2MDUwOSwtMTY1Mjk5
+MDMyNCwtNjkxNDA2MjA0LC0xODA4MTg3NTcxLDE3NDY2NDA4Mz
+IsMTMyNzIwNzI1LDEwMzE3ODc0NTYsMjg5NTU4MTUxLDcxNzY4
+NTIwXX0=
 -->
