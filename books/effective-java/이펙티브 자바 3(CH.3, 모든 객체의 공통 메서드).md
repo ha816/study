@@ -367,15 +367,15 @@ x.clone().equals(x)
 
 clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래스가 없으니 이 관례는 무시해도 된다. 하지만 final 클래스의 clone 메서드가 super.clone을 호출하지 않는다면 Cloneable을 구현할 이유도 없다. Object의 clone 구현 동작 방식에 기댈 필요가 없기 때문이다. 
 
-제대로 동작하는 clone 메서드를 가진 
+제대로 동작하는 clone 메서드를 가진 상위 클래스를 상속해 Cloneable을 구현한다고 해보자. 먼저 super.clone을 호출한다. 그렇게 얻은 객체는 원본의 완벽한 복제본일 것이다. 클래스에 정의된 모든 필드는 원본 필드와 같은 값을 갖는다. 모든 필드가 기본 타입이거나 불변 객체라면 더 손볼 것이 없다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NTk4MjYxNSwtMTE5NjIwMzE2LDEyMD
-I2MDEzODAsNTY3MDk3ODIzLC05MDE5NzMwNTYsMTY2NjQzNjg4
-OSwxMTk1OTY0MjQ3LDMzMDExOTM4NywtMTE0NjYwNzYyNCwtMT
-I0OTQxNzk1Niw2NTQ5NjA1MDksLTE2NTI5OTAzMjQsLTY5MTQw
-NjIwNCwtMTgwODE4NzU3MSwxNzQ2NjQwODMyLDEzMjcyMDcyNS
-wxMDMxNzg3NDU2LDI4OTU1ODE1MSw3MTc2ODUyMCwxODA1MzI1
-NjA0XX0=
+eyJoaXN0b3J5IjpbNDE0NDAyOTgyLC0xMTk2MjAzMTYsMTIwMj
+YwMTM4MCw1NjcwOTc4MjMsLTkwMTk3MzA1NiwxNjY2NDM2ODg5
+LDExOTU5NjQyNDcsMzMwMTE5Mzg3LC0xMTQ2NjA3NjI0LC0xMj
+Q5NDE3OTU2LDY1NDk2MDUwOSwtMTY1Mjk5MDMyNCwtNjkxNDA2
+MjA0LC0xODA4MTg3NTcxLDE3NDY2NDA4MzIsMTMyNzIwNzI1LD
+EwMzE3ODc0NTYsMjg5NTU4MTUxLDcxNzY4NTIwLDE4MDUzMjU2
+MDRdfQ==
 -->
