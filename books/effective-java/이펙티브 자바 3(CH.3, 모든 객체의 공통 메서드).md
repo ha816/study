@@ -361,7 +361,7 @@ x.clone().equals(x)
 ```
 관례상 반환된 객체와 원본 객체는 독립적이어야 한다. 이를 만족하려면 super.clone으로 얻은 객체의 필드 중 하나 이상을 반환 전에 수정해야 할 수도 있다. 
 
-강제성이 없다는 점만 빼면 생성자 연쇄(constructor chaining)과 살짜 비슷한 메커니즘이다. 
+강제성이 없다는 점만 빼면 생성자 연쇄(constructor chaining)과 살짜 비슷한 메커니즘이다. 즉, clone 메서드가 super.clone이 아닌, 생성자를 호출해 얻은 인스턴스를 반환해도 컴파일러는 불평하지 않을 것이다.
 
 
 
@@ -372,11 +372,11 @@ x.clone().equals(x)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MTY0ODQ4NSwtOTAxOTczMDU2LDE2Nj
-Y0MzY4ODksMTE5NTk2NDI0NywzMzAxMTkzODcsLTExNDY2MDc2
-MjQsLTEyNDk0MTc5NTYsNjU0OTYwNTA5LC0xNjUyOTkwMzI0LC
-02OTE0MDYyMDQsLTE4MDgxODc1NzEsMTc0NjY0MDgzMiwxMzI3
-MjA3MjUsMTAzMTc4NzQ1NiwyODk1NTgxNTEsNzE3Njg1MjAsMT
-gwNTMyNTYwNCw2Mzc5OTIzNjksOTAxNDQyNTc4LDEzMTkxNTcx
-M119
+eyJoaXN0b3J5IjpbLTE1ODY1NzgzMTQsLTkwMTk3MzA1NiwxNj
+Y2NDM2ODg5LDExOTU5NjQyNDcsMzMwMTE5Mzg3LC0xMTQ2NjA3
+NjI0LC0xMjQ5NDE3OTU2LDY1NDk2MDUwOSwtMTY1Mjk5MDMyNC
+wtNjkxNDA2MjA0LC0xODA4MTg3NTcxLDE3NDY2NDA4MzIsMTMy
+NzIwNzI1LDEwMzE3ODc0NTYsMjg5NTU4MTUxLDcxNzY4NTIwLD
+E4MDUzMjU2MDQsNjM3OTkyMzY5LDkwMTQ0MjU3OCwxMzE5MTU3
+MTNdfQ==
 -->
