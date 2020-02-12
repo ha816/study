@@ -357,7 +357,9 @@ clone 메서드의 일반 규약은 허술하다. Object명세에서 가져온 �
 x.clone() != x // 복사본은 원래 객체와 다르다.
 x.clone().getClass() == x.getClass() 
 x.clone().equals(x) 
+위의 요구사항들은 반드시 만족해야 하는 것은 아니지만, 일반적으로 참이다.
 ```
+관례상 반환된 객체와 원본 객체는 독립적이어야 한다. 이를 만족하려면 super.
 
 
 
@@ -369,7 +371,7 @@ x.clone().equals(x)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1Nzk2MzQwNiwxNjY2NDM2ODg5LDExOT
+eyJoaXN0b3J5IjpbLTkwMTk3MzA1NiwxNjY2NDM2ODg5LDExOT
 U5NjQyNDcsMzMwMTE5Mzg3LC0xMTQ2NjA3NjI0LC0xMjQ5NDE3
 OTU2LDY1NDk2MDUwOSwtMTY1Mjk5MDMyNCwtNjkxNDA2MjA0LC
 0xODA4MTg3NTcxLDE3NDY2NDA4MzIsMTMyNzIwNzI1LDEwMzE3
