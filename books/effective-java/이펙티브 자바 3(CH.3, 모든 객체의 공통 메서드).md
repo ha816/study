@@ -352,7 +352,12 @@ public class Object {
 
 clone 메서드의 일반 규약은 허술하다. Object명세에서 가져온 설명을 보자.
 
-* '복사'의 정확한 뜻은 그 객체를 구현한 클래스에 따라 다를 수 있다. 일반적인 
+'복사'의 정확한 뜻은 그 객체를 구현한 클래스에 따라 다를 수 있다. 일반적인 의도는 어떤 객체 x에 대해 아래 식은 참이다. 
+```
+x.clone() != x // 복사본은 원래 객체와 다르다.
+x.clone().getClass() == x.getClass() 
+x.clone().equals(x) 
+```
 
 
 
@@ -364,7 +369,7 @@ clone 메서드의 일반 규약은 허술하다. Object명세에서 가져온 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NDI4NDM5NiwxNjY2NDM2ODg5LDExOT
+eyJoaXN0b3J5IjpbLTI1Nzk2MzQwNiwxNjY2NDM2ODg5LDExOT
 U5NjQyNDcsMzMwMTE5Mzg3LC0xMTQ2NjA3NjI0LC0xMjQ5NDE3
 OTU2LDY1NDk2MDUwOSwtMTY1Mjk5MDMyNCwtNjkxNDA2MjA0LC
 0xODA4MTg3NTcxLDE3NDY2NDA4MzIsMTMyNzIwNzI1LDEwMzE3
