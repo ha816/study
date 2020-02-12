@@ -365,18 +365,11 @@ x.clone().equals(x)
 
 > 클래스 B가 클래스 A를 상속 할때, 하위 클래스인 B의 clone은 B 타입의 객체를 반환해야 한다. 그런데 A의 clone이 자신의 생성자, 즉 new A()로 생성한 객체를 반환한다면, B의 clone()도 A 타입의 객체를 반환할 수 밖에 없다. 달리 말해, super.clone()을 연쇄적으로 호출해두면 clone이 처음 호출된 하위 클래스의 객체가 만들어 진다. 
 
-c
-
-
-
-
-
-
-
+clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래스가 없으니 이 관례는 무시해도 된다. 하지만 final 클래스의 clone 메서드가 super.clone을 호출하지 않는다면 Cloneable을 구현할 이유도 없다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzQ4NzMxOSwxMjAyNjAxMzgwLDU2Nz
+eyJoaXN0b3J5IjpbLTExOTYyMDMxNiwxMjAyNjAxMzgwLDU2Nz
 A5NzgyMywtOTAxOTczMDU2LDE2NjY0MzY4ODksMTE5NTk2NDI0
 NywzMzAxMTkzODcsLTExNDY2MDc2MjQsLTEyNDk0MTc5NTYsNj
 U0OTYwNTA5LC0xNjUyOTkwMzI0LC02OTE0MDYyMDQsLTE4MDgx
