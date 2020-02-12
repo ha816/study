@@ -363,7 +363,7 @@ x.clone().equals(x)
 
 강제성이 없다는 점만 빼면 생성자 연쇄(constructor chaining)과 살짜 비슷한 메커니즘이다. 즉, clone 메서드가 super.clone이 아닌, 생성자를 호출해 얻은 인스턴스를 반환해도 컴파일러는 불평하지 않을 것이다. 하지만 이 클래스의 하위 클래스에서 super.clone()을 하면 잘못된 클래스의 객체가 만들어져, 결국 하위 클래스의 clone메서드가 제대로 동작하지 않게 된다.
 
-> 클래스 B가 클래스 A를 상속 할때, 하위 클래스인 B의 clone은 B 타입의 객체를 반환해야 한다. 그런데 A
+> 클래스 B가 클래스 A를 상속 할때, 하위 클래스인 B의 clone은 B 타입의 객체를 반환해야 한다. 그런데 A의 clone이 자신의 생성자, 즉 new A()로 생성한 객체를 반환한다면, B의 clone()도 A 타입의 객체를 반환할 수 밖에 없다. 달리 말해, super.clone()을 연쇄적으로 호출해두면 clone이 처음 호출된 하위 클래스의 객체가 만들어 진다. 
 
 
 
@@ -374,11 +374,11 @@ x.clone().equals(x)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzAzNjgxMTYsNTY3MDk3ODIzLC05MD
-E5NzMwNTYsMTY2NjQzNjg4OSwxMTk1OTY0MjQ3LDMzMDExOTM4
-NywtMTE0NjYwNzYyNCwtMTI0OTQxNzk1Niw2NTQ5NjA1MDksLT
-E2NTI5OTAzMjQsLTY5MTQwNjIwNCwtMTgwODE4NzU3MSwxNzQ2
-NjQwODMyLDEzMjcyMDcyNSwxMDMxNzg3NDU2LDI4OTU1ODE1MS
-w3MTc2ODUyMCwxODA1MzI1NjA0LDYzNzk5MjM2OSw5MDE0NDI1
-NzhdfQ==
+eyJoaXN0b3J5IjpbMTIwMjYwMTM4MCw1NjcwOTc4MjMsLTkwMT
+k3MzA1NiwxNjY2NDM2ODg5LDExOTU5NjQyNDcsMzMwMTE5Mzg3
+LC0xMTQ2NjA3NjI0LC0xMjQ5NDE3OTU2LDY1NDk2MDUwOSwtMT
+Y1Mjk5MDMyNCwtNjkxNDA2MjA0LC0xODA4MTg3NTcxLDE3NDY2
+NDA4MzIsMTMyNzIwNzI1LDEwMzE3ODc0NTYsMjg5NTU4MTUxLD
+cxNzY4NTIwLDE4MDUzMjU2MDQsNjM3OTkyMzY5LDkwMTQ0MjU3
+OF19
 -->
