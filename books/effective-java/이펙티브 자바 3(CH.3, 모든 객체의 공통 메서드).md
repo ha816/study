@@ -350,6 +350,11 @@ public class Object {
 
 명세에서 이야기하지는 않지만 실무에서 Cloneable을 구현한 클래스는 clone 메서드를 public으로 제공하며, 사용자는 당연히 복제가 제대로 이뤄지리라 기대한다. 이 기대를 만족 시키려면 그 클래스와 모든 상위 클래스는 복잡하고, 강제할 수 없고, 허술하게 기술된 프로토콜을 지켜야만 하는데 그 결과로 깨지기 쉽고, 위험하고, 모순적인 매커니즘이 탄생한다. 
 
+clone 메서드의 일반 규약은 허술하다. Object명세에서 가져온 설명을 보자.
+
+* '복사'의 정확한 뜻은 그 객체를 구현한 클래스에 따라 다를 수 있다. 일반적인 
+
+
 
 
 
@@ -359,11 +364,11 @@ public class Object {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NjQzNjg4OSwxMTk1OTY0MjQ3LDMzMD
-ExOTM4NywtMTE0NjYwNzYyNCwtMTI0OTQxNzk1Niw2NTQ5NjA1
-MDksLTE2NTI5OTAzMjQsLTY5MTQwNjIwNCwtMTgwODE4NzU3MS
-wxNzQ2NjQwODMyLDEzMjcyMDcyNSwxMDMxNzg3NDU2LDI4OTU1
-ODE1MSw3MTc2ODUyMCwxODA1MzI1NjA0LDYzNzk5MjM2OSw5MD
-E0NDI1NzgsMTMxOTE1NzEzLDk1NTIzNDUwOSwtOTEzODU2MTQ1
+eyJoaXN0b3J5IjpbMTE3NDI4NDM5NiwxNjY2NDM2ODg5LDExOT
+U5NjQyNDcsMzMwMTE5Mzg3LC0xMTQ2NjA3NjI0LC0xMjQ5NDE3
+OTU2LDY1NDk2MDUwOSwtMTY1Mjk5MDMyNCwtNjkxNDA2MjA0LC
+0xODA4MTg3NTcxLDE3NDY2NDA4MzIsMTMyNzIwNzI1LDEwMzE3
+ODc0NTYsMjg5NTU4MTUxLDcxNzY4NTIwLDE4MDUzMjU2MDQsNj
+M3OTkyMzY5LDkwMTQ0MjU3OCwxMzE5MTU3MTMsOTU1MjM0NTA5
 XX0=
 -->
