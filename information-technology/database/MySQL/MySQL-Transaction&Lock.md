@@ -96,7 +96,9 @@ WHERE first_name = 'Gorgi' AND last_name= 'Klassen'
 ```
 UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. 하지만 이 1건의 업데이트를 위해 몇개의 레코드에 락을 걸어야 할까?...
 
-위 update 쿼리에서 인덱스를 이용할 수 있는 것은 first_name이다. 따라서 253
+위 update 쿼리에서 인덱스를 이용할 수 있는 것은 first_name이다. 따라서 253건의 레코드가 모두 잠긴다. 이 예제에서는 253건만 잠그지만 UPDATE 문장을 위해 적절히 인덱스가 준비되어 있지 않다면 각 클라이언트간의 동시성이 상당히 떨어져 한 세션에서 UPDATE 작업을 하고 있는 중에는 다른 클라이언트는 그 테이블을 업데이트하지 못하고 기다려야 하는 상황이 발생할 것이다. 
+
+
 
 
 
@@ -106,7 +108,7 @@ UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTY4ODEwMDUsLTE2MzU1NTQzMzEsMT
+eyJoaXN0b3J5IjpbLTE1NTI2MDUxODIsLTE2MzU1NTQzMzEsMT
 g4MjI1MTgwMyw4ODczMjY3NSwxNTU4OTcxNTk4LC0xODg3MjE3
 NzkzLDEzMzc2OTIwOTEsLTg5NjE4MzQ5MiwxNjY0Mzk0ODcsLT
 EyNjkzMDkxOTUsODUyMDY2NTQ3LDIwODg2NzIzODcsLTE0MzQx
