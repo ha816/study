@@ -335,7 +335,7 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 **Cloneable은 복제해도 되는 클래스임을 명시하는 용도의 믹스인 인터페이스(mixin interface)이다.** 
 
-하지만 의도한 목적을 제대로 이루지 못했다. 가장 큰 문제는 clone메서드가 선언된 곳이 Cloneable이 아닌 Object이고 그마저도 protected라는데 있다. 그래서 Cloneable을 구현하는 것만으로는 외부 객체에서 clone메서드를 호출할 수 없다.
+하지만 의도한 목적을 제대로 이루지 못했다. 가장 큰 문제는 clone메서드가 선언된 곳이 Cloneable이 아닌 Object이고 그마저도 protected라는데 있다. 그래서 Cloneable을 구현하는 것만으로는 외부 객체에서 clone메서드를 호출할 수 없다. 
   
 이러한 문제점에도 불구하고 Cloneable방식은 널리 쓰여 잘 알아두는것이 좋다. clone 메서드를 잘 동작하게끔 해주는 구현 방법과 언제 그렇게 해야하는 지를 알아보고, 선택 가능한 다른 선택지도 논의해보자.
 
@@ -387,11 +387,11 @@ clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NzY0MjY5MywtMjE4NjQ1OTQ5LDExMT
-kwNjkyNTQsMTgzMjExNzE5MCwtMTE5NjIwMzE2LDEyMDI2MDEz
-ODAsNTY3MDk3ODIzLC05MDE5NzMwNTYsMTY2NjQzNjg4OSwxMT
-k1OTY0MjQ3LDMzMDExOTM4NywtMTE0NjYwNzYyNCwtMTI0OTQx
-Nzk1Niw2NTQ5NjA1MDksLTE2NTI5OTAzMjQsLTY5MTQwNjIwNC
-wtMTgwODE4NzU3MSwxNzQ2NjQwODMyLDEzMjcyMDcyNSwxMDMx
-Nzg3NDU2XX0=
+eyJoaXN0b3J5IjpbLTE2Mjc5NzUzMSwxNzQ3NjQyNjkzLC0yMT
+g2NDU5NDksMTExOTA2OTI1NCwxODMyMTE3MTkwLC0xMTk2MjAz
+MTYsMTIwMjYwMTM4MCw1NjcwOTc4MjMsLTkwMTk3MzA1NiwxNj
+Y2NDM2ODg5LDExOTU5NjQyNDcsMzMwMTE5Mzg3LC0xMTQ2NjA3
+NjI0LC0xMjQ5NDE3OTU2LDY1NDk2MDUwOSwtMTY1Mjk5MDMyNC
+wtNjkxNDA2MjA0LC0xODA4MTg3NTcxLDE3NDY2NDA4MzIsMTMy
+NzIwNzI1XX0=
 -->
