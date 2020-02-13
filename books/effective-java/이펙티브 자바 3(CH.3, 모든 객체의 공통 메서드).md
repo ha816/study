@@ -381,17 +381,17 @@ clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래
 }
 ```
 
-이 메서드가 동작하게 하려면 PhoneNumber의 클래스 선언에 Cloneable을 구현하고 추가해야 한다. Object의 clone 메서드는 Object를 반환하지만 PhoneNumber의 clone 메서드는 PhoneNumber를 반환한다. 자바가 공변 반환 타이핑(covariant return typing)을 지원하니 이렇게 하는 것이 가능하고 권장하기도 한다. 달리 말해, 재정의한 메서드의 반환 타입은 상위 클래스의 메서드가 반환하는 타입의 하위 타입일 수 있다. 이 방식으로 클라이언트가 형변환을 하지 않아도 되게끔 해주자. 이를 위해서 super.clone에서 얻은 객체를 반환하기 전에 Phonber
+이 메서드가 동작하게 하려면 PhoneNumber의 클래스 선언에 Cloneable을 구현하고 추가해야 한다. Object의 clone 메서드는 Object를 반환하지만 PhoneNumber의 clone 메서드는 PhoneNumber를 반환한다. 자바가 공변 반환 타이핑(covariant return typing)을 지원하니 이렇게 하는 것이 가능하고 권장하기도 한다. 달리 말해, 재정의한 메서드의 반환 타입은 상위 클래스의 메서드가 반환하는 타입의 하위 타입일 수 있다. 이 방식으로 클라이언트가 형변환을 하지 않아도 되게끔 해주자. 이를 위해서 super.clone에서 얻은 객체를 반환하기 전에 PhonbeNumber로 형변환 하였다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAyMDMxMjU1LC0yMTg2NDU5NDksMTExOT
-A2OTI1NCwxODMyMTE3MTkwLC0xMTk2MjAzMTYsMTIwMjYwMTM4
-MCw1NjcwOTc4MjMsLTkwMTk3MzA1NiwxNjY2NDM2ODg5LDExOT
-U5NjQyNDcsMzMwMTE5Mzg3LC0xMTQ2NjA3NjI0LC0xMjQ5NDE3
-OTU2LDY1NDk2MDUwOSwtMTY1Mjk5MDMyNCwtNjkxNDA2MjA0LC
-0xODA4MTg3NTcxLDE3NDY2NDA4MzIsMTMyNzIwNzI1LDEwMzE3
-ODc0NTZdfQ==
+eyJoaXN0b3J5IjpbMTc0NzY0MjY5MywtMjE4NjQ1OTQ5LDExMT
+kwNjkyNTQsMTgzMjExNzE5MCwtMTE5NjIwMzE2LDEyMDI2MDEz
+ODAsNTY3MDk3ODIzLC05MDE5NzMwNTYsMTY2NjQzNjg4OSwxMT
+k1OTY0MjQ3LDMzMDExOTM4NywtMTE0NjYwNzYyNCwtMTI0OTQx
+Nzk1Niw2NTQ5NjA1MDksLTE2NTI5OTAzMjQsLTY5MTQwNjIwNC
+wtMTgwODE4NzU3MSwxNzQ2NjQwODMyLDEzMjcyMDcyNSwxMDMx
+Nzg3NDU2XX0=
 -->
