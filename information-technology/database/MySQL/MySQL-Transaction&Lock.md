@@ -88,15 +88,15 @@ InnoDb의 잠금과 인덱스는 상당히 중요한 연관관계가 있다. **I
 즉, 변경해야할 레코드를 찾기 위해 검색한 인덱스의 레코드를 모두 잠가야 한다. 
 
 ```
-SELECT * FROM employees WHERE first_name = 'Georgi';
-SELECT * FROM employees WHERE first_name = 'Georgi' And last_name = 'Klassen';
+SELECT * FROM employees WHERE first_name = 'Georgi'; //253건
+SELECT * FROM employees WHERE first_name = 'Georgi' And last_name = 'Klassen'; 1건
 ...
 UPDATE employees SET 
 WHERE first_name = 'Gorgi' AND last_name= 'Klassen'
 ```
 UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. 하지만 이 1건의 업데이트를 위해 몇개의 레코드에 락을 걸어야 할까?...
 
-이 UPDATE
+위 update 쿼리에서 인덱스를 이용할 수 있는 것은 first_name이다. 따라서 253
 
 
 
@@ -106,9 +106,9 @@ UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzU1NTQzMzEsMTg4MjI1MTgwMyw4OD
-czMjY3NSwxNTU4OTcxNTk4LC0xODg3MjE3NzkzLDEzMzc2OTIw
-OTEsLTg5NjE4MzQ5MiwxNjY0Mzk0ODcsLTEyNjkzMDkxOTUsOD
-UyMDY2NTQ3LDIwODg2NzIzODcsLTE0MzQxMTg1MjMsLTc3NDA3
-MzgzMywxNTk5MTQyMTE0XX0=
+eyJoaXN0b3J5IjpbLTIwMTY4ODEwMDUsLTE2MzU1NTQzMzEsMT
+g4MjI1MTgwMyw4ODczMjY3NSwxNTU4OTcxNTk4LC0xODg3MjE3
+NzkzLDEzMzc2OTIwOTEsLTg5NjE4MzQ5MiwxNjY0Mzk0ODcsLT
+EyNjkzMDkxOTUsODUyMDY2NTQ3LDIwODg2NzIzODcsLTE0MzQx
+MTg1MjMsLTc3NDA3MzgzMywxNTk5MTQyMTE0XX0=
 -->
