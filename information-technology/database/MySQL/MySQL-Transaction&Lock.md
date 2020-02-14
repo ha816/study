@@ -102,16 +102,23 @@ UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. �
 
 위에 불필요한 레코드 잠금 현상은 InnoDB의 넥스트 키 락 때문에 발생하는 것이다. 하지만 InnoDB에서 네스트 키락을 필요하게 만드는 주 원인은 바로 복제를 위한 바이너리 로그 대문이다. 레코드 기반의 바이너리 로그를 사용하거나 바이너리 로그를 사용하지 않는 경우에는 바이너리 로그를 사용하지 않는 경우에는 InnoDB의 갭 락이나 넥스트 키 락의 사용을 대폭 줄일 수 있다. InnoDB의 갭락이나 넥스트 키락을 줄일 수 있다는 것은 사용자의 쿼리 요청을 동시에 더 많이 처리할 수 있다는 것을 말한다. 
 
+다음 조합으로 MySQL 서버가 기동하는 경우에는 InnoDB에서 사용되는 대부분의 갭락이나 넥스트 키락을 제거할 수 있다.
+
+|버전|설정의 조합  |
+|--|--|
+|MySQL 5.0| innodb_locks_unsafe_for_binglog=1 트랜잭션 격리 수준을 READ-COMMITED  |
+
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MDI5MTU5LC0yMDg1NjA3MjA0LC0xNT
-UyNjA1MTgyLC0xNjM1NTU0MzMxLDE4ODIyNTE4MDMsODg3MzI2
-NzUsMTU1ODk3MTU5OCwtMTg4NzIxNzc5MywxMzM3NjkyMDkxLC
-04OTYxODM0OTIsMTY2NDM5NDg3LC0xMjY5MzA5MTk1LDg1MjA2
-NjU0NywyMDg4NjcyMzg3LC0xNDM0MTE4NTIzLC03NzQwNzM4Mz
-MsMTU5OTE0MjExNF19
+eyJoaXN0b3J5IjpbMTA3MzY3MDcxNCwtMjYwMjkxNTksLTIwOD
+U2MDcyMDQsLTE1NTI2MDUxODIsLTE2MzU1NTQzMzEsMTg4MjI1
+MTgwMyw4ODczMjY3NSwxNTU4OTcxNTk4LC0xODg3MjE3NzkzLD
+EzMzc2OTIwOTEsLTg5NjE4MzQ5MiwxNjY0Mzk0ODcsLTEyNjkz
+MDkxOTUsODUyMDY2NTQ3LDIwODg2NzIzODcsLTE0MzQxMTg1Mj
+MsLTc3NDA3MzgzMywxNTk5MTQyMTE0XX0=
 -->
