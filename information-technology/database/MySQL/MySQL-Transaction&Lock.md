@@ -100,7 +100,7 @@ UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. �
 
 만약 테이블에 인덱스가 하나도 없다면, 테이블을 풀 스캔하면서 UPDATE 작업을 하는데 이 과정에서 모든 레코드를 잠그게 된다. 따라서 MySQL의 InnoDB에서는 인덱스 설계가 너무나 중요하다. 
 
-위에 불필요한 레코드 잠금 현상은 InnoDB의 넥스트 키 락 때문에 발생하는 것이다. 하지만 InnoDB에서 네스트 키락을 필요하게 만드는 주 원인은 바로 
+위에 불필요한 레코드 잠금 현상은 InnoDB의 넥스트 키 락 때문에 발생하는 것이다. 하지만 InnoDB에서 네스트 키락을 필요하게 만드는 주 원인은 바로 복제를 위한 바이너리 로그 대문이다. 레코드 기반의 바이너리 로그를 사용하거나 바이너리 로그를 사용하지 않는 경우에는 바이너리 로그를 사용하지 않는 경우에는 InnoDB의 갭 락이나 넥스트 키 락의 사용을 대폭 줄일 수 있다. InnoDB의 갭락이나 넥스트 키락을 줄일 수 있다는 것은 사용자의 쿼리 요청을 동시에 더 많이 처리할 수 있다는 것을 말한다. 
 
 
 
@@ -108,10 +108,10 @@ UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NTg3MDc4NCwtMjA4NTYwNzIwNCwtMT
-U1MjYwNTE4MiwtMTYzNTU1NDMzMSwxODgyMjUxODAzLDg4NzMy
-Njc1LDE1NTg5NzE1OTgsLTE4ODcyMTc3OTMsMTMzNzY5MjA5MS
-wtODk2MTgzNDkyLDE2NjQzOTQ4NywtMTI2OTMwOTE5NSw4NTIw
-NjY1NDcsMjA4ODY3MjM4NywtMTQzNDExODUyMywtNzc0MDczOD
-MzLDE1OTkxNDIxMTRdfQ==
+eyJoaXN0b3J5IjpbLTI2MDI5MTU5LC0yMDg1NjA3MjA0LC0xNT
+UyNjA1MTgyLC0xNjM1NTU0MzMxLDE4ODIyNTE4MDMsODg3MzI2
+NzUsMTU1ODk3MTU5OCwtMTg4NzIxNzc5MywxMzM3NjkyMDkxLC
+04OTYxODM0OTIsMTY2NDM5NDg3LC0xMjY5MzA5MTk1LDg1MjA2
+NjU0NywyMDg4NjcyMzg3LC0xNDM0MTE4NTIzLC03NzQwNzM4Mz
+MsMTU5OTE0MjExNF19
 -->
