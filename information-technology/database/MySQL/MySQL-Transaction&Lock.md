@@ -107,7 +107,9 @@ UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. �
 |버전|설정의 조합  |
 |--|--|
 |MySQL 5.0| innodb_locks_unsafe_for_binglog=1 트랜잭션 격리 수준을 READ-COMMITED 설정 |
-|MySQL 5.1 이상| innodb_locks_unsafe_for_binglog=1 트랜잭션 격리 수준을 READ-COMMITED 설정 |
+|MySQL 5.1 이상| 바이너리 로그를 비활성화, 트랜잭션 격리 수준을 READ-COMMITED 설정; 또는 레코드 기반의 바이너리 로그 사용 innodb_locks_unsafe_for_binglog=1 |
+
+
 
 
 
@@ -116,10 +118,11 @@ UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTU4NTYwMDcsLTI2MDI5MTU5LC0yMD
-g1NjA3MjA0LC0xNTUyNjA1MTgyLC0xNjM1NTU0MzMxLDE4ODIy
-NTE4MDMsODg3MzI2NzUsMTU1ODk3MTU5OCwtMTg4NzIxNzc5My
-wxMzM3NjkyMDkxLC04OTYxODM0OTIsMTY2NDM5NDg3LC0xMjY5
-MzA5MTk1LDg1MjA2NjU0NywyMDg4NjcyMzg3LC0xNDM0MTE4NT
-IzLC03NzQwNzM4MzMsMTU5OTE0MjExNF19
+eyJoaXN0b3J5IjpbMjExNTMwMTE3NCwtMTM5NTg1NjAwNywtMj
+YwMjkxNTksLTIwODU2MDcyMDQsLTE1NTI2MDUxODIsLTE2MzU1
+NTQzMzEsMTg4MjI1MTgwMyw4ODczMjY3NSwxNTU4OTcxNTk4LC
+0xODg3MjE3NzkzLDEzMzc2OTIwOTEsLTg5NjE4MzQ5MiwxNjY0
+Mzk0ODcsLTEyNjkzMDkxOTUsODUyMDY2NTQ3LDIwODg2NzIzOD
+csLTE0MzQxMTg1MjMsLTc3NDA3MzgzMywxNTk5MTQyMTE0XX0=
+
 -->
