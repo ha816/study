@@ -100,16 +100,18 @@ UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. �
 
 만약 테이블에 인덱스가 하나도 없다면, 테이블을 풀 스캔하면서 UPDATE 작업을 하는데 이 과정에서 모든 레코드를 잠그게 된다. 따라서 MySQL의 InnoDB에서는 인덱스 설계가 너무나 중요하다. 
 
+위에 불필요한 레코드 잠금 현상은 InnoDB의 넥스트 키 락 때문에 발생하는 것이다. 하지만 InnoDB에서 네스트 키락을 필요하게 만드는 주 원인은 바로 
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODU2MDcyMDQsLTE1NTI2MDUxODIsLT
-E2MzU1NTQzMzEsMTg4MjI1MTgwMyw4ODczMjY3NSwxNTU4OTcx
-NTk4LC0xODg3MjE3NzkzLDEzMzc2OTIwOTEsLTg5NjE4MzQ5Mi
-wxNjY0Mzk0ODcsLTEyNjkzMDkxOTUsODUyMDY2NTQ3LDIwODg2
-NzIzODcsLTE0MzQxMTg1MjMsLTc3NDA3MzgzMywxNTk5MTQyMT
-E0XX0=
+eyJoaXN0b3J5IjpbLTc0NTg3MDc4NCwtMjA4NTYwNzIwNCwtMT
+U1MjYwNTE4MiwtMTYzNTU1NDMzMSwxODgyMjUxODAzLDg4NzMy
+Njc1LDE1NTg5NzE1OTgsLTE4ODcyMTc3OTMsMTMzNzY5MjA5MS
+wtODk2MTgzNDkyLDE2NjQzOTQ4NywtMTI2OTMwOTE5NSw4NTIw
+NjY1NDcsMjA4ODY3MjM4NywtMTQzNDExODUyMywtNzc0MDczOD
+MzLDE1OTkxNDIxMTRdfQ==
 -->
