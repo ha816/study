@@ -135,7 +135,10 @@ UPDATE ...
 WHERE ....
 ...  생략
 ```
----TRANSACTION으로 시작하는 줄 하나가 커넥션에 대한 정보를 의미한다.
+---TRANSACTION으로 시작하는 줄 하나가 커넥션에 대한 정보를 의미한다. 바로 뒤의 숫자 2개는 트랜잭션 번호를 의미하고, 그 뒤의 ACTIVE ... sec, not started는 트랜잭션 상태를 표시한다. 그리고 바로 다음 MySQL thread id <숫자> 줄이 있는데 숫자 값이 트랜잭션을 실행하고 있는 프로세스 아이디(커넥션 번호)이다.
+
+중요한 것은 레코드를 오랫동안 잠그고 이
+
 
 
 
@@ -150,11 +153,11 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIwMDg1MjU4LC0xNTMzNDg3OTY3LC0xNT
-ExMzcxMTQxLDIxMTUzMDExNzQsLTEzOTU4NTYwMDcsLTI2MDI5
-MTU5LC0yMDg1NjA3MjA0LC0xNTUyNjA1MTgyLC0xNjM1NTU0Mz
-MxLDE4ODIyNTE4MDMsODg3MzI2NzUsMTU1ODk3MTU5OCwtMTg4
-NzIxNzc5MywxMzM3NjkyMDkxLC04OTYxODM0OTIsMTY2NDM5ND
-g3LC0xMjY5MzA5MTk1LDg1MjA2NjU0NywyMDg4NjcyMzg3LC0x
-NDM0MTE4NTIzXX0=
+eyJoaXN0b3J5IjpbMTc3Njc5NzU0MCwtMTUzMzQ4Nzk2NywtMT
+UxMTM3MTE0MSwyMTE1MzAxMTc0LC0xMzk1ODU2MDA3LC0yNjAy
+OTE1OSwtMjA4NTYwNzIwNCwtMTU1MjYwNTE4MiwtMTYzNTU1ND
+MzMSwxODgyMjUxODAzLDg4NzMyNjc1LDE1NTg5NzE1OTgsLTE4
+ODcyMTc3OTMsMTMzNzY5MjA5MSwtODk2MTgzNDkyLDE2NjQzOT
+Q4NywtMTI2OTMwOTE5NSw4NTIwNjY1NDcsMjA4ODY3MjM4Nywt
+MTQzNDExODUyM119
 -->
