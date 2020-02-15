@@ -111,7 +111,7 @@ UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. �
 
 ### 레코드 수준의 잠금 확인 및 해제
 
-InnoDB 스토리지 엔진을 사용하는 **테이블의 레코드 수준 잠근은 테이블 수준 잠금보다는 더 복잡하다.** 테이블 잠금에서는 잠금의 대상이 테이블이므로 단위와 크기가 커서  문제의 원인이 발견되고 해결될 수 있다. 
+InnoDB 스토리지 엔진을 사용하는 **테이블의 레코드 수준 잠근은 테이블 수준 잠금보다는 더 복잡하다.** 테이블 잠금에서는 잠금의 대상이 테이블이므로 단위와 크기가 커서 문제의 원인이 쉽게 발견되고 해결도 쉽다. 
 
 
 
@@ -120,7 +120,7 @@ InnoDB 스토리지 엔진을 사용하는 **테이블의 레코드 수준 잠�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTQzMjIzMSwyMTE1MzAxMTc0LC0xMz
+eyJoaXN0b3J5IjpbMTg5MjcwODk3MSwyMTE1MzAxMTc0LC0xMz
 k1ODU2MDA3LC0yNjAyOTE1OSwtMjA4NTYwNzIwNCwtMTU1MjYw
 NTE4MiwtMTYzNTU1NDMzMSwxODgyMjUxODAzLDg4NzMyNjc1LD
 E1NTg5NzE1OTgsLTE4ODcyMTc3OTMsMTMzNzY5MjA5MSwtODk2
