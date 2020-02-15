@@ -118,7 +118,8 @@ MySQL 5.0이하 버전에서는 **레코드 잠금에 대한 메타정보(딕셔
 ```
 SHOW PROCESSLIST; 
 SHOW ENGINE INNODB STATUS; //5.0 이하버전
-SELECT * FROM information_schema.innodb_locks; // 
+SELECT * FROM information_schema.innodb_locks; // 잠금이나 대기가 발생할 경우, InnoDB 스토리지 엔진에서 관련 정보를 계속 테이블로 업데이트하기 때문에 확인이 간단
+SELECT * FROM information_schema.innodb_locks;
 ```
 
 SHOW ENGINE INNODB STATUS 명령어를 실행 
@@ -154,7 +155,7 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MTkzMDM5Miw5OTI1MzA0ODgsLTE1Mz
+eyJoaXN0b3J5IjpbLTk4NzI5NDI3NCw5OTI1MzA0ODgsLTE1Mz
 M0ODc5NjcsLTE1MTEzNzExNDEsMjExNTMwMTE3NCwtMTM5NTg1
 NjAwNywtMjYwMjkxNTksLTIwODU2MDcyMDQsLTE1NTI2MDUxOD
 IsLTE2MzU1NTQzMzEsMTg4MjI1MTgwMyw4ODczMjY3NSwxNTU4
