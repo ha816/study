@@ -121,7 +121,8 @@ SHOW ENGINE INNODB STATUS; //5.0 이하버전
 SELECT * FROM information_schema.innodb_locks; // 어떤 잠금이 존재하는지를 관리한다. 잠금이나 대기가 발생할 경우, InnoDB 스토리지 엔진에서 관련 정보를 계속 테이블로 업데이트.SELECT * FROM information_schema.innodb_trx; // 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
 ```
 
-SHOW ENGINE INNODB STATUS 명령어를 실행 
+--- 
+5.0이하 버전에서 SHOW ENGINE INNODB STATUS 명령어를 실행 
 ```
 --- TRANSACTION 0 1770, not started, OS thread id 5472
 MySQL thread id 5, query id 225 localhost 127.0.0.1 root
@@ -154,11 +155,11 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ2NTQ4NzMsOTkyNTMwNDg4LC0xNTMzND
-g3OTY3LC0xNTExMzcxMTQxLDIxMTUzMDExNzQsLTEzOTU4NTYw
-MDcsLTI2MDI5MTU5LC0yMDg1NjA3MjA0LC0xNTUyNjA1MTgyLC
-0xNjM1NTU0MzMxLDE4ODIyNTE4MDMsODg3MzI2NzUsMTU1ODk3
-MTU5OCwtMTg4NzIxNzc5MywxMzM3NjkyMDkxLC04OTYxODM0OT
-IsMTY2NDM5NDg3LC0xMjY5MzA5MTk1LDg1MjA2NjU0NywyMDg4
-NjcyMzg3XX0=
+eyJoaXN0b3J5IjpbOTk4Nzg4MzkzLDQ0NjU0ODczLDk5MjUzMD
+Q4OCwtMTUzMzQ4Nzk2NywtMTUxMTM3MTE0MSwyMTE1MzAxMTc0
+LC0xMzk1ODU2MDA3LC0yNjAyOTE1OSwtMjA4NTYwNzIwNCwtMT
+U1MjYwNTE4MiwtMTYzNTU1NDMzMSwxODgyMjUxODAzLDg4NzMy
+Njc1LDE1NTg5NzE1OTgsLTE4ODcyMTc3OTMsMTMzNzY5MjA5MS
+wtODk2MTgzNDkyLDE2NjQzOTQ4NywtMTI2OTMwOTE5NSw4NTIw
+NjY1NDddfQ==
 -->
