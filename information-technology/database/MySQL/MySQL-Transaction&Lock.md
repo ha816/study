@@ -158,9 +158,7 @@ INNER JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id
 INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 ```
 
-###
-
-
+## MySQL 격리수준
 
 
 
@@ -172,7 +170,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMzE5NTI2Miw2MjM4MDEyMjUsNDQ2NT
+eyJoaXN0b3J5IjpbLTgxMzUxNzcyOCw2MjM4MDEyMjUsNDQ2NT
 Q4NzMsOTkyNTMwNDg4LC0xNTMzNDg3OTY3LC0xNTExMzcxMTQx
 LDIxMTUzMDExNzQsLTEzOTU4NTYwMDcsLTI2MDI5MTU5LC0yMD
 g1NjA3MjA0LC0xNTUyNjA1MTgyLC0xNjM1NTU0MzMxLDE4ODIy
