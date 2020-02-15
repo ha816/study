@@ -146,12 +146,19 @@ WHERE ....
 
 ```
 SELECT
+r.trx_id waiting_trx_id,
+r.trx_mysql_thread_it waiting_thread,
+r.trx_query waiting_query,
+b.trx_id blocking_trx_id,
+b.trx_mysql_thread_id blocking_thread,
+b.trx_query blocking_query
 
 FROM information_schema.innodb_lock_waits w
 INNER JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id
 INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
-
 ```
+
+###
 
 
 
@@ -165,11 +172,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIzODAxMjI1LDQ0NjU0ODczLDk5MjUzMD
-Q4OCwtMTUzMzQ4Nzk2NywtMTUxMTM3MTE0MSwyMTE1MzAxMTc0
-LC0xMzk1ODU2MDA3LC0yNjAyOTE1OSwtMjA4NTYwNzIwNCwtMT
-U1MjYwNTE4MiwtMTYzNTU1NDMzMSwxODgyMjUxODAzLDg4NzMy
-Njc1LDE1NTg5NzE1OTgsLTE4ODcyMTc3OTMsMTMzNzY5MjA5MS
-wtODk2MTgzNDkyLDE2NjQzOTQ4NywtMTI2OTMwOTE5NSw4NTIw
-NjY1NDddfQ==
+eyJoaXN0b3J5IjpbLTIyMzE5NTI2Miw2MjM4MDEyMjUsNDQ2NT
+Q4NzMsOTkyNTMwNDg4LC0xNTMzNDg3OTY3LC0xNTExMzcxMTQx
+LDIxMTUzMDExNzQsLTEzOTU4NTYwMDcsLTI2MDI5MTU5LC0yMD
+g1NjA3MjA0LC0xNTUyNjA1MTgyLC0xNjM1NTU0MzMxLDE4ODIy
+NTE4MDMsODg3MzI2NzUsMTU1ODk3MTU5OCwtMTg4NzIxNzc5My
+wxMzM3NjkyMDkxLC04OTYxODM0OTIsMTY2NDM5NDg3LC0xMjY5
+MzA5MTk1XX0=
 -->
