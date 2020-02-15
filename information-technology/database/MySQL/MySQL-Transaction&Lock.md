@@ -139,7 +139,7 @@ WHERE ....
 
 **중요한 것은 레코드를 오랫동안 잠그고 있는 프로세스가 있는지 여부**이다. 최대한 트랜잭션이 오랫동안 실행되고 있는 줄을 찾으면 되는데 트랜잭션 상태가 ACTIVE이고, 그 뒤 시간값이 최대한 큰 값을 가진 트랜잭션을 찾으면 된다.
 
-
+이 와 같은 방법으로 문제의 원인으로 예상되는 트랜잭션을 찾으면, 해당 트랜잭션의 프로세스를 KILL 명령으로 종료하자. 만약 근본적인 원인인 트랜잭션을 찾기가 어렵다면 오래 기다
 
 
 
@@ -155,11 +155,11 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI0MzU0MDc3LC0xNTMzNDg3OTY3LC0xNT
-ExMzcxMTQxLDIxMTUzMDExNzQsLTEzOTU4NTYwMDcsLTI2MDI5
-MTU5LC0yMDg1NjA3MjA0LC0xNTUyNjA1MTgyLC0xNjM1NTU0Mz
-MxLDE4ODIyNTE4MDMsODg3MzI2NzUsMTU1ODk3MTU5OCwtMTg4
-NzIxNzc5MywxMzM3NjkyMDkxLC04OTYxODM0OTIsMTY2NDM5ND
-g3LC0xMjY5MzA5MTk1LDg1MjA2NjU0NywyMDg4NjcyMzg3LC0x
-NDM0MTE4NTIzXX0=
+eyJoaXN0b3J5IjpbMTkxOTU5OTE0MSwtMTUzMzQ4Nzk2NywtMT
+UxMTM3MTE0MSwyMTE1MzAxMTc0LC0xMzk1ODU2MDA3LC0yNjAy
+OTE1OSwtMjA4NTYwNzIwNCwtMTU1MjYwNTE4MiwtMTYzNTU1ND
+MzMSwxODgyMjUxODAzLDg4NzMyNjc1LDE1NTg5NzE1OTgsLTE4
+ODcyMTc3OTMsMTMzNzY5MjA5MSwtODk2MTgzNDkyLDE2NjQzOT
+Q4NywtMTI2OTMwOTE5NSw4NTIwNjY1NDcsMjA4ODY3MjM4Nywt
+MTQzNDExODUyM119
 -->
