@@ -113,7 +113,13 @@ UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. �
 
 InnoDB 스토리지 엔진을 사용하는 **테이블의 레코드 수준 잠근은 테이블 수준 잠금보다는 더 복잡하다.** 테이블 잠금에서는 잠금의 대상이 테이블이므로 단위와 크기가 커서 문제의 원인이 쉽게 발견되고 해결도 쉽다. 그에 반해 레코드 수준 잠금은 레코드에 걸리므로 **그 레코드가 자주 사용되지 않는 다면 오랜 시간 동안 잠겨진 상태로 남아 있어도 잘 발견되지 않는다.**
 
-MySQL 5.0이하 버전에서는 **레코드 잠금에 대한 메타정보(딕셔너리 테이블)**을 제공하지 않기 때문에 잠금 확인이 어렵다. 하지만 5.1 InnoDB 플러그인 버전부터는 레코드 잠금과 대기에 대한 조회가 가능하므로 쿼리하나만 실행해보면 
+MySQL 5.0이하 버전에서는 **레코드 잠금에 대한 메타정보(딕셔너리 테이블)**을 제공하지 않기 때문에 잠금 확인이 어렵다. 하지만 5.1 InnoDB 플러그인 버전부터는 레코드 잠금과 대기에 대한 조회가 가능하므로 쿼리하나만 실행해보면 잠금과 잠금 대기를 바로 확인할 수 있다.
+
+```
+SHOW PROCESSLIST;
+```
+
+
 
 
 
@@ -122,11 +128,11 @@ MySQL 5.0이하 버전에서는 **레코드 잠금에 대한 메타정보(딕셔
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM3MjEyOTg3LDIxMTUzMDExNzQsLTEzOT
-U4NTYwMDcsLTI2MDI5MTU5LC0yMDg1NjA3MjA0LC0xNTUyNjA1
-MTgyLC0xNjM1NTU0MzMxLDE4ODIyNTE4MDMsODg3MzI2NzUsMT
-U1ODk3MTU5OCwtMTg4NzIxNzc5MywxMzM3NjkyMDkxLC04OTYx
-ODM0OTIsMTY2NDM5NDg3LC0xMjY5MzA5MTk1LDg1MjA2NjU0Ny
-wyMDg4NjcyMzg3LC0xNDM0MTE4NTIzLC03NzQwNzM4MzMsMTU5
-OTE0MjExNF19
+eyJoaXN0b3J5IjpbLTE1MTEzNzExNDEsMjExNTMwMTE3NCwtMT
+M5NTg1NjAwNywtMjYwMjkxNTksLTIwODU2MDcyMDQsLTE1NTI2
+MDUxODIsLTE2MzU1NTQzMzEsMTg4MjI1MTgwMyw4ODczMjY3NS
+wxNTU4OTcxNTk4LC0xODg3MjE3NzkzLDEzMzc2OTIwOTEsLTg5
+NjE4MzQ5MiwxNjY0Mzk0ODcsLTEyNjkzMDkxOTUsODUyMDY2NT
+Q3LDIwODg2NzIzODcsLTE0MzQxMTg1MjMsLTc3NDA3MzgzMywx
+NTk5MTQyMTE0XX0=
 -->
