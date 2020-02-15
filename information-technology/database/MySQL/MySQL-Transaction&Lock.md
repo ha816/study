@@ -149,7 +149,7 @@ SELECT
 
 FROM information_schema.innodb_lock_waits w
 INNER JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id
-INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id
+INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 ```
 
@@ -165,7 +165,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE0Mjg1NzI2LDQ0NjU0ODczLDk5MjUzMD
+eyJoaXN0b3J5IjpbNjIzODAxMjI1LDQ0NjU0ODczLDk5MjUzMD
 Q4OCwtMTUzMzQ4Nzk2NywtMTUxMTM3MTE0MSwyMTE1MzAxMTc0
 LC0xMzk1ODU2MDA3LC0yNjAyOTE1OSwtMjA4NTYwNzIwNCwtMT
 U1MjYwNTE4MiwtMTYzNTU1NDMzMSwxODgyMjUxODAzLDg4NzMy
