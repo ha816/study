@@ -122,7 +122,7 @@ SHOW ENGINE INNODB STATUS;
 
 
 
-SHOW ENGINE INNODB STATUS 명령어를 실행하면 ---TRANSACTION으로 시작하는 줄 하나가 커넥션에 대한 정보를 의미한다.
+SHOW ENGINE INNODB STATUS 명령어를 실행 
 ```
 --- TRANSACTION 0 1770, not started, OS thread id 5472
 MySQL thread id 5, query id 225 localhost 127.0.0.1 root
@@ -131,7 +131,14 @@ show engine innodb status
 mysql tables in use 1, locked 1
 LOCK WAIT 2 lock struct(s), heap size 320
 MySQL thread id 3, query id 224 localhost 127.0.0.1 root Updating
+UPDATE ...
+WHERE ....
+...  생략
 ```
+---TRANSACTION으로 시작하는 줄 하나가 커넥션에 대한 정보를 의미한다.
+
+
+
 
 
 
@@ -143,11 +150,11 @@ MySQL thread id 3, query id 224 localhost 127.0.0.1 root Updating
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDI2NzM4OCwtMTUzMzQ4Nzk2NywtMT
-UxMTM3MTE0MSwyMTE1MzAxMTc0LC0xMzk1ODU2MDA3LC0yNjAy
-OTE1OSwtMjA4NTYwNzIwNCwtMTU1MjYwNTE4MiwtMTYzNTU1ND
-MzMSwxODgyMjUxODAzLDg4NzMyNjc1LDE1NTg5NzE1OTgsLTE4
-ODcyMTc3OTMsMTMzNzY5MjA5MSwtODk2MTgzNDkyLDE2NjQzOT
-Q4NywtMTI2OTMwOTE5NSw4NTIwNjY1NDcsMjA4ODY3MjM4Nywt
-MTQzNDExODUyM119
+eyJoaXN0b3J5IjpbNzIwMDg1MjU4LC0xNTMzNDg3OTY3LC0xNT
+ExMzcxMTQxLDIxMTUzMDExNzQsLTEzOTU4NTYwMDcsLTI2MDI5
+MTU5LC0yMDg1NjA3MjA0LC0xNTUyNjA1MTgyLC0xNjM1NTU0Mz
+MxLDE4ODIyNTE4MDMsODg3MzI2NzUsMTU1ODk3MTU5OCwtMTg4
+NzIxNzc5MywxMzM3NjkyMDkxLC04OTYxODM0OTIsMTY2NDM5ND
+g3LC0xMjY5MzA5MTk1LDg1MjA2NjU0NywyMDg4NjcyMzg3LC0x
+NDM0MTE4NTIzXX0=
 -->
