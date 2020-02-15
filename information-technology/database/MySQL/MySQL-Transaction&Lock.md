@@ -19,7 +19,7 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 
 "DIRTY READ" 라고도 하는 READ_UNCOMMITED는 일반적인 데이터 베이스에서는 거의 사용하지 않고, SERIALIZABLE도 동시성이 중요한 데이터 베이스에서 거의 사용되지 않는다. 
 격리수준에서 뒤로 갈수록 트랜잭션간의 고립(격리)가 높아지며, 동시에 동시성도 떨어지는 것이 일반적이다. 
-격리 수준이 높아질 수록 MySQL 서버의 처리 성능이 
+격리 수준이 높아질 수록 MySQL 서버의 처리 성능이 많이 떨어질 것으로 걱정하는 사용자가 많은데, 사실 SERIALIZABLE 격리 수준이 아니라면 성능은 큰 차이는 발생하지 않는다.
 
 ## MySQL Lock
 
@@ -178,7 +178,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTk4ODE0NTksNjMzNTY1ODAzLDYyMz
+eyJoaXN0b3J5IjpbLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYyMz
 gwMTIyNSw0NDY1NDg3Myw5OTI1MzA0ODgsLTE1MzM0ODc5Njcs
 LTE1MTEzNzExNDEsMjExNTMwMTE3NCwtMTM5NTg1NjAwNywtMj
 YwMjkxNTksLTIwODU2MDcyMDQsLTE1NTI2MDUxODIsLTE2MzU1
