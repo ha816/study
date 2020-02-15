@@ -21,6 +21,15 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 격리수준에서 뒤로 갈수록 트랜잭션간의 고립(격리)가 높아지며, 동시에 동시성도 떨어지는 것이 일반적이다. 
 격리 수준이 높아질 수록 MySQL 서버의 처리 성능이 많이 떨어질 것으로 걱정하는 사용자가 많은데, 사실 SERIALIZABLE 격리 수준이 아니라면 성능은 큰 차이는 발생하지 않는다.
 
+### READ UNCOMMITED
+
+### READ COMMITED
+
+### REPEATABLE READ
+
+### SERIALIZABLE
+
+
 ## MySQL Lock
 
 MySQL에서 사용되는 잠금은 크게 **MySQL엔진 레벨**과 **스토리지 엔진 레벨**로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호 영향을 미치지 않는다. 
@@ -178,11 +187,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYyMz
-gwMTIyNSw0NDY1NDg3Myw5OTI1MzA0ODgsLTE1MzM0ODc5Njcs
-LTE1MTEzNzExNDEsMjExNTMwMTE3NCwtMTM5NTg1NjAwNywtMj
-YwMjkxNTksLTIwODU2MDcyMDQsLTE1NTI2MDUxODIsLTE2MzU1
-NTQzMzEsMTg4MjI1MTgwMyw4ODczMjY3NSwxNTU4OTcxNTk4LC
-0xODg3MjE3NzkzLDEzMzc2OTIwOTEsLTg5NjE4MzQ5MiwxNjY0
-Mzk0ODddfQ==
+eyJoaXN0b3J5IjpbLTEyMDQ2OTA5MTEsLTIwNDE3MDg1NjgsNj
+MzNTY1ODAzLDYyMzgwMTIyNSw0NDY1NDg3Myw5OTI1MzA0ODgs
+LTE1MzM0ODc5NjcsLTE1MTEzNzExNDEsMjExNTMwMTE3NCwtMT
+M5NTg1NjAwNywtMjYwMjkxNTksLTIwODU2MDcyMDQsLTE1NTI2
+MDUxODIsLTE2MzU1NTQzMzEsMTg4MjI1MTgwMyw4ODczMjY3NS
+wxNTU4OTcxNTk4LC0xODg3MjE3NzkzLDEzMzc2OTIwOTEsLTg5
+NjE4MzQ5Ml19
 -->
