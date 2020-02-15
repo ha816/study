@@ -13,6 +13,8 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 
 트랜잭션은 DBMS 커넥션과 동일하게 꼭 필요한 최소의 코드에만 적용하는게 좋다. 이는 프로그램 코드에서 트랜잭션의 범위를 최소화하라는 의미다. 
 
+## MySQL Isolation Level
+
 ## MySQL 잠금(Lock)
 
 MySQL에서 사용되는 잠금은 크게 **MySQL엔진 레벨**과 **스토리지 엔진 레벨**로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호 영향을 미치지 않는다. 
@@ -158,7 +160,7 @@ INNER JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id
 INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 ```
 
-## MySQL 격리수준
+
 
 
 
@@ -170,11 +172,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMzUxNzcyOCw2MjM4MDEyMjUsNDQ2NT
-Q4NzMsOTkyNTMwNDg4LC0xNTMzNDg3OTY3LC0xNTExMzcxMTQx
-LDIxMTUzMDExNzQsLTEzOTU4NTYwMDcsLTI2MDI5MTU5LC0yMD
-g1NjA3MjA0LC0xNTUyNjA1MTgyLC0xNjM1NTU0MzMxLDE4ODIy
-NTE4MDMsODg3MzI2NzUsMTU1ODk3MTU5OCwtMTg4NzIxNzc5My
-wxMzM3NjkyMDkxLC04OTYxODM0OTIsMTY2NDM5NDg3LC0xMjY5
-MzA5MTk1XX0=
+eyJoaXN0b3J5IjpbNjMzNTY1ODAzLDYyMzgwMTIyNSw0NDY1ND
+g3Myw5OTI1MzA0ODgsLTE1MzM0ODc5NjcsLTE1MTEzNzExNDEs
+MjExNTMwMTE3NCwtMTM5NTg1NjAwNywtMjYwMjkxNTksLTIwOD
+U2MDcyMDQsLTE1NTI2MDUxODIsLTE2MzU1NTQzMzEsMTg4MjI1
+MTgwMyw4ODczMjY3NSwxNTU4OTcxNTk4LC0xODg3MjE3NzkzLD
+EzMzc2OTIwOTEsLTg5NjE4MzQ5MiwxNjY0Mzk0ODcsLTEyNjkz
+MDkxOTVdfQ==
 -->
