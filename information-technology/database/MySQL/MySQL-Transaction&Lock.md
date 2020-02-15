@@ -118,8 +118,7 @@ MySQL 5.0이하 버전에서는 **레코드 잠금에 대한 메타정보(딕셔
 ```
 SHOW PROCESSLIST; 
 SHOW ENGINE INNODB STATUS; //5.0 이하버전
-SELECT * FROM information_schema.innodb_locks; // 잠금이나 대기가 발생할 경우, InnoDB 스토리지 엔진에서 관련 정보를 계속 테이블로 업데이트하기 때문에 확인이 간단
-SELECT * FROM information_schema.innodb_trx; // 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
+SELECT * FROM information_schema.innodb_locks; // 어떤 잠금이 존재하는지를 관리한다. 잠금이나 대기가 발생할 경우, InnoDB 스토리지 엔진에서 관련 정보를 계속 테이블로 업데이트.SELECT * FROM information_schema.innodb_trx; // 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
 ```
 
 SHOW ENGINE INNODB STATUS 명령어를 실행 
@@ -155,11 +154,11 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzOTY3NTAyNCw5OTI1MzA0ODgsLTE1Mz
-M0ODc5NjcsLTE1MTEzNzExNDEsMjExNTMwMTE3NCwtMTM5NTg1
-NjAwNywtMjYwMjkxNTksLTIwODU2MDcyMDQsLTE1NTI2MDUxOD
-IsLTE2MzU1NTQzMzEsMTg4MjI1MTgwMyw4ODczMjY3NSwxNTU4
-OTcxNTk4LC0xODg3MjE3NzkzLDEzMzc2OTIwOTEsLTg5NjE4Mz
-Q5MiwxNjY0Mzk0ODcsLTEyNjkzMDkxOTUsODUyMDY2NTQ3LDIw
-ODg2NzIzODddfQ==
+eyJoaXN0b3J5IjpbNDQ2NTQ4NzMsOTkyNTMwNDg4LC0xNTMzND
+g3OTY3LC0xNTExMzcxMTQxLDIxMTUzMDExNzQsLTEzOTU4NTYw
+MDcsLTI2MDI5MTU5LC0yMDg1NjA3MjA0LC0xNTUyNjA1MTgyLC
+0xNjM1NTU0MzMxLDE4ODIyNTE4MDMsODg3MzI2NzUsMTU1ODk3
+MTU5OCwtMTg4NzIxNzc5MywxMzM3NjkyMDkxLC04OTYxODM0OT
+IsMTY2NDM5NDg3LC0xMjY5MzA5MTk1LDg1MjA2NjU0NywyMDg4
+NjcyMzg3XX0=
 -->
