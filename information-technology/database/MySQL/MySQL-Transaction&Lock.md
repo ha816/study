@@ -17,7 +17,7 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 
 트랜잭션의 격리 수준이란 **동시에 여러 트랜잭션이 처리될 때, 특정 트랜잭션이 다른 트랜잭션에서 변경하거나 조회하는 데이터를 볼 수 있도록 허용할지 말지를 결정**하는 것이다. 
 
-## MySQL 잠금(Lock)
+## MySQL Lock
 
 MySQL에서 사용되는 잠금은 크게 **MySQL엔진 레벨**과 **스토리지 엔진 레벨**로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호 영향을 미치지 않는다. 
 
@@ -174,7 +174,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTA2NTk0MCw2MzM1NjU4MDMsNjIzOD
+eyJoaXN0b3J5IjpbMTEwOTQ3MDc3Nyw2MzM1NjU4MDMsNjIzOD
 AxMjI1LDQ0NjU0ODczLDk5MjUzMDQ4OCwtMTUzMzQ4Nzk2Nywt
 MTUxMTM3MTE0MSwyMTE1MzAxMTc0LC0xMzk1ODU2MDA3LC0yNj
 AyOTE1OSwtMjA4NTYwNzIwNCwtMTU1MjYwNTE4MiwtMTYzNTU1
