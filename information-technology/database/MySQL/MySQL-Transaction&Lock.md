@@ -122,7 +122,8 @@ SELECT * FROM information_schema.innodb_locks; // 어떤 잠금이 존재하는�
 ```
 
 --- 
-5.0이하 버전에서 SHOW ENGINE INNODB STATUS 명령어를 실행 
+#### 5.0이하 버전에서 잠금 확인 및 해제
+SHOW ENGINE INNODB STATUS 명령어를 실행 
 ```
 --- TRANSACTION 0 1770, not started, OS thread id 5472
 MySQL thread id 5, query id 225 localhost 127.0.0.1 root
@@ -141,7 +142,16 @@ WHERE ....
 
 이 와 같은 방법으로 문제의 원인으로 예상되는 트랜잭션을 찾으면, 해당 트랜잭션의 프로세스를 KILL 명령으로 종료하자. 만약 근본적인 원인인 트랜잭션을 찾기가 어렵다면 오래 기다리고 있는 트랜잭션을 모두 종료해버리자.
 
+#### 5.1버전 이상
 
+```
+SELECT
+
+FROM information_schema.innodb_lock_waits w
+INNER JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id
+INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id
+
+```
 
 
 
@@ -155,7 +165,7 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk4Nzg4MzkzLDQ0NjU0ODczLDk5MjUzMD
+eyJoaXN0b3J5IjpbNTE0Mjg1NzI2LDQ0NjU0ODczLDk5MjUzMD
 Q4OCwtMTUzMzQ4Nzk2NywtMTUxMTM3MTE0MSwyMTE1MzAxMTc0
 LC0xMzk1ODU2MDA3LC0yNjAyOTE1OSwtMjA4NTYwNzIwNCwtMT
 U1MjYwNTE4MiwtMTYzNTU1NDMzMSwxODgyMjUxODAzLDg4NzMy
