@@ -31,9 +31,39 @@
 
 ## 평균 배송소요일 계산 및 적재
 
+<![endif]-->
 
+<![if !supportLists]>n <![endif]>상품별 배송도착 소요일의 평균을  고객에게 제공.
+
+<![if !supportLists]>n <![endif]>상품 판매자에게 더 빠른 배송 서비스를 제공하도록 유도.
+
+<![if !supportLists]>**** <![endif]>**프로젝트 개발**
+
+<![if !supportLists]>**n** <![endif]>**Spring Batch** **개발**
+
+<![if !supportLists]>**-** <![endif]>상품 별로 최근 1주일치  배송건의 배송 소요시간의  평균을 계산.
+
+<![if !supportLists]>- <![endif]>**평균 배송소요일 계산대상 상품 수는 약**100,000 건, 상품 별로 평균 하루 10건의 배송이 존재.
+
+<![if !supportLists]>- <![endif]>프로토 배치는 1시간 정도 시간이 소요. 아래 전략을 통해 소요시간을 15분 내외로 단축
+
+<![if !supportLists]>- <![endif]>소요 시간을 줄이기 위해서 평균 계산일 계산 알고리즘 개선. 이전에 계산된 배송소요일이 있으면, 가장 오래된 날짜의 배송소요일을 제거하고 추가할 날짜의 배송소요일을 추가해서 불필요한 반복 계산을 회피
+
+<![if !supportLists]>- <![endif]>계산 처리 단위를 1000건씩 묶어 처리하여 네트워크 비용 감소.
+
+<![if !supportLists]>- <![endif]>Spring Batch의 Partition을 이용한 멀티쓰레드 처리.
+
+<![if !supportLists]>n <![endif]>RDB 구축
+
+<![if !supportLists]>- <![endif]>평균 배송 소요일은 하루에 한번 재계산 되기 때문에 주문시점에 노출되던 평균배송소요일을 스냅샷 으로 기록하는 테이블이 필요. 해당 테이블에 적재를 위한 REST API 제공.
+
+<![if !supportLists]>n <![endif]>CouchBase 적재
+
+<![if !supportLists]>- <![endif]>노출 서비스 사용처에서 필요 정보를 RDB로 제공하면 요청 수가 많아 DB성능상 이슈 발생.
+
+<![if !supportLists]>- <![endif]>별도의 CouchBase계산된 평균배송소요일 추가 적재.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDM1MTE1MTAsNjI5OTg5Njk0LC0xND
+eyJoaXN0b3J5IjpbLTEyMTk0NDU1MTcsNjI5OTg5Njk0LC0xND
 E3ODc1MzI5LC0xMDUyNDQ1NTg0LDE1OTg5MDUzNDEsLTEzMjk3
 NjIyMzMsLTg3MjA2MjA2OCw2MjYyMjE4MDAsMTYzNTE3MDIsLT
 U1MzY3MDM4Nl19
