@@ -104,6 +104,7 @@
 >Template method : 공통적으로 사용한 메서드를 미리 상위 클래스에 정의를 하고 하위 클래스에서 정의해둔 메서드를 사용하거나 재정의해서 사용한다.
 >Fly-weight : 자주 사용되는 객체를 캐시 해두어, 필요시 캐시에 있던 객체를 재사용하는 패턴.
 >Proxy : Proxy는 우리말로 대리자, 대변인 이라는 뜻이다. 원래 작업을 해야할 객체가 아닌 Proxy가 대신해서 작업을 수행한다. Proxy는 실제 작업해야할 객체를 참조 변수로 가지고 있다. 실제 필요한 작업은 참조하던 객체의 메서드를 호출하는데 호출 전후로 별도의 로직을 수행할 수 있다.
+>Adapter : 
 
 # MultiThread
 
@@ -262,8 +263,6 @@ _"the microservice architectural style is an approach to developing a single app
 
 리눅스에서는 이 방식을 리눅스 컨테이너라고 하고 단순히 프로세스를 격리시키기 때문에 가볍고 빠르게 동작합니다. CPU나 메모리는 딱 프로세스가 필요한 만큼만 추가로 사용하고 성능적으로도 거어의 손실이 없습니다.
 
-# Programming Paradigm
-
 
 
 # TOOL
@@ -273,14 +272,16 @@ _"the microservice architectural style is an approach to developing a single app
 > GIT 형상관리 툴?
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MjY3OTU0NiwtNjk1NDgyMTMzLC0xNT
-c1MzMzMDM0LDMwODU0Mjg0OCw4MjU0MjM4MTcsLTQxMzA5MDA5
-MiwtMTg3NzUyOTc5NiwxOTE0NzkwMTA2LDEwODQ2MDc1NjEsOT
-M0MjI2NjY5LDE3MDEwOTI3MDUsMTU5NDIyNzcxMSwtNjMyOTIz
-MjExLC05Njc0MTYyMTYsMTgyNjg3MjQ0OSw3NDYzMDIyODEsLT
-M5MDIyNzkwMywtMTc1NjgwNzU2Miw3MjcwOTIwNTQsMjA5NTI5
-NjU2XX0=
+eyJoaXN0b3J5IjpbNDY2MDU3Mjk0LC02OTU0ODIxMzMsLTE1Nz
+UzMzMwMzQsMzA4NTQyODQ4LDgyNTQyMzgxNywtNDEzMDkwMDky
+LC0xODc3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5Mz
+QyMjY2NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMy
+MTEsLTk2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMz
+kwMjI3OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMDk1Mjk2
+NTZdfQ==
 -->
