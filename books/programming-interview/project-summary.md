@@ -11,12 +11,12 @@
 신규 프로세스 및 API 개발
 
 ```
-주문 시점 -> 배송지 입력,
-
+주문 시점 -> 배송지 입력 -> 주문 완료
+주문 시점 -> 배송지 미입력 -> 주문 완료 -> (신규)
 ```
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NTczNDkwMiwxNjM1MTcwMiwtNTUzNj
+eyJoaXN0b3J5IjpbLTMzNTc3NzEzOCwxNjM1MTcwMiwtNTUzNj
 cwMzg2XX0=
 -->
