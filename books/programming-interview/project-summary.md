@@ -4,6 +4,13 @@
 
 기존 티몬 배송 서비스에서 상품 수령자는 반드시 구매자였다. 본 프로젝트는  구매자가 아닌 고객도 상품을 수령 받을 수 있게 구조를 고치는 프로젝트였다. 이로써 티몬의 배송 상품을 회원 고객(구매자)뿐만 아니라 비회원 고객도 가능하게 되었다. 
 
+
+```
+주문 시점 ( 배송지 입력 )->-> 주문 완료 -> 배송시작
+주문 시점 -> 배송지 미입력(수령자 정보 입력) -> 주문 완료 -> 수령자 알림 및 배송지 입력 -> 배송시작 
+```
+
+
 ### 주요 역할
 
 * 요구사항에 맞는 DB 테이블 설계
@@ -12,14 +19,10 @@
 	* 주문 완료 이후 배송지 입력 API 제공 
 	* 수령자 알림 서비스(비즈톡, LMS)
 
-```
-주문 시점 -> 배송지 입력 -> 주문 완료
-주문 시점 -> 배송지 미입력(수령자 정보 입력) -> 주문 완료 
--> 수령자 알림 및 배송지 입력 -> 배송 시작 
-```
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjk3NjIyMzMsLTg3MjA2MjA2OCw2Mj
-YyMjE4MDAsMTYzNTE3MDIsLTU1MzY3MDM4Nl19
+eyJoaXN0b3J5IjpbLTExNDcyOTY1MDUsLTEzMjk3NjIyMzMsLT
+g3MjA2MjA2OCw2MjYyMjE4MDAsMTYzNTE3MDIsLTU1MzY3MDM4
+Nl19
 -->
