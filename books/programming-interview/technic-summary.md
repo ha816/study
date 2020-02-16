@@ -47,7 +47,7 @@
 >Generic이란 매개변수화된 타입이라고 한다. 즉 사용하려는 타입을 매개변수로 받는것을 말한다. 예를 들어 List는 담을 원소의 타입을 제네릭을 이용해서 정할 수 있다. 그러면 컴파일러는 list에 특정 타입만 포함되도록 컬렉션을 제한한다. 
 >실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 제네릭은 실체화가 아니다. 컴파일시에는 존재하지만 실제 동작하는 코드에는 존재하지 않는다.
 
->ri 체는어느 메모리 공간에 올라가는가? 인터닝(interning)이란**? 
+>**String은 어느 메모리 공간에 올라가는가? 인터닝(interning)이란?** 
 >String 객체는 대표적인 불변객체로, new 키워드로 생성하지 않는한 String Constant Pool에 올라간다. 
 >String Interning이란 불변의 독립적인 문자열을 저장하는 방법이다. String은 intern메서드를 가지는데, 상수 풀에 해당 문자열이 있으면 풀에 문자열을 가져오고 아니라면, 이 문자열은 풀에 추가되고 반환된다. 
 
@@ -279,11 +279,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NTQ4MjEzMywtMTU3NTMzMzAzNCwzMD
-g1NDI4NDgsODI1NDIzODE3LC00MTMwOTAwOTIsLTE4Nzc1Mjk3
-OTYsMTkxNDc5MDEwNiwxMDg0NjA3NTYxLDkzNDIyNjY2OSwxNz
-AxMDkyNzA1LDE1OTQyMjc3MTEsLTYzMjkyMzIxMSwtOTY3NDE2
-MjE2LDE4MjY4NzI0NDksNzQ2MzAyMjgxLC0zOTAyMjc5MDMsLT
-E3NTY4MDc1NjIsNzI3MDkyMDU0LDIwOTUyOTY1NiwtMTYwNTcz
-OTk2MV19
+eyJoaXN0b3J5IjpbOTQyMzI5MjAzLC02OTU0ODIxMzMsLTE1Nz
+UzMzMwMzQsMzA4NTQyODQ4LDgyNTQyMzgxNywtNDEzMDkwMDky
+LC0xODc3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5Mz
+QyMjY2NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMy
+MTEsLTk2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMz
+kwMjI3OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMDk1Mjk2
+NTZdfQ==
 -->
