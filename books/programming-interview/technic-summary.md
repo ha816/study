@@ -52,14 +52,16 @@
 >String Interning이란 불변의 독립적인 문자열을 저장하는 방법이다. String은 intern메서드를 가지는데, 상수 풀에 해당 문자열이 있으면 풀에 문자열을 가져오고 아니라면, 이 문자열은 풀에 추가되고 반환된다. 
 
 > **StringBuilder와 StringBuffer의 차이는?**
-> StringBuilder는 Thread Safe하지 않지만 StringBuffer는 그러하다. 따라서 StringBuilder가 더> 는   하  ro ptin의 이는
+> StringBuilder는 Thread Safe하지 않지만 StringBuffer는 그러하다. 따라서 StringBuilder가 더 성능상 빠르다. 
+
+>**Error와 Exception의 차이는?**
 >Error는 발생 시 더 이상의 작업을 수행할 수 없는 치명적인 문제를 말한다. Error가 발생하면 JVM이 중단되며 대표적인 Error로는 StackOverFlow, HeapOutOfMemory이 있다. Exception은 발생해도 개발자가 추가 처리 코드를 통해 처리가 가능하다. 
 
 >**Exception예외처리의 주요 클래스를 설명하라**
 >RuntimeException -> Exception -> Throwable
 >예외는 크게 RuntimeException(unchecked Exception)과 checked과 명시적 Exception으로 나뉜다. RuntimeException은 런타임시 발생하는 예외로 대표적으로는 NullPointException, ArrayOutofBound 등이 있다. 명시적 예외는 코드 상에 예외처리를 위한 코드를 작성해야 하며, 대표적으로 IO Excetpion이 있다. 
 
->**orepto이는?**
+>**Comparable VS Comparator**
 >Comparable과 Comparator 모두 객체들의 순서를 정하기 위해 사용한다. Collections.sort와 같이 정렬 메서드를 사용하고 싶다면 객체들이 Comparable 인터페이스를 구현해야 한다. Comparable은 자연스러운 순서를 정할때 사용하고 Comparator는 원하는 임의로 순서를 정하고 싶을 때 사용한다. 
 
 # DataStrucutre
@@ -87,14 +89,9 @@
 >**Heap**
 >Heap은 최소값이나 최대값을 찾는데 적합한 자료구조이다. 최소값에 적합한 Heap을 MinHeap, 최대값에 적합한 Heap을 MaxHeap이라 한다. 
 >Heap은 Complete Binary Tree(완전 이진 트리)이어야 한다. 완전 이진 트리란 최하단과 바로 그 위의 레벨 노드들을 제외한 모든 노드들이 온전히 2개의 자식 노드를 갖는 트리를 말한다.
->minHeap일 경우 부모 노드가 자식 노드보다 항상 작아야 한다. 반대로 maxHeap일 경우는 부모 노드가 자식 노드보다 항상 커야 한다. 경우를 가정하면 어떤가?
+>minHeap일 경우 부모 노드가 자식 노드보다 항상 작아야 한다. 반대로 maxHeap일 경우는 부모 노드가 자식 노드보다 항상 커야 한다. 
 
- 가
 
->  클래스를 설명라
->pineha  oncuntp 이는
-
->re HashMap 의 
 
 # DesignPattern
 
@@ -279,11 +276,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQyMzI5MjAzLC02OTU0ODIxMzMsLTE1Nz
-UzMzMwMzQsMzA4NTQyODQ4LDgyNTQyMzgxNywtNDEzMDkwMDky
-LC0xODc3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5Mz
-QyMjY2NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMy
-MTEsLTk2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMz
-kwMjI3OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMDk1Mjk2
-NTZdfQ==
+eyJoaXN0b3J5IjpbLTI1MjY3OTU0NiwtNjk1NDgyMTMzLC0xNT
+c1MzMzMDM0LDMwODU0Mjg0OCw4MjU0MjM4MTcsLTQxMzA5MDA5
+MiwtMTg3NzUyOTc5NiwxOTE0NzkwMTA2LDEwODQ2MDc1NjEsOT
+M0MjI2NjY5LDE3MDEwOTI3MDUsMTU5NDIyNzcxMSwtNjMyOTIz
+MjExLC05Njc0MTYyMTYsMTgyNjg3MjQ0OSw3NDYzMDIyODEsLT
+M5MDIyNzkwMywtMTc1NjgwNzU2Miw3MjcwOTIwNTQsMjA5NTI5
+NjU2XX0=
 -->
