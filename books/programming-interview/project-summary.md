@@ -36,12 +36,12 @@
 ### 주요 역할
 
 * Spring Batch를 이용한 개발
-	* 성능 향상을 위해 알고리즘 개선, 
+	* 성능 향상을 위해 알고리즘 개선, Partition을 이용한 멀티쓰레드 처리, 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDYzNzU4MDcsLTEyMTk0NDU1MTcsNj
-I5OTg5Njk0LC0xNDE3ODc1MzI5LC0xMDUyNDQ1NTg0LDE1OTg5
-MDUzNDEsLTEzMjk3NjIyMzMsLTg3MjA2MjA2OCw2MjYyMjE4MD
-AsMTYzNTE3MDIsLTU1MzY3MDM4Nl19
+eyJoaXN0b3J5IjpbLTczMDk3MDkyMCwtMTIxOTQ0NTUxNyw2Mj
+k5ODk2OTQsLTE0MTc4NzUzMjksLTEwNTI0NDU1ODQsMTU5ODkw
+NTM0MSwtMTMyOTc2MjIzMywtODcyMDYyMDY4LDYyNjIyMTgwMC
+wxNjM1MTcwMiwtNTUzNjcwMzg2XX0=
 -->
