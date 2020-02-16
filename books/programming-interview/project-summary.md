@@ -6,8 +6,8 @@
 
 
 ```
-주문 시점 ( 배송지 입력 )->-> 주문 완료 -> 배송시작
-주문 시점 -> 배송지 미입력(수령자 정보 입력) -> 주문 완료 -> 수령자 알림 및 배송지 입력 -> 배송시작 
+주문 시점(배송지 입력)-> 주문 완료 -> 배송시작
+주문 시점(배송지 미입력, 수령자정보 입력)-> 주문 완료 -> 수령자 알림 및 배송지 입력 -> 배송시작 
 ```
 
 
@@ -22,7 +22,7 @@
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDcyOTY1MDUsLTEzMjk3NjIyMzMsLT
-g3MjA2MjA2OCw2MjYyMjE4MDAsMTYzNTE3MDIsLTU1MzY3MDM4
-Nl19
+eyJoaXN0b3J5IjpbMTU5ODkwNTM0MSwtMTMyOTc2MjIzMywtOD
+cyMDYyMDY4LDYyNjIyMTgwMCwxNjM1MTcwMiwtNTUzNjcwMzg2
+XX0=
 -->
