@@ -19,9 +19,9 @@
 
 ## 도서산간 배송시스템 구축
 
-티몬 시스템에서 도서 산간 지역에 배송시 추가 배송비가 발생한다. 추가 발생 배송비의 경우 고객이 후불로 지불했는데 선지불이 가능하도록 구조를 고치고 도서 산간 배송지를 관리하는 시스템
+일반적으로 도서산간 지역에 배송시 추가 배송비가 발생한다. 추가 발생 배송비의 경우 고객이 후불로 지불했는데 선지불이 가능하도록 구조를 고치고 도서산간 지역을 관리하는 시스템을 구축했다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1OTcxMzMzNywtMTQxNzg3NTMyOSwtMT
+eyJoaXN0b3J5IjpbLTczODA5ODY4MSwtMTQxNzg3NTMyOSwtMT
 A1MjQ0NTU4NCwxNTk4OTA1MzQxLC0xMzI5NzYyMjMzLC04NzIw
 NjIwNjgsNjI2MjIxODAwLDE2MzUxNzAyLC01NTM2NzAzODZdfQ
 ==
