@@ -39,12 +39,12 @@
 	* 성능 향상을 위해 알고리즘 개선, Partition을 이용한 멀티쓰레드, 벌크 처리 등
 * 주문 시점에 노출되던 평균 배송소요일을 저장하기 위한 DB 테이블 구축 및 Rest API 제공
 * CouchBase 적재
-	* 노출 페이지에서 
+	* 노출 페이지에서 정보가 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzg2NTQ2NSwtMTIxOTQ0NTUxNyw2Mj
-k5ODk2OTQsLTE0MTc4NzUzMjksLTEwNTI0NDU1ODQsMTU5ODkw
-NTM0MSwtMTMyOTc2MjIzMywtODcyMDYyMDY4LDYyNjIyMTgwMC
-wxNjM1MTcwMiwtNTUzNjcwMzg2XX0=
+eyJoaXN0b3J5IjpbLTE3ODQxOTA1OTgsLTEyMTk0NDU1MTcsNj
+I5OTg5Njk0LC0xNDE3ODc1MzI5LC0xMDUyNDQ1NTg0LDE1OTg5
+MDUzNDEsLTEzMjk3NjIyMzMsLTg3MjA2MjA2OCw2MjYyMjE4MD
+AsMTYzNTE3MDIsLTU1MzY3MDM4Nl19
 -->
