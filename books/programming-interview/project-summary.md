@@ -23,8 +23,18 @@
 
 ### 주요 역할
 
+* 우편번호 기반 도서산간 지역 테이블 구축
+* 어드민 개발
+	* 도서산간 지역 조회 기능
+* 배송 정책에 일치하는 경우, 배송비 선결제가 가능
+* 고객 환불시 도서산간 추가 배송비 계산 로직 수정
+
+## 평균 배송소요일 계산 및 적재
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI5OTg5Njk0LC0xNDE3ODc1MzI5LC0xMD
-UyNDQ1NTg0LDE1OTg5MDUzNDEsLTEzMjk3NjIyMzMsLTg3MjA2
-MjA2OCw2MjYyMjE4MDAsMTYzNTE3MDIsLTU1MzY3MDM4Nl19
+eyJoaXN0b3J5IjpbLTEwNDM1MTE1MTAsNjI5OTg5Njk0LC0xND
+E3ODc1MzI5LC0xMDUyNDQ1NTg0LDE1OTg5MDUzNDEsLTEzMjk3
+NjIyMzMsLTg3MjA2MjA2OCw2MjYyMjE4MDAsMTYzNTE3MDIsLT
+U1MzY3MDM4Nl19
 -->
