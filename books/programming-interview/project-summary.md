@@ -13,11 +13,11 @@
 ```
 주문 시점 -> 배송지 입력 -> 주문 완료
 주문 시점 -> 배송지 미입력(수령자 정보 입력) -> 주문 완료 
--> 수령자 알림 및 
+-> 수령자 알림 및 배송지 입력 -> 배송 시작 
 ```
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI2MjIxODAwLDE2MzUxNzAyLC01NTM2Nz
-AzODZdfQ==
+eyJoaXN0b3J5IjpbLTg3MjA2MjA2OCw2MjYyMjE4MDAsMTYzNT
+E3MDIsLTU1MzY3MDM4Nl19
 -->
