@@ -10,14 +10,13 @@
 
 신규 프로세스 및 API 개발
 
+```
+주문 시점 -> 배송지 입력,
 
-### 신규 프로세스
-
-주문 시점 ->
-
+```
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc1Mzg1OTA0LDE2MzUxNzAyLC01NTM2Nz
-AzODZdfQ==
+eyJoaXN0b3J5IjpbLTM2NTczNDkwMiwxNjM1MTcwMiwtNTUzNj
+cwMzg2XX0=
 -->
