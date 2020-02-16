@@ -19,10 +19,12 @@
 
 ## 도서산간 배송시스템 구축
 
-일반적으로 도서산간 지역에 배송시 추가 배송비가 발생한다. 추가 발생 배송비의 경우 고객이 후불로 지불했는데 선지불이 가능하도록 구조를 고치고 도서산간 지역을 관리하는 시스템을 구축했다. 
+일반적으로 도서산간 지역에 배송시 추가 배송비가 발생한다. 추가 발생 배송비를 고객이 후불로 지불했는데 선결제가 가능하도록 구조를 고치고 도서산간 지역을 관리하는 시스템을 구축했다. 
+
+### 주요 역할
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczODA5ODY4MSwtMTQxNzg3NTMyOSwtMT
-A1MjQ0NTU4NCwxNTk4OTA1MzQxLC0xMzI5NzYyMjMzLC04NzIw
-NjIwNjgsNjI2MjIxODAwLDE2MzUxNzAyLC01NTM2NzAzODZdfQ
-==
+eyJoaXN0b3J5IjpbNjI5OTg5Njk0LC0xNDE3ODc1MzI5LC0xMD
+UyNDQ1NTg0LDE1OTg5MDUzNDEsLTEzMjk3NjIyMzMsLTg3MjA2
+MjA2OCw2MjYyMjE4MDAsMTYzNTE3MDIsLTU1MzY3MDM4Nl19
 -->
