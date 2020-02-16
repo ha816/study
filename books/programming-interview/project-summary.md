@@ -19,11 +19,10 @@
 
 ## 도서산간 배송시스템 구축
 
-도서 산간 지역에 배송을 위해선 추가 배송비가 발생한다. 추가 배송비를 관리 배송시스템 구축**
- 
+도서 산간 지역에 배송을 위해선 추가 배송비가 발생한다. 추가 발생 배송비의 경우 후불 또는 . 도서 산간 배송지를 관리하는 시스템이 필요하여  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTgwNjIxNzMsLTE0MTc4NzUzMjksLT
-EwNTI0NDU1ODQsMTU5ODkwNTM0MSwtMTMyOTc2MjIzMywtODcy
-MDYyMDY4LDYyNjIyMTgwMCwxNjM1MTcwMiwtNTUzNjcwMzg2XX
-0=
+eyJoaXN0b3J5IjpbMTU3NDUxMzk2NiwtMTQxNzg3NTMyOSwtMT
+A1MjQ0NTU4NCwxNTk4OTA1MzQxLC0xMzI5NzYyMjMzLC04NzIw
+NjIwNjgsNjI2MjIxODAwLDE2MzUxNzAyLC01NTM2NzAzODZdfQ
+==
 -->
