@@ -255,8 +255,8 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 # Architecture
 
 >**MSA(Micro Service Architecture)?**
+>마이크로 서비스는 **독립적이고, 자기 완비적(self-contained)이며 느슨하게 결합된 비즈니스 기능을 모아 전체 시스템을 만드는 아키텍처 스타일**이다. 
 
-_"the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery."_
 
 > **Docker는?**
 >Linux컨테이너를 만들고 사용할 수 있도록 하는 컨테이너화 기술이다. 도커는  **컨테이너 기반의 오픈소스 가상화 플랫폼**입니다. 다양한 프로그램, 실행환경을 컨테이너로 추상화하고 동일한 인터페이스를 제공하여 프로그램의 배포 및 관리를 단순하게 해줍니다. 백엔드 프로그램, 데이터베이스 서버, 메시지 큐등 어떤 프로그램도 컨테이너로 추상화할 수 있고 조립PC, AWS, Azure, Google cloud등 어디에서든 실행할 수 있습니다. 컨테이너는 격리된 공간에서 프로세스가 동작하는 기술입니다. 가상화 기술의 하나지만 기존방식과는 차이가 있다. 기존의 가상화 방식은 주로  **OS를 가상화**하였습니다. 추가적인 OS를 설치하여 가상화하는 방법은 어쨋든 성능문제가 있었고 이를 개선하기 위해  **프로세스를 격리**  하는 방식이 등장합니다.
@@ -277,11 +277,11 @@ _"the microservice architectural style is an approach to developing a single app
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY2MDU3Mjk0LC02OTU0ODIxMzMsLTE1Nz
-UzMzMwMzQsMzA4NTQyODQ4LDgyNTQyMzgxNywtNDEzMDkwMDky
-LC0xODc3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5Mz
-QyMjY2NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMy
-MTEsLTk2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMz
-kwMjI3OTAzLC0xNzU2ODA3NTYyLDcyNzA5MjA1NCwyMDk1Mjk2
-NTZdfQ==
+eyJoaXN0b3J5IjpbLTIyMzU2NTY1OCw0NjYwNTcyOTQsLTY5NT
+Q4MjEzMywtMTU3NTMzMzAzNCwzMDg1NDI4NDgsODI1NDIzODE3
+LC00MTMwOTAwOTIsLTE4Nzc1Mjk3OTYsMTkxNDc5MDEwNiwxMD
+g0NjA3NTYxLDkzNDIyNjY2OSwxNzAxMDkyNzA1LDE1OTQyMjc3
+MTEsLTYzMjkyMzIxMSwtOTY3NDE2MjE2LDE4MjY4NzI0NDksNz
+Q2MzAyMjgxLC0zOTAyMjc5MDMsLTE3NTY4MDc1NjIsNzI3MDky
+MDU0XX0=
 -->
