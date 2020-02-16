@@ -31,9 +31,7 @@
 
 ## 평균 배송소요일 계산 및 적재
 
-<![endif]-->
-
-<![if !supportLists]>n <![endif]>상품별 배송도착 소요일의 평균을  고객에게 제공.
+상품별 배송도착 소요일의 평균을  고객에게 제공.
 
 <![if !supportLists]>n <![endif]>상품 판매자에게 더 빠른 배송 서비스를 제공하도록 유도.
 
@@ -63,8 +61,8 @@
 
 <![if !supportLists]>- <![endif]>별도의 CouchBase계산된 평균배송소요일 추가 적재.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTk0NDU1MTcsNjI5OTg5Njk0LC0xND
-E3ODc1MzI5LC0xMDUyNDQ1NTg0LDE1OTg5MDUzNDEsLTEzMjk3
-NjIyMzMsLTg3MjA2MjA2OCw2MjYyMjE4MDAsMTYzNTE3MDIsLT
-U1MzY3MDM4Nl19
+eyJoaXN0b3J5IjpbLTU3OTA4MDIyOCwtMTIxOTQ0NTUxNyw2Mj
+k5ODk2OTQsLTE0MTc4NzUzMjksLTEwNTI0NDU1ODQsMTU5ODkw
+NTM0MSwtMTMyOTc2MjIzMywtODcyMDYyMDY4LDYyNjIyMTgwMC
+wxNjM1MTcwMiwtNTUzNjcwMzg2XX0=
 -->
