@@ -39,12 +39,19 @@
 	* 성능 향상을 위해 알고리즘 개선, Partition을 이용한 멀티쓰레드, 벌크 처리 등
 * 주문 시점에 노출되던 평균 배송소요일을 저장하기 위한 DB 테이블 구축 및 Rest API 제공
 * CouchBase 적재
-	* 딜 페이지에 노출시 RDB 데이터 제공시 DB 붛
+	* 딜 페이지에 노출시 RDB 데이터 제공시 DB 부하가 발생할 소지가 있어 Couchbase에 평균 배송소요일을 적재
+
+
+# 연구 논문
+
+## 다형질  데이터를  이용한  영화  추천  시스템
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMzk0MjI3LC0xMjE5NDQ1NTE3LDYyOT
-k4OTY5NCwtMTQxNzg3NTMyOSwtMTA1MjQ0NTU4NCwxNTk4OTA1
-MzQxLC0xMzI5NzYyMjMzLC04NzIwNjIwNjgsNjI2MjIxODAwLD
-E2MzUxNzAyLC01NTM2NzAzODZdfQ==
+eyJoaXN0b3J5IjpbLTQwOTUxOTQxNSwtMTIxOTQ0NTUxNyw2Mj
+k5ODk2OTQsLTE0MTc4NzUzMjksLTEwNTI0NDU1ODQsMTU5ODkw
+NTM0MSwtMTMyOTc2MjIzMywtODcyMDYyMDY4LDYyNjIyMTgwMC
+wxNjM1MTcwMiwtNTUzNjcwMzg2XX0=
 -->
