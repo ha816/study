@@ -3,13 +3,10 @@
 ## 배송상품 선물하기 서비스
 
 기존 티몬 배송 서비스에서 상품 수령자는 반드시 구매자였다. 본 프로젝트는  구매자가 아닌 고객도 상품을 수령 받을 수 있게 구조를 고치는 프로젝트였다. 이로써 티몬의 배송 상품을 회원 고객(구매자)뿐만 아니라 비회원 고객도 가능하게 되었다. 
-
-
 ```
 주문 시점(배송지 입력)-> 주문 완료 -> 배송시작
 주문 시점(배송지 미입력, 수령자정보 입력)-> 주문 완료 -> 수령자 알림 및 배송지 입력 -> 배송시작 
 ```
-
 
 ### 주요 역할
 
@@ -17,12 +14,13 @@
 	* gift 테이블( 수령자 번호, 수령자 별칭, 배송지 입력시기, 선물 메시지 등)
 * 신규 프로세스 및 API 개발
 	* 주문 완료 이후 배송지 입력 API 제공 
+	* 선물 주문 구매내역만 보여주는 선물함 API지원
 	* 수령자 알림 서비스(비즈톡, LMS)
 
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5ODkwNTM0MSwtMTMyOTc2MjIzMywtOD
-cyMDYyMDY4LDYyNjIyMTgwMCwxNjM1MTcwMiwtNTUzNjcwMzg2
-XX0=
+eyJoaXN0b3J5IjpbMTg2MTY0NTUyNiwxNTk4OTA1MzQxLC0xMz
+I5NzYyMjMzLC04NzIwNjIwNjgsNjI2MjIxODAwLDE2MzUxNzAy
+LC01NTM2NzAzODZdfQ==
 -->
