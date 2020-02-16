@@ -12,11 +12,12 @@
 
 ```
 주문 시점 -> 배송지 입력 -> 주문 완료
-주문 시점 -> 배송지 미입력 -> 주문 완료 -> (신규)
+주문 시점 -> 배송지 미입력(수령자 정보 입력) -> 주문 완료 
+-> 수령자 알림 및 
 ```
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNTc3NzEzOCwxNjM1MTcwMiwtNTUzNj
-cwMzg2XX0=
+eyJoaXN0b3J5IjpbNjI2MjIxODAwLDE2MzUxNzAyLC01NTM2Nz
+AzODZdfQ==
 -->
