@@ -10,7 +10,7 @@
 	* gift 테이블( 수령자 번호, 수령자 별칭, 배송지 입력시기, 선물 메시지 등)
 * 신규 프로세스 및 API 개발
 	* 주문 완료 이후 배송지 입력 API 제공 
-	* 수령자 알림 메세지 서비스
+	* 수령자 알림 서비스(비즈톡, LMS)
 
 ```
 주문 시점 -> 배송지 입력 -> 주문 완료
@@ -20,6 +20,6 @@
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NTA1MDAyNywtODcyMDYyMDY4LDYyNj
-IyMTgwMCwxNjM1MTcwMiwtNTUzNjcwMzg2XX0=
+eyJoaXN0b3J5IjpbLTEzMjk3NjIyMzMsLTg3MjA2MjA2OCw2Mj
+YyMjE4MDAsMTYzNTE3MDIsLTU1MzY3MDM4Nl19
 -->
