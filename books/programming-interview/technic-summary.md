@@ -259,7 +259,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 
 > **Docker는?**
-> 도커는 **컨테이너 기반의 오픈소스 가상화 플랫폼**이다. 가벼운 컨테이너를 만들고, 탑재하고 실행할 수 있는 플랫폼이다. 컨테이너는 프로그램
+> 도커는 **컨테이너 기반의 오픈소스 가상화 플랫폼**이다. 가벼운 컨테이너를 만들고, 탑재하고 실행할 수 있는 플랫폼이다. 컨테이너는 도커 이미지의 구현체로 
 기존의 가상화 방식은 주로  **OS를 가상화** 했는데 OS이기 때문에 성능이 느렸고 도커는 프로세스를 가상화하기 때문에 빠르게 동작한다. 
 
 # TOOL
@@ -274,11 +274,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyOTk3NjAwNiwtMjIzNTY1NjU4LDQ2Nj
-A1NzI5NCwtNjk1NDgyMTMzLC0xNTc1MzMzMDM0LDMwODU0Mjg0
-OCw4MjU0MjM4MTcsLTQxMzA5MDA5MiwtMTg3NzUyOTc5NiwxOT
-E0NzkwMTA2LDEwODQ2MDc1NjEsOTM0MjI2NjY5LDE3MDEwOTI3
-MDUsMTU5NDIyNzcxMSwtNjMyOTIzMjExLC05Njc0MTYyMTYsMT
-gyNjg3MjQ0OSw3NDYzMDIyODEsLTM5MDIyNzkwMywtMTc1Njgw
-NzU2Ml19
+eyJoaXN0b3J5IjpbLTE2NzY5MDUwNDgsLTIyMzU2NTY1OCw0Nj
+YwNTcyOTQsLTY5NTQ4MjEzMywtMTU3NTMzMzAzNCwzMDg1NDI4
+NDgsODI1NDIzODE3LC00MTMwOTAwOTIsLTE4Nzc1Mjk3OTYsMT
+kxNDc5MDEwNiwxMDg0NjA3NTYxLDkzNDIyNjY2OSwxNzAxMDky
+NzA1LDE1OTQyMjc3MTEsLTYzMjkyMzIxMSwtOTY3NDE2MjE2LD
+E4MjY4NzI0NDksNzQ2MzAyMjgxLC0zOTAyMjc5MDMsLTE3NTY4
+MDc1NjJdfQ==
 -->
