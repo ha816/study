@@ -201,7 +201,7 @@
 >Server Push: 필요한 리소스를 클라이언트 요청 없이 서버에서 전송.
 
 >**REST란?**
->REpresentional State Transfer의 약자로 시스템간 API를 만드는데 활용하는 아키텍처 스타일의 일종이다. REST에서 가장 중요한 것은 리소스로, 리소스는 클라이언트에 공개할 가공된 정보를 말한다. 이런 리소스에 CRUD 조작을 위한 수단이 바로 REST API가 된다. 
+>REpresentional State Transfer의 약자로 **시스템간 API를 만드는데 활용하는 아키텍처 스타일의 일종이다.** REST에서 가장 중요한 것은 리소스로, 리소스는 클라이언트에 공개할 가공된 정보를 말한다. 이런 리소스에 CRUD 조작을 위한 수단이 바로 REST API가 된다. 
 
 >**URI(Uniform Resource Identifier)과 URL(Uniform Resource Locator)의 차이는?**
 >URI는 클라이언트에 공개하는 리소스의 고유하게 식별자다.  따라서 URI를 안다면 어디서든 같은 리소스로 접근이 가능하다. 한 URI는 리소스 하나 뿐만 아니라 다수의 리소스로도 정의가 가능하다. 예를 들어 URI가 `user/1234`라면 ID가 1234인 사용자의 리소스 정보. `/users`라면 다수는 모든 사용자의 리소스 정보를 말한다.
@@ -271,11 +271,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjkyMjAxMDQsNTc5NjIxMzQ4LC0xNj
-c2OTA1MDQ4LC0yMjM1NjU2NTgsNDY2MDU3Mjk0LC02OTU0ODIx
-MzMsLTE1NzUzMzMwMzQsMzA4NTQyODQ4LDgyNTQyMzgxNywtND
-EzMDkwMDkyLC0xODc3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYw
-NzU2MSw5MzQyMjY2NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC
-02MzI5MjMyMTEsLTk2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMw
-MjI4MV19
+eyJoaXN0b3J5IjpbMTU5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nz
+k2MjEzNDgsLTE2NzY5MDUwNDgsLTIyMzU2NTY1OCw0NjYwNTcy
+OTQsLTY5NTQ4MjEzMywtMTU3NTMzMzAzNCwzMDg1NDI4NDgsOD
+I1NDIzODE3LC00MTMwOTAwOTIsLTE4Nzc1Mjk3OTYsMTkxNDc5
+MDEwNiwxMDg0NjA3NTYxLDkzNDIyNjY2OSwxNzAxMDkyNzA1LD
+E1OTQyMjc3MTEsLTYzMjkyMzIxMSwtOTY3NDE2MjE2LDE4MjY4
+NzI0NDldfQ==
 -->
