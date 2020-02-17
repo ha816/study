@@ -265,52 +265,8 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > MAVEN?
 > **프로젝트 전체를 관리하는 빌드 도구**로, 자바 프로젝트를 컴파일, 테스트, 배포하는데 사용된다. 애플리케이션이 구동할때 필요한 자원들을 가져와 여러 빌드 작업을 수행한다. 
-> 모든 자바 패키지 구조는 src/main/java 디렉터리 하위에 있다. 테스트 패키지 구조는 test/main/java 디렉토리에 있다. 마지막으로 resources 에는 일반적으로 설정 파일들이 들어간다.
-
-## 메이븐 빌드
-
-메이븐 빌드의 정의는 pom.xml에 설정되는데, 이 파일은 프로젝트의 루트 디렉터리에 있다. 메이븐은 이 프로젝트를 빌드하는데 필요한 정보를 pom.xml을 보고 얻는다.
-```
-<project>
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>come.wiley</groupdId>
-	<artifactId>come.wiley</artifactId>
-	<version>come.wiley</version>
-	<packaging>jar</packaging>
-
-	<dependencies>
-		<dependency>
-			<groupId>commons-io<groupId>
-			<artifactId>commons-io<artifactId>
-			<version>1.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework<groupId>
-			<artifactId>spring-core<artifactId>
-			<version>3.0.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>jnit<groupId>
-			<artifactId>jnit<artifactId>
-			<version>4.8.2</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apached.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-</project>
-```
-POM은 크게 **프로젝트 정의, 빌드용 의존성,  빌드 전용 플러그인** 세가지 영역으로 구분할 수 있다. 
+> 모든 자바 패키지 구조는 src/main/java 디렉터리 하위에 있다. 테스트 패키지 구조는 test/main/java 디렉토리에 있다. 마지막으로 resources 에는 일반적으로 설정 파일들이 들어간다. 
+> 메이븐 빌드의 정의는 pom.xml에 설정된다. POM은 크게 **프로젝트 정의, 빌드용 의존성,  빌드 전용 플러그인** 세가지 영역으로 구분할 수 있다. 
 
 프로젝트 정의는 프로젝트 태그 바로 밑에 정의하는 modelVersion, groupId, version, packaging 등이 된다. 
 groupId는 대게 회사 이름으로 패키지 명명 규칙을 따라간다. artifactId는 애플리케이션 이름을 말한다. 이를 코디네이트라고 하거나 임시 참조라고 한다. 
@@ -357,7 +313,7 @@ deploy
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MzU1Mzc3MywtMTY3NjkwNTA0OCwtMj
+eyJoaXN0b3J5IjpbLTk0NjMzOTAxMSwtMTY3NjkwNTA0OCwtMj
 IzNTY1NjU4LDQ2NjA1NzI5NCwtNjk1NDgyMTMzLC0xNTc1MzMz
 MDM0LDMwODU0Mjg0OCw4MjU0MjM4MTcsLTQxMzA5MDA5MiwtMT
 g3NzUyOTc5NiwxOTE0NzkwMTA2LDEwODQ2MDc1NjEsOTM0MjI2
