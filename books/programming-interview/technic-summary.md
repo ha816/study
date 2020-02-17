@@ -91,8 +91,6 @@
 >Heap은 Complete Binary Tree(완전 이진 트리)이어야 한다. 완전 이진 트리란 최하단과 바로 그 위의 레벨 노드들을 제외한 모든 노드들이 온전히 2개의 자식 노드를 갖는 트리를 말한다.
 >minHeap일 경우 부모 노드가 자식 노드보다 항상 작아야 한다. 반대로 maxHeap일 경우는 부모 노드가 자식 노드보다 항상 커야 한다. 
 
-
-
 # DesignPattern
 
 >**Singleton, Decorator, Composite, Strategy, Builder, Template method, Fly-weight, Proxy**
@@ -269,11 +267,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA4MjkwMDk1LDE1OTM2Mjg4NTYsLTE1Nj
-kyMjAxMDQsNTc5NjIxMzQ4LC0xNjc2OTA1MDQ4LC0yMjM1NjU2
-NTgsNDY2MDU3Mjk0LC02OTU0ODIxMzMsLTE1NzUzMzMwMzQsMz
-A4NTQyODQ4LDgyNTQyMzgxNywtNDEzMDkwMDkyLC0xODc3NTI5
-Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5MzQyMjY2NjksMT
-cwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMyMTEsLTk2NzQx
-NjIxNl19
+eyJoaXN0b3J5IjpbMjAyODQyMjYxMSwzMDgyOTAwOTUsMTU5Mz
+YyODg1NiwtMTU2OTIyMDEwNCw1Nzk2MjEzNDgsLTE2NzY5MDUw
+NDgsLTIyMzU2NTY1OCw0NjYwNTcyOTQsLTY5NTQ4MjEzMywtMT
+U3NTMzMzAzNCwzMDg1NDI4NDgsODI1NDIzODE3LC00MTMwOTAw
+OTIsLTE4Nzc1Mjk3OTYsMTkxNDc5MDEwNiwxMDg0NjA3NTYxLD
+kzNDIyNjY2OSwxNzAxMDkyNzA1LDE1OTQyMjc3MTEsLTYzMjky
+MzIxMV19
 -->
