@@ -264,27 +264,9 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 # TOOL
 
 > MAVEN?
+> **프로젝트 전체를 관리하는 빌드 도구**로, 자바 프로젝트를 컴파일, 테스트, 배포하는데 사용된다. 애플리케이션이 구동할때 필요한 자원들을 가져와 여러 빌드 작업을 수행한다. 
 
 
-# Maven(메이븐)
-
-사용하기 좋은 애플리케이션을 만드는 데는 자바 소스 코드를 잘 작성하는 것 이외에도 많은 라이브러리, 플러그인이 필요하다. 한 애플리케이션을 동작하는데 필요한 모든 자원 관리하고 빌드하는 도구의 필요성은 꾸준히 있었다. 
-
->Maven이란?
-
-**한 프로젝트 전체를 관리하는 빌드 도구**로, 자바 프로젝트를 컴파일, 테스트, 배포하는데 사용된다. 애플리케이션이 구동할때 필요한 자원들을 가져와 여러 빌드 작업을 수행한다. 
-
->Maven 의존성?
-
-복잡합 애플리케이션은 JUnit, 아파치 commons, Guava등 여러 라이브러리에 의존성을 가지고 있다. 메이븐은 의존성을 정의할 수 있고, 인터넷 상의 www.maven.org 같은 저장소나 Artifactory, Nexus 등을 이용해서 회사 내부에 설치한 저장소에서 필요한 JAR 파일을 직접 다운로드할 수 있다.
-
->Maven Plugin?
-
-메이븐의 플러그인 시스템은 빌드시 특별한 연산 추가를 가능하게 한다. 의존성 설정과 비슷하게 이 플러그인들은 원격으로 제공되며, 메이븐은 빌드할 때 이들을 찾을 수 있다. 또한 플러그인이 제공하는 연산이 무엇이든 수행할 수 있다. 
-
-## 메이븐 빌드의 기본 디렉터리 구조
-
-![enter image description here](https://p7.hiclipart.com/preview/980/890/407/apache-maven-convention-over-configuration-apache-ant-directory-structure-coc.jpg)
 
 모든 제품 패키지 구조는 src/main/java 디렉터리 하위에 있다. 이 구조의 모든 클래스는 실행할때 클래스 패스 상에 있을 것이다. 
 
@@ -382,11 +364,11 @@ deploy
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMTgzNjQ3NSwtMTY3NjkwNTA0OCwtMj
-IzNTY1NjU4LDQ2NjA1NzI5NCwtNjk1NDgyMTMzLC0xNTc1MzMz
-MDM0LDMwODU0Mjg0OCw4MjU0MjM4MTcsLTQxMzA5MDA5MiwtMT
-g3NzUyOTc5NiwxOTE0NzkwMTA2LDEwODQ2MDc1NjEsOTM0MjI2
-NjY5LDE3MDEwOTI3MDUsMTU5NDIyNzcxMSwtNjMyOTIzMjExLC
-05Njc0MTYyMTYsMTgyNjg3MjQ0OSw3NDYzMDIyODEsLTM5MDIy
-NzkwM119
+eyJoaXN0b3J5IjpbLTEzNzA1NzUwMDUsLTE2NzY5MDUwNDgsLT
+IyMzU2NTY1OCw0NjYwNTcyOTQsLTY5NTQ4MjEzMywtMTU3NTMz
+MzAzNCwzMDg1NDI4NDgsODI1NDIzODE3LC00MTMwOTAwOTIsLT
+E4Nzc1Mjk3OTYsMTkxNDc5MDEwNiwxMDg0NjA3NTYxLDkzNDIy
+NjY2OSwxNzAxMDkyNzA1LDE1OTQyMjc3MTEsLTYzMjkyMzIxMS
+wtOTY3NDE2MjE2LDE4MjY4NzI0NDksNzQ2MzAyMjgxLC0zOTAy
+Mjc5MDNdfQ==
 -->
