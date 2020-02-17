@@ -148,14 +148,12 @@
 >request는 HTTP 요청이 들어올때마다 새로운 빈이 생성된다.
 >session은 HTTP 세션이 만들어질때 마다 새로운 빈이 생성된다.let은 무엇이고 하는 역할은? 
 
-
-
 >Filter와 Interupt의 차이
 >
 
 # Database
 
->**Indexing은? 그리고 Indexing 방식은?**
+>**DB Indexing 방식은?**
 >DB에서 원하는 값을 찾는데 모든 데이터를 검색하려면 오래걸린다. 그래서 indexing을 한다. DBMS에서 인덱스는 검색을 위해 저장, 수정 기능을 희생한다. 
 >인덱싱 기법에는 B-Tree 인덱싱과 Hash 인덱싱이 있다. Hash 인덱싱은 해시 값으로 변경해서 저장하기 때문에 값의 일부만 검색할때는 사용할 수 없다. 하지만 검색 속도는 매우 빠르다. 
 >B-Tree(Balanced-Tree)는 가장 범용적으로 사용되는 알고리즘이다. B-Tree는 Root, Branch, Leaf 노드로 구성된다. Leaf 노드는 실제 저장된 레코드를 가리킨다. 
@@ -271,11 +269,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nz
-k2MjEzNDgsLTE2NzY5MDUwNDgsLTIyMzU2NTY1OCw0NjYwNTcy
-OTQsLTY5NTQ4MjEzMywtMTU3NTMzMzAzNCwzMDg1NDI4NDgsOD
-I1NDIzODE3LC00MTMwOTAwOTIsLTE4Nzc1Mjk3OTYsMTkxNDc5
-MDEwNiwxMDg0NjA3NTYxLDkzNDIyNjY2OSwxNzAxMDkyNzA1LD
-E1OTQyMjc3MTEsLTYzMjkyMzIxMSwtOTY3NDE2MjE2LDE4MjY4
-NzI0NDldfQ==
+eyJoaXN0b3J5IjpbLTgwOTc0MzM3NSwxNTkzNjI4ODU2LC0xNT
+Y5MjIwMTA0LDU3OTYyMTM0OCwtMTY3NjkwNTA0OCwtMjIzNTY1
+NjU4LDQ2NjA1NzI5NCwtNjk1NDgyMTMzLC0xNTc1MzMzMDM0LD
+MwODU0Mjg0OCw4MjU0MjM4MTcsLTQxMzA5MDA5MiwtMTg3NzUy
+OTc5NiwxOTE0NzkwMTA2LDEwODQ2MDc1NjEsOTM0MjI2NjY5LD
+E3MDEwOTI3MDUsMTU5NDIyNzcxMSwtNjMyOTIzMjExLC05Njc0
+MTYyMTZdfQ==
 -->
