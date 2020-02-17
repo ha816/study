@@ -49,7 +49,7 @@
 
 >**String은 어느 메모리 공간에 올라가는가? 인터닝(interning)이란?** 
 >String 객체는 대표적인 불변객체로, new 키워드로 생성하지 않는한 String Constant Pool에 올라간다. 
->String Interning이란 불변의 독립적인 문자열을 저장하는 방법이다. String은 intern메서드를 가지는데, 상수 풀에 해당 문자열이 있으면 풀에 문자열을 가져오고 아니라면, 이 문자열은 풀에 추가되고 반환된다. 
+>String은 intern메서드를 가지는데, 상수 풀에 해당 문자열이 있으면 풀에 문자열을 가져오고 아니라면, 이 문자열은 풀에 추가되고 반환된다. 
 
 > **StringBuilder와 StringBuffer의 차이는?**
 > StringBuilder는 Thread Safe하지 않지만 StringBuffer는 그러하다. 따라서 StringBuilder가 더 성능상 빠르다. 
@@ -267,7 +267,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyODQyMjYxMSwzMDgyOTAwOTUsMTU5Mz
+eyJoaXN0b3J5IjpbMTM4MjU3NTExMCwzMDgyOTAwOTUsMTU5Mz
 YyODg1NiwtMTU2OTIyMDEwNCw1Nzk2MjEzNDgsLTE2NzY5MDUw
 NDgsLTIyMzU2NTY1OCw0NjYwNTcyOTQsLTY5NTQ4MjEzMywtMT
 U3NTMzMzAzNCwzMDg1NDI4NDgsODI1NDIzODE3LC00MTMwOTAw
