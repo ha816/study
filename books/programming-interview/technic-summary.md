@@ -269,30 +269,6 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > 메이븐 빌드의 정의는 pom.xml에 설정된다. POM은 크게 **프로젝트 정의, 빌드용 의존성,  빌드 전용 플러그인** 세가지 영역으로 구분할 수 있다. 
 > 애플리케이션 실행을 위한 절차를 골(Goal)이라고 한다. 골에는 compile, test, install 등이 있다.  각 골은 이전 상태에 의존하며 어떤 이유에서든 특정 골을 통한 작업에 문제가 발생하면 전체 빌드가 실패할수 밖에 없다. 
 
-clean
-: target 디렉터리를 지워서 이전에 빌드된 파일들을 없앤다. 이는 mvn clean 같은 빌드 상태를 명시해서 초기화하거나 항상 실행되도록 POM을 정의하지 않으면 다음 상태가 되기 전에는 실행하지 않는다.
-  
-validate
-: pom.xml 파일이 메이븐의 빌드 파일용 XML을 따르는지 확인한다. pom.xml 파일이 올바른 검증에 실패한다면 빌드는 메이븐 애플리케이션 초기화를 하기 전에 실패한다.
-
-compile
-: 필요한 의존성 전체를 가져온 후, 코드를 컴파일하고, src/main/java의 모든 클래스 파일을 target/classes 디렉터리에 빌드한다. 
-
-test
-: src/main/test 디렉터리에 있는 테스트용 클래스들을 컴파일하고 모든 단위테스트 또는 통합 테스트용 코드를 실행한다. 실패하는 테스트가 있으면 기본적으로 전체 빌드가 실패한다.
-
-package
-: test 상태가 성공적으로 실행된 다음에 실행되며 WAR나 JAR파일 같은 결과물을 생성한다. 파일은 target 디렉터리 루트에 저장되는데, 독립적으로 실행가능한 파일이 아니다. 왜냐하면 기본적으로 모든 의존 라이브러리를 내장하지 않고 있고 의존성은 여전히 클래스 패스에 포함되어 있어야 하기 때문이다. 참고로 pom.xml의 packaging 태그로 결과물 package 종류를 정할 수 있다. 
-```
-<packaging>war</packaging>
-``` 
-install
-: 빌드된 결과물들을 내부 Maven 저장소로 보낸다. 저장소는 대게 `HOME/.m2/repository` 디렉터리에 위치한다. 내부적으로 실행되는 메이븐 빌드가 하나 이상 있다면 새로운 결과물은 해당 빌드를 이용할 수 있다. 
-
-deploy
-: 메이븐 빌드의 마지막 단계이다. 대게 마무리된 결과물을 배포하는 장소를 정의하거나 배포 장소에 배포를 한다. 배포 장소는 일반적으로 Artifactory나 Nexus 같은 결과물 저장소다. 이러한 저장소들은 빌드를 위한 의존 결과물을 다운로드할 수 있는 전형적인 공간으로 때때로 임시 공간의 역할도 한다.
-
-
 > GIT 형상관리 툴?
 
 
@@ -301,11 +277,11 @@ deploy
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc5NjIxMzQ4LC0xNjc2OTA1MDQ4LC0yMj
-M1NjU2NTgsNDY2MDU3Mjk0LC02OTU0ODIxMzMsLTE1NzUzMzMw
-MzQsMzA4NTQyODQ4LDgyNTQyMzgxNywtNDEzMDkwMDkyLC0xOD
-c3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5MzQyMjY2
-NjksMTcwMTA5MjcwNSwxNTk0MjI3NzExLC02MzI5MjMyMTEsLT
-k2NzQxNjIxNiwxODI2ODcyNDQ5LDc0NjMwMjI4MSwtMzkwMjI3
-OTAzXX0=
+eyJoaXN0b3J5IjpbLTk3MDExODk0Nyw1Nzk2MjEzNDgsLTE2Nz
+Y5MDUwNDgsLTIyMzU2NTY1OCw0NjYwNTcyOTQsLTY5NTQ4MjEz
+MywtMTU3NTMzMzAzNCwzMDg1NDI4NDgsODI1NDIzODE3LC00MT
+MwOTAwOTIsLTE4Nzc1Mjk3OTYsMTkxNDc5MDEwNiwxMDg0NjA3
+NTYxLDkzNDIyNjY2OSwxNzAxMDkyNzA1LDE1OTQyMjc3MTEsLT
+YzMjkyMzIxMSwtOTY3NDE2MjE2LDE4MjY4NzI0NDksNzQ2MzAy
+MjgxXX0=
 -->
