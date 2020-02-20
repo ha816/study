@@ -402,7 +402,9 @@ protected final Object clone() throws CloneNotSupportedException {
 }
 ```
 
-마지막으로 
+마지막으로 Cloneable을 구현한 스레드 안전 클래스를 작성해야 할때는 clone()을 적절히 동기화해줘야 한다. Object의 clone은 동기화를 신경 쓰지 않았다. 그러니 **super.clone()을 호출 외에 다른 할일이 없어도 clone을 재정의하고 동기화해줘야 한다.** 
+
+
  
 
 
@@ -413,11 +415,11 @@ protected final Object clone() throws CloneNotSupportedException {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjE0ODE3OTcsMzUzMDI0ODQwLDExMz
-k2ODYxMDcsLTU3NTAwNjc5NCwtMjczNDQyNTQ4LC0xNjY3MzI2
-MDExLC00MjgzNjczNDgsMTc5MDkxMDYwMiwxNDMzNDMwNzUyLC
-03NjcwMzk2NTEsMTQ3Nzg1NzIwLDg5Njk5NjUxMyw2NTE1ODg4
-MzcsLTkwMjI1NjUyMCw5NzUzNDkzMCwtMTYyNzk3NTMxLDE3ND
-c2NDI2OTMsLTIxODY0NTk0OSwxMTE5MDY5MjU0LDE4MzIxMTcx
-OTBdfQ==
+eyJoaXN0b3J5IjpbMTkxMTMxNjUxNCwzNTMwMjQ4NDAsMTEzOT
+Y4NjEwNywtNTc1MDA2Nzk0LC0yNzM0NDI1NDgsLTE2NjczMjYw
+MTEsLTQyODM2NzM0OCwxNzkwOTEwNjAyLDE0MzM0MzA3NTIsLT
+c2NzAzOTY1MSwxNDc3ODU3MjAsODk2OTk2NTEzLDY1MTU4ODgz
+NywtOTAyMjU2NTIwLDk3NTM0OTMwLC0xNjI3OTc1MzEsMTc0Nz
+Y0MjY5MywtMjE4NjQ1OTQ5LDExMTkwNjkyNTQsMTgzMjExNzE5
+MF19
 -->
