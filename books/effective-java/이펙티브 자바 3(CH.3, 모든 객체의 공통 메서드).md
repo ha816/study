@@ -415,7 +415,11 @@ public Static Yum newInstance(Yum yum) {}; // 복사팩터리
 
 게다가  복사생성자와 복사팩터리는 해당 클래스가 구현한 인터페이스 타입의 인스턴스를 인수로 받을 수 있다. 관례상 모든 범용 컬렉션 구현체는 Collection이나 Map을 받는 생성자를 제공한다. 
 
-인터 페이스 기반 복사 생성자와 복사팩터리의 더 정확한 이름은 변환 생성자(conversion constructor)와 변환 팩터리(conversion factory)이다. 이것들을 이용하면 사용자는 원본 구현 타입에 얾매이지 않고 복제본의 타입을 직접 선택할 수 있다. 예를 들면, new 
+인터 페이스 기반 복사 생성자와 복사팩터리의 더 정확한 이름은 변환 생성자(conversion constructor)와 변환 팩터리(conversion factory)이다. 이것들을 이용하면 사용자는 원본 구현 타입에 얾매이지 않고 복제본의 타입을 직접 선택할 수 있다. 
+```
+Set s =  new HashSet();
+new TreeSet<>(s); //HashSet을 간단히 TreeSet타입으로 복제하면서 변환.
+```
 
 
 
@@ -431,11 +435,11 @@ public Static Yum newInstance(Yum yum) {}; // 복사팩터리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NDc0NTYyMCwtNzI4NjY5Nzk0LDM1Mz
-AyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0
-OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMT
-QzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1
-MTMsNjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAsLTE2Mj
-c5NzUzMSwxNzQ3NjQyNjkzLC0yMTg2NDU5NDksMTExOTA2OTI1
-NF19
+eyJoaXN0b3J5IjpbLTE0NDU2NzM1MDUsLTcyODY2OTc5NCwzNT
+MwMjQ4NDAsMTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNzM0NDI1
+NDgsLTE2NjczMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEwNjAyLD
+E0MzM0MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3MjAsODk2OTk2
+NTEzLDY1MTU4ODgzNywtOTAyMjU2NTIwLDk3NTM0OTMwLC0xNj
+I3OTc1MzEsMTc0NzY0MjY5MywtMjE4NjQ1OTQ5LDExMTkwNjky
+NTRdfQ==
 -->
