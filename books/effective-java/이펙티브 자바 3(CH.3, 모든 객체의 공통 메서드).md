@@ -342,12 +342,9 @@ public class Object {
 	// Object는 모든 클래스가 상속하기 한다.
 }
 ```
-실제 복제를 하는 clone메서드는 Object에 있는데 심지어 접근 제어자가 protected이다. 그래서 외부 객체에서는 다른 객체의 clone메서드를 호출할 수가 ㅇ
+실제 복제를 하는 clone메서드는 Object에 있는데 심지어 접근 제어자가 protected이다. 그래서 외부 객체에서는 다른 객체의 clone메서드를 호출할 수가 없다. 
 
-Cloneable을 구현하는 것만으로는 
-
-
-메서드 하나 없는 Cloneable 인터페이스는 무엇을 할까? 놀랍게도 Object의 protected 메서드인 clone의 동작 방식을 결정한다. Cloneable을 구현한 클래스의 인스턴스에서 Clone을 호출하면 그 객체의 필드들을 하나하나 복사한 객체를 반환하며, 그렇지 않은 클래스의 인스턴스에서 호출하면 CloneNotSupportedException을 던진다. 이는 인터페이스를 상당히 이례적으로 사용한 예이다. 따라하지는 말자. 인터페이스를 구현한다는 것은 일반적으로 해당 클래스가 그 인터페이스를 구현한다는 것을 선언하는 행위다. 그런데 Cloneable은 상위 클래스에 정의된 protected 메서드의 동작 방식을 변경한 것이다. 
+Object의 protected 메서드인 clone의 동작 방식을 결정한다. Cloneable을 구현한 클래스의 인스턴스에서 Clone을 호출하면 그 객체의 필드들을 하나하나 복사한 객체를 반환하며, 그렇지 않은 클래스의 인스턴스에서 호출하면 CloneNotSupportedException을 던진다. 이는 인터페이스를 상당히 이례적으로 사용한 예이다. 따라하지는 말자. 인터페이스를 구현한다는 것은 일반적으로 해당 클래스가 그 인터페이스를 구현한다는 것을 선언하는 행위다. 그런데 Cloneable은 상위 클래스에 정의된 protected 메서드의 동작 방식을 변경한 것이다. 
 
 명세에서 이야기하지는 않지만 실무에서 Cloneable을 구현한 클래스는 clone 메서드를 public으로 제공하며, 사용자는 당연히 복제가 제대로 이뤄지리라 기대한다. 이 기대를 만족 시키려면 그 클래스와 모든 상위 클래스는 복잡하고, 강제할 수 없고, 허술하게 기술된 프로토콜을 지켜야만 하는데 그 결과로 깨지기 쉽고, 위험하고, 모순적인 매커니즘이 탄생한다. 
 
@@ -388,7 +385,7 @@ clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM3MTE5NjUyLDY1MTU4ODgzNywtOTAyMj
+eyJoaXN0b3J5IjpbMjY3ODA2ODY3LDY1MTU4ODgzNywtOTAyMj
 U2NTIwLDk3NTM0OTMwLC0xNjI3OTc1MzEsMTc0NzY0MjY5Mywt
 MjE4NjQ1OTQ5LDExMTkwNjkyNTQsMTgzMjExNzE5MCwtMTE5Nj
 IwMzE2LDEyMDI2MDEzODAsNTY3MDk3ODIzLC05MDE5NzMwNTYs
