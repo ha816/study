@@ -387,7 +387,7 @@ public PhoneNumber clone()
 
 참조하는 필드가 배열이라면 배열의 clone()을 사용하라고 권장을 한다. 사실 배열은 clone()을 제대로 활용하는 유일한 예라고 한다. 참조하는 필드가 HashMap이라고 가정해보자. HashTable 내부는 버킷들의 배열이고, 각 버킷은 키-쌍을 담는 연결 리스트의 첫번째 엔트리를 참조한다. 
 
-private 클래스인 HashTable.Entry는 깊은복사(deepCopy)를 지원한다. HashTable의 
+private 클래스인 HashTable.Entry는 깊은복사(deepCopy)를 지원한다. HashTable의 clone()은 먼저 적절한 크기의 새로운 버킷 배열을 할당한 다음 원래 버킷 배열을 순회하며 각 버킷에 대해 깊은 복사를 수행한다.  
  
 
 
@@ -398,11 +398,11 @@ private 클래스인 HashTable.Entry는 깊은복사(deepCopy)를 지원한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODY2NTA2MDYsMTc5MDkxMDYwMiwxND
-MzNDMwNzUyLC03NjcwMzk2NTEsMTQ3Nzg1NzIwLDg5Njk5NjUx
-Myw2NTE1ODg4MzcsLTkwMjI1NjUyMCw5NzUzNDkzMCwtMTYyNz
-k3NTMxLDE3NDc2NDI2OTMsLTIxODY0NTk0OSwxMTE5MDY5MjU0
-LDE4MzIxMTcxOTAsLTExOTYyMDMxNiwxMjAyNjAxMzgwLDU2Nz
-A5NzgyMywtOTAxOTczMDU2LDE2NjY0MzY4ODksMTE5NTk2NDI0
-N119
+eyJoaXN0b3J5IjpbLTQyODM2NzM0OCwxNzkwOTEwNjAyLDE0Mz
+M0MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3MjAsODk2OTk2NTEz
+LDY1MTU4ODgzNywtOTAyMjU2NTIwLDk3NTM0OTMwLC0xNjI3OT
+c1MzEsMTc0NzY0MjY5MywtMjE4NjQ1OTQ5LDExMTkwNjkyNTQs
+MTgzMjExNzE5MCwtMTE5NjIwMzE2LDEyMDI2MDEzODAsNTY3MD
+k3ODIzLC05MDE5NzMwNTYsMTY2NjQzNjg4OSwxMTk1OTY0MjQ3
+XX0=
 -->
