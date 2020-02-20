@@ -383,7 +383,11 @@ public PhoneNumber clone()
 
 자 이제, 모든 필드가 기본 타입이거나 불변 객체가 아닌 가변 객체를 참조하는 경우가 있다고 생각해보자. 가변 객체를 참조하는 경우, 원본과 복사본이 모두 동일한 가변객체를 참고 하기 때문에, 원본이나 복제본 중 가변 객체 하나를 수정하면 모두에게 수정이 일어난다. 즉 논리적 오류가 발생하여 오류를 찾기도 힘들다. 
 
-다시 돌아와서 **clone()은 사실상 생성자와 같은 역할을 하지만 원본 객체에 아무런 영향을 미치지 않는 독립전인 객체를 반환하는것을 보장해야 한다.** 
+다시 돌아와서 **clone()은 사실상 생성자와 같은 역할을 하지만 원본 객체에 아무런 영향을 미치지 않는 독립전인 객체를 반환하는것을 보장해야 한다.**
+
+참조하는 필드가 배열이라면 배열의 clone()을 사용하라고 권장을 한다. 사실 배열은 clone()을 제대로 활용하는 유일한 예라고 한다.  
+참조하는 필드가 해시
+ 
 
 
 
@@ -393,11 +397,11 @@ public PhoneNumber clone()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk1NDc0OTUyLDE3OTA5MTA2MDIsMTQzMz
-QzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1MTMs
-NjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAsLTE2Mjc5Nz
-UzMSwxNzQ3NjQyNjkzLC0yMTg2NDU5NDksMTExOTA2OTI1NCwx
-ODMyMTE3MTkwLC0xMTk2MjAzMTYsMTIwMjYwMTM4MCw1NjcwOT
-c4MjMsLTkwMTk3MzA1NiwxNjY2NDM2ODg5LDExOTU5NjQyNDdd
-fQ==
+eyJoaXN0b3J5IjpbMTg3MTg0NDc2NSwxNzkwOTEwNjAyLDE0Mz
+M0MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3MjAsODk2OTk2NTEz
+LDY1MTU4ODgzNywtOTAyMjU2NTIwLDk3NTM0OTMwLC0xNjI3OT
+c1MzEsMTc0NzY0MjY5MywtMjE4NjQ1OTQ5LDExMTkwNjkyNTQs
+MTgzMjExNzE5MCwtMTE5NjIwMzE2LDEyMDI2MDEzODAsNTY3MD
+k3ODIzLC05MDE5NzMwNTYsMTY2NjQzNjg4OSwxMTk1OTY0MjQ3
+XX0=
 -->
