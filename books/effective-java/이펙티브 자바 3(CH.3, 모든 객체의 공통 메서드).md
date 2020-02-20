@@ -418,7 +418,11 @@ public Static Yum newInstance(Yum yum) {}; // 복사팩터리
 인터 페이스 기반 복사 생성자와 복사팩터리의 더 정확한 이름은 변환 생성자(conversion constructor)와 변환 팩터리(conversion factory)이다. 이것들을 이용하면 사용자는 원본 구현 타입에 얾매이지 않고 복제본의 타입을 직접 선택할 수 있다. 
 ```
 Set s =  new HashSet();
-new TreeSet<>(s); //HashSet을 간단히 TreeSet타입으로 복제하면서 변환.
+new TreeSet<>(s); //변환 생성자, HashSet을 간단히 TreeSet타입으로 복제하면서 변환.
+```
+
+```
+
 ```
 
 
@@ -435,11 +439,11 @@ new TreeSet<>(s); //HashSet을 간단히 TreeSet타입으로 복제하면서 변
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDU2NzM1MDUsLTcyODY2OTc5NCwzNT
-MwMjQ4NDAsMTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNzM0NDI1
-NDgsLTE2NjczMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEwNjAyLD
-E0MzM0MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3MjAsODk2OTk2
-NTEzLDY1MTU4ODgzNywtOTAyMjU2NTIwLDk3NTM0OTMwLC0xNj
-I3OTc1MzEsMTc0NzY0MjY5MywtMjE4NjQ1OTQ5LDExMTkwNjky
-NTRdfQ==
+eyJoaXN0b3J5IjpbNzI0NDU1MTkxLC03Mjg2Njk3OTQsMzUzMD
+I0ODQwLDExMzk2ODYxMDcsLTU3NTAwNjc5NCwtMjczNDQyNTQ4
+LC0xNjY3MzI2MDExLC00MjgzNjczNDgsMTc5MDkxMDYwMiwxND
+MzNDMwNzUyLC03NjcwMzk2NTEsMTQ3Nzg1NzIwLDg5Njk5NjUx
+Myw2NTE1ODg4MzcsLTkwMjI1NjUyMCw5NzUzNDkzMCwtMTYyNz
+k3NTMxLDE3NDc2NDI2OTMsLTIxODY0NTk0OSwxMTE5MDY5MjU0
+XX0=
 -->
