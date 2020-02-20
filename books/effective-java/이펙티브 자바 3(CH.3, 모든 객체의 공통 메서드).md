@@ -381,7 +381,7 @@ public PhoneNumber clone()
 ```
 이 메서드가 동작하게 하려면 PhoneNumber의 클래스 선언에 Cloneable을 구현하고 추가해야 한다. Object의 clone 메서드는 Object를 반환하지만 PhoneNumber의 clone 메서드는 PhoneNumber를 반환한다. 자바가 공변 반환 타이핑(covariant return typing)을 지원하니 이렇게 하는 것이 가능하고 권장하기도 한다. 달리 말해, 재정의한 메서드의 반환 타입은 상위 클래스의 메서드가 반환하는 타입의 하위 타입일 수 있다. 이 방식으로 클라이언트가 형변환을 하지 않아도 되게끔 해주자. 이를 위해서 super.clone에서 얻은 객체를 반환하기 전에 PhonbeNumber로 형변환 하였다.
 
-자 이제, 모든 필드가 기본 타입이거나 불변 객체가 아닌 가변 객체를 참조하는 경우가 있다고 생각해보자.
+자 이제, 모든 필드가 기본 타입이거나 불변 객체가 아닌 가변 객체를 참조하는 경우가 있다고 생각해보자. 가변 객체를 참조하는 경우, 원본과 복사본이 모두 동일한 가변객체를 참고 하기 때문에, 
 
 
 
@@ -389,11 +389,11 @@ public PhoneNumber clone()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nz
-c4NTcyMCw4OTY5OTY1MTMsNjUxNTg4ODM3LC05MDIyNTY1MjAs
-OTc1MzQ5MzAsLTE2Mjc5NzUzMSwxNzQ3NjQyNjkzLC0yMTg2ND
-U5NDksMTExOTA2OTI1NCwxODMyMTE3MTkwLC0xMTk2MjAzMTYs
-MTIwMjYwMTM4MCw1NjcwOTc4MjMsLTkwMTk3MzA1NiwxNjY2ND
-M2ODg5LDExOTU5NjQyNDcsMzMwMTE5Mzg3LC0xMTQ2NjA3NjI0
+eyJoaXN0b3J5IjpbLTExMDgxNTc3MTksMTQzMzQzMDc1MiwtNz
+Y3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1MTMsNjUxNTg4ODM3
+LC05MDIyNTY1MjAsOTc1MzQ5MzAsLTE2Mjc5NzUzMSwxNzQ3Nj
+QyNjkzLC0yMTg2NDU5NDksMTExOTA2OTI1NCwxODMyMTE3MTkw
+LC0xMTk2MjAzMTYsMTIwMjYwMTM4MCw1NjcwOTc4MjMsLTkwMT
+k3MzA1NiwxNjY2NDM2ODg5LDExOTU5NjQyNDcsMzMwMTE5Mzg3
 XX0=
 -->
