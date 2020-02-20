@@ -421,10 +421,8 @@ Set s =  new HashSet();
 new TreeSet<>(s); //변환 생성자, HashSet을 간단히 TreeSet타입으로 복제하면서 변환.
 ```
 
-```
-
-```
-
+> 핵심정리
+> Cloneable과 관련된 문제를 돌이켜 보면 위험천만한 객체 생성 매커니즘(생성자를 쓰지 않는 방법)을 사용하지 않고, 엉성한 문서 규약에 기대지 않고, 정상적인 final 필드 용법과도 충돌하지 않으며, 불필요한 검사 
 
 
 
@@ -439,11 +437,11 @@ new TreeSet<>(s); //변환 생성자, HashSet을 간단히 TreeSet타입으로 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI0NDU1MTkxLC03Mjg2Njk3OTQsMzUzMD
-I0ODQwLDExMzk2ODYxMDcsLTU3NTAwNjc5NCwtMjczNDQyNTQ4
-LC0xNjY3MzI2MDExLC00MjgzNjczNDgsMTc5MDkxMDYwMiwxND
-MzNDMwNzUyLC03NjcwMzk2NTEsMTQ3Nzg1NzIwLDg5Njk5NjUx
-Myw2NTE1ODg4MzcsLTkwMjI1NjUyMCw5NzUzNDkzMCwtMTYyNz
-k3NTMxLDE3NDc2NDI2OTMsLTIxODY0NTk0OSwxMTE5MDY5MjU0
-XX0=
+eyJoaXN0b3J5IjpbLTU2OTk1OTE0MCwtNzI4NjY5Nzk0LDM1Mz
+AyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0
+OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMT
+QzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1
+MTMsNjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAsLTE2Mj
+c5NzUzMSwxNzQ3NjQyNjkzLC0yMTg2NDU5NDksMTExOTA2OTI1
+NF19
 -->
