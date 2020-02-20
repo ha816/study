@@ -393,7 +393,7 @@ private 클래스인 HashTable.Entry는 깊은복사(deepCopy)를 지원한다. 
 
 Object의 clone()은 CloneNotSupportedExcetpion을 던진다고 선언하지만 재정의한 메서드는 그렇지 않다. **public인 clone 메서드에서는 throws 절을 없애야 한다.** 검사 예외(checked Exception)를 던지지 않아야 해당 메서드를 사용하기 편하기 때문이다.(Item 71)
 
-상속해서 쓰기 위한 클래스 설계 방식 두 가지(Item 19) 중 어느 쪽에서든, 상속용 클래스는 Cloneable을 구현해서는 안 된다. Object의 방식을 모방할 수도 있다. 제대로 동작하는 clone 메서드를 구현해서 protected로 두고 CloneNotSupportedException도 던질 수 있다고 선언하는 것이다. 이 방법은 마치 Object를 상속할때 처럼 Cloneable을 구현 여부를 하위 클래스에서 선택하도록 한다. 다른 방법으로, clone을 동작하지 않게 구현해놓고 하위 클래스에서 재정의 못하게 하는것이다. 
+일반적으로 상속용 클래스(는 Cloneable을 구현해서는 안 된다. Object의 방식을 모방할 수도 있다. 제대로 동작하는 clone 메서드를 구현해서 protected로 두고 CloneNotSupportedException도 던질 수 있다고 선언하는 것이다. 이 방법은 마치 Object를 상속할때 처럼 Cloneable을 구현 여부를 하위 클래스에서 선택하도록 한다. 다른 방법으로, clone을 동작하지 않게 구현해놓고 하위 클래스에서 재정의 못하게 하는것이다. 
 
 ```
 @Override
@@ -411,11 +411,11 @@ protected final Object clone() throws CloneNotSupportedException {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDkwOTY5OTIsLTU3NTAwNjc5NCwtMj
-czNDQyNTQ4LC0xNjY3MzI2MDExLC00MjgzNjczNDgsMTc5MDkx
-MDYwMiwxNDMzNDMwNzUyLC03NjcwMzk2NTEsMTQ3Nzg1NzIwLD
-g5Njk5NjUxMyw2NTE1ODg4MzcsLTkwMjI1NjUyMCw5NzUzNDkz
-MCwtMTYyNzk3NTMxLDE3NDc2NDI2OTMsLTIxODY0NTk0OSwxMT
-E5MDY5MjU0LDE4MzIxMTcxOTAsLTExOTYyMDMxNiwxMjAyNjAx
-MzgwXX0=
+eyJoaXN0b3J5IjpbMTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNz
+M0NDI1NDgsLTE2NjczMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEw
+NjAyLDE0MzM0MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3MjAsOD
+k2OTk2NTEzLDY1MTU4ODgzNywtOTAyMjU2NTIwLDk3NTM0OTMw
+LC0xNjI3OTc1MzEsMTc0NzY0MjY5MywtMjE4NjQ1OTQ5LDExMT
+kwNjkyNTQsMTgzMjExNzE5MCwtMTE5NjIwMzE2LDEyMDI2MDEz
+ODBdfQ==
 -->
