@@ -404,7 +404,10 @@ protected final Object clone() throws CloneNotSupportedException {
 
 마지막으로 Cloneable을 구현한 스레드 안전 클래스를 작성해야 할때는 clone()을 적절히 동기화해줘야 한다. Object의 clone은 동기화를 신경 쓰지 않았다. 그러니 **super.clone()을 호출 외에 다른 할일이 없어도 clone을 재정의하고 동기화해줘야 한다.** 
 
-요약하자면, **Cloneable을 구현하는 모든 클래스는 clone을 재정의해야 한다.** 이때 접근 제한자는 public, 반환 타입은 클래스 자신으로 해야 한다. 이 재정의한 clone()은 가장 먼저 super.clone()로 필요한 필드를 적절히 복사하고, 나머지 참조 객체도deepcopy하도록 
+요약하자면, **Cloneable을 구현하는 모든 클래스는 clone을 재정의해야 한다.** 이때 접근 제한자는 public, 반환 타입은 클래스 자신으로 해야 한다. 이 재정의한 clone()은 가장 먼저 super.clone()로 필요한 필드를 적절히 복사하고, 나머지 참조 객체도deepcopy 하도록  한다. 
+
+그런데 이런 과정이 꼭 필요한걸까? cloneable을 이미 구현한 클래스라면 어ㅉ
+
 
 
  
@@ -417,11 +420,11 @@ protected final Object clone() throws CloneNotSupportedException {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODc5MzkzNzUsLTcyODY2OTc5NCwzNT
-MwMjQ4NDAsMTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNzM0NDI1
-NDgsLTE2NjczMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEwNjAyLD
-E0MzM0MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3MjAsODk2OTk2
-NTEzLDY1MTU4ODgzNywtOTAyMjU2NTIwLDk3NTM0OTMwLC0xNj
-I3OTc1MzEsMTc0NzY0MjY5MywtMjE4NjQ1OTQ5LDExMTkwNjky
-NTRdfQ==
+eyJoaXN0b3J5IjpbLTM5OTc3NDk1OCwtNzI4NjY5Nzk0LDM1Mz
+AyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0
+OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMT
+QzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1
+MTMsNjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAsLTE2Mj
+c5NzUzMSwxNzQ3NjQyNjkzLC0yMTg2NDU5NDksMTExOTA2OTI1
+NF19
 -->
