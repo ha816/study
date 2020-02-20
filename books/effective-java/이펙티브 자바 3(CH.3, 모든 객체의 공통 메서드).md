@@ -379,14 +379,15 @@ public PhoneNumber clone()
 	}
 }
 ```
-
 이 메서드가 동작하게 하려면 PhoneNumber의 클래스 선언에 Cloneable을 구현하고 추가해야 한다. Object의 clone 메서드는 Object를 반환하지만 PhoneNumber의 clone 메서드는 PhoneNumber를 반환한다. 자바가 공변 반환 타이핑(covariant return typing)을 지원하니 이렇게 하는 것이 가능하고 권장하기도 한다. 달리 말해, 재정의한 메서드의 반환 타입은 상위 클래스의 메서드가 반환하는 타입의 하위 타입일 수 있다. 이 방식으로 클라이언트가 형변환을 하지 않아도 되게끔 해주자. 이를 위해서 super.clone에서 얻은 객체를 반환하기 전에 PhonbeNumber로 형변환 하였다.
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjM4NzUzOTQsLTc2NzAzOTY1MSwxND
+eyJoaXN0b3J5IjpbLTIwNDk4MTAyNjAsLTc2NzAzOTY1MSwxND
 c3ODU3MjAsODk2OTk2NTEzLDY1MTU4ODgzNywtOTAyMjU2NTIw
 LDk3NTM0OTMwLC0xNjI3OTc1MzEsMTc0NzY0MjY5MywtMjE4Nj
 Q1OTQ5LDExMTkwNjkyNTQsMTgzMjExNzE5MCwtMTE5NjIwMzE2
