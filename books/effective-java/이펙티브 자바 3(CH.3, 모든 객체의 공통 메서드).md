@@ -397,7 +397,9 @@ Object의 clone()은 CloneNotSupportedExcetpion을 던진다고 선언하지만 
 
 ```
 @Override
-protected final Object clone() throws CloneNotSupportedException {throw new CloneNotSupportedException();}
+protected final Object clone() throws CloneNotSupportedException {
+	throw new CloneNotSupportedException();
+}
 ```
  
 
@@ -409,11 +411,11 @@ protected final Object clone() throws CloneNotSupportedException {throw new Clon
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg2NzM2NjMyLC01NzUwMDY3OTQsLTI3Mz
-Q0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2
-MDIsMTQzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OT
-Y5OTY1MTMsNjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAs
-LTE2Mjc5NzUzMSwxNzQ3NjQyNjkzLC0yMTg2NDU5NDksMTExOT
-A2OTI1NCwxODMyMTE3MTkwLC0xMTk2MjAzMTYsMTIwMjYwMTM4
-MF19
+eyJoaXN0b3J5IjpbLTEyNDkwOTY5OTIsLTU3NTAwNjc5NCwtMj
+czNDQyNTQ4LC0xNjY3MzI2MDExLC00MjgzNjczNDgsMTc5MDkx
+MDYwMiwxNDMzNDMwNzUyLC03NjcwMzk2NTEsMTQ3Nzg1NzIwLD
+g5Njk5NjUxMyw2NTE1ODg4MzcsLTkwMjI1NjUyMCw5NzUzNDkz
+MCwtMTYyNzk3NTMxLDE3NDc2NDI2OTMsLTIxODY0NTk0OSwxMT
+E5MDY5MjU0LDE4MzIxMTcxOTAsLTExOTYyMDMxNiwxMjAyNjAx
+MzgwXX0=
 -->
