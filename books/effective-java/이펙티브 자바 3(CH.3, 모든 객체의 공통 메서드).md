@@ -422,7 +422,8 @@ new TreeSet<>(s); //변환 생성자, HashSet을 간단히 TreeSet타입으로 �
 ```
 
 > 핵심정리
-> Cloneable과 관련된 여러 문제를 보면, 앞으로 만들어갈 인터페이스, 클래스에서는 Cloneable을 절대로 쓰면 안된다. final 클래스라면 Cloneable을 구현해도 위험이 크지 않지만, 성능 최적화 관점에서 검토한 후, 문제가 없을때만 드물게 허용해
+> Cloneable과 관련된 여러 문제를 보면, 앞으로 만들어갈 인터페이스, 클래스에서는 Cloneable을 절대로 쓰면 안된다. final 클래스라면 Cloneable을 구현해도 위험이 크지 않지만, 성능 최적화 관점에서 검토한 후, 문제가 없을때만 드물게 허용해야 한다.(Item 67) 
+> 기본 원칙은 복사 생성자(conversion constructor)와 복사 팩터리(conversion factory)를 쓴
 
 
 
@@ -437,11 +438,11 @@ new TreeSet<>(s); //변환 생성자, HashSet을 간단히 TreeSet타입으로 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk2OTA4NjAsLTcyODY2OTc5NCwzNTMwMj
-Q4NDAsMTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNzM0NDI1NDgs
-LTE2NjczMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEwNjAyLDE0Mz
-M0MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3MjAsODk2OTk2NTEz
-LDY1MTU4ODgzNywtOTAyMjU2NTIwLDk3NTM0OTMwLC0xNjI3OT
-c1MzEsMTc0NzY0MjY5MywtMjE4NjQ1OTQ5LDExMTkwNjkyNTRd
-fQ==
+eyJoaXN0b3J5IjpbMjAxMTk0MzQxNywtNzI4NjY5Nzk0LDM1Mz
+AyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0
+OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMT
+QzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1
+MTMsNjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAsLTE2Mj
+c5NzUzMSwxNzQ3NjQyNjkzLC0yMTg2NDU5NDksMTExOTA2OTI1
+NF19
 -->
