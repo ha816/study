@@ -361,7 +361,7 @@ x.clone().equals(x)
 ```
 관례상 반환된 객체와 원본 객체는 독립적이어야 한다. 이를 만족하려면 super.clone으로 얻은 객체의 필드 중 하나 이상을 반환 전에 수정해야 할 수도 있다. 
 
-clone 메서드가 super.clone이 아닌, 생성자를 호출해 얻은 인스턴스를 반환해도 컴파일러는 불평하지 않을 것이다. 하지만 이 클래스의 하위 클래스에서 super.clone()을 하면 생성자를 이용하여 정상적으로 만들어직 클래스가 아닌 잘못된 클래스의 객체가 만들어져, 결국 하위 클래스의 clone메서드가 제대로 동작하지 않게 된다.
+clone() 호출시 super.clone이 아닌, 생성자를 호출해 얻은 인스턴스를 반환해도 컴파일러는 불평하지 않을 것이다. 하지만 이 클래스의 하위 클래스에서 super.clone()을 하면 생성자를 이용하여 정상적으로 만들어직 클래스가 아닌 잘못된 클래스의 객체가 만들어져, 결국 하위 클래스의 clone메서드가 제대로 동작하지 않게 된다.
 
 > 클래스 B가 클래스 A를 상속 할때, 하위 클래스인 B의 clone은 B 타입의 객체를 반환해야 한다. 그런데 A의 clone이 자신의 생성자, 즉 new A()로 생성한 객체를 반환한다면, B의 clone()도 A 타입의 객체를 반환할 수 밖에 없다. 달리 말해, super.clone()을 연쇄적으로 호출해두면 clone이 처음 호출된 하위 클래스의 객체가 만들어 진다. 
 
@@ -387,7 +387,7 @@ clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM0NTIwMjk5LC03NjcwMzk2NTEsMTQ3Nz
+eyJoaXN0b3J5IjpbNzU3OTUyMTQ4LC03NjcwMzk2NTEsMTQ3Nz
 g1NzIwLDg5Njk5NjUxMyw2NTE1ODg4MzcsLTkwMjI1NjUyMCw5
 NzUzNDkzMCwtMTYyNzk3NTMxLDE3NDc2NDI2OTMsLTIxODY0NT
 k0OSwxMTE5MDY5MjU0LDE4MzIxMTcxOTAsLTExOTYyMDMxNiwx
