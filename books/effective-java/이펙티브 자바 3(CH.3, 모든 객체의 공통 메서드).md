@@ -397,7 +397,7 @@ Object의 clone()은 CloneNotSupportedExcetpion을 던진다고 선언하지만 
 
 ```
 @Override
-protected final Object clone() throws CloneNotSuppor
+protected final Object clone() throws CloneNotSupportedException {throw new CloneNotSupportedException();}
 ```
  
 
@@ -409,7 +409,7 @@ protected final Object clone() throws CloneNotSuppor
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTExMzE1MDc1LC01NzUwMDY3OTQsLTI3Mz
+eyJoaXN0b3J5IjpbNTg2NzM2NjMyLC01NzUwMDY3OTQsLTI3Mz
 Q0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2
 MDIsMTQzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OT
 Y5OTY1MTMsNjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAs
