@@ -385,8 +385,7 @@ public PhoneNumber clone()
 
 다시 돌아와서 **clone()은 사실상 생성자와 같은 역할을 하지만 원본 객체에 아무런 영향을 미치지 않는 독립전인 객체를 반환하는것을 보장해야 한다.**
 
-참조하는 필드가 배열이라면 배열의 clone()을 사용하라고 권장을 한다. 사실 배열은 clone()을 제대로 활용하는 유일한 예라고 한다.  
-참조하는 필드가 HashMap이라고 가정해보자. HashTable 내부는 버킷들의 배열이고, 
+참조하는 필드가 배열이라면 배열의 clone()을 사용하라고 권장을 한다. 사실 배열은 clone()을 제대로 활용하는 유일한 예라고 한다. 참조하는 필드가 HashMap이라고 가정해보자. HashTable 내부는 버킷들의 배열이고, 각 버킷은 키-쌍을 담는 연결 리스트의 첫번째 엔트리를 참조한다. 
  
 
 
@@ -397,7 +396,7 @@ public PhoneNumber clone()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk1NTUwNjY5LDE3OTA5MTA2MDIsMTQzMz
+eyJoaXN0b3J5IjpbOTI5MjcxOTEwLDE3OTA5MTA2MDIsMTQzMz
 QzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1MTMs
 NjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAsLTE2Mjc5Nz
 UzMSwxNzQ3NjQyNjkzLC0yMTg2NDU5NDksMTExOTA2OTI1NCwx
