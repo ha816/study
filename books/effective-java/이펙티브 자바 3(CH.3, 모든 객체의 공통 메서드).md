@@ -389,7 +389,9 @@ public PhoneNumber clone()
 
 private 클래스인 HashTable.Entry는 깊은복사(deepCopy)를 지원한다. HashTable의 clone()은 먼저 적절한 크기의 새로운 버킷 배열을 할당한 다음 원래 버킷 배열을 순회하며 각 버킷에 대해 깊은 복사를 수행한다.  이때 복사를 위해 함수를 재귀적으로 호출하는데, 호출할때마다 원소의 수만큼 스택 프래임을 사용한다. 따라서 리스트가 너무 길면 StackOverFlow가 발생할 위험이 있다. 
 
-생성자에서는 재정의될 수 있는 메서드를 호출하지 말아야 하는데 이는 clone()에서도 마찬가지이다.( 
+생성자에서는 재정의될 수 있는 메서드를 호출하지 말아야 하는데 이는 clone()에서도 마찬가지이다.(Item 19) 만약 clone이 하위 클래스에서 재정의한 메서드를 호출하면, 하위 클래스는 복제 과정에서 자신의 상태를 교정할 기회를 잃어 원본과 복제본의 상태가 달라질 가능성이 크다.  
+
+Object의 clone()은 Clone 
  
 
 
@@ -400,11 +402,11 @@ private 클래스인 HashTable.Entry는 깊은복사(deepCopy)를 지원한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNjI2MTU2OCwtMjczNDQyNTQ4LC0xNj
-Y3MzI2MDExLC00MjgzNjczNDgsMTc5MDkxMDYwMiwxNDMzNDMw
-NzUyLC03NjcwMzk2NTEsMTQ3Nzg1NzIwLDg5Njk5NjUxMyw2NT
-E1ODg4MzcsLTkwMjI1NjUyMCw5NzUzNDkzMCwtMTYyNzk3NTMx
-LDE3NDc2NDI2OTMsLTIxODY0NTk0OSwxMTE5MDY5MjU0LDE4Mz
-IxMTcxOTAsLTExOTYyMDMxNiwxMjAyNjAxMzgwLDU2NzA5Nzgy
-M119
+eyJoaXN0b3J5IjpbLTE3ODIxNTU4MDIsLTI3MzQ0MjU0OCwtMT
+Y2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMTQzMzQz
+MDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1MTMsNj
+UxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAsLTE2Mjc5NzUz
+MSwxNzQ3NjQyNjkzLC0yMTg2NDU5NDksMTExOTA2OTI1NCwxOD
+MyMTE3MTkwLC0xMTk2MjAzMTYsMTIwMjYwMTM4MCw1NjcwOTc4
+MjNdfQ==
 -->
