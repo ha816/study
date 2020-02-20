@@ -391,7 +391,9 @@ private 클래스인 HashTable.Entry는 깊은복사(deepCopy)를 지원한다. 
 
 생성자에서는 재정의될 수 있는 메서드를 호출하지 말아야 하는데 이는 clone()에서도 마찬가지이다.(Item 19) 만약 clone이 하위 클래스에서 재정의한 메서드를 호출하면, 하위 클래스는 복제 과정에서 자신의 상태를 교정할 기회를 잃어 원본과 복제본의 상태가 달라질 가능성이 크다.  
 
-Object의 clone()은 CloneNotSupportedExcetpion을 던진다고 선언하지만 재정의한 메서드는 그렇지 않다. public인 clone 메서드에서는 throws 절을 없애야 한다. 검사 예외(checked Exception)를 던지지 않아야 해당 메서드를 사용하기 편하기 때문이다.(Item 71) 
+Object의 clone()은 CloneNotSupportedExcetpion을 던진다고 선언하지만 재정의한 메서드는 그렇지 않다. **public인 clone 메서드에서는 throws 절을 없애야 한다.** 검사 예외(checked Exception)를 던지지 않아야 해당 메서드를 사용하기 편하기 때문이다.(Item 71)
+
+상속해서 쓰기 위한 클래스 설계 방식 두 가지(Item 19) 중 어느 쪽에서든, 상속용 클래스는  
  
 
 
@@ -402,11 +404,11 @@ Object의 clone()은 CloneNotSupportedExcetpion을 던진다고 선언하지만 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTAwNjc5NCwtMjczNDQyNTQ4LC0xNj
-Y3MzI2MDExLC00MjgzNjczNDgsMTc5MDkxMDYwMiwxNDMzNDMw
-NzUyLC03NjcwMzk2NTEsMTQ3Nzg1NzIwLDg5Njk5NjUxMyw2NT
-E1ODg4MzcsLTkwMjI1NjUyMCw5NzUzNDkzMCwtMTYyNzk3NTMx
-LDE3NDc2NDI2OTMsLTIxODY0NTk0OSwxMTE5MDY5MjU0LDE4Mz
-IxMTcxOTAsLTExOTYyMDMxNiwxMjAyNjAxMzgwLDU2NzA5Nzgy
-M119
+eyJoaXN0b3J5IjpbMTU4NTM5NjIxLC01NzUwMDY3OTQsLTI3Mz
+Q0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2
+MDIsMTQzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OT
+Y5OTY1MTMsNjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAs
+LTE2Mjc5NzUzMSwxNzQ3NjQyNjkzLC0yMTg2NDU5NDksMTExOT
+A2OTI1NCwxODMyMTE3MTkwLC0xMTk2MjAzMTYsMTIwMjYwMTM4
+MF19
 -->
