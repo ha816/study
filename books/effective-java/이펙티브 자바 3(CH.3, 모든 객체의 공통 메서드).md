@@ -350,7 +350,7 @@ Cloneable을 구현한 클래스의 인스턴스에서 clone()을 호출하면 �
 
 실무에서는 일반적으로 Cloneable을 구현한 클래스는 clone 메서드를 public으로 제공하며, 사용자는 당연히 복제가 제대로 이뤄지리라 기대한다. 이 기대를 만족 시키려면 그 클래스와 모든 상위 클래스는 복잡하고, 강제할 수 없고, 허술하게 기술된 프로토콜을 지켜야만 하는데 그 결과로 깨지기 쉽고, 위험하고, 모순적인 매커니즘이 탄생한다. 즉 clone() 써서 생성자를 호출하지 않고도 객체를 생성할 수 있게 되는 것이다.  
 
-clone 메서드의 일반 규약은 허술하다. Object명세에서 가져온 설명을 보자.
+clone()의 일반 규약은 허술하다. Object명세에서 가져온 설명을 보자.
 
 '복사'의 정확한 뜻은 그 객체를 구현한 클래스에 따라 다를 수 있다. 일반적인 의도는 어떤 객체 x에 대해 아래 식은 참이다. 
 ```
@@ -387,11 +387,11 @@ clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NzAzOTY1MSwxNDc3ODU3MjAsODk2OT
-k2NTEzLDY1MTU4ODgzNywtOTAyMjU2NTIwLDk3NTM0OTMwLC0x
-NjI3OTc1MzEsMTc0NzY0MjY5MywtMjE4NjQ1OTQ5LDExMTkwNj
-kyNTQsMTgzMjExNzE5MCwtMTE5NjIwMzE2LDEyMDI2MDEzODAs
-NTY3MDk3ODIzLC05MDE5NzMwNTYsMTY2NjQzNjg4OSwxMTk1OT
-Y0MjQ3LDMzMDExOTM4NywtMTE0NjYwNzYyNCwtMTI0OTQxNzk1
-Nl19
+eyJoaXN0b3J5IjpbLTM3MjA4NzIwLC03NjcwMzk2NTEsMTQ3Nz
+g1NzIwLDg5Njk5NjUxMyw2NTE1ODg4MzcsLTkwMjI1NjUyMCw5
+NzUzNDkzMCwtMTYyNzk3NTMxLDE3NDc2NDI2OTMsLTIxODY0NT
+k0OSwxMTE5MDY5MjU0LDE4MzIxMTcxOTAsLTExOTYyMDMxNiwx
+MjAyNjAxMzgwLDU2NzA5NzgyMywtOTAxOTczMDU2LDE2NjY0Mz
+Y4ODksMTE5NTk2NDI0NywzMzAxMTkzODcsLTExNDY2MDc2MjRd
+fQ==
 -->
