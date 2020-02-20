@@ -333,10 +333,8 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 ## Item13. clone 재정의는 주의해서 진행하라.
 
-먼저 Cloneable 인터페이스의 목적과 용도는 아래와 같이 정리할 수 있다. 
-**Cloneable은 복제해도 되는 클래스임을 명시하는 용도의 믹스인 인터페이스(mixin interface)이다.** 
-
-하지만 의도한 목적을 제대로 이루지 못했다. 가장 큰 문제는 clone메서드가 선언된 곳이 Cloneable이 아닌 Object이고 그마저도 protected라는데 있다. 그래서 Cloneable을 구현하는 것만으로는 외부 객체에서 clone메서드를 호출할 수 없다. 
+Cloneable 인터페이스의 용도는 **복제해도 되는 클래스임을 명시하는 것**이다.
+하지만 의도한 목적을 제대로 이루지 못했다. 
 ```
 public interface Cloneable { } //정말 아무것도 없다 
 public class Object {
@@ -385,11 +383,11 @@ clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMjI1NjUyMCw5NzUzNDkzMCwtMTYyNz
-k3NTMxLDE3NDc2NDI2OTMsLTIxODY0NTk0OSwxMTE5MDY5MjU0
-LDE4MzIxMTcxOTAsLTExOTYyMDMxNiwxMjAyNjAxMzgwLDU2Nz
-A5NzgyMywtOTAxOTczMDU2LDE2NjY0MzY4ODksMTE5NTk2NDI0
-NywzMzAxMTkzODcsLTExNDY2MDc2MjQsLTEyNDk0MTc5NTYsNj
-U0OTYwNTA5LC0xNjUyOTkwMzI0LC02OTE0MDYyMDQsLTE4MDgx
-ODc1NzFdfQ==
+eyJoaXN0b3J5IjpbMTA3MTM2Mjg3NiwtOTAyMjU2NTIwLDk3NT
+M0OTMwLC0xNjI3OTc1MzEsMTc0NzY0MjY5MywtMjE4NjQ1OTQ5
+LDExMTkwNjkyNTQsMTgzMjExNzE5MCwtMTE5NjIwMzE2LDEyMD
+I2MDEzODAsNTY3MDk3ODIzLC05MDE5NzMwNTYsMTY2NjQzNjg4
+OSwxMTk1OTY0MjQ3LDMzMDExOTM4NywtMTE0NjYwNzYyNCwtMT
+I0OTQxNzk1Niw2NTQ5NjA1MDksLTE2NTI5OTAzMjQsLTY5MTQw
+NjIwNF19
 -->
