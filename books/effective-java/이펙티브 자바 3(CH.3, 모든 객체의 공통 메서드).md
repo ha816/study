@@ -342,6 +342,7 @@ public class Object {
 	// Object는 모든 클래스가 상속하기 한다.
 }
 ```
+실제 복제를 하는 clone메서드는 Object에 있는데 
 가장 큰 문제는 clone메서드가 선언된 곳이 Cloneable이 아닌 Object이고 그마저도 protected라는데 있다. 그래서 Cloneable을 구현하는 것만으로는 외부 객체에서 clone메서드를 호출할 수 없다. 
 
 
@@ -386,11 +387,11 @@ clone을 재정의한 클래스가 final이라면 걱정해야 할 하위 클래
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1Mz
-Q5MzAsLTE2Mjc5NzUzMSwxNzQ3NjQyNjkzLC0yMTg2NDU5NDks
-MTExOTA2OTI1NCwxODMyMTE3MTkwLC0xMTk2MjAzMTYsMTIwMj
-YwMTM4MCw1NjcwOTc4MjMsLTkwMTk3MzA1NiwxNjY2NDM2ODg5
-LDExOTU5NjQyNDcsMzMwMTE5Mzg3LC0xMTQ2NjA3NjI0LC0xMj
-Q5NDE3OTU2LDY1NDk2MDUwOSwtMTY1Mjk5MDMyNCwtNjkxNDA2
-MjA0XX0=
+eyJoaXN0b3J5IjpbMTQ4MTQyOTgxNCw2NTE1ODg4MzcsLTkwMj
+I1NjUyMCw5NzUzNDkzMCwtMTYyNzk3NTMxLDE3NDc2NDI2OTMs
+LTIxODY0NTk0OSwxMTE5MDY5MjU0LDE4MzIxMTcxOTAsLTExOT
+YyMDMxNiwxMjAyNjAxMzgwLDU2NzA5NzgyMywtOTAxOTczMDU2
+LDE2NjY0MzY4ODksMTE5NTk2NDI0NywzMzAxMTkzODcsLTExND
+Y2MDc2MjQsLTEyNDk0MTc5NTYsNjU0OTYwNTA5LC0xNjUyOTkw
+MzI0XX0=
 -->
