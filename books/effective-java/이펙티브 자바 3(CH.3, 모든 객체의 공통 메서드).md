@@ -411,7 +411,9 @@ protected final Object clone() throws CloneNotSupportedException {
 public Yum(Yum yum) {}; //복사생성자
 public Static Yum newInstance(Yum yum) {}; // 복사팩터리
 ```
-복사 ㅅ
+복사 생성자와 복사팩터리는 Cloneable/clone보다 나은면이 많다. 언어 모순적이고 위험천만한 객체 생성 매커니즘(생성자를 쓰지 않는 방법)을 사용하지 않고, 엉성한 문서 규약에 기대지 않고, 정상적인 final 필드 용법과도 충돌하지 않으며, 불필요한 검사 예외를 던지지 않고, 형변환도 필요 없다. 
+
+
 
 
 
@@ -426,7 +428,7 @@ public Static Yum newInstance(Yum yum) {}; // 복사팩터리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTI4MDUxNjgsLTcyODY2OTc5NCwzNT
+eyJoaXN0b3J5IjpbLTIwMTcxNzA5ODQsLTcyODY2OTc5NCwzNT
 MwMjQ4NDAsMTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNzM0NDI1
 NDgsLTE2NjczMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEwNjAyLD
 E0MzM0MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3MjAsODk2OTk2
