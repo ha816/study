@@ -448,6 +448,7 @@ HashSet set = new HashSet();
 set.add(new BigDecimal("1.0"));
 set.add(new BigDecimal("1.00"));
 // new BigDecimal("1.0").equals(new BigDecimal("1.00")) == false
+// set.size() == 2;
 
 ```
 
@@ -467,7 +468,7 @@ comaparable을 활용하는 클래스의 예로는 정렬된 컬렉션인 TreeSe
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzkyMDY1MjAsLTc5NzI5ODI0MCwxMj
+eyJoaXN0b3J5IjpbLTE1Mjk5NzM3ODMsLTc5NzI5ODI0MCwxMj
 UwODk1NDQwLC0yMTM1NzgwOTM0LDU1NjUxMTU0NywtOTUxNzIz
 MjkxLC03Mjg2Njk3OTQsMzUzMDI0ODQwLDExMzk2ODYxMDcsLT
 U3NTAwNjc5NCwtMjczNDQyNTQ4LC0xNjY3MzI2MDExLC00Mjgz
