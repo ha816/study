@@ -467,7 +467,8 @@ Comparable을 구현하지 않은 객체들의 순서를 비교하거나 표준�
 자바 8에서는 Comparator 인터페이스가 일련의 비교자 생성 메서드(comparator construction method)와 메서드 연쇄 방식으로 비교자를 생성할 수 있게 되었다. 
 
 ```
-private static
+private static final Comparator<PhoneNumber> COMPARATOR =
+	comparingInt((PhoneNumber pn) -> ph.area) 
 
 ```
 
@@ -486,11 +487,11 @@ private static
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTg1NTExNTksNDEyNTUzOTc1LDQ2NT
-c4NTA0NCwtNzk3Mjk4MjQwLDEyNTA4OTU0NDAsLTIxMzU3ODA5
-MzQsNTU2NTExNTQ3LC05NTE3MjMyOTEsLTcyODY2OTc5NCwzNT
-MwMjQ4NDAsMTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNzM0NDI1
-NDgsLTE2NjczMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEwNjAyLD
-E0MzM0MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3MjAsODk2OTk2
-NTEzXX0=
+eyJoaXN0b3J5IjpbMjA1MDY0OTk2Myw0MTI1NTM5NzUsNDY1Nz
+g1MDQ0LC03OTcyOTgyNDAsMTI1MDg5NTQ0MCwtMjEzNTc4MDkz
+NCw1NTY1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0LDM1Mz
+AyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0
+OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMT
+QzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1
+MTNdfQ==
 -->
