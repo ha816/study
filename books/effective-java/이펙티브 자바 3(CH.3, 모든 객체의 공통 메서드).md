@@ -468,10 +468,17 @@ Comparable을 구현하지 않은 객체들의 순서를 비교하거나 표준�
 
 ```
 private static final Comparator<PhoneNumber> COMPARATOR =
-	comparingInt((PhoneNumber pn) -> ph.area) 
+	comparingInt((PhoneNumber pn) -> ph.areaCode)
+	.ComparingInt(pn -> pn.prefix)
+	.ComparingInt(pn -> pn.lineNum);
+	// ....
 
+public int compareTo(PhoneNumber pn){
+	return Comparator.compare(this, pn);
+}
 ```
 
+위 코드는 클래스 초기화시에 비교자 생성자 메서드를 통해 
 
 
 
@@ -487,7 +494,7 @@ private static final Comparator<PhoneNumber> COMPARATOR =
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MDY0OTk2Myw0MTI1NTM5NzUsNDY1Nz
+eyJoaXN0b3J5IjpbMTgxNzMxODgwOSw0MTI1NTM5NzUsNDY1Nz
 g1MDQ0LC03OTcyOTgyNDAsMTI1MDg5NTQ0MCwtMjEzNTc4MDkz
 NCw1NTY1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0LDM1Mz
 AyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0
