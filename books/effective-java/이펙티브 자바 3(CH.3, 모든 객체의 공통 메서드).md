@@ -442,6 +442,8 @@ x.compareTo(y) == 0 -> x.compareTo(z) == y.compareTo(z)
 ```
 제일 마지막 네번째 이야기는 필수는 아니지만 꼭 지키는게 좋다. Comparable을 구현하고 이 권고를 지키지 않는 모든 클래스는 조심해야 한다.
 
+comaparable을 활용하는 클래스의 예로는 정렬된 컬렉션인 TreeSet, TreeMap, 검색과 정렬 알고리즘을 활용하는 Collections, Arraysrk dlTek. 
+
 
  
 
@@ -453,11 +455,11 @@ x.compareTo(y) == 0 -> x.compareTo(z) == y.compareTo(z)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MDg5NTQ0MCwtMjEzNTc4MDkzNCw1NT
-Y1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0LDM1MzAyNDg0
-MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0OCwtMT
-Y2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMTQzMzQz
-MDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1MTMsNj
-UxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAsLTE2Mjc5NzUz
-MV19
+eyJoaXN0b3J5IjpbLTIwMDkyMzQ0ODEsMTI1MDg5NTQ0MCwtMj
+EzNTc4MDkzNCw1NTY1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5
+Nzk0LDM1MzAyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLT
+I3MzQ0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5
+MTA2MDIsMTQzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMC
+w4OTY5OTY1MTMsNjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5
+MzBdfQ==
 -->
