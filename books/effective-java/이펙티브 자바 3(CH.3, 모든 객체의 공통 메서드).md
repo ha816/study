@@ -460,6 +460,8 @@ set.add(new BigDecimal("1.00"));
 
 comaparable을 활용하는 클래스의 예로는 정렬된 컬렉션인 TreeSet, TreeMap, 검색과 정렬 알고리즘을 활용하는 Collections, Array가 있다. 
 
+Comparable을 구현하지 않은 필드나 표준이 아닌 순서로 비교해야 한다면 비교자(Comparator)를 대신 사용한다.
+
 
 
 
@@ -473,7 +475,7 @@ comaparable을 활용하는 클래스의 예로는 정렬된 컬렉션인 TreeSe
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg1OTQwMTQ1LC03OTcyOTgyNDAsMTI1MD
+eyJoaXN0b3J5IjpbLTU5MDIxODY1LC03OTcyOTgyNDAsMTI1MD
 g5NTQ0MCwtMjEzNTc4MDkzNCw1NTY1MTE1NDcsLTk1MTcyMzI5
 MSwtNzI4NjY5Nzk0LDM1MzAyNDg0MCwxMTM5Njg2MTA3LC01Nz
 UwMDY3OTQsLTI3MzQ0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3
