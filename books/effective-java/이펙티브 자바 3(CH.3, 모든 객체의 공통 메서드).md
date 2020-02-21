@@ -443,7 +443,8 @@ x.compareTo(y) == 0 -> x.compareTo(z) == y.compareTo(z)
 제일 마지막 네번째 이야기는 필수는 아니지만 꼭 지키는게 좋다. compareTo 메서드로 수행한 동치성 테스트의 결과가 equals 메서드와 같아야 한다는 것이다. 이를 잘 지키면 compareTo로 줄지은 순서와 equals의 결과가 일관되게 된다. 
 
 Comparable을 구현하고 이 권고를 지키지 않는 모든 클래스는 조심해야 한다. 예를 들어 comparetTo와 eqauls가 일관되지 않는 BigDecimal 클래스를 예로 생각해보자. 
-
+```
+`
 
 
 comaparable을 활용하는 클래스의 예로는 정렬된 컬렉션인 TreeSet, TreeMap, 검색과 정렬 알고리즘을 활용하는 Collections, Array가 있다. 
@@ -461,11 +462,11 @@ comaparable을 활용하는 클래스의 예로는 정렬된 컬렉션인 TreeSe
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NzI5ODI0MCwxMjUwODk1NDQwLC0yMT
-M1NzgwOTM0LDU1NjUxMTU0NywtOTUxNzIzMjkxLC03Mjg2Njk3
-OTQsMzUzMDI0ODQwLDExMzk2ODYxMDcsLTU3NTAwNjc5NCwtMj
-czNDQyNTQ4LC0xNjY3MzI2MDExLC00MjgzNjczNDgsMTc5MDkx
-MDYwMiwxNDMzNDMwNzUyLC03NjcwMzk2NTEsMTQ3Nzg1NzIwLD
-g5Njk5NjUxMyw2NTE1ODg4MzcsLTkwMjI1NjUyMCw5NzUzNDkz
-MF19
+eyJoaXN0b3J5IjpbLTE0MDgzMTcwMTAsLTc5NzI5ODI0MCwxMj
+UwODk1NDQwLC0yMTM1NzgwOTM0LDU1NjUxMTU0NywtOTUxNzIz
+MjkxLC03Mjg2Njk3OTQsMzUzMDI0ODQwLDExMzk2ODYxMDcsLT
+U3NTAwNjc5NCwtMjczNDQyNTQ4LC0xNjY3MzI2MDExLC00Mjgz
+NjczNDgsMTc5MDkxMDYwMiwxNDMzNDMwNzUyLC03NjcwMzk2NT
+EsMTQ3Nzg1NzIwLDg5Njk5NjUxMyw2NTE1ODg4MzcsLTkwMjI1
+NjUyMF19
 -->
