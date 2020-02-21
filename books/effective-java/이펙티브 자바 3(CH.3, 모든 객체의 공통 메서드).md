@@ -432,7 +432,9 @@ Comparable을 구현했다는 것은 그 **클래스의 인스턴스들에는 �
 
 Comparable을 구현하면 이 인터페이스를 활용하는 수많은 제네릭 알고리즘과 컬렉션의 힘을 누릴 수 있다.
 
+compareTo 메서드의 일반 규약은 equals와 비슷하다. 
 
+* 객체와 주어진 객체의 순서를 비교하는데 이 객체가 주어진 객체보다 작으면 음의 정수, 같으면 0, 크면 양의 정수를 반환한다. 이 객체와 비교할 수 없는 타입의 객체가 주어지면 ClassCastException을 던
 
  
 
@@ -444,11 +446,11 @@ Comparable을 구현하면 이 인터페이스를 활용하는 수많은 제네�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTA4MzIyOTAsLTIxMzU3ODA5MzQsNT
-U2NTExNTQ3LC05NTE3MjMyOTEsLTcyODY2OTc5NCwzNTMwMjQ4
-NDAsMTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNzM0NDI1NDgsLT
-E2NjczMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEwNjAyLDE0MzM0
-MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3MjAsODk2OTk2NTEzLD
-Y1MTU4ODgzNywtOTAyMjU2NTIwLDk3NTM0OTMwLC0xNjI3OTc1
-MzFdfQ==
+eyJoaXN0b3J5IjpbLTQ2MDcxNjczNSwtMjEzNTc4MDkzNCw1NT
+Y1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0LDM1MzAyNDg0
+MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0OCwtMT
+Y2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMTQzMzQz
+MDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1MTMsNj
+UxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAsLTE2Mjc5NzUz
+MV19
 -->
