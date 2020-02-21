@@ -462,7 +462,7 @@ comaparable을 활용하는 클래스의 예로는 정렬된 컬렉션인 TreeSe
 
 Comparable을 구현하지 않은 객체들의 순서를 비교하거나 표준이 아닌(자연스럽지 않은) 순서로 비교해야 한다면 비교자(Comparator)를 사용해야 한다. 
 
-
+비교하려는 클래스에서 핵심 필드가 다수가 있다면 어는 것을 먼저 비교하는냐가 중요하다. 가장 핵심 필드부터 비교를 해나가자 비교 결과가 0이 아니라면, 바로 순서가 결정되며 바로 결과를 반환하자. 비교 결
 
 
 
@@ -479,7 +479,7 @@ Comparable을 구현하지 않은 객체들의 순서를 비교하거나 표준�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2OTc3MzQwLC03OTcyOTgyNDAsMTI1MD
+eyJoaXN0b3J5IjpbMzY2NjU3NDMyLC03OTcyOTgyNDAsMTI1MD
 g5NTQ0MCwtMjEzNTc4MDkzNCw1NTY1MTE1NDcsLTk1MTcyMzI5
 MSwtNzI4NjY5Nzk0LDM1MzAyNDg0MCwxMTM5Njg2MTA3LC01Nz
 UwMDY3OTQsLTI3MzQ0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3
