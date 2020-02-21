@@ -450,6 +450,10 @@ set.add(new BigDecimal("1.00"));
 // new BigDecimal("1.0").equals(new BigDecimal("1.00")) == false
 // set.size() == 2;
 
+TreeSet set = new TreeSet();
+set.add(new BigDecimal("1.0"));
+set.add(new BigDecimal("1.00"));
+// set.size() == 1;
 ```
 
 
@@ -468,11 +472,11 @@ comaparable을 활용하는 클래스의 예로는 정렬된 컬렉션인 TreeSe
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjk5NzM3ODMsLTc5NzI5ODI0MCwxMj
-UwODk1NDQwLC0yMTM1NzgwOTM0LDU1NjUxMTU0NywtOTUxNzIz
-MjkxLC03Mjg2Njk3OTQsMzUzMDI0ODQwLDExMzk2ODYxMDcsLT
-U3NTAwNjc5NCwtMjczNDQyNTQ4LC0xNjY3MzI2MDExLC00Mjgz
-NjczNDgsMTc5MDkxMDYwMiwxNDMzNDMwNzUyLC03NjcwMzk2NT
-EsMTQ3Nzg1NzIwLDg5Njk5NjUxMyw2NTE1ODg4MzcsLTkwMjI1
-NjUyMF19
+eyJoaXN0b3J5IjpbLTEzNjgyMTU0NCwtNzk3Mjk4MjQwLDEyNT
+A4OTU0NDAsLTIxMzU3ODA5MzQsNTU2NTExNTQ3LC05NTE3MjMy
+OTEsLTcyODY2OTc5NCwzNTMwMjQ4NDAsMTEzOTY4NjEwNywtNT
+c1MDA2Nzk0LC0yNzM0NDI1NDgsLTE2NjczMjYwMTEsLTQyODM2
+NzM0OCwxNzkwOTEwNjAyLDE0MzM0MzA3NTIsLTc2NzAzOTY1MS
+wxNDc3ODU3MjAsODk2OTk2NTEzLDY1MTU4ODgzNywtOTAyMjU2
+NTIwXX0=
 -->
