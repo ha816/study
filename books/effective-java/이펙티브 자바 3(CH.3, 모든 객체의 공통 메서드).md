@@ -460,7 +460,11 @@ set.add(new BigDecimal("1.00"));
 
 comaparable을 활용하는 클래스의 예로는 정렬된 컬렉션인 TreeSet, TreeMap, 검색과 정렬 알고리즘을 활용하는 Collections, Array가 있다. 
 
-Comparable을 구현하지 않은 객체들의 순서를 비교하거나 표준이 아닌 순서(자연스럽지 않은)로 비교해야 한다면 비교자(Comparator)를 대신 사용한다.
+Comparable을 구현하지 않은 객체들의 순서를 비교하거나 표준이 아닌(자연스럽지 않은) 순서로 비교해야 한다면 비교자(Comparator)를 사용해야 한다. 
+
+
+
+
 
 
 
@@ -475,11 +479,11 @@ Comparable을 구현하지 않은 객체들의 순서를 비교하거나 표준�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzk5OTAzMCwtNzk3Mjk4MjQwLDEyNT
-A4OTU0NDAsLTIxMzU3ODA5MzQsNTU2NTExNTQ3LC05NTE3MjMy
-OTEsLTcyODY2OTc5NCwzNTMwMjQ4NDAsMTEzOTY4NjEwNywtNT
-c1MDA2Nzk0LC0yNzM0NDI1NDgsLTE2NjczMjYwMTEsLTQyODM2
-NzM0OCwxNzkwOTEwNjAyLDE0MzM0MzA3NTIsLTc2NzAzOTY1MS
-wxNDc3ODU3MjAsODk2OTk2NTEzLDY1MTU4ODgzNywtOTAyMjU2
-NTIwXX0=
+eyJoaXN0b3J5IjpbLTY2OTc3MzQwLC03OTcyOTgyNDAsMTI1MD
+g5NTQ0MCwtMjEzNTc4MDkzNCw1NTY1MTE1NDcsLTk1MTcyMzI5
+MSwtNzI4NjY5Nzk0LDM1MzAyNDg0MCwxMTM5Njg2MTA3LC01Nz
+UwMDY3OTQsLTI3MzQ0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3
+MzQ4LDE3OTA5MTA2MDIsMTQzMzQzMDc1MiwtNzY3MDM5NjUxLD
+E0Nzc4NTcyMCw4OTY5OTY1MTMsNjUxNTg4ODM3LC05MDIyNTY1
+MjBdfQ==
 -->
