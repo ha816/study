@@ -432,6 +432,8 @@ Comparable을 구현했다는 것은 그 **클래스의 인스턴스들에는 �
 
 Comparable을 구현하면 이 인터페이스를 활용하는 수많은 제네릭 알고리즘과 컬렉션의 힘을 누릴 수 있다.
 
+
+
  
 
 
@@ -442,11 +444,11 @@ Comparable을 구현하면 이 인터페이스를 활용하는 수많은 제네�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzU3ODA5MzQsNTU2NTExNTQ3LC05NT
-E3MjMyOTEsLTcyODY2OTc5NCwzNTMwMjQ4NDAsMTEzOTY4NjEw
-NywtNTc1MDA2Nzk0LC0yNzM0NDI1NDgsLTE2NjczMjYwMTEsLT
-QyODM2NzM0OCwxNzkwOTEwNjAyLDE0MzM0MzA3NTIsLTc2NzAz
-OTY1MSwxNDc3ODU3MjAsODk2OTk2NTEzLDY1MTU4ODgzNywtOT
-AyMjU2NTIwLDk3NTM0OTMwLC0xNjI3OTc1MzEsMTc0NzY0MjY5
-M119
+eyJoaXN0b3J5IjpbLTE1MTA4MzIyOTAsLTIxMzU3ODA5MzQsNT
+U2NTExNTQ3LC05NTE3MjMyOTEsLTcyODY2OTc5NCwzNTMwMjQ4
+NDAsMTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNzM0NDI1NDgsLT
+E2NjczMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEwNjAyLDE0MzM0
+MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3MjAsODk2OTk2NTEzLD
+Y1MTU4ODgzNywtOTAyMjU2NTIwLDk3NTM0OTMwLC0xNjI3OTc1
+MzFdfQ==
 -->
