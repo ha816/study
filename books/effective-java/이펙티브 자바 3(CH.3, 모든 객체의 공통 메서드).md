@@ -444,7 +444,12 @@ x.compareTo(y) == 0 -> x.compareTo(z) == y.compareTo(z)
 
 Comparable을 구현하고 이 권고를 지키지 않는 모든 클래스는 조심해야 한다. 예를 들어 comparetTo와 eqauls가 일관되지 않는 BigDecimal 클래스를 예로 생각해보자. 
 ```
-`
+HashSet set = new HashSet();
+set.add(new BigDecimal("1.0"));
+set.add(new BigDecimal("1.00"));
+// new BigDecimal("1.0").equals(new BigDecimal("1.00")) == false
+
+```
 
 
 comaparable을 활용하는 클래스의 예로는 정렬된 컬렉션인 TreeSet, TreeMap, 검색과 정렬 알고리즘을 활용하는 Collections, Array가 있다. 
@@ -462,7 +467,7 @@ comaparable을 활용하는 클래스의 예로는 정렬된 컬렉션인 TreeSe
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDgzMTcwMTAsLTc5NzI5ODI0MCwxMj
+eyJoaXN0b3J5IjpbLTE1NzkyMDY1MjAsLTc5NzI5ODI0MCwxMj
 UwODk1NDQwLC0yMTM1NzgwOTM0LDU1NjUxMTU0NywtOTUxNzIz
 MjkxLC03Mjg2Njk3OTQsMzUzMDI0ODQwLDExMzk2ODYxMDcsLT
 U3NTAwNjc5NCwtMjczNDQyNTQ4LC0xNjY3MzI2MDExLC00Mjgz
