@@ -426,7 +426,9 @@ new TreeSet<>(s); //변환 생성자, HashSet을 간단히 TreeSet타입으로 �
 
 ## Item14. Comparable을 구현할지 고려하라
 
-Comparable 인터페이스의 유일무이한 메서드
+Comparable 인터페이스의 유일무이한 메서드는 compareTo 이다. 사실 Comparable 인터페이스는 지금까지 다룬 메서드와 달리 Object에 있는 메서드가 아니다. comparetTo는 단순 동치성에 더해 순서까지 비교할 수 있으며, 제네릭하다. 
+
+Comparable을 구현했다는 것은 그 클래스의 인스턴스들에는 자연적인 순서가 있음을 의미한다. 
 
 
 
@@ -440,11 +442,11 @@ Comparable 인터페이스의 유일무이한 메서드
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMTI0OTQxOSwtOTUxNzIzMjkxLC03Mj
-g2Njk3OTQsMzUzMDI0ODQwLDExMzk2ODYxMDcsLTU3NTAwNjc5
-NCwtMjczNDQyNTQ4LC0xNjY3MzI2MDExLC00MjgzNjczNDgsMT
-c5MDkxMDYwMiwxNDMzNDMwNzUyLC03NjcwMzk2NTEsMTQ3Nzg1
-NzIwLDg5Njk5NjUxMyw2NTE1ODg4MzcsLTkwMjI1NjUyMCw5Nz
-UzNDkzMCwtMTYyNzk3NTMxLDE3NDc2NDI2OTMsLTIxODY0NTk0
-OV19
+eyJoaXN0b3J5IjpbLTExMjI0NjU1NDEsLTk1MTcyMzI5MSwtNz
+I4NjY5Nzk0LDM1MzAyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3
+OTQsLTI3MzQ0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LD
+E3OTA5MTA2MDIsMTQzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4
+NTcyMCw4OTY5OTY1MTMsNjUxNTg4ODM3LC05MDIyNTY1MjAsOT
+c1MzQ5MzAsLTE2Mjc5NzUzMSwxNzQ3NjQyNjkzLC0yMTg2NDU5
+NDldfQ==
 -->
