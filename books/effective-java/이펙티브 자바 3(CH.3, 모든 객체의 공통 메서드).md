@@ -426,6 +426,7 @@ new TreeSet<>(s); //변환 생성자, HashSet을 간단히 TreeSet타입으로 �
 
 ## Item14. Comparable을 구현할지 고려하라
 
+Comparable 인터페이스의 유일무이한 메서드
 
 
 
@@ -439,11 +440,11 @@ new TreeSet<>(s); //변환 생성자, HashSet을 간단히 TreeSet타입으로 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MTcyMzI5MSwtNzI4NjY5Nzk0LDM1Mz
-AyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0
-OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMT
-QzMzQzMDc1MiwtNzY3MDM5NjUxLDE0Nzc4NTcyMCw4OTY5OTY1
-MTMsNjUxNTg4ODM3LC05MDIyNTY1MjAsOTc1MzQ5MzAsLTE2Mj
-c5NzUzMSwxNzQ3NjQyNjkzLC0yMTg2NDU5NDksMTExOTA2OTI1
-NF19
+eyJoaXN0b3J5IjpbMTExMTI0OTQxOSwtOTUxNzIzMjkxLC03Mj
+g2Njk3OTQsMzUzMDI0ODQwLDExMzk2ODYxMDcsLTU3NTAwNjc5
+NCwtMjczNDQyNTQ4LC0xNjY3MzI2MDExLC00MjgzNjczNDgsMT
+c5MDkxMDYwMiwxNDMzNDMwNzUyLC03NjcwMzk2NTEsMTQ3Nzg1
+NzIwLDg5Njk5NjUxMyw2NTE1ODg4MzcsLTkwMjI1NjUyMCw5Nz
+UzNDkzMCwtMTYyNzk3NTMxLDE3NDc2NDI2OTMsLTIxODY0NTk0
+OV19
 -->
