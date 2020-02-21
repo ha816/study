@@ -438,9 +438,11 @@ compareTo 메서드의 일반 규약은 equals와 비슷하다. 객체와 주어
 x.compareTo(y) == -1 * (y.compareTo(x);
 x.compareTo(y) > 0 && y.compareTo(z) > 0 -> x.compareTo(z)
 x.compareTo(y) == 0 -> x.compareTo(z) == y.compareTo(z)
-(x.compareTo(y) == 0) == x.equals(y)
+(x.compareTo(y) == 0) == x.equals(y) // 주의: 이 클래스의 순서는 equals 메서드와 일관되지 않는다. 
 ```
-제일 마지막 네번째 이야기는 필수는 아니지만 꼭 지키는게 좋다. Como
+제일 마지막 네번째 이야기는 필수는 아니지만 꼭 지키는게 좋다. Comparable을 구현하고 이 권고를 지키지 않는 모든 클래스는 조심해야 한다.
+
+
  
 
 
@@ -451,7 +453,7 @@ x.compareTo(y) == 0 -> x.compareTo(z) == y.compareTo(z)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NTgyNTE4MywtMjEzNTc4MDkzNCw1NT
+eyJoaXN0b3J5IjpbMTI1MDg5NTQ0MCwtMjEzNTc4MDkzNCw1NT
 Y1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0LDM1MzAyNDg0
 MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0OCwtMT
 Y2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMTQzMzQz
