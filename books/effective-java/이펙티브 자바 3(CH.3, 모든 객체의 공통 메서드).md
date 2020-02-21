@@ -436,7 +436,8 @@ compareTo 메서드의 일반 규약은 equals와 비슷하다. 객체와 주어
 
 ```
 x.compareTo(y) == -1 * (y.compareTo(x);
-
+x.compareTo(y) > 0 && y.compareTo(z) > 0 -> x.compareTo(z)
+x.compareTo(y) == 0 -> x.compareTo(z)
 ```
 
  
@@ -449,7 +450,7 @@ x.compareTo(y) == -1 * (y.compareTo(x);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MTc4MjY1MCwtMjEzNTc4MDkzNCw1NT
+eyJoaXN0b3J5IjpbLTQ1MjczNzYzMiwtMjEzNTc4MDkzNCw1NT
 Y1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0LDM1MzAyNDg0
 MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0OCwtMT
 Y2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMTQzMzQz
