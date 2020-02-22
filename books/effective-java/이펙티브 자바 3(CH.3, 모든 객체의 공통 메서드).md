@@ -333,14 +333,13 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 ## Item13. clone 재정의는 주의해서 진행하라.
 
-Cloneable은 인터페이스의 용도는 **복제해도 되는 클래스임을 명시하는 것**이다. 하지만 의도한 목적을 제대로 이루지 못 했는데
+Cloneable은 인터페이스의 용도는 **복제해도 되는 클래스임을 명시하는 것**이다. 하지만 의도한 목적을 제대로 이루지 못 했는데, 왜냐하면 실제 clone 메서드는  구현하고 실행하는 부분이 Object에 구현되어 있기 때문이다. 
 
-하 의한 을 로 이지 다 가  는 clone메서드가 된 이 lone 같다. 정말 단순히 명시만 한이 아닌 Obj  Object 그 라 있다. 래 Cloneal 구하는 것만으로는  객체에 clone를 호출없다. 정 것 없다 
 ```
 public interace Cloneable {} // 정말 아무것도 없다.
-public cl t {
-	
-	ret nebe clone()  potecte .
+public class Object {
+	...
+	protected Object clone() { ... } //
 	// Object는 모든 클래스가 상속하기 한다.
 }
 ```
@@ -501,11 +500,11 @@ public int compareTo(PhoneNumber pn){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0ODIzNjM1LDEyNTUzOTQyMjEsMjUwOT
-c4NjMxLDQxMjU1Mzk3NSw0NjU3ODUwNDQsLTc5NzI5ODI0MCwx
-MjUwODk1NDQwLC0yMTM1NzgwOTM0LDU1NjUxMTU0NywtOTUxNz
-IzMjkxLC03Mjg2Njk3OTQsMzUzMDI0ODQwLDExMzk2ODYxMDcs
-LTU3NTAwNjc5NCwtMjczNDQyNTQ4LC0xNjY3MzI2MDExLC00Mj
-gzNjczNDgsMTc5MDkxMDYwMiwxNDMzNDMwNzUyLC03NjcwMzk2
-NTFdfQ==
+eyJoaXN0b3J5IjpbLTIxMTEwMDQyNDksNjI0ODIzNjM1LDEyNT
+UzOTQyMjEsMjUwOTc4NjMxLDQxMjU1Mzk3NSw0NjU3ODUwNDQs
+LTc5NzI5ODI0MCwxMjUwODk1NDQwLC0yMTM1NzgwOTM0LDU1Nj
+UxMTU0NywtOTUxNzIzMjkxLC03Mjg2Njk3OTQsMzUzMDI0ODQw
+LDExMzk2ODYxMDcsLTU3NTAwNjc5NCwtMjczNDQyNTQ4LC0xNj
+Y3MzI2MDExLC00MjgzNjczNDgsMTc5MDkxMDYwMiwxNDMzNDMw
+NzUyXX0=
 -->
