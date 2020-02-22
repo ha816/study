@@ -333,8 +333,7 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 ## Item13. clone 재정의는 주의해서 진행하라.
 
-Cloneable은 인터페이스의 용도는 **복제해도 되는 클래스임을 명시하는 것**이다.
-하지만 의도한 목적을 제대로 이루지 못 했는데 i interface). 
+Cloneable은 인터페이스의 용도는 **복제해도 되는 클래스임을 명시하는 것**이다. 하지만 의도한 목적을 제대로 이루지 못 했는데 i interface). 
 
 하 의한 을 로 이지 다 가  는 clone메서드가 된 이 lone 같다. 정말 단순히 명시만 한이 아닌 Obj  Object 그 라 있다. 래 Cloneal 구하는 것만으로는  객체에 clone를 호출없다. ublc interace Cloneable   정 것 없다 
 public cl t {
@@ -501,11 +500,11 @@ public int compareTo(PhoneNumber pn){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NTM5NDIyMSwyNTA5Nzg2MzEsNDEyNT
-UzOTc1LDQ2NTc4NTA0NCwtNzk3Mjk4MjQwLDEyNTA4OTU0NDAs
-LTIxMzU3ODA5MzQsNTU2NTExNTQ3LC05NTE3MjMyOTEsLTcyOD
-Y2OTc5NCwzNTMwMjQ4NDAsMTEzOTY4NjEwNywtNTc1MDA2Nzk0
-LC0yNzM0NDI1NDgsLTE2NjczMjYwMTEsLTQyODM2NzM0OCwxNz
-kwOTEwNjAyLDE0MzM0MzA3NTIsLTc2NzAzOTY1MSwxNDc3ODU3
-MjBdfQ==
+eyJoaXN0b3J5IjpbLTM2MjM3MTE3OSwxMjU1Mzk0MjIxLDI1MD
+k3ODYzMSw0MTI1NTM5NzUsNDY1Nzg1MDQ0LC03OTcyOTgyNDAs
+MTI1MDg5NTQ0MCwtMjEzNTc4MDkzNCw1NTY1MTE1NDcsLTk1MT
+cyMzI5MSwtNzI4NjY5Nzk0LDM1MzAyNDg0MCwxMTM5Njg2MTA3
+LC01NzUwMDY3OTQsLTI3MzQ0MjU0OCwtMTY2NzMyNjAxMSwtND
+I4MzY3MzQ4LDE3OTA5MTA2MDIsMTQzMzQzMDc1MiwtNzY3MDM5
+NjUxXX0=
 -->
