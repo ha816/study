@@ -345,7 +345,7 @@ public cl t {
 ```
 실제메서드 하나 없는  ne메서드는 Object에 있는데 심지어 접근 제어자가 protected이다. 그래서 외부 객체에서는 다른 객체의 clone메서드를 호출할 수가 없다.
 
-able 이스는 을  도 Object의 protected 메서드인 clone의 동작 방식을 결정한다. Cloneable을 구현한 클래스의 인스턴스에서 Clone()을 호출하면 그 객체의 필드들을 하나하나 복사한 객체를 반환한다. 반대로 Cloneable을 구현하하며, 그렇지 않은 클래스의 인스턴스에서 clone()을 호출하면 CloneNotSupportedException을 던진다. 
+Cloneable은 Object의 protected 메서드인 clone의 동작 방식을 결정한다. Cloneable을 구현한 클래스의 인스턴스에서 Clone()을 호출하면 그 객체의 필드들을 하나하나 복사한 객체를 반환한다. 반대로 Cloneable을 구현하하며, 그렇지 않은 클래스의 인스턴스에서 clone()을 호출하면 CloneNotSupportedException을 던진다. 
 
 이는 인터페이스를 상당히 이례적으로 사용한 예이며다. 따라하지는 말자. 인터페이스를 구현한다는 것은 일반적으로 해당 클래스가 그 인터페이스를 구현한다는 것을 선언하는 행위다. 그런데 Cloneable 해당 클래스가 아닌 상위 클래스(Object)에 정의된 clone()의 동작 방식을 변경한 것이다. 
 
@@ -502,11 +502,11 @@ public int compareTo(PhoneNumber pn){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NjQyNDI0MiwxMjU1Mzk0MjIxLDI1MD
-k3ODYzMSw0MTI1NTM5NzUsNDY1Nzg1MDQ0LC03OTcyOTgyNDAs
-MTI1MDg5NTQ0MCwtMjEzNTc4MDkzNCw1NTY1MTE1NDcsLTk1MT
-cyMzI5MSwtNzI4NjY5Nzk0LDM1MzAyNDg0MCwxMTM5Njg2MTA3
-LC01NzUwMDY3OTQsLTI3MzQ0MjU0OCwtMTY2NzMyNjAxMSwtND
-I4MzY3MzQ4LDE3OTA5MTA2MDIsMTQzMzQzMDc1MiwtNzY3MDM5
-NjUxXX0=
+eyJoaXN0b3J5IjpbMjgwODUyMTEsMTI1NTM5NDIyMSwyNTA5Nz
+g2MzEsNDEyNTUzOTc1LDQ2NTc4NTA0NCwtNzk3Mjk4MjQwLDEy
+NTA4OTU0NDAsLTIxMzU3ODA5MzQsNTU2NTExNTQ3LC05NTE3Mj
+MyOTEsLTcyODY2OTc5NCwzNTMwMjQ4NDAsMTEzOTY4NjEwNywt
+NTc1MDA2Nzk0LC0yNzM0NDI1NDgsLTE2NjczMjYwMTEsLTQyOD
+M2NzM0OCwxNzkwOTEwNjAyLDE0MzM0MzA3NTIsLTc2NzAzOTY1
+MV19
 -->
