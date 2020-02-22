@@ -6,7 +6,9 @@
 
 # Vector(벡터) & Space(공간)
 
-수를 나열한 것이 벡터다. 나열한 갯수에 따라 n차원 벡털
+수를 나열한 것이 벡터다. 나열한 갯수에 따라 n차원 벡터라고 부른다. 특별히 언지하지 않으면 일반적으로 벡터는 세로로 늘어선 종벡터이다. 
+
+종 벡터에 T(Transpose) 전치를 표기하면 횡 벡터가 된다. 
 
 
 
@@ -16,5 +18,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg0NTc5MjQwXX0=
+eyJoaXN0b3J5IjpbLTEyNDM0MzI2NDVdfQ==
 -->
