@@ -335,10 +335,11 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 Cloneable은 인터페이스의 용도는 **복제해도 되는 클래스임을 명시하는 것**이다. 하지만 의도한 목적을 제대로 이루지 못 했는데
 
-하 의한 을 로 이지 다 가  는 clone메서드가 된 이 lone 같다. 정말 단순히 명시만 한이 아닌 Obj  Object 그 라 있다. 래 Cloneal 구하는 것만으로는  객체에 clone를 호출없다. ublc interace Cloneable   정 것 없다 
+하 의한 을 로 이지 다 가  는 clone메서드가 된 이 lone 같다. 정말 단순히 명시만 한이 아닌 Obj  Object 그 라 있다. 래 Cloneal 구하는 것만으로는  객체에 clone를 호출없다. 정 것 없다 
 ```
+public interace Cloneable {} // 정말 아무것도 없다.
 public cl t {
-	 i interface). 
+	
 	ret nebe clone()  potecte .
 	// Object는 모든 클래스가 상속하기 한다.
 }
@@ -355,9 +356,7 @@ Cloneable은 Object의 protected 메서드인 clone의 동작 방식을 결정�
 
 clone() 써서 생성자를 호출하지 않고도 객체를 생성할 수 있게 되는 것이다.  
 
-clone() 메서드의 일반 규약은 허술하다. Object명세에서 가져온 설명을 보자.
-
-'복사'의 정확한 뜻은 그 객체를 구현한 클래스에 따라 다를 수 있다. 일반적인 의도는 어떤 객체 x에 대해 아래 식은 참이다. 
+clone() 메서드의 일반 규약은 허술하다. Object명세에서 가져온 설명을 보자. '복사'의 정확한 뜻은 그 객체를 구현한 클래스에 따라 다를 수 있다. 일반적인 의도는 어떤 객체 x에 대해 아래 식은 참이다. 
 ```
 x.clone() != x // 복사본은 원래 객체와 다르다.
 x.clone().getClass() == x.getClass() 
@@ -502,11 +501,11 @@ public int compareTo(PhoneNumber pn){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwODUyMTEsMTI1NTM5NDIyMSwyNTA5Nz
-g2MzEsNDEyNTUzOTc1LDQ2NTc4NTA0NCwtNzk3Mjk4MjQwLDEy
-NTA4OTU0NDAsLTIxMzU3ODA5MzQsNTU2NTExNTQ3LC05NTE3Mj
-MyOTEsLTcyODY2OTc5NCwzNTMwMjQ4NDAsMTEzOTY4NjEwNywt
-NTc1MDA2Nzk0LC0yNzM0NDI1NDgsLTE2NjczMjYwMTEsLTQyOD
-M2NzM0OCwxNzkwOTEwNjAyLDE0MzM0MzA3NTIsLTc2NzAzOTY1
-MV19
+eyJoaXN0b3J5IjpbNjI0ODIzNjM1LDEyNTUzOTQyMjEsMjUwOT
+c4NjMxLDQxMjU1Mzk3NSw0NjU3ODUwNDQsLTc5NzI5ODI0MCwx
+MjUwODk1NDQwLC0yMTM1NzgwOTM0LDU1NjUxMTU0NywtOTUxNz
+IzMjkxLC03Mjg2Njk3OTQsMzUzMDI0ODQwLDExMzk2ODYxMDcs
+LTU3NTAwNjc5NCwtMjczNDQyNTQ4LC0xNjY3MzI2MDExLC00Mj
+gzNjczNDgsMTc5MDkxMDYwMiwxNDMzNDMwNzUyLC03NjcwMzk2
+NTFdfQ==
 -->
