@@ -342,7 +342,7 @@ public class Object {
 	// Object는 모든 클래스가 상속하기 한다.
 }
 ```
-clone메서드는 Object에 있는데 심지어 접근 제어자가 protected이다. 그래서 외부 객체에서는 다른 객체의 clone메서드를 호출할 수가 없다. 
+clone메서드는 Object에 있는데 심지어 접근 제어자가 protected이다. 그래서 외부 객체에서는 다른 객체의 clone메서드를 호출할 수가 없다. 즉 같은 클래스에서만 clone 메서드를 사용할 수 있다. 
 
 Cloneable은 Object의 protected 메서드인 clone의 동작 방식을 결정한다. Cloneable을 구현한 클래스의 인스턴스에서 Clone()을 호출하면 그 객체의 필드들을 하나하나 복사한 객체를 반환한다. 반대로 Cloneable을 구현하하며, 그렇지 않은 클래스의 인스턴스에서 clone()을 호출하면 CloneNotSupportedException을 던진다. 
 
@@ -499,11 +499,11 @@ public int compareTo(PhoneNumber pn){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NjM5MzkzMSw2MjQ4MjM2MzUsMTI1NT
-M5NDIyMSwyNTA5Nzg2MzEsNDEyNTUzOTc1LDQ2NTc4NTA0NCwt
-Nzk3Mjk4MjQwLDEyNTA4OTU0NDAsLTIxMzU3ODA5MzQsNTU2NT
-ExNTQ3LC05NTE3MjMyOTEsLTcyODY2OTc5NCwzNTMwMjQ4NDAs
-MTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNzM0NDI1NDgsLTE2Nj
-czMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEwNjAyLDE0MzM0MzA3
-NTJdfQ==
+eyJoaXN0b3J5IjpbNzAyNzk4ODMzLDYyNDgyMzYzNSwxMjU1Mz
+k0MjIxLDI1MDk3ODYzMSw0MTI1NTM5NzUsNDY1Nzg1MDQ0LC03
+OTcyOTgyNDAsMTI1MDg5NTQ0MCwtMjEzNTc4MDkzNCw1NTY1MT
+E1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0LDM1MzAyNDg0MCwx
+MTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3MzQ0MjU0OCwtMTY2Nz
+MyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2MDIsMTQzMzQzMDc1
+Ml19
 -->
