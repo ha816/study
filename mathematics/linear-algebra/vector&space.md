@@ -34,7 +34,7 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 ### 기저가 되기 위한 조건
 
-벡터의 조합
+벡터의 조합$(\vec{e_1}, \dots, \vec{e_n})$을 기저라 부ㄹ
 
 
 
@@ -43,7 +43,7 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0Mjg1NzMxMywtNDc0NTY3NjAyLDE5Nj
+eyJoaXN0b3J5IjpbLTU4Mzk5NzUyNiwtNDc0NTY3NjAyLDE5Nj
 EyMTY0NTUsLTE4MTg0ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYy
 NzYsLTEzMDYwODIyODIsNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ
 ==
