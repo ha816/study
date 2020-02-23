@@ -1,10 +1,8 @@
 # Overview
 
-데이터에서 단순히 수치의 조합으로 다루는 것이 아니라, '공간 안의 점'으로 생각하여 그 직관을 활용하는 것이 좋다. 
+데이터에서 어떤 통찰을 얻을때는 단순히 데이터를 수치의 조합으로 다루는 것이 아니라, '공간 안의 점'으로 생각하여 그 직관을 활용하는 것이 좋다. 
 
-거듭강조하지만 공간을 활용하는 것일 잊지 말자
-
-# Vector(벡터) & Space(공간)
+# Vector(벡터)
 
 **수를 나열한 것이 벡터**다. 나열한 갯수에 따라 n차원 벡터라고 부른다. 특별히 언지하지 않으면 일반적으로 벡터는 세로로 늘어선 종벡터이다.  종 벡터에 T(Transpose) 전치를 표기하면 횡 벡터가 된다. 
 
@@ -62,8 +60,7 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 선형결합으로 임의의 벡터 $\vec{v}$가 나타나고, 그리고 그 표현법이 유일무이 할때 ($\vec{e_1}, \cdots, \vec{e_n}$)을 기저라고 부른다. 
 
-
-
+# Space(공간)
 
 
 
@@ -75,9 +72,9 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NzA2MDM4OCwtMTI5MDE3NDQ4OCw2Mz
-MyMjE2MTYsMTk4MTIzOTcxNSwtMTY2NDM0NTAxNywtNDc0NTY3
-NjAyLDE5NjEyMTY0NTUsLTE4MTg0ODgwNzgsMTEyMzcwMzMxLD
-E1MzYzMjYyNzYsLTEzMDYwODIyODIsNTA4NTk0NTMxLC0zMTU5
-MTM1NDddfQ==
+eyJoaXN0b3J5IjpbLTEzNDYxOTkxMjIsLTEyOTAxNzQ0ODgsNj
+MzMjIxNjE2LDE5ODEyMzk3MTUsLTE2NjQzNDUwMTcsLTQ3NDU2
+NzYwMiwxOTYxMjE2NDU1LC0xODE4NDg4MDc4LDExMjM3MDMzMS
+wxNTM2MzI2Mjc2LC0xMzA2MDgyMjgyLDUwODU5NDUzMSwtMzE1
+OTEzNTQ3XX0=
 -->
