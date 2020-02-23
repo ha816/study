@@ -30,15 +30,14 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 어느 하나의 벡터 $\vec{v}$에 대해서 기저를 바꾸면 좌표 $v = (v_1, v_2)^T$의 $v_1, v_2$는 마구 변화한다. 이렇게 표현을 바꾸는 것만으로 바뀌는 것보다 표현에 의존하지 않는 성질이 더 본질적이라고 생각할 수 있다. 
 
-결국 어느 기저를 취할지에 의존하지 않은 개념이야말로
-
+결국 어느 기저를 취할지에 의존하지 않은 개념이야말로 대상의 본래 성질을 지닌다는 입장에서 기저를 취하는 방법에 의존하지 않는 실체를 나타낸 것이 바로 화살표 $\vec{v}$이다. 이 화살표야 말로 벡터의 실제이고, 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTU0NDMwMzcsMTk2MTIxNjQ1NSwtMT
-gxODQ4ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4
-MjI4Miw1MDg1OTQ1MzEsLTMxNTkxMzU0N119
+eyJoaXN0b3J5IjpbNzU3MjcxOTA1LDE5NjEyMTY0NTUsLTE4MT
+g0ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYyNzYsLTEzMDYwODIy
+ODIsNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ==
 -->
