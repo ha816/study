@@ -39,6 +39,8 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 * 어떤 벡터 $\vec{v}$라도 $\vec{v} = x_1 \vec{e_1} + \cdots +x_n \vec{e_n}$로 나타낼 수 있다. ($x_1, \dots x_n$은 임의의 수)
 * 어떤 벡터 $\vec{v}$를 나타내는 방법은 한 가지, 유일무이하다.
 
+첫 번째 조건은 당연한데, 좌표로 이야기를 하고 싶은데 기준이 되는 
+
 
 
 
@@ -46,8 +48,7 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NTIxODQ1NCwtNDc0NTY3NjAyLDE5Nj
-EyMTY0NTUsLTE4MTg0ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYy
-NzYsLTEzMDYwODIyODIsNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ
-==
+eyJoaXN0b3J5IjpbOTUxMzcyMjE0LC00NzQ1Njc2MDIsMTk2MT
+IxNjQ1NSwtMTgxODQ4ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3
+NiwtMTMwNjA4MjI4Miw1MDg1OTQ1MzEsLTMxNTkxMzU0N119
 -->
