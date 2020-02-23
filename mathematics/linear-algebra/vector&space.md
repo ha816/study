@@ -8,9 +8,9 @@
 
 $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix}^T = (2,3,5,8)$$
 
-2차원 벡터는 모눈 종이 위에 점으로 찍을 수 있다. 3차원 벡터도 3차원 공간 안 어딘가에 한 점으로 나타낼 수 있다. 이런 식으로 위치에 대응시키는 것을 강조할 때는 '위치 벡터'라고 한다. 
+2차원 벡터는 모눈 종이 위에 점으로 찍을 수 있다. 3차원 벡터도 3차원 공간 안 어딘가에 한 점으로 나타낼 수 있다. 이런 식으로 **위치에 대응시키는 것을 강조**할 때는 **위치 벡터**라고 한다. 
 
-위치라는 해석 외에 원점 0에서 그 위치를 향하는 `화살표` 라는 해석도 있다. 덧셈과 정수배를 도형으로 해석하려면 화살표쪽이 더 잘어울린다. 덧셈은 화살표의 이어 붙임, 정수배는 길이를 늘이고 줄인다. 
+위치라는 해석 외에 **원점 0에서 그 위치를 향하는 화살표** 라는 해석도 있다. 덧셈과 정수배를 도형으로 해석하려면 화살표쪽이 더 잘어울린다. 덧셈은 화살표의 이어 붙임, 정수배는 길이를 늘이고 줄인다. 
 
 ## 기저(Basis)
 
@@ -72,9 +72,9 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODgxOTc5NTIsLTEyOTAxNzQ0ODgsNj
-MzMjIxNjE2LDE5ODEyMzk3MTUsLTE2NjQzNDUwMTcsLTQ3NDU2
-NzYwMiwxOTYxMjE2NDU1LC0xODE4NDg4MDc4LDExMjM3MDMzMS
-wxNTM2MzI2Mjc2LC0xMzA2MDgyMjgyLDUwODU5NDUzMSwtMzE1
-OTEzNTQ3XX0=
+eyJoaXN0b3J5IjpbNzk1ODIwNjcyLC0xMjkwMTc0NDg4LDYzMz
+IyMTYxNiwxOTgxMjM5NzE1LC0xNjY0MzQ1MDE3LC00NzQ1Njc2
+MDIsMTk2MTIxNjQ1NSwtMTgxODQ4ODA3OCwxMTIzNzAzMzEsMT
+UzNjMyNjI3NiwtMTMwNjA4MjI4Miw1MDg1OTQ1MzEsLTMxNTkx
+MzU0N119
 -->
