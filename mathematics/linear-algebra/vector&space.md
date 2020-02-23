@@ -14,7 +14,8 @@ $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pma
 
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTU5MzIyNywtMzE1OTEzNTQ3XX0=
+eyJoaXN0b3J5IjpbNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ==
 -->
