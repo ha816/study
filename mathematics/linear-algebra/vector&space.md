@@ -32,12 +32,19 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 결국 어느 기저를 취할지에 의존하지 않은 개념이야말로 대상의 본래 성질을 지닌다는 입장에서 기저를 취하는 방법에 의존하지 않는 실체를 나타낸 것이 바로 화살표 $\vec{v}$이다. 이 화살표야 말로 벡터의 실제이고, 수의 나열은 그것을 표현한 방법으로 이해해자. 
 
+### 기저가 되기 위한 조건
+
+벡터의 조합
+
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NDU2NzYwMiwxOTYxMjE2NDU1LC0xOD
-E4NDg4MDc4LDExMjM3MDMzMSwxNTM2MzI2Mjc2LC0xMzA2MDgy
-MjgyLDUwODU5NDUzMSwtMzE1OTEzNTQ3XX0=
+eyJoaXN0b3J5IjpbMTY0Mjg1NzMxMywtNDc0NTY3NjAyLDE5Nj
+EyMTY0NTUsLTE4MTg0ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYy
+NzYsLTEzMDYwODIyODIsNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ
+==
 -->
