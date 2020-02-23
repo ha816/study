@@ -39,14 +39,10 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 첫 번째 조건은 당연한데, 좌표로 이야기를 하고 싶은데 기준이 되는 기저가 없으면 표현이 불가하기 때문이다. 
 
-두 번째 조건은 모오함을 피하기 위한 조건이다. 만약 두번째 조건이 지켜지지 않으면 서로 다른 좌표 $x= (x_1, \dots , x_n)^T, y = (y_1, \dots y_n)^T$를 보게 되었을때, 대응하는 실체 벡터 $\vec{x}, \vec{y}$ 가 정말로 다른 것인지, 같은 것인데 두 가지 표기법으로 되어있는 건지 고민하게 된다. 
-
-두 번째 조건을 알기 쉽게 표현하면 ... 
+두 번째 조건은 모오함을 피하기 위한 조건이다. 만약 두번째 조건이 지켜지지 않으면 서로 다른 좌표 $x= (x_1, \dots , x_n)^T, y = (y_1, \dots y_n)^T$를 보게 되었을때, 대응하는 실체 벡터 $\vec{x}, \vec{y}$ 가 정말로 다른 것인지, 같은 것인데 두 가지 표기법으로 되어있는 건지 고민하게 된다. 두 번째 조건을 식으로 표현하자면 아래와 같다.
 
 $$(x_1, \dots , x_n)^T \neq (x'_1, \dots , x'_n)^T => x_1 \vec{e_1} + \cdots 
-+x_n \vec{e_n} \neq x'_1 \vec{e_1} + \cdots +x'_n \vec{e_n}$$ 
-
-$$(x_1, \dots , x_n)^T  = (x'_1, \dots , x'_n)^T => x_1 \vec{e_1} + \cdots 
++x_n \vec{e_n} \neq x'_1 \vec{e_1} + \cdots +x'_n \vec{e_n}$$$$(x_1, \dots , x_n)^T  = (x'_1, \dots , x'_n)^T => x_1 \vec{e_1} + \cdots 
 +x_n \vec{e_n} = x'_1 \vec{e_1} + \cdots +x'_n \vec{e_n}$$ 
 
 수학에서는 좀 더 멋진 표현을 선호하는데 그건 아래와 같다. 
@@ -72,10 +68,10 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTE4MTQ0Myw3NTk5NDM1NzIsLTE2OD
-c0NTAxNjIsLTMyMzc4ODAwMSwxNDUyODk3MjMyLC0yMTI4NDI2
-MDcxLC0xMjkwMTc0NDg4LDYzMzIyMTYxNiwxOTgxMjM5NzE1LC
-0xNjY0MzQ1MDE3LC00NzQ1Njc2MDIsMTk2MTIxNjQ1NSwtMTgx
-ODQ4ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4Mj
-I4Miw1MDg1OTQ1MzEsLTMxNTkxMzU0N119
+eyJoaXN0b3J5IjpbLTIwMzkyNTUxNDgsNzU5OTQzNTcyLC0xNj
+g3NDUwMTYyLC0zMjM3ODgwMDEsMTQ1Mjg5NzIzMiwtMjEyODQy
+NjA3MSwtMTI5MDE3NDQ4OCw2MzMyMjE2MTYsMTk4MTIzOTcxNS
+wtMTY2NDM0NTAxNywtNDc0NTY3NjAyLDE5NjEyMTY0NTUsLTE4
+MTg0ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYyNzYsLTEzMDYwOD
+IyODIsNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ==
 -->
