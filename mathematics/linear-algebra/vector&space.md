@@ -54,7 +54,7 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 주어진 벡터 $\vec{e_1}, \cdots, \vec{e_n}$에 대해서 어떤 수 $u_1, \dots u_n$를 가져와 생기는 벡터를 $\vec{e_1}, \cdots, \vec{e_n}$의 **선형결합**이라고 한다. 
 
-선형결합으로 임의의 벡터 $\vec{v}$가 나타나고, 그리고 그 표현법이 유일무이 할때 ($\vec{e_1}, \cdots, \vec{e_n}$)을 기저라고 부른다. 
+정리하자면, 선형결합으로 임의의 벡터 $\vec{v}$가 나타나고, 그리고 그 표현법이 유일무이 할때 ($\vec{e_1}, \cdots, \vec{e_n}$)을 기저라고 부른다. 
 
 # Space(공간)
 
@@ -68,10 +68,10 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzkyNTUxNDgsNzU5OTQzNTcyLC0xNj
-g3NDUwMTYyLC0zMjM3ODgwMDEsMTQ1Mjg5NzIzMiwtMjEyODQy
-NjA3MSwtMTI5MDE3NDQ4OCw2MzMyMjE2MTYsMTk4MTIzOTcxNS
-wtMTY2NDM0NTAxNywtNDc0NTY3NjAyLDE5NjEyMTY0NTUsLTE4
-MTg0ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYyNzYsLTEzMDYwOD
-IyODIsNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ==
+eyJoaXN0b3J5IjpbNjYwMDQ1MjUzLDc1OTk0MzU3MiwtMTY4Nz
+Q1MDE2MiwtMzIzNzg4MDAxLDE0NTI4OTcyMzIsLTIxMjg0MjYw
+NzEsLTEyOTAxNzQ0ODgsNjMzMjIxNjE2LDE5ODEyMzk3MTUsLT
+E2NjQzNDUwMTcsLTQ3NDU2NzYwMiwxOTYxMjE2NDU1LC0xODE4
+NDg4MDc4LDExMjM3MDMzMSwxNTM2MzI2Mjc2LC0xMzA2MDgyMj
+gyLDUwODU5NDUzMSwtMzE1OTEzNTQ3XX0=
 -->
