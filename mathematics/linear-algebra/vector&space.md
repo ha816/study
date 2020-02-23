@@ -39,7 +39,7 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 첫 번째 조건은 당연한데, 좌표로 이야기를 하고 싶은데 기준이 되는 기저가 없으면 표현이 불가하기 때문이다. 
 
-두 번째 조건은 성가신 처리를 피하기 위해 필요한 조건이다. 만약 두번째 조건이 지켜지지 않으면 서로 다른 좌표 $x= (x_1, \dots , x_n)^T, y = (y_1, \dots y_n)^T$를 보게 되었을때, 대응하는 실체 벡터 $\vec{x}, \vec{y}$ 가 정말로 다른 것인지, 같은 것인데 두 가지 표기법으로 되어있는 건지 고민하게 된다. 
+두 번째 조건은 모오함을 피하기 위한 조건이다. 만약 두번째 조건이 지켜지지 않으면 서로 다른 좌표 $x= (x_1, \dots , x_n)^T, y = (y_1, \dots y_n)^T$를 보게 되었을때, 대응하는 실체 벡터 $\vec{x}, \vec{y}$ 가 정말로 다른 것인지, 같은 것인데 두 가지 표기법으로 되어있는 건지 고민하게 된다. 
 
 두 번째 조건을 알기 쉽게 표현하면 ... 
 
@@ -72,10 +72,10 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU5OTQzNTcyLC0xNjg3NDUwMTYyLC0zMj
-M3ODgwMDEsMTQ1Mjg5NzIzMiwtMjEyODQyNjA3MSwtMTI5MDE3
-NDQ4OCw2MzMyMjE2MTYsMTk4MTIzOTcxNSwtMTY2NDM0NTAxNy
-wtNDc0NTY3NjAyLDE5NjEyMTY0NTUsLTE4MTg0ODgwNzgsMTEy
-MzcwMzMxLDE1MzYzMjYyNzYsLTEzMDYwODIyODIsNTA4NTk0NT
-MxLC0zMTU5MTM1NDddfQ==
+eyJoaXN0b3J5IjpbLTIwNTE4MTQ0Myw3NTk5NDM1NzIsLTE2OD
+c0NTAxNjIsLTMyMzc4ODAwMSwxNDUyODk3MjMyLC0yMTI4NDI2
+MDcxLC0xMjkwMTc0NDg4LDYzMzIyMTYxNiwxOTgxMjM5NzE1LC
+0xNjY0MzQ1MDE3LC00NzQ1Njc2MDIsMTk2MTIxNjQ1NSwtMTgx
+ODQ4ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4Mj
+I4Miw1MDg1OTQ1MzEsLTMxNTkxMzU0N119
 -->
