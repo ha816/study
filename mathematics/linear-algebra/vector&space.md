@@ -58,7 +58,9 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 이것도 사실 같은 뜻인데 $x_1 \vec{e_1} + \cdots 
 +x_n \vec{e_n} = x'_1 \vec{e_1} + \cdots +x'_n \vec{e_n}$에서 우변을 이항하여 정리하면 $(x_1 - x'_1)\vec{e_1}+ \cdots + (x_n - x'_n)\vec{e_n} = \vec{0}$이 된다. $x_1 - x'_1 =u_1$의 형태로 치환하면 된다. 
 
-$u_1 \vec{e_1} + \cdots + u_n \vec{e_n}$ 와 같은 모양은 자주 나오므로 이름이 붙어 있다. 주어진 벡터 $\vec{e_1}, \cdots, \vec{e_n}$에 대해서 어떤 수 $u_1, \dots u_n$를 가져와 생기는 벡터를 
+주어진 벡터 $\vec{e_1}, \cdots, \vec{e_n}$에 대해서 어떤 수 $u_1, \dots u_n$를 가져와 생기는 벡터를 $\vec{e_1}, \cdots, \vec{e_n}$의 **선형결합**이라고 한다. 
+
+선형결합으로 임의의 벡터 $\vec{v}$ㄱ
 
 
 
@@ -73,8 +75,8 @@ $u_1 \vec{e_1} + \cdots + u_n \vec{e_n}$ 와 같은 모양은 자주 나오므�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MTI1MTg3OSwxOTgxMjM5NzE1LC0xNj
-Y0MzQ1MDE3LC00NzQ1Njc2MDIsMTk2MTIxNjQ1NSwtMTgxODQ4
-ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4MjI4Mi
-w1MDg1OTQ1MzEsLTMxNTkxMzU0N119
+eyJoaXN0b3J5IjpbMjE1Mjk0MDQ1LDE5ODEyMzk3MTUsLTE2Nj
+QzNDUwMTcsLTQ3NDU2NzYwMiwxOTYxMjE2NDU1LC0xODE4NDg4
+MDc4LDExMjM3MDMzMSwxNTM2MzI2Mjc2LC0xMzA2MDgyMjgyLD
+UwODU5NDUzMSwtMzE1OTEzNTQ3XX0=
 -->
