@@ -10,13 +10,15 @@
 
 $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix}^T = (2,3,5,8)$$
 
-2차원 벡터는 모눈 종이 위에 점으로 찍을 수 있다. 
+2차원 벡터는 모눈 종이 위에 점으로 찍을 수 있다. 3차원 벡터도 3차원 공간 안 어딘가에 한 점으로 나타낼 수 있다. 이런 식으로 위치에 대응시키는 것을 강조할 때는 '위치 벡터'라고 한다. 
+
+위치라는 해석 외에 원점 0에서 그 위치를 향하는 `화살표`
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDYwODIyODIsNTA4NTk0NTMxLC0zMT
-U5MTM1NDddfQ==
+eyJoaXN0b3J5IjpbNjg3Njc2MTE5LC0xMzA2MDgyMjgyLDUwOD
+U5NDUzMSwtMzE1OTEzNTQ3XX0=
 -->
