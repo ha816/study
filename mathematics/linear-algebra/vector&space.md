@@ -37,6 +37,7 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 벡터의 조합$(\vec{e_1}, \cdots, \vec{e_n})$을 기저라 부르는 것은 아래 두 조건을 만족시켰을때 뿐이다. 
 
 * 어떤 벡터 $\vec{v}$라도 $\vec{v} = x_1 \vec{e_1} + \cdots +x_n \vec{e_n}$로 나타낼 수 있다. ($x_1, \dots x_n$은 임의의 수)
+* 어떤 벡터 $\vec{v}$를 나타내는 방법은 한 가지, 유일무이하다.
 
 
 
@@ -45,7 +46,8 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIzNTM2NDk5LC00NzQ1Njc2MDIsMTk2MT
-IxNjQ1NSwtMTgxODQ4ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3
-NiwtMTMwNjA4MjI4Miw1MDg1OTQ1MzEsLTMxNTkxMzU0N119
+eyJoaXN0b3J5IjpbLTU1NTIxODQ1NCwtNDc0NTY3NjAyLDE5Nj
+EyMTY0NTUsLTE4MTg0ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYy
+NzYsLTEzMDYwODIyODIsNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ
+==
 -->
