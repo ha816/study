@@ -14,11 +14,15 @@ $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pma
 
 위치라는 해석 외에 원점 0에서 그 위치를 향하는 `화살표` 라는 해석도 있다. 덧셈과 정수배를 도형으로 해석하려면 화살표쪽이 더 잘어울린다. 덧셈은 화살표의 이어 붙임, 정수배는 길이를 늘이고 줄인다. 
 
+## 기저(Basis)
+
+본래 공간에는 위라든지 오른쪽이라든지 특별한 방향이 없다. 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTkyNjgxMTAsLTEzMDYwODIyODIsNT
-A4NTk0NTMxLC0zMTU5MTM1NDddfQ==
+eyJoaXN0b3J5IjpbMTUzNjMyNjI3NiwtMTMwNjA4MjI4Miw1MD
+g1OTQ1MzEsLTMxNTkxMzU0N119
 -->
