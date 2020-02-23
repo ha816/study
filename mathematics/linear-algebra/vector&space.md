@@ -39,7 +39,7 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 * 어떤 벡터 $\vec{v}$라도 $\vec{v} = x_1 \vec{e_1} + \cdots +x_n \vec{e_n}$로 나타낼 수 있다. ($x_1, \dots x_n$은 임의의 수)
 * 어떤 벡터 $\vec{v}$를 나타내는 방법은 한 가지, 유일무이하다.
 
-첫 번째 조건은 당연한데, 좌표로 이야기를 하고 싶은데 기준이 되는 
+첫 번째 조건은 당연한데, 좌표로 이야기를 하고 싶은데 기준이 되는 기저가 없으면 표현이 불가하기 때문이다. 두 번째 조건은 성가신 처리를 피하기 위해 필요한 조건이다. 만약 두번째 조건이 지켜지지 않으면 서로 다른 좌표 $x= (x_1, \dots , x_n)^T$ 
 
 
 
@@ -48,7 +48,8 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUxMzcyMjE0LC00NzQ1Njc2MDIsMTk2MT
-IxNjQ1NSwtMTgxODQ4ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3
-NiwtMTMwNjA4MjI4Miw1MDg1OTQ1MzEsLTMxNTkxMzU0N119
+eyJoaXN0b3J5IjpbLTEwMTg5MzIxMjUsLTQ3NDU2NzYwMiwxOT
+YxMjE2NDU1LC0xODE4NDg4MDc4LDExMjM3MDMzMSwxNTM2MzI2
+Mjc2LC0xMzA2MDgyMjgyLDUwODU5NDUzMSwtMzE1OTEzNTQ3XX
+0=
 -->
