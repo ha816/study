@@ -10,11 +10,11 @@ $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pma
 
 2차원 벡터는 모눈 종이 위에 점으로 찍을 수 있다. 3차원 벡터도 3차원 공간 안 어딘가에 한 점으로 나타낼 수 있다. 이런 식으로 **위치에 대응시키는 것을 강조**할 때는 **위치 벡터**라고 한다. 
 
-위치라는 해석 외에 **원점 0에서 그 위치를 향하는 화살표** 라는 해석도 있다. 덧셈과 정수배를 도형으로 해석하려면 화살표쪽이 더 잘어울린다. 덧셈은 화살표의 이어 붙임, 정수배는 길이를 늘이고 줄인다. 
+위치라는 해석 외에 **원점 0 에서 그 위치를 향하는 화살표**라는 해석도 있다. 덧셈과 정수배를 도형으로 해석하려면 화살표가 잘 어울린다. 덧셈은 화살표간의 이어 붙임, 정수배는 길이를 늘이거나 줄인다. 
 
 ## 기저(Basis)
 
-본래 공간에는 위라든지 오른쪽이라든지 특별한 방향이 없다. 덧셈과 정수배가 정의된 세계를 선형 공간이라고 한다. 이를 벡터 공간이라 부르는 사람도 있다. 
+본래 공간에서는 위라든지 오른쪽이라든지 특별한 방향이 없다. 덧셈과 정수배가 정의된 세계를 선형 공간이라고 한다. 이를 벡터 공간이라 부르는 사람도 있다. 
 선형 공간에서 벡터는 화살표 해석을 강조하여 $\vec{a}, \vec{x}, \vec{y}$ 처럼 표기한다. 
 
 선형공간은 우리가 사는 현실공간의 어느 측면을 어느 수준에서 추상화 한것이다. 완전한 복제가 아닌 기능 축소판이다. 선형 공간에서는 0벡터만 특별하고 그 외에는 어느 화살표도 대등하다. 적용되는 것은 덧셈과 정수배뿐이다. 
@@ -72,9 +72,9 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk1ODIwNjcyLC0xMjkwMTc0NDg4LDYzMz
-IyMTYxNiwxOTgxMjM5NzE1LC0xNjY0MzQ1MDE3LC00NzQ1Njc2
-MDIsMTk2MTIxNjQ1NSwtMTgxODQ4ODA3OCwxMTIzNzAzMzEsMT
-UzNjMyNjI3NiwtMTMwNjA4MjI4Miw1MDg1OTQ1MzEsLTMxNTkx
-MzU0N119
+eyJoaXN0b3J5IjpbLTIxMjg0MjYwNzEsLTEyOTAxNzQ0ODgsNj
+MzMjIxNjE2LDE5ODEyMzk3MTUsLTE2NjQzNDUwMTcsLTQ3NDU2
+NzYwMiwxOTYxMjE2NDU1LC0xODE4NDg4MDc4LDExMjM3MDMzMS
+wxNTM2MzI2Mjc2LC0xMzA2MDgyMjgyLDUwODU5NDUzMSwtMzE1
+OTEzNTQ3XX0=
 -->
