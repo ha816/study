@@ -58,7 +58,7 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 이것도 사실 같은 뜻인데 $x_1 \vec{e_1} + \cdots 
 +x_n \vec{e_n} = x'_1 \vec{e_1} + \cdots +x'_n \vec{e_n}$에서 우변을 이항하여 정리하면 $(x_1 - x'_1)\vec{e_1}+ \cdots + (x_n - x'_n)\vec{e_n} = \vec{0}$이 된다. $x_1 - x'_1 =u_1$의 형태로 치환하면 된다. 
 
-
+$u_1 \vec{e_1} + \cdots + u_n \vec{e_n}$ 와 같은 모양은 자주 나오므로 이름이 붙어 있다. 주어진 벡터 $\vec{e_1}, \cdots, \vec{e_n}$에 대해서 어떤 수 
 
 
 
@@ -73,8 +73,8 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjExMTY1LDE5ODEyMzk3MTUsLTE2Nj
-QzNDUwMTcsLTQ3NDU2NzYwMiwxOTYxMjE2NDU1LC0xODE4NDg4
-MDc4LDExMjM3MDMzMSwxNTM2MzI2Mjc2LC0xMzA2MDgyMjgyLD
-UwODU5NDUzMSwtMzE1OTEzNTQ3XX0=
+eyJoaXN0b3J5IjpbLTEzMjI3MDQ3NDYsMTk4MTIzOTcxNSwtMT
+Y2NDM0NTAxNywtNDc0NTY3NjAyLDE5NjEyMTY0NTUsLTE4MTg0
+ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYyNzYsLTEzMDYwODIyOD
+IsNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ==
 -->
