@@ -56,7 +56,7 @@ $$(x_1, \dots , x_n)^T  = (x'_1, \dots , x'_n)^T => x_1 \vec{e_1} + \cdots
 $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$ 
 
 이것도 사실 같은 뜻인데 $x_1 \vec{e_1} + \cdots 
-+x_n \vec{e_n} = x'_1 \vec{e_1} + \cdots +x'_n \vec{e_n}$에서
++x_n \vec{e_n} = x'_1 \vec{e_1} + \cdots +x'_n \vec{e_n}$에서 우변을 이항하여 정리하면 $(x_1 - x'_1)\vec{e_1}+ \cdots + (x_n - x'_n)\vec{e_n} = \vec{0}$
 
 
 
@@ -71,8 +71,8 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTMzOTI1NzksMTk4MTIzOTcxNSwtMT
-Y2NDM0NTAxNywtNDc0NTY3NjAyLDE5NjEyMTY0NTUsLTE4MTg0
-ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYyNzYsLTEzMDYwODIyOD
-IsNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ==
+eyJoaXN0b3J5IjpbLTU0OTUwOTIwNiwxOTgxMjM5NzE1LC0xNj
+Y0MzQ1MDE3LC00NzQ1Njc2MDIsMTk2MTIxNjQ1NSwtMTgxODQ4
+ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4MjI4Mi
+w1MDg1OTQ1MzEsLTMxNTkxMzU0N119
 -->
