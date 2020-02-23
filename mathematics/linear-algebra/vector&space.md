@@ -22,14 +22,18 @@ $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pma
 선형공간은 우리가 사는 현실공간의 어느 측면을 어느 수준에서 추상화 한것이다. 완전한 복제가 아닌 기능 축소판이다. 선형 공간에서는 0벡터만 특별하고 그 외에는 어느 화살표도 대등하다. 적용되는 것은 덧셈과 정수배뿐이다. 
 길이나 각도가 정의되어 있지 않다는 것에 주의하자. 다른 방향의 벡터끼리 대소를 비교하는 방법은 없다. 회전(=길이를 유지하며 방향을 바꾸다)이라는 작업도 정의할 수 없다. `본래의 선형 공간에 이런 기능은 없다`
 
-이제 특정 벡터 $\vec{v}$를 지정하는데 말로도 위치를 전할 수 있도록 번지(좌표)를 매겨 보자. 우선 기준이 되는 벡터 $\vec{e_1}, \vec{e_2}$가 무엇인지를 정하고 이를 바탕으로 번지를 ㅍ
+이제 특정 벡터 $\vec{v}$를 지정하는데 말로도 위치를 전할 수 있도록 번지(좌표)를 매겨 보자. 우선 기준이 되는 벡터 $\vec{e_1}, \vec{e_2}$가 무엇인지를 정하고 이를 바탕으로 번지를 표한하면 아래와 같다.
+$$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
+
+이런 기준이 되는 항쌍의 벡터를 기저라고 한다. 각 기준에서 몇 보를 나아가는가를 좌표라고 한다 
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDU5NDk3LDExMjM3MDMzMSwxNTM2Mz
-I2Mjc2LC0xMzA2MDgyMjgyLDUwODU5NDUzMSwtMzE1OTEzNTQ3
-XX0=
+eyJoaXN0b3J5IjpbLTEwNzM1MTgwNDQsMTEyMzcwMzMxLDE1Mz
+YzMjYyNzYsLTEzMDYwODIyODIsNTA4NTk0NTMxLC0zMTU5MTM1
+NDddfQ==
 -->
