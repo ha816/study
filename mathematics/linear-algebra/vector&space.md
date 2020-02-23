@@ -23,7 +23,7 @@ $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pma
 이제 특정 벡터 $\vec{v}$의 번지(좌표)를 알아보자. 우선 기준이 되는 벡터 $\vec{e_1}, \vec{e_2}$가 무엇인지를 정하고 이를 바탕으로 번지를 표현하면 아래와 같다.
 $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
-이런 기준이 되는 항 쌍의 벡터$(\vec{e_1}, \vec{e_2})$를 기저라고 한다.  그리고 기저의 멤버인 $\vec{e_1}, \vec{e_2}$을 기저 벡터라고 부른다. 
+이런 기준이 되는 항 쌍의 벡터$(\vec{e_1}, \vec{e_2})$를 기저라고 한다. 그리고 기저의 멤버인 $\vec{e_1}, \vec{e_2}$을 기저 벡터라고 부른다. 
 그리고 각 기준에서 몇 보를 나아가는가를 좌표라고 한다. 기저 $(\vec{e_1}, \vec{e_2})$에 대한 벡터 $\vec{v}$의 좌표는 $v = (3, 2)^T$이다. 
 
 어느 하나의 벡터 $\vec{v}$에 대해서 기저를 바꾸면 좌표 $v = (v_1, v_2)^T$의 $v_1, v_2$는 마구 변화한다. 이렇게 표현을 바꾸는 것만으로 바뀌는 것보다 표현에 의존하지 않는 성질이 더 본질적이라고 생각할 수 있다. 
@@ -72,10 +72,10 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODc0NTAxNjIsLTMyMzc4ODAwMSwxND
-UyODk3MjMyLC0yMTI4NDI2MDcxLC0xMjkwMTc0NDg4LDYzMzIy
-MTYxNiwxOTgxMjM5NzE1LC0xNjY0MzQ1MDE3LC00NzQ1Njc2MD
-IsMTk2MTIxNjQ1NSwtMTgxODQ4ODA3OCwxMTIzNzAzMzEsMTUz
-NjMyNjI3NiwtMTMwNjA4MjI4Miw1MDg1OTQ1MzEsLTMxNTkxMz
-U0N119
+eyJoaXN0b3J5IjpbNTg5MTY4NDUyLC0xNjg3NDUwMTYyLC0zMj
+M3ODgwMDEsMTQ1Mjg5NzIzMiwtMjEyODQyNjA3MSwtMTI5MDE3
+NDQ4OCw2MzMyMjE2MTYsMTk4MTIzOTcxNSwtMTY2NDM0NTAxNy
+wtNDc0NTY3NjAyLDE5NjEyMTY0NTUsLTE4MTg0ODgwNzgsMTEy
+MzcwMzMxLDE1MzYzMjYyNzYsLTEzMDYwODIyODIsNTA4NTk0NT
+MxLC0zMTU5MTM1NDddfQ==
 -->
