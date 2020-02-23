@@ -19,13 +19,13 @@ $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pma
 본래 공간에는 위라든지 오른쪽이라든지 특별한 방향이 없다. 덧셈과 정수배가 정의된 세계를 선형 공간이라고 한다. 이를 벡터 공간이라 부르는 사람도 있다. 
 선형 공간에서 벡터는 화살표 해석을 강조하여 $\vec{a}, \vec{x}, \vec{y}$ 처럼 표기한다. 
 
-선형공간은 우리가 사는 현실공간의 어느 측면을 어느 수준에서 추상화 한것이다.
+선형공간은 우리가 사는 현실공간의 어느 측면을 어느 수준에서 추상화 한것이다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTIwMjY1MDYsMTUzNjMyNjI3NiwtMT
-MwNjA4MjI4Miw1MDg1OTQ1MzEsLTMxNTkxMzU0N119
+eyJoaXN0b3J5IjpbLTI0NjE5NzkxNCwxNTM2MzI2Mjc2LC0xMz
+A2MDgyMjgyLDUwODU5NDUzMSwtMzE1OTEzNTQ3XX0=
 -->
