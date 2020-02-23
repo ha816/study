@@ -1,6 +1,6 @@
 # Overview
 
-데이터 다발을 다데이터를 단순히 수치의 조합으로 다루는 것이 아니라, '공간 안의 점'으로 생각하여 그 직관을 활용하는 것이 좋다. 
+데이터에서 단순히 수치의 조합으로 다루는 것이 아니라, '공간 안의 점'으로 생각하여 그 직관을 활용하는 것이 좋다. 
 
 거듭강조하지만 공간을 활용하는 것일 잊지 말자
 
@@ -75,9 +75,9 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM2MjQ3Njk2LC0xMjkwMTc0NDg4LDYzMz
-IyMTYxNiwxOTgxMjM5NzE1LC0xNjY0MzQ1MDE3LC00NzQ1Njc2
-MDIsMTk2MTIxNjQ1NSwtMTgxODQ4ODA3OCwxMTIzNzAzMzEsMT
-UzNjMyNjI3NiwtMTMwNjA4MjI4Miw1MDg1OTQ1MzEsLTMxNTkx
-MzU0N119
+eyJoaXN0b3J5IjpbLTQ4NzA2MDM4OCwtMTI5MDE3NDQ4OCw2Mz
+MyMjE2MTYsMTk4MTIzOTcxNSwtMTY2NDM0NTAxNywtNDc0NTY3
+NjAyLDE5NjEyMTY0NTUsLTE4MTg0ODgwNzgsMTEyMzcwMzMxLD
+E1MzYzMjYyNzYsLTEzMDYwODIyODIsNTA4NTk0NTMxLC0zMTU5
+MTM1NDddfQ==
 -->
