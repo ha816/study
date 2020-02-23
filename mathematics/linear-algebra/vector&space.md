@@ -43,6 +43,9 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 두 번째 조건은 성가신 처리를 피하기 위해 필요한 조건이다. 만약 두번째 조건이 지켜지지 않으면 서로 다른 좌표 $x= (x_1, \dots , x_n)^T, y = (y_1, \dots y_n)^T$를 보게 되었을때, 대응하는 실체 벡터 $\vec{x}, \vec{y}$ 가 정말로 다른 것인지, 같은 것인데 두 가지 표기법으로 되어있는 건지 고민하게 된다. 
 
+두 번째 조건을 알기 쉽게 표현하면 ... 
+
+$$(x_1, \dots , x_n)^T \neq (x'_1, \dots , x_n)^T$$
 
 
 
@@ -54,8 +57,8 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MTIzOTcxNSwtMTY2NDM0NTAxNywtND
-c0NTY3NjAyLDE5NjEyMTY0NTUsLTE4MTg0ODgwNzgsMTEyMzcw
-MzMxLDE1MzYzMjYyNzYsLTEzMDYwODIyODIsNTA4NTk0NTMxLC
-0zMTU5MTM1NDddfQ==
+eyJoaXN0b3J5IjpbMTY0ODg5NDg2OSwxOTgxMjM5NzE1LC0xNj
+Y0MzQ1MDE3LC00NzQ1Njc2MDIsMTk2MTIxNjQ1NSwtMTgxODQ4
+ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4MjI4Mi
+w1MDg1OTQ1MzEsLTMxNTkxMzU0N119
 -->
