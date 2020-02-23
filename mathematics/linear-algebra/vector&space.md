@@ -26,7 +26,7 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 기준이 되는 항 쌍의 벡터$(\vec{e_1}, \vec{e_2})$를 **기저(Basis)** 라고 한다. 그리고 그 기저의 멤버인 $\vec{e_1}, \vec{e_2}$을 **기저 벡터**라고 부른다. 
 그리고 각 기준에서 몇 배를 나아가는가를 좌표라고 한다. 기저 $(\vec{e_1}, \vec{e_2})$에 대한 벡터 $\vec{v}$의 좌표는 $v = (3, 2)^T$이다. 
 
-어느 하나의 벡터 $\vec{v}$에 대해서 기저를 바꾸면 좌표 $v = (v_1, v_2)^T$의 $v_1, v_2$는 마구 변화한다. 이렇게 표현을 바꾸는 것만으로 바뀌는 것보다 표현에 의존하지 않는 성질이 더 본질적이라고 생각할 수 있다. 
+어느 하나의 벡터 $\vec{v}$에 대해서 기저를 바꾸면, 좌표 $v = (v_1, v_2)^T$의 $v_1, v_2$는 마구 변화한다. 이렇게 기저를 바꾸는 것만으로 바뀌는 것보다 표현에 의존하지 않는 성질(덧셈, 정수배)이 더 본질적이라고 생각할 수 있다. 
 
 결국 어느 기저를 취할지에 의존하지 않은 개념이야말로 대상의 본래 성질을 지닌다는 입장에서 기저를 취하는 방법에 의존하지 않는 실체를 나타낸 것이 바로 화살표 $\vec{v}$이다. 이 화살표야 말로 벡터의 실제이고, 수의 나열은 그것을 표현한 방법으로 이해해자. 
 
@@ -72,10 +72,10 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NTY0MTM5MSwtMTY4NzQ1MDE2MiwtMz
-IzNzg4MDAxLDE0NTI4OTcyMzIsLTIxMjg0MjYwNzEsLTEyOTAx
-NzQ0ODgsNjMzMjIxNjE2LDE5ODEyMzk3MTUsLTE2NjQzNDUwMT
-csLTQ3NDU2NzYwMiwxOTYxMjE2NDU1LC0xODE4NDg4MDc4LDEx
-MjM3MDMzMSwxNTM2MzI2Mjc2LC0xMzA2MDgyMjgyLDUwODU5ND
-UzMSwtMzE1OTEzNTQ3XX0=
+eyJoaXN0b3J5IjpbNzU5OTQzNTcyLC0xNjg3NDUwMTYyLC0zMj
+M3ODgwMDEsMTQ1Mjg5NzIzMiwtMjEyODQyNjA3MSwtMTI5MDE3
+NDQ4OCw2MzMyMjE2MTYsMTk4MTIzOTcxNSwtMTY2NDM0NTAxNy
+wtNDc0NTY3NjAyLDE5NjEyMTY0NTUsLTE4MTg0ODgwNzgsMTEy
+MzcwMzMxLDE1MzYzMjYyNzYsLTEzMDYwODIyODIsNTA4NTk0NT
+MxLC0zMTU5MTM1NDddfQ==
 -->
