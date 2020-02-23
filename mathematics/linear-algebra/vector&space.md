@@ -28,7 +28,7 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 이런 기준이 되는 항 쌍의 벡터$(\vec{e_1}, \vec{e_2})$를 기저라고 한다.  그리고 기저의 멤버인 $\vec{e_1}, \vec{e_2}$을 기저 벡터라고 부른다. 
 그리고 각 기준에서 몇 보를 나아가는가를 좌표라고 한다. 기저 $(\vec{e_1}, \vec{e_2})$에 대한 벡터 $\vec{v}$의 좌표는 $v = (3, 2)^T$이다. 
 
-어느 하나의 벡터 $\vec{v}$에 대해서 기저를 바꾸면 좌표 v =
+어느 하나의 벡터 $\vec{v}$에 대해서 기저를 바꾸면 좌표 $v = (v_1, v_2)^T$의 $v_1, v_2$는 마구 변화한다. 이렇게 표현을 바꾸는 것만으로 바뀌는 것은 외관에 관한 성질에 불과하다.
 
 
 
@@ -36,7 +36,7 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTE4NDU2NCwtMTgxODQ4ODA3OCwxMT
+eyJoaXN0b3J5IjpbMTk2MTIxNjQ1NSwtMTgxODQ4ODA3OCwxMT
 IzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4MjI4Miw1MDg1OTQ1
 MzEsLTMxNTkxMzU0N119
 -->
