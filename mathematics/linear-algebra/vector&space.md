@@ -4,7 +4,7 @@
 
 # Vector(벡터)
 
-**수를 나열한 것이 벡터**다. 나열한 갯수에 따라 n차원 벡터라고 부른다. 특별히 언지하지 않으면 일반적으로 벡터는 세로로 늘어선 종벡터이다.  종 벡터에 T(Transpose) 전치를 표기하면 횡 벡터가 된다. 
+간단히 말하자면, **수를 나열한 것이 벡터**다. 나열한 갯수에 따라 $n$차원 벡터라고 부른다. 특별히 언지하지 않으면 일반적으로 벡터는 세로로 늘어선 종 벡터이다. 종 벡터에 T(Transpose) 전치를 표기하면 횡 벡터가 된다. 
 
 $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix}^T = (2,3,5,8)$$
 
@@ -72,7 +72,7 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDYxOTkxMjIsLTEyOTAxNzQ0ODgsNj
+eyJoaXN0b3J5IjpbLTE0ODgxOTc5NTIsLTEyOTAxNzQ0ODgsNj
 MzMjIxNjE2LDE5ODEyMzk3MTUsLTE2NjQzNDUwMTcsLTQ3NDU2
 NzYwMiwxOTYxMjE2NDU1LC0xODE4NDg4MDc4LDExMjM3MDMzMS
 wxNTM2MzI2Mjc2LC0xMzA2MDgyMjgyLDUwODU5NDUzMSwtMzE1
