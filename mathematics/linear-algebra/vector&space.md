@@ -10,12 +10,13 @@
 
 $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix}^T = (2,3,5,8)$$
 
-
+2차원 벡터는 모눈 종이 위에 점으로 찍을 수 있다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ==
+eyJoaXN0b3J5IjpbLTEzMDYwODIyODIsNTA4NTk0NTMxLC0zMT
+U5MTM1NDddfQ==
 -->
