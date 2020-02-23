@@ -20,7 +20,7 @@ $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pma
 
 사실 선형 공간에서는 길이나 각도가 정의되어 있지 않다는 것에 주의하자. 다른 방향의 벡터끼리 대소를 비교하는 방법은 없다. 회전(=길이를 유지하며 방향을 바꾸다)이라는 작업도 정의할 수 없다. `본래의 선형 공간에 이런 기능은 없다`
 
-이제 특정 벡터 $\vec{v}$를 번지(좌표)를 매겨 보자. 우선 기준이 되는 벡터 $\vec{e_1}, \vec{e_2}$가 무엇인지를 정하고 이를 바탕으로 번지를 표한하면 아래와 같다.
+이제 특정 벡터 $\vec{v}$를 번지(좌표)를 알아보자. 우선 기준이 되는 벡터 $\vec{e_1}, \vec{e_2}$가 무엇인지를 정하고 이를 바탕으로 번지를 표한하면 아래와 같다.
 $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 이런 기준이 되는 항 쌍의 벡터$(\vec{e_1}, \vec{e_2})$를 기저라고 한다.  그리고 기저의 멤버인 $\vec{e_1}, \vec{e_2}$을 기저 벡터라고 부른다. 
@@ -72,7 +72,7 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTcxNjg0ODIsLTMyMzc4ODAwMSwxND
+eyJoaXN0b3J5IjpbLTEyMDY3MTc3NDIsLTMyMzc4ODAwMSwxND
 UyODk3MjMyLC0yMTI4NDI2MDcxLC0xMjkwMTc0NDg4LDYzMzIy
 MTYxNiwxOTgxMjM5NzE1LC0xNjY0MzQ1MDE3LC00NzQ1Njc2MD
 IsMTk2MTIxNjQ1NSwtMTgxODQ4ODA3OCwxMTIzNzAzMzEsMTUz
