@@ -45,7 +45,7 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 두 번째 조건을 알기 쉽게 표현하면 ... 
 
-$$(x_1, \dots , x_n)^T \neq (x'_1, \dots , x'_n)^T$$ 이라면 
+$$(x_1, \dots , x_n)^T \neq (x'_1, \dots , x'_n)^T => x_1 \vec{e_1} + \cdots +x_n \vec{e_n} \neq x_1 \vec{e_1} + \cdots +x'_n \vec{e_n}$$ 
 
 
 
@@ -58,8 +58,8 @@ $$(x_1, \dots , x_n)^T \neq (x'_1, \dots , x'_n)^T$$ 이라면
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2OTk5Njg1NiwxOTgxMjM5NzE1LC0xNj
-Y0MzQ1MDE3LC00NzQ1Njc2MDIsMTk2MTIxNjQ1NSwtMTgxODQ4
-ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4MjI4Mi
-w1MDg1OTQ1MzEsLTMxNTkxMzU0N119
+eyJoaXN0b3J5IjpbLTExOTM5NDEyMzIsMTk4MTIzOTcxNSwtMT
+Y2NDM0NTAxNywtNDc0NTY3NjAyLDE5NjEyMTY0NTUsLTE4MTg0
+ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYyNzYsLTEzMDYwODIyOD
+IsNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ==
 -->
