@@ -60,7 +60,7 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 주어진 벡터 $\vec{e_1}, \cdots, \vec{e_n}$에 대해서 어떤 수 $u_1, \dots u_n$를 가져와 생기는 벡터를 $\vec{e_1}, \cdots, \vec{e_n}$의 **선형결합**이라고 한다. 
 
-선형결합으로 임의의 벡터 $\vec{v}$ㄱ
+선형결합으로 임의의 벡터 $\vec{v}$가 나타나고, 그리고 그 표현법이 유일무이 할때 ($\vec{e_1}, \cdots, \vec{e_n}$)을 기저라고 부른다. 
 
 
 
@@ -75,7 +75,7 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1Mjk0MDQ1LDE5ODEyMzk3MTUsLTE2Nj
+eyJoaXN0b3J5IjpbNjMzMjIxNjE2LDE5ODEyMzk3MTUsLTE2Nj
 QzNDUwMTcsLTQ3NDU2NzYwMiwxOTYxMjE2NDU1LC0xODE4NDg4
 MDc4LDExMjM3MDMzMSwxNTM2MzI2Mjc2LC0xMzA2MDgyMjgyLD
 UwODU5NDUzMSwtMzE1OTEzNTQ3XX0=
