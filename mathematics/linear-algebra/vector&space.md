@@ -52,7 +52,7 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 이것도 사실 같은 뜻인데 $x_1 \vec{e_1} + \cdots 
 +x_n \vec{e_n} = x'_1 \vec{e_1} + \cdots +x'_n \vec{e_n}$에서 우변을 이항하여 정리하면 $(x_1 - x'_1)\vec{e_1}+ \cdots + (x_n - x'_n)\vec{e_n} = \vec{0}$이 된다. $x_1 - x'_1 =u_1$의 형태로 치환하면 된다. 
 
-주어진 벡터 $\vec{e_1}, \cdots, \vec{e_n}$에 대해서 어떤 수 $u_1, \dots u_n$를 가져와 생기는 벡터를 $\vec{e_1}, \cdots, \vec{e_n}$의 **선형결합**이라고 한다. 
+주어진 벡터 $\vec{e_1}, \cdots, \vec{e_n}$에 대해서 어떤 수 $u_1, \dots u_n$를 가져와  표현하는 터를 $\vec{e_1}, \cdots, \vec{e_n}$의 **선형결합**이라고 한다. 
 
 정리하자면, 선형결합으로 임의의 벡터 $\vec{v}$가 나타나고, 그리고 그 표현법이 유일무이 할때 ($\vec{e_1}, \cdots, \vec{e_n}$)을 기저라고 부른다. 
 
@@ -68,10 +68,10 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYwMDQ1MjUzLDc1OTk0MzU3MiwtMTY4Nz
-Q1MDE2MiwtMzIzNzg4MDAxLDE0NTI4OTcyMzIsLTIxMjg0MjYw
-NzEsLTEyOTAxNzQ0ODgsNjMzMjIxNjE2LDE5ODEyMzk3MTUsLT
-E2NjQzNDUwMTcsLTQ3NDU2NzYwMiwxOTYxMjE2NDU1LC0xODE4
-NDg4MDc4LDExMjM3MDMzMSwxNTM2MzI2Mjc2LC0xMzA2MDgyMj
-gyLDUwODU5NDUzMSwtMzE1OTEzNTQ3XX0=
+eyJoaXN0b3J5IjpbLTIwNTAzNzEyNDksNzU5OTQzNTcyLC0xNj
+g3NDUwMTYyLC0zMjM3ODgwMDEsMTQ1Mjg5NzIzMiwtMjEyODQy
+NjA3MSwtMTI5MDE3NDQ4OCw2MzMyMjE2MTYsMTk4MTIzOTcxNS
+wtMTY2NDM0NTAxNywtNDc0NTY3NjAyLDE5NjEyMTY0NTUsLTE4
+MTg0ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYyNzYsLTEzMDYwOD
+IyODIsNTA4NTk0NTMxLC0zMTU5MTM1NDddfQ==
 -->
