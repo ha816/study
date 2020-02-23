@@ -25,7 +25,7 @@ $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pma
 이제 특정 벡터 $\vec{v}$를 지정하는데 말로도 위치를 전할 수 있도록 번지(좌표)를 매겨 보자. 우선 기준이 되는 벡터 $\vec{e_1}, \vec{e_2}$가 무엇인지를 정하고 이를 바탕으로 번지를 표한하면 아래와 같다.
 $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
-이런 기준이 되는 항 쌍의 벡터를 기저라고 한다.  $(\vec{e_1}, \vec{e_2})$ 그리고 기저의 멤버인 $\vec{e_1}, \vec{e_2}$을 기저 벡터라고 부른다. 
+이런 기준이 되는 항 쌍의 벡터$(\vec{e_1}, \vec{e_2})$를 기저라고 한다.  그리고 기저의 멤버인 $\vec{e_1}, \vec{e_2}$을 기저 벡터라고 부른다. 
 그리고 각 기준에서 몇 보를 나아가는가를 좌표라고 한다. 기저 $(\vec{e_1}, \vec{e_2})$에 대한 벡터 $\vec{v}$의 좌표는 $v = (3, 2)^T$이다. 
 
 
@@ -36,7 +36,7 @@ $$\vec{v}= 3\vec{e_1} + 2\vec{e_2}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MTczMTYzNCwxMTIzNzAzMzEsMTUzNj
-MyNjI3NiwtMTMwNjA4MjI4Miw1MDg1OTQ1MzEsLTMxNTkxMzU0
-N119
+eyJoaXN0b3J5IjpbLTE4MTg0ODgwNzgsMTEyMzcwMzMxLDE1Mz
+YzMjYyNzYsLTEzMDYwODIyODIsNTA4NTk0NTMxLC0zMTU5MTM1
+NDddfQ==
 -->
