@@ -53,7 +53,11 @@ $$(x_1, \dots , x_n)^T  = (x'_1, \dots , x'_n)^T => x_1 \vec{e_1} + \cdots
 
 수학에서는 좀 더 멋진 표현을 선호하는데 그건 아래와 같다. 
 
-$$u_1 \vec{e_1} + \cdots + u_1 \vec{e_1}$$ 
+$$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$ 
+
+이것도 사실 같은 뜻인데 $(x_1, \dots , x_n)^T = (x'_1, \dots , x'_n)^T => x_1 \vec{e_1} + \cdots 
++x_n \vec{e_n} \neq x_1 \vec{e_1} + \cdots +x'_n \vec{e_n}$
+
 
 
 
@@ -67,8 +71,8 @@ $$u_1 \vec{e_1} + \cdots + u_1 \vec{e_1}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkzNjUwNzAwLDE5ODEyMzk3MTUsLTE2Nj
-QzNDUwMTcsLTQ3NDU2NzYwMiwxOTYxMjE2NDU1LC0xODE4NDg4
-MDc4LDExMjM3MDMzMSwxNTM2MzI2Mjc2LC0xMzA2MDgyMjgyLD
-UwODU5NDUzMSwtMzE1OTEzNTQ3XX0=
+eyJoaXN0b3J5IjpbLTgxNDExMDc4NywxOTgxMjM5NzE1LC0xNj
+Y0MzQ1MDE3LC00NzQ1Njc2MDIsMTk2MTIxNjQ1NSwtMTgxODQ4
+ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4MjI4Mi
+w1MDg1OTQ1MzEsLTMxNTkxMzU0N119
 -->
