@@ -47,7 +47,9 @@ private의 일반적인 오해는 private으로 선언한 변수는 해당 인�
 
 하지만 package-private 클래스나 private 중첩 클래스는 데이터 필드를 노출해도 하등 문제가 없다. 왜냐하면 패키지 내부에서만 쓰이는 코드이기 때문에 바깥의 코드는 아무 영향을 받지 않는다.
 
-자바 플랫폼 라이브러리에도 public 클래스의 필드를 직접 노출하지 말라는 규칙을 어기는 사례가 종종 있다. 대표적으로는 java.awt.package의 Point와 Dimension클래스
+자바 플랫폼 라이브러리에도 public 클래스의 필드를 직접 노출하지 말라는 규칙을 어기는 사례가 종종 있다. 대표적으로는 java.awt.package의 Point와 Dimension클래스다. 이 **클래스들은 절대 흉내내지 말자.**
+
+public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아니다. API르
 
 ### 15. 변경 가능성을 최소화 하라
 
@@ -170,9 +172,9 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODMwMjQ1MTMsMTk3Njk5ODMwMywtMT
-YwNDk2NzQxNSwtMTI5ODUxMjg5NywxMzcxNjcxNzcxLDEzNzE2
-NzE3NzEsLTEyNTQ1MTc2LDEzNzE2NzE3NzEsMzA0MTIzNzUwLD
-E0NzYyODcxODcsODY5ODMzNjcxLDEzMzM5ODkxNTUsLTIwNjg2
-NTE0MjIsLTE3NzI0MjM3MzIsLTE1ODM0MzIzMjNdfQ==
+eyJoaXN0b3J5IjpbNzgzODQwNTg1LDE5NzY5OTgzMDMsLTE2MD
+Q5Njc0MTUsLTEyOTg1MTI4OTcsMTM3MTY3MTc3MSwxMzcxNjcx
+NzcxLC0xMjU0NTE3NiwxMzcxNjcxNzcxLDMwNDEyMzc1MCwxND
+c2Mjg3MTg3LDg2OTgzMzY3MSwxMzMzOTg5MTU1LC0yMDY4NjUx
+NDIyLC0xNzcyNDIzNzMyLC0xNTgzNDMyMzIzXX0=
 -->
