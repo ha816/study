@@ -65,11 +65,11 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 	* 모든 필드를 final로 선언한다. 
 	* 모든 필드를 private으로 선언한다.
 	* 자신 외에는 내부의 가변 컴포넌트에 접근할 수 없도록 한다. 
-		* 클래스에 가변 객체를 참조하는 필드가 하나라도 있다면 클라이언트에서 그 객체 참조를 얻을 수 없게 해야 한다. 만약 가변객체를 getter메서드로 제공한다 하더라도 그대로 반환하면 안되고, 
-	 
-추가적으로 변경가능한 필드에 대해서는 외부에서 수정할 수 없도록 하기위해서, 생성자나 접근자, readObject 메소드 안에 ‘방어적 복사본’ 을 만들어야 한다.
- 
- immutable  클래스의 장점  
+		* 클래스에 가변 객체를 참조하는 필드가 하나라도 있다면 클라이언트에서 그 객체 참조를 얻을 수 없게 해야 한다. 만약 가변객체를 getter메서드로 제공한다 하더라도 그대로 반환하면 안되고, **가변 객체의 방어적 복사본을 반환해야 한다.** 
+		
+
+	  
+ 불변 클래스의 장점  
  1. 단순함
  2. 스레드에 안전
  3. 변경 불가능 객체는 자유롭게 공유가 가능
@@ -178,7 +178,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NjI3NDM1MCwxMjkyNDgzNzE0LC02OD
+eyJoaXN0b3J5IjpbLTQyODcxMDgxMywxMjkyNDgzNzE0LC02OD
 kzMTU4NjIsLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3
 NDE1LC0xMjk4NTEyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MS
 wtMTI1NDUxNzYsMTM3MTY3MTc3MSwzMDQxMjM3NTAsMTQ3NjI4
