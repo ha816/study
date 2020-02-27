@@ -65,7 +65,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 	* 모든 필드를 final로 선언한다. 
 	* 모든 필드를 private으로 선언한다.
 	* 자신 외에는 내부의 가변 컴포넌트에 접근할 수 없도록 한다. 
-		* 클래스에 가변 객체를 참조하는 필드가 하나라도 있다면 클라이언트에서 그 객체 참조를 얻을 수 없게 해야 한다. 
+		* 클래스에 가변 객체를 참조하는 필드가 하나라도 있다면 클라이언트에서 그 객체 참조를 얻을 수 없게 해야 한다. 만약 접
 	 
 추가적으로 변경가능한 필드에 대해서는 외부에서 수정할 수 없도록 하기위해서, 생성자나 접근자, readObject 메소드 안에 ‘방어적 복사본’ 을 만들어야 한다.
  
@@ -178,10 +178,10 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MjQ4MzcxNCwtNjg5MzE1ODYyLC0xMz
-k2NTg5NDksMTk3Njk5ODMwMywtMTYwNDk2NzQxNSwtMTI5ODUx
-Mjg5NywxMzcxNjcxNzcxLDEzNzE2NzE3NzEsLTEyNTQ1MTc2LD
-EzNzE2NzE3NzEsMzA0MTIzNzUwLDE0NzYyODcxODcsODY5ODMz
-NjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0MjIsLTE3NzI0MjM3Mz
-IsLTE1ODM0MzIzMjNdfQ==
+eyJoaXN0b3J5IjpbNTk1MjM1NiwxMjkyNDgzNzE0LC02ODkzMT
+U4NjIsLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3NDE1
+LC0xMjk4NTEyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MSwtMT
+I1NDUxNzYsMTM3MTY3MTc3MSwzMDQxMjM3NTAsMTQ3NjI4NzE4
+Nyw4Njk4MzM2NzEsMTMzMzk4OTE1NSwtMjA2ODY1MTQyMiwtMT
+c3MjQyMzczMiwtMTU4MzQzMjMyM119
 -->
