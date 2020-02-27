@@ -56,15 +56,16 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 ## Item15. 변경 가능성을 최소화 하라
 
-불변 클래스(immutable)란 간단히 말해 그 인스턴스의 내부 값을 수정할 수 없는 클래스이다. 불변 인스턴스는 가지는 정보가 고정되어 객체가 파괴되는 순간까지 절대 변하지 않는다. 자바 플랫폼 라이브러리에는 다양한 불변클래스가 있다. String, 기본 타입의 박싱 클래스, BigInter, BigDecimal등이 있다. 이렇게 불변으로 클래스가 설계된 이유는 가변 클래스보다 설계
+불변 클래스(immutable)란 간단히 말해 그 인스턴스의 내부 값을 수정할 수 없는 클래스이다. 불변 인스턴스는 가지는 정보가 고정되어 객체가 파괴되는 순간까지 절대 변하지 않는다. 자바 플랫폼 라이브러리에는 다양한 불변클래스가 있다. String, 기본 타입의 박싱 클래스, BigInter, BigDecimal등이 있다. 이렇게 불변으로 클래스가 설계된 이유는 가변 클래스보다 설계하고 구현하고 사용하기 쉬우며, 오류가 생길 여지도 적고 훨씬 안전하다.
 
-불변 클래스의 5가지 규칙
- 1. 객체 상태를 변경하는 메서드(수정자 메서드등)을 제공하지 않는다.
- 2. 계승할수 없도록 한다. 
- 3. 모든 필드를 fianl로 선언한다. 
- 4. 모든 필드를 private으로 선언한다.
- 5. 변경 가능 컴포넌트에 대한 독점적 접근권을 보장한다(getter 메서드)
-	 이경님 어록 : 변경가능한 필드에 대해서는 외부에서 수정할 수 없도록 하기위해서, 생성자나 접근자, readObject 메소드 안에 ‘방어적 복사본’ 을 만들어야 한다.
+불변 클래스를 만들기 위한 규칙
+* 객체 상태를 변경하는 메서드(수정자 메서드등)을 제공하지 않는다.
+* 계승할수 없도록 한다. 
+* 모든 필드를 final로 선언한다. 
+* 모든 필드를 private으로 선언한다.
+* 변경 가능 컴포넌트에 대한 독점적 접근권을 보장한다(getter 메서드)
+	 
+이경님 어록 : 변경가능한 필드에 대해서는 외부에서 수정할 수 없도록 하기위해서, 생성자나 접근자, readObject 메소드 안에 ‘방어적 복사본’ 을 만들어야 한다.
  
  immutable  클래스의 장점  
  1. 단순함
@@ -175,10 +176,10 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU2NjA4NzY4LC02ODkzMTU4NjIsLTEzOT
-Y1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3NDE1LC0xMjk4NTEy
-ODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MSwtMTI1NDUxNzYsMT
-M3MTY3MTc3MSwzMDQxMjM3NTAsMTQ3NjI4NzE4Nyw4Njk4MzM2
-NzEsMTMzMzk4OTE1NSwtMjA2ODY1MTQyMiwtMTc3MjQyMzczMi
-wtMTU4MzQzMjMyM119
+eyJoaXN0b3J5IjpbLTk4Mzk4ODMzNSwtNjg5MzE1ODYyLC0xMz
+k2NTg5NDksMTk3Njk5ODMwMywtMTYwNDk2NzQxNSwtMTI5ODUx
+Mjg5NywxMzcxNjcxNzcxLDEzNzE2NzE3NzEsLTEyNTQ1MTc2LD
+EzNzE2NzE3NzEsMzA0MTIzNzUwLDE0NzYyODcxODcsODY5ODMz
+NjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0MjIsLTE3NzI0MjM3Mz
+IsLTE1ODM0MzIzMjNdfQ==
 -->
