@@ -507,7 +507,7 @@ public static <T, U> Comparator<T> comparing(
 thenComparing은 인스턴스 메서드로 3개가 다중정의(overloading)되어 있다. 
 
 >핵심정리
->순서를 고려해야 하는 클래스를 작성한다면 꼭 Comparable 인터페이스를 구현하도록 하자. 그래야 그 클래스의 인스턴스들을 쉽게 정렬하고, 검색하고, 비교 기능을 제공하는 컬렉션
+>순서를 고려해야 하는 클래스를 작성한다면 꼭 Comparable 인터페이스를 구현하도록 하자. 그래야 그 클래스의 인스턴스들을 정렬하고, 검색하고, 비교하는 컬렉션의 기능이 잘 동작한다. compareTo 메서드에서 필드의 값을 비교할때는 <>연산자는 쓰지 말아야 한다. 그 대신 박싱된 기본 타입 클래스가 제공하는 정적 메서드나 Comparator 인터페이스가 제공하는 비교자 생성 메서드를 사용하자. 
 
 
 
@@ -527,7 +527,7 @@ thenComparing은 인스턴스 메서드로 3개가 다중정의(overloading)되�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MTI1NTE3NSwxNjg1NDQ2MTY1LDYyND
+eyJoaXN0b3J5IjpbMjAxMzY4NjIwNywxNjg1NDQ2MTY1LDYyND
 gyMzYzNSwxMjU1Mzk0MjIxLDI1MDk3ODYzMSw0MTI1NTM5NzUs
 NDY1Nzg1MDQ0LC03OTcyOTgyNDAsMTI1MDg5NTQ0MCwtMjEzNT
 c4MDkzNCw1NTY1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0
