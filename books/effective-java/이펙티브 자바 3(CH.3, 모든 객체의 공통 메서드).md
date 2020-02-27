@@ -483,7 +483,12 @@ public int compareTo(PhoneNumber pn){
 }
 ```
 
-위 코드는 클래스 초기화시에 비교자 생성자 메서드를 통해 comparator를 생성한다. comparingInt는 개체 참조를 int 타입 키에 매핑하는 키 추출함수(key extractor function)를 인수로 받아, 그 키를 기준으로 순서를 정하는 비교자를 반환하는 정적 메서드다. 
+위 코드는 클래스 초기화시에 비교자 생성자 메서드를 통해 comparator를 생성한다. comparingInt는 개체 참조를 int 타입 키에 매핑하는 키 추출함수(key extractor function)를 인수로 받는다.  
+```
+comparingInt((PhoneNumber pn) -> ph.areaCode)
+```
+
+그리고 그 키를 기준으로 순서를 정하는 비교자를 반환하는 정적 메서드다. 
 
 
 
@@ -501,11 +506,11 @@ public int compareTo(PhoneNumber pn){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTQwMjU0OSwxNjg1NDQ2MTY1LDYyND
-gyMzYzNSwxMjU1Mzk0MjIxLDI1MDk3ODYzMSw0MTI1NTM5NzUs
-NDY1Nzg1MDQ0LC03OTcyOTgyNDAsMTI1MDg5NTQ0MCwtMjEzNT
-c4MDkzNCw1NTY1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0
-LDM1MzAyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3Mz
-Q0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2
-MDJdfQ==
+eyJoaXN0b3J5IjpbNzcwODI1MjAwLDE2ODU0NDYxNjUsNjI0OD
+IzNjM1LDEyNTUzOTQyMjEsMjUwOTc4NjMxLDQxMjU1Mzk3NSw0
+NjU3ODUwNDQsLTc5NzI5ODI0MCwxMjUwODk1NDQwLC0yMTM1Nz
+gwOTM0LDU1NjUxMTU0NywtOTUxNzIzMjkxLC03Mjg2Njk3OTQs
+MzUzMDI0ODQwLDExMzk2ODYxMDcsLTU3NTAwNjc5NCwtMjczND
+QyNTQ4LC0xNjY3MzI2MDExLC00MjgzNjczNDgsMTc5MDkxMDYw
+Ml19
 -->
