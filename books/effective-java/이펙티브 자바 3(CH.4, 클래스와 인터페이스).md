@@ -1,7 +1,5 @@
 # 클래스와 인터페이스
 
-추상화의 기본 단위인 클래스와 인터페이스는 자바 언어의 코어 영역이다. 그래서 자바 언어에는 클래스와 인터페이스 설계에 사용하는 좋은 도구가 많다. 
-
 ## Item13. 클래스와 멤버의 접근 권한은 최소화하라
 
 어설프게 설계된 컴포넌트와 잘 설계된 컴포넌트의 가장 큰 차이는 바로 클래스 내부 데이터와 내부 구현 정보를 외부 컴포넌트로 부터 얼마나 잘 숨겼느냐이다. 정보은닉 (information hiding), 혹은 캡슐화(capsulation)으로 불리는 이 개념은 소프트웨어 설계의 근간이 되는 원리다. 
@@ -177,7 +175,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTcyOTU0NiwxMzcxNjcxNzcxLC0xMj
+eyJoaXN0b3J5IjpbMTM3MTY3MTc3MSwxMzcxNjcxNzcxLC0xMj
 U0NTE3NiwxMzcxNjcxNzcxLDMwNDEyMzc1MCwxNDc2Mjg3MTg3
 LDg2OTgzMzY3MSwxMzMzOTg5MTU1LC0yMDY4NjUxNDIyLC0xNz
 cyNDIzNzMyLC0xNTgzNDMyMzIzXX0=
