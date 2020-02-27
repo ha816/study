@@ -39,7 +39,7 @@ private의 일반적인 오해는 private으로 선언한 변수는 해당 인�
 - 예외적으로 public static final은 사용 가능하나 참조하는 객체는 변경 불가능 객체로 만들어야 한다.
 
 >핵심정리
->프로그램 요소의 접근성은 가능한 최소로 하자.(접근 제한이 최대한 강하게) 꼭 필요한 것만 골라 최소한의 public API를 설계하자.
+>프로그램 요소의 접근성은 가능한 최소로 하자.(접근 제한이 최대한 강하게) 꼭 필요한 것만 골라 최소한의 public API를 설계하자. 그 외에는 클래스, 인터페이스, 멤버가 의도치 않게 API로 공개되는 일이 없도록 해야 한다. public 
 
 ### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
 
@@ -171,9 +171,9 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NDI2OTgxMywtMTYwNDk2NzQxNSwtMT
-I5ODUxMjg5NywxMzcxNjcxNzcxLDEzNzE2NzE3NzEsLTEyNTQ1
-MTc2LDEzNzE2NzE3NzEsMzA0MTIzNzUwLDE0NzYyODcxODcsOD
-Y5ODMzNjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0MjIsLTE3NzI0
-MjM3MzIsLTE1ODM0MzIzMjNdfQ==
+eyJoaXN0b3J5IjpbLTEwMDQ2MjEyMjAsLTE2MDQ5Njc0MTUsLT
+EyOTg1MTI4OTcsMTM3MTY3MTc3MSwxMzcxNjcxNzcxLC0xMjU0
+NTE3NiwxMzcxNjcxNzcxLDMwNDEyMzc1MCwxNDc2Mjg3MTg3LD
+g2OTgzMzY3MSwxMzMzOTg5MTU1LC0yMDY4NjUxNDIyLC0xNzcy
+NDIzNzMyLC0xNTgzNDMyMzIzXX0=
 -->
