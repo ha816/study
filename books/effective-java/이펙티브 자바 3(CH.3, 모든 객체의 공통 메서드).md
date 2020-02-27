@@ -493,7 +493,18 @@ comparingInt((PhoneNumber pn) -> ph.areaCode)
 
 thenComparingInt는 원하는 만큼 연달아 호출할 수 있다. 앞서 예제에서는 prefix, lineNum을 키로 사용했다. 
 
-객체 참조용 비교자 생성 메서드로 준비되어 있다. comparing이라는 정적 메서드 2개가 다중 정의되어 있는데, 첫번째는 
+객체 참조용 비교자 생성 메서드로 준비되어 있다. comparing이라는 정적 메서드 2개가 다중 정의되어 있다.
+```
+public static <T, U> Comparator<T> comparing(
+	Function<? super T, ? extends U> keyExtractor, Comparator<? super U> keyComparator
+)
+public static <T, U extends Comparable<? super U>> Comparator<T> comparing(
+	Function<? super T, ? extends U> keyExtractor
+)
+```
+
+
+
 
 
 
@@ -510,11 +521,11 @@ thenComparingInt는 원하는 만큼 연달아 호출할 수 있다. 앞서 예�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NzgyODU5NywxNjg1NDQ2MTY1LDYyND
-gyMzYzNSwxMjU1Mzk0MjIxLDI1MDk3ODYzMSw0MTI1NTM5NzUs
-NDY1Nzg1MDQ0LC03OTcyOTgyNDAsMTI1MDg5NTQ0MCwtMjEzNT
-c4MDkzNCw1NTY1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0
-LDM1MzAyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3Mz
-Q0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2
-MDJdfQ==
+eyJoaXN0b3J5IjpbMzk4NTE0NDg2LDE2ODU0NDYxNjUsNjI0OD
+IzNjM1LDEyNTUzOTQyMjEsMjUwOTc4NjMxLDQxMjU1Mzk3NSw0
+NjU3ODUwNDQsLTc5NzI5ODI0MCwxMjUwODk1NDQwLC0yMTM1Nz
+gwOTM0LDU1NjUxMTU0NywtOTUxNzIzMjkxLC03Mjg2Njk3OTQs
+MzUzMDI0ODQwLDExMzk2ODYxMDcsLTU3NTAwNjc5NCwtMjczND
+QyNTQ4LC0xNjY3MzI2MDExLC00MjgzNjczNDgsMTc5MDkxMDYw
+Ml19
 -->
