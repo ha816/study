@@ -504,7 +504,10 @@ public static <T, U> Comparator<T> comparing(
 ```
 첫 번째는 키 추출자를 받아서, 그 키의 자연스러운 순서를 그대로 사용한다. 두 번째는 키 추출자와 비교할 비교자를 받는다.
 
+thenComparing은 인스턴스 메서드로 3개가 다중정의(overloading)되어 있다. 
 
+>핵심정리
+>순서를 고려해야 하는 클래스를 작성한다면 꼭 Comparable 인터페이스를 구현하도록 하자. 그래야 그 클래스의 인스턴스들을 쉽게 정렬하고, 검색하고, 비교 기능을 제공하는 컬렉션
 
 
 
@@ -524,11 +527,11 @@ public static <T, U> Comparator<T> comparing(
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTExNzM1NzIsMTY4NTQ0NjE2NSw2Mj
-Q4MjM2MzUsMTI1NTM5NDIyMSwyNTA5Nzg2MzEsNDEyNTUzOTc1
-LDQ2NTc4NTA0NCwtNzk3Mjk4MjQwLDEyNTA4OTU0NDAsLTIxMz
-U3ODA5MzQsNTU2NTExNTQ3LC05NTE3MjMyOTEsLTcyODY2OTc5
-NCwzNTMwMjQ4NDAsMTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNz
-M0NDI1NDgsLTE2NjczMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEw
-NjAyXX0=
+eyJoaXN0b3J5IjpbMTc2MTI1NTE3NSwxNjg1NDQ2MTY1LDYyND
+gyMzYzNSwxMjU1Mzk0MjIxLDI1MDk3ODYzMSw0MTI1NTM5NzUs
+NDY1Nzg1MDQ0LC03OTcyOTgyNDAsMTI1MDg5NTQ0MCwtMjEzNT
+c4MDkzNCw1NTY1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0
+LDM1MzAyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3Mz
+Q0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2
+MDJdfQ==
 -->
