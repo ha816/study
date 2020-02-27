@@ -67,7 +67,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 	* 자신 외에는 내부의 가변 컴포넌트에 접근할 수 없도록 한다. 
 		* 클래스에 가변 객체를 참조하는 필드가 하나라도 있다면 클라이언트에서 그 객체 참조를 얻을 수 없게 해야 한다. 만약 가변객체를 getter메서드로 제공한다 하더라도 그대로 반환하면 안되고, **가변 객체의 방어적 복사본을 반환해야 한다.** 
 		
-
+피연산자와 함수를 적용해서 그 결과를 반환하지만, 기존에 피연산자 자체는 
 	  
  불변 클래스의 장점  
  1. 단순함
@@ -178,10 +178,10 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODcxMDgxMywxMjkyNDgzNzE0LC02OD
-kzMTU4NjIsLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3
-NDE1LC0xMjk4NTEyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MS
-wtMTI1NDUxNzYsMTM3MTY3MTc3MSwzMDQxMjM3NTAsMTQ3NjI4
-NzE4Nyw4Njk4MzM2NzEsMTMzMzk4OTE1NSwtMjA2ODY1MTQyMi
-wtMTc3MjQyMzczMiwtMTU4MzQzMjMyM119
+eyJoaXN0b3J5IjpbMTE0MDE1NzMsMTI5MjQ4MzcxNCwtNjg5Mz
+E1ODYyLC0xMzk2NTg5NDksMTk3Njk5ODMwMywtMTYwNDk2NzQx
+NSwtMTI5ODUxMjg5NywxMzcxNjcxNzcxLDEzNzE2NzE3NzEsLT
+EyNTQ1MTc2LDEzNzE2NzE3NzEsMzA0MTIzNzUwLDE0NzYyODcx
+ODcsODY5ODMzNjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0MjIsLT
+E3NzI0MjM3MzIsLTE1ODM0MzIzMjNdfQ==
 -->
