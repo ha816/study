@@ -32,6 +32,7 @@
 
 private의 일반적인 오해는 private으로 선언한 변수는 해당 인스턴스만 접근할 수 있다고 생각하는 것이다. 같은 인스턴스는 아니지만 같은 타입의 모든 인스턴스가 private 멤버 변수에 접근이 가능하다. 
 
+그 밖에 
  - 객체 필드(instance field)는 절대로 public으로 선언하면 안된다.
 	 - 필드에 저장될 값을 제한할 수 없다; 불변식을 강제 불가
 	 - 변경가능 필드를 가진 클래스는 다중 스레드에 안전하지 않다.
@@ -167,9 +168,9 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDQ5Njc0MTUsLTEyOTg1MTI4OTcsMT
-M3MTY3MTc3MSwxMzcxNjcxNzcxLC0xMjU0NTE3NiwxMzcxNjcx
-NzcxLDMwNDEyMzc1MCwxNDc2Mjg3MTg3LDg2OTgzMzY3MSwxMz
-MzOTg5MTU1LC0yMDY4NjUxNDIyLC0xNzcyNDIzNzMyLC0xNTgz
-NDMyMzIzXX0=
+eyJoaXN0b3J5IjpbLTIwOTQzMDMwMzcsLTE2MDQ5Njc0MTUsLT
+EyOTg1MTI4OTcsMTM3MTY3MTc3MSwxMzcxNjcxNzcxLC0xMjU0
+NTE3NiwxMzcxNjcxNzcxLDMwNDEyMzc1MCwxNDc2Mjg3MTg3LD
+g2OTgzMzY3MSwxMzMzOTg5MTU1LC0yMDY4NjUxNDIyLC0xNzcy
+NDIzNzMyLC0xNTgzNDMyMzIzXX0=
 -->
