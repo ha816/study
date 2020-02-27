@@ -52,10 +52,11 @@ private의 일반적인 오해는 private으로 선언한 변수는 해당 인�
 public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아니다. API를 변경하지 않고는 표현 방식을 바꿀수 없고, 필드를 읽을때 가공작업을 할 수 없다는 단점은 여전하다. 단 불변식은 보장한다. 
 
 >핵심정리
->public 클래스는 절대 가변 필드를 직접 노출해서는 안된다. 불
+>public 클래스는 절대 가변 필드를 직접 노출해서는 안된다. 불변 필드라면 노출해도 덜 위험하지만 완전히 안심할 수 없다. 하지만 package-private 클래스나 private 중첩 클래스에서는 종종 (불변이든 가변이든) 필드를 노출하는 편이 나을때도 있다. 
 
-### 15. 변경 가능성을 최소화 하라
+## Item15. 변경 가능성을 최소화 하라
 
+불변 클래스(immutable)
 변경 불가능(immutable) 클래스는 그 객체를 수정할 수 없는 클래스
 
 변경 불가능 클래스의 5가지 규칙
@@ -175,10 +176,10 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNzY4MDE1MSwtMTM5NjU4OTQ5LDE5Nz
-Y5OTgzMDMsLTE2MDQ5Njc0MTUsLTEyOTg1MTI4OTcsMTM3MTY3
-MTc3MSwxMzcxNjcxNzcxLC0xMjU0NTE3NiwxMzcxNjcxNzcxLD
-MwNDEyMzc1MCwxNDc2Mjg3MTg3LDg2OTgzMzY3MSwxMzMzOTg5
-MTU1LC0yMDY4NjUxNDIyLC0xNzcyNDIzNzMyLC0xNTgzNDMyMz
-IzXX0=
+eyJoaXN0b3J5IjpbNzg2MTI2NjkyLC0xMzk2NTg5NDksMTk3Nj
+k5ODMwMywtMTYwNDk2NzQxNSwtMTI5ODUxMjg5NywxMzcxNjcx
+NzcxLDEzNzE2NzE3NzEsLTEyNTQ1MTc2LDEzNzE2NzE3NzEsMz
+A0MTIzNzUwLDE0NzYyODcxODcsODY5ODMzNjcxLDEzMzM5ODkx
+NTUsLTIwNjg2NTE0MjIsLTE3NzI0MjM3MzIsLTE1ODM0MzIzMj
+NdfQ==
 -->
