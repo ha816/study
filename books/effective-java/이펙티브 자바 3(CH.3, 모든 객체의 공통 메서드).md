@@ -495,13 +495,16 @@ thenComparingInt는 원하는 만큼 연달아 호출할 수 있다. 앞서 예�
 
 객체 참조용 비교자 생성 메서드로 준비되어 있다. comparing이라는 정적 메서드 2개가 다중 정의되어 있다.
 ```
-public static <T, U> Comparator<T> comparing(
-	Function<? super T, ? extends U> keyExtractor, Comparator<? super U> keyComparator
-)
 public static <T, U extends Comparable<? super U>> Comparator<T> comparing(
 	Function<? super T, ? extends U> keyExtractor
 )
+public static <T, U> Comparator<T> comparing(
+	Function<? super T, ? extends U> keyExtractor, Comparator<? super U> keyComparator
+)
 ```
+첫 번째는 키 추출자를 받아서, 그 키의 자연스러운 순서를 그대로 사용한다. 두 번째는 키 추출자와 비교할 비교자를 받는다.
+
+
 
 
 
@@ -521,11 +524,11 @@ public static <T, U extends Comparable<? super U>> Comparator<T> comparing(
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk4NTE0NDg2LDE2ODU0NDYxNjUsNjI0OD
-IzNjM1LDEyNTUzOTQyMjEsMjUwOTc4NjMxLDQxMjU1Mzk3NSw0
-NjU3ODUwNDQsLTc5NzI5ODI0MCwxMjUwODk1NDQwLC0yMTM1Nz
-gwOTM0LDU1NjUxMTU0NywtOTUxNzIzMjkxLC03Mjg2Njk3OTQs
-MzUzMDI0ODQwLDExMzk2ODYxMDcsLTU3NTAwNjc5NCwtMjczND
-QyNTQ4LC0xNjY3MzI2MDExLC00MjgzNjczNDgsMTc5MDkxMDYw
-Ml19
+eyJoaXN0b3J5IjpbLTE1MTExNzM1NzIsMTY4NTQ0NjE2NSw2Mj
+Q4MjM2MzUsMTI1NTM5NDIyMSwyNTA5Nzg2MzEsNDEyNTUzOTc1
+LDQ2NTc4NTA0NCwtNzk3Mjk4MjQwLDEyNTA4OTU0NDAsLTIxMz
+U3ODA5MzQsNTU2NTExNTQ3LC05NTE3MjMyOTEsLTcyODY2OTc5
+NCwzNTMwMjQ4NDAsMTEzOTY4NjEwNywtNTc1MDA2Nzk0LC0yNz
+M0NDI1NDgsLTE2NjczMjYwMTEsLTQyODM2NzM0OCwxNzkwOTEw
+NjAyXX0=
 -->
