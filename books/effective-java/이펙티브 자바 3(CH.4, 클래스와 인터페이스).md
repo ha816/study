@@ -67,7 +67,8 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 	* 자신 외에는 내부의 가변 컴포넌트에 접근할 수 없도록 한다. 
 		* 클래스에 가변 객체를 참조하는 필드가 하나라도 있다면 클라이언트에서 그 객체 참조를 얻을 수 없게 해야 한다. 만약 가변객체를 getter메서드로 제공한다 하더라도 그대로 반환하면 안되고, **가변 객체의 방어적 복사본을 반환해야 한다.** 
 		
-피연산자와 함수를 적용해서 그 결과를 반환하지만, 기존에 피연산자 자체는 그대로이 프로그래밍 패턴을 함수형 프로그래밍이라고 한다. 반면에, 함수를 적용했을때 피연산자 자체를 수정하는 경우 절차적 혹은 명령형 프로그래밍이라고 한다. 또한 메서드 이름으로 add같은 동사 대신 plus같은 전치사를 사용한다는 
+피연산자와 함수를 적용해서 그 결과를 반환하지만, 기존에 피연산자 자체는 그대로이 프로그래밍 패턴을 함수형 프로그래밍이라고 한다. 반면에, 함수를 적용했을때 피연산자 자체를 수정하는 경우 절차적 혹은 명령형 프로그래밍이라고 한다. 
+함수형 프로그래밍에서는 메서드 이름으로 add같은 동사 대신 plus같은 전치사를 사용한다는 점에도 주주하자. 이는 해당 메서드가 객체의 값을 변경하지 않는다는 사실을 강조한다. 참고로 이 명명 규칙을 따르지 않은 BigInter와 BigDecimal클래스를 사람들이 잘못 사용하는 경우가 종종 있다. 이렇게 함수형 프로그래밍을 ㄸ
 	  
  불변 클래스의 장점  
  1. 단순함
@@ -178,7 +179,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MjU0OTIzMSwxMjkyNDgzNzE0LC02OD
+eyJoaXN0b3J5IjpbMTIyOTQ5NDg2NSwxMjkyNDgzNzE0LC02OD
 kzMTU4NjIsLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3
 NDE1LC0xMjk4NTEyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MS
 wtMTI1NDUxNzYsMTM3MTY3MTc3MSwzMDQxMjM3NTAsMTQ3NjI4
