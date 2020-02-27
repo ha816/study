@@ -14,9 +14,7 @@
 
 기본 원칙은 **모든 클래스와 멤버의 접근성을 가능한 좁혀야 한다.** 소프트웨어가 올바르게 동작하는 한 항상 가장 낮은 수준을 부여해야 한다는 뜻이다. 
 
-(가장 바깥이라는 의미의) 탑 클래스와 인터페이스에 부여할 수 있는 접근 수준은 크게 package-private과 public 두가지이다.
-
-public으로 선언하면 공개 API가 되고, package-private으로 하면 해당 패키지내에서만 사용할 수 있다. 원칙에 따라 패키지 내부에서 쓰이는게 아니라면 package-private으로 선언하자. 그러면 이들은 API가 아닌 배구 구현이 되어 언제든 수정이 가능하다. 즉 클라이언트에 수정이 없이 다음 릴리스에 언제든 수정이 가능하다. 반면 public은 API가 되므로 하위 호완을 위해 영원히 관리해줘야 한다. 
+(가장 바깥이라는 의미의) 탑 클래스와 인터페이스에 부여할 수 있는 접근 수준은 크게 package-private과 public 두가지이다. public으로 선언하면 공개 API가 되고, package-private으로 하면 해당 패키지내에서만 사용할 수 있다. 원칙에 따라 패키지 내부에서 쓰이는게 아니라면 package-private으로 선언하자. 그러면 이들은 API가 아닌 내부 구현이 되어 언제든 수정이 가능하다. 즉 클라이언트에 수정이 없이 다음 릴리스에 언제든 수정이 가능하다. 반면 public은 API가 되므로 하위 호완을 위해 영원히 관리해줘야 한다. 
 
 | 접근 권한 수정자 | 설명 |
 |--|--|
@@ -172,7 +170,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MTUwODYwNywtMTI5ODUxMjg5NywxMz
+eyJoaXN0b3J5IjpbMTU3MTQzODEyNywtMTI5ODUxMjg5NywxMz
 cxNjcxNzcxLDEzNzE2NzE3NzEsLTEyNTQ1MTc2LDEzNzE2NzE3
 NzEsMzA0MTIzNzUwLDE0NzYyODcxODcsODY5ODMzNjcxLDEzMz
 M5ODkxNTUsLTIwNjg2NTE0MjIsLTE3NzI0MjM3MzIsLTE1ODM0
