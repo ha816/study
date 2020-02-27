@@ -43,9 +43,7 @@ private의 일반적인 오해는 private으로 선언한 변수는 해당 인�
 
 ### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
 
- private 필드와 public 접근자 메서드(getter, setter)를 사용하자
-
-선언된 패키지 밖에서도 사용 가능한 클래스는 접근자 메서드를 제공해라. 
+ private 필드와 public 접근자 메서드(getter, setter)를 사용하자. 즉 선언된 패키지 밖에서 사용 가능한 클래스는 접근자 메서드를 제공해라. 
 public 클래스의 데이터 필드를 공게하게 되면, 그 내부표현을 변경 할수 없다. 이미 작성된 클라이언트 코드가 에러 발생. 
 
 package-private 클래스나 private 중첩 클래스는 데이터 필드를 공개하더라도 잘못은 아니다. 패키지 내부에서만 쓰이는 코드이기 때문에 바깥의 코드는 아무 영향을 받지 않는다 
@@ -171,9 +169,9 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3Njk5ODMwMywtMTYwNDk2NzQxNSwtMT
-I5ODUxMjg5NywxMzcxNjcxNzcxLDEzNzE2NzE3NzEsLTEyNTQ1
-MTc2LDEzNzE2NzE3NzEsMzA0MTIzNzUwLDE0NzYyODcxODcsOD
-Y5ODMzNjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0MjIsLTE3NzI0
-MjM3MzIsLTE1ODM0MzIzMjNdfQ==
+eyJoaXN0b3J5IjpbLTI0NjI3NjYsMTk3Njk5ODMwMywtMTYwND
+k2NzQxNSwtMTI5ODUxMjg5NywxMzcxNjcxNzcxLDEzNzE2NzE3
+NzEsLTEyNTQ1MTc2LDEzNzE2NzE3NzEsMzA0MTIzNzUwLDE0Nz
+YyODcxODcsODY5ODMzNjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0
+MjIsLTE3NzI0MjM3MzIsLTE1ODM0MzIzMjNdfQ==
 -->
