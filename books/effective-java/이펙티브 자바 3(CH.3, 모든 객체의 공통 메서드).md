@@ -491,7 +491,8 @@ comparingInt((PhoneNumber pn) -> ph.areaCode)
 즉 comparingInt메서드는 앞서 키 추출함수에서 만들어진 키를 기준으로 순서를 정하는 **비교자를 반환하는 정적 메서드**다. 
 첫번째로 areaCode를 비교했다면, 다음으로 두 번째 비교자 생성 메서드인 thenComparingInt를 수행한다. thenComparingInt는 Comparator의 인스턴스 메서드로, int 키 추출자 함수를 입력 받아 다시 비교자를 반환한다. (이 비교자는 첫 번째 비교자를 적용한 다음 새로 추출한 키로 비교를 수행한다.) 
 
-thenComparingInt는 원하는 만큼 연달아 호출할 수 있다. 
+thenComparingInt는 원하는 만큼 연달아 호출할 수 있다. 앞서 예제에서는 prefix, lineNum을 키로 사용했다. 
+
 
 
 
@@ -509,11 +510,11 @@ thenComparingInt는 원하는 만큼 연달아 호출할 수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDgxNTg5OSwxNjg1NDQ2MTY1LDYyND
-gyMzYzNSwxMjU1Mzk0MjIxLDI1MDk3ODYzMSw0MTI1NTM5NzUs
-NDY1Nzg1MDQ0LC03OTcyOTgyNDAsMTI1MDg5NTQ0MCwtMjEzNT
-c4MDkzNCw1NTY1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0
-LDM1MzAyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3Mz
-Q0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2
-MDJdfQ==
+eyJoaXN0b3J5IjpbNzI3MDg2OTAyLDE2ODU0NDYxNjUsNjI0OD
+IzNjM1LDEyNTUzOTQyMjEsMjUwOTc4NjMxLDQxMjU1Mzk3NSw0
+NjU3ODUwNDQsLTc5NzI5ODI0MCwxMjUwODk1NDQwLC0yMTM1Nz
+gwOTM0LDU1NjUxMTU0NywtOTUxNzIzMjkxLC03Mjg2Njk3OTQs
+MzUzMDI0ODQwLDExMzk2ODYxMDcsLTU3NTAwNjc5NCwtMjczND
+QyNTQ4LC0xNjY3MzI2MDExLC00MjgzNjczNDgsMTc5MDkxMDYw
+Ml19
 -->
