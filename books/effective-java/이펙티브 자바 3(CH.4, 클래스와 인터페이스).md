@@ -52,7 +52,7 @@ private의 일반적인 오해는 private으로 선언한 변수는 해당 인�
 public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아니다. API를 변경하지 않고는 표현 방식을 바꿀수 없고, 필드를 읽을때 가공작업을 할 수 없다는 단점은 여전하다. 단 불변식은 보장한다. 
 
 >핵심정리
->public 클래스는 절대 가변 필드를 직접 노출해서는 안된다. 
+>public 클래스는 절대 가변 필드를 직접 노출해서는 안된다. 불
 
 ### 15. 변경 가능성을 최소화 하라
 
@@ -175,9 +175,10 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0xNj
-A0OTY3NDE1LC0xMjk4NTEyODk3LDEzNzE2NzE3NzEsMTM3MTY3
-MTc3MSwtMTI1NDUxNzYsMTM3MTY3MTc3MSwzMDQxMjM3NTAsMT
-Q3NjI4NzE4Nyw4Njk4MzM2NzEsMTMzMzk4OTE1NSwtMjA2ODY1
-MTQyMiwtMTc3MjQyMzczMiwtMTU4MzQzMjMyM119
+eyJoaXN0b3J5IjpbLTkzNzY4MDE1MSwtMTM5NjU4OTQ5LDE5Nz
+Y5OTgzMDMsLTE2MDQ5Njc0MTUsLTEyOTg1MTI4OTcsMTM3MTY3
+MTc3MSwxMzcxNjcxNzcxLC0xMjU0NTE3NiwxMzcxNjcxNzcxLD
+MwNDEyMzc1MCwxNDc2Mjg3MTg3LDg2OTgzMzY3MSwxMzMzOTg5
+MTU1LC0yMDY4NjUxNDIyLC0xNzcyNDIzNzMyLC0xNTgzNDMyMz
+IzXX0=
 -->
