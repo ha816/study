@@ -56,7 +56,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 ## Item15. 변경 가능성을 최소화 하라
 
-불변 클래스(immutable)란 간단히 말해 그 인스턴스의 내부 값을 수정할 수 없는 클래스이다. 불변 인스턴스는 가지는 정보가 고정되어 객체가 파괴되는 순간까지 절대 변하지 않는다. 자바 플랫폼 라이브러리에는 다양한 불변클래스가 있다. String, 기본 타입의 박싱 클래스, BigInter, BigDecimal등이 있다. 이렇게 불변으로 클래스가 설계된 이유는 
+불변 클래스(immutable)란 간단히 말해 그 인스턴스의 내부 값을 수정할 수 없는 클래스이다. 불변 인스턴스는 가지는 정보가 고정되어 객체가 파괴되는 순간까지 절대 변하지 않는다. 자바 플랫폼 라이브러리에는 다양한 불변클래스가 있다. String, 기본 타입의 박싱 클래스, BigInter, BigDecimal등이 있다. 이렇게 불변으로 클래스가 설계된 이유는 가변 클래스보다 설계
 
 불변 클래스의 5가지 규칙
  1. 객체 상태를 변경하는 메서드(수정자 메서드등)을 제공하지 않는다.
@@ -175,10 +175,10 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4OTMxNTg2MiwtMTM5NjU4OTQ5LDE5Nz
-Y5OTgzMDMsLTE2MDQ5Njc0MTUsLTEyOTg1MTI4OTcsMTM3MTY3
-MTc3MSwxMzcxNjcxNzcxLC0xMjU0NTE3NiwxMzcxNjcxNzcxLD
-MwNDEyMzc1MCwxNDc2Mjg3MTg3LDg2OTgzMzY3MSwxMzMzOTg5
-MTU1LC0yMDY4NjUxNDIyLC0xNzcyNDIzNzMyLC0xNTgzNDMyMz
-IzXX0=
+eyJoaXN0b3J5IjpbMzU2NjA4NzY4LC02ODkzMTU4NjIsLTEzOT
+Y1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3NDE1LC0xMjk4NTEy
+ODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MSwtMTI1NDUxNzYsMT
+M3MTY3MTc3MSwzMDQxMjM3NTAsMTQ3NjI4NzE4Nyw4Njk4MzM2
+NzEsMTMzMzk4OTE1NSwtMjA2ODY1MTQyMiwtMTc3MjQyMzczMi
+wtMTU4MzQzMjMyM119
 -->
