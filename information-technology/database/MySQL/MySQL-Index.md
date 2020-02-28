@@ -14,7 +14,7 @@
 
 ## Index?
 
-DBMS
+DBMS에서 인덱스는 데이터의 저장(INSERT, UPDATE, DELETE) 성능을 희생하고 그 데이터의 읽기 속도를 높이는 기능이다. 
 
 
 
@@ -22,6 +22,6 @@ DBMS
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNTEwNzY3OSw4MzQ4ODEyNjUsODQwOD
-I1NDBdfQ==
+eyJoaXN0b3J5IjpbMTQyODM4MzcsODM0ODgxMjY1LDg0MDgyNT
+QwXX0=
 -->
