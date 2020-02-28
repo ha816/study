@@ -50,7 +50,7 @@ REPEATBLE_READ는 UNDO 영역에 백업된 이전 데이터를 이용해 동일 
 REPEATBLE_READ에서는 **실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 작은(더 오래된) 트랜잭션 번호를 가지는 UNDO 영역의 데이터를 삭제할 수 없다.** 그렇다고 가장 오래된 트랜잭션 번호 이전의 트랜잭션에 의해 변경된 모든 언두 데이터가 필요한 것은 아니다. 더 정확하게는 **특정 트랜잭션 번호 구간 내에서 백업된 UNDO 데이터는 보전되어야 한다는 것이다.** 
 
 $$\begin{bmatrix}
-T1(id = 6) & T2(id = 12) \\
+T1(id = 6) & T2(id = 12) &  T3() \\
 select(A) & \\
 &update(A) \\
 &commit \\
@@ -228,11 +228,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MTcyODE3NiwxNjkwNDg5MTU5LC0xND
-QyNTE4ODE0LC0xMTI5Nzc1NjU4LC05NTE2MjgzNiwtNjAzNjU4
-NzYyLC0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC0yMDQxNzA4NT
-Y4LDYzMzU2NTgwMyw2MjM4MDEyMjUsNDQ2NTQ4NzMsOTkyNTMw
-NDg4LC0xNTMzNDg3OTY3LC0xNTExMzcxMTQxLDIxMTUzMDExNz
-QsLTEzOTU4NTYwMDcsLTI2MDI5MTU5LC0yMDg1NjA3MjA0LC0x
-NTUyNjA1MTgyXX0=
+eyJoaXN0b3J5IjpbLTE3NjIxOTQzNDYsMjA0MTcyODE3NiwxNj
+kwNDg5MTU5LC0xNDQyNTE4ODE0LC0xMTI5Nzc1NjU4LC05NTE2
+MjgzNiwtNjAzNjU4NzYyLC0xNjg3MjY0NTE1LC0xMjA0NjkwOT
+ExLC0yMDQxNzA4NTY4LDYzMzU2NTgwMyw2MjM4MDEyMjUsNDQ2
+NTQ4NzMsOTkyNTMwNDg4LC0xNTMzNDg3OTY3LC0xNTExMzcxMT
+QxLDIxMTUzMDExNzQsLTEzOTU4NTYwMDcsLTI2MDI5MTU5LC0y
+MDg1NjA3MjA0XX0=
 -->
