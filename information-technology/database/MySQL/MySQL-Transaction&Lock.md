@@ -71,10 +71,12 @@ insert(A) & \\
 아쉽게도 REPLEATBLE_READ에서도 부정합이 발생할 수 있다. 
 $$\begin{bmatrix}
 T1(id = 6) & T2(id = 9)\\
-&select(A) & \\
-insert(A) & \\
-&select(A) &\\
+select(A)&\\
+&insert(A)\\
+select(A)&\\
 \end{bmatrix}$$
+
+
 
 
 
@@ -240,11 +242,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA5OTkzMDEwLDUwNTczMzI5MiwxMTc1MD
-M2Njg0LDIwNDE3MjgxNzYsMTY5MDQ4OTE1OSwtMTQ0MjUxODgx
-NCwtMTEyOTc3NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2MiwtMT
-Y4NzI2NDUxNSwtMTIwNDY5MDkxMSwtMjA0MTcwODU2OCw2MzM1
-NjU4MDMsNjIzODAxMjI1LDQ0NjU0ODczLDk5MjUzMDQ4OCwtMT
-UzMzQ4Nzk2NywtMTUxMTM3MTE0MSwyMTE1MzAxMTc0LC0xMzk1
-ODU2MDA3XX0=
+eyJoaXN0b3J5IjpbMTQxNDAzOTM3OCw3MDk5OTMwMTAsNTA1Nz
+MzMjkyLDExNzUwMzY2ODQsMjA0MTcyODE3NiwxNjkwNDg5MTU5
+LC0xNDQyNTE4ODE0LC0xMTI5Nzc1NjU4LC05NTE2MjgzNiwtNj
+AzNjU4NzYyLC0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC0yMDQx
+NzA4NTY4LDYzMzU2NTgwMyw2MjM4MDEyMjUsNDQ2NTQ4NzMsOT
+kyNTMwNDg4LC0xNTMzNDg3OTY3LC0xNTExMzcxMTQxLDIxMTUz
+MDExNzRdfQ==
 -->
