@@ -31,7 +31,8 @@ Dirty Read 현상은 데이터가 나타났다가 사라지는 현상을 초래�
 
 ### READ COMMITED
 
-READ_COMMITED에서는 어떤 트랜잭션이 데이터를 변경하였더라도 커밋되기 전에는 변경 전의 데이터를 조회하고 커밋 후에는 
+READ_COMMITED에서는 어떤 트랜잭션이 데이터를 변경하였더라도 커밋되기 전에는 변경 전의 데이터를 조회하고 커밋 후에는 변경된 데이터를 조회한다. 좀 더 자세히 보자면, 하나의 트랜잭션이 데이터를 변경하면 
+
 ### REPEATABLE READ
 
 ### SERIALIZABLE
@@ -194,11 +195,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNzk2OTc0MiwtOTUxNjI4MzYsLTYwMz
-Y1ODc2MiwtMTY4NzI2NDUxNSwtMTIwNDY5MDkxMSwtMjA0MTcw
-ODU2OCw2MzM1NjU4MDMsNjIzODAxMjI1LDQ0NjU0ODczLDk5Mj
-UzMDQ4OCwtMTUzMzQ4Nzk2NywtMTUxMTM3MTE0MSwyMTE1MzAx
-MTc0LC0xMzk1ODU2MDA3LC0yNjAyOTE1OSwtMjA4NTYwNzIwNC
-wtMTU1MjYwNTE4MiwtMTYzNTU1NDMzMSwxODgyMjUxODAzLDg4
-NzMyNjc1XX0=
+eyJoaXN0b3J5IjpbLTI0MjIwMzU5LC05NTE2MjgzNiwtNjAzNj
+U4NzYyLC0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC0yMDQxNzA4
+NTY4LDYzMzU2NTgwMyw2MjM4MDEyMjUsNDQ2NTQ4NzMsOTkyNT
+MwNDg4LC0xNTMzNDg3OTY3LC0xNTExMzcxMTQxLDIxMTUzMDEx
+NzQsLTEzOTU4NTYwMDcsLTI2MDI5MTU5LC0yMDg1NjA3MjA0LC
+0xNTUyNjA1MTgyLC0xNjM1NTU0MzMxLDE4ODIyNTE4MDMsODg3
+MzI2NzVdfQ==
 -->
