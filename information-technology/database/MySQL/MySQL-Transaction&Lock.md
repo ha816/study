@@ -53,7 +53,7 @@ $$\begin{bmatrix}
 T1(id = 6) & T2(id = 9) &  T3(id = 12) \\
 insert(A) & \\
 &select(A) & \\
-&&update(A) \\
+&&update(A->A') \\
 &&commit \\
 &select(A) &\\
 \end{bmatrix}$$
@@ -64,7 +64,7 @@ insert(A) & \\
 |--|--|--|
 | 6 | A | ... |
 
-세 번째 트랜잭션(12)가 데이터 변경을 하면 UNDO 영역에 첫 번째 트랜잭션(6)이
+세 번째 트랜잭션(12)가 데이터 변경을 하면 UNDO 영역에 위 데이터가 남는다. 즉 첫 번째 트랜잭션(6)의 기록이 남는다. 두 번째 트랜잭션(9)는 세번째 트랜잭션이 변경을 실행하기 전과 후에 한번씩 조회를 했지만 UNDO 영역의 데이터를 보기 때문에 항상 
 
 
 
@@ -228,11 +228,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY0ODA1ODkxLDExNzUwMzY2ODQsMjA0MT
-cyODE3NiwxNjkwNDg5MTU5LC0xNDQyNTE4ODE0LC0xMTI5Nzc1
-NjU4LC05NTE2MjgzNiwtNjAzNjU4NzYyLC0xNjg3MjY0NTE1LC
-0xMjA0NjkwOTExLC0yMDQxNzA4NTY4LDYzMzU2NTgwMyw2MjM4
-MDEyMjUsNDQ2NTQ4NzMsOTkyNTMwNDg4LC0xNTMzNDg3OTY3LC
-0xNTExMzcxMTQxLDIxMTUzMDExNzQsLTEzOTU4NTYwMDcsLTI2
-MDI5MTU5XX0=
+eyJoaXN0b3J5IjpbLTEwNTg4NTY3MTMsMTE3NTAzNjY4NCwyMD
+QxNzI4MTc2LDE2OTA0ODkxNTksLTE0NDI1MTg4MTQsLTExMjk3
+NzU2NTgsLTk1MTYyODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1MT
+UsLTEyMDQ2OTA5MTEsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYy
+MzgwMTIyNSw0NDY1NDg3Myw5OTI1MzA0ODgsLTE1MzM0ODc5Nj
+csLTE1MTEzNzExNDEsMjExNTMwMTE3NCwtMTM5NTg1NjAwNywt
+MjYwMjkxNTldfQ==
 -->
