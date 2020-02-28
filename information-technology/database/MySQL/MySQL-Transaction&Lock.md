@@ -53,7 +53,7 @@ $$\begin{bmatrix}
 T1(id = 6) & T2(id = 9) &  T3(id = 12) \\
 insert(A) & \\
 &select(A) & \\
-&&update(A->A') \\
+&&update(A \rightarrow A') \\
 &&commit \\
 &select(A) &\\
 \end{bmatrix}$$
@@ -228,7 +228,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk2MTQyMjEyLDUwNTczMzI5MiwxMTc1MD
+eyJoaXN0b3J5IjpbNjIzMDAwOTY2LDUwNTczMzI5MiwxMTc1MD
 M2Njg0LDIwNDE3MjgxNzYsMTY5MDQ4OTE1OSwtMTQ0MjUxODgx
 NCwtMTEyOTc3NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2MiwtMT
 Y4NzI2NDUxNSwtMTIwNDY5MDkxMSwtMjA0MTcwODU2OCw2MzM1
