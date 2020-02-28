@@ -47,7 +47,7 @@ REPEATBLE_READ는 UNDO 영역에 백업된 이전 데이터를 이용해 동일 
 
 모든 InnoDB의 트랜잭션은 고유한 트랜잭션 번호를 가지며, UNDO 영역에 백업된 모든 레코드에는 변경을 수행한 트랜잭션 번호가 포함되어 있다. 그리고 UNDO 영역에 백업 데이터는 스토리지 엔진이 어느 시점에 불필요하다고 판단되면 주기적으로 삭제한다. 
 
-REPEATBLE_READ에서는 **실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 작은(더 오래된) 트랜잭션 번호를 가지는 UNDO 영역의 데이터를 삭제할 수 없다.** 그렇다고 가장 오래된 트랜잭션 번호 이전의 트랜잭션에 의해 변경된 모든 언두 데이터가 필요한 것으 아니다. 더 정확하게는 **특정 트랜잭션 번호 구간 내에서 백업된 UNDO 데이터는 보전되어야 한다는 것이다.** 
+REPEATBLE_READ에서는 **실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 작은(더 오래된) 트랜잭션 번호를 가지는 UNDO 영역의 데이터를 삭제할 수 없다.** 그렇다고 가장 오래된 트랜잭션 번호 이전의 트랜잭션에 의해 변경된 모든 언두 데이터가 필요한 것은 아니다. 더 정확하게는 **특정 트랜잭션 번호 구간 내에서 백업된 UNDO 데이터는 보전되어야 한다는 것이다.** 
 
 $$\begin{bmatrix}
 T1(id = 6) & T2(id = 12) \\
@@ -59,9 +59,12 @@ select(A) &\\
 
 두 번째 트랜잭션(12)가 데이터 변경을 하면  커밋 전에 UNDO 영역에 아래와 같이 변경전 데이터와 함께 트랜잭션 번호를 저장해 둔다. 
 
-|TRX-ID | prime | values ...|
+|TRX-ID | prime | cols ...|
 |--|--|--|
 | 6 | A | ... |
+
+첫 번째 트랜잭션은 언제 A에 대한 sele
+
 
 
 
@@ -225,11 +228,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MDQ4OTE1OSwtMTQ0MjUxODgxNCwtMT
-EyOTc3NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2MiwtMTY4NzI2
-NDUxNSwtMTIwNDY5MDkxMSwtMjA0MTcwODU2OCw2MzM1NjU4MD
-MsNjIzODAxMjI1LDQ0NjU0ODczLDk5MjUzMDQ4OCwtMTUzMzQ4
-Nzk2NywtMTUxMTM3MTE0MSwyMTE1MzAxMTc0LC0xMzk1ODU2MD
-A3LC0yNjAyOTE1OSwtMjA4NTYwNzIwNCwtMTU1MjYwNTE4Miwt
-MTYzNTU1NDMzMV19
+eyJoaXN0b3J5IjpbNDU2ODA5MDgsMTY5MDQ4OTE1OSwtMTQ0Mj
+UxODgxNCwtMTEyOTc3NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2
+MiwtMTY4NzI2NDUxNSwtMTIwNDY5MDkxMSwtMjA0MTcwODU2OC
+w2MzM1NjU4MDMsNjIzODAxMjI1LDQ0NjU0ODczLDk5MjUzMDQ4
+OCwtMTUzMzQ4Nzk2NywtMTUxMTM3MTE0MSwyMTE1MzAxMTc0LC
+0xMzk1ODU2MDA3LC0yNjAyOTE1OSwtMjA4NTYwNzIwNCwtMTU1
+MjYwNTE4Ml19
 -->
