@@ -64,10 +64,7 @@ insert(A) & \\
 |--|--|--|
 | 6 | A | ... |
 
-세 번째 트랜잭션(12)가 데이터 변경을 하면서 UNDO 영역에  
-
-첫 번째 트랜잭션안에서는 같은 쿼리가 항상 같은 결과를 내야하기 때문에 
-
+세 번째 트랜잭션(12)가 데이터 변경을 하면 UNDO 영역에 첫 번째 트랜잭션(6)이
 
 
 
@@ -231,11 +228,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OT
-A0ODkxNTksLTE0NDI1MTg4MTQsLTExMjk3NzU2NTgsLTk1MTYy
-ODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2OTA5MT
-EsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYyMzgwMTIyNSw0NDY1
-NDg3Myw5OTI1MzA0ODgsLTE1MzM0ODc5NjcsLTE1MTEzNzExND
-EsMjExNTMwMTE3NCwtMTM5NTg1NjAwNywtMjYwMjkxNTksLTIw
-ODU2MDcyMDRdfQ==
+eyJoaXN0b3J5IjpbODY0ODA1ODkxLDExNzUwMzY2ODQsMjA0MT
+cyODE3NiwxNjkwNDg5MTU5LC0xNDQyNTE4ODE0LC0xMTI5Nzc1
+NjU4LC05NTE2MjgzNiwtNjAzNjU4NzYyLC0xNjg3MjY0NTE1LC
+0xMjA0NjkwOTExLC0yMDQxNzA4NTY4LDYzMzU2NTgwMyw2MjM4
+MDEyMjUsNDQ2NTQ4NzMsOTkyNTMwNDg4LC0xNTMzNDg3OTY3LC
+0xNTExMzcxMTQxLDIxMTUzMDExNzQsLTEzOTU4NTYwMDcsLTI2
+MDI5MTU5XX0=
 -->
