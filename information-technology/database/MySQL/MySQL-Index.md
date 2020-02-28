@@ -16,7 +16,13 @@
 
 DBMS에서 **인덱스는 데이터의 저장(INSERT, UPDATE, DELETE) 성능을 희생하고 그 데이터의 읽기 속도를 높이는 기능**이다. 
 
-인덱스를 역할별고 구분하자면 프라이머리 키(Primary Key)와 보조 키 (Secondary Key)로 구분할 수 있다. 프라이머리키는 그 레코드를 대표하는 칼럼 값으로 만들어진 인덱스를 말한다. 이렇게 되면 테이블에서 해당하는 레코드를 식별할 수 있는 기준값이 되기 때문에 이를 식별자라고도 부른다. 프라이머리키는 NULL 값을 허용하지 않고 중복을 허용하지 않는다.
+Primary Key
+: 프라이머리키는 그 레코드를 대표하는 칼럼 값으로 만들어진 인덱스를 말한다. 이렇게 되면 테이블에서 해당하는 레코드를 식별할 수 있는 기준값이 되기 때문에 이를 식별자라고도 부른다. 프라이머리키는 NULL 값을 허용하지 않고 중복을 허용하지 않는다.
+
+Secondary Key
+: 프라이머리 키를 제외한 나머지 모든 인덱스는 보저 인덱스이다. 
+
+## Index 저장 방식
 
 
 
@@ -24,6 +30,6 @@ DBMS에서 **인덱스는 데이터의 저장(INSERT, UPDATE, DELETE) 성능을 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2ODg1NzcxOSw4MzQ4ODEyNjUsODQwOD
+eyJoaXN0b3J5IjpbLTc2ODQwMjAzMiw4MzQ4ODEyNjUsODQwOD
 I1NDBdfQ==
 -->
