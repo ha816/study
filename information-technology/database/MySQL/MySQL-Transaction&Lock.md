@@ -33,7 +33,7 @@ Dirty Read 현상은 데이터가 나타났다가 사라지는 현상을 초래�
 
 READ_COMMITED에서는 **어떤 트랜잭션이 데이터를 변경하였더라도 커밋되기 전에는 변경 전의 데이터를 조회하고 커밋 후에는 변경된 데이터를 조회한다.** 하나의 트랜잭션이 데이터를 변경하면 UNDO 영역에 변경전 데이터를 백업한다. 이때 다른 트랜잭션에서 해당 데이터를 조회하면 UNDO 영역에 변경전 데이터를 조회하게 된다. 그리고 커밋 후에는 드디어 변경된 데이터를 조회하게 된다. 
 
-READ_COMMITED 격리수준에서도 NON-REPEATBLE READ 부정합 문제가 있다. 
+READ_COMMITED 격리수준에서도 NON-REPEATBLE READ 부정합 문제가 있다. 하나의 트랜잭션 내에서는 똑같은 SELECT 쿼리를 실행했을때는 항상 같은 결과를 가져와야 하는 것이 바로 R
 
 ### REPEATABLE READ
 
@@ -197,7 +197,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDQ3NTUyNSwtMTEyOTc3NTY1OCwtOT
+eyJoaXN0b3J5IjpbLTQyMDkzODk1NSwtMTEyOTc3NTY1OCwtOT
 UxNjI4MzYsLTYwMzY1ODc2MiwtMTY4NzI2NDUxNSwtMTIwNDY5
 MDkxMSwtMjA0MTcwODU2OCw2MzM1NjU4MDMsNjIzODAxMjI1LD
 Q0NjU0ODczLDk5MjUzMDQ4OCwtMTUzMzQ4Nzk2NywtMTUxMTM3
