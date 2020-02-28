@@ -6,6 +6,7 @@
 
 랜덤 I/O라는 표현은 디스크 드라이브 플래터(원판)을 돌려서 읽어야 할 데이터가 저장된 위치로 디스크 헤더를 이동시킨 다음 데이터를 읽는 것을 말한다. 
 
+디스크에 데이터를 쓰고 읽는데 걸리는 시간은 디스크 헤더를 옮기는 것에 달려 있다. 
 
 
 
@@ -15,6 +16,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDM1NDU5Myw4MzQ4ODEyNjUsODQwOD
-I1NDBdfQ==
+eyJoaXN0b3J5IjpbOTk4Mjg5NDcxLDgzNDg4MTI2NSw4NDA4Mj
+U0MF19
 -->
