@@ -50,19 +50,23 @@ REPEATBLE_READ는 UNDO 영역에 백업된 이전 데이터를 이용해 동일 
 REPEATBLE_READ에서는 **실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 작은(더 오래된) 트랜잭션 번호를 가지는 UNDO 영역의 데이터를 삭제할 수 없다.** 그렇다고 가장 오래된 트랜잭션 번호 이전의 트랜잭션에 의해 변경된 모든 언두 데이터가 필요한 것은 아니다. 더 정확하게는 **특정 트랜잭션 번호 구간 내에서 백업된 UNDO 데이터는 보전되어야 한다는 것이다.** 
 
 $$\begin{bmatrix}
-T1(id = 6) & T2(id = 1) &  T3() \\
+T1(id = 6) & T2(id = 9) &  T3(id = 12) \\
 insert(A) & \\
-select(A) & \\
-&update(A) \\
-&commit \\
-select(A) &\\
+&select(A) & \\
+&&update(A) \\
+&&commit \\
+&select(A) &\\
 \end{bmatrix}$$
 
-두 번째 트랜잭션(12)가 데이터 변경을 하면  커밋 전에 UNDO 영역에 아래와 같이 변경전 데이터와 함께 트랜잭션 번호를 저장해 둔다. 
+가장 먼저 6번 트랜잭션에 의해 INSERT가 실행됬다고 가정하자. 그럼 아래와 같이 로우가 삽입될 것이다. 
 
 |TRX-ID | prime | cols ...|
 |--|--|--|
 | 6 | A | ... |
+
+
+두 번째 트랜잭션(12)가 데이터 변경을 하면  커밋 전에 UNDO 영역에 아래와 같이 변경전 데이터와 함께 트랜잭션 번호를 저장해 둔다. 
+
 
 첫 번째 트랜잭션안에서는 같은 쿼리가 항상 같은 결과를 내야하기 때문에 
 
@@ -229,11 +233,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NDA0MzU5LDIwNDE3MjgxNzYsMTY5MD
-Q4OTE1OSwtMTQ0MjUxODgxNCwtMTEyOTc3NTY1OCwtOTUxNjI4
-MzYsLTYwMzY1ODc2MiwtMTY4NzI2NDUxNSwtMTIwNDY5MDkxMS
-wtMjA0MTcwODU2OCw2MzM1NjU4MDMsNjIzODAxMjI1LDQ0NjU0
-ODczLDk5MjUzMDQ4OCwtMTUzMzQ4Nzk2NywtMTUxMTM3MTE0MS
-wyMTE1MzAxMTc0LC0xMzk1ODU2MDA3LC0yNjAyOTE1OSwtMjA4
-NTYwNzIwNF19
+eyJoaXN0b3J5IjpbMTUwODQ1NzE0NSwyMDQxNzI4MTc2LDE2OT
+A0ODkxNTksLTE0NDI1MTg4MTQsLTExMjk3NzU2NTgsLTk1MTYy
+ODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2OTA5MT
+EsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYyMzgwMTIyNSw0NDY1
+NDg3Myw5OTI1MzA0ODgsLTE1MzM0ODc5NjcsLTE1MTEzNzExND
+EsMjExNTMwMTE3NCwtMTM5NTg1NjAwNywtMjYwMjkxNTksLTIw
+ODU2MDcyMDRdfQ==
 -->
