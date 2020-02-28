@@ -43,8 +43,6 @@ INNODb 테이블에서는 레코드가 클러스터링 되어 디스크에 저�
 중요한 점은 이 비용 대부분이 I/O 작업에서 온다는 것이다. 
 
 
-
-
 ## Hash Index
 
 
@@ -54,6 +52,6 @@ INNODb 테이블에서는 레코드가 클러스터링 되어 디스크에 저�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3OTg5MzI5LC0xMzk4OTQwMjQ0LDgzND
-g4MTI2NSw4NDA4MjU0MF19
+eyJoaXN0b3J5IjpbLTE5MDU0NzgxMzMsLTU3OTg5MzI5LC0xMz
+k4OTQwMjQ0LDgzNDg4MTI2NSw4NDA4MjU0MF19
 -->
