@@ -47,7 +47,7 @@ REPEATBLE_READ는 UNDO 영역에 백업된 이전 데이터를 이용해 동일 
 
 모든 InnoDB의 트랜잭션은 고유한 트랜잭션 번호를 가지며, UNDO 영역에 백업된 모든 레코드에는 변경을 수행한 트랜잭션 번호가 포함되어 있다. 그리고 UNDO 영역에 백업 데이터는 스토리지 엔진이 어느 시점에 불필요하다고 판단되면 주기적으로 삭제한다. 
 
-REPEATBLE_READ에서는 실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 
+REPEATBLE_READ에서는 실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 작은(더 오래된) 트랜잭션 번호를 가지는 UNDO 영역의 데이터를 삭제할 수 없다. 그렇다고 ㄱ
 
 ### SERIALIZABLE
 
@@ -209,11 +209,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTI3ODUyMTAsLTExMjk3NzU2NTgsLT
-k1MTYyODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2
-OTA5MTEsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYyMzgwMTIyNS
-w0NDY1NDg3Myw5OTI1MzA0ODgsLTE1MzM0ODc5NjcsLTE1MTEz
-NzExNDEsMjExNTMwMTE3NCwtMTM5NTg1NjAwNywtMjYwMjkxNT
-ksLTIwODU2MDcyMDQsLTE1NTI2MDUxODIsLTE2MzU1NTQzMzEs
-MTg4MjI1MTgwM119
+eyJoaXN0b3J5IjpbMTY0MzA0OTQ0LC0xMTI5Nzc1NjU4LC05NT
+E2MjgzNiwtNjAzNjU4NzYyLC0xNjg3MjY0NTE1LC0xMjA0Njkw
+OTExLC0yMDQxNzA4NTY4LDYzMzU2NTgwMyw2MjM4MDEyMjUsND
+Q2NTQ4NzMsOTkyNTMwNDg4LC0xNTMzNDg3OTY3LC0xNTExMzcx
+MTQxLDIxMTUzMDExNzQsLTEzOTU4NTYwMDcsLTI2MDI5MTU5LC
+0yMDg1NjA3MjA0LC0xNTUyNjA1MTgyLC0xNjM1NTU0MzMxLDE4
+ODIyNTE4MDNdfQ==
 -->
