@@ -1,10 +1,16 @@
 # Overview
 
-데이터에서 어떤 통찰을 얻을때는 단순히 데이터를 수치의 조합으로 다루는 것이 아니라, '공간 안의 점'으로 생각하여 그 직관을 활용하는 것이 좋다. 
+데이터에서 어떤 통찰을 얻을때는 단순히많은 수치의 묶은 데이터를 다루고 싶은 경우가 많이 생기는데 데이터를 단순히 수치의 조합으로 다루는 것이 아니라, '공간 안의 점'으로 생각하여 그 직관을 활용하는 것이 좋다. 
 
 # Vector(벡터)
 
-간단히 말하자면, **수를 나열한 것이 벡터**다. 나열한 갯수에 따라 $n$차원 벡터라고 부른다. 특별히 언지하지 않으면 일반적으로 벡터는 세로로 늘어선 종 벡터이다. 종 벡터에 T(Transpose) 전치를 표기하면 횡 벡터가 된다. 
+간단히 말하자면, **거듭강조하지만 공간을 활용하는 것일 잊지 말자
+
+# Vector(벡터) & Space(공간)
+
+수를 나열한 것이 벡터**다. 나열한 갯수에 따라 $n$n차원 벡터라고 부른다. 특별히 언지하지 않으면 일반적으로 벡터는 세로로 늘어선 종 벡터이다. 
+
+종 벡터에 T(Transpose) 전치를 표기하면 횡 벡터가 된다. 
 
 $$(2,3,5,8)^T = \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix} 또는 \begin{pmatrix} 2  \\ 3 \\ 5 \\8 \end{pmatrix}^T = (2,3,5,8)$$
 
@@ -68,10 +74,11 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDMyMzg3Myw3NTk5NDM1NzIsLTE2OD
-c0NTAxNjIsLTMyMzc4ODAwMSwxNDUyODk3MjMyLC0yMTI4NDI2
-MDcxLC0xMjkwMTc0NDg4LDYzMzIyMTYxNiwxOTgxMjM5NzE1LC
-0xNjY0MzQ1MDE3LC00NzQ1Njc2MDIsMTk2MTIxNjQ1NSwtMTgx
-ODQ4ODA3OCwxMTIzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4Mj
-I4Miw1MDg1OTQ1MzEsLTMxNTkxMzU0N119
+eyJoaXN0b3J5IjpbLTI2NzgzODIwMCwtMTAwMzIzODczLDc1OT
+k0MzU3MiwtMTY4NzQ1MDE2MiwtMzIzNzg4MDAxLDE0NTI4OTcy
+MzIsLTIxMjg0MjYwNzEsLTEyOTAxNzQ0ODgsNjMzMjIxNjE2LD
+E5ODEyMzk3MTUsLTE2NjQzNDUwMTcsLTQ3NDU2NzYwMiwxOTYx
+MjE2NDU1LC0xODE4NDg4MDc4LDExMjM3MDMzMSwxNTM2MzI2Mj
+c2LC0xMzA2MDgyMjgyLDUwODU5NDUzMSwtMzE1OTEzNTQ3XX0=
+
 -->
