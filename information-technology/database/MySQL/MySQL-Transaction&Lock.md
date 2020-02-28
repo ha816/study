@@ -41,7 +41,7 @@ READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제
 
 ### REPEATABLE READ
 
-REPEATBLE_READ는 MySQL의 InnoDB 스토리지에서 기본적으로 사용되는
+REPEATBLE_READ는 MySQL의 InnoDB 스토리지에서 기본적으로 사용되는 격리 수준이다. 
 
 ### SERIALIZABLE
 
@@ -203,7 +203,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDg0ODMzNTYsLTExMjk3NzU2NTgsLT
+eyJoaXN0b3J5IjpbLTEzNjk0NzQ4ODMsLTExMjk3NzU2NTgsLT
 k1MTYyODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2
 OTA5MTEsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYyMzgwMTIyNS
 w0NDY1NDg3Myw5OTI1MzA0ODgsLTE1MzM0ODc5NjcsLTE1MTEz
