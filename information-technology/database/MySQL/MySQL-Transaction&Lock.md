@@ -76,7 +76,7 @@ select(A)&\\
 select(A)&\\
 \end{bmatrix}$$
 
-이때 T2 트랜잭션이 UPDATE가 아닌 INSERT를 했다는 점에 주목하자. UPDATE와는 다르게 INSERT는 UNDO 영역에 저장할 과거 데이터가 없다. 그러니 T2가 INSERT 후 커밋하기 전과 후의 T1의 SELECT 조회 결과가 달라진다. 
+이때 T2 트랜잭션이 UPDATE가 아닌 INSERT를 했다는 점에 주목하자. UPDATE와는 다르게 INSERT는 UNDO 영역에 저장할 과거 데이터가 없다. 그러니 T2가 INSERT 후 커밋하기 전과 후의 T1의 SELECT 조회 결과가 달라진다.  이렇게 **다른 트랜잭션에서 수행한 삽입 작업에 의해 레코드가 안보였다가 보이는 현상을 PHANTOM_READ라고 한다**. 
 
 
 
@@ -242,7 +242,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyODA4MzI1OCw3MDk5OTMwMTAsNTA1Nz
+eyJoaXN0b3J5IjpbMTk1OTQzMTM2MCw3MDk5OTMwMTAsNTA1Nz
 MzMjkyLDExNzUwMzY2ODQsMjA0MTcyODE3NiwxNjkwNDg5MTU5
 LC0xNDQyNTE4ODE0LC0xMTI5Nzc1NjU4LC05NTE2MjgzNiwtNj
 AzNjU4NzYyLC0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC0yMDQx
