@@ -80,7 +80,9 @@ select(A)&\\
 
 ### SERIALIZABLE
 
-SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 수준이다. 그만큼 성능은 느리다. 이 격리 수준은 아무런 레코드 잠금도 설정하지 않고 실행된다. 
+SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 수준이다. 그만큼 성능은 느리다. 이 격리 수준은 아무런 레코드 잠금도 설정하지 않고 실행된다. InnoDB 메뉴얼에서 자주 나타나는Non-locking consistent read(잠금이 필요 없는 일관된 읽기)의 뜻이 바로 이것을 말한다. 
+
+다행히 InnoDB 스토리지 엔진에서는 REPETABLE_READ 격리 수준에서도 PHA
 
 
 ## MySQL Lock
@@ -240,11 +242,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIwMjI5MDMzLDcwOTk5MzAxMCw1MDU3Mz
-MyOTIsMTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OTA0ODkxNTks
-LTE0NDI1MTg4MTQsLTExMjk3NzU2NTgsLTk1MTYyODM2LC02MD
-M2NTg3NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2OTA5MTEsLTIwNDE3
-MDg1NjgsNjMzNTY1ODAzLDYyMzgwMTIyNSw0NDY1NDg3Myw5OT
-I1MzA0ODgsLTE1MzM0ODc5NjcsLTE1MTEzNzExNDEsMjExNTMw
-MTE3NF19
+eyJoaXN0b3J5IjpbLTU5MDUxMzQxOCw3MDk5OTMwMTAsNTA1Nz
+MzMjkyLDExNzUwMzY2ODQsMjA0MTcyODE3NiwxNjkwNDg5MTU5
+LC0xNDQyNTE4ODE0LC0xMTI5Nzc1NjU4LC05NTE2MjgzNiwtNj
+AzNjU4NzYyLC0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC0yMDQx
+NzA4NTY4LDYzMzU2NTgwMyw2MjM4MDEyMjUsNDQ2NTQ4NzMsOT
+kyNTMwNDg4LC0xNTMzNDg3OTY3LC0xNTExMzcxMTQxLDIxMTUz
+MDExNzRdfQ==
 -->
