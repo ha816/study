@@ -40,17 +40,8 @@ Durability
 : 트랜잭션이 커밋되면 그 내용은 영구히 남아야 한다. 심지어 시스템이 실패해도 남아야 한다. (e.g., power outage or crash. This usually means that completed transactions (or their effects) are recorded in non-volatile memory
 
 
->트랜잭션 격리 수준(Transaction Isolation Level)
 
-참조하는 데이터스프링 프레임 워크에서는 데이터베이스의 기본 설정(DEFAULT)과 4개의 트랜잭션 격리 수준을 이용할수 있다. 스프링 프레임워크에서 지원하는 격리 수준은 아래와 같다. 다만 지원하는 모든 격리 수준이 실제로 사용할 수 있는지는 사용하는 데이터베이스를 어떻게 구현했느냐에 따라 달라질 수 있다. MySQL은 REPEATABLE_READ, Oracle DB는 READ_COMMITED 
 
-| 격리수준| 설명 | Dirty Read, Unrepeatable Read, Phantom Read |
-|--|--|--|
-| DEFAULT  | 사용하는 데이터베이스의 기본 격리수준을 사용  |
-| READ_UNCOMMITTED| 더티리드(Dirty Read), 반복되지 않은 읽기(Unrepeatable Read), ad)가 발생한다. 이 격리 수준은 커밋되지 않은 변경 데이터를 다른 트랜잭션에서 참조하는 것을 허용한다. 만약 변경 데이터가 롤백된 경우 다음 트랜잭션에서는 무효한 데이터를 조회하게 된다. | O, O, O|
-| READ_COMMITTED| 더티리드(Dirty Read)는 방지하지만, 반복되지 않은 읽기(Unrepeatable Read), 팬텀 읽기(Phantom Read)는 발생한다. 이 격리 수준은 커밋되지 않은 변경 데이터를 다른 트랜잭션에서 참조하는 것을 금지한다. |X, O, O|
-| REPEATABLE_READ| 더티리드, 반복되지 않은 읽기를 방지하지만 팬텀읽기는 발생한다. |X, X, O|
-| SERIALIZABLE| 더티리드, 반복되지 않은 읽기, 팬텀읽기를 방지한다.|X, X, X| 
 
 더티리드(Dirty Read)
 : A dirty read occurs when a transaction is allowed to read data from a row that has been modified by another running transaction and not yet committed. Dirty Read also knwo as **write–read conflict**, **reading uncommitted data**.
@@ -106,5 +97,6 @@ T1이 Select 쿼리로 테이블 T에서 가져온 결과가 있는데, T2가 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MTk5NzkwOCwtNzA1MTQwNzA2XX0=
+eyJoaXN0b3J5IjpbNjM1MDc4MDEyLC04NDE5OTc5MDgsLTcwNT
+E0MDcwNl19
 -->
