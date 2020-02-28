@@ -333,9 +333,9 @@ toString의 일반 규약에 따라 간결하면서도 사람이 읽기 쉬운 �
 
 ## Item13. clone 재정의는 주의해서 진행하라.
 
-Cloneable은 인터페이스의 용도는 **복제해도 되는 클래스임을 명시하는 것**이다. 하지만 의도한 목적을 제대로 이루지 못 했는데, 왜냐하면 실제 clone메서드를 실행하는 부분이 Object에 구현되어 있기 때문이다. 
+Cloneable은 인터페이스의 용도는 **복제해도 되는 클래스임을 명시하는 것**이다.하지만 의도한 목적을 제대로 이루지 못 했는데, 왜냐하면 실제 clone메서드를 실행하는 부분이 Object에 구현되어 있기 때문이다. 
 ```
-public interace Cloneable {} // 정말 아무것도 없다.
+public interace Cloneable {} // 정말 아무것도 없다
 public class Object {
 	...
 	protected Object clone() { ... } 
@@ -354,7 +354,7 @@ Cloneable은 Object의 protected 메서드인 clone의 동작 방식을 결정�
 
 clone() 써서 생성자를 호출하지 않고도 객체를 생성할 수 있게 되는 것이다.  
 
-clone() 메서드의 일반 규약은 허술하다. Object명세에서 가져온 설명을 보자. '복사'의 정확한 뜻은 그 객체를 구현한 클래스에 따라 다를 수 있다. 일반적인 의도는 어떤 객체 x에 대해 아래 식은 참이다. 
+clone() 메서드의 일반 규약은 허술하다. Object명세에서 가져온 설명을 보자.'복사'의 정확한 뜻은 그 객체를 구현한 클래스에 따라 다를 수 있다. 일반적인 의도는 어떤 객체 x에 대해 아래 식은 참이다. 
 ```
 x.clone() != x // 복사본은 원래 객체와 다르다.
 x.clone().getClass() == x.getClass() 
@@ -511,11 +511,11 @@ thenComparing은 인스턴스 메서드로 3개가 다중정의(overloading)되�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MTUxNjU1MywxNjg1NDQ2MTY1LDYyND
-gyMzYzNSwxMjU1Mzk0MjIxLDI1MDk3ODYzMSw0MTI1NTM5NzUs
-NDY1Nzg1MDQ0LC03OTcyOTgyNDAsMTI1MDg5NTQ0MCwtMjEzNT
-c4MDkzNCw1NTY1MTE1NDcsLTk1MTcyMzI5MSwtNzI4NjY5Nzk0
-LDM1MzAyNDg0MCwxMTM5Njg2MTA3LC01NzUwMDY3OTQsLTI3Mz
-Q0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3MzQ4LDE3OTA5MTA2
-MDJdfQ==
+eyJoaXN0b3J5IjpbLTExMTc1NDg3MTEsMTQ5MTUxNjU1MywxNj
+g1NDQ2MTY1LDYyNDgyMzYzNSwxMjU1Mzk0MjIxLDI1MDk3ODYz
+MSw0MTI1NTM5NzUsNDY1Nzg1MDQ0LC03OTcyOTgyNDAsMTI1MD
+g5NTQ0MCwtMjEzNTc4MDkzNCw1NTY1MTE1NDcsLTk1MTcyMzI5
+MSwtNzI4NjY5Nzk0LDM1MzAyNDg0MCwxMTM5Njg2MTA3LC01Nz
+UwMDY3OTQsLTI3MzQ0MjU0OCwtMTY2NzMyNjAxMSwtNDI4MzY3
+MzQ4XX0=
 -->
