@@ -64,7 +64,9 @@ insert(A) & \\
 |--|--|--|
 | 6 | A | ... |
 
-세 번째 트랜잭션(12)가 데이터 변경을 하면 UNDO 영역에 위 데이터가 남는다. 즉 첫 번째 트랜잭션(6)의 기록이 남는다. 두 번째 트랜잭션(9)는 세번째 트랜잭션이 변경을 실행하기 전과 후에 한번씩 조회를 했지만 UNDO 영역의 데이터를 보기 때문에 항상 
+세 번째 트랜잭션(12)가 데이터 변경을 하면 UNDO 영역에 위 데이터가 남는다. 즉 첫 번째 트랜잭션(6)의 기록이 남는다. 두 번째 트랜잭션(9)는 세번째 트랜잭션이 변경을 실행하기 전과 후에 한번씩 조회를 했지만 UNDO 영역의 데이터를 보기 때문에 항상 A 로우를 조회하게 된다. 
+
+사실 두 번째 트랜잭션이 트랜잭션을 BEGIN 명령으로 실행 할때 부터 실행되는 모든 SELECT 쿼리는 자신의 트랜잭션 번호(9) 보다 작은 트랜
 
 
 
@@ -228,11 +230,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTg4NTY3MTMsMTE3NTAzNjY4NCwyMD
-QxNzI4MTc2LDE2OTA0ODkxNTksLTE0NDI1MTg4MTQsLTExMjk3
-NzU2NTgsLTk1MTYyODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1MT
-UsLTEyMDQ2OTA5MTEsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYy
-MzgwMTIyNSw0NDY1NDg3Myw5OTI1MzA0ODgsLTE1MzM0ODc5Nj
-csLTE1MTEzNzExNDEsMjExNTMwMTE3NCwtMTM5NTg1NjAwNywt
-MjYwMjkxNTldfQ==
+eyJoaXN0b3J5IjpbMTE2MTQ2Nzg2NywxMTc1MDM2Njg0LDIwND
+E3MjgxNzYsMTY5MDQ4OTE1OSwtMTQ0MjUxODgxNCwtMTEyOTc3
+NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2MiwtMTY4NzI2NDUxNS
+wtMTIwNDY5MDkxMSwtMjA0MTcwODU2OCw2MzM1NjU4MDMsNjIz
+ODAxMjI1LDQ0NjU0ODczLDk5MjUzMDQ4OCwtMTUzMzQ4Nzk2Ny
+wtMTUxMTM3MTE0MSwyMTE1MzAxMTc0LC0xMzk1ODU2MDA3LC0y
+NjAyOTE1OV19
 -->
