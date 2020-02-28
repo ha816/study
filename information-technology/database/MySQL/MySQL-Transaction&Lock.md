@@ -64,8 +64,7 @@ insert(A) & \\
 |--|--|--|
 | 6 | A | ... |
 
-두 번째 트랜잭션(12)가 데이터 변경을 하면  커밋 전에 UNDO 영역에 아래와 같이 변경전 데이터와 함께 트랜잭션 번호를 저장해 둔다. 
-
+세 번째 트랜잭션(12)가 데이터 변경을 하면서 UNDO 영역에  
 
 첫 번째 트랜잭션안에서는 같은 쿼리가 항상 같은 결과를 내야하기 때문에 
 
@@ -232,7 +231,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyOTcyNDY2MSwyMDQxNzI4MTc2LDE2OT
+eyJoaXN0b3J5IjpbMTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OT
 A0ODkxNTksLTE0NDI1MTg4MTQsLTExMjk3NzU2NTgsLTk1MTYy
 ODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2OTA5MT
 EsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYyMzgwMTIyNSw0NDY1
