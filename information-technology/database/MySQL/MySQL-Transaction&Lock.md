@@ -49,7 +49,7 @@ REPEATBLE_READ는 UNDO 영역에 백업된 이전 데이터를 이용해 동일 
 
 REPEATBLE_READ에서는 **실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 작은(더 오래된) 트랜잭션 번호를 가지는 UNDO 영역의 데이터를 삭제할 수 없다.** 그렇다고 가장 오래된 트랜잭션 번호 이전의 트랜잭션에 의해 변경된 모든 언두 데이터가 필요한 것으 아니다. 더 정확하게는 **특정 트랜잭션 번호 구간 내에서 백업된 UNDO 데이터는 보전되어야 한다는 것이다.** 
 
-
+ 
 
 ### SERIALIZABLE
 
@@ -211,11 +211,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjc0NzQ1OCwtMTQ0MjUxODgxNCwtMT
-EyOTc3NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2MiwtMTY4NzI2
-NDUxNSwtMTIwNDY5MDkxMSwtMjA0MTcwODU2OCw2MzM1NjU4MD
-MsNjIzODAxMjI1LDQ0NjU0ODczLDk5MjUzMDQ4OCwtMTUzMzQ4
-Nzk2NywtMTUxMTM3MTE0MSwyMTE1MzAxMTc0LC0xMzk1ODU2MD
-A3LC0yNjAyOTE1OSwtMjA4NTYwNzIwNCwtMTU1MjYwNTE4Miwt
-MTYzNTU1NDMzMV19
+eyJoaXN0b3J5IjpbLTE0MzQ3NzQzNTAsLTE0NDI1MTg4MTQsLT
+ExMjk3NzU2NTgsLTk1MTYyODM2LC02MDM2NTg3NjIsLTE2ODcy
+NjQ1MTUsLTEyMDQ2OTA5MTEsLTIwNDE3MDg1NjgsNjMzNTY1OD
+AzLDYyMzgwMTIyNSw0NDY1NDg3Myw5OTI1MzA0ODgsLTE1MzM0
+ODc5NjcsLTE1MTEzNzExNDEsMjExNTMwMTE3NCwtMTM5NTg1Nj
+AwNywtMjYwMjkxNTksLTIwODU2MDcyMDQsLTE1NTI2MDUxODIs
+LTE2MzU1NTQzMzFdfQ==
 -->
