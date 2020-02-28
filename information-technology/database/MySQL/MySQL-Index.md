@@ -29,7 +29,7 @@ DBMS에서 **인덱스는 데이터의 저장(INSERT, UPDATE, DELETE) 성능을 
 
 가장 일반적으로 사용되는 인덱스 알고리즘으로 또한 가장 범용적이다.  B-Tree는 칼럼의 원래 값을 변형하지 않고 인덱스 구조체 내에서는 항상 정렬된 상태를 유지한다. 
 
-
+B-tree는 최상위에 하나의 루트 노드가 존재하고, 가장 하위에는 리프노드가 있다. 그 중간에는 브랜치 노드가 있다. 데이터베이스에서 인덱스와 실제 데이터가 저장된 데이터는 따로 관리되는데,  인덱스의 리프 노드는 항상 실제 데이터 
 
 
 ## Hash Index
@@ -41,6 +41,6 @@ DBMS에서 **인덱스는 데이터의 저장(INSERT, UPDATE, DELETE) 성능을 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDc3NjA2Myw4MzQ4ODEyNjUsODQwOD
-I1NDBdfQ==
+eyJoaXN0b3J5IjpbLTEyOTM0ODIzMzQsODM0ODgxMjY1LDg0MD
+gyNTQwXX0=
 -->
