@@ -35,7 +35,7 @@ B-tree는 최상위에 하나의 루트 노드가 존재하고, 가장 하위에
 
 INNODb 테이블에서는 레코드가 클러스터링 되어 디스크에 저장되는데 기본적으로 프라이머리 키 순서대로 정렬된다.  InnoDB에서는 사용자가 기본 옵션이 클러스터링 테이블로 생성되기 때문에, 최대한 비슷한 값들을 모아 저장한다. 
 
-### Index Insert, Delete, 
+### Index Insert, Delete, Update
 
 새로운 키 값이 B-Tree에 저장될때는 저장될 키 값을 이용해서 B-Tree의 적절한 인덱스 위치를 검색해야 한다. 그리고 저장될 위치가 정해지면  레코드의 키 값과 주소 정보를 B-Tree의 리프 노드에 저장한다. 이때 만약 리프 노드가 꽉차면 리프 노드를 분리해야 하는데, 상위 브랜치 노드까지 처리 범위가 넓어진다. 이때문에 B-tree는 상대적으로 Insert 비용이 많이 드는것으로 알려져 있다. 
 
@@ -46,6 +46,8 @@ InnoDB는 상황에 따라 인덱스 키 추가 작업을 지연시켜서 나중
 
 인덱스 삭제의 경우는 간단하다. 키값이 저장되 리프노드를 찾아서 그냥 삭제하면 된다. 이 작업도 디스크 쓰기가 필요하는데 5.5버전 이상에서는 체인지 버퍼링을 이용하여 지연 처리가 될 수도 있다. 
 
+인덱스 키 을 한다는 것은 현재 B-Tree의 구조를 변경한다는 것인데 어려운 문제다. 그저 현재 키 값을 삭제한후, 다시 새로운 키 값을 추가하는 형태로 진행된다.
+
 ## Hash Index
 
 
@@ -55,6 +57,6 @@ InnoDB는 상황에 따라 인덱스 키 추가 작업을 지연시켜서 나중
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMjU5MTgyNywtNTc5ODkzMjksLTEzOT
+eyJoaXN0b3J5IjpbMTAwMjc4MDY0MiwtNTc5ODkzMjksLTEzOT
 g5NDAyNDQsODM0ODgxMjY1LDg0MDgyNTQwXX0=
 -->
