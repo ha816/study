@@ -35,6 +35,8 @@ READ_COMMITED에서는 **어떤 트랜잭션이 데이터를 변경하였더라�
 
 READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제가 있다. REPEATBLE READ 정합성이란 **하나의 트랜잭션 내에서는 똑같은 SELECT 쿼리를 실행했을때는 항상 같은 결과를 가져와야 하는 것**이다.
 
+이러한 부정합 현상은 웹프로그램에서는 크게 문제되지 않지만, 하나의 트랜잭션에서 동일한 데이터를 여러번 읽고 변경하는 작업이 금전적인 처리와 연결되면 문제가 될 수 있다. 
+
 ### REPEATABLE READ
 
 ### SERIALIZABLE
@@ -197,11 +199,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTM1MTU4ODQsLTExMjk3NzU2NTgsLT
-k1MTYyODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2
-OTA5MTEsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYyMzgwMTIyNS
-w0NDY1NDg3Myw5OTI1MzA0ODgsLTE1MzM0ODc5NjcsLTE1MTEz
-NzExNDEsMjExNTMwMTE3NCwtMTM5NTg1NjAwNywtMjYwMjkxNT
-ksLTIwODU2MDcyMDQsLTE1NTI2MDUxODIsLTE2MzU1NTQzMzEs
-MTg4MjI1MTgwM119
+eyJoaXN0b3J5IjpbMTk1MTI5NTczLC0xMTI5Nzc1NjU4LC05NT
+E2MjgzNiwtNjAzNjU4NzYyLC0xNjg3MjY0NTE1LC0xMjA0Njkw
+OTExLC0yMDQxNzA4NTY4LDYzMzU2NTgwMyw2MjM4MDEyMjUsND
+Q2NTQ4NzMsOTkyNTMwNDg4LC0xNTMzNDg3OTY3LC0xNTExMzcx
+MTQxLDIxMTUzMDExNzQsLTEzOTU4NTYwMDcsLTI2MDI5MTU5LC
+0yMDg1NjA3MjA0LC0xNTUyNjA1MTgyLC0xNjM1NTU0MzMxLDE4
+ODIyNTE4MDNdfQ==
 -->
