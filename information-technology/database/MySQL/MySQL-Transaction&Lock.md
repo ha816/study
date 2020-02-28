@@ -25,7 +25,10 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 
 READ UNCOMMITED 격리 수준에서는 각 트랜잭션에서의 변경 내용이 COMMIT이나 ROLLBACK 여부에 관계없이 다른 트랜잭션에서 공유한다. 그리하여 성능상의 이점은 있겠지만 Dirty Read 현상이 나타날 수 있다. 
 
-어떤 트랜잭션에서 처리한 작업이 완료(Commit)되지 않았는데도 다른 
+어떤 트랜잭션에서 처리한 작업이 완료(Commit)되지 않았는데도 다른 트랜잭션에서 볼 수 있는 격리 수준이 READ_UNCOMMITED이다. 
+
+Dirty Read 현상은 데이터가 나타났다가 사라지는 현상을 초래하므로 개발자와 사용자를 혼란스럽게 만들것이다. READ_UNCOMMITED는 RDBMS 표준에서는 트랜잭션 격리 수준으로 인정하지 않을 정도로 정합성에 문제가 많
+
 
 
 
@@ -194,11 +197,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkwMTQ5MDI5LC02MDM2NTg3NjIsLTE2OD
-cyNjQ1MTUsLTEyMDQ2OTA5MTEsLTIwNDE3MDg1NjgsNjMzNTY1
-ODAzLDYyMzgwMTIyNSw0NDY1NDg3Myw5OTI1MzA0ODgsLTE1Mz
-M0ODc5NjcsLTE1MTEzNzExNDEsMjExNTMwMTE3NCwtMTM5NTg1
-NjAwNywtMjYwMjkxNTksLTIwODU2MDcyMDQsLTE1NTI2MDUxOD
-IsLTE2MzU1NTQzMzEsMTg4MjI1MTgwMyw4ODczMjY3NSwxNTU4
-OTcxNTk4XX0=
+eyJoaXN0b3J5IjpbMTgwODM1OTU2NywtNjAzNjU4NzYyLC0xNj
+g3MjY0NTE1LC0xMjA0NjkwOTExLC0yMDQxNzA4NTY4LDYzMzU2
+NTgwMyw2MjM4MDEyMjUsNDQ2NTQ4NzMsOTkyNTMwNDg4LC0xNT
+MzNDg3OTY3LC0xNTExMzcxMTQxLDIxMTUzMDExNzQsLTEzOTU4
+NTYwMDcsLTI2MDI5MTU5LC0yMDg1NjA3MjA0LC0xNTUyNjA1MT
+gyLC0xNjM1NTU0MzMxLDE4ODIyNTE4MDMsODg3MzI2NzUsMTU1
+ODk3MTU5OF19
 -->
