@@ -22,7 +22,11 @@ Primary Key
 Secondary Key
 : 프라이머리 키를 제외한 나머지 모든 인덱스는 보저 인덱스이다. 
 
-## Index 저장 방식
+### B-Tree 인덱스
+
+
+### B-Tree 인덱스
+
 
 
 
@@ -30,6 +34,6 @@ Secondary Key
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2ODQwMjAzMiw4MzQ4ODEyNjUsODQwOD
+eyJoaXN0b3J5IjpbMTQzNjMzNDc5MSw4MzQ4ODEyNjUsODQwOD
 I1NDBdfQ==
 -->
