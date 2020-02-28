@@ -57,7 +57,7 @@ select(A) & \\
 select(A) &\\
 \end{bmatrix}$$
 
-두 번째 트랜잭션(12)가 데이터 변경을 하면  커밋 전에 UNDO
+두 번째 트랜잭션(12)가 데이터 변경을 하면  커밋 전에 UNDO 영역에 아래와 같이 변경전 데이터와 함께 트랜잭션 번호를 저장해 둔다. 
 
 |TRX-ID | prime | values ...|
 |--|--|--|
@@ -225,11 +225,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDI1OTkyNTMsLTE0NDI1MTg4MTQsLT
-ExMjk3NzU2NTgsLTk1MTYyODM2LC02MDM2NTg3NjIsLTE2ODcy
-NjQ1MTUsLTEyMDQ2OTA5MTEsLTIwNDE3MDg1NjgsNjMzNTY1OD
-AzLDYyMzgwMTIyNSw0NDY1NDg3Myw5OTI1MzA0ODgsLTE1MzM0
-ODc5NjcsLTE1MTEzNzExNDEsMjExNTMwMTE3NCwtMTM5NTg1Nj
-AwNywtMjYwMjkxNTksLTIwODU2MDcyMDQsLTE1NTI2MDUxODIs
-LTE2MzU1NTQzMzFdfQ==
+eyJoaXN0b3J5IjpbMTY5MDQ4OTE1OSwtMTQ0MjUxODgxNCwtMT
+EyOTc3NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2MiwtMTY4NzI2
+NDUxNSwtMTIwNDY5MDkxMSwtMjA0MTcwODU2OCw2MzM1NjU4MD
+MsNjIzODAxMjI1LDQ0NjU0ODczLDk5MjUzMDQ4OCwtMTUzMzQ4
+Nzk2NywtMTUxMTM3MTE0MSwyMTE1MzAxMTc0LC0xMzk1ODU2MD
+A3LC0yNjAyOTE1OSwtMjA4NTYwNzIwNCwtMTU1MjYwNTE4Miwt
+MTYzNTU1NDMzMV19
 -->
