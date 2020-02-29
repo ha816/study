@@ -45,6 +45,11 @@ a_{m1} & \cdots & a_{mn}\\
 x_{1}\\
 \cdots \\
 x_{n}\\
+\end{pmatrix} =
+\begin{pmatrix}
+a_x_{1}\\
+\cdots \\
+x_{n}\\
 \end{pmatrix}
 $$
 
@@ -55,5 +60,6 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDYwOTM4NjIsNTQ0MTM2MzBdfQ==
+eyJoaXN0b3J5IjpbMTg2OTMwNTUwNSwtMTEwNjA5Mzg2Miw1ND
+QxMzYzMF19
 -->
