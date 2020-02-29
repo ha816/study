@@ -43,8 +43,8 @@ a_{m1} & \cdots & a_{mn}\\
 \end{pmatrix} 
 \begin{pmatrix}
 x_{1}\\
-x_{bean}\\
-x_{rice}\\
+\cdots \\
+x_{n}\\
 \end{pmatrix}
 $$
 
@@ -55,5 +55,5 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMjg2MTA5LDU0NDEzNjMwXX0=
+eyJoaXN0b3J5IjpbLTExMDYwOTM4NjIsNTQ0MTM2MzBdfQ==
 -->
