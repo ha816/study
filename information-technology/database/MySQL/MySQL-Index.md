@@ -96,6 +96,9 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리대기 때문에 city 칼럼의 cardinality는 무시해도 된다. 만약 유니크 값의 갯수가 10인경우 평균적으로 1,000건의 조회가 필요한 것을 통계적으로 유추할 수 있고 유니크 값의 갯수가 1,000개인 경우 10건의 조회만으로 검색이 가능한 것을 유추해 볼 수 있다. 
 
+#### 읽어야 하는 레코드의 건수
+
+사실 인덱스를 통해 테이블의 레코드를 읽는 것은 인덱스를 거치지 않고 바로 테이블의 레코드를 읽는 것보다 비용이 더 많이 든다. 만약 테이블 레코드가 100만건인데, 그중에 50만건
 
 
 ## Hash Index
@@ -107,10 +110,10 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDQ3Mzk3MTgsNTMxNTY3MTk3LDcyNj
-kxOTEwOSwtMTM3ODUwODMwLC0xMTE0NjA0ODg0LC0xODc3NTE5
-NzQ3LC0xNjEyMDU5OTg3LDc5Mzc1NDA4OCwxMzk1MTM3OTExLC
-0xMzY5NzA0MTIzLC0xMDYwMTQ0NTg4LDEzMjMzNTIwNzAsNDg4
-NDcyMDc1LC05NzA2MTcxMywtNTc5ODkzMjksLTEzOTg5NDAyND
-QsODM0ODgxMjY1LDg0MDgyNTQwXX0=
+eyJoaXN0b3J5IjpbLTE5OTYzMDM0NDUsLTIwNDQ3Mzk3MTgsNT
+MxNTY3MTk3LDcyNjkxOTEwOSwtMTM3ODUwODMwLC0xMTE0NjA0
+ODg0LC0xODc3NTE5NzQ3LC0xNjEyMDU5OTg3LDc5Mzc1NDA4OC
+wxMzk1MTM3OTExLC0xMzY5NzA0MTIzLC0xMDYwMTQ0NTg4LDEz
+MjMzNTIwNzAsNDg4NDcyMDc1LC05NzA2MTcxMywtNTc5ODkzMj
+ksLTEzOTg5NDAyNDQsODM0ODgxMjY1LDg0MDgyNTQwXX0=
 -->
