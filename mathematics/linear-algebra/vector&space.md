@@ -70,7 +70,7 @@ $$차원 = 기저 백터의 갯수 = 좌표의 성분수$$
 
 기저란 취하는 방법에 따라 여러가지가 있다. 어느 한 기저를 대상으로 갯수를 세면 좋을까? 다행히도 어떤 기저를 선택해도 기저 벡터의 갯수는 일정하다는 것이 증명되어 있다. 
 
-사실 좌표에 기저(Basis)를 지정하지 않으면 의미가 없다. 
+사실 좌표에 기저(Basis)를 지정하지 않으면 의미가 없다. 이는 당연한데 산의 높이를 3776이라고 말하면 무슨뜻인지 모르지만 3776m의 단위를 붙이면 그제서야 이해가 가는것과 비슷하다. 이때 3776이 좌표, 단위 'm'가 기저에 해당한다. 
 
 
 
@@ -81,11 +81,11 @@ $$차원 = 기저 백터의 갯수 = 좌표의 성분수$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5MDczMjk4LC01ODI4ODg2MTQsLTg4NT
-M1ODI1MiwtMjY3ODM4MjAwLC0xMDAzMjM4NzMsNzU5OTQzNTcy
-LC0xNjg3NDUwMTYyLC0zMjM3ODgwMDEsMTQ1Mjg5NzIzMiwtMj
-EyODQyNjA3MSwtMTI5MDE3NDQ4OCw2MzMyMjE2MTYsMTk4MTIz
-OTcxNSwtMTY2NDM0NTAxNywtNDc0NTY3NjAyLDE5NjEyMTY0NT
-UsLTE4MTg0ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYyNzYsLTEz
-MDYwODIyODJdfQ==
+eyJoaXN0b3J5IjpbMjAzNTI0NjMxNywtNTgyODg4NjE0LC04OD
+UzNTgyNTIsLTI2NzgzODIwMCwtMTAwMzIzODczLDc1OTk0MzU3
+MiwtMTY4NzQ1MDE2MiwtMzIzNzg4MDAxLDE0NTI4OTcyMzIsLT
+IxMjg0MjYwNzEsLTEyOTAxNzQ0ODgsNjMzMjIxNjE2LDE5ODEy
+Mzk3MTUsLTE2NjQzNDUwMTcsLTQ3NDU2NzYwMiwxOTYxMjE2ND
+U1LC0xODE4NDg4MDc4LDExMjM3MDMzMSwxNTM2MzI2Mjc2LC0x
+MzA2MDgyMjgyXX0=
 -->
