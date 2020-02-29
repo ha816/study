@@ -70,8 +70,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 |1233__ABCD  | 자식노드주소|
 
 그러면 하나의 인덱스 페이지(16KB)에 몇 개의 키를 저장할 수 있을까?
-$16 * 1024 / (16+12) = 585$개를 저장 할 수 있다. 즉 자식 노드를 
-
+$16 * 1024 / (16+12) = 585$개를 저장 할 수 있다. 
 
 
 
@@ -84,7 +83,7 @@ $16 * 1024 / (16+12) = 585$개를 저장 할 수 있다. 즉 자식 노드를
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDk4Mzk3MSwtMTM2OTcwNDEyMywtMT
+eyJoaXN0b3J5IjpbMTM5NTEzNzkxMSwtMTM2OTcwNDEyMywtMT
 A2MDE0NDU4OCwxMzIzMzUyMDcwLDQ4ODQ3MjA3NSwtOTcwNjE3
 MTMsLTU3OTg5MzI5LC0xMzk4OTQwMjQ0LDgzNDg4MTI2NSw4ND
 A4MjU0MF19
