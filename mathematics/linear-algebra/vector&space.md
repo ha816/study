@@ -64,6 +64,8 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 # Space(공간)
 
+$n$차원이면 기저 벡터는 딱 $n$개인걸 보았다. 
+
 
 
 
@@ -74,11 +76,11 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzgzODIwMCwtMTAwMzIzODczLDc1OT
-k0MzU3MiwtMTY4NzQ1MDE2MiwtMzIzNzg4MDAxLDE0NTI4OTcy
-MzIsLTIxMjg0MjYwNzEsLTEyOTAxNzQ0ODgsNjMzMjIxNjE2LD
-E5ODEyMzk3MTUsLTE2NjQzNDUwMTcsLTQ3NDU2NzYwMiwxOTYx
-MjE2NDU1LC0xODE4NDg4MDc4LDExMjM3MDMzMSwxNTM2MzI2Mj
-c2LC0xMzA2MDgyMjgyLDUwODU5NDUzMSwtMzE1OTEzNTQ3XX0=
-
+eyJoaXN0b3J5IjpbLTg4NTM1ODI1MiwtMjY3ODM4MjAwLC0xMD
+AzMjM4NzMsNzU5OTQzNTcyLC0xNjg3NDUwMTYyLC0zMjM3ODgw
+MDEsMTQ1Mjg5NzIzMiwtMjEyODQyNjA3MSwtMTI5MDE3NDQ4OC
+w2MzMyMjE2MTYsMTk4MTIzOTcxNSwtMTY2NDM0NTAxNywtNDc0
+NTY3NjAyLDE5NjEyMTY0NTUsLTE4MTg0ODgwNzgsMTEyMzcwMz
+MxLDE1MzYzMjYyNzYsLTEzMDYwODIyODIsNTA4NTk0NTMxLC0z
+MTU5MTM1NDddfQ==
 -->
