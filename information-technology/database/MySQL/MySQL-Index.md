@@ -50,7 +50,9 @@ InnoDB는 상황에 따라 인덱스 키 추가 작업을 지연시켜서 나중
 
 인덱스 키 검색은 루트 노드로 부터 시작해 브랜치 노드를 거쳐 리프 노드까지 이동하며 비교 작업을 수행하는데, 이 과정을 트리 탐색(Tree traversal)이라 한다. 인덱스 트리 탐색은 SELECT에서만 사용하는 것이 아니라 UPDATE, DELETE를 처리하기 위해 항상 해당 레코드를 검색해야 할 경우에도 인덱스가 있으면 빠른 검색이 가능하다. 
 
-B-Tree인덱스를 이용한 검색은 100% 완전 일치 또는 값의 앞부분(Left-most part)만 일치하는 경우에는 사용할 수 있다. 부등호("<>") 비교나 값의 뒷부분이 일치하는 경우에는 B-Tree 인덱스를 이용한 검색이 불가능하다. 또한 인덱스를 이용한 검색에서 중요한 사실은 인덱스 키 값에 변형이 가해진 후 비교되는 경우에는 절대 B-Tree의 빠른 검색 기능을 사용할 수 없다는 것이다. 이미 변형된 값은 B-Tree 인덱스에 존재하는 값이 아니다. 따라서 함수나 연산을 수행한 결과로 정렬한다거나 
+B-Tree인덱스를 이용한 검색은 100% 완전 일치 또는 값의 앞부분(Left-most part)만 일치하는 경우에는 사용할 수 있다. 부등호("<>") 비교나 값의 뒷부분이 일치하는 경우에는 B-Tree 인덱스를 이용한 검색이 불가능하다. 또한 인덱스를 이용한 검색에서 중요한 사실은 인덱스 키 값에 변형이 가해진 후 비교되는 경우에는 절대 B-Tree의 빠른 검색 기능을 사용할 수 없다는 것이다. 이미 변형된 값은 B-Tree 인덱스에 존재하는 값이 아니다. 따라서 함수나 연산을 수행한 결과로 정렬한다거나 검색하는 작업은 B-Tree의 장점을 이용할 수 없으므로 주의하자. 
+
+InnoDB 스토리지 엔진에서
 
 ## Hash Index
 
@@ -61,7 +63,7 @@ B-Tree인덱스를 이용한 검색은 100% 완전 일치 또는 값의 앞부�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU4MTA4NzUyLDEzMjMzNTIwNzAsNDg4ND
-cyMDc1LC05NzA2MTcxMywtNTc5ODkzMjksLTEzOTg5NDAyNDQs
-ODM0ODgxMjY1LDg0MDgyNTQwXX0=
+eyJoaXN0b3J5IjpbLTEwNjAxNDQ1ODgsMTMyMzM1MjA3MCw0OD
+g0NzIwNzUsLTk3MDYxNzEzLC01Nzk4OTMyOSwtMTM5ODk0MDI0
+NCw4MzQ4ODEyNjUsODQwODI1NDBdfQ==
 -->
