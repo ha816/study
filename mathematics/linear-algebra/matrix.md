@@ -18,9 +18,10 @@ y_{money}\\
 y_{calory}\\
 \end{pmatrix} =
 \begin{pmatrix}
-a_{money_meat}\\
-y_{calory}\\
-\end{pmatrix}
+a_{money-meat} & a_{money-bean} & a_{money-rice}\\
+a_{calory-meat} & a_{calory-bean} & a_{calory-rice}\\
+\end{pmatrix} =
+
 $$
 
 
@@ -31,5 +32,5 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzY2NDE2OV19
+eyJoaXN0b3J5IjpbLTE2OTIzNzQyODJdfQ==
 -->
