@@ -64,6 +64,8 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 일반적으로 B-Tree는 자식 노드의 갯수가 가변적이다. 그러면 MySQL의 B-Tree는 자식 노드를 몇 개까지 가질지 궁금할 것이다. 이것은 바로 인덱스의 페이지 크기와 키 값의 크기에 따라 결정된다. InnoDB의 모든 페이지 크기는 16KB로 고정되어 있다. 
 
+만약 인덱스의 키가 16바이트라고 하고
+
 
 ## Hash Index
 
@@ -74,7 +76,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MjQ2MjcwNywtMTM2OTcwNDEyMywtMT
+eyJoaXN0b3J5IjpbMTE3MTEyMTY5MCwtMTM2OTcwNDEyMywtMT
 A2MDE0NDU4OCwxMzIzMzUyMDcwLDQ4ODQ3MjA3NSwtOTcwNjE3
 MTMsLTU3OTg5MzI5LC0xMzk4OTQwMjQ0LDgzNDg4MTI2NSw4ND
 A4MjU0MF19
