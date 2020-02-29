@@ -54,8 +54,8 @@ a_{m1}x_{1}+\cdots + a_{mn}x_{n}\\
 $$
 
 여기서 주의할 점은 아래와 같다.
-* 행렬과 벡터의 곱은 벡터
-* 행렬의 행의 수(세로)는 차원의 수
+* 행렬과 벡터의 곱의 결과는 벡터
+* 행렬의 행의 수(세로)는 결과 벡터의 차원
 * 행렬의 열의 수(가로)는 계산 대상의 수
 
 >행렬은 사상이다?
@@ -65,6 +65,6 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjA0MzU3MjMsMTMwMDgyMDEwNywtMT
-EwNjA5Mzg2Miw1NDQxMzYzMF19
+eyJoaXN0b3J5IjpbMTI1NzI0NzkzNiwxMzAwODIwMTA3LC0xMT
+A2MDkzODYyLDU0NDEzNjMwXX0=
 -->
