@@ -48,7 +48,9 @@ InnoDB는 상황에 따라 인덱스 키 추가 작업을 지연시켜서 나중
 
 인덱스 변경의 경우, 단순히 인덱스 상의 키 값만 변경하는 것은 불가능하다.  현재 그래서 키 값을 삭제한후, 다시 새로운 키 값을 추가하는 형태로 진행된다. 즉 앞서 설명한 인덱스 삭제, 추가 과정이 절차대로 진행된다. 
 
-인덱스 키 검색은 루트 노드로 부터 시작해 브랜치 노드를 거쳐 리프 노드까지 이동하며 비교 작업을 수행하는데, 이 과정을 트리 탐색(Tree traversal)이라 한다. 
+인덱스 키 검색은 루트 노드로 부터 시작해 브랜치 노드를 거쳐 리프 노드까지 이동하며 비교 작업을 수행하는데, 이 과정을 트리 탐색(Tree traversal)이라 한다. 인덱스 트리 탐색은 SELECT에서만 사용하는 것이 아니라 UPDATE, DELETE를 처리하기 위해 항상 해당 레코드를 검색해야 할 경우에도 인덱스가 있으면 빠른 검색이 가능하다. 
+
+B-Tree인덱스를 이용한 검색은 100% 완전 일치 또는 값의 앞부분(Left-most part)만 일치하는 경우에는 사용할 수 있다. 부
 
 ## Hash Index
 
@@ -59,7 +61,7 @@ InnoDB는 상황에 따라 인덱스 키 추가 작업을 지연시켜서 나중
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1Njc0ODgzLDQ4ODQ3MjA3NSwtOTcwNj
+eyJoaXN0b3J5IjpbODkxMzUzNzA4LDQ4ODQ3MjA3NSwtOTcwNj
 E3MTMsLTU3OTg5MzI5LC0xMzk4OTQwMjQ0LDgzNDg4MTI2NSw4
 NDA4MjU0MF19
 -->
