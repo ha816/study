@@ -98,7 +98,7 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 #### 읽어야 하는 레코드의 건수
 
-사실 인덱스를 통해 테이블의 레코드를 읽는 것은 인덱스를 거치지 않고 바로 테이블의 레코드를 읽는 것보다 비용이 더 많이 든다. 만약 테이블 레코드가 100만건인데, 그중에 50만건을 읽어야 한다는 쿼리가 있다고 하자. 
+사실 인덱스를 통해 테이블의 레코드를 읽는 것은 인덱스를 거치지 않고 바로 테이블의 레코드를 읽는 것보다 비용이 더 많이 든다. 만약 테이블 레코드가 100만건인데, 그중에 50만건을 읽어야 한다는 쿼리가 있다고 하자.  
 
 
 ## Hash Index
@@ -110,10 +110,11 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ4MTA5NTQ4LC0yMDQ0NzM5NzE4LDUzMT
-U2NzE5Nyw3MjY5MTkxMDksLTEzNzg1MDgzMCwtMTExNDYwNDg4
-NCwtMTg3NzUxOTc0NywtMTYxMjA1OTk4Nyw3OTM3NTQwODgsMT
-M5NTEzNzkxMSwtMTM2OTcwNDEyMywtMTA2MDE0NDU4OCwxMzIz
-MzUyMDcwLDQ4ODQ3MjA3NSwtOTcwNjE3MTMsLTU3OTg5MzI5LC
-0xMzk4OTQwMjQ0LDgzNDg4MTI2NSw4NDA4MjU0MF19
+eyJoaXN0b3J5IjpbLTE3NDgwNzE5ODAsMjQ4MTA5NTQ4LC0yMD
+Q0NzM5NzE4LDUzMTU2NzE5Nyw3MjY5MTkxMDksLTEzNzg1MDgz
+MCwtMTExNDYwNDg4NCwtMTg3NzUxOTc0NywtMTYxMjA1OTk4Ny
+w3OTM3NTQwODgsMTM5NTEzNzkxMSwtMTM2OTcwNDEyMywtMTA2
+MDE0NDU4OCwxMzIzMzUyMDcwLDQ4ODQ3MjA3NSwtOTcwNjE3MT
+MsLTU3OTg5MzI5LC0xMzk4OTQwMjQ0LDgzNDg4MTI2NSw4NDA4
+MjU0MF19
 -->
