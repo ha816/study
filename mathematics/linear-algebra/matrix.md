@@ -37,17 +37,16 @@ $$
 
 $$
 \begin{pmatrix}
-a_{money-meat} & a_{money-bean} & a_{money-rice}\\
-a_{calory-meat} & a_{calory-bean} & a_{calory-rice}\\
+a_{11} & \cdots & a_{1n}\\
+\cdots & & \cdots\\
+a_{m1} & \cdots & a_{mn}\\
 \end{pmatrix} 
 \begin{pmatrix}
-x_{meat}\\
+x_{1}\\
 x_{bean}\\
 x_{rice}\\
 \end{pmatrix}
 $$
-
-
 
 >행렬은 사상이다?
 >사상은 일반적으로 쓰이는 변환이라는 표현도 가능하지만, 수학 용어로서 변환은 '대등한 것에 이동한다'라는 의미다. n차원 공간에서 m차원이라는 다른 세계로 옮기는 것을 변환이라고는 부를 수 없어 사상이라는 더 고차원적인 언어를 사용했다고 한다. 
@@ -56,5 +55,5 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDEzMzYwOTEsNTQ0MTM2MzBdfQ==
+eyJoaXN0b3J5IjpbMTYzMjg2MTA5LDU0NDEzNjMwXX0=
 -->
