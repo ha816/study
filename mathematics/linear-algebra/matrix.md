@@ -9,7 +9,9 @@ $$\begin{pmatrix}
 
 행렬이므로 `행` 과 `열`의 순으로 표기한다. 일반적으로 행렬은 알파벳 대문자, 행렬의 성분은 소문자로 쓴다. 
 
-행렬의 곱하기
+## 행렬의 곱하기
+
+
 
 
 >행렬은 사상이다?
@@ -19,5 +21,5 @@ $$\begin{pmatrix}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MjM3MTI1MV19
+eyJoaXN0b3J5IjpbLTgyMDYxMDMxNV19
 -->
