@@ -72,7 +72,9 @@ $$차원 = 기저 백터의 갯수 = 좌표의 성분수$$
 
 사실 좌표에 기저(Basis)를 지정하지 않으면 의미가 없다. 이는 당연한데 산의 높이를 3776이라고 말하면 무슨뜻인지 모르지만 3776m의 단위를 붙이면 그제서야 이해가 가는것과 비슷하다. 이때 3776이 좌표, 단위 'm'가 기저에 해당한다. 
 
-매번 이런 기저를 생각하고 쓰는 것은 매우 귀찮은 작업이다. 이제 이 기저를 생략하고 좌표 v만을 표
+매번 이런 기저를 생각하고 쓰는 것은 매우 귀찮은 작업이다. 이제 이 기저를 생략하고 좌표 v만을 표시하도록 한다. 어떤 기저를 정해 계속 고정해두므로 일일이 쓰지 않아도 된다. 
+
+좌표만으로 이야기하려면 "덧셈과 정수배를 좌표로 말하면 어찌되는가"를 확인해야 한다. 어떤 기저를 취하여 좌표를 표시해도 덧셈
 
 
 
@@ -83,7 +85,7 @@ $$차원 = 기저 백터의 갯수 = 좌표의 성분수$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzNDA3OTgyLC01ODI4ODg2MTQsLTg4NT
+eyJoaXN0b3J5IjpbNzA4NjQzNTcyLC01ODI4ODg2MTQsLTg4NT
 M1ODI1MiwtMjY3ODM4MjAwLC0xMDAzMjM4NzMsNzU5OTQzNTcy
 LC0xNjg3NDUwMTYyLC0zMjM3ODgwMDEsMTQ1Mjg5NzIzMiwtMj
 EyODQyNjA3MSwtMTI5MDE3NDQ4OCw2MzMyMjE2MTYsMTk4MTIz
