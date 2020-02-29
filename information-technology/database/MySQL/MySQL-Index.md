@@ -48,7 +48,7 @@ InnoDB는 상황에 따라 인덱스 키 추가 작업을 지연시켜서 나중
 
 인덱스 변경의 경우, 단순히 인덱스 상의 키 값만 변경하는 것은 불가능하다.  현재 그래서 키 값을 삭제한후, 다시 새로운 키 값을 추가하는 형태로 진행된다. 즉 앞서 설명한 인덱스 삭제, 추가 과정이 절차대로 진행된다. 
 
-인덱스 키 검색은 
+인덱스 키 검색은 루트 노드로 부터 시작해 브랜치 노드를 거쳐 리프 노드까지 이동하며 비교 작업을 수행하는데, 이 과정을 트리 탐색(Tree traversal)이라 한다. 
 
 ## Hash Index
 
@@ -59,7 +59,7 @@ InnoDB는 상황에 따라 인덱스 키 추가 작업을 지연시켜서 나중
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg4NDcyMDc1LC05NzA2MTcxMywtNTc5OD
-kzMjksLTEzOTg5NDAyNDQsODM0ODgxMjY1LDg0MDgyNTQwXX0=
-
+eyJoaXN0b3J5IjpbMTg1Njc0ODgzLDQ4ODQ3MjA3NSwtOTcwNj
+E3MTMsLTU3OTg5MzI5LC0xMzk4OTQwMjQ0LDgzNDg4MTI2NSw4
+NDA4MjU0MF19
 -->
