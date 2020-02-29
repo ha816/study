@@ -58,7 +58,9 @@ InnoDB 스토리지 엔진에서 인덱스는 특별한 의미가 있다. InnoDB
 
 B-Tree 인덱스는 인덱스를 구성하는 칼럼의 크기와 레코드의 건수, 그리고 유니크한 인덱스 키 값의 개수등에 의해 검색이나 변경 작업의 성능이 영향을 받는다. 
 
-* 
+#### 인덱스 키값의 크기
+
+InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단위를 페이지(Page) 또는 블록(Block)이라 하며, 디스크의 모든 읽기 및 쓰기 작업의 최소 작업 단위가 된다. 또한 페이지는 InnoDB 버퍼 풀에서 데이터를 버
 
 
 ## Hash Index
@@ -70,8 +72,8 @@ B-Tree 인덱스는 인덱스를 구성하는 칼럼의 크기와 레코드의 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjQ0ODk0NzMsLTEzNjk3MDQxMjMsLT
-EwNjAxNDQ1ODgsMTMyMzM1MjA3MCw0ODg0NzIwNzUsLTk3MDYx
-NzEzLC01Nzk4OTMyOSwtMTM5ODk0MDI0NCw4MzQ4ODEyNjUsOD
-QwODI1NDBdfQ==
+eyJoaXN0b3J5IjpbMTIxNjE5OTczMiwtMTM2OTcwNDEyMywtMT
+A2MDE0NDU4OCwxMzIzMzUyMDcwLDQ4ODQ3MjA3NSwtOTcwNjE3
+MTMsLTU3OTg5MzI5LC0xMzk4OTQwMjQ0LDgzNDg4MTI2NSw4ND
+A4MjU0MF19
 -->
