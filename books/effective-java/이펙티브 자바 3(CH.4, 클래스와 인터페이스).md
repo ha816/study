@@ -69,6 +69,8 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 		
 피연산자와 함수를 적용해서 그 결과를 반환하지만, 기존에 피연산자 자체는 그대로이 프로그래밍 패턴을 함수형 프로그래밍이라고 한다. 반면에, 함수를 적용했을때 피연산자 자체를 수정하는 경우 절차적 혹은 명령형 프로그래밍이라고 한다. 
 함수형 프로그래밍에서는 메서드 이름으로 add같은 동사 대신 plus같은 전치사를 사용한다는 점에도 주주하자. 이는 해당 메서드가 객체의 값을 변경하지 않는다는 사실을 강조한다. 참고로 이 명명 규칙을 따르지 않은 BigInter와 BigDecimal클래스를 사람들이 잘못 사용하는 경우가 종종 있다. 이렇게 함수형 프로그래밍을 따르면 불변이 되는 영역이 높아지는 장점을 누릴 수 있다. 
+
+>불변 개게는 단순하다. 불변 객체는 생성된 시점의 상태를 그대로 간직한다.
 	  
  불변 클래스의 장점  
  1. 단순함
@@ -179,10 +181,10 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNjM2NTE4MCwxMjkyNDgzNzE0LC02OD
-kzMTU4NjIsLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3
-NDE1LC0xMjk4NTEyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MS
-wtMTI1NDUxNzYsMTM3MTY3MTc3MSwzMDQxMjM3NTAsMTQ3NjI4
-NzE4Nyw4Njk4MzM2NzEsMTMzMzk4OTE1NSwtMjA2ODY1MTQyMi
-wtMTc3MjQyMzczMiwtMTU4MzQzMjMyM119
+eyJoaXN0b3J5IjpbLTEyMzgyMTY5OTEsMTI5MjQ4MzcxNCwtNj
+g5MzE1ODYyLC0xMzk2NTg5NDksMTk3Njk5ODMwMywtMTYwNDk2
+NzQxNSwtMTI5ODUxMjg5NywxMzcxNjcxNzcxLDEzNzE2NzE3Nz
+EsLTEyNTQ1MTc2LDEzNzE2NzE3NzEsMzA0MTIzNzUwLDE0NzYy
+ODcxODcsODY5ODMzNjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0Mj
+IsLTE3NzI0MjM3MzIsLTE1ODM0MzIzMjNdfQ==
 -->
