@@ -102,7 +102,10 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 일반적으로 DBMS의 옵티마니저는에서는 **인덱스를 통해 레코드 1건을 읽는 것이 테이블에서 직접 읽는것보다 4~5배 정도 더 비용이 많이 드는것으로 예측한다.** 따라서 인덱스를 통해 읽어야 할 레코드 건수(옵티마이저가 판단한)가 전체 테이블 레코드의 20 ~25%를 넘어서면 인덱스를 이용하지 않고 직접 모든 데이터를 읽고 필터링을 통해 처리하는게 효율적이다. 
 
-### Index INSERT, DELETE, UPDATE, SELECT
+### B-Tree 인덱스를 통한 데이터 읽기
+
+#### Range Scan
+
 
 ## Hash Index
 
@@ -113,11 +116,11 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzIyNjcxNzYsLTE1NjAzNzY5MDEsMj
-Q4MTA5NTQ4LC0yMDQ0NzM5NzE4LDUzMTU2NzE5Nyw3MjY5MTkx
-MDksLTEzNzg1MDgzMCwtMTExNDYwNDg4NCwtMTg3NzUxOTc0Ny
-wtMTYxMjA1OTk4Nyw3OTM3NTQwODgsMTM5NTEzNzkxMSwtMTM2
-OTcwNDEyMywtMTA2MDE0NDU4OCwxMzIzMzUyMDcwLDQ4ODQ3Mj
-A3NSwtOTcwNjE3MTMsLTU3OTg5MzI5LC0xMzk4OTQwMjQ0LDgz
-NDg4MTI2NV19
+eyJoaXN0b3J5IjpbNjg2OTE3NTUsLTE1NjAzNzY5MDEsMjQ4MT
+A5NTQ4LC0yMDQ0NzM5NzE4LDUzMTU2NzE5Nyw3MjY5MTkxMDks
+LTEzNzg1MDgzMCwtMTExNDYwNDg4NCwtMTg3NzUxOTc0NywtMT
+YxMjA1OTk4Nyw3OTM3NTQwODgsMTM5NTEzNzkxMSwtMTM2OTcw
+NDEyMywtMTA2MDE0NDU4OCwxMzIzMzUyMDcwLDQ4ODQ3MjA3NS
+wtOTcwNjE3MTMsLTU3OTg5MzI5LC0xMzk4OTQwMjQ0LDgzNDg4
+MTI2NV19
 -->
