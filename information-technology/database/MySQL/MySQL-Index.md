@@ -54,6 +54,11 @@ B-Tree인덱스를 이용한 검색은 100% 완전 일치 또는 값의 앞부�
 
 InnoDB 스토리지 엔진에서 인덱스는 특별한 의미가 있다. InnoDB 테이블에서 지원하는 레코드 잠금이나 넥스트 키 락(갭 락)이 검색을 수행한 인덱스를 잠근후 테이블의 레코드를 잠그는 식으로 구현되어 있다. UPDATE나 DELETE 문장이 실행될때 테이블에 적절히 사용할 수 있는 인덱스가 없으면 불필요하게 많은 레코드를 잠근다. 심지어 테이블의 모든 레코드를 잠글 수도 있다. InnoDB 스토리지 엔진에서는 그 만큼 인덱스 설계가 중요하고 많은 부분에 영향을 미친다는 것이다. 
 
+### Performance
+
+B-Tree 인덱스는 
+
+
 ## Hash Index
 
 
@@ -63,7 +68,8 @@ InnoDB 스토리지 엔진에서 인덱스는 특별한 의미가 있다. InnoDB
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjk3MDQxMjMsLTEwNjAxNDQ1ODgsMT
-MyMzM1MjA3MCw0ODg0NzIwNzUsLTk3MDYxNzEzLC01Nzk4OTMy
-OSwtMTM5ODk0MDI0NCw4MzQ4ODEyNjUsODQwODI1NDBdfQ==
+eyJoaXN0b3J5IjpbMTUxMDc4ODIyMCwtMTM2OTcwNDEyMywtMT
+A2MDE0NDU4OCwxMzIzMzUyMDcwLDQ4ODQ3MjA3NSwtOTcwNjE3
+MTMsLTU3OTg5MzI5LC0xMzk4OTQwMjQ0LDgzNDg4MTI2NSw4ND
+A4MjU0MF19
 -->
