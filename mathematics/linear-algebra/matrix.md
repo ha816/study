@@ -30,15 +30,14 @@ $$
 
 여기서  `요소`인 $a$가 행렬로 정리되고 `요인`인 $x$는 벡터로 나누어 정리되어 깔금하게 보기 좋다. 이것이 바로 행렬과 벡터의 곱이다. 
 
-요인(要因)
-
+요소(要素)는 식 계산에 꼭 필요한 성분. 또는 근본 조건을 말하며, 요인(要因)은 
+식이 성립되는 
 사물이나 사건이 성립되는 까닭. 또는 조건이 되는 요소.
 
 ('원인’,‘이유’로 순화)
 
-요소(要素)
 
-사물의 성립이나 효력 발생 따위에 꼭 필요한 성분. 또는 근본 조건.
+
 
 
 >행렬은 사상이다?
@@ -48,5 +47,5 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NjQ3MzQ0Myw1NDQxMzYzMF19
+eyJoaXN0b3J5IjpbMTMzMzIzNjcxOSw1NDQxMzYzMF19
 -->
