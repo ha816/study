@@ -47,11 +47,15 @@ x_{1}\\
 x_{n}\\
 \end{pmatrix} =
 \begin{pmatrix}
-a_x_{1}\\
+a_{11}x_{1}+\cdots + a_{1n}x_{n}\\
 \cdots \\
-x_{n}\\
+a_{m1}x_{1}+\cdots + a_{mn}x_{n}\\
 \end{pmatrix}
 $$
+
+여기서 주의할 점은 아래와 같다.
+* 행렬과 벡터의 곱은 벡터
+* 행렬의 열
 
 >행렬은 사상이다?
 >사상은 일반적으로 쓰이는 변환이라는 표현도 가능하지만, 수학 용어로서 변환은 '대등한 것에 이동한다'라는 의미다. n차원 공간에서 m차원이라는 다른 세계로 옮기는 것을 변환이라고는 부를 수 없어 사상이라는 더 고차원적인 언어를 사용했다고 한다. 
@@ -60,6 +64,6 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2OTMwNTUwNSwtMTEwNjA5Mzg2Miw1ND
-QxMzYzMF19
+eyJoaXN0b3J5IjpbOTgyNjQ5OTc0LC0xMTA2MDkzODYyLDU0ND
+EzNjMwXX0=
 -->
