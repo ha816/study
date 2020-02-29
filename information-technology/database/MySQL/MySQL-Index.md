@@ -83,7 +83,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 앞서 하나의 노드는 585개의 키 값과 자식 노드 주소 가질 수 있다고 했다. $16 * 1024 / (16+12) = 585$ 
 즉 키값과 자식노드 주소 값의 합이 28 바이트라면 최대 2억정도 된다.($585^3$)
 
-**B-Tree의 깊이는 검색할때 몇번이나 랜덤하게 디스크를 읽어야 하는지와 직결된다.** 
+**B-Tree의 깊이는 검색할때 몇번이나 랜덤하게 디스크를 읽어야 하는지와 직결된다.** 결론적으로 인덳
 
 
 
@@ -97,10 +97,10 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2ODQyODk5NCwtMTM3ODUwODMwLC0xMT
-E0NjA0ODg0LC0xODc3NTE5NzQ3LC0xNjEyMDU5OTg3LDc5Mzc1
-NDA4OCwxMzk1MTM3OTExLC0xMzY5NzA0MTIzLC0xMDYwMTQ0NT
-g4LDEzMjMzNTIwNzAsNDg4NDcyMDc1LC05NzA2MTcxMywtNTc5
-ODkzMjksLTEzOTg5NDAyNDQsODM0ODgxMjY1LDg0MDgyNTQwXX
-0=
+eyJoaXN0b3J5IjpbLTE1NDU1NDYyMzIsLTEzNzg1MDgzMCwtMT
+ExNDYwNDg4NCwtMTg3NzUxOTc0NywtMTYxMjA1OTk4Nyw3OTM3
+NTQwODgsMTM5NTEzNzkxMSwtMTM2OTcwNDEyMywtMTA2MDE0ND
+U4OCwxMzIzMzUyMDcwLDQ4ODQ3MjA3NSwtOTcwNjE3MTMsLTU3
+OTg5MzI5LC0xMzk4OTQwMjQ0LDgzNDg4MTI2NSw4NDA4MjU0MF
+19
 -->
