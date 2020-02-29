@@ -92,7 +92,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 인덱스에서 선택도(Selectivity) 또는 기수성(Cardinality)는 거의 같은 의미로 사용된다. **Cardinality는 모든 인덱스 키값 가운데 유니크한 값의 수를 의미한다.**
 만약 전체 인덱스 키값은 100개인데 그중에서 유니크한 값의 수는 10개라면 Cardinality는 10이다. 정의에 따라 인덱스 키 값중에 중복되는 값이 많아지면 Cardinality는 낮아지고 반대로 중복값이 없으면 Cardinality가 높아진다. Cardinality가 높아지면 검색 대상 수가 줄기 때문에 더 빠르게 처리가 된다. 
 
-
+만약 
 
 
 
@@ -105,7 +105,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMjY2NTIyOSw3MjY5MTkxMDksLTEzNz
+eyJoaXN0b3J5IjpbLTUzMDE2MTY2NCw3MjY5MTkxMDksLTEzNz
 g1MDgzMCwtMTExNDYwNDg4NCwtMTg3NzUxOTc0NywtMTYxMjA1
 OTk4Nyw3OTM3NTQwODgsMTM5NTEzNzkxMSwtMTM2OTcwNDEyMy
 wtMTA2MDE0NDU4OCwxMzIzMzUyMDcwLDQ4ODQ3MjA3NSwtOTcw
