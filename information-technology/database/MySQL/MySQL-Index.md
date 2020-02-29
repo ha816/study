@@ -56,7 +56,9 @@ InnoDB 스토리지 엔진에서 인덱스는 특별한 의미가 있다. InnoDB
 
 ### Performance
 
-B-Tree 인덱스는 
+B-Tree 인덱스는 인덱스를 구성하는 칼럼의 크기와 레코드의 건수, 그리고 유니크한 인덱스 키 값의 개수등에 의해 검색이나 변경 작업의 성능이 영향을 받는다. 
+
+* 
 
 
 ## Hash Index
@@ -68,8 +70,8 @@ B-Tree 인덱스는
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMDc4ODIyMCwtMTM2OTcwNDEyMywtMT
-A2MDE0NDU4OCwxMzIzMzUyMDcwLDQ4ODQ3MjA3NSwtOTcwNjE3
-MTMsLTU3OTg5MzI5LC0xMzk4OTQwMjQ0LDgzNDg4MTI2NSw4ND
-A4MjU0MF19
+eyJoaXN0b3J5IjpbLTE3MjQ0ODk0NzMsLTEzNjk3MDQxMjMsLT
+EwNjAxNDQ1ODgsMTMyMzM1MjA3MCw0ODg0NzIwNzUsLTk3MDYx
+NzEzLC01Nzk4OTMyOSwtMTM5ODk0MDI0NCw4MzQ4ODEyNjUsOD
+QwODI1NDBdfQ==
 -->
