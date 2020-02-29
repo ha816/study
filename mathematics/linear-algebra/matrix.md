@@ -7,7 +7,7 @@ $$\begin{pmatrix}
 0&3\\
 \end{pmatrix}$$
 
-행렬이므로 `행` 과 `열`의 순으로 표기한다. 
+행렬이므로 `행` 과 `열`의 순으로 표기한다. 일반적으로 행렬은 알파벳 대문자, 행렬의 성분은 소문자로 쓴다. 
 
 
 >행렬은 사상이다?
@@ -17,5 +17,5 @@ $$\begin{pmatrix}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNTEyMTM0MF19
+eyJoaXN0b3J5IjpbLTE0OTY1MTQ2NzNdfQ==
 -->
