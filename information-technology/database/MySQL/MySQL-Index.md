@@ -77,6 +77,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 #### B-Tree 깊이
 
+B-Tree 인덱스의 깊이는 상당히 중요하지만 직접 제어할 방법이 없다. 
 
 
 
@@ -91,9 +92,9 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzc1MTk3NDcsLTE2MTIwNTk5ODcsNz
-kzNzU0MDg4LDEzOTUxMzc5MTEsLTEzNjk3MDQxMjMsLTEwNjAx
-NDQ1ODgsMTMyMzM1MjA3MCw0ODg0NzIwNzUsLTk3MDYxNzEzLC
-01Nzk4OTMyOSwtMTM5ODk0MDI0NCw4MzQ4ODEyNjUsODQwODI1
-NDBdfQ==
+eyJoaXN0b3J5IjpbLTExMTQ2MDQ4ODQsLTE4Nzc1MTk3NDcsLT
+E2MTIwNTk5ODcsNzkzNzU0MDg4LDEzOTUxMzc5MTEsLTEzNjk3
+MDQxMjMsLTEwNjAxNDQ1ODgsMTMyMzM1MjA3MCw0ODg0NzIwNz
+UsLTk3MDYxNzEzLC01Nzk4OTMyOSwtMTM5ODk0MDI0NCw4MzQ4
+ODEyNjUsODQwODI1NDBdfQ==
 -->
