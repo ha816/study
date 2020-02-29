@@ -3,9 +3,11 @@
 앞서 벡터라는 대상을 알았으니 다음은 벡터 대상간의 관계를 나타내보자. 행렬은 수를 사각 형태로 나열한 것이다. 
 
 $$\begin{pmatrix}
-
+2&0\\
+0&3\\
 \end{pmatrix}$$
 
+행렬이므로 `행` 과 `열`의 순으로 표기한다. 
 
 
 >행렬은 사상이다?
@@ -15,5 +17,5 @@ $$\begin{pmatrix}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDc0MDEzXX0=
+eyJoaXN0b3J5IjpbLTIxNTEyMTM0MF19
 -->
