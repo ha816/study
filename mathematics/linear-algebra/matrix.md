@@ -31,7 +31,21 @@ $$
 여기서  `요소`인 $a$가 행렬로 정리되고 `요인`인 $x$는 벡터로 나누어 정리되어 깔금하게 보기 좋다. 이것이 바로 행렬과 벡터의 곱이다. 
 
 요소(要素)는 식 계산에 꼭 필요한 성분. 또는 근본 조건을 말하며, 요인(要因)은 
-식의 답을 계산하는데 입력변수, 조건등 이다. 총 비용과 칼로리를 계산하기 위해선 고기, 콩, 쌀의 그램당 비용과 칼로리를 알아야 하는데 이것이 근본 조건(요소)이다. 우리가 구한 고기, 콩, 쌀의 그램은 변수이자 답을 계산하기 위한 키가 된다. 
+식의 답을 계산하는데 입력변수, 조건등이 될 수 있다. 총 비용과 칼로리를 계산하기 위해선 고기, 콩, 쌀의 그램당 비용과 칼로리를 알아야 하는데 이것이 근본 조건(요소)이다. 우리가 구한 고기, 콩, 쌀의 그램은 변수이자 답을 계산하기 위한 키가 된다. 
+
+좀 더 일반화 하여 표현하면 $m * n$행렬과 $n$차원 벡터에 대해
+
+$$
+\begin{pmatrix}
+a_{money-meat} & a_{money-bean} & a_{money-rice}\\
+a_{calory-meat} & a_{calory-bean} & a_{calory-rice}\\
+\end{pmatrix} 
+\begin{pmatrix}
+x_{meat}\\
+x_{bean}\\
+x_{rice}\\
+\end{pmatrix}
+$$
 
 
 
@@ -42,5 +56,5 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDg4MTYyNSw1NDQxMzYzMF19
+eyJoaXN0b3J5IjpbLTE4MDEzMzYwOTEsNTQ0MTM2MzBdfQ==
 -->
