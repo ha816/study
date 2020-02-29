@@ -74,7 +74,10 @@ $$차원 = 기저 백터의 갯수 = 좌표의 성분수$$
 
 매번 이런 기저를 생각하고 쓰는 것은 매우 귀찮은 작업이다. 이제 이 기저를 생략하고 좌표 v만을 표시하도록 한다. 어떤 기저를 정해 계속 고정해두므로 일일이 쓰지 않아도 된다. 
 
-좌표만으로 이야기하려면 "덧셈과 정수배를 좌표로 말하면 어찌되는가"를 확인해야 한다. 어떤 기저를 취하여 좌표를 표시해도 덧셈
+좌표만으로 이야기하려면 "덧셈과 정수배를 좌표로 말하면 어찌되는가"를 확인해야 한다. 어떤 기저를 취하여 좌표를 표시해도 덧셈과 정수배는 좌표 성분마다 덧셈과 정수배가 된다. 
+
+$$\vec x + \vec y = (x_1 + y_1)\vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$ 
+
 
 
 
@@ -85,7 +88,7 @@ $$차원 = 기저 백터의 갯수 = 좌표의 성분수$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA4NjQzNTcyLC01ODI4ODg2MTQsLTg4NT
+eyJoaXN0b3J5IjpbODYyNjUzNzQzLC01ODI4ODg2MTQsLTg4NT
 M1ODI1MiwtMjY3ODM4MjAwLC0xMDAzMjM4NzMsNzU5OTQzNTcy
 LC0xNjg3NDUwMTYyLC0zMjM3ODgwMDEsMTQ1Mjg5NzIzMiwtMj
 EyODQyNjA3MSwtMTI5MDE3NDQ4OCw2MzMyMjE2MTYsMTk4MTIz
