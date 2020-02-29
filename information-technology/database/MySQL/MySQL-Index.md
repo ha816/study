@@ -52,7 +52,7 @@ InnoDB는 상황에 따라 인덱스 키 추가 작업을 지연시켜서 나중
 
 B-Tree인덱스를 이용한 검색은 100% 완전 일치 또는 값의 앞부분(Left-most part)만 일치하는 경우에는 사용할 수 있다. 부등호("<>") 비교나 값의 뒷부분이 일치하는 경우에는 B-Tree 인덱스를 이용한 검색이 불가능하다. 또한 인덱스를 이용한 검색에서 중요한 사실은 인덱스 키 값에 변형이 가해진 후 비교되는 경우에는 절대 B-Tree의 빠른 검색 기능을 사용할 수 없다는 것이다. 이미 변형된 값은 B-Tree 인덱스에 존재하는 값이 아니다. 따라서 함수나 연산을 수행한 결과로 정렬한다거나 검색하는 작업은 B-Tree의 장점을 이용할 수 없으므로 주의하자. 
 
-InnoDB 스토리지 엔진에서
+InnoDB 스토리지 엔진에서 인덱스는 특별한 의미가 있다. InnoDB 테이블에서 지원하는 레코드 잠금이나 넥스트 키 락(갭 락)이 검색을 수행한 인덱스를 잠근후 테이블의 레코드를 잠그는 식으로 구현되어 있다.
 
 ## Hash Index
 
@@ -63,7 +63,7 @@ InnoDB 스토리지 엔진에서
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjAxNDQ1ODgsMTMyMzM1MjA3MCw0OD
-g0NzIwNzUsLTk3MDYxNzEzLC01Nzk4OTMyOSwtMTM5ODk0MDI0
-NCw4MzQ4ODEyNjUsODQwODI1NDBdfQ==
+eyJoaXN0b3J5IjpbLTE2NTY5ODk5MzEsLTEwNjAxNDQ1ODgsMT
+MyMzM1MjA3MCw0ODg0NzIwNzUsLTk3MDYxNzEzLC01Nzk4OTMy
+OSwtMTM5ODk0MDI0NCw4MzQ4ODEyNjUsODQwODI1NDBdfQ==
 -->
