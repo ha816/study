@@ -87,6 +87,10 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 여기서 언급한 내용은 인덱스 키 값을 가능한 작제 만들면 좋다는 것을 강조하는 내용이고 아무리 대용량의 데이터 베이스라도 B-Tree깊이가 4~5이상까지 깊어지는 경우는 별로 없다. 
 
+#### 선택도(기수성)
+
+인덱스에서 선택도(Selectivity) 또는 기수성(Cardinality)는 거의 같은 의미로 사용된다. **Cardinality는 모든 인덱스 키값 가운데 유니크한 값의 수를 의미한다.**
+
 
 
 
@@ -99,10 +103,10 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NzI0NDUwMiwtMTM3ODUwODMwLC0xMT
-E0NjA0ODg0LC0xODc3NTE5NzQ3LC0xNjEyMDU5OTg3LDc5Mzc1
-NDA4OCwxMzk1MTM3OTExLC0xMzY5NzA0MTIzLC0xMDYwMTQ0NT
-g4LDEzMjMzNTIwNzAsNDg4NDcyMDc1LC05NzA2MTcxMywtNTc5
-ODkzMjksLTEzOTg5NDAyNDQsODM0ODgxMjY1LDg0MDgyNTQwXX
-0=
+eyJoaXN0b3J5IjpbNzEzMzExMDMyLC0xMzc4NTA4MzAsLTExMT
+Q2MDQ4ODQsLTE4Nzc1MTk3NDcsLTE2MTIwNTk5ODcsNzkzNzU0
+MDg4LDEzOTUxMzc5MTEsLTEzNjk3MDQxMjMsLTEwNjAxNDQ1OD
+gsMTMyMzM1MjA3MCw0ODg0NzIwNzUsLTk3MDYxNzEzLC01Nzk4
+OTMyOSwtMTM5ODk0MDI0NCw4MzQ4ODEyNjUsODQwODI1NDBdfQ
+==
 -->
