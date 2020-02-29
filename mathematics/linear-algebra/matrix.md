@@ -13,6 +13,7 @@ $$\begin{pmatrix}
 
 고기 $x$그램, 콩 $y$그램, 쌀 $z$그램을 샀다고 하자 총 비용은 얼마일까 그리고 총 몇 칼로리 일까?
 
+
 $$\begin{pmatrix}
 2&0\\
 0&3\\
@@ -26,5 +27,5 @@ $$\begin{pmatrix}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTgwNTk4NV19
+eyJoaXN0b3J5IjpbODA1MzExNTM3XX0=
 -->
