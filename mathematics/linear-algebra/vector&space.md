@@ -64,7 +64,9 @@ $$u_1 \vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$
 
 # Space(공간)
 
-$n$차원이면 기저 벡터는 딱 $n$개인걸 보았다. 
+$n$차원이면 기저 벡터는 딱 $n$개인걸 보았다. 하지만 공식적으로는 반대로 기저 벡터 갯수를 가지고 그 공간의 차원을 정의한다. 
+
+$$차원 =$$
 
 
 
@@ -76,11 +78,11 @@ $n$차원이면 기저 벡터는 딱 $n$개인걸 보았다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NTM1ODI1MiwtMjY3ODM4MjAwLC0xMD
-AzMjM4NzMsNzU5OTQzNTcyLC0xNjg3NDUwMTYyLC0zMjM3ODgw
-MDEsMTQ1Mjg5NzIzMiwtMjEyODQyNjA3MSwtMTI5MDE3NDQ4OC
-w2MzMyMjE2MTYsMTk4MTIzOTcxNSwtMTY2NDM0NTAxNywtNDc0
-NTY3NjAyLDE5NjEyMTY0NTUsLTE4MTg0ODgwNzgsMTEyMzcwMz
-MxLDE1MzYzMjYyNzYsLTEzMDYwODIyODIsNTA4NTk0NTMxLC0z
-MTU5MTM1NDddfQ==
+eyJoaXN0b3J5IjpbMTQzOTAyMTU3NiwtODg1MzU4MjUyLC0yNj
+c4MzgyMDAsLTEwMDMyMzg3Myw3NTk5NDM1NzIsLTE2ODc0NTAx
+NjIsLTMyMzc4ODAwMSwxNDUyODk3MjMyLC0yMTI4NDI2MDcxLC
+0xMjkwMTc0NDg4LDYzMzIyMTYxNiwxOTgxMjM5NzE1LC0xNjY0
+MzQ1MDE3LC00NzQ1Njc2MDIsMTk2MTIxNjQ1NSwtMTgxODQ4OD
+A3OCwxMTIzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4MjI4Miw1
+MDg1OTQ1MzFdfQ==
 -->
