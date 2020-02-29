@@ -71,7 +71,9 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 그러면 하나의 인덱스 페이지(16KB) 또는 노드에 몇 개의 키와 자식노드 주소를 저장할 수 있을까? $16 * 1024 / (16+12) = 585$개를 저장 할 수 있다.  최종적으로 각 노드는 585개의 자식 노드를 가질 수 있는 B-Tree이다. 
 
-인덱스 의 키값이 2배가 늘어난 32byte로 늘어났다고 가정하면 $16 * 1024 / (32+12) $
+인덱스 의 키값이 2배가 늘어난 32byte로 늘어났다고 가정하면 $16 * 1024 / (32+12) = 372$개를 저장할 수 있다. 만약 여러분의 SELECT 쿼리가 레코드 500개를 읽어야 한다면 전자는 인덱스 페이지 한번에 해결이 되지만, 후자는 최소 2번 이상의 디스크를 읽어야 한다. 결국 **인덱스를 구성하는 키 값의 크기가 커지면 디스크로부터 읽어야 하는 횟수가 늘어나고 느려진다는 것을 의미한다.** 
+
+
 
 
 
@@ -84,8 +86,8 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2OTY5MDk1LDc5Mzc1NDA4OCwxMzk1MT
-M3OTExLC0xMzY5NzA0MTIzLC0xMDYwMTQ0NTg4LDEzMjMzNTIw
-NzAsNDg4NDcyMDc1LC05NzA2MTcxMywtNTc5ODkzMjksLTEzOT
-g5NDAyNDQsODM0ODgxMjY1LDg0MDgyNTQwXX0=
+eyJoaXN0b3J5IjpbLTE2MTIwNTk5ODcsNzkzNzU0MDg4LDEzOT
+UxMzc5MTEsLTEzNjk3MDQxMjMsLTEwNjAxNDQ1ODgsMTMyMzM1
+MjA3MCw0ODg0NzIwNzUsLTk3MDYxNzEzLC01Nzk4OTMyOSwtMT
+M5ODk0MDI0NCw4MzQ4ODEyNjUsODQwODI1NDBdfQ==
 -->
