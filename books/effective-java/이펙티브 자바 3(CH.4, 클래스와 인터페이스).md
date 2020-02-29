@@ -76,7 +76,8 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 >불변 객체는 근본적으로 스레드 안전하여 동기화할 필요 없다.
 >여러 스레드가 사용해도 절대 훼손되지 않는다. 
 
->불변 객체 끼리는 내부 데이터를 공유할 수 있다. 예를 들어, BigInteger 클래스는 내부에서 값의 부호(sign)과 크기(magnitude)를 따로 표현한다. 부호에는 int변수, 절대값에는 int 배열을 사용하는 것이다. 한편 negate 메서드는 크기는 같고 부호만 반대인 BigInter를 생성하는데, 배열은 비록 가변이지만 복사하지 않고 원본 인스턴스와 공유해도 된다. 
+>불변 객체 끼리는 내부 데이터를 공유할 수 있다. 
+>객체를 만들때 다른 불변 객체를 구성요소로 사용하면 이점이 많다. 예를 들어, BigInteger 클래스는 내부에서 값의 부호(sign)과 크기(magnitude)를 따로 표현한다. 부호에는 int변수, 절대값에는 int 배열을 사용하는 것이다. 한편 negate 메서드는 크기는 같고 부호만 반대인 BigInter를 생성하는데, 배열은 비록 가변이지만 복사하지 않고 원본 인스턴스와 공유해도 된다. 그 결과 새로 만든 BigInter 인스턴스도 원본 인스턴스가 가리키는 내부 배열을 그대로 가리킨다. 
 	  
  불변 클래스의 장점  
  1. 단순함
@@ -187,7 +188,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5Mzc4MjIzMiwtNDE0OTg0NDMwLDEyOT
+eyJoaXN0b3J5IjpbMTkyNzQ3NzgwMiwtNDE0OTg0NDMwLDEyOT
 I0ODM3MTQsLTY4OTMxNTg2MiwtMTM5NjU4OTQ5LDE5NzY5OTgz
 MDMsLTE2MDQ5Njc0MTUsLTEyOTg1MTI4OTcsMTM3MTY3MTc3MS
 wxMzcxNjcxNzcxLC0xMjU0NTE3NiwxMzcxNjcxNzcxLDMwNDEy
