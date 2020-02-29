@@ -76,7 +76,8 @@ $$차원 = 기저 백터의 갯수 = 좌표의 성분수$$
 
 좌표만으로 이야기하려면 "덧셈과 정수배를 좌표로 말하면 어찌되는가"를 확인해야 한다. 어떤 기저를 취하여 좌표를 표시해도 덧셈과 정수배는 좌표 성분마다 덧셈과 정수배가 된다. 
 
-$$\vec x + \vec y = (x_1 + y_1)\vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => u_1 = \cdots = u_n = 0$$ 
+$$\vec x + \vec y = (x_1 + y_1)\vec{e_1} + \cdots + (x_n + y_n)\vec{e_n}$$$$c\vec x= (cx_1)\vec{e_1} + \cdots + (cx_n + y_n)\vec{e_n}$$ 
+
 
 
 
@@ -88,7 +89,7 @@ $$\vec x + \vec y = (x_1 + y_1)\vec{e_1} + \cdots + u_n \vec{e_n} = \vec {0} => 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYyNjUzNzQzLC01ODI4ODg2MTQsLTg4NT
+eyJoaXN0b3J5IjpbMzI3MzU4MjcxLC01ODI4ODg2MTQsLTg4NT
 M1ODI1MiwtMjY3ODM4MjAwLC0xMDAzMjM4NzMsNzU5OTQzNTcy
 LC0xNjg3NDUwMTYyLC0zMjM3ODgwMDEsMTQ1Mjg5NzIzMiwtMj
 EyODQyNjA3MSwtMTI5MDE3NDQ4OCw2MzMyMjE2MTYsMTk4MTIz
