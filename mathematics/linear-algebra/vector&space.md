@@ -70,6 +70,7 @@ $$차원 = 기저 백터의 갯수 = 좌표의 성분수$$
 
 기저란 취하는 방법에 따라 여러가지가 있다. 어느 한 기저를 대상으로 갯수를 세면 좋을까? 다행히도 어떤 기저를 선택해도 기저 벡터의 갯수는 일정하다는 것이 증명되어 있다. 
 
+사실 좌표에 기저(Basis)를 지정하지 않으면 의미가 없다. 
 
 
 
@@ -80,11 +81,11 @@ $$차원 = 기저 백터의 갯수 = 좌표의 성분수$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4Mjg4ODYxNCwtODg1MzU4MjUyLC0yNj
-c4MzgyMDAsLTEwMDMyMzg3Myw3NTk5NDM1NzIsLTE2ODc0NTAx
-NjIsLTMyMzc4ODAwMSwxNDUyODk3MjMyLC0yMTI4NDI2MDcxLC
-0xMjkwMTc0NDg4LDYzMzIyMTYxNiwxOTgxMjM5NzE1LC0xNjY0
-MzQ1MDE3LC00NzQ1Njc2MDIsMTk2MTIxNjQ1NSwtMTgxODQ4OD
-A3OCwxMTIzNzAzMzEsMTUzNjMyNjI3NiwtMTMwNjA4MjI4Miw1
-MDg1OTQ1MzFdfQ==
+eyJoaXN0b3J5IjpbOTI5MDczMjk4LC01ODI4ODg2MTQsLTg4NT
+M1ODI1MiwtMjY3ODM4MjAwLC0xMDAzMjM4NzMsNzU5OTQzNTcy
+LC0xNjg3NDUwMTYyLC0zMjM3ODgwMDEsMTQ1Mjg5NzIzMiwtMj
+EyODQyNjA3MSwtMTI5MDE3NDQ4OCw2MzMyMjE2MTYsMTk4MTIz
+OTcxNSwtMTY2NDM0NTAxNywtNDc0NTY3NjAyLDE5NjEyMTY0NT
+UsLTE4MTg0ODgwNzgsMTEyMzcwMzMxLDE1MzYzMjYyNzYsLTEz
+MDYwODIyODJdfQ==
 -->
