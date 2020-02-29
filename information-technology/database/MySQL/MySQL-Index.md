@@ -94,7 +94,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 예를 들어 하나의 테이블에 country와 city라는 컬럼을 가지고 있다고 하자. 해당 테이블에 전체 레코드 갯수는 1만건이고, country 칼럼으로만 인덱스가 생성된 상태에서 country 컬럼의 유니크한 값의 갯수가 10개, 1,000개 인경우를 생각해보자. 
 
-MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리대기 때문에 city 칼럼의 cardinality는 무시해도 된다. 
+MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리대기 때문에 city 칼럼의 cardinality는 무시해도 된다. 만약 유니크 값의 갯수가 10인경우 평균적으로 1,000건의 조회가 필요한 것을 통계적으로 유추할 수 있고 유니크 값의 갯수가 1,000개인 경우 10건의 조회만으로 검색이 가능한 것을 유추해 볼 수 있다.
 
 
 
@@ -107,10 +107,10 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMxNTY3MTk3LDcyNjkxOTEwOSwtMTM3OD
-UwODMwLC0xMTE0NjA0ODg0LC0xODc3NTE5NzQ3LC0xNjEyMDU5
-OTg3LDc5Mzc1NDA4OCwxMzk1MTM3OTExLC0xMzY5NzA0MTIzLC
-0xMDYwMTQ0NTg4LDEzMjMzNTIwNzAsNDg4NDcyMDc1LC05NzA2
-MTcxMywtNTc5ODkzMjksLTEzOTg5NDAyNDQsODM0ODgxMjY1LD
-g0MDgyNTQwXX0=
+eyJoaXN0b3J5IjpbLTE3NDg1NDYzMjYsNTMxNTY3MTk3LDcyNj
+kxOTEwOSwtMTM3ODUwODMwLC0xMTE0NjA0ODg0LC0xODc3NTE5
+NzQ3LC0xNjEyMDU5OTg3LDc5Mzc1NDA4OCwxMzk1MTM3OTExLC
+0xMzY5NzA0MTIzLC0xMDYwMTQ0NTg4LDEzMjMzNTIwNzAsNDg4
+NDcyMDc1LC05NzA2MTcxMywtNTc5ODkzMjksLTEzOTg5NDAyND
+QsODM0ODgxMjY1LDg0MDgyNTQwXX0=
 -->
