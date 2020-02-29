@@ -95,6 +95,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 
 
+
 ## Hash Index
 
 
@@ -104,7 +105,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTM5OTUxOSw3MjY5MTkxMDksLTEzNz
+eyJoaXN0b3J5IjpbLTQyMjY2NTIyOSw3MjY5MTkxMDksLTEzNz
 g1MDgzMCwtMTExNDYwNDg4NCwtMTg3NzUxOTc0NywtMTYxMjA1
 OTk4Nyw3OTM3NTQwODgsMTM5NTEzNzkxMSwtMTM2OTcwNDEyMy
 wtMTA2MDE0NDU4OCwxMzIzMzUyMDcwLDQ4ODQ3MjA3NSwtOTcw
