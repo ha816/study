@@ -76,7 +76,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 >불변 객체는 근본적으로 스레드 안전하여 동기화할 필요 없다.
 >여러 스레드가 사용해도 절대 훼손되지 않는다. 
 
->불변 객체 끼리는 내부 데이터를 공유할 수 있다.
+>불변 객체 끼리는 내부 데이터를 공유할 수 있다. 예를 들어, BigInteger 클래스는 내부에서 값의 부호(sign)과 크기(magnitude)를 따로 표현한다. 
 	  
  불변 클래스의 장점  
  1. 단순함
@@ -187,10 +187,10 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwOTAxNzc5LDEyOTI0ODM3MTQsLTY4OT
-MxNTg2MiwtMTM5NjU4OTQ5LDE5NzY5OTgzMDMsLTE2MDQ5Njc0
-MTUsLTEyOTg1MTI4OTcsMTM3MTY3MTc3MSwxMzcxNjcxNzcxLC
-0xMjU0NTE3NiwxMzcxNjcxNzcxLDMwNDEyMzc1MCwxNDc2Mjg3
-MTg3LDg2OTgzMzY3MSwxMzMzOTg5MTU1LC0yMDY4NjUxNDIyLC
-0xNzcyNDIzNzMyLC0xNTgzNDMyMzIzXX0=
+eyJoaXN0b3J5IjpbLTQxNDk4NDQzMCwxMjkyNDgzNzE0LC02OD
+kzMTU4NjIsLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3
+NDE1LC0xMjk4NTEyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MS
+wtMTI1NDUxNzYsMTM3MTY3MTc3MSwzMDQxMjM3NTAsMTQ3NjI4
+NzE4Nyw4Njk4MzM2NzEsMTMzMzk4OTE1NSwtMjA2ODY1MTQyMi
+wtMTc3MjQyMzczMiwtMTU4MzQzMjMyM119
 -->
