@@ -72,8 +72,9 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 >불변 객체는 단순하다. 
 >불변 객체는 생성된 시점의 상태를 그대로 간직한다. 반면 가변객체는 변경자 메서드가 일으키는 상태 전이를 정밀하게 문서로 남겨놓지 않으면 믿고 사용하기 어려울 수 있다. 
+
 >불변 객체는 근본적으로 스레드 안전하여 동기화할 필요 없다.
->
+>여러 스레드가 사용해도 절대 훼손되지 않는다. 
 	  
  불변 클래스의 장점  
  1. 단순함
@@ -184,7 +185,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM4NTk0MjEwLDEyOTI0ODM3MTQsLTY4OT
+eyJoaXN0b3J5IjpbLTc4OTAzMzkzLDEyOTI0ODM3MTQsLTY4OT
 MxNTg2MiwtMTM5NjU4OTQ5LDE5NzY5OTgzMDMsLTE2MDQ5Njc0
 MTUsLTEyOTg1MTI4OTcsMTM3MTY3MTc3MSwxMzcxNjcxNzcxLC
 0xMjU0NTE3NiwxMzcxNjcxNzcxLDMwNDEyMzc1MCwxNDc2Mjg3
