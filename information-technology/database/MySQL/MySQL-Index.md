@@ -147,6 +147,11 @@ GROUP BY dept_no
 
 위 그림에서는 year, make, model로 다중 컬럼 인덱스가 정의되어 있다. 중요한 점은 make 컬럼은 첫번째 컬럼인 year에 의존하고 있고, model 컬럼은 또 make 컬럼에 의존해 있다는 점이다. 
 
+```
+SELECT * from myTable
+WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
+```
+위 예제는 멀티 인덱스에 모든 
 
 
 ### B-Tree 인덱스의 정렬 및 스캔 방향
@@ -165,11 +170,11 @@ GROUP BY dept_no
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NzA2NDg5OSw0NDM2NjgyMjMsMjAyMz
-E5Mzc3NCwtMTQ4NDYyODk4MSw4MTczMTY4NDksLTU5MDI2Mzgx
-OCwzNjQ3NDkwMDksLTExOTk0ODM4MDQsODg4NTExNDQ2LDE0MD
-Q0MjE1NTUsLTkzNzMyNTQ3NCwtODY0MjQ1MDQ4LC00NDEzMDY3
-MDgsMTc1MjQ2MDg3NywtMTU2MDM3NjkwMSwyNDgxMDk1NDgsLT
-IwNDQ3Mzk3MTgsNTMxNTY3MTk3LDcyNjkxOTEwOSwtMTM3ODUw
-ODMwXX0=
+eyJoaXN0b3J5IjpbNDU5MTcxOTIwLDQ0MzY2ODIyMywyMDIzMT
+kzNzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0OSwtNTkwMjYzODE4
+LDM2NDc0OTAwOSwtMTE5OTQ4MzgwNCw4ODg1MTE0NDYsMTQwND
+QyMTU1NSwtOTM3MzI1NDc0LC04NjQyNDUwNDgsLTQ0MTMwNjcw
+OCwxNzUyNDYwODc3LC0xNTYwMzc2OTAxLDI0ODEwOTU0OCwtMj
+A0NDczOTcxOCw1MzE1NjcxOTcsNzI2OTE5MTA5LC0xMzc4NTA4
+MzBdfQ==
 -->
