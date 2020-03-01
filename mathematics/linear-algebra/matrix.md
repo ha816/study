@@ -85,7 +85,8 @@ a_{m1} & \cdots & a_{mn}\\
 \end{pmatrix}
 $$
 
-직관적인 방법은 오른쪽 A 행렬을 세로로 나누고, 나누어진 각 벡터를 왼쪽 행렬 B에 곱한 결과를 합친다. 사상의 
+직관적인 방법은 오른쪽 A 행렬을 세로로 나누고, 나누어진 각 벡터를 왼쪽 행렬 B에 곱한 결과를 합친다. 
+쥐의할 점은 BA
 
 
 
@@ -93,7 +94,7 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyOTQ1MDQxMSwyMDM0MTI4NDIxLC01OD
+eyJoaXN0b3J5IjpbMTQwNTIwMTM3MywyMDM0MTI4NDIxLC01OD
 Q3OTQ1NjgsLTE0Mzc0MTAwNzUsMTU1MTcyNjc5MCwtODU5OTE1
 NDMyLC0xNTQ1ODExMjk3LC0xODMxNzQ5NzU0LDc1Njc0MTc3Mi
 wtMTI1OTQyMjg4MCwtNzAxNTExNDMwLDQ4MTk3Mjk4MSwxMjU3
