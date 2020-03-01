@@ -139,6 +139,7 @@ GROUP BY dept_no
 ```
 위 쿼리에서 사용된 dept_emp 테이블은 dept_no와 emp_no로 인덱스가 생성되어 있다 가정하자 그리고 인덱스는 dept_no, emp_no 값으로 정렬되어 있어 dept_no 그룹 별로 제일 첫 번째 레코드의 emp_no만 읽으면 되는 것이다. 즉 인덱스에서 WHERE 조건을 만족하는 범위 전체를 다 스캔할 필요가 없다는 것을 옵티마이저가 알고 있기 때문에 조건에 만족하지 않은 레코드를 무시할 수 있다. 
 
+### Multi-column Index
 
 
 ## Hash Index
@@ -150,11 +151,11 @@ GROUP BY dept_no
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg2MDY1ODg1LC0xNDg0NjI4OTgxLDgxNz
-MxNjg0OSwtNTkwMjYzODE4LDM2NDc0OTAwOSwtMTE5OTQ4Mzgw
-NCw4ODg1MTE0NDYsMTQwNDQyMTU1NSwtOTM3MzI1NDc0LC04Nj
-QyNDUwNDgsLTQ0MTMwNjcwOCwxNzUyNDYwODc3LC0xNTYwMzc2
-OTAxLDI0ODEwOTU0OCwtMjA0NDczOTcxOCw1MzE1NjcxOTcsNz
-I2OTE5MTA5LC0xMzc4NTA4MzAsLTExMTQ2MDQ4ODQsLTE4Nzc1
-MTk3NDddfQ==
+eyJoaXN0b3J5IjpbMTg2MTg3NjIzMiwtMTQ4NDYyODk4MSw4MT
+czMTY4NDksLTU5MDI2MzgxOCwzNjQ3NDkwMDksLTExOTk0ODM4
+MDQsODg4NTExNDQ2LDE0MDQ0MjE1NTUsLTkzNzMyNTQ3NCwtOD
+Y0MjQ1MDQ4LC00NDEzMDY3MDgsMTc1MjQ2MDg3NywtMTU2MDM3
+NjkwMSwyNDgxMDk1NDgsLTIwNDQ3Mzk3MTgsNTMxNTY3MTk3LD
+cyNjkxOTEwOSwtMTM3ODUwODMwLC0xMTE0NjA0ODg0LC0xODc3
+NTE5NzQ3XX0=
 -->
