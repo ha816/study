@@ -85,6 +85,7 @@ a_{m1} & \cdots & a_{mn}\\
 \end{pmatrix}
 $$
 
+직관적인 방법은 오른쪽 A 행렬을 세로 단락으로 분해한다. 분해각 각 벡터를 왼쪽 행렬 B에 곱한다. 
 
 
 
@@ -92,7 +93,7 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODk0NzI3NSwtNTg0Nzk0NTY4LC0xND
+eyJoaXN0b3J5IjpbMjAzNDEyODQyMSwtNTg0Nzk0NTY4LC0xND
 M3NDEwMDc1LDE1NTE3MjY3OTAsLTg1OTkxNTQzMiwtMTU0NTgx
 MTI5NywtMTgzMTc0OTc1NCw3NTY3NDE3NzIsLTEyNTk0MjI4OD
 AsLTcwMTUxMTQzMCw0ODE5NzI5ODEsMTI1NzI0NzkzNiwxMzAw
