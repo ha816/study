@@ -143,6 +143,8 @@ GROUP BY dept_no
 
 실제 서비스용 데이터베이스에는 2개 이상의 컬럼을 포함하는 인덱스가 더 많이 사용된다.  멀티 인덱스에서 중요한것은 
 
+![enter image description here](https://dataschool.com/assets/images/sql-optimization/multicolumn/multiCol_6.gif)
+
 ### B-Tree 인덱스의 정렬 및 스캔 방향
 
 ### B-Tree 인덱스의 가용성과 효율성
@@ -159,11 +161,11 @@ GROUP BY dept_no
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQzNjY4MjIzLDIwMjMxOTM3NzQsLTE0OD
-Q2Mjg5ODEsODE3MzE2ODQ5LC01OTAyNjM4MTgsMzY0NzQ5MDA5
-LC0xMTk5NDgzODA0LDg4ODUxMTQ0NiwxNDA0NDIxNTU1LC05Mz
-czMjU0NzQsLTg2NDI0NTA0OCwtNDQxMzA2NzA4LDE3NTI0NjA4
-NzcsLTE1NjAzNzY5MDEsMjQ4MTA5NTQ4LC0yMDQ0NzM5NzE4LD
-UzMTU2NzE5Nyw3MjY5MTkxMDksLTEzNzg1MDgzMCwtMTExNDYw
-NDg4NF19
+eyJoaXN0b3J5IjpbMTU4MDE1MTU2NSw0NDM2NjgyMjMsMjAyMz
+E5Mzc3NCwtMTQ4NDYyODk4MSw4MTczMTY4NDksLTU5MDI2Mzgx
+OCwzNjQ3NDkwMDksLTExOTk0ODM4MDQsODg4NTExNDQ2LDE0MD
+Q0MjE1NTUsLTkzNzMyNTQ3NCwtODY0MjQ1MDQ4LC00NDEzMDY3
+MDgsMTc1MjQ2MDg3NywtMTU2MDM3NjkwMSwyNDgxMDk1NDgsLT
+IwNDQ3Mzk3MTgsNTMxNTY3MTk3LDcyNjkxOTEwOSwtMTM3ODUw
+ODMwXX0=
 -->
