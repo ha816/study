@@ -110,7 +110,7 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 레인지 스캔은 인덱스의 접근 방법 중 가장 대표적인 접근 방법이고 FullScan과 Loose Scan 보다 빠른 방법이다. 인덱스 레인지 스캔은 검색해야 할 인덱스의 범위가 결정됐을때 사용하는 방식이다. 
 
-루트 노드에서 부터 비교를 시작하여, 브랜치노드를 거쳐 최종적으로 리프 노드까지 찾아가면 실제 읽어야 할 레코드 주소를 
+루트 노드에서 부터 비교를 시작하여, 브랜치노드를 거쳐 최종적으로 리프 노드까지 찾아가면 실제 읽어야 할 레코드 주소만 순서대로 읽으면 된다. 이처럼 차례대로 쭉 읽는 것을 스캔이라 한다. 만약 리프 노드를 읽다가 리프 노드의 끝까지 읽으면 다음 리프노드간의 링크를 이용해 다음 리포노드에서 스캔한다. 그리고 최종적으로 스캔을 멈춰야할 위치에 다다르면 지금까
 ## Hash Index
 
 
@@ -120,11 +120,11 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzM4NjI2NzksLTQ0MTMwNjcwOCwxNz
-UyNDYwODc3LC0xNTYwMzc2OTAxLDI0ODEwOTU0OCwtMjA0NDcz
-OTcxOCw1MzE1NjcxOTcsNzI2OTE5MTA5LC0xMzc4NTA4MzAsLT
-ExMTQ2MDQ4ODQsLTE4Nzc1MTk3NDcsLTE2MTIwNTk5ODcsNzkz
-NzU0MDg4LDEzOTUxMzc5MTEsLTEzNjk3MDQxMjMsLTEwNjAxND
-Q1ODgsMTMyMzM1MjA3MCw0ODg0NzIwNzUsLTk3MDYxNzEzLC01
-Nzk4OTMyOV19
+eyJoaXN0b3J5IjpbLTY2MTkzMjY3NSwtNDQxMzA2NzA4LDE3NT
+I0NjA4NzcsLTE1NjAzNzY5MDEsMjQ4MTA5NTQ4LC0yMDQ0NzM5
+NzE4LDUzMTU2NzE5Nyw3MjY5MTkxMDksLTEzNzg1MDgzMCwtMT
+ExNDYwNDg4NCwtMTg3NzUxOTc0NywtMTYxMjA1OTk4Nyw3OTM3
+NTQwODgsMTM5NTEzNzkxMSwtMTM2OTcwNDEyMywtMTA2MDE0ND
+U4OCwxMzIzMzUyMDcwLDQ4ODQ3MjA3NSwtOTcwNjE3MTMsLTU3
+OTg5MzI5XX0=
 -->
