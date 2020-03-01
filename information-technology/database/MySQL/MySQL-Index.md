@@ -141,7 +141,7 @@ GROUP BY dept_no
 
 #### Multi-column Index(Concatenated Index)
 
-실제 서비스용 데이터베이스에는 2개 이상의 컬럼을 포함하는 인덱스가 더 많이 사용된다. 다중 컬럼 인덱스에서는 인덱스 내에서 각 컬럼의 위취(순서)가 매우 중요하다. 
+실제 서비스용 데이터베이스에는 2개 이상의 컬럼을 포함하는 인덱스가 더 많이 사용된다. 다중 컬럼 인덱스에서는 인덱스 내에서 각 컬럼의 위치(순서)가 매우 중요하다. 
 
 ![enter image description here](https://dataschool.com/assets/images/sql-optimization/multicolumn/multiCol_6.gif)
 
@@ -151,12 +151,13 @@ GROUP BY dept_no
 SELECT * from myTable
 WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 ```
-위 예제는 멀티 인덱스에 모든 인덱스를 사용하기에 효율적이다. 앞 순서에 해당하는 조건(year)이 빠지게 되면 인덱스를 전혀 사용하지 못하는 결과가 나오게 된다. 따라서 다중 인덱스에서는 인덱스의 순서가 
-
-
-
+위 예제는 멀티 인덱스에 모든 인덱스를 사용하기에 효율적이다. 앞 순서에 해당하는 조건(year)이 빠지게 되면 인덱스를 전혀 사용하지 못하는 결과가 나오게 된다. 따라서 다중 인덱스에서는 인덱스의 순서가 매우 중요하다.
 
 ### B-Tree 인덱스의 정렬 및 스캔 방향
+
+인덱스 키값은 항상 오름차순으로 (ASC)으로 정렬되지만 사실 그 인덱스를 거꾸로 읽으면 내림차순으로도 정렬된 인덱스를 사용할 수 있다. 인덱스를 어느방향으로 읽을지도 쿼리에 따라 옵티마이저가 판단한다. 
+
+#### 인덱스의 정렬
 
 ### B-Tree 인덱스의 가용성과 효율성
 
@@ -172,11 +173,11 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTc2OTA0MCwzODY0NDYyNjMsNDQzNj
-Y4MjIzLDIwMjMxOTM3NzQsLTE0ODQ2Mjg5ODEsODE3MzE2ODQ5
-LC01OTAyNjM4MTgsMzY0NzQ5MDA5LC0xMTk5NDgzODA0LDg4OD
-UxMTQ0NiwxNDA0NDIxNTU1LC05MzczMjU0NzQsLTg2NDI0NTA0
-OCwtNDQxMzA2NzA4LDE3NTI0NjA4NzcsLTE1NjAzNzY5MDEsMj
-Q4MTA5NTQ4LC0yMDQ0NzM5NzE4LDUzMTU2NzE5Nyw3MjY5MTkx
-MDldfQ==
+eyJoaXN0b3J5IjpbLTIwNDc4NDkyNTcsMzg2NDQ2MjYzLDQ0Mz
+Y2ODIyMywyMDIzMTkzNzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0
+OSwtNTkwMjYzODE4LDM2NDc0OTAwOSwtMTE5OTQ4MzgwNCw4OD
+g1MTE0NDYsMTQwNDQyMTU1NSwtOTM3MzI1NDc0LC04NjQyNDUw
+NDgsLTQ0MTMwNjcwOCwxNzUyNDYwODc3LC0xNTYwMzc2OTAxLD
+I0ODEwOTU0OCwtMjA0NDczOTcxOCw1MzE1NjcxOTcsNzI2OTE5
+MTA5XX0=
 -->
