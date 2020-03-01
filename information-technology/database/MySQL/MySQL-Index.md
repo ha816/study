@@ -145,7 +145,7 @@ GROUP BY dept_no
 
 ![enter image description here](https://dataschool.com/assets/images/sql-optimization/multicolumn/multiCol_6.gif)
 
-위 그림에서 중요한 점은 year, make, model로 다중 컬럼 인덱스가 
+위 그림에서는 year, make, model로 다중 컬럼 인덱스가 정의되어 있다. 중요한 점은 make 컬럼은 첫번째 컬럼인 year에 의존하고 있고, model 컬럼은 또 make 컬럼에 의존해 있
 
 ### B-Tree 인덱스의 정렬 및 스캔 방향
 
@@ -163,11 +163,11 @@ GROUP BY dept_no
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5NjI2NDYzLDQ0MzY2ODIyMywyMDIzMT
-kzNzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0OSwtNTkwMjYzODE4
-LDM2NDc0OTAwOSwtMTE5OTQ4MzgwNCw4ODg1MTE0NDYsMTQwND
-QyMTU1NSwtOTM3MzI1NDc0LC04NjQyNDUwNDgsLTQ0MTMwNjcw
-OCwxNzUyNDYwODc3LC0xNTYwMzc2OTAxLDI0ODEwOTU0OCwtMj
-A0NDczOTcxOCw1MzE1NjcxOTcsNzI2OTE5MTA5LC0xMzc4NTA4
-MzBdfQ==
+eyJoaXN0b3J5IjpbLTIwMTE5MTU2ODMsNDQzNjY4MjIzLDIwMj
+MxOTM3NzQsLTE0ODQ2Mjg5ODEsODE3MzE2ODQ5LC01OTAyNjM4
+MTgsMzY0NzQ5MDA5LC0xMTk5NDgzODA0LDg4ODUxMTQ0NiwxND
+A0NDIxNTU1LC05MzczMjU0NzQsLTg2NDI0NTA0OCwtNDQxMzA2
+NzA4LDE3NTI0NjA4NzcsLTE1NjAzNzY5MDEsMjQ4MTA5NTQ4LC
+0yMDQ0NzM5NzE4LDUzMTU2NzE5Nyw3MjY5MTkxMDksLTEzNzg1
+MDgzMF19
 -->
