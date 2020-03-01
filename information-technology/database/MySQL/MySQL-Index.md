@@ -137,7 +137,7 @@ FROM dept_emp
 WHERE dep_no BETWEEN 'd002' AND 'd004'
 GROUP BY dept_no
 ```
-위 쿼리에서 사용된 dept_emp 테이블은 dept_no와 emp_no로 인덱스가 생성되어 있다 가정하자 그리고 인덱스는 dept_no, emp_no 값으로 ㅈ
+위 쿼리에서 사용된 dept_emp 테이블은 dept_no와 emp_no로 인덱스가 생성되어 있다 가정하자 그리고 인덱스는 dept_no, emp_no 값으로 정렬되어 있어 
 
 
 ## Hash Index
@@ -149,11 +149,11 @@ GROUP BY dept_no
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MDMzMjE5MCwtNTkwMjYzODE4LDM2ND
-c0OTAwOSwtMTE5OTQ4MzgwNCw4ODg1MTE0NDYsMTQwNDQyMTU1
-NSwtOTM3MzI1NDc0LC04NjQyNDUwNDgsLTQ0MTMwNjcwOCwxNz
-UyNDYwODc3LC0xNTYwMzc2OTAxLDI0ODEwOTU0OCwtMjA0NDcz
-OTcxOCw1MzE1NjcxOTcsNzI2OTE5MTA5LC0xMzc4NTA4MzAsLT
-ExMTQ2MDQ4ODQsLTE4Nzc1MTk3NDcsLTE2MTIwNTk5ODcsNzkz
-NzU0MDg4XX0=
+eyJoaXN0b3J5IjpbODE3MzE2ODQ5LC01OTAyNjM4MTgsMzY0Nz
+Q5MDA5LC0xMTk5NDgzODA0LDg4ODUxMTQ0NiwxNDA0NDIxNTU1
+LC05MzczMjU0NzQsLTg2NDI0NTA0OCwtNDQxMzA2NzA4LDE3NT
+I0NjA4NzcsLTE1NjAzNzY5MDEsMjQ4MTA5NTQ4LC0yMDQ0NzM5
+NzE4LDUzMTU2NzE5Nyw3MjY5MTkxMDksLTEzNzg1MDgzMCwtMT
+ExNDYwNDg4NCwtMTg3NzUxOTc0NywtMTYxMjA1OTk4Nyw3OTM3
+NTQwODhdfQ==
 -->
