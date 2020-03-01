@@ -116,6 +116,10 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 주의할 점은 인덱스의 리프 노드에서 검색 조건에 일치하는 건들을 데이터 파일에서 읽어오는 과정이 필요하다는 것이다. **리프 노드에 저장된 레코드 주소로 레코드를 읽어오는데 랜덤 I/O가 레코드의 갯수 만큼 반복된다.** 그래서 인덱스를 통한 레코드 읽기 작업이 비용이 많이 드는 작업인 것이다. 
 
+#### Full Scan
+
+
+
 ## Hash Index
 
 
@@ -125,11 +129,11 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM0MTY4MzczLC05MzczMjU0NzQsLTg2ND
-I0NTA0OCwtNDQxMzA2NzA4LDE3NTI0NjA4NzcsLTE1NjAzNzY5
-MDEsMjQ4MTA5NTQ4LC0yMDQ0NzM5NzE4LDUzMTU2NzE5Nyw3Mj
-Y5MTkxMDksLTEzNzg1MDgzMCwtMTExNDYwNDg4NCwtMTg3NzUx
-OTc0NywtMTYxMjA1OTk4Nyw3OTM3NTQwODgsMTM5NTEzNzkxMS
-wtMTM2OTcwNDEyMywtMTA2MDE0NDU4OCwxMzIzMzUyMDcwLDQ4
-ODQ3MjA3NV19
+eyJoaXN0b3J5IjpbLTgwMTA0NjgzNywtOTM3MzI1NDc0LC04Nj
+QyNDUwNDgsLTQ0MTMwNjcwOCwxNzUyNDYwODc3LC0xNTYwMzc2
+OTAxLDI0ODEwOTU0OCwtMjA0NDczOTcxOCw1MzE1NjcxOTcsNz
+I2OTE5MTA5LC0xMzc4NTA4MzAsLTExMTQ2MDQ4ODQsLTE4Nzc1
+MTk3NDcsLTE2MTIwNTk5ODcsNzkzNzU0MDg4LDEzOTUxMzc5MT
+EsLTEzNjk3MDQxMjMsLTEwNjAxNDQ1ODgsMTMyMzM1MjA3MCw0
+ODg0NzIwNzVdfQ==
 -->
