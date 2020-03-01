@@ -66,15 +66,36 @@ $n$차원 벡터 $x$에 $m*n$행렬 A를 곱하면 $m$차원 벡터 $y = Ax$가 
 
 ## 행렬간 곱하기
 
-
+$$
+\begin{pmatrix}
+a_{11} & \cdots & a_{1n}\\
+\cdots & & \cdots\\
+a_{m1} & \cdots & a_{mn}\\
+\end{pmatrix} 
+\begin{pmatrix}
+a_{11} & \cdots & a_{1n}\\
+\cdots & & \cdots\\
+a_{m1} & \cdots & a_{mn}\\
+\end{pmatrix} 
+\begin{pmatrix}
+x_{1}\\
+\cdots \\
+x_{n}\\
+\end{pmatrix} =
+\begin{pmatrix}
+a_{11}x_{1}+\cdots + a_{1n}x_{n}\\
+\cdots \\
+a_{m1}x_{1}+\cdots + a_{mn}x_{n}\\
+\end{pmatrix}
+$$
 
 # Determinant(행렬식)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzc0MTAwNzUsMTU1MTcyNjc5MCwtOD
-U5OTE1NDMyLC0xNTQ1ODExMjk3LC0xODMxNzQ5NzU0LDc1Njc0
-MTc3MiwtMTI1OTQyMjg4MCwtNzAxNTExNDMwLDQ4MTk3Mjk4MS
-wxMjU3MjQ3OTM2LDEzMDA4MjAxMDcsLTExMDYwOTM4NjIsNTQ0
-MTM2MzBdfQ==
+eyJoaXN0b3J5IjpbMTY3MTg5MzEwMSwtMTQzNzQxMDA3NSwxNT
+UxNzI2NzkwLC04NTk5MTU0MzIsLTE1NDU4MTEyOTcsLTE4MzE3
+NDk3NTQsNzU2NzQxNzcyLC0xMjU5NDIyODgwLC03MDE1MTE0Mz
+AsNDgxOTcyOTgxLDEyNTcyNDc5MzYsMTMwMDgyMDEwNywtMTEw
+NjA5Mzg2Miw1NDQxMzYzMF19
 -->
