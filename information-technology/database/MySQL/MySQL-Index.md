@@ -108,7 +108,9 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 #### Range Scan
 
-레인지 스캔은 인덱스의 접근 방법 중 가장 대표적인 접근 방법이고 FullScan과 Loose Scan 보다 빠른 방법이다. 인덱스 레인지 스캔은 검색해야 할 인덱스의 범위가 결정됐을때 사
+레인지 스캔은 인덱스의 접근 방법 중 가장 대표적인 접근 방법이고 FullScan과 Loose Scan 보다 빠른 방법이다. 인덱스 레인지 스캔은 검색해야 할 인덱스의 범위가 결정됐을때 사용하는 방식이다. 
+
+루트 노드에서 부터 비교를 시작하여, 브랜치노드를 거쳐 최종적으로 리프 노드까지 찾아가면 실제 
 ## Hash Index
 
 
@@ -118,7 +120,7 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDM2NTIzMiwtNDQxMzA2NzA4LDE3NT
+eyJoaXN0b3J5IjpbMTczNzM1MDc2MiwtNDQxMzA2NzA4LDE3NT
 I0NjA4NzcsLTE1NjAzNzY5MDEsMjQ4MTA5NTQ4LC0yMDQ0NzM5
 NzE4LDUzMTU2NzE5Nyw3MjY5MTkxMDksLTEzNzg1MDgzMCwtMT
 ExNDYwNDg4NCwtMTg3NzUxOTc0NywtMTYxMjA1OTk4Nyw3OTM3
