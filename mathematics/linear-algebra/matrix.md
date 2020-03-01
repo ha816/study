@@ -68,20 +68,15 @@ $n$차원 벡터 $x$에 $m*n$행렬 A를 곱하면 $m$차원 벡터 $y = Ax$가 
 
 $$
 \begin{pmatrix}
-a_{11} & \cdots & a_{1n}\\
+b_{11} & \cdots & b_{1n}\\
 \cdots & & \cdots\\
-a_{m1} & \cdots & a_{mn}\\
+b_{m1} & \cdots & b_{mn}\\
 \end{pmatrix} 
 \begin{pmatrix}
 a_{11} & \cdots & a_{1n}\\
 \cdots & & \cdots\\
 a_{m1} & \cdots & a_{mn}\\
-\end{pmatrix} 
-\begin{pmatrix}
-x_{1}\\
-\cdots \\
-x_{n}\\
-\end{pmatrix} =
+\end{pmatrix}=
 \begin{pmatrix}
 a_{11}x_{1}+\cdots + a_{1n}x_{n}\\
 \cdots \\
@@ -93,9 +88,9 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MTg5MzEwMSwtMTQzNzQxMDA3NSwxNT
-UxNzI2NzkwLC04NTk5MTU0MzIsLTE1NDU4MTEyOTcsLTE4MzE3
-NDk3NTQsNzU2NzQxNzcyLC0xMjU5NDIyODgwLC03MDE1MTE0Mz
-AsNDgxOTcyOTgxLDEyNTcyNDc5MzYsMTMwMDgyMDEwNywtMTEw
-NjA5Mzg2Miw1NDQxMzYzMF19
+eyJoaXN0b3J5IjpbLTE0OTc2MDg3MTEsLTE0Mzc0MTAwNzUsMT
+U1MTcyNjc5MCwtODU5OTE1NDMyLC0xNTQ1ODExMjk3LC0xODMx
+NzQ5NzU0LDc1Njc0MTc3MiwtMTI1OTQyMjg4MCwtNzAxNTExND
+MwLDQ4MTk3Mjk4MSwxMjU3MjQ3OTM2LDEzMDA4MjAxMDcsLTEx
+MDYwOTM4NjIsNTQ0MTM2MzBdfQ==
 -->
