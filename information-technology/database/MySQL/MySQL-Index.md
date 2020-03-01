@@ -141,9 +141,11 @@ GROUP BY dept_no
 
 #### Multi-column Index(Concatenated Index)
 
-실제 서비스용 데이터베이스에는 2개 이상의 컬럼을 포함하는 인덱스가 더 많이 사용된다.  멀티 인덱스에서 중요한것은 
+실제 서비스용 데이터베이스에는 2개 이상의 컬럼을 포함하는 인덱스가 더 많이 사용된다. 다중 컬럼 인덱스에서는 인덱스 내에서 각 컬럼의 위취(순서)가 매우 중요하다. 
 
 ![enter image description here](https://dataschool.com/assets/images/sql-optimization/multicolumn/multiCol_6.gif)
+
+위 그림에서 중요한 점은 year, make, model로 다중 컬럼 인덱스가 
 
 ### B-Tree 인덱스의 정렬 및 스캔 방향
 
@@ -161,11 +163,11 @@ GROUP BY dept_no
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MDE1MTU2NSw0NDM2NjgyMjMsMjAyMz
-E5Mzc3NCwtMTQ4NDYyODk4MSw4MTczMTY4NDksLTU5MDI2Mzgx
-OCwzNjQ3NDkwMDksLTExOTk0ODM4MDQsODg4NTExNDQ2LDE0MD
-Q0MjE1NTUsLTkzNzMyNTQ3NCwtODY0MjQ1MDQ4LC00NDEzMDY3
-MDgsMTc1MjQ2MDg3NywtMTU2MDM3NjkwMSwyNDgxMDk1NDgsLT
-IwNDQ3Mzk3MTgsNTMxNTY3MTk3LDcyNjkxOTEwOSwtMTM3ODUw
-ODMwXX0=
+eyJoaXN0b3J5IjpbMzk5NjI2NDYzLDQ0MzY2ODIyMywyMDIzMT
+kzNzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0OSwtNTkwMjYzODE4
+LDM2NDc0OTAwOSwtMTE5OTQ4MzgwNCw4ODg1MTE0NDYsMTQwND
+QyMTU1NSwtOTM3MzI1NDc0LC04NjQyNDUwNDgsLTQ0MTMwNjcw
+OCwxNzUyNDYwODc3LC0xNTYwMzc2OTAxLDI0ODEwOTU0OCwtMj
+A0NDczOTcxOCw1MzE1NjcxOTcsNzI2OTE5MTA5LC0xMzc4NTA4
+MzBdfQ==
 -->
