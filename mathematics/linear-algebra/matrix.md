@@ -87,7 +87,7 @@ $$
 
 직관적인 방법은 오른쪽 A 행렬을 세로로 나누고, 나누어진 각 벡터를 왼쪽 행렬 B에 곱한 결과를 합친다. 
 주의할 점은 $BA(x) \neq AB(x)$이다. 
-`f한 것을 g한다`라는 의미는 $g(f(x))$로 표현하는데 
+`f한 것을 g한다`라는 의미는 $g(f(x))$로 표현한다.  비슷하게 `A하고 B한다면 AB가 아닌 BA`
 
 
 
@@ -95,10 +95,10 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjM5NjI5MDksMjEzNzcwNTM2MSwyMD
-M0MTI4NDIxLC01ODQ3OTQ1NjgsLTE0Mzc0MTAwNzUsMTU1MTcy
-Njc5MCwtODU5OTE1NDMyLC0xNTQ1ODExMjk3LC0xODMxNzQ5Nz
-U0LDc1Njc0MTc3MiwtMTI1OTQyMjg4MCwtNzAxNTExNDMwLDQ4
-MTk3Mjk4MSwxMjU3MjQ3OTM2LDEzMDA4MjAxMDcsLTExMDYwOT
-M4NjIsNTQ0MTM2MzBdfQ==
+eyJoaXN0b3J5IjpbMTQ2NzM3NDU3OSwtMTAyMzk2MjkwOSwyMT
+M3NzA1MzYxLDIwMzQxMjg0MjEsLTU4NDc5NDU2OCwtMTQzNzQx
+MDA3NSwxNTUxNzI2NzkwLC04NTk5MTU0MzIsLTE1NDU4MTEyOT
+csLTE4MzE3NDk3NTQsNzU2NzQxNzcyLC0xMjU5NDIyODgwLC03
+MDE1MTE0MzAsNDgxOTcyOTgxLDEyNTcyNDc5MzYsMTMwMDgyMD
+EwNywtMTEwNjA5Mzg2Miw1NDQxMzYzMF19
 -->
