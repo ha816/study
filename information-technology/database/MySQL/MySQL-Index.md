@@ -151,8 +151,7 @@ GROUP BY dept_no
 SELECT * from myTable
 WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 ```
-위 예제는 멀티 인덱스에 모든 인덱스를 사용하기에 효율적이다. 하지만 만약 순서가 앞에 있는 year, make의 조건이 빠지면 어떻게 될까? 
-앞 순서
+위 예제는 멀티 인덱스에 모든 인덱스를 사용하기에 효율적이다. 앞 순서에 해당하는 조건(year)이 빠지게 되면 인덱스를 전혀 사용하지 못하는 결과가 나오게 된다. 따라서 다중 인덱스에서는 인덱스의 순서가 
 
 
 
@@ -173,7 +172,7 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0Mzc5MjMzMSwzODY0NDYyNjMsNDQzNj
+eyJoaXN0b3J5IjpbMjAxOTc2OTA0MCwzODY0NDYyNjMsNDQzNj
 Y4MjIzLDIwMjMxOTM3NzQsLTE0ODQ2Mjg5ODEsODE3MzE2ODQ5
 LC01OTAyNjM4MTgsMzY0NzQ5MDA5LC0xMTk5NDgzODA0LDg4OD
 UxMTQ0NiwxNDA0NDIxNTU1LC05MzczMjU0NzQsLTg2NDI0NTA0
