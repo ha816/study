@@ -78,7 +78,7 @@ a_{11} & \cdots & a_{1n}\\
 a_{m1} & \cdots & a_{mn}\\
 \end{pmatrix}=
 \begin{pmatrix}
-b_{11}a_{11}+\cdots + b_{1m}a_{m1} & \cdots & b_{11}a_{11}+\cdots + b_{1m}a_{m1}\\
+(b_{11}a_{11}+\cdots + b_{1m}a_{m1}) & \cdots & b_{11}a_{1n}+\cdots + b_{1m}a_{mn}\\
 \cdots \\
 a_{m1}x_{1}+\cdots + a_{mn}x_{n}\\
 \end{pmatrix}
@@ -88,7 +88,7 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTAxODQ3NSwtMTQzNzQxMDA3NSwxNT
+eyJoaXN0b3J5IjpbLTY3MTU2NTg2NiwtMTQzNzQxMDA3NSwxNT
 UxNzI2NzkwLC04NTk5MTU0MzIsLTE1NDU4MTEyOTcsLTE4MzE3
 NDk3NTQsNzU2NzQxNzcyLC0xMjU5NDIyODgwLC03MDE1MTE0Mz
 AsNDgxOTcyOTgxLDEyNTcyNDc5MzYsMTMwMDgyMDEwNywtMTEw
