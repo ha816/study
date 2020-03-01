@@ -80,7 +80,7 @@ a_{m1} & \cdots & a_{mn}\\
 \begin{pmatrix}
 (b_{11}a_{11}+\cdots + b_{1m}a_{m1}) & \cdots & (b_{11}a_{1n}+\cdots + b_{1m}a_{mn})\\
 \cdots & & \cdots \\
-(b_{11}a_{11}+\cdots + b_{1m}a_{m1}) & \cdots & (b_{11}a_{1n}+\cdots + b_{1m}a_{mn})\\
+(b_{k1}a_{11}+\cdots + b_{km}a_{m1}) & \cdots & (b_{k1}a_{1n}+\cdots + b_{km}a_{mn})\\
 \end{pmatrix}
 $$
 
@@ -89,9 +89,9 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NDc5NDU2OCwtMTQzNzQxMDA3NSwxNT
-UxNzI2NzkwLC04NTk5MTU0MzIsLTE1NDU4MTEyOTcsLTE4MzE3
-NDk3NTQsNzU2NzQxNzcyLC0xMjU5NDIyODgwLC03MDE1MTE0Mz
-AsNDgxOTcyOTgxLDEyNTcyNDc5MzYsMTMwMDgyMDEwNywtMTEw
-NjA5Mzg2Miw1NDQxMzYzMF19
+eyJoaXN0b3J5IjpbLTU0NDI0NjQ4LC01ODQ3OTQ1NjgsLTE0Mz
+c0MTAwNzUsMTU1MTcyNjc5MCwtODU5OTE1NDMyLC0xNTQ1ODEx
+Mjk3LC0xODMxNzQ5NzU0LDc1Njc0MTc3MiwtMTI1OTQyMjg4MC
+wtNzAxNTExNDMwLDQ4MTk3Mjk4MSwxMjU3MjQ3OTM2LDEzMDA4
+MjAxMDcsLTExMDYwOTM4NjIsNTQ0MTM2MzBdfQ==
 -->
