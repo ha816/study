@@ -61,7 +61,7 @@ $$
 
 일반적으로 $f(x+y) = f(x)+f(y), f(cx)=cf(x)$라는 성질을 가진 함수 $f$를 선형 사상이라고 한다.  
 
-임의
+임의의 입력 $x = (x_1, \cdots x_n)^T$
 $f(x) = x_1 a_1 + \cdots + x_n a_n$
 
 
@@ -80,7 +80,7 @@ $f(x) = x_1 a_1 + \cdots + x_n a_n$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMxMzExNjE0LDc1Njc0MTc3MiwtMTI1OT
-QyMjg4MCwtNzAxNTExNDMwLDQ4MTk3Mjk4MSwxMjU3MjQ3OTM2
-LDEzMDA4MjAxMDcsLTExMDYwOTM4NjIsNTQ0MTM2MzBdfQ==
+eyJoaXN0b3J5IjpbLTE4MzE3NDk3NTQsNzU2NzQxNzcyLC0xMj
+U5NDIyODgwLC03MDE1MTE0MzAsNDgxOTcyOTgxLDEyNTcyNDc5
+MzYsMTMwMDgyMDEwNywtMTEwNjA5Mzg2Miw1NDQxMzYzMF19
 -->
