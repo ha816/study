@@ -86,19 +86,17 @@ a_{m1} & \cdots & a_{mn}\\
 $$
 
 직관적인 방법은 오른쪽 A 행렬을 세로로 나누고, 나누어진 각 벡터를 왼쪽 행렬 B에 곱한 결과를 합친다. 
-주의할 점은 $BA(x) \neq AB(x)$이다. 
-`f한 것을 g한다`라는 의미는 $g(f(x))$로 표현한다.  비슷하게 `A하고 B한다면 AB가 아닌 BA`
-
-
+`f한 것을 g한다`라는 의미는 $g(f(x))$로 표현한다.  비슷하게 `x에 A하고 B한다면 AB(x)가 아닌 BA(x)`로 생각해야 한다. 
+따라서 $BA(x) \neq AB(x)$이다. 
 
 # Determinant(행렬식)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NzM3NDU3OSwtMTAyMzk2MjkwOSwyMT
-M3NzA1MzYxLDIwMzQxMjg0MjEsLTU4NDc5NDU2OCwtMTQzNzQx
-MDA3NSwxNTUxNzI2NzkwLC04NTk5MTU0MzIsLTE1NDU4MTEyOT
-csLTE4MzE3NDk3NTQsNzU2NzQxNzcyLC0xMjU5NDIyODgwLC03
-MDE1MTE0MzAsNDgxOTcyOTgxLDEyNTcyNDc5MzYsMTMwMDgyMD
-EwNywtMTEwNjA5Mzg2Miw1NDQxMzYzMF19
+eyJoaXN0b3J5IjpbLTE0NjUwMDg5NzcsLTEwMjM5NjI5MDksMj
+EzNzcwNTM2MSwyMDM0MTI4NDIxLC01ODQ3OTQ1NjgsLTE0Mzc0
+MTAwNzUsMTU1MTcyNjc5MCwtODU5OTE1NDMyLC0xNTQ1ODExMj
+k3LC0xODMxNzQ5NzU0LDc1Njc0MTc3MiwtMTI1OTQyMjg4MCwt
+NzAxNTExNDMwLDQ4MTk3Mjk4MSwxMjU3MjQ3OTM2LDEzMDA4Mj
+AxMDcsLTExMDYwOTM4NjIsNTQ0MTM2MzBdfQ==
 -->
