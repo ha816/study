@@ -134,8 +134,10 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 ```
 SELECTdept_no, MIN(emp_no)
 FROM dept_emp
-WHERE dep_no
+WHERE dep_no BETWEEN 'd002' AND 'd004'
+GROUP BY dept_no
 ```
+위 쿼리에서 사용된 dept_emp 테이블은 dept_no와 emp_no로 인덱스가 생성되어 있다 가정하자 그리고 인덱스는 dept_no, emp_no 값으로 ㅈ
 
 
 ## Hash Index
@@ -147,7 +149,7 @@ WHERE dep_no
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MDQxMzU3NCwtNTkwMjYzODE4LDM2ND
+eyJoaXN0b3J5IjpbMTI1MDMzMjE5MCwtNTkwMjYzODE4LDM2ND
 c0OTAwOSwtMTE5OTQ4MzgwNCw4ODg1MTE0NDYsMTQwNDQyMTU1
 NSwtOTM3MzI1NDc0LC04NjQyNDUwNDgsLTQ0MTMwNjcwOCwxNz
 UyNDYwODc3LC0xNTYwMzc2OTAxLDI0ODEwOTU0OCwtMjA0NDcz
