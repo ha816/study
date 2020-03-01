@@ -64,7 +64,7 @@ $$
 $n$차원 벡터 $x$에 $m*n$행렬 A를 곱하면 $m$차원 벡터 $y = Ax$가 얻어진다. **즉 행렬 A를 지정하면 벡터를 다른 벡터로 옮기는 사상이 결정된다.(n차원 -> m차원)**  
 사실 이것이 행렬에 가잔 중요한 기능이다. 앞으로는 행렬을 보면 단순히 수가 나열되어 있는게 아니라 한 차원의 벡터를 다른 차원으로 변화시키는 사상이 주어졌다고 생각하자. 
 
-
+마지막으
 
 >사상은 일반적으로 쓰이는 변환이라는 표현도 가능하지만, 수학 용어로서 변환은 '대등한 것에 이동한다'라는 의미다. n차원 공간에서 m차원이라는 다른 세계로 옮기는 것을 변환이라고는 부를 수 없어 사상이라는 더 고차원적인 언어를 사용했다고 한다. 
 
@@ -75,8 +75,8 @@ $n$차원 벡터 $x$에 $m*n$행렬 A를 곱하면 $m$차원 벡터 $y = Ax$가 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1OTkxNTQzMiwtMTU0NTgxMTI5NywtMT
-gzMTc0OTc1NCw3NTY3NDE3NzIsLTEyNTk0MjI4ODAsLTcwMTUx
-MTQzMCw0ODE5NzI5ODEsMTI1NzI0NzkzNiwxMzAwODIwMTA3LC
-0xMTA2MDkzODYyLDU0NDEzNjMwXX0=
+eyJoaXN0b3J5IjpbNTE5Njk4NjU5LC04NTk5MTU0MzIsLTE1ND
+U4MTEyOTcsLTE4MzE3NDk3NTQsNzU2NzQxNzcyLC0xMjU5NDIy
+ODgwLC03MDE1MTE0MzAsNDgxOTcyOTgxLDEyNTcyNDc5MzYsMT
+MwMDgyMDEwNywtMTEwNjA5Mzg2Miw1NDQxMzYzMF19
 -->
