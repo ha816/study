@@ -127,7 +127,9 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 #### Index Loose Scan(Index Skip Scan)
 
-인덱스 루즈 스캔은 상당히 생소한데 오라클과 같은 DBMS의 인덱스 스킵 스캔과 작동 방식이 비슷하다. 루즈하다는 말은 말 그대로 느슨하게 또는 드
+인덱스 루즈 스캔은 상당히 생소한데 오라클과 같은 DBMS의 인덱스 스킵 스캔과 작동 방식이 비슷하다. **루즈하다는 말은 말 그대로 느슨하게 또는 듬성듬성 인덱스를 읽는 것을 의미한다.** 
+
+
 
 ## Hash Index
 
@@ -138,11 +140,11 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjQ3NzE3NTYsLTExOTk0ODM4MDQsOD
-g4NTExNDQ2LDE0MDQ0MjE1NTUsLTkzNzMyNTQ3NCwtODY0MjQ1
-MDQ4LC00NDEzMDY3MDgsMTc1MjQ2MDg3NywtMTU2MDM3NjkwMS
-wyNDgxMDk1NDgsLTIwNDQ3Mzk3MTgsNTMxNTY3MTk3LDcyNjkx
-OTEwOSwtMTM3ODUwODMwLC0xMTE0NjA0ODg0LC0xODc3NTE5Nz
-Q3LC0xNjEyMDU5OTg3LDc5Mzc1NDA4OCwxMzk1MTM3OTExLC0x
-MzY5NzA0MTIzXX0=
+eyJoaXN0b3J5IjpbMzY0NzQ5MDA5LC0xMTk5NDgzODA0LDg4OD
+UxMTQ0NiwxNDA0NDIxNTU1LC05MzczMjU0NzQsLTg2NDI0NTA0
+OCwtNDQxMzA2NzA4LDE3NTI0NjA4NzcsLTE1NjAzNzY5MDEsMj
+Q4MTA5NTQ4LC0yMDQ0NzM5NzE4LDUzMTU2NzE5Nyw3MjY5MTkx
+MDksLTEzNzg1MDgzMCwtMTExNDYwNDg4NCwtMTg3NzUxOTc0Ny
+wtMTYxMjA1OTk4Nyw3OTM3NTQwODgsMTM5NTEzNzkxMSwtMTM2
+OTcwNDEyM119
 -->
