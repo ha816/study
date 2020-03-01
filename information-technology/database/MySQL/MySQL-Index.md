@@ -106,7 +106,7 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 어떤 경우에 인덱스를 사용할지, 또는 사용하지 못할지 판단하려면 MySQL이 어떻게 인덱스를 이용해서 실제 레코드를 읽어내는지 알아야 한다. MySQL이 인덱스를 이용하는 대표적인 방법 Index Range Scan, Index Full Scan, Index Loose Scan을 보도록 하자.
 
-#### Range Scan
+#### Index Range Scan
 
 레인지 스캔은 인덱스의 접근 방법 중 가장 대표적인 접근 방법이고 FullScan과 Loose Scan 보다 빠른 방법이다. 인덱스 레인지 스캔은 검색해야 할 인덱스의 범위가 결정됐을때 사용하는 방식이다. 
 
@@ -116,10 +116,9 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 주의할 점은 인덱스의 리프 노드에서 검색 조건에 일치하는 건들을 데이터 파일에서 읽어오는 과정이 필요하다는 것이다. **리프 노드에 저장된 레코드 주소로 레코드를 읽어오는데 랜덤 I/O가 레코드의 갯수 만큼 반복된다.** 그래서 인덱스를 통한 레코드 읽기 작업이 비용이 많이 드는 작업인 것이다. 
 
-#### Full Scan
+#### Index Full Scan
 
-인덱스 풀 스캔은 레인지 스캔과 달리 **인덱스의 처음부터 끝까지를 모두 읽는 방식을 인덱스 풀 스캔**이라고 한다. 대표적으로 쿼리 존건절에 사용된 칼럼이 인덱스의 첫번째 칼럼이 아닌 경우 인덱스 풀 스캔이 사용된다. 
-
+인덱스 풀 스캔은 레인지 스캔과 달리 **인덱스의 처음부터 끝까지를 모두 읽는 방식을 인덱스 풀 스캔**이라고 한다. 예를 들어 멀티 인덱스가 (A,B,C)로 걸려 있는 경우, 쿼리의 조건절이 B,C에 대한 조건ㅇ
 ## Hash Index
 
 
@@ -129,11 +128,11 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNDQyMTU1NSwtOTM3MzI1NDc0LC04Nj
-QyNDUwNDgsLTQ0MTMwNjcwOCwxNzUyNDYwODc3LC0xNTYwMzc2
-OTAxLDI0ODEwOTU0OCwtMjA0NDczOTcxOCw1MzE1NjcxOTcsNz
-I2OTE5MTA5LC0xMzc4NTA4MzAsLTExMTQ2MDQ4ODQsLTE4Nzc1
-MTk3NDcsLTE2MTIwNTk5ODcsNzkzNzU0MDg4LDEzOTUxMzc5MT
-EsLTEzNjk3MDQxMjMsLTEwNjAxNDQ1ODgsMTMyMzM1MjA3MCw0
-ODg0NzIwNzVdfQ==
+eyJoaXN0b3J5IjpbLTU4NzI1NjI0MSwxNDA0NDIxNTU1LC05Mz
+czMjU0NzQsLTg2NDI0NTA0OCwtNDQxMzA2NzA4LDE3NTI0NjA4
+NzcsLTE1NjAzNzY5MDEsMjQ4MTA5NTQ4LC0yMDQ0NzM5NzE4LD
+UzMTU2NzE5Nyw3MjY5MTkxMDksLTEzNzg1MDgzMCwtMTExNDYw
+NDg4NCwtMTg3NzUxOTc0NywtMTYxMjA1OTk4Nyw3OTM3NTQwOD
+gsMTM5NTEzNzkxMSwtMTM2OTcwNDEyMywtMTA2MDE0NDU4OCwx
+MzIzMzUyMDcwXX0=
 -->
