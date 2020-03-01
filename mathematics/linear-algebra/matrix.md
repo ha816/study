@@ -66,6 +66,7 @@ $n$차원 벡터 $x$에 $m*n$행렬 A를 곱하면 $m$차원 벡터 $y = Ax$가 
 
 ## 행렬간 곱하기
 
+아래 식은 $k * m$ 행렬과 $m * n$ 행렬의 곱을 말한다. 그리고 그 결과는 $k*n$ 행렬이다. 
 $$
 \begin{pmatrix}
 b_{11} & \cdots & b_{1m}\\
@@ -85,13 +86,15 @@ a_{m1} & \cdots & a_{mn}\\
 $$
 
 
+
+
 # Determinant(행렬식)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDI0NjQ4LC01ODQ3OTQ1NjgsLTE0Mz
-c0MTAwNzUsMTU1MTcyNjc5MCwtODU5OTE1NDMyLC0xNTQ1ODEx
-Mjk3LC0xODMxNzQ5NzU0LDc1Njc0MTc3MiwtMTI1OTQyMjg4MC
-wtNzAxNTExNDMwLDQ4MTk3Mjk4MSwxMjU3MjQ3OTM2LDEzMDA4
-MjAxMDcsLTExMDYwOTM4NjIsNTQ0MTM2MzBdfQ==
+eyJoaXN0b3J5IjpbMTk2ODk0NzI3NSwtNTg0Nzk0NTY4LC0xND
+M3NDEwMDc1LDE1NTE3MjY3OTAsLTg1OTkxNTQzMiwtMTU0NTgx
+MTI5NywtMTgzMTc0OTc1NCw3NTY3NDE3NzIsLTEyNTk0MjI4OD
+AsLTcwMTUxMTQzMCw0ODE5NzI5ODEsMTI1NzI0NzkzNiwxMzAw
+ODIwMTA3LC0xMTA2MDkzODYyLDU0NDEzNjMwXX0=
 -->
