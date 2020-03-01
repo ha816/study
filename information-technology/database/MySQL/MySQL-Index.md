@@ -122,7 +122,7 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 일반적으로 인덱스의 크기는 테이블의 크기 보다 작으므로 직접 테이블을 처음부터 끝까지 읽는 것 보다는 인덱스를 읽는것이 효율적이다. 쿼리가 인덱스에 명시된 칼럼만으로 처리할 수 있는 경우 이 방법이 사용된다. 
 
-먼저 리프 노드의 제일 앞 또는 뒤로 이동한후, 리프 노드를 
+먼저 리프 노드의 제일 앞 또는 뒤로 이동한후, 리프 노드를 연결하는 리스트를 따라서 처음부터 끝까지 모두 스캔한다. 이 방식은 레인지 스캔보다 빠르진 않지만 테이블 풀 스캔(Table Full Scan)보다는 효율적이다. 
 
 ## Hash Index
 
@@ -133,11 +133,11 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjU1MjkxMzcsODg4NTExNDQ2LDE0MD
-Q0MjE1NTUsLTkzNzMyNTQ3NCwtODY0MjQ1MDQ4LC00NDEzMDY3
-MDgsMTc1MjQ2MDg3NywtMTU2MDM3NjkwMSwyNDgxMDk1NDgsLT
-IwNDQ3Mzk3MTgsNTMxNTY3MTk3LDcyNjkxOTEwOSwtMTM3ODUw
-ODMwLC0xMTE0NjA0ODg0LC0xODc3NTE5NzQ3LC0xNjEyMDU5OT
-g3LDc5Mzc1NDA4OCwxMzk1MTM3OTExLC0xMzY5NzA0MTIzLC0x
-MDYwMTQ0NTg4XX0=
+eyJoaXN0b3J5IjpbMTMyMjgzMTA0Niw4ODg1MTE0NDYsMTQwND
+QyMTU1NSwtOTM3MzI1NDc0LC04NjQyNDUwNDgsLTQ0MTMwNjcw
+OCwxNzUyNDYwODc3LC0xNTYwMzc2OTAxLDI0ODEwOTU0OCwtMj
+A0NDczOTcxOCw1MzE1NjcxOTcsNzI2OTE5MTA5LC0xMzc4NTA4
+MzAsLTExMTQ2MDQ4ODQsLTE4Nzc1MTk3NDcsLTE2MTIwNTk5OD
+csNzkzNzU0MDg4LDEzOTUxMzc5MTEsLTEzNjk3MDQxMjMsLTEw
+NjAxNDQ1ODhdfQ==
 -->
