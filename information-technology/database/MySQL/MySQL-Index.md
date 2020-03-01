@@ -125,9 +125,9 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 **인덱스에 포함된 칼럼만으로 쿼리를 처리할 수 있는 경우, 테이블 레코드를 읽을 필요가 없기 때문에 인덱스 풀 스캔만으로 처리할 수가 있고 인덱스의 크기는 테이블 자체의 크기보다는 훨씬 작으므로 인덱스 풀 스캔은 테이블 전체를 읽는 것보다 적은 디스크 I/O를 사용한다.** 
 
-#### Index Loose Scan
+#### Index Loose Scan(Index Skip Scan)
 
-
+인덱스 루즈 스캔은 상당히 생소한데 오라클과 같은 DBMS의 인덱스 스킵 스캔과 작동 방식이 비슷하다. 루즈하다는 말은 말 그대로 느슨하게 또는 드
 
 ## Hash Index
 
@@ -138,11 +138,11 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NTcyMTc5NSwtMTE5OTQ4MzgwNCw4OD
-g1MTE0NDYsMTQwNDQyMTU1NSwtOTM3MzI1NDc0LC04NjQyNDUw
-NDgsLTQ0MTMwNjcwOCwxNzUyNDYwODc3LC0xNTYwMzc2OTAxLD
-I0ODEwOTU0OCwtMjA0NDczOTcxOCw1MzE1NjcxOTcsNzI2OTE5
-MTA5LC0xMzc4NTA4MzAsLTExMTQ2MDQ4ODQsLTE4Nzc1MTk3ND
-csLTE2MTIwNTk5ODcsNzkzNzU0MDg4LDEzOTUxMzc5MTEsLTEz
-Njk3MDQxMjNdfQ==
+eyJoaXN0b3J5IjpbLTE2MjQ3NzE3NTYsLTExOTk0ODM4MDQsOD
+g4NTExNDQ2LDE0MDQ0MjE1NTUsLTkzNzMyNTQ3NCwtODY0MjQ1
+MDQ4LC00NDEzMDY3MDgsMTc1MjQ2MDg3NywtMTU2MDM3NjkwMS
+wyNDgxMDk1NDgsLTIwNDQ3Mzk3MTgsNTMxNTY3MTk3LDcyNjkx
+OTEwOSwtMTM3ODUwODMwLC0xMTE0NjA0ODg0LC0xODc3NTE5Nz
+Q3LC0xNjEyMDU5OTg3LDc5Mzc1NDA4OCwxMzk1MTM3OTExLC0x
+MzY5NzA0MTIzXX0=
 -->
