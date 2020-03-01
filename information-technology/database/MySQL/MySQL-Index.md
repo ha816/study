@@ -112,7 +112,9 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 루트 노드에서 부터 비교를 시작하여, 브랜치노드를 거쳐 최종적으로 리프 노드까지 찾아가면 실제 읽어야 할 레코드 주소만 순서대로 읽으면 된다. 이처럼 차례대로 쭉 읽는 것을 스캔이라 한다. 만약 리프 노드를 읽다가 리프 노드의 끝까지 읽으면 다음 리프노드간의 링크를 이용해 다음 리포노드에서 스캔한다. 그리고 최종적으로 스캔을 멈춰야할 위치에 다다르면 지금까지 읽은 레코드를 사용자에게 반환하고 끝낸다. 
 
-리프노드를 
+![enter image description here](https://lh3.googleusercontent.com/proxy/2Yl552k7HTmhBQ7c8FdYjnmLjbm5jZDMyB8ORwS_zJzmwIW4Ti54cE_8FaKLsbksaI3wXQ5Y7emsg4wUZTxqKDu-6Tc72-AWLENYh9QPhhNBEMcsBg)
+
+주의할 점은 인덱스의 리프 노드에서 검색 조건에 일치하는 건들을 데이터 파일에서 읽어오는 과정이 필요하다는 것이다. 리프 노드에 저장된 레코드 주소로 
 
 ## Hash Index
 
@@ -123,11 +125,11 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNzMyNTQ3NCwtODY0MjQ1MDQ4LC00ND
-EzMDY3MDgsMTc1MjQ2MDg3NywtMTU2MDM3NjkwMSwyNDgxMDk1
-NDgsLTIwNDQ3Mzk3MTgsNTMxNTY3MTk3LDcyNjkxOTEwOSwtMT
-M3ODUwODMwLC0xMTE0NjA0ODg0LC0xODc3NTE5NzQ3LC0xNjEy
-MDU5OTg3LDc5Mzc1NDA4OCwxMzk1MTM3OTExLC0xMzY5NzA0MT
-IzLC0xMDYwMTQ0NTg4LDEzMjMzNTIwNzAsNDg4NDcyMDc1LC05
-NzA2MTcxM119
+eyJoaXN0b3J5IjpbNzQ3OTUzMDM4LC05MzczMjU0NzQsLTg2ND
+I0NTA0OCwtNDQxMzA2NzA4LDE3NTI0NjA4NzcsLTE1NjAzNzY5
+MDEsMjQ4MTA5NTQ4LC0yMDQ0NzM5NzE4LDUzMTU2NzE5Nyw3Mj
+Y5MTkxMDksLTEzNzg1MDgzMCwtMTExNDYwNDg4NCwtMTg3NzUx
+OTc0NywtMTYxMjA1OTk4Nyw3OTM3NTQwODgsMTM5NTEzNzkxMS
+wtMTM2OTcwNDEyMywtMTA2MDE0NDU4OCwxMzIzMzUyMDcwLDQ4
+ODQ3MjA3NV19
 -->
