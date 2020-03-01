@@ -151,7 +151,9 @@ GROUP BY dept_no
 SELECT * from myTable
 WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 ```
-위 예제는 멀티 인덱스에 모든 
+위 예제는 멀티 인덱스에 모든 인덱스를 사용하기에 효율적이다. 하지만 만약 순서가 앞에 있는 year, make의 조건이 빠지면 어떻게 될까? 
+
+
 
 
 ### B-Tree 인덱스의 정렬 및 스캔 방향
@@ -170,7 +172,7 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5MTcxOTIwLDQ0MzY2ODIyMywyMDIzMT
+eyJoaXN0b3J5IjpbMzg2NDQ2MjYzLDQ0MzY2ODIyMywyMDIzMT
 kzNzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0OSwtNTkwMjYzODE4
 LDM2NDc0OTAwOSwtMTE5OTQ4MzgwNCw4ODg1MTE0NDYsMTQwND
 QyMTU1NSwtOTM3MzI1NDc0LC04NjQyNDUwNDgsLTQ0MTMwNjcw
