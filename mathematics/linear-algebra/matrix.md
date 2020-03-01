@@ -86,7 +86,7 @@ a_{m1} & \cdots & a_{mn}\\
 $$
 
 직관적인 방법은 오른쪽 A 행렬을 세로로 나누고, 나누어진 각 벡터를 왼쪽 행렬 B에 곱한 결과를 합친다. 
-주의할 점은 $BA(x) \neq AB(x)$이다. `f한 것을 g한다`라는 의미는 $g(f(x))$
+주의할 점은 $BA(x) \neq AB(x)$이다. `f한 것을 g한다`라는 의미는 $g(f(x))$로 표현하는데 
 
 
 
@@ -94,10 +94,10 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDUzMjE0OTUsMjAzNDEyODQyMSwtNT
-g0Nzk0NTY4LC0xNDM3NDEwMDc1LDE1NTE3MjY3OTAsLTg1OTkx
-NTQzMiwtMTU0NTgxMTI5NywtMTgzMTc0OTc1NCw3NTY3NDE3Nz
-IsLTEyNTk0MjI4ODAsLTcwMTUxMTQzMCw0ODE5NzI5ODEsMTI1
-NzI0NzkzNiwxMzAwODIwMTA3LC0xMTA2MDkzODYyLDU0NDEzNj
-MwXX0=
+eyJoaXN0b3J5IjpbMjEzNzcwNTM2MSwyMDM0MTI4NDIxLC01OD
+Q3OTQ1NjgsLTE0Mzc0MTAwNzUsMTU1MTcyNjc5MCwtODU5OTE1
+NDMyLC0xNTQ1ODExMjk3LC0xODMxNzQ5NzU0LDc1Njc0MTc3Mi
+wtMTI1OTQyMjg4MCwtNzAxNTExNDMwLDQ4MTk3Mjk4MSwxMjU3
+MjQ3OTM2LDEzMDA4MjAxMDcsLTExMDYwOTM4NjIsNTQ0MTM2Mz
+BdfQ==
 -->
