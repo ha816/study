@@ -59,7 +59,7 @@ $$
 * 행렬의 열의 수(가로)는 계산 대상의 수
 * 종벡터($\vec {x}$)를 하나씩 위에서 부터 넘겨 계산
 
-일반적으로 $f(x+y) = f(x)+f(y), f(cx)$
+일반적으로 $f(x+y) = f(x)+f(y), f(cx)=cf(x)$라는 성질을 가진 함수 $f$를 선형 사상이라고 한다.  즉 행렬 A를 곱한다는 것은 선형 사상이다. 
 
 
 
@@ -77,7 +77,7 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2OTY5ODcxOSwtMTI1OTQyMjg4MCwtNz
-AxNTExNDMwLDQ4MTk3Mjk4MSwxMjU3MjQ3OTM2LDEzMDA4MjAx
-MDcsLTExMDYwOTM4NjIsNTQ0MTM2MzBdfQ==
+eyJoaXN0b3J5IjpbNzU2NzQxNzcyLC0xMjU5NDIyODgwLC03MD
+E1MTE0MzAsNDgxOTcyOTgxLDEyNTcyNDc5MzYsMTMwMDgyMDEw
+NywtMTEwNjA5Mzg2Miw1NDQxMzYzMF19
 -->
