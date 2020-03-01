@@ -68,9 +68,9 @@ $n$차원 벡터 $x$에 $m*n$행렬 A를 곱하면 $m$차원 벡터 $y = Ax$가 
 
 $$
 \begin{pmatrix}
-b_{11} & \cdots & b_{1n}\\
+b_{11} & \cdots & b_{1m}\\
 \cdots & & \cdots\\
-b_{k1} & \cdots & b_{kn}\\
+b_{k1} & \cdots & b_{km}\\
 \end{pmatrix} 
 \begin{pmatrix}
 a_{11} & \cdots & a_{1n}\\
@@ -89,7 +89,7 @@ $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjE5ODE1NCwtMTQzNzQxMDA3NSwxNT
+eyJoaXN0b3J5IjpbLTU4NDc5NDU2OCwtMTQzNzQxMDA3NSwxNT
 UxNzI2NzkwLC04NTk5MTU0MzIsLTE1NDU4MTEyOTcsLTE4MzE3
 NDk3NTQsNzU2NzQxNzcyLC0xMjU5NDIyODgwLC03MDE1MTE0Mz
 AsNDgxOTcyOTgxLDEyNTcyNDc5MzYsMTMwMDgyMDEwNywtMTEw
