@@ -141,7 +141,7 @@ GROUP BY dept_no
 
 #### Multi-column Index(Concatenated Index)
 
-실제 서비스용 데이터베이스에는 2개 이상의 컬럼을 포함하는 인덱스가 더 많이 사용된다.  
+실제 서비스용 데이터베이스에는 2개 이상의 컬럼을 포함하는 인덱스가 더 많이 사용된다.  멀티 인덱스에서 중요한것은 
 
 ### B-Tree 인덱스의 정렬 및 스캔 방향
 
@@ -159,11 +159,11 @@ GROUP BY dept_no
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMzE5Mzc3NCwtMTQ4NDYyODk4MSw4MT
-czMTY4NDksLTU5MDI2MzgxOCwzNjQ3NDkwMDksLTExOTk0ODM4
-MDQsODg4NTExNDQ2LDE0MDQ0MjE1NTUsLTkzNzMyNTQ3NCwtOD
-Y0MjQ1MDQ4LC00NDEzMDY3MDgsMTc1MjQ2MDg3NywtMTU2MDM3
-NjkwMSwyNDgxMDk1NDgsLTIwNDQ3Mzk3MTgsNTMxNTY3MTk3LD
-cyNjkxOTEwOSwtMTM3ODUwODMwLC0xMTE0NjA0ODg0LC0xODc3
-NTE5NzQ3XX0=
+eyJoaXN0b3J5IjpbNDQzNjY4MjIzLDIwMjMxOTM3NzQsLTE0OD
+Q2Mjg5ODEsODE3MzE2ODQ5LC01OTAyNjM4MTgsMzY0NzQ5MDA5
+LC0xMTk5NDgzODA0LDg4ODUxMTQ0NiwxNDA0NDIxNTU1LC05Mz
+czMjU0NzQsLTg2NDI0NTA0OCwtNDQxMzA2NzA4LDE3NTI0NjA4
+NzcsLTE1NjAzNzY5MDEsMjQ4MTA5NTQ4LC0yMDQ0NzM5NzE4LD
+UzMTU2NzE5Nyw3MjY5MTkxMDksLTEzNzg1MDgzMCwtMTExNDYw
+NDg4NF19
 -->
