@@ -118,7 +118,7 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 #### Index Full Scan
 
-인덱스 풀 스캔은 레인지 스캔과 달리 **인덱스의 처음부터 끝까지를 모두 읽는 방식을 인덱스 풀 스캔**이라고 한다. 쿼리가 인덱스에 명시된 칼럼만으로 처리할 수 있는 경우 이 방법이 사용된다. 
+인덱스 풀 스캔은 레인지 스캔과 달리 **인덱스의 처음부터 끝까지를 모두 읽는 방식을 인덱스 풀 스캔**이라고 한다. 쿼리가 인덱스에 명시된 칼럼만으로 처리할 수 있는 경우 이 방법이 사용된다. 예를 들어 컬럼 A로 인덱스가 걸려있고  A 컬럼
 
 일반적으로 인덱스의 크기는 테이블의 크기 보다 작으므로 직접 테이블을 처음부터 끝까지 읽는 것 보다는 인덱스를 읽는것이 효율적이다. 
 먼저 리프 노드의 제일 앞 또는 뒤로 이동한후, 리프 노드를 연결하는 리스트를 따라서 처음부터 끝까지 모두 스캔한다. 이 방식은 레인지 스캔보다 빠르진 않지만 테이블 풀 스캔(Table Full Scan)보다는 효율적이다. 
@@ -134,11 +134,11 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAyMTE4NjU4LC0xMTk5NDgzODA0LDg4OD
-UxMTQ0NiwxNDA0NDIxNTU1LC05MzczMjU0NzQsLTg2NDI0NTA0
-OCwtNDQxMzA2NzA4LDE3NTI0NjA4NzcsLTE1NjAzNzY5MDEsMj
-Q4MTA5NTQ4LC0yMDQ0NzM5NzE4LDUzMTU2NzE5Nyw3MjY5MTkx
-MDksLTEzNzg1MDgzMCwtMTExNDYwNDg4NCwtMTg3NzUxOTc0Ny
-wtMTYxMjA1OTk4Nyw3OTM3NTQwODgsMTM5NTEzNzkxMSwtMTM2
-OTcwNDEyM119
+eyJoaXN0b3J5IjpbLTIwODI0NzIzNDEsLTExOTk0ODM4MDQsOD
+g4NTExNDQ2LDE0MDQ0MjE1NTUsLTkzNzMyNTQ3NCwtODY0MjQ1
+MDQ4LC00NDEzMDY3MDgsMTc1MjQ2MDg3NywtMTU2MDM3NjkwMS
+wyNDgxMDk1NDgsLTIwNDQ3Mzk3MTgsNTMxNTY3MTk3LDcyNjkx
+OTEwOSwtMTM3ODUwODMwLC0xMTE0NjA0ODg0LC0xODc3NTE5Nz
+Q3LC0xNjEyMDU5OTg3LDc5Mzc1NDA4OCwxMzk1MTM3OTExLC0x
+MzY5NzA0MTIzXX0=
 -->
