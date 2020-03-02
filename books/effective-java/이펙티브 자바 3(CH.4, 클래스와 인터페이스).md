@@ -113,7 +113,9 @@ public class ForwardingSet<E> implements Set<E> {
 	...
 }
 ```
-아래 InstrumentedSet 클래스는 앞서 ForwardingSet 클래스를 상속한다. 이 클래스는 Set 인터페이스를 구현한 인스턴스를 인수로 받는 생성자를 제공하고 임의의 Set 크기 계측 기능(addCount)을 추가했다. 앞서 ForwardingSet은 추가 기능을 제공하지 않은
+아래 InstrumentedSet 클래스는 앞서 ForwardingSet 클래스를 상속한다. 이 클래스는 Set 인터페이스를 구현한 인스턴스를 인수로 받는 생성자를 제공하고 임의의 Set 크기 계측 기능(addCount)을 추가했다. 앞서 ForwardingSet은 단순히 forwarding하는 기능만 있었
+
+지 않은 것에 반해서 InstrumentedSet는 계측 기능을 추가하였다. 
 
 다른 Set 인스턴스(ForwardingSet의 Set 인스턴스)에 계측 기능을 추가  데코레이터 패턴이 사용되었다고 한다.
 
@@ -219,11 +221,11 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU2MzczODQ2LDYxNzkwMDgyMSwyNDAzMD
-A5MjEsLTE4MTAzNTExMTUsMTM0NTcxNTIzMywtMTExOTkwNjI5
-MCwtMjE0NjM5NDQwOCw3ODYzMjk5MTgsNjI1NDg3OTI1LC0xNj
-YyNzQyNjU2LDY1NDI4OTc1NSwtNDI3MjIwNTcwLDE1MzkwNzA3
-NTksODU0NjkxMjg5LC0zMTUzMTUwNjIsLTUxNDk1ODMxNCw4MD
-MyODExMTUsNTYzOTUyMTE1LDgzMTI0MTQ2NSwtNjYyODg3MjE3
-XX0=
+eyJoaXN0b3J5IjpbMTYzNzI2ODM1Myw2MTc5MDA4MjEsMjQwMz
+AwOTIxLC0xODEwMzUxMTE1LDEzNDU3MTUyMzMsLTExMTk5MDYy
+OTAsLTIxNDYzOTQ0MDgsNzg2MzI5OTE4LDYyNTQ4NzkyNSwtMT
+Y2Mjc0MjY1Niw2NTQyODk3NTUsLTQyNzIyMDU3MCwxNTM5MDcw
+NzU5LDg1NDY5MTI4OSwtMzE1MzE1MDYyLC01MTQ5NTgzMTQsOD
+AzMjgxMTE1LDU2Mzk1MjExNSw4MzEyNDE0NjUsLTY2Mjg4NzIx
+N119
 -->
