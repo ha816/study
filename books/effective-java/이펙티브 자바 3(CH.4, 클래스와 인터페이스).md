@@ -116,10 +116,16 @@ public class ForwardingSet<E> implements Set<E> {
 
 이와 유사하게 Wrapper 클래스가 있는데, 아래 예시를 보자. 
 
+```
+// Wrapper Class - 상속 대신 컴포지션을 사용
+public class ForwardingSet<E> implements Set<E> {
+	private final Set<E> s;
+	public ForwardingSet(Set<E> s) {this.s = s;}
+	
 
-
-
-
+	...
+}
+```
 
 wrapper(decorator) 클래스 : 계승 대신 구성을 사용하는 클래스
 forwarding 클래스 : 재사용 가능한 전달 클래스
@@ -204,11 +210,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg2MzI5OTE4LDYyNTQ4NzkyNSwtMTY2Mj
-c0MjY1Niw2NTQyODk3NTUsLTQyNzIyMDU3MCwxNTM5MDcwNzU5
-LDg1NDY5MTI4OSwtMzE1MzE1MDYyLC01MTQ5NTgzMTQsODAzMj
-gxMTE1LDU2Mzk1MjExNSw4MzEyNDE0NjUsLTY2Mjg4NzIxNyw3
-NTU3NTc2LDkxOTQxODUzMCwtNDE0OTg0NDMwLDEyOTI0ODM3MT
-QsLTY4OTMxNTg2MiwtMTM5NjU4OTQ5LDE5NzY5OTgzMDNdfQ==
+eyJoaXN0b3J5IjpbLTIxNDYzOTQ0MDgsNzg2MzI5OTE4LDYyNT
+Q4NzkyNSwtMTY2Mjc0MjY1Niw2NTQyODk3NTUsLTQyNzIyMDU3
+MCwxNTM5MDcwNzU5LDg1NDY5MTI4OSwtMzE1MzE1MDYyLC01MT
+Q5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4MzEyNDE0NjUs
+LTY2Mjg4NzIxNyw3NTU3NTc2LDkxOTQxODUzMCwtNDE0OTg0ND
+MwLDEyOTI0ODM3MTQsLTY4OTMxNTg2MiwtMTM5NjU4OTQ5XX0=
 
 -->
