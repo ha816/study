@@ -105,10 +105,11 @@ public class ForwardingSet<E> implements Set<E> {
 	public ForwardingSet(Set<E> s) {this.s = s;}
 	
 	public void clear() {s.clear();}
-	public void clear() {s.clear();}
-	public void clear() {s.clear();}
-	public void clear() {s.clear();}
+	public boolean contains(Object o) {return s.contains(0)l}
+	public boolean isEmpty() {return s.isEmpty();}
 	...
+	public boolean add(E e) {return s.add(e);}
+	public boolean remove(Object o) {return s.add(e);}
 }
 ```
 
@@ -197,11 +198,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjI3NDI2NTYsNjU0Mjg5NzU1LC00Mj
-cyMjA1NzAsMTUzOTA3MDc1OSw4NTQ2OTEyODksLTMxNTMxNTA2
-MiwtNTE0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUsODMxMj
-QxNDY1LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0MTg1MzAsLTQx
-NDk4NDQzMCwxMjkyNDgzNzE0LC02ODkzMTU4NjIsLTEzOTY1OD
-k0OSwxOTc2OTk4MzAzLC0xNjA0OTY3NDE1LC0xMjk4NTEyODk3
+eyJoaXN0b3J5IjpbLTEyNzU0ODM0ODEsLTE2NjI3NDI2NTYsNj
+U0Mjg5NzU1LC00MjcyMjA1NzAsMTUzOTA3MDc1OSw4NTQ2OTEy
+ODksLTMxNTMxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTExNSw1Nj
+M5NTIxMTUsODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1NzU3Niw5
+MTk0MTg1MzAsLTQxNDk4NDQzMCwxMjkyNDgzNzE0LC02ODkzMT
+U4NjIsLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3NDE1
 XX0=
 -->
