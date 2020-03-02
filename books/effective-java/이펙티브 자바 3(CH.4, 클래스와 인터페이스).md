@@ -118,9 +118,10 @@ public class ForwardingSet<E> implements Set<E> {
 
 ```
 // Wrapper Class - 상속 대신 컴포지션을 사용
-public class ForwardingSet<E> implements Set<E> {
-	private final Set<E> s;
-	public ForwardingSet(Set<E> s) {this.s = s;}
+public class InstrumentedSet<E> extends ForwardingSet<E> {
+	private int addCount = 0;
+	
+	public InstrumentedSet(Set<E> s) {this.s = s;}
 	
 
 	...
@@ -210,11 +211,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDYzOTQ0MDgsNzg2MzI5OTE4LDYyNT
-Q4NzkyNSwtMTY2Mjc0MjY1Niw2NTQyODk3NTUsLTQyNzIyMDU3
-MCwxNTM5MDcwNzU5LDg1NDY5MTI4OSwtMzE1MzE1MDYyLC01MT
-Q5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4MzEyNDE0NjUs
-LTY2Mjg4NzIxNyw3NTU3NTc2LDkxOTQxODUzMCwtNDE0OTg0ND
-MwLDEyOTI0ODM3MTQsLTY4OTMxNTg2MiwtMTM5NjU4OTQ5XX0=
+eyJoaXN0b3J5IjpbMzQ3MTM0NzE4LC0yMTQ2Mzk0NDA4LDc4Nj
+MyOTkxOCw2MjU0ODc5MjUsLTE2NjI3NDI2NTYsNjU0Mjg5NzU1
+LC00MjcyMjA1NzAsMTUzOTA3MDc1OSw4NTQ2OTEyODksLTMxNT
+MxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUs
+ODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0MTg1Mz
+AsLTQxNDk4NDQzMCwxMjkyNDgzNzE0LC02ODkzMTU4NjJdfQ==
 
 -->
