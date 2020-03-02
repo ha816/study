@@ -1,6 +1,6 @@
 # 클래스와 인터페이스
 
-## Item13. 클래스와 멤버의 접근 권한은 최소화하라
+## Item15. 클래스와 멤버의 접근 권한은 최소화하라
 
 어설프게 설계된 컴포넌트와 잘 설계된 컴포넌트의 가장 큰 차이는 바로 클래스 내부 데이터와 내부 구현 정보를 외부 컴포넌트로 부터 얼마나 잘 숨겼느냐이다. 정보은닉 (information hiding), 혹은 캡슐화(capsulation)으로 불리는 이 개념은 소프트웨어 설계의 근간이 되는 원리다. 
  - 정보 은닉(information hiding)의 장점
@@ -39,7 +39,7 @@ private의 일반적인 오해는 private으로 선언한 변수는 해당 인�
 >핵심정리
 >프로그램 요소의 접근성은 가능한 최소로 하자.(접근 제한이 최대한 강하게) 꼭 필요한 것만 골라 최소한의 public API를 설계하자. 그 외에는 클래스, 인터페이스, 멤버가 의도치 않게 API로 공개되는 일이 없도록 해야 한다. public 클래스는 상수용 public static finall 필드외에는 어떠한 public 필드도 가져선 안된다. public static final 필드가 참조하는 객체가 불변인지 확인하라. 
 
-### Item14. public 클래스에서는 public 필드  접근자 메서드를 사용라!
+## Item16. public 클래스에서는 public 필드  접근자 메서드를 사용하라.
 
  private 필드와 public 접근자 메서드(getter, setter)를 사용하자. 패키지 바깥에서 접근할때 사용하려는 클래스의 접근자를 사용하여도록 하자. (예를 들면, getter) 그러면 사용되는 클래스 내부 표현 방식을 언제든 바꿀 수 있게 된다. 반면에 public 클래스의 데이터 필드를 공게하게 되면,  직접 사용해서 가공하는 다수의 클라이언트가 생겨날 것이므로, 내부 표현 방식을 변경할 수가 없다. 
 
@@ -52,7 +52,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 >핵심정리
 >public 클래스는 절대 가변 필드를 직접 노출해서는 안된다. 불변 필드라면 노출해도 덜 위험하지만 완전히 안심할 수 없다. 하지만 package-private 클래스나 private 중첩 클래스에서는 종종 (불변이든 가변이든) 필드를 노출하는 편이 나을때도 있다. 
 
-## Item15. 변경 가능성을 최소화 하라
+## Item17. 변경 가능성을 최소화 하라
 
 불변 (immutable)란 간단히 말해 그 인스턴스의 내부 값을 수정할 수 없는 클래스이다. 불변 인스턴스는 가지는 정보가 고정되어 객체가 파괴되는 순간까지 절대 변하지 않는다. 자바 플랫폼 라이브러리에는 다양한 불변클래스가 있다. String, 기본 타입의 박싱 클래스, BigInter, BigDecimal등이 있다. 이렇게 불변으로 클래스가 설계된 이유는 가변 클래스보다 설계하고 구현하고 사용하기 쉬우며, 오류가 생길 여지도 적고 훨씬 안전하다.
 
@@ -226,7 +226,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1OTIxNTQ1OCwxMTE2MzAyOTEyLC03MD
+eyJoaXN0b3J5IjpbMTQ2NTEyOTk1MiwxMTE2MzAyOTEyLC03MD
 Y2Nzg4NzMsNjE3OTAwODIxLDI0MDMwMDkyMSwtMTgxMDM1MTEx
 NSwxMzQ1NzE1MjMzLC0xMTE5OTA2MjkwLC0yMTQ2Mzk0NDA4LD
 c4NjMyOTkxOCw2MjU0ODc5MjUsLTE2NjI3NDI2NTYsNjU0Mjg5
