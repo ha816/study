@@ -84,6 +84,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 사실 패키지 바깥 클래스에서 바라본 이 객체는 사실상 final 클래스이다. 왜냐하면 public이나 protected로 제공하는 생성자가 없으니 다른 클래스에서 확장이 불가능하기 때문이다. BigInter와 BigDecimal을 설계할 당신에 불변객체가 사실상 final 이어야 한다는 생각이 널리 퍼지지 않았다. 그래서 두 클래스의 메서드들을 재정의 할 수 있게 설계되었고, 하위 호완성 때문에 지금도 이 문제를 고치지 못했다. 만약 신뢰할 수 없는 클라이언트로 부터 BigInteger나 BigDecimal을 인수로 받는 다면 주의해야 한다. 이 값들을 불변 객체로 가정했는데 알고 보니 **불변객체를 확장한 가변 객체일수가 있다.** 다시 말해 신뢰할 수 없는 하위 클래스로 확인되면 가변 객체라고 생각하고 방어적으로 복사를 해서 사용해야 한다. 
 
+**클래스는 꼭 필요한 경우가 아니면 불변이어야 한다.** 불변 클래스는 장점이 많으며, 단점이라곤 특정 상황에서 잠재적 성능 저하 뿐이다. 
 
 
 ### 16. 계승하는 대신 구성하라
@@ -187,11 +188,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjg0MDQwMzAsLTMxNTMxNTA2MiwtNT
-E0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUsODMxMjQxNDY1
-LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0MTg1MzAsLTQxNDk4ND
-QzMCwxMjkyNDgzNzE0LC02ODkzMTU4NjIsLTEzOTY1ODk0OSwx
-OTc2OTk4MzAzLC0xNjA0OTY3NDE1LC0xMjk4NTEyODk3LDEzNz
-E2NzE3NzEsMTM3MTY3MTc3MSwtMTI1NDUxNzYsMTM3MTY3MTc3
-MV19
+eyJoaXN0b3J5IjpbMjg1MDc4MjQsLTMxNTMxNTA2MiwtNTE0OT
+U4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUsODMxMjQxNDY1LC02
+NjI4ODcyMTcsNzU1NzU3Niw5MTk0MTg1MzAsLTQxNDk4NDQzMC
+wxMjkyNDgzNzE0LC02ODkzMTU4NjIsLTEzOTY1ODk0OSwxOTc2
+OTk4MzAzLC0xNjA0OTY3NDE1LC0xMjk4NTEyODk3LDEzNzE2Nz
+E3NzEsMTM3MTY3MTc3MSwtMTI1NDUxNzYsMTM3MTY3MTc3MV19
+
 -->
