@@ -94,10 +94,9 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 상속은 코드를 재사용하는 강력한 수단이지만, 항상 최선은 아니다. 잘못 사용하면 오류를 내기 쉬운 코드를 만들게 된다. 상위 클래스와 하위 클래스 모두 같은 개발자가 통제하는 패키지 안에서라면 상속도 안전한 방법이다. 확장할 목적으로 설계되었고 문서화도 잘된 클래스도 마찬가지로 안전하다. 하지만 일반적인 구체 클래스를 패키지 경계를 넘어 다른 패키지의 구체 클래스를 상속하는 일은 위험하다. 
 
-이번 장에서 논하는 문제는 인터페이스 상속(과는 무관하다.
+이번 장에서 논하는 문제는 인터페이스 상속(클래스가 인터페이스를 구현하거나 인터페이스가 다른 인터페이스를 확장)과는 무관하다.
 
-
-메서드 호출과 달리, 계승은 캡슐화 원칙을 위반하다.
+**메서드 호출과 달리 상속은 캡슐화를 깨뜨린다.** 
 왜? 하위 클래스가 동작하려면 상위 클래스에 의존적이다.
 따라서 상위 클래스가 변경되면 하위클래스도 변경된다. 
 
@@ -193,11 +192,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMzI0NzIsODU0NjkxMjg5LC0zMTUzMT
-UwNjIsLTUxNDk1ODMxNCw4MDMyODExMTUsNTYzOTUyMTE1LDgz
-MTI0MTQ2NSwtNjYyODg3MjE3LDc1NTc1NzYsOTE5NDE4NTMwLC
-00MTQ5ODQ0MzAsMTI5MjQ4MzcxNCwtNjg5MzE1ODYyLC0xMzk2
-NTg5NDksMTk3Njk5ODMwMywtMTYwNDk2NzQxNSwtMTI5ODUxMj
-g5NywxMzcxNjcxNzcxLDEzNzE2NzE3NzEsLTEyNTQ1MTc2XX0=
-
+eyJoaXN0b3J5IjpbMTUzOTA3MDc1OSw4NTQ2OTEyODksLTMxNT
+MxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUs
+ODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0MTg1Mz
+AsLTQxNDk4NDQzMCwxMjkyNDgzNzE0LC02ODkzMTU4NjIsLTEz
+OTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3NDE1LC0xMjk4NT
+EyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MSwtMTI1NDUxNzZd
+fQ==
 -->
