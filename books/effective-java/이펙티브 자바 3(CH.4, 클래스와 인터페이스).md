@@ -82,7 +82,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 **클래스가 불변임을 보장하려면 자신을 상속받지 못하게 해야 한다.** 가장 쉬운 방법은 final 클래스로 선언하는 것이지만 더 유연한 방법이 있다. 모든 생성자를 private 혹은 default로 두고 객체 생성을 위한 public static 정적 팩터리 메서드를 제공하는 것이다. 
 
-사실 패키지 바깥 클래스에서 바라본 이 객체는 사실상 final 클래스이다. 왜냐하면 public이나 protected로 제공하는 생성자가 없으니 다른 클래스에서 확장이 불가능하기 때문이다. BigInter와 BigDecimal을 설계할 당신에 불변객체가 사실상 final 이어야 한다는 생각이 널리 퍼지지 않았다. 그래서 두 클래스의 메서드들을 재정의 할 수 있게 설계되었고, 하위 호완성 때문에 지금도 이 문제를 고치지 못했다. 만약 신뢰할 수 없는 클라이언트로 부터 BigInteger나 BigDecimal을 인수로 받는 다면 주의해야 한다. 이 값들을 불변 객체로 가정했는데 알고 보니 불변객체를 확장한 가변 객체일수가 있다. 
+사실 패키지 바깥 클래스에서 바라본 이 객체는 사실상 final 클래스이다. 왜냐하면 public이나 protected로 제공하는 생성자가 없으니 다른 클래스에서 확장이 불가능하기 때문이다. BigInter와 BigDecimal을 설계할 당신에 불변객체가 사실상 final 이어야 한다는 생각이 널리 퍼지지 않았다. 그래서 두 클래스의 메서드들을 재정의 할 수 있게 설계되었고, 하위 호완성 때문에 지금도 이 문제를 고치지 못했다. 만약 신뢰할 수 없는 클라이언트로 부터 BigInteger나 BigDecimal을 인수로 받는 다면 주의해야 한다. 이 값들을 불변 객체로 가정했는데 알고 보니 **불변객체를 확장한 가변 객체일수가 있다.** 다시 말해 신뢰할 수 없는 하위 클래스로 확인되면 가변 객체라고 생각하고 방어적으로 복사를 해서 사용해야 한다. 
 
 
 
@@ -187,11 +187,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjUyNzEwMCwtMzE1MzE1MDYyLC01MT
-Q5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4MzEyNDE0NjUs
-LTY2Mjg4NzIxNyw3NTU3NTc2LDkxOTQxODUzMCwtNDE0OTg0ND
-MwLDEyOTI0ODM3MTQsLTY4OTMxNTg2MiwtMTM5NjU4OTQ5LDE5
-NzY5OTgzMDMsLTE2MDQ5Njc0MTUsLTEyOTg1MTI4OTcsMTM3MT
-Y3MTc3MSwxMzcxNjcxNzcxLC0xMjU0NTE3NiwxMzcxNjcxNzcx
-XX0=
+eyJoaXN0b3J5IjpbLTEzNjg0MDQwMzAsLTMxNTMxNTA2MiwtNT
+E0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUsODMxMjQxNDY1
+LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0MTg1MzAsLTQxNDk4ND
+QzMCwxMjkyNDgzNzE0LC02ODkzMTU4NjIsLTEzOTY1ODk0OSwx
+OTc2OTk4MzAzLC0xNjA0OTY3NDE1LC0xMjk4NTEyODk3LDEzNz
+E2NzE3NzEsMTM3MTY3MTc3MSwtMTI1NDUxNzYsMTM3MTY3MTc3
+MV19
 -->
