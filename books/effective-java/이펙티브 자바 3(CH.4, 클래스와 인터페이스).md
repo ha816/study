@@ -113,9 +113,7 @@ public class ForwardingSet<E> implements Set<E> {
 	...
 }
 ```
-아래 InstrumentedSet 클래스는 앞서 ForwardingSet 클래스를 상속한다. 이 클래스는 Set 인터페이스를 구현한 인스턴스를 인수로 받는 생성자를 제공하고 임의의 Set 크기 계측 기능(addCount)을 추가했다. 앞서 ForwardingSet은 단순히 forwarding하는 기능만 있는것에 반해서 InstrumentedSet는 계측 기능을 추가하였다. 이렇게 다른 Set 인스턴스(ForwardingSet의 Set 인스턴스)에 추가기능을 Wrap했다고 하여 InstrumentedSet 클래스를 래퍼(Wrapper) 클래스라고 한다. 이 클래스를 Decorator 클래스 라고도 하며 데코레이터 패턴이 사용되었다고 한다.
-
-
+아래 InstrumentedSet 클래스는 앞서 ForwardingSet 클래스를 상속한다. 이 클래스는 Set 인터페이스를 구현한 인스턴스를 인수로 받는 생성자를 제공하고 임의의 Set 크기 계측 기능(addCount)을 추가했다. 앞서 ForwardingSet은 단지 forwarding만 하는 반면에 InstrumentedSet는 계측 기능을 추가하였다. 이렇게 다른 Set 인스턴스(ForwardingSet의 Set 인스턴스)에 추가기능을 Wrap했다고 하여 InstrumentedSet 클래스를 래퍼(Wrapper) 클래스 혹은 데코레이터(Decorator) 클래스라 한다. 컴포지션을 이용하며 기능을 추가하는 패턴을 데코레이터 패턴이라고 이해할 수 있다.
 ```
 // Wrapper(Decorator) Class - 상속 대신 컴포지션을 사용; ForwardingSet에 Set 인스턴스로 컴포지션을 구성
 public class InstrumentedSet<E> extends ForwardingSet<E> {
@@ -216,11 +214,11 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxODA3NDI2LDYxNzkwMDgyMSwyNDAzMD
-A5MjEsLTE4MTAzNTExMTUsMTM0NTcxNTIzMywtMTExOTkwNjI5
-MCwtMjE0NjM5NDQwOCw3ODYzMjk5MTgsNjI1NDg3OTI1LC0xNj
-YyNzQyNjU2LDY1NDI4OTc1NSwtNDI3MjIwNTcwLDE1MzkwNzA3
-NTksODU0NjkxMjg5LC0zMTUzMTUwNjIsLTUxNDk1ODMxNCw4MD
-MyODExMTUsNTYzOTUyMTE1LDgzMTI0MTQ2NSwtNjYyODg3MjE3
-XX0=
+eyJoaXN0b3J5IjpbLTE5Mzg5NzgwMTUsNjE3OTAwODIxLDI0MD
+MwMDkyMSwtMTgxMDM1MTExNSwxMzQ1NzE1MjMzLC0xMTE5OTA2
+MjkwLC0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5MjUsLT
+E2NjI3NDI2NTYsNjU0Mjg5NzU1LC00MjcyMjA1NzAsMTUzOTA3
+MDc1OSw4NTQ2OTEyODksLTMxNTMxNTA2MiwtNTE0OTU4MzE0LD
+gwMzI4MTExNSw1NjM5NTIxMTUsODMxMjQxNDY1LC02NjI4ODcy
+MTddfQ==
 -->
