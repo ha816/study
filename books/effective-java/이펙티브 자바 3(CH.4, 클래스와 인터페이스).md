@@ -115,7 +115,6 @@ public class ForwardingSet<E> implements Set<E> {
 ```
 
 아래 InstrumentedSet 클래스는 Set 인터페이스를 구현한 ForwardingSet를 활용하기 때문에 견고하고 아주 유연하다.  구체적으로는 Set 인터페이스를 구현한 생성자를 하나 제공한다. 임의의 Set에 계측 기능(addCount)을 추가한 것이 이 클래스의 핵심이다. 
-
 ```
 // Wrapper Class - 상속 대신 컴포지션을 사용
 public class InstrumentedSet<E> extends ForwardingSet<E> {
@@ -135,6 +134,9 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 	public int getAddCount() { return addCount;}
 }
 ```
+다른 Set 인스턴스를 감싼다(Wrap)이라는 의미에서 InstrumentedSet과 같은 클래스를 래퍼 클래스라 하며, 계측 기능을 추가한다는 뜻에서 데코레이터 패턴이 사용되었다고 한다. 
+
+컴포지션과 
 
 wrapper(decorator) 클래스 : 계승 대신 구성을 사용하는 클래스
 forwarding 클래스 : 재사용 가능한 전달 클래스
@@ -219,11 +221,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkzNzI5NzU1LC0xMTE5OTA2MjkwLC0yMT
-Q2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5MjUsLTE2NjI3NDI2
-NTYsNjU0Mjg5NzU1LC00MjcyMjA1NzAsMTUzOTA3MDc1OSw4NT
-Q2OTEyODksLTMxNTMxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTEx
-NSw1NjM5NTIxMTUsODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1Nz
-U3Niw5MTk0MTg1MzAsLTQxNDk4NDQzMCwxMjkyNDgzNzE0XX0=
+eyJoaXN0b3J5IjpbLTU4Mzg1Nzc3NywtMTExOTkwNjI5MCwtMj
+E0NjM5NDQwOCw3ODYzMjk5MTgsNjI1NDg3OTI1LC0xNjYyNzQy
+NjU2LDY1NDI4OTc1NSwtNDI3MjIwNTcwLDE1MzkwNzA3NTksOD
+U0NjkxMjg5LC0zMTUzMTUwNjIsLTUxNDk1ODMxNCw4MDMyODEx
+MTUsNTYzOTUyMTE1LDgzMTI0MTQ2NSwtNjYyODg3MjE3LDc1NT
+c1NzYsOTE5NDE4NTMwLC00MTQ5ODQ0MzAsMTI5MjQ4MzcxNF19
 
 -->
