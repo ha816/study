@@ -136,9 +136,10 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 전달 메서드(Forwarding Method)의 성능과 데코레이터 클래스의 메모리 사용량 등을 걱정하는 사람이 있지만 실전에서는 큰 문제가 없다. 그냥 써도 된다. 물론 전달 메서드들을 작성하는게 귀찮겠지만, 전달 클래스를 인터페이스당 하나만 만들어 두면 전달 클래스를 아주 손 쉽게 만들 수 있다. 실제 Guava는 모든 컬렉션 인터페이스용 전달 메서드를 전부 구현해뒀다. 
 
-다시 돌아와 그럼 도대체 상속은 언제 사용하는지 말하자면, **상속은 하위클래스가 상위 클래스의 하위 자료형이 정말로 진짜 확실한 경우에 쓰도록 한다.** 다르게 말하면 하위 클래스 B가 클래스 A와 `is-a`관계 일때만 클래스 A를 상속해야 한다. 
+다시 돌아와 그럼 도대체 상속은 언제 사용하는지 말하자면, **상속은 하위클래스가 상위 클래스의 하위 자료형이 정말로 진짜 확실한 경우에 쓰도록 한다.** 다르게 말하면 하위 클래스 B가 클래스 A와 `is-a`관계 일때만 클래스 A를 상속해야 한다. 상속을 사용하기로 결정했다면 마지막으로 자문해야할 질문이 있다. 
 
-컴포지션을 써야할 상황에 상속을 사용하는 것은 내부 구현을 불필요하게 노출하는 것이다. 그 결과 API
+
+컴포지션을 써야할 상황에 상속을 사용하는 것은 내부 구현을 불필요하게 노출하는 것이다. 그 결과 API가 내부 구현에 묶이고 클래스의 성능도 제한된다. 더 심각한 문제는 클라이언트가 노출된 내부에 직접 접근할 수 있다는 점이다. 이는 사용자를 굉장히 혼란스럽게 할 수 있다. 
 
 
 
@@ -220,7 +221,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE0OTUwNzAyLC03MDY2Nzg4NzMsNjE3OT
+eyJoaXN0b3J5IjpbLTU1NzgwNzI5LC03MDY2Nzg4NzMsNjE3OT
 AwODIxLDI0MDMwMDkyMSwtMTgxMDM1MTExNSwxMzQ1NzE1MjMz
 LC0xMTE5OTA2MjkwLC0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2Mj
 U0ODc5MjUsLTE2NjI3NDI2NTYsNjU0Mjg5NzU1LC00MjcyMjA1
