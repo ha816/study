@@ -74,13 +74,13 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 >여러 스레드가 사용해도 절대 훼손되지 않는다. 
 
 >불변 객체 끼리는 내부 데이터를 공유할 수 있다. 
->객체를 만들때ㄸ
-	  
- 불변 클래스의 장점    함 . 에    체는      한  그 다른 불변 객체를의 구성요소로 사용하면 이점이 많다. 예를 들어, BigInteger 클래스는 내부에서 값의 부호(sign)과 크기(magnitude)를 따로 표현한다. 부호에는 int변수, 절대값에는 int 배열을 사용하는 것이다. 한편 negate 메서드는 크기는 같고 부호만 반대인 BigInter를 생성하는데, 배열은 비록 가변이지만 복사하지 않고 원본 인스턴스와 공유해도 된다. 그 결과 새로 만든 BigInter 인스턴스도 원본 인스턴스가 가리키는 내부 배열을 그대로 가리킨다. 
+>객체를 만들때 한  그 다른 불변 객체를의 구성요소로 사용하면 이점이 많다. 예를 들어, BigInteger 클래스는 내부에서 값의 부호(sign)과 크기(magnitude)를 따로 표현한다. 부호에는 int변수, 절대값에는 int 배열을 사용하는 것이다. 한편 negate 메서드는 크기는 같고 부호만 반대인 BigInter를 생성하는데, 배열은 비록 가변이지만 복사하지 않고 원본 인스턴스와 공유해도 된다. 그 결과 새로 만든 BigInter 인스턴스도 원본 인스턴스가 가리키는 내부 배열을 그대로 가리킨다. 
 
 >불변 객체는 단점도 있다.
 >값이 다르면 반드시 독립된도 훌륭하다. 
  6.  .     은 다  객체를 만들어야 한다는 것이다. 값의 가짓수가 많으면 이들을 새로 객체로 만드는데 큰 비용이 든다.점
+
+
 
 ###16. 계승하는 대신 구성하라
 
@@ -183,11 +183,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2Mjg4NzIxNyw3NTU3NTc2LDkxOTQxOD
-UzMCwtNDE0OTg0NDMwLDEyOTI0ODM3MTQsLTY4OTMxNTg2Miwt
-MTM5NjU4OTQ5LDE5NzY5OTgzMDMsLTE2MDQ5Njc0MTUsLTEyOT
-g1MTI4OTcsMTM3MTY3MTc3MSwxMzcxNjcxNzcxLC0xMjU0NTE3
-NiwxMzcxNjcxNzcxLDMwNDEyMzc1MCwxNDc2Mjg3MTg3LDg2OT
-gzMzY3MSwxMzMzOTg5MTU1LC0yMDY4NjUxNDIyLC0xNzcyNDIz
-NzMyXX0=
+eyJoaXN0b3J5IjpbMTg5OTkwNzgzNiwtNjYyODg3MjE3LDc1NT
+c1NzYsOTE5NDE4NTMwLC00MTQ5ODQ0MzAsMTI5MjQ4MzcxNCwt
+Njg5MzE1ODYyLC0xMzk2NTg5NDksMTk3Njk5ODMwMywtMTYwND
+k2NzQxNSwtMTI5ODUxMjg5NywxMzcxNjcxNzcxLDEzNzE2NzE3
+NzEsLTEyNTQ1MTc2LDEzNzE2NzE3NzEsMzA0MTIzNzUwLDE0Nz
+YyODcxODcsODY5ODMzNjcxLDEzMzM5ODkxNTUsLTIwNjg2NTE0
+MjJdfQ==
 -->
