@@ -78,9 +78,12 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 >객체를 만들때 그 다른 불변 객체들을 구성요소로 사용하면 이점이 많다. 값이 바뀌지 않는 불변 객체들로 이루어진 객체라면 그 구조가 아무리 복잡해도 불변식 유지가 쉽다. 좋은 예로, 불변객체는 맵의 키와 집합의 원소로 쓰기 좋다. 맵이나 집합안에 담긴 값이 바뀌면 불변식이 허물어 지는데 불변 객체를 쓰면 그런 걱정이 없다. 
 
 >불변 객체는 단점도 있다.
->값이 다르면 반드시 독립된도 객체를 만들어야 한다는 것이다. 값의 가짓수가 많으면 이들을 새로 객체로 만드는데 큰 비용이 든다. 이 
+>값이 다르면 반드시 독립된도 객체를 만들어야 한다는 것이다. 값의 가짓수가 많으면 이들을 새로 객체로 만드는데 큰 비용이 든다. 
 
-###16. 계승하는 대신 구성하라
+
+
+
+### 16. 계승하는 대신 구성하라
 
 composite than extends 
 이 장에서는 자바의 extends를 말한다.
@@ -181,11 +184,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTM4NTk1NDMsODAzMjgxMTE1LDU2Mz
-k1MjExNSw4MzEyNDE0NjUsLTY2Mjg4NzIxNyw3NTU3NTc2LDkx
-OTQxODUzMCwtNDE0OTg0NDMwLDEyOTI0ODM3MTQsLTY4OTMxNT
-g2MiwtMTM5NjU4OTQ5LDE5NzY5OTgzMDMsLTE2MDQ5Njc0MTUs
-LTEyOTg1MTI4OTcsMTM3MTY3MTc3MSwxMzcxNjcxNzcxLC0xMj
-U0NTE3NiwxMzcxNjcxNzcxLDMwNDEyMzc1MCwxNDc2Mjg3MTg3
-XX0=
+eyJoaXN0b3J5IjpbMzAxODY3NDE1LDgwMzI4MTExNSw1NjM5NT
+IxMTUsODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0
+MTg1MzAsLTQxNDk4NDQzMCwxMjkyNDgzNzE0LC02ODkzMTU4Nj
+IsLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3NDE1LC0x
+Mjk4NTEyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MSwtMTI1ND
+UxNzYsMTM3MTY3MTc3MSwzMDQxMjM3NTAsMTQ3NjI4NzE4N119
+
 -->
