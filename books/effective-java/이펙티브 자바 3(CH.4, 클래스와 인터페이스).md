@@ -90,13 +90,10 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 **생성자는 불변식 설정이 모두 완료된, 초기화가 완벽히 끝난 상태의 객체를 생성해야 한다.**  확실한 이유가 없다면 생성자와 정적 팩터리외에는 그 어떤 초기화 메서드도 public으로 제공해서 안된다. 객체를 재활용하려는 목적으로 상태를 다시 초기화하는 메서드도 안된다. 복잡성만 커지고 성능이점은 거의 없다. 
 
+## Item18. 상속보다는 컴포지션을 사용하라
 
+상속은 코드를 재사용하는 강력한 수단이지만, 항상 최선은 아니다. 잘못 사용하면 오류를 내기 쉬운 코드를 만들게 된다. 
 
-
-### 16. 계승하는 대신 구성하라
-
-composite than extends 
-이 장에서는 자바의 extends를 말한다.
 
 메서드 호출과 달리, 계승은 캡슐화 원칙을 위반하다.
 왜? 하위 클래스가 동작하려면 상위 클래스에 의존적이다.
@@ -194,11 +191,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NzA4MzExNyw4NTQ2OTEyODksLTMxNT
-MxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUs
-ODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0MTg1Mz
-AsLTQxNDk4NDQzMCwxMjkyNDgzNzE0LC02ODkzMTU4NjIsLTEz
-OTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3NDE1LC0xMjk4NT
-EyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MSwtMTI1NDUxNzZd
-fQ==
+eyJoaXN0b3J5IjpbMzk4ODI0ODk4LDg1NDY5MTI4OSwtMzE1Mz
+E1MDYyLC01MTQ5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4
+MzEyNDE0NjUsLTY2Mjg4NzIxNyw3NTU3NTc2LDkxOTQxODUzMC
+wtNDE0OTg0NDMwLDEyOTI0ODM3MTQsLTY4OTMxNTg2MiwtMTM5
+NjU4OTQ5LDE5NzY5OTgzMDMsLTE2MDQ5Njc0MTUsLTEyOTg1MT
+I4OTcsMTM3MTY3MTc3MSwxMzcxNjcxNzcxLC0xMjU0NTE3Nl19
+
 -->
