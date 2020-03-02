@@ -82,7 +82,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 **클래스가 불변임을 보장하려면 자신을 상속받지 못하게 해야 한다.** 가장 쉬운 방법은 final 클래스로 선언하는 것이지만 더 유연한 방법이 있다. 모든 생성자를 private 혹은 default로 두고 객체 생성을 위한 public static 정적 팩터리 메서드를 제공하는 것이다. 
 
-
+사실 패키지 바깥 클래스에서 바라본 이 객체는 사실상 final 클래스이다. 왜냐하면 public이나 protected로 제공하는 생성자가 없으니 다른 클래스에서 확장이 불가능하기 때문이다. BigInter와 BigDecimal을 설계할 당신에 불변객체가 사실상 final 이어야 한다는 생각이 널리 퍼지ㅣㅈ ㅇ낳았
 
 
 
@@ -187,11 +187,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNTMxNTA2MiwtNTE0OTU4MzE0LDgwMz
-I4MTExNSw1NjM5NTIxMTUsODMxMjQxNDY1LC02NjI4ODcyMTcs
-NzU1NzU3Niw5MTk0MTg1MzAsLTQxNDk4NDQzMCwxMjkyNDgzNz
-E0LC02ODkzMTU4NjIsLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0x
-NjA0OTY3NDE1LC0xMjk4NTEyODk3LDEzNzE2NzE3NzEsMTM3MT
-Y3MTc3MSwtMTI1NDUxNzYsMTM3MTY3MTc3MSwzMDQxMjM3NTBd
-fQ==
+eyJoaXN0b3J5IjpbMTU0OTc2MDA4MSwtMzE1MzE1MDYyLC01MT
+Q5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4MzEyNDE0NjUs
+LTY2Mjg4NzIxNyw3NTU3NTc2LDkxOTQxODUzMCwtNDE0OTg0ND
+MwLDEyOTI0ODM3MTQsLTY4OTMxNTg2MiwtMTM5NjU4OTQ5LDE5
+NzY5OTgzMDMsLTE2MDQ5Njc0MTUsLTEyOTg1MTI4OTcsMTM3MT
+Y3MTc3MSwxMzcxNjcxNzcxLC0xMjU0NTE3NiwxMzcxNjcxNzcx
+XX0=
 -->
