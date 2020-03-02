@@ -98,8 +98,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 **메서드 호출과 달리 상속은 캡슐화를 깨뜨린다.**  다르게 말하면, 상위 클래스가 어떻게 구현되었느냐에 따라 하위 클래스의 동작에 이상이 발생할 수 있다. 상위 클래스의 내부 구현이 달라지면 그 여파로 아무것도 수정하지 않은 하위 클래스가 오동작할 수 있다는 말이다. 
 
 다행이 문제를 해결할 좋은 묘안이 있다. 
-기존 클래스를 확장하는 대신, 새로운 클래스를 만들고 private 필드로 기존 클래스의 인스턴스를 참조하게 하자. 새로운 클래스에 기존 클래스 객체를 참조하는 private필드를 하나 두는것!
-이러한 설계 기법을 composite 기법이라고 한다. 
+기존 클래스를 확장하는 대신, 새로운 클래스를 만들고 private 필드로 기존 클래스의 인스턴스를 참조하게 하자. 기존 클래스가 새로운 클래스의 구성요소로 쓰인다는 뜻에서 이러한 설계를 컴포지션(Composition; 구성)이라 한다.
 
 기존 클래스가 새 클래스의 일부(component)가 되기 때문이다. 
 새로운 클래스에 포함된 각 메서드는 기존 클래스에서 필요한 것을 호출해서 결과를 활용한다. 이런 구현 기법을 전달(forwarding) 전달 기법을 사용해 구현한 메서드를 전달 메서드라고 부른다.  
@@ -187,11 +186,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjQ2OTYyNTYsMTUzOTA3MDc1OSw4NT
-Q2OTEyODksLTMxNTMxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTEx
-NSw1NjM5NTIxMTUsODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1Nz
-U3Niw5MTk0MTg1MzAsLTQxNDk4NDQzMCwxMjkyNDgzNzE0LC02
-ODkzMTU4NjIsLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OT
-Y3NDE1LC0xMjk4NTEyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3
-MV19
+eyJoaXN0b3J5IjpbLTQyNzIyMDU3MCwxNTM5MDcwNzU5LDg1ND
+Y5MTI4OSwtMzE1MzE1MDYyLC01MTQ5NTgzMTQsODAzMjgxMTE1
+LDU2Mzk1MjExNSw4MzEyNDE0NjUsLTY2Mjg4NzIxNyw3NTU3NT
+c2LDkxOTQxODUzMCwtNDE0OTg0NDMwLDEyOTI0ODM3MTQsLTY4
+OTMxNTg2MiwtMTM5NjU4OTQ5LDE5NzY5OTgzMDMsLTE2MDQ5Nj
+c0MTUsLTEyOTg1MTI4OTcsMTM3MTY3MTc3MSwxMzcxNjcxNzcx
+XX0=
 -->
