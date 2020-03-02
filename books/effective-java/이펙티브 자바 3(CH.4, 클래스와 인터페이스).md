@@ -80,6 +80,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 >불변 객체는 단점도 있다.
 >값이 다르면 반드시 독립된도 객체를 만들어야 한다는 것이다. 값의 가짓수가 많으면 이들을 새로 객체로 만드는데 큰 비용이 든다. 
 
+**클래스가 불변임을 보장하려면 자신을 상속받지 못하게 해야 한다.** 가장 쉬운 방법은 final 클래스로 선언하는 것이지만 더 유연한 방법이 있다. 
 
 
 
@@ -184,11 +185,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxODY3NDE1LDgwMzI4MTExNSw1NjM5NT
-IxMTUsODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0
-MTg1MzAsLTQxNDk4NDQzMCwxMjkyNDgzNzE0LC02ODkzMTU4Nj
-IsLTEzOTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3NDE1LC0x
-Mjk4NTEyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MSwtMTI1ND
-UxNzYsMTM3MTY3MTc3MSwzMDQxMjM3NTAsMTQ3NjI4NzE4N119
-
+eyJoaXN0b3J5IjpbLTUxNDk1ODMxNCw4MDMyODExMTUsNTYzOT
+UyMTE1LDgzMTI0MTQ2NSwtNjYyODg3MjE3LDc1NTc1NzYsOTE5
+NDE4NTMwLC00MTQ5ODQ0MzAsMTI5MjQ4MzcxNCwtNjg5MzE1OD
+YyLC0xMzk2NTg5NDksMTk3Njk5ODMwMywtMTYwNDk2NzQxNSwt
+MTI5ODUxMjg5NywxMzcxNjcxNzcxLDEzNzE2NzE3NzEsLTEyNT
+Q1MTc2LDEzNzE2NzE3NzEsMzA0MTIzNzUwLDE0NzYyODcxODdd
+fQ==
 -->
