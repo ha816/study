@@ -134,7 +134,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 데코레이터 클래스는 단점이 거의 없다. 래퍼 클래스가 콜백 프레임워크와는 어울리지 않는다는 점만 빼면 말이다. 콜백 프레임 워크에서는 자기 자신의 참조를 다른 객체에 넘겨서 다음 호출때 사용하도록 한다. 내부 객체는 자신을 감싸고 있는 래퍼의 존재를 모르니 대신 자신의 참조인 내부 객체를 넘기고, 콜백때는 래퍼가 아닌 이 내부객체를 호출하게 된다. 이를 SELF 문제라고 한다. 
 
-
+전달 메서드(Forwarding Method)의 성능과 데코레이터 클래스의 메모리 사용량 등을 걱정하는 사람이 있지만 실전에서는 큰 문제가 없다. 그냥 써도 된다. 물론 전달 메서드들을 작성하는게 귀찮겠지만, 전달 클래스를 인터페이스당 하나만 만들어 
 
 
 다시 돌아와 그럼 도대체 상속은 언제 사용하는지 말하자면, **상속은 하위클래스가 상위 클래스의 하위 자료형이 정말로 진짜 확실한 경우에 쓰도록 한다.** 다르게 말하면 하위 클래스 B가 클래스 A와 `is-a`관계 일때만 클래스 A를 상속해야 한다. 
@@ -219,11 +219,11 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDk1MjY5MjQsLTcwNjY3ODg3Myw2MT
-c5MDA4MjEsMjQwMzAwOTIxLC0xODEwMzUxMTE1LDEzNDU3MTUy
-MzMsLTExMTk5MDYyOTAsLTIxNDYzOTQ0MDgsNzg2MzI5OTE4LD
-YyNTQ4NzkyNSwtMTY2Mjc0MjY1Niw2NTQyODk3NTUsLTQyNzIy
-MDU3MCwxNTM5MDcwNzU5LDg1NDY5MTI4OSwtMzE1MzE1MDYyLC
-01MTQ5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4MzEyNDE0
-NjVdfQ==
+eyJoaXN0b3J5IjpbNzQ2NDQ4MDcwLC03MDY2Nzg4NzMsNjE3OT
+AwODIxLDI0MDMwMDkyMSwtMTgxMDM1MTExNSwxMzQ1NzE1MjMz
+LC0xMTE5OTA2MjkwLC0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2Mj
+U0ODc5MjUsLTE2NjI3NDI2NTYsNjU0Mjg5NzU1LC00MjcyMjA1
+NzAsMTUzOTA3MDc1OSw4NTQ2OTEyODksLTMxNTMxNTA2MiwtNT
+E0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUsODMxMjQxNDY1
+XX0=
 -->
