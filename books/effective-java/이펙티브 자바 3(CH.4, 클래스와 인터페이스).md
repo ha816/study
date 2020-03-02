@@ -146,7 +146,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 컴포지션을 써야할 상황에 상속을 사용하는 것은 내부 구현을 불필요하게 노출하는 것이다. 그 결과 API가 내부 구현에 묶이고 클래스의 성능도 제한된다. 더 심각한 문제는 클라이언트가 노출된 내부에 직접 접근할 수 있다는 점이다. 이는 사용자를 굉장히 혼란스럽게 할 수 있다. 
 
 >핵심 정리
->상속은 강력하지만 
+>상속은 강력하지만 정보은닉(캡슐화)를 해친다는 문제가 있다. 상속은 반드시 상위 클래스와 하위 클래스가 순수한 is-a 관계일때만 써야한다. is-a관계라고 하더라도 안심할 수 없는 게, 하위 클래스의 패키지가 상위 클래스와 다르고, 상위 클래스가 확장을 고려해 설계되지 않았다면 여전히 문제가 될 수 있다.
 
 
 
@@ -228,11 +228,11 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNjMwMjkxMiwtNzA2Njc4ODczLDYxNz
-kwMDgyMSwyNDAzMDA5MjEsLTE4MTAzNTExMTUsMTM0NTcxNTIz
-MywtMTExOTkwNjI5MCwtMjE0NjM5NDQwOCw3ODYzMjk5MTgsNj
-I1NDg3OTI1LC0xNjYyNzQyNjU2LDY1NDI4OTc1NSwtNDI3MjIw
-NTcwLDE1MzkwNzA3NTksODU0NjkxMjg5LC0zMTUzMTUwNjIsLT
-UxNDk1ODMxNCw4MDMyODExMTUsNTYzOTUyMTE1LDgzMTI0MTQ2
-NV19
+eyJoaXN0b3J5IjpbLTM3NjIxNjg2NywxMTE2MzAyOTEyLC03MD
+Y2Nzg4NzMsNjE3OTAwODIxLDI0MDMwMDkyMSwtMTgxMDM1MTEx
+NSwxMzQ1NzE1MjMzLC0xMTE5OTA2MjkwLC0yMTQ2Mzk0NDA4LD
+c4NjMyOTkxOCw2MjU0ODc5MjUsLTE2NjI3NDI2NTYsNjU0Mjg5
+NzU1LC00MjcyMjA1NzAsMTUzOTA3MDc1OSw4NTQ2OTEyODksLT
+MxNTMxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIx
+MTVdfQ==
 -->
