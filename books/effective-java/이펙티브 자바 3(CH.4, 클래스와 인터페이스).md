@@ -86,7 +86,9 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 **클래스는 꼭 필요한 경우가 아니면 불변이어야 한다.** 불변 클래스는 장점이 많으며, 단점이라곤 특정 상황에서 잠재적 성능 저하 뿐이다. 성능 때문에 어쩔 수 없다면 불변 클래스와 쌍을 이루는 가변 동반 클래스를 public 클래스로 제공하도록 하자. 
 
-한편 모든 클래스를 불변으로 만들 수는 없다. 
+한편 모든 클래스를 불변으로 만들 수는 없다. 대신 불변으로 만들 수 없는 클래스라도 변경할 수 있는 부분을 최소한으로 줄이자. 꼭 변경해야할 필드를 뺀 나머지 모두를 final로 선언하자. 다른 합당한 이유가 없다면 모든 필드는 private final이어야 한다. 
+
+생성자는 불변식 설정이 모두 완료된, 초기
 
 
 ### 16. 계승하는 대신 구성하라
@@ -190,11 +192,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NDMzMDUyNSw4NTQ2OTEyODksLTMxNT
-MxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUs
-ODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0MTg1Mz
-AsLTQxNDk4NDQzMCwxMjkyNDgzNzE0LC02ODkzMTU4NjIsLTEz
-OTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3NDE1LC0xMjk4NT
-EyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MSwtMTI1NDUxNzZd
-fQ==
+eyJoaXN0b3J5IjpbLTk5NjM3NDQ5LDg1NDY5MTI4OSwtMzE1Mz
+E1MDYyLC01MTQ5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4
+MzEyNDE0NjUsLTY2Mjg4NzIxNyw3NTU3NTc2LDkxOTQxODUzMC
+wtNDE0OTg0NDMwLDEyOTI0ODM3MTQsLTY4OTMxNTg2MiwtMTM5
+NjU4OTQ5LDE5NzY5OTgzMDMsLTE2MDQ5Njc0MTUsLTEyOTg1MT
+I4OTcsMTM3MTY3MTc3MSwxMzcxNjcxNzcxLC0xMjU0NTE3Nl19
+
 -->
