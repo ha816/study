@@ -114,7 +114,7 @@ public class ForwardingSet<E> implements Set<E> {
 }
 ```
 
-이와 유사하게 Wrapper 클래스가 있는데, 아래 예시를 보자. 
+아래 InstrumentedSet 클래스는 Set 인터페이스를 구현한 ForwardingSet를 활용하기 때문에 견고하고 아주 유연하다.  구체적으로는 Set 인터페잇
 
 ```
 // Wrapper Class - 상속 대신 컴포지션을 사용
@@ -219,7 +219,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0NzU4NDQ1LC0xMTE5OTA2MjkwLC0yMT
+eyJoaXN0b3J5IjpbLTgxODc2MzA4LC0xMTE5OTA2MjkwLC0yMT
 Q2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5MjUsLTE2NjI3NDI2
 NTYsNjU0Mjg5NzU1LC00MjcyMjA1NzAsMTUzOTA3MDc1OSw4NT
 Q2OTEyODksLTMxNTMxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTEx
