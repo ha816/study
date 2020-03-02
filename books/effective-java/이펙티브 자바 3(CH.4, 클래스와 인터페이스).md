@@ -114,7 +114,8 @@ public class ForwardingSet<E> implements Set<E> {
 }
 ```
 
-아래 InstrumentedSet 클래스는 Set 인터페이스를 구현한 ForwardingSet를 상속 한다. 이 클래스는 Set 인터페이스를 구현한 인스턴스를 인수로 받는 생성자를 제공하고 임의의 Set 크기 계측 기능(addCount)을 추가한 것이 이 클래스의 핵심이다. 
+아래 InstrumentedSet 클래스는 Set 인터페이스를 구현한 ForwardingSet를 상속 한다. 이 클래스는 Set 인터페이스를 구현한 인스턴스를 인수로 받는 생성자를 제공하고 임의의 Set 크기 계측 기능(addCount)을 추가했다. 다른 Set 인스턴스(ForwardingSet)을 감싼다(Wrap)이라는 의미에서 InstrumentedSet과 같은 클래스를 래퍼 클래스라 하며, 계측 기능을 추가한다는 뜻에서 데코레이터 패턴이 사용되었다고 한다. 
+
 ```
 // Wrapper(Decorator) Class - 상속 대신 컴포지션을 사용
 public class InstrumentedSet<E> extends ForwardingSet<E> {
@@ -132,7 +133,6 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 	public int getAddCount() { return addCount;}
 }
 ```
-다른 Set 인스턴스(ForwardingSet)을 감싼다(Wrap)이라는 의미에서 InstrumentedSet과 같은 클래스를 래퍼 클래스라 하며, 계측 기능을 추가한다는 뜻에서 데코레이터 패턴이 사용되었다고 한다. 
 
 컴포지션과 전달의 조합은 넓은 의미로 위임(delegation)이라 부른다. 단 엄밀히 따지면, 래퍼 객체가 내부 객체에 자기 자신의 참조를 넘기는 경우만 위임에 해당한다. 
 
@@ -216,11 +216,11 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1OTA2MjQ2NywtMTgxMDM1MTExNSwxMz
-Q1NzE1MjMzLC0xMTE5OTA2MjkwLC0yMTQ2Mzk0NDA4LDc4NjMy
-OTkxOCw2MjU0ODc5MjUsLTE2NjI3NDI2NTYsNjU0Mjg5NzU1LC
-00MjcyMjA1NzAsMTUzOTA3MDc1OSw4NTQ2OTEyODksLTMxNTMx
-NTA2MiwtNTE0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUsOD
-MxMjQxNDY1LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0MTg1MzBd
-fQ==
+eyJoaXN0b3J5IjpbMjQwMzAwOTIxLC0xODEwMzUxMTE1LDEzND
+U3MTUyMzMsLTExMTk5MDYyOTAsLTIxNDYzOTQ0MDgsNzg2MzI5
+OTE4LDYyNTQ4NzkyNSwtMTY2Mjc0MjY1Niw2NTQyODk3NTUsLT
+QyNzIyMDU3MCwxNTM5MDcwNzU5LDg1NDY5MTI4OSwtMzE1MzE1
+MDYyLC01MTQ5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4Mz
+EyNDE0NjUsLTY2Mjg4NzIxNyw3NTU3NTc2LDkxOTQxODUzMF19
+
 -->
