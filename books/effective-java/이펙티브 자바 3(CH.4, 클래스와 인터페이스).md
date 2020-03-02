@@ -141,7 +141,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 wrapper(decorator) 클래스 : 계승 대신 구성을 사용하는 클래스
 forwarding 클래스 : 재사용 가능한 전달 클래스
 
-다시 돌아와 상속에 대해 강조하자면, 상속은 하위클래스가 상위 클래스의 하위 자료형이 확실한 경우에 쓰도록 합시다. is - a 관계
+다시 돌아와 상속은 언제 적절히 사용하는게 좋은지 이야기 하자면, **상속은 하위클래스가 상위 클래스의 하위 자료형이 정말로 진짜 확실한 경우에 쓰도록 한다.** 다르게 말하면 하위 클래스 B가 클래스 A와 `is-a`관계 일때만 클래스 A를 상속해야 한다. 
 
 ###17. 계승을 위한 설계와 문서를 갖추거나, 그럴수 없다면 계승을 금지해라
 
@@ -221,7 +221,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MDg0ODE4NCwtMTExOTkwNjI5MCwtMj
+eyJoaXN0b3J5IjpbLTI4NDk2MzgxMiwtMTExOTkwNjI5MCwtMj
 E0NjM5NDQwOCw3ODYzMjk5MTgsNjI1NDg3OTI1LC0xNjYyNzQy
 NjU2LDY1NDI4OTc1NSwtNDI3MjIwNTcwLDE1MzkwNzA3NTksOD
 U0NjkxMjg5LC0zMTUzMTUwNjIsLTUxNDk1ODMxNCw4MDMyODEx
