@@ -114,8 +114,7 @@ public class ForwardingSet<E> implements Set<E> {
 }
 ```
 
-
-아래 InstrumentedSet 클래스는 Set 인터페이스를 구현한 ForwardingSet를 활용하기 때문에 견고하고 아주 유연하다.  구체적으로는 Set 인터페이스를 구현한 생성자를 하나 제공한다. 임의의 Set에 계측 기능(addCount)을 추가한 것이 이 클래스의 핵심이다. 
+아래 InstrumentedSet 클래스는 Set 인터페이스를 구현한 ForwardingSet를 상속 한다. 이 클래스는 Set 인터페이스를 구현한 인스턴스를 인수로 받는 생성자를 제공하고 임의의 Set 크기 계측 기능(addCount)을 추가한 것이 이 클래스의 핵심이다. 
 ```
 // Wrapper(Decorator) Class - 상속 대신 컴포지션을 사용
 public class InstrumentedSet<E> extends ForwardingSet<E> {
@@ -217,7 +216,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMTAwNzI0OCwtMTgxMDM1MTExNSwxMz
+eyJoaXN0b3J5IjpbMTU1OTA2MjQ2NywtMTgxMDM1MTExNSwxMz
 Q1NzE1MjMzLC0xMTE5OTA2MjkwLC0yMTQ2Mzk0NDA4LDc4NjMy
 OTkxOCw2MjU0ODc5MjUsLTE2NjI3NDI2NTYsNjU0Mjg5NzU1LC
 00MjcyMjA1NzAsMTUzOTA3MDc1OSw4NTQ2OTEyODksLTMxNTMx
