@@ -73,9 +73,9 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 >불변 객체는 근본적으로 스레드 안전하여 동기화할 필요 없다.
 >여러 스레드가 사용해도 절대 훼손되지 않는다. 
 
->불변 객체는 자유롭게 공유할 수 있음은 물론, 불변 객체 끼리는 내부 데이터르 공유
+>불변 객체는 자유롭게 공유할 수 있음은 물론, 불변 객체 끼리는 내부 데이터를 공유할 수 있다. 예를 들어, BigInteger 클래스는 내부에서 값의 부호(sign)과 크기(magnitude)를 따로 표현한다. 부호에는 int변수, 절대값에는 int 배열을 사용하는 것이다. 한편 negate 메서드는 크기는 같고 부호만 반대인 BigInter를 생성하는데, 배열은 비록 가변이지만 복사하지 않고 원본 인스턴스와 공유해도 된다. 그 결과 새로 만든 BigInter 인스턴스도 원본 인스턴스가 가리키는 내부 배열을 그대로 가리킨다. 
 
->객체를 만들때 그 다른 불변 객체들을 구성요소로 사용하면 이점이 많다. 예를 들어, BigInteger 클래스는 내부에서 값의 부호(sign)과 크기(magnitude)를 따로 표현한다. 부호에는 int변수, 절대값에는 int 배열을 사용하는 것이다. 한편 negate 메서드는 크기는 같고 부호만 반대인 BigInter를 생성하는데, 배열은 비록 가변이지만 복사하지 않고 원본 인스턴스와 공유해도 된다. 그 결과 새로 만든 BigInter 인스턴스도 원본 인스턴스가 가리키는 내부 배열을 그대로 가리킨다. 
+>객체를 만들때 그 다른 불변 객체들을 구성요소로 사용하면 이점이 많다. 값이 바뀌지 않는 불변 객체들로 이루어진 객체라면 그 구조가 아무리 복잡해도 불변식 유지가 쉽다. 좋은 예로, 
 
 >불변 객체는 단점도 있다.
 >값이 다르면 반드시 독립된도 객체를 만들어야 한다는 것이다. 값의 가짓수가 많으면 이들을 새로 객체로 만드는데 큰 비용이 든다.
@@ -181,7 +181,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyNzkzMTc0LDgzMTI0MTQ2NSwtNjYyOD
+eyJoaXN0b3J5IjpbNTYzOTUyMTE1LDgzMTI0MTQ2NSwtNjYyOD
 g3MjE3LDc1NTc1NzYsOTE5NDE4NTMwLC00MTQ5ODQ0MzAsMTI5
 MjQ4MzcxNCwtNjg5MzE1ODYyLC0xMzk2NTg5NDksMTk3Njk5OD
 MwMywtMTYwNDk2NzQxNSwtMTI5ODUxMjg5NywxMzcxNjcxNzcx
