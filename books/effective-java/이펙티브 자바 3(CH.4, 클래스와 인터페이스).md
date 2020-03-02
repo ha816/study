@@ -92,7 +92,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 ## Item18. 상속보다는 컴포지션을 사용하라
 
-상속은 코드를 재사용하는 강력한 수단이지만, 항상 최선은 아니다. 잘못 사용하면 오류를 내기 쉬운 코드를 만들게 된다. 
+상속은 코드를 재사용하는 강력한 수단이지만, 항상 최선은 아니다. 잘못 사용하면 오류를 내기 쉬운 코드를 만들게 된다. 상ㅅ
 
 
 메서드 호출과 달리, 계승은 캡슐화 원칙을 위반하다.
@@ -191,11 +191,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk4ODI0ODk4LDg1NDY5MTI4OSwtMzE1Mz
-E1MDYyLC01MTQ5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4
-MzEyNDE0NjUsLTY2Mjg4NzIxNyw3NTU3NTc2LDkxOTQxODUzMC
-wtNDE0OTg0NDMwLDEyOTI0ODM3MTQsLTY4OTMxNTg2MiwtMTM5
-NjU4OTQ5LDE5NzY5OTgzMDMsLTE2MDQ5Njc0MTUsLTEyOTg1MT
-I4OTcsMTM3MTY3MTc3MSwxMzcxNjcxNzcxLC0xMjU0NTE3Nl19
-
+eyJoaXN0b3J5IjpbLTExNjM0MDg1NDYsODU0NjkxMjg5LC0zMT
+UzMTUwNjIsLTUxNDk1ODMxNCw4MDMyODExMTUsNTYzOTUyMTE1
+LDgzMTI0MTQ2NSwtNjYyODg3MjE3LDc1NTc1NzYsOTE5NDE4NT
+MwLC00MTQ5ODQ0MzAsMTI5MjQ4MzcxNCwtNjg5MzE1ODYyLC0x
+Mzk2NTg5NDksMTk3Njk5ODMwMywtMTYwNDk2NzQxNSwtMTI5OD
+UxMjg5NywxMzcxNjcxNzcxLDEzNzE2NzE3NzEsLTEyNTQ1MTc2
+XX0=
 -->
