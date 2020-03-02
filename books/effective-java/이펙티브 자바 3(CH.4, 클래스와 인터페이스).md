@@ -132,7 +132,12 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 }
 ```
 
-다시 돌아와 상속은 언제 적절히 사용하는게 좋은지 이야기 하자면, **상속은 하위클래스가 상위 클래스의 하위 자료형이 정말로 진짜 확실한 경우에 쓰도록 한다.** 다르게 말하면 하위 클래스 B가 클래스 A와 `is-a`관계 일때만 클래스 A를 상속해야 한다. 
+데코레이터 클래스는 단점이 거의 없다. 래퍼 클래스가 콜백 프레임워크와는 어울리지 않ㄴ
+
+
+다시 돌아와 그럼 도대체 상속은 언제 사용하는지 말하자면, **상속은 하위클래스가 상위 클래스의 하위 자료형이 정말로 진짜 확실한 경우에 쓰도록 한다.** 다르게 말하면 하위 클래스 B가 클래스 A와 `is-a`관계 일때만 클래스 A를 상속해야 한다. 
+
+
 
 ###17. 계승을 위한 설계와 문서를 갖추거나, 그럴수 없다면 계승을 금지해라
 
@@ -212,11 +217,11 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNjY3ODg3Myw2MTc5MDA4MjEsMjQwMz
-AwOTIxLC0xODEwMzUxMTE1LDEzNDU3MTUyMzMsLTExMTk5MDYy
-OTAsLTIxNDYzOTQ0MDgsNzg2MzI5OTE4LDYyNTQ4NzkyNSwtMT
-Y2Mjc0MjY1Niw2NTQyODk3NTUsLTQyNzIyMDU3MCwxNTM5MDcw
-NzU5LDg1NDY5MTI4OSwtMzE1MzE1MDYyLC01MTQ5NTgzMTQsOD
-AzMjgxMTE1LDU2Mzk1MjExNSw4MzEyNDE0NjUsLTY2Mjg4NzIx
-N119
+eyJoaXN0b3J5IjpbLTEyNzQ5MDkzMzIsLTcwNjY3ODg3Myw2MT
+c5MDA4MjEsMjQwMzAwOTIxLC0xODEwMzUxMTE1LDEzNDU3MTUy
+MzMsLTExMTk5MDYyOTAsLTIxNDYzOTQ0MDgsNzg2MzI5OTE4LD
+YyNTQ4NzkyNSwtMTY2Mjc0MjY1Niw2NTQyODk3NTUsLTQyNzIy
+MDU3MCwxNTM5MDcwNzU5LDg1NDY5MTI4OSwtMzE1MzE1MDYyLC
+01MTQ5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4MzEyNDE0
+NjVdfQ==
 -->
