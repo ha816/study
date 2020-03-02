@@ -117,9 +117,9 @@ public class ForwardingSet<E> implements Set<E> {
 ```
 // Wrapper(Decorator) Class - 상속 대신 컴포지션을 사용; ForwardingSet에 Set 인스턴스로 컴포지션을 구성
 public class InstrumentedSet<E> extends ForwardingSet<E> {
+	//	private final Set<E> s; -- ForwardingSet에 있다. 
 	private int addCount = 0;
 	public InstrumentedSet(Set<E> s) {super(s);}
-
 	@Override public boolean add(E e){
 		addCount++;
 		return super.add(e);
@@ -131,8 +131,6 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 	public int getAddCount() { return addCount;}
 }
 ```
-
-컴포지션과 전달의 조합은 넓은 의미로 위임(delegation)이라 부른다. 단 엄밀히 따지면, 래퍼 객체가 내부 객체에 자기 자신의 참조를 넘기는 경우만 위임에 해당한다. 
 
 다시 돌아와 상속은 언제 적절히 사용하는게 좋은지 이야기 하자면, **상속은 하위클래스가 상위 클래스의 하위 자료형이 정말로 진짜 확실한 경우에 쓰도록 한다.** 다르게 말하면 하위 클래스 B가 클래스 A와 `is-a`관계 일때만 클래스 A를 상속해야 한다. 
 
@@ -214,11 +212,11 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzg5NzgwMTUsNjE3OTAwODIxLDI0MD
-MwMDkyMSwtMTgxMDM1MTExNSwxMzQ1NzE1MjMzLC0xMTE5OTA2
-MjkwLC0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5MjUsLT
-E2NjI3NDI2NTYsNjU0Mjg5NzU1LC00MjcyMjA1NzAsMTUzOTA3
-MDc1OSw4NTQ2OTEyODksLTMxNTMxNTA2MiwtNTE0OTU4MzE0LD
-gwMzI4MTExNSw1NjM5NTIxMTUsODMxMjQxNDY1LC02NjI4ODcy
-MTddfQ==
+eyJoaXN0b3J5IjpbLTcwNjY3ODg3Myw2MTc5MDA4MjEsMjQwMz
+AwOTIxLC0xODEwMzUxMTE1LDEzNDU3MTUyMzMsLTExMTk5MDYy
+OTAsLTIxNDYzOTQ0MDgsNzg2MzI5OTE4LDYyNTQ4NzkyNSwtMT
+Y2Mjc0MjY1Niw2NTQyODk3NTUsLTQyNzIyMDU3MCwxNTM5MDcw
+NzU5LDg1NDY5MTI4OSwtMzE1MzE1MDYyLC01MTQ5NTgzMTQsOD
+AzMjgxMTE1LDU2Mzk1MjExNSw4MzEyNDE0NjUsLTY2Mjg4NzIx
+N119
 -->
