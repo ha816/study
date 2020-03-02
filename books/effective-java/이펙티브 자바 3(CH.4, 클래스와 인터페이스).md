@@ -99,7 +99,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 다행이 문제를 해결할 좋은 묘안이 있다. 기존 클래스를 확장하는 대신, 새로운 클래스를 만들고 private 필드로 기존 클래스의 인스턴스를 참조하게 하자. **기존 클래스가 새로운 클래스의 구성요소로 쓰인다는 뜻에서 이를 컴포지션(Composition; 구성)이라 한다.** 새로운 클래스에 메서드는 기존 클래스에 대응하는 메서드를 호출해서 그 결과를 반환한다. 이런 방식을 전달(forwarding)이라하며 새 클래스의 메서드들을  전달 메서드(forwarding method)라 부른다. 그 결과 새로운 클래스는 기존 클래스의 내부 구현방식에서 벗어나며, 심지어 기존 클래스에 새로운 메서드가 추가되더라도 전혀 영향이 없다. 
 ```
-// ForwardingSet
+// Forwaringding Class - 재사용할 수 있는 전달 클래스
 public class ForwardingSet<E> implements Set<E> {
 	private final Set<E> s;
 	public ForwardingSet(Set<E> s) {this.s = s;}
@@ -132,11 +132,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 		addCount += c.size();
 		return super.addAll(e);
 	}
-
-	
-
-	
-	...
+	public int getAddCount() { return addCount;}
 }
 ```
 
@@ -223,7 +219,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgzNjAzMzUzLC0xMTE5OTA2MjkwLC0yMT
+eyJoaXN0b3J5IjpbNDU0NzU4NDQ1LC0xMTE5OTA2MjkwLC0yMT
 Q2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5MjUsLTE2NjI3NDI2
 NTYsNjU0Mjg5NzU1LC00MjcyMjA1NzAsMTUzOTA3MDc1OSw4NT
 Q2OTEyODksLTMxNTMxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTEx
