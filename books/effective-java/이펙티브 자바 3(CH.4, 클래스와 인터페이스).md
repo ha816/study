@@ -136,10 +136,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 ```
 다른 Set 인스턴스를 감싼다(Wrap)이라는 의미에서 InstrumentedSet과 같은 클래스를 래퍼 클래스라 하며, 계측 기능을 추가한다는 뜻에서 데코레이터 패턴이 사용되었다고 한다. 
 
-컴포지션과 전달의 조합은 넓은 의미로 위힘(delegation)이라 부른다. 단 엄밀히 따지면, 래퍼 객체가 내부 객체에 자기 자신의 참조를 넘기는 경우만 위임에 해당한다. 
-
-wrapper(decorator) 클래스 : 계승 대신 구성을 사용하는 클래스
-forwarding 클래스 : 재사용 가능한 전달 클래스
+컴포지션과 전달의 조합은 넓은 의미로 위임(delegation)이라 부른다. 단 엄밀히 따지면, 래퍼 객체가 내부 객체에 자기 자신의 참조를 넘기는 경우만 위임에 해당한다. 
 
 다시 돌아와 상속은 언제 적절히 사용하는게 좋은지 이야기 하자면, **상속은 하위클래스가 상위 클래스의 하위 자료형이 정말로 진짜 확실한 경우에 쓰도록 한다.** 다르게 말하면 하위 클래스 B가 클래스 A와 `is-a`관계 일때만 클래스 A를 상속해야 한다. 
 
@@ -221,7 +218,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDk2MzgxMiwtMTExOTkwNjI5MCwtMj
+eyJoaXN0b3J5IjpbMTM0NTcxNTIzMywtMTExOTkwNjI5MCwtMj
 E0NjM5NDQwOCw3ODYzMjk5MTgsNjI1NDg3OTI1LC0xNjYyNzQy
 NjU2LDY1NDI4OTc1NSwtNDI3MjIwNTcwLDE1MzkwNzA3NTksOD
 U0NjkxMjg5LC0zMTUzMTUwNjIsLTUxNDk1ODMxNCw4MDMyODEx
