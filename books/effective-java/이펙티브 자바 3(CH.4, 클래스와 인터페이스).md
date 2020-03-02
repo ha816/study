@@ -96,9 +96,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 이번 장에서 논하는 문제는 인터페이스 상속(클래스가 인터페이스를 구현하거나 인터페이스가 다른 인터페이스를 확장)과는 무관하다.
 
-**메서드 호출과 달리 상속은 캡슐화를 깨뜨린다.** 
-왜? 하위 클래스가 동작하려면 상위 클래스에 의존적이다.
-따라서 상위 클래스가 변경되면 하위클래스도 변경된다. 
+**메서드 호출과 달리 상속은 캡슐화를 깨뜨린다.**  다르게 말하면, 상위 클래스가 어떻게 구현되었느냐에 따라 하위 클래스의 동작에 이상이 발생할 수 있다. 상위 클래스의 내부 구현이 달라지면 그 여파로 아무것도 수정하지 않은 하위 클래스가 오동작할 수 있다는 말이다. 
 
 여러 문제들이 존재
 
@@ -192,11 +190,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzOTA3MDc1OSw4NTQ2OTEyODksLTMxNT
-MxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUs
-ODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0MTg1Mz
-AsLTQxNDk4NDQzMCwxMjkyNDgzNzE0LC02ODkzMTU4NjIsLTEz
-OTY1ODk0OSwxOTc2OTk4MzAzLC0xNjA0OTY3NDE1LC0xMjk4NT
-EyODk3LDEzNzE2NzE3NzEsMTM3MTY3MTc3MSwtMTI1NDUxNzZd
-fQ==
+eyJoaXN0b3J5IjpbLTE0NjM3MTI5MCwxNTM5MDcwNzU5LDg1ND
+Y5MTI4OSwtMzE1MzE1MDYyLC01MTQ5NTgzMTQsODAzMjgxMTE1
+LDU2Mzk1MjExNSw4MzEyNDE0NjUsLTY2Mjg4NzIxNyw3NTU3NT
+c2LDkxOTQxODUzMCwtNDE0OTg0NDMwLDEyOTI0ODM3MTQsLTY4
+OTMxNTg2MiwtMTM5NjU4OTQ5LDE5NzY5OTgzMDMsLTE2MDQ5Nj
+c0MTUsLTEyOTg1MTI4OTcsMTM3MTY3MTc3MSwxMzcxNjcxNzcx
+XX0=
 -->
