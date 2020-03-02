@@ -141,12 +141,16 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 * 상속받으려는 클래스의 API에 아무런 결함이 없는가?
 	* 결함이 있다면,  상속받아 구현하려는 클래스의 API까지 전파되어도 괜찮은가?
 
+**컴포지션을 사용하면 이런 결함을 숨기는 새로운 API를 설계할 수 있지만, 상속은 상위 클래스 API의 결함마저도 그대로 승계한다.** 
 
 컴포지션을 써야할 상황에 상속을 사용하는 것은 내부 구현을 불필요하게 노출하는 것이다. 그 결과 API가 내부 구현에 묶이고 클래스의 성능도 제한된다. 더 심각한 문제는 클라이언트가 노출된 내부에 직접 접근할 수 있다는 점이다. 이는 사용자를 굉장히 혼란스럽게 할 수 있다. 
 
+>핵심 정리
+>상속은 강력하지만
 
 
-###17. 계승을 위한 설계와 문서를 갖추거나, 그럴수 없다면 계승을 금지해라
+
+## Item19. 상속을 고려해 설계하
 
 계승을 위한 설계와 문서를 갖춘다는 것은?
 -> 매서드를 재정의하면 무슨일이 생기는지 문서로 남겨야 한다.
@@ -224,11 +228,11 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjk4OTE4MTUsLTcwNjY3ODg3Myw2MT
-c5MDA4MjEsMjQwMzAwOTIxLC0xODEwMzUxMTE1LDEzNDU3MTUy
-MzMsLTExMTk5MDYyOTAsLTIxNDYzOTQ0MDgsNzg2MzI5OTE4LD
-YyNTQ4NzkyNSwtMTY2Mjc0MjY1Niw2NTQyODk3NTUsLTQyNzIy
-MDU3MCwxNTM5MDcwNzU5LDg1NDY5MTI4OSwtMzE1MzE1MDYyLC
-01MTQ5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4MzEyNDE0
-NjVdfQ==
+eyJoaXN0b3J5IjpbMjAxMzQ3Njc0MCwtNzA2Njc4ODczLDYxNz
+kwMDgyMSwyNDAzMDA5MjEsLTE4MTAzNTExMTUsMTM0NTcxNTIz
+MywtMTExOTkwNjI5MCwtMjE0NjM5NDQwOCw3ODYzMjk5MTgsNj
+I1NDg3OTI1LC0xNjYyNzQyNjU2LDY1NDI4OTc1NSwtNDI3MjIw
+NTcwLDE1MzkwNzA3NTksODU0NjkxMjg5LC0zMTUzMTUwNjIsLT
+UxNDk1ODMxNCw4MDMyODExMTUsNTYzOTUyMTE1LDgzMTI0MTQ2
+NV19
 -->
