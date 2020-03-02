@@ -100,6 +100,9 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 다행이 문제를 해결할 좋은 묘안이 있다. 기존 클래스를 확장하는 대신, 새로운 클래스를 만들고 private 필드로 기존 클래스의 인스턴스를 참조하게 하자. **기존 클래스가 새로운 클래스의 구성요소로 쓰인다는 뜻에서 이를 컴포지션(Composition; 구성)이라 한다.** 새로운 클래스에 메서드는 기존 클래스에 대응하는 메서드를 호출해서 그 결과를 반환한다. 이런 방식을 전달(forwarding)이라하며 새 클래스의 메서드들을  전달 메서드(forwarding method)라 부른다. 그 결과 새로운 클래스는 기존 클래스의 내부 구현방식에서 벗어나며, 심지어 기존 클래스에 새로운 메서드가 추가되더라도 전혀 영향이 없다. 
 
 
+
+
+
 wrapper(decorator) 클래스 : 계승 대신 구성을 사용하는 클래스
 forwarding 클래스 : 재사용 가능한 전달 클래스
 
@@ -183,11 +186,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0Mjg5NzU1LC00MjcyMjA1NzAsMTUzOT
-A3MDc1OSw4NTQ2OTEyODksLTMxNTMxNTA2MiwtNTE0OTU4MzE0
-LDgwMzI4MTExNSw1NjM5NTIxMTUsODMxMjQxNDY1LC02NjI4OD
-cyMTcsNzU1NzU3Niw5MTk0MTg1MzAsLTQxNDk4NDQzMCwxMjky
-NDgzNzE0LC02ODkzMTU4NjIsLTEzOTY1ODk0OSwxOTc2OTk4Mz
-AzLC0xNjA0OTY3NDE1LC0xMjk4NTEyODk3LDEzNzE2NzE3NzFd
+eyJoaXN0b3J5IjpbMTU5Mjc3NzEyNSw2NTQyODk3NTUsLTQyNz
+IyMDU3MCwxNTM5MDcwNzU5LDg1NDY5MTI4OSwtMzE1MzE1MDYy
+LC01MTQ5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4MzEyND
+E0NjUsLTY2Mjg4NzIxNyw3NTU3NTc2LDkxOTQxODUzMCwtNDE0
+OTg0NDMwLDEyOTI0ODM3MTQsLTY4OTMxNTg2MiwtMTM5NjU4OT
+Q5LDE5NzY5OTgzMDMsLTE2MDQ5Njc0MTUsLTEyOTg1MTI4OTdd
 fQ==
 -->
