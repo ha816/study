@@ -97,8 +97,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 
 **메서드 호출과 달리 상속은 캡슐화를 깨뜨린다.**  다르게 말하면, 상위 클래스가 어떻게 구현되었느냐에 따라 하위 클래스의 동작에 이상이 발생할 수 있다. 상위 클래스의 내부 구현이 달라지면 그 여파로 아무것도 수정하지 않은 하위 클래스가 오동작할 수 있다는 말이다. 
 
-다행이 문제를 해결할 좋은 묘안이 있다. 
-기존 클래스를 확장하는 대신, 새로운 클래스를 만들고 private 필드로 기존 클래스의 인스턴스를 참조하게 하자. 기존 클래스가 새로운 클래스의 구성요소로 쓰인다는 뜻에서 이러한 설계를 컴포지션(Composition; 구성)이라 한다. 새로운 클래스에 포함된 각 메서드는 기존 클래스에서 필요한 것을 호출해서 결과를 활용한다. 이런 구현 기법을 전달(forwarding) 전달 기법을 사용해 구현한 메서드를 전달 메서드라고 부른다.  
+다행이 문제를 해결할 좋은 묘안이 있다. 기존 클래스를 확장하는 대신, 새로운 클래스를 만들고 private 필드로 기존 클래스의 인스턴스를 참조하게 하자. **기존 클래스가 새로운 클래스의 구성요소로 쓰인다는 뜻에서 이를 컴포지션(Composition; 구성)이라 한다.** 새로운 클래스에 메서드는 기존 클래스에 대응하는 메서드를 호출해서 그 결과를 반환한다. 이런 방식을 전달(forwarding)기법을 사용해 구현한 메서드를 전달 메서드라고 부른다.  
 
 wrapper(decorator) 클래스 : 계승 대신 구성을 사용하는 클래스
 forwarding 클래스 : 재사용 가능한 전달 클래스
@@ -183,7 +182,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzY2NzI0NzQsLTQyNzIyMDU3MCwxNT
+eyJoaXN0b3J5IjpbLTExMjE1NjQ1NDksLTQyNzIyMDU3MCwxNT
 M5MDcwNzU5LDg1NDY5MTI4OSwtMzE1MzE1MDYyLC01MTQ5NTgz
 MTQsODAzMjgxMTE1LDU2Mzk1MjExNSw4MzEyNDE0NjUsLTY2Mj
 g4NzIxNyw3NTU3NTc2LDkxOTQxODUzMCwtNDE0OTg0NDMwLDEy
