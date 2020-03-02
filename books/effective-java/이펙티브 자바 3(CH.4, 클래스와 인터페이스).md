@@ -116,17 +116,15 @@ public class ForwardingSet<E> implements Set<E> {
 
 아래 InstrumentedSet 클래스는 Set 인터페이스를 구현한 ForwardingSet를 활용하기 때문에 견고하고 아주 유연하다.  구체적으로는 Set 인터페이스를 구현한 생성자를 하나 제공한다. 임의의 Set에 계측 기능(addCount)을 추가한 것이 이 클래스의 핵심이다. 
 ```
-// Wrapper Class - 상속 대신 컴포지션을 사용
+// Wrapper(Decorator) Class - 상속 대신 컴포지션을 사용
 public class InstrumentedSet<E> extends ForwardingSet<E> {
 	private int addCount = 0;
-	
 	public InstrumentedSet(Set<E> s) {super(s);}
 
 	@Override public boolean add(E e){
 		addCount++;
 		return super.add(e);
-	}
-	
+	}	
 	@Override public boolean addAll(Collection<? extends E> c){
 		addCount += c.size();
 		return super.addAll(e);
@@ -218,11 +216,11 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NTcxNTIzMywtMTExOTkwNjI5MCwtMj
-E0NjM5NDQwOCw3ODYzMjk5MTgsNjI1NDg3OTI1LC0xNjYyNzQy
-NjU2LDY1NDI4OTc1NSwtNDI3MjIwNTcwLDE1MzkwNzA3NTksOD
-U0NjkxMjg5LC0zMTUzMTUwNjIsLTUxNDk1ODMxNCw4MDMyODEx
-MTUsNTYzOTUyMTE1LDgzMTI0MTQ2NSwtNjYyODg3MjE3LDc1NT
-c1NzYsOTE5NDE4NTMwLC00MTQ5ODQ0MzAsMTI5MjQ4MzcxNF19
+eyJoaXN0b3J5IjpbLTExODc1MDYzNSwxMzQ1NzE1MjMzLC0xMT
+E5OTA2MjkwLC0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5
+MjUsLTE2NjI3NDI2NTYsNjU0Mjg5NzU1LC00MjcyMjA1NzAsMT
+UzOTA3MDc1OSw4NTQ2OTEyODksLTMxNTMxNTA2MiwtNTE0OTU4
+MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUsODMxMjQxNDY1LC02Nj
+I4ODcyMTcsNzU1NzU3Niw5MTk0MTg1MzAsLTQxNDk4NDQzMF19
 
 -->
