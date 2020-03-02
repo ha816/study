@@ -121,7 +121,7 @@ public class ForwardingSet<E> implements Set<E> {
 public class InstrumentedSet<E> extends ForwardingSet<E> {
 	private int addCount = 0;
 	
-	public InstrumentedSet(Set<E> s) {this.s = s;}
+	public InstrumentedSet(Set<E> s) {super(s);}
 	
 
 	...
@@ -211,11 +211,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ3MTM0NzE4LC0yMTQ2Mzk0NDA4LDc4Nj
-MyOTkxOCw2MjU0ODc5MjUsLTE2NjI3NDI2NTYsNjU0Mjg5NzU1
-LC00MjcyMjA1NzAsMTUzOTA3MDc1OSw4NTQ2OTEyODksLTMxNT
-MxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTExNSw1NjM5NTIxMTUs
-ODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1NzU3Niw5MTk0MTg1Mz
-AsLTQxNDk4NDQzMCwxMjkyNDgzNzE0LC02ODkzMTU4NjJdfQ==
+eyJoaXN0b3J5IjpbLTExMTk5MDYyOTAsLTIxNDYzOTQ0MDgsNz
+g2MzI5OTE4LDYyNTQ4NzkyNSwtMTY2Mjc0MjY1Niw2NTQyODk3
+NTUsLTQyNzIyMDU3MCwxNTM5MDcwNzU5LDg1NDY5MTI4OSwtMz
+E1MzE1MDYyLC01MTQ5NTgzMTQsODAzMjgxMTE1LDU2Mzk1MjEx
+NSw4MzEyNDE0NjUsLTY2Mjg4NzIxNyw3NTU3NTc2LDkxOTQxOD
+UzMCwtNDE0OTg0NDMwLDEyOTI0ODM3MTQsLTY4OTMxNTg2Ml19
 
 -->
