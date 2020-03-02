@@ -128,10 +128,12 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 		return super.add(e);
 	}
 	
-	@Override public boolean addAll(Collection<? extends E>){
-		addCount++;
-		return super.add(e);
+	@Override public boolean addAll(Collection<? extends E> c){
+		addCount += c.size();
+		return super.addAll(e);
 	}
+
+	
 
 	
 	...
@@ -221,11 +223,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NTcyOTYxMCwtMTExOTkwNjI5MCwtMj
-E0NjM5NDQwOCw3ODYzMjk5MTgsNjI1NDg3OTI1LC0xNjYyNzQy
-NjU2LDY1NDI4OTc1NSwtNDI3MjIwNTcwLDE1MzkwNzA3NTksOD
-U0NjkxMjg5LC0zMTUzMTUwNjIsLTUxNDk1ODMxNCw4MDMyODEx
-MTUsNTYzOTUyMTE1LDgzMTI0MTQ2NSwtNjYyODg3MjE3LDc1NT
-c1NzYsOTE5NDE4NTMwLC00MTQ5ODQ0MzAsMTI5MjQ4MzcxNF19
+eyJoaXN0b3J5IjpbMjgzNjAzMzUzLC0xMTE5OTA2MjkwLC0yMT
+Q2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5MjUsLTE2NjI3NDI2
+NTYsNjU0Mjg5NzU1LC00MjcyMjA1NzAsMTUzOTA3MDc1OSw4NT
+Q2OTEyODksLTMxNTMxNTA2MiwtNTE0OTU4MzE0LDgwMzI4MTEx
+NSw1NjM5NTIxMTUsODMxMjQxNDY1LC02NjI4ODcyMTcsNzU1Nz
+U3Niw5MTk0MTg1MzAsLTQxNDk4NDQzMCwxMjkyNDgzNzE0XX0=
 
 -->
