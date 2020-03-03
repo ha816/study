@@ -150,7 +150,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 ## Item19. 상속을 고려해 설계하고 문서화해라. 그러지 않았다면 상속을 금지하라
 
-
+Item18 에서는 상속을 염두에 두지 않은 클래스이자, 상속할때
 계승을 위한 설계와 문서를 갖춘다는 것은?
 -> 매서드를 재정의하면 무슨일이 생기는지 문서로 남겨야 한다.
 다시 말해, 재정의 가능 메서드를 내부적으로 어떻게 사용하는지 반드시 문서에 남기라는것이다. 
@@ -227,11 +227,11 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njg5Mzc0MjIsMTExNjMwMjkxMiwtNz
-A2Njc4ODczLDYxNzkwMDgyMSwyNDAzMDA5MjEsLTE4MTAzNTEx
-MTUsMTM0NTcxNTIzMywtMTExOTkwNjI5MCwtMjE0NjM5NDQwOC
-w3ODYzMjk5MTgsNjI1NDg3OTI1LC0xNjYyNzQyNjU2LDY1NDI4
-OTc1NSwtNDI3MjIwNTcwLDE1MzkwNzA3NTksODU0NjkxMjg5LC
-0zMTUzMTUwNjIsLTUxNDk1ODMxNCw4MDMyODExMTUsNTYzOTUy
-MTE1XX0=
+eyJoaXN0b3J5IjpbLTE0MzI0ODA4NzQsLTE0Njg5Mzc0MjIsMT
+ExNjMwMjkxMiwtNzA2Njc4ODczLDYxNzkwMDgyMSwyNDAzMDA5
+MjEsLTE4MTAzNTExMTUsMTM0NTcxNTIzMywtMTExOTkwNjI5MC
+wtMjE0NjM5NDQwOCw3ODYzMjk5MTgsNjI1NDg3OTI1LC0xNjYy
+NzQyNjU2LDY1NDI4OTc1NSwtNDI3MjIwNTcwLDE1MzkwNzA3NT
+ksODU0NjkxMjg5LC0zMTUzMTUwNjIsLTUxNDk1ODMxNCw4MDMy
+ODExMTVdfQ==
 -->
