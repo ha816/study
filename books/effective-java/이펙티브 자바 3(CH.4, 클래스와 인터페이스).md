@@ -154,6 +154,8 @@ Item18 에서는 상속을 염두에 두지 않은 클래스이자, 상속할 �
 
 **우선 매서드를 재정의하면 무슨일이 생기는지 반드시 문서로 남겨야 한다.** 다시 말해, 상속용 클래스는 재정의할 수 있는 메서드들을 내부적으로 어떻게 이용하는지(자기사용) 문서로 남겨야 한다. 
 
+클래스의 API로 공개된 (public, protected) 메서드에서 클래스 자신의 또 다른 메서드를 호출할 수도 있다. 그런데 마침 호출되는 메서드가 재정의 가능 메서드라면 그 사실을 호출하는 메서드의 API 설명에 적시해야 한다. 덧붙여서 어떤 순서로 호출하는지, 각각의 호출결과가 이어지는 처리에 어떤 영향을 주는지도 적어야 한다. 여기서 재정의 가능 메서드란 public, protected 
+
 계층을 위해 설계한 클래스를 테스트할 유일한 방법은 하위 클래스를 직접 만들어 보는 것이다. 
 
 계승 허용시 추가 제약사항
@@ -226,11 +228,11 @@ Item18 에서는 상속을 염두에 두지 않은 클래스이자, 상속할 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjE2MjE5MTQsLTE0Njg5Mzc0MjIsMT
-ExNjMwMjkxMiwtNzA2Njc4ODczLDYxNzkwMDgyMSwyNDAzMDA5
-MjEsLTE4MTAzNTExMTUsMTM0NTcxNTIzMywtMTExOTkwNjI5MC
-wtMjE0NjM5NDQwOCw3ODYzMjk5MTgsNjI1NDg3OTI1LC0xNjYy
-NzQyNjU2LDY1NDI4OTc1NSwtNDI3MjIwNTcwLDE1MzkwNzA3NT
-ksODU0NjkxMjg5LC0zMTUzMTUwNjIsLTUxNDk1ODMxNCw4MDMy
-ODExMTVdfQ==
+eyJoaXN0b3J5IjpbMTkzNzk2MjY3OSwtMTQ2ODkzNzQyMiwxMT
+E2MzAyOTEyLC03MDY2Nzg4NzMsNjE3OTAwODIxLDI0MDMwMDky
+MSwtMTgxMDM1MTExNSwxMzQ1NzE1MjMzLC0xMTE5OTA2MjkwLC
+0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5MjUsLTE2NjI3
+NDI2NTYsNjU0Mjg5NzU1LC00MjcyMjA1NzAsMTUzOTA3MDc1OS
+w4NTQ2OTEyODksLTMxNTMxNTA2MiwtNTE0OTU4MzE0LDgwMzI4
+MTExNV19
 -->
