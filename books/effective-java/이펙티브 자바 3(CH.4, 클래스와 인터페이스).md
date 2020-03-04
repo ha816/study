@@ -156,7 +156,7 @@ Item18 에서는 상속을 염두에 두지 않은 클래스이자, 상속할 �
 
 클래스의 API로 공개된 (public, protected) 메서드에서 클래스 자신의 또 다른 메서드를 호출할 수도 있다. 그런데 마침 호출되는 메서드가 재정의 가능 메서드라면 그 사실을 호출하는 메서드의 API 설명에 적시해야 한다. 덧붙여서 어떤 순서로 호출하는지, 각각의 호출결과가 이어지는 처리에 어떤 영향을 주는지도 적어야 한다. 여기서 재정의 가능 메서드란 public, protected 이면서 final이 아닌 모든 메서드를 말한다. **반드시 재정의 가능 메서드를 호출할 수 있는 모든 상황을 문서로 남겨야 한다.** 
 
-
+API 문서의 메서드 설명 끝에 종종 "Implementation Requirements"로 시작하는 절을 볼 수 있는데, 그 메서드의 내부 동작 방식을 설명하는 곳이다. 이 절은 메서드 주서에 @implSpc 태그를 붙여주면 자바독 도구가 생성해준다. 
 
 계층을 위해 설계한 클래스를 테스트할 유일한 방법은 하위 클래스를 직접 만들어 보는 것이다. 
 
@@ -230,11 +230,11 @@ Item18 에서는 상속을 염두에 두지 않은 클래스이자, 상속할 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NDMwODYwMywtMTQ2ODkzNzQyMiwxMT
-E2MzAyOTEyLC03MDY2Nzg4NzMsNjE3OTAwODIxLDI0MDMwMDky
-MSwtMTgxMDM1MTExNSwxMzQ1NzE1MjMzLC0xMTE5OTA2MjkwLC
-0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5MjUsLTE2NjI3
-NDI2NTYsNjU0Mjg5NzU1LC00MjcyMjA1NzAsMTUzOTA3MDc1OS
-w4NTQ2OTEyODksLTMxNTMxNTA2MiwtNTE0OTU4MzE0LDgwMzI4
-MTExNV19
+eyJoaXN0b3J5IjpbLTE0OTcxOTI1ODQsMTc3NDMwODYwMywtMT
+Q2ODkzNzQyMiwxMTE2MzAyOTEyLC03MDY2Nzg4NzMsNjE3OTAw
+ODIxLDI0MDMwMDkyMSwtMTgxMDM1MTExNSwxMzQ1NzE1MjMzLC
+0xMTE5OTA2MjkwLC0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0
+ODc5MjUsLTE2NjI3NDI2NTYsNjU0Mjg5NzU1LC00MjcyMjA1Nz
+AsMTUzOTA3MDc1OSw4NTQ2OTEyODksLTMxNTMxNTA2MiwtNTE0
+OTU4MzE0XX0=
 -->
