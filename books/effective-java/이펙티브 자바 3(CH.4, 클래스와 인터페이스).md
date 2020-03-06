@@ -165,6 +165,7 @@ API 문서의 메서드 설명 끝에 종종 "Implementation Requirements"로 �
 >protected void removeRange(int fromIndex, int toIndex)
 >
 >fromIndex(포함)부터 toIndex(미포함)까지의 모든 원소를 이 리스트에서 제거한다. toIndex 이후의 원소들은 앞으로 (index만큼씩) 당겨진다. 이 호출로 리스트는 toIndex - fromIndex 만큼 짧아진다. (toIndex == fromIndex라면 아무 효과가 없다.)
+>
 >이 리스트 혹은 리스트의 부분 리스트에 정의된 clear 연산이 이 메서드를 호출한다. 리스트 구현의 내부 구조를 활용하도록 이 메서드를 재정의하면 이 리스트와 부분 리스트의 clear 연산 성능을 크게 개선할 수 있다. 
 >Implementation Requirements:  이 메서드는 fromIndex에서 시작하는 리스트 반복자를 얻어 모든 원소를 제거할 때까지 ListIterator.next와 ListIterator.remove를 반복 호출하도록 구현되었다. **주의: ListIterator.remove가 선형 시간이 걸리면 이 구현의 성능은 제곱에 비례한다.**
 
@@ -241,11 +242,11 @@ API 문서의 메서드 설명 끝에 종종 "Implementation Requirements"로 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNTUzMDk0MiwtODQyNDk5MTg2LC0xNT
-M3MTE2ODQzLDE2NzU2NTM3NzcsLTEwNTM5Mzc3NjUsNjY3NDk3
-NTcwLC0xNDk3MTkyNTg0LDE3NzQzMDg2MDMsLTE0Njg5Mzc0Mj
-IsMTExNjMwMjkxMiwtNzA2Njc4ODczLDYxNzkwMDgyMSwyNDAz
-MDA5MjEsLTE4MTAzNTExMTUsMTM0NTcxNTIzMywtMTExOTkwNj
-I5MCwtMjE0NjM5NDQwOCw3ODYzMjk5MTgsNjI1NDg3OTI1LC0x
-NjYyNzQyNjU2XX0=
+eyJoaXN0b3J5IjpbOTMzNDI1MTQ2LC04NDI0OTkxODYsLTE1Mz
+cxMTY4NDMsMTY3NTY1Mzc3NywtMTA1MzkzNzc2NSw2Njc0OTc1
+NzAsLTE0OTcxOTI1ODQsMTc3NDMwODYwMywtMTQ2ODkzNzQyMi
+wxMTE2MzAyOTEyLC03MDY2Nzg4NzMsNjE3OTAwODIxLDI0MDMw
+MDkyMSwtMTgxMDM1MTExNSwxMzQ1NzE1MjMzLC0xMTE5OTA2Mj
+kwLC0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5MjUsLTE2
+NjI3NDI2NTZdfQ==
 -->
