@@ -176,7 +176,9 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 **상속용 클래스를 테스트할 유일한 방법은 직접 하위 클래스를 만들어 보는 것이다.** 꼭 필요한 protected 멤버를 놓쳤다면 하위 클래스를 작성할때 확연히 티가 난다. 거꾸로 하위 클래스를 여러개 만들때 까지 전혀 쓰이지 않는 protected 멤버는 사실 pirvate이어야 할 가능성이 크다. 경험상 이러한 검증에는 하위 클래스 3개 정도가 적당하다. 그릭 이 중 하나 이상은 제 3자가 작성해봐야 한다. 
 
 널리 상속용으로 쓰일 클래스를 설계한다면 무서화한 내부 사용 패턴과, protected 메서드와 필드를 구현하면서 선택한 결정을 영원히 끝까지 책임져야 한다. 이 결정들이 해당 클래스의 성능과 기능에 영원한 족쇄가 될 수 있다. 그러니 상속용으로 설계한 클래스는 **반드시 배포 전에 하위 클래스를 만들어 검증해야 한다.** 
-또한, 상속하려는 사람을 위해 덧붙인 설명은 단순히 그 클래스의 인스턴스를 만들어 사용하려는 프로그래머에게는 필요없다. 일반적인 API 설명ㅇ
+또한, 상속하려는 사람을 위해 덧붙인 설명은 단순히 그 클래스의 인스턴스를 만들어 사용하려는 프로그래머에게는 필요없다. 일반적인 API 설명과 상속용 설명을 구분하는 설명은 중요하다. 
+
+상속을 허용하는 클래스가 지켜야 할 제약은 아직 남아 있다. 
 
 
 계승 허용시 추가 제약사항
@@ -249,11 +251,11 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTE4MDU5NDgsLTE2MTkzMzI4ODksND
-Y2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5OTE4NiwtMTUzNzEx
-Njg0MywxNjc1NjUzNzc3LC0xMDUzOTM3NzY1LDY2NzQ5NzU3MC
-wtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC0xNDY4OTM3NDIyLDEx
-MTYzMDI5MTIsLTcwNjY3ODg3Myw2MTc5MDA4MjEsMjQwMzAwOT
-IxLC0xODEwMzUxMTE1LDEzNDU3MTUyMzMsLTExMTk5MDYyOTAs
-LTIxNDYzOTQ0MDhdfQ==
+eyJoaXN0b3J5IjpbLTQxMjAyMjUyOCwtMTYxOTMzMjg4OSw0Nj
+Y3NjA0OTQsMTc5MTEwODQ5MywtODQyNDk5MTg2LC0xNTM3MTE2
+ODQzLDE2NzU2NTM3NzcsLTEwNTM5Mzc3NjUsNjY3NDk3NTcwLC
+0xNDk3MTkyNTg0LDE3NzQzMDg2MDMsLTE0Njg5Mzc0MjIsMTEx
+NjMwMjkxMiwtNzA2Njc4ODczLDYxNzkwMDgyMSwyNDAzMDA5Mj
+EsLTE4MTAzNTExMTUsMTM0NTcxNTIzMywtMTExOTkwNjI5MCwt
+MjE0NjM5NDQwOF19
 -->
