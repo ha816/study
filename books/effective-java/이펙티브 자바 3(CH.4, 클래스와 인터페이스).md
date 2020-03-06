@@ -171,7 +171,7 @@ API 문서의 메서드 설명 끝에 종종 "Implementation Requirements"로 �
 
 List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다. 그럼에도 이 메서드를 제공한 이유는 단지 하위클래스에서 부분 리스트의 clear 메서드를 고성능으로 만들기 쉽게 하기 위해서다. removeRange 메서드가 없다면 하위 클래스에서 clear 메서드를 호출하면 (제거할 원소 수의) 제곱에 비례해 성능이 느려지거나 부분 리스트의 메커니즘을 밑바닥 부터 새로 구현해야 했을 것이다. 만만치 않은 일이다. 
 
-그렇다면 상소굥 클래스를 설계할 때 어떤 메서드를 protected로 노출해야 할까? 안타깝게도 정답은 없다.
+그렇다면 상속용 클래스를 설계할 때 어떤 메서드를 protected로 노출해야 할까? 안타깝게도 정답은 없다. 심사숙고해서 
 
 계층을 위해 설계한 클래스를 테스트할 유일한 방법은 하위 클래스를 직접 만들어 보는 것이다. 
 
@@ -245,11 +245,11 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MTkxNDY4MiwxNzkxMTA4NDkzLC04ND
-I0OTkxODYsLTE1MzcxMTY4NDMsMTY3NTY1Mzc3NywtMTA1Mzkz
-Nzc2NSw2Njc0OTc1NzAsLTE0OTcxOTI1ODQsMTc3NDMwODYwMy
-wtMTQ2ODkzNzQyMiwxMTE2MzAyOTEyLC03MDY2Nzg4NzMsNjE3
-OTAwODIxLDI0MDMwMDkyMSwtMTgxMDM1MTExNSwxMzQ1NzE1Mj
-MzLC0xMTE5OTA2MjkwLC0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2
-MjU0ODc5MjVdfQ==
+eyJoaXN0b3J5IjpbNzIxNTc5Mjg0LDE3OTExMDg0OTMsLTg0Mj
+Q5OTE4NiwtMTUzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3
+NzY1LDY2NzQ5NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC
+0xNDY4OTM3NDIyLDExMTYzMDI5MTIsLTcwNjY3ODg3Myw2MTc5
+MDA4MjEsMjQwMzAwOTIxLC0xODEwMzUxMTE1LDEzNDU3MTUyMz
+MsLTExMTk5MDYyOTAsLTIxNDYzOTQ0MDgsNzg2MzI5OTE4LDYy
+NTQ4NzkyNV19
 -->
