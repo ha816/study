@@ -160,7 +160,11 @@ API 문서의 메서드 설명 끝에 종종 "Implementation Requirements"로 �
 
  하지만 사실 이렇게 API가 자세히 무엇을 하는지를 설명한다면 캡슐화를 해치는 것이 아닌가? 그렇다. 상속이 캡슐화를 해치기 때문에 일어나는 안타까운 현실이다. 클래스를 안전하게 상속하려면 (상속이 아니었다면 기술하지 않아도 됬을) 내부 구현 방식을 설명해야만 한다. @implcSpec 태그는 자바 8에 도입되어 자바 9부터 본격적으로 사용되기 시작했다. 이 태그가 기본값으로 활성화되어야 바람직하다고 생각하지만 자바 11의 자바독에서도 선택사항이다.
 
-이 처럼 내부 매커니즘을 문서로 남기는 것만이 상속을 위한 설계의 전부는 아니다. 효율적인 하위 클래스를 큰 어려움 없이 만들 수 있게 하려면 클래스의 내부 동작 과정 중간에 끼어들 수 있는 **훅(hook)을 잘 선별하여 protected 메서드 형태로 공개해야 할 수도 있다.** 드물게는 protected 필드로 공개해야 할 필요가 있을 수도 있다 .
+이 처럼 내부 매커니즘을 문서로 남기는 것만이 상속을 위한 설계의 전부는 아니다. 효율적인 하위 클래스를 큰 어려움 없이 만들 수 있게 하려면 클래스의 내부 동작 과정 중간에 끼어들 수 있는 **훅(hook)을 잘 선별하여 protected 메서드 형태로 공개해야 할 수도 있다.** 드물게는 protected 필드로 공개해야 할 필요가 있을 수도 있다. 예를 들어 java.Util.AbstractList의 removeRange 메서드를 예로 살펴보자. 
+
+>protected void removeRange(int fromIndex, int toIndex)
+>fromIndex(포함)부터 toIndex(미포함)까지의 모든 원소를 이 리스트에서 젝
+
 
 계층을 위해 설계한 클래스를 테스트할 유일한 방법은 하위 클래스를 직접 만들어 보는 것이다. 
 
@@ -234,11 +238,11 @@ API 문서의 메서드 설명 끝에 종종 "Implementation Requirements"로 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTY1Mzc3NywtMTA1MzkzNzc2NSw2Nj
-c0OTc1NzAsLTE0OTcxOTI1ODQsMTc3NDMwODYwMywtMTQ2ODkz
-NzQyMiwxMTE2MzAyOTEyLC03MDY2Nzg4NzMsNjE3OTAwODIxLD
-I0MDMwMDkyMSwtMTgxMDM1MTExNSwxMzQ1NzE1MjMzLC0xMTE5
-OTA2MjkwLC0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5Mj
-UsLTE2NjI3NDI2NTYsNjU0Mjg5NzU1LC00MjcyMjA1NzAsMTUz
-OTA3MDc1OV19
+eyJoaXN0b3J5IjpbMTYxNTc3MTUyMywxNjc1NjUzNzc3LC0xMD
+UzOTM3NzY1LDY2NzQ5NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4
+NjAzLC0xNDY4OTM3NDIyLDExMTYzMDI5MTIsLTcwNjY3ODg3My
+w2MTc5MDA4MjEsMjQwMzAwOTIxLC0xODEwMzUxMTE1LDEzNDU3
+MTUyMzMsLTExMTk5MDYyOTAsLTIxNDYzOTQ0MDgsNzg2MzI5OT
+E4LDYyNTQ4NzkyNSwtMTY2Mjc0MjY1Niw2NTQyODk3NTUsLTQy
+NzIyMDU3MF19
 -->
