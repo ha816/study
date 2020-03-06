@@ -158,7 +158,7 @@ Item18 에서는 상속을 염두에 두지 않은 클래스이자, 상속할 �
 
 API 문서의 메서드 설명 끝에 종종 "Implementation Requirements"로 시작하는 절을 볼 수 있는데, 그 메서드의 내부 동작 방식을 설명하는 곳이다. 이 절은 메서드 주서에 @implSpc 태그를 붙여주면 자바독 도구가 생성해준다. 
 
- 하지만 사실 이렇게 API가 자세히 무엇을 하는지를 설명한다면 캡슐화를 해치는 것이 아닌가? 그렇다. 상속이 캡슐화를 해치기 때문에 일어나는 안타까운 현실이다. 클래스를 안전하게 상속하려면 (상속이 아니었다면 기술하지 않아도 됬을) 내부 구현 방식을 설명해야만 한다. @implcSpec 태그는 자바 8에 도입되어 자바 9부터 본격적으로 사용되기 시작했다. 
+ 하지만 사실 이렇게 API가 자세히 무엇을 하는지를 설명한다면 캡슐화를 해치는 것이 아닌가? 그렇다. 상속이 캡슐화를 해치기 때문에 일어나는 안타까운 현실이다. 클래스를 안전하게 상속하려면 (상속이 아니었다면 기술하지 않아도 됬을) 내부 구현 방식을 설명해야만 한다. @implcSpec 태그는 자바 8에 도입되어 자바 9부터 본격적으로 사용되기 시작했다. 이 태그가 기본값으로 활성화되어야 바람직하다고 생각하지만 자바 11의 자바독에서도 서
 
 계층을 위해 설계한 클래스를 테스트할 유일한 방법은 하위 클래스를 직접 만들어 보는 것이다. 
 
@@ -232,11 +232,11 @@ API 문서의 메서드 설명 끝에 종종 "Implementation Requirements"로 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY3NDk3NTcwLC0xNDk3MTkyNTg0LDE3Nz
-QzMDg2MDMsLTE0Njg5Mzc0MjIsMTExNjMwMjkxMiwtNzA2Njc4
-ODczLDYxNzkwMDgyMSwyNDAzMDA5MjEsLTE4MTAzNTExMTUsMT
-M0NTcxNTIzMywtMTExOTkwNjI5MCwtMjE0NjM5NDQwOCw3ODYz
-Mjk5MTgsNjI1NDg3OTI1LC0xNjYyNzQyNjU2LDY1NDI4OTc1NS
-wtNDI3MjIwNTcwLDE1MzkwNzA3NTksODU0NjkxMjg5LC0zMTUz
-MTUwNjJdfQ==
+eyJoaXN0b3J5IjpbMTUyNDQ1NjM5OSw2Njc0OTc1NzAsLTE0OT
+cxOTI1ODQsMTc3NDMwODYwMywtMTQ2ODkzNzQyMiwxMTE2MzAy
+OTEyLC03MDY2Nzg4NzMsNjE3OTAwODIxLDI0MDMwMDkyMSwtMT
+gxMDM1MTExNSwxMzQ1NzE1MjMzLC0xMTE5OTA2MjkwLC0yMTQ2
+Mzk0NDA4LDc4NjMyOTkxOCw2MjU0ODc5MjUsLTE2NjI3NDI2NT
+YsNjU0Mjg5NzU1LC00MjcyMjA1NzAsMTUzOTA3MDc1OSw4NTQ2
+OTEyODldfQ==
 -->
