@@ -163,7 +163,7 @@ API 문서의 메서드 설명 끝에 종종 "Implementation Requirements"로 �
 이 처럼 내부 매커니즘을 문서로 남기는 것만이 상속을 위한 설계의 전부는 아니다. 효율적인 하위 클래스를 큰 어려움 없이 만들 수 있게 하려면 클래스의 내부 동작 과정 중간에 끼어들 수 있는 **훅(hook)을 잘 선별하여 protected 메서드 형태로 공개해야 할 수도 있다.** 드물게는 protected 필드로 공개해야 할 필요가 있을 수도 있다. 예를 들어 java.Util.AbstractList의 removeRange 메서드를 예로 살펴보자. 
 
 >protected void removeRange(int fromIndex, int toIndex)
->fromIndex(포함)부터 toIndex(미포함)까지의 모든 원소를 이 리스트에서 젝
+>fromIndex(포함)부터 toIndex(미포함)까지의 모든 원소를 이 리스트에서 제거한다. toIndex 이후의 원소들은 앞으로 (index만큼씩) 당겨진다. 이 호출로 리스트는 toIndex - fromIndex 만큼 짧아진다. (toIndex == fromIndex라면 아무 효과가 없다.)
 
 
 계층을 위해 설계한 클래스를 테스트할 유일한 방법은 하위 클래스를 직접 만들어 보는 것이다. 
@@ -238,11 +238,11 @@ API 문서의 메서드 설명 끝에 종종 "Implementation Requirements"로 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNTc3MTUyMywxNjc1NjUzNzc3LC0xMD
-UzOTM3NzY1LDY2NzQ5NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4
-NjAzLC0xNDY4OTM3NDIyLDExMTYzMDI5MTIsLTcwNjY3ODg3My
-w2MTc5MDA4MjEsMjQwMzAwOTIxLC0xODEwMzUxMTE1LDEzNDU3
-MTUyMzMsLTExMTk5MDYyOTAsLTIxNDYzOTQ0MDgsNzg2MzI5OT
-E4LDYyNTQ4NzkyNSwtMTY2Mjc0MjY1Niw2NTQyODk3NTUsLTQy
-NzIyMDU3MF19
+eyJoaXN0b3J5IjpbLTE1MzcxMTY4NDMsMTY3NTY1Mzc3NywtMT
+A1MzkzNzc2NSw2Njc0OTc1NzAsLTE0OTcxOTI1ODQsMTc3NDMw
+ODYwMywtMTQ2ODkzNzQyMiwxMTE2MzAyOTEyLC03MDY2Nzg4Nz
+MsNjE3OTAwODIxLDI0MDMwMDkyMSwtMTgxMDM1MTExNSwxMzQ1
+NzE1MjMzLC0xMTE5OTA2MjkwLC0yMTQ2Mzk0NDA4LDc4NjMyOT
+kxOCw2MjU0ODc5MjUsLTE2NjI3NDI2NTYsNjU0Mjg5NzU1LC00
+MjcyMjA1NzBdfQ==
 -->
