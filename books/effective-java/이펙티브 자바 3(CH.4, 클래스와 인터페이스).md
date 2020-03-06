@@ -173,7 +173,7 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 
 그렇다면 상속용 클래스를 설계할 때 어떤 메서드를 protected로 노출해야 할까? 안타깝게도 정답은 없다. 심사숙고해서 잘 예측해본 다음, 실제 하위 클래스를 만들어 시험해보는 것이 최선이다. protected 메서드는 하나하나가 내부 구현에 해당하므로 그 수는 가능한 적어야 한다. 한편으로는 너무 적게 노출해서 상속으로 얻는 이점마저 없애지 않도록 주의해야 한다. 
 
-계층을 위해 설계한 클래스를 테스트할 유일한 방법은 하위 클래스를 직접 만들어 보는 것이다. 
+**상속용 클래스를 테스트할 유일한 방법은 직접 하위 클래스를 만들어 보는 것이다.** 
 
 계승 허용시 추가 제약사항
 1. 생성자는 재정의 가능 메서드를 호출해선 안된다
@@ -245,11 +245,11 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NTE5NDY1MiwxNzkxMTA4NDkzLC04ND
-I0OTkxODYsLTE1MzcxMTY4NDMsMTY3NTY1Mzc3NywtMTA1Mzkz
-Nzc2NSw2Njc0OTc1NzAsLTE0OTcxOTI1ODQsMTc3NDMwODYwMy
-wtMTQ2ODkzNzQyMiwxMTE2MzAyOTEyLC03MDY2Nzg4NzMsNjE3
-OTAwODIxLDI0MDMwMDkyMSwtMTgxMDM1MTExNSwxMzQ1NzE1Mj
-MzLC0xMTE5OTA2MjkwLC0yMTQ2Mzk0NDA4LDc4NjMyOTkxOCw2
-MjU0ODc5MjVdfQ==
+eyJoaXN0b3J5IjpbNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0Mj
+Q5OTE4NiwtMTUzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3
+NzY1LDY2NzQ5NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC
+0xNDY4OTM3NDIyLDExMTYzMDI5MTIsLTcwNjY3ODg3Myw2MTc5
+MDA4MjEsMjQwMzAwOTIxLC0xODEwMzUxMTE1LDEzNDU3MTUyMz
+MsLTExMTk5MDYyOTAsLTIxNDYzOTQ0MDgsNzg2MzI5OTE4LDYy
+NTQ4NzkyNV19
 -->
