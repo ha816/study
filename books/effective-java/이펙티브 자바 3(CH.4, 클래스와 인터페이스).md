@@ -173,7 +173,7 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 
 그렇다면 상속용 클래스를 설계할 때 어떤 메서드를 protected로 노출해야 할까? 안타깝게도 정답은 없다. 심사숙고해서 잘 예측해본 다음, 실제 하위 클래스를 만들어 시험해보는 것이 최선이다. protected 메서드는 하나하나가 내부 구현에 해당하므로 그 수는 가능한 적어야 한다. 한편으로는 너무 적게 노출해서 상속으로 얻는 이점마저 없애지 않도록 주의해야 한다. 
 
-**상속용 클래스를 테스트할 유일한 방법은 직접 하위 클래스를 만들어 보는 것이다.** 꼭 필요한 protected
+**상속용 클래스를 테스트할 유일한 방법은 직접 하위 클래스를 만들어 보는 것이다.** 꼭 필요한 protected 멤버를 놓쳤다면 하위 클래스를 작성할때 확연히 티가 난다. 거꾸로 하위 클래스를 여러개 만들때 까지 전혀 쓰이지 않는 protected 멤버는 사실 pirvate이어야 할 가능성이 크다. 경험상 이러한 검증에는 하위 클래스 3개 정도가 적당하다. 그릭 이 중 하나 이상은 제 3자가 작성해봐야 한다. 
 
 계승 허용시 추가 제약사항
 1. 생성자는 재정의 가능 메서드를 호출해선 안된다
@@ -245,11 +245,11 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTI1NDUxLDQ2Njc2MDQ5NCwxNzkxMT
-A4NDkzLC04NDI0OTkxODYsLTE1MzcxMTY4NDMsMTY3NTY1Mzc3
-NywtMTA1MzkzNzc2NSw2Njc0OTc1NzAsLTE0OTcxOTI1ODQsMT
-c3NDMwODYwMywtMTQ2ODkzNzQyMiwxMTE2MzAyOTEyLC03MDY2
-Nzg4NzMsNjE3OTAwODIxLDI0MDMwMDkyMSwtMTgxMDM1MTExNS
-wxMzQ1NzE1MjMzLC0xMTE5OTA2MjkwLC0yMTQ2Mzk0NDA4LDc4
-NjMyOTkxOF19
+eyJoaXN0b3J5IjpbLTE2MTkzMzI4ODksNDY2NzYwNDk0LDE3OT
+ExMDg0OTMsLTg0MjQ5OTE4NiwtMTUzNzExNjg0MywxNjc1NjUz
+Nzc3LC0xMDUzOTM3NzY1LDY2NzQ5NzU3MCwtMTQ5NzE5MjU4NC
+wxNzc0MzA4NjAzLC0xNDY4OTM3NDIyLDExMTYzMDI5MTIsLTcw
+NjY3ODg3Myw2MTc5MDA4MjEsMjQwMzAwOTIxLC0xODEwMzUxMT
+E1LDEzNDU3MTUyMzMsLTExMTk5MDYyOTAsLTIxNDYzOTQ0MDgs
+Nzg2MzI5OTE4XX0=
 -->
