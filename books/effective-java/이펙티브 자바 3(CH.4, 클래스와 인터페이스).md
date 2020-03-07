@@ -1,8 +1,11 @@
 # 클래스와 인터페이스
 
-## Item15. 클래스와 멤버의 접근 권한은 최소화하라
+## Item153. 클래스와 멤버의 접근 권한은 최소화하라
 
 어설프게 설계된 컴포넌트와 잘 설계된 컴포넌트의 가장 큰 차이는 바로 클래스 내부 데이터와 내부 구현 정보를 외부 컴포넌트로 부터 얼마나 잘 숨겼느냐이다. 정보은닉 (information hiding), 혹은 캡슐화(capsulation)으로 불리는 이 개념은 소프트웨어 설계의 근간이 되는 원리다. 
+
+정보은닉 -> 컴포넌트간 의존성을 낮춘다. 개발 관리 비용, 개발 난이도 하락 등등
+
  - 정보 은닉(information hiding)의 장점
 	 - 의존성을 낮추어 여러 컴포넌트를 병렬적으로 개발, 테스트가 가능
 	 - 시스템 관리 비용을 낮춘다. 각 컴포넌트를 더 빨리 파악하여 디버깅할 수 있고, 다른 컴포넌트로 교체 부담도 적다.
@@ -200,7 +203,95 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 또한, 상속하려는 사람을 위해 덧붙인 설명은 단순히 그 클래스의 인스턴스를 만들어 사용하려는 프로그래머에게는 필요없다. 일반적인 API 설명과 상속용 설명을 구분하는 설명은 중요하다. 
 
 상속을 허용하는 클래스가 지켜야 할 제약은 아직 남아 있다. 
+모든 클래스와 멤버의 접근성을 가능한 좁혀야 한다. 소프트웨어가 올바르게 동작하는 한 항상 가장 낮은 수준을 부여해야 한다는 뜻이다. 
+
+(가장 바깥이라는 의미의) 탑 클래스와 인터페이스에 부여할 수 있는 접근 수준은 크게 package-private과 public 두가지이다.
+
+public으로 선언하면 공개 API가 되고, package-private으로 하면 해당 패키지내에서만 사용할 수 있다. 원칙에 따라 패키지 내부에서 쓰이는게 아니라면 package-private으로 선언하자. 그러면 이들은 API가 아닌 배구 구현이 되어 언제든 수정이 가능하다. 즉 클라이언트에 수정이 없이 다음 릴리스에 언제든 수정이 가능하다. 반면 public은 API가 되므로 하위 호완을 위해 영원히 관리해줘야 한다. 
+
+| 접근 권한 수정자 | 설명 |
+|--|--|
+|package-private| 해당 패키지 내에서만 유효한 개체 |
+|public| 전역적 개체|
+
+멤버
+: 필드, 메서드, 중첩 클래스(nested class), 중첩 인터페이스(nested interface)
+
+멤버의 접근 권한은 총 네가지 종류가 있다.
+
+| 접근 권한 수정자 | 설명 |
+|--|--|
+|private| 선언된 멤버는 선언된 같은 클래스에서만 접근가능 |
+|package-private(default)| 선언된 멤버는 같은 패키지 안에 모든 클래스가 접근가능; 기본 접근 권한으로 알려져 있음 |
+|protected| 선언된 멤버는 같은 패키지 안에 모든 클래스가 접근가능할 뿐만 아니라 (다른 패키지에서) 선언된 클래스를 확장하는 하위 클래스에서도 접근가능|
+|public| 선언된 멤버는 어디서도 접근가능|
+
+private의 일반적인 오해는 private으로 선언한 변수는 해당 인스턴스만 접근할 수 있다고 생각하는 것이다. 같은 인스턴스는 아니지만 같은 타입의 모든 인스턴스가 private 멤버 변수에 접근이 가능하다. 
+
+ - 객체 필드(instance field)는 절대로 public으로 선언하면 안된다.
+	 - 필드에 저장될 값을 제한할 수 없다; 불변식을 강제 불가
+	 - 변경가능 필드를 가진 클래스는 다중 스레드에 안전하지 않다.
+- 예외적으로 public static final은 사용 가능하나 참조하는 객체는 변경 불가능 객체로 만들어야 한다.
+
+### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
+
+ private 필드와 public 접근자 메서드(getter, setter)를 사용하자
+
+선언된 패키지 밖에서도 사용 가능한 클래스는 접근자 메서드를 제공해라. 
+public 클래스의 데이터 필드를 공게하게 되면, 그 내부표현을 변경 할수 없다. 이미 작성된 클라이언트 코드가 에러 발생. 
+
+package-private 클래스나 private 중첩 클래스는 데이터 필드를 공개하더라도 잘못은 아니다. 패키지 내부에서만 쓰이는 코드이기 때문에 바깥의 코드는 아무 영향을 받지 않는다 
+
+### 15. 변경 가능성을 최소화 하라
+
+변경 불가능(immutable) 클래스는 그 객체를 수정할 수 없는 클래스
+
+변경 불가능 클래스의 5가지 규칙
+ 1. 객체 상태를 변경하는 메서드(수정자 메서드등)을 제공하지 않는다.
+ 2. 계승할수 없도록 한다. 
+ 3. 모든 필드를 fianl로 선언한다. 
+ 4. 모든 필드를 private으로 선언한다.
+ 5. 변경 가능 컴포넌트에 대한 독점적 접근권을 보장한다(getter 메서드)
+	 이경님 어록 : 변경가능한 필드에 대해서는 외부에서 수정할 수 없도록 하기위해서, 생성자나 접근자, readObject 메소드 안에 ‘방어적 복사본’ 을 만들어야 한다.
  
+ immutable  클래스의 장점  
+ 1. 단순함
+ 2. 스레드에 안전
+ 3. 변경 불가능 객체는 자유롭게 공유가 가능
+ 4. 변경 불가능한 객체는 그 내부도 공유할 수 있다.
+ 5. 변경 불가능 객체는 다른 객체의 구성요소로도 훌륭하다. 
+ 6. 변경 불가능 객체의 유일한 단점은 값마다 별도의 객체를 만들어야 한다는 점
+
+###16. 계승하는 대신 구성하라
+
+composite than extends 
+이 장에서는 자바의 extends를 말한다.
+
+메서드 호출과 달리, 계승은 캡슐화 원칙을 위반하다.
+왜? 하위 클래스가 동작하려면 상위 클래스에 의존적이다.
+따라서 상위 클래스가 변경되면 하위클래스도 변경된다. 
+
+여러 문제들이 존재
+
+
+다행이도 이러한 문제를 해결할 방법이 존재
+계승 하는 대신에 새로운 클래스에 기존 클래스 객체를 참조하는 private필드를 하나 두는것! = 이러한 설계 기법을 composite 기법이라고 한다. 
+
+기존 클래스가 새 클래스의 일부(component)가 되기 때문이다. 
+새로운 클래스에 포함된 각 메서드는 기존 클래스에서 필요한 것을 호출해서 결과를 활용한다. 이런 구현 기법을 전달(forwarding) 전달 기법을 사용해 구현한 메서드를 전달 메서드라고 부른다.  
+
+wrapper(decorator) 클래스 : 계승 대신 구성을 사용하는 클래스
+forwarding 클래스 : 재사용 가능한 전달 클래스
+
+계승은 하위클래스가 상위 클래스의 하위 자료형이 확실한 경우에 쓰도록 합시다. is - a 관계
+
+###17. 계승을 위한 설계와 문서를 갖추거나, 그럴수 없다면 계승을 금지해라
+
+계승을 위한 설계와 문서를 갖춘다는 것은?
+-> 매서드를 재정의하면 무슨일이 생기는지 문서로 남겨야 한다.
+다시 말해, 재정의 가능 메서드를 내부적으로 어떻게 사용하는지 반드시 문서에 남기라는것이다. 
+
+계층을 위해 설계한 클래스를 테스트할 유일한 방법은 하위 클래스를 직접 만들어 보는 것이다. 
 
 계승 허용시 추가 제약사항
 1. 생성자는 재정의 가능 메서드를 호출해선 안된다
@@ -272,11 +363,11 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjcwMjg1OTMsLTQxMjAyMjUyOCwtMT
-YxOTMzMjg4OSw0NjY3NjA0OTQsMTc5MTEwODQ5MywtODQyNDk5
-MTg2LC0xNTM3MTE2ODQzLDE2NzU2NTM3NzcsLTEwNTM5Mzc3Nj
-UsNjY3NDk3NTcwLC0xNDk3MTkyNTg0LDE3NzQzMDg2MDMsLTE0
-Njg5Mzc0MjIsMTExNjMwMjkxMiwtNzA2Njc4ODczLDYxNzkwMD
-gyMSwyNDAzMDA5MjEsLTE4MTAzNTExMTUsMTM0NTcxNTIzMywt
-MTExOTkwNjI5MF19
+eyJoaXN0b3J5IjpbLTg3ODI2OTYwNCwtMTI2NzAyODU5MywtND
+EyMDIyNTI4LC0xNjE5MzMyODg5LDQ2Njc2MDQ5NCwxNzkxMTA4
+NDkzLC04NDI0OTkxODYsLTE1MzcxMTY4NDMsMTY3NTY1Mzc3Ny
+wtMTA1MzkzNzc2NSw2Njc0OTc1NzAsLTE0OTcxOTI1ODQsMTc3
+NDMwODYwMywtMTQ2ODkzNzQyMiwxMTE2MzAyOTEyLC03MDY2Nz
+g4NzMsNjE3OTAwODIxLDI0MDMwMDkyMSwtMTgxMDM1MTExNSwx
+MzQ1NzE1MjMzXX0=
 -->
