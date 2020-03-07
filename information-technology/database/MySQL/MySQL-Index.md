@@ -159,7 +159,7 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 
 #### 인덱스의 정렬
 
-일반적인 상용 DBMS에서는 인덱스를 생성하는 시점에 인덱스를 구성하는 각 컬럼의 정렬을 오르
+일반적인 상용 DBMS에서는 인덱스를 생성하는 시점에 인덱스를 구성하는 각 컬럼의 정렬을 오름차순 또는 내림차순으로 구성할 수 있다. 
 
 
 ### B-Tree 인덱스의 가용성과 효율성
@@ -176,7 +176,7 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NjI0MjI0MywxNDk0MzAxNDM1LDM4Nj
+eyJoaXN0b3J5IjpbLTQyNjQ1MzQ5MiwxNDk0MzAxNDM1LDM4Nj
 Q0NjI2Myw0NDM2NjgyMjMsMjAyMzE5Mzc3NCwtMTQ4NDYyODk4
 MSw4MTczMTY4NDksLTU5MDI2MzgxOCwzNjQ3NDkwMDksLTExOT
 k0ODM4MDQsODg4NTExNDQ2LDE0MDQ0MjE1NTUsLTkzNzMyNTQ3
