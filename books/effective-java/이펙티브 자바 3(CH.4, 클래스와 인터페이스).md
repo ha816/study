@@ -168,8 +168,6 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 ## Item19. 상속을 고려해합시다. is - a 관계
 
-###17. 계승을 위한 설계하고와 문서화해라. 그러지 않았를 갖추거나, 그럴수 없다면 상속계승을 금지하해라
-
 Item18 에서는 상속을 염두에 두지 않은 클래스이자, 상속할 때의 주의점도 문서화하지 않은 패키지 외부에 클래스를 상속할때 위험을 경고했다. 자 이제 상속을 고려한 설계와 정확히 문서화가 뭔지 이야기해보자.
 
 **우선계승을 위한 설계와 문서를 갖춘다는 것은?
@@ -363,11 +361,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3ODI2OTYwNCwtMTI2NzAyODU5MywtND
-EyMDIyNTI4LC0xNjE5MzMyODg5LDQ2Njc2MDQ5NCwxNzkxMTA4
-NDkzLC04NDI0OTkxODYsLTE1MzcxMTY4NDMsMTY3NTY1Mzc3Ny
-wtMTA1MzkzNzc2NSw2Njc0OTc1NzAsLTE0OTcxOTI1ODQsMTc3
-NDMwODYwMywtMTQ2ODkzNzQyMiwxMTE2MzAyOTEyLC03MDY2Nz
-g4NzMsNjE3OTAwODIxLDI0MDMwMDkyMSwtMTgxMDM1MTExNSwx
-MzQ1NzE1MjMzXX0=
+eyJoaXN0b3J5IjpbNTY3NTY0MDg3LC04NzgyNjk2MDQsLTEyNj
+cwMjg1OTMsLTQxMjAyMjUyOCwtMTYxOTMzMjg4OSw0NjY3NjA0
+OTQsMTc5MTEwODQ5MywtODQyNDk5MTg2LC0xNTM3MTE2ODQzLD
+E2NzU2NTM3NzcsLTEwNTM5Mzc3NjUsNjY3NDk3NTcwLC0xNDk3
+MTkyNTg0LDE3NzQzMDg2MDMsLTE0Njg5Mzc0MjIsMTExNjMwMj
+kxMiwtNzA2Njc4ODczLDYxNzkwMDgyMSwyNDAzMDA5MjEsLTE4
+MTAzNTExMTVdfQ==
 -->
