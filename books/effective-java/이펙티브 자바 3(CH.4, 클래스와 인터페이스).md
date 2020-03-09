@@ -217,7 +217,7 @@ public class Sub extends Super {
 	}
 }
 ```
-Sub 하위 클래스를 생성하면 상위의 overrideMe를 호출하게 된다. 상위 클래스의 생서
+Sub 하위 클래스를 생성하면 상위의 overrideMe를 호출하게 된다. 그리고 이때 null을 출력한다. 왜냐하면 상위 클래스의 생성자는 하위 클래스의 생성자가 인스턴스 필드를 초기화 하기도 전에 overrideMe를 호출하기 때문이다. 
 
 ### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
 
@@ -349,11 +349,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQ4OTM3NDMsLTEwNDk2NjM1ODYsOD
-EyMDQzNDQxLDIyODcxNDQ1NSw1Njc1NjQwODcsLTg3ODI2OTYw
-NCwtMTI2NzAyODU5MywtNDEyMDIyNTI4LC0xNjE5MzMyODg5LD
-Q2Njc2MDQ5NCwxNzkxMTA4NDkzLC04NDI0OTkxODYsLTE1Mzcx
-MTY4NDMsMTY3NTY1Mzc3NywtMTA1MzkzNzc2NSw2Njc0OTc1Nz
-AsLTE0OTcxOTI1ODQsMTc3NDMwODYwMywtMTQ2ODkzNzQyMiwx
-MTE2MzAyOTEyXX0=
+eyJoaXN0b3J5IjpbLTQzOTQyOTk1OCwtMTA0OTY2MzU4Niw4MT
+IwNDM0NDEsMjI4NzE0NDU1LDU2NzU2NDA4NywtODc4MjY5NjA0
+LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLTE2MTkzMzI4ODksND
+Y2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5OTE4NiwtMTUzNzEx
+Njg0MywxNjc1NjUzNzc3LC0xMDUzOTM3NzY1LDY2NzQ5NzU3MC
+wtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC0xNDY4OTM3NDIyLDEx
+MTYzMDI5MTJdfQ==
 -->
