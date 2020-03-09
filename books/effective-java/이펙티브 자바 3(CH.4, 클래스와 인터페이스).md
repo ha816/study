@@ -196,7 +196,14 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 널리 상속용으로 쓰일 클래스를 설계한다면 무서화한 내부 사용 패턴과, protected 메서드와 필드를 구현하면서 선택한 결정을 영원히 끝까지 책임져야 한다. 이 결정들이 해당 클래스의 성능과 기능에 영원한 족쇄가 될 수 있다. 그러니 상속용으로 설계한 클래스는 **반드시 배포 전에 하위 클래스를 만들어 검증해야 한다.** 
 또한, 상속하려는 사람을 위해 덧붙인 설명은 단순히 그 클래스의 인스턴스를 만들어 사용하려는 프로그래머에게는 필요없다. 일반적인 API 설명과 상속용 설명은 구분하는게 좋다.
 
-상속을 허용하는 클래스가 지켜야 할 제약이 아직 몇 개 남았다. 상속용 클래스의 **생성자는 직접적으로든 간접적으로든 재정의 가능 메서드를 호출해서는 안된다.** 이 규칙을 어기면 프로그램이 오동작할 것이다. 상위 클래스의 생성자가 하위 클래스의 생성자 보다 먼저 실행되므로 하위 클래스에서 재정의한 메서드가 
+상속을 허용하는 클래스가 지켜야 할 제약이 아직 몇 개 남았다. 상속용 클래스의 **생성자는 직접적으로든 간접적으로든 재정의 가능 메서드를 호출해서는 안된다.** 이 규칙을 어기면 프로그램이 오동작할 것이다. 상위 클래스의 생성자가 하위 클래스의 생성자 보다 먼저 실행되므로 하위 클래스에서 재정의한 메서드가 하위 클래스의 생성자 보다 먼저 호출된다. 이때 재정의한 메서드가 하위 클래스의 생성자에서 초기화하는 값에 의존한다면 의도대로 동작하지 않을 것이다. 
+
+```
+public class Super {
+	public Super() { ov}
+
+}
+```
 
 ### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
 
@@ -328,7 +335,7 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA4ODAzNjMwLDgxMjA0MzQ0MSwyMjg3MT
+eyJoaXN0b3J5IjpbOTIzNDgzODAwLDgxMjA0MzQ0MSwyMjg3MT
 Q0NTUsNTY3NTY0MDg3LC04NzgyNjk2MDQsLTEyNjcwMjg1OTMs
 LTQxMjAyMjUyOCwtMTYxOTMzMjg4OSw0NjY3NjA0OTQsMTc5MT
 EwODQ5MywtODQyNDk5MTg2LC0xNTM3MTE2ODQzLDE2NzU2NTM3
