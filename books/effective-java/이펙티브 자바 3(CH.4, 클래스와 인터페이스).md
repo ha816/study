@@ -151,10 +151,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 기존 클래스가 새 클래스의 일부(component)가 되기 때문이다. 
 새로운 클래스에 포함된 각 메서드는 기존 클래스에서 필요한 것을 호출해서 결과를 활용한다. 이런 구현 기법을 전달(forwarding) 전달 기법을 사용해 구현한 메서드를 전달 메서드라고 부른다.  
 
-wrapper(decorator) 클래스 : 계승 대신 구성을 사용하는 클래스
-forwarding 클래스 : 재사용 가능한 전달 클래스
-
-계승은 하위클래스가 상위 클래스의 하위 자료형이 정말로 진짜 확실한 경우에 쓰도록 한다.** 다르게 말하면 하위 클래스 B가 클래스 A와 `is-a`관계 일때만 클래스 A를 상속해야 한다. 상속을 사용하기로 결정했다면 마지막으로 자문해야할 질문들이 있다. 
+계승은 하위클래스가 상위 클래스의 하위 자료형이 정말로 진짜 확실한 경우에 쓰도록 한다.** 다르게 말하면 하위 클래스 B가 클래스 A와 is-a관계 일때만 클래스 A를 상속해야 한다. 상속을 사용하기로 결정했다면 마지막으로 자문해야할 질문들이 있다. 
 
 * 상속받으려는 클래스의 API에 아무런 결함이 없는가?
 	* 결함이 있다면,  상속받아 구현하려는 클래스의 API까지 전파되어도 괜찮은가?
@@ -221,8 +218,10 @@ Sub 하위 클래스를 생성하면 상위의 overrideMe를 호출하게 된다
 추가적으로 final 필드의 상태를 생각해보자. 원래의도는 생성뒤 변경 불가를 원했지만 상위 생성자에서 먼저 overrideMe 메서드를 호출하기 때문에 NPE 에러가 난다. 위 프로그램이 에러가 나지 않은 이유는 println이 null값도 처리를 하기 때문이다. 
 
 ```
-private, final, static 메서드는 재정의가 불가능하니 생성자에서 안심하고 호출해도 된다
+private, final, static 메서드는 재정의가 불가능하니 생성자에서 안심하고 호출해도 된다. 
 ```
+
+cloneable과 
 
 ### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
 
@@ -354,11 +353,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MDUyNjMyOCwtNDM5NDI5OTU4LC0xMD
-Q5NjYzNTg2LDgxMjA0MzQ0MSwyMjg3MTQ0NTUsNTY3NTY0MDg3
-LC04NzgyNjk2MDQsLTEyNjcwMjg1OTMsLTQxMjAyMjUyOCwtMT
-YxOTMzMjg4OSw0NjY3NjA0OTQsMTc5MTEwODQ5MywtODQyNDk5
-MTg2LC0xNTM3MTE2ODQzLDE2NzU2NTM3NzcsLTEwNTM5Mzc3Nj
-UsNjY3NDk3NTcwLC0xNDk3MTkyNTg0LDE3NzQzMDg2MDMsLTE0
-Njg5Mzc0MjJdfQ==
+eyJoaXN0b3J5IjpbLTE3NDA0NDIyNDIsLTQzOTQyOTk1OCwtMT
+A0OTY2MzU4Niw4MTIwNDM0NDEsMjI4NzE0NDU1LDU2NzU2NDA4
+NywtODc4MjY5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLT
+E2MTkzMzI4ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5
+OTE4NiwtMTUzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3Nz
+Y1LDY2NzQ5NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC0x
+NDY4OTM3NDIyXX0=
 -->
