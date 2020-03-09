@@ -211,9 +211,13 @@ public class Sub extends Super {
 	@Override public void overrideMe() {
 		System.out.println(instant)
 	}
-
+	public static void main(String[] args){
+		Sub sub = new Sub();
+		sub.overrideMe();
+	}
 }
 ```
+
 
 ### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
 
@@ -345,11 +349,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDk2NjM1ODYsODEyMDQzNDQxLDIyOD
-cxNDQ1NSw1Njc1NjQwODcsLTg3ODI2OTYwNCwtMTI2NzAyODU5
-MywtNDEyMDIyNTI4LC0xNjE5MzMyODg5LDQ2Njc2MDQ5NCwxNz
-kxMTA4NDkzLC04NDI0OTkxODYsLTE1MzcxMTY4NDMsMTY3NTY1
-Mzc3NywtMTA1MzkzNzc2NSw2Njc0OTc1NzAsLTE0OTcxOTI1OD
-QsMTc3NDMwODYwMywtMTQ2ODkzNzQyMiwxMTE2MzAyOTEyLC03
-MDY2Nzg4NzNdfQ==
+eyJoaXN0b3J5IjpbNzM1MzA2Mzc4LC0xMDQ5NjYzNTg2LDgxMj
+A0MzQ0MSwyMjg3MTQ0NTUsNTY3NTY0MDg3LC04NzgyNjk2MDQs
+LTEyNjcwMjg1OTMsLTQxMjAyMjUyOCwtMTYxOTMzMjg4OSw0Nj
+Y3NjA0OTQsMTc5MTEwODQ5MywtODQyNDk5MTg2LC0xNTM3MTE2
+ODQzLDE2NzU2NTM3NzcsLTEwNTM5Mzc3NjUsNjY3NDk3NTcwLC
+0xNDk3MTkyNTg0LDE3NzQzMDg2MDMsLTE0Njg5Mzc0MjIsMTEx
+NjMwMjkxMl19
 -->
