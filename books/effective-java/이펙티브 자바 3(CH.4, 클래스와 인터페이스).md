@@ -105,7 +105,6 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
   스 하   다.
  스가 면 하위 클래스의 동작에 이상이 발생할 수 있다. 상위 클래스의 내부 구현이 달라지면 그 여파로 아무것도 수정하지 않은 하위 클래스가 오동작할 수 있다는 말이다.  존재
 
-
 다행이도 이러한 문제를 해결할 좋은 방법이 있다. 기존 클래스를 확장존재
 계승 하는 대신,에 새로운 클래스를 만들고 private 필드로 기존 클래스의 인스턴스를 참조하게 하자. **새로운 클래스가 기존 클래스를 구성요소로 쓴다는 뜻에서 이를 컴포지션(Composition; 구성)에  기   는 it    이한  기 composite 기법이라고 한다.** 새로운 클래스의 메서드는 기존 클래스에 대응하는 메서드를 호출해서 그 결과를 반환한다. 이런 방식을 전달(forwarding)이라하며 새 클래스의 메서드들을  전달 메서드(forwarding method)라 부른다. **컴포지션과 전달의 조합은 넓은 의미로 위임(delegation)이라 부른다.** 그 결과 새로운 클래스는 기존 클래스의 내부 구현방식에서 벗어나며, 심지어 기존 클래스에 새로운 메서드가 추가되더라도 전혀 영향이 없다. 
 ```
@@ -151,7 +150,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 * 상속받으려는 클래스의 API에 아무런 결함이 없는가?
 	* 결함이 있다면,  상속받아 구현하려는 클래스의 API까지 전파되어도 괜찮은가?
 
-**컴포지션을 사용하면 이런 상소 결함을 숨기는 새로운 API를 설계할 수 있지만, 상속은 상위 클래스 API의 결함마저도 그대로 승계한다.** 
+**컴포지션을 사용하면 이런 상속의 결함을 숨기는 새로운 API를 설계할 수 있지만, 상속은 상위 클래스 API의 결함마저도 그대로 승계한다.** 
 
 컴포지션을 써야할 상황에 상속을 사용하는 것은 내부 구현을 불필요하게 노출하는 것이다. 그 결과 API가 내부 구현에 묶이고 클래스의 성능도 제한된다. 더 심각한 문제는 클라이언트가 노출된 내부에 직접 접근할 수 있다는 점이다. 이는 사용자를 굉장히 혼란스럽게 할 수 있다. 
 
@@ -218,73 +217,8 @@ private, final, static 메서드는 재정의가 불가능하니 생성자에서
 
 cloneable과 
 
-### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
 
- private 필드와 public 접근자 메서드(getter, setter)를 사용하자
-
-선언된 패키지 밖에서도 사용 가능한 클래스는 접근자 메서드를 제공해라. 
-public 클래스의 데이터 필드를 공게하게 되면, 그 내부표현을 변경 할수 없다. 이미 작성된 클라이언트 코드가 에러 발생. 
-
-package-private 클래스나 private 중첩 클래스는 데이터 필드를 공개하더라도 잘못은 아니다. 패키지 내부에서만 쓰이는 코드이기 때문에 바깥의 코드는 아무 영향을 받지 않는다 
-
-### 15. 변경 가능성을 최소화 하라
-
-변경 불가능(immutable) 클래스는 그 객체를 수정할 수 없는 클래스
-
-변경 불가능 클래스의 5가지 규칙
- 1. 객체 상태를 변경하는 메서드(수정자 메서드등)을 제공하지 않는다.
- 2. 계승할수 없도록 한다. 
- 3. 모든 필드를 fianl로 선언한다. 
- 4. 모든 필드를 private으로 선언한다.
- 5. 변경 가능 컴포넌트에 대한 독점적 접근권을 보장한다(getter 메서드)
-	 이경님 어록 : 변경가능한 필드에 대해서는 외부에서 수정할 수 없도록 하기위해서, 생성자나 접근자, readObject 메소드 안에 ‘방어적 복사본’ 을 만들어야 한다.
- 
- immutable  클래스의 장점  
- 1. 단순함
- 2. 스레드에 안전
- 3. 변경 불가능 객체는 자유롭게 공유가 가능
- 4. 변경 불가능한 객체는 그 내부도 공유할 수 있다.
- 5. 변경 불가능 객체는 다른 객체의 구성요소로도 훌륭하다. 
- 6. 변경 불가능 객체의 유일한 단점은 값마다 별도의 객체를 만들어야 한다는 점
-
-###16. 계승하는 대신 구성하라
-
-composite than extends 
-이 장에서는 자바의 extends를 말한다.
-
-메서드 호출과 달리, 계승은 캡슐화 원칙을 위반하다.
-왜? 하위 클래스가 동작하려면 상위 클래스에 의존적이다.
-따라서 상위 클래스가 변경되면 하위클래스도 변경된다. 
-
-여러 문제들이 존재
-
-
-다행이도 이러한 문제를 해결할 방법이 존재
-계승 하는 대신에 새로운 클래스에 기존 클래스 객체를 참조하는 private필드를 하나 두는것! = 이러한 설계 기법을 composite 기법이라고 한다. 
-
-기존 클래스가 새 클래스의 일부(component)가 되기 때문이다. 
-새로운 클래스에 포함된 각 메서드는 기존 클래스에서 필요한 것을 호출해서 결과를 활용한다. 이런 구현 기법을 전달(forwarding) 전달 기법을 사용해 구현한 메서드를 전달 메서드라고 부른다.  
-
-wrapper(decorator) 클래스 : 계승 대신 구성을 사용하는 클래스
-forwarding 클래스 : 재사용 가능한 전달 클래스
-
-계승은 하위클래스가 상위 클래스의 하위 자료형이 확실한 경우에 쓰도록 합시다. is - a 관계
-
-###17. 계승을 위한 설계와 문서를 갖추거나, 그럴수 없다면 계승을 금지해라
-
-계승을 위한 설계와 문서를 갖춘다는 것은?
--> 매서드를 재정의하면 무슨일이 생기는지 문서로 남겨야 한다.
-다시 말해, 재정의 가능 메서드를 내부적으로 어떻게 사용하는지 반드시 문서에 남기라는것이다. 
-
-계층을 위해 설계한 클래스를 테스트할 유일한 방법은 하위 클래스를 직접 만들어 보는 것이다. 
-
-계승 허용시 추가 제약사항
-1. 생성자는 재정의 가능 메서드를 호출해선 안된다
-2. clonable이나 serializable을 구현한다면 clone이나 readObject 메서드 안에서 재정의 가능한 메서드를 호출하지 말아야 한다.
-3. Serializable 인터에스를 구현하는 클래스에 readResolve와 writeReplace 메서드가 있다면, protected로 선언해야 한다. 
-
-이경 님 왈: Serializable을 구현한 클래스는 직렬화가 가능하다. 
-### 18. 추상 클래스 대신 인터페이스를 사용해라
+### Item. 추상 클래스 대신 인터페이스를 사용해라
 
 자바 언어에는 여러 구현을 허용하는 자료형을 만드는 방법이 두가지 -> 인터페이스와 추상 클래스(abstract class)
 
@@ -348,11 +282,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODAzNTY5ODgsLTQzOTQyOTk1OCwtMT
-A0OTY2MzU4Niw4MTIwNDM0NDEsMjI4NzE0NDU1LDU2NzU2NDA4
-NywtODc4MjY5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLT
-E2MTkzMzI4ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5
-OTE4NiwtMTUzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3Nz
-Y1LDY2NzQ5NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC0x
-NDY4OTM3NDIyXX0=
+eyJoaXN0b3J5IjpbOTE2NDAyOTgsLTQzOTQyOTk1OCwtMTA0OT
+Y2MzU4Niw4MTIwNDM0NDEsMjI4NzE0NDU1LDU2NzU2NDA4Nywt
+ODc4MjY5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLTE2MT
+kzMzI4ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5OTE4
+NiwtMTUzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3NzY1LD
+Y2NzQ5NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC0xNDY4
+OTM3NDIyXX0=
 -->
