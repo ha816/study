@@ -194,38 +194,9 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 **상속용 클래스를 시험하는 벙법은 직접 하위 클래스를 만들어보는 것이 유일하다.** 꼭 필요한 protected 멤버를 놓쳤다면 하위 클래스를 작성할때 확연히 티가 난다. 거꾸로 하위 클래스를 여러개 만들때 까지 전혀 쓰이지 않는 protected 멤버는 사실 pirvate이어야 할 가능성이 크다. 경험상 이러한 검증에는 하위 클래스 3개 정도가 적당하다. 그릭 이 중 하나 이상은 제 3자가 작성해봐야 한다. 
 
 널리 상속용으로 쓰일 클래스를 설계한다면 무서화한 내부 사용 패턴과, protected 메서드와 필드를 구현하면서 선택한 결정을 영원히 끝까지 책임져야 한다. 이 결정들이 해당 클래스의 성능과 기능에 영원한 족쇄가 될 수 있다. 그러니 상속용으로 설계한 클래스는 **반드시 배포 전에 하위 클래스를 만들어 검증해야 한다.** 
-또한, 상속하려는 사람을 위해 덧붙인 설명은 단순히 그 클래스의 인스턴스를 만들어 사용하려는 프로그래머에게는 필요없다. 일반적인 API 설명과 상속용 설명을 구분하는 설명은 중요하다. 
+또한, 상속하려는 사람을 위해 덧붙인 설명은 단순히 그 클래스의 인스턴스를 만들어 사용하려는 프로그래머에게는 필요없다. 일반적인 API 설명과 상속용 설명은 구분하는게 좋다.
 
-상속을 허용하는 클래스가 지켜야 할 제약은 아직 남아 있다. 
-모든 클래스와 멤버의 접근성을 가능한 좁혀야 한다. 소프트웨어가 올바르게 동작하는 한 항상 가장 낮은 수준을 부여해야 한다는 뜻이다. 
-
-(가장 바깥이라는 의미의) 탑 클래스와 인터페이스에 부여할 수 있는 접근 수준은 크게 package-private과 public 두가지이다.
-
-public으로 선언하면 공개 API가 되고, package-private으로 하면 해당 패키지내에서만 사용할 수 있다. 원칙에 따라 패키지 내부에서 쓰이는게 아니라면 package-private으로 선언하자. 그러면 이들은 API가 아닌 배구 구현이 되어 언제든 수정이 가능하다. 즉 클라이언트에 수정이 없이 다음 릴리스에 언제든 수정이 가능하다. 반면 public은 API가 되므로 하위 호완을 위해 영원히 관리해줘야 한다. 
-
-| 접근 권한 수정자 | 설명 |
-|--|--|
-|package-private| 해당 패키지 내에서만 유효한 개체 |
-|public| 전역적 개체|
-
-멤버
-: 필드, 메서드, 중첩 클래스(nested class), 중첩 인터페이스(nested interface)
-
-멤버의 접근 권한은 총 네가지 종류가 있다.
-
-| 접근 권한 수정자 | 설명 |
-|--|--|
-|private| 선언된 멤버는 선언된 같은 클래스에서만 접근가능 |
-|package-private(default)| 선언된 멤버는 같은 패키지 안에 모든 클래스가 접근가능; 기본 접근 권한으로 알려져 있음 |
-|protected| 선언된 멤버는 같은 패키지 안에 모든 클래스가 접근가능할 뿐만 아니라 (다른 패키지에서) 선언된 클래스를 확장하는 하위 클래스에서도 접근가능|
-|public| 선언된 멤버는 어디서도 접근가능|
-
-private의 일반적인 오해는 private으로 선언한 변수는 해당 인스턴스만 접근할 수 있다고 생각하는 것이다. 같은 인스턴스는 아니지만 같은 타입의 모든 인스턴스가 private 멤버 변수에 접근이 가능하다. 
-
- - 객체 필드(instance field)는 절대로 public으로 선언하면 안된다.
-	 - 필드에 저장될 값을 제한할 수 없다; 불변식을 강제 불가
-	 - 변경가능 필드를 가진 클래스는 다중 스레드에 안전하지 않다.
-- 예외적으로 public static final은 사용 가능하나 참조하는 객체는 변경 불가능 객체로 만들어야 한다.
+상속을 허용하는 클래스가 지켜야 할 제약이 아직 몇 개 남았다. 상속용 클래스의 생성자는 직접ㅈ
 
 ### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
 
@@ -357,11 +328,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI4NzE0NDU1LDU2NzU2NDA4NywtODc4Mj
-Y5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLTE2MTkzMzI4
-ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5OTE4NiwtMT
-UzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3NzY1LDY2NzQ5
-NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC0xNDY4OTM3ND
-IyLDExMTYzMDI5MTIsLTcwNjY3ODg3Myw2MTc5MDA4MjEsMjQw
-MzAwOTIxXX0=
+eyJoaXN0b3J5IjpbNDMwMjk1NDIwLDIyODcxNDQ1NSw1Njc1Nj
+QwODcsLTg3ODI2OTYwNCwtMTI2NzAyODU5MywtNDEyMDIyNTI4
+LC0xNjE5MzMyODg5LDQ2Njc2MDQ5NCwxNzkxMTA4NDkzLC04ND
+I0OTkxODYsLTE1MzcxMTY4NDMsMTY3NTY1Mzc3NywtMTA1Mzkz
+Nzc2NSw2Njc0OTc1NzAsLTE0OTcxOTI1ODQsMTc3NDMwODYwMy
+wtMTQ2ODkzNzQyMiwxMTE2MzAyOTEyLC03MDY2Nzg4NzMsNjE3
+OTAwODIxXX0=
 -->
