@@ -204,6 +204,12 @@ public class Super {
 	public void overrideMe(){ }	
 }
 
+public class Sub extends Super {
+	private final Instant instant;
+	
+
+
+}
 ```
 
 ### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
@@ -336,11 +342,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODAwMjIzNTUsODEyMDQzNDQxLDIyOD
-cxNDQ1NSw1Njc1NjQwODcsLTg3ODI2OTYwNCwtMTI2NzAyODU5
-MywtNDEyMDIyNTI4LC0xNjE5MzMyODg5LDQ2Njc2MDQ5NCwxNz
-kxMTA4NDkzLC04NDI0OTkxODYsLTE1MzcxMTY4NDMsMTY3NTY1
-Mzc3NywtMTA1MzkzNzc2NSw2Njc0OTc1NzAsLTE0OTcxOTI1OD
-QsMTc3NDMwODYwMywtMTQ2ODkzNzQyMiwxMTE2MzAyOTEyLC03
-MDY2Nzg4NzNdfQ==
+eyJoaXN0b3J5IjpbMTM1MTM5MzQzNCw4MTIwNDM0NDEsMjI4Nz
+E0NDU1LDU2NzU2NDA4NywtODc4MjY5NjA0LC0xMjY3MDI4NTkz
+LC00MTIwMjI1MjgsLTE2MTkzMzI4ODksNDY2NzYwNDk0LDE3OT
+ExMDg0OTMsLTg0MjQ5OTE4NiwtMTUzNzExNjg0MywxNjc1NjUz
+Nzc3LC0xMDUzOTM3NzY1LDY2NzQ5NzU3MCwtMTQ5NzE5MjU4NC
+wxNzc0MzA4NjAzLC0xNDY4OTM3NDIyLDExMTYzMDI5MTIsLTcw
+NjY3ODg3M119
 -->
