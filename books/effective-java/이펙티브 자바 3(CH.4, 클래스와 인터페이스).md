@@ -218,7 +218,11 @@ public class Sub extends Super {
 }
 ```
 Sub 하위 클래스를 생성하면 상위의 overrideMe를 호출하게 된다. 그리고 이때 null을 출력한다. 왜냐하면 상위 클래스의 생성자는 하위 클래스의 생성자가 인스턴스 필드를 초기화 하기도 전에 overrideMe를 호출하기 때문이다. 
-추가적으로 final 필드의 상태를 생각해보자. 원래의도는 생서
+추가적으로 final 필드의 상태를 생각해보자. 원래의도는 생성뒤 변경 불가를 원했지만 상위 생성자에서 먼저 overrideMe 메서드를 호출하기 때문에 NPE 에러가 난다. 위 프로그램이 에러가 나지 않은 이유는 println이 null값도 처리를 하기 때문이다. 
+
+```
+private, final, static 메서드는 재정의가 불가능하니 생성자에서 안심하고 호출해도 된다
+```
 
 ### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
 
@@ -350,11 +354,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTIyNjA1MTEsLTQzOTQyOTk1OCwtMT
-A0OTY2MzU4Niw4MTIwNDM0NDEsMjI4NzE0NDU1LDU2NzU2NDA4
-NywtODc4MjY5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLT
-E2MTkzMzI4ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5
-OTE4NiwtMTUzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3Nz
-Y1LDY2NzQ5NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC0x
-NDY4OTM3NDIyXX0=
+eyJoaXN0b3J5IjpbMTY4MDUyNjMyOCwtNDM5NDI5OTU4LC0xMD
+Q5NjYzNTg2LDgxMjA0MzQ0MSwyMjg3MTQ0NTUsNTY3NTY0MDg3
+LC04NzgyNjk2MDQsLTEyNjcwMjg1OTMsLTQxMjAyMjUyOCwtMT
+YxOTMzMjg4OSw0NjY3NjA0OTQsMTc5MTEwODQ5MywtODQyNDk5
+MTg2LC0xNTM3MTE2ODQzLDE2NzU2NTM3NzcsLTEwNTM5Mzc3Nj
+UsNjY3NDk3NTcwLC0xNDk3MTkyNTg0LDE3NzQzMDg2MDMsLTE0
+Njg5Mzc0MjJdfQ==
 -->
