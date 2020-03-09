@@ -191,9 +191,7 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 
 그렇다면 상속용 클래스를 설계할 때 어떤 메서드를 protected로 노출해야 할까? 안타깝게도 정답은 없다. 심사숙고해서 잘 예측해본 다음, 실제 하위 클래스를 만들어 시험해보는 것이 최선이다. protected 메서드는 하나하나가 내부 구현에 해당하므로 그 수는 가능한 적어야 한다. 한편으로는 너무 적게 노출해서 상속으로 얻는 이점마저 없애지 않도록 주의해야 한다. 
 
-**상속용사용하는지 반드시 문서에 남기라는것이다. 
-
-계층을 위해 설계한 클래스를 테스트할 유일한 방법은 직접 하위 클래스를 직접 만들어 보는 것이다.** 꼭 필요한 protected 멤버를 놓쳤다면 하위 클래스를 작성할때 확연히 티가 난다. 거꾸로 하위 클래스를 여러개 만들때 까지 전혀 쓰이지 않는 protected 멤버는 사실 pirvate이어야 할 가능성이 크다. 경험상 이러한 검증에는 하위 클래스 3개 정도가 적당하다. 그릭 이 중 하나 이상은 제 3자가 작성해봐야 한다. 
+**상속용 클래스를 시험하는 벙법은 직접 하위 클래스를 만들어보는 것이 유일하다.** 꼭 필요한 protected 멤버를 놓쳤다면 하위 클래스를 작성할때 확연히 티가 난다. 거꾸로 하위 클래스를 여러개 만들때 까지 전혀 쓰이지 않는 protected 멤버는 사실 pirvate이어야 할 가능성이 크다. 경험상 이러한 검증에는 하위 클래스 3개 정도가 적당하다. 그릭 이 중 하나 이상은 제 3자가 작성해봐야 한다. 
 
 널리 상속용으로 쓰일 클래스를 설계한다면 무서화한 내부 사용 패턴과, protected 메서드와 필드를 구현하면서 선택한 결정을 영원히 끝까지 책임져야 한다. 이 결정들이 해당 클래스의 성능과 기능에 영원한 족쇄가 될 수 있다. 그러니 상속용으로 설계한 클래스는 **반드시 배포 전에 하위 클래스를 만들어 검증해야 한다.** 
 또한, 상속하려는 사람을 위해 덧붙인 설명은 단순히 그 클래스의 인스턴스를 만들어 사용하려는 프로그래머에게는 필요없다. 일반적인 API 설명과 상속용 설명을 구분하는 설명은 중요하다. 
@@ -359,11 +357,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODEzNTQ1MzAsNTY3NTY0MDg3LC04Nz
-gyNjk2MDQsLTEyNjcwMjg1OTMsLTQxMjAyMjUyOCwtMTYxOTMz
-Mjg4OSw0NjY3NjA0OTQsMTc5MTEwODQ5MywtODQyNDk5MTg2LC
-0xNTM3MTE2ODQzLDE2NzU2NTM3NzcsLTEwNTM5Mzc3NjUsNjY3
-NDk3NTcwLC0xNDk3MTkyNTg0LDE3NzQzMDg2MDMsLTE0Njg5Mz
-c0MjIsMTExNjMwMjkxMiwtNzA2Njc4ODczLDYxNzkwMDgyMSwy
-NDAzMDA5MjFdfQ==
+eyJoaXN0b3J5IjpbMjI4NzE0NDU1LDU2NzU2NDA4NywtODc4Mj
+Y5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLTE2MTkzMzI4
+ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5OTE4NiwtMT
+UzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3NzY1LDY2NzQ5
+NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC0xNDY4OTM3ND
+IyLDExMTYzMDI5MTIsLTcwNjY3ODg3Myw2MTc5MDA4MjEsMjQw
+MzAwOTIxXX0=
 -->
