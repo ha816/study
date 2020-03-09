@@ -166,12 +166,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 >핵심 정리
 >상속은 강력하지만 정보은닉(캡슐화)를 해친다는 문제가 있다. 상속은 반드시 상위 클래스와 하위 클래스가 순수한 is-a 관계일때만 써야한다. is-a관계라고 하더라도 안심할 수 없는 게, 하위 클래스의 패키지가 상위 클래스와 다르고, 상위 클래스가 확장을 고려해 설계되지 않았다면 여전히 문제가 될 수 있다. 상속의 약점을 피하려면 상속 대신 컴포지션과 전달을 사용하자. 특히 Wrapper 혹은 Decorator 클래스를 구현할 적당한 인터페이스가 있다면 더욱 좋다. Wrapper 혹은 Decorator 클래스는 하위 클래스 보다 견고하고 강력하다.
 
-## Item19. 상속을 고려해합시다. is - a 관계
+## Item19. 상속을 고려해 설계하고 문서화하라. 그러지 않았다면 상속을 금지하라
 
 Item18 에서는 상속을 염두에 두지 않은 클래스이자, 상속할 때의 주의점도 문서화하지 않은 패키지 외부에 클래스를 상속할때 위험을 경고했다. 자 이제 상속을 고려한 설계와 정확히 문서화가 뭔지 이야기해보자.
 
-**우선계승을 위한 설계와 문서를 갖춘다는 것은?
--> 매서드를 재정의하면 무슨일이 생기는지 반드시 문서로 남겨야 한다.** 
+
 다시 말해, 상속용 클래스는 재정의할 수 있는재정의 가능 메서드들을를 내부적으로 어떻게 이용하는지(자기사용) 문서로 남겨야 한다. 
 
 클래스의 API로 공개된 (public, protected) 메서드에서 클래스 자신의 또 다른 메서드를 호출할 수도 있다. 그런데 마침 호출되는 메서드가 재정의 가능 메서드라면 그 사실을 호출하는 메서드의 API 설명에 적시해야 한다. 덧붙여서 어떤 순서로 호출하는지, 각각의 호출결과가 이어지는 처리에 어떤 영향을 주는지도 적어야 한다. 여기서 재정의 가능 메서드란 public, protected 이면서 final이 아닌 모든 메서드를 말한다. **반드시 재정의 가능 메서드를 호출할 수 있는 모든 상황을 문서로 남겨야 한다.** 
@@ -361,11 +360,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY3NTY0MDg3LC04NzgyNjk2MDQsLTEyNj
-cwMjg1OTMsLTQxMjAyMjUyOCwtMTYxOTMzMjg4OSw0NjY3NjA0
-OTQsMTc5MTEwODQ5MywtODQyNDk5MTg2LC0xNTM3MTE2ODQzLD
-E2NzU2NTM3NzcsLTEwNTM5Mzc3NjUsNjY3NDk3NTcwLC0xNDk3
-MTkyNTg0LDE3NzQzMDg2MDMsLTE0Njg5Mzc0MjIsMTExNjMwMj
-kxMiwtNzA2Njc4ODczLDYxNzkwMDgyMSwyNDAzMDA5MjEsLTE4
-MTAzNTExMTVdfQ==
+eyJoaXN0b3J5IjpbNzU2OTIyMzA4LDU2NzU2NDA4NywtODc4Mj
+Y5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLTE2MTkzMzI4
+ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5OTE4NiwtMT
+UzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3NzY1LDY2NzQ5
+NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC0xNDY4OTM3ND
+IyLDExMTYzMDI5MTIsLTcwNjY3ODg3Myw2MTc5MDA4MjEsMjQw
+MzAwOTIxXX0=
 -->
