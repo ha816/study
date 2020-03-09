@@ -200,9 +200,10 @@ List 구현체의 최종 사용자는 removeRange 메서드에 관심이 없다.
 
 ```
 public class Super {
-	public Super() { ov}
-
+	public Super() { overrideMe();}
+	public void overrideMe(){ }	
 }
+
 ```
 
 ### 14. public 클래스 안에는 public 필드를 두지 말고 접근자 메서드를 사용해라!
@@ -335,11 +336,11 @@ forwarding 클래스 : 재사용 가능한 전달 클래스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIzNDgzODAwLDgxMjA0MzQ0MSwyMjg3MT
-Q0NTUsNTY3NTY0MDg3LC04NzgyNjk2MDQsLTEyNjcwMjg1OTMs
-LTQxMjAyMjUyOCwtMTYxOTMzMjg4OSw0NjY3NjA0OTQsMTc5MT
-EwODQ5MywtODQyNDk5MTg2LC0xNTM3MTE2ODQzLDE2NzU2NTM3
-NzcsLTEwNTM5Mzc3NjUsNjY3NDk3NTcwLC0xNDk3MTkyNTg0LD
-E3NzQzMDg2MDMsLTE0Njg5Mzc0MjIsMTExNjMwMjkxMiwtNzA2
-Njc4ODczXX0=
+eyJoaXN0b3J5IjpbLTE1ODAwMjIzNTUsODEyMDQzNDQxLDIyOD
+cxNDQ1NSw1Njc1NjQwODcsLTg3ODI2OTYwNCwtMTI2NzAyODU5
+MywtNDEyMDIyNTI4LC0xNjE5MzMyODg5LDQ2Njc2MDQ5NCwxNz
+kxMTA4NDkzLC04NDI0OTkxODYsLTE1MzcxMTY4NDMsMTY3NTY1
+Mzc3NywtMTA1MzkzNzc2NSw2Njc0OTc1NzAsLTE0OTcxOTI1OD
+QsMTc3NDMwODYwMywtMTQ2ODkzNzQyMiwxMTE2MzAyOTEyLC03
+MDY2Nzg4NzNdfQ==
 -->
