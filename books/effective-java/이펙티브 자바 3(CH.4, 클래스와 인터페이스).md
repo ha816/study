@@ -221,8 +221,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 마지막으로, Serializable을 구현한 상속용 클래스가 readResolve나 writeReplace 메서드를 갖는다면 이 메서드들은 private이 아닌 protected로 구현해야 한다. private으로 선언하면 하위 클래스에서 무시되기 때문이다. 이 역시 상속을 허용하기 위해서 내부 구현을 클래스 API로 공개하는 예다.
 
-이제 클래스를 상속용으로 설계하려면 엄청난 노력이 들고 그 클래스에 안기는 제약도 상당함을 알았다. 
-
+거듭강조하지만 상속 문제를 해결하는 가장 좋은 방법은 상속용으로 설계하지 않은 클래스는 상속을 금지하는 것이다. 상속을 금지하는 방법은 final을 클래스에 선언하는 방법과 모든 생성자를 private이나 default로 선언하고 정적 팩터리를 만들어주는 방법이다. 
 
 ### Item. 추상 클래스 대신 인터페이스를 사용해라
 
@@ -288,11 +287,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjM0NDMxMTIsNjM1NTczNDA4LDE0NT
-AyNTA5MzAsOTE2NDAyOTgsLTQzOTQyOTk1OCwtMTA0OTY2MzU4
-Niw4MTIwNDM0NDEsMjI4NzE0NDU1LDU2NzU2NDA4NywtODc4Mj
-Y5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLTE2MTkzMzI4
-ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5OTE4NiwtMT
-UzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3NzY1LDY2NzQ5
-NzU3MF19
+eyJoaXN0b3J5IjpbLTExMzQzMTI4OSw2MzU1NzM0MDgsMTQ1MD
+I1MDkzMCw5MTY0MDI5OCwtNDM5NDI5OTU4LC0xMDQ5NjYzNTg2
+LDgxMjA0MzQ0MSwyMjg3MTQ0NTUsNTY3NTY0MDg3LC04NzgyNj
+k2MDQsLTEyNjcwMjg1OTMsLTQxMjAyMjUyOCwtMTYxOTMzMjg4
+OSw0NjY3NjA0OTQsMTc5MTEwODQ5MywtODQyNDk5MTg2LC0xNT
+M3MTE2ODQzLDE2NzU2NTM3NzcsLTEwNTM5Mzc3NjUsNjY3NDk3
+NTcwXX0=
 -->
