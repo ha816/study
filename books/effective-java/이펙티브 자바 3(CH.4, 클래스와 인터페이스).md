@@ -104,7 +104,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 **메서드 호출과 달리 상속은 캡슐화를 깨뜨린다.**  다르게 말하면, 상위 클래스가 어떻게 구현되었느냐에 따라 하위 클래스의 동작에 이상이 발생할 수 있다. 상위 클래스의 내부 구현이 달라지면 그 여파로 아무것도 수정하지 않은 하위 클래스가 오동작할 수 있다는 말이다.
 
 다행이도 이러한 문제를 해결할 좋은 방법이 있다. 기존 클래스를 확장존재
-계승 하는 대신,에 새로운 클래스를 만들고 private 필드로 기존 클래스의 인스턴스를 참조하게 하자. **새로운 클래스가 기존 클래스를 구성요소로 쓴다는 뜻에서 이를 컴포지션(Composition; 구성)에  기   는 it    이한  기 composite 기법이라고 한다.** 새로운 클래스의 메서드는 기존 클래스에 대응하는 메서드를 호출해서 그 결과를 반환한다. 이런 방식을 전달(forwarding)이라하며 새 클래스의 메서드들을  전달 메서드(forwarding method)라 부른다. **컴포지션과 전달의 조합은 넓은 의미로 위임(delegation)이라 부른다.** 그 결과 새로운 클래스는 기존 클래스의 내부 구현방식에서 벗어나며, 심지어 기존 클래스에 새로운 메서드가 추가되더라도 전혀 영향이 없다. 
+계승 하는 대신,에 새로운 클래스를 만들고 private 필드로 기존 클래스의 인스턴스를 참조하게 하자. **새로운 클래스가 기존 클래스를 구성요소로 쓴다는 뜻에서 이를 컴포지션(Composition; 구성) 기법이라고 한다.** 새로운 클래스의 메서드는 기존 클래스에 대응하는 메서드를 호출해서 그 결과를 반환한다. 이런 방식을 전달(forwarding)이라하며 새 클래스의 메서드들을  전달 메서드(forwarding method)라 부른다. **컴포지션과 전달의 조합은 넓은 의미로 위임(delegation)이라 부른다.** 그 결과 새로운 클래스는 기존 클래스의 내부 구현방식에서 벗어나며, 심지어 기존 클래스에 새로운 메서드가 추가되더라도 전혀 영향이 없다. 
 ```
 // Forwaringding Class - 재사용할 수 있는 새로운 전달클래스
 public class ForwardingSet<E> implements Set<E> {
@@ -288,7 +288,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MTEzMjkzLC0yMTAxNjc4MjExLDYzNT
+eyJoaXN0b3J5IjpbNDk5MzA1MzA3LC0yMTAxNjc4MjExLDYzNT
 U3MzQwOCwxNDUwMjUwOTMwLDkxNjQwMjk4LC00Mzk0Mjk5NTgs
 LTEwNDk2NjM1ODYsODEyMDQzNDQxLDIyODcxNDQ1NSw1Njc1Nj
 QwODcsLTg3ODI2OTYwNCwtMTI2NzAyODU5MywtNDEyMDIyNTI4
