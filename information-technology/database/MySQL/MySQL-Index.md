@@ -169,6 +169,7 @@ ORDER BY col1 ASC, col2 DESC;
 ```
 위 쿼리는 원하는 결과는 조회할 수 있지만 **쿼리 실행 최종 단계에서 레코드를 정렬하는 과정이 추가로 필요하므로 절대로 빠르게 처리될 수 없다.**  이럴때는 col2 값을 그대로 음수로 만들어 저장하는 것이 핵심이다. 음수로 처리하면 별도의 정렬 작업 없이 인덱스를 순서대로 읽기만 해도 정렬되어 출력이 된다. 
 
+#### 인덱스의 스캔방향
 
 
 ### B-Tree 인덱스의 가용성과 효율성
@@ -185,11 +186,11 @@ ORDER BY col1 ASC, col2 DESC;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU1MDA3MTMyLDg4MDQxMDk5NCwtNDI2ND
-UzNDkyLDE0OTQzMDE0MzUsMzg2NDQ2MjYzLDQ0MzY2ODIyMywy
-MDIzMTkzNzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0OSwtNTkwMj
-YzODE4LDM2NDc0OTAwOSwtMTE5OTQ4MzgwNCw4ODg1MTE0NDYs
-MTQwNDQyMTU1NSwtOTM3MzI1NDc0LC04NjQyNDUwNDgsLTQ0MT
-MwNjcwOCwxNzUyNDYwODc3LC0xNTYwMzc2OTAxLDI0ODEwOTU0
-OF19
+eyJoaXN0b3J5IjpbMTYyNjgxNzA5LDc1NTAwNzEzMiw4ODA0MT
+A5OTQsLTQyNjQ1MzQ5MiwxNDk0MzAxNDM1LDM4NjQ0NjI2Myw0
+NDM2NjgyMjMsMjAyMzE5Mzc3NCwtMTQ4NDYyODk4MSw4MTczMT
+Y4NDksLTU5MDI2MzgxOCwzNjQ3NDkwMDksLTExOTk0ODM4MDQs
+ODg4NTExNDQ2LDE0MDQ0MjE1NTUsLTkzNzMyNTQ3NCwtODY0Mj
+Q1MDQ4LC00NDEzMDY3MDgsMTc1MjQ2MDg3NywtMTU2MDM3Njkw
+MV19
 -->
