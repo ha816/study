@@ -1,5 +1,5 @@
 
-## Spring JDBC
+# Spring JDBC
 
 > JDBC는 무엇인가?
 
@@ -458,5 +458,5 @@ NESTED 메서드라면 REQUIRED와 매우 유사하다. 하지만 NESTED 메서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1Nzc2NjI0MV19
+eyJoaXN0b3J5IjpbOTkyNDQ5OTUwXX0=
 -->
