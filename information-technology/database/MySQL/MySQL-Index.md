@@ -161,7 +161,7 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 
 일반적인 상용 DBMS에서는 인덱스를 생성하는 시점에 인덱스를 구성하는 각 컬럼의 정렬을 오름차순 또는 내림차순으로 구성할 수 있다. 
 
-실제로 모든 인덱스는 ASC나 DESC 설정에 
+실제로 모든 인덱스는 오름차순(정순)으로만 정렬된다. 왜냐하면 특정 컬럼을 ASC , DESC하는 것은 단지 인덱스를 앞으로 읽을지 뒤로 읽을지에 따라 해결되기 때문에 아무 문제가 되지 않는다. 
 
 
 ### B-Tree 인덱스의 가용성과 효율성
@@ -178,11 +178,11 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDc0Mzc0ODYsLTQyNjQ1MzQ5MiwxND
-k0MzAxNDM1LDM4NjQ0NjI2Myw0NDM2NjgyMjMsMjAyMzE5Mzc3
-NCwtMTQ4NDYyODk4MSw4MTczMTY4NDksLTU5MDI2MzgxOCwzNj
-Q3NDkwMDksLTExOTk0ODM4MDQsODg4NTExNDQ2LDE0MDQ0MjE1
-NTUsLTkzNzMyNTQ3NCwtODY0MjQ1MDQ4LC00NDEzMDY3MDgsMT
-c1MjQ2MDg3NywtMTU2MDM3NjkwMSwyNDgxMDk1NDgsLTIwNDQ3
-Mzk3MThdfQ==
+eyJoaXN0b3J5IjpbODgwNDEwOTk0LC00MjY0NTM0OTIsMTQ5ND
+MwMTQzNSwzODY0NDYyNjMsNDQzNjY4MjIzLDIwMjMxOTM3NzQs
+LTE0ODQ2Mjg5ODEsODE3MzE2ODQ5LC01OTAyNjM4MTgsMzY0Nz
+Q5MDA5LC0xMTk5NDgzODA0LDg4ODUxMTQ0NiwxNDA0NDIxNTU1
+LC05MzczMjU0NzQsLTg2NDI0NTA0OCwtNDQxMzA2NzA4LDE3NT
+I0NjA4NzcsLTE1NjAzNzY5MDEsMjQ4MTA5NTQ4LC0yMDQ0NzM5
+NzE4XX0=
 -->
