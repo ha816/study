@@ -258,10 +258,7 @@ INDEX ix_test (col_1, col_2, ..., col_n)
 	* 앞에서 부터 i -1번째 까지 인덱스가 Equals 형태('=' 또는 'IN')로 비교
 	* col_i 컬럼에 대해 Equals 비교 또는 크고 작은 비교(>, <) 또는 LIKE 좌측 일치 패턴
 	
-위 두가지 조건을 만족하면 1 ~ i까지는 범위 결정 조건으로 사용되어 작업 범위를 줄인다. 그리고 나머지 i +1 ~
-	* 
-
-
+위 두가지 조건을 만족하면 1 ~ i까지는 범위 결정 조건으로 사용되어 작업 범위를 줄인다. 그리고 나머지 i +1 ~ n까지 조건은 체코 조건으로 사용된다. 
 
 ## Hash Index
 
@@ -272,11 +269,11 @@ INDEX ix_test (col_1, col_2, ..., col_n)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2Mzc4NzIxMSwtMTAxMDcxMDQ4NywxND
-IxMjc3MTYxLDkwMjQyMDQ5OCwxNzUxNTc1NTM2LC05MzQ1Nzc1
-MjYsNTA3ODgxMTU5LDkxODE0MzI5MywxNzc2NjUwNDM2LDUzMD
-U4MDQ2NiwyNjY1ODA5NDQsLTE3MTkzODIxMzUsLTIwOTQ0NDI0
-NjgsLTExNDM0MTY2MiwtMTM3ODkzOTQzNywtMjA4NzE3NjU1Mi
-wxNjI2ODE3MDksNzU1MDA3MTMyLDg4MDQxMDk5NCwtNDI2NDUz
-NDkyXX0=
+eyJoaXN0b3J5IjpbMjk4MDI2NzYyLC0xMDEwNzEwNDg3LDE0Mj
+EyNzcxNjEsOTAyNDIwNDk4LDE3NTE1NzU1MzYsLTkzNDU3NzUy
+Niw1MDc4ODExNTksOTE4MTQzMjkzLDE3NzY2NTA0MzYsNTMwNT
+gwNDY2LDI2NjU4MDk0NCwtMTcxOTM4MjEzNSwtMjA5NDQ0MjQ2
+OCwtMTE0MzQxNjYyLC0xMzc4OTM5NDM3LC0yMDg3MTc2NTUyLD
+E2MjY4MTcwOSw3NTUwMDcxMzIsODgwNDEwOTk0LC00MjY0NTM0
+OTJdfQ==
 -->
