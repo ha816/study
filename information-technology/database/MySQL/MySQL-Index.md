@@ -185,7 +185,13 @@ SELECT * FROM table ORDER BY col1 DESC LIMIT 1;
 
 #### 비교 조건의 종류와 효율
 
-다중 컬럼 인덱스에서 각 컬럼의 순서와 그 컬럼에 사용된 조건이 동등비교(=)인지 아니면 
+다중 컬럼 인덱스에서 각 컬럼의 순서와 그 컬럼에 사용된 조건이 동등비교(=)인지 아니면 범위 조건(>, <)인지에 따라 인덱스 컬럼의 활용 형태가 달라지고 효율도 달라진다. 
+```
+SELECT * FROM dept_emp
+WHERE dept_no = 'd002' AND emp_no >= 10114;
+```
+
+
 
 
 
@@ -200,7 +206,7 @@ SELECT * FROM table ORDER BY col1 DESC LIMIT 1;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNzkwMjYwNywtMTcxOTM4MjEzNSwtMj
+eyJoaXN0b3J5IjpbLTU1MjAxNzc1NiwtMTcxOTM4MjEzNSwtMj
 A5NDQ0MjQ2OCwtMTE0MzQxNjYyLC0xMzc4OTM5NDM3LC0yMDg3
 MTc2NTUyLDE2MjY4MTcwOSw3NTUwMDcxMzIsODgwNDEwOTk0LC
 00MjY0NTM0OTIsMTQ5NDMwMTQzNSwzODY0NDYyNjMsNDQzNjY4
