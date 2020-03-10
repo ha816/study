@@ -219,7 +219,7 @@ cloneable과 Serializable 인터페이스는 상속용 설계시 문제를 더 �
 
 clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라서 상속용 클래스에서 Cloneable과 Serializable을 구현할지 정해야 한다면, 이들을 구현할때 따르는 제약도 생성자와 비슷하다는 점에 주의하자. 즉 **clone과 readObject 모두 직간접적으로 재정의 가능 메서드를 호출해서는 안된다.** readObject의 경우 하위 클래스의 상태가 역직렬화 되기전에 재정의한 메서드가 호출된다. clone의 경우 clone 메서드가 복제본의 상태를 수정하기전에 재정의한 메서드를 호출하게 된다. 두 가지 모두 프로그램 오작동으로 이어진다. 
 
-마지막으로, Serializable을 구현한 상속용 클래스가 
+마지막으로, Serializable을 구현한 상속용 클래스가 readResolve나 write Replace 메서드를 갖는다면 이 메서드들은 private이 아닌 protected로 구현해야 한다.
 
 
 ### Item. 추상 클래스 대신 인터페이스를 사용해라
@@ -286,11 +286,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MDI1MDkzMCw5MTY0MDI5OCwtNDM5ND
-I5OTU4LC0xMDQ5NjYzNTg2LDgxMjA0MzQ0MSwyMjg3MTQ0NTUs
-NTY3NTY0MDg3LC04NzgyNjk2MDQsLTEyNjcwMjg1OTMsLTQxMj
-AyMjUyOCwtMTYxOTMzMjg4OSw0NjY3NjA0OTQsMTc5MTEwODQ5
-MywtODQyNDk5MTg2LC0xNTM3MTE2ODQzLDE2NzU2NTM3NzcsLT
-EwNTM5Mzc3NjUsNjY3NDk3NTcwLC0xNDk3MTkyNTg0LDE3NzQz
-MDg2MDNdfQ==
+eyJoaXN0b3J5IjpbNjM1NTczNDA4LDE0NTAyNTA5MzAsOTE2ND
+AyOTgsLTQzOTQyOTk1OCwtMTA0OTY2MzU4Niw4MTIwNDM0NDEs
+MjI4NzE0NDU1LDU2NzU2NDA4NywtODc4MjY5NjA0LC0xMjY3MD
+I4NTkzLC00MTIwMjI1MjgsLTE2MTkzMzI4ODksNDY2NzYwNDk0
+LDE3OTExMDg0OTMsLTg0MjQ5OTE4NiwtMTUzNzExNjg0MywxNj
+c1NjUzNzc3LC0xMDUzOTM3NzY1LDY2NzQ5NzU3MCwtMTQ5NzE5
+MjU4NF19
 -->
