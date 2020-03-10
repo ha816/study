@@ -208,14 +208,16 @@ B-Tree의 특징은 왼존 값에 기준해서 오른쪽 값이 정렬되어 있
 |  |  |
 
 다중 인덱스 리프 노드
-| 인덱스레코드| 레코드주소 |
+| dept_no| emp_no|
 |--|--|
-|d001|--|
-|d001|--|
-|d002|--|
-|Abz|--|
-|Acxy|--|
-
+|d001|239|
+|d001|259|
+|d002|100|
+|d002|200|
+|d003|10|
+|d003|11|
+|d003|12|
+|||
 
 
 
@@ -233,7 +235,7 @@ B-Tree의 특징은 왼존 값에 기준해서 오른쪽 값이 정렬되어 있
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDQzNjkzMzIsMjY2NTgwOTQ0LC0xNz
+eyJoaXN0b3J5IjpbLTE1MzI4MDk5ODIsMjY2NTgwOTQ0LC0xNz
 E5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMTQzNDE2NjIsLTEzNzg5
 Mzk0MzcsLTIwODcxNzY1NTIsMTYyNjgxNzA5LDc1NTAwNzEzMi
 w4ODA0MTA5OTQsLTQyNjQ1MzQ5MiwxNDk0MzAxNDM1LDM4NjQ0
