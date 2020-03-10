@@ -257,6 +257,8 @@ INDEX ix_test (col1, col2, ...)
 * 작업 범위 결정 조건으로 인덱스를 사용하지 못하는 경우
 	* col1 컬럼에 대한 조건이 없는 경우
 	* col_1 컬럼의 비교 조건이 인덱스 사용 불가 조건인 경우
+* 작업 범위 결정 조건으로 인덱스를 사용하는 경우
+	* col
 
 
 
@@ -269,11 +271,11 @@ INDEX ix_test (col1, col2, ...)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2OTc0MzEzMCwxNzUxNTc1NTM2LC05Mz
-Q1Nzc1MjYsNTA3ODgxMTU5LDkxODE0MzI5MywxNzc2NjUwNDM2
-LDUzMDU4MDQ2NiwyNjY1ODA5NDQsLTE3MTkzODIxMzUsLTIwOT
-Q0NDI0NjgsLTExNDM0MTY2MiwtMTM3ODkzOTQzNywtMjA4NzE3
-NjU1MiwxNjI2ODE3MDksNzU1MDA3MTMyLDg4MDQxMDk5NCwtND
-I2NDUzNDkyLDE0OTQzMDE0MzUsMzg2NDQ2MjYzLDQ0MzY2ODIy
-M119
+eyJoaXN0b3J5IjpbOTAyNDIwNDk4LDE3NTE1NzU1MzYsLTkzND
+U3NzUyNiw1MDc4ODExNTksOTE4MTQzMjkzLDE3NzY2NTA0MzYs
+NTMwNTgwNDY2LDI2NjU4MDk0NCwtMTcxOTM4MjEzNSwtMjA5ND
+Q0MjQ2OCwtMTE0MzQxNjYyLC0xMzc4OTM5NDM3LC0yMDg3MTc2
+NTUyLDE2MjY4MTcwOSw3NTUwMDcxMzIsODgwNDEwOTk0LC00Mj
+Y0NTM0OTIsMTQ5NDMwMTQzNSwzODY0NDYyNjMsNDQzNjY4MjIz
+XX0=
 -->
