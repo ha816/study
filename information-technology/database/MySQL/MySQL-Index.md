@@ -197,12 +197,24 @@ dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 
 
 B-Tree의 특징은 왼존 값에 기준해서 오른쪽 값이 정렬되어 있다는 것이다. 왼쪽이라 함은 하나의 컬럼 내에서 뿐만 아니라 다중 컬럼 인덱스의 컬럼에도 적용된다.
 
-
+단일 인덱스
 | 인덱스레코드| 레코드주소 |
 |--|--|
 |Aamer|--|
 |Aamomd|--|
-|Abdeleaziz|--|
+|Abmer|--|
+|Abzer|--|
+|Acxy|--|
+|  |  |
+
+다중 인덱스
+| 인덱스레코드| 레코드주소 |
+|--|--|
+|Aamer|--|
+|Aamomd|--|
+|Abmer|--|
+|Abzer|--|
+|Acxy|--|
 
 
 
@@ -221,11 +233,11 @@ B-Tree의 특징은 왼존 값에 기준해서 오른쪽 값이 정렬되어 있
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNDkyNTg1LDI2NjU4MDk0NCwtMTcxOT
-M4MjEzNSwtMjA5NDQ0MjQ2OCwtMTE0MzQxNjYyLC0xMzc4OTM5
-NDM3LC0yMDg3MTc2NTUyLDE2MjY4MTcwOSw3NTUwMDcxMzIsOD
-gwNDEwOTk0LC00MjY0NTM0OTIsMTQ5NDMwMTQzNSwzODY0NDYy
-NjMsNDQzNjY4MjIzLDIwMjMxOTM3NzQsLTE0ODQ2Mjg5ODEsOD
-E3MzE2ODQ5LC01OTAyNjM4MTgsMzY0NzQ5MDA5LC0xMTk5NDgz
-ODA0XX0=
+eyJoaXN0b3J5IjpbLTE4MjMxNzE5NDcsMjY2NTgwOTQ0LC0xNz
+E5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMTQzNDE2NjIsLTEzNzg5
+Mzk0MzcsLTIwODcxNzY1NTIsMTYyNjgxNzA5LDc1NTAwNzEzMi
+w4ODA0MTA5OTQsLTQyNjQ1MzQ5MiwxNDk0MzAxNDM1LDM4NjQ0
+NjI2Myw0NDM2NjgyMjMsMjAyMzE5Mzc3NCwtMTQ4NDYyODk4MS
+w4MTczMTY4NDksLTU5MDI2MzgxOCwzNjQ3NDkwMDksLTExOTk0
+ODM4MDRdfQ==
 -->
