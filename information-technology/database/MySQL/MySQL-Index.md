@@ -217,11 +217,12 @@ B-Tree의 특징은 왼존 값에 기준(Left-most)해서 오른쪽 값이 정�
 |d003|10|
 |d003|11|
 
-**사실 빠른 검색의 전제 조건은 바로 정렬이다.** 컬럼으로 검색해도 값의 왼쪽 부분이 없으면 인덱스 레인지 스캔이 불가능하다. 
+**사실 빠른 검색의 전제 조건은 바로 정렬이다.** 컬럼으로 검색해도 값의 왼쪽 부분이 없으면 인덱스 레인지 스캔이 불가능하다. 아래 쿼리는 레이진 스캔 방식을 이용할 수 없다.
 
 ```
 SELECT * FROM employees WHERE first_name LIKE '%mer';
 ```
+first_name 컬럼의 저장된 값의 왼쪽 부터 비교해 가면서 일치하는 레코들
 
 
 
@@ -236,7 +237,7 @@ SELECT * FROM employees WHERE first_name LIKE '%mer';
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMjQzODAyNiwyNjY1ODA5NDQsLTE3MT
+eyJoaXN0b3J5IjpbMTIzODg5NDQzOSwyNjY1ODA5NDQsLTE3MT
 kzODIxMzUsLTIwOTQ0NDI0NjgsLTExNDM0MTY2MiwtMTM3ODkz
 OTQzNywtMjA4NzE3NjU1MiwxNjI2ODE3MDksNzU1MDA3MTMyLD
 g4MDQxMDk5NCwtNDI2NDUzNDkyLDE0OTQzMDE0MzUsMzg2NDQ2
