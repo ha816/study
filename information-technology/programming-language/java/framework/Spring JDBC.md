@@ -1,5 +1,5 @@
 
-# Spring JDBC
+# Spring# 스프링 JDBC
 
 > JDBC는 무엇인가?
 
@@ -454,7 +454,9 @@ SUPPORTED 메서드라면 만들어진 트랜잭션이 존재하면 그 트랜�
 
 NESTED 메서드라면 REQUIRED와 매우 유사하다. 하지만 NESTED 메서드 구간안에서는 중첩된 트랜잭션 취급하게 된다. NESTED 구간안에서 롤백이 되면 NESTED 구간안의 모든 내용은 롤백 되지만 구간 밖에 내용은 롤백 되지 않는다. 즉 REQUIRED는 어떤 구간에서 예외가 발생하든 모두 롤백이 되지만, NESTED는 come visible. However, Transaction 1 has already seen a different value for _age_ in that row. At the SERIALIZABLE and REPEATABLE READ isolation levels, the DBMS must return the old value for the second SELECT. At READ COMMITTED and READ UNCOMMITTED, the DBMS may return the updated value; this is a non-repeatable read.
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NzM1MzI1LDk5MjQ0OTk1MF19
+eyJoaXN0b3J5IjpbOTE2NTM3NjEsLTY2NzM1MzI1LDk5MjQ0OT
+k1MF19
 -->
