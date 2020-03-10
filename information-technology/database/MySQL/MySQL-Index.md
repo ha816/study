@@ -241,6 +241,12 @@ B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 
 	* SUBSTRING(col) = 'X
 	* DAYOFMONTH(col) = 1
 * 데이터 타입이 서로 다른 비교
+	* WHERE 문자열 = 10
+* 문자열 데이터 타입의 콜레이션이 다른 경우
+	* WHERE utf8_bin_char_column = euckr_bin_char_column
+
+마지막으로 일반적인 DBMS에서는 NULL 값은 인덱스에 저장되지 않지만 MySQL에서는 NULL 값도 인덱스로 관리된다. 
+
 
 ## Hash Index
 
@@ -251,11 +257,11 @@ B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNDU3NzUyNiw1MDc4ODExNTksOTE4MT
-QzMjkzLDE3NzY2NTA0MzYsNTMwNTgwNDY2LDI2NjU4MDk0NCwt
-MTcxOTM4MjEzNSwtMjA5NDQ0MjQ2OCwtMTE0MzQxNjYyLC0xMz
-c4OTM5NDM3LC0yMDg3MTc2NTUyLDE2MjY4MTcwOSw3NTUwMDcx
-MzIsODgwNDEwOTk0LC00MjY0NTM0OTIsMTQ5NDMwMTQzNSwzOD
-Y0NDYyNjMsNDQzNjY4MjIzLDIwMjMxOTM3NzQsLTE0ODQ2Mjg5
-ODFdfQ==
+eyJoaXN0b3J5IjpbMjEwMTcwNjYwMywtOTM0NTc3NTI2LDUwNz
+g4MTE1OSw5MTgxNDMyOTMsMTc3NjY1MDQzNiw1MzA1ODA0NjYs
+MjY2NTgwOTQ0LC0xNzE5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMT
+QzNDE2NjIsLTEzNzg5Mzk0MzcsLTIwODcxNzY1NTIsMTYyNjgx
+NzA5LDc1NTAwNzEzMiw4ODA0MTA5OTQsLTQyNjQ1MzQ5MiwxND
+k0MzAxNDM1LDM4NjQ0NjI2Myw0NDM2NjgyMjMsMjAyMzE5Mzc3
+NF19
 -->
