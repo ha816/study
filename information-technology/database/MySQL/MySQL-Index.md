@@ -167,7 +167,7 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 SELECT * FROM TABLE
 ORDER BY col1 ASC, col2 DESC;
 ```
-위 쿼리는 원하는 결과는 조회할 수 있지만 **쿼리 실행 최종 단계에서 레코드를 정렬하는 과정이 추가로 필요하므로 절대로 빠르게 처리될 수 없다.**  이럴때는 col2 갑
+위 쿼리는 원하는 결과는 조회할 수 있지만 **쿼리 실행 최종 단계에서 레코드를 정렬하는 과정이 추가로 필요하므로 절대로 빠르게 처리될 수 없다.**  이럴때는 col2 값을 그대로 음수로 만들어 저장하는 것이 핵심이다. 음수로 처리하면 별도의 정렬 작업 없이 인덱스를 순서대로 읽기만 해도 정렬되어 출력이 된다. 
 
 
 
@@ -185,7 +185,7 @@ ORDER BY col1 ASC, col2 DESC;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc1Mjg4MTk5LDg4MDQxMDk5NCwtNDI2ND
+eyJoaXN0b3J5IjpbNzU1MDA3MTMyLDg4MDQxMDk5NCwtNDI2ND
 UzNDkyLDE0OTQzMDE0MzUsMzg2NDQ2MjYzLDQ0MzY2ODIyMywy
 MDIzMTkzNzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0OSwtNTkwMj
 YzODE4LDM2NDc0OTAwOSwtMTE5OTQ4MzgwNCw4ODg1MTE0NDYs
