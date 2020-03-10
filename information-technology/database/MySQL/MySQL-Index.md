@@ -250,6 +250,7 @@ B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 
 WHERE colum IS NULL
 ```
 
+
 ## Hash Index
 
 
@@ -259,7 +260,7 @@ WHERE colum IS NULL
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMTc2MDAwMywtOTM0NTc3NTI2LDUwNz
+eyJoaXN0b3J5IjpbLTM4MDE4NDg3NSwtOTM0NTc3NTI2LDUwNz
 g4MTE1OSw5MTgxNDMyOTMsMTc3NjY1MDQzNiw1MzA1ODA0NjYs
 MjY2NTgwOTQ0LC0xNzE5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMT
 QzNDE2NjIsLTEzNzg5Mzk0MzcsLTIwODcxNzY1NTIsMTYyNjgx
