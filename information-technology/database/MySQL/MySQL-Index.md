@@ -231,7 +231,7 @@ SELECT * FROM dept_emp WHERE emp_no >= 100;
 
 #### 가용성과 효율성 판단
 
-기본적인 B-Tree의 인덱스 특성상 
+B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 수 없다. 여기서 사용할 수 없다는 것은 엄밀히 말하여 작업의 범위를 줄이는 결정 조건으로 사용할 수 없다는 것을 말한다. 
 
 ## Hash Index
 
@@ -242,11 +242,11 @@ SELECT * FROM dept_emp WHERE emp_no >= 100;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NjY1MDQzNiw1MzA1ODA0NjYsMjY2NT
-gwOTQ0LC0xNzE5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMTQzNDE2
-NjIsLTEzNzg5Mzk0MzcsLTIwODcxNzY1NTIsMTYyNjgxNzA5LD
-c1NTAwNzEzMiw4ODA0MTA5OTQsLTQyNjQ1MzQ5MiwxNDk0MzAx
-NDM1LDM4NjQ0NjI2Myw0NDM2NjgyMjMsMjAyMzE5Mzc3NCwtMT
-Q4NDYyODk4MSw4MTczMTY4NDksLTU5MDI2MzgxOCwzNjQ3NDkw
-MDldfQ==
+eyJoaXN0b3J5IjpbOTE4MTQzMjkzLDE3NzY2NTA0MzYsNTMwNT
+gwNDY2LDI2NjU4MDk0NCwtMTcxOTM4MjEzNSwtMjA5NDQ0MjQ2
+OCwtMTE0MzQxNjYyLC0xMzc4OTM5NDM3LC0yMDg3MTc2NTUyLD
+E2MjY4MTcwOSw3NTUwMDcxMzIsODgwNDEwOTk0LC00MjY0NTM0
+OTIsMTQ5NDMwMTQzNSwzODY0NDYyNjMsNDQzNjY4MjIzLDIwMj
+MxOTM3NzQsLTE0ODQ2Mjg5ODEsODE3MzE2ODQ5LC01OTAyNjM4
+MThdfQ==
 -->
