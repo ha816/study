@@ -245,8 +245,10 @@ B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 
 * 문자열 데이터 타입의 콜레이션이 다른 경우
 	* WHERE utf8_bin_char_column = euckr_bin_char_column
 
-마지막으로 일반적인 DBMS에서는 NULL 값은 인덱스에 저장되지 않지만 MySQL에서는 NULL 값도 인덱스로 관리된다. 
-
+마지막으로 일반적인 DBMS에서는 NULL 값은 인덱스에 저장되지 않지만 MySQL에서는 NULL 값도 인덱스로 관리된다. 즉 다음과 같은 WHERE 조건도 작업 범위 결정 조건으로 인덱스를 사용한다. 
+```
+WHERE colum IS NULL
+```
 
 ## Hash Index
 
@@ -257,7 +259,7 @@ B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMTcwNjYwMywtOTM0NTc3NTI2LDUwNz
+eyJoaXN0b3J5IjpbMTEwMTc2MDAwMywtOTM0NTc3NTI2LDUwNz
 g4MTE1OSw5MTgxNDMyOTMsMTc3NjY1MDQzNiw1MzA1ODA0NjYs
 MjY2NTgwOTQ0LC0xNzE5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMT
 QzNDE2NjIsLTEzNzg5Mzk0MzcsLTIwODcxNzY1NTIsMTYyNjgx
