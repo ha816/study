@@ -175,7 +175,7 @@ ORDER BY col1 ASC, col2 DESC;
 SELECT * FROM table ORDER BY col1 DESC LIMIT 1;
 ```
 
-위와 같은 쿼리를 실행하면 과연 인덱스를 처음부터 오름차순까지 끝까지 읽어 마지막 레코드 하나만을 가져오는걸까? 
+위와 같은 쿼리를 실행하면 과연 인덱스를 처음부터 오름차순까지 끝까지 읽어 마지막 레코드 하나만을 가져오는걸까? 그렇지 않다. 인덱스는 항상 오름차순으로 정렬돼 있기 때문에 최대값에서 부터 역순으로 접근하면 위의 쿼리를 
 
 
 
@@ -193,11 +193,11 @@ SELECT * FROM table ORDER BY col1 DESC LIMIT 1;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODcxNzY1NTIsMTYyNjgxNzA5LDc1NT
-AwNzEzMiw4ODA0MTA5OTQsLTQyNjQ1MzQ5MiwxNDk0MzAxNDM1
-LDM4NjQ0NjI2Myw0NDM2NjgyMjMsMjAyMzE5Mzc3NCwtMTQ4ND
-YyODk4MSw4MTczMTY4NDksLTU5MDI2MzgxOCwzNjQ3NDkwMDks
-LTExOTk0ODM4MDQsODg4NTExNDQ2LDE0MDQ0MjE1NTUsLTkzNz
-MyNTQ3NCwtODY0MjQ1MDQ4LC00NDEzMDY3MDgsMTc1MjQ2MDg3
-N119
+eyJoaXN0b3J5IjpbLTE4ODQwODg5MywtMjA4NzE3NjU1MiwxNj
+I2ODE3MDksNzU1MDA3MTMyLDg4MDQxMDk5NCwtNDI2NDUzNDky
+LDE0OTQzMDE0MzUsMzg2NDQ2MjYzLDQ0MzY2ODIyMywyMDIzMT
+kzNzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0OSwtNTkwMjYzODE4
+LDM2NDc0OTAwOSwtMTE5OTQ4MzgwNCw4ODg1MTE0NDYsMTQwND
+QyMTU1NSwtOTM3MzI1NDc0LC04NjQyNDUwNDgsLTQ0MTMwNjcw
+OF19
 -->
