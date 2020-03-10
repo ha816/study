@@ -236,7 +236,9 @@ B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 
 * NOT-EQUAL 비교
 	* "<>", "NOT IN", "IS NOT NULL"
 * LIKE '%?' (앞부분이 아닌 뒷부분 일치) 형태로 문자열 패턴 비교
-	* LIKE '% d'
+	* LIKE '%없어'
+* 스토어드 함수나 다른 연산자로 인덱스 컬럼이 변형된 후 비교
+	* 
 
 ## Hash Index
 
@@ -247,11 +249,11 @@ B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MjA0MzY0Myw5MTgxNDMyOTMsMTc3Nj
-Y1MDQzNiw1MzA1ODA0NjYsMjY2NTgwOTQ0LC0xNzE5MzgyMTM1
-LC0yMDk0NDQyNDY4LC0xMTQzNDE2NjIsLTEzNzg5Mzk0MzcsLT
-IwODcxNzY1NTIsMTYyNjgxNzA5LDc1NTAwNzEzMiw4ODA0MTA5
-OTQsLTQyNjQ1MzQ5MiwxNDk0MzAxNDM1LDM4NjQ0NjI2Myw0ND
-M2NjgyMjMsMjAyMzE5Mzc3NCwtMTQ4NDYyODk4MSw4MTczMTY4
-NDldfQ==
+eyJoaXN0b3J5IjpbNTA3ODgxMTU5LDkxODE0MzI5MywxNzc2Nj
+UwNDM2LDUzMDU4MDQ2NiwyNjY1ODA5NDQsLTE3MTkzODIxMzUs
+LTIwOTQ0NDI0NjgsLTExNDM0MTY2MiwtMTM3ODkzOTQzNywtMj
+A4NzE3NjU1MiwxNjI2ODE3MDksNzU1MDA3MTMyLDg4MDQxMDk5
+NCwtNDI2NDUzNDkyLDE0OTQzMDE0MzUsMzg2NDQ2MjYzLDQ0Mz
+Y2ODIyMywyMDIzMTkzNzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0
+OV19
 -->
