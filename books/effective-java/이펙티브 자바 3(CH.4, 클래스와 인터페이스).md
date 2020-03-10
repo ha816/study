@@ -224,7 +224,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 거듭강조하지만 상속 문제를 해결하는 가장 좋은 방법은 상속용으로 설계하지 않은 클래스는 상속을 금지하는 것이다. 상속을 금지하는 방법은 final을 클래스에 선언하는 방법과 모든 생성자를 private이나 default로 선언하고 정적 팩터리를 만들어주는 방법이다. 
 
 >핵심 정리
->상속용 클래스를 설계하기란 결코 만만치 않다. 클래스 내부에서 스스로 어떻게 사용하는지(자기사용 패턴) 모두 문서로 남
+>상속용 클래스를 설계하기란 결코 만만치 않다. 클래스 내부에서 스스로 어떻게 사용하는지(자기사용 패턴) 모두 문서로 남겨야 하며, 일단 문서화 한것은 그 클래스가 쓰이는 한 반드시 지켜져야 한다. 
 
 ### Item. 추상 클래스 대신 인터페이스를 사용해라
 
@@ -290,11 +290,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MzU4MjE0OCw2MzU1NzM0MDgsMTQ1MD
-I1MDkzMCw5MTY0MDI5OCwtNDM5NDI5OTU4LC0xMDQ5NjYzNTg2
-LDgxMjA0MzQ0MSwyMjg3MTQ0NTUsNTY3NTY0MDg3LC04NzgyNj
-k2MDQsLTEyNjcwMjg1OTMsLTQxMjAyMjUyOCwtMTYxOTMzMjg4
-OSw0NjY3NjA0OTQsMTc5MTEwODQ5MywtODQyNDk5MTg2LC0xNT
-M3MTE2ODQzLDE2NzU2NTM3NzcsLTEwNTM5Mzc3NjUsNjY3NDk3
-NTcwXX0=
+eyJoaXN0b3J5IjpbLTIxMDE2NzgyMTEsNjM1NTczNDA4LDE0NT
+AyNTA5MzAsOTE2NDAyOTgsLTQzOTQyOTk1OCwtMTA0OTY2MzU4
+Niw4MTIwNDM0NDEsMjI4NzE0NDU1LDU2NzU2NDA4NywtODc4Mj
+Y5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLTE2MTkzMzI4
+ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5OTE4NiwtMT
+UzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3NzY1LDY2NzQ5
+NzU3MF19
 -->
