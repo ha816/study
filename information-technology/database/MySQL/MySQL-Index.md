@@ -171,7 +171,9 @@ ORDER BY col1 ASC, col2 DESC;
 
 #### 인덱스의 스캔방향
 
+```
 
+```
 
 
 
@@ -189,7 +191,7 @@ ORDER BY col1 ASC, col2 DESC;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjgwNzk2NSwxNjI2ODE3MDksNzU1MD
+eyJoaXN0b3J5IjpbMTc4Mjc1NDA0NywxNjI2ODE3MDksNzU1MD
 A3MTMyLDg4MDQxMDk5NCwtNDI2NDUzNDkyLDE0OTQzMDE0MzUs
 Mzg2NDQ2MjYzLDQ0MzY2ODIyMywyMDIzMTkzNzc0LC0xNDg0Nj
 I4OTgxLDgxNzMxNjg0OSwtNTkwMjYzODE4LDM2NDc0OTAwOSwt
