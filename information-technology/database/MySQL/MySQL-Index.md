@@ -256,7 +256,9 @@ INDEX ix_test (col_1, col_2, ..., col_n)
 
 * 작업 범위 결정 조건으로 인덱스를 사용하는 경우
 	* 앞에서 부터 i -1번째 까지 인덱스가 Equals 형태('=' 또는 'IN')로 비교
-	* col_n 
+	* col_i 컬럼에 대해 Equals 비교 또는 크고 작은 비교(>, <) 또는 LIKE 좌측 일치 패턴
+	
+위 두가지 조건을 만족하면 1 ~ i까지는 범위 결정 조건으로 사용되어 작업 범위를 줄인다. 그리고 나머지 i +1 ~
 	* 
 
 
@@ -270,11 +272,11 @@ INDEX ix_test (col_1, col_2, ..., col_n)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTA3MTA0ODcsMTQyMTI3NzE2MSw5MD
-I0MjA0OTgsMTc1MTU3NTUzNiwtOTM0NTc3NTI2LDUwNzg4MTE1
-OSw5MTgxNDMyOTMsMTc3NjY1MDQzNiw1MzA1ODA0NjYsMjY2NT
-gwOTQ0LC0xNzE5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMTQzNDE2
-NjIsLTEzNzg5Mzk0MzcsLTIwODcxNzY1NTIsMTYyNjgxNzA5LD
-c1NTAwNzEzMiw4ODA0MTA5OTQsLTQyNjQ1MzQ5MiwxNDk0MzAx
-NDM1XX0=
+eyJoaXN0b3J5IjpbMTY2Mzc4NzIxMSwtMTAxMDcxMDQ4NywxND
+IxMjc3MTYxLDkwMjQyMDQ5OCwxNzUxNTc1NTM2LC05MzQ1Nzc1
+MjYsNTA3ODgxMTU5LDkxODE0MzI5MywxNzc2NjUwNDM2LDUzMD
+U4MDQ2NiwyNjY1ODA5NDQsLTE3MTkzODIxMzUsLTIwOTQ0NDI0
+NjgsLTExNDM0MTY2MiwtMTM3ODkzOTQzNywtMjA4NzE3NjU1Mi
+wxNjI2ODE3MDksNzU1MDA3MTMyLDg4MDQxMDk5NCwtNDI2NDUz
+NDkyXX0=
 -->
