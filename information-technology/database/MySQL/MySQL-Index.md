@@ -181,7 +181,11 @@ SELECT * FROM table ORDER BY col1 DESC LIMIT 1;
 
 ### B-Tree 인덱스의 가용성과 효율성
 
-쿼리의 WHERE 조건이나 GROUP BY 또는 ORDER BY 절이 어떤 경우에 인덱스를 사용할 수 있고 어떤 방식으로 사용
+쿼리의 WHERE 조건이나 GROUP BY 또는 ORDER BY 절이 어떤 경우에 인덱스를 사용할 수 있고 어떤 방식으로 사용할 수 있는지 알아야 한다. 
+
+#### 비교 조건의 종류와 효율
+
+다중 컬럼 인덱스에서 각 컬럼의 순서와 그 컬럼에 사용된 조건에 따라 범위 조건인지 
 
 
 
@@ -196,11 +200,11 @@ SELECT * FROM table ORDER BY col1 DESC LIMIT 1;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTQ0NDI0NjgsLTExNDM0MTY2MiwtMT
-M3ODkzOTQzNywtMjA4NzE3NjU1MiwxNjI2ODE3MDksNzU1MDA3
-MTMyLDg4MDQxMDk5NCwtNDI2NDUzNDkyLDE0OTQzMDE0MzUsMz
-g2NDQ2MjYzLDQ0MzY2ODIyMywyMDIzMTkzNzc0LC0xNDg0NjI4
-OTgxLDgxNzMxNjg0OSwtNTkwMjYzODE4LDM2NDc0OTAwOSwtMT
-E5OTQ4MzgwNCw4ODg1MTE0NDYsMTQwNDQyMTU1NSwtOTM3MzI1
-NDc0XX0=
+eyJoaXN0b3J5IjpbLTE3MTkzODIxMzUsLTIwOTQ0NDI0NjgsLT
+ExNDM0MTY2MiwtMTM3ODkzOTQzNywtMjA4NzE3NjU1MiwxNjI2
+ODE3MDksNzU1MDA3MTMyLDg4MDQxMDk5NCwtNDI2NDUzNDkyLD
+E0OTQzMDE0MzUsMzg2NDQ2MjYzLDQ0MzY2ODIyMywyMDIzMTkz
+Nzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0OSwtNTkwMjYzODE4LD
+M2NDc0OTAwOSwtMTE5OTQ4MzgwNCw4ODg1MTE0NDYsMTQwNDQy
+MTU1NV19
 -->
