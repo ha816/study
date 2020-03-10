@@ -163,6 +163,11 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 
 실제로 모든 인덱스는 오름차순(정순)으로만 정렬된다. 왜냐하면 특정 컬럼을 ASC , DESC하는 것은 단지 인덱스를 앞으로 읽을지 뒤로 읽을지에 따라 해결되기 때문에 아무 문제가 되지 않는다. 가끔 아래 쿼리와 같이 인덱스를 구성하는 컬럼 중에 오름차순과 내림차순을 혼합해서 만들어야 할때가 있다. 
 
+```
+SELECT * FROM TABLE
+ORDER BY col1 ASC, col2 DESC;
+```
+위 쿼리는 원하는 결과는 조회할 수 있지만 쿼리 실행 최종 단계에서 레코드를 정렬하는 과정이 추가로 필요하므로 절대로 빠르게 처리ㄷ
 
 
 ### B-Tree 인덱스의 가용성과 효율성
@@ -179,11 +184,11 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDAyNjM3MzksODgwNDEwOTk0LC00Mj
-Y0NTM0OTIsMTQ5NDMwMTQzNSwzODY0NDYyNjMsNDQzNjY4MjIz
-LDIwMjMxOTM3NzQsLTE0ODQ2Mjg5ODEsODE3MzE2ODQ5LC01OT
-AyNjM4MTgsMzY0NzQ5MDA5LC0xMTk5NDgzODA0LDg4ODUxMTQ0
-NiwxNDA0NDIxNTU1LC05MzczMjU0NzQsLTg2NDI0NTA0OCwtND
-QxMzA2NzA4LDE3NTI0NjA4NzcsLTE1NjAzNzY5MDEsMjQ4MTA5
-NTQ4XX0=
+eyJoaXN0b3J5IjpbODE5NDk4NTAxLDg4MDQxMDk5NCwtNDI2ND
+UzNDkyLDE0OTQzMDE0MzUsMzg2NDQ2MjYzLDQ0MzY2ODIyMywy
+MDIzMTkzNzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0OSwtNTkwMj
+YzODE4LDM2NDc0OTAwOSwtMTE5OTQ4MzgwNCw4ODg1MTE0NDYs
+MTQwNDQyMTU1NSwtOTM3MzI1NDc0LC04NjQyNDUwNDgsLTQ0MT
+MwNjcwOCwxNzUyNDYwODc3LC0xNTYwMzc2OTAxLDI0ODEwOTU0
+OF19
 -->
