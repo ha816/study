@@ -238,7 +238,9 @@ B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 
 * LIKE '%?' (앞부분이 아닌 뒷부분 일치) 형태로 문자열 패턴 비교
 	* LIKE '%없어'
 * 스토어드 함수나 다른 연산자로 인덱스 컬럼이 변형된 후 비교
-	* 
+	* SUBSTRING(col) = 'X
+	* DAYOFMONTH(col) = 1
+* 데이터 타입이 서로 다른 비교
 
 ## Hash Index
 
@@ -249,11 +251,11 @@ B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA3ODgxMTU5LDkxODE0MzI5MywxNzc2Nj
-UwNDM2LDUzMDU4MDQ2NiwyNjY1ODA5NDQsLTE3MTkzODIxMzUs
-LTIwOTQ0NDI0NjgsLTExNDM0MTY2MiwtMTM3ODkzOTQzNywtMj
-A4NzE3NjU1MiwxNjI2ODE3MDksNzU1MDA3MTMyLDg4MDQxMDk5
-NCwtNDI2NDUzNDkyLDE0OTQzMDE0MzUsMzg2NDQ2MjYzLDQ0Mz
-Y2ODIyMywyMDIzMTkzNzc0LC0xNDg0NjI4OTgxLDgxNzMxNjg0
-OV19
+eyJoaXN0b3J5IjpbLTkzNDU3NzUyNiw1MDc4ODExNTksOTE4MT
+QzMjkzLDE3NzY2NTA0MzYsNTMwNTgwNDY2LDI2NjU4MDk0NCwt
+MTcxOTM4MjEzNSwtMjA5NDQ0MjQ2OCwtMTE0MzQxNjYyLC0xMz
+c4OTM5NDM3LC0yMDg3MTc2NTUyLDE2MjY4MTcwOSw3NTUwMDcx
+MzIsODgwNDEwOTk0LC00MjY0NTM0OTIsMTQ5NDMwMTQzNSwzOD
+Y0NDYyNjMsNDQzNjY4MjIzLDIwMjMxOTM3NzQsLTE0ODQ2Mjg5
+ODFdfQ==
 -->
