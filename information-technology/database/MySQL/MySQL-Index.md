@@ -197,7 +197,7 @@ dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 
 
 B-Tree의 특징은 왼존 값에 기준해서 오른쪽 값이 정렬되어 있다는 것이다. 왼쪽이라 함은 하나의 컬럼 내에서 뿐만 아니라 다중 컬럼 인덱스의 컬럼에도 적용된다.
 
-단일 인덱스
+단일 인덱스 리프 노드
 | 인덱스레코드| 레코드주소 |
 |--|--|
 |Aamer|--|
@@ -207,13 +207,13 @@ B-Tree의 특징은 왼존 값에 기준해서 오른쪽 값이 정렬되어 있
 |Acxy|--|
 |  |  |
 
-다중 인덱스
+다중 인덱스 리프 노드
 | 인덱스레코드| 레코드주소 |
 |--|--|
-|Aamer|--|
-|Aamomd|--|
-|Abmer|--|
-|Abzer|--|
+|d001|--|
+|d001|--|
+|d002|--|
+|Abz|--|
 |Acxy|--|
 
 
@@ -233,7 +233,7 @@ B-Tree의 특징은 왼존 값에 기준해서 오른쪽 값이 정렬되어 있
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjMxNzE5NDcsMjY2NTgwOTQ0LC0xNz
+eyJoaXN0b3J5IjpbLTE3NDQzNjkzMzIsMjY2NTgwOTQ0LC0xNz
 E5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMTQzNDE2NjIsLTEzNzg5
 Mzk0MzcsLTIwODcxNzY1NTIsMTYyNjgxNzA5LDc1NTAwNzEzMi
 w4ODA0MTA5OTQsLTQyNjQ1MzQ5MiwxNDk0MzAxNDM1LDM4NjQ0
