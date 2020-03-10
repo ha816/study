@@ -224,14 +224,12 @@ SELECT * FROM employees WHERE first_name LIKE '%mer';
 ```
 first_name 컬럼의 저장된 값의 왼쪽 부터 비교해 가면서 일치하는 레코드를 찾아야 하는데, '%mer'에는 왼쪽 부분이 고정되지 않았기 때문이다. 
 
-다중 인덱스의 예로 아래 쿼리를 보자.
+다중 인덱스의 예로 아래 쿼리를 보자. 조건으로 dept_no와 emp_no가 주어졌다면 인덱스를 효율적으로 사용할 수 있지만, emp_no만 주어졌기 때문에 효율적일 수가 없다. 
 ```
 SELECT * FROM dept_emp WHERE emp_no >= 100;
 ```
 
-
-
-
+#### 가용성과 효율성 판단
 
 ## Hash Index
 
@@ -242,11 +240,11 @@ SELECT * FROM dept_emp WHERE emp_no >= 100;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDExMjQ2ODYsMjY2NTgwOTQ0LC0xNz
-E5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMTQzNDE2NjIsLTEzNzg5
-Mzk0MzcsLTIwODcxNzY1NTIsMTYyNjgxNzA5LDc1NTAwNzEzMi
-w4ODA0MTA5OTQsLTQyNjQ1MzQ5MiwxNDk0MzAxNDM1LDM4NjQ0
-NjI2Myw0NDM2NjgyMjMsMjAyMzE5Mzc3NCwtMTQ4NDYyODk4MS
-w4MTczMTY4NDksLTU5MDI2MzgxOCwzNjQ3NDkwMDksLTExOTk0
-ODM4MDRdfQ==
+eyJoaXN0b3J5IjpbNTMwNTgwNDY2LDI2NjU4MDk0NCwtMTcxOT
+M4MjEzNSwtMjA5NDQ0MjQ2OCwtMTE0MzQxNjYyLC0xMzc4OTM5
+NDM3LC0yMDg3MTc2NTUyLDE2MjY4MTcwOSw3NTUwMDcxMzIsOD
+gwNDEwOTk0LC00MjY0NTM0OTIsMTQ5NDMwMTQzNSwzODY0NDYy
+NjMsNDQzNjY4MjIzLDIwMjMxOTM3NzQsLTE0ODQ2Mjg5ODEsOD
+E3MzE2ODQ5LC01OTAyNjM4MTgsMzY0NzQ5MDA5LC0xMTk5NDgz
+ODA0XX0=
 -->
