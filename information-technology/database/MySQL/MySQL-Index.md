@@ -191,7 +191,7 @@ SELECT * FROM dept_emp
 WHERE dept_no = 'd002' AND emp_no >= 10114;
 ```
 
-dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 작업 범위 결정 조건이라 ㅎ
+dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 작업 범위 결정 조건이라 한다. 하지만 각 조건이 항상 작업의 단위를 줄이지는 못하고 단순히 거름종이 역할만 하는 조건일 수도 있다. 그런 조건을 필터링 조건, 체크 조건이라 한다. **작업의 범위를 결정하는 조건은 많으면 많을 수록 쿼리의 처리 성능을 높인다.** 
 
 
 
@@ -207,11 +207,11 @@ dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NDg3NDkyNSwtMTcxOTM4MjEzNSwtMj
-A5NDQ0MjQ2OCwtMTE0MzQxNjYyLC0xMzc4OTM5NDM3LC0yMDg3
-MTc2NTUyLDE2MjY4MTcwOSw3NTUwMDcxMzIsODgwNDEwOTk0LC
-00MjY0NTM0OTIsMTQ5NDMwMTQzNSwzODY0NDYyNjMsNDQzNjY4
-MjIzLDIwMjMxOTM3NzQsLTE0ODQ2Mjg5ODEsODE3MzE2ODQ5LC
-01OTAyNjM4MTgsMzY0NzQ5MDA5LC0xMTk5NDgzODA0LDg4ODUx
-MTQ0Nl19
+eyJoaXN0b3J5IjpbMjY2NTgwOTQ0LC0xNzE5MzgyMTM1LC0yMD
+k0NDQyNDY4LC0xMTQzNDE2NjIsLTEzNzg5Mzk0MzcsLTIwODcx
+NzY1NTIsMTYyNjgxNzA5LDc1NTAwNzEzMiw4ODA0MTA5OTQsLT
+QyNjQ1MzQ5MiwxNDk0MzAxNDM1LDM4NjQ0NjI2Myw0NDM2Njgy
+MjMsMjAyMzE5Mzc3NCwtMTQ4NDYyODk4MSw4MTczMTY4NDksLT
+U5MDI2MzgxOCwzNjQ3NDkwMDksLTExOTk0ODM4MDQsODg4NTEx
+NDQ2XX0=
 -->
