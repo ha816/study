@@ -191,7 +191,8 @@ SELECT * FROM dept_emp
 WHERE dept_no = 'd002' AND emp_no >= 10114;
 ```
 
-먼저 d002에 해당하는
+dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 작업 범위 결정 조건이라 ㅎ
+
 
 
 
@@ -206,7 +207,7 @@ WHERE dept_no = 'd002' AND emp_no >= 10114;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0OTgwODQxMywtMTcxOTM4MjEzNSwtMj
+eyJoaXN0b3J5IjpbMTU4NDg3NDkyNSwtMTcxOTM4MjEzNSwtMj
 A5NDQ0MjQ2OCwtMTE0MzQxNjYyLC0xMzc4OTM5NDM3LC0yMDg3
 MTc2NTUyLDE2MjY4MTcwOSw3NTUwMDcxMzIsODgwNDEwOTk0LC
 00MjY0NTM0OTIsMTQ5NDMwMTQzNSwzODY0NDYyNjMsNDQzNjY4
