@@ -251,11 +251,12 @@ WHERE colum IS NULL
 ```
 자 다음으로 다중 컬럼으로 만들어진 인덱스의 경우를 살펴보자.
 ```
-INDEX ix_test (col1, col2, ...)
+INDEX ix_test (col_1, col_2, ..., col_n)
 ```
 
 * 작업 범위 결정 조건으로 인덱스를 사용하는 경우
-	* 앞에서 부터 i 번째 까지 인덱스가 Equals 형태('=' 또는 'IN')로 비교
+	* 앞에서 부터 i -1번째 까지 인덱스가 Equals 형태('=' 또는 'IN')로 비교
+	* col_n 
 	* 
 
 
@@ -269,7 +270,7 @@ INDEX ix_test (col1, col2, ...)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTIwNTk1MzEsMTQyMTI3NzE2MSw5MD
+eyJoaXN0b3J5IjpbLTEwMTA3MTA0ODcsMTQyMTI3NzE2MSw5MD
 I0MjA0OTgsMTc1MTU3NTUzNiwtOTM0NTc3NTI2LDUwNzg4MTE1
 OSw5MTgxNDMyOTMsMTc3NjY1MDQzNiw1MzA1ODA0NjYsMjY2NT
 gwOTQ0LC0xNzE5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMTQzNDE2
