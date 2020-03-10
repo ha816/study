@@ -215,7 +215,7 @@ Sub 하위 클래스를 생성하면 상위의 overrideMe를 호출하게 된다
 private, final, static 메서드는 재정의가 불가능하니 생성자에서 안심하고 호출해도 된다. 
 ```
 
-cloneable과 
+cloneable과 Serializable 인터페이스는 상속용 설계시 문제를 더 어렵게 만든다. 둘 중 하나라도 구현한 클래스를 상속 가능하게 설계하는 것은 
 
 
 ### Item. 추상 클래스 대신 인터페이스를 사용해라
@@ -282,11 +282,11 @@ cloneable과
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE2NDAyOTgsLTQzOTQyOTk1OCwtMTA0OT
-Y2MzU4Niw4MTIwNDM0NDEsMjI4NzE0NDU1LDU2NzU2NDA4Nywt
-ODc4MjY5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLTE2MT
-kzMzI4ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5OTE4
-NiwtMTUzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUzOTM3NzY1LD
-Y2NzQ5NzU3MCwtMTQ5NzE5MjU4NCwxNzc0MzA4NjAzLC0xNDY4
-OTM3NDIyXX0=
+eyJoaXN0b3J5IjpbLTcyNzA0MjcwMiw5MTY0MDI5OCwtNDM5ND
+I5OTU4LC0xMDQ5NjYzNTg2LDgxMjA0MzQ0MSwyMjg3MTQ0NTUs
+NTY3NTY0MDg3LC04NzgyNjk2MDQsLTEyNjcwMjg1OTMsLTQxMj
+AyMjUyOCwtMTYxOTMzMjg4OSw0NjY3NjA0OTQsMTc5MTEwODQ5
+MywtODQyNDk5MTg2LC0xNTM3MTE2ODQzLDE2NzU2NTM3NzcsLT
+EwNTM5Mzc3NjUsNjY3NDk3NTcwLC0xNDk3MTkyNTg0LDE3NzQz
+MDg2MDNdfQ==
 -->
