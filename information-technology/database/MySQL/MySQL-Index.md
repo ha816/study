@@ -191,7 +191,9 @@ SELECT * FROM dept_emp
 WHERE dept_no = 'd002' AND emp_no >= 10114;
 ```
 
-dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 작업 범위 결정 조건이라 한다. 하지만 각 조건이 항상 작업의 단위를 줄이지는 못하고 단순히 거름종이 역할만 하는 조건일 수도 있다. 그런 조건을 필터링 조건, 체크 조건이라 한다. **작업의 범위를 결정하는 조건은 많으면 많을 수록 쿼리의 처리 성능을 높인다.** 
+dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 작업 범위 결정 조건이라 한다. 하지만 각 조건이 항상 작업의 단위를 줄이지는 못하고 단순히 거름종이 역할만 하는 조건일 수도 있다. 그런 조건을 필터링 조건, 체크 조건이라 한다. **작업의 범위를 결정하는 조건은 많으면 많을 수록 쿼리의 처리 성능을 높인다.** 하지만 **체크 조건은 많다고 해서 쿼리 성능을 높이지는 못한다. 오히려 쿼리 실행을 느리게 만들때가 많다.**
+
+#### 인덱스의 가용성
 
 
 
@@ -207,11 +209,11 @@ dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY2NTgwOTQ0LC0xNzE5MzgyMTM1LC0yMD
-k0NDQyNDY4LC0xMTQzNDE2NjIsLTEzNzg5Mzk0MzcsLTIwODcx
-NzY1NTIsMTYyNjgxNzA5LDc1NTAwNzEzMiw4ODA0MTA5OTQsLT
-QyNjQ1MzQ5MiwxNDk0MzAxNDM1LDM4NjQ0NjI2Myw0NDM2Njgy
-MjMsMjAyMzE5Mzc3NCwtMTQ4NDYyODk4MSw4MTczMTY4NDksLT
-U5MDI2MzgxOCwzNjQ3NDkwMDksLTExOTk0ODM4MDQsODg4NTEx
-NDQ2XX0=
+eyJoaXN0b3J5IjpbLTE4ODIwNTIwMjcsMjY2NTgwOTQ0LC0xNz
+E5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMTQzNDE2NjIsLTEzNzg5
+Mzk0MzcsLTIwODcxNzY1NTIsMTYyNjgxNzA5LDc1NTAwNzEzMi
+w4ODA0MTA5OTQsLTQyNjQ1MzQ5MiwxNDk0MzAxNDM1LDM4NjQ0
+NjI2Myw0NDM2NjgyMjMsMjAyMzE5Mzc3NCwtMTQ4NDYyODk4MS
+w4MTczMTY4NDksLTU5MDI2MzgxOCwzNjQ3NDkwMDksLTExOTk0
+ODM4MDRdfQ==
 -->
