@@ -198,7 +198,7 @@ dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 
 B-Tree의 특징은 왼존 값에 기준(Left-most)해서 오른쪽 값이 정렬되어 있다는 것이다. 왼쪽이라 함은 하나의 컬럼 내에서 뿐만 아니라 다중 컬럼 인덱스의 컬럼에도 적용된다.
 
 단일 인덱스 리프 노드
-| 인덱스레코드| 레코드주소 |
+|first_name| 레코드주소 |
 |--|--|
 |Aamer|--|
 |Aamomd|--|
@@ -220,7 +220,7 @@ B-Tree의 특징은 왼존 값에 기준(Left-most)해서 오른쪽 값이 정�
 **사실 빠른 검색의 전제 조건은 바로 정렬이다.** 컬럼으로 검색해도 값의 왼쪽 부분이 없으면 인덱스 레인지 스캔이 불가능하다. 
 
 ```
-SELECT * FROM employees WHERE first_name LIKE ''
+SELECT * FROM employees WHERE first_name LIKE '%mer';
 ```
 
 
@@ -236,11 +236,11 @@ SELECT * FROM employees WHERE first_name LIKE ''
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ2MTYxODIzLDI2NjU4MDk0NCwtMTcxOT
-M4MjEzNSwtMjA5NDQ0MjQ2OCwtMTE0MzQxNjYyLC0xMzc4OTM5
-NDM3LC0yMDg3MTc2NTUyLDE2MjY4MTcwOSw3NTUwMDcxMzIsOD
-gwNDEwOTk0LC00MjY0NTM0OTIsMTQ5NDMwMTQzNSwzODY0NDYy
-NjMsNDQzNjY4MjIzLDIwMjMxOTM3NzQsLTE0ODQ2Mjg5ODEsOD
-E3MzE2ODQ5LC01OTAyNjM4MTgsMzY0NzQ5MDA5LC0xMTk5NDgz
-ODA0XX0=
+eyJoaXN0b3J5IjpbLTUwMjQzODAyNiwyNjY1ODA5NDQsLTE3MT
+kzODIxMzUsLTIwOTQ0NDI0NjgsLTExNDM0MTY2MiwtMTM3ODkz
+OTQzNywtMjA4NzE3NjU1MiwxNjI2ODE3MDksNzU1MDA3MTMyLD
+g4MDQxMDk5NCwtNDI2NDUzNDkyLDE0OTQzMDE0MzUsMzg2NDQ2
+MjYzLDQ0MzY2ODIyMywyMDIzMTkzNzc0LC0xNDg0NjI4OTgxLD
+gxNzMxNjg0OSwtNTkwMjYzODE4LDM2NDc0OTAwOSwtMTE5OTQ4
+MzgwNF19
 -->
