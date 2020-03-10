@@ -233,6 +233,10 @@ SELECT * FROM dept_emp WHERE emp_no >= 100;
 
 B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 수 없다. 여기서 사용할 수 없다는 것은 엄밀히 말하여 작업의 범위를 줄이는 결정 조건으로 사용할 수 없다는 것을 말한다. 
 
+* NOT-EQUAL 비교
+	* "<>", "NOT IN", "IS NOT NULL"
+* LIKE '%??'
+
 ## Hash Index
 
 
@@ -242,11 +246,11 @@ B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE4MTQzMjkzLDE3NzY2NTA0MzYsNTMwNT
-gwNDY2LDI2NjU4MDk0NCwtMTcxOTM4MjEzNSwtMjA5NDQ0MjQ2
-OCwtMTE0MzQxNjYyLC0xMzc4OTM5NDM3LC0yMDg3MTc2NTUyLD
-E2MjY4MTcwOSw3NTUwMDcxMzIsODgwNDEwOTk0LC00MjY0NTM0
-OTIsMTQ5NDMwMTQzNSwzODY0NDYyNjMsNDQzNjY4MjIzLDIwMj
-MxOTM3NzQsLTE0ODQ2Mjg5ODEsODE3MzE2ODQ5LC01OTAyNjM4
-MThdfQ==
+eyJoaXN0b3J5IjpbLTIxMDQ0MDA3MTksOTE4MTQzMjkzLDE3Nz
+Y2NTA0MzYsNTMwNTgwNDY2LDI2NjU4MDk0NCwtMTcxOTM4MjEz
+NSwtMjA5NDQ0MjQ2OCwtMTE0MzQxNjYyLC0xMzc4OTM5NDM3LC
+0yMDg3MTc2NTUyLDE2MjY4MTcwOSw3NTUwMDcxMzIsODgwNDEw
+OTk0LC00MjY0NTM0OTIsMTQ5NDMwMTQzNSwzODY0NDYyNjMsND
+QzNjY4MjIzLDIwMjMxOTM3NzQsLTE0ODQ2Mjg5ODEsODE3MzE2
+ODQ5XX0=
 -->
