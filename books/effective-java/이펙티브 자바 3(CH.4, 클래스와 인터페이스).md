@@ -226,7 +226,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 >핵심 정리
 >상속용 클래스를 설계하기란 결코 만만치 않다. 클래스 내부에서 스스로 어떻게 사용하는지(자기사용 패턴) 모두 문서로 남겨야 하며, 일단 문서화 한것은 그 클래스가 쓰이는 한 반드시 지켜져야 한다. 그렇지 않으면 내부 구현방식을 믿고 활용하던 하위 클래스가 오동작하게 될 수 있다. 다른 개발자가 효율적인 하위 클래스를 만들 수 있도록 일부 메서드를 protected로 제공해야 할 수도 있다. 그러니 클래스를 확장해야 할 명확한 이유가 떠오르지 않는다면 상속을 금지하는 편이 낫다. 상속을 금지하는데는 final이나 생성자 모두를 외부에서 접근할 수 없도록 하자. 
 
-### Item. 추상 클래스 대신 인터페이스를 사용해라
+### Item.20 추상 클래스보다는 인터페이스를 우선하라
 
 자바 언어에는 여러 구현을 허용하는 자료형을 만드는 방법이 두가지 -> 인터페이스와 추상 클래스(abstract class)
 
@@ -290,11 +290,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MTk5OTE1NiwtMjEwMTY3ODIxMSw2Mz
-U1NzM0MDgsMTQ1MDI1MDkzMCw5MTY0MDI5OCwtNDM5NDI5OTU4
-LC0xMDQ5NjYzNTg2LDgxMjA0MzQ0MSwyMjg3MTQ0NTUsNTY3NT
-Y0MDg3LC04NzgyNjk2MDQsLTEyNjcwMjg1OTMsLTQxMjAyMjUy
-OCwtMTYxOTMzMjg4OSw0NjY3NjA0OTQsMTc5MTEwODQ5MywtOD
-QyNDk5MTg2LC0xNTM3MTE2ODQzLDE2NzU2NTM3NzcsLTEwNTM5
-Mzc3NjVdfQ==
+eyJoaXN0b3J5IjpbLTE5NzI4MDE3OTcsLTIxMDE2NzgyMTEsNj
+M1NTczNDA4LDE0NTAyNTA5MzAsOTE2NDAyOTgsLTQzOTQyOTk1
+OCwtMTA0OTY2MzU4Niw4MTIwNDM0NDEsMjI4NzE0NDU1LDU2Nz
+U2NDA4NywtODc4MjY5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1
+MjgsLTE2MTkzMzI4ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLT
+g0MjQ5OTE4NiwtMTUzNzExNjg0MywxNjc1NjUzNzc3LC0xMDUz
+OTM3NzY1XX0=
 -->
