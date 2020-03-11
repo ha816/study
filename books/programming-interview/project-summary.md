@@ -29,16 +29,6 @@
 * 배송 정책에 일치하는 경우, 배송비 선결제가 가능
 * 고객 환불시 도서산간 추가 배송비 계산 로직 수정
 
-if (n1 instanceof Double && n2 instanceof Double) {  
-    return Double.compare(n1.doubleValue(), n2.doubleValue());  
-} else if (n1 instanceof Float && n2 instanceof Float) {  
-    return Float.compare(n1.floatValue(), n2.floatValue());  
-} else if (n1 instanceof Long && n2 instanceof Long) {  
-    return Long.compare(n1.longValue(), n2.longValue());  
-} else {  
-    return Integer.compare(n1.intValue(), n2.intValue());  
-}
-
 ## 평균 배송소요일 계산 및 적재
 
 상품별 배송도착 소요일의 평균을  고객에게 제공한다. 상품 별로 최근 1주일치  배송건이 대상으로 계산대상 상품 수는 약 100,000 건, 상품 별로 평균 하루 10건이 존재했다.
@@ -60,8 +50,9 @@ if (n1 instanceof Double && n2 instanceof Double) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDUyODkwOCwtNDA5NTE5NDE1LC0xMj
-E5NDQ1NTE3LDYyOTk4OTY5NCwtMTQxNzg3NTMyOSwtMTA1MjQ0
-NTU4NCwxNTk4OTA1MzQxLC0xMzI5NzYyMjMzLC04NzIwNjIwNj
-gsNjI2MjIxODAwLDE2MzUxNzAyLC01NTM2NzAzODZdfQ==
+eyJoaXN0b3J5IjpbLTQwOTUxOTQxNSwyMDE0NTI4OTA4LC00MD
+k1MTk0MTUsLTEyMTk0NDU1MTcsNjI5OTg5Njk0LC0xNDE3ODc1
+MzI5LC0xMDUyNDQ1NTg0LDE1OTg5MDUzNDEsLTEzMjk3NjIyMz
+MsLTg3MjA2MjA2OCw2MjYyMjE4MDAsMTYzNTE3MDIsLTU1MzY3
+MDM4Nl19
 -->
