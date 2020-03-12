@@ -226,7 +226,6 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 ### Item.20 추상 클래스보다는 인터페이스를 우선하라
 
-자바 언어에는 여러 구현을 허용하는 자료형을 만드는 방법이 두가지 -> 인터페이스와 추상 클래스(abstract class)
 
 추상 클래스는 구현된 메서드를 포함 할 수 있다. 또한 추상 클래스가 규정하는 자료형 구현을 위해서 추상 클래스를 계승해야 한다. 
 
@@ -288,11 +287,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5MzA1MzA3LC0yMTAxNjc4MjExLDYzNT
-U3MzQwOCwxNDUwMjUwOTMwLDkxNjQwMjk4LC00Mzk0Mjk5NTgs
-LTEwNDk2NjM1ODYsODEyMDQzNDQxLDIyODcxNDQ1NSw1Njc1Nj
-QwODcsLTg3ODI2OTYwNCwtMTI2NzAyODU5MywtNDEyMDIyNTI4
-LC0xNjE5MzMyODg5LDQ2Njc2MDQ5NCwxNzkxMTA4NDkzLC04ND
-I0OTkxODYsLTE1MzcxMTY4NDMsMTY3NTY1Mzc3NywtMTA1Mzkz
-Nzc2NV19
+eyJoaXN0b3J5IjpbMTA1NzY3MTEyNCw0OTkzMDUzMDcsLTIxMD
+E2NzgyMTEsNjM1NTczNDA4LDE0NTAyNTA5MzAsOTE2NDAyOTgs
+LTQzOTQyOTk1OCwtMTA0OTY2MzU4Niw4MTIwNDM0NDEsMjI4Nz
+E0NDU1LDU2NzU2NDA4NywtODc4MjY5NjA0LC0xMjY3MDI4NTkz
+LC00MTIwMjI1MjgsLTE2MTkzMzI4ODksNDY2NzYwNDk0LDE3OT
+ExMDg0OTMsLTg0MjQ5OTE4NiwtMTUzNzExNjg0MywxNjc1NjUz
+Nzc3XX0=
 -->
