@@ -290,16 +290,18 @@ SELECT * FROM table WHERE col IS NOT NULL
 ```
 여기서 <=>는 Null-Safe Equal 연산자라고 하는데 비교 양쪽 값이 NULL이 었을때는 제외하고는 '=' 와 같다. 
 
+#### 해시 인덱스를 전혀 사용하지 못하는 쿼리
 
+아래 쿼리는 어떠한 방법으로도 해시 인덱스를 사용할 수 없다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMzEwNzE4NCwxNzIyNzc2MDk2LC0yMD
-I0OTYwMzM5LC0xMzEwNzc3OTQ5LDM0NTczNzcxLC0xMjg0OTQ2
-NDI2LDExMTkwMzI0MjEsMjk4MDI2NzYyLC0xMDEwNzEwNDg3LD
-E0MjEyNzcxNjEsOTAyNDIwNDk4LDE3NTE1NzU1MzYsLTkzNDU3
-NzUyNiw1MDc4ODExNTksOTE4MTQzMjkzLDE3NzY2NTA0MzYsNT
-MwNTgwNDY2LDI2NjU4MDk0NCwtMTcxOTM4MjEzNSwtMjA5NDQ0
-MjQ2OF19
+eyJoaXN0b3J5IjpbLTEyNzc3MjI1NDUsMTcyMjc3NjA5NiwtMj
+AyNDk2MDMzOSwtMTMxMDc3Nzk0OSwzNDU3Mzc3MSwtMTI4NDk0
+NjQyNiwxMTE5MDMyNDIxLDI5ODAyNjc2MiwtMTAxMDcxMDQ4Ny
+wxNDIxMjc3MTYxLDkwMjQyMDQ5OCwxNzUxNTc1NTM2LC05MzQ1
+Nzc1MjYsNTA3ODgxMTU5LDkxODE0MzI5MywxNzc2NjUwNDM2LD
+UzMDU4MDQ2NiwyNjY1ODA5NDQsLTE3MTkzODIxMzUsLTIwOTQ0
+NDI0NjhdfQ==
 -->
