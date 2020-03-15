@@ -292,16 +292,25 @@ SELECT * FROM table WHERE col IS NOT NULL
 
 #### 해시 인덱스를 전혀 사용하지 못하는 쿼리
 
-아래 쿼리는 어떠한 방법으로도 해시 인덱스를 사용할 수 없다. 
+아래 쿼리는 어떠한 방법으로도 해시 인덱스를 사용할 수 없다. 대체로 범위 비겨나 부정형 비교는 해시 인덱스를 사용할 수 없다. 
+
+```
+SELECT * FROM table WHERE col >= 'key'
+SELECT * FROM table WHERE col B
+SELECT * FROM table WHERE col IS NULL
+SELECT * FROM table WHERE col IS NOT NULL
+```
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzc3MjI1NDUsMTcyMjc3NjA5NiwtMj
-AyNDk2MDMzOSwtMTMxMDc3Nzk0OSwzNDU3Mzc3MSwtMTI4NDk0
-NjQyNiwxMTE5MDMyNDIxLDI5ODAyNjc2MiwtMTAxMDcxMDQ4Ny
-wxNDIxMjc3MTYxLDkwMjQyMDQ5OCwxNzUxNTc1NTM2LC05MzQ1
-Nzc1MjYsNTA3ODgxMTU5LDkxODE0MzI5MywxNzc2NjUwNDM2LD
-UzMDU4MDQ2NiwyNjY1ODA5NDQsLTE3MTkzODIxMzUsLTIwOTQ0
-NDI0NjhdfQ==
+eyJoaXN0b3J5IjpbLTE1MTMyOTYwNDAsLTEyNzc3MjI1NDUsMT
+cyMjc3NjA5NiwtMjAyNDk2MDMzOSwtMTMxMDc3Nzk0OSwzNDU3
+Mzc3MSwtMTI4NDk0NjQyNiwxMTE5MDMyNDIxLDI5ODAyNjc2Mi
+wtMTAxMDcxMDQ4NywxNDIxMjc3MTYxLDkwMjQyMDQ5OCwxNzUx
+NTc1NTM2LC05MzQ1Nzc1MjYsNTA3ODgxMTU5LDkxODE0MzI5My
+wxNzc2NjUwNDM2LDUzMDU4MDQ2NiwyNjY1ODA5NDQsLTE3MTkz
+ODIxMzVdfQ==
 -->
