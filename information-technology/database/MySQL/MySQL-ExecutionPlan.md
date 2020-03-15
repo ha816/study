@@ -34,13 +34,13 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 기본적으로 MySQL에서 관리되는 통계 정보는 대략의 레코드 건수와 인덱스의 유니크한 값의 개수 정도가 전부다. 그에 반해 오라클과 같은 DBMS에는 통계정보가 상당히 정적이고 수집에 많은 시간이 소요되기 때문에 통계정보만 따로 백업하기도 한다. 
 
-MySQL에서 통계 정보는 사용자가 알아채지 못하는 순간순간 자동으로 변하기 때문에 상당히 동적이다. 하지만 레코드 건수가 많지 않으면 통계가 
+MySQL에서 통계 정보는 사용자가 알아채지 못하는 순간순간 자동으로 변하기 때문에 상당히 동적이다. 하지만 레코드 건수가 많지 않으면 통계 정보가 상당히 부정확한 경우가 많다. 이때 ANALYZE명령으로 강제적으로 통계정보를 갱신해야 할때도 있다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYzMjM4OTQ2LC0xNTk5ODkyMDQ4LDE4Mz
-QzOTUxOCwtMTIxOTMzNjk2Miw4NDQyODE2MzYsMTI4NjY5ODY2
-Nyw1ODE1OTM5MTldfQ==
+eyJoaXN0b3J5IjpbLTE4NTk5Mjk3NDEsLTE1OTk4OTIwNDgsMT
+gzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNiwxMjg2Njk4
+NjY3LDU4MTU5MzkxOV19
 -->
