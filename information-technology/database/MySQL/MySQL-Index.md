@@ -279,19 +279,25 @@ B-트리는 트리내에서 여러 노드를 읽어야하지만 해시 인덱스
 해시 인덱스는 빠른 검색이 가능하지만 **키값 자체가 변환되어 저장되기 때문에 범위를 검색하거나 원본값 기준으로 정렬할 수 없다.** 해시 인덱스는 원본 키 값이 변환되어 저장되기 때문에 어떤 방식으로도 해시 인덱스를 사용하지 못하는 경우도 있다. 
 
 #### 작업 범위 제한 조건으로 해시 인덱스를 사용할 수 있는 쿼리
+동등 비교 조건으로 값을 검색하면 해시 인덱스를 제대로 사용할 수 있다. IN도 결국 여러개의 동등 비교로 풀어서 처리할 수 있기 때문에 같은 결과를 얻을 수 있다.
 
+```
+SELECT * FROM table WHERE col = 'key'
 
-ㄴ
+```
+```
+
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2OTA1OTg5MSwtMTMxMDc3Nzk0OSwzND
-U3Mzc3MSwtMTI4NDk0NjQyNiwxMTE5MDMyNDIxLDI5ODAyNjc2
-MiwtMTAxMDcxMDQ4NywxNDIxMjc3MTYxLDkwMjQyMDQ5OCwxNz
-UxNTc1NTM2LC05MzQ1Nzc1MjYsNTA3ODgxMTU5LDkxODE0MzI5
-MywxNzc2NjUwNDM2LDUzMDU4MDQ2NiwyNjY1ODA5NDQsLTE3MT
-kzODIxMzUsLTIwOTQ0NDI0NjgsLTExNDM0MTY2MiwtMTM3ODkz
-OTQzN119
+eyJoaXN0b3J5IjpbLTIwMjQ5NjAzMzksLTEzMTA3Nzc5NDksMz
+Q1NzM3NzEsLTEyODQ5NDY0MjYsMTExOTAzMjQyMSwyOTgwMjY3
+NjIsLTEwMTA3MTA0ODcsMTQyMTI3NzE2MSw5MDI0MjA0OTgsMT
+c1MTU3NTUzNiwtOTM0NTc3NTI2LDUwNzg4MTE1OSw5MTgxNDMy
+OTMsMTc3NjY1MDQzNiw1MzA1ODA0NjYsMjY2NTgwOTQ0LC0xNz
+E5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMTQzNDE2NjIsLTEzNzg5
+Mzk0MzddfQ==
 -->
