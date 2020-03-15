@@ -48,13 +48,14 @@ ANALZE TABLE table
 -- // 파티션을 사용하는 테이블에서 특정 파티션의 통계 정보 수집
 ALTER TABLE table ANYALZE PARTITION p3;
 ```
-ANALYZE를 실행하는 동안 InnoDB 테이블은 읽기와 쓰기 모두 불가능하다. 
+ANALYZE를 실행하는 동안 InnoDB 테이블은 읽기와 쓰기 모두 불가능하다. 따라서 서비스 도
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc3NjI0OTc1LC0xODU5OTI5NzQxLC0xNT
-k5ODkyMDQ4LDE4MzQzOTUxOCwtMTIxOTMzNjk2Miw4NDQyODE2
-MzYsMTI4NjY5ODY2Nyw1ODE1OTM5MTldfQ==
+eyJoaXN0b3J5IjpbLTE3ODk5OTgzMDMsODc3NjI0OTc1LC0xOD
+U5OTI5NzQxLC0xNTk5ODkyMDQ4LDE4MzQzOTUxOCwtMTIxOTMz
+Njk2Miw4NDQyODE2MzYsMTI4NjY5ODY2Nyw1ODE1OTM5MTldfQ
+==
 -->
