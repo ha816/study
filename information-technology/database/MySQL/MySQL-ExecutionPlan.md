@@ -23,13 +23,13 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 ## Optimizer
 
-옵티마지어의 종류에는 크게 두 종류가 있다. 현재 대부분의 DBMS가 선택하고 있는 비용 기반(Cost-based optimizer, CBO) 
+옵티마지어의 종류에는 크게 두 종류가 있다. 현재 대부분의 DBMS가 선택하고 있는 옵티 비용 기반(Cost-based optimizer, CBO) 옵티마이저 또는 규칙 기반 최적화 방법(Rule-based optimizer, RBO)로 나누어
 
 ## Statistical Information
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNzgyMTY5OSwxMjg2Njk4NjY3LDU4MT
-U5MzkxOV19
+eyJoaXN0b3J5IjpbLTE3MTMyMjE3OTYsMTI4NjY5ODY2Nyw1OD
+E1OTM5MTldfQ==
 -->
