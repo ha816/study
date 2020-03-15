@@ -21,10 +21,10 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 첫 번재와 두 번재 단계를 거의 MySQL 엔진에서 처리하며, 세번째 단계는 MySQL 엔진과 스토리지 엔진이 동시에 참여해서 처리한다. 
 
-## 옵티
+## Optimizer
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5Mzg0MDI1OCw1ODE1OTM5MTldfQ==
+eyJoaXN0b3J5IjpbLTE4OTE1ODkyNTgsNTgxNTkzOTE5XX0=
 -->
