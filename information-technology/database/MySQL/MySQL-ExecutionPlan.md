@@ -15,10 +15,10 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 첫번째 단계는 SQL 파싱으로 MySQL 서버의 SQL 파서라는 모듈로 처리한다. 이 과정에서 SQL 문장에 문법적 오류가 있다면 걸러진다. 또한 이 단계에서 SQL 파스 트리가 만들어진다. MySQL 서버는 엄밀히 말해서 SQL 문장 그 자체가 아니라 SQL 파스트리를 이용해 쿼리를 실행한다. 
 
-두번째 단계는 SQL 파스 트리를 참조하면서 아래 내용을 처리한다. 
+두번째 단계는 SQL 파스 트리를 참조하고 많은 일을 처리한다. 대표적으로 불필요한 조건의 제거 및 복잡한 연산의 단순화, 여러 테이블의 조인이 있는 경우 **어떤 순서로 테이블을 읽을지**, 각 테이블에 사용된 조건과 인덱스 통계정보로 사용할 인덱스 결정
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMDIwODU5Ml19
+eyJoaXN0b3J5IjpbODQxNTQ1MjE3XX0=
 -->
