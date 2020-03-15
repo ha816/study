@@ -285,22 +285,21 @@ B-트리는 트리내에서 여러 노드를 읽어야하지만 해시 인덱스
 SELECT * FROM table WHERE col = 'key'
 SELECT * FROM table WHERE col <=> 'key'
 SELECT * FROM table WHERE col IN ('key1', 'key2')
-
-
+SELECT * FROM table WHERE col IS NULL
+SELECT * FROM table WHERE col IS NOT NULL
 ```
-```
+여기서 <=>는 Null-Safe Equal 연산자라고 하는데 비교 양쪽 값이 NULL이 었을때는 제외하고는 '=' 와 같다. 
 
-```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMjc3NjA5NiwtMjAyNDk2MDMzOSwtMT
-MxMDc3Nzk0OSwzNDU3Mzc3MSwtMTI4NDk0NjQyNiwxMTE5MDMy
-NDIxLDI5ODAyNjc2MiwtMTAxMDcxMDQ4NywxNDIxMjc3MTYxLD
-kwMjQyMDQ5OCwxNzUxNTc1NTM2LC05MzQ1Nzc1MjYsNTA3ODgx
-MTU5LDkxODE0MzI5MywxNzc2NjUwNDM2LDUzMDU4MDQ2NiwyNj
-Y1ODA5NDQsLTE3MTkzODIxMzUsLTIwOTQ0NDI0NjgsLTExNDM0
-MTY2Ml19
+eyJoaXN0b3J5IjpbMTMwMzEwNzE4NCwxNzIyNzc2MDk2LC0yMD
+I0OTYwMzM5LC0xMzEwNzc3OTQ5LDM0NTczNzcxLC0xMjg0OTQ2
+NDI2LDExMTkwMzI0MjEsMjk4MDI2NzYyLC0xMDEwNzEwNDg3LD
+E0MjEyNzcxNjEsOTAyNDIwNDk4LDE3NTE1NzU1MzYsLTkzNDU3
+NzUyNiw1MDc4ODExNTksOTE4MTQzMjkzLDE3NzY2NTA0MzYsNT
+MwNTgwNDY2LDI2NjU4MDk0NCwtMTcxOTM4MjEzNSwtMjA5NDQ0
+MjQ2OF19
 -->
