@@ -46,14 +46,16 @@ SHOW INDEX FROM table
 ANALZE TABLE table
 
 -- // 파티션을 사용하는 테이블에서 특정 파티션의 통계 정보 수집
-ANALZE TABLE table 
+ALTER TABLE table ANYALZE PARTITION p3;
 ```
+
+무미
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzQ3ODAyNjIsLTE4NTk5Mjk3NDEsLT
-E1OTk4OTIwNDgsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4
-MTYzNiwxMjg2Njk4NjY3LDU4MTU5MzkxOV19
+eyJoaXN0b3J5IjpbMTcwMzEwMDQ4NywtMTg1OTkyOTc0MSwtMT
+U5OTg5MjA0OCwxODM0Mzk1MTgsLTEyMTkzMzY5NjIsODQ0Mjgx
+NjM2LDEyODY2OTg2NjcsNTgxNTkzOTE5XX0=
 -->
