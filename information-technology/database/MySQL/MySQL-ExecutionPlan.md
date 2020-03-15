@@ -8,10 +8,12 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 1. 요청이 들어온 쿼리 문장을 잘깨 쪼개서 MySQL서버가 이해할 수준으로 분리한다.
 2. SQL의 파싱 정보를 확인하며, 어떤 테이블부터 읽고 어떤 인덱스를 이용해 테이블을 읽을지 결정한다.
-3. 결정된 
+3. 결정된 읽기 순서나 선택된 인덱스를 이용해 스토리지 엔진으로 부터 데이터를 가져온다.
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIwMzE2NzAwXX0=
+eyJoaXN0b3J5IjpbMTc3NzIyNDU4MF19
 -->
