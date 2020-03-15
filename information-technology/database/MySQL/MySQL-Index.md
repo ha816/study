@@ -272,18 +272,19 @@ B-트리는 트리내에서 여러 노드를 읽어야하지만 해시 인덱스
 
 해시 인덱스에서 가장 중요한 것은 해시 함수로, 입력된 키 값이 어디에 저장될지 결정하는 함수다. 해시 함수의 결과 값의 범위가 커지면 버켓이 많이 필요해져 공간의 낭비가 커지고, 값의 범위가 너무 작으면 충돌이 되는 경우가 많아 인덱스의 장점이 사라진다. 충돌이라함은 입력 값은 다르지만 해시 함수의 결과가 같은 경우를 말한다. 
 
-> 해시 알고리즘은 여러가지 목적으로 사용되곤 하지만 DBMS에서는 대표적으로 검색을 위한 인덱스와 테이블 파티셔닝을 위한 용도로 사용된다. 검색을 위해선 해시 함수 결과값이 범위가 넓어야 충돌이 줄고 검색 성능이 좋아진다. 테이블 파티셔닝 용도로는 해시함수가 필요한 파티션의 갯수만큼 만들어내야 하므로 함수 결과 값을 
+> 해시 알고리즘은 여러가지 목적으로 사용되곤 하지만 DBMS에서는 대표적으로 검색을 위한 인덱스와 테이블 파티셔닝을 위한 용도로 사용된다. 검색을 위해선 해시 함수 결과값이 범위가 넓어야 충돌이 줄고 검색 성능이 좋아진다. 테이블 파티셔닝 용도로는 해시함수가 필요한 파티션의 갯수만큼 만들어내야 하므로 함수 결과 값을 좁게 사용한다. MySQL의 해시 파티션은 이런 해시 알고리즘을 이용해 테이블 파티셔닝을 한다. 
 
+### 해시 인덱스
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUyNTcxNzg1LDM0NTczNzcxLC0xMjg0OT
-Q2NDI2LDExMTkwMzI0MjEsMjk4MDI2NzYyLC0xMDEwNzEwNDg3
-LDE0MjEyNzcxNjEsOTAyNDIwNDk4LDE3NTE1NzU1MzYsLTkzND
-U3NzUyNiw1MDc4ODExNTksOTE4MTQzMjkzLDE3NzY2NTA0MzYs
-NTMwNTgwNDY2LDI2NjU4MDk0NCwtMTcxOTM4MjEzNSwtMjA5ND
-Q0MjQ2OCwtMTE0MzQxNjYyLC0xMzc4OTM5NDM3LC0yMDg3MTc2
-NTUyXX0=
+eyJoaXN0b3J5IjpbLTEzMzY2OTE0ODMsMzQ1NzM3NzEsLTEyOD
+Q5NDY0MjYsMTExOTAzMjQyMSwyOTgwMjY3NjIsLTEwMTA3MTA0
+ODcsMTQyMTI3NzE2MSw5MDI0MjA0OTgsMTc1MTU3NTUzNiwtOT
+M0NTc3NTI2LDUwNzg4MTE1OSw5MTgxNDMyOTMsMTc3NjY1MDQz
+Niw1MzA1ODA0NjYsMjY2NTgwOTQ0LC0xNzE5MzgyMTM1LC0yMD
+k0NDQyNDY4LC0xMTQzNDE2NjIsLTEzNzg5Mzk0MzcsLTIwODcx
+NzY1NTJdfQ==
 -->
