@@ -23,10 +23,13 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 ## Optimizer
 
+옵티마지어의 종류에는 크게 두 종류가 있다. 현재 대부분의 DBMS가 선택하고 이쓴ㄴ
+
 ## Statistical Information
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NjY5ODY2Nyw1ODE1OTM5MTldfQ==
+eyJoaXN0b3J5IjpbMTI4Njk1MTM5NywxMjg2Njk4NjY3LDU4MT
+U5MzkxOV19
 -->
