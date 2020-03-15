@@ -23,10 +23,10 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 ## Optimizer
 
-## Statiscal
+## Statistical Information
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0ODczNDg4Miw1ODE1OTM5MTldfQ==
+eyJoaXN0b3J5IjpbMTI4NjY5ODY2Nyw1ODE1OTM5MTldfQ==
 -->
