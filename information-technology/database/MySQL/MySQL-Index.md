@@ -270,14 +270,16 @@ B-트리는 트리내에서 여러 노드를 읽어야하지만 해시 인덱스
 
 > B-Tree 인덱스나 해시 인덱스 모두 키값과 레코드 주소값 등의 정보를 저장해 두는 공간이 필요하다. 일반적으로 이 저장 공간은 작업의 기본 단위가 되며 고정된 크기가 할당된다. B-Tree에서는 이 공간을 노드라고 하며, 해시 인덱스는 버켓이라고 한다. 
 
-해시 인덱스에서 가장 중요한 것은 해시 함수로, 입력된 키 값이 어디에 저장될지 결정하는 함수다. 해시 함수의 결과 값의 범위가 커지면 버켓이 많이 필요해져 공간의 낭비가 커지고, 값의 범위가 너무 작으면 충돌이 되는 경우가 많아 이
+해시 인덱스에서 가장 중요한 것은 해시 함수로, 입력된 키 값이 어디에 저장될지 결정하는 함수다. 해시 함수의 결과 값의 범위가 커지면 버켓이 많이 필요해져 공간의 낭비가 커지고, 값의 범위가 너무 작으면 충돌이 되는 경우가 많아 인덱스의 장점이 사라진다. 충돌이라함은 입력 값은 다르지만 해시 함수의 결과가 같은 경우를 말한다. 
+
+> 해시 알고리즘은 여러가지 목적으로 사용되곤 하지만 DBMS에서는 대표적으로 검색을 위한 인덱스와 테이블 파티셔닝을 위한 용도로 사용된다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MzU3NDk0MywzNDU3Mzc3MSwtMTI4ND
+eyJoaXN0b3J5IjpbLTQzMTA0ODQ0OSwzNDU3Mzc3MSwtMTI4ND
 k0NjQyNiwxMTE5MDMyNDIxLDI5ODAyNjc2MiwtMTAxMDcxMDQ4
 NywxNDIxMjc3MTYxLDkwMjQyMDQ5OCwxNzUxNTc1NTM2LC05Mz
 Q1Nzc1MjYsNTA3ODgxMTU5LDkxODE0MzI5MywxNzc2NjUwNDM2
