@@ -262,18 +262,18 @@ INDEX ix_test (col_1, col_2, ..., col_n)
 
 ## Hash Index
 
-
+해시 인덱스는 B-Tree 만큼 범용적이진 않지만 장점이 확실한 인덱스이다. 해시 인덱스는 동등 비교 검색에는 최적화 되어있지만 범위를 검색한다거나 정렬된 결과를 가져오는 목적으로는 사용할 수 없다. 일반적인 해시 인덱스는 메모리 기반의 테이블에
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4MDI2NzYyLC0xMDEwNzEwNDg3LDE0Mj
-EyNzcxNjEsOTAyNDIwNDk4LDE3NTE1NzU1MzYsLTkzNDU3NzUy
-Niw1MDc4ODExNTksOTE4MTQzMjkzLDE3NzY2NTA0MzYsNTMwNT
-gwNDY2LDI2NjU4MDk0NCwtMTcxOTM4MjEzNSwtMjA5NDQ0MjQ2
-OCwtMTE0MzQxNjYyLC0xMzc4OTM5NDM3LC0yMDg3MTc2NTUyLD
-E2MjY4MTcwOSw3NTUwMDcxMzIsODgwNDEwOTk0LC00MjY0NTM0
-OTJdfQ==
+eyJoaXN0b3J5IjpbNDQ0OTAyNDk3LDI5ODAyNjc2MiwtMTAxMD
+cxMDQ4NywxNDIxMjc3MTYxLDkwMjQyMDQ5OCwxNzUxNTc1NTM2
+LC05MzQ1Nzc1MjYsNTA3ODgxMTU5LDkxODE0MzI5MywxNzc2Nj
+UwNDM2LDUzMDU4MDQ2NiwyNjY1ODA5NDQsLTE3MTkzODIxMzUs
+LTIwOTQ0NDI0NjgsLTExNDM0MTY2MiwtMTM3ODkzOTQzNywtMj
+A4NzE3NjU1MiwxNjI2ODE3MDksNzU1MDA3MTMyLDg4MDQxMDk5
+NF19
 -->
