@@ -36,11 +36,18 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 MySQL에서 통계 정보는 사용자가 알아채지 못하는 순간순간 자동으로 변하기 때문에 상당히 동적이다. 하지만 레코드 건수가 많지 않으면 통계 정보가 상당히 부정확한 경우가 많다. 이때 ANALYZE명령으로 강제적으로 통계정보를 갱신해야 할때도 있다. 
 
+```
+SHOW TABLE STATUS LIKE 'table'
+SHOW INDEX FROM table
+
+
+```
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTk5Mjk3NDEsLTE1OTk4OTIwNDgsMT
-gzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNiwxMjg2Njk4
-NjY3LDU4MTU5MzkxOV19
+eyJoaXN0b3J5IjpbNjk0NzQyMzk2LC0xODU5OTI5NzQxLC0xNT
+k5ODkyMDQ4LDE4MzQzOTUxOCwtMTIxOTMzNjk2Miw4NDQyODE2
+MzYsMTI4NjY5ODY2Nyw1ODE1OTM5MTldfQ==
 -->
