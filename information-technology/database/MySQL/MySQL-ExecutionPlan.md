@@ -13,10 +13,10 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 * 실행 계획
 	* 결정된 읽기 순서나 선택된 인덱스를 이용해 스토리지 엔진으로 부터 데이터를 가져온다.
 
-첫번째 단계는 SQL 파싱으로 MySQL 서버의 S
+첫번째 단계는 SQL 파싱으로 MySQL 서버의 SQL 파서라는 모듈로 처리한다. 이 과정에서 SQL 문장에 문법적 오류가 있다면 걸러진다. 또한 이 단계에서 SQL 파스 트리가 만들어진다. MySQL 서버는 엄밀히 말해서 SQL 문장 그 자체가 아니라 SQL 파스트리를 이용해 쿼리를 실행한다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUxMDkxMDUxXX0=
+eyJoaXN0b3J5IjpbMjAxMjgyNjk3N119
 -->
