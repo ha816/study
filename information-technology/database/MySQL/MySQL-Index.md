@@ -274,13 +274,18 @@ B-트리는 트리내에서 여러 노드를 읽어야하지만 해시 인덱스
 
 > 해시 알고리즘은 여러가지 목적으로 사용되곤 하지만 DBMS에서는 대표적으로 검색을 위한 인덱스와 테이블 파티셔닝을 위한 용도로 사용된다. 검색을 위해선 해시 함수 결과값이 범위가 넓어야 충돌이 줄고 검색 성능이 좋아진다. 테이블 파티셔닝 용도로는 해시함수가 필요한 파티션의 갯수만큼 만들어내야 하므로 함수 결과 값을 좁게 사용한다. MySQL의 해시 파티션은 이런 해시 알고리즘을 이용해 테이블 파티셔닝을 한다. 
 
-### 해시 인덱스
+### 해시 인덱스의 가용성 및 효율성
+
+해시 인덱스는 빠른 검색이 가능하지만 **키값 자체가 변환되어 저장되기 때문에 범위를 검색하거나 원본값 기준으로 정렬할 수 없다.** 해시 인덱스는 원본 키 값이 변환되어 저장되기 때문에 어떤 방식으로도 해시 인덱스를 사용하지 못하는 경우도 있다. 
+
+#### 작업 범위 제한 조건으로 해시 인덱스를 사용할 수 있는 쿼리
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzY2OTE0ODMsMzQ1NzM3NzEsLTEyOD
+eyJoaXN0b3J5IjpbLTEzMTA3Nzc5NDksMzQ1NzM3NzEsLTEyOD
 Q5NDY0MjYsMTExOTAzMjQyMSwyOTgwMjY3NjIsLTEwMTA3MTA0
 ODcsMTQyMTI3NzE2MSw5MDI0MjA0OTgsMTc1MTU3NTUzNiwtOT
 M0NTc3NTI2LDUwNzg4MTE1OSw5MTgxNDMyOTMsMTc3NjY1MDQz
