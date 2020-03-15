@@ -40,16 +40,17 @@ MySQL에서 통계 정보는 사용자가 알아채지 못하는 순간순간 �
 SHOW TABLE STATUS LIKE 'table'
 SHOW INDEX FROM table
 ```
-
+통계 정보를 갱신하려면 ANALYZE를 실행하면 된다. 
 ```
-
+-- // 파티션을 사용하지 않는 일반 테이블의 통계 정보 수집
+ANALZE TABLE table
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NjE5MDU1MiwtMTg1OTkyOTc0MSwtMT
+eyJoaXN0b3J5IjpbMTgwMTY2MjM4NSwtMTg1OTkyOTc0MSwtMT
 U5OTg5MjA0OCwxODM0Mzk1MTgsLTEyMTkzMzY5NjIsODQ0Mjgx
 NjM2LDEyODY2OTg2NjcsNTgxNTkzOTE5XX0=
 -->
