@@ -32,13 +32,13 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 비용기반 최적화 기법에서 가장 중요한 것은 통계정보다. 통계정보가 정확하지 않다면 전혀 엉뚱한 방향으로 쿼리를 실행할 수 도 있다. 예를 들어 1억건의 레코드가 저장된 테이블에서 통계정보가 제대로 갱신되지 않아 10건의 레코드만 있는 것으로 되어 있다면, 실제 쿼리 수행시 인덱스 레인지 스캔이 아니라 풀 테이블 스캔을 실행해 버릴 수도 있다. 
 
-기본적으로 
+기본적으로 MySQL에서 관리되는 통계 정보는 대략의 레코드 건수와 인덱스의 유니크한 값의 개수 정도가 전부다. 그에 반해 오라클과 같은 DBMS에는 통계정보가 상당히 정적이고 수집에 많은 시간이 소요되기 때문에 통계정보만 따로 백업하기도 한다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgyODA3MDQ1LC0xNTk5ODkyMDQ4LDE4Mz
-QzOTUxOCwtMTIxOTMzNjk2Miw4NDQyODE2MzYsMTI4NjY5ODY2
-Nyw1ODE1OTM5MTldfQ==
+eyJoaXN0b3J5IjpbLTg5NDM4NTgyNCwtMTU5OTg5MjA0OCwxOD
+M0Mzk1MTgsLTEyMTkzMzY5NjIsODQ0MjgxNjM2LDEyODY2OTg2
+NjcsNTgxNTkzOTE5XX0=
 -->
