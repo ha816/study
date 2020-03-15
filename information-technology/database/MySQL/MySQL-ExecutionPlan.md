@@ -30,13 +30,13 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 ## Statistical Information
 
-비용기반 최적화 기법에서 가장 중요한 것은 통계정보다. 통계정보가 정확하지 않다면 전혀 엉뚱한 방향으로 쿼리를 실행할 수 도 있다. 
+비용기반 최적화 기법에서 가장 중요한 것은 통계정보다. 통계정보가 정확하지 않다면 전혀 엉뚱한 방향으로 쿼리를 실행할 수 도 있다. 예를 들어 1억건의 레코드가 저장된 테이블에서 통계정보가 제대로 갱신되지 않아 10건의 레코드만 있는 것으로 되어 있다면, 실제 쿼리 수행시 인덱스 레인지 스캔이 아니라 풀 테이블 스캔을 실행해 버릴 수도 있다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODU5OTMzMjMsMTgzNDM5NTE4LC0xMj
+eyJoaXN0b3J5IjpbLTE1OTk4OTIwNDgsMTgzNDM5NTE4LC0xMj
 E5MzM2OTYyLDg0NDI4MTYzNiwxMjg2Njk4NjY3LDU4MTU5Mzkx
 OV19
 -->
