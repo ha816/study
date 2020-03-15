@@ -300,12 +300,12 @@ SELECT * FROM table WHERE col BETWEEN 100 AND 120
 SELECT * FROM table WHERE col LIKE '검색어%'
 ```
 
-다중컬럼으로 생성된 해시 인덱스에서도 모든 컬럼이 동등 조건으로 비교되는 경우에만 인덱스를 사용할 수 있다. 
+**다중컬럼으로 생성된 해시 인덱스에서도 모든 컬럼이 동등 조건으로 비교되는 경우에만 인덱스를 사용할 수 있다.** 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTIwODAzMzcsLTEyNzc3MjI1NDUsMT
+eyJoaXN0b3J5IjpbLTE1MTk3Mjk4MDksLTEyNzc3MjI1NDUsMT
 cyMjc3NjA5NiwtMjAyNDk2MDMzOSwtMTMxMDc3Nzk0OSwzNDU3
 Mzc3MSwtMTI4NDk0NjQyNiwxMTE5MDMyNDIxLDI5ODAyNjc2Mi
 wtMTAxMDcxMDQ4NywxNDIxMjc3MTYxLDkwMjQyMDQ5OCwxNzUx
