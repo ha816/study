@@ -42,15 +42,18 @@ SHOW INDEX FROM table
 ```
 통계 정보를 갱신하려면 ANALYZE를 실행하면 된다. 
 ```
--- // 파티션을 사용하지 않는 일반 테이블의 통계 정보 수집
+-- // 파티션을 사용하지 않는 일반 테이블의 통계 정보 수집 
 ANALZE TABLE table
+
+-- // 파티션을 사용하는 테이블에서 특정 파티션의 통계 정보 수집
+ANALZE TABLE table 
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMTY2MjM4NSwtMTg1OTkyOTc0MSwtMT
-U5OTg5MjA0OCwxODM0Mzk1MTgsLTEyMTkzMzY5NjIsODQ0Mjgx
-NjM2LDEyODY2OTg2NjcsNTgxNTkzOTE5XX0=
+eyJoaXN0b3J5IjpbLTE4MzQ3ODAyNjIsLTE4NTk5Mjk3NDEsLT
+E1OTk4OTIwNDgsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4
+MTYzNiwxMjg2Njk4NjY3LDU4MTU5MzkxOV19
 -->
