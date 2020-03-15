@@ -266,17 +266,19 @@ INDEX ix_test (col_1, col_2, ..., col_n)
 
 해시 인덱스의 가장 큰 장점은 실제 키 값과 관계없이 인덱스의 크기가 작고 검색이 빠르다는 것이다.해시 인덱스는 트리 형태의 구조가 아니므로 검색하고자 하는 값을 주면 해시함수를 통해 찾고자 하는 키값이 포함된 버킷을 알아 낼 수 있다. 그리고 버킷 하나만 읽어서 비교해보면 실제 레코드가 저장된 위치를 알 수 있다. 
 
-B-트리는 트리내에서 여러 노드를 읽어야하지만 해시 인덱스는 아니기 때무
+B-트리는 트리내에서 여러 노드를 읽어야하지만 해시 인덱스는 아니기 때문에 상당히 빨리 결과를 찾을 수 있다. 
+
+> B-Tree 인덱스나 해시 인덱스 모두 키값과 레코드 주소값 등의 정보를 저장해 두는 공간이 필요하다. 일반적으로 이 저장 공간은 작업의 기본 단위가 되며 고정된 크기가 할당된다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTE1MTY0OSwtMTI4NDk0NjQyNiwxMT
-E5MDMyNDIxLDI5ODAyNjc2MiwtMTAxMDcxMDQ4NywxNDIxMjc3
-MTYxLDkwMjQyMDQ5OCwxNzUxNTc1NTM2LC05MzQ1Nzc1MjYsNT
-A3ODgxMTU5LDkxODE0MzI5MywxNzc2NjUwNDM2LDUzMDU4MDQ2
-NiwyNjY1ODA5NDQsLTE3MTkzODIxMzUsLTIwOTQ0NDI0NjgsLT
-ExNDM0MTY2MiwtMTM3ODkzOTQzNywtMjA4NzE3NjU1MiwxNjI2
-ODE3MDldfQ==
+eyJoaXN0b3J5IjpbMzQ1NzM3NzEsLTEyODQ5NDY0MjYsMTExOT
+AzMjQyMSwyOTgwMjY3NjIsLTEwMTA3MTA0ODcsMTQyMTI3NzE2
+MSw5MDI0MjA0OTgsMTc1MTU3NTUzNiwtOTM0NTc3NTI2LDUwNz
+g4MTE1OSw5MTgxNDMyOTMsMTc3NjY1MDQzNiw1MzA1ODA0NjYs
+MjY2NTgwOTQ0LC0xNzE5MzgyMTM1LC0yMDk0NDQyNDY4LC0xMT
+QzNDE2NjIsLTEzNzg5Mzk0MzcsLTIwODcxNzY1NTIsMTYyNjgx
+NzA5XX0=
 -->
