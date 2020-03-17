@@ -1,5 +1,6 @@
 # Spring JDBC
 
+Spring JDBC를 공부하기 
 **JDBC(Java Database Connectivity)** 는 데이터 베이스에 연결하기 위한 표준 자바 라이브러리에 내장된 매커니즘이다.
 ```
 Connection connection = DriverManager.getConnection();
@@ -454,6 +455,6 @@ NESTED 메서드라면 REQUIRED와 매우 유사하다. 하지만 NESTED 메서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzkyMzc4MCwtNjY3MzUzMjUsOTkyND
+eyJoaXN0b3J5IjpbMTEwMTgxNDUzNSwtNjY3MzUzMjUsOTkyND
 Q5OTUwXX0=
 -->
