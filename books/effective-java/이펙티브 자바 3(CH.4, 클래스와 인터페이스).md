@@ -230,7 +230,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 인터페이스와 추상 클래스의 가장 큰 차이는 **추상 클래스가 정의한 타입을 구현하는 클래스는 반드시 추상 클래스의 하위 클래스가 되어야 한다는 것이다.** 자바는 단일 상속만 지원하니, 추상 클래스 방식은 새로운 타입을 정의하는데 큰 제약이 있다. 반면에 인터페이스가 선언한 메서드를 모두 정의하고 그 일반 규약을 잘 지킨 클래스라면 다른 어떤 클래스를 상속했든 같은 타입이 된다.
 
-**기존 클래스에도 손쉽게 새로운 인터페이스를 구현해 넣을 수 있다.**  인터페이스가 요구하는 메서드를 추가하고 클래스 선언에 implements만 추가하면 된다. 자파 플랫폼에서도 Comparable, Iterable, AutoCloseable 인터페이스가 샐
+**기존 클래스에도 손쉽게 새로운 인터페이스를 구현해 넣을 수 있다.**  인터페이스가 요구하는 메서드를 추가하고 클래스 선언에 implements만 추가하면 된다. 자파 플랫폼에서도 Comparable, Iterable, AutoCloseable 인터페이스가 새로 추가 됬을때 수많은 기존 클래스에 인터페이스가 구현된체 배포가 되었다. 반면에 기존 클래스 위에 새로운 추상 클래스를 끼워넣는것은 어려운게 일반적이다. 
 
 
 
@@ -295,11 +295,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk2MDQ5NTMsLTgyMzU1NjM0MywtNzI5Nz
-Q1MCw0OTkzMDUzMDcsLTIxMDE2NzgyMTEsNjM1NTczNDA4LDE0
-NTAyNTA5MzAsOTE2NDAyOTgsLTQzOTQyOTk1OCwtMTA0OTY2Mz
-U4Niw4MTIwNDM0NDEsMjI4NzE0NDU1LDU2NzU2NDA4NywtODc4
-MjY5NjA0LC0xMjY3MDI4NTkzLC00MTIwMjI1MjgsLTE2MTkzMz
-I4ODksNDY2NzYwNDk0LDE3OTExMDg0OTMsLTg0MjQ5OTE4Nl19
-
+eyJoaXN0b3J5IjpbMTA3ODgyOTcyMSwtODIzNTU2MzQzLC03Mj
+k3NDUwLDQ5OTMwNTMwNywtMjEwMTY3ODIxMSw2MzU1NzM0MDgs
+MTQ1MDI1MDkzMCw5MTY0MDI5OCwtNDM5NDI5OTU4LC0xMDQ5Nj
+YzNTg2LDgxMjA0MzQ0MSwyMjg3MTQ0NTUsNTY3NTY0MDg3LC04
+NzgyNjk2MDQsLTEyNjcwMjg1OTMsLTQxMjAyMjUyOCwtMTYxOT
+MzMjg4OSw0NjY3NjA0OTQsMTc5MTEwODQ5MywtODQyNDk5MTg2
+XX0=
 -->
