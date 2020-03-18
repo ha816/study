@@ -228,8 +228,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 자바가 제공하는 다중 구현 메커니즘은 인터페이스와 추상 클래스 두 가지이다. 자바 8부터는 인터페이스도 디폴터 메서드(default method)를 제공할 수 있게 되어 이제 인터페이스와 추상 클래스 모두 인스턴스 메서드를 구현 형태로 제공할 수 있다. 
 
-인터페이스와 추상 클래스의 가장 큰 차이는 **추상 클래스가 정의한 타입을 구현하는 클래스는 반드시 추상 클래스의 하위 클래스가 되어야 한다는 것이다.** 자바는 단일 상속만 지원하니, 추상 클래스 방식은 새로운 타입을 정의하는데 큰 제약이 있다. 
-
+인터페이스와 추상 클래스의 가장 큰 차이는 **추상 클래스가 정의한 타입을 구현하는 클래스는 반드시 추상 클래스의 하위 클래스가 되어야 한다는 것이다.** 자바는 단일 상속만 지원하니, 추상 클래스 방식은 새로운 타입을 정의하는데 큰 제약이 있다. 반면에 인터페이스가 선언한 메서드를 모두 정의하고 그 일반 규약을 잘 지킨 클래스라면 다른 어떤 클래스를 상속했든 같은 타입이 ㄷ
 
 
 
@@ -294,11 +293,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMzU1NjM0MywtNzI5NzQ1MCw0OTkzMD
-UzMDcsLTIxMDE2NzgyMTEsNjM1NTczNDA4LDE0NTAyNTA5MzAs
-OTE2NDAyOTgsLTQzOTQyOTk1OCwtMTA0OTY2MzU4Niw4MTIwND
-M0NDEsMjI4NzE0NDU1LDU2NzU2NDA4NywtODc4MjY5NjA0LC0x
-MjY3MDI4NTkzLC00MTIwMjI1MjgsLTE2MTkzMzI4ODksNDY2Nz
-YwNDk0LDE3OTExMDg0OTMsLTg0MjQ5OTE4NiwtMTUzNzExNjg0
-M119
+eyJoaXN0b3J5IjpbMzg3NTAzMjg0LC04MjM1NTYzNDMsLTcyOT
+c0NTAsNDk5MzA1MzA3LC0yMTAxNjc4MjExLDYzNTU3MzQwOCwx
+NDUwMjUwOTMwLDkxNjQwMjk4LC00Mzk0Mjk5NTgsLTEwNDk2Nj
+M1ODYsODEyMDQzNDQxLDIyODcxNDQ1NSw1Njc1NjQwODcsLTg3
+ODI2OTYwNCwtMTI2NzAyODU5MywtNDEyMDIyNTI4LC0xNjE5Mz
+MyODg5LDQ2Njc2MDQ5NCwxNzkxMTA4NDkzLC04NDI0OTkxODZd
+fQ==
 -->
