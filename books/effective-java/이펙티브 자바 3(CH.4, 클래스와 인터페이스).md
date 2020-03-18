@@ -232,7 +232,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 **기존 클래스에도 손쉽게 새로운 인터페이스를 구현해 넣을 수 있다.**  인터페이스가 요구하는 메서드를 추가하고 클래스 선언에 implements만 추가하면 된다. 자파 플랫폼에서도 Comparable, Iterable, AutoCloseable 인터페이스가 새로 추가 됬을때 수많은 기존 클래스에 인터페이스가 구현된체 배포가 되었다. 반면에 기존 클래스 위에 새로운 추상 클래스를 끼워넣는것은 어려운게 일반적이다. 두 클래스가 같은 추상 클래스를 확장하길 원한다면, 그 추상 클래스는 계층 구조상 두 클래스의 공통 조상이어야 한다. 안타깝게도 이 방식은 클래스 계층 구조에 큰 혼란을 야기한다. 새로 추가된 추상 클래스의 모든 자손이 이를 상속하게 되는 것이다. 
 
-**인터페이스는 믹스인(mixin) 정의에 안성맞춤이다.** 믹스인이란 클래스가 ㄱ
+**인터페이스는 믹스인(mixin) 정의에 안성맞춤이다.** 믹스인이란 클래스가 구현할 수 있는 타입으로, 믹스인을 구현한 클래스에 원래의 주된 타입 외에도 특정 선택정 행위를 제공한다고 선언하는 효과를 준다. 예를 들어, Comparable의 경우, 구현한 인스턴스들끼리는 순서를 정할 수 있다고 선언하는 mixin 인터페이스이다. 
 
 
 
@@ -297,11 +297,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyMTIwOTgsMTA3ODgyOTcyMSwtODIzNT
-U2MzQzLC03Mjk3NDUwLDQ5OTMwNTMwNywtMjEwMTY3ODIxMSw2
-MzU1NzM0MDgsMTQ1MDI1MDkzMCw5MTY0MDI5OCwtNDM5NDI5OT
-U4LC0xMDQ5NjYzNTg2LDgxMjA0MzQ0MSwyMjg3MTQ0NTUsNTY3
-NTY0MDg3LC04NzgyNjk2MDQsLTEyNjcwMjg1OTMsLTQxMjAyMj
-UyOCwtMTYxOTMzMjg4OSw0NjY3NjA0OTQsMTc5MTEwODQ5M119
-
+eyJoaXN0b3J5IjpbNjE2NzEzODMzLDEwNzg4Mjk3MjEsLTgyMz
+U1NjM0MywtNzI5NzQ1MCw0OTkzMDUzMDcsLTIxMDE2NzgyMTEs
+NjM1NTczNDA4LDE0NTAyNTA5MzAsOTE2NDAyOTgsLTQzOTQyOT
+k1OCwtMTA0OTY2MzU4Niw4MTIwNDM0NDEsMjI4NzE0NDU1LDU2
+NzU2NDA4NywtODc4MjY5NjA0LC0xMjY3MDI4NTkzLC00MTIwMj
+I1MjgsLTE2MTkzMzI4ODksNDY2NzYwNDk0LDE3OTExMDg0OTNd
+fQ==
 -->
