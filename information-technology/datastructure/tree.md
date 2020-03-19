@@ -42,12 +42,11 @@ Tree
 
 이진 트리의 또 다른 응용법으로 Binary Heap이 있다. 참고로 Heap의 사전적 의미는 더미, 무더기라는 의미이다. 힙은 여러 값들 중에서 최댓값이나 최솟값을 빠르게 찾아내도록 만들어진 자료구조이다. 최대값을 빠르게 찾아내는 힙을 최대힙(max heap), 최소값을 빠르게 찾아내는 힙을 최소힙(min heap)이라고 한다. 
 
+* Binary Heap 특성
+	* Complete Binary Tree 
+	* Max Heap의 경우, 부모는 자식 보다 크다. 반면Min Heap에선, 부모가 자식보다 작다.
+
 최대 힙(max heap)은 모든 부모 노드의 값이 자식 노드의 값보다 크거나 같은 규칙을 만족하는 완전 이진 트리(Complete Binary Tree)를 말한다. 반대로 최소 힙(min heap) 모든 부모 노드의 값이 자식 노드의 값보다 작거나 같은 완전 이진 트리(Complete Binary Tree)이다. 참고로 힙 트리에서는 중복된 값을 허용한다. (이진 탐색 트리에서는 중복된 값을 허용하지 않는다.)
-
-Binary Heap 특성
-1. Complete Binary Tree 
-3. Max Heap일 경우, 부모는 자식 보다 큰 값을 가진다. 반대로 Min Heap에선, 부모가 자식보다 작은 값을 가진다. 
-
 
 ![](https://gmlwjd9405.github.io/images/data-structure-heap/types-of-heap.png)
 
@@ -76,5 +75,5 @@ Binary Heap 특성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTE1NTI0NDAsMTM4MDg2MzcwOF19
+eyJoaXN0b3J5IjpbLTMxODA0MzcxNiwxMzgwODYzNzA4XX0=
 -->
