@@ -2,7 +2,7 @@
 
 **규모가 있는 엔터프라이즈급 애플리케이션을 개발하는데 유용한 자바기반의 오프소스 프레임워크.** 
 
-스프링 프레임워크의 핵심은 DI(Dependency Injection), AOP(Aspect Oriendted Programming)이다. 뿐만 아니라 스프링 프레임워크는 추상화를 통해 다양한 모듈을 사용할 수 있고 프레임워크단에서 제공하는 훌륭한 구현체가 많다.
+스프링 프레임워크의 핵심은 DI(Dependency Injection), AOP(Aspect Oriendted Programming)이다. 이 뿐만 아니라 스프링 프레임워크는 추상화를 통해 다양한 모듈을 사용할 수 있고 프레임워크단에서 제공하는 훌륭한 구현체가 많다.
 
 # Java EE
 
@@ -27,5 +27,5 @@ EJB는 보안, 트랜잭션등 EJB 컨테이너의 다양한 서비스를 제공
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwODE5MjkwNF19
+eyJoaXN0b3J5IjpbLTE2MjYzMjI5MDhdfQ==
 -->
