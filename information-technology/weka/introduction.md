@@ -14,7 +14,9 @@ Each weka.core.instance consists of a number of attributes
 ## Attributes
 
 Nominal
-: one of a predefined list of values − e.g. red, green, blue 
+: one of a predefined list of values 
+− e.g. red, green, blue 
+
 
 Numeric
 : A real or integer number
@@ -23,9 +25,9 @@ String
 : Enclosed in “double quotes”
 
 Date
-    Relational
+: date
 
-
+# ARFF 
 
 참고 문헌
 
@@ -33,5 +35,5 @@ Date
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5Nzc2MzgxXX0=
+eyJoaXN0b3J5IjpbMTM5NjY3NDIyOF19
 -->
