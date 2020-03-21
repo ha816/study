@@ -61,6 +61,7 @@ ZeroR(Simple classifier)
 
 ## Test Results
 
+arff can be splited into train and test set – Soybean-train.arff – Soybean-test.arff  Input command: – java weka.classifiers.trees.J48 -t soybeantrain.arff -T soybean-test.arff -i
 
 
 ### True Positive Rate(TP)
@@ -79,6 +80,6 @@ Equivalent to Recall
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkwNjY1Njc1LC0xMDQ2ODExODgxLC0xMD
+eyJoaXN0b3J5IjpbMTY5NDYzNDY3LC0xMDQ2ODExODgxLC0xMD
 k2ODM1MDEzLDEzNDA2MjAyNjhdfQ==
 -->
