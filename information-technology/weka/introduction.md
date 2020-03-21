@@ -13,10 +13,16 @@ Each weka.core.instance consists of a number of attributes
 
 ## Attributes
 
-Nominal: one of a predefined list of values − e.g. red, green, blue 
- Numeric: A real or integer number
-  String: Enclosed in “double quotes”
-   Date
+Nominal
+: one of a predefined list of values − e.g. red, green, blue 
+
+Numeric
+: A real or integer number
+
+String
+: Enclosed in “double quotes”
+
+Date
     Relational
 
 
@@ -27,5 +33,5 @@ Nominal: one of a predefined list of values − e.g. red, green, blue
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjM0MjEzNjldfQ==
+eyJoaXN0b3J5IjpbOTI5Nzc2MzgxXX0=
 -->
