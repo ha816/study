@@ -54,9 +54,10 @@ cloudy,22,FALSE,yes
 
 # Classifiers in Weka
 
-Learning algorithms in Weka are derived from the abstract class. 솜ㅅweka.classifiers.Classifier 
+Learning algorithms in Weka are derived from the abstract class. That is weka.classifiers.Classifier.
 
- Simple classifier: ZeroR − Just determines the most common class − Or the median (in the case of numeric values) − Tests how well the class can be predicted without considering other attributes − Can be used as a Lower Bound on Performance.
+ZeroR(Simple classifier)
+: Just determines the most common class − Or the median (in the case of numeric values) − Tests how well the class can be predicted without considering other attributes − Can be used as a Lower Bound on Performance.
 
 
 참고 문헌
@@ -65,5 +66,5 @@ Learning algorithms in Weka are derived from the abstract class. 솜ㅅweka.clas
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNzU0MjgwMCwxMzQwNjIwMjY4XX0=
+eyJoaXN0b3J5IjpbNDg5ODA0MDk1LDEzNDA2MjAyNjhdfQ==
 -->
