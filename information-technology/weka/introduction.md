@@ -17,7 +17,6 @@ Nominal
 : one of a predefined list of values 
 − e.g. red, green, blue 
 
-
 Numeric
 : A real or integer number
 
@@ -41,10 +40,10 @@ Data section
 ```
 //HEADER
 @relation weather
-@attribute outlook {sunny, cloudy, rainy}
-@attribute temperature real
-@attribute windy {TRUE, FALSE}
-@attribute play {yes, no} //target / class variable
+@attribute outlook {sunny, cloudy, rainy} // Nominal
+@attribute temperature real // Numeric
+@attribute windy {TRUE, FALSE} // Nominal
+@attribute play {yes, no} //target, class variable
 
 //DATA SECTION
 @data
@@ -55,7 +54,7 @@ cloudy,22,FALSE,yes
 
 # Classifiers in Weka
 
-Learning algorithms in Weka are derived from the abstract class- weka.classifiers.Classifier 
+Learning algorithms in Weka are derived from the abstract class. 솜ㅅweka.classifiers.Classifier 
 
  Simple classifier: ZeroR − Just determines the most common class − Or the median (in the case of numeric values) − Tests how well the class can be predicted without considering other attributes − Can be used as a Lower Bound on Performance.
 
@@ -66,5 +65,5 @@ Learning algorithms in Weka are derived from the abstract class- weka.classifier
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNTE0MDk2MiwxMzQwNjIwMjY4XX0=
+eyJoaXN0b3J5IjpbLTgwNzU0MjgwMCwxMzQwNjIwMjY4XX0=
 -->
