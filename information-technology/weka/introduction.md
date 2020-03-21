@@ -67,13 +67,13 @@ arff can be splited into train and test set
 
 Input command
 ```
-java weka.classifiers.trees.J48 -t soybeantrain.arff -T soybean-test.arff -i
+java weka.classifiers.trees.J48 -t soybean-train.arff -T soybean-test.arff -i
 ```
 
 
 ### True Positive Rate(TP)
 
-실제 클래스 x에 해당하는 데이터 엔트리 중에서 x
+테스트 데이터에서 클래스 x에 해당하는 데이터 엔트리 중에서  x
 
 Proportion classified as class x / Actual total in class x
 
@@ -87,6 +87,6 @@ Equivalent to Recall
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NTkyNzA1MiwtMTA0NjgxMTg4MSwtMT
+eyJoaXN0b3J5IjpbMTA1MzcxNjU1MSwtMTA0NjgxMTg4MSwtMT
 A5NjgzNTAxMywxMzQwNjIwMjY4XX0=
 -->
