@@ -29,11 +29,14 @@ Date
 
 # ARFF 
 
+The external representation of an Instances class
+  Consists of: − A header: Describes the attribute types − Data section: Comma separated list of data
+
 참고 문헌
 
 [https://www.cs.auckland.ac.nz/courses/compsci367s1c/tutorials/IntroductionToWeka.pdf](https://www.cs.auckland.ac.nz/courses/compsci367s1c/tutorials/IntroductionToWeka.pdf)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NjY3NDIyOF19
+eyJoaXN0b3J5IjpbLTIxMTk1NzIxMjZdfQ==
 -->
