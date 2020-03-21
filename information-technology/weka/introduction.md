@@ -6,7 +6,12 @@ Weka contains tools for **data pre-processing, classification, regression, clust
 
 # Datasets
 
-Each entry in a dataset is an instance of the java class: − weka.core.Instance  Each instance consists of a number of attributes
+Each entry in a dataset is an instance of the java class
+That is, weka.core.Instance
+
+Each weka.core.instance consists of a number of attributes
+
+
 
 
 참고 문헌
@@ -15,5 +20,5 @@ Each entry in a dataset is an instance of the java class: − weka.core.Instance
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzk1NTM0OF19
+eyJoaXN0b3J5IjpbLTk3ODcyODI0XX0=
 -->
