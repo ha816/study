@@ -38,7 +38,17 @@ Header
 Data section
 : Comma separated list of data
 
+```
+//HEADER
+@relation weather
 
+@attribute outlook {sunny, cloudly, rainy}
+@attribute temperature real
+
+@date
+@at
+
+```
 
 참고 문헌
 
@@ -46,5 +56,5 @@ Data section
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNzE3MzUyMl19
+eyJoaXN0b3J5IjpbLTEyOTM0NzY3OTVdfQ==
 -->
