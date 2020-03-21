@@ -59,7 +59,17 @@ Learning algorithms in Weka are derived from the abstract class. That is weka.cl
 ZeroR(Simple classifier)
 : Just determines the most common class or The median (in the case of numeric values). Tests how well the class can be predicted without considering other attributes. ZeroR can be used as a Lower Bound on Performance.
 
+## Results
 
+### True Positive Rate(TP)
+
+
+
+Proportion classified as class x / Actual total in class x
+
+
+
+Equivalent to Recall
 
 참고 문헌
 
@@ -67,5 +77,6 @@ ZeroR(Simple classifier)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTY4MzUwMTMsMTM0MDYyMDI2OF19
+eyJoaXN0b3J5IjpbLTEwNDY4MTE4ODEsLTEwOTY4MzUwMTMsMT
+M0MDYyMDI2OF19
 -->
