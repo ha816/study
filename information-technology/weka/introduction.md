@@ -41,17 +41,19 @@ Data section
 ```
 //HEADER
 @relation weather
-
-@attribute outlook {sunny, cloudly, rainy}
+@attribute outlook {sunny, cloudy, rainy}
 @attribute temperature real
 @attribute windy {TRUE, FALSE}
 @attribute play {yes, no} //target / class variable
 
 //DATA SECTION
 @data
-sunny, 10,TRUE, yes
-
+sunny,10,TRUE,yes
+cloudy,22,FALSE,yes
+...
 ```
+
+
 
 참고 문헌
 
@@ -59,5 +61,5 @@ sunny, 10,TRUE, yes
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDU1MDA2MzBdfQ==
+eyJoaXN0b3J5IjpbMTM0MDYyMDI2OF19
 -->
