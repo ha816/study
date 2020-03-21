@@ -44,9 +44,12 @@ Data section
 
 @attribute outlook {sunny, cloudly, rainy}
 @attribute temperature real
+@attribute windy {TRUE, FALSE}
+@attribute play {yes, no} //target / class variable
 
-@date
-@at
+//DATA SECTION
+@data
+sunny, 10,TRUE, yes
 
 ```
 
@@ -56,5 +59,5 @@ Data section
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTM0NzY3OTVdfQ==
+eyJoaXN0b3J5IjpbLTIwMDU1MDA2MzBdfQ==
 -->
