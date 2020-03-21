@@ -11,6 +11,13 @@ That is, weka.core.Instance
 
 Each weka.core.instance consists of a number of attributes
 
+## Attributes
+
+Nominal: one of a predefined list of values − e.g. red, green, blue 
+ Numeric: A real or integer number
+  String: Enclosed in “double quotes”
+   Date
+    Relational
 
 
 
@@ -20,5 +27,5 @@ Each weka.core.instance consists of a number of attributes
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3ODcyODI0XX0=
+eyJoaXN0b3J5IjpbLTE3NjM0MjEzNjldfQ==
 -->
