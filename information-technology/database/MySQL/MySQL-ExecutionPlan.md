@@ -232,13 +232,23 @@ WHERE e.emp_no = 10001;
 
 서브 쿼리가 **FROM 절에 사용될 경우 MySQL 항상 DERIVED인 실행 계획을 만든다.** DERIVED는 단위 SELECT 쿼리의 실행 결과를 메모리나 디스크에 임시 테이블을 생성하는 것을 의미한다. 이 임시 테이블을 파생 테이블이라고도 한다. 
 
-안
+안타깝게도 **FROM 절에 사용된 서브 쿼리는 제대로 성능 최적화를 못할때가 많다. 파생 테이블에는 인덱스가 전혀 없으므로 다른 테이블과 조인할때 성능상 불리할때가 많다.** 
+
+```
+EXPLAIN
+SELECT *
+	( SELECT COUNT(*)
+	FROM dept_emp de, dept_manager dm
+	WHERE dm.dept_no = de.dept_no AND de.emp_no = e.emp_no) AS cnt
+FROM employees e
+WHERE e.emp_no = 10001;
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzk1MTQ0NywxMDMzMjIzMzUsMjQ3ND
-A2ODQ2LC0xMjQ2MDc3NDMyLC0xMzM0MjE4NTUxLDE3MTA0NjYy
-ODksLTc1NDM2NDAzLDIxMTYwMjQ3MzMsLTIwNjY2MjA4MSwxOT
-E4MjQ3NSwtMTYzNzEyNjgyMiwtMjUyNDI1MjY5LDI4NDc4MTc3
-MywtMjAyMzQyMDE1LDIwOTM2NjcyODAsMTU4MDEzOTg5MiwxOD
-c3OTkzODksMTY5NDQzNzY0MCwxODk0MDg1MDQ5LDE3Mjc4ODQ4
-ODBdfQ==
+eyJoaXN0b3J5IjpbLTIwNTExMDk4MjAsMTIwNzk1MTQ0NywxMD
+MzMjIzMzUsMjQ3NDA2ODQ2LC0xMjQ2MDc3NDMyLC0xMzM0MjE4
+NTUxLDE3MTA0NjYyODksLTc1NDM2NDAzLDIxMTYwMjQ3MzMsLT
+IwNjY2MjA4MSwxOTE4MjQ3NSwtMTYzNzEyNjgyMiwtMjUyNDI1
+MjY5LDI4NDc4MTc3MywtMjAyMzQyMDE1LDIwOTM2NjcyODAsMT
+U4MDEzOTg5MiwxODc3OTkzODksMTY5NDQzNzY0MCwxODk0MDg1
+MDQ5XX0=
 -->
