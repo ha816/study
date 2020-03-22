@@ -230,9 +230,9 @@ WHERE e.emp_no = 10001;
 
 ### DERIVED
 
-서브 쿼리가 FROM 절에 사용될 경우 MySQL 항
+서브 쿼리가 **FROM 절에 사용될 경우 MySQL 항상 DERIVED인 실행 계획을 만든다.**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAyODgzMzgzLDI0NzQwNjg0NiwtMTI0Nj
+eyJoaXN0b3J5IjpbMTAzMzIyMzM1LDI0NzQwNjg0NiwtMTI0Nj
 A3NzQzMiwtMTMzNDIxODU1MSwxNzEwNDY2Mjg5LC03NTQzNjQw
 MywyMTE2MDI0NzMzLC0yMDY2NjIwODEsMTkxODI0NzUsLTE2Mz
 cxMjY4MjIsLTI1MjQyNTI2OSwyODQ3ODE3NzMsLTIwMjM0MjAx
