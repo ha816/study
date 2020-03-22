@@ -88,14 +88,18 @@ SELECT COUNT(*) FROM employess + SELECT COUNT(*) FROM departments )
 
 각 단위 SELECT 쿼리가 어떤 타입인지 알려준다. 
 
-### 
+### SIMPLE
+
+UNION이나 서브 쿼리를 사용하지 않는 단순한 SELECT 쿼리인 경우, select_type에 SIMPLE로 표시된다. 쿼리 문장이 아무리 복잡하더라도 실행계획에서 SIMPLE인 단위 쿼리는 반드시 하나만 존재한다. 
+
+### PRIMAR
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MDUyNTk4OSwtNzUxMDAxNjI2LC0xOD
-U5MTg2NjMxLC0xMDE5NzM5NDM1LC02MDMzNjgwNDksODc3NjI0
-OTc1LC0xODU5OTI5NzQxLC0xNTk5ODkyMDQ4LDE4MzQzOTUxOC
-wtMTIxOTMzNjk2Miw4NDQyODE2MzYsMTI4NjY5ODY2Nyw1ODE1
-OTM5MTldfQ==
+eyJoaXN0b3J5IjpbLTEwNDc1MDU1MiwxMjcwNTI1OTg5LC03NT
+EwMDE2MjYsLTE4NTkxODY2MzEsLTEwMTk3Mzk0MzUsLTYwMzM2
+ODA0OSw4Nzc2MjQ5NzUsLTE4NTk5Mjk3NDEsLTE1OTk4OTIwND
+gsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNiwxMjg2
+Njk4NjY3LDU4MTU5MzkxOV19
 -->
