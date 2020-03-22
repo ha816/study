@@ -124,14 +124,16 @@ SELECT * FROM (
 
 DEPENDENT UNION은 UNION이나 UNION ALL로 집합을 결합하는 쿼리에 표시된다. 추가적으로 **DEPENDENT는 UNION 이나 UNION ALL로 결합된 단위 쿼리가 외부의 영향을 받는 것을 의미한다.** 
 
-참고로 UNION과 UNION ALL의 차이는 레코드간의 중복을 제거하는지 여부에 달려 있다. UNION은 모든 컬럼이 같은 결과에 대해서는 중복 결과를 제거하지만 UNION ALL은 제거하지 않는다. UNION을 쓰면 중복을 제거하기 위해 추가적인 작업을 반드시 해야하기 때문에 성능 이슈가 있을 수 있다. 하지만 보통 우리는 중복값을 필요로 하는 경우가 없다. 
+UNION VS UNION ALL
+: 결과 레코드간의 중복을 제거 하는가? 
+UNION은 모든 컬럼이 같은 결과에 대해서는 중복 결과를 제거하지만 UNION ALL은 제거하지 않는다. UNION을 쓰면 중복을 제거하기 위해 추가적인 작업을 반드시 해야하기 때문에 성능 이슈가 있을 수 있다. 하지만 보통 우리는 중복값을 필요로 하는 경우가 없다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1Nzk4MDY3OCwyODQ3ODE3NzMsLTIwMj
+eyJoaXN0b3J5IjpbLTM1MTQ1NjEyNiwyODQ3ODE3NzMsLTIwMj
 M0MjAxNSwyMDkzNjY3MjgwLDE1ODAxMzk4OTIsMTg3Nzk5Mzg5
 LDE2OTQ0Mzc2NDAsMTg5NDA4NTA0OSwxNzI3ODg0ODgwLDEyNz
 A1MjU5ODksLTc1MTAwMTYyNiwtMTg1OTE4NjYzMSwtMTAxOTcz
