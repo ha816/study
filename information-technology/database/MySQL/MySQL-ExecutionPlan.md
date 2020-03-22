@@ -176,11 +176,17 @@ SELECT emp_no FROM dept_emp WHERE from_date > '2001-01-01'
 
 일반적으로 서브 쿼리라고 하면 여러 쿼리를 통틀어 이야기한다. 여기서 SUBQUERY라는 것은 FROM절을 제외하고 사용되는 서브 쿼리만을 의미한다.
 
+```
+EXPLAIN
+SELECT emp_no FROM salaries WHERE salary > 100000
+UNION ALL
+SELECT emp_no FROM dept_emp WHERE from_date > '2001-01-01'
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyODc1OTExMiwyMTE2MDI0NzMzLC0yMD
+eyJoaXN0b3J5IjpbMTQ5OTM4MzE0NCwyMTE2MDI0NzMzLC0yMD
 Y2NjIwODEsMTkxODI0NzUsLTE2MzcxMjY4MjIsLTI1MjQyNTI2
 OSwyODQ3ODE3NzMsLTIwMjM0MjAxNSwyMDkzNjY3MjgwLDE1OD
 AxMzk4OTIsMTg3Nzk5Mzg5LDE2OTQ0Mzc2NDAsMTg5NDA4NTA0
