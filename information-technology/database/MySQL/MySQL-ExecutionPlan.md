@@ -263,12 +263,15 @@ DEPENDENT SUBQUERY는 외부 쿼리의 값을 단위로 캐시가 만들어진�
 * NOT-DETERMINISTIC 속성의 스토어드 루틴이 서브 쿼리에 있는 경우
 * UUID()나 RAND()함수처럼 호출할때 마다 함수가 달라지는 경우
 
+## table 컬럼
+
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTMzODE5ODAsLTExMTgyODM4NDAsMj
+eyJoaXN0b3J5IjpbLTE2NTU2NjAxODAsLTExMTgyODM4NDAsMj
 EyMDE3ODI1Niw1MjUyMDM1NjcsLTE1MjkwMTUzMzIsMTIwNzk1
 MTQ0NywxMDMzMjIzMzUsMjQ3NDA2ODQ2LC0xMjQ2MDc3NDMyLC
 0xMzM0MjE4NTUxLDE3MTA0NjYyODksLTc1NDM2NDAzLDIxMTYw
