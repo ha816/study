@@ -253,13 +253,13 @@ WHERE e.emp_no=tb.emp_no;
 
 하나의 쿼리 문장에서 서브 쿼리가 하나만 있더라도 실제 그 서브 쿼리가 한번만 실행되는 것은 아니다. 조건이 똑같은 서브 쿼리가 실행될때는 다시 실행하지 않고 이전 실행 결과를 그대로 사용할 수 있게 쿼리의 결과를 캐시 공간에 담아둔다.  이 서브 쿼리 캐시는 쿼리 캐시나 파생 테이블과는 전혀 무관한 기능이므로 혼동하지 말자.
 
-* S
+* SUBQUERY는 바깥쪽(Outer)의 영향을 받지 않으므로 처음 한번 실행한 후 그 결과를 캐시해두고 필요할때 재사용한다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA1NTI4NjQ4LDUyNTIwMzU2NywtMTUyOT
-AxNTMzMiwxMjA3OTUxNDQ3LDEwMzMyMjMzNSwyNDc0MDY4NDYs
-LTEyNDYwNzc0MzIsLTEzMzQyMTg1NTEsMTcxMDQ2NjI4OSwtNz
-U0MzY0MDMsMjExNjAyNDczMywtMjA2NjYyMDgxLDE5MTgyNDc1
-LC0xNjM3MTI2ODIyLC0yNTI0MjUyNjksMjg0NzgxNzczLC0yMD
-IzNDIwMTUsMjA5MzY2NzI4MCwxNTgwMTM5ODkyLDE4Nzc5OTM4
-OV19
+eyJoaXN0b3J5IjpbMjEyMDE3ODI1Niw1MjUyMDM1NjcsLTE1Mj
+kwMTUzMzIsMTIwNzk1MTQ0NywxMDMzMjIzMzUsMjQ3NDA2ODQ2
+LC0xMjQ2MDc3NDMyLC0xMzM0MjE4NTUxLDE3MTA0NjYyODksLT
+c1NDM2NDAzLDIxMTYwMjQ3MzMsLTIwNjY2MjA4MSwxOTE4MjQ3
+NSwtMTYzNzEyNjgyMiwtMjUyNDI1MjY5LDI4NDc4MTc3MywtMj
+AyMzQyMDE1LDIwOTM2NjcyODAsMTU4MDEzOTg5MiwxODc3OTkz
+ODldfQ==
 -->
