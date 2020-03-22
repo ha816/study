@@ -192,13 +192,15 @@ WHERE e.emp_no = 10001;
 | 2 | SUBQUERY| dm|
 |2|SUBQUERY|de|
 
-MySQL의 실행 계획에서 **FROM 절에 사용된 서브 쿼리는 DERIVED**라고 표시되고, 그 밖의 위치에서 사용된 서브 쿼리는 전부 SUBQUERY라고 표시된다. 파생 테이블이라는 단어는 DERIVED라
+MySQL의 실행 계획에서 **FROM 절에 사용된 서브 쿼리는 DERIVED**라고 표시되고, 그 밖의 위치에서 사용된 서브 쿼리는 전부 SUBQUERY라고 표시된다. 파생 테이블이라는 단어는 DERIVED와 같은 의미로 이해하면 된다.
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NjA5NDQ0MCwtNzU0MzY0MDMsMjExNj
+eyJoaXN0b3J5IjpbMTcxMDQ2NjI4OSwtNzU0MzY0MDMsMjExNj
 AyNDczMywtMjA2NjYyMDgxLDE5MTgyNDc1LC0xNjM3MTI2ODIy
 LC0yNTI0MjUyNjksMjg0NzgxNzczLC0yMDIzNDIwMTUsMjA5Mz
 Y2NzI4MCwxNTgwMTM5ODkyLDE4Nzc5OTM4OSwxNjk0NDM3NjQw
