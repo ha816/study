@@ -164,17 +164,17 @@ UNION ALL
 SELECT emp_no FROM dept_emp WHERE from_date > '2001-01-01'
 ```
 
-|id| select_type|
-|--|--|
-|1 | PRIMARY |
-| 2 | UNION|
-|  3| DEPENDENT UNION|
+|id| select_type|table|
+|--|--|--|
+|1 | PRIMARY |salaries|
+| 2 | UNION| dept_emp|
+||UNION RESULT|<union1,2>|
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NDU3Mzc2MiwtMjA2NjYyMDgxLDE5MT
+eyJoaXN0b3J5IjpbMjExNjAyNDczMywtMjA2NjYyMDgxLDE5MT
 gyNDc1LC0xNjM3MTI2ODIyLC0yNTI0MjUyNjksMjg0NzgxNzcz
 LC0yMDIzNDIwMTUsMjA5MzY2NzI4MCwxNTgwMTM5ODkyLDE4Nz
 c5OTM4OSwxNjk0NDM3NjQwLDE4OTQwODUwNDksMTcyNzg4NDg4
