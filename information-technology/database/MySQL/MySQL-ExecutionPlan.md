@@ -157,13 +157,27 @@ WHERE e.emp_no = 10001;
 
 UNION 결과를 담아두는 테이블을 의미한다. MySQL에서 UNION ALL 이나 UNION 쿼리는 모두 UNION 결과를 임시 테이블에 생성한다. 실행 계획 상에서 이 임시 테이블을 말하는 라인이 UNION RESULT이다.  UNION RESULT는 실제 쿼리에서 단위 쿼리가 아니기 때문에 별도로 id값은 부여되지 않는다. 
 
+```
+EXPLAIN
+SELECT e.first_name,
+	( 
+	SELECT CONCAT('Salary', COUNT(*)) AS message
+	FROM salaries s WHERE s.emp_no = e.emp_no
+	UNION
+	SELECT CONCAT('Department', COUNT(*)) AS message
+	FROM dept_emp de WHERE de.emp_no = e.emp_no
+	) AS message
+FROM employees e
+WHERE e.emp_no = 10001;
+```
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjY2MjA4MSwxOTE4MjQ3NSwtMTYzNz
-EyNjgyMiwtMjUyNDI1MjY5LDI4NDc4MTc3MywtMjAyMzQyMDE1
-LDIwOTM2NjcyODAsMTU4MDEzOTg5MiwxODc3OTkzODksMTY5ND
-QzNzY0MCwxODk0MDg1MDQ5LDE3Mjc4ODQ4ODAsMTI3MDUyNTk4
-OSwtNzUxMDAxNjI2LC0xODU5MTg2NjMxLC0xMDE5NzM5NDM1LC
-02MDMzNjgwNDksODc3NjI0OTc1LC0xODU5OTI5NzQxLC0xNTk5
-ODkyMDQ4XX0=
+eyJoaXN0b3J5IjpbLTE3MDg0NDU4ODYsLTIwNjY2MjA4MSwxOT
+E4MjQ3NSwtMTYzNzEyNjgyMiwtMjUyNDI1MjY5LDI4NDc4MTc3
+MywtMjAyMzQyMDE1LDIwOTM2NjcyODAsMTU4MDEzOTg5MiwxOD
+c3OTkzODksMTY5NDQzNzY0MCwxODk0MDg1MDQ5LDE3Mjc4ODQ4
+ODAsMTI3MDUyNTk4OSwtNzUxMDAxNjI2LC0xODU5MTg2NjMxLC
+0xMDE5NzM5NDM1LC02MDMzNjgwNDksODc3NjI0OTc1LC0xODU5
+OTI5NzQxXX0=
 -->
