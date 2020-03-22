@@ -128,6 +128,8 @@ DEPENDENT UNION은 UNION이나 UNION ALL로 집합을 결합하는 쿼리에 표
 >결과 레코드의 중복을 제거 여부
 UNION은 모든 컬럼이 같은 결과에 대해서는 중복 결과를 제거하지만 UNION ALL은 제거하지 않는다. UNION을 쓰면 중복을 제거하기 위해 추가적인 작업을 반드시 해야하기 때문에 성능 이슈가 있을 수 있다. 하지만 보통 우리는 중복값을 필요로 하는 경우가 없다. 
 
+아래 쿼리의 서브 쿼리 두개가 UNION으로 결합되어 있다. 이 서브 쿼리를 보면 외부(Outer)에서 정의된 employ
+
 ```
 EXPLAIN
 SELECT e.first_name,
@@ -147,11 +149,11 @@ WHERE e.emp_no = 10001;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgxNzk2MTI2LDI4NDc4MTc3MywtMjAyMz
-QyMDE1LDIwOTM2NjcyODAsMTU4MDEzOTg5MiwxODc3OTkzODks
-MTY5NDQzNzY0MCwxODk0MDg1MDQ5LDE3Mjc4ODQ4ODAsMTI3MD
-UyNTk4OSwtNzUxMDAxNjI2LC0xODU5MTg2NjMxLC0xMDE5NzM5
-NDM1LC02MDMzNjgwNDksODc3NjI0OTc1LC0xODU5OTI5NzQxLC
-0xNTk5ODkyMDQ4LDE4MzQzOTUxOCwtMTIxOTMzNjk2Miw4NDQy
-ODE2MzZdfQ==
+eyJoaXN0b3J5IjpbLTQ2Mzc3NjUxNSwyODQ3ODE3NzMsLTIwMj
+M0MjAxNSwyMDkzNjY3MjgwLDE1ODAxMzk4OTIsMTg3Nzk5Mzg5
+LDE2OTQ0Mzc2NDAsMTg5NDA4NTA0OSwxNzI3ODg0ODgwLDEyNz
+A1MjU5ODksLTc1MTAwMTYyNiwtMTg1OTE4NjYzMSwtMTAxOTcz
+OTQzNSwtNjAzMzY4MDQ5LDg3NzYyNDk3NSwtMTg1OTkyOTc0MS
+wtMTU5OTg5MjA0OCwxODM0Mzk1MTgsLTEyMTkzMzY5NjIsODQ0
+MjgxNjM2XX0=
 -->
