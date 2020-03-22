@@ -227,7 +227,6 @@ WHERE e.emp_no = 10001;
 
 > Written with [StackEdit](https://stackedit.io/).
 
-
 ### DERIVED
 
 서브 쿼리가 **FROM 절에 사용될 경우 MySQL 항상 DERIVED인 실행 계획을 만든다.** DERIVED는 단위 SELECT 쿼리의 실행 결과를 메모리나 디스크에 임시 테이블을 생성하는 것을 의미한다. 이 임시 테이블을 파생 테이블이라고도 한다. 
@@ -250,12 +249,15 @@ WHERE e.emp_no=tb.emp_no;
 
 > 쿼리 튜닝을 하기 위해 실행 계획을 확인할때는 select_type에 DERIVED가 있는지 확인해야 한다. 다른 방법이 없어서 서브 쿼리를 사용하는 것은 피할 수 없지만 조인으로 해결할 수 있다면 서브 쿼리보다 조인을 활용할것은 권장한다. 
 
+### UNCACHEABLE SUBQUERY
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjkwMTUzMzIsMTIwNzk1MTQ0NywxMD
-MzMjIzMzUsMjQ3NDA2ODQ2LC0xMjQ2MDc3NDMyLC0xMzM0MjE4
-NTUxLDE3MTA0NjYyODksLTc1NDM2NDAzLDIxMTYwMjQ3MzMsLT
-IwNjY2MjA4MSwxOTE4MjQ3NSwtMTYzNzEyNjgyMiwtMjUyNDI1
-MjY5LDI4NDc4MTc3MywtMjAyMzQyMDE1LDIwOTM2NjcyODAsMT
-U4MDEzOTg5MiwxODc3OTkzODksMTY5NDQzNzY0MCwxODk0MDg1
-MDQ5XX0=
+eyJoaXN0b3J5IjpbMTg0NDQ0Mzc5NCwtMTUyOTAxNTMzMiwxMj
+A3OTUxNDQ3LDEwMzMyMjMzNSwyNDc0MDY4NDYsLTEyNDYwNzc0
+MzIsLTEzMzQyMTg1NTEsMTcxMDQ2NjI4OSwtNzU0MzY0MDMsMj
+ExNjAyNDczMywtMjA2NjYyMDgxLDE5MTgyNDc1LC0xNjM3MTI2
+ODIyLC0yNTI0MjUyNjksMjg0NzgxNzczLC0yMDIzNDIwMTUsMj
+A5MzY2NzI4MCwxNTgwMTM5ODkyLDE4Nzc5OTM4OSwxNjk0NDM3
+NjQwXX0=
 -->
