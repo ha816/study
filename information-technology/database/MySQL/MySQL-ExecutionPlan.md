@@ -151,15 +151,17 @@ WHERE e.emp_no = 10001;
 |  3| DEPENDENT UNION|
 
 주의 
-> 하나의 단위 SELECT 쿼리가 다른 단위 SELECT를 포함하고 있으면 포함된 쿼리를 서브 쿼리라고 한다. 이처럼 서브 쿼리가 사용된 경우에는 외부(Outer) 쿼리보다 서브 쿼리가 먼저 실행되는것이 일반적이고 이 방식이 반대의 경우보다 보통 빠르다. 하지만 DEPENDN
+> 하나의 단위 SELECT 쿼리가 다른 단위 SELECT를 포함하고 있으면 포함된 쿼리를 서브 쿼리라고 한다. 이처럼 서브 쿼리가 사용된 경우에는 외부(Outer) 쿼리보다 서브 쿼리가 먼저 실행되는것이 일반적이고 이 방식이 반대의 경우보다 보통 빠르다. 하지만 DEPENDENT 키워드를 포함하는 서브 쿼리는 외부 쿼리에 의존적이므로 절대 외부 쿼리보다 먼저 실행할 수없다. 그래서 DEPENDENT 키워드가 포함된 쿼리는 비효율적인 경우가 많다. 
+
+### ㅕㅜㅑ
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MzA3MDIxLC0yNTI0MjUyNjksMjg0Nz
-gxNzczLC0yMDIzNDIwMTUsMjA5MzY2NzI4MCwxNTgwMTM5ODky
-LDE4Nzc5OTM4OSwxNjk0NDM3NjQwLDE4OTQwODUwNDksMTcyNz
-g4NDg4MCwxMjcwNTI1OTg5LC03NTEwMDE2MjYsLTE4NTkxODY2
-MzEsLTEwMTk3Mzk0MzUsLTYwMzM2ODA0OSw4Nzc2MjQ5NzUsLT
-E4NTk5Mjk3NDEsLTE1OTk4OTIwNDgsMTgzNDM5NTE4LC0xMjE5
-MzM2OTYyXX0=
+eyJoaXN0b3J5IjpbMjAwODUwNTMwMiwtMjUyNDI1MjY5LDI4ND
+c4MTc3MywtMjAyMzQyMDE1LDIwOTM2NjcyODAsMTU4MDEzOTg5
+MiwxODc3OTkzODksMTY5NDQzNzY0MCwxODk0MDg1MDQ5LDE3Mj
+c4ODQ4ODAsMTI3MDUyNTk4OSwtNzUxMDAxNjI2LC0xODU5MTg2
+NjMxLC0xMDE5NzM5NDM1LC02MDMzNjgwNDksODc3NjI0OTc1LC
+0xODU5OTI5NzQxLC0xNTk5ODkyMDQ4LDE4MzQzOTUxOCwtMTIx
+OTMzNjk2Ml19
 -->
