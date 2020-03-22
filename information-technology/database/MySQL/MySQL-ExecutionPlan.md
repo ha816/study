@@ -58,13 +58,13 @@ EXPLAIN을 실행하면 쿼리 문장의 특성에 따라 표 형태로 된 1줄
 
 실행 순서는 위에서 아래로 순서대로 표시된다. UNION이나 상관 서브 쿼리와 같은경우 순서대로 나오지 않는 경우도 있다. 
 
-위쪽 로우 일수록
+실행 계획에서 위쪽에 출력된 레코드일 id 컬럼의 값이 작을 수록 쿼리의 바깥(Outer) 부분이거나 먼저 접근한 테이블이고, id 컬럼의 값이 클수록 쿼리의 안쪽(Inner) 부분 또는 나중에 접근한 테이블이다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NjkyNDc5OCwtNjAzMzY4MDQ5LDg3Nz
+eyJoaXN0b3J5IjpbLTQ0MzYzNjYwNSwtNjAzMzY4MDQ5LDg3Nz
 YyNDk3NSwtMTg1OTkyOTc0MSwtMTU5OTg5MjA0OCwxODM0Mzk1
 MTgsLTEyMTkzMzY5NjIsODQ0MjgxNjM2LDEyODY2OTg2NjcsNT
 gxNTkzOTE5XX0=
