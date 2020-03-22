@@ -94,14 +94,14 @@ UNION이나 서브 쿼리를 사용하지 않는 단순한 SELECT 쿼리인 경�
 
 ### PRIMARY
 
-UNION이나 서브 쿼리가 포함된 SELECT 쿼리의 실행계획에서 가장 바깥
+UNION이나 서브 쿼리가 포함된 SELECT 쿼리의 실행계획에서 가장 바깥족(Outer
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzg4NDg4MCwxMjcwNTI1OTg5LC03NT
-EwMDE2MjYsLTE4NTkxODY2MzEsLTEwMTk3Mzk0MzUsLTYwMzM2
-ODA0OSw4Nzc2MjQ5NzUsLTE4NTk5Mjk3NDEsLTE1OTk4OTIwND
-gsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNiwxMjg2
-Njk4NjY3LDU4MTU5MzkxOV19
+eyJoaXN0b3J5IjpbMTYzMDY1NDE2MCwxNzI3ODg0ODgwLDEyNz
+A1MjU5ODksLTc1MTAwMTYyNiwtMTg1OTE4NjYzMSwtMTAxOTcz
+OTQzNSwtNjAzMzY4MDQ5LDg3NzYyNDk3NSwtMTg1OTkyOTc0MS
+wtMTU5OTg5MjA0OCwxODM0Mzk1MTgsLTEyMTkzMzY5NjIsODQ0
+MjgxNjM2LDEyODY2OTg2NjcsNTgxNTkzOTE5XX0=
 -->
