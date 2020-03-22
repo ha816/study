@@ -211,10 +211,8 @@ MySQL의 실행 계획에서 **FROM 절에 사용된 서브 쿼리는 DERIVED**�
 EXPLAIN
 SELECT e.first_name,
 	( SELECT COUNT(*)
-	FROM salaries s WHERE s.emp_no = e.emp_no
-	UNION
-	SELECT CONCAT('Department', COUNT(*)) AS message
-	FROM dept_emp de WHERE de.emp_no = e.emp_no
+	FROM dept_emp de, dept_manager dm
+	WHERE dm.d
 	) AS message
 FROM employees e
 WHERE e.emp_no = 10001;
@@ -225,7 +223,7 @@ WHERE e.emp_no = 10001;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNzc2NzQzMSwtMTI0NjA3NzQzMiwtMT
+eyJoaXN0b3J5IjpbLTYxNDA2NjQ2MSwtMTI0NjA3NzQzMiwtMT
 MzNDIxODU1MSwxNzEwNDY2Mjg5LC03NTQzNjQwMywyMTE2MDI0
 NzMzLC0yMDY2NjIwODEsMTkxODI0NzUsLTE2MzcxMjY4MjIsLT
 I1MjQyNTI2OSwyODQ3ODE3NzMsLTIwMjM0MjAxNSwyMDkzNjY3
