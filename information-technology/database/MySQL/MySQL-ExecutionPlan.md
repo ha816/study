@@ -74,16 +74,21 @@ EXPLAIN을 실행하면 쿼리 문장의 특성에 따라 표 형태로 된 1줄
 ```
 EXPLAIN
 SELECT * FROM employees e, salaries s
-WHERE e.emp_no = 
+WHERE e.emp_no = s.emp_no
+```
 
+반대로 한 쿼리 문장이 다수의 단위 SELECT 쿼리로 구성되어 있으면 각 레코드가 다른 id를 지닌다.
+```
+EXPLAIN
+SELECT
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNjA1MDkzLC0xMDE5NzM5NDM1LC02MD
-MzNjgwNDksODc3NjI0OTc1LC0xODU5OTI5NzQxLC0xNTk5ODky
-MDQ4LDE4MzQzOTUxOCwtMTIxOTMzNjk2Miw4NDQyODE2MzYsMT
-I4NjY5ODY2Nyw1ODE1OTM5MTldfQ==
+eyJoaXN0b3J5IjpbLTc2MTMyMjEsLTEwMTk3Mzk0MzUsLTYwMz
+M2ODA0OSw4Nzc2MjQ5NzUsLTE4NTk5Mjk3NDEsLTE1OTk4OTIw
+NDgsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNiwxMj
+g2Njk4NjY3LDU4MTU5MzkxOV19
 -->
