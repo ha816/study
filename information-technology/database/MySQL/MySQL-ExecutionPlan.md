@@ -205,16 +205,31 @@ MySQL의 실행 계획에서 **FROM 절에 사용된 서브 쿼리는 DERIVED**�
 
 ### DEPENDENT SUBQUERY
 
+서브 쿼리가 바깥쪽(Outer) SELECT 쿼리에서 정의된 컬럼을 사용하는 경우를 DEPENDENT SUBQUERY라 한다. 
+
+```
+EXPLAIN
+SELECT e.first_name,
+	( SELECT COUNT(*)
+	FROM salaries s WHERE s.emp_no = e.emp_no
+	UNION
+	SELECT CONCAT('Department', COUNT(*)) AS message
+	FROM dept_emp de WHERE de.emp_no = e.emp_no
+	) AS message
+FROM employees e
+WHERE e.emp_no = 10001;
+```
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzA3OTk0MDgsLTEyNDYwNzc0MzIsLT
-EzMzQyMTg1NTEsMTcxMDQ2NjI4OSwtNzU0MzY0MDMsMjExNjAy
-NDczMywtMjA2NjYyMDgxLDE5MTgyNDc1LC0xNjM3MTI2ODIyLC
-0yNTI0MjUyNjksMjg0NzgxNzczLC0yMDIzNDIwMTUsMjA5MzY2
-NzI4MCwxNTgwMTM5ODkyLDE4Nzc5OTM4OSwxNjk0NDM3NjQwLD
-E4OTQwODUwNDksMTcyNzg4NDg4MCwxMjcwNTI1OTg5LC03NTEw
-MDE2MjZdfQ==
+eyJoaXN0b3J5IjpbLTUyNzc2NzQzMSwtMTI0NjA3NzQzMiwtMT
+MzNDIxODU1MSwxNzEwNDY2Mjg5LC03NTQzNjQwMywyMTE2MDI0
+NzMzLC0yMDY2NjIwODEsMTkxODI0NzUsLTE2MzcxMjY4MjIsLT
+I1MjQyNTI2OSwyODQ3ODE3NzMsLTIwMjM0MjAxNSwyMDkzNjY3
+MjgwLDE1ODAxMzk4OTIsMTg3Nzk5Mzg5LDE2OTQ0Mzc2NDAsMT
+g5NDA4NTA0OSwxNzI3ODg0ODgwLDEyNzA1MjU5ODksLTc1MTAw
+MTYyNl19
 -->
