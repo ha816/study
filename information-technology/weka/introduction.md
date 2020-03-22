@@ -80,11 +80,8 @@ Precision
 : 클래스 x로 분류된 데이터 중에서 테스트 데이터가 실제 클래스 x인 비율
 
 F-measure
-: 2*Precision*Recall / (Precision + Recall) – i.e. A combined measure for precision and recall
-
-
-
-Proportion incorrectly classified as class x / Actual total of all classes, except x
+: 2*Precision*Recall / (Precision + Recall)
+i.e. A combined measure for precision and recall
 
 참고 문헌
 
@@ -92,6 +89,7 @@ Proportion incorrectly classified as class x / Actual total of all classes, exce
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTI5ODY3MTcsLTIxMzA1OTI2MzYsLT
-EwNDY4MTE4ODEsLTEwOTY4MzUwMTMsMTM0MDYyMDI2OF19
+eyJoaXN0b3J5IjpbLTgxMDQ2Njg3MywtMTE5Mjk4NjcxNywtMj
+EzMDU5MjYzNiwtMTA0NjgxMTg4MSwtMTA5NjgzNTAxMywxMzQw
+NjIwMjY4XX0=
 -->
