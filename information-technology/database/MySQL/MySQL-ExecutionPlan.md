@@ -124,6 +124,10 @@ SELECT * FROM (
 
 DEPENDENT UNION은 UNION이나 UNION ALL로 집합을 결합하는 쿼리에 표시된다. 추가적으로 **DEPENDENT는 UNION 이나 UNION ALL로 결합된 단위 쿼리가 외부의 영향을 받는 것을 의미한다.** 
 
+참고로 UNION과 UNION ALL의 차이는 레코드간의 중복을 제거하는지 여부에 달려 있다. 
+`UNION`  removes duplicate records (where all columns in the results are the same),  `UNION ALL`  does not.
+
+There is a performance hit when using  `UNION`  instead of  `UNION ALL`, since the database server must do additional work to remove the duplicate rows, but usually you do not want the duplicates (especially when developing reports).
 
 
 
@@ -132,11 +136,11 @@ DEPENDENT UNION은 UNION이나 UNION ALL로 집합을 결합하는 쿼리에 표
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjM0MjAxNSwyMDkzNjY3MjgwLDE1OD
-AxMzk4OTIsMTg3Nzk5Mzg5LDE2OTQ0Mzc2NDAsMTg5NDA4NTA0
-OSwxNzI3ODg0ODgwLDEyNzA1MjU5ODksLTc1MTAwMTYyNiwtMT
-g1OTE4NjYzMSwtMTAxOTczOTQzNSwtNjAzMzY4MDQ5LDg3NzYy
-NDk3NSwtMTg1OTkyOTc0MSwtMTU5OTg5MjA0OCwxODM0Mzk1MT
-gsLTEyMTkzMzY5NjIsODQ0MjgxNjM2LDEyODY2OTg2NjcsNTgx
-NTkzOTE5XX0=
+eyJoaXN0b3J5IjpbMjg0NzgxNzczLC0yMDIzNDIwMTUsMjA5Mz
+Y2NzI4MCwxNTgwMTM5ODkyLDE4Nzc5OTM4OSwxNjk0NDM3NjQw
+LDE4OTQwODUwNDksMTcyNzg4NDg4MCwxMjcwNTI1OTg5LC03NT
+EwMDE2MjYsLTE4NTkxODY2MzEsLTEwMTk3Mzk0MzUsLTYwMzM2
+ODA0OSw4Nzc2MjQ5NzUsLTE4NTk5Mjk3NDEsLTE1OTk4OTIwND
+gsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNiwxMjg2
+Njk4NjY3XX0=
 -->
