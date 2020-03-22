@@ -159,21 +159,12 @@ UNION 결과를 담아두는 테이블을 의미한다. MySQL에서 UNION ALL �
 
 ```
 EXPLAIN
-SELECT e.first_name,
-	( 
-	SELECT CONCAT('Salary', COUNT(*)) AS message
-	FROM salaries s WHERE s.emp_no = e.emp_no
-	UNION
-	SELECT CONCAT('Department', COUNT(*)) AS message
-	FROM dept_emp de WHERE de.emp_no = e.emp_no
-	) AS message
-FROM employees e
-WHERE e.emp_no = 10001;
+
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDg0NDU4ODYsLTIwNjY2MjA4MSwxOT
+eyJoaXN0b3J5IjpbLTE4MTgzMjIyODIsLTIwNjY2MjA4MSwxOT
 E4MjQ3NSwtMTYzNzEyNjgyMiwtMjUyNDI1MjY5LDI4NDc4MTc3
 MywtMjAyMzQyMDE1LDIwOTM2NjcyODAsMTU4MDEzOTg5MiwxOD
 c3OTkzODksMTY5NDQzNzY0MCwxODk0MDg1MDQ5LDE3Mjc4ODQ4
