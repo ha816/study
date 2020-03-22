@@ -55,9 +55,10 @@ ANALYZE를 실행하는 동안 InnoDB 테이블은 읽기와 쓰기 모두 불�
 MySQL에서 쿼리 실행 계획을 활용하려면 EXPLAIN 키워드를 붙이면 된다.
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzODUyMjAxNyw4Nzc2MjQ5NzUsLTE4NT
+eyJoaXN0b3J5IjpbLTYwMzM2ODA0OSw4Nzc2MjQ5NzUsLTE4NT
 k5Mjk3NDEsLTE1OTk4OTIwNDgsMTgzNDM5NTE4LC0xMjE5MzM2
 OTYyLDg0NDI4MTYzNiwxMjg2Njk4NjY3LDU4MTU5MzkxOV19
 -->
