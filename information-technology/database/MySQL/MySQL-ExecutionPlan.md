@@ -120,6 +120,11 @@ SELECT * FROM (
 |  3| UNION|
 |  4| UNION|
 
+### DEPENDENT UNION
+
+DEPENDENT UNION은 UNION이나 UNION ALL로 집합을 결합하는 쿼리에 표시된다. 추가적으로 DEPENDENT는 UN
+
+
 
 
 
@@ -127,7 +132,7 @@ SELECT * FROM (
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTk0MjgzNzQsMjA5MzY2NzI4MCwxNT
+eyJoaXN0b3J5IjpbLTExODc1NDM4OTgsMjA5MzY2NzI4MCwxNT
 gwMTM5ODkyLDE4Nzc5OTM4OSwxNjk0NDM3NjQwLDE4OTQwODUw
 NDksMTcyNzg4NDg4MCwxMjcwNTI1OTg5LC03NTEwMDE2MjYsLT
 E4NTkxODY2MzEsLTEwMTk3Mzk0MzUsLTYwMzM2ODA0OSw4Nzc2
