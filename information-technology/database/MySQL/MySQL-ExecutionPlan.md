@@ -249,7 +249,7 @@ WHERE e.emp_no=tb.emp_no;
 
 > 쿼리 튜닝을 하기 위해 실행 계획을 확인할때는 select_type에 DERIVED가 있는지 확인해야 한다. 다른 방법이 없어서 서브 쿼리를 사용하는 것은 피할 수 없지만 조인으로 해결할 수 있다면 서브 쿼리보다 조인을 활용할것은 권장한다. 
 
-### UNCACHEABLE SUBQUERY
+### UNCACHEABLE SUBQUERY, UNION
 
 하나의 쿼리 문장에서 서브 쿼리가 하나만 있더라도 실제 그 서브 쿼리가 한번만 실행되는 것은 아니다. 조건이 똑같은 서브 쿼리가 실행될때는 다시 실행하지 않고 이전 실행 결과를 그대로 사용할 수 있게 쿼리의 결과를 캐시 공간에 담아둔다.  이 서브 쿼리 캐시는 쿼리 캐시나 파생 테이블과는 전혀 무관한 기능이므로 혼동하지 말자.
 
@@ -264,15 +264,15 @@ DEPENDENT SUBQUERY는 외부 쿼리의 값을 단위로 캐시가 만들어진�
 * NOT-DETERMINISTIC 속성의 스토어드 루틴이 서브 쿼리에 있는 경우
 * UUID()나 RAND()함수처럼 호출할때 마다 함수가 달라지는 경우
 
-### UNCACHEABLE UNION
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTk3NzMwMjgsLTExMTgyODM4NDAsMj
-EyMDE3ODI1Niw1MjUyMDM1NjcsLTE1MjkwMTUzMzIsMTIwNzk1
-MTQ0NywxMDMzMjIzMzUsMjQ3NDA2ODQ2LC0xMjQ2MDc3NDMyLC
-0xMzM0MjE4NTUxLDE3MTA0NjYyODksLTc1NDM2NDAzLDIxMTYw
-MjQ3MzMsLTIwNjY2MjA4MSwxOTE4MjQ3NSwtMTYzNzEyNjgyMi
-wtMjUyNDI1MjY5LDI4NDc4MTc3MywtMjAyMzQyMDE1LDIwOTM2
-NjcyODBdfQ==
+eyJoaXN0b3J5IjpbODkxMTkzMzUyLC0xMTE4MjgzODQwLDIxMj
+AxNzgyNTYsNTI1MjAzNTY3LC0xNTI5MDE1MzMyLDEyMDc5NTE0
+NDcsMTAzMzIyMzM1LDI0NzQwNjg0NiwtMTI0NjA3NzQzMiwtMT
+MzNDIxODU1MSwxNzEwNDY2Mjg5LC03NTQzNjQwMywyMTE2MDI0
+NzMzLC0yMDY2NjIwODEsMTkxODI0NzUsLTE2MzcxMjY4MjIsLT
+I1MjQyNTI2OSwyODQ3ODE3NzMsLTIwMjM0MjAxNSwyMDkzNjY3
+MjgwXX0=
 -->
