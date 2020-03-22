@@ -76,7 +76,11 @@ True Positive Rate(TP) == Recall
 False Positive Rate(FP)
 : 테스트 데이터의 클래스 x에 해당하는 데이터 엔트리 중에서 클래스 x가 아닌 것으로 잘못 분류한 비율
 
-Precision: – Proportion of the examples which truly have class x / Total classified as class x • F-measure: – 2*Precision*Recall / (Precision + Recall) – i.e. A combined measure for precision and recall
+Precision
+: 클래스 x로 분류된 
+Proportion of the examples which truly have class x / Total classified as class x 
+
+• F-measure: – 2*Precision*Recall / (Precision + Recall) – i.e. A combined measure for precision and recall
 
 
 
@@ -88,6 +92,6 @@ Proportion incorrectly classified as class x / Actual total of all classes, exce
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzA1OTI2MzYsLTEwNDY4MTE4ODEsLT
-EwOTY4MzUwMTMsMTM0MDYyMDI2OF19
+eyJoaXN0b3J5IjpbMTg1ODkwODIzMywtMjEzMDU5MjYzNiwtMT
+A0NjgxMTg4MSwtMTA5NjgzNTAxMywxMzQwNjIwMjY4XX0=
 -->
