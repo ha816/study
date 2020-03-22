@@ -79,9 +79,8 @@ False Positive Rate(FP)
 Precision
 : 클래스 x로 분류된 데이터 중에서 테스트 데이터가 실제 클래스 x인 비율
 
-F-mea
-
-• F-measure: – 2*Precision*Recall / (Precision + Recall) – i.e. A combined measure for precision and recall
+F-measure
+: 2*Precision*Recall / (Precision + Recall) – i.e. A combined measure for precision and recall
 
 
 
@@ -93,6 +92,6 @@ Proportion incorrectly classified as class x / Actual total of all classes, exce
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE3MDY3NTA0LC0yMTMwNTkyNjM2LC0xMD
-Q2ODExODgxLC0xMDk2ODM1MDEzLDEzNDA2MjAyNjhdfQ==
+eyJoaXN0b3J5IjpbLTExOTI5ODY3MTcsLTIxMzA1OTI2MzYsLT
+EwNDY4MTE4ODEsLTEwOTY4MzUwMTMsMTM0MDYyMDI2OF19
 -->
