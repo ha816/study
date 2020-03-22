@@ -251,13 +251,15 @@ WHERE e.emp_no=tb.emp_no;
 
 ### UNCACHEABLE SUBQUERY
 
+하나의 쿼리 문장에서 서브 쿼리가 하나만 있더라도 실제 그 서브 쿼리가 한번만 실행되는 것은 아니다. 조건이 똑같은 서브 쿼리가 실행될때는 다시 실행하지 않고 이전 실행 결과를 그대로 사용할 수 있게 쿼리의 결과를 캐시 공간에 담아둔다.  이 서브 쿼리 캐시는 쿼리 캐시나 파생 테이블과는 전혀 무관한 기능이므로 혼동하지 말자.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDQ0Mzc5NCwtMTUyOTAxNTMzMiwxMj
-A3OTUxNDQ3LDEwMzMyMjMzNSwyNDc0MDY4NDYsLTEyNDYwNzc0
-MzIsLTEzMzQyMTg1NTEsMTcxMDQ2NjI4OSwtNzU0MzY0MDMsMj
-ExNjAyNDczMywtMjA2NjYyMDgxLDE5MTgyNDc1LC0xNjM3MTI2
-ODIyLC0yNTI0MjUyNjksMjg0NzgxNzczLC0yMDIzNDIwMTUsMj
-A5MzY2NzI4MCwxNTgwMTM5ODkyLDE4Nzc5OTM4OSwxNjk0NDM3
-NjQwXX0=
+eyJoaXN0b3J5IjpbNTI1MjAzNTY3LC0xNTI5MDE1MzMyLDEyMD
+c5NTE0NDcsMTAzMzIyMzM1LDI0NzQwNjg0NiwtMTI0NjA3NzQz
+MiwtMTMzNDIxODU1MSwxNzEwNDY2Mjg5LC03NTQzNjQwMywyMT
+E2MDI0NzMzLC0yMDY2NjIwODEsMTkxODI0NzUsLTE2MzcxMjY4
+MjIsLTI1MjQyNTI2OSwyODQ3ODE3NzMsLTIwMjM0MjAxNSwyMD
+kzNjY3MjgwLDE1ODAxMzk4OTIsMTg3Nzk5Mzg5LDE2OTQ0Mzc2
+NDBdfQ==
 -->
