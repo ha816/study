@@ -198,6 +198,10 @@ MySQL의 실행 계획에서 **FROM 절에 사용된 서브 쿼리는 DERIVED**�
 
 * 중첩된 쿼리(Nested Query)
 	* SELECT 되는 컬럼에서 사용된 서브 쿼리를 네스티드 쿼리라고 한다.
+* 서브 쿼리(Sub Query)
+	* WHERE 절에 사용된 경우에는 일반적으로 그냥 서브 쿼리라고 한다.
+* 파생 테이블(Derived)
+	* FROM 절에 사용된 서브 쿼리를 MySQL에서는 파생 테이블이라 부른다.
 
 
 
@@ -205,11 +209,11 @@ MySQL의 실행 계획에서 **FROM 절에 사용된 서브 쿼리는 DERIVED**�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzQyMTg1NTEsMTcxMDQ2NjI4OSwtNz
-U0MzY0MDMsMjExNjAyNDczMywtMjA2NjYyMDgxLDE5MTgyNDc1
-LC0xNjM3MTI2ODIyLC0yNTI0MjUyNjksMjg0NzgxNzczLC0yMD
-IzNDIwMTUsMjA5MzY2NzI4MCwxNTgwMTM5ODkyLDE4Nzc5OTM4
-OSwxNjk0NDM3NjQwLDE4OTQwODUwNDksMTcyNzg4NDg4MCwxMj
-cwNTI1OTg5LC03NTEwMDE2MjYsLTE4NTkxODY2MzEsLTEwMTk3
-Mzk0MzVdfQ==
+eyJoaXN0b3J5IjpbLTEyNDYwNzc0MzIsLTEzMzQyMTg1NTEsMT
+cxMDQ2NjI4OSwtNzU0MzY0MDMsMjExNjAyNDczMywtMjA2NjYy
+MDgxLDE5MTgyNDc1LC0xNjM3MTI2ODIyLC0yNTI0MjUyNjksMj
+g0NzgxNzczLC0yMDIzNDIwMTUsMjA5MzY2NzI4MCwxNTgwMTM5
+ODkyLDE4Nzc5OTM4OSwxNjk0NDM3NjQwLDE4OTQwODUwNDksMT
+cyNzg4NDg4MCwxMjcwNTI1OTg5LC03NTEwMDE2MjYsLTE4NTkx
+ODY2MzFdfQ==
 -->
