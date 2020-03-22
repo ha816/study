@@ -80,15 +80,16 @@ WHERE e.emp_no = s.emp_no
 반대로 한 쿼리 문장이 다수의 단위 SELECT 쿼리로 구성되어 있으면 각 레코드가 다른 id를 지닌다.
 ```
 EXPLAIN
-SELECT
+SELECT ( 
+SELECT COUNT(*) FROM employess + SELECT COUNT(*) FROM departments )
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MTMyMjEsLTEwMTk3Mzk0MzUsLTYwMz
-M2ODA0OSw4Nzc2MjQ5NzUsLTE4NTk5Mjk3NDEsLTE1OTk4OTIw
-NDgsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNiwxMj
-g2Njk4NjY3LDU4MTU5MzkxOV19
+eyJoaXN0b3J5IjpbLTE4NTkxODY2MzEsLTEwMTk3Mzk0MzUsLT
+YwMzM2ODA0OSw4Nzc2MjQ5NzUsLTE4NTk5Mjk3NDEsLTE1OTk4
+OTIwNDgsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNi
+wxMjg2Njk4NjY3LDU4MTU5MzkxOV19
 -->
