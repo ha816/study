@@ -61,13 +61,16 @@ EXPLAIN을 실행하면 쿼리 문장의 특성에 따라 표 형태로 된 1줄
 실행 계획에서 위쪽에 출력된 레코드(id 컬럼의 값이 작을 수록) 쿼리의 바깥(Outer) 부분이거나 먼저 접근한 테이블이고, 아래쪽에 출력된 레코드(id 컬럼의 값이 클수록) 쿼리의 안쪽(Inner) 부분 또는 나중에 접근한 테이블이다. 
 
 
+![enter image description here](https://www.mysql.com/common/images/enterprise/query_analyzer_explain.png)
 
+## id
 
+하나의 SELECT 문장은 다시 1개 이상의 하위(SUB SELECT
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTk3Mzk0MzUsLTYwMzM2ODA0OSw4Nz
-c2MjQ5NzUsLTE4NTk5Mjk3NDEsLTE1OTk4OTIwNDgsMTgzNDM5
-NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNiwxMjg2Njk4NjY3LD
-U4MTU5MzkxOV19
+eyJoaXN0b3J5IjpbNjI3MzA0MzE3LC0xMDE5NzM5NDM1LC02MD
+MzNjgwNDksODc3NjI0OTc1LC0xODU5OTI5NzQxLC0xNTk5ODky
+MDQ4LDE4MzQzOTUxOCwtMTIxOTMzNjk2Miw4NDQyODE2MzYsMT
+I4NjY5ODY2Nyw1ODE1OTM5MTldfQ==
 -->
