@@ -67,12 +67,23 @@ EXPLAIN을 실행하면 쿼리 문장의 특성에 따라 표 형태로 된 1줄
 
 실행 계획에서 가장 왼쪽에 표시되는 id 컬럼은 단위 SELECT 쿼리 별로 부여되는 식별자 값이다. 
 
-사실 하나의 SELECT 문장은 다시 1개 이상의 하위(SUB SELECT) 문장을 포함할 수 있다. 단위 SELECT 쿼리는 하나의 SELECT 문장을 분리해낸 SELECT 문장을 말한다. 만약 하나의 SELECT 문장 안에서 여러 테이블을 조인하면 조인되는 태이블의 개수만큼 실행 계획 레코드가 출력되지만 같은 id가 부여된다. 
+사실 하나의 SELECT 문장은 다시 1개 이상의 하위(SUB SELECT) 문장을 포함할 수 있다. 단위 SELECT 쿼리는 하나의 SELECT 문장을 분리해낸 SELECT 문장을 말한다. 
+
+만약 하나의 SELECT 문장 안에서 여러 테이블을 조인하면 조인되는 태이블의 개수만큼 실행 계획 레코드가 출력되지만 같은 id가 부여된다. 
+
+```
+EXPLAIN
+SELECT * FROM employees e, salaries s
+WHERE e.emp_no = 
+
+```
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzIzODA0OTIsLTEwMTk3Mzk0MzUsLT
-YwMzM2ODA0OSw4Nzc2MjQ5NzUsLTE4NTk5Mjk3NDEsLTE1OTk4
-OTIwNDgsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNi
-wxMjg2Njk4NjY3LDU4MTU5MzkxOV19
+eyJoaXN0b3J5IjpbMTkxNjA1MDkzLC0xMDE5NzM5NDM1LC02MD
+MzNjgwNDksODc3NjI0OTc1LC0xODU5OTI5NzQxLC0xNTk5ODky
+MDQ4LDE4MzQzOTUxOCwtMTIxOTMzNjk2Miw4NDQyODE2MzYsMT
+I4NjY5ODY2Nyw1ODE1OTM5MTldfQ==
 -->
