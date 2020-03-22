@@ -84,12 +84,15 @@ SELECT (
 SELECT COUNT(*) FROM employess + SELECT COUNT(*) FROM departments )
 ```
 
+## select_type
+
+각 단위 SELECT 쿼리가 어떤 타입인지 알려준다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTkxODY2MzEsLTEwMTk3Mzk0MzUsLT
-YwMzM2ODA0OSw4Nzc2MjQ5NzUsLTE4NTk5Mjk3NDEsLTE1OTk4
-OTIwNDgsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNi
-wxMjg2Njk4NjY3LDU4MTU5MzkxOV19
+eyJoaXN0b3J5IjpbLTc1MTAwMTYyNiwtMTg1OTE4NjYzMSwtMT
+AxOTczOTQzNSwtNjAzMzY4MDQ5LDg3NzYyNDk3NSwtMTg1OTky
+OTc0MSwtMTU5OTg5MjA0OCwxODM0Mzk1MTgsLTEyMTkzMzY5Nj
+IsODQ0MjgxNjM2LDEyODY2OTg2NjcsNTgxNTkzOTE5XX0=
 -->
