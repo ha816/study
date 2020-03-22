@@ -174,13 +174,13 @@ SELECT emp_no FROM dept_emp WHERE from_date > '2001-01-01'
 
 ### SUBQUERY
 
-일반적으로 서브 쿼리라고 하면 여러 쿼리를 통틀
+일반적으로 서브 쿼리라고 하면 여러 쿼리를 통틀어 이야기한다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4Mzg5MDIyLDIxMTYwMjQ3MzMsLTIwNj
+eyJoaXN0b3J5IjpbNDk1OTg2OTU2LDIxMTYwMjQ3MzMsLTIwNj
 Y2MjA4MSwxOTE4MjQ3NSwtMTYzNzEyNjgyMiwtMjUyNDI1MjY5
 LDI4NDc4MTc3MywtMjAyMzQyMDE1LDIwOTM2NjcyODAsMTU4MD
 EzOTg5MiwxODc3OTkzODksMTY5NDQzNzY0MCwxODk0MDg1MDQ5
