@@ -67,12 +67,12 @@ EXPLAIN을 실행하면 쿼리 문장의 특성에 따라 표 형태로 된 1줄
 
 실행 계획에서 가장 왼쪽에 표시되는 id 컬럼은 단위 SELECT 쿼리 별로 부여되는 식별자 값이다. 
 
-하나의 SELECT 문장은 다시 1개 이상의 하위(SUB SELECT) 문장을 포함할 수 있다. 
+사실 하나의 SELECT 문장은 다시 1개 이상의 하위(SUB SELECT) 문장을 포함할 수 있다. 단위 SELECT 쿼리는 하나의 SELECT 문장을 분리해낸 SELECT 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MTIwOTE2OSwtMTAxOTczOTQzNSwtNj
-AzMzY4MDQ5LDg3NzYyNDk3NSwtMTg1OTkyOTc0MSwtMTU5OTg5
-MjA0OCwxODM0Mzk1MTgsLTEyMTkzMzY5NjIsODQ0MjgxNjM2LD
-EyODY2OTg2NjcsNTgxNTkzOTE5XX0=
+eyJoaXN0b3J5IjpbLTE0MTA1NDc2NTAsLTEwMTk3Mzk0MzUsLT
+YwMzM2ODA0OSw4Nzc2MjQ5NzUsLTE4NTk5Mjk3NDEsLTE1OTk4
+OTIwNDgsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNi
+wxMjg2Njk4NjY3LDU4MTU5MzkxOV19
 -->
