@@ -77,8 +77,9 @@ False Positive Rate(FP)
 : 테스트 데이터의 클래스 x에 해당하는 데이터 엔트리 중에서 클래스 x가 아닌 것으로 잘못 분류한 비율
 
 Precision
-: 클래스 x로 분류된 데이터 중에서 실제로 X
-Proportion of the examples which truly have class x / Total classified as class x 
+: 클래스 x로 분류된 데이터 중에서 테스트 데이터가 실제 클래스 x인 비율
+
+F-mea
 
 • F-measure: – 2*Precision*Recall / (Precision + Recall) – i.e. A combined measure for precision and recall
 
@@ -92,6 +93,6 @@ Proportion incorrectly classified as class x / Actual total of all classes, exce
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkyNjM0Mjk2LC0yMTMwNTkyNjM2LC0xMD
+eyJoaXN0b3J5IjpbMjE3MDY3NTA0LC0yMTMwNTkyNjM2LC0xMD
 Q2ODExODgxLC0xMDk2ODM1MDEzLDEzNDA2MjAyNjhdfQ==
 -->
