@@ -100,9 +100,18 @@ UNION이나 서브 쿼리가 포함된 SELECT 쿼리의 실행계획에서 가�
 
 UNION으로 결합하는 단위 SELECT 쿼리 가운데 첫 번째를 제외한 두 번째 이후 단위 SELECT 쿼리의 select_type은 UNION으로 표시된다. UNION의 첫 번재 단위 SELECT는 UNION이 아닌 UNION 쿼리로 결합된 전체 집합의 select_type이 표시된다. 
 
+```
+EXPLAIN
+SELECT * FROM (
+	(SELECT emp_no FROM employees e1) 
+
+) tb;
+```
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQzNDgzNDgyLDE2OTQ0Mzc2NDAsMTg5ND
+eyJoaXN0b3J5IjpbMTg3Nzk5Mzg5LDE2OTQ0Mzc2NDAsMTg5ND
 A4NTA0OSwxNzI3ODg0ODgwLDEyNzA1MjU5ODksLTc1MTAwMTYy
 NiwtMTg1OTE4NjYzMSwtMTAxOTczOTQzNSwtNjAzMzY4MDQ5LD
 g3NzYyNDk3NSwtMTg1OTkyOTc0MSwtMTU5OTg5MjA0OCwxODM0
