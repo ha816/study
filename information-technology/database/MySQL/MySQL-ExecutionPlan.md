@@ -180,19 +180,27 @@ SELECT emp_no FROM dept_emp WHERE from_date > '2001-01-01'
 EXPLAIN
 SELECT 
 	e.first_name,
-	(SELECT COI
+	(SELECT COUNT(*) FROM dept_emp de, dept_manager dm
+	WHERE dm.dept_no = de.dept_no) AS cnt
 FROM employees e
 WHERE e.emp_no = 10001;
 ```
 
+|id| select_type|table|
+|--|--|--|
+|1 | PRIMARY |salaries|
+| 2 | UNION| dept_emp|
+||UNION RESULT|<union1,2>|
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNDUyMDAxMSwyMTE2MDI0NzMzLC0yMD
-Y2NjIwODEsMTkxODI0NzUsLTE2MzcxMjY4MjIsLTI1MjQyNTI2
-OSwyODQ3ODE3NzMsLTIwMjM0MjAxNSwyMDkzNjY3MjgwLDE1OD
-AxMzk4OTIsMTg3Nzk5Mzg5LDE2OTQ0Mzc2NDAsMTg5NDA4NTA0
-OSwxNzI3ODg0ODgwLDEyNzA1MjU5ODksLTc1MTAwMTYyNiwtMT
-g1OTE4NjYzMSwtMTAxOTczOTQzNSwtNjAzMzY4MDQ5LDg3NzYy
-NDk3NV19
+eyJoaXN0b3J5IjpbLTc1NDM2NDAzLDIxMTYwMjQ3MzMsLTIwNj
+Y2MjA4MSwxOTE4MjQ3NSwtMTYzNzEyNjgyMiwtMjUyNDI1MjY5
+LDI4NDc4MTc3MywtMjAyMzQyMDE1LDIwOTM2NjcyODAsMTU4MD
+EzOTg5MiwxODc3OTkzODksMTY5NDQzNzY0MCwxODk0MDg1MDQ5
+LDE3Mjc4ODQ4ODAsMTI3MDUyNTk4OSwtNzUxMDAxNjI2LC0xOD
+U5MTg2NjMxLC0xMDE5NzM5NDM1LC02MDMzNjgwNDksODc3NjI0
+OTc1XX0=
 -->
