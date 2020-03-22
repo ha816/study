@@ -52,12 +52,13 @@ ANALYZE를 실행하는 동안 InnoDB 테이블은 읽기와 쓰기 모두 불�
 
 # Execution Plan
 
-MySQL에서 쿼리 실행 계획을 활용하려면 EXPLAIN 키워드를 붙이면 된다. **EXPLAIN EXTENDED나 EXPLAIN PARTITIONS** 명령을 이용하면 더 상세한 실행 계획을 확인할 수도 있다. 추가 옵션을 사용하는 경우는 기본적인 실행 계획에 추가로 1개의 정보가 더 표시된다.
+MySQL에서 쿼리 실행 계획을 활용하려면 EXPLAIN 키워드를 붙이면 된다. 추가적으로 **EXPLAIN EXTENDED나 EXPLAIN PARTITIONS** 명령을 이용하면 더 상세한 실행 계획을 확인할 수도 있다. 추가 옵션을 사용하는 경우는 기본적인 실행 계획에 추가로 1개의 정보가 더 표시된다.
 
+EXPLAIN을 실행하면 쿼리 문장의 특성에 따라 표 형태로 된 1줄 이상의 결과가 표시된다. 표의 각 라인(레코드)은 쿼리 문장에서 사용된 테이블의 개수만큼 나온다. 서브 쿼리로 임
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MDg0NzYwMCwtNjAzMzY4MDQ5LDg3Nz
+eyJoaXN0b3J5IjpbLTQyODkxNTg0MSwtNjAzMzY4MDQ5LDg3Nz
 YyNDk3NSwtMTg1OTkyOTc0MSwtMTU5OTg5MjA0OCwxODM0Mzk1
 MTgsLTEyMTkzMzY5NjIsODQ0MjgxNjM2LDEyODY2OTg2NjcsNT
 gxNTkzOTE5XX0=
