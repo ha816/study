@@ -111,7 +111,7 @@ SELECT * FROM (
 ) tb;
 ```
 
-위 쿼리 실행 계획은 아래 와같다. UNION이 되는 단위 SELECT 쿼리 3개 중에서 첫번째는 UNION이 아닌 DERIVED 이고, 나머지는 UNION이다. 
+위 쿼리 실행 계획은 아래 와같다. UNION이 되는 단위 SELECT 쿼리 3개 중에서 첫번째는 UNION이 아닌 DERIVED 이고, 나머지는 UNION이다. UNION으로 묶인 세 개의 서브 쿼리는 임시 테이블을 만들어서 사용하므로 DERIVED라는 타입을 갖는 것이다.
 
 |id| select_type|
 |--|--|
@@ -123,13 +123,15 @@ SELECT * FROM (
 
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3Nzk4ODY0NywyMDkzNjY3MjgwLDE1OD
-AxMzk4OTIsMTg3Nzk5Mzg5LDE2OTQ0Mzc2NDAsMTg5NDA4NTA0
-OSwxNzI3ODg0ODgwLDEyNzA1MjU5ODksLTc1MTAwMTYyNiwtMT
-g1OTE4NjYzMSwtMTAxOTczOTQzNSwtNjAzMzY4MDQ5LDg3NzYy
-NDk3NSwtMTg1OTkyOTc0MSwtMTU5OTg5MjA0OCwxODM0Mzk1MT
-gsLTEyMTkzMzY5NjIsODQ0MjgxNjM2LDEyODY2OTg2NjcsNTgx
-NTkzOTE5XX0=
+eyJoaXN0b3J5IjpbLTE1OTk0MjgzNzQsMjA5MzY2NzI4MCwxNT
+gwMTM5ODkyLDE4Nzc5OTM4OSwxNjk0NDM3NjQwLDE4OTQwODUw
+NDksMTcyNzg4NDg4MCwxMjcwNTI1OTg5LC03NTEwMDE2MjYsLT
+E4NTkxODY2MzEsLTEwMTk3Mzk0MzUsLTYwMzM2ODA0OSw4Nzc2
+MjQ5NzUsLTE4NTk5Mjk3NDEsLTE1OTk4OTIwNDgsMTgzNDM5NT
+E4LC0xMjE5MzM2OTYyLDg0NDI4MTYzNiwxMjg2Njk4NjY3LDU4
+MTU5MzkxOV19
 -->
