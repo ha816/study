@@ -256,10 +256,16 @@ WHERE e.emp_no=tb.emp_no;
 * SUBQUERY는 바깥쪽(Outer)의 영향을 받지 않으므로 처음 한번 실행한 후 그 결과를 캐시해두고 필요할때 재사용한다. 
 * DEPENDENT SUBQUERY는 의존하는 바깥쪽(OUTER) 쿼리의 칼럼의 값 단위로 개시해두고 사용한다.
 
-DEPENDENT SUBQUERY는 외부 쿼리의 값을 단위로 ㅋ
+DEPENDENT SUBQUERY는 외부 쿼리의 값을 단위로 캐시가 만들어진다. 
+
+종종 서브 쿼리에 포함된 요소에 의해 캐시 자체가 불가능할수 있다. 대표적으로는 아래와 같다. 
+
+* 사용자 변수가 서브 쿼리아 사용된 경우
+* NOT-DETERMINISTIC 속성의 스토어드 루틴이 서브 쿼리에 있는 경우
+* 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjI0NzY0ODIsMjEyMDE3ODI1Niw1Mj
+eyJoaXN0b3J5IjpbLTEwNDc5NzU2ODYsMjEyMDE3ODI1Niw1Mj
 UyMDM1NjcsLTE1MjkwMTUzMzIsMTIwNzk1MTQ0NywxMDMzMjIz
 MzUsMjQ3NDA2ODQ2LC0xMjQ2MDc3NDMyLC0xMzM0MjE4NTUxLD
 E3MTA0NjYyODksLTc1NDM2NDAzLDIxMTYwMjQ3MzMsLTIwNjY2
