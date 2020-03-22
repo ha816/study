@@ -219,15 +219,24 @@ WHERE e.emp_no = 10001;
 
 이럴때는 안쪽 서브 쿼리가 바깥쪽 SELECT 쿼리에 컬럼에 의존하기 때문에 DEPENDENT 키워드가 붙고 DEPENDENT UNION처럼 외부 쿼리가 먼저 수행된 후에 내부 쿼리가 실행되어야 하므로 DEPENDENT 키워드가 붙은 쿼리는 없는 것 보다 처리 속도가 느릴때가 많다.
 
-
+|id| select_type|table|
+|--|--|--|
+|1 | PRIMARY |e|
+| 2 | DEPENDENT SUBQUERY| de|
+|2|DEPENDENT SUBQUERY|dm|
 
 > Written with [StackEdit](https://stackedit.io/).
+
+
+### DERIVED
+
+서브 쿼리가 FROM 절에 사용될 경우 MySQL 항
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3NDA2ODQ2LC0xMjQ2MDc3NDMyLC0xMz
-M0MjE4NTUxLDE3MTA0NjYyODksLTc1NDM2NDAzLDIxMTYwMjQ3
-MzMsLTIwNjY2MjA4MSwxOTE4MjQ3NSwtMTYzNzEyNjgyMiwtMj
-UyNDI1MjY5LDI4NDc4MTc3MywtMjAyMzQyMDE1LDIwOTM2Njcy
-ODAsMTU4MDEzOTg5MiwxODc3OTkzODksMTY5NDQzNzY0MCwxOD
-k0MDg1MDQ5LDE3Mjc4ODQ4ODAsMTI3MDUyNTk4OSwtNzUxMDAx
-NjI2XX0=
+eyJoaXN0b3J5IjpbNTAyODgzMzgzLDI0NzQwNjg0NiwtMTI0Nj
+A3NzQzMiwtMTMzNDIxODU1MSwxNzEwNDY2Mjg5LC03NTQzNjQw
+MywyMTE2MDI0NzMzLC0yMDY2NjIwODEsMTkxODI0NzUsLTE2Mz
+cxMjY4MjIsLTI1MjQyNTI2OSwyODQ3ODE3NzMsLTIwMjM0MjAx
+NSwyMDkzNjY3MjgwLDE1ODAxMzk4OTIsMTg3Nzk5Mzg5LDE2OT
+Q0Mzc2NDAsMTg5NDA4NTA0OSwxNzI3ODg0ODgwLDEyNzA1MjU5
+ODldfQ==
 -->
