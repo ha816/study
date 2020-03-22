@@ -231,8 +231,10 @@ WHERE e.emp_no = 10001;
 ### DERIVED
 
 서브 쿼리가 **FROM 절에 사용될 경우 MySQL 항상 DERIVED인 실행 계획을 만든다.** DERIVED는 단위 SELECT 쿼리의 실행 결과를 메모리나 디스크에 임시 테이블을 생성하는 것을 의미한다. 이 임시 테이블을 파생 테이블이라고도 한다. 
+
+안
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MjEwNTA4MSwxMDMzMjIzMzUsMjQ3ND
+eyJoaXN0b3J5IjpbMTIwNzk1MTQ0NywxMDMzMjIzMzUsMjQ3ND
 A2ODQ2LC0xMjQ2MDc3NDMyLC0xMzM0MjE4NTUxLDE3MTA0NjYy
 ODksLTc1NDM2NDAzLDIxMTYwMjQ3MzMsLTIwNjY2MjA4MSwxOT
 E4MjQ3NSwtMTYzNzEyNjgyMiwtMjUyNDI1MjY5LDI4NDc4MTc3
