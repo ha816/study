@@ -50,12 +50,14 @@ ALTER TABLE table ANYALZE PARTITION p3;
 ```
 ANALYZE를 실행하는 동안 InnoDB 테이블은 읽기와 쓰기 모두 불가능하다. 따라서 서비스 도중에는 ANALYZE를 실행하지 않는 것이 좋다. InnoDB 테이블은 인덱스 페이지 중에서 8개 정도만 랜덤하게 선택해서 본석하고 그 결과를 인덱스의 통계정보로 갱신한다. 
 
-# Exe
+# Execution Plan
+
+MySQL에서 쿼리 실행 계획을 활용하려면 EXPLAIN 키워드를 붙이면 된다.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgxMDQ3MjM3LDg3NzYyNDk3NSwtMTg1OT
-kyOTc0MSwtMTU5OTg5MjA0OCwxODM0Mzk1MTgsLTEyMTkzMzY5
-NjIsODQ0MjgxNjM2LDEyODY2OTg2NjcsNTgxNTkzOTE5XX0=
+eyJoaXN0b3J5IjpbMTEzODUyMjAxNyw4Nzc2MjQ5NzUsLTE4NT
+k5Mjk3NDEsLTE1OTk4OTIwNDgsMTgzNDM5NTE4LC0xMjE5MzM2
+OTYyLDg0NDI4MTYzNiwxMjg2Njk4NjY3LDU4MTU5MzkxOV19
 -->
