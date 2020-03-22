@@ -212,18 +212,18 @@ EXPLAIN
 SELECT e.first_name,
 	( SELECT COUNT(*)
 	FROM dept_emp de, dept_manager dm
-	WHERE dm.d
-	) AS message
+	WHERE dm.dept_no = de.dept_no AND de.emp_no = e.emp_no) AS cnt
 FROM employees e
 WHERE e.emp_no = 10001;
 ```
 
+이럴때는 안쪽 서브 쿼리가 바깥쪽 SELECT 쿼리에 컬럼에 의존하기 때문에 DEPENDENT 키워드가 붙고 DEPENDENT UNION이 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNDA2NjQ2MSwtMTI0NjA3NzQzMiwtMT
+eyJoaXN0b3J5IjpbLTk4MjM3MjQyMCwtMTI0NjA3NzQzMiwtMT
 MzNDIxODU1MSwxNzEwNDY2Mjg5LC03NTQzNjQwMywyMTE2MDI0
 NzMzLC0yMDY2NjIwODEsMTkxODI0NzUsLTE2MzcxMjY4MjIsLT
 I1MjQyNTI2OSwyODQ3ODE3NzMsLTIwMjM0MjAxNSwyMDkzNjY3
