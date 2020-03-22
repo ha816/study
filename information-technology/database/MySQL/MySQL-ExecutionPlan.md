@@ -248,10 +248,10 @@ WHERE e.emp_no=tb.emp_no;
 | 1| PRIMARY| e|
 |2|DERIVED |de|
 
-> 쿼리 튜닝을 하기 위해 실행 계획을 확인할때는 select_type
+> 쿼리 튜닝을 하기 위해 실행 계획을 확인할때는 select_type에 DERIVED가 있는지 확인해야 한다. 다른 방법이 없어서 서브 쿼리를 사용하는 것은 피할 수 없지만 조인으로 해결할 수 있다면 서브 쿼리보다 조인을 활용할것은 권장한다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTAzNzY5MjMsMTIwNzk1MTQ0NywxMD
+eyJoaXN0b3J5IjpbLTE1MjkwMTUzMzIsMTIwNzk1MTQ0NywxMD
 MzMjIzMzUsMjQ3NDA2ODQ2LC0xMjQ2MDc3NDMyLC0xMzM0MjE4
 NTUxLDE3MTA0NjYyODksLTc1NDM2NDAzLDIxMTYwMjQ3MzMsLT
 IwNjY2MjA4MSwxOTE4MjQ3NSwtMTYzNzEyNjgyMiwtMjUyNDI1
