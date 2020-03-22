@@ -132,10 +132,14 @@ UNION은 모든 컬럼이 같은 결과에 대해서는 중복 결과를 제거�
 EXPLAIN
 SELECT e.first_name,
 	( 
-	SELECT CONCAT('salary', COUNT(*)) AS message
+	SELECT CONCAT('Salary', COUNT(*)) AS message
 	FROM salaries s WHERE s.emp_no = e.emp_no
 	UNION
-	
+	SELECT CONCAT('Department', COUNT(*)) AS message
+	FROM dept_emp de WHERE de.emp_no = e.emp_no
+	) AS message
+FROM employees e
+WHERE e.emp_no =
 
 ```
 
@@ -143,11 +147,11 @@ SELECT e.first_name,
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMzMTQwODUzLDI4NDc4MTc3MywtMjAyMz
-QyMDE1LDIwOTM2NjcyODAsMTU4MDEzOTg5MiwxODc3OTkzODks
-MTY5NDQzNzY0MCwxODk0MDg1MDQ5LDE3Mjc4ODQ4ODAsMTI3MD
-UyNTk4OSwtNzUxMDAxNjI2LC0xODU5MTg2NjMxLC0xMDE5NzM5
-NDM1LC02MDMzNjgwNDksODc3NjI0OTc1LC0xODU5OTI5NzQxLC
-0xNTk5ODkyMDQ4LDE4MzQzOTUxOCwtMTIxOTMzNjk2Miw4NDQy
-ODE2MzZdfQ==
+eyJoaXN0b3J5IjpbLTE0NDg1Mjg1NTcsMjg0NzgxNzczLC0yMD
+IzNDIwMTUsMjA5MzY2NzI4MCwxNTgwMTM5ODkyLDE4Nzc5OTM4
+OSwxNjk0NDM3NjQwLDE4OTQwODUwNDksMTcyNzg4NDg4MCwxMj
+cwNTI1OTg5LC03NTEwMDE2MjYsLTE4NTkxODY2MzEsLTEwMTk3
+Mzk0MzUsLTYwMzM2ODA0OSw4Nzc2MjQ5NzUsLTE4NTk5Mjk3ND
+EsLTE1OTk4OTIwNDgsMTgzNDM5NTE4LC0xMjE5MzM2OTYyLDg0
+NDI4MTYzNl19
 -->
