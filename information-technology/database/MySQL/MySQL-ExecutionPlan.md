@@ -104,15 +104,17 @@ UNION으로 결합하는 단위 SELECT 쿼리 가운데 첫 번째를 제외한 
 EXPLAIN
 SELECT * FROM (
 	(SELECT emp_no FROM employees e1)
-	U
-
+	UNION ALL
+	(SELECT emp_no FROM employees e2)
+	UNION ALL
+	(SELECT emp_no FROM employees e3)
 ) tb;
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NTc1MzAzOCwxODc3OTkzODksMTY5ND
+eyJoaXN0b3J5IjpbMTU4MDEzOTg5MiwxODc3OTkzODksMTY5ND
 QzNzY0MCwxODk0MDg1MDQ5LDE3Mjc4ODQ4ODAsMTI3MDUyNTk4
 OSwtNzUxMDAxNjI2LC0xODU5MTg2NjMxLC0xMDE5NzM5NDM1LC
 02MDMzNjgwNDksODc3NjI0OTc1LC0xODU5OTI5NzQxLC0xNTk5
