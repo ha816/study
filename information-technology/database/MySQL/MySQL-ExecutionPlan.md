@@ -151,15 +151,15 @@ WHERE e.emp_no = 10001;
 |  3| DEPENDENT UNION|
 
 주의 
-> 하나의 단위 SELECT 쿼리가 다른 단위 SELECT를 포함하고 있으면 포함된 쿼리를 서브 쿼리라고 한다. 
+> 하나의 단위 SELECT 쿼리가 다른 단위 SELECT를 포함하고 있으면 포함된 쿼리를 서브 쿼리라고 한다. 이처럼 서브 쿼리가 사용된 경우에는 외부(Outer) 쿼리보다 서브 쿼리가 먼저 실행되는것이 일반적이고 이 방식이 반대의 경우보다 보통 빠르다. 하지만 DEPENDN
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyOTMyMDgsLTI1MjQyNTI2OSwyODQ3OD
-E3NzMsLTIwMjM0MjAxNSwyMDkzNjY3MjgwLDE1ODAxMzk4OTIs
-MTg3Nzk5Mzg5LDE2OTQ0Mzc2NDAsMTg5NDA4NTA0OSwxNzI3OD
-g0ODgwLDEyNzA1MjU5ODksLTc1MTAwMTYyNiwtMTg1OTE4NjYz
-MSwtMTAxOTczOTQzNSwtNjAzMzY4MDQ5LDg3NzYyNDk3NSwtMT
-g1OTkyOTc0MSwtMTU5OTg5MjA0OCwxODM0Mzk1MTgsLTEyMTkz
-MzY5NjJdfQ==
+eyJoaXN0b3J5IjpbLTM0MzA3MDIxLC0yNTI0MjUyNjksMjg0Nz
+gxNzczLC0yMDIzNDIwMTUsMjA5MzY2NzI4MCwxNTgwMTM5ODky
+LDE4Nzc5OTM4OSwxNjk0NDM3NjQwLDE4OTQwODUwNDksMTcyNz
+g4NDg4MCwxMjcwNTI1OTg5LC03NTEwMDE2MjYsLTE4NTkxODY2
+MzEsLTEwMTk3Mzk0MzUsLTYwMzM2ODA0OSw4Nzc2MjQ5NzUsLT
+E4NTk5Mjk3NDEsLTE1OTk4OTIwNDgsMTgzNDM5NTE4LC0xMjE5
+MzM2OTYyXX0=
 -->
