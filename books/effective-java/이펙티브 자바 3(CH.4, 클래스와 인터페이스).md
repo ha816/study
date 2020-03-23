@@ -235,7 +235,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 **인터페이스는 믹스인(mixin) 정의에 안성맞춤이다.** 믹스인이란 클래스가 구현할 수 있는 타입으로, 믹스인을 구현한 클래스에 원래의 주된 타입 외에도 특정 선택정 행위를 제공한다고 선언하는 효과를 준다. 예를 들어, Comparable의 경우, 구현한 인스턴스들끼리는 순서를 정할 수 있다고 선언하는 mixin 인터페이스이다. 이처럼 대상 타입의 주된 기능에 선택적 기능을 혼합(minin)한다고 해서 믹스인이라 한다. 
 추상클래스로는 믹스인을 정의할 수 없다. 이유는 기존 클래스에 덧씌울 수 없기 때문이다. 클래스는 두 부모를 상속 받을 수 없고, 계층 구조에서는 믹스인을 삽입하기 적합한 구조가 아니다. 
 
-인터페이스로는 계층구조가 없는 타입 프레임워크를 만들 수 있다. 
+인터페이스로는 계층구조가 없는 타입 프레임워크를 만들 수 있다. 타입을 계층적으로 정의하면 수 많은 개념을 구조적으로 잘 표현할 수 있지만, 현실에서는 계층을 엄격하게 구분하기 어려운 개념도 있다. 
 
 
 추상 클래스는 구현된 메서드를 포함 할 수 있다. 또한 추상 클래스가 규정하는 자료형 구현을 위해서 추상 클래스를 계승해야 한다. 
@@ -298,11 +298,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODc0NTYzMCw2MTY3MTM4MzMsMTA3OD
-gyOTcyMSwtODIzNTU2MzQzLC03Mjk3NDUwLDQ5OTMwNTMwNywt
-MjEwMTY3ODIxMSw2MzU1NzM0MDgsMTQ1MDI1MDkzMCw5MTY0MD
-I5OCwtNDM5NDI5OTU4LC0xMDQ5NjYzNTg2LDgxMjA0MzQ0MSwy
-Mjg3MTQ0NTUsNTY3NTY0MDg3LC04NzgyNjk2MDQsLTEyNjcwMj
-g1OTMsLTQxMjAyMjUyOCwtMTYxOTMzMjg4OSw0NjY3NjA0OTRd
-fQ==
+eyJoaXN0b3J5IjpbMjA5NDIzMzE0NywxMzM4NzQ1NjMwLDYxNj
+cxMzgzMywxMDc4ODI5NzIxLC04MjM1NTYzNDMsLTcyOTc0NTAs
+NDk5MzA1MzA3LC0yMTAxNjc4MjExLDYzNTU3MzQwOCwxNDUwMj
+UwOTMwLDkxNjQwMjk4LC00Mzk0Mjk5NTgsLTEwNDk2NjM1ODYs
+ODEyMDQzNDQxLDIyODcxNDQ1NSw1Njc1NjQwODcsLTg3ODI2OT
+YwNCwtMTI2NzAyODU5MywtNDEyMDIyNTI4LC0xNjE5MzMyODg5
+XX0=
 -->
