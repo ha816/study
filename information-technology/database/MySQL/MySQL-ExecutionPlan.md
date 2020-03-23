@@ -265,7 +265,7 @@ DEPENDENT SUBQUERY는 외부 쿼리의 값을 단위로 캐시가 만들어진�
 
 ## table 컬럼
 
-
+MySQL 실행 계획은 단위 SELECT 기준이 아니라 테이블 기준으로 표시된다. 만약 테이블의 이름에 별칭이 부여된 경우에는 별칭이 표시된다. 별도로 테이블을 사용하지 않은 경우 table에는 NULL이 표시된다.
 
 
 
@@ -274,11 +274,11 @@ DEPENDENT SUBQUERY는 외부 쿼리의 값을 단위로 캐시가 만들어진�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNTU2MTc5NiwtMTY1NTY2MDE4MCwtMT
-ExODI4Mzg0MCwyMTIwMTc4MjU2LDUyNTIwMzU2NywtMTUyOTAx
-NTMzMiwxMjA3OTUxNDQ3LDEwMzMyMjMzNSwyNDc0MDY4NDYsLT
-EyNDYwNzc0MzIsLTEzMzQyMTg1NTEsMTcxMDQ2NjI4OSwtNzU0
-MzY0MDMsMjExNjAyNDczMywtMjA2NjYyMDgxLDE5MTgyNDc1LC
-0xNjM3MTI2ODIyLC0yNTI0MjUyNjksMjg0NzgxNzczLC0yMDIz
-NDIwMTVdfQ==
+eyJoaXN0b3J5IjpbMzIxMDk1MzIzLDE3MTU1NjE3OTYsLTE2NT
+U2NjAxODAsLTExMTgyODM4NDAsMjEyMDE3ODI1Niw1MjUyMDM1
+NjcsLTE1MjkwMTUzMzIsMTIwNzk1MTQ0NywxMDMzMjIzMzUsMj
+Q3NDA2ODQ2LC0xMjQ2MDc3NDMyLC0xMzM0MjE4NTUxLDE3MTA0
+NjYyODksLTc1NDM2NDAzLDIxMTYwMjQ3MzMsLTIwNjY2MjA4MS
+wxOTE4MjQ3NSwtMTYzNzEyNjgyMiwtMjUyNDI1MjY5LDI4NDc4
+MTc3M119
 -->
