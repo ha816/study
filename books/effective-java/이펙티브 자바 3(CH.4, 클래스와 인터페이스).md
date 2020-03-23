@@ -237,6 +237,8 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 인터페이스로는 계층구조가 없는 타입 프레임워크를 만들 수 있다. 타입을 계층적으로 정의하면 수 많은 개념을 구조적으로 잘 표현할 수 있지만, 현실에서는 계층을 엄격하게 구분하기 어려운 개념도 있다. 
 
+래퍼(데코레이터) 클래스와 함게 사용하면 인터페이스는 기능을 향상 시키는 안전하고 강력한 수
+
 
 추상 클래스는 구현된 메서드를 포함 할 수 있다. 또한 추상 클래스가 규정하는 자료형 구현을 위해서 추상 클래스를 계승해야 한다. 
 
@@ -298,11 +300,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NDIzMzE0NywxMzM4NzQ1NjMwLDYxNj
-cxMzgzMywxMDc4ODI5NzIxLC04MjM1NTYzNDMsLTcyOTc0NTAs
-NDk5MzA1MzA3LC0yMTAxNjc4MjExLDYzNTU3MzQwOCwxNDUwMj
-UwOTMwLDkxNjQwMjk4LC00Mzk0Mjk5NTgsLTEwNDk2NjM1ODYs
-ODEyMDQzNDQxLDIyODcxNDQ1NSw1Njc1NjQwODcsLTg3ODI2OT
-YwNCwtMTI2NzAyODU5MywtNDEyMDIyNTI4LC0xNjE5MzMyODg5
-XX0=
+eyJoaXN0b3J5IjpbNjg1Mzg0MzQyLDIwOTQyMzMxNDcsMTMzOD
+c0NTYzMCw2MTY3MTM4MzMsMTA3ODgyOTcyMSwtODIzNTU2MzQz
+LC03Mjk3NDUwLDQ5OTMwNTMwNywtMjEwMTY3ODIxMSw2MzU1Nz
+M0MDgsMTQ1MDI1MDkzMCw5MTY0MDI5OCwtNDM5NDI5OTU4LC0x
+MDQ5NjYzNTg2LDgxMjA0MzQ0MSwyMjg3MTQ0NTUsNTY3NTY0MD
+g3LC04NzgyNjk2MDQsLTEyNjcwMjg1OTMsLTQxMjAyMjUyOF19
+
 -->
