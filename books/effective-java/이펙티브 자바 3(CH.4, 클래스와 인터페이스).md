@@ -239,7 +239,9 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 래퍼(데코레이터) 클래스와 함게 사용하면 인터페이스는 기능을 향상 시키는 안전하고 강력한 수단이 된다. 타입을 추상 클래스로 정의해두면 그 타입에 기능을 추가하는 방법은 상속뿐이다. 상속해서 만든 클래스는 래퍼 클래스보다 활용도가 떨어지고 깨지기는 쉽다. 
 
-인터페이스의 메서드 중 구현 방법이 명백한 것이 있다면, 그 구현을 디폴트 메서드로 제공해 개발자의 일감을 덜어줄 수 있다. 
+
+> 디폴트 메서드 
+인터페이스의 메서드 중 구현 방법이 명백한 것이 있다면, 그 구현을 디폴트 메서드로 제공해 개발자의 일감을 덜어줄 수 있다. 대표적인 예로는 removeIf 메서드를 보자. 디폴트 메서드를 제공할때는 상속하려는 사람을 위한 설명을 @implSpec 자바 독을 붙여 문서화를 해야 한다.  
 
 
 추상 클래스는 구현된 메서드를 포함 할 수 있다. 또한 추상 클래스가 규정하는 자료형 구현을 위해서 추상 클래스를 계승해야 한다. 
@@ -302,11 +304,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjkzMjk0NiwzNDQxNTU5MzgsMjA5ND
-IzMzE0NywxMzM4NzQ1NjMwLDYxNjcxMzgzMywxMDc4ODI5NzIx
-LC04MjM1NTYzNDMsLTcyOTc0NTAsNDk5MzA1MzA3LC0yMTAxNj
-c4MjExLDYzNTU3MzQwOCwxNDUwMjUwOTMwLDkxNjQwMjk4LC00
-Mzk0Mjk5NTgsLTEwNDk2NjM1ODYsODEyMDQzNDQxLDIyODcxND
-Q1NSw1Njc1NjQwODcsLTg3ODI2OTYwNCwtMTI2NzAyODU5M119
+eyJoaXN0b3J5IjpbLTE2Njk3MDkyNTksMTc1MjkzMjk0NiwzND
+QxNTU5MzgsMjA5NDIzMzE0NywxMzM4NzQ1NjMwLDYxNjcxMzgz
+MywxMDc4ODI5NzIxLC04MjM1NTYzNDMsLTcyOTc0NTAsNDk5Mz
+A1MzA3LC0yMTAxNjc4MjExLDYzNTU3MzQwOCwxNDUwMjUwOTMw
+LDkxNjQwMjk4LC00Mzk0Mjk5NTgsLTEwNDk2NjM1ODYsODEyMD
+QzNDQxLDIyODcxNDQ1NSw1Njc1NjQwODcsLTg3ODI2OTYwNF19
 
 -->
