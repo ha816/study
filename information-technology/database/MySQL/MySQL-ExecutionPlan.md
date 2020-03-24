@@ -267,19 +267,20 @@ DEPENDENT SUBQUERY는 외부 쿼리의 값을 단위로 캐시가 만들어진�
 
 MySQL 실행 계획은 단위 SELECT 기준이 아니라 테이블 기준으로 표시된다. 만약 테이블의 이름에 별칭이 부여된 경우에는 별칭이 표시된다. 별도로 테이블을 사용하지 않은 경우 table에는 NULL이 표시된다.
 
-TAable
+Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명시되는 경우는, 임시테이블을 의미한다. 그리고 <>안에 표시되는 숫자는 단위 SELECT 쿼리의 id를 지칭한다. 
 
+<derived 2>라는 것은 2번 단위 SELECT 쿼리의 실행 계획으로 만들어진 파생 테이블을 말한다.
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg5MTQ0NDgyLC0xNzE0MDU4MTUsMzIxMD
-k1MzIzLDE3MTU1NjE3OTYsLTE2NTU2NjAxODAsLTExMTgyODM4
-NDAsMjEyMDE3ODI1Niw1MjUyMDM1NjcsLTE1MjkwMTUzMzIsMT
-IwNzk1MTQ0NywxMDMzMjIzMzUsMjQ3NDA2ODQ2LC0xMjQ2MDc3
-NDMyLC0xMzM0MjE4NTUxLDE3MTA0NjYyODksLTc1NDM2NDAzLD
-IxMTYwMjQ3MzMsLTIwNjY2MjA4MSwxOTE4MjQ3NSwtMTYzNzEy
-NjgyMl19
+eyJoaXN0b3J5IjpbLTEyODQ2NDI5NTgsLTE3MTQwNTgxNSwzMj
+EwOTUzMjMsMTcxNTU2MTc5NiwtMTY1NTY2MDE4MCwtMTExODI4
+Mzg0MCwyMTIwMTc4MjU2LDUyNTIwMzU2NywtMTUyOTAxNTMzMi
+wxMjA3OTUxNDQ3LDEwMzMyMjMzNSwyNDc0MDY4NDYsLTEyNDYw
+Nzc0MzIsLTEzMzQyMTg1NTEsMTcxMDQ2NjI4OSwtNzU0MzY0MD
+MsMjExNjAyNDczMywtMjA2NjYyMDgxLDE5MTgyNDc1LC0xNjM3
+MTI2ODIyXX0=
 -->
