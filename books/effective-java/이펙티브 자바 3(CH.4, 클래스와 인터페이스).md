@@ -246,7 +246,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 한편, **인터페이스와 추상 골격 구현(skeletal implementation) 클래스를 함께 제공**하는 식으로 인터페이스와 추상 클래스의 장점 모두를 취하는 방법도 있다. 인터페이스로 타입을 정의하고, 필요하면 디폴트 메서드도 몇개 함께 제공한다. 그리고 골격 구현 클래스는 나머지 메서드들까지 구현한다. 이렇게 하면 단순히 골격 구현 클래스를 확장하는 것만으로 이 인터페이스를 구현하는데 필요한 일이 대부분 완료된다. 이것이 바로 템플릿 메서드 패턴이다. 
 
-관례상 인터페이
+관례상 인터페이스 이름이 interface라면, 그 골격 구현 클래스는 이름은 AbstractInterface라고 짓는다. 좋은 예로 컬렉션 프레임워크의 AbstractCollection, AbstractSet, AbstractList, AbstractMap 각각이 바로 핵심 컬렉션 인터페이스의 골격 구현이다. 
 
 추상 클래스는 구현된 메서드를 포함 할 수 있다. 또한 추상 클래스가 규정하는 자료형 구현을 위해서 추상 클래스를 계승해야 한다. 
 
@@ -308,11 +308,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMjg1OTczMCwxNzYwMDI4NTM1LDE5Mz
-YxMTYxLC0xNjY5NzA5MjU5LDE3NTI5MzI5NDYsMzQ0MTU1OTM4
-LDIwOTQyMzMxNDcsMTMzODc0NTYzMCw2MTY3MTM4MzMsMTA3OD
-gyOTcyMSwtODIzNTU2MzQzLC03Mjk3NDUwLDQ5OTMwNTMwNywt
-MjEwMTY3ODIxMSw2MzU1NzM0MDgsMTQ1MDI1MDkzMCw5MTY0MD
-I5OCwtNDM5NDI5OTU4LC0xMDQ5NjYzNTg2LDgxMjA0MzQ0MV19
+eyJoaXN0b3J5IjpbMTcxMzM2Mzg5LDE3NjAwMjg1MzUsMTkzNj
+ExNjEsLTE2Njk3MDkyNTksMTc1MjkzMjk0NiwzNDQxNTU5Mzgs
+MjA5NDIzMzE0NywxMzM4NzQ1NjMwLDYxNjcxMzgzMywxMDc4OD
+I5NzIxLC04MjM1NTYzNDMsLTcyOTc0NTAsNDk5MzA1MzA3LC0y
+MTAxNjc4MjExLDYzNTU3MzQwOCwxNDUwMjUwOTMwLDkxNjQwMj
+k4LC00Mzk0Mjk5NTgsLTEwNDk2NjM1ODYsODEyMDQzNDQxXX0=
 
 -->
