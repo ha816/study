@@ -244,7 +244,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 > 인터페이스의 메서드 중 구현 방법이 명백한 것이 있다면, 그 구현을 디폴트 메서드로 제공해 개발자의 일감을 덜어줄 수 있다. 대표적인 예로는 removeIf 메서드를 보자. 디폴트 메서드를 제공할때는 상속하려는 사람을 위한 설명을 @implSpec 자바 독을 붙여 문서화를 해야 한다. 
 > 디폴트 메서드에도 제약은 있다. 인터페이스는 인스턴스 필드를 가질 수 없고 public이 아닌 정적 멤버도 가질 수 없다. 그리고 여러분이 만들지 않은 인터페이스에는 디폴트 메서드를 추가할 수 없다. 
 
-한편, **인터페이스와 추상 골격 구현(skeletal implementation) 클래스를 함께 제공**하는 식으로 인터페이스와 추상 클래스의 장점 모두를 취하는 방법도 있다. 
+한편, **인터페이스와 추상 골격 구현(skeletal implementation) 클래스를 함께 제공**하는 식으로 인터페이스와 추상 클래스의 장점 모두를 취하는 방법도 있다. 인터페이스로 타입을 정의하고, 필요하면 디폴트 메서드도 몇개 함께 제공한다. 그리고 골격 구현 클래스는 나머지 메서드들까지 구현한다. 이렇게 하면 단순히 골격 구현 클래스를 확장하는 것만으로 이 인터페이스를 구현하는데 필요한 일이 대부분 완료된다. 이것이 바로 템플릿 메서드 패턴이다. 
 
 추상 클래스는 구현된 메서드를 포함 할 수 있다. 또한 추상 클래스가 규정하는 자료형 구현을 위해서 추상 클래스를 계승해야 한다. 
 
@@ -306,11 +306,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNjExNjEsLTE2Njk3MDkyNTksMTc1Mj
-kzMjk0NiwzNDQxNTU5MzgsMjA5NDIzMzE0NywxMzM4NzQ1NjMw
-LDYxNjcxMzgzMywxMDc4ODI5NzIxLC04MjM1NTYzNDMsLTcyOT
-c0NTAsNDk5MzA1MzA3LC0yMTAxNjc4MjExLDYzNTU3MzQwOCwx
-NDUwMjUwOTMwLDkxNjQwMjk4LC00Mzk0Mjk5NTgsLTEwNDk2Nj
-M1ODYsODEyMDQzNDQxLDIyODcxNDQ1NSw1Njc1NjQwODddfQ==
+eyJoaXN0b3J5IjpbMTc2MDAyODUzNSwxOTM2MTE2MSwtMTY2OT
+cwOTI1OSwxNzUyOTMyOTQ2LDM0NDE1NTkzOCwyMDk0MjMzMTQ3
+LDEzMzg3NDU2MzAsNjE2NzEzODMzLDEwNzg4Mjk3MjEsLTgyMz
+U1NjM0MywtNzI5NzQ1MCw0OTkzMDUzMDcsLTIxMDE2NzgyMTEs
+NjM1NTczNDA4LDE0NTAyNTA5MzAsOTE2NDAyOTgsLTQzOTQyOT
+k1OCwtMTA0OTY2MzU4Niw4MTIwNDM0NDEsMjI4NzE0NDU1XX0=
 
 -->
