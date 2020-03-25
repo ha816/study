@@ -250,7 +250,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 관례상 인터페이스 이름이 interface라면, 그 골격 구현 클래스는 이름은 AbstractInterface라고 짓는다. 좋은 예로 컬렉션 프레임워크의 AbstractCollection, AbstractSet, AbstractList, AbstractMap 각각이 바로 핵심 컬렉션 인터페이스의 골격 구현이다. 제대로 설계했다면 골격 구현은 개발자가 구현해야하는 코드양을 상당히 덜어준다. 아래 예를 보면 완벽히 동작하는 List 구현체를 반환하는 정적 팩터리 메서드로, AbstractList 골격 구현을 활용했다. 
 
 ```
-
+static List<Integer> intArrayAsList(int[] a) {
+	Objects.requireNonNull(a);
+	
+	return new AbstractL
+}
 ```
 
 추상 클래스는 구현된 메서드를 포함 할 수 있다. 또한 추상 클래스가 규정하는 자료형 구현을 위해서 추상 클래스를 계승해야 한다. 
@@ -313,11 +317,11 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzI5NzQwNTksODY0NjY4MTEwLDE3MT
-MzNjM4OSwxNzYwMDI4NTM1LDE5MzYxMTYxLC0xNjY5NzA5MjU5
-LDE3NTI5MzI5NDYsMzQ0MTU1OTM4LDIwOTQyMzMxNDcsMTMzOD
-c0NTYzMCw2MTY3MTM4MzMsMTA3ODgyOTcyMSwtODIzNTU2MzQz
-LC03Mjk3NDUwLDQ5OTMwNTMwNywtMjEwMTY3ODIxMSw2MzU1Nz
-M0MDgsMTQ1MDI1MDkzMCw5MTY0MDI5OCwtNDM5NDI5OTU4XX0=
+eyJoaXN0b3J5IjpbLTYxNDAzMTEwLC0yMDcyOTc0MDU5LDg2ND
+Y2ODExMCwxNzEzMzYzODksMTc2MDAyODUzNSwxOTM2MTE2MSwt
+MTY2OTcwOTI1OSwxNzUyOTMyOTQ2LDM0NDE1NTkzOCwyMDk0Mj
+MzMTQ3LDEzMzg3NDU2MzAsNjE2NzEzODMzLDEwNzg4Mjk3MjEs
+LTgyMzU1NjM0MywtNzI5NzQ1MCw0OTkzMDUzMDcsLTIxMDE2Nz
+gyMTEsNjM1NTczNDA4LDE0NTAyNTA5MzAsOTE2NDAyOThdfQ==
 
 -->
