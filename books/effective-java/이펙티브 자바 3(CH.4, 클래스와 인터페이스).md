@@ -272,7 +272,7 @@ static List<Integer> intArrayAsList(int[] a) {
 
 골격 구현 클래스를 우회적으로 이용할 수도 있다. 인터페이스를 구현한 클래스에서 해당 골격 구현을 확장한 private 내부 클래스를 정의하고, 각 메서드 호출을 내부 클래스의 인스턴스에 전달하는 것이다. 이 방법을 다중 상속(simulated multiple inheritance)라 하며, 다중 상속의 많은 장점을 제공하는 동시에 단점은 피하게 해준다. 
 
-골격 구현(skeletal implementation)의 작성은 상대적으로 쉽다. 가장 먼저, 인터페이스를 살펴 다른 메서드들의 구현에 사용되는 기반 메서드를 선정한다. 
+골격 구현(skeletal implementation)의 작성은 상대적으로 쉽다. 가장 먼저, 인터페이스를 살펴 다른 메서드들의 구현에 사용되는 기반 메서드를 선정한다.  이 기반 메서드들은 골격 구현에서 추상 메
 
 
 인터페이스의 장점
@@ -333,11 +333,11 @@ static List<Integer> intArrayAsList(int[] a) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1NzA5MjUzLDE4OTM1MDUzNDgsLTMyMD
-k5MDA0NCwxNjYwMjA1NDI0LC0xNjA2NDQxODg5LC0yNTE3ODQ1
-MjUsODQ2OTc2Mjc5LC0yMDcyOTc0MDU5LDg2NDY2ODExMCwxNz
-EzMzYzODksMTc2MDAyODUzNSwxOTM2MTE2MSwtMTY2OTcwOTI1
-OSwxNzUyOTMyOTQ2LDM0NDE1NTkzOCwyMDk0MjMzMTQ3LDEzMz
-g3NDU2MzAsNjE2NzEzODMzLDEwNzg4Mjk3MjEsLTgyMzU1NjM0
-M119
+eyJoaXN0b3J5IjpbMTI4MzAyMjUwNyw1MTU3MDkyNTMsMTg5Mz
+UwNTM0OCwtMzIwOTkwMDQ0LDE2NjAyMDU0MjQsLTE2MDY0NDE4
+ODksLTI1MTc4NDUyNSw4NDY5NzYyNzksLTIwNzI5NzQwNTksOD
+Y0NjY4MTEwLDE3MTMzNjM4OSwxNzYwMDI4NTM1LDE5MzYxMTYx
+LC0xNjY5NzA5MjU5LDE3NTI5MzI5NDYsMzQ0MTU1OTM4LDIwOT
+QyMzMxNDcsMTMzODc0NTYzMCw2MTY3MTM4MzMsMTA3ODgyOTcy
+MV19
 -->
