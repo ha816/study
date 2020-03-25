@@ -262,6 +262,10 @@ static List<Integer> intArrayAsList(int[] a) {
 			a[i] = val;
 			return oldVal;
 		}
+		@Override public int size() {
+			a.length;
+		}
+
 	};
 }
 ```
@@ -326,11 +330,11 @@ static List<Integer> intArrayAsList(int[] a) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ2OTc2Mjc5LC0yMDcyOTc0MDU5LDg2ND
-Y2ODExMCwxNzEzMzYzODksMTc2MDAyODUzNSwxOTM2MTE2MSwt
-MTY2OTcwOTI1OSwxNzUyOTMyOTQ2LDM0NDE1NTkzOCwyMDk0Mj
-MzMTQ3LDEzMzg3NDU2MzAsNjE2NzEzODMzLDEwNzg4Mjk3MjEs
-LTgyMzU1NjM0MywtNzI5NzQ1MCw0OTkzMDUzMDcsLTIxMDE2Nz
-gyMTEsNjM1NTczNDA4LDE0NTAyNTA5MzAsOTE2NDAyOThdfQ==
+eyJoaXN0b3J5IjpbLTI1MTc4NDUyNSw4NDY5NzYyNzksLTIwNz
+I5NzQwNTksODY0NjY4MTEwLDE3MTMzNjM4OSwxNzYwMDI4NTM1
+LDE5MzYxMTYxLC0xNjY5NzA5MjU5LDE3NTI5MzI5NDYsMzQ0MT
+U1OTM4LDIwOTQyMzMxNDcsMTMzODc0NTYzMCw2MTY3MTM4MzMs
+MTA3ODgyOTcyMSwtODIzNTU2MzQzLC03Mjk3NDUwLDQ5OTMwNT
+MwNywtMjEwMTY3ODIxMSw2MzU1NzM0MDgsMTQ1MDI1MDkzMF19
 
 -->
