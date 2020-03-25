@@ -280,17 +280,19 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 위 첫번째 라인의 table 컬럼이 derived2인데, 이것은 단위 SELECT 쿼리의 아이디가 2번 실행 계획으로부터 만들어진 파생 테이블을 말한다. 이 파생 테이블은 dept_emp 테이블로 부터 SELECT된 결과가 저장된 파생 테이블이라는 점을 알 수 있다. 
 
 1. 첫번째 라인이 <derived2>인것을 보아 이 라인 보다 id가 2번인 라인을 먼저 실행하고 그 결과가 파생 테이블로 준비되야 한다는 것을 알 수 있다. 
+2. 세번째 라인의 DERIVED를 보면, dept_emp 테이블을 읽어 파생 테이블을 생성하는 것을 알 수 있다. 
+3. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2Mj
-IxNTMzOCwtMTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMy
-MywxNzE1NTYxNzk2LC0xNjU1NjYwMTgwLC0xMTE4MjgzODQwLD
-IxMjAxNzgyNTYsNTI1MjAzNTY3LC0xNTI5MDE1MzMyLDEyMDc5
-NTE0NDcsMTAzMzIyMzM1LDI0NzQwNjg0NiwtMTI0NjA3NzQzMi
-wtMTMzNDIxODU1MSwxNzEwNDY2Mjg5LC03NTQzNjQwMywyMTE2
-MDI0NzMzXX0=
+eyJoaXN0b3J5IjpbLTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMT
+c5MDAyNSwxMTYyMjE1MzM4LC0xMjg0NjQyOTU4LC0xNzE0MDU4
+MTUsMzIxMDk1MzIzLDE3MTU1NjE3OTYsLTE2NTU2NjAxODAsLT
+ExMTgyODM4NDAsMjEyMDE3ODI1Niw1MjUyMDM1NjcsLTE1Mjkw
+MTUzMzIsMTIwNzk1MTQ0NywxMDMzMjIzMzUsMjQ3NDA2ODQ2LC
+0xMjQ2MDc3NDMyLC0xMzM0MjE4NTUxLDE3MTA0NjYyODksLTc1
+NDM2NDAzXX0=
 -->
