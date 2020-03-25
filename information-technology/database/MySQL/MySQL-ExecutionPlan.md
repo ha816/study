@@ -273,18 +273,18 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 
 |id| select_type|table|
 |--|--|--|
-|1 | PRIMARY |derived2|
-| 1| PRIMARY| e|
+|1| PRIMARY |derived2|
+|1| PRIMARY| e|
 |2|DERIVED |dept_emp|
 
-위 첫번째 라인의 table 컬럼이 derived2인데, 이것은 단위 SELECT 쿼리의 아이디가 2번인 실행 계획으로부터 만들어진 파생 테이블을 가리킨다. 단위 SELECT 쿼리의 id 2번은 dept_emp 테이블로 부터 SELECT 결과가 저장된 파생 테이블이라는 점을 알 수 있다. 
+위 첫번째 라인의 table 컬럼이 derived2인데, 이것은 단위 SELECT 쿼리의 아이디가 2번 실행 계획으로부터 만들어진 파생 테이블을 말한다. 단위 SELECT 쿼리의 id 2번은 dept_emp 테이블로 부터 SELECT 결과가 저장된 파생 테이블이라는 점을 알 수 있다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMTI3MDM2OCwyMTE3OTAwMjUsMTE2Mj
+eyJoaXN0b3J5IjpbMTEyMzg2MDQ2MCwyMTE3OTAwMjUsMTE2Mj
 IxNTMzOCwtMTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMy
 MywxNzE1NTYxNzk2LC0xNjU1NjYwMTgwLC0xMTE4MjgzODQwLD
 IxMjAxNzgyNTYsNTI1MjAzNTY3LC0xNTI5MDE1MzMyLDEyMDc5
