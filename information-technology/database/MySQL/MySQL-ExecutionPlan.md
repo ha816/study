@@ -277,18 +277,18 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 | 1| PRIMARY| e|
 |2|DERIVED |dept_emp|
 
-위 첫번째 라인의 table 컬럼이 derived2인데, 이것은 단위 SELECT 쿼리의 아이디가 2번인 실행 계획으로부터 만들어진 파생 테이블을 가리킨다.
+위 첫번째 라인의 table 컬럼이 derived2인데, 이것은 단위 SELECT 쿼리의 아이디가 2번인 실행 계획으로부터 만들어진 파생 테이블을 가리킨다. 단위 SELECT 쿼리의 id 2번은 dept_emp 테이블로 부터 SELECT 결과가 저장된 파생 테이블이라는 점을 알 수 있다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODI0ODM4NzEsMjExNzkwMDI1LDExNj
-IyMTUzMzgsLTEyODQ2NDI5NTgsLTE3MTQwNTgxNSwzMjEwOTUz
-MjMsMTcxNTU2MTc5NiwtMTY1NTY2MDE4MCwtMTExODI4Mzg0MC
-wyMTIwMTc4MjU2LDUyNTIwMzU2NywtMTUyOTAxNTMzMiwxMjA3
-OTUxNDQ3LDEwMzMyMjMzNSwyNDc0MDY4NDYsLTEyNDYwNzc0Mz
-IsLTEzMzQyMTg1NTEsMTcxMDQ2NjI4OSwtNzU0MzY0MDMsMjEx
-NjAyNDczM119
+eyJoaXN0b3J5IjpbMTczMTI3MDM2OCwyMTE3OTAwMjUsMTE2Mj
+IxNTMzOCwtMTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMy
+MywxNzE1NTYxNzk2LC0xNjU1NjYwMTgwLC0xMTE4MjgzODQwLD
+IxMjAxNzgyNTYsNTI1MjAzNTY3LC0xNTI5MDE1MzMyLDEyMDc5
+NTE0NDcsMTAzMzIyMzM1LDI0NzQwNjg0NiwtMTI0NjA3NzQzMi
+wtMTMzNDIxODU1MSwxNzEwNDY2Mjg5LC03NTQzNjQwMywyMTE2
+MDI0NzMzXX0=
 -->
