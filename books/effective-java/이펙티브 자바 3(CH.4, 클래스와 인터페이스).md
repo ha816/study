@@ -268,7 +268,9 @@ static List<Integer> intArrayAsList(int[] a) {
 	};
 }
 ```
-골격 구현 클래스는 추상 클래스 처럼 구현을 도와주는 동시에 추상 클래스로 정의했을때 오는 심각한 제약에서 자유롭다는 점이 장점이다. 골격 구현을 확장하는 것으로 인터페이스 구현은 거의 끝나지만, 꼭 이런게 할 필요는 없다. 구조상 골격 구현 클래스를 확장할 수 없다면 인터페이스를 직접 구현해야 하는데, 이런 경우라도 인텊
+골격 구현 클래스는 추상 클래스 처럼 구현을 도와주는 동시에 추상 클래스로 정의했을때 오는 심각한 제약에서 자유롭다는 점이 장점이다. 골격 구현을 확장하는 것으로 인터페이스 구현은 거의 끝나지만, 꼭 이런게 할 필요는 없다. 구조상 골격 구현 클래스를 확장할 수 없다면 인터페이스를 직접 구현해야 하는데, 이런 경우라도 인터페이스가 제공하는 디폴트 메서드의 이점을 누릴 수 있다. 
+
+골격 구현 클래스를 우회적으로 이용할 수도 있다. 
 
 추상 클래스는 구현된 메서드를 포함 할 수 있다. 또한 추상 클래스가 규정하는 자료형 구현을 위해서 추상 클래스를 계승해야 한다. 
 
@@ -330,11 +332,11 @@ static List<Integer> intArrayAsList(int[] a) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzIwMjI0NDYsLTE2MDY0NDE4ODksLT
-I1MTc4NDUyNSw4NDY5NzYyNzksLTIwNzI5NzQwNTksODY0NjY4
-MTEwLDE3MTMzNjM4OSwxNzYwMDI4NTM1LDE5MzYxMTYxLC0xNj
-Y5NzA5MjU5LDE3NTI5MzI5NDYsMzQ0MTU1OTM4LDIwOTQyMzMx
-NDcsMTMzODc0NTYzMCw2MTY3MTM4MzMsMTA3ODgyOTcyMSwtOD
-IzNTU2MzQzLC03Mjk3NDUwLDQ5OTMwNTMwNywtMjEwMTY3ODIx
-MV19
+eyJoaXN0b3J5IjpbMTY2MDIwNTQyNCwtMTYwNjQ0MTg4OSwtMj
+UxNzg0NTI1LDg0Njk3NjI3OSwtMjA3Mjk3NDA1OSw4NjQ2Njgx
+MTAsMTcxMzM2Mzg5LDE3NjAwMjg1MzUsMTkzNjExNjEsLTE2Nj
+k3MDkyNTksMTc1MjkzMjk0NiwzNDQxNTU5MzgsMjA5NDIzMzE0
+NywxMzM4NzQ1NjMwLDYxNjcxMzgzMywxMDc4ODI5NzIxLC04Mj
+M1NTYzNDMsLTcyOTc0NTAsNDk5MzA1MzA3LC0yMTAxNjc4MjEx
+XX0=
 -->
