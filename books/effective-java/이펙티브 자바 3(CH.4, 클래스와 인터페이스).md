@@ -253,7 +253,16 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 static List<Integer> intArrayAsList(int[] a) {
 	Objects.requireNonNull(a);
 	
-	return new AbstractL
+	return new AbstractList<>() {
+		@Override public Integer get(int i) {
+			return a[i];
+		}
+		@Override public Integer set(int i, Integer val) {
+			int oldVal = a[i];
+			a[i] = val;
+			return oldVal;
+		}
+	};
 }
 ```
 
@@ -317,7 +326,7 @@ static List<Integer> intArrayAsList(int[] a) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNDAzMTEwLC0yMDcyOTc0MDU5LDg2ND
+eyJoaXN0b3J5IjpbODQ2OTc2Mjc5LC0yMDcyOTc0MDU5LDg2ND
 Y2ODExMCwxNzEzMzYzODksMTc2MDAyODUzNSwxOTM2MTE2MSwt
 MTY2OTcwOTI1OSwxNzUyOTMyOTQ2LDM0NDE1NTkzOCwyMDk0Mj
 MzMTQ3LDEzMzg3NDU2MzAsNjE2NzEzODMzLDEwNzg4Mjk3MjEs
