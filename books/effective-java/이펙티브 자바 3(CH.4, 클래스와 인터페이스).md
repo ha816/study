@@ -253,7 +253,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 static List<Integer> intArrayAsList(int[] a) {
 	Objects.requireNonNull(a);
 	
-	return new AbstractList<>() {
+	return new AbstractList<>() { // 추상List의 구현체
 		@Override public Integer get(int i) {
 			return a[i];
 		}
@@ -331,11 +331,11 @@ List 구현체가
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDY0NDE4ODksLTI1MTc4NDUyNSw4ND
-Y5NzYyNzksLTIwNzI5NzQwNTksODY0NjY4MTEwLDE3MTMzNjM4
-OSwxNzYwMDI4NTM1LDE5MzYxMTYxLC0xNjY5NzA5MjU5LDE3NT
-I5MzI5NDYsMzQ0MTU1OTM4LDIwOTQyMzMxNDcsMTMzODc0NTYz
-MCw2MTY3MTM4MzMsMTA3ODgyOTcyMSwtODIzNTU2MzQzLC03Mj
-k3NDUwLDQ5OTMwNTMwNywtMjEwMTY3ODIxMSw2MzU1NzM0MDhd
+eyJoaXN0b3J5IjpbMjc3NzEzMzEwLC0xNjA2NDQxODg5LC0yNT
+E3ODQ1MjUsODQ2OTc2Mjc5LC0yMDcyOTc0MDU5LDg2NDY2ODEx
+MCwxNzEzMzYzODksMTc2MDAyODUzNSwxOTM2MTE2MSwtMTY2OT
+cwOTI1OSwxNzUyOTMyOTQ2LDM0NDE1NTkzOCwyMDk0MjMzMTQ3
+LDEzMzg3NDU2MzAsNjE2NzEzODMzLDEwNzg4Mjk3MjEsLTgyMz
+U1NjM0MywtNzI5NzQ1MCw0OTkzMDUzMDcsLTIxMDE2NzgyMTFd
 fQ==
 -->
