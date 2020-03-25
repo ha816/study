@@ -198,7 +198,7 @@ MySQL의 실행 계획에서 **FROM 절에 사용된 서브 쿼리는 DERIVED**�
 
 * 중첩된 쿼리(Nested Query)
 	* SELECT 되는 컬럼에서 사용된 서브 쿼리를 네스티드 쿼리라고 한다.
-* 파생 테이블(Derived Qu)
+* 파생 테이블(Derived Query)
 	* FROM 절에 사용된 서브 쿼리를 MySQL에서는 파생 테이블이라 부른다.
 * 서브 쿼리(Sub Query)
 	* WHERE 절에 사용된 경우에는 일반적으로 그냥 서브 쿼리라고 한다.
@@ -276,7 +276,7 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NTY2MzcyMCwtMTI4NDY0Mjk1OCwtMT
+eyJoaXN0b3J5IjpbMTE2MjIxNTMzOCwtMTI4NDY0Mjk1OCwtMT
 cxNDA1ODE1LDMyMTA5NTMyMywxNzE1NTYxNzk2LC0xNjU1NjYw
 MTgwLC0xMTE4MjgzODQwLDIxMjAxNzgyNTYsNTI1MjAzNTY3LC
 0xNTI5MDE1MzMyLDEyMDc5NTE0NDcsMTAzMzIyMzM1LDI0NzQw
