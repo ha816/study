@@ -265,10 +265,11 @@ static List<Integer> intArrayAsList(int[] a) {
 		@Override public int size() {
 			a.length;
 		}
-
 	};
 }
 ```
+
+List 구현체가 
 
 추상 클래스는 구현된 메서드를 포함 할 수 있다. 또한 추상 클래스가 규정하는 자료형 구현을 위해서 추상 클래스를 계승해야 한다. 
 
@@ -330,11 +331,11 @@ static List<Integer> intArrayAsList(int[] a) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MTc4NDUyNSw4NDY5NzYyNzksLTIwNz
-I5NzQwNTksODY0NjY4MTEwLDE3MTMzNjM4OSwxNzYwMDI4NTM1
-LDE5MzYxMTYxLC0xNjY5NzA5MjU5LDE3NTI5MzI5NDYsMzQ0MT
-U1OTM4LDIwOTQyMzMxNDcsMTMzODc0NTYzMCw2MTY3MTM4MzMs
-MTA3ODgyOTcyMSwtODIzNTU2MzQzLC03Mjk3NDUwLDQ5OTMwNT
-MwNywtMjEwMTY3ODIxMSw2MzU1NzM0MDgsMTQ1MDI1MDkzMF19
-
+eyJoaXN0b3J5IjpbLTE2MDY0NDE4ODksLTI1MTc4NDUyNSw4ND
+Y5NzYyNzksLTIwNzI5NzQwNTksODY0NjY4MTEwLDE3MTMzNjM4
+OSwxNzYwMDI4NTM1LDE5MzYxMTYxLC0xNjY5NzA5MjU5LDE3NT
+I5MzI5NDYsMzQ0MTU1OTM4LDIwOTQyMzMxNDcsMTMzODc0NTYz
+MCw2MTY3MTM4MzMsMTA3ODgyOTcyMSwtODIzNTU2MzQzLC03Mj
+k3NDUwLDQ5OTMwNTMwNywtMjEwMTY3ODIxMSw2MzU1NzM0MDhd
+fQ==
 -->
