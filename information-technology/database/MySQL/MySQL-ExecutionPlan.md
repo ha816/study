@@ -281,18 +281,18 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 
 1. 첫번째 라인이 <derived2>인것을 보아 이 라인 보다 id가 2번인 라인을 먼저 실행하고 그 결과가 파생 테이블로 준비되야 한다는 것을 알 수 있다. 
 2. 세번째 라인의 DERIVED를 보면, dept_emp 테이블을 읽어 파생 테이블을 생성하는 것을 알 수 있다. 
-3. 
+3. 첫번째 라인과 두번째 라인은 같은 id를 가지는 것으로 보아 2개 테이블(derived2, e)이 조인되는 쿼리라는 것을 알 수 있다. 그런데 derived2 테이블이 e 테이블 보다 먼저 왔기 때문에 derived2가 드라이빙 테이블이 되고, e는 드리븐 테이블이 된다. 즉 derive
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMT
-c5MDAyNSwxMTYyMjE1MzM4LC0xMjg0NjQyOTU4LC0xNzE0MDU4
-MTUsMzIxMDk1MzIzLDE3MTU1NjE3OTYsLTE2NTU2NjAxODAsLT
-ExMTgyODM4NDAsMjEyMDE3ODI1Niw1MjUyMDM1NjcsLTE1Mjkw
-MTUzMzIsMTIwNzk1MTQ0NywxMDMzMjIzMzUsMjQ3NDA2ODQ2LC
-0xMjQ2MDc3NDMyLC0xMzM0MjE4NTUxLDE3MTA0NjYyODksLTc1
-NDM2NDAzXX0=
+eyJoaXN0b3J5IjpbNDk3NDU1NDY0LC0zMzkwNjQ0MDcsLTc0ND
+c0Mjg1MCwyMTE3OTAwMjUsMTE2MjIxNTMzOCwtMTI4NDY0Mjk1
+OCwtMTcxNDA1ODE1LDMyMTA5NTMyMywxNzE1NTYxNzk2LC0xNj
+U1NjYwMTgwLC0xMTE4MjgzODQwLDIxMjAxNzgyNTYsNTI1MjAz
+NTY3LC0xNTI5MDE1MzMyLDEyMDc5NTE0NDcsMTAzMzIyMzM1LD
+I0NzQwNjg0NiwtMTI0NjA3NzQzMiwtMTMzNDIxODU1MSwxNzEw
+NDY2Mjg5XX0=
 -->
