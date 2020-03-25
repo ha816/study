@@ -283,17 +283,18 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 2. 세번째 라인의 DERIVED를 보면, dept_emp 테이블을 읽어 파생 테이블을 생성하는 것을 알 수 있다. 
 3. 첫번째 라인과 두번째 라인은 같은 id를 가지는 것으로 보아 2개 테이블(derived2, e)이 조인되는 쿼리라는 것을 알 수 있다. 그런데 derived2 테이블이 e 테이블 보다 먼저 왔기 때문에 derived2가 드라이빙 테이블이 되고, e는 드리븐 테이블이 된다. 즉 derived2 테이블을 먼저 읽어 e 테이블을 조인 했다는 것이다. 
 
+> MySQL은 다른 DBMS
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNjQ1MDg2MSwzNjA1NDM0NjEsLTMzOT
-A2NDQwNywtNzQ0NzQyODUwLDIxMTc5MDAyNSwxMTYyMjE1MzM4
-LC0xMjg0NjQyOTU4LC0xNzE0MDU4MTUsMzIxMDk1MzIzLDE3MT
-U1NjE3OTYsLTE2NTU2NjAxODAsLTExMTgyODM4NDAsMjEyMDE3
-ODI1Niw1MjUyMDM1NjcsLTE1MjkwMTUzMzIsMTIwNzk1MTQ0Ny
-wxMDMzMjIzMzUsMjQ3NDA2ODQ2LC0xMjQ2MDc3NDMyLC0xMzM0
-MjE4NTUxXX0=
+eyJoaXN0b3J5IjpbLTExOTk4ODc4ODcsMzYwNTQzNDYxLC0zMz
+kwNjQ0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2MjIxNTMz
+OCwtMTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMyMywxNz
+E1NTYxNzk2LC0xNjU1NjYwMTgwLC0xMTE4MjgzODQwLDIxMjAx
+NzgyNTYsNTI1MjAzNTY3LC0xNTI5MDE1MzMyLDEyMDc5NTE0ND
+csMTAzMzIyMzM1LDI0NzQwNjg0NiwtMTI0NjA3NzQzMiwtMTMz
+NDIxODU1MV19
 -->
