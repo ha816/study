@@ -283,18 +283,19 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 2. 세번째 라인의 DERIVED를 보면, dept_emp 테이블을 읽어 파생 테이블을 생성하는 것을 알 수 있다. 
 3. 첫번째 라인과 두번째 라인은 같은 id를 가지는 것으로 보아 2개 테이블(derived2, e)이 조인되는 쿼리라는 것을 알 수 있다. 그런데 derived2 테이블이 e 테이블 보다 먼저 왔기 때문에 derived2가 드라이빙 테이블이 되고, e는 드리븐 테이블이 된다. 즉 derived2 테이블을 먼저 읽어 e 테이블을 조인 했다는 것이다. 
 
-> MySQL은 다른 DBMS와 달리 FROM 절에 사용된 서브 쿼리(Derived, 파생 테이블)은 반드시 별칭을 가져야 한다. 
+> MySQL은 다른 DBMS와 달리 FROM 절에 사용된 서브 쿼리(Derived, 파생 테이블)은 반드시 별칭을 가져야 한다. 그렇지 않으면 별칭이 부여되지 않았다는 에러 메세지가 출력되고 쿼리는 실행되지 않을 것이다. 쿼리를 작성하거나 실행 계획을 확인할때는 임시 테이블의 별칭을 잊지 말고 명시해야 한다. 
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NjUzMjI4NiwzNjA1NDM0NjEsLTMzOT
-A2NDQwNywtNzQ0NzQyODUwLDIxMTc5MDAyNSwxMTYyMjE1MzM4
-LC0xMjg0NjQyOTU4LC0xNzE0MDU4MTUsMzIxMDk1MzIzLDE3MT
-U1NjE3OTYsLTE2NTU2NjAxODAsLTExMTgyODM4NDAsMjEyMDE3
-ODI1Niw1MjUyMDM1NjcsLTE1MjkwMTUzMzIsMTIwNzk1MTQ0Ny
-wxMDMzMjIzMzUsMjQ3NDA2ODQ2LC0xMjQ2MDc3NDMyLC0xMzM0
-MjE4NTUxXX0=
+eyJoaXN0b3J5IjpbOTU2NjY2MjAsMzYwNTQzNDYxLC0zMzkwNj
+Q0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2MjIxNTMzOCwt
+MTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMyMywxNzE1NT
+YxNzk2LC0xNjU1NjYwMTgwLC0xMTE4MjgzODQwLDIxMjAxNzgy
+NTYsNTI1MjAzNTY3LC0xNTI5MDE1MzMyLDEyMDc5NTE0NDcsMT
+AzMzIyMzM1LDI0NzQwNjg0NiwtMTI0NjA3NzQzMiwtMTMzNDIx
+ODU1MV19
 -->
