@@ -280,7 +280,17 @@ static List<Integer> intArrayAsList(int[] a) {
 
 ```
 // 골격 구현 클래스(skeletal implementation)
-public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,>
+public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
+
+	//변경 가능한 엔트리는 이 메서드를 반드시 재정의해야 한다.
+	@Override public V setValue(V value) {
+		throw new UnsupprtedOperationException();	
+	}
+
+	// Map.Entry.equals의 일반 ㄱ
+
+
+}
 
 ```
 
@@ -343,11 +353,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzUzMzc0MCwtMTg0ODA2MDY1LC0xNj
-cyMDU2OTk2LDk1MTcwNDE3NiwtOTczODc1NzIzLDUxNTcwOTI1
-MywxODkzNTA1MzQ4LC0zMjA5OTAwNDQsMTY2MDIwNTQyNCwtMT
-YwNjQ0MTg4OSwtMjUxNzg0NTI1LDg0Njk3NjI3OSwtMjA3Mjk3
-NDA1OSw4NjQ2NjgxMTAsMTcxMzM2Mzg5LDE3NjAwMjg1MzUsMT
-kzNjExNjEsLTE2Njk3MDkyNTksMTc1MjkzMjk0NiwzNDQxNTU5
-MzhdfQ==
+eyJoaXN0b3J5IjpbLTg1ODQxNDMxLC0xODQ4MDYwNjUsLTE2Nz
+IwNTY5OTYsOTUxNzA0MTc2LC05NzM4NzU3MjMsNTE1NzA5MjUz
+LDE4OTM1MDUzNDgsLTMyMDk5MDA0NCwxNjYwMjA1NDI0LC0xNj
+A2NDQxODg5LC0yNTE3ODQ1MjUsODQ2OTc2Mjc5LC0yMDcyOTc0
+MDU5LDg2NDY2ODExMCwxNzEzMzYzODksMTc2MDAyODUzNSwxOT
+M2MTE2MSwtMTY2OTcwOTI1OSwxNzUyOTMyOTQ2LDM0NDE1NTkz
+OF19
 -->
