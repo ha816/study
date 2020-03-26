@@ -272,9 +272,11 @@ static List<Integer> intArrayAsList(int[] a) {
 
 골격 구현 클래스를 우회적으로 이용할 수도 있다. 인터페이스를 구현한 클래스에서 해당 골격 구현을 확장한 private 내부 클래스를 정의하고, 각 메서드 호출을 내부 클래스의 인스턴스에 전달하는 것이다. 이 방법을 다중 상속(simulated multiple inheritance)라 하며, 다중 상속의 많은 장점을 제공하는 동시에 단점은 피하게 해준다. 
 
-골격 구현(skeletal implementation)의 작성은 상대적으로 쉽다. 가장 먼저, 인터페이스를 살펴 다른 메서드들의 구현에 사용되는 기반 메서드를 선정한다. **이 기반 메서드들은 골격 구현에서 추상 메서드가 될것이다.**  그 다음으로 기반 메서드들을 사용해 직접 구현할 수 있는 메서드를 모두 디폴트 메서드로 제공한다. **단 equals와 hashCode와 같은 Object의 메서드는 디폴트 메서드로 제공하면 안된다는 사실을 항상 유념하자.** 
+골격 구현(skeletal implementation)의 작성은 상대적으로 쉽다. 가장 먼저, 인터페이스를 살펴 다른 메서드들의 구현에 사용되는 기반 메서드를 선정한다. 이 기반 메서드들은 골격 구현에서 추상 메서드가 될것이다. 그 다음으로 기반 메서드들을 사용해 직접 구현할 수 있는 메서드를 모두 디폴트 메서드로 제공한다. **단 equals와 hashCode와 같은 Object의 메서드는 디폴트 메서드로 제공하면 안된다는 사실을 항상 유념하자.** 
 
-만약 인터페이스의 모든 메서드가 
+만약 인터페이스의 모든 메서드가 기반 메서드와 디폴트 메서드가 된다면 골격 구현 클래스를 별도로 만들 필요는 없다. 기반 메서드나 디폴트 메서드로 만들지 못한 메서드가 남아 있다면 인터페이스를 구현하는 골격 구현 클래스를 하나 만들어 남은 메서드들을 만들어 넣는다. 골격 구현 클래스에는 필요하면 public이 아닌 필드와 메서드를 추가해도 된다. 
+
+간단한 예롤 Map.Entry 인터페이스를 살펴보자. get
 
 
 인터페이스의 장점
@@ -335,11 +337,11 @@ static List<Integer> intArrayAsList(int[] a) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUxNzA0MTc2LC05NzM4NzU3MjMsNTE1Nz
-A5MjUzLDE4OTM1MDUzNDgsLTMyMDk5MDA0NCwxNjYwMjA1NDI0
-LC0xNjA2NDQxODg5LC0yNTE3ODQ1MjUsODQ2OTc2Mjc5LC0yMD
-cyOTc0MDU5LDg2NDY2ODExMCwxNzEzMzYzODksMTc2MDAyODUz
-NSwxOTM2MTE2MSwtMTY2OTcwOTI1OSwxNzUyOTMyOTQ2LDM0ND
-E1NTkzOCwyMDk0MjMzMTQ3LDEzMzg3NDU2MzAsNjE2NzEzODMz
+eyJoaXN0b3J5IjpbLTU1NjMwMTM4LDk1MTcwNDE3NiwtOTczOD
+c1NzIzLDUxNTcwOTI1MywxODkzNTA1MzQ4LC0zMjA5OTAwNDQs
+MTY2MDIwNTQyNCwtMTYwNjQ0MTg4OSwtMjUxNzg0NTI1LDg0Nj
+k3NjI3OSwtMjA3Mjk3NDA1OSw4NjQ2NjgxMTAsMTcxMzM2Mzg5
+LDE3NjAwMjg1MzUsMTkzNjExNjEsLTE2Njk3MDkyNTksMTc1Mj
+kzMjk0NiwzNDQxNTU5MzgsMjA5NDIzMzE0NywxMzM4NzQ1NjMw
 XX0=
 -->
