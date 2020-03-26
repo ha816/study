@@ -291,7 +291,10 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 	// Map.Entry.equals의 일반 규약을 구현한다.
 	@Override 
 	public boolean equals(Object o){
-
+		if(o == this) return true;
+		if(!(o instanceof Map.Entry)) return false;
+		Map.Entry<?,?> e = (Map.Entry) o;
+		return Objects.equals(e.getKey(), getKey()) && Objects.equals(e.ge(), getKey())
 	}
 
 
@@ -358,11 +361,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDcyMDE0MTgsLTE4NDgwNjA2NSwtMT
-Y3MjA1Njk5Niw5NTE3MDQxNzYsLTk3Mzg3NTcyMyw1MTU3MDky
-NTMsMTg5MzUwNTM0OCwtMzIwOTkwMDQ0LDE2NjAyMDU0MjQsLT
-E2MDY0NDE4ODksLTI1MTc4NDUyNSw4NDY5NzYyNzksLTIwNzI5
-NzQwNTksODY0NjY4MTEwLDE3MTMzNjM4OSwxNzYwMDI4NTM1LD
-E5MzYxMTYxLC0xNjY5NzA5MjU5LDE3NTI5MzI5NDYsMzQ0MTU1
-OTM4XX0=
+eyJoaXN0b3J5IjpbLTIwMDM5NDI5ODUsLTIwNDcyMDE0MTgsLT
+E4NDgwNjA2NSwtMTY3MjA1Njk5Niw5NTE3MDQxNzYsLTk3Mzg3
+NTcyMyw1MTU3MDkyNTMsMTg5MzUwNTM0OCwtMzIwOTkwMDQ0LD
+E2NjAyMDU0MjQsLTE2MDY0NDE4ODksLTI1MTc4NDUyNSw4NDY5
+NzYyNzksLTIwNzI5NzQwNTksODY0NjY4MTEwLDE3MTMzNjM4OS
+wxNzYwMDI4NTM1LDE5MzYxMTYxLC0xNjY5NzA5MjU5LDE3NTI5
+MzI5NDZdfQ==
 -->
