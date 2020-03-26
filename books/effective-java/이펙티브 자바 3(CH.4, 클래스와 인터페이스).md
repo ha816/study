@@ -294,7 +294,7 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 		if(o == this) return true;
 		if(!(o instanceof Map.Entry)) return false;
 		Map.Entry<?,?> e = (Map.Entry) o;
-		return Objects.equals(e.getKey(), getKey()) && Objects.equals(e.ge(), getKey())
+		return Objects.equals(e.getKey(), getKey()) && Objects.equals(e.getValue(), getValue())
 	}
 
 
@@ -361,11 +361,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDM5NDI5ODUsLTIwNDcyMDE0MTgsLT
-E4NDgwNjA2NSwtMTY3MjA1Njk5Niw5NTE3MDQxNzYsLTk3Mzg3
-NTcyMyw1MTU3MDkyNTMsMTg5MzUwNTM0OCwtMzIwOTkwMDQ0LD
-E2NjAyMDU0MjQsLTE2MDY0NDE4ODksLTI1MTc4NDUyNSw4NDY5
-NzYyNzksLTIwNzI5NzQwNTksODY0NjY4MTEwLDE3MTMzNjM4OS
-wxNzYwMDI4NTM1LDE5MzYxMTYxLC0xNjY5NzA5MjU5LDE3NTI5
-MzI5NDZdfQ==
+eyJoaXN0b3J5IjpbNzI4MzE1MjQwLC0yMDQ3MjAxNDE4LC0xOD
+Q4MDYwNjUsLTE2NzIwNTY5OTYsOTUxNzA0MTc2LC05NzM4NzU3
+MjMsNTE1NzA5MjUzLDE4OTM1MDUzNDgsLTMyMDk5MDA0NCwxNj
+YwMjA1NDI0LC0xNjA2NDQxODg5LC0yNTE3ODQ1MjUsODQ2OTc2
+Mjc5LC0yMDcyOTc0MDU5LDg2NDY2ODExMCwxNzEzMzYzODksMT
+c2MDAyODUzNSwxOTM2MTE2MSwtMTY2OTcwOTI1OSwxNzUyOTMy
+OTQ2XX0=
 -->
