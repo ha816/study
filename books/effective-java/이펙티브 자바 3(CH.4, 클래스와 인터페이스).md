@@ -283,11 +283,16 @@ static List<Integer> intArrayAsList(int[] a) {
 public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 	//변경 가능한 엔트리는 이 메서드를 반드시 재정의해야 한다.
-	@Override public V setValue(V value) {
+	@Override 
+	public V setValue(V value) {
 		throw new UnsupprtedOperationException();	
 	}
 
-	// Map.Entry.equals의 일반 ㄱ
+	// Map.Entry.equals의 일반 규약을 구현한다.
+	@Override 
+	public boolean equals(Object o){
+
+	}
 
 
 }
@@ -353,11 +358,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1ODQxNDMxLC0xODQ4MDYwNjUsLTE2Nz
-IwNTY5OTYsOTUxNzA0MTc2LC05NzM4NzU3MjMsNTE1NzA5MjUz
-LDE4OTM1MDUzNDgsLTMyMDk5MDA0NCwxNjYwMjA1NDI0LC0xNj
-A2NDQxODg5LC0yNTE3ODQ1MjUsODQ2OTc2Mjc5LC0yMDcyOTc0
-MDU5LDg2NDY2ODExMCwxNzEzMzYzODksMTc2MDAyODUzNSwxOT
-M2MTE2MSwtMTY2OTcwOTI1OSwxNzUyOTMyOTQ2LDM0NDE1NTkz
-OF19
+eyJoaXN0b3J5IjpbLTIwNDcyMDE0MTgsLTE4NDgwNjA2NSwtMT
+Y3MjA1Njk5Niw5NTE3MDQxNzYsLTk3Mzg3NTcyMyw1MTU3MDky
+NTMsMTg5MzUwNTM0OCwtMzIwOTkwMDQ0LDE2NjAyMDU0MjQsLT
+E2MDY0NDE4ODksLTI1MTc4NDUyNSw4NDY5NzYyNzksLTIwNzI5
+NzQwNTksODY0NjY4MTEwLDE3MTMzNjM4OSwxNzYwMDI4NTM1LD
+E5MzYxMTYxLC0xNjY5NzA5MjU5LDE3NTI5MzI5NDYsMzQ0MTU1
+OTM4XX0=
 -->
