@@ -280,6 +280,7 @@ static List<Integer> intArrayAsList(int[] a) {
 
 ```
 // 골격 구현 클래스(skeletal implementation)
+public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,>
 
 ```
 
@@ -342,11 +343,11 @@ static List<Integer> intArrayAsList(int[] a) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDgwNjA2NSwtMTY3MjA1Njk5Niw5NT
-E3MDQxNzYsLTk3Mzg3NTcyMyw1MTU3MDkyNTMsMTg5MzUwNTM0
-OCwtMzIwOTkwMDQ0LDE2NjAyMDU0MjQsLTE2MDY0NDE4ODksLT
-I1MTc4NDUyNSw4NDY5NzYyNzksLTIwNzI5NzQwNTksODY0NjY4
-MTEwLDE3MTMzNjM4OSwxNzYwMDI4NTM1LDE5MzYxMTYxLC0xNj
-Y5NzA5MjU5LDE3NTI5MzI5NDYsMzQ0MTU1OTM4LDIwOTQyMzMx
-NDddfQ==
+eyJoaXN0b3J5IjpbLTk2MzUzMzc0MCwtMTg0ODA2MDY1LC0xNj
+cyMDU2OTk2LDk1MTcwNDE3NiwtOTczODc1NzIzLDUxNTcwOTI1
+MywxODkzNTA1MzQ4LC0zMjA5OTAwNDQsMTY2MDIwNTQyNCwtMT
+YwNjQ0MTg4OSwtMjUxNzg0NTI1LDg0Njk3NjI3OSwtMjA3Mjk3
+NDA1OSw4NjQ2NjgxMTAsMTcxMzM2Mzg5LDE3NjAwMjg1MzUsMT
+kzNjExNjEsLTE2Njk3MDkyNTksMTc1MjkzMjk0NiwzNDQxNTU5
+MzhdfQ==
 -->
