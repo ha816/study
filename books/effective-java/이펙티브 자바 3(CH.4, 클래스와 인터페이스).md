@@ -276,7 +276,12 @@ static List<Integer> intArrayAsList(int[] a) {
 
 만약 인터페이스의 모든 메서드가 기반 메서드와 디폴트 메서드가 된다면 골격 구현 클래스를 별도로 만들 필요는 없다. 기반 메서드나 디폴트 메서드로 만들지 못한 메서드가 남아 있다면 인터페이스를 구현하는 골격 구현 클래스를 하나 만들어 남은 메서드들을 만들어 넣는다. 골격 구현 클래스에는 필요하면 public이 아닌 필드와 메서드를 추가해도 된다. 
 
-간단한 예롤 Map.Entry 인터페이스를 살펴보자. getKey, getValue는 확실히 기반 메서드이며, 선택적으로 setValue도 포함할 수 있다. 이 인터페이스는 
+간단한 예롤 Map.Entry 인터페이스를 살펴보자. getKey, getValue는 확실히 기반 메서드이며, 선택적으로 setValue도 포함할 수 있다. 이 인터페이스는 equals와 hashCode의 동작 방식도 정의해놨다. Object 메서드들은 디폴트 메서드로 제공해서는 안되므로, 해당 메서드들은 모두 골격 구현 클래스에 구현한다. toString도 기반 메서드를 사용해 구현해놨다. 
+
+```
+// 골격 구현 클래스(skeletal implementation)
+
+```
 
 
 인터페이스의 장점
@@ -337,11 +342,11 @@ static List<Integer> intArrayAsList(int[] a) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzIwNTY5OTYsOTUxNzA0MTc2LC05Nz
-M4NzU3MjMsNTE1NzA5MjUzLDE4OTM1MDUzNDgsLTMyMDk5MDA0
-NCwxNjYwMjA1NDI0LC0xNjA2NDQxODg5LC0yNTE3ODQ1MjUsOD
-Q2OTc2Mjc5LC0yMDcyOTc0MDU5LDg2NDY2ODExMCwxNzEzMzYz
-ODksMTc2MDAyODUzNSwxOTM2MTE2MSwtMTY2OTcwOTI1OSwxNz
-UyOTMyOTQ2LDM0NDE1NTkzOCwyMDk0MjMzMTQ3LDEzMzg3NDU2
-MzBdfQ==
+eyJoaXN0b3J5IjpbLTE4NDgwNjA2NSwtMTY3MjA1Njk5Niw5NT
+E3MDQxNzYsLTk3Mzg3NTcyMyw1MTU3MDkyNTMsMTg5MzUwNTM0
+OCwtMzIwOTkwMDQ0LDE2NjAyMDU0MjQsLTE2MDY0NDE4ODksLT
+I1MTc4NDUyNSw4NDY5NzYyNzksLTIwNzI5NzQwNTksODY0NjY4
+MTEwLDE3MTMzNjM4OSwxNzYwMDI4NTM1LDE5MzYxMTYxLC0xNj
+Y5NzA5MjU5LDE3NTI5MzI5NDYsMzQ0MTU1OTM4LDIwOTQyMzMx
+NDddfQ==
 -->
