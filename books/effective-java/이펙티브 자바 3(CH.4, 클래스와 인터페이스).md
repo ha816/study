@@ -316,7 +316,7 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 단순 구현(simple implementation)은 골격 구현의 작은 변종으로, AbstractMap.SimpleEntry가 좋은 예다. 단순 구현도 골격 구현과 같이 상속을 위해 인터페이스를 구현한 것이지만, 추상 클래스가 아니란 점이 다르다. 쉽게 말해 동작하는 가장 단순한 구현이다. 이런 단순 구현은 그대로 써도 되고 확장해도 된다.
 
 >핵심정리
->
+>일반적으로 다중 구현용 타입으로는 인터페이스가 가장 적합하다.
 
 ### 19. 인터페이스는 자료형을 정의할 때만 사용하라
 
@@ -363,11 +363,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzU0MzkzOTUsLTEyOTUzNTU5ODksLT
-EzNjU3OTg5NDcsMTA3MjM5Mjk4MiwtMjA0NzIwMTQxOCwtMTg0
-ODA2MDY1LC0xNjcyMDU2OTk2LDk1MTcwNDE3NiwtOTczODc1Nz
-IzLDUxNTcwOTI1MywxODkzNTA1MzQ4LC0zMjA5OTAwNDQsMTY2
-MDIwNTQyNCwtMTYwNjQ0MTg4OSwtMjUxNzg0NTI1LDg0Njk3Nj
-I3OSwtMjA3Mjk3NDA1OSw4NjQ2NjgxMTAsMTcxMzM2Mzg5LDE3
-NjAwMjg1MzVdfQ==
+eyJoaXN0b3J5IjpbODAxNDY1MDMwLC0xMjk1MzU1OTg5LC0xMz
+Y1Nzk4OTQ3LDEwNzIzOTI5ODIsLTIwNDcyMDE0MTgsLTE4NDgw
+NjA2NSwtMTY3MjA1Njk5Niw5NTE3MDQxNzYsLTk3Mzg3NTcyMy
+w1MTU3MDkyNTMsMTg5MzUwNTM0OCwtMzIwOTkwMDQ0LDE2NjAy
+MDU0MjQsLTE2MDY0NDE4ODksLTI1MTc4NDUyNSw4NDY5NzYyNz
+ksLTIwNzI5NzQwNTksODY0NjY4MTEwLDE3MTMzNjM4OSwxNzYw
+MDI4NTM1XX0=
 -->
