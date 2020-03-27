@@ -318,9 +318,9 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 ## Item.21 인터페이스는 구현하는 쪽을 생각해 설계하라.
 
-자바 8 전에는 기존 구현체를 파괴하지 않으면서 인터페이스에 메서드를 추가할 방법이 없었다. 인터페이스에 메서드를 추가하면 보통은 컴파일 오류가 나는데, 추가된 메서드가 우연히 기존 구현체에 이미 존재할 가능성은 아주 낮기 때문이다. 
+자바 8 전에는 기존 구현체를 파괴하지 않으면서 인터페이스에 메서드를 추가할 방법이 없었다. 인터페이스에 메서드를 추가하면 보통은 컴파일 오류가 나는데, 추가된 메서드가 우연히 기존 구현체에 이미 존재할 가능성은 아주 낮기 때문이다. 자바 8에 와서 기존 인터페이스에 메서드를 추가할 수 있도록 디폴트 메서드를 마들었지만 위험이 완전히 사라진 것은 아니다. 
 
-
+디폴트 메서드를 선언하면, 그 인터페이스를 구현한 후 디폴트 메서드를 재정의하지 않은 모든 클래스에서 디폴트 구현이 쓰이게 된다. 
 
 
 ### 20. 태그 달린 클래스 대신 클래스 계층을 활용하라.
@@ -362,11 +362,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcyODU5NzI2LC0zNjU5ODM3MzUsLTEyOT
-UzNTU5ODksLTEzNjU3OTg5NDcsMTA3MjM5Mjk4MiwtMjA0NzIw
-MTQxOCwtMTg0ODA2MDY1LC0xNjcyMDU2OTk2LDk1MTcwNDE3Ni
-wtOTczODc1NzIzLDUxNTcwOTI1MywxODkzNTA1MzQ4LC0zMjA5
-OTAwNDQsMTY2MDIwNTQyNCwtMTYwNjQ0MTg4OSwtMjUxNzg0NT
-I1LDg0Njk3NjI3OSwtMjA3Mjk3NDA1OSw4NjQ2NjgxMTAsMTcx
-MzM2Mzg5XX0=
+eyJoaXN0b3J5IjpbLTY1NDA5ODA3MywzNzI4NTk3MjYsLTM2NT
+k4MzczNSwtMTI5NTM1NTk4OSwtMTM2NTc5ODk0NywxMDcyMzky
+OTgyLC0yMDQ3MjAxNDE4LC0xODQ4MDYwNjUsLTE2NzIwNTY5OT
+YsOTUxNzA0MTc2LC05NzM4NzU3MjMsNTE1NzA5MjUzLDE4OTM1
+MDUzNDgsLTMyMDk5MDA0NCwxNjYwMjA1NDI0LC0xNjA2NDQxOD
+g5LC0yNTE3ODQ1MjUsODQ2OTc2Mjc5LC0yMDcyOTc0MDU5LDg2
+NDY2ODExMF19
 -->
