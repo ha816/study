@@ -309,7 +309,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Map.Entry 인터페이스나 그 하위 인터페이스는 이 골격 구현을 제공할 수 없다. 디폴트 메서드는 equals, hashCode, toString과 같은 Object메서드를 재정의할 수 없기 때문이다. 
 
-골격 구현은 기본적으로 상속해서 사용하는걸 가정하므로 Item.19에서 이야기한 설계 및 문서화 지침을 모두 따라야 한다. 
+**골격 구현은 기본적으로 상속해서 사용하는걸 가정**하므로 Item.19에서 이야기한 설계 및 문서화 지침을 모두 따라야 한다. **인터페이스에 정의한 디폴트 메서드든 별도의 추상 클래스든, 골격 구현은 반드시 그 동작 방식을 잘 정리해 문서로 남겨두어야 한다.** 
+
+#### 단순 구현(simple implementation)
+
+단순 구현(simple implementation)은 골격 구현의 작은 변종으로, AbstractMap.SimpleEntry가 좋은 예이
 
 인터페이스의 장점
 이미 있는 클래스를 개조해서 새로운 인터페이스를 구현하기가 간단. -> implements로 구현
@@ -369,11 +373,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjEyODYwMzUsMTA3MjM5Mjk4MiwtMj
-A0NzIwMTQxOCwtMTg0ODA2MDY1LC0xNjcyMDU2OTk2LDk1MTcw
-NDE3NiwtOTczODc1NzIzLDUxNTcwOTI1MywxODkzNTA1MzQ4LC
-0zMjA5OTAwNDQsMTY2MDIwNTQyNCwtMTYwNjQ0MTg4OSwtMjUx
-Nzg0NTI1LDg0Njk3NjI3OSwtMjA3Mjk3NDA1OSw4NjQ2NjgxMT
-AsMTcxMzM2Mzg5LDE3NjAwMjg1MzUsMTkzNjExNjEsLTE2Njk3
-MDkyNTldfQ==
+eyJoaXN0b3J5IjpbODM1ODAwNzAxLDEwNzIzOTI5ODIsLTIwND
+cyMDE0MTgsLTE4NDgwNjA2NSwtMTY3MjA1Njk5Niw5NTE3MDQx
+NzYsLTk3Mzg3NTcyMyw1MTU3MDkyNTMsMTg5MzUwNTM0OCwtMz
+IwOTkwMDQ0LDE2NjAyMDU0MjQsLTE2MDY0NDE4ODksLTI1MTc4
+NDUyNSw4NDY5NzYyNzksLTIwNzI5NzQwNTksODY0NjY4MTEwLD
+E3MTMzNjM4OSwxNzYwMDI4NTM1LDE5MzYxMTYxLC0xNjY5NzA5
+MjU5XX0=
 -->
