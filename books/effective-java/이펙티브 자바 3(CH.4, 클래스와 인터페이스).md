@@ -276,7 +276,7 @@ static List<Integer> intArrayAsList(int[] a) {
 
 만약 인터페이스의 모든 메서드가 기반 메서드와 디폴트 메서드가 된다면 골격 구현 클래스를 별도로 만들 필요는 없다. 기반 메서드나 디폴트 메서드로 만들지 못한 메서드가 남아 있다면 인터페이스를 구현하는 골격 구현 클래스를 하나 만들어 남은 메서드들을 만들어 넣는다. 골격 구현 클래스에는 필요하면 public이 아닌 필드와 메서드를 추가해도 된다. 
 
-간단한 예롤 Map.Entry 인터페이스를 살펴보자. getKey, getValue는 확실히 기반 메서드이며, 선택적으로 setValue도 포함할 수 있다. 이 인터페이스는 equals와 hashCode의 동작 방식도 정의해놨다. Object 메서드들은 디폴트 메서드로 제공해서는 안되므로, 해당 메서드들은 모두 골격 구현 클래스에 구현한다. toString도 기반 메서드를 사용해 구현해놨다. 
+간단한 예로 Map.Entry 인터페이스를 살펴보자. getKey, getValue는 확실히 기반 메서드이며, 선택적으로 setValue도 포함할 수 있다. 이 인터페이스는 equals와 hashCode의 동작 방식도 정의해놨다. Object 메서드들은 디폴트 메서드로 제공해서는 안되므로, 해당 메서드들은 모두 골격 구현 클래스에 구현한다. toString도 기반 메서드를 사용해 구현해놨다. 
 
 ```
 // 골격 구현 클래스(skeletal implementation)
@@ -318,11 +318,7 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 >핵심정리
 >일반적으로 다중 구현용 타입으로는 인터페이스가 가장 적합하다. 복잡한 인터페이스라면 구현하는 수고를 덜어주는 골격 구현을 함께 제공하는 것을 꼭 고려해보자. 골격 구현은 '가능한 한' 인터페이스의 디폴트 메서드로 제공하여 그 인터페이스를 구현한 모든 곳에서 활용하도록 하는 것이 좋다. '가능한 한'이라고 한 이유는, 인터페이스에 걸려있는 구현상의 제약 때문에 골격 구현을 추상 클래스로 제공하는 경우가 더 흔하기 때문이다. 
 
-### 19. 인터페이스는 자료형을 정의할 때만 사용하라
-
- - 인터페이스는 골격, 즉 기능을 정의할때만 사용해라. 
- - 상수 인터페이스 패턴은 인터페이스를 잘못 사용하는 것이다.
- - 상수는 ENUM 으로 빼도록 하자
+### Item.21 인터페이스는 구현하는 쪽을 생각해 설계하라.
 
 ### 20. 태그 달린 클래스 대신 클래스 계층을 활용하라.
 
@@ -363,11 +359,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjQ3OTMxNDEsLTEyOTUzNTU5ODksLT
-EzNjU3OTg5NDcsMTA3MjM5Mjk4MiwtMjA0NzIwMTQxOCwtMTg0
-ODA2MDY1LC0xNjcyMDU2OTk2LDk1MTcwNDE3NiwtOTczODc1Nz
-IzLDUxNTcwOTI1MywxODkzNTA1MzQ4LC0zMjA5OTAwNDQsMTY2
-MDIwNTQyNCwtMTYwNjQ0MTg4OSwtMjUxNzg0NTI1LDg0Njk3Nj
-I3OSwtMjA3Mjk3NDA1OSw4NjQ2NjgxMTAsMTcxMzM2Mzg5LDE3
-NjAwMjg1MzVdfQ==
+eyJoaXN0b3J5IjpbLTQzMDg1NTA2NiwtMTI5NTM1NTk4OSwtMT
+M2NTc5ODk0NywxMDcyMzkyOTgyLC0yMDQ3MjAxNDE4LC0xODQ4
+MDYwNjUsLTE2NzIwNTY5OTYsOTUxNzA0MTc2LC05NzM4NzU3Mj
+MsNTE1NzA5MjUzLDE4OTM1MDUzNDgsLTMyMDk5MDA0NCwxNjYw
+MjA1NDI0LC0xNjA2NDQxODg5LC0yNTE3ODQ1MjUsODQ2OTc2Mj
+c5LC0yMDcyOTc0MDU5LDg2NDY2ODExMCwxNzEzMzYzODksMTc2
+MDAyODUzNV19
 -->
