@@ -287,7 +287,6 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 	public V setValue(V value) {
 		throw new UnsupprtedOperationException();	
 	}
-
 	// Map.Entry.equals의 일반 규약을 구현한다.
 	@Override 
 	public boolean equals(Object o){
@@ -296,15 +295,16 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 		Map.Entry<?,?> e = (Map.Entry) o;
 		return Objects.equals(e.getKey(), getKey()) && Objects.equals(e.getValue(), getValue())
 	}
-
 	// Map.Entry.hashCode의 일반 규약을 구현한다.
 	@Override 
-	public int equals(Object o){
-		if(o == this) return true;
-		if(!(o instanceof Map.Entry)) return false;
-		Map.Entry<?,?> e = (Map.Entry) o;
-		return Objects.equals(e.getKey(), getKey()) && Objects.equals(e.getValue(), getValue())
+	public int hashCode(){
+		return Objects.hashCode(getKey()) ^ Objects.hashCode(getValue());
 	}
+	@Override 
+	public String toString(){
+		return getKey() + 
+	}
+
 
 
 
@@ -371,7 +371,7 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NTMzMjEzNCwxMDcyMzkyOTgyLC0yMD
+eyJoaXN0b3J5IjpbMTQzNTYwNDI0OSwxMDcyMzkyOTgyLC0yMD
 Q3MjAxNDE4LC0xODQ4MDYwNjUsLTE2NzIwNTY5OTYsOTUxNzA0
 MTc2LC05NzM4NzU3MjMsNTE1NzA5MjUzLDE4OTM1MDUzNDgsLT
 MyMDk5MDA0NCwxNjYwMjA1NDI0LC0xNjA2NDQxODg5LC0yNTE3
