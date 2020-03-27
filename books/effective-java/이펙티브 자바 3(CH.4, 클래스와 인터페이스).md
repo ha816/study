@@ -297,6 +297,15 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 		return Objects.equals(e.getKey(), getKey()) && Objects.equals(e.getValue(), getValue())
 	}
 
+	// Map.Entry.hashCode의 일반 규약을 구현한다.
+	@Override 
+	public int equals(Object o){
+		if(o == this) return true;
+		if(!(o instanceof Map.Entry)) return false;
+		Map.Entry<?,?> e = (Map.Entry) o;
+		return Objects.equals(e.getKey(), getKey()) && Objects.equals(e.getValue(), getValue())
+	}
+
 
 
 }
@@ -362,11 +371,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MjM5Mjk4MiwtMjA0NzIwMTQxOCwtMT
-g0ODA2MDY1LC0xNjcyMDU2OTk2LDk1MTcwNDE3NiwtOTczODc1
-NzIzLDUxNTcwOTI1MywxODkzNTA1MzQ4LC0zMjA5OTAwNDQsMT
-Y2MDIwNTQyNCwtMTYwNjQ0MTg4OSwtMjUxNzg0NTI1LDg0Njk3
-NjI3OSwtMjA3Mjk3NDA1OSw4NjQ2NjgxMTAsMTcxMzM2Mzg5LD
-E3NjAwMjg1MzUsMTkzNjExNjEsLTE2Njk3MDkyNTksMTc1Mjkz
-Mjk0Nl19
+eyJoaXN0b3J5IjpbLTY2NTMzMjEzNCwxMDcyMzkyOTgyLC0yMD
+Q3MjAxNDE4LC0xODQ4MDYwNjUsLTE2NzIwNTY5OTYsOTUxNzA0
+MTc2LC05NzM4NzU3MjMsNTE1NzA5MjUzLDE4OTM1MDUzNDgsLT
+MyMDk5MDA0NCwxNjYwMjA1NDI0LC0xNjA2NDQxODg5LC0yNTE3
+ODQ1MjUsODQ2OTc2Mjc5LC0yMDcyOTc0MDU5LDg2NDY2ODExMC
+wxNzEzMzYzODksMTc2MDAyODUzNSwxOTM2MTE2MSwtMTY2OTcw
+OTI1OV19
 -->
