@@ -313,7 +313,7 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 #### 단순 구현(simple implementation)
 
-단순 구현(simple implementation)은 골격 구현의 작은 변종으로, AbstractMap.SimpleEntry가 좋은 예이
+단순 구현(simple implementation)은 골격 구현의 작은 변종으로, AbstractMap.SimpleEntry가 좋은 예다. 
 
 인터페이스의 장점
 이미 있는 클래스를 개조해서 새로운 인터페이스를 구현하기가 간단. -> implements로 구현
@@ -373,7 +373,7 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM1ODAwNzAxLDEwNzIzOTI5ODIsLTIwND
+eyJoaXN0b3J5IjpbNTQ4ODM0NTg3LDEwNzIzOTI5ODIsLTIwND
 cyMDE0MTgsLTE4NDgwNjA2NSwtMTY3MjA1Njk5Niw5NTE3MDQx
 NzYsLTk3Mzg3NTcyMyw1MTU3MDkyNTMsMTg5MzUwNTM0OCwtMz
 IwOTkwMDQ0LDE2NjAyMDU0MjQsLTE2MDY0NDE4ODksLTI1MTc4
