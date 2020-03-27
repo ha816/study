@@ -1,6 +1,6 @@
 # 클래스와 인터페이스
 
-## Item153. 클래스와 멤버의 접근 권한은 최소화하라
+## Item15. 클래스와 멤버의 접근 권한은 최소화하라
 
 어설프게 설계된 컴포넌트와 잘 설계된 컴포넌트의 가장 큰 차이는 바로 클래스 내부 데이터와 내부 구현 정보를 외부 컴포넌트로 부터 얼마나 잘 숨겼느냐이다. 정보은닉 (information hiding), 혹은 캡슐화(capsulation)으로 불리는 이 개념은 소프트웨어 설계의 근간이 되는 원리다. 
 
@@ -42,7 +42,7 @@ private의 일반적인 오해는 private으로 선언한 변수는 해당 인�
 >핵심정리
 >프로그램 요소의 접근성은 가능한 최소로 하자.(접근 제한이 최대한 강하게) 꼭 필요한 것만 골라 최소한의 public API를 설계하자. 그 외에는 클래스, 인터페이스, 멤버가 의도치 않게 API로 공개되는 일이 없도록 해야 한다. public 클래스는 상수용 public static finall 필드외에는 어떠한 public 필드도 가져선 안된다. public static final 필드가 참조하는 객체가 불변인지 확인하라. 
 
-### Item164. public 클래스에서는 public 필드 지  접근자 메서드를 사용
+## Item16. public 클래스에서는 public 필드 지  접근자 메서드를 사용
 
  private 필드와 public 접근자 메서드(getter, setter)를 사용하자. 패키지 바깥에서 접근할때 사용하려는 클래스의 접근자를 사용하여도록 하자. (예를 들면, getter) 그러면 사용되는 클래스 내부 표현 방식을 언제든 바꿀 수 있게 된다. 반면에 public 클래스의 데이터 필드를 공게하게 되면,  직접 사용해서 가공하는 다수의 클라이언트가 생겨날 것이므로, 내부 표현 방식을 변경할 수가 없다. 
 
@@ -55,7 +55,7 @@ public 클래스의 필드가 만약 불변이라도 결코 좋은 생각이 아
 >핵심정리
 >public 클래스는 절대 가변 필드를 직접 노출해서는 안된다. 불변 필드라면 노출해도 덜 위험하지만 완전히 안심할 수 없다. 하지만 package-private 클래스나 private 중첩 클래스에서는 종종 (불변이든 가변이든) 필드를 노출하는 편이 나을때도 있다. 
 
-## Item175. 변경 가능성을 최소화 하라
+## Item17. 변경 가능성을 최소화 하라
 
 불변 (immutable)란 간단히 말해 그 인스턴스의 내부 값을 수정할 수 없는 클래스이다. 불변 인스턴스는 가지는 정보가 고정되어 객체가 파괴되는 순간까지 절대 변하지 않는다. 자바 플랫폼 라이브러리에는 다양한 불변클래스가 있다. String, 기본 타입의 박싱 클래스, BigInter, BigDecimal등이 있다. 이렇게 불변으로 클래스가 설계된 이유는 가변 클래스보다 설계하고 구현하고 사용하기 쉬우며, 오류가 생길 여지도 적고 훨씬 안전하다.
 
@@ -224,7 +224,7 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 >핵심 정리
 >상속용 클래스를 설계하기란 결코 만만치 않다. 클래스 내부에서 스스로 어떻게 사용하는지(자기사용 패턴) 모두 문서로 남겨야 하며, 일단 문서화 한것은 그 클래스가 쓰이는 한 반드시 지켜져야 한다. 그렇지 않으면 내부 구현방식을 믿고 활용하던 하위 클래스가 오동작하게 될 수 있다. 다른 개발자가 효율적인 하위 클래스를 만들 수 있도록 일부 메서드를 protected로 제공해야 할 수도 있다. 그러니 클래스를 확장해야 할 명확한 이유가 떠오르지 않는다면 상속을 금지하는 편이 낫다. 상속을 금지하는데는 final이나 생성자 모두를 외부에서 접근할 수 없도록 하자. 
 
-### Item.20 추상 클래스보다는 인터페이스를 우선하라
+## Item.20 추상 클래스보다는 인터페이스를 우선하라
 
 자바가 제공하는 다중 구현 메커니즘은 인터페이스와 추상 클래스 두 가지이다. 자바 8부터는 인터페이스도 디폴트 메서드(default method)를 제공할 수 있게 되어 이제 인터페이스와 추상 클래스 모두 인스턴스 메서드를 구현 형태로 제공할 수 있다. 
 
@@ -318,6 +318,9 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 ### Item.21 인터페이스는 구현하는 쪽을 생각해 설계하라.
 
+자바 8
+
+
 ### 20. 태그 달린 클래스 대신 클래스 계층을 활용하라.
 
 태그가 달린 클래스란? 
@@ -357,11 +360,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NTk4MzczNSwtMTI5NTM1NTk4OSwtMT
-M2NTc5ODk0NywxMDcyMzkyOTgyLC0yMDQ3MjAxNDE4LC0xODQ4
-MDYwNjUsLTE2NzIwNTY5OTYsOTUxNzA0MTc2LC05NzM4NzU3Mj
-MsNTE1NzA5MjUzLDE4OTM1MDUzNDgsLTMyMDk5MDA0NCwxNjYw
-MjA1NDI0LC0xNjA2NDQxODg5LC0yNTE3ODQ1MjUsODQ2OTc2Mj
-c5LC0yMDcyOTc0MDU5LDg2NDY2ODExMCwxNzEzMzYzODksMTc2
-MDAyODUzNV19
+eyJoaXN0b3J5IjpbLTgzMTQ4MDgxMywtMzY1OTgzNzM1LC0xMj
+k1MzU1OTg5LC0xMzY1Nzk4OTQ3LDEwNzIzOTI5ODIsLTIwNDcy
+MDE0MTgsLTE4NDgwNjA2NSwtMTY3MjA1Njk5Niw5NTE3MDQxNz
+YsLTk3Mzg3NTcyMyw1MTU3MDkyNTMsMTg5MzUwNTM0OCwtMzIw
+OTkwMDQ0LDE2NjAyMDU0MjQsLTE2MDY0NDE4ODksLTI1MTc4ND
+UyNSw4NDY5NzYyNzksLTIwNzI5NzQwNTksODY0NjY4MTEwLDE3
+MTMzNjM4OV19
 -->
