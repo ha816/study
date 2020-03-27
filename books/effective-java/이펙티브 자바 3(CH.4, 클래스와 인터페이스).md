@@ -240,7 +240,6 @@ clone과 readObject메서드는 생성자와 비슷한 효과를 낸다. 따라�
 래퍼(데코레이터) 클래스와 함게 사용하면 인터페이스는 기능을 향상 시키는 안전하고 강력한 수단이 된다. 타입을 추상 클래스로 정의해두면 그 타입에 기능을 추가하는 방법은 상속뿐이다. 상속해서 만든 클래스는 래퍼 클래스보다 활용도가 떨어지고 깨지기는 쉽다. 
 
 #### 디폴트 메서드(default method)
-
 인터페이스의 메서드 중 구현 방법이 명백한 것이 있다면, 그 구현을 디폴트 메서드로 제공해 개발자의 일감을 덜어줄 수 있다. 대표적인 예로는 removeIf 메서드를 보자. 디폴트 메서드를 제공할때는 상속하려는 사람을 위한 설명을 @implSpec 자바 독을 붙여 문서화를 해야 한다. 그러나 디폴트 메서드에도 제약은 있다. 인터페이스는 인스턴스 필드를 가질 수 없고 public이 아닌 정적 멤버도 가질 수 없다. 그리고 여러분이 만들지 않은 인터페이스에는 디폴트 메서드를 추가할 수 없다. 
 
 #### 추상 골격 구현(skeletal implementation) 클래스
@@ -358,7 +357,7 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzODI2NjUzMywtMTI5NTM1NTk4OSwtMT
+eyJoaXN0b3J5IjpbLTM2NTk4MzczNSwtMTI5NTM1NTk4OSwtMT
 M2NTc5ODk0NywxMDcyMzkyOTgyLC0yMDQ3MjAxNDE4LC0xODQ4
 MDYwNjUsLTE2NzIwNTY5OTYsOTUxNzA0MTc2LC05NzM4NzU3Mj
 MsNTE1NzA5MjUzLDE4OTM1MDUzNDgsLTMyMDk5MDA0NCwxNjYw
