@@ -315,18 +315,8 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 단순 구현(simple implementation)은 골격 구현의 작은 변종으로, AbstractMap.SimpleEntry가 좋은 예다. 단순 구현도 골격 구현과 같이 상속을 위해 인터페이스를 구현한 것이지만, 추상 클래스가 아니란 점이 다르다. 쉽게 말해 동작하는 가장 단순한 구현이다. 이런 단순 구현은 그대로 써도 되고 확장해도 된다.
 
-인터페이스의 장점
-이미 있는 클래스를 개조해서 새로운 인터페이스를 구현하기가 간단. -> implements로 구현
-인터페이스는 믹스인을 정의하는데 이상적
--> 클래스가 주자료형 이외에 추가로 구현 자료형 가능한 자료형
-
-비 계층적인 자료형 프레임워크를 만들수 있다. 
--> 꼭 자료형 계층으로 맞지 않는 것도 있다. 
-
-포장 클래스 숙어(wrapper class idiom)를 통해 안전하면서 강력한 기능 개선 가능
--> 인터페이스 안에는 메서드 구현을 둘수 없지만, 추상 골격 구현 클래스(abstract skeletal implementation)를 중요 인터페이스마다 두면 인터페이스의 장점과 추상클래스의 장점을 얻을 수 있다. 인터페이스로는 자료형을 정의하고, 구현하는일은 골격 클래스가 한다. 
--> 관습적으로 이런 골격 클래스는 abstractInterface로 명명한다. 
--> HashSet은 abstractSet을 계승해서 쓰고 있다.
+>핵심정리
+>
 
 ### 19. 인터페이스는 자료형을 정의할 때만 사용하라
 
@@ -373,11 +363,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTUzNTU5ODksLTEzNjU3OTg5NDcsMT
-A3MjM5Mjk4MiwtMjA0NzIwMTQxOCwtMTg0ODA2MDY1LC0xNjcy
-MDU2OTk2LDk1MTcwNDE3NiwtOTczODc1NzIzLDUxNTcwOTI1My
-wxODkzNTA1MzQ4LC0zMjA5OTAwNDQsMTY2MDIwNTQyNCwtMTYw
-NjQ0MTg4OSwtMjUxNzg0NTI1LDg0Njk3NjI3OSwtMjA3Mjk3ND
-A1OSw4NjQ2NjgxMTAsMTcxMzM2Mzg5LDE3NjAwMjg1MzUsMTkz
-NjExNjFdfQ==
+eyJoaXN0b3J5IjpbLTEyMzU0MzkzOTUsLTEyOTUzNTU5ODksLT
+EzNjU3OTg5NDcsMTA3MjM5Mjk4MiwtMjA0NzIwMTQxOCwtMTg0
+ODA2MDY1LC0xNjcyMDU2OTk2LDk1MTcwNDE3NiwtOTczODc1Nz
+IzLDUxNTcwOTI1MywxODkzNTA1MzQ4LC0zMjA5OTAwNDQsMTY2
+MDIwNTQyNCwtMTYwNjQ0MTg4OSwtMjUxNzg0NTI1LDg0Njk3Nj
+I3OSwtMjA3Mjk3NDA1OSw4NjQ2NjgxMTAsMTcxMzM2Mzg5LDE3
+NjAwMjg1MzVdfQ==
 -->
