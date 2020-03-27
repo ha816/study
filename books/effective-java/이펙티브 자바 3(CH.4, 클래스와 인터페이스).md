@@ -302,15 +302,12 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 	}
 	@Override 
 	public String toString(){
-		return getKey() + 
+		return getKey() + "=" + getValue();
 	}
-
-
-
-
 }
-
 ```
+
+
 
 
 인터페이스의 장점
@@ -371,7 +368,7 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTYwNDI0OSwxMDcyMzkyOTgyLC0yMD
+eyJoaXN0b3J5IjpbLTMxMDYyMTM4MiwxMDcyMzkyOTgyLC0yMD
 Q3MjAxNDE4LC0xODQ4MDYwNjUsLTE2NzIwNTY5OTYsOTUxNzA0
 MTc2LC05NzM4NzU3MjMsNTE1NzA5MjUzLDE4OTM1MDUzNDgsLT
 MyMDk5MDA0NCwxNjYwMjA1NDI0LC0xNjA2NDQxODg5LC0yNTE3
