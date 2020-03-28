@@ -436,7 +436,13 @@ SELECT * FROM departments WHERE dept_no IN (
 
 ### range
 
-우리가 
+익숙히 알고 있는 인덱스 레인지 스캔 형태 접근법. 인덱스를 하나의 값이 아니라 범위 형태로 검색한다. 
+
+```
+EXPLAIN
+SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003';
+```
+
 
 
 
@@ -454,11 +460,11 @@ SELECT * FROM departments WHERE dept_no IN (
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NzMxMjQxMSwxOTQyODY4NCwtMTc1Nj
-A5MDM0OSwxMzA5MjQ4MzkzLC0xMzgyMTcyNjYzLC03OTU0Nzcz
-NzEsODcxMTA3MjMsMTc5MTA2NjkwNiwxMjQyNDcxODY3LC01ND
-U3Nzk4NTQsNzc2MjU4ODU2LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2
-MywtMTI2MDkxNzI4MSwtNDYwNzYzMjUxLDc4Mzc3MDk4MiwtMT
-M0MjY4MDY3MCwtMTY2MzcxNDc2NywtMjExODAzMTY1Miw1MzU4
-MzE1NDZdfQ==
+eyJoaXN0b3J5IjpbLTE4MTg3NjYzNCwyMTQ3MzEyNDExLDE5ND
+I4Njg0LC0xNzU2MDkwMzQ5LDEzMDkyNDgzOTMsLTEzODIxNzI2
+NjMsLTc5NTQ3NzM3MSw4NzExMDcyMywxNzkxMDY2OTA2LDEyND
+I0NzE4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYsLTE4MjA5NDUz
+NzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00NjA3NjMyNTEsNz
+gzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0NzY3LC0yMTE4
+MDMxNjUyXX0=
 -->
