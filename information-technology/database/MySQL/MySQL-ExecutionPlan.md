@@ -344,10 +344,10 @@ SELECT * FROM dept_emp de, employees e -- JOIN
 WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 ```
 
-|id| select_type|table|
-|--|--|--|
-|1| SIMP |derived2|
-|1| PRIMARY| e|
+|id| select_type|table| type|
+|--|--|--|--|
+|1| SIMPLE |dept_emp| |
+|1| SIMPLE| employees|
 
 
 ## possible_keys
@@ -364,7 +364,7 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDE3NTk0MDcsLTEzNDI2ODA2NzAsLT
+eyJoaXN0b3J5IjpbLTE0NDc2NzM2ODMsLTEzNDI2ODA2NzAsLT
 E2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1ODMxNTQ2LDEzMzU5
 NzU2ODksMjg4NzU5MjAsLTcwMzQ2MzY5NywtMTYyODE1MTkzNi
 w2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQzNDYxLC0zMzkwNjQ0
