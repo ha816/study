@@ -292,9 +292,7 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. MySQL에서는 하나의 테이블로 부터 레코드를 읽는 것도 조인처럼 처리한다. 그래서 태이블 갯수에 관계없이 모두 조인 타입으로 명시하고 있다. 하지만 조인 타입으로 생각하지 말고 각 테이블의 접근 방식(Access type)으로 이해하면 좋다. 
 
 * system
-* const
-* eq_ref
-* ref
+* const, eq_ref, ref
 * fulltext
 * ref_or_null
 * unique_subquery
@@ -394,11 +392,11 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzE2ODQ3MTAsNzc2MjU4ODU2LC0xOD
-IwOTQ1Mzc0LDc4Mzk0MzY2MywtMTI2MDkxNzI4MSwtNDYwNzYz
-MjUxLDc4Mzc3MDk4MiwtMTM0MjY4MDY3MCwtMTY2MzcxNDc2Ny
-wtMjExODAzMTY1Miw1MzU4MzE1NDYsMTMzNTk3NTY4OSwyODg3
-NTkyMCwtNzAzNDYzNjk3LC0xNjI4MTUxOTM2LDY0MzMxNjc3NS
-w5NTY2NjYyMCwzNjA1NDM0NjEsLTMzOTA2NDQwNywtNzQ0NzQy
-ODUwXX0=
+eyJoaXN0b3J5IjpbLTU0NTc3OTg1NCw3NzYyNTg4NTYsLTE4Mj
+A5NDUzNzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00NjA3NjMy
+NTEsNzgzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0NzY3LC
+0yMTE4MDMxNjUyLDUzNTgzMTU0NiwxMzM1OTc1Njg5LDI4ODc1
+OTIwLC03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2Nzc1LD
+k1NjY2NjIwLDM2MDU0MzQ2MSwtMzM5MDY0NDA3LC03NDQ3NDI4
+NTBdfQ==
 -->
