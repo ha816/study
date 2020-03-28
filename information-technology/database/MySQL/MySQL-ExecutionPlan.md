@@ -372,7 +372,9 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 * const
 	* 조인 순서와 관계없이 프라이머키리나 유니크 키의 모든 컬럼에 대해 동등 조건으로 반드시 1건의 레코드를 반환
 * eq_ref
-	* 조엔에서 
+	* 조인에서 첫번째 읽은 테이블의 컬럼값이 두번째 테이블의 프라이머리나 유니크 키로 동등조건 검색 된 경우
+* ref
+	* 조인 순서와 인덱스 종류
 * 
 
 
@@ -390,11 +392,11 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc2MjU4ODU2LC0xODIwOTQ1Mzc0LDc4Mz
-k0MzY2MywtMTI2MDkxNzI4MSwtNDYwNzYzMjUxLDc4Mzc3MDk4
-MiwtMTM0MjY4MDY3MCwtMTY2MzcxNDc2NywtMjExODAzMTY1Mi
-w1MzU4MzE1NDYsMTMzNTk3NTY4OSwyODg3NTkyMCwtNzAzNDYz
-Njk3LC0xNjI4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYyMCwzNj
-A1NDM0NjEsLTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMTc5MDAy
-NV19
+eyJoaXN0b3J5IjpbMTc1OTUwMTA3OSw3NzYyNTg4NTYsLTE4Mj
+A5NDUzNzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00NjA3NjMy
+NTEsNzgzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0NzY3LC
+0yMTE4MDMxNjUyLDUzNTgzMTU0NiwxMzM1OTc1Njg5LDI4ODc1
+OTIwLC03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2Nzc1LD
+k1NjY2NjIwLDM2MDU0MzQ2MSwtMzM5MDY0NDA3LC03NDQ3NDI4
+NTBdfQ==
 -->
