@@ -423,10 +423,12 @@ IN 영역을 자세히 보자. emp_no = 10001인 레코드 중에서 부서 번�
 
 IN 연산자의 특성상, IN(subquery) 또는 IN(상수 나열) 형태의 조건은 괄호안에 있는 값의 목록에서 중복된 값이 먼저 제거되어야 한다. 앞서 unique_subquery는 유니크함이 보장되기 때문에 중복 제거가 필요 없다. **IN(subquery)에서 subquery가 중복된 값을 가질 수 있지만 중복된 값을 인덱스를 이용해 제거가 가능할때 index_subquery가 표시된다.**
 
+아래 쿼리에서 dept_emp의 프라이머리키가 dept_no + emp_no이기 때문에 dept_no를 범위로 읽어오면 
+
 ```
 EXPLAIN
 SELECT * FROM departments WHERE dept_no IN (
-	SELECT dept_no FROM dept_emp WHERE ㅇ뎃);
+	SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003');
 ```
 
 ### range
@@ -447,7 +449,7 @@ SELECT * FROM departments WHERE dept_no IN (
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NzA2ODMyMCwtMTc1NjA5MDM0OSwxMz
+eyJoaXN0b3J5IjpbMTEwNzIyMzAxOCwtMTc1NjA5MDM0OSwxMz
 A5MjQ4MzkzLC0xMzgyMTcyNjYzLC03OTU0NzczNzEsODcxMTA3
 MjMsMTc5MTA2NjkwNiwxMjQyNDcxODY3LC01NDU3Nzk4NTQsNz
 c2MjU4ODU2LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2MywtMTI2MDkx
