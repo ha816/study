@@ -287,7 +287,7 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 
 ## type
 
-쿼리 실행 계획에서 
+쿼리 실행 계획에서 type 이후 컬럼은 MySQL 서버가 테이블 레코드를 어떤 방식으로 읽었는지를 의미한다. 방식이란 인덱스를 사용해 레코드를 읽었는지 아니면 테이블을 처음부터 끝까지 읽는 풀 테이블 스캔으로 읽었는지 등을 의미한다. 
 
 ## possible_keys
 
@@ -303,11 +303,11 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjQxMjQ5OTUsOTU2NjY2MjAsMzYwNT
-QzNDYxLC0zMzkwNjQ0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUs
-MTE2MjIxNTMzOCwtMTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMT
-A5NTMyMywxNzE1NTYxNzk2LC0xNjU1NjYwMTgwLC0xMTE4Mjgz
-ODQwLDIxMjAxNzgyNTYsNTI1MjAzNTY3LC0xNTI5MDE1MzMyLD
-EyMDc5NTE0NDcsMTAzMzIyMzM1LDI0NzQwNjg0NiwtMTI0NjA3
-NzQzMl19
+eyJoaXN0b3J5IjpbNjQzMzE2Nzc1LDk1NjY2NjIwLDM2MDU0Mz
+Q2MSwtMzM5MDY0NDA3LC03NDQ3NDI4NTAsMjExNzkwMDI1LDEx
+NjIyMTUzMzgsLTEyODQ2NDI5NTgsLTE3MTQwNTgxNSwzMjEwOT
+UzMjMsMTcxNTU2MTc5NiwtMTY1NTY2MDE4MCwtMTExODI4Mzg0
+MCwyMTIwMTc4MjU2LDUyNTIwMzU2NywtMTUyOTAxNTMzMiwxMj
+A3OTUxNDQ3LDEwMzMyMjMzNSwyNDc0MDY4NDYsLTEyNDYwNzc0
+MzJdfQ==
 -->
