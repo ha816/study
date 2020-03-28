@@ -447,6 +447,10 @@ SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003';
 
 ### index_merge
 
+2개 이상의 인덱스를 이용해서 각 검색 결과를 만들어 낸후, 그 결과를 병합하여 처리하는 방식이다. 
+
+여러 인덱스를 읽어야 하기 때문에 일반적으로 range 접근법 보다 효율이 떨어진다. 
+
 
 
 
@@ -464,11 +468,11 @@ SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003';
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNjAyMTk5NCwyMTQ3MzEyNDExLDE5ND
-I4Njg0LC0xNzU2MDkwMzQ5LDEzMDkyNDgzOTMsLTEzODIxNzI2
-NjMsLTc5NTQ3NzM3MSw4NzExMDcyMywxNzkxMDY2OTA2LDEyND
-I0NzE4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYsLTE4MjA5NDUz
-NzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00NjA3NjMyNTEsNz
-gzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0NzY3LC0yMTE4
-MDMxNjUyXX0=
+eyJoaXN0b3J5IjpbLTExMjMzMzA3ODUsMjE0NzMxMjQxMSwxOT
+QyODY4NCwtMTc1NjA5MDM0OSwxMzA5MjQ4MzkzLC0xMzgyMTcy
+NjYzLC03OTU0NzczNzEsODcxMTA3MjMsMTc5MTA2NjkwNiwxMj
+QyNDcxODY3LC01NDU3Nzk4NTQsNzc2MjU4ODU2LC0xODIwOTQ1
+Mzc0LDc4Mzk0MzY2MywtMTI2MDkxNzI4MSwtNDYwNzYzMjUxLD
+c4Mzc3MDk4MiwtMTM0MjY4MDY3MCwtMTY2MzcxNDc2NywtMjEx
+ODAzMTY1Ml19
 -->
