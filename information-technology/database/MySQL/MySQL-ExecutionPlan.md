@@ -470,7 +470,11 @@ EXPLAIN
 SELECT * FROM departments ORDER BY dept_name DESC LIMIT 10;
 ```
 
-위 예제에서는 테이블을 처음 부터 끝까지 읽어야 하지만 다행히 LIMIT가 있어 효율적이다. 
+위 예제에서는 테이블을 처음 부터 끝까지 읽어야 하지만 다행히 LIMIT가 있어 효율적이다. 단순히 dept_name으로 인덱스를 거꾸려 10개만 가져오기 때문에다. 하지만 LIMIT 조건이 없으면 레코드 건수가 많아지며 상당히 느려질 것이다.
+
+### ALL
+
+풀 테이블 스캔 방식이다. 테이블을 처음부터 끝까지 읽어 불필요한 레코드(체크 조건 검증)을 하고 반환한다. 
 
 
 ## possible_keys
@@ -487,11 +491,11 @@ SELECT * FROM departments ORDER BY dept_name DESC LIMIT 10;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDc2Nzc1NjIsLTIxNDA4NzgzNTUsLT
-EzNzgyMjQ2NjIsLTExMzA5NzU2MzQsLTExMjMzMzA3ODUsMjE0
-NzMxMjQxMSwxOTQyODY4NCwtMTc1NjA5MDM0OSwxMzA5MjQ4Mz
-kzLC0xMzgyMTcyNjYzLC03OTU0NzczNzEsODcxMTA3MjMsMTc5
-MTA2NjkwNiwxMjQyNDcxODY3LC01NDU3Nzk4NTQsNzc2MjU4OD
-U2LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2MywtMTI2MDkxNzI4MSwt
-NDYwNzYzMjUxXX0=
+eyJoaXN0b3J5IjpbMTk5NjYxMjMzMSwtMTMwNzY3NzU2MiwtMj
+E0MDg3ODM1NSwtMTM3ODIyNDY2MiwtMTEzMDk3NTYzNCwtMTEy
+MzMzMDc4NSwyMTQ3MzEyNDExLDE5NDI4Njg0LC0xNzU2MDkwMz
+Q5LDEzMDkyNDgzOTMsLTEzODIxNzI2NjMsLTc5NTQ3NzM3MSw4
+NzExMDcyMywxNzkxMDY2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OT
+g1NCw3NzYyNTg4NTYsLTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0x
+MjYwOTE3MjgxXX0=
 -->
