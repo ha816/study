@@ -365,7 +365,7 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 |--|--|--|--|
 |1| SIMPLE |dept_emp|ref|
 
-위의 예제에서는 dept_emp 테이블의 프라이머리 키를 구성하는 컬럼(dept_no + emp_no) 중에서
+위의 예제에서는 dept_emp 테이블의 프라이머리 키를 구성하는 컬럼(dept_no + emp_no) 중에서 일부(dept_no)만 사용됬기 때문에 결과 레코드가 1건이라는 보장이 없다. 
 
 
 ## possible_keys
@@ -382,11 +382,11 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MzUyNTE3MCwtNDYwNzYzMjUxLDc4Mz
-c3MDk4MiwtMTM0MjY4MDY3MCwtMTY2MzcxNDc2NywtMjExODAz
-MTY1Miw1MzU4MzE1NDYsMTMzNTk3NTY4OSwyODg3NTkyMCwtNz
-AzNDYzNjk3LC0xNjI4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYy
-MCwzNjA1NDM0NjEsLTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMT
-c5MDAyNSwxMTYyMjE1MzM4LC0xMjg0NjQyOTU4LC0xNzE0MDU4
-MTVdfQ==
+eyJoaXN0b3J5IjpbLTEyNjA5MTcyODEsLTQ2MDc2MzI1MSw3OD
+M3NzA5ODIsLTEzNDI2ODA2NzAsLTE2NjM3MTQ3NjcsLTIxMTgw
+MzE2NTIsNTM1ODMxNTQ2LDEzMzU5NzU2ODksMjg4NzU5MjAsLT
+cwMzQ2MzY5NywtMTYyODE1MTkzNiw2NDMzMTY3NzUsOTU2NjY2
+MjAsMzYwNTQzNDYxLC0zMzkwNjQ0MDcsLTc0NDc0Mjg1MCwyMT
+E3OTAwMjUsMTE2MjIxNTMzOCwtMTI4NDY0Mjk1OCwtMTcxNDA1
+ODE1XX0=
 -->
