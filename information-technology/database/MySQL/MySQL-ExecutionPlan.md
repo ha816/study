@@ -350,6 +350,10 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 |1| SIMPLE |de|ref|
 |1| SIMPLE| e| eq_ref|
 
+### ref
+
+eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리나 유니크 키등의 제약 조건도 없다. 
+
 
 ## possible_keys
 
@@ -365,11 +369,11 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU3MzE4MDEsNzgzNzcwOTgyLC0xMzQyNj
-gwNjcwLC0xNjYzNzE0NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0
-NiwxMzM1OTc1Njg5LDI4ODc1OTIwLC03MDM0NjM2OTcsLTE2Mj
-gxNTE5MzYsNjQzMzE2Nzc1LDk1NjY2NjIwLDM2MDU0MzQ2MSwt
-MzM5MDY0NDA3LC03NDQ3NDI4NTAsMjExNzkwMDI1LDExNjIyMT
-UzMzgsLTEyODQ2NDI5NTgsLTE3MTQwNTgxNSwzMjEwOTUzMjNd
-fQ==
+eyJoaXN0b3J5IjpbLTE4ODY3NTg5NjUsNzgzNzcwOTgyLC0xMz
+QyNjgwNjcwLC0xNjYzNzE0NzY3LC0yMTE4MDMxNjUyLDUzNTgz
+MTU0NiwxMzM1OTc1Njg5LDI4ODc1OTIwLC03MDM0NjM2OTcsLT
+E2MjgxNTE5MzYsNjQzMzE2Nzc1LDk1NjY2NjIwLDM2MDU0MzQ2
+MSwtMzM5MDY0NDA3LC03NDQ3NDI4NTAsMjExNzkwMDI1LDExNj
+IyMTUzMzgsLTEyODQ2NDI5NTgsLTE3MTQwNTgxNSwzMjEwOTUz
+MjNdfQ==
 -->
