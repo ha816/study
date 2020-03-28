@@ -334,7 +334,7 @@ SELECT first_name FROM employees e2 WHERE emp_no = 100001
 
 ### eq_ref
 
-eq_ref는 여러 테이블이 조인되는 실행 계획에서만 표시된다. 처음 읽은 테이블의 컬럼 값을 그 다음 조인할 테이블의 프라이머리키나 유니크 키 컬럼의 검색 조건에 사용할 때 eq_ref가 나타난다. 즉 조인되는 테이블에서 반드시 1건의 레코드만 존재한다. 
+eq_ref(동등 참조)는 여러 테이블이 조인되는 실행 계획에서만 표시된다. 처음 읽은 테이블의 컬럼 값을 그 다음 조인할 테이블의 프라이머리키나 유니크 키 컬럼의 검색 조건에 사용할 때 eq_ref가 나타난다. 즉 조인되는 테이블에서 반드시 1건의 레코드만 존재한다. 
 
 조인되는 테이블의 유니크 키로 검색할 때는 인덱스가 NOT NULL 이어야 하고, 다중 컬럼이라면 모든 컬럼이 비교 조건에 사용되어야 eq_ref가 가능하다.
 
@@ -342,7 +342,7 @@ eq_ref는 여러 테이블이 조인되는 실행 계획에서만 표시된다. 
 EXPLAIN
 SELECT * FROM dept_emp de, employees e -- de JOIN e
 WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005' 
--- e.emp_no is Primary key 
+-- e.emp_no is Primary key. Exist one record.
 ```
 
 |id| select_type|table| type|
@@ -365,11 +365,11 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTEzMzY2MDYsNzgzNzcwOTgyLC0xMz
-QyNjgwNjcwLC0xNjYzNzE0NzY3LC0yMTE4MDMxNjUyLDUzNTgz
-MTU0NiwxMzM1OTc1Njg5LDI4ODc1OTIwLC03MDM0NjM2OTcsLT
-E2MjgxNTE5MzYsNjQzMzE2Nzc1LDk1NjY2NjIwLDM2MDU0MzQ2
-MSwtMzM5MDY0NDA3LC03NDQ3NDI4NTAsMjExNzkwMDI1LDExNj
-IyMTUzMzgsLTEyODQ2NDI5NTgsLTE3MTQwNTgxNSwzMjEwOTUz
-MjNdfQ==
+eyJoaXN0b3J5IjpbNDU3MzE4MDEsNzgzNzcwOTgyLC0xMzQyNj
+gwNjcwLC0xNjYzNzE0NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0
+NiwxMzM1OTc1Njg5LDI4ODc1OTIwLC03MDM0NjM2OTcsLTE2Mj
+gxNTE5MzYsNjQzMzE2Nzc1LDk1NjY2NjIwLDM2MDU0MzQ2MSwt
+MzM5MDY0NDA3LC03NDQ3NDI4NTAsMjExNzkwMDI1LDExNjIyMT
+UzMzgsLTEyODQ2NDI5NTgsLTE3MTQwNTgxNSwzMjEwOTUzMjNd
+fQ==
 -->
