@@ -454,6 +454,11 @@ SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003';
 
 ### index 
 
+index 접근은 많은 사람들이 자주 오해하는 접근법이다. index라서 효율적으로 인덱스를 사용하는 것으로 생각할 수 있는데 절대 아니다. 
+
+**index 접근 방식은 인덱스를 처음부터 끝까지 읽는 인덱스 풀 스캔을 말한다. range 접근 방식과 같이 효율적으로 인덱스의 필요한 부분만 읽는 것은 아니라는 것을 명심하자**
+
+
 
 
 
@@ -471,11 +476,11 @@ SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003';
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzgyMjQ2NjIsLTExMzA5NzU2MzQsLT
-ExMjMzMzA3ODUsMjE0NzMxMjQxMSwxOTQyODY4NCwtMTc1NjA5
-MDM0OSwxMzA5MjQ4MzkzLC0xMzgyMTcyNjYzLC03OTU0NzczNz
-EsODcxMTA3MjMsMTc5MTA2NjkwNiwxMjQyNDcxODY3LC01NDU3
-Nzk4NTQsNzc2MjU4ODU2LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2My
-wtMTI2MDkxNzI4MSwtNDYwNzYzMjUxLDc4Mzc3MDk4MiwtMTM0
-MjY4MDY3MF19
+eyJoaXN0b3J5IjpbNTE5NTYxMTc1LC0xMzc4MjI0NjYyLC0xMT
+MwOTc1NjM0LC0xMTIzMzMwNzg1LDIxNDczMTI0MTEsMTk0Mjg2
+ODQsLTE3NTYwOTAzNDksMTMwOTI0ODM5MywtMTM4MjE3MjY2My
+wtNzk1NDc3MzcxLDg3MTEwNzIzLDE3OTEwNjY5MDYsMTI0MjQ3
+MTg2NywtNTQ1Nzc5ODU0LDc3NjI1ODg1NiwtMTgyMDk0NTM3NC
+w3ODM5NDM2NjMsLTEyNjA5MTcyODEsLTQ2MDc2MzI1MSw3ODM3
+NzA5ODJdfQ==
 -->
