@@ -413,7 +413,6 @@ SELECT * FROM departments WHERE dept_no IN (
 ```
 IN 영역을 자세히 보자. emp_no = 10001인 레코드 중에서 부서 번호(dept_no)는 중복이 없다. (dept_emp의 프라이머리키가 dept_no + emp_no)
 
-
 |id| select_type|table| type|
 |--|--|--|--|
 |1| PRIMARY|departments |index|
@@ -449,11 +448,11 @@ SELECT * FROM departments WHERE dept_no IN (
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0Mjg2ODQsLTE3NTYwOTAzNDksMTMwOT
-I0ODM5MywtMTM4MjE3MjY2MywtNzk1NDc3MzcxLDg3MTEwNzIz
-LDE3OTEwNjY5MDYsMTI0MjQ3MTg2NywtNTQ1Nzc5ODU0LDc3Nj
-I1ODg1NiwtMTgyMDk0NTM3NCw3ODM5NDM2NjMsLTEyNjA5MTcy
-ODEsLTQ2MDc2MzI1MSw3ODM3NzA5ODIsLTEzNDI2ODA2NzAsLT
-E2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1ODMxNTQ2LDEzMzU5
-NzU2ODldfQ==
+eyJoaXN0b3J5IjpbLTYyMjQ0NTQsMTk0Mjg2ODQsLTE3NTYwOT
+AzNDksMTMwOTI0ODM5MywtMTM4MjE3MjY2MywtNzk1NDc3Mzcx
+LDg3MTEwNzIzLDE3OTEwNjY5MDYsMTI0MjQ3MTg2NywtNTQ1Nz
+c5ODU0LDc3NjI1ODg1NiwtMTgyMDk0NTM3NCw3ODM5NDM2NjMs
+LTEyNjA5MTcyODEsLTQ2MDc2MzI1MSw3ODM3NzA5ODIsLTEzND
+I2ODA2NzAsLTE2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1ODMx
+NTQ2XX0=
 -->
