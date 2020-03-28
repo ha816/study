@@ -460,6 +460,8 @@ index 접근은 많은 사람들이 자주 오해하는 접근법이다. index�
 
 index 접근법이 사용되는 조건은 아래와 같다. 
 * const, ref, range와 같은 접근법으로 인덱스를 사용하지 못하는 경우
+* 인덱스에 포함된 컬럼만으로 처리할 수 있는 쿼리인 경우(실제 데이터 레코드를 읽지 않아도 되는 경우)
+* 인덱스를 이용해 정렬이나 그룹핑이 가능한 경우(즉, 별도의 정렬작업이 불피요한 경우)
 
 인덱스 풀 스캔과 풀 테이블 스캔 방식을 비교했을때 비교하는 레코드 수는 완전히 동일하다. 하지만 일반적으로 인덱스는 데이터 파일 전체보다는 크기가 작아서 풀 테이블 스캔보다는 효율적이므로 풀 테이블 스캔보다는 빠르다. 또한 쿼리의 내용에 따라 정렬된 인덱스의 장점을 이용할 수도 있으므로 풀 테이블 스캔보다 효율적일 수 있다. 
 
@@ -479,11 +481,11 @@ index 접근법이 사용되는 조건은 아래와 같다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjU4NTQ2MzEsLTEzNzgyMjQ2NjIsLT
-ExMzA5NzU2MzQsLTExMjMzMzA3ODUsMjE0NzMxMjQxMSwxOTQy
-ODY4NCwtMTc1NjA5MDM0OSwxMzA5MjQ4MzkzLC0xMzgyMTcyNj
-YzLC03OTU0NzczNzEsODcxMTA3MjMsMTc5MTA2NjkwNiwxMjQy
-NDcxODY3LC01NDU3Nzk4NTQsNzc2MjU4ODU2LC0xODIwOTQ1Mz
-c0LDc4Mzk0MzY2MywtMTI2MDkxNzI4MSwtNDYwNzYzMjUxLDc4
-Mzc3MDk4Ml19
+eyJoaXN0b3J5IjpbNDIwNDI1MDYxLC0xMzc4MjI0NjYyLC0xMT
+MwOTc1NjM0LC0xMTIzMzMwNzg1LDIxNDczMTI0MTEsMTk0Mjg2
+ODQsLTE3NTYwOTAzNDksMTMwOTI0ODM5MywtMTM4MjE3MjY2My
+wtNzk1NDc3MzcxLDg3MTEwNzIzLDE3OTEwNjY5MDYsMTI0MjQ3
+MTg2NywtNTQ1Nzc5ODU0LDc3NjI1ODg1NiwtMTgyMDk0NTM3NC
+w3ODM5NDM2NjMsLTEyNjA5MTcyODEsLTQ2MDc2MzI1MSw3ODM3
+NzA5ODJdfQ==
 -->
