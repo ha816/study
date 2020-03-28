@@ -447,7 +447,8 @@ SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003';
 
 ### index_merge
 
-2개 이상의 인덱스를 이용해서 각 검색 결과를 만들어 낸후, 그 결과를 병합하여 처리하는 방식이다. index_merge는 여러 인덱스를 읽어야 하기 때문에 일반적으로 range 접근법 보다 효율이 떨어진다. 그리고 전문 검색 인덱스에서는 적용이 불가하다.
+2개 이상의 인덱스를 이용해서 각 검색 결과를 만들어 낸후, 그 결과를 병합하여 처리하는 방식이다. index_merge는 여러 인덱스를 읽어야 하기 때문에 일반적으로 range 접근법 보다 효율이 떨어진다. 그리고
+그리고 전문 검색 인덱스에서는 적용이 불가하다.
 * AND와 OR 연산지 복잡하게 연결된 쿼리에서는 제대로 최적화를 못할때가 많다.
 * 
 * index_merge의 접근 법으로 처리된 결과는 항상 2개 이상의 집합이기 때문에 추가적인 집합 연산이 필요하다.
@@ -478,7 +479,7 @@ SELECT * FROM departments ORDER BY dept_name DESC LIMIT 10;
 
 다른 DBMS에서도 풀 테이블 스캔이나 인덱스 풀 스캔과 같이 대량의 디스크 I/O를 유발하는 작업을 위해 제공하는 기능이 있다. 이 기능을 InnoDB에서는 리드 어해드(Read Ahead)라 하는데 한번에 많은 페이지를 읽어 처리할 수 있다. 
 
-일반적으로 index와 ALL 접근 법은 작업 범위를 제한하지 않기 때문에 
+일반적으로 index와 ALL 접근 법은 작업 범위를 제한하지 않기 때문에 빠른 응답이 필요한 웹 서비스등에서는 적합하지 않다.
 
 ## possible_keys
 
@@ -494,11 +495,11 @@ SELECT * FROM departments ORDER BY dept_name DESC LIMIT 10;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg4NzM4MjUxLC0xNjIxNTgyNjYyLDE1Nz
-QyODQzNDAsLTEzMDc2Nzc1NjIsLTIxNDA4NzgzNTUsLTEzNzgy
-MjQ2NjIsLTExMzA5NzU2MzQsLTExMjMzMzA3ODUsMjE0NzMxMj
-QxMSwxOTQyODY4NCwtMTc1NjA5MDM0OSwxMzA5MjQ4MzkzLC0x
-MzgyMTcyNjYzLC03OTU0NzczNzEsODcxMTA3MjMsMTc5MTA2Nj
-kwNiwxMjQyNDcxODY3LC01NDU3Nzk4NTQsNzc2MjU4ODU2LC0x
-ODIwOTQ1Mzc0XX0=
+eyJoaXN0b3J5IjpbLTE4MTkyMzc2MjEsNjg4NzM4MjUxLC0xNj
+IxNTgyNjYyLDE1NzQyODQzNDAsLTEzMDc2Nzc1NjIsLTIxNDA4
+NzgzNTUsLTEzNzgyMjQ2NjIsLTExMzA5NzU2MzQsLTExMjMzMz
+A3ODUsMjE0NzMxMjQxMSwxOTQyODY4NCwtMTc1NjA5MDM0OSwx
+MzA5MjQ4MzkzLC0xMzgyMTcyNjYzLC03OTU0NzczNzEsODcxMT
+A3MjMsMTc5MTA2NjkwNiwxMjQyNDcxODY3LC01NDU3Nzk4NTQs
+Nzc2MjU4ODU2XX0=
 -->
