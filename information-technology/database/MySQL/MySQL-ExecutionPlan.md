@@ -396,7 +396,12 @@ MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접�
 ### unique_subquery, index_subquery
 
 unique_subquery
+: IN (subquery) 형태의 조건에서 subquery의 반환 값에는 중복이 없으므로 별도의 중복 제거 작업이 필요하지 않음
 
+index_subquery
+: IN (subquery) 형태의 조건에서 subquery의 반환 값에 중복이 있을 수 있지만 인덱스를 이용하여 중복 값을 제거할 수 있음
+
+사실 위 두가지 접근법은 IN() 안에 있는 중복 값을 아주 낮은 비용으로 제거한다. 
 
 
 ### range
@@ -417,7 +422,7 @@ unique_subquery
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODE4OTc4MjEsODcxMTA3MjMsMTc5MT
+eyJoaXN0b3J5IjpbLTExOTUzMjgzMTcsODcxMTA3MjMsMTc5MT
 A2NjkwNiwxMjQyNDcxODY3LC01NDU3Nzk4NTQsNzc2MjU4ODU2
 LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2MywtMTI2MDkxNzI4MSwtND
 YwNzYzMjUxLDc4Mzc3MDk4MiwtMTM0MjY4MDY3MCwtMTY2Mzcx
