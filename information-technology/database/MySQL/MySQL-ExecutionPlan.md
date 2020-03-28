@@ -352,7 +352,9 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 
 ### ref
 
-eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리나 유니크 키등의 제약 조건도 없다. 인덱스 종류와 관계없이 동등조건으로 검색할때는 ref 접근 방법
+eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리나 유니크 키등의 제약 조건도 없다. 인덱스 종류와 관계없이 동등조건으로 검색할때는 ref 접근 방법이 된다. 
+
+eq_ref에서 존재하던 레코드가 1건이라는 보장이 없지만 동등한 조건으로만 비교되므로 매우 빠르다, 
 
 
 ## possible_keys
@@ -369,7 +371,7 @@ eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgyNTE0NTMwLDc4Mzc3MDk4MiwtMTM0Mj
+eyJoaXN0b3J5IjpbLTkzMDQ2MDMyLDc4Mzc3MDk4MiwtMTM0Mj
 Y4MDY3MCwtMTY2MzcxNDc2NywtMjExODAzMTY1Miw1MzU4MzE1
 NDYsMTMzNTk3NTY4OSwyODg3NTkyMCwtNzAzNDYzNjk3LC0xNj
 I4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYyMCwzNjA1NDM0NjEs
