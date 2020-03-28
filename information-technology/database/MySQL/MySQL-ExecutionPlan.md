@@ -352,7 +352,7 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 
 ### ref
 
-eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리나 유니크 키등의 제약 조건도 없다. 
+eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리나 유니크 키등의 제약 조건도 없다. 인덱스 종류와 관계없이 동등조건으로 검색할때는 ref 접근 방법
 
 
 ## possible_keys
@@ -369,11 +369,11 @@ eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODY3NTg5NjUsNzgzNzcwOTgyLC0xMz
-QyNjgwNjcwLC0xNjYzNzE0NzY3LC0yMTE4MDMxNjUyLDUzNTgz
-MTU0NiwxMzM1OTc1Njg5LDI4ODc1OTIwLC03MDM0NjM2OTcsLT
-E2MjgxNTE5MzYsNjQzMzE2Nzc1LDk1NjY2NjIwLDM2MDU0MzQ2
-MSwtMzM5MDY0NDA3LC03NDQ3NDI4NTAsMjExNzkwMDI1LDExNj
-IyMTUzMzgsLTEyODQ2NDI5NTgsLTE3MTQwNTgxNSwzMjEwOTUz
-MjNdfQ==
+eyJoaXN0b3J5IjpbNjgyNTE0NTMwLDc4Mzc3MDk4MiwtMTM0Mj
+Y4MDY3MCwtMTY2MzcxNDc2NywtMjExODAzMTY1Miw1MzU4MzE1
+NDYsMTMzNTk3NTY4OSwyODg3NTkyMCwtNzAzNDYzNjk3LC0xNj
+I4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYyMCwzNjA1NDM0NjEs
+LTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMTc5MDAyNSwxMTYyMj
+E1MzM4LC0xMjg0NjQyOTU4LC0xNzE0MDU4MTUsMzIxMDk1MzIz
+XX0=
 -->
