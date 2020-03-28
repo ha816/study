@@ -287,6 +287,8 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 
 ## type
 
+쿼리 실행 계획에서 
+
 ## possible_keys
 
 ## key
@@ -301,7 +303,7 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTA5MjU3NzksOTU2NjY2MjAsMzYwNT
+eyJoaXN0b3J5IjpbLTE0NjQxMjQ5OTUsOTU2NjY2MjAsMzYwNT
 QzNDYxLC0zMzkwNjQ0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUs
 MTE2MjIxNTMzOCwtMTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMT
 A5NTMyMywxNzE1NTYxNzk2LC0xNjU1NjYwMTgwLC0xMTE4Mjgz
