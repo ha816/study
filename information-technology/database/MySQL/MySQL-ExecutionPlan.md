@@ -452,7 +452,7 @@ SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003';
 * 
 * index_merge의 접근 법으로 처리된 결과는 항상 2개 이상의 집합이기 때문에 추가적인 집합 연산이 필요하다.
 
-### index 
+### index(index full scan)
 
 index 접근은 많은 사람들이 자주 오해하는 접근법이다. index라서 효율적으로 인덱스를 사용하는 것으로 생각할 수 있는데 절대 아니다. 
 
@@ -476,8 +476,9 @@ SELECT * FROM departments ORDER BY dept_name DESC LIMIT 10;
 
 풀 테이블 스캔 방식이다. 테이블을 처음부터 끝까지 읽어 불필요한 레코드(체크 조건 검증)을 하고 반환한다. 이 방법은 가장 마지막에 선택되는 비효율적인 방법이다. 
 
-다른 DBMS에서도 풀 테이블 스캔이나 인덱스 풀 스캔과 같이 대량의 디스크 I/O를 유발하는 작업을 위해 
+다른 DBMS에서도 풀 테이블 스캔이나 인덱스 풀 스캔과 같이 대량의 디스크 I/O를 유발하는 작업을 위해 제공하는 기능이 있다. 이 기능을 InnoDB에서는 리드 어해드(Read Ahead)라 하는데 한번에 많은 페이지를 읽어 처리할 수 있다. 
 
+일반적으로 index와 ALL 접근 법은 작업 범위를 제한하지 않기 때문에 
 
 ## possible_keys
 
@@ -493,11 +494,11 @@ SELECT * FROM departments ORDER BY dept_name DESC LIMIT 10;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjE1ODI2NjIsMTU3NDI4NDM0MCwtMT
-MwNzY3NzU2MiwtMjE0MDg3ODM1NSwtMTM3ODIyNDY2MiwtMTEz
-MDk3NTYzNCwtMTEyMzMzMDc4NSwyMTQ3MzEyNDExLDE5NDI4Nj
-g0LC0xNzU2MDkwMzQ5LDEzMDkyNDgzOTMsLTEzODIxNzI2NjMs
-LTc5NTQ3NzM3MSw4NzExMDcyMywxNzkxMDY2OTA2LDEyNDI0Nz
-E4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYsLTE4MjA5NDUzNzQs
-NzgzOTQzNjYzXX0=
+eyJoaXN0b3J5IjpbNjg4NzM4MjUxLC0xNjIxNTgyNjYyLDE1Nz
+QyODQzNDAsLTEzMDc2Nzc1NjIsLTIxNDA4NzgzNTUsLTEzNzgy
+MjQ2NjIsLTExMzA5NzU2MzQsLTExMjMzMzA3ODUsMjE0NzMxMj
+QxMSwxOTQyODY4NCwtMTc1NjA5MDM0OSwxMzA5MjQ4MzkzLC0x
+MzgyMTcyNjYzLC03OTU0NzczNzEsODcxMTA3MjMsMTc5MTA2Nj
+kwNiwxMjQyNDcxODY3LC01NDU3Nzk4NTQsNzc2MjU4ODU2LC0x
+ODIwOTQ1Mzc0XX0=
 -->
