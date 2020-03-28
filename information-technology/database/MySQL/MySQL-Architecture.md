@@ -147,9 +147,7 @@ MVCC의 주요 목적은 잠금 없는 일관된 읽기(Non-locking consistent r
 
 # NDB Cluster Storage Engine
 
-## Cluster
-
-클러스터는 NDB(Network DataBase) 클러스터 스토리지 엔진을 사용한다. 이 엔진은 네트워크를 통해 데이터 분산을 지원하는 스토리지 엔진이다. 
+NDB(Network DataBase) 클러스터 스토리지 엔진은 네트워크를 통해 데이터 분산을 지원하는 스토리지 엔진이다. 
 
 ## NDB 클러스터의 특징
 
@@ -167,6 +165,7 @@ MVCC의 주요 목적은 잠금 없는 일관된 읽기(Non-locking consistent r
 
 위의 이야기를 들으면 Cluster가 모든 면에서 좋아 보이지만 꼭 그렇지만은 않다. Replication의 최대 장점은 바로 값의 변경이 매우 빠르다는 것이다. Cluster는 값을 변경하려고 하면 클러스터 군을 이루는 다른 서버들도 값이 변경되었다는 것을 확인해 주어야 한다. 하지만 replication은 마스터의 값만 변경하면 되기 때문에, 값을 변경하는 쿼리가 매우 빠르게 실행된다.  그래서 주로 실시간 동기화가 필요 없는 경우 cluster대신 replication을 사용한다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMzc2MTM2NiwyMDc2NjQzMTg5LDk4Nz
-QwNzM3NywxNzgwNzU4ODIxLC04MTI3OTI4NjNdfQ==
+eyJoaXN0b3J5IjpbLTE2MzY0NDMzNDcsLTgzMzc2MTM2NiwyMD
+c2NjQzMTg5LDk4NzQwNzM3NywxNzgwNzU4ODIxLC04MTI3OTI4
+NjNdfQ==
 -->
