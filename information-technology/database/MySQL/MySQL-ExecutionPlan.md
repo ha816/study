@@ -320,7 +320,6 @@ EXPLAIN  SELECT * FROM employyess WHERE emp_no = 10001;
 -- UNIQUE KEY WHERE PHRASE
 ```
 const는 쿼리를 최적화하는 단계에서 모두 상수화를 한다, 그래서 const이다. 
-
 ```
 EXPLAIN
 SELECT COUNT(*) 
@@ -329,8 +328,6 @@ WHERE first_name = (
 SELECT first_name FROM employees e2 WHERE emp_no = 100001
 ) -- it's const
 ```
-
-
 다중 컬럼으로 구성된 프라이머리키나 유니크 키 중에서 인덱스의 일부 컬럼만 조건으로 사용할 때는 const 타입의 접근법을 사용할 수 없다. 왜냐하면 실제 레코드가 1건만 있다 하더라도 MySQL 엔진인 데이터를 읽어보기 전에는 레코드가 1건이라고 확신할 수 없기 때문이다. 이렇게 일부만 조건으로 사용하면 const가 아닌 ref가 표시된다.
 
 당연히 다중 컬럼으로 구성된 프라이머리키나 유니크 키 모든 컬럼을 동등 조건으로 WHERE 절에 사용하면 const가 표시된다.
@@ -341,8 +338,11 @@ eq_ref는 여러 테이블이 조인되는 실행 계획에서만 표시된다. 
 
 추가적으로 두 번째 이후로 읽힌 테이블의 유니크 키로 검색할 때 인덱스는 NOT NULL 이어야 하고, 다중 컬럼이라면 모든 컬럼이 비교 조건에 사용되어야 eq_ref가 가능하다. 즉 조인에서 두 번째 이후에 읽는 테이블에서 반드시 1건 존재한다는 보장이 있어야 사용 가능한 접근법이다. 
 
-
-
+```
+EXPLAIN
+SELECT * FROM dept_emp de, employees e -- JOIN
+WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
+```
 
 ## possible_keys
 
@@ -358,11 +358,11 @@ eq_ref는 여러 테이블이 조인되는 실행 계획에서만 표시된다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNzU3NzQ2OSwtMTY2MzcxNDc2NywtMj
-ExODAzMTY1Miw1MzU4MzE1NDYsMTMzNTk3NTY4OSwyODg3NTky
-MCwtNzAzNDYzNjk3LC0xNjI4MTUxOTM2LDY0MzMxNjc3NSw5NT
-Y2NjYyMCwzNjA1NDM0NjEsLTMzOTA2NDQwNywtNzQ0NzQyODUw
-LDIxMTc5MDAyNSwxMTYyMjE1MzM4LC0xMjg0NjQyOTU4LC0xNz
-E0MDU4MTUsMzIxMDk1MzIzLDE3MTU1NjE3OTYsLTE2NTU2NjAx
-ODBdfQ==
+eyJoaXN0b3J5IjpbLTEzNDI2ODA2NzAsLTE2NjM3MTQ3NjcsLT
+IxMTgwMzE2NTIsNTM1ODMxNTQ2LDEzMzU5NzU2ODksMjg4NzU5
+MjAsLTcwMzQ2MzY5NywtMTYyODE1MTkzNiw2NDMzMTY3NzUsOT
+U2NjY2MjAsMzYwNTQzNDYxLC0zMzkwNjQ0MDcsLTc0NDc0Mjg1
+MCwyMTE3OTAwMjUsMTE2MjIxNTMzOCwtMTI4NDY0Mjk1OCwtMT
+cxNDA1ODE1LDMyMTA5NTMyMywxNzE1NTYxNzk2LC0xNjU1NjYw
+MTgwXX0=
 -->
