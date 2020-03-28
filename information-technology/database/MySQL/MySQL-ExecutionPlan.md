@@ -306,7 +306,11 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 총 12가지 접근 방법 중에서 ALL을 제외한 나머지는 모두 인덱스를 사용한 접근 방식이다. 하나의 단위 SELECT 쿼리는 위의 접근 방법 중에서 단 하나만 사용할 수 있다. 또한 index_merge를 제외한 나머지 접근 방법은 반드시 하나의 인덱스만 사용한다.   따라서 실행 계획에서 각 라인에 접근 방법이 2개 이상 표시 되지 않으며, index_merge 이외에 type 에서는 인덱스 항목에도 단 하나의 인덱스 이름만 표시된다. 
 
-참고로 위의 나열된 접근 방식은 빠른 순서대로 나열된 것이다. MySQL 옵티마이저는 이런 접근 방식과 비용을 함께 계
+참고로 위의 나열된 접근 방식은 빠른 순서대로 나열된 것이다. MySQL 옵티마이저는 이런 접근 방식과 비용을 함께 계산하여 최소의 비용이 필요한 접근방식을 선택한다.
+
+### system
+
+
 
 
 ## possible_keys
@@ -323,7 +327,7 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NTc0MTUwNiwtNzAzNDYzNjk3LC0xNj
+eyJoaXN0b3J5IjpbLTY5MjEyMzc4NSwtNzAzNDYzNjk3LC0xNj
 I4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYyMCwzNjA1NDM0NjEs
 LTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMTc5MDAyNSwxMTYyMj
 E1MzM4LC0xMjg0NjQyOTU4LC0xNzE0MDU4MTUsMzIxMDk1MzIz
