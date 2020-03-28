@@ -152,11 +152,11 @@ NDB(Network DataBase) 클러스터 스토리지 엔진은 네트워크를 통해
 
 ## Engine features
 
-- 무공유 클러스터링
-	- NDB 클러스터는 클러스터 그룹내의 모든 노드가 아무것도 공유하지 않는 무공유 아키텍처로 구현되어 있다. NDB 클러스터는 데이터를 저장하는 스토리지가 분산되어 관리되기 때문에 한 데이터 저장소가 작동을 멈추더라도 서비스에 영향이 없다. 
-- 메모리 기반의 스토리지 엔진
-- 자동화된 Fail-over
-- 분산된 데이터 저장소간의 동기 방식 복제
+* 무공유 클러스터링
+	* NDB 클러스터는 클러스터 그룹내의 모든 노드가 아무것도 공유하지 않는 무공유 아키텍처로 구현되어 있다. NDB 클러스터는 데이터를 저장하는 스토리지가 분산되어 관리되기 때문에 한 데이터 저장소가 작동을 멈추더라도 서비스에 영향이 없다. 
+* 메모리 기반의 스토리지 엔진
+* 자동화된 Fail-over
+* 분산된 데이터 저장소 간 실시간 복제
 
 ## [Cluster VS Replication](https://blog.seulgi.kim/2015/05/what-is-mysql-replication.html)
 
@@ -166,7 +166,7 @@ NDB(Network DataBase) 클러스터 스토리지 엔진은 네트워크를 통해
 
 위의 이야기를 들으면 Cluster가 모든 면에서 좋아 보이지만 꼭 그렇지만은 않다. Replication의 최대 장점은 바로 값의 변경이 매우 빠르다는 것이다. Cluster는 값을 변경하려고 하면 클러스터 군을 이루는 다른 서버들도 값이 변경되었다는 것을 확인해 주어야 한다. 하지만 replication은 마스터의 값만 변경하면 되기 때문에, 값을 변경하는 쿼리가 매우 빠르게 실행된다.  그래서 주로 실시간 동기화가 필요 없는 경우 cluster대신 replication을 사용한다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NTk5MzU4NywtMTYzNjQ0MzM0NywtOD
+eyJoaXN0b3J5IjpbMTM4NjM2MDcxMywtMTYzNjQ0MzM0NywtOD
 MzNzYxMzY2LDIwNzY2NDMxODksOTg3NDA3Mzc3LDE3ODA3NTg4
 MjEsLTgxMjc5Mjg2M119
 -->
