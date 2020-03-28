@@ -344,6 +344,12 @@ SELECT * FROM dept_emp de, employees e -- JOIN
 WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 ```
 
+|id| select_type|table|
+|--|--|--|
+|1| SIMP |derived2|
+|1| PRIMARY| e|
+
+
 ## possible_keys
 
 ## key
@@ -358,11 +364,11 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDI2ODA2NzAsLTE2NjM3MTQ3NjcsLT
-IxMTgwMzE2NTIsNTM1ODMxNTQ2LDEzMzU5NzU2ODksMjg4NzU5
-MjAsLTcwMzQ2MzY5NywtMTYyODE1MTkzNiw2NDMzMTY3NzUsOT
-U2NjY2MjAsMzYwNTQzNDYxLC0zMzkwNjQ0MDcsLTc0NDc0Mjg1
-MCwyMTE3OTAwMjUsMTE2MjIxNTMzOCwtMTI4NDY0Mjk1OCwtMT
-cxNDA1ODE1LDMyMTA5NTMyMywxNzE1NTYxNzk2LC0xNjU1NjYw
-MTgwXX0=
+eyJoaXN0b3J5IjpbLTE1NDE3NTk0MDcsLTEzNDI2ODA2NzAsLT
+E2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1ODMxNTQ2LDEzMzU5
+NzU2ODksMjg4NzU5MjAsLTcwMzQ2MzY5NywtMTYyODE1MTkzNi
+w2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQzNDYxLC0zMzkwNjQ0
+MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2MjIxNTMzOCwtMT
+I4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMyMywxNzE1NTYx
+Nzk2XX0=
 -->
