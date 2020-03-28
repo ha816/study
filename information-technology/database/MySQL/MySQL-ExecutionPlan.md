@@ -322,7 +322,7 @@ EXPLAIN  SELECT * FROM employyess WHERE emp_no = 10001; --UNIQUE KEY WHERE PHRAS
 
 당연히 다중 컬럼으로 구성된 프라이머리키나 유니크 키 모든 컬럼을 동등 조건으로 WHERE 절에 사용하면 const가 표시된다.
 
-> const 실행계획은 쿼리를 최적화하는 단계에서 모두 상수화를 한다, 그래서 const이다
+> const 실행계획은 쿼리를 최적화하는 단계에서 모두 상수화를 한다, 그래서 const이다. 
 
 
 ## possible_keys
@@ -339,7 +339,7 @@ EXPLAIN  SELECT * FROM employyess WHERE emp_no = 10001; --UNIQUE KEY WHERE PHRAS
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgxMTk1NjkyLDEzMzU5NzU2ODksMjg4Nz
+eyJoaXN0b3J5IjpbNTM1ODMxNTQ2LDEzMzU5NzU2ODksMjg4Nz
 U5MjAsLTcwMzQ2MzY5NywtMTYyODE1MTkzNiw2NDMzMTY3NzUs
 OTU2NjY2MjAsMzYwNTQzNDYxLC0zMzkwNjQ0MDcsLTc0NDc0Mj
 g1MCwyMTE3OTAwMjUsMTE2MjIxNTMzOCwtMTI4NDY0Mjk1OCwt
