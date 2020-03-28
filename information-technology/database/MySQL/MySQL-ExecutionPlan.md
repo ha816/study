@@ -474,7 +474,9 @@ SELECT * FROM departments ORDER BY dept_name DESC LIMIT 10;
 
 ### ALL(full table scan)
 
-풀 테이블 스캔 방식이다. 테이블을 처음부터 끝까지 읽어 불필요한 레코드(체크 조건 검증)을 하고 반환한다. 
+풀 테이블 스캔 방식이다. 테이블을 처음부터 끝까지 읽어 불필요한 레코드(체크 조건 검증)을 하고 반환한다. 이 방법은 가장 마지막에 선택되는 비효율적인 방법이다. 
+
+다른 DBMS에서도 풀 테이블 스캔이나 인덱스 풀 스캔과 같이 대량의 디스크 I/O를 유발하는 작업을 위해 
 
 
 ## possible_keys
@@ -491,11 +493,11 @@ SELECT * FROM departments ORDER BY dept_name DESC LIMIT 10;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NDI4NDM0MCwtMTMwNzY3NzU2MiwtMj
-E0MDg3ODM1NSwtMTM3ODIyNDY2MiwtMTEzMDk3NTYzNCwtMTEy
-MzMzMDc4NSwyMTQ3MzEyNDExLDE5NDI4Njg0LC0xNzU2MDkwMz
-Q5LDEzMDkyNDgzOTMsLTEzODIxNzI2NjMsLTc5NTQ3NzM3MSw4
-NzExMDcyMywxNzkxMDY2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OT
-g1NCw3NzYyNTg4NTYsLTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0x
-MjYwOTE3MjgxXX0=
+eyJoaXN0b3J5IjpbLTE2MjE1ODI2NjIsMTU3NDI4NDM0MCwtMT
+MwNzY3NzU2MiwtMjE0MDg3ODM1NSwtMTM3ODIyNDY2MiwtMTEz
+MDk3NTYzNCwtMTEyMzMzMDc4NSwyMTQ3MzEyNDExLDE5NDI4Nj
+g0LC0xNzU2MDkwMzQ5LDEzMDkyNDgzOTMsLTEzODIxNzI2NjMs
+LTc5NTQ3NzM3MSw4NzExMDcyMywxNzkxMDY2OTA2LDEyNDI0Nz
+E4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYsLTE4MjA5NDUzNzQs
+NzgzOTQzNjYzXX0=
 -->
