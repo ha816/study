@@ -314,7 +314,12 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 ### const
 
-테이블 레코드의 건수에 관계없이 쿼리가 프라이머리 키나 유니크 키 컬럼을 이용하는 WHERE조건 절을 가지고 있고, 반드시 1건을 반환하는 방식이다. 다른 DBMS에[서는 유니크 인덱스 스캔(UNIQUE INDEX SCAN)이라고도 한다.
+테이블 레코드의 건수에 관계없이 쿼리가 프라이머리 키나 유니크 키 컬럼을 이용하는 WHERE조건 절을 가지고 있고, 반드시 1건을 반환하는 방식이다. 다른 DBMS에서는 유니크 인덱스 스캔(UNIQUE INDEX SCAN)이라고도 한다.
+
+```
+EXPLAIN  SELECT * FROM employyess WHERE emp_no = 10001; --UNIQUE KEY WHERE PHRASE
+```
+
 
 ## possible_keys
 
@@ -330,11 +335,11 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTk3NTY4OSwyODg3NTkyMCwtNzAzND
-YzNjk3LC0xNjI4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYyMCwz
-NjA1NDM0NjEsLTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMTc5MD
-AyNSwxMTYyMjE1MzM4LC0xMjg0NjQyOTU4LC0xNzE0MDU4MTUs
-MzIxMDk1MzIzLDE3MTU1NjE3OTYsLTE2NTU2NjAxODAsLTExMT
-gyODM4NDAsMjEyMDE3ODI1Niw1MjUyMDM1NjcsLTE1MjkwMTUz
-MzJdfQ==
+eyJoaXN0b3J5IjpbLTYzOTg1NTI5NiwxMzM1OTc1Njg5LDI4OD
+c1OTIwLC03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2Nzc1
+LDk1NjY2NjIwLDM2MDU0MzQ2MSwtMzM5MDY0NDA3LC03NDQ3ND
+I4NTAsMjExNzkwMDI1LDExNjIyMTUzMzgsLTEyODQ2NDI5NTgs
+LTE3MTQwNTgxNSwzMjEwOTUzMjMsMTcxNTU2MTc5NiwtMTY1NT
+Y2MDE4MCwtMTExODI4Mzg0MCwyMTIwMTc4MjU2LDUyNTIwMzU2
+N119
 -->
