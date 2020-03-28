@@ -370,7 +370,8 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 ### const, eq_ref, ref
 
 * const
-	* 조인 순서와 관계없이 프라이머키리
+	* 조인 순서와 관계없이 프라이머키리나 유니크 키의 모든 컬럼에 대해 동등 조건으로 반드시 1건의 레코드를 반환
+* 
 
 
 ## possible_keys
@@ -387,11 +388,11 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMTk0NjU4MSw3ODM5NDM2NjMsLTEyNj
-A5MTcyODEsLTQ2MDc2MzI1MSw3ODM3NzA5ODIsLTEzNDI2ODA2
-NzAsLTE2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1ODMxNTQ2LD
-EzMzU5NzU2ODksMjg4NzU5MjAsLTcwMzQ2MzY5NywtMTYyODE1
-MTkzNiw2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQzNDYxLC0zMz
-kwNjQ0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2MjIxNTMz
-OF19
+eyJoaXN0b3J5IjpbLTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0xMj
+YwOTE3MjgxLC00NjA3NjMyNTEsNzgzNzcwOTgyLC0xMzQyNjgw
+NjcwLC0xNjYzNzE0NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0Ni
+wxMzM1OTc1Njg5LDI4ODc1OTIwLC03MDM0NjM2OTcsLTE2Mjgx
+NTE5MzYsNjQzMzE2Nzc1LDk1NjY2NjIwLDM2MDU0MzQ2MSwtMz
+M5MDY0NDA3LC03NDQ3NDI4NTAsMjExNzkwMDI1LDExNjIyMTUz
+MzhdfQ==
 -->
