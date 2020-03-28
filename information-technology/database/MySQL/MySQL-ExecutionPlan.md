@@ -323,7 +323,6 @@ ref
 
 위 세 가지 방법은 모두 WHERE 조건절에서 사용되는 비교 연산자가 동등 비교 연산자이어야 한다. 그리고 모두 매우 빠른 접근 법으로 인덱스의 분포도가 나쁘지 않다면 성능상 문제를 일으키지 않는다. 쿼리 튜닝을 할때도 이 접근법에 대해선 넘어가도 무방하다.  
 
-
 #### const
 
 **프라이머리 키나 유니크 키 컬럼을 이용하는 WHERE조건 절을 가지고 있고, 반드시 1건을 반환하는 방식이다.** 다른 DBMS에서는 유니크 인덱스 스캔(UNIQUE INDEX SCAN)이라고도 한다.
@@ -343,9 +342,6 @@ SELECT first_name FROM employees e2 WHERE emp_no = 100001
 다중 컬럼으로 구성된 프라이머리키나 유니크 키 중에서 인덱스의 일부 컬럼만 조건으로 사용할 때는 const 타입의 접근법을 사용할 수 없다. 왜냐하면 실제 레코드가 1건만 있다 하더라도 MySQL 엔진인 데이터를 읽어보기 전에는 레코드가 1건이라고 확신할 수 없기 때문이다. 이렇게 일부만 조건으로 사용하면 const가 아닌 ref가 표시된다.
 
 당연히 다중 컬럼으로 구성된 프라이머리키나 유니크 키 모든 컬럼을 동등 조건으로 WHERE 절에 사용하면 const가 표시된다.
-
-
-
 
 ### eq_ref
 
@@ -397,9 +393,13 @@ MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접�
 
 전문 검색에는 "MATCH ... AGAINTST ..." 구문을 사용하는데, 반드시 해당 테이블에 전문 검색용 인덱스가 준비되어 있어야만 한다. 만약 전문 인덱스가 없다면 쿼리는 오류가 발생하고 중단된다. 
 
-### unique_subquery
+### unique_subquery, index_subquery
 
-### 
+unique_subquery
+
+
+
+### range
 
 
 
@@ -417,11 +417,11 @@ MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NjIyNTk5Myw4NzExMDcyMywxNzkxMD
-Y2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYs
-LTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00Nj
-A3NjMyNTEsNzgzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0
-NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0NiwxMzM1OTc1Njg5LD
-I4ODc1OTIwLC03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2
-Nzc1XX0=
+eyJoaXN0b3J5IjpbLTEzODE4OTc4MjEsODcxMTA3MjMsMTc5MT
+A2NjkwNiwxMjQyNDcxODY3LC01NDU3Nzk4NTQsNzc2MjU4ODU2
+LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2MywtMTI2MDkxNzI4MSwtND
+YwNzYzMjUxLDc4Mzc3MDk4MiwtMTM0MjY4MDY3MCwtMTY2Mzcx
+NDc2NywtMjExODAzMTY1Miw1MzU4MzE1NDYsMTMzNTk3NTY4OS
+wyODg3NTkyMCwtNzAzNDYzNjk3LC0xNjI4MTUxOTM2LDY0MzMx
+Njc3NV19
 -->
