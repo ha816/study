@@ -367,9 +367,9 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 
 ### ref
 
-eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리나 유니크 키등의 제약 조건도 없다. 즉 아무 인덱스 종류와 관계없이 동등조건으로 검색할때는 ref 접근 방법이 된다. 
+eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리나 유니크 키등의 제약 조건도 없다. 즉 아무 인덱스를 사용하여 동등조건으로 검색할때는 ref 접근 방법이 된다. 
 
-eq_ref에서 존재하던 레코드가 1건이라는 보장이 없지만 동등한 조건으로만 비교되므로 매우 빠르다, 
+프라이머리나 유니크 키등의 제약에서 자유롭기 때문에 레코드가 1건이라는 보장이 없지만 동등한 조건으로만 비교되므로 매우 빠르다, 
 
 ```
 EXPLAIN
@@ -391,12 +391,13 @@ EXPLAIN
 SELECT * FROM titles WHERE to_date='1985-03-01' OR to_date IS NULL;
 ```
 
-
 ### fulltext
 
 MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접근법이다. 전문 검색 인덱스는 통계정보가 관리되지 않고, 전문 검색 인덱스를 사용하려면 전혀 다른 SQL 문법을 사용해야 한다. 그래서 MySQL 옵티마이저는 전문 인덱스를 사용할 수 있는  SQL에서는 쿼리의 비용과 관계없이 거의 매번 fulltext 접근법을 사용한다. 물론, fulltext보다 빠른 const, eq_ref, ref 접근을 사용할 수 있는 쿼리에서는 fulltext를 강제하지 않는다. 
 
 전문 검색에는 "MATCH ... AGAINTST ..." 구문을 사용하는데, 반드시 해당 테이블에 전문 검색용 인덱스가 준비되어 있어야만 한다. 만약 전문 인덱스가 없다면 쿼리는 오류가 발생하고 중단된다. 
+
+### unique_subquery
 
 ### 
 
@@ -416,11 +417,11 @@ MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYzMDk3ODgxLDg3MTEwNzIzLDE3OTEwNj
-Y5MDYsMTI0MjQ3MTg2NywtNTQ1Nzc5ODU0LDc3NjI1ODg1Niwt
-MTgyMDk0NTM3NCw3ODM5NDM2NjMsLTEyNjA5MTcyODEsLTQ2MD
-c2MzI1MSw3ODM3NzA5ODIsLTEzNDI2ODA2NzAsLTE2NjM3MTQ3
-NjcsLTIxMTgwMzE2NTIsNTM1ODMxNTQ2LDEzMzU5NzU2ODksMj
-g4NzU5MjAsLTcwMzQ2MzY5NywtMTYyODE1MTkzNiw2NDMzMTY3
-NzVdfQ==
+eyJoaXN0b3J5IjpbMTE1NjIyNTk5Myw4NzExMDcyMywxNzkxMD
+Y2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYs
+LTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00Nj
+A3NjMyNTEsNzgzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0
+NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0NiwxMzM1OTc1Njg5LD
+I4ODc1OTIwLC03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2
+Nzc1XX0=
 -->
