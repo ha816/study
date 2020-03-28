@@ -382,11 +382,19 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 위의 예제에서는 dept_emp 테이블의 프라이머리 키를 구성하는 컬럼(dept_no + emp_no) 중에서 일부(dept_no)만 사용됬기 때문에 결과 레코드가 1건이라는 보장이 없다. 그래서 const가 아닌 ref 접근 방법이 사용되었다. 
 
+ref_or_null
+: ref와 접근 방식이 같지만 NULL 비교를 추가한 형태다. 이름 그대로 ref 또는 NULL 비교(IS NULL) 접근 방식을 의미한다. 의미만 기억해두자.
+
+
 ### fulltext
 
 MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접근법이다. 전문 검색 인덱스는 통계정보가 관리되지 않고, 전문 검색 인덱스를 사용하려면 전혀 다른 SQL 문법을 사용해야 한다. 그래서 MySQL 옵티마이저는 전문 인덱스를 사용할 수 있는  SQL에서는 쿼리의 비용과 관계없이 거의 매번 fulltext 접근법을 사용한다. 물론, fulltext보다 빠른 const, eq_ref, ref 접근을 사용할 수 있는 쿼리에서는 fulltext를 강제하지 않는다. 
 
 전문 검색에는 "MATCH ... AGAINTST ..." 구문을 사용하는데, 반드시 해당 테이블에 전문 검색용 인덱스가 준비되어 있어야만 한다. 만약 전문 인덱스가 없다면 쿼리는 오류가 발생하고 중단된다. 
+
+### 
+
+
 
 ## possible_keys
 
@@ -402,11 +410,11 @@ MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NjE5MzAxMiwxNzkxMDY2OTA2LDEyND
-I0NzE4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYsLTE4MjA5NDUz
-NzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00NjA3NjMyNTEsNz
-gzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0NzY3LC0yMTE4
-MDMxNjUyLDUzNTgzMTU0NiwxMzM1OTc1Njg5LDI4ODc1OTIwLC
-03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2Nzc1LDk1NjY2
-NjIwXX0=
+eyJoaXN0b3J5IjpbODcxMTA3MjMsMTc5MTA2NjkwNiwxMjQyND
+cxODY3LC01NDU3Nzk4NTQsNzc2MjU4ODU2LC0xODIwOTQ1Mzc0
+LDc4Mzk0MzY2MywtMTI2MDkxNzI4MSwtNDYwNzYzMjUxLDc4Mz
+c3MDk4MiwtMTM0MjY4MDY3MCwtMTY2MzcxNDc2NywtMjExODAz
+MTY1Miw1MzU4MzE1NDYsMTMzNTk3NTY4OSwyODg3NTkyMCwtNz
+AzNDYzNjk3LC0xNjI4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYy
+MF19
 -->
