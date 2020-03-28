@@ -384,7 +384,7 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 ### fulltext
 
-MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접근법이다. 
+MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접근법이다. 전문 검색 인덱스는 통계정보가 관리되지 않고, 전문 검색 인덱스를 사용하려면 전혀 다른 SQL 문법을 사용해야 한다. 그래서 MySQL 옵티마이저는 전문 인덱스를 사용할 수 있는  SQL에서는 쿼리의 비용과 관계없이 거의 매번 fulltext 접근법을 사용한다. 물론, fulltext보다 빠른 const, eq_ref, ref 접근을 사용할 수 있는 쿼리에서는 fulltext를 강제하지 않는다. 
 
 ## possible_keys
 
@@ -400,11 +400,11 @@ MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxOTQyOTAwMywxMjQyNDcxODY3LC01ND
-U3Nzk4NTQsNzc2MjU4ODU2LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2
-MywtMTI2MDkxNzI4MSwtNDYwNzYzMjUxLDc4Mzc3MDk4MiwtMT
-M0MjY4MDY3MCwtMTY2MzcxNDc2NywtMjExODAzMTY1Miw1MzU4
-MzE1NDYsMTMzNTk3NTY4OSwyODg3NTkyMCwtNzAzNDYzNjk3LC
-0xNjI4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYyMCwzNjA1NDM0
-NjFdfQ==
+eyJoaXN0b3J5IjpbLTE0OTAzMzkzOTYsMTI0MjQ3MTg2NywtNT
+Q1Nzc5ODU0LDc3NjI1ODg1NiwtMTgyMDk0NTM3NCw3ODM5NDM2
+NjMsLTEyNjA5MTcyODEsLTQ2MDc2MzI1MSw3ODM3NzA5ODIsLT
+EzNDI2ODA2NzAsLTE2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1
+ODMxNTQ2LDEzMzU5NzU2ODksMjg4NzU5MjAsLTcwMzQ2MzY5Ny
+wtMTYyODE1MTkzNiw2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQz
+NDYxXX0=
 -->
