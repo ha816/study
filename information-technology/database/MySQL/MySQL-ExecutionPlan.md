@@ -289,7 +289,9 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 
 쿼리 실행 계획에서 type 이후 컬럼은 MySQL 서버가 테이블 레코드를 어떤 방식으로 읽었는지를 의미한다. 방식이란 인덱스를 사용해 레코드를 읽었는지 아니면 테이블을 처음부터 끝까지 읽는 풀 테이블 스캔으로 읽었는지 등을 의미한다. **type 컬럼은 인덱스를 효율적으로 사용하는지를 알려주기 때문에 반드시 체크해야할 중요한 정보다.**
 
-MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. MySQL에서는 하나의 테이블로 부터 레오크
+MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. MySQL에서는 하나의 테이블로 부터 레코드를 읽는 것도 조인처럼 처리한다. 그래서 태이블 갯수에 관계없이 모두 조인 타입으로 명시하고 있다. 하지만 조인 타입으로 생각하지 말고 각 테이블의 접근 방식(Access type)으로 이해하면 좋다. 
+
+
 
 ## possible_keys
 
@@ -305,11 +307,11 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2ODg4OTc2MCw2NDMzMTY3NzUsOTU2Nj
-Y2MjAsMzYwNTQzNDYxLC0zMzkwNjQ0MDcsLTc0NDc0Mjg1MCwy
-MTE3OTAwMjUsMTE2MjIxNTMzOCwtMTI4NDY0Mjk1OCwtMTcxND
-A1ODE1LDMyMTA5NTMyMywxNzE1NTYxNzk2LC0xNjU1NjYwMTgw
-LC0xMTE4MjgzODQwLDIxMjAxNzgyNTYsNTI1MjAzNTY3LC0xNT
-I5MDE1MzMyLDEyMDc5NTE0NDcsMTAzMzIyMzM1LDI0NzQwNjg0
-Nl19
+eyJoaXN0b3J5IjpbLTE2MjgxNTE5MzYsNjQzMzE2Nzc1LDk1Nj
+Y2NjIwLDM2MDU0MzQ2MSwtMzM5MDY0NDA3LC03NDQ3NDI4NTAs
+MjExNzkwMDI1LDExNjIyMTUzMzgsLTEyODQ2NDI5NTgsLTE3MT
+QwNTgxNSwzMjEwOTUzMjMsMTcxNTU2MTc5NiwtMTY1NTY2MDE4
+MCwtMTExODI4Mzg0MCwyMTIwMTc4MjU2LDUyNTIwMzU2NywtMT
+UyOTAxNTMzMiwxMjA3OTUxNDQ3LDEwMzMyMjMzNSwyNDc0MDY4
+NDZdfQ==
 -->
