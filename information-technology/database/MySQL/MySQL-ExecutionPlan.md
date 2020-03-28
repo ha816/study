@@ -361,6 +361,12 @@ EXPLAIN
 SELECT * FROM dept_emp WHERE dept_no = 'd005'
 ```
 
+|id| select_type|table| type|
+|--|--|--|--|
+|1| SIMPLE |dept_emp|ref|
+
+위의 예제에서는 dept_emp 테이블의 프라이머리 키를 구성하는 컬럼(dept_no + emp_no) 중에서
+
 
 ## possible_keys
 
@@ -376,11 +382,11 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDc2MzI1MSw3ODM3NzA5ODIsLTEzND
-I2ODA2NzAsLTE2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1ODMx
-NTQ2LDEzMzU5NzU2ODksMjg4NzU5MjAsLTcwMzQ2MzY5NywtMT
-YyODE1MTkzNiw2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQzNDYx
-LC0zMzkwNjQ0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2Mj
-IxNTMzOCwtMTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMy
-M119
+eyJoaXN0b3J5IjpbLTI1MzUyNTE3MCwtNDYwNzYzMjUxLDc4Mz
+c3MDk4MiwtMTM0MjY4MDY3MCwtMTY2MzcxNDc2NywtMjExODAz
+MTY1Miw1MzU4MzE1NDYsMTMzNTk3NTY4OSwyODg3NTkyMCwtNz
+AzNDYzNjk3LC0xNjI4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYy
+MCwzNjA1NDM0NjEsLTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMT
+c5MDAyNSwxMTYyMjE1MzM4LC0xMjg0NjQyOTU4LC0xNzE0MDU4
+MTVdfQ==
 -->
