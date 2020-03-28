@@ -409,8 +409,10 @@ WHERE 조건절에서 사용할 수 있는 IN (subquery) 형태의 쿼리에 접
 
 ```
 EXPLAIN
-SELECT * FROM titles WHERE to_date='1985-03-01' OR to_date IS NULL;
+SELECT * FROM departments WHERE dept_no IN (
+	SELECT dept_no FROM dept_emp WHERE emp_no = 10001);
 ```
+IN 영역을 자세히 보자. emp_no = 10001인 레코드 중에서 부서 번호(dept_no)는 중복이 없다. (de
 
 
 ### range
@@ -431,11 +433,11 @@ SELECT * FROM titles WHERE to_date='1985-03-01' OR to_date IS NULL;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODIxNzI2NjMsLTc5NTQ3NzM3MSw4Nz
-ExMDcyMywxNzkxMDY2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OTg1
-NCw3NzYyNTg4NTYsLTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0xMj
-YwOTE3MjgxLC00NjA3NjMyNTEsNzgzNzcwOTgyLC0xMzQyNjgw
-NjcwLC0xNjYzNzE0NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0Ni
-wxMzM1OTc1Njg5LDI4ODc1OTIwLC03MDM0NjM2OTcsLTE2Mjgx
-NTE5MzZdfQ==
+eyJoaXN0b3J5IjpbODM2NjMzNjQ3LC0xMzgyMTcyNjYzLC03OT
+U0NzczNzEsODcxMTA3MjMsMTc5MTA2NjkwNiwxMjQyNDcxODY3
+LC01NDU3Nzk4NTQsNzc2MjU4ODU2LC0xODIwOTQ1Mzc0LDc4Mz
+k0MzY2MywtMTI2MDkxNzI4MSwtNDYwNzYzMjUxLDc4Mzc3MDk4
+MiwtMTM0MjY4MDY3MCwtMTY2MzcxNDc2NywtMjExODAzMTY1Mi
+w1MzU4MzE1NDYsMTMzNTk3NTY4OSwyODg3NTkyMCwtNzAzNDYz
+Njk3XX0=
 -->
