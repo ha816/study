@@ -342,7 +342,7 @@ eq_ref는 여러 테이블이 조인되는 실행 계획에서만 표시된다. 
 EXPLAIN
 SELECT * FROM dept_emp de, employees e -- de JOIN e
 WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005' 
--- de 와 e 조인시 
+-- e.emp_no is Primary key 
 ```
 
 |id| select_type|table| type|
@@ -365,11 +365,11 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMDYwMjIzMCw3ODM3NzA5ODIsLTEzND
-I2ODA2NzAsLTE2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1ODMx
-NTQ2LDEzMzU5NzU2ODksMjg4NzU5MjAsLTcwMzQ2MzY5NywtMT
-YyODE1MTkzNiw2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQzNDYx
-LC0zMzkwNjQ0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2Mj
-IxNTMzOCwtMTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMy
-M119
+eyJoaXN0b3J5IjpbLTIwMTEzMzY2MDYsNzgzNzcwOTgyLC0xMz
+QyNjgwNjcwLC0xNjYzNzE0NzY3LC0yMTE4MDMxNjUyLDUzNTgz
+MTU0NiwxMzM1OTc1Njg5LDI4ODc1OTIwLC03MDM0NjM2OTcsLT
+E2MjgxNTE5MzYsNjQzMzE2Nzc1LDk1NjY2NjIwLDM2MDU0MzQ2
+MSwtMzM5MDY0NDA3LC03NDQ3NDI4NTAsMjExNzkwMDI1LDExNj
+IyMTUzMzgsLTEyODQ2NDI5NTgsLTE3MTQwNTgxNSwzMjEwOTUz
+MjNdfQ==
 -->
