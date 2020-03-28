@@ -443,7 +443,9 @@ EXPLAIN
 SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003';
 ```
 
-보통 인덱스 레인지 스캔이라 하면, const, ref, range라는 세 접근법을 모두 묶어 지칭한다. 
+보통 인덱스 레인지 스캔이라 하면, const, ref, range라는 세 접근법을 모두 묶어 지칭한다. 또는 인덱스를 효율적으로 사용 또는 범위 제한 조건으로 인덱스를 사용한다 등 모든 표현이 세 가지 접근법을 말한다. 
+
+### index_merge
 
 
 
@@ -462,7 +464,7 @@ SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003';
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5Mzk0NTgwMCwyMTQ3MzEyNDExLDE5ND
+eyJoaXN0b3J5IjpbMTMwNjAyMTk5NCwyMTQ3MzEyNDExLDE5ND
 I4Njg0LC0xNzU2MDkwMzQ5LDEzMDkyNDgzOTMsLTEzODIxNzI2
 NjMsLTc5NTQ3NzM3MSw4NzExMDcyMywxNzkxMDY2OTA2LDEyND
 I0NzE4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYsLTE4MjA5NDUz
