@@ -101,7 +101,7 @@ Slave
 # InnoDB Storage Engine 
 MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일하게 레코드 기반 잠금 기능이 있다.** 따라서 높은 동시성 처리가 가능하고 안정적이며 성능이 뛰어나다. 
 
-엔진 특성
+## Engine features
 * 프라이머리 키에 의한 클러스터링
 	* 모든 테이블은 기본적으로 프라이머리 키를 기준으로 클러스터링 되어 저장된다. 즉 프라이머리 키 값의 순서대로 저장된다. 따라서 쿼리 실행 계획에서 프라이머리 키를 사용하면 빠르게 처리가 될 가능성이 크다. 
 * 잠금이 필요 없는 일관된 읽기(Non-locking consistent read)
@@ -128,6 +128,7 @@ MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일�
 Undo 영역은 UPDATE, DELETE 같은 문장으로 데이터 변경 전에 이전 데이터를 보관하는 곳이다. Undo 데이터는 트랜잭션 롤백을 위해 사용된다. 또 트랜잭션 격리 수준에 맞는 MVCC를 위해 사용된다.
 
 #### MVCC(Multi Version Concurrency Control)
+
 MVCC는 일반적으로 레코드 레벨의 트랜잭션을 지원하는 DBMS가 제공하는 기능이다.  멀티 버전이라는 것은 한개의 레코드에 대해서 여러 버전이 동시에 관리된다는 의미이다. 한 레코드는 Buffer Pool(undo영역을 제외한...), Undo Record, Disk file에 3가지 버전으로 기록이 된다. 주요 목적은 잠금을 사용하지 않는 일관된 읽기(Non-locking consistent read)를 제공하는데 있는데, 이때 Undo 기록을 사용한다.
 
 UPDATE 문장이 실행되면 커밋 실행 여부와 관계 없이, Buffer Pool이 새로운 값으로 수정되고, 디스크의 레코드도 일반적으로 동일한 상태의 데이터가 된다. 그리고 이전의 레코드를 Undo영역에 저장한다.
@@ -149,7 +150,7 @@ MVCC의 주요 목적은 잠금 없는 일관된 읽기(Non-locking consistent r
 
 NDB(Network DataBase) 클러스터 스토리지 엔진은 네트워크를 통해 데이터 분산을 지원하는 스토리지 엔진이다. 
 
-## NDB 클러스터의 특징
+## Engine features
 
 - 무공유 클러스터링
 	- NDB 클러스터는 클러스터 그룹내의 모든 노드가 아무것도 공유하지 않는 무공유 아키텍처로 구현되어 있다. NDB 클러스터는 데이터를 저장하는 스토리지가 분산되어 관리되기 때문에 한 데이터 저장소가 작동을 멈추더라도 서비스에 영향이 없다. 
@@ -165,7 +166,7 @@ NDB(Network DataBase) 클러스터 스토리지 엔진은 네트워크를 통해
 
 위의 이야기를 들으면 Cluster가 모든 면에서 좋아 보이지만 꼭 그렇지만은 않다. Replication의 최대 장점은 바로 값의 변경이 매우 빠르다는 것이다. Cluster는 값을 변경하려고 하면 클러스터 군을 이루는 다른 서버들도 값이 변경되었다는 것을 확인해 주어야 한다. 하지만 replication은 마스터의 값만 변경하면 되기 때문에, 값을 변경하는 쿼리가 매우 빠르게 실행된다.  그래서 주로 실시간 동기화가 필요 없는 경우 cluster대신 replication을 사용한다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzY0NDMzNDcsLTgzMzc2MTM2NiwyMD
-c2NjQzMTg5LDk4NzQwNzM3NywxNzgwNzU4ODIxLC04MTI3OTI4
-NjNdfQ==
+eyJoaXN0b3J5IjpbLTc0NTk5MzU4NywtMTYzNjQ0MzM0NywtOD
+MzNzYxMzY2LDIwNzY2NDMxODksOTg3NDA3Mzc3LDE3ODA3NTg4
+MjEsLTgxMjc5Mjg2M119
 -->
