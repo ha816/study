@@ -374,8 +374,10 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 * eq_ref
 	* 조인에서 첫번째 읽은 테이블의 컬럼값이 두번째 테이블의 프라이머리나 유니크 키로 동등조건 검색 된 경우
 * ref
-	* 조인 순서와 인덱스 종류
-* 
+	* 조인 순서와 인덱스 종류에 관계 없이 동등 조건으로 검색
+
+위 세 가지 방법은 모두 WHERE 조건절에서 사용되는 비교 연산자가 동등 비교 연산자이어야 한다. 그리고 모두 매우 빠른 접근 법으로 인덱스의 분포도가 나쁘지 않다면 성능상 문제를 일으키지 않는다. 쿼리 튜닝을 할때도 이 접근법에 대해선 넘어가도 무방하다.  
+
 
 
 ## possible_keys
@@ -392,11 +394,11 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTUwMTA3OSw3NzYyNTg4NTYsLTE4Mj
-A5NDUzNzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00NjA3NjMy
-NTEsNzgzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0NzY3LC
-0yMTE4MDMxNjUyLDUzNTgzMTU0NiwxMzM1OTc1Njg5LDI4ODc1
-OTIwLC03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2Nzc1LD
-k1NjY2NjIwLDM2MDU0MzQ2MSwtMzM5MDY0NDA3LC03NDQ3NDI4
-NTBdfQ==
+eyJoaXN0b3J5IjpbLTIwNzE2ODQ3MTAsNzc2MjU4ODU2LC0xOD
+IwOTQ1Mzc0LDc4Mzk0MzY2MywtMTI2MDkxNzI4MSwtNDYwNzYz
+MjUxLDc4Mzc3MDk4MiwtMTM0MjY4MDY3MCwtMTY2MzcxNDc2Ny
+wtMjExODAzMTY1Miw1MzU4MzE1NDYsMTMzNTk3NTY4OSwyODg3
+NTkyMCwtNzAzNDYzNjk3LC0xNjI4MTUxOTM2LDY0MzMxNjc3NS
+w5NTY2NjYyMCwzNjA1NDM0NjEsLTMzOTA2NDQwNywtNzQ0NzQy
+ODUwXX0=
 -->
