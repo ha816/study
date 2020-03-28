@@ -406,13 +406,19 @@ index_subquery
 #### unique_subquery
 
 WHERE 조건절에서 사용할 수 있는 IN (subquery) 형태의 쿼리에 접근법이다. 의미 그대로 서브 쿼리에서 중복되지 않는 유니크한 값만 반환할때 사용한다.
-
 ```
 EXPLAIN
 SELECT * FROM departments WHERE dept_no IN (
 	SELECT dept_no FROM dept_emp WHERE emp_no = 10001);
 ```
-IN 영역을 자세히 보자. emp_no = 10001인 레코드 중에서 부서 번호(dept_no)는 중복이 없다. (dept_emp의 프라이머리키가 dept_no + emp_no) 그래서 uniq
+IN 영역을 자세히 보자. emp_no = 10001인 레코드 중에서 부서 번호(dept_no)는 중복이 없다. (dept_emp의 프라이머리키가 dept_no + emp_no)
+
+
+|id| select_type|table| type|
+|--|--|--|--|
+|1| PRIMARY|dept_emp|ref|
+
+####
 
 
 ### range
@@ -433,11 +439,11 @@ IN 영역을 자세히 보자. emp_no = 10001인 레코드 중에서 부서 번�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5OTc2NDE1NCwtMTc1NjA5MDM0OSwxMz
-A5MjQ4MzkzLC0xMzgyMTcyNjYzLC03OTU0NzczNzEsODcxMTA3
-MjMsMTc5MTA2NjkwNiwxMjQyNDcxODY3LC01NDU3Nzk4NTQsNz
-c2MjU4ODU2LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2MywtMTI2MDkx
-NzI4MSwtNDYwNzYzMjUxLDc4Mzc3MDk4MiwtMTM0MjY4MDY3MC
-wtMTY2MzcxNDc2NywtMjExODAzMTY1Miw1MzU4MzE1NDYsMTMz
-NTk3NTY4OV19
+eyJoaXN0b3J5IjpbLTEyODgyOTA0MTcsLTE3NTYwOTAzNDksMT
+MwOTI0ODM5MywtMTM4MjE3MjY2MywtNzk1NDc3MzcxLDg3MTEw
+NzIzLDE3OTEwNjY5MDYsMTI0MjQ3MTg2NywtNTQ1Nzc5ODU0LD
+c3NjI1ODg1NiwtMTgyMDk0NTM3NCw3ODM5NDM2NjMsLTEyNjA5
+MTcyODEsLTQ2MDc2MzI1MSw3ODM3NzA5ODIsLTEzNDI2ODA2Nz
+AsLTE2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1ODMxNTQ2LDEz
+MzU5NzU2ODldfQ==
 -->
