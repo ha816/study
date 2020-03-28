@@ -319,7 +319,7 @@ eq_ref
 : 조인에서 첫번째 읽은 테이블의 컬럼값이 두번째 테이블의 프라이머리나 유니크 키로 동등조건 검색 된 경우
 
 ref
-: 조인 순서와 관계 없이 인덱스 동등 조건으로 검색
+: 조인 순서와 관계 없이 아무 인덱스를 사용하여 동등 조건으로 검색
 
 위 세 가지 방법은 모두 WHERE 조건절에서 사용되는 비교 연산자가 동등 비교 연산자이어야 한다. 그리고 모두 매우 빠른 접근 법으로 인덱스의 분포도가 나쁘지 않다면 성능상 문제를 일으키지 않는다. 쿼리 튜닝을 할때도 이 접근법에 대해선 넘어가도 무방하다.  
 
@@ -382,6 +382,10 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 위의 예제에서는 dept_emp 테이블의 프라이머리 키를 구성하는 컬럼(dept_no + emp_no) 중에서 일부(dept_no)만 사용됬기 때문에 결과 레코드가 1건이라는 보장이 없다. 그래서 const가 아닌 ref 접근 방법이 사용되었다. 
 
+### fulltext
+
+MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접근법이다. 
+
 ## possible_keys
 
 ## key
@@ -396,11 +400,11 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDM1NjkwOTYsMTI0MjQ3MTg2NywtNT
-Q1Nzc5ODU0LDc3NjI1ODg1NiwtMTgyMDk0NTM3NCw3ODM5NDM2
-NjMsLTEyNjA5MTcyODEsLTQ2MDc2MzI1MSw3ODM3NzA5ODIsLT
-EzNDI2ODA2NzAsLTE2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1
-ODMxNTQ2LDEzMzU5NzU2ODksMjg4NzU5MjAsLTcwMzQ2MzY5Ny
-wtMTYyODE1MTkzNiw2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQz
-NDYxXX0=
+eyJoaXN0b3J5IjpbLTkxOTQyOTAwMywxMjQyNDcxODY3LC01ND
+U3Nzk4NTQsNzc2MjU4ODU2LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2
+MywtMTI2MDkxNzI4MSwtNDYwNzYzMjUxLDc4Mzc3MDk4MiwtMT
+M0MjY4MDY3MCwtMTY2MzcxNDc2NywtMjExODAzMTY1Miw1MzU4
+MzE1NDYsMTMzNTk3NTY4OSwyODg3NTkyMCwtNzAzNDYzNjk3LC
+0xNjI4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYyMCwzNjA1NDM0
+NjFdfQ==
 -->
