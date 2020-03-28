@@ -319,7 +319,7 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 EXPLAIN  SELECT * FROM employyess WHERE emp_no = 10001; 
 -- UNIQUE KEY WHERE PHRASE
 ```
-const 실행계획은 쿼리를 최적화하는 단계에서 모두 상수화를 한다, 그래서 const이다. 
+const는 쿼리를 최적화하는 단계에서 모두 상수화를 한다, 그래서 const이다. 
 
 ```
 EXPLAIN
@@ -352,11 +352,11 @@ SELECT first_name FROM employees e2 WHERE emp_no = 100001
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzEyNTY5NjksNTM1ODMxNTQ2LDEzMz
-U5NzU2ODksMjg4NzU5MjAsLTcwMzQ2MzY5NywtMTYyODE1MTkz
-Niw2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQzNDYxLC0zMzkwNj
-Q0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2MjIxNTMzOCwt
-MTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMyMywxNzE1NT
-YxNzk2LC0xNjU1NjYwMTgwLC0xMTE4MjgzODQwLDIxMjAxNzgy
-NTZdfQ==
+eyJoaXN0b3J5IjpbLTEwOTY5Nzk1NSw1MzU4MzE1NDYsMTMzNT
+k3NTY4OSwyODg3NTkyMCwtNzAzNDYzNjk3LC0xNjI4MTUxOTM2
+LDY0MzMxNjc3NSw5NTY2NjYyMCwzNjA1NDM0NjEsLTMzOTA2ND
+QwNywtNzQ0NzQyODUwLDIxMTc5MDAyNSwxMTYyMjE1MzM4LC0x
+Mjg0NjQyOTU4LC0xNzE0MDU4MTUsMzIxMDk1MzIzLDE3MTU1Nj
+E3OTYsLTE2NTU2NjAxODAsLTExMTgyODM4NDAsMjEyMDE3ODI1
+Nl19
 -->
