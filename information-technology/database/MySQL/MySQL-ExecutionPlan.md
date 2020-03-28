@@ -421,7 +421,7 @@ IN 영역을 자세히 보자. emp_no = 10001인 레코드 중에서 부서 번�
 
 #### index_subquery
 
-IN 연산자의 특성상, IN(subquery) 또는 IN(상수 나열) 형태의 조건은 괄호안에 있는 값의 목록에서 중복된 값
+IN 연산자의 특성상, IN(subquery) 또는 IN(상수 나열) 형태의 조건은 괄호안에 있는 값의 목록에서 중복된 값이 먼저 제거되어야 한다. 앞서 unique_subquery는 유니크함이 보장되기 때문에 중복 제거가 필요 없다. IN(subquery)에서 subquery가 중복된 값을 가질 수 있지만 중복된 값을 인덱스를 이용해 제거가 가능할때 index_subquery가 표시된다.
 
 
 ### range
@@ -442,11 +442,11 @@ IN 연산자의 특성상, IN(subquery) 또는 IN(상수 나열) 형태의 조�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIwMTYwMDUyLC0xNzU2MDkwMzQ5LDEzMD
-kyNDgzOTMsLTEzODIxNzI2NjMsLTc5NTQ3NzM3MSw4NzExMDcy
-MywxNzkxMDY2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OTg1NCw3Nz
-YyNTg4NTYsLTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0xMjYwOTE3
-MjgxLC00NjA3NjMyNTEsNzgzNzcwOTgyLC0xMzQyNjgwNjcwLC
-0xNjYzNzE0NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0NiwxMzM1
-OTc1Njg5XX0=
+eyJoaXN0b3J5IjpbMTIxNjMxOTEwOSwtMTc1NjA5MDM0OSwxMz
+A5MjQ4MzkzLC0xMzgyMTcyNjYzLC03OTU0NzczNzEsODcxMTA3
+MjMsMTc5MTA2NjkwNiwxMjQyNDcxODY3LC01NDU3Nzk4NTQsNz
+c2MjU4ODU2LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2MywtMTI2MDkx
+NzI4MSwtNDYwNzYzMjUxLDc4Mzc3MDk4MiwtMTM0MjY4MDY3MC
+wtMTY2MzcxNDc2NywtMjExODAzMTY1Miw1MzU4MzE1NDYsMTMz
+NTk3NTY4OV19
 -->
