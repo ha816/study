@@ -335,7 +335,9 @@ SELECT first_name FROM employees e2 WHERE emp_no = 100001
 
 당연히 다중 컬럼으로 구성된 프라이머리키나 유니크 키 모든 컬럼을 동등 조건으로 WHERE 절에 사용하면 const가 표시된다.
 
-> 
+### eq_ref
+
+
 
 
 ## possible_keys
@@ -352,7 +354,7 @@ SELECT first_name FROM employees e2 WHERE emp_no = 100001
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTY5Nzk1NSw1MzU4MzE1NDYsMTMzNT
+eyJoaXN0b3J5IjpbLTM0MTg4Mjg4Miw1MzU4MzE1NDYsMTMzNT
 k3NTY4OSwyODg3NTkyMCwtNzAzNDYzNjk3LC0xNjI4MTUxOTM2
 LDY0MzMxNjc3NSw5NTY2NjYyMCwzNjA1NDM0NjEsLTMzOTA2ND
 QwNywtNzQ0NzQyODUwLDIxMTc5MDAyNSwxMTYyMjE1MzM4LC0x
