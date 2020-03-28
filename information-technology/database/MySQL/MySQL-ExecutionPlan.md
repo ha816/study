@@ -367,7 +367,7 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 
 ### ref
 
-eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리나 유니크 키등의 제약 조건도 없다. 인덱스 종류와 관계없이 동등조건으로 검색할때는 ref 접근 방법이 된다. 
+eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리나 유니크 키등의 제약 조건도 없다. 즉 아무 인덱스 종류와 관계없이 동등조건으로 검색할때는 ref 접근 방법이 된다. 
 
 eq_ref에서 존재하던 레코드가 1건이라는 보장이 없지만 동등한 조건으로만 비교되므로 매우 빠르다, 
 
@@ -382,8 +382,14 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 위의 예제에서는 dept_emp 테이블의 프라이머리 키를 구성하는 컬럼(dept_no + emp_no) 중에서 일부(dept_no)만 사용됬기 때문에 결과 레코드가 1건이라는 보장이 없다. 그래서 const가 아닌 ref 접근 방법이 사용되었다. 
 
-#### ref_or_null
-: ref와 접근 방식이 같지만 NULL 비교를 추가한 형태다. 이름 그대로 ref 또는 NULL 비교(IS NULL) 접근 방식을 의미한다. 의미만 기억해두자.
+### ref_or_null
+
+ref와 접근 방식이 같지만 NULL 비교를 추가한 형태다. 이름 그대로 ref 또는 NULL 비교(IS NULL) 접근 방식을 의미한다. 의미만 기억해두자.
+
+```
+EXPLAIN
+SELECT * FROM titles WHERE to_date='1985-03-01' OR to_date IS NULL;
+```
 
 
 ### fulltext
@@ -410,11 +416,11 @@ MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDg3Mzg2MSw4NzExMDcyMywxNzkxMD
-Y2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYs
-LTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00Nj
-A3NjMyNTEsNzgzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0
-NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0NiwxMzM1OTc1Njg5LD
-I4ODc1OTIwLC03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2
-Nzc1XX0=
+eyJoaXN0b3J5IjpbOTYzMDk3ODgxLDg3MTEwNzIzLDE3OTEwNj
+Y5MDYsMTI0MjQ3MTg2NywtNTQ1Nzc5ODU0LDc3NjI1ODg1Niwt
+MTgyMDk0NTM3NCw3ODM5NDM2NjMsLTEyNjA5MTcyODEsLTQ2MD
+c2MzI1MSw3ODM3NzA5ODIsLTEzNDI2ODA2NzAsLTE2NjM3MTQ3
+NjcsLTIxMTgwMzE2NTIsNTM1ODMxNTQ2LDEzMzU5NzU2ODksMj
+g4NzU5MjAsLTcwMzQ2MzY5NywtMTYyODE1MTkzNiw2NDMzMTY3
+NzVdfQ==
 -->
