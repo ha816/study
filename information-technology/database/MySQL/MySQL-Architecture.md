@@ -137,7 +137,7 @@ SELECT의 반환 결과는 설정된 격리 수준(Isolation level)에 따라 �
 
 만약 ROLLBACK을 하면, 언두 영역의 백업된 데이터를 Buffer Pool과 Disk로 복구하고, 언두 영역의 내용을 삭제한다. 그렇다고 언두 데이터가 바로 삭제 되는것은 아니고 언두 영역을 필요로 하는 트랜잭션이 더 없을때 비로소 삭제 된다. 
 
-MVCC의 주요 목적은 잠금 없는 일관된 읽기(Non-locking consistent read)를 사용하기이라 이야기 했다. 일관된 읽기를 사용하기 위해서는 두 조건이 따르는데 일단 격리 수준이 SERIALIZABLE이 아니고, 다른 트랜잭션에서 INSERT 작업을 하지 말아야 한다. SERIALIZABLE보다 낮은 수준에서 INSERT 작업 중이면 PhantomRead 상황이 발생할 수 있기 때문에 여기서는 잠금 없는 일관된 읽기가 불가능하다. 
+MVCC의 주요 목적은 잠금 없는 일관된 읽기(Non-locking consistent read)를 사용하는 것이라고 이야기 했다. 일관된 읽기를 사용하기 위해서는 두 조건이 따르는데 일단 격리 수준이 SERIALIZABLE이 아니고, 다른 트랜잭션에서 INSERT 작업을 하지 말아야 한다. SERIALIZABLE보다 낮은 수준에서 INSERT 작업 중이면 PhantomRead 상황이 발생할 수 있기 때문에 여기서는 잠금 없는 일관된 읽기가 불가능하다. 
 
 ## Log Buffer & Redo Log
 
@@ -167,6 +167,6 @@ MVCC의 주요 목적은 잠금 없는 일관된 읽기(Non-locking consistent r
 
 위의 이야기를 들으면 Cluster가 모든 면에서 좋아 보이지만 꼭 그렇지만은 않다. Replication의 최대 장점은 바로 값의 변경이 매우 빠르다는 것이다. Cluster는 값을 변경하려고 하면 클러스터 군을 이루는 다른 서버들도 값이 변경되었다는 것을 확인해 주어야 한다. 하지만 replication은 마스터의 값만 변경하면 되기 때문에, 값을 변경하는 쿼리가 매우 빠르게 실행된다.  그래서 주로 실시간 동기화가 필요 없는 경우 cluster대신 replication을 사용한다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NjY0MzE4OSw5ODc0MDczNzcsMTc4MD
-c1ODgyMSwtODEyNzkyODYzXX0=
+eyJoaXN0b3J5IjpbLTgzMzc2MTM2NiwyMDc2NjQzMTg5LDk4Nz
+QwNzM3NywxNzgwNzU4ODIxLC04MTI3OTI4NjNdfQ==
 -->
