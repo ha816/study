@@ -310,8 +310,9 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 ### system
 
-레코드가 1건만 존재하는 테이블 또는 한건도 존재하지 않는 테이블을 참조하는 접근 방법이다. MyISA
+레코드가 1건만 존재하는 테이블 또는 한건도 존재하지 않는 테이블을 참조하는 접근 방법이다. MyISAM이나 MEMORY 테이블에서만 사용되는 접근 방법이다. InnoDB는 나타나지 않는다. InnoDB에서는 ALL 또는 index로 나타날 가능성이 크다. 사실 레코드가 1건 이하인 경우에만 볼 수 있으므로 거의 볼수 없다.
 
+### 
 
 ## possible_keys
 
@@ -327,11 +328,11 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MjA1MTMxMCwtNzAzNDYzNjk3LC0xNj
-I4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYyMCwzNjA1NDM0NjEs
-LTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMTc5MDAyNSwxMTYyMj
-E1MzM4LC0xMjg0NjQyOTU4LC0xNzE0MDU4MTUsMzIxMDk1MzIz
-LDE3MTU1NjE3OTYsLTE2NTU2NjAxODAsLTExMTgyODM4NDAsMj
-EyMDE3ODI1Niw1MjUyMDM1NjcsLTE1MjkwMTUzMzIsMTIwNzk1
-MTQ0N119
+eyJoaXN0b3J5IjpbMjg4NzU5MjAsLTcwMzQ2MzY5NywtMTYyOD
+E1MTkzNiw2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQzNDYxLC0z
+MzkwNjQ0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2MjIxNT
+MzOCwtMTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMyMywx
+NzE1NTYxNzk2LC0xNjU1NjYwMTgwLC0xMTE4MjgzODQwLDIxMj
+AxNzgyNTYsNTI1MjAzNTY3LC0xNTI5MDE1MzMyLDEyMDc5NTE0
+NDddfQ==
 -->
