@@ -382,7 +382,7 @@ SELECT * FROM dept_emp WHERE dept_no = 'd005'
 
 위의 예제에서는 dept_emp 테이블의 프라이머리 키를 구성하는 컬럼(dept_no + emp_no) 중에서 일부(dept_no)만 사용됬기 때문에 결과 레코드가 1건이라는 보장이 없다. 그래서 const가 아닌 ref 접근 방법이 사용되었다. 
 
-ref_or_null
+#### ref_or_null
 : ref와 접근 방식이 같지만 NULL 비교를 추가한 형태다. 이름 그대로 ref 또는 NULL 비교(IS NULL) 접근 방식을 의미한다. 의미만 기억해두자.
 
 
@@ -410,11 +410,11 @@ MySQL의 전문 검색(Fulltext) 인덱스를 사용해 레코드를 읽는 접�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxMTA3MjMsMTc5MTA2NjkwNiwxMjQyND
-cxODY3LC01NDU3Nzk4NTQsNzc2MjU4ODU2LC0xODIwOTQ1Mzc0
-LDc4Mzk0MzY2MywtMTI2MDkxNzI4MSwtNDYwNzYzMjUxLDc4Mz
-c3MDk4MiwtMTM0MjY4MDY3MCwtMTY2MzcxNDc2NywtMjExODAz
-MTY1Miw1MzU4MzE1NDYsMTMzNTk3NTY4OSwyODg3NTkyMCwtNz
-AzNDYzNjk3LC0xNjI4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYy
-MF19
+eyJoaXN0b3J5IjpbLTExNDg3Mzg2MSw4NzExMDcyMywxNzkxMD
+Y2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYs
+LTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00Nj
+A3NjMyNTEsNzgzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0
+NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0NiwxMzM1OTc1Njg5LD
+I4ODc1OTIwLC03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2
+Nzc1XX0=
 -->
