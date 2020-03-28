@@ -356,6 +356,11 @@ eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리
 
 eq_ref에서 존재하던 레코드가 1건이라는 보장이 없지만 동등한 조건으로만 비교되므로 매우 빠르다, 
 
+```
+EXPLAIN
+SELECT * FROM dept_emp WHERE dept_no = 'd005'
+```
+
 
 ## possible_keys
 
@@ -371,11 +376,11 @@ eq_ref에서 존재하던 레코드가 1건이라는 보장이 없지만 동등�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMDQ2MDMyLDc4Mzc3MDk4MiwtMTM0Mj
-Y4MDY3MCwtMTY2MzcxNDc2NywtMjExODAzMTY1Miw1MzU4MzE1
-NDYsMTMzNTk3NTY4OSwyODg3NTkyMCwtNzAzNDYzNjk3LC0xNj
-I4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYyMCwzNjA1NDM0NjEs
-LTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMTc5MDAyNSwxMTYyMj
-E1MzM4LC0xMjg0NjQyOTU4LC0xNzE0MDU4MTUsMzIxMDk1MzIz
-XX0=
+eyJoaXN0b3J5IjpbLTQ2MDc2MzI1MSw3ODM3NzA5ODIsLTEzND
+I2ODA2NzAsLTE2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1ODMx
+NTQ2LDEzMzU5NzU2ODksMjg4NzU5MjAsLTcwMzQ2MzY5NywtMT
+YyODE1MTkzNiw2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQzNDYx
+LC0zMzkwNjQ0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2Mj
+IxNTMzOCwtMTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMy
+M119
 -->
