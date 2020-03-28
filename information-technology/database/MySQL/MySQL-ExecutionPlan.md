@@ -337,6 +337,7 @@ SELECT first_name FROM employees e2 WHERE emp_no = 100001
 
 ### eq_ref
 
+eq_ref는 여러 테이블이 조인되는 실행 계획에서만 표시된다. 조인에서 처음 읽은 테이블의 컬럼 값을 그 다음 읽어야 할 테이블의 프라이머리키나 유니크 키 컬럼의 검색 조건에 사용할 때 eq_ref라 한다. 이때 두 번째 이후로 읽는 테이블의 type_ 컬럼에 eq_ref가 표시된다. 
 
 
 
@@ -354,11 +355,11 @@ SELECT first_name FROM employees e2 WHERE emp_no = 100001
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MTg4Mjg4Miw1MzU4MzE1NDYsMTMzNT
-k3NTY4OSwyODg3NTkyMCwtNzAzNDYzNjk3LC0xNjI4MTUxOTM2
-LDY0MzMxNjc3NSw5NTY2NjYyMCwzNjA1NDM0NjEsLTMzOTA2ND
-QwNywtNzQ0NzQyODUwLDIxMTc5MDAyNSwxMTYyMjE1MzM4LC0x
-Mjg0NjQyOTU4LC0xNzE0MDU4MTUsMzIxMDk1MzIzLDE3MTU1Nj
-E3OTYsLTE2NTU2NjAxODAsLTExMTgyODM4NDAsMjEyMDE3ODI1
-Nl19
+eyJoaXN0b3J5IjpbLTIxMTgwMzE2NTIsNTM1ODMxNTQ2LDEzMz
+U5NzU2ODksMjg4NzU5MjAsLTcwMzQ2MzY5NywtMTYyODE1MTkz
+Niw2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQzNDYxLC0zMzkwNj
+Q0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2MjIxNTMzOCwt
+MTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMyMywxNzE1NT
+YxNzk2LC0xNjU1NjYwMTgwLC0xMTE4MjgzODQwLDIxMjAxNzgy
+NTZdfQ==
 -->
