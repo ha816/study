@@ -312,7 +312,9 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 레코드가 1건만 존재하는 테이블 또는 한건도 존재하지 않는 테이블을 참조하는 접근 방법이다. MyISAM이나 MEMORY 테이블에서만 사용되는 접근 방법이다. InnoDB는 나타나지 않는다. InnoDB에서는 ALL 또는 index로 나타날 가능성이 크다. 사실 레코드가 1건 이하인 경우에만 볼 수 있으므로 거의 볼수 없다.
 
-### 
+### const
+
+테이블 레코드의 건수에 관계없이 쿼리가 프라이머리 키나 유니크 키 컬럼을 이용하는 WHERE조건 절을 가지고 있고, 반드시 1건을 반환하는 방식이다. 다른 DBMS에[서는 유니크 인덱스 스캔(UNIQUE INDEX SCAN)이라고도 한다.
 
 ## possible_keys
 
@@ -328,11 +330,11 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg4NzU5MjAsLTcwMzQ2MzY5NywtMTYyOD
-E1MTkzNiw2NDMzMTY3NzUsOTU2NjY2MjAsMzYwNTQzNDYxLC0z
-MzkwNjQ0MDcsLTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2MjIxNT
-MzOCwtMTI4NDY0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMyMywx
-NzE1NTYxNzk2LC0xNjU1NjYwMTgwLC0xMTE4MjgzODQwLDIxMj
-AxNzgyNTYsNTI1MjAzNTY3LC0xNTI5MDE1MzMyLDEyMDc5NTE0
-NDddfQ==
+eyJoaXN0b3J5IjpbMTMzNTk3NTY4OSwyODg3NTkyMCwtNzAzND
+YzNjk3LC0xNjI4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYyMCwz
+NjA1NDM0NjEsLTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMTc5MD
+AyNSwxMTYyMjE1MzM4LC0xMjg0NjQyOTU4LC0xNzE0MDU4MTUs
+MzIxMDk1MzIzLDE3MTU1NjE3OTYsLTE2NTU2NjAxODAsLTExMT
+gyODM4NDAsMjEyMDE3ODI1Niw1MjUyMDM1NjcsLTE1MjkwMTUz
+MzJdfQ==
 -->
