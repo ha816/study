@@ -99,7 +99,7 @@ Slave
 
 
 # InnoDB Storage Engine 
-MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일하게 레코드 기반 잠금 기능이 있다.** 따라서 높은 동시성 처가 가능하고 안정적이며 성능이 뛰어나다. 
+MySQL에서 사용할 수 있는 스토리지 엔진 중에서 **거의 유일하게 레코드 기반 잠금 기능이 있다.** 따라서 높은 동시성 처리가 가능하고 안정적이며 성능이 뛰어나다. 
 
 엔진 특성
 * 프라이머리 키에 의한 클러스터링
@@ -167,5 +167,5 @@ MVCC의 주요 목적은 잠금 없는 일관된 읽기(Non-locking consistent r
 
 위의 이야기를 들으면 Cluster가 모든 면에서 좋아 보이지만 꼭 그렇지만은 않다. Replication의 최대 장점은 바로 값의 변경이 매우 빠르다는 것이다. Cluster는 값을 변경하려고 하면 클러스터 군을 이루는 다른 서버들도 값이 변경되었다는 것을 확인해 주어야 한다. 하지만 replication은 마스터의 값만 변경하면 되기 때문에, 값을 변경하는 쿼리가 매우 빠르게 실행된다.  그래서 주로 실시간 동기화가 필요 없는 경우 cluster대신 replication을 사용한다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMjc5Mjg2M119
+eyJoaXN0b3J5IjpbMTc4MDc1ODgyMSwtODEyNzkyODYzXX0=
 -->
