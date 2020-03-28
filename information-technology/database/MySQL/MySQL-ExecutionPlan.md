@@ -403,6 +403,11 @@ index_subquery
 
 사실 위 두가지 접근법은 IN() 안에 있는 중복 값을 아주 낮은 비용으로 제거한다. 
 
+#### unique_subquery
+
+WHERE 조건절에서 사용할 수 있는 IN (subquery) 형태의 쿼리에 접근법이다. 의미 그대로 서브 쿼리에서 중복되지 않는 유니크한 값만 반환할때 사용한다.
+
+
 
 ### range
 
@@ -422,11 +427,11 @@ index_subquery
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTUzMjgzMTcsODcxMTA3MjMsMTc5MT
-A2NjkwNiwxMjQyNDcxODY3LC01NDU3Nzk4NTQsNzc2MjU4ODU2
-LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2MywtMTI2MDkxNzI4MSwtND
-YwNzYzMjUxLDc4Mzc3MDk4MiwtMTM0MjY4MDY3MCwtMTY2Mzcx
-NDc2NywtMjExODAzMTY1Miw1MzU4MzE1NDYsMTMzNTk3NTY4OS
-wyODg3NTkyMCwtNzAzNDYzNjk3LC0xNjI4MTUxOTM2LDY0MzMx
-Njc3NV19
+eyJoaXN0b3J5IjpbLTc5NTQ3NzM3MSw4NzExMDcyMywxNzkxMD
+Y2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYs
+LTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00Nj
+A3NjMyNTEsNzgzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0
+NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0NiwxMzM1OTc1Njg5LD
+I4ODc1OTIwLC03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2
+Nzc1XX0=
 -->
