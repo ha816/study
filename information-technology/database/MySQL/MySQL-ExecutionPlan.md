@@ -487,7 +487,7 @@ MySQL 옵티마이저는 쿼리를 처리하기 위해 여러 방법을 고려�
 
 ## key
 
-
+possible_keys 컬럼의 인덱스가 후보였다면 key 컬럼에 표시되는 인덱스는 실제 최종 선택된 실행 계획에서 사용하는 인덱스를 말한다.
 
 ## key_len
 
@@ -499,11 +499,11 @@ MySQL 옵티마이저는 쿼리를 처리하기 위해 여러 방법을 고려�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDE0Mzc2NTksNjg4NzM4MjUxLC0xNj
-IxNTgyNjYyLDE1NzQyODQzNDAsLTEzMDc2Nzc1NjIsLTIxNDA4
-NzgzNTUsLTEzNzgyMjQ2NjIsLTExMzA5NzU2MzQsLTExMjMzMz
-A3ODUsMjE0NzMxMjQxMSwxOTQyODY4NCwtMTc1NjA5MDM0OSwx
-MzA5MjQ4MzkzLC0xMzgyMTcyNjYzLC03OTU0NzczNzEsODcxMT
-A3MjMsMTc5MTA2NjkwNiwxMjQyNDcxODY3LC01NDU3Nzk4NTQs
-Nzc2MjU4ODU2XX0=
+eyJoaXN0b3J5IjpbMTA1MTQ2NzM3MiwtMTM0MTQzNzY1OSw2OD
+g3MzgyNTEsLTE2MjE1ODI2NjIsMTU3NDI4NDM0MCwtMTMwNzY3
+NzU2MiwtMjE0MDg3ODM1NSwtMTM3ODIyNDY2MiwtMTEzMDk3NT
+YzNCwtMTEyMzMzMDc4NSwyMTQ3MzEyNDExLDE5NDI4Njg0LC0x
+NzU2MDkwMzQ5LDEzMDkyNDgzOTMsLTEzODIxNzI2NjMsLTc5NT
+Q3NzM3MSw4NzExMDcyMywxNzkxMDY2OTA2LDEyNDI0NzE4Njcs
+LTU0NTc3OTg1NF19
 -->
