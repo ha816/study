@@ -447,11 +447,11 @@ SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003';
 
 ### index_merge
 
-2개 이상의 인덱스를 이용해서 각 검색 결과를 만들어 낸후, 그 결과를 병합하여 처리하는 방식이다. index_merge는 여러 인덱스를 읽어야 하기 때문에 일반적으로 range 접근법 보다 효율이 떨어진다. 그리고
-그리고 전문 검색 인덱스에서는 적용이 불가하다.
-* AND와 OR 연산지 복잡하게 연결된 쿼리에서는 제대로 최적화를 못할때가 많다.
-* 
-* index_merge의 접근 법으로 처리된 결과는 항상 2개 이상의 집합이기 때문에 추가적인 집합 연산이 필요하다.
+2개 이상의 인덱스를 이용해서 각 검색 결과를 만들어 낸후, 그 결과를 병합하여 처리하는 방식이다. index_merge는 여러 인덱스를 읽어야 하기 때문에 일반적으로 range 접근법 보다 효율이 떨어진다. 그 밖에 여러 단점이 있다.
+ 
+ * 전문 검색 인덱스에서는 적용이 불가하다.
+ * index_merge의 접근 법으로 처리된 결과는 항상 2개 이상의 집합이기 때문에 추가적인 집합 연산이 필요하다.
+ * AND와 OR 연산지 복잡하게 연결된 쿼리에서는 제대로 최적화를 못할때가 많다.
 
 ### index(index full scan)
 
@@ -495,7 +495,7 @@ SELECT * FROM departments ORDER BY dept_name DESC LIMIT 10;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTkyMzc2MjEsNjg4NzM4MjUxLC0xNj
+eyJoaXN0b3J5IjpbLTEyOTUwODY1NzEsNjg4NzM4MjUxLC0xNj
 IxNTgyNjYyLDE1NzQyODQzNDAsLTEzMDc2Nzc1NjIsLTIxNDA4
 NzgzNTUsLTEzNzgyMjQ2NjIsLTExMzA5NzU2MzQsLTExMjMzMz
 A3ODUsMjE0NzMxMjQxMSwxOTQyODY4NCwtMTc1NjA5MDM0OSwx
