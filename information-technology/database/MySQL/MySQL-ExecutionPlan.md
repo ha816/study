@@ -297,8 +297,16 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 * ref
 * fulltext
 * ref_or_null
+* unique_subquery
+* index_subquery
+* range
+* index_merge
+* index
+* ALL
 
 총 12가지 접근 방법 중에서 ALL을 제외한 나머지는 모두 인덱스를 사용한 접근 방식이다. 하나의 단위 SELECT 쿼리는 위의 접근 방법 중에서 단 하나만 사용할 수 있다. 또한 index_merge를 제외한 나머지 접근 방법은 반드시 하나의 인덱스만 사용한다.   따라서 실행 계획에서 각 라인에 접근 방법이 2개 이상 표시 되지 않으며, index_merge 이외에 type 에서는 인덱스 항목에도 단 하나의 인덱스 이름만 표시된다. 
+
+참고로 위의 나열된 접근 방식은 빠른 순서대로 나열된 것이다. MySQL 옵티마이저는 이런 접근 방식과 비용을 함께 계
 
 
 ## possible_keys
@@ -315,11 +323,11 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAwNTE1OTkzLC03MDM0NjM2OTcsLTE2Mj
-gxNTE5MzYsNjQzMzE2Nzc1LDk1NjY2NjIwLDM2MDU0MzQ2MSwt
-MzM5MDY0NDA3LC03NDQ3NDI4NTAsMjExNzkwMDI1LDExNjIyMT
-UzMzgsLTEyODQ2NDI5NTgsLTE3MTQwNTgxNSwzMjEwOTUzMjMs
-MTcxNTU2MTc5NiwtMTY1NTY2MDE4MCwtMTExODI4Mzg0MCwyMT
-IwMTc4MjU2LDUyNTIwMzU2NywtMTUyOTAxNTMzMiwxMjA3OTUx
-NDQ3XX0=
+eyJoaXN0b3J5IjpbMTc1NTc0MTUwNiwtNzAzNDYzNjk3LC0xNj
+I4MTUxOTM2LDY0MzMxNjc3NSw5NTY2NjYyMCwzNjA1NDM0NjEs
+LTMzOTA2NDQwNywtNzQ0NzQyODUwLDIxMTc5MDAyNSwxMTYyMj
+E1MzM4LC0xMjg0NjQyOTU4LC0xNzE0MDU4MTUsMzIxMDk1MzIz
+LDE3MTU1NjE3OTYsLTE2NTU2NjAxODAsLTExMTgyODM4NDAsMj
+EyMDE3ODI1Niw1MjUyMDM1NjcsLTE1MjkwMTUzMzIsMTIwNzk1
+MTQ0N119
 -->
