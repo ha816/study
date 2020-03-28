@@ -416,7 +416,7 @@ IN 영역을 자세히 보자. emp_no = 10001인 레코드 중에서 부서 번�
 |id| select_type|table| type|
 |--|--|--|--|
 |1| PRIMARY|departments |index|
-|2|DEPENDENT dept_emp |uniquey_subquery|
+|2|DEPENDENT SUBQUERY| dept_emp |unique_subquery|
 
 #### index_subquery
 
@@ -429,8 +429,14 @@ EXPLAIN
 SELECT * FROM departments WHERE dept_no IN (
 	SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003');
 ```
+|id| select_type|table| type|
+|--|--|--|--|
+|1| PRIMARY|departments |index|
+|2|DEPENDENT SUBQUERY| dept_emp |index_subquery|
 
 ### range
+
+우리가 
 
 
 
@@ -448,11 +454,11 @@ SELECT * FROM departments WHERE dept_no IN (
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMjQ0NTQsMTk0Mjg2ODQsLTE3NTYwOT
-AzNDksMTMwOTI0ODM5MywtMTM4MjE3MjY2MywtNzk1NDc3Mzcx
-LDg3MTEwNzIzLDE3OTEwNjY5MDYsMTI0MjQ3MTg2NywtNTQ1Nz
-c5ODU0LDc3NjI1ODg1NiwtMTgyMDk0NTM3NCw3ODM5NDM2NjMs
-LTEyNjA5MTcyODEsLTQ2MDc2MzI1MSw3ODM3NzA5ODIsLTEzND
-I2ODA2NzAsLTE2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1ODMx
-NTQ2XX0=
+eyJoaXN0b3J5IjpbMjE0NzMxMjQxMSwxOTQyODY4NCwtMTc1Nj
+A5MDM0OSwxMzA5MjQ4MzkzLC0xMzgyMTcyNjYzLC03OTU0Nzcz
+NzEsODcxMTA3MjMsMTc5MTA2NjkwNiwxMjQyNDcxODY3LC01ND
+U3Nzk4NTQsNzc2MjU4ODU2LC0xODIwOTQ1Mzc0LDc4Mzk0MzY2
+MywtMTI2MDkxNzI4MSwtNDYwNzYzMjUxLDc4Mzc3MDk4MiwtMT
+M0MjY4MDY3MCwtMTY2MzcxNDc2NywtMjExODAzMTY1Miw1MzU4
+MzE1NDZdfQ==
 -->
