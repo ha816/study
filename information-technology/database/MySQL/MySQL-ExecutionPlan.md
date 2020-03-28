@@ -458,7 +458,7 @@ index 접근은 많은 사람들이 자주 오해하는 접근법이다. index�
 
 **index 접근 방식은 인덱스를 처음부터 끝까지 읽는 인덱스 풀 스캔을 말한다. range 접근 방식과 같이 효율적으로 인덱스의 필요한 부분만 읽는 것은 아니라는 것을 명심하자**
 
-인덱스 풀 스캔과 풀 테이블 스캔 방식을 비교했을때 비교하는 레코드 수는 완전히 동일하다. 하지만 일반적으로 인덱스는 데이터 파일 전체보다는 크기가 작아서 풀 테이블 스캔보다는 효율적이므로 풀 테이블 스캔보다는 빠르다. 
+인덱스 풀 스캔과 풀 테이블 스캔 방식을 비교했을때 비교하는 레코드 수는 완전히 동일하다. 하지만 일반적으로 인덱스는 데이터 파일 전체보다는 크기가 작아서 풀 테이블 스캔보다는 효율적이므로 풀 테이블 스캔보다는 빠르다. 또한 쿼리의 내용에 따라 정렬된 인덱스의 장점을 이용할 수도 있으므로 풀 테이블 스캔보다 효율적일 수 있다. 
 
 
 
@@ -476,11 +476,11 @@ index 접근은 많은 사람들이 자주 오해하는 접근법이다. index�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5Mjg3Mjg2MywtMTM3ODIyNDY2MiwtMT
-EzMDk3NTYzNCwtMTEyMzMzMDc4NSwyMTQ3MzEyNDExLDE5NDI4
-Njg0LC0xNzU2MDkwMzQ5LDEzMDkyNDgzOTMsLTEzODIxNzI2Nj
-MsLTc5NTQ3NzM3MSw4NzExMDcyMywxNzkxMDY2OTA2LDEyNDI0
-NzE4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYsLTE4MjA5NDUzNz
-QsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00NjA3NjMyNTEsNzgz
-NzcwOTgyXX0=
+eyJoaXN0b3J5IjpbOTUzMjYzODExLC0xMzc4MjI0NjYyLC0xMT
+MwOTc1NjM0LC0xMTIzMzMwNzg1LDIxNDczMTI0MTEsMTk0Mjg2
+ODQsLTE3NTYwOTAzNDksMTMwOTI0ODM5MywtMTM4MjE3MjY2My
+wtNzk1NDc3MzcxLDg3MTEwNzIzLDE3OTEwNjY5MDYsMTI0MjQ3
+MTg2NywtNTQ1Nzc5ODU0LDc3NjI1ODg1NiwtMTgyMDk0NTM3NC
+w3ODM5NDM2NjMsLTEyNjA5MTcyODEsLTQ2MDc2MzI1MSw3ODM3
+NzA5ODJdfQ==
 -->
