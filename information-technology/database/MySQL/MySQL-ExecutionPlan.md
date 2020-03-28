@@ -407,6 +407,10 @@ index_subquery
 
 WHERE 조건절에서 사용할 수 있는 IN (subquery) 형태의 쿼리에 접근법이다. 의미 그대로 서브 쿼리에서 중복되지 않는 유니크한 값만 반환할때 사용한다.
 
+```
+EXPLAIN
+SELECT * FROM titles WHERE to_date='1985-03-01' OR to_date IS NULL;
+```
 
 
 ### range
@@ -427,11 +431,11 @@ WHERE 조건절에서 사용할 수 있는 IN (subquery) 형태의 쿼리에 접
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTQ3NzM3MSw4NzExMDcyMywxNzkxMD
-Y2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OTg1NCw3NzYyNTg4NTYs
-LTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0xMjYwOTE3MjgxLC00Nj
-A3NjMyNTEsNzgzNzcwOTgyLC0xMzQyNjgwNjcwLC0xNjYzNzE0
-NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0NiwxMzM1OTc1Njg5LD
-I4ODc1OTIwLC03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2
-Nzc1XX0=
+eyJoaXN0b3J5IjpbLTEzODIxNzI2NjMsLTc5NTQ3NzM3MSw4Nz
+ExMDcyMywxNzkxMDY2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OTg1
+NCw3NzYyNTg4NTYsLTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0xMj
+YwOTE3MjgxLC00NjA3NjMyNTEsNzgzNzcwOTgyLC0xMzQyNjgw
+NjcwLC0xNjYzNzE0NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0Ni
+wxMzM1OTc1Njg5LDI4ODc1OTIwLC03MDM0NjM2OTcsLTE2Mjgx
+NTE5MzZdfQ==
 -->
