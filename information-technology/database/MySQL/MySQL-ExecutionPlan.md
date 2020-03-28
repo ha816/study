@@ -320,6 +320,10 @@ EXPLAIN  SELECT * FROM employyess WHERE emp_no = 10001; --UNIQUE KEY WHERE PHRAS
 ```
 다중 컬럼으로 구성된 프라이머리키나 유니크 키 중에서 인덱스의 일부 컬럼만 조건으로 사용할 때는 const 타입의 접근법을 사용할 수 없다. 왜냐하면 실제 레코드가 1건만 있다 하더라도 MySQL 엔진인 데이터를 읽어보기 전에는 레코드가 1건이라고 확신할 수 없기 때문이다. 이렇게 일부만 조건으로 사용하면 const가 아닌 ref가 표시된다.
 
+당연히 다중 컬럼으로 구성된 프라이머리키나 유니크 키 모든 컬럼을 동등 조건으로 WHERE 절에 사용하면 const가 표시된다.
+
+> const 실행계획은 쿼리를 최적화하는 단계에서 모두 상수화를 한다, 그래서 const이다
+
 
 ## possible_keys
 
@@ -335,11 +339,11 @@ EXPLAIN  SELECT * FROM employyess WHERE emp_no = 10001; --UNIQUE KEY WHERE PHRAS
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjQ2MTQxMiwxMzM1OTc1Njg5LDI4OD
-c1OTIwLC03MDM0NjM2OTcsLTE2MjgxNTE5MzYsNjQzMzE2Nzc1
-LDk1NjY2NjIwLDM2MDU0MzQ2MSwtMzM5MDY0NDA3LC03NDQ3ND
-I4NTAsMjExNzkwMDI1LDExNjIyMTUzMzgsLTEyODQ2NDI5NTgs
-LTE3MTQwNTgxNSwzMjEwOTUzMjMsMTcxNTU2MTc5NiwtMTY1NT
-Y2MDE4MCwtMTExODI4Mzg0MCwyMTIwMTc4MjU2LDUyNTIwMzU2
-N119
+eyJoaXN0b3J5IjpbOTgxMTk1NjkyLDEzMzU5NzU2ODksMjg4Nz
+U5MjAsLTcwMzQ2MzY5NywtMTYyODE1MTkzNiw2NDMzMTY3NzUs
+OTU2NjY2MjAsMzYwNTQzNDYxLC0zMzkwNjQ0MDcsLTc0NDc0Mj
+g1MCwyMTE3OTAwMjUsMTE2MjIxNTMzOCwtMTI4NDY0Mjk1OCwt
+MTcxNDA1ODE1LDMyMTA5NTMyMywxNzE1NTYxNzk2LC0xNjU1Nj
+YwMTgwLC0xMTE4MjgzODQwLDIxMjAxNzgyNTYsNTI1MjAzNTY3
+XX0=
 -->
