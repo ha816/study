@@ -291,7 +291,7 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 
 MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. MySQL에서는 하나의 테이블로 부터 레코드를 읽는 것도 조인처럼 처리한다. 그래서 태이블 갯수에 관계없이 모두 조인 타입으로 명시하고 있다. 하지만 조인 타입으로 생각하지 말고 각 테이블의 접근 방식(Access type)으로 이해하면 좋다. 
 
-총 12가지 접근 방법 중에서 ALL을 제외한 나머지는 모두 인덱스를 사용한 접근 방식이다. 하나의 단위 SELECT 쿼리는 위의 접근 방법 중에서 단 하나만 사용할 수 있다. 또한 index_merge를 제외한 나머지 접근 방법은 반드시 하나의 인덱스만 사용한다.  Ekfktj 
+총 12가지 접근 방법 중에서 ALL을 제외한 나머지는 모두 인덱스를 사용한 접근 방식이다. 하나의 단위 SELECT 쿼리는 위의 접근 방법 중에서 단 하나만 사용할 수 있다. 또한 index_merge를 제외한 나머지 접근 방법은 반드시 하나의 인덱스만 사용한다.   따라서 실행 계획에서 각 라인에 접근 방법이 2개 이상 표시 되지 않으며, index_merge 이외에 type 에서는 인덱스 항목에도 단 하나의 인덱스 이름만 표시된다. 
 
 ## possible_keys
 
@@ -307,7 +307,7 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NjE0MzE3MiwtMTYyODE1MTkzNiw2ND
+eyJoaXN0b3J5IjpbLTcwMzQ2MzY5NywtMTYyODE1MTkzNiw2ND
 MzMTY3NzUsOTU2NjY2MjAsMzYwNTQzNDYxLC0zMzkwNjQ0MDcs
 LTc0NDc0Mjg1MCwyMTE3OTAwMjUsMTE2MjIxNTMzOCwtMTI4ND
 Y0Mjk1OCwtMTcxNDA1ODE1LDMyMTA5NTMyMywxNzE1NTYxNzk2
