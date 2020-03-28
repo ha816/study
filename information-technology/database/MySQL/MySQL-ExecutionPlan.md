@@ -416,9 +416,12 @@ IN 영역을 자세히 보자. emp_no = 10001인 레코드 중에서 부서 번�
 
 |id| select_type|table| type|
 |--|--|--|--|
-|1| PRIMARY|dept_emp|ref|
+|1| PRIMARY|departments |index|
+|2|DEPENDENT dept_emp |uniquey_subquery|
 
-####
+#### index_subquery
+
+IN 연산자의 특성상, IN(subquery) 또는 IN(상수 나열) 형태의 조건은 괄호안에 있는 값의 목록에서 중복된 값
 
 
 ### range
@@ -439,11 +442,11 @@ IN 영역을 자세히 보자. emp_no = 10001인 레코드 중에서 부서 번�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODgyOTA0MTcsLTE3NTYwOTAzNDksMT
-MwOTI0ODM5MywtMTM4MjE3MjY2MywtNzk1NDc3MzcxLDg3MTEw
-NzIzLDE3OTEwNjY5MDYsMTI0MjQ3MTg2NywtNTQ1Nzc5ODU0LD
-c3NjI1ODg1NiwtMTgyMDk0NTM3NCw3ODM5NDM2NjMsLTEyNjA5
-MTcyODEsLTQ2MDc2MzI1MSw3ODM3NzA5ODIsLTEzNDI2ODA2Nz
-AsLTE2NjM3MTQ3NjcsLTIxMTgwMzE2NTIsNTM1ODMxNTQ2LDEz
-MzU5NzU2ODldfQ==
+eyJoaXN0b3J5IjpbNzIwMTYwMDUyLC0xNzU2MDkwMzQ5LDEzMD
+kyNDgzOTMsLTEzODIxNzI2NjMsLTc5NTQ3NzM3MSw4NzExMDcy
+MywxNzkxMDY2OTA2LDEyNDI0NzE4NjcsLTU0NTc3OTg1NCw3Nz
+YyNTg4NTYsLTE4MjA5NDUzNzQsNzgzOTQzNjYzLC0xMjYwOTE3
+MjgxLC00NjA3NjMyNTEsNzgzNzcwOTgyLC0xMzQyNjgwNjcwLC
+0xNjYzNzE0NzY3LC0yMTE4MDMxNjUyLDUzNTgzMTU0NiwxMzM1
+OTc1Njg5XX0=
 -->
