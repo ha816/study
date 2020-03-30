@@ -489,7 +489,9 @@ MySQL 옵티마이저는 쿼리를 처리하기 위해 여러 방법을 고려�
 
 possible_keys 컬럼의 인덱스가 후보였다면 key 컬럼에 표시되는 인덱스는 실제 최종 선택된 실행 계획에서 사용하는 인덱스를 말한다. **즉 쿼리를 튜닝할때 key 컬럼에 의도했던 인덱스가 표시되는지 확인하는 것이 중요하다.**
 
-key 컬럼이 PRIMARY인 경우에는 프라이머리 키를 사용한다는 의미이며, 그 외에는 모두 테이블이나 인덱스를 생성할때 부여했던 고유 이름이다.
+key 컬럼이 PRIMARY인 경우에는 프라이머리 키를 사용한다는 의미이며, 그 외에는 모두 테이블이나 인덱스를 생성할때 부여했던 고유 이름이다. 
+
+type 컬럼이 index_merge가 아니라면 반드시 테이블당 하나의 인덱스만 이용할 수 있다. 
 
 
 
@@ -503,11 +505,11 @@ key 컬럼이 PRIMARY인 경우에는 프라이머리 키를 사용한다는 의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYxMzkwMTkxLDEwNTE0NjczNzIsLTEzND
-E0Mzc2NTksNjg4NzM4MjUxLC0xNjIxNTgyNjYyLDE1NzQyODQz
-NDAsLTEzMDc2Nzc1NjIsLTIxNDA4NzgzNTUsLTEzNzgyMjQ2Nj
-IsLTExMzA5NzU2MzQsLTExMjMzMzA3ODUsMjE0NzMxMjQxMSwx
-OTQyODY4NCwtMTc1NjA5MDM0OSwxMzA5MjQ4MzkzLC0xMzgyMT
-cyNjYzLC03OTU0NzczNzEsODcxMTA3MjMsMTc5MTA2NjkwNiwx
-MjQyNDcxODY3XX0=
+eyJoaXN0b3J5IjpbLTc2MTc3NDg3OSw3NjEzOTAxOTEsMTA1MT
+Q2NzM3MiwtMTM0MTQzNzY1OSw2ODg3MzgyNTEsLTE2MjE1ODI2
+NjIsMTU3NDI4NDM0MCwtMTMwNzY3NzU2MiwtMjE0MDg3ODM1NS
+wtMTM3ODIyNDY2MiwtMTEzMDk3NTYzNCwtMTEyMzMzMDc4NSwy
+MTQ3MzEyNDExLDE5NDI4Njg0LC0xNzU2MDkwMzQ5LDEzMDkyND
+gzOTMsLTEzODIxNzI2NjMsLTc5NTQ3NzM3MSw4NzExMDcyMywx
+NzkxMDY2OTA2XX0=
 -->
