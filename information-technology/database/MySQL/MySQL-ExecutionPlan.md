@@ -491,7 +491,7 @@ possible_keys 컬럼의 인덱스가 후보였다면 key 컬럼에 표시되는 
 
 key 컬럼이 PRIMARY인 경우에는 프라이머리 키를 사용한다는 의미이며, 그 외에는 모두 테이블이나 인덱스를 생성할때 부여했던 고유 이름이다. 
 
-type 컬럼이 index_merge가 아니라면 반드시 테이블당 하나의 인덱스만 이용할 수 있다. 
+type 컬럼이 index_merge가 아니라면 반드시 테이블당 하나의 인덱스만 이용할 수 있다.  
 
 
 
@@ -505,11 +505,11 @@ type 컬럼이 index_merge가 아니라면 반드시 테이블당 하나의 인�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MTc3NDg3OSw3NjEzOTAxOTEsMTA1MT
-Q2NzM3MiwtMTM0MTQzNzY1OSw2ODg3MzgyNTEsLTE2MjE1ODI2
-NjIsMTU3NDI4NDM0MCwtMTMwNzY3NzU2MiwtMjE0MDg3ODM1NS
-wtMTM3ODIyNDY2MiwtMTEzMDk3NTYzNCwtMTEyMzMzMDc4NSwy
-MTQ3MzEyNDExLDE5NDI4Njg0LC0xNzU2MDkwMzQ5LDEzMDkyND
-gzOTMsLTEzODIxNzI2NjMsLTc5NTQ3NzM3MSw4NzExMDcyMywx
-NzkxMDY2OTA2XX0=
+eyJoaXN0b3J5IjpbLTY2NTIyMzI4MSwtNzYxNzc0ODc5LDc2MT
+M5MDE5MSwxMDUxNDY3MzcyLC0xMzQxNDM3NjU5LDY4ODczODI1
+MSwtMTYyMTU4MjY2MiwxNTc0Mjg0MzQwLC0xMzA3Njc3NTYyLC
+0yMTQwODc4MzU1LC0xMzc4MjI0NjYyLC0xMTMwOTc1NjM0LC0x
+MTIzMzMwNzg1LDIxNDczMTI0MTEsMTk0Mjg2ODQsLTE3NTYwOT
+AzNDksMTMwOTI0ODM5MywtMTM4MjE3MjY2MywtNzk1NDc3Mzcx
+LDg3MTEwNzIzXX0=
 -->
