@@ -493,7 +493,7 @@ key 컬럼이 PRIMARY인 경우에는 프라이머리 키를 사용한다는 의
 
 type 컬럼이 index_merge가 아니라면 반드시 테이블당 하나의 인덱스만 이용할 수 있다. 하지만 index_merge가 사용되면 2개 이상의 인덱스가 사용되기 때문에 이럴때 여러 인덱스가 ","로 구분되어 표시된다. 
 
-마지막으로 실행 계획의 acce 
+마지막으로 실행 계획의 acc 
 
 
 
@@ -507,11 +507,11 @@ type 컬럼이 index_merge가 아니라면 반드시 테이블당 하나의 인�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTI0MTUxNjAsLTc2MTc3NDg3OSw3Nj
-EzOTAxOTEsMTA1MTQ2NzM3MiwtMTM0MTQzNzY1OSw2ODg3Mzgy
-NTEsLTE2MjE1ODI2NjIsMTU3NDI4NDM0MCwtMTMwNzY3NzU2Mi
-wtMjE0MDg3ODM1NSwtMTM3ODIyNDY2MiwtMTEzMDk3NTYzNCwt
-MTEyMzMzMDc4NSwyMTQ3MzEyNDExLDE5NDI4Njg0LC0xNzU2MD
-kwMzQ5LDEzMDkyNDgzOTMsLTEzODIxNzI2NjMsLTc5NTQ3NzM3
-MSw4NzExMDcyM119
+eyJoaXN0b3J5IjpbMjA1NjM3NjA0NSwtNzYxNzc0ODc5LDc2MT
+M5MDE5MSwxMDUxNDY3MzcyLC0xMzQxNDM3NjU5LDY4ODczODI1
+MSwtMTYyMTU4MjY2MiwxNTc0Mjg0MzQwLC0xMzA3Njc3NTYyLC
+0yMTQwODc4MzU1LC0xMzc4MjI0NjYyLC0xMTMwOTc1NjM0LC0x
+MTIzMzMwNzg1LDIxNDczMTI0MTEsMTk0Mjg2ODQsLTE3NTYwOT
+AzNDksMTMwOTI0ODM5MywtMTM4MjE3MjY2MywtNzk1NDc3Mzcx
+LDg3MTEwNzIzXX0=
 -->
