@@ -499,7 +499,9 @@ type 컬럼이 index_merge가 아니라면 반드시 테이블당 하나의 인�
 
 ## key_len
 
-key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한 정보이다. 실제 업무에서는
+key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한 정보이다. 실제 업무에서 사용하는 테이블은 단일 컬럼으로 만들어진 인덱스보다 다중 인덱스로 만들어진 경우가 더 많다. **key_len은 쿼리를 처리를 위해 다중 컬럼으로 구성된 인덱스에서 몇 개의 컬럼을 사용했는지 알려준다.** 
+
+
 
 ## ref
 
@@ -509,11 +511,11 @@ key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA5MTg5OTE1LC0xODk3MDQzNDI5LC03Nj
-E3NzQ4NzksNzYxMzkwMTkxLDEwNTE0NjczNzIsLTEzNDE0Mzc2
-NTksNjg4NzM4MjUxLC0xNjIxNTgyNjYyLDE1NzQyODQzNDAsLT
-EzMDc2Nzc1NjIsLTIxNDA4NzgzNTUsLTEzNzgyMjQ2NjIsLTEx
-MzA5NzU2MzQsLTExMjMzMzA3ODUsMjE0NzMxMjQxMSwxOTQyOD
-Y4NCwtMTc1NjA5MDM0OSwxMzA5MjQ4MzkzLC0xMzgyMTcyNjYz
-LC03OTU0NzczNzFdfQ==
+eyJoaXN0b3J5IjpbMTM2OTAzOTMxOCwtMTg5NzA0MzQyOSwtNz
+YxNzc0ODc5LDc2MTM5MDE5MSwxMDUxNDY3MzcyLC0xMzQxNDM3
+NjU5LDY4ODczODI1MSwtMTYyMTU4MjY2MiwxNTc0Mjg0MzQwLC
+0xMzA3Njc3NTYyLC0yMTQwODc4MzU1LC0xMzc4MjI0NjYyLC0x
+MTMwOTc1NjM0LC0xMTIzMzMwNzg1LDIxNDczMTI0MTEsMTk0Mj
+g2ODQsLTE3NTYwOTAzNDksMTMwOTI0ODM5MywtMTM4MjE3MjY2
+MywtNzk1NDc3MzcxXX0=
 -->
