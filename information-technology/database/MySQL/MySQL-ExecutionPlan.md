@@ -499,6 +499,8 @@ type 컬럼이 index_merge가 아니라면 반드시 테이블당 하나의 인�
 
 ## key_len
 
+key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한 정보이다. 실제 업무에서는
+
 ## ref
 
 
@@ -507,11 +509,11 @@ type 컬럼이 index_merge가 아니라면 반드시 테이블당 하나의 인�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTcwNDM0MjksLTc2MTc3NDg3OSw3Nj
-EzOTAxOTEsMTA1MTQ2NzM3MiwtMTM0MTQzNzY1OSw2ODg3Mzgy
-NTEsLTE2MjE1ODI2NjIsMTU3NDI4NDM0MCwtMTMwNzY3NzU2Mi
-wtMjE0MDg3ODM1NSwtMTM3ODIyNDY2MiwtMTEzMDk3NTYzNCwt
-MTEyMzMzMDc4NSwyMTQ3MzEyNDExLDE5NDI4Njg0LC0xNzU2MD
-kwMzQ5LDEzMDkyNDgzOTMsLTEzODIxNzI2NjMsLTc5NTQ3NzM3
-MSw4NzExMDcyM119
+eyJoaXN0b3J5IjpbNDA5MTg5OTE1LC0xODk3MDQzNDI5LC03Nj
+E3NzQ4NzksNzYxMzkwMTkxLDEwNTE0NjczNzIsLTEzNDE0Mzc2
+NTksNjg4NzM4MjUxLC0xNjIxNTgyNjYyLDE1NzQyODQzNDAsLT
+EzMDc2Nzc1NjIsLTIxNDA4NzgzNTUsLTEzNzgyMjQ2NjIsLTEx
+MzA5NzU2MzQsLTExMjMzMzA3ODUsMjE0NzMxMjQxMSwxOTQyOD
+Y4NCwtMTc1NjA5MDM0OSwxMzA5MjQ4MzkzLC0xMzgyMTcyNjYz
+LC03OTU0NzczNzFdfQ==
 -->
