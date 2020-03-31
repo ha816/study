@@ -515,7 +515,12 @@ SELECT * FROM employees e, dept_emp de
 WHERE e.emp_no = de.emp_no;
 ```
 
-이 쿼리를 employees 테이블과 dept_emp 테이블을 조인하는데, 조인 조건에 사용된 emp_no 컬럼의 값에 대해 아무런 변환이나 가공도 수행하지 않았다. 이러면 
+이 쿼리를 employees 테이블과 dept_emp 테이블을 조인하는데, 조인 조건에 사용된 emp_no 컬럼의 값에 대해 아무런 변환이나 가공도 수행하지 않았다. 
+
+|id| select_type|table| type|
+|--|--|--|--|
+|1| SIMPLE|departments |index|
+|2|DEPENDENT SUBQUERY| dept_emp |index_subquery|
 
 
 
@@ -523,7 +528,7 @@ WHERE e.emp_no = de.emp_no;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODA1MDQ1MiwtMTc2MTU5NTE2OCwtMT
+eyJoaXN0b3J5IjpbMTEzNDc5MzA3MiwtMTc2MTU5NTE2OCwtMT
 M0NTY0NjU2NCwtMTU4NTk1MDYwMiwxNDY2OTg0NjcwLDEzNjkw
 MzkzMTgsLTE4OTcwNDM0MjksLTc2MTc3NDg3OSw3NjEzOTAxOT
 EsMTA1MTQ2NzM3MiwtMTM0MTQzNzY1OSw2ODg3MzgyNTEsLTE2
