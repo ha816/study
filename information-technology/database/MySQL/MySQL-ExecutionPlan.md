@@ -515,17 +515,19 @@ SELECT * FROM employees e, dept_emp de
 WHERE e.emp_no = de.emp_no;
 ```
 
+이 쿼리를 employees 테이블과 dept_emp 테이블을 조인하는데, 조인 조건에 사용된 emp_no 컬럼의 값에 대해 아무런 변환이나 가공도 수행하지 않았다. 이러면 
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjE1OTUxNjgsLTEzNDU2NDY1NjQsLT
-E1ODU5NTA2MDIsMTQ2Njk4NDY3MCwxMzY5MDM5MzE4LC0xODk3
-MDQzNDI5LC03NjE3NzQ4NzksNzYxMzkwMTkxLDEwNTE0NjczNz
-IsLTEzNDE0Mzc2NTksNjg4NzM4MjUxLC0xNjIxNTgyNjYyLDE1
-NzQyODQzNDAsLTEzMDc2Nzc1NjIsLTIxNDA4NzgzNTUsLTEzNz
-gyMjQ2NjIsLTExMzA5NzU2MzQsLTExMjMzMzA3ODUsMjE0NzMx
-MjQxMSwxOTQyODY4NF19
+eyJoaXN0b3J5IjpbMTAxODA1MDQ1MiwtMTc2MTU5NTE2OCwtMT
+M0NTY0NjU2NCwtMTU4NTk1MDYwMiwxNDY2OTg0NjcwLDEzNjkw
+MzkzMTgsLTE4OTcwNDM0MjksLTc2MTc3NDg3OSw3NjEzOTAxOT
+EsMTA1MTQ2NzM3MiwtMTM0MTQzNzY1OSw2ODg3MzgyNTEsLTE2
+MjE1ODI2NjIsMTU3NDI4NDM0MCwtMTMwNzY3NzU2MiwtMjE0MD
+g3ODM1NSwtMTM3ODIyNDY2MiwtMTEzMDk3NTYzNCwtMTEyMzMz
+MDc4NSwyMTQ3MzEyNDExXX0=
 -->
