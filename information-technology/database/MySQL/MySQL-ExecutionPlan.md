@@ -501,7 +501,7 @@ type 컬럼이 index_merge가 아니라면 반드시 테이블당 하나의 인�
 
 key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한 정보이다. 실제 업무에서 사용하는 테이블은 단일 컬럼으로 만들어진 인덱스보다 다중 인덱스로 만들어진 경우가 더 많다. **key_len은 쿼리를 처리를 위해 다중 컬럼으로 구성된 인덱스에서 몇 개의 컬럼을 사용했는지 알려준다.** 더 정확하게는 인덱스의 각 레코드에서 몇 바이트까지 사용했는지 알려주는 값이다. 따라서 단일 컬럼의 인덱스에서도 같은 지표를 제공한다. 
 
-예를 들면  key_len이 12로 표시되었다고 하면, 12byte를 말한다. 컬럼의 타입이 CHAR라고 한다면, 기본적으로 UTF-8을 사용한다. 
+예를 들면  key_len이 12로 표시되었다고 하면, 12byte를 말한다. 컬럼의 타입이 CHAR라고 한다면, 기본적으로 UTF-8을 사용한다. UTF-8은 메모리를 할당할 때 3바이트로 계산된다. 따라서 4개의 문자가 사용되었다.
 
 
 ## ref
@@ -512,11 +512,11 @@ key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzE5OTkzNzMsMTM2OTAzOTMxOCwtMT
-g5NzA0MzQyOSwtNzYxNzc0ODc5LDc2MTM5MDE5MSwxMDUxNDY3
-MzcyLC0xMzQxNDM3NjU5LDY4ODczODI1MSwtMTYyMTU4MjY2Mi
-wxNTc0Mjg0MzQwLC0xMzA3Njc3NTYyLC0yMTQwODc4MzU1LC0x
-Mzc4MjI0NjYyLC0xMTMwOTc1NjM0LC0xMTIzMzMwNzg1LDIxND
-czMTI0MTEsMTk0Mjg2ODQsLTE3NTYwOTAzNDksMTMwOTI0ODM5
-MywtMTM4MjE3MjY2M119
+eyJoaXN0b3J5IjpbMTQ2Njk4NDY3MCwxMzY5MDM5MzE4LC0xOD
+k3MDQzNDI5LC03NjE3NzQ4NzksNzYxMzkwMTkxLDEwNTE0Njcz
+NzIsLTEzNDE0Mzc2NTksNjg4NzM4MjUxLC0xNjIxNTgyNjYyLD
+E1NzQyODQzNDAsLTEzMDc2Nzc1NjIsLTIxNDA4NzgzNTUsLTEz
+NzgyMjQ2NjIsLTExMzA5NzU2MzQsLTExMjMzMzA3ODUsMjE0Nz
+MxMjQxMSwxOTQyODY4NCwtMTc1NjA5MDM0OSwxMzA5MjQ4Mzkz
+LC0xMzgyMTcyNjYzXX0=
 -->
