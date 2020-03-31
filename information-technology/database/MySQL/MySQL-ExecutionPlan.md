@@ -505,7 +505,9 @@ key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한
 
 ## ref
 
-접근 방법이 ref 방식이면 참조 조건(Equal 비교 조건)으로 어떤 값이 제공되었는지 보여준다. 
+접근 방법이 ref 방식이면 참조 조건(Equal 비교 조건)으로 어떤 값이 제공되었는지 보여준다. 만약 상수 값을 지정했다면 ref 컬럼은 const로 표시되고, 다른 테이블의 컬럼 값이면 그 테이블 명과 컬럼명이 표시된다. 
+
+사실 ref 컬럼에 출력되는 내용은 크게 신경쓰지 않아도 되지만 예외가 있다. 가끔 ref 컬럼이 'func'
 
 
 
@@ -513,11 +515,11 @@ key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODU5NTA2MDIsMTQ2Njk4NDY3MCwxMz
-Y5MDM5MzE4LC0xODk3MDQzNDI5LC03NjE3NzQ4NzksNzYxMzkw
-MTkxLDEwNTE0NjczNzIsLTEzNDE0Mzc2NTksNjg4NzM4MjUxLC
-0xNjIxNTgyNjYyLDE1NzQyODQzNDAsLTEzMDc2Nzc1NjIsLTIx
-NDA4NzgzNTUsLTEzNzgyMjQ2NjIsLTExMzA5NzU2MzQsLTExMj
-MzMzA3ODUsMjE0NzMxMjQxMSwxOTQyODY4NCwtMTc1NjA5MDM0
-OSwxMzA5MjQ4MzkzXX0=
+eyJoaXN0b3J5IjpbLTE0Njg2MTI1MjIsLTE1ODU5NTA2MDIsMT
+Q2Njk4NDY3MCwxMzY5MDM5MzE4LC0xODk3MDQzNDI5LC03NjE3
+NzQ4NzksNzYxMzkwMTkxLDEwNTE0NjczNzIsLTEzNDE0Mzc2NT
+ksNjg4NzM4MjUxLC0xNjIxNTgyNjYyLDE1NzQyODQzNDAsLTEz
+MDc2Nzc1NjIsLTIxNDA4NzgzNTUsLTEzNzgyMjQ2NjIsLTExMz
+A5NzU2MzQsLTExMjMzMzA3ODUsMjE0NzMxMjQxMSwxOTQyODY4
+NCwtMTc1NjA5MDM0OV19
 -->
