@@ -520,7 +520,7 @@ WHERE e.emp_no = de.emp_no;
 |id| select_type|table| type|
 |--|--|--|--|
 |1| SIMPLE|departments |index|
-|2|DEPENDENT SUBQUERY| dept_emp |index_subquery|
+|2|SIMPLE| dept_emp |index_subquery|
 
 
 
@@ -528,7 +528,7 @@ WHERE e.emp_no = de.emp_no;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNDc5MzA3MiwtMTc2MTU5NTE2OCwtMT
+eyJoaXN0b3J5IjpbMTgzMTg5MTY0MSwtMTc2MTU5NTE2OCwtMT
 M0NTY0NjU2NCwtMTU4NTk1MDYwMiwxNDY2OTg0NjcwLDEzNjkw
 MzkzMTgsLTE4OTcwNDM0MjksLTc2MTc3NDg3OSw3NjEzOTAxOT
 EsMTA1MTQ2NzM3MiwtMTM0MTQzNzY1OSw2ODg3MzgyNTEsLTE2
