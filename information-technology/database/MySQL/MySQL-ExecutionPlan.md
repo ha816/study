@@ -509,7 +509,11 @@ key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한
 
 사실 ref 컬럼에 출력되는 내용은 크게 신경쓰지 않아도 되지만 예외가 있다. 가끔 ref 컬럼이 'func'이라고 표시될때가 있다. "Function"의 줄임말로  참조용으로 사용되는 값을 그대로 사용한 것이 아니라, 콜레이션 변환이나 자체의 연산을 거쳐 참조되었다는 것을 말한다. 
 
-
+```
+EXPLAIN
+SELECT * FROM employees e, dept_emp de
+WHERE e.emp_no = de.emp_no;
+```
 
 
 
@@ -517,11 +521,11 @@ key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNjk3ODQyMywtMTM0NTY0NjU2NCwtMT
-U4NTk1MDYwMiwxNDY2OTg0NjcwLDEzNjkwMzkzMTgsLTE4OTcw
-NDM0MjksLTc2MTc3NDg3OSw3NjEzOTAxOTEsMTA1MTQ2NzM3Mi
-wtMTM0MTQzNzY1OSw2ODg3MzgyNTEsLTE2MjE1ODI2NjIsMTU3
-NDI4NDM0MCwtMTMwNzY3NzU2MiwtMjE0MDg3ODM1NSwtMTM3OD
-IyNDY2MiwtMTEzMDk3NTYzNCwtMTEyMzMzMDc4NSwyMTQ3MzEy
-NDExLDE5NDI4Njg0XX0=
+eyJoaXN0b3J5IjpbLTE3NjE1OTUxNjgsLTEzNDU2NDY1NjQsLT
+E1ODU5NTA2MDIsMTQ2Njk4NDY3MCwxMzY5MDM5MzE4LC0xODk3
+MDQzNDI5LC03NjE3NzQ4NzksNzYxMzkwMTkxLDEwNTE0NjczNz
+IsLTEzNDE0Mzc2NTksNjg4NzM4MjUxLC0xNjIxNTgyNjYyLDE1
+NzQyODQzNDAsLTEzMDc2Nzc1NjIsLTIxNDA4NzgzNTUsLTEzNz
+gyMjQ2NjIsLTExMzA5NzU2MzQsLTExMjMzMzA3ODUsMjE0NzMx
+MjQxMSwxOTQyODY4NF19
 -->
