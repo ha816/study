@@ -503,8 +503,9 @@ key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한
 
 예를 들면  key_len이 12로 표시되었다고 하면, 12byte를 말한다. 컬럼의 타입이 CHAR라고 한다면, 기본적으로 UTF-8을 사용한다. UTF-8은 메모리를 할당할 때 3바이트로 계산된다. 따라서 4개의 문자가 사용되었다.
 
-
 ## ref
+
+접근 방법이 ref 방식이면 참조 조건(Equal 비교 조건)으로 어떤 값이 제공되었는지 보여준다. 
 
 
 
@@ -512,11 +513,11 @@ key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2Njk4NDY3MCwxMzY5MDM5MzE4LC0xOD
-k3MDQzNDI5LC03NjE3NzQ4NzksNzYxMzkwMTkxLDEwNTE0Njcz
-NzIsLTEzNDE0Mzc2NTksNjg4NzM4MjUxLC0xNjIxNTgyNjYyLD
-E1NzQyODQzNDAsLTEzMDc2Nzc1NjIsLTIxNDA4NzgzNTUsLTEz
-NzgyMjQ2NjIsLTExMzA5NzU2MzQsLTExMjMzMzA3ODUsMjE0Nz
-MxMjQxMSwxOTQyODY4NCwtMTc1NjA5MDM0OSwxMzA5MjQ4Mzkz
-LC0xMzgyMTcyNjYzXX0=
+eyJoaXN0b3J5IjpbLTE1ODU5NTA2MDIsMTQ2Njk4NDY3MCwxMz
+Y5MDM5MzE4LC0xODk3MDQzNDI5LC03NjE3NzQ4NzksNzYxMzkw
+MTkxLDEwNTE0NjczNzIsLTEzNDE0Mzc2NTksNjg4NzM4MjUxLC
+0xNjIxNTgyNjYyLDE1NzQyODQzNDAsLTEzMDc2Nzc1NjIsLTIx
+NDA4NzgzNTUsLTEzNzgyMjQ2NjIsLTExMzA5NzU2MzQsLTExMj
+MzMzA3ODUsMjE0NzMxMjQxMSwxOTQyODY4NCwtMTc1NjA5MDM0
+OSwxMzA5MjQ4MzkzXX0=
 -->
