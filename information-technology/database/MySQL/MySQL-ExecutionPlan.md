@@ -539,13 +539,13 @@ WHERE e.emp_no = (de.emp_no - 1);
 ## rows
 
 rows 컬럼은 **실행 계획의 효율성 판단을 위해 예측했던 레코드 건수를 보여준다.** 이 값은 스토리지 엔진별로 가지는 통계정보를 참조해 산출해낸 예상값이라 정확하지는 않다.
-row 컬럼에 표시되는 값은 반환하는 레코드의 
+row 컬럼에 표시되는 값은 반환하는 레코드의 예측치가 아니라, 쿼리를 처리하기 위해 얼마나 많은 레코드를 디스크로부터 읽고 체크해야 하는지 의미한다. 그래서 실제 출력되는 레코드 수와 건수는 일치하지 않는 경우가 많다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTk2MTg4NzAsLTEwMjM4NDQ3NDcsLT
+eyJoaXN0b3J5IjpbLTE5NDkwOTQwNDIsLTEwMjM4NDQ3NDcsLT
 E0NDEzMTM4MjcsLTE3NjE1OTUxNjgsLTEzNDU2NDY1NjQsLTE1
 ODU5NTA2MDIsMTQ2Njk4NDY3MCwxMzY5MDM5MzE4LC0xODk3MD
 QzNDI5LC03NjE3NzQ4NzksNzYxMzkwMTkxLDEwNTE0NjczNzIs
