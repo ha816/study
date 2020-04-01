@@ -534,14 +534,14 @@ WHERE e.emp_no = (de.emp_no - 1);
 |1| SIMPLE|de|index| |
 |2|SIMPLE| e|eq_ref| func|
 
-위 쿼리에서는 de.emp_no -1을 수행하는데 
+위 쿼리에서는 de.emp_no -1을 수행하는데, func으로 표시되고 있다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MDYwOTQ0OSwtMTQ0MTMxMzgyNywtMT
+eyJoaXN0b3J5IjpbMTEzNzY0MjgwNSwtMTQ0MTMxMzgyNywtMT
 c2MTU5NTE2OCwtMTM0NTY0NjU2NCwtMTU4NTk1MDYwMiwxNDY2
 OTg0NjcwLDEzNjkwMzkzMTgsLTE4OTcwNDM0MjksLTc2MTc3ND
 g3OSw3NjEzOTAxOTEsMTA1MTQ2NzM3MiwtMTM0MTQzNzY1OSw2
