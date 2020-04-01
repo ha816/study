@@ -538,17 +538,18 @@ WHERE e.emp_no = (de.emp_no - 1);
 
 ## rows
 
-
+rows 컬럼은 **실행 계획의 효율성 판단을 위해 예측했던 레코드 건수를 보여준다.** 이 값은 스토리지 엔진별로 가지는 통계정보를 참조해 산출해낸 예상값이라 정확하지는 않다.
+row 컬럼에 표시되는 값은 반환하는 레코드의 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NTU4NzM5MiwtMTAyMzg0NDc0NywtMT
-Q0MTMxMzgyNywtMTc2MTU5NTE2OCwtMTM0NTY0NjU2NCwtMTU4
-NTk1MDYwMiwxNDY2OTg0NjcwLDEzNjkwMzkzMTgsLTE4OTcwND
-M0MjksLTc2MTc3NDg3OSw3NjEzOTAxOTEsMTA1MTQ2NzM3Miwt
-MTM0MTQzNzY1OSw2ODg3MzgyNTEsLTE2MjE1ODI2NjIsMTU3ND
-I4NDM0MCwtMTMwNzY3NzU2MiwtMjE0MDg3ODM1NSwtMTM3ODIy
-NDY2MiwtMTEzMDk3NTYzNF19
+eyJoaXN0b3J5IjpbLTIwNTk2MTg4NzAsLTEwMjM4NDQ3NDcsLT
+E0NDEzMTM4MjcsLTE3NjE1OTUxNjgsLTEzNDU2NDY1NjQsLTE1
+ODU5NTA2MDIsMTQ2Njk4NDY3MCwxMzY5MDM5MzE4LC0xODk3MD
+QzNDI5LC03NjE3NzQ4NzksNzYxMzkwMTkxLDEwNTE0NjczNzIs
+LTEzNDE0Mzc2NTksNjg4NzM4MjUxLC0xNjIxNTgyNjYyLDE1Nz
+QyODQzNDAsLTEzMDc2Nzc1NjIsLTIxNDA4NzgzNTUsLTEzNzgy
+MjQ2NjIsLTExMzA5NzU2MzRdfQ==
 -->
