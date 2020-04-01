@@ -522,17 +522,30 @@ WHERE e.emp_no = de.emp_no;
 |1| SIMPLE|de|index| |
 |2|SIMPLE| e|eq_ref|de.emp_no|
 
+다음 예제를 보자. 
+```
+EXPLAIN
+SELECT * FROM employees e, dept_emp de
+WHERE e.emp_no = (de.emp_no - 1);
+```
+
+|id| select_type|table| type| Ref| 
+|--|--|--|--|--|
+|1| SIMPLE|de|index| |
+|2|SIMPLE| e|eq_ref| func|
+
+위 쿼리에서는 de.emp_no -1을 수행하는데 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDEzMTM4MjcsLTE3NjE1OTUxNjgsLT
-EzNDU2NDY1NjQsLTE1ODU5NTA2MDIsMTQ2Njk4NDY3MCwxMzY5
-MDM5MzE4LC0xODk3MDQzNDI5LC03NjE3NzQ4NzksNzYxMzkwMT
-kxLDEwNTE0NjczNzIsLTEzNDE0Mzc2NTksNjg4NzM4MjUxLC0x
-NjIxNTgyNjYyLDE1NzQyODQzNDAsLTEzMDc2Nzc1NjIsLTIxND
-A4NzgzNTUsLTEzNzgyMjQ2NjIsLTExMzA5NzU2MzQsLTExMjMz
-MzA3ODUsMjE0NzMxMjQxMV19
+eyJoaXN0b3J5IjpbMjA2MDYwOTQ0OSwtMTQ0MTMxMzgyNywtMT
+c2MTU5NTE2OCwtMTM0NTY0NjU2NCwtMTU4NTk1MDYwMiwxNDY2
+OTg0NjcwLDEzNjkwMzkzMTgsLTE4OTcwNDM0MjksLTc2MTc3ND
+g3OSw3NjEzOTAxOTEsMTA1MTQ2NzM3MiwtMTM0MTQzNzY1OSw2
+ODg3MzgyNTEsLTE2MjE1ODI2NjIsMTU3NDI4NDM0MCwtMTMwNz
+Y3NzU2MiwtMjE0MDg3ODM1NSwtMTM3ODIyNDY2MiwtMTEzMDk3
+NTYzNCwtMTEyMzMzMDc4NV19
 -->
