@@ -536,16 +536,20 @@ WHERE e.emp_no = (de.emp_no - 1);
 
 위 쿼리에서는 de.emp_no -1을 수행하는데, func으로 표시되고 있다. 
 
+## rows
+
+MySQL 옵티마이저는 가능한 처리방식을 나열하고, 각 처리 방식의 비용을 비교해 최종적으로 하나의 실행 계획을 수립한다. 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNzY0MjgwNSwtMTQ0MTMxMzgyNywtMT
-c2MTU5NTE2OCwtMTM0NTY0NjU2NCwtMTU4NTk1MDYwMiwxNDY2
-OTg0NjcwLDEzNjkwMzkzMTgsLTE4OTcwNDM0MjksLTc2MTc3ND
-g3OSw3NjEzOTAxOTEsMTA1MTQ2NzM3MiwtMTM0MTQzNzY1OSw2
-ODg3MzgyNTEsLTE2MjE1ODI2NjIsMTU3NDI4NDM0MCwtMTMwNz
-Y3NzU2MiwtMjE0MDg3ODM1NSwtMTM3ODIyNDY2MiwtMTEzMDk3
-NTYzNCwtMTEyMzMzMDc4NV19
+eyJoaXN0b3J5IjpbLTEwMjM4NDQ3NDcsLTE0NDEzMTM4MjcsLT
+E3NjE1OTUxNjgsLTEzNDU2NDY1NjQsLTE1ODU5NTA2MDIsMTQ2
+Njk4NDY3MCwxMzY5MDM5MzE4LC0xODk3MDQzNDI5LC03NjE3Nz
+Q4NzksNzYxMzkwMTkxLDEwNTE0NjczNzIsLTEzNDE0Mzc2NTks
+Njg4NzM4MjUxLC0xNjIxNTgyNjYyLDE1NzQyODQzNDAsLTEzMD
+c2Nzc1NjIsLTIxNDA4NzgzNTUsLTEzNzgyMjQ2NjIsLTExMzA5
+NzU2MzQsLTExMjMzMzA3ODVdfQ==
 -->
