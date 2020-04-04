@@ -545,7 +545,7 @@ rows 값을 확인해보고 이 쿼리를 처리하기 위해 테이블 전체 �
 
 ## extra
 
-컬럼 이름과는 달리, 쿼리 실행 계획에 성능과 관련된 중요한 내용이 자주 표시된다. extra 컬럼에 표시될 수 있는 문장을 하나씩 자세히 알아보는 것도 좋지만 해당 문장이 나타났을때 찾아서 ㅊ
+컬럼 이름과는 달리, 쿼리 실행 계획에 성능과 관련된 중요한 내용이 자주 표시된다. extra 컬럼에 표시될 수 있는 문장을 하나씩 자세히 알아보는 것도 좋지만 해당 문장이 나타났을때 찾아서 정리하는 게 더 좋아 보인다.
 
 ### const row not found
 
@@ -560,12 +560,13 @@ FROM departments d, dept_emp de
 WHERE de.dept_no = d.dept_no
 ```
 
-위 쿼리에서 조회하려는 값은 dept_no인데, departments와 dept_emp 테이블에 모두 존재하는 dept_no의 중복없이 가져오기 싶은 것이다.  (departments에서는 dept_no가 프라이머리,)
+위 쿼리에서 조회하려는 값은 dept_no인데, departments와 dept_emp 테이블에 모두 존재하는 dept_no의 중복없이 가져오기 싶은 것이다.  (departments에서는 dept_no가 프라이머리, dept_emp에서는 dept_no는 중복이 가능)
+이런 상황에서는 DISTINCT를 처리하기 위해 dept_emp에서 중복이 발생하는 dept_no를 건너뛰고, 꼭 필요한것만 조인
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ2NTA4NjMzLC05NzQ0NTMyMTUsLTI2MD
+eyJoaXN0b3J5IjpbOTkwNDk1NzExLC05NzQ0NTMyMTUsLTI2MD
 MwNzAxNywtMjYwMzA3MDE3LDE5NTY1ODQ2OTAsLTEwMjM4NDQ3
 NDcsLTE0NDEzMTM4MjcsLTE3NjE1OTUxNjgsLTEzNDU2NDY1Nj
 QsLTE1ODU5NTA2MDIsMTQ2Njk4NDY3MCwxMzY5MDM5MzE4LC0x
