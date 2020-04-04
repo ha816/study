@@ -53,7 +53,6 @@ ANALYZE를 실행하는 동안 InnoDB 테이블은 읽기와 쓰기 모두 불�
 ## 실행 계획 분석 시 주의사항
 
 
-
 # Execution Plan(실행 계획)
 
 MySQL에서 쿼리 실행 계획을 활용하려면 EXPLAIN 키워드를 붙이면 된다. 추가적으로 **EXPLAIN EXTENDED나 EXPLAIN PARTITIONS** 명령을 이용하면 더 상세한 실행 계획을 확인할 수도 있다. 추가 옵션을 사용하는 경우는 기본적인 실행 계획에 추가로 1개의 정보가 더 표시된다.
@@ -601,5 +600,5 @@ Using filesort의 경우 많은 부하를 일으키므로 가능하다면 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzgyMjA2OTgsLTI2Nzc3MDQwN119
+eyJoaXN0b3J5IjpbLTExOTA0NTI1NTIsLTI2Nzc3MDQwN119
 -->
