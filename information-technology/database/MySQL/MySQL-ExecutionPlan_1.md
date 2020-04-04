@@ -4,7 +4,7 @@ DBMS에서는 요청이 들어온 쿼리를 항상 같은 방법으로 똑같은
 
 MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다. 이 장에서는 실행 계획에 표시되는 내용이 무엇인지, MySQL 서버가 내부적으로 어떤 작업을 하는지 알아보겠다. 
 
-## 쿼리 실행 절차
+# 쿼리 실행 절차
 
 * SQL 파싱
 	* 요청이 들어온 쿼리 문장을 잘깨 쪼개서 MySQL서버가 이해할 수준으로 분리한다.
@@ -21,14 +21,14 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 첫 번재와 두 번재 단계를 거의 MySQL 엔진에서 처리하며, 세번째 단계는 MySQL 엔진과 스토리지 엔진이 동시에 참여해서 처리한다. 
 
-## Optimizer
+# Optimizer
 
 옵티마지어의 종류에는 크게 두 종류가 있다. 현재 대부분의 DBMS가 선택하고 있는 옵티마이저는 비용 기반(Cost-based optimizer, CBO) 옵티마이저 또는 규칙 기반 최적화 방법(Rule-based optimizer, RBO)로 나누어진다.
 
 * 규칙 기반 최적화는 기본적으로 테이블 레코드 건수나 선택도 등을 전혀 고려하지 않고, 옵티마이저에 내장된 우선순위에 따라 실행계획을 수립한다.  따라서 같은 쿼리에 대해서는 거의 항상 같은 실행방법을 만들어 낸다. 과거에 각 테이블이나 인덱스의 통계정보가 거의 없고, 상대적으로 느린  CPU 연산탓에 비용 계산이 부당스러웠기 때문에 사용되었었다. 현재는 대부분 비용기반 옵티마이저를 채택하고 있다. 
 * 비용 기반 최적화는 쿼리를 처리하기 위해 여러 가능한 방법을 만들고, 각 단위 작업의 비용(부하) 정보와 대상 테이블의 예측된 통계를 이용해서 각 실행 계획별 비용을 산출한다. 이렇게 산출된 각 실행 방법별로 최소 비용이 소요되는 처리 방식을 선택해 최종 쿼리를 실행한다. 
 
-## Statistical Information
+# Statistical Information
 
 비용기반 최적화 기법에서 가장 중요한 것은 통계정보다. 통계정보가 정확하지 않다면 전혀 엉뚱한 방향으로 쿼리를 실행할 수 도 있다. 예를 들어 1억건의 레코드가 저장된 테이블에서 통계정보가 제대로 갱신되지 않아 10건의 레코드만 있는 것으로 되어 있다면, 실제 쿼리 수행시 인덱스 레인지 스캔이 아니라 풀 테이블 스캔을 실행해 버릴 수도 있다. 
 
@@ -50,9 +50,6 @@ ALTER TABLE table ANYALZE PARTITION p3;
 ```
 ANALYZE를 실행하는 동안 InnoDB 테이블은 읽기와 쓰기 모두 불가능하다. 따라서 서비스 도중에는 ANALYZE를 실행하지 않는 것이 좋다. InnoDB 테이블은 인덱스 페이지 중에서 8개 정도만 랜덤하게 선택해서 본석하고 그 결과를 인덱스의 통계정보로 갱신한다. 
 
-## 실행 계획 분석 시 주의사항
-
-
 # Execution Plan(실행 계획)
 
 MySQL에서 쿼리 실행 계획을 활용하려면 EXPLAIN 키워드를 붙이면 된다. 추가적으로 **EXPLAIN EXTENDED나 EXPLAIN PARTITIONS** 명령을 이용하면 더 상세한 실행 계획을 확인할 수도 있다. 추가 옵션을 사용하는 경우는 기본적인 실행 계획에 추가로 1개의 정보가 더 표시된다.
@@ -66,7 +63,11 @@ EXPLAIN을 실행하면 쿼리 문장의 특성에 따라 표 형태로 된 1줄
 
 ![enter image description here](https://www.mysql.com/common/images/enterprise/query_analyzer_explain.png)
 
-## id
+## 실행 계획 분석 시 주의사항
+
+
+
+## id zj
 
 실행 계획에서 가장 왼쪽에 표시되는 id 컬럼은 단위 SELECT 쿼리 별로 부여되는 식별자 값이다. 
 
@@ -600,5 +601,5 @@ Using filesort의 경우 많은 부하를 일으키므로 가능하다면 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTA0NTI1NTIsLTI2Nzc3MDQwN119
+eyJoaXN0b3J5IjpbNjI2NjAwMDQ1LC0yNjc3NzA0MDddfQ==
 -->
