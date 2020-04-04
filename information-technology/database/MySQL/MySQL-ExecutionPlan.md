@@ -574,13 +574,13 @@ WHERE de.dept_no = d.dept_no
 ### Range checked for each record
 ### Scanned N databases
 ### Select tables optimized away
-### Skip_open_table, Open
+### Skip_open_table, Open_frm_only, Open_trigger_only, Open_full_table
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDM1NzAyMjAsLTk3NDQ1MzIxNSwtMj
+eyJoaXN0b3J5IjpbLTEyMzkzMTY1MjAsLTk3NDQ1MzIxNSwtMj
 YwMzA3MDE3LC0yNjAzMDcwMTcsMTk1NjU4NDY5MCwtMTAyMzg0
 NDc0NywtMTQ0MTMxMzgyNywtMTc2MTU5NTE2OCwtMTM0NTY0Nj
 U2NCwtMTU4NTk1MDYwMiwxNDY2OTg0NjcwLDEzNjkwMzkzMTgs
