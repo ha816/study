@@ -590,9 +590,12 @@ Using filesort의 경우 많은 부하를 일으키므로 가능하다면 쿼리
 ### Using where
 ### Using where with pushed condition
 
+# EXPLAIN EXTENDED
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MTg5MTg4Nl19
+eyJoaXN0b3J5IjpbLTI2Nzc3MDQwN119
 -->
