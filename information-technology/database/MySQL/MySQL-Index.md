@@ -1,6 +1,6 @@
 # Overview
 
-인덱스는 데이터 베이스 쿼리의 성능을 말하자면 뺄 수 없는 영역이다. 
+인덱스는 데이터 베이스 쿼리의 성능을 말하자면 뺄 수 없는 영역이다. 잊지 말아야 할점은 DBMS에서 **인덱스는 데이터의 저장(INSERT, UPDATE, DELETE) 성능을 희생하고 그 데이터의 읽기 속도를 높이는 기능**이다. 
 
 ## 랜덤 I/O와 순차 I/O
 
@@ -16,9 +16,7 @@ Primary Key
 Secondary Key
 : 프라이머리 키를 제외한 나머지 모든 인덱스는 모두 세컨더리 인덱스이다. 
 
-# Index
-
-
+# MySQL Index Structured
 
 ## B-Tree Index(Balanced-Tree Index)
 
@@ -300,11 +298,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODAyOTI5MTUsLTU2ODMyMjE1NiwtMT
-I3NzcyMjU0NSwxNzIyNzc2MDk2LC0yMDI0OTYwMzM5LC0xMzEw
-Nzc3OTQ5LDM0NTczNzcxLC0xMjg0OTQ2NDI2LDExMTkwMzI0Mj
-EsMjk4MDI2NzYyLC0xMDEwNzEwNDg3LDE0MjEyNzcxNjEsOTAy
-NDIwNDk4LDE3NTE1NzU1MzYsLTkzNDU3NzUyNiw1MDc4ODExNT
-ksOTE4MTQzMjkzLDE3NzY2NTA0MzYsNTMwNTgwNDY2LDI2NjU4
-MDk0NF19
+eyJoaXN0b3J5IjpbNzM4NDk4LC01NjgzMjIxNTYsLTEyNzc3Mj
+I1NDUsMTcyMjc3NjA5NiwtMjAyNDk2MDMzOSwtMTMxMDc3Nzk0
+OSwzNDU3Mzc3MSwtMTI4NDk0NjQyNiwxMTE5MDMyNDIxLDI5OD
+AyNjc2MiwtMTAxMDcxMDQ4NywxNDIxMjc3MTYxLDkwMjQyMDQ5
+OCwxNzUxNTc1NTM2LC05MzQ1Nzc1MjYsNTA3ODgxMTU5LDkxOD
+E0MzI5MywxNzc2NjUwNDM2LDUzMDU4MDQ2NiwyNjY1ODA5NDRd
+fQ==
 -->
