@@ -24,7 +24,7 @@ Secondary Key
 
 B-tree는 최상위에 하나의 루트 노드가 존재하고, 가장 하위에는 리프노드가 있다. 그 중간에는 브랜치 노드가 있다. 데이터베이스에서 인덱스와 실제 데이터가 저장된 데이터는 따로 관리되는데,  **인덱스의 리프 노드는 항상 실제 데이터 레코드를 찾아가기 위한 주소값**을 가진다. 
 
-인덱스의 브랜치 노드들의 키 값은 모두 정렬되어 있다. 하지만 실제 데이터 파일의 로우는 정렬되어 있지 않고 임의의 순서로 저장된다. 레코드의 삭제나 변경없이 순수하게 INSERT만 수행된다면 그럴수도 있지만 기본적으로 레코드가 삭제 되면 그 다음의 INSERT는 삭제된 공간을 재활용하도록 DBMS가 설계되어 있기 때문에 순서가 지켜지지는 않는다.
+인덱스의 브랜치 노드들의 키 값은 모두 정렬되어 있다. 하지만 실제 데이터 레코드는 정렬되어 있지 않고 임의의 순서로 저장된다. 레코드의 삭제나 변경없이 순수하게 INSERT만 수행된다면 그럴수도 있지만 기본적으로 레코드가 삭제 되면 그 다음의 INSERT는 삭제된 공간을 재활용하도록 DBMS가 설계되어 있기 때문에 순서가 지켜지지는 않는다.
 
 INNODb 테이블에서는 레코드가 클러스터링 되어 디스크에 저장되는데 기본적으로 프라이머리 키 순서대로 정렬된다.  InnoDB에서는 사용자가 기본 옵션이 클러스터링 테이블로 생성되기 때문에, 최대한 비슷한 값들을 모아 저장한다. 
 
@@ -298,11 +298,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMDUzMzE4NiwxNDU3MTU3NTYwLDczOD
-Q5OCwtNTY4MzIyMTU2LC0xMjc3NzIyNTQ1LDE3MjI3NzYwOTYs
-LTIwMjQ5NjAzMzksLTEzMTA3Nzc5NDksMzQ1NzM3NzEsLTEyOD
-Q5NDY0MjYsMTExOTAzMjQyMSwyOTgwMjY3NjIsLTEwMTA3MTA0
-ODcsMTQyMTI3NzE2MSw5MDI0MjA0OTgsMTc1MTU3NTUzNiwtOT
-M0NTc3NTI2LDUwNzg4MTE1OSw5MTgxNDMyOTMsMTc3NjY1MDQz
-Nl19
+eyJoaXN0b3J5IjpbMTk4MTY2MzU2MCwxMjMwNTMzMTg2LDE0NT
+cxNTc1NjAsNzM4NDk4LC01NjgzMjIxNTYsLTEyNzc3MjI1NDUs
+MTcyMjc3NjA5NiwtMjAyNDk2MDMzOSwtMTMxMDc3Nzk0OSwzND
+U3Mzc3MSwtMTI4NDk0NjQyNiwxMTE5MDMyNDIxLDI5ODAyNjc2
+MiwtMTAxMDcxMDQ4NywxNDIxMjc3MTYxLDkwMjQyMDQ5OCwxNz
+UxNTc1NTM2LC05MzQ1Nzc1MjYsNTA3ODgxMTU5LDkxODE0MzI5
+M119
 -->
