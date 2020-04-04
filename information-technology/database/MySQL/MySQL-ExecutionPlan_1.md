@@ -598,8 +598,13 @@ Using filesort의 경우 많은 부하를 일으키므로 가능하다면 쿼리
 
 MySQL 5.1 버전 이전에서는 MySQL 엔진에 의해 필터링 과정을 거치면서 얼마나 많은 레코드가 벼려졌고, 그 중 얼마가 남았는지 알 방법이 없었다. 
 
+MYSQL 5.1.12버전 부터는 필터링이 얼마나 효율적으로 실행됬는지 실행 계획에 Filtered란 컬럼이 추가되었다. Filtered를 함께 조회하려면 EXPLAIN 명령 뒤에 EXTENDED를 지정하면 된다. 
+
+filtered 컬럼에는 MySQL 엔진에서 필터링된 레코드를 제외하고 최종저
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY3MzEwODc4LC0yNjc3NzA0MDddfQ==
+eyJoaXN0b3J5IjpbODM4OTg5NTI0LDM2NzMxMDg3OCwtMjY3Nz
+cwNDA3XX0=
 -->
