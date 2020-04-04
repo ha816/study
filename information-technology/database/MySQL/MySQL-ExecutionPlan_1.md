@@ -67,7 +67,7 @@ EXPLAIN을 실행하면 쿼리 문장의 특성에 따라 표 형태로 된 1줄
 
 
 
-## id zj
+## id 컬럼
 
 실행 계획에서 가장 왼쪽에 표시되는 id 컬럼은 단위 SELECT 쿼리 별로 부여되는 식별자 값이다. 
 
@@ -596,10 +596,10 @@ Using filesort의 경우 많은 부하를 일으키므로 가능하다면 쿼리
 
 # EXPLAIN EXTENDED
 
-
+MySQL 5.1 버전 이전에서는 MySQL 엔진에 의해 필터링 과정을 거치면서 얼마나 많은 레코드가 벼려졌고, 그 중 얼마가 남았는지 알 방법이 없었다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI2NjAwMDQ1LC0yNjc3NzA0MDddfQ==
+eyJoaXN0b3J5IjpbMzY3MzEwODc4LC0yNjc3NzA0MDddfQ==
 -->
