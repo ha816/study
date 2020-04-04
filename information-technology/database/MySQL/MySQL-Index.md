@@ -38,9 +38,9 @@ InnoDB는 상황에 따라 인덱스 키 추가 작업을 지연시켜서 나중
 
 ### DELETE
 
-인덱스 삭제의 경우는 간단하다. 키값이 저장되 리프노드를 찾아서 그냥 삭제하면 된다. 이 작업도 디스크 쓰기가 필요하는데 5.5버전 이상에서는 체인지 버퍼링을 이용하여 지연 처리가 될 수도 있다. 
+인덱스 삭제의 경우는 간단하다. 키값이 저장될 리프노드를 찾아서 그냥 삭제하면 된다. 이 작업도 디스크 쓰기가 필요하다. 5.5버전 이상에서는 체인지 버퍼링을 이용하여 지연 처리가 될 수도 있다. 
 
-### 
+### UPDATE
 
 인덱스 변경의 경우, 단순히 인덱스 상의 키 값만 변경하는 것은 불가능하다.  현재 그래서 키 값을 삭제한후, 다시 새로운 키 값을 추가하는 형태로 진행된다. 즉 앞서 설명한 인덱스 삭제, 추가 과정이 절차대로 진행된다. 
 
@@ -301,7 +301,7 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NzEwMjgzMiwyNDMyMzg3NTcsMTkwNT
+eyJoaXN0b3J5IjpbLTUzMTk2ODgwMywyNDMyMzg3NTcsMTkwNT
 AyODA0MywxMjMwNTMzMTg2LDE0NTcxNTc1NjAsNzM4NDk4LC01
 NjgzMjIxNTYsLTEyNzc3MjI1NDUsMTcyMjc3NjA5NiwtMjAyND
 k2MDMzOSwtMTMxMDc3Nzk0OSwzNDU3Mzc3MSwtMTI4NDk0NjQy
