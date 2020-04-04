@@ -4,13 +4,9 @@
 
 ## 랜덤 I/O와 순차 I/O
 
-랜덤 I/O라는 표현은 디스크 드라이브 플래터(원판)을 돌려서 읽어야 할 데이터가 저장된 위치로 디스크 헤더를 이동시킨 다음 데이터를 읽는 것을 말한다. 
+랜덤 I/O라는 표현은 디스크 드라이브 플래터(원판)을 돌려서 읽어야 할 데이터가 저장된 위치로 디스크 헤더를 이동시킨 다음 데이터를 읽는 것을 말한다. 디스크의 성능은 **디스크 헤더의 위치이동 없이 얼마나 많은 데이터를 한번에 기록하느냐**에 의해 결정된다. 랜덤 I/O는 순차 I/O에 비해 여러번  쓰기, 읽기  요청을 한다.
 
-디스크의 성능은 **디스크 헤더의 위치이동 없이 얼마나 많은 데이터를 한번에 기록하느냐**에 의해 결정된다. 랜덤 I/O는 순차 I/O에 비해  여러번  쓰기 또는 읽기  요청을 한다. (즉, 작업 부하가 커진다.)  
-
-쿼리 튜닝으로 랜덤 I/O를 순차 I/O로 바꾸어 실행할 방법은 많지 않다. 대신에 쿼리 튜닝은 랜덤 I/O 자체를 줄이는 것이 목적이다. 인덱스 레인지 스캔은 주로 랜덤 I/O를 사용하고 풀테이블 스캔은 주로 순차 I/O를 사용한다. 
-
-위 두가지 이유로, 주로  **Data Warehouse**나  **DB Table 통계작업**  등에는 테이블이 큰 경우 인덱스 레인지 스캔보다 풀 테이블 스캔을 유도하는 경우도 있다. 
+안타깝게도 쿼리 튜닝으로 랜덤 I/O를 순차 I/O로 바꾸어 실행할 방법은 많지 않다. 대신에 쿼리 튜닝은 랜덤 I/O 자체를 줄이는 것이 목적이다. 인덱스 레인지 스캔은 주로 랜덤 I/O를 사용하고 풀테이블 스캔은 주로 순차 I/O를 사용한다. 위 두 가지 이유로, 주로  **Data Warehouse**나  **DB Table 통계작업**  등에는 테이블이 큰 경우 인덱스 레인지 스캔보다 풀 테이블 스캔을 유도하는 경우도 있다. 
 
 ## Key
 
@@ -18,12 +14,11 @@ Primary Key
 : 프라이머리키는 그 레코드를 대표하는 칼럼 값으로 만들어진 인덱스를 말한다. 이렇게 되면 테이블에서 해당하는 레코드를 식별할 수 있는 기준값이 되기 때문에 이를 식별자라고도 부른다. 프라이머리키는 NULL 값을 허용하지 않고 중복을 허용하지 않는다.
 
 Secondary Key
-: 프라이머리 키를 제외한 나머지 모든 인덱스는 보저 인덱스이다. 
-
+: 프라이머리 키를 제외한 나머지 모든 인덱스는 모두 세컨더리 인덱스이다. 
 
 # Index
 
-DBMS에서 **인덱스는 데이터의 저장(INSERT, UPDATE, DELETE) 성능을 희생하고 그 데이터의 읽기 속도를 높이는 기능**이다. 
+
 
 ## B-Tree Index(Balanced-Tree Index)
 
@@ -305,11 +300,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2ODMyMjE1NiwtMTI3NzcyMjU0NSwxNz
-IyNzc2MDk2LC0yMDI0OTYwMzM5LC0xMzEwNzc3OTQ5LDM0NTcz
-NzcxLC0xMjg0OTQ2NDI2LDExMTkwMzI0MjEsMjk4MDI2NzYyLC
-0xMDEwNzEwNDg3LDE0MjEyNzcxNjEsOTAyNDIwNDk4LDE3NTE1
-NzU1MzYsLTkzNDU3NzUyNiw1MDc4ODExNTksOTE4MTQzMjkzLD
-E3NzY2NTA0MzYsNTMwNTgwNDY2LDI2NjU4MDk0NCwtMTcxOTM4
-MjEzNV19
+eyJoaXN0b3J5IjpbLTEzODAyOTI5MTUsLTU2ODMyMjE1NiwtMT
+I3NzcyMjU0NSwxNzIyNzc2MDk2LC0yMDI0OTYwMzM5LC0xMzEw
+Nzc3OTQ5LDM0NTczNzcxLC0xMjg0OTQ2NDI2LDExMTkwMzI0Mj
+EsMjk4MDI2NzYyLC0xMDEwNzEwNDg3LDE0MjEyNzcxNjEsOTAy
+NDIwNDk4LDE3NTE1NzU1MzYsLTkzNDU3NzUyNiw1MDc4ODExNT
+ksOTE4MTQzMjkzLDE3NzY2NTA0MzYsNTMwNTgwNDY2LDI2NjU4
+MDk0NF19
 -->
