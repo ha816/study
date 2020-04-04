@@ -607,12 +607,19 @@ filtered 컬럼의 정보 또한 실제 값이 아니라 단순히 통계정보�
 
 EXPLAIN 명령에는 추가 옵션이 존재한다. 이 옵션은 파티션 테이블의 실행 계획 정보를 더 자세히 확인할 수 있다. 
 
+```
+EXPLAIN PARTITIONS
+select * from ...
+```
+
+옵티마이저는 쿼리 처리를 위해 꼭 필요한 파티션만 접근한다. 여러 파티션 테이블 중에서 불필요한 
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MDIzODcyNywzNjczMTA4NzgsLTI2Nz
+eyJoaXN0b3J5IjpbLTM1MDAxMDMyMywzNjczMTA4NzgsLTI2Nz
 c3MDQwN119
 -->
