@@ -541,19 +541,19 @@ WHERE e.emp_no = (de.emp_no - 1);
 rows 컬럼은 **실행 계획의 효율성 판단을 위해 예측했던 레코드 건수를 보여준다.** 이 값은 스토리지 엔진별로 가지는 통계정보를 참조해 산출해낸 예상값이라 정확하지는 않다.
 그리고 **rows는 반환하는 레코드의 예측치가 아니라, 쿼리를 처리하기 위해 얼마나 많은 레코드를 디스크로부터 읽고 체크해야 하는지를 의미한다.** 그래서 실제 출력되는 레코드 수와 건수는 일치하지 않는 경우가 많다. 
 
-rows 값을 확인해보고 이 쿼리를 처리하기 위해 테이블 전체 레코드 건수를 읽어야 할것으로 예측 되면 옵티마이저는 인덱스를 사용하지 않고 풀 테이블 스캔을 진행한다. 일반적인 
+rows 값을 확인해보고 이 쿼리를 처리하기 위해 테이블 전체 레코드 건수를 읽어야 할것으로 예측 되면 옵티마이저는 인덱스를 사용하지 않고 풀 테이블 스캔을 진행한다. 일반적인 경우라면 rows가 전체 테이블 건수를 읽을 정도로 크지 않기 때문에 인덱스를 사용할 것이다. 
 
 ## extra
 
-
+컬럼 이름과는 달리, 쿼리 실행 계획에 성능과 관련된 중요한 내용이 자주 표시된다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NDQ1MzIxNSwtMjYwMzA3MDE3LC0yNj
-AzMDcwMTcsMTk1NjU4NDY5MCwtMTAyMzg0NDc0NywtMTQ0MTMx
-MzgyNywtMTc2MTU5NTE2OCwtMTM0NTY0NjU2NCwtMTU4NTk1MD
-YwMiwxNDY2OTg0NjcwLDEzNjkwMzkzMTgsLTE4OTcwNDM0Mjks
-LTc2MTc3NDg3OSw3NjEzOTAxOTEsMTA1MTQ2NzM3MiwtMTM0MT
-QzNzY1OSw2ODg3MzgyNTEsLTE2MjE1ODI2NjIsMTU3NDI4NDM0
-MCwtMTMwNzY3NzU2Ml19
+eyJoaXN0b3J5IjpbLTE5MjYwMzEyMzIsLTk3NDQ1MzIxNSwtMj
+YwMzA3MDE3LC0yNjAzMDcwMTcsMTk1NjU4NDY5MCwtMTAyMzg0
+NDc0NywtMTQ0MTMxMzgyNywtMTc2MTU5NTE2OCwtMTM0NTY0Nj
+U2NCwtMTU4NTk1MDYwMiwxNDY2OTg0NjcwLDEzNjkwMzkzMTgs
+LTE4OTcwNDM0MjksLTc2MTc3NDg3OSw3NjEzOTAxOTEsMTA1MT
+Q2NzM3MiwtMTM0MTQzNzY1OSw2ODg3MzgyNTEsLTE2MjE1ODI2
+NjIsMTU3NDI4NDM0MF19
 -->
