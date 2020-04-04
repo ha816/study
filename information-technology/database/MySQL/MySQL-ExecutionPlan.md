@@ -577,16 +577,19 @@ WHERE de.dept_no = d.dept_no
 ### Skip_open_table, Open_frm_only, Open_trigger_only, Open_full_table
 ### unique row not found
 ### Using filesort
+
+ORDER BY를 처리하기 위해 인덱스를 이용할 수도 있지만 적절한 인덱스를 사용하지 못할때는 MySQL서버에서 조회된 레코드를 다시 한번 정렬해야 한다. 이렇게 ORDER BY 처리시 인덱스를 사용하지 못할때면 Using filesort가 표시된다. 이는 
+
 ### Using index
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzOTY3NjY0NywtOTc0NDUzMjE1LC0yNj
-AzMDcwMTcsLTI2MDMwNzAxNywxOTU2NTg0NjkwLC0xMDIzODQ0
-NzQ3LC0xNDQxMzEzODI3LC0xNzYxNTk1MTY4LC0xMzQ1NjQ2NT
-Y0LC0xNTg1OTUwNjAyLDE0NjY5ODQ2NzAsMTM2OTAzOTMxOCwt
-MTg5NzA0MzQyOSwtNzYxNzc0ODc5LDc2MTM5MDE5MSwxMDUxND
-Y3MzcyLC0xMzQxNDM3NjU5LDY4ODczODI1MSwtMTYyMTU4MjY2
-MiwxNTc0Mjg0MzQwXX0=
+eyJoaXN0b3J5IjpbMTg2ODE2OTIwMiwxNDM5Njc2NjQ3LC05Nz
+Q0NTMyMTUsLTI2MDMwNzAxNywtMjYwMzA3MDE3LDE5NTY1ODQ2
+OTAsLTEwMjM4NDQ3NDcsLTE0NDEzMTM4MjcsLTE3NjE1OTUxNj
+gsLTEzNDU2NDY1NjQsLTE1ODU5NTA2MDIsMTQ2Njk4NDY3MCwx
+MzY5MDM5MzE4LC0xODk3MDQzNDI5LC03NjE3NzQ4NzksNzYxMz
+kwMTkxLDEwNTE0NjczNzIsLTEzNDE0Mzc2NTksNjg4NzM4MjUx
+LC0xNjIxNTgyNjYyXX0=
 -->
