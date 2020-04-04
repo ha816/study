@@ -545,7 +545,7 @@ rows 값을 확인해보고 이 쿼리를 처리하기 위해 테이블 전체 �
 
 ## extra
 
-컬럼 이름과는 달리, 쿼리 실행 계획에 성능과 관련된 중요한 내용이 자주 표시된다. extra 컬럼에 표시될 수 있는 문장을 하나씩 알아보자.
+컬럼 이름과는 달리, 쿼리 실행 계획에 성능과 관련된 중요한 내용이 자주 표시된다. extra 컬럼에 표시될 수 있는 문장을 하나씩 자세히 알아보는 것도 좋지만 해당 문장이 나타났을때 찾아서 ㅊ
 
 ### const row not found
 
@@ -565,11 +565,11 @@ WHERE de.dept_no = d.dept_no
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTM4MTQ0NTMsLTk3NDQ1MzIxNSwtMj
-YwMzA3MDE3LC0yNjAzMDcwMTcsMTk1NjU4NDY5MCwtMTAyMzg0
-NDc0NywtMTQ0MTMxMzgyNywtMTc2MTU5NTE2OCwtMTM0NTY0Nj
-U2NCwtMTU4NTk1MDYwMiwxNDY2OTg0NjcwLDEzNjkwMzkzMTgs
-LTE4OTcwNDM0MjksLTc2MTc3NDg3OSw3NjEzOTAxOTEsMTA1MT
-Q2NzM3MiwtMTM0MTQzNzY1OSw2ODg3MzgyNTEsLTE2MjE1ODI2
-NjIsMTU3NDI4NDM0MF19
+eyJoaXN0b3J5IjpbNDQ2NTA4NjMzLC05NzQ0NTMyMTUsLTI2MD
+MwNzAxNywtMjYwMzA3MDE3LDE5NTY1ODQ2OTAsLTEwMjM4NDQ3
+NDcsLTE0NDEzMTM4MjcsLTE3NjE1OTUxNjgsLTEzNDU2NDY1Nj
+QsLTE1ODU5NTA2MDIsMTQ2Njk4NDY3MCwxMzY5MDM5MzE4LC0x
+ODk3MDQzNDI5LC03NjE3NzQ4NzksNzYxMzkwMTkxLDEwNTE0Nj
+czNzIsLTEzNDE0Mzc2NTksNjg4NzM4MjUxLC0xNjIxNTgyNjYy
+LDE1NzQyODQzNDBdfQ==
 -->
