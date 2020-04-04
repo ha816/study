@@ -578,18 +578,20 @@ WHERE de.dept_no = d.dept_no
 ### unique row not found
 ### Using filesort
 
-ORDER BY를 처리하기 위해 인덱스를 이용할 수도 있지만 적절한 인덱스를 사용하지 못할때는 MySQL서버에서 조회된 레코드를 다시 한번 정렬해야 한다. 이렇게 ORDER BY 처리시 인덱스를 사용하지 못할때면 Using filesort가 표시된다. 이는 
+Using filesort는 ORDER BY 키워드가 사용된 쿼리에서만 나타난다. ORDER BY를 처리하기 위해 인덱스를 이용할 수도 있지만 적절한 인덱스를 사용하지 못할때는 MySQL서버에서 조회된 레코드를 다시 한번 정렬해야 한다. 이렇게 ORDER BY 처리시 인덱스를 사용하지 못할때면 Using filesort가 표시된다. 이는 조회된 레코드를 정렬용 메모리 버퍼에 복사해서 퀵 정렬을 한다.
+
+Using filesort가
 
 ### Using index
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2ODE2OTIwMiwxNDM5Njc2NjQ3LC05Nz
-Q0NTMyMTUsLTI2MDMwNzAxNywtMjYwMzA3MDE3LDE5NTY1ODQ2
-OTAsLTEwMjM4NDQ3NDcsLTE0NDEzMTM4MjcsLTE3NjE1OTUxNj
-gsLTEzNDU2NDY1NjQsLTE1ODU5NTA2MDIsMTQ2Njk4NDY3MCwx
-MzY5MDM5MzE4LC0xODk3MDQzNDI5LC03NjE3NzQ4NzksNzYxMz
-kwMTkxLDEwNTE0NjczNzIsLTEzNDE0Mzc2NTksNjg4NzM4MjUx
-LC0xNjIxNTgyNjYyXX0=
+eyJoaXN0b3J5IjpbLTE3NTMxMTgyNTUsMTg2ODE2OTIwMiwxND
+M5Njc2NjQ3LC05NzQ0NTMyMTUsLTI2MDMwNzAxNywtMjYwMzA3
+MDE3LDE5NTY1ODQ2OTAsLTEwMjM4NDQ3NDcsLTE0NDEzMTM4Mj
+csLTE3NjE1OTUxNjgsLTEzNDU2NDY1NjQsLTE1ODU5NTA2MDIs
+MTQ2Njk4NDY3MCwxMzY5MDM5MzE4LC0xODk3MDQzNDI5LC03Nj
+E3NzQ4NzksNzYxMzkwMTkxLDEwNTE0NjczNzIsLTEzNDE0Mzc2
+NTksNjg4NzM4MjUxXX0=
 -->
