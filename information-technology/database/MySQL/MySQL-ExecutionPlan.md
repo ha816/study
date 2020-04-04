@@ -575,16 +575,18 @@ WHERE de.dept_no = d.dept_no
 ### Scanned N databases
 ### Select tables optimized away
 ### Skip_open_table, Open_frm_only, Open_trigger_only, Open_full_table
-
+### unique row not found
+### Using filesort
+### Using index
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzkzMTY1MjAsLTk3NDQ1MzIxNSwtMj
-YwMzA3MDE3LC0yNjAzMDcwMTcsMTk1NjU4NDY5MCwtMTAyMzg0
-NDc0NywtMTQ0MTMxMzgyNywtMTc2MTU5NTE2OCwtMTM0NTY0Nj
-U2NCwtMTU4NTk1MDYwMiwxNDY2OTg0NjcwLDEzNjkwMzkzMTgs
-LTE4OTcwNDM0MjksLTc2MTc3NDg3OSw3NjEzOTAxOTEsMTA1MT
-Q2NzM3MiwtMTM0MTQzNzY1OSw2ODg3MzgyNTEsLTE2MjE1ODI2
-NjIsMTU3NDI4NDM0MF19
+eyJoaXN0b3J5IjpbMTQzOTY3NjY0NywtOTc0NDUzMjE1LC0yNj
+AzMDcwMTcsLTI2MDMwNzAxNywxOTU2NTg0NjkwLC0xMDIzODQ0
+NzQ3LC0xNDQxMzEzODI3LC0xNzYxNTk1MTY4LC0xMzQ1NjQ2NT
+Y0LC0xNTg1OTUwNjAyLDE0NjY5ODQ2NzAsMTM2OTAzOTMxOCwt
+MTg5NzA0MzQyOSwtNzYxNzc0ODc5LDc2MTM5MDE5MSwxMDUxND
+Y3MzcyLC0xMzQxNDM3NjU5LDY4ODczODI1MSwtMTYyMTU4MjY2
+MiwxNTc0Mjg0MzQwXX0=
 -->
