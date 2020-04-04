@@ -551,9 +551,19 @@ rows 값을 확인해보고 이 쿼리를 처리하기 위해 테이블 전체 �
 
 const로 테이블을 읽었지만 실제로 해당 테이블에 레코드가 1건도 없는 경우에 나타난다. 
 
+### Distinct
+
+```
+EXPLAIN
+SELECT DISTINCT dept_no
+FROM departments d, dept_emp de
+WHERE de.dept_no = d.dept_no
+```
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDMxOTE4NjIsLTk3NDQ1MzIxNSwtMj
+eyJoaXN0b3J5IjpbLTE1NzIxODk1MDQsLTk3NDQ1MzIxNSwtMj
 YwMzA3MDE3LC0yNjAzMDcwMTcsMTk1NjU4NDY5MCwtMTAyMzg0
 NDc0NywtMTQ0MTMxMzgyNywtMTc2MTU5NTE2OCwtMTM0NTY0Nj
 U2NCwtMTU4NTk1MDYwMiwxNDY2OTg0NjcwLDEzNjkwMzkzMTgs
