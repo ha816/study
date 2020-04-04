@@ -539,7 +539,7 @@ WHERE e.emp_no = (de.emp_no - 1);
 ## rows
 
 rows 컬럼은 **실행 계획의 효율성 판단을 위해 예측했던 레코드 건수를 보여준다.** 이 값은 스토리지 엔진별로 가지는 통계정보를 참조해 산출해낸 예상값이라 정확하지는 않다.
-row 컬럼에 표시되는 값은 반환하는 레코드의 예측치가 아니라, 쿼리를 처리하기 위해 얼마나 많은 레코드를 디스크로부터 읽고 체크해야 하는지 의미한다. 그래서 실제 출력되는 레코드 수와 건수는 일치하지 않는 경우가 많다. 
+그리고 **rows는 반환하는 레코드의 예측치가 아니라, 쿼리를 처리하기 위해 얼마나 많은 레코드를 디스크로부터 읽고 체크해야 하는지를 의미한다.** 그래서 실제 출력되는 레코드 수와 건수는 일치하지 않는 경우가 많다. 
 
 ## extra
 
@@ -547,11 +547,11 @@ row 컬럼에 표시되는 값은 반환하는 레코드의 예측치가 아니�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NjU4NDY5MCwtMTAyMzg0NDc0NywtMT
-Q0MTMxMzgyNywtMTc2MTU5NTE2OCwtMTM0NTY0NjU2NCwtMTU4
-NTk1MDYwMiwxNDY2OTg0NjcwLDEzNjkwMzkzMTgsLTE4OTcwND
-M0MjksLTc2MTc3NDg3OSw3NjEzOTAxOTEsMTA1MTQ2NzM3Miwt
-MTM0MTQzNzY1OSw2ODg3MzgyNTEsLTE2MjE1ODI2NjIsMTU3ND
-I4NDM0MCwtMTMwNzY3NzU2MiwtMjE0MDg3ODM1NSwtMTM3ODIy
-NDY2MiwtMTEzMDk3NTYzNF19
+eyJoaXN0b3J5IjpbLTI2MDMwNzAxNywxOTU2NTg0NjkwLC0xMD
+IzODQ0NzQ3LC0xNDQxMzEzODI3LC0xNzYxNTk1MTY4LC0xMzQ1
+NjQ2NTY0LC0xNTg1OTUwNjAyLDE0NjY5ODQ2NzAsMTM2OTAzOT
+MxOCwtMTg5NzA0MzQyOSwtNzYxNzc0ODc5LDc2MTM5MDE5MSwx
+MDUxNDY3MzcyLC0xMzQxNDM3NjU5LDY4ODczODI1MSwtMTYyMT
+U4MjY2MiwxNTc0Mjg0MzQwLC0xMzA3Njc3NTYyLC0yMTQwODc4
+MzU1LC0xMzc4MjI0NjYyXX0=
 -->
