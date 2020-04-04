@@ -580,14 +580,15 @@ WHERE de.dept_no = d.dept_no
 
 Using filesort는 ORDER BY 키워드가 사용된 쿼리에서만 나타난다. ORDER BY를 처리하기 위해 인덱스를 이용할 수도 있지만 적절한 인덱스를 사용하지 못할때는 MySQL서버에서 조회된 레코드를 다시 한번 정렬해야 한다. 이렇게 ORDER BY 처리시 인덱스를 사용하지 못할때면 Using filesort가 표시된다. 이는 조회된 레코드를 정렬용 메모리 버퍼에 복사해서 퀵 정렬을 한다.
 
-Using filesort가
+Using filesort의 경우 많은 부하를 일으키므로 가능하다면 쿼리를 튜닝하거나 인덱스를 만드는 것도 중요하다. 
 
 ### Using index
+### Using index for group-by
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTMxMTgyNTUsMTg2ODE2OTIwMiwxND
+eyJoaXN0b3J5IjpbLTE0OTM0OTY5MjgsMTg2ODE2OTIwMiwxND
 M5Njc2NjQ3LC05NzQ0NTMyMTUsLTI2MDMwNzAxNywtMjYwMzA3
 MDE3LDE5NTY1ODQ2OTAsLTEwMjM4NDQ3NDcsLTE0NDEzMTM4Mj
 csLTE3NjE1OTUxNjgsLTEzNDU2NDY1NjQsLTE1ODU5NTA2MDIs
