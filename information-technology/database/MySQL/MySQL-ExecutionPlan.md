@@ -561,16 +561,23 @@ WHERE de.dept_no = d.dept_no
 ```
 
 위 쿼리에서 조회하려는 값은 dept_no인데, departments와 dept_emp 테이블에 모두 존재하는 dept_no의 중복없이 가져오기 싶은 것이다.  (departments에서는 dept_no가 프라이머리, dept_emp에서는 dept_no는 중복이 가능)
-이런 상황에서는 DISTINCT를 처리하기 위해 dept_emp에서 중복이 발생하는 dept_no를 건너뛰고, 꼭 필요한것만 조인
+이런 상황에서는 DISTINCT를 처리하기 위해 dept_emp에서 중복이 발생하는 dept_no를 건너뛰고, 꼭 필요한것만 조인하기 때문에 성능이 좋아진다.
+
+### Full scan on NULL key
+### Impossible HAVING
+### Impossible WHERE
+### Impossible WHERE noticed after reading const tables
+### No matching min/max row
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkwNDk1NzExLC05NzQ0NTMyMTUsLTI2MD
-MwNzAxNywtMjYwMzA3MDE3LDE5NTY1ODQ2OTAsLTEwMjM4NDQ3
-NDcsLTE0NDEzMTM4MjcsLTE3NjE1OTUxNjgsLTEzNDU2NDY1Nj
-QsLTE1ODU5NTA2MDIsMTQ2Njk4NDY3MCwxMzY5MDM5MzE4LC0x
-ODk3MDQzNDI5LC03NjE3NzQ4NzksNzYxMzkwMTkxLDEwNTE0Nj
-czNzIsLTEzNDE0Mzc2NTksNjg4NzM4MjUxLC0xNjIxNTgyNjYy
-LDE1NzQyODQzNDBdfQ==
+eyJoaXN0b3J5IjpbLTQ0NzY2NjUzNSwtOTc0NDUzMjE1LC0yNj
+AzMDcwMTcsLTI2MDMwNzAxNywxOTU2NTg0NjkwLC0xMDIzODQ0
+NzQ3LC0xNDQxMzEzODI3LC0xNzYxNTk1MTY4LC0xMzQ1NjQ2NT
+Y0LC0xNTg1OTUwNjAyLDE0NjY5ODQ2NzAsMTM2OTAzOTMxOCwt
+MTg5NzA0MzQyOSwtNzYxNzc0ODc5LDc2MTM5MDE5MSwxMDUxND
+Y3MzcyLC0xMzQxNDM3NjU5LDY4ODczODI1MSwtMTYyMTU4MjY2
+MiwxNTc0Mjg0MzQwXX0=
 -->
