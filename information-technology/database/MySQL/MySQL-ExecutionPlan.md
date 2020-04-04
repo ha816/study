@@ -615,7 +615,15 @@ select * from ...
 
 옵티마이저는 쿼리 처리를 위해 꼭 필요한 파티션만 접근한다. 여러 파티션 테이블 중에서 불필요한 파티션을 빼고 접근해야할 테이블만 골라내는 과정을 파티션 프루닝(partition pruning)이라 한다.
 
+## key_len
+
+## ref
+
+
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxODk1ODgxOV19
+eyJoaXN0b3J5IjpbLTk2NTcwNzcwMSwxNjE4OTU4ODE5XX0=
 -->
