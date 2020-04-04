@@ -603,12 +603,16 @@ MYSQL 5.1.12버전 부터는 필터링이 얼마나 효율적으로 실행됬는
 **filtered 컬럼에는 MySQL 엔진에서 필터링된 레코드를 제외하고 최종적으로 몇 레코드가 남았는지 비율(percentage)로 표시된다.**
 filtered 컬럼의 정보 또한 실제 값이 아니라 단순히 통계정보로 예측된 값으로 정확하지는 않다. 
 
+## EXPLAIN PARTITIONS
+
+EXPLAIN 명령에는 추가 옵션이 존재한다. 이 옵션은 파티션 테이블의 실행 계획 정보를 더 자세히 확인할 수 있다. 
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MzQ1MzA5MiwzNjczMTA4NzgsLTI2Nz
+eyJoaXN0b3J5IjpbMjA0MDIzODcyNywzNjczMTA4NzgsLTI2Nz
 c3MDQwN119
 -->
