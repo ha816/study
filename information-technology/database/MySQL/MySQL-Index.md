@@ -28,15 +28,19 @@ B-tree는 최상위에 하나의 루트 노드가 존재하고, 가장 하위에
 
 InnoDB를 사용하는 테이블에서는 레코드가 클러스터링 되어 디스크에 저장되는데 기본적으로 프라이머리 키 순서대로 정렬된다.  InnoDB에서는 사용자가 기본 옵션이 클러스터링 테이블로 생성되기 때문에, 최대한 비슷한 값들을 모아 저장한다. 
 
-### Index INSERT, DELETE, UPDATE, SELECT
+### INSERT
 
 새로운 키 값이 B-Tree에 저장될때는 저장될 키 값을 이용해서 B-Tree의 적절한 인덱스 위치를 검색해야 한다. 그리고 저장될 위치가 정해지면  레코드의 키 값과 주소 정보를 B-Tree의 리프 노드에 저장한다. 이때 만약 리프 노드가 꽉차면 리프 노드를 분리해야 하는데, 상위 브랜치 노드까지 처리 범위가 넓어진다. 이 때문에 B-tree는 상대적으로 Insert 비용이 많이 드는것으로 알려져 있다. 
 
 인덱스 추가로 인해 INSERT나 UPDATE 문장이 어떤 영향을 받을지 궁금한 사람이 많다. 성능의 영향은 테이블의 컬럼 수, 컬럼의 크기, 인덱스 컬럼의 특성등을 확인해야 한다. 대략적으로 계산하는 방법은 테이블에 레코드를 추가하는 비용이 1이라 하면 인덱스에 키를 추가하는 작업은 1 ~ 1.5정도로 예측을 한다. 중요한 점은 이 비용 대부분이 I/O 작업에서 온다는 것이다. 
 
-InnoDB는 상황에 따라 인덱스 키 추가 작업을 지연시켜서 나중에 처리할지 아니면 바로 처리할지를 결정한다. 인덱스 키 추가 작업은 항상 우선순위가 높게 처리가 되지 않아도 사실 큰 문제가 없다. 그래서 buffer에 데이터를 저장하다가 서버 자원의 여유가 있을때  지연 처리를 한다. MySQL 5.1이하 버전에서는 INSERT만 버퍼링을 지원했지만 5.5 이상 부터는 DELETE도 추가되었다. 이 버퍼의 정싱 명칭은 체인지 버퍼링(Change Buffering)이 되었다. 
+InnoDB는 상황에 따라 인덱스 키 추가 작업을 지연시켜서 나중에 처리할지 아니면 바로 처리할지를 결정한다. 인덱스 키 추가 작업은 항상 우선순위가 높게 처리가 되지 않아도 사실 큰 문제가 없다. 그래서 buffer에 데이터를 저장하다가 서버 자원의 여유가 있을때  지연 처리를 한다. MySQL 5.1이하 버전에서는 INSERT만 버퍼링을 지원했지만 5.5 이상 부터는 DELETE도 추가되었다. 이 버퍼의 정식 명칭은 체인지 버퍼링(Change Buffering)이 되었다. 
+
+### DELETE
 
 인덱스 삭제의 경우는 간단하다. 키값이 저장되 리프노드를 찾아서 그냥 삭제하면 된다. 이 작업도 디스크 쓰기가 필요하는데 5.5버전 이상에서는 체인지 버퍼링을 이용하여 지연 처리가 될 수도 있다. 
+
+### 
 
 인덱스 변경의 경우, 단순히 인덱스 상의 키 값만 변경하는 것은 불가능하다.  현재 그래서 키 값을 삭제한후, 다시 새로운 키 값을 추가하는 형태로 진행된다. 즉 앞서 설명한 인덱스 삭제, 추가 과정이 절차대로 진행된다. 
 
@@ -297,7 +301,7 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTU3NjAwOSwyNDMyMzg3NTcsMTkwNT
+eyJoaXN0b3J5IjpbLTY0NzEwMjgzMiwyNDMyMzg3NTcsMTkwNT
 AyODA0MywxMjMwNTMzMTg2LDE0NTcxNTc1NjAsNzM4NDk4LC01
 NjgzMjIxNTYsLTEyNzc3MjI1NDUsMTcyMjc3NjA5NiwtMjAyND
 k2MDMzOSwtMTMxMDc3Nzk0OSwzNDU3Mzc3MSwtMTI4NDk0NjQy
