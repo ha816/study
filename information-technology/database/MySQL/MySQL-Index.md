@@ -4,7 +4,7 @@
 
 ## 랜덤 I/O와 순차 I/O
 
-랜덤 I/O라는 표현은 디스크 드라이브 플래터(원판)을 돌려서 읽어야 할 데이터가 저장된 위치로 디스크 헤더를 이동시킨 다음 데이터를 읽는 것을 말한다. 디스크의 성능은 **디스크 헤더의 위치이동 없이 얼마나 많은 데이터를 한번에 기록하느냐**에 의해 결정된다. 랜덤 I/O는 순차 I/O에 비해 여러번  쓰기, 읽기  요청을 한다.
+랜덤 I/O라는 표현은 디스크 드라이브 플래터(원판)을 돌려서 읽어야 할 데이터가 저장된 위치로 디스크 헤더를 이동시킨 다음 데이터를 읽는 것을 말한다. 디스크의 성능은 **디스크 헤더의 위치이동 없이 얼마나 많은 데이터를 한번에 기록하느냐**에 의해 결정된다. 랜덤 I/O는 순차 I/O에 비해 여러번 쓰기, 읽기  요청을 한다.
 
 안타깝게도 쿼리 튜닝으로 랜덤 I/O를 순차 I/O로 바꾸어 실행할 방법은 많지 않다. 대신에 쿼리 튜닝은 랜덤 I/O 자체를 줄이는 것이 목적이다. 인덱스 레인지 스캔은 주로 랜덤 I/O를 사용하고 풀테이블 스캔은 주로 순차 I/O를 사용한다. 위 두 가지 이유로, 주로  **Data Warehouse**나  **DB Table 통계작업**  등에는 테이블이 큰 경우 인덱스 레인지 스캔보다 풀 테이블 스캔을 유도하는 경우도 있다. 
 
@@ -298,11 +298,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4NDk4LC01NjgzMjIxNTYsLTEyNzc3Mj
-I1NDUsMTcyMjc3NjA5NiwtMjAyNDk2MDMzOSwtMTMxMDc3Nzk0
-OSwzNDU3Mzc3MSwtMTI4NDk0NjQyNiwxMTE5MDMyNDIxLDI5OD
-AyNjc2MiwtMTAxMDcxMDQ4NywxNDIxMjc3MTYxLDkwMjQyMDQ5
-OCwxNzUxNTc1NTM2LC05MzQ1Nzc1MjYsNTA3ODgxMTU5LDkxOD
-E0MzI5MywxNzc2NjUwNDM2LDUzMDU4MDQ2NiwyNjY1ODA5NDRd
-fQ==
+eyJoaXN0b3J5IjpbMTQ1NzE1NzU2MCw3Mzg0OTgsLTU2ODMyMj
+E1NiwtMTI3NzcyMjU0NSwxNzIyNzc2MDk2LC0yMDI0OTYwMzM5
+LC0xMzEwNzc3OTQ5LDM0NTczNzcxLC0xMjg0OTQ2NDI2LDExMT
+kwMzI0MjEsMjk4MDI2NzYyLC0xMDEwNzEwNDg3LDE0MjEyNzcx
+NjEsOTAyNDIwNDk4LDE3NTE1NzU1MzYsLTkzNDU3NzUyNiw1MD
+c4ODExNTksOTE4MTQzMjkzLDE3NzY2NTA0MzYsNTMwNTgwNDY2
+XX0=
 -->
