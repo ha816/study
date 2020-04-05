@@ -187,9 +187,7 @@ SELECT * FROM dept_emp
 WHERE dept_no = 'd002' AND emp_no >= 10114;
 ```
 
-dept_no, emp_no로 다중 인덱스가
-
-dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 작업 범위 결정 조건이라 한다. 하지만 각 조건이 항상 작업의 단위를 줄이지는 못하고 단순히 거름종이 역할만 하는 조건일 수도 있다. 그런 조건을 필터링 조건, 체크 조건이라 한다. **작업의 범위를 결정하는 조건은 많으면 많을 수록 쿼리의 처리 성능을 높인다.** 하지만 **체크 조건은 많다고 해서 쿼리 성능을 높이지는 못한다. 오히려 쿼리 실행을 느리게 만들때가 많다.**
+dept_no, emp_no로 다중 인덱스가 걸려있는 상황에서 dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 한정하며 이를 작업 범위 결정 조건이라 한다. 범위 결정 조건에 해당한다는 것은 성공적으로 인덱스를 활용한다는 것을 의미한다. 하지만 컬럼 조건에 따라 작업의 범위를 줄이지 못하고 단순히 거름종이 역할만 하는 필터 조건일 수도 있다. 그런 조건을 필터링 조건, 체크 조건이라 한다. **작업의 범위를 결정하는 조건은 많으면 많을 수록 쿼리의 처리 성능을 높인다.** 하지만 **체크 조건은 많다고 해서 쿼리 성능을 높이지는 못한다. 오히려 쿼리 실행을 느리게 만들때가 많다.**
 
 추가적인 다중 인덱스의 예로 아래 쿼리를 보자. 조건으로 dept_no와 emp_no가 주어졌다면 인덱스를 효율적으로 사용할 수 있지만, emp_no만 주어졌기 때문에 효율적일 수가 없다. 
 ```
@@ -301,11 +299,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODU5NjkwNjIsLTE5MDcwNjgyODUsLT
-gxNjg3MzYxMywtOTcyMjE0MDY2LDE0MjQ5ODMxMTAsLTEyOTU2
-ODYxNjQsMTgwNjA5MTI5Miw0NDk2NjE1MTIsLTY0MjA1MzkwNi
-wtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLTMxMjMyOTQ4MSwxODQ4
-Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYwMzUxLC05MzgyMjc2MD
-AsLTEyMTY2NzUwNzQsLTUzMTk2ODgwMywyNDMyMzg3NTcsMTkw
-NTAyODA0M119
+eyJoaXN0b3J5IjpbLTUwODY0NDM1NCwtMTkwNzA2ODI4NSwtOD
+E2ODczNjEzLC05NzIyMTQwNjYsMTQyNDk4MzExMCwtMTI5NTY4
+NjE2NCwxODA2MDkxMjkyLDQ0OTY2MTUxMiwtNjQyMDUzOTA2LC
+05NTQwODkxMDYsLTI0OTU3MjgxMSwtMzEyMzI5NDgxLDE4NDg2
+OTQxNDYsOTc5MjkwMzUwLC05MjY4NjAzNTEsLTkzODIyNzYwMC
+wtMTIxNjY3NTA3NCwtNTMxOTY4ODAzLDI0MzIzODc1NywxOTA1
+MDI4MDQzXX0=
 -->
