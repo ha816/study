@@ -156,9 +156,7 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 
 #### 인덱스의 정렬
 
-일반적인 상용 DBMS에서는 인덱스를 생성하는 시점에 인덱스를 구성하는 각 컬럼의 정렬을 오름차순 또는 내림차순으로 구성할 수 있다. 
-
-실제로 모든 인덱스는 오름차순(정순)으로만 정렬된다. 왜냐하면 특정 컬럼을 ASC , DESC하는 것은 단지 인덱스를 앞으로 읽을지 뒤로 읽을지에 따라 해결되기 때문에 아무 문제가 되지 않는다. 가끔 아래 쿼리와 같이 인덱스를 구성하는 컬럼 중에 오름차순과 내림차순을 혼합해서 만들어야 할때가 있다. 
+일반적인 상용 DBMS에서는 인덱스를 생성하는 시점에 인덱스를 구성하는 각 컬럼의 정렬을 오름차순 또는 내림차순으로 구성할 수 있다. 실제로 모든 인덱스는 오름차순(ASC)으로만 정렬된다. 왜냐하면 특정 컬럼을 ASC , DESC하는 것은 단지 인덱스를 앞으로 읽을지 뒤로 읽을지에 따라 해결되기 때문에 아무 문제가 되지 않는다. 가끔 아래 쿼리와 같이 인덱스를 구성하는 컬럼 중에 오름차순과 내림차순을 혼합해서 만들어야 할때가 있다. 
 
 ```
 SELECT * FROM TABLE
@@ -302,7 +300,7 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTkyODMwMjYsMTgwNjA5MTI5Miw0ND
+eyJoaXN0b3J5IjpbLTEyOTU2ODYxNjQsMTgwNjA5MTI5Miw0ND
 k2NjE1MTIsLTY0MjA1MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4
 MTEsLTMxMjMyOTQ4MSwxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOT
 I2ODYwMzUxLC05MzgyMjc2MDAsLTEyMTY2NzUwNzQsLTUzMTk2
