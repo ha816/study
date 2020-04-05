@@ -101,7 +101,7 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 ### B-Tree 인덱스를 통한 데이터 읽기
 
-어떤 경우에 인덱스를 사용할지, 또는 사용하지 못할지 판단하려면 MySQL이 어떻게 인덱스를 이용해서 실제 레코드를 읽어내는지 알아야 한다. MySQL이 인덱스를 이용하는 대표적인 방법 Index Range Scan, Index Full Scan, Index Loose Scan을 보도록 하자.
+어떤 경우에 인덱스를 사용하고 사용하지 않는지 판단하려면 MySQL이 인덱스를 어떻게 사용하는지 실제 레코드를 읽어내는지 알아야 한다. MySQL이 인덱스를 이용하는 대표적인 방법 Index Range Scan, Index Full Scan, Index Loose Scan을 보도록 하자.
 
 #### Index Range Scan
 
@@ -302,11 +302,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMjMyOTQ4MSwxODQ4Njk0MTQ2LDk3OT
-I5MDM1MCwtOTI2ODYwMzUxLC05MzgyMjc2MDAsLTEyMTY2NzUw
-NzQsLTUzMTk2ODgwMywyNDMyMzg3NTcsMTkwNTAyODA0MywxMj
-MwNTMzMTg2LDE0NTcxNTc1NjAsNzM4NDk4LC01NjgzMjIxNTYs
-LTEyNzc3MjI1NDUsMTcyMjc3NjA5NiwtMjAyNDk2MDMzOSwtMT
-MxMDc3Nzk0OSwzNDU3Mzc3MSwtMTI4NDk0NjQyNiwxMTE5MDMy
-NDIxXX0=
+eyJoaXN0b3J5IjpbMTA2OTI5MDI0MCwtMzEyMzI5NDgxLDE4ND
+g2OTQxNDYsOTc5MjkwMzUwLC05MjY4NjAzNTEsLTkzODIyNzYw
+MCwtMTIxNjY3NTA3NCwtNTMxOTY4ODAzLDI0MzIzODc1NywxOT
+A1MDI4MDQzLDEyMzA1MzMxODYsMTQ1NzE1NzU2MCw3Mzg0OTgs
+LTU2ODMyMjE1NiwtMTI3NzcyMjU0NSwxNzIyNzc2MDk2LC0yMD
+I0OTYwMzM5LC0xMzEwNzc3OTQ5LDM0NTczNzcxLC0xMjg0OTQ2
+NDI2XX0=
 -->
