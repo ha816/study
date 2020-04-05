@@ -60,7 +60,7 @@ B-Tree 인덱스는 인덱스를 구성하는 칼럼의 크기와 레코드의 �
 
 InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단위를 페이지(Page) 또는 블록(Block)이라 하며, 디스크의 모든 읽기 및 쓰기 작업의 최소 작업 단위가 된다. 또한 페이지는 InnoDB 버퍼 풀에서 데이터를 버퍼링하는 기본 단위이기도 한다. 인덱스도 결국은 페이지 단위로 관리되며, 페이지 단위란 하나의 노드로 이해하자. 
 
-일반적으로 B-Tree는 자식 노드의 갯수가 가변적이다. 그러면 MySQL의 B-Tree는 자식 노드를 몇 개까지 가질지 궁금할 것이다. 이것은 바로 인덱스의 페이지 크기와 키 값의 크기에 따라 결정된다. InnoDB의 모든 페이지 크기는 16KB로 고정되어 있다. 
+일반적으로 B-Tree는 자식 노드의 갯수가 가변적이다. 그러면 MySQL의 B-Tree는 자식 노드를 몇 개까지 가질지 궁금할 것이다. 이것은 인덱스의 페이지 크기와 키 값의 크기에 따라 결정된다. InnoDB의 모든 페이지 크기는 16KB로 고정되어 있다. 
 
 만약 인덱스의 키가 16바이트라고 하고 자식 노드 주소가 12바이트라고 가정하자. 
 |16byte|12byte  |
@@ -303,11 +303,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzODIyNzYwMCwtMTIxNjY3NTA3NCwtNT
-MxOTY4ODAzLDI0MzIzODc1NywxOTA1MDI4MDQzLDEyMzA1MzMx
-ODYsMTQ1NzE1NzU2MCw3Mzg0OTgsLTU2ODMyMjE1NiwtMTI3Nz
-cyMjU0NSwxNzIyNzc2MDk2LC0yMDI0OTYwMzM5LC0xMzEwNzc3
-OTQ5LDM0NTczNzcxLC0xMjg0OTQ2NDI2LDExMTkwMzI0MjEsMj
-k4MDI2NzYyLC0xMDEwNzEwNDg3LDE0MjEyNzcxNjEsOTAyNDIw
-NDk4XX0=
+eyJoaXN0b3J5IjpbNTE2OTk1MDM0LC05MzgyMjc2MDAsLTEyMT
+Y2NzUwNzQsLTUzMTk2ODgwMywyNDMyMzg3NTcsMTkwNTAyODA0
+MywxMjMwNTMzMTg2LDE0NTcxNTc1NjAsNzM4NDk4LC01NjgzMj
+IxNTYsLTEyNzc3MjI1NDUsMTcyMjc3NjA5NiwtMjAyNDk2MDMz
+OSwtMTMxMDc3Nzk0OSwzNDU3Mzc3MSwtMTI4NDk0NjQyNiwxMT
+E5MDMyNDIxLDI5ODAyNjc2MiwtMTAxMDcxMDQ4NywxNDIxMjc3
+MTYxXX0=
 -->
