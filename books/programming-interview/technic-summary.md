@@ -30,7 +30,7 @@
 >static 키워드는 변수, 메서드, 클래스에 붙일 수 있다. static이 붙은 변수, 메서드는 해당 클래스 내에서 공유되는 자원으로 JVM 동작시 Method Area에서 이미 존재한다. 일반 클래스에는 static 키워드를 붙일 수 없고, 내부 클래스(inner class)에는 붙일 수 있다. static이 붙은 내부 클래스는 마찬가지로 공유되는 자원으로 이미 존재하고 있는 객체다.
 
 >**접근 권한 수정자(private, package-private, protected, public)?**
-> 접근 권한 수정자는 클래스, 변수, 메서드에 붙일 수 있다. private이 붙으면 해당 클래스에서만 접근이 가능하다. package-private은 디폴트 값으로 해당 패키지내에서 접근이 가능하다. protected는 같은 패키지내에서 또는 상속을 받아 접근이 가능하다. protected 부터는 사실상 다른 클래스에 공유된다고 봐도 무방하다. public은 어떤 곳에서도 접근이 가능하다.
+> 접근 권한 수정자는 클래스, 변수, 메서드에 붙일 수 있다. private이 붙으면 해당 클래스에서만 접근이 가능하다. package-private은 디폴트 값으로 해당 패키지내에서 접근이 가능하다. protected는 같은 패키지내에서 또는 상속을 받아 접근이 가능하다. protected 부터는 사실상 다른 클래스에 공유된다고 봐도 무방하다. public은 어떤 클래에서도 접근이 가능하다.
 
 >**다형성(Polymorphsim)과 상속(Inheritance)**
 >다형성은 하나의 객체가 다른 역할을 하는 객체로 사용될 수 있다는 의미이다. 항상 가능한 것은 아니고 특정 상위 클래스를 확장한 하위 클래스는 상위 클래스를 대신할 수 있다. 
@@ -269,11 +269,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTk5NDMyNCwtMTI3MTExOTQ3MCwxOT
-cyNDA3OTkxLDE0MjM4NTMzMjksLTE3Mjk5NDAzNDQsMTM4MjU3
-NTExMCwzMDgyOTAwOTUsMTU5MzYyODg1NiwtMTU2OTIyMDEwNC
-w1Nzk2MjEzNDgsLTE2NzY5MDUwNDgsLTIyMzU2NTY1OCw0NjYw
-NTcyOTQsLTY5NTQ4MjEzMywtMTU3NTMzMzAzNCwzMDg1NDI4ND
-gsODI1NDIzODE3LC00MTMwOTAwOTIsLTE4Nzc1Mjk3OTYsMTkx
-NDc5MDEwNl19
+eyJoaXN0b3J5IjpbLTEwMjIzNDIzNzksLTEyNzExMTk0NzAsMT
+k3MjQwNzk5MSwxNDIzODUzMzI5LC0xNzI5OTQwMzQ0LDEzODI1
+NzUxMTAsMzA4MjkwMDk1LDE1OTM2Mjg4NTYsLTE1NjkyMjAxMD
+QsNTc5NjIxMzQ4LC0xNjc2OTA1MDQ4LC0yMjM1NjU2NTgsNDY2
+MDU3Mjk0LC02OTU0ODIxMzMsLTE1NzUzMzMwMzQsMzA4NTQyOD
+Q4LDgyNTQyMzgxNywtNDEzMDkwMDkyLC0xODc3NTI5Nzk2LDE5
+MTQ3OTAxMDZdfQ==
 -->
