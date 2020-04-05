@@ -54,7 +54,7 @@
 >String은 intern메서드를 가지는데, 상수 풀에 해당 문자열이 있으면 풀에 문자열을 가져오고 아니라면, 이 문자열은 풀에 추가되고 반환된다. 
 
 > **StringBuilder와 StringBuffer의 차이는?**
-> StringBuilder는 Thread Safe하지 않지만 StringBuffer는 그러하다. 따라서 StringBuilder가 더 성능상 빠르다. 
+> StringBuilder는 thread safe하지 않다. 하지만 StringBuffer는 thread-safe하다. 따라서 StringBuilder가 더 성능상 빠르다. 
 
 >**Error와 Exception의 차이는?**
 >Error는 발생 시 더 이상의 작업을 수행할 수 없는 치명적인 문제를 말한다. Error가 발생하면 JVM이 중단되며 대표적인 Error로는 StackOverFlow, HeapOutOfMemory이 있다. Exception은 발생해도 개발자가 추가 처리 코드를 통해 처리가 가능하다. 
@@ -269,11 +269,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MDE4Mjk2NSwtODUxOTk0MzI0LC0xMj
-cxMTE5NDcwLDE5NzI0MDc5OTEsMTQyMzg1MzMyOSwtMTcyOTk0
-MDM0NCwxMzgyNTc1MTEwLDMwODI5MDA5NSwxNTkzNjI4ODU2LC
-0xNTY5MjIwMTA0LDU3OTYyMTM0OCwtMTY3NjkwNTA0OCwtMjIz
-NTY1NjU4LDQ2NjA1NzI5NCwtNjk1NDgyMTMzLC0xNTc1MzMzMD
-M0LDMwODU0Mjg0OCw4MjU0MjM4MTcsLTQxMzA5MDA5MiwtMTg3
-NzUyOTc5Nl19
+eyJoaXN0b3J5IjpbLTEwNTQ4MTM5MjMsMTY0MDE4Mjk2NSwtOD
+UxOTk0MzI0LC0xMjcxMTE5NDcwLDE5NzI0MDc5OTEsMTQyMzg1
+MzMyOSwtMTcyOTk0MDM0NCwxMzgyNTc1MTEwLDMwODI5MDA5NS
+wxNTkzNjI4ODU2LC0xNTY5MjIwMTA0LDU3OTYyMTM0OCwtMTY3
+NjkwNTA0OCwtMjIzNTY1NjU4LDQ2NjA1NzI5NCwtNjk1NDgyMT
+MzLC0xNTc1MzMzMDM0LDMwODU0Mjg0OCw4MjU0MjM4MTcsLTQx
+MzA5MDA5Ml19
 -->
