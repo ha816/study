@@ -178,7 +178,7 @@ SELECT * FROM table ORDER BY col1 DESC LIMIT 1;
 
 쿼리의 WHERE이나 GROUP BY 또는 ORDER BY 절이 어떤 경우에 인덱스를 사용할 수 있는지 그리고 어떤 방식으로 인덱스를 활용하는지 알아보자.
 
-#### 비교 조건의 종류와 효율
+#### 비교 조건에 따른 활용법
 
 다중 컬럼 인덱스에서 각 컬럼의 순서와 그 컬럼에 사용된 조건이 동등비교(=)인지 아니면 범위 조건(>, <)인지에 따라 인덱스 컬럼의 활용 형태가 달라지고 효율도 달라진다. 
 ```
@@ -298,7 +298,7 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDc2OTEzNjEsLTE5MDcwNjgyODUsLT
+eyJoaXN0b3J5IjpbLTE2NTQ4OTAzNzQsLTE5MDcwNjgyODUsLT
 gxNjg3MzYxMywtOTcyMjE0MDY2LDE0MjQ5ODMxMTAsLTEyOTU2
 ODYxNjQsMTgwNjA5MTI5Miw0NDk2NjE1MTIsLTY0MjA1MzkwNi
 wtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLTMxMjMyOTQ4MSwxODQ4
