@@ -182,17 +182,17 @@ SELECT * FROM table ORDER BY col1 DESC LIMIT 1;
 
 다중 컬럼 인덱스에서는 컬럼의 순서와 그 컬럼에 사용된 조건이 동등비교(=)인지 아니면 범위 조건(>, <)인지에 따라 인덱스 컬럼의 활용 형태가 달라진다. 
 
+다중 인덱스의 예로 아래 쿼리를 보자. 조건으로 dept_no와 emp_no가 주어졌다면 인덱스를 효율적으로 사용할 수 있지만, emp_no만 주어졌기 때문에 효율적일 수가 없다. 
+```
+SELECT * FROM dept_emp WHERE emp_no >= 100;
+```
+
 ```
 SELECT * FROM dept_emp
 WHERE dept_no = 'd002' AND emp_no >= 10114;
 ```
 
-dept_no, emp_no로 다중 인덱스가 걸려있는 상황에서 dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 한정하며 이를 작업 범위 결정 조건이라 한다. 범위 결정 조건에 해당한다는 것은 성공적으로 인덱스를 활용한다는 것을 의미한다. 하지만 컬럼 조건에 따라 작업의 범위를 줄이지 못하고 단순히 거름종이 역할만 하는 필터 조건일 수도 있다. 그런 조건을 필터링 조건, 체크 조건이라 한다. **작업의 범위를 결정하는 조건은 많으면 많을 수록 쿼리의 처리 성능을 높인다.** 하지만 **체크 조건은 많다고 해서 쿼리 성능을 높이지는 못한다. 오히려 쿼리 실행을 느리게 만들때가 많다.**
-
-추가적인 다중 인덱스의 예로 아래 쿼리를 보자. 조건으로 dept_no와 emp_no가 주어졌다면 인덱스를 효율적으로 사용할 수 있지만, emp_no만 주어졌기 때문에 효율적일 수가 없다. 
-```
-SELECT * FROM dept_emp WHERE emp_no >= 100;
-```
+dept_no, emp_no로 다중 인덱스가 걸려있는 상황에서 dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 한정하며 이를 작업 범위 결정 조건이라 한다. 범위 결정 조건에 해당한다는 것은 성공적으로 인덱스를 활용한다는 것을 의미한다. 하지만 컬럼 조건에 따라 작업의 범위를 줄이지 못하고 단순히 거름종이 역할만 할수도 있다. 그런 조건을 필터 조건, 체크 조건이라고도 한다. **작업의 범위를 결정하는 조건은 많을 수록 쿼리의 처리 성능을 높인다.** 하지만 **체크 조건은 많다고 해서 쿼리 성능을 높이지는 못한다. 오히려 쿼리 실행을 느리게 만들때가 많다.**
 
 #### 인덱스의 가용성
 
@@ -299,7 +299,7 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODY0NDM1NCwtMTkwNzA2ODI4NSwtOD
+eyJoaXN0b3J5IjpbLTk0NjY5Mzg0NCwtMTkwNzA2ODI4NSwtOD
 E2ODczNjEzLC05NzIyMTQwNjYsMTQyNDk4MzExMCwtMTI5NTY4
 NjE2NCwxODA2MDkxMjkyLDQ0OTY2MTUxMiwtNjQyMDUzOTA2LC
 05NTQwODkxMDYsLTI0OTU3MjgxMSwtMzEyMzI5NDgxLDE4NDg2
