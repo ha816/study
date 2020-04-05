@@ -82,11 +82,8 @@ ALL, index
 : index는 인덱스 풀 스캔을 의미하며, ALL 풀 테이블 스캔을 의미한다. 차이는 있지만 전체 레코드를 대상으로 하기 때문에 빠르게 결과를 가져오지는 못한다. 일반적으로 이런 접근 방식은 새로운 인덱스를 추가하거나 쿼리 조건을 바꿔 피하도록 하자.
 
 ### key 컬럼 주의사항
-* 쿼리가 인덱스를 사용하지 못할때는 실행 계획의 
+* 쿼리가 인덱스를 사용하지 못할때는 실행 계획의 key 컬럼에는 아무 값도 표시되지 않는다. 인덱스를 추가하거나 WHERE 조건을 변경하자.
  
-
-
-
 
 ## id 컬럼
 
@@ -645,6 +642,6 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MDkwMDAyNiw1ODI1NTc3NTAsNTg5MT
-Y2ODQ3LDEwMTU5ODg5ODEsLTk2NTcwNzcwMV19
+eyJoaXN0b3J5IjpbMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkxNj
+Y4NDcsMTAxNTk4ODk4MSwtOTY1NzA3NzAxXX0=
 -->
