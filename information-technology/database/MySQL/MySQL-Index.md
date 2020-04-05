@@ -152,7 +152,7 @@ WHERE year = 2017 AND make = 'ACURA' AND model = 'TL'
 
 ### B-Tree 인덱스의 정렬 및 스캔 방향
 
-인덱스 키값은 항상 오름차순으로 (ASC)으로 정렬되지만 사실 그 인덱스를 거꾸로 읽으면 내림차순으로도 정렬된 인덱스를 사용할 수 있다. 인덱스를 어느방향으로 읽을지도 쿼리에 따라 옵티마이저가 판단한다. 
+인덱스 키값은 항상 오름차순(ASC)으로 정렬되지만 사실 그 인덱스를 거꾸로 읽으면 내림차순으로도 정렬된 인덱스를 사용할 수 있다. 인덱스를 어느방향으로 읽을지도 쿼리에 따라 옵티마이저가 판단한다. 
 
 #### 인덱스의 정렬
 
@@ -302,11 +302,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNjA5MTI5Miw0NDk2NjE1MTIsLTY0Mj
-A1MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLTMxMjMyOTQ4
-MSwxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYwMzUxLC05Mz
-gyMjc2MDAsLTEyMTY2NzUwNzQsLTUzMTk2ODgwMywyNDMyMzg3
-NTcsMTkwNTAyODA0MywxMjMwNTMzMTg2LDE0NTcxNTc1NjAsNz
-M4NDk4LC01NjgzMjIxNTYsLTEyNzc3MjI1NDUsMTcyMjc3NjA5
-Nl19
+eyJoaXN0b3J5IjpbLTE1MTkyODMwMjYsMTgwNjA5MTI5Miw0ND
+k2NjE1MTIsLTY0MjA1MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4
+MTEsLTMxMjMyOTQ4MSwxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOT
+I2ODYwMzUxLC05MzgyMjc2MDAsLTEyMTY2NzUwNzQsLTUzMTk2
+ODgwMywyNDMyMzg3NTcsMTkwNTAyODA0MywxMjMwNTMzMTg2LD
+E0NTcxNTc1NjAsNzM4NDk4LC01NjgzMjIxNTYsLTEyNzc3MjI1
+NDVdfQ==
 -->
