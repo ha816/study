@@ -56,7 +56,7 @@ InnoDB 스토리지 엔진에서 인덱스는 특별한 의미가 있다. InnoDB
 
 B-Tree 인덱스는 인덱스를 구성하는 칼럼의 크기와 레코드의 건수, 그리고 유니크한 인덱스 키 값의 개수등에 의해 검색이나 변경 작업의 성능이 영향을 받는다. 
 
-#### 인덱스 키값의 크기
+#### 인덱스 키 값의 크기
 
 InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단위를 페이지(Page) 또는 블록(Block)이라 하며, 디스크의 모든 읽기 및 쓰기 작업의 최소 작업 단위가 된다. 또한 페이지는 InnoDB 버퍼 풀에서 데이터를 버퍼링하는 기본 단위이기도 한다. 인덱스도 결국은 페이지 단위로 관리되며, 페이지 단위란 하나의 노드로 이해하자. 
 
@@ -303,11 +303,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTY2NzUwNzQsLTUzMTk2ODgwMywyND
-MyMzg3NTcsMTkwNTAyODA0MywxMjMwNTMzMTg2LDE0NTcxNTc1
-NjAsNzM4NDk4LC01NjgzMjIxNTYsLTEyNzc3MjI1NDUsMTcyMj
-c3NjA5NiwtMjAyNDk2MDMzOSwtMTMxMDc3Nzk0OSwzNDU3Mzc3
-MSwtMTI4NDk0NjQyNiwxMTE5MDMyNDIxLDI5ODAyNjc2MiwtMT
-AxMDcxMDQ4NywxNDIxMjc3MTYxLDkwMjQyMDQ5OCwxNzUxNTc1
-NTM2XX0=
+eyJoaXN0b3J5IjpbLTkzODIyNzYwMCwtMTIxNjY3NTA3NCwtNT
+MxOTY4ODAzLDI0MzIzODc1NywxOTA1MDI4MDQzLDEyMzA1MzMx
+ODYsMTQ1NzE1NzU2MCw3Mzg0OTgsLTU2ODMyMjE1NiwtMTI3Nz
+cyMjU0NSwxNzIyNzc2MDk2LC0yMDI0OTYwMzM5LC0xMzEwNzc3
+OTQ5LDM0NTczNzcxLC0xMjg0OTQ2NDI2LDExMTkwMzI0MjEsMj
+k4MDI2NzYyLC0xMDEwNzEwNDg3LDE0MjEyNzcxNjEsOTAyNDIw
+NDk4XX0=
 -->
