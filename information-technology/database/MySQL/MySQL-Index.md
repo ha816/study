@@ -101,13 +101,13 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 ### B-Tree 인덱스를 통한 데이터 읽기
 
-어떤 경우에 인덱스를 사용하고 사용하지 않는지 판단하려면 MySQL이 인덱스를 어떻게 사용하는지 실제 레코드를 읽어내는지 알아야 한다. MySQL이 인덱스를 이용하는 대표적인 방법 Index Range Scan, Index Full Scan, Index Loose Scan을 보도록 하자.
+어떤 경우에 인덱스를 사용하고 사용하지 않는지 판단하려면 MySQL이 인덱스를 어떻게 사용하는지 알아야 한다. MySQL이 인덱스를 이용하는 대표적인 방법 Index Range Scan, Index Full Scan, Index Loose Scan을 알아 보도록 하자.
 
 #### Index Range Scan
 
-레인지 스캔은 인덱스의 접근 방법 중 가장 대표적인 접근 방법이고 FullScan과 Loose Scan 보다 빠른 방법이다. 인덱스 레인지 스캔은 검색해야 할 인덱스의 범위가 결정됐을때 사용하는 방식이다. 
+레인지 스캔은 인덱스 접근 방법 중 가장 대표적인 접근 방법이고 FullScan과 Loose Scan 보다 빠른 방법이다. 인덱스 레인지 스캔은 검색해야 할 인덱스의 범위가 결정됐을때 사용하는 방식이다. 
 
-루트 노드에서 부터 비교를 시작하여, 브랜치노드를 거쳐 최종적으로 리프 노드까지 찾아가면 실제 읽어야 할 레코드 주소만 순서대로 읽으면 된다. 이처럼 차례대로 쭉 읽는 것을 스캔이라 한다. 만약 리프 노드를 읽다가 리프 노드의 끝까지 읽으면 다음 리프노드간의 링크를 이용해 다음 리포노드에서 스캔한다. 그리고 최종적으로 스캔을 멈춰야할 위치에 다다르면 지금까지 읽은 레코드를 사용자에게 반환하고 끝낸다. 
+루트 노드에서 부터 비교를 시작하여, 브랜치 노드를 거쳐 최종적으로 리프 노드까지 찾아가면 실제 읽어야 할 레코드 주소만 순서대로 읽으면 된다. 이처럼 차례대로 쭉 읽는 것을 스캔이라 한다. 만약 리프 노드를 읽다가 리프 노드의 끝까지 읽으면 다음 리프노드간의 링크를 이용해 다음 리포노드에서 스캔한다. 그리고 최종적으로 스캔을 멈춰야할 위치에 다다르면 지금까지 읽은 레코드를 사용자에게 반환하고 끝낸다. 
 
 ![enter image description here](https://lh3.googleusercontent.com/proxy/2Yl552k7HTmhBQ7c8FdYjnmLjbm5jZDMyB8ORwS_zJzmwIW4Ti54cE_8FaKLsbksaI3wXQ5Y7emsg4wUZTxqKDu-6Tc72-AWLENYh9QPhhNBEMcsBg)
 
@@ -302,11 +302,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2OTI5MDI0MCwtMzEyMzI5NDgxLDE4ND
-g2OTQxNDYsOTc5MjkwMzUwLC05MjY4NjAzNTEsLTkzODIyNzYw
-MCwtMTIxNjY3NTA3NCwtNTMxOTY4ODAzLDI0MzIzODc1NywxOT
-A1MDI4MDQzLDEyMzA1MzMxODYsMTQ1NzE1NzU2MCw3Mzg0OTgs
-LTU2ODMyMjE1NiwtMTI3NzcyMjU0NSwxNzIyNzc2MDk2LC0yMD
-I0OTYwMzM5LC0xMzEwNzc3OTQ5LDM0NTczNzcxLC0xMjg0OTQ2
-NDI2XX0=
+eyJoaXN0b3J5IjpbLTE1NDY0MjU3NTEsLTMxMjMyOTQ4MSwxOD
+Q4Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYwMzUxLC05MzgyMjc2
+MDAsLTEyMTY2NzUwNzQsLTUzMTk2ODgwMywyNDMyMzg3NTcsMT
+kwNTAyODA0MywxMjMwNTMzMTg2LDE0NTcxNTc1NjAsNzM4NDk4
+LC01NjgzMjIxNTYsLTEyNzc3MjI1NDUsMTcyMjc3NjA5NiwtMj
+AyNDk2MDMzOSwtMTMxMDc3Nzk0OSwzNDU3Mzc3MSwtMTI4NDk0
+NjQyNl19
 -->
