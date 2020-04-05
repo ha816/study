@@ -101,7 +101,7 @@
 >Decorator: Decorator 객체는 본연의 기능을 수행하는 Component 객체를 주입받아 클라이언트 입장에서는 같은 기능을 사용하지만 내부적으로 본연의 기능 뿐만 아니라 상황에 맞는 추가 기능을 사용할 수 있게 된다.
 >Composite: 클라이언트 입장에서 단일-복합 객체를 모두 공통적인 객체로 사용할 수 있는 패턴. FileSystem의 구조가 대표적인 Composite 패턴의 예이다. Directory-File(복잡, 단일).
 >Strategy: 객체간 의존성을 줄이기 위해 사용하는 패턴으로 사용할 객체를 주입 받아 사용한다. IoC이라고도 불린다.
->Builder: 한 객체에 필드가 너무 많을 경우 사용하는 패턴이다. 보통 클래스 내부에 builer 클래스를 정의해서 사용하며, 메서드 채인 방식으로 필요한 필드를 채워 최종적으로 build 메서드를 호출해 필요한 객체를 생성한다.
+>Builder: 한 객체에 필드가 너무 많을 경우 사용하는 패턴이다. 보통 클래스 내부에 Builder 클래스를 정의해서 사용하며, 메서드 채인 방식으로 필요한 필드를 채워 최종적으로 build 메서드를 호출해 필요한 객체를 생성한다.
 >Template method : 공통적으로 사용한 메서드를 미리 상위 클래스에 정의를 하고 하위 클래스에서 정의해둔 메서드를 사용하거나 재정의해서 사용한다.
 >Fly-weight : 자주 사용되는 객체를 캐시 해두어, 필요시 캐시에 있던 객체를 재사용하는 패턴.
 >Proxy : Proxy는 우리말로 대리자, 대변인 이라는 뜻이다. 원래 작업을 해야할 객체가 아닌 Proxy가 대신해서 작업을 수행한다. Proxy는 실제 작업해야할 객체를 참조 변수로 가지고 있다. 실제 필요한 작업은 참조하던 객체의 메서드를 호출하는데 호출 전후로 별도의 로직을 수행할 수 있다.
@@ -270,11 +270,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTEwNDkzMDAsNjU1MTE2Njg2LDY1Nj
-Q1NTkyMCwxMzQ3NDEzNjEyLC0yMTQxNDU1OTY5LDEzNjI1OTQz
-NjksMTc5NDIyNzk0NSwxNjQwMTgyOTY1LC04NTE5OTQzMjQsLT
-EyNzExMTk0NzAsMTk3MjQwNzk5MSwxNDIzODUzMzI5LC0xNzI5
-OTQwMzQ0LDEzODI1NzUxMTAsMzA4MjkwMDk1LDE1OTM2Mjg4NT
-YsLTE1NjkyMjAxMDQsNTc5NjIxMzQ4LC0xNjc2OTA1MDQ4LC0y
-MjM1NjU2NThdfQ==
+eyJoaXN0b3J5IjpbMTQyMjc3NDMzMCwtMjAxMTA0OTMwMCw2NT
+UxMTY2ODYsNjU2NDU1OTIwLDEzNDc0MTM2MTIsLTIxNDE0NTU5
+NjksMTM2MjU5NDM2OSwxNzk0MjI3OTQ1LDE2NDAxODI5NjUsLT
+g1MTk5NDMyNCwtMTI3MTExOTQ3MCwxOTcyNDA3OTkxLDE0MjM4
+NTMzMjksLTE3Mjk5NDAzNDQsMTM4MjU3NTExMCwzMDgyOTAwOT
+UsMTU5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nzk2MjEzNDgsLTE2
+NzY5MDUwNDhdfQ==
 -->
