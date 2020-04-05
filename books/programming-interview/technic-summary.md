@@ -57,7 +57,7 @@
 > StringBuilder는 thread safe하지 않다. 하지만 StringBuffer는 thread-safe하다. 따라서 StringBuilder가 더 성능상 이점이 있다. 
 
 >**Error와 Exception의 차이는?**
->Error는 발생 시 더 이상의 작업을 수행할 수 없는 치명적인 문제를 말한다. Error가 발생하면 JVM이 중단되며 대표적인 Error로는 StackOverFlow, HeapOutOfMemory이 있다. Exception은 발생해도 개발자가 추가 처리 코드를 통해 처리가 가능하다. 
+>Error는 발생 시 더 이상의 작업을 수행할 수 없는 치명적인 문제를 말한다. Error가 발생하면 JVM이 중단되며 대표적인 Error로는 StackOverFlow, HeapOutOfMemory가 있다. 반면에 Exception은 발생해도 예외 처리를 통해 정상 동작하도록 유도할 수 있다. 
 
 >**Exception 예외처리의 주요 클래스를 설명하라**
 >RuntimeException -> Exception -> Throwable
@@ -269,11 +269,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MjU5NDM2OSwxNzk0MjI3OTQ1LDE2ND
-AxODI5NjUsLTg1MTk5NDMyNCwtMTI3MTExOTQ3MCwxOTcyNDA3
-OTkxLDE0MjM4NTMzMjksLTE3Mjk5NDAzNDQsMTM4MjU3NTExMC
-wzMDgyOTAwOTUsMTU5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nzk2
-MjEzNDgsLTE2NzY5MDUwNDgsLTIyMzU2NTY1OCw0NjYwNTcyOT
-QsLTY5NTQ4MjEzMywtMTU3NTMzMzAzNCwzMDg1NDI4NDgsODI1
-NDIzODE3XX0=
+eyJoaXN0b3J5IjpbLTIxNDE0NTU5NjksMTM2MjU5NDM2OSwxNz
+k0MjI3OTQ1LDE2NDAxODI5NjUsLTg1MTk5NDMyNCwtMTI3MTEx
+OTQ3MCwxOTcyNDA3OTkxLDE0MjM4NTMzMjksLTE3Mjk5NDAzND
+QsMTM4MjU3NTExMCwzMDgyOTAwOTUsMTU5MzYyODg1NiwtMTU2
+OTIyMDEwNCw1Nzk2MjEzNDgsLTE2NzY5MDUwNDgsLTIyMzU2NT
+Y1OCw0NjYwNTcyOTQsLTY5NTQ4MjEzMywtMTU3NTMzMzAzNCwz
+MDg1NDI4NDhdfQ==
 -->
