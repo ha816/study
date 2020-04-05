@@ -65,7 +65,7 @@ EXPLAIN을 실행하면 쿼리 문장의 특성에 따라 표 형태로 된 1줄
 
 ## 실행 계획 분석 시 주의사항
 
-### select_type 컬럼 
+### select_type 컬럼 주의사항
 
 DERIVED
 : DERIVED는 FROM 절에 사용된 서브 쿼리로부터 발생한 임시 테이블을 말한다. 임시 테이블은 메모리에 저장될 수도 있고 디스크에 저장될 수도 있다. 일반적으로 메모리에 저장하는 경우에는 성능에는 크게 영향을 미치지 않지만, 데이터의 크기가 커서 임시 테이블을 디스크에 저장하면 성능이 떨어진다.
@@ -74,7 +74,9 @@ UNCACHEABLE SUBQUERY
 : 쿼리의 FROM 절 이외에 부분에서 사용하는 서브쿼리는 가능하면 MySQL 옵티마이저가 최대한 캐시되어 재사용 될 수 있게 유도한다. 하지만 사용자 변수나 일부 함수가 사용된 경우에는 이런 캐시 기능을 사용할 수 없게 만든다. 사용자 변수를 제거하거나 다른 함수로 대체해서 사용가능할지 검토해보도록 하자.
 
 DEPENDENT SUBQUERY
-: 쿼리의 FROM 절 이외에 부분에서 사용하는 서브 쿼리가 자체적으로 실행되지 못하고, 외부 쿼리에서 값을 전달받아 실행되는 경우 DEPENDENT SUBQUERY가 표시된다.
+: 쿼리의 FROM 절 이외에 부분에서 사용하는 서브 쿼리가 자체적으로 실행되지 못하고, 외부 쿼리에서 값을 전달받아 실행되는 경우 DEPENDENT SUBQUERY가 표시된다. 이는 서브 쿼리가 먼저 실행되지 못하고 외부 쿼리의 결과에 의존적이기 때문에 전체 쿼리 성능이 느려진다. 가능하다면 외부 쿼리의 의존도를 제거하는 것이 좋다.
+
+### type 컬럼 주의사항
 
 
 
@@ -637,6 +639,6 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgyNTU3NzUwLDU4OTE2Njg0NywxMDE1OT
-g4OTgxLC05NjU3MDc3MDFdfQ==
+eyJoaXN0b3J5IjpbNzI5MTAwODc3LDU4MjU1Nzc1MCw1ODkxNj
+Y4NDcsMTAxNTk4ODk4MSwtOTY1NzA3NzAxXX0=
 -->
