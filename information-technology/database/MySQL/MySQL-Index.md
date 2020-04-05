@@ -71,7 +71,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 인덱스 키의 크기가 2배가 늘어난 32byte로 늘어났다고 가정하면 $16 * 1024 / (32+12) = 372$개를 저장할 수 있다. 만약 여러분의 SELECT 쿼리가 레코드 500개를 읽어야 한다면 전자는 인덱스 페이지 한번에 해결이 되지만, 후자는 최소 2번 이상의 디스크를 읽어야 한다. 결국 **인덱스를 구성하는 키 값의 크기가 커지면 디스크로 부터 읽어야 하는 횟수가 늘어나고 느려진다는 것을 의미한다.** 
 
-결국 인덱스 키 값의 길이가 길어진다는 것은 전체적인 인덱스의 크기가 커진다는 것을 말한다. InnoDB 버퍼풀은 크기가 제한적이기 때문에 하나의 레코드를 위한 인덱스 크기가 커지면 메모리에 캐시해둘 수 있는 레코드 수는 줄어드는 것을 의미하며 자연히 메모리 효율이 떨어진다. 
+결국 인덱스 키 값의 길이가 길어진다는 것은 전체적인 인덱스의 크기가 커진다는 것을 말한다. InnoDB 버퍼풀은 크기가 제한적이기 때문에 하나의 레코드를 위한 인덱스 크기가 커지면 메모리에 캐시해둘 수 있는 레코드 수는 줄의미하며 자연히 메모리 효율이 떨어진다. 
 
 #### B-Tree 깊이
 
@@ -303,11 +303,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNjg2MDM1MSwtOTM4MjI3NjAwLC0xMj
-E2Njc1MDc0LC01MzE5Njg4MDMsMjQzMjM4NzU3LDE5MDUwMjgw
-NDMsMTIzMDUzMzE4NiwxNDU3MTU3NTYwLDczODQ5OCwtNTY4Mz
-IyMTU2LC0xMjc3NzIyNTQ1LDE3MjI3NzYwOTYsLTIwMjQ5NjAz
-MzksLTEzMTA3Nzc5NDksMzQ1NzM3NzEsLTEyODQ5NDY0MjYsMT
-ExOTAzMjQyMSwyOTgwMjY3NjIsLTEwMTA3MTA0ODcsMTQyMTI3
-NzE2MV19
+eyJoaXN0b3J5IjpbNjQ2ODc3MDc4LC05MjY4NjAzNTEsLTkzOD
+IyNzYwMCwtMTIxNjY3NTA3NCwtNTMxOTY4ODAzLDI0MzIzODc1
+NywxOTA1MDI4MDQzLDEyMzA1MzMxODYsMTQ1NzE1NzU2MCw3Mz
+g0OTgsLTU2ODMyMjE1NiwtMTI3NzcyMjU0NSwxNzIyNzc2MDk2
+LC0yMDI0OTYwMzM5LC0xMzEwNzc3OTQ5LDM0NTczNzcxLC0xMj
+g0OTQ2NDI2LDExMTkwMzI0MjEsMjk4MDI2NzYyLC0xMDEwNzEw
+NDg3XX0=
 -->
