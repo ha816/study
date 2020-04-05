@@ -195,7 +195,7 @@ WHERE dept_no = 'd002' AND emp_no >= 10114;
 
 dept_no, emp_no로 다중 인덱스가 걸려있는 상황에서 dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 한정하며 이를 작업 범위 결정 조건이라 한다. 범위 결정 조건에 해당한다는 것은 성공적으로 인덱스를 활용한다는 것을 의미한다. 하지만 컬럼 조건에 따라 작업의 범위를 줄이지 못하고 단순히 거름종이 역할만 할수도 있다. 그런 조건을 필터 조건, 체크 조건이라고도 한다. **작업의 범위를 결정하는 조건은 많을 수록 쿼리의 처리 성능을 높인다.** 하지만 **체크 조건은 많다고 해서 쿼리 성능을 높이지는 못한다. 오히려 쿼리 실행을 느리게 만들때가 많다.**
 
-#### 인덱스의 가용성
+#### 인덱스 사용 불가 조건
 
 B-Tree의 특징은 왼존 값에 기준(Left-most)해서 오른쪽 값이 정렬되어 있다는 것이다. 왼쪽이라 함은 하나의 컬럼 내에서 뿐만 아니라 다중 컬럼 인덱스의 컬럼에도 적용된다.
 
@@ -226,7 +226,7 @@ SELECT * FROM employees WHERE first_name LIKE '%mer';
 ```
 first_name 컬럼의 저장된 값의 왼쪽 부터 비교해 가면서 일치하는 레코드를 찾아야 하는데, '%mer'에는 왼쪽 부분이 고정되지 않았기 때문이다. 
 
-#### 인덱스 상
+
 
 B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 수 없다. 여기서 사용할 수 없다는 것은 엄밀히 말하여 작업의 범위를 줄이는 결정 조건으로 사용할 수 없다는 것을 말한다. 
 
@@ -300,11 +300,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MzMwODY5NywtMTkwNzA2ODI4NSwtOD
-E2ODczNjEzLC05NzIyMTQwNjYsMTQyNDk4MzExMCwtMTI5NTY4
-NjE2NCwxODA2MDkxMjkyLDQ0OTY2MTUxMiwtNjQyMDUzOTA2LC
-05NTQwODkxMDYsLTI0OTU3MjgxMSwtMzEyMzI5NDgxLDE4NDg2
-OTQxNDYsOTc5MjkwMzUwLC05MjY4NjAzNTEsLTkzODIyNzYwMC
-wtMTIxNjY3NTA3NCwtNTMxOTY4ODAzLDI0MzIzODc1NywxOTA1
-MDI4MDQzXX0=
+eyJoaXN0b3J5IjpbOTk0OTAzODA0LC0xOTA3MDY4Mjg1LC04MT
+Y4NzM2MTMsLTk3MjIxNDA2NiwxNDI0OTgzMTEwLC0xMjk1Njg2
+MTY0LDE4MDYwOTEyOTIsNDQ5NjYxNTEyLC02NDIwNTM5MDYsLT
+k1NDA4OTEwNiwtMjQ5NTcyODExLC0zMTIzMjk0ODEsMTg0ODY5
+NDE0Niw5NzkyOTAzNTAsLTkyNjg2MDM1MSwtOTM4MjI3NjAwLC
+0xMjE2Njc1MDc0LC01MzE5Njg4MDMsMjQzMjM4NzU3LDE5MDUw
+MjgwNDNdfQ==
 -->
