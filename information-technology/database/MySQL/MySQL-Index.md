@@ -224,7 +224,7 @@ SELECT * FROM employees WHERE first_name LIKE '%mer';
 
 빠른 검색의 전제 조건은 바로 정렬이다. 그런데 검색 컬럼 값이 오른 부분으로 주어졌기 때문에 인덱스를 활용이 불가능하다. 자세하게는 first_name 컬럼의 저장된 값의 왼쪽 부터 비교해 가면서 일치하는 레코드를 찾아야 하는데, '%mer'에는 왼쪽 부분이 고정되지 않았기 때문이다. 
 
-이와 가B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 수 없다. 여기서 사용할 수 없다는 것은 엄밀히 말하여 작업의 범위를 줄이는 결정 조건으로 사용할 수 없다는 것을 말한다. 
+이 뿐만 아니라 B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 수 없다. 여기서 사용할 수 없다는 것은 엄밀히 말하여 작업의 범위를 줄이는 결정 조건으로 사용할 수 없다는 것을 말한다. 
 
 * NOT-EQUAL 비교
 	* "<>", "NOT IN", "IS NOT NULL"
@@ -238,11 +238,11 @@ SELECT * FROM employees WHERE first_name LIKE '%mer';
 * 문자열 데이터 타입의 콜레이션이 다른 경우
 	* WHERE utf8_bin_char_column = euckr_bin_char_column
 
-마지막으로 일반적인 DBMS에서는 NULL 값은 인덱스에 저장되지 않지만 MySQL에서는 NULL 값도 인덱스로 관리된다. 즉 다음과 같은 WHERE 조건도 작업 범위 결정 조건으로 인덱스를 사용한다. 
+참고로 일반적인 DBMS에서는 NULL 값은 인덱스에 저장되지 않지만 MySQL에서는 NULL 값도 인덱스로 관리된다. 즉 다음과 같은 WHERE 조건도 작업 범위 결정 조건으로 인덱스를 사용한다. 
 ```
 WHERE colum IS NULL
 ```
-자 다음으로 다중 컬럼으로 만들어진 인덱스의 경우를 살펴보자. 우리는 다중 컬럼 1 ~ i 까지 인덱스를 사용하고자 한다. 
+마지막으로 다중 컬럼으로 만들어진 인덱스의 경우를 살펴보자. 우리는 다중 컬럼 1 ~ i 까지 인덱스를 사용하고자 한다. 
 ```
 INDEX ix_test (col_1, col_2, ..., col_n)
 ```
@@ -296,11 +296,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1OTIxODcsOTk0OTAzODA0LC0xOTA3MD
-Y4Mjg1LC04MTY4NzM2MTMsLTk3MjIxNDA2NiwxNDI0OTgzMTEw
-LC0xMjk1Njg2MTY0LDE4MDYwOTEyOTIsNDQ5NjYxNTEyLC02ND
-IwNTM5MDYsLTk1NDA4OTEwNiwtMjQ5NTcyODExLC0zMTIzMjk0
-ODEsMTg0ODY5NDE0Niw5NzkyOTAzNTAsLTkyNjg2MDM1MSwtOT
-M4MjI3NjAwLC0xMjE2Njc1MDc0LC01MzE5Njg4MDMsMjQzMjM4
-NzU3XX0=
+eyJoaXN0b3J5IjpbLTE0MTgwMzM3Myw5OTQ5MDM4MDQsLTE5MD
+cwNjgyODUsLTgxNjg3MzYxMywtOTcyMjE0MDY2LDE0MjQ5ODMx
+MTAsLTEyOTU2ODYxNjQsMTgwNjA5MTI5Miw0NDk2NjE1MTIsLT
+Y0MjA1MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLTMxMjMy
+OTQ4MSwxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYwMzUxLC
+05MzgyMjc2MDAsLTEyMTY2NzUwNzQsLTUzMTk2ODgwMywyNDMy
+Mzg3NTddfQ==
 -->
