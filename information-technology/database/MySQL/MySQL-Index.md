@@ -212,7 +212,7 @@ B-Tree의 특징은 왼존 값에 기준(Left-most)해서 오른쪽 값이 정�
 |d003|10|
 |d003|11|
 
-**사실 빠른 검색의 전제 조건은 바로 정렬이다.** 컬럼으로 검색해도 값의 왼쪽 부분이 없으면 인덱스 레인지 스캔이 불가능하다. 그런 이유로 아래 쿼리는 레이진 스캔 방식을 이용할 수 없다.
+**사실 빠른 검색의 전제 조건은 바로 정렬이다.** 컬럼으로 검색해도 값의 왼쪽 부분이 없으면 인덱스 레인지 스캔이 불가능하다. 그런 이유로 아래 쿼리는 레인지 스캔 방식을 이용할 수 없다.
 
 ```
 SELECT * FROM employees WHERE first_name LIKE '%mer';
@@ -300,11 +300,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNDk4MzExMCwtMTI5NTY4NjE2NCwxOD
-A2MDkxMjkyLDQ0OTY2MTUxMiwtNjQyMDUzOTA2LC05NTQwODkx
-MDYsLTI0OTU3MjgxMSwtMzEyMzI5NDgxLDE4NDg2OTQxNDYsOT
-c5MjkwMzUwLC05MjY4NjAzNTEsLTkzODIyNzYwMCwtMTIxNjY3
-NTA3NCwtNTMxOTY4ODAzLDI0MzIzODc1NywxOTA1MDI4MDQzLD
-EyMzA1MzMxODYsMTQ1NzE1NzU2MCw3Mzg0OTgsLTU2ODMyMjE1
-Nl19
+eyJoaXN0b3J5IjpbLTk3MjIxNDA2NiwxNDI0OTgzMTEwLC0xMj
+k1Njg2MTY0LDE4MDYwOTEyOTIsNDQ5NjYxNTEyLC02NDIwNTM5
+MDYsLTk1NDA4OTEwNiwtMjQ5NTcyODExLC0zMTIzMjk0ODEsMT
+g0ODY5NDE0Niw5NzkyOTAzNTAsLTkyNjg2MDM1MSwtOTM4MjI3
+NjAwLC0xMjE2Njc1MDc0LC01MzE5Njg4MDMsMjQzMjM4NzU3LD
+E5MDUwMjgwNDMsMTIzMDUzMzE4NiwxNDU3MTU3NTYwLDczODQ5
+OF19
 -->
