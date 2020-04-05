@@ -78,6 +78,8 @@ DEPENDENT SUBQUERY
 
 ### type 컬럼 주의사항
 
+ALL, index
+: index는 풀 테이블 스캔을 의미하며
 
 
 
@@ -639,6 +641,6 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI5MTAwODc3LDU4MjU1Nzc1MCw1ODkxNj
-Y4NDcsMTAxNTk4ODk4MSwtOTY1NzA3NzAxXX0=
+eyJoaXN0b3J5IjpbLTgyMzczODc2NCw1ODI1NTc3NTAsNTg5MT
+Y2ODQ3LDEwMTU5ODg5ODEsLTk2NTcwNzcwMV19
 -->
