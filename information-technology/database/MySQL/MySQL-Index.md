@@ -97,7 +97,7 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 일반적으로 DBMS의 옵티마이저에서는 **인덱스를 통해 레코드 1건을 읽는 것이 테이블에서 직접 읽는것보다 4~5배 정도 더 비용이 많이 드는 것으로 예측한다.** 따라서 인덱스를 통해 읽어야 할 레코드 건수(옵티마이저가 판단한)가 전체 테이블 레코드의 20 ~25%를 넘어서면 인덱스를 이용하지 않고 직접 모든 데이터를 읽고 필터링을 통해 처리하는게 효율적이다. 
 
-### B-Tree 인덱스 전략
+### B-Tree 인덱스 스캔 전략
 
 어떤 경우에 인덱스를 사용하고 사용하지 않는지 판단하려면 MySQL이 인덱스를 어떻게 사용하는지 알아야 한다. MySQL이 인덱스를 이용하는 대표적인 방법 Index Range Scan, Index Full Scan, Index Loose Scan을 알아 보도록 하자.
 
@@ -220,9 +220,7 @@ B-Tree의 특징은 왼존 값에 기준(Left-most)해서 오른쪽 값이 정�
 SELECT * FROM employees WHERE first_name LIKE '%mer';
 ```
 
-빠른 검색의 전제 조건은 바로 정렬이다. 그런데 검색 컬럼 값이 오른 부분으로 주어졌기 때문에 인덱스를 활용이 불가능하다. 자세하게는 first_name 컬럼의 저장된 값의 왼쪽 부터 비교해 가면서 일치하는 레코드를 찾아야 하는데, '%mer'에는 왼쪽 부분이 고정되지 않았기 때문이다. 
-
-이 뿐만 아니라 B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 수 없다. 여기서 사용할 수 없다는 것은 엄밀히 말하여 작업의 범위를 줄이는 결정 조건으로 사용할 수 없다는 것을 말한다. 
+빠른 검색의 전제 조건은 바로 정렬이다. 그런데 검색 컬럼 값이 오른 부분으로 주어졌기 때문에 인덱스를 활용이 불가능하다. 자세하게는 first_name 컬럼의 저장된 값의 왼쪽 부터 비교해 가면서 일치하는 레코드를 찾아야 하는데, '%mer'에는 왼쪽 부분이 고정되지 않았기 때문이다. 이 뿐만 아니라 B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 수 없다. 여기서 사용할 수 없다는 것은 엄밀히 말하여 작업의 범위를 줄이는 결정 조건으로 사용할 수 없다는 것을 말한다. 
 
 * NOT-EQUAL 비교
 	* "<>", "NOT IN", "IS NOT NULL"
@@ -294,11 +292,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMjY2OTc0MCw5OTQ5MDM4MDQsLTE5MD
-cwNjgyODUsLTgxNjg3MzYxMywtOTcyMjE0MDY2LDE0MjQ5ODMx
-MTAsLTEyOTU2ODYxNjQsMTgwNjA5MTI5Miw0NDk2NjE1MTIsLT
-Y0MjA1MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLTMxMjMy
-OTQ4MSwxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYwMzUxLC
-05MzgyMjc2MDAsLTEyMTY2NzUwNzQsLTUzMTk2ODgwMywyNDMy
-Mzg3NTddfQ==
+eyJoaXN0b3J5IjpbODU5NzMyODk0LDk5NDkwMzgwNCwtMTkwNz
+A2ODI4NSwtODE2ODczNjEzLC05NzIyMTQwNjYsMTQyNDk4MzEx
+MCwtMTI5NTY4NjE2NCwxODA2MDkxMjkyLDQ0OTY2MTUxMiwtNj
+QyMDUzOTA2LC05NTQwODkxMDYsLTI0OTU3MjgxMSwtMzEyMzI5
+NDgxLDE4NDg2OTQxNDYsOTc5MjkwMzUwLC05MjY4NjAzNTEsLT
+kzODIyNzYwMCwtMTIxNjY3NTA3NCwtNTMxOTY4ODAzLDI0MzIz
+ODc1N119
 -->
