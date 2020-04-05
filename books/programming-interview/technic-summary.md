@@ -105,7 +105,8 @@
 >Template method: 공통적으로 사용한 메서드를 미리 상위 클래스에 정의를 하고 하위 클래스에서 정의해둔 메서드를 사용하거나 재정의해서 사용한다.
 >Fly-weight: 자주 사용되는 객체를 캐시해 두고, 필요시 캐시에 있던 객체를 재사용하는 패턴.
 >Proxy: Proxy는 우리말로 대리자, 대변인 이라는 뜻이다. 원래 작업을 해야할 객체가 아닌 Proxy가 대신해서 작업을 수행한다. Proxy는 실제 작업해야할 객체를 참조 변수로 가지고 있다. 실제 필요한 작업은 참조하던 객체의 메서드를 호출하는데 호출 전후로 별도의 로직을 수행할 수 있다.
->Adapter:   
+>Adapter:  호환되지 않는 인터페이스를 사용하는 클라이언트를 그대로 활용할수 있다.
+이렇게 함으로써 클라이언트와 구현된 인터페이스를 분리시킬수 있으며, 향후 인터페이스가 바뀌더라도 그 변경 내역은 어댑터에 캡슐화 되기 때문에 클라이언트는 바뀔 필요가 없어진다.
 
 # MultiThread
 
@@ -270,11 +271,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODAxMzQ1NCwtMjAxMTA0OTMwMCw2NT
-UxMTY2ODYsNjU2NDU1OTIwLDEzNDc0MTM2MTIsLTIxNDE0NTU5
-NjksMTM2MjU5NDM2OSwxNzk0MjI3OTQ1LDE2NDAxODI5NjUsLT
-g1MTk5NDMyNCwtMTI3MTExOTQ3MCwxOTcyNDA3OTkxLDE0MjM4
-NTMzMjksLTE3Mjk5NDAzNDQsMTM4MjU3NTExMCwzMDgyOTAwOT
-UsMTU5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nzk2MjEzNDgsLTE2
-NzY5MDUwNDhdfQ==
+eyJoaXN0b3J5IjpbMjExMDEzODQyMiwxNzI4MDEzNDU0LC0yMD
+ExMDQ5MzAwLDY1NTExNjY4Niw2NTY0NTU5MjAsMTM0NzQxMzYx
+MiwtMjE0MTQ1NTk2OSwxMzYyNTk0MzY5LDE3OTQyMjc5NDUsMT
+Y0MDE4Mjk2NSwtODUxOTk0MzI0LC0xMjcxMTE5NDcwLDE5NzI0
+MDc5OTEsMTQyMzg1MzMyOSwtMTcyOTk0MDM0NCwxMzgyNTc1MT
+EwLDMwODI5MDA5NSwxNTkzNjI4ODU2LC0xNTY5MjIwMTA0LDU3
+OTYyMTM0OF19
 -->
