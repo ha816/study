@@ -16,7 +16,8 @@
 >JVM은 Java Virtual Machine의 약자로, 자바 프로그램이 실행되는 곳이다. JVM은 운영체제 OS와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 또한 JVM은 메모리 관리를 위해 GC를 수행한다. 
 
 >**자바의 메모리 구조는? 변수별로 저장되는 위치는?**
-> 자바 메모리는 쓰레드 전체가 공유하는 메모리 영역(Shared Memory)과 개별 쓰레드가 가지는 고유 메모리 영역(Non-Shared Memory) 두 가지로 나뉜다. 공유 메모리 영역에는 Method 영역, Heap 영역이 있다. Method 영역은 클래스 영역이라고도 불리는데 클래스 정보(이름, 필드, 메서드), 클래스 변수, Run-Time Constant pool 이 저장되는 영역이다. Heap 영역은 객체들이 저장되는 공간이다. 
+> 자바 메모리는 쓰레드 전체가 공유하는 메모리 영역(Shared Memory)과 개별 쓰레드가 가지는 고유 메모리 영역(Non-Shared Memory) 두 가지로 나뉜다. 
+> 공유 메모리 영역에는 Method Area 영역, Heap 영역이 있다. Method 영역은 클래스 영역이라고도 불리는데 클래스 정보(이름, 필드, 메서드), 클래스 변수, Run-Time Constant pool 이 저장되는 영역이다. Heap 영역은 객체들이 저장되는 공간이다. rhdb
 
 >**불변객체란? 왜 사용하는지?**
 >불변 객체는 객체의 상태가 절대 변하지 않는 것을 보장하는 객체를 말한다. 대표적인불변객체는 String이 있다. 불변 객체를 사용하면 Thread-Safe한 장점이 있고 방어적 복사본 코드를 만들 필요가 없다.
@@ -267,11 +268,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MjQwNzk5MSwxNDIzODUzMzI5LC0xNz
-I5OTQwMzQ0LDEzODI1NzUxMTAsMzA4MjkwMDk1LDE1OTM2Mjg4
-NTYsLTE1NjkyMjAxMDQsNTc5NjIxMzQ4LC0xNjc2OTA1MDQ4LC
-0yMjM1NjU2NTgsNDY2MDU3Mjk0LC02OTU0ODIxMzMsLTE1NzUz
-MzMwMzQsMzA4NTQyODQ4LDgyNTQyMzgxNywtNDEzMDkwMDkyLC
-0xODc3NTI5Nzk2LDE5MTQ3OTAxMDYsMTA4NDYwNzU2MSw5MzQy
-MjY2NjldfQ==
+eyJoaXN0b3J5IjpbLTQ4MzQ2MzI1OCwxOTcyNDA3OTkxLDE0Mj
+M4NTMzMjksLTE3Mjk5NDAzNDQsMTM4MjU3NTExMCwzMDgyOTAw
+OTUsMTU5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nzk2MjEzNDgsLT
+E2NzY5MDUwNDgsLTIyMzU2NTY1OCw0NjYwNTcyOTQsLTY5NTQ4
+MjEzMywtMTU3NTMzMzAzNCwzMDg1NDI4NDgsODI1NDIzODE3LC
+00MTMwOTAwOTIsLTE4Nzc1Mjk3OTYsMTkxNDc5MDEwNiwxMDg0
+NjA3NTYxXX0=
 -->
