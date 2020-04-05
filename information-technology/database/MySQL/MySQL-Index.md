@@ -107,9 +107,7 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 레인지 스캔은 인덱스 접근 방법 중 가장 대표적인 접근 방법이고 FullScan과 Loose Scan 보다 빠른 방법이다. 인덱스 레인지 스캔은 검색해야 할 인덱스의 범위가 결정됐을때 사용하는 방식이다. 
 
-루트 노드에서 부터 비교를 시작하여, 브랜치 노드를 거쳐 최종적으로 리프 노드까지 찾아가면 실제 읽어야 할 레코드 주소만 순서대로 읽으면 된다. 이처럼 차례대로 쭉 읽는 것을 스캔이라 한다. 만약 리프 노드를 읽다가 리프 노드의 끝까지 읽으면 다음 리프노드간의 링크를 이용해 다음 리포노드에서 스캔한다. 그리고 최종적으로 스캔을 멈춰야할 위치에 다다르면 지금까지 읽은 레코드를 사용자에게 반환하고 끝낸다. 
-
-![enter image description here](https://lh3.googleusercontent.com/proxy/2Yl552k7HTmhBQ7c8FdYjnmLjbm5jZDMyB8ORwS_zJzmwIW4Ti54cE_8FaKLsbksaI3wXQ5Y7emsg4wUZTxqKDu-6Tc72-AWLENYh9QPhhNBEMcsBg)
+루트 노드에서 부터 비교를 시작하여, 브랜치 노드를 거쳐 최종적으로 리프 노드까지 찾아가면 실제 읽어야 할 레코드 주소만 순서대로 읽으면 된다. 이처럼 차례대로 쭉 읽는 것을 스캔이라 한다. 만약 리프 노드를 읽다가 리프 노드의 끝까지 읽으면 다음 리프 노드간의 링크를 이용해 다음 리포노드에서 스캔한다. 그리고 최종적으로 스캔을 멈춰야할 위치에 다다르면 지금까지 읽은 레코드를 사용자에게 반환하고 끝낸다. 
 
 주의할 점은 인덱스의 리프 노드에서 검색 조건에 일치하는 건들을 데이터 파일에서 읽어오는 과정이 필요하다는 것이다. **리프 노드에 저장된 레코드 주소로 레코드를 읽어오는데 랜덤 I/O가 레코드의 갯수 만큼 반복된다.** 그래서 인덱스를 통한 레코드 읽기 작업이 비용이 많이 드는 작업인 것이다. 
 
@@ -302,11 +300,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDY0MjU3NTEsLTMxMjMyOTQ4MSwxOD
-Q4Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYwMzUxLC05MzgyMjc2
-MDAsLTEyMTY2NzUwNzQsLTUzMTk2ODgwMywyNDMyMzg3NTcsMT
-kwNTAyODA0MywxMjMwNTMzMTg2LDE0NTcxNTc1NjAsNzM4NDk4
-LC01NjgzMjIxNTYsLTEyNzc3MjI1NDUsMTcyMjc3NjA5NiwtMj
-AyNDk2MDMzOSwtMTMxMDc3Nzk0OSwzNDU3Mzc3MSwtMTI4NDk0
-NjQyNl19
+eyJoaXN0b3J5IjpbLTI0OTU3MjgxMSwtMzEyMzI5NDgxLDE4ND
+g2OTQxNDYsOTc5MjkwMzUwLC05MjY4NjAzNTEsLTkzODIyNzYw
+MCwtMTIxNjY3NTA3NCwtNTMxOTY4ODAzLDI0MzIzODc1NywxOT
+A1MDI4MDQzLDEyMzA1MzMxODYsMTQ1NzE1NzU2MCw3Mzg0OTgs
+LTU2ODMyMjE1NiwtMTI3NzcyMjU0NSwxNzIyNzc2MDk2LC0yMD
+I0OTYwMzM5LC0xMzEwNzc3OTQ5LDM0NTczNzcxLC0xMjg0OTQ2
+NDI2XX0=
 -->
