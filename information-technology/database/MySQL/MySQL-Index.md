@@ -174,9 +174,9 @@ SELECT * FROM table ORDER BY col1 DESC LIMIT 1;
 
 즉, 인덱스를 역순으로 정렬되게 할 수는 없지만 인덱스를 읽는 방향에 따라 오름차순 또는 내림차순 정렬 효과를 얻을 수 있다. 쿼리의 ORDER BY 처리나 MIN, MAX 함수등의 최적화의 경우, MySQL 옵티마이저가 인덱스의 읽기 방향을 전환하여 실행계획을 만든다.
 
-### B-Tree 인덱스의 가용성과 효율성
+### B-Tree 인덱스 사용법
 
-쿼리의 WHERE 조건이나 GROUP BY 또는 ORDER BY 절이 어떤 경우에 인덱스를 사용할 수 있고 어떤 방식으로 사용할 수 있는지 알아야 한다. 
+쿼리의 WHERE이나 GROUP BY 또는 ORDER BY 절이 어떤 경우에 인덱스를 사용할 수 있는지 그리고 어떤 방식으로 인덱스를 활용하는지 알아보자.
 
 #### 비교 조건의 종류와 효율
 
@@ -296,14 +296,13 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 **다중컬럼으로 생성된 해시 인덱스에서도 모든 컬럼이 동등 조건으로 비교되는 경우에만 인덱스를 사용할 수 있다.** 
 
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDcwNjgyODUsLTgxNjg3MzYxMywtOT
-cyMjE0MDY2LDE0MjQ5ODMxMTAsLTEyOTU2ODYxNjQsMTgwNjA5
-MTI5Miw0NDk2NjE1MTIsLTY0MjA1MzkwNiwtOTU0MDg5MTA2LC
-0yNDk1NzI4MTEsLTMxMjMyOTQ4MSwxODQ4Njk0MTQ2LDk3OTI5
-MDM1MCwtOTI2ODYwMzUxLC05MzgyMjc2MDAsLTEyMTY2NzUwNz
-QsLTUzMTk2ODgwMywyNDMyMzg3NTcsMTkwNTAyODA0MywxMjMw
-NTMzMTg2XX0=
+eyJoaXN0b3J5IjpbLTE5MDc2OTEzNjEsLTE5MDcwNjgyODUsLT
+gxNjg3MzYxMywtOTcyMjE0MDY2LDE0MjQ5ODMxMTAsLTEyOTU2
+ODYxNjQsMTgwNjA5MTI5Miw0NDk2NjE1MTIsLTY0MjA1MzkwNi
+wtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLTMxMjMyOTQ4MSwxODQ4
+Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYwMzUxLC05MzgyMjc2MD
+AsLTEyMTY2NzUwNzQsLTUzMTk2ODgwMywyNDMyMzg3NTcsMTkw
+NTAyODA0M119
 -->
