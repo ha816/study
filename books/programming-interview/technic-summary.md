@@ -1,6 +1,6 @@
 # JAVA 
 
->**자바의 원시 타입은?** 
+>**자바 원시 타입은?** 
 >자바에는 8가지 원시 타입이 있다. boolean(1byte), byte(1), char(2), short(2), int(4), long(8), float(4), double(8). 
 
 >**자바의 Wrapper 클래스는? 그리고 AutoBoxing이란?**
@@ -267,11 +267,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MjU3NTExMCwzMDgyOTAwOTUsMTU5Mz
-YyODg1NiwtMTU2OTIyMDEwNCw1Nzk2MjEzNDgsLTE2NzY5MDUw
-NDgsLTIyMzU2NTY1OCw0NjYwNTcyOTQsLTY5NTQ4MjEzMywtMT
-U3NTMzMzAzNCwzMDg1NDI4NDgsODI1NDIzODE3LC00MTMwOTAw
-OTIsLTE4Nzc1Mjk3OTYsMTkxNDc5MDEwNiwxMDg0NjA3NTYxLD
-kzNDIyNjY2OSwxNzAxMDkyNzA1LDE1OTQyMjc3MTEsLTYzMjky
-MzIxMV19
+eyJoaXN0b3J5IjpbLTE3Mjk5NDAzNDQsMTM4MjU3NTExMCwzMD
+gyOTAwOTUsMTU5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nzk2MjEz
+NDgsLTE2NzY5MDUwNDgsLTIyMzU2NTY1OCw0NjYwNTcyOTQsLT
+Y5NTQ4MjEzMywtMTU3NTMzMzAzNCwzMDg1NDI4NDgsODI1NDIz
+ODE3LC00MTMwOTAwOTIsLTE4Nzc1Mjk3OTYsMTkxNDc5MDEwNi
+wxMDg0NjA3NTYxLDkzNDIyNjY2OSwxNzAxMDkyNzA1LDE1OTQy
+Mjc3MTFdfQ==
 -->
