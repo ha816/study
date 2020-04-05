@@ -126,7 +126,7 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 
 인덱스 루즈 스캔은 상당히 생소한데 오라클과 같은 DBMS의 인덱스 스킵 스캔과 작동 방식이 비슷하다. **루즈하다는 말은 말 그대로 느슨하게 또는 듬성듬성 인덱스를 읽는 것을 의미한다.** 
 
-루즈 인덱스 스캔은 인덱스 레인지 스캔과 비슷하게 동작하지만, 중간마다 필요치 않은 인덱스 키값은 무시(SKIP)하한다. 일반적으로 GROUP BY나 집합 함수 가운데 MAX(), MIN() 함수에 대해 최적화를 하는 경우 사용된다.
+루즈 인덱스 스캔은 인덱스 레인지 스캔과 비슷하게 동작하지만, 중간마다 필요치 않은 인덱스 키값은 무시(SKIP)한다. 일반적으로 GROUP BY나 집합 함수 가운데 MAX(), MIN() 함수에 대해 최적화를 하는 경우 사용된다.
 
 ```
 SELECTdept_no, MIN(emp_no)
@@ -302,11 +302,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ5NjYxNTEyLC02NDIwNTM5MDYsLTk1ND
-A4OTEwNiwtMjQ5NTcyODExLC0zMTIzMjk0ODEsMTg0ODY5NDE0
-Niw5NzkyOTAzNTAsLTkyNjg2MDM1MSwtOTM4MjI3NjAwLC0xMj
-E2Njc1MDc0LC01MzE5Njg4MDMsMjQzMjM4NzU3LDE5MDUwMjgw
-NDMsMTIzMDUzMzE4NiwxNDU3MTU3NTYwLDczODQ5OCwtNTY4Mz
-IyMTU2LC0xMjc3NzIyNTQ1LDE3MjI3NzYwOTYsLTIwMjQ5NjAz
-MzldfQ==
+eyJoaXN0b3J5IjpbMTkwMDcwMzc1OCw0NDk2NjE1MTIsLTY0Mj
+A1MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLTMxMjMyOTQ4
+MSwxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYwMzUxLC05Mz
+gyMjc2MDAsLTEyMTY2NzUwNzQsLTUzMTk2ODgwMywyNDMyMzg3
+NTcsMTkwNTAyODA0MywxMjMwNTMzMTg2LDE0NTcxNTc1NjAsNz
+M4NDk4LC01NjgzMjIxNTYsLTEyNzc3MjI1NDUsMTcyMjc3NjA5
+Nl19
 -->
