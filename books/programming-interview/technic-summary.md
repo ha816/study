@@ -45,7 +45,7 @@
 >Override(재정의)은 상위 클래스의 메서드를 하위 클래스에서 재정의하는 것을 말한다. 
 >@Override 에너테이션은 코드 가독성과 개발자의 실수를 방지해주는 역할을 한다. @Override가 붙은 메서드는 상위 클래스나 인터페이스에 있는 특정 메서드를 재정의했다는 의미이다. 현재 다른 메서드와 차이를 명확히 밝혀 가독성을 높이고, 상위 메서드가 개발자의 실수로 변경이 일어나면 컴파일 에러를 낸다.
 
->**제네릭? 구상화(reified)한다는 건 어떤 의미인가?** 
+>**제네릭? 실체화(reified)한다는 건 어떤 의미인가?** 
 >Generic이란 매개변수화된 타입이라고 한다. 즉 사용하려는 타입을 매개변수로 받는것을 말한다. 예를 들어 List는 담을 원소의 타입을 제네릭을 이용해서 정할 수 있다. 그러면 컴파일러는 list에 특정 타입만 포함되도록 컬렉션을 제한한다. 
 >실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 제네릭은 실체화가 아니다. 컴파일시에는 존재하지만 실제 동작하는 코드에는 존재하지 않는다.
 
@@ -269,11 +269,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxODIyMDEwMywxNjQwMTgyOTY1LC04NT
-E5OTQzMjQsLTEyNzExMTk0NzAsMTk3MjQwNzk5MSwxNDIzODUz
-MzI5LC0xNzI5OTQwMzQ0LDEzODI1NzUxMTAsMzA4MjkwMDk1LD
-E1OTM2Mjg4NTYsLTE1NjkyMjAxMDQsNTc5NjIxMzQ4LC0xNjc2
-OTA1MDQ4LC0yMjM1NjU2NTgsNDY2MDU3Mjk0LC02OTU0ODIxMz
-MsLTE1NzUzMzMwMzQsMzA4NTQyODQ4LDgyNTQyMzgxNywtNDEz
-MDkwMDkyXX0=
+eyJoaXN0b3J5IjpbNjM0MDA0ODUyLDE2NDAxODI5NjUsLTg1MT
+k5NDMyNCwtMTI3MTExOTQ3MCwxOTcyNDA3OTkxLDE0MjM4NTMz
+MjksLTE3Mjk5NDAzNDQsMTM4MjU3NTExMCwzMDgyOTAwOTUsMT
+U5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nzk2MjEzNDgsLTE2NzY5
+MDUwNDgsLTIyMzU2NTY1OCw0NjYwNTcyOTQsLTY5NTQ4MjEzMy
+wtMTU3NTMzMzAzNCwzMDg1NDI4NDgsODI1NDIzODE3LC00MTMw
+OTAwOTJdfQ==
 -->
