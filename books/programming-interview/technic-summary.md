@@ -59,9 +59,9 @@
 >**Error와 Exception의 차이는?**
 >Error는 발생 시 더 이상의 작업을 수행할 수 없는 치명적인 문제를 말한다. Error가 발생하면 JVM이 중단되며 대표적인 Error로는 StackOverFlow, HeapOutOfMemory이 있다. Exception은 발생해도 개발자가 추가 처리 코드를 통해 처리가 가능하다. 
 
->**Exception예외처리의 주요 클래스를 설명하라**
+>**Exception 예외처리의 주요 클래스를 설명하라**
 >RuntimeException -> Exception -> Throwable
->예외는 크게 RuntimeException(unchecked Exception)과 checked과 명시적 Exception으로 나뉜다. RuntimeException은 런타임시 발생하는 예외로 대표적으로는 NullPointException, ArrayOutofBound 등이 있다. 명시적 예외는 코드 상에 예외처리를 위한 코드를 작성해야 하며, 대표적으로 IO Excetpion이 있다. 
+>예외는 크게 RuntimeException(unchecked Exception)과 checked과 명시적 Exception으로 나뉜다. RuntimeException은 런타임시 발생하는 예외로 대표적으로는 NullPointException, ArrayOutOfBound 등이 있다. 명시적 예외는 코드 상에 예외처리를 위한 코드를 작성해야 하며, 대표적으로 IO Excetpion이 있다. 
 
 >**Comparable VS Comparator**
 >Comparable과 Comparator 모두 객체들의 순서를 정하기 위해 사용한다. Collections.sort와 같이 정렬 메서드를 사용하고 싶다면 객체들이 Comparable 인터페이스를 구현해야 한다. Comparable은 자연스러운 순서를 정할때 사용하고 Comparator는 원하는 임의로 순서를 정하고 싶을 때 사용한다. 
@@ -269,11 +269,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDIyNzk0NSwxNjQwMTgyOTY1LC04NT
-E5OTQzMjQsLTEyNzExMTk0NzAsMTk3MjQwNzk5MSwxNDIzODUz
-MzI5LC0xNzI5OTQwMzQ0LDEzODI1NzUxMTAsMzA4MjkwMDk1LD
-E1OTM2Mjg4NTYsLTE1NjkyMjAxMDQsNTc5NjIxMzQ4LC0xNjc2
-OTA1MDQ4LC0yMjM1NjU2NTgsNDY2MDU3Mjk0LC02OTU0ODIxMz
-MsLTE1NzUzMzMwMzQsMzA4NTQyODQ4LDgyNTQyMzgxNywtNDEz
-MDkwMDkyXX0=
+eyJoaXN0b3J5IjpbMTM2MjU5NDM2OSwxNzk0MjI3OTQ1LDE2ND
+AxODI5NjUsLTg1MTk5NDMyNCwtMTI3MTExOTQ3MCwxOTcyNDA3
+OTkxLDE0MjM4NTMzMjksLTE3Mjk5NDAzNDQsMTM4MjU3NTExMC
+wzMDgyOTAwOTUsMTU5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nzk2
+MjEzNDgsLTE2NzY5MDUwNDgsLTIyMzU2NTY1OCw0NjYwNTcyOT
+QsLTY5NTQ4MjEzMywtMTU3NTMzMzAzNCwzMDg1NDI4NDgsODI1
+NDIzODE3XX0=
 -->
