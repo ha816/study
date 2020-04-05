@@ -89,7 +89,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 인덱스에서 선택도(Selectivity) 또는 기수성(Cardinality)는 거의 같은 의미로 사용된다. **Cardinality는 모든 인덱스 키 값 가운데 유니크한 값의 수를 의미한다.**
 만약 전체 인덱스 키값은 100개인데 그중에서 유니크한 값의 수는 10개라면 Cardinality는 10이다. 정의에 따라 인덱스 키 값 중에 중복되는 값이 많아지면 Cardinality는 낮아지고 반대로 중복 값이 적어지면 Cardinality가 높아진다. Cardinality가 높아지면 검색 대상 수가 줄기 때문에 더 효율적인 처리가 가능해진다. 
 
-예를 들어 하나의 테이블에 country와 city라는 컬럼을 가지고 있다고 하자. 해당 테이블에 전체 레코드 갯수는 1만건이고, country 칼럼으로만 인덱스가 생성된 상태에서 country 컬럼의 유니크한 값의 갯수가 10개, 1,000개 인경우를 생각해보자. 
+예를 들어 하나의 테이블에 country와 city라는 컬럼을 가지고 있다고 하자. 해당 테이블에 전체 레코드 갯수는 1만건이고, country 칼럼으로만 인덱스가 생성된 상태에서 country 컬럼의 유니크한 값의 갯수가 10개 또는 1,000개인 경우를 나누어 생각햅
 
 MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리대기 때문에 city 칼럼의 cardinality는 무시해도 된다. 만약 유니크 값의 갯수가 10인경우 평균적으로 1,000건의 조회가 필요한 것을 통계적으로 유추할 수 있고 유니크 값의 갯수가 1,000개인 경우 10건의 조회만으로 검색이 가능한 것을 유추해 볼 수 있다. 
 
@@ -302,11 +302,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI4NDQ2MjUzLDE4NDg2OTQxNDYsOTc5Mj
-kwMzUwLC05MjY4NjAzNTEsLTkzODIyNzYwMCwtMTIxNjY3NTA3
-NCwtNTMxOTY4ODAzLDI0MzIzODc1NywxOTA1MDI4MDQzLDEyMz
-A1MzMxODYsMTQ1NzE1NzU2MCw3Mzg0OTgsLTU2ODMyMjE1Niwt
-MTI3NzcyMjU0NSwxNzIyNzc2MDk2LC0yMDI0OTYwMzM5LC0xMz
-EwNzc3OTQ5LDM0NTczNzcxLC0xMjg0OTQ2NDI2LDExMTkwMzI0
-MjFdfQ==
+eyJoaXN0b3J5IjpbLTEyODEwNTY1MTgsMTg0ODY5NDE0Niw5Nz
+kyOTAzNTAsLTkyNjg2MDM1MSwtOTM4MjI3NjAwLC0xMjE2Njc1
+MDc0LC01MzE5Njg4MDMsMjQzMjM4NzU3LDE5MDUwMjgwNDMsMT
+IzMDUzMzE4NiwxNDU3MTU3NTYwLDczODQ5OCwtNTY4MzIyMTU2
+LC0xMjc3NzIyNTQ1LDE3MjI3NzYwOTYsLTIwMjQ5NjAzMzksLT
+EzMTA3Nzc5NDksMzQ1NzM3NzEsLTEyODQ5NDY0MjYsMTExOTAz
+MjQyMV19
 -->
