@@ -77,7 +77,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 **B-Tree 인덱스의 깊이는 상당히 중요하지만 직접 제어할 방법이 없다.** 
 
-만약 인덱스의 키 값의 평균 크기가 늘어나면 어떤 현상이 추가로 더 발생하는지 알아보자. 만약 B-Tree의 깊이가 3인 경우 최대 몇개 의 키 값을 가질 수 있을까? 
+만약 인덱스의 키 값의 평균 크기가 늘어나면 어떤 현상이 추가로 더 발생하는지 알아보자. 만약 B-Tree의 깊이가 3인 경우 최대 몇 개의 키 값을 가질 수 있을까? 
 앞서 하나의 노드는 585개의 키 값과 자식 노드 주소 가질 수 있다고 했다. $16 * 1024 / (16+12) = 585$ 
 즉 키값과 자식노드 주소 값의 합이 28 바이트라면 최대 2억정도 된다.($585^3$)
 
@@ -303,11 +303,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzE4MTMzNTEsLTkyNjg2MDM1MSwtOT
-M4MjI3NjAwLC0xMjE2Njc1MDc0LC01MzE5Njg4MDMsMjQzMjM4
-NzU3LDE5MDUwMjgwNDMsMTIzMDUzMzE4NiwxNDU3MTU3NTYwLD
-czODQ5OCwtNTY4MzIyMTU2LC0xMjc3NzIyNTQ1LDE3MjI3NzYw
-OTYsLTIwMjQ5NjAzMzksLTEzMTA3Nzc5NDksMzQ1NzM3NzEsLT
-EyODQ5NDY0MjYsMTExOTAzMjQyMSwyOTgwMjY3NjIsLTEwMTA3
-MTA0ODddfQ==
+eyJoaXN0b3J5IjpbNzg3NzM0OTQ1LC05MjY4NjAzNTEsLTkzOD
+IyNzYwMCwtMTIxNjY3NTA3NCwtNTMxOTY4ODAzLDI0MzIzODc1
+NywxOTA1MDI4MDQzLDEyMzA1MzMxODYsMTQ1NzE1NzU2MCw3Mz
+g0OTgsLTU2ODMyMjE1NiwtMTI3NzcyMjU0NSwxNzIyNzc2MDk2
+LC0yMDI0OTYwMzM5LC0xMzEwNzc3OTQ5LDM0NTczNzcxLC0xMj
+g0OTQ2NDI2LDExMTkwMzI0MjEsMjk4MDI2NzYyLC0xMDEwNzEw
+NDg3XX0=
 -->
