@@ -47,7 +47,7 @@
 
 >**제네릭? 실체화(reified)한다는 건 어떤 의미인가?** 
 >Generic이란 매개변수화된 타입이라고 한다. 즉 사용하려는 타입을 매개변수로 받는 것을 말한다. 예를 들어 List는 담을 원소의 타입을 제네릭을 이용해서 정할 수 있다. 그러면 컴파일러는 list에 특정 타입만 포함되도록 컬렉션을 제한한다. 
->실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 제네릭은 실체화가 아니다. 컴파일시에는 존재하지만 실제 동작하는 코드에는 제네릭 코드가 존재하지 않는다.
+>실체화는(reified) 실행 시에 이용할 수 있다는 것인데, 기본적으로 제네릭은 실체화되지 않는다. 컴파일시에는 존재하지만 실제 동작하는 코드에는 제네릭 코드가 존재하지 않는다.
 
 >**String은 어느 메모리 공간에 올라가는가? 인터닝(interning)이란?** 
 >String 객체는 대표적인 불변객체로, new 키워드로 생성하지 않는한 String Constant Pool에 올라간다. 
@@ -269,11 +269,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDk2MTcxNzMsMTY0MDE4Mjk2NSwtOD
-UxOTk0MzI0LC0xMjcxMTE5NDcwLDE5NzI0MDc5OTEsMTQyMzg1
-MzMyOSwtMTcyOTk0MDM0NCwxMzgyNTc1MTEwLDMwODI5MDA5NS
-wxNTkzNjI4ODU2LC0xNTY5MjIwMTA0LDU3OTYyMTM0OCwtMTY3
-NjkwNTA0OCwtMjIzNTY1NjU4LDQ2NjA1NzI5NCwtNjk1NDgyMT
-MzLC0xNTc1MzMzMDM0LDMwODU0Mjg0OCw4MjU0MjM4MTcsLTQx
-MzA5MDA5Ml19
+eyJoaXN0b3J5IjpbMTI0NjY5NTM3LDE2NDAxODI5NjUsLTg1MT
+k5NDMyNCwtMTI3MTExOTQ3MCwxOTcyNDA3OTkxLDE0MjM4NTMz
+MjksLTE3Mjk5NDAzNDQsMTM4MjU3NTExMCwzMDgyOTAwOTUsMT
+U5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nzk2MjEzNDgsLTE2NzY5
+MDUwNDgsLTIyMzU2NTY1OCw0NjYwNTcyOTQsLTY5NTQ4MjEzMy
+wtMTU3NTMzMzAzNCwzMDg1NDI4NDgsODI1NDIzODE3LC00MTMw
+OTAwOTJdfQ==
 -->
