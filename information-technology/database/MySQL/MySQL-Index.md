@@ -244,16 +244,15 @@ B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 
 ```
 WHERE colum IS NULL
 ```
-자 다음으로 다중 컬럼으로 만들어진 인덱스의 경우를 살펴보자.
+자 다음으로 다중 컬럼으로 만들어진 인덱스의 경우를 살펴보자. 우리는 다중 컬럼 1 ~ i 까지 인덱스를 사용하고자 한다. 
 ```
 INDEX ix_test (col_1, col_2, ..., col_n)
 ```
-
 * 작업 범위 결정 조건으로 인덱스를 사용하는 경우
 	* 앞에서 부터 i -1번째 까지 인덱스가 Equals 형태('=' 또는 'IN')로 비교
 	* col_i 컬럼에 대해 Equals 비교 또는 크고 작은 비교(>, <) 또는 LIKE 좌측 일치 패턴
 	
-위 두가지 조건을 만족하면 1 ~ i까지는 범위 결정 조건으로 사용되어 작업 범위를 줄인다. 그리고 나머지 i +1 ~ n까지 조건은 체코 조건으로 사용된다. 
+위 두가지 조건을 만족하면 1 ~ i 까지는 범위 결정 조건으로 사용되어 작업 범위를 줄인다. 그리고 나머지 i + 1  ~ n까지 조건이 존재한다면, 필터 조건으로만 작용하여 성능이 다소 느려진다.
 
 ## Hash Index
 
@@ -300,11 +299,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNjg3MzYxMywtOTcyMjE0MDY2LDE0Mj
-Q5ODMxMTAsLTEyOTU2ODYxNjQsMTgwNjA5MTI5Miw0NDk2NjE1
-MTIsLTY0MjA1MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLT
-MxMjMyOTQ4MSwxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYw
-MzUxLC05MzgyMjc2MDAsLTEyMTY2NzUwNzQsLTUzMTk2ODgwMy
-wyNDMyMzg3NTcsMTkwNTAyODA0MywxMjMwNTMzMTg2LDE0NTcx
-NTc1NjBdfQ==
+eyJoaXN0b3J5IjpbLTI1NDU5OTI1NywtODE2ODczNjEzLC05Nz
+IyMTQwNjYsMTQyNDk4MzExMCwtMTI5NTY4NjE2NCwxODA2MDkx
+MjkyLDQ0OTY2MTUxMiwtNjQyMDUzOTA2LC05NTQwODkxMDYsLT
+I0OTU3MjgxMSwtMzEyMzI5NDgxLDE4NDg2OTQxNDYsOTc5Mjkw
+MzUwLC05MjY4NjAzNTEsLTkzODIyNzYwMCwtMTIxNjY3NTA3NC
+wtNTMxOTY4ODAzLDI0MzIzODc1NywxOTA1MDI4MDQzLDEyMzA1
+MzMxODZdfQ==
 -->
