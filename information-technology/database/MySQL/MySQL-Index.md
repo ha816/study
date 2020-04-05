@@ -84,9 +84,9 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 여기서 언급한 내용은 인덱스 키 값을 가능한 크기가 작게 만들면 좋다는 것을 강조하는 내용이고 아무리 대용량의 데이터 베이스라도 B-Tree깊이가 4~5이상까지 깊어지는 경우는 별로 없다. 
 
-#### 선택도(기수성)
+#### 선택도(기수성, Cardinality)
 
-인덱스에서 선택도(Selectivity) 또는 기수성(Cardinality)는 거의 같은 의미로 사용된다. **Cardinality는 모든 인덱스 키값 가운데 유니크한 값의 수를 의미한다.**
+인덱스에서 선택도(Selectivity) 또는 기수성(Cardinality)는 거의 같은 의미로 사용된다. **Cardinality는 모든 인덱스 키 값 가운데 유니크한 값의 수를 의미한다.**
 만약 전체 인덱스 키값은 100개인데 그중에서 유니크한 값의 수는 10개라면 Cardinality는 10이다. 정의에 따라 인덱스 키 값중에 중복되는 값이 많아지면 Cardinality는 낮아지고 반대로 중복값이 없으면 Cardinality가 높아진다. Cardinality가 높아지면 검색 대상 수가 줄기 때문에 더 빠르게 처리가 된다. 
 
 예를 들어 하나의 테이블에 country와 city라는 컬럼을 가지고 있다고 하자. 해당 테이블에 전체 레코드 갯수는 1만건이고, country 칼럼으로만 인덱스가 생성된 상태에서 country 컬럼의 유니크한 값의 갯수가 10개, 1,000개 인경우를 생각해보자. 
@@ -302,11 +302,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0ODY5NDE0Niw5NzkyOTAzNTAsLTkyNj
-g2MDM1MSwtOTM4MjI3NjAwLC0xMjE2Njc1MDc0LC01MzE5Njg4
-MDMsMjQzMjM4NzU3LDE5MDUwMjgwNDMsMTIzMDUzMzE4NiwxND
-U3MTU3NTYwLDczODQ5OCwtNTY4MzIyMTU2LC0xMjc3NzIyNTQ1
-LDE3MjI3NzYwOTYsLTIwMjQ5NjAzMzksLTEzMTA3Nzc5NDksMz
-Q1NzM3NzEsLTEyODQ5NDY0MjYsMTExOTAzMjQyMSwyOTgwMjY3
-NjJdfQ==
+eyJoaXN0b3J5IjpbLTYwMjYwODEwNCwxODQ4Njk0MTQ2LDk3OT
+I5MDM1MCwtOTI2ODYwMzUxLC05MzgyMjc2MDAsLTEyMTY2NzUw
+NzQsLTUzMTk2ODgwMywyNDMyMzg3NTcsMTkwNTAyODA0MywxMj
+MwNTMzMTg2LDE0NTcxNTc1NjAsNzM4NDk4LC01NjgzMjIxNTYs
+LTEyNzc3MjI1NDUsMTcyMjc3NjA5NiwtMjAyNDk2MDMzOSwtMT
+MxMDc3Nzk0OSwzNDU3Mzc3MSwtMTI4NDk0NjQyNiwxMTE5MDMy
+NDIxXX0=
 -->
