@@ -67,6 +67,9 @@ EXPLAIN을 실행하면 쿼리 문장의 특성에 따라 표 형태로 된 1줄
 
 ### select_type 컬럼 
 
+DERIVED
+: DERIVED는 FROM 절에 사용된 서브 쿼리로부터 발생한 임시 테이블을 말한다.
+
 
 
 ## id 컬럼
@@ -626,5 +629,5 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODg4ODU3ODEsLTk2NTcwNzcwMV19
+eyJoaXN0b3J5IjpbMTAxNTk4ODk4MSwtOTY1NzA3NzAxXX0=
 -->
