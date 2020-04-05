@@ -65,6 +65,7 @@ EXPLAIN을 실행하면 쿼리 문장의 특성에 따라 표 형태로 된 1줄
 
 ## 실행 계획 분석 시 주의사항
 
+### select_type 컬럼 
 
 
 
@@ -625,5 +626,5 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NTcwNzcwMSwxNjE4OTU4ODE5XX0=
+eyJoaXN0b3J5IjpbLTE2ODg4ODU3ODEsLTk2NTcwNzcwMV19
 -->
