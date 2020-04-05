@@ -77,6 +77,8 @@ UNCACHEABLE SUBQUERY
 
 
 
+
+
 ## id 컬럼
 
 실행 계획에서 가장 왼쪽에 표시되는 id 컬럼은 단위 SELECT 쿼리 별로 부여되는 식별자 값이다. 
@@ -634,6 +636,6 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg5MTY2ODQ3LDEwMTU5ODg5ODEsLTk2NT
-cwNzcwMV19
+eyJoaXN0b3J5IjpbLTEzMTUyMTQ0NSw1ODkxNjY4NDcsMTAxNT
+k4ODk4MSwtOTY1NzA3NzAxXX0=
 -->
