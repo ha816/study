@@ -17,7 +17,8 @@
 
 >**자바의 메모리 구조는? 변수별로 저장되는 위치는?**
 > 자바 메모리는 쓰레드 전체가 공유하는 메모리 영역(Shared Memory)과 개별 쓰레드가 가지는 고유 메모리 영역(Non-Shared Memory) 두 가지로 나뉜다. 
-> 공유 메모리 영역에는 Method Area 영역, Heap 영역이 있다. Method 영역은 클래스 영역이라고도 불리는데 클래스 정보(이름, 필드, 메서드), 클래스 변수, Run-Time Constant pool 이 저장되는 영역이다. Heap 영역은 객체들이 저장되는 공간이다. rhdb
+> 공유 메모리 영역에는 Method Area 영역, Heap 영역이 있다. Method 영역은 클래스 영역이라고도 불리는데 클래스 정보(이름, 필드, 메서드), 클래스 변수, Run-Time Constant pool 이 저장되는 영역이다. Heap 영역은 객체들이 저장되는 공간이다.
+> 고유 메모리 영역에는 PC, Java native method, Stack으로 구성된다. 
 
 >**불변객체란? 왜 사용하는지?**
 >불변 객체는 객체의 상태가 절대 변하지 않는 것을 보장하는 객체를 말한다. 대표적인불변객체는 String이 있다. 불변 객체를 사용하면 Thread-Safe한 장점이 있고 방어적 복사본 코드를 만들 필요가 없다.
@@ -268,11 +269,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MzQ2MzI1OCwxOTcyNDA3OTkxLDE0Mj
-M4NTMzMjksLTE3Mjk5NDAzNDQsMTM4MjU3NTExMCwzMDgyOTAw
-OTUsMTU5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nzk2MjEzNDgsLT
-E2NzY5MDUwNDgsLTIyMzU2NTY1OCw0NjYwNTcyOTQsLTY5NTQ4
-MjEzMywtMTU3NTMzMzAzNCwzMDg1NDI4NDgsODI1NDIzODE3LC
-00MTMwOTAwOTIsLTE4Nzc1Mjk3OTYsMTkxNDc5MDEwNiwxMDg0
-NjA3NTYxXX0=
+eyJoaXN0b3J5IjpbOTc4MzY0ODIyLDE5NzI0MDc5OTEsMTQyMz
+g1MzMyOSwtMTcyOTk0MDM0NCwxMzgyNTc1MTEwLDMwODI5MDA5
+NSwxNTkzNjI4ODU2LC0xNTY5MjIwMTA0LDU3OTYyMTM0OCwtMT
+Y3NjkwNTA0OCwtMjIzNTY1NjU4LDQ2NjA1NzI5NCwtNjk1NDgy
+MTMzLC0xNTc1MzMzMDM0LDMwODU0Mjg0OCw4MjU0MjM4MTcsLT
+QxMzA5MDA5MiwtMTg3NzUyOTc5NiwxOTE0NzkwMTA2LDEwODQ2
+MDc1NjFdfQ==
 -->
