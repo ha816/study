@@ -62,7 +62,7 @@ InnoDB 스토리지 엔진은 디스크에 데이터를 저장하는 기본 단�
 
 일반적으로 B-Tree는 자식 노드의 갯수가 가변적이다. 그러면 MySQL의 B-Tree는 자식 노드를 몇 개까지 가질지 궁금할 것이다. 이것은 인덱스의 페이지 크기와 키 값의 크기에 따라 결정된다. InnoDB의 모든 페이지 크기는 16KB로 고정되어 있다. 
 
-인덱스 키의 크기가 16Byte이고 자식 노드 주소 값의 크키 12바이트라고 가정하자. 
+인덱스 키의 크기가 16Byte이고 자식 노드 주소 값의 크키가 12Byte라고 가정하자. 
 |16byte|12byte  |
 |--|--|
 |1233__ABCD  | 자식노드주소|
@@ -303,7 +303,7 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NjU3MTM0MywtOTM4MjI3NjAwLC0xMj
+eyJoaXN0b3J5IjpbMjA2OTc0NjkxNSwtOTM4MjI3NjAwLC0xMj
 E2Njc1MDc0LC01MzE5Njg4MDMsMjQzMjM4NzU3LDE5MDUwMjgw
 NDMsMTIzMDUzMzE4NiwxNDU3MTU3NTYwLDczODQ5OCwtNTY4Mz
 IyMTU2LC0xMjc3NzIyNTQ1LDE3MjI3NzYwOTYsLTIwMjQ5NjAz
