@@ -178,7 +178,7 @@ SELECT * FROM table ORDER BY col1 DESC LIMIT 1;
 
 쿼리의 WHERE이나 GROUP BY 또는 ORDER BY 절이 어떤 경우에 인덱스를 사용할 수 있는지 그리고 어떤 방식으로 인덱스를 활용하는지 알아보자.
 
-#### 비교 조건에 따른 활용법
+#### 범위 결정 조건, 필터 조건
 
 다중 컬럼 인덱스에서는 컬럼의 순서와 그 컬럼에 사용된 조건이 동등비교(=)인지 아니면 범위 조건(>, <)인지에 따라 인덱스 컬럼의 활용 형태가 달라진다. 
 
@@ -226,7 +226,7 @@ SELECT * FROM employees WHERE first_name LIKE '%mer';
 ```
 first_name 컬럼의 저장된 값의 왼쪽 부터 비교해 가면서 일치하는 레코드를 찾아야 하는데, '%mer'에는 왼쪽 부분이 고정되지 않았기 때문이다. 
 
-#### 가용성과 효율성 판단
+#### 인덱스 상
 
 B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 수 없다. 여기서 사용할 수 없다는 것은 엄밀히 말하여 작업의 범위를 줄이는 결정 조건으로 사용할 수 없다는 것을 말한다. 
 
@@ -300,11 +300,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA5OTEyOTQ5LC0xOTA3MDY4Mjg1LC04MT
-Y4NzM2MTMsLTk3MjIxNDA2NiwxNDI0OTgzMTEwLC0xMjk1Njg2
-MTY0LDE4MDYwOTEyOTIsNDQ5NjYxNTEyLC02NDIwNTM5MDYsLT
-k1NDA4OTEwNiwtMjQ5NTcyODExLC0zMTIzMjk0ODEsMTg0ODY5
-NDE0Niw5NzkyOTAzNTAsLTkyNjg2MDM1MSwtOTM4MjI3NjAwLC
-0xMjE2Njc1MDc0LC01MzE5Njg4MDMsMjQzMjM4NzU3LDE5MDUw
-MjgwNDNdfQ==
+eyJoaXN0b3J5IjpbMTA1MzMwODY5NywtMTkwNzA2ODI4NSwtOD
+E2ODczNjEzLC05NzIyMTQwNjYsMTQyNDk4MzExMCwtMTI5NTY4
+NjE2NCwxODA2MDkxMjkyLDQ0OTY2MTUxMiwtNjQyMDUzOTA2LC
+05NTQwODkxMDYsLTI0OTU3MjgxMSwtMzEyMzI5NDgxLDE4NDg2
+OTQxNDYsOTc5MjkwMzUwLC05MjY4NjAzNTEsLTkzODIyNzYwMC
+wtMTIxNjY3NTA3NCwtNTMxOTY4ODAzLDI0MzIzODc1NywxOTA1
+MDI4MDQzXX0=
 -->
