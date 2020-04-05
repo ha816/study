@@ -129,12 +129,12 @@ MySQL에서는 인덱스의 통계정보(유니크한 값의 갯수)가 관리�
 루즈 인덱스 스캔은 인덱스 레인지 스캔과 비슷하게 동작하지만, 중간마다 필요치 않은 인덱스 키값은 무시(SKIP)한다. 일반적으로 GROUP BY나 집합 함수 가운데 MAX(), MIN() 함수에 대해 최적화를 하는 경우 사용된다.
 
 ```
-SELECTdept_no, MIN(emp_no)
+SELECT dept_no, MIN(emp_no)
 FROM dept_emp
 WHERE dep_no BETWEEN 'd002' AND 'd004'
 GROUP BY dept_no
 ```
-위 쿼리에서 사용된 dept_emp 테이블은 dept_no와 emp_no로 인덱스가 생성되어 있다 가정하자 그리고 인덱스는 dept_no, emp_no 값으로 정렬되어 있어 dept_no 그룹 별로 제일 첫 번째 레코드의 emp_no만 읽으면 되는 것이다. 즉 인덱스에서 WHERE 조건을 만족하는 범위 전체를 다 스캔할 필요가 없다는 것을 옵티마이저가 알고 있기 때문에 조건에 만족하지 않은 레코드를 무시할 수 있다. 
+위 쿼리에서 사용된 dept_emp 테이블은 dept_no와 emp_no로 인덱스가 생성되어 있다 가정하자. 그리고 인덱스는 dept_no, emp_no 값으로 정렬되어 있어 dept_no 그룹 별로 제일 첫 번째 레코드의 emp_no만 읽으면 되는 것이다. 즉 인덱스에서 WHERE 조건을 만족하는 범위 전체를 다 스캔할 필요가 없다는 것을 옵티마이저가 알고 있기 때문에 조건에 만족하지 않은 레코드를 무시할 수 있다. 
 
 #### Multi-column Index(Concatenated Index)
 
@@ -302,7 +302,7 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMDcwMzc1OCw0NDk2NjE1MTIsLTY0Mj
+eyJoaXN0b3J5IjpbMTgwNjA5MTI5Miw0NDk2NjE1MTIsLTY0Mj
 A1MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLTMxMjMyOTQ4
 MSwxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYwMzUxLC05Mz
 gyMjc2MDAsLTEyMTY2NzUwNzQsLTUzMTk2ODgwMywyNDMyMzg3
