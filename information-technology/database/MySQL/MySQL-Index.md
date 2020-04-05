@@ -188,6 +188,11 @@ WHERE dept_no = 'd002' AND emp_no >= 10114;
 
 dept_no = 'd002' AND emp_no >= 10114는 작업의 범위를 결정하며 이를 작업 범위 결정 조건이라 한다. 하지만 각 조건이 항상 작업의 단위를 줄이지는 못하고 단순히 거름종이 역할만 하는 조건일 수도 있다. 그런 조건을 필터링 조건, 체크 조건이라 한다. **작업의 범위를 결정하는 조건은 많으면 많을 수록 쿼리의 처리 성능을 높인다.** 하지만 **체크 조건은 많다고 해서 쿼리 성능을 높이지는 못한다. 오히려 쿼리 실행을 느리게 만들때가 많다.**
 
+추가적인 다중 인덱스의 예로 아래 쿼리를 보자. 조건으로 dept_no와 emp_no가 주어졌다면 인덱스를 효율적으로 사용할 수 있지만, emp_no만 주어졌기 때문에 효율적일 수가 없다. 
+```
+SELECT * FROM dept_emp WHERE emp_no >= 100;
+```
+
 #### 인덱스의 가용성
 
 B-Tree의 특징은 왼존 값에 기준(Left-most)해서 오른쪽 값이 정렬되어 있다는 것이다. 왼쪽이라 함은 하나의 컬럼 내에서 뿐만 아니라 다중 컬럼 인덱스의 컬럼에도 적용된다.
@@ -218,11 +223,6 @@ B-Tree의 특징은 왼존 값에 기준(Left-most)해서 오른쪽 값이 정�
 SELECT * FROM employees WHERE first_name LIKE '%mer';
 ```
 first_name 컬럼의 저장된 값의 왼쪽 부터 비교해 가면서 일치하는 레코드를 찾아야 하는데, '%mer'에는 왼쪽 부분이 고정되지 않았기 때문이다. 
-
-다중 인덱스의 예로 아래 쿼리를 보자. 조건으로 dept_no와 emp_no가 주어졌다면 인덱스를 효율적으로 사용할 수 있지만, emp_no만 주어졌기 때문에 효율적일 수가 없다. 
-```
-SELECT * FROM dept_emp WHERE emp_no >= 100;
-```
 
 #### 가용성과 효율성 판단
 
@@ -300,11 +300,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MjIxNDA2NiwxNDI0OTgzMTEwLC0xMj
-k1Njg2MTY0LDE4MDYwOTEyOTIsNDQ5NjYxNTEyLC02NDIwNTM5
-MDYsLTk1NDA4OTEwNiwtMjQ5NTcyODExLC0zMTIzMjk0ODEsMT
-g0ODY5NDE0Niw5NzkyOTAzNTAsLTkyNjg2MDM1MSwtOTM4MjI3
-NjAwLC0xMjE2Njc1MDc0LC01MzE5Njg4MDMsMjQzMjM4NzU3LD
-E5MDUwMjgwNDMsMTIzMDUzMzE4NiwxNDU3MTU3NTYwLDczODQ5
-OF19
+eyJoaXN0b3J5IjpbLTgxNjg3MzYxMywtOTcyMjE0MDY2LDE0Mj
+Q5ODMxMTAsLTEyOTU2ODYxNjQsMTgwNjA5MTI5Miw0NDk2NjE1
+MTIsLTY0MjA1MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLT
+MxMjMyOTQ4MSwxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYw
+MzUxLC05MzgyMjc2MDAsLTEyMTY2NzUwNzQsLTUzMTk2ODgwMy
+wyNDMyMzg3NTcsMTkwNTAyODA0MywxMjMwNTMzMTg2LDE0NTcx
+NTc1NjBdfQ==
 -->
