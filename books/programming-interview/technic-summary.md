@@ -4,7 +4,7 @@
 >자바에는 8가지 원시 타입이 있다. boolean(1byte), byte(1), char(2), short(2), int(4), long(8), float(4), double(8). 
 
 >**자바의 Wrapper 클래스는? 그리고 AutoBoxing이란?**
-> Wrapper 클래스는 원시 타입에 대응하는 클래스이다.  객체 생성시 내부 필드에 final 키워드가 붙어있다. 즉 불변 객체이다. 원시 타입을 대응하는 Wrapper로 만들어 사용해야 할때가 있는데 이를 자동으로 해주는 것이 AutoBoxing이다. 반대는 UnBoxing이다. 
+> Wrapper 클래스는 원시 타입에 대응하는 클래스이다. 객체 생성시 내부 필드에 final 키워드가 붙어있다. 즉 불변 객체이다. 원시 타입을 대응하는 Wrapper로 만들어 사용해야 할때가 있는데 이를 자동으로 해주는 것이 (Auto) Boxing이다. 반대는 unboxing이다. 
 
 >**자바의 변수의 종류는?**
 > 변수가 가지는 값의 종류에 따라 참조 변수(reference variable), 원시 변수(primitive variable)가 있다. 그리고 클래스에 선언한 위치에 따라서 멤버 변수, 로컬 변수로 나뉜다. 멤버 변수는 다시 인스턴스 변수와 클래스변수로 나뉘는데 클래스 변수는 Static이 붙은 정적 변수를 말한다. 
@@ -267,11 +267,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjk5NDAzNDQsMTM4MjU3NTExMCwzMD
-gyOTAwOTUsMTU5MzYyODg1NiwtMTU2OTIyMDEwNCw1Nzk2MjEz
-NDgsLTE2NzY5MDUwNDgsLTIyMzU2NTY1OCw0NjYwNTcyOTQsLT
-Y5NTQ4MjEzMywtMTU3NTMzMzAzNCwzMDg1NDI4NDgsODI1NDIz
-ODE3LC00MTMwOTAwOTIsLTE4Nzc1Mjk3OTYsMTkxNDc5MDEwNi
-wxMDg0NjA3NTYxLDkzNDIyNjY2OSwxNzAxMDkyNzA1LDE1OTQy
-Mjc3MTFdfQ==
+eyJoaXN0b3J5IjpbMTQyMzg1MzMyOSwtMTcyOTk0MDM0NCwxMz
+gyNTc1MTEwLDMwODI5MDA5NSwxNTkzNjI4ODU2LC0xNTY5MjIw
+MTA0LDU3OTYyMTM0OCwtMTY3NjkwNTA0OCwtMjIzNTY1NjU4LD
+Q2NjA1NzI5NCwtNjk1NDgyMTMzLC0xNTc1MzMzMDM0LDMwODU0
+Mjg0OCw4MjU0MjM4MTcsLTQxMzA5MDA5MiwtMTg3NzUyOTc5Ni
+wxOTE0NzkwMTA2LDEwODQ2MDc1NjEsOTM0MjI2NjY5LDE3MDEw
+OTI3MDVdfQ==
 -->
