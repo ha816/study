@@ -73,7 +73,8 @@ DERIVED
 UNCACHEABLE SUBQUERY
 : 쿼리의 FROM 절 이외에 부분에서 사용하는 서브쿼리는 가능하면 MySQL 옵티마이저가 최대한 캐시되어 재사용 될 수 있게 유도한다. 하지만 사용자 변수나 일부 함수가 사용된 경우에는 이런 캐시 기능을 사용할 수 없게 만든다. 사용자 변수를 제거하거나 다른 함수로 대체해서 사용가능할지 검토해보도록 하자.
 
-
+DEPENDENT SUBQUERY
+: 쿼리의 FROM 절 이외에 부분에서 사용하는 서브 쿼리가 자체적으로 실행되지 못하고, 외부 쿼리에서 값을 전달받아 실행되는 경우 DEPENDENT SUBQUERY가 표시된다.
 
 
 
@@ -636,6 +637,6 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTUyMTQ0NSw1ODkxNjY4NDcsMTAxNT
-k4ODk4MSwtOTY1NzA3NzAxXX0=
+eyJoaXN0b3J5IjpbNTgyNTU3NzUwLDU4OTE2Njg0NywxMDE1OT
+g4OTgxLC05NjU3MDc3MDFdfQ==
 -->
