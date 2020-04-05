@@ -222,13 +222,9 @@ B-Tree의 특징은 왼존 값에 기준(Left-most)해서 오른쪽 값이 정�
 SELECT * FROM employees WHERE first_name LIKE '%mer';
 ```
 
-빠른 검색의 전제 조건은 바로 정렬이다. 그런데 검색시 값의 왼쪽 부분으로 정렬이 되어 인덱스 레인지 스캔이 불가능하다. 그런 이유로 아래 쿼리는 레인지 스캔 방식을 이용할 수 없다.
+빠른 검색의 전제 조건은 바로 정렬이다. 그런데 검색 컬럼 값이 오른 부분으로 주어졌기 때문에 인덱스를 활용이 불가능하다. 자세하게는 first_name 컬럼의 저장된 값의 왼쪽 부터 비교해 가면서 일치하는 레코드를 찾아야 하는데, '%mer'에는 왼쪽 부분이 고정되지 않았기 때문이다. 
 
-first_name 컬럼의 저장된 값의 왼쪽 부터 비교해 가면서 일치하는 레코드를 찾아야 하는데, '%mer'에는 왼쪽 부분이 고정되지 않았기 때문이다. 
-
-
-
-B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 수 없다. 여기서 사용할 수 없다는 것은 엄밀히 말하여 작업의 범위를 줄이는 결정 조건으로 사용할 수 없다는 것을 말한다. 
+이와 가B-Tree 인덱스 특성상 아래 조건일 경우에는 인덱스를 사용할 수 없다. 여기서 사용할 수 없다는 것은 엄밀히 말하여 작업의 범위를 줄이는 결정 조건으로 사용할 수 없다는 것을 말한다. 
 
 * NOT-EQUAL 비교
 	* "<>", "NOT IN", "IS NOT NULL"
@@ -300,11 +296,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODY4Mjk5MDUsOTk0OTAzODA0LC0xOT
-A3MDY4Mjg1LC04MTY4NzM2MTMsLTk3MjIxNDA2NiwxNDI0OTgz
-MTEwLC0xMjk1Njg2MTY0LDE4MDYwOTEyOTIsNDQ5NjYxNTEyLC
-02NDIwNTM5MDYsLTk1NDA4OTEwNiwtMjQ5NTcyODExLC0zMTIz
-Mjk0ODEsMTg0ODY5NDE0Niw5NzkyOTAzNTAsLTkyNjg2MDM1MS
-wtOTM4MjI3NjAwLC0xMjE2Njc1MDc0LC01MzE5Njg4MDMsMjQz
-MjM4NzU3XX0=
+eyJoaXN0b3J5IjpbLTM1OTIxODcsOTk0OTAzODA0LC0xOTA3MD
+Y4Mjg1LC04MTY4NzM2MTMsLTk3MjIxNDA2NiwxNDI0OTgzMTEw
+LC0xMjk1Njg2MTY0LDE4MDYwOTEyOTIsNDQ5NjYxNTEyLC02ND
+IwNTM5MDYsLTk1NDA4OTEwNiwtMjQ5NTcyODExLC0zMTIzMjk0
+ODEsMTg0ODY5NDE0Niw5NzkyOTAzNTAsLTkyNjg2MDM1MSwtOT
+M4MjI3NjAwLC0xMjE2Njc1MDc0LC01MzE5Njg4MDMsMjQzMjM4
+NzU3XX0=
 -->
