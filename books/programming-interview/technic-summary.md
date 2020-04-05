@@ -61,7 +61,7 @@
 
 >**Exception 의 주요 클래스를 설명하라**
 >RuntimeException -> Exception -> Throwable
->Exception은 크게 unchecked Exception(RuntimeException)과 checked Exception으로 나뉜다. uncheked Exception은 런타임시 발생하는 예외로 대표적으로는 NullPointException, ArrayOutOfBound 등이 있다. checked Exception는 예외처리를 위한 추가 코드를 작성해야 하며, 대표적으로 IO Exception이 있다
+>Exception은 크게 unchecked Exception(RuntimeException)과 checked Exception으로 나뉜다. uncheked Exception은 런타임시 발생하는 예외로 대표적으로는 NullPointException, ArrayOutOfBound 등이 있다. checked Exception는 예외처리를 위한 추가 코드를 작성해야 하며, 대표적으로 IO Exception이 있다. 
 
 >**Comparable VS Comparator**
 >Comparable과 Comparator 모두 객체들의 순서를 정하기 위해 사용한다. Collections.sort와 같이 정렬 메서드를 사용하고 싶다면 객체들이 Comparable 인터페이스를 구현해야 한다. Comparable은 자연스러운 순서를 정할때 사용하고 Comparator는 원하는 임의로 순서를 정하고 싶을 때 사용한다. 
@@ -269,7 +269,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNTg2NjYwNCwxMzQ3NDEzNjEyLC0yMT
+eyJoaXN0b3J5IjpbLTMxNjA3MTI2NiwxMzQ3NDEzNjEyLC0yMT
 QxNDU1OTY5LDEzNjI1OTQzNjksMTc5NDIyNzk0NSwxNjQwMTgy
 OTY1LC04NTE5OTQzMjQsLTEyNzExMTk0NzAsMTk3MjQwNzk5MS
 wxNDIzODUzMzI5LC0xNzI5OTQwMzQ0LDEzODI1NzUxMTAsMzA4
