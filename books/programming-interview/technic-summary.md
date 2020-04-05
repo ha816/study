@@ -84,7 +84,8 @@
 >LinkedHashMap은 입력 받은 Key-Value 쌍의 입력 순서를 기억한다. TreeMap은 Map 상단에 key-value 노드로 구성된 Tree를 만들어 키를 기준으로 정렬이 가능해진다.
 
 >** **Hashtable, SynchronizedMap, ConcurrentHashMap의 차이는?**
-> SynchronizedMap과 ConcurrentHashMap 모두 Thread-Safe를 보장한다. SynchronizedMap은 수정이 일어날때 모든 데이터에 락을 걸고, 다른 쓰레드들은 락이 풀렸을 경우에만 접근이 가능하다. ConcurrentHashMap은 데이터를 추가하거나 수정할때만 segment라는 일부의 맵만 락이 걸린다. 그래서 다른 쓰레드들은 그 일부의 맵을 제외하고는 읽기 및 수정이 가능하다. 추가적으로  ConcurrentHashMap doesn't support null keys or null values while synchronized HashMap supports one null key.
+> SynchronizedMap과 ConcurrentHashMap 모두 Thread-Safe를 보장한다. SynchronizedMap은 수정이 일어날때 모든 데이터에 락을 걸고, 다른 쓰레드들은 락이 풀렸을 경우에만 접근이 가능하다. ConcurrentHashMap은 데이터를 추가하거나 수정할때만 segment라는 일부의 맵만 락이 걸린다. 그래서 다른 쓰레드들은 그 일부의 맵을 제외하고는 읽기 및 수정이 가능하다. 추가적으로 ConcurrentHashMap은 key와 value로 null값을 지원하지 않는다. 반면에 SynchronizedMap은 null 키를 지원한다. 
+> Use the second option if you need to assure data flexibility, and each thread requires to have an up-to-date view of the map. Use the first if performance is critical, and every thread only inserts data to the map, which shows happening less frequently.
 
 >**Tree?**
 > Node와 Edge로 이루어진 자료 구조이며 사이클이 존재하지 않는다. 대표적인 Tree로는 Binary Tree가 있다. 
@@ -270,7 +271,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ4NjE1MjkxLDY1NjQ1NTkyMCwxMzQ3ND
+eyJoaXN0b3J5IjpbNjU1MTE2Njg2LDY1NjQ1NTkyMCwxMzQ3ND
 EzNjEyLC0yMTQxNDU1OTY5LDEzNjI1OTQzNjksMTc5NDIyNzk0
 NSwxNjQwMTgyOTY1LC04NTE5OTQzMjQsLTEyNzExMTk0NzAsMT
 k3MjQwNzk5MSwxNDIzODUzMzI5LC0xNzI5OTQwMzQ0LDEzODI1
