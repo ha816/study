@@ -170,7 +170,7 @@ ORDER BY col1 ASC, col2 DESC;
 SELECT * FROM table ORDER BY col1 DESC LIMIT 1;
 ```
 
-위와 같은 쿼리를 실행하면 과연 인덱스를 처음부터 오름차순까지 끝까지 읽어 마지막 레코드 하나만을 가져오는걸까? 그렇지 않다. 인덱스는 항상 오름차순으로 정렬돼 있기 때문에 최대값에서 부터 역순으로 접근하면 위의 쿼리를 빠르게 처리 할 수 있다. 
+위와 같은 쿼리를 실행하면 과연 인덱스를 처음부터 끝까지 읽어 마지막 레코드 하나만을 가져오는걸까? 그렇지 않다. 인덱스는 항상 오름차순으로 정렬돼 있기 때문에 최대값에서 부터 역순으로 접근하면 위의 쿼리를 빠르게 처리 할 수 있다. 
 
 즉, 인덱스를 역순으로 정렬되게 할 수는 없지만 인덱스를 읽는 방향에 따라 오름차순 또는 내림차순 정렬 효과를 얻을 수 있다. 쿼리의 ORDER BY 처리나 MIN, MAX 함수등의 최적화의 경우, MySQL 옵티마이저가 인덱스의 읽기 방향을 전환하여 실행계획을 만든다.
 
@@ -300,11 +300,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTU2ODYxNjQsMTgwNjA5MTI5Miw0ND
-k2NjE1MTIsLTY0MjA1MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4
-MTEsLTMxMjMyOTQ4MSwxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOT
-I2ODYwMzUxLC05MzgyMjc2MDAsLTEyMTY2NzUwNzQsLTUzMTk2
-ODgwMywyNDMyMzg3NTcsMTkwNTAyODA0MywxMjMwNTMzMTg2LD
-E0NTcxNTc1NjAsNzM4NDk4LC01NjgzMjIxNTYsLTEyNzc3MjI1
-NDVdfQ==
+eyJoaXN0b3J5IjpbMTQyNDk4MzExMCwtMTI5NTY4NjE2NCwxOD
+A2MDkxMjkyLDQ0OTY2MTUxMiwtNjQyMDUzOTA2LC05NTQwODkx
+MDYsLTI0OTU3MjgxMSwtMzEyMzI5NDgxLDE4NDg2OTQxNDYsOT
+c5MjkwMzUwLC05MjY4NjAzNTEsLTkzODIyNzYwMCwtMTIxNjY3
+NTA3NCwtNTMxOTY4ODAzLDI0MzIzODc1NywxOTA1MDI4MDQzLD
+EyMzA1MzMxODYsMTQ1NzE1NzU2MCw3Mzg0OTgsLTU2ODMyMjE1
+Nl19
 -->
