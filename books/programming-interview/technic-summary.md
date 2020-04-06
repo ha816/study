@@ -114,7 +114,15 @@
 > 하지만 volatile이 항상 최선은 아니다. 하나의 Thread가 아닌 여러 Thread가 write하는 상황에서는 적합하지 않다. 그리고 cache가 아닌 메모리에 접근하기 때문에 느리다.
 
 > **Atomic 클래스는 무엇을 제공하는가?** 
-> java.concurrent.atomic 패키지에는 원자적 연산을 수행할 수 있는 유용한 클래스들을 확인할 수 있다. Atomic 클래스는 synchronized 키워드 없이도 Thread-safe하다. 대기 상태에 들어가지 않는 Non-blocking 알고리즘으로 비교 후 치환(CAS, compare-and-swap)과 같은 저수준의 명령을 활용한다. CAS 연산은 일단 성공적으로 치환할 수 있을 것이라고 희망하는 상태에서 연산을 실행해보고,  값을 마지막으로 확인한 이후에 다른 스레드가 해당하는 값을 변경했다면 그런 사실이 있는지를 확인이나 하자는 의미이다.
+> java.concurrent.atomic 패키지에는 Atomic 클래스들을 확인할 수 있다. Atomic 클래스는 synchronized 키워드 없이도 Thread-safe하다. 대기 상태에 들어가지 않는 Non-blocking 알고리즘으로 비교 후 치환(CAS, compare-and-swap)과 같은 저수준의 명령을 활용한다. CAS 연산은 일단 성공적으로 치환할 수 있을 것이라고 희망하는 상태에서 연산을 실행해보고,  값을 마지막으로 확인한 이후에 다른 스레드가 해당하는 값을 변경했다면 그런 사실이 있는지를 확인이나 하자는 의미이다.
+
+There is a branch of research focused on creating non-blocking algorithms for concurrent environments. These algorithms exploit low-level atomic machine instructions such as compare-and-swap (CAS), to ensure data integrity.
+
+A typical CAS operation works on three operands:
+
+1.  The memory location on which to operate (M)
+2.  The existing expected value (A) of the variable
+3.  The new value (B) which needs to be set
 
 # Framework & Application
 
@@ -267,11 +275,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyOTU0MjE3NCw3NDIyNTI5NzQsNjQzND
-k0ODE1LC00NTU2OTYwMCwxNzI4MDEzNDU0LC0yMDExMDQ5MzAw
-LDY1NTExNjY4Niw2NTY0NTU5MjAsMTM0NzQxMzYxMiwtMjE0MT
-Q1NTk2OSwxMzYyNTk0MzY5LDE3OTQyMjc5NDUsMTY0MDE4Mjk2
-NSwtODUxOTk0MzI0LC0xMjcxMTE5NDcwLDE5NzI0MDc5OTEsMT
-QyMzg1MzMyOSwtMTcyOTk0MDM0NCwxMzgyNTc1MTEwLDMwODI5
-MDA5NV19
+eyJoaXN0b3J5IjpbMTA3NjQ0MzIzOSwyMTI5NTQyMTc0LDc0Mj
+I1Mjk3NCw2NDM0OTQ4MTUsLTQ1NTY5NjAwLDE3MjgwMTM0NTQs
+LTIwMTEwNDkzMDAsNjU1MTE2Njg2LDY1NjQ1NTkyMCwxMzQ3ND
+EzNjEyLC0yMTQxNDU1OTY5LDEzNjI1OTQzNjksMTc5NDIyNzk0
+NSwxNjQwMTgyOTY1LC04NTE5OTQzMjQsLTEyNzExMTk0NzAsMT
+k3MjQwNzk5MSwxNDIzODUzMzI5LC0xNzI5OTQwMzQ0LDEzODI1
+NzUxMTBdfQ==
 -->
