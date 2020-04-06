@@ -114,7 +114,7 @@
 > 하지만 volatile이 항상 최선은 아니다. 하나의 Thread가 아닌 여러 Thread가 write하는 상황에서는 적합하지 않다. 그리고 cache가 아닌 메모리에 접근하기 때문에 느리다.
 
 > **Atomic 클래스는 무엇을 제공하는가?** 
-> java.concurrent.atomic 패키지 Atomic 클래스는 멀티쓰레드 환경에서 데이터 정합성 문제를 Non-blocking 알고리즘으로 처리한다. 이런 알고리즘은 CAS(compare-and-swap)이라는 원자적 명령어를 사용한다. CAS 명령은 메모리에 있는 기존 정보가 특정 쓰레드의 정보와 일치할 때만 새로운 정보로 수정한다. 일치하지 않으면 어떤 동작도 하지 않는다. 즉 다수의 쓰레드가 CAS 명령으로 같은 값을 수정하려 할때, 그 중 하나는 그 값을 수정하고 이길 것이다. 그러나, locks 잠금과는 다른게 어떤 다른 쓰레드도 일시 멈춤되지 않는다. 대신에 쓰레드들을 단순히 그들이 그 값을 수정하지 않을 것을 알렸다. 쓰레드들을 context switches를 완벽히 피하고 추가 작업을 진행할 수 있다. 
+> java.concurrent.atomic 패키지 Atomic 클래스는 멀티쓰레드 환경에서 데이터 정합성 문제를 Non-blocking 알고리즘으로 처리한다. 이런 알고리즘은 CAS(compare-and-swap)이라는 원자적 명령어를 사용한다. CAS 명령은 메모리에 있는 기존 정보가 특정 쓰레드의 정보와 일치할 때만 새로운 정보로 수정한다. 일치하지 않으면 어떤 동작도 하지 않는다. 즉 다수의 쓰레드가 CAS 명령으로 메모리에 같은 변수를 수정하려 할때, 메모리에 변수와 일치하는 쓰레드에그 값을 수정하고 이길 것이다. 그러나, locks 잠금과는 다른게 어떤 다른 쓰레드도 일시 멈춤되지 않는다. 대신에 쓰레드들을 단순히 그들이 그 값을 수정하지 않을 것을 알렸다. 쓰레드들을 context switches를 완벽히 피하고 추가 작업을 진행할 수 있다. 
 > One other consequence is that the core program logic becomes more complex. This is because we have to handle the scenario when the CAS operation didn't succeed. We can retry it again and again till it succeeds, or we can do nothing and move on depending on the use case.
 
 When multiple threads attempt to update the same value through CAS, one of them wins and updates the value. **However, unlike in the case of locks, no other thread gets suspended**; instead, they're simply informed that they did not manage to update the value. The threads can then proceed to do further work and context switches are completely avoided.
@@ -270,11 +270,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4MTcyNTA1LC01MzI0NTY1NDEsMTkzNT
-QzMTQ5NSwtMTI0NDY4MDg3MCwtNDk0NTg3NjYzLDIxMjk1NDIx
-NzQsNzQyMjUyOTc0LDY0MzQ5NDgxNSwtNDU1Njk2MDAsMTcyOD
-AxMzQ1NCwtMjAxMTA0OTMwMCw2NTUxMTY2ODYsNjU2NDU1OTIw
-LDEzNDc0MTM2MTIsLTIxNDE0NTU5NjksMTM2MjU5NDM2OSwxNz
-k0MjI3OTQ1LDE2NDAxODI5NjUsLTg1MTk5NDMyNCwtMTI3MTEx
-OTQ3MF19
+eyJoaXN0b3J5IjpbLTE1MDY0MzI2NTQsNjQ4MTcyNTA1LC01Mz
+I0NTY1NDEsMTkzNTQzMTQ5NSwtMTI0NDY4MDg3MCwtNDk0NTg3
+NjYzLDIxMjk1NDIxNzQsNzQyMjUyOTc0LDY0MzQ5NDgxNSwtND
+U1Njk2MDAsMTcyODAxMzQ1NCwtMjAxMTA0OTMwMCw2NTUxMTY2
+ODYsNjU2NDU1OTIwLDEzNDc0MTM2MTIsLTIxNDE0NTU5NjksMT
+M2MjU5NDM2OSwxNzk0MjI3OTQ1LDE2NDAxODI5NjUsLTg1MTk5
+NDMyNF19
 -->
