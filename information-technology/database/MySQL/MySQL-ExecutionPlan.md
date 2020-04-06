@@ -83,6 +83,9 @@ ALL, index
 
 ### key 컬럼 주의사항
 * 쿼리가 인덱스를 사용하지 못할때는 실행 계획의 key 컬럼에는 아무 값도 표시되지 않는다. 인덱스를 추가하거나 WHERE 조건을 변경하자.
+
+### rows 컬럼 주의사항
+* 쿼리가 실제 가져오는 레코드 수보다 훨씨
  
 
 ## id 컬럼
@@ -642,6 +645,7 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkxNj
-Y4NDcsMTAxNTk4ODk4MSwtOTY1NzA3NzAxXX0=
+eyJoaXN0b3J5IjpbLTE5NTA4MDk2MjMsMTYxNTQ5NTIyLDU4Mj
+U1Nzc1MCw1ODkxNjY4NDcsMTAxNTk4ODk4MSwtOTY1NzA3NzAx
+XX0=
 -->
