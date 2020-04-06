@@ -85,7 +85,8 @@ ALL, index
 * 쿼리가 인덱스를 사용하지 못할때는 실행 계획의 key 컬럼에는 아무 값도 표시되지 않는다. 인덱스를 추가하거나 WHERE 조건을 변경하자.
 
 ### rows 컬럼 주의사항
-* 쿼리가 실제 가져오는 레코드 수보다 훨씨
+* 쿼리가 실제 가져오는 레코드 수보다 훨씬 더 큰 값이 rows 컬럼에 표시되는 경우에는 쿼리가 인덱스를 정상적으로 사용하고 있는지, 그리고 그 인덱스가 충분히 작업 범위를 좁혀 줄 수 있는지 검토해보자.
+* LIMIT가 포함된 쿼리라 하더라도 LIMIT의 제한은 Rows 컬럼의 고려 
  
 
 ## id 컬럼
@@ -645,7 +646,7 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTA4MDk2MjMsMTYxNTQ5NTIyLDU4Mj
+eyJoaXN0b3J5IjpbLTIwOTY1NTU0MzYsMTYxNTQ5NTIyLDU4Mj
 U1Nzc1MCw1ODkxNjY4NDcsMTAxNTk4ODk4MSwtOTY1NzA3NzAx
 XX0=
 -->
