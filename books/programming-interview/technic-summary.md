@@ -121,7 +121,7 @@
 >**프레임워크와 라이브러리의 차이**
 >라이브러리는 단순히 활용 가능한 도구의 집합이다.
 >프레임워크는 초기에 완성된 애플리케이션이 아닌 뼈대만 있다. 개발자는 프레임워크의 요구에 맞는 코드를 작성하는 것으로 살을 붙여 애플리케이션을 만든다. 
->프레임워크와 라이브러리의 중요한 차이는 애플리케이션 제어 흐름에 있다. 프레임워크는 제어흐름을 가진 주체라면 라이브러리는 단순히 개발자가 만든 흐름을 만들며 라이브러리를 가져다 쓰는 것이라고 할 수 있습니다. 
+>프레임워크와 라이브러리의 중요한 차이는 애플리케이션 제어 플로우에 있다. 프레임워크는 제어흐름을 가진 주체라면 라이브러리는 단순히 개발자 제어흐름에 따라 사용되는 도구일 뿐이다.
 
 > **스프링이 유명한 이유는?**
 >엔터프라이즈 시스템은 기본적으로 복잡한 시스템이다. 그래서 스피링이 나타나기 전에 무수히 많은 엔터프라이즈 프로젝트가 실패했다. 그러나 스프링 복잡한 시스템의 요구사항을 DI, AOP, PSA등을 통해 효과적으로 대응했고 살아남아 유명해졌다.
@@ -267,11 +267,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3OTA2NjM4NywxNTYyMjYwNzI5LC0xMj
-gzOTA1MTY3LDM5ODEzMjgwNSwtMjY4NjIxNDk5LC04ODM4NzMw
-MjgsMTExMDU5ODA4MywtMTY5MzcxMDQ2NywzMjQ2OTY0NzksND
-k0NDQ2ODIyLDExNzM0ODA4OTMsLTcwMDQxNzAyNCwtMTE0NDE5
-NTAyMSwtMTE2OTIyNzQxNSwxMzI2OTgxMTUxLC0xNTg4NzUyMz
-Q5LDY0ODE3MjUwNSwtNTMyNDU2NTQxLDE5MzU0MzE0OTUsLTEy
-NDQ2ODA4NzBdfQ==
+eyJoaXN0b3J5IjpbOTYxODEzNzU0LDE1NjIyNjA3MjksLTEyOD
+M5MDUxNjcsMzk4MTMyODA1LC0yNjg2MjE0OTksLTg4Mzg3MzAy
+OCwxMTEwNTk4MDgzLC0xNjkzNzEwNDY3LDMyNDY5NjQ3OSw0OT
+Q0NDY4MjIsMTE3MzQ4MDg5MywtNzAwNDE3MDI0LC0xMTQ0MTk1
+MDIxLC0xMTY5MjI3NDE1LDEzMjY5ODExNTEsLTE1ODg3NTIzND
+ksNjQ4MTcyNTA1LC01MzI0NTY1NDEsMTkzNTQzMTQ5NSwtMTI0
+NDY4MDg3MF19
 -->
