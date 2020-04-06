@@ -114,10 +114,7 @@
 > 하지만 volatile이 항상 최선은 아니다. 하나의 Thread가 아닌 여러 Thread가 write하는 상황에서는 적합하지 않다. 그리고 cache가 아닌 메모리에 접근하기 때문에 느리다.
 
 > **Atomic 클래스는 무엇을 제공하는가?** 
-> java.concurrent.atomic 패키지 Atomic 클래스는 동시성 환경에서 데이터 정합성 문제를 Non-blocking 알고리즘으로 처리한다. 이러한 알고리즘은 CAS(compare-and-swap)이라는 원자적 명령어를 사용한다. 전형적인 CAS는 M
-> The memory location on which to operate (M); 
-> The existing expected value (A) of the variable
-> The new value (B) which needs to be set
+> java.concurrent.atomic 패키지 Atomic 클래스는 동시성 환경에서 데이터 정합성 문제를 Non-blocking 알고리즘으로 처리한다. 이러한 알고리즘은 CAS(compare-and-swap)이라는 원자적 명령어를 사용한다. 전형적인 CAS는 메모리, 기존 정보 A, 새로운 정보 B 세가지로 구성된다. CAS는 자동적으로 메모리 값을 B로 업데이트 하는데, 메모리에 있던 기존 정보가 A와 일치할 때만 그렇게 한다. 
 
 
 
@@ -127,10 +124,6 @@ There is a branch of research focused on creating non-blocking algorithms for co
 
 A typical CAS operation works on three operands:
 
-1.  The memory location on which to operate (M)
-2.  The existing expected value (A) of the variable
-3.  The new value (B) which needs to be set
-4. 
 \**The CAS operation updates atomically the value in M to B, but only if the existing value in M matches A, otherwise no action is taken.**
 
 In both cases, the existing value in M is returned. This combines three steps – getting the value, comparing the value and updating the value – into a single machine level operation.
@@ -286,7 +279,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMDg0NzIxNCwyMTI5NTQyMTc0LDc0Mj
+eyJoaXN0b3J5IjpbLTQ3Nzg2NDY3MSwyMTI5NTQyMTc0LDc0Mj
 I1Mjk3NCw2NDM0OTQ4MTUsLTQ1NTY5NjAwLDE3MjgwMTM0NTQs
 LTIwMTEwNDkzMDAsNjU1MTE2Njg2LDY1NjQ1NTkyMCwxMzQ3ND
 EzNjEyLC0yMTQxNDU1OTY5LDEzNjI1OTQzNjksMTc5NDIyNzk0
