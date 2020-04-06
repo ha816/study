@@ -116,7 +116,7 @@
 > **Atomic 클래스는 무엇을 제공하는가?** 
 > java.concurrent.atomic 패키지 Atomic 클래스는 동시성 환경에서 데이터 정합성 문제를 Non-blocking 알고리즘으로 처리한다. 이러한 알고리즘은 CAS(compare-and-swap)이라는 원자적 명령어를 사용한다. 전형적인 CAS는 메모리, 기존 정보 A, 새로운 정보 B 세가지로 구성된다. CAS는 자동적으로 메모리 값을 B로 업데이트 하는데, 메모리에 있던 기존 정보가 A와 일치할 때만 그렇게 한다. 아니라면 어떤 동작도 하지 않는다. 
 
-> 여러 쓰레드가 CAS 명령으로 같은 값을 수정하려 할때, 그 중 하나는 그 값을 수정하고 이길 것이다. 그러나, locks 잠금과는 다른게 어떤 다른 쓰레드도 일시 멈춤되지 않는다. 대신에 
+> 여러 쓰레드가 CAS 명령으로 같은 값을 수정하려 할때, 그 중 하나는 그 값을 수정하고 이길 것이다. 그러나, locks 잠금과는 다른게 어떤 다른 쓰레드도 일시 멈춤되지 않는다. 대신에 쓰레드들을 단순히 그들이 그 값을 수정하지 않을 것을 알렸다. 쓰레드들을 context switches를 완벽히 피하고 추가 작업을 진행할 수 있다. 
 
 When multiple threads attempt to update the same value through CAS, one of them wins and updates the value. **However, unlike in the case of locks, no other thread gets suspended**; instead, they're simply informed that they did not manage to update the value. The threads can then proceed to do further work and context switches are completely avoided.
 
@@ -283,11 +283,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MDkzMDMyNywtNDk0NTg3NjYzLDIxMj
-k1NDIxNzQsNzQyMjUyOTc0LDY0MzQ5NDgxNSwtNDU1Njk2MDAs
-MTcyODAxMzQ1NCwtMjAxMTA0OTMwMCw2NTUxMTY2ODYsNjU2ND
-U1OTIwLDEzNDc0MTM2MTIsLTIxNDE0NTU5NjksMTM2MjU5NDM2
-OSwxNzk0MjI3OTQ1LDE2NDAxODI5NjUsLTg1MTk5NDMyNCwtMT
-I3MTExOTQ3MCwxOTcyNDA3OTkxLDE0MjM4NTMzMjksLTE3Mjk5
-NDAzNDRdfQ==
+eyJoaXN0b3J5IjpbLTEyNDQ2ODA4NzAsLTQ5NDU4NzY2MywyMT
+I5NTQyMTc0LDc0MjI1Mjk3NCw2NDM0OTQ4MTUsLTQ1NTY5NjAw
+LDE3MjgwMTM0NTQsLTIwMTEwNDkzMDAsNjU1MTE2Njg2LDY1Nj
+Q1NTkyMCwxMzQ3NDEzNjEyLC0yMTQxNDU1OTY5LDEzNjI1OTQz
+NjksMTc5NDIyNzk0NSwxNjQwMTgyOTY1LC04NTE5OTQzMjQsLT
+EyNzExMTk0NzAsMTk3MjQwNzk5MSwxNDIzODUzMzI5LC0xNzI5
+OTQwMzQ0XX0=
 -->
