@@ -86,7 +86,9 @@ ALL, index
 
 ### rows 컬럼 주의사항
 * 쿼리가 실제 가져오는 레코드 수보다 훨씬 더 큰 값이 rows 컬럼에 표시되는 경우에는 쿼리가 인덱스를 정상적으로 사용하고 있는지, 그리고 그 인덱스가 충분히 작업 범위를 좁혀 줄 수 있는지 검토해보자.
-* LIMIT가 포함된 쿼리라 하더라도 LIMIT의 제한은 Rows 컬럼의 고려 
+* LIMIT가 포함된 쿼리라 하더라도 LIMIT의 제한은 Rows 컬럼의 고려 대상에 포함되지 않는다. 즉 LIMIT 1이라 하더라도 rows에는 훨씬 큰 수치가 나타날 수 있고 이는 성능상 문제가 없고 최적화된 쿼리 일 수도 있다.
+
+### extra 컬럼 주의사항
  
 
 ## id 컬럼
@@ -646,7 +648,7 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTY1NTU0MzYsMTYxNTQ5NTIyLDU4Mj
-U1Nzc1MCw1ODkxNjY4NDcsMTAxNTk4ODk4MSwtOTY1NzA3NzAx
-XX0=
+eyJoaXN0b3J5IjpbOTY3MTgxNjM1LDE2MTU0OTUyMiw1ODI1NT
+c3NTAsNTg5MTY2ODQ3LDEwMTU5ODg5ODEsLTk2NTcwNzcwMV19
+
 -->
