@@ -120,7 +120,7 @@
 
 >**프레임워크와 라이브러리의 차이**
 >라이브러리는 단순히 활용 가능한 도구들의 집합을 말한다.
->프레임워크는 뼈대 혹은 기반구조를 뜻하고, 제어의 역전 개념이 적용된 대표적인 기술입니다. 소프트웨어에서의 프레임워크는 '소프트웨어의 특정 문제를 해결하기 위해서 상호 협력하는 클래스와 인터페이스의 집합' 이라 할 수 있으며, 완성된 어플리케이션이 아닌 프로그래머가 완성시키는 작업을 해야합니다.
+>프레임워크는 완성된 어플리케이션이 아닌 프로그래머가 완성시키는 작업을 해야합니다.
 >주된 차이는 바로 프레임워크가 **애플리케이션 제어 흐름** 가진다는게 중요합니다. 프레임워크는 전체적인 흐름을 스스로가 쥐고 있으며 사용자는 그 안에서 필요한 코드를 짜 넣으며 반면에 라이브러리는 사용자가 전체적인 흐름을 만들며 라이브러리를 가져다 쓰는 것이라고 할 수 있습니다.
 
 > **스프링이 유명한 이유는?**
@@ -267,11 +267,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI0Njk2NDc5LDQ5NDQ0NjgyMiwxMTczND
-gwODkzLC03MDA0MTcwMjQsLTExNDQxOTUwMjEsLTExNjkyMjc0
-MTUsMTMyNjk4MTE1MSwtMTU4ODc1MjM0OSw2NDgxNzI1MDUsLT
-UzMjQ1NjU0MSwxOTM1NDMxNDk1LC0xMjQ0NjgwODcwLC00OTQ1
-ODc2NjMsMjEyOTU0MjE3NCw3NDIyNTI5NzQsNjQzNDk0ODE1LC
-00NTU2OTYwMCwxNzI4MDEzNDU0LC0yMDExMDQ5MzAwLDY1NTEx
-NjY4Nl19
+eyJoaXN0b3J5IjpbLTE2OTM3MTA0NjcsMzI0Njk2NDc5LDQ5ND
+Q0NjgyMiwxMTczNDgwODkzLC03MDA0MTcwMjQsLTExNDQxOTUw
+MjEsLTExNjkyMjc0MTUsMTMyNjk4MTE1MSwtMTU4ODc1MjM0OS
+w2NDgxNzI1MDUsLTUzMjQ1NjU0MSwxOTM1NDMxNDk1LC0xMjQ0
+NjgwODcwLC00OTQ1ODc2NjMsMjEyOTU0MjE3NCw3NDIyNTI5Nz
+QsNjQzNDk0ODE1LC00NTU2OTYwMCwxNzI4MDEzNDU0LC0yMDEx
+MDQ5MzAwXX0=
 -->
