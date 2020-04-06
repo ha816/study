@@ -114,7 +114,7 @@
 > 하지만 volatile이 항상 최선은 아니다. 하나의 Thread가 아닌 여러 Thread가 write하는 상황에서는 적합하지 않다. 그리고 cache가 아닌 메모리에 접근하기 때문에 느리다.
 
 > **Atomic 클래스는 무엇을 제공하는가?** 
-> java.concurrent.atomic 패키지 Atomic 클래스는 멀티쓰레드 환경에서 데이터 정합성 문제를 Non-blocking 알고리즘으로 처리한다. 이런 알고리즘은 CAS(compare-and-swap)이라는 원자적 명령어를 사용한다. CAS 명령어는 메모리에 있던 기존 정보가 일치할 때만 그렇게 한다. 
+> java.concurrent.atomic 패키지 Atomic 클래스는 멀티쓰레드 환경에서 데이터 정합성 문제를 Non-blocking 알고리즘으로 처리한다. 이런 알고리즘은 CAS(compare-and-swap)이라는 원자적 명령어를 사용한다. 멀티쓰레드에서 CAS 명령어는 메모리에 있던 기존 정보가 일치할 때만 그렇게 한다. 
 메모리 값을 B로 업데이트 하는데, 아니라면 어떤 동작도 하지 않는다. 
 
 > 여러 쓰레드가 CAS 명령으로 같은 값을 수정하려 할때, 그 중 하나는 그 값을 수정하고 이길 것이다. 그러나, locks 잠금과는 다른게 어떤 다른 쓰레드도 일시 멈춤되지 않는다. 대신에 쓰레드들을 단순히 그들이 그 값을 수정하지 않을 것을 알렸다. 쓰레드들을 context switches를 완벽히 피하고 추가 작업을 진행할 수 있다. 
@@ -273,11 +273,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMjQ1NjU0MSwxOTM1NDMxNDk1LC0xMj
-Q0NjgwODcwLC00OTQ1ODc2NjMsMjEyOTU0MjE3NCw3NDIyNTI5
-NzQsNjQzNDk0ODE1LC00NTU2OTYwMCwxNzI4MDEzNDU0LC0yMD
-ExMDQ5MzAwLDY1NTExNjY4Niw2NTY0NTU5MjAsMTM0NzQxMzYx
-MiwtMjE0MTQ1NTk2OSwxMzYyNTk0MzY5LDE3OTQyMjc5NDUsMT
-Y0MDE4Mjk2NSwtODUxOTk0MzI0LC0xMjcxMTE5NDcwLDE5NzI0
-MDc5OTFdfQ==
+eyJoaXN0b3J5IjpbMTM5NTU3Mzk4NywtNTMyNDU2NTQxLDE5Mz
+U0MzE0OTUsLTEyNDQ2ODA4NzAsLTQ5NDU4NzY2MywyMTI5NTQy
+MTc0LDc0MjI1Mjk3NCw2NDM0OTQ4MTUsLTQ1NTY5NjAwLDE3Mj
+gwMTM0NTQsLTIwMTEwNDkzMDAsNjU1MTE2Njg2LDY1NjQ1NTky
+MCwxMzQ3NDEzNjEyLC0yMTQxNDU1OTY5LDEzNjI1OTQzNjksMT
+c5NDIyNzk0NSwxNjQwMTgyOTY1LC04NTE5OTQzMjQsLTEyNzEx
+MTk0NzBdfQ==
 -->
