@@ -140,6 +140,8 @@
 
 >**Spring MVC?**
 >Spring이 채택한 MVC패턴은 사실 프론트 컨트롤러(FrontController)패턴이다. 컨트롤러 패턴에서 프론트 컨트롤러는 요청을 처리하는 과정 전체의 제어 흐름을 담당한다. Spring에서는 DispatcherServelet이 대표적인 프론트 컨트롤러이다. 
+
+
   
 >Filter와 Interupt의 차이
 >
@@ -262,11 +264,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg5MzQzOTEsLTY4MDkxNzU1OSwtOTgyNj
-k4MTQsLTgzODk0MDUzMiwtMTA2Mzg5NTEzOSwtNjkwMDA3NTA4
-LC05MjgxOTc2MzQsLTEwOTgzNTY5OTUsOTYxODEzNzU0LDE1Nj
-IyNjA3MjksLTEyODM5MDUxNjcsMzk4MTMyODA1LC0yNjg2MjE0
-OTksLTg4Mzg3MzAyOCwxMTEwNTk4MDgzLC0xNjkzNzEwNDY3LD
-MyNDY5NjQ3OSw0OTQ0NDY4MjIsMTE3MzQ4MDg5MywtNzAwNDE3
-MDI0XX0=
+eyJoaXN0b3J5IjpbLTY1MDA0MTY0NSwtNjgwOTE3NTU5LC05OD
+I2OTgxNCwtODM4OTQwNTMyLC0xMDYzODk1MTM5LC02OTAwMDc1
+MDgsLTkyODE5NzYzNCwtMTA5ODM1Njk5NSw5NjE4MTM3NTQsMT
+U2MjI2MDcyOSwtMTI4MzkwNTE2NywzOTgxMzI4MDUsLTI2ODYy
+MTQ5OSwtODgzODczMDI4LDExMTA1OTgwODMsLTE2OTM3MTA0Nj
+csMzI0Njk2NDc5LDQ5NDQ0NjgyMiwxMTczNDgwODkzLC03MDA0
+MTcwMjRdfQ==
 -->
