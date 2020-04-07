@@ -123,7 +123,7 @@
 >프레임워크와 라이브러리의 중요한 차이는 애플리케이션 제어 플로우에 있다. 프레임워크는 제어흐름을 가진 주체라면 라이브러리는 단순히 개발자 제어흐름에 따라 사용되는 도구일 뿐이다.
 
 > **스프링이 유명한 이유는?**
->스프링은 엔터프라이즈 급 애플리케이션을 만드는데 유용한 자바 기반 오픈 소스 프레임워크이다. 엔터프라이즈 소프트웨어의 Java EE(Enterprise Edition)는 일종의 **엔터프라이즈 소프트웨어의 표준**을 말한다. JCP 커뮤니티(Java Community Process, [JCP](https://www.jcp.org/))에서 주도한다. 
+>스프링은 엔터프라이즈 급 애플리케이션을 만드는데 유용한 자바 기반 오픈 소스 프레임워크이다. 자바 엔터프라이즈급 소프트웨어 표준으로  Java EE(Enterprise Edition)가 있다. 
 
 
 스프링 프레임워크는 사실 JavaEE의 안티테제이자 경쟁 프레임워크로 개발됐지만, 시간이 지남에 따라 서로의 장점을 받아들여 차이가 출어드는 추세다. 그렇지만 Java EE를 구현한 프레임워크를 사용하는게 좋은가라고 한다면 꼭 그렇지만은 않다. 왜냐하면 JavaEE는 사양을 결정하는데 2년, 서버 제품을 구현하는데 2년 즉 시간이 오래걸린다. 그에 반해 스프링 진영은 신기술을 도입하는 속도가 더 빠르다. 만약 애플리케이션 개발시 새로운 기능과 아키텍처가 필요한 경우 스프링을 사용하는 것이 최상의 선택일 것이다. 
@@ -279,11 +279,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkwNTc5NDczLC02OTAwMDc1MDgsLTkyOD
-E5NzYzNCwtMTA5ODM1Njk5NSw5NjE4MTM3NTQsMTU2MjI2MDcy
-OSwtMTI4MzkwNTE2NywzOTgxMzI4MDUsLTI2ODYyMTQ5OSwtOD
-gzODczMDI4LDExMTA1OTgwODMsLTE2OTM3MTA0NjcsMzI0Njk2
-NDc5LDQ5NDQ0NjgyMiwxMTczNDgwODkzLC03MDA0MTcwMjQsLT
-ExNDQxOTUwMjEsLTExNjkyMjc0MTUsMTMyNjk4MTE1MSwtMTU4
-ODc1MjM0OV19
+eyJoaXN0b3J5IjpbLTEwNjM4OTUxMzksLTY5MDAwNzUwOCwtOT
+I4MTk3NjM0LC0xMDk4MzU2OTk1LDk2MTgxMzc1NCwxNTYyMjYw
+NzI5LC0xMjgzOTA1MTY3LDM5ODEzMjgwNSwtMjY4NjIxNDk5LC
+04ODM4NzMwMjgsMTExMDU5ODA4MywtMTY5MzcxMDQ2NywzMjQ2
+OTY0NzksNDk0NDQ2ODIyLDExNzM0ODA4OTMsLTcwMDQxNzAyNC
+wtMTE0NDE5NTAyMSwtMTE2OTIyNzQxNSwxMzI2OTgxMTUxLC0x
+NTg4NzUyMzQ5XX0=
 -->
