@@ -123,7 +123,7 @@
 >프레임워크와 라이브러리의 중요한 차이는 애플리케이션 제어 플로우에 있다. 프레임워크는 제어흐름을 가진 주체라면 라이브러리는 단순히 개발자 제어흐름에 따라 사용되는 도구일 뿐이다.
 
 > **스프링이 유명한 이유는?**
->스프링은 엔터프라이즈 급 애플리케이션을 만드는데 유용한 자바 기반 오픈 소스 프레임워크이다. 엔터프라이즈 급 시스템은 기본적으로 복잡한 시스템인데 스프링이 나타나기 전에 무수히 많은 엔터프라이즈 프로젝트가 실패했다. 그러나 스프링 복잡한 시스템의 요구사항을 DI, AOP, PSA등을 통해 효과적으로 대응했고 살아남아 유명해졌다.
+>스프링은 엔터프라이즈 급 애플리케이션을 만드는데 유용한 자바 기반 오픈 소스 프레임워크이다. 엔터프라이즈급 시스템은 기본적으로 복잡하다. 
 
 >**DI?**
 >DI(Depenceny Injection)는 의존성 주입, **IoC(Inverse of Control)**라고 한다. 애플리케이션을 동작하기 위해 여러개의 컴포넌트를 통합해서 사용한다. 일반적으로 특정 컴포넌트를 사용할때 클래스 내부에서 구현 클래스를 직접 생성해서 사용하면 두 클래스간의 결합도가 높아진다.  결합도를 낮추는 방법으로 클래스의 외부에서 컴포넌트를 생성 한 후, 내부에 주입하여 사용한다. 
@@ -266,11 +266,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyODE5NzYzNCwtMTA5ODM1Njk5NSw5Nj
-E4MTM3NTQsMTU2MjI2MDcyOSwtMTI4MzkwNTE2NywzOTgxMzI4
-MDUsLTI2ODYyMTQ5OSwtODgzODczMDI4LDExMTA1OTgwODMsLT
-E2OTM3MTA0NjcsMzI0Njk2NDc5LDQ5NDQ0NjgyMiwxMTczNDgw
-ODkzLC03MDA0MTcwMjQsLTExNDQxOTUwMjEsLTExNjkyMjc0MT
-UsMTMyNjk4MTE1MSwtMTU4ODc1MjM0OSw2NDgxNzI1MDUsLTUz
-MjQ1NjU0MV19
+eyJoaXN0b3J5IjpbLTY5MDAwNzUwOCwtOTI4MTk3NjM0LC0xMD
+k4MzU2OTk1LDk2MTgxMzc1NCwxNTYyMjYwNzI5LC0xMjgzOTA1
+MTY3LDM5ODEzMjgwNSwtMjY4NjIxNDk5LC04ODM4NzMwMjgsMT
+ExMDU5ODA4MywtMTY5MzcxMDQ2NywzMjQ2OTY0NzksNDk0NDQ2
+ODIyLDExNzM0ODA4OTMsLTcwMDQxNzAyNCwtMTE0NDE5NTAyMS
+wtMTE2OTIyNzQxNSwxMzI2OTgxMTUxLC0xNTg4NzUyMzQ5LDY0
+ODE3MjUwNV19
 -->
