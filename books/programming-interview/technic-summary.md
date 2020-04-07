@@ -139,8 +139,7 @@
 >singleton은 컨텍스트 기동시 빈 인스턴스가 하나만 생성되고, 그 빈을 공유한다. prototype은 컨텍스트에 빈을 요청할때마다 새로운 빈이 생성된다. request는 HTTP 요청이 들어올때마다 새로운 빈이 생성된다. session은 HTTP 세션이 만들어질때 마다 새로운 빈이 생성된다.
 
 >**Spring MVC?**
-
->Spring이 채택한의 MVC패턴은 사실 프론트 컨트롤러(FrontController)패턴이다. 컨트롤러 패턴에서 프론트 컨트롤러는 요청을 처리하는 과정 전체의 제어 흐름을 담당한다. Spring에서는 DispatcherServelet이 대표적인 프론트 컨트롤러이다. 
+>Spring이 채택한 MVC패턴은 사실 프론트 컨트롤러(FrontController)패턴이다. 컨트롤러 패턴에서 프론트 컨트롤러는 요청을 처리하는 과정 전체의 제어 흐름을 담당한다. Spring에서는 DispatcherServelet이 대표적인 프론트 컨트롤러이다. 
   
 
 >Filter와 Interupt의 차이
@@ -264,11 +263,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDI1NjU5MzUsLTk4MjY5ODE0LC04Mz
-g5NDA1MzIsLTEwNjM4OTUxMzksLTY5MDAwNzUwOCwtOTI4MTk3
-NjM0LC0xMDk4MzU2OTk1LDk2MTgxMzc1NCwxNTYyMjYwNzI5LC
-0xMjgzOTA1MTY3LDM5ODEzMjgwNSwtMjY4NjIxNDk5LC04ODM4
-NzMwMjgsMTExMDU5ODA4MywtMTY5MzcxMDQ2NywzMjQ2OTY0Nz
-ksNDk0NDQ2ODIyLDExNzM0ODA4OTMsLTcwMDQxNzAyNCwtMTE0
-NDE5NTAyMV19
+eyJoaXN0b3J5IjpbLTY4MDkxNzU1OSwtOTgyNjk4MTQsLTgzOD
+k0MDUzMiwtMTA2Mzg5NTEzOSwtNjkwMDA3NTA4LC05MjgxOTc2
+MzQsLTEwOTgzNTY5OTUsOTYxODEzNzU0LDE1NjIyNjA3MjksLT
+EyODM5MDUxNjcsMzk4MTMyODA1LC0yNjg2MjE0OTksLTg4Mzg3
+MzAyOCwxMTEwNTk4MDgzLC0xNjkzNzEwNDY3LDMyNDY5NjQ3OS
+w0OTQ0NDY4MjIsMTE3MzQ4MDg5MywtNzAwNDE3MDI0LC0xMTQ0
+MTk1MDIxXX0=
 -->
