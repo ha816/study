@@ -132,9 +132,9 @@
 > 스프링에서 DI 컨테이너로는 빈 팩토리와 애플리케이션 컨텍스트가 있다. 빈 팩토리는 단순히 빈을 생성하고 생명 주기를 관리하는 역할을 한다. 애플리케이션 컨텍스트는 빈 팩토리의 기능을 가질 뿐만 아니라 properties 파일을 읽기와 같은 추가 기능을 제공한다. 스프링에서 DI 컨테이너라 하면 애플리케이션 컨텍스트를 말한다. 
 
 >**AOP**
->AOP는 Aspect Oriendted Programing의 약자로, 시스템은 보통 특정 기능을 책임지는 여러 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다. AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다. 
+>AOP는 Aspect Oriendted Programing의 약자로, 비즈니스로직은 보통 본연의 로직 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다. 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다. AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다. 
 
->**Spring MVC**의 객체 스코프는?
+>**Spring MVC의 객체 스코프는?
 
 >Spring이 채택한의 MVC패턴은 사실 프론트 컨트롤러(FrontController)패턴이다. 컨트롤러 패턴에서 프론트 컨트롤러는 요청을 처리하는 과정 전체의 제어 흐름을 담당한다. Spring에서는 DispatcherServelet이 대표적인 프론트 컨트롤러이다. 
   
@@ -266,11 +266,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDI1Mjg5MDcsLTk4MjY5ODE0LC04Mz
-g5NDA1MzIsLTEwNjM4OTUxMzksLTY5MDAwNzUwOCwtOTI4MTk3
-NjM0LC0xMDk4MzU2OTk1LDk2MTgxMzc1NCwxNTYyMjYwNzI5LC
-0xMjgzOTA1MTY3LDM5ODEzMjgwNSwtMjY4NjIxNDk5LC04ODM4
-NzMwMjgsMTExMDU5ODA4MywtMTY5MzcxMDQ2NywzMjQ2OTY0Nz
-ksNDk0NDQ2ODIyLDExNzM0ODA4OTMsLTcwMDQxNzAyNCwtMTE0
-NDE5NTAyMV19
+eyJoaXN0b3J5IjpbLTUzOTMzMzI2MiwtOTgyNjk4MTQsLTgzOD
+k0MDUzMiwtMTA2Mzg5NTEzOSwtNjkwMDA3NTA4LC05MjgxOTc2
+MzQsLTEwOTgzNTY5OTUsOTYxODEzNzU0LDE1NjIyNjA3MjksLT
+EyODM5MDUxNjcsMzk4MTMyODA1LC0yNjg2MjE0OTksLTg4Mzg3
+MzAyOCwxMTEwNTk4MDgzLC0xNjkzNzEwNDY3LDMyNDY5NjQ3OS
+w0OTQ0NDY4MjIsMTE3MzQ4MDg5MywtNzAwNDE3MDI0LC0xMTQ0
+MTk1MDIxXX0=
 -->
