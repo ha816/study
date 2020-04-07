@@ -126,7 +126,7 @@
 >스프링은 엔터프라이즈 급 애플리케이션을 만드는데 유용한 자바 기반 오픈 소스 프레임워크이다. 자바 엔터프라이즈급 소프트웨어 표준으로  Java EE(Enterprise Edition)가 있다. 그리고 Java EE 표준을 구현한 아키텍처가 바로 EJB(Enterprise JavaBeans)이다. EJB는 보안, 트랜잭션등 EJB 컨테이너의 다양한 서비스를 제공 받기 위해서는 EJB 스펙을 지켜야 했는데, 그 결과 실제 비즈니스 로직보다 EJB 컨테이너를 사용하기 위한 상투적인 코드들이 많아지는 문제가 발생했다. 비즈니스 로직이 특정 기술에 종속되어 있다는 것을 기술 침투(invasive)라고 하는데, 이것이 EJB의 가장 큰 문제점이다. 그래서 스프링은 비 침투적인(non-invasive) 방식을 도입하여 많은 사랑을 받고 있다. 
 
 >**DI?**
->DI(Depenceny Injection)는 의존성 주입, **IoC(Inverse of Control)**라고 한다. 애플리케이션 수행을 윟여러개의 컴포넌트를 통합해서 사용한다. 일반적으로 특정 컴포넌트를 사용할때 클래스 내부에서 구현 클래스를 직접 생성해서 사용하면 두 클래스간의 결합도가 높아진다.  결합도를 낮추는 방법으로 클래스의 외부에서 컴포넌트를 생성 한 후, 내부에 주입하여 사용한다. 
+>DI(Depenceny Injection)는 의존성 주입, **IoC(Inverse of Control)**라고 한다. 애플리케이션 수행을 위해선 여러 개의 컴포넌트를 통합해서 사용하는데 일반적으로 특정 컴포넌트를 사용할 때 클래스 내부에서 구현 클래스를 직접 생성해서 사용하면 두 클래스간의 결합도가 높아진다.  결합도를 낮추는 방법으로 클래스의 외부에서 컴포넌트를 생성 한 후, 내부에 주입하여 사용한다. 
 
 >**DI 컨테이너?**
 >
@@ -266,11 +266,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MzM5NjM3NSwtODM4OTQwNTMyLC0xMD
-YzODk1MTM5LC02OTAwMDc1MDgsLTkyODE5NzYzNCwtMTA5ODM1
-Njk5NSw5NjE4MTM3NTQsMTU2MjI2MDcyOSwtMTI4MzkwNTE2Ny
-wzOTgxMzI4MDUsLTI2ODYyMTQ5OSwtODgzODczMDI4LDExMTA1
-OTgwODMsLTE2OTM3MTA0NjcsMzI0Njk2NDc5LDQ5NDQ0NjgyMi
-wxMTczNDgwODkzLC03MDA0MTcwMjQsLTExNDQxOTUwMjEsLTEx
-NjkyMjc0MTVdfQ==
+eyJoaXN0b3J5IjpbLTk4MjY5ODE0LC04Mzg5NDA1MzIsLTEwNj
+M4OTUxMzksLTY5MDAwNzUwOCwtOTI4MTk3NjM0LC0xMDk4MzU2
+OTk1LDk2MTgxMzc1NCwxNTYyMjYwNzI5LC0xMjgzOTA1MTY3LD
+M5ODEzMjgwNSwtMjY4NjIxNDk5LC04ODM4NzMwMjgsMTExMDU5
+ODA4MywtMTY5MzcxMDQ2NywzMjQ2OTY0NzksNDk0NDQ2ODIyLD
+ExNzM0ODA4OTMsLTcwMDQxNzAyNCwtMTE0NDE5NTAyMSwtMTE2
+OTIyNzQxNV19
 -->
