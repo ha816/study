@@ -147,9 +147,7 @@
 >**HandlerMapping? Handler(Controller)? HandlerMethod?  HandlerAdapter?**
 >Handler가 하는 일은 받은 요청에 대응하는 필요한 메서드를 수행하는 것이다. 프레임워크 관점에서는 핸들러라 부르지만 개발자가 작성하는 클래스의 관점에서는 컨트롤러이다.
 >HandlerMapping 인터페이스는 요청에 대응하는 핸들러를 선택하는 역할을 정의한다. 그리고 실제 구현체는 RequestMappingHandlerMapping이다. 핸들러가 가진 메서드 중에서 @RequestMapping 애너테이션이 붙은 메서드가 핸들러 메서드이다.
->HandlerAdapter는 실제 핸들러 메서드를 호출하는 역할을 한다. RequestMappingHandlerMapping 구현체로 가져온 핸들러 메서드를RequestMappingHandlerAdapter 구현체가 호출한다. 이 때 매개변수를 전달하고 메서드 처리결과를 반환하는 것 과 같은 중요한 역할을 담당한다. 
-**핸들러 메서드**를 호출하는 역할을 한다. 앞서 RequestMappingHandlerMapping에서 선택되어 가져온 핸들러 메서드를 호출할 때는 RequestMappingHandlerAdapter 클래스를 사용한다.  RequestMappingHandlerAdapter클래스에는 핸들러 메서드에 매개변수를 전달하고 메서드의 처리결과를 반환 값으로 돌려 보내는 것과 같은 스프링의 상당히 중요한 역할을 담당한다. 핸들러 메서드에 매개변수를 전달할때는 요청 받은 데이터를 자바 객체로 변환하고, 입력값이 올바른지 검사(Bean Validation)하는 것 까지 한꺼번에 이뤄진다. 
-
+>HandlerAdapter는 실제 핸들러 메서드를 호출하는 역할을 한다. RequestMappingHandlerMapping 구현체로 가져온 핸들러 메서드를RequestMappingHandlerAdapter 구현체가 호출한다. 이 때 매개변수를 전달하고 메서드 처리결과를 반환하는 것 과 같은 중요한 역할을 담당한다. 매개변수를 전달할때는 요청 받은 데이터를 자바 객체로 변환하고, 입력값이 올바른지 검사(Bean Validation)하는 것 까지 한꺼번에 이뤄진다. 
 
 ### HandlerInterCepter
 
@@ -283,11 +281,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1NzIxODE1LC0yNzk0NTIyNzMsMjA1ND
-gzODI5MywxMjM2NTA1Njc4LDEwNTMxOTUwMTEsMjA5NzA1NDk0
-NSwtNjgwOTE3NTU5LC05ODI2OTgxNCwtODM4OTQwNTMyLC0xMD
-YzODk1MTM5LC02OTAwMDc1MDgsLTkyODE5NzYzNCwtMTA5ODM1
-Njk5NSw5NjE4MTM3NTQsMTU2MjI2MDcyOSwtMTI4MzkwNTE2Ny
-wzOTgxMzI4MDUsLTI2ODYyMTQ5OSwtODgzODczMDI4LDExMTA1
-OTgwODNdfQ==
+eyJoaXN0b3J5IjpbLTIwMDkyMTY0NDUsOTY1NzIxODE1LC0yNz
+k0NTIyNzMsMjA1NDgzODI5MywxMjM2NTA1Njc4LDEwNTMxOTUw
+MTEsMjA5NzA1NDk0NSwtNjgwOTE3NTU5LC05ODI2OTgxNCwtOD
+M4OTQwNTMyLC0xMDYzODk1MTM5LC02OTAwMDc1MDgsLTkyODE5
+NzYzNCwtMTA5ODM1Njk5NSw5NjE4MTM3NTQsMTU2MjI2MDcyOS
+wtMTI4MzkwNTE2NywzOTgxMzI4MDUsLTI2ODYyMTQ5OSwtODgz
+ODczMDI4XX0=
 -->
