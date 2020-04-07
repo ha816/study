@@ -129,7 +129,7 @@
 >DI(Depenceny Injection)는 의존성 주입이다. 애플리케이션 수행을 위해선 여러 개의 컴포넌트를 통합해서 사용하는데 일반적으로 특정 컴포넌트를 사용할 때 클래스 내부에서 구현 클래스를 직접 생성해서 사용하면 두 클래스간의 결합도가 높아진다.  결합도를 낮추는 방법으로 클래스의 외부에서 컴포넌트를 생성 한 후, 내부에 주입하여 사용한다. 
 
 >**DI 컨테이너?**
-> 스프링에서 DI 컨테이너는 
+> 스프링에서 DI 컨테이너로는 빈 팩토리와 애플리케이션 컨텍스트가 있다. 빈 팩토리는 단순히 빈을 생성하고 생명 주기를 관리하는 역할을 하는 반면에 애플리케이션 컨텍스트는 빈 팩토리를 
 
 >**AOP**
 >AOP는 Aspect Oriendted Programing의 약자로, 시스템은 보통 특정 기능을 책임지는 여러 컴포넌트로 구성된다. 그러나 각 컴포넌트는 대체로 **본연의 기능 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다.** 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다. AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다. 
@@ -266,11 +266,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjM0MTk3MzYsLTk4MjY5ODE0LC04Mz
-g5NDA1MzIsLTEwNjM4OTUxMzksLTY5MDAwNzUwOCwtOTI4MTk3
-NjM0LC0xMDk4MzU2OTk1LDk2MTgxMzc1NCwxNTYyMjYwNzI5LC
-0xMjgzOTA1MTY3LDM5ODEzMjgwNSwtMjY4NjIxNDk5LC04ODM4
-NzMwMjgsMTExMDU5ODA4MywtMTY5MzcxMDQ2NywzMjQ2OTY0Nz
-ksNDk0NDQ2ODIyLDExNzM0ODA4OTMsLTcwMDQxNzAyNCwtMTE0
-NDE5NTAyMV19
+eyJoaXN0b3J5IjpbMTExMTc1OTQ4LC05ODI2OTgxNCwtODM4OT
+QwNTMyLC0xMDYzODk1MTM5LC02OTAwMDc1MDgsLTkyODE5NzYz
+NCwtMTA5ODM1Njk5NSw5NjE4MTM3NTQsMTU2MjI2MDcyOSwtMT
+I4MzkwNTE2NywzOTgxMzI4MDUsLTI2ODYyMTQ5OSwtODgzODcz
+MDI4LDExMTA1OTgwODMsLTE2OTM3MTA0NjcsMzI0Njk2NDc5LD
+Q5NDQ0NjgyMiwxMTczNDgwODkzLC03MDA0MTcwMjQsLTExNDQx
+OTUwMjFdfQ==
 -->
