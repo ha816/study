@@ -144,16 +144,15 @@
 >**DispatcherServlet?**
 >프런트 컨트롤러이자 기본적인 처리 흐름을 제어하는 사령탑 역할을 한다. 그림에서는 표현되지 않았지만 아래와 같은 인터페이스와도 연동되어 프레임워크 전체 기능을 수행한다. 모두 기본적으로 적용되어 있다.
 
->**HandlerMapping? Handler(Controller)? HandlerMethod?  HandlerAdapter?**
+>**HandlerMapping? Handler(Controller)? HandlerMethod?**
 >Handler가 하는 일은 받은 요청에 대응하는 필요한 메서드를 수행하는 것이다. 프레임워크 관점에서는 핸들러라 부르지만 개발자가 작성하는 클래스의 관점에서는 컨트롤러이다.
 >HandlerMapping 인터페이스는 요청에 대응하는 핸들러를 선택하는 역할을 정의한다. 그리고 실제 구현체는 RequestMappingHandlerMapping이다. 핸들러가 가진 메서드 중에서 @RequestMapping 애너테이션이 붙은 메서드가 핸들러 메서드이다.
+
+>**HandlerAdapter?**
 >HandlerAdapter는 실제 핸들러 메서드를 호출하는 역할을 한다. RequestMappingHandlerMapping 구현체로 가져온 핸들러 메서드를RequestMappingHandlerAdapter 구현체가 호출한다. 이 때 매개변수를 전달하고 메서드 처리결과를 반환하는 것 과 같은 중요한 역할을 담당한다. 매개변수를 전달할때는 요청 받은 데이터를 자바 객체로 변환하고, 입력값이 올바른지 검사(Bean Validation)하는 것 까지 한꺼번에 이뤄진다. 
 
->Filter와 (Handler)Intercept의 차이
->Handler 인터셉터는 DispatcherServlet이 핸들러를 호출하기 전과 호출 후에 요청과 응답을 가공하는 일종의 필터 역할을 한다.  핸들러 인터셉트를 등록하지 않았다면 바로 컨트롤러에 진입하지만 하나 이상의 핸들러 인터셉터를 지정했을 때는 순서에 따라 인터셉터를 먼저 거친후에 컨트롤러를 호출한다. 핸들러 인터셉터는 HttpServletRequest, HttpServletResponse 진입할 컨트롤러의 객체, 컨트롤러가 돌려주는 ModelAndView, 예외 등을 제공받을 수 있기 때문에 서블릿 앞단의 필터보다 더 정교한 작업이 가능하다.
-
-인터셉터는 HandlerIntercepter인터페이스를 구현해서 사용한다.
-
+>**Filter와 (Handler)Intercept의 차이**
+>Handler 인터셉터는 DispatcherServlet이 핸들러를 호출하기 전과 호출 후에 요청과 응답을 가공하는 일종의 필터 역할을 한다.  핸들러 인터셉트를 등록하지 않았다면 바로 컨트롤러에 진입하지만 하나 이상의 핸들러 인터셉터를 지정했을 때는 순서에 따라 인터셉터를 먼저 거친후에 컨트롤러를 호출한다. 핸들러 인터셉터는 HttpServletRequest, HttpServletResponse 진입시의 컨트롤러의 객체, 컨트롤러가 반환하는 ModelAndView, 예외 등을 제공받을 수 있기 때문에 서블릿 앞단의 Filter보다 더 정교한 작업이 가능하다.
 
 # Database
 
@@ -273,11 +272,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODE5NDgwOTAsMTMwNjU3NjY1MywtNz
-cwOTA5MzgwLC0yMDA5MjE2NDQ1LDk2NTcyMTgxNSwtMjc5NDUy
-MjczLDIwNTQ4MzgyOTMsMTIzNjUwNTY3OCwxMDUzMTk1MDExLD
-IwOTcwNTQ5NDUsLTY4MDkxNzU1OSwtOTgyNjk4MTQsLTgzODk0
-MDUzMiwtMTA2Mzg5NTEzOSwtNjkwMDA3NTA4LC05MjgxOTc2Mz
-QsLTEwOTgzNTY5OTUsOTYxODEzNzU0LDE1NjIyNjA3MjksLTEy
-ODM5MDUxNjddfQ==
+eyJoaXN0b3J5IjpbMTk1MTk3MDgzNSwxMzA2NTc2NjUzLC03Nz
+A5MDkzODAsLTIwMDkyMTY0NDUsOTY1NzIxODE1LC0yNzk0NTIy
+NzMsMjA1NDgzODI5MywxMjM2NTA1Njc4LDEwNTMxOTUwMTEsMj
+A5NzA1NDk0NSwtNjgwOTE3NTU5LC05ODI2OTgxNCwtODM4OTQw
+NTMyLC0xMDYzODk1MTM5LC02OTAwMDc1MDgsLTkyODE5NzYzNC
+wtMTA5ODM1Njk5NSw5NjE4MTM3NTQsMTU2MjI2MDcyOSwtMTI4
+MzkwNTE2N119
 -->
