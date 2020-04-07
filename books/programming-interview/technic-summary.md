@@ -150,12 +150,6 @@
 >HandlerAdapter는 실제 핸들러 메서드를 호출하는 역할을 한다. RequestMappingHandlerMapping 구현체로 가져온 핸들러 메서드를RequestMappingHandlerAdapter 구현체가 호출한다. 이 때 매개변수를 전달하고 메서드 처리결과를 반환하는 것 과 같은 중요한 역할을 담당한다. 
 **핸들러 메서드**를 호출하는 역할을 한다. 앞서 RequestMappingHandlerMapping에서 선택되어 가져온 핸들러 메서드를 호출할 때는 RequestMappingHandlerAdapter 클래스를 사용한다.  RequestMappingHandlerAdapter클래스에는 핸들러 메서드에 매개변수를 전달하고 메서드의 처리결과를 반환 값으로 돌려 보내는 것과 같은 스프링의 상당히 중요한 역할을 담당한다. 핸들러 메서드에 매개변수를 전달할때는 요청 받은 데이터를 자바 객체로 변환하고, 입력값이 올바른지 검사(Bean Validation)하는 것 까지 한꺼번에 이뤄진다. 
 
-파라미터나 저장할 타입이 다양할 수 있기 때문에 상황에 따라 핸들러 메서드 시그니처를 유연히 정의하도록 두 인터페이스를 제공하고 있다.
-
-|인터페이스명| 역할|
-|--|--|
-|HandlerMethodArgumentResolver  | 핸들러 메서드 매개변수에 전달하는 값을 다루는 인터페이스|
-|HandlerMethodReturnValueHandler  | 핸들러 메서드에 반한된 값을 처리하기 위한 인터페이스|
 
 ### HandlerInterCepter
 
@@ -289,11 +283,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTQ1MjI3MywyMDU0ODM4MjkzLDEyMz
-Y1MDU2NzgsMTA1MzE5NTAxMSwyMDk3MDU0OTQ1LC02ODA5MTc1
-NTksLTk4MjY5ODE0LC04Mzg5NDA1MzIsLTEwNjM4OTUxMzksLT
-Y5MDAwNzUwOCwtOTI4MTk3NjM0LC0xMDk4MzU2OTk1LDk2MTgx
-Mzc1NCwxNTYyMjYwNzI5LC0xMjgzOTA1MTY3LDM5ODEzMjgwNS
-wtMjY4NjIxNDk5LC04ODM4NzMwMjgsMTExMDU5ODA4MywtMTY5
-MzcxMDQ2N119
+eyJoaXN0b3J5IjpbOTY1NzIxODE1LC0yNzk0NTIyNzMsMjA1ND
+gzODI5MywxMjM2NTA1Njc4LDEwNTMxOTUwMTEsMjA5NzA1NDk0
+NSwtNjgwOTE3NTU5LC05ODI2OTgxNCwtODM4OTQwNTMyLC0xMD
+YzODk1MTM5LC02OTAwMDc1MDgsLTkyODE5NzYzNCwtMTA5ODM1
+Njk5NSw5NjE4MTM3NTQsMTU2MjI2MDcyOSwtMTI4MzkwNTE2Ny
+wzOTgxMzI4MDUsLTI2ODYyMTQ5OSwtODgzODczMDI4LDExMTA1
+OTgwODNdfQ==
 -->
