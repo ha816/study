@@ -146,27 +146,7 @@
 
 >**Handler(Controller)? HandlerMapping? HandlerMethod?  HandlerAdapter?**
 >Handler가 하는 일은 받은 요청에 따라 필요한 처리를 수행하는 것이다. 용어가 헷갈릴수 있는 데 짚고 가자면, 프레임워크 관점에서는 핸들러라 부르지만 개발자가 작성하는 클래스의 관점에서는 컨트롤러이다.
->HandlerMapping은 요청에 대응하는 핸들러를 선택하는 역할을 수행한다.@RequestMapping 애너테이션이 붙은 메서드는 핸들러 메서드이다.   정의된 정보로 실행할 핸들러를 선택한다. 
-
-
-@RequestMapping 애너테이션이 붙은 메서드는 핸들러 메서드이다. 
-
-### Handler(Controller)
-
-핸들러 객체가 하는 일은 받은 요청에 따라 필요한 처리를 수행하는 것이다. 용어가 헷갈릴수 있는 데 짚고 가자면, **프레임 워크 관점에서는 핸들러라 부르지만 개발자가 작성하는 클래스의 관점에서는 컨트롤러라고 부른다.** 
-
-핸들러는 @Controller 애너테이션을 클래스에 지정하고 요청 처리를 수행하는 메서드에 @RequestMapping을 지정하면 만들 수 있다. 
-
-### HandlerMapping 인터페이스
-
-요청에 대응하는 핸들러를 선택하는 역할을 담당한다. 구현 클래스로는 RequestMappingHandlerMapping 클래스로@RequestMapping 애너테이션에 정의된 정보로 실행할 핸들러를 선택한다. 
-
-@RequestMapping 애너테이션이 붙은 메서드는 핸들러 메서드이다. 
-
-|요청매핑 정보| 핸들러 |
-|--|--|
-|/hello  | 핸들러 메서드1  |
-|/goodbye  | 핸들러 메서드2 |
+>HandlerMapping은 요청에 대응하는 핸들러를 선택하는 역할을 수행한다.@RequestMapping 애너테이션이 붙은 메서드는 핸들러 메서드이다.
 
 ### HandlerAdapter
 
@@ -311,11 +291,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjI0OTcxODMsMTA1MzE5NTAxMSwyMD
-k3MDU0OTQ1LC02ODA5MTc1NTksLTk4MjY5ODE0LC04Mzg5NDA1
-MzIsLTEwNjM4OTUxMzksLTY5MDAwNzUwOCwtOTI4MTk3NjM0LC
-0xMDk4MzU2OTk1LDk2MTgxMzc1NCwxNTYyMjYwNzI5LC0xMjgz
-OTA1MTY3LDM5ODEzMjgwNSwtMjY4NjIxNDk5LC04ODM4NzMwMj
-gsMTExMDU5ODA4MywtMTY5MzcxMDQ2NywzMjQ2OTY0NzksNDk0
-NDQ2ODIyXX0=
+eyJoaXN0b3J5IjpbMTIzNjUwNTY3OCwxMDUzMTk1MDExLDIwOT
+cwNTQ5NDUsLTY4MDkxNzU1OSwtOTgyNjk4MTQsLTgzODk0MDUz
+MiwtMTA2Mzg5NTEzOSwtNjkwMDA3NTA4LC05MjgxOTc2MzQsLT
+EwOTgzNTY5OTUsOTYxODEzNzU0LDE1NjIyNjA3MjksLTEyODM5
+MDUxNjcsMzk4MTMyODA1LC0yNjg2MjE0OTksLTg4Mzg3MzAyOC
+wxMTEwNTk4MDgzLC0xNjkzNzEwNDY3LDMyNDY5NjQ3OSw0OTQ0
+NDY4MjJdfQ==
 -->
