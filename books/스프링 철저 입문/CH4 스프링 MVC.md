@@ -97,7 +97,7 @@
 |HandlerMethodArgumentResolver  | 핸들러 메서드 매개변수에 전달하는 값을 다루는 인터페이스|
 |HandlerMethodReturnValueHandler  | 핸들러 메서드에 반한된 값을 처리하기 위한 인터페이스|
 
-### HandlerInterCepter
+### Handler Intercepter
 
 Handler 인터셉터는 DispatcherServlet이 컨트롤러를 호출하기 전과 후에 요청과 응답을 참조하여 가공하는 일종의 필터 역할을 한다. 
 
@@ -174,6 +174,6 @@ DispatcherServlet용 애플리케이션은 컨텍스트가 독립적이라 서�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODUyNDYyODUsNjA3NDMxNzMxLDQ2ND
-g2ODMyNF19
+eyJoaXN0b3J5IjpbLTczODk3NzI2NSwtMTY4NTI0NjI4NSw2MD
+c0MzE3MzEsNDY0ODY4MzI0XX0=
 -->
