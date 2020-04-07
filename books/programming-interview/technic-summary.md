@@ -146,8 +146,9 @@
 
 >**HandlerMapping? Handler(Controller)? HandlerMethod?**
 >HandlerMapping 인터페이스는 요청에 대응하는 핸들러를 선택하는 역할을 정의한다. 그리고 실제 구현체는 RequestMappingHandler이다. 
->Handler가 하는 일은 받은 요청에 대응하는 handler method를 수행하는 것이다. 프레임워크 관점에서는 핸들러라 부르지만 개발자가 작성하는 클래스의 관점에서는 컨트롤러이다.
->Handler의 메서드 중에서 @RequestMapping 애너테이션이 붙은 메서드가 핸들러 메서드이다.
+>Handler가 하는 일은 받은 요청에 대응하는 HandlerMethod를 수행하는 것이다. Handler의 메서드 중에서 @RequestMapping 애너테이션이 붙은 메서드가 바로 HandlerMethod이다.
+>프레임워크 관점에서는 Handler라 부르지만 개발자가 보는 클래스의 관점에서는 컨트롤러이다.
+
 
 
 >**HandlerAdapter?**
@@ -274,7 +275,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MjUwNzkxNiwxNzYxOTY4NzQzLDEzMD
+eyJoaXN0b3J5IjpbMTI3NTA3NDA2MSwxNzYxOTY4NzQzLDEzMD
 Y1NzY2NTMsLTc3MDkwOTM4MCwtMjAwOTIxNjQ0NSw5NjU3MjE4
 MTUsLTI3OTQ1MjI3MywyMDU0ODM4MjkzLDEyMzY1MDU2NzgsMT
 A1MzE5NTAxMSwyMDk3MDU0OTQ1LC02ODA5MTc1NTksLTk4MjY5
