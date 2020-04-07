@@ -145,8 +145,8 @@
 >프런트 컨트롤러이자 기본적인 처리 흐름을 제어하는 사령탑 역할을 한다. 그림에서는 표현되지 않았지만 아래와 같은 인터페이스와도 연동되어 프레임워크 전체 기능을 수행한다. 모두 기본적으로 적용되어 있다.
 
 >**HandlerMapping? Handler(Controller)? HandlerMethod?**
->HandlerMapping 인터페이스는 요청에 대응하는 핸들러를 선택하는 역할을 정의한다. 그리고 실제 구현체는 RequestMappingHandlerMapping이다. 
->Handler가 하는 일은 받은 요청에 대응하는 필요한 메서드를 수행하는 것이다. 프레임워크 관점에서는 핸들러라 부르지만 개발자가 작성하는 클래스의 관점에서는 컨트롤러이다.
+>HandlerMapping 인터페이스는 요청에 대응하는 핸들러를 선택하는 역할을 정의한다. 그리고 실제 구현체는 RequestMappingHandler이다. 
+>Handler가 하는 일은 받은 요청에 대응하는 handler method를 수행하는 것이다. 프레임워크 관점에서는 핸들러라 부르지만 개발자가 작성하는 클래스의 관점에서는 컨트롤러이다.
 >Handler의 메서드 중에서 @RequestMapping 애너테이션이 붙은 메서드가 핸들러 메서드이다.
 
 
@@ -274,11 +274,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MTk2ODc0MywxMzA2NTc2NjUzLC03Nz
-A5MDkzODAsLTIwMDkyMTY0NDUsOTY1NzIxODE1LC0yNzk0NTIy
-NzMsMjA1NDgzODI5MywxMjM2NTA1Njc4LDEwNTMxOTUwMTEsMj
-A5NzA1NDk0NSwtNjgwOTE3NTU5LC05ODI2OTgxNCwtODM4OTQw
-NTMyLC0xMDYzODk1MTM5LC02OTAwMDc1MDgsLTkyODE5NzYzNC
-wtMTA5ODM1Njk5NSw5NjE4MTM3NTQsMTU2MjI2MDcyOSwtMTI4
-MzkwNTE2N119
+eyJoaXN0b3J5IjpbLTg0MjUwNzkxNiwxNzYxOTY4NzQzLDEzMD
+Y1NzY2NTMsLTc3MDkwOTM4MCwtMjAwOTIxNjQ0NSw5NjU3MjE4
+MTUsLTI3OTQ1MjI3MywyMDU0ODM4MjkzLDEyMzY1MDU2NzgsMT
+A1MzE5NTAxMSwyMDk3MDU0OTQ1LC02ODA5MTc1NTksLTk4MjY5
+ODE0LC04Mzg5NDA1MzIsLTEwNjM4OTUxMzksLTY5MDAwNzUwOC
+wtOTI4MTk3NjM0LC0xMDk4MzU2OTk1LDk2MTgxMzc1NCwxNTYy
+MjYwNzI5XX0=
 -->
