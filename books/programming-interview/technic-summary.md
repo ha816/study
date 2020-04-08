@@ -218,8 +218,7 @@
 > 따라서 64bit 컴퓨터는 인식가능한 메모리 공간이 훨씬 크고 단위시간당 처리할 수 있는 데이터가 많다.
   
 > **프로세스와 쓰레드의 차이**
->프로세스는 메모리에 올라와 실행되고 있는 프로그램을 말한다. 기본적으로 프로세스는 최소 하나 이상의 쓰레드를 가진다.
->쓰레드는 프로세스 내에서 실제 작업을 수행하는 주체이다. 
+>프로세스는 메모리에 올라와 실행되고 있는 프로그램을 말한다. 기본적으로 프로세스는 최소 하나 이상의 쓰레드를 가진다. 쓰레드는 프로세스 내에서 실제 작업을 수행하는 주체이다. 
 
 > **데드락이란 무엇이고 발생하는 조건은?** 
 > 특정 프로세스가 작업에 필요한 자원을 얻지 못해 멈춰있는 상태이다.  다수의 프로세스가 동작하는 멀티 프로그래밍 환경에서 발생할 수 있다.
@@ -274,11 +273,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA5MTMwNDg0LC01MzAwMDE3NTQsNzIyMD
-MxNjE2LC04Mzc5NTAyNjAsLTcwMzMyMDc3NSwtNTcwMDE3MTU4
-LDEyOTc3Mjc5NzEsLTUxNDkzNjEzMCw5MDI4ODY4NzMsLTIxMz
-AzODM3NTUsLTM2NDMxMDg5LC0xNjEyNTcyMzUxLDYxNDAwNjYx
-OSw5MjE4ODY1MTgsMTkyNDUxMjYwLC0yMTA4Mzg3MzgxLDY1OD
-c2Nzk2MCwzMjAyNjU1OTcsLTg2MDM3NjcxLDUyNTc1NjY5NV19
-
+eyJoaXN0b3J5IjpbMTIxMjcxOTIwOCwtNTMwMDAxNzU0LDcyMj
+AzMTYxNiwtODM3OTUwMjYwLC03MDMzMjA3NzUsLTU3MDAxNzE1
+OCwxMjk3NzI3OTcxLC01MTQ5MzYxMzAsOTAyODg2ODczLC0yMT
+MwMzgzNzU1LC0zNjQzMTA4OSwtMTYxMjU3MjM1MSw2MTQwMDY2
+MTksOTIxODg2NTE4LDE5MjQ1MTI2MCwtMjEwODM4NzM4MSw2NT
+g3Njc5NjAsMzIwMjY1NTk3LC04NjAzNzY3MSw1MjU3NTY2OTVd
+fQ==
 -->
