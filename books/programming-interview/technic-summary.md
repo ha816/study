@@ -164,11 +164,11 @@
 >DB 인덱싱 기법에는 대표적으로 B-Tree 인덱싱과 Hash 인덱싱이 있다. Hash 인덱싱은 해시 값으로 변경해서 저장하기 때문에 값의 일부만 검색할때는 사용할 수 없다. 하지만 검색 속도는 매우 빠르다. 
 >B-Tree(Balanced-Tree)는 가장 범용적으로 사용되는 알고리즘이다. B-Tree는 Root, Branch, Leaf 노드로 구성된다. Leaf 노드는 실제 저장된 레코드를 가리킨다. 
 
->**트랜잭션이란? **
+>**트랜잭션이란?**
 >Transaction은 여러 작업을 묶어 하나의 작업 단위로 만든 것을 말한다. 트랜잭션이 성립하려면 ACID성질을 만족해야 한다. 
->원자성 : 트랜잭션 내용은 모두 적용되거나 아니면 하나도 적용되지 않아야 한다. 일부만 적용될수 없다. 
->일관성 : 트랜잭션 적용 후에 데이터베이스에 모든 데이터는 일관 되어야 한다. 
->독립성 : 다수의 트랜잭션이 동시에 동작할때, 트랜잭션이 순차적으로 동작해야 한다.
+>원자성: 트랜잭션 내용은 모두 적용되거나 아니면 하나도 적용되지 않아야 한다. 일부만 적용될수 없다. 
+>일관성: 트랜잭션 적용 후에 데이터베이스에 모든 데이터는 일관 되어야 한다. 
+>독립성: 다수의 트랜잭션이 동시에 동작할때, 트랜잭션이 순차적으로 동작해야 한다.
 >견고성 : 트랜잭션이 커밋되면 그 내용은 영구히 남아야 한다. 심지어 시스템 레벨의 재해라도 남아야 한다. 
 
 > **트랜잭션 격리수준(isolation level)이란?**
@@ -275,11 +275,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzAzODM3NTUsLTM2NDMxMDg5LC0xNj
-EyNTcyMzUxLDYxNDAwNjYxOSw5MjE4ODY1MTgsMTkyNDUxMjYw
-LC0yMTA4Mzg3MzgxLDY1ODc2Nzk2MCwzMjAyNjU1OTcsLTg2MD
-M3NjcxLDUyNTc1NjY5NSwxNzYxOTY4NzQzLDEzMDY1NzY2NTMs
-LTc3MDkwOTM4MCwtMjAwOTIxNjQ0NSw5NjU3MjE4MTUsLTI3OT
-Q1MjI3MywyMDU0ODM4MjkzLDEyMzY1MDU2NzgsMTA1MzE5NTAx
-MV19
+eyJoaXN0b3J5IjpbLTE0MTk5MTEwNDMsLTIxMzAzODM3NTUsLT
+M2NDMxMDg5LC0xNjEyNTcyMzUxLDYxNDAwNjYxOSw5MjE4ODY1
+MTgsMTkyNDUxMjYwLC0yMTA4Mzg3MzgxLDY1ODc2Nzk2MCwzMj
+AyNjU1OTcsLTg2MDM3NjcxLDUyNTc1NjY5NSwxNzYxOTY4NzQz
+LDEzMDY1NzY2NTMsLTc3MDkwOTM4MCwtMjAwOTIxNjQ0NSw5Nj
+U3MjE4MTUsLTI3OTQ1MjI3MywyMDU0ODM4MjkzLDEyMzY1MDU2
+NzhdfQ==
 -->
