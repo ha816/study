@@ -135,6 +135,7 @@
 
 >**DI 컨테이너?**
 > 스프링에서 DI 컨테이너로는 빈 팩토리와 애플리케이션 컨텍스트가 있다. 빈 팩토리는 단순히 빈을 생성하고 생명 주기를 관리하는 역할을 한다. 애플리케이션 컨텍스트는 빈 팩토리의 기능을 가질 뿐만 아니라 properties 파일을 읽기와 같은 추가 기능을 제공한다. 스프링에서 DI 컨테이너라 하면 애플리케이션 컨텍스트를 말한 **스프링이 유명한 이유는?**
+
 >스프링은 엔터프라이즈 급 애플리케이션을 만드는데 유용한 자바 기반 오픈 소스 프레임워크이다. 자바 엔터프라이즈급 소프트웨어 표준으로  Java EE(Enterprise Edition)가 있다. 그리고 Java EE 표준을 구현한 아키텍처가 바로 EJB(Enterprise JavaBeans)이다. EJB는 보안, 트랜잭션등 EJB 컨테이너의 다양한 서비스를 제공 받기 위해서는 EJB 스펙을 지켜야 했는데, 그 결과 실제 비즈니스 로직보다 EJB 컨테이너를 사용하기 위한 상투적인 코드들이 많아지는 문제가 발생했다. 비즈니스 로직이 특정 기술에 종속되어 있다는 것을 기술 침투(invasive)라고 하는데, 이것이 EJB의 가장 큰 문제점이다. 그래서 스프링은 비 침투적인(non-invasive) 방식을 도입하여 많은 사랑을 받고 있다. 
 
 >**DI?**
@@ -284,11 +285,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTI1NzIzNTEsNjE0MDA2NjE5LDkyMT
-g4NjUxOCwxOTI0NTEyNjAsLTIxMDgzODczODEsNjU4NzY3OTYw
-LDMyMDI2NTU5NywtODYwMzc2NzEsNTI1NzU2Njk1LDE3NjE5Nj
-g3NDMsMTMwNjU3NjY1MywtNzcwOTA5MzgwLC0yMDA5MjE2NDQ1
-LDk2NTcyMTgxNSwtMjc5NDUyMjczLDIwNTQ4MzgyOTMsMTIzNj
-UwNTY3OCwxMDUzMTk1MDExLDIwOTcwNTQ5NDUsLTY4MDkxNzU1
-OV19
+eyJoaXN0b3J5IjpbNzI1OTA2NzUsLTE2MTI1NzIzNTEsNjE0MD
+A2NjE5LDkyMTg4NjUxOCwxOTI0NTEyNjAsLTIxMDgzODczODEs
+NjU4NzY3OTYwLDMyMDI2NTU5NywtODYwMzc2NzEsNTI1NzU2Nj
+k1LDE3NjE5Njg3NDMsMTMwNjU3NjY1MywtNzcwOTA5MzgwLC0y
+MDA5MjE2NDQ1LDk2NTcyMTgxNSwtMjc5NDUyMjczLDIwNTQ4Mz
+gyOTMsMTIzNjUwNTY3OCwxMDUzMTk1MDExLDIwOTcwNTQ5NDVd
+fQ==
 -->
