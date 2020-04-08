@@ -124,6 +124,7 @@
 
 >**DI?**
 >DI(Depenceny Injection)는 의존성 주입이다. 애플리케이션 수행을 위해선 여러 개의 컴포넌트를 통합해서 사용하는데 일반적으로 특정 컴포넌트를 사용할 때 클래스 내부에서 구현 클래스를 직접 생성해서 사용하면 두 클래스간의 결합도가 높아진다.  결합도를 낮추는 방법으로 클래스의 외부에서 컴포넌트를 생성 한 후, 내부에 주입하여 사용한다. 
+
 >**AOP**
 >AOP는 Aspect Oriendted Programing의 약자로, 비즈니스로직은 보통 본연의 로직 외에 로깅, 트랜잭션 관리, 보안 등 다른 서비스도 수행해야 하는 경우가 많다. 이러한 서비스는 여러 컴포넌트에서 동시에 사용되는 경향이 있어 횡단 관심사(cross-cutting concerns)라고 한다. AOP는 공통적으로 사용되는 서비스를 모듈화해서 컴포넌트에 선언적으로 사용할 수 있도록 한다. AOP를 사용하면 본연에 관심사에 집중하는 컴포넌트를 만들 수 있다. 
 
@@ -149,8 +150,6 @@
 >HandlerMapping 인터페이스는 요청에 대응하는 핸들러를 선택하는 역할을 정의한다. 그리고 실제 구현체는 RequestMappingHandler이다. 
 >Handler가 하는 일은 받은 요청에 대응하는 HandlerMethod를 수행하는 것이다. Handler의 메서드 중에서 @RequestMapping 애너테이션이 붙은 메서드가 바로 HandlerMethod이다.
 >프레임워크 관점에서는 Handler라 부르지만 개발자가 보는 클래스의 관점에서는 컨트롤러이다.
-
-
 
 >**HandlerAdapter?**
 >HandlerAdapter는 실제 핸들러 메서드를 호출하는 역할을 한다. RequestMappingHandlerMapping 구현체로 가져온 핸들러 메서드를RequestMappingHandlerAdapter 구현체가 호출한다. 이 때 매개변수를 전달하고 메서드 처리결과를 반환하는 것 과 같은 중요한 역할을 담당한다. 매개변수를 전달할때는 요청 받은 데이터를 자바 객체로 변환하고, 입력값이 올바른지 검사(Bean Validation)하는 것 까지 한꺼번에 이뤄진다. 
@@ -276,11 +275,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTgyMjExNDMsMTI3NTA3NDA2MSwxNz
-YxOTY4NzQzLDEzMDY1NzY2NTMsLTc3MDkwOTM4MCwtMjAwOTIx
-NjQ0NSw5NjU3MjE4MTUsLTI3OTQ1MjI3MywyMDU0ODM4MjkzLD
-EyMzY1MDU2NzgsMTA1MzE5NTAxMSwyMDk3MDU0OTQ1LC02ODA5
-MTc1NTksLTk4MjY5ODE0LC04Mzg5NDA1MzIsLTEwNjM4OTUxMz
-ksLTY5MDAwNzUwOCwtOTI4MTk3NjM0LC0xMDk4MzU2OTk1LDk2
-MTgxMzc1NF19
+eyJoaXN0b3J5IjpbNTI1NzU2Njk1LDEyNzUwNzQwNjEsMTc2MT
+k2ODc0MywxMzA2NTc2NjUzLC03NzA5MDkzODAsLTIwMDkyMTY0
+NDUsOTY1NzIxODE1LC0yNzk0NTIyNzMsMjA1NDgzODI5MywxMj
+M2NTA1Njc4LDEwNTMxOTUwMTEsMjA5NzA1NDk0NSwtNjgwOTE3
+NTU5LC05ODI2OTgxNCwtODM4OTQwNTMyLC0xMDYzODk1MTM5LC
+02OTAwMDc1MDgsLTkyODE5NzYzNCwtMTA5ODM1Njk5NSw5NjE4
+MTM3NTRdfQ==
 -->
