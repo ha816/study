@@ -144,7 +144,7 @@
 >Spring이 채택한 MVC패턴은 사실 프론트 컨트롤러(FrontController)패턴이다. 컨트롤러 패턴에서 프론트 컨트롤러는 요청을 처리하는 과정 전체의 제어 흐름을 담당한다. Spring에서는 DispatcherServelet이 대표적인 프론트 컨트롤러이다. 
 
 >**DispatcherServlet?**
->프런트 컨트롤러이자 기본적인 처리 흐름을 제어하는 사령탑 역할을 한다. 
+>프런트 컨트롤러이자 요청 - 응답 전반적인 과정에서 처리 흐름을 제어하는 사령탑 역할을 한다. 
 
 >**HandlerMapping? Handler? HandlerMethod?**
 >HandlerMapping 인터페이스는 요청에 대응하는 핸들러를 선택하는 역할을 정의한다. 그리고 실제 구현체는 RequestMappingHandler이다. 
@@ -275,11 +275,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU4NzY3OTYwLDMyMDI2NTU5NywtODYwMz
-c2NzEsNTI1NzU2Njk1LDEyNzUwNzQwNjEsMTc2MTk2ODc0Mywx
-MzA2NTc2NjUzLC03NzA5MDkzODAsLTIwMDkyMTY0NDUsOTY1Nz
-IxODE1LC0yNzk0NTIyNzMsMjA1NDgzODI5MywxMjM2NTA1Njc4
-LDEwNTMxOTUwMTEsMjA5NzA1NDk0NSwtNjgwOTE3NTU5LC05OD
-I2OTgxNCwtODM4OTQwNTMyLC0xMDYzODk1MTM5LC02OTAwMDc1
-MDhdfQ==
+eyJoaXN0b3J5IjpbLTIxMDgzODczODEsNjU4NzY3OTYwLDMyMD
+I2NTU5NywtODYwMzc2NzEsNTI1NzU2Njk1LDEyNzUwNzQwNjEs
+MTc2MTk2ODc0MywxMzA2NTc2NjUzLC03NzA5MDkzODAsLTIwMD
+kyMTY0NDUsOTY1NzIxODE1LC0yNzk0NTIyNzMsMjA1NDgzODI5
+MywxMjM2NTA1Njc4LDEwNTMxOTUwMTEsMjA5NzA1NDk0NSwtNj
+gwOTE3NTU5LC05ODI2OTgxNCwtODM4OTQwNTMyLC0xMDYzODk1
+MTM5XX0=
 -->
