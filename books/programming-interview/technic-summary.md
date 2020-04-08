@@ -222,7 +222,7 @@
 
 > **데드락이란 무엇이고 발생하는 조건은?** 
 > 특정 프로세스가 작업에 필요한 자원을 얻지 못해 멈춰있는 상태이다.  다수의 프로세스가 동작하는 멀티 프로그래밍 환경에서 발생할 수 있다.
-> 데드락은 운영체제에서 Mutual Exclusion, Hold&Wait, NoPreemption, Circular Wait 조건이 모두 만족하면 발생한다.
+> 데드락은 운영체제에서 Mutual Exclusion, Hold&Wait, No-Preemption, Circular Wait 조건이 모두 만족하면 발생한다.
 
 >**데드락 처리는?**
 >예방(Prevention), 회피(Avoidance) 그리고 탐지 및 회복(Detection & Recover) 방법이 있다.
@@ -273,7 +273,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMjcxOTIwOCwtNTMwMDAxNzU0LDcyMj
+eyJoaXN0b3J5IjpbLTMxMjc0MzczMSwtNTMwMDAxNzU0LDcyMj
 AzMTYxNiwtODM3OTUwMjYwLC03MDMzMjA3NzUsLTU3MDAxNzE1
 OCwxMjk3NzI3OTcxLC01MTQ5MzYxMzAsOTAyODg2ODczLC0yMT
 MwMzgzNzU1LC0zNjQzMTA4OSwtMTYxMjU3MjM1MSw2MTQwMDY2
