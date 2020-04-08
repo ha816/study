@@ -187,7 +187,7 @@
 
 >**샤딩(Sharding)과 파티셔닝(Partitioning)의 차이는?**
 >파티셔닝이란 기존 테이블을 분리해서 더 작은 테이블로 나누어 저장하지만 사용자 입장에서는 여전히 하나로 사용하는 기법이다. 파티셔닝에는 일반적으로 레코드 별로 파티션을 나누는 방식인 수평(horizon) 파티셔닝과 컬럼 별로 파티션을 나누는 수직(vertical) 파티셔닝이 있다. 
->Sharding은 수평 파티셔닝을 일컫는 말이다. Shard를 만들려면 Sharding key를 정하고 키를 기준으로 샤딩을 나누어야 한다. MySQL의 파티션 테이블에서 인덱스는 전부 로컬 인덱스에 해당한다. 모든 인덱스는 파티션 단위로 생성되며, 파티션에 관계없이 테이블 전체 단위로 글로벌하게 하나의 통합된 인덱스는 지원하지 않는다
+>Sharding은 수평 파티셔닝을 일컫는 말이다. 파티션된 테이블을 shard라고도 한다. Sharding을 하려면 Sharding key를 정하고 키를 기준으로 테이블(shard)를 나누어야 한다. 파티션 테이블에서 인덱스는 전부 로컬 인덱스에 해당한다. 모든 인덱스는 파티션 단위로 생성되며, 파티션에 관계없이 테이블 전체 단위로 글로벌하게 하나의 통합된 인덱스는 지원하지 않는다
 
 
 # Network & Protocol
@@ -275,11 +275,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MDAxNzE1OCwxMjk3NzI3OTcxLC01MT
-Q5MzYxMzAsOTAyODg2ODczLC0yMTMwMzgzNzU1LC0zNjQzMTA4
-OSwtMTYxMjU3MjM1MSw2MTQwMDY2MTksOTIxODg2NTE4LDE5Mj
-Q1MTI2MCwtMjEwODM4NzM4MSw2NTg3Njc5NjAsMzIwMjY1NTk3
-LC04NjAzNzY3MSw1MjU3NTY2OTUsMTc2MTk2ODc0MywxMzA2NT
-c2NjUzLC03NzA5MDkzODAsLTIwMDkyMTY0NDUsOTY1NzIxODE1
-XX0=
+eyJoaXN0b3J5IjpbLTkyMDk5MjUyMiwtNTcwMDE3MTU4LDEyOT
+c3Mjc5NzEsLTUxNDkzNjEzMCw5MDI4ODY4NzMsLTIxMzAzODM3
+NTUsLTM2NDMxMDg5LC0xNjEyNTcyMzUxLDYxNDAwNjYxOSw5Mj
+E4ODY1MTgsMTkyNDUxMjYwLC0yMTA4Mzg3MzgxLDY1ODc2Nzk2
+MCwzMjAyNjU1OTcsLTg2MDM3NjcxLDUyNTc1NjY5NSwxNzYxOT
+Y4NzQzLDEzMDY1NzY2NTMsLTc3MDkwOTM4MCwtMjAwOTIxNjQ0
+NV19
 -->
