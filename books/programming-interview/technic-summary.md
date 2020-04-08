@@ -151,7 +151,7 @@
 >Handler는 요청에 대응하는 HandlerMethod를 가진다. Handler가 가진 메서드 중에서 @RequestMapping 애너테이션이 붙은 메서드가 바로 HandlerMethod이다. 사실 Handler는 프레임워크 관점에서 Handler라 부르지만 개발자가 보는 클래스의 관점에서는 컨트롤러이다.
 
 >**HandlerAdapter?**
->HandlerAdapter는 실제 핸들러 메서드를 호출하는 역할을 한다. RequestMappingHandlerMapping 구현체로 가져온 핸들러 메서드를RequestMappingHandlerAdapter 구현체가 호출한다. 이 때 매개변수를 전달하고 메서드 처리결과를 반환하는 것 과 같은 중요한 역할을 담당한다. 매개변수를 전달할때는 요청 받은 데이터를 자바 객체로 변환하고, 입력값이 올바른지 검사(Bean Validation)하는 것 까지 한꺼번에 이뤄진다. 
+>HandlerAdapter는 핸들러 메서드를 호출하는 역할을 한다. RequestMappingHandlerAdapter 구현체가 실제 핸들러 메서드를 호출한다. 이 때 매개변수를 전달하고 메서드 처리결과를 반환하는 것과 같은 중요한 역할을 담당한다. 매개변수를 전달할때는 요청 받은 데이터를 자바 객체로 변환하고, 입력값이 올바른지 검사(Bean Validation)하는 것 까지 한꺼번에 이뤄진다. 
 
 >**Filter와 (Handler)Intercept의 차이**
 >Handler 인터셉터는 DispatcherServlet이 핸들러를 호출하기 전과 호출 후에 요청과 응답을 가공하는 일종의 필터 역할을 한다.  핸들러 인터셉트를 등록하지 않았다면 바로 컨트롤러에 진입하지만 하나 이상의 핸들러 인터셉터를 지정했을 때는 순서에 따라 인터셉터를 먼저 거친후에 컨트롤러를 호출한다. 핸들러 인터셉터는 HttpServletRequest, HttpServletResponse 진입시의 컨트롤러의 객체, 컨트롤러가 반환하는 ModelAndView, 예외 등을 제공받을 수 있기 때문에 서블릿 앞단의 Filter보다 더 정교한 작업이 가능하다.
@@ -274,11 +274,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIxODg2NTE4LDE5MjQ1MTI2MCwtMjEwOD
-M4NzM4MSw2NTg3Njc5NjAsMzIwMjY1NTk3LC04NjAzNzY3MSw1
-MjU3NTY2OTUsMTI3NTA3NDA2MSwxNzYxOTY4NzQzLDEzMDY1Nz
-Y2NTMsLTc3MDkwOTM4MCwtMjAwOTIxNjQ0NSw5NjU3MjE4MTUs
-LTI3OTQ1MjI3MywyMDU0ODM4MjkzLDEyMzY1MDU2NzgsMTA1Mz
-E5NTAxMSwyMDk3MDU0OTQ1LC02ODA5MTc1NTksLTk4MjY5ODE0
+eyJoaXN0b3J5IjpbNjE0MDA2NjE5LDkyMTg4NjUxOCwxOTI0NT
+EyNjAsLTIxMDgzODczODEsNjU4NzY3OTYwLDMyMDI2NTU5Nywt
+ODYwMzc2NzEsNTI1NzU2Njk1LDEyNzUwNzQwNjEsMTc2MTk2OD
+c0MywxMzA2NTc2NjUzLC03NzA5MDkzODAsLTIwMDkyMTY0NDUs
+OTY1NzIxODE1LC0yNzk0NTIyNzMsMjA1NDgzODI5MywxMjM2NT
+A1Njc4LDEwNTMxOTUwMTEsMjA5NzA1NDk0NSwtNjgwOTE3NTU5
 XX0=
 -->
