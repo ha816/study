@@ -205,13 +205,13 @@
 >Server Push: 필요한 리소스를 클라이언트 요청 없이 서버에서 전송.
 
 >**REST란?**
->REpresentional State Transfer의 약자로 **시스템간 API를 만드는데 활용하는 아키텍처 스타일의 일종이다.** REST에서 가장 중요한 것은 리소스로, 리소스는 클라이언트에 공개할 가공된 정보를 말한다. 이런 리소스에 CRUD 조작을 위한 수단이 바로 REST API가 된다. 
+>REpresentional State Transfer의 약자로 시스템간 API를 만드는데 활용하는 아키텍처 스타일의 일종이다. REST에서 가장 중요한 것은 리소스로, 리소스는 클라이언트에 공개할 가공된 정보를 말한다. 이런 리소스에 CRUD 조작을 위한 수단이 바로 REST API가 된다. 
 
 >**URI(Uniform Resource Identifier)과 URL(Uniform Resource Locator)의 차이는?**
 >URI는 클라이언트에 공개하는 리소스의 고유하게 식별자다.  따라서 URI를 안다면 어디서든 같은 리소스로 접근이 가능하다. 한 URI는 리소스 하나 뿐만 아니라 다수의 리소스로도 정의가 가능하다. 예를 들어 URI가 `user/1234`라면 ID가 1234인 사용자의 리소스 정보. `/users`라면 다수는 모든 사용자의 리소스 정보를 말한다.
 >URL은 클라이언트에 공개하는 리소스의 대략적인 위치를 알려준다. 최종 목적지는 URI이고 중관 과정에 URL를 거쳐가기 때문에 URI는 URL을 포함하는 큰 개념이다. 예를 들어 https://www.google.co.kr/search?id=123가 있다고 하자. 여기서 URL은 https://www.google.co.kr/search 까지이고 실제 리소스 식별 주소 URI는 https://www.google.co.kr/search?id=123 
 
-# OperationSystem
+# OperatingSystem
 
 > **32비트 컴퓨터와 64비트 컴퓨터의 차이**
 > 32bit 컴퓨터는 CPU 안에 Register의 처리 단위가 32bit임을 말한다. 이 레지스터가 표현할 수 있는 값의 범위에 따라 인식 주소값의 범위가 된다. 그래서 32bit 컴퓨터는 메모리 주소를 4GB까지밖에 인식하지 못한다. ($2^{32} =4 * 2^{10} *2^{10} *2^{10}$)
@@ -274,11 +274,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIyMDMxNjE2LC04Mzc5NTAyNjAsLTcwMz
-MyMDc3NSwtNTcwMDE3MTU4LDEyOTc3Mjc5NzEsLTUxNDkzNjEz
-MCw5MDI4ODY4NzMsLTIxMzAzODM3NTUsLTM2NDMxMDg5LC0xNj
-EyNTcyMzUxLDYxNDAwNjYxOSw5MjE4ODY1MTgsMTkyNDUxMjYw
-LC0yMTA4Mzg3MzgxLDY1ODc2Nzk2MCwzMjAyNjU1OTcsLTg2MD
-M3NjcxLDUyNTc1NjY5NSwxNzYxOTY4NzQzLDEzMDY1NzY2NTNd
+eyJoaXN0b3J5IjpbLTUzMDAwMTc1NCw3MjIwMzE2MTYsLTgzNz
+k1MDI2MCwtNzAzMzIwNzc1LC01NzAwMTcxNTgsMTI5NzcyNzk3
+MSwtNTE0OTM2MTMwLDkwMjg4Njg3MywtMjEzMDM4Mzc1NSwtMz
+Y0MzEwODksLTE2MTI1NzIzNTEsNjE0MDA2NjE5LDkyMTg4NjUx
+OCwxOTI0NTEyNjAsLTIxMDgzODczODEsNjU4NzY3OTYwLDMyMD
+I2NTU5NywtODYwMzc2NzEsNTI1NzU2Njk1LDE3NjE5Njg3NDNd
 fQ==
 -->
