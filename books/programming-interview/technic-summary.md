@@ -183,7 +183,7 @@
 
 >**클러스터와링과 리플레케이션의 차이**
 >Cluster는 모든 데이터베이스를 실시간으로 동기화하고 데이터 변경을 확인한다. 
->Replication도 마스터 데이터베이스를 슬레이브 데이터베이스에 동기화를 하지만 비동기적으로 수행한다. 따라서 어떤 데이터베이스에는 변경되어 있지만, 다른 데이터베이스에서는 변경되지 않을 수도 있다. 데이터를 변경하는 쿼리는 마스터 데이터베이스에만 요청할 수 있다. Replication은 Cluster에 비해 변경이 매우 빠르기 때문에 주로 실시간 동기화가 필요 없는 경우 Replication을 사용한다.에 대해서
+>Replication도 마스터 데이터베이스를 슬레이브 데이터베이스에 동기화를 하지만 비동기적으로 수행한다. 따라서 어떤 데이터베이스에는 변경되어 있지만, 다른 데이터베이스에서는 변경되지 않을 수도 있다. Replication은 Cluster에 비해 변경이 매우 빠르기 때문에 주로 실시간 동기화가 필요 없는 경우 사용한다.
 
 >**샤딩(Sharding)과 파티셔닝(Partitioning)의 차이는?**
 >파티셔닝이란 데이터를 테이블로 분리해서 저장하지만 사용자 입장에서는 여전히 하나의 테이블 사용하는 솔루션이다. 파티셔닝에는 일반적으로 레코드 별로 파티션을 나누는 방식인 수평 파티셔닝과 컬럼 별로 파티션을 나누는 수직 파티셔닝이 있다. 
@@ -275,11 +275,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjk0MDEwOTIsOTAyODg2ODczLC0yMT
-MwMzgzNzU1LC0zNjQzMTA4OSwtMTYxMjU3MjM1MSw2MTQwMDY2
-MTksOTIxODg2NTE4LDE5MjQ1MTI2MCwtMjEwODM4NzM4MSw2NT
-g3Njc5NjAsMzIwMjY1NTk3LC04NjAzNzY3MSw1MjU3NTY2OTUs
-MTc2MTk2ODc0MywxMzA2NTc2NjUzLC03NzA5MDkzODAsLTIwMD
-kyMTY0NDUsOTY1NzIxODE1LC0yNzk0NTIyNzMsMjA1NDgzODI5
-M119
+eyJoaXN0b3J5IjpbLTUxNDkzNjEzMCw5MDI4ODY4NzMsLTIxMz
+AzODM3NTUsLTM2NDMxMDg5LC0xNjEyNTcyMzUxLDYxNDAwNjYx
+OSw5MjE4ODY1MTgsMTkyNDUxMjYwLC0yMTA4Mzg3MzgxLDY1OD
+c2Nzk2MCwzMjAyNjU1OTcsLTg2MDM3NjcxLDUyNTc1NjY5NSwx
+NzYxOTY4NzQzLDEzMDY1NzY2NTMsLTc3MDkwOTM4MCwtMjAwOT
+IxNjQ0NSw5NjU3MjE4MTUsLTI3OTQ1MjI3MywyMDU0ODM4Mjkz
+XX0=
 -->
