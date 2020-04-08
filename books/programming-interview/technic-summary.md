@@ -178,8 +178,8 @@
 > REPEATABLE_READ : 반복적인 읽기, Repeatable Read를 허용한다. 즉 Unrepeatable Read 현상을 방지한다. 
 > SERIALIZABLE  : 시리얼화 가능, Phantom Read를 방지한다.
 
->**PreparedStatement와 Statement의 차이는?**
->Statement는 사용하는 쿼리문 자체를 DB서버에 보낸다. 때문에 SQL Injection에 취약하며 사용하는 쿼리가 비슷하더라도 성능 이점을 얻을 수 없다. PreparedStatement 쿼리에는 바인딩 변수를 사용할 수 있다. 이렇게 템플릿화 된 쿼리를 DB서버에 미리 알려주어 쿼리 작업의 일부 결과를 저장한다. 해당 쿼리를 반복적으로 요청시 저장해둔 결과를 재사용하여 쿼리 수행시 성능상 이득이 있다. 또한 SQL Injection의 예방할 수 있다.
+>**Statement과 PreparedStatement의 차이는?**
+>Statement는 사용하는 쿼리문 자체를 DB서버에 보낸다. 때문에 SQL Injection공격에 취약하며 사용하는 쿼리가 비슷하더라도 성능 이점을 얻을 수 없다. PreparedStatement를 사용하면 쿼리에 바인딩 변수를 사용할 수 있다. 이렇게 템플릿화 된 쿼리를 DB서버에 미리 알려주어 쿼리 작업의 일부 결과를 저장한다. 해당 쿼리를 반복적으로 요청시 저장해둔 결과를 재사용하여 쿼리 수행시 성능상 이득이 있다. 또한 SQL Injection의 예방할 수 있다.
 
 >**클러스터와링과 리플레케이션의 차이**
 >Cluster는 모든 데이터베이스를 실시간으로 동기화하고 데이터 변경을 확인한다. 
@@ -275,11 +275,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAyODg2ODczLC0yMTMwMzgzNzU1LC0zNj
-QzMTA4OSwtMTYxMjU3MjM1MSw2MTQwMDY2MTksOTIxODg2NTE4
-LDE5MjQ1MTI2MCwtMjEwODM4NzM4MSw2NTg3Njc5NjAsMzIwMj
-Y1NTk3LC04NjAzNzY3MSw1MjU3NTY2OTUsMTc2MTk2ODc0Mywx
-MzA2NTc2NjUzLC03NzA5MDkzODAsLTIwMDkyMTY0NDUsOTY1Nz
-IxODE1LC0yNzk0NTIyNzMsMjA1NDgzODI5MywxMjM2NTA1Njc4
-XX0=
+eyJoaXN0b3J5IjpbLTE4Mjk0MDEwOTIsOTAyODg2ODczLC0yMT
+MwMzgzNzU1LC0zNjQzMTA4OSwtMTYxMjU3MjM1MSw2MTQwMDY2
+MTksOTIxODg2NTE4LDE5MjQ1MTI2MCwtMjEwODM4NzM4MSw2NT
+g3Njc5NjAsMzIwMjY1NTk3LC04NjAzNzY3MSw1MjU3NTY2OTUs
+MTc2MTk2ODc0MywxMzA2NTc2NjUzLC03NzA5MDkzODAsLTIwMD
+kyMTY0NDUsOTY1NzIxODE1LC0yNzk0NTIyNzMsMjA1NDgzODI5
+M119
 -->
