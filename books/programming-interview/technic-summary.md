@@ -161,8 +161,7 @@
 # Database
 
 >**DB Indexing 방식은?**
->검색 속도를 높이기 위해 인덱싱을 사용하지만 대신에 저장, 수정 기능의 희생이 따른다.
->인덱싱 기법에는 B-Tree 인덱싱과 Hash 인덱싱이 있다. Hash 인덱싱은 해시 값으로 변경해서 저장하기 때문에 값의 일부만 검색할때는 사용할 수 없다. 하지만 검색 속도는 매우 빠르다. 
+>DB 인덱싱 기법에는 대표적으로 B-Tree 인덱싱과 Hash 인덱싱이 있다. Hash 인덱싱은 해시 값으로 변경해서 저장하기 때문에 값의 일부만 검색할때는 사용할 수 없다. 하지만 검색 속도는 매우 빠르다. 
 >B-Tree(Balanced-Tree)는 가장 범용적으로 사용되는 알고리즘이다. B-Tree는 Root, Branch, Leaf 노드로 구성된다. Leaf 노드는 실제 저장된 레코드를 가리킨다. 
 
 >**트랜잭션이란? **
@@ -276,7 +275,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjgzNTU3NTUsLTM2NDMxMDg5LC0xNj
+eyJoaXN0b3J5IjpbLTIxMzAzODM3NTUsLTM2NDMxMDg5LC0xNj
 EyNTcyMzUxLDYxNDAwNjYxOSw5MjE4ODY1MTgsMTkyNDUxMjYw
 LC0yMTA4Mzg3MzgxLDY1ODc2Nzk2MCwzMjAyNjU1OTcsLTg2MD
 M3NjcxLDUyNTc1NjY5NSwxNzYxOTY4NzQzLDEzMDY1NzY2NTMs
