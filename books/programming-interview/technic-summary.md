@@ -148,8 +148,7 @@
 
 >**HandlerMapping? Handler? HandlerMethod?**
 >HandlerMapping 인터페이스는 요청에 대응하는 핸들러의 매핑을 정의하며 실제 구현체는 RequestMappingHandler이다. 
->Handler는 실제 클래스로 요청에 대응하는 HandlerMethod를 가진다. Handler의 메서드 중에서 @RequestMapping 애너테이션이 붙은 메서드가 바로 HandlerMethod이다.
->프레임워크 관점에서는 Handler라 부르지만 개발자가 보는 클래스의 관점에서는 컨트롤러이다.
+>Handler는 요청에 대응하는 HandlerMethod를 가진다. Handler가 가진 메서드 중에서 @RequestMapping 애너테이션이 붙은 메서드가 바로 HandlerMethod이다. 사실 Handler는 프레임워크 관점에서 Handler라 부르지만 개발자가 보는 클래스의 관점에서는 컨트롤러이다.
 
 >**HandlerAdapter?**
 >HandlerAdapter는 실제 핸들러 메서드를 호출하는 역할을 한다. RequestMappingHandlerMapping 구현체로 가져온 핸들러 메서드를RequestMappingHandlerAdapter 구현체가 호출한다. 이 때 매개변수를 전달하고 메서드 처리결과를 반환하는 것 과 같은 중요한 역할을 담당한다. 매개변수를 전달할때는 요청 받은 데이터를 자바 객체로 변환하고, 입력값이 올바른지 검사(Bean Validation)하는 것 까지 한꺼번에 이뤄진다. 
@@ -275,11 +274,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNDUxMjYwLC0yMTA4Mzg3MzgxLDY1OD
-c2Nzk2MCwzMjAyNjU1OTcsLTg2MDM3NjcxLDUyNTc1NjY5NSwx
-Mjc1MDc0MDYxLDE3NjE5Njg3NDMsMTMwNjU3NjY1MywtNzcwOT
-A5MzgwLC0yMDA5MjE2NDQ1LDk2NTcyMTgxNSwtMjc5NDUyMjcz
-LDIwNTQ4MzgyOTMsMTIzNjUwNTY3OCwxMDUzMTk1MDExLDIwOT
-cwNTQ5NDUsLTY4MDkxNzU1OSwtOTgyNjk4MTQsLTgzODk0MDUz
-Ml19
+eyJoaXN0b3J5IjpbOTIxODg2NTE4LDE5MjQ1MTI2MCwtMjEwOD
+M4NzM4MSw2NTg3Njc5NjAsMzIwMjY1NTk3LC04NjAzNzY3MSw1
+MjU3NTY2OTUsMTI3NTA3NDA2MSwxNzYxOTY4NzQzLDEzMDY1Nz
+Y2NTMsLTc3MDkwOTM4MCwtMjAwOTIxNjQ0NSw5NjU3MjE4MTUs
+LTI3OTQ1MjI3MywyMDU0ODM4MjkzLDEyMzY1MDU2NzgsMTA1Mz
+E5NTAxMSwyMDk3MDU0OTQ1LC02ODA5MTc1NTksLTk4MjY5ODE0
+XX0=
 -->
