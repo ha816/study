@@ -258,7 +258,6 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >**MSA(Micro Service Architecture)?**
 >마이크로 서비스는 **독립적이고, 자기 완비적(self-contained)이며 느슨하게 결합된 비즈니스 기능을 모아 전체 시스템을 만드는 아키텍처 스타일**이다. 
 
-
 > **Docker는?**
 > 도커는 **컨테이너 기반의 오픈소스 가상화 플랫폼**이다. 가벼운 컨테이너를 만들고, 탑재하고 실행할 수 있는 플랫폼이다. 컨테이너는 도커 이미지(프로그램)의 구현체로 메모리나 CPU와 같은 자원을 할당받는다. 기존의 가상화 방식은 주로  **OS를 가상화** 했는데 OS이기 때문에 성능이 느렸고 도커는 프로세스를 가상화하기 때문에 빠르게 동작한다. 
 
@@ -275,11 +274,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMzMyMDc3NSwtNTcwMDE3MTU4LDEyOT
-c3Mjc5NzEsLTUxNDkzNjEzMCw5MDI4ODY4NzMsLTIxMzAzODM3
-NTUsLTM2NDMxMDg5LC0xNjEyNTcyMzUxLDYxNDAwNjYxOSw5Mj
-E4ODY1MTgsMTkyNDUxMjYwLC0yMTA4Mzg3MzgxLDY1ODc2Nzk2
-MCwzMjAyNjU1OTcsLTg2MDM3NjcxLDUyNTc1NjY5NSwxNzYxOT
-Y4NzQzLDEzMDY1NzY2NTMsLTc3MDkwOTM4MCwtMjAwOTIxNjQ0
-NV19
+eyJoaXN0b3J5IjpbLTE4OTYxNTAyNjEsLTcwMzMyMDc3NSwtNT
+cwMDE3MTU4LDEyOTc3Mjc5NzEsLTUxNDkzNjEzMCw5MDI4ODY4
+NzMsLTIxMzAzODM3NTUsLTM2NDMxMDg5LC0xNjEyNTcyMzUxLD
+YxNDAwNjYxOSw5MjE4ODY1MTgsMTkyNDUxMjYwLC0yMTA4Mzg3
+MzgxLDY1ODc2Nzk2MCwzMjAyNjU1OTcsLTg2MDM3NjcxLDUyNT
+c1NjY5NSwxNzYxOTY4NzQzLDEzMDY1NzY2NTMsLTc3MDkwOTM4
+MF19
 -->
