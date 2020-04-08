@@ -198,7 +198,7 @@
 
 >**HTTP? 그리고 HTTP 1.1과 HTTP 2.0간의 차이는?**
 >HTTP는 HyperText Transfer Protocol의 약자로 WWW에서 주로 사용한다. 
->HTTP 1.1은 기본적으로 연결당 하나의 요청과 응답을 처리하기 때문에 동시전송 문제와 많은 리소스를 처리하기에 문제가 있다. HTTP2는 성능과 속도 모두 잡기 위해 새로운 기능 4가지를 제공한다. 
+>HTTP 1.1은 기본적으로 연결당 하나의 요청과 응답을 처리하기 때문에 동시전송 문제와 많은 리소스를 처리하기에 문제가 있다. HTTP 2.0은 성능과 속도를 모두 잡기 위해 새로운 기능 4가지를 제공한다. 
 >Multiplexing: 요청과 응답시 멀티플렉싱을 통하여 레이턴시를 감소.
 >Prioritization: 요청 우선순위 설정이 가능.
 >Header Compression: HTTP header필드를 압축하여 프로토콜 오버헤드를 감소.
@@ -274,11 +274,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNzk1MDI2MCwtNzAzMzIwNzc1LC01Nz
-AwMTcxNTgsMTI5NzcyNzk3MSwtNTE0OTM2MTMwLDkwMjg4Njg3
-MywtMjEzMDM4Mzc1NSwtMzY0MzEwODksLTE2MTI1NzIzNTEsNj
-E0MDA2NjE5LDkyMTg4NjUxOCwxOTI0NTEyNjAsLTIxMDgzODcz
-ODEsNjU4NzY3OTYwLDMyMDI2NTU5NywtODYwMzc2NzEsNTI1Nz
-U2Njk1LDE3NjE5Njg3NDMsMTMwNjU3NjY1MywtNzcwOTA5Mzgw
-XX0=
+eyJoaXN0b3J5IjpbNzIyMDMxNjE2LC04Mzc5NTAyNjAsLTcwMz
+MyMDc3NSwtNTcwMDE3MTU4LDEyOTc3Mjc5NzEsLTUxNDkzNjEz
+MCw5MDI4ODY4NzMsLTIxMzAzODM3NTUsLTM2NDMxMDg5LC0xNj
+EyNTcyMzUxLDYxNDAwNjYxOSw5MjE4ODY1MTgsMTkyNDUxMjYw
+LC0yMTA4Mzg3MzgxLDY1ODc2Nzk2MCwzMjAyNjU1OTcsLTg2MD
+M3NjcxLDUyNTc1NjY5NSwxNzYxOTY4NzQzLDEzMDY1NzY2NTNd
+fQ==
 -->
