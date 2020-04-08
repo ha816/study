@@ -181,7 +181,7 @@
 >**Statement과 PreparedStatement의 차이는?**
 >Statement는 사용하는 쿼리문 자체를 DB서버에 보낸다. 때문에 SQL Injection공격에 취약하며 사용하는 쿼리가 비슷하더라도 성능 이점을 얻을 수 없다. PreparedStatement를 사용하면 쿼리에 바인딩 변수를 사용할 수 있다. 이렇게 템플릿화 된 쿼리를 DB서버에 미리 알려주어 쿼리 작업의 일부 결과를 저장한다. 해당 쿼리를 반복적으로 요청시 저장해둔 결과를 재사용하여 쿼리 수행시 성능상 이득이 있다. 또한 SQL Injection의 예방할 수 있다.
 
->**클러스터와링과 리플레케이션의 차이**
+>**클러스터링과 리플레케이션의 차이**
 >Cluster는 모든 데이터베이스를 실시간으로 동기화하고 데이터 변경을 확인한다. 
 >Replication도 마스터 데이터베이스를 슬레이브 데이터베이스에 동기화를 하지만 비동기적으로 수행한다. 따라서 어떤 데이터베이스에는 변경되어 있지만, 다른 데이터베이스에서는 변경되지 않을 수도 있다. Replication은 Cluster에 비해 변경이 매우 빠르기 때문에 주로 실시간 동기화가 필요 없는 경우 사용한다.
 
@@ -275,11 +275,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNDkzNjEzMCw5MDI4ODY4NzMsLTIxMz
-AzODM3NTUsLTM2NDMxMDg5LC0xNjEyNTcyMzUxLDYxNDAwNjYx
-OSw5MjE4ODY1MTgsMTkyNDUxMjYwLC0yMTA4Mzg3MzgxLDY1OD
-c2Nzk2MCwzMjAyNjU1OTcsLTg2MDM3NjcxLDUyNTc1NjY5NSwx
-NzYxOTY4NzQzLDEzMDY1NzY2NTMsLTc3MDkwOTM4MCwtMjAwOT
-IxNjQ0NSw5NjU3MjE4MTUsLTI3OTQ1MjI3MywyMDU0ODM4Mjkz
+eyJoaXN0b3J5IjpbMTM2OTI0ODU1OCwtNTE0OTM2MTMwLDkwMj
+g4Njg3MywtMjEzMDM4Mzc1NSwtMzY0MzEwODksLTE2MTI1NzIz
+NTEsNjE0MDA2NjE5LDkyMTg4NjUxOCwxOTI0NTEyNjAsLTIxMD
+gzODczODEsNjU4NzY3OTYwLDMyMDI2NTU5NywtODYwMzc2NzEs
+NTI1NzU2Njk1LDE3NjE5Njg3NDMsMTMwNjU3NjY1MywtNzcwOT
+A5MzgwLC0yMDA5MjE2NDQ1LDk2NTcyMTgxNSwtMjc5NDUyMjcz
 XX0=
 -->
