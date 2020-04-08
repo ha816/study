@@ -186,7 +186,7 @@
 >Replication은 마스터 DB를 슬레이브 DB에 복사를 하지만 비동기적으로 수행한다. 따라서 어떤 데이터베이스에는 변경되어 있지만, 다른 데이터베이스에서는 변경되지 않을 수도 있다. Replication은 Cluster에 비해 변경이 매우 빠르기 때문에 주로 실시간 동기화가 필요 없는 경우 사용한다.
 
 >**샤딩(Sharding)과 파티셔닝(Partitioning)의 차이는?**
->파티셔닝이란 데이터를 테이블로 분리해서 저장하지만 사용자 입장에서는 여전히 하나의 테이블 사용하는 솔루션이다. 파티셔닝에는 일반적으로 레코드 별로 파티션을 나누는 방식인 수평 파티셔닝과 컬럼 별로 파티션을 나누는 수직 파티셔닝이 있다. 
+>파티셔닝이란 기존 테이블을 분리해서 더 작은 테이블로 나누어 저장하지만 사용자 입장에서는 여전히 하나로 사용하는 기법이다. 파티셔닝에는 일반적으로 레코드 별로 파티션을 나누는 방식인 수평(horizon) 파티셔닝과 컬럼 별로 파티션을 나누는 수직(vertical) 파티셔닝이 있다. 
 >Sharding은 수평 파티셔닝을 일컫는 말이다. Shard를 만들려면 Sharding key를 정하고 키를 기준으로 샤딩을 나누어야 한다. MySQL의 파티션 테이블에서 인덱스는 전부 로컬 인덱스에 해당한다. 모든 인덱스는 파티션 단위로 생성되며, 파티션에 관계없이 테이블 전체 단위로 글로벌하게 하나의 통합된 인덱스는 지원하지 않는다
 
 
@@ -275,11 +275,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjQwNDc5NDMsMTI5NzcyNzk3MSwtNT
-E0OTM2MTMwLDkwMjg4Njg3MywtMjEzMDM4Mzc1NSwtMzY0MzEw
-ODksLTE2MTI1NzIzNTEsNjE0MDA2NjE5LDkyMTg4NjUxOCwxOT
-I0NTEyNjAsLTIxMDgzODczODEsNjU4NzY3OTYwLDMyMDI2NTU5
-NywtODYwMzc2NzEsNTI1NzU2Njk1LDE3NjE5Njg3NDMsMTMwNj
-U3NjY1MywtNzcwOTA5MzgwLC0yMDA5MjE2NDQ1LDk2NTcyMTgx
-NV19
+eyJoaXN0b3J5IjpbLTU3MDAxNzE1OCwxMjk3NzI3OTcxLC01MT
+Q5MzYxMzAsOTAyODg2ODczLC0yMTMwMzgzNzU1LC0zNjQzMTA4
+OSwtMTYxMjU3MjM1MSw2MTQwMDY2MTksOTIxODg2NTE4LDE5Mj
+Q1MTI2MCwtMjEwODM4NzM4MSw2NTg3Njc5NjAsMzIwMjY1NTk3
+LC04NjAzNzY3MSw1MjU3NTY2OTUsMTc2MTk2ODc0MywxMzA2NT
+c2NjUzLC03NzA5MDkzODAsLTIwMDkyMTY0NDUsOTY1NzIxODE1
+XX0=
 -->
