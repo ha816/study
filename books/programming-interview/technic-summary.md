@@ -156,12 +156,12 @@
 >**Filter와 (Handler)Intercept의 차이**
 >Filter와 Intercept 모두 전
 >Filter는 요청이 DispatcherServlet에 도달하기 전에 작용하거나 DispatcherServlet이 응답값을 반환하기 전에 작용한다. 즉 Filter는 스프링 컨텍스트 외부에 존재한다. 
->Handler 인터셉터는 DispatcherServlet이 핸들러를 호출하기 전과 호출 후에 작용하여 가공하는 필터 역할을 한다.  핸들러 인터셉트를 등록하지 않았다면 바로 컨트롤러에 진입하지만 하나 이상의 핸들러 인터셉터를 지정했을 때는 순서에 따라 인터셉터를 먼저 거친후에 컨트롤러를 호출한다. 핸들러 인터셉터는 HttpServletRequest, HttpServletResponse 진입시의 컨트롤러의 객체, 컨트롤러가 반환하는 ModelAndView, 예외 등을 제공받을 수 있기 때문에 서블릿 앞단의 Filter보다 더 정교한 작업이 가능하다.
+>Handler 인터셉터는 DispatcherServlet이 핸들러를 호출하기 전과 호출 후에 작용한다. 즉 스프링 컨텍스트 내부에 존재한다. 핸들러 인터셉트를 등록하지 않았다면 바로 컨트롤러에 진입하지만 하나 이상의 핸들러 인터셉터를 지정했을 때는 순서에 따라 인터셉터를 먼저 거친후에 컨트롤러를 호출한다.
 
 # Database
 
 >**DB Indexing 방식은?**
->인덱싱 없이 원하는 값을 찾을땐 모든 데이터를 검색해야하기 때문에 속도가 느리다. 따라서 속도를 높이기 위해 인덱싱을 사용하지만 대신에 저장, 수정 기능의 희생이 따른다.
+>검색 속도를 높이기 위해 인덱싱을 사용하지만 대신에 저장, 수정 기능의 희생이 따른다.
 >인덱싱 기법에는 B-Tree 인덱싱과 Hash 인덱싱이 있다. Hash 인덱싱은 해시 값으로 변경해서 저장하기 때문에 값의 일부만 검색할때는 사용할 수 없다. 하지만 검색 속도는 매우 빠르다. 
 >B-Tree(Balanced-Tree)는 가장 범용적으로 사용되는 알고리즘이다. B-Tree는 Root, Branch, Leaf 노드로 구성된다. Leaf 노드는 실제 저장된 레코드를 가리킨다. 
 
@@ -276,11 +276,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY3Nzk5NDEzLC0zNjQzMTA4OSwtMTYxMj
-U3MjM1MSw2MTQwMDY2MTksOTIxODg2NTE4LDE5MjQ1MTI2MCwt
-MjEwODM4NzM4MSw2NTg3Njc5NjAsMzIwMjY1NTk3LC04NjAzNz
-Y3MSw1MjU3NTY2OTUsMTc2MTk2ODc0MywxMzA2NTc2NjUzLC03
-NzA5MDkzODAsLTIwMDkyMTY0NDUsOTY1NzIxODE1LC0yNzk0NT
-IyNzMsMjA1NDgzODI5MywxMjM2NTA1Njc4LDEwNTMxOTUwMTFd
-fQ==
+eyJoaXN0b3J5IjpbLTE4NjgzNTU3NTUsLTM2NDMxMDg5LC0xNj
+EyNTcyMzUxLDYxNDAwNjYxOSw5MjE4ODY1MTgsMTkyNDUxMjYw
+LC0yMTA4Mzg3MzgxLDY1ODc2Nzk2MCwzMjAyNjU1OTcsLTg2MD
+M3NjcxLDUyNTc1NjY5NSwxNzYxOTY4NzQzLDEzMDY1NzY2NTMs
+LTc3MDkwOTM4MCwtMjAwOTIxNjQ0NSw5NjU3MjE4MTUsLTI3OT
+Q1MjI3MywyMDU0ODM4MjkzLDEyMzY1MDU2NzgsMTA1MzE5NTAx
+MV19
 -->
