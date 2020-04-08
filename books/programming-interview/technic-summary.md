@@ -194,7 +194,7 @@
 
 >**TCP(Transmission Control Protocol)와 UDP(User Datagram Protocol)의 차이는?**
 >TCP는 발신지와 수신지를 연결하여 패킷을 전송하기 위한 논리적 경로를 만든다. 3-way handshaking은 목적지와 수신지를간 정확한 전송을 보장을 위해 세션을 수립하는 과정이다.  TCP는 패킷의 전송 순서를 지키고, 패킷의 손실이 없기 때문에 신뢰성있는 데이터 전송이 필요할때 사용한다.
->UDP는 발신지와 수신지간의 논리적인 경로가 없다. 각 데이터 그램은 서로 독립적으로 다른 경로로 전송된다. UDP는 전송순서를 지키지 않고, 손실이 있을수 있기 때문에 신뢰성있는 데이터의 전송을 보장하지는 못한다. 대신 TCP보다 속도가 빠르며 네트워크 부하가 적다는 장점이 있다.은?
+>UDP는 발신지와 수신지간의 논리적인 경로가 없다. 각 데이터 그램은 서로 독립적으로 다른 경로로 전송된다. UDP는 전송순서를 지키지 않고, 손실이 있을수 있기 때문에 신뢰성있는 데이터의 전송을 보장하지는 못한다. 대신 TCP보다 속도가 빠르며 네트워크 부하가 적다는 장점이 있다.
 
 >**HTTP? 그리고 HTTP 1.1과 HTTP 2.0간의 차이는?**
 >HTTP는 HyperText Transfer Protocol의 약자로 WWW에서 주로 사용한다. 
@@ -274,11 +274,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTYxNTAyNjEsLTcwMzMyMDc3NSwtNT
-cwMDE3MTU4LDEyOTc3Mjc5NzEsLTUxNDkzNjEzMCw5MDI4ODY4
-NzMsLTIxMzAzODM3NTUsLTM2NDMxMDg5LC0xNjEyNTcyMzUxLD
-YxNDAwNjYxOSw5MjE4ODY1MTgsMTkyNDUxMjYwLC0yMTA4Mzg3
-MzgxLDY1ODc2Nzk2MCwzMjAyNjU1OTcsLTg2MDM3NjcxLDUyNT
-c1NjY5NSwxNzYxOTY4NzQzLDEzMDY1NzY2NTMsLTc3MDkwOTM4
-MF19
+eyJoaXN0b3J5IjpbLTgzNzk1MDI2MCwtNzAzMzIwNzc1LC01Nz
+AwMTcxNTgsMTI5NzcyNzk3MSwtNTE0OTM2MTMwLDkwMjg4Njg3
+MywtMjEzMDM4Mzc1NSwtMzY0MzEwODksLTE2MTI1NzIzNTEsNj
+E0MDA2NjE5LDkyMTg4NjUxOCwxOTI0NTEyNjAsLTIxMDgzODcz
+ODEsNjU4NzY3OTYwLDMyMDI2NTU5NywtODYwMzc2NzEsNTI1Nz
+U2Njk1LDE3NjE5Njg3NDMsMTMwNjU3NjY1MywtNzcwOTA5Mzgw
+XX0=
 -->
