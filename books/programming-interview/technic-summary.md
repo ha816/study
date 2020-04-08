@@ -154,7 +154,7 @@
 >HandlerAdapter는 핸들러 메서드를 호출하는 역할을 한다. RequestMappingHandlerAdapter 구현체가 실제 핸들러 메서드를 호출한다. 이 때 매개변수를 전달하고 메서드 처리결과를 반환하는 것과 같은 중요한 역할을 담당한다. 매개변수를 전달할때는 요청 받은 데이터를 자바 객체로 변환하고, 입력값이 올바른지 검사(Bean Validation)하는 것 까지 한꺼번에 이뤄진다. 
 
 >**Filter와 (Handler)Intercept의 차이**
->Filter는 요청이 DispatcherServlet에 도달하기 전에 
+>Filter는 요청이 DispatcherServlet에 도달하기 전에 작용하거나 DispatcherServlet 응답값을 반환하기 전에 작용한다. 
 >Handler 인터셉터는 DispatcherServlet이 핸들러를 호출하기 전과 호출 후에 요청과 응답을 가공하는 일종의 필터 역할을 한다.  핸들러 인터셉트를 등록하지 않았다면 바로 컨트롤러에 진입하지만 하나 이상의 핸들러 인터셉터를 지정했을 때는 순서에 따라 인터셉터를 먼저 거친후에 컨트롤러를 호출한다. 핸들러 인터셉터는 HttpServletRequest, HttpServletResponse 진입시의 컨트롤러의 객체, 컨트롤러가 반환하는 ModelAndView, 예외 등을 제공받을 수 있기 때문에 서블릿 앞단의 Filter보다 더 정교한 작업이 가능하다.
 
 # Database
@@ -275,11 +275,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNzE5NTA0NCwtMzY0MzEwODksLTE2MT
-I1NzIzNTEsNjE0MDA2NjE5LDkyMTg4NjUxOCwxOTI0NTEyNjAs
-LTIxMDgzODczODEsNjU4NzY3OTYwLDMyMDI2NTU5NywtODYwMz
-c2NzEsNTI1NzU2Njk1LDE3NjE5Njg3NDMsMTMwNjU3NjY1Mywt
-NzcwOTA5MzgwLC0yMDA5MjE2NDQ1LDk2NTcyMTgxNSwtMjc5ND
-UyMjczLDIwNTQ4MzgyOTMsMTIzNjUwNTY3OCwxMDUzMTk1MDEx
-XX0=
+eyJoaXN0b3J5IjpbLTQwNzg1Njk4LC0zNjQzMTA4OSwtMTYxMj
+U3MjM1MSw2MTQwMDY2MTksOTIxODg2NTE4LDE5MjQ1MTI2MCwt
+MjEwODM4NzM4MSw2NTg3Njc5NjAsMzIwMjY1NTk3LC04NjAzNz
+Y3MSw1MjU3NTY2OTUsMTc2MTk2ODc0MywxMzA2NTc2NjUzLC03
+NzA5MDkzODAsLTIwMDkyMTY0NDUsOTY1NzIxODE1LC0yNzk0NT
+IyNzMsMjA1NDgzODI5MywxMjM2NTA1Njc4LDEwNTMxOTUwMTFd
+fQ==
 -->
