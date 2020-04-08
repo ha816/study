@@ -169,10 +169,10 @@
 >원자성: 트랜잭션 내용은 모두 적용되거나 아니면 하나도 적용되지 않아야 한다. 일부만 적용될수 없다. 
 >일관성: 트랜잭션 적용 후에 데이터베이스에 모든 데이터는 일관 되어야 한다. 
 >독립성: 다수의 트랜잭션이 동시에 동작할때, 트랜잭션이 순차적으로 동작해야 한다.
->견고성 : 트랜잭션이 커밋되면 그 내용은 영구히 남아야 한다. 심지어 시스템 레벨의 재해라도 남아야 한다. 
+>견고성: 트랜잭션이 커밋되면 그 내용은 영구히 남아야 한다. 심지어 시스템 레벨의 재해라도 남아야 한다. 
 
 > **트랜잭션 격리수준(isolation level)이란?**
-> READ_UNCOMMITTED, READ_COMMITED, REPEATABLE_READ, SERIALIZABLE 강도 세기 순서대로 총 4가지가 있다. 
+> READ_UNCOMMITTED, READ_COMMITED, REPEATABLE_READ, SERIALIZABLE 격리 수준 세기 순서대로 총 네 가지가 있다. 
 > READ_UNCOMMITTED : 커밋되지 않는 읽기가 가능하다. 즉 커밋되지 않은 변경 데이터를 다른 트랜잭션에서 읽을 수 있다.
 > READ_COMMITED : 커밋 후 읽기, 커밋된 변경 데이터만 다른 트랜잭션에서 읽을 수 있다. 
 > REPEATABLE_READ : 반복적인 읽기, Repeatable Read를 허용한다. 즉 Unrepeatable Read 현상을 방지한다. 
@@ -275,11 +275,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTk5MTEwNDMsLTIxMzAzODM3NTUsLT
-M2NDMxMDg5LC0xNjEyNTcyMzUxLDYxNDAwNjYxOSw5MjE4ODY1
-MTgsMTkyNDUxMjYwLC0yMTA4Mzg3MzgxLDY1ODc2Nzk2MCwzMj
-AyNjU1OTcsLTg2MDM3NjcxLDUyNTc1NjY5NSwxNzYxOTY4NzQz
-LDEzMDY1NzY2NTMsLTc3MDkwOTM4MCwtMjAwOTIxNjQ0NSw5Nj
-U3MjE4MTUsLTI3OTQ1MjI3MywyMDU0ODM4MjkzLDEyMzY1MDU2
-NzhdfQ==
+eyJoaXN0b3J5IjpbOTAyODg2ODczLC0yMTMwMzgzNzU1LC0zNj
+QzMTA4OSwtMTYxMjU3MjM1MSw2MTQwMDY2MTksOTIxODg2NTE4
+LDE5MjQ1MTI2MCwtMjEwODM4NzM4MSw2NTg3Njc5NjAsMzIwMj
+Y1NTk3LC04NjAzNzY3MSw1MjU3NTY2OTUsMTc2MTk2ODc0Mywx
+MzA2NTc2NjUzLC03NzA5MDkzODAsLTIwMDkyMTY0NDUsOTY1Nz
+IxODE1LC0yNzk0NTIyNzMsMjA1NDgzODI5MywxMjM2NTA1Njc4
+XX0=
 -->
