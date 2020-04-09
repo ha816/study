@@ -256,7 +256,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >클라이언트의 요청이 들어오면 그 요청에 맞는 응답을 주는 서버측 컴포넌트다. 프론트 컨트롤러 패턴의 프론트 컨트롤러에 해당하고 요청-응답 과정에서 제어 흐름의 사령탑이다. 
 
 >**50TPS를 처리할 수 있는데 300TPS가 들어오면?**
->
+> 일부 요청을 거부를 하고 어느 정도 넘기는 분량은 apa
 
 # ETC
 
@@ -293,11 +293,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwODg5NDE5NCwtMTAxMTI4ODM3OSwtMj
-A1Nzg0OTUzMiw5MTY1NzI3MzksLTI1OTQ1NDIxMiwtMTQxNzc2
-NjE2NSwtMjA4NjA0NzAwOCwxNDEwNDcxMTQzLC0xMjQwNDQ1Nz
-Q3LC0zMTI3NDM3MzEsLTUzMDAwMTc1NCw3MjIwMzE2MTYsLTgz
-Nzk1MDI2MCwtNzAzMzIwNzc1LC01NzAwMTcxNTgsMTI5NzcyNz
-k3MSwtNTE0OTM2MTMwLDkwMjg4Njg3MywtMjEzMDM4Mzc1NSwt
-MzY0MzEwODldfQ==
+eyJoaXN0b3J5IjpbLTE5Nzg5ODc1MTUsLTQwODg5NDE5NCwtMT
+AxMTI4ODM3OSwtMjA1Nzg0OTUzMiw5MTY1NzI3MzksLTI1OTQ1
+NDIxMiwtMTQxNzc2NjE2NSwtMjA4NjA0NzAwOCwxNDEwNDcxMT
+QzLC0xMjQwNDQ1NzQ3LC0zMTI3NDM3MzEsLTUzMDAwMTc1NCw3
+MjIwMzE2MTYsLTgzNzk1MDI2MCwtNzAzMzIwNzc1LC01NzAwMT
+cxNTgsMTI5NzcyNzk3MSwtNTE0OTM2MTMwLDkwMjg4Njg3Mywt
+MjEzMDM4Mzc1NV19
 -->
