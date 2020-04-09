@@ -255,6 +255,9 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >**Servelet?** 
 >클라이언트의 요청이 들어오면 그 요청에 맞는 응답을 주는 서버측 컴포넌트다. 프론트 컨트롤러 패턴의 프론트 컨트롤러에 해당하고 요청-응답 과정에서 제어 흐름의 사령탑이다. 
 
+>**50TPS를 처리할 수 있는데 300TPS가 들어오면?**
+>
+
 # Log
 
 
@@ -291,11 +294,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzg2MjA4NSwtMjA4NjA0NzAwOCwxND
-EwNDcxMTQzLC0xMjQwNDQ1NzQ3LC0zMTI3NDM3MzEsLTUzMDAw
-MTc1NCw3MjIwMzE2MTYsLTgzNzk1MDI2MCwtNzAzMzIwNzc1LC
-01NzAwMTcxNTgsMTI5NzcyNzk3MSwtNTE0OTM2MTMwLDkwMjg4
-Njg3MywtMjEzMDM4Mzc1NSwtMzY0MzEwODksLTE2MTI1NzIzNT
-EsNjE0MDA2NjE5LDkyMTg4NjUxOCwxOTI0NTEyNjAsLTIxMDgz
-ODczODFdfQ==
+eyJoaXN0b3J5IjpbMzAwMDI2NzYyLC0yMDg2MDQ3MDA4LDE0MT
+A0NzExNDMsLTEyNDA0NDU3NDcsLTMxMjc0MzczMSwtNTMwMDAx
+NzU0LDcyMjAzMTYxNiwtODM3OTUwMjYwLC03MDMzMjA3NzUsLT
+U3MDAxNzE1OCwxMjk3NzI3OTcxLC01MTQ5MzYxMzAsOTAyODg2
+ODczLC0yMTMwMzgzNzU1LC0zNjQzMTA4OSwtMTYxMjU3MjM1MS
+w2MTQwMDY2MTksOTIxODg2NTE4LDE5MjQ1MTI2MCwtMjEwODM4
+NzM4MV19
 -->
