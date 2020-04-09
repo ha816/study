@@ -1,5 +1,4 @@
 # 인성면접
->
 
 > 무엇을 하고 싶습니까?
 
@@ -38,5 +37,5 @@ TMON이 굉장히 인금이 저렴한 점과 페이의 기업 규모를 생각�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MDY2MDc1XX0=
+eyJoaXN0b3J5IjpbLTE4NDc5NzQ3MDUsLTk3MDY2MDc1XX0=
 -->
