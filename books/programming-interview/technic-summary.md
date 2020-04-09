@@ -195,10 +195,9 @@
 >파티셔닝이란 기존 테이블을 분리해서 더 작은 테이블로 나누어 저장하지만 사용자 입장에서는 여전히 하나로 사용하는 기법이다. 파티셔닝에는 일반적으로 레코드 별로 파티션을 나누는 방식인 수평(horizon) 파티셔닝과 컬럼 별로 파티션을 나누는 수직(vertical) 파티셔닝이 있다. 
 >Sharding은 수평 파티셔닝을 일컫는 말이다. Sharding을 하려면 Sharding key를 정하고 이를 기준으로 테이블을 나누어야 한다. 이렇게 나누어진 파티션 테이블을 Shard라 하고, 각 shard의 인덱스는 전부 로컬 인덱스에 해당한다. 모든 인덱스는 파티션 단위로 생성되며, 파티션에 관계없이 테이블 전체 단위로 글로벌하게 하나의 통합된 인덱스는 지원하지 않는다
 
->**innerJoin과 outerJoin의 차이는?**
->innerJoin은 
->[https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join](https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join)
-
+>**InnerJoin과 OuterJoin의 차이는?**
+>InnerJoin은 집합 A와 B의 교집합을 결과로 보인다. outerJoin은 집합 A와 B의 합집합을 결과로 보인다.
+    
 # Network & Protocol
 
 >**TCP(Transmission Control Protocol)와 UDP(User Datagram Protocol)의 차이는?**
@@ -297,11 +296,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MzY4MzU1MywtMjA1Nzg0OTUzMiw5MT
-Y1NzI3MzksLTI1OTQ1NDIxMiwtMTQxNzc2NjE2NSwtMjA4NjA0
-NzAwOCwxNDEwNDcxMTQzLC0xMjQwNDQ1NzQ3LC0zMTI3NDM3Mz
-EsLTUzMDAwMTc1NCw3MjIwMzE2MTYsLTgzNzk1MDI2MCwtNzAz
-MzIwNzc1LC01NzAwMTcxNTgsMTI5NzcyNzk3MSwtNTE0OTM2MT
-MwLDkwMjg4Njg3MywtMjEzMDM4Mzc1NSwtMzY0MzEwODksLTE2
-MTI1NzIzNTFdfQ==
+eyJoaXN0b3J5IjpbOTQ3Njc2MzkwLC0yMDU3ODQ5NTMyLDkxNj
+U3MjczOSwtMjU5NDU0MjEyLC0xNDE3NzY2MTY1LC0yMDg2MDQ3
+MDA4LDE0MTA0NzExNDMsLTEyNDA0NDU3NDcsLTMxMjc0MzczMS
+wtNTMwMDAxNzU0LDcyMjAzMTYxNiwtODM3OTUwMjYwLC03MDMz
+MjA3NzUsLTU3MDAxNzE1OCwxMjk3NzI3OTcxLC01MTQ5MzYxMz
+AsOTAyODg2ODczLC0yMTMwMzgzNzU1LC0zNjQzMTA4OSwtMTYx
+MjU3MjM1MV19
 -->
