@@ -133,6 +133,8 @@
 > **스프링이 유명한 이유는?**
 >스프링은 엔터프라이즈 급 애플리케이션을 만드는데 유용한 자바 기반 오픈 소스 프레임워크이다. 자바 엔터프라이즈급 소프트웨어 표준으로  Java EE(Enterprise Edition)가 있다. 그리고 Java EE 표준을 구현한 아키텍처가 바로 EJB(Enterprise JavaBeans)이다. EJB는 보안, 트랜잭션등 EJB 컨테이너의 다양한 서비스를 제공 받기 위해서는 EJB 스펙을 지켜야 했는데, 그 결과 실제 비즈니스 로직보다 EJB 컨테이너를 사용하기 위한 상투적인 코드들이 많아지는 문제가 발생했다. 비즈니스 로직이 특정 기술에 종속되어 있다는 것을 기술 침투(invasive)라고 하는데, 이것이 EJB의 가장 큰 문제점이다. 그래서 스프링은 비 침투적인(non-invasive) 방식을 도입하여 많은 사랑을 받고 있다. 
 
+>**Filter와 (Handler)Intercept의 차이**
+
 >**DI 컨테이너?**
 > 스프링에서 DI 컨테이너로는 빈 팩토리와 애플리케이션 컨텍스트가 있다. 빈 팩토리는 단순히 빈을 생성하고 생명 주기를 관리하는 역할을 한다. 애플리케이션 컨텍스트는 빈 팩토리의 기능을 가질 뿐만 아니라 properties 파일을 읽기와 같은 추가 기능을 제공한다. 스프링에서 DI 컨테이너라 하면 애플리케이션 컨텍스트를 말한다. 
 
@@ -207,6 +209,9 @@
 >**REST란?**
 >REpresentional State Transfer의 약자로 시스템간 API를 만드는데 활용하는 아키텍처 스타일의 일종이다. REST에서 가장 중요한 것은 리소스로, 리소스는 클라이언트에 공개할 가공된 정보를 말한다. 이런 리소스에 CRUD 조작을 위한 수단이 바로 REST API가 된다. 
 
+>**Session과 Cookie의 차이는**
+>
+
 >**URI(Uniform Resource Identifier)과 URL(Uniform Resource Locator)의 차이는?**
 >URI는 클라이언트에 공개하는 리소스의 고유하게 식별자다.  따라서 URI를 안다면 어디서든 같은 리소스로 접근이 가능하다. 한 URI는 리소스 하나 뿐만 아니라 다수의 리소스로도 정의가 가능하다. 예를 들어 URI가 `user/1234`라면 ID가 1234인 사용자의 리소스 정보. `/users`라면 다수는 모든 사용자의 리소스 정보를 말한다.
 >URL은 클라이언트에 공개하는 리소스의 대략적인 위치를 알려준다. 최종 목적지는 URI이고 중관 과정에 URL를 거쳐가기 때문에 URI는 URL을 포함하는 큰 개념이다. 예를 들어 https://www.google.co.kr/search?id=123가 있다고 하자. 여기서 URL은 https://www.google.co.kr/search 까지이고 실제 리소스 식별 주소 URI는 https://www.google.co.kr/search?id=123 
@@ -273,11 +278,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMDQ3MTE0MywtMTI0MDQ0NTc0NywtMz
-EyNzQzNzMxLC01MzAwMDE3NTQsNzIyMDMxNjE2LC04Mzc5NTAy
-NjAsLTcwMzMyMDc3NSwtNTcwMDE3MTU4LDEyOTc3Mjc5NzEsLT
-UxNDkzNjEzMCw5MDI4ODY4NzMsLTIxMzAzODM3NTUsLTM2NDMx
-MDg5LC0xNjEyNTcyMzUxLDYxNDAwNjYxOSw5MjE4ODY1MTgsMT
-kyNDUxMjYwLC0yMTA4Mzg3MzgxLDY1ODc2Nzk2MCwzMjAyNjU1
-OTddfQ==
+eyJoaXN0b3J5IjpbLTg4OTczMDE3MiwxNDEwNDcxMTQzLC0xMj
+QwNDQ1NzQ3LC0zMTI3NDM3MzEsLTUzMDAwMTc1NCw3MjIwMzE2
+MTYsLTgzNzk1MDI2MCwtNzAzMzIwNzc1LC01NzAwMTcxNTgsMT
+I5NzcyNzk3MSwtNTE0OTM2MTMwLDkwMjg4Njg3MywtMjEzMDM4
+Mzc1NSwtMzY0MzEwODksLTE2MTI1NzIzNTEsNjE0MDA2NjE5LD
+kyMTg4NjUxOCwxOTI0NTEyNjAsLTIxMDgzODczODEsNjU4NzY3
+OTYwXX0=
 -->
