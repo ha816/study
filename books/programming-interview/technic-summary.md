@@ -138,6 +138,7 @@
 
 >**루트 애플리케이션 컨텍스트와 서블릿 애플리케이션 컨텍스트의 차이**
 >
+>
 
 >**Spring 빈(객체) 스코프는?**
 >애플리케이션 컨텍스트는 모든 빈의 생존기간을 관리한다. 
@@ -287,7 +288,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMDk2OTYyMiwtMjA4NjA0NzAwOCwxND
+eyJoaXN0b3J5IjpbMTg4MDY2MjM0OCwtMjA4NjA0NzAwOCwxND
 EwNDcxMTQzLC0xMjQwNDQ1NzQ3LC0zMTI3NDM3MzEsLTUzMDAw
 MTc1NCw3MjIwMzE2MTYsLTgzNzk1MDI2MCwtNzAzMzIwNzc1LC
 01NzAwMTcxNTgsMTI5NzcyNzk3MSwtNTE0OTM2MTMwLDkwMjg4
