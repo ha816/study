@@ -137,7 +137,7 @@
 > 스프링에서 DI 컨테이너로는 빈 팩토리와 애플리케이션 컨텍스트가 있다. 빈 팩토리는 단순히 빈을 생성하고 생명 주기를 관리하는 역할을 한다. 애플리케이션 컨텍스트는 빈 팩토리의 기능을 가질 뿐만 아니라 properties 파일을 읽기와 같은 추가 기능을 제공한다. 스프링에서 DI 컨테이너라 하면 애플리케이션 컨텍스트를 말한다. 
 
 >**루트 애플리케이션 컨텍스트와 서블릿 애플리케이션 컨텍스트의 차이**
-> 스프링에서 DI 컨테이너로는 빈 팩토리와 애플리케이션 컨텍스트가 있다. 빈 팩토리는 단순히 빈을 생성하고 생명 주기를 관리하는 역할을 한다. 애플리케이션 컨텍스트는 빈 팩토리의 기능을 가질 뿐만 아니라 properties 파일을 읽기와 같은 추가 기능을 제공한다. 스프링에서 DI 컨테이너라 하면 애플리케이션 컨텍스트를 말한다. 
+>
 
 >**Spring 빈(객체) 스코프는?**
 >애플리케이션 컨텍스트는 모든 빈의 생존기간을 관리한다. 
@@ -253,6 +253,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >**Servelet?** 
 >클라이언트의 요청이 들어오면 그 요청에 맞는 응답을 주는 서버측 컴포넌트다. 프론트 컨트롤러 패턴의 프론트 컨트롤러에 해당하고 요청-응답 과정에서 제어 흐름의 사령탑이다. 
 
+# Log
 
 
 # ETC
@@ -286,11 +287,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjY5ODYxNzIsLTIwODYwNDcwMDgsMT
-QxMDQ3MTE0MywtMTI0MDQ0NTc0NywtMzEyNzQzNzMxLC01MzAw
-MDE3NTQsNzIyMDMxNjE2LC04Mzc5NTAyNjAsLTcwMzMyMDc3NS
-wtNTcwMDE3MTU4LDEyOTc3Mjc5NzEsLTUxNDkzNjEzMCw5MDI4
-ODY4NzMsLTIxMzAzODM3NTUsLTM2NDMxMDg5LC0xNjEyNTcyMz
-UxLDYxNDAwNjYxOSw5MjE4ODY1MTgsMTkyNDUxMjYwLC0yMTA4
-Mzg3MzgxXX0=
+eyJoaXN0b3J5IjpbMTEyMDk2OTYyMiwtMjA4NjA0NzAwOCwxND
+EwNDcxMTQzLC0xMjQwNDQ1NzQ3LC0zMTI3NDM3MzEsLTUzMDAw
+MTc1NCw3MjIwMzE2MTYsLTgzNzk1MDI2MCwtNzAzMzIwNzc1LC
+01NzAwMTcxNTgsMTI5NzcyNzk3MSwtNTE0OTM2MTMwLDkwMjg4
+Njg3MywtMjEzMDM4Mzc1NSwtMzY0MzEwODksLTE2MTI1NzIzNT
+EsNjE0MDA2NjE5LDkyMTg4NjUxOCwxOTI0NTEyNjAsLTIxMDgz
+ODczODFdfQ==
 -->
