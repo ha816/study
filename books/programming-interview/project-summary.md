@@ -31,7 +31,8 @@
 
 ## 평균 배송소요일 계산 및 적재
 
-티몬의 상품 페이지에 평균적으로 평일만에 상품이 도착했는지를 보여주는 정보가 바로 평균 배송소요일이다. 상품 별로 최근 1주일치  배송건이 대상으로 계산대상 상품 수는 약 100,000 건, 상품 별로 평균 하루 10건이 존재했다.
+티몬의 상품 페이지에 평균적으로 평일만에 상품이 도착했는지를 보여주는 정보가 바로 평균 배송소요일이다. 평균치를 계산하기 위해 Spring Batch와 Couchbase를 사용했다.
+상품 별로 최근 1주일치  배송건이 대상으로 계산대상 상품 수는 약 100,000 건, 상품 별로 평균 하루 10건이 존재했다.
 
 ### 주요 역할
 
@@ -50,7 +51,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjI3NTE3NCwtNDA5NTE5NDE1LDIwMT
+eyJoaXN0b3J5IjpbLTc4NDM0ODYxNiwtNDA5NTE5NDE1LDIwMT
 Q1Mjg5MDgsLTQwOTUxOTQxNSwtMTIxOTQ0NTUxNyw2Mjk5ODk2
 OTQsLTE0MTc4NzUzMjksLTEwNTI0NDU1ODQsMTU5ODkwNTM0MS
 wtMTMyOTc2MjIzMywtODcyMDYyMDY4LDYyNjIyMTgwMCwxNjM1
