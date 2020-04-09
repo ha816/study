@@ -11,7 +11,8 @@ MySQL 실행 계획 성능에 큰 영향을 미치는 작업 단위에 대해 �
 
 * 테이블의 레코드가 원채 적어서 풀 테이블 스캔이 더 빠른 경우
 * WHERE 절이나 ON 절에서 인덱스를 이용할 수 있는 적절한 조건이 없는 경우
-* 
+* 인덱스 래이진 스캔을 사용할 수 있는 쿼리라 하더라도 옵티마이저가 판단한 조건 일치 레코드 건수가 너무 많은 경우(통계 정보기준)
+* max_seeks_for_key 변수를 특정 값(N)으로 설정하면 인덱스의 기수성(Cardinality)나 선택도(selectivity)를 무시하고, 최대 N건만 읽으면 된다고 판단한다. 이 값이 작으면 
 * 
 
 # ORDER BY 처리(Using filesort)
@@ -23,7 +24,7 @@ MySQL 실행 계획 성능에 큰 영향을 미치는 작업 단위에 대해 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDM4MTgwMSwyODY2MDc5NTEsLTE4MD
-g5NDExNjksMTg0MTk1NzYxMSwxMTA5NDU5MjQwLC02MTQzNzU5
-ODgsLTI4MjQxMDM1XX0=
+eyJoaXN0b3J5IjpbLTE3NTg0MTY4NjYsMjg2NjA3OTUxLC0xOD
+A4OTQxMTY5LDE4NDE5NTc2MTEsMTEwOTQ1OTI0MCwtNjE0Mzc1
+OTg4LC0yODI0MTAzNV19
 -->
