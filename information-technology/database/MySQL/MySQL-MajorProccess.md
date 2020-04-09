@@ -12,6 +12,7 @@ MySQL 실행 계획 성능에 큰 영향을 미치는 작업 단위에 대해 �
 * 테이블의 레코드가 원채 적어서 풀 테이블 스캔이 더 빠른 경우
 * WHERE 절이나 ON 절에서 인덱스를 이용할 수 있는 적절한 조건이 없는 경우
 * 
+* 
 
 # ORDER BY 처리(Using filesort)
 
@@ -22,7 +23,7 @@ MySQL 실행 계획 성능에 큰 영향을 미치는 작업 단위에 대해 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg2NjA3OTUxLC0xODA4OTQxMTY5LDE4ND
-E5NTc2MTEsMTEwOTQ1OTI0MCwtNjE0Mzc1OTg4LC0yODI0MTAz
-NV19
+eyJoaXN0b3J5IjpbLTE4NDM4MTgwMSwyODY2MDc5NTEsLTE4MD
+g5NDExNjksMTg0MTk1NzYxMSwxMTA5NDU5MjQwLC02MTQzNzU5
+ODgsLTI4MjQxMDM1XX0=
 -->
