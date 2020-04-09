@@ -216,7 +216,7 @@
 >REpresentional State Transfer의 약자로 시스템간 API를 만드는데 활용하는 아키텍처 스타일의 일종이다. REST에서 가장 중요한 것은 리소스로, 리소스는 클라이언트에 공개할 가공된 정보를 말한다. 이런 리소스에 CRUD 조작을 위한 수단이 바로 REST API가 된다. 
 
 >**Session과 Cookie의 차이는**
->Session은 서버 측에서 zkf 요청에 대한 Session을 관리한다. 그에 반해 Cookie는 클라이언트에서 관리한다. 
+>Session은 서버 측에서 클라이언 정보를 유지 관리한다. Cookie는 클라이언트(브라우저)에서 관리한다. 
 
 >**URI(Uniform Resource Identifier)과 URL(Uniform Resource Locator)의 차이는?**
 >URI는 클라이언트에 공개하는 리소스의 고유하게 식별자다.  따라서 URI를 안다면 어디서든 같은 리소스로 접근이 가능하다. 한 URI는 리소스 하나 뿐만 아니라 다수의 리소스로도 정의가 가능하다. 예를 들어 URI가 `user/1234`라면 ID가 1234인 사용자의 리소스 정보. `/users`라면 다수는 모든 사용자의 리소스 정보를 말한다.
@@ -296,11 +296,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE0NzYxOTY3LC0yMDU3ODQ5NTMyLDkxNj
-U3MjczOSwtMjU5NDU0MjEyLC0xNDE3NzY2MTY1LC0yMDg2MDQ3
-MDA4LDE0MTA0NzExNDMsLTEyNDA0NDU3NDcsLTMxMjc0MzczMS
-wtNTMwMDAxNzU0LDcyMjAzMTYxNiwtODM3OTUwMjYwLC03MDMz
-MjA3NzUsLTU3MDAxNzE1OCwxMjk3NzI3OTcxLC01MTQ5MzYxMz
-AsOTAyODg2ODczLC0yMTMwMzgzNzU1LC0zNjQzMTA4OSwtMTYx
-MjU3MjM1MV19
+eyJoaXN0b3J5IjpbLTEwMTEyODgzNzksLTIwNTc4NDk1MzIsOT
+E2NTcyNzM5LC0yNTk0NTQyMTIsLTE0MTc3NjYxNjUsLTIwODYw
+NDcwMDgsMTQxMDQ3MTE0MywtMTI0MDQ0NTc0NywtMzEyNzQzNz
+MxLC01MzAwMDE3NTQsNzIyMDMxNjE2LC04Mzc5NTAyNjAsLTcw
+MzMyMDc3NSwtNTcwMDE3MTU4LDEyOTc3Mjc5NzEsLTUxNDkzNj
+EzMCw5MDI4ODY4NzMsLTIxMzAzODM3NTUsLTM2NDMxMDg5LC0x
+NjEyNTcyMzUxXX0=
 -->
