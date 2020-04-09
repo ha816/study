@@ -18,7 +18,10 @@ MySQL 실행 계획 성능에 큰 영향을 미치는 작업 단위에 대해 �
 
 사실 MyISAM 스토리진 엔진에서는 맞는 말이고 InnoDB에서는 틀린 말이다. InnoDB 스토리지 엔진은 특정 테이블의 연속된 데이터 페이지가 읽히면 백그라운드 스레드에 의해 리드 어해드(Read ahead) 작업이 자동시작된다. 
 
-리드 어해드(Read ahead)란 어떤 영역의 데이터가 앞으로 필요해지리라 예측해서 요청이 오기전에 미리 디스크에서 읽어 InnoDB 풀에 가져다 두느
+리드 어해드(Read ahead)
+: 어떤 영역의 데이터가 앞으로 필요해지리라 예측해서 요청이 오기전에 미리 디스크에서 읽어 InnoDB 풀에 가져다 두는 것을 말한다.
+
+
 
 # ORDER BY 처리(Using filesort)
 
@@ -29,7 +32,7 @@ MySQL 실행 계획 성능에 큰 영향을 미치는 작업 단위에 대해 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTE4ODcxMCwtMjMxNzIyMDc0LDI4Nj
+eyJoaXN0b3J5IjpbMTUyNzkwODA0MywtMjMxNzIyMDc0LDI4Nj
 YwNzk1MSwtMTgwODk0MTE2OSwxODQxOTU3NjExLDExMDk0NTky
 NDAsLTYxNDM3NTk4OCwtMjgyNDEwMzVdfQ==
 -->
