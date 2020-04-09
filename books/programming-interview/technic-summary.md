@@ -258,28 +258,27 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >**50TPS를 처리할 수 있는데 300TPS가 들어오면?**
 >
 
-# Log
-
-
 # ETC
-
-
 
 >**Scaling out과 Scaling up의 차이?**
 >Scaling up은 한 컴포넌트를 크고 빠르게 만들어 부하를 줄인다.
 >Scaling out은 병렬적으로 컴포넌트를 추가해서 부하를 줄인다. 
 
+> **Docker는?**
+> 도커는 컨테이너 기반의 오픈소스 가상화 플랫폼이다. 가벼운 컨테이너를 만들고, 탑재하고 실행할 수 있는 플랫폼이다. 컨테이너는 도커 이미지(프로그램)의 구현체로 메모리나 CPU와 같은 자원을 할당받는다. 기존의 가상화 방식은 주로  OS를 가상화 했는데 OS이기 때문에 성능이 느렸고 도커는 프로세스를 가상화하기 때문에 빠르게 동작한다. 
+
+> **Elastic Search는?**
+> 
+
 >**동기 처리와 비동기 처리의 차이** 
 >동기는 순차적으로 필요한 처리를 수행한다. 순차적이기 때문에 흐름이 이해하기 쉽지만, 속도 측면에서 비효율적일 수 있다.
 >비동기 처리는 작업 흐름이 순차적이지 않기 때문에 흐름이 이해하기 어렵지만, 속도 측면에서 효율적일 수 있다. 
+
 
 # Architecture
 
 >**MSA(Micro Service Architecture)?**
 >마이크로 서비스는 독립적이고, 자기 완비적(self-contained)이며 느슨하게 결합된 비즈니스 기능을 모아 전체 시스템을 만드는 아키텍처 스타일이다. 
-
-> **Docker는?**
-> 도커는 컨테이너 기반의 오픈소스 가상화 플랫폼이다. 가벼운 컨테이너를 만들고, 탑재하고 실행할 수 있는 플랫폼이다. 컨테이너는 도커 이미지(프로그램)의 구현체로 메모리나 CPU와 같은 자원을 할당받는다. 기존의 가상화 방식은 주로  OS를 가상화 했는데 OS이기 때문에 성능이 느렸고 도커는 프로세스를 가상화하기 때문에 빠르게 동작한다. 
 
 # TOOL
 
@@ -294,11 +293,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAwMDI2NzYyLC0yMDg2MDQ3MDA4LDE0MT
-A0NzExNDMsLTEyNDA0NDU3NDcsLTMxMjc0MzczMSwtNTMwMDAx
-NzU0LDcyMjAzMTYxNiwtODM3OTUwMjYwLC03MDMzMjA3NzUsLT
-U3MDAxNzE1OCwxMjk3NzI3OTcxLC01MTQ5MzYxMzAsOTAyODg2
-ODczLC0yMTMwMzgzNzU1LC0zNjQzMTA4OSwtMTYxMjU3MjM1MS
-w2MTQwMDY2MTksOTIxODg2NTE4LDE5MjQ1MTI2MCwtMjEwODM4
-NzM4MV19
+eyJoaXN0b3J5IjpbLTE0MTc3NjYxNjUsLTIwODYwNDcwMDgsMT
+QxMDQ3MTE0MywtMTI0MDQ0NTc0NywtMzEyNzQzNzMxLC01MzAw
+MDE3NTQsNzIyMDMxNjE2LC04Mzc5NTAyNjAsLTcwMzMyMDc3NS
+wtNTcwMDE3MTU4LDEyOTc3Mjc5NzEsLTUxNDkzNjEzMCw5MDI4
+ODY4NzMsLTIxMzAzODM3NTUsLTM2NDMxMDg5LC0xNjEyNTcyMz
+UxLDYxNDAwNjYxOSw5MjE4ODY1MTgsMTkyNDUxMjYwLC0yMTA4
+Mzg3MzgxXX0=
 -->
