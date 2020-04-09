@@ -140,6 +140,7 @@
 >애플리케이션 컨텍스트의 생성시기가 다르다. 루트 웹애플리케이션 컨텍스트는 스프링 동작시 생성된다. 서블릿 웹 애플리케이션은 지연 생성으로 실제 요청이 들어올때 생성된다.
 
 >**루트 웹애플리케이션 컨텍스트에 올라가면 좋을 빈은?**
+> 모든 서블릿에 사용하면 좋을 빈들이 올라간다. 대표적으로는 DataSource
 
 >**Spring 빈(객체) 스코프는?**
 >애플리케이션 컨텍스트는 모든 빈의 생존기간을 관리한다. 
@@ -195,6 +196,7 @@
 >Sharding은 수평 파티셔닝을 일컫는 말이다. Sharding을 하려면 Sharding key를 정하고 이를 기준으로 테이블을 나누어야 한다. 이렇게 나누어진 파티션 테이블을 Shard라 하고, 각 shard의 인덱스는 전부 로컬 인덱스에 해당한다. 모든 인덱스는 파티션 단위로 생성되며, 파티션에 관계없이 테이블 전체 단위로 글로벌하게 하나의 통합된 인덱스는 지원하지 않는다
 
 >**Join과 outerJoin의 차이는?**
+>
 
 # Network & Protocol
 
@@ -294,11 +296,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE2NTcyNzM5LC0yNTk0NTQyMTIsLTE0MT
-c3NjYxNjUsLTIwODYwNDcwMDgsMTQxMDQ3MTE0MywtMTI0MDQ0
-NTc0NywtMzEyNzQzNzMxLC01MzAwMDE3NTQsNzIyMDMxNjE2LC
-04Mzc5NTAyNjAsLTcwMzMyMDc3NSwtNTcwMDE3MTU4LDEyOTc3
-Mjc5NzEsLTUxNDkzNjEzMCw5MDI4ODY4NzMsLTIxMzAzODM3NT
-UsLTM2NDMxMDg5LC0xNjEyNTcyMzUxLDYxNDAwNjYxOSw5MjE4
-ODY1MThdfQ==
+eyJoaXN0b3J5IjpbLTIwNTc4NDk1MzIsOTE2NTcyNzM5LC0yNT
+k0NTQyMTIsLTE0MTc3NjYxNjUsLTIwODYwNDcwMDgsMTQxMDQ3
+MTE0MywtMTI0MDQ0NTc0NywtMzEyNzQzNzMxLC01MzAwMDE3NT
+QsNzIyMDMxNjE2LC04Mzc5NTAyNjAsLTcwMzMyMDc3NSwtNTcw
+MDE3MTU4LDEyOTc3Mjc5NzEsLTUxNDkzNjEzMCw5MDI4ODY4Nz
+MsLTIxMzAzODM3NTUsLTM2NDMxMDg5LC0xNjEyNTcyMzUxLDYx
+NDAwNjYxOV19
 -->
