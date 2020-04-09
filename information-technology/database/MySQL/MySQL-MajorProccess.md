@@ -7,7 +7,7 @@ MySQL 실행 계획 성능에 큰 영향을 미치는 작업 단위에 대해 �
 
 # 풀 테이블 스캔(full table scan)
 
-인덱스를 사용하지 않고 테이블 전체를 읽어 작업을 처리한다. 풀 테이블 스캔은 
+인덱스를 사용하지 않고 테이블 전체를 읽어 작업을 처리한다. 풀 테이블 스캔은  
 
 
 
@@ -22,6 +22,6 @@ MySQL 실행 계획 성능에 큰 영향을 미치는 작업 단위에 대해 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MTk1NzYxMSwxMTA5NDU5MjQwLC02MT
-QzNzU5ODgsLTI4MjQxMDM1XX0=
+eyJoaXN0b3J5IjpbLTE4MDg5NDExNjksMTg0MTk1NzYxMSwxMT
+A5NDU5MjQwLC02MTQzNzU5ODgsLTI4MjQxMDM1XX0=
 -->
