@@ -34,7 +34,9 @@ MySQL 5.1의 InnoDB 플러그인 버전 부터는 언제 리드 어해드를 사
 	* 장점: 인덱스를 생성하지 않아도 되므로 인덱스의 단점이 장점이 된다. 정렬해야할 레코드가 적으면 메모리에서 충분히 Filesort 처리가 빠르다.
 	* 단점: 정렬 작업이 쿼리 실행시 실행되므로 레코드 대상 건수가 많아질 수록 응답이 느리다.
 
-물론 레코드를 정렬하기 위해 항상 Filesort라는 정렬 작업을 거쳐야 하는 것은 아니다. 
+물론 레코드를 정렬하기 위해 항상 Filesort라는 정렬 작업을 거쳐야 하는 것은 아니다. 아쉽게도 아래와 같은 이유로 모든 정렬에 인덱스를 이용하기에 어려움이 있다.
+
+*
 
 *
 
@@ -45,8 +47,8 @@ MySQL 5.1의 InnoDB 플러그인 버전 부터는 언제 리드 어해드를 사
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MTUyMDkyOSwtMTAzNjE2ODY4NiwtND
-YxNTE0MTA4LC0xMzIyNDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcy
-MjA3NCwyODY2MDc5NTEsLTE4MDg5NDExNjksMTg0MTk1NzYxMS
-wxMTA5NDU5MjQwLC02MTQzNzU5ODgsLTI4MjQxMDM1XX0=
+eyJoaXN0b3J5IjpbLTIwODk3NjU4ODAsLTEwMzYxNjg2ODYsLT
+Q2MTUxNDEwOCwtMTMyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3
+MjIwNzQsMjg2NjA3OTUxLC0xODA4OTQxMTY5LDE4NDE5NTc2MT
+EsMTEwOTQ1OTI0MCwtNjE0Mzc1OTg4LC0yODI0MTAzNV19
 -->
