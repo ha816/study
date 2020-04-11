@@ -29,7 +29,7 @@ MySQL 5.1의 InnoDB 플러그인 버전 부터는 언제 리드 어해드를 사
 
 * 인덱스 이용 방법
 	* 장점: INSERT, UPDATE, DELETE 쿼리가 실행될때 이미 인덱스가 정렬되어 있어 순서대로 읽기만 하면 되어 매우 빠르다.
-	* 단점: 
+	* 단점: INSERT, UPDATE, DELETE 작업시 부가적인 인덱스 추가/삭제 작업이 필요하므로 느리다. 인덱스 때문에 디스크 공간이 더 필요하다. 인덱스 개수가 늘어날 수록 버퍼풀 메모리가 더 필요하다. 
 
 *
 
@@ -40,8 +40,8 @@ MySQL 5.1의 InnoDB 플러그인 버전 부터는 언제 리드 어해드를 사
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzYxNjg2ODYsLTQ2MTUxNDEwOCwtMT
-MyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNzQsMjg2NjA3
-OTUxLC0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEwOTQ1OTI0MC
-wtNjE0Mzc1OTg4LC0yODI0MTAzNV19
+eyJoaXN0b3J5IjpbLTI2NDYyOTgzNSwtMTAzNjE2ODY4NiwtND
+YxNTE0MTA4LC0xMzIyNDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcy
+MjA3NCwyODY2MDc5NTEsLTE4MDg5NDExNjksMTg0MTk1NzYxMS
+wxMTA5NDU5MjQwLC02MTQzNzU5ODgsLTI4MjQxMDM1XX0=
 -->
