@@ -25,7 +25,10 @@ MySQL 5.1의 InnoDB 플러그인 버전 부터는 언제 리드 어해드를 사
 
 # ORDER BY 처리(Using filesort)
 
-fpzhemf
+레코드를 한 두건 가져오는 쿼리를 제외하고는 대부분의 SELECT 쿼리에서 정렬은 필수적으로 사용된다. 데이터웨어 하우스처럼 대량의 데이터를 조회해서 일괄 처리하는 기능이 아니라면 아마 레코드 정렬 요건은 대부분의 조회 쿼리에 포함되어 있을것이다. 정렬을 처리하는 방법으로는 인덱스를 이용한 방법과 쿼리가 실행될때 "Filesort"라는 별도의 처리를 이용하는 방법이 있다.
+
+*인덱스를 
+*
 
 # Distinct 처리
 
@@ -34,8 +37,8 @@ fpzhemf
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NjUyMTc2MiwtNDYxNTE0MTA4LC0xMz
-IyNDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcyMjA3NCwyODY2MDc5
-NTEsLTE4MDg5NDExNjksMTg0MTk1NzYxMSwxMTA5NDU5MjQwLC
-02MTQzNzU5ODgsLTI4MjQxMDM1XX0=
+eyJoaXN0b3J5IjpbLTEzMzkxMDMxNDMsLTQ2MTUxNDEwOCwtMT
+MyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNzQsMjg2NjA3
+OTUxLC0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEwOTQ1OTI0MC
+wtNjE0Mzc1OTg4LC0yODI0MTAzNV19
 -->
