@@ -41,7 +41,12 @@ MySQL 5.1의 InnoDB 플러그인 버전 부터는 언제 리드 어해드를 사
 * UNION의 결과와 같이 임시 테이블의 결과를 다시 정렬해야 하는 경우
 * 랜덤하게 결과 레코드를 가져와야 하는 경우(때로는 인덱스를 이용하도록 개선할 수 있다)
 
-MySQ
+MySQL이 인덱스를 이용하지 않고 별도의 정렬 처리를 수행했는지는 Extra 컬럼에 "Using filesort" 멘트가 표시되는 것으로 판단할 수 있다. 
+
+## 소트 버퍼(Sort buffer)
+
+MySQL
+
 
 # Distinct 처리
 
@@ -50,7 +55,7 @@ MySQ
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MzY5MTExNSw2MzM2NzI3MDMsLTIxND
+eyJoaXN0b3J5IjpbMTg4MTYwNjYzOSw2MzM2NzI3MDMsLTIxND
 EyODE2MjUsLTE1OTA1NTkzNzcsLTEwMzYxNjg2ODYsLTQ2MTUx
 NDEwOCwtMTMyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNz
 QsMjg2NjA3OTUxLC0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEw
