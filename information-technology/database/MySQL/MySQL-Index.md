@@ -280,7 +280,7 @@ SELECT * FROM table WHERE col IS NOT NULL
 
 #### 해시 인덱스를 전혀 사용하지 못하는 쿼리
 
-아래 쿼리는 어떠한 방법으로도 해시 인덱스를 사용할 수 없다. 대체로 범위 비겨나 부정형 비교는 해시 인덱스를 사용할 수 없다. 
+아래 쿼리는 어떠한 방법으로도 해시 인덱스를 사용할 수 없다. 대체로 범위 비교거나 부정형 비교는 해시 인덱스를 사용할 수 없다. 
 
 ```
 SELECT * FROM table WHERE col >= 'key'
@@ -292,11 +292,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODg3MjIxMzAsMTA3NzQzMjIwMiwxMz
-YzMzc4MDU2LDg1OTczMjg5NCw5OTQ5MDM4MDQsLTE5MDcwNjgy
-ODUsLTgxNjg3MzYxMywtOTcyMjE0MDY2LDE0MjQ5ODMxMTAsLT
-EyOTU2ODYxNjQsMTgwNjA5MTI5Miw0NDk2NjE1MTIsLTY0MjA1
-MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLTMxMjMyOTQ4MS
-wxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYwMzUxLC05Mzgy
-Mjc2MDBdfQ==
+eyJoaXN0b3J5IjpbLTU0NDA5MzExMCwtMTg4ODcyMjEzMCwxMD
+c3NDMyMjAyLDEzNjMzNzgwNTYsODU5NzMyODk0LDk5NDkwMzgw
+NCwtMTkwNzA2ODI4NSwtODE2ODczNjEzLC05NzIyMTQwNjYsMT
+QyNDk4MzExMCwtMTI5NTY4NjE2NCwxODA2MDkxMjkyLDQ0OTY2
+MTUxMiwtNjQyMDUzOTA2LC05NTQwODkxMDYsLTI0OTU3MjgxMS
+wtMzEyMzI5NDgxLDE4NDg2OTQxNDYsOTc5MjkwMzUwLC05MjY4
+NjAzNTFdfQ==
 -->
