@@ -53,6 +53,8 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 
 모든 작업들은 모두 디스크 I/O를 유발하며, 레코드 건수가 많을 수록 이 반복 잡어의 횟수가 많아진다. 물론 소트 버퍼를 크세 설정하면 디스크를 사용하지 않아서 더 빨라질 것으로 생각할 수 있으나 실제 벤치마크 결과론 거의 차이가 없었다. MySQL에서는 소트 버퍼 크기가 256KB에서 512KB일때 최적의 성능을 보였으며 그 이후로는 아무리 소트 버퍼 크기를 늘려도 성능상 차이가 없었다. 소트 버퍼의 이런 특성은 리눅스의 메모리 할당 방식이 원인일 것으로 예측하지만 정확한 원인은 아직 확인된바가 없다.
 
+경험상 소트 버퍼의 크기는 56KB에서 1MB 미안일때가 적절하다고 생각한다. MySQL은 글로벌 메모리 영역과 세션(로컬) 메모리 영역으로 나뉘는데. **소트 버퍼는 세션 메모리 영역에 해당한다.** 즉 소트 버퍼는 여러 클라이언트가 공유해서 사용할 수 없다. 커넥션이 많을 수록, 정렬 작업이 많을 수록 소트 버
+
 
 # Distinct 처리
 
@@ -61,10 +63,10 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzM3ODA2ODQsLTU3MjMzNDQ4LC0yNj
-M1NTk0NzEsMjA0NjcyMjA2OCw2MzM2NzI3MDMsLTIxNDEyODE2
-MjUsLTE1OTA1NTkzNzcsLTEwMzYxNjg2ODYsLTQ2MTUxNDEwOC
-wtMTMyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNzQsMjg2
-NjA3OTUxLC0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEwOTQ1OT
-I0MCwtNjE0Mzc1OTg4LC0yODI0MTAzNV19
+eyJoaXN0b3J5IjpbLTk1NzI5Mzc2MiwtNTcyMzM0NDgsLTI2Mz
+U1OTQ3MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4MTYy
+NSwtMTU5MDU1OTM3NywtMTAzNjE2ODY4NiwtNDYxNTE0MTA4LC
+0xMzIyNDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcyMjA3NCwyODY2
+MDc5NTEsLTE4MDg5NDExNjksMTg0MTk1NzYxMSwxMTA5NDU5Mj
+QwLC02MTQzNzU5ODgsLTI4MjQxMDM1XX0=
 -->
