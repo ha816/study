@@ -279,12 +279,12 @@ WHERE e.emp_no=tb.emp_no;
 하나의 쿼리 문장에서 서브 쿼리가 하나만 있더라도 실제 그 서브 쿼리가 한번만 실행되는 것은 아니다. 조건이 똑같은 서브 쿼리가 실행될때는 다시 실행하지 않고 이전 실행 결과를 그대로 사용할 수 있게 쿼리의 결과를 캐시 공간에 담아둔다.  이 서브 쿼리 캐시는 쿼리 캐시나 파생 테이블과는 전혀 무관한 기능이므로 혼동하지 말자.
 
 * SUBQUERY는 바깥쪽(Outer)의 영향을 받지 않으므로 처음 한번 실행한 후 그 결과를 캐시해두고 필요할때 재사용한다. 
-* DEPENDENT SUBQUERY는 의존하는 바깥쪽(OUTER) 쿼리의 칼럼의 값 단위로 개시해두고 사용한다.
+* DEPENDENT SUBQUERY는 의존하는 바깥쪽(OUTER) 쿼리의 칼럼의 값 단위로 캐시해두고 사용한다.
 
 DEPENDENT SUBQUERY는 외부 쿼리의 값을 단위로 캐시가 만들어진다. 
 종종 서브 쿼리에 포함된 요소에 의해 캐시 자체가 불가능할수 있다. 대표적으로는 아래와 같다. 
 
-* 사용자 변수가 서브 쿼리아 사용된 경우
+* 사용자 변수가 서브 쿼리에 사용된 경우
 * NOT-DETERMINISTIC 속성의 스토어드 루틴이 서브 쿼리에 있는 경우
 * UUID()나 RAND()함수처럼 호출할때 마다 함수가 달라지는 경우
 
@@ -637,7 +637,8 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ1NjI4NTA1LDEwODAyODM0MDUsNjkwNj
-A0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1ODI1NTc3NTAsNTg5
-MTY2ODQ3LDEwMTU5ODg5ODEsLTk2NTcwNzcwMV19
+eyJoaXN0b3J5IjpbLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwOD
+AyODM0MDUsNjkwNjA0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1
+ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5ODg5ODEsLTk2NTcwNz
+cwMV19
 -->
