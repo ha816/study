@@ -57,7 +57,13 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 
 >주의
 >소트 버퍼를 크게 설정해서 빠른 성능을 없을 수는 없지만 디스크의 I/O 사용량은 줄일 수 있다. 따라서 MySQL 서버의 데이터가 많거나 디스크 I/O의 성능이 떨어진다면 소트 버퍼의 크기를 더 크게 설정해서 도움이 될 수 도 있다. 하지만 소트 버퍼를 너무 크게 설정하면 서버 메모리 공간이 부족해지기 때문에 소트 버퍼의 크기는 적절히 설정하도록 하자.
->
+
+## 정렬 알고리즘
+
+레코드 전체를 소트 버퍼에 담을지 아니면 정렬 기준 컬럼만 소트 버퍼에 담을지에 따라 두 가지 정렬 알고리즘을 사용할 수 있다.
+
+*
+
 
 # Distinct 처리
 
@@ -66,10 +72,10 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxODQ3MzAxLC01NzIzMzQ0OCwtMjYzNT
-U5NDcxLDIwNDY3MjIwNjgsNjMzNjcyNzAzLC0yMTQxMjgxNjI1
-LC0xNTkwNTU5Mzc3LC0xMDM2MTY4Njg2LC00NjE1MTQxMDgsLT
-EzMjI0NDA2NDksLTU2NDMwODgyMSwtMjMxNzIyMDc0LDI4NjYw
-Nzk1MSwtMTgwODk0MTE2OSwxODQxOTU3NjExLDExMDk0NTkyND
-AsLTYxNDM3NTk4OCwtMjgyNDEwMzVdfQ==
+eyJoaXN0b3J5IjpbLTEyOTcyNDYxMTksLTU3MjMzNDQ4LC0yNj
+M1NTk0NzEsMjA0NjcyMjA2OCw2MzM2NzI3MDMsLTIxNDEyODE2
+MjUsLTE1OTA1NTkzNzcsLTEwMzYxNjg2ODYsLTQ2MTUxNDEwOC
+wtMTMyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNzQsMjg2
+NjA3OTUxLC0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEwOTQ1OT
+I0MCwtNjE0Mzc1OTg4LC0yODI0MTAzNV19
 -->
