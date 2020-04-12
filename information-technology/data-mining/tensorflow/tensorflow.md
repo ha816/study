@@ -6,8 +6,12 @@
 [구글 코랩(Colaboratory)](https://colab.research.google.com/notebooks/welcome.ipynb)
 : 파이썬 프로그램을 브라우저에서 직접 실행할 수 있기 때문에 텐서플로를 배우고 사용하기에 간편한 도구입니다:
 
-# Overview
+# Concept
 
+
+## [Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential)
+
+Linear stack of layers. Inherits From:  [`Model`]
 
 
 
@@ -18,5 +22,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODQ3OTgzMjJdfQ==
+eyJoaXN0b3J5IjpbLTE2NDIxNzA5NDcsLTEzODQ3OTgzMjJdfQ
+==
 -->
