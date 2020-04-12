@@ -254,9 +254,7 @@ INDEX ix_test (col_1, col_2, ..., col_n)
 
 해시 인덱스는 B-Tree 만큼 범용적이진 않지만 장점이 확실한 인덱스이다. 해시 인덱스는 동등 비교 검색에는 최적화 되어있지만 범위를 검색한다거나 정렬된 결과를 가져오는 목적으로는 사용할 수 없다. 일반적인 해시 인덱스는 메모리 기반의 테이블에 주로 구현되어 있으며 디스크 기반의 대용량 테이블용으로는 거의 사용되지 않는다. 
 
-해시 인덱스의 가장 큰 장점은 실제 키 값과 관계없이 인덱스의 크기가 작고 검색이 빠르다는 것이다.해시 인덱스는 트리 형태의 구조가 아니므로 검색하고자 하는 값을 주면 해시함수를 통해 찾고자 하는 키값이 포함된 버킷을 알아 낼 수 있다. 그리고 버킷 하나만 읽어서 비교해보면 실제 레코드가 저장된 위치를 알 수 있다. 
-
-B-트리는 트리내에서 여러 노드를 읽어야하지만 해시 인덱스는 아니기 때문에 상당히 빨리 결과를 찾을 수 있다. 
+해시 인덱스의 가장 큰 장점은 실제 키 값과 관계없이 인덱스의 크기가 작고 검색이 빠르다는 것이다.해시 인덱스는 트리 형태의 구조가 아니므로 검색하고자 하는 값을 주면 해시함수를 통해 찾고자 하는 키값이 포함된 버킷을 알아 낼 수 있다. 그리고 버킷 하나만 읽어서 비교해보면 실제 레코드가 저장된 위치를 알 수 있다. B-트리는 트리내에서 여러 노드를 읽어야하지만 해시 인덱스는 아니기 때문에 상당히 빨리 결과를 찾을 수 있다. 
 
 > B-Tree 인덱스나 해시 인덱스 모두 키값과 레코드 주소값 등의 정보를 저장해 두는 공간이 필요하다. 일반적으로 이 저장 공간은 작업의 기본 단위가 되며 고정된 크기가 할당된다. B-Tree에서는 이 공간을 노드라고 하며, 해시 인덱스는 버켓이라고 한다. 
 
@@ -294,11 +292,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NzQzMjIwMiwxMzYzMzc4MDU2LDg1OT
-czMjg5NCw5OTQ5MDM4MDQsLTE5MDcwNjgyODUsLTgxNjg3MzYx
-MywtOTcyMjE0MDY2LDE0MjQ5ODMxMTAsLTEyOTU2ODYxNjQsMT
-gwNjA5MTI5Miw0NDk2NjE1MTIsLTY0MjA1MzkwNiwtOTU0MDg5
-MTA2LC0yNDk1NzI4MTEsLTMxMjMyOTQ4MSwxODQ4Njk0MTQ2LD
-k3OTI5MDM1MCwtOTI2ODYwMzUxLC05MzgyMjc2MDAsLTEyMTY2
-NzUwNzRdfQ==
+eyJoaXN0b3J5IjpbLTE4ODg3MjIxMzAsMTA3NzQzMjIwMiwxMz
+YzMzc4MDU2LDg1OTczMjg5NCw5OTQ5MDM4MDQsLTE5MDcwNjgy
+ODUsLTgxNjg3MzYxMywtOTcyMjE0MDY2LDE0MjQ5ODMxMTAsLT
+EyOTU2ODYxNjQsMTgwNjA5MTI5Miw0NDk2NjE1MTIsLTY0MjA1
+MzkwNiwtOTU0MDg5MTA2LC0yNDk1NzI4MTEsLTMxMjMyOTQ4MS
+wxODQ4Njk0MTQ2LDk3OTI5MDM1MCwtOTI2ODYwMzUxLC05Mzgy
+Mjc2MDBdfQ==
 -->
