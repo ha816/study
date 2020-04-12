@@ -45,7 +45,7 @@ MySQL이 인덱스를 이용하지 않고 별도의 정렬 처리를 수행했�
 
 ## 소트 버퍼(Sort buffer)
 
-MySQL
+MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 공간을 
 
 
 # Distinct 처리
@@ -55,7 +55,7 @@ MySQL
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MTYwNjYzOSw2MzM2NzI3MDMsLTIxND
+eyJoaXN0b3J5IjpbLTM5NTQ4MzU3MCw2MzM2NzI3MDMsLTIxND
 EyODE2MjUsLTE1OTA1NTkzNzcsLTEwMzYxNjg2ODYsLTQ2MTUx
 NDEwOCwtMTMyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNz
 QsMjg2NjA3OTUxLC0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEw
