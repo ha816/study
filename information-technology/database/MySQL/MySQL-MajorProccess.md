@@ -36,9 +36,8 @@ MySQL 5.1의 InnoDB 플러그인 버전 부터는 언제 리드 어해드를 사
 
 물론 레코드를 정렬하기 위해 항상 Filesort라는 정렬 작업을 거쳐야 하는 것은 아니다. 아쉽게도 아래와 같은 이유로 모든 정렬에 인덱스를 이용하기에 어려움이 있다.
 
-*정렬 기준이 너무 많아 모든 기준에 맞는 인덱스를 생성하는 것이 불가능한 경우
-
-*
+* 정렬 기준이 너무 많아 모든 기준에 맞는 인덱스를 생성하는 것이 불가능한 경우
+* 
 
 # Distinct 처리
 
@@ -47,9 +46,9 @@ MySQL 5.1의 InnoDB 플러그인 버전 부터는 언제 리드 어해드를 사
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDEyODE2MjUsLTE1OTA1NTkzNzcsLT
-EwMzYxNjg2ODYsLTQ2MTUxNDEwOCwtMTMyMjQ0MDY0OSwtNTY0
-MzA4ODIxLC0yMzE3MjIwNzQsMjg2NjA3OTUxLC0xODA4OTQxMT
-Y5LDE4NDE5NTc2MTEsMTEwOTQ1OTI0MCwtNjE0Mzc1OTg4LC0y
-ODI0MTAzNV19
+eyJoaXN0b3J5IjpbNjMzNjcyNzAzLC0yMTQxMjgxNjI1LC0xNT
+kwNTU5Mzc3LC0xMDM2MTY4Njg2LC00NjE1MTQxMDgsLTEzMjI0
+NDA2NDksLTU2NDMwODgyMSwtMjMxNzIyMDc0LDI4NjYwNzk1MS
+wtMTgwODk0MTE2OSwxODQxOTU3NjExLDExMDk0NTkyNDAsLTYx
+NDM3NTk4OCwtMjgyNDEwMzVdfQ==
 -->
