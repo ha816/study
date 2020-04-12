@@ -45,7 +45,9 @@ MySQL이 인덱스를 이용하지 않고 별도의 정렬 처리를 수행했�
 
 ## 소트 버퍼(Sort buffer)
 
-MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 공간을 
+MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 공간을 소트 버퍼(sort buffer)라 한다. 소트 버퍼는 정렬이 필요한 경우만 할당되면, 버퍼의 크기는 정렬해야한 레코드의 크기에 따라 가변적으로 증가한다. 하지만 최대 사용 가능한 버퍼의 공간은 sort_buffer_size라는 시스템 변수로 설정할 수 있다. 소트 버퍼를 위한 메모리 공간은 쿼리 실행이 완료되면 즉시 시스템으로 반납된다.
+
+자 이제 정렬해야 할 레코드의 건수가 sort_buffer_size
 
 
 # Distinct 처리
@@ -55,9 +57,9 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NTQ4MzU3MCw2MzM2NzI3MDMsLTIxND
-EyODE2MjUsLTE1OTA1NTkzNzcsLTEwMzYxNjg2ODYsLTQ2MTUx
-NDEwOCwtMTMyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNz
-QsMjg2NjA3OTUxLC0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEw
-OTQ1OTI0MCwtNjE0Mzc1OTg4LC0yODI0MTAzNV19
+eyJoaXN0b3J5IjpbMzA2NTg1Nzk4LDYzMzY3MjcwMywtMjE0MT
+I4MTYyNSwtMTU5MDU1OTM3NywtMTAzNjE2ODY4NiwtNDYxNTE0
+MTA4LC0xMzIyNDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcyMjA3NC
+wyODY2MDc5NTEsLTE4MDg5NDExNjksMTg0MTk1NzYxMSwxMTA5
+NDU5MjQwLC02MTQzNzU5ODgsLTI4MjQxMDM1XX0=
 -->
