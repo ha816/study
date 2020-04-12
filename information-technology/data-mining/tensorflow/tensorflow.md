@@ -13,6 +13,10 @@
 
 Linear stack of layers. Inherits From:  [`Model`]
 
+## [Model](https://www.tensorflow.org/api_docs/python/tf/keras/Model)
+
+`Model`  groups layers into an object with training and inference features.
+
 
 
 
@@ -22,6 +26,5 @@ Linear stack of layers. Inherits From:  [`Model`]
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDIxNzA5NDcsLTEzODQ3OTgzMjJdfQ
-==
+eyJoaXN0b3J5IjpbMTU4MDk2MDkyMCwtMTM4NDc5ODMyMl19
 -->
