@@ -56,8 +56,8 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 경험상 소트 버퍼의 크기는 56KB에서 1MB 미안일때가 적절하다고 생각한다. MySQL은 글로벌 메모리 영역과 세션(로컬) 메모리 영역으로 나뉘는데. **소트 버퍼는 세션 메모리 영역에 해당한다.** 즉 소트 버퍼는 여러 클라이언트가 공유해서 사용할 수 없다. 커넥션이 많을 수록, 정렬 작업이 많을 수록 소트 버퍼로 사용되는 메모리 공간이 커진다. 소트 버퍼의 크기를 터무니 없이 크게 잡을 수 있지만 그렇게 되면 운영체제는 메모리 부족현상을 겪을 수 있다. 이럴 경우 운영체제의 정책은 메모리를 가장 많이 사용하고 있는 프로세스를 강제 종료하는데 일반적으로 MySQL 서버가 가장 많은 메모리를 사용하기 때문에 강제 종료 1순위가 된다.
 
 >주의
->소트 버퍼를 크게 설정해서 빠른 성능을 없을 수는 없지만 디스크의 I/O 사용량은 줄일 수 있다. 따라서 MySQL 서버의 데이터가 많거나 디스크 I/O의 성능이 떨어진다면 
-
+>소트 버퍼를 크게 설정해서 빠른 성능을 없을 수는 없지만 디스크의 I/O 사용량은 줄일 수 있다. 따라서 MySQL 서버의 데이터가 많거나 디스크 I/O의 성능이 떨어진다면 소트 버퍼의 크기를 더 크게 설정해서 도움이 될 수 도 있다. 하지만 소트 버퍼를 너무 크게 설정하면 서버 메모리 공간이 부족해지기 때문에 소트 버퍼의 크기는 적절히 설정하도록 하자.
+>
 
 # Distinct 처리
 
@@ -66,10 +66,10 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTY3MTc3NiwtNTcyMzM0NDgsLTI2Mz
-U1OTQ3MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4MTYy
-NSwtMTU5MDU1OTM3NywtMTAzNjE2ODY4NiwtNDYxNTE0MTA4LC
-0xMzIyNDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcyMjA3NCwyODY2
-MDc5NTEsLTE4MDg5NDExNjksMTg0MTk1NzYxMSwxMTA5NDU5Mj
-QwLC02MTQzNzU5ODgsLTI4MjQxMDM1XX0=
+eyJoaXN0b3J5IjpbNDkxODQ3MzAxLC01NzIzMzQ0OCwtMjYzNT
+U5NDcxLDIwNDY3MjIwNjgsNjMzNjcyNzAzLC0yMTQxMjgxNjI1
+LC0xNTkwNTU5Mzc3LC0xMDM2MTY4Njg2LC00NjE1MTQxMDgsLT
+EzMjI0NDA2NDksLTU2NDMwODgyMSwtMjMxNzIyMDc0LDI4NjYw
+Nzk1MSwtMTgwODk0MTE2OSwxODQxOTU3NjExLDExMDk0NTkyND
+AsLTYxNDM3NTk4OCwtMjgyNDEwMzVdfQ==
 -->
