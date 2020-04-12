@@ -8,6 +8,7 @@
 
 # Concept
 
+## [Input](https://www.tensorflow.org/api_docs/python/tf/keras/Input)
 
 ## [Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential)
 
@@ -26,5 +27,5 @@ Linear stack of layers. Inherits From:  [`Model`]
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MDk2MDkyMCwtMTM4NDc5ODMyMl19
+eyJoaXN0b3J5IjpbMTMyMjI1NTAzMywtMTM4NDc5ODMyMl19
 -->
