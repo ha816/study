@@ -49,7 +49,7 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 
 자 이제 정렬해야 할 레코드의 건수가 sort_buffer_size 보다 더 크다면 어떻게 될까? 이러면 MySQL은 정렬해야할 레코드를 여러 조각 나누어 처리하는데 이 과정에서 디스크를 사용하게 된다.
 
-
+메모리의 소트 버퍼에서 정렬을 수행하고, 그 결과를 
 
 
 # Distinct 처리
@@ -59,9 +59,10 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NjcyMjA2OCw2MzM2NzI3MDMsLTIxND
-EyODE2MjUsLTE1OTA1NTkzNzcsLTEwMzYxNjg2ODYsLTQ2MTUx
-NDEwOCwtMTMyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNz
-QsMjg2NjA3OTUxLC0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEw
-OTQ1OTI0MCwtNjE0Mzc1OTg4LC0yODI0MTAzNV19
+eyJoaXN0b3J5IjpbLTE1MjgyOTE4NTYsMjA0NjcyMjA2OCw2Mz
+M2NzI3MDMsLTIxNDEyODE2MjUsLTE1OTA1NTkzNzcsLTEwMzYx
+Njg2ODYsLTQ2MTUxNDEwOCwtMTMyMjQ0MDY0OSwtNTY0MzA4OD
+IxLC0yMzE3MjIwNzQsMjg2NjA3OTUxLC0xODA4OTQxMTY5LDE4
+NDE5NTc2MTEsMTEwOTQ1OTI0MCwtNjE0Mzc1OTg4LC0yODI0MT
+AzNV19
 -->
