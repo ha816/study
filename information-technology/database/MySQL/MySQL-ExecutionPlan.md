@@ -304,7 +304,7 @@ Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명
 
 위 첫번째 라인의 table 컬럼이 derived2인데, 이것은 단위 SELECT 쿼리의 아이디가 2번 실행 계획으로부터 만들어진 파생 테이블을 말한다. 이 파생 테이블은 dept_emp 테이블로 부터 SELECT된 결과가 저장된 파생 테이블이라는 점을 알 수 있다. 
 
-1. 첫번째 라인이 <derived2>인것을 보아 이 라인 보다 id가 2번인 라인을 먼저 실행하고 그 결과가 파생 테이블로 준비되야 한다는 것을 알 수 있다. 
+1. 첫번째 라인이 derived2인것을 보아 이 라인 보다 id가 2번인 라인을 먼저 실행하고 그 결과가 파생 테이블로 준비되야 한다는 것을 알 수 있다. 
 2. 세번째 라인의 DERIVED를 보면, dept_emp 테이블을 읽어 파생 테이블을 생성하는 것을 알 수 있다. 
 3. 첫번째 라인과 두번째 라인은 같은 id를 가지는 것으로 보아 2개 테이블(derived2, e)이 조인되는 쿼리라는 것을 알 수 있다. 그런데 derived2 테이블이 e 테이블 보다 먼저 왔기 때문에 derived2가 드라이빙 테이블이 되고, e는 드리븐 테이블이 된다. 즉 derived2 테이블을 먼저 읽어 e 테이블을 조인 했다는 것이다. 
 
@@ -637,8 +637,8 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwOD
-AyODM0MDUsNjkwNjA0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1
-ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5ODg5ODEsLTk2NTcwNz
-cwMV19
+eyJoaXN0b3J5IjpbLTE1NDg4MDY4NzksLTExOTg5NjYxODMsMj
+Q1NjI4NTA1LDEwODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNjM1
+LDE2MTU0OTUyMiw1ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5OD
+g5ODEsLTk2NTcwNzcwMV19
 -->
