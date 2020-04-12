@@ -51,7 +51,7 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 
 메모리의 소트 버퍼에서 정렬을 수행하고, 그 결과를 임시로 디스크에 기론해 둔다. 그 다음 레코드를 가져와서 정렬하고 반복적으로 디스크에 임시 저장한다.  이처럼 각 버퍼 크기 만큼씩 정렬된 레코드를 다시 병합하면서 정렬을 수행해야 한다. 이 병합 작업을 멀티 머지(Multi-merge)라고 표현하며, 수행된 멀티 머지 횟수는 Sort_merge_passes라는 상태 변수(SHOW STATUS VARIABLES; 명령 참조)에 누적된다.
 
-모든 작업들은 모두 디스크 I/O를 유발하며, 레코드 건수가 많을 수록 이 반복 잡어의 횟수가 많아진다. 물론 소트 버퍼를 크세 설정하면 디스크를 사용하지 않아서 더 빨라질 
+모든 작업들은 모두 디스크 I/O를 유발하며, 레코드 건수가 많을 수록 이 반복 잡어의 횟수가 많아진다. 물론 소트 버퍼를 크세 설정하면 디스크를 사용하지 않아서 더 빨라질 것으로 생각할 수 있으나 실제 벤치마크 결과론 거의 차이가 없었다. MySQL에서는 소트 버퍼 크기가 256KB에서 512KB일때 최적의 성능을 보였으며 그 이후로는 아무리 소트 버퍼 크기를 늘려도 성능상 차이가 없었다. 소트 버퍼의 이런 특성은 리눅스의 메모리 할당 방식이 원인일 것으로 예측하지만 정확한 원인은 아직 확인된바가 없다.
 
 
 # Distinct 처리
@@ -61,7 +61,7 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTQxNDMzODYsLTU3MjMzNDQ4LC0yNj
+eyJoaXN0b3J5IjpbLTE5MzM3ODA2ODQsLTU3MjMzNDQ4LC0yNj
 M1NTk0NzEsMjA0NjcyMjA2OCw2MzM2NzI3MDMsLTIxNDEyODE2
 MjUsLTE1OTA1NTkzNzcsLTEwMzYxNjg2ODYsLTQ2MTUxNDEwOC
 wtMTMyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNzQsMjg2
