@@ -51,6 +51,8 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 
 메모리의 소트 버퍼에서 정렬을 수행하고, 그 결과를 임시로 디스크에 기론해 둔다. 그 다음 레코드를 가져와서 정렬하고 반복적으로 디스크에 임시 저장한다.  이처럼 각 버퍼 크기 만큼씩 정렬된 레코드를 다시 병합하면서 정렬을 수행해야 한다. 이 병합 작업을 멀티 머지(Multi-merge)라고 표현하며, 수행된 멀티 머지 횟수는 Sort_merge_passes라는 상태 변수(SHOW STATUS VARIABLES; 명령 참조)에 누적된다.
 
+모든 작업들은 모두 디스크 I/O를 유발하며, 레코드 건수
+
 
 # Distinct 처리
 
@@ -59,10 +61,10 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MzU1OTQ3MSwyMDQ2NzIyMDY4LDYzMz
-Y3MjcwMywtMjE0MTI4MTYyNSwtMTU5MDU1OTM3NywtMTAzNjE2
-ODY4NiwtNDYxNTE0MTA4LC0xMzIyNDQwNjQ5LC01NjQzMDg4Mj
-EsLTIzMTcyMjA3NCwyODY2MDc5NTEsLTE4MDg5NDExNjksMTg0
-MTk1NzYxMSwxMTA5NDU5MjQwLC02MTQzNzU5ODgsLTI4MjQxMD
-M1XX0=
+eyJoaXN0b3J5IjpbLTU3MjMzNDQ4LC0yNjM1NTk0NzEsMjA0Nj
+cyMjA2OCw2MzM2NzI3MDMsLTIxNDEyODE2MjUsLTE1OTA1NTkz
+NzcsLTEwMzYxNjg2ODYsLTQ2MTUxNDEwOCwtMTMyMjQ0MDY0OS
+wtNTY0MzA4ODIxLC0yMzE3MjIwNzQsMjg2NjA3OTUxLC0xODA4
+OTQxMTY5LDE4NDE5NTc2MTEsMTEwOTQ1OTI0MCwtNjE0Mzc1OT
+g4LC0yODI0MTAzNV19
 -->
