@@ -16,8 +16,7 @@ Primary Key
 Secondary Key
 : 프라이머리 키를 제외한 나머지 모든 인덱스는 모두 세컨더리 인덱스이다. 
 
-
-# e StructureIndex
+# StructureIndex
 
 DBMS에서 **인덱스는 데이터의 저장(INSERT, UPDATE, DELETE) 성능을 희생하고 그 데이터의 읽기 속도를 높이는 기능**이다. 
 
@@ -295,11 +294,11 @@ SELECT * FROM table WHERE col LIKE '검색어%'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ3MDk0OTczLDEzNjMzNzgwNTYsODU5Nz
-MyODk0LDk5NDkwMzgwNCwtMTkwNzA2ODI4NSwtODE2ODczNjEz
-LC05NzIyMTQwNjYsMTQyNDk4MzExMCwtMTI5NTY4NjE2NCwxOD
-A2MDkxMjkyLDQ0OTY2MTUxMiwtNjQyMDUzOTA2LC05NTQwODkx
-MDYsLTI0OTU3MjgxMSwtMzEyMzI5NDgxLDE4NDg2OTQxNDYsOT
-c5MjkwMzUwLC05MjY4NjAzNTEsLTkzODIyNzYwMCwtMTIxNjY3
-NTA3NF19
+eyJoaXN0b3J5IjpbMTA3NzQzMjIwMiwxMzYzMzc4MDU2LDg1OT
+czMjg5NCw5OTQ5MDM4MDQsLTE5MDcwNjgyODUsLTgxNjg3MzYx
+MywtOTcyMjE0MDY2LDE0MjQ5ODMxMTAsLTEyOTU2ODYxNjQsMT
+gwNjA5MTI5Miw0NDk2NjE1MTIsLTY0MjA1MzkwNiwtOTU0MDg5
+MTA2LC0yNDk1NzI4MTEsLTMxMjMyOTQ4MSwxODQ4Njk0MTQ2LD
+k3OTI5MDM1MCwtOTI2ODYwMzUxLC05MzgyMjc2MDAsLTEyMTY2
+NzUwNzRdfQ==
 -->
