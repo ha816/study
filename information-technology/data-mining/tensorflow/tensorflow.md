@@ -32,6 +32,26 @@ Linear stack of layers. Inherits From:  [`Model`]
 
 `Model`  groups layers into an object with training and inference features.
 
+There are two ways to instantiate a  `Model`:
+
+1 - With the "functional API", where you start from  `Input`, you chain layer calls to specify the model's forward pass, and finally you create your model from inputs and outputs:
+
+```
+import tensorflow as tfinputs = tf.keras.Input(shape=(3,))x = tf.keras.layers.Dense(4, activation=tf.nn.relu)(inputs)outputs = tf.keras.layers.Dense(5, activation=tf.nn.softmax)(x)model = tf.keras.Model(inputs=inputs, outputs=outputs)
+```
+
+2 - By subclassing the  `Model`  class: in that case, you should define your layers in  `__init__`  and you should implement the model's forward pass in  `call`.
+
+```
+import tensorflow as tfclass MyModel(tf.keras.Model):  def __init__(self):    super(MyModel, self).__init__()    self.dense1 = tf.keras.layers.Dense(4, activation=tf.nn.relu)    self.dense2 = tf.keras.layers.Dense(5, activation=tf.nn.softmax)  def call(self, inputs):    x = self.dense1(inputs)    return self.dense2(x)model = MyModel()
+```
+
+If you subclass  `Model`, you can optionally have a  `training`  argument (boolean) in  `call`, which you can use to specify a different behavior in training and inference:
+
+```
+import tensorflow as tfclass MyModel(tf.keras.Model):  def __init__(self):    super(MyModel, self).__init__()    self.dense1 = tf.keras.layers.Dense(4, activation=tf.nn.relu)    self.dense2 = tf.keras.layers.Dense(5, activation=tf.nn.softmax)    self.dropout = tf.keras.layers.Dropout(0.5)  def call(self, inputs, training=False):    x = self.dense1(inputs)    if training:      x = self.dropout(x, training=training)    return self.dense2(x)model = MyModel()
+```
+
 
 
 
@@ -41,5 +61,6 @@ Linear stack of layers. Inherits From:  [`Model`]
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzOTU4OTk4NSwtMTM4NDc5ODMyMl19
+eyJoaXN0b3J5IjpbNTI0NjgzNjc3LDEwMzk1ODk5ODUsLTEzOD
+Q3OTgzMjJdfQ==
 -->
