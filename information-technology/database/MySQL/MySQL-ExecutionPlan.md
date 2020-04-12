@@ -123,7 +123,7 @@ UNION이나 서브 쿼리가 포함된 SELECT 쿼리의 실행계획에서 가�
 
 ### UNION
 
-UNION으로 결합하는 단위 SELECT 쿼리 가운데 첫 번째를 제외한 두 번째 이후 단위 SELECT 쿼리의 select_type은 UNION으로 표시된다. UNION의 첫 번재 단위 SELECT는 UNION이 아닌 UNION 쿼리로 결합된 전체 집합의 select_type이 표시된다. 
+UNION으로 결합하는 단위 SELECT 쿼리 가운데 첫 번째를 제외한 두 번째 이후 단위 SELECT 쿼리의 select_type은 UNION으로 표시된다. UNION의 첫 번째 단위 SELECT는 UNION이 아닌 UNION 쿼리로 결합된 전체 집합의 select_type이 표시된다. 
 
 ```
 EXPLAIN
@@ -637,7 +637,7 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MDI4MzQwNSw2OTA2MDQ2OSw5NjcxOD
-E2MzUsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkxNjY4NDcsMTAx
-NTk4ODk4MSwtOTY1NzA3NzAxXX0=
+eyJoaXN0b3J5IjpbMjQ1NjI4NTA1LDEwODAyODM0MDUsNjkwNj
+A0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1ODI1NTc3NTAsNTg5
+MTY2ODQ3LDEwMTU5ODg5ODEsLTk2NTcwNzcwMV19
 -->
