@@ -324,7 +324,7 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 자바 7까지의 세상에서는 모든 클래스가 현재의 인터페이스에 새로운 메서드가 추가될 일은 영원히 없다고 가정하고 작성했다. **디폴트 메서드는 구현 클래스에 대해 아무것도 모른체 합의 없이 무작정 삽입될 뿐이다.** 
 
-
+자바 8 에서는 핵심 컬렉션 인터페이스들에 다수의 디폴트 메서드가 추가되었다. 주로 람다를 활용하기 위해서다. 자바 라이브러리의 디폴터 메서드는 코드 품질이 높고 범용적이라 대부분 상황에서 잘 동작한다. 하지만 생각할 수 있는 모든 상황에서 
 
 
 
@@ -367,11 +367,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0ODUzMjk3MSwtODMzMTE0ODk1LC02NT
-QwOTgwNzMsMzcyODU5NzI2LC0zNjU5ODM3MzUsLTEyOTUzNTU5
-ODksLTEzNjU3OTg5NDcsMTA3MjM5Mjk4MiwtMjA0NzIwMTQxOC
-wtMTg0ODA2MDY1LC0xNjcyMDU2OTk2LDk1MTcwNDE3NiwtOTcz
-ODc1NzIzLDUxNTcwOTI1MywxODkzNTA1MzQ4LC0zMjA5OTAwND
-QsMTY2MDIwNTQyNCwtMTYwNjQ0MTg4OSwtMjUxNzg0NTI1LDg0
-Njk3NjI3OV19
+eyJoaXN0b3J5IjpbLTY5Nzk2NTE1OCwtNDQ4NTMyOTcxLC04Mz
+MxMTQ4OTUsLTY1NDA5ODA3MywzNzI4NTk3MjYsLTM2NTk4Mzcz
+NSwtMTI5NTM1NTk4OSwtMTM2NTc5ODk0NywxMDcyMzkyOTgyLC
+0yMDQ3MjAxNDE4LC0xODQ4MDYwNjUsLTE2NzIwNTY5OTYsOTUx
+NzA0MTc2LC05NzM4NzU3MjMsNTE1NzA5MjUzLDE4OTM1MDUzND
+gsLTMyMDk5MDA0NCwxNjYwMjA1NDI0LC0xNjA2NDQxODg5LC0y
+NTE3ODQ1MjVdfQ==
 -->
