@@ -326,6 +326,8 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 
 
+
+
 ### 20. 태그 달린 클래스 대신 클래스 계층을 활용하라.
 
 태그가 달린 클래스란? 
@@ -365,11 +367,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMzExNDg5NSwtNjU0MDk4MDczLDM3Mj
-g1OTcyNiwtMzY1OTgzNzM1LC0xMjk1MzU1OTg5LC0xMzY1Nzk4
-OTQ3LDEwNzIzOTI5ODIsLTIwNDcyMDE0MTgsLTE4NDgwNjA2NS
-wtMTY3MjA1Njk5Niw5NTE3MDQxNzYsLTk3Mzg3NTcyMyw1MTU3
-MDkyNTMsMTg5MzUwNTM0OCwtMzIwOTkwMDQ0LDE2NjAyMDU0Mj
-QsLTE2MDY0NDE4ODksLTI1MTc4NDUyNSw4NDY5NzYyNzksLTIw
-NzI5NzQwNTldfQ==
+eyJoaXN0b3J5IjpbLTQ0ODUzMjk3MSwtODMzMTE0ODk1LC02NT
+QwOTgwNzMsMzcyODU5NzI2LC0zNjU5ODM3MzUsLTEyOTUzNTU5
+ODksLTEzNjU3OTg5NDcsMTA3MjM5Mjk4MiwtMjA0NzIwMTQxOC
+wtMTg0ODA2MDY1LC0xNjcyMDU2OTk2LDk1MTcwNDE3NiwtOTcz
+ODc1NzIzLDUxNTcwOTI1MywxODkzNTA1MzQ4LC0zMjA5OTAwND
+QsMTY2MDIwNTQyNCwtMTYwNjQ0MTg4OSwtMjUxNzg0NTI1LDg0
+Njk3NjI3OV19
 -->
