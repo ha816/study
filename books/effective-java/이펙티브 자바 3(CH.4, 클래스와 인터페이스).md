@@ -334,9 +334,11 @@ default boolean removeIf(Predicated<? super E> filter){
 	boolean result = false;
 	for(Iterator<E> it = iterator(); it.hasNext();) {
 		if(filter.test(it.next())) {
-			it.m
+			it.remove();
+			result = true;
 		}
 	}
+	return result;
 }
 
 ```
@@ -381,11 +383,11 @@ default boolean removeIf(Predicated<? super E> filter){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NjUyODU1MCwxODQ5MDY1NDc4LDEzNz
-A2MzU1MCwtNDQ4NTMyOTcxLC04MzMxMTQ4OTUsLTY1NDA5ODA3
-MywzNzI4NTk3MjYsLTM2NTk4MzczNSwtMTI5NTM1NTk4OSwtMT
-M2NTc5ODk0NywxMDcyMzkyOTgyLC0yMDQ3MjAxNDE4LC0xODQ4
-MDYwNjUsLTE2NzIwNTY5OTYsOTUxNzA0MTc2LC05NzM4NzU3Mj
-MsNTE1NzA5MjUzLDE4OTM1MDUzNDgsLTMyMDk5MDA0NCwxNjYw
-MjA1NDI0XX0=
+eyJoaXN0b3J5IjpbNzI4NjEyMDcyLDE4NDkwNjU0NzgsMTM3MD
+YzNTUwLC00NDg1MzI5NzEsLTgzMzExNDg5NSwtNjU0MDk4MDcz
+LDM3Mjg1OTcyNiwtMzY1OTgzNzM1LC0xMjk1MzU1OTg5LC0xMz
+Y1Nzk4OTQ3LDEwNzIzOTI5ODIsLTIwNDcyMDE0MTgsLTE4NDgw
+NjA2NSwtMTY3MjA1Njk5Niw5NTE3MDQxNzYsLTk3Mzg3NTcyMy
+w1MTU3MDkyNTMsMTg5MzUwNTM0OCwtMzIwOTkwMDQ0LDE2NjAy
+MDU0MjRdfQ==
 -->
