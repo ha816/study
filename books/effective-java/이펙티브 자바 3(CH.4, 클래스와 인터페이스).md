@@ -341,7 +341,7 @@ default boolean removeIf(Predicated<? super E> filter){
 	return result;
 }
 ```
-위 코드는 아마 실제 구현일 것이다. 이 보다 더 범용적으로 구현하기도 어렵겠지만, 그렇다고 현존하는 모든 Collection 구현체와 잘 어울러지는 것은 아니다. 대표적인 예로 SynchronizedCollection이다. 이 클래스는 아파치 커
+위 코드는 아마 실제 구현일 것이다. 이 보다 더 범용적으로 구현하기도 어렵겠지만, 그렇다고 현존하는 모든 Collection 구현체와 잘 어울러지는 것은 아니다. 대표적인 예로 SynchronizedCollection가 있다. 이 클래스는 java.util의 Collections.synchronizedCollection 정적 팩터리 메서드와 비스하다. 아파치 버전은 클라이언트가 제공한 객체로 락을 거는 능력을 추가로 제공한다. 즉, 모든 메서드에서 
 
 
 
@@ -384,7 +384,7 @@ default boolean removeIf(Predicated<? super E> filter){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMDk3MTk5MywtMTcxNjc4OTA5OSw3Mj
+eyJoaXN0b3J5IjpbMTM4MTExMjQ3OCwtMTcxNjc4OTA5OSw3Mj
 g2MTIwNzIsMTg0OTA2NTQ3OCwxMzcwNjM1NTAsLTQ0ODUzMjk3
 MSwtODMzMTE0ODk1LC02NTQwOTgwNzMsMzcyODU5NzI2LC0zNj
 U5ODM3MzUsLTEyOTUzNTU5ODksLTEzNjU3OTg5NDcsMTA3MjM5
