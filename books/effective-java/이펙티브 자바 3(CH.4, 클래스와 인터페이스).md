@@ -326,6 +326,7 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 자바 8 에서는 핵심 컬렉션 인터페이스들에 다수의 디폴트 메서드가 추가되었다. 주로 람다를 활용하기 위해서다. 자바 라이브러리의 디폴터 메서드는 코드 품질이 높고 범용적이라 대부분 상황에서 잘 동작한다. 하지만 생각할 수 있는 **모든 상황에서 불변식을 해치지 않는 디폴트 메서드를 작성하기란 어려운 법이다.** 
 
+자바 8의 Collection인터페이스에 추가된 removeIf 메서드를 보자. 이 메서드는 주어진 boolean 함수(predicate)가 true를 반환하는 모든 원소를 제거한다. 디폴트 구현은 반복자를 이용해 순회하면서 각 원소를 인수로 넣어 predicate을 호출하고, true를 반환하면 반복자의 remove 메서드로 그 원소를 제거한다. 
 
 
 ### 20. 태그 달린 클래스 대신 클래스 계층을 활용하라.
@@ -367,11 +368,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MDYzNTUwLC00NDg1MzI5NzEsLTgzMz
-ExNDg5NSwtNjU0MDk4MDczLDM3Mjg1OTcyNiwtMzY1OTgzNzM1
-LC0xMjk1MzU1OTg5LC0xMzY1Nzk4OTQ3LDEwNzIzOTI5ODIsLT
-IwNDcyMDE0MTgsLTE4NDgwNjA2NSwtMTY3MjA1Njk5Niw5NTE3
-MDQxNzYsLTk3Mzg3NTcyMyw1MTU3MDkyNTMsMTg5MzUwNTM0OC
-wtMzIwOTkwMDQ0LDE2NjAyMDU0MjQsLTE2MDY0NDE4ODksLTI1
-MTc4NDUyNV19
+eyJoaXN0b3J5IjpbLTE0NDk0MTg3OTMsMTM3MDYzNTUwLC00ND
+g1MzI5NzEsLTgzMzExNDg5NSwtNjU0MDk4MDczLDM3Mjg1OTcy
+NiwtMzY1OTgzNzM1LC0xMjk1MzU1OTg5LC0xMzY1Nzk4OTQ3LD
+EwNzIzOTI5ODIsLTIwNDcyMDE0MTgsLTE4NDgwNjA2NSwtMTY3
+MjA1Njk5Niw5NTE3MDQxNzYsLTk3Mzg3NTcyMyw1MTU3MDkyNT
+MsMTg5MzUwNTM0OCwtMzIwOTkwMDQ0LDE2NjAyMDU0MjQsLTE2
+MDY0NDE4ODldfQ==
 -->
