@@ -341,7 +341,7 @@ default boolean removeIf(Predicated<? super E> filter){
 	return result;
 }
 ```
-위 코드는 아마 실제 구현일 것이다. 이 보다 더 범용적으로 구현하기도 어렵겠지만, 그렇다고 현존하는 모든 Collection 구현체와 잘 어울러지는 것은 아니다. 대표적인 예로 Syn
+위 코드는 아마 실제 구현일 것이다. 이 보다 더 범용적으로 구현하기도 어렵겠지만, 그렇다고 현존하는 모든 Collection 구현체와 잘 어울러지는 것은 아니다. 대표적인 예로 SynchronizedCollection이다. 이 클래스는 
 
 
 
@@ -384,11 +384,11 @@ default boolean removeIf(Predicated<? super E> filter){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU4OTM3NjQ5LDcyODYxMjA3MiwxODQ5MD
-Y1NDc4LDEzNzA2MzU1MCwtNDQ4NTMyOTcxLC04MzMxMTQ4OTUs
-LTY1NDA5ODA3MywzNzI4NTk3MjYsLTM2NTk4MzczNSwtMTI5NT
-M1NTk4OSwtMTM2NTc5ODk0NywxMDcyMzkyOTgyLC0yMDQ3MjAx
-NDE4LC0xODQ4MDYwNjUsLTE2NzIwNTY5OTYsOTUxNzA0MTc2LC
-05NzM4NzU3MjMsNTE1NzA5MjUzLDE4OTM1MDUzNDgsLTMyMDk5
-MDA0NF19
+eyJoaXN0b3J5IjpbLTE3MTY3ODkwOTksNzI4NjEyMDcyLDE4ND
+kwNjU0NzgsMTM3MDYzNTUwLC00NDg1MzI5NzEsLTgzMzExNDg5
+NSwtNjU0MDk4MDczLDM3Mjg1OTcyNiwtMzY1OTgzNzM1LC0xMj
+k1MzU1OTg5LC0xMzY1Nzk4OTQ3LDEwNzIzOTI5ODIsLTIwNDcy
+MDE0MTgsLTE4NDgwNjA2NSwtMTY3MjA1Njk5Niw5NTE3MDQxNz
+YsLTk3Mzg3NTcyMyw1MTU3MDkyNTMsMTg5MzUwNTM0OCwtMzIw
+OTkwMDQ0XX0=
 -->
