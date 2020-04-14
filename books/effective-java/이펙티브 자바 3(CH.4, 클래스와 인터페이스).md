@@ -333,7 +333,9 @@ default boolean removeIf(Predicated<? super E> filter){
 	Objects.requireNonNull(filter);
 	boolean result = false;
 	for(Iterator<E> it = iterator(); it.hasNext();) {
-
+		if(filter.test(it.next())) {
+			it.m
+		}
 	}
 }
 
@@ -379,11 +381,11 @@ default boolean removeIf(Predicated<? super E> filter){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0OTA2NTQ3OCwxMzcwNjM1NTAsLTQ0OD
-UzMjk3MSwtODMzMTE0ODk1LC02NTQwOTgwNzMsMzcyODU5NzI2
-LC0zNjU5ODM3MzUsLTEyOTUzNTU5ODksLTEzNjU3OTg5NDcsMT
-A3MjM5Mjk4MiwtMjA0NzIwMTQxOCwtMTg0ODA2MDY1LC0xNjcy
-MDU2OTk2LDk1MTcwNDE3NiwtOTczODc1NzIzLDUxNTcwOTI1My
-wxODkzNTA1MzQ4LC0zMjA5OTAwNDQsMTY2MDIwNTQyNCwtMTYw
-NjQ0MTg4OV19
+eyJoaXN0b3J5IjpbMTI5NjUyODU1MCwxODQ5MDY1NDc4LDEzNz
+A2MzU1MCwtNDQ4NTMyOTcxLC04MzMxMTQ4OTUsLTY1NDA5ODA3
+MywzNzI4NTk3MjYsLTM2NTk4MzczNSwtMTI5NTM1NTk4OSwtMT
+M2NTc5ODk0NywxMDcyMzkyOTgyLC0yMDQ3MjAxNDE4LC0xODQ4
+MDYwNjUsLTE2NzIwNTY5OTYsOTUxNzA0MTc2LC05NzM4NzU3Mj
+MsNTE1NzA5MjUzLDE4OTM1MDUzNDgsLTMyMDk5MDA0NCwxNjYw
+MjA1NDI0XX0=
 -->
