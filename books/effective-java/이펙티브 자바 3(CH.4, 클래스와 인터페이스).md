@@ -328,6 +328,17 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 자바 8의 Collection인터페이스에 추가된 removeIf 메서드를 보자. 이 메서드는 주어진 boolean 함수(predicate)가 true를 반환하는 모든 원소를 제거한다. 디폴트 구현은 반복자를 이용해 순회하면서 각 원소를 인수로 넣어 predicate을 호출하고, true를 반환하면 반복자의 remove 메서드로 그 원소를 제거한다. 
 
+```
+default boolean removeIf(Predicated<? super E> filter){
+	Objects.requireNonNull(filter);
+	boolean result = false;
+	for(Iterator<E> it = iterator(); it.hasNext();) {
+
+	}
+}
+
+```
+
 
 ### 20. 태그 달린 클래스 대신 클래스 계층을 활용하라.
 
@@ -368,11 +379,11 @@ public abstract class AbstractMapEntry<K,V> implements Map.Entry<K,V> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDk0MTg3OTMsMTM3MDYzNTUwLC00ND
-g1MzI5NzEsLTgzMzExNDg5NSwtNjU0MDk4MDczLDM3Mjg1OTcy
-NiwtMzY1OTgzNzM1LC0xMjk1MzU1OTg5LC0xMzY1Nzk4OTQ3LD
-EwNzIzOTI5ODIsLTIwNDcyMDE0MTgsLTE4NDgwNjA2NSwtMTY3
-MjA1Njk5Niw5NTE3MDQxNzYsLTk3Mzg3NTcyMyw1MTU3MDkyNT
-MsMTg5MzUwNTM0OCwtMzIwOTkwMDQ0LDE2NjAyMDU0MjQsLTE2
-MDY0NDE4ODldfQ==
+eyJoaXN0b3J5IjpbMTg0OTA2NTQ3OCwxMzcwNjM1NTAsLTQ0OD
+UzMjk3MSwtODMzMTE0ODk1LC02NTQwOTgwNzMsMzcyODU5NzI2
+LC0zNjU5ODM3MzUsLTEyOTUzNTU5ODksLTEzNjU3OTg5NDcsMT
+A3MjM5Mjk4MiwtMjA0NzIwMTQxOCwtMTg0ODA2MDY1LC0xNjcy
+MDU2OTk2LDk1MTcwNDE3NiwtOTczODc1NzIzLDUxNTcwOTI1My
+wxODkzNTA1MzQ4LC0zMjA5OTAwNDQsMTY2MDIwNTQyNCwtMTYw
+NjQ0MTg4OV19
 -->
