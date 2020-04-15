@@ -46,10 +46,10 @@ SHOW INDEX FROM table
 ```
 통계 정보를 갱신하려면 ANALYZE를 실행하면 된다. 
 ```
--- // 파티션을 사용하지 않는 일반 테이블의 통계 정보 수집 
+-- 파티션을 사용하지 않는 일반 테이블의 통계 정보 수집 
 ANALZE TABLE table
 
--- // 파티션을 사용하는 테이블에서 특정 파티션의 통계 정보 수집
+-- 파티션을 사용하는 테이블에서 특정 파티션의 통계 정보 수집
 ALTER TABLE table ANYALZE PARTITION p3;
 ```
 ANALYZE를 실행하는 동안 InnoDB 테이블은 읽기와 쓰기 모두 불가능하다. 따라서 서비스 도중에는 ANALYZE를 실행하지 않는 것이 좋다. InnoDB 테이블은 인덱스 페이지 중에서 8개 정도만 랜덤하게 선택해서 분석하고 그 결과를 인덱스의 통계정보로 갱신한다. 
@@ -94,7 +94,7 @@ ALL, index
 
 ## id 컬럼
 
-실행 계획에서 가장 왼쪽에 표시되는 id 컬럼은 단위 SELECT 쿼리 별로 부여되는 식별자 값이다. 
+실행 계획에서 가장 왼쪽에 표시되는 컬럼은 id 컬럼이다. 단위 SELECT 쿼리 별로 부여되는 식별자 값이다. 
 
 사실 하나의 SELECT 문장은 다시 1개 이상의 하위(SUB SELECT) 문장을 포함할 수 있다. 단위 SELECT 쿼리는 하나의 SELECT 문장을 분리해낸 SELECT 문장을 말한다. 
 
@@ -641,10 +641,10 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMDg0MzgwMywyMDI3NTQ1NjE1LC05MD
-I1NzQzMTYsLTIxMTgwNDI3NjcsLTEyNjUyMzA4NTgsMTM5NDg3
-ODU2OSwxMzQwNzI4MjM3LC0xNTQ4ODA2ODc5LC0xMTk4OTY2MT
-gzLDI0NTYyODUwNSwxMDgwMjgzNDA1LDY5MDYwNDY5LDk2NzE4
-MTYzNSwxNjE1NDk1MjIsNTgyNTU3NzUwLDU4OTE2Njg0NywxMD
-E1OTg4OTgxLC05NjU3MDc3MDFdfQ==
+eyJoaXN0b3J5IjpbLTIwNzg3MzA2ODEsMjAyNzU0NTYxNSwtOT
+AyNTc0MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4
+Nzg1NjksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2Nj
+E4MywyNDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2MDQ2OSw5Njcx
+ODE2MzUsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkxNjY4NDcsMT
+AxNTk4ODk4MSwtOTY1NzA3NzAxXX0=
 -->
