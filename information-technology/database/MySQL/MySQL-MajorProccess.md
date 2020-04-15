@@ -76,7 +76,18 @@ ORDER BY first_name
 
 ### 투 패스(Two pass) 알고리즘
 
-정렬 대상 컬럼과 프라이머리 키값만을 소트 버퍼에 담아서 정렬을 수행하고, 정렬된 순서대로 다시 프라이머리 키로 테이블을 읽어 필요한 컬럼 정보를 가져오는 알고리즘으로, 오랫동안 MySQL에서 사용하던 방법이다. 
+정렬 대상 컬럼과 프라이머리 키값만을 소트 버퍼에 담아서 정렬을 수행하고, 정렬된 순서대로 다시 프라이머리 키로 테이블을 읽어 필요한 컬럼 정보를 가져오는 알고리즘으로, 오랫동안 MySQL에서 사용하던 방법이다. MySQL 5.0 이상에서도 특정 조건에는 이 방법을 사용한다. 
+
+```
+SELECT emp_no, first_name, last_name
+FROM employees
+ORDER BY first_name
+```
+
+처음 
+
+
+
 
 
 # Distinct 처리
@@ -86,11 +97,11 @@ ORDER BY first_name
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE1Nzc0NTU4LC0xNDI5ODMxNTUwLC01Nz
-IzMzQ0OCwtMjYzNTU5NDcxLDIwNDY3MjIwNjgsNjMzNjcyNzAz
-LC0yMTQxMjgxNjI1LC0xNTkwNTU5Mzc3LC0xMDM2MTY4Njg2LC
-00NjE1MTQxMDgsLTEzMjI0NDA2NDksLTU2NDMwODgyMSwtMjMx
-NzIyMDc0LDI4NjYwNzk1MSwtMTgwODk0MTE2OSwxODQxOTU3Nj
-ExLDExMDk0NTkyNDAsLTYxNDM3NTk4OCwtMjgyNDEwMzVdfQ==
-
+eyJoaXN0b3J5IjpbNDg5NjYzMDMzLDMxNTc3NDU1OCwtMTQyOT
+gzMTU1MCwtNTcyMzM0NDgsLTI2MzU1OTQ3MSwyMDQ2NzIyMDY4
+LDYzMzY3MjcwMywtMjE0MTI4MTYyNSwtMTU5MDU1OTM3NywtMT
+AzNjE2ODY4NiwtNDYxNTE0MTA4LC0xMzIyNDQwNjQ5LC01NjQz
+MDg4MjEsLTIzMTcyMjA3NCwyODY2MDc5NTEsLTE4MDg5NDExNj
+ksMTg0MTk1NzYxMSwxMTA5NDU5MjQwLC02MTQzNzU5ODgsLTI4
+MjQxMDM1XX0=
 -->
