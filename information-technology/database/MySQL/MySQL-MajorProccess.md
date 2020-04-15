@@ -67,7 +67,7 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 소트 버퍼에 정렬 기준 컬럼을 포함해 SELECT 되는 컬럼 전부를 담아서 정렬을 수행하는 방법이다. MySQL 5.0 이후 도입된 비교적 최식 버전의 정렬법이다.
 
 ```
-SELECT emp_no, first_name, last_name
+SELECT first_name, last_name
 FROM employees
 ORDER BY first_name
 ```
@@ -84,7 +84,7 @@ FROM employees
 ORDER BY first_name
 ```
 
-처음 employees 테이블을 읽을 때는 정렬에 필요한 first_name 컬럼과 프라이머리 키인 emp_no만 읽어서 정렬을 수행했음을 알 수 있다. 
+처음 employees 테이블을 읽을 때는 정렬에 필요한 first_name 컬럼과 프라이머리 키인 emp_no만 읽어서 정렬을 수행했음을 알 수 있다. 이 정렬이 완료되면 그 결과 순서대로 employees 테이블을 한번 더 읽어서 first_name과 
 
 
 
@@ -97,11 +97,11 @@ ORDER BY first_name
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MDM2NTY2MywzMTU3NzQ1NTgsLTE0Mj
-k4MzE1NTAsLTU3MjMzNDQ4LC0yNjM1NTk0NzEsMjA0NjcyMjA2
-OCw2MzM2NzI3MDMsLTIxNDEyODE2MjUsLTE1OTA1NTkzNzcsLT
-EwMzYxNjg2ODYsLTQ2MTUxNDEwOCwtMTMyMjQ0MDY0OSwtNTY0
-MzA4ODIxLC0yMzE3MjIwNzQsMjg2NjA3OTUxLC0xODA4OTQxMT
-Y5LDE4NDE5NTc2MTEsMTEwOTQ1OTI0MCwtNjE0Mzc1OTg4LC0y
-ODI0MTAzNV19
+eyJoaXN0b3J5IjpbMTM4NzExNjIsLTc4MDM2NTY2MywzMTU3Nz
+Q1NTgsLTE0Mjk4MzE1NTAsLTU3MjMzNDQ4LC0yNjM1NTk0NzEs
+MjA0NjcyMjA2OCw2MzM2NzI3MDMsLTIxNDEyODE2MjUsLTE1OT
+A1NTkzNzcsLTEwMzYxNjg2ODYsLTQ2MTUxNDEwOCwtMTMyMjQ0
+MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNzQsMjg2NjA3OTUxLC
+0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEwOTQ1OTI0MCwtNjE0
+Mzc1OTg4XX0=
 -->
