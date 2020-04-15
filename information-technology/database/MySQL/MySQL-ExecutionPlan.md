@@ -320,9 +320,9 @@ table 컬럼에 derived 또는 union과 같이 <>로 둘러싸인 이름이 명�
 
 ## type(access_type)
 
-쿼리 실행 계획에서 type 이후 컬럼은 MySQL 서버가 테이블 레코드를 어떤 방식으로 읽었는지를 의미한다. 방식이란 인덱스를 사용해 레코드를 읽었는지 아니면 테이블을 처음부터 끝까지 읽는 풀 테이블 스캔으로 읽었는지 등을 의미한다. **type 컬럼은 인덱스를 효율적으로 사용하는지를 알려주기 때문에 반드시 체크해야할 중요한 정보다.**
+쿼리 실행 계획에서 type 이후 컬럼은 MySQL 서버가 테이블 레코드를 어떤 방법으로 읽었는지를 의미한다. 방법이란 인덱스를 사용해 레코드를 읽었는지 아니면 테이블을 처음부터 끝까지 읽는 풀 테이블 스캔으로 읽었는지 등을 의미한다. **type 컬럼은 인덱스를 효율적으로 사용하는지를 알려주기 때문에 반드시 체크해야할 중요한 정보다.**
 
-MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. MySQL에서는 하나의 테이블로 부터 레코드를 읽는 것도 조인처럼 처리한다. 그래서 태이블 갯수에 관계없이 모두 조인 타입으로 명시하고 있다. 하지만 조인 타입으로 생각하지 말고 각 테이블의 접근 방식(Access type)으로 이해하면 좋다. 
+MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. MySQL에서는 하나의 테이블로 부터 레코드를 읽는 것도 조인처럼 처리한다. 그래서 태이블 갯수에 관계없이 모두 조인 타입으로 명시하고 있다. 하지만 조인 타입으로 생각하지 말고 각 테이블의 접근 방식(ㅁccess type)으로 이해하면 좋다. 
 
 * system
 * const, eq_ref, ref
@@ -645,11 +645,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDE1MjMwMzgsMTM0ODg0MTIyMSwtMT
-c2OTg5NTU5OSwtODI5MjEzMTEwLDIwMjc1NDU2MTUsLTkwMjU3
-NDMxNiwtMjExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NT
-Y5LDEzNDA3MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMs
-MjQ1NjI4NTA1LDEwODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNj
-M1LDE2MTU0OTUyMiw1ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5
-ODg5ODFdfQ==
+eyJoaXN0b3J5IjpbNjI4NjQxMTg2LDEzNDg4NDEyMjEsLTE3Nj
+k4OTU1OTksLTgyOTIxMzExMCwyMDI3NTQ1NjE1LC05MDI1NzQz
+MTYsLTIxMTgwNDI3NjcsLTEyNjUyMzA4NTgsMTM5NDg3ODU2OS
+wxMzQwNzI4MjM3LC0xNTQ4ODA2ODc5LC0xMTk4OTY2MTgzLDI0
+NTYyODUwNSwxMDgwMjgzNDA1LDY5MDYwNDY5LDk2NzE4MTYzNS
+wxNjE1NDk1MjIsNTgyNTU3NzUwLDU4OTE2Njg0NywxMDE1OTg4
+OTgxXX0=
 -->
