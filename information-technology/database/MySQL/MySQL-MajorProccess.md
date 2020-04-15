@@ -88,7 +88,12 @@ ORDER BY first_name
 
 MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 때문에 상당히 불합리 하지만 새로운 정렬방식인 싱글 패스(Single pass)알고리즘은 이런 불합리한 점이 없다. 하지만 싱글 패스 알고리즘은 더 많은 소트 버퍼 공간이 필요하다. 
 
-대략 12k8KB의 정렬 버퍼를 쓴다면, 싱글에서는 대략 
+대략 12k8KB의 정렬 버퍼를 쓴다면, 싱글에서는 대략 3500건, 투패스에서는 7000건의 레코드를 정렬할 수 있다. 
+
+최근 MySQL은 싱글 패스 알고리즘을 쓰지만 아래 상황일때는 투 패스 알고리즘을 사용한다. 
+
+* 레코드의 크기가 max_length_for_sort_data 파라미터로 설정된 값보다 클때
+* BLOB이나 TEXT 타입의 컬럼이 SELECT 대상에 포함될때 
 
 
 
@@ -101,7 +106,7 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MDE3NzAyMywtNzgwMzY1NjYzLDMxNT
+eyJoaXN0b3J5IjpbMTc0MzkzMjA4NSwtNzgwMzY1NjYzLDMxNT
 c3NDU1OCwtMTQyOTgzMTU1MCwtNTcyMzM0NDgsLTI2MzU1OTQ3
 MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4MTYyNSwtMT
 U5MDU1OTM3NywtMTAzNjE2ODY4NiwtNDYxNTE0MTA4LC0xMzIy
