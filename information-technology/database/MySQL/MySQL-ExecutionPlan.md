@@ -1,9 +1,9 @@
 # Overview
 
 
-DBMS에서는 요청 쿼리를 항상 같은 방법으로 똑같은 결과를 내지 않는다. 매번 쿼리를 요청할때 마다 변화하는 데이터 환경에서 최소의 비용을 계산한다. 이를 위해 DBMS는 테이블의 데이터가 어떤 분포로 저장되어 있는지 통계 정보를 참조하고, 그러한  통계 데이터를 비교해 최적의 실행 계획을 수립한다. 이 작업을 DBMS에서는 옵티마이저가 담당한다. 
+DBMS에서는 요청 쿼리를 항상 같은 방법으로 똑같은 결과를 내지 않는다. 매번 쿼리를 요청할때 마다 변화하는 데이터 환경에서 최소의 비용을 계산한다. 이를 위해 DBMS는 테이블의 데이터가 어떤 분포로 저장되어 있는지 통계 정보를 참조하고, 그러한 통계 데이터를 비교해 최적의 실행 계획을 수립한다. 그리고 이 작업은 DBMS의 옵티마이저가 담당한다. 
 
-MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다. 이 장에서는 실행 계획에 표시되는 내용이 무엇인지, MySQL 서버가 내부적으로 어떤 작업을 하는지 알아보겠다. 
+MySQL에서는 EXPLAIN 명령을 통해 옵티마이저의 실행 계획을 확인이 가능하다. 이 장에서는 실행 계획에 표시되는 내용이 무엇인지, MySQL 서버가 내부적으로 어떤 작업을 하는지 알아보겠다. 
 
 # 쿼리 실행 절차
 
@@ -26,8 +26,10 @@ MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다.
 
 옵티마지어의 종류에는 크게 두 종류가 있다. 현재 대부분의 DBMS가 선택하고 있는 옵티마이저는 비용 기반(Cost-based optimizer, CBO) 옵티마이저 또는 규칙 기반 최적화 방법(Rule-based optimizer, RBO)로 나누어진다.
 
-* 규칙 기반 최적화는 기본적으로 테이블 레코드 건수나 선택도 등을 전혀 고려하지 않고, 옵티마이저에 내장된 우선순위에 따라 실행계획을 수립한다.  따라서 같은 쿼리에 대해서는 거의 항상 같은 실행방법을 만들어 낸다. 과거에 각 테이블이나 인덱스의 통계정보가 거의 없고, 상대적으로 느린  CPU 연산탓에 비용 계산이 부당스러웠기 때문에 사용되었었다. 현재는 대부분 비용기반 옵티마이저를 채택하고 있다. 
-* 비용 기반 최적화는 쿼리를 처리하기 위해 여러 가능한 방법을 만들고, 각 단위 작업의 비용(부하) 정보와 대상 테이블의 예측된 통계를 이용해서 각 실행 계획별 비용을 산출한다. 이렇게 산출된 각 실행 방법별로 최소 비용이 소요되는 처리 방식을 선택해 최종 쿼리를 실행한다. 
+## Cost-based optimizer(CBO)
+규칙 기반 최적화는 기본적으로 테이블 레코드 건수나 선택도 등을 전혀 고려하지 않고, 옵티마이저에 내장된 우선순위에 따라 실행계획을 수립한다.  따라서 같은 쿼리에 대해서는 거의 항상 같은 실행방법을 만들어 낸다. 과거에 각 테이블이나 인덱스의 통계정보가 거의 없고, 상대적으로 느린  CPU 연산탓에 비용 계산이 부당스러웠기 때문에 사용되었었다. 현재는 대부분 비용기반 옵티마이저를 채택하고 있다. 
+
+## 
 
 # Statistical Information
 
@@ -638,9 +640,10 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMjU3NDMxNiwtMjExODA0Mjc2NywtMT
-I2NTIzMDg1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMzcsLTE1NDg4
-MDY4NzksLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwODAyODM0MD
-UsNjkwNjA0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1ODI1NTc3
-NTAsNTg5MTY2ODQ3LDEwMTU5ODg5ODEsLTk2NTcwNzcwMV19
+eyJoaXN0b3J5IjpbLTE4NDA5Njg0NzAsLTkwMjU3NDMxNiwtMj
+ExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NTY5LDEzNDA3
+MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMsMjQ1NjI4NT
+A1LDEwODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNjM1LDE2MTU0
+OTUyMiw1ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5ODg5ODEsLT
+k2NTcwNzcwMV19
 -->
