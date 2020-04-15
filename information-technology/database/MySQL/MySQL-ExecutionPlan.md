@@ -318,7 +318,7 @@ table 컬럼에 derived 또는 union과 같이 <>로 둘러싸인 이름이 명�
 > MySQL 파생 테이블 별칭 주의사항
 > MySQL은 다른 DBMS와 달리 FROM 절에 사용된 서브 쿼리(Derived, 파생 테이블)은 반드시 별칭을 가져야 한다. 그렇지 않으면 별칭이 부여되지 않았다는 에러 메세지가 출력되고 쿼리는 실행되지 않을 것이다. 쿼리를 작성하거나 실행 계획을 확인할때는 임시 테이블의 별칭을 잊지 말고 명시해야 한다. 
 
-## type(access_type)
+## type(join_type, access_type)
 
 쿼리 실행 계획에서 type 이후 컬럼은 MySQL 서버가 테이블 레코드를 어떤 방법으로 읽었는지를 의미한다. 방법이란 인덱스를 사용해 레코드를 읽었는지 아니면 테이블을 처음부터 끝까지 읽는 풀 테이블 스캔으로 읽었는지 등을 의미한다. **type 컬럼은 인덱스를 효율적으로 사용하는지를 알려주기 때문에 반드시 체크해야할 중요한 정보다.**
 
@@ -353,7 +353,7 @@ eq_ref
 ref
 : 조인 순서와 관계 없이 아무 인덱스를 사용하여 동등 조건으로 검색
 
-위 세 가지 방법은 모두 WHERE 조건절에서 사용되는 비교 연산자가 동등 비교 연산자이어야 한다. 그리고 모두 매우 빠른 접근 법으로 인덱스의 분포도가 나쁘지 않다면 성능상 문제를 일으키지 않는다. 쿼리 튜닝을 할때도 이 접근법에 대해선 넘어가도 무방하다.  
+위 세 가지 방법은 모두 WHERE 조건절에서 사용되는 비교 연산자가 동등 비교 연산자이어야 한다. 그리고 모두 매우 빠른 접근 법으로 인덱스의 분포도가 나쁘지 않다면 성능상 문제를 일으키지 않는다. 따라서 쿼리 튜닝을 할때도 넘어가도 무방하다.  
 
 #### const
 
@@ -642,11 +642,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTQ5MTgyNzksLTEwOTczMDA1NDYsMT
-M0ODg0MTIyMSwtMTc2OTg5NTU5OSwtODI5MjEzMTEwLDIwMjc1
-NDU2MTUsLTkwMjU3NDMxNiwtMjExODA0Mjc2NywtMTI2NTIzMD
-g1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMzcsLTE1NDg4MDY4Nzks
-LTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwODAyODM0MDUsNjkwNj
-A0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1ODI1NTc3NTAsNTg5
-MTY2ODQ3XX0=
+eyJoaXN0b3J5IjpbLTU4NTIyMTc2MCwtMTA5NzMwMDU0NiwxMz
+Q4ODQxMjIxLC0xNzY5ODk1NTk5LC04MjkyMTMxMTAsMjAyNzU0
+NTYxNSwtOTAyNTc0MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwOD
+U4LDEzOTQ4Nzg1NjksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwt
+MTE5ODk2NjE4MywyNDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2MD
+Q2OSw5NjcxODE2MzUsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkx
+NjY4NDddfQ==
 -->
