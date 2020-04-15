@@ -334,7 +334,7 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 총 12가지 접근 방법 중에서 ALL을 제외한 나머지는 모두 인덱스를 사용한 접근 방식이다. 하나의 단위 SELECT 쿼리는 위의 접근 방법 중에서 단 하나만 사용할 수 있다. 한 단위 SELECT에는 다수의 테이블 조인이 일어날 수 있는데 각 테이블에 존재하는 인덱스를 적절히 사용하여 필요한 정보를 가져올 수 있도록 접근 방법을 선택해야 한다.  
 
-index_merge를 제외한 나머지 접근 방법은 반드시 하나의 인덱스만 사용한다. 따라서 실행 계획에서 각 테이블에 접근 방법이 2개 이상 표시 되지 않으며, index_merge 이외에 type 에서는 인덱스 항목에도 단 하나의 인덱스 이름만 표시된다. 
+index_merge를 제외한 나머지 접근 방법은 테이블당 한 인덱스만 사용한다. 따라서 실행 계획에서 각 테이블에 접근 방법이 2개 이상 표시 되지 않으며, index_merge 이외에 type 에서는 인덱스 항목에도 단 하나의 인덱스 이름만 표시된다. 
 
 참고로 위의 나열된 접근 방식은 빠른 순서대로 나열된 것이다. MySQL 옵티마이저는 이런 접근 방식과 비용을 함께 계산하여 최소 비용의 접근방식을 선택한다.
 
@@ -642,11 +642,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTczMDA1NDYsMTM0ODg0MTIyMSwtMT
-c2OTg5NTU5OSwtODI5MjEzMTEwLDIwMjc1NDU2MTUsLTkwMjU3
-NDMxNiwtMjExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NT
-Y5LDEzNDA3MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMs
-MjQ1NjI4NTA1LDEwODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNj
-M1LDE2MTU0OTUyMiw1ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5
-ODg5ODFdfQ==
+eyJoaXN0b3J5IjpbLTE0MTQ5MTgyNzksLTEwOTczMDA1NDYsMT
+M0ODg0MTIyMSwtMTc2OTg5NTU5OSwtODI5MjEzMTEwLDIwMjc1
+NDU2MTUsLTkwMjU3NDMxNiwtMjExODA0Mjc2NywtMTI2NTIzMD
+g1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMzcsLTE1NDg4MDY4Nzks
+LTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwODAyODM0MDUsNjkwNj
+A0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1ODI1NTc3NTAsNTg5
+MTY2ODQ3XX0=
 -->
