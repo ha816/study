@@ -338,7 +338,7 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 ### const, eq_ref, ref
 
 const
-: 조인 순서와 관계없이 프라이머키리나 유니크 키의 모든 컬럼에 대해 동등 조건으로 반드시 1건의 레코드를 반환
+: 조인 순서와 관계없이 프라이머리 키나 유니크 키의 모든 컬럼에 대해 동등 조건으로 반드시 1건의 레코드를 반환
 
 eq_ref
 : 조인에서 첫번째 읽은 테이블의 컬럼값이 두번째 테이블의 프라이머리나 유니크 키로 동등조건 검색 된 경우
@@ -637,8 +637,9 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MDcyODIzNywtMTU0ODgwNjg3OSwtMT
-E5ODk2NjE4MywyNDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2MDQ2
-OSw5NjcxODE2MzUsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkxNj
-Y4NDcsMTAxNTk4ODk4MSwtOTY1NzA3NzAxXX0=
+eyJoaXN0b3J5IjpbMTM5NDg3ODU2OSwxMzQwNzI4MjM3LC0xNT
+Q4ODA2ODc5LC0xMTk4OTY2MTgzLDI0NTYyODUwNSwxMDgwMjgz
+NDA1LDY5MDYwNDY5LDk2NzE4MTYzNSwxNjE1NDk1MjIsNTgyNT
+U3NzUwLDU4OTE2Njg0NywxMDE1OTg4OTgxLC05NjU3MDc3MDFd
+fQ==
 -->
