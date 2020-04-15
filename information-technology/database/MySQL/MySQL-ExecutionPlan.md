@@ -158,12 +158,9 @@ SELECT * FROM (
 
 ### DEPENDENT UNION
 
-DEPENDENT UNION은 UNION이나 UNION ALL로 집합을 결합하는 쿼리에 표시될 수 있다. DEPENDENT는 단위 쿼리가 외부 결과에 의존적인 것을 의미하는데 DEPENDENT UNION은 UNION 이나 UNION ALL 결합에 외부 결과에 의존한다는 것을 말한다.
+DEPENDENT UNION은 UNION이나 UNION ALL로 집합을 결합하는 쿼리에 표시될 수 있다. DEPENDENT는 단위 쿼리가 외부 결과에 의존적인 것을 의미하는데 DEPENDENT UNION은 UNION 이나 UNION ALL 결합이 외부 결과에 의존한다는 것을 말한다.
 
-UNION과 UNION ALL의 차이
-: 결과 레코드의 중복 제거 유무에 달려있다. UNION은 모든 컬럼이 같은 결과에 대해서는 **중복 결과를 제거한다.** 하지만 UNION ALL은 제거하지 않는다. UNION을 쓰면 중복을 제거하기 위해 추가적인 작업을 반드시 해야하기 때문에 성능 이슈가 있을 수 있다. 하지만 보통 우리는 중복값을 필요로 하는 경우가 없다. 
-
-아래 쿼리의 서브 쿼리 두개가 UNION으로 결합되어 있다. 이 서브 쿼리를 보면 외부(Outer)에서 정의된 employees 테이블의 emp_no 컬럼을 사용하고 있다. 즉 내부 쿼리가 외부의 값을 참조해서 처리 될때 DEPENDENT 키워드가 표시된다.
+아래 쿼리의 서브 쿼리 두 개가 UNION으로 결합되어 있다. 이 서브 쿼리를 보면 외부(Outer)에서 정의된 employees 테이블의 emp_no 컬럼을 사용하고 있다. 즉 내부 쿼리가 외부의 값을 참조해서 처리 될때 DEPENDENT 키워드가 표시된다.
 
 ```
 EXPLAIN
@@ -181,11 +178,14 @@ WHERE e.emp_no = 10001;
 
 |id| select_type|
 |--|--|
-|1 | PRIMARY |
-| 2 | DEPENDENT SUBQUERY|
-|  3| DEPENDENT UNION|
+|1| PRIMARY |
+|2| DEPENDENT SUBQUERY|
+|3| DEPENDENT UNION|
 
-주의 
+>UNION과 UNION ALL의 차이
+>결과 레코드의 중복 제거 유무에 달려있다. UNION은 모든 컬럼이 같은 결과에 대해서는 **중복 결과를 제거한다.** 하지만 UNION ALL은 제거하지 않는다. UNION을 쓰면 중복을 제거하기 위해 추가적인 작업을 반드시 해야하기 때문에 성능 이슈가 있을 수 있다. 하지만 보통 우리는 중복값을 필요로 하는 경우가 없다. 
+
+>주의 사항
 > 하나의 단위 SELECT 쿼리가 다른 단위 SELECT를 포함하고 있으면 포함된 쿼리를 서브 쿼리라고 한다. 이처럼 서브 쿼리가 사용된 경우에는 외부(Outer) 쿼리보다 서브 쿼리가 먼저 실행되는것이 일반적이고 이 방식이 반대의 경우보다 보통 빠르다. 하지만 DEPENDENT 키워드를 포함하는 서브 쿼리는 외부 쿼리에 의존적이므로 절대 외부 쿼리보다 먼저 실행할 수없다. 그래서 DEPENDENT 키워드가 포함된 쿼리는 비효율적인 경우가 많다. 
 
 ### UNION RESULT
@@ -647,11 +647,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg5NTgwNjEsMTM0ODg0MTIyMSwtMTc2OT
-g5NTU5OSwtODI5MjEzMTEwLDIwMjc1NDU2MTUsLTkwMjU3NDMx
-NiwtMjExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NTY5LD
-EzNDA3MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMsMjQ1
-NjI4NTA1LDEwODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNjM1LD
-E2MTU0OTUyMiw1ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5ODg5
-ODFdfQ==
+eyJoaXN0b3J5IjpbLTE0NjAxMzc5MjgsMTM0ODg0MTIyMSwtMT
+c2OTg5NTU5OSwtODI5MjEzMTEwLDIwMjc1NDU2MTUsLTkwMjU3
+NDMxNiwtMjExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NT
+Y5LDEzNDA3MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMs
+MjQ1NjI4NTA1LDEwODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNj
+M1LDE2MTU0OTUyMiw1ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5
+ODg5ODFdfQ==
 -->
