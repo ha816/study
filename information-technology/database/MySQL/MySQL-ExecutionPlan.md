@@ -24,12 +24,14 @@ MySQL에서는 EXPLAIN 명령을 통해 옵티마이저의 실행 계획을 확�
 
 # Optimizer
 
-옵티마지어의 종류에는 크게 두 종류가 있다. 현재 대부분의 DBMS가 선택하고 있는 옵티마이저는 비용 기반(Cost-based optimizer, CBO) 옵티마이저 또는 규칙 기반 최적화 방법(Rule-based optimizer, RBO)로 나누어진다.
+옵티마지어의 종류에는 크게 두 종류가 있다. 현재 대부분의 DBMS가 선택하고 있는 옵티마이저는 비용 기반(Cost-based optimizer, CBO) 옵티마이저이며 과거에는 규칙 기반 (Rule-based optimizer, RBO)  옵티마이저
 
 ## Cost-based optimizer(CBO)
 규칙 기반 최적화는 기본적으로 테이블 레코드 건수나 선택도 등을 전혀 고려하지 않고, 옵티마이저에 내장된 우선순위에 따라 실행계획을 수립한다.  따라서 같은 쿼리에 대해서는 거의 항상 같은 실행방법을 만들어 낸다. 과거에 각 테이블이나 인덱스의 통계정보가 거의 없고, 상대적으로 느린  CPU 연산탓에 비용 계산이 부당스러웠기 때문에 사용되었었다. 현재는 대부분 비용기반 옵티마이저를 채택하고 있다. 
 
-## 
+## Rule-based optimizer(RBO)
+비용 기반 최적화는 쿼리를 처리하기 위해 여러 가능한 방법을 만들고, 각 단위 작업의 비용(부하) 정보와 대상 테이블의 예측된 통계를 이용해서 각 실행 계획별 비용을 산출한다. 이렇게 산출된 각 실행 방법별로 최소 비용이 소요되는 처리 방식을 선택해 최종 쿼리를 실행한다. 
+
 
 # Statistical Information
 
@@ -640,10 +642,10 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDA5Njg0NzAsLTkwMjU3NDMxNiwtMj
-ExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NTY5LDEzNDA3
-MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMsMjQ1NjI4NT
-A1LDEwODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNjM1LDE2MTU0
-OTUyMiw1ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5ODg5ODEsLT
-k2NTcwNzcwMV19
+eyJoaXN0b3J5IjpbMjAyNzU0NTYxNSwtOTAyNTc0MzE2LC0yMT
+E4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4Nzg1NjksMTM0MDcy
+ODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2NjE4MywyNDU2Mjg1MD
+UsMTA4MDI4MzQwNSw2OTA2MDQ2OSw5NjcxODE2MzUsMTYxNTQ5
+NTIyLDU4MjU1Nzc1MCw1ODkxNjY4NDcsMTAxNTk4ODk4MSwtOT
+Y1NzA3NzAxXX0=
 -->
