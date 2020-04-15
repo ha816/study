@@ -94,9 +94,10 @@ ALL, index
 
 ## id 컬럼
 
-실행 계획에서 가장 왼쪽에 표시되는 컬럼은 id 컬럼이다. 단위 SELECT 쿼리 별로 부여되는 식별자 값이다. 
+실행 계획에서 가장 왼쪽에 표시되는 컬럼은 id 컬럼이다. id컬럼은 단위 SELECT 쿼리 별로 부여되는 식별 값이다.
+단위 SELECT 쿼리는 하나의 SELECT 문장을 분리해낸 SELECT 문장을 말한다. 
 
-사실 하나의 SELECT 문장은 다시 1개 이상의 하위(SUB SELECT) 문장을 포함할 수 있다. 단위 SELECT 쿼리는 하나의 SELECT 문장을 분리해낸 SELECT 문장을 말한다. 
+ 하나의 SELECT 문장은 다시 1개 이상의 하위(SUB SELECT) 문장을 포함할 수 있다. 
 
 만약 하나의 SELECT 문장 안에서 여러 테이블을 조인하면 조인되는 태이블의 개수만큼 실행 계획 레코드가 출력되지만 같은 id가 부여된다. 
 
@@ -641,10 +642,10 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzg3MzA2ODEsMjAyNzU0NTYxNSwtOT
-AyNTc0MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4
-Nzg1NjksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2Nj
-E4MywyNDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2MDQ2OSw5Njcx
-ODE2MzUsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkxNjY4NDcsMT
-AxNTk4ODk4MSwtOTY1NzA3NzAxXX0=
+eyJoaXN0b3J5IjpbLTgyOTIxMzExMCwyMDI3NTQ1NjE1LC05MD
+I1NzQzMTYsLTIxMTgwNDI3NjcsLTEyNjUyMzA4NTgsMTM5NDg3
+ODU2OSwxMzQwNzI4MjM3LC0xNTQ4ODA2ODc5LC0xMTk4OTY2MT
+gzLDI0NTYyODUwNSwxMDgwMjgzNDA1LDY5MDYwNDY5LDk2NzE4
+MTYzNSwxNjE1NDk1MjIsNTgyNTU3NzUwLDU4OTE2Njg0NywxMD
+E1OTg4OTgxLC05NjU3MDc3MDFdfQ==
 -->
