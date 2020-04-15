@@ -462,7 +462,7 @@ SELECT * FROM departments WHERE dept_no IN (
 |id| select_type|table| type|
 |--|--|--|--|
 |1| PRIMARY|departments |index|
-|2|DEPENDENT SUBQUERY| dept_emp |index_subquery|
+|2| DEPENDENT SUBQUERY| dept_emp |index_subquery|
 
 ### range
 
@@ -642,7 +642,7 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTY2NTA1MDQsMTM0ODg0MTIyMSwtMT
+eyJoaXN0b3J5IjpbLTE4MTE0NTk0MTQsMTM0ODg0MTIyMSwtMT
 c2OTg5NTU5OSwtODI5MjEzMTEwLDIwMjc1NDU2MTUsLTkwMjU3
 NDMxNiwtMjExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NT
 Y5LDEzNDA3MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMs
