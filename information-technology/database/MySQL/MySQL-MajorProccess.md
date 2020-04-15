@@ -95,6 +95,9 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 * 레코드의 크기가 max_length_for_sort_data 파라미터로 설정된 값보다 클때
 * BLOB이나 TEXT 타입의 컬럼이 SELECT 대상에 포함될때 
 
+싱글 패스 알고리즘은 정렬 대상 레코드의 크기나 건수가 작은 경우 빠른 성능을 보이며, 투 패스 알고리즘은 정렬 대상 레코드의 크기나 건수가 많은 경우 효율적이다. 
+
+>SELECT 쿼리에서 꼭 필요한 컬럼만 조회하지 않고, 모든 컬럼(*)을 가져오도록 개발할때가 있다. 
 
 
 
@@ -106,11 +109,11 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MzkzMjA4NSwtNzgwMzY1NjYzLDMxNT
-c3NDU1OCwtMTQyOTgzMTU1MCwtNTcyMzM0NDgsLTI2MzU1OTQ3
-MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4MTYyNSwtMT
-U5MDU1OTM3NywtMTAzNjE2ODY4NiwtNDYxNTE0MTA4LC0xMzIy
-NDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcyMjA3NCwyODY2MDc5NT
-EsLTE4MDg5NDExNjksMTg0MTk1NzYxMSwxMTA5NDU5MjQwLC02
-MTQzNzU5ODhdfQ==
+eyJoaXN0b3J5IjpbLTczNzg4NzI1NywxNzQzOTMyMDg1LC03OD
+AzNjU2NjMsMzE1Nzc0NTU4LC0xNDI5ODMxNTUwLC01NzIzMzQ0
+OCwtMjYzNTU5NDcxLDIwNDY3MjIwNjgsNjMzNjcyNzAzLC0yMT
+QxMjgxNjI1LC0xNTkwNTU5Mzc3LC0xMDM2MTY4Njg2LC00NjE1
+MTQxMDgsLTEzMjI0NDA2NDksLTU2NDMwODgyMSwtMjMxNzIyMD
+c0LDI4NjYwNzk1MSwtMTgwODk0MTE2OSwxODQxOTU3NjExLDEx
+MDk0NTkyNDBdfQ==
 -->
