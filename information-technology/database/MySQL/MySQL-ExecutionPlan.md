@@ -120,7 +120,6 @@ SELECT COUNT(*) FROM employess + SELECT COUNT(*) FROM departments )
 |2| SUBQUERY |
 |3| SUBQUERY |
 
-
 ## select_type
 
 각 단위 SELECT 쿼리가 어떤 타입인지 알려준다. 
@@ -649,7 +648,7 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzc0OTc3MywtMTc2OTg5NTU5OSwtOD
+eyJoaXN0b3J5IjpbMTM0ODg0MTIyMSwtMTc2OTg5NTU5OSwtOD
 I5MjEzMTEwLDIwMjc1NDU2MTUsLTkwMjU3NDMxNiwtMjExODA0
 Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMz
 csLTE1NDg4MDY4NzksLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEw
