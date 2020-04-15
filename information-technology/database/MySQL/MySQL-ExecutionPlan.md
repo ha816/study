@@ -332,7 +332,7 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 * index
 * ALL
 
-총 12가지 접근 방법 중에서 ALL을 제외한 나머지는 모두 인덱스를 사용한 접근 방식이다. 하나의 단위 SELECT 쿼리는 위의 접근 방법 중에서 단 하나만 사용할 수 있다. 한 단위 SELECT에는 다수의 테이블 조인이 일어날 수 있기 때문에 
+총 12가지 접근 방법 중에서 ALL을 제외한 나머지는 모두 인덱스를 사용한 접근 방식이다. 하나의 단위 SELECT 쿼리는 위의 접근 방법 중에서 단 하나만 사용할 수 있다. 한 단위 SELECT에는 다수의 테이블 조인이 일어날 수 있는데 이 다수 테이블에서 필요한 정보를 인덱스를 사용하여 가져오도록 
 
 또한 index_merge를 제외한 나머지 접근 방법은 반드시 하나의 인덱스만 사용한다.   따라서 실행 계획에서 각 라인에 접근 방법이 2개 이상 표시 되지 않으며, index_merge 이외에 type 에서는 인덱스 항목에도 단 하나의 인덱스 이름만 표시된다. 
 
@@ -644,11 +644,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzkxODQyMCwxMzQ4ODQxMjIxLC0xNz
-Y5ODk1NTk5LC04MjkyMTMxMTAsMjAyNzU0NTYxNSwtOTAyNTc0
-MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4Nzg1Nj
-ksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2NjE4Mywy
-NDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2MDQ2OSw5NjcxODE2Mz
-UsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkxNjY4NDcsMTAxNTk4
-ODk4MV19
+eyJoaXN0b3J5IjpbNTQxMTM2MjIyLDEzNDg4NDEyMjEsLTE3Nj
+k4OTU1OTksLTgyOTIxMzExMCwyMDI3NTQ1NjE1LC05MDI1NzQz
+MTYsLTIxMTgwNDI3NjcsLTEyNjUyMzA4NTgsMTM5NDg3ODU2OS
+wxMzQwNzI4MjM3LC0xNTQ4ODA2ODc5LC0xMTk4OTY2MTgzLDI0
+NTYyODUwNSwxMDgwMjgzNDA1LDY5MDYwNDY5LDk2NzE4MTYzNS
+wxNjE1NDk1MjIsNTgyNTU3NzUwLDU4OTE2Njg0NywxMDE1OTg4
+OTgxXX0=
 -->
