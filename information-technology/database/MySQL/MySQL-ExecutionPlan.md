@@ -484,9 +484,7 @@ SELECT dept_no FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd003';
 
 ### index(index full scan)
 
-index 접근은 많은 사람들이 자주 오해하는 접근법이다. index라서 효율적으로 인덱스를 사용하는 것으로 생각할 수 있는데 절대 아니다. 
-
-**index 접근 방식은 인덱스를 처음부터 끝까지 읽는 인덱스 풀 스캔을 말한다. range 접근 방식과 같이 효율적으로 인덱스의 필요한 부분만 읽는 것은 아니라는 것을 명심하자**
+index 접근은 많은 사람들이 자주 오해하는 접근법이다. **index로 노출되어 효율적으로 인덱스를 사용하는 것으로 생각할 수 있는데 절대 아니다.** **index 접근 방식은 인덱스를 처음부터 끝까지 읽는 인덱스 풀 스캔을 말한다. range 접근 방식과 같이 효율적으로 인덱스의 필요한 부분만 읽는 것은 아니라는 것을 명심하자**
 
 index 접근법이 사용되는 조건은 아래와 같다. 
 * const, ref, range와 같은 접근법으로 인덱스를 사용하지 못하는 경우
@@ -641,11 +639,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MTU0NDE5LC0xMDk3MzAwNTQ2LDEzND
-g4NDEyMjEsLTE3Njk4OTU1OTksLTgyOTIxMzExMCwyMDI3NTQ1
-NjE1LC05MDI1NzQzMTYsLTIxMTgwNDI3NjcsLTEyNjUyMzA4NT
-gsMTM5NDg3ODU2OSwxMzQwNzI4MjM3LC0xNTQ4ODA2ODc5LC0x
-MTk4OTY2MTgzLDI0NTYyODUwNSwxMDgwMjgzNDA1LDY5MDYwND
-Y5LDk2NzE4MTYzNSwxNjE1NDk1MjIsNTgyNTU3NzUwLDU4OTE2
-Njg0N119
+eyJoaXN0b3J5IjpbMTI5NTIyNTE3MywtMTA5NzMwMDU0NiwxMz
+Q4ODQxMjIxLC0xNzY5ODk1NTk5LC04MjkyMTMxMTAsMjAyNzU0
+NTYxNSwtOTAyNTc0MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwOD
+U4LDEzOTQ4Nzg1NjksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwt
+MTE5ODk2NjE4MywyNDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2MD
+Q2OSw5NjcxODE2MzUsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkx
+NjY4NDddfQ==
 -->
