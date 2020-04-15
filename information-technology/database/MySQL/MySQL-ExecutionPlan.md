@@ -1,9 +1,7 @@
 # Overview
 
 
-DBMS에서는 요청 쿼리를 항상 같은 방법으로 똑같은 결과를 내지 않는다. 쿼리를 요청할때 마다 변화하는 데이터 환경에서 최소의 비용으로 
-
-이를 위해 DBMS는 테이블의 데이터가 어떤 분포로 저장되어 있는지 통계 정보를 참조하고, 그러한 기본 데이터를 비교해 최적의 실행 계획을 수립한다. 이 작업을 DBMS에서는 옵티마이저가 담당한다. 
+DBMS에서는 요청 쿼리를 항상 같은 방법으로 똑같은 결과를 내지 않는다. 매번 쿼리를 요청할때 마다 변화하는 데이터 환경에서 최소의 비용을 계산한다. 이를 위해 DBMS는 테이블의 데이터가 어떤 분포로 저장되어 있는지 통계 정보를 참조하고, 그러한  통계 데이터를 비교해 최적의 실행 계획을 수립한다. 이 작업을 DBMS에서는 옵티마이저가 담당한다. 
 
 MySQL에서는 EXPLAIN 명령을 통해 실행 계획을 확인이 가능하다. 이 장에서는 실행 계획에 표시되는 내용이 무엇인지, MySQL 서버가 내부적으로 어떤 작업을 하는지 알아보겠다. 
 
@@ -640,9 +638,9 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTgwNDI3NjcsLTEyNjUyMzA4NTgsMT
-M5NDg3ODU2OSwxMzQwNzI4MjM3LC0xNTQ4ODA2ODc5LC0xMTk4
-OTY2MTgzLDI0NTYyODUwNSwxMDgwMjgzNDA1LDY5MDYwNDY5LD
-k2NzE4MTYzNSwxNjE1NDk1MjIsNTgyNTU3NzUwLDU4OTE2Njg0
-NywxMDE1OTg4OTgxLC05NjU3MDc3MDFdfQ==
+eyJoaXN0b3J5IjpbLTkwMjU3NDMxNiwtMjExODA0Mjc2NywtMT
+I2NTIzMDg1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMzcsLTE1NDg4
+MDY4NzksLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwODAyODM0MD
+UsNjkwNjA0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1ODI1NTc3
+NTAsNTg5MTY2ODQ3LDEwMTU5ODg5ODEsLTk2NTcwNzcwMV19
 -->
