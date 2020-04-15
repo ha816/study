@@ -256,10 +256,9 @@ WHERE e.emp_no = 10001;
 
 |id| select_type|table|
 |--|--|--|
-|1 | PRIMARY |e|
-| 2 | DEPENDENT SUBQUERY| de|
+|1| PRIMARY |e|
+|2| DEPENDENT SUBQUERY| de|
 |2|DEPENDENT SUBQUERY|dm|
-
 
 ### DERIVED
 
@@ -277,10 +276,11 @@ WHERE e.emp_no=tb.emp_no;
 
 |id| select_type|table|
 |--|--|--|
-|1 | PRIMARY |<derived2>|
-| 1| PRIMARY| e|
+|1| PRIMARY |derived2|
+|1| PRIMARY| e|
 |2|DERIVED |de|
 
+> 쿼리 튜닝 TIP
 > 쿼리 튜닝을 하기 위해 실행 계획을 확인할때는 select_type에 DERIVED가 있는지 확인해야 한다. 다른 방법이 없어서 서브 쿼리를 사용하는 것은 피할 수 없지만 조인으로 해결할 수 있다면 서브 쿼리보다 조인을 활용할것은 권장한다. 
 
 ### UNCACHEABLE SUBQUERY, UNION
@@ -301,7 +301,7 @@ DEPENDENT SUBQUERY는 외부 쿼리의 값을 단위로 캐시가 만들어진�
 
 MySQL 실행 계획은 단위 SELECT 기준이 아니라 테이블 기준으로 표시된다. 만약 테이블의 이름에 별칭이 부여된 경우에는 별칭이 표시된다. 별도로 테이블을 사용하지 않은 경우 table에는 NULL이 표시된다.
 
-Table 칼럼에 <derived> 또는 <union>과 같이 <> 둘러싸인 이름이 명시되는 경우는, 임시테이블을 의미한다. 그리고 <>안에 표시되는 숫자는 단위 SELECT 쿼리의 id를 지칭한다. 
+Table 칼럼에 derived 또는 union과 같이 <>로 둘러싸인 이름이 명시되는 경우는, 임시테이블을 의미한다. 그리고 <>안에 표시되는 숫자는 단위 SELECT 쿼리의 id를 지칭한다. 
 
 <derived 2>라는 것은 2번 단위 SELECT 쿼리의 실행 계획으로 만들어진 파생 테이블을 말한다.
 
@@ -646,11 +646,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk0NzM5MjAxLDEzNDg4NDEyMjEsLTE3Nj
-k4OTU1OTksLTgyOTIxMzExMCwyMDI3NTQ1NjE1LC05MDI1NzQz
-MTYsLTIxMTgwNDI3NjcsLTEyNjUyMzA4NTgsMTM5NDg3ODU2OS
-wxMzQwNzI4MjM3LC0xNTQ4ODA2ODc5LC0xMTk4OTY2MTgzLDI0
-NTYyODUwNSwxMDgwMjgzNDA1LDY5MDYwNDY5LDk2NzE4MTYzNS
-wxNjE1NDk1MjIsNTgyNTU3NzUwLDU4OTE2Njg0NywxMDE1OTg4
-OTgxXX0=
+eyJoaXN0b3J5IjpbLTE2ODM4MjQ4NSwxMzQ4ODQxMjIxLC0xNz
+Y5ODk1NTk5LC04MjkyMTMxMTAsMjAyNzU0NTYxNSwtOTAyNTc0
+MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4Nzg1Nj
+ksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2NjE4Mywy
+NDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2MDQ2OSw5NjcxODE2Mz
+UsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkxNjY4NDcsMTAxNTk4
+ODk4MV19
 -->
