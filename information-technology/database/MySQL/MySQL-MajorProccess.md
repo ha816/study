@@ -64,7 +64,13 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 
 ### 싱글 패스(Single pass) 알고리즘
 
-소트 버퍼에 정렬 기준 컬럼을 포함해 SELECT 되는 컬럼 전부를 담아서 정렬을 수행하는 방법이다. MySQL 5.0 이후 
+소트 버퍼에 정렬 기준 컬럼을 포함해 SELECT 되는 컬럼 전부를 담아서 정렬을 수행하는 방법이다. MySQL 5.0 이후 도입된 비교적 최식 버전의 정렬법이다.
+
+```
+SELECT emp_no, first_name, last_name
+FROM employees
+ORDER BY first_name
+```
 
 
 투 패스(Two pass) 알고리즘
@@ -78,10 +84,10 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzOTQ3NDU4NywtNTcyMzM0NDgsLTI2Mz
-U1OTQ3MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4MTYy
-NSwtMTU5MDU1OTM3NywtMTAzNjE2ODY4NiwtNDYxNTE0MTA4LC
-0xMzIyNDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcyMjA3NCwyODY2
-MDc5NTEsLTE4MDg5NDExNjksMTg0MTk1NzYxMSwxMTA5NDU5Mj
-QwLC02MTQzNzU5ODgsLTI4MjQxMDM1XX0=
+eyJoaXN0b3J5IjpbLTE0Mjk4MzE1NTAsLTU3MjMzNDQ4LC0yNj
+M1NTk0NzEsMjA0NjcyMjA2OCw2MzM2NzI3MDMsLTIxNDEyODE2
+MjUsLTE1OTA1NTkzNzcsLTEwMzYxNjg2ODYsLTQ2MTUxNDEwOC
+wtMTMyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNzQsMjg2
+NjA3OTUxLC0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEwOTQ1OT
+I0MCwtNjE0Mzc1OTg4LC0yODI0MTAzNV19
 -->
