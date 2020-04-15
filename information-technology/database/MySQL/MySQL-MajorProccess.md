@@ -72,19 +72,21 @@ FROM employees
 ORDER BY first_name
 ```
 
-처음 employees 테이블을 읽을때, 정렬에 직접 필요하지 않은 first_name, last_name까지 전부 읽어 소트 버퍼에 담고 정렬을 수행한다. 그리고 정렬이 완료되면 그대로 정렬 버퍼의 내용을 클라이언트에게 넘겨준다. 
+처음 employees 테이블을 읽을때, 정렬에 직접 필요하지 않은 last_name까지 전부 읽어 소트 버퍼에 담고 정렬을 수행한다. 그리고 정렬이 완료되면 그대로 정렬 버퍼의 내용을 클라이언트에게 넘겨준다. 
 
 ### 투 패스(Two pass) 알고리즘
 
 정렬 대상 컬럼과 프라이머리 키값만을 소트 버퍼에 담아서 정렬을 수행하고, 정렬된 순서대로 다시 프라이머리 키로 테이블을 읽어 필요한 컬럼 정보를 가져오는 알고리즘으로, 오랫동안 MySQL에서 사용하던 방법이다. MySQL 5.0 이상에서도 특정 조건에는 이 방법을 사용한다. 
 
 ```
-SELECT emp_no, first_name, last_name
+SELECT first_name, last_name
 FROM employees
 ORDER BY first_name
 ```
 
-처음 employees 테이블을 읽을 때는 정렬에 필요한 first_name 컬럼과 프라이머리 키인 emp_no만 읽어서 정렬을 수행했음을 알 수 있다. 이 정렬이 완료되면 그 결과 순서대로 employees 테이블을 한번 더 읽어서 first_name과 
+처음 employees 테이블을 읽을 때는 정렬에 필요한 first_name 컬럼과 프라이머리 키인 emp_no만 읽어서 정렬을 수행했음을 알 수 있다. 이 정렬이 완료되면 그 결과 순서대로 employees 테이블을 한번 더 읽어서 last_name을 가져와 결과로 반환한다.
+
+MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 때문에 상당히 불합리 하지만 새로운 정렬방식인 one 
 
 
 
@@ -97,11 +99,11 @@ ORDER BY first_name
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzExNjIsLTc4MDM2NTY2MywzMTU3Nz
-Q1NTgsLTE0Mjk4MzE1NTAsLTU3MjMzNDQ4LC0yNjM1NTk0NzEs
-MjA0NjcyMjA2OCw2MzM2NzI3MDMsLTIxNDEyODE2MjUsLTE1OT
-A1NTkzNzcsLTEwMzYxNjg2ODYsLTQ2MTUxNDEwOCwtMTMyMjQ0
-MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNzQsMjg2NjA3OTUxLC
-0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEwOTQ1OTI0MCwtNjE0
-Mzc1OTg4XX0=
+eyJoaXN0b3J5IjpbOTUxNTA4Njg0LC03ODAzNjU2NjMsMzE1Nz
+c0NTU4LC0xNDI5ODMxNTUwLC01NzIzMzQ0OCwtMjYzNTU5NDcx
+LDIwNDY3MjIwNjgsNjMzNjcyNzAzLC0yMTQxMjgxNjI1LC0xNT
+kwNTU5Mzc3LC0xMDM2MTY4Njg2LC00NjE1MTQxMDgsLTEzMjI0
+NDA2NDksLTU2NDMwODgyMSwtMjMxNzIyMDc0LDI4NjYwNzk1MS
+wtMTgwODk0MTE2OSwxODQxOTU3NjExLDExMDk0NTkyNDAsLTYx
+NDM3NTk4OF19
 -->
