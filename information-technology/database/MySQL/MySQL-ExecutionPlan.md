@@ -107,15 +107,19 @@ WHERE e.emp_no = s.emp_no
 |--|--|
 |1| SIMPLE |
 |1| SIMPLE |
-|3| UNION |
-|4| UNION |
 
-반대로 한 쿼리 문장이 다수의 단위 SELECT 쿼리로 구성되어 있으면 각 레코드가 다른 id를 지닌다.
+한 SELECT 쿼리 문장이 다수의 하위 SELECT 쿼리로 구성되어 있으면 각 레코드가 다른 id를 지닌다.
 ```
 EXPLAIN
 SELECT ( 
 SELECT COUNT(*) FROM employess + SELECT COUNT(*) FROM departments )
 ```
+|id| select_type|
+|--|--|
+|1| PRIMARY |
+|2| SIMPLE |
+|2| SIMPLE |
+
 
 ## select_type
 
@@ -645,10 +649,10 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMzE5MTcwMCwtODI5MjEzMTEwLDIwMj
-c1NDU2MTUsLTkwMjU3NDMxNiwtMjExODA0Mjc2NywtMTI2NTIz
-MDg1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMzcsLTE1NDg4MDY4Nz
-ksLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwODAyODM0MDUsNjkw
-NjA0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1ODI1NTc3NTAsNT
-g5MTY2ODQ3LDEwMTU5ODg5ODEsLTk2NTcwNzcwMV19
+eyJoaXN0b3J5IjpbNDkwNDY3Nzc2LC04MjkyMTMxMTAsMjAyNz
+U0NTYxNSwtOTAyNTc0MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMw
+ODU4LDEzOTQ4Nzg1NjksMTM0MDcyODIzNywtMTU0ODgwNjg3OS
+wtMTE5ODk2NjE4MywyNDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2
+MDQ2OSw5NjcxODE2MzUsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1OD
+kxNjY4NDcsMTAxNTk4ODk4MSwtOTY1NzA3NzAxXX0=
 -->
