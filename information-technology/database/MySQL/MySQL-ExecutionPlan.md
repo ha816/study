@@ -158,7 +158,7 @@ SELECT * FROM (
 
 ### DEPENDENT UNION
 
-DEPENDENT UNION은 UNION이나 UNION ALL로 집합을 결합하는 쿼리에 표시된다. DEPENDENT는 단위 쿼리가 외부에 의존적인 것을 의미하는데 여기선 UNION 이나 UNION ALL 결합에서 외부에 의존적인 데이
+DEPENDENT UNION은 UNION이나 UNION ALL로 집합을 결합하는 쿼리에 표시될 수 있다. DEPENDENT는 단위 쿼리가 외부 결과에 의존적인 것을 의미하는데 DEPENDENT UNION은 UNION 이나 UNION ALL 결합에 외부 결과에 의존한다는 것을 말한다.
 
 UNION과 UNION ALL의 차이
 : 결과 레코드의 중복 제거 유무에 달려있다. UNION은 모든 컬럼이 같은 결과에 대해서는 **중복 결과를 제거한다.** 하지만 UNION ALL은 제거하지 않는다. UNION을 쓰면 중복을 제거하기 위해 추가적인 작업을 반드시 해야하기 때문에 성능 이슈가 있을 수 있다. 하지만 보통 우리는 중복값을 필요로 하는 경우가 없다. 
@@ -647,11 +647,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3ODg3OTgyMywxMzQ4ODQxMjIxLC0xNz
-Y5ODk1NTk5LC04MjkyMTMxMTAsMjAyNzU0NTYxNSwtOTAyNTc0
-MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4Nzg1Nj
-ksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2NjE4Mywy
-NDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2MDQ2OSw5NjcxODE2Mz
-UsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkxNjY4NDcsMTAxNTk4
-ODk4MV19
+eyJoaXN0b3J5IjpbNzg5NTgwNjEsMTM0ODg0MTIyMSwtMTc2OT
+g5NTU5OSwtODI5MjEzMTEwLDIwMjc1NDU2MTUsLTkwMjU3NDMx
+NiwtMjExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NTY5LD
+EzNDA3MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMsMjQ1
+NjI4NTA1LDEwODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNjM1LD
+E2MTU0OTUyMiw1ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5ODg5
+ODFdfQ==
 -->
