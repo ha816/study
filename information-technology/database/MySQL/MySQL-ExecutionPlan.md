@@ -301,7 +301,7 @@ DEPENDENT SUBQUERY는 외부 쿼리의 값을 단위로 캐시가 만들어진�
 
 MySQL 실행 계획은 단위 SELECT 기준이 아니라 테이블 기준으로 표시된다. 만약 테이블의 이름에 별칭이 부여된 경우에는 별칭이 표시된다. 별도로 테이블을 사용하지 않은 경우 table에는 NULL이 표시된다.
 
-Table 칼럼에 derived 또는 union과 같이 <>로 둘러싸인 이름이 명시되는 경우는, 임시테이블을 의미한다. 그리고 <>안에 표시되는 숫자는 단위 SELECT 쿼리의 id를 지칭한다. 
+table 컬럼에 derived 또는 union과 같이 <>로 둘러싸인 이름이 명시되는 경우는, 임시테이블을 의미한다. 그리고 <>안에 표시되는 숫자는 단위 SELECT 쿼리의 id를 지칭한다. 
 
 <derived 2>라는 것은 2번 단위 SELECT 쿼리의 실행 계획으로 만들어진 파생 테이블을 말한다.
 
@@ -646,7 +646,7 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODM4MjQ4NSwxMzQ4ODQxMjIxLC0xNz
+eyJoaXN0b3J5IjpbMTE1Njc5NjUzOSwxMzQ4ODQxMjIxLC0xNz
 Y5ODk1NTk5LC04MjkyMTMxMTAsMjAyNzU0NTYxNSwtOTAyNTc0
 MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4Nzg1Nj
 ksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2NjE4Mywy
