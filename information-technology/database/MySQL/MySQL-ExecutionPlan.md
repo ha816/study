@@ -353,13 +353,13 @@ eq_ref
 ref
 : 조인 순서와 관계 없이 아무 인덱스를 사용하여 동등 조건으로 검색
 
-위 세 가지 방법은 모두 WHERE 조건절에서 사용되는 비교 연산자가 동등 비교 연산자이어야 한다. 그리고 모두 매우 빠른 접근 법으로 인덱스의 분포도가 나쁘지 않다면 성능상 문제를 일으키지 않는다. 따라서 쿼리 튜닝을 할때도 넘어가도 무방하다.  
+위 세 가지 방법은 모두 WHERE 조건절에서 사용되는 비교 연산자가 동등 비교 연산자이어야 한다. 그리고 모두 매우 빠른 접근 법으로 인덱스의 분포도가 나쁘지 않다면 성능상 문제를 일으키지 않는다. 따라서 쿼리 튜닝을 할때도 무시해도 무방하다.
 
 #### const
 
-**프라이머리 키나 유니크 키 컬럼을 이용하는 WHERE조건 절을 가지고 있고, 반드시 1건을 반환하는 방식이다.** 다른 DBMS에서는 유니크 인덱스 스캔(UNIQUE INDEX SCAN)이라고도 한다.
+**프라이머리 키나 유니크 키 컬럼을 이용하는 WHERE 조건을 가지고 있고, 반드시 유일한 레코드 1건을 반환하는 방식이다.** 다른 DBMS에서는 유니크 인덱스 스캔(UNIQUE INDEX SCAN)이라고도 한다.
 ```
-EXPLAIN  SELECT * FROM employyess WHERE emp_no = 10001; -- emp_no IS UNIQUE KEY
+EXPLAIN  SELECT * FROM employees WHERE emp_no = 10001; -- emp_no IS UNIQUE KEY
 ```
 const는 쿼리를 최적화하는 단계에서 모두 상수화를 한다, 그래서 const이다. 
 ```
@@ -382,8 +382,7 @@ eq_ref(동등 참조)는 여러 테이블이 조인되는 실행 계획에서만
 ```
 EXPLAIN
 SELECT * FROM dept_emp de, employees e -- de JOIN e
-WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005' 
--- e.emp_no is Primary key. Exist one record.
+WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005' -- e.emp_no is Primary key. Exist one record.
 ```
 
 |id| select_type|table| type|
@@ -395,7 +394,7 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 
 eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리나 유니크 키등의 제약 조건도 없다. 즉 아무 인덱스를 사용하여 동등조건으로 검색할때는 ref 접근 방법이 된다. 
 
-프라이머리나 유니크 키등의 제약에서 자유롭기 때문에 레코드가 유일한 1건이라는 보장이 없지만 동등한 조건으로만 비교되므로 매우 빠르다, 
+프라이머리나 유니크 키등의 제약에서 자유롭기 때문에 레코드가 유일한 1건이라는 보장이 없지만 동등한 조건으로만 비교되므로 매우 빠르다. 
 
 ```
 EXPLAIN
@@ -642,11 +641,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NTIyMTc2MCwtMTA5NzMwMDU0NiwxMz
-Q4ODQxMjIxLC0xNzY5ODk1NTk5LC04MjkyMTMxMTAsMjAyNzU0
-NTYxNSwtOTAyNTc0MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwOD
-U4LDEzOTQ4Nzg1NjksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwt
-MTE5ODk2NjE4MywyNDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2MD
-Q2OSw5NjcxODE2MzUsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkx
-NjY4NDddfQ==
+eyJoaXN0b3J5IjpbLTc2MTU0NDE5LC0xMDk3MzAwNTQ2LDEzND
+g4NDEyMjEsLTE3Njk4OTU1OTksLTgyOTIxMzExMCwyMDI3NTQ1
+NjE1LC05MDI1NzQzMTYsLTIxMTgwNDI3NjcsLTEyNjUyMzA4NT
+gsMTM5NDg3ODU2OSwxMzQwNzI4MjM3LC0xNTQ4ODA2ODc5LC0x
+MTk4OTY2MTgzLDI0NTYyODUwNSwxMDgwMjgzNDA1LDY5MDYwND
+Y5LDk2NzE4MTYzNSwxNjE1NDk1MjIsNTgyNTU3NzUwLDU4OTE2
+Njg0N119
 -->
