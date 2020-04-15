@@ -122,7 +122,7 @@ SELECT COUNT(*) FROM employess + SELECT COUNT(*) FROM departments )
 
 ## select_type
 
-각 단위 SELECT 쿼리가 어떤 타입인지 알려준다. 
+각 단위 SELECT 쿼리가 어떤 방법으로 
 
 ### SIMPLE
 
@@ -158,10 +158,10 @@ SELECT * FROM (
 
 ### DEPENDENT UNION
 
-DEPENDENT UNION은 UNION이나 UNION ALL로 집합을 결합하는 쿼리에 표시된다. 추가적으로 **DEPENDENT는 UNION 이나 UNION ALL로 결합된 단위 쿼리가 외부의 영향을 받는 것을 의미한다.** 
+DEPENDENT UNION은 UNION이나 UNION ALL로 집합을 결합하는 쿼리에 표시된다. 추가적으로 **DEPENDENT는 UNION 이나 UNION ALL로 결합된 단위 쿼리가 외부에 의존적인 것을 의미한다.** 
 
->UNION VS UNION ALL
->결과 레코드의 중복을 제거 여부
+UNION VS UNION ALL
+: 결과 레코드의 중복을 제거 여부
 UNION은 모든 컬럼이 같은 결과에 대해서는 중복 결과를 제거하지만 UNION ALL은 제거하지 않는다. UNION을 쓰면 중복을 제거하기 위해 추가적인 작업을 반드시 해야하기 때문에 성능 이슈가 있을 수 있다. 하지만 보통 우리는 중복값을 필요로 하는 경우가 없다. 
 
 아래 쿼리의 서브 쿼리 두개가 UNION으로 결합되어 있다. 이 서브 쿼리를 보면 외부(Outer)에서 정의된 employees 테이블의 emp_no 컬럼을 사용하고 있다. 즉 내부 쿼리가 외부의 값을 참조해서 처리 될때 DEPENDENT 키워드가 표시된다.
@@ -648,11 +648,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODg0MTIyMSwtMTc2OTg5NTU5OSwtOD
-I5MjEzMTEwLDIwMjc1NDU2MTUsLTkwMjU3NDMxNiwtMjExODA0
-Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMz
-csLTE1NDg4MDY4NzksLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEw
-ODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNjM1LDE2MTU0OTUyMi
-w1ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5ODg5ODEsLTk2NTcw
-NzcwMV19
+eyJoaXN0b3J5IjpbLTE1ODg3MDkwMiwxMzQ4ODQxMjIxLC0xNz
+Y5ODk1NTk5LC04MjkyMTMxMTAsMjAyNzU0NTYxNSwtOTAyNTc0
+MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4Nzg1Nj
+ksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2NjE4Mywy
+NDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2MDQ2OSw5NjcxODE2Mz
+UsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkxNjY4NDcsMTAxNTk4
+ODk4MV19
 -->
