@@ -95,13 +95,20 @@ ALL, index
 ## id 컬럼
 
 실행 계획에서 가장 왼쪽에 표시되는 컬럼은 id 컬럼이고 **단위 SELECT 쿼리** 별로 부여되는 식별 값이다.
-하나의 SELECT 쿼리 문장은 다시 1건 이상의 하위(SUB) SELECT 쿼리를 포함할 수 있다. 단위 SELECT 쿼리란 하나의 SELECT 쿼리에 존재하는 모든(SUB 포함) SELECT 문장 중 하나를 말한다. 만약 하나의 SELECT 문장 안에서 여러 테이블을 조인하면 조인되는 태이블의 개수만큼 실행 계획 레코드가 출력되지만 같은 id가 부여된다. 
+하나의 SELECT 쿼리 문장은 다시 1건 이상의 하위(SUB) SELECT 쿼리를 포함할 수 있다. 단위 SELECT 쿼리란 하나의 SELECT 쿼리에 존재하는 모든(SUB 포함) SELECT 문장 중 하나를 말한다. 만약 하나의 SELECT 문장 안에서 여러 테이블을 조인하면 조인하는 태이블의 개수만큼 실행 계획 레코드가 출력되지만 모두 같은 id를 가지게 된다.
 
 ```
 EXPLAIN
 SELECT * FROM employees e, salaries s
 WHERE e.emp_no = s.emp_no
 ```
+
+|id| select_type|
+|--|--|
+|1| SIMPLE |
+|1| SIMPLE |
+|3| UNION |
+|4| UNION |
 
 반대로 한 쿼리 문장이 다수의 단위 SELECT 쿼리로 구성되어 있으면 각 레코드가 다른 id를 지닌다.
 ```
@@ -141,10 +148,10 @@ SELECT * FROM (
 
 |id| select_type|
 |--|--|
-|1 | PRIMARY |
-| 2 | DERIVED|
-|  3| UNION|
-|  4| UNION|
+|1| PRIMARY |
+|2| DERIVED |
+|3| UNION |
+|4| UNION |
 
 ### DEPENDENT UNION
 
@@ -638,10 +645,10 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUzODAyMjY3LC04MjkyMTMxMTAsMjAyNz
-U0NTYxNSwtOTAyNTc0MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMw
-ODU4LDEzOTQ4Nzg1NjksMTM0MDcyODIzNywtMTU0ODgwNjg3OS
-wtMTE5ODk2NjE4MywyNDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2
-MDQ2OSw5NjcxODE2MzUsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1OD
-kxNjY4NDcsMTAxNTk4ODk4MSwtOTY1NzA3NzAxXX0=
+eyJoaXN0b3J5IjpbLTczMzE5MTcwMCwtODI5MjEzMTEwLDIwMj
+c1NDU2MTUsLTkwMjU3NDMxNiwtMjExODA0Mjc2NywtMTI2NTIz
+MDg1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMzcsLTE1NDg4MDY4Nz
+ksLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwODAyODM0MDUsNjkw
+NjA0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1ODI1NTc3NTAsNT
+g5MTY2ODQ3LDEwMTU5ODg5ODEsLTk2NTcwNzcwMV19
 -->
