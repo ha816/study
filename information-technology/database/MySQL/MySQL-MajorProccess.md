@@ -72,10 +72,9 @@ FROM employees
 ORDER BY first_name
 ```
 
-처음 employees 테이블을 읽을때, 정렬ㅇ
+처음 employees 테이블을 읽을때, 정렬에 직접 필요하지 않은 first_name, last_name까지 전부 읽어 소트 버퍼에 담고 정렬을 수행한다. 그리고 정렬이 완료되면 그대로 정렬 버퍼의 내용을 클라이언트에게 넘겨준다. 
 
-
-투 패스(Two pass) 알고리즘
+### 투 패스(Two pass) 알고리즘
 
 
 
@@ -86,11 +85,11 @@ ORDER BY first_name
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MTIxMjAzMCwtMTQyOTgzMTU1MCwtNT
-cyMzM0NDgsLTI2MzU1OTQ3MSwyMDQ2NzIyMDY4LDYzMzY3Mjcw
-MywtMjE0MTI4MTYyNSwtMTU5MDU1OTM3NywtMTAzNjE2ODY4Ni
-wtNDYxNTE0MTA4LC0xMzIyNDQwNjQ5LC01NjQzMDg4MjEsLTIz
-MTcyMjA3NCwyODY2MDc5NTEsLTE4MDg5NDExNjksMTg0MTk1Nz
-YxMSwxMTA5NDU5MjQwLC02MTQzNzU5ODgsLTI4MjQxMDM1XX0=
+eyJoaXN0b3J5IjpbMzcxMjIyMDkyLC0xNDI5ODMxNTUwLC01Nz
+IzMzQ0OCwtMjYzNTU5NDcxLDIwNDY3MjIwNjgsNjMzNjcyNzAz
+LC0yMTQxMjgxNjI1LC0xNTkwNTU5Mzc3LC0xMDM2MTY4Njg2LC
+00NjE1MTQxMDgsLTEzMjI0NDA2NDksLTU2NDMwODgyMSwtMjMx
+NzIyMDc0LDI4NjYwNzk1MSwtMTgwODk0MTE2OSwxODQxOTU3Nj
+ExLDExMDk0NTkyNDAsLTYxNDM3NTk4OCwtMjgyNDEwMzVdfQ==
 
 -->
