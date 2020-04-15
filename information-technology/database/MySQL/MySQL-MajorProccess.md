@@ -86,7 +86,9 @@ ORDER BY first_name
 
 처음 employees 테이블을 읽을 때는 정렬에 필요한 first_name 컬럼과 프라이머리 키인 emp_no만 읽어서 정렬을 수행했음을 알 수 있다. 이 정렬이 완료되면 그 결과 순서대로 employees 테이블을 한번 더 읽어서 last_name을 가져와 결과로 반환한다.
 
-MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 때문에 상당히 불합리 하지만 새로운 정렬방식인 one 
+MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 때문에 상당히 불합리 하지만 새로운 정렬방식인 싱글 패스(Single pass)알고리즘은 이런 불합리한 점이 없다. 하지만 싱글 패스 알고리즘은 더 많은 소트 버퍼 공간이 필요하다. 
+
+대략 12k8KB의 정렬 버퍼를 쓴다면, 싱글에서는 대략 
 
 
 
@@ -99,11 +101,11 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUxNTA4Njg0LC03ODAzNjU2NjMsMzE1Nz
-c0NTU4LC0xNDI5ODMxNTUwLC01NzIzMzQ0OCwtMjYzNTU5NDcx
-LDIwNDY3MjIwNjgsNjMzNjcyNzAzLC0yMTQxMjgxNjI1LC0xNT
-kwNTU5Mzc3LC0xMDM2MTY4Njg2LC00NjE1MTQxMDgsLTEzMjI0
-NDA2NDksLTU2NDMwODgyMSwtMjMxNzIyMDc0LDI4NjYwNzk1MS
-wtMTgwODk0MTE2OSwxODQxOTU3NjExLDExMDk0NTkyNDAsLTYx
-NDM3NTk4OF19
+eyJoaXN0b3J5IjpbMTA0MDE3NzAyMywtNzgwMzY1NjYzLDMxNT
+c3NDU1OCwtMTQyOTgzMTU1MCwtNTcyMzM0NDgsLTI2MzU1OTQ3
+MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4MTYyNSwtMT
+U5MDU1OTM3NywtMTAzNjE2ODY4NiwtNDYxNTE0MTA4LC0xMzIy
+NDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcyMjA3NCwyODY2MDc5NT
+EsLTE4MDg5NDExNjksMTg0MTk1NzYxMSwxMTA5NDU5MjQwLC02
+MTQzNzU5ODhdfQ==
 -->
