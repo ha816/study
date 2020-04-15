@@ -95,7 +95,7 @@ ALL, index
 ## id 컬럼
 
 실행 계획에서 가장 왼쪽에 표시되는 컬럼은 id 컬럼이다. id컬럼은 단위 SELECT 쿼리 별로 부여되는 식별 값이다.
-하나의 SELECT 쿼리 문장은 다시 1건 이상의 하위 SELECT 쿼리를 포함할 수 있다. 하나의 SELECT 쿼리가 다수의 단위 SELECT 쿼리는 SELECT 문장을 분리해낸 SELECT 문장을 말한다. 
+하나의 SELECT 쿼리 문장은 다시 1건 이상의 하위(SUB) SELECT 쿼리를 포함할 수 있다. 단위 SELECT 쿼리는 하나의 SELECT 쿼리에서 모든(SUB 포함) SELECT 문장을 분리해낸 SELECT 문장을 말한다. 
 
 
 
@@ -642,7 +642,7 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3ODc3Mjg2NiwtODI5MjEzMTEwLDIwMj
+eyJoaXN0b3J5IjpbMTc2OTU4NDIzMiwtODI5MjEzMTEwLDIwMj
 c1NDU2MTUsLTkwMjU3NDMxNiwtMjExODA0Mjc2NywtMTI2NTIz
 MDg1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMzcsLTE1NDg4MDY4Nz
 ksLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwODAyODM0MDUsNjkw
