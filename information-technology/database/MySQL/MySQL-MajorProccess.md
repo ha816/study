@@ -62,7 +62,11 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 
 레코드 전체를 소트 버퍼에 담을지 아니면 정렬 기준 컬럼만 소트 버퍼에 담을지에 따라 두 가지 정렬 알고리즘을 사용할 수 있다.
 
-*
+싱글 패스(Single pass) 알고리즘
+
+
+투 패스(Two pass) 알고리즘
+
 
 
 # Distinct 처리
@@ -72,10 +76,10 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTcyNDYxMTksLTU3MjMzNDQ4LC0yNj
-M1NTk0NzEsMjA0NjcyMjA2OCw2MzM2NzI3MDMsLTIxNDEyODE2
-MjUsLTE1OTA1NTkzNzcsLTEwMzYxNjg2ODYsLTQ2MTUxNDEwOC
-wtMTMyMjQ0MDY0OSwtNTY0MzA4ODIxLC0yMzE3MjIwNzQsMjg2
-NjA3OTUxLC0xODA4OTQxMTY5LDE4NDE5NTc2MTEsMTEwOTQ1OT
-I0MCwtNjE0Mzc1OTg4LC0yODI0MTAzNV19
+eyJoaXN0b3J5IjpbLTcxOTc0ODEzOCwtNTcyMzM0NDgsLTI2Mz
+U1OTQ3MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4MTYy
+NSwtMTU5MDU1OTM3NywtMTAzNjE2ODY4NiwtNDYxNTE0MTA4LC
+0xMzIyNDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcyMjA3NCwyODY2
+MDc5NTEsLTE4MDg5NDExNjksMTg0MTk1NzYxMSwxMTA5NDU5Mj
+QwLC02MTQzNzU5ODgsLTI4MjQxMDM1XX0=
 -->
