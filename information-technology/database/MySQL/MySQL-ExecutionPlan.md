@@ -185,7 +185,7 @@ WHERE e.emp_no = 10001;
 >UNION과 UNION ALL의 차이
 >결과 레코드의 중복 제거 유무에 달려있다. UNION은 모든 컬럼이 같은 결과에 대해서는 **중복 결과를 제거한다.** 하지만 UNION ALL은 제거하지 않는다. UNION을 쓰면 중복을 제거하기 위해 추가적인 작업을 반드시 해야하기 때문에 성능 이슈가 있을 수 있다. 하지만 보통 우리는 중복값을 필요로 하는 경우가 없다. 
 
->주의 사항
+> DEPENDENT 주의 사항
 > 하나의 단위 SELECT 쿼리가 다른 단위 SELECT를 포함하고 있으면 포함된 쿼리를 서브 쿼리라고 한다. 이처럼 서브 쿼리가 사용된 경우에는 외부(Outer) 쿼리보다 서브 쿼리가 먼저 실행되는것이 일반적이고 이 방식이 반대의 경우보다 보통 빠르다. 하지만 DEPENDENT 키워드를 포함하는 서브 쿼리는 외부 쿼리에 의존적이므로 절대 외부 쿼리보다 먼저 실행할 수없다. 그래서 DEPENDENT 키워드가 포함된 쿼리는 비효율적인 경우가 많다. 
 
 ### UNION RESULT
@@ -203,7 +203,7 @@ SELECT emp_no FROM dept_emp WHERE from_date > '2001-01-01'
 |--|--|--|
 |1 | PRIMARY |salaries|
 | 2 | UNION| dept_emp|
-||UNION RESULT|<union1,2>|
+||UNION RESULT|union1,2|
 
 <union1,2> 에서 1,2는 SELECT 쿼리의 id를 말한다.
 
@@ -260,7 +260,6 @@ WHERE e.emp_no = 10001;
 | 2 | DEPENDENT SUBQUERY| de|
 |2|DEPENDENT SUBQUERY|dm|
 
-> Written with [StackEdit](https://stackedit.io/).
 
 ### DERIVED
 
@@ -647,11 +646,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjAxMzc5MjgsMTM0ODg0MTIyMSwtMT
-c2OTg5NTU5OSwtODI5MjEzMTEwLDIwMjc1NDU2MTUsLTkwMjU3
-NDMxNiwtMjExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NT
-Y5LDEzNDA3MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMs
-MjQ1NjI4NTA1LDEwODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNj
-M1LDE2MTU0OTUyMiw1ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5
-ODg5ODFdfQ==
+eyJoaXN0b3J5IjpbMjk0NzM5MjAxLDEzNDg4NDEyMjEsLTE3Nj
+k4OTU1OTksLTgyOTIxMzExMCwyMDI3NTQ1NjE1LC05MDI1NzQz
+MTYsLTIxMTgwNDI3NjcsLTEyNjUyMzA4NTgsMTM5NDg3ODU2OS
+wxMzQwNzI4MjM3LC0xNTQ4ODA2ODc5LC0xMTk4OTY2MTgzLDI0
+NTYyODUwNSwxMDgwMjgzNDA1LDY5MDYwNDY5LDk2NzE4MTYzNS
+wxNjE1NDk1MjIsNTgyNTU3NzUwLDU4OTE2Njg0NywxMDE1OTg4
+OTgxXX0=
 -->
