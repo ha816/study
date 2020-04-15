@@ -99,6 +99,9 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 
 >SELECT 쿼리에서 꼭 필요한 컬럼만 조회하지 않고, 모든 컬럼(*)을 가져오도록 개발할때가 있다. 하지만 이는 정렬 버퍼를 비효율적으로 만들 가능성이 매우 크다. SELECT 쿼리에서 꼭 필요한 컬럼만 조회하도록 쿼리를 작성하도록 하는 것이 좋다고 권장하는 이유가 바로 이것 때문이다. 특히나 정렬이 필요한 SELECT는 불필요한 컬럼을 SELECT 하지 않도록 하는 것이 효율적이다. 이는 꼭 정렬 버퍼에만 영향을 미치는 것이 아니라 임시 테이블이 필요한 테이블에서도 영향을 미친다.
 
+## 정렬의 처리방식
+
+쿼리에 ORDER BY가 사용되면 반드시 아래 3가지 처리 방식 중 하나로 정렬이 처리된다.
 
 
 
@@ -109,11 +112,11 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2ODE5OTcxLC03Mzc4ODcyNTcsMTc0Mz
-kzMjA4NSwtNzgwMzY1NjYzLDMxNTc3NDU1OCwtMTQyOTgzMTU1
-MCwtNTcyMzM0NDgsLTI2MzU1OTQ3MSwyMDQ2NzIyMDY4LDYzMz
-Y3MjcwMywtMjE0MTI4MTYyNSwtMTU5MDU1OTM3NywtMTAzNjE2
-ODY4NiwtNDYxNTE0MTA4LC0xMzIyNDQwNjQ5LC01NjQzMDg4Mj
-EsLTIzMTcyMjA3NCwyODY2MDc5NTEsLTE4MDg5NDExNjksMTg0
-MTk1NzYxMV19
+eyJoaXN0b3J5IjpbMTE4MTY5MzQyNywtNzM3ODg3MjU3LDE3ND
+M5MzIwODUsLTc4MDM2NTY2MywzMTU3NzQ1NTgsLTE0Mjk4MzE1
+NTAsLTU3MjMzNDQ4LC0yNjM1NTk0NzEsMjA0NjcyMjA2OCw2Mz
+M2NzI3MDMsLTIxNDEyODE2MjUsLTE1OTA1NTkzNzcsLTEwMzYx
+Njg2ODYsLTQ2MTUxNDEwOCwtMTMyMjQ0MDY0OSwtNTY0MzA4OD
+IxLC0yMzE3MjIwNzQsMjg2NjA3OTUxLC0xODA4OTQxMTY5LDE4
+NDE5NTc2MTFdfQ==
 -->
