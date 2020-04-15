@@ -334,7 +334,7 @@ MySQL 메뉴얼에서는 type 컬럼을 조인(Join) 타입으로 소개한다. 
 
 총 12가지 접근 방법 중에서 ALL을 제외한 나머지는 모두 인덱스를 사용한 접근 방식이다. 하나의 단위 SELECT 쿼리는 위의 접근 방법 중에서 단 하나만 사용할 수 있다. 한 단위 SELECT에는 다수의 테이블 조인이 일어날 수 있는데 각 테이블에 존재하는 인덱스를 적절히 사용하여 필요한 정보를 가져올 수 있도록 접근 방법을 선택해야 한다.  
 
-index_merge를 제외한 나머지 접근 방법은 반드시 하나의 인덱스만 사용한다.   따라서 실행 계획에서 각 라인에 접근 방법이 2개 이상 표시 되지 않으며, index_merge 이외에 type 에서는 인덱스 항목에도 단 하나의 인덱스 이름만 표시된다. 
+index_merge를 제외한 나머지 접근 방법은 반드시 하나의 인덱스만 사용한다.   따라서 실행 계획에서 각 테이블에 접근 방법이 2개 이상 표시 되지 않으며, index_merge 이외에 type 에서는 인덱스 항목에도 단 하나의 인덱스 이름만 표시된다. 
 
 참고로 위의 나열된 접근 방식은 빠른 순서대로 나열된 것이다. MySQL 옵티마이저는 이런 접근 방식과 비용을 함께 계산하여 최소의 비용이 필요한 접근방식을 선택한다.
 
@@ -359,8 +359,7 @@ ref
 
 **프라이머리 키나 유니크 키 컬럼을 이용하는 WHERE조건 절을 가지고 있고, 반드시 1건을 반환하는 방식이다.** 다른 DBMS에서는 유니크 인덱스 스캔(UNIQUE INDEX SCAN)이라고도 한다.
 ```
-EXPLAIN  SELECT * FROM employyess WHERE emp_no = 10001; 
--- UNIQUE KEY WHERE PHRASE
+EXPLAIN  SELECT * FROM employyess WHERE emp_no = 10001; -- emp_no IS UNIQUE KEY
 ```
 const는 쿼리를 최적화하는 단계에서 모두 상수화를 한다, 그래서 const이다. 
 ```
@@ -368,8 +367,7 @@ EXPLAIN
 SELECT COUNT(*) 
 FROM employees e1
 WHERE first_name = (
-SELECT first_name FROM employees e2 WHERE emp_no = 100001
-) -- it's const
+SELECT first_name FROM employees e2 WHERE emp_no = 100001) -- it's const
 ```
 다중 컬럼으로 구성된 프라이머리키나 유니크 키 중에서 인덱스의 일부 컬럼만 조건으로 사용할 때는 const 타입의 접근법을 사용할 수 없다. 왜냐하면 실제 레코드가 1건만 있다 하더라도 MySQL 엔진인 데이터를 읽어보기 전에는 레코드가 1건이라고 확신할 수 없기 때문이다. 이렇게 일부만 조건으로 사용하면 const가 아닌 ref가 표시된다.
 
@@ -397,7 +395,7 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005'
 
 eq_ref와는 달리 조인의 순서와 관계 없으며, 또한 프라이머리나 유니크 키등의 제약 조건도 없다. 즉 아무 인덱스를 사용하여 동등조건으로 검색할때는 ref 접근 방법이 된다. 
 
-프라이머리나 유니크 키등의 제약에서 자유롭기 때문에 레코드가 1건이라는 보장이 없지만 동등한 조건으로만 비교되므로 매우 빠르다, 
+프라이머리나 유니크 키등의 제약에서 자유롭기 때문에 레코드가 유일한 1건이라는 보장이 없지만 동등한 조건으로만 비교되므로 매우 빠르다, 
 
 ```
 EXPLAIN
@@ -644,11 +642,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNjU1MTk0NCwxMzQ4ODQxMjIxLC0xNz
-Y5ODk1NTk5LC04MjkyMTMxMTAsMjAyNzU0NTYxNSwtOTAyNTc0
-MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4Nzg1Nj
-ksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2NjE4Mywy
-NDU2Mjg1MDUsMTA4MDI4MzQwNSw2OTA2MDQ2OSw5NjcxODE2Mz
-UsMTYxNTQ5NTIyLDU4MjU1Nzc1MCw1ODkxNjY4NDcsMTAxNTk4
-ODk4MV19
+eyJoaXN0b3J5IjpbLTE5MTY2NTA1MDQsMTM0ODg0MTIyMSwtMT
+c2OTg5NTU5OSwtODI5MjEzMTEwLDIwMjc1NDU2MTUsLTkwMjU3
+NDMxNiwtMjExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NT
+Y5LDEzNDA3MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMs
+MjQ1NjI4NTA1LDEwODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNj
+M1LDE2MTU0OTUyMiw1ODI1NTc3NTAsNTg5MTY2ODQ3LDEwMTU5
+ODg5ODFdfQ==
 -->
