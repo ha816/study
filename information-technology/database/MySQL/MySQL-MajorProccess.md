@@ -62,7 +62,9 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 
 레코드 전체를 소트 버퍼에 담을지 아니면 정렬 기준 컬럼만 소트 버퍼에 담을지에 따라 두 가지 정렬 알고리즘을 사용할 수 있다.
 
-싱글 패스(Single pass) 알고리즘
+### 싱글 패스(Single pass) 알고리즘
+
+소트 버퍼에 정렬 기준 컬럼을 포함해 SELECT 되는 컬럼 전부를 담아서 정렬을 수행하는 방법이다. MySQL 5.0 이후 
 
 
 투 패스(Two pass) 알고리즘
@@ -76,7 +78,7 @@ MySQL 정렬을 위해서는 별도의 메모리 공간을 할당 받는데 이 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxOTc0ODEzOCwtNTcyMzM0NDgsLTI2Mz
+eyJoaXN0b3J5IjpbLTkzOTQ3NDU4NywtNTcyMzM0NDgsLTI2Mz
 U1OTQ3MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4MTYy
 NSwtMTU5MDU1OTM3NywtMTAzNjE2ODY4NiwtNDYxNTE0MTA4LC
 0xMzIyNDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcyMjA3NCwyODY2
