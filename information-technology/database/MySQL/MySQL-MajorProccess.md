@@ -103,9 +103,9 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 
 쿼리에 ORDER BY가 사용되면 반드시 아래 3가지 처리 방식 중 하나로 정렬이 처리된다. 일반적으로 밑쪽에 있는 정렬 방버븡로 갈수록 처리가 느려진다.
 
-|  |  |
+|정렬 처리 방법| 실행 계획의 Extra 커멘트  |
 |--|--|
-|  |  |
+|인덱스 사용한 정렬  | 별도의 내용 표기 없음|
 
 *
 
@@ -117,7 +117,7 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTE0OTM0NzYsLTk5NDU2MTI0MSwxMT
+eyJoaXN0b3J5IjpbLTE0MzgzNTA5NTMsLTk5NDU2MTI0MSwxMT
 gxNjkzNDI3LC03Mzc4ODcyNTcsMTc0MzkzMjA4NSwtNzgwMzY1
 NjYzLDMxNTc3NDU1OCwtMTQyOTgzMTU1MCwtNTcyMzM0NDgsLT
 I2MzU1OTQ3MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4
