@@ -107,8 +107,9 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 |--|--|
 |인덱스 사용한 정렬  | 별도의 내용 표기 없음|
 |드라이빙 테이블만 정렬 | Using filesort 표시|
-|조인 결과를 임시 테이블로 저장후, 임시 테이블에서 정렬 | Using temporary;  표시|
+|조인 결과를 임시 테이블로 저장후, 임시 테이블에서 정렬 | Using temporary; Usingfilesort가 같이 표시됨|
 
+먼저 옵티마이저는 정렬처리를 위해 
 
 
 # Distinct 처리
@@ -118,11 +119,11 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjU1MTc5OTEsNTA5NDAwNTQ5LC0xND
-M4MzUwOTUzLC05OTQ1NjEyNDEsMTE4MTY5MzQyNywtNzM3ODg3
-MjU3LDE3NDM5MzIwODUsLTc4MDM2NTY2MywzMTU3NzQ1NTgsLT
-E0Mjk4MzE1NTAsLTU3MjMzNDQ4LC0yNjM1NTk0NzEsMjA0Njcy
-MjA2OCw2MzM2NzI3MDMsLTIxNDEyODE2MjUsLTE1OTA1NTkzNz
-csLTEwMzYxNjg2ODYsLTQ2MTUxNDEwOCwtMTMyMjQ0MDY0OSwt
-NTY0MzA4ODIxXX0=
+eyJoaXN0b3J5IjpbNzMzNTk0MjEyLC0xMzI1NTE3OTkxLDUwOT
+QwMDU0OSwtMTQzODM1MDk1MywtOTk0NTYxMjQxLDExODE2OTM0
+MjcsLTczNzg4NzI1NywxNzQzOTMyMDg1LC03ODAzNjU2NjMsMz
+E1Nzc0NTU4LC0xNDI5ODMxNTUwLC01NzIzMzQ0OCwtMjYzNTU5
+NDcxLDIwNDY3MjIwNjgsNjMzNjcyNzAzLC0yMTQxMjgxNjI1LC
+0xNTkwNTU5Mzc3LC0xMDM2MTY4Njg2LC00NjE1MTQxMDgsLTEz
+MjI0NDA2NDldfQ==
 -->
