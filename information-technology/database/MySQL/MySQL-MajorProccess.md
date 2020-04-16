@@ -109,7 +109,12 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 |드라이빙 테이블만 정렬 | Using filesort 표시|
 |조인 결과를 임시 테이블로 저장후, 임시 테이블에서 정렬 | Using temporary; Usingfilesort가 같이 표시됨|
 
-먼저 옵티마이저는 정렬처리를 위해 인덱스를 사용할 수 있을지 검토할 것이다. 만약 인덱스를 이용 할 수 있다면 별도의 Filesort 과정 없이 인덱스를 순서대로 읽어서 결과를 반환한다. 하지만 인덱스를 사용할 수 없다면 WHERE
+먼저 옵티마이저는 정렬처리를 위해 인덱스를 사용할 수 있을지 검토할 것이다. 만약 인덱스를 이용 할 수 있다면 별도의 Filesort 과정 없이 인덱스를 순서대로 읽어서 결과를 반환한다. 하지만 인덱스를 사용할 수 없다면 WHERE 조건에 일치하는 레코드를 검색해 정렬 버퍼에 저장하면서 정렬을 처리한다.(Filesort) 이때 MySQL 옵티마이저는 정렬 대상 레코드를 최소화하기 위해 다음 두 방법 중 하나를 선택한다.
+
+* 드라이빙 테이블만 정렬한 다음 조인 수행
+* 조인이 끝나고 일치하는 레코드를 모두 가져온 후 정렬을 수행
+
+일반적으로 조인이 수행되면서 레코드 건수는 거의 배수로 불어나기 때문에 가능하다면 드라이빙 테이블만 정렬한 다음 조인을 수행하는 방법이 효율적이다. 그래서 첫 번째 방법이 더 효율적으로 처리 된다.
 
 
 # Distinct 처리
@@ -119,11 +124,11 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEyODkzNjY2LDczMzU5NDIxMiwtMTMyNT
-UxNzk5MSw1MDk0MDA1NDksLTE0MzgzNTA5NTMsLTk5NDU2MTI0
-MSwxMTgxNjkzNDI3LC03Mzc4ODcyNTcsMTc0MzkzMjA4NSwtNz
-gwMzY1NjYzLDMxNTc3NDU1OCwtMTQyOTgzMTU1MCwtNTcyMzM0
-NDgsLTI2MzU1OTQ3MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMj
-E0MTI4MTYyNSwtMTU5MDU1OTM3NywtMTAzNjE2ODY4NiwtNDYx
-NTE0MTA4XX0=
+eyJoaXN0b3J5IjpbMTk0NzA1MzAxMyw3MTI4OTM2NjYsNzMzNT
+k0MjEyLC0xMzI1NTE3OTkxLDUwOTQwMDU0OSwtMTQzODM1MDk1
+MywtOTk0NTYxMjQxLDExODE2OTM0MjcsLTczNzg4NzI1NywxNz
+QzOTMyMDg1LC03ODAzNjU2NjMsMzE1Nzc0NTU4LC0xNDI5ODMx
+NTUwLC01NzIzMzQ0OCwtMjYzNTU5NDcxLDIwNDY3MjIwNjgsNj
+MzNjcyNzAzLC0yMTQxMjgxNjI1LC0xNTkwNTU5Mzc3LC0xMDM2
+MTY4Njg2XX0=
 -->
