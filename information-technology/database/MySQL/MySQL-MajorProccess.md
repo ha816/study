@@ -101,7 +101,12 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 
 ## 정렬의 처리방식
 
-쿼리에 ORDER BY가 사용되면 반드시 아래 3가지 처리 방식 중 하나로 정렬이 처리된다.
+쿼리에 ORDER BY가 사용되면 반드시 아래 3가지 처리 방식 중 하나로 정렬이 처리된다. 일반적으로 밑쪽에 있는 정렬 방버븡로 갈수록 처리가 느려진다.
+
+|  |  |
+|--|--|
+|  |  |
+
 *
 
 
@@ -112,11 +117,11 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NDU2MTI0MSwxMTgxNjkzNDI3LC03Mz
-c4ODcyNTcsMTc0MzkzMjA4NSwtNzgwMzY1NjYzLDMxNTc3NDU1
-OCwtMTQyOTgzMTU1MCwtNTcyMzM0NDgsLTI2MzU1OTQ3MSwyMD
-Q2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4MTYyNSwtMTU5MDU1
-OTM3NywtMTAzNjE2ODY4NiwtNDYxNTE0MTA4LC0xMzIyNDQwNj
-Q5LC01NjQzMDg4MjEsLTIzMTcyMjA3NCwyODY2MDc5NTEsLTE4
-MDg5NDExNjldfQ==
+eyJoaXN0b3J5IjpbLTExOTE0OTM0NzYsLTk5NDU2MTI0MSwxMT
+gxNjkzNDI3LC03Mzc4ODcyNTcsMTc0MzkzMjA4NSwtNzgwMzY1
+NjYzLDMxNTc3NDU1OCwtMTQyOTgzMTU1MCwtNTcyMzM0NDgsLT
+I2MzU1OTQ3MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4
+MTYyNSwtMTU5MDU1OTM3NywtMTAzNjE2ODY4NiwtNDYxNTE0MT
+A4LC0xMzIyNDQwNjQ5LC01NjQzMDg4MjEsLTIzMTcyMjA3NCwy
+ODY2MDc5NTFdfQ==
 -->
