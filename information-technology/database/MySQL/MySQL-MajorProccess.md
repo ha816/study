@@ -106,6 +106,7 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 |정렬 처리 방법| 실행 계획의 Extra 커멘트  |
 |--|--|
 |인덱스 사용한 정렬  | 별도의 내용 표기 없음|
+|드라이빙 테이블만 정렬 | Using filesort 표시|
 
 
 
@@ -116,7 +117,7 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI5NjczMzY1LC0xNDM4MzUwOTUzLC05OT
+eyJoaXN0b3J5IjpbNTA5NDAwNTQ5LC0xNDM4MzUwOTUzLC05OT
 Q1NjEyNDEsMTE4MTY5MzQyNywtNzM3ODg3MjU3LDE3NDM5MzIw
 ODUsLTc4MDM2NTY2MywzMTU3NzQ1NTgsLTE0Mjk4MzE1NTAsLT
 U3MjMzNDQ4LC0yNjM1NTk0NzEsMjA0NjcyMjA2OCw2MzM2NzI3
