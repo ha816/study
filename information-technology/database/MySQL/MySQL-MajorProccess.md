@@ -116,6 +116,12 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 
 일반적으로 조인이 수행되면서 레코드 건수는 거의 배수로 불어나기 때문에 가능하다면 드라이빙 테이블만 정렬한 다음 조인을 수행하는 방법이 효율적이다. 그래서 첫 번째 방법이 더 효율적으로 처리 된다.
 
+### 인덱스 사용 정렬
+
+### 드라이빙 테이블만 정렬
+
+### 조인 결과를 임시 테이블로 저장 후, 임시 테이블에서 정렬
+
 
 # Distinct 처리
 
@@ -124,11 +130,11 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NzA1MzAxMyw3MTI4OTM2NjYsNzMzNT
-k0MjEyLC0xMzI1NTE3OTkxLDUwOTQwMDU0OSwtMTQzODM1MDk1
-MywtOTk0NTYxMjQxLDExODE2OTM0MjcsLTczNzg4NzI1NywxNz
-QzOTMyMDg1LC03ODAzNjU2NjMsMzE1Nzc0NTU4LC0xNDI5ODMx
-NTUwLC01NzIzMzQ0OCwtMjYzNTU5NDcxLDIwNDY3MjIwNjgsNj
-MzNjcyNzAzLC0yMTQxMjgxNjI1LC0xNTkwNTU5Mzc3LC0xMDM2
-MTY4Njg2XX0=
+eyJoaXN0b3J5IjpbLTE4NDg4NDgzMDEsNzEyODkzNjY2LDczMz
+U5NDIxMiwtMTMyNTUxNzk5MSw1MDk0MDA1NDksLTE0MzgzNTA5
+NTMsLTk5NDU2MTI0MSwxMTgxNjkzNDI3LC03Mzc4ODcyNTcsMT
+c0MzkzMjA4NSwtNzgwMzY1NjYzLDMxNTc3NDU1OCwtMTQyOTgz
+MTU1MCwtNTcyMzM0NDgsLTI2MzU1OTQ3MSwyMDQ2NzIyMDY4LD
+YzMzY3MjcwMywtMjE0MTI4MTYyNSwtMTU5MDU1OTM3NywtMTAz
+NjE2ODY4Nl19
 -->
