@@ -354,10 +354,11 @@ default boolean removeIf(Predicated<? super E> filter){
 
 핵심은 명확하고 명백하다. **디폴트 메서드라는 도구가 생겼더라도 인터페이스를 설계할 때는 여전히 세심한 주의를 기울여야 한다.** 디폴트 메서드로 기존 인터페이스에 새 메서드를 추가하면 커다란 위험이 딸려온다. 인터페이스에 내제된 작은 결함도 사용자 입장에서는 짜증나는데, 심각히 잘못된 인터페이스라면 이를 포함한 API에 어떤 재앙이 다가올지 알수 없다. 
 
-새로운 인터페이스라면 릴리스 전에 반드시 테스트를 거쳐야 한다. 수 많은 개발자가 그 인터페이스를 나름의 방식으로 구현할 것이니, 우리도 서로 다른 방식으로 최소 세 가지의 구현체는 구현해봐야 한다. 또한 각 인터페이스의 인스턴스를 다
+새로운 인터페이스라면 릴리스 전에 반드시 테스트를 거쳐야 한다. 수 많은 개발자가 그 인터페이스를 나름의 방식으로 구현할 것이니, 우리도 서로 다른 방식으로 최소 세 가지의 구현체는 구현해봐야 한다. 또한 각 인터페이스의 인스턴스를 다양한 작업에 활용하는 클라이언트도 만들어 보아야 한다. 새 인터페이스가 의도한 용도로 잘 부합하는지 판단하는 것은 굉장히 어렵다. 그래도 이러한 과정을 걸쳐야 인터페이스를 배포하기 전에 바로 잡을 수 있다. **인터페이스를 릴리스 한 후라도 결함을 수정하는게 가능한 경우도 있겠지만, 절대 그 가능성에 기대서는 안된다.**
+
+## Item.22 인터페이스는 타입을 정의하는 용도로만 사용하라
 
 
-### 20. 태그 달린 클래스 대신 클래스 계층을 활용하라.
 
 태그가 달린 클래스란? 
 -> 두 가지 이상의 기능을 가지고 그 중 어떤 기능을 제공하는지 표시하는 태그가 달린 클래스
@@ -396,7 +397,7 @@ default boolean removeIf(Predicated<? super E> filter){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjY2NzI2OTUsMTcyMzk2MDQ0MSwyMD
+eyJoaXN0b3J5IjpbLTEzNTYxMzYyODAsMTcyMzk2MDQ0MSwyMD
 M3MzU5NDk1LDE3MjEyMDE4NzQsMTM4MTExMjQ3OCwtMTcxNjc4
 OTA5OSw3Mjg2MTIwNzIsMTg0OTA2NTQ3OCwxMzcwNjM1NTAsLT
 Q0ODUzMjk3MSwtODMzMTE0ODk1LC02NTQwOTgwNzMsMzcyODU5
