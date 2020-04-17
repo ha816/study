@@ -352,7 +352,7 @@ default boolean removeIf(Predicated<? super E> filter){
 
 한편, 디폴트 메서드는 인터페이스로부터 메서드를 제거하거나 기존 메서드의 시그니처를 수정하는 용도가 아님을 명심해야 한다. 이런 형태로 인터페이스를 변경하면 반드시 기존 클라이언트를 망가뜨리게 된다. 
 
-핵심은 명확하고 명백하다. **디폴트 메서드라는 도구가 생겼더라도 인터페이스를 설계할 때는 여전히 세심한 주의를 기울여야 한다.** 
+핵심은 명확하고 명백하다. **디폴트 메서드라는 도구가 생겼더라도 인터페이스를 설계할 때는 여전히 세심한 주의를 기울여야 한다.** 디폴트 메서드로 기존 인터페이스에 새 메서드를 추
 
 
 ### 20. 태그 달린 클래스 대신 클래스 계층을 활용하라.
@@ -394,7 +394,7 @@ default boolean removeIf(Predicated<? super E> filter){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjEwOTE4NzEsMTcyMzk2MDQ0MSwyMD
+eyJoaXN0b3J5IjpbLTE1NTc5Nzg1ODEsMTcyMzk2MDQ0MSwyMD
 M3MzU5NDk1LDE3MjEyMDE4NzQsMTM4MTExMjQ3OCwtMTcxNjc4
 OTA5OSw3Mjg2MTIwNzIsMTg0OTA2NTQ3OCwxMzcwNjM1NTAsLT
 Q0ODUzMjk3MSwtODMzMTE0ODk1LC02NTQwOTgwNzMsMzcyODU5
