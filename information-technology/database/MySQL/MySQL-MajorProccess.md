@@ -143,6 +143,8 @@ AND e.emp_no BETWEEN 100002 AND 100020;
 
 ### 드라이빙 테이블만 정렬
 
+일반적으로 조인이 수행되면 결과 레코드의 건수가 몇배로 불어난다. 그래서 조인 전에 첫 번재 테이블의 레코드를 먼저 정렬한 다음 조인을 실행하는 것이 정렬의 차선책이다. 이 방법은 조인에서 첫 번재 읽
+
 ### 조인 결과를 임시 테이블로 저장 후, 임시 테이블에서 정렬
 
 
@@ -153,11 +155,11 @@ AND e.emp_no BETWEEN 100002 AND 100020;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NTA2NjEwNSwtNzcxOTMxNTAxLC0xMD
-c3MzA5MTQ1LDg2NDA0NDQ5OCwxODk3MzQ2NzUsLTQ1Njc3OTUy
-MCw3MTI4OTM2NjYsNzMzNTk0MjEyLC0xMzI1NTE3OTkxLDUwOT
-QwMDU0OSwtMTQzODM1MDk1MywtOTk0NTYxMjQxLDExODE2OTM0
-MjcsLTczNzg4NzI1NywxNzQzOTMyMDg1LC03ODAzNjU2NjMsMz
-E1Nzc0NTU4LC0xNDI5ODMxNTUwLC01NzIzMzQ0OCwtMjYzNTU5
-NDcxXX0=
+eyJoaXN0b3J5IjpbMTc2NzMyOTQ3MCwxNTk1MDY2MTA1LC03Nz
+E5MzE1MDEsLTEwNzczMDkxNDUsODY0MDQ0NDk4LDE4OTczNDY3
+NSwtNDU2Nzc5NTIwLDcxMjg5MzY2Niw3MzM1OTQyMTIsLTEzMj
+U1MTc5OTEsNTA5NDAwNTQ5LC0xNDM4MzUwOTUzLC05OTQ1NjEy
+NDEsMTE4MTY5MzQyNywtNzM3ODg3MjU3LDE3NDM5MzIwODUsLT
+c4MDM2NTY2MywzMTU3NzQ1NTgsLTE0Mjk4MzE1NTAsLTU3MjMz
+NDQ4XX0=
 -->
