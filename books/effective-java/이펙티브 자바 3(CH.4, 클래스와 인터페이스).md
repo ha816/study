@@ -345,7 +345,8 @@ default boolean removeIf(Predicated<? super E> filter){
 
 아파치의 SynchronizedCollection 클래스는 지금도 활발히 관리되고 있지만, 이 클래스를 자바 8과 함께 사용한다면, removeIf의 디폴트 구현을 물려받아 알아서 동기화 해주는 기능을 사용하기 못하게 된다. removeIf의 구현은 동기화에 관해 아무것도 모르므로 락 객체를 사용할 수 없다. 따라서 SynchronizedCollection 인스턴스를 여러 스레드가 공유하는 환경에서는 한 스레드가 removeIf를 호출하면 ConcurrentModificationException이 발생하거나 예상치 못한 결과가 나타날 수 있다. 
 
-자바 라이브러리에서는 이런 문제를 예방하기 위해 조치를 취했는데, 예를 들어 구혆
+자바 라이브러리에서는 이런 문제를 예방하기 위해 조치를 취했는데, 예를 들어 구현한 인터페이스의 디폴트 메서드를 재정의하고 다른 메서드에서는 디폴트 메서드를 호출하기 전에 필요한 작업을 수행하도록 했다. 
+예컨데 Collections.synchronizedCollection이 반환하는 package-private 클래스들은 removeIf를 재정의하고 이를 호출하는 다른 메서드들은 디폴 구현을 호출하기전에 동기화를 하도록 했다. 하지만 자바 플랫폼에 속하지 않은 제3의 기존 컬렉션 구현체들은 언어차원의 인
 
 
 
@@ -388,7 +389,7 @@ default boolean removeIf(Predicated<? super E> filter){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjY4NDY5NTQsMjAzNzM1OTQ5NSwxNz
+eyJoaXN0b3J5IjpbLTEyNDAyMDM4OTAsMjAzNzM1OTQ5NSwxNz
 IxMjAxODc0LDEzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4NjEy
 MDcyLDE4NDkwNjU0NzgsMTM3MDYzNTUwLC00NDg1MzI5NzEsLT
 gzMzExNDg5NSwtNjU0MDk4MDczLDM3Mjg1OTcyNiwtMzY1OTgz
