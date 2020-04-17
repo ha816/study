@@ -131,7 +131,7 @@ AND e.emp_no BETWEEN 100002 AND 100020
 ORDER BY e.emp_no;
 
 -- emp_no 컬럼으로 정렬이 필요한데, 인덱스를 사용하면서 자동 정렬이 된다고 해서
-
+일부러 ORDER BY e.emp)no를 제거하는 것은 좋지 않다.
 
 ```
 
@@ -147,7 +147,7 @@ ORDER BY e.emp_no;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjE3MTI5NSwxODk3MzQ2NzUsLTQ1Nj
+eyJoaXN0b3J5IjpbMTM4NzE1NjYxNSwxODk3MzQ2NzUsLTQ1Nj
 c3OTUyMCw3MTI4OTM2NjYsNzMzNTk0MjEyLC0xMzI1NTE3OTkx
 LDUwOTQwMDU0OSwtMTQzODM1MDk1MywtOTk0NTYxMjQxLDExOD
 E2OTM0MjcsLTczNzg4NzI1NywxNzQzOTMyMDg1LC03ODAzNjU2
