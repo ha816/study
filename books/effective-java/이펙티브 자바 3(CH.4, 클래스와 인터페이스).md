@@ -343,7 +343,9 @@ default boolean removeIf(Predicated<? super E> filter){
 ```
 위 코드는 아마 실제 구현일 것이다. 이 보다 더 범용적으로 구현하기도 어렵겠지만, 그렇다고 현존하는 모든 Collection 구현체와 잘 어울러지는 것은 아니다. 대표적인 예로 SynchronizedCollection가 있다. 이 클래스는 java.util의 Collections.synchronizedCollection 정적 팩터리 메서드와 비스하다. 아파치 버전은 클라이언트가 제공한 객체로 락을 거는 능력을 추가로 제공한다. 즉, 모든 메서드에서  주어진 락 객체로 동기화한 후 내부 컬렉션 객체에 기능을 위임하는 래퍼 클래스이다. 
 
-아파치의 SynchronizedCollection 클래스는 지금도 활발히 관리되고 있지만, 이 클래스를 자바 8과 함께 사용한다면, removeIf의 디폴트 구현을 물려받아 알아서 동기화 해주는 기능을 사용하기 못하게 된다. removeIf의 구현은 동기화에 관해 아무것도 모르므로 락 객체를 사용할 수 없다. 
+아파치의 SynchronizedCollection 클래스는 지금도 활발히 관리되고 있지만, 이 클래스를 자바 8과 함께 사용한다면, removeIf의 디폴트 구현을 물려받아 알아서 동기화 해주는 기능을 사용하기 못하게 된다. removeIf의 구현은 동기화에 관해 아무것도 모르므로 락 객체를 사용할 수 없다. 따라서 SynchronizedCollection 인스턴스를 여러 스레드가 공유하는 환경에서는 한 스레드가 removeIf를 호출하면 ConcurrentModificationException이 발생하거나 예상치 못한 결과가 나타날 수 있다. 
+
+자바 라이브러리에서는 이런 문제를 예방하기 위해 조치를 취했는데, 예를 들어 구혆
 
 
 
@@ -386,11 +388,11 @@ default boolean removeIf(Predicated<? super E> filter){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzM1OTQ5NSwxNzIxMjAxODc0LDEzOD
-ExMTI0NzgsLTE3MTY3ODkwOTksNzI4NjEyMDcyLDE4NDkwNjU0
-NzgsMTM3MDYzNTUwLC00NDg1MzI5NzEsLTgzMzExNDg5NSwtNj
-U0MDk4MDczLDM3Mjg1OTcyNiwtMzY1OTgzNzM1LC0xMjk1MzU1
-OTg5LC0xMzY1Nzk4OTQ3LDEwNzIzOTI5ODIsLTIwNDcyMDE0MT
-gsLTE4NDgwNjA2NSwtMTY3MjA1Njk5Niw5NTE3MDQxNzYsLTk3
-Mzg3NTcyM119
+eyJoaXN0b3J5IjpbLTEwNjY4NDY5NTQsMjAzNzM1OTQ5NSwxNz
+IxMjAxODc0LDEzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4NjEy
+MDcyLDE4NDkwNjU0NzgsMTM3MDYzNTUwLC00NDg1MzI5NzEsLT
+gzMzExNDg5NSwtNjU0MDk4MDczLDM3Mjg1OTcyNiwtMzY1OTgz
+NzM1LC0xMjk1MzU1OTg5LC0xMzY1Nzk4OTQ3LDEwNzIzOTI5OD
+IsLTIwNDcyMDE0MTgsLTE4NDgwNjA2NSwtMTY3MjA1Njk5Niw5
+NTE3MDQxNzZdfQ==
 -->
