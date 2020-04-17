@@ -120,7 +120,9 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 
 인덱스를 이용한 정렬을 위해서는 반드시 ORDER BY에 명시된 컬럼이 제일 먼저 읽는 테이블(조인이 사용된 경우 드라이빙 테이블)에 속하고, ORDER BY의 순서대로 생성된 인덱스가 있어야 한다. 또한 WHERE 절에 첫 번째 읽는 테이블의 컬럼에 대한 조건이 있다면 그 조건과 ORDER BY는 같은 인덱스를 사용할 수 있어야 한다. 
 
-참고로 B-Tree 계열의 인덱스가 아닌 인덱스(해시 인덱스나 전문 검색 인덱스 등)에서는 
+참고로 B-Tree 계열의 인덱스가 아닌 인덱스(해시 인덱스나 전문 검색 인덱스 등)에서는 이 인덱스 사용 정렬을 사용할 수 없다. 
+
+인덱스를 이용해 처리하는 경우는 실제 인덱스의 값이 정렬되어 있기 때문에 단지 순서대로 읽기만 하면 된다. 실제로 MySQL 엔진에서 별도의 정렬을 위한 추가 작업을 수행하지 않는다. 
 
 ### 드라이빙 테이블만 정렬
 
@@ -134,11 +136,11 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MzAxMjkwNywtNDU2Nzc5NTIwLDcxMj
-g5MzY2Niw3MzM1OTQyMTIsLTEzMjU1MTc5OTEsNTA5NDAwNTQ5
-LC0xNDM4MzUwOTUzLC05OTQ1NjEyNDEsMTE4MTY5MzQyNywtNz
-M3ODg3MjU3LDE3NDM5MzIwODUsLTc4MDM2NTY2MywzMTU3NzQ1
-NTgsLTE0Mjk4MzE1NTAsLTU3MjMzNDQ4LC0yNjM1NTk0NzEsMj
-A0NjcyMjA2OCw2MzM2NzI3MDMsLTIxNDEyODE2MjUsLTE1OTA1
-NTkzNzddfQ==
+eyJoaXN0b3J5IjpbMTg5NzM0Njc1LC00NTY3Nzk1MjAsNzEyOD
+kzNjY2LDczMzU5NDIxMiwtMTMyNTUxNzk5MSw1MDk0MDA1NDks
+LTE0MzgzNTA5NTMsLTk5NDU2MTI0MSwxMTgxNjkzNDI3LC03Mz
+c4ODcyNTcsMTc0MzkzMjA4NSwtNzgwMzY1NjYzLDMxNTc3NDU1
+OCwtMTQyOTgzMTU1MCwtNTcyMzM0NDgsLTI2MzU1OTQ3MSwyMD
+Q2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4MTYyNSwtMTU5MDU1
+OTM3N119
 -->
