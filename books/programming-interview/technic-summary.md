@@ -251,7 +251,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >**WebContainer(Servelet Container)의 역할은?**
 >WebContainer는 사용하려는 웹 애플리케이션에서 필요로 하는 Servelet을 생성하고 관리한다. 그 밖에도 WebServer와 통신을 위한 API를 제공하며 요청마다 쓰레드를 생성하여, 하나의 서블릿이 멀티 쓰레드를 처리하도록 한다. 
 
->**Tomcat의 컨Tomcat과 Nginx간의 통신은** 
+>**Tomcat의 Tomcat과 Nginx간의 통신은** 
 
 >**Servelet?** 
 >클라이언트의 요청이 들어오면 그 요청에 맞는 응답을 주는 서버측 컴포넌트다. 프론트 컨트롤러 패턴의 프론트 컨트롤러에 해당하고 요청-응답 과정에서 제어 흐름의 사령탑이다. 
@@ -293,11 +293,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDA3Mzc5NzMsMTQwNTQ1NDU0NywtND
-A4ODk0MTk0LC0xMDExMjg4Mzc5LC0yMDU3ODQ5NTMyLDkxNjU3
-MjczOSwtMjU5NDU0MjEyLC0yMDg2MDQ3MDA4LDE0MTA0NzExND
-MsLTEyNDA0NDU3NDcsLTMxMjc0MzczMSwtNTMwMDAxNzU0LDcy
-MjAzMTYxNiwtODM3OTUwMjYwLC03MDMzMjA3NzUsLTU3MDAxNz
-E1OCwxMjk3NzI3OTcxLC01MTQ5MzYxMzAsOTAyODg2ODczLC0y
-MTMwMzgzNzU1XX0=
+eyJoaXN0b3J5IjpbMTYzNjA2MTA3LC0xODAwNzM3OTczLDE0MD
+U0NTQ1NDcsLTQwODg5NDE5NCwtMTAxMTI4ODM3OSwtMjA1Nzg0
+OTUzMiw5MTY1NzI3MzksLTI1OTQ1NDIxMiwtMjA4NjA0NzAwOC
+wxNDEwNDcxMTQzLC0xMjQwNDQ1NzQ3LC0zMTI3NDM3MzEsLTUz
+MDAwMTc1NCw3MjIwMzE2MTYsLTgzNzk1MDI2MCwtNzAzMzIwNz
+c1LC01NzAwMTcxNTgsMTI5NzcyNzk3MSwtNTE0OTM2MTMwLDkw
+Mjg4Njg3M119
 -->
