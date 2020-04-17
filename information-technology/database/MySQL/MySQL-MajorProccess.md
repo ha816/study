@@ -138,6 +138,10 @@ WHERE s.emp_no = e.emp_no
 AND e.emp_no BETWEEN 100002 AND 100020;
 ```
 
+>ORDER BY 주의할 점
+>ORDER BY 절을 넣지 않아도 자동으로 정렬된다고 해서 ORDER BY를 빼는 경우가 있다. 혹시나 
+
+
 ### 드라이빙 테이블만 정렬
 
 ### 조인 결과를 임시 테이블로 저장 후, 임시 테이블에서 정렬
@@ -150,11 +154,11 @@ AND e.emp_no BETWEEN 100002 AND 100020;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjc5MTI0MDgsMTg5NzM0Njc1LC00NT
-Y3Nzk1MjAsNzEyODkzNjY2LDczMzU5NDIxMiwtMTMyNTUxNzk5
-MSw1MDk0MDA1NDksLTE0MzgzNTA5NTMsLTk5NDU2MTI0MSwxMT
-gxNjkzNDI3LC03Mzc4ODcyNTcsMTc0MzkzMjA4NSwtNzgwMzY1
-NjYzLDMxNTc3NDU1OCwtMTQyOTgzMTU1MCwtNTcyMzM0NDgsLT
-I2MzU1OTQ3MSwyMDQ2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4
-MTYyNV19
+eyJoaXN0b3J5IjpbLTkzMTUwMDg1NiwxODk3MzQ2NzUsLTQ1Nj
+c3OTUyMCw3MTI4OTM2NjYsNzMzNTk0MjEyLC0xMzI1NTE3OTkx
+LDUwOTQwMDU0OSwtMTQzODM1MDk1MywtOTk0NTYxMjQxLDExOD
+E2OTM0MjcsLTczNzg4NzI1NywxNzQzOTMyMDg1LC03ODAzNjU2
+NjMsMzE1Nzc0NTU4LC0xNDI5ODMxNTUwLC01NzIzMzQ0OCwtMj
+YzNTU5NDcxLDIwNDY3MjIwNjgsNjMzNjcyNzAzLC0yMTQxMjgx
+NjI1XX0=
 -->
