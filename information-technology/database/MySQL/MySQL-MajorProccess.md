@@ -139,9 +139,7 @@ AND e.emp_no BETWEEN 100002 AND 100020;
 ```
 
 >ORDER BY 주의할 점
->ORDER BY 절을 넣지 않아도 자동으로 정렬된다고 해서 ORDER BY를 빼는 경우가 있다. 혹시나 ORDER BY 절을 포함하면 MySQL 서버가 별도로 정렬 작업을 더 할까봐 걱정스러워서이다. 하지만 MySQL 서버는 졍렬을 인덱스로 처리할 수 있다면 절대 부가적으로 불필요한 정렬 작업을 하지 않는다. 그래서 인덱스 정렬이 처리될때 ORDER BY를 넣어도 작업량이 늘지 않는다. 또한, 어떤 이유 때문에 쿼리의 실행 계획이 조금 변경된다면 ORDER BY가 명시되지 않은 쿼리는 결과가 기대했던 순서대로 가져오지 못해 버그가 될 수도 있다. 
-
-
+>ORDER BY 절을 넣지 않아도 자동으로 정렬된다고 해서 ORDER BY를 빼는 경우가 있다. 혹시나 ORDER BY 절을 포함하면 MySQL 서버가 별도로 정렬 작업을 더 할까봐 걱정스러워서이다. 하지만 MySQL 서버는 졍렬을 인덱스로 처리할 수 있다면 절대 부가적으로 불필요한 정렬 작업을 하지 않는다. 그래서 인덱스 정렬이 처리될때 ORDER BY를 넣어도 작업량이 늘지 않는다. 또한, 어떤 이유 때문에 쿼리의 실행 계획이 조금 변경된다면 ORDER BY가 명시되지 않은 쿼리는 결과가 기대했던 순서대로 가져오지 못해 버그가 될 수도 있다. 하지만 ORDER BY를 명시해두면 성능상의 손해가 없음은 물론이고 이런 예외 상황도 버그로 연결되지 않을 것이다. 
 
 ### 드라이빙 테이블만 정렬
 
@@ -155,7 +153,7 @@ AND e.emp_no BETWEEN 100002 AND 100020;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3Nzg3NDY4OSwtNzcxOTMxNTAxLC0xMD
+eyJoaXN0b3J5IjpbMTU5NTA2NjEwNSwtNzcxOTMxNTAxLC0xMD
 c3MzA5MTQ1LDg2NDA0NDQ5OCwxODk3MzQ2NzUsLTQ1Njc3OTUy
 MCw3MTI4OTM2NjYsNzMzNTk0MjEyLC0xMzI1NTE3OTkxLDUwOT
 QwMDU0OSwtMTQzODM1MDk1MywtOTk0NTYxMjQxLDExODE2OTM0
