@@ -124,6 +124,17 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 
 인덱스를 이용해 처리하는 경우는 실제 인덱스의 값이 정렬되어 있기 때문에 단지 순서대로 읽기만 하면 된다. 실제로 MySQL 엔진에서 별도의 정렬을 위한 추가 작업을 수행하지 않는다. 
 
+```
+SELECT * FROM employees e, salaries s
+WHERE s.emp_no = e.emp_no
+AND e.emp_no BETWEEN 100002 AND 100020
+ORDER BY e.emp_no;
+
+-- emp_no 컬럼으로 정렬이 필요한데, 인덱스를 사용하면서 자동 정렬이 된다고 해서
+
+
+```
+
 ### 드라이빙 테이블만 정렬
 
 ### 조인 결과를 임시 테이블로 저장 후, 임시 테이블에서 정렬
@@ -136,11 +147,11 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NzM0Njc1LC00NTY3Nzk1MjAsNzEyOD
-kzNjY2LDczMzU5NDIxMiwtMTMyNTUxNzk5MSw1MDk0MDA1NDks
-LTE0MzgzNTA5NTMsLTk5NDU2MTI0MSwxMTgxNjkzNDI3LC03Mz
-c4ODcyNTcsMTc0MzkzMjA4NSwtNzgwMzY1NjYzLDMxNTc3NDU1
-OCwtMTQyOTgzMTU1MCwtNTcyMzM0NDgsLTI2MzU1OTQ3MSwyMD
-Q2NzIyMDY4LDYzMzY3MjcwMywtMjE0MTI4MTYyNSwtMTU5MDU1
-OTM3N119
+eyJoaXN0b3J5IjpbMTc1MjE3MTI5NSwxODk3MzQ2NzUsLTQ1Nj
+c3OTUyMCw3MTI4OTM2NjYsNzMzNTk0MjEyLC0xMzI1NTE3OTkx
+LDUwOTQwMDU0OSwtMTQzODM1MDk1MywtOTk0NTYxMjQxLDExOD
+E2OTM0MjcsLTczNzg4NzI1NywxNzQzOTMyMDg1LC03ODAzNjU2
+NjMsMzE1Nzc0NTU4LC0xNDI5ODMxNTUwLC01NzIzMzQ0OCwtMj
+YzNTU5NDcxLDIwNDY3MjIwNjgsNjMzNjcyNzAzLC0yMTQxMjgx
+NjI1XX0=
 -->
