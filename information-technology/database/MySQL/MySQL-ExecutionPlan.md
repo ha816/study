@@ -509,7 +509,7 @@ SELECT * FROM departments ORDER BY dept_name DESC LIMIT 10;
 
 ## possible_keys
 
-MySQL 옵티마이저는 쿼리를 처리하기 위해 여러 방법을 고려하고 그 중 비용이 가장 낮을것으로 예상되는 실행계획를 실행한다. possible_keys는 후보로 선정했던 접근 방식 인덱스에 대한 후보 목록이다. 실제 튜닝을 할때는 아무 도움이 안된다. 그냥 보지 않는 컬럼으로 여기자.
+MySQL 옵티마이저는 쿼리를 처리하기 위해 여러 방법을 고려하고 그 중 비용이 가장 낮을것으로 예상되는 실행계획를 실행한다. possible_keys는 후보로 선정했던 인덱스의 **후보 목록**이다. 실제 튜닝을 할때는 아무 도움이 안된다. 그냥 보지 않는 컬럼으로 여기자.
 
 ## key
 
@@ -638,11 +638,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NDAxNjQ4NywtMTczNjYyNDI1NSwxMj
-k1MjI1MTczLC0xMDk3MzAwNTQ2LDEzNDg4NDEyMjEsLTE3Njk4
-OTU1OTksLTgyOTIxMzExMCwtOTAyNTc0MzE2LC0yMTE4MDQyNz
-Y3LC0xMjY1MjMwODU4LDEzOTQ4Nzg1NjksMTM0MDcyODIzNywt
-MTU0ODgwNjg3OSwtMTE5ODk2NjE4MywyNDU2Mjg1MDUsMTA4MD
-I4MzQwNSw2OTA2MDQ2OSw5NjcxODE2MzUsMTYxNTQ5NTIyLDU4
-MjU1Nzc1MF19
+eyJoaXN0b3J5IjpbNTc5NzU3MjIsLTE3MzY2MjQyNTUsMTI5NT
+IyNTE3MywtMTA5NzMwMDU0NiwxMzQ4ODQxMjIxLC0xNzY5ODk1
+NTk5LC04MjkyMTMxMTAsLTkwMjU3NDMxNiwtMjExODA0Mjc2Ny
+wtMTI2NTIzMDg1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMzcsLTE1
+NDg4MDY4NzksLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwODAyOD
+M0MDUsNjkwNjA0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1ODI1
+NTc3NTBdfQ==
 -->
