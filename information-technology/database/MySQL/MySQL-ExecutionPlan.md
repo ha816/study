@@ -381,7 +381,7 @@ eq_ref(동등 참조)는 여러 테이블이 조인되는 실행 계획에서만
 ```
 EXPLAIN
 SELECT * FROM dept_emp de, employees e -- de JOIN e
-WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005' -- e.emp_no is Primary key. Exist one record.
+WHERE de.emp_no = e.emp_no AND de.dept_no = 'd005' -- e.emp_no is Primary key. Exist one record.
 ```
 
 |id| select_type|table| type|
@@ -636,11 +636,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMTg2NzM3MCwxMTA1NzkzNjgzLDU3OT
-c1NzIyLC0xNzM2NjI0MjU1LDEyOTUyMjUxNzMsLTEwOTczMDA1
-NDYsMTM0ODg0MTIyMSwtMTc2OTg5NTU5OSwtODI5MjEzMTEwLC
-05MDI1NzQzMTYsLTIxMTgwNDI3NjcsLTEyNjUyMzA4NTgsMTM5
-NDg3ODU2OSwxMzQwNzI4MjM3LC0xNTQ4ODA2ODc5LC0xMTk4OT
-Y2MTgzLDI0NTYyODUwNSwxMDgwMjgzNDA1LDY5MDYwNDY5LDk2
-NzE4MTYzNV19
+eyJoaXN0b3J5IjpbLTQ3MzIwNzA1OCwxNTAxODY3MzcwLDExMD
+U3OTM2ODMsNTc5NzU3MjIsLTE3MzY2MjQyNTUsMTI5NTIyNTE3
+MywtMTA5NzMwMDU0NiwxMzQ4ODQxMjIxLC0xNzY5ODk1NTk5LC
+04MjkyMTMxMTAsLTkwMjU3NDMxNiwtMjExODA0Mjc2NywtMTI2
+NTIzMDg1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMzcsLTE1NDg4MD
+Y4NzksLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwODAyODM0MDUs
+NjkwNjA0NjldfQ==
 -->
