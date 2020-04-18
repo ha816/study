@@ -519,7 +519,7 @@ key 컬럼이 PRIMARY인 경우에는 프라이머리 키를 사용한다는 의
 
 type 컬럼이 index_merge가 아니라면 반드시 테이블당 하나의 인덱스만 이용할 수 있다. 하지만 index_merge가 사용되면 2개 이상의 인덱스가 사용되기 때문에 이럴때 여러 인덱스가 ","로 구분되어 표시된다. 
 
-마지막으로 실행 계획의 access_type이 ALL 일때와 같이 인덱스를 전혀 사용하지 못하면 NULL로 표시된다.
+마지막으로 실행 계획의 type(J이 ALL 일때와 같이 인덱스를 전혀 사용하지 못하면 NULL로 표시된다.
 
 > MySQL에서는 프라이머리 키는 별도의 이름으로 부여할 수 없으며, 기본적으로 PRIMARY라는 이름을 가진다. 그 밖의 나머지 인덱스는 모두 테이블을 생성하거나 인덱스를 생성할때 이름을 부여할 수 있다. 실행 계획 뿐만 아니라 쿼리의 힌트를 사용할 때도 프라이머리 키를 지칭하고 싶다면 PRIMARY라는 키워드를 사용하면 된다. 
 
@@ -638,11 +638,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc5NzU3MjIsLTE3MzY2MjQyNTUsMTI5NT
-IyNTE3MywtMTA5NzMwMDU0NiwxMzQ4ODQxMjIxLC0xNzY5ODk1
-NTk5LC04MjkyMTMxMTAsLTkwMjU3NDMxNiwtMjExODA0Mjc2Ny
-wtMTI2NTIzMDg1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMzcsLTE1
-NDg4MDY4NzksLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwODAyOD
-M0MDUsNjkwNjA0NjksOTY3MTgxNjM1LDE2MTU0OTUyMiw1ODI1
-NTc3NTBdfQ==
+eyJoaXN0b3J5IjpbMTgyNjUyNjA1Nyw1Nzk3NTcyMiwtMTczNj
+YyNDI1NSwxMjk1MjI1MTczLC0xMDk3MzAwNTQ2LDEzNDg4NDEy
+MjEsLTE3Njk4OTU1OTksLTgyOTIxMzExMCwtOTAyNTc0MzE2LC
+0yMTE4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4Nzg1NjksMTM0
+MDcyODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2NjE4MywyNDU2Mj
+g1MDUsMTA4MDI4MzQwNSw2OTA2MDQ2OSw5NjcxODE2MzUsMTYx
+NTQ5NTIyXX0=
 -->
