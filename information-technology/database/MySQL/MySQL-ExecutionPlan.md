@@ -541,7 +541,7 @@ WHERE e.emp_no = de.emp_no;
 
 이 쿼리를 employees 테이블과 dept_emp 테이블을 조인하는데, 조인 조건에 사용된 emp_no 컬럼의 값에 대해 아무런 변환이나 가공도 수행하지 않았다. 
 
-|id| select_type|table| type| Ref| 
+|id| select_type|table| type| ref| 
 |--|--|--|--|--|
 |1| SIMPLE|de|index| |
 |2|SIMPLE| e|eq_ref|de.emp_no|
@@ -636,11 +636,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MzIwNzA1OCwxNTAxODY3MzcwLDExMD
-U3OTM2ODMsNTc5NzU3MjIsLTE3MzY2MjQyNTUsMTI5NTIyNTE3
-MywtMTA5NzMwMDU0NiwxMzQ4ODQxMjIxLC0xNzY5ODk1NTk5LC
-04MjkyMTMxMTAsLTkwMjU3NDMxNiwtMjExODA0Mjc2NywtMTI2
-NTIzMDg1OCwxMzk0ODc4NTY5LDEzNDA3MjgyMzcsLTE1NDg4MD
-Y4NzksLTExOTg5NjYxODMsMjQ1NjI4NTA1LDEwODAyODM0MDUs
-NjkwNjA0NjldfQ==
+eyJoaXN0b3J5IjpbLTIwMzc2NDc2MDIsLTQ3MzIwNzA1OCwxNT
+AxODY3MzcwLDExMDU3OTM2ODMsNTc5NzU3MjIsLTE3MzY2MjQy
+NTUsMTI5NTIyNTE3MywtMTA5NzMwMDU0NiwxMzQ4ODQxMjIxLC
+0xNzY5ODk1NTk5LC04MjkyMTMxMTAsLTkwMjU3NDMxNiwtMjEx
+ODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NTY5LDEzNDA3Mj
+gyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMsMjQ1NjI4NTA1
+LDEwODAyODM0MDVdfQ==
 -->
