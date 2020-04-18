@@ -523,9 +523,9 @@ key 컬럼이 PRIMARY인 경우에는 프라이머리 키를 사용한다는 의
 
 ## key_len
 
-key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한 정보이다. 실제 업무에서 사용하는 테이블은 단일 컬럼으로 만들어진 인덱스보다 다중 인덱스로 만들어진 경우가 더 많다. **key_len은 쿼리를 처리를 위해 다중 컬럼으로 구성된 인덱스에서 몇 개의 컬럼을 사용했는지 알려준다.** 더 정확하게는 인덱스의 각 레코드에서 몇 바이트까지 사용했는지 알려주는 값이다. 따라서 단일 컬럼의 인덱스에서도 같은 지표를 제공한다. 
+key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한 정보이다. 실제 업무에서 사용하는 테이블은 단일 컬럼으로 만들어진 인덱스보다 다중 인덱스로 만들어진 경우가 더 많다. **key_len은 다중 컬럼으로 구성된 인덱스에서 몇 개의 컬럼을 사용했는지 알려준다.** 더 정확하게는 인덱스의 각 레코드에서 몇 바이트까지 사용했는지 알려주는 값이다. 따라서 단일 컬럼의 인덱스에서도 같은 지표를 제공한다. 
 
-예를 들면  key_len이 12로 표시되었다고 하면, 12byte를 말한다. 컬럼의 타입이 CHAR라고 한다면, 기본적으로 UTF-8을 사용한다. UTF-8은 메모리를 할당할 때 3바이트로 계산된다. 따라서 4개의 문자가 사용되었다.
+예를 들면, key_len이 12로 표시되었다고 하면, 12byte를 말한다. 컬럼의 타입이 CHAR라고 한다면, 기본적으로 UTF-8을 사용한다. UTF-8은 메모리를 할당할 때 3바이트로 계산된다. 따라서 4개의 문자가 사용되었다.
 
 ## ref
 
@@ -636,11 +636,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTgzMTEwMjUsNTc5NzU3MjIsLTE3Mz
-Y2MjQyNTUsMTI5NTIyNTE3MywtMTA5NzMwMDU0NiwxMzQ4ODQx
-MjIxLC0xNzY5ODk1NTk5LC04MjkyMTMxMTAsLTkwMjU3NDMxNi
-wtMjExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0ODc4NTY5LDEz
-NDA3MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYxODMsMjQ1Nj
-I4NTA1LDEwODAyODM0MDUsNjkwNjA0NjksOTY3MTgxNjM1LDE2
-MTU0OTUyMl19
+eyJoaXN0b3J5IjpbMTEwNTc5MzY4Myw1Nzk3NTcyMiwtMTczNj
+YyNDI1NSwxMjk1MjI1MTczLC0xMDk3MzAwNTQ2LDEzNDg4NDEy
+MjEsLTE3Njk4OTU1OTksLTgyOTIxMzExMCwtOTAyNTc0MzE2LC
+0yMTE4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4Nzg1NjksMTM0
+MDcyODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2NjE4MywyNDU2Mj
+g1MDUsMTA4MDI4MzQwNSw2OTA2MDQ2OSw5NjcxODE2MzUsMTYx
+NTQ5NTIyXX0=
 -->
