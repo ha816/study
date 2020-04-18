@@ -152,7 +152,7 @@ and e.emp_no between 100002 AND 100010
 order by e.last_name;
 ```
 
-우선 WHERE 절의 조건이 다음 두 조건을 가지기 때문에 employees 테이블을 드라이빙 테이블이 선택 될것 이다. 
+우선 WHERE 절의 조건이 다음 두 조건을 가지기 때문에 employees 테이블을 드라이빙 테이블러 선택할 것이다.
 
 1. WHERE 절의 검색 조건(e.emp_no between ...)은 employees 테이블의 프라이머리 키를 이용해 작업량을 줄일 수 있다.
 2. 드리븐 테이블(s.salaries)의 조인 컬럼인 emp_no 컬럼에 인덱스가 있다. 
@@ -170,7 +170,7 @@ order by e.last_name;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2Njk1Mzg1NiwtMjAwOTUxODA2MSwxNT
+eyJoaXN0b3J5IjpbLTUxODcwNjA0NCwtMjAwOTUxODA2MSwxNT
 k1MDY2MTA1LC03NzE5MzE1MDEsLTEwNzczMDkxNDUsODY0MDQ0
 NDk4LDE4OTczNDY3NSwtNDU2Nzc5NTIwLDcxMjg5MzY2Niw3Mz
 M1OTQyMTIsLTEzMjU1MTc5OTEsNTA5NDAwNTQ5LC0xNDM4MzUw
