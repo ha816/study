@@ -145,7 +145,15 @@ AND e.emp_no BETWEEN 100002 AND 100020;
 
 일반적으로 조인이 수행되면 결과 레코드의 건수가 몇배로 불어난다. 그래서 조인 전에 첫 번재 테이블의 레코드를 먼저 정렬한 다음 조인을 실행하는 것이 정렬의 차선책이다. 이 방법은 조인에서 첫 번재 읽히는 테이블(드라이빙 테이블)의 컬럼만으로 ORDER BY 절이 작성되어야 한다. 
 
+```
+select * from employees e, salaries s
+where s.emp_no = e.emp_no
+and e.emp_no between 100002 AND 100010
+order by 
+```
+
 ### 조인 결과를 임시 테이블로 저장 후, 임시 테이블에서 정렬
+
 
 
 # Distinct 처리
@@ -155,11 +163,11 @@ AND e.emp_no BETWEEN 100002 AND 100020;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDk1MTgwNjEsMTU5NTA2NjEwNSwtNz
-cxOTMxNTAxLC0xMDc3MzA5MTQ1LDg2NDA0NDQ5OCwxODk3MzQ2
-NzUsLTQ1Njc3OTUyMCw3MTI4OTM2NjYsNzMzNTk0MjEyLC0xMz
-I1NTE3OTkxLDUwOTQwMDU0OSwtMTQzODM1MDk1MywtOTk0NTYx
-MjQxLDExODE2OTM0MjcsLTczNzg4NzI1NywxNzQzOTMyMDg1LC
-03ODAzNjU2NjMsMzE1Nzc0NTU4LC0xNDI5ODMxNTUwLC01NzIz
-MzQ0OF19
+eyJoaXN0b3J5IjpbODg3MzczOTgzLC0yMDA5NTE4MDYxLDE1OT
+UwNjYxMDUsLTc3MTkzMTUwMSwtMTA3NzMwOTE0NSw4NjQwNDQ0
+OTgsMTg5NzM0Njc1LC00NTY3Nzk1MjAsNzEyODkzNjY2LDczMz
+U5NDIxMiwtMTMyNTUxNzk5MSw1MDk0MDA1NDksLTE0MzgzNTA5
+NTMsLTk5NDU2MTI0MSwxMTgxNjkzNDI3LC03Mzc4ODcyNTcsMT
+c0MzkzMjA4NSwtNzgwMzY1NjYzLDMxNTc3NDU1OCwtMTQyOTgz
+MTU1MF19
 -->
