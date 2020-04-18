@@ -535,7 +535,7 @@ key_len은 많은 사용자가 무시하는 정보지만 사실 매우 중요한
 
 ```
 EXPLAIN
-SELECT * FROM employees e, dept_emp de
+SELECT de.emp_no FROM employees e, dept_emp de
 WHERE e.emp_no = de.emp_no;
 ```
 
@@ -636,11 +636,11 @@ select * from ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjYxNjExNjUsLTIwMzc2NDc2MDIsLT
-Q3MzIwNzA1OCwxNTAxODY3MzcwLDExMDU3OTM2ODMsNTc5NzU3
-MjIsLTE3MzY2MjQyNTUsMTI5NTIyNTE3MywtMTA5NzMwMDU0Ni
-wxMzQ4ODQxMjIxLC0xNzY5ODk1NTk5LC04MjkyMTMxMTAsLTkw
-MjU3NDMxNiwtMjExODA0Mjc2NywtMTI2NTIzMDg1OCwxMzk0OD
-c4NTY5LDEzNDA3MjgyMzcsLTE1NDg4MDY4NzksLTExOTg5NjYx
-ODMsMjQ1NjI4NTA1XX0=
+eyJoaXN0b3J5IjpbMTExOTcxMDEyNiwtMjAzNzY0NzYwMiwtND
+czMjA3MDU4LDE1MDE4NjczNzAsMTEwNTc5MzY4Myw1Nzk3NTcy
+MiwtMTczNjYyNDI1NSwxMjk1MjI1MTczLC0xMDk3MzAwNTQ2LD
+EzNDg4NDEyMjEsLTE3Njk4OTU1OTksLTgyOTIxMzExMCwtOTAy
+NTc0MzE2LC0yMTE4MDQyNzY3LC0xMjY1MjMwODU4LDEzOTQ4Nz
+g1NjksMTM0MDcyODIzNywtMTU0ODgwNjg3OSwtMTE5ODk2NjE4
+MywyNDU2Mjg1MDVdfQ==
 -->
