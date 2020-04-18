@@ -149,8 +149,13 @@ AND e.emp_no BETWEEN 100002 AND 100020;
 select * from employees e, salaries s
 where s.emp_no = e.emp_no
 and e.emp_no between 100002 AND 100010
-order by 
+order by e.last_name;
 ```
+
+우선 WHERE 절의 조건이 다음 두 조건을 가지기 때문에 employees 테이블을 드라이빙 테이블이 선택 될것 이다. 
+
+1. WHERE 절의 검색 조건(e.emp_no between ...)은 employees 테이블의 프라이머리 키를 이용해 작업량을 줄일 수 있다.
+2. 드리븐 테이블(s.salaries)의 조인 컬럼인 emp_no 컬럼에 인덱스가 있다. 
 
 ### 조인 결과를 임시 테이블로 저장 후, 임시 테이블에서 정렬
 
@@ -163,11 +168,11 @@ order by
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg3MzczOTgzLC0yMDA5NTE4MDYxLDE1OT
-UwNjYxMDUsLTc3MTkzMTUwMSwtMTA3NzMwOTE0NSw4NjQwNDQ0
-OTgsMTg5NzM0Njc1LC00NTY3Nzk1MjAsNzEyODkzNjY2LDczMz
-U5NDIxMiwtMTMyNTUxNzk5MSw1MDk0MDA1NDksLTE0MzgzNTA5
-NTMsLTk5NDU2MTI0MSwxMTgxNjkzNDI3LC03Mzc4ODcyNTcsMT
-c0MzkzMjA4NSwtNzgwMzY1NjYzLDMxNTc3NDU1OCwtMTQyOTgz
-MTU1MF19
+eyJoaXN0b3J5IjpbMTQ0OTI5MDQ3NywtMjAwOTUxODA2MSwxNT
+k1MDY2MTA1LC03NzE5MzE1MDEsLTEwNzczMDkxNDUsODY0MDQ0
+NDk4LDE4OTczNDY3NSwtNDU2Nzc5NTIwLDcxMjg5MzY2Niw3Mz
+M1OTQyMTIsLTEzMjU1MTc5OTEsNTA5NDAwNTQ5LC0xNDM4MzUw
+OTUzLC05OTQ1NjEyNDEsMTE4MTY5MzQyNywtNzM3ODg3MjU3LD
+E3NDM5MzIwODUsLTc4MDM2NTY2MywzMTU3NzQ1NTgsLTE0Mjk4
+MzE1NTBdfQ==
 -->
