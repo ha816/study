@@ -157,10 +157,11 @@ order by e.last_name;
 1. WHERE 절의 검색 조건(e.emp_no between ...)은 employees 테이블의 프라이머리 키를 이용해 작업량을 줄일 수 있다.
 2. 드리븐 테이블(s.salaries)의 조인 컬럼인 emp_no 컬럼에 인덱스가 있다. 
 
-검색은 인덱스 레인지 스캔으로 처리할 수 있지만 ORDER BY 절에 명시된 컬럼은 employees 테이블의 프라이머리 키와 전혀 연관이 없으므로 인덱스를 이용한 정렬은 불가능하다. 그런데 ORDER BY의 정렬 기준 컬럼이 드라이빙 테이블(employees)에 포함된 컬럼이다. 옵티마이저는 이럴 경우 드라이빙 테이블만 검색해서 정렬을 먼저 수행하고, 그 결과로 salaries 테이블과 조인을 할 것이다. 
+검색은 인덱스 레인지 스캔으로 처리할 수 있지만 **ORDER BY 절에 명시된 컬럼은 employees 테이블의 프라이머리 키와 전혀 연관이 없으므로 인덱스를 이용한 정렬은 불가능하다.** 그런데 ORDER BY의 정렬 기준 컬럼이 드라이빙 테이블(employees)에 포함된 컬럼이다. 옵티마이저는 이럴 경우 드라이빙 테이블만 검색해서 정렬을 먼저 수행(File sort)하고, 그 결과로 salaries 테이블과 조인을 할 것이다. 
 
-### 조인 결과를 임시 테이블로 저장 후, 임시 테이블에서 정렬
+### 임시 테이블에서 정렬
 
+쿼리가 여러 테이블을 조인하지 
 
 
 # Distinct 처리
@@ -170,11 +171,11 @@ order by e.last_name;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxODcwNjA0NCwtMjAwOTUxODA2MSwxNT
-k1MDY2MTA1LC03NzE5MzE1MDEsLTEwNzczMDkxNDUsODY0MDQ0
-NDk4LDE4OTczNDY3NSwtNDU2Nzc5NTIwLDcxMjg5MzY2Niw3Mz
-M1OTQyMTIsLTEzMjU1MTc5OTEsNTA5NDAwNTQ5LC0xNDM4MzUw
-OTUzLC05OTQ1NjEyNDEsMTE4MTY5MzQyNywtNzM3ODg3MjU3LD
-E3NDM5MzIwODUsLTc4MDM2NTY2MywzMTU3NzQ1NTgsLTE0Mjk4
-MzE1NTBdfQ==
+eyJoaXN0b3J5IjpbLTM1NTM3NzE4LC01MTg3MDYwNDQsLTIwMD
+k1MTgwNjEsMTU5NTA2NjEwNSwtNzcxOTMxNTAxLC0xMDc3MzA5
+MTQ1LDg2NDA0NDQ5OCwxODk3MzQ2NzUsLTQ1Njc3OTUyMCw3MT
+I4OTM2NjYsNzMzNTk0MjEyLC0xMzI1NTE3OTkxLDUwOTQwMDU0
+OSwtMTQzODM1MDk1MywtOTk0NTYxMjQxLDExODE2OTM0MjcsLT
+czNzg4NzI1NywxNzQzOTMyMDg1LC03ODAzNjU2NjMsMzE1Nzc0
+NTU4XX0=
 -->
