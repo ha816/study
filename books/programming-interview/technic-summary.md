@@ -142,9 +142,8 @@
 >**루트 웹애플리케이션 컨텍스트와 서블릿 웹애플리케이션 컨텍스트의 차이**
 애플리케이션 컨텍스트의 생성시기가 다르다. 루트 웹애플리케이션 컨텍스트는 스프링 동작시 생성된다. 서블릿 웹 애플리케이션은 지연 생성으로 실제 요청이 들어올때 생성된다.
 
->**
->루트 웹애플리케이션 컨텍스트에 올라가면 좋을 빈은?**
-> 모든 서블릿에 사용하면 좋을 빈들이 올라간다. 대표적으로는 DataSource
+>**루트 웹애플리케이션 컨텍스트에 올라가면 좋을 빈은?**
+> 모든 서블릿 애플리케이션에서 사용하면 좋을 빈들이 올라간다. 대표적으로는 DataSource가 있다. 
 
 >**Spring 빈(객체) 스코프는?**
 >애플리케이션 컨텍스트는 모든 빈의 생존기간을 관리한다. 
@@ -296,11 +295,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjQ4NDEyODAsLTE4MDA3Mzc5NzMsMT
-QwNTQ1NDU0NywtNDA4ODk0MTk0LC0xMDExMjg4Mzc5LC0yMDU3
-ODQ5NTMyLDkxNjU3MjczOSwtMjU5NDU0MjEyLC0yMDg2MDQ3MD
-A4LDE0MTA0NzExNDMsLTEyNDA0NDU3NDcsLTMxMjc0MzczMSwt
-NTMwMDAxNzU0LDcyMjAzMTYxNiwtODM3OTUwMjYwLC03MDMzMj
-A3NzUsLTU3MDAxNzE1OCwxMjk3NzI3OTcxLC01MTQ5MzYxMzAs
-OTAyODg2ODczXX0=
+eyJoaXN0b3J5IjpbLTExNzk5NTg1NjgsLTE5NjQ4NDEyODAsLT
+E4MDA3Mzc5NzMsMTQwNTQ1NDU0NywtNDA4ODk0MTk0LC0xMDEx
+Mjg4Mzc5LC0yMDU3ODQ5NTMyLDkxNjU3MjczOSwtMjU5NDU0Mj
+EyLC0yMDg2MDQ3MDA4LDE0MTA0NzExNDMsLTEyNDA0NDU3NDcs
+LTMxMjc0MzczMSwtNTMwMDAxNzU0LDcyMjAzMTYxNiwtODM3OT
+UwMjYwLC03MDMzMjA3NzUsLTU3MDAxNzE1OCwxMjk3NzI3OTcx
+LC01MTQ5MzYxMzBdfQ==
 -->
