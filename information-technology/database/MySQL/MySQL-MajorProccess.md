@@ -163,7 +163,7 @@ order by e.last_name;
 
 쿼리가 여러 테이블을 조인하지 않고, 하나의 테이블로부터 SELECT해서 정렬하는 경우라면 임시 테이블이 필요하지 않는다. 하지만 2개 이상의 테이블을 조인해서 그 결과를 정렬해야 한다면 임시 테이블이 필요할 수도 있다. 
 
-앞에서 본 드라이빙 테이블 정렬은 2개 이상의 테이블이 조인되면서 정렬이 실행되지만 임시 테이블을 사용하지 않는다. 
+앞에서 본 드라이빙 테이블 정렬은 2개 이상의 테이블이 조인되면서 정렬이 실행되지만 임시 테이블을 사용하지 않는다. 하
 
 
 # Distinct 처리
@@ -173,11 +173,11 @@ order by e.last_name;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYzMDc1OTUwLC01MTg3MDYwNDQsLTIwMD
-k1MTgwNjEsMTU5NTA2NjEwNSwtNzcxOTMxNTAxLC0xMDc3MzA5
-MTQ1LDg2NDA0NDQ5OCwxODk3MzQ2NzUsLTQ1Njc3OTUyMCw3MT
-I4OTM2NjYsNzMzNTk0MjEyLC0xMzI1NTE3OTkxLDUwOTQwMDU0
-OSwtMTQzODM1MDk1MywtOTk0NTYxMjQxLDExODE2OTM0MjcsLT
-czNzg4NzI1NywxNzQzOTMyMDg1LC03ODAzNjU2NjMsMzE1Nzc0
-NTU4XX0=
+eyJoaXN0b3J5IjpbLTE0OTU3NDEyODIsMjYzMDc1OTUwLC01MT
+g3MDYwNDQsLTIwMDk1MTgwNjEsMTU5NTA2NjEwNSwtNzcxOTMx
+NTAxLC0xMDc3MzA5MTQ1LDg2NDA0NDQ5OCwxODk3MzQ2NzUsLT
+Q1Njc3OTUyMCw3MTI4OTM2NjYsNzMzNTk0MjEyLC0xMzI1NTE3
+OTkxLDUwOTQwMDU0OSwtMTQzODM1MDk1MywtOTk0NTYxMjQxLD
+ExODE2OTM0MjcsLTczNzg4NzI1NywxNzQzOTMyMDg1LC03ODAz
+NjU2NjNdfQ==
 -->
