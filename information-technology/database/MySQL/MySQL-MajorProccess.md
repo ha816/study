@@ -180,10 +180,6 @@ order by s.salary;
 |1| SIMPLE|e|range|PRIMARY|4| | 9| Using where; Using temporary; Using filesort
 |1| SIMPLE| s|ref|PRIMARY|4|e.emp_no|4|
 
-|  |  |
-|--|--|
-|  |  |
-
 
 
 # Distinct 처리
@@ -193,7 +189,7 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NjM5MTYzNCw5ODY3MDI4MjIsMTczNT
+eyJoaXN0b3J5IjpbMTUyMDA5NjU3MCw5ODY3MDI4MjIsMTczNT
 I4MDAzNSwtMjEzMDI1MTc3NSwyNjMwNzU5NTAsLTUxODcwNjA0
 NCwtMjAwOTUxODA2MSwxNTk1MDY2MTA1LC03NzE5MzE1MDEsLT
 EwNzczMDkxNDUsODY0MDQ0NDk4LDE4OTczNDY3NSwtNDU2Nzc5
