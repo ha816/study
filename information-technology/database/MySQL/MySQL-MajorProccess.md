@@ -174,10 +174,16 @@ order by s.salary;
 
 하지만 이번 쿼리에서는 ORDER BY 절의 정렬 기준 컬럼이 드라이빙 테이블이 아니라 드리븐 테이블(salaries)에 있는 컬럼이다. 즉 정렬이 수행되기 전에 반드시 salaries 테이블을 읽어야 하므로 반드시 조인된 데이터를 가지고 정렬할 수 밖에 없다. 
 
+
 |id| select_type|table|type|key|key_len|ref|rows|Extra
-|--|--|--|--|--|--|--|
+|--|--|--|--|--|--|--|--|--|
 |1| SIMPLE|e|range|PRIMARY|4| | 9| Using where; Using temporary; Using filesort
-|1| SIMPLE| s|ref|PRIMARY|4|e.emp_no|4
+|1| SIMPLE| s|ref|PRIMARY|4|e.emp_no|4|
+
+|  |  |
+|--|--|
+|  |  |
+
 
 
 # Distinct 처리
@@ -187,7 +193,7 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2ODE4MTAwMiw5ODY3MDI4MjIsMTczNT
+eyJoaXN0b3J5IjpbLTM5NjM5MTYzNCw5ODY3MDI4MjIsMTczNT
 I4MDAzNSwtMjEzMDI1MTc3NSwyNjMwNzU5NTAsLTUxODcwNjA0
 NCwtMjAwOTUxODA2MSwxNTk1MDY2MTA1LC03NzE5MzE1MDEsLT
 EwNzczMDkxNDUsODY0MDQ0NDk4LDE4OTczNDY3NSwtNDU2Nzc5
