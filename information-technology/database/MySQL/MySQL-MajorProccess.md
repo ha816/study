@@ -187,7 +187,9 @@ order by s.salary;
 
 쿼리에 인덱스를 사용하지 못하는 정려이나 그룹핑 작업이 왜 느리게 작동할 수 밖에 없는지 보자. 이를 위해 쿼리가 처리되는 방법 "스트리밍 처리"와 "버퍼링 처리" 두 가지 방식을 구분해보자.
 
-###
+### 스트리밍(Streaming) 방식
+
+
 
 
 # Distinct 처리
@@ -197,11 +199,11 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk4MDk0NDk1LC04NjY3NzY1NiwtNzM1Nj
-M0ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAwOTY1NzAs
-OTg2NzAyODIyLDE3MzUyODAwMzUsLTIxMzAyNTE3NzUsMjYzMD
-c1OTUwLC01MTg3MDYwNDQsLTIwMDk1MTgwNjEsMTU5NTA2NjEw
-NSwtNzcxOTMxNTAxLC0xMDc3MzA5MTQ1LDg2NDA0NDQ5OCwxOD
-k3MzQ2NzUsLTQ1Njc3OTUyMCw3MTI4OTM2NjYsNzMzNTk0MjEy
-XX0=
+eyJoaXN0b3J5IjpbMTIzNjM3MDA4NywtODY2Nzc2NTYsLTczNT
+YzNDg0NSwtMzM2Mjg0ODgxLC04ODg0ODEyOSwxNTIwMDk2NTcw
+LDk4NjcwMjgyMiwxNzM1MjgwMDM1LC0yMTMwMjUxNzc1LDI2Mz
+A3NTk1MCwtNTE4NzA2MDQ0LC0yMDA5NTE4MDYxLDE1OTUwNjYx
+MDUsLTc3MTkzMTUwMSwtMTA3NzMwOTE0NSw4NjQwNDQ0OTgsMT
+g5NzM0Njc1LC00NTY3Nzk1MjAsNzEyODkzNjY2LDczMzU5NDIx
+Ml19
 -->
