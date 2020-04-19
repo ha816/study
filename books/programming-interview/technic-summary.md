@@ -141,7 +141,7 @@
 
 >**루트 웹 애플리케이션 컨텍스트와 서블릿 웹 애플리케이션 컨텍스트?**
 >루트 웹 애플리케이션 컨텍스트는 웹 애플리케이션 단위로 하나씩 생성되는 DI 또는 IoC 컨테이너이다. 하나의 웹 애플리케이션은 다수의 서블릿을 가질 수 있기 때문에 서블릿마다 서블릿 웹 애플리케이션 컨텍스트가 생성되고 자신의 빈을 관리한다.
->루트 웹 애플리케이션 컨텍스트는 서블릿 웹 애플리케이션 컨텍스트의 부모가 되며 서블릿 웹 애플리케이션 컨텍스트에서 공통으로 사용될 빈을 생성하고 관리한다. 대표적으로 DataSource, Transaction 빈등이 있다.
+>루트 웹 애플리케이션 컨텍스트는 서블릿 웹 애플리케이션 컨텍스트의 부모가 되며 서블릿 웹 애플리케이션 컨텍스트에서 공통으로 사용될 빈을 생성하고 관리한다. 대표적으로 DataSource, Transaction 빈 등이 있다.
 >두 애플리케이션 컨텍스트는 생성시기가 다른 데 루트 웹 애플리케이션 컨텍스트는 스프링 동작시 생성된다. 서블릿 웹 애플리케이션은 지연 생성으로 실제 요청이 들어올때 생성된다. 참고로 루트 웹애플리케이션 컨텍스트에는 모든 서블릿 애플리케이션에서 사용하면 좋을 빈들이 올라간다. 대표적으로는 DataSource가 있다. 
  
 >**Spring 빈(객체) 스코프는?**
@@ -294,11 +294,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NzgwOTg1NSwzODIxNDA4OTcsLTE3MT
-I1NTc3MDYsMTk4NTM1NjAzNCwxMDkyMTQ2MzcyLC0xOTM4MTQy
-OTAyLC0yMDM5NDgyMjg4LC0xMTc5OTU4NTY4LC0xOTY0ODQxMj
-gwLC0xODAwNzM3OTczLDE0MDU0NTQ1NDcsLTQwODg5NDE5NCwt
-MTAxMTI4ODM3OSwtMjA1Nzg0OTUzMiw5MTY1NzI3MzksLTI1OT
-Q1NDIxMiwtMjA4NjA0NzAwOCwxNDEwNDcxMTQzLC0xMjQwNDQ1
-NzQ3LC0zMTI3NDM3MzFdfQ==
+eyJoaXN0b3J5IjpbNzE1ODkyNzQ1LDM4MjE0MDg5NywtMTcxMj
+U1NzcwNiwxOTg1MzU2MDM0LDEwOTIxNDYzNzIsLTE5MzgxNDI5
+MDIsLTIwMzk0ODIyODgsLTExNzk5NTg1NjgsLTE5NjQ4NDEyOD
+AsLTE4MDA3Mzc5NzMsMTQwNTQ1NDU0NywtNDA4ODk0MTk0LC0x
+MDExMjg4Mzc5LC0yMDU3ODQ5NTMyLDkxNjU3MjczOSwtMjU5ND
+U0MjEyLC0yMDg2MDQ3MDA4LDE0MTA0NzExNDMsLTEyNDA0NDU3
+NDcsLTMxMjc0MzczMV19
 -->
