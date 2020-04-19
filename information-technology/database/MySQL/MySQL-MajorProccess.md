@@ -180,6 +180,9 @@ order by s.salary;
 |1| SIMPLE|e|range|PRIMARY|4| | 9| Using where; Using temporary; Using filesort
 |1| SIMPLE| s|ref|PRIMARY|4|e.emp_no|4|
 
+## 정렬 방식의 성능 비교
+
+주로 웹 서비스용 쿼리에서는 ORDER BY와 함께 LIMIT가 거의 필수적으로 사용되는 경향이 있다. 
 
 
 # Distinct 처리
@@ -189,11 +192,11 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMDA5NjU3MCw5ODY3MDI4MjIsMTczNT
-I4MDAzNSwtMjEzMDI1MTc3NSwyNjMwNzU5NTAsLTUxODcwNjA0
-NCwtMjAwOTUxODA2MSwxNTk1MDY2MTA1LC03NzE5MzE1MDEsLT
-EwNzczMDkxNDUsODY0MDQ0NDk4LDE4OTczNDY3NSwtNDU2Nzc5
-NTIwLDcxMjg5MzY2Niw3MzM1OTQyMTIsLTEzMjU1MTc5OTEsNT
-A5NDAwNTQ5LC0xNDM4MzUwOTUzLC05OTQ1NjEyNDEsMTE4MTY5
-MzQyN119
+eyJoaXN0b3J5IjpbLTg4ODQ4MTI5LDE1MjAwOTY1NzAsOTg2Nz
+AyODIyLDE3MzUyODAwMzUsLTIxMzAyNTE3NzUsMjYzMDc1OTUw
+LC01MTg3MDYwNDQsLTIwMDk1MTgwNjEsMTU5NTA2NjEwNSwtNz
+cxOTMxNTAxLC0xMDc3MzA5MTQ1LDg2NDA0NDQ5OCwxODk3MzQ2
+NzUsLTQ1Njc3OTUyMCw3MTI4OTM2NjYsNzMzNTk0MjEyLC0xMz
+I1NTE3OTkxLDUwOTQwMDU0OSwtMTQzODM1MDk1MywtOTk0NTYx
+MjQxXX0=
 -->
