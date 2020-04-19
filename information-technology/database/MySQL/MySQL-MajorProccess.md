@@ -182,7 +182,7 @@ order by s.salary;
 
 ## 정렬 방식의 성능 비교
 
-주로 웹 서비스용 쿼리에서는 ORDER BY와 함께 LIMIT가 거의 필수적으로 사용되는 경향이 있다. 일반적으로 LIMIT는 테이블의 처리 결과 일부만 가져오기 때문에 MySQL 서버가 처리해야 할 작업량을 줄이는 역할을 한다. 그런데 **ORDER BY나 GROUP BY와 같은 작업은 WHERE 조건을 만족하는 레코드를 LIMIT 건수만큼만 가져와서 처리될 수 없다.**
+주로 웹 서비스용 쿼리에서는 ORDER BY와 함께 LIMIT가 거의 필수적으로 사용되는 경향이 있다. 일반적으로 LIMIT는 테이블의 처리 결과 일부만 가져오기 때문에 MySQL 서버가 처리해야 할 작업량을 줄이는 역할을 한다. 그런데 **ORDER BY나 GROUP BY와 같은 작업은 WHERE 조건을 만족하는 레코드를 LIMIT 건수만큼만 가져와서 처리될 수 없다.** 
 
 
 # Distinct 처리
@@ -192,11 +192,11 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2Njc3NjU2LC03MzU2MzQ4NDUsLTMzNj
-I4NDg4MSwtODg4NDgxMjksMTUyMDA5NjU3MCw5ODY3MDI4MjIs
-MTczNTI4MDAzNSwtMjEzMDI1MTc3NSwyNjMwNzU5NTAsLTUxOD
-cwNjA0NCwtMjAwOTUxODA2MSwxNTk1MDY2MTA1LC03NzE5MzE1
-MDEsLTEwNzczMDkxNDUsODY0MDQ0NDk4LDE4OTczNDY3NSwtND
-U2Nzc5NTIwLDcxMjg5MzY2Niw3MzM1OTQyMTIsLTEzMjU1MTc5
-OTFdfQ==
+eyJoaXN0b3J5IjpbNjYxNTY4Mjg0LC04NjY3NzY1NiwtNzM1Nj
+M0ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAwOTY1NzAs
+OTg2NzAyODIyLDE3MzUyODAwMzUsLTIxMzAyNTE3NzUsMjYzMD
+c1OTUwLC01MTg3MDYwNDQsLTIwMDk1MTgwNjEsMTU5NTA2NjEw
+NSwtNzcxOTMxNTAxLC0xMDc3MzA5MTQ1LDg2NDA0NDQ5OCwxOD
+k3MzQ2NzUsLTQ1Njc3OTUyMCw3MTI4OTM2NjYsNzMzNTk0MjEy
+XX0=
 -->
