@@ -183,6 +183,11 @@ order by s.salary;
 ## 정렬 방식의 성능 비교
 
 주로 웹 서비스용 쿼리에서는 ORDER BY와 함께 LIMIT가 거의 필수적으로 사용되는 경향이 있다. 일반적으로 LIMIT는 테이블의 처리 결과 일부만 가져오기 때문에 MySQL 서버가 처리해야 할 작업량을 줄이는 역할을 한다. 그런데 **ORDER BY나 GROUP BY와 같은 작업은 WHERE 조건을 만족하는 레코드를 LIMIT 건수만큼만 가져와서 처리될 수 없다.** 
+우선조건을 만족하는 레코드를 모두 가져와서 정렬을 수행하거나 그룹핑 작업을 실행해야마나 비로서 LIMIT 건수를 제한할 수 있다. WHERE 조건이 아무리 인덱스를 잘 활용하도록 튜닝해도 잘못된 ORDER BY나 GROUP BY 때문에 쿼리가 느려지는 경우가 자주 발생한다. 
+
+쿼리에 인덱스를 사용하지 못하는 정려이나 그룹핑 작업이 왜 느리게 작동할 수 밖에 없는지 보자. 이를 위해 쿼리가 처리되는 방법 "스트리밍 처리"와 "버퍼링 처리" 두 가지 방식을 구분해보자.
+
+###
 
 
 # Distinct 처리
@@ -192,7 +197,7 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYxNTY4Mjg0LC04NjY3NzY1NiwtNzM1Nj
+eyJoaXN0b3J5IjpbNTk4MDk0NDk1LC04NjY3NzY1NiwtNzM1Nj
 M0ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAwOTY1NzAs
 OTg2NzAyODIyLDE3MzUyODAwMzUsLTIxMzAyNTE3NzUsMjYzMD
 c1OTUwLC01MTg3MDYwNDQsLTIwMDk1MTgwNjEsMTU5NTA2NjEw
