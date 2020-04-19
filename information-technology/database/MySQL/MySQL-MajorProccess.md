@@ -165,6 +165,15 @@ order by e.last_name;
 
 앞에서 본 드라이빙 테이블 정렬은 2개 이상의 테이블이 조인되면서 정렬이 실행되지만 임시 테이블을 사용하지 않는다. 하지만 그 밖에 패턴의 쿼리에서는 항상 조인의 결과를 임시 테이블에 저장하고, 그 결과를 다시 정렬하는 과정을 거친다. 이 방법은 세 가지 방법 중에 정렬해야할 레코드 건수가 가장 많아지기 때문에 가장 느린 정렬법이다.  
 
+```
+select * from employees e, salaries s
+where s.emp_no = e.emp_no
+and e.emp_no between 100002 AND 100010
+order by s.salary;
+```
+
+하지만 이번 쿼리에서는 ORDER BY 절의 정렬 기준 컬럼이 드라이빙 테이ㅡㄹ이 아니라 드리븐 테이블(salaries)에 있는 컬럼이다. 즉 정렬이 수행되기 전에 
+
 
 # Distinct 처리
 
@@ -173,11 +182,11 @@ order by e.last_name;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTI4MDAzNSwtMjEzMDI1MTc3NSwyNj
-MwNzU5NTAsLTUxODcwNjA0NCwtMjAwOTUxODA2MSwxNTk1MDY2
-MTA1LC03NzE5MzE1MDEsLTEwNzczMDkxNDUsODY0MDQ0NDk4LD
-E4OTczNDY3NSwtNDU2Nzc5NTIwLDcxMjg5MzY2Niw3MzM1OTQy
-MTIsLTEzMjU1MTc5OTEsNTA5NDAwNTQ5LC0xNDM4MzUwOTUzLC
-05OTQ1NjEyNDEsMTE4MTY5MzQyNywtNzM3ODg3MjU3LDE3NDM5
-MzIwODVdfQ==
+eyJoaXN0b3J5IjpbLTE1NDkyNzIxNjAsMTczNTI4MDAzNSwtMj
+EzMDI1MTc3NSwyNjMwNzU5NTAsLTUxODcwNjA0NCwtMjAwOTUx
+ODA2MSwxNTk1MDY2MTA1LC03NzE5MzE1MDEsLTEwNzczMDkxND
+UsODY0MDQ0NDk4LDE4OTczNDY3NSwtNDU2Nzc5NTIwLDcxMjg5
+MzY2Niw3MzM1OTQyMTIsLTEzMjU1MTc5OTEsNTA5NDAwNTQ5LC
+0xNDM4MzUwOTUzLC05OTQ1NjEyNDEsMTE4MTY5MzQyNywtNzM3
+ODg3MjU3XX0=
 -->
