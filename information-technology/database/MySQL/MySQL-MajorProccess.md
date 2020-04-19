@@ -176,9 +176,9 @@ order by s.salary;
 
 |id| select_type|table|type|key|key_len|ref|rows|Extra
 |--|--|--|--|--|--|--|
-|1| PRIMARY |derived2|
-|1| PRIMARY| e|
-|2|DERIVED |dept_emp|
+|1| SIMPLE|e|range|PRIMARY|4| | 9| Using where; Using temporary; Using filesort
+|1| SIMPLE| s|ref|PRIMARY|4|e.emp_no|4
+
 
 # Distinct 처리
 
@@ -187,11 +187,11 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjM0NjA1MDksOTg2NzAyODIyLDE3Mz
-UyODAwMzUsLTIxMzAyNTE3NzUsMjYzMDc1OTUwLC01MTg3MDYw
-NDQsLTIwMDk1MTgwNjEsMTU5NTA2NjEwNSwtNzcxOTMxNTAxLC
-0xMDc3MzA5MTQ1LDg2NDA0NDQ5OCwxODk3MzQ2NzUsLTQ1Njc3
-OTUyMCw3MTI4OTM2NjYsNzMzNTk0MjEyLC0xMzI1NTE3OTkxLD
-UwOTQwMDU0OSwtMTQzODM1MDk1MywtOTk0NTYxMjQxLDExODE2
-OTM0MjddfQ==
+eyJoaXN0b3J5IjpbMTc2ODE4MTAwMiw5ODY3MDI4MjIsMTczNT
+I4MDAzNSwtMjEzMDI1MTc3NSwyNjMwNzU5NTAsLTUxODcwNjA0
+NCwtMjAwOTUxODA2MSwxNTk1MDY2MTA1LC03NzE5MzE1MDEsLT
+EwNzczMDkxNDUsODY0MDQ0NDk4LDE4OTczNDY3NSwtNDU2Nzc5
+NTIwLDcxMjg5MzY2Niw3MzM1OTQyMTIsLTEzMjU1MTc5OTEsNT
+A5NDAwNTQ5LC0xNDM4MzUwOTUzLC05OTQ1NjEyNDEsMTE4MTY5
+MzQyN119
 -->
