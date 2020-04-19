@@ -161,7 +161,9 @@ order by e.last_name;
 
 ### 임시 테이블에서 정렬
 
-쿼리가 여러 테이블을 조인하지 않고, 하나의 테이블로부터 SELECT해서 정렬하는 경우라면 임시 테이블이 필요하지 않는다. 하지만 2개 이상의 테이블을 조인해서 
+쿼리가 여러 테이블을 조인하지 않고, 하나의 테이블로부터 SELECT해서 정렬하는 경우라면 임시 테이블이 필요하지 않는다. 하지만 2개 이상의 테이블을 조인해서 그 결과를 정렬해야 한다면 임시 테이블이 필요할 수도 있다. 
+
+앞에서 공부한
 
 
 # Distinct 처리
@@ -171,7 +173,7 @@ order by e.last_name;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MjQ3MjUyNSwtNTE4NzA2MDQ0LC0yMD
+eyJoaXN0b3J5IjpbLTkyNjQ1MTY0MywtNTE4NzA2MDQ0LC0yMD
 A5NTE4MDYxLDE1OTUwNjYxMDUsLTc3MTkzMTUwMSwtMTA3NzMw
 OTE0NSw4NjQwNDQ0OTgsMTg5NzM0Njc1LC00NTY3Nzk1MjAsNz
 EyODkzNjY2LDczMzU5NDIxMiwtMTMyNTUxNzk5MSw1MDk0MDA1
