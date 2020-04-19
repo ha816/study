@@ -189,7 +189,7 @@ order by s.salary;
 
 ### 스트리밍(Streaming) 방식
 
-
+서버 쪽에서 처리해야할 데이터가 
 
 
 # Distinct 처리
@@ -199,11 +199,11 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNjM3MDA4NywtODY2Nzc2NTYsLTczNT
-YzNDg0NSwtMzM2Mjg0ODgxLC04ODg0ODEyOSwxNTIwMDk2NTcw
-LDk4NjcwMjgyMiwxNzM1MjgwMDM1LC0yMTMwMjUxNzc1LDI2Mz
-A3NTk1MCwtNTE4NzA2MDQ0LC0yMDA5NTE4MDYxLDE1OTUwNjYx
-MDUsLTc3MTkzMTUwMSwtMTA3NzMwOTE0NSw4NjQwNDQ0OTgsMT
-g5NzM0Njc1LC00NTY3Nzk1MjAsNzEyODkzNjY2LDczMzU5NDIx
-Ml19
+eyJoaXN0b3J5IjpbOTYxOTAxMTgsMTIzNjM3MDA4NywtODY2Nz
+c2NTYsLTczNTYzNDg0NSwtMzM2Mjg0ODgxLC04ODg0ODEyOSwx
+NTIwMDk2NTcwLDk4NjcwMjgyMiwxNzM1MjgwMDM1LC0yMTMwMj
+UxNzc1LDI2MzA3NTk1MCwtNTE4NzA2MDQ0LC0yMDA5NTE4MDYx
+LDE1OTUwNjYxMDUsLTc3MTkzMTUwMSwtMTA3NzMwOTE0NSw4Nj
+QwNDQ0OTgsMTg5NzM0Njc1LC00NTY3Nzk1MjAsNzEyODkzNjY2
+XX0=
 -->
