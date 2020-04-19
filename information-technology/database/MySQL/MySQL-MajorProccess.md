@@ -172,7 +172,7 @@ and e.emp_no between 100002 AND 100010
 order by s.salary;
 ```
 
-하지만 이번 쿼리에서는 ORDER BY 절의 정렬 기준 컬럼이 드라이빙 테이ㅡㄹ이 아니라 드리븐 테이블(salaries)에 있는 컬럼이다. 즉 정렬이 수행되기 전에 
+하지만 이번 쿼리에서는 ORDER BY 절의 정렬 기준 컬럼이 드라이빙 테이블이 아니라 드리븐 테이블(salaries)에 있는 컬럼이다. 즉 정렬이 수행되기 전에 반드시 salaries 테이블을 읽어야 하므로 반드시 조인된 데이터를 가지고 정렬할 수 밖에 없다. 
 
 
 # Distinct 처리
@@ -182,11 +182,11 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDkyNzIxNjAsMTczNTI4MDAzNSwtMj
-EzMDI1MTc3NSwyNjMwNzU5NTAsLTUxODcwNjA0NCwtMjAwOTUx
-ODA2MSwxNTk1MDY2MTA1LC03NzE5MzE1MDEsLTEwNzczMDkxND
-UsODY0MDQ0NDk4LDE4OTczNDY3NSwtNDU2Nzc5NTIwLDcxMjg5
-MzY2Niw3MzM1OTQyMTIsLTEzMjU1MTc5OTEsNTA5NDAwNTQ5LC
-0xNDM4MzUwOTUzLC05OTQ1NjEyNDEsMTE4MTY5MzQyNywtNzM3
-ODg3MjU3XX0=
+eyJoaXN0b3J5IjpbOTg2NzAyODIyLDE3MzUyODAwMzUsLTIxMz
+AyNTE3NzUsMjYzMDc1OTUwLC01MTg3MDYwNDQsLTIwMDk1MTgw
+NjEsMTU5NTA2NjEwNSwtNzcxOTMxNTAxLC0xMDc3MzA5MTQ1LD
+g2NDA0NDQ5OCwxODk3MzQ2NzUsLTQ1Njc3OTUyMCw3MTI4OTM2
+NjYsNzMzNTk0MjEyLC0xMzI1NTE3OTkxLDUwOTQwMDU0OSwtMT
+QzODM1MDk1MywtOTk0NTYxMjQxLDExODE2OTM0MjcsLTczNzg4
+NzI1N119
 -->
