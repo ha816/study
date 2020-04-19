@@ -222,8 +222,8 @@
 >Session은 서버 측에서 클라이언 정보를 유지 관리한다. Cookie는 클라이언트(브라우저)에서 관리한다. 
 
 >**URI(Uniform Resource Identifier)과 URL(Uniform Resource Locator)의 차이는?**
->URI는 클라이언트에 공개하는 리소스의 고유하게 식별자다.  따라서 URI를 안다면 어디서든 같은 리소스로 접근이 가능하다. 한 URI는 리소스 하나 뿐만 아니라 다수의 리소스로도 정의가 가능하다. 예를 들어 URI가 `user/1234`라면 ID가 1234인 사용자의 리소스 정보. `/users`라면 다수는 모든 사용자의 리소스 정보를 말한다.
->URL은 클라이언트에 공개하는 리소스의 대략적인 위치를 알려준다. 최종 목적지는 URI이고 중관 과정에 URL를 거쳐가기 때문에 URI는 URL을 포함하는 큰 개념이다. 예를 들어 https://www.google.co.kr/search?id=123가 있다고 하자. 여기서 URL은 https://www.google.co.kr/search 까지이고 실제 리소스 식별 주소 URI는 https://www.google.co.kr/search?id=123 
+>URI는 클라이언트에 공개하는 리소스의 고유한 식별자아다.  따라서 URI를 안다면 어디서든 같은 리소스로 접근이 가능하다. 한 URI는 리소스 하나 뿐만 아니라 다수의 리소스로도 정의가 가능하다. 예를 들어 URI가 `user/1234`라면 ID가 1234인 사용자의 리소스 정보. `/users`라면 다수는 모든 사용자의 리소스 정보를 말한다.
+>URL은 클라이언트에 공개하는 리소스의 대략적인 위치를 알려준다. 최종 목적지는 URI이고 중간 과정에 URL를 거쳐가기 때문에 URI는 URL을 포함하는 큰 개념이다. 예를 들어 https://www.google.co.kr/search?id=123가 있다고 하자. 여기서 URL은 https://www.google.co.kr/search 까지이고 실제 리소스 식별 주소 URI는 https://www.google.co.kr/search?id=123 
 
 # OperatingSystem
 
@@ -295,11 +295,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzk0ODIyODgsLTExNzk5NTg1NjgsLT
-E5NjQ4NDEyODAsLTE4MDA3Mzc5NzMsMTQwNTQ1NDU0NywtNDA4
-ODk0MTk0LC0xMDExMjg4Mzc5LC0yMDU3ODQ5NTMyLDkxNjU3Mj
-czOSwtMjU5NDU0MjEyLC0yMDg2MDQ3MDA4LDE0MTA0NzExNDMs
-LTEyNDA0NDU3NDcsLTMxMjc0MzczMSwtNTMwMDAxNzU0LDcyMj
-AzMTYxNiwtODM3OTUwMjYwLC03MDMzMjA3NzUsLTU3MDAxNzE1
-OCwxMjk3NzI3OTcxXX0=
+eyJoaXN0b3J5IjpbLTE5MzgxNDI5MDIsLTIwMzk0ODIyODgsLT
+ExNzk5NTg1NjgsLTE5NjQ4NDEyODAsLTE4MDA3Mzc5NzMsMTQw
+NTQ1NDU0NywtNDA4ODk0MTk0LC0xMDExMjg4Mzc5LC0yMDU3OD
+Q5NTMyLDkxNjU3MjczOSwtMjU5NDU0MjEyLC0yMDg2MDQ3MDA4
+LDE0MTA0NzExNDMsLTEyNDA0NDU3NDcsLTMxMjc0MzczMSwtNT
+MwMDAxNzU0LDcyMjAzMTYxNiwtODM3OTUwMjYwLC03MDMzMjA3
+NzUsLTU3MDAxNzE1OF19
 -->
