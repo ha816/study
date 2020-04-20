@@ -383,6 +383,8 @@ public class PhysicalConstants {
 }
 ```
 
+> 숫자 리터럴에 사용한 밑줄(_)을 한번 보자. 자바 7부터 허용된 이 밑줄을 숫자 리터럴 값에는 아무 영향을 주지 않으면서, 읽기는 훨씬 편하게 해준다. 
+
 
 단점 
  1. 서로 다른 기능을 위한 코드가 모여 있어 가독성 하락
@@ -418,11 +420,11 @@ public class PhysicalConstants {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MDcwNzU1NiwtOTM5NTQ2MjA3LC0zMD
-g5Mjk4MTksMjQ0NTUwMDI4LDE3MTI1MzcyNjIsLTE0OTg2Mjcx
-MTAsMTk4MDYyMjM2NCwtMTM1NjEzNjI4MCwxNzIzOTYwNDQxLD
-IwMzczNTk0OTUsMTcyMTIwMTg3NCwxMzgxMTEyNDc4LC0xNzE2
-Nzg5MDk5LDcyODYxMjA3MiwxODQ5MDY1NDc4LDEzNzA2MzU1MC
-wtNDQ4NTMyOTcxLC04MzMxMTQ4OTUsLTY1NDA5ODA3MywzNzI4
-NTk3MjZdfQ==
+eyJoaXN0b3J5IjpbNjU4Nzg2MTY2LC05Mzk1NDYyMDcsLTMwOD
+kyOTgxOSwyNDQ1NTAwMjgsMTcxMjUzNzI2MiwtMTQ5ODYyNzEx
+MCwxOTgwNjIyMzY0LC0xMzU2MTM2MjgwLDE3MjM5NjA0NDEsMj
+AzNzM1OTQ5NSwxNzIxMjAxODc0LDEzODExMTI0NzgsLTE3MTY3
+ODkwOTksNzI4NjEyMDcyLDE4NDkwNjU0NzgsMTM3MDYzNTUwLC
+00NDg1MzI5NzEsLTgzMzExNDg5NSwtNjU0MDk4MDczLDM3Mjg1
+OTcyNl19
 -->
