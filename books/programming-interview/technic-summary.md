@@ -53,11 +53,11 @@
 
 ## JVM & GC
 
->**JVM의 역할은? 그리고 GC(가비지 컬렉션)은 어떤 역할을 하는가?**
->JVM은 Java Virtual Machine의 약자로, 자바 프로그램이 실행되는 곳이다. JVM은 운영체제 OS와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 또한 JVM은 메모리 관리를 위해 GC를 수행한다. 
+>**JVM의 역할은**
+>JVM은 Java Virtual Machine의 약자로, 자바 프로그램이 실행되는 곳이다. JVM은 운영체제와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 또한 JVM은 메모리 관리를 위해 GC를 수행한다. 
 
 >**GC(가비지 컬렉션)은? GC 알고리즘에 대해서**
->
+> GC는 
 
 >**자바의 메모리 구조는? 변수별로 저장되는 위치는?**
 > 자바 메모리는 쓰레드 전체가 공유하는 메모리 영역(Shared Memory)과 개별 쓰레드가 가지는 고유 메모리 영역(Non-Shared Memory) 두 가지로 나뉜다. 
@@ -296,11 +296,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM2MjA0NDY0LC0xMzg1NjA5NjAwLC0xMj
-g5MDU5MzQsLTg4MDgwMjkzOCwtMzQ3NzEwMDU1LDExNTk0NjMw
-NjgsNDE0NDU3MjEsMTUxNjM1MjA5NywzODIxNDA4OTcsLTE3MT
-I1NTc3MDYsMTk4NTM1NjAzNCwxMDkyMTQ2MzcyLC0xOTM4MTQy
-OTAyLC0yMDM5NDgyMjg4LC0xMTc5OTU4NTY4LC0xOTY0ODQxMj
-gwLC0xODAwNzM3OTczLDE0MDU0NTQ1NDcsLTQwODg5NDE5NCwt
-MTAxMTI4ODM3OV19
+eyJoaXN0b3J5IjpbODUxNjkwMzEsLTEzODU2MDk2MDAsLTEyOD
+kwNTkzNCwtODgwODAyOTM4LC0zNDc3MTAwNTUsMTE1OTQ2MzA2
+OCw0MTQ0NTcyMSwxNTE2MzUyMDk3LDM4MjE0MDg5NywtMTcxMj
+U1NzcwNiwxOTg1MzU2MDM0LDEwOTIxNDYzNzIsLTE5MzgxNDI5
+MDIsLTIwMzk0ODIyODgsLTExNzk5NTg1NjgsLTE5NjQ4NDEyOD
+AsLTE4MDA3Mzc5NzMsMTQwNTQ1NDU0NywtNDA4ODk0MTk0LC0x
+MDExMjg4Mzc5XX0=
 -->
