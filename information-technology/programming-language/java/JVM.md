@@ -9,7 +9,7 @@ Java 컴파일러(javac)가 소스 코드를 컴파일 하면 .class확장자를
 
 ## JVM 메모리 영역
 
-JVM 메모리 영역은 크게 Shared Memory영역과 Non-Shared Memory 영역으로 나뉜다.  JVM에서 실행되는 모든 프로그램들(스레드)들은 Shared Memory의 메소드 영역과 힙 영역을 공유하게 된다. Non-Shared memory는 스레드가 별로 할당되는 고유 메모리 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
+JVM 메모리 영역은 Shared Memory영역과 Non-Shared Memory 영역으로 나뉜다.  JVM의 모든 스레드들은 Shared Memory의 메소드 영역(Method Area)과 힙 영역(Heap Area)을 공유한다. Non-Shared Memory에는 각 스레드가 고유하게 가지는 메모리 영역을 말한다. 각 스레드는 Stack 영역을 가진다. 
 
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
@@ -96,6 +96,6 @@ JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MzUyNzMwNiwtMTQyNDg3MjU4NCwtMT
-c0ODY0NzQ2Nl19
+eyJoaXN0b3J5IjpbODc2OTE5NDc3LDE5NjM1MjczMDYsLTE0Mj
+Q4NzI1ODQsLTE3NDg2NDc0NjZdfQ==
 -->
