@@ -369,7 +369,11 @@ public interface PhysicalConstants {
 }
 ```
 
-**상수 인터페이스 안티 패턴은 인터페이스를 잘못 사용한 예다.** 클래스 내부에서 사용하는 상수는 외부 인터페이스가 아니라 내부 구현에 해당한다. 따라서 상수 인터페이스를 구현하는 것은 이 내부 구현을 클래스의 API로 노출하는 행위다. 클래스가 어떤 상수 인터페이스를 사용하든 사용자에게는 아무런 의미가 없다. 오히려 사용자에게 혼란을 주기도 하며, 더 심하게는 클라이언트 코드가 내부 구현에 해당하는 이 상수들에 종속되게 한다. 그래서 다음 배포때 이 상수들을 더 이상 쓰지 않게 되더라도 바이너리 호환성을 위해 여전히 상수 인터페이스를 구현하고 있어야 한ㄷ
+**상수 인터페이스 안티 패턴은 인터페이스를 잘못 사용한 예다.** 클래스 내부에서 사용하는 상수는 외부 인터페이스가 아니라 내부 구현에 해당한다. 따라서 상수 인터페이스를 구현하는 것은 이 내부 구현을 클래스의 API로 노출하는 행위다. 클래스가 어떤 상수 인터페이스를 사용하든 사용자에게는 아무런 의미가 없다. 오히려 사용자에게 혼란을 주기도 하며, 더 심하게는 클라이언트 코드가 내부 구현에 해당하는 이 상수들에 종속되게 한다. 그래서 다음 배포때 이 상수들을 더 이상 쓰지 않게 되더라도 바이너리 호환성을 위해 여전히 상수 인터페이스를 구현하고 있어야 한다. final이 아닌 클래스가 상수 인터페이스를 구현한다면 모든 하위 클래스의 공간이 그 인터페이스가 정의한 상수들로 오염되어 버린다. 
+
+java.io.ObjectStreamConstants 등 일부 자바 플랫폼 라이브러리에도 상수 인터페이스가 있으나 인터페이스를 잘못 사용한 예이니 절대 따라해서는 안된다. 
+
+상수를 공개할 목적이라면 훨씬 적합한 선택지가 몇 가지 있다. 
 
 
 단점 
@@ -406,7 +410,7 @@ public interface PhysicalConstants {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NjI1NTQwNSwyNDQ1NTAwMjgsMTcxMj
+eyJoaXN0b3J5IjpbLTMwODkyOTgxOSwyNDQ1NTAwMjgsMTcxMj
 UzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIyMzY0LC0xMzU2MTM2
 MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NSwxNzIxMjAxODc0LD
 EzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4NjEyMDcyLDE4NDkw
