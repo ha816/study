@@ -53,7 +53,7 @@ invokevirtual   #21; //Method java/lang/Object.getClass:()Ljava/lang/Class;
 ldc     #25; //class java/lang/String
 if_acmpne       20
 ```
-`idc` 명령은 심블릭하게 저장되어 있는 클래스를 참조한다(#25 == String클래스) JVM이 바이트 코드를 실행할때, 사용할 클래스를 식별하는데 심블릭 참조를 사용하여 실제 객체의 주소값을 반환한다. 여기서 객체의 주소값을 반환한다는 점에 주의하자. 실제 모든변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 변수에는 단지 Heap에 있는 객체의 주소값만을 가진다. 
+`idc` 명령은 심블릭하게 저장되어 있는 클래스를 참조한다.(#25 == String클래스) JVM이 바이트 코드를 실행할때, 사용할 클래스를 식별하는데 심블릭 참조를 사용하여 실제 객체의 주소값을 반환한다. 여기서 객체의 주소값을 반환한다는 점에 주의하자. 실제 모든변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 변수에는 단지 Heap에 있는 객체의 주소값만을 가진다. 
 
 ```
 static int i = 1; //the value 1 is stored in the RunTime Constant Pool(PermGen section(Heap))
@@ -89,7 +89,7 @@ JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNjkwMDUyNiw1NTk4OTI4OTAsNzk2Nz
+eyJoaXN0b3J5IjpbMTU4MjI1MTE3OCw1NTk4OTI4OTAsNzk2Nz
 YzMTQsLTk3NjYwNzg4Nyw1Mjg5OTAwMDQsLTEyNDYwMDg3MzMs
 LTM0NjkwMzQ0OCwxMDc4Njc0NzMwLC02NTgyNDAxODcsNzY2Mj
 I1NDQ4LDE5NjM1MjczMDYsLTE0MjQ4NzI1ODQsLTE3NDg2NDc0
