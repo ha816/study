@@ -385,17 +385,14 @@ public class PhysicalConstants {
 
 유틸리티 클래스로 정의된 상수를 사용하려면 클래스 이름까지 함께 명시해야 한다. 유틸리티 클래스의 상수를 빈번히 사용한다면 정적 임포트(static import)로 클래스 이름을 생략할 수 있다. 
 
->핵심 ㅈ
+>핵심 정리
+>인터페이스는 타입을 정의하는 용도로만 사용해야 한다. 상수 공개 수단으로 사용하면 안된다.
 
 > 숫자 리터럴에 사용한 밑줄(_)을 한번 보자. 자바 7부터 허용된 이 밑줄을 숫자 리터럴 값에는 아무 영향을 주지 않으면서, 읽기는 훨씬 편하게 해준다. 고정소수점, 부동소수점으로 5자이 이상이라면 밑줄을 사용하는걸 고려해보자. 십진수도 밑줄을 사용해 세자리씩 묶어주는 것이 좋다.
 
+## Item.23 태그 달린 클래스보다는 클래스 계층 구조를 활용하라
 
-
-
-단점 
- 1. 서로 다른 기능을 위한 코드가 모여 있어 가독성 하락
- 2. 객체를 만들때마다 필요없응 기능을 위한 필드도 생성되어 메모리 추가 요구
- 3. 객체의 자료형만봐서는 무슨 기능을 제공하는지 알수가 없다
+두 가지 이상의 의미를 표
 
 결국 태그 기반 클래스 사용은 쓰지 말자
 
@@ -426,11 +423,11 @@ public class PhysicalConstants {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NzA5MTk3MSwtMTA2NjU0MTQ3MCw2NT
-g3ODYxNjYsLTkzOTU0NjIwNywtMzA4OTI5ODE5LDI0NDU1MDAy
-OCwxNzEyNTM3MjYyLC0xNDk4NjI3MTEwLDE5ODA2MjIzNjQsLT
-EzNTYxMzYyODAsMTcyMzk2MDQ0MSwyMDM3MzU5NDk1LDE3MjEy
-MDE4NzQsMTM4MTExMjQ3OCwtMTcxNjc4OTA5OSw3Mjg2MTIwNz
-IsMTg0OTA2NTQ3OCwxMzcwNjM1NTAsLTQ0ODUzMjk3MSwtODMz
-MTE0ODk1XX0=
+eyJoaXN0b3J5IjpbOTY5OTI4NTQ5LC0xMDY2NTQxNDcwLDY1OD
+c4NjE2NiwtOTM5NTQ2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4
+LDE3MTI1MzcyNjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMT
+M1NjEzNjI4MCwxNzIzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIw
+MTg3NCwxMzgxMTEyNDc4LC0xNzE2Nzg5MDk5LDcyODYxMjA3Mi
+wxODQ5MDY1NDc4LDEzNzA2MzU1MCwtNDQ4NTMyOTcxLC04MzMx
+MTQ4OTVdfQ==
 -->
