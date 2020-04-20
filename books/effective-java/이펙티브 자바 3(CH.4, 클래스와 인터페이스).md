@@ -375,7 +375,13 @@ java.io.ObjectStreamConstants 등 일부 자바 플랫폼 라이브러리에도 
 
 상수를 공개할 목적이라면 훨씬 적합한 선택지가 몇 가지 있다. 특정 클래스나 인터페이스와 강하게 연관된 상수라면 그 클래스나 인터페이스 자체에 추가해야 한다. 모든 숫자 기본 타입의 박싱 클래스에 있는 MIN_VALUE, MAX_VALUE가 대표적인 예다. 열거 타입으로 나타내기 적합한 상수라면 열거 타입으로 만들어 공개하면 된다. 그것도 아니라면, 인스턴스화 할 수 없는 유틸리티 클래스에 담아 공개하자. 다음 코드는 상수인터페이스의 유틸리티 클래스 버전이다. 
 
-
+```
+public class PhysicalConstants {
+	private PhysicalConstatns() {} // 인스턴스화 방비
+	public static final double AVOGADROS_NUMBER = 6.022_140;
+	public static final double ELECTRON_MASS = 9.109_383_56;
+}
+```
 
 
 단점 
@@ -412,11 +418,11 @@ java.io.ObjectStreamConstants 등 일부 자바 플랫폼 라이브러리에도 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzOTU0NjIwNywtMzA4OTI5ODE5LDI0ND
-U1MDAyOCwxNzEyNTM3MjYyLC0xNDk4NjI3MTEwLDE5ODA2MjIz
-NjQsLTEzNTYxMzYyODAsMTcyMzk2MDQ0MSwyMDM3MzU5NDk1LD
-E3MjEyMDE4NzQsMTM4MTExMjQ3OCwtMTcxNjc4OTA5OSw3Mjg2
-MTIwNzIsMTg0OTA2NTQ3OCwxMzcwNjM1NTAsLTQ0ODUzMjk3MS
-wtODMzMTE0ODk1LC02NTQwOTgwNzMsMzcyODU5NzI2LC0zNjU5
-ODM3MzVdfQ==
+eyJoaXN0b3J5IjpbLTY2MDcwNzU1NiwtOTM5NTQ2MjA3LC0zMD
+g5Mjk4MTksMjQ0NTUwMDI4LDE3MTI1MzcyNjIsLTE0OTg2Mjcx
+MTAsMTk4MDYyMjM2NCwtMTM1NjEzNjI4MCwxNzIzOTYwNDQxLD
+IwMzczNTk0OTUsMTcyMTIwMTg3NCwxMzgxMTEyNDc4LC0xNzE2
+Nzg5MDk5LDcyODYxMjA3MiwxODQ5MDY1NDc4LDEzNzA2MzU1MC
+wtNDQ4NTMyOTcxLC04MzMxMTQ4OTUsLTY1NDA5ODA3MywzNzI4
+NTk3MjZdfQ==
 -->
