@@ -19,11 +19,6 @@ JVM 메모리 영역은 Shared Memory영역과 Non-Shared Memory 영역으로 �
 ### Native Method Stack(Per Thread, Non-Shared)
 다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출되는데 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 작업은 OS에 완전히 종속적이다. 
 
-- 각 Thread 는 자신만의 stack 을 가진다.
--   지역변수들은 scope 에 따른 visibility 를 가진다.
--   Heap 영역에 생성된 Object 타입의 데이터의 참조값이 할당된다.
--   원시타입의 데이터가 값과 함께 할당된다. 
-
 ### [Stack](https://coding-geek.com/wp-content/uploadsyaboong.github.io/java/20158/04/jvm_memory_overview.jpg)(Per Thread, Non-Shared)
 
 각 스레드는 자신만의 고유한 스택을 가진다. 스택은 다수의 프레임(Frame)으로 구성된다. 또 프레임은 쓰레드의 상태를 나타내는 데이터 구조들로 이루어져 있다. (Operand Stack, Local variable array, Run-time constant pool reference) 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 클래스 변수(static)와 원시 타입의 변수를 제외한 변수가 스택에 속한다. 여기서 주의할점은 변수가 가리키는 실제 객체는 힙에 들어가 있다는 것을 주의해야 한다. 
@@ -94,7 +89,7 @@ JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTI1ODg5NDMsLTY1ODI0MDE4Nyw3Nj
-YyMjU0NDgsMTk2MzUyNzMwNiwtMTQyNDg3MjU4NCwtMTc0ODY0
-NzQ2Nl19
+eyJoaXN0b3J5IjpbLTcyNzI2NDQxMiwtNjU4MjQwMTg3LDc2Nj
+IyNTQ0OCwxOTYzNTI3MzA2LC0xNDI0ODcyNTg0LC0xNzQ4NjQ3
+NDY2XX0=
 -->
