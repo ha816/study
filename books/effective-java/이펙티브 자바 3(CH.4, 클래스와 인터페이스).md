@@ -395,6 +395,7 @@ public class PhysicalConstants {
 두 가지 이상의 의미를 표현할 수 있으며, 그중 현재 표현하는 의미를 태그값으로 알려주는 클래스를 본적이 있을 것이다. 
 
 
+
 ### 21. 전략을 표현하고 싶을때는 함수 객체를 사용해라 
 
 함수 포인터, 대리자, 람다표현식 처럼 특정 함수를 호출 가능한 능력을 가지는 것들이 있다. 보틍은 함수의 인자로 함수를 전달하기 위해서 사용.
@@ -422,11 +423,11 @@ public class PhysicalConstants {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjc4ODQ5NTQsLTEwNjY1NDE0NzAsNj
-U4Nzg2MTY2LC05Mzk1NDYyMDcsLTMwODkyOTgxOSwyNDQ1NTAw
-MjgsMTcxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIyMzY0LC
-0xMzU2MTM2MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NSwxNzIx
-MjAxODc0LDEzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4NjEyMD
-cyLDE4NDkwNjU0NzgsMTM3MDYzNTUwLC00NDg1MzI5NzEsLTgz
-MzExNDg5NV19
+eyJoaXN0b3J5IjpbMjAxNjUxMDAwOCwtMjAyNzg4NDk1NCwtMT
+A2NjU0MTQ3MCw2NTg3ODYxNjYsLTkzOTU0NjIwNywtMzA4OTI5
+ODE5LDI0NDU1MDAyOCwxNzEyNTM3MjYyLC0xNDk4NjI3MTEwLD
+E5ODA2MjIzNjQsLTEzNTYxMzYyODAsMTcyMzk2MDQ0MSwyMDM3
+MzU5NDk1LDE3MjEyMDE4NzQsMTM4MTExMjQ3OCwtMTcxNjc4OT
+A5OSw3Mjg2MTIwNzIsMTg0OTA2NTQ3OCwxMzcwNjM1NTAsLTQ0
+ODUzMjk3MV19
 -->
