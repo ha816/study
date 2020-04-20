@@ -363,7 +363,9 @@ default boolean removeIf(Predicated<? super E> filter){
 이 지침에 맞지 않는 예로 소위 **상수 인터페이스**라는 것이 있다. 상수 인터페이스는 메서드 없이, 상수를 뜻하는 static final 필드로만 가득찬 인터페이스를 말한다. 그리고 이 상수들을 사용하려는 클래스에서 정규화된 이름(qualified name)을 쓰는 것을 피하고자 그 인터페이스를 구현하곤 한다. 
 
 ```
-publ
+public interface PhysicalConstants {
+
+}
 ```
 
 
@@ -401,11 +403,11 @@ publ
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTE4OTMwMTMsMTcxMjUzNzI2MiwtMT
-Q5ODYyNzExMCwxOTgwNjIyMzY0LC0xMzU2MTM2MjgwLDE3MjM5
-NjA0NDEsMjAzNzM1OTQ5NSwxNzIxMjAxODc0LDEzODExMTI0Nz
-gsLTE3MTY3ODkwOTksNzI4NjEyMDcyLDE4NDkwNjU0NzgsMTM3
-MDYzNTUwLC00NDg1MzI5NzEsLTgzMzExNDg5NSwtNjU0MDk4MD
-czLDM3Mjg1OTcyNiwtMzY1OTgzNzM1LC0xMjk1MzU1OTg5LC0x
-MzY1Nzk4OTQ3XX0=
+eyJoaXN0b3J5IjpbMjQ0NTUwMDI4LDE3MTI1MzcyNjIsLTE0OT
+g2MjcxMTAsMTk4MDYyMjM2NCwtMTM1NjEzNjI4MCwxNzIzOTYw
+NDQxLDIwMzczNTk0OTUsMTcyMTIwMTg3NCwxMzgxMTEyNDc4LC
+0xNzE2Nzg5MDk5LDcyODYxMjA3MiwxODQ5MDY1NDc4LDEzNzA2
+MzU1MCwtNDQ4NTMyOTcxLC04MzMxMTQ4OTUsLTY1NDA5ODA3My
+wzNzI4NTk3MjYsLTM2NTk4MzczNSwtMTI5NTM1NTk4OSwtMTM2
+NTc5ODk0N119
 -->
