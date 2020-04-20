@@ -5,13 +5,9 @@ JVM은 Java Virtual Machine의 약자로 운영체제와 애플리케이션 사�
 
 ![enter image description here](http://coding-geek.com/wp-content/uploads/2015/04/jvm_overview.jpg)
 
-Java 컴파일러(javac)가 소스 코드를 컴파일 하면 .class확장자를 가진 **바이트 코드**가 생성된다. 이 바이트코드를 JVM의 메모리 공간으로 가져오는 걸 **class loading(클래스 로딩)**이라 하며 이것을 클래스 로더(class loader)가 한다. 클래스 로더는 바이크 코드JAR 같은 파일을 읽어 JVM의 메모리에것들을 메모리로 불러 올릴 수 있다. 
+Java 컴파일러(javac)가 소스 코드를 컴파일 하면 .class확장자를 가진 **바이트 코드**가 생성된다. 이 바이트코드를 JVM의 메모리 공간으로 가져오는 걸 **class loading(클래스 로딩)**이라 하며 이것을 클래스 로더(class loader)가 한다. 
 
 
-
-This diagram gives on overview of the JVM:
-
--   The JVM  **interprets**  bytecode which is  **produced**  by the compilation of the source code of a class. Though the term JVM stands for “Java Virtual Machine”, it runs other languages like scala or groovy, as long as they can be compiled into java bytecode.
 -   In order to avoid disk I/O, the bytecode is loaded into the JVM by  **classloaders** in one of the the runtime data areas. This code stays in memory until the JVM is stopped or the classloader (that loaded it) is destroyed.
 -   The loaded code is then  **interpreted**  and executed by an  **execution engine**.
 -   The execution engine needs to store data like a pointer to the ligne of code being executed. It also needs to store the data handled in the developer’s code.
@@ -106,6 +102,6 @@ JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNzI5Nzg3MywtMTQyNDg3MjU4NCwtMT
-c0ODY0NzQ2Nl19
+eyJoaXN0b3J5IjpbNzc0NzcyNzY1LC0xNDI0ODcyNTg0LC0xNz
+Q4NjQ3NDY2XX0=
 -->
