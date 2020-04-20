@@ -373,7 +373,9 @@ public interface PhysicalConstants {
 
 java.io.ObjectStreamConstants 등 일부 자바 플랫폼 라이브러리에도 상수 인터페이스가 있으나 인터페이스를 잘못 사용한 예이니 절대 따라해서는 안된다. 
 
-상수를 공개할 목적이라면 훨씬 적합한 선택지가 몇 가지 있다. 
+상수를 공개할 목적이라면 훨씬 적합한 선택지가 몇 가지 있다. 특정 클래스나 인터페이스와 강하게 연관된 상수라면 그 클래스나 인터페이스 자체에 추가해야 한다. 모든 숫자 기본 타입의 박싱 클래스에 있는 MIN_VALUE, MAX_VALUE가 대표적인 예다. 
+
+열거 타입으로 나타내기 적합한 상수라면 열거 타입으로 만들어 공개하면 된다. 그것도 아니라면, 인스턴스화 할 수 없는 유틸리티 클래스에 담아 공개하자. 다음 코드는 상수인터페이스의 유틸리티
 
 
 단점 
@@ -410,11 +412,11 @@ java.io.ObjectStreamConstants 등 일부 자바 플랫폼 라이브러리에도 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODkyOTgxOSwyNDQ1NTAwMjgsMTcxMj
-UzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIyMzY0LC0xMzU2MTM2
-MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NSwxNzIxMjAxODc0LD
-EzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4NjEyMDcyLDE4NDkw
-NjU0NzgsMTM3MDYzNTUwLC00NDg1MzI5NzEsLTgzMzExNDg5NS
-wtNjU0MDk4MDczLDM3Mjg1OTcyNiwtMzY1OTgzNzM1LC0xMjk1
-MzU1OTg5XX0=
+eyJoaXN0b3J5IjpbLTE4MjY3NzUxNzEsLTMwODkyOTgxOSwyND
+Q1NTAwMjgsMTcxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIy
+MzY0LC0xMzU2MTM2MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NS
+wxNzIxMjAxODc0LDEzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4
+NjEyMDcyLDE4NDkwNjU0NzgsMTM3MDYzNTUwLC00NDg1MzI5Nz
+EsLTgzMzExNDg5NSwtNjU0MDk4MDczLDM3Mjg1OTcyNiwtMzY1
+OTgzNzM1XX0=
 -->
