@@ -34,7 +34,7 @@ JVM 메모리 영역은 Shared Memory영역과 Non-Shared Memory 영역으로 �
 
 ### 메소드 영역(Shared; Method Area, Class Area)
 
-클래스 로더가 바이트코드를 읽어 적재하는 메모리 공간이다. 각 클래스 별로 저장하는 정보는 아래와 같다. 클래스 별로 클래스 정보가 저장되기 때문에 Class Area라고도 불린다.사용하는 클래스와 static이 붙은  변수(클래스 변수도 메서드 영역에 저장한다. 
+클래스 로더가 컴파일된 바이트코드를 읽어 적재하는 공간이다. 클래스 별로 정보가 저장되기 때문에 Class Area라고도 불린다. 클래스 별 적재 정보는 아래와 같다.
 
 -   class information (number of fields/methods, super class name, interfaces names, version, …)
 -  static variables(class variables)
@@ -89,8 +89,8 @@ JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDAyMDUzNCwtOTc2NjA3ODg3LDUyOD
-k5MDAwNCwtMTI0NjAwODczMywtMzQ2OTAzNDQ4LDEwNzg2NzQ3
-MzAsLTY1ODI0MDE4Nyw3NjYyMjU0NDgsMTk2MzUyNzMwNiwtMT
-QyNDg3MjU4NCwtMTc0ODY0NzQ2Nl19
+eyJoaXN0b3J5IjpbNzk2NzYzMTQsLTk3NjYwNzg4Nyw1Mjg5OT
+AwMDQsLTEyNDYwMDg3MzMsLTM0NjkwMzQ0OCwxMDc4Njc0NzMw
+LC02NTgyNDAxODcsNzY2MjI1NDQ4LDE5NjM1MjczMDYsLTE0Mj
+Q4NzI1ODQsLTE3NDg2NDc0NjZdfQ==
 -->
