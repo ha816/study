@@ -13,8 +13,6 @@ JVM 메모리 영역은 Shared Memory영역과 Non-Shared Memory 영역으로 �
 
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
-###  스택 영역(Stack Area)([링크](https://coding-geek.com/wp-content/uploadsyaboong.github.io/java/20158/04/jvm_memory_overview.jpg)
-
 ### PC Register(Per Thread, Non-Shared)
 각 스레드는 고유의 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 (메서드 영역안) JVM 명령어 주소를 기억한다.
 
@@ -26,7 +24,7 @@ JVM 메모리 영역은 Shared Memory영역과 Non-Shared Memory 영역으로 �
 -   Heap 영역에 생성된 Object 타입의 데이터의 참조값이 할당된다.
 -   원시타입의 데이터가 값과 함께 할당된다. 
 
-### Stack(Per Thread, Non-Shared)
+### [Stack](https://coding-geek.com/wp-content/uploadsyaboong.github.io/java/20158/04/jvm_memory_overview.jpg)(Per Thread, Non-Shared)
 
 각 스레드는 자신만의 고유한 스택을 가진다. 스택은 다수의 프레임(Frame)으로 구성된다. 또 프레임은 쓰레드의 상태를 나타내는 데이터 구조들로 이루어져 있다. (Operand Stack, Local variable array, Run-time constant pool reference) 스택 변수의 생애주기는 스코프에 영향을 받는데 특정 스코프가 종료되면 스코프 안에 선언된 변수들은 스택에서 제거된다. 클래스 변수(static)와 원시 타입의 변수를 제외한 변수가 스택에 속한다. 여기서 주의할점은 변수가 가리키는 실제 객체는 힙에 들어가 있다는 것을 주의해야 한다. 
 
@@ -96,6 +94,6 @@ JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY2MjI1NDQ4LDE5NjM1MjczMDYsLTE0Mj
-Q4NzI1ODQsLTE3NDg2NDc0NjZdfQ==
+eyJoaXN0b3J5IjpbLTY1ODI0MDE4Nyw3NjYyMjU0NDgsMTk2Mz
+UyNzMwNiwtMTQyNDg3MjU4NCwtMTc0ODY0NzQ2Nl19
 -->
