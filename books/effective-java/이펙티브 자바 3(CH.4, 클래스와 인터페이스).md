@@ -360,7 +360,11 @@ default boolean removeIf(Predicated<? super E> filter){
 
 인터페이스는 자신을 구현한 클래스의 인스턴스를 참조하는 일종의 타입 역할을 한다. 즉, 클래스가 어떤 인터페이스를 구현한다는 것은 자신의 인스턴스로 무엇을 할 수 있는지를 클라이언트에게 알려주는 것이다. 인터페이스는 이 용도로만 사용해야 한다.
 
-이 지침에 맞지 않는 예로 
+이 지침에 맞지 않는 예로 소위 **상수 인터페이스**라는 것이 있다. 상수 인터페이스는 메서드 없이, 상수를 뜻하는 static final 필드로만 가득찬 인터페이스를 말한다. 그리고 이 상수들을 사용하려는 클래스에서 정규화된 이름(qualified name)을 쓰는 것을 피하고자 그 인터페이스를 구현하곤 한다. 
+
+```
+publ
+```
 
 
 단점 
@@ -397,11 +401,11 @@ default boolean removeIf(Predicated<? super E> filter){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOT
-gwNjIyMzY0LC0xMzU2MTM2MjgwLDE3MjM5NjA0NDEsMjAzNzM1
-OTQ5NSwxNzIxMjAxODc0LDEzODExMTI0NzgsLTE3MTY3ODkwOT
-ksNzI4NjEyMDcyLDE4NDkwNjU0NzgsMTM3MDYzNTUwLC00NDg1
-MzI5NzEsLTgzMzExNDg5NSwtNjU0MDk4MDczLDM3Mjg1OTcyNi
-wtMzY1OTgzNzM1LC0xMjk1MzU1OTg5LC0xMzY1Nzk4OTQ3LDEw
-NzIzOTI5ODJdfQ==
+eyJoaXN0b3J5IjpbLTEyOTE4OTMwMTMsMTcxMjUzNzI2MiwtMT
+Q5ODYyNzExMCwxOTgwNjIyMzY0LC0xMzU2MTM2MjgwLDE3MjM5
+NjA0NDEsMjAzNzM1OTQ5NSwxNzIxMjAxODc0LDEzODExMTI0Nz
+gsLTE3MTY3ODkwOTksNzI4NjEyMDcyLDE4NDkwNjU0NzgsMTM3
+MDYzNTUwLC00NDg1MzI5NzEsLTgzMzExNDg5NSwtNjU0MDk4MD
+czLDM3Mjg1OTcyNiwtMzY1OTgzNzM1LC0xMjk1MzU1OTg5LC0x
+MzY1Nzk4OTQ3XX0=
 -->
