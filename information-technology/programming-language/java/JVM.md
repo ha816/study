@@ -40,8 +40,8 @@ JVM 메모리 영역은 Shared Memory영역과 Non-Shared Memory 영역으로 �
 -  static variables(class variables)
 -   a runtime constant pool
 
-클래스 파일은 고유의 constant pool을 가지고 JVM에 의해 실제 메모리에 올라가면 **runtime constant pool**이)가 로드 된다. 여기서 클래스 파일 constant pool의 구현체가 runtime constant pool이다.
- 한 클래스 파일의 모든 심블릭 참조(**symbolic reference**)는 상수풀에 저장된다. 심블릭 참조란 문자열인데 실제 사용하려는 객체를 찾기위해 사용한다.
+한 클래스은 고유의 constant pool을 가지며 JVM에 의해 실제 메모리에 올라가면 **runtime constant pool**이 된다. 즉 클래스의 constant pool의 구현체가 runtime constant pool이다.
+ 한 클래스이 가진 모든 심블릭 참조(**symbolic reference**)는 상수풀에 저장된다. 심블릭 참조란 문자열인데 실제 사용하려는 객체를 찾기위해 사용한다.
 
 ```
 if (obj.getClass() == String.class) { // do something }
@@ -89,8 +89,8 @@ JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk2NzYzMTQsLTk3NjYwNzg4Nyw1Mjg5OT
-AwMDQsLTEyNDYwMDg3MzMsLTM0NjkwMzQ0OCwxMDc4Njc0NzMw
-LC02NTgyNDAxODcsNzY2MjI1NDQ4LDE5NjM1MjczMDYsLTE0Mj
-Q4NzI1ODQsLTE3NDg2NDc0NjZdfQ==
+eyJoaXN0b3J5IjpbLTQxMjY4NzU4NCw3OTY3NjMxNCwtOTc2Nj
+A3ODg3LDUyODk5MDAwNCwtMTI0NjAwODczMywtMzQ2OTAzNDQ4
+LDEwNzg2NzQ3MzAsLTY1ODI0MDE4Nyw3NjYyMjU0NDgsMTk2Mz
+UyNzMwNiwtMTQyNDg3MjU4NCwtMTc0ODY0NzQ2Nl19
 -->
