@@ -48,6 +48,9 @@
 > **StringBuilder와 StringBuffer의 차이는?**
 > StringBuilder는 thread safe하지 않다. 하지만 StringBuffer는 thread-safe하다. 따라서 StringBuilder가 더 성능상 이점이 있다. 
 
+>**Comparable VS Comparator**
+>Comparable과 Comparator 모두 객체들의 순서를 정하기 위해 사용한다. Collections.sort와 같이 정렬 메서드를 사용하고 싶다면 객체들이 Comparable 인터페이스를 구현해야 한다. Comparable은 자연스러운 순서를 정할때 사용하고 Comparator는 원하는 임의로 순서를 정하고 싶을 때 사용한다. 
+
 ## JVM & GC
 
 >**JVM의 역할은? 그리고 GC(가비지 컬렉션)은 어떤 역할을 하는가?**
@@ -61,7 +64,7 @@
 > 공유 메모리 영역에는 Method Area 영역, Heap 영역이 있다. Method 영역은 클래스 영역이라고도 불리는데 클래스 정보(이름, 필드, 메서드), 클래스 변수, Run-Time Constant pool 이 저장되는 영역이다. Heap 영역은 객체들이 저장되는 공간이다.
 > 고유 메모리 영역에는 PC, Java native method, Stack으로 구성된다. 
 
-## EX
+## Exception
 
 >**Error와 Exception의 차이는?**
 >Error는 발생 시 더 이상의 작업을 수행할 수 없는 치명적인 문제를 말한다. Error가 발생하면 JVM이 중단되며 대표적인 Error로는 StackOverFlow, HeapOutOfMemory가 있다. 반면에 Exception은 발생해도 예외 처리를 통해 정상 동작하도록 유도할 수 있다. 
@@ -69,9 +72,6 @@
 >**Exception 의 주요 클래스를 설명하라**
 >RuntimeException -> Exception -> Throwable
 >Exception은 크게 unchecked Exception(RuntimeException)과 checked Exception으로 나뉜다. uncheked Exception은 런타임시 발생하는 예외로 대표적으로는 NullPointException, ArrayOutOfBound 등이 있다. checked Exception는 예외처리를 위한 추가 코드를 작성해야 하며, 대표적으로 IO Exception이 있다. 
-
->**Comparable VS Comparator**
->Comparable과 Comparator 모두 객체들의 순서를 정하기 위해 사용한다. Collections.sort와 같이 정렬 메서드를 사용하고 싶다면 객체들이 Comparable 인터페이스를 구현해야 한다. Comparable은 자연스러운 순서를 정할때 사용하고 Comparator는 원하는 임의로 순서를 정하고 싶을 때 사용한다. 
 
 # DataStrucutre
 
@@ -296,7 +296,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODc0MjE2LC0xMzg1NjA5NjAwLC0xMj
+eyJoaXN0b3J5IjpbMjM2MjA0NDY0LC0xMzg1NjA5NjAwLC0xMj
 g5MDU5MzQsLTg4MDgwMjkzOCwtMzQ3NzEwMDU1LDExNTk0NjMw
 NjgsNDE0NDU3MjEsMTUxNjM1MjA5NywzODIxNDA4OTcsLTE3MT
 I1NTc3MDYsMTk4NTM1NjAzNCwxMDkyMTQ2MzcyLC0xOTM4MTQy
