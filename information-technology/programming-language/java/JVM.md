@@ -81,14 +81,10 @@ static Object o = new SomeObject()
 
 ![enter image description here](https://i.stack.imgur.com/4ySVX.png)
 
-JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 위치할 MetasSpace에 있는 Method Area에 로드한다. Method Area는 각 클래스에 대한 메타 정보와 런타임 컨스탄트 풀을 가진다. 쓰레드는 고유의 메모리 영역인 ProgramCounter, Stack, Native Stack으로 구성된다. Stack은 다시 Frame들로 구성된다. 라는 새로운 영역으로 변경되었다.|
-
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzg2NTA0MjAsMzQzODc0NDk0LC0yMD
-k3NjYxMzQ5LC01NDk1NDAzMiw1NTk4OTI4OTAsNzk2NzYzMTQs
-LTk3NjYwNzg4Nyw1Mjg5OTAwMDQsLTEyNDYwMDg3MzMsLTM0Nj
-kwMzQ0OCwxMDc4Njc0NzMwLC02NTgyNDAxODcsNzY2MjI1NDQ4
-LDE5NjM1MjczMDYsLTE0MjQ4NzI1ODQsLTE3NDg2NDc0NjZdfQ
-==
+eyJoaXN0b3J5IjpbNzk3Nzk5NzQ2LDM0Mzg3NDQ5NCwtMjA5Nz
+Y2MTM0OSwtNTQ5NTQwMzIsNTU5ODkyODkwLDc5Njc2MzE0LC05
+NzY2MDc4ODcsNTI4OTkwMDA0LC0xMjQ2MDA4NzMzLC0zNDY5MD
+M0NDgsMTA3ODY3NDczMCwtNjU4MjQwMTg3LDc2NjIyNTQ0OCwx
+OTYzNTI3MzA2LC0xNDI0ODcyNTg0LC0xNzQ4NjQ3NDY2XX0=
 -->
