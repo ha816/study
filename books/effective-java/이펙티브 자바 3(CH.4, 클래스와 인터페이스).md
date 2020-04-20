@@ -392,9 +392,8 @@ public class PhysicalConstants {
 
 ## Item.23 태그 달린 클래스보다는 클래스 계층 구조를 활용하라
 
-두 가지 이상의 의미를 표
+두 가지 이상의 의미를 표현할 수 있으며, 그중 현재 표현하는 의미를 태그값으로 알려주는 클래스를 본적이 있을 것이다. 
 
-결국 태그 기반 클래스 사용은 쓰지 말자
 
 ### 21. 전략을 표현하고 싶을때는 함수 객체를 사용해라 
 
@@ -423,11 +422,11 @@ public class PhysicalConstants {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY5OTI4NTQ5LC0xMDY2NTQxNDcwLDY1OD
-c4NjE2NiwtOTM5NTQ2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4
-LDE3MTI1MzcyNjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMT
-M1NjEzNjI4MCwxNzIzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIw
-MTg3NCwxMzgxMTEyNDc4LC0xNzE2Nzg5MDk5LDcyODYxMjA3Mi
-wxODQ5MDY1NDc4LDEzNzA2MzU1MCwtNDQ4NTMyOTcxLC04MzMx
-MTQ4OTVdfQ==
+eyJoaXN0b3J5IjpbLTIwMjc4ODQ5NTQsLTEwNjY1NDE0NzAsNj
+U4Nzg2MTY2LC05Mzk1NDYyMDcsLTMwODkyOTgxOSwyNDQ1NTAw
+MjgsMTcxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIyMzY0LC
+0xMzU2MTM2MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NSwxNzIx
+MjAxODc0LDEzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4NjEyMD
+cyLDE4NDkwNjU0NzgsMTM3MDYzNTUwLC00NDg1MzI5NzEsLTgz
+MzExNDg5NV19
 -->
