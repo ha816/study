@@ -74,8 +74,8 @@ static Object o = new SomeObject()
 
 | generation name | explanation |
 |--|--|
-| Eden |객체가 처음 생길때메모리 영역 |
-| Survivor | Minor GC의 수집대상에서 제외된 객체가 있는 영역으로 똑같이 분할된 S0과 S1으로 나누어져 있다. |
+| Eden |객체가 처음 생길때 적재되는 메모리 영역 |
+| Survivor | Minor GC의 수집대상에서 제외된 객체가 있는 영역으로 똑같이 분할된 Survivor1과 Survivor2로 나누어져 있다. |
 | Tenured(Old) | Survivor 공간에서 최대 나이 임계값에 다다른 객체가 이주하는 공간으로 낮은 빈도로 gc의 대상이 된다.|
 | Perm(PermGen) | 일반적으로 String이나 상수 같이 불변 값이 저장된다. 자바 8에서 PermGen 대신 MetaSpace라는 Heap영역 외부에 메모리 공간을 사용한다.|
 
@@ -87,9 +87,9 @@ JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODY2OTU0NCwzNDM4NzQ0OTQsLTIwOT
-c2NjEzNDksLTU0OTU0MDMyLDU1OTg5Mjg5MCw3OTY3NjMxNCwt
-OTc2NjA3ODg3LDUyODk5MDAwNCwtMTI0NjAwODczMywtMzQ2OT
-AzNDQ4LDEwNzg2NzQ3MzAsLTY1ODI0MDE4Nyw3NjYyMjU0NDgs
-MTk2MzUyNzMwNiwtMTQyNDg3MjU4NCwtMTc0ODY0NzQ2Nl19
+eyJoaXN0b3J5IjpbNzcyOTgyMjI3LDM0Mzg3NDQ5NCwtMjA5Nz
+Y2MTM0OSwtNTQ5NTQwMzIsNTU5ODkyODkwLDc5Njc2MzE0LC05
+NzY2MDc4ODcsNTI4OTkwMDA0LC0xMjQ2MDA4NzMzLC0zNDY5MD
+M0NDgsMTA3ODY3NDczMCwtNjU4MjQwMTg3LDc2NjIyNTQ0OCwx
+OTYzNTI3MzA2LC0xNDI0ODcyNTg0LC0xNzQ4NjQ3NDY2XX0=
 -->
