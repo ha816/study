@@ -56,12 +56,10 @@
 >**JVM의 역할은**
 >JVM은 Java Virtual Machine의 약자로, 자바 프로그램이 실행되는 곳이다. JVM은 운영체제와 애플리케이션 사이에 위치하면서 애플리케이션이 특정 플랫폼에 상관없이 독립적으로 실행되도록 한다. 또한 JVM은 메모리 관리를 위해 GC를 수행한다. 
 
->**메모리 구조는? 변수별로 저장되는 위치는?**
+>**JVM의 메모리 구조는? 변수별로 저장되는 위치는?**
 > 자바 메모리는 쓰레드 전체가 공유하는 메모리 영역(Shared Memory)과 개별 쓰레드가 가지는 고유 메모리 영역(Non-Shared Memory) 두 가지로 나뉜다. 
 > 공유 메모리 영역에는 Method Area 영역, Heap 영역이 있다. Method 영역은 클래스 영역이라고도 불리는데 클래스 정보(이름, 필드, 메서드), 클래스 변수, Run-Time Constant pool 이 저장되는 영역이다. Heap 영역은 객체들이 저장되는 공간이다.
 > 고유 메모리 영역에는 PC, Java native method, Stack으로 구성된다. 
-
-
 
 >**GC(가비지 컬렉션)은? GC 알고리즘에 대해서**
 > GC는 
@@ -299,11 +297,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMTI1MTQzMywtMTM4NTYwOTYwMCwtMT
-I4OTA1OTM0LC04ODA4MDI5MzgsLTM0NzcxMDA1NSwxMTU5NDYz
-MDY4LDQxNDQ1NzIxLDE1MTYzNTIwOTcsMzgyMTQwODk3LC0xNz
-EyNTU3NzA2LDE5ODUzNTYwMzQsMTA5MjE0NjM3MiwtMTkzODE0
-MjkwMiwtMjAzOTQ4MjI4OCwtMTE3OTk1ODU2OCwtMTk2NDg0MT
-I4MCwtMTgwMDczNzk3MywxNDA1NDU0NTQ3LC00MDg4OTQxOTQs
-LTEwMTEyODgzNzldfQ==
+eyJoaXN0b3J5IjpbLTEwNDQyNjk3MjgsLTEzODU2MDk2MDAsLT
+EyODkwNTkzNCwtODgwODAyOTM4LC0zNDc3MTAwNTUsMTE1OTQ2
+MzA2OCw0MTQ0NTcyMSwxNTE2MzUyMDk3LDM4MjE0MDg5NywtMT
+cxMjU1NzcwNiwxOTg1MzU2MDM0LDEwOTIxNDYzNzIsLTE5Mzgx
+NDI5MDIsLTIwMzk0ODIyODgsLTExNzk5NTg1NjgsLTE5NjQ4ND
+EyODAsLTE4MDA3Mzc5NzMsMTQwNTQ1NDU0NywtNDA4ODk0MTk0
+LC0xMDExMjg4Mzc5XX0=
 -->
