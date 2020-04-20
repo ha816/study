@@ -383,7 +383,7 @@ public class PhysicalConstants {
 }
 ```
 
-> 숫자 리터럴에 사용한 밑줄(_)을 한번 보자. 자바 7부터 허용된 이 밑줄을 숫자 리터럴 값에는 아무 영향을 주지 않으면서, 읽기는 훨씬 편하게 해준다. 
+> 숫자 리터럴에 사용한 밑줄(_)을 한번 보자. 자바 7부터 허용된 이 밑줄을 숫자 리터럴 값에는 아무 영향을 주지 않으면서, 읽기는 훨씬 편하게 해준다. 고정소
 
 
 단점 
@@ -420,11 +420,11 @@ public class PhysicalConstants {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU4Nzg2MTY2LC05Mzk1NDYyMDcsLTMwOD
-kyOTgxOSwyNDQ1NTAwMjgsMTcxMjUzNzI2MiwtMTQ5ODYyNzEx
-MCwxOTgwNjIyMzY0LC0xMzU2MTM2MjgwLDE3MjM5NjA0NDEsMj
-AzNzM1OTQ5NSwxNzIxMjAxODc0LDEzODExMTI0NzgsLTE3MTY3
-ODkwOTksNzI4NjEyMDcyLDE4NDkwNjU0NzgsMTM3MDYzNTUwLC
-00NDg1MzI5NzEsLTgzMzExNDg5NSwtNjU0MDk4MDczLDM3Mjg1
-OTcyNl19
+eyJoaXN0b3J5IjpbMTIyMTIzMjcyMyw2NTg3ODYxNjYsLTkzOT
+U0NjIwNywtMzA4OTI5ODE5LDI0NDU1MDAyOCwxNzEyNTM3MjYy
+LC0xNDk4NjI3MTEwLDE5ODA2MjIzNjQsLTEzNTYxMzYyODAsMT
+cyMzk2MDQ0MSwyMDM3MzU5NDk1LDE3MjEyMDE4NzQsMTM4MTEx
+MjQ3OCwtMTcxNjc4OTA5OSw3Mjg2MTIwNzIsMTg0OTA2NTQ3OC
+wxMzcwNjM1NTAsLTQ0ODUzMjk3MSwtODMzMTE0ODk1LC02NTQw
+OTgwNzNdfQ==
 -->
