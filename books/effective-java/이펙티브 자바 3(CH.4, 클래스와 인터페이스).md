@@ -364,9 +364,12 @@ default boolean removeIf(Predicated<? super E> filter){
 
 ```
 public interface PhysicalConstants {
-	
+	static final double AVOGADROS_NUMBER = 6.022_140;
+	static final double ELECTRON_MASS = 9.109_383_56;
 }
 ```
+
+**상수 인터페이스 안티 패턴은 인터페이스를 잘못 사용한 예다.** 클래스 내부에서 사용하는 상수는 외부 인터페이스가 
 
 
 단점 
@@ -403,11 +406,11 @@ public interface PhysicalConstants {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTgwNjk3MDgsMjQ0NTUwMDI4LDE3MT
-I1MzcyNjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1NjEz
-NjI4MCwxNzIzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIwMTg3NC
-wxMzgxMTEyNDc4LC0xNzE2Nzg5MDk5LDcyODYxMjA3MiwxODQ5
-MDY1NDc4LDEzNzA2MzU1MCwtNDQ4NTMyOTcxLC04MzMxMTQ4OT
-UsLTY1NDA5ODA3MywzNzI4NTk3MjYsLTM2NTk4MzczNSwtMTI5
-NTM1NTk4OV19
+eyJoaXN0b3J5IjpbLTY0NjUwODM2MiwyNDQ1NTAwMjgsMTcxMj
+UzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIyMzY0LC0xMzU2MTM2
+MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NSwxNzIxMjAxODc0LD
+EzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4NjEyMDcyLDE4NDkw
+NjU0NzgsMTM3MDYzNTUwLC00NDg1MzI5NzEsLTgzMzExNDg5NS
+wtNjU0MDk4MDczLDM3Mjg1OTcyNiwtMzY1OTgzNzM1LC0xMjk1
+MzU1OTg5XX0=
 -->
