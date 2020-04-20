@@ -14,10 +14,10 @@ JVM 메모리 영역은 Shared Memory영역과 Non-Shared Memory 영역으로 �
 ![enter image description here](http://brucehenry.github.io/blog/public/2018/02/07/JVM-Memory-Structure/JVM-Memory.png)
 
 ### PC Register(Per Thread, Non-Shared)
-각 스레드는 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 JVM 명령어 주소를 기억한다.
+각 스레드는 프로그램 카운터 레지스터(program counter register)를 가진다.  프로그램 카운터 레지스터는 현재 실행 중인 명령어 주소를 저장한다.
 
 ### Native Method Stack(Per Thread, Non-Shared)
-다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 그리고 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출된다. 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적이다. 
+다른 언어로 쓰인 네이티브 코드를 위한 스택이다. 네이티브 코드는 JNI(Java Native Interafce)를 통해 호출되는데 말 그대로 네이티브 스택이기 때문에, 이 스택의 모든 행동은 완전히 OS에 종속적이다. 
 
 - 각 Thread 는 자신만의 stack 을 가진다.
 -   지역변수들은 scope 에 따른 visibility 를 가진다.
@@ -94,7 +94,7 @@ JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNDE2ODA0NiwtNjU4MjQwMTg3LDc2Nj
-IyNTQ0OCwxOTYzNTI3MzA2LC0xNDI0ODcyNTg0LC0xNzQ4NjQ3
-NDY2XX0=
+eyJoaXN0b3J5IjpbODQ4NDkxOTE3LC02NTgyNDAxODcsNzY2Mj
+I1NDQ4LDE5NjM1MjczMDYsLTE0MjQ4NzI1ODQsLTE3NDg2NDc0
+NjZdfQ==
 -->
