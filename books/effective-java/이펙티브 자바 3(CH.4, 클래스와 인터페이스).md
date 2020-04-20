@@ -383,7 +383,11 @@ public class PhysicalConstants {
 }
 ```
 
-> 숫자 리터럴에 사용한 밑줄(_)을 한번 보자. 자바 7부터 허용된 이 밑줄을 숫자 리터럴 값에는 아무 영향을 주지 않으면서, 읽기는 훨씬 편하게 해준다. 고정소
+유틸리티 클래스로 정의된 상수를 사용하려면 클래스 이름까지 함께 명시해야 한다. 유틸리티 클래스는
+
+> 숫자 리터럴에 사용한 밑줄(_)을 한번 보자. 자바 7부터 허용된 이 밑줄을 숫자 리터럴 값에는 아무 영향을 주지 않으면서, 읽기는 훨씬 편하게 해준다. 고정소수점, 부동소수점으로 5자이 이상이라면 밑줄을 사용하는걸 고려해보자. 십진수도 밑줄을 사용해 세자리씩 묶어주는 것이 좋다.
+
+
 
 
 단점 
@@ -420,11 +424,11 @@ public class PhysicalConstants {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTIzMjcyMyw2NTg3ODYxNjYsLTkzOT
-U0NjIwNywtMzA4OTI5ODE5LDI0NDU1MDAyOCwxNzEyNTM3MjYy
-LC0xNDk4NjI3MTEwLDE5ODA2MjIzNjQsLTEzNTYxMzYyODAsMT
-cyMzk2MDQ0MSwyMDM3MzU5NDk1LDE3MjEyMDE4NzQsMTM4MTEx
-MjQ3OCwtMTcxNjc4OTA5OSw3Mjg2MTIwNzIsMTg0OTA2NTQ3OC
-wxMzcwNjM1NTAsLTQ0ODUzMjk3MSwtODMzMTE0ODk1LC02NTQw
-OTgwNzNdfQ==
+eyJoaXN0b3J5IjpbNzYxMjMwOTUwLDY1ODc4NjE2NiwtOTM5NT
+Q2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LDE3MTI1MzcyNjIs
+LTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1NjEzNjI4MCwxNz
+IzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIwMTg3NCwxMzgxMTEy
+NDc4LC0xNzE2Nzg5MDk5LDcyODYxMjA3MiwxODQ5MDY1NDc4LD
+EzNzA2MzU1MCwtNDQ4NTMyOTcxLC04MzMxMTQ4OTUsLTY1NDA5
+ODA3M119
 -->
