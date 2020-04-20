@@ -41,7 +41,7 @@ JVM 메모리 영역은 Shared Memory영역과 Non-Shared Memory 영역으로 �
 -   a runtime constant pool
 
 한 클래스은 고유의 constant pool을 가지며 JVM에 의해 실제 메모리에 올라가면 **runtime constant pool**이 된다. 즉 클래스의 constant pool의 구현체가 runtime constant pool이다.
- 한 클래스이 가진 모든 심블릭 참조(**symbolic reference**)는 상수풀에 저장된다. 심블릭 참조란 문자열인데 실제 사용하려는 객체를 찾기위해 사용한다.
+ 한 클래스이 가진 모든 심블릭 참조(**symbolic reference**)는 상수풀에 저장된다. 심블릭 참조란 문자열인데 실제 사용하려는 클래스 객체를 찾기위해 사용한다.
 
 ```
 if (obj.getClass() == String.class) { // do something }
@@ -53,7 +53,7 @@ invokevirtual   #21; //Method java/lang/Object.getClass:()Ljava/lang/Class;
 ldc     #25; //class java/lang/String
 if_acmpne       20
 ```
-`idc` 명령은 심블릭하게 저장되어 있는 클래스를 참조한다(#25 == String클래스). JVM이 바이트 코드를 실행할때, 사용할 클래스를 식별하는데 심블릭 참조를 사용하여 실제 객체의 주소값을 반환한다. 여기서 객체의 주소값을 반환한다는 점에 주의하자. 실제 모든변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 변수에는 단지단지 로드되는 변수는 Heap에 있는 객체의 주소값만을 가진다. 
+`idc` 명령은 심블릭하게 저장되어 있는 클래스를 참조한다(#25 == String클래스). JVM이 바이트 코드를 실행할때, 사용할 클래스를 식별하는데 심블릭 참조를 사용하여 실제 객체의 주소값을 반환한다. 여기서 객체의 주소값을 반환한다는 점에 주의하자. 실제 모든변수 중 참조 변수의 경우, 실제 객체는 Heap 영역에 저장된다. 변수에는 단지 Heap에 있는 객체의 주소값만을 가진다. 
 
 ```
 static int i = 1; //the value 1 is stored in the RunTime Constant Pool(PermGen section(Heap))
@@ -89,8 +89,8 @@ JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMjY4NzU4NCw3OTY3NjMxNCwtOTc2Nj
-A3ODg3LDUyODk5MDAwNCwtMTI0NjAwODczMywtMzQ2OTAzNDQ4
-LDEwNzg2NzQ3MzAsLTY1ODI0MDE4Nyw3NjYyMjU0NDgsMTk2Mz
-UyNzMwNiwtMTQyNDg3MjU4NCwtMTc0ODY0NzQ2Nl19
+eyJoaXN0b3J5IjpbNTU5ODkyODkwLDc5Njc2MzE0LC05NzY2MD
+c4ODcsNTI4OTkwMDA0LC0xMjQ2MDA4NzMzLC0zNDY5MDM0NDgs
+MTA3ODY3NDczMCwtNjU4MjQwMTg3LDc2NjIyNTQ0OCwxOTYzNT
+I3MzA2LC0xNDI0ODcyNTg0LC0xNzQ4NjQ3NDY2XX0=
 -->
