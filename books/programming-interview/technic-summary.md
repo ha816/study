@@ -169,7 +169,7 @@
 
 >**DB Indexing 방식은?**
 >DB 인덱싱 기법에는 대표적으로 B-Tree 인덱싱과 Hash 인덱싱이 있다. 
->B-Tree(Balanced-Tree)는 가장 범용적으로 사용되며 Root, Branch, Leaf 노드로 구성된다. 하나의 노드는 인덱스 컬럼 키와 주소의 쌍인 엔트리의 다수로 구성된다. Leaf 노드에 엔트리의 주소값은 실제 저장된 레코드를 가리킨다. 
+>B-Tree(Balanced-Tree)는 가장 범용적으로 사용되며 Root, Branch, Leaf 노드로 구성된다. 하나의 노드에는 다수의 인덱스 컬럼 키와 주소의 쌍인 엔트리 구성된다. Leaf 노드에 엔트리의 주소값은 실제 저장된 레코드를 가리킨다. 
 >Hash 인덱싱은 해시 값으로 변경해서 저장하기 때문에 값의 일부만 검색할때는 사용할 수 없다. 하지만 검색 속도는 매우 빠르다. 
 
 >**트랜잭션이란?**
@@ -292,11 +292,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjIzNjY4NjMsLTg4MDgwMjkzOCwtMz
-Q3NzEwMDU1LDExNTk0NjMwNjgsNDE0NDU3MjEsMTUxNjM1MjA5
-NywzODIxNDA4OTcsLTE3MTI1NTc3MDYsMTk4NTM1NjAzNCwxMD
-kyMTQ2MzcyLC0xOTM4MTQyOTAyLC0yMDM5NDgyMjg4LC0xMTc5
-OTU4NTY4LC0xOTY0ODQxMjgwLC0xODAwNzM3OTczLDE0MDU0NT
-Q1NDcsLTQwODg5NDE5NCwtMTAxMTI4ODM3OSwtMjA1Nzg0OTUz
-Miw5MTY1NzI3MzldfQ==
+eyJoaXN0b3J5IjpbNzA3NTE1MTAxLC04ODA4MDI5MzgsLTM0Nz
+cxMDA1NSwxMTU5NDYzMDY4LDQxNDQ1NzIxLDE1MTYzNTIwOTcs
+MzgyMTQwODk3LC0xNzEyNTU3NzA2LDE5ODUzNTYwMzQsMTA5Mj
+E0NjM3MiwtMTkzODE0MjkwMiwtMjAzOTQ4MjI4OCwtMTE3OTk1
+ODU2OCwtMTk2NDg0MTI4MCwtMTgwMDczNzk3MywxNDA1NDU0NT
+Q3LC00MDg4OTQxOTQsLTEwMTEyODgzNzksLTIwNTc4NDk1MzIs
+OTE2NTcyNzM5XX0=
 -->
