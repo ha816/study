@@ -359,7 +359,6 @@ default boolean removeIf(Predicated<? super E> filter){
 ## Item.22 인터페이스는 타입을 정의하는 용도로만 사용하라
 
 
-
 태그가 달린 클래스란? 
 -> 두 가지 이상의 기능을 가지고 그 중 어떤 기능을 제공하는지 표시하는 태그가 달린 클래스
 
@@ -397,11 +396,11 @@ default boolean removeIf(Predicated<? super E> filter){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTYxMzYyODAsMTcyMzk2MDQ0MSwyMD
-M3MzU5NDk1LDE3MjEyMDE4NzQsMTM4MTExMjQ3OCwtMTcxNjc4
-OTA5OSw3Mjg2MTIwNzIsMTg0OTA2NTQ3OCwxMzcwNjM1NTAsLT
-Q0ODUzMjk3MSwtODMzMTE0ODk1LC02NTQwOTgwNzMsMzcyODU5
-NzI2LC0zNjU5ODM3MzUsLTEyOTUzNTU5ODksLTEzNjU3OTg5ND
-csMTA3MjM5Mjk4MiwtMjA0NzIwMTQxOCwtMTg0ODA2MDY1LC0x
-NjcyMDU2OTk2XX0=
+eyJoaXN0b3J5IjpbLTExNDc3MjI3OTQsLTEzNTYxMzYyODAsMT
+cyMzk2MDQ0MSwyMDM3MzU5NDk1LDE3MjEyMDE4NzQsMTM4MTEx
+MjQ3OCwtMTcxNjc4OTA5OSw3Mjg2MTIwNzIsMTg0OTA2NTQ3OC
+wxMzcwNjM1NTAsLTQ0ODUzMjk3MSwtODMzMTE0ODk1LC02NTQw
+OTgwNzMsMzcyODU5NzI2LC0zNjU5ODM3MzUsLTEyOTUzNTU5OD
+ksLTEzNjU3OTg5NDcsMTA3MjM5Mjk4MiwtMjA0NzIwMTQxOCwt
+MTg0ODA2MDY1XX0=
 -->
