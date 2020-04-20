@@ -358,7 +358,7 @@ default boolean removeIf(Predicated<? super E> filter){
 
 ## Item.22 인터페이스는 타입을 정의하는 용도로만 사용하라
 
-인터페이스는 자신을 구현한 클래스의 인스턴스를 참조할 수 있는 타입 역할을 한다. 
+인터페이스는 자신을 구현한 클래스의 인스턴스를 참조할 수 있는 타입 역할을 한다. 즉, 클래스가 어떤 인터페이스를 구현한다는 것은 자신의 인스턴스로 무엇을 할 수 있는지를 클라이언트에게 알려주는 것이다. 인터페이스는 이 용도로만 사용해야 한다.
 
 태그가 달린 클래스란? 
 -> 두 가지 이상의 기능을 가지고 그 중 어떤 기능을 제공하는지 표시하는 태그가 달린 클래스
@@ -397,11 +397,11 @@ default boolean removeIf(Predicated<? super E> filter){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MDYyMjM2NCwtMTM1NjEzNjI4MCwxNz
-IzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIwMTg3NCwxMzgxMTEy
-NDc4LC0xNzE2Nzg5MDk5LDcyODYxMjA3MiwxODQ5MDY1NDc4LD
-EzNzA2MzU1MCwtNDQ4NTMyOTcxLC04MzMxMTQ4OTUsLTY1NDA5
-ODA3MywzNzI4NTk3MjYsLTM2NTk4MzczNSwtMTI5NTM1NTk4OS
-wtMTM2NTc5ODk0NywxMDcyMzkyOTgyLC0yMDQ3MjAxNDE4LC0x
-ODQ4MDYwNjVdfQ==
+eyJoaXN0b3J5IjpbLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMT
+M1NjEzNjI4MCwxNzIzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIw
+MTg3NCwxMzgxMTEyNDc4LC0xNzE2Nzg5MDk5LDcyODYxMjA3Mi
+wxODQ5MDY1NDc4LDEzNzA2MzU1MCwtNDQ4NTMyOTcxLC04MzMx
+MTQ4OTUsLTY1NDA5ODA3MywzNzI4NTk3MjYsLTM2NTk4MzczNS
+wtMTI5NTM1NTk4OSwtMTM2NTc5ODk0NywxMDcyMzkyOTgyLC0y
+MDQ3MjAxNDE4XX0=
 -->
