@@ -364,7 +364,7 @@ default boolean removeIf(Predicated<? super E> filter){
 
 ```
 public interface PhysicalConstants {
-
+	
 }
 ```
 
@@ -403,11 +403,11 @@ public interface PhysicalConstants {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ0NTUwMDI4LDE3MTI1MzcyNjIsLTE0OT
-g2MjcxMTAsMTk4MDYyMjM2NCwtMTM1NjEzNjI4MCwxNzIzOTYw
-NDQxLDIwMzczNTk0OTUsMTcyMTIwMTg3NCwxMzgxMTEyNDc4LC
-0xNzE2Nzg5MDk5LDcyODYxMjA3MiwxODQ5MDY1NDc4LDEzNzA2
-MzU1MCwtNDQ4NTMyOTcxLC04MzMxMTQ4OTUsLTY1NDA5ODA3My
-wzNzI4NTk3MjYsLTM2NTk4MzczNSwtMTI5NTM1NTk4OSwtMTM2
-NTc5ODk0N119
+eyJoaXN0b3J5IjpbLTEyOTgwNjk3MDgsMjQ0NTUwMDI4LDE3MT
+I1MzcyNjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1NjEz
+NjI4MCwxNzIzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIwMTg3NC
+wxMzgxMTEyNDc4LC0xNzE2Nzg5MDk5LDcyODYxMjA3MiwxODQ5
+MDY1NDc4LDEzNzA2MzU1MCwtNDQ4NTMyOTcxLC04MzMxMTQ4OT
+UsLTY1NDA5ODA3MywzNzI4NTk3MjYsLTM2NTk4MzczNSwtMTI5
+NTM1NTk4OV19
 -->
