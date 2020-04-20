@@ -64,9 +64,7 @@ static Object o = new SomeObject()
 
 ### Heap Area(Shared)
 
-힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 힙은 동적으로 확장되거나 축소 될
-
-객체를 저장하기 위해 영역, new 연산자를 통하여 개체를 동적으로 생성한다.  객체를 할당할때 이용할 수 있는 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 한다. 그래도 충분한 메모리가 없으면 OutOfMemoryError가 발생하며 JVM이 종료된다. 
+힙은 모든 쓰레드가 공유하는 공간이다. 모든 객체와 배열들이 힙에 생성된다. 객체를 저장하기 위해 영역, new 연산자를 통하여 개체를 동적으로 생성한다.  객체를 할당할때 이용할 수 있는 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 한다. 그래도 충분한 메모리가 없으면 OutOfMemoryError가 발생하며 JVM이 종료된다. 
   
 #### Heap's Generation
 
@@ -89,9 +87,9 @@ JVM이 동작하면, 각 클래스에 대한 정보를은 물리 메모리에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwOTY5MzMxOCw1NTk4OTI4OTAsNzk2Nz
-YzMTQsLTk3NjYwNzg4Nyw1Mjg5OTAwMDQsLTEyNDYwMDg3MzMs
-LTM0NjkwMzQ0OCwxMDc4Njc0NzMwLC02NTgyNDAxODcsNzY2Mj
-I1NDQ4LDE5NjM1MjczMDYsLTE0MjQ4NzI1ODQsLTE3NDg2NDc0
-NjZdfQ==
+eyJoaXN0b3J5IjpbLTU0OTU0MDMyLDU1OTg5Mjg5MCw3OTY3Nj
+MxNCwtOTc2NjA3ODg3LDUyODk5MDAwNCwtMTI0NjAwODczMywt
+MzQ2OTAzNDQ4LDEwNzg2NzQ3MzAsLTY1ODI0MDE4Nyw3NjYyMj
+U0NDgsMTk2MzUyNzMwNiwtMTQyNDg3MjU4NCwtMTc0ODY0NzQ2
+Nl19
 -->
