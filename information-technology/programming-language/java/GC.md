@@ -32,7 +32,7 @@ Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메�
 
 ## GC Algorithms
 
-일반적으로 3개의 GC Algorithms 타입이 있다. 
+일반적으로 GC Algorithms 타입에는 아래 3개의 타입이 있다.
 
 serial collector
 : uses a single thread to perform all garbage collection work, which makes it relatively efficient because there is no communication overhead between threads. It is best-suited to single processor machines -XX:+UseSerialGC.
@@ -112,8 +112,9 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk2NjQ5ODQwLC0xMzI2ODc0NjIzLDE0Mz
-M3MDM1OTIsLTIxNDE3NjM2OTgsLTE4NzM0MDU5NDAsMTE4ODcy
-OTYwNSw0NDYyMTU0MzIsMTE1NzIyOTc3NCwtMTM5NTM2MjM2Ni
-w4ODk1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
+eyJoaXN0b3J5IjpbMTIzOTQ1OTgyMSwtMTMyNjg3NDYyMywxND
+MzNzAzNTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3
+Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNj
+YsODg5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
+
 -->
