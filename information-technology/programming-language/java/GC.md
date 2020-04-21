@@ -32,7 +32,7 @@ Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메�
 
 ## GC Algorithms
 
-전통적인 GC 알고리즘으로 아래 단계를 거쳐 동작한다. 
+전통적인 GC 알고리즘의 대명사는 MSC(Mark-Sweep-co)
 
 ### Mark-Sweep-Compact
 
@@ -46,9 +46,32 @@ Compact
 : Sweep 이후, 비어있는 Heap 공간들을 연속되게 쌓이도록 힙의 앞 부분부터 채운다.
 
 
+### CMS (-XX:+UseConcMarkSweepGC)
+
+ Initial Mark 단계에서는 클래스 로더에서 가장 가까운 객체 중 살아 있는 객체만 찾아 냅니다. 따라서 초기에 STW가 발생되는 시간이 매우 짧게 형성되어 이점을 가져 올 수 있습니다. 
+Concurrent Mark 단계에서는 Initial Mark에서 확인된 객체에서 참조하고 있는 객체들을 따라가면서 확인을 하게 됩니다.
+Remark 단계에서는 Concurrent Mark 단계에서 새로 추가되거나 참조가 끊어진 객체를 확인합니다.
+마지막으로 Concurrent Sweep 단계에서는 실제 GC(가비지 컬렉션)을 수행합니다. 
+
+![enter image description here](https://www.cubrid.org/files/attach/images/1744/745/001/10ce40d924aebd3fc7a050dc7bcdba19.png)
+
+CMS은 STW가 짧다는 장점과 Concurrent Mark / Concurrent Sweep을 수행하는 과정에서 다른 쓰레드 들이 실행되고 있는 상황에서 진행된다는 것이 성능상 이점을 가져온다.
+단점으로는 다른 GC 방식보다 메모리와 CPU를 더 많이 사용하고 Compaction이 기본적으로 제공되지 않는다. 결국 초기 STW를 줄일 수 있지만, Compaction이 없어 조각난 메모리가 많아지만 오히려 STW가 늘어날 수 있다는 단점을 보유하고 있습니다.
+
+### G1(Garbage-First) 
+사실 Java 9에서 부터 CMS(Concurrent Mark Sweep)은 deprecated되었고, 오라클은 새로운 Concurrent Collector를 추천했다. 바로 G1(Garbage-First) 컬렉터이다.
+
+**G1**  works on both old and young generation. The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. 
+
+G1GC는 메모리를 바둑판처럼 각각의 영역으로 구분하고 각 영역에 객체를 할당하여 GC를 실행합니다. 그러다가, 해당 영역이 꽉 차면 다른 영역에서 객체를 할당하고 GC를 실행합니다. 즉 기존의 Young, Old 영역에서 진행하는 메모리 처리 방식이 한 영역에서 모두 담당한다고 이해하면 됩니다.
+
+G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체 방안으로 고안되었으며, 성능상 뛰어나다는 장점이 있습니다.
+
+
+
 ## GC Thread Types
 
-GC처리를 위한 Thread Type 별  아래 3개의 타입이 있다.
+Thread 사용법에 따른 GC 종류는 크게 세 개의 타입이 있다.
 
 serial collector
 : uses a single thread to perform all garbage collection work, which makes it relatively efficient because there is no communication overhead between threads. It is best-suited to single processor machines -XX:+UseSerialGC.
@@ -88,26 +111,7 @@ Parallel  (-XX:+UseParallelGC)
 Parallel Old (-XX:+UseParallelOldGC)
 : Parallel GC와 비교하여 **단계의 차이가 있다.** 기존 알고리즘이 Mark - Sweep - Compaction 단계를 거치는데 반해 Parallel Old GC는 MSC(Mark - Summary - Compaction) 단계를 거친다. Summary 단계는 앞서 GC를 수행한 영역에 대해서만 제거를 하여 성능향상을 꾀한다. 
 
-### CMS (-XX:+UseConcMarkSweepGC)
 
- Initial Mark 단계에서는 클래스 로더에서 가장 가까운 객체 중 살아 있는 객체만 찾아 냅니다. 따라서 초기에 STW가 발생되는 시간이 매우 짧게 형성되어 이점을 가져 올 수 있습니다. 
-Concurrent Mark 단계에서는 Initial Mark에서 확인된 객체에서 참조하고 있는 객체들을 따라가면서 확인을 하게 됩니다.
-Remark 단계에서는 Concurrent Mark 단계에서 새로 추가되거나 참조가 끊어진 객체를 확인합니다.
-마지막으로 Concurrent Sweep 단계에서는 실제 GC(가비지 컬렉션)을 수행합니다. 
-
-![enter image description here](https://www.cubrid.org/files/attach/images/1744/745/001/10ce40d924aebd3fc7a050dc7bcdba19.png)
-
-CMS은 STW가 짧다는 장점과 Concurrent Mark / Concurrent Sweep을 수행하는 과정에서 다른 쓰레드 들이 실행되고 있는 상황에서 진행된다는 것이 성능상 이점을 가져온다.
-단점으로는 다른 GC 방식보다 메모리와 CPU를 더 많이 사용하고 Compaction이 기본적으로 제공되지 않는다. 결국 초기 STW를 줄일 수 있지만, Compaction이 없어 조각난 메모리가 많아지만 오히려 STW가 늘어날 수 있다는 단점을 보유하고 있습니다.
-
-### G1(Garbage-First) 
-사실 Java 9에서 부터 CMS(Concurrent Mark Sweep)은 deprecated되었고, 오라클은 새로운 Concurrent Collector를 추천했다. 바로 G1(Garbage-First) 컬렉터이다.
-
-**G1**  works on both old and young generation. The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. 
-
-G1GC는 메모리를 바둑판처럼 각각의 영역으로 구분하고 각 영역에 객체를 할당하여 GC를 실행합니다. 그러다가, 해당 영역이 꽉 차면 다른 영역에서 객체를 할당하고 GC를 실행합니다. 즉 기존의 Young, Old 영역에서 진행하는 메모리 처리 방식이 한 영역에서 모두 담당한다고 이해하면 됩니다.
-
-G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체 방안으로 고안되었으며, 성능상 뛰어나다는 장점이 있습니다.
 
 ## 참고 문헌
 [GC types](https://www.cubrid.org/blog/understanding-java-garbage-collection)
@@ -118,7 +122,7 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTUzNjYzNzQsLTEzMjY4NzQ2MjMsMT
+eyJoaXN0b3J5IjpbLTEzMDM1OTI3ODIsLTEzMjY4NzQ2MjMsMT
 QzMzcwMzU5MiwtMjE0MTc2MzY5OCwtMTg3MzQwNTk0MCwxMTg4
 NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0xMzk1MzYyMz
 Y2LDg4OTU1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
