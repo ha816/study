@@ -20,7 +20,7 @@ Java는 프로그램 코드에서 메모리를 명시적으로 해제하지 않�
 
 ### Young Generation(Eden, From Survivor, To Survivor)
 
-새롭게 생성한 객체의 대부분이 위치한다. Young 영역은 Eden, Survivor 영역으로 구성되어 있다. 다시 Survivor는 From과 To로 이루어져 있으며, Eden에서 살아남은 Object는 From으로 이동한다. 이후 From에서 살아남은 객체는 To로 이동하고 여기서 또 살아남은 객체는 다시 To로 이동한다. 이를 반복적 수행하다가 Hit(GC에서 살아남은 횟수)가 Tenuring Threshold 만큼 수행된 객체들은 Old 영역으로 이동된다.
+새롭게 생성한 객체 대부분이 위치한다. Young 영역은 Eden, Survivor 영역으로 구성되어 있다. 다시 Survivor는 From과 To로 이루어져 있으며, Eden에서 살아남은 Object는 From으로 이동한다. 이후 From에서 살아남은 객체는 To로 이동하고 여기서 또 살아남은 객체는 다시 To로 이동한다. 이를 반복적 수행하다가 Hit(GC에서 살아남은 횟수)가 Tenuring Threshold 만큼 수행된 객체들은 Old 영역으로 이동된다.
 
 대부분의 객체가 금방 접근 불가능 상태가 되기 때문에 매우 많은 객체가 Young 영역에 생성되었다가 사라진다. 이 영역에서 객체가 사라질때 Minor GC가 발생한다고 말한다.
 
@@ -112,8 +112,8 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMzcwMzU5MiwtMjE0MTc2MzY5OCwtMT
-g3MzQwNTk0MCwxMTg4NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5
-Nzc0LC0xMzk1MzYyMzY2LDg4OTU1NjExOCwxNzQ2NDA1NTIxLC
-0yMDg3Njc5NjA2XX0=
+eyJoaXN0b3J5IjpbLTEwMTYzNjI0ODgsMTQzMzcwMzU5MiwtMj
+E0MTc2MzY5OCwtMTg3MzQwNTk0MCwxMTg4NzI5NjA1LDQ0NjIx
+NTQzMiwxMTU3MjI5Nzc0LC0xMzk1MzYyMzY2LDg4OTU1NjExOC
+wxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
 -->
