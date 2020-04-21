@@ -24,7 +24,7 @@ Java는 프로그램 코드에서 메모리를 명시적으로 해제하지 않�
 
 Young 영역은 Eden, Survivor 영역으로 구성되어 있다. Eden에서 살아남은 객체는 Survivor 영역으로 이동한다. 
 
-Survivor From에서 살아남은 객체는 Survivor To로 이동하고, Survivor To에서 살아남은 객체는 다시 Survivor From으로 이동한다. 이를 반복적 수행하다가 Hit(GC에서 살아남은 횟수)가 Tenuring Threshold 만큼 수행된 객체들은 Old 영역으로 이동된다.
+Survivor From에서 살아남은 객체는 Survivor To로 이동하고, Survivor To에서 살아남은 객체는 다시 Survivor From으로 이동한다. 이를 반복적 수행하다가 Hit(Minor GC로 부터 살아남은 횟수)가 임계값(Tenuring Threshold) 만큼 커진 객체들은 Old영역으로 이동하
 
 
 ### Old 영역(Old Generation, Tenured Generation)
@@ -115,9 +115,9 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTU3NTQ3ODcsLTEzMjY4NzQ2MjMsMT
-QzMzcwMzU5MiwtMjE0MTc2MzY5OCwtMTg3MzQwNTk0MCwxMTg4
-NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0xMzk1MzYyMz
-Y2LDg4OTU1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
+eyJoaXN0b3J5IjpbLTcxMTQ5MzcwNCwtMTMyNjg3NDYyMywxND
+MzNzAzNTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3
+Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNj
+YsODg5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
 
 -->
