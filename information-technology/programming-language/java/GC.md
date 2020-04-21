@@ -1,11 +1,4 @@
-
 # GC(Garbage Collection)
-[GC types](https://www.cubrid.org/blog/understanding-java-garbage-collection)
-[Java Garbage Collection](https://d2.naver.com/helloworld/1329)
-[GC 잘하는 법
-](https://waspro.tistory.com/380)
-
-> GC(가비지 컬렉션)이란 무엇인가?
 
 가비지 컬렉션은 기존에 할당된 메모리 중 사용되지 않는 메모리를 재사용하는 메커니즘이다. 가비지 컬렉션을 쓰면 메모리를 직접 해제할 필요가 없다. 
 
@@ -112,8 +105,16 @@ G1GC는 메모리를 바둑판처럼 각각의 영역으로 구분하고 각 영
 
 G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체 방안으로 고안되었으며, 성능상 뛰어나다는 장점이 있습니다.
 
+## 참고 문헌
+[GC types](https://www.cubrid.org/blog/understanding-java-garbage-collection)
+[Java Garbage Collection](https://d2.naver.com/helloworld/1329)
+[GC 잘하는 법
+](https://waspro.tistory.com/380)
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzIyOTc3NCwtMTM5NTM2MjM2Niw4OD
-k1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
+eyJoaXN0b3J5IjpbNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOT
+UzNjIzNjYsODg5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2
+MDZdfQ==
 -->
