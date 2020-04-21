@@ -47,6 +47,10 @@ Remark 단계에서는 Concurrent Mark 단계에서 새로 추가되거나 참�
 마지막으로 Concurrent Sweep 단계에서는 실제 GC(가비지 컬렉션)을 수행합니다. 
 
 
+![enter image description here](https://miro.medium.com/max/4356/1*cXlP_rU-UjQR5uE1Tw8dqA.png)
+
+
+
 
 CMS은 STW가 짧다는 장점과 Concurrent Mark / Concurrent Sweep을 수행하는 과정에서 다른 쓰레드 들이 실행되고 있는 상황에서 진행된다는 것이 성능상 이점을 가져온다.
 단점으로는 다른 GC 방식보다 메모리와 CPU를 더 많이 사용하고 Compaction이 기본적으로 제공되지 않는다. 결국 초기 STW를 줄일 수 있지만, Compaction이 없어 조각난 메모리가 많아지만 오히려 STW가 늘어날 수 있다는 단점을 보유하고 있습니다.
@@ -115,9 +119,9 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE0MzIzNDEwLC0xMjYyNzIyNDM5LDE4Mz
-k5NTY2MjksLTEzMjY4NzQ2MjMsMTQzMzcwMzU5MiwtMjE0MTc2
-MzY5OCwtMTg3MzQwNTk0MCwxMTg4NzI5NjA1LDQ0NjIxNTQzMi
-wxMTU3MjI5Nzc0LC0xMzk1MzYyMzY2LDg4OTU1NjExOCwxNzQ2
-NDA1NTIxLC0yMDg3Njc5NjA2XX0=
+eyJoaXN0b3J5IjpbMTI0ODI1NDk5OSw2MTQzMjM0MTAsLTEyNj
+I3MjI0MzksMTgzOTk1NjYyOSwtMTMyNjg3NDYyMywxNDMzNzAz
+NTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3Mjk2MD
+UsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNjYsODg5
+NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
 -->
