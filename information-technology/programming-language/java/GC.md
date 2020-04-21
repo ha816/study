@@ -41,6 +41,7 @@ Mark 작업은 계속 남아 있을 객체를 식별한다. 즉 Major GC 제거 
 
 ### CMS(ConcurrentMark&Sweep, -XX:+UseConcMarkSweepGC)
 
+어
  Initial Mark 단계에서는 클래스 로더에서 가장 가까운 객체 중 살아 있는 객체만 찾아 냅니다. 따라서 초기에 STW가 발생되는 시간이 매우 짧게 형성되어 이점을 가져 올 수 있습니다. 
 Concurrent Mark 단계에서는 Initial Mark에서 확인된 객체에서 참조하고 있는 객체들을 따라가면서 확인을 하게 됩니다.
 Remark 단계에서는 Concurrent Mark 단계에서 새로 추가되거나 참조가 끊어진 객체를 확인합니다.
@@ -119,9 +120,10 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0ODI1NDk5OSw2MTQzMjM0MTAsLTEyNj
-I3MjI0MzksMTgzOTk1NjYyOSwtMTMyNjg3NDYyMywxNDMzNzAz
-NTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3Mjk2MD
-UsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNjYsODg5
-NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
+eyJoaXN0b3J5IjpbMTkzMTYzNzg2MSwxMjQ4MjU0OTk5LDYxND
+MyMzQxMCwtMTI2MjcyMjQzOSwxODM5OTU2NjI5LC0xMzI2ODc0
+NjIzLDE0MzM3MDM1OTIsLTIxNDE3NjM2OTgsLTE4NzM0MDU5ND
+AsMTE4ODcyOTYwNSw0NDYyMTU0MzIsMTE1NzIyOTc3NCwtMTM5
+NTM2MjM2Niw4ODk1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OT
+YwNl19
 -->
