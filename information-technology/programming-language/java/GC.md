@@ -10,7 +10,7 @@ Java는 프로그램 코드에서 메모리를 명시적으로 해제하지 않�
 
 ## GC Heap Strucuture
 
-효율적인 가비지 컬렉션을 위한 전략 또는 정책은 두 가지 가설 하에 만들어졌다. (사실 가설이라기보다 가정 또는 전제 조건이라 표현하는 것이 맞다.)
+가비지 컬렉션을 효율적으로 하기 위한 전략은 weak generational hypothesis이라는 두 가지 가설 하에 만들어졌다. (사실 가설이라기보다 가정 또는 전제 조건이라 표현하는 것이 맞다.)
 
 >**weak generational hypothesis**
 >대부분 객체는 금방 접근 불가능 상태(unreachable)가 된다.
@@ -114,7 +114,8 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzM0MDU5NDAsMTE4ODcyOTYwNSw0ND
-YyMTU0MzIsMTE1NzIyOTc3NCwtMTM5NTM2MjM2Niw4ODk1NTYx
-MTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
+eyJoaXN0b3J5IjpbLTEzMDIxMTMzNSwtMTg3MzQwNTk0MCwxMT
+g4NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0xMzk1MzYy
+MzY2LDg4OTU1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX
+0=
 -->
