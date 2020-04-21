@@ -1,6 +1,6 @@
 # GC(Garbage Collection)
 
-가비지 컬렉션은 할당된 메모리 중 실제론 않는 메모리를 재사용하는 메커니즘이다. 가비지 컬렉션을 쓰면 메모리를 직접 해제할 필요가 없다. 
+가비지 컬렉션은 할당된 메모리 중 실제론 사용하지 않는 메모리를 재사용하는 메커니즘이다. 가비지 컬렉션을 쓰면 개발자가 직접 메모리를 해제할 필요가 없다. 
 
 가비지 컬렉션 알고리즘은 더 이상 참조하지 않는 메모리를 찾아 메모리를 할당할 때 이용하는 공통점이 있다. 
 
@@ -114,7 +114,7 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMjYwODgzOSw0NDYyMTU0MzIsMTE1Nz
-IyOTc3NCwtMTM5NTM2MjM2Niw4ODk1NTYxMTgsMTc0NjQwNTUy
-MSwtMjA4NzY3OTYwNl19
+eyJoaXN0b3J5IjpbODkyNjE4MDk4LDQ0NjIxNTQzMiwxMTU3Mj
+I5Nzc0LC0xMzk1MzYyMzY2LDg4OTU1NjExOCwxNzQ2NDA1NTIx
+LC0yMDg3Njc5NjA2XX0=
 -->
