@@ -70,7 +70,7 @@ concurrent collector
 
 ## GC Usages
 
-Young영역과 Old 영역에 따라서 사용할 수 있는 GC 알고리즘이 다르기 때문에 반드시 적합한 알고리즘의 조합을 사용해야 한다. 아래 그림은 GC 별로 사용 가능한 알고리즘을 그림으로 나타냈다. 각 요소들에 대해서도 알아보도록 하자.
+Young영역과 Old 영역에 따라서 사용할 수 있는 GC 알고리즘이 다르기 때문에 반드시 적합한 알고리즘의 조합을 사용해야 한다. 아래 그림은 GC 별로 사용 가능한 알고리즘을 나타낸다.
 
 ![enter image description here](https://codeahoy.com/img/blogs/gc-collectors-pairing.jpg)
 
@@ -98,14 +98,12 @@ Parallel Old (-XX:+UseParallelOldGC)
 [GC 잘하는 법
 ](https://waspro.tistory.com/380)[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
 
-
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDg5MDAwNTMsLTM4NTM4MDE4Nyw5ND
-c4ODk1MzgsMTUwNDEyNzc1OSwtMTIyNzI0MDMwNywtMTQxMDE2
-MTY4NiwxMTExNDEzMjg0LC05NjIyMDYwNjAsMTI0ODI1NDk5OS
-w2MTQzMjM0MTAsLTEyNjI3MjI0MzksMTgzOTk1NjYyOSwtMTMy
-Njg3NDYyMywxNDMzNzAzNTkyLC0yMTQxNzYzNjk4LC0xODczND
-A1OTQwLDExODg3Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQs
-LTEzOTUzNjIzNjZdfQ==
+eyJoaXN0b3J5IjpbMzA1MTc4NTcxLC0zODUzODAxODcsOTQ3OD
+g5NTM4LDE1MDQxMjc3NTksLTEyMjcyNDAzMDcsLTE0MTAxNjE2
+ODYsMTExMTQxMzI4NCwtOTYyMjA2MDYwLDEyNDgyNTQ5OTksNj
+E0MzIzNDEwLC0xMjYyNzIyNDM5LDE4Mzk5NTY2MjksLTEzMjY4
+NzQ2MjMsMTQzMzcwMzU5MiwtMjE0MTc2MzY5OCwtMTg3MzQwNT
+k0MCwxMTg4NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0x
+Mzk1MzYyMzY2XX0=
 -->
