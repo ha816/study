@@ -50,7 +50,7 @@ CMS는 STW가 짧다는 장점과 다른 쓰레드들이 실행되고 있는 수
 
 ### G1(Garbage-First) 
 
-Java 9에 도입CMS(Concurrent Mark Sweep)은 deprecated되었고, 오라클은 새로운 Concurrent Collector를 추천했다. 바로 G1(Garbage-First) 컬렉터이다.
+사실 앞서 설명한 CMS는 Java 9에 도입된 G1 GC 덕분에 사실상 deprecated 되었고 오라클에서 추천하는 바로 G1(Garbage-First) 컬렉터이다.
 
 **G1**  works on both old and young generation. The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. 
 
@@ -107,11 +107,11 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDA4MjgzNDEsOTQ3ODg5NTM4LDE1MD
-QxMjc3NTksLTEyMjcyNDAzMDcsLTE0MTAxNjE2ODYsMTExMTQx
-MzI4NCwtOTYyMjA2MDYwLDEyNDgyNTQ5OTksNjE0MzIzNDEwLC
-0xMjYyNzIyNDM5LDE4Mzk5NTY2MjksLTEzMjY4NzQ2MjMsMTQz
-MzcwMzU5MiwtMjE0MTc2MzY5OCwtMTg3MzQwNTk0MCwxMTg4Nz
-I5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0xMzk1MzYyMzY2
-LDg4OTU1NjExOF19
+eyJoaXN0b3J5IjpbLTM4NTM4MDE4Nyw5NDc4ODk1MzgsMTUwND
+EyNzc1OSwtMTIyNzI0MDMwNywtMTQxMDE2MTY4NiwxMTExNDEz
+Mjg0LC05NjIyMDYwNjAsMTI0ODI1NDk5OSw2MTQzMjM0MTAsLT
+EyNjI3MjI0MzksMTgzOTk1NjYyOSwtMTMyNjg3NDYyMywxNDMz
+NzAzNTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3Mj
+k2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNjYs
+ODg5NTU2MTE4XX0=
 -->
