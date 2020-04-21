@@ -28,7 +28,7 @@ Survivor From에서 살아남은 객체는 Survivor To로 이동하고, Survivor
 
 ### Old 영역(Old Generation, Tenured Generation)
 
-Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메모리 공간을 Young 영역에서 보다 크게 할당하며, 크기가 큰 만큼 Young 영역보다 GC는 적게 발생한다. 이 영역에서 GC는 Major GC(혹은 Full GC)가 수행한다. Old 영역은 기본적으로 GC를 실행한다. GC Policy에 따라 어떠한 방식으로 gc를 수행할 것이지가 결정되어 이는 성능에 커다른 영향을 끼치게 합니다.
+Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메모리 공간을 Young 영역에서 보다 크게 할당하며, 크기가 큰 만큼 Young 영역보다 GC는 적게 발생한다. 이 영역에서 GC는 Major GC(혹은 Full GC)가 수행한다. 사용하는 Major GC의 알고리즘에 따라 성능이 크게 달라지기 때문에 매우 중요한  
 
 ## GC Algorithms
 
@@ -114,7 +114,7 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NjMyODUwOCwtMTMyNjg3NDYyMywxND
+eyJoaXN0b3J5IjpbLTM2OTkwMDUwMiwtMTMyNjg3NDYyMywxND
 MzNzAzNTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3
 Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNj
 YsODg5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
