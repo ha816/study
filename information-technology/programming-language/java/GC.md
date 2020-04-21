@@ -28,11 +28,9 @@ Survivor From에서 살아남은 객체는 Survivor To로 이동하고, Survivor
 
 ### Old 영역(Old Generation, Tenured Generation)
 
-Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메모리 공간을 Young 영역에서 보다 크게 할당하며, 크기가 큰 만큼 Young 영역보다 GC는 적게 발생한다. 이 영역에서 GC는 Major GC(혹은 Full GC)가 수행한다. 사용하는 Major GC의 알고리즘에 따라 성능이 크게 달라지기 때문에 매우 중요한  
+Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메모리 공간을 Young 영역에서 보다 크게 할당하며, 크기가 큰 만큼 Young 영역보다 GC는 적게 발생한다. 이 영역에서 GC는 Major GC(혹은 Full GC)가 수행한다. 사용하는 Major GC의 알고리즘에 따라 성능이 크게 좌지우지 된다. 일반적인 GC 튜닝은 Old 영역의 메모리 공간을 대상으로 한다.
 
 ## GC Algorithms
-
-[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
 
 일반적으로 3개의 GC Algorithms 타입이 있다. 
 
@@ -109,14 +107,13 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 [GC types](https://www.cubrid.org/blog/understanding-java-garbage-collection)
 [Java Garbage Collection](https://d2.naver.com/helloworld/1329)
 [GC 잘하는 법
-](https://waspro.tistory.com/380)
+](https://waspro.tistory.com/380)[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2OTkwMDUwMiwtMTMyNjg3NDYyMywxND
-MzNzAzNTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3
-Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNj
-YsODg5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
-
+eyJoaXN0b3J5IjpbNzk2NjQ5ODQwLC0xMzI2ODc0NjIzLDE0Mz
+M3MDM1OTIsLTIxNDE3NjM2OTgsLTE4NzM0MDU5NDAsMTE4ODcy
+OTYwNSw0NDYyMTU0MzIsMTE1NzIyOTc3NCwtMTM5NTM2MjM2Ni
+w4ODk1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
 -->
