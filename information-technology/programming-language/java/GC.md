@@ -32,7 +32,7 @@ Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메�
 
 ## GC Algorithms
 
-전통적인 GC 알고리즘은 MSC(Mark-Sweep-Compact)이 었다. STW(stop-the-world)를 줄이기 위해 동시 쓰레드를 CMS(ConcMarkSweepGC
+전통적인 GC 알고리즘은 MSC(Mark-Sweep-Compact)이 었다. STW(stop-the-world)를 줄이기 위해 GC 알고리즘은 발전하여, 동시 쓰레드를 사용하는 CMS(ConcurrentSweep&ConcurrentSweep)
 
 
 Mark
@@ -121,9 +121,8 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MjY2NjE3NSwtMTMyNjg3NDYyMywxND
-MzNzAzNTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3
-Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNj
-YsODg5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
-
+eyJoaXN0b3J5IjpbNzU1MzM5NTcxLC0xMzI2ODc0NjIzLDE0Mz
+M3MDM1OTIsLTIxNDE3NjM2OTgsLTE4NzM0MDU5NDAsMTE4ODcy
+OTYwNSw0NDYyMTU0MzIsMTE1NzIyOTc3NCwtMTM5NTM2MjM2Ni
+w4ODk1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl19
 -->
