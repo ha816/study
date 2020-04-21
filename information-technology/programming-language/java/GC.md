@@ -37,14 +37,8 @@ Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메�
 
 ### MSC(Mark-Sweep-Compact)
 
-Mark
-: 계속 남아 있을 객체를 식별한다. 즉 Major GC의 제거 대상이 아닌 사용 중인 객체를 식별한다.
-
-Sweep
-: Heap의 앞 부분부터 Mark되지 않은 객체를 제거한다.
-
-Compact
-: Sweep 이후, 비어있는 Heap 공간들을 연속되게 쌓이도록 힙의 앞 부분부터 채운다.
+Mark 작업은 계속 남아 있을 객체를 식별한다. 즉 Major GC의 제거 대상이 아닌 사용 중인 객체를 식별한다. Sweep 작업은 Old 영역의 최앞단부터 Mark되지 않은 객체를 제거한다.
+Compact 작업은 Sweep 작업 이후, 빈 메모리 공간없이 연속되게 쌓이도록 힙의 앞 부분부터 채운다.
 
 
 ### CMS (-XX:+UseConcMarkSweepGC)
@@ -123,7 +117,7 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTg2MTg5NzUsLTEzMjY4NzQ2MjMsMT
+eyJoaXN0b3J5IjpbLTE5NjQ3MDEyMzAsLTEzMjY4NzQ2MjMsMT
 QzMzcwMzU5MiwtMjE0MTc2MzY5OCwtMTg3MzQwNTk0MCwxMTg4
 NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0xMzk1MzYyMz
 Y2LDg4OTU1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
