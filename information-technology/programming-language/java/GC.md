@@ -16,7 +16,7 @@ Java는 프로그램 코드에서 메모리를 명시적으로 해제하지 않�
 >대부분 객체는 금방 접근 불가능 상태(unreachable)가 된다.
 >오래된 객체에서 젊은 객체로 참조는 아주 적게 존재한다.
 
-이 가설의 장점을 최대한 살리기 위해서 HotSpot VM에서는 크게 2개로 물리적 공간을 나누었다. 둘로 나눈 공간이 Young 영역과 Old 영역이다.
+이 가설에 기반하여 HotSpot VM에서는 크게 물리적 공간을 둘로 나눈 두 공간이 Young 영역과 Old 영역이다.
 
 ![enter image description here](https://i.stack.imgur.com/8ZtFA.png)
 
@@ -114,8 +114,8 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDIxMTMzNSwtMTg3MzQwNTk0MCwxMT
-g4NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0xMzk1MzYy
-MzY2LDg4OTU1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX
-0=
+eyJoaXN0b3J5IjpbLTIxNDE3NjM2OTgsLTE4NzM0MDU5NDAsMT
+E4ODcyOTYwNSw0NDYyMTU0MzIsMTE1NzIyOTc3NCwtMTM5NTM2
+MjM2Niw4ODk1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl
+19
 -->
