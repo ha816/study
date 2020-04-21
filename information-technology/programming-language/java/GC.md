@@ -69,7 +69,8 @@ concurrent collector
 ![enter image description here](https://codeahoy.com/img/blogs/gc-compared.png)
 
 ## GC Usages
-Young 영역과 Old 영역에서 마다 사용할 수 있는 GC 알고리즘이 다르기 때문에 반드시 Compatiable한 알고리즘을 사용해야 한다. 아래 그림은 GC 별로 사용 가능한 알고리즘을 그림으로 나타냈다. 각 요소들에 대해서도 알아보도록 하자.
+
+Young영역과 Old 영역에 따라서 사용할 수 있는 GC 알고리즘이 다르기 때문에 반드시 적합한 알고리즘의 조합을 사용해야 한다. 아래 그림은 GC 별로 사용 가능한 알고리즘을 그림으로 나타냈다. 각 요소들에 대해서도 알아보도록 하자.
 
 ![enter image description here](https://codeahoy.com/img/blogs/gc-collectors-pairing.jpg)
 
@@ -100,11 +101,11 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNDc0ODkxMywtMzg1MzgwMTg3LDk0Nz
-g4OTUzOCwxNTA0MTI3NzU5LC0xMjI3MjQwMzA3LC0xNDEwMTYx
-Njg2LDExMTE0MTMyODQsLTk2MjIwNjA2MCwxMjQ4MjU0OTk5LD
-YxNDMyMzQxMCwtMTI2MjcyMjQzOSwxODM5OTU2NjI5LC0xMzI2
-ODc0NjIzLDE0MzM3MDM1OTIsLTIxNDE3NjM2OTgsLTE4NzM0MD
-U5NDAsMTE4ODcyOTYwNSw0NDYyMTU0MzIsMTE1NzIyOTc3NCwt
-MTM5NTM2MjM2Nl19
+eyJoaXN0b3J5IjpbLTEwNDg5MDAwNTMsLTM4NTM4MDE4Nyw5ND
+c4ODk1MzgsMTUwNDEyNzc1OSwtMTIyNzI0MDMwNywtMTQxMDE2
+MTY4NiwxMTExNDEzMjg0LC05NjIyMDYwNjAsMTI0ODI1NDk5OS
+w2MTQzMjM0MTAsLTEyNjI3MjI0MzksMTgzOTk1NjYyOSwtMTMy
+Njg3NDYyMywxNDMzNzAzNTkyLC0yMTQxNzYzNjk4LC0xODczND
+A1OTQwLDExODg3Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQs
+LTEzOTUzNjIzNjZdfQ==
 -->
