@@ -32,7 +32,23 @@ Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메�
 
 ## GC Algorithms
 
-일반적으로 GC Algorithms 타입에는 아래 3개의 타입이 있다.
+전통적인 GC 알고리즘으로 아래 단계를 거쳐 동작한다. 
+
+### Mark-Sweep-Compact
+
+Mark
+: 계속 남아 있을 객체를 식별한다. 즉 gc 대상이 아닌 참조 중인 객체임을 판별한다.
+
+Sweep
+: Heap의 앞 부분부터 Mark되지 않은 객체를 제거한다.
+
+Compact
+: Sweep 이후, 비어있는 Heap 공간들을 연속되게 쌓이도록 힙의 앞 부분부터 채운다.
+
+
+## GC Thread Types
+
+GC처리를 위한 Thread Type 별  아래 3개의 타입이 있다.
 
 serial collector
 : uses a single thread to perform all garbage collection work, which makes it relatively efficient because there is no communication overhead between threads. It is best-suited to single processor machines -XX:+UseSerialGC.
@@ -59,18 +75,7 @@ Young 영역과 Old 영역에서 마다 사용할 수 있는 GC 알고리즘이 
 
 CMS와 ParNew은 굉장이 잘 동작한다. 또 Parallel Scavenge, Parallel Old 조합도 좋다.
 
-### Mark-Sweep-Compact
 
-전통적인 GC 알고리즘으로 아래 단계를 거쳐 동작한다. 
-
-Mark
-: 계속 남아 있을 객체를 식별한다. 즉 gc 대상이 아닌 참조 중인 객체임을 판별한다.
-
-Sweep
-: Heap의 앞 부분부터 Mark되지 않은 객체를 제거한다.
-
-Compact
-: Sweep 이후, 비어있는 Heap 공간들을 연속되게 쌓이도록 힙의 앞 부분부터 채운다.
 
 ## Major GC
 
@@ -113,9 +118,9 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NjA5NDY1MSwtMTMyNjg3NDYyMywxND
-MzNzAzNTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3
-Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNj
-YsODg5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
+eyJoaXN0b3J5IjpbLTE5MTUzNjYzNzQsLTEzMjY4NzQ2MjMsMT
+QzMzcwMzU5MiwtMjE0MTc2MzY5OCwtMTg3MzQwNTk0MCwxMTg4
+NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0xMzk1MzYyMz
+Y2LDg4OTU1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
 
 -->
