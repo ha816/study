@@ -45,6 +45,7 @@ concurrent collector
 
 ![enter image description here](https://codeahoy.com/img/blogs/gc-compared.png)
 
+## GC Usages
 Young 영역과 Old 영역에서 마다 사용할 수 있는 GC 알고리즘이 다르기 때문에 반드시 Compatiable한 알고리즘을 사용해야 한다. 아래 그림은 GC 별로 사용 가능한 알고리즘을 그림으로 나타냈다. 각 요소들에 대해서도 알아보도록 하자.
 
 ![enter image description here](https://codeahoy.com/img/blogs/gc-collectors-pairing.jpg)
@@ -112,7 +113,7 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzOTQ1OTgyMSwtMTMyNjg3NDYyMywxND
+eyJoaXN0b3J5IjpbLTQ0NjA5NDY1MSwtMTMyNjg3NDYyMywxND
 MzNzAzNTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3
 Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNj
 YsODg5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
