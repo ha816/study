@@ -36,8 +36,9 @@ Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메�
 
 
 ### MSC(Mark-Sweep-Compact)
+
 Mark
-: 계속 남아 있을 객체를 식별한다. 즉 gc 대상이 아닌 참조 중인 객체임을 판별한다.
+: 계속 남아 있을 객체를 식별한다. 즉 Major GC의 제거 대상이 아닌 사용 중인 객체를 식별한다.
 
 Sweep
 : Heap의 앞 부분부터 Mark되지 않은 객체를 제거한다.
@@ -122,8 +123,9 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NzcwNiwtMTMyNjg3NDYyMywxNDMzNz
-AzNTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3Mjk2
-MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNjYsOD
-g5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
+eyJoaXN0b3J5IjpbLTEzNTg2MTg5NzUsLTEzMjY4NzQ2MjMsMT
+QzMzcwMzU5MiwtMjE0MTc2MzY5OCwtMTg3MzQwNTk0MCwxMTg4
+NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0xMzk1MzYyMz
+Y2LDg4OTU1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
+
 -->
