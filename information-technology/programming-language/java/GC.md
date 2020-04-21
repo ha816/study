@@ -2,9 +2,7 @@
 
 가비지 컬렉션은 할당된 메모리 중 실제론 사용하지 않는 메모리를 재사용하는 메커니즘이다. 가비지 컬렉션을 쓰면 개발자가 직접 메모리를 해제할 필요가 없다. 
 
-가비지 컬렉션 알고리즘은 더 이상 참조하지 않는 메모리를 찾아 메모리를 할당할 때 이용하는 공통점이 있다. 
-
-GC에 대해서 알아보기 전에 알아야 할 용어가 있다. 바로 'stop-the-world'이다. stop-the-world란, GC을 실행하기 위해 JVM이 애플리케이션 실행을 멈추는 것이다. stop-the-world가 발생하면 GC를 실행하는 쓰레드를 제외한 나머지 쓰레드는 모두 작업을 멈춘다. GC 작업을 완료한 이후에야 중단했던 작업을 다시 시작한다. 어떤 GC 알고리즘을 사용하더라도 stop-the-world는 발생한다. **대개의 경우 GC 튜닝이란 이 stop-the-world 시간을 줄이는 것이다.**
+GC에선 매우 중요한 용어가 있는데 바로 stop-the-world'(STW)이다. stop-the-world란, GC을 실행하기 위해 JVM이 애플리케이션 실행을 멈추는 것이다. stop-the-world가 발생하면 GC를 실행하는 쓰레드를 제외한 나머지 쓰레드는 모두 작업을 멈춘다. GC 작업을 완료한 이후에야 중단했던 작업을 다시 시작한다. 어떤 GC 알고리즘을 사용하더라도 stop-the-world는 발생한다. **대개의 경우 GC 튜닝이란 이 stop-the-world 시간을 줄이는 것이다.**
 
 Java는 프로그램 코드에서 메모리를 명시적으로 지정하여 해제하지 않는다. 가끔 명시적으로 해제하려고 해당 객체를 null로 지정하거나 System.gc() 메서드를 호출하는 개발자가 있다. null로 지정하는 것은 큰 문제가 안 되지만, System.gc() 메서드를 호출하는 것은 시스템의 성능에 매우 큰 영향을 끼치므로 **System.gc() 메서드는 절대로 사용하면 안 된다.**
 
@@ -114,7 +112,7 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkyNjE4MDk4LDQ0NjIxNTQzMiwxMTU3Mj
-I5Nzc0LC0xMzk1MzYyMzY2LDg4OTU1NjExOCwxNzQ2NDA1NTIx
-LC0yMDg3Njc5NjA2XX0=
+eyJoaXN0b3J5IjpbMTE4ODcyOTYwNSw0NDYyMTU0MzIsMTE1Nz
+IyOTc3NCwtMTM5NTM2MjM2Niw4ODk1NTYxMTgsMTc0NjQwNTUy
+MSwtMjA4NzY3OTYwNl19
 -->
