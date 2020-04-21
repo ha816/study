@@ -42,15 +42,15 @@ Mark 작업은 계속 남아 있을 객체를 식별한다. 즉 Major GC 제거 
 ### CMS(ConcurrentMark&Sweep, -XX:+UseConcMarkSweepGC)
 
 아래 그림은 전통적인 싱글 스레드만 사용한 GC와 CMS간 차이를 보여주는 그림이다. 
-CMS는 InitalMark, ConcurrentMark, Remark, Concurrent Sweep 4가지 단계가 있다. Initial Mark 단계에서는 Old영역 루트로부터 직접 닿을 수 있는 초기 객체 집합을 식별한다. Concurrent Mark 단계에서는 Initial Mark에서 식별하고 있던 객체들을 따라가면서 모든 살아있는 객체를 식별한다. 하지만 다른 쓰레드들이 동작 중이라 참조가 계속 변화하고 있기 때문에 Remark 단계에서 실질적으로 새로 추가되거나 참조가 끊어진 객체를 최종 식별한다. 마지막으로 Concurrent Sweep 단계에서는 마킹되지 않은 객체를 실제로 제거합니다.
-
+CMS는 InitalMark, ConcurrentMark, Remark, Concurrent Sweep 4가지 단계가 있다. Initial Mark 단계에서는 Old영역 루트로부터 직접 닿을 수 있는 초기 객체 집합을 식별한다. Concurrent Mark 단계에서는 Initial Mark에서 식별하고 있던 객체들을 따라가면서 모든 살아있는 객체를 식별한다. 하지만 다른 쓰레드들이 동작 중이라 참조가 계속 변화하고 있기 때문에 Remark 단계에서 실질적으로 새로 추가되거나 참조가 끊어진 객체를 최종 식별한다. 마지막으로 Concurrent Sweep 단계에서는 마킹되지 않은 객체를 제거한다.
 
 ![enter image description here](https://miro.medium.com/max/4356/1*cXlP_rU-UjQR5uE1Tw8dqA.png)
 
-CMS는 STW가 짧다는 장점과 다른 쓰레드들이 실행되고 있는 상황에서도 진행된다는 점 때문에 성능상 이점이 있다. 하지만 다른 GC 방식보다 메모리와 CPU를 더 많이 사용하고 Compact이 과정이 없다는 점이다. 결국 초기 STW를 줄일 수 있지만, Compact 과정이 없어 조각난 메모리가 많아지만 오히려 STW가 늘어날 수 있다는 단점이 있다. 
+CMS는 STW가 짧다는 장점과 다른 쓰레드들이 실행되고 있는 수행된다는 점 때문에 성능상 이점이 있다. 하지만 다른 GC 방식보다 메모리와 CPU를 더 많이 사용하며 Compact 과정이 없기 때문에 초기 STW를 줄일 수 있지만, 애먜한 크기의 조각난 메모리가 많아지만 오히려 STW가 많아질 수 있다는 단점이 있다. 
 
 ### G1(Garbage-First) 
-사실 Java 9에서 부터 CMS(Concurrent Mark Sweep)은 deprecated되었고, 오라클은 새로운 Concurrent Collector를 추천했다. 바로 G1(Garbage-First) 컬렉터이다.
+
+Java 9에 도입CMS(Concurrent Mark Sweep)은 deprecated되었고, 오라클은 새로운 Concurrent Collector를 추천했다. 바로 G1(Garbage-First) 컬렉터이다.
 
 **G1**  works on both old and young generation. The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. 
 
@@ -107,11 +107,11 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMTAwMjEzMiw5NDc4ODk1MzgsMTUwND
-EyNzc1OSwtMTIyNzI0MDMwNywtMTQxMDE2MTY4NiwxMTExNDEz
-Mjg0LC05NjIyMDYwNjAsMTI0ODI1NDk5OSw2MTQzMjM0MTAsLT
-EyNjI3MjI0MzksMTgzOTk1NjYyOSwtMTMyNjg3NDYyMywxNDMz
-NzAzNTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3Mj
-k2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNjYs
-ODg5NTU2MTE4XX0=
+eyJoaXN0b3J5IjpbLTEyNDA4MjgzNDEsOTQ3ODg5NTM4LDE1MD
+QxMjc3NTksLTEyMjcyNDAzMDcsLTE0MTAxNjE2ODYsMTExMTQx
+MzI4NCwtOTYyMjA2MDYwLDEyNDgyNTQ5OTksNjE0MzIzNDEwLC
+0xMjYyNzIyNDM5LDE4Mzk5NTY2MjksLTEzMjY4NzQ2MjMsMTQz
+MzcwMzU5MiwtMjE0MTc2MzY5OCwtMTg3MzQwNTk0MCwxMTg4Nz
+I5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0xMzk1MzYyMzY2
+LDg4OTU1NjExOF19
 -->
