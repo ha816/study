@@ -42,8 +42,7 @@ Mark 작업은 계속 남아 있을 객체를 식별한다. 즉 Major GC 제거 
 ### CMS(ConcurrentMark&Sweep, -XX:+UseConcMarkSweepGC)
 
 아래 그림은 전통적인 싱글 스레드만 사용한 GC와 CMS간 차이를 보여주는 그림이다. 
-CMS는 InitalMark, ConcurrentMark, Remark, Concurrent Sweep 4가지 단계가 있다.
-Initial Mark 단계에서는 클래스 로더에서 가장 가까운 객체 중 살아 있는 객체만 찾아 냅니다. 따라서 초기에 STW가 발생되는 시간이 매우 짧게 형성되어 이점을 가져 올 수 있습니다. 
+CMS는 InitalMark, ConcurrentMark, Remark, Concurrent Sweep 4가지 단계가 있다. Initial Mark 단계에서는 클래스 로더에서 가장 가까운 객체 중 살아 있는 객체만 찾아 냅니다. 따라서 초기에 STW가 발생되는 시간이 매우 짧게 형성되어 이점을 가져 올 수 있습니다. 
 Concurrent Mark 단계에서는 Initial Mark에서 확인된 객체에서 참조하고 있는 객체들을 따라가면서 확인을 하게 됩니다.
 Remark 단계에서는 Concurrent Mark 단계에서 새로 추가되거나 참조가 끊어진 객체를 확인합니다.
 마지막으로 Concurrent Sweep 단계에서는 실제 GC(가비지 컬렉션)을 수행합니다. 
@@ -121,7 +120,7 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzOTU2ODEyOCwxMjQ4MjU0OTk5LDYxND
+eyJoaXN0b3J5IjpbLTk2MjIwNjA2MCwxMjQ4MjU0OTk5LDYxND
 MyMzQxMCwtMTI2MjcyMjQzOSwxODM5OTU2NjI5LC0xMzI2ODc0
 NjIzLDE0MzM3MDM1OTIsLTIxNDE3NjM2OTgsLTE4NzM0MDU5ND
 AsMTE4ODcyOTYwNSw0NDYyMTU0MzIsMTE1NzIyOTc3NCwtMTM5
