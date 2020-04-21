@@ -91,10 +91,6 @@ Young 영역과 Old 영역에서 마다 사용할 수 있는 GC 알고리즘이 
 
 CMS와 ParNew은 굉장이 잘 동작한다. 또 Parallel Scavenge, Parallel Old 조합도 좋다.
 
-
-
-## Major GC
-
 Serial (-XX:+UseSerialGC)
 : Serial GC는 적은 메모리와 CPU 코어 개수가 적을 때 적합한 방식이다. 전통적인 MSC 방식을 따른다. 
 
@@ -103,8 +99,6 @@ Parallel  (-XX:+UseParallelGC)
 
 Parallel Old (-XX:+UseParallelOldGC)
 : Parallel GC와 비교하여 **단계의 차이가 있다.** 기존 알고리즘이 Mark - Sweep - Compaction 단계를 거치는데 반해 Parallel Old GC는 MSC(Mark - Summary - Compaction) 단계를 거친다. Summary 단계는 앞서 GC를 수행한 영역에 대해서만 제거를 하여 성능향상을 꾀한다. 
-
-
 
 ## 참고 문헌
 [GC types](https://www.cubrid.org/blog/understanding-java-garbage-collection)
@@ -115,7 +109,7 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTU3NTYyODYsLTE0MTAxNjE2ODYsMT
+eyJoaXN0b3J5IjpbLTEyMjcyNDAzMDcsLTE0MTAxNjE2ODYsMT
 ExMTQxMzI4NCwtOTYyMjA2MDYwLDEyNDgyNTQ5OTksNjE0MzIz
 NDEwLC0xMjYyNzIyNDM5LDE4Mzk5NTY2MjksLTEzMjY4NzQ2Mj
 MsMTQzMzcwMzU5MiwtMjE0MTc2MzY5OCwtMTg3MzQwNTk0MCwx
