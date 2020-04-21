@@ -51,14 +51,7 @@ CMS는 STW가 짧다는 장점과 다른 쓰레드들이 실행되고 있는 수
 ### G1(Garbage-First) 
 
 사실 앞서 설명한 CMS는 Java 9에 도입된 G1 GC 덕분에 사실상 deprecated 되었고 오라클에서 공식적으로 추천하는 GC는 바로 G1GC이다.
-
-
-G1GC는 메모리를 바둑판처럼 각각의 영역으로 구분하고 각 영역에 객체를 할당하여 GC를 실행합니다. 그러다가, 해당 영역이 꽉 차면 다른 영역에서 객체를 할당하고 GC를 실행합니다. 즉 기존의 Young, Old 영역으로 나누어 처리하던 방식이 한 영역에서 모두 담당한다. G1GC는 장기적으로 성능이슈가 발생할 수 있는 CMS GC의 대체 방안으로 고안되었으며, 성능은 
-
-**G1**  works on both old and young generation. The biggest advantage of the G1 GC is its  **performance**. It is faster than any other GC types that we have discussed so far. 
-
-
-
+G1GC는 메모리고 바둑판처럼 영역을 구분하고 각 영역에 객체를 할당한다. 그러다가, 해당 영역이 꽉 차면 다른 영역에 객체를 할당하고 . 즉 기존의 Young, Old 영역으로 나누어 처리하던 방식이 한 영역에서 모두 담당한다. G1GC는 장기적으로 성능이슈가 발생할 수 있는 CMS GC의 대체 방안으로 고안되었으며, 성능은 지금까지 다룬 어떤 GC 보다 뛰어나다.
 
 ## GC Thread Types
 
@@ -107,7 +100,7 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMTUyNzQ0NiwtMzg1MzgwMTg3LDk0Nz
+eyJoaXN0b3J5IjpbMTMwOTM0MTU0OCwtMzg1MzgwMTg3LDk0Nz
 g4OTUzOCwxNTA0MTI3NzU5LC0xMjI3MjQwMzA3LC0xNDEwMTYx
 Njg2LDExMTE0MTMyODQsLTk2MjIwNjA2MCwxMjQ4MjU0OTk5LD
 YxNDMyMzQxMCwtMTI2MjcyMjQzOSwxODM5OTU2NjI5LC0xMzI2
