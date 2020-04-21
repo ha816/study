@@ -32,7 +32,7 @@ Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메�
 
 ## GC Algorithms
 
-전통적인 GC 알고리즘은 MSC(Mark-Sweep-Compact)이 었다. STW(stop-the-world)를 줄이기 위해 동시성 쓰레드를 이용한 CMS(ConcurrentSweep&ConcurrentSweep)도 최근까지 사용되었다. 자바 9부터는 오라클의 G1(Garbage-First) 컬렉터가 
+전통적인 GC 알고리즘으로는 MSC(Mark-Sweep-Compact)이 있다. STW(stop-the-world)를 줄이기 위해 GC 알고리즘은 계속해서 발전해왔다. 동시성 쓰레드를 이용한 CMS(ConcurrentSweep&ConcurrentSweep)도 최근까지 사용되었다. 자바 9부터는 오라클의 G1(Garbage-First) 각광받고 있다. 
 
 
 Mark
@@ -121,9 +121,9 @@ Parallel Old (-XX:+UseParallelOldGC)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTU3Nzg1NzgsLTEzMjY4NzQ2MjMsMT
-QzMzcwMzU5MiwtMjE0MTc2MzY5OCwtMTg3MzQwNTk0MCwxMTg4
-NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0xMzk1MzYyMz
-Y2LDg4OTU1NjExOCwxNzQ2NDA1NTIxLC0yMDg3Njc5NjA2XX0=
+eyJoaXN0b3J5IjpbLTU1NDMyODY5OSwtMTMyNjg3NDYyMywxND
+MzNzAzNTkyLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDExODg3
+Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEzOTUzNjIzNj
+YsODg5NTU2MTE4LDE3NDY0MDU1MjEsLTIwODc2Nzk2MDZdfQ==
 
 -->
