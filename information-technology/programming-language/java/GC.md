@@ -10,13 +10,11 @@ Java는 프로그램 코드에서 메모리를 명시적으로 해제하지 않�
 
 ## GC Heap Strucuture
 
-가비지 컬렉션을 효율적으로 하기 위한 전략은 weak generational hypothesis이라는 두 가지 가설 하에 만들어졌다. (사실 가설이라기보다 가정 또는 전제 조건이라 표현하는 것이 맞다.)
+가비지 컬렉션을 효율적으로 하기 위한 전략은 weak generational hypothesis이라는 두 가지 가설 하에 만들어졌다. (사실 가설이라기보다 가정 또는 전제 조건이라 표현하는 것이 맞다.) 이 가설에 기반하여 HotSpot VM에서는 메모리 공간을 Young 영역과 Old 영역으로 나누었다. 
 
 >**weak generational hypothesis**
 >대부분 객체는 금방 접근 불가능 상태(unreachable)가 된다.
 >오래된 객체에서 젊은 객체로 참조는 아주 적게 존재한다.
-
-이 가설에 기반하여 HotSpot VM에서는 크게 물리적 공간을 둘로 나눈 두 공간이 Young 영역과 Old 영역이다.
 
 ![enter image description here](https://i.stack.imgur.com/8ZtFA.png)
 
@@ -114,8 +112,8 @@ G1GC는 장기적으로 문제가 야기될 가능성이 있는 CMS GC의 대체
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDE3NjM2OTgsLTE4NzM0MDU5NDAsMT
-E4ODcyOTYwNSw0NDYyMTU0MzIsMTE1NzIyOTc3NCwtMTM5NTM2
-MjM2Niw4ODk1NTYxMTgsMTc0NjQwNTUyMSwtMjA4NzY3OTYwNl
-19
+eyJoaXN0b3J5IjpbMTQzMzcwMzU5MiwtMjE0MTc2MzY5OCwtMT
+g3MzQwNTk0MCwxMTg4NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5
+Nzc0LC0xMzk1MzYyMzY2LDg4OTU1NjExOCwxNzQ2NDA1NTIxLC
+0yMDg3Njc5NjA2XX0=
 -->
