@@ -121,7 +121,7 @@
 # MultiThread
 
 >**volatile 키워드는?**
-> volatile 키워드가 붙은 변수는 읽거나 쓸때, CPU 캐시가 아니라 메인 메모리에서 직접 활용한다. 멀티 쓰레드 환경에서 CPU 캐시마다 변수의 상태가 다를 수 있기 때문에 변수값이 불일치하는 현상이 생긴다. 이럴 때 volatile을 사용할 수 있다. volatile 변수에 쓰기 명령이 끝나면, 해당 변수를 사용하는 모든 쓰레드 값을 가장 최근 값으로 바꾼다. 
+> volatile 키워드가 붙은 변수는 읽거나 쓸때, CPU 캐시에 있는 값이 아니라 메인 메모리에서 값을 직접 활용한다. 멀티 쓰레드 환경에서 CPU 캐시마다 변수의 상태가 다를 수 있기 때문에 변수값이 불일치하는 현상이 생긴다. volatile이 붙은 변수는 쓰기 명령이 끝나면, 해당 변수를 사용하는 모든 쓰레드 값을 가장 최근 값으로 바꾼다. 
 > 하지만 volatile이 항상 최선은 아니다. 하나의 Thread가 아닌 여러 Thread가 write하는 상황에서는 적합하지 않다. 그리고 cache가 아닌 메모리에 접근하기 때문에 느리다.
 
 > **Atomic 클래스는 무엇을 제공하는가?** 
@@ -297,11 +297,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk2MzE5MDUxLC02NzU3ODQzNDcsMjAwNz
-k3MDM2MSwtMTA0NDI2OTcyOCwtMTM4NTYwOTYwMCwtMTI4OTA1
-OTM0LC04ODA4MDI5MzgsLTM0NzcxMDA1NSwxMTU5NDYzMDY4LD
-QxNDQ1NzIxLDM4MjE0MDg5NywtMTcxMjU1NzcwNiwxOTg1MzU2
-MDM0LDEwOTIxNDYzNzIsLTE5MzgxNDI5MDIsLTIwMzk0ODIyOD
-gsLTExNzk5NTg1NjgsLTE5NjQ4NDEyODAsLTE4MDA3Mzc5NzMs
-MTQwNTQ1NDU0N119
+eyJoaXN0b3J5IjpbNzQwNjUxOTI1LDQ5NjMxOTA1MSwtNjc1Nz
+g0MzQ3LDIwMDc5NzAzNjEsLTEwNDQyNjk3MjgsLTEzODU2MDk2
+MDAsLTEyODkwNTkzNCwtODgwODAyOTM4LC0zNDc3MTAwNTUsMT
+E1OTQ2MzA2OCw0MTQ0NTcyMSwzODIxNDA4OTcsLTE3MTI1NTc3
+MDYsMTk4NTM1NjAzNCwxMDkyMTQ2MzcyLC0xOTM4MTQyOTAyLC
+0yMDM5NDgyMjg4LC0xMTc5OTU4NTY4LC0xOTY0ODQxMjgwLC0x
+ODAwNzM3OTczXX0=
 -->
