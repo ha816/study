@@ -26,7 +26,7 @@
 
 >**다형성(Polymorphsim)과 상속(Inheritance)**
 >다형성은 하나의 객체가 다른 역할을 하는 객체로 사용될 수 있다는 의미이다. 항상 가능한 것은 아니고 특정 상위 클래스를 확장한 하위 클래스는 상위 클래스를 대신할 수 있다. 
->상속은 상위 클래스의 기능, 설계를 그대로 하위 클래스에 가져오는 것을 말한다. 따라서 하위 클래스는 온전히 상위 클래스의 역할을 할 수 있으면 추가 기능을 추가할 수 도 있다. 
+>상속은 상위 클래스의 기능, 설계를 그대로 하위 클래스에 가져오는 것을 말한다. 따라서 하위 클래스는 온전히 상위 클래스의 역할을 할 수 있으ㅁ기능을 추가할 수 도 있다. 
 
 >**abstract와 interface의 공통점과 차이는?**
 >Java에서 abstract 클래스와 interface는 모두 그 자체로는 객체가 될 수 없다. abstract 클래스는 실제 구현된 메서드와 구현되지 않은 추상 메서드를 모두 가질 수 있다. 객체화할 하위 클래스에서 abstract 클래스를 상속받으면 해당 메서드를 반드시 구현해야 한다. 마찬가지로, interface를 상속 받아 객체화할 하위 클래스에서도 interface에서 정의한 메서드를 구현해야 한다. 
@@ -297,11 +297,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNzk3MDM2MSwtMTA0NDI2OTcyOCwtMT
-M4NTYwOTYwMCwtMTI4OTA1OTM0LC04ODA4MDI5MzgsLTM0Nzcx
-MDA1NSwxMTU5NDYzMDY4LDQxNDQ1NzIxLDM4MjE0MDg5NywtMT
-cxMjU1NzcwNiwxOTg1MzU2MDM0LDEwOTIxNDYzNzIsLTE5Mzgx
-NDI5MDIsLTIwMzk0ODIyODgsLTExNzk5NTg1NjgsLTE5NjQ4ND
-EyODAsLTE4MDA3Mzc5NzMsMTQwNTQ1NDU0NywtNDA4ODk0MTk0
-LC0xMDExMjg4Mzc5XX0=
+eyJoaXN0b3J5IjpbOTUxNDQ4ODgyLDIwMDc5NzAzNjEsLTEwND
+QyNjk3MjgsLTEzODU2MDk2MDAsLTEyODkwNTkzNCwtODgwODAy
+OTM4LC0zNDc3MTAwNTUsMTE1OTQ2MzA2OCw0MTQ0NTcyMSwzOD
+IxNDA4OTcsLTE3MTI1NTc3MDYsMTk4NTM1NjAzNCwxMDkyMTQ2
+MzcyLC0xOTM4MTQyOTAyLC0yMDM5NDgyMjg4LC0xMTc5OTU4NT
+Y4LC0xOTY0ODQxMjgwLC0xODAwNzM3OTczLDE0MDU0NTQ1NDcs
+LTQwODg5NDE5NF19
 -->
