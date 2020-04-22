@@ -400,7 +400,12 @@ class Figure {
 	// 태그 필드 - 현재 모양을 나타낸다.
 	final Shape shape;
 
-	dou
+	// 다음 필드들은 모양이 사각형(RECTANGLE)일 때만 쓰인다.
+	double length;
+	double width;
+	
+	// 다음 필드는 모양인 원(CIRCLE)일 때만 쓰인다.
+	double radius;
 
 
 }
@@ -436,11 +441,11 @@ class Figure {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MDk1NjI5MCwtMTUyMDI2OTU2MSwyMD
-E2NTEwMDA4LC0yMDI3ODg0OTU0LC0xMDY2NTQxNDcwLDY1ODc4
-NjE2NiwtOTM5NTQ2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LD
-E3MTI1MzcyNjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1
-NjEzNjI4MCwxNzIzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIwMT
-g3NCwxMzgxMTEyNDc4LC0xNzE2Nzg5MDk5LDcyODYxMjA3Miwx
-ODQ5MDY1NDc4XX0=
+eyJoaXN0b3J5IjpbMTcxODQzMzA5LC0xNTIwMjY5NTYxLDIwMT
+Y1MTAwMDgsLTIwMjc4ODQ5NTQsLTEwNjY1NDE0NzAsNjU4Nzg2
+MTY2LC05Mzk1NDYyMDcsLTMwODkyOTgxOSwyNDQ1NTAwMjgsMT
+cxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIyMzY0LC0xMzU2
+MTM2MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NSwxNzIxMjAxOD
+c0LDEzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4NjEyMDcyLDE4
+NDkwNjU0NzhdfQ==
 -->
