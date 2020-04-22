@@ -77,10 +77,15 @@ Young영역과 Old 영역에 따라서 사용할 수 있는 GC 알고리즘이 �
 Serial(Minor GC)
 : stop-the-world, copying collector which uses a single GC thread.
 
+Parallel Scavenge(Minor GC)
+: a stop-the-world, copying collector which uses multiple GC threads.
+
+ParNew(Minor GC)
+: a stop-the-world, copying collector which uses multiple GC threads. It differs from “Parallel Scavenge” in that it has enhancements that make it usable with Concurrent Mark Sweep(CMS). For example, “ParNew” does the synchronization needed so that it can run during the concurrent phases of CMS.
+
 Serial Old(MSC, Major GC)
 : stop-the-world, mark-sweep-compact(MSC) collector that uses a single GC thread.
-3.  Parallel Scavenge is a stop-the-world, copying collector which uses multiple GC threads.
-4.  **“ParNew”**  is a stop-the-world, copying collector which uses multiple GC threads. It differs from “Parallel Scavenge” in that it has enhancements that make it usable with Concurrent Mark Sweep(CMS). For example, “ParNew” does the synchronization needed so that it can run during the concurrent phases of CMS.
+
 5.  **“CMS”**  (Concurrent Mark Sweep) is a mostly concurrent, low-pause collector.
 6.  **“Parallel Old”**  is a compacting collector that uses multiple GC threads.
 
@@ -102,11 +107,11 @@ Parallel Old (-XX:+UseParallelOldGC)
 ](https://waspro.tistory.com/380)[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
 .
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMzEzMjE4MCwxMzY0NzI3OTAxLC01Nz
-Q2MzkwOTUsNDc4Mjc0OTMsLTIxMTAyNDYzMTcsMzA1MTc4NTcx
-LC0zODUzODAxODcsOTQ3ODg5NTM4LDE1MDQxMjc3NTksLTEyMj
-cyNDAzMDcsLTE0MTAxNjE2ODYsMTExMTQxMzI4NCwtOTYyMjA2
-MDYwLDEyNDgyNTQ5OTksNjE0MzIzNDEwLC0xMjYyNzIyNDM5LD
-E4Mzk5NTY2MjksLTEzMjY4NzQ2MjMsLTIxNDE3NjM2OTgsLTE4
-NzM0MDU5NDBdfQ==
+eyJoaXN0b3J5IjpbMTQ0MjYwNzYxMiwtNDEzMTMyMTgwLDEzNj
+Q3Mjc5MDEsLTU3NDYzOTA5NSw0NzgyNzQ5MywtMjExMDI0NjMx
+NywzMDUxNzg1NzEsLTM4NTM4MDE4Nyw5NDc4ODk1MzgsMTUwND
+EyNzc1OSwtMTIyNzI0MDMwNywtMTQxMDE2MTY4NiwxMTExNDEz
+Mjg0LC05NjIyMDYwNjAsMTI0ODI1NDk5OSw2MTQzMjM0MTAsLT
+EyNjI3MjI0MzksMTgzOTk1NjYyOSwtMTMyNjg3NDYyMywtMjE0
+MTc2MzY5OF19
 -->
