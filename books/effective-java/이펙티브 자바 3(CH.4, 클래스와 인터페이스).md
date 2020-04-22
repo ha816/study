@@ -392,7 +392,16 @@ public class PhysicalConstants {
 
 ## Item.23 태그 달린 클래스보다는 클래스 계층 구조를 활용하라
 
-두 가지 이상의 의미를 표현할 수 있으며, 그중 현재 표현하는 의미를 태그값으로 알려주는 클래스를 본적이 있을 것이다. 
+두 가지 이상의 의미를 표현할 수 있으며, 그중 현재 표현하는 의미를 태그값으로 알려주는 클래스를 본적이 있을 것이다. 아래 코드는 원과 사각형을 동시에 표현할 수 있는 클래스이다. 
+
+```
+class Figure {
+	enum Shape { RECTANGLE, CIRCLE };
+
+
+}
+
+```
 
 
 
@@ -423,11 +432,11 @@ public class PhysicalConstants {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNjUxMDAwOCwtMjAyNzg4NDk1NCwtMT
-A2NjU0MTQ3MCw2NTg3ODYxNjYsLTkzOTU0NjIwNywtMzA4OTI5
-ODE5LDI0NDU1MDAyOCwxNzEyNTM3MjYyLC0xNDk4NjI3MTEwLD
-E5ODA2MjIzNjQsLTEzNTYxMzYyODAsMTcyMzk2MDQ0MSwyMDM3
-MzU5NDk1LDE3MjEyMDE4NzQsMTM4MTExMjQ3OCwtMTcxNjc4OT
-A5OSw3Mjg2MTIwNzIsMTg0OTA2NTQ3OCwxMzcwNjM1NTAsLTQ0
-ODUzMjk3MV19
+eyJoaXN0b3J5IjpbLTE1MjAyNjk1NjEsMjAxNjUxMDAwOCwtMj
+AyNzg4NDk1NCwtMTA2NjU0MTQ3MCw2NTg3ODYxNjYsLTkzOTU0
+NjIwNywtMzA4OTI5ODE5LDI0NDU1MDAyOCwxNzEyNTM3MjYyLC
+0xNDk4NjI3MTEwLDE5ODA2MjIzNjQsLTEzNTYxMzYyODAsMTcy
+Mzk2MDQ0MSwyMDM3MzU5NDk1LDE3MjEyMDE4NzQsMTM4MTExMj
+Q3OCwtMTcxNjc4OTA5OSw3Mjg2MTIwNzIsMTg0OTA2NTQ3OCwx
+MzcwNjM1NTBdfQ==
 -->
