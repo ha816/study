@@ -189,7 +189,7 @@ order by s.salary;
 
 ### 스트리밍(Streaming) 방식
 
-서버 쪽에서 처리해야할 데이터가 
+서버 쪽에서 처리해야할 데이터가 얼마나 될지에 관계없이 조건에 일치하는 레코드가 검색될때마다 바로바로 클라이언트로 전송해주는 방식이다. 이 방식으로 처리
 
 
 # Distinct 처리
@@ -199,11 +199,11 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYxOTAxMTgsMTIzNjM3MDA4NywtODY2Nz
-c2NTYsLTczNTYzNDg0NSwtMzM2Mjg0ODgxLC04ODg0ODEyOSwx
-NTIwMDk2NTcwLDk4NjcwMjgyMiwxNzM1MjgwMDM1LC0yMTMwMj
-UxNzc1LDI2MzA3NTk1MCwtNTE4NzA2MDQ0LC0yMDA5NTE4MDYx
-LDE1OTUwNjYxMDUsLTc3MTkzMTUwMSwtMTA3NzMwOTE0NSw4Nj
-QwNDQ0OTgsMTg5NzM0Njc1LC00NTY3Nzk1MjAsNzEyODkzNjY2
-XX0=
+eyJoaXN0b3J5IjpbLTE2OTAwMTg1NjYsMTIzNjM3MDA4NywtOD
+Y2Nzc2NTYsLTczNTYzNDg0NSwtMzM2Mjg0ODgxLC04ODg0ODEy
+OSwxNTIwMDk2NTcwLDk4NjcwMjgyMiwxNzM1MjgwMDM1LC0yMT
+MwMjUxNzc1LDI2MzA3NTk1MCwtNTE4NzA2MDQ0LC0yMDA5NTE4
+MDYxLDE1OTUwNjYxMDUsLTc3MTkzMTUwMSwtMTA3NzMwOTE0NS
+w4NjQwNDQ0OTgsMTg5NzM0Njc1LC00NTY3Nzk1MjAsNzEyODkz
+NjY2XX0=
 -->
