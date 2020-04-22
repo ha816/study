@@ -410,7 +410,9 @@ class Figure {
 }
 ```
 
-태그 달린 클래스는 단점이 한가득이다. 우선 열겨 타입 선언, 태그 필드등 쓸데 없는 코드가 많다. 여러 구현이 한 클래스에 혼합되어 있어 가독성도 나쁘다.  한마디로 태그 달린 클래스는 장황ㅎ
+태그 달린 클래스는 단점이 한가득이다. 우선 열겨 타입 선언, 태그 필드등 쓸데 없는 코드가 많다. 여러 구현이 한 클래스에 혼합되어 있어 가독성도 나쁘다.  한마디로 태그 달린 클래스는 장황하고, 오류를 내기 쉽고, 비효율적이다.
+
+다행히 자바와 같은 객체 지향 언어는 타입 하나로 다양한 의미의 객체를 표현하는 훨씬 나은 수단을 제공한다. 바로 클래스 계층 구조를 활용하는 서브 타이핑(subtyping)이다. 태그 달린 클래스는 클래스 계층 구조를 어설프게 흉내낸 아류이다. 
 
 
 ### 21. 전략을 표현하고 싶을때는 함수 객체를 사용해라 
@@ -440,7 +442,7 @@ class Figure {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTQ5MzE3OSwtMTUyMDI2OTU2MSwyMD
+eyJoaXN0b3J5IjpbLTQ0NjMyMjkzOCwtMTUyMDI2OTU2MSwyMD
 E2NTEwMDA4LC0yMDI3ODg0OTU0LC0xMDY2NTQxNDcwLDY1ODc4
 NjE2NiwtOTM5NTQ2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LD
 E3MTI1MzcyNjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1
