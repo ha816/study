@@ -35,7 +35,7 @@
 >**Overloading과 Overriding의 차이? 그리고 Override 애노테이션은 어떤 역할을 하는가?** 
 >Overloading(과적합)은 하나의 메서드 이름을 여러 메서드에서 사용하는 방법이다. 
 >Override(재정의)은 상위 클래스의 메서드를 하위 클래스에서 재정의하는 것을 말한다. 
->@Override 에너테이션은 가독성을 높여주고 개발자의 실수를 방지해주는 역할을 한다. @Override가 붙은 메서드는 상위 클래스나 인터페이스에 있는 특정 메서드를 재정의했다는 의미이다. @Override가 붙지 않은 다른 메서드와 차이를 명확히 밝히고, 상위 메서드가 개발자의 실수로 변경이 일어나면 컴파일 에러를 낸다.
+>@Override 에너테이션은 가독성을 높여주고 개발자의 실수를 방지해주는 역할을 한다. @Override가 붙은 메서드는 상위 클래스나 인터페이스에 있는 특정 메서드를 재정의했다는 의미이다. @Override가 붙지 않은 다른 메서드와 차이를 명확히 밝히고, 상위 메서드가 잘못된 변경이 일어나면 컴파일 에러를 낸다.
 
 >**제네릭? 실체화(reified)한다는 건 어떤 의미인가?** 
 >Generic이란 매개변수화된 타입이라고 한다. 즉 사용하려는 타입을 매개변수로 받는 것을 말한다. 예를 들어 List는 담을 원소의 타입을 제네릭을 이용해서 정할 수 있다. 그러면 컴파일러는 list에 특정 타입만 포함되도록 컬렉션을 제한한다. 
@@ -297,11 +297,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTQ4MTE4NCwtNjc1Nzg0MzQ3LDIwMD
-c5NzAzNjEsLTEwNDQyNjk3MjgsLTEzODU2MDk2MDAsLTEyODkw
-NTkzNCwtODgwODAyOTM4LC0zNDc3MTAwNTUsMTE1OTQ2MzA2OC
-w0MTQ0NTcyMSwzODIxNDA4OTcsLTE3MTI1NTc3MDYsMTk4NTM1
-NjAzNCwxMDkyMTQ2MzcyLC0xOTM4MTQyOTAyLC0yMDM5NDgyMj
-g4LC0xMTc5OTU4NTY4LC0xOTY0ODQxMjgwLC0xODAwNzM3OTcz
-LDE0MDU0NTQ1NDddfQ==
+eyJoaXN0b3J5IjpbNDk2MzE5MDUxLC02NzU3ODQzNDcsMjAwNz
+k3MDM2MSwtMTA0NDI2OTcyOCwtMTM4NTYwOTYwMCwtMTI4OTA1
+OTM0LC04ODA4MDI5MzgsLTM0NzcxMDA1NSwxMTU5NDYzMDY4LD
+QxNDQ1NzIxLDM4MjE0MDg5NywtMTcxMjU1NzcwNiwxOTg1MzU2
+MDM0LDEwOTIxNDYzNzIsLTE5MzgxNDI5MDIsLTIwMzk0ODIyOD
+gsLTExNzk5NTg1NjgsLTE5NjQ4NDEyODAsLTE4MDA3Mzc5NzMs
+MTQwNTQ1NDU0N119
 -->
