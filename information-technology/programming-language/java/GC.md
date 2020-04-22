@@ -37,7 +37,7 @@ Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 메�
 
 ### MSC(Mark-Sweep-Compact)
 
-Mark 작업은 계속 남아 있을 객체를 식별한다. 즉 Major GC 제거 대상이 아닌 사용 중인 객체를 식별한다. Sweep 작업은 Old 영역의 Mark되지 않은 객체를 제거한다. Compact 작업은 Sweep 작업 이후, 살아남은 객체를 메모리 공간 앞쪽부터 연속되게 쌓이도록 한다. 
+Mark 작업은 계속 남아 있을 객체를 식별한다. 즉 Major GC 제거 대상이 아닌 사용 중인 객체를 식별한다. Sweep 작업은 Old 영역의 Mark되지 않은 객체를 제거한다. Compact 작업은 Sweep 작업 이후, 살아남은 객체를 메모리 공간 앞쪽부터 연속되게 쌓이도록 한발생한다고 말한다. Old 영역은 기본적으로 데이터가 가득 차면 GC를 실행한다. GC Policy에 따라 어떠한 방식으로 gc를 수행할 것이지가 결정되어 이는 성능에 커다른 영향을 끼치게 합니다. 
 
 ### CMS(ConcurrentMark&Sweep, -XX:+UseConcMarkSweepGC)
 
@@ -55,7 +55,13 @@ G1GC는 메모리공간을 마치 바둑판처럼 영역 구분을하고 각 영
 
 ## GC Types By Thread
 
-Thread 사용법에 따른 GC 종류는 크게 세 개의 타입이 있다.
+Thread 사용법에 따른 GC 종류는 크게 세 개의GC Algorithms
+
+[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
+
+일반적으로 3개의 GC Algorithms다.
+
+##  타입이 있다.
 
 serial collector
 : uses a single thread to perform all garbage collection work, which makes it relatively efficient because there is no communication overhead between threads. It is best-suited to single processor machines -XX:+UseSerialGC.
@@ -97,13 +103,13 @@ Parallel Old (-XX:+UseParallelOldGC)
 [Java Garbage Collection](https://d2.naver.com/helloworld/1329)
 [GC 잘하는 법
 ](https://waspro.tistory.com/380)[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
-
+.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA1MTc4NTcxLC0zODUzODAxODcsOTQ3OD
-g5NTM4LDE1MDQxMjc3NTksLTEyMjcyNDAzMDcsLTE0MTAxNjE2
-ODYsMTExMTQxMzI4NCwtOTYyMjA2MDYwLDEyNDgyNTQ5OTksNj
-E0MzIzNDEwLC0xMjYyNzIyNDM5LDE4Mzk5NTY2MjksLTEzMjY4
-NzQ2MjMsMTQzMzcwMzU5MiwtMjE0MTc2MzY5OCwtMTg3MzQwNT
-k0MCwxMTg4NzI5NjA1LDQ0NjIxNTQzMiwxMTU3MjI5Nzc0LC0x
-Mzk1MzYyMzY2XX0=
+eyJoaXN0b3J5IjpbLTUwODc0MTYxLDMwNTE3ODU3MSwtMzg1Mz
+gwMTg3LDk0Nzg4OTUzOCwxNTA0MTI3NzU5LC0xMjI3MjQwMzA3
+LC0xNDEwMTYxNjg2LDExMTE0MTMyODQsLTk2MjIwNjA2MCwxMj
+Q4MjU0OTk5LDYxNDMyMzQxMCwtMTI2MjcyMjQzOSwxODM5OTU2
+NjI5LC0xMzI2ODc0NjIzLC0yMTQxNzYzNjk4LC0xODczNDA1OT
+QwLDExODg3Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEz
+OTUzNjIzNjZdfQ==
 -->
