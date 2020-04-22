@@ -406,12 +406,11 @@ class Figure {
 	
 	// 다음 필드는 모양인 원(CIRCLE)일 때만 쓰인다.
 	double radius;
-
-
+	...
 }
-
 ```
 
+태그 달린 클래스는 단점이 한가득이다. 우선 열겨 타입 선언, 태그 필드등 쓸데 없는 코드가 많다. 여러 구현이 한 클래스에 혼합되어 있어 가독성도 나쁘다.  한마디로 태그 달린 클래스는 장황ㅎ
 
 
 ### 21. 전략을 표현하고 싶을때는 함수 객체를 사용해라 
@@ -441,11 +440,11 @@ class Figure {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxODQzMzA5LC0xNTIwMjY5NTYxLDIwMT
-Y1MTAwMDgsLTIwMjc4ODQ5NTQsLTEwNjY1NDE0NzAsNjU4Nzg2
-MTY2LC05Mzk1NDYyMDcsLTMwODkyOTgxOSwyNDQ1NTAwMjgsMT
-cxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIyMzY0LC0xMzU2
-MTM2MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NSwxNzIxMjAxOD
-c0LDEzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4NjEyMDcyLDE4
-NDkwNjU0NzhdfQ==
+eyJoaXN0b3J5IjpbLTMzOTQ5MzE3OSwtMTUyMDI2OTU2MSwyMD
+E2NTEwMDA4LC0yMDI3ODg0OTU0LC0xMDY2NTQxNDcwLDY1ODc4
+NjE2NiwtOTM5NTQ2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LD
+E3MTI1MzcyNjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1
+NjEzNjI4MCwxNzIzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIwMT
+g3NCwxMzgxMTEyNDc4LC0xNzE2Nzg5MDk5LDcyODYxMjA3Miwx
+ODQ5MDY1NDc4XX0=
 -->
