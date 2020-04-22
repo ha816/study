@@ -193,7 +193,7 @@ order by s.salary;
 
 쿼리가 스트리밍 방식으로 전달되면 클라이언트는 일치하는 레코드를 즉시 전달받기 때문에 동시에 데이터 가공작업을 할 수 있다. 웹 서비스와 같은 OLTP 환경에서는 쿼리의 요청에서부터 첫 번째 레코드를 전달 받기 까지 응답 시간이 중요하다. 스트리밍 방식으로 처리되는 쿼리는 그 쿼리가 얼마나 많은 레코드를 조회하느냐에 상관 없이 빠른 응답시간을 보장한다.
 
-또한 스트리밍 방식으로 처리되는 쿼리에서 LIMIT와 같이 결과 건수를 제한하는 조건들은 쿼리의 전체 실행 시간을 상당히 줄여줄 수 있다. 
+또한 스트리밍 방식으로 처리되는 쿼리에서 LIMIT와 같이 결과 건수를 제한하는 조건들은 쿼리의 전체 실행 시간을 상당히 줄여줄 수 있다. 매우 큰 테이블을 아무 조건 없이 SELECT 해보면 아주 빨리 첫번째 레코드는 가져올 수 있다. 
 
 
 # Distinct 처리
@@ -203,11 +203,11 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NzcyNzk0NywtMTc2NjU5Nzg3MiwtMj
-AyMjkyOTYzMywxMjM2MzcwMDg3LC04NjY3NzY1NiwtNzM1NjM0
-ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAwOTY1NzAsOT
-g2NzAyODIyLDE3MzUyODAwMzUsLTIxMzAyNTE3NzUsMjYzMDc1
-OTUwLC01MTg3MDYwNDQsLTIwMDk1MTgwNjEsMTU5NTA2NjEwNS
-wtNzcxOTMxNTAxLC0xMDc3MzA5MTQ1LDg2NDA0NDQ5OCwxODk3
-MzQ2NzVdfQ==
+eyJoaXN0b3J5IjpbLTIxMjA2OTk4MzgsMjA3NzcyNzk0NywtMT
+c2NjU5Nzg3MiwtMjAyMjkyOTYzMywxMjM2MzcwMDg3LC04NjY3
+NzY1NiwtNzM1NjM0ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LD
+E1MjAwOTY1NzAsOTg2NzAyODIyLDE3MzUyODAwMzUsLTIxMzAy
+NTE3NzUsMjYzMDc1OTUwLC01MTg3MDYwNDQsLTIwMDk1MTgwNj
+EsMTU5NTA2NjEwNSwtNzcxOTMxNTAxLC0xMDc3MzA5MTQ1LDg2
+NDA0NDQ5OF19
 -->
