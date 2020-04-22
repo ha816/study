@@ -55,13 +55,7 @@ G1GC는 메모리공간을 마치 바둑판처럼 영역 구분을하고 각 영
 
 ## GC Types By Thread
 
-Thread 사용법에 따른 GC 종류는 크게 세 개의GC Algorithms
-
-[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
-
-일반적으로 3개의 GC Algorithms다.
-
-##  타입이 있다.
+Thread 사용법에 따른 GC 종류는 크게 3가지 타입이 있다.
 
 serial collector
 : uses a single thread to perform all garbage collection work, which makes it relatively efficient because there is no communication overhead between threads. It is best-suited to single processor machines -XX:+UseSerialGC.
@@ -105,11 +99,11 @@ Parallel Old (-XX:+UseParallelOldGC)
 ](https://waspro.tistory.com/380)[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
 .
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODc0MTYxLDMwNTE3ODU3MSwtMzg1Mz
-gwMTg3LDk0Nzg4OTUzOCwxNTA0MTI3NzU5LC0xMjI3MjQwMzA3
-LC0xNDEwMTYxNjg2LDExMTE0MTMyODQsLTk2MjIwNjA2MCwxMj
-Q4MjU0OTk5LDYxNDMyMzQxMCwtMTI2MjcyMjQzOSwxODM5OTU2
-NjI5LC0xMzI2ODc0NjIzLC0yMTQxNzYzNjk4LC0xODczNDA1OT
-QwLDExODg3Mjk2MDUsNDQ2MjE1NDMyLDExNTcyMjk3NzQsLTEz
-OTUzNjIzNjZdfQ==
+eyJoaXN0b3J5IjpbNDc4Mjc0OTMsMzA1MTc4NTcxLC0zODUzOD
+AxODcsOTQ3ODg5NTM4LDE1MDQxMjc3NTksLTEyMjcyNDAzMDcs
+LTE0MTAxNjE2ODYsMTExMTQxMzI4NCwtOTYyMjA2MDYwLDEyND
+gyNTQ5OTksNjE0MzIzNDEwLC0xMjYyNzIyNDM5LDE4Mzk5NTY2
+MjksLTEzMjY4NzQ2MjMsLTIxNDE3NjM2OTgsLTE4NzM0MDU5ND
+AsMTE4ODcyOTYwNSw0NDYyMTU0MzIsMTE1NzIyOTc3NCwtMTM5
+NTM2MjM2Nl19
 -->
