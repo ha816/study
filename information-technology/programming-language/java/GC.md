@@ -81,13 +81,13 @@ Parallel Scavenge(Minor GC)
 : a stop-the-world, copying collector which uses multiple GC threads.
 
 ParNew(Minor GC)
-: a stop-the-world, copying collector which uses multiple GC threads. It differs from Parallel Scavenge” in that it has enhancements that make it usable with Concurrent Mark Sweep(CMS). For example, “ParNew” does the synchronization needed so that it can run during the concurrent phases of CMS.
+: a stop-the-world, copying collector which uses multiple GC threads. It differs from Parallel Scavenge in that it has enhancements that make it usable with Concurrent Mark Sweep(CMS). For example, “ParNew” does the synchronization needed so that it can run during the concurrent phases of CMS.
 
 Serial Old(MSC, Major GC)
 : stop-the-world, mark-sweep-compact(MSC) collector that uses a single GC thread. Serial GC는 적은 메모리와 CPU 코어 개수가 적을 때 적합한 방식이다. 전통적인 MSC 방식을 따른다. 
 
 Parallel Old(Major GC)
-: a compacting collector that uses multiple GC threads. Serial GC와 기본적인 알고리즘은 같지만 여러 개의 Thread가 나누어져 처리하는 방식이다.
+: a compacting collector that uses multiple GC threads. Serial GC와 기본적인 알고리즘은 같지만 여러 Thread가 동시에 처리하는 방식이다.
 
 CMS(Major GC)
 : a mostly concurrent, low-pause collector.
@@ -101,11 +101,11 @@ CMS와 ParNew은 굉장이 잘 동작한다. 또 Parallel Scavenge, Parallel Old
 ](https://waspro.tistory.com/380)[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
 .
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MTM0NTY5OCwtMTc2NzE5MjQxMiwxND
-QyNjA3NjEyLC00MTMxMzIxODAsMTM2NDcyNzkwMSwtNTc0NjM5
-MDk1LDQ3ODI3NDkzLC0yMTEwMjQ2MzE3LDMwNTE3ODU3MSwtMz
-g1MzgwMTg3LDk0Nzg4OTUzOCwxNTA0MTI3NzU5LC0xMjI3MjQw
-MzA3LC0xNDEwMTYxNjg2LDExMTE0MTMyODQsLTk2MjIwNjA2MC
-wxMjQ4MjU0OTk5LDYxNDMyMzQxMCwtMTI2MjcyMjQzOSwxODM5
-OTU2NjI5XX0=
+eyJoaXN0b3J5IjpbLTIxMzczMDk1NzYsLTE3NjcxOTI0MTIsMT
+Q0MjYwNzYxMiwtNDEzMTMyMTgwLDEzNjQ3Mjc5MDEsLTU3NDYz
+OTA5NSw0NzgyNzQ5MywtMjExMDI0NjMxNywzMDUxNzg1NzEsLT
+M4NTM4MDE4Nyw5NDc4ODk1MzgsMTUwNDEyNzc1OSwtMTIyNzI0
+MDMwNywtMTQxMDE2MTY4NiwxMTExNDEzMjg0LC05NjIyMDYwNj
+AsMTI0ODI1NDk5OSw2MTQzMjM0MTAsLTEyNjI3MjI0MzksMTgz
+OTk1NjYyOV19
 -->
