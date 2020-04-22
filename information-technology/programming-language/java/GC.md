@@ -84,24 +84,15 @@ ParNew(Minor GC)
 : a stop-the-world, copying collector which uses multiple GC threads. It differs from “Parallel Scavenge” in that it has enhancements that make it usable with Concurrent Mark Sweep(CMS). For example, “ParNew” does the synchronization needed so that it can run during the concurrent phases of CMS.
 
 Serial Old(MSC, Major GC)
-: stop-the-world, mark-sweep-compact(MSC) collector that uses a single GC thread.
+: stop-the-world, mark-sweep-compact(MSC) collector that uses a single GC thread. Serial GC는 적은 메모리와 CPU 코어 개수가 적을 때 적합한 방식이다. 전통적인 MSC 방식을 따른다. 
 
 Parallel Old(Major GC)
-: a compacting collector that uses multiple GC threads.
+: a compacting collector that uses multiple GC threads. Serial GC와 기본적인 알고리즘은 같지만 여러 개의 Thread가 나누어져 처리하는 방식이다.
 
 CMS(Major GC)
 : a mostly concurrent, low-pause collector.
 
 CMS와 ParNew은 굉장이 잘 동작한다. 또 Parallel Scavenge, Parallel Old 조합도 좋다.
-
-Serial (-XX:+UseSerialGC)
-: 
-
-Parallel  (-XX:+UseParallelGC)
-: Serial GC와 기본적인 알고리즘은 같지만 여러 개의 Thread가 나누어져 처리하는 방식
-
-Parallel Old (-XX:+UseParallelOldGC)
-: Parallel GC와 비교하여 **단계의 차이가 있다.** 기존 알고리즘이 Mark - Sweep - Compaction 단계를 거치는데 반해 Parallel Old GC는 MSC(Mark - Summary - Compaction) 단계를 거친다. Summary 단계는 앞서 GC를 수행한 영역에 대해서만 제거를 하여 성능향상을 꾀한다. 
 
 ## 참고 문헌
 [GC types](https://www.cubrid.org/blog/understanding-java-garbage-collection)
@@ -110,7 +101,7 @@ Parallel Old (-XX:+UseParallelOldGC)
 ](https://waspro.tistory.com/380)[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
 .
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTUyOTg0NTUsMTQ0MjYwNzYxMiwtND
+eyJoaXN0b3J5IjpbLTE3NjcxOTI0MTIsMTQ0MjYwNzYxMiwtND
 EzMTMyMTgwLDEzNjQ3Mjc5MDEsLTU3NDYzOTA5NSw0NzgyNzQ5
 MywtMjExMDI0NjMxNywzMDUxNzg1NzEsLTM4NTM4MDE4Nyw5ND
 c4ODk1MzgsMTUwNDEyNzc1OSwtMTIyNzI0MDMwNywtMTQxMDE2
