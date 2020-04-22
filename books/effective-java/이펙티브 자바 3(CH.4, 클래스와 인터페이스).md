@@ -414,6 +414,9 @@ class Figure {
 
 다행히 자바와 같은 객체 지향 언어는 타입 하나로 다양한 의미의 객체를 표현하는 훨씬 나은 수단을 제공한다. 바로 클래스 계층 구조를 활용하는 서브 타이핑(subtyping)이다. 태그 달린 클래스는 클래스 계층 구조를 어설프게 흉내낸 아류이다. 
 
+>핵심정리
+>태그 달린 클래스를 써야하는 상황은 거의 없다. 새로운 클래스를 작성하는 데 태그 필드가 등장한다면 태그를 없애고 계층 구조로 대체하는 방법을 생각해보자. 기존 클래스가 태그필드를 사용하고 있다면 계층 구조로 리팩토링하도록 해보자. 
+
 
 ### 21. 전략을 표현하고 싶을때는 함수 객체를 사용해라 
 
@@ -442,11 +445,11 @@ class Figure {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NjMyMjkzOCwtMTUyMDI2OTU2MSwyMD
-E2NTEwMDA4LC0yMDI3ODg0OTU0LC0xMDY2NTQxNDcwLDY1ODc4
-NjE2NiwtOTM5NTQ2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LD
-E3MTI1MzcyNjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1
-NjEzNjI4MCwxNzIzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIwMT
-g3NCwxMzgxMTEyNDc4LC0xNzE2Nzg5MDk5LDcyODYxMjA3Miwx
-ODQ5MDY1NDc4XX0=
+eyJoaXN0b3J5IjpbLTE3NzYyOCwtNDQ2MzIyOTM4LC0xNTIwMj
+Y5NTYxLDIwMTY1MTAwMDgsLTIwMjc4ODQ5NTQsLTEwNjY1NDE0
+NzAsNjU4Nzg2MTY2LC05Mzk1NDYyMDcsLTMwODkyOTgxOSwyND
+Q1NTAwMjgsMTcxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIy
+MzY0LC0xMzU2MTM2MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NS
+wxNzIxMjAxODc0LDEzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4
+NjEyMDcyXX0=
 -->
