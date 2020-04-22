@@ -196,7 +196,7 @@ order by s.salary;
 또한 스트리밍 방식으로 처리되는 쿼리에서 LIMIT와 같이 결과 건수를 제한하는 조건들은 쿼리의 전체 실행 시간을 상당히 줄여줄 수 있다. 매우 큰 테이블을 아무 조건 없이 SELECT 해보면 아주 빨리 첫번째 레코드는 가져올 수 있다. 
 
 >참고 
->스트리밍 처리는 어떤 클라이언트 도구나 API를 사용하느냐에 따라 그 방식에 차이가 있다. 대표적으로 JDBC 라이브러리를 이용해 SELECT 쿼리를 실행하면 레코드를 읽자마자 클라이언트로 그 결과를 전달할 것이다.
+>스트리밍 처리는 어떤 클라이언트 도구나 API를 사용하느냐에 따라 그 방식에 차이가 있다. 대표적으로 JDBC 라이브러리를 이용해 SELECT 쿼리를 실행하면 레코드를 읽자마자 클라이언트로 그 결과를 전달할 것이다. 하지만 JDBC는 레코드 자체를 버퍼에 모두 담아두다가 마제막 레코드가 전달될 때까지 기다렸다가 모든 결과를 전달 받으면 그때서야 비로서 클라이언트의 애플리케이션에 반환한다. 
 
 
 # Distinct 처리
@@ -206,11 +206,11 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzOTUzNDM4MCwtMjEyMDY5OTgzOCwyMD
-c3NzI3OTQ3LC0xNzY2NTk3ODcyLC0yMDIyOTI5NjMzLDEyMzYz
-NzAwODcsLTg2Njc3NjU2LC03MzU2MzQ4NDUsLTMzNjI4NDg4MS
-wtODg4NDgxMjksMTUyMDA5NjU3MCw5ODY3MDI4MjIsMTczNTI4
-MDAzNSwtMjEzMDI1MTc3NSwyNjMwNzU5NTAsLTUxODcwNjA0NC
-wtMjAwOTUxODA2MSwxNTk1MDY2MTA1LC03NzE5MzE1MDEsLTEw
-NzczMDkxNDVdfQ==
+eyJoaXN0b3J5IjpbLTE3MDEzNzg2MzUsLTQzOTUzNDM4MCwtMj
+EyMDY5OTgzOCwyMDc3NzI3OTQ3LC0xNzY2NTk3ODcyLC0yMDIy
+OTI5NjMzLDEyMzYzNzAwODcsLTg2Njc3NjU2LC03MzU2MzQ4ND
+UsLTMzNjI4NDg4MSwtODg4NDgxMjksMTUyMDA5NjU3MCw5ODY3
+MDI4MjIsMTczNTI4MDAzNSwtMjEzMDI1MTc3NSwyNjMwNzU5NT
+AsLTUxODcwNjA0NCwtMjAwOTUxODA2MSwxNTk1MDY2MTA1LC03
+NzE5MzE1MDFdfQ==
 -->
