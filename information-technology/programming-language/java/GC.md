@@ -74,9 +74,10 @@ Young영역과 Old 영역에 따라서 사용할 수 있는 GC 알고리즘이 �
 
 ![enter image description here](https://codeahoy.com/img/blogs/gc-collectors-pairing.jpg)
 
-1.  “Serial” is a stop-the-world, copying collector which uses a single GC thread.
+Serial(Minor GC)
+: stop-the-world, copying collector which uses a single GC thread.
 2. “Serial Old”(MSC) is a stop-the-world, mark-sweep-compact(MSC) collector that uses a single GC thread.
-3.  **“Parallel Scavenge”**  is a stop-the-world, copying collector which uses multiple GC threads.
+3.  Parallel Scavenge is a stop-the-world, copying collector which uses multiple GC threads.
 4.  **“ParNew”**  is a stop-the-world, copying collector which uses multiple GC threads. It differs from “Parallel Scavenge” in that it has enhancements that make it usable with Concurrent Mark Sweep(CMS). For example, “ParNew” does the synchronization needed so that it can run during the concurrent phases of CMS.
 5.  **“CMS”**  (Concurrent Mark Sweep) is a mostly concurrent, low-pause collector.
 6.  **“Parallel Old”**  is a compacting collector that uses multiple GC threads.
@@ -99,11 +100,11 @@ Parallel Old (-XX:+UseParallelOldGC)
 ](https://waspro.tistory.com/380)[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
 .
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NDYzOTA5NSw0NzgyNzQ5MywtMjExMD
-I0NjMxNywzMDUxNzg1NzEsLTM4NTM4MDE4Nyw5NDc4ODk1Mzgs
-MTUwNDEyNzc1OSwtMTIyNzI0MDMwNywtMTQxMDE2MTY4NiwxMT
-ExNDEzMjg0LC05NjIyMDYwNjAsMTI0ODI1NDk5OSw2MTQzMjM0
-MTAsLTEyNjI3MjI0MzksMTgzOTk1NjYyOSwtMTMyNjg3NDYyMy
-wtMjE0MTc2MzY5OCwtMTg3MzQwNTk0MCwxMTg4NzI5NjA1LDQ0
-NjIxNTQzMl19
+eyJoaXN0b3J5IjpbMTM2NDcyNzkwMSwtNTc0NjM5MDk1LDQ3OD
+I3NDkzLC0yMTEwMjQ2MzE3LDMwNTE3ODU3MSwtMzg1MzgwMTg3
+LDk0Nzg4OTUzOCwxNTA0MTI3NzU5LC0xMjI3MjQwMzA3LC0xND
+EwMTYxNjg2LDExMTE0MTMyODQsLTk2MjIwNjA2MCwxMjQ4MjU0
+OTk5LDYxNDMyMzQxMCwtMTI2MjcyMjQzOSwxODM5OTU2NjI5LC
+0xMzI2ODc0NjIzLC0yMTQxNzYzNjk4LC0xODczNDA1OTQwLDEx
+ODg3Mjk2MDVdfQ==
 -->
