@@ -86,13 +86,16 @@ ParNew(Minor GC)
 Serial Old(MSC, Major GC)
 : stop-the-world, mark-sweep-compact(MSC) collector that uses a single GC thread.
 
-5.  **“CMS”**  (Concurrent Mark Sweep) is a mostly concurrent, low-pause collector.
-6.  **“Parallel Old”**  is a compacting collector that uses multiple GC threads.
+Parallel Old(Major GC)
+: a compacting collector that uses multiple GC threads.
+
+CMS(Major GC)
+: a mostly concurrent, low-pause collector.
 
 CMS와 ParNew은 굉장이 잘 동작한다. 또 Parallel Scavenge, Parallel Old 조합도 좋다.
 
 Serial (-XX:+UseSerialGC)
-: Serial GC는 적은 메모리와 CPU 코어 개수가 적을 때 적합한 방식이다. 전통적인 MSC 방식을 따른다. 
+: 
 
 Parallel  (-XX:+UseParallelGC)
 : Serial GC와 기본적인 알고리즘은 같지만 여러 개의 Thread가 나누어져 처리하는 방식
@@ -107,11 +110,11 @@ Parallel Old (-XX:+UseParallelOldGC)
 ](https://waspro.tistory.com/380)[GC 기초](https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/)
 .
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MjYwNzYxMiwtNDEzMTMyMTgwLDEzNj
-Q3Mjc5MDEsLTU3NDYzOTA5NSw0NzgyNzQ5MywtMjExMDI0NjMx
-NywzMDUxNzg1NzEsLTM4NTM4MDE4Nyw5NDc4ODk1MzgsMTUwND
-EyNzc1OSwtMTIyNzI0MDMwNywtMTQxMDE2MTY4NiwxMTExNDEz
-Mjg0LC05NjIyMDYwNjAsMTI0ODI1NDk5OSw2MTQzMjM0MTAsLT
-EyNjI3MjI0MzksMTgzOTk1NjYyOSwtMTMyNjg3NDYyMywtMjE0
-MTc2MzY5OF19
+eyJoaXN0b3J5IjpbLTE3OTUyOTg0NTUsMTQ0MjYwNzYxMiwtND
+EzMTMyMTgwLDEzNjQ3Mjc5MDEsLTU3NDYzOTA5NSw0NzgyNzQ5
+MywtMjExMDI0NjMxNywzMDUxNzg1NzEsLTM4NTM4MDE4Nyw5ND
+c4ODk1MzgsMTUwNDEyNzc1OSwtMTIyNzI0MDMwNywtMTQxMDE2
+MTY4NiwxMTExNDEzMjg0LC05NjIyMDYwNjAsMTI0ODI1NDk5OS
+w2MTQzMjM0MTAsLTEyNjI3MjI0MzksMTgzOTk1NjYyOSwtMTMy
+Njg3NDYyM119
 -->
