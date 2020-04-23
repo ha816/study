@@ -204,7 +204,7 @@ order by s.salary;
 
 ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 것을 불가능하게 한다. 왜냐하면 우선 WHERE 조건에 일치하는 모든 레코드를 가져온 후에 정렬하거나 그룹핑을 통해 차례대로 보내야 하기 때문이다. MySQL 서버가 모든 레코드를 검색하고 정렬 작업을 하는 동안 클라이언트는 아무것도 하지 않고 기다려야 하기 때문에 응답 속도가 느려진다. 
 
-버퍼링 방식으로 처리되는 결과를 모아서 MySQL 서버에서 일괄 가공해야 
+버퍼링 방식으로 처리되는 결과를 모아서 MySQL 서버에서 일괄 가공해야 하므로 모든 결과를 스토리지 엔진으로 부터 가져올때 까지 기다려야 한다. 그래서 버퍼링 방식은 LIMIT 처럼 결과 건수를 제한하는 조건이 있어도 성능 향상에 큰 도움이 되지 않는다. 네트워크로 전송되는 건수는 줄일 수 있지만 MySQL 서버에서 해야하는 작업량에는 크게 변화가 없기 때문이다. 
 
 # Distinct 처리
 
@@ -213,11 +213,11 @@ ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY0NTY0ODcsNTg0Nzk5ODk3LC00Mzk1Mz
-QzODAsLTIxMjA2OTk4MzgsMjA3NzcyNzk0NywtMTc2NjU5Nzg3
-MiwtMjAyMjkyOTYzMywxMjM2MzcwMDg3LC04NjY3NzY1NiwtNz
-M1NjM0ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAwOTY1
-NzAsOTg2NzAyODIyLDE3MzUyODAwMzUsLTIxMzAyNTE3NzUsMj
-YzMDc1OTUwLC01MTg3MDYwNDQsLTIwMDk1MTgwNjEsMTU5NTA2
-NjEwNV19
+eyJoaXN0b3J5IjpbOTIyNDY1MjQ1LDU4NDc5OTg5NywtNDM5NT
+M0MzgwLC0yMTIwNjk5ODM4LDIwNzc3Mjc5NDcsLTE3NjY1OTc4
+NzIsLTIwMjI5Mjk2MzMsMTIzNjM3MDA4NywtODY2Nzc2NTYsLT
+czNTYzNDg0NSwtMzM2Mjg0ODgxLC04ODg0ODEyOSwxNTIwMDk2
+NTcwLDk4NjcwMjgyMiwxNzM1MjgwMDM1LC0yMTMwMjUxNzc1LD
+I2MzA3NTk1MCwtNTE4NzA2MDQ0LC0yMDA5NTE4MDYxLDE1OTUw
+NjYxMDVdfQ==
 -->
