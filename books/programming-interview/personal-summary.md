@@ -15,7 +15,7 @@
 
 > 연봉은 얼마 정도 생각하십니까?
 
-지식 그래프 관련된 서버 운영 , ranking 영역 4개 레이어
+지식 그래프 관련된 서버 운영 , ranking 영역 4개 레이어, 유사 매칭, 부분 매칭
 
 TMON이 굉장히 인금이 저렴한 점과 페이의 기업 규모를 생각했을때 25%~30%정도 인상을 생각하고 있습니다.
 
@@ -36,8 +36,8 @@ TMON이 굉장히 인금이 저렴한 점과 페이의 기업 규모를 생각�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTI3OTU5MjYsMTM4ODA0MzcxOCwtMj
-EzNDg2NDA3NCwtMTE0MDA3Njg2MywyMTQwNzQzNzA1LDIwMzEz
-OTc0NiwtMjAyMTc3MDMzNywtMTk5NDY4NTQ1MywtNTg0MTMyOC
-wtOTcwNjYwNzVdfQ==
+eyJoaXN0b3J5IjpbMTkxODExNjI0MiwxMzg4MDQzNzE4LC0yMT
+M0ODY0MDc0LC0xMTQwMDc2ODYzLDIxNDA3NDM3MDUsMjAzMTM5
+NzQ2LC0yMDIxNzcwMzM3LC0xOTk0Njg1NDUzLC01ODQxMzI4LC
+05NzA2NjA3NV19
 -->
