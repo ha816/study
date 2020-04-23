@@ -202,6 +202,7 @@ order by s.salary;
 
 ###  버퍼링(Buffering) 방식
 
+ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 것을 불가능하게 한다. 왜냐하면 우선 WHERE 조건에 일치하는 모든 레코드를 가져온 후에 정렬하거나 그룹핑을 통해 차례대로 보내야 하기 때문이다. 
 
 # Distinct 처리
 
@@ -210,11 +211,11 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMDY2ODgyMCw1ODQ3OTk4OTcsLTQzOT
-UzNDM4MCwtMjEyMDY5OTgzOCwyMDc3NzI3OTQ3LC0xNzY2NTk3
-ODcyLC0yMDIyOTI5NjMzLDEyMzYzNzAwODcsLTg2Njc3NjU2LC
-03MzU2MzQ4NDUsLTMzNjI4NDg4MSwtODg4NDgxMjksMTUyMDA5
-NjU3MCw5ODY3MDI4MjIsMTczNTI4MDAzNSwtMjEzMDI1MTc3NS
-wyNjMwNzU5NTAsLTUxODcwNjA0NCwtMjAwOTUxODA2MSwxNTk1
-MDY2MTA1XX0=
+eyJoaXN0b3J5IjpbNTk3MTg5MzgsNTg0Nzk5ODk3LC00Mzk1Mz
+QzODAsLTIxMjA2OTk4MzgsMjA3NzcyNzk0NywtMTc2NjU5Nzg3
+MiwtMjAyMjkyOTYzMywxMjM2MzcwMDg3LC04NjY3NzY1NiwtNz
+M1NjM0ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAwOTY1
+NzAsOTg2NzAyODIyLDE3MzUyODAwMzUsLTIxMzAyNTE3NzUsMj
+YzMDc1OTUwLC01MTg3MDYwNDQsLTIwMDk1MTgwNjEsMTU5NTA2
+NjEwNV19
 -->
