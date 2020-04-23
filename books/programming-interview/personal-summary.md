@@ -14,7 +14,7 @@
 3년동안 백엔드 웹 서비스에 대한 충분히 경험했고 저의 경력 측면 또는 개인의 발전을 위해 이직 면접을 보고 있습니다.
 
 > 연봉은 얼마 정도 생각하십니까?
-
+\zu
 TMON이 굉장히 인금이 저렴한 점과 페이의 기업 규모를 생각했을때 25%~30%정도 인상을 생각하고 있습니다.
 
 > 이 회사에서 당신을 고용해야할까요?
@@ -34,8 +34,8 @@ TMON이 굉장히 인금이 저렴한 점과 페이의 기업 규모를 생각�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4ODA0MzcxOCwtMjEzNDg2NDA3NCwtMT
-E0MDA3Njg2MywyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMjAyMTc3
-MDMzNywtMTk5NDY4NTQ1MywtNTg0MTMyOCwtOTcwNjYwNzVdfQ
-==
+eyJoaXN0b3J5IjpbMjczMDM2NjA5LDEzODgwNDM3MTgsLTIxMz
+Q4NjQwNzQsLTExNDAwNzY4NjMsMjE0MDc0MzcwNSwyMDMxMzk3
+NDYsLTIwMjE3NzAzMzcsLTE5OTQ2ODU0NTMsLTU4NDEzMjgsLT
+k3MDY2MDc1XX0=
 -->
