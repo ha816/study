@@ -17,10 +17,8 @@
 
 지식 그래프 관련된 서버 운영 , ranking 영역 4개 레이어, 유사 매칭, 부분 매칭
 
-TMON이 굉장히 인금이 저렴한 점과 페이의 기업 규모를 생각했을때 25%~30%정도 인상을 생각하고 있습니다.
-
-> 이 회사에서 당신을 고용해야할까요?
-> 이 질문은 합격시킬만한 이유가 분명치 않다는 뜻이다. 하지만 그자리에 일할 능력과 경력은 있다는 것이다. 이런 경우 다시 이력서를 읊으면서 방어적으로 나가기 보단, 왜 그 회사에서 일하고 싶은지, 왜 그자리가 나에게 어울리는지 긍정적으로 이끌고 가자.
+> 자신의 강점을 어필해보세요
+> 
 
 
 > 혹시 질문 있습니까?
@@ -36,8 +34,8 @@ TMON이 굉장히 인금이 저렴한 점과 페이의 기업 규모를 생각�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxODExNjI0MiwxMzg4MDQzNzE4LC0yMT
-M0ODY0MDc0LC0xMTQwMDc2ODYzLDIxNDA3NDM3MDUsMjAzMTM5
-NzQ2LC0yMDIxNzcwMzM3LC0xOTk0Njg1NDUzLC01ODQxMzI4LC
-05NzA2NjA3NV19
+eyJoaXN0b3J5IjpbMzM2MDg2Mzg0LDE5MTgxMTYyNDIsMTM4OD
+A0MzcxOCwtMjEzNDg2NDA3NCwtMTE0MDA3Njg2MywyMTQwNzQz
+NzA1LDIwMzEzOTc0NiwtMjAyMTc3MDMzNywtMTk5NDY4NTQ1My
+wtNTg0MTMyOCwtOTcwNjYwNzVdfQ==
 -->
