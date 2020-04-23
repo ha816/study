@@ -206,7 +206,9 @@ ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 
 
 버퍼링 방식으로 처리되는 결과를 모아서 MySQL 서버에서 일괄 가공해야 하므로 모든 결과를 스토리지 엔진으로 부터 가져올때 까지 기다려야 한다. 그래서 버퍼링 방식은 LIMIT 처럼 결과 건수를 제한하는 조건이 있어도 성능 향상에 큰 도움이 되지 않는다. 네트워크로 전송되는 건수는 줄일 수 있지만 MySQL 서버에서 해야하는 작업량에는 크게 변화가 없기 때문이다. 
 
-인덱스를 사용한 정렬 방식만 스트리밍 형태로 처리가 가능하며, 나머지는 모두 버퍼링된 후에 정렬된다. 즉 인덱스를 사용한 정렬 방식은 LIMIT 제한 건수만큼만 읽으면서 바로 클라이언트에 결과를 전송해줄 수 있다. 
+인덱스를 사용한 정렬 방식만 스트리밍 형태로 처리가 가능하며, 나머지는 모두 버퍼링된 후에 정렬된다. 즉 인덱스를 사용한 정렬 방식은 LIMIT 제한 건수만큼만 읽으면서 바로 클라이언트에 결과를 전송해줄 수 있다. 하지만 인덱스를 사용하지 못하는 경우의 처리는 필요한 레코드를 읽어서 정렬한 후에 LIMIT 건수만큼 잘라서 클라이언트로 전송해줄수 있다.
+
+
 
 # Distinct 처리
 
@@ -215,11 +217,11 @@ ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MTgxMzYyOCwtMjE0NTIwMjQ5Myw5Mj
-I0NjUyNDUsNTg0Nzk5ODk3LC00Mzk1MzQzODAsLTIxMjA2OTk4
-MzgsMjA3NzcyNzk0NywtMTc2NjU5Nzg3MiwtMjAyMjkyOTYzMy
-wxMjM2MzcwMDg3LC04NjY3NzY1NiwtNzM1NjM0ODQ1LC0zMzYy
-ODQ4ODEsLTg4ODQ4MTI5LDE1MjAwOTY1NzAsOTg2NzAyODIyLD
-E3MzUyODAwMzUsLTIxMzAyNTE3NzUsMjYzMDc1OTUwLC01MTg3
-MDYwNDRdfQ==
+eyJoaXN0b3J5IjpbLTEyMTU4NTkzMDYsMTk1MTgxMzYyOCwtMj
+E0NTIwMjQ5Myw5MjI0NjUyNDUsNTg0Nzk5ODk3LC00Mzk1MzQz
+ODAsLTIxMjA2OTk4MzgsMjA3NzcyNzk0NywtMTc2NjU5Nzg3Mi
+wtMjAyMjkyOTYzMywxMjM2MzcwMDg3LC04NjY3NzY1NiwtNzM1
+NjM0ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAwOTY1Nz
+AsOTg2NzAyODIyLDE3MzUyODAwMzUsLTIxMzAyNTE3NzUsMjYz
+MDc1OTUwXX0=
 -->
