@@ -31,7 +31,7 @@
 
 ## 평균 배송소요일 계산 및 적재
 
-티몬의 상품 페이지에 평균적으로 평일만에 상품이 도착했는지를 보여주는 정보가 바로 평균 배송소요일이다. 평균치를 계산하기 위해 Spring Batch와 Couchbase를 사용했다.
+티몬의 상품 페이지에 평균적으로 평일만에 상품이 도착했는지를 보여주는 정보가 바로 평균 배송소요일이다. 평균치를 계산하기 위해 Spring Batch와 Couchbase를 사용했다. 
 상품 별로 최근 1주일치  배송건이 대상으로 계산대상 상품 수는 약 100,000 건, 상품 별로 평균 하루 10건이 존재했다.
 
 ### 주요 역할
@@ -54,10 +54,10 @@ Matrix factorization이란 주어진 매트릭스를 분해하여 요소를 구�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjI2NTUyMTUsMzczNjc0MDUwLC03OD
-QzNDg2MTYsLTQwOTUxOTQxNSwyMDE0NTI4OTA4LC00MDk1MTk0
-MTUsLTEyMTk0NDU1MTcsNjI5OTg5Njk0LC0xNDE3ODc1MzI5LC
-0xMDUyNDQ1NTg0LDE1OTg5MDUzNDEsLTEzMjk3NjIyMzMsLTg3
-MjA2MjA2OCw2MjYyMjE4MDAsMTYzNTE3MDIsLTU1MzY3MDM4Nl
-19
+eyJoaXN0b3J5IjpbLTQwNjg2NTM4OSwtMTYyMjY1NTIxNSwzNz
+M2NzQwNTAsLTc4NDM0ODYxNiwtNDA5NTE5NDE1LDIwMTQ1Mjg5
+MDgsLTQwOTUxOTQxNSwtMTIxOTQ0NTUxNyw2Mjk5ODk2OTQsLT
+E0MTc4NzUzMjksLTEwNTI0NDU1ODQsMTU5ODkwNTM0MSwtMTMy
+OTc2MjIzMywtODcyMDYyMDY4LDYyNjIyMTgwMCwxNjM1MTcwMi
+wtNTUzNjcwMzg2XX0=
 -->
