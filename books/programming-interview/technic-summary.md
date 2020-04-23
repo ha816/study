@@ -287,7 +287,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 # TOOL
 
-> MAVEN?**
+> **MAVEN?**
 > 프로젝트 전체를 관리하는 빌드 도구로, 자바 프로젝트를 컴파일, 테스트, 배포하는데 사용된다. 애플리케이션이 구동할때 필요한 자원들을 가져와 여러 빌드 작업을 수행한다. 메이븐 빌드의 정의는 pom.xml에 설정된다.
 > 모든 자바 패키지 구조는 src/main/java 디렉터리 하위에 있다. 테스트 패키지 구조는 test/main/java 디렉토리에 있다. 마지막으로 resources 에는 일반적으로 설정 파일들이 들어간다.  
 > 애플리케이션 실행을 위한 절차를 골(Goal)이라고 한다. 골에는 compile, test, install 등이 있다.  각 골은 이전 상태에 의존하며 어떤 이유에서든 특정 골을 통한 작업에 문제가 발생하면 전체 빌드가 실패할수 밖에 없다. 
@@ -297,11 +297,11 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQwNjUxOTI1LDQ5NjMxOTA1MSwtNjc1Nz
-g0MzQ3LDIwMDc5NzAzNjEsLTEwNDQyNjk3MjgsLTEzODU2MDk2
-MDAsLTEyODkwNTkzNCwtODgwODAyOTM4LC0zNDc3MTAwNTUsMT
-E1OTQ2MzA2OCw0MTQ0NTcyMSwzODIxNDA4OTcsLTE3MTI1NTc3
-MDYsMTk4NTM1NjAzNCwxMDkyMTQ2MzcyLC0xOTM4MTQyOTAyLC
-0yMDM5NDgyMjg4LC0xMTc5OTU4NTY4LC0xOTY0ODQxMjgwLC0x
-ODAwNzM3OTczXX0=
+eyJoaXN0b3J5IjpbODc2ODU4NzA5LDc0MDY1MTkyNSw0OTYzMT
+kwNTEsLTY3NTc4NDM0NywyMDA3OTcwMzYxLC0xMDQ0MjY5NzI4
+LC0xMzg1NjA5NjAwLC0xMjg5MDU5MzQsLTg4MDgwMjkzOCwtMz
+Q3NzEwMDU1LDExNTk0NjMwNjgsNDE0NDU3MjEsMzgyMTQwODk3
+LC0xNzEyNTU3NzA2LDE5ODUzNTYwMzQsMTA5MjE0NjM3MiwtMT
+kzODE0MjkwMiwtMjAzOTQ4MjI4OCwtMTE3OTk1ODU2OCwtMTk2
+NDg0MTI4MF19
 -->
