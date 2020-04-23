@@ -202,7 +202,9 @@ order by s.salary;
 
 ###  버퍼링(Buffering) 방식
 
-ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 것을 불가능하게 한다. 왜냐하면 우선 WHERE 조건에 일치하는 모든 레코드를 가져온 후에 정렬하거나 그룹핑을 통해 차례대로 보내야 하기 때문이다. 
+ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 것을 불가능하게 한다. 왜냐하면 우선 WHERE 조건에 일치하는 모든 레코드를 가져온 후에 정렬하거나 그룹핑을 통해 차례대로 보내야 하기 때문이다. MySQL 서버가 모든 레코드를 검색하고 정렬 작업을 하는 동안 클라이언트는 아무것도 하지 않고 기다려야 하기 때문에 응답 속도가 느려진다. 
+
+버퍼링 방식으로 처리되는 결과를 모아서 MySQL 서버에서 일괄 가공해야 
 
 # Distinct 처리
 
@@ -211,7 +213,7 @@ ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk3MTg5MzgsNTg0Nzk5ODk3LC00Mzk1Mz
+eyJoaXN0b3J5IjpbNTY0NTY0ODcsNTg0Nzk5ODk3LC00Mzk1Mz
 QzODAsLTIxMjA2OTk4MzgsMjA3NzcyNzk0NywtMTc2NjU5Nzg3
 MiwtMjAyMjkyOTYzMywxMjM2MzcwMDg3LC04NjY3NzY1NiwtNz
 M1NjM0ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAwOTY1
