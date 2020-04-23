@@ -297,7 +297,8 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > **CI/CD?**
 > Continuous Integration & Continuous Delivery의 약자이다. 
-> Continuous Integration은  you want all parts of what goes into making your application go to the same place and run through the same processes with results published to an easy to access place.
+> Continuous Integration은  
+you want all parts of what goes into making your application go to the same place and run through the same processes with results published to an easy to access place.
 
 The simplest example of continuous integration is something you might not have even thought of being significant: committing all your application code in a single repository! While that may seem like a no-brainer, having a single place where you “integrate” all your code is the foundation for extending other, more advanced practices.
 
@@ -305,11 +306,11 @@ Once you have all your code and changes going to the same place, you can run som
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MDQwOTgyLC0xNDQ4OTYxMTk4LDg3Nj
-g1ODcwOSw3NDA2NTE5MjUsNDk2MzE5MDUxLC02NzU3ODQzNDcs
-MjAwNzk3MDM2MSwtMTA0NDI2OTcyOCwtMTM4NTYwOTYwMCwtMT
-I4OTA1OTM0LC04ODA4MDI5MzgsLTM0NzcxMDA1NSwxMTU5NDYz
-MDY4LDQxNDQ1NzIxLDM4MjE0MDg5NywtMTcxMjU1NzcwNiwxOT
-g1MzU2MDM0LDEwOTIxNDYzNzIsLTE5MzgxNDI5MDIsLTIwMzk0
-ODIyODhdfQ==
+eyJoaXN0b3J5IjpbLTgzNzYyMzU5MiwtODcwNDA5ODIsLTE0ND
+g5NjExOTgsODc2ODU4NzA5LDc0MDY1MTkyNSw0OTYzMTkwNTEs
+LTY3NTc4NDM0NywyMDA3OTcwMzYxLC0xMDQ0MjY5NzI4LC0xMz
+g1NjA5NjAwLC0xMjg5MDU5MzQsLTg4MDgwMjkzOCwtMzQ3NzEw
+MDU1LDExNTk0NjMwNjgsNDE0NDU3MjEsMzgyMTQwODk3LC0xNz
+EyNTU3NzA2LDE5ODUzNTYwMzQsMTA5MjE0NjM3MiwtMTkzODE0
+MjkwMl19
 -->
