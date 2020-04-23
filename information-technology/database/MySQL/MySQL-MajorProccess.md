@@ -198,7 +198,9 @@ order by s.salary;
 >참고 
 >스트리밍 처리는 어떤 클라이언트 도구나 API를 사용하느냐에 따라 그 방식에 차이가 있다. 대표적으로 JDBC 라이브러리를 이용해 SELECT 쿼리를 실행하면 레코드를 읽자마자 클라이언트로 그 결과를 전달할 것이다. 하지만 JDBC는 레코드 자체를 버퍼에 모두 담아두다가 마제막 레코드가 전달될 때까지 기다렸다가 모든 결과를 전달 받으면 그때서야 비로서 클라이언트의 애플리케이션에 반환한다. 즉 MySQL 서버는 스트리밍 방식으로 처리하지만 클라이언트의 JDBC 라이브러리가 버퍼링을 한다. 하지만 JDBC가 아닌 SQL 클라이언트 도구는 이러한 버퍼링을 하지 않기 때문에 아무리 큰 테이블이라도 첫 레코드는 매우 빨리 가져온다. 
 >JDBC 라이브러리가 자체적으로 레코드를 버퍼링하는 이유는 이 방식이 전체 처리량(Throughput)에서 뛰어나기 때문이다. 이 방식은 JDBC 라이브러리와 MySQL 서버가 대화형으로 주고 받는것이 아니라 MySQL 서버는 데이터의 크기에 관계없이 무조건 보내고, JDBC MySQL 서버로부터 전송되는 데이터를 받아서 저정만 하므로 불필요한 네트워크 요청이 최소화되기 때문에 전체 처리량이 뛰어난 것이다. 
->하지만 
+>하지만 JDBC의 버퍼링 처리 방식은 기본 작동 방식이며, 아주 대량의 데이터를 가져와야 할때는 MySQL 서버와 JDBC간의 전송 방식을 스트리밍으로 변경할 수 있다. 
+
+###  버퍼링(Buffering) 방식
 
 
 # Distinct 처리
@@ -208,11 +210,11 @@ order by s.salary;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTExNzEyNTAsNTg0Nzk5ODk3LC00Mz
-k1MzQzODAsLTIxMjA2OTk4MzgsMjA3NzcyNzk0NywtMTc2NjU5
-Nzg3MiwtMjAyMjkyOTYzMywxMjM2MzcwMDg3LC04NjY3NzY1Ni
-wtNzM1NjM0ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAw
-OTY1NzAsOTg2NzAyODIyLDE3MzUyODAwMzUsLTIxMzAyNTE3Nz
-UsMjYzMDc1OTUwLC01MTg3MDYwNDQsLTIwMDk1MTgwNjEsMTU5
-NTA2NjEwNV19
+eyJoaXN0b3J5IjpbMjAwMDY2ODgyMCw1ODQ3OTk4OTcsLTQzOT
+UzNDM4MCwtMjEyMDY5OTgzOCwyMDc3NzI3OTQ3LC0xNzY2NTk3
+ODcyLC0yMDIyOTI5NjMzLDEyMzYzNzAwODcsLTg2Njc3NjU2LC
+03MzU2MzQ4NDUsLTMzNjI4NDg4MSwtODg4NDgxMjksMTUyMDA5
+NjU3MCw5ODY3MDI4MjIsMTczNTI4MDAzNSwtMjEzMDI1MTc3NS
+wyNjMwNzU5NTAsLTUxODcwNjA0NCwtMjAwOTUxODA2MSwxNTk1
+MDY2MTA1XX0=
 -->
