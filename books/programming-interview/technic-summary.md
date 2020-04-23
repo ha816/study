@@ -295,16 +295,17 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > **GIT**
 > Git은 소스코드의 효율적인 관리를 위한 형상 관리 도구(Configuration Management Tool) 중 한 종류이다. 깃은 분산형 관리 시스템인데 중앙 서버에 소스코드와 히스토리를 저장하는 SVN과 달리 Git은 소스코드를 여러 개발 PC와 저장소에 분산해서 저장하기 때문에 중앙 서버에 장애가 발생해도 로컬 저장소에 커밋을 할 수 있으며, 로컬 저장소들을 이용하여 중앙 저장소의 복원도 가능하다. 또한, 분산형으로 코드를 관리하기 때문에 다양한 Workflow를 가능하게 한다는 점이 SVN과 비교하여 Git이 갖는 장점이라 할 수 있다.
 
-> **CICD?**
-> Continuous Integration & Continuous Delivery의 약자. 
+> **CI/CD?**
+> Continuous Integration & Continuous Deploy의 약자이다. 
+> Modern software moves fast and demands more from developers than ever. Tools and concepts around CICD help developers deliver value faster and more transparently.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDg5NjExOTgsODc2ODU4NzA5LDc0MD
-Y1MTkyNSw0OTYzMTkwNTEsLTY3NTc4NDM0NywyMDA3OTcwMzYx
-LC0xMDQ0MjY5NzI4LC0xMzg1NjA5NjAwLC0xMjg5MDU5MzQsLT
-g4MDgwMjkzOCwtMzQ3NzEwMDU1LDExNTk0NjMwNjgsNDE0NDU3
-MjEsMzgyMTQwODk3LC0xNzEyNTU3NzA2LDE5ODUzNTYwMzQsMT
-A5MjE0NjM3MiwtMTkzODE0MjkwMiwtMjAzOTQ4MjI4OCwtMTE3
-OTk1ODU2OF19
+eyJoaXN0b3J5IjpbLTE1NzUzMDk3NjMsLTE0NDg5NjExOTgsOD
+c2ODU4NzA5LDc0MDY1MTkyNSw0OTYzMTkwNTEsLTY3NTc4NDM0
+NywyMDA3OTcwMzYxLC0xMDQ0MjY5NzI4LC0xMzg1NjA5NjAwLC
+0xMjg5MDU5MzQsLTg4MDgwMjkzOCwtMzQ3NzEwMDU1LDExNTk0
+NjMwNjgsNDE0NDU3MjEsMzgyMTQwODk3LC0xNzEyNTU3NzA2LD
+E5ODUzNTYwMzQsMTA5MjE0NjM3MiwtMTkzODE0MjkwMiwtMjAz
+OTQ4MjI4OF19
 -->
