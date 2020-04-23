@@ -297,15 +297,16 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > **CI/CD?**
 > Continuous Integration & Continuous Deploy의 약자이다. 
+> 
 > Modern software moves fast and demands more from developers than ever. Tools and concepts around CICD help developers deliver value faster and more transparently.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzUzMDk3NjMsLTE0NDg5NjExOTgsOD
-c2ODU4NzA5LDc0MDY1MTkyNSw0OTYzMTkwNTEsLTY3NTc4NDM0
-NywyMDA3OTcwMzYxLC0xMDQ0MjY5NzI4LC0xMzg1NjA5NjAwLC
-0xMjg5MDU5MzQsLTg4MDgwMjkzOCwtMzQ3NzEwMDU1LDExNTk0
-NjMwNjgsNDE0NDU3MjEsMzgyMTQwODk3LC0xNzEyNTU3NzA2LD
-E5ODUzNTYwMzQsMTA5MjE0NjM3MiwtMTkzODE0MjkwMiwtMjAz
-OTQ4MjI4OF19
+eyJoaXN0b3J5IjpbMTMwMzU4Mzc1MywtMTQ0ODk2MTE5OCw4Nz
+Y4NTg3MDksNzQwNjUxOTI1LDQ5NjMxOTA1MSwtNjc1Nzg0MzQ3
+LDIwMDc5NzAzNjEsLTEwNDQyNjk3MjgsLTEzODU2MDk2MDAsLT
+EyODkwNTkzNCwtODgwODAyOTM4LC0zNDc3MTAwNTUsMTE1OTQ2
+MzA2OCw0MTQ0NTcyMSwzODIxNDA4OTcsLTE3MTI1NTc3MDYsMT
+k4NTM1NjAzNCwxMDkyMTQ2MzcyLC0xOTM4MTQyOTAyLC0yMDM5
+NDgyMjg4XX0=
 -->
