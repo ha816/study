@@ -91,7 +91,12 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 ### 샤드
 
-색인된 문서는 하나의 인덱스에 담긴다. 인덱스 내부에 색인된 데이터는 물리적인 공간에 여러 개의 파티션으로 나뉘어 구성되는데, 이 파티션을 엘라스틱 서치에서는 샤드(Shard)라 부른다. 엘라스틱 서치는 다수의 샤드로 문서를 분산 저장하고 있어 데이터 손실 위험을 최소화 할 수 있다.
+색인된 문서는 하나의 인덱스에 담긴다. 인덱스 내부에 색인된 데이터는 물리적인 공간에 여러 개의 파티션으로 나뉘어 구성되는데, 이 파티션을 엘라스틱 서치에서는 샤드(Shard)라 부른다. 엘라스틱 서치는 다수의 샤드로 문서를 분산 저장하고 있어 데이터 손실 위험을 최소화 할 수 있다. 
+
+### 타입
+타입은 인덱스의 논리적 구조를 말한다. 엘라스틱 서치 6.0이하 버전에서는 하나의 인덱스에 여러 타입을 설정이 가능했지만 6.1버전부터는 인덱스당 하나의 타입만 사용할 수 있다. 
+
+### 문서
 
 
 
@@ -101,7 +106,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02MD
-Q0MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1
-MjMsODkzNzkyODJdfQ==
+eyJoaXN0b3J5IjpbLTE0MzgxMjE3MTgsMTI2MTE2NTEyNiwxOT
+IzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUx
+Nzk1LDEzODM5MzU1MjMsODkzNzkyODJdfQ==
 -->
