@@ -40,13 +40,17 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 |인덱스(Index)  |  데이터베이스(Database)|
 |샤드(Shard)  |  파티션(Partition)|
 |타입(Type)  |  테이블(Table)|
-
+|문서(Document)|  행(Row)|
+|필드(Field)| 열(Col)|
+|매핑(Mapping)| 스키마(Schema)|
+|Query DSL| SQL|
+위 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NDE5MDA2MywxMzgzOTM1NTIzLDg5Mz
-c5MjgyXX0=
+eyJoaXN0b3J5IjpbLTE3NDk1ODgzODAsMTM4MzkzNTUyMyw4OT
+M3OTI4Ml19
 -->
