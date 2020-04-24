@@ -25,11 +25,11 @@
 : 검색엔진이 수집한 정보에서 사용자의 질의와 일치하는 정보를 찾으려면 수집된 데이터를 검색가능한 구조로 가공하여 저장해야 한다. 이 역할을 하는 것이 색인기이다. 색인기는 다양한 형태소 분석기를 조합해 정보에서 의미가 있는 용어를 추출하고 검색에 유리한 역색인 구조로 데이터를 저장한다. 
 
 검색기(searhcer)
-: 
+: 사용자의 질의를 입력받아 색인기에서 저장한 역색
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTExOTg4MzI3LDg5Mzc5MjgyXX0=
+eyJoaXN0b3J5IjpbLTQ0MjIwNDI0OSw4OTM3OTI4Ml19
 -->
