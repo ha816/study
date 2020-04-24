@@ -31,11 +31,13 @@
 
 검색 엔진을 설명할때 항상 비교되는 것이 관계형 데이터베이스(RDBMS)이다. 두 가지 모두 질의와 일치하는 데이터를 찾아 사용자에게 제공한다는 점에서 유사점이 많다. 하지만 관계형 데이터 베이스만의 검색 기능으로는 한계가 있다.
 
-RDBMS는 정형의 데이터
+RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로 구조화해서 행과 열로 구성된 테이블로 저장된다. SQL문을 이용한 정보 검색은 텍스트 매칭을 통한 단순한 검색만이 가능하다. 텍스트를 여러 단어로 변형하거나 여러 개의 동의어나 유의어를 활용한 검색을 불가능하다. 
+
+반면에 검색엔진은 데이터베이스에서는 불가능한 비정형 데이터를 색인하고 검색할 수 있다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0OTYxNTU1NSw4OTM3OTI4Ml19
+eyJoaXN0b3J5IjpbNTcxMDUzNzcwLDg5Mzc5MjgyXX0=
 -->
