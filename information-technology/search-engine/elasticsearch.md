@@ -113,7 +113,11 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 한 클러스터는 노드 인스턴스들의 집합이라 할 수 있다. 클러스터는 모든 노드의 검색과 색인 작업을 관장하는 논리적인 개념이다. RDBMS에서는 모든 요청을 서버 하나에서 처리해서 결과를 제공하지만 엘라스틱 서치의 경우 다수의 서버로 분산해서 처리하는 것이 가능하기 때문에 대량의 데이터를 처리할 수 있다. 
 
-분산 처리를 위해선 다양한 형태의 노드를 조합해서 클러스터를 구성해야 한다. 기본적으로 마스터 노드가 전체적인 클러스터를 가
+분산 처리를 위해선 다양한 형태의 노드를 조합해서 클러스터를 구성해야 한다. 기본적으로 마스터 노드가 전체적인 클러스터를 관리하고 데이터 노드가 실제 데이터를 관리한다. 설정에 따라 4가지 유형의 노드가 존재한다. 
+
+### 마스터 노드
+
+마스터 노드는 인덱스를 생성, 삭제하는 등 클러스터와 관련된 전반적인 작업을 담당한다. 따라서 네트워크 속도가 빠르고 지연이 없는 노드를 마스터 노드로 선정해야 한다. 다수의 
 
 
 
@@ -123,7 +127,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NDI0MDE3NCwxMDU5MzM1MTU0LDEyNj
-ExNjUxMjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC00MTYyNTEx
-NDMsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
+eyJoaXN0b3J5IjpbLTEyMjIzMjAwNTQsMTA1OTMzNTE1NCwxMj
+YxMTY1MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUx
+MTQzLC0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
 -->
