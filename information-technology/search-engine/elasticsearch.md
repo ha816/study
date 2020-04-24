@@ -126,7 +126,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 데이터 노드는 가능한 한 마스터 노드와 분리해서 구성하는 게 좋다. 단 색인할 문서가 적으면 함께 구성해도 상관은 없다. 
 
 ### 인제스트 노드(Ingest Node)
-색인에 앞서 데이터 전처리를 위
+색인에 앞서 데이터 전처리를 위한 노드다. 데이터의 포맷을 변경하기 위해 스크립트로 전처리 파이프라인을 구성하고 실행할 수 있다. 
 
 ### 코디네이팅 노드(Coordinating Node)
 
@@ -140,8 +140,8 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwOTg2MjQ2NCwtOTYzNTM0MzEyLDEwNT
-kzMzUxNTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5
-NjEsLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1MjMsOD
-kzNzkyODJdfQ==
+eyJoaXN0b3J5IjpbLTQ2MzgwNTcxLC05NjM1MzQzMTIsMTA1OT
+MzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2
+MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OT
+M3OTI4Ml19
 -->
