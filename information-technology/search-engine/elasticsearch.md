@@ -121,6 +121,9 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 ### 데이터 노드(Data Node)
 
+데이터 노드는 문서가 실제 저장되는 노드다. 데이터가 분산 저장되는 물리적 공간인 샤드가 배치되는 노드이기도 하다. 색인 작업은 CPU, 메모리, 스토리지 같은 컴퓨팅 리로스를 많이 소모하기 때문에 리소스 모니터링이 필요하다. 
+
+데이터 노드는 가능한 한 마스터 
 
 
 
@@ -128,7 +131,8 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNj
-ExNjUxMjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC00MTYyNTEx
-NDMsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
+eyJoaXN0b3J5IjpbMTUxNjE1NzczLC05NjM1MzQzMTIsMTA1OT
+MzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2
+MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OT
+M3OTI4Ml19
 -->
