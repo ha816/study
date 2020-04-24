@@ -59,7 +59,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 * 전문 검색
 	* 단순 텍스트 검색 기능뿐만 아니라 좀 더 고차원적인 전문 검색이 가능하다. 전문 검색이란 내용 전체를 색인해서 특정 단어가 포함된 문서를 검색하는 것을 말한다. 
 * 통계 분석
-	* 비정형 로그 데이터를 수집하고 한곳에 모아 통계 분석한다. 
+	* 비정형 로그 데이터를 수집하고 한곳에 모아 통계 분석한다. 엘라스틱 
 * Document-Oriented
 * 역색인
 
@@ -68,6 +68,6 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mz
-c5MjgyXX0=
+eyJoaXN0b3J5IjpbNjEyMjAyOTAwLC0xNDYzNTE3OTUsMTM4Mz
+kzNTUyMyw4OTM3OTI4Ml19
 -->
