@@ -84,9 +84,9 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 ### 인덱스
 
-인덱스는 데이터 저장 공간이다. 하나의 인덱스는 하나의 타입만 가지며 하나의 물리적인 노드에 여러 개의 논리적인 인덱스를 생성할 수 있다. 검색 시 인덱스 이름으로 문서 데이터를 검색하며, 여러 개의 인덱스를 동시에 검색하는 것도 가능하다. 
+인덱스는 데이터 저장 공간이다. RDBMS의 입장에서는 하나의 DB를 말한다. 하나의 인덱스는 하나의 타입만 가지며 하나의 물리적인 노드에 여러 개의 논리적인 인덱스를 생성할 수 있다. 검색 시 인덱스 이름으로 문서 데이터를 검색하며, 여러 개의 인덱스를 동시에 검색하는 것도 가능하다. 
 
-엘라스틱 서치를 분산환경으로 구성하면 하나의 인덱스가 여러 노드에 분산 저장되어 관리된다. 엘라스틱 서치는 인덱스 생성
+엘라스틱 서치를 분산환경으로 구성하면 하나의 인덱스가 여러 노드에 분산 저장되어 관리된다. 엘라스틱 서치는 인덱스 생성시 기본적으로 5개의 프라이머리 샤드와 1개의 레플리카 샤드 세트를 생성한다. 각 샤드 수는 인덱스를 생성할때 옵션으로 변경할 수 있다. 
 
 
 
@@ -96,7 +96,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMyODE3NDk5LDE5MjM3NDg1NjEsLTYwND
-QzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMTM4MzkzNTUy
-Myw4OTM3OTI4Ml19
+eyJoaXN0b3J5IjpbLTUxOTI0NTUwMiwxOTIzNzQ4NTYxLC02MD
+Q0MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1
+MjMsODkzNzkyODJdfQ==
 -->
