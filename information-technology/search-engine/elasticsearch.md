@@ -13,8 +13,14 @@
 검색 서비스(search service)
 : 검색엔진을 기반으로 구축한 검색 시스템을 활용해 검색 결과를 서비스로 제공한다. 
 
+## 검색 시스템의 구성요소
+
+수집기(collector)
+: 수집기는 웹 사이트, 블로그, 카페 등 웹에서 필요로 하는 정보를 수집하는 프로그램이다. 크롤러(crawler
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNTk0MjkzMyw4OTM3OTI4Ml19
+eyJoaXN0b3J5IjpbLTE1NjMzNzU3MzYsODkzNzkyODJdfQ==
 -->
