@@ -63,13 +63,17 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 * Document-Oriented
 	* 여러 계층의 데이터를 JSON형식의 구조화된 문서로 인덱스에 저장할 수 있다. 계층 구조로 문서도 한번의 쿼리로 조회할 수 있다.
 * 역색인(Inverted Index)
-	* 엘라스틱 서치는 루씬 기반의 검색엔진이다. 따라서 엘라스
+	* 엘라스틱 서치는 루씬 기반의 검색엔진이다. 따라서 엘라스틱서치 또한 역색인을 지원한다. 바면 MongoDB나 카산트라(Casandra)같은 일반적인 NoSQL은 역색인을 지원하지 않는다. 이는 다른 NoSQL 대비 엘라스틱서치의 매우 큰 장점이다. 
+
+엘라스틱 서치의 단점은 아래와 같다.
+
+* 실시간이 아니다. 일반적으로 색인된 데이터는 통상적으
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMjc3MDcxNCwtMTQ2MzUxNzk1LDEzOD
-M5MzU1MjMsODkzNzkyODJdfQ==
+eyJoaXN0b3J5IjpbODY4NzYzNjc4LC0xNDYzNTE3OTUsMTM4Mz
+kzNTUyMyw4OTM3OTI4Ml19
 -->
