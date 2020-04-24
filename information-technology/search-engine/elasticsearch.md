@@ -107,7 +107,11 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 하나의 필드는 목적에 따라 다수의 데이터 타입을 가질 수 있다. 영화 정보를 담아둔 문서에 제목 필드가 있다고 생각해보자. 영화 제목을 검색할때 매칭 검색을 하거나 초성을 이용한 검색이 모두 지원되도록 하려면 제목 필드는 2개의 데이터 타입을 가져야 한다. 
 
 ### 매핑
-매핑은 
+매핑은 문서의 필드와 필드 속성을 정의하고 그에 따른 색인 방법을 정의하는 프로세스다. 인덱스의 매핑 정보에는 여러가지 데이터 타입을 지정할 수 있지만 필드명은 중복해서 사용할 수 없다.
+
+## 노드(Node)
+
+클러스터는 물리적인 노드 인스턴스들의 모임이라 할 수 있다. 클러스터는 모든 노드의 검색과 색인 작업을 관장하는 논리적인 개념이다. RDBMS에서는 모든 요청을 서버 하나에서 처
 
 
 
@@ -117,7 +121,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzkwODgwLDEwNTkzMzUxNTQsMTI2MT
-E2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0
-MywtMTQ2MzUxNzk1LDEzODM5MzU1MjMsODkzNzkyODJdfQ==
+eyJoaXN0b3J5IjpbLTE2MDU5Njc5MTksMTA1OTMzNTE1NCwxMj
+YxMTY1MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUx
+MTQzLC0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
 -->
