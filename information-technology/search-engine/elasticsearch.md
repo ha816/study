@@ -73,13 +73,14 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 ## 키바나(Kibana)
 
-키바나는 엘라스틱에서 제공하는 데이터 시각화 프로그램이다. 당장은 시각화 기능이 필요
+키바나는 엘라스틱에서 제공하는 데이터 시각화 프로그램이다. 당장은 시각화 기능이 필요하진 않지만 키바나를 이용하면 색인된 데이터를 검색하거나 문서를 추가하거나 삭제하는 등의 기능을 손쉽게 구현할 수 있다. 사실 키바나에서 제공하는 UI가 매우 유용하다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xND
-YzNTE3OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
+eyJoaXN0b3J5IjpbMTgzMjc5Mzc2MiwtNjA0NDM1OTYxLC00MT
+YyNTExNDMsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5Mjgy
+XX0=
 -->
