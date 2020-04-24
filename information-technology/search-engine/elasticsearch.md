@@ -79,7 +79,14 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 엘라스틱 서치가 기본적으로 분산 시스템을 지향하다보니 생소한 용어가 많다. 용어가 무엇인지 잘 파악하면 전체 아키텍처를 이해하는데 많은 도움이 된다. 엘라스틱 서치를 구성하는 주요 구성요소로 어떤 것이 있는지 알아보자.
 
-## 
+## 기본 용어
+
+
+### 인덱스
+
+인덱스는 데이터 저장 공간이다. 하나의 인덱스는 하나의 타입만 가지며 
+
+
 
 
 
@@ -87,7 +94,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMzM2MzI5MywtNjA0NDM1OTYxLC00MT
+eyJoaXN0b3J5IjpbMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC00MT
 YyNTExNDMsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5Mjgy
 XX0=
 -->
