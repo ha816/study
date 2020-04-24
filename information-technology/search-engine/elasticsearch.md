@@ -97,7 +97,8 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 타입은 인덱스의 논리적 구조를 말한다. 엘라스틱 서치 6.0이하 버전에서는 하나의 인덱스에 여러 타입을 설정이 가능했지만 6.1버전부터는 인덱스당 하나의 타입만 사용할 수 있다. 
 
 ### 문서
-문서(Document)는 엘라스틱 서치에서 데이터가 저장되는 최소단위이다. 
+문서(Document)는 엘라스틱 서치에서 데이터가 저장되는 최소단위이다. 기본적으로 JSON 포맷으로 데이터가 저장된다. 문서는 데이터베이스와 비교하자면 테이블의 행을 의미한다. 
+하나의 문서는 다수의 필두로 구성되어 있는데 각 필드는 데이터의 형태에 따라 용도에 맞는 데이터 타입(DataType)을 정의해야 한다. 또한 문서는 중첩 구조를 지원하기 때문에 이로 문서안에 문서를 지정한
 
 
 
@@ -107,7 +108,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk2NTMxNzY4LDEyNjExNjUxMjYsMTkyMz
-c0ODU2MSwtNjA0NDM1OTYxLC00MTYyNTExNDMsLTE0NjM1MTc5
-NSwxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
+eyJoaXN0b3J5IjpbMTgxNzE5MDA1MiwxMjYxMTY1MTI2LDE5Mj
+M3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3
+OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
 -->
