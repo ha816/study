@@ -33,11 +33,18 @@
 
 RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로 구조화해서 행과 열로 구성된 테이블로 저장된다. SQL문을 이용한 정보 검색은 텍스트 매칭을 통한 단순한 검색만이 가능하다. 텍스트를 여러 단어로 변형하거나 여러 개의 동의어나 유의어를 활용한 검색을 불가능하다. 
 
-반면에 검색엔진은 데이터베이스에서는 불가능한 비정형 데이터를 색인하고 검색할 수 있다. 
+반면에 검색엔진은 데이터베이스에서는 불가능한 비정형 데이터를 색인하고 검색할 수 있다. 형태소 분석을 통해 사람이 구사하는 자연어의 처리가 가능해지고 역색인 구조를 바탕으로 빠른 검색 속도를 보장한다. 
+
+| 엘라스틱서치| 관계형 데이터베이스|
+|--|--|
+|인덱스(Index)  |  데이터베이스(Database)|
+|샤드(Shard)  |  파티션(Partition)|
+|타입(Type)  |  테이블(Table)|
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxMDUzNzcwLDg5Mzc5MjgyXX0=
+eyJoaXN0b3J5IjpbMTM4MzkzNTUyMyw4OTM3OTI4Ml19
 -->
