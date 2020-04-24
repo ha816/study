@@ -123,7 +123,16 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 데이터 노드는 문서가 실제 저장되는 노드다. 데이터가 분산 저장되는 물리적 공간인 샤드가 배치되는 노드이기도 하다. 색인 작업은 CPU, 메모리, 스토리지 같은 컴퓨팅 리로스를 많이 소모하기 때문에 리소스 모니터링이 필요하다. 
 
-데이터 노드는 가능한 한 마스터 
+데이터 노드는 가능한 한 마스터 노드와 분리해서 구성하는 게 좋다. 단 색인할 문서가 적으면 함께 구성해도 상관은 없다. 
+
+### 인제스트 노드(Ingest Node)
+색인에 앞서 데이터 전처리를 위
+
+### 코디네이팅 노드(Coordinating Node)
+
+마스터 노드, 데이터 노드, 인제스트 노드의 역할을 하지 않고 단순히 들어온 요청을 라운드 로빈 방식으로 분산시켜주는 노드다. 
+
+
 
 
 
@@ -131,8 +140,8 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNjE1NzczLC05NjM1MzQzMTIsMTA1OT
-MzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2
-MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OT
-M3OTI4Ml19
+eyJoaXN0b3J5IjpbMTAwOTg2MjQ2NCwtOTYzNTM0MzEyLDEwNT
+kzMzUxNTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5
+NjEsLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1MjMsOD
+kzNzkyODJdfQ==
 -->
