@@ -68,13 +68,16 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 엘라스틱 서치의 단점은 아래와 같다.
 
 * 실시간이 아니다. 일반적으로 색인된 데이터는 통상적으로 1초 뒤에나 검색이 가능하다. 색인된 데이터는 내부적으로 커밋과 플러시 같은 복잡한 과정을 거치기 때문에 실시간이 아니다. 엄밀히 말하면 실시간(Near Realtime)이라 할 수 있다.
-* 트랜잭션과 롤백 기능을 제공하
+* 트랜잭션과 롤백 기능을 제공하지 않는다. 엘라스틱 서치는 기본적으로 분산 시스템으로 구성된다. 전체적인 클러스터의 성능을 위해 비용 소모가 큰 롤백(Rollback)과 트랜잭션을 지원하지 않기 때문에 최악의 경우 데이터 손실의 위험이 있다. 
+* 데이터의 업데이트를 제공하지 않는다. 엄밀히 말하면 업데이트 명령이 요청될 경우 기존 문서를 삭제하고 새로운 내용으로 문서를 생성하는 방식을 사용한다. 따라서 단순 업데이트에 비해서는 많은 비용이 발생한다. 
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NzQyMDg0NiwtMTQ2MzUxNzk1LDEzOD
+eyJoaXN0b3J5IjpbLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEzOD
 M5MzU1MjMsODkzNzkyODJdfQ==
 -->
