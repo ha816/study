@@ -16,11 +16,16 @@
 ## 검색 시스템의 구성요소
 
 수집기(collector)
-: 수집기는 웹 사이트, 블로그, 카페 등 웹에서 필요로 하는 정보를 수집하는 프로그램이다. 크롤러(crawler
+: 수집기는 웹 사이트, 블로그, 카페 등 웹에서 필요로 하는 정보를 수집하는 프로그램이다. 크롤러(crawler), 스파이더(spider), 웜(worms)등으로 불린다. 파일, 데이터베이스, 웹페이지 등 웹상의 대부분의 정보가 수집 대상이다. 
+
+스토리지(storage)
+: 데이터베이스에 데이터를 저장하는 물리적 저장소다. 검색 엔진은 색인한 데이터를 스토리지에 보관한다.
+
+색인기(index
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjMzNzU3MzYsODkzNzkyODJdfQ==
+eyJoaXN0b3J5IjpbLTE1MTIzNzM3NDgsODkzNzkyODJdfQ==
 -->
