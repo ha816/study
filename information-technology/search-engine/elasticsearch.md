@@ -75,12 +75,19 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 키바나는 엘라스틱에서 제공하는 데이터 시각화 프로그램이다. 당장은 시각화 기능이 필요하진 않지만 키바나를 이용하면 색인된 데이터를 검색하거나 문서를 추가하거나 삭제하는 등의 기능을 손쉽게 구현할 수 있다. 사실 키바나에서 제공하는 UI가 매우 유용하다. 
 
+# 엘라스틱 서치 코어
+
+엘라스틱 서치가 기본적으로 분산 시스템을 지향하다보니 생소한 용어가 많다. 용어가 무엇인지 잘 파악하면 전체 아키텍처를 이해하는데 많은 도움이 된다. 엘라스틱 서치를 구성하는 주요 구성요소로 어떤 것이 있는지 알아보자.
+
+## 
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMjc5Mzc2MiwtNjA0NDM1OTYxLC00MT
+eyJoaXN0b3J5IjpbMTYxMzM2MzI5MywtNjA0NDM1OTYxLC00MT
 YyNTExNDMsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5Mjgy
 XX0=
 -->
