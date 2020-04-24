@@ -98,7 +98,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 ### 문서
 문서(Document)는 엘라스틱 서치에서 데이터가 저장되는 최소단위이다. 기본적으로 JSON 포맷으로 데이터가 저장된다. 문서는 데이터베이스와 비교하자면 테이블의 행을 의미한다. 
-하나의 문서는 다수의 필두로 구성되어 있는데 각 필드는 데이터의 형태에 따라 용도에 맞는 데이터 타입(DataType)을 정의해야 한다. 또한 문서는 중첩 구조를 지원하기 때문에 이로 문서안에 문서를 지정한
+하나의 문서는 다수의 필두로 구성되어 있는데 각 필드는 데이터의 형태에 따라 용도에 맞는 데이터 타입(DataType)을 정의해야 한다. 또한 문서는 중첩 구조를 지원하기 때문에 이로 문서안에 문서를 지정하는 것도 가능하다. 
 
 
 
@@ -108,7 +108,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzE5MDA1MiwxMjYxMTY1MTI2LDE5Mj
+eyJoaXN0b3J5IjpbMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5Mj
 M3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3
 OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
 -->
