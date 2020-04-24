@@ -29,11 +29,13 @@
 
 ## 관계형 데이터베이스와 차이점
 
-검색 엔진을 설명할때 항상 비교되는 것이 관계형 데이터베이스(
+검색 엔진을 설명할때 항상 비교되는 것이 관계형 데이터베이스(RDBMS)이다. 두 가지 모두 질의와 일치하는 데이터를 찾아 사용자에게 제공한다는 점에서 유사점이 많다. 하지만 관계형 데이터 베이스만의 검색 기능으로는 한계가 있다.
+
+RDBMS는 정형의 데이터
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5ODI1ODcwMyw4OTM3OTI4Ml19
+eyJoaXN0b3J5IjpbMTA0OTYxNTU1NSw4OTM3OTI4Ml19
 -->
