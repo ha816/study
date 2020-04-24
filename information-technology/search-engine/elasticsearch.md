@@ -57,8 +57,9 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 * 오프소스 검색엔진
 	* 아파치 재단의 루씬(Lucene)을 기반으로 개발된 오픈소스 검색엔진이다. 
 * 전문 검색
-	* 좀 
+	* 단순 텍스트 검색 기능뿐만 아니라 좀 더 고차원적인 전문 검색이 가능하다. 전문 검색이란 내용 전체를 색인해서 특정 단어가 포함된 문서를 검색하는 것을 말한다. 
 * 통계 분석
+	* 비정형 로그 데이터를 수집하고
 * Document-Oriented
 * 역색인
 
@@ -67,6 +68,6 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDM0OTc3MjYsMTM4MzkzNTUyMyw4OT
-M3OTI4Ml19
+eyJoaXN0b3J5IjpbLTYzNjc1MTMzMiwxMzgzOTM1NTIzLDg5Mz
+c5MjgyXX0=
 -->
