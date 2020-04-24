@@ -100,6 +100,15 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 문서(Document)는 엘라스틱 서치에서 데이터가 저장되는 최소단위이다. 기본적으로 JSON 포맷으로 데이터가 저장된다. 문서는 데이터베이스와 비교하자면 테이블의 행을 의미한다. 
 하나의 문서는 다수의 필두로 구성되어 있는데 각 필드는 데이터의 형태에 따라 용도에 맞는 데이터 타입(DataType)을 정의해야 한다. 또한 문서는 중첩 구조를 지원하기 때문에 이로 문서안에 문서를 지정하는 것도 가능하다. 
 
+### 필드
+
+필드(Field)는 문서를 구성하기 위한 속성이다. 일반적으로 데이터베이스의 컬럼과 비교할 수 있으니 컬럼이 정적인 데이터 타입인데 반해 필드는 좀 더 동적인 타입이다. 
+
+하나의 필드는 목적에 따라 다수의 데이터 타입을 가질 수 있다. 영화 정보를 담아둔 문서에 제목 필드가 있다고 생각해보자. 영화 제목을 검색할때 매칭 검색을 하거나 초성을 이용한 검색이 모두 지원되도록 하려면 제목 필드는 2개의 데이터 타입을 가져야 한다. 
+
+### 매핑
+매핑은 
+
 
 
 
@@ -108,7 +117,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5Mj
-M3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3
-OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
+eyJoaXN0b3J5IjpbLTE5MzkwODgwLDEwNTkzMzUxNTQsMTI2MT
+E2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0
+MywtMTQ2MzUxNzk1LDEzODM5MzU1MjMsODkzNzkyODJdfQ==
 -->
