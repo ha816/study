@@ -55,13 +55,18 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 엘라스틱 서치의 장점은 아래와 같다.
 
 * 오프소스 검색엔진
-	* 
+	* 아파치 재단의 루씬(Lucene)을 기반으로 개발된 오픈소스 검색엔진이다. 
+* 전문 검색
+	* 좀 
+* 통계 분석
+* Document-Oriented
+* 역색인
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MDU2Njc3MSwxMzgzOTM1NTIzLDg5Mz
-c5MjgyXX0=
+eyJoaXN0b3J5IjpbLTE1NDM0OTc3MjYsMTM4MzkzNTUyMyw4OT
+M3OTI4Ml19
 -->
