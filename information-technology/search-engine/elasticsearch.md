@@ -44,13 +44,17 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 |필드(Field)| 열(Col)|
 |매핑(Mapping)| 스키마(Schema)|
 |Query DSL| SQL|
-위 
+
+위 차트는 엘라스틱 서치와 관계형 데이터베이스의 주요 개념을 배교해서 보여준다. 엘라스틱 서치에서 타입은 테이블과 같은 역할을 한다. 
+하나의 행을 문서라고 부르며, 해당 문서는 데이터베이스의 테이블에서 한 행을 말한다. 
+
+관계형 데이터
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDk1ODgzODAsMTM4MzkzNTUyMyw4OT
-M3OTI4Ml19
+eyJoaXN0b3J5IjpbNjEzNDI5MDc4LDEzODM5MzU1MjMsODkzNz
+kyODJdfQ==
 -->
