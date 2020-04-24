@@ -117,7 +117,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 ### 마스터 노드
 
-마스터 노드는 인덱스를 생성, 삭제하는 등 클러스터와 관련된 전반적인 작업을 담당한다. 따라서 네트워크 속도가 빠르고 지연이 없는 노드를 마스터 노드로 선정해야 한다. 다수의 노드를 마스터 노드로 설정할 수 있지만 결과적으로 하나의 노드만이 마스터 노드로 선출되어 동작한다. 
+마스터 노드는 노드 추가와 제거 같은 클러스터 수준의 전반적인 작업을 대표해서 처리한다. 따라서 네트워크 속도가 빠르고 지연이 없는 노드를 마스터 노드로 선정해야 한다. 다수의 노드를 마스터 노드로 설정할 수 있지만 결과적으로 하나의 노드만이 마스터 노드로 선출되어 동작한다. 
 
 
 
@@ -127,7 +127,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDI5NzM1MDAsMTA1OTMzNTE1NCwxMj
-YxMTY1MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUx
-MTQzLC0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
+eyJoaXN0b3J5IjpbLTY3NTY3MTQ4MSwxMDU5MzM1MTU0LDEyNj
+ExNjUxMjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC00MTYyNTEx
+NDMsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
 -->
