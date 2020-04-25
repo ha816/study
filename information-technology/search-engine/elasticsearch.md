@@ -109,9 +109,32 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 ### 매핑
 매핑은 문서의 필드와 필드 속성을 정의하고 그에 따른 색인 방법을 정의하는 프로세스다. 인덱스의 매핑 정보에는 여러가지 데이터 타입을 지정할 수 있지만 필드명은 중복해서 사용할 수 없다.
 
+## 클러스터
+
+ 클러스터는 여러 노드의 집합으로 구성되며, 같은 이름의 Shard는 primary와 replica가 같은 노드에 존재할 수 없다. 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 각각을 구분한다. 
+
+![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/99AB08425C9F17D928)
+
+
+클러스터는 하나 이상의 노드(서버)가 모인 것이며, 이를 통해 전체 데이터를 저장하고 모든 노드를 포괄하는 통합 색인화 및 검색 기능을 제공합니다. 클러스터는 고유한 이름으로 식별되는데, 기본 이름은 "elasticsearch"입니다. 이 이름은 중요한데, 어떤 노드가 어느 클러스터에 포함되기 위해서는 이름에 의해 클러스터의 구성원이 되도록 설정되기 때문입니다.
+
+동일한 클러스터 이름을 서로 다른 환경에서 재사용하지 마십시오. 노드가 잘못된 클러스터에 포함될 위험이 있습니다. 예를 들어 개발, 스테이징, 프로덕션 클러스터에  `logging-dev`,  `logging-stage`, `logging-prod`라는 이름을 사용할 수 있습니다.
+
+클러스터에 하나의 노드만 있는 것은 유효하며 문제가 없습니다. 또한 각자 고유한 클러스터 이름을 가진 독립적인 클러스터를 여러 개 둘 수도 있습니다.
+
+
+
 ## 노드(Node)
 
-한 클러스터는 노드 인스턴스들의 집합이라 할 수 있다. 클러스터는 모든 노드의 검색과 색인 작업을 관장하는 논리적인 개념이다. RDBMS에서는 모든 요청을 서버 하나에서 처리해서 결과를 제공하지만 엘라스틱 서치의 경우 다수의 서버로 분산해서 처리하는 것이 가능하기 때문에 대량의 데이터를 처리할 수 있다. 
+노드는 클러스터에 포함된 단일 서버로서 데이터를 저장하고 클러스터의 색인화 및 검색 기능에 참여합니다. 노드는 클러스터처럼 이름으로 식별되는데, 기본 이름은 시작 시 노드에 지정되는 임의 UUID(Universally Unique IDentifier)입니다. 원한다면 기본 이름 대신 어떤 노드 이름도 정의할 수 있습니다. 이 이름은 관리의 목적에서 중요합니다. 네트워크의 어떤 서버가 Elasticsearch 클러스터의 어떤 노드에 해당하는지 식별해야 하기 때문입니다.
+
+노드는 클러스터 이름을 통해 어떤 클러스터의 일부로 구성될 수 있습니다. 기본적으로 각 노드는 `elasticsearch`라는 이름의 클러스터에 포함되도록 설정됩니다. 즉 네트워크에서 다수의 노드를 시작할 경우 (각각을 검색할 수 있다고 가정하면) 이 노드가 모두 자동으로 `elasticsearch`라는 단일 클러스터를 형성하고 이 클러스터의 일부가 됩니다.
+
+하나의 클러스터에서 원하는 개수의 노드를 포함할 수 있습니다. 뿐만 아니라 현재 다른 어떤 Elasticsearch 노드도 네트워크에서 실행되고 있지 않은 상태에서 단일 노드를 시작하면 기본적으로 `elasticsearch`라는 이름의 새로운 단일 노드 클러스터가 생깁니다.
+
+
+
+한 클러스터는 노드 집합이라 할 수 있다. 클러스터는 모든 노드의 검색과 색인 작업을 관장하는 논리적인 개념이다. RDBMS에서는 모든 요청을 서버 하나에서 처리해서 결과를 제공하지만 엘라스틱 서치의 경우 다수의 서버로 분산해서 처리하는 것이 가능하기 때문에 대량의 데이터를 처리할 수 있다. 
 
 분산 처리를 위해선 다양한 형태의 노드를 조합해서 클러스터를 구성해야 한다. 기본적으로 마스터 노드가 전체적인 클러스터를 관리하고 데이터 노드가 실제 데이터를 관리한다. 설정에 따라 4가지 유형의 노드가 존재한다. 
 
@@ -133,20 +156,13 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 마스터 노드, 데이터 노드, 인제스트 노드의 역할을 하지 않고 단순히 들어온 요청을 라운드 로빈 방식으로 분산시켜주는 노드다. 
 
 
-## 클러스터
-
- 클러스터는 여러 노드의 집합으로 구성되며, 같은 이름의 Shard는 primary와 replica가 같은 노드에 존재할 수 없다. 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 각각을 구분한다. 
-
-![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/99AB08425C9F17D928)
-
-
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDQwNDgzNDUsLTQ2MzgwNTcxLC05Nj
-M1MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1
-NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMT
-M4MzkzNTUyMyw4OTM3OTI4Ml19
+eyJoaXN0b3J5IjpbLTI0ODYwMjcyLC0yMDA0MDQ4MzQ1LC00Nj
+M4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEy
+NiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMT
+Q2MzUxNzk1LDEzODM5MzU1MjMsODkzNzkyODJdfQ==
 -->
