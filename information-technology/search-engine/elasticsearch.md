@@ -111,23 +111,15 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 ## 클러스터
 
- 클러스터는 여러 노드(서버)의 집합으로 구성되며, 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 클러스터를 구분한다. 이 이름은 중요한데, 어떤 노드가 어느 클러스터에 포함되기 위해서는 이름에 의해 클러스터의 구성원이 되도록 설정되기 때문입니다.
+ 클러스터는 여러 노드(서버)의 집합으로 구성되며, 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 클러스터를 구분한다. 이 이름은 중요한데, 어떤 노드가 어느 클러스터에 포함되기 되는지를 이름으로 판별하기 때문이다. 
 
 ![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/99AB08425C9F17D928)
 
-
-클러스터는 하나 이상의 노드(서버)가 모인 것이며, 이를 통해 전체 데이터를 저장하고 모든 노드를 포괄하는 통합 색인화 및 검색 기능을 제공합니다. 클러스터는 고유한 이름으로 식별되는데, 기본 이름은 "elasticsearch"입니다. 
-
-동일한 클러스터 이름을 서로 다른 환경에서 재사용하지 마십시오. 노드가 잘못된 클러스터에 포함될 위험이 있습니다. 예를 들어 개발, 스테이징, 프로덕션 클러스터에  `logging-dev`,  `logging-stage`, `logging-prod`라는 이름을 사용할 수 있습니다.
-
-클러스터에 하나의 노드만 있는 것은 유효하며 문제가 없습니다. 또한 각자 고유한 클러스터 이름을 가진 독립적인 클러스터를 여러 개 둘 수도 있습니다.
-
-한 shard의 primary, replica 는  같은 노드에 존재할 수 없다. 
-
+참고로 한 shard가 replication을 쓰는 경우, primary와 replica shard는  같은 노드에 존재할 수 없다. 
 
 ## 노드(Node)
 
-노드는 클러스터에 포함된 단일 서버로서 데이터를 저장하고 클러스터의 색인화 및 검색 기능에 참여합니다. 노드는 클러스터처럼 이름으로 식별되는데, 기본 이름은 시작 시 노드에 지정되는 임의 UUID(Universally Unique IDentifier)입니다. 원한다면 기본 이름 대신 어떤 노드 이름도 정의할 수 있습니다. 이 이름은 관리의 목적에서 중요합니다. 네트워크의 어떤 서버가 Elasticsearch 클러스터의 어떤 노드에 해당하는지 식별해야 하기 때문입니다.
+노드는 클러스터에 포함된 단일 서버로서 데이터를 저장하고 클러스터의 색인화 및 검색 기능에 참여한다. 노드는 클러스터처럼 이름으로 식별되는데, 기본 이름은 시작 시 노드에 지정되는 임의 UUID(Universally Unique IDentifier)ㅇㄷ 원한다면 기본 이름 대신 어떤 노드 이름도 정의할 수 있습니다. 이 이름은 관리의 목적에서 중요합니다. 네트워크의 어떤 서버가 Elasticsearch 클러스터의 어떤 노드에 해당하는지 식별해야 하기 때문입니다.
 
 노드는 클러스터 이름을 통해 어떤 클러스터의 일부로 구성될 수 있습니다. 기본적으로 각 노드는 `elasticsearch`라는 이름의 클러스터에 포함되도록 설정됩니다. 즉 네트워크에서 다수의 노드를 시작할 경우 (각각을 검색할 수 있다고 가정하면) 이 노드가 모두 자동으로 `elasticsearch`라는 단일 클러스터를 형성하고 이 클러스터의 일부가 됩니다.
 
@@ -162,8 +154,8 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYxODE4MzEyLC0yMDA0MDQ4MzQ1LC00Nj
-M4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEy
-NiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMT
-Q2MzUxNzk1LDEzODM5MzU1MjMsODkzNzkyODJdfQ==
+eyJoaXN0b3J5IjpbLTE2ODgzNDIzNDQsLTIwMDQwNDgzNDUsLT
+Q2MzgwNTcxLC05NjM1MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1
+MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC
+0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
 -->
