@@ -192,7 +192,7 @@ PUT /movie {
 
 ##  문서 관리 API
 
-문서 관리 API는 실제 문서를 색인하고 조회, 수정, 삭제를 지원하는 API다. 
+문서 관리 API는 실제 문서를 색인하고 조회, 수정, 삭제를 지원하는 API다. 이를 이용해서 문서를 색인하고 내용을 수정하거나 삭제 할 수 있다. 엘라스틱 서치는 기본적으로 검색엔진이기 때문에 다양한 검색 패턴을 지원하는 Search API를 별도로 제공한다. 하지만 색인된 문서의 ID를 기준으로 문서를 다뤄야 하
 
 
 
@@ -200,9 +200,10 @@ PUT /movie {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMD
-Y5NTg3MzMsLTI4MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYzODA1
-NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNjExNjUxMjYsMT
-kyMzc0ODU2MSwtNjA0NDM1OTYxLC00MTYyNTExNDMsLTE0NjM1
-MTc5NSwxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
+eyJoaXN0b3J5IjpbMTA3NzU2MDU4MiwtNDA0OTI3MDkzLDExNj
+I2OTMyODQsLTMwNjk1ODczMywtMjgxODA0MjMzLC0yMDA0MDQ4
+MzQ1LC00NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMT
+I2MTE2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1
+MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1MjMsODkzNzkyODJdfQ
+==
 -->
