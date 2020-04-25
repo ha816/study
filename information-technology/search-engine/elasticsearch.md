@@ -83,13 +83,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 ### 인덱스, 색인
 
-인덱스는 실제 데이터 저장 공간이다. RDBMS의 입장에서는 하나의 DB를 말한다. 색인은 다소 비슷한 특성을 가진 문서들의 모임으로도 이해할 수 있다. 이를테면 고객 데이터에 대한 색인, 제품 카탈로그에 대한 색인, 주문 데이터에 대한 색인을 각각 둘 수 있습니다. 
-
-색인은 이름(모두 소문자여야 함)으로 식별되며, 이 이름은 색인에 포함된 문서에 대한 색인화, 검색, 업데이트, 삭제 작업에서 해당 색인을 가리키는 데 쓰입니다.
-
-단일 클러스터에서 원하는 개수의 색인을 정의할 수 있습니다.
-
-
+인덱스(색인)는 실제 데이터 저장 공간이다. 색인은 다소 비슷한 특성을 가진 문서들의 모임으로도 이해할 수 있다. 이를테면 고객 데이터에 대한 색인, 제품 카탈로그에 대한 색인, 주문 데이터에 대한 색인을 각각 둘 수 있다. 색인의 이름(모두 소문자여야 함)으로 식별되며, 이 이름은 색인에 포함된 문서에 대한 색인화, 검색, 업데이트, 삭제 작업에서 해당 색인을 가리키는 데 쓰인다.
 
 하나의 인덱스는 하나의 타입만 가지며 하나의 물리적인 노드에 여러 개의 논리적인 인덱스를 생성할 수 있다. 검색 시 인덱스 이름으로 문서 데이터를 검색하며, 여러 개의 인덱스를 동시에 검색하는 것도 가능하다. 
 
@@ -153,14 +147,14 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
  엘라스틱 서치는 RESTful 방식의 API를 제공하며, JSON 기반으로 통신한다. 기본적으로 HTTP 통신을 위해 9200번 포트를 사용한다. 
 
-문서 색인을 위해서는 기본적으로 인덱스라는 그릇을 만들어야 한다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTUyODI5MjAsLTIwMDQwNDgzNDUsLT
+eyJoaXN0b3J5IjpbLTE0ODU5NjQ5NjksLTIwMDQwNDgzNDUsLT
 Q2MzgwNTcxLC05NjM1MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1
 MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC
 0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
