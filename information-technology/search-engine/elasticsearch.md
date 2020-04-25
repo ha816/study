@@ -224,6 +224,14 @@ Request Body 방식(2)은 URI 방식(1)보다 제약 사항이 적기 때문에 
 
 간단한 표현식이라면 두 가지 형식을 섞어서 사용하는 것도 가능하다. 예를 들어, Query를 URI 방식으로 사용하고 나머지 기능을 JSON 형태로 사용해도 된다. 
 
+### URI 방식의 검색 질의
+
+먼저 살펴볼 URI 방식의 검색 질의는 문서 ID인 _id값을 사용해 문서를 조회하는 방식이다. 결국 URL에 파라미터를 붙여 조회하는 식이다. 예컨데 123이라는 키를 가진 문서를 질의하려면 GET 메서드를 사용해 다음과 같이 검색할 수 있다. 
+
+```
+
+```
+
 
 
 
@@ -231,10 +239,10 @@ Request Body 방식(2)은 URI 방식(1)보다 제약 사항이 적기 때문에 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NT
-g5ODEyNjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NTg3
-MzMsLTI4MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYzODA1NzEsLT
-k2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNjExNjUxMjYsMTkyMzc0
-ODU2MSwtNjA0NDM1OTYxLC00MTYyNTExNDMsLTE0NjM1MTc5NS
-wxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
+eyJoaXN0b3J5IjpbODUwMDgwNzQ3LDc0MDgyNjM4NywxMjc5Nj
+c1NjUwLC0xNTU4OTgxMjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4
+NCwtMzA2OTU4NzMzLC0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLT
+Q2MzgwNTcxLC05NjM1MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1
+MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC
+0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
 -->
