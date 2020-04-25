@@ -163,15 +163,17 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 인덱스 생성시에는 매핑이라는 세부 설정을 이용할 수 있는데, 매핑은 문서와 문서에 포함된 필드, 필드 타입 등을 세세하게 지정하는 것이 가능한 설정 방법이다. 인덱스 생성시 이러한 매핑 정보를 추가할 수 있다. 
 
+**주의할 점은 한번 생성된 매핑 정보를 변경할 수 없다.** 만약 잘못 생성했거나 변경해야하는 경우에는 데이터를 삭제하고 다시 색인하는 ㅅ
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMxMDkyNzkyLC0yODE4MDQyMzMsLTIwMD
-QwNDgzNDUsLTQ2MzgwNTcxLC05NjM1MzQzMTIsMTA1OTMzNTE1
-NCwxMjYxMTY1MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2MSwtND
-E2MjUxMTQzLC0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OTM3OTI4
-Ml19
+eyJoaXN0b3J5IjpbLTkwMzYzNDM5NiwtMjgxODA0MjMzLC0yMD
+A0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUx
+NTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLT
+QxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1MjMsODkzNzky
+ODJdfQ==
 -->
