@@ -171,7 +171,10 @@ PUT /movie {
 	"mappings": {
 		"_doc": {
 			"properties" : {
-				"mo"	
+				"movieCd": {"type":"integer"},
+				"movieNm": {"type":"text"},
+				"openDt": {"type":"date"},
+				"typeNm": {"type":"date"},
 			}
 		}
 	}
@@ -192,9 +195,9 @@ PUT /movie {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2NDM5MjE4LC0zMDY5NTg3MzMsLTI4MT
-gwNDIzMywtMjAwNDA0ODM0NSwtNDYzODA1NzEsLTk2MzUzNDMx
-MiwxMDU5MzM1MTU0LDEyNjExNjUxMjYsMTkyMzc0ODU2MSwtNj
-A0NDM1OTYxLC00MTYyNTExNDMsLTE0NjM1MTc5NSwxMzgzOTM1
-NTIzLDg5Mzc5MjgyXX0=
+eyJoaXN0b3J5IjpbMTY0MzQxNzMxOCwtMzA2OTU4NzMzLC0yOD
+E4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcxLC05NjM1MzQz
+MTIsMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1NjEsLT
+YwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMTM4Mzkz
+NTUyMyw4OTM3OTI4Ml19
 -->
