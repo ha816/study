@@ -259,8 +259,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 >**[Servelet](https://books.google.co.kr/books?id=RzLVBQAAQBAJ&pg=PA249&lpg=PA249&dq=%EB%A3%A8%ED%8A%B8%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98&source=bl&ots=EN4jFpVZ7R&sig=ACfU3U1gMt7Y9qm2RimM9QdP1IP_W8WVSA&hl=en&sa=X&ved=2ahUKEwixmqj32vToAhWEfXAKHXLnB_sQ6AEwA3oECAsQKA#v=snippet&q=%EC%84%9C%EB%B8%94%EB%A6%BF%20%EA%B0%9C%EC%9A%94&f=false)?** 
 >서블릿은 Core J2EE Patterns에서 정의한 Front Controller패턴을 따른다. 웹 애플리케이션은 요청처리(Request Handling)을 위한 중앙 집중식 접속점이 필요하다. 그렇지 않으면 요청을 처리하는 제어코드가 여러 뷰에서 중복되어 나타나기 때문에 관리하기 어렵고 변경사항이 일어날때 여러 장소에서 코드의 변경이 일어나야 하는 문제점이 일어난다. 
-> Front Controller를 사용하면 요청처리를 위한 제어 로직을 한곳에서 관리하기 할 수 있어 이 문제를 해결할 수
-
+> Front Controller 패턴을 사용했을때 이점은 아래와 같다. 
 >클라이언트의 요청이 들어오면 그 요청에 맞는 응답을 주는 서버측 컴포넌트다. 프론트 컨트롤러 패턴의 프론트 컨트롤러에 해당하고 요청-응답 과정에서 제어 흐름의 사령탑이다. 
 
 >**50TPS를 처리할 수 있는데 300TPS가 들어오면?**
@@ -309,7 +308,7 @@ Once you have all your code and changes going to the same place, you can run som
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTUzOTgzMjgsLTE0MTk2MjM1MDIsLT
+eyJoaXN0b3J5IjpbLTEwODgzNzA1MjAsLTE0MTk2MjM1MDIsLT
 E2NTMwMzAwMTEsLTgzNzYyMzU5MiwtODcwNDA5ODIsLTE0NDg5
 NjExOTgsODc2ODU4NzA5LDc0MDY1MTkyNSw0OTYzMTkwNTEsLT
 Y3NTc4NDM0NywyMDA3OTcwMzYxLC0xMDQ0MjY5NzI4LC0xMzg1
