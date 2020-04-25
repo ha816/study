@@ -63,7 +63,7 @@
 
 >**GC(가비지 컬렉션)은? GC 알고리즘에 대해서**
 > GC 가비지 컬렉션의 약자로 할당된 메모리 중 실제로는 사용하지 않는 메모리를 재사용하는 메커니즘이다. 자바는 가비지 컬렉션을 사용하기 때문에 개발자가 직접 명시적으로 메모리를 해제할 필요가 없다. 
-> GC 알고리즘은 고전적인 방식의  
+> GC 알고리즘은 고전적인 방식의 MSC(Mark-Sweep-Compact)에서부터 다중 쓰레드를 활용한 CMS(Continuous Mark & Continuous Sweep), 자바 
 
 
 
@@ -308,11 +308,11 @@ Once you have all your code and changes going to the same place, you can run som
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNDc0ODQ5NCwtMTQxOTYyMzUwMiwtMT
-Y1MzAzMDAxMSwtODM3NjIzNTkyLC04NzA0MDk4MiwtMTQ0ODk2
-MTE5OCw4NzY4NTg3MDksNzQwNjUxOTI1LDQ5NjMxOTA1MSwtNj
-c1Nzg0MzQ3LDIwMDc5NzAzNjEsLTEwNDQyNjk3MjgsLTEzODU2
-MDk2MDAsLTEyODkwNTkzNCwtODgwODAyOTM4LC0zNDc3MTAwNT
-UsMTE1OTQ2MzA2OCw0MTQ0NTcyMSwzODIxNDA4OTcsLTE3MTI1
-NTc3MDZdfQ==
+eyJoaXN0b3J5IjpbLTExODU1MzI2MjUsLTE0MTk2MjM1MDIsLT
+E2NTMwMzAwMTEsLTgzNzYyMzU5MiwtODcwNDA5ODIsLTE0NDg5
+NjExOTgsODc2ODU4NzA5LDc0MDY1MTkyNSw0OTYzMTkwNTEsLT
+Y3NTc4NDM0NywyMDA3OTcwMzYxLC0xMDQ0MjY5NzI4LC0xMzg1
+NjA5NjAwLC0xMjg5MDU5MzQsLTg4MDgwMjkzOCwtMzQ3NzEwMD
+U1LDExNTk0NjMwNjgsNDE0NDU3MjEsMzgyMTQwODk3LC0xNzEy
+NTU3NzA2XX0=
 -->
