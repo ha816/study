@@ -240,8 +240,13 @@ URI 검색 질의는 여러 필드를 각기 다른 검색어로 질의하는 �
 POST /{index 명}/_search {
 	JSON 쿼리 구문
 }
-
 ```
+
+## 집계 API
+
+과거에는 통계작업을 위해 루씬이 제공하는 패싯(Facets) 기능을 많이 활용했다. 하지만 패싯은 디스크 기반으로 동작했고 분산환경에는 최적화가 되지 않았기 때문에 대용량 데이터의 통계 작업에는 적합하지 않았따. 
+
+ㅇ
 
 
 
@@ -249,10 +254,11 @@ POST /{index 명}/_search {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OT
-Y3NTY1MCwtMTU1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMy
-ODQsLTMwNjk1ODczMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC
-00NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2
-NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0My
-wtMTQ2MzUxNzk1LDEzODM5MzU1MjMsODkzNzkyODJdfQ==
+eyJoaXN0b3J5IjpbMTcwNDM1MjU1LDIwNDE3MDE3OTcsNzQwOD
+I2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5
+MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4MTgwNDIzMywtMj
+AwNDA0ODM0NSwtNDYzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1
+MTU0LDEyNjExNjUxMjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC
+00MTYyNTExNDMsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5
+MjgyXX0=
 -->
