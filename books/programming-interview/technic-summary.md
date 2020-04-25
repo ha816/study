@@ -62,7 +62,8 @@
 > 고유 메모리 영역에는 PC, Java native method, Stack으로 구성된다. 
 
 >**GC(가비지 컬렉션)은? GC 알고리즘에 대해서**
-> GC 가비지 컬렉션의 약자로 할당된 메모리 중 실제로는 사용하지 않는 메모리를 재사용한 메커니즘이다. 가비지 컬렉션을 쓰면 개발자가 직접 메모리를 해제할 필요가 없다. 
+> GC 가비지 컬렉션의 약자로 할당된 메모리 중 실제로는 사용하지 않는 메모리를 재사용하는 메커니즘이다. 자바는 가비지 컬렉션을 사용하기 때문에 개발자가 직접 명시적으로 메모리를 해제할 필요가 없다. 
+> GC 알고리즘은 고전적인 방식의 
 
 
 
@@ -307,11 +308,11 @@ Once you have all your code and changes going to the same place, you can run som
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMTY0MDY2OCwtMTY1MzAzMDAxMSwtOD
-M3NjIzNTkyLC04NzA0MDk4MiwtMTQ0ODk2MTE5OCw4NzY4NTg3
-MDksNzQwNjUxOTI1LDQ5NjMxOTA1MSwtNjc1Nzg0MzQ3LDIwMD
-c5NzAzNjEsLTEwNDQyNjk3MjgsLTEzODU2MDk2MDAsLTEyODkw
-NTkzNCwtODgwODAyOTM4LC0zNDc3MTAwNTUsMTE1OTQ2MzA2OC
-w0MTQ0NTcyMSwzODIxNDA4OTcsLTE3MTI1NTc3MDYsMTk4NTM1
-NjAzNF19
+eyJoaXN0b3J5IjpbLTE0MTk2MjM1MDIsLTE2NTMwMzAwMTEsLT
+gzNzYyMzU5MiwtODcwNDA5ODIsLTE0NDg5NjExOTgsODc2ODU4
+NzA5LDc0MDY1MTkyNSw0OTYzMTkwNTEsLTY3NTc4NDM0NywyMD
+A3OTcwMzYxLC0xMDQ0MjY5NzI4LC0xMzg1NjA5NjAwLC0xMjg5
+MDU5MzQsLTg4MDgwMjkzOCwtMzQ3NzEwMDU1LDExNTk0NjMwNj
+gsNDE0NDU3MjEsMzgyMTQwODk3LC0xNzEyNTU3NzA2LDE5ODUz
+NTYwMzRdfQ==
 -->
