@@ -94,8 +94,8 @@
 >**LinkedHashMap, TreeMap?** 
 >LinkedHashMap은 입력 받은 Key-Value 쌍의 입력 순서를 기억한다. TreeMap은 Map 상단에 key-value 노드로 구성된 Tree를 만들어 키를 기준으로 정렬이 가능해진다.
 
->** SynchronizedMap, ConcurrentHashMap의 차이는?**
-> SynchronizedMap과 ConcurrentHashMap 모두 Thread-Safe를 보장한다. SynchronizedMap은 수정이 일어날때 모든 데이터에 락을 걸고, 다른 쓰레드들은 락이 풀렸을 경우에만 접근이 가능하다. ConcurrentHashMap은 데이터를 추가하거나 수정할때만 segment라는 일부의 맵만 락이 걸린다. 그래서 다른 쓰레드들은 그 일부의 맵을 제외하고는 읽기 및 수정이 가능하다. 추가적으로 ConcurrentHashMap은 key와 value로 null값을 지원하지 않는다. 반면에 SynchronizedMap은 null 키를 지원한다. 
+>**SynchronizedMap, ConcurrentHashMap의 차이는?**
+>SynchronizedMap과 ConcurrentHashMap 모두 Thread-Safe를 보장한다. SynchronizedMap은 수정이 일어날때 모든 데이터에 락을 걸고, 다른 쓰레드들은 락이 풀렸을 경우에만 접근이 가능하다. ConcurrentHashMap은 데이터를 추가하거나 수정할때만 segment라는 일부의 맵만 락이 걸린다. 그래서 다른 쓰레드들은 그 일부의 맵을 제외하고는 읽기 및 수정이 가능하다. 추가적으로 ConcurrentHashMap은 key와 value로 null값을 지원하지 않는다. 반면에 SynchronizedMap은 null 키를 지원한다. 
 
 >**Tree?**
 > Node와 Edge로 이루어진 자료 구조이며 사이클이 존재하지 않는다. 대표적인 Tree로는 Binary Tree가 있다. 
@@ -258,6 +258,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >WebContainer는 사용하려는 웹 애플리케이션에서 필요로 하는 Servelet을 생성하고 관리한다. 그 밖에도 WebServer와 통신을 위한 API를 제공하며 요청마다 쓰레드를 생성하여, 하나의 서블릿이 멀티 쓰레드를 처리하도록 한다. 
 
 >**[Servelet](https://books.google.co.kr/books?id=RzLVBQAAQBAJ&pg=PA249&lpg=PA249&dq=%EB%A3%A8%ED%8A%B8%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98&source=bl&ots=EN4jFpVZ7R&sig=ACfU3U1gMt7Y9qm2RimM9QdP1IP_W8WVSA&hl=en&sa=X&ved=2ahUKEwixmqj32vToAhWEfXAKHXLnB_sQ6AEwA3oECAsQKA#v=snippet&q=%EC%84%9C%EB%B8%94%EB%A6%BF%20%EA%B0%9C%EC%9A%94&f=false)?** 
+>서블릿은 
 >클라이언트의 요청이 들어오면 그 요청에 맞는 응답을 주는 서버측 컴포넌트다. 프론트 컨트롤러 패턴의 프론트 컨트롤러에 해당하고 요청-응답 과정에서 제어 흐름의 사령탑이다. 
 
 >**50TPS를 처리할 수 있는데 300TPS가 들어오면?**
@@ -306,11 +307,11 @@ Once you have all your code and changes going to the same place, you can run som
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTg5MzkxNDksLTE0MTk2MjM1MDIsLT
-E2NTMwMzAwMTEsLTgzNzYyMzU5MiwtODcwNDA5ODIsLTE0NDg5
-NjExOTgsODc2ODU4NzA5LDc0MDY1MTkyNSw0OTYzMTkwNTEsLT
-Y3NTc4NDM0NywyMDA3OTcwMzYxLC0xMDQ0MjY5NzI4LC0xMzg1
-NjA5NjAwLC0xMjg5MDU5MzQsLTg4MDgwMjkzOCwtMzQ3NzEwMD
-U1LDExNTk0NjMwNjgsNDE0NDU3MjEsMzgyMTQwODk3LC0xNzEy
-NTU3NzA2XX0=
+eyJoaXN0b3J5IjpbLTM1ODk0NDU2NiwtMTQxOTYyMzUwMiwtMT
+Y1MzAzMDAxMSwtODM3NjIzNTkyLC04NzA0MDk4MiwtMTQ0ODk2
+MTE5OCw4NzY4NTg3MDksNzQwNjUxOTI1LDQ5NjMxOTA1MSwtNj
+c1Nzg0MzQ3LDIwMDc5NzAzNjEsLTEwNDQyNjk3MjgsLTEzODU2
+MDk2MDAsLTEyODkwNTkzNCwtODgwODAyOTM4LC0zNDc3MTAwNT
+UsMTE1OTQ2MzA2OCw0MTQ0NTcyMSwzODIxNDA4OTcsLTE3MTI1
+NTc3MDZdfQ==
 -->
