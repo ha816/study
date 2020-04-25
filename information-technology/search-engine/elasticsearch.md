@@ -155,15 +155,23 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 하지만 스키마리스는 가급적 사용하지 않도록 하자. 왜냐하면 스키마리스 사용은 성능과 밀접한 연관이 있기 때문에 특수한 상황에서만 사용해야 한다. 
 
+## 인덱스 관리 API
+
+인덱스 관리 API는 말 그대로 인덱스 관리를 위해 사용되는 API이다. 대표적으로는 인덱스 추가 및 삭제가 가능하다. 
+
+### 인덱스 생성
+
+인덱스 생성시에
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMzk3MTU0MywtMjgxODA0MjMzLC0yMD
-A0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUx
-NTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLT
-QxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1MjMsODkzNzky
-ODJdfQ==
+eyJoaXN0b3J5IjpbLTE5NTc3Njg2NDcsLTI4MTgwNDIzMywtMj
+AwNDA0ODM0NSwtNDYzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1
+MTU0LDEyNjExNjUxMjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC
+00MTYyNTExNDMsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5
+MjgyXX0=
 -->
