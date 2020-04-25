@@ -234,7 +234,7 @@ GET /movie/_doc/123?pretty=true
 
 ### Request Body 방식의 검색 질의
 
-URI 검색 질의는 여러 필드를 각기 다른 검색어로 질의하는 것이 어렵다. 
+URI 검색 질의는 여러 필드를 각기 다른 검색어로 질의하는 것이 어렵다. 쿼리의 조건이 복잡하고 길어지기 때문이다. 이럴 때는 JSON 방식으로 질의하는게 좋다. JSON  포맷을 이용해 RESTful방식으로 질의하면 매우 복잡한 질의도 쉽게 표현할 수 있고 여러 조건을 한번에 처리할 수 있다. 사요
 
 
 
@@ -242,10 +242,10 @@ URI 검색 질의는 여러 필드를 각기 다른 검색어로 질의하는 �
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzIyODExMzcsNzQwODI2Mzg3LDEyNz
-k2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5MywxMTYyNjkz
-Mjg0LC0zMDY5NTg3MzMsLTI4MTgwNDIzMywtMjAwNDA0ODM0NS
-wtNDYzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNjEx
-NjUxMjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC00MTYyNTExND
-MsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
+eyJoaXN0b3J5IjpbODYxMTU1OTEwLDc0MDgyNjM4NywxMjc5Nj
+c1NjUwLC0xNTU4OTgxMjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4
+NCwtMzA2OTU4NzMzLC0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLT
+Q2MzgwNTcxLC05NjM1MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1
+MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC
+0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
 -->
