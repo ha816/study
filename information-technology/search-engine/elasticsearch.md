@@ -174,7 +174,8 @@ PUT /movie {
 				"movieCd": {"type":"integer"},
 				"movieNm": {"type":"text"},
 				"openDt": {"type":"date"},
-				"typeNm": {"type":"date"},
+				"typeNm": {"type":"keyword"},
+				...
 			}
 		}
 	}
@@ -187,7 +188,9 @@ PUT /movie {
 
 ### 인덱스 삭제
 
+인덱스 삭제의 경우도 주의할 점이 있다. 바로 인덱스를 삭제하면 다시는 복구할 수 없기 때문이다. 인덱스 삭제는 신중하게 하자.
 
+##  문서 관리 API
 
 
 
@@ -195,7 +198,7 @@ PUT /movie {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MzQxNzMxOCwtMzA2OTU4NzMzLC0yOD
+eyJoaXN0b3J5IjpbMTE2MjY5MzI4NCwtMzA2OTU4NzMzLC0yOD
 E4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcxLC05NjM1MzQz
 MTIsMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1NjEsLT
 YwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMTM4Mzkz
