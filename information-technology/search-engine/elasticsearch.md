@@ -251,7 +251,9 @@ POST /{index 명}/_search {
 
 # 데이터 모델링
 
-엘라스틱 서치에서 색인할 문ㅅ
+엘라스틱 서치에서 색인할 문서의 데이터 유형에 따라 필드에 적절한 데이터 타입을 지정해야 한다. 이 과정을 매핑이라 하며, 매핑은 색인될 문서의 데이터 모델링이라 할 수 있다. 
+
+## 매핑 API 이해하기 
 
 
 
@@ -259,7 +261,7 @@ POST /{index 명}/_search {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDkzMTc0NzUsMjA0MTcwMTc5Nyw3ND
+eyJoaXN0b3J5IjpbLTE2Njc4NjA2NjQsMjA0MTcwMTc5Nyw3ND
 A4MjYzODcsMTI3OTY3NTY1MCwtMTU1ODk4MTI2MywtNDA0OTI3
 MDkzLDExNjI2OTMyODQsLTMwNjk1ODczMywtMjgxODA0MjMzLC
 0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkz
