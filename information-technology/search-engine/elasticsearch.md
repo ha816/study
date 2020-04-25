@@ -213,6 +213,14 @@ PUT /movie {
 * So on...
 
 
+## 검색 API
+
+엘라스틱 검색 API의 사용방식은 크게 두 가지 방식이 있다. 
+
+1. HTTP URI 형태의 파라미터를 URI에 추가해 검색하는 방법
+2. RESTful API방식인 QueryDSL을 사용해 요청 본문(Request Body)에 질의 내용을 추가해 검색하는 법
+
+Request Body 방식(2)은 URI 방식(1)보다 ㅈ
 
 
 
@@ -221,10 +229,10 @@ PUT /movie {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjgzMDk1NTgsMTI3OTY3NTY1MCwtMT
-U1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1
-ODczMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MS
-wtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNiwxOTIz
-NzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUxNz
-k1LDEzODM5MzU1MjMsODkzNzkyODJdfQ==
+eyJoaXN0b3J5IjpbLTk1MDE2NDM1MiwxMjc5Njc1NjUwLC0xNT
+U4OTgxMjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4NCwtMzA2OTU4
+NzMzLC0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcxLC
+05NjM1MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5MjM3
+NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OT
+UsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
 -->
