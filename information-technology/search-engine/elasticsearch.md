@@ -119,17 +119,9 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 ## 노드(Node)
 
-노드는 클러스터에 포함된 단일 서버로서 데이터를 저장하고 클러스터의 색인화 및 검색 기능에 참여한다. 노드는 클러스터처럼 이름으로 식별되는데, 기본 이름은 시작 시 노드에 지정되는 임의 UUID(Universally Unique IDentifier)ㅇㄷ 원한다면 기본 이름 대신 어떤 노드 이름도 정의할 수 있습니다. 이 이름은 관리의 목적에서 중요합니다. 네트워크의 어떤 서버가 Elasticsearch 클러스터의 어떤 노드에 해당하는지 식별해야 하기 때문입니다.
+노드는 클러스터에 포함된 단일 서버로서 데이터를 저장하고 클러스터의 색인화 및 검색 기능에 참여한다. 노드는 클러스터처럼 이름으로 식별되는데, 기본 이름은 시작 시 노드에 지정되는 임의 UUID(Universally Unique IDentifier)이다. 원한다면 기본 이름 대신 어떤 노드 이름도 정의할 수 있다. 이 이름은 관리의 목적에서 중요한데 네트워크의 어떤 서버가 Elasticsearch 클러스터의 어떤 노드에 해당하는지 식별해야 하기 때문이다.
 
-노드는 클러스터 이름을 통해 어떤 클러스터의 일부로 구성될 수 있습니다. 기본적으로 각 노드는 `elasticsearch`라는 이름의 클러스터에 포함되도록 설정됩니다. 즉 네트워크에서 다수의 노드를 시작할 경우 (각각을 검색할 수 있다고 가정하면) 이 노드가 모두 자동으로 `elasticsearch`라는 단일 클러스터를 형성하고 이 클러스터의 일부가 됩니다.
-
-하나의 클러스터에서 원하는 개수의 노드를 포함할 수 있습니다. 뿐만 아니라 현재 다른 어떤 Elasticsearch 노드도 네트워크에서 실행되고 있지 않은 상태에서 단일 노드를 시작하면 기본적으로 `elasticsearch`라는 이름의 새로운 단일 노드 클러스터가 생깁니다.
-
-
-
-한 클러스터는 노드 집합이라 할 수 있다. 클러스터는 모든 노드의 검색과 색인 작업을 관장하는 논리적인 개념이다. RDBMS에서는 모든 요청을 서버 하나에서 처리해서 결과를 제공하지만 엘라스틱 서치의 경우 다수의 서버로 분산해서 처리하는 것이 가능하기 때문에 대량의 데이터를 처리할 수 있다. 
-
-분산 처리를 위해선 다양한 형태의 노드를 조합해서 클러스터를 구성해야 한다. 기본적으로 마스터 노드가 전체적인 클러스터를 관리하고 데이터 노드가 실제 데이터를 관리한다. 설정에 따라 4가지 유형의 노드가 존재한다. 
+노드 별로 분산 처리를 위해선 다양한 형태의 노드를 조합해서 클러스터를 구성해야 한다. 기본적으로 마스터 노드가 전체적인 클러스터를 관리하고 데이터 노드가 실제 데이터를 관리한다. 설정에 따라 4가지 유형의 노드가 존재한다. 
 
 ### 마스터 노드(Master Node)
 
@@ -154,8 +146,8 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODgzNDIzNDQsLTIwMDQwNDgzNDUsLT
-Q2MzgwNTcxLC05NjM1MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1
-MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC
-0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
+eyJoaXN0b3J5IjpbLTI3MTI3NjMzNywtMjAwNDA0ODM0NSwtND
+YzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNjExNjUx
+MjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC00MTYyNTExNDMsLT
+E0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
 -->
