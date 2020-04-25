@@ -258,12 +258,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >WebContainer는 사용하려는 웹 애플리케이션에서 필요로 하는 Servelet을 생성하고 관리한다. 그 밖에도 WebServer와 통신을 위한 API를 제공하며 요청마다 쓰레드를 생성하여, 하나의 서블릿이 멀티 쓰레드를 처리하도록 한다. 
 
 >**[Servelet](https://books.google.co.kr/books?id=RzLVBQAAQBAJ&pg=PA249&lpg=PA249&dq=%EB%A3%A8%ED%8A%B8%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98&source=bl&ots=EN4jFpVZ7R&sig=ACfU3U1gMt7Y9qm2RimM9QdP1IP_W8WVSA&hl=en&sa=X&ved=2ahUKEwixmqj32vToAhWEfXAKHXLnB_sQ6AEwA3oECAsQKA#v=snippet&q=%EC%84%9C%EB%B8%94%EB%A6%BF%20%EA%B0%9C%EC%9A%94&f=false)?** 
->서블릿은 Core J2EE Patterns에서 정의한 Front Controller패턴을 따른다. 웹 애플리케이션은 요청처리(Request Handling)을 위한 중앙 집중식 접속점이 필요하다. 그렇지 않으면 요청을 처리하는 제어코드가 여러 곳에서 중복되어 나타나기 때문에 관리하기 어렵고 변경사항이 일어날때 여러 장소에서 코드의 변경이 일어나야 하는 문제점이 일어난다. 따라서 우리는 FrontController의 중앙 집중식 접속점으 로 Controller를 사용한다. FrontContoller 패턴으로 여러 요청에 공통 로직을 적용할 수 있고 중복적인 제어 로직을 피할 수 있다. 또한 뷰에 있는 시스템 처리 로직을 
-
-> 여러 요청에 공통 로직을 적용할 수 있다.
-> 뷰에서 시스템 처리 로직을 분리할 수 있다.
-
-
+>서블릿은 Core J2EE Patterns에서 정의한 Front Controller패턴을 따른다. 웹 애플리케이션은 일반적으로 요청처리(Request Handling)을 위한 중앙 집중식 접속점이 필요하다. 그렇지 않으면 요청을 처리하는 제어코드가 여러 곳에서 중복되어 나타나기 때문에 관리하기 어렵고 변경사항이 일어날때 여러 장소에서 코드의 변경이 일어나야 하는 문제점이 있다. 그래서 우리는 FrontController의 중앙 집중식 접속점으 로 Controller를 사용한다. FrontContoller 패턴으로 여러 요청에 공통 로직을 적용할 수 있고 중복적인 제어 로직을 피할 수 있다. 또한 뷰에 있는 시스템 처리 로직을 분리할 수 있다. 
 >클라이언트의 요청이 들어오면 그 요청에 맞는 응답을 주는 서버측 컴포넌트다. 프론트 컨트롤러 패턴의 프론트 컨트롤러에 해당하고 요청-응답 과정에서 제어 흐름의 사령탑이다. 
 
 >**50TPS를 처리할 수 있는데 300TPS가 들어오면?**
@@ -312,11 +307,11 @@ Once you have all your code and changes going to the same place, you can run som
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDgzNTM2NDAsLTM2ODY4MDU5NywtMT
-A4ODM3MDUyMCwtMTQxOTYyMzUwMiwtMTY1MzAzMDAxMSwtODM3
-NjIzNTkyLC04NzA0MDk4MiwtMTQ0ODk2MTE5OCw4NzY4NTg3MD
-ksNzQwNjUxOTI1LDQ5NjMxOTA1MSwtNjc1Nzg0MzQ3LDIwMDc5
-NzAzNjEsLTEwNDQyNjk3MjgsLTEzODU2MDk2MDAsLTEyODkwNT
-kzNCwtODgwODAyOTM4LC0zNDc3MTAwNTUsMTE1OTQ2MzA2OCw0
-MTQ0NTcyMV19
+eyJoaXN0b3J5IjpbMTI5NDU4MzcxOCwtMzY4NjgwNTk3LC0xMD
+g4MzcwNTIwLC0xNDE5NjIzNTAyLC0xNjUzMDMwMDExLC04Mzc2
+MjM1OTIsLTg3MDQwOTgyLC0xNDQ4OTYxMTk4LDg3Njg1ODcwOS
+w3NDA2NTE5MjUsNDk2MzE5MDUxLC02NzU3ODQzNDcsMjAwNzk3
+MDM2MSwtMTA0NDI2OTcyOCwtMTM4NTYwOTYwMCwtMTI4OTA1OT
+M0LC04ODA4MDI5MzgsLTM0NzcxMDA1NSwxMTU5NDYzMDY4LDQx
+NDQ1NzIxXX0=
 -->
