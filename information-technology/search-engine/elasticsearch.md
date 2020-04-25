@@ -145,7 +145,12 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
  엘라스틱 서치는 RESTful 방식의 API를 제공하며, JSON 기반으로 통신한다. 기본적으로 HTTP 통신을 위해 9200번 포트를 사용한다. 
 
-문서를 색인하기 위해서는 
+문서를 색인하기 위해서는 기본적으로 인덱스가 존재 해야 한다. 인덱스를 통해 입력되는 문서의 필드를 정의하고 각 필드에 알맞은 데이터 타입을 지정할 수 있다. 
+
+>index vs indices
+>index: 색인 데이터
+>indexing: 색인하는 과정
+>indices: 매핑 정보를 저장하는 논리적인 데이터 공간
 
 
 
@@ -153,7 +158,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwODk3MDI1MiwtMjAwNDA0ODM0NSwtND
+eyJoaXN0b3J5IjpbLTI4MTgwNDIzMywtMjAwNDA0ODM0NSwtND
 YzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNjExNjUx
 MjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC00MTYyNTExNDMsLT
 E0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
