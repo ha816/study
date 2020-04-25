@@ -204,7 +204,8 @@ PUT /movie {
 * Update 
 	* 한 건의 문서를 업데이트한다.
 
-문서 관리 API는 기본적으로 한 건의 문서를 처리하기 위한 기능을 제공하며 Single document API라고도 부른다. 
+문서 관리 API는 기본적으로 한 건의 문서를 처리하기 위한 기능을 제공하며 Single document API라고도 부른다. 하지만 클러스터를 운영하다보면 다수의 문서를 처리해야 하는 경우도 종종 발생할 것이다. 이런 경우 Multi-document API도 제공한다. 
+
 
 
 
@@ -212,10 +213,10 @@ PUT /movie {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTY3NTY1MCwtMTU1ODk4MTI2MywtND
-A0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1ODczMywtMjgxODA0
-MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0MzEyLD
-EwNTkzMzUxNTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0
-MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1Mj
-MsODkzNzkyODJdfQ==
+eyJoaXN0b3J5IjpbLTEyMzAxMDIyOTUsMTI3OTY3NTY1MCwtMT
+U1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1
+ODczMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MS
+wtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNiwxOTIz
+NzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUxNz
+k1LDEzODM5MzU1MjMsODkzNzkyODJdfQ==
 -->
