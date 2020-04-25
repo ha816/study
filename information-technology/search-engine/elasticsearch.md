@@ -135,8 +135,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 ## 클러스터
 
- 클러스터는 여러 노드의 집합으로 구성되며, 같은 이름의 Shard는 
--   primary와 replica는 같은 노드에 존재할 수 없음
+ 클러스터는 여러 노드의 집합으로 구성되며, 같은 이름의 Shard는 primary와 replica가 같은 노드에 존재할 수 없다. 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 각각을 구분한다. 
 
 ![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/99AB08425C9F17D928)
 
@@ -146,7 +145,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTQ0MzE2NjYsLTQ2MzgwNTcxLC05Nj
+eyJoaXN0b3J5IjpbLTIwMDQwNDgzNDUsLTQ2MzgwNTcxLC05Nj
 M1MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1
 NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMT
 M4MzkzNTUyMyw4OTM3OTI4Ml19
