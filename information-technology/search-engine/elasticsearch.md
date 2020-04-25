@@ -229,9 +229,12 @@ Request Body 방식(2)은 URI 방식(1)보다 제약 사항이 적기 때문에 
 먼저 살펴볼 URI 방식의 검색 질의는 문서 ID인 _id값을 사용해 문서를 조회하는 방식이다. 결국 URL에 파라미터를 붙여 조회하는 식이다. 예컨데 123이라는 키를 가진 문서를 질의하려면 GET 메서드를 사용해 다음과 같이 검색할 수 있다. 
 
 ```
-
+GET /movie/_doc/123?pretty=true
 ```
 
+### Request Body 방식의 검색 질의
+
+URI 검색 질의는 여러 필드를 각기 다른 검색어로 질의하는 것이 어렵다. 
 
 
 
@@ -239,10 +242,10 @@ Request Body 방식(2)은 URI 방식(1)보다 제약 사항이 적기 때문에 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUwMDgwNzQ3LDc0MDgyNjM4NywxMjc5Nj
-c1NjUwLC0xNTU4OTgxMjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4
-NCwtMzA2OTU4NzMzLC0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLT
-Q2MzgwNTcxLC05NjM1MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1
-MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC
-0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
+eyJoaXN0b3J5IjpbLTE5MzIyODExMzcsNzQwODI2Mzg3LDEyNz
+k2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5MywxMTYyNjkz
+Mjg0LC0zMDY5NTg3MzMsLTI4MTgwNDIzMywtMjAwNDA0ODM0NS
+wtNDYzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNjEx
+NjUxMjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC00MTYyNTExND
+MsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
 -->
