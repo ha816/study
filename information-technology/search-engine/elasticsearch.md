@@ -164,7 +164,17 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 ```
 --생성하려는 movie 인덱스
 PUT /movie {
-	"settings"
+	"settings": {
+		"number_of_shards": 3,
+		"number_of_replicas": 2,
+	},
+	"mappings": {
+		"_doc": {
+			"properties" : {
+				"mo"	
+			}
+		}
+	}
 }
 ```
 
@@ -182,9 +192,9 @@ PUT /movie {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjI5NDUyNTgsLTMwNjk1ODczMywtMj
-gxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0
-MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC
-02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5
-MzU1MjMsODkzNzkyODJdfQ==
+eyJoaXN0b3J5IjpbNjk2NDM5MjE4LC0zMDY5NTg3MzMsLTI4MT
+gwNDIzMywtMjAwNDA0ODM0NSwtNDYzODA1NzEsLTk2MzUzNDMx
+MiwxMDU5MzM1MTU0LDEyNjExNjUxMjYsMTkyMzc0ODU2MSwtNj
+A0NDM1OTYxLC00MTYyNTExNDMsLTE0NjM1MTc5NSwxMzgzOTM1
+NTIzLDg5Mzc5MjgyXX0=
 -->
