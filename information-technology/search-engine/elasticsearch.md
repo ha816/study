@@ -244,9 +244,14 @@ POST /{index 명}/_search {
 
 ## 집계 API
 
-과거에는 통계작업을 위해 루씬이 제공하는 패싯(Facets) 기능을 많이 활용했다. 하지만 패싯은 디스크 기반으로 동작했고 분산환경에는 최적화가 되지 않았기 때문에 대용량 데이터의 통계 작업에는 적합하지 않았따. 
+과거에는 통계작업을 위해 루씬이 제공하는 패싯(Facets) 기능을 많이 활용했다. 하지만 패싯은 디스크 기반으로 동작했고 분산환경에는 최적화가 되지 않았기 때문에 대용량 데이터의 통계 작업에는 적합하지 않았다.
 
-ㅇ
+엘라스틱 서치에서는 5.0이후에 패싯 방식의 통계방식을 과감히 버리고 독자적인 집계 API를 내놓았다. 집계 API는 기본적으로 메모리를 기반으로 동작하기 때문에 대용량의 데이터 통계작업이 가능해졌다. 
+
+
+# 데이터 모델링
+
+엘라스틱 서치에서 색인할 문ㅅ
 
 
 
@@ -254,11 +259,11 @@ POST /{index 명}/_search {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNDM1MjU1LDIwNDE3MDE3OTcsNzQwOD
-I2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5
-MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4MTgwNDIzMywtMj
-AwNDA0ODM0NSwtNDYzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1
-MTU0LDEyNjExNjUxMjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC
-00MTYyNTExNDMsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5
-MjgyXX0=
+eyJoaXN0b3J5IjpbLTEzNDkzMTc0NzUsMjA0MTcwMTc5Nyw3ND
+A4MjYzODcsMTI3OTY3NTY1MCwtMTU1ODk4MTI2MywtNDA0OTI3
+MDkzLDExNjI2OTMyODQsLTMwNjk1ODczMywtMjgxODA0MjMzLC
+0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkz
+MzUxNTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5Nj
+EsLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1MjMsODkz
+NzkyODJdfQ==
 -->
