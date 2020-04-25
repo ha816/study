@@ -262,7 +262,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >클라이언트의 요청이 들어오면 그 요청에 맞는 응답을 주는 서버측 컴포넌트다. 프론트 컨트롤러 패턴의 프론트 컨트롤러에 해당하고 요청-응답 과정에서 제어 흐름의 사령탑이다. 
 
 >**서블릿 배포 설정?**
->서블릿ㅇ
+>서블릿을 
 
 >**50TPS를 처리할 수 있는데 300TPS가 들어오면?**
 > 일부 요청을 거부를 하고 어느 정도 넘기는 분량은 메모리에 담아 지연 처리한다. 
@@ -310,7 +310,7 @@ Once you have all your code and changes going to the same place, you can run som
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU4NjcxNDE1LC0zNjg2ODA1OTcsLTEwOD
+eyJoaXN0b3J5IjpbMzk3MDM5NjU4LC0zNjg2ODA1OTcsLTEwOD
 gzNzA1MjAsLTE0MTk2MjM1MDIsLTE2NTMwMzAwMTEsLTgzNzYy
 MzU5MiwtODcwNDA5ODIsLTE0NDg5NjExOTgsODc2ODU4NzA5LD
 c0MDY1MTkyNSw0OTYzMTkwNTEsLTY3NTc4NDM0NywyMDA3OTcw
