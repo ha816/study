@@ -220,7 +220,9 @@ PUT /movie {
 1. HTTP URI 형태의 파라미터를 URI에 추가해 검색하는 방법
 2. RESTful API방식인 QueryDSL을 사용해 요청 본문(Request Body)에 질의 내용을 추가해 검색하는 법
 
-Request Body 방식(2)은 URI 방식(1)보다 ㅈ
+Request Body 방식(2)은 URI 방식(1)보다 제약 사항이 적기 때문에 현업에서는 Request Body식을 선호한다. Uri 방식은 간단한 검색을 하거나 디버깅할 때 간편하게 사용하는 경우에 종종 사용된다. 
+
+간단한 표현식이라면 두 가지 형식을 섞어서 사용하는 것도 가능하다. 예를 들어, Query를 URI 방식으로 사용하고 나머지 기능을 JSON 형태로 사용해도 된다. 
 
 
 
@@ -229,10 +231,10 @@ Request Body 방식(2)은 URI 방식(1)보다 ㅈ
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MDE2NDM1MiwxMjc5Njc1NjUwLC0xNT
-U4OTgxMjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4NCwtMzA2OTU4
-NzMzLC0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcxLC
-05NjM1MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5MjM3
-NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OT
-UsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
+eyJoaXN0b3J5IjpbNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NT
+g5ODEyNjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NTg3
+MzMsLTI4MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYzODA1NzEsLT
+k2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNjExNjUxMjYsMTkyMzc0
+ODU2MSwtNjA0NDM1OTYxLC00MTYyNTExNDMsLTE0NjM1MTc5NS
+wxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
 -->
