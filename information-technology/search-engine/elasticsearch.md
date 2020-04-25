@@ -111,17 +111,18 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 ## 클러스터
 
- 클러스터는 여러 노드의 집합으로 구성되며, 같은 이름의 Shard는 primary와 replica가 같은 노드에 존재할 수 없다. 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 각각을 구분한다. 
+ 클러스터는 여러 노드(서버)의 집합으로 구성되며, 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 클러스터를 구분한다. 이 이름은 중요한데, 어떤 노드가 어느 클러스터에 포함되기 위해서는 이름에 의해 클러스터의 구성원이 되도록 설정되기 때문입니다.
 
 ![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/99AB08425C9F17D928)
 
 
-클러스터는 하나 이상의 노드(서버)가 모인 것이며, 이를 통해 전체 데이터를 저장하고 모든 노드를 포괄하는 통합 색인화 및 검색 기능을 제공합니다. 클러스터는 고유한 이름으로 식별되는데, 기본 이름은 "elasticsearch"입니다. 이 이름은 중요한데, 어떤 노드가 어느 클러스터에 포함되기 위해서는 이름에 의해 클러스터의 구성원이 되도록 설정되기 때문입니다.
+클러스터는 하나 이상의 노드(서버)가 모인 것이며, 이를 통해 전체 데이터를 저장하고 모든 노드를 포괄하는 통합 색인화 및 검색 기능을 제공합니다. 클러스터는 고유한 이름으로 식별되는데, 기본 이름은 "elasticsearch"입니다. 
 
 동일한 클러스터 이름을 서로 다른 환경에서 재사용하지 마십시오. 노드가 잘못된 클러스터에 포함될 위험이 있습니다. 예를 들어 개발, 스테이징, 프로덕션 클러스터에  `logging-dev`,  `logging-stage`, `logging-prod`라는 이름을 사용할 수 있습니다.
 
 클러스터에 하나의 노드만 있는 것은 유효하며 문제가 없습니다. 또한 각자 고유한 클러스터 이름을 가진 독립적인 클러스터를 여러 개 둘 수도 있습니다.
 
+한 shard의 primary, replica 는  같은 노드에 존재할 수 없다. 
 
 
 ## 노드(Node)
@@ -161,7 +162,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0ODYwMjcyLC0yMDA0MDQ4MzQ1LC00Nj
+eyJoaXN0b3J5IjpbOTYxODE4MzEyLC0yMDA0MDQ4MzQ1LC00Nj
 M4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEy
 NiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMT
 Q2MzUxNzk1LDEzODM5MzU1MjMsODkzNzkyODJdfQ==
