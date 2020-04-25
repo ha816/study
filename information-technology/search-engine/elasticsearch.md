@@ -151,7 +151,9 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 >index: 색인 데이터
 >indices: 매핑 정보를 저장하는 논리적인 데이터 공간
 
-사실 엘라스틱 서치는 사용 편의성을 위해서 스키마리스(Schemaless)라는 기능을 제공한다. 문서를 색인하기 위해서는 기본적으로 필요한 인덱스 생성 과정 없이 문서를 추가해도 ㅁ
+사실 엘라스틱 서치는 사용 편의성을 위해서 스키마리스(Schemaless)라는 기능을 제공한다. 문서를 색인하기 위해서는 기본적으로 필요한 인덱스 생성 과정 없이 문서를 추가해도 문서가 색인 되도록 지원하는 일종의 편의 기능이다. 
+
+하지만 스키마리스는 가급적 사용하지 않도록 하자. 왜냐하면 스키마리스 사용은 성능과 밀접한 연관이 있기 때문에 특수한 상황에서만 사용해야 한다. 
 
 
 
@@ -159,9 +161,9 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDE1Nzg5NjAsLTI4MTgwNDIzMywtMj
-AwNDA0ODM0NSwtNDYzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1
-MTU0LDEyNjExNjUxMjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC
-00MTYyNTExNDMsLTE0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5
-MjgyXX0=
+eyJoaXN0b3J5IjpbMjAwMzk3MTU0MywtMjgxODA0MjMzLC0yMD
+A0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUx
+NTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLT
+QxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1MjMsODkzNzky
+ODJdfQ==
 -->
