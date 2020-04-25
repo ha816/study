@@ -63,9 +63,7 @@
 
 >**GC(가비지 컬렉션)은? GC 알고리즘에 대해서**
 > GC 가비지 컬렉션의 약자로 할당된 메모리 중 실제로는 사용하지 않는 메모리를 재사용하는 메커니즘이다. 자바는 가비지 컬렉션을 사용하기 때문에 개발자가 직접 명시적으로 메모리를 해제할 필요가 없다. 
-> GC 알고리즘은 고전적인 방식의 MSC(Mark-Sweep-Compact)에서부터 다중 쓰레드를 활용한 CMS(Continuous Mark & Continuous Sweep), 자바 
-
-
+> GC 알고리즘에는 고전적인 방식의 MSC(Mark-Sweep-Compact)에서부터 다중 쓰레드를 활용한 CMS(Continuous Mark & Continuous Sweep), 자바 7에서 추가된 G1(Garbage First) 알고리즘등이 있다. 그 중 G1 알고리즘은 오라클에서 대외적으로 추천하는 GC이다. 
 
 ## Exception
 
@@ -308,7 +306,7 @@ Once you have all your code and changes going to the same place, you can run som
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODU1MzI2MjUsLTE0MTk2MjM1MDIsLT
+eyJoaXN0b3J5IjpbLTE3NTg5MzkxNDksLTE0MTk2MjM1MDIsLT
 E2NTMwMzAwMTEsLTgzNzYyMzU5MiwtODcwNDA5ODIsLTE0NDg5
 NjExOTgsODc2ODU4NzA5LDc0MDY1MTkyNSw0OTYzMTkwNTEsLT
 Y3NTc4NDM0NywyMDA3OTcwMzYxLC0xMDQ0MjY5NzI4LC0xMzg1
