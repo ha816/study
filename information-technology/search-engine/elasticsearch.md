@@ -147,10 +147,11 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 문서를 색인하기 위해서는 기본적으로 인덱스가 존재 해야 한다. 인덱스를 통해 입력되는 문서의 필드를 정의하고 각 필드에 알맞은 데이터 타입을 지정할 수 있다. 
 
->index vs indices
+>index vs indices 용어정리
 >index: 색인 데이터
 >indexing: 색인하는 과정
 >indices: 매핑 정보를 저장하는 논리적인 데이터 공간
+>색인을 의미하는 경우는 index를 사용하고 매핑 정의 공간을 의미하는 경우, indices이다.
 
 
 
@@ -158,8 +159,9 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MTgwNDIzMywtMjAwNDA0ODM0NSwtND
-YzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNjExNjUx
-MjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC00MTYyNTExNDMsLT
-E0NjM1MTc5NSwxMzgzOTM1NTIzLDg5Mzc5MjgyXX0=
+eyJoaXN0b3J5IjpbLTY0OTkzNzAzMywtMjgxODA0MjMzLC0yMD
+A0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUx
+NTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLT
+QxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1MjMsODkzNzky
+ODJdfQ==
 -->
