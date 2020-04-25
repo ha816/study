@@ -206,6 +206,17 @@ PUT /movie {
 
 문서 관리 API는 기본적으로 한 건의 문서를 처리하기 위한 기능을 제공하며 Single document API라고도 부른다. 하지만 클러스터를 운영하다보면 다수의 문서를 처리해야 하는 경우도 종종 발생할 것이다. 이런 경우 Multi-document API도 제공한다. 
 
+* Bulk API
+	* 한 건의 문서를 색인한다. 
+* Multi Get API
+	* 한 건의 문서를 조회한다.
+* Delete API
+	* 한 건의 문서를 삭제한다.
+* Update 
+	* 한 건의 문서를 업데이트한다.
+
+
+
 
 
 
@@ -213,10 +224,10 @@ PUT /movie {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzAxMDIyOTUsMTI3OTY3NTY1MCwtMT
-U1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1
-ODczMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MS
-wtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNiwxOTIz
-NzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUxNz
-k1LDEzODM5MzU1MjMsODkzNzkyODJdfQ==
+eyJoaXN0b3J5IjpbMTkyMzM3NDcwMSwxMjc5Njc1NjUwLC0xNT
+U4OTgxMjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4NCwtMzA2OTU4
+NzMzLC0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcxLC
+05NjM1MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5MjM3
+NDg1NjEsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OT
+UsMTM4MzkzNTUyMyw4OTM3OTI4Ml19
 -->
