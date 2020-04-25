@@ -262,7 +262,7 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 >클라이언트의 요청이 들어오면 그 요청에 맞는 응답을 주는 서버측 컴포넌트다. 프론트 컨트롤러 패턴의 프론트 컨트롤러에 해당하고 요청-응답 과정에서 제어 흐름의 사령탑이다. 
 
 >**서블릿 배포 설정?**
->서블릿을 웹 컨테이너에 배포하기 위해서는 배포 디스크립터(deployment descriptor)가 필요하다. 배포 디스크립터로는 web.xml 파일로 애플리케이션이 어떻게 배포되어야하는지 웹 컨테이너에 알려주는 역할을 한다. 배포 스크립터에는 애플리
+>서블릿을 웹 컨테이너에 배포하기 위해서는 배포 디스크립터(deployment descriptor)가 필요하다. 배포 디스크립터로는 web.xml 파일로 애플리케이션이 어떻게 배포되어야하는지 웹 컨테이너에 알려주는 역할을 한다. 배포 스크립터에는 애플리케이션과 함께 배포되어야할 모든 리스터, 서블릿, 필터와 애플리케이션이 사용하는 설정이 정의된다. 
 
 >**50TPS를 처리할 수 있는데 300TPS가 들어오면?**
 > 일부 요청을 거부를 하고 어느 정도 넘기는 분량은 메모리에 담아 지연 처리한다. 
@@ -310,11 +310,11 @@ Once you have all your code and changes going to the same place, you can run som
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MTY5NzM5MSwzOTcwMzk2NTgsLTM2OD
-Y4MDU5NywtMTA4ODM3MDUyMCwtMTQxOTYyMzUwMiwtMTY1MzAz
-MDAxMSwtODM3NjIzNTkyLC04NzA0MDk4MiwtMTQ0ODk2MTE5OC
-w4NzY4NTg3MDksNzQwNjUxOTI1LDQ5NjMxOTA1MSwtNjc1Nzg0
-MzQ3LDIwMDc5NzAzNjEsLTEwNDQyNjk3MjgsLTEzODU2MDk2MD
-AsLTEyODkwNTkzNCwtODgwODAyOTM4LC0zNDc3MTAwNTUsMTE1
-OTQ2MzA2OF19
+eyJoaXN0b3J5IjpbODI2NTM2OTM3LDM5NzAzOTY1OCwtMzY4Nj
+gwNTk3LC0xMDg4MzcwNTIwLC0xNDE5NjIzNTAyLC0xNjUzMDMw
+MDExLC04Mzc2MjM1OTIsLTg3MDQwOTgyLC0xNDQ4OTYxMTk4LD
+g3Njg1ODcwOSw3NDA2NTE5MjUsNDk2MzE5MDUxLC02NzU3ODQz
+NDcsMjAwNzk3MDM2MSwtMTA0NDI2OTcyOCwtMTM4NTYwOTYwMC
+wtMTI4OTA1OTM0LC04ODA4MDI5MzgsLTM0NzcxMDA1NSwxMTU5
+NDYzMDY4XX0=
 -->
