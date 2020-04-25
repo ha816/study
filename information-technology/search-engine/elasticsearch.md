@@ -162,7 +162,10 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 ### 인덱스 생성
 
 ```
-PUT /movie --생성하려는 movie 인덱스
+--생성하려는 movie 인덱스
+PUT /movie {
+	"settings"
+}
 ```
 
 인덱스 생성시에는 매핑이라는 세부 설정을 이용할 수 있는데, 매핑은 문서와 문서에 포함된 필드, 필드 타입 등을 세세하게 지정하는 것이 가능한 설정 방법이다. 인덱스 생성시 이러한 매핑 정보를 추가할 수 있다. 
@@ -179,9 +182,9 @@ PUT /movie --생성하려는 movie 인덱스
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNjk1ODczMywtMjgxODA0MjMzLC0yMD
-A0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUx
-NTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLT
-QxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5MzU1MjMsODkzNzky
-ODJdfQ==
+eyJoaXN0b3J5IjpbLTIxMjI5NDUyNTgsLTMwNjk1ODczMywtMj
+gxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0
+MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC
+02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEzODM5
+MzU1MjMsODkzNzkyODJdfQ==
 -->
