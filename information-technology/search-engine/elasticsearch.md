@@ -133,6 +133,9 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 마스터 노드, 데이터 노드, 인제스트 노드의 역할을 하지 않고 단순히 들어온 요청을 라운드 로빈 방식으로 분산시켜주는 노드다. 
 
 
+## 클러스터
+
+![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/99AB08425C9F17D928)
 
 
 
@@ -140,8 +143,8 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MzgwNTcxLC05NjM1MzQzMTIsMTA1OT
-MzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2
-MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMTM4MzkzNTUyMyw4OT
-M3OTI4Ml19
+eyJoaXN0b3J5IjpbNzEzNTg5NTU2LC00NjM4MDU3MSwtOTYzNT
+M0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYx
+LC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEzOD
+M5MzU1MjMsODkzNzkyODJdfQ==
 -->
