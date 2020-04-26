@@ -270,7 +270,7 @@ GET movie_search/_mapping -- 생성된 index movie_search 매핑 정보 가져�
 매핑 파라미터는 색인할 필드의 데이터를 어떻게 저장할지에 대한 다양한 옵션을 제공한다. 
 
 analyzer
-: 해당 필드의 데이터를 형태소 분석하겠다는 의미의 파라미터다. 
+: 해당 필드의 데이터를 형태소 분석하겠다는 의미의 파라미터다. 색인과 검색 시 지정한 분석기로 형태소 분석을 수행한다. text 데이터 타입의 필드는 analyzer 매핑 파라미터를 기본적으로 사용해야 한다. 별도의 분석기를 지정하지 않으면 Standard Analyzer로 형태소 분석을 수행한다. 
 
 
 
@@ -280,11 +280,11 @@ analyzer
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA2MjM1ODYsLTEyMTYyMzgwODMsLTE2Nj
-c4NjA2NjQsMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1
-MCwtMTU1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLT
-MwNjk1ODczMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4
-MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNi
-wxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMTQ2
-MzUxNzk1XX0=
+eyJoaXN0b3J5IjpbLTE0Nzc1NzEzOTgsLTEyMTYyMzgwODMsLT
+E2Njc4NjA2NjQsMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3
+NTY1MCwtMTU1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyOD
+QsLTMwNjk1ODczMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00
+NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NT
+EyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0Mywt
+MTQ2MzUxNzk1XX0=
 -->
