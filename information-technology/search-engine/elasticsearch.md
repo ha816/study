@@ -308,7 +308,7 @@ basic_date -> yyyyMMdd
 basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 
 ignore_above
-
+: 필드에 저장되는 문자열이 지정한 크기를 넘어서면 빈 값으로 색인한다. 
 
 ignore_malformed
 
@@ -327,11 +327,11 @@ null_value
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMz
-I2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3
-MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNj
-MsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4
-MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYzODA1NzEsLTk2MzUzND
-MxMiwxMDU5MzM1MTU0LDEyNjExNjUxMjYsMTkyMzc0ODU2MSwt
-NjA0NDM1OTYxXX0=
+eyJoaXN0b3J5IjpbLTE4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLT
+E1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3
+ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NT
+AsLTE1NTg5ODEyNjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0z
+MDY5NTg3MzMsLTI4MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYzOD
+A1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNjExNjUxMjYs
+MTkyMzc0ODU2MV19
 -->
