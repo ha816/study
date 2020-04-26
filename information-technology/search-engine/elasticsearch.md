@@ -280,7 +280,10 @@ normalizer
 최신 엘라스틱 서치에서는 색인시 boost 설정을 사용할 수 없도록 바뀌었다. 
 
 coerce
-: 색인 시 자동 변환을 허용할지 여부를 말하는 파라미터다. 예를 들어 10과 같은 숫자 형태의 무
+: 색인 시 자동 변환을 허용할지 여부를 말하는 파라미터다. 예를 들어 "10"과 같은 숫자 형태의 문자열이 integer 타입의 필드로 들어온다면 자동으로 형변환을 수행하여 정상적으로 처리한다. 하지만 coerce를 미사용으로 설정 해둔다면 색인에 실파한다. 
+
+copy_to
+: 매핑 파라미터를 추가한 필드 값을 지정한 필드로 복사한다. 예컨대 keyword 타입의 필드에 copy_to 매핑 파라미터를 사용해 다른 필드로 값을 복사하면 복사된 필드에서는 text 
 
 
 
@@ -291,7 +294,7 @@ coerce
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDgyMjY1MywzMjYzMjUzMTEsLTEyMT
+eyJoaXN0b3J5IjpbMTMwNjM1ODQzNCwzMjYzMjUzMTEsLTEyMT
 YyMzgwODMsLTE2Njc4NjA2NjQsMjA0MTcwMTc5Nyw3NDA4MjYz
 ODcsMTI3OTY3NTY1MCwtMTU1ODk4MTI2MywtNDA0OTI3MDkzLD
 ExNjI2OTMyODQsLTMwNjk1ODczMywtMjgxODA0MjMzLC0yMDA0
