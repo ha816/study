@@ -338,7 +338,7 @@ similarity
 : 유사도 측정 알고리즘을 지정한다. 유사도 측정 방식의 기본 알고리즘인 BM25를 다른 알고리즘으로 변강할 수 있다.
 
 store
-: 필드의 값을 저장해 검색 결과에 값을 포함하기 위한 매핑 파라
+: 필드의 값을 저장해 검색 결과에 값을 포함하기 위한 매핑 파라미터다. 기본적으로 _source에 색이된 문서가 저장된다. 
 
 
 
@@ -347,11 +347,11 @@ store
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzODU2NTksLTE4Nzk3NzM0OTEsLTE4Nz
-QzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4
-MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mzg3LD
-EyNzk2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5MywxMTYy
-NjkzMjg0LC0zMDY5NTg3MzMsLTI4MTgwNDIzMywtMjAwNDA0OD
-M0NSwtNDYzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0LDEy
-NjExNjUxMjZdfQ==
+eyJoaXN0b3J5IjpbLTIwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLT
+E4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2
+MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mz
+g3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5Mywx
+MTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4MTgwNDIzMywtMjAwND
+A0ODM0NSwtNDYzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0
+LDEyNjExNjUxMjZdfQ==
 -->
