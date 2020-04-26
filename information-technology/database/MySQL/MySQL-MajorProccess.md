@@ -220,7 +220,7 @@ LIMIT 10
 
 tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드가 1000건이라 하자. 그리고 tb_test1 1건당 tb_test2 레코드가 10건씩 있다고 가정하자. 두 테이블 조인 결과는 전체 1000건이라고 가정하고 정렬의 처리 방식별로 읽어야 하는 레코드 건수와 정렬을 수행해야 하는 레코드 건수를 비교해보자.
 
-tb_
+tb_test1이 드랑
 
 
 # Distinct 처리
@@ -230,11 +230,11 @@ tb_
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4OTkxMzQ4NywtNjEyMDI3NTU2LDI2Mz
-MyNDI0OCwtMTIxNTg1OTMwNiwxOTUxODEzNjI4LC0yMTQ1MjAy
-NDkzLDkyMjQ2NTI0NSw1ODQ3OTk4OTcsLTQzOTUzNDM4MCwtMj
-EyMDY5OTgzOCwyMDc3NzI3OTQ3LC0xNzY2NTk3ODcyLC0yMDIy
-OTI5NjMzLDEyMzYzNzAwODcsLTg2Njc3NjU2LC03MzU2MzQ4ND
-UsLTMzNjI4NDg4MSwtODg4NDgxMjksMTUyMDA5NjU3MCw5ODY3
-MDI4MjJdfQ==
+eyJoaXN0b3J5IjpbLTMyNDAxNzczLC04ODk5MTM0ODcsLTYxMj
+AyNzU1NiwyNjMzMjQyNDgsLTEyMTU4NTkzMDYsMTk1MTgxMzYy
+OCwtMjE0NTIwMjQ5Myw5MjI0NjUyNDUsNTg0Nzk5ODk3LC00Mz
+k1MzQzODAsLTIxMjA2OTk4MzgsMjA3NzcyNzk0NywtMTc2NjU5
+Nzg3MiwtMjAyMjkyOTYzMywxMjM2MzcwMDg3LC04NjY3NzY1Ni
+wtNzM1NjM0ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAw
+OTY1NzBdfQ==
 -->
