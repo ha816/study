@@ -272,6 +272,9 @@ GET movie_search/_mapping -- 생성된 index movie_search 매핑 정보 가져�
 analyzer
 : 해당 필드의 데이터를 형태소 분석하겠다는 의미의 파라미터다. 색인과 검색 시 지정한 분석기로 형태소 분석을 수행한다. text 데이터 타입의 필드는 analyzer 매핑 파라미터를 기본적으로 사용해야 한다. 별도의 분석기를 지정하지 않으면 Standard Analyzer로 형태소 분석을 수행한다. 
 
+normalizer
+: normalizer 매핑 파라미터는 term query에 분석기를 사용하기 위해 사용된다. 예를 들어 keyword 데이터 타입의 경우 원문을 기준으로 문서가 색인되기 때문에 cafe, Cafe, Ca
+
 
 
 
@@ -280,7 +283,7 @@ analyzer
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzc1NzEzOTgsLTEyMTYyMzgwODMsLT
+eyJoaXN0b3J5IjpbLTE1NTI1NTE5OTAsLTEyMTYyMzgwODMsLT
 E2Njc4NjA2NjQsMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3
 NTY1MCwtMTU1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyOD
 QsLTMwNjk1ODczMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00
