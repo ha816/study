@@ -220,7 +220,15 @@ LIMIT 10
 
 tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드가 1000건이라 하자. 그리고 tb_test1 1건당 tb_test2 레코드가 10건씩 있다고 가정하자. 두 테이블 조인 결과는 전체 1000건이라고 가정하고 정렬의 처리 방식별로 읽어야 하는 레코드 건수와 정렬을 수행해야 하는 레코드 건수를 비교해보자.
 
-tb_test1이 드랑
+* tb_test1이 드라이빙 테이블이 되는 경우
+
+|정렬방식|읽어야 하는 건수 | 조인 횟수 | 정렬해야 하는 대상 건수|
+|--|--|--|--|--|--|
+|인덱스 사용|tb_test1 : 1건, tb_test2 : 10건|1번|0||
+
+
+
+
 
 
 # Distinct 처리
@@ -230,7 +238,7 @@ tb_test1이 드랑
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNDAxNzczLC04ODk5MTM0ODcsLTYxMj
+eyJoaXN0b3J5IjpbNjg0MDQ4MDk1LC04ODk5MTM0ODcsLTYxMj
 AyNzU1NiwyNjMzMjQyNDgsLTEyMTU4NTkzMDYsMTk1MTgxMzYy
 OCwtMjE0NTIwMjQ5Myw5MjI0NjUyNDUsNTg0Nzk5ODk3LC00Mz
 k1MzQzODAsLTIxMjA2OTk4MzgsMjA3NzcyNzk0NywtMTc2NjU5
