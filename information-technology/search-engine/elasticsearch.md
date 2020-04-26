@@ -261,6 +261,13 @@ POST /{index 명}/_search {
 
 데이터 베이스에서 테이블 컬럼의 정보를 정의하는 것이 중요하듯 엘라스틱 서치에서도 데이터 타입을 정의하는 것은 매우 중요하다. 엘라스틱서치는 기본적으로 스키마리스이기 때문에 명시적으로 필드를 정의하지 않아도 데이터 유형에 따라 필드 데이터 타입에 대한 매핑 정보가 자동으로 생성된다. 자동 매핑 방식은 언뜻 편리해보이지만 실수로 잘못 지정된 매핑 정보가 지정될 경우 수정할 방법이 없으므로 매우 주의해야 한다. 
 
+이미 만들어진 매핑 정보를 확인하려면 _mapping API를 사용하면 된다. 
+```
+GET movie_search/_mapping -- 생성된 index movie_search 매핑 정보 가져오기
+```
+
+
+
 
 
 
@@ -269,11 +276,11 @@ POST /{index 명}/_search {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA2NDI1MjEsLTEyMTYyMzgwODMsLTE2Nj
-c4NjA2NjQsMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1
-MCwtMTU1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLT
-MwNjk1ODczMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4
-MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNi
-wxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMTQ2
-MzUxNzk1XX0=
+eyJoaXN0b3J5IjpbLTE4MDM5OTUzNjQsLTEyMTYyMzgwODMsLT
+E2Njc4NjA2NjQsMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3
+NTY1MCwtMTU1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyOD
+QsLTMwNjk1ODczMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00
+NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NT
+EyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0Mywt
+MTQ2MzUxNzk1XX0=
 -->
