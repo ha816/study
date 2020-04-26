@@ -244,6 +244,7 @@ tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드
 
 
 
+
 # Distinct 처리
 
 # 임시 테이블(Using temporary)
@@ -251,11 +252,11 @@ tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MDg2NjcwNyw5Mjg2MzI5OTEsMTYwMD
-Q3OTM3MywtODg5OTEzNDg3LC02MTIwMjc1NTYsMjYzMzI0MjQ4
-LC0xMjE1ODU5MzA2LDE5NTE4MTM2MjgsLTIxNDUyMDI0OTMsOT
-IyNDY1MjQ1LDU4NDc5OTg5NywtNDM5NTM0MzgwLC0yMTIwNjk5
-ODM4LDIwNzc3Mjc5NDcsLTE3NjY1OTc4NzIsLTIwMjI5Mjk2Mz
-MsMTIzNjM3MDA4NywtODY2Nzc2NTYsLTczNTYzNDg0NSwtMzM2
-Mjg0ODgxXX0=
+eyJoaXN0b3J5IjpbLTM2MDM5NjA2OSwtMzUwODY2NzA3LDkyOD
+YzMjk5MSwxNjAwNDc5MzczLC04ODk5MTM0ODcsLTYxMjAyNzU1
+NiwyNjMzMjQyNDgsLTEyMTU4NTkzMDYsMTk1MTgxMzYyOCwtMj
+E0NTIwMjQ5Myw5MjI0NjUyNDUsNTg0Nzk5ODk3LC00Mzk1MzQz
+ODAsLTIxMjA2OTk4MzgsMjA3NzcyNzk0NywtMTc2NjU5Nzg3Mi
+wtMjAyMjkyOTYzMywxMjM2MzcwMDg3LC04NjY3NzY1NiwtNzM1
+NjM0ODQ1XX0=
 -->
