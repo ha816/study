@@ -300,19 +300,28 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > Git은 소스코드의 효율적인 관리를 위한 형상 관리 도구(Configuration Management Tool) 중 한 종류이다. 깃은 분산형 관리 시스템인데 중앙 서버에 소스코드와 히스토리를 저장하는 SVN과 달리 Git은 소스코드를 여러 개발 PC와 저장소에 분산해서 저장하기 때문에 중앙 서버에 장애가 발생해도 로컬 저장소에 커밋을 할 수 있으며, 로컬 저장소들을 이용하여 중앙 저장소의 복원도 가능하다. 또한, 분산형으로 코드를 관리하기 때문에 다양한 Workflow를 가능하게 한다는 점이 SVN과 비교하여 Git이 갖는 장점이라 할 수 있다.
 
 > **[CI/CD?](https://itholic.github.io/qa-cicd/)**
-> Continuous Integration & Continuous Delivery의 약자이다.
+> Continuous Integration & Continuous Delivery(Deploy)의 약자이다.
 > CI는 지속적 통합(Continuous Integration)으로, 모든 개발이 끝난 이후에 코드 품질을 관리하는 고전적 방식의 단점을 해소하기위해 나타난 개념이다. 말그대로 개발을 하면서 ‘코드에 대한 통합’을 ‘지속적’으로 진행함으로써 품질을 유지하자는 것이다. 
+> CD란 지속적 배포(Continuous Deploy 또는 Delivery)로써, 소프트웨어가 항상 신뢰 가능한 수준에서 배포될 수 있도록 지속적으로 관리하자는 개념이다.
+
+  
+
+사실 어려울 것 없이 그냥 CI의 연장선으로 생각하면 된다.
+
+배포 이전에 테스트와 빌드는 필수적이기 때문에,
+
+사실상 CD가 되려면 항상 CI가 선행되어야 한다고 봐도 무방하다.
 
   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDE2MTcyMzgsMTY1Mzk5MjQwMyw4Mj
-Y1MzY5MzcsMzk3MDM5NjU4LC0zNjg2ODA1OTcsLTEwODgzNzA1
-MjAsLTE0MTk2MjM1MDIsLTE2NTMwMzAwMTEsLTgzNzYyMzU5Mi
-wtODcwNDA5ODIsLTE0NDg5NjExOTgsODc2ODU4NzA5LDc0MDY1
-MTkyNSw0OTYzMTkwNTEsLTY3NTc4NDM0NywyMDA3OTcwMzYxLC
-0xMDQ0MjY5NzI4LC0xMzg1NjA5NjAwLC0xMjg5MDU5MzQsLTg4
-MDgwMjkzOF19
+eyJoaXN0b3J5IjpbMjQ1Mjc0NjM4LC0xMDQxNjE3MjM4LDE2NT
+M5OTI0MDMsODI2NTM2OTM3LDM5NzAzOTY1OCwtMzY4NjgwNTk3
+LC0xMDg4MzcwNTIwLC0xNDE5NjIzNTAyLC0xNjUzMDMwMDExLC
+04Mzc2MjM1OTIsLTg3MDQwOTgyLC0xNDQ4OTYxMTk4LDg3Njg1
+ODcwOSw3NDA2NTE5MjUsNDk2MzE5MDUxLC02NzU3ODQzNDcsMj
+AwNzk3MDM2MSwtMTA0NDI2OTcyOCwtMTM4NTYwOTYwMCwtMTI4
+OTA1OTM0XX0=
 -->
