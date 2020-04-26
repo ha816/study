@@ -301,14 +301,14 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 
 > **[CI/CD?](https://itholic.github.io/qa-cicd/)**
 > Continuous Integration & Continuous Delivery의 약자이다.
-> CI는 지속적 통합(Continuous Integration)으로, 모든 개발이 끝난 이후에 코드 품질을 관리하는 고전적 방식의 단점을 해소하기위해 나타난 개념이다. 말그대로 개발을 하면서 ‘코드에 대한 통합’을 ‘지속적’으로 진행함으로써 품질을 유지하자는 것이다.
+> CI는 지속적 통합(Continuous Integration)으로, 모든 개발이 끝난 이후에 코드 품질을 관리하는 고전적 방식의 단점을 해소하기위해 나타난 개념이다. 말그대로 개발을 하면서 ‘코드에 대한 통합’을 ‘지속적’으로 진행함으로써 품질을 유지하자는 것이다. 
 
   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjEzNTU1OTgsMTY1Mzk5MjQwMyw4Mj
+eyJoaXN0b3J5IjpbLTEwNDE2MTcyMzgsMTY1Mzk5MjQwMyw4Mj
 Y1MzY5MzcsMzk3MDM5NjU4LC0zNjg2ODA1OTcsLTEwODgzNzA1
 MjAsLTE0MTk2MjM1MDIsLTE2NTMwMzAwMTEsLTgzNzYyMzU5Mi
 wtODcwNDA5ODIsLTE0NDg5NjExOTgsODc2ODU4NzA5LDc0MDY1
