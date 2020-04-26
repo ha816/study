@@ -236,7 +236,9 @@ tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드
 |드라이빙 테이블만 정렬|tb_test2 : 1000건, tb_test1 : 10건|10번|1000건(tb_test2 테이블의 레코드 건수만큼 정렬필요)|
 |임시 테이블 사용 후 정렬|tb_test2 : 1000건, tb_test1 : 100건|1000번(tb_test2 테이블의 레코드 건수만큼 조인 발생)|1000건(조인된 결과 레코드 건수를 전부 정렬해야 함|
 
+어느 테이블이 먼저 드라이빙 되어 조인되는지도 중요하지만 어떤 정렬방식으로 처리 되는지는 더 큰 성능차이를 만든다. 가능하다면 인덱스를 사용한 정렬로 유도하고 그렇지 못한다면 최소한 드라이빙 테이블 정렬해도 되는 수준으로 유도하는 것도 좋은 튜닝 방법이다.
 
+> 인덱스를 사용하지 못하고 별도로 Filesort 작업을 거쳐야 하는 쿼리에서 LIMIT 조건이 아무런 도움이 되지 못하는 것은 아니다.
 
 
 
@@ -252,7 +254,7 @@ tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MDM5NjA2OSwtMzUwODY2NzA3LDkyOD
+eyJoaXN0b3J5IjpbMTk5NjE1NTExNywtMzUwODY2NzA3LDkyOD
 YzMjk5MSwxNjAwNDc5MzczLC04ODk5MTM0ODcsLTYxMjAyNzU1
 NiwyNjMzMjQyNDgsLTEyMTU4NTkzMDYsMTk1MTgxMzYyOCwtMj
 E0NTIwMjQ5Myw5MjI0NjUyNDUsNTg0Nzk5ODk3LC00Mzk1MzQz
