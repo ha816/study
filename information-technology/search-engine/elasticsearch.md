@@ -302,6 +302,11 @@ strict: 새로운 필드가 감지되면 예외가 발생하고 문서 자체가
 enabled
 : 검색 결과에 포함하지만 색인은 하고 싶지 않은 경우도 있다. 메타 성격의 데이터가 그렇다. 예컨대 일반적인 게시판이라면 제목과 요약 글만 색인하고 날짜와 사용자 ID는 색인하지 않는 경우다. 색인을 원치 않는 날짜와 사용자 ID의 매핑 파라미터 중 enabled를 false로 설정하면 _source에서는 검색이 되지만 색인은 하지 않는다. 
 
+format
+: 엘라스틱 서치는 날짜/시간을 문자열로 표시한다. 이때 날짜/시간을 문자열로 변경할때 미리 구성한 포맷을 사용할 수 있다.
+basic_date -> yyyyMMdd
+basic_date_time->
+
 
 
 
@@ -310,7 +315,7 @@ enabled
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTg5OTc0MDAsLTE1MzkyNTcwMjEsMz
+eyJoaXN0b3J5IjpbLTEwOTc1MTc5NTgsLTE1MzkyNTcwMjEsMz
 I2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3
 MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNj
 MsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4
