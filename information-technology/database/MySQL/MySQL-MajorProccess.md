@@ -225,7 +225,8 @@ tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드
 |정렬방식|읽어야 하는 건수 | 조인 횟수 | 정렬해야 하는 대상 건수|
 |--|--|--|--|
 |인덱스 사용|tb_test1 : 1건, tb_test2 : 10건|1번|0건|
-|드라이빙 테이블만 정렬|tb_test1 : 1건, tb_test2 : 10건|1번|0건|
+|드라이빙 테이블만 정렬|tb_test1 : 100건, tb_test2 : 10건|10번|100건|
+|임시 테이블 사용 후 정렬|tb_test1 : 100건, tb_test2 : 1000건|100번(tb_test1)|100건|
 
 
 
@@ -240,11 +241,11 @@ tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMDQ3OTM3MywtODg5OTEzNDg3LC02MT
-IwMjc1NTYsMjYzMzI0MjQ4LC0xMjE1ODU5MzA2LDE5NTE4MTM2
-MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LDU4NDc5OTg5NywtND
-M5NTM0MzgwLC0yMTIwNjk5ODM4LDIwNzc3Mjc5NDcsLTE3NjY1
-OTc4NzIsLTIwMjI5Mjk2MzMsMTIzNjM3MDA4NywtODY2Nzc2NT
-YsLTczNTYzNDg0NSwtMzM2Mjg0ODgxLC04ODg0ODEyOSwxNTIw
-MDk2NTcwXX0=
+eyJoaXN0b3J5IjpbLTEwODcyOTM3MzIsMTYwMDQ3OTM3MywtOD
+g5OTEzNDg3LC02MTIwMjc1NTYsMjYzMzI0MjQ4LC0xMjE1ODU5
+MzA2LDE5NTE4MTM2MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LD
+U4NDc5OTg5NywtNDM5NTM0MzgwLC0yMTIwNjk5ODM4LDIwNzc3
+Mjc5NDcsLTE3NjY1OTc4NzIsLTIwMjI5Mjk2MzMsMTIzNjM3MD
+A4NywtODY2Nzc2NTYsLTczNTYzNDg0NSwtMzM2Mjg0ODgxLC04
+ODg0ODEyOV19
 -->
