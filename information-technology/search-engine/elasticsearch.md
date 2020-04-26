@@ -300,7 +300,7 @@ false: 새로 추가되는 필드를 무시한다.
 strict: 새로운 필드가 감지되면 예외가 발생하고 문서 자체가 색인되지 않는다. 
 
 enabled
-: 검색 결과에 포함하지만 색인은 하고 싶지 않은 경우도 있다. 
+: 검색 결과에 포함하지만 색인은 하고 싶지 않은 경우도 있다. 메타 성격의 데이터가 그렇다. 
 
 
 
@@ -310,11 +310,11 @@ enabled
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjY0NjA4ODcsLTE1MzkyNTcwMjEsMz
-I2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3
-MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNj
-MsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4
-MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYzODA1NzEsLTk2MzUzND
-MxMiwxMDU5MzM1MTU0LDEyNjExNjUxMjYsMTkyMzc0ODU2MSwt
-NjA0NDM1OTYxXX0=
+eyJoaXN0b3J5IjpbLTQ4MzkxMTg4MCwtMTUzOTI1NzAyMSwzMj
+YzMjUzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2NjQsMjA0MTcw
+MTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1MCwtMTU1ODk4MTI2My
+wtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1ODczMywtMjgx
+ODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0Mz
+EyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02
+MDQ0MzU5NjFdfQ==
 -->
