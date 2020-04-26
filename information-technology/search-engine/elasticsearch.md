@@ -289,7 +289,9 @@ fielddata
 : 엘라스틱 서치가 힙 공간에 생성하는 메모리 캐시다. 과거에는 fielddata를 많이 사용했지만 메모리 부족현상과 잦은 GC로 현재는 거의 사용되지 않는다. 최신 버전의 엘라스틱 서치에서는 doc_values라는 새로운 형태의 캐시를 제공하고 있으며, text 타입 필드를 제외한 모든 필드는 기본적으로 doc_values 캐시를 사용한다. 
 fielddata를 사용해야만 하는 경우도 있다. text 타입의 필드는 기본적으로 분석기에 의해 형태소 분석이 되기 때문에 집계나 정렬등의 기능을 수행할 수 없다. 하지만 부득이 하게 text 타입 필드에 대해서 집계나 정렬을 수행하는 경우도 있다. 이러한 경우에 fielddata를 사용할 수 있다. 하지만 fielddata는 메모리에 생성되는 캐시이기 때문에 최소한으로 사용하자. 기본적으로 fielddata는 비활성화 되어있다.
 
-doc
+doc_values
+: 엘라스틱 서치에서 사용하는 기본 캐시다. text 타입을 제외한 모든 타입에서 기본적으로 doc_values 캐시를 사용한다. doc_values는 루씬 기반의 캐시 방식인데 과거에는 캐시를 모두 메모리에 올려 사용했으나 현재는 힙 사용에 부담을 없애고 운영체제의 파일 시스템 캐시를 통해 디스크에 있는 데이터에 빠르게 접근할 수 있다. 이로 인해 GC 비용이 들지 않으면서도 메모리 연산과 비슷한 성능을 보인다. 
+필드를 정렬, 집계할 필요가 없고
 
 
 
@@ -300,7 +302,7 @@ doc
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NTE4OTk2OSwtMTUzOTI1NzAyMSwzMj
+eyJoaXN0b3J5IjpbMTk0ODc4MjY0MywtMTUzOTI1NzAyMSwzMj
 YzMjUzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2NjQsMjA0MTcw
 MTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1MCwtMTU1ODk4MTI2My
 wtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1ODczMywtMjgx
