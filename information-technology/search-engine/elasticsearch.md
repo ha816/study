@@ -259,7 +259,7 @@ POST /{index 명}/_search {
 
 문서에 존재하는 필드의 속성을 정의할때 각 필드 속성에는 데이터 타입과 메타데이터가 포함된다. 이를 통해 색인 과정에서 문서가 어떻게 역색인으로 변환되는지 상세하게 정의할 수 있다. 
 
-데이터 베이스에서 테이블 컬럼의 정보를 정의하는 것이 중요하듯 엘라스틱 서치에서도 
+데이터 베이스에서 테이블 컬럼의 정보를 정의하는 것이 중요하듯 엘라스틱 서치에서도 데이터 타입을 정의하는 것은 매우 중요하다. 엘라스틱서치는 기본적으로 스키마리스이기 때문에 명시적으로 필드를 정의하지 않아도 데이터 유형에 따라 필드 데이터 타입에 대한 매핑 정보가 자동으로 생성된다. 자동 매핑 방식은 언뜻 편리해보이지만 실수로 잘못 지정된 매핑 정보가 지정될 경우 수정할 방법이 없으므로 매우 주의해야 한다. 
 
 
 
@@ -267,11 +267,11 @@ POST /{index 명}/_search {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMTQ3OTUwMywtMTY2Nzg2MDY2NCwyMD
-QxNzAxNzk3LDc0MDgyNjM4NywxMjc5Njc1NjUwLC0xNTU4OTgx
-MjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4NCwtMzA2OTU4NzMzLC
-0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcxLC05NjM1
-MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1Nj
-EsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMTM4
-MzkzNTUyM119
+eyJoaXN0b3J5IjpbLTEyMTYyMzgwODMsLTE2Njc4NjA2NjQsMj
+A0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1MCwtMTU1ODk4
+MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1ODczMy
+wtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwtOTYz
+NTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNiwxOTIzNzQ4NT
+YxLC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEz
+ODM5MzU1MjNdfQ==
 -->
