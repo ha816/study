@@ -295,8 +295,12 @@ doc_values
 
 dynamic
 : 매핑에 필드를 추가할 때 동적으로 생성할지, 생성하지 않을지를 결정한다. 동적 생성 필드의 처리 방법으로 세 가지 설정 중 하나를 선택할 수 있다. 
-true: 새로 축
+true: 새로 추가되는 필드를 매핑에 추가한다.
+false: 새로 추가되는 필드를 무시한다. 
+strict: 새로운 필드가 감지되면 예외가 발생하고 문서 자체가 색인되지 않는다. 
 
+enabled
+: 검색 결과에 포함하지만 색인은 하고 싶지 않은 경우도 있다. 
 
 
 
@@ -306,7 +310,7 @@ true: 새로 축
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjUyNTU5MjksLTE1MzkyNTcwMjEsMz
+eyJoaXN0b3J5IjpbLTExNjY0NjA4ODcsLTE1MzkyNTcwMjEsMz
 I2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3
 MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNj
 MsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4
