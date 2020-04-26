@@ -311,10 +311,13 @@ ignore_above
 : 필드에 저장되는 문자열이 지정한 크기를 넘어서면 빈 값으로 색인한다. 
 
 ignore_malformed
+: 엘라스틱서치에서는 잘못된 데이터 타입을 색인할고 하면 예외가 발생하고 문서전체가 색인되지 않는다. 이 파라미터를 사용하면 해당 필드만 무시하고 문서는 색인할 수 있다.
 
 index
+: 특정 필드값을 색인할지를 결정한다. 기본값은 true이며 false이면 해당 필드를 색인하지 않는다.
 
 fields
+: 다중 필드
 
 norms
 
@@ -327,11 +330,11 @@ null_value
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLT
-E1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3
-ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NT
-AsLTE1NTg5ODEyNjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0z
-MDY5NTg3MzMsLTI4MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYzOD
-A1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNjExNjUxMjYs
-MTkyMzc0ODU2MV19
+eyJoaXN0b3J5IjpbLTE3MzA5MTQzOTYsLTE4Nzk3NzM0OTEsLT
+E4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2
+MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mz
+g3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5Mywx
+MTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4MTgwNDIzMywtMjAwND
+A0ODM0NSwtNDYzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0
+LDEyNjExNjUxMjZdfQ==
 -->
