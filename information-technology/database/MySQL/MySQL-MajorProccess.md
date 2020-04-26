@@ -107,7 +107,7 @@ MySQL의 투패스 알고리즘은 같은 레코드를 두번 읽어야 하기 �
 |--|--|
 |인덱스 사용한 정렬  | 별도의 내용 표기 없음|
 |드라이빙 테이블만 정렬 | Using filesort 표시|
-|조인 결과를 임시 테이블로 저장후, 임시 테이블에서 정렬 | Using temporary; Usingfilesort가 같이 표시됨|
+|조인 결과를 임시 테이블 저장후,임시 테이블에서 정렬 | Using temporary; Usingfilesort가 같이 표시됨|
 
 먼저 옵티마이저는 정렬처리를 위해 인덱스를 사용할 수 있을지 검토할 것이다. 만약 인덱스를 이용 할 수 있다면 별도의 Filesort 과정 없이 인덱스를 순서대로 읽어서 결과를 반환한다. 하지만 인덱스를 사용할 수 없다면 WHERE 조건에 일치하는 레코드를 검색해 정렬 버퍼에 저장하면서 정렬을 처리한다.(Filesort) 이때 MySQL 옵티마이저는 정렬 대상 레코드를 최소화하기 위해 다음 두 방법 중 하나를 선택한다.
 
@@ -217,11 +217,11 @@ ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTU4NTkzMDYsMTk1MTgxMzYyOCwtMj
-E0NTIwMjQ5Myw5MjI0NjUyNDUsNTg0Nzk5ODk3LC00Mzk1MzQz
-ODAsLTIxMjA2OTk4MzgsMjA3NzcyNzk0NywtMTc2NjU5Nzg3Mi
-wtMjAyMjkyOTYzMywxMjM2MzcwMDg3LC04NjY3NzY1NiwtNzM1
-NjM0ODQ1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAwOTY1Nz
-AsOTg2NzAyODIyLDE3MzUyODAwMzUsLTIxMzAyNTE3NzUsMjYz
-MDc1OTUwXX0=
+eyJoaXN0b3J5IjpbMjYzMzI0MjQ4LC0xMjE1ODU5MzA2LDE5NT
+E4MTM2MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LDU4NDc5OTg5
+NywtNDM5NTM0MzgwLC0yMTIwNjk5ODM4LDIwNzc3Mjc5NDcsLT
+E3NjY1OTc4NzIsLTIwMjI5Mjk2MzMsMTIzNjM3MDA4NywtODY2
+Nzc2NTYsLTczNTYzNDg0NSwtMzM2Mjg0ODgxLC04ODg0ODEyOS
+wxNTIwMDk2NTcwLDk4NjcwMjgyMiwxNzM1MjgwMDM1LC0yMTMw
+MjUxNzc1XX0=
 -->
