@@ -257,17 +257,19 @@ POST /{index 명}/_search {
 
 매핑은 색인시 데이터가 어디에 어떻게 저장될지 결정하는 설정이다. 데이터 베이스의 스키마에 대응하는 개념이라고도 할 수 있는데 인덱스에 추가되는 각 데이터 타입을 구체적으로 정의하는 일이다. 
 
+문서에 존재하는 필드의 속성을 정의할때 각 필드 속성에는 데이터 타입과 메타데이터가 포함된다. 이를 통해 색인 과정에서 문서가 어떻게 역색인으로 변환되는지 상세하게 정의할 수 있다. 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NTYwNDExNiwtMTY2Nzg2MDY2NCwyMD
-QxNzAxNzk3LDc0MDgyNjM4NywxMjc5Njc1NjUwLC0xNTU4OTgx
-MjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4NCwtMzA2OTU4NzMzLC
-0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcxLC05NjM1
-MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1Nj
-EsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMTM4
-MzkzNTUyM119
+eyJoaXN0b3J5IjpbNDc0MzA1MjM3LC0xNjY3ODYwNjY0LDIwND
+E3MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEy
+NjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLT
+I4MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYzODA1NzEsLTk2MzUz
+NDMxMiwxMDU5MzM1MTU0LDEyNjExNjUxMjYsMTkyMzc0ODU2MS
+wtNjA0NDM1OTYxLC00MTYyNTExNDMsLTE0NjM1MTc5NSwxMzgz
+OTM1NTIzXX0=
 -->
