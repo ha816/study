@@ -302,26 +302,18 @@ Web Server는 정적인 웹 서비스를 제공하며, WAS에 비해 기능이 �
 > **[CI/CD?](https://itholic.github.io/qa-cicd/)**
 > Continuous Integration & Continuous Delivery(Deploy)의 약자이다.
 > CI는 지속적 통합(Continuous Integration)으로, 모든 개발이 끝난 이후에 코드 품질을 관리하는 고전적 방식의 단점을 해소하기위해 나타난 개념이다. 말그대로 개발을 하면서 ‘코드에 대한 통합’을 ‘지속적’으로 진행함으로써 품질을 유지하자는 것이다. 
-> CD란 지속적 배포(Continuous Deploy 또는 Delivery)로써, 소프트웨어가 항상 신뢰 가능한 수준에서 배포될 수 있도록 지속적으로 관리하자는 개념이다.
-
-  
-
-사실 어려울 것 없이 그냥 CI의 연장선으로 생각하면 된다.
-
-배포 이전에 테스트와 빌드는 필수적이기 때문에,
-
-사실상 CD가 되려면 항상 CI가 선행되어야 한다고 봐도 무방하다.
+> CD란 지속적 배포(Continuous Deploy 또는 Delivery)로써, 소프트웨어가 항상 신뢰 가능한 수준에서 배포될 수 있도록 지속적으로 관리하자는 개념이다. 사실 어려울 것 없이 그냥 CI의 연장선으로 생각하면 된다. 배포 이전에 테스트와 빌드는 필수적이기 때문에, 사실상 CD가 되려면 항상 CI가 선행되어야 한다고 봐도 무방하다. 즉, CI 프로세스를 통해 개발중에 지속적으로 빌드와 테스트를 진행하고, 이를 통과한 코드에 대하여 테스트서버와 운영서버에 곧바로 그 내용을 배포해 반영하는 것이다. 이상적인 환경이라면 테스트와 빌드가 ‘지속적’으로 이루어지기 때문에, 배포 또한 자연스럽게 ‘지속적’으로 이루어지게 된다.
 
   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ1Mjc0NjM4LC0xMDQxNjE3MjM4LDE2NT
-M5OTI0MDMsODI2NTM2OTM3LDM5NzAzOTY1OCwtMzY4NjgwNTk3
-LC0xMDg4MzcwNTIwLC0xNDE5NjIzNTAyLC0xNjUzMDMwMDExLC
-04Mzc2MjM1OTIsLTg3MDQwOTgyLC0xNDQ4OTYxMTk4LDg3Njg1
-ODcwOSw3NDA2NTE5MjUsNDk2MzE5MDUxLC02NzU3ODQzNDcsMj
-AwNzk3MDM2MSwtMTA0NDI2OTcyOCwtMTM4NTYwOTYwMCwtMTI4
-OTA1OTM0XX0=
+eyJoaXN0b3J5IjpbNDg1NzM3OTgsLTEwNDE2MTcyMzgsMTY1Mz
+k5MjQwMyw4MjY1MzY5MzcsMzk3MDM5NjU4LC0zNjg2ODA1OTcs
+LTEwODgzNzA1MjAsLTE0MTk2MjM1MDIsLTE2NTMwMzAwMTEsLT
+gzNzYyMzU5MiwtODcwNDA5ODIsLTE0NDg5NjExOTgsODc2ODU4
+NzA5LDc0MDY1MTkyNSw0OTYzMTkwNTEsLTY3NTc4NDM0NywyMD
+A3OTcwMzYxLC0xMDQ0MjY5NzI4LC0xMzg1NjA5NjAwLC0xMjg5
+MDU5MzRdfQ==
 -->
