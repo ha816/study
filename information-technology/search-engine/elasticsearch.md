@@ -291,7 +291,11 @@ fielddata를 사용해야만 하는 경우도 있다. text 타입의 필드는 �
 
 doc_values
 : 엘라스틱 서치에서 사용하는 기본 캐시다. text 타입을 제외한 모든 타입에서 기본적으로 doc_values 캐시를 사용한다. doc_values는 루씬 기반의 캐시 방식인데 과거에는 캐시를 모두 메모리에 올려 사용했으나 현재는 힙 사용에 부담을 없애고 운영체제의 파일 시스템 캐시를 통해 디스크에 있는 데이터에 빠르게 접근할 수 있다. 이로 인해 GC 비용이 들지 않으면서도 메모리 연산과 비슷한 성능을 보인다. 
-필드를 정렬, 집계할 필요가 없고
+필드를 정렬, 집계할 필요가 없고 스크립트에서 필드 값에 엑세스할 필요가 없다면 디스크 공간 절약을 위해 doc_values를 비활성화 할수도 있다. 한 번 비활성화된 필드는 인덱스를 재색인 하지 않는한 변경이 불가능하다.
+
+dynamic
+: 매핑에 필드를 추가할 때 동적으로 생성할지, 생성하지 않을지를 결정한다. 동적 생성 필드의 처리 방법으로 세 가지 설정 중 하나를 선택할 수 있다. 
+true: 새로 축
 
 
 
@@ -302,11 +306,11 @@ doc_values
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODc4MjY0MywtMTUzOTI1NzAyMSwzMj
-YzMjUzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2NjQsMjA0MTcw
-MTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1MCwtMTU1ODk4MTI2My
-wtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1ODczMywtMjgx
-ODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwtOTYzNTM0Mz
-EyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNiwxOTIzNzQ4NTYxLC02
-MDQ0MzU5NjFdfQ==
+eyJoaXN0b3J5IjpbLTE0MjUyNTU5MjksLTE1MzkyNTcwMjEsMz
+I2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3
+MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNj
+MsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4
+MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYzODA1NzEsLTk2MzUzND
+MxMiwxMDU5MzM1MTU0LDEyNjExNjUxMjYsMTkyMzc0ODU2MSwt
+NjA0NDM1OTYxXX0=
 -->
