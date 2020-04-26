@@ -329,7 +329,13 @@ position_increment_gap
 : 배열 형태의 데이터를 색인할때 검색의 정확도를 높이기 위해 제공하는 옵션이다. 단어와 단어 사이의 간격(gap)을 허용할지를 설정한다. 
 
 properties
-: 오브젝트 타입이나 중첩 타입의 스키마를 정의할때 사용하는 옵션으로 필드의 타입을 매핑한다. 오브젝트 필드
+: 오브젝트 타입이나 중첩 타입의 스키마를 정의할때 사용하는 옵션으로 필드의 타입을 매핑한다. 오브젝트 필드 및 중첩 필드에는 properties 서브 필드가 있다. 이 properties는 object나 nested를 포함한 모든 데이터 타입이 될 수 있다. 
+
+search_analyzer
+: 일반적으로 색인과 검색시 같은 분석기를 사용한다. 만약 다른 분석기를 사용하고 싶으면 검색시 사용할 분석기를 별도로 지정할 수 있다. 
+
+similarity
+: 유사도 측정 알고리즘을 지정한다. 유사도 측정 방식은 기본 알고리즘인 BM25 
 
 
 
@@ -338,7 +344,7 @@ properties
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjQ4NTk4MDYsLTE4Nzk3NzM0OTEsLT
+eyJoaXN0b3J5IjpbLTEyMzI1MzkxNzIsLTE4Nzk3NzM0OTEsLT
 E4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2
 MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mz
 g3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5Mywx
