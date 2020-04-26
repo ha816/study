@@ -286,7 +286,8 @@ copy_to
 : 매핑 파라미터를 추가한 필드 값을 지정한 필드로 복사한다. 예컨대 keyword 타입의 필드에 copy_to 매핑 파라미터를 사용해 다른 필드로 값을 복사하면 복사된 필드에서는 text 타입을 지정해 형태소 분석을 할 수도 있다.
 
 fielddata
-: 엘라스틱 서치가 힙 공간에 생성하는 메모리 캐시다. 과거에는 fielddata를 많이 사용했지만 메모리 부족현상과 잦은 GC로 현재는 거의 사용되지 않는다. 최신 버전의 엘라스틱 서치에서는 doc_vae
+: 엘라스틱 서치가 힙 공간에 생성하는 메모리 캐시다. 과거에는 fielddata를 많이 사용했지만 메모리 부족현상과 잦은 GC로 현재는 거의 사용되지 않는다. 최신 버전의 엘라스틱 서치에서는 doc_values라는 새로운 형태의 캐시를 제공하고 있으며, text 타입 필드를 제외한 모든 필드는 기본적으로 doc_values 캐시를 사용한다. 
+fielddata를 사용해야만 하는 경우도 있다. text 타입의 필드는 기본적으로 분석기에 의해 형태소 분석이 되기 때문에 집계나 정렬등의 기능을 수행할 수 없다. 하지만 부득이 하게 text 타입 필드에 대해서 집계나 정렬을 수행하는 경우도 있다. 이러한 경우에 fielddata를 사용
 
 
 
@@ -297,11 +298,11 @@ fielddata
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ0ODM5NzExLDMyNjMyNTMxMSwtMTIxNj
-IzODA4MywtMTY2Nzg2MDY2NCwyMDQxNzAxNzk3LDc0MDgyNjM4
-NywxMjc5Njc1NjUwLC0xNTU4OTgxMjYzLC00MDQ5MjcwOTMsMT
-E2MjY5MzI4NCwtMzA2OTU4NzMzLC0yODE4MDQyMzMsLTIwMDQw
-NDgzNDUsLTQ2MzgwNTcxLC05NjM1MzQzMTIsMTA1OTMzNTE1NC
-wxMjYxMTY1MTI2LDE5MjM3NDg1NjEsLTYwNDQzNTk2MSwtNDE2
-MjUxMTQzXX0=
+eyJoaXN0b3J5IjpbLTE0MjUwNjA3ODAsMzI2MzI1MzExLC0xMj
+E2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2
+Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5My
+wxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4MTgwNDIzMywtMjAw
+NDA0ODM0NSwtNDYzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MT
+U0LDEyNjExNjUxMjYsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC00
+MTYyNTExNDNdfQ==
 -->
