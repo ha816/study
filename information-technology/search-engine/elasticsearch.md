@@ -255,7 +255,7 @@ POST /{index 명}/_search {
 
 ## 매핑 API 이해하기 
 
-매핑은 색인시 데이터가 어디에 어떠헥 저
+매핑은 색인시 데이터가 어디에 어떻게 저장될지 결정하는 설정이다. 데이터 베이스의 스키마에 대응하는 개념이라고도 할 수 있는데 인덱스에 추가되는 각 데이터 타입을 구체적으로 정의하는 일이다. 
 
 
 
@@ -263,11 +263,11 @@ POST /{index 명}/_search {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjU0OTkzODUsLTE2Njc4NjA2NjQsMj
-A0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1MCwtMTU1ODk4
-MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1ODczMy
-wtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwtOTYz
-NTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NTEyNiwxOTIzNzQ4NT
-YxLC02MDQ0MzU5NjEsLTQxNjI1MTE0MywtMTQ2MzUxNzk1LDEz
-ODM5MzU1MjNdfQ==
+eyJoaXN0b3J5IjpbLTk3NTYwNDExNiwtMTY2Nzg2MDY2NCwyMD
+QxNzAxNzk3LDc0MDgyNjM4NywxMjc5Njc1NjUwLC0xNTU4OTgx
+MjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4NCwtMzA2OTU4NzMzLC
+0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcxLC05NjM1
+MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1Nj
+EsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMTM4
+MzkzNTUyM119
 -->
