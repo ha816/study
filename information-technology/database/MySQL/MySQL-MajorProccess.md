@@ -226,7 +226,9 @@ tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드
 |--|--|--|--|
 |인덱스 사용|tb_test1 : 1건, tb_test2 : 10건|1번|0건|
 |드라이빙 테이블만 정렬|tb_test1 : 100건, tb_test2 : 10건|10번|100건|
-|임시 테이블 사용 후 정렬|tb_test1 : 100건, tb_test2 : 1000건|100번(tb_test1)|100건|
+|임시 테이블 사용 후 정렬|tb_test1 : 100건, tb_test2 : 1000건|100번(tb_test1 테이블의 레코드 건수만큼 조인 발생)|1000건(조인된 결과 레코드 건수를 전부 정렬해야 함|
+
+* tb_test2가 드라이빙되는 경우
 
 
 
@@ -241,11 +243,11 @@ tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODcyOTM3MzIsMTYwMDQ3OTM3MywtOD
-g5OTEzNDg3LC02MTIwMjc1NTYsMjYzMzI0MjQ4LC0xMjE1ODU5
-MzA2LDE5NTE4MTM2MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LD
-U4NDc5OTg5NywtNDM5NTM0MzgwLC0yMTIwNjk5ODM4LDIwNzc3
-Mjc5NDcsLTE3NjY1OTc4NzIsLTIwMjI5Mjk2MzMsMTIzNjM3MD
-A4NywtODY2Nzc2NTYsLTczNTYzNDg0NSwtMzM2Mjg0ODgxLC04
-ODg0ODEyOV19
+eyJoaXN0b3J5IjpbOTI4NjMyOTkxLDE2MDA0NzkzNzMsLTg4OT
+kxMzQ4NywtNjEyMDI3NTU2LDI2MzMyNDI0OCwtMTIxNTg1OTMw
+NiwxOTUxODEzNjI4LC0yMTQ1MjAyNDkzLDkyMjQ2NTI0NSw1OD
+Q3OTk4OTcsLTQzOTUzNDM4MCwtMjEyMDY5OTgzOCwyMDc3NzI3
+OTQ3LC0xNzY2NTk3ODcyLC0yMDIyOTI5NjMzLDEyMzYzNzAwOD
+csLTg2Njc3NjU2LC03MzU2MzQ4NDUsLTMzNjI4NDg4MSwtODg4
+NDgxMjldfQ==
 -->
