@@ -259,17 +259,19 @@ POST /{index 명}/_search {
 
 문서에 존재하는 필드의 속성을 정의할때 각 필드 속성에는 데이터 타입과 메타데이터가 포함된다. 이를 통해 색인 과정에서 문서가 어떻게 역색인으로 변환되는지 상세하게 정의할 수 있다. 
 
+데이터 베이스에서 테이블 컬럼의 정보를 정의하는 것이 중요하듯 엘라스틱 서치에서도 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0MzA1MjM3LC0xNjY3ODYwNjY0LDIwND
-E3MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEy
-NjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLT
-I4MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYzODA1NzEsLTk2MzUz
-NDMxMiwxMDU5MzM1MTU0LDEyNjExNjUxMjYsMTkyMzc0ODU2MS
-wtNjA0NDM1OTYxLC00MTYyNTExNDMsLTE0NjM1MTc5NSwxMzgz
-OTM1NTIzXX0=
+eyJoaXN0b3J5IjpbMTAwMTQ3OTUwMywtMTY2Nzg2MDY2NCwyMD
+QxNzAxNzk3LDc0MDgyNjM4NywxMjc5Njc1NjUwLC0xNTU4OTgx
+MjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4NCwtMzA2OTU4NzMzLC
+0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcxLC05NjM1
+MzQzMTIsMTA1OTMzNTE1NCwxMjYxMTY1MTI2LDE5MjM3NDg1Nj
+EsLTYwNDQzNTk2MSwtNDE2MjUxMTQzLC0xNDYzNTE3OTUsMTM4
+MzkzNTUyM119
 -->
