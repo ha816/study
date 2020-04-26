@@ -317,9 +317,10 @@ index
 : 특정 필드값을 색인할지를 결정한다. 기본값은 true이며 false이면 해당 필드를 색인하지 않는다.
 
 fields
-: 다중 필드
+: 다중 필드(multi_field)를 설정할 수 있는 옵션이다. 필드안에 또다른 필드 정보를 추가할 수 있어 같은 string 값을 각각 다른 분석기로 처리할 수 있다. 
 
 norms
+: 문서의 _score 값 계산에 필요한 
 
 null_value
 
@@ -330,11 +331,11 @@ null_value
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzA5MTQzOTYsLTE4Nzk3NzM0OTEsLT
-E4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2
-MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mz
-g3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5Mywx
-MTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4MTgwNDIzMywtMjAwND
-A0ODM0NSwtNDYzODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0
-LDEyNjExNjUxMjZdfQ==
+eyJoaXN0b3J5IjpbMTA1MDY2NTQ0LC0xODc5NzczNDkxLC0xOD
+c0MzQzNTMwLC0xNTM5MjU3MDIxLDMyNjMyNTMxMSwtMTIxNjIz
+ODA4MywtMTY2Nzg2MDY2NCwyMDQxNzAxNzk3LDc0MDgyNjM4Ny
+wxMjc5Njc1NjUwLC0xNTU4OTgxMjYzLC00MDQ5MjcwOTMsMTE2
+MjY5MzI4NCwtMzA2OTU4NzMzLC0yODE4MDQyMzMsLTIwMDQwND
+gzNDUsLTQ2MzgwNTcxLC05NjM1MzQzMTIsMTA1OTMzNTE1NCwx
+MjYxMTY1MTI2XX0=
 -->
