@@ -275,6 +275,9 @@ analyzer
 normalizer
 : normalizer 매핑 파라미터는 term query에 분석기를 사용하기 위해 사용된다. 예를 들어 keyword 데이터 타입의 경우 원문을 기준으로 문서가 색인되기 때문에 cafe, Cafe, Cafe'는 서로 다른 문서로 인식된다. 하지만 해당 유형을 normalizer를 통해 분석기에 asciifoldings같은 필터를 사용하면 같은 데이터로 인식되게 할 수 있다. 
 
+boost
+: 필드에 가중치(weight)를 부여한다. 가중치에 따라 유사도 점수(_score)가 달라지기 때문에 boost 설정 시 검색 결과의 노출 순서에 영향을 준다. 만약 색인 시점에 boost 설정을 하게 된다면 재색인하지 않는 이상 가중치 변경을 할 수 없기 때문에 주의해서 사용해야 한다. 
+
 
 
 
@@ -283,11 +286,11 @@ normalizer
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjk0MjIzMjMsLTEyMTYyMzgwODMsLT
-E2Njc4NjA2NjQsMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3
-NTY1MCwtMTU1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyOD
-QsLTMwNjk1ODczMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00
-NjM4MDU3MSwtOTYzNTM0MzEyLDEwNTkzMzUxNTQsMTI2MTE2NT
-EyNiwxOTIzNzQ4NTYxLC02MDQ0MzU5NjEsLTQxNjI1MTE0Mywt
-MTQ2MzUxNzk1XX0=
+eyJoaXN0b3J5IjpbMzI2MzI1MzExLC0xMjE2MjM4MDgzLC0xNj
+Y3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2
+NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC
+0zMDY5NTg3MzMsLTI4MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYz
+ODA1NzEsLTk2MzUzNDMxMiwxMDU5MzM1MTU0LDEyNjExNjUxMj
+YsMTkyMzc0ODU2MSwtNjA0NDM1OTYxLC00MTYyNTExNDMsLTE0
+NjM1MTc5NV19
 -->
