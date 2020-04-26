@@ -210,6 +210,14 @@ ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 
 
 조인과 함께 ORDER BY 절과 LIMIT 절이 함께 사용할 경우, 정렬의 각 처리 방식별로 어떤 차이가 있는지 좀 더 자세히 살펴보자.
 
+```
+SELECT *
+FROM tb_test1, tb_test2
+WHERE t1.col=t2.col1
+ORDER BY t1.col2
+LIMI
+```
+
 
 # Distinct 처리
 
@@ -218,11 +226,11 @@ ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjAyNzU1NiwyNjMzMjQyNDgsLTEyMT
-U4NTkzMDYsMTk1MTgxMzYyOCwtMjE0NTIwMjQ5Myw5MjI0NjUy
-NDUsNTg0Nzk5ODk3LC00Mzk1MzQzODAsLTIxMjA2OTk4MzgsMj
-A3NzcyNzk0NywtMTc2NjU5Nzg3MiwtMjAyMjkyOTYzMywxMjM2
-MzcwMDg3LC04NjY3NzY1NiwtNzM1NjM0ODQ1LC0zMzYyODQ4OD
-EsLTg4ODQ4MTI5LDE1MjAwOTY1NzAsOTg2NzAyODIyLDE3MzUy
-ODAwMzVdfQ==
+eyJoaXN0b3J5IjpbLTE0MTI5MjI3ODIsLTYxMjAyNzU1NiwyNj
+MzMjQyNDgsLTEyMTU4NTkzMDYsMTk1MTgxMzYyOCwtMjE0NTIw
+MjQ5Myw5MjI0NjUyNDUsNTg0Nzk5ODk3LC00Mzk1MzQzODAsLT
+IxMjA2OTk4MzgsMjA3NzcyNzk0NywtMTc2NjU5Nzg3MiwtMjAy
+MjkyOTYzMywxMjM2MzcwMDg3LC04NjY3NzY1NiwtNzM1NjM0OD
+Q1LC0zMzYyODQ4ODEsLTg4ODQ4MTI5LDE1MjAwOTY1NzAsOTg2
+NzAyODIyXX0=
 -->
