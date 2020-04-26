@@ -325,7 +325,11 @@ norms
 null_value
 : 색인시 문서에 필드가 없거나 필드의 값이 null이면 색인 시 필드를 생성하지 않는다. 이 경우 null_value를 설정하면 문서의 값이 null이더라도 필드를 생성하고 그에 해당하는 값을 저장한다.
 
-position_increment)
+position_increment_gap
+: 배열 형태의 데이터를 색인할때 검색의 정확도를 높이기 위해 제공하는 옵션이다. 단어와 단어 사이의 간격(gap)을 허용할지를 설정한다. 
+
+properties
+: 오브젝트 타입이나 중첩 타입의 스키마를 정의할때 사용하는 옵션으로 필드의 타입을 매핑한다. 오브젝트 필드
 
 
 
@@ -334,7 +338,7 @@ position_increment)
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzc4MDgwNjMsLTE4Nzk3NzM0OTEsLT
+eyJoaXN0b3J5IjpbLTE0NjQ4NTk4MDYsLTE4Nzk3NzM0OTEsLT
 E4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2
 MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mz
 g3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5Mywx
