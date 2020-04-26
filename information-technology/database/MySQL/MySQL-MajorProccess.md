@@ -208,6 +208,7 @@ ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 
 
 인덱스를 사용한 정렬 방식만 스트리밍 형태로 처리가 가능하며, 나머지는 모두 버퍼링된 후에 정렬된다. 즉 인덱스를 사용한 정렬 방식은 LIMIT 제한 건수만큼만 읽으면서 바로 클라이언트에 결과를 전송해줄 수 있다. 하지만 인덱스를 사용하지 못하는 경우의 처리는 필요한 레코드를 읽어서 정렬한 후에 LIMIT 건수만큼 잘라서 클라이언트로 전송해줄수 있다.
 
+조인과 함께 ORDER BY 절과 LIMIT 절이 함께 사용할 경우, 정렬의 각 처리 방식별로 어떤 차이가 있는지 좀 더 자세히 살펴보자.
 
 
 # Distinct 처리
@@ -217,11 +218,11 @@ ORDER BY나 GROUP BY와 같은 처리는 쿼리의 결과가 스트리밍되는 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYzMzI0MjQ4LC0xMjE1ODU5MzA2LDE5NT
-E4MTM2MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LDU4NDc5OTg5
-NywtNDM5NTM0MzgwLC0yMTIwNjk5ODM4LDIwNzc3Mjc5NDcsLT
-E3NjY1OTc4NzIsLTIwMjI5Mjk2MzMsMTIzNjM3MDA4NywtODY2
-Nzc2NTYsLTczNTYzNDg0NSwtMzM2Mjg0ODgxLC04ODg0ODEyOS
-wxNTIwMDk2NTcwLDk4NjcwMjgyMiwxNzM1MjgwMDM1LC0yMTMw
-MjUxNzc1XX0=
+eyJoaXN0b3J5IjpbLTYxMjAyNzU1NiwyNjMzMjQyNDgsLTEyMT
+U4NTkzMDYsMTk1MTgxMzYyOCwtMjE0NTIwMjQ5Myw5MjI0NjUy
+NDUsNTg0Nzk5ODk3LC00Mzk1MzQzODAsLTIxMjA2OTk4MzgsMj
+A3NzcyNzk0NywtMTc2NjU5Nzg3MiwtMjAyMjkyOTYzMywxMjM2
+MzcwMDg3LC04NjY3NzY1NiwtNzM1NjM0ODQ1LC0zMzYyODQ4OD
+EsLTg4ODQ4MTI5LDE1MjAwOTY1NzAsOTg2NzAyODIyLDE3MzUy
+ODAwMzVdfQ==
 -->
