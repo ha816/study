@@ -408,17 +408,17 @@ all 메타 필드는 색인에 사용된 모든 필드의 정보를 가진 메�
 특정 문서를 특정 샤드에 하기 위해 사용자가 지정하는 메타 필드다. 기본적으로 색인을 하면 해당 문서는 다음 수식에 따라 문서 id를 이용해 문서가 색인될 샤드를 결정한다. 별도의 설정 없이 문서를 색인하면 문서는 샤드에 골고루 분산되어 저장된다.
 
 ```
-
+Has
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTg2OTM3MjMsLTE0NDkwODQ4NTIsMT
-MyNjQ3NjU4MiwtMTU0MDM5OTI3MSwtODgwOTIxMDU0LC03ODIy
-MTY0NTksLTIwNzQwNTEwNTYsMTUwMjIzMjI0OCw5ODI1MTEyNy
-wtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4
-Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2Mz
-I1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3
-OTcsNzQwODI2Mzg3XX0=
+eyJoaXN0b3J5IjpbNDE3NjU0MTA5LC0xNzU4NjkzNzIzLC0xND
+Q5MDg0ODUyLDEzMjY0NzY1ODIsLTE1NDAzOTkyNzEsLTg4MDky
+MTA1NCwtNzgyMjE2NDU5LC0yMDc0MDUxMDU2LDE1MDIyMzIyND
+gsOTgyNTExMjcsLTE3NDQ2MDE4NTUsNTMyOTM3OTMzLC0yMDQ4
+NDU4Njg0LC0xODc5NzczNDkxLC0xODc0MzQzNTMwLC0xNTM5Mj
+U3MDIxLDMyNjMyNTMxMSwtMTIxNjIzODA4MywtMTY2Nzg2MDY2
+NCwyMDQxNzAxNzk3XX0=
 -->
