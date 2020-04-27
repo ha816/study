@@ -455,13 +455,18 @@ Array 타입은 문자여링나 숫자처럼 일반적인 값을 가질 수도 �
 
 숫자 타입은 그 종류가 다양한데 그 이유는 데이터의 크기가 맞는 알맞은 타입을 제공함으로써 색인과 검색을 효율적으로 처리하기 위함이다. 
 
-long
+long, integer, short
+double, float, halffloat
+,byte
 
+### Date
+
+Date 타입은 JSON 포맷에서 문자열로 처리된다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ5MDE1Njg5LC0xNTg0MjYwMjA1LC0xOD
+eyJoaXN0b3J5IjpbNDI5MTcxMDA0LC0xNTg0MjYwMjA1LC0xOD
 EwNzE1MjQzLC0xNzU4NjkzNzIzLC0xNDQ5MDg0ODUyLDEzMjY0
 NzY1ODIsLTE1NDAzOTkyNzEsLTg4MDkyMTA1NCwtNzgyMjE2ND
 U5LC0yMDc0MDUxMDU2LDE1MDIyMzIyNDgsOTgyNTExMjcsLTE3
