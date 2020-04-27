@@ -340,22 +340,21 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 | 알고리즘 | 설명|
 |--|--|
 |BM25  | Okapi BM25 알고리즘으로 엘라스틱 서치가 사용하는 기본 유사도 측정 알고리즘이다. |
-|  |  |
-|  |  |
-
-
-* 
-	* 
-* classic
-	* TF/IDF 기반 알고리즘이다. 문서 내 용어의 갯수와 전체 용어의 갯수로 유사도를 계산한다.
-* boolean
-	* 복잡한 수학적 모델을 사용하지 않고 단순히 boolean연산으로 유사도를 측정한다. score는 검색어 일치 여부에 따라 결정되며, 일치 여부에 따라 쿼리의 가중치(boost)에 사용된 점수로만 유사도를 계산한다.
+|classic | TF/IDF 기반 알고리즘이다. 문서 내 용어의 갯수와 전체 용어의 갯수로 유사도를 계산한다.|
+|boolean|복잡한 수학적 모델을 사용하지 않고 단순히 boolean연산으로 유사도를 측정한다. score는 검색어 일치 여부에 따라 결정되며, 일치 여부에 따라 쿼리의 가중치(boost)에 사용된 점수로만 유사도를 계산한다.|
 
 #### store
 필드의 값을 저장해 검색 결과에 값을 포함하기 위한 매핑 파라미터다. 기본적으로 _source에 색이된 문서가 저장된다. 
 
 #### term_vector
 루씬에서 분석된 용어의 정보를 포함할지 여부를 결정하는 매핑 파라미터이다. 
+
+| 알고리즘 | 설명|
+|--|--|
+|BM25  | Okapi BM25 알고리즘으로 엘라스틱 서치가 사용하는 기본 유사도 측정 알고리즘이다. |
+|classic | TF/IDF 기반 알고리즘이다. 문서 내 용어의 갯수와 전체 용어의 갯수로 유사도를 계산한다.|
+|boolean|복잡한 수학적 모델을 사용하지 않고 단순히 boolean연산으로 유사도를 측정한다. score는 검색어 일치 여부에 따라 결정되며, 일치 여부에 따라 쿼리의 가중치(boost)에 사용된 점수로만 유사도를 계산한다.|
+
 
 * no
 	* term vector를 저장하지 않는다.
@@ -373,11 +372,11 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDQ2MDE4NTUsNTMyOTM3OTMzLC0yMD
-Q4NDU4Njg0LC0xODc5NzczNDkxLC0xODc0MzQzNTMwLC0xNTM5
-MjU3MDIxLDMyNjMyNTMxMSwtMTIxNjIzODA4MywtMTY2Nzg2MD
-Y2NCwyMDQxNzAxNzk3LDc0MDgyNjM4NywxMjc5Njc1NjUwLC0x
-NTU4OTgxMjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4NCwtMzA2OT
-U4NzMzLC0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcx
-LC05NjM1MzQzMTJdfQ==
+eyJoaXN0b3J5IjpbOTgyNTExMjcsLTE3NDQ2MDE4NTUsNTMyOT
+M3OTMzLC0yMDQ4NDU4Njg0LC0xODc5NzczNDkxLC0xODc0MzQz
+NTMwLC0xNTM5MjU3MDIxLDMyNjMyNTMxMSwtMTIxNjIzODA4My
+wtMTY2Nzg2MDY2NCwyMDQxNzAxNzk3LDc0MDgyNjM4NywxMjc5
+Njc1NjUwLC0xNTU4OTgxMjYzLC00MDQ5MjcwOTMsMTE2MjY5Mz
+I4NCwtMzA2OTU4NzMzLC0yODE4MDQyMzMsLTIwMDQwNDgzNDUs
+LTQ2MzgwNTcxXX0=
 -->
