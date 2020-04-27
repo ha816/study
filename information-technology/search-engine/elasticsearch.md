@@ -343,18 +343,27 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 #### term_vector
 루씬에서 분석된 용어의 정보를 포함할지 여부를 결정하는 매핑 파라미터이다. 
 
-*no
+* no
+	* term vector를 저장하지 않는다.
+* yes
+	* 필드와 용어만 저장한다.
+* with_positions
+	* 용어, 용어의 시작과 끝 위치를 저장한다.
+* with_offsets
+	* 용어, 문자 오프셋을 저장한다.
+* with_positions_offsets
+	* 용어, 용어의 시작과 끝 위치, 문자 옾
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTcyODE4NTIsNTMyOTM3OTMzLC0yMD
-Q4NDU4Njg0LC0xODc5NzczNDkxLC0xODc0MzQzNTMwLC0xNTM5
-MjU3MDIxLDMyNjMyNTMxMSwtMTIxNjIzODA4MywtMTY2Nzg2MD
-Y2NCwyMDQxNzAxNzk3LDc0MDgyNjM4NywxMjc5Njc1NjUwLC0x
-NTU4OTgxMjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4NCwtMzA2OT
-U4NzMzLC0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcx
-LC05NjM1MzQzMTJdfQ==
+eyJoaXN0b3J5IjpbMzk4ODAzMjA3LDUzMjkzNzkzMywtMjA0OD
+Q1ODY4NCwtMTg3OTc3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1
+NzAyMSwzMjYzMjUzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2Nj
+QsMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1MCwtMTU1
+ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1OD
+czMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwt
+OTYzNTM0MzEyXX0=
 -->
