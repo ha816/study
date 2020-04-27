@@ -443,14 +443,20 @@ Text 타입은 색인 시 지정된 분석기가 컬럼의 데이터를 문자�
 
 Text 타입은 전문 검색이 가능하다는 점이 가장 큰 특징이다.  데이터를 색인하면 전체 텍스트가 토큰화되어 생성되며 특정 단어를 검색하는 것이 가능해진다. 
 
+Text 데이터 타입을 사용하는 경우 필드 검색뿐만 아니라 집계, 정렬 연산을 사용해야 할때가 있다. 이런 경우 Text와 Keyword를 모두 갖도록 멀티 필드로 설정할 수 있다. 
+
+### Array
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NjkzNTc3MCwtMTgxMDcxNTI0MywtMT
-c1ODY5MzcyMywtMTQ0OTA4NDg1MiwxMzI2NDc2NTgyLC0xNTQw
-Mzk5MjcxLC04ODA5MjEwNTQsLTc4MjIxNjQ1OSwtMjA3NDA1MT
-A1NiwxNTAyMjMyMjQ4LDk4MjUxMTI3LC0xNzQ0NjAxODU1LDUz
-MjkzNzkzMywtMjA0ODQ1ODY4NCwtMTg3OTc3MzQ5MSwtMTg3ND
-M0MzUzMCwtMTUzOTI1NzAyMSwzMjYzMjUzMTEsLTEyMTYyMzgw
-ODMsLTE2Njc4NjA2NjRdfQ==
+eyJoaXN0b3J5IjpbLTE1ODQyNjAyMDUsLTE4MTA3MTUyNDMsLT
+E3NTg2OTM3MjMsLTE0NDkwODQ4NTIsMTMyNjQ3NjU4MiwtMTU0
+MDM5OTI3MSwtODgwOTIxMDU0LC03ODIyMTY0NTksLTIwNzQwNT
+EwNTYsMTUwMjIzMjI0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1
+MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4Nz
+QzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4
+MDgzLC0xNjY3ODYwNjY0XX0=
 -->
