@@ -357,11 +357,18 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 |with_offsets|용어, 문자 오프셋을 저장한다.|
 |with_positions_offsets|용어, 용어의 시작과 끝 위치, 문자 오프셋을 모두 저장한다.|
 
-### 메타 필드(Meta Fields
+### 메타 필드(Meta Fields)
+
+메타 필드는 엘라스틱 서치에서 생성한 문서에 제공하는 특별한 필드이다. 이것은 메타데이터를 저장하는 특수 목적의 필드로서 이를 이용하면 검색 시 문서를 다양한 형태로 제어하는 것이 가능해진다. 
+
+```
+
+``
+
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjE3MTAyOSwxNTAyMjMyMjQ4LDk4Mj
+eyJoaXN0b3J5IjpbMTg2Nzk1MjY3MCwxNTAyMjMyMjQ4LDk4Mj
 UxMTI3LC0xNzQ0NjAxODU1LDUzMjkzNzkzMywtMjA0ODQ1ODY4
 NCwtMTg3OTc3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1NzAyMS
 wzMjYzMjUzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2NjQsMjA0
