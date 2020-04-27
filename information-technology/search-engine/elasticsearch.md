@@ -417,16 +417,24 @@ Hash (document_id) % num_of_shards -- 해시로 분산
 Hash (_routing) % num_of_shards -- 해시로 분산
 ```
 
+## 필드 데이터 타입
+
+매핑 설정을 위해서는 엘라스틱서치에서 제공하는 데이터 타입 어떠한 종류가 있는지 아는 것이 중요하다. 필드에는 아래와 같은 데이터 타입이 있다.
+
+* keyword, text 같은 데이터 타입
+* date, long, double, integer, boolean, ip 같은 일반적인 데이터 타입
+* 객체 또는 중첩문과 같은 JSON 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTA3MTUyNDMsLTE3NTg2OTM3MjMsLT
-E0NDkwODQ4NTIsMTMyNjQ3NjU4MiwtMTU0MDM5OTI3MSwtODgw
-OTIxMDU0LC03ODIyMTY0NTksLTIwNzQwNTEwNTYsMTUwMjIzMj
-I0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIw
-NDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1Mz
-kyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYw
-NjY0LDIwNDE3MDE3OTddfQ==
+eyJoaXN0b3J5IjpbLTE1MzAyMjkwOTksLTE4MTA3MTUyNDMsLT
+E3NTg2OTM3MjMsLTE0NDkwODQ4NTIsMTMyNjQ3NjU4MiwtMTU0
+MDM5OTI3MSwtODgwOTIxMDU0LC03ODIyMTY0NTksLTIwNzQwNT
+EwNTYsMTUwMjIzMjI0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1
+MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4Nz
+QzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4
+MDgzLC0xNjY3ODYwNjY0XX0=
 -->
