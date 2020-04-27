@@ -369,19 +369,23 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 	"_id": "8",
 	"_score": "1",
 	"_source": {
-		"movieCd"
+		"movieCd": "20178401",
+		"movieNm": "검객",
+		"typeNm": "장편",
+		...
 	}
 }
 ```
+여기서 제공되는 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTQ4NjUwNDEsLTIwNzQwNTEwNTYsMT
-UwMjIzMjI0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5
-MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4NzQzNDM1Mz
-AsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4MDgzLC0x
-NjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mzg3LDEyNzk2Nz
-U2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0
-LC0zMDY5NTg3MzNdfQ==
+eyJoaXN0b3J5IjpbLTc4MjIxNjQ1OSwtMjA3NDA1MTA1NiwxNT
+AyMjMyMjQ4LDk4MjUxMTI3LC0xNzQ0NjAxODU1LDUzMjkzNzkz
+MywtMjA0ODQ1ODY4NCwtMTg3OTc3MzQ5MSwtMTg3NDM0MzUzMC
+wtMTUzOTI1NzAyMSwzMjYzMjUzMTEsLTEyMTYyMzgwODMsLTE2
+Njc4NjA2NjQsMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3NT
+Y1MCwtMTU1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQs
+LTMwNjk1ODczM119
 -->
