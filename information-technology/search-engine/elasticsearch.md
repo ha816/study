@@ -447,16 +447,18 @@ Text 데이터 타입을 사용하는 경우 필드 검색뿐만 아니라 집�
 
 ### Array
 
+Array 타입은 문자여링나 숫자처럼 일반적인 값을 가질 수도 있지만 객체 형태로도 정의할 수 있다. 한 가지 주의할 점은 Array 타입에 저장되는 값은 모두 같은 타입으로만 구성해야 한다는 점이다. 
 
+엘라스틱서치에서는 매핑 설정시 Array 타입을 명시적으로 정의하지 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODQyNjAyMDUsLTE4MTA3MTUyNDMsLT
-E3NTg2OTM3MjMsLTE0NDkwODQ4NTIsMTMyNjQ3NjU4MiwtMTU0
-MDM5OTI3MSwtODgwOTIxMDU0LC03ODIyMTY0NTksLTIwNzQwNT
-EwNTYsMTUwMjIzMjI0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1
-MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4Nz
-QzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4
-MDgzLC0xNjY3ODYwNjY0XX0=
+eyJoaXN0b3J5IjpbMTkzMTYxNzQ1MywtMTU4NDI2MDIwNSwtMT
+gxMDcxNTI0MywtMTc1ODY5MzcyMywtMTQ0OTA4NDg1MiwxMzI2
+NDc2NTgyLC0xNTQwMzk5MjcxLC04ODA5MjEwNTQsLTc4MjIxNj
+Q1OSwtMjA3NDA1MTA1NiwxNTAyMjMyMjQ4LDk4MjUxMTI3LC0x
+NzQ0NjAxODU1LDUzMjkzNzkzMywtMjA0ODQ1ODY4NCwtMTg3OT
+c3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1NzAyMSwzMjYzMjUz
+MTEsLTEyMTYyMzgwODNdfQ==
 -->
