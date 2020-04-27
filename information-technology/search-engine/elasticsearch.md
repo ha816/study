@@ -363,17 +363,25 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 
 아래는 색인된 문서를 조회한 경우 반환되는 JSON 예이다. 
 ```
-
+{
+	"_index": "movie_search",
+	"_type": "_doc",
+	"_id": "8",
+	"_score": "1",
+	"_source": {
+		"movieCd"
+	}
+}
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzQwNTEwNTYsMTUwMjIzMjI0OCw5OD
-I1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIwNDg0NTg2
-ODQsLTE4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1MzkyNTcwMj
-EsMzI2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIw
-NDE3MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5OD
-EyNjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMs
-LTI4MTgwNDIzM119
+eyJoaXN0b3J5IjpbLTE5MTQ4NjUwNDEsLTIwNzQwNTEwNTYsMT
+UwMjIzMjI0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5
+MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4NzQzNDM1Mz
+AsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4MDgzLC0x
+NjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mzg3LDEyNzk2Nz
+U2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0
+LC0zMDY5NTg3MzNdfQ==
 -->
