@@ -456,21 +456,24 @@ Array 타입은 문자여링나 숫자처럼 일반적인 값을 가질 수도 �
 숫자 타입은 그 종류가 다양한데 그 이유는 데이터의 크기가 맞는 알맞은 타입을 제공함으로써 색인과 검색을 효율적으로 처리하기 위함이다. 
 
 long, integer, short
-double, float, halffloat
-,byte
+double, float, halffloat, byte
 
 ### Date
 
-Date 타입은 JSON 포맷에서 문자열로 처리된다. ㅂ
+Date 타입은 JSON 포맷에서 문자열로 처리된다. 날짜는 다양한 포맷으로 표현될 수 있기 때문에 날짜 문자열 형식을 명시적으로 설정해야 한다. 
+
+### Range 
+
+범위 데이터를 저장할때 사용한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwMDYxNzY2LDQyOTE3MTAwNCwtMTU4ND
-I2MDIwNSwtMTgxMDcxNTI0MywtMTc1ODY5MzcyMywtMTQ0OTA4
-NDg1MiwxMzI2NDc2NTgyLC0xNTQwMzk5MjcxLC04ODA5MjEwNT
-QsLTc4MjIxNjQ1OSwtMjA3NDA1MTA1NiwxNTAyMjMyMjQ4LDk4
-MjUxMTI3LC0xNzQ0NjAxODU1LDUzMjkzNzkzMywtMjA0ODQ1OD
-Y4NCwtMTg3OTc3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1NzAy
-MSwzMjYzMjUzMTFdfQ==
+eyJoaXN0b3J5IjpbMTI1Mjc1MDQ4NSw0MjkxNzEwMDQsLTE1OD
+QyNjAyMDUsLTE4MTA3MTUyNDMsLTE3NTg2OTM3MjMsLTE0NDkw
+ODQ4NTIsMTMyNjQ3NjU4MiwtMTU0MDM5OTI3MSwtODgwOTIxMD
+U0LC03ODIyMTY0NTksLTIwNzQwNTEwNTYsMTUwMjIzMjI0OCw5
+ODI1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIwNDg0NT
+g2ODQsLTE4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1MzkyNTcw
+MjEsMzI2MzI1MzExXX0=
 -->
