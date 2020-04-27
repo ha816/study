@@ -352,18 +352,18 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 * with_offsets
 	* 용어, 문자 오프셋을 저장한다.
 * with_positions_offsets
-	* 용어, 용어의 시작과 끝 위치, 문자 옾
+	* 용어, 용어의 시작과 끝 위치, 문자 오프셋을 모두 저장한다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk4ODAzMjA3LDUzMjkzNzkzMywtMjA0OD
-Q1ODY4NCwtMTg3OTc3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1
-NzAyMSwzMjYzMjUzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2Nj
-QsMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1MCwtMTU1
-ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1OD
-czMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwt
-OTYzNTM0MzEyXX0=
+eyJoaXN0b3J5IjpbMTE4ODY1NzgxMyw1MzI5Mzc5MzMsLTIwND
+g0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1Mzky
+NTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNj
+Y0LDIwNDE3MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1
+NTg5ODEyNjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NT
+g3MzMsLTI4MTgwNDIzMywtMjAwNDA0ODM0NSwtNDYzODA1NzEs
+LTk2MzUzNDMxMl19
 -->
