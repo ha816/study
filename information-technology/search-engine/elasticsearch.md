@@ -380,12 +380,12 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 
 #### _index
 
-_index 메타 필드는 해당 문서가 속한 인덱스의 이름을 담고 있다. 이를 이용해 검색된 문서의 인덱스를 알 수 있고, 해당 
+_index 메타 필드는 해당 문서가 속한 인덱스의 이름을 담고 있다. 이를 이용해 검색된 문서의 인덱스를 알 수 있고, 해당 인덱스에 몇개의 문서가 있는지 확인할 수 있다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODU5NTQ1NywtNzgyMjE2NDU5LC0yMD
+eyJoaXN0b3J5IjpbLTg4MDkyMTA1NCwtNzgyMjE2NDU5LC0yMD
 c0MDUxMDU2LDE1MDIyMzIyNDgsOTgyNTExMjcsLTE3NDQ2MDE4
 NTUsNTMyOTM3OTMzLC0yMDQ4NDU4Njg0LC0xODc5NzczNDkxLC
 0xODc0MzQzNTMwLC0xNTM5MjU3MDIxLDMyNjMyNTMxMSwtMTIx
