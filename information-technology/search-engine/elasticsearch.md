@@ -402,7 +402,10 @@ _index 메타 필드는 해당 문서가 속한 인덱스의 이름을 담고 �
 
 all 메타 필드는 색인에 사용된 모든 필드의 정보를 가진 메타 필드이다. 모든 필드의 내용이 하나의 텍스트로 합쳐져서 제공된다. 특정 필드가 아닌 문서 전체 필드에서 특정 키워드를 검색한다면 _all  필드를 사용하자 
 
-하지만 _all 필드는 데이터 크기를 너무 많이 차지하는 문제가 있어 엘라스틱 서치 6.
+하지만 _all 필드는 데이터 크기를 너무 많이 차지하는 문제가 있어 엘라스틱 서치 6.0 이상부터는 폐기(deprecated)되었다. 그래서 필드 복사가 필요한 경우 copy_to 파라미터를 사용해야 한다. copy_to를 사용하면 _all과 동일한 효과를 낼 수 있다.
+
+#### _routing 
+특정 문서를 특정 샤드에 하기 위해 사용자가 지정하는 메타 필드다. 기본적으로 색인을 하면 해당 문서는 
 
 
 gkwlaks
@@ -410,11 +413,11 @@ gkwlaks
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MDgyMjg3NywtMTQ0OTA4NDg1MiwxMz
-I2NDc2NTgyLC0xNTQwMzk5MjcxLC04ODA5MjEwNTQsLTc4MjIx
-NjQ1OSwtMjA3NDA1MTA1NiwxNTAyMjMyMjQ4LDk4MjUxMTI3LC
-0xNzQ0NjAxODU1LDUzMjkzNzkzMywtMjA0ODQ1ODY4NCwtMTg3
-OTc3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1NzAyMSwzMjYzMj
-UzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2NjQsMjA0MTcwMTc5
-Nyw3NDA4MjYzODddfQ==
+eyJoaXN0b3J5IjpbLTEyNTkxMDc5MTUsLTE0NDkwODQ4NTIsMT
+MyNjQ3NjU4MiwtMTU0MDM5OTI3MSwtODgwOTIxMDU0LC03ODIy
+MTY0NTksLTIwNzQwNTEwNTYsMTUwMjIzMjI0OCw5ODI1MTEyNy
+wtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4
+Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2Mz
+I1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3
+OTcsNzQwODI2Mzg3XX0=
 -->
