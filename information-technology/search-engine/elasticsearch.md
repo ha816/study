@@ -449,16 +449,23 @@ Text 데이터 타입을 사용하는 경우 필드 검색뿐만 아니라 집�
 
 Array 타입은 문자여링나 숫자처럼 일반적인 값을 가질 수도 있지만 객체 형태로도 정의할 수 있다. 한 가지 주의할 점은 Array 타입에 저장되는 값은 모두 같은 타입으로만 구성해야 한다는 점이다. 
 
-엘라스틱서치에서는 매핑 설정시 Array 타입을 명시적으로 정의하지 
+엘라스틱서치에서는 매핑 설정시 Array 타입을 명시적으로 정의하지 않는다. 모든 필드가 기본적으로 다수의 값을 가질 수 있기 때문이다. 정의된 인덱스 필드에 단순히 배열 값을 입력하면 자동으로 Array 형태로 저장된다. 
+
+### Numeric
+
+숫자 타입은 그 종류가 다양한데 그 이유는 데이터의 크기가 맞는 알맞은 타입을 제공함으로써 색인과 검색을 효율적으로 처리하기 위함이다. 
+
+long
+
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMTYxNzQ1MywtMTU4NDI2MDIwNSwtMT
-gxMDcxNTI0MywtMTc1ODY5MzcyMywtMTQ0OTA4NDg1MiwxMzI2
-NDc2NTgyLC0xNTQwMzk5MjcxLC04ODA5MjEwNTQsLTc4MjIxNj
-Q1OSwtMjA3NDA1MTA1NiwxNTAyMjMyMjQ4LDk4MjUxMTI3LC0x
-NzQ0NjAxODU1LDUzMjkzNzkzMywtMjA0ODQ1ODY4NCwtMTg3OT
-c3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1NzAyMSwzMjYzMjUz
-MTEsLTEyMTYyMzgwODNdfQ==
+eyJoaXN0b3J5IjpbMjQ5MDE1Njg5LC0xNTg0MjYwMjA1LC0xOD
+EwNzE1MjQzLC0xNzU4NjkzNzIzLC0xNDQ5MDg0ODUyLDEzMjY0
+NzY1ODIsLTE1NDAzOTkyNzEsLTg4MDkyMTA1NCwtNzgyMjE2ND
+U5LC0yMDc0MDUxMDU2LDE1MDIyMzIyNDgsOTgyNTExMjcsLTE3
+NDQ2MDE4NTUsNTMyOTM3OTMzLC0yMDQ4NDU4Njg0LC0xODc5Nz
+czNDkxLC0xODc0MzQzNTMwLC0xNTM5MjU3MDIxLDMyNjMyNTMx
+MSwtMTIxNjIzODA4M119
 -->
