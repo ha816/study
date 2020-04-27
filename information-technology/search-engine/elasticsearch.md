@@ -428,16 +428,23 @@ Hash (_routing) % num_of_shards -- 해시로 분산
 
 ### keyword 
 
-말 그대로 키워드 형태로 사용할 데이터에 적잡한 데이터 타입이다. Keyword 타입을 사용할 경우 별도의 분석기를 거치지 않고 원문 그대로 색인하기 때문에 특정 코드나 키워드등 정형화된 컨텐츠에 주로 사용한다. 
+말 그대로 키워드 형태로 사용할 데이터에 적잡한 데이터 타입이다. Keyword 타입을 사용할 경우 별도의 분석기를 거치지 않고 원문 그대로 색인하기 때문에 특정 코드나 키워드등 정형화된 컨텐츠에 주로 사용한다. 엘라스틱 서치의 일부 기능은 형태소 분석을 하지 않아야만 사용이 가능한데 이 경우에도 keyword를 사용한다.
+
+일반적으로 keyword가 많이 사용되는 항목은 아래와 같다.
+* 검색 시 필터링 되는 항목
+* 정렬이 필요한 항목
+* 집계해야하는 항목
+
+위 세 가지 경우라면 반드시 keyword
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc4NDY5MTc1LC0xODEwNzE1MjQzLC0xNz
-U4NjkzNzIzLC0xNDQ5MDg0ODUyLDEzMjY0NzY1ODIsLTE1NDAz
-OTkyNzEsLTg4MDkyMTA1NCwtNzgyMjE2NDU5LC0yMDc0MDUxMD
-U2LDE1MDIyMzIyNDgsOTgyNTExMjcsLTE3NDQ2MDE4NTUsNTMy
-OTM3OTMzLC0yMDQ4NDU4Njg0LC0xODc5NzczNDkxLC0xODc0Mz
-QzNTMwLC0xNTM5MjU3MDIxLDMyNjMyNTMxMSwtMTIxNjIzODA4
-MywtMTY2Nzg2MDY2NF19
+eyJoaXN0b3J5IjpbLTcxMzQyMjMzNiwtMTgxMDcxNTI0MywtMT
+c1ODY5MzcyMywtMTQ0OTA4NDg1MiwxMzI2NDc2NTgyLC0xNTQw
+Mzk5MjcxLC04ODA5MjEwNTQsLTc4MjIxNjQ1OSwtMjA3NDA1MT
+A1NiwxNTAyMjMyMjQ4LDk4MjUxMTI3LC0xNzQ0NjAxODU1LDUz
+MjkzNzkzMywtMjA0ODQ1ODY4NCwtMTg3OTc3MzQ5MSwtMTg3ND
+M0MzUzMCwtMTUzOTI1NzAyMSwzMjYzMjUzMTEsLTEyMTYyMzgw
+ODMsLTE2Njc4NjA2NjRdfQ==
 -->
