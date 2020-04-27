@@ -469,16 +469,20 @@ integer_range, date_range, ip_range 등등
 
 ### Object
 
-JSON 포맷 문서는 내부 객체를 계층적으로 포함 할 수 있다. 
+JSON 포맷 문서는 내부 객체를 계층적으로 포함 할 수 있다. 문서의 필드는 단순히 값을 자질 수도 있지만 다른 문서를 포함하는 것도 가능하다. 문서를 가지는 필드 타입을 Object 테이터 타입이라 한다. 이 타입은 그저 다른 문서의 JSON 구조를 집어넣으면 된다.
+
+### Nested 
+
+Object 객체 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NzgzNjg2OSw0MjkxNzEwMDQsLTE1OD
-QyNjAyMDUsLTE4MTA3MTUyNDMsLTE3NTg2OTM3MjMsLTE0NDkw
-ODQ4NTIsMTMyNjQ3NjU4MiwtMTU0MDM5OTI3MSwtODgwOTIxMD
-U0LC03ODIyMTY0NTksLTIwNzQwNTEwNTYsMTUwMjIzMjI0OCw5
-ODI1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIwNDg0NT
-g2ODQsLTE4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1MzkyNTcw
-MjEsMzI2MzI1MzExXX0=
+eyJoaXN0b3J5IjpbLTg4ODgxNjQxMSwxMDk3ODM2ODY5LDQyOT
+E3MTAwNCwtMTU4NDI2MDIwNSwtMTgxMDcxNTI0MywtMTc1ODY5
+MzcyMywtMTQ0OTA4NDg1MiwxMzI2NDc2NTgyLC0xNTQwMzk5Mj
+cxLC04ODA5MjEwNTQsLTc4MjIxNjQ1OSwtMjA3NDA1MTA1Niwx
+NTAyMjMyMjQ4LDk4MjUxMTI3LC0xNzQ0NjAxODU1LDUzMjkzNz
+kzMywtMjA0ODQ1ODY4NCwtMTg3OTc3MzQ5MSwtMTg3NDM0MzUz
+MCwtMTUzOTI1NzAyMV19
 -->
