@@ -477,11 +477,14 @@ Object 객체 배열을 독립적으로 색인하고 질의하는 형태의 데�
 
 Nested 타입을 사용하면 검색할대 일치하는 문서만 정확하게 출력할 수 있다.
 
+## 엘라스틱 서치 분석기
+
+엘락스틱서치는 루씬을 기반으로 구축된 텍스트 기반 검색엔진이다. 루씬은 내부적으로 다양한 분석기를 제공하는데, 엘라스틱서치는 루씬이 제공하는 분석기를 그대로 활용한다. 테스트 분석을 이해하려면 루씬이 제공하는 분석기가 어떻게 동작하는지를 이해하는게 가장 중요하다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMxMDU4NDYxLDEwOTc4MzY4NjksNDI5MT
+eyJoaXN0b3J5IjpbMzgyNDQ3ODA0LDEwOTc4MzY4NjksNDI5MT
 cxMDA0LC0xNTg0MjYwMjA1LC0xODEwNzE1MjQzLC0xNzU4Njkz
 NzIzLC0xNDQ5MDg0ODUyLDEzMjY0NzY1ODIsLTE1NDAzOTkyNz
 EsLTg4MDkyMTA1NCwtNzgyMjE2NDU5LC0yMDc0MDUxMDU2LDE1
