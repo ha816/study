@@ -376,16 +376,20 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 	}
 }
 ```
-여기서 제공되는 
+여기서 제공되는 항목 중 실제 문서의 정보를 담고 있는 항목은 _source 항목이다. 그 밖에 _index, _type, _id, _score 함수는 엘라스틱 서치가 직접 생성한 메타 필드다. 이제 이 메타 필드를 한번 알아보도록 하자.
+
+#### _index
+
+_index 메타 필드는 해당 문서가 속한 인덱스의 이름을 담고 있다. 이를 이용해 검색된 문서의 인덱스를 알 수 있고, 해당 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MjIxNjQ1OSwtMjA3NDA1MTA1NiwxNT
-AyMjMyMjQ4LDk4MjUxMTI3LC0xNzQ0NjAxODU1LDUzMjkzNzkz
-MywtMjA0ODQ1ODY4NCwtMTg3OTc3MzQ5MSwtMTg3NDM0MzUzMC
-wtMTUzOTI1NzAyMSwzMjYzMjUzMTEsLTEyMTYyMzgwODMsLTE2
-Njc4NjA2NjQsMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3NT
-Y1MCwtMTU1ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQs
-LTMwNjk1ODczM119
+eyJoaXN0b3J5IjpbMTQ5ODU5NTQ1NywtNzgyMjE2NDU5LC0yMD
+c0MDUxMDU2LDE1MDIyMzIyNDgsOTgyNTExMjcsLTE3NDQ2MDE4
+NTUsNTMyOTM3OTMzLC0yMDQ4NDU4Njg0LC0xODc5NzczNDkxLC
+0xODc0MzQzNTMwLC0xNTM5MjU3MDIxLDMyNjMyNTMxMSwtMTIx
+NjIzODA4MywtMTY2Nzg2MDY2NCwyMDQxNzAxNzk3LDc0MDgyNj
+M4NywxMjc5Njc1NjUwLC0xNTU4OTgxMjYzLC00MDQ5MjcwOTMs
+MTE2MjY5MzI4NF19
 -->
