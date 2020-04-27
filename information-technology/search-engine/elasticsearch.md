@@ -398,14 +398,18 @@ _index 메타 필드는 해당 문서가 속한 인덱스의 이름을 담고 �
 
 문서의 원본 데이터를 제공한다. 내부에는 색인 시 전달된 원본 JSON 문서의 본문이 저장되어 있다. **일반적으로 원본JSON 문서를 검색 결과로 표시할때 사용한다.**
 
+#### _all 메타 필드
+
+all 메타 필드는 색인에 사용된 모든 필드의 정보를 가진 메타 필드이다. 
+
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNjQ3NjU4MiwtMTU0MDM5OTI3MSwtOD
-gwOTIxMDU0LC03ODIyMTY0NTksLTIwNzQwNTEwNTYsMTUwMjIz
-MjI0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLT
-IwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1
-MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3OD
-YwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAs
-LTE1NTg5ODEyNjNdfQ==
+eyJoaXN0b3J5IjpbLTE0NDkwODQ4NTIsMTMyNjQ3NjU4MiwtMT
+U0MDM5OTI3MSwtODgwOTIxMDU0LC03ODIyMTY0NTksLTIwNzQw
+NTEwNTYsMTUwMjIzMjI0OCw5ODI1MTEyNywtMTc0NDYwMTg1NS
+w1MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4
+NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2Mj
+M4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mzg3
+LDEyNzk2NzU2NTBdfQ==
 -->
