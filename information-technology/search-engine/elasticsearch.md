@@ -361,18 +361,19 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 
 메타 필드는 엘라스틱 서치에서 생성한 문서에 제공하는 특별한 필드이다. 이것은 메타데이터를 저장하는 특수 목적의 필드로서 이를 이용하면 검색 시 문서를 다양한 형태로 제어하는 것이 가능해진다. 
 
+아래는 색인된 문서를 조회한 경우 반환되는 JSON 예이다. 
 ```
 
-``
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2Nzk1MjY3MCwxNTAyMjMyMjQ4LDk4Mj
-UxMTI3LC0xNzQ0NjAxODU1LDUzMjkzNzkzMywtMjA0ODQ1ODY4
-NCwtMTg3OTc3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1NzAyMS
-wzMjYzMjUzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2NjQsMjA0
-MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1MCwtMTU1ODk4MT
-I2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1ODczMywt
-MjgxODA0MjMzXX0=
+eyJoaXN0b3J5IjpbLTIwNzQwNTEwNTYsMTUwMjIzMjI0OCw5OD
+I1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIwNDg0NTg2
+ODQsLTE4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1MzkyNTcwMj
+EsMzI2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIw
+NDE3MDE3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5OD
+EyNjMsLTQwNDkyNzA5MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMs
+LTI4MTgwNDIzM119
 -->
