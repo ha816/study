@@ -390,12 +390,18 @@ _index 메타 필드는 해당 문서가 속한 인덱스의 이름을 담고 �
 
 문서를 식별하는 유일한 키 값이다. 한 인덱스에 색인된 문서마다 서로 다른 키 값을 가진다. 
 
-####
+#### _uid 메타 필드
+
+이 필드는 특수한 목적의 식별키다. "#" 태그를 사용해 _type과 _id를 조합해 사용한다. 하지만 내부적으로만 사용되기 때문에 검색시 조회되는 값을 아니다. 
+
+#### _source 메타 필드
+
+문서의 원본 데이터를 제공한다. 내부에는 색인 시 전달된 원본 JSON 문서의 본문이 저장되어 있다. **일반적으로 원본JSON 문서를 검색 결과로 표시할때 사용한다.**
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODc4NjE2NSwtMTU0MDM5OTI3MSwtOD
+eyJoaXN0b3J5IjpbMTMyNjQ3NjU4MiwtMTU0MDM5OTI3MSwtOD
 gwOTIxMDU0LC03ODIyMTY0NTksLTIwNzQwNTEwNTYsMTUwMjIz
 MjI0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLT
 IwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1
