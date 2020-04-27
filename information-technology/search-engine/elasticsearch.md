@@ -390,26 +390,31 @@ _index 메타 필드는 해당 문서가 속한 인덱스의 이름을 담고 �
 
 문서를 식별하는 유일한 키 값이다. 한 인덱스에 색인된 문서마다 서로 다른 키 값을 가진다. 
 
-#### _uid 메타 필드
+#### _uid
 
 이 필드는 특수한 목적의 식별키다. "#" 태그를 사용해 _type과 _id를 조합해 사용한다. 하지만 내부적으로만 사용되기 때문에 검색시 조회되는 값을 아니다. 
 
-#### _source 메타 필드
+#### _source
 
 문서의 원본 데이터를 제공한다. 내부에는 색인 시 전달된 원본 JSON 문서의 본문이 저장되어 있다. **일반적으로 원본JSON 문서를 검색 결과로 표시할때 사용한다.**
 
-#### _all 메타 필드
+#### ~~_all~~
 
-all 메타 필드는 색인에 사용된 모든 필드의 정보를 가진 메타 필드이다. 
+all 메타 필드는 색인에 사용된 모든 필드의 정보를 가진 메타 필드이다. 모든 필드의 내용이 하나의 텍스트로 합쳐져서 제공된다. 특정 필드가 아닌 문서 전체 필드에서 특정 키워드를 검색한다면 _all  필드를 사용하자 
+
+하지만 _all 필드는 데이터 크기를 너무 많이 차지하는 문제가 있어 엘라스틱 서치 6.
+
+
+gkwlaks
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDkwODQ4NTIsMTMyNjQ3NjU4MiwtMT
-U0MDM5OTI3MSwtODgwOTIxMDU0LC03ODIyMTY0NTksLTIwNzQw
-NTEwNTYsMTUwMjIzMjI0OCw5ODI1MTEyNywtMTc0NDYwMTg1NS
-w1MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4
-NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2Mj
-M4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQwODI2Mzg3
-LDEyNzk2NzU2NTBdfQ==
+eyJoaXN0b3J5IjpbLTI0MDgyMjg3NywtMTQ0OTA4NDg1MiwxMz
+I2NDc2NTgyLC0xNTQwMzk5MjcxLC04ODA5MjEwNTQsLTc4MjIx
+NjQ1OSwtMjA3NDA1MTA1NiwxNTAyMjMyMjQ4LDk4MjUxMTI3LC
+0xNzQ0NjAxODU1LDUzMjkzNzkzMywtMjA0ODQ1ODY4NCwtMTg3
+OTc3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1NzAyMSwzMjYzMj
+UzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2NjQsMjA0MTcwMTc5
+Nyw3NDA4MjYzODddfQ==
 -->
