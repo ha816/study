@@ -408,13 +408,15 @@ all 메타 필드는 색인에 사용된 모든 필드의 정보를 가진 메�
 특정 문서를 특정 샤드에 하기 위해 사용자가 지정하는 메타 필드다. 기본적으로 색인을 하면 해당 문서는 다음 수식에 따라 문서 id를 이용해 문서가 색인될 샤드를 결정한다. 별도의 설정 없이 문서를 색인하면 문서는 샤드에 골고루 분산되어 저장된다.
 
 ```
-Has
+Hash (document_id) % num_of_shards -- 해시로 분산
 ```
+
+어떤 경우에는 특정 문서들을 하나의 샤드로 저장하고 싶을 수 있다. 이때 _routing 필드를 사용하면 가능한데 색인할때 해당 문서들을 동일한 라우팅 ID를 지정한다. 문서 ID를 사용하는 대신 파라미터로 입력한 _routing 값이 샤드를
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3NjU0MTA5LC0xNzU4NjkzNzIzLC0xND
+eyJoaXN0b3J5IjpbOTI2Njc4MDM2LC0xNzU4NjkzNzIzLC0xND
 Q5MDg0ODUyLDEzMjY0NzY1ODIsLTE1NDAzOTkyNzEsLTg4MDky
 MTA1NCwtNzgyMjE2NDU5LC0yMDc0MDUxMDU2LDE1MDIyMzIyND
 gsOTgyNTExMjcsLTE3NDQ2MDE4NTUsNTMyOTM3OTMzLC0yMDQ4
