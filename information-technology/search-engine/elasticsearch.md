@@ -386,14 +386,18 @@ _index 메타 필드는 해당 문서가 속한 인덱스의 이름을 담고 �
 
 해당 문서가 속한 매핑의 타입 정보를 담고 있다. 이로 인덱스 내부에서 타입별로 몇개의 문서가 있는지 확인할 수 있다. 
 
+#### _id
+
+문서를 식별하는 유일한 키 값이다. 한 인덱스에 색인된 문서마다 서로 다른 키 값을 가진다. 
+
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTcxOTM5MiwtODgwOTIxMDU0LC03OD
-IyMTY0NTksLTIwNzQwNTEwNTYsMTUwMjIzMjI0OCw5ODI1MTEy
-NywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLT
-E4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2
-MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MD
-E3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMs
-LTQwNDkyNzA5M119
+eyJoaXN0b3J5IjpbLTE1NDAzOTkyNzEsLTg4MDkyMTA1NCwtNz
+gyMjE2NDU5LC0yMDc0MDUxMDU2LDE1MDIyMzIyNDgsOTgyNTEx
+MjcsLTE3NDQ2MDE4NTUsNTMyOTM3OTMzLC0yMDQ4NDU4Njg0LC
+0xODc5NzczNDkxLC0xODc0MzQzNTMwLC0xNTM5MjU3MDIxLDMy
+NjMyNTMxMSwtMTIxNjIzODA4MywtMTY2Nzg2MDY2NCwyMDQxNz
+AxNzk3LDc0MDgyNjM4NywxMjc5Njc1NjUwLC0xNTU4OTgxMjYz
+LC00MDQ5MjcwOTNdfQ==
 -->
