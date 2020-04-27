@@ -435,16 +435,18 @@ Hash (_routing) % num_of_shards -- 해시로 분산
 * 정렬이 필요한 항목
 * 집계해야하는 항목
 
-위 세 가지 경우라면 반드시 keyword
+위 세 가지 경우라면 반드시 keyword 타입을 사용해야 한다. 만약 'elastic search'라는 문자열이 keyword 타입이 되면 'elastic'이나 'search'로는 절대 검색되지 않는다. 정확하게 'elastic search'로 질의해야만 검색 된다. 
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMzQyMjMzNiwtMTgxMDcxNTI0MywtMT
-c1ODY5MzcyMywtMTQ0OTA4NDg1MiwxMzI2NDc2NTgyLC0xNTQw
-Mzk5MjcxLC04ODA5MjEwNTQsLTc4MjIxNjQ1OSwtMjA3NDA1MT
-A1NiwxNTAyMjMyMjQ4LDk4MjUxMTI3LC0xNzQ0NjAxODU1LDUz
-MjkzNzkzMywtMjA0ODQ1ODY4NCwtMTg3OTc3MzQ5MSwtMTg3ND
-M0MzUzMCwtMTUzOTI1NzAyMSwzMjYzMjUzMTEsLTEyMTYyMzgw
-ODMsLTE2Njc4NjA2NjRdfQ==
+eyJoaXN0b3J5IjpbLTIwMzg2NjI5NjgsLTE4MTA3MTUyNDMsLT
+E3NTg2OTM3MjMsLTE0NDkwODQ4NTIsMTMyNjQ3NjU4MiwtMTU0
+MDM5OTI3MSwtODgwOTIxMDU0LC03ODIyMTY0NTksLTIwNzQwNT
+EwNTYsMTUwMjIzMjI0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1
+MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4Nz
+QzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4
+MDgzLC0xNjY3ODYwNjY0XX0=
 -->
