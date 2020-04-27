@@ -421,20 +421,23 @@ Hash (_routing) % num_of_shards -- 해시로 분산
 
 매핑 설정을 위해서는 엘라스틱서치에서 제공하는 데이터 타입 어떠한 종류가 있는지 아는 것이 중요하다. 필드에는 아래와 같은 데이터 타입이 있다.
 
-* keyword, text 같은 데이터 타입
+* keyword, text 데이터 타입
 * date, long, double, integer, boolean, ip 같은 일반적인 데이터 타입
-* 객체 또는 중첩문과 같은 JSON 
+* 객체 또는 중첩문과 같은 JSON 계층의 데이터 타입
+* geo_point, geo_shape 같은 특수한 데이터 타입
 
+### keyword 
 
+말 그대로 키워드 형태로 사용할 데이터에 적잡한 데이터 타입이다. Keyword 타입을 사용할 경우 별도의 분석기를 거치지 않고 원문 그대로 색인하기 때문에 특정 코드나 키워드등 정형화된 컨텐츠에 주로 사용한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzAyMjkwOTksLTE4MTA3MTUyNDMsLT
-E3NTg2OTM3MjMsLTE0NDkwODQ4NTIsMTMyNjQ3NjU4MiwtMTU0
-MDM5OTI3MSwtODgwOTIxMDU0LC03ODIyMTY0NTksLTIwNzQwNT
-EwNTYsMTUwMjIzMjI0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1
-MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4Nz
-QzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4
-MDgzLC0xNjY3ODYwNjY0XX0=
+eyJoaXN0b3J5IjpbNzc4NDY5MTc1LC0xODEwNzE1MjQzLC0xNz
+U4NjkzNzIzLC0xNDQ5MDg0ODUyLDEzMjY0NzY1ODIsLTE1NDAz
+OTkyNzEsLTg4MDkyMTA1NCwtNzgyMjE2NDU5LC0yMDc0MDUxMD
+U2LDE1MDIyMzIyNDgsOTgyNTExMjcsLTE3NDQ2MDE4NTUsNTMy
+OTM3OTMzLC0yMDQ4NDU4Njg0LC0xODc5NzczNDkxLC0xODc0Mz
+QzNTMwLC0xNTM5MjU3MDIxLDMyNjMyNTMxMSwtMTIxNjIzODA4
+MywtMTY2Nzg2MDY2NF19
 -->
