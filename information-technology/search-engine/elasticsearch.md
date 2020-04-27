@@ -382,16 +382,18 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 
 _index 메타 필드는 해당 문서가 속한 인덱스의 이름을 담고 있다. 이를 이용해 검색된 문서의 인덱스를 알 수 있고, 해당 인덱스에 몇개의 문서가 있는지 확인할 수 있다. 
 
+#### _type
 
+해당 문서가 속한 매핑의 타입 정보를 담고 있다. 이로 인덱스 내부에서 타입별로 몇개의 문서가 있는지 확인할 수 있다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcxNTcyNzM0LC04ODA5MjEwNTQsLTc4Mj
-IxNjQ1OSwtMjA3NDA1MTA1NiwxNTAyMjMyMjQ4LDk4MjUxMTI3
-LC0xNzQ0NjAxODU1LDUzMjkzNzkzMywtMjA0ODQ1ODY4NCwtMT
-g3OTc3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1NzAyMSwzMjYz
-MjUzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2NjQsMjA0MTcwMT
-c5Nyw3NDA4MjYzODcsMTI3OTY3NTY1MCwtMTU1ODk4MTI2Mywt
-NDA0OTI3MDkzXX0=
+eyJoaXN0b3J5IjpbLTc0MTcxOTM5MiwtODgwOTIxMDU0LC03OD
+IyMTY0NTksLTIwNzQwNTEwNTYsMTUwMjIzMjI0OCw5ODI1MTEy
+NywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLT
+E4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2
+MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MD
+E3OTcsNzQwODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMs
+LTQwNDkyNzA5M119
 -->
