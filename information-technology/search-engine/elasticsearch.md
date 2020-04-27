@@ -337,12 +337,19 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 #### similarity
 유사도 측정 알고리즘을 지정한다. 유사도 측정 방식의 기본 알고리즘인 BM25를 다른 알고리즘으로 변강할 수 있다.
 
-* BM25
-	* Okapi BM25 알고리즘으로 엘라스틱 서치가 사용하는 기본 유사도 측정 알고리즘이다.
+| 알고리즘 | 설명|
+|--|--|
+|BM25  | Okapi BM25 알고리즘으로 엘라스틱 서치가 사용하는 기본 유사도 측정 알고리즘이다. |
+|  |  |
+|  |  |
+
+
+* 
+	* 
 * classic
 	* TF/IDF 기반 알고리즘이다. 문서 내 용어의 갯수와 전체 용어의 갯수로 유사도를 계산한다.
 * boolean
-	* 복잡한 수학적 모델을 사용하지 않고 단순히 boolean연산으로 유사도를 측정한다. score는 검색어 일치 여부에 따라 결정되며, 
+	* 복잡한 수학적 모델을 사용하지 않고 단순히 boolean연산으로 유사도를 측정한다. score는 검색어 일치 여부에 따라 결정되며, 일치 여부에 따라 쿼리의 가중치(boost)에 사용된 점수로만 유사도를 계산한다.
 
 #### store
 필드의 값을 저장해 검색 결과에 값을 포함하기 위한 매핑 파라미터다. 기본적으로 _source에 색이된 문서가 저장된다. 
@@ -366,11 +373,11 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NDI1MTgwLDUzMjkzNzkzMywtMjA0OD
-Q1ODY4NCwtMTg3OTc3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1
-NzAyMSwzMjYzMjUzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2Nj
-QsMjA0MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1MCwtMTU1
-ODk4MTI2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1OD
-czMywtMjgxODA0MjMzLC0yMDA0MDQ4MzQ1LC00NjM4MDU3MSwt
-OTYzNTM0MzEyXX0=
+eyJoaXN0b3J5IjpbLTE3NDQ2MDE4NTUsNTMyOTM3OTMzLC0yMD
+Q4NDU4Njg0LC0xODc5NzczNDkxLC0xODc0MzQzNTMwLC0xNTM5
+MjU3MDIxLDMyNjMyNTMxMSwtMTIxNjIzODA4MywtMTY2Nzg2MD
+Y2NCwyMDQxNzAxNzk3LDc0MDgyNjM4NywxMjc5Njc1NjUwLC0x
+NTU4OTgxMjYzLC00MDQ5MjcwOTMsMTE2MjY5MzI4NCwtMzA2OT
+U4NzMzLC0yODE4MDQyMzMsLTIwMDQwNDgzNDUsLTQ2MzgwNTcx
+LC05NjM1MzQzMTJdfQ==
 -->
