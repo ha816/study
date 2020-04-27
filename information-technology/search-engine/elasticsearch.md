@@ -411,16 +411,22 @@ all 메타 필드는 색인에 사용된 모든 필드의 정보를 가진 메�
 Hash (document_id) % num_of_shards -- 해시로 분산
 ```
 
-어떤 경우에는 특정 문서들을 하나의 샤드로 저장하고 싶을 수 있다. 이때 _routing 필드를 사용하면 가능한데 색인할때 해당 문서들을 동일한 라우팅 ID를 지정한다. 문서 ID를 사용하는 대신 파라미터로 입력한 _routing 값이 샤드를
+어떤 경우에는 특정 문서들을 하나의 샤드로 저장하고 싶을 수 있다. 이때 _routing 필드를 사용하면 가능한데 색인할때 해당 문서들을 동일한 라우팅 ID를 지정한다. 문서 ID를 사용하는 대신 파라미터로 입력한 _routing 값이 샤드를 결정하는데 사용된다.
+
+```
+Hash (_routing) % num_of_shards -- 해시로 분산
+```
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI2Njc4MDM2LC0xNzU4NjkzNzIzLC0xND
-Q5MDg0ODUyLDEzMjY0NzY1ODIsLTE1NDAzOTkyNzEsLTg4MDky
-MTA1NCwtNzgyMjE2NDU5LC0yMDc0MDUxMDU2LDE1MDIyMzIyND
-gsOTgyNTExMjcsLTE3NDQ2MDE4NTUsNTMyOTM3OTMzLC0yMDQ4
-NDU4Njg0LC0xODc5NzczNDkxLC0xODc0MzQzNTMwLC0xNTM5Mj
-U3MDIxLDMyNjMyNTMxMSwtMTIxNjIzODA4MywtMTY2Nzg2MDY2
-NCwyMDQxNzAxNzk3XX0=
+eyJoaXN0b3J5IjpbLTE4MTA3MTUyNDMsLTE3NTg2OTM3MjMsLT
+E0NDkwODQ4NTIsMTMyNjQ3NjU4MiwtMTU0MDM5OTI3MSwtODgw
+OTIxMDU0LC03ODIyMTY0NTksLTIwNzQwNTEwNTYsMTUwMjIzMj
+I0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIw
+NDg0NTg2ODQsLTE4Nzk3NzM0OTEsLTE4NzQzNDM1MzAsLTE1Mz
+kyNTcwMjEsMzI2MzI1MzExLC0xMjE2MjM4MDgzLC0xNjY3ODYw
+NjY0LDIwNDE3MDE3OTddfQ==
 -->
