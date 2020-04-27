@@ -357,15 +357,15 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 |with_offsets|용어, 문자 오프셋을 저장한다.|
 |with_positions_offsets|용어, 용어의 시작과 끝 위치, 문자 오프셋을 모두 저장한다.|
 
-
+### 메타 필드(Meta Fields
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMjIzMjI0OCw5ODI1MTEyNywtMTc0ND
-YwMTg1NSw1MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0
-OTEsLTE4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC
-0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQw
-ODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNz
-A5MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4MTgwNDIzMywt
-MjAwNDA0ODM0NV19
+eyJoaXN0b3J5IjpbMTAzNjE3MTAyOSwxNTAyMjMyMjQ4LDk4Mj
+UxMTI3LC0xNzQ0NjAxODU1LDUzMjkzNzkzMywtMjA0ODQ1ODY4
+NCwtMTg3OTc3MzQ5MSwtMTg3NDM0MzUzMCwtMTUzOTI1NzAyMS
+wzMjYzMjUzMTEsLTEyMTYyMzgwODMsLTE2Njc4NjA2NjQsMjA0
+MTcwMTc5Nyw3NDA4MjYzODcsMTI3OTY3NTY1MCwtMTU1ODk4MT
+I2MywtNDA0OTI3MDkzLDExNjI2OTMyODQsLTMwNjk1ODczMywt
+MjgxODA0MjMzXX0=
 -->
