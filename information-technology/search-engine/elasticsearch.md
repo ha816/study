@@ -464,12 +464,17 @@ Date 타입은 JSON 포맷에서 문자열로 처리된다. 날짜는 다양한 
 
 ### Range 
 
-범위 데이터를 저장할때 사용한다. 
+범위 데이터를 저장할때 사용한다. 다양한 범위를 나타낼 수 있다. 
+integer_range, date_range, ip_range 등등
+
+### Object
+
+JSON 포맷 문서는 내부 객체를 계층적으로 포함 할 수 있다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1Mjc1MDQ4NSw0MjkxNzEwMDQsLTE1OD
+eyJoaXN0b3J5IjpbMTA5NzgzNjg2OSw0MjkxNzEwMDQsLTE1OD
 QyNjAyMDUsLTE4MTA3MTUyNDMsLTE3NTg2OTM3MjMsLTE0NDkw
 ODQ4NTIsMTMyNjQ3NjU4MiwtMTU0MDM5OTI3MSwtODgwOTIxMD
 U0LC03ODIyMTY0NTksLTIwNzQwNTEwNTYsMTUwMjIzMjI0OCw5
