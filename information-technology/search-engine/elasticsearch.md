@@ -351,32 +351,21 @@ basic_date_time -> yyyyMMdd'T'HHmmss.SSSZ
 
 | 알고리즘 | 설명|
 |--|--|
-|BM25  | Okapi BM25 알고리즘으로 엘라스틱 서치가 사용하는 기본 유사도 측정 알고리즘이다. |
-|classic | TF/IDF 기반 알고리즘이다. 문서 내 용어의 갯수와 전체 용어의 갯수로 유사도를 계산한다.|
-|boolean|복잡한 수학적 모델을 사용하지 않고 단순히 boolean연산으로 유사도를 측정한다. score는 검색어 일치 여부에 따라 결정되며, 일치 여부에 따라 쿼리의 가중치(boost)에 사용된 점수로만 유사도를 계산한다.|
-
-
-* no
-	* term vector를 저장하지 않는다.
-* yes
-	* 필드와 용어만 저장한다.
-* with_positions
-	* 용어, 용어의 시작과 끝 위치를 저장한다.
-* with_offsets
-	* 용어, 문자 오프셋을 저장한다.
-* with_positions_offsets
-	* 용어, 용어의 시작과 끝 위치, 문자 오프셋을 모두 저장한다.
-
+|no  | term vector를 저장하지 않는다.|
+|yes | 필드와 용어만 저장한다.|
+|with_positions|용어, 용어의 시작과 끝 위치를 저장한다.|
+|with_offsets|용어, 문자 오프셋을 저장한다.|
+|with_positions_offsets|용어, 용어의 시작과 끝 위치, 문자 오프셋을 모두 저장한다.|
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyNTExMjcsLTE3NDQ2MDE4NTUsNTMyOT
-M3OTMzLC0yMDQ4NDU4Njg0LC0xODc5NzczNDkxLC0xODc0MzQz
-NTMwLC0xNTM5MjU3MDIxLDMyNjMyNTMxMSwtMTIxNjIzODA4My
-wtMTY2Nzg2MDY2NCwyMDQxNzAxNzk3LDc0MDgyNjM4NywxMjc5
-Njc1NjUwLC0xNTU4OTgxMjYzLC00MDQ5MjcwOTMsMTE2MjY5Mz
-I4NCwtMzA2OTU4NzMzLC0yODE4MDQyMzMsLTIwMDQwNDgzNDUs
-LTQ2MzgwNTcxXX0=
+eyJoaXN0b3J5IjpbMTUwMjIzMjI0OCw5ODI1MTEyNywtMTc0ND
+YwMTg1NSw1MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0
+OTEsLTE4NzQzNDM1MzAsLTE1MzkyNTcwMjEsMzI2MzI1MzExLC
+0xMjE2MjM4MDgzLC0xNjY3ODYwNjY0LDIwNDE3MDE3OTcsNzQw
+ODI2Mzg3LDEyNzk2NzU2NTAsLTE1NTg5ODEyNjMsLTQwNDkyNz
+A5MywxMTYyNjkzMjg0LC0zMDY5NTg3MzMsLTI4MTgwNDIzMywt
+MjAwNDA0ODM0NV19
 -->
