@@ -484,12 +484,23 @@ Nested 타입을 사용하면 검색할대 일치하는 문서만 정확하게 �
 
 ### 역색인 구조
 
-루씬의 색인은 역색인이라는 특수한 방식
+루씬의 색인은 역색인이라는 특수한 방식을 사용한다. 역색인 구조를 간단히 정리하자면 아래와 같다. 
+
+* 모든 문서가 가지는 단어의 고유 단어 목록
+* 해당 단어가 어떤 문서에 속해 있는지에 대한 정보
+* 전체 문서에 각 단어가 몇 개 들어있는지에 대한 정보
+* 하나의 문서에 단어가 몇 번씩 출현했는지에 대한 빈도
+
+예를 들어 2개의 문서가 있다고 하자. 
+```
+문서1
+딤
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MjI2NTYwNSwtNjk4MTEzMTI4LDM4Mj
+eyJoaXN0b3J5IjpbLTMyNDMyNTMwNSwtNjk4MTEzMTI4LDM4Mj
 Q0NzgwNCwxMDk3ODM2ODY5LDQyOTE3MTAwNCwtMTU4NDI2MDIw
 NSwtMTgxMDcxNTI0MywtMTc1ODY5MzcyMywtMTQ0OTA4NDg1Mi
 wxMzI2NDc2NTgyLC0xNTQwMzk5MjcxLC04ODA5MjEwNTQsLTc4
