@@ -503,19 +503,19 @@ Elasticsearch is great
 문서의 역색인을 만들기 위해선 각 문서를 토큰화 해야 한다. 토큰화된 단어에 대해 문서 상의 위치와 출현 빈도 등의 정보를 체크한다. 따라서 결과물은 대략 다음과 같다. 
 
 토큰 정보
-|토큰| 문서번호|텀의 위치| 
-|--|--|
-|  |  |
+|토큰| 문서번호|텀의 위치(Position)| 텀의빈도(Term Frequency)|
+|--|--|--|--|
+|elasticsearch  | doc1 | 1| 1| 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMDkwOTc3MCwxNzM3NzU3NzEyLC02OT
-gxMTMxMjgsMzgyNDQ3ODA0LDEwOTc4MzY4NjksNDI5MTcxMDA0
-LC0xNTg0MjYwMjA1LC0xODEwNzE1MjQzLC0xNzU4NjkzNzIzLC
-0xNDQ5MDg0ODUyLDEzMjY0NzY1ODIsLTE1NDAzOTkyNzEsLTg4
-MDkyMTA1NCwtNzgyMjE2NDU5LC0yMDc0MDUxMDU2LDE1MDIyMz
-IyNDgsOTgyNTExMjcsLTE3NDQ2MDE4NTUsNTMyOTM3OTMzLC0y
-MDQ4NDU4Njg0XX0=
+eyJoaXN0b3J5IjpbNzgyMzkyOTgxLDE3Mzc3NTc3MTIsLTY5OD
+ExMzEyOCwzODI0NDc4MDQsMTA5NzgzNjg2OSw0MjkxNzEwMDQs
+LTE1ODQyNjAyMDUsLTE4MTA3MTUyNDMsLTE3NTg2OTM3MjMsLT
+E0NDkwODQ4NTIsMTMyNjQ3NjU4MiwtMTU0MDM5OTI3MSwtODgw
+OTIxMDU0LC03ODIyMTY0NTksLTIwNzQwNTEwNTYsMTUwMjIzMj
+I0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIw
+NDg0NTg2ODRdfQ==
 -->
