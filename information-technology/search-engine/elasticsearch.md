@@ -481,14 +481,16 @@ Nested 타입을 사용하면 검색할대 일치하는 문서만 정확하게 �
 
 엘락스틱서치는 루씬을 기반으로 구축된 텍스트 기반 검색엔진이다. 루씬은 내부적으로 다양한 분석기를 제공하는데, 엘라스틱서치는 루씬이 제공하는 분석기를 그대로 활용한다. 테스트 분석을 이해하려면 루씬이 제공하는 분석기가 어떻게 동작하는지를 이해하는게 가장 중요하다. 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyNDQ3ODA0LDEwOTc4MzY4NjksNDI5MT
-cxMDA0LC0xNTg0MjYwMjA1LC0xODEwNzE1MjQzLC0xNzU4Njkz
-NzIzLC0xNDQ5MDg0ODUyLDEzMjY0NzY1ODIsLTE1NDAzOTkyNz
-EsLTg4MDkyMTA1NCwtNzgyMjE2NDU5LC0yMDc0MDUxMDU2LDE1
-MDIyMzIyNDgsOTgyNTExMjcsLTE3NDQ2MDE4NTUsNTMyOTM3OT
-MzLC0yMDQ4NDU4Njg0LC0xODc5NzczNDkxLC0xODc0MzQzNTMw
-LC0xNTM5MjU3MDIxXX0=
+eyJoaXN0b3J5IjpbLTY5ODExMzEyOCwzODI0NDc4MDQsMTA5Nz
+gzNjg2OSw0MjkxNzEwMDQsLTE1ODQyNjAyMDUsLTE4MTA3MTUy
+NDMsLTE3NTg2OTM3MjMsLTE0NDkwODQ4NTIsMTMyNjQ3NjU4Mi
+wtMTU0MDM5OTI3MSwtODgwOTIxMDU0LC03ODIyMTY0NTksLTIw
+NzQwNTEwNTYsMTUwMjIzMjI0OCw5ODI1MTEyNywtMTc0NDYwMT
+g1NSw1MzI5Mzc5MzMsLTIwNDg0NTg2ODQsLTE4Nzk3NzM0OTEs
+LTE4NzQzNDM1MzBdfQ==
 -->
