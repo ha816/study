@@ -494,13 +494,18 @@ Nested 타입을 사용하면 검색할대 일치하는 문서만 정확하게 �
 예를 들어 2개의 문서가 있다고 하자. 
 ```
 문서1
-딤
+elasticsearch is cool
+
+문서2
+Elasticsearch is great
 ```
+
+문서의 역색인을 만들기 위해선 각 문서를 토큰화 해야 한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNDMyNTMwNSwtNjk4MTEzMTI4LDM4Mj
+eyJoaXN0b3J5IjpbMTczNzc1NzcxMiwtNjk4MTEzMTI4LDM4Mj
 Q0NzgwNCwxMDk3ODM2ODY5LDQyOTE3MTAwNCwtMTU4NDI2MDIw
 NSwtMTgxMDcxNTI0MywtMTc1ODY5MzcyMywtMTQ0OTA4NDg1Mi
 wxMzI2NDc2NTgyLC0xNTQwMzk5MjcxLC04ODA5MjEwNTQsLTc4
