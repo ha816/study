@@ -512,17 +512,21 @@ Elasticsearch is great
 
 위 내용을 보면 특정 토큰이 어떤 문서에서 어느 위치에 나왔고, 볓번 나왔는지에 대한 정보를 얻을 수 있다. 검색어가 존재하는 문서를 찾기 위해 검색어와 동일한 토큰을 찾아 해당 토큰이 존재하는 문서를 찾아 간다.
 
-cool의 경우, 문서 1의 내용이 나온다. 하지만 "elasticsaerch"로 검색을 하면 어떻게 될까? 예상으로는 문서1과 문서2에 해당하는 내용이 다 나와야 할 것이다. 
+cool의 경우, 문서 1의 내용이 나온다. 하지만 "elasticsaerch"로 검색을 하면 어떻게 될까? 예상으로는 문서1과 문서2에 해당하는 내용이 다 나와야 할 것이다. 하지만 토큰의 정보가 정확하게 일치하는 데이터만 출력하기 때문에 문서1은 출력되지만 문서2는 출력되지 않는다. 
+
+이 문제를 해결하는 가장 간단한 방법은 텍스트 전체를 소문자로 변환한 다음 색인하는 것이다. 
+
+색인 한다는 것은 역색인 파일을 만든다는 것이다. 그렇다고 원문 자체를 바꾸는 의미는 아니다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxNTQ5OTc0LC00MzQzMDcyMyw3ODIzOT
-I5ODEsMTczNzc1NzcxMiwtNjk4MTEzMTI4LDM4MjQ0NzgwNCwx
-MDk3ODM2ODY5LDQyOTE3MTAwNCwtMTU4NDI2MDIwNSwtMTgxMD
-cxNTI0MywtMTc1ODY5MzcyMywtMTQ0OTA4NDg1MiwxMzI2NDc2
-NTgyLC0xNTQwMzk5MjcxLC04ODA5MjEwNTQsLTc4MjIxNjQ1OS
-wtMjA3NDA1MTA1NiwxNTAyMjMyMjQ4LDk4MjUxMTI3LC0xNzQ0
-NjAxODU1XX0=
+eyJoaXN0b3J5IjpbLTcxNTU3ODI0MSw0OTE1NDk5NzQsLTQzND
+MwNzIzLDc4MjM5Mjk4MSwxNzM3NzU3NzEyLC02OTgxMTMxMjgs
+MzgyNDQ3ODA0LDEwOTc4MzY4NjksNDI5MTcxMDA0LC0xNTg0Mj
+YwMjA1LC0xODEwNzE1MjQzLC0xNzU4NjkzNzIzLC0xNDQ5MDg0
+ODUyLDEzMjY0NzY1ODIsLTE1NDAzOTkyNzEsLTg4MDkyMTA1NC
+wtNzgyMjE2NDU5LC0yMDc0MDUxMDU2LDE1MDIyMzIyNDgsOTgy
+NTExMjddfQ==
 -->
