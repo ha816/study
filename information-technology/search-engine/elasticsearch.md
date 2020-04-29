@@ -520,13 +520,13 @@ cool의 경우, 문서 1의 내용이 나온다. 하지만 "elasticsaerch"로 �
 
 색인할때 특정한 규칙과 흐름에 의해 텍스트를 변경하는 과정을 분석(Analyze)라고 하며 이 처리는 분석기 모듈의 조합으로 처리된다.
 
-### qns
+### 분석기의 구조 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4NTc0ODIzLC0zNjQ1NTY2MzYsNDkxNT
+eyJoaXN0b3J5IjpbNjIyMjM4MjE0LC0zNjQ1NTY2MzYsNDkxNT
 Q5OTc0LC00MzQzMDcyMyw3ODIzOTI5ODEsMTczNzc1NzcxMiwt
 Njk4MTEzMTI4LDM4MjQ0NzgwNCwxMDk3ODM2ODY5LDQyOTE3MT
 AwNCwtMTU4NDI2MDIwNSwtMTgxMDcxNTI0MywtMTc1ODY5Mzcy
