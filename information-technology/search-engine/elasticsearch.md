@@ -506,16 +506,20 @@ Elasticsearch is great
 |토큰| 문서번호|텀의 위치(Position)| 텀의빈도(Term Frequency)|
 |--|--|--|--|
 |elasticsearch  | doc1 | 1| 1| 
+|Elasticsearch  | doc2 | 1| 1| 
+|is  | doc1, doc2 | 2,2| 2| 
+|cool  | doc1 | 3| 1| 
+|great  | doc2 | 3| 1| 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgyMzkyOTgxLDE3Mzc3NTc3MTIsLTY5OD
-ExMzEyOCwzODI0NDc4MDQsMTA5NzgzNjg2OSw0MjkxNzEwMDQs
-LTE1ODQyNjAyMDUsLTE4MTA3MTUyNDMsLTE3NTg2OTM3MjMsLT
-E0NDkwODQ4NTIsMTMyNjQ3NjU4MiwtMTU0MDM5OTI3MSwtODgw
-OTIxMDU0LC03ODIyMTY0NTksLTIwNzQwNTEwNTYsMTUwMjIzMj
-I0OCw5ODI1MTEyNywtMTc0NDYwMTg1NSw1MzI5Mzc5MzMsLTIw
-NDg0NTg2ODRdfQ==
+eyJoaXN0b3J5IjpbLTM0Mjg4MzU5Miw3ODIzOTI5ODEsMTczNz
+c1NzcxMiwtNjk4MTEzMTI4LDM4MjQ0NzgwNCwxMDk3ODM2ODY5
+LDQyOTE3MTAwNCwtMTU4NDI2MDIwNSwtMTgxMDcxNTI0MywtMT
+c1ODY5MzcyMywtMTQ0OTA4NDg1MiwxMzI2NDc2NTgyLC0xNTQw
+Mzk5MjcxLC04ODA5MjEwNTQsLTc4MjIxNjQ1OSwtMjA3NDA1MT
+A1NiwxNTAyMjMyMjQ4LDk4MjUxMTI3LC0xNzQ0NjAxODU1LDUz
+MjkzNzkzM119
 -->
