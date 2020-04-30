@@ -254,6 +254,11 @@ SHOW SESSION STATUS LIKE 'Sort%';
 |Sort_rows			|279408		|
 |Sort_scan			|1			|
 ```
+각 상태은 아래와 같은 의미를 가진다.
+
+* Sort_merge_passes는 멀티 머지 횟수를 말한다.
+* Sort_range는 인덱스 레인지 스캔을 통해 검색된 결과에 대한 정렬 작업 횟수다.
+* Sort_scan은 풀 테이블 스캔을 통해 검색된 결과에 대한 정렬 작업 횟수다. Sort_scan과 Sort_range는 둘다 
 
 
 
@@ -264,11 +269,11 @@ SHOW SESSION STATUS LIKE 'Sort%';
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNTk0NjExOCwyMDczMTg4NjU5LDE5OD
-g1MTI5NjEsMTc5NzA4ODA3LDE5OTYxNTUxMTcsLTM1MDg2Njcw
-Nyw5Mjg2MzI5OTEsMTYwMDQ3OTM3MywtODg5OTEzNDg3LC02MT
-IwMjc1NTYsMjYzMzI0MjQ4LC0xMjE1ODU5MzA2LDE5NTE4MTM2
-MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LDU4NDc5OTg5NywtND
-M5NTM0MzgwLC0yMTIwNjk5ODM4LDIwNzc3Mjc5NDcsLTE3NjY1
-OTc4NzJdfQ==
+eyJoaXN0b3J5IjpbMTI2NzI3Njg0MCwxNjI1OTQ2MTE4LDIwNz
+MxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4MDcsMTk5NjE1NTEx
+NywtMzUwODY2NzA3LDkyODYzMjk5MSwxNjAwNDc5MzczLC04OD
+k5MTM0ODcsLTYxMjAyNzU1NiwyNjMzMjQyNDgsLTEyMTU4NTkz
+MDYsMTk1MTgxMzYyOCwtMjE0NTIwMjQ5Myw5MjI0NjUyNDUsNT
+g0Nzk5ODk3LC00Mzk1MzQzODAsLTIxMjA2OTk4MzgsMjA3Nzcy
+Nzk0N119
 -->
