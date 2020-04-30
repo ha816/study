@@ -319,7 +319,10 @@ SELECT col1, col2 FROM tb_test WHERE col3 = const GROUP BY col1, col2;
 ```
 -- MIN, MAX 이외의 집합 함수가 사용되었기 때문에 사용불가
 SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
-SELECT DISTINCT col1, col2 FROM tb_test;
+
+-- MIN, MAX 이외의 집합 함수가 사용되었기 때문에 사용불가
+SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
+
 ```
 
 
@@ -330,11 +333,11 @@ SELECT DISTINCT col1, col2 FROM tb_test;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NjU1NTIwNiwxMjQ5MjIxODQzLC01OT
-QyNDk3MzEsLTE4MTc3NzY1MjQsMTIyMTA0MjUwNywyMDc2NDYw
-MjM3LC0yOTM0MzYzNTIsLTIwNzM5MTY3NDYsMTYxMjA1Njg5Ni
-wyMDc2MDg5NTgxLDExNDIxNTA4NjUsLTE0MjM3MjU2MTksLTc4
-NTQwMzk3NSwxNjI1OTQ2MTE4LDIwNzMxODg2NTksMTk4ODUxMj
-k2MSwxNzk3MDg4MDcsMTk5NjE1NTExNywtMzUwODY2NzA3LDky
-ODYzMjk5MV19
+eyJoaXN0b3J5IjpbLTEyMTEyMDM1OTEsLTU4NjU1NTIwNiwxMj
+Q5MjIxODQzLC01OTQyNDk3MzEsLTE4MTc3NzY1MjQsMTIyMTA0
+MjUwNywyMDc2NDYwMjM3LC0yOTM0MzYzNTIsLTIwNzM5MTY3ND
+YsMTYxMjA1Njg5NiwyMDc2MDg5NTgxLDExNDIxNTA4NjUsLTE0
+MjM3MjU2MTksLTc4NTQwMzk3NSwxNjI1OTQ2MTE4LDIwNzMxOD
+g2NTksMTk4ODUxMjk2MSwxNzk3MDg4MDcsMTk5NjE1NTExNywt
+MzUwODY2NzA3XX0=
 -->
