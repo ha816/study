@@ -308,6 +308,9 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
 SELECT DISTINCT col1, col2 FROM tb_test;
 SELECT col1, MIN(col2) FROM tb_test GROUP BY col1;
+SELECT col1, col2 FROM tb_test WHERE co1 < const GROUP BY col1, col2;
+SELECT MAX(col3), MIN(col3), col1, col2 FROM tb_test WHERE co2 > const GROUP BY col1, col2;
+SELECT col2 FROM tb_test WHERE col1 < const GROUP BY col1, col;
 
 
 ```
@@ -319,7 +322,7 @@ SELECT col1, MIN(col2) FROM tb_test GROUP BY col1;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxOTIwODE1NSwxMjQ5MjIxODQzLC01OT
+eyJoaXN0b3J5IjpbLTM0MjUwMDExNiwxMjQ5MjIxODQzLC01OT
 QyNDk3MzEsLTE4MTc3NzY1MjQsMTIyMTA0MjUwNywyMDc2NDYw
 MjM3LC0yOTM0MzYzNTIsLTIwNzM5MTY3NDYsMTYxMjA1Njg5Ni
 wyMDc2MDg5NTgxLDExNDIxNTA4NjUsLTE0MjM3MjU2MTksLTc4
