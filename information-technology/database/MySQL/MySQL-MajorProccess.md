@@ -242,7 +242,7 @@ tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드
 
 ## 정렬 관련 상태 변수 
 
-MySQL 서버는 처리하는 주요 작업에 대해서 해당 작업의 실행 횟수를 상태 변수로 저장하고 있다. 
+MySQL 서버는 처리하는 주요 작업에 대해서 해당 작업의 실행 횟수를 상태 변수로 저장하고 있다. 정렬과
 
 
 # Distinct 처리
@@ -252,7 +252,7 @@ MySQL 서버는 처리하는 주요 작업에 대해서 해당 작업의 실행 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMDk5NzE1NywxNzk3MDg4MDcsMTk5Nj
+eyJoaXN0b3J5IjpbMTA0MDQ1NjgwNCwxNzk3MDg4MDcsMTk5Nj
 E1NTExNywtMzUwODY2NzA3LDkyODYzMjk5MSwxNjAwNDc5Mzcz
 LC04ODk5MTM0ODcsLTYxMjAyNzU1NiwyNjMzMjQyNDgsLTEyMT
 U4NTkzMDYsMTk1MTgxMzYyOCwtMjE0NTIwMjQ5Myw5MjI0NjUy
