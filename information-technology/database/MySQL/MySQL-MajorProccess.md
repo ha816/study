@@ -291,6 +291,10 @@ salaries 테이블의 인덱스는 (emp_no + from_date)로 생성되어 있다. 
 
 MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해보자. 
 
+1. (emp_no + from_date) 인덱스를 차례대로 스캔하면서, emp_no의 첫 
+
+
+
 # Distinct 처리
 
 # 임시 테이블(Using temporary)
@@ -298,11 +302,11 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MjE1MDg2NSwtMTQyMzcyNTYxOSwtNz
-g1NDAzOTc1LDE2MjU5NDYxMTgsMjA3MzE4ODY1OSwxOTg4NTEy
-OTYxLDE3OTcwODgwNywxOTk2MTU1MTE3LC0zNTA4NjY3MDcsOT
-I4NjMyOTkxLDE2MDA0NzkzNzMsLTg4OTkxMzQ4NywtNjEyMDI3
-NTU2LDI2MzMyNDI0OCwtMTIxNTg1OTMwNiwxOTUxODEzNjI4LC
-0yMTQ1MjAyNDkzLDkyMjQ2NTI0NSw1ODQ3OTk4OTcsLTQzOTUz
-NDM4MF19
+eyJoaXN0b3J5IjpbLTQ1MDg5MDI0MywxMTQyMTUwODY1LC0xND
+IzNzI1NjE5LC03ODU0MDM5NzUsMTYyNTk0NjExOCwyMDczMTg4
+NjU5LDE5ODg1MTI5NjEsMTc5NzA4ODA3LDE5OTYxNTUxMTcsLT
+M1MDg2NjcwNyw5Mjg2MzI5OTEsMTYwMDQ3OTM3MywtODg5OTEz
+NDg3LC02MTIwMjc1NTYsMjYzMzI0MjQ4LC0xMjE1ODU5MzA2LD
+E5NTE4MTM2MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LDU4NDc5
+OTg5N119
 -->
