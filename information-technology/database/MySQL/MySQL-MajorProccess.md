@@ -296,8 +296,9 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 3. (emp_no + from_date) 인덱스에서 emp_no의 그 다음 유니크한(그룹 키) 값을 가져온다. 
 4. 3번 단계에서 결과가 더 없으면 처리를 종료하고, 결과가 있다면 2번 과정으로 돌아가서 반복 수행한다.
 
-**MySQL의 루즈 인덱스 스캔 방식은 단일 테이블에 대해 수행되는 GROUP BY 처리에만 사용할 수 있다.** 
+**MySQL의 루즈 인덱스 스캔 방식은 단일 테이블에 대해 수행되는 GROUP BY 처리에만 사용할 수 있다.** 또한 프리픽스 인덱스(Prefix index, 칼럼값의 앞쪽 일부만으로 생성된 인덱스)는 루즈 인덱스 스캔을 사용할 수 없다. 
 
+인덱스 레인지 스캔은 유니크한 값의 수가 많을 수록 성능이 향상 되지만 반면 루즈 인덱스 스캔은 인덱스의 유니크한 값이 적을수록 성능이 향상이 ㄷ
 
 # Distinct 처리
 
@@ -306,11 +307,11 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTA0MjUwNywyMDc2NDYwMjM3LC0yOT
-M0MzYzNTIsLTIwNzM5MTY3NDYsMTYxMjA1Njg5NiwyMDc2MDg5
-NTgxLDExNDIxNTA4NjUsLTE0MjM3MjU2MTksLTc4NTQwMzk3NS
-wxNjI1OTQ2MTE4LDIwNzMxODg2NTksMTk4ODUxMjk2MSwxNzk3
-MDg4MDcsMTk5NjE1NTExNywtMzUwODY2NzA3LDkyODYzMjk5MS
-wxNjAwNDc5MzczLC04ODk5MTM0ODcsLTYxMjAyNzU1NiwyNjMz
-MjQyNDhdfQ==
+eyJoaXN0b3J5IjpbOTg5NTE5NzE1LDEyMjEwNDI1MDcsMjA3Nj
+Q2MDIzNywtMjkzNDM2MzUyLC0yMDczOTE2NzQ2LDE2MTIwNTY4
+OTYsMjA3NjA4OTU4MSwxMTQyMTUwODY1LC0xNDIzNzI1NjE5LC
+03ODU0MDM5NzUsMTYyNTk0NjExOCwyMDczMTg4NjU5LDE5ODg1
+MTI5NjEsMTc5NzA4ODA3LDE5OTYxNTUxMTcsLTM1MDg2NjcwNy
+w5Mjg2MzI5OTEsMTYwMDQ3OTM3MywtODg5OTEzNDg3LC02MTIw
+Mjc1NTZdfQ==
 -->
