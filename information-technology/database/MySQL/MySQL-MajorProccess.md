@@ -302,7 +302,12 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 
 루즈 인덱스 스캔이 사용될 수 있을지 없을지 판단하는 것은 WHERE 절의 조건이나 ORDER BY 절이 인덱스를 사용할 수 있을지 판단하는 것보다 더 어렵다. 다음 예로 루즈 인덱스 스캔을 사용할 수 있을지 판단하는 연습을 해보자.
 
-우선, (col1+col2+col3) 컬럼으로 생성된 tb_test 테이블을 만들어 보자. 
+우선, (col1+col2+col3) 컬럼으로 생성된 tb_test 테이블을 만들어 보자. 그리고 아래 쿼리들은 모두 루즈 인덱스 스캔을 사용할 수 있는 쿼리다. 
+
+```
+SELECT col
+
+```
 
 # Distinct 처리
 
@@ -311,7 +316,7 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTg3ODQ0MDksLTE4MTc3NzY1MjQsMT
+eyJoaXN0b3J5IjpbLTE3NDE2OTI0MjMsLTE4MTc3NzY1MjQsMT
 IyMTA0MjUwNywyMDc2NDYwMjM3LC0yOTM0MzYzNTIsLTIwNzM5
 MTY3NDYsMTYxMjA1Njg5NiwyMDc2MDg5NTgxLDExNDIxNTA4Nj
 UsLTE0MjM3MjU2MTksLTc4NTQwMzk3NSwxNjI1OTQ2MTE4LDIw
