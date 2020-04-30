@@ -310,10 +310,18 @@ SELECT DISTINCT col1, col2 FROM tb_test;
 SELECT col1, MIN(col2) FROM tb_test GROUP BY col1;
 SELECT col1, col2 FROM tb_test WHERE co1 < const GROUP BY col1, col2;
 SELECT MAX(col3), MIN(col3), col1, col2 FROM tb_test WHERE co2 > const GROUP BY col1, col2;
-SELECT col2 FROM tb_test WHERE col1 < const GROUP BY col1, col;
+SELECT col2 FROM tb_test WHERE col1 < const GROUP BY col1, col2;
+SELECT col1, col2 FROM tb_test WHERE col3 = const GROUP BY col1, col2;
+```
 
+다음 쿼리는 루즈 인덱스 스캔을 사용할 수 없는 경우다. 
 
 ```
+-- MIN, MAX 이외의 집합 함수가 사용되었기 때문에 사용불가
+SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
+SELECT DISTINCT col1, col2 FROM tb_test;
+```
+
 
 # Distinct 처리
 
@@ -322,7 +330,7 @@ SELECT col2 FROM tb_test WHERE col1 < const GROUP BY col1, col;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MjUwMDExNiwxMjQ5MjIxODQzLC01OT
+eyJoaXN0b3J5IjpbLTU4NjU1NTIwNiwxMjQ5MjIxODQzLC01OT
 QyNDk3MzEsLTE4MTc3NzY1MjQsMTIyMTA0MjUwNywyMDc2NDYw
 MjM3LC0yOTM0MzYzNTIsLTIwNzM5MTY3NDYsMTYxMjA1Njg5Ni
 wyMDc2MDg5NTgxLDExNDIxNTA4NjUsLTE0MjM3MjU2MTksLTc4
