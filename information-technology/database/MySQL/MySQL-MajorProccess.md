@@ -296,7 +296,7 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 3. (emp_no + from_date) 인덱스에서 emp_no의 그 다음 유니크한(그룹 키) 값을 가져온다. 
 4. 3번 단계에서 결과가 더 없으면 처리를 종료하고, 결과가 있다면 2번 과정으로 돌아가서 반복 수행한다.
 
-
+이 ㅇ
 
 # Distinct 처리
 
@@ -305,11 +305,11 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MzQzNjM1MiwtMjA3MzkxNjc0NiwxNj
-EyMDU2ODk2LDIwNzYwODk1ODEsMTE0MjE1MDg2NSwtMTQyMzcy
-NTYxOSwtNzg1NDAzOTc1LDE2MjU5NDYxMTgsMjA3MzE4ODY1OS
-wxOTg4NTEyOTYxLDE3OTcwODgwNywxOTk2MTU1MTE3LC0zNTA4
-NjY3MDcsOTI4NjMyOTkxLDE2MDA0NzkzNzMsLTg4OTkxMzQ4Ny
-wtNjEyMDI3NTU2LDI2MzMyNDI0OCwtMTIxNTg1OTMwNiwxOTUx
-ODEzNjI4XX0=
+eyJoaXN0b3J5IjpbMjA3NjQ2MDIzNywtMjkzNDM2MzUyLC0yMD
+czOTE2NzQ2LDE2MTIwNTY4OTYsMjA3NjA4OTU4MSwxMTQyMTUw
+ODY1LC0xNDIzNzI1NjE5LC03ODU0MDM5NzUsMTYyNTk0NjExOC
+wyMDczMTg4NjU5LDE5ODg1MTI5NjEsMTc5NzA4ODA3LDE5OTYx
+NTUxMTcsLTM1MDg2NjcwNyw5Mjg2MzI5OTEsMTYwMDQ3OTM3My
+wtODg5OTEzNDg3LC02MTIwMjc1NTYsMjYzMzI0MjQ4LC0xMjE1
+ODU5MzA2XX0=
 -->
