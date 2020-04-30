@@ -287,7 +287,7 @@ WHERE from_date = '1985-03-01'
 GROUP BY emp_no
 ```
 
-salaries 테이블의 인덱스는 (emp_no + from_date)로 생성되어 있다. 쿼리 문장에서 Where 조건은 인덱스 레인지 스캔 방법으로 접근할 수 없는 상태이다. 
+salaries 테이블의 인덱스는 (emp_no + from_date)로 생성되어 있다. 쿼리 문장에서 Where 조건은 인덱스 레인지 스캔 방법으로 접근할 수 없는 상태이다. 하지만 실제 실행 계획을
 
 # Distinct 처리
 
@@ -296,11 +296,11 @@ salaries 테이블의 인덱스는 (emp_no + from_date)로 생성되어 있다. 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjM3MjU2MTksLTc4NTQwMzk3NSwxNj
-I1OTQ2MTE4LDIwNzMxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4
-MDcsMTk5NjE1NTExNywtMzUwODY2NzA3LDkyODYzMjk5MSwxNj
-AwNDc5MzczLC04ODk5MTM0ODcsLTYxMjAyNzU1NiwyNjMzMjQy
-NDgsLTEyMTU4NTkzMDYsMTk1MTgxMzYyOCwtMjE0NTIwMjQ5My
-w5MjI0NjUyNDUsNTg0Nzk5ODk3LC00Mzk1MzQzODAsLTIxMjA2
-OTk4MzhdfQ==
+eyJoaXN0b3J5IjpbMTg1NzUyOTk5OSwtMTQyMzcyNTYxOSwtNz
+g1NDAzOTc1LDE2MjU5NDYxMTgsMjA3MzE4ODY1OSwxOTg4NTEy
+OTYxLDE3OTcwODgwNywxOTk2MTU1MTE3LC0zNTA4NjY3MDcsOT
+I4NjMyOTkxLDE2MDA0NzkzNzMsLTg4OTkxMzQ4NywtNjEyMDI3
+NTU2LDI2MzMyNDI0OCwtMTIxNTg1OTMwNiwxOTUxODEzNjI4LC
+0yMTQ1MjAyNDkzLDkyMjQ2NTI0NSw1ODQ3OTk4OTcsLTQzOTUz
+NDM4MF19
 -->
