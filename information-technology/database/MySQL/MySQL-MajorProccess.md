@@ -269,7 +269,9 @@ GROUP BY 또한 ORDER BY와 같이 쿼리가 스트리밍 처리를 할 수 없�
 
 GROUP BY 작업도 인덱스를 사용하는 경우와 그렇지 못한 경우로 나눠 볼 수 있다. 인덱스를 이용할때는 인덱스를 차례대로 이용하느 인덱스 스캔 방법과 인덱스를 건너 뛰면서 읽는 루즈 인덱스 스캔이 있다. 그리고 인덱스를 사용하지 못하는 쿼리에서 GROUP BY 작업은 임시 테이블을 사용한다.
 
-## 인덱스 스캔을 이용하는 GROUP BY
+## 인덱스 스캔을 이용하는 GROUP BY(타이트 인덱스 스캔)
+
+ORDER BY 경우와 마찬가지로 조인의 드라이빙 테이블에 속한 컬럼만 이용해 그룹핑할 때 GROUP BY 컬럼으로 이미 인덱스가 있다면 그 인덱스를 차례때로 읽으면서 그룹핑 작업을 수행하고 결과를 
 
 # Distinct 처리
 
@@ -278,7 +280,7 @@ GROUP BY 작업도 인덱스를 사용하는 경우와 그렇지 못한 경우�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MDYyNTAwMCwxNjI1OTQ2MTE4LDIwNz
+eyJoaXN0b3J5IjpbLTg1ODY0MzgwMywxNjI1OTQ2MTE4LDIwNz
 MxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4MDcsMTk5NjE1NTEx
 NywtMzUwODY2NzA3LDkyODYzMjk5MSwxNjAwNDc5MzczLC04OD
 k5MTM0ODcsLTYxMjAyNzU1NiwyNjMzMjQyNDgsLTEyMTU4NTkz
