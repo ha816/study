@@ -265,7 +265,9 @@ SHOW SESSION STATUS LIKE 'Sort%';
 
 GROUP BY 또한 ORDER BY와 같이 쿼리가 스트리밍 처리를 할 수 없게 하는 요소 중 하나다. GROUP BY 절이 있는 쿼리에서는 HAVING 절을 사용할 수 있는데,  HAVING 절은 GROUP BY 결과에 대해서 필터링 역할을 수행한다. 
 
-일반적으로 GROUP BY 처리 결과는 임시 테이블이나 버퍼에 존재하는 값을 필터링 하는
+일반적으로 GROUP BY 처리 결과는 임시 테이블이나 버퍼에 존재하는 값을 필터링 하는 역할을 수행한다.  GROUP BY에 사용된 조건은 인덱스를 사용해서 처리될 수 없으므로 HAVING 절을 튜닝하려고 인덱스를 생성하거나 다른 방법을 고민할 필요는 없다. 
+
+GROUP BY 작업도 인덱스를 사용하는 경우와 그렇지 못한 경우로 나눠 볼 수 있다. 인덱스를 이용할때는 인덱스를 차례대로 이용하느 인덱스 스캔 방법과 인덱스를 건너 
 
 # Distinct 처리
 
@@ -274,11 +276,11 @@ GROUP BY 또한 ORDER BY와 같이 쿼리가 스트리밍 처리를 할 수 없�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAxMTg2NzgsMTYyNTk0NjExOCwyMDczMT
-g4NjU5LDE5ODg1MTI5NjEsMTc5NzA4ODA3LDE5OTYxNTUxMTcs
-LTM1MDg2NjcwNyw5Mjg2MzI5OTEsMTYwMDQ3OTM3MywtODg5OT
-EzNDg3LC02MTIwMjc1NTYsMjYzMzI0MjQ4LC0xMjE1ODU5MzA2
-LDE5NTE4MTM2MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LDU4ND
-c5OTg5NywtNDM5NTM0MzgwLC0yMTIwNjk5ODM4LDIwNzc3Mjc5
-NDddfQ==
+eyJoaXN0b3J5IjpbLTEyMjk0NTA0NTIsMTYyNTk0NjExOCwyMD
+czMTg4NjU5LDE5ODg1MTI5NjEsMTc5NzA4ODA3LDE5OTYxNTUx
+MTcsLTM1MDg2NjcwNyw5Mjg2MzI5OTEsMTYwMDQ3OTM3MywtOD
+g5OTEzNDg3LC02MTIwMjc1NTYsMjYzMzI0MjQ4LC0xMjE1ODU5
+MzA2LDE5NTE4MTM2MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LD
+U4NDc5OTg5NywtNDM5NTM0MzgwLC0yMTIwNjk5ODM4LDIwNzc3
+Mjc5NDddfQ==
 -->
