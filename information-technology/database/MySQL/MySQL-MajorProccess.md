@@ -245,7 +245,7 @@ tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드
 MySQL 서버는 처리하는 주요 작업에 대해서 해당 작업의 실행 횟수를 상태 변수로 저장하고 있다. 정렬과 관련해서도 몇건의 레코드를 처리 했는지, 소트 버퍼간의 병합 작업(멀티 머지)은 몇번 발생했는지 등을 아래 명령으로 확인이 가능하다. 
 
 ```
-SHOW 
+SHOW SESSION STATUS LIKE 'Sort%';
 ```
 
 
@@ -257,11 +257,11 @@ SHOW
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MjQ0NzczMiwxOTg4NTEyOTYxLDE3OT
-cwODgwNywxOTk2MTU1MTE3LC0zNTA4NjY3MDcsOTI4NjMyOTkx
-LDE2MDA0NzkzNzMsLTg4OTkxMzQ4NywtNjEyMDI3NTU2LDI2Mz
-MyNDI0OCwtMTIxNTg1OTMwNiwxOTUxODEzNjI4LC0yMTQ1MjAy
-NDkzLDkyMjQ2NTI0NSw1ODQ3OTk4OTcsLTQzOTUzNDM4MCwtMj
-EyMDY5OTgzOCwyMDc3NzI3OTQ3LC0xNzY2NTk3ODcyLC0yMDIy
-OTI5NjMzXX0=
+eyJoaXN0b3J5IjpbLTE3MzAxNDczNDcsMTk4ODUxMjk2MSwxNz
+k3MDg4MDcsMTk5NjE1NTExNywtMzUwODY2NzA3LDkyODYzMjk5
+MSwxNjAwNDc5MzczLC04ODk5MTM0ODcsLTYxMjAyNzU1NiwyNj
+MzMjQyNDgsLTEyMTU4NTkzMDYsMTk1MTgxMzYyOCwtMjE0NTIw
+MjQ5Myw5MjI0NjUyNDUsNTg0Nzk5ODk3LC00Mzk1MzQzODAsLT
+IxMjA2OTk4MzgsMjA3NzcyNzk0NywtMTc2NjU5Nzg3MiwtMjAy
+MjkyOTYzM119
 -->
