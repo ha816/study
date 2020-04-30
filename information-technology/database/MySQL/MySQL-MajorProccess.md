@@ -323,8 +323,8 @@ SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
 -- GROUP BY에 사용된 컬럼이 인덱스 구성 컬럼의 왼쪽부터 일치하지 않기 때문에 불가
 SELECT col1, col2 FROM tb_test GROUP BY col2, col3
 
--- SELEC
-SELECT col1, col2 FROM tb_test GROUP BY col2, col3
+-- SELECT 절의 컬럼이 GROUP BY와 일치하지 않기 때문에 사용 불가
+-- SELECT col1, col3 FROM tb_test GROUP BY col1, col2
 ```
 
 
@@ -335,11 +335,11 @@ SELECT col1, col2 FROM tb_test GROUP BY col2, col3
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyODE1ODIzLC01ODY1NTUyMDYsMTI0OT
-IyMTg0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LDEyMjEwNDI1
-MDcsMjA3NjQ2MDIzNywtMjkzNDM2MzUyLC0yMDczOTE2NzQ2LD
-E2MTIwNTY4OTYsMjA3NjA4OTU4MSwxMTQyMTUwODY1LC0xNDIz
-NzI1NjE5LC03ODU0MDM5NzUsMTYyNTk0NjExOCwyMDczMTg4Nj
-U5LDE5ODg1MTI5NjEsMTc5NzA4ODA3LDE5OTYxNTUxMTcsLTM1
-MDg2NjcwN119
+eyJoaXN0b3J5IjpbLTcwMTY3NDc5NywtNTg2NTU1MjA2LDEyND
+kyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNCwxMjIxMDQy
+NTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1MiwtMjA3MzkxNjc0Ni
+wxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0MjE1MDg2NSwtMTQy
+MzcyNTYxOSwtNzg1NDAzOTc1LDE2MjU5NDYxMTgsMjA3MzE4OD
+Y1OSwxOTg4NTEyOTYxLDE3OTcwODgwNywxOTk2MTU1MTE3LC0z
+NTA4NjY3MDddfQ==
 -->
