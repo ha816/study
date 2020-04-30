@@ -263,7 +263,9 @@ SHOW SESSION STATUS LIKE 'Sort%';
 
 # Group BY 처리
 
-GROUP BY 또한 ORDER BY와 같이 쿼리가 스트리밍 처리를 할 수 없게 하는 요소 중 하나다. 
+GROUP BY 또한 ORDER BY와 같이 쿼리가 스트리밍 처리를 할 수 없게 하는 요소 중 하나다. GROUP BY 절이 있는 쿼리에서는 HAVING 절을 사용할 수 있는데,  HAVING 절은 GROUP BY 결과에 대해서 필터링 역할을 수행한다. 
+
+일반적으로 GROUP BY 처리 결과는 임시 테이블이나 버퍼에 존재하는 값을 필터링 하는
 
 # Distinct 처리
 
@@ -272,11 +274,11 @@ GROUP BY 또한 ORDER BY와 같이 쿼리가 스트리밍 처리를 할 수 없�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNTQxNzcxMCwxNjI1OTQ2MTE4LDIwNz
-MxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4MDcsMTk5NjE1NTEx
-NywtMzUwODY2NzA3LDkyODYzMjk5MSwxNjAwNDc5MzczLC04OD
-k5MTM0ODcsLTYxMjAyNzU1NiwyNjMzMjQyNDgsLTEyMTU4NTkz
-MDYsMTk1MTgxMzYyOCwtMjE0NTIwMjQ5Myw5MjI0NjUyNDUsNT
-g0Nzk5ODk3LC00Mzk1MzQzODAsLTIxMjA2OTk4MzgsMjA3Nzcy
-Nzk0N119
+eyJoaXN0b3J5IjpbNzAxMTg2NzgsMTYyNTk0NjExOCwyMDczMT
+g4NjU5LDE5ODg1MTI5NjEsMTc5NzA4ODA3LDE5OTYxNTUxMTcs
+LTM1MDg2NjcwNyw5Mjg2MzI5OTEsMTYwMDQ3OTM3MywtODg5OT
+EzNDg3LC02MTIwMjc1NTYsMjYzMzI0MjQ4LC0xMjE1ODU5MzA2
+LDE5NTE4MTM2MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LDU4ND
+c5OTg5NywtNDM5NTM0MzgwLC0yMTIwNjk5ODM4LDIwNzc3Mjc5
+NDddfQ==
 -->
