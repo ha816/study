@@ -306,7 +306,8 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 
 ```
 SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
-SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
+SELECT DISTINCT col1, col2 FROM tb_test;
+SELECT col1, Min(col2) FROM tb_test GROUP BY col1;
 
 ```
 
@@ -317,11 +318,11 @@ SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM2NDYyNzk1LC01OTQyNDk3MzEsLTE4MT
-c3NzY1MjQsMTIyMTA0MjUwNywyMDc2NDYwMjM3LC0yOTM0MzYz
-NTIsLTIwNzM5MTY3NDYsMTYxMjA1Njg5NiwyMDc2MDg5NTgxLD
-ExNDIxNTA4NjUsLTE0MjM3MjU2MTksLTc4NTQwMzk3NSwxNjI1
-OTQ2MTE4LDIwNzMxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4MD
-csMTk5NjE1NTExNywtMzUwODY2NzA3LDkyODYzMjk5MSwxNjAw
-NDc5MzczXX0=
+eyJoaXN0b3J5IjpbMTI0OTIyMTg0MywtNTk0MjQ5NzMxLC0xOD
+E3Nzc2NTI0LDEyMjEwNDI1MDcsMjA3NjQ2MDIzNywtMjkzNDM2
+MzUyLC0yMDczOTE2NzQ2LDE2MTIwNTY4OTYsMjA3NjA4OTU4MS
+wxMTQyMTUwODY1LC0xNDIzNzI1NjE5LC03ODU0MDM5NzUsMTYy
+NTk0NjExOCwyMDczMTg4NjU5LDE5ODg1MTI5NjEsMTc5NzA4OD
+A3LDE5OTYxNTUxMTcsLTM1MDg2NjcwNyw5Mjg2MzI5OTEsMTYw
+MDQ3OTM3M119
 -->
