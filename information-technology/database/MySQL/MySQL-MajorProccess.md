@@ -298,7 +298,8 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 
 **MySQL의 루즈 인덱스 스캔 방식은 단일 테이블에 대해 수행되는 GROUP BY 처리에만 사용할 수 있다.** 또한 프리픽스 인덱스(Prefix index, 칼럼값의 앞쪽 일부만으로 생성된 인덱스)는 루즈 인덱스 스캔을 사용할 수 없다. 
 
-인덱스 레인지 스캔은 유니크한 값의 수가 많을 수록 성능이 향상 되지만 반면 루즈 인덱스 스캔은 인덱스의 유니크한 값이 적을수록 성능이 향상 된다. 
+인덱스 레인지 스캔은 유니크한 값의 수가 많을 수록 성능이 향상 되지만 반면 루즈 인덱스 스캔은 인덱스의 유니크한 값이 적을수록 성능이 향상 된다. **일반적인 상황과 다르게 루즈 인덱스 스캔은 분포도가 좋지 않을 수록 더 빠른 결과를 만든다.** 그리고 루즈 인덱스 스캔으로 처리되는 쿼리에서는 별도의 임시 테이블이 필요하지 않다. 
+
 
 # Distinct 처리
 
@@ -307,11 +308,11 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTc3NzY1MjQsMTIyMTA0MjUwNywyMD
-c2NDYwMjM3LC0yOTM0MzYzNTIsLTIwNzM5MTY3NDYsMTYxMjA1
-Njg5NiwyMDc2MDg5NTgxLDExNDIxNTA4NjUsLTE0MjM3MjU2MT
-ksLTc4NTQwMzk3NSwxNjI1OTQ2MTE4LDIwNzMxODg2NTksMTk4
-ODUxMjk2MSwxNzk3MDg4MDcsMTk5NjE1NTExNywtMzUwODY2Nz
-A3LDkyODYzMjk5MSwxNjAwNDc5MzczLC04ODk5MTM0ODcsLTYx
-MjAyNzU1Nl19
+eyJoaXN0b3J5IjpbLTEzMzIwMjg3NTUsLTE4MTc3NzY1MjQsMT
+IyMTA0MjUwNywyMDc2NDYwMjM3LC0yOTM0MzYzNTIsLTIwNzM5
+MTY3NDYsMTYxMjA1Njg5NiwyMDc2MDg5NTgxLDExNDIxNTA4Nj
+UsLTE0MjM3MjU2MTksLTc4NTQwMzk3NSwxNjI1OTQ2MTE4LDIw
+NzMxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4MDcsMTk5NjE1NT
+ExNywtMzUwODY2NzA3LDkyODYzMjk5MSwxNjAwNDc5MzczLC04
+ODk5MTM0ODddfQ==
 -->
