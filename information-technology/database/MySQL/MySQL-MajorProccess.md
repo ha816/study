@@ -246,9 +246,13 @@ MySQL 서버는 처리하는 주요 작업에 대해서 해당 작업의 실행 
 
 ```
 SHOW SESSION STATUS LIKE 'Sort%';
-+-----------------------------+
-|Variable name		|Value	  |
-+-----------------------------+
++-------------------------------+
+|Variable name		|Value		|
++-------------------------------+
+|Sort_merge_passes	|56			|
+|Sort_range			|0			|
+|Sort_rows			|279408		|
+|Sort_range			|0			|
 ```
 
 
@@ -260,7 +264,7 @@ SHOW SESSION STATUS LIKE 'Sort%';
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNzExOTExNSwxOTg4NTEyOTYxLDE3OT
+eyJoaXN0b3J5IjpbMjA3MzE4ODY1OSwxOTg4NTEyOTYxLDE3OT
 cwODgwNywxOTk2MTU1MTE3LC0zNTA4NjY3MDcsOTI4NjMyOTkx
 LDE2MDA0NzkzNzMsLTg4OTkxMzQ4NywtNjEyMDI3NTU2LDI2Mz
 MyNDI0OCwtMTIxNTg1OTMwNiwxOTUxODEzNjI4LC0yMTQ1MjAy
