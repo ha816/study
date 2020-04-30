@@ -329,6 +329,11 @@ SELECT col1, col3 FROM tb_test GROUP BY col1, col2
 >참고사항
 >일반적으로 B-Tree 인덱스는 인덱스를 구성하는 컬럼이 왼쪽부터 일치하는 (leftmost) 일때만 사용할 수 있다. 하지만 루즈 인덱스 스캔은 인덱스의 첫 컬럼이 WHERE 조건이나 GROUP BY 조건에 사용되지 않아도 B-Tree 인덱스를 사용할 수 있는 방식이다. 오라클과 같은 DBMS에서는 옵티마이저가 인덱스의 첫번째 컬럼에 대한 조건을 마음대로 만들어 추가하는 형태로 기능이 구현되어 있다. 하지만 MySQL의 루즈 인덱스 스캔은 아직 초기 수준으로 최적화가 되어 있지 않다.
 
+## 임시 테이블을 사용하는 GROUP BY
+
+GROUP BY의 기준 컬럼이 드라이빙 테이블에 있든 드리븐 테이블에 있든 관계 없이 인덱스를 전혀 사용하지 못할때 사용하는 방식이다. 
+인덱스를 사용할 수 없기 때문에 전체 테이블을 풀 스캔
+
 # Distinct 처리
 
 # 임시 테이블(Using temporary)
@@ -336,7 +341,7 @@ SELECT col1, col3 FROM tb_test GROUP BY col1, col2
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTY3Mjc2MzUsLTkyMzc0NDEzOSwtNT
+eyJoaXN0b3J5IjpbLTE4NjY5MjA4NzcsLTkyMzc0NDEzOSwtNT
 g2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3
 NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1Mi
 wtMjA3MzkxNjc0NiwxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0
