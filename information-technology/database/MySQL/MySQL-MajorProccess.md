@@ -332,22 +332,25 @@ SELECT col1, col3 FROM tb_test GROUP BY col1, col2
 ## 임시 테이블을 사용하는 GROUP BY
 
 GROUP BY의 기준 컬럼이 드라이빙 테이블에 있든 드리븐 테이블에 있든 관계 없이 인덱스를 전혀 사용하지 못할때 사용하는 방식이다. 
-인덱스를 사용할 수 없기 때문에 필요한 조인 결과를 임시 테이블에 저장한다. 이때 중요한 것은 원본 쿼리에서 **GROUP BY 절에 사용된 컬럼을 기준으로 유니크 키를 생성한다는 점이다.** 
+인덱스를 사용할 수 없기 때문에 필요한 조인 결과를 임시 테이블에 저장하고 필요시 정렬을 하고 사용자에게 결과를 반환한다.
+
+이때 중요한 것은 원본 쿼리에서 **GROUP BY 절에 사용된 컬럼을 기준으로 유니크 키를 생성한다는 점이다.**  즉 GROUP BY가 임시 테이블로 처리가 되는 경우 사용되는 임시 테이블은 항상 유니크 키를 가진다. 
 
 이때 정렬이 필요한 상황이면 임시테이블에 
 
 # Distinct 처리
+
 
 # 임시 테이블(Using temporary)
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjU3MDExMzYsLTkyMzc0NDEzOSwtNT
-g2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3
-NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1Mi
-wtMjA3MzkxNjc0NiwxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0
-MjE1MDg2NSwtMTQyMzcyNTYxOSwtNzg1NDAzOTc1LDE2MjU5ND
-YxMTgsMjA3MzE4ODY1OSwxOTg4NTEyOTYxLDE5OTYxNTUxMTcs
-LTM1MDg2NjcwN119
+eyJoaXN0b3J5IjpbLTE5NDIzNDEzNzEsLTE1NjU3MDExMzYsLT
+kyMzc0NDEzOSwtNTg2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0
+OTczMSwtMTgxNzc3NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMz
+csLTI5MzQzNjM1MiwtMjA3MzkxNjc0NiwxNjEyMDU2ODk2LDIw
+NzYwODk1ODEsMTE0MjE1MDg2NSwtMTQyMzcyNTYxOSwtNzg1ND
+AzOTc1LDE2MjU5NDYxMTgsMjA3MzE4ODY1OSwxOTg4NTEyOTYx
+LDE5OTYxNTUxMTddfQ==
 -->
