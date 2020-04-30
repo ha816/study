@@ -277,7 +277,17 @@ GROUP BY가 인덱스를 통해 처리되는 쿼리는 이미 정렬된 인덱�
 
 ## 루즈 인덱스 스캔을 이용하는 GROUP BY
 
-루즈 인덱스 스캔 방식은 인덱스 레코드를 건너 뛰면서 필요한 부분만 가져오는 것을 말한다. 
+루즈 인덱스 스캔 방식은 인덱스 레코드를 건너 뛰면서 필요한 부분만 가져오는 것을 말한다. 예를 들어 한번 이야기를 해보겠다. 
+
+```
+EXPLAIN
+SELECT emp_no
+FROM salaries 
+WHERE from_date = '1985-03-01'
+GROUP BY emp_no
+```
+
+salaries 테이블의 인덱스는 (emp_no + from_date)로 생성되어 있다. 
 
 # Distinct 처리
 
@@ -286,11 +296,11 @@ GROUP BY가 인덱스를 통해 처리되는 쿼리는 이미 정렬된 인덱�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NTQwMzk3NSwxNjI1OTQ2MTE4LDIwNz
-MxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4MDcsMTk5NjE1NTEx
-NywtMzUwODY2NzA3LDkyODYzMjk5MSwxNjAwNDc5MzczLC04OD
-k5MTM0ODcsLTYxMjAyNzU1NiwyNjMzMjQyNDgsLTEyMTU4NTkz
-MDYsMTk1MTgxMzYyOCwtMjE0NTIwMjQ5Myw5MjI0NjUyNDUsNT
-g0Nzk5ODk3LC00Mzk1MzQzODAsLTIxMjA2OTk4MzgsMjA3Nzcy
-Nzk0N119
+eyJoaXN0b3J5IjpbLTEyNjY0MjgyMjgsLTc4NTQwMzk3NSwxNj
+I1OTQ2MTE4LDIwNzMxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4
+MDcsMTk5NjE1NTExNywtMzUwODY2NzA3LDkyODYzMjk5MSwxNj
+AwNDc5MzczLC04ODk5MTM0ODcsLTYxMjAyNzU1NiwyNjMzMjQy
+NDgsLTEyMTU4NTkzMDYsMTk1MTgxMzYyOCwtMjE0NTIwMjQ5My
+w5MjI0NjUyNDUsNTg0Nzk5ODk3LC00Mzk1MzQzODAsLTIxMjA2
+OTk4MzhdfQ==
 -->
