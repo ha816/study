@@ -320,8 +320,8 @@ SELECT col1, col2 FROM tb_test WHERE col3 = const GROUP BY col1, col2;
 -- MIN, MAX 이외의 집합 함수가 사용되었기 때문에 사용불가
 SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
 
--- MIN, MAX 이외의 집합 함수가 사용되었기 때문에 사용불가
-SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
+-- GROUP BY에 사용된 컬럼이 인덱스 구성 컬럼의 왼쪽부터 일치하지 않기 때문에 불가
+SELECT col1, col2 FROM tb_test GROUP BY col2, col3
 
 ```
 
@@ -333,7 +333,7 @@ SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTEyMDM1OTEsLTU4NjU1NTIwNiwxMj
+eyJoaXN0b3J5IjpbLTE2OTkzMDc2ODAsLTU4NjU1NTIwNiwxMj
 Q5MjIxODQzLC01OTQyNDk3MzEsLTE4MTc3NzY1MjQsMTIyMTA0
 MjUwNywyMDc2NDYwMjM3LC0yOTM0MzYzNTIsLTIwNzM5MTY3ND
 YsMTYxMjA1Njg5NiwyMDc2MDg5NTgxLDExNDIxNTA4NjUsLTE0
