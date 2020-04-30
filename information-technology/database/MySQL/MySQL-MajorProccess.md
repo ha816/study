@@ -283,8 +283,8 @@ GROUP BY가 인덱스를 통해 처리되는 쿼리는 이미 정렬된 인덱�
 EXPLAIN
 SELECT emp_no
 FROM salaries 
-WHERE from_date = '1985-03-01' -- 다중 인덱스의
-GROUP BY emp_no
+WHERE from_date = '1985-03-01' -- 다중 인덱스의 두번째
+GROUP BY emp_no -- 다중 인덱스의 첫번째
 ```
 
 salaries 테이블의 인덱스는 (emp_no + from_date)로 생성되어 있다. 쿼리 문장에서 Where 조건은 인덱스 레인지 스캔 방법으로 접근할 수 없는 상태이다. 하지만 실제 실행 계획을 보면 인덱스 레인지 스캔을 이용하며, Extra 컬럼의 Using index for group-by가 노출 된다.
@@ -305,7 +305,7 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MzcwMjI3MSwtMjA3MzkxNjc0NiwxNj
+eyJoaXN0b3J5IjpbLTI5MzQzNjM1MiwtMjA3MzkxNjc0NiwxNj
 EyMDU2ODk2LDIwNzYwODk1ODEsMTE0MjE1MDg2NSwtMTQyMzcy
 NTYxOSwtNzg1NDAzOTc1LDE2MjU5NDYxMTgsMjA3MzE4ODY1OS
 wxOTg4NTEyOTYxLDE3OTcwODgwNywxOTk2MTU1MTE3LC0zNTA4
