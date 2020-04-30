@@ -283,7 +283,7 @@ GROUP BY가 인덱스를 통해 처리되는 쿼리는 이미 정렬된 인덱�
 EXPLAIN
 SELECT emp_no
 FROM salaries 
-WHERE from_date = '1985-03-01'
+WHERE from_date = '1985-03-01' -- 다중 인덱스의
 GROUP BY emp_no
 ```
 
@@ -294,7 +294,7 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 1. (emp_no + from_date) 인덱스를 차례대로 스캔하면서, emp_no의 첫 번째 유일한 값(그룹 키) '10001'을 찾아낸다.
 2. (emp_no + from_date) 인덱스에서 emp_no가 '10001'인 것 중에서 from_date 값이 '1985-03-01' 인 레코드만 가져온다. 
 3. (emp_no + from_date) 인덱스에서 emp_no의 그 다음 유니크한(그룹 키) 값을 가져온다. 
-4. 
+4. 3번 단계에서 결과가 더 없으면 처리를 종료하고, 결과가 있다면 2번 과정으로 돌아가서 반복 수행한다.
 
 
 
@@ -305,11 +305,11 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzM5MTY3NDYsMTYxMjA1Njg5NiwyMD
-c2MDg5NTgxLDExNDIxNTA4NjUsLTE0MjM3MjU2MTksLTc4NTQw
-Mzk3NSwxNjI1OTQ2MTE4LDIwNzMxODg2NTksMTk4ODUxMjk2MS
-wxNzk3MDg4MDcsMTk5NjE1NTExNywtMzUwODY2NzA3LDkyODYz
-Mjk5MSwxNjAwNDc5MzczLC04ODk5MTM0ODcsLTYxMjAyNzU1Ni
-wyNjMzMjQyNDgsLTEyMTU4NTkzMDYsMTk1MTgxMzYyOCwtMjE0
-NTIwMjQ5M119
+eyJoaXN0b3J5IjpbMTM4MzcwMjI3MSwtMjA3MzkxNjc0NiwxNj
+EyMDU2ODk2LDIwNzYwODk1ODEsMTE0MjE1MDg2NSwtMTQyMzcy
+NTYxOSwtNzg1NDAzOTc1LDE2MjU5NDYxMTgsMjA3MzE4ODY1OS
+wxOTg4NTEyOTYxLDE3OTcwODgwNywxOTk2MTU1MTE3LC0zNTA4
+NjY3MDcsOTI4NjMyOTkxLDE2MDA0NzkzNzMsLTg4OTkxMzQ4Ny
+wtNjEyMDI3NTU2LDI2MzMyNDI0OCwtMTIxNTg1OTMwNiwxOTUx
+ODEzNjI4XX0=
 -->
