@@ -293,6 +293,7 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 
 1. (emp_no + from_date) 인덱스를 차례대로 스캔하면서, emp_no의 첫 번째 유일한 값(그룹 키) '10001'을 찾아낸다.
 2. (emp_no + from_date) 인덱스에서 emp_no가 '10001'인 것 중에서 from_date 값이 '1985-03-01' 인 레코드만 가져온다. 
+3. 
 
 
 
@@ -303,11 +304,11 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NjA4OTU4MSwxMTQyMTUwODY1LC0xND
-IzNzI1NjE5LC03ODU0MDM5NzUsMTYyNTk0NjExOCwyMDczMTg4
-NjU5LDE5ODg1MTI5NjEsMTc5NzA4ODA3LDE5OTYxNTUxMTcsLT
-M1MDg2NjcwNyw5Mjg2MzI5OTEsMTYwMDQ3OTM3MywtODg5OTEz
-NDg3LC02MTIwMjc1NTYsMjYzMzI0MjQ4LC0xMjE1ODU5MzA2LD
-E5NTE4MTM2MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LDU4NDc5
-OTg5N119
+eyJoaXN0b3J5IjpbMTYxMjA1Njg5NiwyMDc2MDg5NTgxLDExND
+IxNTA4NjUsLTE0MjM3MjU2MTksLTc4NTQwMzk3NSwxNjI1OTQ2
+MTE4LDIwNzMxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4MDcsMT
+k5NjE1NTExNywtMzUwODY2NzA3LDkyODYzMjk5MSwxNjAwNDc5
+MzczLC04ODk5MTM0ODcsLTYxMjAyNzU1NiwyNjMzMjQyNDgsLT
+EyMTU4NTkzMDYsMTk1MTgxMzYyOCwtMjE0NTIwMjQ5Myw5MjI0
+NjUyNDVdfQ==
 -->
