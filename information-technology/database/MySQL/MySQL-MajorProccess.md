@@ -305,7 +305,7 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 우선, (col1+col2+col3) 컬럼으로 생성된 tb_test 테이블을 만들어 보자. 그리고 아래 쿼리들은 모두 루즈 인덱스 스캔을 사용할 수 있는 쿼리다. 
 
 ```
-SELECT col
+SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
 
 ```
 
@@ -316,11 +316,11 @@ SELECT col
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDE2OTI0MjMsLTE4MTc3NzY1MjQsMT
-IyMTA0MjUwNywyMDc2NDYwMjM3LC0yOTM0MzYzNTIsLTIwNzM5
-MTY3NDYsMTYxMjA1Njg5NiwyMDc2MDg5NTgxLDExNDIxNTA4Nj
-UsLTE0MjM3MjU2MTksLTc4NTQwMzk3NSwxNjI1OTQ2MTE4LDIw
-NzMxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4MDcsMTk5NjE1NT
-ExNywtMzUwODY2NzA3LDkyODYzMjk5MSwxNjAwNDc5MzczLC04
-ODk5MTM0ODddfQ==
+eyJoaXN0b3J5IjpbLTU5NDI0OTczMSwtMTgxNzc3NjUyNCwxMj
+IxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1MiwtMjA3Mzkx
+Njc0NiwxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0MjE1MDg2NS
+wtMTQyMzcyNTYxOSwtNzg1NDAzOTc1LDE2MjU5NDYxMTgsMjA3
+MzE4ODY1OSwxOTg4NTEyOTYxLDE3OTcwODgwNywxOTk2MTU1MT
+E3LC0zNTA4NjY3MDcsOTI4NjMyOTkxLDE2MDA0NzkzNzMsLTg4
+OTkxMzQ4N119
 -->
