@@ -324,7 +324,7 @@ SELECT col1, col2 FROM tb_test GROUP BY col1, col2;
 SELECT col1, col2 FROM tb_test GROUP BY col2, col3
 
 -- SELECT 절의 컬럼이 GROUP BY와 일치하지 않기 때문에 사용 불가
--- SELECT col1, col3 FROM tb_test GROUP BY col1, col2
+SELECT col1, col3 FROM tb_test GROUP BY col1, col2
 ```
 
 
@@ -335,7 +335,7 @@ SELECT col1, col2 FROM tb_test GROUP BY col2, col3
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMTY3NDc5NywtNTg2NTU1MjA2LDEyND
+eyJoaXN0b3J5IjpbLTkyMzc0NDEzOSwtNTg2NTU1MjA2LDEyND
 kyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNCwxMjIxMDQy
 NTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1MiwtMjA3MzkxNjc0Ni
 wxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0MjE1MDg2NSwtMTQy
