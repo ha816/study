@@ -326,7 +326,8 @@ SELECT col1, col2 FROM tb_test GROUP BY col2, col3
 -- SELECT 절의 컬럼이 GROUP BY와 일치하지 않기 때문에 사용 불가
 SELECT col1, col3 FROM tb_test GROUP BY col1, col2
 ```
-
+>참고사항
+>일반적으로 B-Tree 인덱스는 인덱스를 구성하는 컬럼이 왼쪽부터 일치하는 (leftmost) 일때만 사용할 수 있다. 하지만 루즈 인덱스 스캔은 인덱스의 첫 컬럼이 WHERE 조건이나 GROUP BY 조건에 사용되지 않아도 B-Tree 인덱스를 사용할 수 있는 방식이다. 
 
 # Distinct 처리
 
@@ -335,11 +336,11 @@ SELECT col1, col3 FROM tb_test GROUP BY col1, col2
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODUxOTI5OTEsLTkyMzc0NDEzOSwtNT
-g2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3
-NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1Mi
-wtMjA3MzkxNjc0NiwxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0
-MjE1MDg2NSwtMTQyMzcyNTYxOSwtNzg1NDAzOTc1LDE2MjU5ND
-YxMTgsMjA3MzE4ODY1OSwxOTg4NTEyOTYxLDE5OTYxNTUxMTcs
-LTM1MDg2NjcwN119
+eyJoaXN0b3J5IjpbMjc4ODkzODE2LC05MjM3NDQxMzksLTU4Nj
+U1NTIwNiwxMjQ5MjIxODQzLC01OTQyNDk3MzEsLTE4MTc3NzY1
+MjQsMTIyMTA0MjUwNywyMDc2NDYwMjM3LC0yOTM0MzYzNTIsLT
+IwNzM5MTY3NDYsMTYxMjA1Njg5NiwyMDc2MDg5NTgxLDExNDIx
+NTA4NjUsLTE0MjM3MjU2MTksLTc4NTQwMzk3NSwxNjI1OTQ2MT
+E4LDIwNzMxODg2NTksMTk4ODUxMjk2MSwxOTk2MTU1MTE3LC0z
+NTA4NjY3MDddfQ==
 -->
