@@ -261,7 +261,9 @@ SHOW SESSION STATUS LIKE 'Sort%';
 * Sort_scan은 풀 테이블 스캔을 통해 검색된 결과에 대한 정렬 작업 횟수다. Sort_scan과 Sort_range는 둘다 정렬 작업 횟수를 누적하고 있는 상태 값이다. 
 * Sort_rows는 지금까지 정렬한 전체 레코드 건수를 의미한다. 
 
+# Group BY 처리
 
+GROUP BY 또한 ORDER BY와 같이 쿼리가 스트리밍 처리를 할 수 없게 하는 요소 중 하나다. 
 
 # Distinct 처리
 
@@ -270,11 +272,11 @@ SHOW SESSION STATUS LIKE 'Sort%';
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjAwNjQ4OTcsMTYyNTk0NjExOCwyMD
-czMTg4NjU5LDE5ODg1MTI5NjEsMTc5NzA4ODA3LDE5OTYxNTUx
-MTcsLTM1MDg2NjcwNyw5Mjg2MzI5OTEsMTYwMDQ3OTM3MywtOD
-g5OTEzNDg3LC02MTIwMjc1NTYsMjYzMzI0MjQ4LC0xMjE1ODU5
-MzA2LDE5NTE4MTM2MjgsLTIxNDUyMDI0OTMsOTIyNDY1MjQ1LD
-U4NDc5OTg5NywtNDM5NTM0MzgwLC0yMTIwNjk5ODM4LDIwNzc3
-Mjc5NDddfQ==
+eyJoaXN0b3J5IjpbLTQxNTQxNzcxMCwxNjI1OTQ2MTE4LDIwNz
+MxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4MDcsMTk5NjE1NTEx
+NywtMzUwODY2NzA3LDkyODYzMjk5MSwxNjAwNDc5MzczLC04OD
+k5MTM0ODcsLTYxMjAyNzU1NiwyNjMzMjQyNDgsLTEyMTU4NTkz
+MDYsMTk1MTgxMzYyOCwtMjE0NTIwMjQ5Myw5MjI0NjUyNDUsNT
+g0Nzk5ODk3LC00Mzk1MzQzODAsLTIxMjA2OTk4MzgsMjA3Nzcy
+Nzk0N119
 -->
