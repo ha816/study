@@ -273,7 +273,11 @@ GROUP BY 작업도 인덱스를 사용하는 경우와 그렇지 못한 경우�
 
 ORDER BY 경우와 마찬가지로 조인의 드라이빙 테이블에 속한 컬럼만 이용해 그룹핑할 때 GROUP BY 컬럼으로 이미 인덱스가 있다면 그 인덱스를 차례때로 읽으면서 그룹핑 작업을 수행하고 결과를 조인으로 처리한다. GROUP BY가 인덱스를 사용한다고 하더라도 그룹 함수 등의 그룹 값을 처리해야할 임시 테이블이 필요할 때도 있다. 
 
-GROUP BY가 인덱스를 통해 처리되는 쿼리는 이미 정렬된 인덱스를 읽는 것으로 추가적인 정렬 작업은 필요치 않다. 이런 그룹핑 방식을 사용하는 쿼리의 실행 계획에서는 Extra 컬럼에서 Using index for group-by나 임시 테이블이나 정렬 관ㄹ
+GROUP BY가 인덱스를 통해 처리되는 쿼리는 이미 정렬된 인덱스를 읽는 것으로 추가적인 정렬 작업은 필요치 않다. 이런 그룹핑 방식을 사용하는 쿼리의 실행 계획에서는 Extra 컬럼에서 Using index for group-by나 임시 테이블이나 정렬 관련 커멘트(Using temporary, Using filesort)가 표시 되지 않는다. 
+
+## 루즈 인덱스 스캔을 이용하는 GROUP BY
+
+루즈 인덱스 스캔 방식은 인덱스 레코드를 건너 뛰면서 필요한 부분만 가져오는 것을 말한다. 
 
 # Distinct 처리
 
@@ -282,11 +286,11 @@ GROUP BY가 인덱스를 통해 처리되는 쿼리는 이미 정렬된 인덱�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0OTcwMjY3LDE2MjU5NDYxMTgsMjA3Mz
-E4ODY1OSwxOTg4NTEyOTYxLDE3OTcwODgwNywxOTk2MTU1MTE3
-LC0zNTA4NjY3MDcsOTI4NjMyOTkxLDE2MDA0NzkzNzMsLTg4OT
-kxMzQ4NywtNjEyMDI3NTU2LDI2MzMyNDI0OCwtMTIxNTg1OTMw
-NiwxOTUxODEzNjI4LC0yMTQ1MjAyNDkzLDkyMjQ2NTI0NSw1OD
-Q3OTk4OTcsLTQzOTUzNDM4MCwtMjEyMDY5OTgzOCwyMDc3NzI3
-OTQ3XX0=
+eyJoaXN0b3J5IjpbLTc4NTQwMzk3NSwxNjI1OTQ2MTE4LDIwNz
+MxODg2NTksMTk4ODUxMjk2MSwxNzk3MDg4MDcsMTk5NjE1NTEx
+NywtMzUwODY2NzA3LDkyODYzMjk5MSwxNjAwNDc5MzczLC04OD
+k5MTM0ODcsLTYxMjAyNzU1NiwyNjMzMjQyNDgsLTEyMTU4NTkz
+MDYsMTk1MTgxMzYyOCwtMjE0NTIwMjQ5Myw5MjI0NjUyNDUsNT
+g0Nzk5ODk3LC00Mzk1MzQzODAsLTIxMjA2OTk4MzgsMjA3Nzcy
+Nzk0N119
 -->
