@@ -292,7 +292,7 @@ salaries 테이블의 인덱스는 (emp_no + from_date)로 생성되어 있다. 
 MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해보자. 
 
 1. (emp_no + from_date) 인덱스를 차례대로 스캔하면서, emp_no의 첫 번째 유일한 값(그룹 키) '10001'을 찾아낸다.
-2. (emp_no + from_date) 인덱스에서 emp_no가 '10001' 
+2. (emp_no + from_date) 인덱스에서 emp_no가 '10001'인 것 중에서 from_date 값이 '1985-03-01' 인 레코드만 가져온다. 
 
 
 
@@ -303,7 +303,7 @@ MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQ4NDM3OSwxMTQyMTUwODY1LC0xND
+eyJoaXN0b3J5IjpbMjA3NjA4OTU4MSwxMTQyMTUwODY1LC0xND
 IzNzI1NjE5LC03ODU0MDM5NzUsMTYyNTk0NjExOCwyMDczMTg4
 NjU5LDE5ODg1MTI5NjEsMTc5NzA4ODA3LDE5OTYxNTUxMTcsLT
 M1MDg2NjcwNyw5Mjg2MzI5OTEsMTYwMDQ3OTM3MywtODg5OTEz
