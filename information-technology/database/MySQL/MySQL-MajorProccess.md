@@ -238,7 +238,7 @@ tb_test1 테이블의 레코드가 100건이고, tb_test2 테이블의 레코드
 
 어느 테이블이 먼저 드라이빙 되어 조인되는지도 중요하지만 어떤 정렬방식으로 처리 되는지는 더 큰 성능차이를 만든다. 가능하다면 인덱스를 사용한 정렬로 유도하고 그렇지 못한다면 최소한 드라이빙 테이블 정렬해도 되는 수준으로 유도하는 것도 좋은 튜닝 방법이다.
 
-> 인덱스를 사용하지 못하고 별도로 Filesort 작업을 거쳐야 하는 쿼리에서 LIMIT 조건이 아무런 도움이 되지 못하는 것은 아니다. 정렬해야할 대상 레코드가 1000건인 쿼리에 LIMIT10이라는 조건이 있다면 MySQL 서버는 1000건의 레코드를 모두 정렬하는 것이 아니라 필요한 순서대로 정렬해서 상위 10건만 정렬이 채워지면 정렬을 멈추고 결과를 반환한다. 하지만 MySQL 서버는 정렬을 위해 퀴소트 알고리즘을 사용한다. 이는 LIMIT 10을 만족하는 상위 10건을 정렬하기 위해 더 많은 작업이 필요할 수도 있다. 결론적으로 인덱스를 사용하지 못하는 쿼리를 페이징 처리에 사용하는 경우 LIMIT 5~10건만 조회하더라도 쿼리가 기대 만큼 빨라지지는 않는다.
+> 인덱스를 사용하지 못하고 별도로 Filesort 작업을 거쳐야 하는 쿼리에서 LIMIT 조건이 아무런 도움이 되지 못하는 것은 아니다. 정렬해야할 대상 레코드가 1000건인 쿼리에 LIMIT10이라는 조건이 있다면 MySQL 서버는 1000건의 레코드를 모두 정렬하는 것이 아니라 필요한 순서대로 정렬해서 상위 10건만 정렬이 채워지면 정렬을 멈추고 결과를 반환한다. 하지만 MySQL 서버는 정렬을 위해 퀴소트 알고리즘을 사용한다. 이는 LIMIT 10을 만족하는 상위 10건을 정렬하기 위해 더 많은 작업이 필요할 수도 있다. 결론적으로 인덱스를 사용하지 못하는 쿼리를 페이징 처리에 사용하는 경우 LIMIT로 5~10건만을 조회하더라한다고 해도 쿼리가 기대 만큼 빨라지지는 않는다. 
 
 ## 정렬 관련 상태 변수 
 
@@ -335,11 +335,11 @@ SELECT col1, col3 FROM tb_test GROUP BY col1, col2
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMzc0NDEzOSwtNTg2NTU1MjA2LDEyND
-kyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNCwxMjIxMDQy
-NTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1MiwtMjA3MzkxNjc0Ni
-wxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0MjE1MDg2NSwtMTQy
-MzcyNTYxOSwtNzg1NDAzOTc1LDE2MjU5NDYxMTgsMjA3MzE4OD
-Y1OSwxOTg4NTEyOTYxLDE3OTcwODgwNywxOTk2MTU1MTE3LC0z
-NTA4NjY3MDddfQ==
+eyJoaXN0b3J5IjpbLTExODUxOTI5OTEsLTkyMzc0NDEzOSwtNT
+g2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3
+NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1Mi
+wtMjA3MzkxNjc0NiwxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0
+MjE1MDg2NSwtMTQyMzcyNTYxOSwtNzg1NDAzOTc1LDE2MjU5ND
+YxMTgsMjA3MzE4ODY1OSwxOTg4NTEyOTYxLDE5OTYxNTUxMTcs
+LTM1MDg2NjcwN119
 -->
