@@ -287,7 +287,9 @@ WHERE from_date = '1985-03-01'
 GROUP BY emp_no
 ```
 
-salaries 테이블의 인덱스는 (emp_no + from_date)로 생성되어 있다. 쿼리 문장에서 Where 조건은 인덱스 레인지 스캔 방법으로 접근할 수 없는 상태이다. 하지만 실제 실행 계획을
+salaries 테이블의 인덱스는 (emp_no + from_date)로 생성되어 있다. 쿼리 문장에서 Where 조건은 인덱스 레인지 스캔 방법으로 접근할 수 없는 상태이다. 하지만 실제 실행 계획을 보면 인덱스 레인지 스캔을 이용하며, Extra 컬럼의 Using index for group-by가 노출 된다.
+
+MySQL 서버가 어떻게 레인지 스캔을 했는지 순서대로 정리해보자. 
 
 # Distinct 처리
 
@@ -296,7 +298,7 @@ salaries 테이블의 인덱스는 (emp_no + from_date)로 생성되어 있다. 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NzUyOTk5OSwtMTQyMzcyNTYxOSwtNz
+eyJoaXN0b3J5IjpbMTE0MjE1MDg2NSwtMTQyMzcyNTYxOSwtNz
 g1NDAzOTc1LDE2MjU5NDYxMTgsMjA3MzE4ODY1OSwxOTg4NTEy
 OTYxLDE3OTcwODgwNywxOTk2MTU1MTE3LC0zNTA4NjY3MDcsOT
 I4NjMyOTkxLDE2MDA0NzkzNzMsLTg4OTkxMzQ4NywtNjEyMDI3
