@@ -43,10 +43,9 @@ UNREPEATBLE READ 부정합 현상은 일반 웹 서비스에서는 크게 문제
 가끔 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 실행되는 SELECT 문장의 차이를 혼동하는 경우가 있다. READ_COMMITED 격리 수준에서는 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 외부에서 실행되는 SELECT 문장의 차이가 거의 없다. 
 REPEATABLE READ에선 트랜잭션 내에서 SELECT 문장만 동일한 SELECT 쿼리를 수행했을때 언제나 동일한 결과가 나온다. 트랜잭션 없이 실행되는 SELECT 문장은 언제나 동일한 결과를 보지 못한다.
 
-
 ### REPEATABLE READ
 
-REPEATBLE_READ는 MySQL의 InnoDB 스토리지에서 기본적으로 사용되는 격리 수준이다. 이 격리 수준에서는 REPEATBLE_READ의 정합성(하나의 트랜잭션 내에서는 같은 SELECT 쿼리를 수행 시 항상 같은 결과)이 보장된다.
+이 격리 수준은 REPEATBLE_READ의 정합성(하나의 트랜잭션 내에서는 같은 SELECT 쿼리를 수행 시 항상 같은 결과)이 보장된다. REPEATBLE_READ는 MySQL InnoDB 스토리지에서 기본적으로 사용하는 격리 수준이다. 
 
 REPEATBLE_READ는 UNDO 영역에 백업된 이전 데이터를 이용해 동일 트랜잭션 내에서 동일한 결과를 보여주도록 보장하는데, 사실 READ_COMMITED도 UNDO 영역의 과거 커밋전 데이터를 보여준다. 차이점은 UNDO영역에 백업된 레코드의 여러 버전 중 몇 번째 이전까지 찾아 들어가는지가 다르다.
 
@@ -261,11 +260,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk1MDk4NTU5LDE3NTMwMTcyODUsLTg5OD
-A3ODQ2NiwtMTUyODAxNjc0MywyOTMyODkxOTEsOTM1MDI1MTEx
-LDE3NTIzMzk3NzYsNzA5OTkzMDEwLDUwNTczMzI5MiwxMTc1MD
-M2Njg0LDIwNDE3MjgxNzYsMTY5MDQ4OTE1OSwtMTQ0MjUxODgx
-NCwtMTEyOTc3NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2MiwtMT
-Y4NzI2NDUxNSwtMTIwNDY5MDkxMSwtMjA0MTcwODU2OCw2MzM1
-NjU4MDNdfQ==
+eyJoaXN0b3J5IjpbMTM0NTU2NTUxMywxNzUzMDE3Mjg1LC04OT
+gwNzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5MTkxLDkzNTAyNTEx
+MSwxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIsMTE3NT
+AzNjY4NCwyMDQxNzI4MTc2LDE2OTA0ODkxNTksLTE0NDI1MTg4
+MTQsLTExMjk3NzU2NTgsLTk1MTYyODM2LC02MDM2NTg3NjIsLT
+E2ODcyNjQ1MTUsLTEyMDQ2OTA5MTEsLTIwNDE3MDg1NjgsNjMz
+NTY1ODAzXX0=
 -->
