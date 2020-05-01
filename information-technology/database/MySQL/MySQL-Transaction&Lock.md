@@ -21,12 +21,10 @@ READ_UNCOMMITED는 일반적인 DB에서 거의 사용하지 않고, 마찬가�
 
 ### READ UNCOMMITED
 
-이 격리 수준에서는 **한 트랜잭션의 변경 내용을 COMMIT이나 ROLLBACK 여부와 상관없이 다른 모든 트랜잭션에서 공유한다.** 어떤 트랜잭션에서 처리한 작업이 확정(Commit, Rollback)되지 않았는데도 다른 트랜잭션에서 볼 수 있는 격리 수준이 바로 READ_UNCOMMITED이다. 간단하게는 그저 현재 데이터를 그대로 사용한다는 의미로 성능상 이점은 있겠지만 Dirty Read 현상이 나타날 수 있다. 
-
-READ_UNCOMMITED는 RDBMS 표준에서는 트랜잭션 격리 수준으로 인정하지 않을 정도로 데이터 정합성에 문제가 많다.  MySQL을 사용한다면 READ_COMMITED 이상의 격리수준을 사용하자.
+이 격리 수준에서는 **한 트랜잭션의 변경 내용을 COMMIT이나 ROLLBACK 여부와 상관없이 다른 모든 트랜잭션에서 공유한다.** 어떤 트랜잭션에서 처리한 작업이 확정(Commit, Rollback)되지 않았는데도 다른 트랜잭션에서 볼 수 있는 격리 수준이 바로 READ_UNCOMMITED이다. 간단하게는 그저 현재 데이터를 그대로 사용한다는 의미이다.
+READ_UNCOMMITED는 RDBMS 표준에서는 트랜잭션 격리 수준으로 인정하지 않을 정도로 데이터 정합성에 문제가 많다.  MySQL을 사용한다면 READ_COMMITED 이상의 격리수준을 사용하자. 성능상 이점은 있겠지만 Dirty Read 현상이 나타날 수 있다. 
 
 #### Dirty Read
-
 
 
 
@@ -36,7 +34,7 @@ READ_COMMITED는 한 트랜잭션이 데이터를 조회할때, 다른 트랜잭
 
 매커니즘을 설명하자면, 하나의 트랜잭션이 데이터를 변경하면 UNDO 영역에 변경전 데이터를 백업한다. 이때 다른 트랜잭션에서 해당 데이터를 조회하면 UNDO 영역에 백업된 변경전 데이터를 조회하게 된다. 그리고 Commit 후에는 변경된 데이터를 조회하게 된다. 
 
-READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제가 있다.() 라 한다. REPEATBLE READ 정합성이란 **하나의 트랜잭션 내에서는 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같아야 한다**를 말한다. 
+READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제가 있다.(UNREPEATABLE_READ) REPEATBLE READ 정합성이란 **하나의 트랜잭션 내에서는 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같아야 한다**를 말한다. 
 
 #### UNREPEATBLE READ 
 
@@ -263,11 +261,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzgyNjQzMDUsMTc1MzAxNzI4NSwtOD
-k4MDc4NDY2LC0xNTI4MDE2NzQzLDI5MzI4OTE5MSw5MzUwMjUx
-MTEsMTc1MjMzOTc3Niw3MDk5OTMwMTAsNTA1NzMzMjkyLDExNz
-UwMzY2ODQsMjA0MTcyODE3NiwxNjkwNDg5MTU5LC0xNDQyNTE4
-ODE0LC0xMTI5Nzc1NjU4LC05NTE2MjgzNiwtNjAzNjU4NzYyLC
-0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC0yMDQxNzA4NTY4LDYz
-MzU2NTgwM119
+eyJoaXN0b3J5IjpbOTE3NDUzMzA4LDE3NTMwMTcyODUsLTg5OD
+A3ODQ2NiwtMTUyODAxNjc0MywyOTMyODkxOTEsOTM1MDI1MTEx
+LDE3NTIzMzk3NzYsNzA5OTkzMDEwLDUwNTczMzI5MiwxMTc1MD
+M2Njg0LDIwNDE3MjgxNzYsMTY5MDQ4OTE1OSwtMTQ0MjUxODgx
+NCwtMTEyOTc3NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2MiwtMT
+Y4NzI2NDUxNSwtMTIwNDY5MDkxMSwtMjA0MTcwODU2OCw2MzM1
+NjU4MDNdfQ==
 -->
