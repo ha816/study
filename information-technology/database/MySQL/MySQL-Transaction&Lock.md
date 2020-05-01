@@ -41,7 +41,7 @@ READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제
 이러한 부정합 현상은 일반 웹 서비스에서는 크게 문제되지 않지만, 하나의 트랜잭션에서 동일한 데이터를 여러 번 읽고 변경하는 작업이 금전적인 처리와 연결되면 문제가 될 수 있다. 예를 들어, 한 트랜잭션에서 입금과 출금 처리가 계속 진행되고 있을때, 다른 트랜잭션에서 오늘 입금된 금액 총합을 조회한다고 해보자. SELECT 쿼리는 실행될때마다 결과가 변경될 것이다. 
 
 가끔 사용자 중에서 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 실행되는 SELECT 문장의 차이를 혼동하는 경우가 있다. READ_COMMITED 격리 수준에서는 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 외부에서 실행되는 SELECT 문장의 차이가 거의 없다. 
-하지만 REPEATABLE READ에선 기본적으로 SELECT 쿼리 문장도 트랜잭션 범위 내에서 작동한다. 즉 하나의 트랜잭션 안에서는 동일한 SELECT 쿼리를 동작해도 언제나 동일한 결과만 나온다. 
+하지만 REPEATABLE READ에선 하나의 트랜잭션 안에서만 동일한 SELECT 쿼리를 동작해도 언제나 동일한 결과만 나온다. 
 
 ### REPEATABLE READ
 
@@ -260,11 +260,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDI5NTk4NDAsLTg5ODA3ODQ2NiwtMT
-UyODAxNjc0MywyOTMyODkxOTEsOTM1MDI1MTExLDE3NTIzMzk3
-NzYsNzA5OTkzMDEwLDUwNTczMzI5MiwxMTc1MDM2Njg0LDIwND
-E3MjgxNzYsMTY5MDQ4OTE1OSwtMTQ0MjUxODgxNCwtMTEyOTc3
-NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2MiwtMTY4NzI2NDUxNS
-wtMTIwNDY5MDkxMSwtMjA0MTcwODU2OCw2MzM1NjU4MDMsNjIz
-ODAxMjI1XX0=
+eyJoaXN0b3J5IjpbODI2NjU3OTk2LC04OTgwNzg0NjYsLTE1Mj
+gwMTY3NDMsMjkzMjg5MTkxLDkzNTAyNTExMSwxNzUyMzM5Nzc2
+LDcwOTk5MzAxMCw1MDU3MzMyOTIsMTE3NTAzNjY4NCwyMDQxNz
+I4MTc2LDE2OTA0ODkxNTksLTE0NDI1MTg4MTQsLTExMjk3NzU2
+NTgsLTk1MTYyODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1MTUsLT
+EyMDQ2OTA5MTEsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYyMzgw
+MTIyNV19
 -->
