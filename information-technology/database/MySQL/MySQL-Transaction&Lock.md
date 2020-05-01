@@ -5,7 +5,7 @@
 
 ## MySQL Transaction
 
-트랜잭션은 작업의 원자성을 위해 사용한다. (트랜잭션) 격리수준은 다수의 트랜잭션간 내용을 어떻게 공유하고 차단할 것인지를 결정한다.
+작업 단위를 묶어 원자성을 보장용한다. (트랜잭션) 격리수준은 다수의 트랜잭션간 내용을 어떻게 공유하고 차단할 것인지를 결정한다.
 
 트랜잭션은 작업의 완전성을 보장한다고 말한다. 이 말은 작업의 일부만 적용되는 현상(partial update)가 없다는 말이다. 
 
@@ -256,11 +256,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyOTY1NzExMywyOTMyODkxOTEsOTM1MD
-I1MTExLDE3NTIzMzk3NzYsNzA5OTkzMDEwLDUwNTczMzI5Miwx
-MTc1MDM2Njg0LDIwNDE3MjgxNzYsMTY5MDQ4OTE1OSwtMTQ0Mj
-UxODgxNCwtMTEyOTc3NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2
-MiwtMTY4NzI2NDUxNSwtMTIwNDY5MDkxMSwtMjA0MTcwODU2OC
-w2MzM1NjU4MDMsNjIzODAxMjI1LDQ0NjU0ODczLDk5MjUzMDQ4
-OF19
+eyJoaXN0b3J5IjpbNTI4NTM2NDQ1LDI5MzI4OTE5MSw5MzUwMj
+UxMTEsMTc1MjMzOTc3Niw3MDk5OTMwMTAsNTA1NzMzMjkyLDEx
+NzUwMzY2ODQsMjA0MTcyODE3NiwxNjkwNDg5MTU5LC0xNDQyNT
+E4ODE0LC0xMTI5Nzc1NjU4LC05NTE2MjgzNiwtNjAzNjU4NzYy
+LC0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC0yMDQxNzA4NTY4LD
+YzMzU2NTgwMyw2MjM4MDEyMjUsNDQ2NTQ4NzMsOTkyNTMwNDg4
+XX0=
 -->
