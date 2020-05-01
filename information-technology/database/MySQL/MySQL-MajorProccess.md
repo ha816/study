@@ -350,7 +350,7 @@ SELECT DISTINCT emp_no FROM salaries;
 SELECT emp_no FROM salaries GROUP BY emp_no
 ```
 
-DISTINCT를 사용할때 자주 실수하는 것이 있다. DISTIN
+DISTINCT를 사용할때 자주 실수하는 것이 있다. DISTINCT는 SELECT하는 레코드(튜플)을 유니크하게 SELECT 하는 것이지 칼럼을 유니크하게 조회하는 것이 아니다. 적, 다음 쿼
 
 
 # 임시 테이블(Using temporary)
@@ -358,7 +358,7 @@ DISTINCT를 사용할때 자주 실수하는 것이 있다. DISTIN
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NTY2MTI0OCwxMDQ4ODYwMDE0LDgxNj
+eyJoaXN0b3J5IjpbLTU3NjM1MzI4MywxMDQ4ODYwMDE0LDgxNj
 gxOTMxMiwtMTU2NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUy
 MDYsMTI0OTIyMTg0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LD
 EyMjEwNDI1MDcsMjA3NjQ2MDIzNywtMjkzNDM2MzUyLC0yMDcz
