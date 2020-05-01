@@ -348,8 +348,9 @@ GROUP BY의 기준 컬럼이 드라이빙 테이블에 있든 드리븐 테이�
 ```
 SELECT DISTINCT emp_no FROM salaries;
 SELECT emp_no FROM salaries GROUP BY emp_no
-
 ```
+
+DISTINCT를 사용할때 자주 실수하는 것이 있다. DISTIN
 
 
 # 임시 테이블(Using temporary)
@@ -357,11 +358,11 @@ SELECT emp_no FROM salaries GROUP BY emp_no
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTMxOTQwMjcsMTA0ODg2MDAxNCw4MT
-Y4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2NTU1
-MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNC
-wxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1MiwtMjA3
-MzkxNjc0NiwxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0MjE1MD
-g2NSwtMTQyMzcyNTYxOSwtNzg1NDAzOTc1LDE2MjU5NDYxMTgs
-MjA3MzE4ODY1OV19
+eyJoaXN0b3J5IjpbMTA1NTY2MTI0OCwxMDQ4ODYwMDE0LDgxNj
+gxOTMxMiwtMTU2NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUy
+MDYsMTI0OTIyMTg0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LD
+EyMjEwNDI1MDcsMjA3NjQ2MDIzNywtMjkzNDM2MzUyLC0yMDcz
+OTE2NzQ2LDE2MTIwNTY4OTYsMjA3NjA4OTU4MSwxMTQyMTUwOD
+Y1LC0xNDIzNzI1NjE5LC03ODU0MDM5NzUsMTYyNTk0NjExOCwy
+MDczMTg4NjU5XX0=
 -->
