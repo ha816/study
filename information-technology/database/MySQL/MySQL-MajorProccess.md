@@ -379,13 +379,15 @@ WHERE e.emp_no = s.emp_no
 AND e.emp_no BETWEEN 100001 AND 100100
 ```
 
+이 쿼리는 COUNT(DISTINCT s.salary)를 처리하기 위해 임시 테이블을 사용한다. 
+
 
 # 임시 테이블(Using temporary)
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTE0NTA4MywtOTk2MjU1NzA1LDEwND
+eyJoaXN0b3J5IjpbMTk0ODQ5MzYyMywtOTk2MjU1NzA1LDEwND
 g4NjAwMTQsODE2ODE5MzEyLC0xNTY1NzAxMTM2LC05MjM3NDQx
 MzksLTU4NjU1NTIwNiwxMjQ5MjIxODQzLC01OTQyNDk3MzEsLT
 E4MTc3NzY1MjQsMTIyMTA0MjUwNywyMDc2NDYwMjM3LC0yOTM0
