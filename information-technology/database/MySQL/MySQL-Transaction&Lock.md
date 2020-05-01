@@ -32,7 +32,9 @@ READ_UNCOMMITED는 RDBMS 표준에서는 트랜잭션 격리 수준으로 인정
 
 ### READ COMMITED
 
-READ_COMMITED는 **어떤 트랜잭션이 데이터를 변경하였더라도 커밋되기 전에는 변경 전의 데이터를 조회하고 커밋 후에는 변경된 데이터를 조회한다.** 하나의 트랜잭션이 데이터를 변경하면 UNDO 영역에 변경전 데이터를 백업한다. 이때 다른 트랜잭션에서 해당 데이터를 조회하면 UNDO 영역에 변경전 데이터를 조회하게 된다. 그리고 커밋 후에는 드디어 변경된 데이터를 조회하게 된다. 
+READ_COMMITED는 한 트랜잭션이 데이터를 조회할때 
+
+ **어떤 트랜잭션이 데이터를 변경하였더라도 커밋되기 전에는 변경 전의 데이터를 조회하고 커밋 후에는 변경된 데이터를 조회한다.** 하나의 트랜잭션이 데이터를 변경하면 UNDO 영역에 변경전 데이터를 백업한다. 이때 다른 트랜잭션에서 해당 데이터를 조회하면 UNDO 영역에 변경전 데이터를 조회하게 된다. 그리고 커밋 후에는 드디어 변경된 데이터를 조회하게 된다. 
 
 READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제가 있다. REPEATBLE READ 정합성이란 **하나의 트랜잭션 내에서는 똑같은 SELECT 쿼리를 실행했을때는 항상 같은 결과를 가져와야 하는 것**이다.
 
@@ -257,11 +259,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTI4Njk0MzMsLTE1MjgwMTY3NDMsMj
-kzMjg5MTkxLDkzNTAyNTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAx
-MCw1MDU3MzMyOTIsMTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OT
-A0ODkxNTksLTE0NDI1MTg4MTQsLTExMjk3NzU2NTgsLTk1MTYy
-ODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2OTA5MT
-EsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYyMzgwMTIyNSw0NDY1
-NDg3M119
+eyJoaXN0b3J5IjpbNTIwNDE0Njk0LC0xNTI4MDE2NzQzLDI5Mz
+I4OTE5MSw5MzUwMjUxMTEsMTc1MjMzOTc3Niw3MDk5OTMwMTAs
+NTA1NzMzMjkyLDExNzUwMzY2ODQsMjA0MTcyODE3NiwxNjkwND
+g5MTU5LC0xNDQyNTE4ODE0LC0xMTI5Nzc1NjU4LC05NTE2Mjgz
+NiwtNjAzNjU4NzYyLC0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC
+0yMDQxNzA4NTY4LDYzMzU2NTgwMyw2MjM4MDEyMjUsNDQ2NTQ4
+NzNdfQ==
 -->
