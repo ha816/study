@@ -345,7 +345,11 @@ GROUP BY의 기준 컬럼이 드라이빙 테이블에 있든 드리븐 테이�
 
 단순히 SELECT 되는 레코드 중에 유니크한 레코드만 가져오자고 하면 SELECT DISTINCT 형태의 문장을 사용한다. 이렬 경우 **GROUP BY와 거의 같은 방식으로 처리되며 차이는 SELECT DISTINCT의 경우에는 정렬이 보장되지 않는다는 것 뿐이다.** 
 
-SELECT 
+```
+SELECT DISTINCT emp_no FROM salaries;
+SELECT emp_no FROM salaries GROUP BY emp_no
+
+```
 
 
 # 임시 테이블(Using temporary)
@@ -353,7 +357,7 @@ SELECT
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzQxMjc0NjgsMTA0ODg2MDAxNCw4MT
+eyJoaXN0b3J5IjpbLTE1OTMxOTQwMjcsMTA0ODg2MDAxNCw4MT
 Y4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2NTU1
 MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNC
 wxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1MiwtMjA3
