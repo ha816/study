@@ -379,7 +379,9 @@ WHERE e.emp_no = s.emp_no
 AND e.emp_no BETWEEN 100001 AND 100100
 ```
 
-이 쿼리는 COUNT(DISTINCT s.salary)를 처리하기 위해 임시 테이블을 사용한다. 
+이 쿼리는 COUNT(DISTINCT s.salary)를 처리하기 위해 임시 테이블을 사용한다. 하지만 임시 테이블을 사용하는 "Using temporary"가 표시되지는 않는다.
+
+만약 위의 쿼리에 
 
 
 # 임시 테이블(Using temporary)
@@ -387,11 +389,11 @@ AND e.emp_no BETWEEN 100001 AND 100100
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODQ5MzYyMywtOTk2MjU1NzA1LDEwND
-g4NjAwMTQsODE2ODE5MzEyLC0xNTY1NzAxMTM2LC05MjM3NDQx
-MzksLTU4NjU1NTIwNiwxMjQ5MjIxODQzLC01OTQyNDk3MzEsLT
-E4MTc3NzY1MjQsMTIyMTA0MjUwNywyMDc2NDYwMjM3LC0yOTM0
-MzYzNTIsLTIwNzM5MTY3NDYsMTYxMjA1Njg5NiwyMDc2MDg5NT
-gxLDExNDIxNTA4NjUsLTE0MjM3MjU2MTksLTc4NTQwMzk3NSwx
-NjI1OTQ2MTE4XX0=
+eyJoaXN0b3J5IjpbLTEwMzIwNTgzNTgsMTk0ODQ5MzYyMywtOT
+k2MjU1NzA1LDEwNDg4NjAwMTQsODE2ODE5MzEyLC0xNTY1NzAx
+MTM2LC05MjM3NDQxMzksLTU4NjU1NTIwNiwxMjQ5MjIxODQzLC
+01OTQyNDk3MzEsLTE4MTc3NzY1MjQsMTIyMTA0MjUwNywyMDc2
+NDYwMjM3LC0yOTM0MzYzNTIsLTIwNzM5MTY3NDYsMTYxMjA1Nj
+g5NiwyMDc2MDg5NTgxLDExNDIxNTA4NjUsLTE0MjM3MjU2MTks
+LTc4NTQwMzk3NV19
 -->
