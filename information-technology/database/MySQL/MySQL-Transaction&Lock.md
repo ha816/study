@@ -32,7 +32,7 @@ READ_UNCOMMITED는 RDBMS 표준에서는 트랜잭션 격리 수준으로 인정
 
 ### READ COMMITED
 
-READ_COMMITED는 한 트랜잭션이 데이터를 조회할때 다른 트랜잭션이 그 데이터를 변경하고 있다면 변경 작업 전 원본 데이터를 조회한다. 당연히 그 데이터가 
+READ_COMMITED는 **한 트랜잭션이 데이터를 조회할때 다른 트랜잭션이 그 데이터를 변경하고 있다면 변경 작업 시작 전 백업 데이터를 조회한다.** 
 
  **어떤 트랜잭션이 데이터를 변경하였더라도 커밋되기 전에는 변경 전의 데이터를 조회하고 커밋 후에는 변경된 데이터를 조회한다.** 하나의 트랜잭션이 데이터를 변경하면 UNDO 영역에 변경전 데이터를 백업한다. 이때 다른 트랜잭션에서 해당 데이터를 조회하면 UNDO 영역에 변경전 데이터를 조회하게 된다. 그리고 커밋 후에는 드디어 변경된 데이터를 조회하게 된다. 
 
@@ -259,11 +259,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTg2NTUyNTgsLTE1MjgwMTY3NDMsMj
-kzMjg5MTkxLDkzNTAyNTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAx
-MCw1MDU3MzMyOTIsMTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OT
-A0ODkxNTksLTE0NDI1MTg4MTQsLTExMjk3NzU2NTgsLTk1MTYy
-ODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2OTA5MT
-EsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLDYyMzgwMTIyNSw0NDY1
-NDg3M119
+eyJoaXN0b3J5IjpbMTQ3MjIzNTE5NiwtMTUyODAxNjc0MywyOT
+MyODkxOTEsOTM1MDI1MTExLDE3NTIzMzk3NzYsNzA5OTkzMDEw
+LDUwNTczMzI5MiwxMTc1MDM2Njg0LDIwNDE3MjgxNzYsMTY5MD
+Q4OTE1OSwtMTQ0MjUxODgxNCwtMTEyOTc3NTY1OCwtOTUxNjI4
+MzYsLTYwMzY1ODc2MiwtMTY4NzI2NDUxNSwtMTIwNDY5MDkxMS
+wtMjA0MTcwODU2OCw2MzM1NjU4MDMsNjIzODAxMjI1LDQ0NjU0
+ODczXX0=
 -->
