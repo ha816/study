@@ -338,7 +338,7 @@ GROUP BY의 기준 컬럼이 드라이빙 테이블에 있든 드리븐 테이�
 
 # Distinct 처리
 
-특정 컬럼의 유니크한 값만 조회하려면 SELECT에 DISTINCT를 사용한다. DISTINCT는 MIN, MAX 또는 COUNT와 같은 집합 함수와 함께 사용되는 경우와 집합 함수가 없는 경우로 두 가지로 나누어 생각해 볼 수 있다. 
+특정 컬럼의 유니크한 값만 조회하려면 SELECT에 DISTINCT를 사용한다. DISTINCT는 MIN, MAX 또는 COUNT와 같은 집합 함수와 함께 사용되는 경우와 집합 함수가 없는 경우로 두 가지로 나누어 생각해 볼 수 있다. 이렇게 나눈 이유는 DISTINCT 키워드가 영향을 미치는 범위가 다르기 때문이다.
 
 
 # 임시 테이블(Using temporary)
@@ -346,11 +346,11 @@ GROUP BY의 기준 컬럼이 드라이빙 테이블에 있든 드리븐 테이�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE2ODE5MzEyLC0xNTY1NzAxMTM2LC05Mj
-M3NDQxMzksLTU4NjU1NTIwNiwxMjQ5MjIxODQzLC01OTQyNDk3
-MzEsLTE4MTc3NzY1MjQsMTIyMTA0MjUwNywyMDc2NDYwMjM3LC
-0yOTM0MzYzNTIsLTIwNzM5MTY3NDYsMTYxMjA1Njg5NiwyMDc2
-MDg5NTgxLDExNDIxNTA4NjUsLTE0MjM3MjU2MTksLTc4NTQwMz
-k3NSwxNjI1OTQ2MTE4LDIwNzMxODg2NTksMTk4ODUxMjk2MSwx
-OTk2MTU1MTE3XX0=
+eyJoaXN0b3J5IjpbLTEzNDQ0MTcxNjMsODE2ODE5MzEyLC0xNT
+Y1NzAxMTM2LC05MjM3NDQxMzksLTU4NjU1NTIwNiwxMjQ5MjIx
+ODQzLC01OTQyNDk3MzEsLTE4MTc3NzY1MjQsMTIyMTA0MjUwNy
+wyMDc2NDYwMjM3LC0yOTM0MzYzNTIsLTIwNzM5MTY3NDYsMTYx
+MjA1Njg5NiwyMDc2MDg5NTgxLDExNDIxNTA4NjUsLTE0MjM3Mj
+U2MTksLTc4NTQwMzk3NSwxNjI1OTQ2MTE4LDIwNzMxODg2NTks
+MTk4ODUxMjk2MV19
 -->
