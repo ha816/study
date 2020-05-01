@@ -36,9 +36,9 @@ READ_COMMITED는 한 트랜잭션이 데이터를 조회할때, 다른 트랜잭
 
 매커니즘을 설명하자면, 하나의 트랜잭션이 데이터를 변경하면 UNDO 영역에 변경전 데이터를 백업한다. 이때 다른 트랜잭션에서 해당 데이터를 조회하면 UNDO 영역에 백업된 변경전 데이터를 조회하게 된다. 그리고 Commit 후에는 변경된 데이터를 조회하게 된다. 
 
-READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제가 있다. REPEATBLE READ 정합성이란 **하나의 트랜잭션 내에서는 똑같은 SELECT 쿼리를 실행했을때는 항상 같은 결과를 가져와야 하는 것**이다.
+READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제가 있다. REPEATBLE READ 정합성이란 **하나의 트랜잭션 내에서는 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같아야 한다**를 말한다. 
 
-이러한 부정합 현상은 웹프로그램에서는 크게 문제되지 않지만, 하나의 트랜잭션에서 동일한 데이터를 여러번 읽고 변경하는 작업이 금전적인 처리와 연결되면 문제가 될 수 있다. 예를 들어, 한 트랜잭션에서 입금과 출금 처리가 계속 진행되고 있을때, 다른 트랜잭션에서 오늘 입금된 금액 총합을 조회한다고 해보자. SELECT 쿼리는 실행될때마다 결과가 변경될 것이다. 
+이러한 부정합 현상은 일반 웹 서비스에서는 크게 문제되지 않지만, 하나의 트랜잭션에서 동일한 데이터를 여러 번 읽고 변경하는 작업이 금전적인 처리와 연결되면 문제가 될 수 있다. 예를 들어, 한 트랜잭션에서 입금과 출금 처리가 계속 진행되고 있을때, 다른 트랜잭션에서 오늘 입금된 금액 총합을 조회한다고 해보자. SELECT 쿼리는 실행될때마다 결과가 변경될 것이다. 
 
 가끔 사용자 중에서 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 실행되는 SELECT 문장의 차이를 혼동하는 경우가 있다. READ_COMMITED 격리 수준에서는 **트랜잭션 내에서 실행되는 SELECT와 외부에서 실행되는 문장의 차이가 별로 없다.** 
 
@@ -259,11 +259,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA4MDU2NjE2LC0xNTI4MDE2NzQzLDI5Mz
-I4OTE5MSw5MzUwMjUxMTEsMTc1MjMzOTc3Niw3MDk5OTMwMTAs
-NTA1NzMzMjkyLDExNzUwMzY2ODQsMjA0MTcyODE3NiwxNjkwND
-g5MTU5LC0xNDQyNTE4ODE0LC0xMTI5Nzc1NjU4LC05NTE2Mjgz
-NiwtNjAzNjU4NzYyLC0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC
-0yMDQxNzA4NTY4LDYzMzU2NTgwMyw2MjM4MDEyMjUsNDQ2NTQ4
-NzNdfQ==
+eyJoaXN0b3J5IjpbLTg5ODA3ODQ2NiwtMTUyODAxNjc0MywyOT
+MyODkxOTEsOTM1MDI1MTExLDE3NTIzMzk3NzYsNzA5OTkzMDEw
+LDUwNTczMzI5MiwxMTc1MDM2Njg0LDIwNDE3MjgxNzYsMTY5MD
+Q4OTE1OSwtMTQ0MjUxODgxNCwtMTEyOTc3NTY1OCwtOTUxNjI4
+MzYsLTYwMzY1ODc2MiwtMTY4NzI2NDUxNSwtMTIwNDY5MDkxMS
+wtMjA0MTcwODU2OCw2MzM1NjU4MDMsNjIzODAxMjI1LDQ0NjU0
+ODczXX0=
 -->
