@@ -2,7 +2,6 @@
 
 이 장에서는 MySQL의 동시성에 영향을 미치는 잠금(Lock)과 트랜잭션, 그리고 트랜잭션의 격리 수준(Isolation Level)을 공부한다.
 
-**잠금은 동시성을 제어하기 위한 기능**이다. 잠금은 여러 커넥션에서 동시에 동일한 자원(레코드나 테이블)을 요청할 경우 순서대로 한 시점에선 하나의 커넥션에서만 변경할 수 있도록 한다. 
 
 트랜잭션은 작업의 원자성을 위해 사용한다. (트랜잭션) 격리수준은 다수의 트랜잭션간 내용을 어떻게 공유하고 차단할 것인지를 결정한다.
 
@@ -99,6 +98,8 @@ SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 �
 
 
 ## MySQL Lock
+
+**잠금은 동시성을 제어하기 위한 기능**이다. 잠금은 여러 커넥션에서 동시에 동일한 자원(레코드나 테이블)을 요청할 경우 순서대로 한 시점에선 하나의 커넥션에서만 변경할 수 있도록 한다. 
 
 MySQL에서 사용되는 잠금은 크게 **MySQL엔진 레벨**과 **스토리지 엔진 레벨**로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호 영향을 미치지 않는다. 
 
@@ -255,7 +256,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk1ODk3Njg1LDkzNTAyNTExMSwxNzUyMz
+eyJoaXN0b3J5IjpbMjkzMjg5MTkxLDkzNTAyNTExMSwxNzUyMz
 M5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIsMTE3NTAzNjY4NCwy
 MDQxNzI4MTc2LDE2OTA0ODkxNTksLTE0NDI1MTg4MTQsLTExMj
 k3NzU2NTgsLTk1MTYyODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1
