@@ -360,7 +360,7 @@ SELECT DISTINCT first_name, last_name FROM employees;
 ```
 SELECT DISTINCT (first_name), last_name FROM employees;
 ```
-위의 쿼리를 보면, first_name만 유니크하게 조회하고 last_name은 그냥 DISTINCT가 없을 때와 동일하게 조회하는 쿼리처럼 보인다. 그리고 실제로 상당히 그럴듯하게 에러 없이 실행되기 때문에 쉽게 실수할 수 있다. 하지만 MySQL서버는 **DISTINCT 뒤의 괄호를 그냥 의미 없이 사용된 괄호로 해석하고 제거해버린다.** DISTINCT는 함수가 아니므로 그 뒤의 괄호는 의미가 
+위의 쿼리를 보면, first_name만 유니크하게 조회하고 last_name은 그냥 DISTINCT가 없을 때와 동일하게 조회하는 쿼리처럼 보인다. 그리고 실제로 상당히 그럴듯하게 에러 없이 실행되기 때문에 쉽게 실수할 수 있다. 하지만 MySQL서버는 **DISTINCT 뒤의 괄호를 그냥 의미 없이 사용된 괄호로 해석하고 제거해버린다.** DISTINCT는 함수가 아니므로 그 뒤의 괄호는 의미가 없는 것이다. 
 
 
 
@@ -369,7 +369,7 @@ SELECT DISTINCT (first_name), last_name FROM employees;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NzI2ODU2NCwxMDQ4ODYwMDE0LDgxNj
+eyJoaXN0b3J5IjpbLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNj
 gxOTMxMiwtMTU2NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUy
 MDYsMTI0OTIyMTg0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LD
 EyMjEwNDI1MDcsMjA3NjQ2MDIzNywtMjkzNDM2MzUyLC0yMDcz
