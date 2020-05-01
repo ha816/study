@@ -3,9 +3,9 @@
 이 장에서는 MySQL의 동시성에 영향을 미치는 잠금(Lock)과 트랜잭션, 그리고 트랜잭션의 격리 수준(Isolation Level)을 공부한다.
 
 
-트랜잭션은 작업의 원자성을 위해 사용한다. (트랜잭션) 격리수준은 다수의 트랜잭션간 내용을 어떻게 공유하고 차단할 것인지를 결정한다.
-
 ## MySQL Transaction
+
+트랜잭션은 작업의 원자성을 위해 사용한다. (트랜잭션) 격리수준은 다수의 트랜잭션간 내용을 어떻게 공유하고 차단할 것인지를 결정한다.
 
 트랜잭션은 작업의 완전성을 보장한다고 말한다. 이 말은 작업의 일부만 적용되는 현상(partial update)가 없다는 말이다. 
 
@@ -256,11 +256,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkzMjg5MTkxLDkzNTAyNTExMSwxNzUyMz
-M5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIsMTE3NTAzNjY4NCwy
-MDQxNzI4MTc2LDE2OTA0ODkxNTksLTE0NDI1MTg4MTQsLTExMj
-k3NzU2NTgsLTk1MTYyODM2LC02MDM2NTg3NjIsLTE2ODcyNjQ1
-MTUsLTEyMDQ2OTA5MTEsLTIwNDE3MDg1NjgsNjMzNTY1ODAzLD
-YyMzgwMTIyNSw0NDY1NDg3Myw5OTI1MzA0ODgsLTE1MzM0ODc5
-NjddfQ==
+eyJoaXN0b3J5IjpbLTYyOTY1NzExMywyOTMyODkxOTEsOTM1MD
+I1MTExLDE3NTIzMzk3NzYsNzA5OTkzMDEwLDUwNTczMzI5Miwx
+MTc1MDM2Njg0LDIwNDE3MjgxNzYsMTY5MDQ4OTE1OSwtMTQ0Mj
+UxODgxNCwtMTEyOTc3NTY1OCwtOTUxNjI4MzYsLTYwMzY1ODc2
+MiwtMTY4NzI2NDUxNSwtMTIwNDY5MDkxMSwtMjA0MTcwODU2OC
+w2MzM1NjU4MDMsNjIzODAxMjI1LDQ0NjU0ODczLDk5MjUzMDQ4
+OF19
 -->
