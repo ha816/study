@@ -381,6 +381,15 @@ AND e.emp_no BETWEEN 100001 AND 100100
 
 이 쿼리는 COUNT(DISTINCT s.salary)를 처리하기 위해 임시 테이블을 사용한다. 하지만 임시 테이블을 사용하는 "Using temporary"가 표시되지는 않는다.
 
+```
+SELECT COUNT(DISTINCT s.salary), COUNT(DISTINCT e.last_name)
+FROM employees e, salaries s
+WHERE e.emp_no = s.emp_no AND e
+
+```
+
+
+
 다음 쿼리는 인덱스된 컬럼에 대해 DISTINCT 처리를 수행할때 는 인덱스를 풀 스캔하거나 레인지 스캔하면서 임시 테이블 없이 최적화된 처리를 수행할 수 있다.
 ```
 SELECT COUNT(DISTINCT emp_no) FROM employees e
@@ -396,11 +405,11 @@ SELECT COUNT(DISTINCT emp_no) FROM dept_emp GROUP BY dept_no
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTQzNDE2NCwtMTAzMjA1ODM1OCwxOT
-Q4NDkzNjIzLC05OTYyNTU3MDUsMTA0ODg2MDAxNCw4MTY4MTkz
-MTIsLTE1NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2NTU1MjA2LD
-EyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNCwxMjIx
-MDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1MiwtMjA3MzkxNj
-c0NiwxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0MjE1MDg2NSwt
-MTQyMzcyNTYxOV19
+eyJoaXN0b3J5IjpbLTIwNzYyOTQ1NDcsLTcxMTQzNDE2NCwtMT
+AzMjA1ODM1OCwxOTQ4NDkzNjIzLC05OTYyNTU3MDUsMTA0ODg2
+MDAxNCw4MTY4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEzOS
+wtNTg2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgx
+Nzc3NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNj
+M1MiwtMjA3MzkxNjc0NiwxNjEyMDU2ODk2LDIwNzYwODk1ODEs
+MTE0MjE1MDg2NV19
 -->
