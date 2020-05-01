@@ -47,7 +47,7 @@ REPEATABLE READ에선 트랜잭션 내에서 SELECT 문장만 동일한 SELECT �
 
 이 격리 수준은 REPEATBLE_READ의 정합성(하나의 트랜잭션 내에서는 같은 SELECT 쿼리를 수행 시 항상 같은 결과)이 보장된다. REPEATBLE_READ는 MySQL InnoDB 스토리지에서 기본적으로 사용하는 격리 수준이다. 
 
-REPEATBLE_READ는 UNDO 영역에 백업된 이전 데이터를 이용해 동일 트랜잭션 내에서 동일한 결과를 보여주도록 보장하는데, 사실 READ_COMMITED도 UNDO 영역의 과거 커밋전 데이터를 보여준다. 차이점은 UNDO영역에 백업된 레코드의 여러 버전 중 몇 번째 이전까지 찾아 들어가는지가 다르다.
+매커니즘을 설명하자면, UNDO 영역에 백업된 이전 데이터를 이용해 동일 트랜잭션 내에서 동일한 결과를 보여주도록 보장하는데, 사실 READ_COMMITED도 UNDO 영역의 과거 커밋전 데이터를 보여준다. 차이점은 UNDO영역에 백업된 레코드의 여러 버전 중 몇 번째 이전까지 찾아 들어가는지가 다르다.
 
 모든 InnoDB의 트랜잭션은 고유한 트랜잭션 번호를 가지며, UNDO 영역에 백업된 모든 레코드에는 변경을 수행한 트랜잭션 번호가 포함되어 있다. 그리고 UNDO 영역에 백업 데이터는 스토리지 엔진이 어느 시점에 불필요하다고 판단되면 주기적으로 삭제한다. 
 
@@ -72,7 +72,9 @@ insert(A) & \\
 
 사실 두 번째 트랜잭션이 트랜잭션을 BEGIN 명령으로 실행 할때 부터 **실행되는 모든 SELECT 쿼리는 자신의 트랜잭션 번호(9) 보다 작은 트랜잭션 번호에서 변경한 것만을 보게 된다.** 
 
-아쉽게도 REPLEATBLE_READ에서도 부정합이 발생할 수 있다. 
+#### PHANTOM_READ 
+
+아쉽게도 REPLEATBLE_READ에서도 부정합이 발생할 수 있는데 바로 PHANTOM_READ 부정합이다. 아래 흐름을 보도록 하자.
 $$\begin{bmatrix}
 T1(id = 6) & T2(id = 9)\\
 select(A)&\\
@@ -260,7 +262,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NTU2NTUxMywxNzUzMDE3Mjg1LC04OT
+eyJoaXN0b3J5IjpbLTE3NjcyNjg3NCwxNzUzMDE3Mjg1LC04OT
 gwNzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5MTkxLDkzNTAyNTEx
 MSwxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIsMTE3NT
 AzNjY4NCwyMDQxNzI4MTc2LDE2OTA0ODkxNTksLTE0NDI1MTg4
