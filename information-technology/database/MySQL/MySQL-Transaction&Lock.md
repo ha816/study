@@ -13,11 +13,14 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 
 ## MySQL Isolation Level
 
-트랜잭션의 격리 수준이란 여러 트랜잭션이 동시에 처리될 때, **특정 트랜잭션이 다른 트랜잭션에서 변경하거나 조회하는 데이터를 볼 수 있도록 허용할지 말지를 결정**하는 것이다. 격리 수준은 크게 "READ UNCOMMITED", "READ COMMITED", "REPEATABLE READ", "SERIALIZABLE" 4가지가 있다. 
+트랜잭션의 격리 수준이란 여러 트랜잭션이 동시에 처리될 때, **특정 트랜잭션이 다른 트랜잭션에서 변경하거나 조회하는 데이터를 볼 수 있도록 허용할지 말지를 결정**하는 것이다. 
 
-"DIRTY READ" 라고도 하는 READ_UNCOMMITED는 일반적인 데이터 베이스에서는 거의 사용하지 않고, SERIALIZABLE도 동시성이 중요한 데이터 베이스에서 거의 사용되지 않는다. 
-격리수준에서 뒤로 갈수록 트랜잭션간의 고립(격리)가 높아지며, 동시에 동시성도 떨어지는 것이 일반적이다. 
+격리 수준에는 "READ UNCOMMITED", "READ COMMITED", "REPEATABLE READ", "SERIALIZABLE"가 있다. 뒤에 언급한 격리수준은 트랜잭션간의 고립(격리)가 높아지며, 동시에 동시성도 떨어지는 것이 일반적이다. 
 격리 수준이 높아질 수록 MySQL 서버의 처리 성능이 많이 떨어질 것으로 걱정하는 사용자가 많은데, 사실 SERIALIZABLE 격리 수준이 아니라면 성능은 큰 차이는 발생하지 않는다.
+
+
+"DIRTY READ" 가 발생하는 READ_UNCOMMITED는 일반적인 데이터 베이스에서는 거의 사용하지 않고, SERIALIZABLE도 동시성이 중요한 데이터 베이스에서 거의 사용되지 않는다. 
+
 
 ### READ UNCOMMITED
 
@@ -254,11 +257,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjA5MzY5NzcsMjkzMjg5MTkxLDkzNT
-AyNTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIs
-MTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OTA0ODkxNTksLTE0ND
-I1MTg4MTQsLTExMjk3NzU2NTgsLTk1MTYyODM2LC02MDM2NTg3
-NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2OTA5MTEsLTIwNDE3MDg1Nj
-gsNjMzNTY1ODAzLDYyMzgwMTIyNSw0NDY1NDg3Myw5OTI1MzA0
-ODhdfQ==
+eyJoaXN0b3J5IjpbNjQwNzk0Njg0LDI5MzI4OTE5MSw5MzUwMj
+UxMTEsMTc1MjMzOTc3Niw3MDk5OTMwMTAsNTA1NzMzMjkyLDEx
+NzUwMzY2ODQsMjA0MTcyODE3NiwxNjkwNDg5MTU5LC0xNDQyNT
+E4ODE0LC0xMTI5Nzc1NjU4LC05NTE2MjgzNiwtNjAzNjU4NzYy
+LC0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC0yMDQxNzA4NTY4LD
+YzMzU2NTgwMyw2MjM4MDEyMjUsNDQ2NTQ4NzMsOTkyNTMwNDg4
+XX0=
 -->
