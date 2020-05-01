@@ -367,14 +367,16 @@ SELECT DISTINCT first_name, last_name FROM employees;
 ```
 **SELECT 절에서 사용된 DISTINCT는 조회되는 컬럼 모두에 영향을 미친다. 절대로 SELECT하는 여러 컬럼중 일부만 유니크하게 조회하는 방법은 없다.** 
 
-## 집합 함수와 함께 사용된 
+## 집합 함수와 함께 사용된 DISTINCT
+
+COUNT 또는 MIN, MAX와 같은 함수 내에서 DISTINCT 키워드가 사용될 수 있는데, 이 경우에는 일반적인 SELECT DISTINCT와 다른 형태로 해석된다. 집합 함수내에서 사용된 
 
 # 임시 테이블(Using temporary)
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4OTI4MzY4LC05OTYyNTU3MDUsMTA0OD
+eyJoaXN0b3J5IjpbNzA5NjgzMTU4LC05OTYyNTU3MDUsMTA0OD
 g2MDAxNCw4MTY4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEz
 OSwtNTg2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMT
 gxNzc3NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQz
