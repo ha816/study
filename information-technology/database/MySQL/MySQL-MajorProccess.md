@@ -360,7 +360,7 @@ SELECT DISTINCT first_name, last_name FROM employees;
 ```
 SELECT DISTINCT (first_name), last_name FROM employees;
 ```
-위의 쿼리를 보면, first_na
+위의 쿼리를 보면, first_name만 유니크하게 조회하고 last_name은 그냥 DISTINCT가 없을 때와 동일하게 조회하는 쿼리처럼 보인다. 그리고 실제로 상당히 그럴듯하게 에러 없이 실행되기 때문에 쉽게 실수할 수 있다. 
 
 
 
@@ -369,7 +369,7 @@ SELECT DISTINCT (first_name), last_name FROM employees;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDU5NjY5ODQsMTA0ODg2MDAxNCw4MT
+eyJoaXN0b3J5IjpbLTE5ODYxNjgzODUsMTA0ODg2MDAxNCw4MT
 Y4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2NTU1
 MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNC
 wxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1MiwtMjA3
