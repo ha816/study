@@ -21,9 +21,7 @@ READ_UNCOMMITED는 일반적인 DB에서 거의 사용하지 않고, 마찬가�
 
 ### READ UNCOMMITED
 
-이 격리 수준에서는 **한 트랜잭션의 변경 내용을 COMMIT이나 ROLLBACK 여부와 상관없이 다른 모든 트랜잭션에서 공유한다.** 
-
-성능상의 이점은 있겠지만 Dirty Read 현상이 나타날 수 있다. 
+이 격리 수준에서는 **한 트랜잭션의 변경 내용을 COMMIT이나 ROLLBACK 여부와 상관없이 다른 모든 트랜잭션에서 공유한다.** 즉 그저 현재 데이터를 그대로 사용한다는 의미다. 성능상의 이점은 있겠지만 Dirty Read 현상이 나타날 수 있다. 
 
 어떤 트랜잭션에서 처리한 작업이 완료(Commit)되지 않았는데도 다른 트랜잭션에서 볼 수 있는 격리 수준이 READ_UNCOMMITED이다. 
 
@@ -256,7 +254,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNzI3OTgxMywtMTUyODAxNjc0MywyOT
+eyJoaXN0b3J5IjpbLTIzNjk4MzA3MSwtMTUyODAxNjc0MywyOT
 MyODkxOTEsOTM1MDI1MTExLDE3NTIzMzk3NzYsNzA5OTkzMDEw
 LDUwNTczMzI5MiwxMTc1MDM2Njg0LDIwNDE3MjgxNzYsMTY5MD
 Q4OTE1OSwtMTQ0MjUxODgxNCwtMTEyOTc3NTY1OCwtOTUxNjI4
