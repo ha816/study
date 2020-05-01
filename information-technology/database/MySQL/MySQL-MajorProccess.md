@@ -388,9 +388,7 @@ FROM employees e, salaries s
 WHERE e.emp_no = s.emp_no AND e.emp_no BETWEEN 100001 AND 100100
 ```
 
-위의 쿼리는 DISTINCT 처리를 위해 인덱스를 이용할 수 없어서 임시 ㅌ
-
-다음 쿼리는 인덱스된 컬럼에 대해 DISTINCT 처리를 수행할때 는 인덱스를 풀 스캔하거나 레인지 스캔하면서 임시 테이블 없이 최적화된 처리를 수행할 수 있다.
+위의 쿼리는 DISTINCT 처리를 위해 인덱스를 이용할 수 없어서 임시 테이블이 필요 했다. 하지만 다음 쿼리와 같이 인덱스된 컬럼에 대해 DISTINCT 처리를 수행할때 는 인덱스를 풀 스캔하거나 레인지 스캔하면서 임시 테이블 없이 최적화된 처리를 수행할 수 있다.
 ```
 SELECT COUNT(DISTINCT emp_no) FROM employees e
 SELECT COUNT(DISTINCT emp_no) FROM dept_emp GROUP BY dept_no
@@ -405,11 +403,11 @@ SELECT COUNT(DISTINCT emp_no) FROM dept_emp GROUP BY dept_no
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NDkyNzQwMiwtNzExNDM0MTY0LC0xMD
-MyMDU4MzU4LDE5NDg0OTM2MjMsLTk5NjI1NTcwNSwxMDQ4ODYw
-MDE0LDgxNjgxOTMxMiwtMTU2NTcwMTEzNiwtOTIzNzQ0MTM5LC
-01ODY1NTUyMDYsMTI0OTIyMTg0MywtNTk0MjQ5NzMxLC0xODE3
-Nzc2NTI0LDEyMjEwNDI1MDcsMjA3NjQ2MDIzNywtMjkzNDM2Mz
-UyLC0yMDczOTE2NzQ2LDE2MTIwNTY4OTYsMjA3NjA4OTU4MSwx
-MTQyMTUwODY1XX0=
+eyJoaXN0b3J5IjpbLTE3NDU2NTkxNDEsLTcxMTQzNDE2NCwtMT
+AzMjA1ODM1OCwxOTQ4NDkzNjIzLC05OTYyNTU3MDUsMTA0ODg2
+MDAxNCw4MTY4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEzOS
+wtNTg2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgx
+Nzc3NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNj
+M1MiwtMjA3MzkxNjc0NiwxNjEyMDU2ODk2LDIwNzYwODk1ODEs
+MTE0MjE1MDg2NV19
 -->
