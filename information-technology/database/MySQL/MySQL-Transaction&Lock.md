@@ -36,9 +36,9 @@ READ_COMMITED는 한 트랜잭션이 데이터를 조회할때, 다른 트랜잭
 
 매커니즘을 설명하자면, 하나의 트랜잭션이 데이터를 변경하면 UNDO 영역에 변경전 데이터를 백업한다. 이때 다른 트랜잭션에서 해당 데이터를 조회하면 UNDO 영역에 백업된 변경전 데이터를 조회하게 된다. 그리고 Commit 후에는 변경된 데이터를 조회하게 된다. 
 
-READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제가 있다. REPEATBLE READ 정합성이란 **하나의 트랜잭션 내에서는 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같아야 한다**를 말한다. 
+READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제가 있다.() 라 한다. REPEATBLE READ 정합성이란 **하나의 트랜잭션 내에서는 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같아야 한다**를 말한다. 
 
-
+#### UNREPEATBLE READ 
 
 이러한 부정합 현상은 일반 웹 서비스에서는 크게 문제되지 않지만, 하나의 트랜잭션에서 동일한 데이터를 여러 번 읽고 변경하는 작업이 금전적인 처리와 연결되면 문제가 될 수 있다. 예를 들어, 한 트랜잭션에서 입금과 출금 처리가 계속 진행되고 있을때, 다른 트랜잭션에서 오늘 입금된 금액 총합을 조회한다고 해보자. SELECT 쿼리는 실행될때마다 결과가 변경될 것이다. 
 
@@ -263,11 +263,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MjMxOTIzMSwxNzUzMDE3Mjg1LC04OT
-gwNzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5MTkxLDkzNTAyNTEx
-MSwxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIsMTE3NT
-AzNjY4NCwyMDQxNzI4MTc2LDE2OTA0ODkxNTksLTE0NDI1MTg4
-MTQsLTExMjk3NzU2NTgsLTk1MTYyODM2LC02MDM2NTg3NjIsLT
-E2ODcyNjQ1MTUsLTEyMDQ2OTA5MTEsLTIwNDE3MDg1NjgsNjMz
-NTY1ODAzXX0=
+eyJoaXN0b3J5IjpbLTE3MzgyNjQzMDUsMTc1MzAxNzI4NSwtOD
+k4MDc4NDY2LC0xNTI4MDE2NzQzLDI5MzI4OTE5MSw5MzUwMjUx
+MTEsMTc1MjMzOTc3Niw3MDk5OTMwMTAsNTA1NzMzMjkyLDExNz
+UwMzY2ODQsMjA0MTcyODE3NiwxNjkwNDg5MTU5LC0xNDQyNTE4
+ODE0LC0xMTI5Nzc1NjU4LC05NTE2MjgzNiwtNjAzNjU4NzYyLC
+0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC0yMDQxNzA4NTY4LDYz
+MzU2NTgwM119
 -->
