@@ -388,7 +388,7 @@ SELECT COUNT(DISTINCT emp_no) FROM dept_emp GROUP BY dept_no
 ```
 
 > 주의 사항
-> DISTINCT가 집합 함수 없이 사용된 경우와 집합 함수 내에서 사용된 경우 결과가 조금씩 달라질 수 있기 때문에 그 차이를 
+> DISTINCT가 집합 함수 없이 사용된 경우와 집합 함수 내에서 사용된 경우 결과가 조금씩 달라질 수 있기 때문에 그 차이를 잘 기억해두자.
 
 
 # 임시 테이블(Using temporary)
@@ -396,11 +396,11 @@ SELECT COUNT(DISTINCT emp_no) FROM dept_emp GROUP BY dept_no
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkyNzkyMjYxLC0xMDMyMDU4MzU4LDE5ND
-g0OTM2MjMsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMx
-MiwtMTU2NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUyMDYsMT
-I0OTIyMTg0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LDEyMjEw
-NDI1MDcsMjA3NjQ2MDIzNywtMjkzNDM2MzUyLC0yMDczOTE2Nz
-Q2LDE2MTIwNTY4OTYsMjA3NjA4OTU4MSwxMTQyMTUwODY1LC0x
-NDIzNzI1NjE5XX0=
+eyJoaXN0b3J5IjpbLTcxMTQzNDE2NCwtMTAzMjA1ODM1OCwxOT
+Q4NDkzNjIzLC05OTYyNTU3MDUsMTA0ODg2MDAxNCw4MTY4MTkz
+MTIsLTE1NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2NTU1MjA2LD
+EyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNCwxMjIx
+MDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1MiwtMjA3MzkxNj
+c0NiwxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0MjE1MDg2NSwt
+MTQyMzcyNTYxOV19
 -->
