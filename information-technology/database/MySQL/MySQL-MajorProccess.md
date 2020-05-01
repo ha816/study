@@ -396,14 +396,16 @@ SELECT COUNT(DISTINCT emp_no) FROM dept_emp GROUP BY dept_no
 
 # 임시 테이블(Using temporary)
 
+MySQL 엔진이 스토리지 엔진으로부터 받오온 레코드를 정렬하거나 그룹핑할때는 내부적인 임시 테이블을 사용한다. 일반적으로 MySQL 엔진이 사용하는 임시 테이블은 처음에는 메모리에 생성
+
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjUzNzk3ODYsLTE3NDU2NTkxNDEsLT
-cxMTQzNDE2NCwtMTAzMjA1ODM1OCwxOTQ4NDkzNjIzLC05OTYy
-NTU3MDUsMTA0ODg2MDAxNCw4MTY4MTkzMTIsLTE1NjU3MDExMz
-YsLTkyMzc0NDEzOSwtNTg2NTU1MjA2LDEyNDkyMjE4NDMsLTU5
-NDI0OTczMSwtMTgxNzc3NjUyNCwxMjIxMDQyNTA3LDIwNzY0Nj
-AyMzcsLTI5MzQzNjM1MiwtMjA3MzkxNjc0NiwxNjEyMDU2ODk2
-LDIwNzYwODk1ODFdfQ==
+eyJoaXN0b3J5IjpbLTEwOTQzNzc3MDgsLTE4NjUzNzk3ODYsLT
+E3NDU2NTkxNDEsLTcxMTQzNDE2NCwtMTAzMjA1ODM1OCwxOTQ4
+NDkzNjIzLC05OTYyNTU3MDUsMTA0ODg2MDAxNCw4MTY4MTkzMT
+IsLTE1NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2NTU1MjA2LDEy
+NDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNCwxMjIxMD
+QyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1MiwtMjA3MzkxNjc0
+NiwxNjEyMDU2ODk2XX0=
 -->
