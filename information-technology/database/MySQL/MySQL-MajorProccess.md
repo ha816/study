@@ -371,7 +371,13 @@ SELECT DISTINCT first_name, last_name FROM employees;
 
 COUNT 또는 MIN, MAX와 같은 함수 내에서 DISTINCT 키워드가 사용될 수 있는데, 이 경우에는 일반적인 SELECT DISTINCT와 다른 형태로 해석된다. **집합 함수내에서 사용된 DISTINCT는 그 집합 함수의 인자로 전달된 컬럼 값이 유니크한 것들을 가져온다.**
 
-
+```
+EXPLAIN
+SELECT COUNT(DISTINCT s.salary)
+FROM employees e, salaries s
+WHERE e.emp_no = s.emp_no
+AND e.emp_no BETWEEN 100001 AND 100100
+```
 
 
 # 임시 테이블(Using temporary)
@@ -379,11 +385,11 @@ COUNT 또는 MIN, MAX와 같은 함수 내에서 DISTINCT 키워드가 사용될
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NzQ4OTE3LC05OTYyNTU3MDUsMTA0OD
-g2MDAxNCw4MTY4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEz
-OSwtNTg2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMT
-gxNzc3NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQz
-NjM1MiwtMjA3MzkxNjc0NiwxNjEyMDU2ODk2LDIwNzYwODk1OD
-EsMTE0MjE1MDg2NSwtMTQyMzcyNTYxOSwtNzg1NDAzOTc1LDE2
-MjU5NDYxMThdfQ==
+eyJoaXN0b3J5IjpbMTUwOTE0NTA4MywtOTk2MjU1NzA1LDEwND
+g4NjAwMTQsODE2ODE5MzEyLC0xNTY1NzAxMTM2LC05MjM3NDQx
+MzksLTU4NjU1NTIwNiwxMjQ5MjIxODQzLC01OTQyNDk3MzEsLT
+E4MTc3NzY1MjQsMTIyMTA0MjUwNywyMDc2NDYwMjM3LC0yOTM0
+MzYzNTIsLTIwNzM5MTY3NDYsMTYxMjA1Njg5NiwyMDc2MDg5NT
+gxLDExNDIxNTA4NjUsLTE0MjM3MjU2MTksLTc4NTQwMzk3NSwx
+NjI1OTQ2MTE4XX0=
 -->
