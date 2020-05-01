@@ -4,8 +4,7 @@
 
 **잠금은 동시성을 제어하기 위한 기능**이다. 잠금은 여러 커넥션에서 동시에 동일한 자원(레코드나 테이블)을 요청할 경우 순서대로 한 시점에선 하나의 커넥션에서만 변경할 수 있도록 한다. 
 
-트랜잭션은 작업의 정합성을 보장하기 위한 기능**이다. 
-격리수준은 하나의 트랜잭션이나 여러 트랜잭션 간의 작업 내용을 어떻게 공유하고 차단할 것인지를 결정한다.
+트랜잭션은 작업의 원자성을 위해 사용한다. (트랜잭션) 격리수준은 하나의 트랜잭션이나 여러 트랜잭션 간의 작업 내용을 어떻게 공유하고 차단할 것인지를 결정한다.
 
 ## MySQL Transaction
 
@@ -256,11 +255,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk3NjEwOSw5MzUwMjUxMTEsMTc1MjMzOT
-c3Niw3MDk5OTMwMTAsNTA1NzMzMjkyLDExNzUwMzY2ODQsMjA0
-MTcyODE3NiwxNjkwNDg5MTU5LC0xNDQyNTE4ODE0LC0xMTI5Nz
-c1NjU4LC05NTE2MjgzNiwtNjAzNjU4NzYyLC0xNjg3MjY0NTE1
-LC0xMjA0NjkwOTExLC0yMDQxNzA4NTY4LDYzMzU2NTgwMyw2Mj
-M4MDEyMjUsNDQ2NTQ4NzMsOTkyNTMwNDg4LC0xNTMzNDg3OTY3
-XX0=
+eyJoaXN0b3J5IjpbMTczODkxODEyNiw5MzUwMjUxMTEsMTc1Mj
+MzOTc3Niw3MDk5OTMwMTAsNTA1NzMzMjkyLDExNzUwMzY2ODQs
+MjA0MTcyODE3NiwxNjkwNDg5MTU5LC0xNDQyNTE4ODE0LC0xMT
+I5Nzc1NjU4LC05NTE2MjgzNiwtNjAzNjU4NzYyLC0xNjg3MjY0
+NTE1LC0xMjA0NjkwOTExLC0yMDQxNzA4NTY4LDYzMzU2NTgwMy
+w2MjM4MDEyMjUsNDQ2NTQ4NzMsOTkyNTMwNDg4LC0xNTMzNDg3
+OTY3XX0=
 -->
