@@ -5,13 +5,11 @@
 
 ## MySQL Transaction
 
-작업 단위를 묶어 원자성을 보장용한다. (트랜잭션) 격리수준은 다수의 트랜잭션간 내용을 어떻게 공유하고 차단할 것인지를 결정한다.
-
-트랜잭션은 작업의 완전성을 보장한다고 말한다. 이 말은 작업의 일부만 적용되는 현상(partial update)가 없다는 말이다. 
+작은 작업 단위를 묶어 이 작업들의 원자성을 보장하는 것이 트랜잭션이다. 이 말은 작은 작업 일부만 적용되는 현상(partial update)가 없다는 말이다. 
 
 MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 InnoDB다. MyISAM은 지원하지 않는다.
 
-트랜잭션은 DBMS 커넥션과 동일하게 꼭 필요한 최소의 코드에만 적용하는게 좋다. 이는 프로그램 코드에서 트랜잭션의 범위를 최소화하라는 의미다. 
+트랜잭션은 꼭 필요한 최소의 코드에만 적용하는게 좋다. 이는 프로그램 코드에서 트랜잭션의 범위를 최소화하라는 의미다. 
 
 ## MySQL Isolation Level
 
@@ -256,11 +254,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4NTM2NDQ1LDI5MzI4OTE5MSw5MzUwMj
-UxMTEsMTc1MjMzOTc3Niw3MDk5OTMwMTAsNTA1NzMzMjkyLDEx
-NzUwMzY2ODQsMjA0MTcyODE3NiwxNjkwNDg5MTU5LC0xNDQyNT
-E4ODE0LC0xMTI5Nzc1NjU4LC05NTE2MjgzNiwtNjAzNjU4NzYy
-LC0xNjg3MjY0NTE1LC0xMjA0NjkwOTExLC0yMDQxNzA4NTY4LD
-YzMzU2NTgwMyw2MjM4MDEyMjUsNDQ2NTQ4NzMsOTkyNTMwNDg4
-XX0=
+eyJoaXN0b3J5IjpbLTEwMjc1OTA3MjIsMjkzMjg5MTkxLDkzNT
+AyNTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIs
+MTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OTA0ODkxNTksLTE0ND
+I1MTg4MTQsLTExMjk3NzU2NTgsLTk1MTYyODM2LC02MDM2NTg3
+NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2OTA5MTEsLTIwNDE3MDg1Nj
+gsNjMzNTY1ODAzLDYyMzgwMTIyNSw0NDY1NDg3Myw5OTI1MzA0
+ODhdfQ==
 -->
