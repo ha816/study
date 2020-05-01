@@ -336,9 +336,9 @@ GROUP BY의 기준 컬럼이 드라이빙 테이블에 있든 드리븐 테이�
 
 이때 중요한 것은 원본 쿼리에서 **GROUP BY 절에 사용된 컬럼을 기준으로 유니크 키를 생성한다는 점이다.**  즉 GROUP BY가 임시 테이블로 처리가 되는 경우 사용되는 임시 테이블은 항상 유니크 키를 가진다. 
 
-이때 정렬이 필요한 상황이면 임시테이블에 
-
 # Distinct 처리
+
+특정 컬럼의 유니크한 값만 조회하려면 SELECT에 DISTINCT를 사용한다. 
 
 
 # 임시 테이블(Using temporary)
@@ -346,11 +346,11 @@ GROUP BY의 기준 컬럼이 드라이빙 테이블에 있든 드리븐 테이�
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDIzNDEzNzEsLTE1NjU3MDExMzYsLT
-kyMzc0NDEzOSwtNTg2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0
-OTczMSwtMTgxNzc3NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMz
-csLTI5MzQzNjM1MiwtMjA3MzkxNjc0NiwxNjEyMDU2ODk2LDIw
-NzYwODk1ODEsMTE0MjE1MDg2NSwtMTQyMzcyNTYxOSwtNzg1ND
-AzOTc1LDE2MjU5NDYxMTgsMjA3MzE4ODY1OSwxOTg4NTEyOTYx
-LDE5OTYxNTUxMTddfQ==
+eyJoaXN0b3J5IjpbMTc1OTE1MzY0MywtMTU2NTcwMTEzNiwtOT
+IzNzQ0MTM5LC01ODY1NTUyMDYsMTI0OTIyMTg0MywtNTk0MjQ5
+NzMxLC0xODE3Nzc2NTI0LDEyMjEwNDI1MDcsMjA3NjQ2MDIzNy
+wtMjkzNDM2MzUyLC0yMDczOTE2NzQ2LDE2MTIwNTY4OTYsMjA3
+NjA4OTU4MSwxMTQyMTUwODY1LC0xNDIzNzI1NjE5LC03ODU0MD
+M5NzUsMTYyNTk0NjExOCwyMDczMTg4NjU5LDE5ODg1MTI5NjEs
+MTk5NjE1NTExN119
 -->
