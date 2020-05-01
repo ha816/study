@@ -381,12 +381,14 @@ AND e.emp_no BETWEEN 100001 AND 100100
 
 이 쿼리는 COUNT(DISTINCT s.salary)를 처리하기 위해 임시 테이블을 사용한다. 하지만 임시 테이블을 사용하는 "Using temporary"가 표시되지는 않는다.
 
-다음 쿼리는 인덱스된 컬럼에 대해 DISTINCT 처리를 
+다음 쿼리는 인덱스된 컬럼에 대해 DISTINCT 처리를 수행할때 는 인덱스를 풀 스캔하거나 레인지 스캔하면서 임시 테이블 없이 최적화된 처리를 수행할 수 있다.
 ```
 SELECT COUNT(DISTINCT emp_no) FROM employees e
 SELECT COUNT(DISTINCT emp_no) FROM dept_emp GROUP BY dept_no
 ```
 
+> 주의 사항
+> DISTINCT가 집합 함수 없이 사용된 경우와 집합 함수 내에서 사용된 경우 결과가 조금씩 달라질 수 있기 때문에 그 차이를 
 
 
 # 임시 테이블(Using temporary)
@@ -394,7 +396,7 @@ SELECT COUNT(DISTINCT emp_no) FROM dept_emp GROUP BY dept_no
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY4NzI1MDQ3LC0xMDMyMDU4MzU4LDE5ND
+eyJoaXN0b3J5IjpbNzkyNzkyMjYxLC0xMDMyMDU4MzU4LDE5ND
 g0OTM2MjMsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMx
 MiwtMTU2NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUyMDYsMT
 I0OTIyMTg0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LDEyMjEw
