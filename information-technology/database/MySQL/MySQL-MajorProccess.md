@@ -350,7 +350,7 @@ SELECT DISTINCT emp_no FROM salaries;
 SELECT emp_no FROM salaries GROUP BY emp_no
 ```
 
-DISTINCT를 사용할때 자주 실수하는 것이 있다. DISTINCT는 SELECT하는 레코드(튜플)을 유니크하게 SELECT 하는 것이지 칼럼을 유니크하게 조회하는 것이 아니다. 
+DISTINCT를 사용할때 자주 실수하는 것이 있다. DISTINCT는 SELECT하는 레코드(튜플)을 유니크하게 SELECT 하는 것이지 칼럼을 유니크하게 조회하는 것이 아니다. 즉 다음 쿼리는 first_name만 유니크한 것을 가져오는게 아니라 first_name, last_name 전체가 유니크한 레코드를 가져오는 것이다.
 
 ```
 SELECT DISTINCT first_name, last_name FROM employees;
@@ -363,11 +363,11 @@ SELECT DISTINCT first_name, last_name FROM employees;
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDI4NTg5MTIsMTA0ODg2MDAxNCw4MT
-Y4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2NTU1
-MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNC
-wxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1MiwtMjA3
-MzkxNjc0NiwxNjEyMDU2ODk2LDIwNzYwODk1ODEsMTE0MjE1MD
-g2NSwtMTQyMzcyNTYxOSwtNzg1NDAzOTc1LDE2MjU5NDYxMTgs
-MjA3MzE4ODY1OV19
+eyJoaXN0b3J5IjpbLTMyMjEzNTQxNSwxMDQ4ODYwMDE0LDgxNj
+gxOTMxMiwtMTU2NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUy
+MDYsMTI0OTIyMTg0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LD
+EyMjEwNDI1MDcsMjA3NjQ2MDIzNywtMjkzNDM2MzUyLC0yMDcz
+OTE2NzQ2LDE2MTIwNTY4OTYsMjA3NjA4OTU4MSwxMTQyMTUwOD
+Y1LC0xNDIzNzI1NjE5LC03ODU0MDM5NzUsMTYyNTk0NjExOCwy
+MDczMTg4NjU5XX0=
 -->
