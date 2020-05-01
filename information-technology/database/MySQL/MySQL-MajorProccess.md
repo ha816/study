@@ -362,18 +362,23 @@ SELECT DISTINCT (first_name), last_name FROM employees;
 ```
 위의 쿼리를 보면, first_name만 유니크하게 조회하고 last_name은 그냥 DISTINCT가 없을 때와 동일하게 조회하는 쿼리처럼 보인다. 그리고 실제로 상당히 그럴듯하게 에러 없이 실행되기 때문에 쉽게 실수할 수 있다. 하지만 MySQL서버는 **DISTINCT 뒤의 괄호를 그냥 의미 없이 사용된 괄호로 해석하고 제거해버린다.** DISTINCT는 함수가 아니므로 그 뒤의 괄호는 의미가 없는 것이다. 
 
+```
+SELECT DISTINCT first_name, last_name FROM employees;
+```
+**SELECT 절에서 사용된 DISTINCT는 조회되는 컬럼 모두에 영향을 미친다. 절대로 SELECT하는 여러 컬럼중 일부만 유니크하게 조회하는 방법은 없다.** 
 
+## 집합 함수와 함께 사용된 
 
 # 임시 테이블(Using temporary)
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNj
-gxOTMxMiwtMTU2NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUy
-MDYsMTI0OTIyMTg0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LD
-EyMjEwNDI1MDcsMjA3NjQ2MDIzNywtMjkzNDM2MzUyLC0yMDcz
-OTE2NzQ2LDE2MTIwNTY4OTYsMjA3NjA4OTU4MSwxMTQyMTUwOD
-Y1LC0xNDIzNzI1NjE5LC03ODU0MDM5NzUsMTYyNTk0NjExOCwy
-MDczMTg4NjU5XX0=
+eyJoaXN0b3J5IjpbMTk4OTI4MzY4LC05OTYyNTU3MDUsMTA0OD
+g2MDAxNCw4MTY4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEz
+OSwtNTg2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMT
+gxNzc3NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQz
+NjM1MiwtMjA3MzkxNjc0NiwxNjEyMDU2ODk2LDIwNzYwODk1OD
+EsMTE0MjE1MDg2NSwtMTQyMzcyNTYxOSwtNzg1NDAzOTc1LDE2
+MjU5NDYxMThdfQ==
 -->
