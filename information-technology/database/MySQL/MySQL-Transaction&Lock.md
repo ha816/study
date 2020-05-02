@@ -27,8 +27,8 @@ READ_UNCOMMITED는 RDBMS 표준에서는 트랜잭션 격리 수준으로 인정
 #### Dirty Read
 
 $$\begin{bmatrix}
-T1(id = 6) & T2(id = 9) \\
-insert(A) & \\
+T1(id = 6) & T2(id = 9) & T1(id = 12) & T(id = 9)\\
+select(A) & \\
 &update(A \rightarrow A') \\
 &select(A) &\\
 \end{bmatrix}$$
@@ -269,7 +269,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODg1MDg1LC0xNDk1NjA3NjUwLDE3NT
+eyJoaXN0b3J5IjpbNjQ1NzAwNjAzLC0xNDk1NjA3NjUwLDE3NT
 MwMTcyODUsLTg5ODA3ODQ2NiwtMTUyODAxNjc0MywyOTMyODkx
 OTEsOTM1MDI1MTExLDE3NTIzMzk3NzYsNzA5OTkzMDEwLDUwNT
 czMzI5MiwxMTc1MDM2Njg0LDIwNDE3MjgxNzYsMTY5MDQ4OTE1
