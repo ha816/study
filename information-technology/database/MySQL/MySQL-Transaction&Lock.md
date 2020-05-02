@@ -176,7 +176,7 @@ RENAME TABLE tab_a TO tab_b
 레코드 자체만 잠그는 락이다. InnoDB에서는 레코드 자체가 아니라 인덱스를 잠근다. 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 수행한다.
 
 ### 넥스트 키 락(Next key lock)
-*레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다.넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이이다.
+레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이이다.
 
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
@@ -279,7 +279,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNDY0ODExOCwxMDA5MDczNTg5LC00MD
+eyJoaXN0b3J5IjpbMTA0MzA4MDU2NCwxMDA5MDczNTg5LC00MD
 A5MjE2NTksLTE2MTI3ODE5NzYsLTUwODY4MDc5Niw0NDU3Mzg4
 ODYsLTEzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMjEwNzEwNjEzNi
 wxMzk2OTMxMzE4LDc1MzYyMTM1MiwtMTQ5NTYwNzY1MCwxNzUz
