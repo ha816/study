@@ -94,7 +94,14 @@ Whitespace Analyzer
 
 ### TOKENIZER FILTER(토크나이저 필터)
 
-토크나이저 필터는 분석기를 구성하는 **가장 핵심 구성요소**다. 전처리 필터를 거쳐 토크나이저 필터로 문장이 오면 해당 텍스트는 토크나이저 필
+토크나이저 필터는 분석기를 구성하는 **가장 핵심 구성요소**다. 전처리 필터를 거쳐 토크나이저 필터로 문장이 오면 해당 텍스트는 토크나이저 필터의 특성에 맞게 적절히 분해된다. 분석기에서 어떠한 토크나이저를 사용하느냐에 따라 분석기의 전체적인 성격이 결정된다. 
+
+#### Standard 토크나이저
+
+가장 일반적으로 사용하는 토크나이저로 대부분의 
+
+#### Whitespace 토크나이저
+
 
 
 
@@ -102,6 +109,6 @@ Whitespace Analyzer
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NjU2NjgxMiwzMjA1ODQ3MTksLTQwOT
+eyJoaXN0b3J5IjpbLTQ1OTYzNzU0NywzMjA1ODQ3MTksLTQwOT
 IxMTk1NiwtMTM3NjA2MDUzM119
 -->
