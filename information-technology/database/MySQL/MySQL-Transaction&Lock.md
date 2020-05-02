@@ -61,9 +61,9 @@ select(A'') & \\
 ...\\
 \end{bmatrix}$$
 
-T2의 update 작업으로 데이터가 변경되었고 commit마저 되었다고 하자. 현재 격리 수준이 READ_COMMITED 격리 수준 이하라면 T1에서 select 작업을 할때마다 commit이 된 변경 데이터를 가져오게 된다. commit된 데이터를 가져오는게 무엇이 문제가 되는가 생각할 수 있다. 하지만 T1 트랜잭션이 
+T2의 update 작업으로 데이터가 변경되었고 commit마저 되었다고 하자. 현재 격리 수준이 READ_COMMITED 격리 수준 이하라면 T1에서 select 작업을 할때마다 commit이 된 변경 데이터를 가져오게 된다.
 
-UNREPEATBLE READ 부정합 현상은 일반 웹 서비스에서는 크게 문제되지 않지만, 하나의 트랜잭션에서 동일한 데이터를 여러 번 읽고 변경하는 작업이 금전적인 처리와 연결되면 문제가 될 수 있다. 예를 들어, 한 트랜잭션에서 입금과 출금 처리가 계속 진행되고 있을때, 다른 트랜잭션에서 오늘 입금된 금액 총합을 조회한다고 해보자. SELECT 쿼리는 실행될때마다 결과가 변경될 것이다. 
+UNREPEATBLE READ 부정합 현상은 일반 웹 서비스에서는 크게 문제되지 않지만, 하나의 트랜잭션에서 동일한 데이터를 여러 번 읽고 변경하는 작업이 금전적인 처리와 연결되면 문제가 될 수 있다. 예를 들어, 한 트랜잭션(T2)에서 입금과 출금 처리가 계속 진행되고 있을때, 다른 트랜잭션(T1)에서 오늘 입금된 금액 총합을 조회한다고 해보자. SELECT 쿼리는 실행될때마다 결과가 변경될 것이다. 
 
 가끔 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 실행되는 SELECT 문장의 차이를 혼동하는 경우가 있다. READ_COMMITED 격리 수준에서는 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 외부에서 실행되는 SELECT 문장의 차이가 거의 없다. 
 REPEATABLE READ에선 트랜잭션 내에서 SELECT 문장만 동일한 SELECT 쿼리를 수행했을때 언제나 동일한 결과가 나온다. 트랜잭션 없이 실행되는 SELECT 문장은 언제나 동일한 결과를 보지 못한다.
@@ -288,7 +288,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc4MjQ0MTc3LC05MDg2NTAxNzksLTIxMD
+eyJoaXN0b3J5IjpbNDQyMTA0NTEyLC05MDg2NTAxNzksLTIxMD
 cxMDYxMzYsMTM5NjkzMTMxOCw3NTM2MjEzNTIsLTE0OTU2MDc2
 NTAsMTc1MzAxNzI4NSwtODk4MDc4NDY2LC0xNTI4MDE2NzQzLD
 I5MzI4OTE5MSw5MzUwMjUxMTEsMTc1MjMzOTc3Niw3MDk5OTMw
