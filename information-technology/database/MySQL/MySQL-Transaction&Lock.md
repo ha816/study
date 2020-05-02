@@ -172,10 +172,8 @@ RENAME TABLE tab_a TO tab_b
 낙관적 잠금(Optimistic locking)
 : 기본적으로 각 트랜잭션이 같은 레코드를 변경할 가능성이 희박할것이라고 낙관적으로 생각한다. 그래서 변경 작업을 수행하고 마지막에 잠금 충돌이 있었는지 확인해보고 있으면 Rollback 처리를 한다. 
 
-###  레코드 락(Record lock, Record only lock)
-레코드 자체만 잠그는 락 InnoDB에서는 레코드 자체가 아니라 인덱스를 잠. 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 수행한다.
-
-###다.
+###  레코드 락(Record only lock)
+레코드 자체만 잠그는 락이다. InnoDB에서는 레코드 자체가 아니라 인덱스를 잠근다. 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 수행한다.
 
 ### 넥스트 키 락(Next key lock)
 *레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다.넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이이다.
@@ -281,11 +279,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwOTA3MzU4OSwtNDAwOTIxNjU5LC0xNj
-EyNzgxOTc2LC01MDg2ODA3OTYsNDQ1NzM4ODg2LC0xMzcyOTM4
-ODQyLC05MDg2NTAxNzksLTIxMDcxMDYxMzYsMTM5NjkzMTMxOC
-w3NTM2MjEzNTIsLTE0OTU2MDc2NTAsMTc1MzAxNzI4NSwtODk4
-MDc4NDY2LC0xNTI4MDE2NzQzLDI5MzI4OTE5MSw5MzUwMjUxMT
-EsMTc1MjMzOTc3Niw3MDk5OTMwMTAsNTA1NzMzMjkyLDExNzUw
-MzY2ODRdfQ==
+eyJoaXN0b3J5IjpbLTMyNDY0ODExOCwxMDA5MDczNTg5LC00MD
+A5MjE2NTksLTE2MTI3ODE5NzYsLTUwODY4MDc5Niw0NDU3Mzg4
+ODYsLTEzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMjEwNzEwNjEzNi
+wxMzk2OTMxMzE4LDc1MzYyMTM1MiwtMTQ5NTYwNzY1MCwxNzUz
+MDE3Mjg1LC04OTgwNzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5MT
+kxLDkzNTAyNTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MDU3
+MzMyOTJdfQ==
 -->
