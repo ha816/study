@@ -54,7 +54,7 @@ select(A) & \\
 select(A') & \\
 \end{bmatrix}$$
 
-T2의 update 작업으로 데이터가 변경되었고 commit마저 되었다고 하자. READ_COMMITED 격리 수준 이하 격리 수준이라면 T1에서 select 작업을 하면 변경된 데이터 A'을 가져오게 된다. 즉 commit이 되지 않은 단순히 현재 변경된 데이터를 공유하다보니 데이터의 정합성이 깨지게 된다. 이런 현상을 Dirty Read 현상이라 한다. 
+T2의 update 작업으로 데이터가 변경되었고 commit마저 되었다고 하자. READ_COMMITED 격리 수준 이하 격리 수준이라면 T1에서 select 작업을 할때마다 commit이 된 변경 데이터를 가져오게 된다. 
 
 
 UNREPEATBLE READ 부정합 현상은 일반 웹 서비스에서는 크게 문제되지 않지만, 하나의 트랜잭션에서 동일한 데이터를 여러 번 읽고 변경하는 작업이 금전적인 처리와 연결되면 문제가 될 수 있다. 예를 들어, 한 트랜잭션에서 입금과 출금 처리가 계속 진행되고 있을때, 다른 트랜잭션에서 오늘 입금된 금액 총합을 조회한다고 해보자. SELECT 쿼리는 실행될때마다 결과가 변경될 것이다. 
@@ -282,11 +282,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTg0MzczNywtMjEwNzEwNjEzNiwxMz
-k2OTMxMzE4LDc1MzYyMTM1MiwtMTQ5NTYwNzY1MCwxNzUzMDE3
-Mjg1LC04OTgwNzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5MTkxLD
-kzNTAyNTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MDU3MzMy
-OTIsMTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OTA0ODkxNTksLT
-E0NDI1MTg4MTQsLTExMjk3NzU2NTgsLTk1MTYyODM2LC02MDM2
-NTg3NjJdfQ==
+eyJoaXN0b3J5IjpbLTEwNDY4OTkzNzMsLTIxMDcxMDYxMzYsMT
+M5NjkzMTMxOCw3NTM2MjEzNTIsLTE0OTU2MDc2NTAsMTc1MzAx
+NzI4NSwtODk4MDc4NDY2LC0xNTI4MDE2NzQzLDI5MzI4OTE5MS
+w5MzUwMjUxMTEsMTc1MjMzOTc3Niw3MDk5OTMwMTAsNTA1NzMz
+MjkyLDExNzUwMzY2ODQsMjA0MTcyODE3NiwxNjkwNDg5MTU5LC
+0xNDQyNTE4ODE0LC0xMTI5Nzc1NjU4LC05NTE2MjgzNiwtNjAz
+NjU4NzYyXX0=
 -->
