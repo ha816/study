@@ -73,8 +73,6 @@ UNREPEATBLE READ 부정합 현상은 일반 웹 서비스에서는 크게 문제
 
 모든 InnoDB의 트랜잭션은 고유한 트랜잭션 번호를 가지며, UNDO 영역에 **백업된 모든 레코드에는 변경을 수행한 트랜잭션 번호가 포함되어 있다.** 그리고 UNDO 영역에 백업 데이터는 스토리지 엔진이 어느 시점에 불필요하다고 판단되면 주기적으로 삭제한다. 
 
-REPEATBLE_READ에서는 **실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 작은(더 오래된) 트랜잭션 번호를 가지는 UNDO 영역의 데이터를 삭제할 수 없다.** 그렇다고 가장 오래된 트랜잭션 번호 이전의 트랜잭션에 의해 변경된 모든 언두 데이터가 필요한 것은 아니다. 더 정확하게는 **특정 트랜잭션 번호 구간 내에서 백업된 UNDO 데이터는 보전되어야 한다는 것이다.** 
-
 $$\begin{bmatrix}
 T1(id = 6) & T2(id = 9) &  T3(id = 12) \\
 insert(A) & \\
@@ -91,6 +89,8 @@ insert(A) & \\
 | 6 | A | ... |
 
 세 번째 트랜잭션(12)가 데이터 변경을 하면 UNDO 영역에 위 데이터가 남는다. 즉 첫 번째 트랜잭션(6)의 기록이 남는다. 두 번째 트랜잭션(9)는 세번째 트랜잭션이 변경을 실행하기 전과 후에 한번씩 조회를 했지만 UNDO 영역의 데이터를 보기 때문에 항상 A 로우를 조회하게 된다. 
+
+**실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 작은(더 오래된) 트랜잭션 번호를 가지는 UNDO 영역의 데이터를 삭제할 수 없다.** 그렇다고 가장 오래된 트랜잭션 번호 이전의 트랜잭션에 의해 변경된 모든 언두 데이터가 필요한 것은 아니다. 더 정확하게는 **특정 트랜잭션 번호 구간 내에서 백업된 UNDO 데이터는 보전되어야 한다는 것이다.** 
 
 사실 두 번째 트랜잭션이 트랜잭션을 BEGIN 명령으로 실행 할때 부터 **실행되는 모든 SELECT 쿼리는 자신의 트랜잭션 번호(9) 보다 작은 트랜잭션 번호에서 변경한 것만을 보게 된다.** 
 
@@ -288,11 +288,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODA2NDk3MjAsLTEzNzI5Mzg4NDIsLT
-kwODY1MDE3OSwtMjEwNzEwNjEzNiwxMzk2OTMxMzE4LDc1MzYy
-MTM1MiwtMTQ5NTYwNzY1MCwxNzUzMDE3Mjg1LC04OTgwNzg0Nj
-YsLTE1MjgwMTY3NDMsMjkzMjg5MTkxLDkzNTAyNTExMSwxNzUy
-MzM5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIsMTE3NTAzNjY4NC
-wyMDQxNzI4MTc2LDE2OTA0ODkxNTksLTE0NDI1MTg4MTQsLTEx
-Mjk3NzU2NThdfQ==
+eyJoaXN0b3J5IjpbLTQzMzg2MTc3MSwtMTM3MjkzODg0MiwtOT
+A4NjUwMTc5LC0yMTA3MTA2MTM2LDEzOTY5MzEzMTgsNzUzNjIx
+MzUyLC0xNDk1NjA3NjUwLDE3NTMwMTcyODUsLTg5ODA3ODQ2Ni
+wtMTUyODAxNjc0MywyOTMyODkxOTEsOTM1MDI1MTExLDE3NTIz
+Mzk3NzYsNzA5OTkzMDEwLDUwNTczMzI5MiwxMTc1MDM2Njg0LD
+IwNDE3MjgxNzYsMTY5MDQ4OTE1OSwtMTQ0MjUxODgxNCwtMTEy
+OTc3NTY1OF19
 -->
