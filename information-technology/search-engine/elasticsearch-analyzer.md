@@ -75,7 +75,9 @@ PUT /movie_analyzer
 		"analyzer": {
 			"custom_movie_analyzer": {
 				"type" : "custom",
-				"chat_filter" : ["html_st"]
+				"chat_filter" : ["html_strip"],-- html 태그 제거
+				"tokenizer" : "standard", --표준 토크나이저 
+				"filter" : ["lowercase"] -- 소문자 토큰필터
 			}
 		}
 	}
@@ -85,6 +87,6 @@ PUT /movie_analyzer
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMDQ3MDI0NiwtNDA5MjExOTU2LC0xMz
-c2MDYwNTMzXX0=
+eyJoaXN0b3J5IjpbLTE5MDI3Mzg3MDUsLTQwOTIxMTk1NiwtMT
+M3NjA2MDUzM119
 -->
