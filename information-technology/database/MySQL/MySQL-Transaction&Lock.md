@@ -215,8 +215,8 @@ WHERE first_name = 'Gorgi' AND last_name= 'Klassen'
 
 |버전|설정의 조합  |
 |--|--|
-|MySQL 5.0| innodb_locks_unsafe_for_binglog=1 트랜잭션 격리 수준을 READ-COMMITED 설정 |
-|MySQL 5.1 이상| 바이너리 로그를 비활성화, 트랜잭션 격리 수준을 READ-COMMITED 설정; 또는 레코드 기반의 바이너리 로그 사용 innodb_locks_unsafe_for_binglog=1 |
+|MySQL 5.0 이하| innodb_locks_unsafe_for_binglog=1으로 트랜잭션 격리 수준을 READ-COMMITED 설정 |
+|MySQL 5.1 이상| 바이너리 로그를 비활성화하고 트랜잭션 격리 수준을 READ-COMMITED 설정. 또는 레코드 기반의 바이너리 로그 사용 innodb_locks_unsafe_for_binglog=1 |
 
 ### 레코드 수준의 잠금 확인 및 해제
 
@@ -279,11 +279,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY4Nzk3Nzg0LDE3MDEyMzQ0OTEsMTUyOT
-I3OTc3MiwyMDA3NDU0NzUxLC03NTI0MjgzNDQsLTE0MzA2NDkx
-NjIsNDMyNTA4ODU4LDE0ODM3OTc3NCwtNTc2OTgwNDg4LC0xMz
-kxMDI4Mzk4LDEwMDkwNzM1ODksLTQwMDkyMTY1OSwtMTYxMjc4
-MTk3NiwtNTA4NjgwNzk2LDQ0NTczODg4NiwtMTM3MjkzODg0Mi
-wtOTA4NjUwMTc5LC0yMTA3MTA2MTM2LDEzOTY5MzEzMTgsNzUz
-NjIxMzUyXX0=
+eyJoaXN0b3J5IjpbMTM4NTQzNjg3Myw1Njg3OTc3ODQsMTcwMT
+IzNDQ5MSwxNTI5Mjc5NzcyLDIwMDc0NTQ3NTEsLTc1MjQyODM0
+NCwtMTQzMDY0OTE2Miw0MzI1MDg4NTgsMTQ4Mzc5Nzc0LC01Nz
+Y5ODA0ODgsLTEzOTEwMjgzOTgsMTAwOTA3MzU4OSwtNDAwOTIx
+NjU5LC0xNjEyNzgxOTc2LC01MDg2ODA3OTYsNDQ1NzM4ODg2LC
+0xMzcyOTM4ODQyLC05MDg2NTAxNzksLTIxMDcxMDYxMzYsMTM5
+NjkzMTMxOF19
 -->
