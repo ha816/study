@@ -179,21 +179,8 @@ RENAME TABLE tab_a TO tab_b
 
 갭락은 레코드와 레코드 사이의 간격을 잠그는 락이다. 레코드 자체에 대해서는 잠그지 않는다. 
 
-갭락은 Master 와 Slave의 데이터 동기화 (더 정확히는 Binary 로그의 정확한 기록을 위해서)  
-    -> Phantom 레코드 방지
--   InnoDB의 Gap 락은 생각보다 많은 Concurrency 저하를 가져온다고 생각됨  
-    -> 물론 Dead lock도 유발될 가능성이 높음
--   InnoDB에서 대 부분의 변경 작업들은 Gap 락을 유발함
--   Primary Key 업데이트는 레코드 락만 유발하며 Gap 락을 걸진 않음
--   Gap 락을 가지고 있다고 해서 그 간격에 Insert가 허용되는 것은 아님 (단순 예방용 락 일뿐임)
--   만약 그 간격에 Insert를 하고자 하면, 반드시 충돌되는 락들이 모두 해제되기를 기다려야 함
--   Gap 락은 자동으로 확장 및 다른 트랜잭션의 Gap 락과 통합되기도 함  
-    -> Gap 락은 순수하게 모든 트랜잭션을 대상으로 해당 Gap에 변경 작업을 하지 못하도록 하는 예방용으로만 사용되기 때문임  
-    -> 예를 들어 레코드 키 [1], [2], [3]이 있는데, 트랜잭션 1번이 1<Gap<2 를 가지고 있고, 트랜잭션 2번이 2<Gap<3을 가지고 있는데,  
-    어떤 이유에서 레코드 키 [2]가 삭제된다면, 이 두개의 Gap 락은 1개의 Gap 락( 1< Gap <3)으로 통합되어  
-    트랜잭션 1번과 트랜잭션 2번이 이 통합된 Gap 락을 공유하게 됨  
-    (실제로 Purge thread가 레코드 키 [2]를 삭제하는 경우 이런 현상이 발생함) => 별로 중요치 않음
-
+갭락은 Master 와 Slave의 데이터 동기화 (더 정확히는 Binary 로그의 정확한 기록을 위해서)  및 Phantom 레코드 방지를 위해 사용한다.
+InnoDB에서 대부분의 변경 작업(update)은 Gap 락을 유발한다. Gap 락은 순수하게 모든 트랜잭션을 대상으로 해당 Gap에 변경 작업을 하지 못하도록 하는 예방용으로만 사용다. 
 
 ### 넥스트 키 락(Next key lock)
 레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이다.
@@ -299,11 +286,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NDg4NTYyMiwxNDgzNzk3NzQsLTU3Nj
-k4MDQ4OCwtMTM5MTAyODM5OCwxMDA5MDczNTg5LC00MDA5MjE2
-NTksLTE2MTI3ODE5NzYsLTUwODY4MDc5Niw0NDU3Mzg4ODYsLT
-EzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMjEwNzEwNjEzNiwxMzk2
-OTMxMzE4LDc1MzYyMTM1MiwtMTQ5NTYwNzY1MCwxNzUzMDE3Mj
-g1LC04OTgwNzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5MTkxLDkz
-NTAyNTExMV19
+eyJoaXN0b3J5IjpbLTE2NDE0NjAyMTcsMTQ4Mzc5Nzc0LC01Nz
+Y5ODA0ODgsLTEzOTEwMjgzOTgsMTAwOTA3MzU4OSwtNDAwOTIx
+NjU5LC0xNjEyNzgxOTc2LC01MDg2ODA3OTYsNDQ1NzM4ODg2LC
+0xMzcyOTM4ODQyLC05MDg2NTAxNzksLTIxMDcxMDYxMzYsMTM5
+NjkzMTMxOCw3NTM2MjEzNTIsLTE0OTU2MDc2NTAsMTc1MzAxNz
+I4NSwtODk4MDc4NDY2LC0xNTI4MDE2NzQzLDI5MzI4OTE5MSw5
+MzUwMjUxMTFdfQ==
 -->
