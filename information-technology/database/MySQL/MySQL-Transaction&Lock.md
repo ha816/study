@@ -182,7 +182,7 @@ RENAME TABLE tab_a TO tab_b
 갭락은 Master 와 Slave의 데이터 동기화 (더 정확히는 Binary 로그의 정확한 기록을 위해서)  및 Phantom 레코드 방지를 위해 사용한다. 대부분의 변경 작업(update)은 Gap 락을 유발한다. 
 
 ### 넥스트 키 락(Next key lock)
-레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 Binary 로그에 기록되는 로그의 데이터의 정합성을 위해 사용하는 것이 주 목적이다. 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이다.
+레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 Binary 로그에 기록되는 로그의 데이터의 정합성을 위해 사용한다. 이 정합성은 마스터 DB에서 수정된 결과와 동일한 결과를 만들도록 보장하는 것이 목적이다.
 
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
@@ -285,7 +285,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MzM3ODY5NCwxNDgzNzk3NzQsLTU3Nj
+eyJoaXN0b3J5IjpbMTAzODA0MDQyMCwxNDgzNzk3NzQsLTU3Nj
 k4MDQ4OCwtMTM5MTAyODM5OCwxMDA5MDczNTg5LC00MDA5MjE2
 NTksLTE2MTI3ODE5NzYsLTUwODY4MDc5Niw0NDU3Mzg4ODYsLT
 EzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMjEwNzEwNjEzNiwxMzk2
