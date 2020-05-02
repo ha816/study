@@ -194,12 +194,11 @@ AUTO_INCREMENT 기능이 사용된 테이블에선 동시에 여러 INSERT가 �
 
 다른 잠금과는 달리, 트랜잭션 관계없이 INSERT나 REPLACE 문장에서 AUTO_INCREMENT 값을 가져오는 순간만 AUTO_INCREMENT 락이 걸렸다가 즉시 해제된다. 
 
-AUTO_INCREMENT 락은 명시적으로 획득하고 해제하는 방법이 없다. 그리고 태이블 단위로 하나만 존재하기 때문에, 하나의 쿼리가 락을 걸게 되면 나머지 쿼리는 락 해제를 기다려야 한다. 일반적으로 아주 짧은 시간만 걸렸다가 해제가 되기 때문에 해당 락은 성능상 이슈가 크진 ㅇ
+AUTO_INCREMENT 락은 명시적으로 획득하고 해제하는 방법이 없다. 그리고 태이블 단위로 하나만 존재하기 때문에, 하나의 쿼리가 락을 걸게 되면 나머지 쿼리는 락 해제를 기다려야 한다. 일반적으로 아주 짧은 시간만 걸렸다가 해제가 되기 때문에 해당 락은 성능상 이슈가 크진 않다.
 
 ### InnoDB 인덱스와 잠금
 
-InnoDb의 잠금과 인덱스는 상당히 중요한 연관관계가 있다. **InnoDB의 잠금은 레코드를 잠그는 것이 아니라 인덱스를 잠그는 방식이다.**
-즉, 변경해야할 레코드를 찾기 위해 검색한 인덱스의 레코드를 모두 잠가야 한다. 
+InnoDB의 잠금과 인덱스는 상당히 밀접한 관계가 있다. 왜냐하면 사실 **InnoDB의 잠금은 레코드를 잠그는 것이 아니라 인덱스를 잠그는 방식이다.** 즉, 변경해야할 레코드를 찾기 위해 검색한 인덱스의 레코드를 모두 잠가야 한다. 
 
 ```
 SELECT * FROM employees WHERE first_name = 'Georgi'; //253건
@@ -284,7 +283,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NjM5NjQ3OCwtNzUyNDI4MzQ0LC0xND
+eyJoaXN0b3J5IjpbMjAwNzQ1NDc1MSwtNzUyNDI4MzQ0LC0xND
 MwNjQ5MTYyLDQzMjUwODg1OCwxNDgzNzk3NzQsLTU3Njk4MDQ4
 OCwtMTM5MTAyODM5OCwxMDA5MDczNTg5LC00MDA5MjE2NTksLT
 E2MTI3ODE5NzYsLTUwODY4MDc5Niw0NDU3Mzg4ODYsLTEzNzI5
