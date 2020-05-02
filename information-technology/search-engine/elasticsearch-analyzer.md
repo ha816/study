@@ -152,6 +152,8 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 
 ## 동의어 사전(synonym dictionary)
 
+엘라스틱서치에서 제공하는 토큰 필터중 Synonym 필터를 사용하면 동의어 처리가 능해진다. 동의어는 검색 기능을 풍부하게 할 수 있게 도와주는 도군 중 하나다. 원문에 특정한 단어가 존재하지 않더라도 색인 데이터를 토큰화해서 저장할 때 동의어나 유의어에 해당하는 단어를 ㅏㅁ저ㅇ 
+
 
 
 
@@ -161,7 +163,7 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMzcyNDkwNSw1OTUzMjUyNTEsLTE0Nj
-U0MTcwODAsMTQ2ODM5NzEzNCwtOTc4OTAyMDA4LDMyMDU4NDcx
-OSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX0=
+eyJoaXN0b3J5IjpbMTQzMTUyNTE0LDU5NTMyNTI1MSwtMTQ2NT
+QxNzA4MCwxNDY4Mzk3MTM0LC05Nzg5MDIwMDgsMzIwNTg0NzE5
+LC00MDkyMTE5NTYsLTEzNzYwNjA1MzNdfQ==
 -->
