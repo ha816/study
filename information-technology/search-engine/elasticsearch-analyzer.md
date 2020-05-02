@@ -98,9 +98,15 @@ Whitespace Analyzer
 
 #### Standard 토크나이저
 
-가장 일반적으로 사용하는 토크나이저로 대부분의 
+가장 일반적으로 사용하는 토크나이저로 대부분의 기호(공백, 특수문자)를 만나면 그 기호를 기준으로 토큰을 나눈다.  
 
 #### Whitespace 토크나이저
+
+공백을 만나면 텍스트를 토큰화한다. 
+
+#### Ngram 토크나이저
+
+Ngram은 기본적으로 한 글자씩 토큰화를 한다. Ngram에 특정 문자를 지정할 수도 있으며, 
 
 
 
@@ -109,6 +115,6 @@ Whitespace Analyzer
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1OTYzNzU0NywzMjA1ODQ3MTksLTQwOT
-IxMTk1NiwtMTM3NjA2MDUzM119
+eyJoaXN0b3J5IjpbNjA4NjIxOTYwLDMyMDU4NDcxOSwtNDA5Mj
+ExOTU2LC0xMzc2MDYwNTMzXX0=
 -->
