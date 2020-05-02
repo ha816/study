@@ -34,7 +34,7 @@ select(A') & \\
 &commit \\
 \end{bmatrix}$$
 
-T1, T2 트랜잭션이 존재하고 T1은 데이터 A를 읽는 작업을 수행하고 T2는 A를 A'으로 수정하는 작업을 한다. T2의 update 작업으로 데이터가 변경되었고 commit이 되기 전에 T1이 select 작업을 하면 변경된 데이터 A'을 가져오게 된다. 즉 commit이 되지 않은 단순히 현재 변경된 데이터를 읽다보니 데이터의 정합성이 깨지게 된다. 이런 현상을 Dirty Read 현상이라 한다. 
+T1, T2 트랜잭션이 존재하고 T1은 데이터 A를 읽는 작업을 수행하고 T2는 A를 A'으로 수정하는 작업을 한다. T2의 update 작업으로 데이터가 변경되었고 commit이 되기 전에 T1이 select 작업을 하면 변경된 데이터 A'을 가져오게 된다. 즉 commit이 되지 않은 단순히 현재 변경된 데이터를 공유하다보니 데이터의 정합성이 깨지게 된다. 이런 현상을 Dirty Read 현상이라 한다. 
 
 ### READ COMMITED
 
@@ -45,6 +45,16 @@ READ_COMMITED는 한 트랜잭션이 데이터를 조회할때, 다른 트랜잭
 READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제가 있다.(UNREPEATABLE_READ) REPEATBLE READ 정합성이란 **하나의 트랜잭션 내에서는 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같아야 한다**를 말한다. 
 
 #### UNREPEATBLE READ 
+
+$$\begin{bmatrix}
+T1(id = 6) & T2(id = 9)\\
+select(A) & \\
+&update(A \rightarrow A') \\
+&commit \\
+select(A') & \\
+
+\end{bmatrix}$$
+
 
 UNREPEATBLE READ 부정합 현상은 일반 웹 서비스에서는 크게 문제되지 않지만, 하나의 트랜잭션에서 동일한 데이터를 여러 번 읽고 변경하는 작업이 금전적인 처리와 연결되면 문제가 될 수 있다. 예를 들어, 한 트랜잭션에서 입금과 출금 처리가 계속 진행되고 있을때, 다른 트랜잭션에서 오늘 입금된 금액 총합을 조회한다고 해보자. SELECT 쿼리는 실행될때마다 결과가 변경될 것이다. 
 
@@ -271,11 +281,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NjkzMTMxOCw3NTM2MjEzNTIsLTE0OT
-U2MDc2NTAsMTc1MzAxNzI4NSwtODk4MDc4NDY2LC0xNTI4MDE2
-NzQzLDI5MzI4OTE5MSw5MzUwMjUxMTEsMTc1MjMzOTc3Niw3MD
-k5OTMwMTAsNTA1NzMzMjkyLDExNzUwMzY2ODQsMjA0MTcyODE3
-NiwxNjkwNDg5MTU5LC0xNDQyNTE4ODE0LC0xMTI5Nzc1NjU4LC
-05NTE2MjgzNiwtNjAzNjU4NzYyLC0xNjg3MjY0NTE1LC0xMjA0
-NjkwOTExXX0=
+eyJoaXN0b3J5IjpbLTEzMjY4MDg0MTYsMTM5NjkzMTMxOCw3NT
+M2MjEzNTIsLTE0OTU2MDc2NTAsMTc1MzAxNzI4NSwtODk4MDc4
+NDY2LC0xNTI4MDE2NzQzLDI5MzI4OTE5MSw5MzUwMjUxMTEsMT
+c1MjMzOTc3Niw3MDk5OTMwMTAsNTA1NzMzMjkyLDExNzUwMzY2
+ODQsMjA0MTcyODE3NiwxNjkwNDg5MTU5LC0xNDQyNTE4ODE0LC
+0xMTI5Nzc1NjU4LC05NTE2MjgzNiwtNjAzNjU4NzYyLC0xNjg3
+MjY0NTE1XX0=
 -->
