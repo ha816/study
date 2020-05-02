@@ -156,7 +156,7 @@ UNLOCK TABLES
 한 세션이 락을 가지고 있으면, 다른 세션은 동일한 이름의 락을 걸지 못한다.
 GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 유저락은 동기화 문제를 해결하는데 사용될 수 있다. 
 
-### 네임 락(Name Lock)
+### Name Lock
 
 데이터 베이스 객체(테이블이나 뷰)의 이름을 변경하는 경우 획득하는 잠금이다. 그래서 네밍 락이라 부른다.
 네임 락은 명시적으로 획득하거나 해제할 수 없다. 아래와  같이 테이블의 이름을 변경하는 경우 자동으로 획득하는 잠금이다. 
@@ -172,8 +172,10 @@ RENAME TABLE tab_a TO tab_b
 낙관적 잠금(Optimistic locking)
 : 기본적으로 각 트랜잭션이 같은 레코드를 변경할 가능성이 희박할것이라고 낙관적으로 생각한다. 그래서 변경 작업을 수행하고 마지막에 잠금 충돌이 있었는지 확인해보고 있으면 Rollback 처리를 한다. 
 
-###  레코드 락(Record only lock)
+###  Record only lock(레코드 락)
 레코드 자체만 잠그는 락이다. InnoDB에서는 레코드 자체가 아니라 인덱스를 잠근다. 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 수행한다.
+
+### 갭 락
 
 ### 넥스트 키 락(Next key lock)
 레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이이다.
@@ -279,7 +281,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjE5MDgzMTcsMTAwOTA3MzU4OSwtND
+eyJoaXN0b3J5IjpbLTEzOTEwMjgzOTgsMTAwOTA3MzU4OSwtND
 AwOTIxNjU5LC0xNjEyNzgxOTc2LC01MDg2ODA3OTYsNDQ1NzM4
 ODg2LC0xMzcyOTM4ODQyLC05MDg2NTAxNzksLTIxMDcxMDYxMz
 YsMTM5NjkzMTMxOCw3NTM2MjEzNTIsLTE0OTU2MDc2NTAsMTc1
