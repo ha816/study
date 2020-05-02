@@ -34,7 +34,7 @@ select(A') & \\
 &commit \\
 \end{bmatrix}$$
 
-위 예제를 보면 T1, T2 트랜잭션이 존재하고 T1은 데이터 A를 
+위 예제를 보면 T1, T2 트랜잭션이 존재하고 T1은 데이터 A를 읽는 작업을 수행하고 T2는 A를 수정하는 작업을 한다. 
 
 ### READ COMMITED
 
@@ -271,11 +271,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMjQyNzMwMCwtMTQ5NTYwNzY1MCwxNz
-UzMDE3Mjg1LC04OTgwNzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5
-MTkxLDkzNTAyNTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MD
-U3MzMyOTIsMTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OTA0ODkx
-NTksLTE0NDI1MTg4MTQsLTExMjk3NzU2NTgsLTk1MTYyODM2LC
-02MDM2NTg3NjIsLTE2ODcyNjQ1MTUsLTEyMDQ2OTA5MTEsLTIw
-NDE3MDg1NjhdfQ==
+eyJoaXN0b3J5IjpbNzUzNjIxMzUyLC0xNDk1NjA3NjUwLDE3NT
+MwMTcyODUsLTg5ODA3ODQ2NiwtMTUyODAxNjc0MywyOTMyODkx
+OTEsOTM1MDI1MTExLDE3NTIzMzk3NzYsNzA5OTkzMDEwLDUwNT
+czMzI5MiwxMTc1MDM2Njg0LDIwNDE3MjgxNzYsMTY5MDQ4OTE1
+OSwtMTQ0MjUxODgxNCwtMTEyOTc3NTY1OCwtOTUxNjI4MzYsLT
+YwMzY1ODc2MiwtMTY4NzI2NDUxNSwtMTIwNDY5MDkxMSwtMjA0
+MTcwODU2OF19
 -->
