@@ -117,11 +117,14 @@ Har, arr, rry, Pot, ott, tte, ter
 
 시작 부분을 고정시켜 Ngram 단어를 자르는 방식으로 사용하는 토크나이저다. 해당 토크나이저도 자동 완성을 구현할때 유용하게 활용할 수 있다. 
 
-만약 Edge Ngram 토크나이저에게 문장으로 "Harry Potter"를 주고, N이 3이라면 아래와 같은 결과로 토크나이징을 하게 된다. 
+만약 Edge Ngram 토크나이저에게 "Harry Potter"를 주면 아래와 같은 결과로 토크나이징을 하게 된다. 
 ```
-Har, arr, rry, Pot, ott, tte, ter
+H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 ```
 
+### TOKEN FILTER(토큰 필터)
+
+토큰 필터는 토크나이저에서 분리된 토큰들을 변형하거나 추가, 삭제할 때 
 
 
 
@@ -138,7 +141,7 @@ Har, arr, rry, Pot, ott, tte, ter
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjk5NzgwMywxNDY4Mzk3MTM0LC05Nz
+eyJoaXN0b3J5IjpbMTY4MzAzMjIwMywxNDY4Mzk3MTM0LC05Nz
 g5MDIwMDgsMzIwNTg0NzE5LC00MDkyMTE5NTYsLTEzNzYwNjA1
 MzNdfQ==
 -->
