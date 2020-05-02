@@ -106,7 +106,9 @@ Whitespace Analyzer
 
 #### Ngram 토크나이저
 
-Ngram은 기본적으로 한 글자씩 토큰화를 한다. Ngram에 특정 문자를 지정할 수도 있으며, 
+Ngram은 기본적으로 한 글자씩 토큰화를 한다. Ngram에 특정 문자를 지정할 수도 있으며, 이 경우 문자의 목록 중 하나를 만날때마다 단어를 자른다. 그 밖에도 다양한 옵션을 조합해서 **자동완성 기능**을 만들때 유용하게 활용할 수 있다. 
+
+
 
 
 
@@ -115,6 +117,6 @@ Ngram은 기본적으로 한 글자씩 토큰화를 한다. Ngram에 특정 문�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA4NjIxOTYwLDMyMDU4NDcxOSwtNDA5Mj
-ExOTU2LC0xMzc2MDYwNTMzXX0=
+eyJoaXN0b3J5IjpbLTk3ODkwMjAwOCwzMjA1ODQ3MTksLTQwOT
+IxMTk1NiwtMTM3NjA2MDUzM119
 -->
