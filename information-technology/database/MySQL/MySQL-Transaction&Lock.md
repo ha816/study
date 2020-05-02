@@ -27,14 +27,14 @@ READ_UNCOMMITED는 RDBMS 표준에서는 트랜잭션 격리 수준으로 인정
 #### Dirty Read
 
 $$\begin{bmatrix}
-T1(id = 6) & T2(id = 9) & T3(id = 12)\\
+T1(id = 6) & T2(id = 9)\\
 select(A) & \\
 &update(A \rightarrow A') \\
-&&select(A') &\\
 select(A') & \\
 &commit \\
 \end{bmatrix}$$
 
+위 예제를 보면 T1, T2 트랜잭션이 존재하고 T1은 데이터 A를 
 
 ### READ COMMITED
 
@@ -271,7 +271,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NzI2NTYzNCwtMTQ5NTYwNzY1MCwxNz
+eyJoaXN0b3J5IjpbMTMxMjQyNzMwMCwtMTQ5NTYwNzY1MCwxNz
 UzMDE3Mjg1LC04OTgwNzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5
 MTkxLDkzNTAyNTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MD
 U3MzMyOTIsMTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OTA0ODkx
