@@ -90,7 +90,7 @@ insert(A) & \\
 
 이제 UNDO 영역에 백업 데이터는 언제 제거되는지 생각해보도록 하자. **실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 작은(더 오래된) 트랜잭션 번호를 가지는 UNDO 영역의 데이터는 삭제할 수 없다.** 그렇다고 가장 오래된 트랜잭션 번호 이전의 트랜잭션에 의해 변경된 모든 UNDO 데이터가 필요한 것은 아니다. 더 정확하게는 **특정 트랜잭션 번호 구간 내에서 백업된 UNDO 데이터는 보전되어야 한다는 것이다.** 
 
-사실 두 번째 트랜잭션이 트랜잭션을 BEGIN 명령으로 실행 할때 부터 **실행되는 모든 SELECT 쿼리는 자신의 트랜잭션 번호(9) 보다 작은 트랜잭션 번호에서 변경한 것만을 보게 된다.** 
+사실 두 번째 트랜잭션(id=9)이 SELECT 쿼리를 실행 할때 부터 **실행되는 모든 SELECT 쿼리는 자신의 트랜잭션 번호(9) 보다 작은 트랜잭션 번호에서 변경한 것만을 보게 된다.** 
 
 가끔 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 실행되는 SELECT 문장의 차이를 혼동하는 경우가 있다. READ_COMMITED 격리 수준에서는 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 외부에서 실행되는 SELECT 문장의 차이가 거의 없다. 
 REPEATABLE READ에선 트랜잭션 내에서 SELECT 문장만 동일한 SELECT 쿼리를 수행했을때 언제나 동일한 결과가 나온다. 트랜잭션 없이 실행되는 SELECT 문장은 언제나 동일한 결과를 보지 못한다.
@@ -286,11 +286,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc5NTIwMjU2LDQ0NTczODg4NiwtMTM3Mj
-kzODg0MiwtOTA4NjUwMTc5LC0yMTA3MTA2MTM2LDEzOTY5MzEz
-MTgsNzUzNjIxMzUyLC0xNDk1NjA3NjUwLDE3NTMwMTcyODUsLT
-g5ODA3ODQ2NiwtMTUyODAxNjc0MywyOTMyODkxOTEsOTM1MDI1
-MTExLDE3NTIzMzk3NzYsNzA5OTkzMDEwLDUwNTczMzI5MiwxMT
-c1MDM2Njg0LDIwNDE3MjgxNzYsMTY5MDQ4OTE1OSwtMTQ0MjUx
-ODgxNF19
+eyJoaXN0b3J5IjpbLTUwODY4MDc5Niw0NDU3Mzg4ODYsLTEzNz
+I5Mzg4NDIsLTkwODY1MDE3OSwtMjEwNzEwNjEzNiwxMzk2OTMx
+MzE4LDc1MzYyMTM1MiwtMTQ5NTYwNzY1MCwxNzUzMDE3Mjg1LC
+04OTgwNzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5MTkxLDkzNTAy
+NTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIsMT
+E3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OTA0ODkxNTksLTE0NDI1
+MTg4MTRdfQ==
 -->
