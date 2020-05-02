@@ -117,6 +117,8 @@ Har, arr, rry, Pot, ott, tte, ter
 
 
 
+## 동의어 사전
+
 
 
 
@@ -124,6 +126,6 @@ Har, arr, rry, Pot, ott, tte, ter
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODg0NTQxNSwtOTc4OTAyMDA4LDMyMD
+eyJoaXN0b3J5IjpbMTUyODE3NjIwNiwtOTc4OTAyMDA4LDMyMD
 U4NDcxOSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX0=
 -->
