@@ -177,6 +177,7 @@ RENAME TABLE tab_a TO tab_b
 레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 
 
 
+
 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이다.
 
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
@@ -280,11 +281,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4Mzc5Nzc0LC01NzY5ODA0ODgsLTEzOT
-EwMjgzOTgsMTAwOTA3MzU4OSwtNDAwOTIxNjU5LC0xNjEyNzgx
-OTc2LC01MDg2ODA3OTYsNDQ1NzM4ODg2LC0xMzcyOTM4ODQyLC
-05MDg2NTAxNzksLTIxMDcxMDYxMzYsMTM5NjkzMTMxOCw3NTM2
-MjEzNTIsLTE0OTU2MDc2NTAsMTc1MzAxNzI4NSwtODk4MDc4ND
-Y2LC0xNTI4MDE2NzQzLDI5MzI4OTE5MSw5MzUwMjUxMTEsMTc1
-MjMzOTc3Nl19
+eyJoaXN0b3J5IjpbMzcwNDQyMjIwLDE0ODM3OTc3NCwtNTc2OT
+gwNDg4LC0xMzkxMDI4Mzk4LDEwMDkwNzM1ODksLTQwMDkyMTY1
+OSwtMTYxMjc4MTk3NiwtNTA4NjgwNzk2LDQ0NTczODg4NiwtMT
+M3MjkzODg0MiwtOTA4NjUwMTc5LC0yMTA3MTA2MTM2LDEzOTY5
+MzEzMTgsNzUzNjIxMzUyLC0xNDk1NjA3NjUwLDE3NTMwMTcyOD
+UsLTg5ODA3ODQ2NiwtMTUyODAxNjc0MywyOTMyODkxOTEsOTM1
+MDI1MTExXX0=
 -->
