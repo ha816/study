@@ -53,9 +53,12 @@ CHARACTER FILTER
 : 문장을 분석하기 전에 입력 테스트에 대해 특정한 단어를 변경하거나 HTML 같은 태그를 제거하는 역할을 하는 필터다. 해당 내용은 텍스트를 개별 토큰화하기 전의 전처리 과정이며, ReplaceAll 함수처럼 패턴으로 텍스트를 변경하거나 사용자가 정의한 필터를 적용할 수 있다. 
 
 TOKENIZER FILTER
-: 토크나이저 필터는 분석기를 
+: 토크나이저 필터는 분석기를 구성할때 하나만 사용할 수 있으며 텍스트를 어떻게 나눌것인지 정의한다. 한글을 분해할 때는 한글 형태소 분석기의 토크나이저를 사용하고, 영문을 분석할때는 영문 형태소 분석기를 사용하면 된다.
+
+TOKEN FILTER
+: 토큰필터는 토큰화된 단어를 하나씩 ㅌ
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzc2ODkxODRdfQ==
+eyJoaXN0b3J5IjpbMTA4MzY0ODgzOV19
 -->
