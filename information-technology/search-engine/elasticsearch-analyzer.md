@@ -45,7 +45,7 @@ cool의 경우, 문서 1의 내용이 나온다. 하지만 "elasticsaerch"로 �
 
 분석기가 동작하는 기본 프로세스는 아래와 같다. 
 
-문장 -> CHRACTER FILTER-> 가공된 문장 -> TOKENIZER FILTER -> Tokens -> TOKEN FILTER(동의어 사전) -> Terms -> index
+문장 -> CHRACTER FILTER-> 전처리 처리된 문장 -> TOKENIZER FILTER -> Tokens -> TOKEN FILTER(동의어 사전) -> Terms -> index
 
 CHARACTER FILTER(전처리 필터)
 : 문장을 분석하기 전에 입력 테스트에 대해 특정한 단어를 변경하거나 HTML 같은 태그를 제거하는 역할을 하는 필터다. 해당 내용은 텍스트를 개별 토큰화하기 전의 전처리 과정이며, ReplaceAll 함수처럼 패턴으로 텍스트를 변경하거나 사용자가 정의한 필터를 적용할 수 있다. 
@@ -124,7 +124,7 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 ### TOKEN FILTER(토큰 필터)
 
-토큰 필터는 토크나이저에서 분리된 토큰들을 변형하거나 추가, 삭제할 때 
+토큰 필터는 토크나이저에서 분리된 토큰들을 추가, 수정, 삭제할 때 사용하는 필터다. 토크나이저에 의해서 토큰이 분리가 되면 분리된 토큰은 배열 형태로 토큰 필터에게 전달된다. 토크 나이저가 앞단에서 처리를 해줘야 하기 때문에 토큰 필터는 도
 
 
 
@@ -141,7 +141,7 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MzAzMjIwMywxNDY4Mzk3MTM0LC05Nz
-g5MDIwMDgsMzIwNTg0NzE5LC00MDkyMTE5NTYsLTEzNzYwNjA1
-MzNdfQ==
+eyJoaXN0b3J5IjpbLTE3MjYyMjI2ODQsMTQ2ODM5NzEzNCwtOT
+c4OTAyMDA4LDMyMDU4NDcxOSwtNDA5MjExOTU2LC0xMzc2MDYw
+NTMzXX0=
 -->
