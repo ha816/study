@@ -162,7 +162,12 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 
 실무에선 이런 동의어를 모아둔 파일을 칭할 때 동의어 사전이라 부른다.
 
+### 동의어 사전 사용법
 
+동의어 사전 파일은 엘라스틱 서치가 설치된 서버 아래의 config 디렉터리에 생성해야 한다.
+```
+
+```
 
 
 
@@ -174,7 +179,7 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjg1NzQ5Nyw1OTUzMjUyNTEsLTE0Nj
+eyJoaXN0b3J5IjpbMTU3NzYxOTU0Niw1OTUzMjUyNTEsLTE0Nj
 U0MTcwODAsMTQ2ODM5NzEzNCwtOTc4OTAyMDA4LDMyMDU4NDcx
 OSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX0=
 -->
