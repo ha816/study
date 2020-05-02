@@ -139,8 +139,7 @@ MySQL에서 사용하는 잠금은 크게 **MySQL엔진 레벨**과 **스토리�
 
 ### Table Rock(테이블 락)
 
-개별 테이블 단위로 설정되는 잠금이다. 
-명시적이나 또는 묵시적으로 특정 테이블의 락을 얻을 수 있다. 
+개별 테이블 단위로 설정되는 잠금이다. 명시적이나 또는 묵시적으로 특정 테이블의 락을 얻을 수 있다. 
 명시적 방법은 아래와 같다. 명시적 테이블 락도 특별한 상황이 아니면 거의 사용할 필요가 없다. 
 ```
 LOCK TABLES table_name [ READ | WRITE ]
@@ -282,11 +281,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNDE1MTA0NiwtNTA4NjgwNzk2LDQ0NT
-czODg4NiwtMTM3MjkzODg0MiwtOTA4NjUwMTc5LC0yMTA3MTA2
-MTM2LDEzOTY5MzEzMTgsNzUzNjIxMzUyLC0xNDk1NjA3NjUwLD
-E3NTMwMTcyODUsLTg5ODA3ODQ2NiwtMTUyODAxNjc0MywyOTMy
-ODkxOTEsOTM1MDI1MTExLDE3NTIzMzk3NzYsNzA5OTkzMDEwLD
-UwNTczMzI5MiwxMTc1MDM2Njg0LDIwNDE3MjgxNzYsMTY5MDQ4
-OTE1OV19
+eyJoaXN0b3J5IjpbLTE2MTI3ODE5NzYsLTUwODY4MDc5Niw0ND
+U3Mzg4ODYsLTEzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMjEwNzEw
+NjEzNiwxMzk2OTMxMzE4LDc1MzYyMTM1MiwtMTQ5NTYwNzY1MC
+wxNzUzMDE3Mjg1LC04OTgwNzg0NjYsLTE1MjgwMTY3NDMsMjkz
+Mjg5MTkxLDkzNTAyNTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAxMC
+w1MDU3MzMyOTIsMTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OTA0
+ODkxNTldfQ==
 -->
