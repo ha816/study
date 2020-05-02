@@ -68,9 +68,16 @@ PUT /movie_analyzer
 	"settings": {
 		"index": {
 			"number_of_shards":5,
-						"number_of_shards":5,
+			"number_of_replicas":1
 		}
-
+	},
+	"analysis": {
+		"analyzer": {
+			"custom_movie_analyzer": {
+				"type" : "custom",
+				"chat_filter" : ["html_st"]
+			}
+		}
 	}
 
 }
@@ -78,6 +85,6 @@ PUT /movie_analyzer
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NzE3ODA1OCwtNDA5MjExOTU2LC0xMz
+eyJoaXN0b3J5IjpbMjEyMDQ3MDI0NiwtNDA5MjExOTU2LC0xMz
 c2MDYwNTMzXX0=
 -->
