@@ -3,7 +3,7 @@
 이 장에서는 MySQL의 동시성에 영향을 미치는 잠금(Lock)과 트랜잭션, 그리고 트랜잭션의 격리 수준(Isolation Level)을 공부한다.
 
 
-## MySQL Transaction
+# MySQL Transaction
 
 작은 작업 단위를 묶어 이 작업들의 원자성을 보장하는 것이 트랜잭션이다. 이 말은 작은 작업 일부만 적용되는 현상(partial update)가 없다는 말이다. 
 
@@ -149,7 +149,7 @@ UNLOCK TABLES
 
 ### User Rock(유저 락)
 
-유저락(USER-LEVEL LOCK)은 잠금 대상이 테이블이나 레코드와 같은 데이터 베이스 컴포넌트가 아니다. 유저락(USER-LEVEL LOCK)은 단순히 사용자가 지정한 문자열(String)로 락을 획득하고 반납한다. 즉 String으로 주어진 특정 이름으로 락을 얻고 해제한다. 
+유저락은 잠금 대상이 테이블이나 레코드와 같은 데이터 베이스 컴포넌트가 아니다. 단순히 사용자가 지정한 문자열(String)로 락을 획득하고 반납한다. 즉 String으로 주어진 특정 이름으로 락을 얻고 해제한다. 
 
 한 세션이 락을 가지고 있으면, 다른 세션은 동일한 이름의 락을 걸지 못한다.
 GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 유저락은 동기화 문제를 해결하는데 사용될 수 있다. 
@@ -161,8 +161,6 @@ GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 유저락
 ```
 RENAME TABLE tab_a TO tab_b
 ```
-
-
 
 ## InnoDB 잠금(스토리지 엔진 레벨)
 
@@ -281,11 +279,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMDkyMTY1OSwtMTYxMjc4MTk3NiwtNT
-A4NjgwNzk2LDQ0NTczODg4NiwtMTM3MjkzODg0MiwtOTA4NjUw
-MTc5LC0yMTA3MTA2MTM2LDEzOTY5MzEzMTgsNzUzNjIxMzUyLC
-0xNDk1NjA3NjUwLDE3NTMwMTcyODUsLTg5ODA3ODQ2NiwtMTUy
-ODAxNjc0MywyOTMyODkxOTEsOTM1MDI1MTExLDE3NTIzMzk3Nz
-YsNzA5OTkzMDEwLDUwNTczMzI5MiwxMTc1MDM2Njg0LDIwNDE3
-MjgxNzZdfQ==
+eyJoaXN0b3J5IjpbNzI0NDMzNDM1LC00MDA5MjE2NTksLTE2MT
+I3ODE5NzYsLTUwODY4MDc5Niw0NDU3Mzg4ODYsLTEzNzI5Mzg4
+NDIsLTkwODY1MDE3OSwtMjEwNzEwNjEzNiwxMzk2OTMxMzE4LD
+c1MzYyMTM1MiwtMTQ5NTYwNzY1MCwxNzUzMDE3Mjg1LC04OTgw
+Nzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5MTkxLDkzNTAyNTExMS
+wxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIsMTE3NTAz
+NjY4NF19
 -->
