@@ -128,7 +128,17 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 #### Ascii Folding 토큰 필터
 
-아스키 코드에 해당하는 127개의 알파벳, 숫자, 기호에 해당하지 않는 경우 문자를 ASCII 요소로 변환한다. 예를들어 아스키 코드가 아닌 "javaca'fe"라는 단어가 들어오면 이는 "jav" 
+아스키 코드에 해당하는 127개의 알파벳, 숫자, 기호에 해당하지 않는 경우 문자를 ASCII 요소로 변환한다. 예를들어 아스키 코드가 아닌 "javaca'fe"라는 단어가 들어오면 이는 "javacafe"로 Ascii 값에 맞게 변경된다.
+
+#### Lowercase, Uppercase 토큰 필터
+
+토큰 전체를 소문자나 대문자로 변환한다.
+
+#### Stop 토큰 필터
+
+사용하지 않을 금지 토큰을 
+
+ 
 
 
 
@@ -145,7 +155,7 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTIyODIwNTksLTE0NjU0MTcwODAsMT
-Q2ODM5NzEzNCwtOTc4OTAyMDA4LDMyMDU4NDcxOSwtNDA5MjEx
-OTU2LC0xMzc2MDYwNTMzXX0=
+eyJoaXN0b3J5IjpbOTUzOTc5NDk1LC0xNDY1NDE3MDgwLDE0Nj
+gzOTcxMzQsLTk3ODkwMjAwOCwzMjA1ODQ3MTksLTQwOTIxMTk1
+NiwtMTM3NjA2MDUzM119
 -->
