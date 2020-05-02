@@ -207,7 +207,7 @@ SELECT * FROM employees WHERE first_name = 'Georgi' And last_name = 'Klassen'; 1
 UPDATE employees SET 
 WHERE first_name = 'Gorgi' AND last_name= 'Klassen'
 ```
-UPDATE 문장이 실행되면 1건의 레코드가 업데이트될 것이다. 하지만 이 1건의 업데이트를 위해 몇개의 레코드에 락을 걸어야 할까?...
+위 UPDATE 문장이 실행되면 1건의 레코드가 수정될 것이다. 이 1건의 수정을 위해 몇개의 레코드에 락을 걸어야 할까?...
 
 위 update 쿼리에서 인덱스를 이용할 수 있는 것은 first_name이다. 따라서 253건의 레코드가 모두 잠긴다. 이 예제에서는 253건만 잠그지만 UPDATE 문장을 위해 적절히 인덱스가 준비되어 있지 않다면 각 클라이언트간의 동시성이 상당히 떨어져 한 세션에서 UPDATE 작업을 하고 있는 중에는 다른 클라이언트는 그 테이블을 업데이트하지 못하고 기다려야 하는 상황이 발생할 것이다. 
 
@@ -283,11 +283,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyOTI3OTc3MiwyMDA3NDU0NzUxLC03NT
-I0MjgzNDQsLTE0MzA2NDkxNjIsNDMyNTA4ODU4LDE0ODM3OTc3
-NCwtNTc2OTgwNDg4LC0xMzkxMDI4Mzk4LDEwMDkwNzM1ODksLT
-QwMDkyMTY1OSwtMTYxMjc4MTk3NiwtNTA4NjgwNzk2LDQ0NTcz
-ODg4NiwtMTM3MjkzODg0MiwtOTA4NjUwMTc5LC0yMTA3MTA2MT
-M2LDEzOTY5MzEzMTgsNzUzNjIxMzUyLC0xNDk1NjA3NjUwLDE3
-NTMwMTcyODVdfQ==
+eyJoaXN0b3J5IjpbLTc3MTY2NzU4MCwxNTI5Mjc5NzcyLDIwMD
+c0NTQ3NTEsLTc1MjQyODM0NCwtMTQzMDY0OTE2Miw0MzI1MDg4
+NTgsMTQ4Mzc5Nzc0LC01NzY5ODA0ODgsLTEzOTEwMjgzOTgsMT
+AwOTA3MzU4OSwtNDAwOTIxNjU5LC0xNjEyNzgxOTc2LC01MDg2
+ODA3OTYsNDQ1NzM4ODg2LC0xMzcyOTM4ODQyLC05MDg2NTAxNz
+ksLTIxMDcxMDYxMzYsMTM5NjkzMTMxOCw3NTM2MjEzNTIsLTE0
+OTU2MDc2NTBdfQ==
 -->
