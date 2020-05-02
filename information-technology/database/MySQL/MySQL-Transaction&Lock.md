@@ -238,7 +238,6 @@ r.trx_query waiting_query,
 b.trx_id blocking_trx_id,
 b.trx_mysql_thread_id blocking_thread,
 b.trx_query blocking_query
-
 FROM information_schema.innodb_lock_waits w
 INNER JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id
 INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
@@ -278,11 +277,11 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NzIxNTI4NSwxMzg1NDM2ODczLDU2OD
-c5Nzc4NCwxNzAxMjM0NDkxLDE1MjkyNzk3NzIsMjAwNzQ1NDc1
-MSwtNzUyNDI4MzQ0LC0xNDMwNjQ5MTYyLDQzMjUwODg1OCwxND
-gzNzk3NzQsLTU3Njk4MDQ4OCwtMTM5MTAyODM5OCwxMDA5MDcz
-NTg5LC00MDA5MjE2NTksLTE2MTI3ODE5NzYsLTUwODY4MDc5Ni
-w0NDU3Mzg4ODYsLTEzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMjEw
-NzEwNjEzNl19
+eyJoaXN0b3J5IjpbLTEwNzIyMzc0MDUsMTM4NTQzNjg3Myw1Nj
+g3OTc3ODQsMTcwMTIzNDQ5MSwxNTI5Mjc5NzcyLDIwMDc0NTQ3
+NTEsLTc1MjQyODM0NCwtMTQzMDY0OTE2Miw0MzI1MDg4NTgsMT
+Q4Mzc5Nzc0LC01NzY5ODA0ODgsLTEzOTEwMjgzOTgsMTAwOTA3
+MzU4OSwtNDAwOTIxNjU5LC0xNjEyNzgxOTc2LC01MDg2ODA3OT
+YsNDQ1NzM4ODg2LC0xMzcyOTM4ODQyLC05MDg2NTAxNzksLTIx
+MDcxMDYxMzZdfQ==
 -->
