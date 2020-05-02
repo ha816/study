@@ -226,15 +226,15 @@ MySQL 5.0이하 버전에서는 **레코드 잠금에 대한 메타정보(딕셔
 
 ```
 SHOW PROCESSLIST; 
-SHOW ENGINE INNODB STATUS; //5.0 이하버전
 SELECT * FROM information_schema.innodb_locks; // 어떤 잠금이 존재하는지를 관리한다. 잠금이나 대기가 발생할 경우, InnoDB 스토리지 엔진에서 관련 정보를 계속 테이블로 업데이트.
 SELECT * FROM information_schema.innodb_trx; // 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
 ```
 
 --- 
-#### 5.0이하 버전에서 잠금 확인 및 해제
-SHOW ENGINE INNODB STATUS 명령어를 실행 
+5.0이하 버전에서 잠금 확인 및 해제를 확인하고 싶다면 SHOW ENGINE INNODB STATUS 쿼리를 실행하면 된다.
+ 
 ```
+SHOW ENGINE INNODB STATUS; //5.0 이하버전
 --- TRANSACTION 0 1770, not started, OS thread id 5472
 MySQL thread id 5, query id 225 localhost 127.0.0.1 root
 show engine innodb status
@@ -246,7 +246,7 @@ UPDATE ...
 WHERE ....
 ...  생략
 ```
----TRANSACTION으로 시작하는 줄 하나가 커넥션에 대한 정보를 의미한다. 바로 뒤의 숫자 2개는 트랜잭션 번호를 의미하고, 그 뒤의 ACTIVE ... sec, not started는 트랜잭션 상태를 표시한다. 그리고 바로 다음 MySQL thread id <숫자> 줄이 있는데 숫자 값이 트랜잭션을 실행하고 있는 프로세스 아이디(커넥션 번호)이다.
+--- TRANSACTION으로 시작하는 줄 하나가 커넥션에 대한 정보를 의미한다. 바로 뒤의 숫자 2개는 트랜잭션 번호를 의미하고, 그 뒤의 ACTIVE ... sec, not started는 트랜잭션 상태를 표시한다. 그리고 바로 다음 MySQL thread id <숫자> 줄이 있는데 숫자 값이 트랜잭션을 실행하고 있는 프로세스 아이디(커넥션 번호)이다.
 
 **중요한 것은 레코드를 오랫동안 잠그고 있는 프로세스가 있는지 여부**이다. 최대한 트랜잭션이 오랫동안 실행되고 있는 줄을 찾으면 되는데 트랜잭션 상태가 ACTIVE이고, 그 뒤 시간값이 최대한 큰 값을 가진 트랜잭션을 찾으면 된다.
 
@@ -280,7 +280,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MDIyNDQwNywxMzg1NDM2ODczLDU2OD
+eyJoaXN0b3J5IjpbLTQ0Njc2MDA2NCwxMzg1NDM2ODczLDU2OD
 c5Nzc4NCwxNzAxMjM0NDkxLDE1MjkyNzk3NzIsMjAwNzQ1NDc1
 MSwtNzUyNDI4MzQ0LC0xNDMwNjQ5MTYyLDQzMjUwODg1OCwxND
 gzNzk3NzQsLTU3Njk4MDQ4OCwtMTM5MTAyODM5OCwxMDA5MDcz
