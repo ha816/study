@@ -220,14 +220,15 @@ WHERE first_name = 'Gorgi' AND last_name= 'Klassen'
 
 ### 레코드 수준의 잠금 확인 및 해제
 
-InnoDB 스토리지 엔진을 사용하는 **테이블의 레코드 수준 잠근은 테이블 수준 잠금보다는 더 복잡하다.** 테이블 잠금에서는 잠금의 대상이 테이블이므로 단위와 크기가 커서 문제의 원인이 쉽게 발견되고 해결도 쉽다. 그에 반해 레코드 수준 잠금은 레코드에 걸리므로 **그 레코드가 자주 사용되지 않는 다면 오랜 시간 동안 잠겨진 상태로 남아 있어도 잘 발견되지 않는다.**
+InnoDB 스토리지 엔진을 사용하는 **테이블의 레코드 수준 잠근은 테이블 수준 잠금보다는 더 복잡하다.** 테이블 잠금에서는 잠금의 대상이 테이블이므로 크기가 커서 문제의 원인이 쉽게 발견되고 해결도 쉽다. 그에 반해 레코드 수준 잠금은 레코드에 걸리므로 **그 레코드가 자주 사용되지 않는 다면 오랜 시간 동안 잠겨진 상태로 남아 있어도 잘 발견되지 않는다.**
 
-MySQL 5.0이하 버전에서는 **레코드 잠금에 대한 메타정보(딕셔너리 테이블)**을 제공하지 않기 때문에 잠금 확인이 어렵다. 하지만 5.1 InnoDB 플러그인 버전부터는 레코드 잠금과 대기에 대한 조회가 가능하므로 쿼리하나만 실행해보면 잠금과 잠금 대기를 바로 확인할 수 있다.
+MySQL 5.0이하 버전에서는 **레코드 잠금에 대한 메타정보(딕셔너리 테이블)** 을 제공하지 않기 때문에 잠금 확인이 어렵다. 하지만 5.1 InnoDB 플러그인 버전부터는 레코드 잠금과 대기에 대한 조회가 가능하므로 쿼리하나만 실행해보면 특정 레코드의 잠금과 잠금 대기를 바로 확인할 수 있다.
 
 ```
 SHOW PROCESSLIST; 
 SHOW ENGINE INNODB STATUS; //5.0 이하버전
-SELECT * FROM information_schema.innodb_locks; // 어떤 잠금이 존재하는지를 관리한다. 잠금이나 대기가 발생할 경우, InnoDB 스토리지 엔진에서 관련 정보를 계속 테이블로 업데이트.SELECT * FROM information_schema.innodb_trx; // 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
+SELECT * FROM information_schema.innodb_locks; // 어떤 잠금이 존재하는지를 관리한다. 잠금이나 대기가 발생할 경우, InnoDB 스토리지 엔진에서 관련 정보를 계속 테이블로 업데이트.
+SELECT * FROM information_schema.innodb_trx; // 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
 ```
 
 --- 
@@ -279,11 +280,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NTQzNjg3Myw1Njg3OTc3ODQsMTcwMT
-IzNDQ5MSwxNTI5Mjc5NzcyLDIwMDc0NTQ3NTEsLTc1MjQyODM0
-NCwtMTQzMDY0OTE2Miw0MzI1MDg4NTgsMTQ4Mzc5Nzc0LC01Nz
-Y5ODA0ODgsLTEzOTEwMjgzOTgsMTAwOTA3MzU4OSwtNDAwOTIx
-NjU5LC0xNjEyNzgxOTc2LC01MDg2ODA3OTYsNDQ1NzM4ODg2LC
-0xMzcyOTM4ODQyLC05MDg2NTAxNzksLTIxMDcxMDYxMzYsMTM5
-NjkzMTMxOF19
+eyJoaXN0b3J5IjpbMTI3MDIyNDQwNywxMzg1NDM2ODczLDU2OD
+c5Nzc4NCwxNzAxMjM0NDkxLDE1MjkyNzk3NzIsMjAwNzQ1NDc1
+MSwtNzUyNDI4MzQ0LC0xNDMwNjQ5MTYyLDQzMjUwODg1OCwxND
+gzNzk3NzQsLTU3Njk4MDQ4OCwtMTM5MTAyODM5OCwxMDA5MDcz
+NTg5LC00MDA5MjE2NTksLTE2MTI3ODE5NzYsLTUwODY4MDc5Ni
+w0NDU3Mzg4ODYsLTEzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMjEw
+NzEwNjEzNl19
 -->
