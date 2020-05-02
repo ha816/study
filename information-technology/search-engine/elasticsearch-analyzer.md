@@ -56,9 +56,9 @@ TOKENIZER FILTER
 : 토크나이저 필터는 분석기를 구성할때 하나만 사용할 수 있으며 텍스트를 어떻게 나눌것인지 정의한다. 한글을 분해할 때는 한글 형태소 분석기의 토크나이저를 사용하고, 영문을 분석할때는 영문 형태소 분석기를 사용하면 된다.
 
 TOKEN FILTER
-: 토큰필터는 토큰화된 단어를 하나씩 ㅌ
+: 토큰필터는 토큰화된 단어를 하나씩 필터링하여 사용자가 원하는 토큰으로 변환한다. 예를들어, 불필요한 단어를 제거하거나 동의어 사전을 만들어 단어를 추가하거나 영문 단어를 소문자로 변환하는 등의 작업을 수행할 수 있다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MzY0ODgzOV19
+eyJoaXN0b3J5IjpbLTEzNzYwNjA1MzNdfQ==
 -->
