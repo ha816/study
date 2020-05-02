@@ -140,8 +140,11 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 #### Stemmer 토큰 필터
 
+Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토큰을 영단어 원형으로 변환한다.  
 
+#### Synonym 토큰 필터
 
+동의어 처리를 할 수 있는 필터다. 동의어에 대한 설
  
 
 
@@ -159,7 +162,7 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQwOTQ2MjA3LDU5NTMyNTI1MSwtMTQ2NT
-QxNzA4MCwxNDY4Mzk3MTM0LC05Nzg5MDIwMDgsMzIwNTg0NzE5
-LC00MDkyMTE5NTYsLTEzNzYwNjA1MzNdfQ==
+eyJoaXN0b3J5IjpbLTQyODYxMzQ4Nyw1OTUzMjUyNTEsLTE0Nj
+U0MTcwODAsMTQ2ODM5NzEzNCwtOTc4OTAyMDA4LDMyMDU4NDcx
+OSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX0=
 -->
