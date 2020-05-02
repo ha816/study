@@ -236,7 +236,7 @@ r.trx_query waiting_query,
 b.trx_id blocking_trx_id,
 b.trx_mysql_thread_id blocking_thread,
 b.trx_query blocking_query
-FROM information_schema.innodb_lock_waits w
+FROM information_schema.innodb_lock_waits w // 어떤 잠금이 대기 상태인지 관리하는 테이블.
 INNER JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id
 INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 // 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
@@ -256,7 +256,7 @@ LOCK WAIT 2 lock struct(s), heap size 320
 MySQL thread id 3, query id 224 localhost 127.0.0.1 root Updating
 UPDATE ...
 WHERE ....
-...  생략
+...
 ```
 --- TRANSACTION으로 시작하는 줄 하나가 커넥션에 대한 정보를 의미한다. 바로 뒤의 숫자 2개는 트랜잭션 번호를 의미하고, 그 뒤의 ACTIVE ... sec, not started는 트랜잭션 상태를 표시한다. 그리고 바로 다음 MySQL thread id <숫자> 줄이 있는데 숫자 값이 트랜잭션을 실행하고 있는 프로세스 아이디(커넥션 번호)이다.
 
@@ -276,7 +276,7 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njk5MjA2NTMsMTUxODY0NzgyMywxMz
+eyJoaXN0b3J5IjpbLTIwNDUwMjU4MjAsMTUxODY0NzgyMywxMz
 g1NDM2ODczLDU2ODc5Nzc4NCwxNzAxMjM0NDkxLDE1MjkyNzk3
 NzIsMjAwNzQ1NDc1MSwtNzUyNDI4MzQ0LC0xNDMwNjQ5MTYyLD
 QzMjUwODg1OCwxNDgzNzk3NzQsLTU3Njk4MDQ4OCwtMTM5MTAy
