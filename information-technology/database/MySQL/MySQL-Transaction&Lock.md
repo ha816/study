@@ -230,6 +230,20 @@ SELECT * FROM information_schema.innodb_locks; // 어떤 잠금이 존재하는�
 SELECT * FROM information_schema.innodb_trx; // 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
 ```
 
+```
+SELECT
+r.trx_id waiting_trx_id,
+r.trx_mysql_thread_it waiting_thread,
+r.trx_query waiting_query,
+b.trx_id blocking_trx_id,
+b.trx_mysql_thread_id blocking_thread,
+b.trx_query blocking_query
+
+FROM information_schema.innodb_lock_waits w
+INNER JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id
+INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
+```
+
 --- 
 5.0이하 버전에서 잠금 확인 및 해제를 확인하고 싶다면 SHOW ENGINE INNODB STATUS 쿼리를 실행하면 된다.
  
@@ -252,22 +266,6 @@ WHERE ....
 
 이 와 같은 방법으로 문제의 원인으로 예상되는 트랜잭션을 찾으면, 해당 트랜잭션의 프로세스를 KILL 명령으로 종료하자. 만약 근본적인 원인인 트랜잭션을 찾기가 어렵다면 오래 기다리고 있는 트랜잭션을 모두 종료해버리자.
 
-#### 5.1버전 이상
-
-```
-SELECT
-r.trx_id waiting_trx_id,
-r.trx_mysql_thread_it waiting_thread,
-r.trx_query waiting_query,
-b.trx_id blocking_trx_id,
-b.trx_mysql_thread_id blocking_thread,
-b.trx_query blocking_query
-
-FROM information_schema.innodb_lock_waits w
-INNER JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id
-INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
-```
-
 
 
 
@@ -280,7 +278,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0Njc2MDA2NCwxMzg1NDM2ODczLDU2OD
+eyJoaXN0b3J5IjpbMTQ3NzIxNTI4NSwxMzg1NDM2ODczLDU2OD
 c5Nzc4NCwxNzAxMjM0NDkxLDE1MjkyNzk3NzIsMjAwNzQ1NDc1
 MSwtNzUyNDI4MzQ0LC0xNDMwNjQ5MTYyLDQzMjUwODg1OCwxND
 gzNzk3NzQsLTU3Njk4MDQ4OCwtMTM5MTAyODM5OCwxMDA5MDcz
