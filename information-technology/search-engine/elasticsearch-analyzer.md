@@ -60,7 +60,7 @@ TOKEN FILTER
 
 문장 -> CHRACTER FILTER-> 가공된 문장 -> TOKENIZER FILTER -> Terms -> TOKEN FILTER(동의어 사전) -> 변경된 Terms -> index
 
-이제 간단한 분석기를 정의해 보자.
+이제 간단한 분석기를 정의해 보자. 아래 분석기는 들어온 텍스트에서 html 태그를 제거하고 특수문자 혹은 공백을 기준으로 토큰나이징을 한다. 마지막으로 각 토큰을 소문자로 변환하여 인덱스로 저장한다.
 
 ```
 PUT /movie_analyzer 
@@ -81,12 +81,14 @@ PUT /movie_analyzer
 			}
 		}
 	}
-
 }
 ```
 
+### 분석기 사용법
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDI3Mzg3MDUsLTQwOTIxMTk1NiwtMT
-M3NjA2MDUzM119
+eyJoaXN0b3J5IjpbMzIwNTg0NzE5LC00MDkyMTE5NTYsLTEzNz
+YwNjA1MzNdfQ==
 -->
