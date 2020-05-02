@@ -177,7 +177,7 @@ RENAME TABLE tab_a TO tab_b
 
 ### Gap Lock(갭 락)
 
-갭락은 레코드와 레코드 사이의 간격을 잠그는 락이다. 레코드 자체에 대해서는 잠그지 않는다. 
+갭락은 레코드와 레코드사이의 간격()을 잠그는 락이다. 레코드 자체에 대해서는 잠그지 않는다. 
 
 갭락은 Master 와 Slave의 데이터 동기화 (더 정확히는 Binary 로그의 정확한 기록을 위해서)  및 Phantom 레코드 방지를 위해 사용한다.
 InnoDB에서 대부분의 변경 작업(update)은 Gap 락을 유발한다. Gap 락은 순수하게 모든 트랜잭션을 대상으로 해당 Gap에 변경 작업을 하지 못하도록 하는 예방용으로만 사용다. 
@@ -286,11 +286,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDE0NjAyMTcsMTQ4Mzc5Nzc0LC01Nz
-Y5ODA0ODgsLTEzOTEwMjgzOTgsMTAwOTA3MzU4OSwtNDAwOTIx
-NjU5LC0xNjEyNzgxOTc2LC01MDg2ODA3OTYsNDQ1NzM4ODg2LC
-0xMzcyOTM4ODQyLC05MDg2NTAxNzksLTIxMDcxMDYxMzYsMTM5
-NjkzMTMxOCw3NTM2MjEzNTIsLTE0OTU2MDc2NTAsMTc1MzAxNz
-I4NSwtODk4MDc4NDY2LC0xNTI4MDE2NzQzLDI5MzI4OTE5MSw5
-MzUwMjUxMTFdfQ==
+eyJoaXN0b3J5IjpbMTAzMjM0Nzk3MiwxNDgzNzk3NzQsLTU3Nj
+k4MDQ4OCwtMTM5MTAyODM5OCwxMDA5MDczNTg5LC00MDA5MjE2
+NTksLTE2MTI3ODE5NzYsLTUwODY4MDc5Niw0NDU3Mzg4ODYsLT
+EzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMjEwNzEwNjEzNiwxMzk2
+OTMxMzE4LDc1MzYyMTM1MiwtMTQ5NTYwNzY1MCwxNzUzMDE3Mj
+g1LC04OTgwNzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5MTkxLDkz
+NTAyNTExMV19
 -->
