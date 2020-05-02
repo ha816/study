@@ -34,7 +34,7 @@ select(A') & \\
 &commit \\
 \end{bmatrix}$$
 
-T1, T2 트랜잭션이 존재하고 T1은 데이터 A를 읽는 작업을 수행하고 T2는 A를 A'으로 수정하는 작업을 한다. T2의 update 작업으로 데이터가 변경되었고 commit이 되기 전에 T1이 select 작업을 하면 변경된 
+T1, T2 트랜잭션이 존재하고 T1은 데이터 A를 읽는 작업을 수행하고 T2는 A를 A'으로 수정하는 작업을 한다. T2의 update 작업으로 데이터가 변경되었고 commit이 되기 전에 T1이 select 작업을 하면 변경된 데이터 A'을 가져오게 된다. 즉 commit이 되지 않은 단순히 현재 변경된 데이터를 사용하다 보니 이와 같은 오염된 
 
 ### READ COMMITED
 
@@ -271,7 +271,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NjE2MjMwNSw3NTM2MjEzNTIsLTE0OT
+eyJoaXN0b3J5IjpbMTUyOTM4ODAyMiw3NTM2MjEzNTIsLTE0OT
 U2MDc2NTAsMTc1MzAxNzI4NSwtODk4MDc4NDY2LC0xNTI4MDE2
 NzQzLDI5MzI4OTE5MSw5MzUwMjUxMTEsMTc1MjMzOTc3Niw3MD
 k5OTMwMTAsNTA1NzMzMjkyLDExNzUwMzY2ODQsMjA0MTcyODE3
