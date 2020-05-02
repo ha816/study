@@ -60,10 +60,22 @@ TOKEN FILTER
 
 문장 -> CHRACTER FILTER-> 가공된 문장 -> TOKENIZER FILTER -> Terms -> TOKEN FILTER(동의어 사전) -> 변경된 Terms -> index
 
-dlwp rkseksgks qnstjrr
+이제 간단한 분석기를 정의해 보자.
+
+```
+PUT /movie_analyzer 
+{
+	"settings": {
+		"index": {
+			"number_of_shards":5,
+		}
+
+	}
+
+}
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTI4NzkzMjksLTEzNzYwNjA1MzNdfQ
-==
+eyJoaXN0b3J5IjpbLTQwOTIxMTk1NiwtMTM3NjA2MDUzM119
 -->
