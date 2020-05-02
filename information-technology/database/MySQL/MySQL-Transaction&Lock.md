@@ -54,6 +54,11 @@ select(A) & \\
 &update(A \rightarrow A') \\
 &commit \\
 select(A') & \\
+&update(A' \rightarrow A'') \\
+&commit \\
+select(A'') & \\
+&...\\
+...\\
 \end{bmatrix}$$
 
 T2의 update 작업으로 데이터가 변경되었고 commit마저 되었다고 하자. 현재 격리 수준이 READ_COMMITED 격리 수준 이하라면 T1에서 select 작업을 할때마다 commit이 된 변경 데이터를 가져오게 된다. 
@@ -284,7 +289,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI4MzQ1OTQzLC05MDg2NTAxNzksLTIxMD
+eyJoaXN0b3J5IjpbNTAxMzI1MjA4LC05MDg2NTAxNzksLTIxMD
 cxMDYxMzYsMTM5NjkzMTMxOCw3NTM2MjEzNTIsLTE0OTU2MDc2
 NTAsMTc1MzAxNzI4NSwtODk4MDc4NDY2LC0xNTI4MDE2NzQzLD
 I5MzI4OTE5MSw5MzUwMjUxMTEsMTc1MjMzOTc3Niw3MDk5OTMw
