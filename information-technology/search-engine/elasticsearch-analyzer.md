@@ -85,13 +85,16 @@ PUT /movie_analyzer
 ```
 
 Standard Analyzer
-: 인덱스를 생성할때 settings에 ana
+: 인덱스를 생성할때 settings에 analyzer를 정의할 수 있는데, 별다른 정의를 하지 않고 필드의 데이터 타입을 Text 데이터 타입으한다면 이 분석기를 사용한다. 
+
+Whitespace Analyzer
+: 공백 문자열을 기준으로 토큰을 분리하는 매우 간닪 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDA0MzQ1MTIsMzIwNTg0NzE5LC00MD
-kyMTE5NTYsLTEzNzYwNjA1MzNdfQ==
+eyJoaXN0b3J5IjpbMjM5Mjg2MDM4LDMyMDU4NDcxOSwtNDA5Mj
+ExOTU2LC0xMzc2MDYwNTMzXX0=
 -->
