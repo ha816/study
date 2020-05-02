@@ -46,7 +46,7 @@ READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제
 
 #### UNREPEATBLE READ 
 
-UNREPEATBLE READ은 **하나의 트랜잭션 내에서 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같지 않는 경우**를 말한다. 즉 UNREPEATBLE READ상황에서는 상황에 따라 동일한 SELECT 쿼리를 수행하
+UNREPEATBLE READ은 **하나의 트랜잭션 내에서 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같지 않는 경우**를 말한다. 즉 UNREPEATBLE READ에서는 상황에 따라 동일한 SELECT 쿼리를 수행했을때 결과가 같지 않을 수 있으므로 주의해야 한다. 
 
 $$\begin{bmatrix}
 T1(id = 6) & T2(id = 9)\\
@@ -288,11 +288,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTczMDUyNjIsLTkwODY1MDE3OSwtMj
-EwNzEwNjEzNiwxMzk2OTMxMzE4LDc1MzYyMTM1MiwtMTQ5NTYw
-NzY1MCwxNzUzMDE3Mjg1LC04OTgwNzg0NjYsLTE1MjgwMTY3ND
-MsMjkzMjg5MTkxLDkzNTAyNTExMSwxNzUyMzM5Nzc2LDcwOTk5
-MzAxMCw1MDU3MzMyOTIsMTE3NTAzNjY4NCwyMDQxNzI4MTc2LD
-E2OTA0ODkxNTksLTE0NDI1MTg4MTQsLTExMjk3NzU2NTgsLTk1
-MTYyODM2XX0=
+eyJoaXN0b3J5IjpbNjc4MjQ0MTc3LC05MDg2NTAxNzksLTIxMD
+cxMDYxMzYsMTM5NjkzMTMxOCw3NTM2MjEzNTIsLTE0OTU2MDc2
+NTAsMTc1MzAxNzI4NSwtODk4MDc4NDY2LC0xNTI4MDE2NzQzLD
+I5MzI4OTE5MSw5MzUwMjUxMTEsMTc1MjMzOTc3Niw3MDk5OTMw
+MTAsNTA1NzMzMjkyLDExNzUwMzY2ODQsMjA0MTcyODE3NiwxNj
+kwNDg5MTU5LC0xNDQyNTE4ODE0LC0xMTI5Nzc1NjU4LC05NTE2
+MjgzNl19
 -->
