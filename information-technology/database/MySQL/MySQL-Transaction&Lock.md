@@ -198,7 +198,7 @@ AUTO_INCREMENT 락은 명시적으로 획득하고 해제하는 방법이 없다
 
 ### InnoDB 인덱스와 잠금
 
-InnoDB의 잠금과 인덱스는 상당히 밀접한 관계가 있다. 왜냐하면 사실 **InnoDB의 잠금은 레코드를 잠그는 것이 아니라 인덱스를 잠그는 방식이다.** 즉, 변경 대상 레코드를 찾기 위해 검색한 인덱스의 레코드를 모두 잠가야 한다. 
+InnoDB의 잠금과 인덱스는 상당히 밀접한 관계가 있다. 왜냐하면 사실 **InnoDB의 잠금은 레코드를 잠그는 것이 아니라 인덱스를 잠그는 방식이다.** 즉, 변경 대상 레코드를 찾기 위해 사용한 모든 인덱스를 잠가야 한다. 
 
 ```
 SELECT * FROM employees WHERE first_name = 'Georgi'; //253건
@@ -279,11 +279,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MzIzNzAxMCwxNzAxMjM0NDkxLDE1Mj
-kyNzk3NzIsMjAwNzQ1NDc1MSwtNzUyNDI4MzQ0LC0xNDMwNjQ5
-MTYyLDQzMjUwODg1OCwxNDgzNzk3NzQsLTU3Njk4MDQ4OCwtMT
-M5MTAyODM5OCwxMDA5MDczNTg5LC00MDA5MjE2NTksLTE2MTI3
-ODE5NzYsLTUwODY4MDc5Niw0NDU3Mzg4ODYsLTEzNzI5Mzg4ND
-IsLTkwODY1MDE3OSwtMjEwNzEwNjEzNiwxMzk2OTMxMzE4LDc1
-MzYyMTM1Ml19
+eyJoaXN0b3J5IjpbLTE4OTQ0MTYyNzIsMTcwMTIzNDQ5MSwxNT
+I5Mjc5NzcyLDIwMDc0NTQ3NTEsLTc1MjQyODM0NCwtMTQzMDY0
+OTE2Miw0MzI1MDg4NTgsMTQ4Mzc5Nzc0LC01NzY5ODA0ODgsLT
+EzOTEwMjgzOTgsMTAwOTA3MzU4OSwtNDAwOTIxNjU5LC0xNjEy
+NzgxOTc2LC01MDg2ODA3OTYsNDQ1NzM4ODg2LC0xMzcyOTM4OD
+QyLC05MDg2NTAxNzksLTIxMDcxMDYxMzYsMTM5NjkzMTMxOCw3
+NTM2MjEzNTJdfQ==
 -->
