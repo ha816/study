@@ -179,8 +179,7 @@ RENAME TABLE tab_a TO tab_b
 
 갭락은 레코드와 레코드 사이 간격(gap)을 잠그는 락이다. 레코드 자체에 대해서는 잠그지 않는다. 갭락은 순수하게 모든 트랜잭션을 대상으로 해당 Gap 간격 사이에 어떠한 변경 작업을 하지 못하도록 하는 예방용으로만 사용한다.
 
-갭락은 Master 와 Slave의 데이터 동기화 (더 정확히는 Binary 로그의 정확한 기록을 위해서)  및 Phantom 레코드 방지를 위해 사용한다.
-InnoDB에서 대부분의 변경 작업(update)은 Gap 락을 유발한다. 
+갭락은 Master 와 Slave의 데이터 동기화 (더 정확히는 Binary 로그의 정확한 기록을 위해서)  및 Phantom 레코드 방지를 위해 사용한다. 대부분의 변경 작업(update)은 Gap 락을 유발한다. 
 
 ### 넥스트 키 락(Next key lock)
 레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이다.
@@ -286,7 +285,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyODMyOTIzMiwxNDgzNzk3NzQsLTU3Nj
+eyJoaXN0b3J5IjpbMjAwNzk3MzQ4NiwxNDgzNzk3NzQsLTU3Nj
 k4MDQ4OCwtMTM5MTAyODM5OCwxMDA5MDczNTg5LC00MDA5MjE2
 NTksLTE2MTI3ODE5NzYsLTUwODY4MDc5Niw0NDU3Mzg4ODYsLT
 EzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMjEwNzEwNjEzNiwxMzk2
