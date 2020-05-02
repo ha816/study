@@ -207,8 +207,7 @@ SELECT * FROM employees WHERE first_name = 'Georgi' And last_name = 'Klassen'; 1
 UPDATE employees SET 
 WHERE first_name = 'Gorgi' AND last_name= 'Klassen'
 ```
-위 update 문장이 실행되면 최종적으로 1건의 레코드가 수정될 것이다. update where 조건에서 인덱스를 이용할 수 있는 컬럼은 first_name이고 first_name이 'Georgi'인 레코드가 총 253건이기 때문에 이 253건의 레코드가 모두 잠긴다. 이 예제에서는 253건만 잠그지만 UPDATE 문장을 위해 적절히 인덱스가 준비되어 있지 않다면 각 클라이언트간의 동시성이 상당히 떨어져 한 세션에서 UPDATE 작업을 하고 있는 중에는 다른 클라이언트는 그 테이블을 업데이트하지 못하고 기다려야 하는 상황이 발생할 것이다. 
-
+위 update 문장이 실행되면 최종적으로 1건의 레코드가 수정될 것이다. update where 조건에서 인덱스를 이용할 수 있는 컬럼은 first_name이고 first_name이 'Georgi'인 레코드가 총 253건이기 때문에 이 253건의 레코드가 모두 잠긴다. 이 예제에서는 253건만 잠그지만 update 문장을 위해 적절히 인덱스가 준비되어 있지 않다면 
 만약 테이블에 인덱스가 하나도 없다면, 테이블을 풀 스캔하면서 UPDATE 작업을 하는데 이 과정에서는 모든 레코드를 잠그게 된다. 따라서 MySQL의 InnoDB에서는 인덱스 설계가 너무나 중요하다. 
 
 불필요한 레코드 잠금 현상은 InnoDB의 넥스트 키 락 때문에 발생하는 것이다. 하지만 InnoDB에서 네스트 키락을 필요하게 만드는 주 원인은 바로 복제를 위한 바이너리 로그 때문이다. **레코드 기반의 바이너리 로그를 사용하거나 바이너리 로그를 사용하지 않는 경우에는InnoDB의 갭 락이나 넥스트 키 락의 사용을 대폭 줄일 수 있다.** 
@@ -281,11 +280,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE4MTQwMTEsMTUyOTI3OTc3MiwyMDA3ND
-U0NzUxLC03NTI0MjgzNDQsLTE0MzA2NDkxNjIsNDMyNTA4ODU4
-LDE0ODM3OTc3NCwtNTc2OTgwNDg4LC0xMzkxMDI4Mzk4LDEwMD
-kwNzM1ODksLTQwMDkyMTY1OSwtMTYxMjc4MTk3NiwtNTA4Njgw
-Nzk2LDQ0NTczODg4NiwtMTM3MjkzODg0MiwtOTA4NjUwMTc5LC
-0yMTA3MTA2MTM2LDEzOTY5MzEzMTgsNzUzNjIxMzUyLC0xNDk1
-NjA3NjUwXX0=
+eyJoaXN0b3J5IjpbOTA1MDY4NjAwLDE1MjkyNzk3NzIsMjAwNz
+Q1NDc1MSwtNzUyNDI4MzQ0LC0xNDMwNjQ5MTYyLDQzMjUwODg1
+OCwxNDgzNzk3NzQsLTU3Njk4MDQ4OCwtMTM5MTAyODM5OCwxMD
+A5MDczNTg5LC00MDA5MjE2NTksLTE2MTI3ODE5NzYsLTUwODY4
+MDc5Niw0NDU3Mzg4ODYsLTEzNzI5Mzg4NDIsLTkwODY1MDE3OS
+wtMjEwNzEwNjEzNiwxMzk2OTMxMzE4LDc1MzYyMTM1MiwtMTQ5
+NTYwNzY1MF19
 -->
