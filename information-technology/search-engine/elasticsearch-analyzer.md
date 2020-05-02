@@ -136,7 +136,9 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 #### Stop 토큰 필터
 
-사용하지 않을 금지 토큰을 
+사용하지 않을 금지 토큰을 적용시킬때 사용하는 필터이다. 인덱스로 만들고 싶지 않거나 검색되지 않게 하고 싶은 단어를 불용 사전에 등록해서 해당 토큰을 취급하지 않도록 한다. 
+
+#### Stemmer 토큰 필터
 
  
 
@@ -155,7 +157,7 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUzOTc5NDk1LC0xNDY1NDE3MDgwLDE0Nj
+eyJoaXN0b3J5IjpbNTk1MzI1MjUxLC0xNDY1NDE3MDgwLDE0Nj
 gzOTcxMzQsLTk3ODkwMjAwOCwzMjA1ODQ3MTksLTQwOTIxMTk1
 NiwtMTM3NjA2MDUzM119
 -->
