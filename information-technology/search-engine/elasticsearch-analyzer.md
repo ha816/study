@@ -84,11 +84,14 @@ PUT /movie_analyzer
 }
 ```
 
-### 분석기 사용법
+Standard Analyzer
+: 인덱스를 생성할때 settings에 ana
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIwNTg0NzE5LC00MDkyMTE5NTYsLTEzNz
-YwNjA1MzNdfQ==
+eyJoaXN0b3J5IjpbLTE3MDA0MzQ1MTIsMzIwNTg0NzE5LC00MD
+kyMTE5NTYsLTEzNzYwNjA1MzNdfQ==
 -->
