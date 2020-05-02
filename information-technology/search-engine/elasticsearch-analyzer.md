@@ -144,12 +144,11 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 
 #### Synonym 토큰 필터
 
-동의어 처리를 할 수 있는 필터다. 동의어에 대한 설
- 
+동의어 처리를 할 수 있는 필터다. 예를 들어 "Harry"라는 토큰이 들어오면 "해리"라는 동의어로 변환할 수 있다. 
 
+#### Trim 필터
 
-
-
+토큰의 앞뒤로 공백을 제거하는 토큰 필터이다. 
 
 ## 동의어 사전(synonym dictionary)
 
@@ -162,7 +161,7 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODYxMzQ4Nyw1OTUzMjUyNTEsLTE0Nj
+eyJoaXN0b3J5IjpbLTYyMzcyNDkwNSw1OTUzMjUyNTEsLTE0Nj
 U0MTcwODAsMTQ2ODM5NzEzNCwtOTc4OTAyMDA4LDMyMDU4NDcx
 OSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX0=
 -->
