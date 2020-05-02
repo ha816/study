@@ -188,9 +188,9 @@ RENAME TABLE tab_a TO tab_b
 
 ### Auto Increment Lock(자동증가 락)
 
-AUTO_INCREMENT 기능이 사용된 테이블에선 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 저장된 순서대로 증가한 일련번호를 가져야한다. 이를 위해 InnoDB 스토리지 엔진에서는 내부적으로 AUTO_INCREMENT락이라고 하는 테이블 수준의 잠금을 사용한다.
+AUTO_INCREMENT 기능이 사용된 테이블에선 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 순서대로 증가한 일련번호를 가져야한다. 이를 위해 InnoDB 스토리지 엔진에서는 내부적으로 AUTO_INCREMENT 락이라는 테이블 수준의 잠금을 제공한다.
 
-**AUTO_INCREMENT 락은 INSERT와 REPLACE 쿼리 문장과 같이 새로운 레코드를 저장하는 쿼리에서만 필요**하며, **UPDATE나 DELETE 쿼리에서는 걸리지 않는다.** 
+이 락은 INSERT와 REPLACE 쿼리 문장과 같이 새로운 레코드를 입력하는 쿼리에서만 사용한다.  **UPDATE나 DELETE 쿼리에서는 걸리지 않는다.** 
 
 다른 잠금과는 달리, 트랜잭션 관계없이 INSERT나 REPLACE 문장에서 AUTO_INCREMENT 값을 가져오는 순간만 AUTO_INCREMENT 락이 걸렸다가 즉시 해제된다. 
 
@@ -286,11 +286,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzA2NDkxNjIsNDMyNTA4ODU4LDE0OD
-M3OTc3NCwtNTc2OTgwNDg4LC0xMzkxMDI4Mzk4LDEwMDkwNzM1
-ODksLTQwMDkyMTY1OSwtMTYxMjc4MTk3NiwtNTA4NjgwNzk2LD
-Q0NTczODg4NiwtMTM3MjkzODg0MiwtOTA4NjUwMTc5LC0yMTA3
-MTA2MTM2LDEzOTY5MzEzMTgsNzUzNjIxMzUyLC0xNDk1NjA3Nj
-UwLDE3NTMwMTcyODUsLTg5ODA3ODQ2NiwtMTUyODAxNjc0Mywy
-OTMyODkxOTFdfQ==
+eyJoaXN0b3J5IjpbLTc1MjQyODM0NCwtMTQzMDY0OTE2Miw0Mz
+I1MDg4NTgsMTQ4Mzc5Nzc0LC01NzY5ODA0ODgsLTEzOTEwMjgz
+OTgsMTAwOTA3MzU4OSwtNDAwOTIxNjU5LC0xNjEyNzgxOTc2LC
+01MDg2ODA3OTYsNDQ1NzM4ODg2LC0xMzcyOTM4ODQyLC05MDg2
+NTAxNzksLTIxMDcxMDYxMzYsMTM5NjkzMTMxOCw3NTM2MjEzNT
+IsLTE0OTU2MDc2NTAsMTc1MzAxNzI4NSwtODk4MDc4NDY2LC0x
+NTI4MDE2NzQzXX0=
 -->
