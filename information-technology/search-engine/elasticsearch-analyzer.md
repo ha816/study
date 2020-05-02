@@ -140,6 +140,8 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 #### Stemmer 토큰 필터
 
+
+
  
 
 
@@ -157,7 +159,7 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk1MzI1MjUxLC0xNDY1NDE3MDgwLDE0Nj
-gzOTcxMzQsLTk3ODkwMjAwOCwzMjA1ODQ3MTksLTQwOTIxMTk1
-NiwtMTM3NjA2MDUzM119
+eyJoaXN0b3J5IjpbNTQwOTQ2MjA3LDU5NTMyNTI1MSwtMTQ2NT
+QxNzA4MCwxNDY4Mzk3MTM0LC05Nzg5MDIwMDgsMzIwNTg0NzE5
+LC00MDkyMTE5NTYsLTEzNzYwNjA1MzNdfQ==
 -->
