@@ -11,7 +11,7 @@ MySQL에서 트랜잭션을 지원하는 스토리지 엔진은 대표적으로 
 
 트랜잭션은 꼭 필요한 영역에만 최소로 적용하는게 좋다. 프로그램 코드상에서 트랜잭션의 범위를 최소화하라는 의미다. 
 
-## MySQL Isolation Level
+# MySQL Isolation Level
 
 트랜잭션의 격리 수준이란 여러 트랜잭션이 동시에 처리될 때, **특정 트랜잭션이 다른 트랜잭션에서 변경하거나 조회하는 데이터를 볼 수 있도록 허용할지 말지를 결정**하는 것이다. 
 
@@ -125,11 +125,13 @@ SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 �
 | SERIALIZABLE| 더티리드, 반복되지 않은 읽기, 팬텀읽기를 방지한다.|X, X, X| 
 
 
-## MySQL Lock
+# MySQL Lock
 
 **잠금은 동시성을 제어하기 위한 기능**이다. 잠금은 여러 커넥션에서 동시에 동일한 자원(레코드나 테이블)을 요청할 경우 순서대로 한 시점에선 하나의 커넥션에서만 변경할 수 있도록 한다. 
 
 MySQL에서 사용하는 잠금은 크게 **MySQL엔진 레벨**과 **스토리지 엔진 레벨**로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호에는 영향을 미치지 않는다. 
+
+## MySQL Engine Lock(엔진 레벨)
 
 ### Global Lock(글로벌 락)
 
@@ -279,11 +281,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI0NDMzNDM1LC00MDA5MjE2NTksLTE2MT
-I3ODE5NzYsLTUwODY4MDc5Niw0NDU3Mzg4ODYsLTEzNzI5Mzg4
-NDIsLTkwODY1MDE3OSwtMjEwNzEwNjEzNiwxMzk2OTMxMzE4LD
-c1MzYyMTM1MiwtMTQ5NTYwNzY1MCwxNzUzMDE3Mjg1LC04OTgw
-Nzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5MTkxLDkzNTAyNTExMS
-wxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIsMTE3NTAz
-NjY4NF19
+eyJoaXN0b3J5IjpbMTAwOTA3MzU4OSwtNDAwOTIxNjU5LC0xNj
+EyNzgxOTc2LC01MDg2ODA3OTYsNDQ1NzM4ODg2LC0xMzcyOTM4
+ODQyLC05MDg2NTAxNzksLTIxMDcxMDYxMzYsMTM5NjkzMTMxOC
+w3NTM2MjEzNTIsLTE0OTU2MDc2NTAsMTc1MzAxNzI4NSwtODk4
+MDc4NDY2LC0xNTI4MDE2NzQzLDI5MzI4OTE5MSw5MzUwMjUxMT
+EsMTc1MjMzOTc3Niw3MDk5OTMwMTAsNTA1NzMzMjkyLDExNzUw
+MzY2ODRdfQ==
 -->
