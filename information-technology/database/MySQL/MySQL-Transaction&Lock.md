@@ -131,13 +131,13 @@ SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 �
 
 MySQL에서 사용하는 잠금은 크게 **MySQL엔진 레벨**과 **스토리지 엔진 레벨**로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호에는 영향을 미치지 않는다. 
 
-### Global Rock(글로벌 락)
+### Global Lock(글로벌 락)
 
 글로벌 락은 "FLUSH TABLES WITH READ LOCK"이라는 명령으로만 획들 할 수 있으며, MySQL에서 제공하는 잠금 가운데 가장 범위가 크다. 한 세션에서 글로벌 락을 얻으면 다른 세션에서는 SELECT를 제외한 대부분의 DDL 문장이나 DML문장을 실행할 경우, 락이 풀릴때 까지 대기로 남는다.
 
 글로벌 락의 영향은 MySQL 전체 서버이며, 테이블이나 데이터베이스가 다르더라도 동일하게 영향을 미친다. 여러 데이터 베이스에 존재하는 테이블에 대해서 mysqldump로 일괄된 백업을 받아야 할때 글로벌 락을 사용한다.
 
-### Table Rock(테이블 락)
+### Table Lock(테이블 락)
 
 개별 테이블 단위로 설정되는 잠금이다. 명시적이나 또는 묵시적으로 특정 테이블의 락을 얻을 수 있다. 
 명시적 방법은 아래와 같다. 명시적 테이블 락도 특별한 상황이 아니면 거의 사용할 필요가 없다. 
@@ -147,7 +147,7 @@ UNLOCK TABLES
 ```
 묵시적인 테이블 락은 테이블에 **데이터를 변경하는 쿼리를 실행**하면 발생한다. MySQL 서버가 데이터가 변경되는 테이블에 잠금을 설정하고 데이터 변경 후, 해제를 한다. 즉 묵시적 테이블 락은 자동적으로 얻고 해제 된다. InnoDB에서는 레코드 기반의 잠금을 제공하기 때문에 데이터 변경 쿼리로 테이블 락이 발생하지는 않는다. 더 정확히는 InnoDB 테이블에도 테이블 락이 설정되지만, 데부분의 데이터 변경 쿼리(DML은 무시되고 스키마를 변경하는 쿼리(DDL)에만 영향을 미친다.
 
-### 유저 락(USER-LEVEL LOCK)
+### User Rock(유저 락)
 
 유저락(USER-LEVEL LOCK)은 잠금 대상이 테이블이나 레코드와 같은 데이터 베이스 컴포넌트가 아니다. 유저락(USER-LEVEL LOCK)은 단순히 사용자가 지정한 문자열(String)로 락을 획득하고 반납한다. 즉 String으로 주어진 특정 이름으로 락을 얻고 해제한다. 
 
@@ -156,12 +156,12 @@ GET_LOCK 함수를 이용해 임의로 잠금을 설정할 수 있다. 유저락
 
 ### 네임 락(Name Lock)
 
-데이터 베이스 객체(테이블이나 뷰)의 이름을 변경하는 경우 획득하는 잠금.
-네임 락은 명시적으로 획득하거나 해제하는 게 아니다.
+데이터 베이스 객체(테이블이나 뷰)의 이름을 변경하는 경우 획득하는 잠금이다. 그래서 네밍 락이라 부른다.
+네임 락은 명시적으로 획득하거나 해제할 수 없다. 아래와  같이 테이블의 이름을 변경하는 경우 자동으로 획득하는 잠금이다. 
 ```
 RENAME TABLE tab_a TO tab_b
 ```
-위와 같이 테이블의 이름을 변경하는 경우 자동으로 획득하는 잠금이다.
+
 
 
 ## InnoDB 잠금(스토리지 엔진 레벨)
@@ -281,11 +281,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTI3ODE5NzYsLTUwODY4MDc5Niw0ND
-U3Mzg4ODYsLTEzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMjEwNzEw
-NjEzNiwxMzk2OTMxMzE4LDc1MzYyMTM1MiwtMTQ5NTYwNzY1MC
-wxNzUzMDE3Mjg1LC04OTgwNzg0NjYsLTE1MjgwMTY3NDMsMjkz
-Mjg5MTkxLDkzNTAyNTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAxMC
-w1MDU3MzMyOTIsMTE3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OTA0
-ODkxNTldfQ==
+eyJoaXN0b3J5IjpbLTQwMDkyMTY1OSwtMTYxMjc4MTk3NiwtNT
+A4NjgwNzk2LDQ0NTczODg4NiwtMTM3MjkzODg0MiwtOTA4NjUw
+MTc5LC0yMTA3MTA2MTM2LDEzOTY5MzEzMTgsNzUzNjIxMzUyLC
+0xNDk1NjA3NjUwLDE3NTMwMTcyODUsLTg5ODA3ODQ2NiwtMTUy
+ODAxNjc0MywyOTMyODkxOTEsOTM1MDI1MTExLDE3NTIzMzk3Nz
+YsNzA5OTkzMDEwLDUwNTczMzI5MiwxMTc1MDM2Njg0LDIwNDE3
+MjgxNzZdfQ==
 -->
