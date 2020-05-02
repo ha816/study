@@ -182,11 +182,11 @@ RENAME TABLE tab_a TO tab_b
 갭락은 Master 와 Slave의 데이터 동기화 (더 정확히는 Binary 로그의 정확한 기록을 위해서)  및 Phantom 레코드 방지를 위해 사용한다.
 
 ### 넥스트 키 락(Next Key Lock)
-레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 Binary 로그에 기록되는 로그의 데이터의 정합성을 위해 사용한다. 이 정합성은 Master에서 수정된 결과에 대한 로그 데이터와 Slave에서 수정된 결과가 일치해야 한다는 것을 보장한다.
+레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 Binary 로그에 기록되는 로그의 데이터의 정합성을 위해 사용한다. 이 정합성은 Master에서 수정된 결과에 대한 로그 데이터와 Slave에서 수정된 결과가 일치해야 한다는 것을 말한다.
 
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
-### 자동증가 락(Auto increment lock)
+### Auto Increment Lock(자동증가 락)
 자동 증가하는 숫자 값을 추출하기 위해 AUTO_INCREMENT라는 컬럼 속성이 존재한다. AUTO_INCREMENT컬럼이 사용된 테이블에 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 저장된 순서대로 증가한 일련번호를 가져야한다. 이를 위해 InnoDB 스토리지 엔진에서는 내부적으로 AUTO_INCREMENT락이라고 하는 테이블 수준의 잠금을 사용한다.
 
 **AUTO_INCREMENT 락은 INSERT와 REPLACE 쿼리 문장과 같이 새로운 레코드를 저장하는 쿼리에서만 필요**하며, **UPDATE나 DELETE 쿼리에서는 걸리지 않는다.** 
@@ -285,7 +285,7 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNzM1NjE1Miw0MzI1MDg4NTgsMTQ4Mz
+eyJoaXN0b3J5IjpbMTUzOTcwNDA0Myw0MzI1MDg4NTgsMTQ4Mz
 c5Nzc0LC01NzY5ODA0ODgsLTEzOTEwMjgzOTgsMTAwOTA3MzU4
 OSwtNDAwOTIxNjU5LC0xNjEyNzgxOTc2LC01MDg2ODA3OTYsND
 Q1NzM4ODg2LC0xMzcyOTM4ODQyLC05MDg2NTAxNzksLTIxMDcx
