@@ -60,9 +60,10 @@ TOKEN FILTER
 
 문장 -> CHRACTER FILTER-> 가공된 문장 -> TOKENIZER FILTER -> Terms -> TOKEN FILTER(동의어 사전) -> 변경된 Terms -> index
 
-
+dlwp rkseksgks qnstjrr
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzODYzNjA0MCwtMTM3NjA2MDUzM119
+eyJoaXN0b3J5IjpbLTE0MTI4NzkzMjksLTEzNzYwNjA1MzNdfQ
+==
 -->
