@@ -90,11 +90,13 @@ Whitespace Analyzer
 
 ###  CHARACTER FILTER(전처리 필터)
 
+전처리 필터는 사실 토크나이저 내부에서도 동일한 처리가 가능하다. 그래서 사실 전처리 필터는 상대적으로 활용도가 많이 떨어진다. 엘라스틱서치에서 공식적으로 제공하는 전처리 필터도 그리 많지 않다. 대표적으로 Html strip char 필터가
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMzE0NTM5NiwzMjA1ODQ3MTksLTQwOT
-IxMTk1NiwtMTM3NjA2MDUzM119
+eyJoaXN0b3J5IjpbLTE0MTYzMzA0NjgsMzIwNTg0NzE5LC00MD
+kyMTE5NTYsLTEzNzYwNjA1MzNdfQ==
 -->
