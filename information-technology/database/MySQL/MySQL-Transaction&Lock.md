@@ -69,7 +69,7 @@ UNREPEATBLE READ 부정합 현상은 일반 웹 서비스에서는 크게 문제
 
 이 격리 수준은 REPEATBLE_READ의 정합성(하나의 트랜잭션 내에서는 같은 SELECT 쿼리를 수행 시 항상 같은 결과가 나와야함; 반복 읽기 가능)이 보장된다. REPEATBLE_READ는 MySQL InnoDB 스토리지에서 기본적으로 사용하는 격리 수준이다. 
 
-매커니즘을 설명하자면, UNDO 영역에 백업된 이전 데이터를 이용해 동일 트랜잭션 내에서 동일한 결과를 보여주도록 보장하는데, 사실 READ_COMMITED도 UNDO 영역의 과거 commit 전 데이터를 보여준다. 차이점은 UNDO영역에 백업된 레코드의 여러 버전 중 몇 번째 이전까지 찾아 들어가는지가 다르다.
+매커니즘을 설명하자면, UNDO 영역에 백업된 이전 데이터를 이용해 동일 트랜잭션 내에서 동일한 결과를 보여주도록 보장하는데, 사실 READ_COMMITED 보장 매커니즘과 유사하게 UNDO 영역의 과거 commit 전 데이터를 보여준다. 차이점은 UNDO영역에 백업된 레코드의 여러 버전 중 몇 번째 이전까지 찾아 들어가는지가 다르다.
 
 모든 InnoDB의 트랜잭션은 고유한 트랜잭션 번호를 가지며, UNDO 영역에 **백업된 모든 레코드에는 변경을 수행한 트랜잭션 번호가 포함되어 있다.** 그리고 UNDO 영역에 백업 데이터는 스토리지 엔진이 어느 시점에 불필요하다고 판단되면 주기적으로 삭제한다. 
 
@@ -288,11 +288,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMzg2MTc3MSwtMTM3MjkzODg0MiwtOT
-A4NjUwMTc5LC0yMTA3MTA2MTM2LDEzOTY5MzEzMTgsNzUzNjIx
-MzUyLC0xNDk1NjA3NjUwLDE3NTMwMTcyODUsLTg5ODA3ODQ2Ni
-wtMTUyODAxNjc0MywyOTMyODkxOTEsOTM1MDI1MTExLDE3NTIz
-Mzk3NzYsNzA5OTkzMDEwLDUwNTczMzI5MiwxMTc1MDM2Njg0LD
-IwNDE3MjgxNzYsMTY5MDQ4OTE1OSwtMTQ0MjUxODgxNCwtMTEy
-OTc3NTY1OF19
+eyJoaXN0b3J5IjpbODU3MjY1NTcyLC0xMzcyOTM4ODQyLC05MD
+g2NTAxNzksLTIxMDcxMDYxMzYsMTM5NjkzMTMxOCw3NTM2MjEz
+NTIsLTE0OTU2MDc2NTAsMTc1MzAxNzI4NSwtODk4MDc4NDY2LC
+0xNTI4MDE2NzQzLDI5MzI4OTE5MSw5MzUwMjUxMTEsMTc1MjMz
+OTc3Niw3MDk5OTMwMTAsNTA1NzMzMjkyLDExNzUwMzY2ODQsMj
+A0MTcyODE3NiwxNjkwNDg5MTU5LC0xNDQyNTE4ODE0LC0xMTI5
+Nzc1NjU4XX0=
 -->
