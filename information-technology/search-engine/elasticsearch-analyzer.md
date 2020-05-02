@@ -115,9 +115,14 @@ Har, arr, rry, Pot, ott, tte, ter
 
 #### Edge Ngram 토크나이저
 
+지정된 문자의 목록 중 하나를 만날 때마다 시작 부분을 고정시켜 단어를 자르는 방식으로 사용하는 토크나이저다. 해당 토크나이저도 자동 완성을 구현할때 유용하게 활용할 수 있다. 
 
 
-## 동의어 사전
+
+
+## 동의어 사전(synonym dictionary)
+
+
 
 
 
@@ -126,6 +131,6 @@ Har, arr, rry, Pot, ott, tte, ter
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyODE3NjIwNiwtOTc4OTAyMDA4LDMyMD
+eyJoaXN0b3J5IjpbMTQ2ODM5NzEzNCwtOTc4OTAyMDA4LDMyMD
 U4NDcxOSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX0=
 -->
