@@ -110,9 +110,7 @@ T2 트랜잭션이 UPDATE가 아닌 INSERT를 했다는 점에 주목하자. UPD
 
 ### SERIALIZABLE
 
-SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 수준이다. 그만큼 성능은 느리다. 이 격리 수준은 아무런 레코드 잠금도 설정하지 않고 실행된다. InnoDB 메뉴얼에서 자주 나타나는Non-locking consistent read(잠금이 필요 없는 일관된 읽기)의 뜻이 바로 이것을 말한다. 
-
-다행히 InnoDB 스토리지 엔진에서는 REPETABLE_READ 격리 수준에서도 PHANTOM_READ 현상이 발생하지 않기 때문에 굳이 SERIALIZABLE 수준을 사용할 필요는 없다. 
+SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 수준이다. 그만큼 성능은 느리다. 다행이 InnoDB 스토리지 엔진에서는 REPETABLE_READ 격리 수준에서도 PHANTOM_READ 현상이 발생하지 않기 때문에 굳이 SERIALIZABLE 수준을 사용할 필요는 없다. 
 
 ### In SpringFramework
 
@@ -131,7 +129,7 @@ SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 �
 
 **잠금은 동시성을 제어하기 위한 기능**이다. 잠금은 여러 커넥션에서 동시에 동일한 자원(레코드나 테이블)을 요청할 경우 순서대로 한 시점에선 하나의 커넥션에서만 변경할 수 있도록 한다. 
 
-MySQL에서 사용되는 잠금은 크게 **MySQL엔진 레벨**과 **스토리지 엔진 레벨**로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호 영향을 미치지 않는다. 
+MySQL에서 사용하는 잠금은 크게 **MySQL엔진 레벨**과 **스토리지 엔진 레벨**로 나눌 수 있다. MySQL 엔진 레벨의 잠금은 모든 스토리지 엔진에 영향을 미치지만 스토리지 엔진 레벨의 잠금은 스토리지 간 상호 영향을 미치지 않는다. 
 
 MySQL 엔진에서는 테이블 데이터 동기화를 위한 테이블 락 말고도 사용자의 필요에 맞게 유저 락과 테이블 명에 대한 잠금을 위한 네임 락이라는 것을 제공한다. 
 
@@ -286,11 +284,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODY4MDc5Niw0NDU3Mzg4ODYsLTEzNz
-I5Mzg4NDIsLTkwODY1MDE3OSwtMjEwNzEwNjEzNiwxMzk2OTMx
-MzE4LDc1MzYyMTM1MiwtMTQ5NTYwNzY1MCwxNzUzMDE3Mjg1LC
-04OTgwNzg0NjYsLTE1MjgwMTY3NDMsMjkzMjg5MTkxLDkzNTAy
-NTExMSwxNzUyMzM5Nzc2LDcwOTk5MzAxMCw1MDU3MzMyOTIsMT
-E3NTAzNjY4NCwyMDQxNzI4MTc2LDE2OTA0ODkxNTksLTE0NDI1
-MTg4MTRdfQ==
+eyJoaXN0b3J5IjpbMzMzMDg4NTIyLC01MDg2ODA3OTYsNDQ1Nz
+M4ODg2LC0xMzcyOTM4ODQyLC05MDg2NTAxNzksLTIxMDcxMDYx
+MzYsMTM5NjkzMTMxOCw3NTM2MjEzNTIsLTE0OTU2MDc2NTAsMT
+c1MzAxNzI4NSwtODk4MDc4NDY2LC0xNTI4MDE2NzQzLDI5MzI4
+OTE5MSw5MzUwMjUxMTEsMTc1MjMzOTc3Niw3MDk5OTMwMTAsNT
+A1NzMzMjkyLDExNzUwMzY2ODQsMjA0MTcyODE3NiwxNjkwNDg5
+MTU5XX0=
 -->
