@@ -65,12 +65,9 @@ T2의 update 작업으로 데이터가 변경되었고 commit마저 되었다고
 
 UNREPEATBLE READ 부정합 현상은 일반 웹 서비스에서는 크게 문제되지 않지만, 하나의 트랜잭션에서 동일한 데이터를 여러 번 읽고 변경하는 작업이 금전적인 처리와 연결되면 문제가 될 수 있다. 예를 들어, 한 트랜잭션(T2)에서 입금과 출금 처리가 계속 진행되고 있을때, 다른 트랜잭션(T1)에서 오늘 입금된 금액 총합을 조회한다고 해보자. SELECT 쿼리는 실행될때마다 결과가 변경될 것이다. 
 
-가끔 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 실행되는 SELECT 문장의 차이를 혼동하는 경우가 있다. READ_COMMITED 격리 수준에서는 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 외부에서 실행되는 SELECT 문장의 차이가 거의 없다. 
-REPEATABLE READ에선 트랜잭션 내에서 SELECT 문장만 동일한 SELECT 쿼리를 수행했을때 언제나 동일한 결과가 나온다. 트랜잭션 없이 실행되는 SELECT 문장은 언제나 동일한 결과를 보지 못한다.
-
 ### REPEATABLE READ
 
-이 격리 수준은 REPEATBLE_READ의 정합성(하나의 트랜잭션 내에서는 같은 SELECT 쿼리를 수행 시 항상 같은 결과)이 보장된다. REPEATBLE_READ는 MySQL InnoDB 스토리지에서 기본적으로 사용하는 격리 수준이다. 
+이 격리 수준은 REPEATBLE_READ의 정합성(하나의 트랜잭션 내에서는 같은 SELECT 쿼리를 수행 시 항상 같은 결과가 나와야함; 반복 읽기 가능)이 보장된다. REPEATBLE_READ는 MySQL InnoDB 스토리지에서 기본적으로 사용하는 격리 수준이다. 
 
 매커니즘을 설명하자면, UNDO 영역에 백업된 이전 데이터를 이용해 동일 트랜잭션 내에서 동일한 결과를 보여주도록 보장하는데, 사실 READ_COMMITED도 UNDO 영역의 과거 커밋전 데이터를 보여준다. 차이점은 UNDO영역에 백업된 레코드의 여러 버전 중 몇 번째 이전까지 찾아 들어가는지가 다르다.
 
@@ -96,6 +93,9 @@ insert(A) & \\
 세 번째 트랜잭션(12)가 데이터 변경을 하면 UNDO 영역에 위 데이터가 남는다. 즉 첫 번째 트랜잭션(6)의 기록이 남는다. 두 번째 트랜잭션(9)는 세번째 트랜잭션이 변경을 실행하기 전과 후에 한번씩 조회를 했지만 UNDO 영역의 데이터를 보기 때문에 항상 A 로우를 조회하게 된다. 
 
 사실 두 번째 트랜잭션이 트랜잭션을 BEGIN 명령으로 실행 할때 부터 **실행되는 모든 SELECT 쿼리는 자신의 트랜잭션 번호(9) 보다 작은 트랜잭션 번호에서 변경한 것만을 보게 된다.** 
+
+가끔 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 실행되는 SELECT 문장의 차이를 혼동하는 경우가 있다. READ_COMMITED 격리 수준에서는 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 외부에서 실행되는 SELECT 문장의 차이가 거의 없다. 
+REPEATABLE READ에선 트랜잭션 내에서 SELECT 문장만 동일한 SELECT 쿼리를 수행했을때 언제나 동일한 결과가 나온다. 트랜잭션 없이 실행되는 SELECT 문장은 언제나 동일한 결과를 보지 못한다.
 
 #### PHANTOM_READ 
 
@@ -288,11 +288,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQyMTA0NTEyLC05MDg2NTAxNzksLTIxMD
-cxMDYxMzYsMTM5NjkzMTMxOCw3NTM2MjEzNTIsLTE0OTU2MDc2
-NTAsMTc1MzAxNzI4NSwtODk4MDc4NDY2LC0xNTI4MDE2NzQzLD
-I5MzI4OTE5MSw5MzUwMjUxMTEsMTc1MjMzOTc3Niw3MDk5OTMw
-MTAsNTA1NzMzMjkyLDExNzUwMzY2ODQsMjA0MTcyODE3NiwxNj
-kwNDg5MTU5LC0xNDQyNTE4ODE0LC0xMTI5Nzc1NjU4LC05NTE2
-MjgzNl19
+eyJoaXN0b3J5IjpbLTEzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMj
+EwNzEwNjEzNiwxMzk2OTMxMzE4LDc1MzYyMTM1MiwtMTQ5NTYw
+NzY1MCwxNzUzMDE3Mjg1LC04OTgwNzg0NjYsLTE1MjgwMTY3ND
+MsMjkzMjg5MTkxLDkzNTAyNTExMSwxNzUyMzM5Nzc2LDcwOTk5
+MzAxMCw1MDU3MzMyOTIsMTE3NTAzNjY4NCwyMDQxNzI4MTc2LD
+E2OTA0ODkxNTksLTE0NDI1MTg4MTQsLTExMjk3NzU2NTgsLTk1
+MTYyODM2XX0=
 -->
