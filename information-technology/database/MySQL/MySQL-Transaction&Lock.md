@@ -194,9 +194,7 @@ AUTO_INCREMENT 기능이 사용된 테이블에선 동시에 여러 INSERT가 �
 
 다른 잠금과는 달리, 트랜잭션 관계없이 INSERT나 REPLACE 문장에서 AUTO_INCREMENT 값을 가져오는 순간만 AUTO_INCREMENT 락이 걸렸다가 즉시 해제된다. 
 
-AUTO_INCREMENT 락은 태이블에서 하나만 존재하기 때문에, 두개의 쿼리가 실행되는 경우, 하나의 쿼리가 락을 걸게 되면 나머지 쿼리는 락 해제를 기다려야 한다. 
-
-ATUOㅆ_INCREMENT 락은 명시적으로 획득하고 해제하는 방법은 없다. 하지만 AUTO_INCREMENT 락은 아주 짧은 시간만 걸렸다가 해제가 되기 대문에 보통 큰 문제가 되지 않는다.
+AUTO_INCREMENT 락은 명시적으로 획득하고 해제하는 방법이 없다. 그리고 태이블 단위로 하나만 존재하기 때문에, 하나의 쿼리가 락을 걸게 되면 나머지 쿼리는 락 해제를 기다려야 한다. 일반적으로 아주 짧은 시간만 걸렸다가 해제가 되기 때문에 해당 락은 성능상 이슈가 크진 ㅇ
 
 ### InnoDB 인덱스와 잠금
 
@@ -286,11 +284,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MjQyODM0NCwtMTQzMDY0OTE2Miw0Mz
-I1MDg4NTgsMTQ4Mzc5Nzc0LC01NzY5ODA0ODgsLTEzOTEwMjgz
-OTgsMTAwOTA3MzU4OSwtNDAwOTIxNjU5LC0xNjEyNzgxOTc2LC
-01MDg2ODA3OTYsNDQ1NzM4ODg2LC0xMzcyOTM4ODQyLC05MDg2
-NTAxNzksLTIxMDcxMDYxMzYsMTM5NjkzMTMxOCw3NTM2MjEzNT
-IsLTE0OTU2MDc2NTAsMTc1MzAxNzI4NSwtODk4MDc4NDY2LC0x
-NTI4MDE2NzQzXX0=
+eyJoaXN0b3J5IjpbLTY0NjM5NjQ3OCwtNzUyNDI4MzQ0LC0xND
+MwNjQ5MTYyLDQzMjUwODg1OCwxNDgzNzk3NzQsLTU3Njk4MDQ4
+OCwtMTM5MTAyODM5OCwxMDA5MDczNTg5LC00MDA5MjE2NTksLT
+E2MTI3ODE5NzYsLTUwODY4MDc5Niw0NDU3Mzg4ODYsLTEzNzI5
+Mzg4NDIsLTkwODY1MDE3OSwtMjEwNzEwNjEzNiwxMzk2OTMxMz
+E4LDc1MzYyMTM1MiwtMTQ5NTYwNzY1MCwxNzUzMDE3Mjg1LC04
+OTgwNzg0NjZdfQ==
 -->
