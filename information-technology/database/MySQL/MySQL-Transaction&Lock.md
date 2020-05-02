@@ -178,7 +178,7 @@ RENAME TABLE tab_a TO tab_b
 ### 갭 락
 
 ### 넥스트 키 락(Next key lock)
-레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이이다.
+레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 바이너리 로그에 기록되는 쿼리가 슬레이브에서 실행될때 마스터에서 만들어낸 결과와 동일한 결과를 만들도록 보장하는 것이 목적이다.
 
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
@@ -281,11 +281,11 @@ INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTEwMjgzOTgsMTAwOTA3MzU4OSwtND
-AwOTIxNjU5LC0xNjEyNzgxOTc2LC01MDg2ODA3OTYsNDQ1NzM4
-ODg2LC0xMzcyOTM4ODQyLC05MDg2NTAxNzksLTIxMDcxMDYxMz
-YsMTM5NjkzMTMxOCw3NTM2MjEzNTIsLTE0OTU2MDc2NTAsMTc1
-MzAxNzI4NSwtODk4MDc4NDY2LC0xNTI4MDE2NzQzLDI5MzI4OT
-E5MSw5MzUwMjUxMTEsMTc1MjMzOTc3Niw3MDk5OTMwMTAsNTA1
-NzMzMjkyXX0=
+eyJoaXN0b3J5IjpbLTU3Njk4MDQ4OCwtMTM5MTAyODM5OCwxMD
+A5MDczNTg5LC00MDA5MjE2NTksLTE2MTI3ODE5NzYsLTUwODY4
+MDc5Niw0NDU3Mzg4ODYsLTEzNzI5Mzg4NDIsLTkwODY1MDE3OS
+wtMjEwNzEwNjEzNiwxMzk2OTMxMzE4LDc1MzYyMTM1MiwtMTQ5
+NTYwNzY1MCwxNzUzMDE3Mjg1LC04OTgwNzg0NjYsLTE1MjgwMT
+Y3NDMsMjkzMjg5MTkxLDkzNTAyNTExMSwxNzUyMzM5Nzc2LDcw
+OTk5MzAxMF19
 -->
