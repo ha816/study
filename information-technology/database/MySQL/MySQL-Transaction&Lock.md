@@ -225,12 +225,13 @@ InnoDB 스토리지 엔진을 사용하는 **테이블의 레코드 수준 잠�
 MySQL 5.0이하 버전에서는 **레코드 잠금에 대한 메타정보(딕셔너리 테이블)** 을 제공하지 않기 때문에 잠금 확인이 어렵다. 하지만 5.1 InnoDB 플러그인 버전부터는 레코드 잠금과 대기에 대한 조회가 가능하므로 쿼리하나만 실행해보면 특정 레코드의 잠금과 잠금 대기를 바로 확인할 수 있다.
 
 ```
-SHOW PROCESSLIST; 
+
 SELECT * FROM information_schema.innodb_locks; // 어떤 잠금이 존재하는지를 관리한다. 잠금이나 대기가 발생할 경우, InnoDB 스토리지 엔진에서 관련 정보를 계속 테이블로 업데이트.
 SELECT * FROM information_schema.innodb_trx; // 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
 ```
 
 ```
+SHOW PROCESSLIST; // 현재 실행 중인 프로세스 리스트
 SELECT
 r.trx_id waiting_trx_id,
 r.trx_mysql_thread_it waiting_thread,
@@ -277,11 +278,11 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzIyMzc0MDUsMTM4NTQzNjg3Myw1Nj
-g3OTc3ODQsMTcwMTIzNDQ5MSwxNTI5Mjc5NzcyLDIwMDc0NTQ3
-NTEsLTc1MjQyODM0NCwtMTQzMDY0OTE2Miw0MzI1MDg4NTgsMT
-Q4Mzc5Nzc0LC01NzY5ODA0ODgsLTEzOTEwMjgzOTgsMTAwOTA3
-MzU4OSwtNDAwOTIxNjU5LC0xNjEyNzgxOTc2LC01MDg2ODA3OT
-YsNDQ1NzM4ODg2LC0xMzcyOTM4ODQyLC05MDg2NTAxNzksLTIx
-MDcxMDYxMzZdfQ==
+eyJoaXN0b3J5IjpbMTUxODY0NzgyMywxMzg1NDM2ODczLDU2OD
+c5Nzc4NCwxNzAxMjM0NDkxLDE1MjkyNzk3NzIsMjAwNzQ1NDc1
+MSwtNzUyNDI4MzQ0LC0xNDMwNjQ5MTYyLDQzMjUwODg1OCwxND
+gzNzk3NzQsLTU3Njk4MDQ4OCwtMTM5MTAyODM5OCwxMDA5MDcz
+NTg5LC00MDA5MjE2NTksLTE2MTI3ODE5NzYsLTUwODY4MDc5Ni
+w0NDU3Mzg4ODYsLTEzNzI5Mzg4NDIsLTkwODY1MDE3OSwtMjEw
+NzEwNjEzNl19
 -->
