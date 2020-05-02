@@ -106,8 +106,14 @@ Whitespace Analyzer
 
 #### Ngram 토크나이저
 
-Ngram에서 N은 토큰화할 글자 수를 말한다. 
- 별다른 옵션을 주지 안기본적으로 한 글자씩 토큰화를 한다. Ngram에 특정 문자를 지정할 수도 있으며, 이 경우 문자의 목록 중 하나를 만날때마다 단어를 자른다. 그 밖에도 다양한 옵션을 조합해서 **자동완성 기능**을 만들때 유용하게 활용할 수 있다. 
+Ngram에서 N은 토큰화할 글자 수를 말한다. 별다른 옵션을 주지 않는다면 기본적으로 한 글자씩 토큰화를 한다. Ngram에 특정 문자를 지정할 수도 있으며, 이 경우 문자의 목록 중 하나를 만날때마다 단어를 자른다. 그 밖에도 다양한 옵션을 조합해서 **자동완성 기능**을 만들때 유용하게 활용할 수 있다. 
+
+만약 문장으로 "Harry Potter"를 주고, N이 3이라면 아래와 같은 결과로 토크나이징을 하게 된다. 
+```
+Har, arr, rry, Pot, ott, tte, ter
+```
+
+#### Edge Ngram 토크나이저
 
 
 
@@ -118,6 +124,6 @@ Ngram에서 N은 토큰화할 글자 수를 말한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc1MTU5MjY1LC05Nzg5MDIwMDgsMzIwNT
-g0NzE5LC00MDkyMTE5NTYsLTEzNzYwNjA1MzNdfQ==
+eyJoaXN0b3J5IjpbMjA2ODg0NTQxNSwtOTc4OTAyMDA4LDMyMD
+U4NDcxOSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX0=
 -->
