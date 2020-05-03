@@ -164,18 +164,29 @@ POST movie_search, movie_auto/_search
 
 ```
 ...
-
-
-
+"_source": ["movieNm"] -- movieNm 필드만 가져오기
+...
 ```
+
+### 범위 검색
+
+범위를 기반으로 한 쿼리이다. 
+
+| 문법| 연산자  | 설명 |
+|--|--|--|
+|lt  | < |피|
+|lg  |  |
+|lg  |  |
+|lg  |  |
+
 
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5NTY3NTk3LC0xMTk4OTIzODE4LDUxNz
-I1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1
-MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLD
-IwNzExNDU3OTYsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbLTYzNDMyMDU2NCwtMTE5ODkyMzgxOCw1MT
+cyNTkzMDYsLTE1MDEzMTAyMTUsLTE1OTk4NzY0MjQsMzg4MTYx
+NTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjExODU2MC
+wyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
 -->
