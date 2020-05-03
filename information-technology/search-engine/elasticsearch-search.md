@@ -20,9 +20,14 @@ URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body�
 
 이 방식은 HTTP GET 요청을 활용하는 방식으로 파라미터를 key=value 형태로 전달한다. URL에 검색할 컬럼과 검색어를 직접 지정하면 검색이 수행된다. 파라미터로는 표현의 한계가 있어 복잡한 질의를 작성하는 것을 불가능하다. 그래도 웹브라우저를 통해 빠르게 테스트를 해볼 수 있다는 장점이 있다. 
 
-|  |  |
-|--|--|
-|  |  |
+|파라미터|기본값| 설명|
+|--|--|--|
+|q |  ||
+|df |  ||
+|analyzer|  ||
+|analyzer_wildcard|  ||
+|default_operator|  ||
+|default_operator|  ||
 
 
 # Query DSL
@@ -31,6 +36,6 @@ URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3Mzg3NzA3MSwxMTc2MTE4NTYwLDIwNz
-ExNDU3OTYsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbLTEzOTM5NjQwMzIsMTE3NjExODU2MCwyMD
+cxMTQ1Nzk2LDU5MzY2MzEwOF19
 -->
