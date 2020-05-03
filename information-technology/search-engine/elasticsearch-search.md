@@ -239,7 +239,11 @@ fuzziness 파라미터를 사용하면 단순히 같은 값을 찾는 match Quer
 
 예를 들어, 편집 거리 수를 2로 설정하면 오차범위가 두 글자이하인 검색 결과까지 포함하여 결과를 출력한다. 오차범위 값으로 0,1,2 AUTO 총 4가지를 사용할 수 있는데, 알파벳에는 유용하지만 한국어에는 적용하기 어렵다. 
 
-예를 들어
+예를 들어, 영화 제목을 실수로 잘못 적은 경우도 검색되게 하고 싶을때가 있다. "Fly High"가 아닌 "Fl High"라고 입력했다면 Fuzziness설정으로 가장 유사한 검색이 가능해진다.
+
+### boost 설정
+
+boost 설정은 검색에서 가장 많이 사용하는 파라미터 중 하나다. 이 파라미터는 관련성이 높ㅇ
 
 
 
@@ -247,9 +251,9 @@ fuzziness 파라미터를 사용하면 단순히 같은 값을 찾는 match Quer
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NTA1MzkxNSwxNDc2NzM5NjI0LDE0MD
-QwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEw
-MjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MS
-wtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2
-NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbODU3ODU0NTc2LDE0NzY3Mzk2MjQsMTQwND
+AwNDc5NCwtMTE5ODkyMzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAy
+MTUsLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC
+0zMDY3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2
+MzEwOF19
 -->
