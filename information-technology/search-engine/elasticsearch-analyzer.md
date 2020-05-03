@@ -194,6 +194,12 @@ Harry => 해리 -- 동의어 치환
 
 한 가지 주의해야할 점이 있다. 동의어 사전은 색인 시점에도 사용될 수 있고 검색 시점에도 사용할 수 있다는 점이다. 검색 시점에는 사전의 내용이 변경되면 그 내용이 반영된다. 하지만 색인 시점에 동의어 사전이 사용됬다면 사전의 내용이 변경되더라도 색인이 변경되지는 않는다. 이 경우 기존 색인을 모두 삭제하고 색인을 새로 생성해야만 변경된 사전 내용이 적용된다. 이러한 문제점 때문에 동의어 사전이 빈번하게 수정되는 인덱스의 경우 색인 시점에는 적용하지 않고 검색 시점에만 적용하는 방식으로 이러한 문제점을 해결하기도 한다. 
 
+자 이제 아래 문장이 엘라스틱서치에 들어왔다고 하자. 
+```
+Elasticsearch Harry Potter
+
+```
+
 
 
 
@@ -205,8 +211,9 @@ Harry => 해리 -- 동의어 치환
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjkwMTQ0OTIsMjEzOTEzMzgxNCw3Mj
-g4OTg5NTUsLTE5NTQyNjAwODgsMTU3NzYxOTU0Niw1OTUzMjUy
-NTEsLTE0NjU0MTcwODAsMTQ2ODM5NzEzNCwtOTc4OTAyMDA4LD
-MyMDU4NDcxOSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX0=
+eyJoaXN0b3J5IjpbMTM5MDEzNzc3NSwtMTQ2OTAxNDQ5MiwyMT
+M5MTMzODE0LDcyODg5ODk1NSwtMTk1NDI2MDA4OCwxNTc3NjE5
+NTQ2LDU5NTMyNTI1MSwtMTQ2NTQxNzA4MCwxNDY4Mzk3MTM0LC
+05Nzg5MDIwMDgsMzIwNTg0NzE5LC00MDkyMTE5NTYsLTEzNzYw
+NjA1MzNdfQ==
 -->
