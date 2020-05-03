@@ -400,12 +400,19 @@ POST movie_search/_search
 
 와일드 카드를 사용할 경우 단어의 첫 글자로는 절대 사용해서는 안된다. 첫 글자로 와일드 카드를 넣으면 색인된 문서 전체를 찾아야하는 불상사가 발생할 수 있기 때문이다. 
 
+### Nested Query
+
+분산 시스템에서 SQL에서 지원하는 조인과 유사한 기능을 수행하려면 엄청나게 많은 비용이 소모된다. 수평적으로 샤드가 얼마나 늘어날지 모르는 상황에서 모든 샤드를 검색해야 할 수도 있기 때문이다.
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU1NTM2OTg4LDk0NzQwODYyNywtMTAwND
-U3Mjc5MiwtNTYxNjA4NTUyLC0xNTA5Njk4NTIsMTgzNjg4Mzc5
-Nyw3ODA4Mjk3MjcsMTQ3NjczOTYyNCwxNDA0MDA0Nzk0LC0xMT
-k4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3
-NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNC
-wxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbLTE4MTA5MDI2NjUsOTQ3NDA4NjI3LC0xMD
+A0NTcyNzkyLC01NjE2MDg1NTIsLTE1MDk2OTg1MiwxODM2ODgz
+Nzk3LDc4MDgyOTcyNywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLT
+ExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5
+ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2OD
+E0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
+
 -->
