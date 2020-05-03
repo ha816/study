@@ -241,9 +241,23 @@ fuzziness 파라미터를 사용하면 단순히 같은 값을 찾는 match Quer
 
 예를 들어, 영화 제목을 실수로 잘못 적은 경우도 검색되게 하고 싶을때가 있다. "Fly High"가 아닌 "Fl High"라고 입력했다면 Fuzziness설정으로 가장 유사한 검색이 가능해진다.
 
+```
+...
+"query" : {
+	"match" : {
+		"movieNmEn" : {
+			"query": "자전차왕 엄복동",
+			"minimum_should_match":2
+		}
+	}
+}
+...
+```
+
+
 ### boost 설정
 
-boost 설정은 검색에서 가장 많이 사용하는 파라미터 중 하나다. 이 파라미터는 관련성이 높ㅇ
+boost 설정은 검색에서 가장 많이 사용하는 파라미터 중 하나다. 이 파라미터는 관련성이 높은 필드나 키워드에 가중치를 더 주도록 한다. 영화 데이터의 경우 한글 영화 제목과 영문 영화 제목으로 두 가지 제목필드를 제공하고 있다. 이때 한글 영화 제목에 좀 더 가중치를 두어 검색 결과를 더 상위로 올리고 싶을때 사용 할 수 있다. 
 
 
 
@@ -251,9 +265,9 @@ boost 설정은 검색에서 가장 많이 사용하는 파라미터 중 하나�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU3ODU0NTc2LDE0NzY3Mzk2MjQsMTQwND
-AwNDc5NCwtMTE5ODkyMzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAy
-MTUsLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC
-0zMDY3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2
-MzEwOF19
+eyJoaXN0b3J5IjpbLTEwNzEwMzM2OTYsMTQ3NjczOTYyNCwxND
+A0MDA0Nzk0LC0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMx
+MDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OT
+EsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkz
+NjYzMTA4XX0=
 -->
