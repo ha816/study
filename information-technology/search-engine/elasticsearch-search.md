@@ -471,20 +471,18 @@ POST movie_search/_validate/query?q=prdtYear:2017
 
 문서 검색결과를 확인해보면 _score를 통해 우리가 검색한 키워드와 검색 결과가 얼마나 유사하닞 확인할 수 있다. 만일 이 문서가 가진 _score 값이 어떻게 계산된 것인지 자세한 정보를 알고 싶다면 Explain API를 사용하면 된다. 
 
-```
-POST movie_search/_search
-```
-
 ## Profile API
+
+쿼리에 대한 상세한 수행 계획과 각 수행 계획별로 수행된 시간을 알려주는 API이다. 성능을 튜닝하거나 디버깅할때 유용하게 사용할 수 있다. 다만 이 API는 쿼리에 대한 내용을 상세하기 설명하므로 결과가 매우 방대하다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyODQ0MTQ4MiwtMTIwOTgwMTkwMCw5Nj
-c3MDE5ODksMTA3MjUwODcyOCw5ODc1ODYzMTMsLTE0ODg0MDQ5
-NjgsMTQ2OTIyNzcxMSwxMjA3NDU3MzEwLC03ODc5NDYxMiwtMT
-gxMDkwMjY2NSw5NDc0MDg2MjcsLTEwMDQ1NzI3OTIsLTU2MTYw
-ODU1MiwtMTUwOTY5ODUyLDE4MzY4ODM3OTcsNzgwODI5NzI3LD
-E0NzY3Mzk2MjQsMTQwNDAwNDc5NCwtMTE5ODkyMzgxOCw1MTcy
-NTkzMDZdfQ==
+eyJoaXN0b3J5IjpbLTE0MDQzNzkyNzgsLTEyMDk4MDE5MDAsOT
+Y3NzAxOTg5LDEwNzI1MDg3MjgsOTg3NTg2MzEzLC0xNDg4NDA0
+OTY4LDE0NjkyMjc3MTEsMTIwNzQ1NzMxMCwtNzg3OTQ2MTIsLT
+E4MTA5MDI2NjUsOTQ3NDA4NjI3LC0xMDA0NTcyNzkyLC01NjE2
+MDg1NTIsLTE1MDk2OTg1MiwxODM2ODgzNzk3LDc4MDgyOTcyNy
+wxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4MTgsNTE3
+MjU5MzA2XX0=
 -->
