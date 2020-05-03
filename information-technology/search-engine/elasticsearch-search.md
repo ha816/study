@@ -138,13 +138,15 @@ POST movie_search, movie_auto/_search
 
 페이징 구현을 위해선 from 파라미터와 size 파라미터를 사용한다. 제공되는 문서의 시작을 from으로 문서 갯수를 size로 나타낸다.
 
-1 페이질from 0, size = 10으로 
+1 페이지를 from = 0, size = 10으로 조회했다면, 2페이지는 from= 10, size = 10으로 조회하면 된다. 
+
+주의할 점은 RDBMS와는 다르게 해당 문서만 선택적으로 가져오는 것이 아니라 모든 데이터를 읽고 그 중에서 조건에 맞는 결과를 반환한다. 예를 들어 위 예제와 같이 2페이
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NTMwMzQ3OCwtMTUwMTMxMDIxNSwtMT
+eyJoaXN0b3J5IjpbMTU2MjI2Mjg1MywtMTUwMTMxMDIxNSwtMT
 U5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4
 NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX
 0=
