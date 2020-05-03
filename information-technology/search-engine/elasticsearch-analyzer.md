@@ -184,7 +184,14 @@ Elasticsearch, 엘라스틱서치
 
 #### 동의어 치환
 
-특정 단어를 어떤 단어로 변경하고 싶다면 동의어 치환 기능을 사용하면 된다.
+특정 단어를 어떤 단어로 변경하고 싶다면 동의어 치환 기능을 사용하면 된다. 동의어를 치환하면 토큰이 제거되고 변경될 새로운 토큰이 추가된다 동의어 치환은 동의처 추가와 구분하기 위해 화살표(=>)를 사용한다. 
+```
+Elasticsearch, 엘라스틱서치 -- 동의어 추가
+Harry => 해리 -- 동의어 치환
+```
+
+동의어 사전은 실시간으로 적용되지 않는다. 수정된 동의어를 적용하고 싶담
+
 
 
 
@@ -196,8 +203,8 @@ Elasticsearch, 엘라스틱서치
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyNTg0NTYxLDIxMzkxMzM4MTQsNzI4OD
-k4OTU1LC0xOTU0MjYwMDg4LDE1Nzc2MTk1NDYsNTk1MzI1MjUx
-LC0xNDY1NDE3MDgwLDE0NjgzOTcxMzQsLTk3ODkwMjAwOCwzMj
-A1ODQ3MTksLTQwOTIxMTk1NiwtMTM3NjA2MDUzM119
+eyJoaXN0b3J5IjpbLTE0MzQ5NTQzMDgsMjEzOTEzMzgxNCw3Mj
+g4OTg5NTUsLTE5NTQyNjAwODgsMTU3NzYxOTU0Niw1OTUzMjUy
+NTEsLTE0NjU0MTcwODAsMTQ2ODM5NzEzNCwtOTc4OTAyMDA4LD
+MyMDU4NDcxOSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX0=
 -->
