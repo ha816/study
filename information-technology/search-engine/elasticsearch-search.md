@@ -194,7 +194,7 @@ POST movie_search, movie_auto/_search
 
 ### operator 설정
 
-엘
+엘라스틱 ㄱ
 
 
 
@@ -202,8 +202,9 @@ POST movie_search, movie_auto/_search
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NjczOTYyNCwxNDA0MDA0Nzk0LC0xMT
-k4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3
-NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNC
-wxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbMTE0NTQyNDk3NiwxNDc2NzM5NjI0LDE0MD
+QwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEw
+MjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MS
+wtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2
+NjMxMDhdfQ==
 -->
