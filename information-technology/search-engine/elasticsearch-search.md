@@ -322,11 +322,16 @@ POST movie_search/_search
 
 ### Term Query
 
+텍스트 형태의 값을 검색하기 위해서 엘라스틱 서치는 두 가지 매핑 유형을 지원한다.
+
+Text 데이터 타입
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDk2OTg1MiwxODM2ODgzNzk3LDc4MD
-gyOTcyNywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4
-MTgsNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LD
-M4ODE2MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYx
-MTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbNzg3NDAwMTI2LC0xNTA5Njk4NTIsMTgzNj
+g4Mzc5Nyw3ODA4Mjk3MjcsMTQ3NjczOTYyNCwxNDA0MDA0Nzk0
+LC0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMT
+U5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4
+NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX
+0=
 -->
