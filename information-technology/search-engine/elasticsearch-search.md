@@ -194,7 +194,9 @@ POST movie_search, movie_auto/_search
 
 ### operator 설정
 
-엘라스틱 ㄱ
+엘라스틱 검색시 문장이 들어올 경우 기본적으로 OR연산으로 동작한다. 하지만 실무에서는 AND 연산을 통해 정확도를 높여야 할때가 많을 것이다. OR 연산이나 AND 연상르 어떻게 선택적으로 사용하는지 알아보자. 
+
+Query DLS에서는 operator 파라미터로 연산자를 명시하는게 가능하다. 기본적으로 "and"나 "or" 연산자를 명시적으로 지정이 가능하다. 
 
 
 
@@ -202,7 +204,7 @@ POST movie_search, movie_auto/_search
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NTQyNDk3NiwxNDc2NzM5NjI0LDE0MD
+eyJoaXN0b3J5IjpbLTgwNDA1MTM0OCwxNDc2NzM5NjI0LDE0MD
 QwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEw
 MjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MS
 wtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2
