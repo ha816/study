@@ -8,7 +8,7 @@
 
 # 검색 API
 
-문장은 새
+문장은 색인 시점에 term(텀)으로 분해된다. 
 
 # Query DSL
 
@@ -16,5 +16,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODE5NzAzOSw1OTM2NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbLTU0NDc3Njg5NSw1OTM2NjMxMDhdfQ==
 -->
