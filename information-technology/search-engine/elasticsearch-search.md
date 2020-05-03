@@ -146,12 +146,14 @@ POST movie_search, movie_auto/_search
 
 엘라스틱 서치는 기본적으로 유사도 계산에 의한 스코어 점수 값으로 정렬을 하는데 이것이 아니라 필드의 이름, 날짜, 가격등으로 재정렬을 하고 싶을때가 있다. 이럴때 사용하는 것이 sort 파라미터이다. 
 
+
+
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNDc5MzczNCwtMTUwMTMxMDIxNSwtMT
-U5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4
-NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX
-0=
+eyJoaXN0b3J5IjpbNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNT
+k5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2
+ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ
+==
 -->
