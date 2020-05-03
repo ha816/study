@@ -172,12 +172,12 @@ POST movie_search, movie_auto/_search
 
 범위를 기반으로 한 쿼리이다. 
 
-| 문법| 연산자  | 설명 |
+| 문법| 연산자  |
 |--|--|--|
-|lt(lower than)  | < | |
+|lt(lower than)  | < |
 |gt(greater than)  | > |
-|lte  | |
-|gte  |  |
+|lte(lower than or equal  | <= |
+|gte(greater than or equal  | >= |
 
 
 
@@ -185,8 +185,8 @@ POST movie_search, movie_auto/_search
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNDAwNDc5NCwtMTE5ODkyMzgxOCw1MT
-cyNTkzMDYsLTE1MDEzMTAyMTUsLTE1OTk4NzY0MjQsMzg4MTYx
-NTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjExODU2MC
-wyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
+eyJoaXN0b3J5IjpbLTM5Nzc0OTYyNCwxNDA0MDA0Nzk0LC0xMT
+k4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3
+NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNC
+wxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
 -->
