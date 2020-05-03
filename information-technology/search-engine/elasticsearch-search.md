@@ -63,10 +63,23 @@ aggs는 통계 및 집계 데이터를 사용하는 공간이다.
 sort는 문서결과를 어떤 순서로 출력할지에 대한 공간이다.
 
 
+```
+{
+	"size":
+	"from":
+	"timeout":
+	
+	"_source":{}
+	"query":{}
+	"aggs":{}
+	"sort":{}
+}
+```
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNTExMDkxMSwtMTk2MzY5MjY5MSwtMz
-A2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMx
-MDhdfQ==
+eyJoaXN0b3J5IjpbNjM4Njg2ODkzLC0xOTYzNjkyNjkxLC0zMD
+Y3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEw
+OF19
 -->
