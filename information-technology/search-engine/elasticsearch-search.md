@@ -364,10 +364,14 @@ POST movie_search/_search
 {
 	"query": {
 		"bool": {
-			"must": [],
+			"must": [
+				{
+					"term" : {
+						"repGenreNm": "코미디"
+					}
+				}
+			],
 			"must_not": [],
-			"should": [],
-			"filter": []
 		}
 	}
 }
@@ -376,10 +380,10 @@ POST movie_search/_search
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDQ1NzI3OTIsLTU2MTYwODU1MiwtMT
-UwOTY5ODUyLDE4MzY4ODM3OTcsNzgwODI5NzI3LDE0NzY3Mzk2
-MjQsMTQwNDAwNDc5NCwtMTE5ODkyMzgxOCw1MTcyNTkzMDYsLT
-E1MDEzMTAyMTUsLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYz
-NjkyNjkxLC0zMDY3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nz
-k2LDU5MzY2MzEwOF19
+eyJoaXN0b3J5IjpbNTM1ODE3NjMwLC0xMDA0NTcyNzkyLC01Nj
+E2MDg1NTIsLTE1MDk2OTg1MiwxODM2ODgzNzk3LDc4MDgyOTcy
+NywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4MTgsNT
+E3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2
+MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYxMTg1Nj
+AsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
 -->
