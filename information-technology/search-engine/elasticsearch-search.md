@@ -27,10 +27,12 @@ URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body�
 |analyzer| 검색 새당 필드에 설정된 형태소 분석기|문자열을 형태소 분석할때 사용할 분석기를 지정한다.|
 |analyzer_wildcard| false|와일드카드 검색 활성화여부를 지정한다.|
 |default_operator|OR|두 개 이상의 검색 조건이 쿼리 문자열에 포함된 경우 검색 조건 연산자를 설정한다.|
-|_source| true| |
-|sort|  ||
-|from|  ||
-|size|  ||
+|_source| true| 검색 결과에 문서 본문 포함 여부를 지정한다|
+|sort|  |검색 결과의 정렬 기준필드를 지정한다|
+|from|  |검색을 시작할 문서의 위치를 지정한다|
+|size|  |반환할 검색 결과 갯수를 설정한다.|
+
+q 옵션에는 기본적으로 '필듬'
 
 
 # Query DSL
@@ -39,6 +41,6 @@ URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNz
-ExNDU3OTYsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbLTEyNzI1MTg0NzQsLTMwNjc4NjgxNCwxMT
+c2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
 -->
