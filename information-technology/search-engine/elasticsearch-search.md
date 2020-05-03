@@ -390,10 +390,14 @@ POST movie_search/_search
 
 보다시피 Bool Query를 이용하면 여러 개의 옵션을 조합해서 복잡한 조건을 구현할 수 있다. 위 JSON은 대표 장르가 "코미디"이고, 제작 국가에 "한국"이 포함되어 있으며 영화 타입 중 "단편"이 제외된 문서를 검색한다. 
 
+### Query String
+
+엘라스틱 서치는 기본적으로 내장된 쿼리 분석기가 있다. query_string 파라미터를 사용하는 쿼리를 사용하면 내장된 쿼리 분석기를 이용하는 질의를 작성할 수 있다. 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk4MTI0OTc0LC0xMDA0NTcyNzkyLC01Nj
+eyJoaXN0b3J5IjpbOTQ3NDA4NjI3LC0xMDA0NTcyNzkyLC01Nj
 E2MDg1NTIsLTE1MDk2OTg1MiwxODM2ODgzNzk3LDc4MDgyOTcy
 NywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4MTgsNT
 E3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2
