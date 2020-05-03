@@ -36,7 +36,7 @@ q 옵션에는 기본적으로 '[필드명]:검색어' 형태로 입력할 수 �
 
 ## Request Body 검색
 
-이 방식에서는 HTTP 요청시 본문에 JSON 혀애로 검색 조건을 기록해서 검색을 요청한다. 
+이 방식에서는 HTTP 요청시 본문에 JSON 혀애로 검색 조건을 기록해서 검색을 요청한다. 간단한 검색은 언뜻 보면 URI 방식이 더 좋아 보일것이다. 
 
 # Query DSL
 
@@ -44,6 +44,6 @@ q 옵션에는 기본적으로 '[필드명]:검색어' 형태로 입력할 수 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTc1MDMzMjUsLTMwNjc4NjgxNCwxMT
+eyJoaXN0b3J5IjpbLTE5NjM2OTI2OTEsLTMwNjc4NjgxNCwxMT
 c2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
 -->
