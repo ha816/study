@@ -273,13 +273,17 @@ boost 설정은 검색에서 가장 많이 사용하는 파라미터 중 하나�
 
 ## Query DLS의 주요 쿼리
 
-엘라스틱서치에서 제공하는 검색 관련
+엘라스틱서치에서 제공하는 검색 관련 기능은 Query DLS을 이용해 모두 사용할 수 있다. 이번 장에서는 Query DLS의 주요 쿼리에 대해 알아보자. 
+
+### Match All Query
+
+match_all 파라미터를 사용하는 Match Al Query는 색인에 모든 문서를 검색하는 쿼리에 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyOTQzODI2LDc4MDgyOTcyNywxNDc2Nz
-M5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5MzA2
-LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMT
-k2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0
-NTc5Niw1OTM2NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbLTc2NDM5MzE2Myw3ODA4Mjk3MjcsMTQ3Nj
+czOTYyNCwxNDA0MDA0Nzk0LC0xMTk4OTIzODE4LDUxNzI1OTMw
+NiwtMTUwMTMxMDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1MjMsLT
+E5NjM2OTI2OTEsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzEx
+NDU3OTYsNTkzNjYzMTA4XX0=
 -->
