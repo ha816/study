@@ -22,12 +22,15 @@ URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body�
 
 |파라미터|기본값| 설명|
 |--|--|--|
-|q |  ||
-|df |  ||
+|q |  | 검색을 수행할 쿼리 문자열 조건을 지정한다.|
+|df |  |쿼리에 검색을 수행할 필드가 지정되지 않았을 경우, 기|
 |analyzer|  ||
 |analyzer_wildcard|  ||
 |default_operator|  ||
-|default_operator|  ||
+|_source|  ||
+|sort|  ||
+|from|  ||
+|size|  ||
 
 
 # Query DSL
@@ -36,6 +39,6 @@ URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTM5NjQwMzIsMTE3NjExODU2MCwyMD
+eyJoaXN0b3J5IjpbLTEzMzg3NTU3NDgsMTE3NjExODU2MCwyMD
 cxMTQ1Nzk2LDU5MzY2MzEwOF19
 -->
