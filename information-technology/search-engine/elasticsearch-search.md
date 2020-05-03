@@ -215,14 +215,16 @@ operator를 생략하면 OR연산으로 동작해서 "자전차왕" 혹은 "엄�
 
 ### minimum_should_match 설정
 
-이번에는 OR 연산을 수행할 경우에 사용할 수 있는 옵션을 알아보자. 일반적으로 OR 연산을 수행할 경우 검색 결과가 너무 많아질 수 있다. 이 경우 단어의 갯수가 최소 몇 개 이상 매칭될때만 검색 결과로 나오게 할 수 있는데 minimum_should_match
+이번에는 OR 연산을 수행할 경우에 사용할 수 있는 옵션을 알아보자. 일반적으로 OR 연산을 수행할 경우 검색 결과가 너무 많아질 수 있다. 이 경우 단어의 갯수가 최소 몇 개 이상 매칭될때만 검색 결과로 나오게 할 수 있는데 minimum_should_match가 그 설정이다. 
+
+
 
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY4OTc3NjYyLDE0NzY3Mzk2MjQsMTQwND
+eyJoaXN0b3J5IjpbNTUxNjA0OTI1LDE0NzY3Mzk2MjQsMTQwND
 AwNDc5NCwtMTE5ODkyMzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAy
 MTUsLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC
 0zMDY3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2
