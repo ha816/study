@@ -336,14 +336,14 @@ Term Query는 Keyword 데이터 타입을 대상으로 하기 때문에 일반�
 
 ### Bool Query
 
-관계형 
+관계형 DBMS에서는 AND, OR 조건으로 묶은 여러 조건을 WHERE 절에서 사용할 수 있다. 엘라스틱서치에서는 하나의 쿼리나 여러 개의 쿼리를 조합해서 더 높은 스코어를 가진 쿼리 조건으로 검색을 할 수 있다 이런 유형의 쿼리를 Compound Query라 하는다, 이를 구현하기 위해 엘라스틱 서치에선 Bool Query를 제공한다. Bool Query를 상위에 두고 하위에 다른 Query들을 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDgyNzE0MjcsLTE1MDk2OTg1MiwxOD
-M2ODgzNzk3LDc4MDgyOTcyNywxNDc2NzM5NjI0LDE0MDQwMDQ3
-OTQsLTExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC
-0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MSwtMzA2
-Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMD
-hdfQ==
+eyJoaXN0b3J5IjpbLTQ0MjE1MzU3NywtMTUwOTY5ODUyLDE4Mz
+Y4ODM3OTcsNzgwODI5NzI3LDE0NzY3Mzk2MjQsMTQwNDAwNDc5
+NCwtMTE5ODkyMzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAyMTUsLT
+E1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3
+ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF
+19
 -->
