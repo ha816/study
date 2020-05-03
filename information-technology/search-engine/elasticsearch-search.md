@@ -211,16 +211,20 @@ Query DLS에서는 operator 파라미터로 연산자를 명시하는게 가능�
 ...
 ```
 
-operator를 생략하면 OR연산으로 동작해서 "자전차왕 혹은 엄복동
+operator를 생략하면 OR연산으로 동작해서 "자전차왕" 혹은 "엄복동"이라는 단어가 들어간 모든 문서가 검색될 것이다. 하지만 AND 연산으로 지정하면 두개의 단어가 모두 존재하는 문서만 결과가 나올 것이다. 
+
+### minimum_should_match 설정
+
+이번에는 OR 연산을 수행할 경우에 사용할 수 있는 옵션을 알아보자. 일반적으로 OR 연산을 수행할 경우 검색 결과가 너무 많아질 수 
 
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQxMjUyNDUsMTQ3NjczOTYyNCwxND
-A0MDA0Nzk0LC0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMx
-MDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OT
-EsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkz
-NjYzMTA4XX0=
+eyJoaXN0b3J5IjpbLTIxOTU4ODkyMCwxNDc2NzM5NjI0LDE0MD
+QwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEw
+MjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MS
+wtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2
+NjMxMDhdfQ==
 -->
