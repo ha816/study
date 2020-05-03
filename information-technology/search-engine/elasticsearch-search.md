@@ -84,10 +84,14 @@ sort는 문서결과를 어떤 순서로 출력할지에 대한 공간이다.
 
 위의 JSON 형태는 기본 응답 구조이다. 
 took은 쿼리 수행 시간을 나타낸다.
+timed_out은 쿼리 시간이 초과할 경우 나타난다.
+total은 쿼리를 요청한 저체 샤드의 개수를 나타낸다.
+successful은 성공적으로 응답한 샤드의 갯수를 나타낸다.
+failed는 응답에 실패한 샤드의 갯수를 나타낸다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTQ5NDI3NjMsLTE5NjM2OTI2OTEsLT
+eyJoaXN0b3J5IjpbLTEzNzk2NzQ1MDUsLTE5NjM2OTI2OTEsLT
 MwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYz
 MTA4XX0=
 -->
