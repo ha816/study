@@ -180,7 +180,7 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 Elasticsearch, 엘라스틱서치
 ```
 
-여기서 주의해야할 점은 동의어 처리 기준은 앞서 동작
+여기서 주의해야할 점은 동의어 처리 기준은 앞서 동작한 토큰 필터의 종류가 무엇이고, 어떤 작업을 했느냐에 따라 달라질 수 있다는 점이다. 예를 들어 "Elasticsearch"라는 토큰이  
 
 
 
@@ -193,8 +193,8 @@ Elasticsearch, 엘라스틱서치
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTk1OTg4NTIsLTE5NTQyNjAwODgsMT
-U3NzYxOTU0Niw1OTUzMjUyNTEsLTE0NjU0MTcwODAsMTQ2ODM5
-NzEzNCwtOTc4OTAyMDA4LDMyMDU4NDcxOSwtNDA5MjExOTU2LC
-0xMzc2MDYwNTMzXX0=
+eyJoaXN0b3J5IjpbNzI4ODk4OTU1LC0xOTU0MjYwMDg4LDE1Nz
+c2MTk1NDYsNTk1MzI1MjUxLC0xNDY1NDE3MDgwLDE0NjgzOTcx
+MzQsLTk3ODkwMjAwOCwzMjA1ODQ3MTksLTQwOTIxMTk1NiwtMT
+M3NjA2MDUzM119
 -->
