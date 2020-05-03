@@ -421,17 +421,20 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 엘라스틱 서치는 부하 분산과 장애 극복을 위해 원본 샤드 데이터를 복제한 레플리카를 함께 운영한다. 하지만 검색시 모든 샤드에서 검색을 수행하기 된다면 사용자에게 중복된 결과를 전달하게 될수도 있을 것이다. 이러한 문제를 방지하기 위해 엘라스틱서치는 검색을 수행할 때 동일 데이터를 가지고 있는 샤드 중 하나만 선택해 검색을 수행한다. 
 
-만약 특별히 설정하지 않는다면 기본적으로 검색 요청의 적절한 
+만약 특별히 설정하지 않는다면 기본적으로 검색 요청의 적절한 분배를 위해 라운드 로빈(Round-Robin)방식으로 처리한다. 엘라스틱 서치는 라운드 로비 말고도 동적 분배 방식의 알고리즘도 제공한다. 동적 분배 방식은 **검색 요청의 응답시간, 검색 요청을 수행하는 쓰레드 풀의 크기 등**을 고려해 최적의 샤드를 동적으로 결정하는 방식이다. 
+
+### 글로벌 타임아웃 설정
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA5MDMwNzIsLTE0ODg0MDQ5NjgsMTQ2OT
-IyNzcxMSwxMjA3NDU3MzEwLC03ODc5NDYxMiwtMTgxMDkwMjY2
-NSw5NDc0MDg2MjcsLTEwMDQ1NzI3OTIsLTU2MTYwODU1MiwtMT
-UwOTY5ODUyLDE4MzY4ODM3OTcsNzgwODI5NzI3LDE0NzY3Mzk2
-MjQsMTQwNDAwNDc5NCwtMTE5ODkyMzgxOCw1MTcyNTkzMDYsLT
-E1MDEzMTAyMTUsLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYz
-NjkyNjkxXX0=
+eyJoaXN0b3J5IjpbOTg3NTg2MzEzLC0xNDg4NDA0OTY4LDE0Nj
+kyMjc3MTEsMTIwNzQ1NzMxMCwtNzg3OTQ2MTIsLTE4MTA5MDI2
+NjUsOTQ3NDA4NjI3LC0xMDA0NTcyNzkyLC01NjE2MDg1NTIsLT
+E1MDk2OTg1MiwxODM2ODgzNzk3LDc4MDgyOTcyNywxNDc2NzM5
+NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5MzA2LC
+0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMTk2
+MzY5MjY5MV19
 -->
