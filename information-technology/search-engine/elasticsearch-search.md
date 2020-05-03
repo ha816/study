@@ -469,15 +469,22 @@ POST movie_search/_validate/query?q=prdtYear:2017
 
 ## Explain API
 
-문서 검색결과를 확인해보면 _score를 통해 우리가 검색한 키워드와 검색 결과가 얼마나 유사하닞 확
+문서 검색결과를 확인해보면 _score를 통해 우리가 검색한 키워드와 검색 결과가 얼마나 유사하닞 확인할 수 있다. 만일 이 문서가 가진 _score 값이 어떻게 계산된 것인지 자세한 정보를 알고 싶다면 Explain API를 사용하면 된다. 
+
+```
+POST movie_search/_search
+```
+
+## Profile API
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNDIyMDA0LC0xMjA5ODAxOTAwLDk2Nz
-cwMTk4OSwxMDcyNTA4NzI4LDk4NzU4NjMxMywtMTQ4ODQwNDk2
-OCwxNDY5MjI3NzExLDEyMDc0NTczMTAsLTc4Nzk0NjEyLC0xOD
-EwOTAyNjY1LDk0NzQwODYyNywtMTAwNDU3Mjc5MiwtNTYxNjA4
-NTUyLC0xNTA5Njk4NTIsMTgzNjg4Mzc5Nyw3ODA4Mjk3MjcsMT
-Q3NjczOTYyNCwxNDA0MDA0Nzk0LC0xMTk4OTIzODE4LDUxNzI1
-OTMwNl19
+eyJoaXN0b3J5IjpbLTYyODQ0MTQ4MiwtMTIwOTgwMTkwMCw5Nj
+c3MDE5ODksMTA3MjUwODcyOCw5ODc1ODYzMTMsLTE0ODg0MDQ5
+NjgsMTQ2OTIyNzcxMSwxMjA3NDU3MzEwLC03ODc5NDYxMiwtMT
+gxMDkwMjY2NSw5NDc0MDg2MjcsLTEwMDQ1NzI3OTIsLTU2MTYw
+ODU1MiwtMTUwOTY5ODUyLDE4MzY4ODM3OTcsNzgwODI5NzI3LD
+E0NzY3Mzk2MjQsMTQwNDAwNDc5NCwtMTE5ODkyMzgxOCw1MTcy
+NTkzMDZdfQ==
 -->
