@@ -445,15 +445,24 @@ POST movie_search/_search_shards
 POST _msearch
 {"index":"movie_auto"}
 {"query": {"match_all":{}}, "from":0, "size": 10}
-
+{"index":"movie_search"}
+{"query": {"match_all":{}}, "from":0, "size": 10}
 ```
 
 Multi Search API를 사용하면 동시에 여러 개의 색인에서 검색을 수행할 수 있으므로 사용자별 맞춤 페이지등을 구현할때 여러 인덱스에서 사용자별로 특화된 정보를 가져올때 유용하게 사용할 수 있다. 
 
 
+## Count API
+
+간혼 문서 본문의 내용보다 갯수가 몇개인지 알고 싶을때 있다. 이럴때 Count API를 사용한다. 
+```
+POST movie_search/_count?q=prdtYear:2017
+```
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjQyMTI5MTAsOTY3NzAxOTg5LDEwNz
+eyJoaXN0b3J5IjpbLTEzMDc3NTQ4MzYsOTY3NzAxOTg5LDEwNz
 I1MDg3MjgsOTg3NTg2MzEzLC0xNDg4NDA0OTY4LDE0NjkyMjc3
 MTEsMTIwNzQ1NzMxMCwtNzg3OTQ2MTIsLTE4MTA5MDI2NjUsOT
 Q3NDA4NjI3LC0xMDA0NTcyNzkyLC01NjE2MDg1NTIsLTE1MDk2
