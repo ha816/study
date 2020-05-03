@@ -196,13 +196,14 @@ Harry => 해리 -- 동의어 치환
 
 자 이제 아래 문장이 엘라스틱서치에 들어왔다고 하자. 
 ```
-Elasticsearch Harry Potter
+Elasticsearch Harry
 ```
 
 결과는 아래와 같다.
 ```
-elasticsearch
-
+elasticsearch 
+엘라스틱서치 -- 새로운 동의어 토큰이 추가
+해리 -- Harry를 치환하는 대체 동의어 토큰
 ```
 
 
@@ -216,9 +217,9 @@ elasticsearch
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NjEwMjY0MSwxMzkwMTM3Nzc1LC0xND
-Y5MDE0NDkyLDIxMzkxMzM4MTQsNzI4ODk4OTU1LC0xOTU0MjYw
-MDg4LDE1Nzc2MTk1NDYsNTk1MzI1MjUxLC0xNDY1NDE3MDgwLD
-E0NjgzOTcxMzQsLTk3ODkwMjAwOCwzMjA1ODQ3MTksLTQwOTIx
-MTk1NiwtMTM3NjA2MDUzM119
+eyJoaXN0b3J5IjpbLTE3NzU1MzYwMjgsMTM5MDEzNzc3NSwtMT
+Q2OTAxNDQ5MiwyMTM5MTMzODE0LDcyODg5ODk1NSwtMTk1NDI2
+MDA4OCwxNTc3NjE5NTQ2LDU5NTMyNTI1MSwtMTQ2NTQxNzA4MC
+wxNDY4Mzk3MTM0LC05Nzg5MDIwMDgsMzIwNTg0NzE5LC00MDky
+MTE5NTYsLTEzNzYwNjA1MzNdfQ==
 -->
