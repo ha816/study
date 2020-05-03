@@ -330,14 +330,16 @@ Text 데이터 타입
 Keyword 데이터 타입
 : 데이터가 분석되지 않고 그대로 필드에 저장된다.
 
+Term Query는 Keyword 데이터 타입으
 
+앞에서 보았던 MatchQuery의 경우 텍스트에 대해서 형태소 분석을 통해 검색을 수행하지만 Term Query의 경우 하나의 텀으로 처리하기 때문에 텀이 정확히 존재하지 않는 경우 검색이 되지 않는다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODIyNjIwNSwtMTUwOTY5ODUyLDE4Mz
-Y4ODM3OTcsNzgwODI5NzI3LDE0NzY3Mzk2MjQsMTQwNDAwNDc5
-NCwtMTE5ODkyMzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAyMTUsLT
-E1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3
-ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF
-19
+eyJoaXN0b3J5IjpbNTI0NjIxMTIsLTE1MDk2OTg1MiwxODM2OD
+gzNzk3LDc4MDgyOTcyNywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQs
+LTExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNT
+k5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2
+ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ
+==
 -->
