@@ -82,10 +82,12 @@ sort는 문서결과를 어떤 순서로 출력할지에 대한 공간이다.
 }
 ```
 
+위의 JSON 형태는 기본 응답 구조이다. 
+took은 쿼리 수행 시간을 나타낸다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NDI4NjQ2NCwtMTk2MzY5MjY5MSwtMz
-A2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMx
-MDhdfQ==
+eyJoaXN0b3J5IjpbLTE3NTQ5NDI3NjMsLTE5NjM2OTI2OTEsLT
+MwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYz
+MTA4XX0=
 -->
