@@ -197,7 +197,6 @@ Harry => 해리 -- 동의어 치환
 자 이제 아래 문장이 엘라스틱서치에 들어왔다고 하자. 
 ```
 Elasticsearch Harry Potter
-
 ```
 
 
@@ -211,9 +210,9 @@ Elasticsearch Harry Potter
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MDEzNzc3NSwtMTQ2OTAxNDQ5MiwyMT
-M5MTMzODE0LDcyODg5ODk1NSwtMTk1NDI2MDA4OCwxNTc3NjE5
-NTQ2LDU5NTMyNTI1MSwtMTQ2NTQxNzA4MCwxNDY4Mzk3MTM0LC
-05Nzg5MDIwMDgsMzIwNTg0NzE5LC00MDkyMTE5NTYsLTEzNzYw
-NjA1MzNdfQ==
+eyJoaXN0b3J5IjpbOTg5NjkxMTAxLDEzOTAxMzc3NzUsLTE0Nj
+kwMTQ0OTIsMjEzOTEzMzgxNCw3Mjg4OTg5NTUsLTE5NTQyNjAw
+ODgsMTU3NzYxOTU0Niw1OTUzMjUyNTEsLTE0NjU0MTcwODAsMT
+Q2ODM5NzEzNCwtOTc4OTAyMDA4LDMyMDU4NDcxOSwtNDA5MjEx
+OTU2LC0xMzc2MDYwNTMzXX0=
 -->
