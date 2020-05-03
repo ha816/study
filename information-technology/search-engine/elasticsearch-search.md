@@ -308,11 +308,25 @@ POST movie_search/_search
 
 Match Query와 기본적인 사용은 동일하나 단일 필드가 아닌 여러 필드를 대상으로 검색할 때 사용한다.
 
+```
+POST movie_search/_search
+{
+	"query": {
+		"multi_match": {
+			"query": "가족",
+			"fields": ["movieNm", "movieNmEn"]
+		}
+	}
+}
+```
+
+### Term Query
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU0NjQ5NTIwLDE4MzY4ODM3OTcsNzgwOD
-I5NzI3LDE0NzY3Mzk2MjQsMTQwNDAwNDc5NCwtMTE5ODkyMzgx
-OCw1MTcyNTkzMDYsLTE1MDEzMTAyMTUsLTE1OTk4NzY0MjQsMz
-g4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjEx
-ODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
+eyJoaXN0b3J5IjpbLTE1MDk2OTg1MiwxODM2ODgzNzk3LDc4MD
+gyOTcyNywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4
+MTgsNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LD
+M4ODE2MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYx
+MTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
 -->
