@@ -104,7 +104,12 @@ Query DSL을 잉요해 검색 질의를 작성할 때 조금만 조건이 복잡
 |용도|전문 검색시 사용 | 조건 검색시 사용|
 |특징| 분석기에 의해 분석 수행, 연관성 관련 Score 계산, 루씬 레벨에서 분석 과정을 거쳐야 하므로 상대적으로 느림 | 단순 판별 기능, score 관련 계산 하지 않음. 상대적으로 빠름. |
 
-대부분의 경우 쿼리 컨텍스트 방식과 필터 컨텍스트 방식 ㅁ
+대부분의 경우 쿼리 컨텍스트 방식과 필터 컨텍스트 방식 모두 같은 결과를 얻는다. 하지만 어떤 방식을 사용하느냐에 따라 검색 과정이나 성능이 크게 달라지기 대문에 가능한 용도에 맞게 사용해야 한다. 
+
+### 쿼리 컨텍스트
+
+* 문서가 쿼리와 얼마나 유사한지 Score 계산을 한다.
+* 질의가 요청도리때 마다 루씬을 이용해 계산을 수행하고 결과가 캐싱되지 않는ㄷ
 
 ## Query DLS의 주요 파라미터
 
@@ -112,7 +117,7 @@ Query DSL을 잉요해 검색 질의를 작성할 때 조금만 조건이 복잡
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNzU5ODQ0LC0xNTk5ODc2NDI0LDM4OD
-E2MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYxMTg1
-NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbLTE5NzA5MDI3MzAsLTE1OTk4NzY0MjQsMz
+g4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjEx
+ODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
 -->
