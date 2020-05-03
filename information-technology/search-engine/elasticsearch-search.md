@@ -413,13 +413,19 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 엘라스틱서치는 대량의 데이터를 처리하기 위해 기본적으로 데이터를 분산해서 처리한다. 그렇다면 빠른 검색을 위해 내부적으로 어떤 동작을 할까?
 
-검색 요청이 발생하면 엘라스틱 서치는 모든 샤드에 브롣
+검색 요청이 발생하면 엘라스틱 서치는 모든 샤드에 브로드 캐스팅으로 검색 요청을 전달하고 기다린다. 각 샤드는 자신이 가지고 있는 데이터를 기준으로 검색을 수행하고 그 결과를 반환한다. 모든 검색 결과가 도착하면 결과를 조합해서 최종 질의 결과를 보여준다. 
+
+이러한 분산 동장 방식때문에 부가적인 환경설정 값이 있다. 데이터 특성이나 검색 패턴에 따라 검색 설정 값을 커스터마이즈 하면 좀 더 효율적인 클러스터 운영이 가능하다.
+
+### 동적 분배 방식 샤드 선택
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5ODQ1Mjg0MSwxMjA3NDU3MzEwLC03OD
+eyJoaXN0b3J5IjpbMTA1NjgwMTQyMywxMjA3NDU3MzEwLC03OD
 c5NDYxMiwtMTgxMDkwMjY2NSw5NDc0MDg2MjcsLTEwMDQ1NzI3
 OTIsLTU2MTYwODU1MiwtMTUwOTY5ODUyLDE4MzY4ODM3OTcsNz
 gwODI5NzI3LDE0NzY3Mzk2MjQsMTQwNDAwNDc5NCwtMTE5ODky
