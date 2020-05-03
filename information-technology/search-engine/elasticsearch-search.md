@@ -14,7 +14,11 @@
 
 검색 API는 기본적으로 질의(Query)를 기반으로 동작한다. 검색 질의에는 검색하고자 하는 각종 조건들을 명시할 수 있으며 동일한 조건을 URI, Request Body 검색 두 가지로 할 수 있다. 
 
-URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body
+URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body는 RESTful API를 이용해 Request Body에 조건을 표시하는 방법이다. 
+
+## URI
+
+이 방식은 HTTP GET 요청을 활용하는 방식으로 파라미터를 key=value 형태로 전달한다. URL에 검색할 컬럼과 검색어를 직접 지정하면 검색이 수행된다. 파라미터로는 표현의 한계가 있어 복잡한 질의를 작성하는 것을 불가능하다. 
 
 # Query DSL
 
@@ -22,6 +26,6 @@ URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTYzOTQ5NjMsMjA3MTE0NTc5Niw1OT
-M2NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5Mz
+Y2MzEwOF19
 -->
