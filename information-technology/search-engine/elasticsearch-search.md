@@ -40,13 +40,24 @@ q 옵션에는 기본적으로 '[필드명]:검색어' 형태로 입력할 수 �
 
 # Query DSL
 
-QUery DS
+Query DSL로 쿼리를 작성하려면 미리 정의된 문법에 따라 JSON 구조를 작성해야 한다. 기본적인 구조는 다음과 같다.
+```
+{
+	"size":
+	"from":
+	"timeout":
+	
+	"_source":{}
+	"query":{}
+	"aggs":{}
+	"aggs":{}
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk4OTEwOTQxLC0xOTYzNjkyNjkxLC0zMD
-Y3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEw
-OF19
+eyJoaXN0b3J5IjpbLTczMTkyODI4OCwtMTk2MzY5MjY5MSwtMz
+A2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMx
+MDhdfQ==
 -->
