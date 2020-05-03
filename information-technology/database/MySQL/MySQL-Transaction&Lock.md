@@ -108,7 +108,9 @@ T2 트랜잭션이 UPDATE가 아닌 INSERT를 했다는 점에 주목하자. UPD
 
 ### SERIALIZABLE
 
-SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 수준이다. 그만큼 성능은 느리다. 다행이 InnoDB 스토리지 엔진에서는 REPETABLE_READ 격리 수준에서도 PHANTOM_READ 현상이 발생하지 않기 때문에 굳이 SERIALIZABLE 수준을 사용할 필요는 없다. 
+SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 수준이다. 그만큼 성능은 느리다. 
+
+다행이 InnoDB 스토리지 엔진에서는 REPETABLE_READ 격리 수준에서도 PHANTOM_READ 현상이 발생하지 않기 때문에 굳이 SERIALIZABLE 수준을 사용할 필요는 없다. 
 
 ### In SpringFramework
 
@@ -281,7 +283,7 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NTkwNTMzNiwtMjA0NTAyNTgyMCwxNT
+eyJoaXN0b3J5IjpbLTUxNzMyOTgyOCwtMjA0NTAyNTgyMCwxNT
 E4NjQ3ODIzLDEzODU0MzY4NzMsNTY4Nzk3Nzg0LDE3MDEyMzQ0
 OTEsMTUyOTI3OTc3MiwyMDA3NDU0NzUxLC03NTI0MjgzNDQsLT
 E0MzA2NDkxNjIsNDMyNTA4ODU4LDE0ODM3OTc3NCwtNTc2OTgw
