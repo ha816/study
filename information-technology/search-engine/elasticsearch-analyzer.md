@@ -176,7 +176,11 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 
 동의를 추가할 때 단어를 표(,)로 분리해 등록하는 방법이다. 예를 들어, "Elasticsearch"와 "엘라스틱서치"를 동의어로 지정하고 싶다면 동의어 사전 파일에 "Elasticsearch, 엘라스틱 서치"라고 등록하면 된다. 
 
+```
+Elasticsearch, 엘라스틱서치
+```
 
+여기서 주의해야할 점은 동의어 처리 기준은 앞서 동작
 
 
 
@@ -189,8 +193,8 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg4NTcwNjkxLC0xOTU0MjYwMDg4LDE1Nz
-c2MTk1NDYsNTk1MzI1MjUxLC0xNDY1NDE3MDgwLDE0NjgzOTcx
-MzQsLTk3ODkwMjAwOCwzMjA1ODQ3MTksLTQwOTIxMTk1NiwtMT
-M3NjA2MDUzM119
+eyJoaXN0b3J5IjpbLTEwNTk1OTg4NTIsLTE5NTQyNjAwODgsMT
+U3NzYxOTU0Niw1OTUzMjUyNTEsLTE0NjU0MTcwODAsMTQ2ODM5
+NzEzNCwtOTc4OTAyMDA4LDMyMDU4NDcxOSwtNDA5MjExOTU2LC
+0xMzc2MDYwNTMzXX0=
 -->
