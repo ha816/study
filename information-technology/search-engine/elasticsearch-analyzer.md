@@ -190,7 +190,7 @@ Elasticsearch, 엘라스틱서치 -- 동의어 추가
 Harry => 해리 -- 동의어 치환
 ```
 
-동의어 사전은 실시간으로 적용되지 않는다. 수정된 동의어를 적용하고 싶다면
+동의어 사전은 실시간으로 적용되지 않는다. 수정된 동의어를 적용하고 싶다면 
 
 
 
@@ -203,8 +203,8 @@ Harry => 해리 -- 동의어 치환
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODAwNzA3NiwyMTM5MTMzODE0LDcyOD
-g5ODk1NSwtMTk1NDI2MDA4OCwxNTc3NjE5NTQ2LDU5NTMyNTI1
-MSwtMTQ2NTQxNzA4MCwxNDY4Mzk3MTM0LC05Nzg5MDIwMDgsMz
-IwNTg0NzE5LC00MDkyMTE5NTYsLTEzNzYwNjA1MzNdfQ==
+eyJoaXN0b3J5IjpbLTIwMTc1MTc0MDgsMjEzOTEzMzgxNCw3Mj
+g4OTg5NTUsLTE5NTQyNjAwODgsMTU3NzYxOTU0Niw1OTUzMjUy
+NTEsLTE0NjU0MTcwODAsMTQ2ODM5NzEzNCwtOTc4OTAyMDA4LD
+MyMDU4NDcxOSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX0=
 -->
