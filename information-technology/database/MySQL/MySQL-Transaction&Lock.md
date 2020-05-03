@@ -34,19 +34,17 @@ select(A') & \\
 &commit \\
 \end{bmatrix}$$
 
-T1, T2 트랜잭션이 존재하고 T1은 데이터 A를 읽는 작업을 수행하고 T2는 A를 A'으로 수정하는 작업을 한다. T2의 update 작업으로 데이터가 변경되었고 commit이 되기 전에 T1이 select 작업을 하면 변경된 데이터 A'을 가져오게 된다. 즉 commit이 되지 않은 단순히 현재 변경된 데이터를 공유하다보니 데이터의 정합성이 깨지게 된다. 이런 현상을 Dirty Read 현상이라 한다. 
+T2 트랜잭션이 존재하고 T1은 데이터 A를 읽는 작업을 수행하고 T2는 A를 A'으로 수정하는 작업을 한다. T2의 update 작업으로 데이터가 변경되었고 commit이 되기 전에 T1이 select 작업을 하면 변경된 데이터 A'을 가져오게 된다. 즉 commit이 되지 않은 단순히 현재 변경된 데이터를 공유하다보니 데이터의 정합성이 깨지게 된다. 이런 현상을 Dirty Read 현상이라 한다. 
 
 ### READ COMMITED
 
 READ_COMMITED는 한 트랜잭션이 데이터를 조회할때, 다른 트랜잭션이 그 데이터를 변경하고 있다면 **변경 작업 시작 전 백업(원본) 데이터를 조회한다.** 그 어떤 트랜잭션이 데이터를 변경하였더라도 Commit 되기 전에는 변경 전의 데이터를 조회하고 Commit 후에는 변경된 데이터를 조회한다.
 
-매커니즘을 설명하자면, 하나의 트랜잭션이 데이터를 변경하면 UNDO 영역에 변경전 데이터를 백업한다. 이때 다른 트랜잭션에서 해당 데이터를 조회하면 UNDO 영역에 백업된 변경전 데이터를 조회하게 된다. 그리고 Commit 후에는 변경된 데이터를 조회하게 된다. 
+매커니즘을 설명하자면, 하나의 트랜잭션이 데이터를 변경하면 UNDO 영역에 변경전 데이터를 백업한다. 이때 다른 트랜잭션에서 해당 데이터를 조회하면 UNDO 영역에 백업된 전 데이터를 조회하게 된다. 그리고 Commit 후에는 변경된 데이터를 조회하게 된다. 
 
-READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제가 있다. REPEATBLE READ 정합성이란 **하나의 트랜잭션 내에서는 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같아야 하는 것**을 말한다. REPEATBLE READ을 지키지 못하는 경우, UNREPEATABLE_READ라 한다.
+READ_COMMITED 격리수준에서는 REPEATBLE_READ 정합성이 깨지는 문제가 있다. REPEATBLE READ  **하나의 트랜잭션 내에서 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같아야 하는 것**을 말한다. REPEATBLE READ을 지키지 못하는 경우, (UNREPEATABLE_READ라 한다.
 
-#### UNREPEATBLE READ 
-
-UNREPEATBLE READ은 **하나의 트랜잭션 내에서 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같지 않는 경우**를 말한다. 즉 UNREPEATBLE READ에서는 상황에 따라 동일한 SELECT 쿼리를 수행했을때 결과가 같지 않을 수 있으므로 주의해야 한다. 
+#### UN) REPEATBLE READREPEATBLE READ은정합성이란 **하나의 트랜잭션 내에서는 동일한 SELECT 쿼리를 수행했을때 그 결과가 항상 같지 않는 경우**를 말한다. 즉 UNREPEATBLE READ에서는 상황에 따라 동일한 SELECT 쿼리를 수행했을때 결과가 같지 않을 수 있으므로 주의해야 한다. 
 
 $$\begin{bmatrix}
 T1(id = 6) & T2(id = 9)\\
@@ -61,7 +59,7 @@ select(A'') & \\
 ...\\
 \end{bmatrix}$$
 
-T2의 update 작업으로 데이터가 변경되었고 commit마저 되었다고 하자. 현재 격리 수준이 READ_COMMITED 격리 수준 이하라면 T1에서 select 작업을 할때마다 commit이 된 변경 데이터를 가져오게 된다.
+T2의 update 작업으로 데이터가 변경되었고 commit마저 되었다고 하자. 현재 격리 수준이 READ_COMMITED 격리 수준 이하라면 T1에서 select 작업을 할때마다 commit이 된 변경 데이터를 가져오게 된다. 
 
 UNREPEATBLE READ 부정합 현상은 일반 웹 서비스에서는 크게 문제되지 않지만, 하나의 트랜잭션에서 동일한 데이터를 여러 번 읽고 변경하는 작업이 금전적인 처리와 연결되면 문제가 될 수 있다. 예를 들어, 한 트랜잭션(T2)에서 입금과 출금 처리가 계속 진행되고 있을때, 다른 트랜잭션(T1)에서 오늘 입금된 금액 총합을 조회한다고 해보자. SELECT 쿼리는 실행될때마다 결과가 변경될 것이다. 
 
@@ -69,7 +67,7 @@ UNREPEATBLE READ 부정합 현상은 일반 웹 서비스에서는 크게 문제
 
 이 격리 수준은 REPEATBLE_READ의 정합성(하나의 트랜잭션 내에서는 같은 SELECT 쿼리를 수행 시 항상 같은 결과가 나와야함; 반복 읽기 가능)이 보장된다. REPEATBLE_READ는 MySQL InnoDB 스토리지에서 기본적으로 사용하는 격리 수준이다. 
 
-매커니즘을 설명하자면, UNDO 영역에 백업된 이전 데이터를 이용해 동일 트랜잭션 내에서 동일한 결과를 보여주도록 보장하는데, 사실 READ_COMMITED 보장 매커니즘과 유사하게 UNDO 영역의 과거 commit 전 데이터를 보여준다. 차이점은 **UNDO영역에 백업된 레코드의 여러 버전 중 몇 번째 이전까지 찾아 들어가는지가 다르다.**
+매커니즘을 설명하자면, UNDO 영역에 백업된 이전 데이터를 이용해 동일 트랜잭션 내에서 동일한 결과를 보여주도록 보장하는데, 사실 READ_COMMITED 보장 매커니즘과 유사하게도 UNDO 영역의 과거 commit 커밋전 데이터를 보여준다. 차이점은 **UNDO영역에 백업된 레코드의 여러 버전 중 몇 번째 이전까지 찾아 들어가는지가 다르다.**
 
 모든 InnoDB의 트랜잭션은 고유한 트랜잭션 번호를 가지며, UNDO 영역에 **백업된 모든 레코드에는 변경을 수행한 트랜잭션 번호가 포함되어 있다.** 그리고 UNDO 영역에 백업 데이터는 스토리지 엔진이 어느 시점에 불필요하다고 판단되면 주기적으로 삭제한다. 
 
@@ -82,15 +80,15 @@ insert(A) & \\
 &select(A) &\\
 \end{bmatrix}$$
 
-세 번째 트랜잭션(id=12)가 데이터 변경을 하면 UNDO 영역에 아래 레코드가 남는다. 즉 데이터 변경 전에는 첫 번째 트랜잭션(6)에서 A라는 값을 삽입했다는 기록이 남는다. 두 번째 트랜잭션(9)는 세번째 트랜잭션이 변경을 실행하기 전과 후에 한번씩 조회를 했지만 UNDO 영역의 데이터를 공통으로 보기 때문에 항상 A를 조회하게 된다. 
+세 번째 트랜잭션(id=12)가 데이터 변경을 하면 UNDO 영역에 아래 레코드가 남는다. 즉 데이터 변경 전에는 첫 번째 트랜잭션(6)에서 A라는 값을 삽입했다는 기록이 남는다. 두 번째 트랜잭션(9)는 세번째 트랜잭션이 변경을 실행하기 전과 UNDO 데이터 보기 때문에. 
 
 |TRX-ID | prime | cols ...|
 |--|--|--|
 | 6 | A | ... |
 
-이제 UNDO 영역에 백업 데이터는 언제 제거되는지 생각해보도록 하자. **실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 작은(더 오래된) 트랜잭션 번호를 가지는 UNDO 영역의 데이터는 삭제할 수 없다.** 그렇다고 가장 오래된 트랜잭션 번호 이전의 트랜잭션에 의해 변경된 모든 UNDO 데이터가 필요한 것은 아니다. 더 정확하게는 **특정 트랜잭션 번호 구간 내에서 백업된 UNDO 데이터는 보전되어야 한다는 것이다.** 
+이제 UNDO 영역에 백업위 데이터는 언제 제거되는지 생각해보도록 하자. **실행 중인 트랜잭션 가운데 가장 오래된 트랜잭션 번호보다 작은(더 오래된) 트랜잭션 번호를 가지는 UNDO 영역의 데이터는 삭제할 수 없다.** 그렇다고 가장 오래된 트랜잭션 번호 이전의 트랜잭션에 의해 변경된 모든 UNDO 데이터가 필요한 것은 아니다. 더 정확하게는 **특정 트랜잭션 번호 구간 내에서 ( 후에 한번씩 조회를 했지만 UNDO 영역의 데이터는를 보전되어야 한다는 것이다.** 
 
-사실 두 번째 트랜잭션(id=9)이 SELECT 쿼리를 실행 할때 부터 **실행되는 모든 SELECT 쿼리는 자신의 트랜잭션 번호(9) 보다 작은 트랜잭션 번호에서 변경한 것만을 보게 된다.** 
+사실 두 번째 트랜잭션(id=9)이 SELECT 쿼리를기 때문에 항상 A 로우를 조회 실행 할때 부터 **실행되는 모든 SELECT 쿼리는 자신의 트랜잭션 번호(9) 보다 작은 트랜잭션 번호에서 변경한 것만을 보게 된다.** 
 
 가끔 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 실행되는 SELECT 문장의 차이를 혼동하는 경우가 있다. READ_COMMITED 격리 수준에서는 트랜잭션 내에서 실행되는 SELECT 문장과 트랜잭션 없이 외부에서 실행되는 SELECT 문장의 차이가 거의 없다. 
 REPEATABLE READ에선 트랜잭션 내에서 SELECT 문장만 동일한 SELECT 쿼리를 수행했을때 언제나 동일한 결과가 나온다. 트랜잭션 없이 실행되는 SELECT 문장은 언제나 동일한 결과를 보지 못한다.
@@ -172,7 +170,7 @@ RENAME TABLE tab_a TO tab_b
 낙관적 잠금(Optimistic locking)
 : 기본적으로 각 트랜잭션이 같은 레코드를 변경할 가능성이 희박할것이라고 낙관적으로 생각한다. 그래서 변경 작업을 수행하고 마지막에 잠금 충돌이 있었는지 확인해보고 있으면 Rollback 처리를 한다. 
 
-###  Record Only Lock(레코드 락)
+###  Record nly lock(레코드 락)
 레코드 자체만 잠그는 락이다. InnoDB에서는 레코드 자체가 아니라 인덱스를 잠근다. 만약 인덱스가 하나도 없는 테이블이라도 자동 생성된 클러스터 인덱스를 이용해 잠금을 수행한다.
 
 ### Gap Lock(갭 락)
@@ -181,24 +179,26 @@ RENAME TABLE tab_a TO tab_b
 
 갭락은 Master 와 Slave의 데이터 동기화 (더 정확히는 Binary 로그의 정확한 기록을 위해서)  및 Phantom 레코드 방지를 위해 사용한다.
 
-### 넥스트 키 락(Next Key Lock)
-레코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 Binary 로그에 기록되는 로그의 데이터의 정합성을 위해 사용한다. 이 정합성은 Master에서 수정된 결과에 대한 로그 데이터와 Slave에서 수정된 결과가 일치해야 한다는 것을 말한다.
+### 넥스트 키 락(Next Key ock)
+*코드 락과 갭락을 합쳐 놓은 형태의 잠금이다. 넥스트 키락은 Binary바이너리 로그에 기록되는 로그의 데이터의 정합성을 위해 사용한다. 이 정합성은 Master에서 수정된 결과에 대한 로그 데이터와 Slave에서 수정된 결과가 일치해야 한다는 것을 말한 것이 목적이이다.
 
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
-### Auto Increment Lock(자동증가 락)
+###  자동증가 락(Auto Iincrement Llock()
+자동 증가 락)
 
-AUTO_INCREMENT 기능이 사용된 테이블에선 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 순서대로 증가한 일련번호를 가져야한다. 이를 위해 InnoDB 스토리지 엔진에서는 내부적으로 AUTO_INCREMENT 락이라는 테이블 수준의 잠금을 제공한다.
+AUTO_INCREMENT 기능하는 숫자 값을 추출하기컬럼이 사용된 테이블에선 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 순서대로 증가한 일련번호를 가져야한다. 이를 위해 InnoDB 스토리지 엔진에서는 내부적으로 AUTO_INCREMENT 락이라는 테이블 수준의 잠금을 제공한다.
 
-이 락은 INSERT와 REPLACE 쿼리 문장과 같이 새로운 레코드를 입력하는 쿼리에서만 사용한다.  **UPDATE나 DELETE 쿼리에서는 걸리지 않는다.** 
+ 락은 INSERT와 REPLACE 쿼리 문장과 같이 새로운 레코드를 입력하는 쿼리에서만 사용한다. 필요**하며, **UPDATE나 DELETE 쿼리에서는 걸리지 않는다.** 
 
 다른 잠금과는 달리, 트랜잭션 관계없이 INSERT나 REPLACE 문장에서 AUTO_INCREMENT 값을 가져오는 순간만 AUTO_INCREMENT 락이 걸렸다가 즉시 해제된다. 
 
-AUTO_INCREMENT 락은 명시적으로 획득하고 해제하는 방법이 없다. 그리고 태이블 단위로 하나만 존재하기 때문에, 하나의 쿼리가 락을 걸게 되면 나머지 쿼리는 락 해제를 기다려야 한다. 일반적으로 아주 짧은 시간만 걸렸다가 해제가 되기 때문에 해당 락은 성능상 이슈가 크진 않다.
+AUTO_INCREMENT 락은 명시적으로 획득하고 해제하는 방법이 없다. 그리고 태이블 단위로 하나만 존재하기 때문에, 하나의 쿼리가 락을 걸게 되면 나머지 쿼리는 락 해제를 기다려야 한다. 일반적으로 아주 짧은 시간만 걸렸다가 해제가 되기 때대문에 해당 락은 성능상 이슈가 지 않다.
 
 ### InnoDB 인덱스와 잠금
 
-InnoDB의 잠금과 인덱스는 상당히 밀접한 관계가 있다. 왜냐하면 사실 **InnoDB의 잠금은 레코드를 잠그는 것이 아니라 인덱스를 잠그는 방식이다.** 즉, 변경 대상 레코드를 찾기 위해 사용한 모든 인덱스를 잠근다.
+InnoDB의 잠금과 인덱스는 상당히 밀접한 관계가 있다. 왜냐하면 사실 **InnoDB의 잠금은 레코드를 잠그는 것이 아니라 인덱스를 잠그는 방식이다.** 
+즉, 변경 대상해야할 레코드를 찾기 위해 사용한 모든 인덱스를 잠근다.
 
 ```
 SELECT * FROM employees WHERE first_name = 'Georgi'; //253건
@@ -207,9 +207,13 @@ SELECT * FROM employees WHERE first_name = 'Georgi' And last_name = 'Klassen'; 1
 UPDATE employees SET 
 WHERE first_name = 'Gorgi' AND last_name= 'Klassen'
 ```
-위 update 문장이 실행되면 최종적으로 1건의 레코드가 수정될 것이다. update where 조건에서 인덱스를 이용할 수 있는 컬럼은 first_name이고 first_name이 'Georgi'인 레코드가 총 253건이기 때문에 이 253건의 레코드가 모두 잠긴다. 이 예제에서는 253건만 잠그지만 update 작업을 위해 적절한 인덱스가 없다면 최악의 경우 테이블을 풀 스캔하면서 모든 레코드를 잠그게 된다. 
+위 updateUPDATE 문장이 실행되면 최종적으로 1건의 레코드가 수정업데이트될 것이다. update where 조건하지만 이 1건의 업데이에서 인덱스를 이용할 수 있는 컬럼은 first_name이고 first_name이 'Georgi'인 레코드가 총 253건이기 때문에 이 253건의 레코드가 모두 잠긴다. 이 예제에서는 253건만 잠그지만 update 작업UPDATE 문장을 위해 적절한히 인덱스가 없다면 최악의 경우 테이블을 풀 스캔하면서 모든 레코드를 잠그게 된다. 
 
-불필요한 레코드 잠금 현상은 InnoDB의 넥스트 키 락 때문에 발생하는 것이다. 하지만 InnoDB에서 네스트 키락을 필요하게 만드는 주 원인은 바로 복제를 위한 바이너리 로그 때문이다. **레코드 기반의 바이너리 로그를 사용하거나 바이너리 로그를 사용하지 않는 경우에는InnoDB의 갭 락이나 넥스트 키 락의 사용을 대폭 줄일 수 있다.** 
+준비되어 있지 않다면 각 클라이언트간의 동시성이 상당히 떨어져 한 세션에서 UPDATE 작업을 하고 있는 중에는 다른 클라이언트는 그 테이블을 업데이트하지 못하고 기다려야 하는 상황이 발생할 것이다. 
+
+만약 테이블에 인덱스가 하나도 없다면, 테이블을 풀 스캔하면서 UPDATE 작업을 하는데 이 과정에서 모든 레코드를 잠그게 된다. 따라서 MySQL의 InnoDB에서는 인덱스 설계가 너무나 중요하다. 
+
+위에 불필요한 레코드 잠금 현상은 InnoDB의 넥스트 키 락 때문에 발생하는 것이다. 하지만 InnoDB에서 네스트 키락을 필요하게 만드는 주 원인은 바로 복제를 위한 바이너리 로그 때대문이다. **레코드 기반의 바이너리 로그를 사용하거나 바이너리 로그를 사용하지 않는 경우에는InnoDB의 갭 락이나 넥스트 키 락의 사용을 대폭 줄일 수 있다.** 
 
 다음 조합으로 MySQL 서버가 기동하는 경우에는 InnoDB에서 사용되는 대부분의 갭락이나 넥스트 키락을 제거할 수 있다.
 
@@ -227,7 +231,7 @@ MySQL 5.0이하 버전에서는 **레코드 잠금에 대한 메타정보(딕셔
 ```
 SHOW PROCESSLIST; // 현재 실행 중인 프로세스 리스트
 
-SELECT * FROM information_schema.innodb_locks; // 어떤 잠금이 존재하는지를 관리한다. 잠금이나 대기가 발생할 경우, InnoDB 스토리지 엔진에서 관련 정보를 계속 테이블로 업데이트.
+SELECTma.innodb_locks; // 어떤 잠금이 존재하는지를 관리한다. 잠금이나 대기가 발생할 경우, InnoDB 스토리지 엔진에서 관련 정보를 계속 테이블로 업데이트.
 
 SELECT
 r.trx_id waiting_trx_id,
@@ -239,14 +243,15 @@ b.trx_query blocking_query
 FROM information_schema.innodb_lock_waits w // 어떤 잠금이 대기 상태인지 관리하는 테이블.
 INNER JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id
 INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
-// 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
+ * FROM information_sche// 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
 ```
 
 --- 
-5.0이하 버전에서 잠금 확인 및 해제를 확인하고 싶다면 SHOW ENGINE INNODB STATUS 쿼리를 실행하면 된다.
+5.0이하 버전에서 잠금 확인 및 해제를 확인하고 싶다면 SHOW ENGINE INNODB STATUS 쿼리명령어를 실행하면 된다.
  
 ```
-SHOW ENGINE INNODB STATUS; //5.0 이하버전
+SHOW ENGINE INNODB STATUS; //5.0 이하버전 
+```
 --- TRANSACTION 0 1770, not started, OS thread id 5472
 MySQL thread id 5, query id 225 localhost 127.0.0.1 root
 show engine innodb status
@@ -276,11 +281,11 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDUwMjU4MjAsMTUxODY0NzgyMywxMz
-g1NDM2ODczLDU2ODc5Nzc4NCwxNzAxMjM0NDkxLDE1MjkyNzk3
-NzIsMjAwNzQ1NDc1MSwtNzUyNDI4MzQ0LC0xNDMwNjQ5MTYyLD
-QzMjUwODg1OCwxNDgzNzk3NzQsLTU3Njk4MDQ4OCwtMTM5MTAy
-ODM5OCwxMDA5MDczNTg5LC00MDA5MjE2NTksLTE2MTI3ODE5Nz
-YsLTUwODY4MDc5Niw0NDU3Mzg4ODYsLTEzNzI5Mzg4NDIsLTkw
-ODY1MDE3OV19
+eyJoaXN0b3J5IjpbMjA1NTkwNTMzNiwtMjA0NTAyNTgyMCwxNT
+E4NjQ3ODIzLDEzODU0MzY4NzMsNTY4Nzk3Nzg0LDE3MDEyMzQ0
+OTEsMTUyOTI3OTc3MiwyMDA3NDU0NzUxLC03NTI0MjgzNDQsLT
+E0MzA2NDkxNjIsNDMyNTA4ODU4LDE0ODM3OTc3NCwtNTc2OTgw
+NDg4LC0xMzkxMDI4Mzk4LDEwMDkwNzM1ODksLTQwMDkyMTY1OS
+wtMTYxMjc4MTk3NiwtNTA4NjgwNzk2LDQ0NTczODg4NiwtMTM3
+MjkzODg0Ml19
 -->
