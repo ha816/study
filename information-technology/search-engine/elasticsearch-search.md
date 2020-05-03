@@ -101,8 +101,8 @@ Query DSL을 잉요해 검색 질의를 작성할 때 조금만 조건이 복잡
 
 ||쿼리 컨텍스트|필터 컨텍스트|
 |--|--|--|
-|용도|  |  |
-|특징|  |  |
+|용도|전문 검색시 사용 | 조건 검색시 사용|
+|특징| 분석기에 의해 분석 수행, 연관성 관련 Score 계산, 루씬 레벨에서 분석 과정을 거쳐야 하므로 상대적으로 느림 |  |
 |사용 예|  |  |
 
 
@@ -112,7 +112,7 @@ Query DSL을 잉요해 검색 질의를 작성할 때 조금만 조건이 복잡
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOT
-YzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1
-Nzk2LDU5MzY2MzEwOF19
+eyJoaXN0b3J5IjpbLTIxMjM5OTM2MjAsLTE1OTk4NzY0MjQsMz
+g4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjEx
+ODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
 -->
