@@ -406,17 +406,17 @@ POST movie_search/_search
 
 다행히 엘라스틱 서치에서는 분산 데이터 환경에서도 SQL 조인과 유사한 기능을 수행하는 Nested Query를 제공한다. 
 
-Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. Nested 데이터 타입은 문서 내부에 다른 문서가 존재할때 사용한다. path 옵션으로 
+Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. Nested 데이터 타입은 문서 내부에 다른 문서가 존재할때 사용한다. path 옵션으로 중첩된 필드를 명시하고, query 옵션에 Nested 필드 검색에 사용할 쿼리를 입력한다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4Nzk0NjEyLC0xODEwOTAyNjY1LDk0Nz
-QwODYyNywtMTAwNDU3Mjc5MiwtNTYxNjA4NTUyLC0xNTA5Njk4
-NTIsMTgzNjg4Mzc5Nyw3ODA4Mjk3MjcsMTQ3NjczOTYyNCwxND
-A0MDA0Nzk0LC0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMx
-MDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OT
-EsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkz
-NjYzMTA4XX0=
+eyJoaXN0b3J5IjpbMTc1MjAyMjMyMywtNzg3OTQ2MTIsLTE4MT
+A5MDI2NjUsOTQ3NDA4NjI3LC0xMDA0NTcyNzkyLC01NjE2MDg1
+NTIsLTE1MDk2OTg1MiwxODM2ODgzNzk3LDc4MDgyOTcyNywxND
+c2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5
+MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMy
+wtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3
+MTE0NTc5Nl19
 -->
