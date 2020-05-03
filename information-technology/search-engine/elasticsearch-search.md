@@ -427,12 +427,12 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 검색 요청시 타임아웃을 설정하는 것은 매우 중요한 일이다. 자칫 무거운 쿼리가 타임아웃 설정 없이 무한정 설정된다면 전체 시스템에 장애가 발생할 수도 있기 때문이다. 개별 검색 요청의 경우에는 Request Body에 직접 타임아웃을 설정할 수 있다. 하지만 이런 방식은 많은 불편을 초래하기 때문에 모든 검색 쿼리에 동일하게 적용되도록 정책으로 설정하는 것이 좋다. 
 
-글로벌로 적용되는 타임아웃의 기본 정책은 무제한(-1)
+글로벌로 적용되는 타임아웃의 기본 정책은 무제한(-1)이다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NTI4OTc1NCw5ODc1ODYzMTMsLTE0OD
+eyJoaXN0b3J5IjpbMTA3MjUwODcyOCw5ODc1ODYzMTMsLTE0OD
 g0MDQ5NjgsMTQ2OTIyNzcxMSwxMjA3NDU3MzEwLC03ODc5NDYx
 MiwtMTgxMDkwMjY2NSw5NDc0MDg2MjcsLTEwMDQ1NzI3OTIsLT
 U2MTYwODU1MiwtMTUwOTY5ODUyLDE4MzY4ODM3OTcsNzgwODI5
