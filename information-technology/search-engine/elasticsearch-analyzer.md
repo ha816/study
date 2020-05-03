@@ -190,7 +190,9 @@ Elasticsearch, 엘라스틱서치 -- 동의어 추가
 Harry => 해리 -- 동의어 치환
 ```
 
-동의어 사전은 실시간으로 적용되지 않는다. 수정된 동의어를 적용하고 싶다면 
+동의어 사전은 실시간으로 적용되지 않는다. 수정된 동의어를 적용하고 싶다면 해당 동의어 사전을 사용하고 있는 인덱스를 Reload해야 한다. 
+
+한 가지 주의해야할 점이 있다. 동의어 사전은 색인 시점에도 사용될 수 있고 검색 시점에도 사용할 수 있다는 점이다. 검색 시점에는 사전의 내용이 변경되면 그 내용이 반영된다. 하지만 색인 시점에 동의어 사전이 사용됬
 
 
 
@@ -203,7 +205,7 @@ Harry => 해리 -- 동의어 치환
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTc1MTc0MDgsMjEzOTEzMzgxNCw3Mj
+eyJoaXN0b3J5IjpbLTIwMzA1NDY4OTgsMjEzOTEzMzgxNCw3Mj
 g4OTg5NTUsLTE5NTQyNjAwODgsMTU3NzYxOTU0Niw1OTUzMjUy
 NTEsLTE0NjU0MTcwODAsMTQ2ODM5NzEzNCwtOTc4OTAyMDA4LD
 MyMDU4NDcxOSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX0=
