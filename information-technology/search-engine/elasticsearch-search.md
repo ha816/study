@@ -85,13 +85,21 @@ sort는 문서결과를 어떤 순서로 출력할지에 대한 공간이다.
 위의 JSON 형태는 기본 응답 구조이다. 
 took은 쿼리 수행 시간을 나타낸다.
 timed_out은 쿼리 시간이 초과할 경우 나타난다.
-total은 쿼리를 요청한 저체 샤드의 개수를 나타낸다.
+_shards.total은 쿼리를 요청한 저체 샤드의 개수를 나타낸다.
 successful은 성공적으로 응답한 샤드의 갯수를 나타낸다.
 failed는 응답에 실패한 샤드의 갯수를 나타낸다.
 
+_hits.total은 검색어에 매칭된 문서의 전체 개수를 나타낸다. 
+max_score는 일치하는 문서의 스코어 값중 가장 높은 값을 출력한다.
+hits는 각 문서 정보와 스코어 값을 보여준다. 
+
+## Query DSL 쿼리와 필터
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzk2NzQ1MDUsLTE5NjM2OTI2OTEsLT
-MwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYz
-MTA4XX0=
+eyJoaXN0b3J5IjpbMTg2ODAyNDk1MSwtMTk2MzY5MjY5MSwtMz
+A2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMx
+MDhdfQ==
 -->
