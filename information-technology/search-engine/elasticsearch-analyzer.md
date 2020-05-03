@@ -167,7 +167,7 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 동의어 사전 파일은 엘라스틱 서치가 설치된 서버 아래의 config 디렉터리에 생성해야 한다.
 
 ```
-
+<>
 ```
 
 
@@ -180,8 +180,8 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTQyNjAwODgsMTU3NzYxOTU0Niw1OT
-UzMjUyNTEsLTE0NjU0MTcwODAsMTQ2ODM5NzEzNCwtOTc4OTAy
-MDA4LDMyMDU4NDcxOSwtNDA5MjExOTU2LC0xMzc2MDYwNTMzXX
-0=
+eyJoaXN0b3J5IjpbMTQzMjc4NjU3MCwtMTk1NDI2MDA4OCwxNT
+c3NjE5NTQ2LDU5NTMyNTI1MSwtMTQ2NTQxNzA4MCwxNDY4Mzk3
+MTM0LC05Nzg5MDIwMDgsMzIwNTg0NzE5LC00MDkyMTE5NTYsLT
+EzNzYwNjA1MzNdfQ==
 -->
