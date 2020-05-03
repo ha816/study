@@ -411,17 +411,19 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 ## 효율적인 검색을 위한 환경설정
 
-엘라스틱서치는 대량의 데이터를 처리하기 위해 기본적으로 데이터를 분산해서 처리한다. 
+엘라스틱서치는 대량의 데이터를 처리하기 위해 기본적으로 데이터를 분산해서 처리한다. 그렇다면 빠른 검색을 위해 내부적으로 어떤 동작을 할까?
+
+검색 요청이 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzQ1NzMxMCwtNzg3OTQ2MTIsLTE4MT
-A5MDI2NjUsOTQ3NDA4NjI3LC0xMDA0NTcyNzkyLC01NjE2MDg1
-NTIsLTE1MDk2OTg1MiwxODM2ODgzNzk3LDc4MDgyOTcyNywxND
-c2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5
-MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMy
-wtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3
-MTE0NTc5Nl19
+eyJoaXN0b3J5IjpbMTY5OTc2MzU2LDEyMDc0NTczMTAsLTc4Nz
+k0NjEyLC0xODEwOTAyNjY1LDk0NzQwODYyNywtMTAwNDU3Mjc5
+MiwtNTYxNjA4NTUyLC0xNTA5Njk4NTIsMTgzNjg4Mzc5Nyw3OD
+A4Mjk3MjcsMTQ3NjczOTYyNCwxNDA0MDA0Nzk0LC0xMTk4OTIz
+ODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3NjQyNC
+wzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNCwxMTc2
+MTE4NTYwXX0=
 -->
