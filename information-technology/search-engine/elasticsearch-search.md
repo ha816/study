@@ -390,17 +390,19 @@ POST movie_search/_search
 
 보다시피 Bool Query를 이용하면 여러 개의 옵션을 조합해서 복잡한 조건을 구현할 수 있다. 위 JSON은 대표 장르가 "코미디"이고, 제작 국가에 "한국"이 포함되어 있으며 영화 타입 중 "단편"이 제외된 문서를 검색한다. 
 
-### Query String
+### Wildcard Query
 
-엘라스틱 서치는 기본적으로 내장된 쿼리 분석기가 있다. query_string 파라미터를 사용하는 쿼리를 사용하면 내장된 쿼리 분석기를 이용하는 질의를 작성할 수 있다. 
+검색어가 와일드 카드와 일치하는 구문을 찾는다. 이때 입력된 검색어는 형태소 분석이 이루어지지 않는다. 
 
+와일드 카드 옵션에는 *과 ?가 있다.
+*는 문자의 길이와 상관 없이 와일드 카드와 일치하는 모든 문서를 찾
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ3NDA4NjI3LC0xMDA0NTcyNzkyLC01Nj
-E2MDg1NTIsLTE1MDk2OTg1MiwxODM2ODgzNzk3LDc4MDgyOTcy
-NywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4MTgsNT
-E3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2
-MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYxMTg1Nj
-AsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbMTM4MjU4NjM1Niw5NDc0MDg2MjcsLTEwMD
+Q1NzI3OTIsLTU2MTYwODU1MiwtMTUwOTY5ODUyLDE4MzY4ODM3
+OTcsNzgwODI5NzI3LDE0NzY3Mzk2MjQsMTQwNDAwNDc5NCwtMT
+E5ODkyMzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAyMTUsLTE1OTk4
+NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MT
+QsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
 -->
