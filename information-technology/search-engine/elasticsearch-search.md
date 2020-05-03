@@ -12,12 +12,14 @@
 
 엘라스틱서치는 색인 시점에 분석기로 분석된 텀을 역색인 구조로 만들어 내부적으로 저장한다. 검색 시점에는 Keyword 타입과 같은 분석이 불가능한 데이터와 Text 타입과 같은 분석이 가능한 데이터를 구분해서 가능할 경우 분석기로 분석을 수행한다. 
 
+검색 API는 깁
+
 # Query DSL
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1ODE2MjAsMjA3MTE0NTc5Niw1OTM2Nj
-MxMDhdfQ==
+eyJoaXN0b3J5IjpbMTY4MzIzNDczOCwyMDcxMTQ1Nzk2LDU5Mz
+Y2MzEwOF19
 -->
