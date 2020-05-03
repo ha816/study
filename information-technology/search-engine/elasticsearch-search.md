@@ -192,14 +192,18 @@ POST movie_search, movie_auto/_search
 ...
 ```
 
+### operator 설정
+
+엘
+
 
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI3MTE0ODQ4LDE0MDQwMDQ3OTQsLTExOT
-g5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2
-NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LD
-ExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbMTQ3NjczOTYyNCwxNDA0MDA0Nzk0LC0xMT
+k4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3
+NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNC
+wxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
 -->
