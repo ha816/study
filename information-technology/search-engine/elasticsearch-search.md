@@ -1,9 +1,11 @@
 # Overview
 
-엘라스틱 서치는 인덱스에 저장된 문서를 검색하도록 다양한 검색 기능을 제공한다. 
+엘라스틱 서치는 인덱스에 저장된 문서를 검색하도록 다양한 검색 기능을 제공한다. 특정 문장이 검색어로 요청되면 분석기를 통해 분석된 토큰의 일치 여부를 판단해서 그 결과에 점수(score)를 매긴다. 이를 기반으로 순서를 적용해 결과를 사용자에게 최종적으로 출력하게 된다. 
+
+검색의 대상이 되는 필드는 분석이 되는 Text 타입의 유형이 ㄷ
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxOTU2NTA5XX0=
+eyJoaXN0b3J5IjpbNTczODkyMjQ5XX0=
 -->
