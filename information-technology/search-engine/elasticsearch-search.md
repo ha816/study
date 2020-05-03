@@ -50,14 +50,17 @@ Query DSL로 쿼리를 작성하려면 미리 정의된 문법에 따라 JSON �
 	"_source":{}
 	"query":{}
 	"aggs":{}
-	"aggs":{}
+	"sort":{}
+}
 ```
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMTkyODI4OCwtMTk2MzY5MjY5MSwtMz
-A2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMx
-MDhdfQ==
+eyJoaXN0b3J5IjpbNjk2NjUyMDg3LC0xOTYzNjkyNjkxLC0zMD
+Y3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEw
+OF19
 -->
