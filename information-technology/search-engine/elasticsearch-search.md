@@ -108,8 +108,17 @@ Query DSL을 잉요해 검색 질의를 작성할 때 조금만 조건이 복잡
 
 ### 쿼리 컨텍스트
 
-* 문서가 쿼리와 얼마나 유사한지 Score 계산을 한다.
-* 질의가 요청도리때 마다 루씬을 이용해 계산을 수행하고 결과가 캐싱되지 않는ㄷ
+* 문서가 쿼리와 얼마나 유사한지 스코어 계산을 한다.
+* 질의가 요청도리때 마다 루씬을 이용해 계산을 수행하고 결과가 캐싱되지 않는다.
+* 일반적으로 전문 검색에 많이 사용한다.
+* 캐싱 되지 않고 디스크 연산을 하기에 상대적으로 느리다.
+
+### 필터 컨텍스트
+
+* 쿼리의 조건과 문서가 일치하는지 판별한다.
+* 스코어 계산을 하지 않고 단순 매칭 여부를 검사한다.
+* 자주 사용되는 필터 결과는 내부적으로 캐싱해둔다.
+* 기본 메모리 연산을 수행하기에 빠륻
 
 ## Query DLS의 주요 파라미터
 
@@ -117,7 +126,7 @@ Query DSL을 잉요해 검색 질의를 작성할 때 조금만 조건이 복잡
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzA5MDI3MzAsLTE1OTk4NzY0MjQsMz
-g4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjEx
-ODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
+eyJoaXN0b3J5IjpbMTgwMDY2OTU2NywtMTU5OTg3NjQyNCwzOD
+gxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNCwxMTc2MTE4
+NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
 -->
