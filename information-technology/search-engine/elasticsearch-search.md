@@ -231,7 +231,11 @@ OR연산으로 검색할때 해당 파라미터를 사용하면 AND 연산자가
 }
 ...
 ```
-위와 같이 작성한다면 
+위와 같이 작성한다면  AND 연산과 동일한 효과를 낸다.
+
+### fuzziness 설정
+
+fuzziness 파라미터를 사용하면 단순히 같은 값을 찾는 match Query를 유사한 값을 찾는 Fuzzy Query로 변경할 ㅜㅅ 있다. 
 
 
 
@@ -239,9 +243,9 @@ OR연산으로 검색할때 해당 파라미터를 사용하면 AND 연산자가
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMzQ4NDg3OSwxNDc2NzM5NjI0LDE0MD
-QwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEw
-MjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MS
-wtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2
-NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbLTE2MTI5NDYzNjIsMTQ3NjczOTYyNCwxND
+A0MDA0Nzk0LC0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMx
+MDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OT
+EsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkz
+NjYzMTA4XX0=
 -->
