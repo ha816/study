@@ -419,13 +419,13 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 ### 동적 분배 방식 샤드 선택
 
-
+엘라스틱 서치는 부하 분산과 장애 극복을 위해 원본 샤드 데이터를 복제한 레플리카를 함께 운영한다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NjgwMTQyMywxMjA3NDU3MzEwLC03OD
+eyJoaXN0b3J5IjpbMTQ2OTIyNzcxMSwxMjA3NDU3MzEwLC03OD
 c5NDYxMiwtMTgxMDkwMjY2NSw5NDc0MDg2MjcsLTEwMDQ1NzI3
 OTIsLTU2MTYwODU1MiwtMTUwOTY5ODUyLDE4MzY4ODM3OTcsNz
 gwODI5NzI3LDE0NzY3Mzk2MjQsMTQwNDAwNDc5NCwtMTE5ODky
