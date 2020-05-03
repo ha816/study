@@ -419,17 +419,17 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 ### 동적 분배 방식 샤드 선택
 
-엘라스틱 서치는 부하 분산과 장애 극복을 위해 원본 샤드 데이터를 복제한 레플리카를 함께 운영한다. 
+엘라스틱 서치는 부하 분산과 장애 극복을 위해 원본 샤드 데이터를 복제한 레플리카를 함께 운영한다. 하지만 검색시 모든 샤드에서 검색을 수행하기 된다면 사용자에게 중복된 결과를 전달하게 될수도 있을 것이다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTIyNzcxMSwxMjA3NDU3MzEwLC03OD
-c5NDYxMiwtMTgxMDkwMjY2NSw5NDc0MDg2MjcsLTEwMDQ1NzI3
-OTIsLTU2MTYwODU1MiwtMTUwOTY5ODUyLDE4MzY4ODM3OTcsNz
-gwODI5NzI3LDE0NzY3Mzk2MjQsMTQwNDAwNDc5NCwtMTE5ODky
-MzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAyMTUsLTE1OTk4NzY0Mj
-QsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MTQsMTE3
-NjExODU2MF19
+eyJoaXN0b3J5IjpbLTE0ODg0MDQ5NjgsMTQ2OTIyNzcxMSwxMj
+A3NDU3MzEwLC03ODc5NDYxMiwtMTgxMDkwMjY2NSw5NDc0MDg2
+MjcsLTEwMDQ1NzI3OTIsLTU2MTYwODU1MiwtMTUwOTY5ODUyLD
+E4MzY4ODM3OTcsNzgwODI5NzI3LDE0NzY3Mzk2MjQsMTQwNDAw
+NDc5NCwtMTE5ODkyMzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAyMT
+UsLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC0z
+MDY3ODY4MTRdfQ==
 -->
