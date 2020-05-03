@@ -34,6 +34,9 @@ URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body�
 
 q 옵션에는 기본적으로 '[필드명]:검색어' 형태로 입력할 수 있으며, 예제와 같이 여러개의 필드를 검색할때는 공백을 입력한 후 추가적인 필드명과 검색어를 입력한다. 
 
+## Request Body 검색
+
+이 방식에서는 HTTP 요청시 본문에 JSON 혀애로 검색 조건을 기록해서 검색을 요청한다. 
 
 # Query DSL
 
@@ -41,6 +44,6 @@ q 옵션에는 기본적으로 '[필드명]:검색어' 형태로 입력할 수 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0OTIzNjY2OCwtMzA2Nzg2ODE0LDExNz
-YxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbLTE3MTc1MDMzMjUsLTMwNjc4NjgxNCwxMT
+c2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
 -->
