@@ -273,13 +273,13 @@ boost 설정은 검색에서 가장 많이 사용하는 파라미터 중 하나�
 
 ## Query DLS의 주요 쿼리
 
-
+엘라스틱서치에서 제공하는 검색 관련
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgwODI5NzI3LDE0NzY3Mzk2MjQsMTQwND
-AwNDc5NCwtMTE5ODkyMzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAy
-MTUsLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC
-0zMDY3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2
-MzEwOF19
+eyJoaXN0b3J5IjpbLTIyOTQzODI2LDc4MDgyOTcyNywxNDc2Nz
+M5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5MzA2
+LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMT
+k2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0
+NTc5Niw1OTM2NjMxMDhdfQ==
 -->
