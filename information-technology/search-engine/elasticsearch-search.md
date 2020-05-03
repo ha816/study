@@ -134,11 +134,13 @@ POST movie_search, movie_auto/_search
 ...
 ```
 
+### 쿼리 결과 페이징
+
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDE3MjI2MDcsLTE1OTk4NzY0MjQsMz
+eyJoaXN0b3J5IjpbLTE1MDEzMTAyMTUsLTE1OTk4NzY0MjQsMz
 g4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjEx
 ODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
 -->
