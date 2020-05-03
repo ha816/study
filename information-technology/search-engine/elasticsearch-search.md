@@ -269,13 +269,15 @@ boost 설정은 검색에서 가장 많이 사용하는 파라미터 중 하나�
 ...
 ```
 
-위 Fly 단어를 movieNm과 movieNmEn이라는 두 개의 필드에서 조회한다. 만약 한글 영화 제목이 일치하게 된다면
+위 Fly 단어를 movieNm과 movieNmEn이라는 두 개의 필드에서 조회한다. 만약 한글 영화 제목이 일치하게 된다면 한글 영화 제목에서 계산되는 스코어에 가중치 값으로 3을 곱하게 된다.
 
 ## Query DLS의 주요 쿼리
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE3MTI3ODg2LDE0NzY3Mzk2MjQsMTQwND
+eyJoaXN0b3J5IjpbNzgwODI5NzI3LDE0NzY3Mzk2MjQsMTQwND
 AwNDc5NCwtMTE5ODkyMzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAy
 MTUsLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC
 0zMDY3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2
