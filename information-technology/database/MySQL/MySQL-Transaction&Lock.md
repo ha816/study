@@ -108,7 +108,7 @@ T2 트랜잭션이 UPDATE가 아닌 INSERT를 했다는 점에 주목하자. UPD
 
 ### SERIALIZABLE
 
-SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 수준이다. 그만큼 성능은 느리다. 트랜잭션이 격리 수준이라면 읽기 작업도 읽기 잠금 
+SERIALIZABLE은 가장 단순한 격리수준이지만 가장 엄격한 격리 수준이다. 그만큼 성능은 느리다. 트랜잭션이 격리 수준이라면 읽기 작업도 읽기 잠금
 
 다행이 InnoDB 스토리지 엔진에서는 REPETABLE_READ 격리 수준에서도 PHANTOM_READ 현상이 발생하지 않기 때문에 굳이 SERIALIZABLE 수준을 사용할 필요는 없다. 
 
@@ -283,11 +283,11 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNTg2ODc2MiwtMjA0NTAyNTgyMCwxNT
-E4NjQ3ODIzLDEzODU0MzY4NzMsNTY4Nzk3Nzg0LDE3MDEyMzQ0
-OTEsMTUyOTI3OTc3MiwyMDA3NDU0NzUxLC03NTI0MjgzNDQsLT
-E0MzA2NDkxNjIsNDMyNTA4ODU4LDE0ODM3OTc3NCwtNTc2OTgw
-NDg4LC0xMzkxMDI4Mzk4LDEwMDkwNzM1ODksLTQwMDkyMTY1OS
-wtMTYxMjc4MTk3NiwtNTA4NjgwNzk2LDQ0NTczODg4NiwtMTM3
-MjkzODg0Ml19
+eyJoaXN0b3J5IjpbMzMwMjA1MjQwLC05MDU4Njg3NjIsLTIwND
+UwMjU4MjAsMTUxODY0NzgyMywxMzg1NDM2ODczLDU2ODc5Nzc4
+NCwxNzAxMjM0NDkxLDE1MjkyNzk3NzIsMjAwNzQ1NDc1MSwtNz
+UyNDI4MzQ0LC0xNDMwNjQ5MTYyLDQzMjUwODg1OCwxNDgzNzk3
+NzQsLTU3Njk4MDQ4OCwtMTM5MTAyODM5OCwxMDA5MDczNTg5LC
+00MDA5MjE2NTksLTE2MTI3ODE5NzYsLTUwODY4MDc5Niw0NDU3
+Mzg4ODZdfQ==
 -->
