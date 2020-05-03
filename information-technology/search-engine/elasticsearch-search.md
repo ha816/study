@@ -280,14 +280,19 @@ boost 설정은 검색에서 가장 많이 사용하는 파라미터 중 하나�
 match_all 파라미터를 사용하는 Match Al Query는 색인에 모든 문서를 검색하는 쿼리다. 가장 단순한 쿼리로 저장된 문서를 확인할 때 사용한다. 
 
 ```
-
+POST movie_search/_search
+{
+	"query": {
+		"match_all"
+	}
+}
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNjg4Mzc5Nyw3ODA4Mjk3MjcsMTQ3Nj
-czOTYyNCwxNDA0MDA0Nzk0LC0xMTk4OTIzODE4LDUxNzI1OTMw
-NiwtMTUwMTMxMDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1MjMsLT
-E5NjM2OTI2OTEsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzEx
-NDU3OTYsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbLTY5NzI0NzcwOSwxODM2ODgzNzk3LDc4MD
+gyOTcyNywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4
+MTgsNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LD
+M4ODE2MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYx
+MTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
 -->
