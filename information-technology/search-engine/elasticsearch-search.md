@@ -95,7 +95,9 @@ hits는 각 문서 정보와 스코어 값을 보여준다.
 
 ## Query DSL 쿼리와 필터
 
-Query DSL을 잉요해 검색 질의를 작성할 때 조금만 조건이 복잡해지더라도 여러 개의 작은 질의를 조합해서 사용해야 한다. 이때 작성되는 작은 질의들을 두 가지 혀ㅇ태
+Query DSL을 잉요해 검색 질의를 작성할 때 조금만 조건이 복잡해지더라도 여러 개의 작은 질의를 조합해서 사용해야 한다. 이때 작성되는 작은 질의들을 두 가지 형태로 나눠서 생각해 볼 수 있다. 실제 분석기에 의한 전문 분석이 필요한 경우와 단순시 필터 조건으로 검색이 가능한 경우다.
+
+엘라스틱 서치에서 전문 분석이 필요한 질의를 쿼리 컨텍스트라고 하며 단순 필터 조건 질의는 필터 컨텍스트라 구분하여 사
 
 ## Query DLS의 주요 파라미터
 
@@ -103,7 +105,7 @@ Query DSL을 잉요해 검색 질의를 작성할 때 조금만 조건이 복잡
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMjExODA5NSwzODgxNjE1MjMsLTE5Nj
-M2OTI2OTEsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3
-OTYsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbLTIwNTk2NzQ5ODMsMzg4MTYxNTIzLC0xOT
+YzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1
+Nzk2LDU5MzY2MzEwOF19
 -->
