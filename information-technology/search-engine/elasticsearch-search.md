@@ -338,12 +338,26 @@ Term Query는 Keyword 데이터 타입을 대상으로 하기 때문에 일반�
 
 관계형 DBMS에서는 AND, OR 조건으로 묶은 여러 조건을 WHERE 절에서 사용할 수 있다. 엘라스틱서치에서는 하나의 쿼리나 여러 개의 쿼리를 조합해서 더 높은 스코어를 가진 쿼리 조건으로 검색을 할 수 있다 이런 유형의 쿼리를 Compound Query라 하는다, 이를 구현하기 위해 엘라스틱 서치에선 Bool Query를 제공한다. Bool Query를 상위에 두고 하위에 다른 Query들을 사용해 복잡한 조건의 쿼리문을 작성할 수 있다. 
 
-Bool Query sm
+Bool Query는 주어진 쿼리와 논리적으로 일치하는 문서를 복합적으로 검색한다. 
+
+```
+POST movie_search/_search
+{
+	"query": {
+		"bool": {
+			"must": [],
+			"must_not": [],
+			"should": [],
+			"should": []
+		}
+	}
+}
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MjU2MzY3MCwtNTYxNjA4NTUyLC0xNT
+eyJoaXN0b3J5IjpbMTI2NzE2OTI3OCwtNTYxNjA4NTUyLC0xNT
 A5Njk4NTIsMTgzNjg4Mzc5Nyw3ODA4Mjk3MjcsMTQ3NjczOTYy
 NCwxNDA0MDA0Nzk0LC0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMT
 UwMTMxMDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2
