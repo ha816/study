@@ -95,13 +95,15 @@ hits는 각 문서 정보와 스코어 값을 보여준다.
 
 ## Query DSL 쿼리와 필터
 
+Query DSL을 잉요해 검색 질의를 작성할 때 조금만 조건이 복잡해지더라도 여러 개의 작은 질의를 조합해서 사용해야 한다. 이때 작성되는 작은 질의들을 두 가지 혀ㅇ태
+
 ## Query DLS의 주요 파라미터
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMD
-Y3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEw
-OF19
+eyJoaXN0b3J5IjpbLTQxMjExODA5NSwzODgxNjE1MjMsLTE5Nj
+M2OTI2OTEsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3
+OTYsNTkzNjYzMTA4XX0=
 -->
