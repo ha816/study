@@ -136,11 +136,16 @@ POST movie_search, movie_auto/_search
 
 ### 쿼리 결과 페이징
 
+페이징 구현을 위해선 from 파라미터와 size 파라미터를 사용한다. 제공되는 문서의 시작을 from으로 문서 갯수를 size로 나타낸다.
+
+1 페이질from 0, size = 10으로 
+
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDEzMTAyMTUsLTE1OTk4NzY0MjQsMz
-g4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjEx
-ODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
+eyJoaXN0b3J5IjpbMTA5NTMwMzQ3OCwtMTUwMTMxMDIxNSwtMT
+U5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4
+NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX
+0=
 -->
