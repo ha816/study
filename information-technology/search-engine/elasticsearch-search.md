@@ -237,7 +237,9 @@ OR연산으로 검색할때 해당 파라미터를 사용하면 AND 연산자가
 
 fuzziness 파라미터를 사용하면 단순히 같은 값을 찾는 match Query를 유사한 값을 찾는 Fuzzy Query로 변경할 수 있다. 이는 레벤 슈타인 편집 거리 알고리즘을 기반으로 문서의 필드 값을 여러번 변경하는 방식으로 동작한다. 유사한 검색 결과를 찾기 위해 허용 범위의 텀으로 변경해 가며 문서를 찾아 결과를 출력한다. 
 
-예를 들어, 편집 거리 수를 2로 설정하면 오차범위가 두 글자이하인 검색 결과까지 포함하여 결과를 출력한다. 오차범위 값으로 0,1,2 AUTO 총 4
+예를 들어, 편집 거리 수를 2로 설정하면 오차범위가 두 글자이하인 검색 결과까지 포함하여 결과를 출력한다. 오차범위 값으로 0,1,2 AUTO 총 4가지를 사용할 수 있는데, 알파벳에는 유용하지만 한국어에는 적용하기 어렵다. 
+
+예를 들어
 
 
 
@@ -245,9 +247,9 @@ fuzziness 파라미터를 사용하면 단순히 같은 값을 찾는 match Quer
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDI2MjkyNTYsMTQ3NjczOTYyNCwxND
-A0MDA0Nzk0LC0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMx
-MDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OT
-EsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkz
-NjYzMTA4XX0=
+eyJoaXN0b3J5IjpbLTc0NTA1MzkxNSwxNDc2NzM5NjI0LDE0MD
+QwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEw
+MjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MS
+wtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2
+NjMxMDhdfQ==
 -->
