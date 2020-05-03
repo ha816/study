@@ -429,16 +429,26 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 글로벌로 적용되는 타임아웃의 기본 정책은 무제한(-1)이다. 
 
-## 
+## Search Shards API
+
+Search Shards API를 이용하면 검색이 수행되는 노드 및 샤드에 대한 정보를 확인할 수 있다. 이런 정보는 질의를 최적화하거나 질의가 정상적으로 수행되지 않을때 문제를 해결하는데 유용하다.
+
+```
+POST movie_search/_search_shards
+```
+
+## Multi Search API
+
+여러 건의 검색 요청을
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2OTM2MjcyLDEwNzI1MDg3MjgsOTg3NT
-g2MzEzLC0xNDg4NDA0OTY4LDE0NjkyMjc3MTEsMTIwNzQ1NzMx
-MCwtNzg3OTQ2MTIsLTE4MTA5MDI2NjUsOTQ3NDA4NjI3LC0xMD
-A0NTcyNzkyLC01NjE2MDg1NTIsLTE1MDk2OTg1MiwxODM2ODgz
-Nzk3LDc4MDgyOTcyNywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLT
-ExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5
-ODc2NDI0XX0=
+eyJoaXN0b3J5IjpbMTMyODgzNjc3OSwxMDcyNTA4NzI4LDk4Nz
+U4NjMxMywtMTQ4ODQwNDk2OCwxNDY5MjI3NzExLDEyMDc0NTcz
+MTAsLTc4Nzk0NjEyLC0xODEwOTAyNjY1LDk0NzQwODYyNywtMT
+AwNDU3Mjc5MiwtNTYxNjA4NTUyLC0xNTA5Njk4NTIsMTgzNjg4
+Mzc5Nyw3ODA4Mjk3MjcsMTQ3NjczOTYyNCwxNDA0MDA0Nzk0LC
+0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5
+OTg3NjQyNF19
 -->
