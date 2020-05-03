@@ -295,14 +295,16 @@ POST movie_search/_search
 POST movie_search/_search
 {
 	"query": {
-		"match_all": {}
+		"match": "그대 장미"
 	}
 }
 ```
 
+"그대 장미"라는 검색어로 Match Query를 요청했기 때문에 해당 질의를 "그대", "장미"
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjQ5NTM0OTYsMTgzNjg4Mzc5Nyw3OD
+eyJoaXN0b3J5IjpbLTE2MjUwNjA1MDcsMTgzNjg4Mzc5Nyw3OD
 A4Mjk3MjcsMTQ3NjczOTYyNCwxNDA0MDA0Nzk0LC0xMTk4OTIz
 ODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3NjQyNC
 wzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNCwxMTc2
