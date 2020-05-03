@@ -369,9 +369,20 @@ POST movie_search/_search
 					"term" : {
 						"repGenreNm": "코미디"
 					}
+				},
+				{
+					"match" : {
+						"repNationNm": "한국"
+					}
 				}
 			],
-			"must_not": [],
+			"must_not": [
+				{
+					"match" : {
+						"typeNm" : "단편"
+					}
+				}
+			],
 		}
 	}
 }
@@ -380,7 +391,7 @@ POST movie_search/_search
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM1ODE3NjMwLC0xMDA0NTcyNzkyLC01Nj
+eyJoaXN0b3J5IjpbLTY5OTU5NTE3LC0xMDA0NTcyNzkyLC01Nj
 E2MDg1NTIsLTE1MDk2OTg1MiwxODM2ODgzNzk3LDc4MDgyOTcy
 NywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4MTgsNT
 E3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2
