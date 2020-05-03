@@ -26,8 +26,8 @@ URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body�
 |df |  |쿼리에 검색을 수행할 필드가 지정되지 않았을 경우, 기본 값으로 검색할 필드를 지정한다|
 |analyzer| 검색 새당 필드에 설정된 형태소 분석기|문자열을 형태소 분석할때 사용할 분석기를 지정한다.|
 |analyzer_wildcard| false|와일드카드 검색 활성화여부를 지정한다.|
-|default_operator|OR||
-|_source|  ||
+|default_operator|OR|두 개 이상의 검색 조건이 쿼리 문자열에 포함된 경우 검색 조건 연산자를 설정한다.|
+|_source| true| |
 |sort|  ||
 |from|  ||
 |size|  ||
@@ -39,6 +39,6 @@ URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MjA3NjcwMywxMTc2MTE4NTYwLDIwNz
+eyJoaXN0b3J5IjpbLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNz
 ExNDU3OTYsNTkzNjYzMTA4XX0=
 -->
