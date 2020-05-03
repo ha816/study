@@ -118,15 +118,21 @@ Query DSL을 잉요해 검색 질의를 작성할 때 조금만 조건이 복잡
 * 쿼리의 조건과 문서가 일치하는지 판별한다.
 * 스코어 계산을 하지 않고 단순 매칭 여부를 검사한다.
 * 자주 사용되는 필터 결과는 내부적으로 캐싱해둔다.
-* 기본 메모리 연산을 수행하기에 빠륻
+* 기본 메모리 연산을 수행하기에 빠르다.
 
 ## Query DLS의 주요 파라미터
+
+쿼리를 작성할때 공통적으로 자주 사용되는 주요 파라미터가 무엇이 있는지 알아보도록 하자.
+
+### Multi Index 검색
+
+기본적으로 모든 검색 요청은 Multi Index 및 Multi Type검색이 가능하다. 이러한 특성 덕에 다수의 인덱스를 검색해야 할때도 한
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMDY2OTU2NywtMTU5OTg3NjQyNCwzOD
-gxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNCwxMTc2MTE4
-NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbLTE5NDk0MDI3NzIsLTE1OTk4NzY0MjQsMz
+g4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjEx
+ODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
 -->
