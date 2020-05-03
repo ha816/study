@@ -388,15 +388,15 @@ POST movie_search/_search
 }
 ```
 
-보다시피 Bool Query를 이용하면 여러 개의 옵션을 조합해서 복잡한 조건을 구현할 수 있다. 위 JSON은 대표 장르가 "코미디"이고, 제작 국가에 "한국"이 포함되어 있으며
+보다시피 Bool Query를 이용하면 여러 개의 옵션을 조합해서 복잡한 조건을 구현할 수 있다. 위 JSON은 대표 장르가 "코미디"이고, 제작 국가에 "한국"이 포함되어 있으며 영화 타입 중 "단편"이 제외된 문서를 검색한다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NTY1MzU2MiwtMTAwNDU3Mjc5MiwtNT
-YxNjA4NTUyLC0xNTA5Njk4NTIsMTgzNjg4Mzc5Nyw3ODA4Mjk3
-MjcsMTQ3NjczOTYyNCwxNDA0MDA0Nzk0LC0xMTk4OTIzODE4LD
-UxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3NjQyNCwzODgx
-NjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNCwxMTc2MTE4NT
-YwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbMzk4MTI0OTc0LC0xMDA0NTcyNzkyLC01Nj
+E2MDg1NTIsLTE1MDk2OTg1MiwxODM2ODgzNzk3LDc4MDgyOTcy
+NywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4MTgsNT
+E3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2
+MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYxMTg1Nj
+AsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
 -->
