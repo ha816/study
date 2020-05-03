@@ -283,16 +283,28 @@ match_all 파라미터를 사용하는 Match Al Query는 색인에 모든 문서
 POST movie_search/_search
 {
 	"query": {
-		"match_all"
+		"match_all": {}
+	}
+}
+```
+
+### Match Query
+
+텍스트, 숫자, 날짜 등이 포함된 문장을 형태소 분석을 통해 텀으로 분리한 후 이 텀들로 검색 질의를 수행한다.
+```
+POST movie_search/_search
+{
+	"query": {
+		"match_all": {}
 	}
 }
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NzI0NzcwOSwxODM2ODgzNzk3LDc4MD
-gyOTcyNywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLTExOTg5MjM4
-MTgsNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2NDI0LD
-M4ODE2MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LDExNzYx
-MTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbLTExMjQ5NTM0OTYsMTgzNjg4Mzc5Nyw3OD
+A4Mjk3MjcsMTQ3NjczOTYyNCwxNDA0MDA0Nzk0LC0xMTk4OTIz
+ODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3NjQyNC
+wzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNCwxMTc2
+MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
 -->
