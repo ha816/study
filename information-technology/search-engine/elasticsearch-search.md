@@ -53,14 +53,14 @@ Query DSL로 쿼리를 작성하려면 미리 정의된 문법에 따라 JSON �
 	"sort":{}
 }
 ```
-
-
+size는 리턴 받는 결과의 갯수를 지정한다. 기본값은 10이다
+from은 몇 번째 문서부터 가져올지 지정한다. 기본값은 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2NjUyMDg3LC0xOTYzNjkyNjkxLC0zMD
-Y3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEw
-OF19
+eyJoaXN0b3J5IjpbLTE0ODE0MjYwNjIsLTE5NjM2OTI2OTEsLT
+MwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYz
+MTA4XX0=
 -->
