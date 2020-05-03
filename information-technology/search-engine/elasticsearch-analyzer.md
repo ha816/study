@@ -199,6 +199,12 @@ Harry => 해리 -- 동의어 치환
 Elasticsearch Harry Potter
 ```
 
+결과는 아래와 같다.
+```
+elasticsearch
+
+```
+
 
 
 
@@ -210,9 +216,9 @@ Elasticsearch Harry Potter
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg5NjkxMTAxLDEzOTAxMzc3NzUsLTE0Nj
-kwMTQ0OTIsMjEzOTEzMzgxNCw3Mjg4OTg5NTUsLTE5NTQyNjAw
-ODgsMTU3NzYxOTU0Niw1OTUzMjUyNTEsLTE0NjU0MTcwODAsMT
-Q2ODM5NzEzNCwtOTc4OTAyMDA4LDMyMDU4NDcxOSwtNDA5MjEx
-OTU2LC0xMzc2MDYwNTMzXX0=
+eyJoaXN0b3J5IjpbMjA1NjEwMjY0MSwxMzkwMTM3Nzc1LC0xND
+Y5MDE0NDkyLDIxMzkxMzM4MTQsNzI4ODk4OTU1LC0xOTU0MjYw
+MDg4LDE1Nzc2MTk1NDYsNTk1MzI1MjUxLC0xNDY1NDE3MDgwLD
+E0NjgzOTcxMzQsLTk3ODkwMjAwOCwzMjA1ODQ3MTksLTQwOTIx
+MTk1NiwtMTM3NjA2MDUzM119
 -->
