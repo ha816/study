@@ -201,11 +201,12 @@ Elasticsearch Harry
 
 결과는 아래와 같다.
 ```
-elasticsearch 
+elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 엘라스틱서치 -- 새로운 동의어 토큰이 추가
 해리 -- Harry를 치환하는 대체 동의어 토큰
 ```
 
+언급했듯이 동의어 사전이 변경될 경우 이를 인식시키기 위해서는 인덱스를 Reload해야 한다. 동의어 사전 데이터는 모두 메모리에 올라가 있는데 이를 
 
 
 
@@ -217,9 +218,9 @@ elasticsearch
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzU1MzYwMjgsMTM5MDEzNzc3NSwtMT
-Q2OTAxNDQ5MiwyMTM5MTMzODE0LDcyODg5ODk1NSwtMTk1NDI2
-MDA4OCwxNTc3NjE5NTQ2LDU5NTMyNTI1MSwtMTQ2NTQxNzA4MC
-wxNDY4Mzk3MTM0LC05Nzg5MDIwMDgsMzIwNTg0NzE5LC00MDky
-MTE5NTYsLTEzNzYwNjA1MzNdfQ==
+eyJoaXN0b3J5IjpbLTI0NTMyNDIxOCwxMzkwMTM3Nzc1LC0xND
+Y5MDE0NDkyLDIxMzkxMzM4MTQsNzI4ODk4OTU1LC0xOTU0MjYw
+MDg4LDE1Nzc2MTk1NDYsNTk1MzI1MjUxLC0xNDY1NDE3MDgwLD
+E0NjgzOTcxMzQsLTk3ODkwMjAwOCwzMjA1ODQ3MTksLTQwOTIx
+MTk1NiwtMTM3NjA2MDUzM119
 -->
