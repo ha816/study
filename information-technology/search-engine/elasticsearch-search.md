@@ -140,14 +140,18 @@ POST movie_search, movie_auto/_search
 
 1 페이지를 from = 0, size = 10으로 조회했다면, 2페이지는 from= 10, size = 10으로 조회하면 된다. 
 
-주의할 점은 RDBMS와는 다르게 해당 문서만 선택적으로 가져오는 것이 아니라 모든 데이터를 읽고 그 중에서 조건에 맞는 결과를 반환한다. 예를 들어 위 예제와 같이 2페이
+**주의할 점은 RDBMS와는 다르게 해당 문서만 선택적으로 가져오는 것이 아니라 모든 데이터를 읽고 그 중에서 조건에 맞는 결과를 반환한다.** 예를 들어 위 예제와 같이 2페이지를 읽으려고 하더라도 총 20건의 문서를 읽어야 한다. 전체를 읽어서 사이즈 만큼 필터링 해서 제공하는 구조이기 때문에 페이지 번호가 높아질 수록 쿼리 비용이 높아질수 밖에 없다는 점을 명심하자. 
+
+### 쿼리 결과 정렬
+
+엘라스틱 서치는 기본적으로 
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MjI2Mjg1MywtMTUwMTMxMDIxNSwtMT
-U5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4
-NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX
-0=
+eyJoaXN0b3J5IjpbMTEyMDc1NDcwLC0xNTAxMzEwMjE1LC0xNT
+k5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2
+ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ
+==
 -->
