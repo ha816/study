@@ -32,7 +32,7 @@ URI 방법은 루씬에서 사용하는 전통적인 방식이고 Request Body�
 |from|  |검색을 시작할 문서의 위치를 지정한다|
 |size|  |반환할 검색 결과 갯수를 설정한다.|
 
-q 옵션에는 기본적으로 '필듬'
+q 옵션에는 기본적으로 '[필드명]:검색어' 형태로 입력할 수 있으며, 예제와 같이 여러개의 필드를 검색할때는 공백을 입력한 후 추가적인 필드명과 검색어를 입력한다. 
 
 
 # Query DSL
@@ -41,6 +41,6 @@ q 옵션에는 기본적으로 '필듬'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzI1MTg0NzQsLTMwNjc4NjgxNCwxMT
-c2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbMTM0OTIzNjY2OCwtMzA2Nzg2ODE0LDExNz
+YxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
 -->
