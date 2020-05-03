@@ -149,18 +149,24 @@ POST movie_search, movie_auto/_search
 ```
 ...
 "sort" : {
-	"o"
+	"col1": {
+	"order": "asc"
+	},
+	"_score": {
+	"order": "desc"
+	}
 }
-
 ```
+
+### 
 
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEzNjcyOTM1LDUxNzI1OTMwNiwtMTUwMT
-MxMDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2
-OTEsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNT
-kzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbLTgxMTkwNTg5Nyw1MTcyNTkzMDYsLTE1MD
+EzMTAyMTUsLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjky
+NjkxLC0zMDY3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LD
+U5MzY2MzEwOF19
 -->
