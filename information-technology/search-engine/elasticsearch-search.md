@@ -65,21 +65,27 @@ sort는 문서결과를 어떤 순서로 출력할지에 대한 공간이다.
 
 ```
 {
-	"size":
-	"from":
-	"timeout":
+	"took":
+	"timed_out":
 	
-	"_source":{}
-	"query":{}
-	"aggs":{}
-	"sort":{}
+	"_shards":{
+		"total":
+		"successful":
+		"failed":
+	},
+
+	"hits":{
+		"total":
+		"max_score":
+		"hits":[]
+	}
 }
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4Njg2ODkzLC0xOTYzNjkyNjkxLC0zMD
-Y3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEw
-OF19
+eyJoaXN0b3J5IjpbMTg1NDI4NjQ2NCwtMTk2MzY5MjY5MSwtMz
+A2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMx
+MDhdfQ==
 -->
