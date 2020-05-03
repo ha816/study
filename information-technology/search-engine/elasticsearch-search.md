@@ -459,10 +459,18 @@ Multi Search API를 사용하면 동시에 여러 개의 색인에서 검색을 
 POST movie_search/_count?q=prdtYear:2017
 ```
 
+## Validate API
+
+쿼리를 실행하기에 앞서 쿼리가 유효하게 작성됬는지 검증한다.
+
+```
+POST movie_search/_validate/query?q=prdtYear:2017
+```
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDc3NTQ4MzYsOTY3NzAxOTg5LDEwNz
+eyJoaXN0b3J5IjpbLTEyMDk4MDE5MDAsOTY3NzAxOTg5LDEwNz
 I1MDg3MjgsOTg3NTg2MzEzLC0xNDg4NDA0OTY4LDE0NjkyMjc3
 MTEsMTIwNzQ1NzMxMCwtNzg3OTQ2MTIsLTE4MTA5MDI2NjUsOT
 Q3NDA4NjI3LC0xMDA0NTcyNzkyLC01NjE2MDg1NTIsLTE1MDk2
