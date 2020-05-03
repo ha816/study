@@ -357,15 +357,29 @@ POST movie_search/_search
 must의 필드에는 반드시 조건에 만족하는 문서만 검색된다.
 must_not 필드에는 조건을 만족하지 않는 문서가 검색된다.
 should필드에는 여러 조건 중 하나 이상을 만족하는 문서가 검색된다.
-filter 필드에는
+filter 필드에는 조건을 포함하고 있는 문서를 포함한다.
+
+```
+POST movie_search/_search
+{
+	"query": {
+		"bool": {
+			"must": [],
+			"must_not": [],
+			"should": [],
+			"filter": []
+		}
+	}
+}
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMTE4MjM3MiwtNTYxNjA4NTUyLC0xNT
-A5Njk4NTIsMTgzNjg4Mzc5Nyw3ODA4Mjk3MjcsMTQ3NjczOTYy
-NCwxNDA0MDA0Nzk0LC0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMT
-UwMTMxMDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2
-OTI2OTEsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OT
-YsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbLTEwMDQ1NzI3OTIsLTU2MTYwODU1MiwtMT
+UwOTY5ODUyLDE4MzY4ODM3OTcsNzgwODI5NzI3LDE0NzY3Mzk2
+MjQsMTQwNDAwNDc5NCwtMTE5ODkyMzgxOCw1MTcyNTkzMDYsLT
+E1MDEzMTAyMTUsLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYz
+NjkyNjkxLC0zMDY3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nz
+k2LDU5MzY2MzEwOF19
 -->
