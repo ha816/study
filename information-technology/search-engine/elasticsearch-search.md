@@ -160,15 +160,22 @@ POST movie_search, movie_auto/_search
 
 ### _source 필드 필터링
 
-기본적으로 _source 항목은 문서 내부에 존재하는 모든 필드를 결과로 제공한다. 
+기본적으로 _source 항목은 문서 내부에 존재하는 모든 필드를 결과로 제공한다. 하지만 항상 모든 필드는 볼 필요는 없으며, 필요에 따라 특정 필드를 검색 결과에서 제거하고 싶을때도 있을 것이다. 그럴땐 _soucre 필드를 필터링 옵션으로 필요한 필드만 검색해서 가져올 수 있다.
+
+```
+...
+
+
+
+```
 
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNT
-AxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5
-MjY5MSwtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Ni
-w1OTM2NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbNTk5NTY3NTk3LC0xMTk4OTIzODE4LDUxNz
+I1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1
+MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLD
+IwNzExNDU3OTYsNTkzNjYzMTA4XX0=
 -->
