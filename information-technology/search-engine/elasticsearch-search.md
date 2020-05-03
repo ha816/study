@@ -158,15 +158,17 @@ POST movie_search, movie_auto/_search
 }
 ```
 
-### 
+### _source 필드 필터링
+
+기본적으로 _source 항목은 문서 내부에 존재하는 모든 필드를 결과로 제공한다. 
 
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMTkwNTg5Nyw1MTcyNTkzMDYsLTE1MD
-EzMTAyMTUsLTE1OTk4NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjky
-NjkxLC0zMDY3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LD
-U5MzY2MzEwOF19
+eyJoaXN0b3J5IjpbLTExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNT
+AxMzEwMjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5
+MjY5MSwtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Ni
+w1OTM2NjMxMDhdfQ==
 -->
