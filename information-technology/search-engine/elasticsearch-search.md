@@ -198,15 +198,29 @@ POST movie_search, movie_auto/_search
 
 Query DLS에서는 operator 파라미터로 연산자를 명시하는게 가능하다. 기본적으로 "and"나 "or" 연산자를 명시적으로 지정이 가능하다. 
 
+```
+...
+"query" : {
+	"match" : {
+		"movieNm" : {
+			"query": "자전차왕 엄복동",
+			"operator": "and"
+		}
+	}
+}
+...
+```
+
+operator를 생략하면 OR연산으로 동작해서 "자전차왕 혹은 엄복동
 
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNDA1MTM0OCwxNDc2NzM5NjI0LDE0MD
-QwMDQ3OTQsLTExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEw
-MjE1LC0xNTk5ODc2NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MS
-wtMzA2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2
-NjMxMDhdfQ==
+eyJoaXN0b3J5IjpbLTEzNTQxMjUyNDUsMTQ3NjczOTYyNCwxND
+A0MDA0Nzk0LC0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMx
+MDIxNSwtMTU5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OT
+EsLTMwNjc4NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkz
+NjYzMTA4XX0=
 -->
