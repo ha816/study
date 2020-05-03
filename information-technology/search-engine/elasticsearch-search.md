@@ -174,10 +174,10 @@ POST movie_search, movie_auto/_search
 
 | 문법| 연산자  | 설명 |
 |--|--|--|
-|lt  | < |피|
-|lg  |  |
-|lg  |  |
-|lg  |  |
+|lt(lower than)  | < | |
+|gt(greater than)  | > |
+|lte  | |
+|gte  |  |
 
 
 
@@ -185,7 +185,7 @@ POST movie_search, movie_auto/_search
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNDMyMDU2NCwtMTE5ODkyMzgxOCw1MT
+eyJoaXN0b3J5IjpbMTQwNDAwNDc5NCwtMTE5ODkyMzgxOCw1MT
 cyNTkzMDYsLTE1MDEzMTAyMTUsLTE1OTk4NzY0MjQsMzg4MTYx
 NTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MTQsMTE3NjExODU2MC
 wyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
