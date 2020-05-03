@@ -439,16 +439,24 @@ POST movie_search/_search_shards
 
 ## Multi Search API
 
-여러 건의 검색 요청을
+여러 건의 검색 요청을 통합해서 한번에 요청하고 한번에 결과를 가져올때 사용하는 API다. 
+
+```
+POST _msearch
+{"index":"movie_auto"}
+
+```
+
+Multi Search API를 사용하면 동시에 여러 개의 색인에서 검색을 수행할 수 있으므로 사용자별 맞춤 페이지등을 구현할때 여러 인덱스에서 사용자별로 특화된 정보를 가져올때 유용하게 사용할 수 있다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyODgzNjc3OSwxMDcyNTA4NzI4LDk4Nz
-U4NjMxMywtMTQ4ODQwNDk2OCwxNDY5MjI3NzExLDEyMDc0NTcz
-MTAsLTc4Nzk0NjEyLC0xODEwOTAyNjY1LDk0NzQwODYyNywtMT
-AwNDU3Mjc5MiwtNTYxNjA4NTUyLC0xNTA5Njk4NTIsMTgzNjg4
-Mzc5Nyw3ODA4Mjk3MjcsMTQ3NjczOTYyNCwxNDA0MDA0Nzk0LC
-0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5
-OTg3NjQyNF19
+eyJoaXN0b3J5IjpbOTY3NzAxOTg5LDEwNzI1MDg3MjgsOTg3NT
+g2MzEzLC0xNDg4NDA0OTY4LDE0NjkyMjc3MTEsMTIwNzQ1NzMx
+MCwtNzg3OTQ2MTIsLTE4MTA5MDI2NjUsOTQ3NDA4NjI3LC0xMD
+A0NTcyNzkyLC01NjE2MDg1NTIsLTE1MDk2OTg1MiwxODM2ODgz
+Nzk3LDc4MDgyOTcyNywxNDc2NzM5NjI0LDE0MDQwMDQ3OTQsLT
+ExOTg5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5
+ODc2NDI0XX0=
 -->
