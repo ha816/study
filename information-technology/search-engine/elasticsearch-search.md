@@ -325,13 +325,16 @@ POST movie_search/_search
 텍스트 형태의 값을 검색하기 위해서 엘라스틱 서치는 두 가지 매핑 유형을 지원한다.
 
 Text 데이터 타입
+: 필드에 데이터가 저장되기 전에 데이터가 분석되어 역색인 구조로 저장된다. 
+
+Keyword 데이터 타입
+: 데이터가 분석되지 않고 그대로 필드에 저장된다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg3NDAwMTI2LC0xNTA5Njk4NTIsMTgzNj
-g4Mzc5Nyw3ODA4Mjk3MjcsMTQ3NjczOTYyNCwxNDA0MDA0Nzk0
-LC0xMTk4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMT
-U5OTg3NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4
-NjgxNCwxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX
-0=
+eyJoaXN0b3J5IjpbMjEzNDA4MSwtMTUwOTY5ODUyLDE4MzY4OD
+M3OTcsNzgwODI5NzI3LDE0NzY3Mzk2MjQsMTQwNDAwNDc5NCwt
+MTE5ODkyMzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAyMTUsLTE1OT
+k4NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4
+MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
 -->
