@@ -179,14 +179,27 @@ POST movie_search, movie_auto/_search
 |lte(lower than or equal  | <= |
 |gte(greater than or equal  | >= |
 
+```
+...
+"query" : {
+	"range" : {
+		"prdtYear" : {
+			"gte": "2016",
+			"lte": "2017",
+		}
+	}
+}
+...
+```
+
 
 
 ## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5Nzc0OTYyNCwxNDA0MDA0Nzk0LC0xMT
-k4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3
-NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNC
-wxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
+eyJoaXN0b3J5IjpbMzI3MTE0ODQ4LDE0MDQwMDQ3OTQsLTExOT
+g5MjM4MTgsNTE3MjU5MzA2LC0xNTAxMzEwMjE1LC0xNTk5ODc2
+NDI0LDM4ODE2MTUyMywtMTk2MzY5MjY5MSwtMzA2Nzg2ODE0LD
+ExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMxMDhdfQ==
 -->
