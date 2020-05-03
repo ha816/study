@@ -395,14 +395,17 @@ POST movie_search/_search
 검색어가 와일드 카드와 일치하는 구문을 찾는다. 이때 입력된 검색어는 형태소 분석이 이루어지지 않는다. 
 
 와일드 카드 옵션에는 *과 ?가 있다.
-*는 문자의 길이와 상관 없이 와일드 카드와 일치하는 모든 문서를 찾
+*는 문자의 길이와 상관 없이 와일드 카드와 일치하는 모든 문서를 찾는다.
+?는 지정된 위치의 한 글자가 다른 경우의 문서를 찾는다.
+
+와일드 카드를 사용할 경우 단어의 첫 글자로는 절대 사용해서는 안된다. 첫 글자로 와일드 카드를 넣으면 색인된 문서 전체를 찾아야하는 불상사가 발생할 수 있기 때문이다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MjU4NjM1Niw5NDc0MDg2MjcsLTEwMD
-Q1NzI3OTIsLTU2MTYwODU1MiwtMTUwOTY5ODUyLDE4MzY4ODM3
-OTcsNzgwODI5NzI3LDE0NzY3Mzk2MjQsMTQwNDAwNDc5NCwtMT
-E5ODkyMzgxOCw1MTcyNTkzMDYsLTE1MDEzMTAyMTUsLTE1OTk4
-NzY0MjQsMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMDY3ODY4MT
-QsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEwOF19
+eyJoaXN0b3J5IjpbNzU1NTM2OTg4LDk0NzQwODYyNywtMTAwND
+U3Mjc5MiwtNTYxNjA4NTUyLC0xNTA5Njk4NTIsMTgzNjg4Mzc5
+Nyw3ODA4Mjk3MjcsMTQ3NjczOTYyNCwxNDA0MDA0Nzk0LC0xMT
+k4OTIzODE4LDUxNzI1OTMwNiwtMTUwMTMxMDIxNSwtMTU5OTg3
+NjQyNCwzODgxNjE1MjMsLTE5NjM2OTI2OTEsLTMwNjc4NjgxNC
+wxMTc2MTE4NTYwLDIwNzExNDU3OTYsNTkzNjYzMTA4XX0=
 -->
