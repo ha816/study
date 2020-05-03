@@ -95,11 +95,13 @@ hits는 각 문서 정보와 스코어 값을 보여준다.
 
 ## Query DSL 쿼리와 필터
 
+## Query DLS의 주요 파라미터
 
+## Query DLS의 주요 쿼리
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2ODAyNDk1MSwtMTk2MzY5MjY5MSwtMz
-A2Nzg2ODE0LDExNzYxMTg1NjAsMjA3MTE0NTc5Niw1OTM2NjMx
-MDhdfQ==
+eyJoaXN0b3J5IjpbMzg4MTYxNTIzLC0xOTYzNjkyNjkxLC0zMD
+Y3ODY4MTQsMTE3NjExODU2MCwyMDcxMTQ1Nzk2LDU5MzY2MzEw
+OF19
 -->
