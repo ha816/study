@@ -12,11 +12,15 @@
 
 클러스터는 노드(물리적 서버)들의 집합이다. 같은 클러스터 내부의 데이터민 서로 공유가 가능하기 때문에 연관된 노드들끼리 하나의 클러스터로 구성하는 것이 매우 중요하다. 
 
-같은 클러스토로 묶일 노드들은 같은 클
+같은 클러스토로 묶일 노드들은 같은 반드시 같은 클러스터 이름을 가져야 한다. (엘라스틱서치는 이름으로 같은 클러스터인지 아닌지 판별한다)
+
+같은 클러스터에 속한 노드들은 평소 데이터 색인이나 검색 작업을 함께 수행하게 되고 장애가 발생했을때도 데이터 복구를 위해 서로 협력해서 복구한다.
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MjczMzgxMSwtMTQxODE5MDg0NywtMT
+eyJoaXN0b3J5IjpbLTYwODY3OTE0NywtMTQxODE5MDg0NywtMT
 kzOTYwNjY2MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcx
 NDQwN119
 -->
