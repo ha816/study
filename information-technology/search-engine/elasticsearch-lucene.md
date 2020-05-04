@@ -6,11 +6,14 @@
 
 엘라스틱서치는 기본적으로 클러스터란 단위로 데이터를 제공한다. 클러스터는 하나 이상의 물리적인 노드로 구성되며 각 노드는 모두 데이터 색인 및 검색 기능을 제공하는 일종의 물리적 서버이기도 하다. 즉 노드는 물리적 서버를 뜻하며 다수의 서버가 모여 하나의 클러스터를 구성한다. 
 
-엘라스틱 서치의 
+엘라스틱 서치의 최상위 개념인 클러스터로 부터 최하위 개념인 세그먼트까지 하향식으로 갠며을 살펴보도록 하자.
+
+## 클러스터 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MTE2NzEwOSwtMTkzOTYwNjY2MiwxOD
-c0NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
+eyJoaXN0b3J5IjpbLTE0MTgxOTA4NDcsLTE5Mzk2MDY2NjIsMT
+g3NDc2ODU4MSwxODU3MDQyMDIzLDE5ODg3MTQ0MDddfQ==
 -->
