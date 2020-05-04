@@ -6,9 +6,11 @@
 
 엘라스틱서치는 기본적으로 클러스터란 단위로 데이터를 제공한다. 클러스터는 하나 이상의 물리적인 노드로 구성되며 각 노드는 모두 데이터 색인 및 검색 기능을 제공하는 일종의 물리적 서버이기도 하다. 즉 노드는 물리적 서버를 뜻하며 다수의 서버가 모여 하나의 클러스터를 구성한다. 
 
+노드 내부에는 루씬 라이브러리가 있고
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzk2MDY2NjIsMTg3NDc2ODU4MSwxOD
-U3MDQyMDIzLDE5ODg3MTQ0MDddfQ==
+eyJoaXN0b3J5IjpbLTM0MDcyNDk3NCwtMTkzOTYwNjY2MiwxOD
+c0NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
 -->
