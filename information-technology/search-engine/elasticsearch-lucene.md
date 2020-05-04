@@ -16,11 +16,12 @@
 
 같은 클러스터에 속한 노드들은 평소 데이터 색인이나 검색 작업을 함께 수행하게 되고 장애가 발생했을때도 데이터 복구를 위해 서로 협력해서 복구한다.
 
+>Cross Cluster Search
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwODY3OTE0NywtMTQxODE5MDg0NywtMT
-kzOTYwNjY2MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcx
-NDQwN119
+eyJoaXN0b3J5IjpbNzYzOTY3ODI5LC0xNDE4MTkwODQ3LC0xOT
+M5NjA2NjYyLDE4NzQ3Njg1ODEsMTg1NzA0MjAyMywxOTg4NzE0
+NDA3XX0=
 -->
