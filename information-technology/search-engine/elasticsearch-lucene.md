@@ -75,11 +75,11 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 ![enter image description here](https://cdn-images-1.medium.com/max/1600/1*3xcgM8oZUTSV5ZVEjCRnNA.png)
 
-루씬 인덱스는 내부
+루씬 인덱스 내부에는 세그먼트라는 특수한 자료구조가 다 존재한다. 루씬 인덱스는 다수의 세그먼트를 이용해 검색을 수행하는데, 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMjY4MTk3LC0zOTk5MzkyNjEsMTkwNj
+eyJoaXN0b3J5IjpbLTUzMzE4MjU2LC0zOTk5MzkyNjEsMTkwNj
 c5NDYyNCwtODI0NTI1NjA2LC0xMjM0NTIyMjE5LDY1Mzc0NTA0
 LC0xMzEwMjQzMjQsNzYzOTY3ODI5LC0xNDE4MTkwODQ3LC0xOT
 M5NjA2NjYyLDE4NzQ3Njg1ODEsMTg1NzA0MjAyMywxOTg4NzE0
