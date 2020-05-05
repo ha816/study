@@ -92,13 +92,15 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 엘라스틱서치 샤드
 : 엘라스틱서치에서 제공하는 가장 작은 단위 검색엔진. 내부적으로 루씬을 확장해서 검색엔진 역할을 수행한다. 다수의 샤드가 협력해서 존재하는 모든 세그먼트를 검색할 수 있다. 
 
+루씬 인덱스의 경우 데이터를 저장할때 내부에 가지고 있는 세그먼트로만 처리가 가능했다. 엘라스틱서치 샤드는 이러한 한계를 넘어 데이터를 무한대로 확장할 수 있게 해준다. 
 
+서비스를 운영하다보면 시간이 지남에 따라 데이터 크기에 점점 더 커지고 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY5MzEzNDU3LC0xNjk4NTcwMTMyLC04OD
-I5MTI4NDYsLTM5OTkzOTI2MSwxOTA2Nzk0NjI0LC04MjQ1MjU2
-MDYsLTEyMzQ1MjIyMTksNjUzNzQ1MDQsLTEzMTAyNDMyNCw3Nj
-M5Njc4MjksLTE0MTgxOTA4NDcsLTE5Mzk2MDY2NjIsMTg3NDc2
-ODU4MSwxODU3MDQyMDIzLDE5ODg3MTQ0MDddfQ==
+eyJoaXN0b3J5IjpbLTExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLT
+g4MjkxMjg0NiwtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUy
+NTYwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LD
+c2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0
+NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
 -->
