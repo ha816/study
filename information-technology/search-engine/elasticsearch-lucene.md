@@ -69,12 +69,12 @@
 
 # 엘라스틱서치 샤드 VS 루씬 인덱스
 
-루씬은 다수의 클래스로 구성되어 있는 검색 라이브러리이고, 이 중에서 가장 중요한 클래스가 바로 IndexWi
+루씬은 다수의 클래스로 구성되어 있는 검색 라이브러리이고, 이 중에서 가장 중요한 클래스가 바로 IndexWriter와 IndexSearcher이다. 간단히 설명하자면 IndexWriter는 데이터를 색인하는 클래스이고, IndexSearcher는 색인된 데이터를 검색 결과로 제공하는 클래스다. 사실 이 두개의 클래스가 루씬의 핵심이라고 해도 과언이 아니다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc4NzUxMTk3LDE5MDY3OTQ2MjQsLTgyND
-UyNTYwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0
-LDc2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxOD
-c0NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
+eyJoaXN0b3J5IjpbLTQ1MTY0Njc5MywxOTA2Nzk0NjI0LC04Mj
+Q1MjU2MDYsLTEyMzQ1MjIyMTksNjUzNzQ1MDQsLTEzMTAyNDMy
+NCw3NjM5Njc4MjksLTE0MTgxOTA4NDcsLTE5Mzk2MDY2NjIsMT
+g3NDc2ODU4MSwxODU3MDQyMDIzLDE5ODg3MTQ0MDddfQ==
 -->
