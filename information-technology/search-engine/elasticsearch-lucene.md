@@ -65,12 +65,14 @@
 
 문서들은 빠른 검섹에 유리하도록 설계된 특수한 자료구조로 저장된다. 샤브 내부에 루씬 라이브러리를 포함하고 있는데, 이를 통해 대부분의 검색 기능을 제공한다. 루씬에 데이터가 색인되면 데이터는 최소의 단위인 토큰으로 분리되고 토큰은 특수한 형태의 자료구조로 저장되는데, 이를 세그먼트라 한다. 
 
-세그먼트는 읽기에 최적화된 자료구조러서 역색인이라는 특
+세그먼트는 읽기에 최적화된 자료구조로이다. 
+
+# 엘라스틱서치 샤드 VS 루씬 인덱스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTc5ODM1NjcsLTgyNDUyNTYwNiwtMT
-IzNDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LDc2Mzk2Nzgy
-OSwtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0NzY4NTgxLD
-E4NTcwNDIwMjMsMTk4ODcxNDQwN119
+eyJoaXN0b3J5IjpbMTkwNjc5NDYyNCwtODI0NTI1NjA2LC0xMj
+M0NTIyMjE5LDY1Mzc0NTA0LC0xMzEwMjQzMjQsNzYzOTY3ODI5
+LC0xNDE4MTkwODQ3LC0xOTM5NjA2NjYyLDE4NzQ3Njg1ODEsMT
+g1NzA0MjAyMywxOTg4NzE0NDA3XX0=
 -->
