@@ -24,9 +24,11 @@
 
 실행 중인 엘라스틱 서치를 노드라고 부른다. 좀더 정확하게는 다수의 물리 서버에 엘라스틱 서치를 설치하고 실행된 엘라스틱서치 인스턴스를 노드라고 한다.
 
+노드는 클러스터를 이루는 구성원이며 실제 데이터를 가지고 있는 단일 서버이기도 하다. 실행 시 노드는 클러스터에 의해  UUID(Universally Unique IDentifier)가 할당되고 클서
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTAyNDMyNCw3NjM5Njc4MjksLTE0MT
-gxOTA4NDcsLTE5Mzk2MDY2NjIsMTg3NDc2ODU4MSwxODU3MDQy
-MDIzLDE5ODg3MTQ0MDddfQ==
+eyJoaXN0b3J5IjpbMTk4MTE0OTU5OSwtMTMxMDI0MzI0LDc2Mz
+k2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0NzY4
+NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
 -->
