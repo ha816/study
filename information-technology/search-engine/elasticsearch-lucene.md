@@ -63,12 +63,12 @@
 
 ## 세그먼트
 
-문서들은 빠른 검섹에 유리하도록 설계된 특수한 자료구조로 저장된다. 샤브 내부에 루씬을 
+문서들은 빠른 검섹에 유리하도록 설계된 특수한 자료구조로 저장된다. 샤브 내부에 루씬 라이브러리를 포함하고 있는데, 이를 통해 대부분의 검색 기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE0Nzc3NDQ2LC0xMjM0NTIyMjE5LDY1Mz
-c0NTA0LC0xMzEwMjQzMjQsNzYzOTY3ODI5LC0xNDE4MTkwODQ3
-LC0xOTM5NjA2NjYyLDE4NzQ3Njg1ODEsMTg1NzA0MjAyMywxOT
-g4NzE0NDA3XX0=
+eyJoaXN0b3J5IjpbMTUyNDQ1MjM1MCwtMTIzNDUyMjIxOSw2NT
+M3NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOSwtMTQxODE5MDg0
+NywtMTkzOTYwNjY2MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMT
+k4ODcxNDQwN119
 -->
