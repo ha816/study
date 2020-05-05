@@ -58,11 +58,12 @@
 
 인덱스가 생성될 때 샤드 개수와 레플리카 개수를 자유롭게 설정할 수 있다.하지만 인덱스가 생성된 이후에는 샤드 개수를 변경하는 것이 불가능하기 때문에 이 점에 유의하자. 그에 반해 레플리카의 갯수는 인덱스를 생성한 이후에도 자유롭게 변경하는 것이 가능하다. 그렇게 때문에 운영 중 트래픽 증가에 대한 유연한 대응이 가능해진다. 이는 검색 엔진의 특성상 읽기 연산이 대부분이기 때문에 매우 유용한 기능이다.
 
->엘라스틱 ㅅ
+>엘라스틱 서치의 고가용성
+>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMzEwODU4MSwtMTIzNDUyMjIxOSw2NT
+eyJoaXN0b3J5IjpbLTk5NTc3NTcwMiwtMTIzNDUyMjIxOSw2NT
 M3NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOSwtMTQxODE5MDg0
 NywtMTkzOTYwNjY2MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMT
 k4ODcxNDQwN119
