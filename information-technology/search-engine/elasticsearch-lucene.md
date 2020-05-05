@@ -20,7 +20,7 @@
 >실무에서 업무를 하다보면 데이터 성격에 따라 다수의 클러스터를 운영하게 된다. 데이터가 커지고 복잡해지면 필연적으로 다수의 클러스터를 함께 검색해야하는 일도 빈번히 발생한다.
 >엘라스틱서치에서는 이처럼 다양한 필요에의해서 다수의 클러스터를 한번에 검색할 수 있는 기능을 제공하는데 그것이 Cross Cluster search다. 
 
-## 노드 
+## 노드(Node)
 
 실행 중인 엘라스틱 서치를 노드라고 부른다. 좀더 정확하게는 다수의 물리 서버에 엘라스틱 서치를 설치하고 실행된 엘라스틱서치 인스턴스를 노드라고 한다.
 
@@ -28,9 +28,15 @@
 
 같은 클러스터 내부에 존재하는 모든 노드는 서로 다른 노드와 수시로 정보를 주고 받는다. 기본적으로 모든 노드는 마스터 노드와 데이터 노드의 역할을 동시에 수행하도록 설정되어 있는데, 실제 운영에서는 역할에 따라 노드를 구분하는 것이 좋다. 
 
+특히 마스터 노드의 경우, 클러스터 전체를 제어하기 때문에 물리적으로 분리해서 독립적으로 운영하는 것이 좋다.
+
+## 인덱스(Index)
+
+인덱스는 유사한 특성을 가지고 있는 문서들
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUzNzQ1MDQsLTEzMTAyNDMyNCw3NjM5Nj
-c4MjksLTE0MTgxOTA4NDcsLTE5Mzk2MDY2NjIsMTg3NDc2ODU4
-MSwxODU3MDQyMDIzLDE5ODg3MTQ0MDddfQ==
+eyJoaXN0b3J5IjpbMTY5OTg3MDYwNyw2NTM3NDUwNCwtMTMxMD
+I0MzI0LDc2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNjY2
+MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
 -->
