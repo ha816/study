@@ -73,11 +73,12 @@
 
 IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공하는 루씬 인스턴스를 루씬 인덱스라고 하는데, 사실 하나의 엘라스틱서치 샤드는 하나의 루씬 인덱스라고 설명할 수 있다. 우리가 알고 있는 엘라스틱서치 인덱스는 물리적으로 분산된 엘라스틱서치 샤드를 논리적인 관점에서 하나의 거대한 데이터로 보는 것이다. 
 
+![enter image description here](https://cdn-images-1.medium.com/max/1600/1*3xcgM8oZUTSV5ZVEjCRnNA.png)
 
-
+루씬 인덱스는 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjUxMzA3NSwxOTA2Nzk0NjI0LC04Mj
+eyJoaXN0b3J5IjpbLTM5OTkzOTI2MSwxOTA2Nzk0NjI0LC04Mj
 Q1MjU2MDYsLTEyMzQ1MjIyMTksNjUzNzQ1MDQsLTEzMTAyNDMy
 NCw3NjM5Njc4MjksLTE0MTgxOTA4NDcsLTE5Mzk2MDY2NjIsMT
 g3NDc2ODU4MSwxODU3MDQyMDIzLDE5ODg3MTQ0MDddfQ==
