@@ -18,12 +18,12 @@
 
 >Cross Cluster Search
 >실무에서 업무를 하다보면 데이터 성격에 따라 다수의 클러스터를 운영하게 된다. 데이터가 커지고 복잡해지면 필연적으로 다수의 클러스터를 함께 검색해야하는 일도 빈번히 발생한다.
->엘라스틱서치에 
+>엘라스틱서치에서는 이처럼 다양한 필요에의해서 다수의 클러스터를 한번에 검색할 수 있는 기능을 제공하는데 그것이 Cross Cluster search다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMzA0MDkwOSw3NjM5Njc4MjksLTE0MT
+eyJoaXN0b3J5IjpbMjA5MjMxNzg4Miw3NjM5Njc4MjksLTE0MT
 gxOTA4NDcsLTE5Mzk2MDY2NjIsMTg3NDc2ODU4MSwxODU3MDQy
 MDIzLDE5ODg3MTQ0MDddfQ==
 -->
