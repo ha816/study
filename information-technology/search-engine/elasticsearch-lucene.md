@@ -81,13 +81,15 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 엘라스틱 서치는 독립적인 루씬 인덱스를 엘라스틱 서치의 샤드라는 형태로 확장해서 제공한다. 루씬 인덱스가 자기자신이 가지고 있는 세그먼트 내에서만 검색이 가능한 것과는 달리 샤드는 모든 샤드가 가지고 있는 세그먼트를 논리적으로 통합해서 검색할 수 있다. 
 
-분산 시스템 특성상 시스템의 고가용성을 보장하기 위해 
+분산 시스템 특성상 시스템의 고가용성을 보장하기 위해 다수의 샤드와 레플리카를 하나로 묶어서 클러스터를 구성하고 일련의 과정은 사용자에게 철저히 숨긴다.
+
+ 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTg1NzAxMzIsLTg4MjkxMjg0NiwtMz
-k5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUyNTYwNiwtMTIzNDUy
-MjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOSwtMT
-QxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0NzY4NTgxLDE4NTcw
-NDIwMjMsMTk4ODcxNDQwN119
+eyJoaXN0b3J5IjpbLTIwODkwMjAwMzUsLTE2OTg1NzAxMzIsLT
+g4MjkxMjg0NiwtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUy
+NTYwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LD
+c2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0
+NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
 -->
