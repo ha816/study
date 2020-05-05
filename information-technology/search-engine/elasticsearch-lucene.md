@@ -26,11 +26,11 @@
 
 노드는 클러스터를 이루는 구성원이며 실제 데이터를 가지고 있는 단일 서버이기도 하다. 실행 시 노드는 클러스터에 의해  UUID(Universally Unique IDentifier)가 할당되고 클러스터 내에서는 할당된 UUID로 서로를 식별한다. 기본값으로 부여되는 UUID를 원치 않는다면 직접 이름도 설정할 수 있다. 같은 클러스터 내부에서 유일한 노드를 식별하는 것은 매우 중요하기 때문에 신중해질 필요가 있다. 
 
-같은 클러스터 내부에 존재하는 모든 노드는 서로 다른 노드와 수시로 정보를 주고 받는다. 기본적으로 모든 노드는 마스터 노드와 데이터 노드의 역할을
+같은 클러스터 내부에 존재하는 모든 노드는 서로 다른 노드와 수시로 정보를 주고 받는다. 기본적으로 모든 노드는 마스터 노드와 데이터 노드의 역할을 동시에 수행하도록 설정되어 있는데, 실제 운영에서는 역할에 따라 노드를 구분하는 것이 좋다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNDE0Mzc2MiwtMTMxMDI0MzI0LDc2Mz
-k2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0NzY4
-NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
+eyJoaXN0b3J5IjpbNjUzNzQ1MDQsLTEzMTAyNDMyNCw3NjM5Nj
+c4MjksLTE0MTgxOTA4NDcsLTE5Mzk2MDY2NjIsMTg3NDc2ODU4
+MSwxODU3MDQyMDIzLDE5ODg3MTQ0MDddfQ==
 -->
