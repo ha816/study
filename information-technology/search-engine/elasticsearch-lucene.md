@@ -69,10 +69,12 @@
 
 # 엘라스틱서치 샤드 VS 루씬 인덱스
 
+루씬은 다수의 클래스로 구성되어 있는 검색 라이브러리이고, 이 중에서 가장 중요한 클래스가 바로 IndexWi
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNjc5NDYyNCwtODI0NTI1NjA2LC0xMj
-M0NTIyMjE5LDY1Mzc0NTA0LC0xMzEwMjQzMjQsNzYzOTY3ODI5
-LC0xNDE4MTkwODQ3LC0xOTM5NjA2NjYyLDE4NzQ3Njg1ODEsMT
-g1NzA0MjAyMywxOTg4NzE0NDA3XX0=
+eyJoaXN0b3J5IjpbNDc4NzUxMTk3LDE5MDY3OTQ2MjQsLTgyND
+UyNTYwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0
+LDc2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxOD
+c0NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
 -->
