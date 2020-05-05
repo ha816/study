@@ -94,13 +94,14 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 루씬 인덱스의 경우 데이터를 저장할때 내부에 가지고 있는 세그먼트로만 처리가 가능했다. 엘라스틱서치 샤드는 이러한 한계를 넘어 데이터를 무한대로 확장할 수 있게 해준다. 
 
-서비스를 운영하다보면 시간이 지남에 따라 데이터 크기에 점점 더 커지고 
+서비스를 운영하다보면 시간이 지남에 따라 데이터 크기에 점점 더 커지고 그에 비례해서 성능상의 문제가 발생할 가능성 또한 커진다. 클러스터
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLT
-g4MjkxMjg0NiwtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUy
-NTYwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LD
-c2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0
-NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
+eyJoaXN0b3J5IjpbLTE4MTAzNjY5MDksLTExNzgwMzE0NTEsLT
+E2OTg1NzAxMzIsLTg4MjkxMjg0NiwtMzk5OTM5MjYxLDE5MDY3
+OTQ2MjQsLTgyNDUyNTYwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNC
+wtMTMxMDI0MzI0LDc2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkz
+OTYwNjY2MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxND
+QwN119
 -->
