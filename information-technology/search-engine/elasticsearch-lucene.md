@@ -87,13 +87,18 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 : 루씬 내부에 존재하는 자료구조로, 역색인 구조로 생성되어 읽기에 최적화되어 있다. 하나의 루씬 내부에서만 존재하며 확장이 불가능하다.
 
 루씬 인덱스
-: 검색과 색인 기능을 가진 최소한의 검색엔진이다.  IndexWriter와 IndexSearcher를 이용해 작업을 수행하며, 자 
+: 검색과 색인 기능을 가진 최소한의 검색엔진이다.  IndexWriter와 IndexSearcher를 이용해 작업을 수행하며, 자신이 가진 세그먼트만 작업 대상으로 삼을 수 있다.
+
+엘라스틱서치 샤드
+: 엘라스틱서치에서 제공하는 가장 작은 단위 검색엔진. 내부적으로 루씬을 확장해서 검색엔진 역할을 수행한다. 다수의 샤드가 협력해서 존재하는 모든 세그먼트를 검색할 수 있다. 
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzE5MDc5NjcsLTE2OTg1NzAxMzIsLT
-g4MjkxMjg0NiwtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUy
-NTYwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LD
-c2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0
-NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
+eyJoaXN0b3J5IjpbMjY5MzEzNDU3LC0xNjk4NTcwMTMyLC04OD
+I5MTI4NDYsLTM5OTkzOTI2MSwxOTA2Nzk0NjI0LC04MjQ1MjU2
+MDYsLTEyMzQ1MjIyMTksNjUzNzQ1MDQsLTEzMTAyNDMyNCw3Nj
+M5Njc4MjksLTE0MTgxOTA4NDcsLTE5Mzk2MDY2NjIsMTg3NDc2
+ODU4MSwxODU3MDQyMDIzLDE5ODg3MTQ0MDddfQ==
 -->
