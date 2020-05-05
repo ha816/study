@@ -17,12 +17,13 @@
 같은 클러스터에 속한 노드들은 평소 데이터 색인이나 검색 작업을 함께 수행하게 되고 장애가 발생했을때도 데이터 복구를 위해 서로 협력해서 복구한다.
 
 >Cross Cluster Search
->실무에서 업무를 하다보면 데이터 성격에 따라 다수의 클러스터를 운영하게 된다. 데이터가 커지고 복잡해지면 필연적으로 다수
+>실무에서 업무를 하다보면 데이터 성격에 따라 다수의 클러스터를 운영하게 된다. 데이터가 커지고 복잡해지면 필연적으로 다수의 클러스터를 함께 검색해야하는 일도 빈번히 발생한다.
+>엘라스틱서치에 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNTg0ODI0MCw3NjM5Njc4MjksLTE0MT
+eyJoaXN0b3J5IjpbLTQxMzA0MDkwOSw3NjM5Njc4MjksLTE0MT
 gxOTA4NDcsLTE5Mzk2MDY2NjIsMTg3NDc2ODU4MSwxODU3MDQy
 MDIzLDE5ODg3MTQ0MDddfQ==
 -->
