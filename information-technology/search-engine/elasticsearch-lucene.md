@@ -22,11 +22,11 @@
 
 ## 노드 
 
-실행 중인 엘라스틱 서치가 있는 서버를 노드라고 부른다. 좀더 정확하게는 다수의 물리
+실행 중인 엘라스틱 서치를 노드라고 부른다. 좀더 정확하게는 다수의 물리 서버에 엘라스틱 서치를 설치하고 실행된 엘라스틱서치 인스턴스를 노드라고 한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyNjcxNTIxLDc2Mzk2NzgyOSwtMTQxOD
-E5MDg0NywtMTkzOTYwNjY2MiwxODc0NzY4NTgxLDE4NTcwNDIw
-MjMsMTk4ODcxNDQwN119
+eyJoaXN0b3J5IjpbLTEzMTAyNDMyNCw3NjM5Njc4MjksLTE0MT
+gxOTA4NDcsLTE5Mzk2MDY2NjIsMTg3NDc2ODU4MSwxODU3MDQy
+MDIzLDE5ODg3MTQ0MDddfQ==
 -->
