@@ -83,11 +83,15 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 분산 시스템 특성상 시스템의 고가용성을 보장하기 위해 다수의 샤드와 레플리카를 하나로 묶어서 클러스터를 구성하고 일련의 과정은 사용자에게 철저히 숨긴다.
 
- 
+세그먼트
+: 루씬 내부에 존재하는 자료구조로, 역색인 구조로 생성되어 읽기에 최적화되어 있다. 하나의 루씬 내부에서만 존재하며 확장이 불가능하다.
+
+루씬 인덱스
+: 검색과 색인 기능을 가진 최소한의 검색엔진이다.  IndexWriter와 IndexSearcher를 이용해 작업을 수행하며, 자 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODkwMjAwMzUsLTE2OTg1NzAxMzIsLT
+eyJoaXN0b3J5IjpbLTE5NzE5MDc5NjcsLTE2OTg1NzAxMzIsLT
 g4MjkxMjg0NiwtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUy
 NTYwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LD
 c2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0
