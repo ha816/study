@@ -32,11 +32,11 @@
 
 ## 인덱스(Index)
 
-인덱스는 유사한 특성을 가지고 있는 문서들
+인덱스는 유사한 특성을 가지고 있는 문서들을 모은 컬렉션이다. 클러스터 내부에
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5OTg3MDYwNyw2NTM3NDUwNCwtMTMxMD
+eyJoaXN0b3J5IjpbMTUwNzUxMzkxMCw2NTM3NDUwNCwtMTMxMD
 I0MzI0LDc2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNjY2
 MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
 -->
