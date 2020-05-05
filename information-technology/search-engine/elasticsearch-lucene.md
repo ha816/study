@@ -59,11 +59,15 @@
 인덱스가 생성될 때 샤드 개수와 레플리카 개수를 자유롭게 설정할 수 있다.하지만 인덱스가 생성된 이후에는 샤드 개수를 변경하는 것이 불가능하기 때문에 이 점에 유의하자. 그에 반해 레플리카의 갯수는 인덱스를 생성한 이후에도 자유롭게 변경하는 것이 가능하다. 그렇게 때문에 운영 중 트래픽 증가에 대한 유연한 대응이 가능해진다. 이는 검색 엔진의 특성상 읽기 연산이 대부분이기 때문에 매우 유용한 기능이다.
 
 >엘라스틱 서치의 고가용성
->엘라스틱서치에서는 샤드나 노드에 장애가 발생할 경우, 즉각적인 복구가 가능하기 때문에 안정적인 클러스터 운영이 가능해진다. 페일오버 메커니즘을 송공적으로 구현하기 위해 레플리카는 기본적으로 원본 샤드가 존재하지 노드에서 생성된다. 또한 검색 시 샤드와 
+>엘라스틱서치에서는 샤드나 노드에 장애가 발생할 경우, 즉각적인 복구가 가능하기 때문에 안정적인 클러스터 운영이 가능해진다. 페일오버 메커니즘을 송공적으로 구현하기 위해 레플리카는 기본적으로 원본 샤드가 존재하지 노드에서 생성된다. 또한 검색 시 샤드와 레플리카에서 병렬로 실행될 수 있기 때문에 검색 성능이 좋아진다.
+
+## 세그먼트
+
+문서들은 빠른 검섹에 유리하도록 설계된 특수한 자료구조로 저장된다. 샤브 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MzM3NzQ3OCwtMTIzNDUyMjIxOSw2NT
+eyJoaXN0b3J5IjpbLTEzMTYyMTU5OCwtMTIzNDUyMjIxOSw2NT
 M3NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOSwtMTQxODE5MDg0
 NywtMTkzOTYwNjY2MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMT
 k4ODcxNDQwN119
