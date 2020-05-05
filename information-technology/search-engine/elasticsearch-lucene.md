@@ -98,14 +98,14 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 클러스터의 성능 문제가 발생하면 샤드 수에 대해 고민을 다시 하게 되는데 말했듯이 **샤드 수는 운영중에 변경이 불가능하다.** 그러므로 맨 처음으로 인덱스를 설계할때 데이터 크기에 대해 충분한 고민을 하고 그에 따라 샤드의 수를 신중하게 결정해야 한다.
 
-#
+# 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDIxNzA2ODQsLTExNzgwMzE0NTEsLT
-E2OTg1NzAxMzIsLTg4MjkxMjg0NiwtMzk5OTM5MjYxLDE5MDY3
-OTQ2MjQsLTgyNDUyNTYwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNC
-wtMTMxMDI0MzI0LDc2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkz
-OTYwNjY2MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxND
-QwN119
+eyJoaXN0b3J5IjpbMTA5MDY0ODU4MCwtMTIwMjE3MDY4NCwtMT
+E3ODAzMTQ1MSwtMTY5ODU3MDEzMiwtODgyOTEyODQ2LC0zOTk5
+MzkyNjEsMTkwNjc5NDYyNCwtODI0NTI1NjA2LC0xMjM0NTIyMj
+E5LDY1Mzc0NTA0LC0xMzEwMjQzMjQsNzYzOTY3ODI5LC0xNDE4
+MTkwODQ3LC0xOTM5NjA2NjYyLDE4NzQ3Njg1ODEsMTg1NzA0Mj
+AyMywxOTg4NzE0NDA3XX0=
 -->
