@@ -63,12 +63,12 @@
 
 ## 세그먼트
 
-문서들은 빠른 검섹에 유리하도록 설계된 특수한 자료구조로 저장된다. 샤브 
+문서들은 빠른 검섹에 유리하도록 설계된 특수한 자료구조로 저장된다. 샤브 내부
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTYyMTU5OCwtMTIzNDUyMjIxOSw2NT
-M3NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOSwtMTQxODE5MDg0
-NywtMTkzOTYwNjY2MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMT
-k4ODcxNDQwN119
+eyJoaXN0b3J5IjpbLTE0MzkzMjY1MDYsLTEyMzQ1MjIyMTksNj
+UzNzQ1MDQsLTEzMTAyNDMyNCw3NjM5Njc4MjksLTE0MTgxOTA4
+NDcsLTE5Mzk2MDY2NjIsMTg3NDc2ODU4MSwxODU3MDQyMDIzLD
+E5ODg3MTQ0MDddfQ==
 -->
