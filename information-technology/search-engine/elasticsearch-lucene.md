@@ -121,9 +121,10 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 정책에 따라 몇개의 세그먼트가 순차적으로 선택되어 합쳐지고, 일정 시간이 흘러 더 색인 작업이 없는 상태가 되면 하나의 큰 세그먼트만 남는다. 
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDk0ODkwNCwtMTgzOTU1MDcyNywyNz
+eyJoaXN0b3J5IjpbMTUzNTY0NDI5NCwtMTgzOTU1MDcyNywyNz
 Y5NzA4NzksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MDY0ODU4
 MCwtMTIwMjE3MDY4NCwtMTE3ODAzMTQ1MSwtMTY5ODU3MDEzMi
 wtODgyOTEyODQ2LC0zOTk5MzkyNjEsMTkwNjc5NDYyNCwtODI0
