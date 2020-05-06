@@ -453,16 +453,22 @@ Created_tmp_dist_tables
 ```
 SELECT * FROM employees GROUP BY last_name ORDER BY first_name
 ```
-위 쿼리는 GROUP BY나 ORDER BY의 
+위 쿼리는 GROUP BY나 ORDER BY의 컬럼이 다르고, last_name에 인덱스가 없어서 임시 테이블을 만들고 정렬작업도 해야하는 최악의 형태이다.
+
+|id| select_type|table|type|key|key_len|ref|rows|Extra
+|--|--|--|--|--|--|--|--|--|
+|1| SIMPLE|employees|ALL|PRIMARY|| |300584 | Using temporary; Using filesort
+
+대랴
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MDk4NzMyMCwtMTYzMDgwMTMwNCwyMD
-YyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1
-OTE0MSwtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2Mj
-MsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2
-NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUyMDYsMTI0OTIyMT
-g0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LDEyMjEwNDI1MDcs
-MjA3NjQ2MDIzN119
+eyJoaXN0b3J5IjpbLTE3NjQ4MDIxNDcsLTE2MzA4MDEzMDQsMj
+A2MjQzMjYyMywyNDU4NjQ2NTYsLTE4NjUzNzk3ODYsLTE3NDU2
+NTkxNDEsLTcxMTQzNDE2NCwtMTAzMjA1ODM1OCwxOTQ4NDkzNj
+IzLC05OTYyNTU3MDUsMTA0ODg2MDAxNCw4MTY4MTkzMTIsLTE1
+NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2NTU1MjA2LDEyNDkyMj
+E4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNCwxMjIxMDQyNTA3
+LDIwNzY0NjAyMzddfQ==
 -->
