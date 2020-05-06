@@ -127,15 +127,16 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 루씬에 요청이 들어왔을때 상황에 따라 동작하는 방식
 
  최초 색인이 요청된 경우
-  
+ 1. IndexWriter가 세그먼트를 생성
+ 2. IndexSearcher가 생성된 세그먼트를 읽어 검색 제공 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDYzNzk2NDYsMTAyODYzOTQ5MCwtMT
-E4OTE2NDM3LC0xODM5NTUwNzI3LDI3Njk3MDg3OSwtOTI4MzQ0
-NDQ1LDkxNzkwMTQ2MywxMDkwNjQ4NTgwLC0xMjAyMTcwNjg0LC
-0xMTc4MDMxNDUxLC0xNjk4NTcwMTMyLC04ODI5MTI4NDYsLTM5
-OTkzOTI2MSwxOTA2Nzk0NjI0LC04MjQ1MjU2MDYsLTEyMzQ1Mj
-IyMTksNjUzNzQ1MDQsLTEzMTAyNDMyNCw3NjM5Njc4MjksLTE0
-MTgxOTA4NDddfQ==
+eyJoaXN0b3J5IjpbMTkxMTQzODA4MCwxMDI4NjM5NDkwLC0xMT
+g5MTY0MzcsLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC05MjgzNDQ0
+NDUsOTE3OTAxNDYzLDEwOTA2NDg1ODAsLTEyMDIxNzA2ODQsLT
+ExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLTg4MjkxMjg0NiwtMzk5
+OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUyNTYwNiwtMTIzNDUyMj
+IxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOSwtMTQx
+ODE5MDg0N119
 -->
