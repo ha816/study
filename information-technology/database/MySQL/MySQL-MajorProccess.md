@@ -463,15 +463,21 @@ SELECT * FROM employees GROUP BY last_name ORDER BY first_name
 
 1. Employees 테이블의 모든 컬럼을 포함한 임시 테이블을 만든다.(MEMORY)
 2. 테이블로부터 첫번째 레코드를 가져와서 임시 테이블에 같은 last_name이 있는지 확인한다.
+3. 같은 last_name이 없으면 임시 테이블에 삽입
+4. 같은 last_name이 있으면 임시 테이블에 update 또는 무시
+5. 임시 테이블 크기가 특정 크기(시스템 설정) 커지면 임시 테이블을 MyISAM 테이블 디스크로 이동
+6. Employees 테이블에 더 읽을 레코드가 없을때 까지 2~6번 반복
+7. 임시 테이블에서 
+
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5Mjk1MzEyLC0xNjMwODAxMzA0LDIwNj
-I0MzI2MjMsMjQ1ODY0NjU2LC0xODY1Mzc5Nzg2LC0xNzQ1NjU5
-MTQxLC03MTE0MzQxNjQsLTEwMzIwNTgzNTgsMTk0ODQ5MzYyMy
-wtOTk2MjU1NzA1LDEwNDg4NjAwMTQsODE2ODE5MzEyLC0xNTY1
-NzAxMTM2LC05MjM3NDQxMzksLTU4NjU1NTIwNiwxMjQ5MjIxOD
-QzLC01OTQyNDk3MzEsLTE4MTc3NzY1MjQsMTIyMTA0MjUwNywy
-MDc2NDYwMjM3XX0=
+eyJoaXN0b3J5IjpbMTA4NzQ2NzI1MiwtMTYzMDgwMTMwNCwyMD
+YyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1
+OTE0MSwtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2Mj
+MsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2
+NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUyMDYsMTI0OTIyMT
+g0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LDEyMjEwNDI1MDcs
+MjA3NjQ2MDIzN119
 -->
