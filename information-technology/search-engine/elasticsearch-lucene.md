@@ -145,17 +145,21 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 ## 세그먼트 불변성
 
-세그먼트의 불변성은 내부에 역색인 구조로 생성된
+세그먼트의 불변성은 루씬의 입장에서는 매우 중요한 특성이다. 주로 대용량 텍스트를 다루어야 하는 역색인 구조에서는 불변성이 제공하는 여러 장점이 있다. 
+
+>동시성 문제 회피
+>불변성이 보장되면 잠금(Lock)이 필요 없어진다. 다수의 쓰레드가 동작하는 다중 쓰레드 환경에서 동시성 문제를 불변성이 보장되면 간단
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NDk1NDA5LDE2MzY3Mjg0ODQsMTAyOD
-YzOTQ5MCwtMTE4OTE2NDM3LC0xODM5NTUwNzI3LDI3Njk3MDg3
-OSwtOTI4MzQ0NDQ1LDkxNzkwMTQ2MywxMDkwNjQ4NTgwLC0xMj
-AyMTcwNjg0LC0xMTc4MDMxNDUxLC0xNjk4NTcwMTMyLC04ODI5
-MTI4NDYsLTM5OTkzOTI2MSwxOTA2Nzk0NjI0LC04MjQ1MjU2MD
-YsLTEyMzQ1MjIyMTksNjUzNzQ1MDQsLTEzMTAyNDMyNCw3NjM5
-Njc4MjldfQ==
+eyJoaXN0b3J5IjpbLTMxODgzMzk0NCwxNjk0OTU0MDksMTYzNj
+cyODQ4NCwxMDI4NjM5NDkwLC0xMTg5MTY0MzcsLTE4Mzk1NTA3
+MjcsMjc2OTcwODc5LC05MjgzNDQ0NDUsOTE3OTAxNDYzLDEwOT
+A2NDg1ODAsLTEyMDIxNzA2ODQsLTExNzgwMzE0NTEsLTE2OTg1
+NzAxMzIsLTg4MjkxMjg0NiwtMzk5OTM5MjYxLDE5MDY3OTQ2Mj
+QsLTgyNDUyNTYwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNCwtMTMx
+MDI0MzI0XX0=
 -->
