@@ -467,13 +467,14 @@ SELECT * FROM employees GROUP BY last_name ORDER BY first_name
 4. 같은 last_name이 있으면 임시 테이블에 update 또는 무시
 5. 임시 테이블 크기가 특정 크기(시스템 설정) 커지면 임시 테이블을 MyISAM 테이블 디스크로 이동
 6. Employees 테이블에 더 읽을 레코드가 없을때 까지 2~6번 반복
-7. 임시 테이블에서 
+7. 임시 테이블에서 first_name으로 정렬 작업을 수행후 클라이언트에 결과 반환
 
+여기서 성능상 중요한 점은 MEMORY 스토리지 엔진을 쓴다면 괜찮을지도 모르겠지만 디스크(MyISAM)을 거쳐 디스크에 저장된다면 적지 않은 부하가 발생하리란 것이다. 
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NzQ2NzI1MiwtMTYzMDgwMTMwNCwyMD
+eyJoaXN0b3J5IjpbMTE4ODc4NjIwMiwtMTYzMDgwMTMwNCwyMD
 YyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1
 OTE0MSwtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2Mj
 MsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2
