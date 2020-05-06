@@ -126,13 +126,22 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 루씬에 요청이 들어왔을때 상황에 따라 동작하는 방식
 
- 최초 색인이 요청된 경우
+ 최초 색인 요청
  1. IndexWriter가 세그먼트를 생성
  2. IndexSearcher가 생성된 세그먼트를 읽어 검색 제공 
 
+추가 색인 요청
+ 1. IndexWriter가 세그먼트를 추가 생성
+ 2. 세그먼트가 추가 생성되는 동안 기존 세그먼트만 읽어 검색 결과 제공
+ 3. 세그먼트 생성이 완료되면 생성된 세그먼트도 마저 읽어 결과 제공
+
+
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMTQzODA4MCwxMDI4NjM5NDkwLC0xMT
+eyJoaXN0b3J5IjpbMTYzNjcyODQ4NCwxMDI4NjM5NDkwLC0xMT
 g5MTY0MzcsLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC05MjgzNDQ0
 NDUsOTE3OTAxNDYzLDEwOTA2NDg1ODAsLTEyMDIxNzA2ODQsLT
 ExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLTg4MjkxMjg0NiwtMzk5
