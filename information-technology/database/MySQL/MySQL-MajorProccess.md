@@ -404,16 +404,23 @@ MySQL 엔진이 내부적인 가공을 위해 생성하는 임시 테이블은 �
 
 ## 임시 테이블이 필요한 쿼리
 
+아래 쿼리는 MySQL엔진에서 별도의 데이터 가공 작업이 필요로 하다.물론 이 밖에도 인덱스를 사요하지 못할때는 내부 임시 테이블을 생성해야 할때가 많다.
+
+* ORDER BY나 GROUP BY에 명시된 컬럼이 다른 쿼리
+* ORDER BY나 GROUP BY에 명시된 컬럼이 조인 순서상 첫 번째 테이블이 아닌 쿼리
+* DISTINCT와 ORDER BY가 동
+
+
 
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MjQzMjYyMywyNDU4NjQ2NTYsLTE4Nj
-UzNzk3ODYsLTE3NDU2NTkxNDEsLTcxMTQzNDE2NCwtMTAzMjA1
-ODM1OCwxOTQ4NDkzNjIzLC05OTYyNTU3MDUsMTA0ODg2MDAxNC
-w4MTY4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2
-NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3Nj
-UyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1Miwt
-MjA3MzkxNjc0Nl19
+eyJoaXN0b3J5IjpbNTc1MzE3MjkyLDIwNjI0MzI2MjMsMjQ1OD
+Y0NjU2LC0xODY1Mzc5Nzg2LC0xNzQ1NjU5MTQxLC03MTE0MzQx
+NjQsLTEwMzIwNTgzNTgsMTk0ODQ5MzYyMywtOTk2MjU1NzA1LD
+EwNDg4NjAwMTQsODE2ODE5MzEyLC0xNTY1NzAxMTM2LC05MjM3
+NDQxMzksLTU4NjU1NTIwNiwxMjQ5MjIxODQzLC01OTQyNDk3Mz
+EsLTE4MTc3NzY1MjQsMTIyMTA0MjUwNywyMDc2NDYwMjM3LC0y
+OTM0MzYzNTJdfQ==
 -->
