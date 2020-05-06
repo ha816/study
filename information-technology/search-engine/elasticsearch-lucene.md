@@ -145,17 +145,17 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 ## 세그먼트 불변성
 
-세그먼트의 불변성은 내부에 역색인 구조로 쌩성된
+세그먼트의 불변성은 내부에 역색인 구조로 생성된
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDgzMjAzNywxNjM2NzI4NDg0LDEwMj
-g2Mzk0OTAsLTExODkxNjQzNywtMTgzOTU1MDcyNywyNzY5NzA4
-NzksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MDY0ODU4MCwtMT
-IwMjE3MDY4NCwtMTE3ODAzMTQ1MSwtMTY5ODU3MDEzMiwtODgy
-OTEyODQ2LC0zOTk5MzkyNjEsMTkwNjc5NDYyNCwtODI0NTI1Nj
-A2LC0xMjM0NTIyMjE5LDY1Mzc0NTA0LC0xMzEwMjQzMjQsNzYz
-OTY3ODI5XX0=
+eyJoaXN0b3J5IjpbMTY5NDk1NDA5LDE2MzY3Mjg0ODQsMTAyOD
+YzOTQ5MCwtMTE4OTE2NDM3LC0xODM5NTUwNzI3LDI3Njk3MDg3
+OSwtOTI4MzQ0NDQ1LDkxNzkwMTQ2MywxMDkwNjQ4NTgwLC0xMj
+AyMTcwNjg0LC0xMTc4MDMxNDUxLC0xNjk4NTcwMTMyLC04ODI5
+MTI4NDYsLTM5OTkzOTI2MSwxOTA2Nzk0NjI0LC04MjQ1MjU2MD
+YsLTEyMzQ1MjIyMTksNjUzNzQ1MDQsLTEzMTAyNDMyNCw3NjM5
+Njc4MjldfQ==
 -->
