@@ -112,13 +112,17 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 루씬에는 세그먼트를 관리하기 위한 용도로 커밋 포인트(Commit Point)라는 자료구조를 제공한다. 커밋 포인트는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용 한다. 
 
+루씬의 IndexSearcher는 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트 부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
+
+최초 색인 작업 요청이 루씬에 들어오면 IndexWriter로 색인 작업이 이루어지고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새그러 세그먼트가 추가되고 커밋 포인트에 기록
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc2OTcwODc5LC05MjgzNDQ0NDUsOTE3OT
-AxNDYzLDEwOTA2NDg1ODAsLTEyMDIxNzA2ODQsLTExNzgwMzE0
-NTEsLTE2OTg1NzAxMzIsLTg4MjkxMjg0NiwtMzk5OTM5MjYxLD
-E5MDY3OTQ2MjQsLTgyNDUyNTYwNiwtMTIzNDUyMjIxOSw2NTM3
-NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOSwtMTQxODE5MDg0Ny
-wtMTkzOTYwNjY2MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMTk4
-ODcxNDQwN119
+eyJoaXN0b3J5IjpbLTE3MTc3NDg3NjAsMjc2OTcwODc5LC05Mj
+gzNDQ0NDUsOTE3OTAxNDYzLDEwOTA2NDg1ODAsLTEyMDIxNzA2
+ODQsLTExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLTg4MjkxMjg0Ni
+wtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUyNTYwNiwtMTIz
+NDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOS
+wtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0NzY4NTgxLDE4
+NTcwNDIwMjNdfQ==
 -->
