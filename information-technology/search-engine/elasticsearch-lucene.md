@@ -118,16 +118,16 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 세그먼트의 갯수가 너무 많아지면 읽기의 성능 저하가 생길수 있기 때문에 이를 위해 루씬은 백그라운드에서 주기적으로 세그먼트 파일을 병합(Merge)하는 작업을 수행한다. 이를 통해 모든 세그먼트를 물리적으로 하나의 파일로 병합한다. 
 
-
+정책에 따라 몇개의 세그먼트가 순차적으로 선택되어 합쳐지고, 일정 시간이 흘러 더 색인 작업이 없는 상태가 되면 하나의 큰 세그먼트만 남는다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC05Mj
-gzNDQ0NDUsOTE3OTAxNDYzLDEwOTA2NDg1ODAsLTEyMDIxNzA2
-ODQsLTExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLTg4MjkxMjg0Ni
-wtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUyNTYwNiwtMTIz
-NDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOS
-wtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0NzY4NTgxLDE4
-NTcwNDIwMjNdfQ==
+eyJoaXN0b3J5IjpbLTI4NDk0ODkwNCwtMTgzOTU1MDcyNywyNz
+Y5NzA4NzksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MDY0ODU4
+MCwtMTIwMjE3MDY4NCwtMTE3ODAzMTQ1MSwtMTY5ODU3MDEzMi
+wtODgyOTEyODQ2LC0zOTk5MzkyNjEsMTkwNjc5NDYyNCwtODI0
+NTI1NjA2LC0xMjM0NTIyMjE5LDY1Mzc0NTA0LC0xMzEwMjQzMj
+QsNzYzOTY3ODI5LC0xNDE4MTkwODQ3LC0xOTM5NjA2NjYyLDE4
+NzQ3Njg1ODFdfQ==
 -->
