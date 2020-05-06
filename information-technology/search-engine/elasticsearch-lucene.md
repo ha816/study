@@ -139,14 +139,19 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
  1. IndexWriter가 Merge 대상이 되는 세그먼트를 복제
  2.  IndexWriter가 복제한 세그먼트를 하나로 병합
- 3. 복제 세그먼트들이 병합되는 동안 
+ 3. 복제 세그먼트들이 병합되는 동안 IndexSearcher는 원본 세그먼트를 읽어 검색 수행
+ 4. 복제본 세그먼트의 병합이 완료되면 원본 세그먼트와 교체하고 원본 세그먼트 삭제
+ 5. IndexSearcher는 새로운 세그먼트를 읽어 검색 결과 제공
 
+## 세그먼트 불변성
+
+세그먼트의 불변성은 내부에 역색인 구조로 쌩성된
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5OTM3ODUzOCwxNjM2NzI4NDg0LDEwMj
+eyJoaXN0b3J5IjpbMTIzNDgzMjAzNywxNjM2NzI4NDg0LDEwMj
 g2Mzk0OTAsLTExODkxNjQzNywtMTgzOTU1MDcyNywyNzY5NzA4
 NzksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MDY0ODU4MCwtMT
 IwMjE3MDY4NCwtMTE3ODAzMTQ1MSwtMTY5ODU3MDEzMiwtODgy
