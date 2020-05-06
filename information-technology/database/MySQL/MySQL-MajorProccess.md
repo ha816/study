@@ -400,14 +400,20 @@ MySQL 엔진이 스토리지 엔진으로부터 받오온 레코드를 정렬하
 
 원본 테이블의 스토리지 엔진과 관계없이 임시 테이블이 메모리를 사용할 때는 MEMORY 스토리지 엔진을 사용하며, 디스크에 저장될때는 MyISAM 스토리지 엔진을 사용한다.
 
+MySQL 엔진이 내부적인 가공을 위해 생성하는 임시 테이블은 다른 세션이나 다른 쿼리에서는 볼 수 없으며 사용하는 것도 불가능하다. 사용자가 생성한 임시 테이블(CREATE TEMPORARY TABLE)과는 달리 내부 임시 테이블은 쿼리 처리가 완료되면 자동으로 삭제된다.
+
+## 임시 테이블이 필요한 쿼리
+
+
+
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg1NDAzNzU5LDI0NTg2NDY1NiwtMTg2NT
-M3OTc4NiwtMTc0NTY1OTE0MSwtNzExNDM0MTY0LC0xMDMyMDU4
-MzU4LDE5NDg0OTM2MjMsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LD
-gxNjgxOTMxMiwtMTU2NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1
-NTUyMDYsMTI0OTIyMTg0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NT
-I0LDEyMjEwNDI1MDcsMjA3NjQ2MDIzNywtMjkzNDM2MzUyLC0y
-MDczOTE2NzQ2XX0=
+eyJoaXN0b3J5IjpbMjA2MjQzMjYyMywyNDU4NjQ2NTYsLTE4Nj
+UzNzk3ODYsLTE3NDU2NTkxNDEsLTcxMTQzNDE2NCwtMTAzMjA1
+ODM1OCwxOTQ4NDkzNjIzLC05OTYyNTU3MDUsMTA0ODg2MDAxNC
+w4MTY4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2
+NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwtMTgxNzc3Nj
+UyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcsLTI5MzQzNjM1Miwt
+MjA3MzkxNjc0Nl19
 -->
