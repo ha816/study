@@ -3,9 +3,9 @@
 > 자기소개
 > TIP. 열의와 열정을 담아 주요 업적에 대해 자신있게 대답해 보자.자. 30 ~ 60초 정도
 
-저는 TMON의 Back-End 개발파트 중 배송파트에서 개발 경력을 쌓았습니다. 배송파트에서는 배송 도메인뿐만 아니라 취소, 환불 도메인도 함께 가지고 있고 두 가지 도메인에서 서비스 개발 및 유지보수가 주요 역할이었습니다. 그 과정에서 REST API, DB 설계 및 생성, 배치 개발 등을 했고 가끔 유저뷰, 어드민 서비스도 만들었습니다.
+저는 TMON의 Back-End 개발파트 중 배송파트에서 개발 경력을 쌓았습니다. 배송파트에서는 배송 도메인뿐만 아니라 취소, 환불 도메인도 함께 가지고 있으며 두 가지 도메인에서 서비스 개발 및 유지보수가 저의 주요 역할이었습니다. 그 과정에서 REST API 개발, Batch 개발, DB 설계 및 생성 작업 등을 했고 틈틈이 유저뷰, 어드민 서비스도 만들었습니다.
 업무 시 주로 사용한 기술로는 java 기반의 Spring(4.3.3), DB에는 MySQL, 배치성 작업에는 Spring Batch를 사용하였습니다. 진행한 프로젝트로는 배송상품 선물하기, 도서 산간 시스템 구축, 상품 페이지 평균 배송일 계산 및 적재 등이 있습니다.
-개발자의 지속적인 발전은 회사의 입장에서도 큰 자산이라고 생각합니다. 저는 사내 스터디(effective-java, Real Mysql, ...)와 관심 있는 분야의 독서로 알게 된 지식을 지속적으로 Git에 정리하고 있습니다. (https://github.com/ha816/algorithms, https://github.com/ha816/study)
+개발자의 지속적인 발전은 회사로서도 큰 자산이라고 생각합니다. 저는 사내 스터디(effective-java, Real Mysql, ...)와 관심 있는 분야의 독서로 알게 된 지식을 지속적으로 Git에 정리하고 있습니다. (https://github.com/ha816/algorithms, https://github.com/ha816/study)
 
 감사합니다.
 
@@ -35,8 +35,8 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MTQ3MTA5NywzMzYwODYzODQsMTkxOD
-ExNjI0MiwxMzg4MDQzNzE4LC0yMTM0ODY0MDc0LC0xMTQwMDc2
-ODYzLDIxNDA3NDM3MDUsMjAzMTM5NzQ2LC0yMDIxNzcwMzM3LC
-0xOTk0Njg1NDUzLC01ODQxMzI4LC05NzA2NjA3NV19
+eyJoaXN0b3J5IjpbLTE2MjU1ODUxMzEsMzM2MDg2Mzg0LDE5MT
+gxMTYyNDIsMTM4ODA0MzcxOCwtMjEzNDg2NDA3NCwtMTE0MDA3
+Njg2MywyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMjAyMTc3MDMzNy
+wtMTk5NDY4NTQ1MywtNTg0MTMyOCwtOTcwNjYwNzVdfQ==
 -->
