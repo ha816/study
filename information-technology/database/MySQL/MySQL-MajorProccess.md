@@ -419,7 +419,11 @@ MySQL 엔진이 내부적인 가공을 위해 생성하는 임시 테이블은 �
 ### 임시 테이블이 디스크에 생성되는 경우(MyISAM 스토리지 엔진을 사용)
 내부 임시 테이블은 기본적으로 메모리상에 만들어지지만 아래와 같은 조건일 경우 임시 테이블을 생성할 수 없어 디스크 상에 MyISAM 테이블로 만들어진다.
 
-* 임시 테이블에 저장해야 내용 중 BLOB(Binary Large O
+* 임시 테이블에 저장해야 할 내용 중 BLOB(Binary Large Object)나 TEXT와 같이 대용량 컬럼이 있는 경우
+* 임시 테이블이 저장해야 하는 레코드 전체 크기나 UNION이나 UNION ALL에서 SELECT 되는 컬럼 중에서 길이가 512byte 이상인 크기의 컬럼이 있는 경우
+* GROUP BY나 DISTINCT 컬럼에서 512byte이상의 컬럼이 있는 경우
+* 임시 테이블에 저장할 데이터 전체 크기가 tmp_table_size 또는 max_heap_table_size 시스템 설정보다 큰 경우
+* 
 
 
 
@@ -427,11 +431,11 @@ MySQL 엔진이 내부적인 가공을 위해 생성하는 임시 테이블은 �
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODQ4MzgxNDUsLTE2MzA4MDEzMDQsMj
-A2MjQzMjYyMywyNDU4NjQ2NTYsLTE4NjUzNzk3ODYsLTE3NDU2
-NTkxNDEsLTcxMTQzNDE2NCwtMTAzMjA1ODM1OCwxOTQ4NDkzNj
-IzLC05OTYyNTU3MDUsMTA0ODg2MDAxNCw4MTY4MTkzMTIsLTE1
-NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2NTU1MjA2LDEyNDkyMj
-E4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNCwxMjIxMDQyNTA3
-LDIwNzY0NjAyMzddfQ==
+eyJoaXN0b3J5IjpbMTY5MzE2MzIxOSwtMTYzMDgwMTMwNCwyMD
+YyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1
+OTE0MSwtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2Mj
+MsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2
+NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUyMDYsMTI0OTIyMT
+g0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LDEyMjEwNDI1MDcs
+MjA3NjQ2MDIzN119
 -->
