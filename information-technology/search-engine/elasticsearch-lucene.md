@@ -108,15 +108,17 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 ![enter image description here](https://www.programmersought.com/images/409/1c42be389219e95a5327a096c31c59a1.png)
 
-루씬은 검색 요청을 받으면 다수의 작은 세그먼트 조각들이 각 검색 결과를 만들어내고 이를 통합해서 결과로 응답한다. 이러한 검색 방식을 세그먼트 단위 검색(Per-Segment Search)라고 한다. (초록색 DB모형이 세그먼트)
+루씬은 검색 요청을 받으면 다수의 작은 세그먼트 조각들이 각 검색 결과를 만들어내고 이를 통합해서 결과로 응답한다. 이러한 **검색 방식을 세그먼트 단위 검색(Per-Segment Search)** 라고 한다. (초록색 DB모형이 세그먼트) 세그먼트는 역색인 구조를 지닌 파일 자체를 의미하는데 세그먼트 내부에는 실제로 색인덴 데이터가 역색인 구조로 저장되어 있다.
+
+루씬에는 세그먼트를 관리하기 위한 용도로 커밋 포인트(Commit Point)라는 자료구조를 제공한다. 커밋 포인트는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용 한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwOTI2NTczNSwtOTI4MzQ0NDQ1LDkxNz
-kwMTQ2MywxMDkwNjQ4NTgwLC0xMjAyMTcwNjg0LC0xMTc4MDMx
-NDUxLC0xNjk4NTcwMTMyLC04ODI5MTI4NDYsLTM5OTkzOTI2MS
-wxOTA2Nzk0NjI0LC04MjQ1MjU2MDYsLTEyMzQ1MjIyMTksNjUz
-NzQ1MDQsLTEzMTAyNDMyNCw3NjM5Njc4MjksLTE0MTgxOTA4ND
-csLTE5Mzk2MDY2NjIsMTg3NDc2ODU4MSwxODU3MDQyMDIzLDE5
-ODg3MTQ0MDddfQ==
+eyJoaXN0b3J5IjpbMjc2OTcwODc5LC05MjgzNDQ0NDUsOTE3OT
+AxNDYzLDEwOTA2NDg1ODAsLTEyMDIxNzA2ODQsLTExNzgwMzE0
+NTEsLTE2OTg1NzAxMzIsLTg4MjkxMjg0NiwtMzk5OTM5MjYxLD
+E5MDY3OTQ2MjQsLTgyNDUyNTYwNiwtMTIzNDUyMjIxOSw2NTM3
+NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOSwtMTQxODE5MDg0Ny
+wtMTkzOTYwNjY2MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMTk4
+ODcxNDQwN119
 -->
