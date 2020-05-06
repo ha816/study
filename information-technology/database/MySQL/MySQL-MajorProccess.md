@@ -471,12 +471,16 @@ SELECT * FROM employees GROUP BY last_name ORDER BY first_name
 
 여기서 성능상 중요한 점은 MEMORY 스토리지 엔진을 쓴다면 괜찮을지도 모르겠지만 디스크(MyISAM)을 거쳐 디스크에 저장된다면 적지 않은 부하가 발생하리란 것이다. 가능하다면 인덱스를 이용해 처리하고, 처음부터 임시 테이블이 필요하지 않게 만드는 것이 가장 좋다. 이것이 어렵다면 내부 임시 테이블이 메모리에서만 처리되도록 대상 레코드를 적게 만드는 것이 좋다. 하지만 가공할 데이터를 줄일 수 없다고 해서 tmp_table_size나 max_heap_table_size를 무조건 크게하는 것은 위험하다. 
 
-임시 테이블이 MEMORY(HEAP) 테이블로 물리 메모리에 생성되는 경우도 완벽하지 않다. **MEMORY 테이블의 모든 컬럼은 고정 크기 컬럼이라는 점이다.** 따라서 실제 InnoDB 스토리지 엔진에서는 작은 크기의 컬럼이더라도 MEMORY 테이블에선 불필요하게 많은 공간을 차지하게 된다. 이
+임시 테이블이 MEMORY(HEAP) 테이블로 물리 메모리에 생성되는 경우도 완벽하지 않다. **MEMORY 테이블의 모든 컬럼은 고정 크기 컬럼이라는 점이다.** 따라서 실제 InnoDB 스토리지 엔진에서는 작은 크기의 컬럼이더라도 MEMORY 테이블에선 불필요하게 많은 공간을 차지하게 된다. 이러한 임시 테이블의 저장 방식때문에 SELECT하는 컬럼을 최소화하는게 좋다. (특히 BLOB이나 TEXT컬럼은 배제하는게 좋다)
 
 # 테이블 조인(table join)
+
+MySQL은 다른 DBMS보다 조인을 처리하는 방식이 단순하다. 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNTUwNDcwNiwtMTYzMDgwMTMwNCwyMD
+eyJoaXN0b3J5IjpbMjA2ODc1MTg3MSwtMTYzMDgwMTMwNCwyMD
 YyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1
 OTE0MSwtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2Mj
 MsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2
