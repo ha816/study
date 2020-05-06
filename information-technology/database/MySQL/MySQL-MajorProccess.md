@@ -439,7 +439,8 @@ SELECT ...
 
 쿼리를 실행하기 전에 SHOW SESSION STATUS LIKE 'Created_tmp%'를 사용하면 현재 임시 테이블 사용 현황을 알려준다. SELECT 쿼리를 실행한 후, 다시 상태 조회를 해보면 누적된 값이 노출된다.
 
-* cre
+Created_tmp_tables
+: 쿼리 처리를 위해 만들어진 내부 임시 테이블의 누적 갯수. 이 값은 메모리에 만들어졌는지 디스크에 만들어졌는지 구분하지 않고 모두 누적한다.
 
 
 
@@ -447,11 +448,11 @@ SELECT ...
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg4NDk3NDQ5LC0xNjMwODAxMzA0LDIwNj
-I0MzI2MjMsMjQ1ODY0NjU2LC0xODY1Mzc5Nzg2LC0xNzQ1NjU5
-MTQxLC03MTE0MzQxNjQsLTEwMzIwNTgzNTgsMTk0ODQ5MzYyMy
-wtOTk2MjU1NzA1LDEwNDg4NjAwMTQsODE2ODE5MzEyLC0xNTY1
-NzAxMTM2LC05MjM3NDQxMzksLTU4NjU1NTIwNiwxMjQ5MjIxOD
-QzLC01OTQyNDk3MzEsLTE4MTc3NzY1MjQsMTIyMTA0MjUwNywy
-MDc2NDYwMjM3XX0=
+eyJoaXN0b3J5IjpbLTUzNzkyMjg5NiwtMTYzMDgwMTMwNCwyMD
+YyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1
+OTE0MSwtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2Mj
+MsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2
+NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUyMDYsMTI0OTIyMT
+g0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LDEyMjEwNDI1MDcs
+MjA3NjQ2MDIzN119
 -->
