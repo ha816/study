@@ -414,18 +414,18 @@ MySQL 엔진이 내부적인 가공을 위해 생성하는 임시 테이블은 �
 * 쿼리의 실행 계획에서 select_type이 DERIVED인 쿼리
 
 
-어떤 쿼리 
+어떤 쿼리의 실행계획에서 임시 테이블을 사용하는지는 Extra 컬럼에 Using tempoary 키워드를 보면 된다. 하지만 해당 키워드가 없을때도 임시 테이블을 사용하는 경우가 있는데, 위 예에서 마지막 3개 패턴이 그런 예이다. 
 
 
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNTEwMzI2NywyMDYyNDMyNjIzLDI0NT
-g2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1OTE0MSwtNzExNDM0
-MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2MjMsLTk5NjI1NTcwNS
-wxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2NTcwMTEzNiwtOTIz
-NzQ0MTM5LC01ODY1NTUyMDYsMTI0OTIyMTg0MywtNTk0MjQ5Nz
-MxLC0xODE3Nzc2NTI0LDEyMjEwNDI1MDcsMjA3NjQ2MDIzNywt
-MjkzNDM2MzUyXX0=
+eyJoaXN0b3J5IjpbLTE2MzA4MDEzMDQsMjA2MjQzMjYyMywyND
+U4NjQ2NTYsLTE4NjUzNzk3ODYsLTE3NDU2NTkxNDEsLTcxMTQz
+NDE2NCwtMTAzMjA1ODM1OCwxOTQ4NDkzNjIzLC05OTYyNTU3MD
+UsMTA0ODg2MDAxNCw4MTY4MTkzMTIsLTE1NjU3MDExMzYsLTky
+Mzc0NDEzOSwtNTg2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OT
+czMSwtMTgxNzc3NjUyNCwxMjIxMDQyNTA3LDIwNzY0NjAyMzcs
+LTI5MzQzNjM1Ml19
 -->
