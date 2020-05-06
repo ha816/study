@@ -17,8 +17,9 @@
 	* 선물 주문 구매내역만 보여주는 선물함 API지원
 	* 수령자 알림 서비스(비즈톡, LMS)
 
-## 일반적으로 도서산간 지역에 배송시 추가 배송비가 발생한다. 추가 발생 배송비를 고객이 후불로 지불했는데 선결제가 가능하도록 구조를 고치고 도서산간 지역을 관리하는 시스템을 구축했다. 
-도서산간 배송시스템 구축
+## 도서산간 배송시스템 구축
+
+일반적으로 도서산간 지역에 배송시 추가 배송비가 발생한다. 추가 발생 배송비를 고객이 후불로 지불했는데 선결제가 가능하도록 구조를 고치고 도서산간 지역을 관리하는 시스템을 구축했다. 
 
 ### 주요 역할
 
@@ -53,7 +54,7 @@ Matrix factorization이란 주어진 매트릭스를 분해하여 요소를 구�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNzA5MzM2MywtNDA2ODY1Mzg5LC0xNj
+eyJoaXN0b3J5IjpbLTQwNjg2NTM4OSwtNDA2ODY1Mzg5LC0xNj
 IyNjU1MjE1LDM3MzY3NDA1MCwtNzg0MzQ4NjE2LC00MDk1MTk0
 MTUsMjAxNDUyODkwOCwtNDA5NTE5NDE1LC0xMjE5NDQ1NTE3LD
 YyOTk4OTY5NCwtMTQxNzg3NTMyOSwtMTA1MjQ0NTU4NCwxNTk4
