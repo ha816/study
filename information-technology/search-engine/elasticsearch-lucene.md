@@ -135,17 +135,20 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
  2. 세그먼트가 추가 생성되는 동안 기존 세그먼트만 읽어 검색 결과 제공
  3. 세그먼트 생성이 완료되면 생성된 세그먼트도 마저 읽어 결과 제공
 
-주기적 
+주기적 세그먼트 병합 작업
+
+ 1. IndexWriter가 Merge 대상이 되는 세그먼트를 복제
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzA0Mjc4MjMsMTYzNjcyODQ4NCwxMD
-I4NjM5NDkwLC0xMTg5MTY0MzcsLTE4Mzk1NTA3MjcsMjc2OTcw
-ODc5LC05MjgzNDQ0NDUsOTE3OTAxNDYzLDEwOTA2NDg1ODAsLT
-EyMDIxNzA2ODQsLTExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLTg4
-MjkxMjg0NiwtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUyNT
-YwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LDc2
-Mzk2NzgyOV19
+eyJoaXN0b3J5IjpbLTY5OTA2NTQ1NywxNjM2NzI4NDg0LDEwMj
+g2Mzk0OTAsLTExODkxNjQzNywtMTgzOTU1MDcyNywyNzY5NzA4
+NzksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MDY0ODU4MCwtMT
+IwMjE3MDY4NCwtMTE3ODAzMTQ1MSwtMTY5ODU3MDEzMiwtODgy
+OTEyODQ2LC0zOTk5MzkyNjEsMTkwNjc5NDYyNCwtODI0NTI1Nj
+A2LC0xMjM0NTIyMjE5LDY1Mzc0NTA0LC0xMzEwMjQzMjQsNzYz
+OTY3ODI5XX0=
 -->
