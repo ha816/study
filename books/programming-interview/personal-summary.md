@@ -6,7 +6,7 @@
 저는 3년간 TMON의 배송파트에서 개발 경력을 쌓았습니다. 배송파트에서는 배송 도메인 뿐만 아니라 취소, 환불 도메인도 함께 하고 있고 두 가지 도메인에서 서비스 개발 및 유지보수가 저의 역할이었습니다. 그 과정에서 REST API, DB 설계 및 생성, 배치 개발 등을 했고 간간히 유저뷰, 어드민 페이지도 만들었습니다. 
 업무 시 주로 사용한 기술로는 java 기반의 Spring(4.3.3), DB에는 MySQL, 배치성 작업에는 Spring Batch를 사용하였습니다. 
 진행한 프로젝트로는 배송상품 선물하기, 도서산간 시스템 구축, 상품 페이지 평균배송일 계산 및 적재 등이 있습니다. 
-개발자의 지속적인 발전은 회사의 입장에서도 큰 자산이라고 생각합니다. 저는 사내 스터디(effective-java, Real Mysql, ...)와 흥미 있는 분야의 독서(통계, 알고리즘)로 알게 된 지식을 조금씩 Git에 정리하고 있습니다. (https://github.com/ha816/algorithms, https://github.com/ha816/study)
+개발자의 지속적인 발전은 회사의 입장에서도 큰 자산이라고 생각합니다. 저는 사내 스터디(effective-java, Real Mysql, ...)와 관심있는 분야의 독서로 알게 된 지식을 지속적으로 Git에 정리하고 있습니다. (https://github.com/ha816/algorithms, https://github.com/ha816/study)
 
 
 
@@ -38,8 +38,8 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NTQ3NDI4MiwzMzYwODYzODQsMTkxOD
-ExNjI0MiwxMzg4MDQzNzE4LC0yMTM0ODY0MDc0LC0xMTQwMDc2
-ODYzLDIxNDA3NDM3MDUsMjAzMTM5NzQ2LC0yMDIxNzcwMzM3LC
-0xOTk0Njg1NDUzLC01ODQxMzI4LC05NzA2NjA3NV19
+eyJoaXN0b3J5IjpbLTIwMzUxODExMzQsMzM2MDg2Mzg0LDE5MT
+gxMTYyNDIsMTM4ODA0MzcxOCwtMjEzNDg2NDA3NCwtMTE0MDA3
+Njg2MywyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMjAyMTc3MDMzNy
+wtMTk5NDY4NTQ1MywtNTg0MTMyOCwtOTcwNjYwNzVdfQ==
 -->
