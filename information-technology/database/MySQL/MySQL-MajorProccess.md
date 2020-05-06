@@ -443,15 +443,18 @@ Created_tmp_tables
 : 쿼리 처리를 위해 만들어진 내부 임시 테이블의 누적 갯수. 이 값은 메모리에 만들어졌는지 디스크에 만들어졌는지 구분하지 않고 모두 누적한다.
 
 Created_tmp_dist_tables
-: 디스크에
+: 디스크에 만들어진 내부 임시 테이블 개수를 누적하는 값
 
 
+## 임시 테이블 주의사항
+
+레코드 건수가 많지 않으면 임시 테이블은 메모리에 생성되고 MySQL 서버 부하에 크게 영향을 주지 않는다. **성능상 이슈가 되는 부분은 내부 임시 테이블이 MyISAM 테이블로 디스크에 생성되는 경우다.**
 
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MzgwMTAxOSwtMTYzMDgwMTMwNCwyMD
+eyJoaXN0b3J5IjpbMTgwMzI1NTg2OSwtMTYzMDgwMTMwNCwyMD
 YyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1
 OTE0MSwtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2Mj
 MsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2
