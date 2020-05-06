@@ -102,13 +102,19 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 엘라스틱서치는 처음부터 근실시간(Near Real Time) 검색을 제공하는 것을 목표로 개발되었다. 어떻게 실시간에 가까운 검색이 제공될 수 있을까? 
 
+## 색인 작업시 세그먼트의 기본 동작
+
+하나의 루씬 인덱스는 다수의 세그먼트로 구성되어 있다. 읽기 성능이 중요한 검색 엔진에서는 하나의 세그먼트로 검색 요청을 처리하는 것 보다 다수의 세그먼트를 생성해 나누어 처리하는 것이 훨씬 효율적이다. 
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTkwNDE4OTgsOTE3OTAxNDYzLDEwOT
-A2NDg1ODAsLTEyMDIxNzA2ODQsLTExNzgwMzE0NTEsLTE2OTg1
-NzAxMzIsLTg4MjkxMjg0NiwtMzk5OTM5MjYxLDE5MDY3OTQ2Mj
-QsLTgyNDUyNTYwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNCwtMTMx
-MDI0MzI0LDc2Mzk2NzgyOSwtMTQxODE5MDg0NywtMTkzOTYwNj
-Y2MiwxODc0NzY4NTgxLDE4NTcwNDIwMjMsMTk4ODcxNDQwN119
+eyJoaXN0b3J5IjpbLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MD
+Y0ODU4MCwtMTIwMjE3MDY4NCwtMTE3ODAzMTQ1MSwtMTY5ODU3
+MDEzMiwtODgyOTEyODQ2LC0zOTk5MzkyNjEsMTkwNjc5NDYyNC
+wtODI0NTI1NjA2LC0xMjM0NTIyMjE5LDY1Mzc0NTA0LC0xMzEw
+MjQzMjQsNzYzOTY3ODI5LC0xNDE4MTkwODQ3LC0xOTM5NjA2Nj
+YyLDE4NzQ3Njg1ODEsMTg1NzA0MjAyMywxOTg4NzE0NDA3XX0=
 
 -->
