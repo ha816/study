@@ -135,17 +135,17 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
  2. 세그먼트가 추가 생성되는 동안 기존 세그먼트만 읽어 검색 결과 제공
  3. 세그먼트 생성이 완료되면 생성된 세그먼트도 마저 읽어 결과 제공
 
-
+주기적 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNjcyODQ4NCwxMDI4NjM5NDkwLC0xMT
-g5MTY0MzcsLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC05MjgzNDQ0
-NDUsOTE3OTAxNDYzLDEwOTA2NDg1ODAsLTEyMDIxNzA2ODQsLT
-ExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLTg4MjkxMjg0NiwtMzk5
-OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUyNTYwNiwtMTIzNDUyMj
-IxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOSwtMTQx
-ODE5MDg0N119
+eyJoaXN0b3J5IjpbLTE5NzA0Mjc4MjMsMTYzNjcyODQ4NCwxMD
+I4NjM5NDkwLC0xMTg5MTY0MzcsLTE4Mzk1NTA3MjcsMjc2OTcw
+ODc5LC05MjgzNDQ0NDUsOTE3OTAxNDYzLDEwOTA2NDg1ODAsLT
+EyMDIxNzA2ODQsLTExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLTg4
+MjkxMjg0NiwtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUyNT
+YwNiwtMTIzNDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LDc2
+Mzk2NzgyOV19
 -->
