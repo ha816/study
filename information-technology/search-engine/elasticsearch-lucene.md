@@ -157,18 +157,18 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 >시스템 캐시의 수명이 길어져 검색 시 데이터를 항상 메모리에서 읽어와 큰 성능향상을 꾀할 수 있다.
 
 >리소스 절감
->역색인 구조를 만드는 과정에서
+>역색인 구조를 만드는 과정에서 많은 시스템 릴
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTk4MjE2MDksLTMxMDg0MjY2OCwxNj
-k0OTU0MDksMTYzNjcyODQ4NCwxMDI4NjM5NDkwLC0xMTg5MTY0
-MzcsLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC05MjgzNDQ0NDUsOT
-E3OTAxNDYzLDEwOTA2NDg1ODAsLTEyMDIxNzA2ODQsLTExNzgw
-MzE0NTEsLTE2OTg1NzAxMzIsLTg4MjkxMjg0NiwtMzk5OTM5Mj
-YxLDE5MDY3OTQ2MjQsLTgyNDUyNTYwNiwtMTIzNDUyMjIxOSw2
-NTM3NDUwNF19
+eyJoaXN0b3J5IjpbLTEzNDE0OTYyNzcsLTExOTk4MjE2MDksLT
+MxMDg0MjY2OCwxNjk0OTU0MDksMTYzNjcyODQ4NCwxMDI4NjM5
+NDkwLC0xMTg5MTY0MzcsLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC
+05MjgzNDQ0NDUsOTE3OTAxNDYzLDEwOTA2NDg1ODAsLTEyMDIx
+NzA2ODQsLTExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLTg4MjkxMj
+g0NiwtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUyNTYwNiwt
+MTIzNDUyMjIxOV19
 -->
