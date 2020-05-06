@@ -459,16 +459,19 @@ SELECT * FROM employees GROUP BY last_name ORDER BY first_name
 |--|--|--|--|--|--|--|--|--|
 |1| SIMPLE|employees|ALL|PRIMARY|| |300584 | Using temporary; Using filesort
 
-대랴
+대략 처리해야 하는 레코드 건수가 30만 건이다. 이 실행 계획의 내부적인 작업과정을 알아보자.
+
+1. Employees 테이블의 모든 컬럼을 포함한 임시 테이블을 만든다.(MEMORY)
+2. 테이블로부터 첫번째 레코드를 가져와서 임시 테이블에 같은 last_name이 있는지 확인한다.
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjQ4MDIxNDcsLTE2MzA4MDEzMDQsMj
-A2MjQzMjYyMywyNDU4NjQ2NTYsLTE4NjUzNzk3ODYsLTE3NDU2
-NTkxNDEsLTcxMTQzNDE2NCwtMTAzMjA1ODM1OCwxOTQ4NDkzNj
-IzLC05OTYyNTU3MDUsMTA0ODg2MDAxNCw4MTY4MTkzMTIsLTE1
-NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2NTU1MjA2LDEyNDkyMj
-E4NDMsLTU5NDI0OTczMSwtMTgxNzc3NjUyNCwxMjIxMDQyNTA3
-LDIwNzY0NjAyMzddfQ==
+eyJoaXN0b3J5IjpbNjU5Mjk1MzEyLC0xNjMwODAxMzA0LDIwNj
+I0MzI2MjMsMjQ1ODY0NjU2LC0xODY1Mzc5Nzg2LC0xNzQ1NjU5
+MTQxLC03MTE0MzQxNjQsLTEwMzIwNTgzNTgsMTk0ODQ5MzYyMy
+wtOTk2MjU1NzA1LDEwNDg4NjAwMTQsODE2ODE5MzEyLC0xNTY1
+NzAxMTM2LC05MjM3NDQxMzksLTU4NjU1NTIwNiwxMjQ5MjIxOD
+QzLC01OTQyNDk3MzEsLTE4MTc3NzY1MjQsMTIyMTA0MjUwNywy
+MDc2NDYwMjM3XX0=
 -->
