@@ -116,16 +116,18 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 검색 작업 요청시 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락은 문제가 없다. 
 
-세그먼트의 갯수가 너무 많아지면 읽기의 성능 저하가 생길수 있기 때문에 이를 위해 루씬은 백그
+세그먼트의 갯수가 너무 많아지면 읽기의 성능 저하가 생길수 있기 때문에 이를 위해 루씬은 백그라운드에서 주기적으로 세그먼트 파일을 병합(Merge)하는 작업을 수행한다. 이를 통해 모든 세그먼트를 물리적으로 하나의 파일로 병합한다. 
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY1OTAzOTUwLDI3Njk3MDg3OSwtOTI4Mz
-Q0NDQ1LDkxNzkwMTQ2MywxMDkwNjQ4NTgwLC0xMjAyMTcwNjg0
-LC0xMTc4MDMxNDUxLC0xNjk4NTcwMTMyLC04ODI5MTI4NDYsLT
-M5OTkzOTI2MSwxOTA2Nzk0NjI0LC04MjQ1MjU2MDYsLTEyMzQ1
-MjIyMTksNjUzNzQ1MDQsLTEzMTAyNDMyNCw3NjM5Njc4MjksLT
-E0MTgxOTA4NDcsLTE5Mzk2MDY2NjIsMTg3NDc2ODU4MSwxODU3
-MDQyMDIzXX0=
+eyJoaXN0b3J5IjpbLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC05Mj
+gzNDQ0NDUsOTE3OTAxNDYzLDEwOTA2NDg1ODAsLTEyMDIxNzA2
+ODQsLTExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLTg4MjkxMjg0Ni
+wtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUyNTYwNiwtMTIz
+NDUyMjIxOSw2NTM3NDUwNCwtMTMxMDI0MzI0LDc2Mzk2NzgyOS
+wtMTQxODE5MDg0NywtMTkzOTYwNjY2MiwxODc0NzY4NTgxLDE4
+NTcwNDIwMjNdfQ==
 -->
