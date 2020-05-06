@@ -122,15 +122,15 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 ![enter image description here](https://www.bloghome.com.cn/content/images/2019/05/segment-merging-bw-1.png)
 
-
+루씬은 역색
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODkxNjQzNywtMTgzOTU1MDcyNywyNz
-Y5NzA4NzksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MDY0ODU4
-MCwtMTIwMjE3MDY4NCwtMTE3ODAzMTQ1MSwtMTY5ODU3MDEzMi
-wtODgyOTEyODQ2LC0zOTk5MzkyNjEsMTkwNjc5NDYyNCwtODI0
-NTI1NjA2LC0xMjM0NTIyMjE5LDY1Mzc0NTA0LC0xMzEwMjQzMj
-QsNzYzOTY3ODI5LC0xNDE4MTkwODQ3LC0xOTM5NjA2NjYyLDE4
-NzQ3Njg1ODFdfQ==
+eyJoaXN0b3J5IjpbMTUzMzU0NDY1MSwtMTE4OTE2NDM3LC0xOD
+M5NTUwNzI3LDI3Njk3MDg3OSwtOTI4MzQ0NDQ1LDkxNzkwMTQ2
+MywxMDkwNjQ4NTgwLC0xMjAyMTcwNjg0LC0xMTc4MDMxNDUxLC
+0xNjk4NTcwMTMyLC04ODI5MTI4NDYsLTM5OTkzOTI2MSwxOTA2
+Nzk0NjI0LC04MjQ1MjU2MDYsLTEyMzQ1MjIyMTksNjUzNzQ1MD
+QsLTEzMTAyNDMyNCw3NjM5Njc4MjksLTE0MTgxOTA4NDcsLTE5
+Mzk2MDY2NjJdfQ==
 -->
