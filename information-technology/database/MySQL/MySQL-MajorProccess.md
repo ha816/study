@@ -442,13 +442,16 @@ SELECT ...
 Created_tmp_tables
 : 쿼리 처리를 위해 만들어진 내부 임시 테이블의 누적 갯수. 이 값은 메모리에 만들어졌는지 디스크에 만들어졌는지 구분하지 않고 모두 누적한다.
 
+Created_tmp_dist_tables
+: 디스크에
+
 
 
 
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNzkyMjg5NiwtMTYzMDgwMTMwNCwyMD
+eyJoaXN0b3J5IjpbLTY2MzgwMTAxOSwtMTYzMDgwMTMwNCwyMD
 YyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1
 OTE0MSwtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2Mj
 MsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2
