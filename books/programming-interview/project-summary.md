@@ -29,6 +29,9 @@
 * 배송 정책에 일치하는 경우, 배송비 선결제가 가능
 * 고객 환불시 도서산간 추가 배송비 계산 로직 수정
 
+기존 배송 서비스에서는 도서 산간 지역에서 배송 서비스 이용 시 추가 배송비가 발생했고 이를 자동으로 결제해 주는 시스템이 없어 고객이 수기로 후불 결제를 했습니다. 본 프로젝트는 도서 산간 추가 배송비를 주문 시 선결제가 가능하도록 구조를 고치고 도서 산간 지역을 체계적으로 관리하는 시스템을 구축했습니다. 저의 주요 작업은 배송 정책에 일치하는 경우, 배송비 선결제가 가능하도록 추가 배송비 계산 로직을 수정하는 것과 우편번호 기반의 도서 산간 지역 RDB Schema를 설계하고 어드민에 노출될 도서 산간 지역 조회 서비스를 만드는 것이었습니다.
+
+
 ## 평균 배송소요일 계산 및 적재
 
 티몬의 상품 페이지에 평균적으로 평일만에 상품이 도착했는지를 보여주는 정보가 바로 평균 배송소요일이다. 평균치를 계산하기 위해 Spring Batch와 Couchbase를 사용했다. 
@@ -54,10 +57,10 @@ Matrix factorization이란 주어진 매트릭스를 분해하여 요소를 구�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNjg2NTM4OSwtNDA2ODY1Mzg5LC0xNj
-IyNjU1MjE1LDM3MzY3NDA1MCwtNzg0MzQ4NjE2LC00MDk1MTk0
-MTUsMjAxNDUyODkwOCwtNDA5NTE5NDE1LC0xMjE5NDQ1NTE3LD
-YyOTk4OTY5NCwtMTQxNzg3NTMyOSwtMTA1MjQ0NTU4NCwxNTk4
-OTA1MzQxLC0xMzI5NzYyMjMzLC04NzIwNjIwNjgsNjI2MjIxOD
-AwLDE2MzUxNzAyLC01NTM2NzAzODZdfQ==
+eyJoaXN0b3J5IjpbMTMzNDYzNDkxMCwtNDA2ODY1Mzg5LC00MD
+Y4NjUzODksLTE2MjI2NTUyMTUsMzczNjc0MDUwLC03ODQzNDg2
+MTYsLTQwOTUxOTQxNSwyMDE0NTI4OTA4LC00MDk1MTk0MTUsLT
+EyMTk0NDU1MTcsNjI5OTg5Njk0LC0xNDE3ODc1MzI5LC0xMDUy
+NDQ1NTg0LDE1OTg5MDUzNDEsLTEzMjk3NjIyMzMsLTg3MjA2Mj
+A2OCw2MjYyMjE4MDAsMTYzNTE3MDIsLTU1MzY3MDM4Nl19
 -->
