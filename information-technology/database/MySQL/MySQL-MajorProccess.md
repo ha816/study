@@ -432,8 +432,14 @@ MySQL 엔진이 내부적인 가공을 위해 생성하는 임시 테이블은 �
 "Using temporary"가 나타났다고 해서 메모리에서 처리되었는지 디스크에서 처리됬는지는 알수 없다. 또한 몇개의 임시 테이블이 사용됬는지도 알 수 없다. 이럴때 몇개의 임시 테이블이 디스크에 생성됬는지 메모리에 생성됬는지 파악하려면 MySQL 서버의 상태 변수를 확인해 보면 된다.
 
 ```
-SHOW SESSION STATUS LIKE 'C'
+SHOW SESSION STATUS LIKE 'Created_tmp%'
+
+SELECT ...
 ```
+
+쿼리를 실행하기 전에 SHOW SESSION STATUS LIKE 'Created_tmp%'를 사용하면 현재 임시 테이블 사용 현황을 알려준다. SELECT 쿼리를 실행한 후, 다시 상태 조회를 해보면 누적된 값이 노출된다.
+
+* cre
 
 
 
@@ -441,7 +447,7 @@ SHOW SESSION STATUS LIKE 'C'
 # 테이블 조인(table join)
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY1OTY1OTc3LC0xNjMwODAxMzA0LDIwNj
+eyJoaXN0b3J5IjpbNjg4NDk3NDQ5LC0xNjMwODAxMzA0LDIwNj
 I0MzI2MjMsMjQ1ODY0NjU2LC0xODY1Mzc5Nzg2LC0xNzQ1NjU5
 MTQxLC03MTE0MzQxNjQsLTEwMzIwNTgzNTgsMTk0ODQ5MzYyMy
 wtOTk2MjU1NzA1LDEwNDg4NjAwMTQsODE2ODE5MzEyLC0xNTY1
