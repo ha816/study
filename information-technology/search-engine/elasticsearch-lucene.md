@@ -160,14 +160,16 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 >역색인 구조를 만드는 과정에서 많은 시스템 리소스(Cpu, 메모리 I/O)가 사용된다. 수정을 허용하게 되면 일부가 변경되는 해당 역색인을 대상으로 수정 작업을 해야하기 때문에 리소스를 크게 잡아 먹는다.
 
 
-읽기 연산이 대사수인 검색 엔진의 특성상 캐시 성능을 최대한 활용하고 동시성 문제를 피하는
+읽기 연산이 대다수 작업인 검색 엔진의 특성상 캐시 성능을 최대한 활용하고 동시성 문제를 피할 수 있는 불변성은 최고의 효율을 보여주고 있는 것이 증명되었다.
+
+물론 세그먼트 불변성도 단점은 있다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzM2NTU5NzQsLTExOTk4MjE2MDksLT
+eyJoaXN0b3J5IjpbLTEzMzgzMDQ3MzksLTExOTk4MjE2MDksLT
 MxMDg0MjY2OCwxNjk0OTU0MDksMTYzNjcyODQ4NCwxMDI4NjM5
 NDkwLC0xMTg5MTY0MzcsLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC
 05MjgzNDQ0NDUsOTE3OTAxNDYzLDEwOTA2NDg1ODAsLTEyMDIx
