@@ -162,18 +162,18 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 읽기 연산이 대다수 작업인 검색 엔진의 특성상 캐시 성능을 최대한 활용하고 동시성 문제를 피할 수 있는 불변성은 최고의 효율을 보여주고 있는 것이 증명되었다.
 
-물론 세그먼트 불변성도 단점은 있다. 
+물론 세그먼트 불변성도 단점은 있다. 가장 큰 문제는 일부 데이터가 변경되더라도 전체 역색인 구조가 다시 만들어져야 한다는 것
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzgzMDQ3MzksLTExOTk4MjE2MDksLT
-MxMDg0MjY2OCwxNjk0OTU0MDksMTYzNjcyODQ4NCwxMDI4NjM5
-NDkwLC0xMTg5MTY0MzcsLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC
-05MjgzNDQ0NDUsOTE3OTAxNDYzLDEwOTA2NDg1ODAsLTEyMDIx
-NzA2ODQsLTExNzgwMzE0NTEsLTE2OTg1NzAxMzIsLTg4MjkxMj
-g0NiwtMzk5OTM5MjYxLDE5MDY3OTQ2MjQsLTgyNDUyNTYwNiwt
-MTIzNDUyMjIxOV19
+eyJoaXN0b3J5IjpbLTc0MTIyMDU4OCwtMTMzODMwNDczOSwtMT
+E5OTgyMTYwOSwtMzEwODQyNjY4LDE2OTQ5NTQwOSwxNjM2NzI4
+NDg0LDEwMjg2Mzk0OTAsLTExODkxNjQzNywtMTgzOTU1MDcyNy
+wyNzY5NzA4NzksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MDY0
+ODU4MCwtMTIwMjE3MDY4NCwtMTE3ODAzMTQ1MSwtMTY5ODU3MD
+EzMiwtODgyOTEyODQ2LC0zOTk5MzkyNjEsMTkwNjc5NDYyNCwt
+ODI0NTI1NjA2XX0=
 -->
