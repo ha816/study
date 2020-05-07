@@ -182,6 +182,7 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 1. 루씬은 삭제될 데이터가 포함된 세그먼트의 삭제 여부 비트 배열을 확인한다.
 2. 삭제 여부 비트 배열의 flag를 삭제로 표시한다.
 3. 세그먼트에 직접적인 변경사항은 없으므로 세그먼트의 불변성을 해치지 않으며 캐시도 그대로 유지된다. 
+4. Index
 
 
 
@@ -189,11 +190,11 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgxNzM5MTgwLC02OTgxOTA4NzcsLTE2ND
-IxOTY1OTMsLTEzNDU5OTk0ODUsLTgyMzMxODAxLDUxNTQyNzY3
-Miw5NTkwNDE2ODMsLTc0MTIyMDU4OCwtMTMzODMwNDczOSwtMT
-E5OTgyMTYwOSwtMzEwODQyNjY4LDE2OTQ5NTQwOSwxNjM2NzI4
-NDg0LDEwMjg2Mzk0OTAsLTExODkxNjQzNywtMTgzOTU1MDcyNy
-wyNzY5NzA4NzksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MDY0
-ODU4MF19
+eyJoaXN0b3J5IjpbLTk3NzA0ODYyNiw4ODE3MzkxODAsLTY5OD
+E5MDg3NywtMTY0MjE5NjU5MywtMTM0NTk5OTQ4NSwtODIzMzE4
+MDEsNTE1NDI3NjcyLDk1OTA0MTY4MywtNzQxMjIwNTg4LC0xMz
+M4MzA0NzM5LC0xMTk5ODIxNjA5LC0zMTA4NDI2NjgsMTY5NDk1
+NDA5LDE2MzY3Mjg0ODQsMTAyODYzOTQ5MCwtMTE4OTE2NDM3LC
+0xODM5NTUwNzI3LDI3Njk3MDg3OSwtOTI4MzQ0NDQ1LDkxNzkw
+MTQ2M119
 -->
