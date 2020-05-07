@@ -198,7 +198,7 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 루씬은 효율적인 색인 작업을 위해 내부적으로 일정 크기의 버퍼를 가지고 있다. 이러한 배푸 버퍼를 인메모리 버퍼(In-memory buffer)라고 한다. 
 
-루씬에 색인 작업이 요청되면 전달된 데이터는 일단 인메모리 버퍼에 순서대로 쌓인다. 그리고 나서 정책에 따라 내부
+루씬에 색인 작업이 요청되면 전달된 데이터는 일단 인메모리 버퍼에 순서대로 쌓인다. 그리고 나서 정책에 따라 인메모리 버퍼에 순서대로 쌓인다. 그리고 나서 정책에 따라 
 
 
 
@@ -206,11 +206,11 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMzk4MTkyOCwtMTc5NTYyMzM0NywtOD
-c3OTg4NTk3LDc4NjU4NDIwNCw4ODE3MzkxODAsLTY5ODE5MDg3
-NywtMTY0MjE5NjU5MywtMTM0NTk5OTQ4NSwtODIzMzE4MDEsNT
-E1NDI3NjcyLDk1OTA0MTY4MywtNzQxMjIwNTg4LC0xMzM4MzA0
-NzM5LC0xMTk5ODIxNjA5LC0zMTA4NDI2NjgsMTY5NDk1NDA5LD
-E2MzY3Mjg0ODQsMTAyODYzOTQ5MCwtMTE4OTE2NDM3LC0xODM5
-NTUwNzI3XX0=
+eyJoaXN0b3J5IjpbMjAyMDg3MDgwMywtNDEzOTgxOTI4LC0xNz
+k1NjIzMzQ3LC04Nzc5ODg1OTcsNzg2NTg0MjA0LDg4MTczOTE4
+MCwtNjk4MTkwODc3LC0xNjQyMTk2NTkzLC0xMzQ1OTk5NDg1LC
+04MjMzMTgwMSw1MTU0Mjc2NzIsOTU5MDQxNjgzLC03NDEyMjA1
+ODgsLTEzMzgzMDQ3MzksLTExOTk4MjE2MDksLTMxMDg0MjY2OC
+wxNjk0OTU0MDksMTYzNjcyODQ4NCwxMDI4NjM5NDkwLC0xMTg5
+MTY0MzddfQ==
 -->
