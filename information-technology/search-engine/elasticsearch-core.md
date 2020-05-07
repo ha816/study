@@ -10,7 +10,9 @@
 
 # Node(노드)
 
-노드는 클러스터에 포함된 단일 서버로서 데이터를 저장하고 클러스터의 색인화 및 검색 기능에 참여한다. 노드는 클러스터처럼 이름으로 식별되는데, 기본 이름은 시작 시 노드에 지정되는 임의 UUID(Universally Unique IDentifier)이다. 
+노드는 클러스터에 포함된 단일 서버이다. 노드를 엘라스틱서치가 작동 중인 물리적인 서버로도 이해할 수도 있다. 
+
+노드는 클러스터처럼 이름으로 식별되는데, 기본 이름은 시작 시 노드에 지정되는 임의 UUID(Universally Unique IDentifier)이다. 
 
 효율적인 분산 처리를 위해선 다양한 형태의 노드를 조합해서 클러스터를 구성해야 한다. 마스터 노드는 노드의 추가, 삭제와 같은 전체적인 클러스터를 관리한다. 데이터 노드는 문서 검색, 색인 등을 수행한다. 
 
@@ -80,6 +82,6 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDg3OTM4Myw3MDY4MjM3ODksMTQxNj
-I1MzQ1XX0=
+eyJoaXN0b3J5IjpbNTE2OTQ1MzI1LDcwNjgyMzc4OSwxNDE2Mj
+UzNDVdfQ==
 -->
