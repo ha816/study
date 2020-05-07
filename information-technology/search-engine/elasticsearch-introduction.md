@@ -51,7 +51,7 @@ RDBMS에서 모든 데이터는 정형 데이터로 구조화되는데 행과 �
 
 대량의 데이터를 빠르게 검색하기 위해 고안된 NoSQL(No Structured Query Language)을 검색 시스템으로 많이 사용한다.
 
-엘라스틱 서치는 루씬 라이브러리에  
+엘라스틱서치는 루씬 라이브러리 기반의 검색 엔진이다. 
 Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Elasticsearch is developed in Java.
 
 
@@ -260,5 +260,5 @@ POST /{index 명}/_search {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDA3OTczNTcsMjA0OTY5NjYzMl19
+eyJoaXN0b3J5IjpbMTgyMDM5MTA2OCwyMDQ5Njk2NjMyXX0=
 -->
