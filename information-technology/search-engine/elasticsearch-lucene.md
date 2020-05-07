@@ -166,18 +166,23 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 이러한 단점을 극복하기 위해 루씬에서는 크기가 작은 다수의 세그먼트를 생성해서 제공하는 방식을 택했다. 즉 변경이 일어날때마다 세그먼트를 다시 만드는 것이 아니라 기존 세그먼트는 그대로 두고 추가로 세그먼트를 생성하는 것이다. 
 
-세그먼트의 불변성은 확실히 단점보다는 장점이 많다. 읽기 연산 비중이 큰 루씬에서는 세그먼트가 불변성을 가짐으로써 읽기 연산의 성능을 대폭 끌어올릴 수 있었다.
+세그먼트의 불변성은 확실히 단점보다는 장점이 많다. 읽기 연산 비중이 큰 루씬에서는 세그먼트가 불변성을 가짐으로써 읽기 연산의 성능을 대폭 끌어올릴 수 있었다. 
+
+### 세그먼트 추가, 수정, 삭제
+
+추가 연산의 경우 새로운 세그먼트를 가져가는 전략으로 불변성을 깨지 않으면서도 그리 나쁘지 않은 성능을 보장한다.
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1NDI3NjcyLDk1OTA0MTY4MywtNzQxMj
-IwNTg4LC0xMzM4MzA0NzM5LC0xMTk5ODIxNjA5LC0zMTA4NDI2
-NjgsMTY5NDk1NDA5LDE2MzY3Mjg0ODQsMTAyODYzOTQ5MCwtMT
-E4OTE2NDM3LC0xODM5NTUwNzI3LDI3Njk3MDg3OSwtOTI4MzQ0
-NDQ1LDkxNzkwMTQ2MywxMDkwNjQ4NTgwLC0xMjAyMTcwNjg0LC
-0xMTc4MDMxNDUxLC0xNjk4NTcwMTMyLC04ODI5MTI4NDYsLTM5
-OTkzOTI2MV19
+eyJoaXN0b3J5IjpbLTgyMzMxODAxLDUxNTQyNzY3Miw5NTkwND
+E2ODMsLTc0MTIyMDU4OCwtMTMzODMwNDczOSwtMTE5OTgyMTYw
+OSwtMzEwODQyNjY4LDE2OTQ5NTQwOSwxNjM2NzI4NDg0LDEwMj
+g2Mzk0OTAsLTExODkxNjQzNywtMTgzOTU1MDcyNywyNzY5NzA4
+NzksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MDY0ODU4MCwtMT
+IwMjE3MDY4NCwtMTE3ODAzMTQ1MSwtMTY5ODU3MDEzMiwtODgy
+OTEyODQ2XX0=
 -->
