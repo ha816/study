@@ -475,16 +475,19 @@ SELECT * FROM employees GROUP BY last_name ORDER BY first_name
 
 # 테이블 조인(table join)
 
-MySQL은 다른 DBMS보다 조인을 처리하는 방식이 단순하다. 
+MySQL은 다른 DBMS보다 조인을 처리하는 방식이 단순하다. 조인방식은 네스티드-루프로 알려진 중첩된 루프와 같은 형태만 지원한다. 그리고 조인되는 각 테이블 간의 레코드를 어떻게 연결할지에 따라 여러 가지 종류의 조인으로 나뉜다.
 
+## 조인의 종류
+
+크게 INNER JOIN과 OUTER JOIN으로 구분할 수 있고, OUTER JOIN은 다시 LEFT OUTER JOIN과 RI
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODc1MTg3MSwtMTYzMDgwMTMwNCwyMD
-YyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1
-OTE0MSwtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2Mj
-MsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2
-NTcwMTEzNiwtOTIzNzQ0MTM5LC01ODY1NTUyMDYsMTI0OTIyMT
-g0MywtNTk0MjQ5NzMxLC0xODE3Nzc2NTI0LDEyMjEwNDI1MDcs
-MjA3NjQ2MDIzN119
+eyJoaXN0b3J5IjpbMTgwNjE3NjkxOSwyMDY4NzUxODcxLC0xNj
+MwODAxMzA0LDIwNjI0MzI2MjMsMjQ1ODY0NjU2LC0xODY1Mzc5
+Nzg2LC0xNzQ1NjU5MTQxLC03MTE0MzQxNjQsLTEwMzIwNTgzNT
+gsMTk0ODQ5MzYyMywtOTk2MjU1NzA1LDEwNDg4NjAwMTQsODE2
+ODE5MzEyLC0xNTY1NzAxMTM2LC05MjM3NDQxMzksLTU4NjU1NT
+IwNiwxMjQ5MjIxODQzLC01OTQyNDk3MzEsLTE4MTc3NzY1MjQs
+MTIyMTA0MjUwN119
 -->
