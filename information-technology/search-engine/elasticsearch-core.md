@@ -1,6 +1,12 @@
 # Overview
 
-엘라스틱서치가 기본적으로 분산 시스템을 지향하다보니 생소한 용어가 많다. 용어가 무엇인지 잘 파악하면 전체 아키텍처를 이해하는데 많은 도움이 될것이다. 엘라스틱서치를 구성하는 주요 구성요소로 어떤 것이 있는지 알아보자.
+엘라스틱서치가 기본적으로 분산 시스템을 지향하다보니 생소한 용어가 많다. 용어가 무엇인지 잘 파악하면 전체 아키텍처를 이해하는데 많은 도움이 될것이다. 엘라스틱서치를 구성하는 주요 개념에는 어떤 것이 있는지 알아보자.
+
+# 클러스터(Cluster)
+
+ 클러스터는 여러 노드(서버)의 집합으로 구성되며, 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 클러스터를 구분한다. 이름을 정하는 것은 매우 중요한데, 어떤 노드가 어느 클러스터에 포함되기 되는지를 이름으로 판별하기 때문이다. 
+
+![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/99AB08425C9F17D928)
 
 # Index(색인)
 
@@ -41,13 +47,8 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 매핑은 문서의 필드와 필드 속성을 정의하고 그에 따른 색인 방법을 정의한다. 인덱스의 매핑 정보에는 여러 데이터 타입을 지정할 수 있지만 필드명을 중복해서 사용할 수는 없다.
 
-## 클러스터(Cluster)
 
- 클러스터는 여러 노드(서버)의 집합으로 구성되며, 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 클러스터를 구분한다. 이 이름은 중요한데, 어떤 노드가 어느 클러스터에 포함되기 되는지를 이름으로 판별하기 때문이다. 
 
-![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/99AB08425C9F17D928)
-
-참고로 한 shard가 replication을 쓰는 경우, primary와 replica shard는  같은 노드에 존재할 수 없다. 
 
 ## 노드(Node)
 
@@ -76,6 +77,6 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1OTQyMzg3LDcwNjgyMzc4OSwxNDE2Mj
-UzNDVdfQ==
+eyJoaXN0b3J5IjpbLTExNTAxMzAyMzksNzA2ODIzNzg5LDE0MT
+YyNTM0NV19
 -->
