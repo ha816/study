@@ -192,7 +192,9 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 그렇다면 삭제될 데이터가 물리적으로 실제 삭제되는 시점은 언제일까? 백그라운드에서 주기적으로 일어나는 Merge 작업이 수행될대 삭제가 된다. 루씬이 삭제 데이터를 바로 삭제하지 않고 병합 작업시 삭제를 하는 이유는 세그머트가 가지는 역색인 구조와 관련이 깊다. 
 
-일반적인 역색인 구조는 색인 대상이 되는 문서를 최소단위인 텀 단우의 단어로 분리하고 역색인 구조에 따라 정렬한 뒤 저장한다. 문서 하나를 제거하려면 전체 역색인 구조를 찾아 관련된 모든 텀을 제거해야 하기 때문에 사실 세그먼트를 다시 생성하는 것과 별반 다를바가 없저진다. 그래서 
+일반적인 역색인 구조는 색인 대상이 되는 문서를 최소단위인 텀 단우의 단어로 분리하고 역색인 구조에 따라 정렬한 뒤 저장한다. 문서 하나를 제거하려면 전체 역색인 구조를 찾아 관련된 모든 텀을 제거해야 하기 때문에 사실 세그먼트를 다시 생성하는 것과 별반 다를바가 없저진다. 그래서 즉시 삭제하는 것이 아니라 주기적으로 세그먼가 재 생성되는 작업에서 물리적인 삭제를 함께 한다. 
+
+
 
 
 
@@ -200,11 +202,11 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQ0MDU3MTcsNzg2NTg0MjA0LDg4MT
-czOTE4MCwtNjk4MTkwODc3LC0xNjQyMTk2NTkzLC0xMzQ1OTk5
-NDg1LC04MjMzMTgwMSw1MTU0Mjc2NzIsOTU5MDQxNjgzLC03ND
-EyMjA1ODgsLTEzMzgzMDQ3MzksLTExOTk4MjE2MDksLTMxMDg0
-MjY2OCwxNjk0OTU0MDksMTYzNjcyODQ4NCwxMDI4NjM5NDkwLC
-0xMTg5MTY0MzcsLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC05Mjgz
-NDQ0NDVdfQ==
+eyJoaXN0b3J5IjpbLTg3Nzk4ODU5Nyw3ODY1ODQyMDQsODgxNz
+M5MTgwLC02OTgxOTA4NzcsLTE2NDIxOTY1OTMsLTEzNDU5OTk0
+ODUsLTgyMzMxODAxLDUxNTQyNzY3Miw5NTkwNDE2ODMsLTc0MT
+IyMDU4OCwtMTMzODMwNDczOSwtMTE5OTgyMTYwOSwtMzEwODQy
+NjY4LDE2OTQ5NTQwOSwxNjM2NzI4NDg0LDEwMjg2Mzk0OTAsLT
+ExODkxNjQzNywtMTgzOTU1MDcyNywyNzY5NzA4NzksLTkyODM0
+NDQ0NV19
 -->
