@@ -170,7 +170,9 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 ### 세그먼트 추가, 수정, 삭제
 
-추가 연산의 경우 새로운 세그먼트를 가져가는 전략으로 불변성을 깨지 않으면서도 그리 나쁘지 않은 성능을 보장한다.
+색인 작업의 상당수는 데이터가 추가되는 연산이다. 새로운 세그먼트를 가져가는 전략으로 불변성을 깨지 않으면서도 그리 나쁘지 않은 성능을 보장한다.
+
+수정 연산의 경우, 세그먼트의 불변성 때문에 데이터를 삭제하고 다시 추가하는 방식으로 동작한다. 
 
 
 
@@ -178,11 +180,11 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMzMxODAxLDUxNTQyNzY3Miw5NTkwND
-E2ODMsLTc0MTIyMDU4OCwtMTMzODMwNDczOSwtMTE5OTgyMTYw
-OSwtMzEwODQyNjY4LDE2OTQ5NTQwOSwxNjM2NzI4NDg0LDEwMj
-g2Mzk0OTAsLTExODkxNjQzNywtMTgzOTU1MDcyNywyNzY5NzA4
-NzksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MDY0ODU4MCwtMT
-IwMjE3MDY4NCwtMTE3ODAzMTQ1MSwtMTY5ODU3MDEzMiwtODgy
-OTEyODQ2XX0=
+eyJoaXN0b3J5IjpbLTEzNDU5OTk0ODUsLTgyMzMxODAxLDUxNT
+QyNzY3Miw5NTkwNDE2ODMsLTc0MTIyMDU4OCwtMTMzODMwNDcz
+OSwtMTE5OTgyMTYwOSwtMzEwODQyNjY4LDE2OTQ5NTQwOSwxNj
+M2NzI4NDg0LDEwMjg2Mzk0OTAsLTExODkxNjQzNywtMTgzOTU1
+MDcyNywyNzY5NzA4NzksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMT
+A5MDY0ODU4MCwtMTIwMjE3MDY4NCwtMTE3ODAzMTQ1MSwtMTY5
+ODU3MDEzMl19
 -->
