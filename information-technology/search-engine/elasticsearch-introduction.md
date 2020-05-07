@@ -11,7 +11,7 @@
 : 대용량 데이터 기반으로 뛰어난 검색 서비스를 제공하기 위해 다수의 검색 엔진을 활용하는 시스템을 통칭하는 용어이다. 
 
 검색 서비스(search service)
-: 검색엔진을 기반으로 구축한 검색 시스템을 활용해 검색 결과를 서비스로 제공한다. 
+: 구축한 검색 시스템으로 실제 검색 서비스를 제공한다. 
 
 ## 검색 시스템의 구성요소
 
@@ -255,5 +255,5 @@ POST /{index 명}/_search {
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzODExNTY2Nl19
+eyJoaXN0b3J5IjpbLTE3NDM2Mzc0MTJdfQ==
 -->
