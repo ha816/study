@@ -207,16 +207,16 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 루씬은 이러한 문제를 해결하기 위해 무거운 fsync방식을 쓰는 대신에 상대적으로 가벼운 write방식으로 쓰기과정을 수행한다. 
 
 write()
-: 일반적으로 파일을 저장할 때 사용하는 함수다. 운영체제 내부 커널에는 시스템 캐시가 존재하는데 write함수를 이용하면 일단 시스템 캐시에만 기록된다. 이후 실제 데이터는 
+: 일반적으로 파일을 저장할 때 사용하는 함수다. 운영체제 내부 커널에는 시스템 캐시가 존재하는데 write함수를 이용하면 일단 시스템 캐시에만 기록된다. 이후 실제 데이터는 특정 주기로 물리 디스크에 기록된다. 물리적인 디스크 쓰기 작업을 하지 않기 때문에 빨
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTI4NTg3MjMsLTE3MjU5MTIxNywtND
-EzOTgxOTI4LC0xNzk1NjIzMzQ3LC04Nzc5ODg1OTcsNzg2NTg0
-MjA0LDg4MTczOTE4MCwtNjk4MTkwODc3LC0xNjQyMTk2NTkzLC
-0xMzQ1OTk5NDg1LC04MjMzMTgwMSw1MTU0Mjc2NzIsOTU5MDQx
-NjgzLC03NDEyMjA1ODgsLTEzMzgzMDQ3MzksLTExOTk4MjE2MD
-ksLTMxMDg0MjY2OCwxNjk0OTU0MDksMTYzNjcyODQ4NCwxMDI4
-NjM5NDkwXX0=
+eyJoaXN0b3J5IjpbMTA0MTQ0OTU3MywtMTcyNTkxMjE3LC00MT
+M5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3ODY1ODQy
+MDQsODgxNzM5MTgwLC02OTgxOTA4NzcsLTE2NDIxOTY1OTMsLT
+EzNDU5OTk0ODUsLTgyMzMxODAxLDUxNTQyNzY3Miw5NTkwNDE2
+ODMsLTc0MTIyMDU4OCwtMTMzODMwNDczOSwtMTE5OTgyMTYwOS
+wtMzEwODQyNjY4LDE2OTQ5NTQwOSwxNjM2NzI4NDg0LDEwMjg2
+Mzk0OTBdfQ==
 -->
