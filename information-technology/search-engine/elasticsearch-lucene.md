@@ -188,6 +188,9 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 1. 앞의 작업(세그먼트에서 일부 데이터가 삭제될 경우)으로 삭제 처리를 먼저 수행한다.
 2. 수정된 데이터를 새로운 세그먼트로 생성한다.
+3. IndexSearcher는 모든 세그먼트를 읽어 검색결과를 제공한다.
+
+그렇다면 삭제될 데이터가 물리적으로 실제 삭제되는 시점은 언제일까? 
 
 
 
@@ -195,11 +198,11 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg2NTg0MjA0LDg4MTczOTE4MCwtNjk4MT
-kwODc3LC0xNjQyMTk2NTkzLC0xMzQ1OTk5NDg1LC04MjMzMTgw
-MSw1MTU0Mjc2NzIsOTU5MDQxNjgzLC03NDEyMjA1ODgsLTEzMz
-gzMDQ3MzksLTExOTk4MjE2MDksLTMxMDg0MjY2OCwxNjk0OTU0
-MDksMTYzNjcyODQ4NCwxMDI4NjM5NDkwLC0xMTg5MTY0MzcsLT
-E4Mzk1NTA3MjcsMjc2OTcwODc5LC05MjgzNDQ0NDUsOTE3OTAx
-NDYzXX0=
+eyJoaXN0b3J5IjpbLTEyMjAyNTIyNjgsNzg2NTg0MjA0LDg4MT
+czOTE4MCwtNjk4MTkwODc3LC0xNjQyMTk2NTkzLC0xMzQ1OTk5
+NDg1LC04MjMzMTgwMSw1MTU0Mjc2NzIsOTU5MDQxNjgzLC03ND
+EyMjA1ODgsLTEzMzgzMDQ3MzksLTExOTk4MjE2MDksLTMxMDg0
+MjY2OCwxNjk0OTU0MDksMTYzNjcyODQ4NCwxMDI4NjM5NDkwLC
+0xMTg5MTY0MzcsLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC05Mjgz
+NDQ0NDVdfQ==
 -->
