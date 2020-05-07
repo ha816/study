@@ -176,7 +176,9 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 삭제 연산의 경우, 단순히 데이터를 삭제하는 것이 아니다. 사실 모든 문서에는 삭제 여부를 표시하는 비트 배열이 내부적으로 존재한다. 삭제 요청이 들어오면 삭제될 대상 데이터의 비트 배열을 찾아 삭제 여부만 표시하고 끝낸다. 비트에 표시만 했기 때문에 여전히 세그먼트는 남아 았다. 하지만 검색시 비트배열에 설정된 삭제 여부를 항상 먼저 판단하기 때문에 불변성을 훼손하지 않고도 빠르게 검색대상에서 제외할 수 있다. 
 
-루씬에 데이터 수정 작업이 요청되면 IndexWriter는 다음과 가
+루씬에 데이터 수정 작업이 요청되면 IndexWriter는 다음과 같이 동작한다. 
+
+세그먼트에서 일부 데이터가 삭제될 경우
 
 
 
@@ -184,11 +186,11 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjA3OTg3MTQsLTE2NDIxOTY1OTMsLT
-EzNDU5OTk0ODUsLTgyMzMxODAxLDUxNTQyNzY3Miw5NTkwNDE2
-ODMsLTc0MTIyMDU4OCwtMTMzODMwNDczOSwtMTE5OTgyMTYwOS
-wtMzEwODQyNjY4LDE2OTQ5NTQwOSwxNjM2NzI4NDg0LDEwMjg2
-Mzk0OTAsLTExODkxNjQzNywtMTgzOTU1MDcyNywyNzY5NzA4Nz
-ksLTkyODM0NDQ0NSw5MTc5MDE0NjMsMTA5MDY0ODU4MCwtMTIw
-MjE3MDY4NF19
+eyJoaXN0b3J5IjpbLTY5ODE5MDg3NywtMTY0MjE5NjU5MywtMT
+M0NTk5OTQ4NSwtODIzMzE4MDEsNTE1NDI3NjcyLDk1OTA0MTY4
+MywtNzQxMjIwNTg4LC0xMzM4MzA0NzM5LC0xMTk5ODIxNjA5LC
+0zMTA4NDI2NjgsMTY5NDk1NDA5LDE2MzY3Mjg0ODQsMTAyODYz
+OTQ5MCwtMTE4OTE2NDM3LC0xODM5NTUwNzI3LDI3Njk3MDg3OS
+wtOTI4MzQ0NDQ1LDkxNzkwMTQ2MywxMDkwNjQ4NTgwLC0xMjAy
+MTcwNjg0XX0=
 -->
