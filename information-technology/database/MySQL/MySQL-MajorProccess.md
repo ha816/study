@@ -481,15 +481,19 @@ MySQL은 다른 DBMS보다 조인을 처리하는 방식이 단순하다. 조인
 
 크게 INNER JOIN과 OUTER JOIN으로 구분할 수 있고, OUTER JOIN은 다시 LEFT OUTER JOIN과 RIGHT OUTER JOIN 그리고 FULL OUTER JOIN으로 구분할 수 있다. 그리고 조인 조건을 어떻게 명시하느냐에 따라 NATURAL JOIN과 CROSS JOIN(FULL JOIN, CARTESIAN JOIN)으로도 구분할 수 있다.
 
-조인 처리에서 어느 테이블을 먽
+**조인 처리에서 어느 테이블을 먼저 읽을지 결정하는 것은 매우 중요하며, 그에 따라 처리할 작업량이 크게 달라진다.** 
+
+**INNER JOIN은 어느 테이블을 먼저 읽어도 결과가 달라지지 않으므로 MySQL 옵티마이저가 조인의 순서를 조절해서 다양한 방법으로 최적화가 가능하다.** 
+
+**OUTER JOIN은 반드시 OUTER가 되는 테이블을 먼저 읽어야 하기 때문에 조인 순서를 옵티마이저가 선택할 수 없다.**
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ4NDAzMDEzLC0xNTQ5NDcxNTI1LDIwNj
-g3NTE4NzEsLTE2MzA4MDEzMDQsMjA2MjQzMjYyMywyNDU4NjQ2
-NTYsLTE4NjUzNzk3ODYsLTE3NDU2NTkxNDEsLTcxMTQzNDE2NC
-wtMTAzMjA1ODM1OCwxOTQ4NDkzNjIzLC05OTYyNTU3MDUsMTA0
-ODg2MDAxNCw4MTY4MTkzMTIsLTE1NjU3MDExMzYsLTkyMzc0ND
-EzOSwtNTg2NTU1MjA2LDEyNDkyMjE4NDMsLTU5NDI0OTczMSwt
-MTgxNzc3NjUyNF19
+eyJoaXN0b3J5IjpbMTgyNTQ4NDczNywtMTU0OTQ3MTUyNSwyMD
+Y4NzUxODcxLC0xNjMwODAxMzA0LDIwNjI0MzI2MjMsMjQ1ODY0
+NjU2LC0xODY1Mzc5Nzg2LC0xNzQ1NjU5MTQxLC03MTE0MzQxNj
+QsLTEwMzIwNTgzNTgsMTk0ODQ5MzYyMywtOTk2MjU1NzA1LDEw
+NDg4NjAwMTQsODE2ODE5MzEyLC0xNTY1NzAxMTM2LC05MjM3ND
+QxMzksLTU4NjU1NTIwNiwxMjQ5MjIxODQzLC01OTQyNDk3MzEs
+LTE4MTc3NzY1MjRdfQ==
 -->
