@@ -190,7 +190,9 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 2. 수정된 데이터를 새로운 세그먼트로 생성한다.
 3. IndexSearcher는 모든 세그먼트를 읽어 검색결과를 제공한다.
 
-그렇다면 삭제될 데이터가 물리적으로 실제 삭제되는 시점은 언제일까? 백그라운드에서 주기적으로 일어나는 Merge 작업이 수행될대 
+그렇다면 삭제될 데이터가 물리적으로 실제 삭제되는 시점은 언제일까? 백그라운드에서 주기적으로 일어나는 Merge 작업이 수행될대 삭제가 된다. 루씬이 삭제 데이터를 바로 삭제하지 않고 병합 작업시 삭제를 하는 이유는 세그머트가 가지는 역색인 구조와 관련이 깊다. 
+
+일반적인 역색인 구조는 색인 대상이 되는 문서를 최소단위인 텀 단우의 단어로 분리하고 역색인 구조에 따라 정렬한 뒤 저장한다. 
 
 
 
@@ -198,11 +200,11 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY2MzQ4OTQzLDc4NjU4NDIwNCw4ODE3Mz
-kxODAsLTY5ODE5MDg3NywtMTY0MjE5NjU5MywtMTM0NTk5OTQ4
-NSwtODIzMzE4MDEsNTE1NDI3NjcyLDk1OTA0MTY4MywtNzQxMj
-IwNTg4LC0xMzM4MzA0NzM5LC0xMTk5ODIxNjA5LC0zMTA4NDI2
-NjgsMTY5NDk1NDA5LDE2MzY3Mjg0ODQsMTAyODYzOTQ5MCwtMT
-E4OTE2NDM3LC0xODM5NTUwNzI3LDI3Njk3MDg3OSwtOTI4MzQ0
-NDQ1XX0=
+eyJoaXN0b3J5IjpbLTE0NzMwODk4MCw3ODY1ODQyMDQsODgxNz
+M5MTgwLC02OTgxOTA4NzcsLTE2NDIxOTY1OTMsLTEzNDU5OTk0
+ODUsLTgyMzMxODAxLDUxNTQyNzY3Miw5NTkwNDE2ODMsLTc0MT
+IyMDU4OCwtMTMzODMwNDczOSwtMTE5OTgyMTYwOSwtMzEwODQy
+NjY4LDE2OTQ5NTQwOSwxNjM2NzI4NDg0LDEwMjg2Mzk0OTAsLT
+ExODkxNjQzNywtMTgzOTU1MDcyNywyNzY5NzA4NzksLTkyODM0
+NDQ0NV19
 -->
