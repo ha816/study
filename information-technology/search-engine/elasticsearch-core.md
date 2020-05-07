@@ -26,7 +26,8 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 # Type(타입)
 
-타입은 인덱스의 논리적 구조를 말한다. RDBMS에서는 테이블의 컬럼에 해당한다. 
+타입은 인덱스의 논리적 구조를 말한다. RDBMS에서는 테이블의 컬럼에 해당한다. 우리는 검색하고자하는 문서들에 대한 쿼리를 만들때 타입(컬럼)의 조합을 활용한다.
+
 엘라스틱 서치 6.0이하 버전에서는 하나의 인덱스에 여러 타입을 설정이 가능했지만 6.1버전부터는 인덱스당 하나의 타입만 사용할 수 있다. 
 
 ### 문서
@@ -186,6 +187,6 @@ POST /{index 명}/_search {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MTUyMjA0Nyw3MDY4MjM3ODksMTQxNj
-I1MzQ1XX0=
+eyJoaXN0b3J5IjpbLTE0MjM0NTUwMjQsNzA2ODIzNzg5LDE0MT
+YyNTM0NV19
 -->
