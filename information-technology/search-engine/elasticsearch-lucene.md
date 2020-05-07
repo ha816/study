@@ -190,7 +190,7 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 2. 수정된 데이터를 새로운 세그먼트로 생성한다.
 3. IndexSearcher는 모든 세그먼트를 읽어 검색결과를 제공한다.
 
-그렇다면 삭제될 데이터가 물리적으로 실제 삭제되는 시점은 언제일까? 
+그렇다면 삭제될 데이터가 물리적으로 실제 삭제되는 시점은 언제일까? 백그라운드에서 주기적으로 일어나는 Merge 작업이 수행될대 
 
 
 
@@ -198,11 +198,11 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjAyNTIyNjgsNzg2NTg0MjA0LDg4MT
-czOTE4MCwtNjk4MTkwODc3LC0xNjQyMTk2NTkzLC0xMzQ1OTk5
-NDg1LC04MjMzMTgwMSw1MTU0Mjc2NzIsOTU5MDQxNjgzLC03ND
-EyMjA1ODgsLTEzMzgzMDQ3MzksLTExOTk4MjE2MDksLTMxMDg0
-MjY2OCwxNjk0OTU0MDksMTYzNjcyODQ4NCwxMDI4NjM5NDkwLC
-0xMTg5MTY0MzcsLTE4Mzk1NTA3MjcsMjc2OTcwODc5LC05Mjgz
-NDQ0NDVdfQ==
+eyJoaXN0b3J5IjpbNzY2MzQ4OTQzLDc4NjU4NDIwNCw4ODE3Mz
+kxODAsLTY5ODE5MDg3NywtMTY0MjE5NjU5MywtMTM0NTk5OTQ4
+NSwtODIzMzE4MDEsNTE1NDI3NjcyLDk1OTA0MTY4MywtNzQxMj
+IwNTg4LC0xMzM4MzA0NzM5LC0xMTk5ODIxNjA5LC0zMTA4NDI2
+NjgsMTY5NDk1NDA5LDE2MzY3Mjg0ODQsMTAyODYzOTQ5MCwtMT
+E4OTE2NDM3LC0xODM5NTUwNzI3LDI3Njk3MDg3OSwtOTI4MzQ0
+NDQ1XX0=
 -->
