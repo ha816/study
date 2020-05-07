@@ -164,18 +164,18 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 물론 세그먼트 불변성도 단점은 있다. 가장 큰 문제는 일부 데이터가 변경되더라도 전체 역색인 구조가 다시 만들어져야 한다는 것이다. 또 다른 문제점은 실시간 반영이 상대적으로 어려워 진다. 변경사항을 반영 하려면 역색인을 새로 만들어야 하는데 변경이 매우 빠르게 자주 일어난다면 실시간 반영 자체가 불가능해진다.
 
-이러한 단점을 극복하기 위해 루씬에서는 다수의 세그먼트를 생성해서 제공하는 방식을 택했다. 
+이러한 단점을 극복하기 위해 루씬에서는 작다수의 세그먼트를 생성해서 제공하는 방식을 택했다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU5MDQxNjgzLC03NDEyMjA1ODgsLTEzMz
-gzMDQ3MzksLTExOTk4MjE2MDksLTMxMDg0MjY2OCwxNjk0OTU0
-MDksMTYzNjcyODQ4NCwxMDI4NjM5NDkwLC0xMTg5MTY0MzcsLT
-E4Mzk1NTA3MjcsMjc2OTcwODc5LC05MjgzNDQ0NDUsOTE3OTAx
-NDYzLDEwOTA2NDg1ODAsLTEyMDIxNzA2ODQsLTExNzgwMzE0NT
-EsLTE2OTg1NzAxMzIsLTg4MjkxMjg0NiwtMzk5OTM5MjYxLDE5
-MDY3OTQ2MjRdfQ==
+eyJoaXN0b3J5IjpbLTc1OTUyMDcyNiw5NTkwNDE2ODMsLTc0MT
+IyMDU4OCwtMTMzODMwNDczOSwtMTE5OTgyMTYwOSwtMzEwODQy
+NjY4LDE2OTQ5NTQwOSwxNjM2NzI4NDg0LDEwMjg2Mzk0OTAsLT
+ExODkxNjQzNywtMTgzOTU1MDcyNywyNzY5NzA4NzksLTkyODM0
+NDQ0NSw5MTc5MDE0NjMsMTA5MDY0ODU4MCwtMTIwMjE3MDY4NC
+wtMTE3ODAzMTQ1MSwtMTY5ODU3MDEzMiwtODgyOTEyODQ2LC0z
+OTk5MzkyNjFdfQ==
 -->
