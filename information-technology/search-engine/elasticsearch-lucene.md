@@ -200,19 +200,20 @@ IndexWriter와 IndexSearcher를 가지고 색인과 검색을 동시에 제공�
 
 루씬에 색인 작업이 요청되면 전달된 데이터는 일단 인메모리 버퍼에 순서대로 쌓인다. 그리고 나서 정책에 따라 인메모리 버퍼에 순서대로 쌓인다. 그리고 나서 정책에 따라 내부 버퍼에 일정 크기 이상 데이터가 쌓이거나 일정 시간이 지나면 버퍼에 쌓인 데이터를 모아 한꺼번에 처리한다. 버퍼를 일종의 큐로 활용하는 것이다. 
 
+![enter image description here](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLuitG_woohDKnKKdYe90ayzNwf80eG2k_1ba9b1y_Qlg561tK&usqp=CAU)
 
+버퍼에 모여 한꺼번에 처리된 데이터는 세그먼트 형태로 생성되고 즉시 디스크로 동기화 된다. 하지만 디스크에 물리적으로 동기화하는 일련의 과정은 운여에제 입장에서는 매우 비용이 큰 연산이기 때문에 세그먼트가 생성될때마다 물리적인 동기화를 할 경우 성능이 급격히 나빠질 수 있다. 
 
-
-
+루씬은 이러한 문제를 해결하기 위해 무거운 fsync방식을 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NzYwMjY2NywtMTcyNTkxMjE3LC00MT
-M5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3ODY1ODQy
-MDQsODgxNzM5MTgwLC02OTgxOTA4NzcsLTE2NDIxOTY1OTMsLT
-EzNDU5OTk0ODUsLTgyMzMxODAxLDUxNTQyNzY3Miw5NTkwNDE2
-ODMsLTc0MTIyMDU4OCwtMTMzODMwNDczOSwtMTE5OTgyMTYwOS
-wtMzEwODQyNjY4LDE2OTQ5NTQwOSwxNjM2NzI4NDg0LDEwMjg2
-Mzk0OTBdfQ==
+eyJoaXN0b3J5IjpbLTEwMTM0MjYwMjksLTE3MjU5MTIxNywtND
+EzOTgxOTI4LC0xNzk1NjIzMzQ3LC04Nzc5ODg1OTcsNzg2NTg0
+MjA0LDg4MTczOTE4MCwtNjk4MTkwODc3LC0xNjQyMTk2NTkzLC
+0xMzQ1OTk5NDg1LC04MjMzMTgwMSw1MTU0Mjc2NzIsOTU5MDQx
+NjgzLC03NDEyMjA1ODgsLTEzMzgzMDQ3MzksLTExOTk4MjE2MD
+ksLTMxMDg0MjY2OCwxNjk0OTU0MDksMTYzNjcyODQ4NCwxMDI4
+NjM5NDkwXX0=
 -->
