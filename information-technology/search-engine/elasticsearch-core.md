@@ -26,11 +26,10 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 # Type(타입)
 
-타입은 인덱스의 논리적 구조를 말한다. RDBMS에서는 테이블의 컬럼에 해당한다. 우리는 검색하고자하는 문서들에 대한 쿼리를 만들때 타입(컬럼)의 조합을 활용한다.
+타입은 인덱스의 논리적 구조를 말한다. RDBMS에서 테이블에 해당한다. 엘라스틱 서치 6.0이하 버전에서는 하나의 인덱스에 여러 타입을 설정이 가능했지만 6.1버전부터는 인덱스당 하나의 타입만 사용할 수 있다. 
 
-엘라스틱 서치 6.0이하 버전에서는 하나의 인덱스에 여러 타입을 설정이 가능했지만 6.1버전부터는 인덱스당 하나의 타입만 사용할 수 있다. 
+# Document(문서)
 
-### 문서
 문서(Document)는 엘라스틱 서치에서 데이터가 저장되는 최소단위이다. 기본적으로 JSON 포맷으로 데이터가 저장된다. 문서는 데이터베이스와 비교하자면 테이블의 행을 의미한다. 
 하나의 문서는 다수의 필두로 구성되어 있는데 각 필드는 데이터의 형태에 따라 용도에 맞는 데이터 타입(DataType)을 정의해야 한다. 또한 문서는 중첩 구조를 지원하기 때문에 이로 문서안에 문서를 지정하는 것도 가능하다. 
 
@@ -187,6 +186,6 @@ POST /{index 명}/_search {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjM0NTUwMjQsNzA2ODIzNzg5LDE0MT
-YyNTM0NV19
+eyJoaXN0b3J5IjpbOTc0ODMzODcxLDcwNjgyMzc4OSwxNDE2Mj
+UzNDVdfQ==
 -->
