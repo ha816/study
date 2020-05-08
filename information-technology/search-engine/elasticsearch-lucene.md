@@ -220,7 +220,9 @@ ReOpen() -> openIfChanged()
 루씬에서는 물리적으로 실제 디스크에 기록을 하는 fsync함수를 호출하는 작업을 Commit이라고 한다. Flush라는 단계가 존재하기 때문에 매번 Commit을 수행할 필요가 없어 보이지만 일정 주기로 Commit 작업을 통해 물리적인 디스크로 기록 작업을 수행해야 한다는 사실을 잊으면 안된다. 
 
 
-세그먼트는 불변성을 기반으로 설계되었고, 이러한 불변성이 지닌 이점은 충분하다. 하지만 불변성을 유지하기 위해 루씬의 동작 방식은 다소 복잡해졌다. 세그먼트 단위 검색(Per-Segment Search)를 위해
+세그먼트는 불변성을 기반으로 설계되었고, 이러한 불변성이 지닌 이점은 충분하다. 하지만 불변성을 유지하기 위해 루씬의 동작 방식은 다소 복잡해졌다. 불변성 유지를 위해 세그먼트 단위 검색(Per-Segment Search)을 제공하지만 시간이 흐를 수록 세그먼트의 개수가 늘어날 수 밖에 없고 이를 지원하기 위한 커밋 포인트 부하도 증가한다. 그래서 다수의 세그먼트를 하나로 합치는 자업이 필요하다. 이 작업이 Merge 작업이다. 
+
+병합 작업을 하면, 세그먼트의 수가 줄어들기 때문검색 성능이 
 
 
 
@@ -229,11 +231,11 @@ ReOpen() -> openIfChanged()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjE3NDk4NzgsMzk5MjQ0MDgxLC0xMj
-AzMjY2NDQ2LDg0ODAzMjk5Miw0MjcxNzgxODEsLTE3MjU5MTIx
-NywtNDEzOTgxOTI4LC0xNzk1NjIzMzQ3LC04Nzc5ODg1OTcsNz
-g2NTg0MjA0LDg4MTczOTE4MCwtNjk4MTkwODc3LC0xNjQyMTk2
-NTkzLC0xMzQ1OTk5NDg1LC04MjMzMTgwMSw1MTU0Mjc2NzIsOT
-U5MDQxNjgzLC03NDEyMjA1ODgsLTEzMzgzMDQ3MzksLTExOTk4
-MjE2MDldfQ==
+eyJoaXN0b3J5IjpbLTE3OTg4MTM5MCwtMTkyMTc0OTg3OCwzOT
+kyNDQwODEsLTEyMDMyNjY0NDYsODQ4MDMyOTkyLDQyNzE3ODE4
+MSwtMTcyNTkxMjE3LC00MTM5ODE5MjgsLTE3OTU2MjMzNDcsLT
+g3Nzk4ODU5Nyw3ODY1ODQyMDQsODgxNzM5MTgwLC02OTgxOTA4
+NzcsLTE2NDIxOTY1OTMsLTEzNDU5OTk0ODUsLTgyMzMxODAxLD
+UxNTQyNzY3Miw5NTkwNDE2ODMsLTc0MTIyMDU4OCwtMTMzODMw
+NDczOV19
 -->
