@@ -244,19 +244,22 @@ ReOpen() -> openIfChanged()
 
 엘라스틱서치 샤드는 사실상 루씬 인덱스의 확장이고 세그먼트 기반의 내부 동작을 그대로 검색에 활용한다. 엘라스틱서치는 다수의 샤드로 데이터가 분산 저장되어 있고 모든 샤드가 협력해 데이터 검색을 한다. 
 
-엘라스틱서치는 사실 내부에 루씬 인덱스가 가지는 기능을 확장해서 API로 제공한다. 그렇게 때문에 루씬의 파라미터들을 튜닝하면 엘라스틱서치에서도 그에 사응하는 성능상의 이점을 얻을 수 있다. 대표적인 튜닝 포인트인 Flush, Commit, Merge 작업 또한 확장되어 API로 제공된다. 하지만 루씬의 작업을 엘라스틱서치에서는 전
+엘라스틱서치는 사실 내부에 루씬 인덱스가 가지는 기능을 확장해서 API로 제공한다. 그렇게 때문에 루씬의 파라미터들을 튜닝하면 엘라스틱서치에서도 그에 사응하는 성능상의 이점을 얻을 수 있다. 대표적인 튜닝 포인트인 Flush, Commit, Merge 작업 또한 확장되어 API로 제공된다. 하지만 루씬의 작업을 엘라스틱서치에서는 전혀 다른 명칭으로 부르고 있기 때문에 주의해야 한다.
 
+|  |  |
+|--|--|
+|  |  |
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MzE3MDIxNCwxMjIxNDYyODQzLDE3Mj
-MwNTQwOSwxNzg3ODcxMTc1LDE4NjYwNTM1ODYsNTEwODcyODQw
-LC03NDAxMzg4MzMsLTE5MjE3NDk4NzgsMzk5MjQ0MDgxLC0xMj
-AzMjY2NDQ2LDg0ODAzMjk5Miw0MjcxNzgxODEsLTE3MjU5MTIx
-NywtNDEzOTgxOTI4LC0xNzk1NjIzMzQ3LC04Nzc5ODg1OTcsNz
-g2NTg0MjA0LDg4MTczOTE4MCwtNjk4MTkwODc3LC0xNjQyMTk2
-NTkzXX0=
+eyJoaXN0b3J5IjpbLTE0MjY4MjM0OTAsMTIyMTQ2Mjg0MywxNz
+IzMDU0MDksMTc4Nzg3MTE3NSwxODY2MDUzNTg2LDUxMDg3Mjg0
+MCwtNzQwMTM4ODMzLC0xOTIxNzQ5ODc4LDM5OTI0NDA4MSwtMT
+IwMzI2NjQ0Niw4NDgwMzI5OTIsNDI3MTc4MTgxLC0xNzI1OTEy
+MTcsLTQxMzk4MTkyOCwtMTc5NTYyMzM0NywtODc3OTg4NTk3LD
+c4NjU4NDIwNCw4ODE3MzkxODAsLTY5ODE5MDg3NywtMTY0MjE5
+NjU5M119
 -->
