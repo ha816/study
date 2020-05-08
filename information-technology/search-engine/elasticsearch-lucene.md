@@ -212,17 +212,20 @@ write()
 fsync()
 : 저수준의 파일 입출력 함수다. 내부 시스템 캐시의 데이터와 물리적인 디스크 데이터를 동기화하기 위한 목적으로 사용된다. 실제 물리적인 디스크로 쓰는 작업을 수행하기 때문에 상대적으로 많은 리소스가 사용된다.
 
+ReOpen() -> openIfChanged()
+: 루씬에서는 IndexSearcher가 일단 생성되고 나면 이후 변경된 사항들을 기본적으로 인지 못한다. 물론 기존 IndexSearcher를 닫고 다시 만들면 되겠지만 문서의 추가나 변경이 빈번히 일어날 경우 많은 리소스가 필요해지기 때문에 권장하지 않는다. 이때 사용할 수 있는것이  ReOpen()이다. 일정 주기마다 문서가 변경된다면 이 함수를 써서 더 효율적으로 리소스를 사용할 수 있다. 루씬 3.5부터는 deprecated되었으며 openIfChanged()를 쓰도록 하자.
+
 데이터의 변경 사항을 일단 버퍼에 모아두고 일정 주기에 한번씩 새그먼트를 생성하고 상대적으로 적응 비용으로 디스크에 동기화까지 수행하는 것이다. 일단 Flush 처리에 의해 세그먼트가 생성되면 커널 시스템 캐시에 세그먼트가 캐시되어 읽기가 가능해진다. 커널 시스템 캐시에 캐시가 생성되면 루씬의 ReOpen()함수로 IndexSearcher에서도 읽을 수 있는 상태가 된다.
 
-ReOpen() 
-: 루씬에서는 IndexSearcher가 일단 생성되고 나면 이후 변경된 사항들을 기본적으로 인지 못한다. 물론 기존 IndexSearcher를 닫고 다시 만들면 되겠지만 문서의 추가나 변경이 빈번히 일어날 경우 많은 리소스가 필요해지기 때문에 권장하지 않는다. 이때 사용할 수 있는것이  ReOpen()이다. 일정 주기마다 문서가 변경된다면 이 함수를 써서 더 효율적으로 리소스를 사용할 수 있다.
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY0MTU2NDg2LC0xMjAzMjY2NDQ2LDg0OD
+eyJoaXN0b3J5IjpbMzk5MjQ0MDgxLC0xMjAzMjY2NDQ2LDg0OD
 AzMjk5Miw0MjcxNzgxODEsLTE3MjU5MTIxNywtNDEzOTgxOTI4
 LC0xNzk1NjIzMzQ3LC04Nzc5ODg1OTcsNzg2NTg0MjA0LDg4MT
 czOTE4MCwtNjk4MTkwODc3LC0xNjQyMTk2NTkzLC0xMzQ1OTk5
