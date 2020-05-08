@@ -265,16 +265,24 @@ ReOpen() -> openIfChanged()
 Refresh 주리를 수동으로 조절할 수 있는 API가 존재한다. 하지만 기본 설정된 주기를 변경하는 것은 별로 권장하지 않는다. Flush 작업이 Commit 작업보다는 가볍다고는 하나 여전히 비용이 발생하는 연산이고 전체 성능에 큰 영향을 주는 작업이기 때문이다.
 
 >대량 색인이 필요하신 참고할 팁
->_settings API를 이요하면 Refresh주기를 변경할 수 있다. 
+>_settings API를 이요하면 Refresh주기를 변경할 수 있다. 만약 대량의 데이터를 한번에 색인 제작이 필요할 경우, Refresh작업을 잠시 비활성화 하고 색인 작업이 끝나면 다시 되돌리는 것이 가능하다. 
+>```
+>PUT movie/_settings 
+>{
+	>"index" : {
+	}
+>}
+>```
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTk5NTgyMTcsLTcwMjI2NDAyLC0xMT
-Q3MTg1Njk4LC0xNDI2ODIzNDkwLDEyMjE0NjI4NDMsMTcyMzA1
-NDA5LDE3ODc4NzExNzUsMTg2NjA1MzU4Niw1MTA4NzI4NDAsLT
-c0MDEzODgzMywtMTkyMTc0OTg3OCwzOTkyNDQwODEsLTEyMDMy
-NjY0NDYsODQ4MDMyOTkyLDQyNzE3ODE4MSwtMTcyNTkxMjE3LC
-00MTM5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3ODY1
-ODQyMDRdfQ==
+eyJoaXN0b3J5IjpbMTQxNjk5NTA0NCwtNzAyMjY0MDIsLTExND
+cxODU2OTgsLTE0MjY4MjM0OTAsMTIyMTQ2Mjg0MywxNzIzMDU0
+MDksMTc4Nzg3MTE3NSwxODY2MDUzNTg2LDUxMDg3Mjg0MCwtNz
+QwMTM4ODMzLC0xOTIxNzQ5ODc4LDM5OTI0NDA4MSwtMTIwMzI2
+NjQ0Niw4NDgwMzI5OTIsNDI3MTc4MTgxLC0xNzI1OTEyMTcsLT
+QxMzk4MTkyOCwtMTc5NTYyMzM0NywtODc3OTg4NTk3LDc4NjU4
+NDIwNF19
 -->
