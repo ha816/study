@@ -506,17 +506,17 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 
 바깥 쪽을 OUTER 테이블, 안쪽을 INNER 테이블이라 한다. 또한 OUTER 테이블은 INNER 테이블 보다 먼저 읽어야 하며, 조인에서 주도적인 역할을 한다고 해서 드라이빙 테이블이라고도 한다. INNER 테이블은 조인에서 끌려가는 역할을 한다고 하여 드리븐 테이블이라고도 한다. 
 
-
+중첩된 반복 루프에서 최종적으로 선택될 레코드가 안쪽 반복 루프로 결정되는 경우를 INNER JOIN이라 한다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDY5ODMzMDksLTIwNjQ0NTkzNCwxMj
-EyMDYxNDY1LC0xNTQ5NDcxNTI1LDIwNjg3NTE4NzEsLTE2MzA4
-MDEzMDQsMjA2MjQzMjYyMywyNDU4NjQ2NTYsLTE4NjUzNzk3OD
-YsLTE3NDU2NTkxNDEsLTcxMTQzNDE2NCwtMTAzMjA1ODM1OCwx
-OTQ4NDkzNjIzLC05OTYyNTU3MDUsMTA0ODg2MDAxNCw4MTY4MT
-kzMTIsLTE1NjU3MDExMzYsLTkyMzc0NDEzOSwtNTg2NTU1MjA2
-LDEyNDkyMjE4NDNdfQ==
+eyJoaXN0b3J5IjpbMTg3NDg4MDEzLC0xNDQ2OTgzMzA5LC0yMD
+Y0NDU5MzQsMTIxMjA2MTQ2NSwtMTU0OTQ3MTUyNSwyMDY4NzUx
+ODcxLC0xNjMwODAxMzA0LDIwNjI0MzI2MjMsMjQ1ODY0NjU2LC
+0xODY1Mzc5Nzg2LC0xNzQ1NjU5MTQxLC03MTE0MzQxNjQsLTEw
+MzIwNTgzNTgsMTk0ODQ5MzYyMywtOTk2MjU1NzA1LDEwNDg4Nj
+AwMTQsODE2ODE5MzEyLC0xNTY1NzAxMTM2LC05MjM3NDQxMzks
+LTU4NjU1NTIwNl19
 -->
