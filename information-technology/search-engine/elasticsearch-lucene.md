@@ -254,17 +254,19 @@ ReOpen() -> openIfChanged()
 
 단일 검색 엔진을 표방하는 루씬과는 다르게 고가용성이 보장되어야 하는 분산 검색엔진인 엘라스틱 서치의 경우 루씬 보다 고려해야 할 사항이 훨씬 더 많다. 분산 시스템의 특성상 장애가 더 빈번할 수도 있고 단일 샤드에 장애가 발생하더라도 전체 클러스터에 영향이 없어요 햔다. 또한 장애 복구를 위한 레플리카 세트를 운영해야 하는데 레플리카 샤드 또한 일반 샤드와 별반 다를것이 없기 때문에 레플리카 세트가 많아질 수록 색인 비용 또한 많아진다. 
 
-이러한 이유로 루씬의 작업을 그대로 사용하지 않고 고가용성에 적합하
+이러한 이유로 **루씬의 작업을 그대로 사용하지 않고 고가용성에 적합하도록 개선 및 확장해서 제공한다.** 
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU3ODA5ODY1LC0xNDI2ODIzNDkwLDEyMj
-E0NjI4NDMsMTcyMzA1NDA5LDE3ODc4NzExNzUsMTg2NjA1MzU4
-Niw1MTA4NzI4NDAsLTc0MDEzODgzMywtMTkyMTc0OTg3OCwzOT
-kyNDQwODEsLTEyMDMyNjY0NDYsODQ4MDMyOTkyLDQyNzE3ODE4
-MSwtMTcyNTkxMjE3LC00MTM5ODE5MjgsLTE3OTU2MjMzNDcsLT
-g3Nzk4ODU5Nyw3ODY1ODQyMDQsODgxNzM5MTgwLC02OTgxOTA4
-NzddfQ==
+eyJoaXN0b3J5IjpbLTExNDcxODU2OTgsLTE0MjY4MjM0OTAsMT
+IyMTQ2Mjg0MywxNzIzMDU0MDksMTc4Nzg3MTE3NSwxODY2MDUz
+NTg2LDUxMDg3Mjg0MCwtNzQwMTM4ODMzLC0xOTIxNzQ5ODc4LD
+M5OTI0NDA4MSwtMTIwMzI2NjQ0Niw4NDgwMzI5OTIsNDI3MTc4
+MTgxLC0xNzI1OTEyMTcsLTQxMzk4MTkyOCwtMTc5NTYyMzM0Ny
+wtODc3OTg4NTk3LDc4NjU4NDIwNCw4ODE3MzkxODAsLTY5ODE5
+MDg3N119
 -->
