@@ -258,17 +258,18 @@ ReOpen() -> openIfChanged()
 
 ## Refresh
 
-엘라스틱서치는 대용량 데이터를 색인하고 근실시간 검색을 할 수 있게 설계되었다. 엘라스틱서치는 각 샤드가 가지고 있는 루씬을 제어할 수 있으며, 주기적으로 인메모리 버퍼에 대해 Flush작업을 한다. 이러한 루씬의 Flush 작업을 엘라스틱서치에서는 Refresh라고 하면 클러스터에 존재하는 모든 샤드에서는 기본적으로 1초마다 한번씩 Refresh작업이 수행된다.
+엘라스틱서치는 대용량 데이터를 색인하고 근실시간 검색을 할 수 있게 설계되었다. 엘라스틱서치는 각 샤드가 가지고 있는 루씬을 제어할 수 있으며, 주기적으로 인메모리 버퍼에 대해 Flush작업을 한다. 이러한 **루씬의 Flush 작업을 엘라스틱서치에서는 Refresh라고 하면 클러스터에 존재하는 모든 샤드에서는 기본적으로 1초마다 한번씩 Refresh작업이 수행된다.**
 
+루씬의 Flush를 Refresh라고 부르는 이유는 용어에 좀더 행위의 의미를 담은 측면이 크다. 인덱스를 새로고침한다는 의미인데, 새로 추가한 문서의 검색이 가능해지게 한다는 것이다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNDM5Mjk0NCwtMTE0NzE4NTY5OCwtMT
-QyNjgyMzQ5MCwxMjIxNDYyODQzLDE3MjMwNTQwOSwxNzg3ODcx
-MTc1LDE4NjYwNTM1ODYsNTEwODcyODQwLC03NDAxMzg4MzMsLT
-E5MjE3NDk4NzgsMzk5MjQ0MDgxLC0xMjAzMjY2NDQ2LDg0ODAz
-Mjk5Miw0MjcxNzgxODEsLTE3MjU5MTIxNywtNDEzOTgxOTI4LC
-0xNzk1NjIzMzQ3LC04Nzc5ODg1OTcsNzg2NTg0MjA0LDg4MTcz
-OTE4MF19
+eyJoaXN0b3J5IjpbLTcwMjI2NDAyLC0xMTQ3MTg1Njk4LC0xND
+I2ODIzNDkwLDEyMjE0NjI4NDMsMTcyMzA1NDA5LDE3ODc4NzEx
+NzUsMTg2NjA1MzU4Niw1MTA4NzI4NDAsLTc0MDEzODgzMywtMT
+kyMTc0OTg3OCwzOTkyNDQwODEsLTEyMDMyNjY0NDYsODQ4MDMy
+OTkyLDQyNzE3ODE4MSwtMTcyNTkxMjE3LC00MTM5ODE5MjgsLT
+E3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3ODY1ODQyMDQsODgxNzM5
+MTgwXX0=
 -->
