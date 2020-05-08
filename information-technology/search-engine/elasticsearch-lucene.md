@@ -266,23 +266,22 @@ Refresh 주리를 수동으로 조절할 수 있는 API가 존재한다. 하지�
 
 >대량 색인이 필요하신 참고할 팁
 >_settings API를 이요하면 Refresh주기를 변경할 수 있다. 만약 대량의 데이터를 한번에 색인 제작이 필요할 경우, Refresh작업을 잠시 비활성화 하고 색인 작업이 끝나면 다시 되돌리는 것이 가능하다. 
+
 >```
 >PUT movie/_settings 
->{
-	>"index" : {
-	}
->}
->```
+>{"index" : { "refresh_interval": "-1" } --비활성화 
+
+특별한 경우가 아니라면 Refresh주기를 임의로 변경하지 말고 엘라스틱서치에게 맡기자. 하지만 대량의 색인을 짧은 시간에 수해
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNjk5NTA0NCwtNzAyMjY0MDIsLTExND
-cxODU2OTgsLTE0MjY4MjM0OTAsMTIyMTQ2Mjg0MywxNzIzMDU0
-MDksMTc4Nzg3MTE3NSwxODY2MDUzNTg2LDUxMDg3Mjg0MCwtNz
-QwMTM4ODMzLC0xOTIxNzQ5ODc4LDM5OTI0NDA4MSwtMTIwMzI2
-NjQ0Niw4NDgwMzI5OTIsNDI3MTc4MTgxLC0xNzI1OTEyMTcsLT
-QxMzk4MTkyOCwtMTc5NTYyMzM0NywtODc3OTg4NTk3LDc4NjU4
-NDIwNF19
+eyJoaXN0b3J5IjpbNTI5NTU0NTIwLC03MDIyNjQwMiwtMTE0Nz
+E4NTY5OCwtMTQyNjgyMzQ5MCwxMjIxNDYyODQzLDE3MjMwNTQw
+OSwxNzg3ODcxMTc1LDE4NjYwNTM1ODYsNTEwODcyODQwLC03ND
+AxMzg4MzMsLTE5MjE3NDk4NzgsMzk5MjQ0MDgxLC0xMjAzMjY2
+NDQ2LDg0ODAzMjk5Miw0MjcxNzgxODEsLTE3MjU5MTIxNywtND
+EzOTgxOTI4LC0xNzk1NjIzMzQ3LC04Nzc5ODg1OTcsNzg2NTg0
+MjA0XX0=
 -->
