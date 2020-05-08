@@ -212,16 +212,19 @@ write()
 fsync()
 : 저수준의 파일 입출력 함수다. 내부 시스템 캐시의 데이터와 물리적인 디스크 데이터를 동기화하기 위한 목적으로 사용된다. 실제 물리적인 디스크로 쓰는 작업을 수행하기 때문에 상대적으로 많은 리소스가 사용된다.
 
-데이터의 변경 사항을 일단 버퍼에 모아두고 일정 주기에 한번씩 새그먼트를 생성하고 상대적으로 적응 비용으로 디스크에 동기화까지 수행하는 것이다. 일단 Flush 처리에 의해 세그먼트가 생성되면 커널 시스템 캐시에 세그먼트가 캐시되어 읽기가 가능해진다. 커널 시스템 캐
+데이터의 변경 사항을 일단 버퍼에 모아두고 일정 주기에 한번씩 새그먼트를 생성하고 상대적으로 적응 비용으로 디스크에 동기화까지 수행하는 것이다. 일단 Flush 처리에 의해 세그먼트가 생성되면 커널 시스템 캐시에 세그먼트가 캐시되어 읽기가 가능해진다. 커널 시스템 캐시에 캐시가 생성되면 루씬의 ReOpen()함수로 IndexSearcher에서도 읽을 수 있는 상태가 된다.
+
+ReOpen()
+: ㅇㄹ
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyODE0MDUwMSw0MjcxNzgxODEsLTE3Mj
-U5MTIxNywtNDEzOTgxOTI4LC0xNzk1NjIzMzQ3LC04Nzc5ODg1
-OTcsNzg2NTg0MjA0LDg4MTczOTE4MCwtNjk4MTkwODc3LC0xNj
-QyMTk2NTkzLC0xMzQ1OTk5NDg1LC04MjMzMTgwMSw1MTU0Mjc2
-NzIsOTU5MDQxNjgzLC03NDEyMjA1ODgsLTEzMzgzMDQ3MzksLT
-ExOTk4MjE2MDksLTMxMDg0MjY2OCwxNjk0OTU0MDksMTYzNjcy
-ODQ4NF19
+eyJoaXN0b3J5IjpbODQ4MDMyOTkyLDQyNzE3ODE4MSwtMTcyNT
+kxMjE3LC00MTM5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5
+Nyw3ODY1ODQyMDQsODgxNzM5MTgwLC02OTgxOTA4NzcsLTE2ND
+IxOTY1OTMsLTEzNDU5OTk0ODUsLTgyMzMxODAxLDUxNTQyNzY3
+Miw5NTkwNDE2ODMsLTc0MTIyMDU4OCwtMTMzODMwNDczOSwtMT
+E5OTgyMTYwOSwtMzEwODQyNjY4LDE2OTQ5NTQwOSwxNjM2NzI4
+NDg0XX0=
 -->
