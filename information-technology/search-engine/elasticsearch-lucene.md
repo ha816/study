@@ -294,11 +294,13 @@ Translog는 루씬에서는 존재하지 않는 엘라스틱서치에서만 존�
 >```
 >POST /moive/_forcemerge?max_num_segments=1
 
+# 엘라스틱서치와 NRT
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzOTgxODIyMywtNzAyMjY0MDIsLTExND
+eyJoaXN0b3J5IjpbLTY0NzA0ODc4NywtNzAyMjY0MDIsLTExND
 cxODU2OTgsLTE0MjY4MjM0OTAsMTIyMTQ2Mjg0MywxNzIzMDU0
 MDksMTc4Nzg3MTE3NSwxODY2MDUzNTg2LDUxMDg3Mjg0MCwtNz
 QwMTM4ODMzLC0xOTIxNzQ5ODc4LDM5OTI0NDA4MSwtMTIwMzI2
