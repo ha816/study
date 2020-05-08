@@ -530,18 +530,18 @@ OUTER JOIN은 조인의 결과를 결정하는 OUTER 테이블이 조인의 왼�
 
 보통 LEFT OUTER JOIN과 RIGHT OUTER JOIN은 결국 FROM 절에 나오는 테이블의 순서에 따라 같은 처리를 만들어낼 수 있다. 이 혼동을 막기 위해 일반적으로는 LEFT OUTER JOIN으로 통일해서 사용하는 것일 일반적이다.
 
-JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶고,
+JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶고, 오른쪽 테이블도 OUTER JOIN을 하고 싶은 경우 사용하는 쿼리가 FULL OUTER JOIN이다. MySQL에서는 FULL OUTER JOIN을 지원하지 않는다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczOTIwOTk5NiwxNzQzNDMwNjg5LC0xND
-I4NDU3MTQ0LC01NDQ5NzA3NDksLTE2MDkxOTk3NDgsLTEwMDg0
-OTE2NTAsLTE0NDY5ODMzMDksLTIwNjQ0NTkzNCwxMjEyMDYxND
-Y1LC0xNTQ5NDcxNTI1LDIwNjg3NTE4NzEsLTE2MzA4MDEzMDQs
-MjA2MjQzMjYyMywyNDU4NjQ2NTYsLTE4NjUzNzk3ODYsLTE3ND
-U2NTkxNDEsLTcxMTQzNDE2NCwtMTAzMjA1ODM1OCwxOTQ4NDkz
-NjIzLC05OTYyNTU3MDVdfQ==
+eyJoaXN0b3J5IjpbLTEyODQxNTQ2ODQsLTczOTIwOTk5NiwxNz
+QzNDMwNjg5LC0xNDI4NDU3MTQ0LC01NDQ5NzA3NDksLTE2MDkx
+OTk3NDgsLTEwMDg0OTE2NTAsLTE0NDY5ODMzMDksLTIwNjQ0NT
+kzNCwxMjEyMDYxNDY1LC0xNTQ5NDcxNTI1LDIwNjg3NTE4NzEs
+LTE2MzA4MDEzMDQsMjA2MjQzMjYyMywyNDU4NjQ2NTYsLTE4Nj
+UzNzk3ODYsLTE3NDU2NTkxNDEsLTcxMTQzNDE2NCwtMTAzMjA1
+ODM1OCwxOTQ4NDkzNjIzXX0=
 -->
