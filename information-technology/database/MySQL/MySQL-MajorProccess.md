@@ -492,8 +492,12 @@ MySQL은 다른 DBMS보다 조인을 처리하는 방식이 단순하다. 조인
 
 ```
 For ( record1 IN TABLE1) { //외부 루프 (OUTER)
-	For ( record2 IN TABLE2 ) { //soq
-
+	For ( record2 IN TABLE2 ) { //내부 루프(INNER)
+		IF( record1.join_col == record2.join_col){
+			join_record_found(record1.*, record2.*)
+		} else {
+			join_record_notfound();
+		}
 	}
 }
 
@@ -503,11 +507,11 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyOTQzNzU2LDEyMTIwNjE0NjUsLTE1ND
-k0NzE1MjUsMjA2ODc1MTg3MSwtMTYzMDgwMTMwNCwyMDYyNDMy
-NjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1OTE0MS
-wtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2MjMsLTk5
-NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2NTcwMT
-EzNiwtOTIzNzQ0MTM5LC01ODY1NTUyMDYsMTI0OTIyMTg0Mywt
-NTk0MjQ5NzMxXX0=
+eyJoaXN0b3J5IjpbLTE4NjEyMjQwMzMsMTIxMjA2MTQ2NSwtMT
+U0OTQ3MTUyNSwyMDY4NzUxODcxLC0xNjMwODAxMzA0LDIwNjI0
+MzI2MjMsMjQ1ODY0NjU2LC0xODY1Mzc5Nzg2LC0xNzQ1NjU5MT
+QxLC03MTE0MzQxNjQsLTEwMzIwNTgzNTgsMTk0ODQ5MzYyMywt
+OTk2MjU1NzA1LDEwNDg4NjAwMTQsODE2ODE5MzEyLC0xNTY1Nz
+AxMTM2LC05MjM3NDQxMzksLTU4NjU1NTIwNiwxMjQ5MjIxODQz
+LC01OTQyNDk3MzFdfQ==
 -->
