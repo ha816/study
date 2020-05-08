@@ -526,15 +526,17 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 
 INNER 테이블이 조인 결과에 전혀 영향을 미치지 않고, OUTER 테이블 내용에 따라 조인의 결과가 결정되는 것이 OUTER JOIN의 특징이다. 물론 OUTER 테이블과 INNER 테이블의 관계가 1:M의 관계라면 최종 결과 레코드 건수가 늘어날 수 있지만, OUTER 테이블의 레코드가 INNER 테이블에 일치하는 레코드가 없다고 해서 버려지지는 않는다.
 
+OUTER JOIN은 조인의 결과를 결정하는 OUTER 테이블이 조인의 왼쪽에 있는지 오른쪽에 있는지에 따라 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDk3MDc0OSwtMTYwOTE5OTc0OCwtMT
-AwODQ5MTY1MCwtMTQ0Njk4MzMwOSwtMjA2NDQ1OTM0LDEyMTIw
-NjE0NjUsLTE1NDk0NzE1MjUsMjA2ODc1MTg3MSwtMTYzMDgwMT
-MwNCwyMDYyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4Niwt
-MTc0NTY1OTE0MSwtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5ND
-g0OTM2MjMsLTk5NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMx
-MiwtMTU2NTcwMTEzNl19
+eyJoaXN0b3J5IjpbLTE0Mjg0NTcxNDQsLTU0NDk3MDc0OSwtMT
+YwOTE5OTc0OCwtMTAwODQ5MTY1MCwtMTQ0Njk4MzMwOSwtMjA2
+NDQ1OTM0LDEyMTIwNjE0NjUsLTE1NDk0NzE1MjUsMjA2ODc1MT
+g3MSwtMTYzMDgwMTMwNCwyMDYyNDMyNjIzLDI0NTg2NDY1Niwt
+MTg2NTM3OTc4NiwtMTc0NTY1OTE0MSwtNzExNDM0MTY0LC0xMD
+MyMDU4MzU4LDE5NDg0OTM2MjMsLTk5NjI1NTcwNSwxMDQ4ODYw
+MDE0LDgxNjgxOTMxMl19
 -->
