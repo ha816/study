@@ -222,7 +222,9 @@ ReOpen() -> openIfChanged()
 
 세그먼트는 불변성을 기반으로 설계되었고, 이러한 불변성이 지닌 이점은 충분하다. 하지만 불변성을 유지하기 위해 루씬의 동작 방식은 다소 복잡해졌다. 불변성 유지를 위해 세그먼트 단위 검색(Per-Segment Search)을 제공하지만 시간이 흐를 수록 세그먼트의 개수가 늘어날 수 밖에 없고 이를 지원하기 위한 커밋 포인트 부하도 증가한다. 그래서 다수의 세그먼트를 하나로 합치는 자업이 필요하다. 이 작업이 Merge 작업이다. 
 
-병합 작업을 하면, 세그먼트의 수가 줄어들기 때문검색 성능이 
+병합 작업을 하면, 세그먼트의 수가 줄어들기 때문에 검색 횟수가 줄어들어 검색 성능이 좋아진다. 마찬가지로 수가 줄기 때문에 세그먼트가 차지하는 디스크 용량이 줄어든다. 삭제되는 문서의 경우 병합 작업 전에는 디스크에 물리적으로 남아 있다. 하지만 병합 작업으로 새로운 새그먼트를 생성하면 디스크에서 삭제가 되고 공간 절약이 가능해진다.
+
+병합 정렬은 Commit작업을 반드시 동반해야 하는데, 
 
 
 
@@ -231,7 +233,7 @@ ReOpen() -> openIfChanged()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTg4MTM5MCwtMTkyMTc0OTg3OCwzOT
+eyJoaXN0b3J5IjpbLTc0MDEzODgzMywtMTkyMTc0OTg3OCwzOT
 kyNDQwODEsLTEyMDMyNjY0NDYsODQ4MDMyOTkyLDQyNzE3ODE4
 MSwtMTcyNTkxMjE3LC00MTM5ODE5MjgsLTE3OTU2MjMzNDcsLT
 g3Nzk4ODU5Nyw3ODY1ODQyMDQsODgxNzM5MTgwLC02OTgxOTA4
