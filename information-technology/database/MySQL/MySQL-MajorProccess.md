@@ -502,17 +502,19 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 }
 ```
 
-위의 의사코드에서 알 수 있듯이
+위의 의사코드에서 알 수 있듯이 조인은 2개의 반복 루프로 두 개의 테이블을 조건에 맞게 연결해주는 작업이다. (이 의사 코드의 FOR문 반복이 풀 테이블 스캔을 의미하는 것은 아니다.)
+
+바깥 쪽을 OUTER 테이블, 안쪽을 INNER 테이블이라 한다. 또한 OUTER 테이블은 INNER 테이블 보다 먼저 읽어야 하며, 조인에서 주도적인 역할을 한다고 해서 드라이빙 테이블이라고도 한다. INNER 테이블은 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjQ0NTkzNCwxMjEyMDYxNDY1LC0xNT
-Q5NDcxNTI1LDIwNjg3NTE4NzEsLTE2MzA4MDEzMDQsMjA2MjQz
-MjYyMywyNDU4NjQ2NTYsLTE4NjUzNzk3ODYsLTE3NDU2NTkxND
-EsLTcxMTQzNDE2NCwtMTAzMjA1ODM1OCwxOTQ4NDkzNjIzLC05
-OTYyNTU3MDUsMTA0ODg2MDAxNCw4MTY4MTkzMTIsLTE1NjU3MD
-ExMzYsLTkyMzc0NDEzOSwtNTg2NTU1MjA2LDEyNDkyMjE4NDMs
-LTU5NDI0OTczMV19
+eyJoaXN0b3J5IjpbLTg4MjI5MzE4LC0yMDY0NDU5MzQsMTIxMj
+A2MTQ2NSwtMTU0OTQ3MTUyNSwyMDY4NzUxODcxLC0xNjMwODAx
+MzA0LDIwNjI0MzI2MjMsMjQ1ODY0NjU2LC0xODY1Mzc5Nzg2LC
+0xNzQ1NjU5MTQxLC03MTE0MzQxNjQsLTEwMzIwNTgzNTgsMTk0
+ODQ5MzYyMywtOTk2MjU1NzA1LDEwNDg4NjAwMTQsODE2ODE5Mz
+EyLC0xNTY1NzAxMTM2LC05MjM3NDQxMzksLTU4NjU1NTIwNiwx
+MjQ5MjIxODQzXX0=
 -->
