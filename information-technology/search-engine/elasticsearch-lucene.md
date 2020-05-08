@@ -217,6 +217,7 @@ ReOpen() -> openIfChanged()
 
 데이터의 변경 사항을 일단 버퍼에 모아두고 일정 주기에 한번씩 새그먼트를 생성하고 상대적으로 적응 비용으로 디스크에 동기화까지 수행하는 것이다. 일단 Flush 처리에 의해 세그먼트가 생성되면 커널 시스템 캐시에 세그먼트가 캐시되어 읽기가 가능해진다. 커널 시스템 캐시에 캐시가 생성되면 루씬의 ReOpen()함수로 IndexSearcher에서도 읽을 수 있는 상태가 된다.
 
+루씬에서는 물리적으로 실제 디스크에 기록을 하는 fsync함수를 호출하는 작업을 commit이라고 한다.
 
 
 
@@ -225,11 +226,11 @@ ReOpen() -> openIfChanged()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5MjQ0MDgxLC0xMjAzMjY2NDQ2LDg0OD
-AzMjk5Miw0MjcxNzgxODEsLTE3MjU5MTIxNywtNDEzOTgxOTI4
-LC0xNzk1NjIzMzQ3LC04Nzc5ODg1OTcsNzg2NTg0MjA0LDg4MT
-czOTE4MCwtNjk4MTkwODc3LC0xNjQyMTk2NTkzLC0xMzQ1OTk5
-NDg1LC04MjMzMTgwMSw1MTU0Mjc2NzIsOTU5MDQxNjgzLC03ND
-EyMjA1ODgsLTEzMzgzMDQ3MzksLTExOTk4MjE2MDksLTMxMDg0
-MjY2OF19
+eyJoaXN0b3J5IjpbMjE0MTM2Nzk2NywzOTkyNDQwODEsLTEyMD
+MyNjY0NDYsODQ4MDMyOTkyLDQyNzE3ODE4MSwtMTcyNTkxMjE3
+LC00MTM5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3OD
+Y1ODQyMDQsODgxNzM5MTgwLC02OTgxOTA4NzcsLTE2NDIxOTY1
+OTMsLTEzNDU5OTk0ODUsLTgyMzMxODAxLDUxNTQyNzY3Miw5NT
+kwNDE2ODMsLTc0MTIyMDU4OCwtMTMzODMwNDczOSwtMTE5OTgy
+MTYwOV19
 -->
