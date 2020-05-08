@@ -220,7 +220,7 @@ ReOpen() -> openIfChanged()
 루씬에서는 물리적으로 실제 디스크에 기록을 하는 fsync함수를 호출하는 작업을 Commit이라고 한다. Flush라는 단계가 존재하기 때문에 매번 Commit을 수행할 필요가 없어 보이지만 일정 주기로 Commit 작업을 통해 물리적인 디스크로 기록 작업을 수행해야 한다는 사실을 잊으면 안된다. 
 
 
-세그먼트는 불변성을 기반으로 설계되었고, 이러한 불변성이 지닌 이점은 충분하다. 하지만 불변성을 유지하기 위해 루씬의 동작 방식은 다소
+세그먼트는 불변성을 기반으로 설계되었고, 이러한 불변성이 지닌 이점은 충분하다. 하지만 불변성을 유지하기 위해 루씬의 동작 방식은 다소 복잡해졌다. 세그먼트 단위 검색(Per-Segment Search)를 위해
 
 
 
@@ -229,11 +229,11 @@ ReOpen() -> openIfChanged()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2Mzg2OTY3NSwzOTkyNDQwODEsLTEyMD
-MyNjY0NDYsODQ4MDMyOTkyLDQyNzE3ODE4MSwtMTcyNTkxMjE3
-LC00MTM5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3OD
-Y1ODQyMDQsODgxNzM5MTgwLC02OTgxOTA4NzcsLTE2NDIxOTY1
-OTMsLTEzNDU5OTk0ODUsLTgyMzMxODAxLDUxNTQyNzY3Miw5NT
-kwNDE2ODMsLTc0MTIyMDU4OCwtMTMzODMwNDczOSwtMTE5OTgy
-MTYwOV19
+eyJoaXN0b3J5IjpbLTE5MjE3NDk4NzgsMzk5MjQ0MDgxLC0xMj
+AzMjY2NDQ2LDg0ODAzMjk5Miw0MjcxNzgxODEsLTE3MjU5MTIx
+NywtNDEzOTgxOTI4LC0xNzk1NjIzMzQ3LC04Nzc5ODg1OTcsNz
+g2NTg0MjA0LDg4MTczOTE4MCwtNjk4MTkwODc3LC0xNjQyMTk2
+NTkzLC0xMzQ1OTk5NDg1LC04MjMzMTgwMSw1MTU0Mjc2NzIsOT
+U5MDQxNjgzLC03NDEyMjA1ODgsLTEzMzgzMDQ3MzksLTExOTk4
+MjE2MDldfQ==
 -->
