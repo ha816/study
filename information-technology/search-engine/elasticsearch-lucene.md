@@ -277,15 +277,17 @@ Refresh 주리를 수동으로 조절할 수 있는 API가 존재한다. 하지�
 
 엘라스틱서치에서 **Flush는 루씬의 Commit 작업을 수행하고 새로운 Translog를 시작한다는 의미다.**  절대로 이 작업을 루씬의 Flush와 혼동해서는 안된다. 
 
+Translog는 루씬에서는 존재하지 않는 엘라스틱서치에서만 존재하는 개념이다. **Translog는 샤드 장애 복구를 위해 제공되는 특수한 파일이다.** 엘라스틱서치 샤드는 자신에게 일어나는 모든 변경사항을 Trans
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ2NjA5NzAsLTcwMjI2NDAyLC0xMTQ3MT
-g1Njk4LC0xNDI2ODIzNDkwLDEyMjE0NjI4NDMsMTcyMzA1NDA5
-LDE3ODc4NzExNzUsMTg2NjA1MzU4Niw1MTA4NzI4NDAsLTc0MD
-EzODgzMywtMTkyMTc0OTg3OCwzOTkyNDQwODEsLTEyMDMyNjY0
-NDYsODQ4MDMyOTkyLDQyNzE3ODE4MSwtMTcyNTkxMjE3LC00MT
-M5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3ODY1ODQy
-MDRdfQ==
+eyJoaXN0b3J5IjpbLTE2NjM1NzI5NjQsLTcwMjI2NDAyLC0xMT
+Q3MTg1Njk4LC0xNDI2ODIzNDkwLDEyMjE0NjI4NDMsMTcyMzA1
+NDA5LDE3ODc4NzExNzUsMTg2NjA1MzU4Niw1MTA4NzI4NDAsLT
+c0MDEzODgzMywtMTkyMTc0OTg3OCwzOTkyNDQwODEsLTEyMDMy
+NjY0NDYsODQ4MDMyOTkyLDQyNzE3ODE4MSwtMTcyNTkxMjE3LC
+00MTM5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3ODY1
+ODQyMDRdfQ==
 -->
