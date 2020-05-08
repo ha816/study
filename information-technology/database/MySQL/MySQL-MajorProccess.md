@@ -534,18 +534,18 @@ JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶�
 
 LEFT OUTER JOIN에서 쉽게 실수할 수 있는 부분이 여러가지 있다. 이제 LEFT OUTER JOIN을 사용할때 주의할 점을 알아보자. 
 
-실행 계획에서는 어떤 조인을 했는지 알려주지 않으므로 OUTER JOIN을 의도한 쿼리가 INNER JOIN으로 실행되지 않았는지 주의해야 한다. 이 부분도 실수하기 쉬운 부분인데, OUTER JOIN에 레코드가 없을 수도 있는 쪽의 테이블에 대한 조건은 반드시 LEFT JOIN의 ON절에 명시하자. 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다. LEFT OUTER JOIN의 ON 절에 명시되는 조건은 조인되는 레코드가 있을때만 적용된다. 하지만 WHERE 절에 명시되는 조건은 OUTER JOIN이나 INNER JOIN에 관계없이 조인된 결과에 모두 적용된다. 그래서 OUTER JOIN으로 연결되는 테이블이 있는 쿼리에서느
+실행 계획에서는 어떤 조인을 했는지 알려주지 않으므로 OUTER JOIN을 의도한 쿼리가 INNER JOIN으로 실행되지 않았는지 주의해야 한다. 이 부분도 실수하기 쉬운 부분인데, OUTER JOIN에 레코드가 없을 수도 있는 쪽의 테이블에 대한 조건은 반드시 LEFT JOIN의 ON절에 명시하자. 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다. LEFT OUTER JOIN의 ON 절에 명시되는 조건은 조인되는 레코드가 있을때만 적용된다. 하지만 WHERE 절에 명시되는 조건은 OUTER JOIN이나 INNER JOIN에 관계없이 조인된 결과에 모두 적용된다. 그래서 OUTER JOIN으로 연결되는 테이블이 있는 쿼리에서는 가능하다면 모든 조건을 ON 절에 명시하는 습관을 들이는게 좋다.
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzI0MTc2LC03MTUzMjI4NjIsMjAwNj
-QzNzM5MywtMTI4NDE1NDY4NCwtNzM5MjA5OTk2LDE3NDM0MzA2
-ODksLTE0Mjg0NTcxNDQsLTU0NDk3MDc0OSwtMTYwOTE5OTc0OC
-wtMTAwODQ5MTY1MCwtMTQ0Njk4MzMwOSwtMjA2NDQ1OTM0LDEy
-MTIwNjE0NjUsLTE1NDk0NzE1MjUsMjA2ODc1MTg3MSwtMTYzMD
-gwMTMwNCwyMDYyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4
-NiwtMTc0NTY1OTE0MV19
+eyJoaXN0b3J5IjpbMTAwNTg4MDc2OSwtNzE1MzIyODYyLDIwMD
+Y0MzczOTMsLTEyODQxNTQ2ODQsLTczOTIwOTk5NiwxNzQzNDMw
+Njg5LC0xNDI4NDU3MTQ0LC01NDQ5NzA3NDksLTE2MDkxOTk3ND
+gsLTEwMDg0OTE2NTAsLTE0NDY5ODMzMDksLTIwNjQ0NTkzNCwx
+MjEyMDYxNDY1LC0xNTQ5NDcxNTI1LDIwNjg3NTE4NzEsLTE2Mz
+A4MDEzMDQsMjA2MjQzMjYyMywyNDU4NjQ2NTYsLTE4NjUzNzk3
+ODYsLTE3NDU2NTkxNDFdfQ==
 -->
