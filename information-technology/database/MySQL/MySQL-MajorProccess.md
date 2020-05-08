@@ -524,13 +524,13 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 
 이중 FOR문 안에 일치하는 레코드가 있으면 INNER JOIN과 같은 결과를 만들어 내지만, 없는 경우에는 그저 TABLE1에 있는 결과를 버리지 않고 그대로 결과에 포함한다.
 
-INNER 테이블이 조인 결과에 전혀 영향을 미치지 않고, OUTER 테이블 내용에 따라 조인의 결과가 결정되는 것이 OUTER JOIN의 특징이다. 물론 OUTER 테이블과 INNER 테이블의 관계가 1:M의 관계라면 최종 결과 레코
+INNER 테이블이 조인 결과에 전혀 영향을 미치지 않고, OUTER 테이블 내용에 따라 조인의 결과가 결정되는 것이 OUTER JOIN의 특징이다. 물론 OUTER 테이블과 INNER 테이블의 관계가 1:M의 관계라면 최종 결과 레코드 건수가 늘어날 수 있지만, OUTER 테이블의 레코드가 INNER 테이블에 일치하는 레코드가 없다고 해서 버려지지는 않는다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxODYwMjU5MiwtMTYwOTE5OTc0OCwtMT
+eyJoaXN0b3J5IjpbLTU0NDk3MDc0OSwtMTYwOTE5OTc0OCwtMT
 AwODQ5MTY1MCwtMTQ0Njk4MzMwOSwtMjA2NDQ1OTM0LDEyMTIw
 NjE0NjUsLTE1NDk0NzE1MjUsMjA2ODc1MTg3MSwtMTYzMDgwMT
 MwNCwyMDYyNDMyNjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4Niwt
