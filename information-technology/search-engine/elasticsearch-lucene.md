@@ -271,17 +271,21 @@ Refresh 주리를 수동으로 조절할 수 있는 API가 존재한다. 하지�
 >PUT movie/_settings 
 >{"index" : { "refresh_interval": "-1" } --비활성화 
 
-특별한 경우가 아니라면 Refresh주기를 임의로 변경하지 말고 엘라스틱서치에게 맡기자. 하지만 대량의 색인을 짧은 시간에 수해
+특별한 경우가 아니라면 Refresh주기를 임의로 변경하지 말고 엘라스틱서치에게 맡기자. 하지만 대량의 색인을 짧은 시간에 수행해야 한다면 잠깐만 주기를 길게 잡거나 비활성화해서 처리하는 편이 여러모로 유리하다.
+
+## Flush
+
+엘라스틱서치에서 **Flush는 루씬의 Commit 작업을 수행하고 새로운 Translog를 시작한다는 의미다.**  절대로 이 작업을 루씬의 Flush와 혼동해서는 안된다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI5NTU0NTIwLC03MDIyNjQwMiwtMTE0Nz
-E4NTY5OCwtMTQyNjgyMzQ5MCwxMjIxNDYyODQzLDE3MjMwNTQw
-OSwxNzg3ODcxMTc1LDE4NjYwNTM1ODYsNTEwODcyODQwLC03ND
-AxMzg4MzMsLTE5MjE3NDk4NzgsMzk5MjQ0MDgxLC0xMjAzMjY2
-NDQ2LDg0ODAzMjk5Miw0MjcxNzgxODEsLTE3MjU5MTIxNywtND
-EzOTgxOTI4LC0xNzk1NjIzMzQ3LC04Nzc5ODg1OTcsNzg2NTg0
-MjA0XX0=
+eyJoaXN0b3J5IjpbNzQ2NjA5NzAsLTcwMjI2NDAyLC0xMTQ3MT
+g1Njk4LC0xNDI2ODIzNDkwLDEyMjE0NjI4NDMsMTcyMzA1NDA5
+LDE3ODc4NzExNzUsMTg2NjA1MzU4Niw1MTA4NzI4NDAsLTc0MD
+EzODgzMywtMTkyMTc0OTg3OCwzOTkyNDQwODEsLTEyMDMyNjY0
+NDYsODQ4MDMyOTkyLDQyNzE3ODE4MSwtMTcyNTkxMjE3LC00MT
+M5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3ODY1ODQy
+MDRdfQ==
 -->
