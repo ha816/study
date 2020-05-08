@@ -528,14 +528,16 @@ INNER 테이블이 조인 결과에 전혀 영향을 미치지 않고, OUTER 테
 
 OUTER JOIN은 조인의 결과를 결정하는 OUTER 테이블이 조인의 왼쪽에 있는지 오른쪽에 있는지에 따라 LEFT OUTER JOIN과 RIGHT OUTER JOIN 그리고 FULL OUTER JOIN으로 나뉜다.
 
-보통 LEFT OUTER JOIN과 RIGHT OUTER JOIN은 결국 FROM 절에 나오는 테이블의 순서에 따라 같은 처리를 만들어낼 수 있다. 이 혼동을 막기 위해 일반적으로는 LEFT OUTER
+보통 LEFT OUTER JOIN과 RIGHT OUTER JOIN은 결국 FROM 절에 나오는 테이블의 순서에 따라 같은 처리를 만들어낼 수 있다. 이 혼동을 막기 위해 일반적으로는 LEFT OUTER JOIN으로 통일해서 사용하는 것일 일반적이다.
+
+JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶고,
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MTc3Njc3OCwxNzQzNDMwNjg5LC0xND
+eyJoaXN0b3J5IjpbLTczOTIwOTk5NiwxNzQzNDMwNjg5LC0xND
 I4NDU3MTQ0LC01NDQ5NzA3NDksLTE2MDkxOTk3NDgsLTEwMDg0
 OTE2NTAsLTE0NDY5ODMzMDksLTIwNjQ0NTkzNCwxMjEyMDYxND
 Y1LC0xNTQ5NDcxNTI1LDIwNjg3NTE4NzEsLTE2MzA4MDEzMDQs
