@@ -244,17 +244,19 @@ ReOpen() -> openIfChanged()
 
 엘라스틱서치 샤드는 사실상 루씬 인덱스의 확장이고 세그먼트 기반의 내부 동작을 그대로 검색에 활용한다. 엘라스틱서치는 다수의 샤드로 데이터가 분산 저장되어 있고 모든 샤드가 협력해 데이터 검색을 한다. 
 
+엘라스틱서치는 사실 내부에 루씬 인덱스가 가지는 기능을 확장해서 API로 제공한다. 
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMzA1NDA5LDE3ODc4NzExNzUsMTg2Nj
-A1MzU4Niw1MTA4NzI4NDAsLTc0MDEzODgzMywtMTkyMTc0OTg3
-OCwzOTkyNDQwODEsLTEyMDMyNjY0NDYsODQ4MDMyOTkyLDQyNz
-E3ODE4MSwtMTcyNTkxMjE3LC00MTM5ODE5MjgsLTE3OTU2MjMz
-NDcsLTg3Nzk4ODU5Nyw3ODY1ODQyMDQsODgxNzM5MTgwLC02OT
-gxOTA4NzcsLTE2NDIxOTY1OTMsLTEzNDU5OTk0ODUsLTgyMzMx
-ODAxXX0=
+eyJoaXN0b3J5IjpbMTIyMTQ2Mjg0MywxNzIzMDU0MDksMTc4Nz
+g3MTE3NSwxODY2MDUzNTg2LDUxMDg3Mjg0MCwtNzQwMTM4ODMz
+LC0xOTIxNzQ5ODc4LDM5OTI0NDA4MSwtMTIwMzI2NjQ0Niw4ND
+gwMzI5OTIsNDI3MTc4MTgxLC0xNzI1OTEyMTcsLTQxMzk4MTky
+OCwtMTc5NTYyMzM0NywtODc3OTg4NTk3LDc4NjU4NDIwNCw4OD
+E3MzkxODAsLTY5ODE5MDg3NywtMTY0MjE5NjU5MywtMTM0NTk5
+OTQ4NV19
 -->
