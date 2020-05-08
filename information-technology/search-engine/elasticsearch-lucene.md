@@ -228,7 +228,10 @@ ReOpen() -> openIfChanged()
 
 >루씬 Flush
 >세그먼트가 생성된 후 검색이 가능해지도록 수행하는 작업
+>write() 함수로 동기화가 수행됬기 때문에 커널 시스템 캐시에만 데이터가 생성된다. 이를 통해 유저 모드에서 파일을 열어서 사용하는 것이 가능해 진다.
+>물리적으로 디스크에 쓰여진 상태는 아니다. 
 
+>루
 
 
 
@@ -237,11 +240,11 @@ ReOpen() -> openIfChanged()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjA1MzU4Niw1MTA4NzI4NDAsLTc0MD
-EzODgzMywtMTkyMTc0OTg3OCwzOTkyNDQwODEsLTEyMDMyNjY0
-NDYsODQ4MDMyOTkyLDQyNzE3ODE4MSwtMTcyNTkxMjE3LC00MT
-M5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3ODY1ODQy
-MDQsODgxNzM5MTgwLC02OTgxOTA4NzcsLTE2NDIxOTY1OTMsLT
-EzNDU5OTk0ODUsLTgyMzMxODAxLDUxNTQyNzY3Miw5NTkwNDE2
-ODNdfQ==
+eyJoaXN0b3J5IjpbMjY1MDQzODk2LDE4NjYwNTM1ODYsNTEwOD
+cyODQwLC03NDAxMzg4MzMsLTE5MjE3NDk4NzgsMzk5MjQ0MDgx
+LC0xMjAzMjY2NDQ2LDg0ODAzMjk5Miw0MjcxNzgxODEsLTE3Mj
+U5MTIxNywtNDEzOTgxOTI4LC0xNzk1NjIzMzQ3LC04Nzc5ODg1
+OTcsNzg2NTg0MjA0LDg4MTczOTE4MCwtNjk4MTkwODc3LC0xNj
+QyMTk2NTkzLC0xMzQ1OTk5NDg1LC04MjMzMTgwMSw1MTU0Mjc2
+NzJdfQ==
 -->
