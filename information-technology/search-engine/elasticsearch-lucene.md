@@ -279,17 +279,17 @@ Refresh 주리를 수동으로 조절할 수 있는 API가 존재한다. 하지�
 
 Translog는 루씬에서는 존재하지 않는 엘라스틱서치에서만 존재하는 개념이다. **Translog는 샤드 장애 복구를 위해 제공되는 특수한 파일이다.** 엘라스틱서치 샤드는 자신에게 일어나는 모든 변경사항을 Translog에 먼저 기록한 후 내부에 존재하는 루씬을 호출한다. 시간이 흐를수록 Translog의 파일 크기는 늘어난다.
 
-정책에 의해 루씬Commit이 정상적으로 수행되면 변경사항이 디스크에 물리적으로 기록되고 Translog 파일에서 Commit이 정상적으로 일어난 시점까지의 내역이 삭제된다. 
+정책에 의해 루씬Commit이 정상적으로 수행되면 변경사항이 디스크에 물리적으로 기록되고 Translog 파일에서 Commit이 정상적으로 일어난 시점까지의 내역이 삭제된다. 정리하자면 엘라스틱서치에서 Flush는 루씬의 Commit을 수행하고 장애 복구를 위한 Translog를 정리하는 일련의 과정을 통칭한다. 기본적으로 5초에 하번 Flush 작업이 수행되며, Refresh와 마찬가지로 API로 Flush 주기를 조
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTI1ODU3MTksLTcwMjI2NDAyLC0xMT
-Q3MTg1Njk4LC0xNDI2ODIzNDkwLDEyMjE0NjI4NDMsMTcyMzA1
-NDA5LDE3ODc4NzExNzUsMTg2NjA1MzU4Niw1MTA4NzI4NDAsLT
-c0MDEzODgzMywtMTkyMTc0OTg3OCwzOTkyNDQwODEsLTEyMDMy
-NjY0NDYsODQ4MDMyOTkyLDQyNzE3ODE4MSwtMTcyNTkxMjE3LC
-00MTM5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3ODY1
-ODQyMDRdfQ==
+eyJoaXN0b3J5IjpbLTQ0ODQ4MzQ0NSwtNzAyMjY0MDIsLTExND
+cxODU2OTgsLTE0MjY4MjM0OTAsMTIyMTQ2Mjg0MywxNzIzMDU0
+MDksMTc4Nzg3MTE3NSwxODY2MDUzNTg2LDUxMDg3Mjg0MCwtNz
+QwMTM4ODMzLC0xOTIxNzQ5ODc4LDM5OTI0NDA4MSwtMTIwMzI2
+NjQ0Niw4NDgwMzI5OTIsNDI3MTc4MTgxLC0xNzI1OTEyMTcsLT
+QxMzk4MTkyOCwtMTc5NTYyMzM0NywtODc3OTg4NTk3LDc4NjU4
+NDIwNF19
 -->
