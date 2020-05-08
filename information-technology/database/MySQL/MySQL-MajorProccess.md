@@ -532,18 +532,20 @@ OUTER JOIN은 조인의 결과를 결정하는 OUTER 테이블이 조인의 왼�
 
 JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶고, 오른쪽 테이블도 OUTER JOIN을 하고 싶은 경우 사용하는 쿼리가 FULL OUTER JOIN이다. MySQL에서는 FULL OUTER JOIN을 지원하지 않는다. 
 
-LEFT OUTER JOIN에서 쉽게 실수할 수 있는 부분이 여러가지 있다. 
+LEFT OUTER JOIN에서 쉽게 실수할 수 있는 부분이 여러가지 있다. 이제 LEFT OUTER JOIN을 사용할때 주의할 점을 알아보자. 
+
+실행 계획에서는 어떤 조인을 했는지 알려주지 않으므로 OUTER JOIN을 의도한 쿼리가 INNER JOIN으로 실행되지 않았는지 주의해야 한다. 이 부분도 실수하기 쉬운 부분인데, OUTER JOIN에 레코드가 없을 수도 있는 쪽에 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNjQzNzM5MywtMTI4NDE1NDY4NCwtNz
-M5MjA5OTk2LDE3NDM0MzA2ODksLTE0Mjg0NTcxNDQsLTU0NDk3
-MDc0OSwtMTYwOTE5OTc0OCwtMTAwODQ5MTY1MCwtMTQ0Njk4Mz
-MwOSwtMjA2NDQ1OTM0LDEyMTIwNjE0NjUsLTE1NDk0NzE1MjUs
-MjA2ODc1MTg3MSwtMTYzMDgwMTMwNCwyMDYyNDMyNjIzLDI0NT
-g2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1OTE0MSwtNzExNDM0
-MTY0LC0xMDMyMDU4MzU4XX0=
+eyJoaXN0b3J5IjpbLTcxNTMyMjg2MiwyMDA2NDM3MzkzLC0xMj
+g0MTU0Njg0LC03MzkyMDk5OTYsMTc0MzQzMDY4OSwtMTQyODQ1
+NzE0NCwtNTQ0OTcwNzQ5LC0xNjA5MTk5NzQ4LC0xMDA4NDkxNj
+UwLC0xNDQ2OTgzMzA5LC0yMDY0NDU5MzQsMTIxMjA2MTQ2NSwt
+MTU0OTQ3MTUyNSwyMDY4NzUxODcxLC0xNjMwODAxMzA0LDIwNj
+I0MzI2MjMsMjQ1ODY0NjU2LC0xODY1Mzc5Nzg2LC0xNzQ1NjU5
+MTQxLC03MTE0MzQxNjRdfQ==
 -->
