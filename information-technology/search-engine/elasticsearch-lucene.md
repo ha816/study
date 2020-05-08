@@ -224,7 +224,11 @@ ReOpen() -> openIfChanged()
 
 병합 작업을 하면, 세그먼트의 수가 줄어들기 때문에 검색 횟수가 줄어들어 검색 성능이 좋아진다. 마찬가지로 수가 줄기 때문에 세그먼트가 차지하는 디스크 용량이 줄어든다. 삭제되는 문서의 경우 병합 작업 전에는 디스크에 물리적으로 남아 있다. 하지만 병합 작업으로 새로운 새그먼트를 생성하면 디스크에서 삭제가 되고 공간 절약이 가능해진다.
 
-병합 정렬은 Commit작업을 반드시 동반해야 하는데, 
+병합 정렬은 Commit작업을 반드시 동반해야 하는데, Commit작업은 매우 비용이 많이 든다. 따라서 정책적으로 적절한 주기를 설정하는 것이 매우 중요하다.
+
+전체적인 성능 향상을 위해 루씬은 자동 주기로 세그먼트의 병합 작업을 수행한다. 작업 주기는 최적의 성능을 낼수있도록 설정되며 백그라운드로 수행된다. 
+
+
 
 
 
@@ -233,11 +237,11 @@ ReOpen() -> openIfChanged()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDEzODgzMywtMTkyMTc0OTg3OCwzOT
-kyNDQwODEsLTEyMDMyNjY0NDYsODQ4MDMyOTkyLDQyNzE3ODE4
-MSwtMTcyNTkxMjE3LC00MTM5ODE5MjgsLTE3OTU2MjMzNDcsLT
-g3Nzk4ODU5Nyw3ODY1ODQyMDQsODgxNzM5MTgwLC02OTgxOTA4
-NzcsLTE2NDIxOTY1OTMsLTEzNDU5OTk0ODUsLTgyMzMxODAxLD
-UxNTQyNzY3Miw5NTkwNDE2ODMsLTc0MTIyMDU4OCwtMTMzODMw
-NDczOV19
+eyJoaXN0b3J5IjpbNjY4ODA2Njk2LC03NDAxMzg4MzMsLTE5Mj
+E3NDk4NzgsMzk5MjQ0MDgxLC0xMjAzMjY2NDQ2LDg0ODAzMjk5
+Miw0MjcxNzgxODEsLTE3MjU5MTIxNywtNDEzOTgxOTI4LC0xNz
+k1NjIzMzQ3LC04Nzc5ODg1OTcsNzg2NTg0MjA0LDg4MTczOTE4
+MCwtNjk4MTkwODc3LC0xNjQyMTk2NTkzLC0xMzQ1OTk5NDg1LC
+04MjMzMTgwMSw1MTU0Mjc2NzIsOTU5MDQxNjgzLC03NDEyMjA1
+ODhdfQ==
 -->
