@@ -240,6 +240,9 @@ ReOpen() -> openIfChanged()
 >Merge 과정을 통해 삭제 처리된 데이터가 실제 물리적 디스크에서도 삭제 된다.
 >검색할 세그먼트의 개수가 줄어들기 때문에 검색 성능이 좋아진다.
 
+# 엘라스틱서치를 위한 Refresh, Flush, Optimize API
+
+엘라스틱서치 샤
 
 
 
@@ -247,11 +250,11 @@ ReOpen() -> openIfChanged()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4Nzg3MTE3NSwxODY2MDUzNTg2LDUxMD
-g3Mjg0MCwtNzQwMTM4ODMzLC0xOTIxNzQ5ODc4LDM5OTI0NDA4
-MSwtMTIwMzI2NjQ0Niw4NDgwMzI5OTIsNDI3MTc4MTgxLC0xNz
-I1OTEyMTcsLTQxMzk4MTkyOCwtMTc5NTYyMzM0NywtODc3OTg4
-NTk3LDc4NjU4NDIwNCw4ODE3MzkxODAsLTY5ODE5MDg3NywtMT
-Y0MjE5NjU5MywtMTM0NTk5OTQ4NSwtODIzMzE4MDEsNTE1NDI3
-NjcyXX0=
+eyJoaXN0b3J5IjpbMTA5NzYzMjI3NiwxNzg3ODcxMTc1LDE4Nj
+YwNTM1ODYsNTEwODcyODQwLC03NDAxMzg4MzMsLTE5MjE3NDk4
+NzgsMzk5MjQ0MDgxLC0xMjAzMjY2NDQ2LDg0ODAzMjk5Miw0Mj
+cxNzgxODEsLTE3MjU5MTIxNywtNDEzOTgxOTI4LC0xNzk1NjIz
+MzQ3LC04Nzc5ODg1OTcsNzg2NTg0MjA0LDg4MTczOTE4MCwtNj
+k4MTkwODc3LC0xNjQyMTk2NTkzLC0xMzQ1OTk5NDg1LC04MjMz
+MTgwMV19
 -->
