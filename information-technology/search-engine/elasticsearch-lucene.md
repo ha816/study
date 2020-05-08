@@ -285,13 +285,13 @@ Translog는 루씬에서는 존재하지 않는 엘라스틱서치에서만 존�
 
 ## Optimize API
 
-엘라스틱서치에서는 인덱스 최적화를 위해 Optimize API를 제공한다. 이를 forced merge API라고도 하는데, 말그대로 루씬의 Merg
+엘라스틱서치에서는 인덱스 최적화를 위해 Optimize API를 제공한다. 이를 forced merge API라고도 하는데, 말그대로 루씬의 병합 작업을 강제로 수행하는 기능이다. 이로 파편화된 다스의 세그먼트를 하나의 세그먼트로 통합하여 좀 더 빠른 성능을 제공할 목적으로 사용된다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzI3MzYxNywtNzAyMjY0MDIsLTExND
+eyJoaXN0b3J5IjpbLTY1Mzc3MTA5OSwtNzAyMjY0MDIsLTExND
 cxODU2OTgsLTE0MjY4MjM0OTAsMTIyMTQ2Mjg0MywxNzIzMDU0
 MDksMTc4Nzg3MTE3NSwxODY2MDUzNTg2LDUxMDg3Mjg0MCwtNz
 QwMTM4ODMzLC0xOTIxNzQ5ODc4LDM5OTI0NDA4MSwtMTIwMzI2
