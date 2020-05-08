@@ -491,8 +491,10 @@ MySQL은 다른 DBMS보다 조인을 처리하는 방식이 단순하다. 조인
 일반적으로 조인이라 함은 INNER JOIN을 뜻한다. MySQL에서 조인은 네스티드-루프 방식만 지원한다. **네스티드-루프 방식이란 일반적으로 프로그램을 작성할 때 두개의 FOR나 WHILE과 같은 반복 루프 문장을 실행하는 형태로 조인이 처리되는 것을 의미한다.**
 
 ```
-For ( record1 IN TABLE1) {
+For ( record1 IN TABLE1) { //외부 루프 (OUTER)
+	For ( record2 IN TABLE2 ) { //soq
 
+	}
 }
 
 ```
@@ -501,11 +503,11 @@ For ( record1 IN TABLE1) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDE0NDY3NDcsMTIxMjA2MTQ2NSwtMT
-U0OTQ3MTUyNSwyMDY4NzUxODcxLC0xNjMwODAxMzA0LDIwNjI0
-MzI2MjMsMjQ1ODY0NjU2LC0xODY1Mzc5Nzg2LC0xNzQ1NjU5MT
-QxLC03MTE0MzQxNjQsLTEwMzIwNTgzNTgsMTk0ODQ5MzYyMywt
-OTk2MjU1NzA1LDEwNDg4NjAwMTQsODE2ODE5MzEyLC0xNTY1Nz
-AxMTM2LC05MjM3NDQxMzksLTU4NjU1NTIwNiwxMjQ5MjIxODQz
-LC01OTQyNDk3MzFdfQ==
+eyJoaXN0b3J5IjpbOTEyOTQzNzU2LDEyMTIwNjE0NjUsLTE1ND
+k0NzE1MjUsMjA2ODc1MTg3MSwtMTYzMDgwMTMwNCwyMDYyNDMy
+NjIzLDI0NTg2NDY1NiwtMTg2NTM3OTc4NiwtMTc0NTY1OTE0MS
+wtNzExNDM0MTY0LC0xMDMyMDU4MzU4LDE5NDg0OTM2MjMsLTk5
+NjI1NTcwNSwxMDQ4ODYwMDE0LDgxNjgxOTMxMiwtMTU2NTcwMT
+EzNiwtOTIzNzQ0MTM5LC01ODY1NTUyMDYsMTI0OTIyMTg0Mywt
+NTk0MjQ5NzMxXX0=
 -->
