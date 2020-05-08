@@ -227,7 +227,7 @@ ReOpen() -> openIfChanged()
 병합 정렬은 Commit작업을 반드시 동반해야 하는데, Commit작업은 매우 비용이 많이 든다. 따라서 정책적으로 적절한 주기를 설정하는 것이 매우 중요하다. 전체적인 성능 향상을 위해 루씬은 자동 주기로 세그먼트의 병합 작업을 수행한다. 작업 주기는 최적의 성능을 낼수있도록 설정되며 백그라운드로 수행된다. 
 
 >루씬 Flush
->
+>세그먼트가 생성된 후 검색이 가능해지도록 수행하는 작업
 
 
 
@@ -237,11 +237,11 @@ ReOpen() -> openIfChanged()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEwODcyODQwLC03NDAxMzg4MzMsLTE5Mj
-E3NDk4NzgsMzk5MjQ0MDgxLC0xMjAzMjY2NDQ2LDg0ODAzMjk5
-Miw0MjcxNzgxODEsLTE3MjU5MTIxNywtNDEzOTgxOTI4LC0xNz
-k1NjIzMzQ3LC04Nzc5ODg1OTcsNzg2NTg0MjA0LDg4MTczOTE4
-MCwtNjk4MTkwODc3LC0xNjQyMTk2NTkzLC0xMzQ1OTk5NDg1LC
-04MjMzMTgwMSw1MTU0Mjc2NzIsOTU5MDQxNjgzLC03NDEyMjA1
-ODhdfQ==
+eyJoaXN0b3J5IjpbMTg2NjA1MzU4Niw1MTA4NzI4NDAsLTc0MD
+EzODgzMywtMTkyMTc0OTg3OCwzOTkyNDQwODEsLTEyMDMyNjY0
+NDYsODQ4MDMyOTkyLDQyNzE3ODE4MSwtMTcyNTkxMjE3LC00MT
+M5ODE5MjgsLTE3OTU2MjMzNDcsLTg3Nzk4ODU5Nyw3ODY1ODQy
+MDQsODgxNzM5MTgwLC02OTgxOTA4NzcsLTE2NDIxOTY1OTMsLT
+EzNDU5OTk0ODUsLTgyMzMxODAxLDUxNTQyNzY3Miw5NTkwNDE2
+ODNdfQ==
 -->
