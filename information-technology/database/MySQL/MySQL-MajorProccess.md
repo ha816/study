@@ -516,6 +516,7 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 		IF( record1.join_col == record2.join_col){
 			join_record_found(record1.*, record2.*)
 		} else {
+			join_record_found();
 			join_record_notfound();
 		}
 	}
@@ -525,11 +526,11 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5NDc3Mzc5LC0xNDQ2OTgzMzA5LC0yMD
-Y0NDU5MzQsMTIxMjA2MTQ2NSwtMTU0OTQ3MTUyNSwyMDY4NzUx
-ODcxLC0xNjMwODAxMzA0LDIwNjI0MzI2MjMsMjQ1ODY0NjU2LC
-0xODY1Mzc5Nzg2LC0xNzQ1NjU5MTQxLC03MTE0MzQxNjQsLTEw
-MzIwNTgzNTgsMTk0ODQ5MzYyMywtOTk2MjU1NzA1LDEwNDg4Nj
-AwMTQsODE2ODE5MzEyLC0xNTY1NzAxMTM2LC05MjM3NDQxMzks
-LTU4NjU1NTIwNl19
+eyJoaXN0b3J5IjpbLTIwMzM1ODQ1MCwtMTQ0Njk4MzMwOSwtMj
+A2NDQ1OTM0LDEyMTIwNjE0NjUsLTE1NDk0NzE1MjUsMjA2ODc1
+MTg3MSwtMTYzMDgwMTMwNCwyMDYyNDMyNjIzLDI0NTg2NDY1Ni
+wtMTg2NTM3OTc4NiwtMTc0NTY1OTE0MSwtNzExNDM0MTY0LC0x
+MDMyMDU4MzU4LDE5NDg0OTM2MjMsLTk5NjI1NTcwNSwxMDQ4OD
+YwMDE0LDgxNjgxOTMxMiwtMTU2NTcwMTEzNiwtOTIzNzQ0MTM5
+LC01ODY1NTUyMDZdfQ==
 -->
