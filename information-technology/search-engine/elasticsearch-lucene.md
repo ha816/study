@@ -231,7 +231,14 @@ ReOpen() -> openIfChanged()
 >write() 함수로 동기화가 수행됬기 때문에 커널 시스템 캐시에만 데이터가 생성된다. 이를 통해 유저 모드에서 파일을 열어서 사용하는 것이 가능해 진다.
 >물리적으로 디스크에 쓰여진 상태는 아니다. 
 
->루
+>루씬 Commit
+>커널 시스템 캐시의 내용을 물리적인 디스크에 쓰는 작업
+>실제 물리적인 디스크에 기록되기 때문에 많은 리소스가 필요하다.
+
+>루씬 Merge 
+>다수의 세그먼트를 하나로 통합하는 작업
+>Merge 과정을 통해 삭제 처리된 데이터가 실제 물리적 디스크에서도 삭제 된다.
+>검색할 세그먼트의 개수가 줄어들기 때문에 검색 성능이 좋아진다.
 
 
 
@@ -240,11 +247,11 @@ ReOpen() -> openIfChanged()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY1MDQzODk2LDE4NjYwNTM1ODYsNTEwOD
-cyODQwLC03NDAxMzg4MzMsLTE5MjE3NDk4NzgsMzk5MjQ0MDgx
-LC0xMjAzMjY2NDQ2LDg0ODAzMjk5Miw0MjcxNzgxODEsLTE3Mj
-U5MTIxNywtNDEzOTgxOTI4LC0xNzk1NjIzMzQ3LC04Nzc5ODg1
-OTcsNzg2NTg0MjA0LDg4MTczOTE4MCwtNjk4MTkwODc3LC0xNj
-QyMTk2NTkzLC0xMzQ1OTk5NDg1LC04MjMzMTgwMSw1MTU0Mjc2
-NzJdfQ==
+eyJoaXN0b3J5IjpbMTc4Nzg3MTE3NSwxODY2MDUzNTg2LDUxMD
+g3Mjg0MCwtNzQwMTM4ODMzLC0xOTIxNzQ5ODc4LDM5OTI0NDA4
+MSwtMTIwMzI2NjQ0Niw4NDgwMzI5OTIsNDI3MTc4MTgxLC0xNz
+I1OTEyMTcsLTQxMzk4MTkyOCwtMTc5NTYyMzM0NywtODc3OTg4
+NTk3LDc4NjU4NDIwNCw4ODE3MzkxODAsLTY5ODE5MDg3NywtMT
+Y0MjE5NjU5MywtMTM0NTk5OTQ4NSwtODIzMzE4MDEsNTE1NDI3
+NjcyXX0=
 -->
