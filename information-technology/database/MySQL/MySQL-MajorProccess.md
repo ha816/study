@@ -516,8 +516,7 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 		IF( record1.join_col == record2.join_col){
 			join_record_found(record1.*, record2.*)
 		} else {
-			join_record_found();
-			join_record_notfound();
+			join_record_found(record1.*, NULL); -- 같지 않으면 record1
 		}
 	}
 }
@@ -526,7 +525,7 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzM1ODQ1MCwtMTQ0Njk4MzMwOSwtMj
+eyJoaXN0b3J5IjpbLTgxOTM1ODgxNCwtMTQ0Njk4MzMwOSwtMj
 A2NDQ1OTM0LDEyMTIwNjE0NjUsLTE1NDk0NzE1MjUsMjA2ODc1
 MTg3MSwtMTYzMDgwMTMwNCwyMDYyNDMyNjIzLDI0NTg2NDY1Ni
 wtMTg2NTM3OTc4NiwtMTc0NTY1OTE0MSwtNzExNDM0MTY0LC0x
