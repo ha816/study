@@ -212,16 +212,16 @@ write()
 fsync()
 : 저수준의 파일 입출력 함수다. 내부 시스템 캐시의 데이터와 물리적인 디스크 데이터를 동기화하기 위한 목적으로 사용된다. 실제 물리적인 디스크로 쓰는 작업을 수행하기 때문에 상대적으로 많은 리소스가 사용된다.
 
-
+데이터의 변경 사항을 일단 버퍼에 모아두고 일정 주기에 한번씩 새그먼트를 생성하고 상대적으로 적응 비용으로 디스크에 동기화까지 수행하는 것이다. 일단 Flush 처리에 의해 세그먼트가 생성되면 커널 시스템 캐시에 세그먼트가 캐시되어 읽기가 가능해진다. 커널 시스템 캐
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3MTc4MTgxLC0xNzI1OTEyMTcsLTQxMz
-k4MTkyOCwtMTc5NTYyMzM0NywtODc3OTg4NTk3LDc4NjU4NDIw
-NCw4ODE3MzkxODAsLTY5ODE5MDg3NywtMTY0MjE5NjU5MywtMT
-M0NTk5OTQ4NSwtODIzMzE4MDEsNTE1NDI3NjcyLDk1OTA0MTY4
-MywtNzQxMjIwNTg4LC0xMzM4MzA0NzM5LC0xMTk5ODIxNjA5LC
-0zMTA4NDI2NjgsMTY5NDk1NDA5LDE2MzY3Mjg0ODQsMTAyODYz
-OTQ5MF19
+eyJoaXN0b3J5IjpbLTgyODE0MDUwMSw0MjcxNzgxODEsLTE3Mj
+U5MTIxNywtNDEzOTgxOTI4LC0xNzk1NjIzMzQ3LC04Nzc5ODg1
+OTcsNzg2NTg0MjA0LDg4MTczOTE4MCwtNjk4MTkwODc3LC0xNj
+QyMTk2NTkzLC0xMzQ1OTk5NDg1LC04MjMzMTgwMSw1MTU0Mjc2
+NzIsOTU5MDQxNjgzLC03NDEyMjA1ODgsLTEzMzgzMDQ3MzksLT
+ExOTk4MjE2MDksLTMxMDg0MjY2OCwxNjk0OTU0MDksMTYzNjcy
+ODQ4NF19
 -->
