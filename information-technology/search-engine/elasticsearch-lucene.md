@@ -262,12 +262,12 @@ ReOpen() -> openIfChanged()
 
 루씬의 Flush를 Refresh라고 부르는 이유는 용어에 좀더 행위의 의미를 담은 측면이 크다. 인덱스를 새로고침한다는 의미인데, 새로 추가한 문서의 검색이 가능해지게 한다는 것이다. 
 
-Refresh 주리를 수동으로 조절할 수 있는 API가 존재한다. 하지만 기본 설정된 주기를 변경하는 것은 별로 권장하지 않는다. Flush 작업이 Commit 작업보다는 가볍다고는 하나 여전히 비용이 발생하는 
+Refresh 주리를 수동으로 조절할 수 있는 API가 존재한다. 하지만 기본 설정된 주기를 변경하는 것은 별로 권장하지 않는다. Flush 작업이 Commit 작업보다는 가볍다고는 하나 여전히 비용이 발생하는 연산이고 전체 성능에 큰 영향을 주는 작업이기 때문이다.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1OTYzNjA0LC03MDIyNjQwMiwtMTE0Nz
+eyJoaXN0b3J5IjpbMzUxNjI2NzEwLC03MDIyNjQwMiwtMTE0Nz
 E4NTY5OCwtMTQyNjgyMzQ5MCwxMjIxNDYyODQzLDE3MjMwNTQw
 OSwxNzg3ODcxMTc1LDE4NjYwNTM1ODYsNTEwODcyODQwLC03ND
 AxMzg4MzMsLTE5MjE3NDk4NzgsMzk5MjQ0MDgxLC0xMjAzMjY2
