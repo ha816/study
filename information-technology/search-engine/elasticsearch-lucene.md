@@ -215,16 +215,16 @@ fsync()
 데이터의 변경 사항을 일단 버퍼에 모아두고 일정 주기에 한번씩 새그먼트를 생성하고 상대적으로 적응 비용으로 디스크에 동기화까지 수행하는 것이다. 일단 Flush 처리에 의해 세그먼트가 생성되면 커널 시스템 캐시에 세그먼트가 캐시되어 읽기가 가능해진다. 커널 시스템 캐시에 캐시가 생성되면 루씬의 ReOpen()함수로 IndexSearcher에서도 읽을 수 있는 상태가 된다.
 
 ReOpen()
-: 
+: 루
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDMyNjY0NDYsODQ4MDMyOTkyLDQyNz
-E3ODE4MSwtMTcyNTkxMjE3LC00MTM5ODE5MjgsLTE3OTU2MjMz
-NDcsLTg3Nzk4ODU5Nyw3ODY1ODQyMDQsODgxNzM5MTgwLC02OT
-gxOTA4NzcsLTE2NDIxOTY1OTMsLTEzNDU5OTk0ODUsLTgyMzMx
-ODAxLDUxNTQyNzY3Miw5NTkwNDE2ODMsLTc0MTIyMDU4OCwtMT
-MzODMwNDczOSwtMTE5OTgyMTYwOSwtMzEwODQyNjY4LDE2OTQ5
-NTQwOV19
+eyJoaXN0b3J5IjpbLTIxOTU3ODEzNCwtMTIwMzI2NjQ0Niw4ND
+gwMzI5OTIsNDI3MTc4MTgxLC0xNzI1OTEyMTcsLTQxMzk4MTky
+OCwtMTc5NTYyMzM0NywtODc3OTg4NTk3LDc4NjU4NDIwNCw4OD
+E3MzkxODAsLTY5ODE5MDg3NywtMTY0MjE5NjU5MywtMTM0NTk5
+OTQ4NSwtODIzMzE4MDEsNTE1NDI3NjcyLDk1OTA0MTY4MywtNz
+QxMjIwNTg4LC0xMzM4MzA0NzM5LC0xMTk5ODIxNjA5LC0zMTA4
+NDI2NjhdfQ==
 -->
