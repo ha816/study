@@ -6,10 +6,10 @@
 
 샤드에 어떤 변경 사항이 생길경우 Translog 파일에 먼저 해당 내역을 기록한 후 내부에 존재하는 루씬 인덱스로 데이터를 전달한다. 루씬으로 전달된 데이터는 인메모리 버포로 저장되고 주기적으로 처리되어 결과적으로 세그먼트가 된다. 
 
-엘라스틱서치에서
+엘라스틱서치에서 기본적으로 1초에 한번씩 Refresh 작업이 수행되는데, 이를 통해 추가된 세그먼트의 내용을 읽을 수 있게 되고 검색에 사용된다. 하지만 Refresh 작업이 일어나더라도 Translog 파일에 기록된 내용은 삭제되지 않고 계속 유지된다. 이처럼 Trans
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NjM3NDgzMCwxNTExNTA4ODc0XX0=
+eyJoaXN0b3J5IjpbNDEwNTE3NjYxLDE1MTE1MDg4NzRdfQ==
 -->
