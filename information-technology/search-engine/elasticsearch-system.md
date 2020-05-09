@@ -16,6 +16,10 @@
 
 엘라스틱서치와 루씬 모두 오픈소스이고 엘라스틱서치의 개발자가 동시에 루씬의 개발자이기도 하다. 그래서 루씬의 기능이 새로 추가 될때마다 엘라스틱서치도 그에 따라 새로운 기능으로 릴리스가 된다. 
 
+## 실행시 자바 8 이상을 사용해야할 이유
+
+최근 급견한 하드웨어 기술의 발달로 CPU나 메모리 자원이 매우 저렴해졌다. 
+
 # 힙 크기를 32GB 이하로 유지하는 이유
 
 # 엘라스틱서치와 가상 메모리
@@ -29,6 +33,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNjI0MzM3OSw0NDA1MzEwOTQsLTE5Nj
-M5MzE1MzNdfQ==
+eyJoaXN0b3J5IjpbLTE2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOT
+YzOTMxNTMzXX0=
 -->
