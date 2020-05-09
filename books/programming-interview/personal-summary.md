@@ -13,7 +13,7 @@
 3년동안 백엔드 웹 서비스에 대한 충분히 경험했고 저의 경력 측면 또는 개인의 발전을 위해 이직 면접을 보고 있습니다.
 
 >프로그래밍을 시작한 경위와 본격적으로 투신하고 생업으로 삼기로 결정한 이야기를 해주세요.(우아한형제들 면접)
->
+>앞으로 전망이 좋을 것 같은 분야, 직종을 고려해야 했고, 내 성적으로 가능한 곳
 
 
 > 혹시 질문 있습니까?
@@ -29,7 +29,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MzMzMjA3NCwzMjY3MjgyMjgsMzM2MD
+eyJoaXN0b3J5IjpbLTYxMTE1MzU1NiwzMjY3MjgyMjgsMzM2MD
 g2Mzg0LDE5MTgxMTYyNDIsMTM4ODA0MzcxOCwtMjEzNDg2NDA3
 NCwtMTE0MDA3Njg2MywyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMj
 AyMTc3MDMzNywtMTk5NDY4NTQ1MywtNTg0MTMyOCwtOTcwNjYw
