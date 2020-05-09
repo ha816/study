@@ -41,7 +41,10 @@
 
 >**지난 개발 프로젝트들의 아쉬운 점이 있었다면 무엇이고 개선 방안은 뭘까요?**
 >
->상품도착
+>학교 프로젝트로 웹서비스 ... 
+>상품도착예정일 로직 전환
+>데이터 동기화를 해놓았는데 안되었다. 
+>티몬 아닌 곳 
 
 >**좋아하는 시나 소설, 노래 중심으로 자신을 자유롭게 소개해 주세요. (지원동기/이직사유, 장/단점 등)**
 >
@@ -49,10 +52,10 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTU5MDA0MSwxMzY1MzM3ODQzLC0xMj
-UyMDE3OTgzLC01MTgwMTEwODEsLTE1NzA0MTIwNTUsMzI2NzI4
-MjI4LDMzNjA4NjM4NCwxOTE4MTE2MjQyLDEzODgwNDM3MTgsLT
-IxMzQ4NjQwNzQsLTExNDAwNzY4NjMsMjE0MDc0MzcwNSwyMDMx
-Mzk3NDYsLTIwMjE3NzAzMzcsLTE5OTQ2ODU0NTMsLTU4NDEzMj
-gsLTk3MDY2MDc1XX0=
+eyJoaXN0b3J5IjpbMzQxNzUzODU5LDEzNjUzMzc4NDMsLTEyNT
+IwMTc5ODMsLTUxODAxMTA4MSwtMTU3MDQxMjA1NSwzMjY3Mjgy
+MjgsMzM2MDg2Mzg0LDE5MTgxMTYyNDIsMTM4ODA0MzcxOCwtMj
+EzNDg2NDA3NCwtMTE0MDA3Njg2MywyMTQwNzQzNzA1LDIwMzEz
+OTc0NiwtMjAyMTc3MDMzNywtMTk5NDY4NTQ1MywtNTg0MTMyOC
+wtOTcwNjYwNzVdfQ==
 -->
