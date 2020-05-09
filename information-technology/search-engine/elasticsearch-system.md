@@ -59,7 +59,9 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
-엘라스틱서치는 메모리를 많이 잡아 먹는 애플리케이션이다. 우리는 시스템에서 제공되는 물리 메모리를 
+엘라스틱서치는 메모리를 많이 잡아 먹는 애플리케이션이다. 우리는 시스템에서 제공되는 물리 메모리를 JVM 힙에 할당해서 엘라스틱서치가 사용하도록 설정할 수 있다. 일반적으로 힙 메모리가 클수록 그에 비례해서 성능도 올라간다
+
+그렇다면 적당한 힙 크기는 얼마일까? 너무 작으면 OOM 오류가 발생하고 너무 크면 Full GC가 발생했을때 시스템 전체가 멈추는 STW가 발생할 수도 있다. 이번 이야기는 시스템에 탑재된 물리 메모리 크기에 따라 엘라스틱서치에서 힙 크기를 얼만
 
 # 엘라스틱서치와 가상 메모리
 
@@ -72,6 +74,6 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzEzODAzMTksLTEzOTM3OTQ1OTQsLT
-E2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
+eyJoaXN0b3J5IjpbLTE5MzY2MDA4MywtMTM5Mzc5NDU5NCwtMT
+Y2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5MzE1MzNdfQ==
 -->
