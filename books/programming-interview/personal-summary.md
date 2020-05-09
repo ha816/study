@@ -43,9 +43,13 @@
 >
 >
 
+>**좋아하는 시나 소설, 노래 중심으로 자신을 자유롭게 소개해 주세요. (지원동기/이직사유, 장/단점 등)**
+>
+>
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTQ1NjY5NzEsLTUxODAxMTA4MSwtMT
+eyJoaXN0b3J5IjpbLTEyNTIwMTc5ODMsLTUxODAxMTA4MSwtMT
 U3MDQxMjA1NSwzMjY3MjgyMjgsMzM2MDg2Mzg0LDE5MTgxMTYy
 NDIsMTM4ODA0MzcxOCwtMjEzNDg2NDA3NCwtMTE0MDA3Njg2My
 wyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMjAyMTc3MDMzNywtMTk5
