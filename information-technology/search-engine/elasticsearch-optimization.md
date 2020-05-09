@@ -35,10 +35,10 @@ number_of_replicas
 
 ## Reindex API
 
-
+현재로서는 샤드 개수를 변경하기 위해 인덱스를 재생성하고 전체 데이터를 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY5NzQ4NzQwLC0zMTkxNTA4MTVdfQ==
+eyJoaXN0b3J5IjpbLTE2NjYwNjU4OTgsLTMxOTE1MDgxNV19
 -->
