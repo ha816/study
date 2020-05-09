@@ -25,7 +25,7 @@
 
 >좋은 개발자가 되기 위해 갖추어야 한다고 생각하는 덕목 셋을 고르고 그 이유를 말해주세요. (예를들어 책임감, 꼼꼼함, 유연성 등등)
 >끈기
->자기발전ㅇ
+>자기발전에 대한 욕심
 >
 
 
@@ -34,9 +34,9 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTQ1NzUxMSwtMTU3MDQxMjA1NSwzMj
-Y3MjgyMjgsMzM2MDg2Mzg0LDE5MTgxMTYyNDIsMTM4ODA0Mzcx
-OCwtMjEzNDg2NDA3NCwtMTE0MDA3Njg2MywyMTQwNzQzNzA1LD
-IwMzEzOTc0NiwtMjAyMTc3MDMzNywtMTk5NDY4NTQ1MywtNTg0
-MTMyOCwtOTcwNjYwNzVdfQ==
+eyJoaXN0b3J5IjpbLTEzNDI3MTM0NjEsLTE1NzA0MTIwNTUsMz
+I2NzI4MjI4LDMzNjA4NjM4NCwxOTE4MTE2MjQyLDEzODgwNDM3
+MTgsLTIxMzQ4NjQwNzQsLTExNDAwNzY4NjMsMjE0MDc0MzcwNS
+wyMDMxMzk3NDYsLTIwMjE3NzAzMzcsLTE5OTQ2ODU0NTMsLTU4
+NDEzMjgsLTk3MDY2MDc1XX0=
 -->
