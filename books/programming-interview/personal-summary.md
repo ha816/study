@@ -7,19 +7,13 @@
 주로 사용한 기술에는 java 기반의 Spring(4.3.3), DB에는 MySQL, 배치성 작업에는 Spring Batch를 사용하였습니다. 진행한 프로젝트로는 배송상품 선물하기, 도서 산간 시스템 구축, 상품 페이지 평균 배송일 계산 및 적재 등이 있습니다.
 개발자의 학습과 그에 따른 발전은 개발자 스스로뿐만 아니라 회사로서도 큰 자산이라고 생각합니다. 저는 사내 스터디(effective-java, Real Mysql, ...)와 관심 있는 분야의 독서로 알게 된 지식을 지속적으로 Git에 정리하고 있습니다. (https://github.com/ha816/algorithms, https://github.com/ha816/study)
 
-감사합니다.
 
-> 왜 이직을 하려고 하나요?
-> 환경의 변화, 어쩔수 없는 요인, 면접관이 알고 있는 약점
+> 왜 이직을 하려고 하나요? (환경의 변화, 어쩔수 없는 요인, 면접관이 알고 있는 약점)
 
 3년동안 백엔드 웹 서비스에 대한 충분히 경험했고 저의 경력 측면 또는 개인의 발전을 위해 이직 면접을 보고 있습니다.
 
-> 연봉은 얼마 정도 생각하십니까?
-
-지식 그래프 관련된 서버 운영 , ranking 영역 4개 레이어, 유사 매칭, 부분 매칭
-
-> 자신의 강점을 어필해보세요
-> 
+>프로그래밍을 시작한 경위와 본격적으로 투신하고 생업으로 삼기로 결정한 이야기를 해주세요.(우아한형제들 면접)
+>
 
 
 > 혹시 질문 있습니까?
@@ -35,8 +29,9 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI2NzI4MjI4LDMzNjA4NjM4NCwxOTE4MT
-E2MjQyLDEzODgwNDM3MTgsLTIxMzQ4NjQwNzQsLTExNDAwNzY4
-NjMsMjE0MDc0MzcwNSwyMDMxMzk3NDYsLTIwMjE3NzAzMzcsLT
-E5OTQ2ODU0NTMsLTU4NDEzMjgsLTk3MDY2MDc1XX0=
+eyJoaXN0b3J5IjpbMTQ0MzMzMjA3NCwzMjY3MjgyMjgsMzM2MD
+g2Mzg0LDE5MTgxMTYyNDIsMTM4ODA0MzcxOCwtMjEzNDg2NDA3
+NCwtMTE0MDA3Njg2MywyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMj
+AyMTc3MDMzNywtMTk5NDY4NTQ1MywtNTg0MTMyOCwtOTcwNjYw
+NzVdfQ==
 -->
