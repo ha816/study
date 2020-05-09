@@ -34,6 +34,8 @@
 
 ### 항상 최신 버전의 엘라스틱서치를 사용하기
 
+일반적으로 버전업이 이뤄질 경우 최대한 하위 호환을 고려해서 개발이 이뤄지지만 하위 호완성을 100%유지한다는 것은 매우 어려운 일이다. 
+
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -48,6 +50,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTU3MjA3MDUsLTE2NjIwNTE3MTEsND
+eyJoaXN0b3J5IjpbLTEzOTM3OTQ1OTQsLTE2NjIwNTE3MTEsND
 QwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
 -->
