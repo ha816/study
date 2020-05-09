@@ -19,10 +19,16 @@ Flush 작업 성공적으로 마무리되고 디스크 동기화에 성공하면
 2. Refresh가 수행되면 인메모리 버퍼에서는 사라지지만 Translog에는 계속 남아있다.
 3. Translog가 일정 크기 이상으로 커지면 Flush작업이 수행된다.
 4. Commit Point가 디스크에 Flush된다.
+5. 시스템 캐시의 내용이 디스크에 Flush된다.
+6. TransLog 기록이 삭제된다.
+
+# Translog의 존재 이유
+
+가장 큰 목적은 장애 복구를 위해서다. 엘라스틱서치는 실시간에 가까운 검색을 제공하기 위해 1초마다 Refresh 작업을 수행하지만 이는 불안정한 상태라고 할 수 있다. (Refe
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAzMDc0NjQyLDE4MTQyODkxMzMsMTY3ND
+eyJoaXN0b3J5IjpbMTk2MTE4MDU0LDE4MTQyODkxMzMsMTY3ND
 UwNzQyOCwxNTExNTA4ODc0XX0=
 -->
