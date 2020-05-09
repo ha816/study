@@ -543,7 +543,7 @@ LEFT OUTER JOIN salaries s ON s.emp_no = e.emp_no
 where s.salary > 5000;
 ```
 
-s가 LEFT OUTER JOIN이라는 것은 드라이빙 테이블이 s에 해당한다는 의미다. OUTER JOIN으로 연결되는 테이블 컬럼에 대한 조건이 ON절에 명시되지 않고 WHERE 절에 명시 됬었는데 이는 MySQL 서버에서 이 쿼리는 아래와 같은 쿼리로 변경 후에 실행한다. MySQL 옵티마이저가 쿼리를 변경하면 원래 쿼리는 작성했던 의도와는 다른 결과를 반환 받는다.
+s가 LEFT OUTER JOIN이라는 것은 드라이빙 테이블이 e에 해당한다는 의미다. OUTER JOIN으로 연결되는 테이블 컬럼에 대한 조건이 ON절에 명시되지 않고 WHERE 절에 명시 됬었는데 이는 MySQL 서버에서 이 쿼리는 아래와 같은 쿼리로 변경 후에 실행한다. MySQL 옵티마이저가 쿼리를 변경하면 원래 쿼리는 작성했던 의도와는 다른 결과를 반환 받는다.
 
 ```
 select 
@@ -570,7 +570,7 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjYyNjYwMTIsLTE0ODk4MDcyNDIsLT
+eyJoaXN0b3J5IjpbLTE5NTAyMzAxODYsLTE0ODk4MDcyNDIsLT
 E2MTI4ODMxNzUsNTQ3MDUyMDA2LDY0NjcxMDk2MSwxNjczNDIw
 NTYsNzc3NDExNTAzLDEwMDU4ODA3NjksLTcxNTMyMjg2MiwyMD
 A2NDM3MzkzLC0xMjg0MTU0Njg0LC03MzkyMDk5OTYsMTc0MzQz
