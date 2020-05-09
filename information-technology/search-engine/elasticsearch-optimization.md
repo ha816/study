@@ -35,10 +35,17 @@ number_of_replicas
 
 ## Reindex API
 
-현재로서는 샤드 개수를 변경하기 위해 인덱스를 재생성하고 전체 데이터를 
+**현재로서는 샤드 개수를 변경하기 위해 인덱스를 재생성하고 전체 데이터를 처음 부터 재색인하는 방법밖에 없다.** 이를 위해 엘라스틱서치에서는 이미 존재하는 인덱스를 새로운 인덱스로 다시 색인하는 Reindex API를 제공한다. 이를 이용하면 비교적 손쉽게 새로운 인덱스로 재색인할 수 있다. 
+
+```
+POST _reindex {
+	"source" : { "index": "movie"} },
+	""
+
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjYwNjU4OTgsLTMxOTE1MDgxNV19
+eyJoaXN0b3J5IjpbLTQ3ODkxNjExOSwtMzE5MTUwODE1XX0=
 -->
