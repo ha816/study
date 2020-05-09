@@ -12,11 +12,15 @@
 
 엘라스틱 서치에서 제공하는 Flush는 내부적으로 fsync()함수로 물리적인 디스크에 변경 내역을 기록한다. 이 작업은 운영체제 입장에서는 많은 리소스가 필요한 무거운 작업이기 때문에 정책적으로 실행 시간을 조정할 수 있고 기본적으로 5초에 한번 수행된다. 
 
-Flush 작업 성공적으로 마무리되고 디스크 동기화에 성공하면 누적되어 있던 Translog 파일의 내용이 비로소 삭제 된다. Flush가 일어난다는 것은 디스크에 물리적으로 기록된다는 것이고 이는 영구적으로 보관된다는 것을 의미하기에 이 시점까지의 로그는 더 이상 필요치 않게 된다. 결과
+Flush 작업 성공적으로 마무리되고 디스크 동기화에 성공하면 누적되어 있던 Translog 파일의 내용이 비로소 삭제 된다. Flush가 일어난다는 것은 디스크에 물리적으로 기록된다는 것이고 이는 영구적으로 보관된다는 것을 의미하기에 이 시점까지의 로그는 더 이상 필요치 않게 된다. 결과적으로 Translog 내부 로그는 의미가 없어지고 이 시점에 Flush 이전 정보는 모두 삭제 된다. 
+
+동작 순서 정리
+1. 데이터가 추가되면 Translog에 기록되고 동시에 인메모리 버퍼에 추가된다.
+2. Refresh가 수행되면 인메모리 버퍼에서는 사라지지만 Translog에는 계속 남아있다.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkzMDgyMDE5LDE2NzQ1MDc0MjgsMTUxMT
-UwODg3NF19
+eyJoaXN0b3J5IjpbMTgxNDI4OTEzMywxNjc0NTA3NDI4LDE1MT
+E1MDg4NzRdfQ==
 -->
