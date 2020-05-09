@@ -4,7 +4,7 @@
 
 # 노드 실행환경과 JVM 옵션
 
-엘라스틱서치와 루씬의 모두 
+엘라스틱서치와 루씬은 모두 자바 언어로 개발되었다. 하지만 독립적으로 실행 가능한 엘라스틱 서치와는 달리 루씬은 독립적으로 실행될 수 없는 라이브러리 형태로 제공된다. 루씬은 자바 애플리케이션에서 사용할 수 있도록 jar형태로 배포되고, 엘라스틱서치는 이러한 jar 라이브러리를 임포트하는 방식으로 활용한다. 엘라스틱서치가 실행되어 인스턴스가 만들어지면 둘 다 하나의 JVM
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -19,6 +19,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDc3ODAzMDAsLTE5NjM5MzE1MzNdfQ
-==
+eyJoaXN0b3J5IjpbMTc4NzA5NDY2LC0xOTYzOTMxNTMzXX0=
 -->
