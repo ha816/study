@@ -26,7 +26,9 @@
 
 다수의 CPU가 탑재된 경우 동시에 모든 CPU를 점유해서 동작하여 프로그래밍을 해야 했는데 이런 방식은 멀티 쓰레드 방식 방식과 비교했을때 상대적으로 매우 어려운 일이었다. 
 
+자바는 8 버전 부터 큰 변화가 생겼다. 그 중 대표적으로는 함수형 프로그래밍의 도입이라고 할 수 있다. 함수형 프로그래밍 언어 지원을 위해 스트림과 람다 표현식이 지원되기 시작했다. 
 
+스트림을 사용하면 언어차원에서 손쉽게 멀티 코어로 함수를 동작시킬수 있다. 이런 특수한 함수를 람다라고 부르는데 람다를 이용해 로직을 작성하고 스트림에 입력하면 다수의 CPU에서 동시에 데이터가 처리되고 모든 CPU에 처리가 끝날때 까지 결과를 기다리게 된다. 이후 결과
 
 
 # 힙 크기를 32GB 이하로 유지하는 이유
@@ -42,6 +44,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg1MTY0ODM1LC0xNjYyMDUxNzExLDQ0MD
+eyJoaXN0b3J5IjpbNzc0OTQ3NDU0LC0xNjYyMDUxNzExLDQ0MD
 UzMTA5NCwtMTk2MzkzMTUzM119
 -->
