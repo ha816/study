@@ -98,12 +98,13 @@ number_of_replicas 값은 레플리카에 사용할 복사본 세트의 개수�
 
 # 하나의 인덱스에서 생성 가능한 최대 문서수는?
 
-이 의문을 해결하기 위해선 루씬을 다시 살펴볼 피룡가 있다. 
+이 의문을 해결하기 위해선 루씬을 다시 살펴볼 필요가 있다. 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5ODU2MTA5MiwtMTI3NzczMzExNSw4OD
-QxNzQzMjcsLTE2NjE3Nzk0NywtMzE5MTUwODE1XX0=
+eyJoaXN0b3J5IjpbLTE3MjUyMzkxOTMsLTEyNzc3MzMxMTUsOD
+g0MTc0MzI3LC0xNjYxNzc5NDcsLTMxOTE1MDgxNV19
 -->
