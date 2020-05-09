@@ -8,10 +8,14 @@
 
 엘라스틱서치에서 기본적으로 1초에 한번씩 Refresh 작업이 수행되는데, 이를 통해 추가된 세그먼트의 내용을 읽을 수 있게 되고 검색에 사용된다. 하지만 Refresh 작업이 일어나더라도 Translog 파일에 기록된 내용은 삭제되지 않고 계속 유지된다. 이처럼 **Translog는 일어나는 모든 변경사항을 담고 있는 특수한 형태의 로그이다.** 이러한 특성을 이용해서 엘라스틱 서치는 Translog의 내역을 바탕으로 장애 발생 시 복구 작업을 수행할 수 있다. 
 
-하지만 Translog 파일에 계쏙 로그가 누적될 수 는 없다. 특정 시점이 되면 불필요한 과거 로그는 삭제도
+하지만 Translog 파일에 계쏙 로그가 누적될 수 는 없다. 특정 시점이 되면 불필요한 과거 로그는 삭제된다. 그렇다면 언제 Translog의 내용이 삭제 될까?
+
+엘라스틱 서치에서 제공하는 Flush는 내부적으로 fsync()함수로 물리적인 디스크에 변경 내역을 기록한다. 이 작업은 운영체제 입장에서는 많은 리소스가 필요한 무거운 작업이기 때문에 정책적으로 실행 시간을 조정할 수 있고 기본적으로 5초에 한번 수행된다. 
+
+Flush 작어비 성공적으로 마무리되고 디
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NTIwNjk1MCwxNTExNTA4ODc0XX0=
+eyJoaXN0b3J5IjpbLTE2MTY0ODI0ODAsMTUxMTUwODg3NF19
 -->
