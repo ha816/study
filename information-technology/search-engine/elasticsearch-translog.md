@@ -43,11 +43,13 @@ Translog의 주목적은 클러스터를 운여하는 중에 데이터가 손실
 
 하지만 Translog의 크기가 커질 수록 장애 발생시 복구하는데 걸리는 시간도 그에 비례해서 커진다. 복구를 위해선 루씬 Commit 이후 모든 내역을 재실행에서 세그먼트를 재생성하는 과정이 필요하기 때문이다. Translog 파일이 크다는 것은 복구를 위해 재생성해야할 세그먼트가 많다진다는 것을 의미하기 때문에 복구를 진행하는 도중에 다시 장애가 발생하고, 이러한 과정이 반복되는 상황에 빠질수도 있다. 
 
-최악의 경우, 전체 클러스터가 마비되는 대형 장애가 발생할 수도 있다. 그렇기 때문에 데이커 크기나 양에 따라 적절한 정책을 세우고 Translog의 크기를 관리하는 것이 매우 중요하다. 적절한 주기로 Flush를 수행해서 Translog의 크기가 항상 일정 크기 이하를 유지하도록 꾸준히 모니터링하고 관리하는 것이 안정적인 클러스터 운영을 위한 기본임을 명심하자. 
+최악의 경우, 전체 클러스터가 마비되는 대형 장애가 발생할 수도 있다. 그렇기 때문에 데이커 크기나 양에 따라 적절한 정책을 세우고 Translog의 크기를 관리하는 것이 매우 중요하다. **적절한 주기로 Flush를 수행해서 Translog의 크기가 항상 일정 크기 이하를 유지하도록 꾸준히 모니터링하고 관리하는 것이 안정적인 클러스터 운영을 위한 기본임을 명심하자.** 
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MTkzODY2MiwyMzM3MDE2MiwtNTM1NT
+eyJoaXN0b3J5IjpbLTM3MjA3Njk5MCwyMzM3MDE2MiwtNTM1NT
 IxNjUxLDE4MTQyODkxMzMsMTY3NDUwNzQyOCwxNTExNTA4ODc0
 XX0=
 -->
