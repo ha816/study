@@ -1,7 +1,6 @@
 # Overview
 
-이번 장에서는 엘라스틱서치의 시스템적 측면을 공부해보자. 그리고 이를 통해 엘라스틱서치 클ㄹ
-
+이번 장에서는 엘라스틱서치의 시스템적 측면을 공부해보자. 그리고 이를 통해 엘라스틱서치 클러스터가 안정적으로 동작하는데 필요한 시스템 구성을 함께 고민해보자. 
 
 # 노드 실행환경과 JVM 옵션
 
@@ -18,5 +17,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MDE3MDQwN119
+eyJoaXN0b3J5IjpbLTE5NjM5MzE1MzNdfQ==
 -->
