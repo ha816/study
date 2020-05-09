@@ -37,13 +37,15 @@
 >**기술 경향을 파악하고 업무 역량을 강화하기 위한 본인의 학습 방법을 구체적으로 설명해주세요.**
 >
 >소소하게 계속해서 알고리즘 문제를 푼다. Hacker Rank와 leetcode문제를 위주로 수학적인 문제를 풀어보도록 노력하고 있다. 
->관심 또는 필요에 의해 특정 기술의 권위있거나 저명한 책을 사서 읽고 이를 정리를 하며 학습을 해나가는 스타일이다. 
+>관심 또는 필요에 의해 특정 기술의 권위있거나 저명한 책을 사서 읽고 이를 정리를 하며 학습을 해나가는 스타일이다. 사내 스터디도 간간히 참여하여 지식을 공유하기도 한다.
 
-
+>**지난 개발 프로젝트들의 아쉬운 점이 있었다면 무엇이고 개선 방안은 뭘까요?**
+>
+>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTg5NDkxODUsLTUxODAxMTA4MSwtMT
+eyJoaXN0b3J5IjpbLTE0OTQ1NjY5NzEsLTUxODAxMTA4MSwtMT
 U3MDQxMjA1NSwzMjY3MjgyMjgsMzM2MDg2Mzg0LDE5MTgxMTYy
 NDIsMTM4ODA0MzcxOCwtMjEzNDg2NDA3NCwtMTE0MDA3Njg2My
 wyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMjAyMTc3MDMzNywtMTk5
