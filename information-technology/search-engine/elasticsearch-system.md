@@ -39,8 +39,9 @@
 엘라스틱서치는 자바, 루씬, 엘라스틱서치 자체의 기능을 모두 고려해서 하위 호완성을 만들어야 하는데 이는 굉장히 어렵다. 버전이 올라갈수록 기존에 제공하는 기능이 폐기 예정이거나 사용법이 바뀔수 있기 때문에 반드시 변경사항을 꼼꼼히 확인해야 한다.
 
 >엘라스틱서치 메이저 업데이트와 마이너 업데이트
->실무에서는 이미 엘랏
+>실무에서는 이미 엘라스틱서치에 많은 데이터가 있을 것이므로 운영중에 엘라스틱서치를 버전업하는 것은 매우 리스크할 것이다. 이러한 이유로 대부분 릴리즈 업데이트가 있어도 버전업을 못한 것이다. 이러한 경우를 고려해서 엘라스틱서치는 최신 버전에서 메이저버전이 올라가더라도 과거 버전의 버그패치와 같은 간단한 마이너 패치는 일정 기간 제공하고 있다.
 
+엘라스틱서치는 각 버전에 따른 수명관리를 별도로 하고 있다. 
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -55,6 +56,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MjM5NzcxNiwtMTM5Mzc5NDU5NCwtMT
-Y2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5MzE1MzNdfQ==
+eyJoaXN0b3J5IjpbLTE1MTk3ODc0OTUsLTEzOTM3OTQ1OTQsLT
+E2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
 -->
