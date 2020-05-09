@@ -78,10 +78,12 @@ number_of_replicas 값은 레플리카에 사용할 복사본 세트의 개수�
 > 평소 노드의 상태를 모니터링하면서, 색인 요청에 대한 라우팅을 처리하거나 검색 요청에 대한 부하를 분산하는 역할
 > 장애 발생시 레플리카를 이용해 샤드를 복구하는 역할
 
-## 인덱스가 다수의 샤드로 분살될 경ㅇ
+## 인덱스가 다수의 샤드로 분산될 경우
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4Nzk1NzU1MCw4ODQxNzQzMjcsLTE2Nj
-E3Nzk0NywtMzE5MTUwODE1XX0=
+eyJoaXN0b3J5IjpbLTEyNzc3MzMxMTUsODg0MTc0MzI3LC0xNj
+YxNzc5NDcsLTMxOTE1MDgxNV19
 -->
