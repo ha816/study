@@ -29,16 +29,16 @@
 >자기발전에 대한 욕심, 약간의 완벽주의, 열린 마음과 자세 
 
 >**지금까지 읽었던 개발서 중 가장 중요하다고 생각하는 책 3 권을 골라 선정한 이유를 말해주세요**
->'가장'이란 단어가 들어간 질문은 언제나 어려운 질문이다. IT 분야는 정말 도메인이 넓고 책의 종류도 많기 때문이다. 그래도 컴퓨터 공학도에게 중요한 덕목이라면 '알고리즘이 아니
+>'가장'이란 단어가 들어간 질문은 언제나 어려운 질문이다. IT 분야는 정말 도메인이 넓고 책의 종류도 많기 때문이다. 그래도 컴퓨터 공학도에게 가장 중요한 덕목이라면 '알고리즘이 아닐까? 컴퓨터는 사실 학자의 계산을 돕기 위해 만들어진 계산 기계이다. 그 처음은 수학에서 왔다는 것을 감안한다면 알고리즘은 공학도에게 중요하다. 알고리즘
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDk1OTQ5MzksLTUxODAxMTA4MSwtMT
-U3MDQxMjA1NSwzMjY3MjgyMjgsMzM2MDg2Mzg0LDE5MTgxMTYy
-NDIsMTM4ODA0MzcxOCwtMjEzNDg2NDA3NCwtMTE0MDA3Njg2My
-wyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMjAyMTc3MDMzNywtMTk5
-NDY4NTQ1MywtNTg0MTMyOCwtOTcwNjYwNzVdfQ==
+eyJoaXN0b3J5IjpbMjU5NzAzNTcyLC01MTgwMTEwODEsLTE1Nz
+A0MTIwNTUsMzI2NzI4MjI4LDMzNjA4NjM4NCwxOTE4MTE2MjQy
+LDEzODgwNDM3MTgsLTIxMzQ4NjQwNzQsLTExNDAwNzY4NjMsMj
+E0MDc0MzcwNSwyMDMxMzk3NDYsLTIwMjE3NzAzMzcsLTE5OTQ2
+ODU0NTMsLTU4NDEzMjgsLTk3MDY2MDc1XX0=
 -->
