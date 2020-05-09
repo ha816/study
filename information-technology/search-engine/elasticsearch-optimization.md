@@ -51,10 +51,10 @@ POST _reindex {
 일반적으로 장애가 발생했을때 빠른 복구를 위해 1개 이상의 복사본 세트를 사용하는게 좋다. 레플리카 샤드는 직접 생성할 샤드 개수를 지정할 수 없다. 단지 몇 개의 복사본 세트를 가질지 정할 뿐이다. 이는 레플리카 샤드가 프라이머리 샤드 전체를 복사해야만 그 의미가 있기 때문이다. 
 
 
-number_of_replicas 값이 1이라면 number_of_shards
+number_of_replicas 값은 레플리카에 사용할 복사본 세트의 개수를 말한다. **실제 생성될 레플리카 샤드의 개수를 말하는게 아니다.** 이 인덱스에서 사용하는 number_of_shards의 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MTA4OTUxNiwtMzE5MTUwODE1XX0=
+eyJoaXN0b3J5IjpbOTU1MzEyODY3LC0zMTkxNTA4MTVdfQ==
 -->
