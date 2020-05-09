@@ -543,17 +543,17 @@ LEFT OUTER JOIN salaries s ON s.emp_no = e.emp_no
 where s.salary > 5000;
 ```
 
-s가 LEFT OUTER JOIN이라는 것은 드라이빙 테이블이 s에 해당한다는 의미다. 
+s가 LEFT OUTER JOIN이라는 것은 드라이빙 테이블이 s에 해당한다는 의미다. OUTER JOIN으로 연결되는 테이블 컬럼에 대한 조건이 ON절에 명시되지 않고 WHERE 절에 명시 됬었는데 이는 MySQL 서버에서 이 쿼리는 아래와 같은 쿼리로 변경 후에 실행한다. MySQL 옵티마이저가 쿼리를 변경하면 원래 쿼리는 작성했던 의도와는
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2NzEwOTYxLDE2NzM0MjA1Niw3Nzc0MT
-E1MDMsMTAwNTg4MDc2OSwtNzE1MzIyODYyLDIwMDY0MzczOTMs
-LTEyODQxNTQ2ODQsLTczOTIwOTk5NiwxNzQzNDMwNjg5LC0xND
-I4NDU3MTQ0LC01NDQ5NzA3NDksLTE2MDkxOTk3NDgsLTEwMDg0
-OTE2NTAsLTE0NDY5ODMzMDksLTIwNjQ0NTkzNCwxMjEyMDYxND
-Y1LC0xNTQ5NDcxNTI1LDIwNjg3NTE4NzEsLTE2MzA4MDEzMDQs
-MjA2MjQzMjYyM119
+eyJoaXN0b3J5IjpbMTYwNDMzMjk0Nyw2NDY3MTA5NjEsMTY3Mz
+QyMDU2LDc3NzQxMTUwMywxMDA1ODgwNzY5LC03MTUzMjI4NjIs
+MjAwNjQzNzM5MywtMTI4NDE1NDY4NCwtNzM5MjA5OTk2LDE3ND
+M0MzA2ODksLTE0Mjg0NTcxNDQsLTU0NDk3MDc0OSwtMTYwOTE5
+OTc0OCwtMTAwODQ5MTY1MCwtMTQ0Njk4MzMwOSwtMjA2NDQ1OT
+M0LDEyMTIwNjE0NjUsLTE1NDk0NzE1MjUsMjA2ODc1MTg3MSwt
+MTYzMDgwMTMwNF19
 -->
