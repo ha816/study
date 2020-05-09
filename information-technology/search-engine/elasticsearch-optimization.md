@@ -80,10 +80,10 @@ number_of_replicas 값은 레플리카에 사용할 복사본 세트의 개수�
 
 ## 인덱스가 다수의 샤드로 분산될 경우
 
-
+단순히 검색 성능만 본다면 인덱스를 생성할때 프라이머리 샤드의 개수가 많을 수록 검색 성능이 좋아진다. 검색은 각 샤드가 독립적으로 검색을 수행하고 최종적으로 결과를 합쳐서 제공하기 때문에 다수의 샤드로 분산될
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzc3MzMxMTUsODg0MTc0MzI3LC0xNj
-YxNzc5NDcsLTMxOTE1MDgxNV19
+eyJoaXN0b3J5IjpbMTMwMTAzMTI3NywtMTI3NzczMzExNSw4OD
+QxNzQzMjcsLTE2NjE3Nzk0NywtMzE5MTUwODE1XX0=
 -->
