@@ -41,7 +41,7 @@
 
 >**지난 개발 프로젝트들의 아쉬운 점이 있었다면 무엇이고 개선 방안은 뭘까요?**
 >
->
+>상품도착
 
 >**좋아하는 시나 소설, 노래 중심으로 자신을 자유롭게 소개해 주세요. (지원동기/이직사유, 장/단점 등)**
 >
@@ -49,10 +49,10 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NTMzNzg0MywtMTI1MjAxNzk4MywtNT
-E4MDExMDgxLC0xNTcwNDEyMDU1LDMyNjcyODIyOCwzMzYwODYz
-ODQsMTkxODExNjI0MiwxMzg4MDQzNzE4LC0yMTM0ODY0MDc0LC
-0xMTQwMDc2ODYzLDIxNDA3NDM3MDUsMjAzMTM5NzQ2LC0yMDIx
-NzcwMzM3LC0xOTk0Njg1NDUzLC01ODQxMzI4LC05NzA2NjA3NV
-19
+eyJoaXN0b3J5IjpbLTE4OTU5MDA0MSwxMzY1MzM3ODQzLC0xMj
+UyMDE3OTgzLC01MTgwMTEwODEsLTE1NzA0MTIwNTUsMzI2NzI4
+MjI4LDMzNjA4NjM4NCwxOTE4MTE2MjQyLDEzODgwNDM3MTgsLT
+IxMzQ4NjQwNzQsLTExNDAwNzY4NjMsMjE0MDc0MzcwNSwyMDMx
+Mzk3NDYsLTIwMjE3NzAzMzcsLTE5OTQ2ODU0NTMsLTU4NDEzMj
+gsLTk3MDY2MDc1XX0=
 -->
