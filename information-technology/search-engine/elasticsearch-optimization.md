@@ -12,10 +12,17 @@
 
 샤드에는 두 종류가 존재한다. 첫번째는 실제 서비스가 일어나느 프라이머리 샤드이다. 실질적인 CRUD를 제공하는 샤드로 엘라스틱서치에서 핵심요소이다. 이 프라이머리 샤드를 일반적으로 샤드로 부른다. 두번째는 레플리카 샤드다. 기본적으로 장애 복구를 위해 존재한다. 하지만 프라이머리 샤드와 동일한 데이터를 가지고 있기 때문에 평상시에는 읽기 분산에도 활용된다. 
 
-엘라스틱서치에서는 최초 인덱스를 생성할때 settings 속성을 이용해 샤드와 레플리카 개수를 각각 정의할 수 있다. 샤드의 개수(number_of_shards)는 전체 데이터를 몇개의 샤드로 나누어 보관할지를 의미하고 레플리카 개수(number_of_replicas)
+엘라스틱서치에서는 최초 인덱스를 생성할때 settings 속성을 이용해 샤드와 레플리카 개수를 각각 정의할 수 있다. 
+
+number_of_shards
+: 샤드의 개수(number_of_shards)는 전체 데이터를 몇개의 샤드로 나누어 보관할지를 의미한다. 이 값으로 프라이머리 샤드의 개수가 결정된다.
+
+number_of_replicas
+
+: 레플리카 개수(number_of_replicas)는 몇개의 복사본 세트를 만들것인지를 의미한다., 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjAxMTE5MSwtMzE5MTUwODE1XX0=
+eyJoaXN0b3J5IjpbMTI1NDg5MDE1MywtMzE5MTUwODE1XX0=
 -->
