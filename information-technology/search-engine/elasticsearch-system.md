@@ -53,7 +53,9 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 엘라스틱서치는 다수의 노드로 구성되며, 서로 유기적으로 동작하는 매우 복잡한 애플리케이션이다. **지금까지 버전업을 해오면서 많은 문제를 해결해왔기 때문에 기본 설정으로 제공하는 JVM옵션들이 각종 문제에 대한 경험을 바탕으로 최적화한 값이다.** 
 
-rkr
+각 환경에서 설정한 대부분의 JVM 옵션들은 서비스 운영 초기에는 매우 유용한 것으로 보일수도 있다. 하지만 데이터가 커지면 결국 불안정해질 가능성이 높다. 이런 경우 JVM 옵션을 다시 기본 설정으로 변경해보는 것도 좋은 해결책 중 하나다. 
+
+jvm.option이라는 파일에는 기본적인 JVM 힙 크기가 1GB로 설정되어 있는데, 실제 운영호
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -68,6 +70,6 @@ rkr
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMzU4NDEwMSwtMTM5Mzc5NDU5NCwtMT
-Y2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5MzE1MzNdfQ==
+eyJoaXN0b3J5IjpbNTc3NDIzNTYyLC0xMzkzNzk0NTk0LC0xNj
+YyMDUxNzExLDQ0MDUzMTA5NCwtMTk2MzkzMTUzM119
 -->
