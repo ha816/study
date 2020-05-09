@@ -12,7 +12,7 @@
 
 실무에서는 2.x ~ 5.x 버전이 아직 많이 사용되고 있다. 하지만 새롭게 엘라스틱 서치를 도입한다면 6.x 이상을 사용할 것을 권장한다. 최신 버전을 사용함으로써 자바와 루씬의 최신 기능을 모두 사용할 수 있기 때문이다. 
 
-
+엘라스틱서치와 루씬은 매우 밀접한 관계가 있다. 엘라스틱서치는 루씬을 기반으로 동작하기 때문에 엘라스틱버전에 따라 내부
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -27,6 +27,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5ODIzNjU1Myw0NDA1MzEwOTQsLTE5Nj
-M5MzE1MzNdfQ==
+eyJoaXN0b3J5IjpbNTA2MDY1NjQ5LDQ0MDUzMTA5NCwtMTk2Mz
+kzMTUzM119
 -->
