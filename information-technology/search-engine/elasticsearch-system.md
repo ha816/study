@@ -47,7 +47,9 @@
 
 GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일부  GC동작을 제어할 수도 있다. 그럼 엘라스틱에 적용된 JVM옵션을 무엇인지 알아보도록 하자. 
 
-엘라스틱서치는 분산 시스템의 특성상 스케일 인/스케일 아웃(Scale In/Scale Out)이 빈번하게 발생할 수 있다. 또한 장애를 복구한다거나 ReIndex 작업 
+**엘라스틱서치는 분산 시스템의 특성상 스케일 인/스케일 아웃(Scale In/Scale Out)이 빈번하게 발생할 수 있다. 또한 장애를 복구한다거나 ReIndex 작업에 의해 일어나는 데이터 리밸런싱에 의해 많은 메모리를 사용하기 때문에 전체적인 성능향상을 위해 다수의 JVM옵션을 반드시 튜닝해야 한다.** 
+
+일반적인 경우는 엘라스틱서치에서 기본적으로 제공하는 옵션 그대로 실행하면 된다. 
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -62,6 +64,6 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NDg5ODkyNCwtMTM5Mzc5NDU5NCwtMT
+eyJoaXN0b3J5IjpbLTQzMDQ2NDQ5MywtMTM5Mzc5NDU5NCwtMT
 Y2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5MzE1MzNdfQ==
 -->
