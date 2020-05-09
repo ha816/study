@@ -18,16 +18,22 @@
 
 만약 질문이 없다면 질문이 없다는 것을 살짝 부드럽게 이야기 하는 것이 좋다. 뭔가 질문을 해야 할것 같기는 한데, 제가 궁금했던 부분을 면접관님과 이야기하면서 알게 되어 질문할게 없습니다. 
 
-## 우아한형
+## 우아한형제들
+
+>프로그래밍을 시작한 경위와 본격적으로 투신하고 생업으로 삼기로 결정한 이야기를 해주세요.(우아한형제들 면접)
+>앞으로 전망이 좋을 것 같은 분야, 직종을 고려해야 했고, 내 성적으로 가능한 곳 그런 현실적이 이유로 
+
+>좋은 개발자가 되기 위해 갖추어야 한다고 생각하는 덕목 셋을 고르고 그 이유를 말해주세요. (예를들어 책임감, 꼼꼼함, 유연성 등등)
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjY5NjQ1NTQsMzI2NzI4MjI4LDMzNj
-A4NjM4NCwxOTE4MTE2MjQyLDEzODgwNDM3MTgsLTIxMzQ4NjQw
-NzQsLTExNDAwNzY4NjMsMjE0MDc0MzcwNSwyMDMxMzk3NDYsLT
-IwMjE3NzAzMzcsLTE5OTQ2ODU0NTMsLTU4NDEzMjgsLTk3MDY2
-MDc1XX0=
+eyJoaXN0b3J5IjpbMTA1MzU5MjI5OSwzMjY3MjgyMjgsMzM2MD
+g2Mzg0LDE5MTgxMTYyNDIsMTM4ODA0MzcxOCwtMjEzNDg2NDA3
+NCwtMTE0MDA3Njg2MywyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMj
+AyMTc3MDMzNywtMTk5NDY4NTQ1MywtNTg0MTMyOCwtOTcwNjYw
+NzVdfQ==
 -->
