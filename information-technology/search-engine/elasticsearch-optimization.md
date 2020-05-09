@@ -53,10 +53,11 @@ POST _reindex {
 
 number_of_replicas 값은 레플리카에 사용할 복사본 세트의 개수를 말한다. **실제 생성될 레플리카 샤드의 개수를 말하는게 아니다.** 실제 운영될 레플리카 샤드 개수는 그 인덱스에서 사용하는 프라이머리 샤드의 개수 * 레플리카 세트 개수(number_of_shards * number_of_replicas)이다.
 
-복사본 세트의 수를 지정함으로써 모든 프라이머리 샤드가 복사되기 때문에 클러스터 내부에서 운영하고 있는 전체 샤드
+복사본 세트의 수를 지정함으로써 모든 프라이머리 샤드가 복사되기 때문에 클러스터 내부에서 운영하고 있는 전체 샤드 개수를 고려해서 적절한 복사본 세트를 운영해야 한다. 장애 복구나 읽기 성능 향상을 위해 레플리카를 많이 사용하게 되지만 한가지 주의해야 할 점이 있다. 레플리카 세트의 수를 결정할 경우에는 사전에 충분한 테스트가 필요한데, **너무 많은 복사본이 존재하는 경우, 자칫 전체적인 색인 성능의 저하로 이루어질 수 있기 때문이다.** 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNzUwNjcyNiwtMzE5MTUwODE1XX0=
+eyJoaXN0b3J5IjpbLTE2NjE3Nzk0NywtMzE5MTUwODE1XX0=
 -->
