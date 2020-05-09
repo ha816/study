@@ -12,10 +12,10 @@
 
 엘라스틱 서치에서 제공하는 Flush는 내부적으로 fsync()함수로 물리적인 디스크에 변경 내역을 기록한다. 이 작업은 운영체제 입장에서는 많은 리소스가 필요한 무거운 작업이기 때문에 정책적으로 실행 시간을 조정할 수 있고 기본적으로 5초에 한번 수행된다. 
 
-Flush 작어비 성공적으로 마무리되고 디
+Flush 작업 성공적으로 마무리되고 디스크 동기화에 성공하면 누적되어 있던 Translog 파일의 내용이 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTY0ODI0ODAsMTUxMTUwODg3NF19
+eyJoaXN0b3J5IjpbMTY3NDUwNzQyOCwxNTExNTA4ODc0XX0=
 -->
