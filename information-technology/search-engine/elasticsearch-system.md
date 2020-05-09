@@ -36,6 +36,11 @@
 
 일반적으로 버전업이 이뤄질 경우 최대한 하위 호환을 고려해서 개발이 이뤄지지만 하위 호완성을 100%유지한다는 것은 매우 어려운 일이다. 
 
+엘라스틱서치는 자바, 루씬, 엘라스틱서치 자체의 기능을 모두 고려해서 하위 호완성을 만들어야 하는데 이는 굉장히 어렵다. 버전이 올라갈수록 기존에 제공하는 기능이 폐기 예정이거나 사용법이 바뀔수 있기 때문에 반드시 변경사항을 꼼꼼히 확인해야 한다.
+
+>엘라스틱서치 메이저 업데이트와 마이너 업데이트
+>실무에서는 이미 엘랏
+
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -50,6 +55,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTM3OTQ1OTQsLTE2NjIwNTE3MTEsND
-QwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
+eyJoaXN0b3J5IjpbMTc5MjM5NzcxNiwtMTM5Mzc5NDU5NCwtMT
+Y2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5MzE1MzNdfQ==
 -->
