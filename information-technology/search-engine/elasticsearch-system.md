@@ -20,7 +20,9 @@
 
 최근 급견한 하드웨어 기술의 발달로 CPU나 메모리 자원이 매우 저렴해졌다. 한 서버에서 다수의 CPU나 코어를 탑재하고 메모리도 비교적 넉넉하다. 
 
-###
+### 다수의 CPU 사용
+
+64비트 컴퓨터로 변경되면서 메모리 사용은 사실 프로그래밍 관점에서는 크게 변화가 없었다. 하지만 다수의 CPU를 사용하는 프로그래밍에서는 변화가 컸다. 기존 멀티쓰레드 기반 프로그래밍은 하나의 CPU를 효율적으로 사용하기 위한 방식이 대부분이었기 때문에 오히려 CPU가 많은 환경에서는 비효율적인 경우가 종종 발생했다.
 
 
 
@@ -37,6 +39,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTA1OTI5MzAsLTE2NjIwNTE3MTEsND
-QwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
+eyJoaXN0b3J5IjpbNjM4MzM1NzM3LC0xNjYyMDUxNzExLDQ0MD
+UzMTA5NCwtMTk2MzkzMTUzM119
 -->
