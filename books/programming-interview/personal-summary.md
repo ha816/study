@@ -24,7 +24,6 @@
 >앞으로 전망이 좋을 것 같은 분야, 직종을 고려해야 했고, 내 성적으로 가능한 곳 그런 현실적이 이유로 프로그래머의 길을 시작했다. 거창하게는 아니지만 학교 공부나 코딩 즉 학습한 것이 바로 실제 기술로 적용 시켜 볼 수 있는 프로그래밍의 특성에 크게 매료되었다. 처음에는이해가 안되고 어려워 보이는 IT 기술들을 이해하는 과정에 얻는 어떤 깨달음의 즐거움도 얻는다. 프로젝트를 진행하다가  막히는 부분이 있으면 그걸 타파하기 위해 고분분투하고 실제 해결했을때 짜릿함을 어느센가 즐기게 되었던거 같다. 돌아와서 거창하게는 아니지만 현실적인 이유로 이 직군을 선택했고 다행히 개발자의 길이 성향에 잘맞아 즐겁게 일하고 있다.
 
 >좋은 개발자가 되기 위해 갖추어야 한다고 생각하는 덕목 셋을 고르고 그 이유를 말해주세요. (예를들어 책임감, 꼼꼼함, 유연성 등등)
->끈기
 >자기발전에 대한 욕심
 >
 
@@ -34,9 +33,9 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDI3MTM0NjEsLTE1NzA0MTIwNTUsMz
-I2NzI4MjI4LDMzNjA4NjM4NCwxOTE4MTE2MjQyLDEzODgwNDM3
-MTgsLTIxMzQ4NjQwNzQsLTExNDAwNzY4NjMsMjE0MDc0MzcwNS
-wyMDMxMzk3NDYsLTIwMjE3NzAzMzcsLTE5OTQ2ODU0NTMsLTU4
-NDEzMjgsLTk3MDY2MDc1XX0=
+eyJoaXN0b3J5IjpbLTUxODAxMTA4MSwtMTU3MDQxMjA1NSwzMj
+Y3MjgyMjgsMzM2MDg2Mzg0LDE5MTgxMTYyNDIsMTM4ODA0Mzcx
+OCwtMjEzNDg2NDA3NCwtMTE0MDA3Njg2MywyMTQwNzQzNzA1LD
+IwMzEzOTc0NiwtMjAyMTc3MDMzNywtMTk5NDY4NTQ1MywtNTg0
+MTMyOCwtOTcwNjYwNzVdfQ==
 -->
