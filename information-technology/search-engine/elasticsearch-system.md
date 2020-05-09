@@ -77,7 +77,9 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 ### 자바 8기반에서는 힙 크기를 32GB이상 사용하지 말자
 
 
-## Ordin
+## Ordinary Object Pointer
+
+자바에서는 모든 객체가 힙 영역에 생성된다. 그리고 이렇게 생성된 객체는 모두 포인터를 가지고 이를 통해 객체에 접근한다. 
 
 
 # 엘라스틱서치와 가상 메모리
@@ -91,6 +93,6 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzY2NTQwMzMsLTEzOTM3OTQ1OTQsLT
+eyJoaXN0b3J5IjpbLTE5MzYwODAyMDQsLTEzOTM3OTQ1OTQsLT
 E2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
 -->
