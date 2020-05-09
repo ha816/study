@@ -34,11 +34,12 @@ Flush 작업 성공적으로 마무리되고 디스크 동기화에 성공하면
 >Translog의 내역을 바탕으로 순차적으로 인메모리 버퍼를 복구하고 Refresh가 수행되면 다음 Flush시점에 루씬 Commit이 수행된다.
 
 >변경사항이 순간적으로 많아져서 루씬의 Commit이 긴시간 일어나게 되었고 그 동안 많은 데이터 변경 요청이 한꺼번에 샤드로 들어온다면?
->이 경ㅇ
+>이 경우는 상황이 다소 복잡하다. 루씬 Commit 작업이 수행되는 시간이 길어진다고 해서 Commit이 일어나는 동안 샤드로 전달된 변경사항이 Commit 작업이 끝날때까지 반영 되지 않는 다면 실시간 검색을 지원한다는 의미가 많이 퇴색될 것이다. 그래서 Commit이 일어나는 동안에 들어온 변경사항은 루씬의 인메모리 버퍼로 전다하지 않고 Translog에 임시 저장해두고 다음 Commit 반영될때까지 유지한다.
+>샤드는 이런 특별한 상황
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwOTYwMDQ3NCwtNTM1NTIxNjUxLDE4MT
-QyODkxMzMsMTY3NDUwNzQyOCwxNTExNTA4ODc0XX0=
+eyJoaXN0b3J5IjpbNTI2NzUxNjE1LC01MzU1MjE2NTEsMTgxND
+I4OTEzMywxNjc0NTA3NDI4LDE1MTE1MDg4NzRdfQ==
 -->
