@@ -22,9 +22,11 @@ number_of_replicas
 : 레플리카 개수(number_of_replicas)는 몇개의 복사본 세트를 만들것인지를 의미한다. 이 속성 값으로 레플리카 샤드의 개수가 결정된다.
 
 
-한 임의의 인덱스를 생성할때 만약 5개의 샤드와 1개의 레플리카 세트를 만든다고 했고 시간이 흘러 인
+한 임의의 인덱스를 생성할때 만약 5개의 샤드와 1개의 레플리카 세트를 만든다고 했고 시간이 흘러 인덱스에 총 1억건의 데이터가 색인 됐다고 가정해보자. 5개의 프라이머리 샤드를 설정했기 때문에 각 샤드는 2천건의 데이터를 가져가게 될것이다. 
+
+이런 상황에서 검색 성능을 향상 시키기 위해 물리적인 장비를 추가 투입해서 샤드 5개를 추가하기로 했다고 하자. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NjA5MzQ4NiwtMzE5MTUwODE1XX0=
+eyJoaXN0b3J5IjpbLTEzMDk4Mjc0ODEsLTMxOTE1MDgxNV19
 -->
