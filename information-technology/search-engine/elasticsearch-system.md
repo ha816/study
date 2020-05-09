@@ -67,7 +67,9 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 기본적으로 엘라스틱서치의 힙 크기는 1GB로 설정되어 있다. 이는 테스트 용도로 제공되는 값으로 최소사양을 가정해서 설정된 값임을 명심하자. 
 
-엘라스틱서치는 기본적으로 메모리를 많이 활용하는 애플리케이션이기 때문에 처음부터 Xms와 Xmx 크기를 같게 많이 서
+엘라스틱서치는 기본적으로 메모리를 많이 활용하는 애플리케이션이기 때문에 처음부터 Xms와 Xmx 크기를 같게 많이 설정하는것이 여러모로 유리하다. (Xms: 최소 힙크기, Xmx: 최대힙크기)
+
+그럼 적절한 힙 크기는 얼마가 좋을까? 이는 매우 어려운 문제다. 일반적으로는 힙 크기가 클수록 좋다. 하지만
 
 
 # 엘라스틱서치와 가상 메모리
@@ -81,6 +83,6 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMzY5Njc4NCwtMTM5Mzc5NDU5NCwtMT
-Y2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5MzE1MzNdfQ==
+eyJoaXN0b3J5IjpbNzU4MTUyMzE0LC0xMzkzNzk0NTk0LC0xNj
+YyMDUxNzExLDQ0MDUzMTA5NCwtMTk2MzkzMTUzM119
 -->
