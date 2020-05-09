@@ -10,7 +10,9 @@
 
 2010년 즈음 오픈 소스로 개발되기 시작해서 2014년 1.0 버전이 공식 출시된 이후로 지금도 매우 빠르게 성장하고 있다. 
 
-실무에서는 2.x ~ 5.x 버전이 아직 많이 사용되고 있다. 하지만 새롭게 엘라스틱 서치를 도입한다면 6.x 이상을 사용할 것을 권장한다. 최신 버전을 사용함으로써 자바와 
+실무에서는 2.x ~ 5.x 버전이 아직 많이 사용되고 있다. 하지만 새롭게 엘라스틱 서치를 도입한다면 6.x 이상을 사용할 것을 권장한다. 최신 버전을 사용함으로써 자바와 루씬의 최신 기능을 모두 사용할 수 있기 때문이다. 
+
+
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -25,6 +27,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDk2MjQ5MTEsNDQwNTMxMDk0LC0xOT
-YzOTMxNTMzXX0=
+eyJoaXN0b3J5IjpbMTA5ODIzNjU1Myw0NDA1MzEwOTQsLTE5Nj
+M5MzE1MzNdfQ==
 -->
