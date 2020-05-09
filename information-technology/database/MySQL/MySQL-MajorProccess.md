@@ -554,15 +554,28 @@ where s.salary > 5000;
 
 이런 형태의 쿼리는 아래 두 가지 방식중 하나로 해야 의도나 결과를 명확히 알 수 있다. 
 
+```
+-- 순수하게 OUTER JOIN으로 처리
+SELECT 
+FROM employees e
+LEFT OUTER JOIN salaries s ON s.emp_no = e.emp_no AND s.salary > 5000;
+
+-- 순수하게 INNER JOIN으로 처리
+SELECT 
+FROM employees e
+INNER JOIN salaries s ON s.emp_no = e.emp_no
+WHERE s.salary > 5000;
+
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTI4ODMxNzUsNTQ3MDUyMDA2LDY0Nj
-cxMDk2MSwxNjczNDIwNTYsNzc3NDExNTAzLDEwMDU4ODA3Njks
-LTcxNTMyMjg2MiwyMDA2NDM3MzkzLC0xMjg0MTU0Njg0LC03Mz
-kyMDk5OTYsMTc0MzQzMDY4OSwtMTQyODQ1NzE0NCwtNTQ0OTcw
-NzQ5LC0xNjA5MTk5NzQ4LC0xMDA4NDkxNjUwLC0xNDQ2OTgzMz
-A5LC0yMDY0NDU5MzQsMTIxMjA2MTQ2NSwtMTU0OTQ3MTUyNSwy
-MDY4NzUxODcxXX0=
+eyJoaXN0b3J5IjpbLTE0ODk4MDcyNDIsLTE2MTI4ODMxNzUsNT
+Q3MDUyMDA2LDY0NjcxMDk2MSwxNjczNDIwNTYsNzc3NDExNTAz
+LDEwMDU4ODA3NjksLTcxNTMyMjg2MiwyMDA2NDM3MzkzLC0xMj
+g0MTU0Njg0LC03MzkyMDk5OTYsMTc0MzQzMDY4OSwtMTQyODQ1
+NzE0NCwtNTQ0OTcwNzQ5LC0xNjA5MTk5NzQ4LC0xMDA4NDkxNj
+UwLC0xNDQ2OTgzMzA5LC0yMDY0NDU5MzQsMTIxMjA2MTQ2NSwt
+MTU0OTQ3MTUyNV19
 -->
