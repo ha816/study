@@ -35,15 +35,17 @@
 >
 
 >**기술 경향을 파악하고 업무 역량을 강화하기 위한 본인의 학습 방법을 구체적으로 설명해주세요.**
->ㅇㄹ
+>
+>소소하게 계속해서 알고리즘 문제를 푼다. Hacker Rank와 leetcode문제를 위주로 수학적인 문제를 풀어보도록 노력하고 있다. 
+>기술 경향은 사실 관심있고 필요에 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0OTgzMjE3NywtNTE4MDExMDgxLC0xNT
-cwNDEyMDU1LDMyNjcyODIyOCwzMzYwODYzODQsMTkxODExNjI0
-MiwxMzg4MDQzNzE4LC0yMTM0ODY0MDc0LC0xMTQwMDc2ODYzLD
-IxNDA3NDM3MDUsMjAzMTM5NzQ2LC0yMDIxNzcwMzM3LC0xOTk0
-Njg1NDUzLC01ODQxMzI4LC05NzA2NjA3NV19
+eyJoaXN0b3J5IjpbNTYwNDc5MDMxLC01MTgwMTEwODEsLTE1Nz
+A0MTIwNTUsMzI2NzI4MjI4LDMzNjA4NjM4NCwxOTE4MTE2MjQy
+LDEzODgwNDM3MTgsLTIxMzQ4NjQwNzQsLTExNDAwNzY4NjMsMj
+E0MDc0MzcwNSwyMDMxMzk3NDYsLTIwMjE3NzAzMzcsLTE5OTQ2
+ODU0NTMsLTU4NDEzMjgsLTk3MDY2MDc1XX0=
 -->
