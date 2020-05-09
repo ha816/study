@@ -59,7 +59,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
-엘라스틱서치는 메모리를 많이 잡아 먹는 애플리케이션이다. 
+엘라스틱서치는 메모리를 많이 잡아 먹는 애플리케이션이다. 우리는 시스템에서 제공되는 물리 메모리를 
 
 # 엘라스틱서치와 가상 메모리
 
@@ -72,6 +72,6 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNjczODMyNiwtMTM5Mzc5NDU5NCwtMT
-Y2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5MzE1MzNdfQ==
+eyJoaXN0b3J5IjpbLTEyMzEzODAzMTksLTEzOTM3OTQ1OTQsLT
+E2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
 -->
