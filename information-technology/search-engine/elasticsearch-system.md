@@ -45,7 +45,9 @@
 
 서버상에서 자바 애플리케이션을 실행하는 경우 JVM 위에서 동작하게 된다. JVM 기반의 애플리케이션은 개발자가 직접 메모리 관리를 하지 않아도 된다는 큰 장점이 있다. 메모리 관리 책임은 JVM이 맡고, GC가 가비지 컬렉션 메커니즘으로 일정주기로 사용하지 않는 메모리를 자동으로 회수한다. 
 
-GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일부  GC동작을 제어할 수도 있다. 그럼 엘라스ㅌ
+GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일부  GC동작을 제어할 수도 있다. 그럼 엘라스틱에 적용된 JVM옵션을 무엇인지 알아보도록 하자. 
+
+엘라스틱서치는 분산 시스템의 특성상 스케일 인/스케일 아웃(Scale In/Scale Out)이 빈번하게 발생할 수 있다. 또한 장애를 복구한다거나 ReIndex 작업 
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -60,6 +62,6 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDc0MTg3NiwtMTM5Mzc5NDU5NCwtMT
+eyJoaXN0b3J5IjpbMTQ5NDg5ODkyNCwtMTM5Mzc5NDU5NCwtMT
 Y2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5MzE1MzNdfQ==
 -->
