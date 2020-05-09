@@ -12,26 +12,22 @@
 
 3년동안 백엔드 웹 서비스에 대한 충분히 경험했고 저의 경력 측면 또는 개인의 발전을 위해 이직 면접을 보고 있습니다.
 
->프로그래밍을 시작한 경위와 본격적으로 투신하고 생업으로 삼기로 결정한 이야기를 해주세요.(우아한형제들 면접)
->앞으로 전망이 좋을 것 같은 분야, 직종을 고려해야 했고, 내 성적으로 가능한 곳
-
-
 > 혹시 질문 있습니까?
 > 일반적으로 이런 질문이 나오면 꼭 어떤 질문을 해서 자신의 열의를 보이는 것이 좋다. 
 > 사려 깊고 조심스러운 질문을 하자 그러면 회사에 대한 좋은 정보를 얻을 수 있다. 면접 도중 흥미로운 애기를 했다면 좀 더 자세히 이야기 해달라. 
 
 만약 질문이 없다면 질문이 없다는 것을 살짝 부드럽게 이야기 하는 것이 좋다. 뭔가 질문을 해야 할것 같기는 한데, 제가 궁금했던 부분을 면접관님과 이야기하면서 알게 되어 질문할게 없습니다. 
 
-
+## 우아한형
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMTE1MzU1NiwzMjY3MjgyMjgsMzM2MD
-g2Mzg0LDE5MTgxMTYyNDIsMTM4ODA0MzcxOCwtMjEzNDg2NDA3
-NCwtMTE0MDA3Njg2MywyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMj
-AyMTc3MDMzNywtMTk5NDY4NTQ1MywtNTg0MTMyOCwtOTcwNjYw
-NzVdfQ==
+eyJoaXN0b3J5IjpbLTE2NjY5NjQ1NTQsMzI2NzI4MjI4LDMzNj
+A4NjM4NCwxOTE4MTE2MjQyLDEzODgwNDM3MTgsLTIxMzQ4NjQw
+NzQsLTExNDAwNzY4NjMsMjE0MDc0MzcwNSwyMDMxMzk3NDYsLT
+IwMjE3NzAzMzcsLTE5OTQ2ODU0NTMsLTU4NDEzMjgsLTk3MDY2
+MDc1XX0=
 -->
