@@ -30,11 +30,15 @@ Flush 작업 성공적으로 마무리되고 디스크 동기화에 성공하면
 다음과 같은 장애 현상을 한번 생각해보자.
 
 >Flush에 의해 루씬 Commit 작업이 시작됬고 완료 되지 못한 상황에서 샤드에 장애가 발생
->이 경우 상대적으로 쉽게 해결이 가능한데, 샤드가 강제 종료되면 진행 중이던 루씬 Commit 작업이 롤백되기 때문에 샤드가 재실행되고 나면 Tran
+>이 경우 상대적으로 쉽게 해결이 가능한데, 샤드가 강제 종료되면 진행 중이던 루씬 Commit 작업이 롤백되기 때문에 샤드가 재실행되고 나면 Translog의 로그 내역으로 간단히 복구가 가능하다. 
+>Translog의 내역을 바탕으로 순차적으로 인메모리 버퍼를 복구하고 Refresh가 수행되면 다음 Flush시점에 루씬 Commit이 수행된다.
+
+>변경사항이 순간적으로 많아져서 루씬의 Commit이 긴시간 일어나게 되었고 그 동안 많은 데이터 변경 요청이 한꺼번에 샤드로 들어온다면?
+>이 경ㅇ
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODM1NzMxODAsLTUzNTUyMTY1MSwxOD
-E0Mjg5MTMzLDE2NzQ1MDc0MjgsMTUxMTUwODg3NF19
+eyJoaXN0b3J5IjpbMjAwOTYwMDQ3NCwtNTM1NTIxNjUxLDE4MT
+QyODkxMzMsMTY3NDUwNzQyOCwxNTExNTA4ODc0XX0=
 -->
