@@ -21,7 +21,7 @@
 ## 우아한형제들
 
 >프로그래밍을 시작한 경위와 본격적으로 투신하고 생업으로 삼기로 결정한 이야기를 해주세요.(우아한형제들 면접)
->앞으로 전망이 좋을 것 같은 분야, 직종을 고려해야 했고, 내 성적으로 가능한 곳 그런 현실적이 이유로 
+>앞으로 전망이 좋을 것 같은 분야, 직종을 고려해야 했고, 내 성적으로 가능한 곳 그런 현실적이 이유로 프로그래머의 길을 시작했다. 거창하게는 아니지만 학교 공부나 코딩 즉 학습한 것이 바로 실제 기술로 적용 시켜 볼 수 있는 프로그래밍의 매력이 
 
 >좋은 개발자가 되기 위해 갖추어야 한다고 생각하는 덕목 셋을 고르고 그 이유를 말해주세요. (예를들어 책임감, 꼼꼼함, 유연성 등등)
 
@@ -31,9 +31,9 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MzU5MjI5OSwzMjY3MjgyMjgsMzM2MD
-g2Mzg0LDE5MTgxMTYyNDIsMTM4ODA0MzcxOCwtMjEzNDg2NDA3
-NCwtMTE0MDA3Njg2MywyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMj
-AyMTc3MDMzNywtMTk5NDY4NTQ1MywtNTg0MTMyOCwtOTcwNjYw
-NzVdfQ==
+eyJoaXN0b3J5IjpbNTc4NzE0ODk0LDMyNjcyODIyOCwzMzYwOD
+YzODQsMTkxODExNjI0MiwxMzg4MDQzNzE4LC0yMTM0ODY0MDc0
+LC0xMTQwMDc2ODYzLDIxNDA3NDM3MDUsMjAzMTM5NzQ2LC0yMD
+IxNzcwMzM3LC0xOTk0Njg1NDUzLC01ODQxMzI4LC05NzA2NjA3
+NV19
 -->
