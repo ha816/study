@@ -4,6 +4,8 @@
 
 # 노드 실행환경과 JVM 옵션
 
+엘라스틱서치와 루씬의 모두 
+
 # 힙 크기를 32GB 이하로 유지하는 이유
 
 # 엘라스틱서치와 가상 메모리
@@ -17,5 +19,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjM5MzE1MzNdfQ==
+eyJoaXN0b3J5IjpbLTExNDc3ODAzMDAsLTE5NjM5MzE1MzNdfQ
+==
 -->
