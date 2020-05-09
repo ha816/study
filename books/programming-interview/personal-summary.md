@@ -29,16 +29,16 @@
 >자기발전에 대한 욕심, 약간의 완벽주의, 열린 마음과 자세 
 
 >**지금까지 읽었던 개발서 중 가장 중요하다고 생각하는 책 3 권을 골라 선정한 이유를 말해주세요**
->언제나 느끼지만 '가장'이란 단어가 들어간 질문은 
+>'가장'이란 단어가 들어간 질문은 언제나 어려운 질문이다. IT 분야는 정말 도메인이 넓고 책의 종류도 많기 때문이다. 그래도 가장 컴퓨터 공학도에세 중요한 기본서는 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMzNzk0NTEwLC01MTgwMTEwODEsLTE1Nz
-A0MTIwNTUsMzI2NzI4MjI4LDMzNjA4NjM4NCwxOTE4MTE2MjQy
-LDEzODgwNDM3MTgsLTIxMzQ4NjQwNzQsLTExNDAwNzY4NjMsMj
-E0MDc0MzcwNSwyMDMxMzk3NDYsLTIwMjE3NzAzMzcsLTE5OTQ2
-ODU0NTMsLTU4NDEzMjgsLTk3MDY2MDc1XX0=
+eyJoaXN0b3J5IjpbLTk2NjY5NTE3OSwtNTE4MDExMDgxLC0xNT
+cwNDEyMDU1LDMyNjcyODIyOCwzMzYwODYzODQsMTkxODExNjI0
+MiwxMzg4MDQzNzE4LC0yMTM0ODY0MDc0LC0xMTQwMDc2ODYzLD
+IxNDA3NDM3MDUsMjAzMTM5NzQ2LC0yMDIxNzcwMzM3LC0xOTk0
+Njg1NDUzLC01ODQxMzI4LC05NzA2NjA3NV19
 -->
