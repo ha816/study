@@ -17,10 +17,12 @@ Flush 작업 성공적으로 마무리되고 디스크 동기화에 성공하면
 동작 순서 정리
 1. 데이터가 추가되면 Translog에 기록되고 동시에 인메모리 버퍼에 추가된다.
 2. Refresh가 수행되면 인메모리 버퍼에서는 사라지지만 Translog에는 계속 남아있다.
+3. Translog가 일정 크기 이상으로 커지면 Flush작업이 수행된다.
+4. Commit Point가 디스크에 Flush된다.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNDI4OTEzMywxNjc0NTA3NDI4LDE1MT
-E1MDg4NzRdfQ==
+eyJoaXN0b3J5IjpbOTAzMDc0NjQyLDE4MTQyODkxMzMsMTY3ND
+UwNzQyOCwxNTExNTA4ODc0XX0=
 -->
