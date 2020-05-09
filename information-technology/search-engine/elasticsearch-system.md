@@ -18,7 +18,11 @@
 
 ## 실행시 자바 8 이상을 사용해야할 이유
 
-최근 급견한 하드웨어 기술의 발달로 CPU나 메모리 자원이 매우 저렴해졌다. 
+최근 급견한 하드웨어 기술의 발달로 CPU나 메모리 자원이 매우 저렴해졌다. 한 서버에서 다수의 CPU나 코어를 탑재하고 메모리도 비교적 넉넉하다. 
+
+###
+
+
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -33,6 +37,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOT
-YzOTMxNTMzXX0=
+eyJoaXN0b3J5IjpbLTE4OTA1OTI5MzAsLTE2NjIwNTE3MTEsND
+QwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
 -->
