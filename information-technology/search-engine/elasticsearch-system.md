@@ -8,7 +8,9 @@
 
 ## 엘라스틱서치 릴리즈 노트
 
+2010년 즈음 오픈 소스로 개발되기 시작해서 2014년 1.0 버전이 공식 출시된 이후로 지금도 매우 빠르게 성장하고 있다. 
 
+실무에서는 2.x ~ 5.x 버전이 아직 많이 사용되고 있다. 하지만 새롭게 엘라스틱 서치를 도입한다면 6.x 이상을 사용할 것을 권장한다. 최신 버전을 사용함으로써 자바와 
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -23,5 +25,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
+eyJoaXN0b3J5IjpbLTE1MDk2MjQ5MTEsNDQwNTMxMDk0LC0xOT
+YzOTMxNTMzXX0=
 -->
