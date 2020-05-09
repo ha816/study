@@ -45,13 +45,14 @@
 
 >**좋아하는 시나 소설, 노래 중심으로 자신을 자유롭게 소개해 주세요. (지원동기/이직사유, 장/단점 등)**
 >
->
+>나는 어떤 사람이다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTIwMTc5ODMsLTUxODAxMTA4MSwtMT
-U3MDQxMjA1NSwzMjY3MjgyMjgsMzM2MDg2Mzg0LDE5MTgxMTYy
-NDIsMTM4ODA0MzcxOCwtMjEzNDg2NDA3NCwtMTE0MDA3Njg2My
-wyMTQwNzQzNzA1LDIwMzEzOTc0NiwtMjAyMTc3MDMzNywtMTk5
-NDY4NTQ1MywtNTg0MTMyOCwtOTcwNjYwNzVdfQ==
+eyJoaXN0b3J5IjpbMTM2NTMzNzg0MywtMTI1MjAxNzk4MywtNT
+E4MDExMDgxLC0xNTcwNDEyMDU1LDMyNjcyODIyOCwzMzYwODYz
+ODQsMTkxODExNjI0MiwxMzg4MDQzNzE4LC0yMTM0ODY0MDc0LC
+0xMTQwMDc2ODYzLDIxNDA3NDM3MDUsMjAzMTM5NzQ2LC0yMDIx
+NzcwMzM3LC0xOTk0Njg1NDUzLC01ODQxMzI4LC05NzA2NjA3NV
+19
 -->
