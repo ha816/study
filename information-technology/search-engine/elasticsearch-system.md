@@ -49,7 +49,11 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 **엘라스틱서치는 분산 시스템의 특성상 스케일 인/스케일 아웃(Scale In/Scale Out)이 빈번하게 발생할 수 있다. 또한 장애를 복구한다거나 ReIndex 작업에 의해 일어나는 데이터 리밸런싱에 의해 많은 메모리를 사용하기 때문에 전체적인 성능향상을 위해 다수의 JVM옵션을 반드시 튜닝해야 한다.** 
 
-일반적인 경우는 엘라스틱서치에서 기본적으로 제공하는 옵션 그대로 실행하면 된다. 
+일반적인 경우는 엘라스틱서치에서 기본적으로 제공하는 옵션 그대로 실행하면 된다. 다시 한번 강조하지만 엘라스틱서치에서 기본적으로 설정한 JVM 옵션은 수정하지 않고 그대로 사용하길 권한다.
+
+엘라스틱서치는 다수의 노드로 구성되며, 서로 유기적으로 동작하는 매우 복잡한 애플리케이션이다. **지금까지 버전업을 해오면서 많은 문제를 해결해왔기 때문에 기본 설정으로 제공하는 JVM옵션들이 각종 문제에 대한 경험을 바탕으로 최적화한 값이다.** 
+
+rkr
 
 # 힙 크기를 32GB 이하로 유지하는 이유
 
@@ -64,6 +68,6 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMDQ2NDQ5MywtMTM5Mzc5NDU5NCwtMT
+eyJoaXN0b3J5IjpbMTkyMzU4NDEwMSwtMTM5Mzc5NDU5NCwtMT
 Y2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5MzE1MzNdfQ==
 -->
