@@ -39,12 +39,13 @@ Flush 작업 성공적으로 마무리되고 디스크 동기화에 성공하면
 
 Translog의 주목적은 클러스터를 운여하는 중에 데이터가 손실되지 않도록 보장하는 것이다. Translog 파일을 일종의 임시 보관소로도 사용할 수 있기 때문에 루씬에 문제가 발생하더라도 데이터의 유실 없이 서비스가 가능해진다. 
 
-운영 중에 샤드에 크래시가 발생할 경우에도 Translog를 사용한다. Translog를 이용하면 샤드를 완벽히 복구할 수 있기 때문이다. 직전 루씬 Commit 작업 이후의 모든 내역이 Translog에 곳
+운영 중에 샤드에 크래시가 발생할 경우에도 Translog를 사용한다. Translog를 이용하면 샤드를 완벽히 복구할 수 있기 때문이다. **직전 루씬 Commit 작업 이후의 모든 내역이 Translog에 고스란히 기록되어 있기 때문에 다시 한번 재실행하면 샤드를 완벽하게 복구하는 것이 가능해 진다.**
 
+하지만 Translog의 크기가 커질 수록 장애 발생시 복구하는데 걸리는 시간도 그에 비례해서 커진다. 복구를 위해선 루씬 Commit 이후 모든 내역을 재실행에서 세그먼트를 재생성하는 과정이 필요하기 때문이다. Translog 파일이 크다는 것은 복구를 위해 재생성해야할 세그먼트가 많다진다는 것ㅇ
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwODYzOTkwNCwyMzM3MDE2MiwtNTM1NT
-IxNjUxLDE4MTQyODkxMzMsMTY3NDUwNzQyOCwxNTExNTA4ODc0
-XX0=
+eyJoaXN0b3J5IjpbNjQ0MDI0MDA2LDIzMzcwMTYyLC01MzU1Mj
+E2NTEsMTgxNDI4OTEzMywxNjc0NTA3NDI4LDE1MTE1MDg4NzRd
+fQ==
 -->
