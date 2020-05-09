@@ -534,13 +534,13 @@ JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶�
 
 LEFT OUTER JOIN에서 쉽게 실수할 수 있는 부분이 여러가지 있다. 이제 LEFT OUTER JOIN을 사용할때 주의할 점을 알아보자. 
 
-실행 계획에서는 어떤 조인을 했는지 알려주지 않으므로 OUTER JOIN을 의도한 쿼리가 INNER JOIN으로 실행되지 않았는지 주의해야 한다. 이 부분도 실수하기 쉬운 부분인데, OUTER JOIN에 레코드가 없을 수도 있는 쪽의 테이블에 대한 조건은 반드시 LEFT JOIN의 ON절에 명시하자. 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다. LEFT OUTER JOIN의 ON 절에 명시되는 조건은 조인되는 레코드가 있을때만 적용된다. 하지만 WHERE 절에 명시되는 조건은 OUTER JOIN이나 INNER JOIN에 관계없이 조인된 결과에 모두 적용된다. 그래서 OUTER JOIN으로 연결되는 테이블이 있는 쿼리에서는 가능하다면 모든 조건을 ON 절에 명시하는 습관을 들이는게 좋다.
+실행 계획에서는 어떤 조인을 했는지 알려주지 않으므로 OUTER JOIN을 의도한 쿼리가 INNER JOIN으로 실행되지 않았는지 주의해야 한다. 이 부분도 실수하기 쉬운 부분인데, **OUTER JOIN에 레코드가 없을 수도 있는 쪽의 테이블에 대한 조건은 반드시 LEFT JOIN의 ON절에 명시하자.** 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다. LEFT OUTER JOIN의 ON 절에 명시되는 조건은 조인되는 레코드가 있을때만 적용된다. 하지만 WHERE 절에 명시되는 조건은 OUTER JOIN이나 INNER JOIN에 관계없이 조인된 결과에 모두 적용된다. 그래서 OUTER JOIN으로 연결되는 테이블이 있는 쿼리에서는 가능하다면 모든 조건을 ON 절에 명시하는 습관을 들이는게 좋다.
 
 ```
 select 
 FROM employees e
 LEFT OUTER JOIN salaries s ON s.emp_no = e.emp_no
-where s.salary > 5000;
+where s.salary > 5000; -- s는 드라이븐 테이블로 없을 수 있는 레코드가 있을 수 있다. ON 절로 옮기도록 하자
 ```
 
 s가 LEFT OUTER JOIN이라는 것은 드라이빙 테이블이 e에 해당한다는 의미다. OUTER JOIN으로 연결되는 테이블 컬럼에 대한 조건이 ON절에 명시되지 않고 WHERE 절에 명시 됬었는데 이는 MySQL 서버에서 이 쿼리는 아래와 같은 쿼리로 변경 후에 실행한다. MySQL 옵티마이저가 쿼리를 변경하면 원래 쿼리는 작성했던 의도와는 다른 결과를 반환 받는다.
@@ -570,11 +570,11 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTAyMzAxODYsLTE0ODk4MDcyNDIsLT
-E2MTI4ODMxNzUsNTQ3MDUyMDA2LDY0NjcxMDk2MSwxNjczNDIw
-NTYsNzc3NDExNTAzLDEwMDU4ODA3NjksLTcxNTMyMjg2MiwyMD
-A2NDM3MzkzLC0xMjg0MTU0Njg0LC03MzkyMDk5OTYsMTc0MzQz
-MDY4OSwtMTQyODQ1NzE0NCwtNTQ0OTcwNzQ5LC0xNjA5MTk5Nz
-Q4LC0xMDA4NDkxNjUwLC0xNDQ2OTgzMzA5LC0yMDY0NDU5MzQs
-MTIxMjA2MTQ2NV19
+eyJoaXN0b3J5IjpbMTIzMTUzODgxOSwtMTk1MDIzMDE4NiwtMT
+Q4OTgwNzI0MiwtMTYxMjg4MzE3NSw1NDcwNTIwMDYsNjQ2NzEw
+OTYxLDE2NzM0MjA1Niw3Nzc0MTE1MDMsMTAwNTg4MDc2OSwtNz
+E1MzIyODYyLDIwMDY0MzczOTMsLTEyODQxNTQ2ODQsLTczOTIw
+OTk5NiwxNzQzNDMwNjg5LC0xNDI4NDU3MTQ0LC01NDQ5NzA3ND
+ksLTE2MDkxOTk3NDgsLTEwMDg0OTE2NTAsLTE0NDY5ODMzMDks
+LTIwNjQ0NTkzNF19
 -->
