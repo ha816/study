@@ -27,11 +27,14 @@ Flush 작업 성공적으로 마무리되고 디스크 동기화에 성공하면
 가장 큰 목적은 장애 복구를 위해서다. 엘라스틱서치는 실시간에 가까운 검색을 제공하기 위해 1초마다 Refresh 작업을 수행하지만 이는 불안정한 상태라고 할 수 있다. (Refresh는 물리적인 디스크로 동기화를 하지 않은 상태다) 
 장애 발생시 완벽한 복구를 위해서는 물리적인 디스크로 동기화 하는 Flush가 언젠가는 이루어 져야만 한다. 하지만 Flush는 매우 무거운 작업이다. 
 
+다음과 같은 장애 현상을 한번 생각해보자.
 
+>Flush에 의해 루씬 Commit 작업이 시작됬고 완료 되지 못한 상황에서 샤드에 장애가 발생
+>이 경우 상대적으로 쉽게 해결이 가능한데, 샤드가 강제 종료되면 진행 중이던 루씬 Commit 작업이 롤백되기 때문에 샤드가 재실행되고 나면 Tran
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNTUyMTY1MSwxODE0Mjg5MTMzLDE2Nz
-Q1MDc0MjgsMTUxMTUwODg3NF19
+eyJoaXN0b3J5IjpbLTE2ODM1NzMxODAsLTUzNTUyMTY1MSwxOD
+E0Mjg5MTMzLDE2NzQ1MDc0MjgsMTUxMTUwODg3NF19
 -->
