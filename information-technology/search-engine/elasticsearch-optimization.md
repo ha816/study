@@ -39,13 +39,17 @@ number_of_replicas
 
 ```
 POST _reindex {
-	"source" : { "index": "movie"} },
-	""
-
+	"source" : { "index": "movie" },
+	"dest" : {"index": "new_movie"}
+}
 ```
+
+# 레플리카 샤드 복제본 수는 얼마가 적당할까?
+
+프라이머리 샤드는 처음 설정한 샤드 개수 변경이 불가능하지만 레플리카 샤드의 복제본 수는 운영 중에도 언제든 변경이 가능하다. 레플리카 샤드를 추가하고 싶은 경우 기존 프라이머리 샤드를 복사하기만 하면
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3ODkxNjExOSwtMzE5MTUwODE1XX0=
+eyJoaXN0b3J5IjpbNTEyNTg1NzU1LC0zMTkxNTA4MTVdfQ==
 -->
