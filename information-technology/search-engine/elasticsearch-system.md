@@ -77,6 +77,10 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 ### 자바 8기반에서는 힙 크기를 32GB이상 사용하지 말자
 
+엘라스틱서치에서는 가급적이면 힙의 크기를 크게 잡되 최대 32GB를 넘지는 말것을 권장한다. 그렇다고 32GB를 초과하는 힙 크기를 설정해도 마냥 문제가 되는 것은 아니다 어떤 이유로 32GB로 제한을 안내하는 것일까?
+
+이 이유는 핫스폿(Hot-
+
 
 ## Ordinary Object Pointer
 
@@ -94,7 +98,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NzE4OTQwOCwtMTkzNjA4MDIwNCwtMT
-M5Mzc5NDU5NCwtMTY2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5
-MzE1MzNdfQ==
+eyJoaXN0b3J5IjpbMTEwMzUyNTU3OCwxNzY3MTg5NDA4LC0xOT
+M2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzExLDQ0MDUz
+MTA5NCwtMTk2MzkzMTUzM119
 -->
