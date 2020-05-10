@@ -649,16 +649,16 @@ WHERE de.from_date > '2000-01-01' AND e.emp_no < 109004
 
 먼저 위 쿼리를 조인 버퍼가 없다고 생각해보자. 그러면 dept_emp 테이블에서 de.from_date 조건을 만족하는 각 레코드 별로 employees 테이블과 조인을 하게 된다. 대략 de.from_date를 만족하는 레코드가 10,000건이고 e.emp_no < 109004를 만족하는 레코드가 9000건이라 해보자. 
 
-dept_emp 테이블의 각 레코드에 의해 employees 테이블을 읽을 때 드리븐 테이블에서 가져오는 결과는 매번 같지만 최종적으로 10,000 * 9000건의 반 
+dept_emp 테이블의 각 레코드에 의해 employees 테이블을 읽을 때 드리븐 테이블에서 가져오는 결과는 매번 같지만 최종적으로 10,000 * 9000건의 반복 작업을 수행하게 된다.  
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNzQ2NjQyOCwyMDc0NjgxNjYxLDk3MT
-A0ODg3MSwtNzk1MjI3OTM1LC02MDQ1NDI3MDQsMTY0NTkzNTMy
-LC0xMzQzODE3MDg4LC0xODY4Mzc3NDA5LDMxMzAxNzY0MiwtMT
-I4NTM4NDI2OCw4MDU5NjA0ODEsMTc5NTMwMjI2NSwtNzQ1NjEx
-MzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQxMTUsLTEyMTQzNjM0Nj
-UsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMiwtMjY0MTg0MTYxLDk4
-ODk0MTU4Nl19
+eyJoaXN0b3J5IjpbLTE0NTA5NzY0NDYsMjA3NDY4MTY2MSw5Nz
+EwNDg4NzEsLTc5NTIyNzkzNSwtNjA0NTQyNzA0LDE2NDU5MzUz
+MiwtMTM0MzgxNzA4OCwtMTg2ODM3NzQwOSwzMTMwMTc2NDIsLT
+EyODUzODQyNjgsODA1OTYwNDgxLDE3OTUzMDIyNjUsLTc0NTYx
+MTM0OSwtMTk3MjUzMTM5OSwtMTQ1MjU0MTE1LC0xMjE0MzYzND
+Y1LDIwMzc1NzQ3MjIsLTE4MjM1MzA3MDIsLTI2NDE4NDE2MSw5
+ODg5NDE1ODZdfQ==
 -->
