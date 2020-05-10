@@ -651,16 +651,18 @@ WHERE de.from_date > '2000-01-01' AND e.emp_no < 109004
 
 dept_emp 테이블의 각 레코드에 의해 employees 테이블을 읽을 때 드리븐 테이블에서 가져오는 결과는 매번 같지만 최종적으로 10,000 * 9000건의 반복 작업을 수행하게 된다.  
 
-같은 처리를 조인 버퍼를 통해 사용하면 훨씬 효율적이된다. 조인 버퍼를 사용할때는 Extra 컬럼에 
+같은 처리를 조인 버퍼를 통해 사용하면 훨씬 효율적이된다. 조인 버퍼를 사용할때는 Extra 컬럼에 조인 버퍼(join buffer)를 이용한다는 것을 알 수 있으며 조인 버퍼는 어떻게 활용 되는지 알아보자.
+
+1. dept_emp 테이블의 from_date의 인덱스를 이용해 만족하는 레코든 (10,000)건을 검색한다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MDAwNTYzNywyMDc0NjgxNjYxLDk3MT
-A0ODg3MSwtNzk1MjI3OTM1LC02MDQ1NDI3MDQsMTY0NTkzNTMy
-LC0xMzQzODE3MDg4LC0xODY4Mzc3NDA5LDMxMzAxNzY0MiwtMT
-I4NTM4NDI2OCw4MDU5NjA0ODEsMTc5NTMwMjI2NSwtNzQ1NjEx
-MzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQxMTUsLTEyMTQzNjM0Nj
-UsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMiwtMjY0MTg0MTYxLDk4
-ODk0MTU4Nl19
+eyJoaXN0b3J5IjpbLTE5ODk2OTk5NTgsMjA3NDY4MTY2MSw5Nz
+EwNDg4NzEsLTc5NTIyNzkzNSwtNjA0NTQyNzA0LDE2NDU5MzUz
+MiwtMTM0MzgxNzA4OCwtMTg2ODM3NzQwOSwzMTMwMTc2NDIsLT
+EyODUzODQyNjgsODA1OTYwNDgxLDE3OTUzMDIyNjUsLTc0NTYx
+MTM0OSwtMTk3MjUzMTM5OSwtMTQ1MjU0MTE1LC0xMjE0MzYzND
+Y1LDIwMzc1NzQ3MjIsLTE4MjM1MzA3MDIsLTI2NDE4NDE2MSw5
+ODg5NDE1ODZdfQ==
 -->
