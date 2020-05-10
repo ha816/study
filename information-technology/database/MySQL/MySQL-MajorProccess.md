@@ -651,12 +651,12 @@ WHERE de.from_date > '2000-01-01' AND e.emp_no < 109004
 
 dept_emp 테이블의 각 레코드에 의해 employees 테이블을 읽을 때 드리븐 테이블에서 가져오는 결과는 매번 같지만 최종적으로 10,000 * 9000건의 반복 작업을 수행하게 된다.  
 
-
+같은 처리를 조인 버퍼를 통해 사용하면 훨씬 효율적이된다. 조인 버퍼를 사용할때는 Extra 컬럼에 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MjI0MjI3NCwyMDc0NjgxNjYxLDk3MT
+eyJoaXN0b3J5IjpbMTc3MDAwNTYzNywyMDc0NjgxNjYxLDk3MT
 A0ODg3MSwtNzk1MjI3OTM1LC02MDQ1NDI3MDQsMTY0NTkzNTMy
 LC0xMzQzODE3MDg4LC0xODY4Mzc3NDA5LDMxMzAxNzY0MiwtMT
 I4NTM4NDI2OCw4MDU5NjA0ODEsMTc5NTMwMjI2NSwtNzQ1NjEx
