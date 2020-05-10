@@ -485,6 +485,8 @@ MySQL은 다른 DBMS보다 조인을 처리하는 방식이 단순하다. 조인
 
 **OUTER JOIN은 반드시 OUTER가 되는 테이블을 먼저 읽어야 하기 때문에 조인 순서를 옵티마이저가 선택할 수 없다.**
 
+사실 우리가 쓰는 ON 과 WHERE 절에는 그 의미의 차이가 있다. ON은 두 테이블간의 관계를 묘사하고 WHERE은 결과로 부터 제거해야할 로ㄹdescribes a relationship between two tables) and a WHERE clause (which removes rows from the result set). This semantic difference should tell you which one to use. While it makes no difference to the result or to the performance, choosing the right syntax will help other readers of your code understand it more quickly.
+
 ### INNER JOIN
 일반적으로 조인이라 함은 INNER JOIN을 뜻한다. MySQL에서 조인은 네스티드-루프 방식만 지원한다. **네스티드-루프 방식이란 일반적으로 프로그램을 작성할 때 두개의 FOR나 WHILE과 같은 반복 루프 문장을 실행하는 형태로 조인이 처리되는 것을 의미한다.**
 
@@ -576,11 +578,11 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg4OTQxNTg2LDE3NzU1NzAwNDYsLTE5NT
-AyMzAxODYsLTE0ODk4MDcyNDIsLTE2MTI4ODMxNzUsNTQ3MDUy
-MDA2LDY0NjcxMDk2MSwxNjczNDIwNTYsNzc3NDExNTAzLDEwMD
-U4ODA3NjksLTcxNTMyMjg2MiwyMDA2NDM3MzkzLC0xMjg0MTU0
-Njg0LC03MzkyMDk5OTYsMTc0MzQzMDY4OSwtMTQyODQ1NzE0NC
-wtNTQ0OTcwNzQ5LC0xNjA5MTk5NzQ4LC0xMDA4NDkxNjUwLC0x
-NDQ2OTgzMzA5XX0=
+eyJoaXN0b3J5IjpbLTczNTYwMjAxOCw5ODg5NDE1ODYsMTc3NT
+U3MDA0NiwtMTk1MDIzMDE4NiwtMTQ4OTgwNzI0MiwtMTYxMjg4
+MzE3NSw1NDcwNTIwMDYsNjQ2NzEwOTYxLDE2NzM0MjA1Niw3Nz
+c0MTE1MDMsMTAwNTg4MDc2OSwtNzE1MzIyODYyLDIwMDY0Mzcz
+OTMsLTEyODQxNTQ2ODQsLTczOTIwOTk5NiwxNzQzNDMwNjg5LC
+0xNDI4NDU3MTQ0LC01NDQ5NzA3NDksLTE2MDkxOTk3NDgsLTEw
+MDg0OTE2NTBdfQ==
 -->
