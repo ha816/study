@@ -537,7 +537,6 @@ JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶�
 **레코드가 없을 수도 있는 쪽의 테이블(드라이븐)에 대한 조건은 반드시 ON절에 명시하자.** 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다.
 **LEFT OUTER JOIN의 ON 절에 명시되는 조건은 조인되는 레코드가 있을때만 적용된다.** 그어 반해 WHERE 절에 명시되는 조건은 OUTER JOIN이나 INNER JOIN에 관계없이 **결과에 모두 적용된다.** 
 사실 ON 과 WHERE 절에는 그 의미의 차이가 있다. ON은 두 테이블간의 관계를 묘사하고 WHERE은 결과로 부터 제거해야할 로우를 묘사한다. 그래서 OUTER JOIN으로 연결되는 테이블의 모든 조건은 ON 절에 명시하는 습관을 들이는게 좋다. 
-**OUTER JOIN이 아닌 쿼리에서는 검색 조건이나 조인 조건을 WHERE 절이나 ON 절중에서 어느곳에 명시해도 성능상 문제나 결과가 차이 나지 않는다.**
 
 ```
 SELECT
@@ -570,7 +569,7 @@ INNER JOIN salaries s ON s.emp_no = e.emp_no
 WHERE s.salary > 5000;
 ```
 
-
+마지막으로 OUTER JOIN이 아닌 쿼리에서는 검색 조건이나 조인 조건을 WHERE 절이나 ON 절중에서 어느곳에 명시해도 성능상 문제나 결과가 차이 나지 않는다.
 
 ### CARTESIAN JOIN(FULL JOIN, CROSS JOIN)
 
@@ -580,7 +579,7 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MTcwMzQyNCwtMTIxNDM2MzQ2NSwyMD
+eyJoaXN0b3J5IjpbLTE0NTI1NDExNSwtMTIxNDM2MzQ2NSwyMD
 M3NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQxODQxNjEsOTg4OTQx
 NTg2LDE3NzU1NzAwNDYsLTE5NTAyMzAxODYsLTE0ODk4MDcyND
 IsLTE2MTI4ODMxNzUsNTQ3MDUyMDA2LDY0NjcxMDk2MSwxNjcz
