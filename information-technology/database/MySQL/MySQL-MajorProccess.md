@@ -535,7 +535,7 @@ JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶�
 실행 계획에서는 어떤 조인을 했는지 알려주지 않으므로 OUTER JOIN을 의도한 쿼리가 INNER JOIN으로 실행되지 않았는지 주의해야 한다. 
 
 **레코드가 없을 수도 있는 쪽의 테이블(드라이븐)에 국한된 조건은 반드시 ON절에 명시하자.** 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다. 
-원론적으로 이야기하자면, ON 과 WHERE 절에는 그 의미의 차이가 있다. ON은 두 테이블간의 관계를 묘사하고 WHERE은 결과로부터 제거해야할 로우를 묘사한다. 
+보다 원론적으로 이야기하자면, ON 과 WHERE 절에는 그 의미의 차이가 있다. ON은 두 테이블간의 관계를 묘사하고 WHERE은 결과로부터 제거해야할 로우를 묘사한다. 
 
 ```
 SELECT
@@ -579,11 +579,11 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NTYxMTM0OSwtMTk3MjUzMTM5OSwtMT
-Q1MjU0MTE1LC0xMjE0MzYzNDY1LDIwMzc1NzQ3MjIsLTE4MjM1
-MzA3MDIsLTI2NDE4NDE2MSw5ODg5NDE1ODYsMTc3NTU3MDA0Ni
-wtMTk1MDIzMDE4NiwtMTQ4OTgwNzI0MiwtMTYxMjg4MzE3NSw1
-NDcwNTIwMDYsNjQ2NzEwOTYxLDE2NzM0MjA1Niw3Nzc0MTE1MD
-MsMTAwNTg4MDc2OSwtNzE1MzIyODYyLDIwMDY0MzczOTMsLTEy
-ODQxNTQ2ODRdfQ==
+eyJoaXN0b3J5IjpbLTEwNzc1NDQxNTksLTc0NTYxMTM0OSwtMT
+k3MjUzMTM5OSwtMTQ1MjU0MTE1LC0xMjE0MzYzNDY1LDIwMzc1
+NzQ3MjIsLTE4MjM1MzA3MDIsLTI2NDE4NDE2MSw5ODg5NDE1OD
+YsMTc3NTU3MDA0NiwtMTk1MDIzMDE4NiwtMTQ4OTgwNzI0Miwt
+MTYxMjg4MzE3NSw1NDcwNTIwMDYsNjQ2NzEwOTYxLDE2NzM0Mj
+A1Niw3Nzc0MTE1MDMsMTAwNTg4MDc2OSwtNzE1MzIyODYyLDIw
+MDY0MzczOTNdfQ==
 -->
