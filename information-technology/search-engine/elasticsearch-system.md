@@ -89,7 +89,9 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 32비트 시스템은 하나의 포인터를 표현하기 위해 32비트가 필요하다. 32비트를 이용하면 최대 4GB의 메모리 주소밖에 가리킬 수 없다. 하지만 하드웨어 기술의 발달로 64비트 컴퓨터가 보급되었다. 
 
-64비트 컴퓨터의 경우 메모리상의 주소를 가르키는 포인터 1개를 64비트로 표현하다보니 많은 메모리 공간의 낭비가 발생한다. 인식가능한 물리적 메로리 크기가 늘어나긴 했지만 그에 따라 활용 가능한 메모리의 물리적 공간 활용성은 상대적으로 떨어지게 되었다. 이 뿐만 아니라 CPU 내부에는 빠른 연산을 위해 다양한 캐시가 있다. 캐시 적중률을 높이기 휘새 주메모리와 캐시 사이에선 지속적으로 값의 이도
+64비트 컴퓨터의 경우 메모리상의 주소를 가르키는 포인터 1개를 64비트로 표현하다보니 많은 메모리 공간의 낭비가 발생한다. 인식가능한 물리적 메로리 크기가 늘어나긴 했지만 그에 따라 활용 가능한 메모리의 물리적 공간 활용성은 상대적으로 떨어지게 되었다. 이 뿐만 아니라 CPU 내부에는 빠른 연산을 위해 다양한 캐시가 있다. 캐시 적중률을 높이기 휘새 주메모리와 캐시 사이에선 지속적으로 값의 이동이 발생한다. 그런데 이때 이동하는 값들도 64비트이기 때문에 32비트에 비해 상대적으로 더 큰 대역폭을 사용하게 된다. 
+
+
 
 
 # 엘라스틱서치와 가상 메모리
@@ -103,8 +105,8 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODM3NTQzODMsMTI0MjgyNjMyLDg1OT
-gwMjI4OCwxMzAyNjY1MTU2LDE3NjcxODk0MDgsLTE5MzYwODAy
-MDQsLTEzOTM3OTQ1OTQsLTE2NjIwNTE3MTEsNDQwNTMxMDk0LC
-0xOTYzOTMxNTMzXX0=
+eyJoaXN0b3J5IjpbMjAwMTkzMzgyOCwxMjQyODI2MzIsODU5OD
+AyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMTkzNjA4MDIw
+NCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcxMSw0NDA1MzEwOTQsLT
+E5NjM5MzE1MzNdfQ==
 -->
