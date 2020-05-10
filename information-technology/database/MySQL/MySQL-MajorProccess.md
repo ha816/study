@@ -625,7 +625,7 @@ WHERE de.dept_no = d.dept_no AND e.emp_no = de.emp_no;
 
 ```
 FOR( record1 IN departments){
-	FOR(record 2 IN dept_emp && record2.dept = no = record1.dept_no){
+	FOR(record 2 IN dept_emp && record2.dept =no = record1.dept_no){
 		FOR(recrod3 IN employees && record3.emp_no = record2.emp_no){
 			RETURN {record1.dept_name, record3.first_name}
 		}
@@ -636,11 +636,11 @@ FOR( record1 IN departments){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjgzNzc0MDksMzEzMDE3NjQyLC0xMj
-g1Mzg0MjY4LDgwNTk2MDQ4MSwxNzk1MzAyMjY1LC03NDU2MTEz
-NDksLTE5NzI1MzEzOTksLTE0NTI1NDExNSwtMTIxNDM2MzQ2NS
-wyMDM3NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQxODQxNjEsOTg4
-OTQxNTg2LDE3NzU1NzAwNDYsLTE5NTAyMzAxODYsLTE0ODk4MD
-cyNDIsLTE2MTI4ODMxNzUsNTQ3MDUyMDA2LDY0NjcxMDk2MSwx
-NjczNDIwNTZdfQ==
+eyJoaXN0b3J5IjpbMzk1ODkzMjczLC0xODY4Mzc3NDA5LDMxMz
+AxNzY0MiwtMTI4NTM4NDI2OCw4MDU5NjA0ODEsMTc5NTMwMjI2
+NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQxMTUsLT
+EyMTQzNjM0NjUsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMiwtMjY0
+MTg0MTYxLDk4ODk0MTU4NiwxNzc1NTcwMDQ2LC0xOTUwMjMwMT
+g2LC0xNDg5ODA3MjQyLC0xNjEyODgzMTc1LDU0NzA1MjAwNiw2
+NDY3MTA5NjFdfQ==
 -->
