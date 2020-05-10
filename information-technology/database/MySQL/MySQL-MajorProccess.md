@@ -613,15 +613,20 @@ NATURAL JOIN은 조인 조건을 줄줄이 나열하지 않아도 된다는 편�
 
 ## Single-sweep multi JOIN
 
-ㅡ
+MySQL의 네스티드-루프 조인을 자주 "Single-sweep multi join"이라 표현하기도 한다. 이는 표현이 난해하다는 이유로 네스티드 루프로 표현이 바뀌었다.  Single-sweep multi JOIN의 의미는 조인에 참여하는 테이블의 개수만큼 FOR나 WHILE과 같은 반복 루프가 중첩되는 것을 말한다. 
+
+```
+SELECT d.dempt_name, e.first_name
+FRO
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNzEwOTIzMywzMTMwMTc2NDIsLTEyOD
-UzODQyNjgsODA1OTYwNDgxLDE3OTUzMDIyNjUsLTc0NTYxMTM0
-OSwtMTk3MjUzMTM5OSwtMTQ1MjU0MTE1LC0xMjE0MzYzNDY1LD
-IwMzc1NzQ3MjIsLTE4MjM1MzA3MDIsLTI2NDE4NDE2MSw5ODg5
-NDE1ODYsMTc3NTU3MDA0NiwtMTk1MDIzMDE4NiwtMTQ4OTgwNz
-I0MiwtMTYxMjg4MzE3NSw1NDcwNTIwMDYsNjQ2NzEwOTYxLDE2
-NzM0MjA1Nl19
+eyJoaXN0b3J5IjpbLTIwMTc1MjYyMTgsMzEzMDE3NjQyLC0xMj
+g1Mzg0MjY4LDgwNTk2MDQ4MSwxNzk1MzAyMjY1LC03NDU2MTEz
+NDksLTE5NzI1MzEzOTksLTE0NTI1NDExNSwtMTIxNDM2MzQ2NS
+wyMDM3NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQxODQxNjEsOTg4
+OTQxNTg2LDE3NzU1NzAwNDYsLTE5NTAyMzAxODYsLTE0ODk4MD
+cyNDIsLTE2MTI4ODMxNzUsNTQ3MDUyMDA2LDY0NjcxMDk2MSwx
+NjczNDIwNTZdfQ==
 -->
