@@ -543,7 +543,9 @@ JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶�
 SELECT
 FROM employees e
 LEFT OUTER JOIN salaries s ON s.emp_no = e.emp_no
-where s.salary > 5000; -- s는 드라이븐 테이블로 없을 수 있는 레코드가 있을 수 있다. where 절에 명시하면 모든 결과에서 
+where s.salary > 5000; 
+-- s는 드라이븐 테이블로 없을 수 있는 레코드가 있을 수 있다. 
+-- where 절에 명시하면 모든 결과에서 s.salary > 5000인것을 찾으므로 s.salary가 null인 경우 
 ```
 
 OUTER JOIN으로 연결되는 테이블 s에 대해서 s.salary 컬럼에 대한 조건이 ON절에 명시되지 않고 WHERE 절에 명시 됬었는데 이는 MySQL 서버에서 이 쿼리는 아래와 같은 쿼리로 변경 후에 실행한다. MySQL 옵티마이저가 쿼리를 변경하면 원래 쿼리는 작성했던 의도와는 다른 결과를 반환 받는다.
@@ -580,7 +582,7 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMjY4NTM2OCwtMTgyMzUzMDcwMiwtMj
+eyJoaXN0b3J5IjpbMjAzNzU3NDcyMiwtMTgyMzUzMDcwMiwtMj
 Y0MTg0MTYxLDk4ODk0MTU4NiwxNzc1NTcwMDQ2LC0xOTUwMjMw
 MTg2LC0xNDg5ODA3MjQyLC0xNjEyODgzMTc1LDU0NzA1MjAwNi
 w2NDY3MTA5NjEsMTY3MzQyMDU2LDc3NzQxMTUwMywxMDA1ODgw
