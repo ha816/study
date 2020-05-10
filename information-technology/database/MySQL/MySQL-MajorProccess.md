@@ -586,12 +586,23 @@ SQL 표준에서 CROSS JOIN은 카르테시안 조인과 같은 조인 방식을
 MySQL에서 INNER JOIN를 명시하는 방법은 여러가지가 있다. 아래 쿼리들은 모두 표기법만 다를 뿐 모두 같은 쿼리다. 
 ```
 SELECT * 
-FROM employees e, sa
+FROM employees e, salaries s
+WHERE e.emp_no = s.emp_no;
+
+SELECT * 
+FROM employees e
+INNER JOIN salaries s ON s.emp_no = e.emp_no;
+
+SELECT * 
+FROM employyes e
+INNER JOIN salaries s USING (emp_no)
 ```
+
+참고로 Using 키워드는 두 테이블의 조인
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NjA0OTUxMCw4MDU5NjA0ODEsMTc5NT
+eyJoaXN0b3J5IjpbMTkwODAwMjcwMCw4MDU5NjA0ODEsMTc5NT
 MwMjI2NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQx
 MTUsLTEyMTQzNjM0NjUsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMi
 wtMjY0MTg0MTYxLDk4ODk0MTU4NiwxNzc1NTcwMDQ2LC0xOTUw
