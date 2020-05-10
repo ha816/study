@@ -121,6 +121,8 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 ## 엘라스틱서치에서 Compressed OOP 사용하기
 
+엘라스틱서치 
+
 
 
 # 엘라스틱서치와 가상 메모리
@@ -134,9 +136,9 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNzg3Nzc4MywtNDM0MjM1MjUyLC0xNT
-gwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2
-MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMT
-kzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcxMSw0NDA1
-MzEwOTQsLTE5NjM5MzE1MzNdfQ==
+eyJoaXN0b3J5IjpbLTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00Mz
+QyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMz
+ODI4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1NiwxNz
+Y3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYy
+MDUxNzExLDQ0MDUzMTA5NCwtMTk2MzkzMTUzM119
 -->
