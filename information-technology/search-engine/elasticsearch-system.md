@@ -99,6 +99,8 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산을 위해 포인터를 압축해서 표현하는 일종의 트릭이다. 이 트랙의 핵심원리는 포인터가 객체의 정확한 메모리 주소를 가리키게 하는것이 아니라 상대적인 오브젝트 오프셋(Object Offeset)을 가리키도록 살짝 변형해서 동작시키는 것이다. 만약 8비트로 이 트린을 사용하면 256바이트의 물리적인 주소공간을 표현하는게 아니라 256개의 객체를 가리킬 수 있게 된다. 한 객체의 크기가 8비트라고 하면 8비트 포인터를 이용하면 기존보다 무려 8배나 큰 주소를 사용하는 것이 가능하다. 
 
+자바는 데이터 타입에 따라 객체를 8비트 ~ 64비트까지 8 배수 형태로 힙 메모리에 생성하기 때문에 Compressed OOP를 이용해 포인터가 객체를 가르키게 한다면 32비트만으로 최대 32GB의 힙 메모리 고강
+
 
 
 # 엘라스틱서치와 가상 메모리
@@ -112,9 +114,9 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQ2MTk4OSwtMTU4MDIwNDQ2NywxOT
-QyNjcwMTI4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4
-OCwxMzAyNjY1MTU2LDE3NjcxODk0MDgsLTE5MzYwODAyMDQsLT
-EzOTM3OTQ1OTQsLTE2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOTYz
-OTMxNTMzXX0=
+eyJoaXN0b3J5IjpbLTE4MDM0ODAxNzcsLTE1ODAyMDQ0NjcsMT
+k0MjY3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIy
+ODgsMTMwMjY2NTE1NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC
+0xMzkzNzk0NTk0LC0xNjYyMDUxNzExLDQ0MDUzMTA5NCwtMTk2
+MzkzMTUzM119
 -->
