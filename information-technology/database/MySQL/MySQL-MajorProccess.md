@@ -534,18 +534,16 @@ JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶�
 
 실행 계획에서는 어떤 조인을 했는지 알려주지 않으므로 OUTER JOIN을 의도한 쿼리가 INNER JOIN으로 실행되지 않았는지 주의해야 한다. 
 
-**레코드가 없을 수도 있는 쪽(드라이븐)의 테이블에 대한 조건은 반드시 ON절에 명시하자.** 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다.
+**레코드가 없을 수도 있는 쪽의 테이블(드라이븐)에 대한 조건은 반드시 ON절에 명시하자.** 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다.
 **LEFT OUTER JOIN의 ON 절에 명시되는 조건은 조인되는 레코드가 있을때만 적용된다.** 그어 반해 WHERE 절에 명시되는 조건은 OUTER JOIN이나 INNER JOIN에 관계없이 **결과에 모두 적용된다.** 
-사실 ON 과 WHERE 절에는 그 의미의 차이가 있다. ON은 두 테이블간의 관계를 묘사하고 WHERE은 결과로 부터 제거해야할 로우를 묘사한다. 의미에 맞는 신택스를 사용해야 코드를 이해하고 읽는데 도움이 된다. 
-
-그래서 OUTER JOIN으로 연결되는 테이블이 있는 쿼리에서는 가능하다면 모든 조건을 ON 절에 명시하는 습관을 들이는게 좋다.
+사실 ON 과 WHERE 절에는 그 의미의 차이가 있다. ON은 두 테이블간의 관계를 묘사하고 WHERE은 결과로 부터 제거해야할 로우를 묘사한다. 그래서 OUTER JOIN으로 연결되는 테이블의 모든 조건은 ON 절에 명시하는 습관을 들이는게 좋다.
 
 
 ```
 SELECT
 FROM employees e
 LEFT OUTER JOIN salaries s ON s.emp_no = e.emp_no
-where s.salary > 5000; -- s는 드라이븐 테이블로 없을 수 있는 레코드가 있을 수 있다. ON 절로 옮기도록 하자
+where s.salary > 5000; -- s는 드라이븐 테이블로 없을 수 있는 레코드가 있을 수 있다. where 절에 명시하면 모든 결과에서 
 ```
 
 OUTER JOIN으로 연결되는 테이블 s에 대해서 s.salary 컬럼에 대한 조건이 ON절에 명시되지 않고 WHERE 절에 명시 됬었는데 이는 MySQL 서버에서 이 쿼리는 아래와 같은 쿼리로 변경 후에 실행한다. MySQL 옵티마이저가 쿼리를 변경하면 원래 쿼리는 작성했던 의도와는 다른 결과를 반환 받는다.
@@ -582,11 +580,11 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjM1MzA3MDIsLTI2NDE4NDE2MSw5OD
-g5NDE1ODYsMTc3NTU3MDA0NiwtMTk1MDIzMDE4NiwtMTQ4OTgw
-NzI0MiwtMTYxMjg4MzE3NSw1NDcwNTIwMDYsNjQ2NzEwOTYxLD
-E2NzM0MjA1Niw3Nzc0MTE1MDMsMTAwNTg4MDc2OSwtNzE1MzIy
-ODYyLDIwMDY0MzczOTMsLTEyODQxNTQ2ODQsLTczOTIwOTk5Ni
-wxNzQzNDMwNjg5LC0xNDI4NDU3MTQ0LC01NDQ5NzA3NDksLTE2
-MDkxOTk3NDhdfQ==
+eyJoaXN0b3J5IjpbLTYwMjY4NTM2OCwtMTgyMzUzMDcwMiwtMj
+Y0MTg0MTYxLDk4ODk0MTU4NiwxNzc1NTcwMDQ2LC0xOTUwMjMw
+MTg2LC0xNDg5ODA3MjQyLC0xNjEyODgzMTc1LDU0NzA1MjAwNi
+w2NDY3MTA5NjEsMTY3MzQyMDU2LDc3NzQxMTUwMywxMDA1ODgw
+NzY5LC03MTUzMjI4NjIsMjAwNjQzNzM5MywtMTI4NDE1NDY4NC
+wtNzM5MjA5OTk2LDE3NDM0MzA2ODksLTE0Mjg0NTcxNDQsLTU0
+NDk3MDc0OV19
 -->
