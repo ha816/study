@@ -542,13 +542,13 @@ JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶�
 SELECT
 FROM employees e
 LEFT OUTER JOIN salaries s ON s.emp_no = e.emp_no
-where s.salary > 5000; 
+WHERE s.salary > 5000; 
 ```
 
-위 쿼리는 LEFT OUTER JOIN을 쓴 의미가 없는 코드이다. where 절에 명시하면 모든 결과에서 s.salary > 5000인것을 찾으므로 s.salary가 null인 결과는 모두 사라져버린다. 즉 LEFT OUTER JOIN을 쓴 의미가 없다.
+위 쿼리는 LEFT OUTER JOIN을 쓴 의미가 없는 코드이다. 왜냐하면 WHERE 절에  s.salary > 5000를 명시하였기 때문에 모든 결과에서 s.salary가 null인 레코드는 모두 사라져버리기 때문이다.
 
 
-OUTER JOIN으로 연결되는 테이블 s에 대해서 s.salary 컬럼에 대한 조건이 ON절에 명시되지 않고 WHERE 절에 명시 됬었는데 이는 MySQL 서버에서 이 쿼리는 아래와 같은 쿼리로 변경 후에 실행한다. MySQL 옵티마이저가 쿼리를 변경하면 원래 쿼리는 작성했던 의도와는 다른 결과를 반환 받는다.
+MySQL 서버에서 이 쿼리는 아래와 같은 쿼리로 변경 후에 실행한다. MySQL 옵티마이저가 쿼리를 변경하면 원래 쿼리는 작성했던 의도와는 다른 결과를 반환 받는다.
 
 ```
 select 
@@ -582,7 +582,7 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTA3NDE0OSwyMDM3NTc0NzIyLC0xOD
+eyJoaXN0b3J5IjpbMTE1MDE2MjgwMiwyMDM3NTc0NzIyLC0xOD
 IzNTMwNzAyLC0yNjQxODQxNjEsOTg4OTQxNTg2LDE3NzU1NzAw
 NDYsLTE5NTAyMzAxODYsLTE0ODk4MDcyNDIsLTE2MTI4ODMxNz
 UsNTQ3MDUyMDA2LDY0NjcxMDk2MSwxNjczNDIwNTYsNzc3NDEx
