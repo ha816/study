@@ -641,16 +641,21 @@ FOR( record1 IN departments){
 
 그런데 어떤 방식으로도 드리븐 테이블의 풀 테이블 스캔이나 인덱스 풀 스캔을 피할 수 없다면 옵티아미저는 **드라이빙 테이블에서 읽은 레코드를 메모리에 캐시한 후 드리븐 테이블과 이 메모리 캐시를 조인하는 형태로 처리한다. 이때 사용되는 메모리 캐시를 조인 버퍼(Join buffer)라고 한다.** 조인 버퍼는 join_buffer_size라는 시스템 설정 변수로 크기를 제한할 수 있으며, 조인이 완료되면 조인 버퍼는 바로 해제 된다. 
 
+```
+SELECT * 
+FROM dept_emp de, employees e
+WHERE de.from_date > '2000-01-01' AND e.emp_no < 109004
 
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MzY3MjQyMywyMDc0NjgxNjYxLDk3MT
-A0ODg3MSwtNzk1MjI3OTM1LC02MDQ1NDI3MDQsMTY0NTkzNTMy
-LC0xMzQzODE3MDg4LC0xODY4Mzc3NDA5LDMxMzAxNzY0MiwtMT
-I4NTM4NDI2OCw4MDU5NjA0ODEsMTc5NTMwMjI2NSwtNzQ1NjEx
-MzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQxMTUsLTEyMTQzNjM0Nj
-UsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMiwtMjY0MTg0MTYxLDk4
-ODk0MTU4Nl19
+eyJoaXN0b3J5IjpbLTE2MTE0MTIxODUsMjA3NDY4MTY2MSw5Nz
+EwNDg4NzEsLTc5NTIyNzkzNSwtNjA0NTQyNzA0LDE2NDU5MzUz
+MiwtMTM0MzgxNzA4OCwtMTg2ODM3NzQwOSwzMTMwMTc2NDIsLT
+EyODUzODQyNjgsODA1OTYwNDgxLDE3OTUzMDIyNjUsLTc0NTYx
+MTM0OSwtMTk3MjUzMTM5OSwtMTQ1MjU0MTE1LC0xMjE0MzYzND
+Y1LDIwMzc1NzQ3MjIsLTE4MjM1MzA3MDIsLTI2NDE4NDE2MSw5
+ODg5NDE1ODZdfQ==
 -->
