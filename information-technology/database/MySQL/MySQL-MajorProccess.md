@@ -608,18 +608,18 @@ NATURAL JOIN salaries s
 NATURAL JOIN은 두 테이블에 존재하는 컬럼 중에서 서로 이름이 같은 모든 컬럼으로 조인을 하게 된다. 
 즉 위 쿼리에서 employees 테이블에 존재하는 컬럼과 salaries 테이블 컬럼에 존재하는 컬럼 중에서 서로 이름이 같은 모든 컬럼으로 조인을 하게 된다. 
 
-NATURAL JOIN은 조인 조건을 줄줄이 나열하지 않아도 된다는 편리함이 있지만, 사실 각 테이블의 컬럼이 이름에 의해 자동으로 변
+NATURAL JOIN은 조인 조건을 줄줄이 나열하지 않아도 된다는 편리함이 있지만, 사실 각 테이블의 컬럼이 이름에 의해 자동으로 변경될 수 있다는 문제가 있다. 즉, NATURAL JOIN으로 조인하는 테이블은 같은 컬럼명을 사용할 때 자동으로 조인 조건으로 사용되버릴 수 있다는 점을 항상 고려해야 한다. 또한 애플리케이션이 변경되면서 테이블의 구조를 변경할때도 NATURAL JOIN으로 조인되는 테이블이 있는지, 그리고 일일이 그 테이블의 컬럼을 비교하면서 같은 컬럼명이 존재하는지 확인해봐야 한다. 이는 상당히 성가신 작업이 될것이고 유지보수 비용만 높일 것이다. 따라서 NATURAL JOIN은 이런 방식의 조인이 있ㄷ
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzOTI4MjIyLDgwNTk2MDQ4MSwxNzk1Mz
-AyMjY1LC03NDU2MTEzNDksLTE5NzI1MzEzOTksLTE0NTI1NDEx
-NSwtMTIxNDM2MzQ2NSwyMDM3NTc0NzIyLC0xODIzNTMwNzAyLC
-0yNjQxODQxNjEsOTg4OTQxNTg2LDE3NzU1NzAwNDYsLTE5NTAy
-MzAxODYsLTE0ODk4MDcyNDIsLTE2MTI4ODMxNzUsNTQ3MDUyMD
-A2LDY0NjcxMDk2MSwxNjczNDIwNTYsNzc3NDExNTAzLDEwMDU4
-ODA3NjldfQ==
+eyJoaXN0b3J5IjpbLTExNjc0NTE1MjYsODA1OTYwNDgxLDE3OT
+UzMDIyNjUsLTc0NTYxMTM0OSwtMTk3MjUzMTM5OSwtMTQ1MjU0
+MTE1LC0xMjE0MzYzNDY1LDIwMzc1NzQ3MjIsLTE4MjM1MzA3MD
+IsLTI2NDE4NDE2MSw5ODg5NDE1ODYsMTc3NTU3MDA0NiwtMTk1
+MDIzMDE4NiwtMTQ4OTgwNzI0MiwtMTYxMjg4MzE3NSw1NDcwNT
+IwMDYsNjQ2NzEwOTYxLDE2NzM0MjA1Niw3Nzc0MTE1MDMsMTAw
+NTg4MDc2OV19
 -->
