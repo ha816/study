@@ -639,13 +639,14 @@ FOR( record1 IN departments){
 
 조인은 드라이빙 테이블에서 일치하는 레코드의 건수 만큼 드리븐 테이블을 검색하면서 처리된다. 즉 드라이빙 테이블을 쭉 읽게 되지만 드리븐 테이블은 여러번 읽게 된다는 것이다. 예를 들어 드라이빙 테이블에 일치하는 레코드가 1000건 이었는데, 드리븐 테이블 조인 조건이 인덱스를 이용할 수 없었다면 드리븐 테이블에 연결되는 레코드를 찾기 위해 1000번의 풀 테이블 스캔을 해야 한다. 그래서 드리븐 테이블을 검색할때 인덱스를 사용할 수 없는 쿼리는 상당히 느려지며, MySQL 옵티마이저는 최대한 드리븐 테이블 검색에 인덱스를 사용할 수 있도록 실행 계획을 수립한다.
 
+그런데 어떤 방식으로도 드리븐 테이블의 풀 테이블 스캔이나 인덱스 풀 스캔을 피할 수 없다면 옵티아미저는 드라이빙 테이블에서 읽은 레코드를 메모리에 캐시한 후 드리븐 테이블
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDU0MjcwNCwxNjQ1OTM1MzIsLTEzND
-M4MTcwODgsLTE4NjgzNzc0MDksMzEzMDE3NjQyLC0xMjg1Mzg0
-MjY4LDgwNTk2MDQ4MSwxNzk1MzAyMjY1LC03NDU2MTEzNDksLT
-E5NzI1MzEzOTksLTE0NTI1NDExNSwtMTIxNDM2MzQ2NSwyMDM3
-NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQxODQxNjEsOTg4OTQxNT
-g2LDE3NzU1NzAwNDYsLTE5NTAyMzAxODYsLTE0ODk4MDcyNDIs
-LTE2MTI4ODMxNzVdfQ==
+eyJoaXN0b3J5IjpbLTE4NTE3MDI3NjAsLTYwNDU0MjcwNCwxNj
+Q1OTM1MzIsLTEzNDM4MTcwODgsLTE4NjgzNzc0MDksMzEzMDE3
+NjQyLC0xMjg1Mzg0MjY4LDgwNTk2MDQ4MSwxNzk1MzAyMjY1LC
+03NDU2MTEzNDksLTE5NzI1MzEzOTksLTE0NTI1NDExNSwtMTIx
+NDM2MzQ2NSwyMDM3NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQxOD
+QxNjEsOTg4OTQxNTg2LDE3NzU1NzAwNDYsLTE5NTAyMzAxODYs
+LTE0ODk4MDcyNDJdfQ==
 -->
