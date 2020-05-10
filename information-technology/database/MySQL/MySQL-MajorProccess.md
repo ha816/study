@@ -658,15 +658,17 @@ dept_emp 테이블의 각 레코드에 의해 employees 테이블을 읽을 때 
 3. employees 테이블의 프라이머리 키를 이용해  (emp_no < 109004) 조건을 만족하는 레코드를 검색한다.
 4. 3번에서 검색된 결과(employees)에 2번의 캐시된 조인 버퍼의 레코드(dept_emp)를 결합해서 반환한다.
 
-중요한 점은 조인 버퍼가 사용되는 쿼리에서는 조인의 순서가 거꾸로인 것처럼 실행된다는 것이다.  dept_emp 테이블이 드라이빙 테이블이기 때문에 결과를 조인버퍼에 담아두고, 드리븐 테이블인 employees를 읽어 조인 버퍼에서 일치하는 
+중요한 점은 조인 버퍼가 사용되는 쿼리에서는 조인의 순서가 거꾸로인 것처럼 실행된다는 것이다.  dept_emp 테이블이 드라이빙 테이블이기 때문에 결과를 조인버퍼에 담아두고, 드리븐 테이블인 employees를 읽어 조인 버퍼에서 일치하는 레코드를 찾는 방식으로 처리된다. **일반적으로 조인이 수행된 후 가져오는 결과는 드라이빙 테이블의 순서로 결정되지만 조인 버퍼에서는 결과의 정렬 순서가 흐트러질 수 있음을 기억해야 한다.** 
+
+> 조인 버퍼의 경우, 처음 테이블의 결과가 너무 많아서 조인 버퍼에 전부
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEyMTQ4MTg4LC0xMzkxMDc1NzcwLC0xOT
-g5Njk5OTU4LDIwNzQ2ODE2NjEsOTcxMDQ4ODcxLC03OTUyMjc5
-MzUsLTYwNDU0MjcwNCwxNjQ1OTM1MzIsLTEzNDM4MTcwODgsLT
-E4NjgzNzc0MDksMzEzMDE3NjQyLC0xMjg1Mzg0MjY4LDgwNTk2
-MDQ4MSwxNzk1MzAyMjY1LC03NDU2MTEzNDksLTE5NzI1MzEzOT
-ksLTE0NTI1NDExNSwtMTIxNDM2MzQ2NSwyMDM3NTc0NzIyLC0x
-ODIzNTMwNzAyXX0=
+eyJoaXN0b3J5IjpbLTE2MDAzNDE3NzUsLTEzOTEwNzU3NzAsLT
+E5ODk2OTk5NTgsMjA3NDY4MTY2MSw5NzEwNDg4NzEsLTc5NTIy
+NzkzNSwtNjA0NTQyNzA0LDE2NDU5MzUzMiwtMTM0MzgxNzA4OC
+wtMTg2ODM3NzQwOSwzMTMwMTc2NDIsLTEyODUzODQyNjgsODA1
+OTYwNDgxLDE3OTUzMDIyNjUsLTc0NTYxMTM0OSwtMTk3MjUzMT
+M5OSwtMTQ1MjU0MTE1LC0xMjE0MzYzNDY1LDIwMzc1NzQ3MjIs
+LTE4MjM1MzA3MDJdfQ==
 -->
