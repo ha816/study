@@ -594,15 +594,24 @@ FROM employees e
 INNER JOIN salaries s ON s.emp_no = e.emp_no;
 
 SELECT * 
-FROM employyes e
+FROM employees e
 INNER JOIN salaries s USING (emp_no)
 ```
 
-참고로 Using 키워드는 두 테이블의 조인
+참고로 Using 키워드는 두 테이블의 조인 컬럼이 같은 이름을 가질때만 사용할 수 있다.
+```
+SELECT * 
+FROM employees e
+NATURAL JOIN salaries s
+```
+
+NATURAL JOIN은 employees 테이블에 존재하는 컬럼과 salaries 테이블
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODAwMjcwMCw4MDU5NjA0ODEsMTc5NT
+eyJoaXN0b3J5IjpbMTI1ODI2MTcyMCw4MDU5NjA0ODEsMTc5NT
 MwMjI2NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQx
 MTUsLTEyMTQzNjM0NjUsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMi
 wtMjY0MTg0MTYxLDk4ODk0MTU4NiwxNzc1NTcwMDQ2LC0xOTUw
