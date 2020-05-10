@@ -79,7 +79,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 엘라스틱서치에서는 가급적이면 힙의 크기를 크게 잡되 최대 32GB를 넘지는 말것을 권장한다. 그렇다고 32GB를 초과하는 힙 크기를 설정해도 마냥 문제가 되는 것은 아니다 어떤 이유로 32GB로 제한을 안내하는 것일까?
 
-이 이유는 핫스폿(Hot-
+이 이유는 핫스폿(Hot-Spot) JVM의 Object Pointer 정책 때문이다. 사실 모든 자바 기반 애플리케이션에는 Object Pointer 정책이 모두 동일하게 적용되기 때문에 최대 힙 크기를 32GB로 제한하는 것은 모든 자바 기반 애플리케이션에게 동일하게 해당하는 내용이다. 
 
 
 ## Ordinary Object Pointer
@@ -98,7 +98,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzUyNTU3OCwxNzY3MTg5NDA4LC0xOT
+eyJoaXN0b3J5IjpbMTMwMjY2NTE1NiwxNzY3MTg5NDA4LC0xOT
 M2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzExLDQ0MDUz
 MTA5NCwtMTk2MzkzMTUzM119
 -->
