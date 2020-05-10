@@ -477,9 +477,7 @@ SELECT * FROM employees GROUP BY last_name ORDER BY first_name
 
 MySQL은 다른 DBMS보다 조인을 처리하는 방식이 단순하다. 조인방식은 네스티드-루프로 알려진 중첩된 루프와 같은 형태만 지원한다. 그리고 조인되는 각 테이블 간의 레코드를 어떻게 연결할지에 따라 여러 가지 종류의 조인으로 나뉜다.
 
-## 조인의 종류
-
-크게 INNER JOIN과 OUTER JOIN으로 구분할 수 있고, OUTER JOIN은 다시 LEFT OUTER JOIN과 RIGHT OUTER JOIN 그리고 FULL OUTER JOIN으로 구분할 수 있다. 그리고 조인 조건을 어떻게 명시하느냐에 따라 NATURAL JOIN과 CROSS JOIN(FULL JOIN, CARTESIAN JOIN)으로도 구분할 수 있다.
+조인은 크게 INNER JOIN과 OUTER JOIN으로 구분할 수 있고, OUTER JOIN은 다시 LEFT OUTER JOIN과 RIGHT OUTER JOIN 그리고 FULL OUTER JOIN으로 구분할 수 있다. 그리고 조인 조건을 어떻게 명시하느냐에 따라 NATURAL JOIN과 CROSS JOIN(FULL JOIN, CARTESIAN JOIN)으로도 구분할 수 있다.
 
 **조인 처리에서 어느 테이블을 먼저 읽을지 결정하는 것은 매우 중요하며, 그에 따라 처리할 작업량이 크게 달라진다.** 
 
@@ -573,9 +571,11 @@ WHERE s.salary > 5000;
 
 카르테시안 조인은 FULL조인 또는 CROSS JOIN이라고도 한다. 일반적으로 조인을 수행하기 위해선 하나의 테이블과 다른 테이블간에 연결조건이 필요하다. 하지만 카르테시안 조인은 이 조긴 조건 자체가 없어 2개의 테이블의 모든 레코드 조합을 결과로 가져오는 조인 방식이다. 카르테시안 조인은 레코드 건수가 적으면 특별히 문제가 되지 않는다. 하지만 레코드 건수가 많아지면 조인 결과가 기하급수적으로 늘어나므로 MySQL 서버 자체를 응답 불능 상태로 만들어버릴 수도 있다. 
 
+조인의 양쪽 테이블이 모두 레코드 1건인 쿼리를 제외하면, 애플리케이션에서 사용되는 카테시안 조인은 의도하지 않은 경우가 대부분이다. 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NDQ5ODExOCwtMTk1MDIzMDE4NiwtMT
+eyJoaXN0b3J5IjpbMTc3NTU3MDA0NiwtMTk1MDIzMDE4NiwtMT
 Q4OTgwNzI0MiwtMTYxMjg4MzE3NSw1NDcwNTIwMDYsNjQ2NzEw
 OTYxLDE2NzM0MjA1Niw3Nzc0MTE1MDMsMTAwNTg4MDc2OSwtNz
 E1MzIyODYyLDIwMDY0MzczOTMsLTEyODQxNTQ2ODQsLTczOTIw
