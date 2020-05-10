@@ -577,18 +577,14 @@ WHERE s.salary > 5000;
 
 조인의 양쪽 테이블이 모두 레코드 1건인 쿼리를 제외하면, 애플리케이션에서 사용되는 카테시안 조인은 의도하지 않은 경우가 대부분이다. N개의 테이블의 조인이 수행되는 쿼리에서는 반드시 조인 조건은 N-1개(또는 그 이상)이 필요하며 모든 테이블은 반드시 1번 이상 조인 조건에 사용되야 카르테시안 조인을 피할 수 있다. 조인되는 테이블이 많아지고 조인 조건이 복자해질 수록 의도하지 않은 카르테시안 조인이 발생할 가능성이 크기 때문에 주의해야 한다.
 
-```
-
-
-``` 
-
+SQL 표준에서 CROSS JOIN은 카르테시안 조인과 같으
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NTI1MzkxOCwxNzk1MzAyMjY1LC03ND
-U2MTEzNDksLTE5NzI1MzEzOTksLTE0NTI1NDExNSwtMTIxNDM2
-MzQ2NSwyMDM3NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQxODQxNj
-EsOTg4OTQxNTg2LDE3NzU1NzAwNDYsLTE5NTAyMzAxODYsLTE0
-ODk4MDcyNDIsLTE2MTI4ODMxNzUsNTQ3MDUyMDA2LDY0NjcxMD
-k2MSwxNjczNDIwNTYsNzc3NDExNTAzLDEwMDU4ODA3NjksLTcx
-NTMyMjg2Ml19
+eyJoaXN0b3J5IjpbOTY3MDI0NjUxLDE3OTUzMDIyNjUsLTc0NT
+YxMTM0OSwtMTk3MjUzMTM5OSwtMTQ1MjU0MTE1LC0xMjE0MzYz
+NDY1LDIwMzc1NzQ3MjIsLTE4MjM1MzA3MDIsLTI2NDE4NDE2MS
+w5ODg5NDE1ODYsMTc3NTU3MDA0NiwtMTk1MDIzMDE4NiwtMTQ4
+OTgwNzI0MiwtMTYxMjg4MzE3NSw1NDcwNTIwMDYsNjQ2NzEwOT
+YxLDE2NzM0MjA1Niw3Nzc0MTE1MDMsMTAwNTg4MDc2OSwtNzE1
+MzIyODYyXX0=
 -->
