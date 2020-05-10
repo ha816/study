@@ -580,9 +580,14 @@ WHERE s.salary > 5000;
 SQL 표준에서 CROSS JOIN은 카르테시안 조인과 같은 조인 방식을 의미하지만 MySQL에서 CROSS JOIN은 INNEr JOIN고 같은 조인 방식을 말한다. MySQL에서 CROSS JOIN을 사용하는 경우 INNER JOIN과 같이 ON절이나 WHERE절에 조건을 부여하는 것이 가능하며, 이렇게 작성된 CROSS JOIN은 INNER JOIN과 같은 방식으로 동작한다. 그래서 MySQL에서 CROSS JOIN 카르테시안 조인이 될 수도 있고 아닐 수도 있다.  
 
 사실 MySQL에서는 카르테시안 조인과 INNER JOIN이 문법으로 구분되는 것이 아니다. JOIN시 연결되는 조건이 적절히 있다면 INNER JOIN으로 연결 조건이 없다면 CARTESIAN JOIN이 되는 것이다. 그래서 사실 CROSS JOIN이나 INNER JOIN을 특별히 구분해서 사용할 필요는 없다.
+
+## NATURAL JOIN
+
+MySQL에서 INNER JOIN를 명시하는 방법은 여러가지가 있다. 아래 쿼리들은 모두 표기법만 다를 뿐 모두 같은 쿼리다. 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3OTcyOTIwNiw4MDU5NjA0ODEsMTc5NT
+eyJoaXN0b3J5IjpbLTQ1ODAzNjIwMiw4MDU5NjA0ODEsMTc5NT
 MwMjI2NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQx
 MTUsLTEyMTQzNjM0NjUsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMi
 wtMjY0MTg0MTYxLDk4ODk0MTU4NiwxNzc1NTcwMDQ2LC0xOTUw
