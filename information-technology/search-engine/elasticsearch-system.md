@@ -73,7 +73,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 ### 운영체제에 50%의 메모리 공간 보장하자
 
-엘라스틱샤드는 내부에 루씬을 가지고 있으며 루씬은 새그먼트 생성 및 관리를 위해 커널 시스템 캐시를 최대한 많이 활용하고 잇따. 실시간 검색을 지
+엘라스틱샤드는 내부에 루씬을 가지고 있으며 루씬은 새그먼트 생성 및 관리를 위해 커널 시스템 캐시를 최대한 많이 활용하고 잇따. 실시간 검색을 지원하기 위해서는 루씬이 최대한 많은 시스템 캐시를 확보하도록 지원해야 한다. 시스템 캐시는 운영체제가 가지고 있는 메모리 공간으로 커널 내부에 존재한다. 그러므로 물리적인 메모리 공간 50%는 운영체제가 자유롭게 사용하고 나머지는 엘라스틱서치에 할당하는 것이 적절하다. 
 
 ### 자바 8기반에서는 힙 크기를 32GB이상 사용하지 말자
 
@@ -94,7 +94,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDg3NTczMTcsLTE5MzYwODAyMDQsLT
-EzOTM3OTQ1OTQsLTE2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOTYz
-OTMxNTMzXX0=
+eyJoaXN0b3J5IjpbMTc2NzE4OTQwOCwtMTkzNjA4MDIwNCwtMT
+M5Mzc5NDU5NCwtMTY2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5
+MzE1MzNdfQ==
 -->
