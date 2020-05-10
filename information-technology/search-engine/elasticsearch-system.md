@@ -87,7 +87,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 자바에서는 모든 객체가 힙 영역에 생성된다. 그리고 이렇게 생성된 객체는 모두 포인터를 가지고 이를 통해 객체에 접근한다. JVM은 힙 영역에 생성된 객체에 접근하기 위해 포인터의 주소를 Ordinary Object Pointer(OOP)라고 하는 특수한 자료구조를 만들어서 관리하고 있으며, 이러한 OOP들은 CPU처리 단위에 따라 동작하는 방식이 약간 달라진다.
 
-
+32비트 시스템은 하나의 포인터를 표현하기 위해 32비트가 필요하다. 32비트를 이용하면 최대 4GB의 메모리 주소밖에 가리킬 수 없다. 
 
 
 # 엘라스틱서치와 가상 메모리
@@ -101,8 +101,8 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NzkwNjA0OSw4NTk4MDIyODgsMTMwMj
-Y2NTE1NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0
-NTk0LC0xNjYyMDUxNzExLDQ0MDUzMTA5NCwtMTk2MzkzMTUzM1
-19
+eyJoaXN0b3J5IjpbMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAyNj
+Y1MTU2LDE3NjcxODk0MDgsLTE5MzYwODAyMDQsLTEzOTM3OTQ1
+OTQsLTE2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOTYzOTMxNTMzXX
+0=
 -->
