@@ -115,7 +115,11 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 * 고성능 서버를 가지고 있을때
 
-* 전문 검색을 주목적으로 엘라스티서치를 사
+* 전문 검색을 주목적으로 엘라스티서치를 사용하는 경우
+* 일반적인 데이터필드에서 정렬/집계 작업을 많이 하는 경우
+* 전문 필드에서 정렬/집계 작업을 많이 하는 경우
+
+## 엘라스틱서치에서 Compressed OOP 사용하기
 
 
 
@@ -130,7 +134,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMjU1MjY3MywtNDM0MjM1MjUyLC0xNT
+eyJoaXN0b3J5IjpbMTMwNzg3Nzc4MywtNDM0MjM1MjUyLC0xNT
 gwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2
 MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMT
 kzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcxMSw0NDA1
