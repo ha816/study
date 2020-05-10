@@ -633,12 +633,12 @@ FOR( record1 IN departments){
 }
 ```
 
-
+위 의사코드를 보면 3번 중첩이 되긴 했지만 전체적으로는 반폭 루프가 1개다. 즉 반복 루프를 돌면서 레코드 단위로 모든 조인 대상 테이블을 차례대로 읽는 방식을 "Single-sweep multi j"
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4ODY2NTE5LC0xODY4Mzc3NDA5LDMxMz
+eyJoaXN0b3J5IjpbNDQwNjgzNzgxLC0xODY4Mzc3NDA5LDMxMz
 AxNzY0MiwtMTI4NTM4NDI2OCw4MDU5NjA0ODEsMTc5NTMwMjI2
 NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQxMTUsLT
 EyMTQzNjM0NjUsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMiwtMjY0
