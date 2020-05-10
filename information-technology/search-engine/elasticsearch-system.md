@@ -81,7 +81,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 이 이유는 핫스폿(Hot-Spot) JVM의 Object Pointer 정책 때문이다. 사실 모든 자바 기반 애플리케이션에는 Object Pointer 정책이 모두 동일하게 적용되기 때문에 최대 힙 크기를 32GB로 제한하는 것은 모든 자바 기반 애플리케이션에게 동일하게 해당하는 내용이다. 
  
- Object Pointer는 간단히말해 객체의 메모리 번지를 표현하는 주소값이다. 힙에 생성된 모든 객체는 이런 주소값으로 접근하게 된다. 자바 JVM은 32비트와 64비트를 모두 제공하며 이런 사실을 미루어 짐작하면 32비트 JVM은 32비트, 64비트 JVM은 64 비트 주소값을 가질 것처럼 보인ㄷ
+ Object Pointer는 간단히말해 객체의 메모리 번지를 표현하는 주소값이다. 힙에 생성된 모든 객체는 이런 주소값으로 접근하게 된다. 자바 JVM은 32비트와 64비트를 모두 제공하며 이런 사실을 미루어 짐작하면 32비트 JVM은 32비트, 64비트 JVM은 64 비트 주소값을 가질 것처럼 보인다. 하지만 예쌍과 다르게 모두 32비트 Object Pointer를 사용하고 있다. 
 
 ## Ordinary Object Pointer
 
@@ -99,7 +99,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDQ1NjEwNDYsMTMwMjY2NTE1NiwxNz
-Y3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYy
-MDUxNzExLDQ0MDUzMTA5NCwtMTk2MzkzMTUzM119
+eyJoaXN0b3J5IjpbODU5ODAyMjg4LDEzMDI2NjUxNTYsMTc2Nz
+E4OTQwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1
+MTcxMSw0NDA1MzEwOTQsLTE5NjM5MzE1MzNdfQ==
 -->
