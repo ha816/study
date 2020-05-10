@@ -640,13 +640,15 @@ FOR( record1 IN departments){
 조인은 드라이빙 테이블에서 일치하는 레코드의 건수 만큼 드리븐 테이블을 검색하면서 처리된다. 즉 드라이빙 테이블을 쭉 읽게 되지만 드리븐 테이블은 여러번 읽게 된다는 것이다. 예를 들어 드라이빙 테이블에 일치하는 레코드가 1000건 이었는데, 드리븐 테이블 조인 조건이 인덱스를 이용할 수 없었다면 드리븐 테이블에 연결되는 레코드를 찾기 위해 1000번의 풀 테이블 스캔을 해야 한다. 그래서 드리븐 테이블을 검색할때 인덱스를 사용할 수 없는 쿼리는 상당히 느려지며, MySQL 옵티마이저는 최대한 드리븐 테이블 검색에 인덱스를 사용할 수 있도록 실행 계획을 수립한다.
 
 그런데 어떤 방식으로도 드리븐 테이블의 풀 테이블 스캔이나 인덱스 풀 스캔을 피할 수 없다면 옵티아미저는 **드라이빙 테이블에서 읽은 레코드를 메모리에 캐시한 후 드리븐 테이블과 이 메모리 캐시를 조인하는 형태로 처리한다. 이때 사용되는 메모리 캐시를 조인 버퍼(Join buffer)라고 한다.** 조인 버퍼는 join_buffer_size라는 시스템 설정 변수로 크기를 제한할 수 있으며, 조인이 완료되면 조인 버퍼는 바로 해제 된다. 
+
+두 테이블이 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTIyNzkzNSwtNjA0NTQyNzA0LDE2ND
-U5MzUzMiwtMTM0MzgxNzA4OCwtMTg2ODM3NzQwOSwzMTMwMTc2
-NDIsLTEyODUzODQyNjgsODA1OTYwNDgxLDE3OTUzMDIyNjUsLT
-c0NTYxMTM0OSwtMTk3MjUzMTM5OSwtMTQ1MjU0MTE1LC0xMjE0
-MzYzNDY1LDIwMzc1NzQ3MjIsLTE4MjM1MzA3MDIsLTI2NDE4ND
-E2MSw5ODg5NDE1ODYsMTc3NTU3MDA0NiwtMTk1MDIzMDE4Niwt
-MTQ4OTgwNzI0Ml19
+eyJoaXN0b3J5IjpbOTcxMDQ4ODcxLC03OTUyMjc5MzUsLTYwND
+U0MjcwNCwxNjQ1OTM1MzIsLTEzNDM4MTcwODgsLTE4NjgzNzc0
+MDksMzEzMDE3NjQyLC0xMjg1Mzg0MjY4LDgwNTk2MDQ4MSwxNz
+k1MzAyMjY1LC03NDU2MTEzNDksLTE5NzI1MzEzOTksLTE0NTI1
+NDExNSwtMTIxNDM2MzQ2NSwyMDM3NTc0NzIyLC0xODIzNTMwNz
+AyLC0yNjQxODQxNjEsOTg4OTQxNTg2LDE3NzU1NzAwNDYsLTE5
+NTAyMzAxODZdfQ==
 -->
