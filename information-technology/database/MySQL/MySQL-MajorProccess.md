@@ -645,13 +645,14 @@ FOR( record1 IN departments){
 SELECT * 
 FROM dept_emp de, employees e
 WHERE de.from_date > '2000-01-01' AND e.emp_no < 109004
-
 ```
+
+먼저 위 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTE0MTIxODUsMjA3NDY4MTY2MSw5Nz
+eyJoaXN0b3J5IjpbLTEzMzI0MDcwNDUsMjA3NDY4MTY2MSw5Nz
 EwNDg4NzEsLTc5NTIyNzkzNSwtNjA0NTQyNzA0LDE2NDU5MzUz
 MiwtMTM0MzgxNzA4OCwtMTg2ODM3NzQwOSwzMTMwMTc2NDIsLT
 EyODUzODQyNjgsODA1OTYwNDgxLDE3OTUzMDIyNjUsLTc0NTYx
