@@ -654,15 +654,17 @@ dept_emp 테이블의 각 레코드에 의해 employees 테이블을 읽을 때 
 같은 처리를 조인 버퍼를 통해 사용하면 훨씬 효율적이된다. 조인 버퍼를 사용할때는 Extra 컬럼에 조인 버퍼(join buffer)를 이용한다는 것을 알 수 있으며 조인 버퍼는 어떻게 활용 되는지 알아보자.
 
 1. dept_emp 테이블의 from_date의 인덱스를 이용해 만족하는 레코든 (10,000)건을 검색한다. 
+2. 조인에 필요한 나머지 컬럼들을 모두 dept_emp 테이블로 읽어서 조인버퍼에 저장한다.
+3. employees 테이블의 프라이머리 키를 이용해  emp_no
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODk2OTk5NTgsMjA3NDY4MTY2MSw5Nz
-EwNDg4NzEsLTc5NTIyNzkzNSwtNjA0NTQyNzA0LDE2NDU5MzUz
-MiwtMTM0MzgxNzA4OCwtMTg2ODM3NzQwOSwzMTMwMTc2NDIsLT
-EyODUzODQyNjgsODA1OTYwNDgxLDE3OTUzMDIyNjUsLTc0NTYx
-MTM0OSwtMTk3MjUzMTM5OSwtMTQ1MjU0MTE1LC0xMjE0MzYzND
-Y1LDIwMzc1NzQ3MjIsLTE4MjM1MzA3MDIsLTI2NDE4NDE2MSw5
-ODg5NDE1ODZdfQ==
+eyJoaXN0b3J5IjpbMTUwODc5NTg5MSwtMTk4OTY5OTk1OCwyMD
+c0NjgxNjYxLDk3MTA0ODg3MSwtNzk1MjI3OTM1LC02MDQ1NDI3
+MDQsMTY0NTkzNTMyLC0xMzQzODE3MDg4LC0xODY4Mzc3NDA5LD
+MxMzAxNzY0MiwtMTI4NTM4NDI2OCw4MDU5NjA0ODEsMTc5NTMw
+MjI2NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQxMT
+UsLTEyMTQzNjM0NjUsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMiwt
+MjY0MTg0MTYxXX0=
 -->
