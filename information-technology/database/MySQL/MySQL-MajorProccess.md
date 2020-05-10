@@ -545,13 +545,10 @@ LEFT OUTER JOIN salaries s ON s.emp_no = e.emp_no
 WHERE s.salary > 5000; 
 ```
 
-위 쿼리는 LEFT OUTER JOIN을 쓴 의미가 없는 코드이다. 왜냐하면 WHERE 절에  s.salary > 5000를 명시하였기 때문에 모든 결과에서 s.salary가 null인 레코드는 모두 사라져버리기 때문이다.
-
-
-MySQL 서버에서 이 쿼리는 아래와 같은 쿼리로 변경 후에 실행한다. MySQL 옵티마이저가 쿼리를 변경하면 원래 쿼리는 작성했던 의도와는 다른 결과를 반환 받는다.
+위 쿼리는 LEFT OUTER JOIN을 쓴 의미가 없는 코드이다. 왜냐하면 WHERE 절에  s.salary > 5000를 명시하였기 때문에 모든 결과에서 s.salary가 null인 레코드는 모두 사라져버리기 때문이다. 그래서 MySQL 서버에서 이 쿼리는 아래와 같은 쿼리로 변경 후에 실행한다. 
 
 ```
-select 
+SELECT
 FROM employees e
 INNER JOIN salaries s ON s.emp_no = e.emp_no
 where s.salary > 5000;
@@ -582,11 +579,11 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MDE2MjgwMiwyMDM3NTc0NzIyLC0xOD
-IzNTMwNzAyLC0yNjQxODQxNjEsOTg4OTQxNTg2LDE3NzU1NzAw
-NDYsLTE5NTAyMzAxODYsLTE0ODk4MDcyNDIsLTE2MTI4ODMxNz
-UsNTQ3MDUyMDA2LDY0NjcxMDk2MSwxNjczNDIwNTYsNzc3NDEx
-NTAzLDEwMDU4ODA3NjksLTcxNTMyMjg2MiwyMDA2NDM3MzkzLC
-0xMjg0MTU0Njg0LC03MzkyMDk5OTYsMTc0MzQzMDY4OSwtMTQy
-ODQ1NzE0NF19
+eyJoaXN0b3J5IjpbLTEyMTQzNjM0NjUsMjAzNzU3NDcyMiwtMT
+gyMzUzMDcwMiwtMjY0MTg0MTYxLDk4ODk0MTU4NiwxNzc1NTcw
+MDQ2LC0xOTUwMjMwMTg2LC0xNDg5ODA3MjQyLC0xNjEyODgzMT
+c1LDU0NzA1MjAwNiw2NDY3MTA5NjEsMTY3MzQyMDU2LDc3NzQx
+MTUwMywxMDA1ODgwNzY5LC03MTUzMjI4NjIsMjAwNjQzNzM5My
+wtMTI4NDE1NDY4NCwtNzM5MjA5OTk2LDE3NDM0MzA2ODksLTE0
+Mjg0NTcxNDRdfQ==
 -->
