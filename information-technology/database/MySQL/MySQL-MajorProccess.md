@@ -523,7 +523,7 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 
 이중 FOR문 안에 일치하는 레코드가 있으면 INNER JOIN과 같은 결과를 만들어 내지만, 없는 경우에는 그저 TABLE1에 있는 결과를 버리지 않고 그대로 결과에 포함한다.
 
-INNER 테이블이 조인 결과에 전혀 영향을 미치지 않고, OUTER 테이블 내용에 따라 조인의 결과가 결정되는 것이 OUTER JOIN의 특징이다. 물론 OUTER 테이블과 INNER 테이블의 관계가 1:M의 관계라면 최종 결과 레코드 건수가 늘어날 수 있지만, OUTER 테이블의 레코드가 INNER 테이블에 일치하는 레코드가 없다고 해서 버려지지는 않는다.
+INNER 테이블 조인 결과에 전혀 영향을 미치지 않고, OUTER 테이블 내용에 따라 조인의 결과가 결정되는 것이 OUTER JOIN의 특징이다. 물론 OUTER 테이블과 INNER 테이블의 관계가 1:M의 관계라면 최종 결과 레코드 건수가 늘어날 수 있지만, OUTER 테이블의 레코드가 INNER 테이블에 일치하는 레코드가 없다고 해서 버려지지는 않는다.
 
 OUTER JOIN은 조인의 결과를 결정하는 OUTER 테이블이 조인의 왼쪽에 있는지 오른쪽에 있는지에 따라 LEFT OUTER JOIN과 RIGHT OUTER JOIN 그리고 FULL OUTER JOIN으로 나뉜다.
 
@@ -616,11 +616,11 @@ NATURAL JOIN은 조인 조건을 줄줄이 나열하지 않아도 된다는 편�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MTY0NzUyMiwtMTI4NTM4NDI2OCw4MD
-U5NjA0ODEsMTc5NTMwMjI2NSwtNzQ1NjExMzQ5LC0xOTcyNTMx
-Mzk5LC0xNDUyNTQxMTUsLTEyMTQzNjM0NjUsMjAzNzU3NDcyMi
-wtMTgyMzUzMDcwMiwtMjY0MTg0MTYxLDk4ODk0MTU4NiwxNzc1
-NTcwMDQ2LC0xOTUwMjMwMTg2LC0xNDg5ODA3MjQyLC0xNjEyOD
-gzMTc1LDU0NzA1MjAwNiw2NDY3MTA5NjEsMTY3MzQyMDU2LDc3
-NzQxMTUwM119
+eyJoaXN0b3J5IjpbMzEzMDE3NjQyLC0xMjg1Mzg0MjY4LDgwNT
+k2MDQ4MSwxNzk1MzAyMjY1LC03NDU2MTEzNDksLTE5NzI1MzEz
+OTksLTE0NTI1NDExNSwtMTIxNDM2MzQ2NSwyMDM3NTc0NzIyLC
+0xODIzNTMwNzAyLC0yNjQxODQxNjEsOTg4OTQxNTg2LDE3NzU1
+NzAwNDYsLTE5NTAyMzAxODYsLTE0ODk4MDcyNDIsLTE2MTI4OD
+MxNzUsNTQ3MDUyMDA2LDY0NjcxMDk2MSwxNjczNDIwNTYsNzc3
+NDExNTAzXX0=
 -->
