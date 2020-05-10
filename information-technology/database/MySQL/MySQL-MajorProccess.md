@@ -637,11 +637,11 @@ FOR( record1 IN departments){
 
 ## 조인 버퍼를 이용한 조인(Using join buffer)
 
-조인은 드라이빙 테이블에서 일치하는 레코드의 건수 만큼 드리븐 
+조인은 드라이빙 테이블에서 일치하는 레코드의 건수 만큼 드리븐 테이블을 검색하면서 처리된다. 즉 드라이빙 테이블을 쭉 읽게 되지만 드리븐 테이블은 여러번 읽게 된다는 것이다. 예를 들어 드라이빙 테이블에 일치하는 레코드가 1000건 이었는데, 드리븐 테이블 조인 조건이 인덱스를 이용할 수 없었다면 드리븐 테이블에 연결되는 레코드를 찾기 위해 1000번의 풀 테이블 스캔을 해야 한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTE4Njk2NzksMTY0NTkzNTMyLC0xMz
+eyJoaXN0b3J5IjpbLTIwMDQyOTE1MzUsMTY0NTkzNTMyLC0xMz
 QzODE3MDg4LC0xODY4Mzc3NDA5LDMxMzAxNzY0MiwtMTI4NTM4
 NDI2OCw4MDU5NjA0ODEsMTc5NTMwMjI2NSwtNzQ1NjExMzQ5LC
 0xOTcyNTMxMzk5LC0xNDUyNTQxMTUsLTEyMTQzNjM0NjUsMjAz
