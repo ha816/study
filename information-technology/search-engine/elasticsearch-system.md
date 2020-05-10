@@ -91,7 +91,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 64비트 컴퓨터의 경우 메모리상의 주소를 가르키는 포인터 1개를 64비트로 표현하다보니 많은 메모리 공간의 낭비가 발생한다. 인식가능한 물리적 메로리 크기가 늘어나긴 했지만 그에 따라 활용 가능한 메모리의 물리적 공간 활용성은 상대적으로 떨어지게 되었다. 이 뿐만 아니라 CPU 내부에는 빠른 연산을 위해 다양한 캐시가 있다. 캐시 적중률을 높이기 휘새 주메모리와 캐시 사이에선 지속적으로 값의 이동이 발생한다. 그런데 이때 이동하는 값들도 64비트이기 때문에 32비트에 비해 상대적으로 더 큰 대역폭을 사용하게 된다. 
 
-64비트가 되면서 물리적 한계는 극복했지만 상대적으로 메모리 공간 낭비나 연산 속도 저하등의 단점도 나타났다. 자바의 경우도 마찬가지다. 
+64비트가 되면서 물리적 한계는 극복했지만 상대적으로 메모리 공간 낭비나 연산 속도 저하등의 단점도 나타났다. 자바의 경우도 마찬가지다. 32비트가 되면서 OOP
 
 
 
@@ -106,8 +106,8 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEyND
-I4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5NDA4
-LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzExLD
-Q0MDUzMTA5NCwtMTk2MzkzMTUzM119
+eyJoaXN0b3J5IjpbLTEzOTEzODQyOTEsMTk0MjY3MDEyOCwyMD
+AxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1
+NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC
+0xNjYyMDUxNzExLDQ0MDUzMTA5NCwtMTk2MzkzMTUzM119
 -->
