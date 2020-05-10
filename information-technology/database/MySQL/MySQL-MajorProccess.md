@@ -623,16 +623,22 @@ WHERE de.dept_no = d.dept_no AND e.emp_no = de.emp_no;
 
 위 쿼리의 실행계획을 보면 d, de 그리고 e로 순서대로 테이블이 읽힌다. 이를 FOR문으로 표시하면 다음과 같다. 
 
-FOR( record1 )
+FOR( record1 IN departments){
+	FOR(record 2 IN dept_emp && record2.dept = no = record1.dept_no) {
+		FOR(recrod3 IN employees && record3.emp_no = record2.emp_no){
+		
+		}
+	}
+}
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDc0NTg4NTYsMzEzMDE3NjQyLC0xMj
-g1Mzg0MjY4LDgwNTk2MDQ4MSwxNzk1MzAyMjY1LC03NDU2MTEz
-NDksLTE5NzI1MzEzOTksLTE0NTI1NDExNSwtMTIxNDM2MzQ2NS
-wyMDM3NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQxODQxNjEsOTg4
-OTQxNTg2LDE3NzU1NzAwNDYsLTE5NTAyMzAxODYsLTE0ODk4MD
-cyNDIsLTE2MTI4ODMxNzUsNTQ3MDUyMDA2LDY0NjcxMDk2MSwx
-NjczNDIwNTZdfQ==
+eyJoaXN0b3J5IjpbLTYyNjU4MjU4OCwzMTMwMTc2NDIsLTEyOD
+UzODQyNjgsODA1OTYwNDgxLDE3OTUzMDIyNjUsLTc0NTYxMTM0
+OSwtMTk3MjUzMTM5OSwtMTQ1MjU0MTE1LC0xMjE0MzYzNDY1LD
+IwMzc1NzQ3MjIsLTE4MjM1MzA3MDIsLTI2NDE4NDE2MSw5ODg5
+NDE1ODYsMTc3NTU3MDA0NiwtMTk1MDIzMDE4NiwtMTQ4OTgwNz
+I0MiwtMTYxMjg4MzE3NSw1NDcwNTIwMDYsNjQ2NzEwOTYxLDE2
+NzM0MjA1Nl19
 -->
