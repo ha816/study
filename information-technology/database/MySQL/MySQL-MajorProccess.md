@@ -486,7 +486,8 @@ MySQL은 다른 DBMS보다 조인을 처리하는 방식이 단순하다. 조인
 **OUTER JOIN은 반드시 OUTER가 되는 테이블을 먼저 읽어야 하기 때문에 조인 순서를 옵티마이저가 선택할 수 없다.**
 
 ## INNER JOIN
-일반적으로 조인이라 함은 INNER JOIN을 뜻한다. MySQL에서 조인은 네스티드-루프 방식만 지원한다. **네스티드-루프 방식이란 일반적으로 프로그램을 작성할 때 두개의 FOR나 WHILE과 같은 반복 루프 문장을 실행하는 형태로 조인이 처리되는 것을 의미한다.**
+
+일반적으로 조인이라 함은 INNER JOIN을 뜻한다. MySQL에서 조인은 **네스티드-루프 방식**만 지원한다. **네스티드-루프 방식이란 일반적으로 프로그램을 작성할 때 두개의 FOR나 WHILE과 같은 반복 루프 문장을 실행하는 형태로 조인이 처리되는 것을 의미한다.**
 
 ```
 For ( record1 IN TABLE1) { //외부 루프 (OUTER)
@@ -615,11 +616,11 @@ NATURAL JOIN은 조인 조건을 줄줄이 나열하지 않아도 된다는 편�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODUzODQyNjgsODA1OTYwNDgxLDE3OT
-UzMDIyNjUsLTc0NTYxMTM0OSwtMTk3MjUzMTM5OSwtMTQ1MjU0
-MTE1LC0xMjE0MzYzNDY1LDIwMzc1NzQ3MjIsLTE4MjM1MzA3MD
-IsLTI2NDE4NDE2MSw5ODg5NDE1ODYsMTc3NTU3MDA0NiwtMTk1
-MDIzMDE4NiwtMTQ4OTgwNzI0MiwtMTYxMjg4MzE3NSw1NDcwNT
-IwMDYsNjQ2NzEwOTYxLDE2NzM0MjA1Niw3Nzc0MTE1MDMsMTAw
-NTg4MDc2OV19
+eyJoaXN0b3J5IjpbMTc3MTY0NzUyMiwtMTI4NTM4NDI2OCw4MD
+U5NjA0ODEsMTc5NTMwMjI2NSwtNzQ1NjExMzQ5LC0xOTcyNTMx
+Mzk5LC0xNDUyNTQxMTUsLTEyMTQzNjM0NjUsMjAzNzU3NDcyMi
+wtMTgyMzUzMDcwMiwtMjY0MTg0MTYxLDk4ODk0MTU4NiwxNzc1
+NTcwMDQ2LC0xOTUwMjMwMTg2LC0xNDg5ODA3MjQyLC0xNjEyOD
+gzMTc1LDU0NzA1MjAwNiw2NDY3MTA5NjEsMTY3MzQyMDU2LDc3
+NzQxMTUwM119
 -->
