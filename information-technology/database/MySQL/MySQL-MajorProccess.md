@@ -577,10 +577,12 @@ WHERE s.salary > 5000;
 
 조인의 양쪽 테이블이 모두 레코드 1건인 쿼리를 제외하면, 애플리케이션에서 사용되는 카테시안 조인은 의도하지 않은 경우가 대부분이다. N개의 테이블의 조인이 수행되는 쿼리에서는 반드시 조인 조건은 N-1개(또는 그 이상)이 필요하며 모든 테이블은 반드시 1번 이상 조인 조건에 사용되야 카르테시안 조인을 피할 수 있다. 조인되는 테이블이 많아지고 조인 조건이 복자해질 수록 의도하지 않은 카르테시안 조인이 발생할 가능성이 크기 때문에 주의해야 한다.
 
-SQL 표준에서 CROSS JOIN은 카르테시안 조인과 같은 조인 방식을 의미하지만 MySQL에서 CROSS JOIN은 INNEr JOIN고 같은 조인 방식을 말한다. MySQL에서 CROSS JOIN을 사용하는 경우 INNER JOIN과 같이 ON절이나 WHERE절에 조건을 부여하는 것이 가능하며, 이렇게 작성된 CROSS JOIN은 INNER JOIN과 같은 방식으로 동작한다. 그래서 MySQL에서 CROSS JOIN 카르테시안 조인이 될 수도 있고 아닐 수도 있다. 
+SQL 표준에서 CROSS JOIN은 카르테시안 조인과 같은 조인 방식을 의미하지만 MySQL에서 CROSS JOIN은 INNEr JOIN고 같은 조인 방식을 말한다. MySQL에서 CROSS JOIN을 사용하는 경우 INNER JOIN과 같이 ON절이나 WHERE절에 조건을 부여하는 것이 가능하며, 이렇게 작성된 CROSS JOIN은 INNER JOIN과 같은 방식으로 동작한다. 그래서 MySQL에서 CROSS JOIN 카르테시안 조인이 될 수도 있고 아닐 수도 있다.  
+
+사실 MySQL에서는 카르테시안 조인과 INNER JOIN이 문법으로 구분되는 것이 아니다. JOIN시 연결되는 조건이 적절히 있다면 INNER JOIN으로 연결 조건이 없다면 CARTESIAN JOIN이 되는 것이다. 그래서 사실 CROSS JOIN이나 INNER JOIN을 특별히 구분해서 사용할 필요는 없다.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI1OTY4MTczLDE3OTUzMDIyNjUsLTc0NT
+eyJoaXN0b3J5IjpbODA1OTYwNDgxLDE3OTUzMDIyNjUsLTc0NT
 YxMTM0OSwtMTk3MjUzMTM5OSwtMTQ1MjU0MTE1LC0xMjE0MzYz
 NDY1LDIwMzc1NzQ3MjIsLTE4MjM1MzA3MDIsLTI2NDE4NDE2MS
 w5ODg5NDE1ODYsMTc3NTU3MDA0NiwtMTk1MDIzMDE4NiwtMTQ4
