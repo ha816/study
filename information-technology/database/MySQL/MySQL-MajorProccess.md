@@ -605,17 +605,21 @@ FROM employees e
 NATURAL JOIN salaries s
 ```
 
-NATURAL JOIN은 employees 테이블에 존재하는 컬럼과 salaries 테이블
+NATURAL JOIN은 두 테이블에 존재하는 컬럼 중에서 서로 이름이 같은 모든 컬럼으로 조인을 하게 된다. 
+즉 위 쿼리에서 employees 테이블에 존재하는 컬럼과 salaries 테이블 컬럼에 존재하는 컬럼 중에서 서로 이름이 같은 모든 컬럼으로 조인을 하게 된다. 
+
+NATURAL JOIN은 조인 조건을 줄줄이 나열하지 않아도 된다는 편리함이 있지만, 사실 각 테이블의 컬럼이 이름에 의해 자동으로 변
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODI2MTcyMCw4MDU5NjA0ODEsMTc5NT
-MwMjI2NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQx
-MTUsLTEyMTQzNjM0NjUsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMi
-wtMjY0MTg0MTYxLDk4ODk0MTU4NiwxNzc1NTcwMDQ2LC0xOTUw
-MjMwMTg2LC0xNDg5ODA3MjQyLC0xNjEyODgzMTc1LDU0NzA1Mj
-AwNiw2NDY3MTA5NjEsMTY3MzQyMDU2LDc3NzQxMTUwMywxMDA1
-ODgwNzY5XX0=
+eyJoaXN0b3J5IjpbLTgzOTI4MjIyLDgwNTk2MDQ4MSwxNzk1Mz
+AyMjY1LC03NDU2MTEzNDksLTE5NzI1MzEzOTksLTE0NTI1NDEx
+NSwtMTIxNDM2MzQ2NSwyMDM3NTc0NzIyLC0xODIzNTMwNzAyLC
+0yNjQxODQxNjEsOTg4OTQxNTg2LDE3NzU1NzAwNDYsLTE5NTAy
+MzAxODYsLTE0ODk4MDcyNDIsLTE2MTI4ODMxNzUsNTQ3MDUyMD
+A2LDY0NjcxMDk2MSwxNjczNDIwNTYsNzc3NDExNTAzLDEwMDU4
+ODA3NjldfQ==
 -->
