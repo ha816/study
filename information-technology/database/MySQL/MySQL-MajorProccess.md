@@ -575,15 +575,20 @@ WHERE s.salary > 5000;
 
 카르테시안 조인은 FULL조인 또는 CROSS JOIN이라고도 한다. 일반적으로 조인을 수행하기 위해선 하나의 테이블과 다른 테이블간에 연결조건이 필요하다. 하지만 카르테시안 조인은 이 조긴 조건 자체가 없어 2개의 테이블의 모든 레코드 조합을 결과로 가져오는 조인 방식이다. 카르테시안 조인은 레코드 건수가 적으면 특별히 문제가 되지 않는다. 하지만 레코드 건수가 많아지면 조인 결과가 기하급수적으로 늘어나므로 MySQL 서버 자체를 응답 불능 상태로 만들어버릴 수도 있다. 
 
-조인의 양쪽 테이블이 모두 레코드 1건인 쿼리를 제외하면, 애플리케이션에서 사용되는 카테시안 조인은 의도하지 않은 경우가 대부분이다. N개의 테이블의 조인이 수행되는 쿼리에서는 반드시 조인 조건은 N-1개(또는 그 이상)이 필요하며 모든 테이블은 반드시 1번 이상 조인 조건에 사용되야 카르테시안 조인을 피할 수 있다.  
+조인의 양쪽 테이블이 모두 레코드 1건인 쿼리를 제외하면, 애플리케이션에서 사용되는 카테시안 조인은 의도하지 않은 경우가 대부분이다. N개의 테이블의 조인이 수행되는 쿼리에서는 반드시 조인 조건은 N-1개(또는 그 이상)이 필요하며 모든 테이블은 반드시 1번 이상 조인 조건에 사용되야 카르테시안 조인을 피할 수 있다. 조인되는 테이블이 많아지고 조인 조건이 복자해질 수록 의도하지 않은 카르테시안 조인이 발생할 가능성이 크기 때문에 주의해야 한다.
+
+```
+
+
+``` 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDQ4MTI3NTcsMTc5NTMwMjI2NSwtNz
-Q1NjExMzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQxMTUsLTEyMTQz
-NjM0NjUsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMiwtMjY0MTg0MT
-YxLDk4ODk0MTU4NiwxNzc1NTcwMDQ2LC0xOTUwMjMwMTg2LC0x
-NDg5ODA3MjQyLC0xNjEyODgzMTc1LDU0NzA1MjAwNiw2NDY3MT
-A5NjEsMTY3MzQyMDU2LDc3NzQxMTUwMywxMDA1ODgwNzY5LC03
-MTUzMjI4NjJdfQ==
+eyJoaXN0b3J5IjpbLTk5NTI1MzkxOCwxNzk1MzAyMjY1LC03ND
+U2MTEzNDksLTE5NzI1MzEzOTksLTE0NTI1NDExNSwtMTIxNDM2
+MzQ2NSwyMDM3NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQxODQxNj
+EsOTg4OTQxNTg2LDE3NzU1NzAwNDYsLTE5NTAyMzAxODYsLTE0
+ODk4MDcyNDIsLTE2MTI4ODMxNzUsNTQ3MDUyMDA2LDY0NjcxMD
+k2MSwxNjczNDIwNTYsNzc3NDExNTAzLDEwMDU4ODA3NjksLTcx
+NTMyMjg2Ml19
 -->
