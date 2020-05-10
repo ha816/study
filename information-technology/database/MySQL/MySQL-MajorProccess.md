@@ -660,11 +660,13 @@ dept_emp 테이블의 각 레코드에 의해 employees 테이블을 읽을 때 
 
 중요한 점은 조인 버퍼가 사용되는 쿼리에서는 조인의 순서가 거꾸로인 것처럼 실행된다는 것이다.  dept_emp 테이블이 드라이빙 테이블이기 때문에 결과를 조인버퍼에 담아두고, 드리븐 테이블인 employees를 읽어 조인 버퍼에서 일치하는 레코드를 찾는 방식으로 처리된다. **일반적으로 조인이 수행된 후 가져오는 결과는 드라이빙 테이블의 순서로 결정되지만 조인 버퍼에서는 결과의 정렬 순서가 흐트러질 수 있음을 기억해야 한다.** 
 
-> 조인 버퍼의 경우, 처음 테이블의 결과가 너무 많아서 조인 버퍼에 전부
+> 조인 버퍼의 경우, 처음 테이블의 결과가 너무 많아서 조인 버퍼에 전부 담지 못하면 위의 1~4번 까지 과정을 여러번 반복한다. 그리고 조인 버퍼에는 조인 쿼리에 필요로 하는 컬럼만 저장되고, 레코드에 포함된 모든 컬럼(쿼리 실행에 불필요한 컬럼)은 저장되지 않으므로 상당히 효율적으로 사용된다고 볼 수 있다.
+
+## 조인 관련 주의 사항
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDAzNDE3NzUsLTEzOTEwNzU3NzAsLT
+eyJoaXN0b3J5IjpbLTE0Njk2MTkxMDAsLTEzOTEwNzU3NzAsLT
 E5ODk2OTk5NTgsMjA3NDY4MTY2MSw5NzEwNDg4NzEsLTc5NTIy
 NzkzNSwtNjA0NTQyNzA0LDE2NDU5MzUzMiwtMTM0MzgxNzA4OC
 wtMTg2ODM3NzQwOSwzMTMwMTc2NDIsLTEyODUzODQyNjgsODA1
