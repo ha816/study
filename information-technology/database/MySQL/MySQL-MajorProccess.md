@@ -617,12 +617,18 @@ MySQL의 네스티드-루프 조인을 자주 "Single-sweep multi join"이라 �
 
 ```
 SELECT d.dempt_name, e.first_name
-FRO
+FROM departments d, employees e, dept_emp de
+WHERE de.dept_no = d.dept_no AND e.emp_no = de.emp_no;
 ```
+
+위 쿼리의 실행계획을 보면 d, de 그리고 e로 순서대로 테이블이 읽힌다. 이를 FOR문으로 표시하면 다음과 같다. 
+
+FOR( record1 )
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTc1MjYyMTgsMzEzMDE3NjQyLC0xMj
+eyJoaXN0b3J5IjpbLTE5MDc0NTg4NTYsMzEzMDE3NjQyLC0xMj
 g1Mzg0MjY4LDgwNTk2MDQ4MSwxNzk1MzAyMjY1LC03NDU2MTEz
 NDksLTE5NzI1MzEzOTksLTE0NTI1NDExNSwtMTIxNDM2MzQ2NS
 wyMDM3NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQxODQxNjEsOTg4
