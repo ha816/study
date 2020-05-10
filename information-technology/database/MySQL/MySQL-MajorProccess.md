@@ -635,14 +635,17 @@ FOR( record1 IN departments){
 
 위 의사코드를 보면 3번 중첩이 되긴 했지만 전체적으로는 반폭 루프가 1개다. 즉 반복 루프를 돌면서 레코드 단위로 모든 조인 대상 테이블을 차례대로 읽는 방식을 "Single-sweep multi join"이라 한다. MySQL에서는 드라이빙 테이블 읽은 순서대로 레코드가 정렬되어 반환된다. 조인에서 드리븐 테이블은 단순히 드라이빙 테이블의 레코드를 읽는 순서대로 검색(Lookup)만 할 뿐이다. 
 
+## 조인 버퍼를 이용한 조인(Using join buffer)
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NTkzNTMyLC0xMzQzODE3MDg4LC0xOD
-Y4Mzc3NDA5LDMxMzAxNzY0MiwtMTI4NTM4NDI2OCw4MDU5NjA0
-ODEsMTc5NTMwMjI2NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC
-0xNDUyNTQxMTUsLTEyMTQzNjM0NjUsMjAzNzU3NDcyMiwtMTgy
-MzUzMDcwMiwtMjY0MTg0MTYxLDk4ODk0MTU4NiwxNzc1NTcwMD
-Q2LC0xOTUwMjMwMTg2LC0xNDg5ODA3MjQyLC0xNjEyODgzMTc1
-LDU0NzA1MjAwNl19
+eyJoaXN0b3J5IjpbLTcwOTQwMTI1NiwxNjQ1OTM1MzIsLTEzND
+M4MTcwODgsLTE4NjgzNzc0MDksMzEzMDE3NjQyLC0xMjg1Mzg0
+MjY4LDgwNTk2MDQ4MSwxNzk1MzAyMjY1LC03NDU2MTEzNDksLT
+E5NzI1MzEzOTksLTE0NTI1NDExNSwtMTIxNDM2MzQ2NSwyMDM3
+NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQxODQxNjEsOTg4OTQxNT
+g2LDE3NzU1NzAwNDYsLTE5NTAyMzAxODYsLTE0ODk4MDcyNDIs
+LTE2MTI4ODMxNzVdfQ==
 -->
