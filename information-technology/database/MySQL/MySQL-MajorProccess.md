@@ -633,16 +633,16 @@ FOR( record1 IN departments){
 }
 ```
 
-위 의사코드를 보면 3번 중첩이 되긴 했지만 전체적으로는 반폭 루프가 1개다. 즉 반복 루프를 돌면서 레코드 단위로 모든 조인 대상 테이블을 차례대로 읽는 방식을 "Single-sweep multi j"
+위 의사코드를 보면 3번 중첩이 되긴 했지만 전체적으로는 반폭 루프가 1개다. 즉 반복 루프를 돌면서 레코드 단위로 모든 조인 대상 테이블을 차례대로 읽는 방식을 "Single-sweep multi join"이라 한다. MySQL에서는 드라이빙 테이블 읽은 순서대로 레코드가 정렬되어 반환된다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQwNjgzNzgxLC0xODY4Mzc3NDA5LDMxMz
-AxNzY0MiwtMTI4NTM4NDI2OCw4MDU5NjA0ODEsMTc5NTMwMjI2
-NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQxMTUsLT
-EyMTQzNjM0NjUsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMiwtMjY0
-MTg0MTYxLDk4ODk0MTU4NiwxNzc1NTcwMDQ2LC0xOTUwMjMwMT
-g2LC0xNDg5ODA3MjQyLC0xNjEyODgzMTc1LDU0NzA1MjAwNiw2
-NDY3MTA5NjFdfQ==
+eyJoaXN0b3J5IjpbLTEzNDM4MTcwODgsLTE4NjgzNzc0MDksMz
+EzMDE3NjQyLC0xMjg1Mzg0MjY4LDgwNTk2MDQ4MSwxNzk1MzAy
+MjY1LC03NDU2MTEzNDksLTE5NzI1MzEzOTksLTE0NTI1NDExNS
+wtMTIxNDM2MzQ2NSwyMDM3NTc0NzIyLC0xODIzNTMwNzAyLC0y
+NjQxODQxNjEsOTg4OTQxNTg2LDE3NzU1NzAwNDYsLTE5NTAyMz
+AxODYsLTE0ODk4MDcyNDIsLTE2MTI4ODMxNzUsNTQ3MDUyMDA2
+LDY0NjcxMDk2MV19
 -->
