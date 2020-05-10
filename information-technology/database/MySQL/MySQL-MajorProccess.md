@@ -485,8 +485,6 @@ MySQL은 다른 DBMS보다 조인을 처리하는 방식이 단순하다. 조인
 
 **OUTER JOIN은 반드시 OUTER가 되는 테이블을 먼저 읽어야 하기 때문에 조인 순서를 옵티마이저가 선택할 수 없다.**
 
-사실 우리가 쓰는 ON 과 WHERE 절에는 그 의미의 차이가 있다. ON은 두 테이블간의 관계를 묘사하고 WHERE은 결과로 부터 제거해야할 로ㄹdescribes a relationship between two tables) and a WHERE clause (which removes rows from the result set). This semantic difference should tell you which one to use. While it makes no difference to the result or to the performance, choosing the right syntax will help other readers of your code understand it more quickly.
-
 ### INNER JOIN
 일반적으로 조인이라 함은 INNER JOIN을 뜻한다. MySQL에서 조인은 네스티드-루프 방식만 지원한다. **네스티드-루프 방식이란 일반적으로 프로그램을 작성할 때 두개의 FOR나 WHILE과 같은 반복 루프 문장을 실행하는 형태로 조인이 처리되는 것을 의미한다.**
 
@@ -528,7 +526,7 @@ INNER 테이블이 조인 결과에 전혀 영향을 미치지 않고, OUTER 테
 
 OUTER JOIN은 조인의 결과를 결정하는 OUTER 테이블이 조인의 왼쪽에 있는지 오른쪽에 있는지에 따라 LEFT OUTER JOIN과 RIGHT OUTER JOIN 그리고 FULL OUTER JOIN으로 나뉜다.
 
-보통 LEFT OUTER JOIN과 RIGHT OUTER JOIN은 결국 FROM 절에 나오는 테이블의 순서에 따라 같은 처리를 만들어낼 수 있다. 이 혼동을 막기 위해 일반적으로는 LEFT OUTER JOIN으로 통일해서 사용하는 것일 일반적이다.
+보통 LEFT OUTER JOIN과 RIGHT OUTER JOIN은 결국 FROM 절에 나오는 테이블의 순서에 따라 같은 처리를 만들어낼 수 있다. 이 혼동을 막기 위해 **일반적으로는 LEFT OUTER JOIN으로 통일해서 사용하는 것일 일반적이다.**
 
 JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶고, 오른쪽 테이블도 OUTER JOIN을 하고 싶은 경우 사용하는 쿼리가 FULL OUTER JOIN이다. MySQL에서는 FULL OUTER JOIN을 지원하지 않는다. 
 
@@ -536,6 +534,8 @@ LEFT OUTER JOIN에서 쉽게 실수할 수 있는 부분이 여러가지 있다.
 
 실행 계획에서는 어떤 조인을 했는지 알려주지 않으므로 OUTER JOIN을 의도한 쿼리가 INNER JOIN으로 실행되지 않았는지 주의해야 한다. 이 부분도 실수하기 쉬운 부분인데, **OUTER JOIN에 레코드가 없을 수도 있는 쪽의 테이블에 대한 조건은 반드시 LEFT JOIN의 ON절에 명시하자.** 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다.
 **LEFT OUTER JOIN의 ON 절에 명시되는 조건은 조인되는 레코드가 있을때만 적용된다.** 그어 반해 WHERE 절에 명시되는 조건은 OUTER JOIN이나 INNER JOIN에 관계없이 **조인된 결과에 모두 적용된다.** 그래서 OUTER JOIN으로 연결되는 테이블이 있는 쿼리에서는 가능하다면 모든 조건을 ON 절에 명시하는 습관을 들이는게 좋다.
+
+사실 우리가 쓰는 ON 과 WHERE 절에는 그 의미의 차이가 있다. ON은 두 테이블간의 관계를 묘사하고 WHERE은 결과로 부터 제거해야할 로우를 묘사한다. 의미에 맞는 신택스를 사용해야 코드를 이해하고 읽는데 도움이 된다. 
 
 ```
 select 
@@ -578,7 +578,7 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNTYwMjAxOCw5ODg5NDE1ODYsMTc3NT
+eyJoaXN0b3J5IjpbLTI2NDE4NDE2MSw5ODg5NDE1ODYsMTc3NT
 U3MDA0NiwtMTk1MDIzMDE4NiwtMTQ4OTgwNzI0MiwtMTYxMjg4
 MzE3NSw1NDcwNTIwMDYsNjQ2NzEwOTYxLDE2NzM0MjA1Niw3Nz
 c0MTE1MDMsMTAwNTg4MDc2OSwtNzE1MzIyODYyLDIwMDY0Mzcz
