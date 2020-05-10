@@ -97,7 +97,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 자바는 64비트 가상 머신의 성능 향상과 효율적인 메모리 사용을 위해 Compressed OOP를 사용하다. 이 기능은 JDK6에 옵션으로 제공되다가 JDK7부터는 기본 설정으로 사용하고 있다. 
 
-Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산을 위해 포인터를 압축해서 표현하는 일종의 트릭이다
+Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산을 위해 포인터를 압축해서 표현하는 일종의 트릭이다. 이 트랙의 핵심원리는 포인터가 객체의 정확한 메모리 주소를 가리키게 하는것이 아니라 
 
 
 
@@ -112,8 +112,8 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0ODEyODgxNywxOTQyNjcwMTI4LDIwMD
-E5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAyNjY1MTU2
-LDE3NjcxODk0MDgsLTE5MzYwODAyMDQsLTEzOTM3OTQ1OTQsLT
-E2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
+eyJoaXN0b3J5IjpbLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwyMD
+AxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1
+NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC
+0xNjYyMDUxNzExLDQ0MDUzMTA5NCwtMTk2MzkzMTUzM119
 -->
