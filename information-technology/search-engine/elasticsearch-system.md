@@ -93,7 +93,11 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 64비트가 되면서 물리적 한계는 극복했지만 상대적으로 메모리 공간 낭비나 연산 속도 저하등의 단점도 나타났다. 자바의 경우도 마찬가지다. 32비트가 되면서 OOP를 위해 낭비되는 메모리 문제가 크게 대두됐다. 자바는 이러한 문제를 해결하기 위해 기존 OOP를 개선해서 Compressed OOP라는 새로운 개념의 포인터 관리 기법을 도입했다.
 
-### Com
+### Compressed OOP
+
+자바는 64비트 가상 머신의 성능 향상과 효율적인 메모리 사용을 위해 Compressed OOP를 사용하다. 이 기능은 JDK6에 옵션으로 제공되다가 JDK7부터는 기본 설정으로 사용하고 있다. 
+
+Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산을 위해 포인터를 압축해서 표현하는 일종의 트릭이다
 
 
 
@@ -108,8 +112,8 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY2MDIyODYxLDE5NDI2NzAxMjgsMjAwMT
-kzMzgyOCwxMjQyODI2MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYs
-MTc2NzE4OTQwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMT
-Y2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5MzE1MzNdfQ==
+eyJoaXN0b3J5IjpbLTU0ODEyODgxNywxOTQyNjcwMTI4LDIwMD
+E5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAyNjY1MTU2
+LDE3NjcxODk0MDgsLTE5MzYwODAyMDQsLTEzOTM3OTQ1OTQsLT
+E2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
 -->
