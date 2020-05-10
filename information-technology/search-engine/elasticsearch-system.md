@@ -109,7 +109,13 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 너무 큰 힙 크기는 시스템이 자주 STW에 빠지게 만든다. 힙 크기가 커질 수록 FullGC를 수행하는 시간이 늘어나고 그에 비례해서 시스템 처리 불능 시간도 늘어난다. 
 
+이제 상황에 따라 물리 메모리를 어떻게 사용하면 좋을지 정리하겠다.
 
+* 적절한 성능의 서버가 잇을때
+
+* 고성능 서버를 가지고 있을때
+
+* 전문 검색을 주목적으로 엘라스티서치를 사
 
 
 
@@ -124,7 +130,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxODgyMjM5OCwtNDM0MjM1MjUyLC0xNT
+eyJoaXN0b3J5IjpbMjEzMjU1MjY3MywtNDM0MjM1MjUyLC0xNT
 gwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2
 MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMT
 kzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcxMSw0NDA1
