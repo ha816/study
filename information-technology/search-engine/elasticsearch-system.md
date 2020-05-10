@@ -101,6 +101,8 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 자바는 데이터 타입에 따라 객체를 8비트 ~ 64비트까지 8 배수 형태로 힙 메모리에 생성하기 때문에 Compressed OOP를 이용해 포인터가 객체를 가르키게 한다면 32비트만으로 최대 32GB의 힙 메모리 공간을 인식하는 것이 가능해진다. 
 
+결과적으로 64비트 시스템에서 Compreseed OOP를 사용할 경우 포인
+
 
 
 # 엘라스틱서치와 가상 메모리
@@ -114,7 +116,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU1ODc2MTg4LC0xNTgwMjA0NDY3LDE5ND
+eyJoaXN0b3J5IjpbNzc5ODMzMDc0LC0xNTgwMjA0NDY3LDE5ND
 I2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2MzIsODU5ODAyMjg4
 LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMTkzNjA4MDIwNCwtMT
 M5Mzc5NDU5NCwtMTY2MjA1MTcxMSw0NDA1MzEwOTQsLTE5NjM5
