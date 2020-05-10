@@ -656,16 +656,16 @@ dept_emp 테이블의 각 레코드에 의해 employees 테이블을 읽을 때 
 1. dept_emp 테이블의 from_date의 인덱스를 이용해 만족하는 레코든 (10,000)건을 검색한다. 
 2. 조인에 필요한 나머지 컬럼들을 모두 dept_emp 테이블로 읽어서 조인버퍼에 저장한다.
 3. employees 테이블의 프라이머리 키를 이용해  (emp_no < 109004) 조건을 만족하는 레코드를 검색한다.
-4. 3번에서 검색된 결과(employees)에 2번의 캐시된 조인 버퍼의 레코드(dept_emp)를 결합해서 바환한다.
+4. 3번에서 검색된 결과(employees)에 2번의 캐시된 조인 버퍼의 레코드(dept_emp)를 결합해서 반환한다.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MjMyNjU4NiwtMTk4OTY5OTk1OCwyMD
-c0NjgxNjYxLDk3MTA0ODg3MSwtNzk1MjI3OTM1LC02MDQ1NDI3
-MDQsMTY0NTkzNTMyLC0xMzQzODE3MDg4LC0xODY4Mzc3NDA5LD
-MxMzAxNzY0MiwtMTI4NTM4NDI2OCw4MDU5NjA0ODEsMTc5NTMw
-MjI2NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC0xNDUyNTQxMT
-UsLTEyMTQzNjM0NjUsMjAzNzU3NDcyMiwtMTgyMzUzMDcwMiwt
-MjY0MTg0MTYxXX0=
+eyJoaXN0b3J5IjpbLTIwNDM3Nzc5ODIsLTE5ODk2OTk5NTgsMj
+A3NDY4MTY2MSw5NzEwNDg4NzEsLTc5NTIyNzkzNSwtNjA0NTQy
+NzA0LDE2NDU5MzUzMiwtMTM0MzgxNzA4OCwtMTg2ODM3NzQwOS
+wzMTMwMTc2NDIsLTEyODUzODQyNjgsODA1OTYwNDgxLDE3OTUz
+MDIyNjUsLTc0NTYxMTM0OSwtMTk3MjUzMTM5OSwtMTQ1MjU0MT
+E1LC0xMjE0MzYzNDY1LDIwMzc1NzQ3MjIsLTE4MjM1MzA3MDIs
+LTI2NDE4NDE2MV19
 -->
