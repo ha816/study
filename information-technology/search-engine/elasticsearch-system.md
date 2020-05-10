@@ -107,6 +107,8 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 ## 엘라스틱서치에서 힙 크기 설정하기
 
+너무 큰 힙 크기는 시스템이 자주 STW에 빠지게 만든다. 힙 크기가 커질 수록 FullGC를 수행하는 시간이 늘어나고 그에 비례해서 시스템 처리 불능 시간도 늘어난다. 
+
 
 
 
@@ -122,9 +124,9 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNDIzNTI1MiwtMTU4MDIwNDQ2NywxOT
-QyNjcwMTI4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4
-OCwxMzAyNjY1MTU2LDE3NjcxODk0MDgsLTE5MzYwODAyMDQsLT
-EzOTM3OTQ1OTQsLTE2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOTYz
-OTMxNTMzXX0=
+eyJoaXN0b3J5IjpbMTgxODgyMjM5OCwtNDM0MjM1MjUyLC0xNT
+gwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2
+MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMT
+kzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcxMSw0NDA1
+MzEwOTQsLTE5NjM5MzE1MzNdfQ==
 -->
