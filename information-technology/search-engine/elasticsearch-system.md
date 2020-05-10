@@ -94,6 +94,7 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 
 
+
 # 엘라스틱서치와 가상 메모리
 
 # 분산환경에서의 메모리 스와핑
@@ -105,8 +106,8 @@ GC동작은 자동적으로 일어나지만 실행할때 JVM에 옵션으로 일
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMTkzMzgyOCwxMjQyODI2MzIsODU5OD
-AyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMTkzNjA4MDIw
-NCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcxMSw0NDA1MzEwOTQsLT
-E5NjM5MzE1MzNdfQ==
+eyJoaXN0b3J5IjpbLTM4NjQ1NjgxMCwyMDAxOTMzODI4LDEyND
+I4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5NDA4
+LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzExLD
+Q0MDUzMTA5NCwtMTk2MzkzMTUzM119
 -->
