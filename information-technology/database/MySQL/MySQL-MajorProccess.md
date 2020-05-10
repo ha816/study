@@ -560,6 +560,7 @@ where s.salary > 5000;
 SELECT 
 FROM employees e
 LEFT OUTER JOIN salaries s ON s.emp_no = e.emp_no AND s.salary > 5000;
+-- OUTER JOIN pseudo 코드를 보자; s.salray가 null이라 조건에 맞지 않더라도 e 레코드를 결과로 채워넣는다. 
 
 -- INNER JOIN; s.salary가 null인 레코드 제외
 SELECT 
@@ -567,7 +568,6 @@ FROM employees e
 INNER JOIN salaries s ON s.emp_no = e.emp_no
 WHERE s.salary > 5000;
 ```
-
 
 마지막으로 OUTER JOIN이 아닌 쿼리에서는 검색 조건이나 조인 조건을 WHERE 절이나 ON 절중에서 어느곳에 명시해도 성능상 문제나 결과가 차이 나지 않는다.
 
@@ -579,11 +579,11 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzc1NDQxNTksLTc0NTYxMTM0OSwtMT
-k3MjUzMTM5OSwtMTQ1MjU0MTE1LC0xMjE0MzYzNDY1LDIwMzc1
-NzQ3MjIsLTE4MjM1MzA3MDIsLTI2NDE4NDE2MSw5ODg5NDE1OD
-YsMTc3NTU3MDA0NiwtMTk1MDIzMDE4NiwtMTQ4OTgwNzI0Miwt
-MTYxMjg4MzE3NSw1NDcwNTIwMDYsNjQ2NzEwOTYxLDE2NzM0Mj
-A1Niw3Nzc0MTE1MDMsMTAwNTg4MDc2OSwtNzE1MzIyODYyLDIw
-MDY0MzczOTNdfQ==
+eyJoaXN0b3J5IjpbMTc5NTMwMjI2NSwtNzQ1NjExMzQ5LC0xOT
+cyNTMxMzk5LC0xNDUyNTQxMTUsLTEyMTQzNjM0NjUsMjAzNzU3
+NDcyMiwtMTgyMzUzMDcwMiwtMjY0MTg0MTYxLDk4ODk0MTU4Ni
+wxNzc1NTcwMDQ2LC0xOTUwMjMwMTg2LC0xNDg5ODA3MjQyLC0x
+NjEyODgzMTc1LDU0NzA1MjAwNiw2NDY3MTA5NjEsMTY3MzQyMD
+U2LDc3NzQxMTUwMywxMDA1ODgwNzY5LC03MTUzMjI4NjIsMjAw
+NjQzNzM5M119
 -->
