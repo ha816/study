@@ -557,12 +557,12 @@ where s.salary > 5000;
 이런 형태의 쿼리는 아래 두 가지 방식중 하나로 해야 의도나 결과를 명확히 알 수 있다. 
 
 ```
--- 순수하게 OUTER JOIN으로 처리
+-- OUTER JOIN 처리; s.salary가 null인 레코드 포함
 SELECT 
 FROM employees e
 LEFT OUTER JOIN salaries s ON s.emp_no = e.emp_no AND s.salary > 5000;
 
--- 순수하게 INNER JOIN으로 처리
+-- INNER JOIN; s.salary가 null인 레코드 제외
 SELECT 
 FROM employees e
 INNER JOIN salaries s ON s.emp_no = e.emp_no
@@ -579,11 +579,11 @@ WHERE s.salary > 5000;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTI1NDExNSwtMTIxNDM2MzQ2NSwyMD
-M3NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQxODQxNjEsOTg4OTQx
-NTg2LDE3NzU1NzAwNDYsLTE5NTAyMzAxODYsLTE0ODk4MDcyND
-IsLTE2MTI4ODMxNzUsNTQ3MDUyMDA2LDY0NjcxMDk2MSwxNjcz
-NDIwNTYsNzc3NDExNTAzLDEwMDU4ODA3NjksLTcxNTMyMjg2Mi
-wyMDA2NDM3MzkzLC0xMjg0MTU0Njg0LC03MzkyMDk5OTYsMTc0
-MzQzMDY4OV19
+eyJoaXN0b3J5IjpbLTE5NzI1MzEzOTksLTE0NTI1NDExNSwtMT
+IxNDM2MzQ2NSwyMDM3NTc0NzIyLC0xODIzNTMwNzAyLC0yNjQx
+ODQxNjEsOTg4OTQxNTg2LDE3NzU1NzAwNDYsLTE5NTAyMzAxOD
+YsLTE0ODk4MDcyNDIsLTE2MTI4ODMxNzUsNTQ3MDUyMDA2LDY0
+NjcxMDk2MSwxNjczNDIwNTYsNzc3NDExNTAzLDEwMDU4ODA3Nj
+ksLTcxNTMyMjg2MiwyMDA2NDM3MzkzLC0xMjg0MTU0Njg0LC03
+MzkyMDk5OTZdfQ==
 -->
