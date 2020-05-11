@@ -45,6 +45,7 @@
 >상품도착예정일 로직 전환
 >데이터 동기화를 해놓았는데 안되었다. 
 >티몬 아닌 곳 
+>
 
 >**좋아하는 시나 소설, 노래 중심으로 자신을 자유롭게 소개해 주세요. (지원동기/이직사유, 장/단점 등)**
 >
@@ -52,10 +53,10 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxNzUzODU5LDEzNjUzMzc4NDMsLTEyNT
-IwMTc5ODMsLTUxODAxMTA4MSwtMTU3MDQxMjA1NSwzMjY3Mjgy
-MjgsMzM2MDg2Mzg0LDE5MTgxMTYyNDIsMTM4ODA0MzcxOCwtMj
-EzNDg2NDA3NCwtMTE0MDA3Njg2MywyMTQwNzQzNzA1LDIwMzEz
-OTc0NiwtMjAyMTc3MDMzNywtMTk5NDY4NTQ1MywtNTg0MTMyOC
-wtOTcwNjYwNzVdfQ==
+eyJoaXN0b3J5IjpbMjEyMzE3Mzk0MSwzNDE3NTM4NTksMTM2NT
+MzNzg0MywtMTI1MjAxNzk4MywtNTE4MDExMDgxLC0xNTcwNDEy
+MDU1LDMyNjcyODIyOCwzMzYwODYzODQsMTkxODExNjI0MiwxMz
+g4MDQzNzE4LC0yMTM0ODY0MDc0LC0xMTQwMDc2ODYzLDIxNDA3
+NDM3MDUsMjAzMTM5NzQ2LC0yMDIxNzcwMzM3LC0xOTk0Njg1ND
+UzLC01ODQxMzI4LC05NzA2NjA3NV19
 -->
