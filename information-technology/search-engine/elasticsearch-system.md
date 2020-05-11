@@ -133,7 +133,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 엘라스틱서치 클러스터 구축할때 Compressed  OOP를 사용하려면  어떻게 해야할까? 
 요즘 최신 JDK에서는 Compressed OOP가 기본설정이기 때문에 힙 크기를 단순히 32GB이하로 잡으면 알아서 된다.
 
-32GB
+32GB를 의미하는 정확한 LIMIT 값은 JVM 버전 및 플랫폼에 따라 조금씩 달라진다. 최대 설정 가능한 32GB 힙 메모리를 쓴다면 몇 가지 확인해야할 사항이 있기 때무
 
 
 
@@ -148,7 +148,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNjAzMjQ1MCwtMTAwODIwNjMzMywtMT
+eyJoaXN0b3J5IjpbMTE4NzI1Mjk1MSwtMTAwODIwNjMzMywtMT
 AxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4
 Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMT
 I4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAy
