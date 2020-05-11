@@ -126,7 +126,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 >하나의 물리서버에 다수의 엘라스틱서치 인스턴스 실행시 주의사항
 >장애 복구를 위해 레플리카 샤드가 존재하는데 일반적으로 원본이 프라이머리 샤드와 물리적으로 서로 다른 서버에 생성된다. 물리적으로 분산되어야 서버가 다운될 경우 즉시 복구할 수 있기 때문이다.
->하지만 하나의 물리서버에서 다수의 인스턴스가 동작하면 이러한 고가용성의 문제가 생길 수 있다. 이를 방지기 위해 엘라스틱서치에서는 cluster.routing.allocation.same_shard_host 옵션을 제공한다. 인스턴스를 실행할때 이 설정으로 프라이머리 샤드와 
+>하지만 하나의 물리서버에서 다수의 인스턴스가 동작하면 이러한 고가용성의 문제가 생길 수 있다. 이를 방지기 위해 엘라스틱서치에서는 cluster.routing.allocation.same_shard_host 옵션을 제공한다. 인스턴스를 실행할때 이 설정으로 프라이머리 샤드와 레플리카 샤드가 같은 서버에 배치되는 것을 최대한 방지할 수 있다. 만약 하나의 물리서버에 다수의 인스턴스가 실행되는 환경이라면 반드시 이 옵션을 활성화해야 한다.
 
 ## 엘라스틱서치에서 Compressed OOP 사용하기
 
@@ -145,10 +145,10 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NjQyNzEzMywtMTAxMTMxNzIwMiwtMT
-gzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIz
-NTI1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMTI4LDIwMDE5MzM4Mj
-gsMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAyNjY1MTU2LDE3Njcx
-ODk0MDgsLTE5MzYwODAyMDQsLTEzOTM3OTQ1OTQsLTE2NjIwNT
-E3MTEsNDQwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
+eyJoaXN0b3J5IjpbLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLT
+E4MzU2MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQy
+MzUyNTIsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMzOD
+I4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3
+MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMD
+UxNzExLDQ0MDUzMTA5NCwtMTk2MzkzMTUzM119
 -->
