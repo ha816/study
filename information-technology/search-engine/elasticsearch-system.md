@@ -112,8 +112,9 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 이제 상황에 따라 물리 메모리를 어떻게 사용하면 좋을지 정리하겠다.
 
 * 적절한 성능의 서버가 있을때
-	* 하나의  성능 좋은 서버 보다는 가능한한 64GB이상의 물리 메모리를 가진 다수의 서버가 낫다. 메모리의 반을 엘라스틱서치에게 할당하고 나머지는 운
-* 
+	* 하나의 성능 좋은 서버 보다는 가능한한 64GB이상의 물리 메모리를 가진 다수의 서버가 낫다. 메모리의 반을 엘라스틱서치에게 할당하고 나머지는 운영체제가 가지도록하는 것이 이상적이다.
+* 고성능 서버가 있을때
+	* 일반적인 경우 탑제된 물리 메모리의 반을 다시 32GB씩 나누어 그 수만큼 엘라스틱서치 인스턴스를 생성한다. 예를 들어 만약 128GB의 물리 메모리를 가지고 있다면 
 
 * 고성능 서버를 가지고 있을때
 
@@ -138,10 +139,10 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMDkwNDgxNSwtMTgzNTYxMDg5NywtNj
-c4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MDIw
-NDQ2NywxOTQyNjcwMTI4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLD
-g1OTgwMjI4OCwxMzAyNjY1MTU2LDE3NjcxODk0MDgsLTE5MzYw
-ODAyMDQsLTEzOTM3OTQ1OTQsLTE2NjIwNTE3MTEsNDQwNTMxMD
-k0LC0xOTYzOTMxNTMzXX0=
+eyJoaXN0b3J5IjpbOTA3MjM4Njc2LC0xODM1NjEwODk3LC02Nz
+g4NDEwMTYsMTMwNzg3Nzc4MywtNDM0MjM1MjUyLC0xNTgwMjA0
+NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2MzIsOD
+U5ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMTkzNjA4
+MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcxMSw0NDA1MzEwOT
+QsLTE5NjM5MzE1MzNdfQ==
 -->
