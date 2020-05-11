@@ -118,7 +118,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 * 전문 검색을 주목적으로 엘라스티서치를 사용하는 경우
 	* 엘라스틱서치로 32GB를 할당하고 나머지는 모두 운영체제에게 줘서 시스템 캐시를 통해 메모리를 최대한 사용하도록 한다. 전문 검색의 경우 메모리 연산보다는 루씬의 역색인 구조를 사용하는 경우가 훨씬 많을 것이다. 루씬은 내부적으로 mmap을 통해 사용 가능한 모든 시스템 캐시를 이용해 세그먼트를 캐시할 수 있기 때문에 빠른 전문 검색이 가능해질 것이다.
 * 일반적인 데이터필드에서 정렬/집계 작업을 많이 하는 경우
-	* 숫자, 날짜, 
+	* 숫자, 날짜, keyword 같은 데이터 타입은 필드가 별도의 분석과정을 거치지 않는다. 이 경우 정렬이나 집계 시 루씬의 DocValues를 사용하기 때문에 힙 공간은 거의 사용되지 않는다. 이럴땐 엘라스틱서치 힙에 32GB를 할당하고 나머지를 모두 루씬이 사용하도록 한다.
 * 전문 필드에서 정렬/집계 작업을 많이 하는 경우
 
 ## 엘라스틱서치에서 Compressed OOP 사용하기
@@ -138,10 +138,10 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE3NTk4NDcsLTE4MzU2MTA4OTcsLTY3OD
-g0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAyMDQ0
-NjcsMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYzMiw4NT
-k4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5NDA4LC0xOTM2MDgw
-MjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzExLDQ0MDUzMTA5NC
-wtMTk2MzkzMTUzM119
+eyJoaXN0b3J5IjpbLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLT
+Y3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAy
+MDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYzMi
+w4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5NDA4LC0xOTM2
+MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzExLDQ0MDUzMT
+A5NCwtMTk2MzkzMTUzM119
 -->
