@@ -120,6 +120,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 * 일반적인 데이터필드에서 정렬/집계 작업을 많이 하는 경우
 	* 숫자, 날짜, keyword 같은 데이터 타입은 필드가 별도의 분석과정을 거치지 않는다. 이 경우 정렬이나 집계 시 루씬의 DocValues를 사용하기 때문에 힙 공간은 거의 사용되지 않는다. 이럴땐 엘라스틱서치 힙에 32GB를 할당하고 나머지를 모두 루씬이 사용하도록 한다.
 * 전문 필드에서 정렬/집계 작업을 많이 하는 경우
+	* 분석된 문자열 필드에서 정렬이나 집계를 수행하는 경우 루씬의 DocValues를 사용할 수 없기 때문에 fielddata라는 힙 기반의 캐시를 써야한다. 그러므로 많은 힙 메모리가 필요하다. 따라서 32GB의 힙 크기를 가진 엘라스틱서치 인스턴스를 여러개 생성하는 방식이 좋다.
 
 ## 엘라스틱서치에서 Compressed OOP 사용하기
 
@@ -138,10 +139,10 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLT
-Y3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAy
-MDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYzMi
-w4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5NDA4LC0xOTM2
-MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzExLDQ0MDUzMT
-A5NCwtMTk2MzkzMTUzM119
+eyJoaXN0b3J5IjpbLTIxMTg2MDk3NywtMTAxMTMxNzIwMiwtMT
+gzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIz
+NTI1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMTI4LDIwMDE5MzM4Mj
+gsMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAyNjY1MTU2LDE3Njcx
+ODk0MDgsLTE5MzYwODAyMDQsLTEzOTM3OTQ1OTQsLTE2NjIwNT
+E3MTEsNDQwNTMxMDk0LC0xOTYzOTMxNTMzXX0=
 -->
