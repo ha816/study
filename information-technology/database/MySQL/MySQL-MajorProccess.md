@@ -507,7 +507,7 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 
 중첩된 반복 루프에서 최종적으로 선택될 레코드가 안쪽 반복 루프(INNER 테이블)로 결정되는 경우를 INNER JOIN이라 한다. 즉 두 개의 반복 루프를 실행하며 같은 조건을 만족하는 레코드만 조인의 결과로 가져온다.
 
-## OUTER JOIN
+### OUTER JOIN
 
 ```
 For ( record1 IN TABLE1) { //외부 루프 (OUTER)
@@ -523,19 +523,19 @@ For ( record1 IN TABLE1) { //외부 루프 (OUTER)
 
 이중 FOR문 안에 일치하는 레코드가 있으면 INNER JOIN과 같은 결과를 만들어 내지만, 없는 경우에는 그저 TABLE1에 있는 결과를 버리지 않고 그대로 결과에 포함한다.
 
-INNER 테이블 조인 결과에 전혀 영향을 미치지 않고, OUTER 테이블 내용에 따라 조인의 결과가 결정되는 것이 OUTER JOIN의 특징이다. 물론 OUTER 테이블과 INNER 테이블의 관계가 1:M의 관계라면 최종 결과 레코드 건수가 늘어날 수 있지만, OUTER 테이블의 레코드가 INNER 테이블에 일치하는 레코드가 없다고 해서 버려지지는 않는다.
+INNER 테이블이 조인 결과에 전혀 영향을 미치지 않고, OUTER 테이블 내용에 따라 조인의 결과가 결정되는 것이 OUTER JOIN의 특징이다. 물론 OUTER 테이블과 INNER 테이블의 관계가 1:M의 관계라면 최종 결과 레코드 건수가 늘어날 수 있지만, OUTER 테이블의 레코드가 INNER 테이블에 일치하는 레코드가 없다고 해서 버려지지는 않는다.
 
 OUTER JOIN은 조인의 결과를 결정하는 OUTER 테이블이 조인의 왼쪽에 있는지 오른쪽에 있는지에 따라 LEFT OUTER JOIN과 RIGHT OUTER JOIN 그리고 FULL OUTER JOIN으로 나뉜다.
 
-보통 LEFT OUTER JOIN과 RIGHT OUTER JOIN은 결국 FROM 절에 나오는 테이블의 순서에 따라 같은 처리를 만들어낼 수 있다. 이 혼동을 막기 위해 **일반적으로는 LEFT OUTER JOIN으로 통일해서 사용하는 것이 일반적이다.**
+보통 LEFT OUTER JOIN과 RIGHT OUTER JOIN은 결국 FROM 절에 나오는 테이블의 순서에 따라 같은 처리를 만들어낼 수 있다. 이 혼동을 막기 위해 **일반적으로는 LEFT OUTER JOIN으로 통일해서 사용하는 것이일 일반적이다.**
 
 JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶고, 오른쪽 테이블도 OUTER JOIN을 하고 싶은 경우 사용하는 쿼리가 FULL OUTER JOIN이다. MySQL에서는 FULL OUTER JOIN을 지원하지 않는다. 
 
-### 주의 사항
+### 주의 사항LEFT OUTER JOIN에서 쉽게 실수할 수 있는 부분이 여러가지 있다. 이제 LEFT OUTER JOIN을 사용할때 주의할 점을 알아보자. 
 
 실행 계획에서는 어떤 조인을 했는지 알려주지 않으므로 OUTER JOIN을 의도한 쿼리가 INNER JOIN으로 실행되지 않았는지 주의해야 한다. 
 
-**레코드가 없을 수도 있는 쪽의 테이블(드라이븐)에 국한된 조건은 반드시 ON절에 명시하자.** 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다. 
+**레코드가 없을 수도 있는 쪽의 테이블(드라이븐)에 국한된 조건은 반드시이 부분도 실수하기 쉬운 부분인데, OUTER JOIN에 레코드가 없을 수도 있는 쪽의 테이블에 대한 조건은 반드시 LEFT JOIN의 ON절에 명시하자.** 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다. 
 보다 원론적으로 이야기하자면, ON 과 WHERE 절에는 그 의미의 차이가 있다. ON은 두 테이블간의 관계를 묘사하고 WHERE은 결과로부터 제거해야할 로우를 묘사한다. 
 
 ```
@@ -578,7 +578,7 @@ WHERE s.salary > 5000;
 
 조인의 양쪽 테이블이 모두 레코드 1건인 쿼리를 제외하면, 애플리케이션에서 사용되는 카테시안 조인은 의도하지 않은 경우가 대부분이다. N개의 테이블의 조인이 수행되는 쿼리에서는 반드시 조인 조건은 N-1개(또는 그 이상)이 필요하며 모든 테이블은 반드시 1번 이상 조인 조건에 사용되야 카르테시안 조인을 피할 수 있다. 조인되는 테이블이 많아지고 조인 조건이 복자해질 수록 의도하지 않은 카르테시안 조인이 발생할 가능성이 크기 때문에 주의해야 한다.
 
-SQL 표준에서 CROSS JOIN은 카르테시안 조인과 같은 조인 방식을 의미하지만 MySQL에서 CROSS JOIN은 INNEr JOIN고 같은 조인 방식을 말한다. MySQL에서 CROSS JOIN을 사용하는 경우 INNER JOIN과 같이 ON절이나 WHERE절에 조건을 부여하는 것이 가능하며, 이렇게 작성된 CROSS JOIN은 INNER JOIN과 같은 방식으로 동작한다. 그래서 MySQL에서 CROSS JOIN 카르테시안 조인이 될 수도 있고 아닐 수도 있다.  
+SQL 표준에서 CROSS JOIN은 카르테시안 조인과 같은 조인 방식을 의미하지만 MySQL에서 CROSS JOIN은 INNEr JOIN고 같은 조인 방식을 말한다. MySQL에서 CROSS JOIN을 사용하는 경우 INNER JOIN과 같이 ON절이나LEFT OUTER JOIN의 ON 절에 명시되는 조건은 조인되는 레코드가 있을때만 적용된다. 하지만 WHERE 절에 조건을 부여하는 것이 가능하며, 이렇게 작성된 CROSS JOIN은 INNER JOIN과 같은 방식으로 동작한다. 그래서 MySQL에서 CROSS JOIN 카르테시안 조인이 될 수도 있고 아닐 수도 있다.  
 
 사실 MySQL에서는 카르테시안 조인과 INNER JOIN이 문법으로 구분되는 것이 아니다. JOIN시 연결되는 조건이 적절히 있다면 INNER JOIN으로 연결 조건이 없다면 CARTESIAN JOIN이 되는 것이다. 그래서 사실 CROSS JOIN이나 INNER JOIN을 특별히 구분해서 사용할 필요는 없다.
 
@@ -664,15 +664,18 @@ dept_emp 테이블의 각 레코드에 의해 employees 테이블을 읽을 때 
 
 ## 조인 관련 주의 사항
 
-MySQL의 조인 처리에서 특별히 주의해야할 부분은 
+MySQL의 조인 처리에서 특별히 주의해야할 부분은 명시되는 조건은 OUTER JOIN이나 INNER JOIN에 관계없이 조인된 결과에 모두 적용된다. 그래서 OUTER JOIN으로 연결되는 테이블이 있는 쿼리에서는 가능하다면 모든 조건을 ON 절에 명시하는 습관을 들이는게 좋다.
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NTM5MTc2NSwtMTQ2OTYxOTEwMCwtMT
-M5MTA3NTc3MCwtMTk4OTY5OTk1OCwyMDc0NjgxNjYxLDk3MTA0
-ODg3MSwtNzk1MjI3OTM1LC02MDQ1NDI3MDQsMTY0NTkzNTMyLC
-0xMzQzODE3MDg4LC0xODY4Mzc3NDA5LDMxMzAxNzY0MiwtMTI4
-NTM4NDI2OCw4MDU5NjA0ODEsMTc5NTMwMjI2NSwtNzQ1NjExMz
-Q5LC0xOTcyNTMxMzk5LC0xNDUyNTQxMTUsLTEyMTQzNjM0NjUs
-MjAzNzU3NDcyMl19
+eyJoaXN0b3J5IjpbMTg3ODQwNDUwNywtNTk1MzkxNzY1LC0xND
+Y5NjE5MTAwLC0xMzkxMDc1NzcwLC0xOTg5Njk5OTU4LDIwNzQ2
+ODE2NjEsOTcxMDQ4ODcxLC03OTUyMjc5MzUsLTYwNDU0MjcwNC
+wxNjQ1OTM1MzIsLTEzNDM4MTcwODgsLTE4NjgzNzc0MDksMzEz
+MDE3NjQyLC0xMjg1Mzg0MjY4LDgwNTk2MDQ4MSwxNzk1MzAyMj
+Y1LC03NDU2MTEzNDksLTE5NzI1MzEzOTksLTE0NTI1NDExNSwt
+MTIxNDM2MzQ2NV19
 -->
