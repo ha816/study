@@ -137,6 +137,8 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 정확한 LIMIT 값을 알고 싶다면 자신의 시스템에서 일일이 확인해 보아야 한다.  힙 크기를 설정하고 JVM을 실행하고 나서 UseCompressedOops 플래그 값이 true인지 확인해 보면 되는데, 이를 통해 사용중이 시스템의 정확한 cut-off를 확인할 수 있다. 
 
+정확히 32GB를 명시하면 보통 UseCompressedOoops = false가 나타날 것이다. 그리고 소수점 한 자리 차이로 true와 false가 갈릴 것이다. 이러한 시스템의 차이는 왜 생길까? 
+
 
 
 
@@ -152,7 +154,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNzM2MTYwMywtMTAwODIwNjMzMywtMT
+eyJoaXN0b3J5IjpbLTEzNjI5MjI2NCwtMTAwODIwNjMzMywtMT
 AxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4
 Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMT
 I4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAy
