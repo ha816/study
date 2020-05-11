@@ -130,7 +130,10 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 ## 엘라스틱서치에서 Compressed OOP 사용하기
 
-엘라스틱서치 클러스터 구축할때 Compressed  OOP를 사용하려면  
+엘라스틱서치 클러스터 구축할때 Compressed  OOP를 사용하려면  어떻게 해야할까? 
+요즘 최신 JDK에서는 Compressed OOP가 기본설정이기 때문에 힙 크기를 단순히 32GB이하로 잡으면 알아서 된다.
+
+32GB
 
 
 
@@ -145,10 +148,11 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLT
-E4MzU2MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQy
-MzUyNTIsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMzOD
-I4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3
-MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMD
-UxNzExLDQ0MDUzMTA5NCwtMTk2MzkzMTUzM119
+eyJoaXN0b3J5IjpbMjEzNjAzMjQ1MCwtMTAwODIwNjMzMywtMT
+AxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4
+Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMT
+I4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAy
+NjY1MTU2LDE3NjcxODk0MDgsLTE5MzYwODAyMDQsLTEzOTM3OT
+Q1OTQsLTE2NjIwNTE3MTEsNDQwNTMxMDk0LC0xOTYzOTMxNTMz
+XX0=
 -->
