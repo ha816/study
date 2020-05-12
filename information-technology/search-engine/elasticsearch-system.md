@@ -209,7 +209,11 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 스와핑이 일어나면 가상 메모리의 일부 내용을 디스크로 쓰기 위해 디스크의 일정 영역을 스왑영역으로 만든다. 이때 일어나는 동기화  작업으로 순산적으로 시스템 성능이 떨어지고 자칫 시스템 장애가 발생할 수 있다. 시스템 리로스가 충분하다면 가급적 스와핑이 일어나지 않도록 하는것이 안전하다. 
 
-운영체제 입장에선 스와핑은 많은 리소스를 잡아먹는다. 그러므로 스와핑 작업을 모니터
+운영체제 입장에선 스와핑은 많은 리소스를 잡아먹는다. 그러므로 스와핑 작업을 모니터링하여 문제가 발생할 경우에 대해 철저히 대비해야 한다.  free 명령어를 쓰면 스왑 상태를 간단히 살펴 볼수 있다.
+
+## 엘라스틱 서치에서 스와핑을 비활성화해야하는 이유
+
+엘라스틱서치가 동작하는데 필요한 메모리도 스와핑으로 인해 언제든지 디스크로 스와핑 될 수 있다. 스와핑이 될 경우 노드의 안정성에 치명적이기 때문에 이를 최대한 피해야 한다. 메모리를 많이 사용
 
 
 # 시스템 튜닝 포인트
@@ -219,11 +223,11 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MTkwNzQ2MiwxNDUyNzQ3MTY1LDE5Mj
-cxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEz
-MTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3Nz
-gzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwy
-MDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NT
-E1NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0
-LC0xNjYyMDUxNzExXX0=
+eyJoaXN0b3J5IjpbLTE0NTI0NDY4OTAsMTQ1Mjc0NzE2NSwxOT
+I3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDEx
+MzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nz
+c4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgs
+MjAwMTkzMzgyOCwxMjQyODI2MzIsODU5ODAyMjg4LDEzMDI2Nj
+UxNTYsMTc2NzE4OTQwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5
+NCwtMTY2MjA1MTcxMV19
 -->
