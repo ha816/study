@@ -217,7 +217,10 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 **대부분 분산 시스템에서는 클러스터의 안정을 해치는 것보다 문제가 발생한 노드가 강제로 종료되어 클러스터 구성에서 제외되는 편이 훨씬 효율적이다. 그러므로 엘라스틱서치에서는 어떤 대가를 치루더라도 스와핑이 절대 발생하지 않도록 해야 한다.**
 
-클러스터를 구성하는 노드에는 
+클러스터를 구성하는 노드에는 가능한한 엘라스틱서치를 제외한 다른 애플리케이션을 설치하지 말고 엘라스틱서치 단독으로 운영하는 것이 여러모로 유리하다.  애플리케이션으로 엘라스틱서치만 존재한다면 물리 메모리를 독점할 수 있기 때문에 스와핑을 사용할 필요가 없어진다. 
+
+스와핑 작업이 일어나지 않도록 시스템 차
+
 
 # 시스템 튜닝 포인트
 
@@ -226,11 +229,11 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3Mjc4NTYxNCwxNDUyNzQ3MTY1LDE5Mj
-cxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEz
-MTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3Nz
-gzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwy
-MDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NT
-E1NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0
-LC0xNjYyMDUxNzExXX0=
+eyJoaXN0b3J5IjpbLTIxNDczOTQ1NCwtOTcyNzg1NjE0LDE0NT
+I3NDcxNjUsMTkyNzEwMDA5MSwtMTA0NDIwMDQ1MywtMTAwODIw
+NjMzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMD
+E2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MDIwNDQ2Nywx
+OTQyNjcwMTI4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMj
+I4OCwxMzAyNjY1MTU2LDE3NjcxODk0MDgsLTE5MzYwODAyMDQs
+LTEzOTM3OTQ1OTRdfQ==
 -->
