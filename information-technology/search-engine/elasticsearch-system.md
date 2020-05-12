@@ -189,7 +189,9 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 ### 엘라스틱 서치를 위한 vm.max_map_count 설정
 
-엘라스칙서ㅅ
+엘라스칙서치는 검색을 위해 루씬을 내장한다. 루씬은 기본적으로 많은 리소스를 사용한다. 자바 기반 애플리케이션은 JVM위에서 돌아가도록 설계되어 있고 기본적으로는 JVM을 통해 할당받은 힙 메모리만 사용할 수 있다. 하지만 **루씬은 예외적으로 많은 리소스를 필요로 하기 때문에 특별한 방식으로 이 제약을 회피하고 있다.** 
+
+루씬은 내부적으로 자바에서 제공하는 NIO 기술을 활용한다. 이는 운영
 
 
 # 엘라스틱서치와 가상 메모리
@@ -203,11 +205,11 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAxODkyODAyLDE0NTI3NDcxNjUsMTkyNz
-EwMDA5MSwtMTA0NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMx
-NzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3OD
-MsLTQzNDIzNTI1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMTI4LDIw
-MDE5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAyNjY1MT
-U2LDE3NjcxODk0MDgsLTE5MzYwODAyMDQsLTEzOTM3OTQ1OTQs
-LTE2NjIwNTE3MTFdfQ==
+eyJoaXN0b3J5IjpbLTY5ODI2MjA2MywxNDUyNzQ3MTY1LDE5Mj
+cxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEz
+MTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3Nz
+gzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwy
+MDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NT
+E1NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0
+LC0xNjYyMDUxNzExXX0=
 -->
