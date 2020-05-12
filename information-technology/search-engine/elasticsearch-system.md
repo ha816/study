@@ -151,7 +151,9 @@ Compressed OOP도 기본적으로 시프트 연산을 이용해 객체를 찾아
 
 이러한 부분에서 성능을 끌어올리고자 Zero-Based Compressed OOP라는 개념이 도입되었다. Zero-Based Compressed OOP을 사용하면 JVM이 시작될때 힙 메모리 번지가 0번지로 시작되도록 논리적으로 강제한다. 이를 통해 Compressed OOP가 객체의 포인터를 빠른 성능의 시프트 연산만으로도 가능하게 한다. 
 
-안타깝게도 Zero-Based Compressed OOP를 사용하려면 힙 메모리 크기를 직
+안타깝게도 Zero-Based Compressed OOP를 사용하려면 힙 메모리 크기를 지금보다 더 줄여야 한다. **논리적으로 힙 메모리의 시작 번지를 0으로 조절하기 때문에 강제로 0으로 조절하는 만큼의 메모리 번지를 사용할 수 없게 된다.** 
+
+ JVM에서는 모든 조건이 만족하면 자동으로 Zero-Based Compresse
 
 
 
@@ -166,11 +168,11 @@ Compressed OOP도 기본적으로 시프트 연산을 이용해 객체를 찾아
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM5NjgzNDc4LDE5MjcxMDAwOTEsLTEwND
-QyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2
-MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNT
-IsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEy
-NDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5ND
-A4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzEx
-LDQ0MDUzMTA5NF19
+eyJoaXN0b3J5IjpbMTM1NzE1MTgyNiwxOTI3MTAwMDkxLC0xMD
+Q0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDExMzE3MjAyLC0xODM1
+NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nzc4MywtNDM0MjM1Mj
+UyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwx
+MjQyODI2MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OT
+QwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcx
+MSw0NDA1MzEwOTRdfQ==
 -->
