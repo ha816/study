@@ -185,7 +185,7 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 운영체제는 가상 메모리의 데이터를 나눠서 반드시 필요한 부분은 물리 메모리에 로드하고 나머지 데이터는 디스크에 임시로 저장한다. 프로그램이 동작하면서 메모리상에 필요한 부분은 지속적으로 변경되고 이럴때 마다 메모리와 디스크 간의 데이터 교환이 반복적으로 일어난다. 메모리를 많이 사용할 수록 스와핑 작업은 더 많이 일어나고 이는 성능에 큰 영향을 미친다. 
 
-
+애플리케이션이 실행되면 운영체제로 부터 가상  메모리를 할당받는다. 그리고 이러한 가상 메모리를 생성하는 제약은 전적으로 운영체제 차원에서 관리한다. 엘라스틱서치도 실행시 운영체제에서 설정된 가상 메모리 관련 설정을 그대로 받는다. 또한 엘라스틱서치는 자바 기반의 애플리케이션이다. 그렇기 때문에 JVM 위에서 동작하게 되며, 앞서 설명한 바와 같이 실행 시 옵션으로 설정한 
 
 
 # 엘라스틱서치와 가상 메모리
@@ -199,11 +199,11 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1Mjc0NzE2NSwxOTI3MTAwMDkxLC0xMD
-Q0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDExMzE3MjAyLC0xODM1
-NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nzc4MywtNDM0MjM1Mj
-UyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwx
-MjQyODI2MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OT
-QwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcx
-MSw0NDA1MzEwOTRdfQ==
+eyJoaXN0b3J5IjpbMjM3NjI2NDMxLDE0NTI3NDcxNjUsMTkyNz
+EwMDA5MSwtMTA0NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMx
+NzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3OD
+MsLTQzNDIzNTI1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMTI4LDIw
+MDE5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAyNjY1MT
+U2LDE3NjcxODk0MDgsLTE5MzYwODAyMDQsLTEzOTM3OTQ1OTQs
+LTE2NjIwNTE3MTFdfQ==
 -->
