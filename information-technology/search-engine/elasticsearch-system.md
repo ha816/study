@@ -213,7 +213,9 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 ## 엘라스틱 서치에서 스와핑을 비활성화해야하는 이유
 
-엘라스틱서치가 동작하는데 필요한 메모리도 스와핑으로 인해 언제든지 디스크로 스와핑 될 수 있다. 스와핑이 될 경우 노드의 안정성에 치명적이기 때문에 이를 최대한 피해야 한다. 메모리를 많이 사용
+엘라스틱서치가 동작하는데 필요한 메모리도 스와핑으로 인해 언제든지 디스크로 스와핑 될 수 있다. 스와핑이 될 경우 노드의 안정성에 치명적이기 때문에 이를 최대한 피해야 한다. 메모리를 많이 사용하는 엘라스틱서치의 특성상 스와핑 작업으로 가바지 컬렉션이 비정상적으로 수분간 지속된다거나 노드 응답이 느려질 수 있다. 또한 클러스터간 연결이 불안정해서 연결과 끊어짐이 반복될 수 도 있다. 
+
+**대부분 분산 시스템에서는 클러스터의 안정을 해치는 것보다 문제가 발생한 노드가 강제로 종료되어 클러스터 구성에서 제외되는 편이 훨씬 효율적이다.** 그러므로 엘라스틱서치에서는 어떤 대가를 치루더라도 스와핑이 저
 
 
 # 시스템 튜닝 포인트
@@ -223,11 +225,11 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTI0NDY4OTAsMTQ1Mjc0NzE2NSwxOT
-I3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDEx
-MzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nz
-c4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgs
-MjAwMTkzMzgyOCwxMjQyODI2MzIsODU5ODAyMjg4LDEzMDI2Nj
-UxNTYsMTc2NzE4OTQwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5
-NCwtMTY2MjA1MTcxMV19
+eyJoaXN0b3J5IjpbLTQ4NTYwNjU4NywxNDUyNzQ3MTY1LDE5Mj
+cxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEz
+MTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3Nz
+gzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwy
+MDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NT
+E1NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0
+LC0xNjYyMDUxNzExXX0=
 -->
