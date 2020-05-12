@@ -191,7 +191,7 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 엘라스칙서치는 검색을 위해 루씬을 내장한다. 루씬은 기본적으로 많은 리소스를 사용한다. 자바 기반 애플리케이션은 JVM위에서 돌아가도록 설계되어 있고 기본적으로는 JVM을 통해 할당받은 힙 메모리만 사용할 수 있다. 하지만 **루씬은 예외적으로 많은 리소스를 필요로 하기 때문에 특별한 방식으로 이 제약을 회피하고 있다.** 
 
-루씬은 내부적으로 자바에서 제공하는 NIO 기술을 활용한다. 이는 운영
+루씬은 내부적으로 자바에서 제공하는 **NIO** 기술을 활용한다. **이는 운영체제 커널에서 제공하는 mmap 시스템 콜을 직접 호출할 수 있으며 이를 이용하면 VM을 거치지 않고 직접 커널 모드로 진입하기 때문에 높은 성능을 낼 수 있다.**  루씬은 mmap과 niofs 방식의 데이터리를 적절히 혼용해서 사용하는데 이러한 동작방식으로 mmap 시스템 콜을 직접 호출할 수 있다. 이로 인해 부수적인 이득도 
 
 
 # 엘라스틱서치와 가상 메모리
@@ -205,11 +205,11 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5ODI2MjA2MywxNDUyNzQ3MTY1LDE5Mj
-cxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEz
-MTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3Nz
-gzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwy
-MDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NT
-E1NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0
-LC0xNjYyMDUxNzExXX0=
+eyJoaXN0b3J5IjpbLTIwOTEzNDEwMjIsMTQ1Mjc0NzE2NSwxOT
+I3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDEx
+MzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nz
+c4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgs
+MjAwMTkzMzgyOCwxMjQyODI2MzIsODU5ODAyMjg4LDEzMDI2Nj
+UxNTYsMTc2NzE4OTQwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5
+NCwtMTY2MjA1MTcxMV19
 -->
