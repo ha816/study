@@ -233,7 +233,10 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 ### memory_lock 설정
 
-시스템 레벨에서 스와핑을 사용하지 못하게 설정하려면 루트 권한이 필요하기 때문에 사용자 권한만 있다면 스와핑을 막을 수 없다. 하지만 제한적이나마 스와핑을 최소화 하는 방법이 있다. 엘라스틱서치 환경설정으로 제공하는 bootstrap.memory_lock 속성을 이용하는 방법이다. 이를 활성화 하면 mlockall()함수와 동일하게 
+시스템 레벨에서 스와핑을 사용하지 못하게 설정하려면 루트 권한이 필요하기 때문에 사용자 권한만 있다면 스와핑을 막을 수 없다. 하지만 제한적이나마 스와핑을 최소화 하는 방법이 있다. 엘라스틱서치 환경설정으로 제공하는 bootstrap.memory_lock 속성을 이용하는 방법이다. 이를 활성화 하면 mlockall()함수와 동일하게 스와핑을 최대한 방지할 수 있다. 
+
+>mlockall() 함수
+>커널 수준에서 제공하는 저수준 함수의 일종이다. 호출한 프로세스의 페이징을 금지시키고 모든 메모리가 램에 상주하는 것을 보장한다. 이는 애플리케이션 개발을 할때 사용하는 memory_lock 기술인데 ㅇ
 
 
 # 시스템 튜닝 포인트
@@ -243,11 +246,11 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI2NzI0NzAsLTk3Mjc4NTYxNCwxNDUyNz
-Q3MTY1LDE5MjcxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYz
-MzMsLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNi
-wxMzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0
-MjY3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyOD
-gsMTMwMjY2NTE1NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC0x
-MzkzNzk0NTk0XX0=
+eyJoaXN0b3J5IjpbODIyMDYxMjgxLC05NzI3ODU2MTQsMTQ1Mj
+c0NzE2NSwxOTI3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2
+MzMzLC0xMDExMzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMT
+YsMTMwNzg3Nzc4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5
+NDI2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2MzIsODU5ODAyMj
+g4LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMTkzNjA4MDIwNCwt
+MTM5Mzc5NDU5NF19
 -->
