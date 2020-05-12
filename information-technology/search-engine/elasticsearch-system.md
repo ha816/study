@@ -177,6 +177,8 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 ### JVM을 위한 가상 메모리
 
+우리는 -Xms와 Xmx 설정으로 JVM에서 사용할 힙 메모리를 정할 수 있다. 하지만 실제로 돌려서 
+
 
 # 엘라스틱서치와 가상 메모리
 
@@ -189,11 +191,11 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM1Njc4NTA5LDE5MjcxMDAwOTEsLTEwND
-QyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2
-MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNT
-IsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEy
-NDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5ND
-A4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzEx
-LDQ0MDUzMTA5NF19
+eyJoaXN0b3J5IjpbLTE1ODYzOTg5MCwxOTI3MTAwMDkxLC0xMD
+Q0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDExMzE3MjAyLC0xODM1
+NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nzc4MywtNDM0MjM1Mj
+UyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwx
+MjQyODI2MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OT
+QwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcx
+MSw0NDA1MzEwOTRdfQ==
 -->
