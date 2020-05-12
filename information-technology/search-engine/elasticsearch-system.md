@@ -181,7 +181,9 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 보통은 운영체제가 -Xms와 Xmx설정에 맞게 가상 메모리를 애플리케이션에 할당한다. 그렇지만 실제 프로그램은 그보다 작은 메모리만으로도 충분히 실행되기 때문에 차이가 나타나는 것이다. 
 
-운영체제에서는 효율적인 메모리 관리를 위해 메
+운영체제에서는 효율적인 메모리 관리를 위해 메모리와 디스크 간에 데이터를 교환하는 **스와핑(Swapping)** 작업을 꾸준히 수행한다. **멀티 태스킹의 특성상 물리 메모리를 하나의 애플리케이션이 점유하지 못하고 여러 애플리케이션과 나눠서 사용해야 하기 때문이다.**
+
+운영체제는 가상 메모리의 데이터를 나눠서 반드시 필요한 부분은 물리 메모리에 로드하고 나머지 데이터는 디스크에 임시로 저장한다. 프로그램이 동작하면서 메모리상에 필요한 부분은 지속적으로 변경되고 이럴때 마다 메모
 
 
 # 엘라스틱서치와 가상 메모리
@@ -195,11 +197,11 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc0ODkzMTczLDE5MjcxMDAwOTEsLTEwND
-QyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2
-MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNT
-IsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEy
-NDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5ND
-A4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzEx
-LDQ0MDUzMTA5NF19
+eyJoaXN0b3J5IjpbMTczNTEyOTM5MiwxOTI3MTAwMDkxLC0xMD
+Q0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDExMzE3MjAyLC0xODM1
+NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nzc4MywtNDM0MjM1Mj
+UyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwx
+MjQyODI2MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OT
+QwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcx
+MSw0NDA1MzEwOTRdfQ==
 -->
