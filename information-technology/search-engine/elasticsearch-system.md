@@ -147,6 +147,10 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 **자바에서는 힙 메모리에 8byte 단위로 객체를 저장하는데, 이런 특성을 이용하면 특정 객체를 찾아 가기 위해 시프트 연산을 사용하는 것이 가능해진다.** 메모리 상의 포인터를 계산하는 것은 비용이 높은 CPU 연산을 동반하는데 상대적으로 비용이 저렴한 시프트 연산만을 이용할 수 있다면 포인터 계산 성능을 대폭 끌어올릴수 있다.
 
+Compressed OOP도 기본적으로 시프트 연산을 이용해 객체를 찾아가도록 되어 있다. 하지만 100% 시프트 연산만으로는 불가능하고 시프트 연산으로 생성된 값에 특정 번지수를 더하는 Add 연산이 병행되어야 정확한 번지수를 계산할 수 있다. 앞에서 보았듯이 JVM의 힙 메모리가 0번지 부터 시작하지 않기 때문이다. 
+
+이러한 부분에서 성능을 끌어올리고자 Zero
+
 
 
 # 엘라스틱서치와 가상 메모리
@@ -160,11 +164,11 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNzEwMDA5MSwtMTA0NDIwMDQ1MywtMT
-AwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4
-ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MDIwND
-Q2NywxOTQyNjcwMTI4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1
-OTgwMjI4OCwxMzAyNjY1MTU2LDE3NjcxODk0MDgsLTE5MzYwOD
-AyMDQsLTEzOTM3OTQ1OTQsLTE2NjIwNTE3MTEsNDQwNTMxMDk0
-LC0xOTYzOTMxNTMzXX0=
+eyJoaXN0b3J5IjpbLTE1NjM2MTc5NDAsMTkyNzEwMDA5MSwtMT
+A0NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgz
+NTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIzNT
+I1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMTI4LDIwMDE5MzM4Mjgs
+MTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAyNjY1MTU2LDE3NjcxOD
+k0MDgsLTE5MzYwODAyMDQsLTEzOTM3OTQ1OTQsLTE2NjIwNTE3
+MTEsNDQwNTMxMDk0XX0=
 -->
