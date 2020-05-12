@@ -177,7 +177,11 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 ### JVM을 위한 가상 메모리
 
-우리는 -Xms와 Xmx 설정으로 JVM에서 사용할 힙 메모리를 정할 수 있다. 하지만 실제로 돌려서 
+우리는 -Xms와 Xmx 설정으로 JVM에서 사용할 힙 메모리를 정할 수 있다. 하지만 실제로  JVM을 돌려 보면 가상 메모리 크기와 실제 사용중인 메모리 공간을 확인 할 수 있는데, 대부분은 실제 사용하는 메모리가 월등히 적다. 왜 이런 현상이 나타날까?
+
+보통은 운영체제가 -Xms와 Xmx설정에 맞게 가상 메모리를 애플리케이션에 할당한다. 그렇지만 실제 프로그램은 그보다 작은 메모리만으로도 충분히 실행되기 때문에 차이가 나타나는 것이다. 
+
+운영체제에서는 효율적인 메모리 관리를 위해 메
 
 
 # 엘라스틱서치와 가상 메모리
@@ -191,11 +195,11 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODYzOTg5MCwxOTI3MTAwMDkxLC0xMD
-Q0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDExMzE3MjAyLC0xODM1
-NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nzc4MywtNDM0MjM1Mj
-UyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwx
-MjQyODI2MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OT
-QwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcx
-MSw0NDA1MzEwOTRdfQ==
+eyJoaXN0b3J5IjpbODc0ODkzMTczLDE5MjcxMDAwOTEsLTEwND
+QyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2
+MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNT
+IsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEy
+NDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5ND
+A4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzEx
+LDQ0MDUzMTA5NF19
 -->
