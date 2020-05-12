@@ -161,6 +161,9 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 # 엘라스틱서치와 가상 메모리
 
+**현대 운영체제에서는 애플리케이션이 물리 메모리를 직접 할당받지 못한다.** 운영체제는 멀티 태스킹 실현을 위해 각 애플리케이션을 위한 **전용 가상 메모리를 만들고 이를 할당한다.** 가상 메모리를 할당 받은 애플리케이션은 자신이 할당받은 가상 메모리를 실제 메모리로 착각하고 사용하는 것이다. 
+
+이번에는 자바 기반의 애플리케이션에서 이렇
 
 
 # 엘라스틱서치와 가상 메모리
@@ -174,7 +177,7 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyOTczMjI1MywxOTI3MTAwMDkxLC0xMD
+eyJoaXN0b3J5IjpbMTMwMjYyNzQ3OCwxOTI3MTAwMDkxLC0xMD
 Q0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDExMzE3MjAyLC0xODM1
 NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nzc4MywtNDM0MjM1Mj
 UyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwx
