@@ -223,10 +223,13 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 ### 스와핑 비활성화
 
-시스템을 엘라스틱서치 노드 전용으로 사용하는 것이 가능하다면 스와핑을 완전히 비활성화하는 것이 가장 좋은 방법이다. 
-
+시스템을 엘라스틱서치 노드 전용으로 사용하는 것이 가능하다면 스와핑을 완전히 비활성화하는 것이 가장 좋은 방법이다. 루트 권한으로 swapoff 명령어를 쓰면 일시적으로 스와핑을 비활성화할 수 있다.
 
 ### 스와핑 최소화
+
+시스템 특성상 스와핑을 완전히 비활성화할 수 없는 상황이라면 스와핑 주기를 조절해서 발생 빈도를 최소화할 수 있다. vm.swappiness 값을 1로 설정하면 스와핑을 최대한 사용하지 않겠다는 의미이다. 
+
+하지만 운영체제가 메모리 관리 차원에서 필연적으로 스와핑이 필요하다고 판단할 경우에는 언제든지 스와핑이 일어날 수 있으므로 주의해야 한다. 
 
 ### memory_lock
 
@@ -238,11 +241,11 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMTcwNDU5MSwtOTcyNzg1NjE0LDE0NT
-I3NDcxNjUsMTkyNzEwMDA5MSwtMTA0NDIwMDQ1MywtMTAwODIw
-NjMzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMD
-E2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MDIwNDQ2Nywx
-OTQyNjcwMTI4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMj
-I4OCwxMzAyNjY1MTU2LDE3NjcxODk0MDgsLTE5MzYwODAyMDQs
-LTEzOTM3OTQ1OTRdfQ==
+eyJoaXN0b3J5IjpbNjA5MTk2NDk0LC05NzI3ODU2MTQsMTQ1Mj
+c0NzE2NSwxOTI3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2
+MzMzLC0xMDExMzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMT
+YsMTMwNzg3Nzc4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5
+NDI2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2MzIsODU5ODAyMj
+g4LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMTkzNjA4MDIwNCwt
+MTM5Mzc5NDU5NF19
 -->
