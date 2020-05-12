@@ -145,7 +145,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 ## Zero-Based Compressed OOP
 
-**자바에서는 힙 메모리에 8byte 단위로 객체를 저장하는데, 이런 특성을 이용하면 특정 객체를 찾아 가기 위해 시프트 연산을 사용하는 것이 가능해진다.** 메모리 상의 포인터를 계산하는 것은 비용이 높은 CPU 연산을 동반하는데 상대적으로 비용이 저렴한 시프트 연산
+**자바에서는 힙 메모리에 8byte 단위로 객체를 저장하는데, 이런 특성을 이용하면 특정 객체를 찾아 가기 위해 시프트 연산을 사용하는 것이 가능해진다.** 메모리 상의 포인터를 계산하는 것은 비용이 높은 CPU 연산을 동반하는데 상대적으로 비용이 저렴한 시프트 연산만을 이용할 수 있다면 포인터 계산 성능을 대폭 끌어올릴수 있다.
 
 
 
@@ -160,11 +160,11 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjU3ODg2NzksLTEwNDQyMDA0NTMsLT
-EwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLTY3
-ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAyMD
-Q0NjcsMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYzMiw4
-NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5NDA4LC0xOTM2MD
-gwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzExLDQ0MDUzMTA5
-NCwtMTk2MzkzMTUzM119
+eyJoaXN0b3J5IjpbMTkyNzEwMDA5MSwtMTA0NDIwMDQ1MywtMT
+AwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4
+ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MDIwND
+Q2NywxOTQyNjcwMTI4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1
+OTgwMjI4OCwxMzAyNjY1MTU2LDE3NjcxODk0MDgsLTE5MzYwOD
+AyMDQsLTEzOTM3OTQ1OTQsLTE2NjIwNTE3MTEsNDQwNTMxMDk0
+LC0xOTYzOTMxNTMzXX0=
 -->
