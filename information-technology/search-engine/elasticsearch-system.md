@@ -143,7 +143,9 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 모든 시스템의 메모리 번지가 0부터 시작하면 좋겠지만 시스템마다 시작 번지가 약간씩 다르다. 만약 이것 저것 고민하고 싶지 않다면 안전하게 31GB로 설정하는 것도 방법이다. 이렇게 하면 비교적 간단히 Compressed OOP를 확실히 적용할 수 있다.
 
-##
+## Zero-Based Compressed OOP
+
+자바에서는 힙 메모리에 8byte 단위로 객체를 저장하는데, 이런 특성을 이용하
 
 
 
@@ -158,7 +160,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNzk0NzU3OSwtMTA0NDIwMDQ1MywtMT
+eyJoaXN0b3J5IjpbMjEyMDI3NjQxMCwtMTA0NDIwMDQ1MywtMT
 AwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4
 ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MDIwND
 Q2NywxOTQyNjcwMTI4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1
