@@ -172,7 +172,10 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 이런 방식은 멀티태스킹이 가능한 운영체제에서 필수적이다. 이를 이용하면 모든 애플리케이션이 운영체제에서 인식하고 있는 물리 메모리 크기보다 더 큰 크기의 메모리를 할당 받아 사용할 수 있다. 
 
 하지만 만약 특정 애플리케이션이 대용량의 가상 메모리를 할당받아 사용하면 운영체제 성능에 큰 악영향을 미칠 수 있다. 그래서 운영체제 입장에서는 애플리케이션 들이 CPU나 메모리 같은 시스템 리소스를 사용할때 
-운영체제 차원에서 다양한 제약을 두고 있다. 
+운영체제 차원에서 다양한 제약을 두고 있다. 모든 애플리케이션이 리소스를 효율적으로 써야하기 때문에 운영체제는 사용가능한 리소스를 제한하고 각 애플리케이션에는 제한된 리소스 이상을 쓰지 못하도록 강제한다.
+
+
+### JVM을 위한 가상 메모리
 
 
 # 엘라스틱서치와 가상 메모리
@@ -186,11 +189,11 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MTM3NTI4MSwxOTI3MTAwMDkxLC0xMD
-Q0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDExMzE3MjAyLC0xODM1
-NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nzc4MywtNDM0MjM1Mj
-UyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwx
-MjQyODI2MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OT
-QwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcx
-MSw0NDA1MzEwOTRdfQ==
+eyJoaXN0b3J5IjpbNjM1Njc4NTA5LDE5MjcxMDAwOTEsLTEwND
+QyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2
+MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNT
+IsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEy
+NDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5ND
+A4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0LC0xNjYyMDUxNzEx
+LDQ0MDUzMTA5NF19
 -->
