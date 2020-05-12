@@ -155,7 +155,11 @@ Compressed OOP도 기본적으로 시프트 연산을 이용해 객체를 찾아
 
  JVM에서는 모든 조건이 만족하면 자동으로 Zero-Based Compressed OOP로 동작한다. 만약 운영 중 이를 넘어가면 Compressed OOP로 하고 넘어가면 일반적인 OOP로 동작한다.
 
-일반적으로 Zero-Based Compressed OOP를 동작하기 위해서는 30GB정도의 힙을 사용해야 한다. 물론 2GB 공간을 JVM에 할당하지 못하는 것이 아쉽지만 다행이도 루씬의 시스템 
+일반적으로 Zero-Based Compressed OOP를 동작하기 위해서는 30GB정도의 힙을 사용해야 한다. 물론 2GB 공간을 JVM에 할당하지 못하는 것이 아쉽지만 다행이도 루씬의 시스템 캐시로 사용할 수 있기 때문에 너무 아쉬워하지 않아도 된다.
+
+JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장하고 메모리를 더 줄여 Zero-based Compressed OOP를 사용하는 것도 좋다. 각자의 환경에 맞게 사용 하도록 하자.
+
+# 엘라스틱서치와 가상 메모리
 
 
 
@@ -170,7 +174,7 @@ Compressed OOP도 기본적으로 시프트 연산을 이용해 객체를 찾아
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MjMzODM2NiwxOTI3MTAwMDkxLC0xMD
+eyJoaXN0b3J5IjpbMTAyOTczMjI1MywxOTI3MTAwMDkxLC0xMD
 Q0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDExMzE3MjAyLC0xODM1
 NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nzc4MywtNDM0MjM1Mj
 UyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwx
