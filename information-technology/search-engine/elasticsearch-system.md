@@ -219,7 +219,7 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 클러스터를 구성하는 노드에는 가능한한 엘라스틱서치를 제외한 다른 애플리케이션을 설치하지 말고 엘라스틱서치 단독으로 운영하는 것이 여러모로 유리하다.  애플리케이션으로 엘라스틱서치만 존재한다면 물리 메모리를 독점할 수 있기 때문에 스와핑을 사용할 필요가 없어진다. 
 
-스와핑 작업이 일어나지 않도록 시스템 차원에서 여려 방법이 있다. 
+스와핑 작업이 일어나지 않도록 시스템 차원에서 여려 방법이 있다.  엘라스틱 서치 입장에선 스와핑 자체가 클러스터를 운영하는데 매우 치명적이기 때문에 여러 안전 장치를 이중 삼중으로 설정하는 것이 중요하다. 스와핑 비활성화, 그리고 memory_lock 속성
 
 ### 스와핑 비활성화
 
@@ -241,6 +241,9 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 하지만 **memory_lock 기술은 어디까지나 애플리케이션 레벨에서만 의미가 있는 제한된 기술이다.** 메모리 사용량이 적을때는 의도한대로 동작하지만 운영체제 입장에서 메모리가 부족하면 이를 무시하고 스와핑이 일어날 수 있다. 따라서 루트권한을 얻어 시스템 설정을 변경하는 것이 제일 안전하다. 
 
 
+
+
+
 # 시스템 튜닝 포인트
 
 
@@ -248,11 +251,11 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyMzQwMjgyLC05NzI3ODU2MTQsMTQ1Mj
-c0NzE2NSwxOTI3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2
-MzMzLC0xMDExMzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMT
-YsMTMwNzg3Nzc4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5
-NDI2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2MzIsODU5ODAyMj
-g4LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMTkzNjA4MDIwNCwt
-MTM5Mzc5NDU5NF19
+eyJoaXN0b3J5IjpbLTE2MzEwMDAxNDYsLTk3Mjc4NTYxNCwxND
+UyNzQ3MTY1LDE5MjcxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgy
+MDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MT
+AxNiwxMzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAyMDQ0Njcs
+MTk0MjY3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MD
+IyODgsMTMwMjY2NTE1NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0
+LC0xMzkzNzk0NTk0XX0=
 -->
