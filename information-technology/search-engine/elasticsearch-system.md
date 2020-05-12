@@ -139,7 +139,7 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 정확히 32GB를 명시하면 보통 UseCompressedOoops = false가 나타날 것이다. 그리고 소수점 한 자리 차이로 true와 false가 갈릴 것이다. 이러한 시스템의 차이는 왜 생길까? 
 
-**그 이유는 JVM의 힙 메모리가 사실 0번지 부터 시작하지 않기 때문이다.**
+**그 이유는 JVM의 힙 메모리가 사실 0번지 부터 시작하지 않기 때문이다.** 객체를 가리키는 포인터가 0번지 부터 시작되지 않았기 때문에 0번지 부터 실제 시작 번지까지 앞쪽에 위치한 일부 메모리 공간은 활용할 수 없게 되는것이다. Compressed OOp는 이론상 최대 32GB의 메모리 번지를 가리킬 수 있지만 시작 번지가 0이 아니기 때문에 실제로는 대략 31.998
 
 
 
@@ -154,11 +154,11 @@ Compressed OOP는 포인터 공간의 낭비를 줄이고 좀 더 빠른 연산�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMsLT
-EwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwxMzA3
-ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0MjY3MD
-EyOCwyMDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMw
-MjY2NTE1NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNz
-k0NTk0LC0xNjYyMDUxNzExLDQ0MDUzMTA5NCwtMTk2MzkzMTUz
-M119
+eyJoaXN0b3J5IjpbMTA5Mzc4NTg0LC0xMDQ0MjAwNDUzLC0xMD
+A4MjA2MzMzLC0xMDExMzE3MjAyLC0xODM1NjEwODk3LC02Nzg4
+NDEwMTYsMTMwNzg3Nzc4MywtNDM0MjM1MjUyLC0xNTgwMjA0ND
+Y3LDE5NDI2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2MzIsODU5
+ODAyMjg4LDEzMDI2NjUxNTYsMTc2NzE4OTQwOCwtMTkzNjA4MD
+IwNCwtMTM5Mzc5NDU5NCwtMTY2MjA1MTcxMSw0NDA1MzEwOTQs
+LTE5NjM5MzE1MzNdfQ==
 -->
