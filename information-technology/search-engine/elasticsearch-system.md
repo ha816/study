@@ -195,7 +195,9 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 대부분 운영체제는 파일 시스템을 캐시하는데 커널 레벨의 메모리를 사용하는데, 루씬에서 생성한 세그먼트도 파일이기 때문에 파일 시스템 캐시의 이점을 제대로 누릴 수 있는 것이다. 이로써 자바 힙 메모리에 의존하지 않으면서도 커널 레벨에서 간접적으로 물리 메모리를 사용할 수 있게 된다. 그러한 이유로 50% 물리 메모리를 OS에 양보하라고 했던 것이다. 정리하자면 엘라스틱서치는 자바 힙 메모리도 사용할 수 있고 운영체제에 할당된 물리 메모리도 사용할 수 있는 일석이조의 결과를 누리게 된다.
 
-엘라스틱서치에서 루씬이 원활하게 동작하기 위해선 가상 메모리 설정 중 mmap 크기 항목을 변경해야 한다. 대부분 운영체제에서 기본적으로 제공하는 설정 값이 너무 작기 때문이다. CentOS
+엘라스틱서치에서 루씬이 원활하게 동작하기 위해선 가상 메모리 설정 중 mmap 크기 항목을 변경해야 한다. 대부분 운영체제에서 기본적으로 제공하는 설정 값이 너무 작기 때문이다. CentOS 7버전의 리눅스에서는 기본적으로 가상 메모리에서 생성 가능한 mmap 개수가 65,530으로 설정되어 있다. 
+
+mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입장에서는 65
 
 
 # 엘라스틱서치와 가상 메모리
@@ -209,11 +211,11 @@ JVM의 성능을 위해 반드시 Compressed OOP를 사용하는 것을 권장�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDgxMjg4MDQsMTQ1Mjc0NzE2NSwxOT
-I3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDEx
-MzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nz
-c4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgs
-MjAwMTkzMzgyOCwxMjQyODI2MzIsODU5ODAyMjg4LDEzMDI2Nj
-UxNTYsMTc2NzE4OTQwOCwtMTkzNjA4MDIwNCwtMTM5Mzc5NDU5
-NCwtMTY2MjA1MTcxMV19
+eyJoaXN0b3J5IjpbMTExNTEzMDYyNywxNDUyNzQ3MTY1LDE5Mj
+cxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEz
+MTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3Nz
+gzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwy
+MDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgsMTMwMjY2NT
+E1NiwxNzY3MTg5NDA4LC0xOTM2MDgwMjA0LC0xMzkzNzk0NTk0
+LC0xNjYyMDUxNzExXX0=
 -->
