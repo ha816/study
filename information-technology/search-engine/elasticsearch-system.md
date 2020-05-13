@@ -264,18 +264,18 @@ sysctl은 ulimit 명령어와 더불어 애플리케이션이 실행될때 생�
 
 ## ulimit 명령어를 이용한 유저레벨 튜닝
 
-ulimit 값
+ulimit 값을 변경하는 작업은 매우 신중하게 진행해야 한다. 시스템의 특성이나 처리하는 데이터의 종류에 따라 리소스 제한을 변경해야 좀 더 좋은 성능을 발휘하는 경욷
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1NzA0NTczLC0xNDg5ODU5MDU1LC0xOT
-Q3NTYwMDY5LC01MTU2MDE3ODYsLTk3Mjc4NTYxNCwxNDUyNzQ3
-MTY1LDE5MjcxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMz
-MsLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwx
-MzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0Mj
-Y3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgs
-MTMwMjY2NTE1Nl19
+eyJoaXN0b3J5IjpbMTIxNzkzODUzMywtMTQ4OTg1OTA1NSwtMT
+k0NzU2MDA2OSwtNTE1NjAxNzg2LC05NzI3ODU2MTQsMTQ1Mjc0
+NzE2NSwxOTI3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2Mz
+MzLC0xMDExMzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYs
+MTMwNzg3Nzc4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5ND
+I2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2MzIsODU5ODAyMjg4
+LDEzMDI2NjUxNTZdfQ==
 -->
