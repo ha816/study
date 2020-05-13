@@ -14,10 +14,12 @@
 
 그런 이유로 최신 버전에서는 운영시 발생가능한 문제점을 미연에 방지하기 위해 좀 더 강력한 검사를 수행하게 됬고 이러한 과정이 부트스트랩 체크(Bootstrap Checks)라 한다. 
 
+부트스트랩 과정에서 필수 설정이 잘못된 경우
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNzU3ODM4OSwtNDExNzY5NzY4LC0xNT
+eyJoaXN0b3J5IjpbMjE0MTEyNDEwMiwtNDExNzY5NzY4LC0xNT
 c3ODA4ODMxXX0=
 -->
