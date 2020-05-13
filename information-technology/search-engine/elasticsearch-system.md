@@ -304,16 +304,17 @@ etc/sysctl.conf
 
 ## 엘라스틱서치 노드 레벨 튜닝
 
-앞서 보았던 두 가지 명령어로 엘라스틱서치 노드 레벨의 튜닝이 가능하다. 엘라스틱서치 클러스터를 운영하다 보면 특정 노드가 "Too many open files"라는 에러를 내며 장애를 내는 경우가 있다. 리눅스에서는 모든 리소스를 일종의 
+엘라스틱서치 클러스터를 운영하다 보면 특정 노드가 "Too many open files"라는 에러를 내며 장애를 내는 경우가 있다. 리눅스에서는 모든 리소스를 일종의 파일로 표현하는데, 엘라스틱서치에서 추가로 리소스를 사용하기 위해 파일 형태로 운영체제에 리소스 할당을 요청했고 프로세스의 ulimit 제한에 걸려서 리소스 할당이 실패한 것이다.
 
+엘라스틱서치 노드는 많은 수의 소
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODgyOTM4MzEsMTg4ODg1NDE5MSwxMz
-YzMjc4MjcwLDE5ODA4NDcxNjMsMTYwNjc2NTI5Nyw1NzYzODQy
-MTgsLTEzNDk4MDIzMTIsMTI5NDY1NjIwMywtMTQ4OTg1OTA1NS
-wtMTk0NzU2MDA2OSwtNTE1NjAxNzg2LC05NzI3ODU2MTQsMTQ1
-Mjc0NzE2NSwxOTI3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4Mj
-A2MzMzLC0xMDExMzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEw
-MTYsMTMwNzg3Nzc4M119
+eyJoaXN0b3J5IjpbMTk1NDQ4NDM1LDE4ODg4NTQxOTEsMTM2Mz
+I3ODI3MCwxOTgwODQ3MTYzLDE2MDY3NjUyOTcsNTc2Mzg0MjE4
+LC0xMzQ5ODAyMzEyLDEyOTQ2NTYyMDMsLTE0ODk4NTkwNTUsLT
+E5NDc1NjAwNjksLTUxNTYwMTc4NiwtOTcyNzg1NjE0LDE0NTI3
+NDcxNjUsMTkyNzEwMDA5MSwtMTA0NDIwMDQ1MywtMTAwODIwNj
+MzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2
+LDEzMDc4Nzc3ODNdfQ==
 -->
