@@ -6,11 +6,11 @@
 
 # 노드 부트스트랩 과정의 이해
 
-엘라스틱서치에는 부트슽
+엘라스틱서치에는 부트스트랩이라는 과정이 있다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwODMzMjU5OSwtMTU3NzgwODgzMV19
+eyJoaXN0b3J5IjpbLTQxMTc2OTc2OCwtMTU3NzgwODgzMV19
 -->
