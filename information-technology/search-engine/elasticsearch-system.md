@@ -250,6 +250,8 @@ ulimit 명령어의 경우를 먼저 알아보자. 운영체제에서는 여러 
 
 ulimit에는 애플리케이션이 생성될때 할당받은 리소스의 최대값이 관리되고 있고, 이는 모든 애플리케이션에 공통으로 적용된다. 즉, 애플리케이션이 실행될때 ulimit에 설정된 양만큼만 할당 받을 수 있다. 
 
+리눅스에서는 ulimit -a 명령어를 통해 한 프로세스가 가질 수 있는 리소스의 정보를 알 수 있다. 운영체제 입장에서는 엘라스틱서치도 하나의 프로세스이기 때문에 ulimit에서 설정된 값 이상의 리소스를 사용할 수는 없다. 
+
 
 
 
@@ -257,11 +259,11 @@ ulimit에는 애플리케이션이 생성될때 할당받은 리소스의 최대
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDc1NjAwNjksLTUxNTYwMTc4NiwtOT
-cyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMDA5MSwtMTA0NDIw
-MDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgzNTYxMD
-g5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1Miwt
-MTU4MDIwNDQ2NywxOTQyNjcwMTI4LDIwMDE5MzM4MjgsMTI0Mj
-gyNjMyLDg1OTgwMjI4OCwxMzAyNjY1MTU2LDE3NjcxODk0MDgs
-LTE5MzYwODAyMDRdfQ==
+eyJoaXN0b3J5IjpbLTUwMDEwNDM1NywtMTk0NzU2MDA2OSwtNT
+E1NjAxNzg2LC05NzI3ODU2MTQsMTQ1Mjc0NzE2NSwxOTI3MTAw
+MDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDExMzE3Mj
+AyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nzc4Mywt
+NDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMT
+kzMzgyOCwxMjQyODI2MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYs
+MTc2NzE4OTQwOF19
 -->
