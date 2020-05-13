@@ -317,16 +317,18 @@ ulimit -n 81920
 
 ## Max Thread 한계설정
 
-엘라스틱서치는 빠른 처리를 위해 댜량의 쓰레드를 생성한다. 기본적으로 다수의 스레드를 관리하기 때문에 효율을 위해 스레드 풀을 도입해서 적극 활용한다. 스레드풀을 이용하면 안정적이면서도 비교적 
+엘라스틱서치는 빠른 처리를 위해 댜량의 쓰레드를 생성한다. 기본적으로 다수의 스레드를 관리하기 때문에 효율을 위해 스레드 풀을 도입해서 적극 활용한다. 스레드풀을 이용하면 안정적이면서도 비교적 효율적으로 처리할 수 있기 때문에 엘라스틱서치 노드 내부의 다양한 영역에서 스레드 풀이 사용된다. 또한 스레드풀은 내부에 큐를 가지고 있기 때문에 처리를 위해 대기 중인 요청을 임시 보관할 수 있다. 이를 이용하면 순간적으로 트래픽이 몰리더라도 데이터를 읽지 않고 보관할 수 있다. 
+
+스레드 풀 내부의 스레드 개수를 사용자가 직접 설정하는 것도 가능하다. 하지만 물리적인 CPU 수를 기반으로 엘라스틱서치가 최적의 스레드 수를 자동으로 계산하기 때문에 가능한 엘
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5ODE1MTA2MCwtMTI4ODI2NTU2NCwxOD
-g4ODU0MTkxLDEzNjMyNzgyNzAsMTk4MDg0NzE2MywxNjA2NzY1
-Mjk3LDU3NjM4NDIxOCwtMTM0OTgwMjMxMiwxMjk0NjU2MjAzLC
-0xNDg5ODU5MDU1LC0xOTQ3NTYwMDY5LC01MTU2MDE3ODYsLTk3
-Mjc4NTYxNCwxNDUyNzQ3MTY1LDE5MjcxMDAwOTEsLTEwNDQyMD
-A0NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2MTA4
-OTcsLTY3ODg0MTAxNl19
+eyJoaXN0b3J5IjpbNjYxMDQxNDIxLC0xMjg4MjY1NTY0LDE4OD
+g4NTQxOTEsMTM2MzI3ODI3MCwxOTgwODQ3MTYzLDE2MDY3NjUy
+OTcsNTc2Mzg0MjE4LC0xMzQ5ODAyMzEyLDEyOTQ2NTYyMDMsLT
+E0ODk4NTkwNTUsLTE5NDc1NjAwNjksLTUxNTYwMTc4NiwtOTcy
+Nzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMDA5MSwtMTA0NDIwMD
+Q1MywtMTAwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5
+NywtNjc4ODQxMDE2XX0=
 -->
