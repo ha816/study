@@ -248,16 +248,20 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 ulimit 명령어의 경우를 먼저 알아보자. 운영체제에서는 여러 애플리케이션이 동시에 동작할 수 있기 때문에 특정 애플리케이션이 리소스를 독점하지 못하도록 관리하는 것이 매우 중요하다. **ulimit 명령어는 애플리케이션이 실행될때 얼마만큼 리로스를 할당받을 수 있는지 전반적인 리소스 관리를 수행한다.** 
 
+ulimit에는 애플리케이션이 생성될때 할당받은 리소스의 최대값이 관리되고 있고, 이는 모든 애플리케이션에 공통으로 적용된다. 즉, 애플리케이션이 실행될때 ulimit에 설정된 양만큼만 할당 받을 수 있다. 
+
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNTI1NzQxLC01MTU2MDE3ODYsLTk3Mj
-c4NTYxNCwxNDUyNzQ3MTY1LDE5MjcxMDAwOTEsLTEwNDQyMDA0
-NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2MTA4OT
-csLTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1
-ODAyMDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEyNDI4Mj
-YzMiw4NTk4MDIyODgsMTMwMjY2NTE1NiwxNzY3MTg5NDA4LC0x
-OTM2MDgwMjA0XX0=
+eyJoaXN0b3J5IjpbLTE5NDc1NjAwNjksLTUxNTYwMTc4NiwtOT
+cyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMDA5MSwtMTA0NDIw
+MDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgzNTYxMD
+g5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1Miwt
+MTU4MDIwNDQ2NywxOTQyNjcwMTI4LDIwMDE5MzM4MjgsMTI0Mj
+gyNjMyLDg1OTgwMjI4OCwxMzAyNjY1MTU2LDE3NjcxODk0MDgs
+LTE5MzYwODAyMDRdfQ==
 -->
