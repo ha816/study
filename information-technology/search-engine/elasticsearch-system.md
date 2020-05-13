@@ -255,18 +255,21 @@ ulimit에는 애플리케이션이 생성될때 할당받은 리소스의 최대
 
 리눅스에서는 ulimit -a 명령어를 통해 한 프로세스가 가질 수 있는 리소스의 정보를 알 수 있다. 운영체제 입장에서는 엘라스틱서치도 하나의 프로세스이기 때문에 ulimit에서 설정된 값 이상의 리소스를 사용할 수는 없다. 
 
-sysctl 명령어의 경우 
+sysctl 명령어
+: 리눅스 내부에 존재하는 커널 파라미터를 조절할 수 있도록 설정 값을 제공한다. 이를 이용해 커널 레벨의 다양한 파라미터를 확인할 수 있다. 
+
+sysctl ulimit 명령어와 더불어 애플리케이션이 실행될때 생성되는 리소스의 정보를 커널 레벨까지 비교적 자세히 제공한다.
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODk4NTkwNTUsLTE5NDc1NjAwNjksLT
-UxNTYwMTc4NiwtOTcyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEw
-MDA5MSwtMTA0NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNz
-IwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMs
-LTQzNDIzNTI1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMTI4LDIwMD
-E5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAyNjY1MTU2
-LDE3NjcxODk0MDhdfQ==
+eyJoaXN0b3J5IjpbLTE5NDAwMDEyODMsLTE0ODk4NTkwNTUsLT
+E5NDc1NjAwNjksLTUxNTYwMTc4NiwtOTcyNzg1NjE0LDE0NTI3
+NDcxNjUsMTkyNzEwMDA5MSwtMTA0NDIwMDQ1MywtMTAwODIwNj
+MzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2
+LDEzMDc4Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MDIwNDQ2NywxOT
+QyNjcwMTI4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4
+OCwxMzAyNjY1MTU2XX0=
 -->
