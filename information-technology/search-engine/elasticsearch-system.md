@@ -302,12 +302,12 @@ sysctl -w 파라미터 = 파라미터 값 // 커널 파라미터 수정
 etc/sysctl.conf 
 ```
 
-etc/sysctl.conf 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEyMzc0ODMsMTg4ODg1NDE5MSwxMzYzMj
+eyJoaXN0b3J5IjpbMTYwMzkwMTAsMTg4ODg1NDE5MSwxMzYzMj
 c4MjcwLDE5ODA4NDcxNjMsMTYwNjc2NTI5Nyw1NzYzODQyMTgs
 LTEzNDk4MDIzMTIsMTI5NDY1NjIwMywtMTQ4OTg1OTA1NSwtMT
 k0NzU2MDA2OSwtNTE1NjAxNzg2LC05NzI3ODU2MTQsMTQ1Mjc0
