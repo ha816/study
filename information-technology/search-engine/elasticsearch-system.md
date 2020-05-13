@@ -293,13 +293,17 @@ $ulimit -l unlimited //스와핑 최소화를 위해 memory_lock 크기를 unlim
 
 ## sysctl 명령어를 이용한 커널 레벨 튜닝
 
+sysctl로 제공되는 항목들은 모두 커널 레벨의 민감한 정보이기 때문에 수정할때 항상 주의해야 한다.
+
+sysctl 명령어를 이용하면 커널 파라미터를 수정할 수 있다.
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MzI3ODI3MCwxOTgwODQ3MTYzLDE2MD
-Y3NjUyOTcsNTc2Mzg0MjE4LC0xMzQ5ODAyMzEyLDEyOTQ2NTYy
-MDMsLTE0ODk4NTkwNTUsLTE5NDc1NjAwNjksLTUxNTYwMTc4Ni
-wtOTcyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMDA5MSwtMTA0
-NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgzNT
-YxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1
-MiwtMTU4MDIwNDQ2N119
+eyJoaXN0b3J5IjpbLTE5MTE2NTc5NDMsMTM2MzI3ODI3MCwxOT
+gwODQ3MTYzLDE2MDY3NjUyOTcsNTc2Mzg0MjE4LC0xMzQ5ODAy
+MzEyLDEyOTQ2NTYyMDMsLTE0ODk4NTkwNTUsLTE5NDc1NjAwNj
+ksLTUxNTYwMTc4NiwtOTcyNzg1NjE0LDE0NTI3NDcxNjUsMTky
+NzEwMDA5MSwtMTA0NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMT
+MxNzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3
+ODMsLTQzNDIzNTI1Ml19
 -->
