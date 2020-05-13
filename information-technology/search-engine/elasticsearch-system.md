@@ -346,13 +346,15 @@ ulimit -u 81920
 
 일반적으로 웹서비스를 제공하는 시스템을 구축한다면 탐캣이나 제티같은 WAS 기반의 애플리케이션을 주로 작성한다. 그리고 서버에서 최대한 많은 수의 트래픽 처리를 할 수 있도록 소캣 설정과 같은 네트워크 차원의 튜닝이 이루어진다. 네트워크 관련 설정을 엘라스틱서치 설정 그대로 적용하는 것도 그리 나쁘진 않은 선택이다. 
 
+튜닝을 하고 싶다면 sysctl 명령어로 네트워크 설정을 바꾸어보자. 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEwODUwNzQzLDc4MjkwNTY4NywtMTk0Mj
-g4MjU0OSwtMTI4ODI2NTU2NCwxODg4ODU0MTkxLDEzNjMyNzgy
-NzAsMTk4MDg0NzE2MywxNjA2NzY1Mjk3LDU3NjM4NDIxOCwtMT
-M0OTgwMjMxMiwxMjk0NjU2MjAzLC0xNDg5ODU5MDU1LC0xOTQ3
-NTYwMDY5LC01MTU2MDE3ODYsLTk3Mjc4NTYxNCwxNDUyNzQ3MT
-Y1LDE5MjcxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMs
-LTEwMTEzMTcyMDJdfQ==
+eyJoaXN0b3J5IjpbLTE2MDQyMDI5OTksNzgyOTA1Njg3LC0xOT
+QyODgyNTQ5LC0xMjg4MjY1NTY0LDE4ODg4NTQxOTEsMTM2MzI3
+ODI3MCwxOTgwODQ3MTYzLDE2MDY3NjUyOTcsNTc2Mzg0MjE4LC
+0xMzQ5ODAyMzEyLDEyOTQ2NTYyMDMsLTE0ODk4NTkwNTUsLTE5
+NDc1NjAwNjksLTUxNTYwMTc4NiwtOTcyNzg1NjE0LDE0NTI3ND
+cxNjUsMTkyNzEwMDA5MSwtMTA0NDIwMDQ1MywtMTAwODIwNjMz
+MywtMTAxMTMxNzIwMl19
 -->
