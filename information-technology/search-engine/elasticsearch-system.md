@@ -302,7 +302,7 @@ sysctl -w 파라미터 = 파라미터 값 // 커널 파라미터 수정
 etc/sysctl.conf 
 ```
 
-## 엘라스틱서치 노드 레벨 튜닝
+## Max Open File 한계 설정
 
 엘라스틱서치 클러스터를 운영하다 보면 특정 노드가 "Too many open files"라는 에러를 내며 장애를 내는 경우가 있다. 리눅스에서는 모든 리소스를 일종의 파일로 표현하는데, 엘라스틱서치에서 추가로 리소스를 사용하기 위해 파일 형태로 운영체제에 리소스 할당을 요청했고 프로세스의 ulimit 제한에 걸려서 리소스 할당이 실패한 것이다.
 
@@ -315,15 +315,18 @@ ulimit -n 81920
 /etc/security/limits.conf
 ```
 
+## Max Thread 한계설정
+
+엘라스틱서치는 빠른 처리를 위해 댜량의 쓰레드를 생성한다. 기본적으로 다수의 스레드를 관리하기 때문에 효율을 위해 스레드 풀을 도입해서 적극 활용한다. 스레드풀을 이용하면 안정적이면서도 비교적 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkwMjY3ODE1LC0xMjg4MjY1NTY0LDE4OD
-g4NTQxOTEsMTM2MzI3ODI3MCwxOTgwODQ3MTYzLDE2MDY3NjUy
-OTcsNTc2Mzg0MjE4LC0xMzQ5ODAyMzEyLDEyOTQ2NTYyMDMsLT
-E0ODk4NTkwNTUsLTE5NDc1NjAwNjksLTUxNTYwMTc4NiwtOTcy
-Nzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMDA5MSwtMTA0NDIwMD
-Q1MywtMTAwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5
-NywtNjc4ODQxMDE2XX0=
+eyJoaXN0b3J5IjpbLTU5ODE1MTA2MCwtMTI4ODI2NTU2NCwxOD
+g4ODU0MTkxLDEzNjMyNzgyNzAsMTk4MDg0NzE2MywxNjA2NzY1
+Mjk3LDU3NjM4NDIxOCwtMTM0OTgwMjMxMiwxMjk0NjU2MjAzLC
+0xNDg5ODU5MDU1LC0xOTQ3NTYwMDY5LC01MTU2MDE3ODYsLTk3
+Mjc4NTYxNCwxNDUyNzQ3MTY1LDE5MjcxMDAwOTEsLTEwNDQyMD
+A0NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2MTA4
+OTcsLTY3ODg0MTAxNl19
 -->
