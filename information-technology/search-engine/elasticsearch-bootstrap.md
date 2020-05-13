@@ -14,12 +14,14 @@
 
 그런 이유로 최신 버전에서는 운영시 발생가능한 문제점을 미연에 방지하기 위해 좀 더 강력한 검사를 수행하게 됬고 이러한 과정이 부트스트랩 체크(Bootstrap Checks)라 한다. 
 
-부트스트랩 과정에서 필수 설정이 잘못된 경우
+부트스트랩 과정에서 필수 설정이 잘못된 경우, 잘못된 사실을 사용자에게 알리고 정상적으로 수정될때 까지 엘라스틱서치를 강제 종료하여 필수 설정이 완료되어야만 엘라스틱서치가 실행되도록 강제한다. 
+
+사용자는 간단한 테스트를 하고 싶을 뿐인데 가끔 강제적인 부트스트랩 때문에 환경설정에 더 많은 시간을 할애하게 될 경우가 있다. 그래서 엘라스틱 서치
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MTEyNDEwMiwtNDExNzY5NzY4LC0xNT
-c3ODA4ODMxXX0=
+eyJoaXN0b3J5IjpbNjAyOTYzMjEwLC00MTE3Njk3NjgsLTE1Nz
+c4MDg4MzFdfQ==
 -->
