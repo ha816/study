@@ -281,16 +281,16 @@ $ulimit -l unlimited //스와핑 최소화를 위해 memory_lock 크기를 unlim
 
 대부분의 애플리케이션은 ulimit에 설정된 값보다 작은 리소스를 사용하는 것만으로도 충분하기 때문에 소프트, 하드 설정으로 나누어 설정하고 소프트 설정보다 큰 리소스가 필요할 경우에만 하드 설정까지 리소스를 바도록 하자. 
 
-
+엘라스틱서치의 경우 많은 리소스를 사용한다 그래서 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2Mzg0MjE4LC0xMzQ5ODAyMzEyLDEyOT
-Q2NTYyMDMsLTE0ODk4NTkwNTUsLTE5NDc1NjAwNjksLTUxNTYw
-MTc4NiwtOTcyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMDA5MS
-wtMTA0NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNzIwMiwt
-MTgzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzND
-IzNTI1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMTI4LDIwMDE5MzM4
-MjgsMTI0MjgyNjMyXX0=
+eyJoaXN0b3J5IjpbLTgwOTU3NzQ5MSw1NzYzODQyMTgsLTEzND
+k4MDIzMTIsMTI5NDY1NjIwMywtMTQ4OTg1OTA1NSwtMTk0NzU2
+MDA2OSwtNTE1NjAxNzg2LC05NzI3ODU2MTQsMTQ1Mjc0NzE2NS
+wxOTI3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2MzMzLC0x
+MDExMzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYsMTMwNz
+g3Nzc4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5NDI2NzAx
+MjgsMjAwMTkzMzgyOF19
 -->
