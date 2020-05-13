@@ -279,17 +279,18 @@ $ulimit -l unlimited //스와핑 최소화를 위해 memory_lock 크기를 unlim
 
 이렇게 이중으로 리소스 제한값을 관리하는 이유로 모든 프로세스가 최대값으로 리소스를 할당받으면 자칫 리소스 낭비가 심해질수 있기 때문이다. 
 
-대부분의 애플리케이션은 ulimit에 설정된 값보다 작은 리소스를 사용하는 것만으로도 충분하기 때문에 소프트, 하드 설정으로 나누어 설정하고 소프트 설정보다 큰 리로스가 필요할 경우에만 하드 설정까지 늘어나도록 동작한다. 
+대부분의 애플리케이션은 ulimit에 설정된 값보다 작은 리소스를 사용하는 것만으로도 충분하기 때문에 소프트, 하드 설정으로 나누어 설정하고 소프트 설정보다 큰 리소스가 필요할 경우에만 하드 설정까지 리소스를 바도록 하자. 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMTEyMDM1NCwtMTM0OTgwMjMxMiwxMj
-k0NjU2MjAzLC0xNDg5ODU5MDU1LC0xOTQ3NTYwMDY5LC01MTU2
-MDE3ODYsLTk3Mjc4NTYxNCwxNDUyNzQ3MTY1LDE5MjcxMDAwOT
-EsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIs
-LTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00Mz
-QyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMz
-ODI4LDEyNDI4MjYzMl19
+eyJoaXN0b3J5IjpbNTc2Mzg0MjE4LC0xMzQ5ODAyMzEyLDEyOT
+Q2NTYyMDMsLTE0ODk4NTkwNTUsLTE5NDc1NjAwNjksLTUxNTYw
+MTc4NiwtOTcyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMDA5MS
+wtMTA0NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNzIwMiwt
+MTgzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzND
+IzNTI1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMTI4LDIwMDE5MzM4
+MjgsMTI0MjgyNjMyXX0=
 -->
