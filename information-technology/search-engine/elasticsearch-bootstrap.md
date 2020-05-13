@@ -6,11 +6,16 @@
 
 # 노드 부트스트랩 과정의 이해
 
-엘라스틱서치에는 부트스트랩이라는 과정이 있다. 
+엘라스틱서치에는 부트스트랩이라는 과정이 있다. 그리고 엘라스틱서치 노드는 최초 실행시 항상 부트스트랩 체크라는 과정을 거친다. 이 과정이 왜 필요하고 그리고 그 과정에서 어떤 일이 일어나는지 알아보자.
+
+## 부트스트랩 과정이 필요한 이유
+
+과거게은 엘라스틱서치 설정 중 일부가 잘못됬거나 필수적인 리소스 할당이 되지 않으면 단순히 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMTc2OTc2OCwtMTU3NzgwODgzMV19
+eyJoaXN0b3J5IjpbLTIxMDA0MDIzMDIsLTQxMTc2OTc2OCwtMT
+U3NzgwODgzMV19
 -->
