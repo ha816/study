@@ -10,12 +10,14 @@
 
 ## 부트스트랩 과정이 필요한 이유
 
-과거게은 엘라스틱서치 설정 중 일부가 잘못됬거나 필수적인 리소스 할당이 되지 않으면 단순히 
+과거게은 엘라스틱서치 설정 중 일부가 잘못됬거나 필수적인 리소스 할당이 되지 않으면 단순히 경고(Warning) 메세지를 로그에 출력하는 방식을 택했다. 그러다 보니 경험 없는 대다수의 운영자는 잠재되어 있는 문제의 심각성을 인지못하고 그냥 넘어가기가 부지기수 였다. 
+
+그런 이유로 최신 버전에서는 운영시 발생가능한 문제점을 미연에 방지하기 위해 좀 더 강력한 검사를 수행하게 됬고 이러한 과정이 부트스트랩 체크(Bootstrap Checks)라 한다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDA0MDIzMDIsLTQxMTc2OTc2OCwtMT
-U3NzgwODgzMV19
+eyJoaXN0b3J5IjpbMTQyNzU3ODM4OSwtNDExNzY5NzY4LC0xNT
+c3ODA4ODMxXX0=
 -->
