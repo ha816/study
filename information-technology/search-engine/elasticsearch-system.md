@@ -270,18 +270,20 @@ ulimit 값은 운영체제에서 실행되는 모든 애플리케이션에 적�
 
 ```
 $ulimit -a // 운영체제에 설정된 전체 리로스 제한값 조회하기
+$ulimit -l unlimited //스와핑 최소화를 위해 memory_lock 크기를 unlimited로 변경하기; -l [memlock]
 ```
 
+### ulimit 소프트 설정과 하드 설정
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ5NjQ2MTg4LC0xNDg5ODU5MDU1LC0xOT
-Q3NTYwMDY5LC01MTU2MDE3ODYsLTk3Mjc4NTYxNCwxNDUyNzQ3
-MTY1LDE5MjcxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMz
-MsLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwx
-MzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0Mj
-Y3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgs
-MTMwMjY2NTE1Nl19
+eyJoaXN0b3J5IjpbMTI5NDY1NjIwMywtMTQ4OTg1OTA1NSwtMT
+k0NzU2MDA2OSwtNTE1NjAxNzg2LC05NzI3ODU2MTQsMTQ1Mjc0
+NzE2NSwxOTI3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2Mz
+MzLC0xMDExMzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYs
+MTMwNzg3Nzc4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5ND
+I2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2MzIsODU5ODAyMjg4
+LDEzMDI2NjUxNTZdfQ==
 -->
