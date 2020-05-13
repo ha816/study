@@ -341,15 +341,18 @@ ulimit -u 81920
 
 ## 네트워크 설정
 
-앞서 보았던 디스크립터(Max Open File)나 스레드(Max Thread) 설정의 경우 필수적인 튜닝 이었던것에 반해 네트워크 설정의 경우 동시 접속 사용자가 적거나 네트워크 트래픽이 많지 않을 경우 큰 성능 향상을 느낄수 없을 수도 있다. 
+앞서 보았던 디스크립터(Max Open File)나 스레드(Max Thread) 설정의 경우 필수적인 튜닝 이었던것에 반해 네트워크 설정의 경우 동시 접속 사용자가 적거나 네트워크 트래픽이 많지 않을 경우 큰 성능 향상을 느낄수 
+없을 수도 있다. 
+
+일반적으로 웹서비스를 제공하는 시스템을 구축한다면 탐캣이나 제티같은 WAS 기반의 애플리케이션을 주로 작성한다. 그리고 서버에서 최대한 많은 수의 트래픽 처리를 할 수 있도록 소캣 설정과 같은 네트워크 차원의 튜닝이 이루어진다. 네트워크 관련 설정을 엘라스틱서치 설정 그대로 적용하는 것도 그리 나쁘진 않은 선택이다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgyOTA1Njg3LC0xOTQyODgyNTQ5LC0xMj
-g4MjY1NTY0LDE4ODg4NTQxOTEsMTM2MzI3ODI3MCwxOTgwODQ3
-MTYzLDE2MDY3NjUyOTcsNTc2Mzg0MjE4LC0xMzQ5ODAyMzEyLD
-EyOTQ2NTYyMDMsLTE0ODk4NTkwNTUsLTE5NDc1NjAwNjksLTUx
-NTYwMTc4NiwtOTcyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMD
-A5MSwtMTA0NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNzIw
-MiwtMTgzNTYxMDg5N119
+eyJoaXN0b3J5IjpbNzEwODUwNzQzLDc4MjkwNTY4NywtMTk0Mj
+g4MjU0OSwtMTI4ODI2NTU2NCwxODg4ODU0MTkxLDEzNjMyNzgy
+NzAsMTk4MDg0NzE2MywxNjA2NzY1Mjk3LDU3NjM4NDIxOCwtMT
+M0OTgwMjMxMiwxMjk0NjU2MjAzLC0xNDg5ODU5MDU1LC0xOTQ3
+NTYwMDY5LC01MTU2MDE3ODYsLTk3Mjc4NTYxNCwxNDUyNzQ3MT
+Y1LDE5MjcxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMs
+LTEwMTEzMTcyMDJdfQ==
 -->
