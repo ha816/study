@@ -341,15 +341,15 @@ ulimit -u 81920
 
 ## 네트워크 설정
 
-앞서 보았던 디스크립터(Max Open File)나 스레드(Max Thread) 설정의 경우 필수적인것에
+앞서 보았던 디스크립터(Max Open File)나 스레드(Max Thread) 설정의 경우 필수적인 튜닝 이었던것에 반해 네트워크 설정의 경우 동시 접속 사용자가 적거나 네트워크 트래픽이 많지 않을 경우 큰 성능 향상을 느낄수 없을 수도 있다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MTI2MjAwOSwtMTk0Mjg4MjU0OSwtMT
-I4ODI2NTU2NCwxODg4ODU0MTkxLDEzNjMyNzgyNzAsMTk4MDg0
-NzE2MywxNjA2NzY1Mjk3LDU3NjM4NDIxOCwtMTM0OTgwMjMxMi
-wxMjk0NjU2MjAzLC0xNDg5ODU5MDU1LC0xOTQ3NTYwMDY5LC01
-MTU2MDE3ODYsLTk3Mjc4NTYxNCwxNDUyNzQ3MTY1LDE5MjcxMD
-AwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcy
-MDIsLTE4MzU2MTA4OTddfQ==
+eyJoaXN0b3J5IjpbNzgyOTA1Njg3LC0xOTQyODgyNTQ5LC0xMj
+g4MjY1NTY0LDE4ODg4NTQxOTEsMTM2MzI3ODI3MCwxOTgwODQ3
+MTYzLDE2MDY3NjUyOTcsNTc2Mzg0MjE4LC0xMzQ5ODAyMzEyLD
+EyOTQ2NTYyMDMsLTE0ODk4NTkwNTUsLTE5NDc1NjAwNjksLTUx
+NTYwMTc4NiwtOTcyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMD
+A5MSwtMTA0NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNzIw
+MiwtMTgzNTYxMDg5N119
 -->
