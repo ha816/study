@@ -331,11 +331,17 @@ ulimit -n 81920
 	* GET 요청을 처리하는데 사용하는 스레드 풀 
 * ...
 
+위는 엘라스틱서치에서 사용하는 스레드풀의 종류다. ulimit 명령어를 사용하면 애플리케이션에서 생성할 수 있는 스레드의 최대값을 확인할 수 있다. 그리고 이 값을 아래 명령어로 설정할 수 있다.
 
+```
+ulimit -u 81920
+```
+
+영구 설정을 위해선 etc/security/limits.con
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5OTUzOTY1MCwtMTk0Mjg4MjU0OSwtMT
+eyJoaXN0b3J5IjpbLTYyMDA1NzI2OCwtMTk0Mjg4MjU0OSwtMT
 I4ODI2NTU2NCwxODg4ODU0MTkxLDEzNjMyNzgyNzAsMTk4MDg0
 NzE2MywxNjA2NzY1Mjk3LDU3NjM4NDIxOCwtMTM0OTgwMjMxMi
 wxMjk0NjU2MjAzLC0xNDg5ODU5MDU1LC0xOTQ3NTYwMDY5LC01
