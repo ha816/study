@@ -19,12 +19,15 @@
 사용자는 간단한 테스트를 하고 싶을 뿐인데 가끔 강제적인 부트스트랩 때문에 환경설정에 더 많은 시간을 할애하게 될 경우가 있다. 그래서 엘라스틱서치는 내부적으로 개발모드와 운영모드 두 가지의 개념이 존재한다. 
 
 개발모드(Development Mode)
-: 실행시 IP 주소가 루프백으로 설정된 경우, 엘라스틱서치는 개발모드로 실행된다고 판단한다. 개발모드로 실행될 경우, 부트스트랩 체크과정이 무시된다.
+: 실행시 IP 주소가 루프백으로 설정된 경우, 엘라스틱서치는 개발모드로 실행된다고 판단한다. 개발모드로 실행될 경우, 부트스트랩 체크과정이 무시된다. 개발 모드로 동작하면 로컬에서 동작하기 때문에 다른 노드와 클러스터를 구성할 수 없다. 말 그대로 개발환경에서 테스트 목적으로만 사용할 수 있다.
+
+운영모드(Product Mode)
+: 운영모드는 반드시 부트스트랩 체크과정을 필수로 거친다. 그리고 실행시 IP 주소를 할당받기 때문에 당연히 다른 엘라스틱서치 노드와도 클러스터 구성이 가능하다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzkwMDE5NjAsLTQxMTc2OTc2OCwtMT
-U3NzgwODgzMV19
+eyJoaXN0b3J5IjpbNDAwMzkxNDg4LC00MTE3Njk3NjgsLTE1Nz
+c4MDg4MzFdfQ==
 -->
