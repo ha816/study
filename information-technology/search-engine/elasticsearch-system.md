@@ -283,16 +283,17 @@ $ulimit -l unlimited //스와핑 최소화를 위해 memory_lock 크기를 unlim
 
 엘라스틱서치의 경우 많은 리소스를 사용한다 그래서 처음부터 소프트 설정 값과 하드 설정 값을 동일하게 설정하는 것이 좋다. 소프트 설정 값에 따라 최초 할당을 받은 후 추가 리소스를 할당할때도 비교적 많은 비용이 들기 때문에 처음부터 많이 가져오도록 하자.
 
-
 ### ulimit 영구설정
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNjc2NTI5Nyw1NzYzODQyMTgsLTEzND
-k4MDIzMTIsMTI5NDY1NjIwMywtMTQ4OTg1OTA1NSwtMTk0NzU2
-MDA2OSwtNTE1NjAxNzg2LC05NzI3ODU2MTQsMTQ1Mjc0NzE2NS
-wxOTI3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2MzMzLC0x
-MDExMzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYsMTMwNz
-g3Nzc4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5NDI2NzAx
-MjgsMjAwMTkzMzgyOF19
+eyJoaXN0b3J5IjpbMTk4MDg0NzE2MywxNjA2NzY1Mjk3LDU3Nj
+M4NDIxOCwtMTM0OTgwMjMxMiwxMjk0NjU2MjAzLC0xNDg5ODU5
+MDU1LC0xOTQ3NTYwMDY5LC01MTU2MDE3ODYsLTk3Mjc4NTYxNC
+wxNDUyNzQ3MTY1LDE5MjcxMDAwOTEsLTEwNDQyMDA0NTMsLTEw
+MDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLTY3OD
+g0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAyMDQ0
+NjcsMTk0MjY3MDEyOF19
 -->
