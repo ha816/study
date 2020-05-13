@@ -306,11 +306,13 @@ etc/sysctl.conf
 
 엘라스틱서치 클러스터를 운영하다 보면 특정 노드가 "Too many open files"라는 에러를 내며 장애를 내는 경우가 있다. 리눅스에서는 모든 리소스를 일종의 파일로 표현하는데, 엘라스틱서치에서 추가로 리소스를 사용하기 위해 파일 형태로 운영체제에 리소스 할당을 요청했고 프로세스의 ulimit 제한에 걸려서 리소스 할당이 실패한 것이다.
 
-엘라스틱서치 노드는 많은 수의 소
+엘라스틱서치 노드는 많은 수의 소켓을 사용해 클라이언트와의 통신을 수행한다. 이뿐만 아니라 내부에 존재하는 루씬은 색인 데이터를 효율적으로 관리하기 위해 매우 많은 수의 파일을 사용한다. 이러한 작업에는 모두 파일 디스크립터가 사용되기 때문에 엘라스틱 서치가 운영되는 시스템에서는 일반적인 시스템보다 훨씬 더 많은 수의 파일을 생성할 수 있어야 한다. 
+
+리눅스에서 기본으로 제공하는 Max Open File 설정 값은 너무 작다. 그러므로 설정 값을 최소 65,536개 이상의 큰 값으로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NDQ4NDM1LDE4ODg4NTQxOTEsMTM2Mz
+eyJoaXN0b3J5IjpbMzY0NjcyMzQ4LDE4ODg4NTQxOTEsMTM2Mz
 I3ODI3MCwxOTgwODQ3MTYzLDE2MDY3NjUyOTcsNTc2Mzg0MjE4
 LC0xMzQ5ODAyMzEyLDEyOTQ2NTYyMDMsLTE0ODk4NTkwNTUsLT
 E5NDc1NjAwNjksLTUxNTYwMTc4NiwtOTcyNzg1NjE0LDE0NTI3
