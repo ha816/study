@@ -258,18 +258,24 @@ ulimit에는 애플리케이션이 생성될때 할당받은 리소스의 최대
 sysctl 명령어
 : 리눅스 내부에 존재하는 커널 파라미터를 조절할 수 있도록 설정 값을 제공한다. 이를 이용해 커널 레벨의 다양한 파라미터를 확인할 수 있다. 
 
-sysctl ulimit 명령어와 더불어 애플리케이션이 실행될때 생성되는 리소스의 정보를 커널 레벨까지 비교적 자세히 제공한다.
+sysctl은 ulimit 명령어와 더불어 애플리케이션이 실행될때 생성되는 리소스의 정보를 커널 레벨까지 비교적 자세히 제공한다.
+
+자 이제 위 두가지 명령어로 유저 레벨의 튜닝을 해보도록 하자. 
+
+## ulimit 명령어를 이용한 유저레벨 튜닝
+
+ulimit 값
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDAwMDEyODMsLTE0ODk4NTkwNTUsLT
-E5NDc1NjAwNjksLTUxNTYwMTc4NiwtOTcyNzg1NjE0LDE0NTI3
-NDcxNjUsMTkyNzEwMDA5MSwtMTA0NDIwMDQ1MywtMTAwODIwNj
-MzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2
-LDEzMDc4Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MDIwNDQ2NywxOT
-QyNjcwMTI4LDIwMDE5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4
-OCwxMzAyNjY1MTU2XX0=
+eyJoaXN0b3J5IjpbOTc1NzA0NTczLC0xNDg5ODU5MDU1LC0xOT
+Q3NTYwMDY5LC01MTU2MDE3ODYsLTk3Mjc4NTYxNCwxNDUyNzQ3
+MTY1LDE5MjcxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMz
+MsLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwx
+MzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0Mj
+Y3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgs
+MTMwMjY2NTE1Nl19
 -->
