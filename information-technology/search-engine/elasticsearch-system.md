@@ -281,12 +281,14 @@ $ulimit -l unlimited //스와핑 최소화를 위해 memory_lock 크기를 unlim
 
 대부분의 애플리케이션은 ulimit에 설정된 값보다 작은 리소스를 사용하는 것만으로도 충분하기 때문에 소프트, 하드 설정으로 나누어 설정하고 소프트 설정보다 큰 리소스가 필요할 경우에만 하드 설정까지 리소스를 바도록 하자. 
 
-엘라스틱서치의 경우 많은 리소스를 사용한다 그래서 
+엘라스틱서치의 경우 많은 리소스를 사용한다 그래서 처음부터 소프트 설정 값과 하드 설정 값을 동일하게 설정하는 것이 좋다. 소프트 설정 값에 따라 최초 할당을 받은 후 추가 리소스를 할당할때도 비교적 많은 비용이 들기 때문에 처음부터 많이 가져오도록 하자.
 
+
+### ulimit 영구설정
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwOTU3NzQ5MSw1NzYzODQyMTgsLTEzND
+eyJoaXN0b3J5IjpbMTYwNjc2NTI5Nyw1NzYzODQyMTgsLTEzND
 k4MDIzMTIsMTI5NDY1NjIwMywtMTQ4OTg1OTA1NSwtMTk0NzU2
 MDA2OSwtNTE1NjAxNzg2LC05NzI3ODU2MTQsMTQ1Mjc0NzE2NS
 wxOTI3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2MzMzLC0x
