@@ -285,15 +285,17 @@ $ulimit -l unlimited //스와핑 최소화를 위해 memory_lock 크기를 unlim
 
 ### ulimit 영구설정
 
+앞서 설정한 내용들은 시스템이 리부팅되면 모두 초기화된다. 시스템을 운영 하다보면 시스템이 비정상 종료되는 경우가 종종 발생하기도 하기 때문에 리부팅에 의해 설정된 내역이 초기화되면 바로 장애로 이어질 수 있다. 
 
+각종 설정 정보가 튜닝되고 일단 시스템이 안정화된고 나면 설정 정보를 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MDg0NzE2MywxNjA2NzY1Mjk3LDU3Nj
-M4NDIxOCwtMTM0OTgwMjMxMiwxMjk0NjU2MjAzLC0xNDg5ODU5
-MDU1LC0xOTQ3NTYwMDY5LC01MTU2MDE3ODYsLTk3Mjc4NTYxNC
-wxNDUyNzQ3MTY1LDE5MjcxMDAwOTEsLTEwNDQyMDA0NTMsLTEw
-MDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLTY3OD
-g0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAyMDQ0
-NjcsMTk0MjY3MDEyOF19
+eyJoaXN0b3J5IjpbMTk5MTA3MDQwNCwxOTgwODQ3MTYzLDE2MD
+Y3NjUyOTcsNTc2Mzg0MjE4LC0xMzQ5ODAyMzEyLDEyOTQ2NTYy
+MDMsLTE0ODk4NTkwNTUsLTE5NDc1NjAwNjksLTUxNTYwMTc4Ni
+wtOTcyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMDA5MSwtMTA0
+NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgzNT
+YxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1
+MiwtMTU4MDIwNDQ2N119
 -->
