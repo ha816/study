@@ -337,11 +337,15 @@ ulimit -n 81920
 ulimit -u 81920
 ```
 
-영구 설정을 위해선 etc/security/limits.con
+영구 설정을 위해선 etc/security/limits.conf를 편집한다.
+
+## 네트워크 설정
+
+앞서 보았던 디스크립터(Max Open File)나 스레드(Max Thread) 설정의 경우 필수적인것에
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMDA1NzI2OCwtMTk0Mjg4MjU0OSwtMT
+eyJoaXN0b3J5IjpbLTY1MTI2MjAwOSwtMTk0Mjg4MjU0OSwtMT
 I4ODI2NTU2NCwxODg4ODU0MTkxLDEzNjMyNzgyNzAsMTk4MDg0
 NzE2MywxNjA2NzY1Mjk3LDU3NjM4NDIxOCwtMTM0OTgwMjMxMi
 wxMjk0NjU2MjAzLC0xNDg5ODU5MDU1LC0xOTQ3NTYwMDY5LC01
