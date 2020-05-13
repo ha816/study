@@ -246,24 +246,27 @@ mmap시스템 콜을 내부적으로 많이 사용하는 엘라스틱서치 입�
 
 ## 애플리케이션에서 튜닝 가능한 리소스
 
-ulimit 명령어의 경우를 먼저 알아보자. 운영체제에서는 여러 애플리케이션이 동시에 동작할 수 있기 때문에 특정 애플리케이션이 리소스를 독점하지 못하도록 관리하는 것이 매우 중요하다. **ulimit 명령어는 애플리케이션이 실행될때 얼마만큼 리로스를 할당받을 수 있는지 전반적인 리소스 관리를 수행한다.** 
+ulimit 명령어
+: 애플리케이션이 실행될때 얼마만큼 운영체제로 부터 리소스를 할당받을 수 있는지 전반적인 리소스 관리를 수행한다.
+
+운영체제에서는 여러 애플리케이션이 동시에 동작할 수 있기 때문에 특정 애플리케이션이 리소스를 독점하지 못하도록 관리하는 것이 매우 중요하다. **ulimit 명령어는 애플리케이션이 실행될때 얼마만큼 리로스를 할당받을 수 있는지 전반적인 리소스 관리를 수행한다.** 
 
 ulimit에는 애플리케이션이 생성될때 할당받은 리소스의 최대값이 관리되고 있고, 이는 모든 애플리케이션에 공통으로 적용된다. 즉, 애플리케이션이 실행될때 ulimit에 설정된 양만큼만 할당 받을 수 있다. 
 
 리눅스에서는 ulimit -a 명령어를 통해 한 프로세스가 가질 수 있는 리소스의 정보를 알 수 있다. 운영체제 입장에서는 엘라스틱서치도 하나의 프로세스이기 때문에 ulimit에서 설정된 값 이상의 리소스를 사용할 수는 없다. 
 
-
+sysctl 명령어의 경우 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMDEwNDM1NywtMTk0NzU2MDA2OSwtNT
-E1NjAxNzg2LC05NzI3ODU2MTQsMTQ1Mjc0NzE2NSwxOTI3MTAw
-MDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2MzMzLC0xMDExMzE3Mj
-AyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYsMTMwNzg3Nzc4Mywt
-NDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5NDI2NzAxMjgsMjAwMT
-kzMzgyOCwxMjQyODI2MzIsODU5ODAyMjg4LDEzMDI2NjUxNTYs
-MTc2NzE4OTQwOF19
+eyJoaXN0b3J5IjpbLTE0ODk4NTkwNTUsLTE5NDc1NjAwNjksLT
+UxNTYwMTc4NiwtOTcyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEw
+MDA5MSwtMTA0NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNz
+IwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMs
+LTQzNDIzNTI1MiwtMTU4MDIwNDQ2NywxOTQyNjcwMTI4LDIwMD
+E5MzM4MjgsMTI0MjgyNjMyLDg1OTgwMjI4OCwxMzAyNjY1MTU2
+LDE3NjcxODk0MDhdfQ==
 -->
