@@ -321,14 +321,25 @@ ulimit -n 81920
 
 스레드 풀 내부의 스레드 개수를 사용자가 직접 설정하는 것도 가능하다. 하지만 물리적인 CPU 수를 기반으로 엘라스틱서치가 최적의 스레드 수를 자동으로 계산하기 때문에 가능한 엘라스틱서치에 위임하자. 스레풀 내부의 수는 처리량에 따라 유동적으로 늘어나거나 줄어들기 때문에 엘라스틱서치가 필요할때마다 스레드를 마음껏 생성할 수 있어야 한다. 
 
+* generic
+	* 일반적인 연산에 사용하는 스레드풀
+* index
+	* 색인 작업에 사용하는 스레드풀
+* search
+	* 카운트, 검색, 추천에 사용하는 스레드 풀
+* get
+	* GET 요청을 처리하는데 사용하는 스레드 풀 
+* ...
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDI4ODI1NDksLTEyODgyNjU1NjQsMT
-g4ODg1NDE5MSwxMzYzMjc4MjcwLDE5ODA4NDcxNjMsMTYwNjc2
-NTI5Nyw1NzYzODQyMTgsLTEzNDk4MDIzMTIsMTI5NDY1NjIwMy
-wtMTQ4OTg1OTA1NSwtMTk0NzU2MDA2OSwtNTE1NjAxNzg2LC05
-NzI3ODU2MTQsMTQ1Mjc0NzE2NSwxOTI3MTAwMDkxLC0xMDQ0Mj
-AwNDUzLC0xMDA4MjA2MzMzLC0xMDExMzE3MjAyLC0xODM1NjEw
-ODk3LC02Nzg4NDEwMTZdfQ==
+eyJoaXN0b3J5IjpbMTc5OTUzOTY1MCwtMTk0Mjg4MjU0OSwtMT
+I4ODI2NTU2NCwxODg4ODU0MTkxLDEzNjMyNzgyNzAsMTk4MDg0
+NzE2MywxNjA2NzY1Mjk3LDU3NjM4NDIxOCwtMTM0OTgwMjMxMi
+wxMjk0NjU2MjAzLC0xNDg5ODU5MDU1LC0xOTQ3NTYwMDY5LC01
+MTU2MDE3ODYsLTk3Mjc4NTYxNCwxNDUyNzQ3MTY1LDE5MjcxMD
+AwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcy
+MDIsLTE4MzU2MTA4OTddfQ==
 -->
