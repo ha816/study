@@ -275,17 +275,21 @@ $ulimit -l unlimited //스와핑 최소화를 위해 memory_lock 크기를 unlim
 
 ### ulimit 소프트 설정과 하드 설정
 
-u
+소프트 설정은 **프로세스가 실행될때 최초로 할당 받는 값**이고 **하드 설정은 운영중에 리소스 한계에 도달할 경우 추가로 할당받을 수 있는 값**이다. 
+
+이렇게 이중으로 리소스 제한값을 관리하는 이유로 모든 프로세스가 최대값으로 리소스를 할당받으면 자칫 리소스 낭비가 심해질수 있기 때문이다. 
+
+대부분의 애플리케이션은 ulimit에 설정된 값보다 작은 리소스를 사용하는
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1Njk5OTg2OCwxMjk0NjU2MjAzLC0xND
-g5ODU5MDU1LC0xOTQ3NTYwMDY5LC01MTU2MDE3ODYsLTk3Mjc4
-NTYxNCwxNDUyNzQ3MTY1LDE5MjcxMDAwOTEsLTEwNDQyMDA0NT
-MsLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcs
-LTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1OD
-AyMDQ0NjcsMTk0MjY3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYz
-Miw4NTk4MDIyODhdfQ==
+eyJoaXN0b3J5IjpbODU5NDI2NDUwLDEyOTQ2NTYyMDMsLTE0OD
+k4NTkwNTUsLTE5NDc1NjAwNjksLTUxNTYwMTc4NiwtOTcyNzg1
+NjE0LDE0NTI3NDcxNjUsMTkyNzEwMDA5MSwtMTA0NDIwMDQ1My
+wtMTAwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5Nywt
+Njc4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1MiwtMTU4MD
+IwNDQ2NywxOTQyNjcwMTI4LDIwMDE5MzM4MjgsMTI0MjgyNjMy
+LDg1OTgwMjI4OF19
 -->
