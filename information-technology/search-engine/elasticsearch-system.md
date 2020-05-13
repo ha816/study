@@ -289,15 +289,15 @@ $ulimit -l unlimited //스와핑 최소화를 위해 memory_lock 크기를 unlim
 
 각종 설정 정보가 튜닝되고 일단 시스템이 안정화된고 나면 설정 정보를 변경하는 일은 매우 위험할 수 있다. 그러므로 설정 내역이 유지되도록 영구적으로 저장하는 것이 반드시 필요하다. 
 
-리눅스에서 설정 내역을 영구적으로 저장학
+리눅스에서 설정 내역을 영구적으로 저장하기 위한 용도로 /etc/security/limits.conf 파일을 제공한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDE5MTM0OTksMTk4MDg0NzE2MywxNj
-A2NzY1Mjk3LDU3NjM4NDIxOCwtMTM0OTgwMjMxMiwxMjk0NjU2
-MjAzLC0xNDg5ODU5MDU1LC0xOTQ3NTYwMDY5LC01MTU2MDE3OD
-YsLTk3Mjc4NTYxNCwxNDUyNzQ3MTY1LDE5MjcxMDAwOTEsLTEw
-NDQyMDA0NTMsLTEwMDgyMDYzMzMsLTEwMTEzMTcyMDIsLTE4Mz
-U2MTA4OTcsLTY3ODg0MTAxNiwxMzA3ODc3NzgzLC00MzQyMzUy
-NTIsLTE1ODAyMDQ0NjddfQ==
+eyJoaXN0b3J5IjpbMTgxODM2MjMwNSwxOTgwODQ3MTYzLDE2MD
+Y3NjUyOTcsNTc2Mzg0MjE4LC0xMzQ5ODAyMzEyLDEyOTQ2NTYy
+MDMsLTE0ODk4NTkwNTUsLTE5NDc1NjAwNjksLTUxNTYwMTc4Ni
+wtOTcyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMDA5MSwtMTA0
+NDIwMDQ1MywtMTAwODIwNjMzMywtMTAxMTMxNzIwMiwtMTgzNT
+YxMDg5NywtNjc4ODQxMDE2LDEzMDc4Nzc3ODMsLTQzNDIzNTI1
+MiwtMTU4MDIwNDQ2N119
 -->
