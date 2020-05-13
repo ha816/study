@@ -289,11 +289,13 @@ $ulimit -l unlimited //스와핑 최소화를 위해 memory_lock 크기를 unlim
 
 각종 설정 정보가 튜닝되고 일단 시스템이 안정화된고 나면 설정 정보를 변경하는 일은 매우 위험할 수 있다. 그러므로 설정 내역이 유지되도록 영구적으로 저장하는 것이 반드시 필요하다. 
 
-리눅스에서 설정 내역을 영구적으로 저장하기 위한 용도로 /etc/security/limits.conf 파일을 제공한다. 해당 파일을 수정하면 영구적으로 적용시킬 수 있다. 엘라스틱서치의 경우 애초에 소프트 설정과 하드 설정 모두 같은 값을 갖도록 하는게 좋다
+리눅스에서 설정 내역을 영구적으로 저장하기 위한 용도로 /etc/security/limits.conf 파일을 제공한다. 해당 파일을 수정하면 영구적으로 적용시킬 수 있다. 엘라스틱서치의 경우 애초에 소프트 설정과 하드 설정 모두 같은 값을 갖도록 하는게 좋다.
+
+## sysctl 명령어를 이용한 커널 레벨 튜닝
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NjI3NTkwMCwxOTgwODQ3MTYzLDE2MD
+eyJoaXN0b3J5IjpbMTM2MzI3ODI3MCwxOTgwODQ3MTYzLDE2MD
 Y3NjUyOTcsNTc2Mzg0MjE4LC0xMzQ5ODAyMzEyLDEyOTQ2NTYy
 MDMsLTE0ODk4NTkwNTUsLTE5NDc1NjAwNjksLTUxNTYwMTc4Ni
 wtOTcyNzg1NjE0LDE0NTI3NDcxNjUsMTkyNzEwMDA5MSwtMTA0
