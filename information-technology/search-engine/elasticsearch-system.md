@@ -299,18 +299,19 @@ sysctl 명령어를 이용하면 커널 파라미터를 수정할 수 있다.
 ```
 sysctl -a //sysctl로 커널 파라미터 조회
 sysctl -w 파라미터 = 파라미터 값 // 커널 파라미터 수정
-etc/sys
+etc/sysctl.conf 
 ```
 
+etc/sysctl.conf 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MjM3MjIzLDE4ODg4NTQxOTEsMTM2Mz
-I3ODI3MCwxOTgwODQ3MTYzLDE2MDY3NjUyOTcsNTc2Mzg0MjE4
-LC0xMzQ5ODAyMzEyLDEyOTQ2NTYyMDMsLTE0ODk4NTkwNTUsLT
-E5NDc1NjAwNjksLTUxNTYwMTc4NiwtOTcyNzg1NjE0LDE0NTI3
-NDcxNjUsMTkyNzEwMDA5MSwtMTA0NDIwMDQ1MywtMTAwODIwNj
-MzMywtMTAxMTMxNzIwMiwtMTgzNTYxMDg5NywtNjc4ODQxMDE2
-LDEzMDc4Nzc3ODNdfQ==
+eyJoaXN0b3J5IjpbMzEyMzc0ODMsMTg4ODg1NDE5MSwxMzYzMj
+c4MjcwLDE5ODA4NDcxNjMsMTYwNjc2NTI5Nyw1NzYzODQyMTgs
+LTEzNDk4MDIzMTIsMTI5NDY1NjIwMywtMTQ4OTg1OTA1NSwtMT
+k0NzU2MDA2OSwtNTE1NjAxNzg2LC05NzI3ODU2MTQsMTQ1Mjc0
+NzE2NSwxOTI3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2Mz
+MzLC0xMDExMzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYs
+MTMwNzg3Nzc4M119
 -->
