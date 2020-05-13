@@ -264,18 +264,24 @@ sysctl은 ulimit 명령어와 더불어 애플리케이션이 실행될때 생�
 
 ## ulimit 명령어를 이용한 유저레벨 튜닝
 
-ulimit 값을 변경하는 작업은 매우 신중하게 진행해야 한다. 시스템의 특성이나 처리하는 데이터의 종류에 따라 리소스 제한을 변경해야 좀 더 좋은 성능을 발휘하는 경욷
+ulimit 값을 변경하는 작업은 매우 신중하게 진행해야 한다. 시스템의 특성이나 처리하는 데이터의 종류에 따라 리소스 제한을 변경해야 좀 더 좋은 성능을 발휘하는 경우도 있겠지만 일반적인 경우는 기본 설정 값을 사용하는것만으로도 충분하다. 
+
+ulimit 값은 운영체제에서 실행되는 모든 애플리케이션에 적용되기 때문에 각 항목이 무엇을 의미하는지 자세히 알 필요가 있다. 
+
+```
+$ulimit -a // 운영체제에 설정된 전체 리로스 제한값 조회하기
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNzkzODUzMywtMTQ4OTg1OTA1NSwtMT
-k0NzU2MDA2OSwtNTE1NjAxNzg2LC05NzI3ODU2MTQsMTQ1Mjc0
-NzE2NSwxOTI3MTAwMDkxLC0xMDQ0MjAwNDUzLC0xMDA4MjA2Mz
-MzLC0xMDExMzE3MjAyLC0xODM1NjEwODk3LC02Nzg4NDEwMTYs
-MTMwNzg3Nzc4MywtNDM0MjM1MjUyLC0xNTgwMjA0NDY3LDE5ND
-I2NzAxMjgsMjAwMTkzMzgyOCwxMjQyODI2MzIsODU5ODAyMjg4
-LDEzMDI2NjUxNTZdfQ==
+eyJoaXN0b3J5IjpbNTQ5NjQ2MTg4LC0xNDg5ODU5MDU1LC0xOT
+Q3NTYwMDY5LC01MTU2MDE3ODYsLTk3Mjc4NTYxNCwxNDUyNzQ3
+MTY1LDE5MjcxMDAwOTEsLTEwNDQyMDA0NTMsLTEwMDgyMDYzMz
+MsLTEwMTEzMTcyMDIsLTE4MzU2MTA4OTcsLTY3ODg0MTAxNiwx
+MzA3ODc3NzgzLC00MzQyMzUyNTIsLTE1ODAyMDQ0NjcsMTk0Mj
+Y3MDEyOCwyMDAxOTMzODI4LDEyNDI4MjYzMiw4NTk4MDIyODgs
+MTMwMjY2NTE1Nl19
 -->
