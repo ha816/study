@@ -66,12 +66,15 @@ JDK는 공식 릴리스가 나오기 전에 테스트 목적으로 다음 버전
 13. G1GC 체크(G1GC check)
 초기버전의 자바 8 릴리스에서는 G1GC 수집기가 활성화될 경우 가끔 엘라스틱서치가 생성한 인덱스의 일부가 손상될 수 있는 심각한 문제점이 있었다. 이런 문제는 JDK 8u40이후 패치가 되었기 때문에 G1GC 방식을 사용하려면 반드시 8u40 이상의 버전을 사용해야 한다. 
 
+14. All Permission 체크(All Permission check)
+자바는 SecurityManager라는 강력한 보안 모델을 제공한다. 자바로 작성된 애플리케이션은 운영체제의 리소스를 사용하기 위해 SecurityManager를 통해 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMjUzNDkzOSwxMDk1NDE4NTUyLC0xNj
-Y2NjMzNjcyLDIzOTAyNzE4MiwtNjg2NjkzNzM4LC0xODU1NjI1
-NDIwLDIxMTcyNjUyNjgsLTE0NTIwMTg4MjksLTcxNzQ3NDc0Mi
-wtMTM5MDI3NTAxNywxOTQzMzczNDk2LDIwODQ2Mzc3MjQsMTY2
-NTE2MTk1MCwtNDQ4MjAxOTgyLDQwMDM5MTQ4OCwtNDExNzY5Nz
-Y4LC0xNTc3ODA4ODMxXX0=
+eyJoaXN0b3J5IjpbMTQzMDYxMTYzMywtODAyNTM0OTM5LDEwOT
+U0MTg1NTIsLTE2NjY2MzM2NzIsMjM5MDI3MTgyLC02ODY2OTM3
+MzgsLTE4NTU2MjU0MjAsMjExNzI2NTI2OCwtMTQ1MjAxODgyOS
+wtNzE3NDc0NzQyLC0xMzkwMjc1MDE3LDE5NDMzNzM0OTYsMjA4
+NDYzNzcyNCwxNjY1MTYxOTUwLC00NDgyMDE5ODIsNDAwMzkxND
+g4LC00MTE3Njk3NjgsLTE1Nzc4MDg4MzFdfQ==
 -->
