@@ -685,13 +685,13 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005';
 
 이 실행 계획 순서대로 살펴보면  dept_emp 테이블의 프라이머리 키는 dept_no + emp_no로 생성되어 있기 때문에 dept_emp 테이블을 검색한 결과는 dept_no컬럼 순서대로 정렬되고 다시 emp_no로 정렬되어 반환된다는 것을 예상할 수 있다. 그런데 이 쿼리는 WHERE 조건에 dept_no = 'd005' 로 고정되어 있으므로 emp_no로 정렬된 것과 같다. 결국 이 쿼리는 ORDER BY de.emp_no를 명시 하진 않았지만 사실 emp_no로 이미 인덱스로 정렬되었기 때문에 정렬된 효과를 얻을 수 있다. **주로 조인이 인덱스를 통해 처리되는 경우 이러한 예측을 할 수 있다.**
 
-하지만 중요한 점은 위 순서로 결과가 반환된 것은 옵티마이저거 여러 실행 계획중 위 실행 계획을 선택했기 때문이다. 
+하지만 중요한 점은 **위 순서로 결과가 반환된 것은 옵티마이저거 여러 실행 계획중 위 실행 계획을 선택했기 때문이다.** 당연히 인덱스를 이용해 검색할 것 같은 쿼리에서도 테이블 레코드 수가 매우 적거나 통계정보가 잘못 되었을 경우 다른 실행계획을 선택할수도 있다. 이처럼 **옵티마이저가 선택할 실행 계획에 의존하는 정렬은 피하는게 좋다. 쿼리의 실행 계획은 언제 변경될지 알수 없기 때문이다.** 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjMzMTIwMzUsLTE3NjAxNTQyMTIsLT
-QxMjI1MjcyLC02MTA3MTQ0ODUsLTE5ODgzMTczMjAsMjA5MDg2
-ODk2OCwxODc4NDA0NTA3LC01OTUzOTE3NjUsLTE0Njk2MTkxMD
-AsLTEzOTEwNzU3NzAsLTE5ODk2OTk5NTgsMjA3NDY4MTY2MSw5
-NzEwNDg4NzEsLTc5NTIyNzkzNSwtNjA0NTQyNzA0LDE2NDU5Mz
-UzMiwtMTM0MzgxNzA4OCwtMTg2ODM3NzQwOSwzMTMwMTc2NDIs
-LTEyODUzODQyNjhdfQ==
+eyJoaXN0b3J5IjpbMTEwNjM4NTYyNiwtMTc2MDE1NDIxMiwtND
+EyMjUyNzIsLTYxMDcxNDQ4NSwtMTk4ODMxNzMyMCwyMDkwODY4
+OTY4LDE4Nzg0MDQ1MDcsLTU5NTM5MTc2NSwtMTQ2OTYxOTEwMC
+wtMTM5MTA3NTc3MCwtMTk4OTY5OTk1OCwyMDc0NjgxNjYxLDk3
+MTA0ODg3MSwtNzk1MjI3OTM1LC02MDQ1NDI3MDQsMTY0NTkzNT
+MyLC0xMzQzODE3MDg4LC0xODY4Mzc3NDA5LDMxMzAxNzY0Miwt
+MTI4NTM4NDI2OF19
 -->
