@@ -664,18 +664,13 @@ dept_emp 테이블의 각 레코드에 의해 employees 테이블을 읽을 때 
 
 ## 조인 관련 주의 사항
 
-MySQL의 조인 처리에서 특별히 주의해야할 부분은 명시되는 조건은 OUTER JOIN이나 INNER JOIN에 관계없이 조인된 결과에 모두 적용된다. 그래서 OUTER JOIN으로 연결되는 테이블이 있는 쿼리에서는 가능하다면 모든 조건을 ON 절에 명시하는 습관을 들이는게 좋다.
-
-
-
-
-> Written with [StackEdit](https://stackedit.io/).
+MySQL의 조인처리에서 특별히 주의해야할 부분은 실행 결과의 정렬 순서와 INNER JOIN과 OUTER JOIN의 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODQwNDUwNywtNTk1MzkxNzY1LC0xND
-Y5NjE5MTAwLC0xMzkxMDc1NzcwLC0xOTg5Njk5OTU4LDIwNzQ2
-ODE2NjEsOTcxMDQ4ODcxLC03OTUyMjc5MzUsLTYwNDU0MjcwNC
-wxNjQ1OTM1MzIsLTEzNDM4MTcwODgsLTE4NjgzNzc0MDksMzEz
-MDE3NjQyLC0xMjg1Mzg0MjY4LDgwNTk2MDQ4MSwxNzk1MzAyMj
-Y1LC03NDU2MTEzNDksLTE5NzI1MzEzOTksLTE0NTI1NDExNSwt
-MTIxNDM2MzQ2NV19
+eyJoaXN0b3J5IjpbMzQwMTE3NTM2LDE4Nzg0MDQ1MDcsLTU5NT
+M5MTc2NSwtMTQ2OTYxOTEwMCwtMTM5MTA3NTc3MCwtMTk4OTY5
+OTk1OCwyMDc0NjgxNjYxLDk3MTA0ODg3MSwtNzk1MjI3OTM1LC
+02MDQ1NDI3MDQsMTY0NTkzNTMyLC0xMzQzODE3MDg4LC0xODY4
+Mzc3NDA5LDMxMzAxNzY0MiwtMTI4NTM4NDI2OCw4MDU5NjA0OD
+EsMTc5NTMwMjI2NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC0x
+NDUyNTQxMTVdfQ==
 -->
