@@ -669,12 +669,17 @@ MySQL의 조인처리에서 특별히 주의해야할 부분은 **실행 결과�
 ### 조인 실행 결과 정렬 순서
 
 일반적으로 조인으로 쿼리가 수행되는 경우, 드라이븡 테이블로 레코드로부터 레코드를 읽는 순서가 전체 쿼리의 결과 순서에 그대로 적용되는 것이 일반적이다. 이는 네스티드-루프 조인 방식의 특징이기도 하다. 
+
+```
+SELECT de.de
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDg2ODk2OCwxODc4NDA0NTA3LC01OT
-UzOTE3NjUsLTE0Njk2MTkxMDAsLTEzOTEwNzU3NzAsLTE5ODk2
-OTk5NTgsMjA3NDY4MTY2MSw5NzEwNDg4NzEsLTc5NTIyNzkzNS
-wtNjA0NTQyNzA0LDE2NDU5MzUzMiwtMTM0MzgxNzA4OCwtMTg2
-ODM3NzQwOSwzMTMwMTc2NDIsLTEyODUzODQyNjgsODA1OTYwND
-gxLDE3OTUzMDIyNjUsLTc0NTYxMTM0OSwtMTk3MjUzMTM5OSwt
-MTQ1MjU0MTE1XX0=
+eyJoaXN0b3J5IjpbNTc3NDA3NDYwLDIwOTA4Njg5NjgsMTg3OD
+QwNDUwNywtNTk1MzkxNzY1LC0xNDY5NjE5MTAwLC0xMzkxMDc1
+NzcwLC0xOTg5Njk5OTU4LDIwNzQ2ODE2NjEsOTcxMDQ4ODcxLC
+03OTUyMjc5MzUsLTYwNDU0MjcwNCwxNjQ1OTM1MzIsLTEzNDM4
+MTcwODgsLTE4NjgzNzc0MDksMzEzMDE3NjQyLC0xMjg1Mzg0Mj
+Y4LDgwNTk2MDQ4MSwxNzk1MzAyMjY1LC03NDU2MTEzNDksLTE5
+NzI1MzEzOTldfQ==
 -->
