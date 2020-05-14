@@ -671,15 +671,23 @@ MySQL의 조인처리에서 특별히 주의해야할 부분은 **실행 결과�
 일반적으로 조인으로 쿼리가 수행되는 경우, 드라이븡 테이블로 레코드로부터 레코드를 읽는 순서가 전체 쿼리의 결과 순서에 그대로 적용되는 것이 일반적이다. 이는 네스티드-루프 조인 방식의 특징이기도 하다. 
 
 ```
-SELECT de.de
-
+SELECT de.dept_no, e.emp_no, e.first_name
+FROM dept_emp de, employees e
+WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005';
 ```
+
+위 쿼리의 실행 계획을 보면 dept_emp 테이블을 먼저 읽었다는 것을 알 수 있다.
+
+|id| select_type|table|type|key|key_len|ref|rows|Extra
+|--|--|--|--|--|--|--|--|--|
+|1| SIMPLE|employees|ALL|PRIMARY|| |300584 | Using temporary; Using filesort
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc3NDA3NDYwLDIwOTA4Njg5NjgsMTg3OD
-QwNDUwNywtNTk1MzkxNzY1LC0xNDY5NjE5MTAwLC0xMzkxMDc1
-NzcwLC0xOTg5Njk5OTU4LDIwNzQ2ODE2NjEsOTcxMDQ4ODcxLC
-03OTUyMjc5MzUsLTYwNDU0MjcwNCwxNjQ1OTM1MzIsLTEzNDM4
-MTcwODgsLTE4NjgzNzc0MDksMzEzMDE3NjQyLC0xMjg1Mzg0Mj
-Y4LDgwNTk2MDQ4MSwxNzk1MzAyMjY1LC03NDU2MTEzNDksLTE5
-NzI1MzEzOTldfQ==
+eyJoaXN0b3J5IjpbLTE5ODgzMTczMjAsMjA5MDg2ODk2OCwxOD
+c4NDA0NTA3LC01OTUzOTE3NjUsLTE0Njk2MTkxMDAsLTEzOTEw
+NzU3NzAsLTE5ODk2OTk5NTgsMjA3NDY4MTY2MSw5NzEwNDg4Nz
+EsLTc5NTIyNzkzNSwtNjA0NTQyNzA0LDE2NDU5MzUzMiwtMTM0
+MzgxNzA4OCwtMTg2ODM3NzQwOSwzMTMwMTc2NDIsLTEyODUzOD
+QyNjgsODA1OTYwNDgxLDE3OTUzMDIyNjUsLTc0NTYxMTM0OSwt
+MTk3MjUzMTM5OV19
 -->
