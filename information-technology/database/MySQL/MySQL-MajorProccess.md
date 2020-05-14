@@ -676,19 +676,20 @@ FROM dept_emp de, employees e
 WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005';
 ```
 
-위 쿼리의 실행 계획을 보면 dept_emp 테이블을 먼저 읽었다는 것을 알 수 있다. 
+위 쿼리의 실행 계획을 보면 dept_emp 테이블을 먼저 읽었다는 것을 알 수 있다. 그리고 de를 읽은 결과를 가지고 employees 테이블의 프라이머리 키를 검색하는 과정으로 처리되었다.
 
 |id| select_type|table|type|key|key_len|ref|rows|Extra
 |--|--|--|--|--|--|--|--|--|
 |1| SIMPLE|de|ref|PRIMARY|12|const|53288| Using where; Using index;
 |1| SIMPLE|e|eq_ref|PRIMARY|4|de.emp_no|1| 
 
+이 실행 계획 순서대로 살펴보면 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDIwODUwMywtNjEwNzE0NDg1LC0xOT
-g4MzE3MzIwLDIwOTA4Njg5NjgsMTg3ODQwNDUwNywtNTk1Mzkx
-NzY1LC0xNDY5NjE5MTAwLC0xMzkxMDc1NzcwLC0xOTg5Njk5OT
-U4LDIwNzQ2ODE2NjEsOTcxMDQ4ODcxLC03OTUyMjc5MzUsLTYw
-NDU0MjcwNCwxNjQ1OTM1MzIsLTEzNDM4MTcwODgsLTE4NjgzNz
-c0MDksMzEzMDE3NjQyLC0xMjg1Mzg0MjY4LDgwNTk2MDQ4MSwx
-Nzk1MzAyMjY1XX0=
+eyJoaXN0b3J5IjpbLTQxMjI1MjcyLC02MTA3MTQ0ODUsLTE5OD
+gzMTczMjAsMjA5MDg2ODk2OCwxODc4NDA0NTA3LC01OTUzOTE3
+NjUsLTE0Njk2MTkxMDAsLTEzOTEwNzU3NzAsLTE5ODk2OTk5NT
+gsMjA3NDY4MTY2MSw5NzEwNDg4NzEsLTc5NTIyNzkzNSwtNjA0
+NTQyNzA0LDE2NDU5MzUzMiwtMTM0MzgxNzA4OCwtMTg2ODM3Nz
+QwOSwzMTMwMTc2NDIsLTEyODUzODQyNjgsODA1OTYwNDgxLDE3
+OTUzMDIyNjVdfQ==
 -->
