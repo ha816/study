@@ -29,7 +29,7 @@
 
 
 1. 힙 크기 체크(Heap size check)
-JVM옵션 중 기본 힙 크기와 최대 힙 크기 옵션이 별도로 존재한다. 최소 메모리를 쓰다가 큰 메모리를 쓰
+JVM옵션 중 기본 힙 크기와 최대 힙 크기 옵션이 별도로 존재한다. 최소 메모리를 쓰다가 큰 메모리를 쓰게되는데 엘라스틱서치는 스와핑을 최소화하기 위해 전체 힙 메모리에 대해 Memory Lock을 수행한다. 소프트 설정과 하드 설정의 값이 다르면 소프트 과정(기본 힙) 크기만큼만 Memory 대상으로 잡는다. 그러한 이유로 Memory Lock 설정을 하더라
 
 
 
@@ -38,7 +38,7 @@ JVM옵션 중 기본 힙 크기와 최대 힙 크기 옵션이 별도로 존재�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NzU4NzgwLDE2NjUxNjE5NTAsLTQ0OD
-IwMTk4Miw0MDAzOTE0ODgsLTQxMTc2OTc2OCwtMTU3NzgwODgz
-MV19
+eyJoaXN0b3J5IjpbMTY3MDgyNDk5MSwxNjY1MTYxOTUwLC00ND
+gyMDE5ODIsNDAwMzkxNDg4LC00MTE3Njk3NjgsLTE1Nzc4MDg4
+MzFdfQ==
 -->
