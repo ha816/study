@@ -52,12 +52,14 @@ JVM 메모리 관리를 위해 주기적으로 GC를 수행한다. 이 과정에
 자바 애플리케이션을 실행하는 JVM은 서버에서 동작하는 프로그램을 위한 Server JVM과 클라이언트에서 동작하는 프로그램을 위한 Client JVM으로 나뉘어져 있다. Server JVM은 고성능 처리를 위해 최적화 되어 있는 반면 Client JVM은 빠른 실행과 적은 메모리 사용에 좀 더 최적화되어 있다. 두 종류의 JVM은 서로 추구하는 바가 다르므로 성능 차이가 상당할 수 있다. 엘라스틱서치는 고성능으로 동작해야 하기 때문에 반드시 Server JVM으로 실행해야 한다. 이를 위해 **이 단계에서는 엘라스틱서치가 Server JVM으로 실행되는지 검사한다.** 
 
 9. Serial Collector 사용 여부 체크(Use serial collector check)
-자바로 만든 모든 애플리케이션은 기본적으로 JVM위에 동작한다. 그리고 JVM은 메모리 관리를 위해 GC과정을 주기적으로 수행한다. GC를 수행하는 Collector는 여러 종류가 있는데, 현재 JVM에서는 CMS나 G1 컬렉터를 많이 사용하고 있다. 예전에는 Serial Collector를 쓰고는 했는데 이는 하드웨어가 열악한 시절의 GC 방식이나 특수한 목적을 제외하곤 절대 사용해선 안된다. 엘라스틱서치에서느 대용량의 힙 메모리를 사용하기 때문에 Serial CG를 사용하면 안된다. 이를 위해 이 단계에선 엘라스틱서치를 실행할때 Serial CG를 사용하지 않도록 사용 여부를 검사한다. 
+자바로 만든 모든 애플리케이션은 기본적으로 JVM위에 동작한다. 그리고 JVM은 메모리 관리를 위해 GC과정을 주기적으로 수행한다. GC를 수행하는 Collector는 여러 종류가 있는데, 현재 JVM에서는 CMS나 G1 컬렉터를 많이 사용하고 있다. 예전에는 Serial Collector를 쓰고는 했는데 이는 하드웨어가 열악한 시절의 GC 방식이나 특수한 목적을 제외하곤 절대 사용해선 안된다. 엘라스틱서치에서느 대용량의 힙 메모리를 사용하기 때문에 Serial CG를 사용하면 안된다. 이를 위해 이 단계에선 **엘라스틱서치를 실행할때 Serial CG를 사용하지 않도록 사용 여부를 검사한다.** 
 
+10. 시스템 콜 필터 체크(System call filter check)
+현대 운영체제는 보안을 위해 유저 모드와 커널 모드로 메모리 공간을 분리해서 관리한다. 각 메모리 간의 데이터 공유를 위해 시스템 콜을 이용해 안전하게 통신을 수행한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzY0NDQzMSwtMTg1NTYyNTQyMCwyMT
+eyJoaXN0b3J5IjpbMTM0NzY4MzE5OSwtMTg1NTYyNTQyMCwyMT
 E3MjY1MjY4LC0xNDUyMDE4ODI5LC03MTc0NzQ3NDIsLTEzOTAy
 NzUwMTcsMTk0MzM3MzQ5NiwyMDg0NjM3NzI0LDE2NjUxNjE5NT
 AsLTQ0ODIwMTk4Miw0MDAzOTE0ODgsLTQxMTc2OTc2OCwtMTU3
