@@ -57,12 +57,14 @@ JVM 메모리 관리를 위해 주기적으로 GC를 수행한다. 이 과정에
 10. 시스템 콜 필터 체크(System call filter check)
 현대 운영체제는 보안을 위해 유저 모드와 커널 모드로 메모리 공간을 분리해서 관리한다. 각 메모리 간의 데이터 공유를 위해 시스템 콜을 이용해 안전하게 통신을 수행한다. 리눅스의 경우 유저 모드에서 커널 모드로 접근하는 시스템 콜을 제한하는 방식으로 샌드박스(Sandbox)를 구현하고 있으며 임의 코드 실행 공격을 막기 위한 목적으로 시스템 콜 필터를 제공한다. (리눅스의 경우, seccomp, seccomp-bpf 함수를 이용해 샌드박스를 구현한다.) 엘라스틱서치는 보안을 위해 기본적으로 시스템 콜 필터가 설치되 있는지 여부를 검사한다. 운영체제 수준에서 시스템 콜 필터를 지원하지 않는 경우가 있는데 이러한 경우에는 부트스트랩 과정에서 한상 실패하기 때문에 elasticsearch.yml 설정에서 bootstrap.system_call_filter 옵션을 false로 설정해 필터가 설치되어 있는지 확인 하는 과정을 무시하도록 설정도 가능하다. 사실 보안 측면에서 시스템 콜 필터를 항상 설치하는 것이 좋다. 운영하려는 시스템에 시스템 콜 필터가 지원되지 않는다면 커널을 업데이트 하도록 하자. 이 단계에서는 **엘라스틱서치를 실행했을 때 시스템 콜 필터가 사용되고 있는지 검사한다.** 
 
-11. 
+11. OnError, OnOutOfMemoryError 체크(OnError and OnOutOfMemoryError checks)
+JVM을 실행할때 옵션중 OnError와 OnOutOfMemoryError 옵션이 있다. 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NjY5MzczOCwtMTg1NTYyNTQyMCwyMT
-E3MjY1MjY4LC0xNDUyMDE4ODI5LC03MTc0NzQ3NDIsLTEzOTAy
-NzUwMTcsMTk0MzM3MzQ5NiwyMDg0NjM3NzI0LDE2NjUxNjE5NT
-AsLTQ0ODIwMTk4Miw0MDAzOTE0ODgsLTQxMTc2OTc2OCwtMTU3
-NzgwODgzMV19
+eyJoaXN0b3J5IjpbMjM5MDI3MTgyLC02ODY2OTM3MzgsLTE4NT
+U2MjU0MjAsMjExNzI2NTI2OCwtMTQ1MjAxODgyOSwtNzE3NDc0
+NzQyLC0xMzkwMjc1MDE3LDE5NDMzNzM0OTYsMjA4NDYzNzcyNC
+wxNjY1MTYxOTUwLC00NDgyMDE5ODIsNDAwMzkxNDg4LC00MTE3
+Njk3NjgsLTE1Nzc4MDg4MzFdfQ==
 -->
