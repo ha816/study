@@ -45,13 +45,14 @@ JVM 메모리 관리를 위해 주기적으로 GC를 수행한다. 이 과정에
 6. 최대 파일 크기 체크(Max file size check)
 리눅스에서 생성 가능한 파일 크기는 얼마일까? 리눅스에서는 하나의 파일이 가질 수 있는 최대 파일 크기를 관리하고 있다. 파일이 너무 커질 경우 시스템 전체에 장애가 발생할 수 있기 때문에 최디 파일 크기를 제한하고 있다. 엘라스틱서치가 생성하는 대표적인 파일인 세그먼트 파일과 트랜스로그(Translog) 파일은 상황에 따라 수십  GB이상으로 커질 수도 있다. 리눅스가 제한하는 최대 파일 크기 이상으로 파일 크기가 커질 경우 데이터가 유실되거나 엘라스틱서치가 이상 동작을 할 수도 있다. 그래서 엘라스틱서치를 안정적으로 운영하기 위해서는 최대 파일 크기를 무제한(unlimit)로 설정하는 것이 좋다. 이를 위해 이 단계에서는 **리눅스가 생성한 애플리케이션이 만들 수 있는 최대 파일 크기가 무제한으로 설정되어 있는지 검사한다.** 
 
-7. mm
+7. mmap 카운트 체크(Maximum map count check)
+엘라스틱서치는 앞 단계에서 가상 메모리 크기가 무제한으로 설정된것을 확인하고 나면 mmap을 사용할 사전 준비가 완료되었다고 판단하고 mmap를 효율적으로 동작할 수 있도록 메모리 매핑 영역을 생성한다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzg4MjQ0NDcsLTcxNzQ3NDc0MiwtMT
+eyJoaXN0b3J5IjpbLTE0NTIwMTg4MjksLTcxNzQ3NDc0MiwtMT
 M5MDI3NTAxNywxOTQzMzczNDk2LDIwODQ2Mzc3MjQsMTY2NTE2
 MTk1MCwtNDQ4MjAxOTgyLDQwMDM5MTQ4OCwtNDExNzY5NzY4LC
 0xNTc3ODA4ODMxXX0=
