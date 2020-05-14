@@ -676,7 +676,7 @@ FROM dept_emp de, employees e
 WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005';
 ```
 
-위 쿼리의 실행 계획을 보면 dept_emp 테이블을 먼저 읽었다는 것을 알 수 있다.
+위 쿼리의 실행 계획을 보면 dept_emp 테이블을 먼저 읽었다는 것을 알 수 있다. 
 
 |id| select_type|table|type|key|key_len|ref|rows|Extra
 |--|--|--|--|--|--|--|--|--|
@@ -684,11 +684,11 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005';
 |1| SIMPLE|e|eq_ref|PRIMARY|4|de.emp_no|1| 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMDcxNDQ4NSwtMTk4ODMxNzMyMCwyMD
-kwODY4OTY4LDE4Nzg0MDQ1MDcsLTU5NTM5MTc2NSwtMTQ2OTYx
-OTEwMCwtMTM5MTA3NTc3MCwtMTk4OTY5OTk1OCwyMDc0NjgxNj
-YxLDk3MTA0ODg3MSwtNzk1MjI3OTM1LC02MDQ1NDI3MDQsMTY0
-NTkzNTMyLC0xMzQzODE3MDg4LC0xODY4Mzc3NDA5LDMxMzAxNz
-Y0MiwtMTI4NTM4NDI2OCw4MDU5NjA0ODEsMTc5NTMwMjI2NSwt
-NzQ1NjExMzQ5XX0=
+eyJoaXN0b3J5IjpbLTE1MDIwODUwMywtNjEwNzE0NDg1LC0xOT
+g4MzE3MzIwLDIwOTA4Njg5NjgsMTg3ODQwNDUwNywtNTk1Mzkx
+NzY1LC0xNDY5NjE5MTAwLC0xMzkxMDc1NzcwLC0xOTg5Njk5OT
+U4LDIwNzQ2ODE2NjEsOTcxMDQ4ODcxLC03OTUyMjc5MzUsLTYw
+NDU0MjcwNCwxNjQ1OTM1MzIsLTEzNDM4MTcwODgsLTE4NjgzNz
+c0MDksMzEzMDE3NjQyLC0xMjg1Mzg0MjY4LDgwNTk2MDQ4MSwx
+Nzk1MzAyMjY1XX0=
 -->
