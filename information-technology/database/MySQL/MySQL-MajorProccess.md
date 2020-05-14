@@ -664,13 +664,15 @@ dept_emp 테이블의 각 레코드에 의해 employees 테이블을 읽을 때 
 
 ## 조인 관련 주의 사항
 
-MySQL의 조인처리에서 특별히 주의해야할 부분은 실행 결과의 정렬 순서와 INNER JOIN과 OUTER JOIN의 
+MySQL의 조인처리에서 특별히 주의해야할 부분은 실행 결과의 정렬 순서와 INNER JOIN과 OUTER JOIN의 선택 두 가지 정도를 고려해야 할 것이다.
+
+일반적으로 조인으로 쿼리가 수행되는 경우, 드라이븡 테이블로 레코드로부터 레코드를 읽는 순서가 전체 쿼리의 결과 순서에 그대로 적용되는 것이 일반적이다. 이는 네스티드-루프 조인 방식의 특징이기도 하다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQwMTE3NTM2LDE4Nzg0MDQ1MDcsLTU5NT
-M5MTc2NSwtMTQ2OTYxOTEwMCwtMTM5MTA3NTc3MCwtMTk4OTY5
-OTk1OCwyMDc0NjgxNjYxLDk3MTA0ODg3MSwtNzk1MjI3OTM1LC
-02MDQ1NDI3MDQsMTY0NTkzNTMyLC0xMzQzODE3MDg4LC0xODY4
-Mzc3NDA5LDMxMzAxNzY0MiwtMTI4NTM4NDI2OCw4MDU5NjA0OD
-EsMTc5NTMwMjI2NSwtNzQ1NjExMzQ5LC0xOTcyNTMxMzk5LC0x
-NDUyNTQxMTVdfQ==
+eyJoaXN0b3J5IjpbLTc0MjQ4NTI3OSwxODc4NDA0NTA3LC01OT
+UzOTE3NjUsLTE0Njk2MTkxMDAsLTEzOTEwNzU3NzAsLTE5ODk2
+OTk5NTgsMjA3NDY4MTY2MSw5NzEwNDg4NzEsLTc5NTIyNzkzNS
+wtNjA0NTQyNzA0LDE2NDU5MzUzMiwtMTM0MzgxNzA4OCwtMTg2
+ODM3NzQwOSwzMTMwMTc2NDIsLTEyODUzODQyNjgsODA1OTYwND
+gxLDE3OTUzMDIyNjUsLTc0NTYxMTM0OSwtMTk3MjUzMTM5OSwt
+MTQ1MjU0MTE1XX0=
 -->
