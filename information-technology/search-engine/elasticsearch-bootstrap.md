@@ -49,13 +49,14 @@ JVM 메모리 관리를 위해 주기적으로 GC를 수행한다. 이 과정에
 엘라스틱서치는 앞 단계에서 가상 메모리 크기가 무제한으로 설정된것을 확인하고 나면 mmap을 사용할 사전 준비가 완료되었다고 판단하고 mmap를 효율적으로 동작할 수 있도록 메모리 매핑 영역을 생성한다. 이때 생성되는 메모리 매핑 영역은 커널이 제공하는 특정 크기의 메모리맵 조각으로 생성되는데 리눅스에서는 생성 가능한 메모리 맵의 수도 관리하고 있다. 엘라스틱서치에서는 최대 262,114개의 메모리 맵 영역을 가질 수 있다. 이를 위해 **리눅스가 생성한 애플리케이션 가질 수 있는 최대 mmap 카운트를 검사한다.** 
 
 8. 클라이언트 JVM 체크(Client JVM check)
-자바 애플리케이션을 실행하는 JVM은 서버에서 동작하는 프로그램을 위한 Server JVM과 클라이언트에서 동작하는 프로그램을 위한 Client JVM으로 나뉘어져 있다. 
+자바 애플리케이션을 실행하는 JVM은 서버에서 동작하는 프로그램을 위한 Server JVM과 클라이언트에서 동작하는 프로그램을 위한 Client JVM으로 나뉘어져 있다. Server JVM은 고성능 처리를 위해 최적화 되어 있는 반면 Client JVM은 빠른 실행과 적으
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzI2NTI2OCwtMTQ1MjAxODgyOSwtNz
-E3NDc0NzQyLC0xMzkwMjc1MDE3LDE5NDMzNzM0OTYsMjA4NDYz
-NzcyNCwxNjY1MTYxOTUwLC00NDgyMDE5ODIsNDAwMzkxNDg4LC
-00MTE3Njk3NjgsLTE1Nzc4MDg4MzFdfQ==
+eyJoaXN0b3J5IjpbLTE0MjAyNjYxNjUsMjExNzI2NTI2OCwtMT
+Q1MjAxODgyOSwtNzE3NDc0NzQyLC0xMzkwMjc1MDE3LDE5NDMz
+NzM0OTYsMjA4NDYzNzcyNCwxNjY1MTYxOTUwLC00NDgyMDE5OD
+IsNDAwMzkxNDg4LC00MTE3Njk3NjgsLTE1Nzc4MDg4MzFdfQ==
+
 -->
