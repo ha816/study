@@ -34,8 +34,10 @@ JVM옵션 중 기본 힙 크기와 최대 힙 크기 옵션이 별도로 존재�
 
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0ODIwMTk4Miw0MDAzOTE0ODgsLTQxMT
-c2OTc2OCwtMTU3NzgwODgzMV19
+eyJoaXN0b3J5IjpbMTY2NTE2MTk1MCwtNDQ4MjAxOTgyLDQwMD
+M5MTQ4OCwtNDExNzY5NzY4LC0xNTc3ODA4ODMxXX0=
 -->
