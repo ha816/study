@@ -681,10 +681,10 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005';
 |id| select_type|table|type|key|key_len|ref|rows|Extra
 |--|--|--|--|--|--|--|--|--|
 |1| SIMPLE|de|ref|PRIMARY|12|const|53288| Using where; Using index;
-|1| SIMPLE|e|eq_ref|PRIMARY|12|const|53288| Using where; Using index;
+|1| SIMPLE|e|eq_ref|PRIMARY|4|de.emp_no|1| 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMjYwMTQ1NiwtMTk4ODMxNzMyMCwyMD
+eyJoaXN0b3J5IjpbLTYxMDcxNDQ4NSwtMTk4ODMxNzMyMCwyMD
 kwODY4OTY4LDE4Nzg0MDQ1MDcsLTU5NTM5MTc2NSwtMTQ2OTYx
 OTEwMCwtMTM5MTA3NTc3MCwtMTk4OTY5OTk1OCwyMDc0NjgxNj
 YxLDk3MTA0ODg3MSwtNzk1MjI3OTM1LC02MDQ1NDI3MDQsMTY0
