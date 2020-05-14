@@ -29,7 +29,7 @@
 
 
 1. 힙 크기 체크(Heap size check)
-JVM옵션 중 기본 힙 크기와 최대 힙 크기 옵션이 별도로 존재한다. 이 단계에선 JVM의 기본 힙 크기와 최대 힙 크기가 같은지 검사한다.
+JVM옵션 중 기본 힙 크기와 최대 힙 크기 옵션이 별도로 존재한다. 최소 메모리를 쓰다가 큰 메모리를 쓰
 
 
 
@@ -38,6 +38,7 @@ JVM옵션 중 기본 힙 크기와 최대 힙 크기 옵션이 별도로 존재�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NTE2MTk1MCwtNDQ4MjAxOTgyLDQwMD
-M5MTQ4OCwtNDExNzY5NzY4LC0xNTc3ODA4ODMxXX0=
+eyJoaXN0b3J5IjpbLTk3NzU4NzgwLDE2NjUxNjE5NTAsLTQ0OD
+IwMTk4Miw0MDAzOTE0ODgsLTQxMTc2OTc2OCwtMTU3NzgwODgz
+MV19
 -->
