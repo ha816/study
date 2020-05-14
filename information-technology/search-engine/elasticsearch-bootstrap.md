@@ -52,12 +52,12 @@ JVM 메모리 관리를 위해 주기적으로 GC를 수행한다. 이 과정에
 자바 애플리케이션을 실행하는 JVM은 서버에서 동작하는 프로그램을 위한 Server JVM과 클라이언트에서 동작하는 프로그램을 위한 Client JVM으로 나뉘어져 있다. Server JVM은 고성능 처리를 위해 최적화 되어 있는 반면 Client JVM은 빠른 실행과 적은 메모리 사용에 좀 더 최적화되어 있다. 두 종류의 JVM은 서로 추구하는 바가 다르므로 성능 차이가 상당할 수 있다. 엘라스틱서치는 고성능으로 동작해야 하기 때문에 반드시 Server JVM으로 실행해야 한다. 이를 위해 **이 단계에서는 엘라스틱서치가 Server JVM으로 실행되는지 검사한다.** 
 
 9. Serial Collector 사용 여부 체크(Use serial collector check)
-자바로 만든 모든 애플리케이션은 기본  
+자바로 만든 모든 애플리케이션은 기본적으로 JVM위에 동작한다. 그리고 JVM은 메모리 관리를 위해 GC과정을 주기적으로 수행한다. GC를 수행하는 Collector는 여러 종류가 있는데, 현재 JVM에서는 CMS나 G1 컬렉터를 많이 사용하고 있다.   
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzE1MTM1NDMsMjExNzI2NTI2OCwtMT
+eyJoaXN0b3J5IjpbLTE4NTU2MjU0MjAsMjExNzI2NTI2OCwtMT
 Q1MjAxODgyOSwtNzE3NDc0NzQyLC0xMzkwMjc1MDE3LDE5NDMz
 NzM0OTYsMjA4NDYzNzcyNCwxNjY1MTYxOTUwLC00NDgyMDE5OD
 IsNDAwMzkxNDg4LC00MTE3Njk3NjgsLTE1Nzc4MDg4MzFdfQ==
