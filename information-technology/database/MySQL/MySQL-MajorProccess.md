@@ -683,13 +683,15 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005';
 |1| SIMPLE|de|ref|PRIMARY|12|const|53288| Using where; Using index;
 |1| SIMPLE|e|eq_ref|PRIMARY|4|de.emp_no|1| 
 
-이 실행 계획 순서대로 살펴보면  dept_emp 테이블의 프라이머리 키는 dept_no + emp_no로 생성되어 있기 때문에 dept_emp 테이블을 검색한 결과는 dept_no컬럼 순서대로 정렬되고 다시 emp_no로 정렬되어 반환된다는 것을 예상할 수 있다. 그런데 이 쿼리는 WHERE 조건에 dept_no = 'd005' 로 고정되어 있으므로 emp_no로 정렬된 것과 같다. 결국 이 쿼리는 ORDER BY de.emp_no를 명시 하진 않았지만 사실 emp_no로 이미 인덱스로 정렬되었기 때문에 정렬된 효과를 얻을 수 있다. 주로 조인이 인덱스를 통해 처리되는 경우 이러한 예측을 할 수 있
+이 실행 계획 순서대로 살펴보면  dept_emp 테이블의 프라이머리 키는 dept_no + emp_no로 생성되어 있기 때문에 dept_emp 테이블을 검색한 결과는 dept_no컬럼 순서대로 정렬되고 다시 emp_no로 정렬되어 반환된다는 것을 예상할 수 있다. 그런데 이 쿼리는 WHERE 조건에 dept_no = 'd005' 로 고정되어 있으므로 emp_no로 정렬된 것과 같다. 결국 이 쿼리는 ORDER BY de.emp_no를 명시 하진 않았지만 사실 emp_no로 이미 인덱스로 정렬되었기 때문에 정렬된 효과를 얻을 수 있다. **주로 조인이 인덱스를 통해 처리되는 경우 이러한 예측을 할 수 있다.**
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNTQ0NTE5NCwtNDEyMjUyNzIsLTYxMD
-cxNDQ4NSwtMTk4ODMxNzMyMCwyMDkwODY4OTY4LDE4Nzg0MDQ1
-MDcsLTU5NTM5MTc2NSwtMTQ2OTYxOTEwMCwtMTM5MTA3NTc3MC
-wtMTk4OTY5OTk1OCwyMDc0NjgxNjYxLDk3MTA0ODg3MSwtNzk1
-MjI3OTM1LC02MDQ1NDI3MDQsMTY0NTkzNTMyLC0xMzQzODE3MD
-g4LC0xODY4Mzc3NDA5LDMxMzAxNzY0MiwtMTI4NTM4NDI2OCw4
-MDU5NjA0ODFdfQ==
+eyJoaXN0b3J5IjpbLTE3NjAxNTQyMTIsLTQxMjI1MjcyLC02MT
+A3MTQ0ODUsLTE5ODgzMTczMjAsMjA5MDg2ODk2OCwxODc4NDA0
+NTA3LC01OTUzOTE3NjUsLTE0Njk2MTkxMDAsLTEzOTEwNzU3Nz
+AsLTE5ODk2OTk5NTgsMjA3NDY4MTY2MSw5NzEwNDg4NzEsLTc5
+NTIyNzkzNSwtNjA0NTQyNzA0LDE2NDU5MzUzMiwtMTM0MzgxNz
+A4OCwtMTg2ODM3NzQwOSwzMTMwMTc2NDIsLTEyODUzODQyNjgs
+ODA1OTYwNDgxXX0=
 -->
