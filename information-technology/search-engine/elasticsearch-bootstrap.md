@@ -40,15 +40,15 @@ JVM 메모리 관리를 위해 주기적으로 GC를 수행한다. 이 과정에
 엘라스틱 서치는 대량의 요청을 빠르게 처리하기 위해 내부를 기능별로 나누어 여러 단계의 모듈로 구성되어 있다. 각 모듈은 큐와 쓰레드풀을 가지고 있기 때문에 요청에 대한 처리량(throughput)을 조절하면서 탄력적으로 처리하는 것이 가능하다. 모든 Thread Pool Executor가 여유롭게 스레드를 생성하도록 엘라스틱서치가 최소 4096개 이상의 스레드를 생성하도록 하는게 좋다. 이를 위해 이 단계에선 **애플리케이션이 생성할 수 있는 최대 쓰레드 수를 검사한다.** 
 
 5. 최대 메모리 크기 체크(Maximum size virtual memory check)
-내부에 존재하는 루씬은 인덱스 생성 및 관리를 효율적으로 하기 위해 mmap을 이용해 메모리 매핑을 수행한다. mmap을 이용하면 JVM을 통하지 않고
+내부에 존재하는 루씬은 인덱스 생성 및 관리를 효율적으로 하기 위해 mmap을 이용해 메모리 매핑을 수행한다. mmap을 이용하면 JVM을 통하지 않고도 리눅스 커널로 직접 시스템 콜을 실행할 수 있어 고성능 자바 애플리케이션에서 많이 사용한다. mmap은 커널 레벨의 메모리를 직접 할당받아 애플리케이션의 가상 메모리 주소의 매핑해서 동작하기 때문에 가상 메모리 크기에 제한이 없는것이 유리한다. 엘라스틱서치에서는 mmap를 효율적으로 사용하기 위해 애플리케이션의 가상 메모리 크기를 무제한ㅇ
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTM5NTA0MzYsLTEzOTAyNzUwMTcsMT
-k0MzM3MzQ5NiwyMDg0NjM3NzI0LDE2NjUxNjE5NTAsLTQ0ODIw
-MTk4Miw0MDAzOTE0ODgsLTQxMTc2OTc2OCwtMTU3NzgwODgzMV
-19
+eyJoaXN0b3J5IjpbMTgwMDYxMjg1MCwtMTM5MDI3NTAxNywxOT
+QzMzczNDk2LDIwODQ2Mzc3MjQsMTY2NTE2MTk1MCwtNDQ4MjAx
+OTgyLDQwMDM5MTQ4OCwtNDExNzY5NzY4LC0xNTc3ODA4ODMxXX
+0=
 -->
