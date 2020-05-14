@@ -64,14 +64,14 @@ JVM을 실행할때 옵션중 OnError와 OnOutOfMemoryError 옵션이 있다. �
 JDK는 공식 릴리스가 나오기 전에 테스트 목적으로 다음 버전의 릴리스 스냅숏을 미리 제공한다. 미리 다음 버전의 기능을 확인해 볼 수 있다는 장점이 있지만 안정화된 버전이 아니기에 실제 서버에 적용하는 것을 옳지 않다. 이를 위해 이 단계에서는 엘라스틱서치가 테스트 버전의 JVM을 사용하고 있는지 여부를 검사한다. 
 
 13. G1GC 체크(G1GC check)
-현재 엘라스틱서치에서는 GC방식을 선택할때 기본적으로 CMS 방식을 사용하도록 권장한다. 하지만 
+초기버전의 자바 8 릴리스에서는 G1GC 수집기가 활성화될 경우 가끔 엘라스틱서치가 생성한 인덱스의 일부가 손상될 수 있는 심각한 문제점이 있었다. 이런 문제는 JDK 8u40이후 패치가 되었기 때문에 G1GC 방식
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTA0MjkxMSwxMDk1NDE4NTUyLC0xNj
-Y2NjMzNjcyLDIzOTAyNzE4MiwtNjg2NjkzNzM4LC0xODU1NjI1
-NDIwLDIxMTcyNjUyNjgsLTE0NTIwMTg4MjksLTcxNzQ3NDc0Mi
-wtMTM5MDI3NTAxNywxOTQzMzczNDk2LDIwODQ2Mzc3MjQsMTY2
-NTE2MTk1MCwtNDQ4MjAxOTgyLDQwMDM5MTQ4OCwtNDExNzY5Nz
-Y4LC0xNTc3ODA4ODMxXX0=
+eyJoaXN0b3J5IjpbLTE5MzAyOTI0MjEsMTA5NTQxODU1MiwtMT
+Y2NjYzMzY3MiwyMzkwMjcxODIsLTY4NjY5MzczOCwtMTg1NTYy
+NTQyMCwyMTE3MjY1MjY4LC0xNDUyMDE4ODI5LC03MTc0NzQ3ND
+IsLTEzOTAyNzUwMTcsMTk0MzM3MzQ5NiwyMDg0NjM3NzI0LDE2
+NjUxNjE5NTAsLTQ0ODIwMTk4Miw0MDAzOTE0ODgsLTQxMTc2OT
+c2OCwtMTU3NzgwODgzMV19
 -->
