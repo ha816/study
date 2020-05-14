@@ -683,9 +683,9 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005';
 |1| SIMPLE|de|ref|PRIMARY|12|const|53288| Using where; Using index;
 |1| SIMPLE|e|eq_ref|PRIMARY|4|de.emp_no|1| 
 
-이 실행 계획 순서대로 살펴보면  dept_emp 테이블의 프라이머리 키는 dept_no + emp_no로 생성되어 있기 때문에 dept_emp 테이블을 검색한 결과는 dept_no컬럼 순서대로 정렬되고 다시 
+이 실행 계획 순서대로 살펴보면  dept_emp 테이블의 프라이머리 키는 dept_no + emp_no로 생성되어 있기 때문에 dept_emp 테이블을 검색한 결과는 dept_no컬럼 순서대로 정렬되고 다시 emp_no로 정렬되어 반환된다는 것을 예상할 수 있다. 그런데 이 쿼리는 WHERE 조건에 dept_no = 'd005' 로 고정되어 있으므로 emp_no로 나머지 컬럼이 정렬
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNjkxNTI5LC00MTIyNTI3MiwtNjEwNz
+eyJoaXN0b3J5IjpbMjk2NzEyNzU2LC00MTIyNTI3MiwtNjEwNz
 E0NDg1LC0xOTg4MzE3MzIwLDIwOTA4Njg5NjgsMTg3ODQwNDUw
 NywtNTk1MzkxNzY1LC0xNDY5NjE5MTAwLC0xMzkxMDc1NzcwLC
 0xOTg5Njk5OTU4LDIwNzQ2ODE2NjEsOTcxMDQ4ODcxLC03OTUy
