@@ -683,13 +683,13 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005';
 |1| SIMPLE|de|ref|PRIMARY|12|const|53288| Using where; Using index;
 |1| SIMPLE|e|eq_ref|PRIMARY|4|de.emp_no|1| 
 
-이 실행 계획 순서대로 살펴보면 
+이 실행 계획 순서대로 살펴보면  dept_emp 테이블의 프라이머리 키는 dept_no + emp_no로 생성되어 있기 때문에 dept_emp 테이블을 검색한 결과는 dept_no컬럼 순서대로 정렬되고 다시 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMjI1MjcyLC02MTA3MTQ0ODUsLTE5OD
-gzMTczMjAsMjA5MDg2ODk2OCwxODc4NDA0NTA3LC01OTUzOTE3
-NjUsLTE0Njk2MTkxMDAsLTEzOTEwNzU3NzAsLTE5ODk2OTk5NT
-gsMjA3NDY4MTY2MSw5NzEwNDg4NzEsLTc5NTIyNzkzNSwtNjA0
-NTQyNzA0LDE2NDU5MzUzMiwtMTM0MzgxNzA4OCwtMTg2ODM3Nz
-QwOSwzMTMwMTc2NDIsLTEyODUzODQyNjgsODA1OTYwNDgxLDE3
-OTUzMDIyNjVdfQ==
+eyJoaXN0b3J5IjpbMjAwNjkxNTI5LC00MTIyNTI3MiwtNjEwNz
+E0NDg1LC0xOTg4MzE3MzIwLDIwOTA4Njg5NjgsMTg3ODQwNDUw
+NywtNTk1MzkxNzY1LC0xNDY5NjE5MTAwLC0xMzkxMDc1NzcwLC
+0xOTg5Njk5OTU4LDIwNzQ2ODE2NjEsOTcxMDQ4ODcxLC03OTUy
+Mjc5MzUsLTYwNDU0MjcwNCwxNjQ1OTM1MzIsLTEzNDM4MTcwOD
+gsLTE4NjgzNzc0MDksMzEzMDE3NjQyLC0xMjg1Mzg0MjY4LDgw
+NTk2MDQ4MV19
 -->
