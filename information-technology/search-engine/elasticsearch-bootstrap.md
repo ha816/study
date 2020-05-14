@@ -43,14 +43,14 @@ JVM 메모리 관리를 위해 주기적으로 GC를 수행한다. 이 과정에
 내부에 존재하는 루씬은 인덱스 생성 및 관리를 효율적으로 하기 위해 mmap을 이용해 메모리 매핑을 수행한다. mmap을 이용하면 JVM을 통하지 않고도 리눅스 커널로 직접 시스템 콜을 실행할 수 있어 고성능 자바 애플리케이션에서 많이 사용한다. mmap은 커널 레벨의 메모리를 직접 할당받아 애플리케이션의 가상 메모리 주소의 매핑해서 동작하기 때문에 가상 메모리 크기에 제한이 없는것이 유리한다. 엘라스틱서치에서는 mmap를 효율적으로 사용하기 위해 애플리케이션의 가상 메모리 크기를 무제한으로 설정하도록 안내한다. 이를 위해 이 단계에선 리눅스가 생성하는 애플리케이션의 **가상 메모리 크기가 무제한으로 설정되어 있는지 검사한다.** 
 
 6. 최대 파일 크기 체크(Max file size check)
-리눅스에서 생성 가능한 파일 크기는 얼마일까? 리눅스에서는 하나의 파일이 가질 수 있는 최대 파일 크기를 관리하고 있다. 
+리눅스에서 생성 가능한 파일 크기는 얼마일까? 리눅스에서는 하나의 파일이 가질 수 있는 최대 파일 크기를 관리하고 있다. 파일이 너무 커질 경우 시스템 전체에 장애가 발생할 수 있기 때문에 최디 파일 크기를 제한하고 있다. 엘라스틱서치가 생성하는 대표적인 파일인 세그먼트 파일과 트랜스로그(Translog) 파일은 상황에 따라 수십  GB이상으로 커질 수도 있다. 리눅스가 제한하는 최대 파일 크기 이상으로 파일 크기가 커질 경우 데이터가 유실되거나 ㅇ
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNzQ3NDc0MiwtMTM5MDI3NTAxNywxOT
-QzMzczNDk2LDIwODQ2Mzc3MjQsMTY2NTE2MTk1MCwtNDQ4MjAx
-OTgyLDQwMDM5MTQ4OCwtNDExNzY5NzY4LC0xNTc3ODA4ODMxXX
-0=
+eyJoaXN0b3J5IjpbLTE5MTY0MTAzNzksLTcxNzQ3NDc0MiwtMT
+M5MDI3NTAxNywxOTQzMzczNDk2LDIwODQ2Mzc3MjQsMTY2NTE2
+MTk1MCwtNDQ4MjAxOTgyLDQwMDM5MTQ4OCwtNDExNzY5NzY4LC
+0xNTc3ODA4ODMxXX0=
 -->
