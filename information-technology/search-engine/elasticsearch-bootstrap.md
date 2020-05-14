@@ -60,14 +60,18 @@ JVM 메모리 관리를 위해 주기적으로 GC를 수행한다. 이 과정에
 11. OnError, OnOutOfMemoryError 체크(OnError and OnOutOfMemoryError checks)
 JVM을 실행할때 옵션중 OnError와 OnOutOfMemoryError 옵션이 있다. 각각 애플리케이션에서 Error가 발생하거나 OutOfMemoryError가 발생할 경우 지정한 명령어나 스크립트가 실행되도록 지원하는 옵션이다. 이를 이용하면 로그를 생성하거나 특정 명령어를 실행해 추후 문제를 해결할 수 있다. 엘라스틱서치는 기본적으로 시스템 콜 필터를 사용하는데, 이 옵션의 경우 시스템 콜 필터를 사용하는 애플리케이션에서는 사용이 불가능하기 때문에 설정해서는 안된다. 따라서 이 단계에선 엘라스틱 서치를 실행할때 **시스템 콜 필터를 사용할 경우 OnError 옵션이나 OnOutOfMemory 옵션이 설정되어 있는지 여부를 검사한다.(설정되어 있으면 사용하면 안된다는 것을 알려준다.)** 
 
-12. Early-acc
+12. Early-access 체크(Early-access check)
+JDK는 공식 릴리스가 나오기 전에 테스트 목적으로 다음 버전의 릴리스 스냅숏을 미리 제공한다. 미리 다음 버전의 기능을 확인해 볼 수 있다는 장점이 있지만 안정화된 버전이 아니기에 실제 서버에 적용하는 것을 옳지 않다. 이를 위해 이 단계에서는 엘라스틱서치가 테스트 버전의 JVM을 사용하고 있는지 여부를 검사한다. 
+
+13. G1GC 체크(G1GC check)
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk5NDAyODI2LC0xNjY2NjMzNjcyLDIzOT
-AyNzE4MiwtNjg2NjkzNzM4LC0xODU1NjI1NDIwLDIxMTcyNjUy
-NjgsLTE0NTIwMTg4MjksLTcxNzQ3NDc0MiwtMTM5MDI3NTAxNy
-wxOTQzMzczNDk2LDIwODQ2Mzc3MjQsMTY2NTE2MTk1MCwtNDQ4
-MjAxOTgyLDQwMDM5MTQ4OCwtNDExNzY5NzY4LC0xNTc3ODA4OD
-MxXX0=
+eyJoaXN0b3J5IjpbMTA5NTQxODU1MiwtMTY2NjYzMzY3MiwyMz
+kwMjcxODIsLTY4NjY5MzczOCwtMTg1NTYyNTQyMCwyMTE3MjY1
+MjY4LC0xNDUyMDE4ODI5LC03MTc0NzQ3NDIsLTEzOTAyNzUwMT
+csMTk0MzM3MzQ5NiwyMDg0NjM3NzI0LDE2NjUxNjE5NTAsLTQ0
+ODIwMTk4Miw0MDAzOTE0ODgsLTQxMTc2OTc2OCwtMTU3NzgwOD
+gzMV19
 -->
