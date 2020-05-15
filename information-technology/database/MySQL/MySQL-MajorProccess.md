@@ -687,13 +687,15 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005';
 
 하지만 중요한 점은 **위 순서로 결과가 반환된 것은 옵티마이저거 여러 실행 계획중 위 실행 계획을 선택했기 때문이다.** 당연히 인덱스를 이용해 검색할 것 같은 쿼리에서도 테이블 레코드 수가 매우 적거나 통계정보가 잘못 되었을 경우 다른 실행계획을 선택할수도 있다. 이처럼 **옵티마이저가 선택할 실행 계획에 의존하는 정렬은 피하는게 좋다. 쿼리의 실행 계획은 언제 변경될지 알수 없기 때문이다.** 
 
-따라서 만약 정확한 결과를 원한다면 반드시 ORDER BY절을 추가하도록 하자. 다행이 **ORDER BY 절이 쿼리에 명시했다고 해서 옵티마이저가 항상 정렬을 보장하는 것은 아니다.** 실행 계획상에서 이 순서를 보장할 수 있다면 옵티마이저가 자동으로 별도의 정렬 작업을 생략하고 결과를 반환한다. 만약 정렬이 보장되지 않는 다면 강제로 정렬 작업을 통해 정렬을 보장해준다. **ORDER BY 절이 사용된다고 해서 항상 정렬을 수행하는게 아니다.** 
+따라서 만약 정확한 결과를 원한다면 반드시 ORDER BY절을 추가하도록 하자. 다행이 **ORDER BY 절이 쿼리에 명시했다고 해서 옵티마이저가 항상 정렬을 보장하는 것은 아니다.** 실행 계획상에서 이 순서를 보장할 수 있다면 옵티마이저가 자동으로 별도의 정렬 작업을 생략하고 결과를 반환한다. 만약 정렬이 보장되지 않는 다면 강제로 정렬 작업을 통해 정렬을 보장해준다. **ORDER BY 절이 사용된다고 해서 항상 정렬을 수행하는게 아니다.** 재밌는 점은 쿼리 결과의 정렬을 보장하는 방법도 ORDER BY 절을 사용하는 것 밖에 없다는 사실을 명심하자.
+
+### INNER JOIN과 OUTER JOIN의 선택
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTc0OTg2NTcsMTEwNjM4NTYyNiwtMT
-c2MDE1NDIxMiwtNDEyMjUyNzIsLTYxMDcxNDQ4NSwtMTk4ODMx
-NzMyMCwyMDkwODY4OTY4LDE4Nzg0MDQ1MDcsLTU5NTM5MTc2NS
-wtMTQ2OTYxOTEwMCwtMTM5MTA3NTc3MCwtMTk4OTY5OTk1OCwy
-MDc0NjgxNjYxLDk3MTA0ODg3MSwtNzk1MjI3OTM1LC02MDQ1ND
-I3MDQsMTY0NTkzNTMyLC0xMzQzODE3MDg4LC0xODY4Mzc3NDA5
-LDMxMzAxNzY0Ml19
+eyJoaXN0b3J5IjpbMTU2NDQ5ODcxMiwtMjA1NzQ5ODY1NywxMT
+A2Mzg1NjI2LC0xNzYwMTU0MjEyLC00MTIyNTI3MiwtNjEwNzE0
+NDg1LC0xOTg4MzE3MzIwLDIwOTA4Njg5NjgsMTg3ODQwNDUwNy
+wtNTk1MzkxNzY1LC0xNDY5NjE5MTAwLC0xMzkxMDc1NzcwLC0x
+OTg5Njk5OTU4LDIwNzQ2ODE2NjEsOTcxMDQ4ODcxLC03OTUyMj
+c5MzUsLTYwNDU0MjcwNCwxNjQ1OTM1MzIsLTEzNDM4MTcwODgs
+LTE4NjgzNzc0MDldfQ==
 -->
