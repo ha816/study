@@ -693,13 +693,15 @@ WHERE e.emp_no = de.emp_no AND de.dept_no = 'd005';
 
 INNER JOIN은 양 테이블에 조건이 맞는 레코드가 모두 존재하는 경우에만 반환된다. **OUTER JOIN은 OUTER 테이블에 존재하면 레코드가 반환된다.** 
 
-그런데 보통 OUTER JOIN을 사용하지 않아도 될것을 OUTER JOIN으로 사용하는 경우가 상당히 많다. INNER JOIN을 사용했을때 레코드 결과가 나오지 않을까봐 거정하는 경우가 있는것 같다. 반대로 OUTER JOIN으로 실행하면 쿼리 처리가 느려진다고 생각하고 억지로 INNER JOIN으로 쿼리를 작성하는 경우도 있다. 심지
+그런데 보통 OUTER JOIN을 사용하지 않아도 될것을 OUTER JOIN으로 사용하는 경우가 상당히 많다. INNER JOIN을 사용했을때 레코드 결과가 나오지 않을까봐 거정하는 경우가 있는것 같다. 반대로 OUTER JOIN으로 실행하면 쿼리 처리가 느려진다고 생각하고 억지로 INNER JOIN으로 쿼리를 작성하는 경우도 있다. 심지어 인터넷에도 OUTER JOIN과 INNER JOIN의 성능 비교를 물어보곤 한다. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ3ODg0MTg2LC0zMDM4NzM4NTQsMTU2ND
-Q5ODcxMiwtMjA1NzQ5ODY1NywxMTA2Mzg1NjI2LC0xNzYwMTU0
-MjEyLC00MTIyNTI3MiwtNjEwNzE0NDg1LC0xOTg4MzE3MzIwLD
-IwOTA4Njg5NjgsMTg3ODQwNDUwNywtNTk1MzkxNzY1LC0xNDY5
-NjE5MTAwLC0xMzkxMDc1NzcwLC0xOTg5Njk5OTU4LDIwNzQ2OD
-E2NjEsOTcxMDQ4ODcxLC03OTUyMjc5MzUsLTYwNDU0MjcwNCwx
-NjQ1OTM1MzJdfQ==
+eyJoaXN0b3J5IjpbMTQ5NDIxMjIxNiwtMzAzODczODU0LDE1Nj
+Q0OTg3MTIsLTIwNTc0OTg2NTcsMTEwNjM4NTYyNiwtMTc2MDE1
+NDIxMiwtNDEyMjUyNzIsLTYxMDcxNDQ4NSwtMTk4ODMxNzMyMC
+wyMDkwODY4OTY4LDE4Nzg0MDQ1MDcsLTU5NTM5MTc2NSwtMTQ2
+OTYxOTEwMCwtMTM5MTA3NTc3MCwtMTk4OTY5OTk1OCwyMDc0Nj
+gxNjYxLDk3MTA0ODg3MSwtNzk1MjI3OTM1LC02MDQ1NDI3MDQs
+MTY0NTkzNTMyXX0=
 -->
