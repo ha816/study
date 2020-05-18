@@ -4,7 +4,7 @@
 
 # Segment(세그먼트)
 
-문서들은 빠른 검섹에 유리하도록 설계된 특수한 자료구조로 저장된다. 샤브 내부에 루씬 라이브러리를 포함하고 있는데, 이를 통해 대부분의 검색 기능을 제공한다. 루씬에 데이터가 색인되면 데이터는 최소의 단위인 토큰으로 분리되고 토큰은 특수한 형태의 자료구조로 저장되는데, 이를 세그먼트라 한다. 
+문서들은 빠른 검색에 유리하도록 설계된 특수한 자료구조 형태로 저장된다. 샤브 내부에 루씬 라이브러리를 포함하고 있는데, 이를 통해 대부분의 검색 기능을 제공한다. 루씬에 데이터가 색인되면 데이터는 최소의 단위인 토큰으로 분리되고 토큰은 특수한 형태의 자료구조로 저장되는데, 이를 세그먼트라 한다. 
 
 세그먼트는 읽기에 최적화된 자료구조로이다. 
 
@@ -242,6 +242,6 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTczOTY5NDAsMTE0MTg1NTEsMTg1Mz
-A5NTM0NSw0MjUxMzczMTldfQ==
+eyJoaXN0b3J5IjpbNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLDExND
+E4NTUxLDE4NTMwOTUzNDUsNDI1MTM3MzE5XX0=
 -->
