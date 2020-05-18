@@ -14,7 +14,6 @@
 
  이번 장에서는 엘라스틱서치를 구성하는 주요 개념이 무엇인지 자세히 알아보도록 하자.
 
-
 # Index(색인)
 
 인덱스(색인)는 RDMBS에서 database에 해당한다. 하나의 database에 비슷한 특성을 가진 데이터를 모아두는 것과 유사하게 색인은 비슷한 특성의 문서들의 집합으로 이해할 수 있다. 이를테면 고객 데이터에 대한 색인, 제품 카탈로그에 대한 색인, 주문 데이터에 대한 색인 등을 생각해 볼 수 있다. 
@@ -105,5 +104,5 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5OTI2ODM1LC0xMjA1OTM5NTM1XX0=
+eyJoaXN0b3J5IjpbMzQ4MTEwNjIzLC0xMjA1OTM5NTM1XX0=
 -->
