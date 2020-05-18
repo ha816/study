@@ -8,15 +8,6 @@
 
 엘라스틱서치의 최상위 개념인 클러스터부터 최하위 개념인 세그먼트까지 탑다운 방식으로 클러스터의 관점으로 이해해 보자. 
 
-
-## 인덱스(Index)
-
-인덱스는 유사한 특성을 가지고 있는 문서들을 모은 컬렉션이다. 
-
-## 문서(Document)
-
-문서는 검색 대상이 되는 실제 물리적인 데이터를 말한다. 문서는 인덱스를 생성할 수 있는 기본적인 정보 단위이고 JSON 형식으로 표현된다. 인덱스에 원하는 만큼 많은 문서를 저장할 수 있고 실제로는 샤드 형태로 나누어져 다수의 노드로 분산 저장된다.
-
 ## 샤드(Shard)
 
 인덱스에서는 엄청나게 많은 문서가 저장될 수 있다. 하나의 하드웨어에서 제공하는 리소스의 물리적인 한계를 넘기 위해 도입한 개념이 바로 샤드이다. 이를 이용하면 데이터를 분삭 저장할때 손쉽게 수평확장이 가능해진다. 
@@ -280,6 +271,6 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcwNDQyNzcsMTg1MzA5NTM0NSw0MjUxMz
-czMTldfQ==
+eyJoaXN0b3J5IjpbLTIxMTAxODY4MTMsMTg1MzA5NTM0NSw0Mj
+UxMzczMTldfQ==
 -->
