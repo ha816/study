@@ -138,6 +138,13 @@ POST _msearch
 
 Multi Search API를 사용하면 동시에 여러 개의 색인에서 검색을 수행할 수 있으므로 사용자별 맞춤 페이지등을 구현할때 여러 인덱스에서 사용자별로 특화된 정보를 가져올때 유용하게 사용할 수 있다. 
 
+기본적으로 모든 검색 요청은 Multi Index 및 Multi Type검색이 가능하다. 이러한 특성 덕에 다수의 인덱스를 검색해야 할때도 한번의 요청으로 검색 결과를 얻을 수 있다. 검색 요청시 "," 컴마를 이용해 다수의 인덱스 명을 입력할 수 있다. 이때 지정된 모든 인덱스가 검색 대상이 된다. 
+
+아래 쿼리는 move_search, movie_auto 인덱스를 모두 검색한다. 
+```
+POST movie_search, movie_auto/_search 
+```
+
 
 ### Count API
 
@@ -165,5 +172,6 @@ POST movie_search/_validate/query?q=prdtYear:2017
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc5ODUyNTYzLDg0NDYzNDA1Nl19
+eyJoaXN0b3J5IjpbMjA0MjM5OTAwOSw4Nzk4NTI1NjMsODQ0Nj
+M0MDU2XX0=
 -->
