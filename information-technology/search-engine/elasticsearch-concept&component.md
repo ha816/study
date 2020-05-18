@@ -59,7 +59,7 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 ## 클러스터(Cluster)
 
- 클러스터는 여러 노드(서버)의 집합으로 구성되며, 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 클러스터를 구분한다. 이 이름은 중요한데, 어떤 노드가 어느 클러스터에 포함되기 되는지를 이름으로 판별하기 때문이다. 
+ 클러스터는 여러 노드(서버)의 집합으로 구성되며, 아래 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 클러스터를 구분한다. 이 이름은 중요한데, 어떤 노드가 어느 클러스터에 포함되기 되는지를 이름으로 판별하기 때문이다. 
 
 ![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/99AB08425C9F17D928)
 
@@ -88,24 +88,7 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 마스터 노드, 데이터 노드, 인제스트 노드의 역할을 하지 않고 단순히 들어온 요청을 라운드 로빈 방식으로 분산시켜주는 노드다. 
 
-
-# Cluster(클러스터)
-
- 클러스터는 여러 노드(서버)의 집합으로 구성되며, 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 클러스터를 구분한다. 이름을 정하는 것은 매우 중요한데, 어떤 노드가 어느 클러스터에 포함되기 되는지를 이름으로 판별하기 때문이다. 
-
-![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/99AB08425C9F17D928)
-
-# Node(노드)
-
-노드는 클러스터에 포함된 단일 서버이다. 노드를 엘라스틱서치가 작동 중인 물리적인 서버로도 이해할 수도 있다. 
-
-노드는 클러스터처럼 이름으로 식별되는데, 기본 이름은 시작 시 노드에 지정되는 임의 UUID(Universally Unique IDentifier)이다. 
-
-효율적인 분산 처리를 위해선 다양한 형태의 노드를 조합해서 클러스터를 구성해야 한다. 마스터 노드는 노드의 추가, 삭제와 같은 전체적인 클러스터를 관리한다. 데이터 노드는 문서 검색, 색인 등을 수행한다. 
-
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTYzNzM0NDldfQ==
+eyJoaXN0b3J5IjpbLTIwNjk2ODA0NTFdfQ==
 -->
