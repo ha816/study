@@ -1,12 +1,11 @@
 # Overview
 
-이번 장에서는 DSL(domainSpecificLanguage) 쿼리에 대해서 알아보자. DSL 쿼리는 복잡한 여러 조건을 만족하는 문서를 찾기 위해 사용되는 JSON 형태의 쿼리다. DSL로 쿼리를 작성하려면 미리 정의된 문법에 따라 JSON 구조를 작성해야 한다. 기본적인 구조는 다음과 같다.
+이번 장에서는 DSL(domainSpecificLanguage) 쿼리에 대해서 알아보자. DSL 쿼리는 복잡한 여러 조건을 만족하는 문서를 찾기 위해 사용되는 JSON 형태의 쿼리다. DSL로 쿼리를 작성하려면 미리 정의된 문법에 따라 JSON 구조를 작성해야 한다. 기본적인 요청 구조는 다음과 같다.
 ```
-{
+{	
 	"size":
 	"from":
 	"timeout":
-	
 	"_source":{}
 	"query":{}
 	"aggs":{}
@@ -41,7 +40,7 @@ sort는 문서결과를 어떤 순서로 출력할지에 대한 공간이다.
 }
 ```
 
-위의 JSON 형태는 기본 응답 구조이다. 
+위의 JSON은 기본 응답 구조이다. 
 took은 쿼리 수행 시간을 나타낸다.
 timed_out은 쿼리 시간이 초과할 경우 나타난다.
 _shards.total은 쿼리를 요청한 저체 샤드의 개수를 나타낸다.
@@ -51,6 +50,8 @@ failed는 응답에 실패한 샤드의 갯수를 나타낸다.
 _hits.total은 검색어에 매칭된 문서의 전체 개수를 나타낸다. 
 max_score는 일치하는 문서의 스코어 값중 가장 높은 값을 출력한다.
 hits는 각 문서 정보와 스코어 값을 보여준다. 
+
+# 주요 DSL 파라미터
 
 |파라미터|기본값| 설명|
 |--|--|--|
@@ -65,10 +66,6 @@ hits는 각 문서 정보와 스코어 값을 보여준다.
 |size|  |반환할 검색 결과 갯수를 설정한다.|
 
 q 옵션에는 기본적으로 '[필드명]:검색어' 형태로 입력할 수 있으며, 예제와 같이 여러개의 필드를 검색할때는 공백을 입력한 후 추가적인 필드명과 검색어를 입력한다. 
-
-### Query DSL
-
-
 
 
 ## Query DSL 쿼리와 필터
@@ -409,5 +406,5 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDU5ODg3NzZdfQ==
+eyJoaXN0b3J5IjpbMTM4OTk4MjE1NF19
 -->
