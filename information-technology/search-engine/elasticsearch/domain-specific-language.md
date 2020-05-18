@@ -1,8 +1,8 @@
-# Overview
+# DSL
 
 이번 장에서는 DSL(domainSpecificLanguage) 쿼리에 대해서 알아보자. DSL 쿼리는 복잡한 여러 조건을 만족하는 문서를 찾기 위해 사용되는 JSON 형태의 쿼리다. DSL로 쿼리를 작성하려면 미리 정의된 문법에 따라 JSON 구조를 작성해야 한다. 
 
-# DSL 예제
+## 요청, 응답 
 ```
 {	
 	"size":
@@ -76,9 +76,10 @@ max_score
 hits
 : 각 문서 정보와 스코어 값을 보여준다. 
 
-## 
+# 주요 요청 파라미터 
 
-아래는 주로
+아래는 자주 사용되는 DSL 요청 파라미터다. 이런 파라미터가 있다는 것만 읽고 넘어가면 되겠다. 
+
 |파라미터|기본값| 설명|
 |--|--|--|
 |q |  | 검색을 수행할 쿼리 문자열 조건을 지정한다.q 옵션에는 기본적으로 '[필드명]:검색어' 형태로 입력할 수 있으며, 예제와 같이 여러개의 필드를 검색할때는 공백을 입력한 후 추가적인 필드명과 검색어를 입력한다. |
@@ -429,5 +430,5 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDYyNzgyMSwxMzIyOTQ4NDE2XX0=
+eyJoaXN0b3J5IjpbMjQ4ODA0NTQxLDEzMjI5NDg0MTZdfQ==
 -->
