@@ -61,7 +61,7 @@ PUT /movie {
 	* 한 건의 문서를 색인한다. 
 * Multi Get API
 	* 한 건의 문서를 조회한다.
-	* 
+* ...
 
 ## 집계 API
 
@@ -171,6 +171,6 @@ POST movie_search/_validate/query?q=prdtYear:2017
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMwNjM1MDM3LDQ0MDkyNDIzNCw4Nzk4NT
-I1NjMsODQ0NjM0MDU2XX0=
+eyJoaXN0b3J5IjpbMTEzODgzMjk4NSw0NDA5MjQyMzQsODc5OD
+UyNTYzLDg0NDYzNDA1Nl19
 -->
