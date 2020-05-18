@@ -1,12 +1,8 @@
-# 엘라스틱서치 주요 API
+# 주요 API
 
  엘라스틱 서치는 RESTful 방식의 API를 제공하며, JSON 기반으로 통신한다. 기본적으로 HTTP 통신을 위해 9200번 포트를 사용한다. 
 
 문서를 색인하기 위해서는 기본적으로 인덱스가 존재 해야 한다. 인덱스를 통해 입력되는 문서의 필드를 정의하고 각 필드에 알맞은 데이터 타입을 지정할 수 있다. 
-
->index vs indices 용어정리
->index: 색인 데이터
->indices: 매핑 정보를 저장하는 논리적인 데이터 공간
 
 사실 엘라스틱 서치는 사용 편의성을 위해서 스키마리스(Schemaless)라는 기능을 제공한다. 문서를 색인하기 위해서는 기본적으로 필요한 인덱스 생성 과정 없이 문서를 추가해도 문서가 색인 되도록 지원하는 일종의 편의 기능이다. 
 
@@ -586,5 +582,5 @@ POST movie_search/_validate/query?q=prdtYear:2017
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTA0ODA3ODldfQ==
+eyJoaXN0b3J5IjpbLTE4MTk2Nzg1LC0xNzUwNDgwNzg5XX0=
 -->
