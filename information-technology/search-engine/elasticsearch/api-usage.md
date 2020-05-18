@@ -70,7 +70,7 @@ PUT /movie {
 
 ## 검색 API
 
-엘라스틱 검색 API의 사용방식은 크게 두 가지 방식이 있다. 
+검색 API의 사용방식은 크게 두 가지 방식이 있다. 
 
 1. HTTP URI 형태의 파라미터를 URI에 추가해 검색하는 방법
 2. RESTful API방식인 QueryDSL을 사용해 요청 본문(Request Body)에 질의 내용을 추가해 검색하는 법
@@ -584,5 +584,5 @@ POST movie_search/_validate/query?q=prdtYear:2017
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMjcxOTI5NiwtMTc1MDQ4MDc4OV19
+eyJoaXN0b3J5IjpbMTk2NzI3OTE1MywtMTc1MDQ4MDc4OV19
 -->
