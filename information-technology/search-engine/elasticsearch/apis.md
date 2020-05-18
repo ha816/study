@@ -124,11 +124,9 @@ Search Shards API를 이용하면 검색이 수행되는 노드 및 샤드에 �
 POST movie_search/_search_shards
 ```
 
-## Multi Index search
+### Multi Index/Type search
 
-기본적으로 모든 검색 요청은 Multi Index 및 Multi Type검색이 가능하다. 이러한 특성 덕에 다수의 인덱스를 검색해야 할때도 한번의 요청으로 검색 결과를 얻을 수 있다. 검색 요청시 "," 컴마를 이용해 다수의 인덱스 명을 입력할 수 있다. 이때 지정된 모든 인덱스가 검색 대상이 된다. 
-
-아래 쿼리는 move_search, movie_auto 인덱스를 모두 검색한다. 
+기본적으로 모든 검색 요청은 Multi Index 및 Multi Type검색이 가능하다. 이러한 특성 덕에 다수의 인덱스를 검색해야 할때도 한번의 요청으로 검색 결과를 얻을 수 있다. 검색 요청시 "," 컴마를 이용해 다수의 인덱스 명을 입력할 수 있다. 이때 지정된 모든 인덱스가 검색 대상이 된다. 아래 쿼리는 move_search, movie_auto 인덱스를 모두 검색한다. 
 ```
 POST movie_search, movie_auto/_search 
 ```
@@ -173,6 +171,6 @@ POST movie_search/_validate/query?q=prdtYear:2017
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQwOTI0MjM0LDg3OTg1MjU2Myw4NDQ2Mz
-QwNTZdfQ==
+eyJoaXN0b3J5IjpbLTE4MTI4MzQyNTAsNDQwOTI0MjM0LDg3OT
+g1MjU2Myw4NDQ2MzQwNTZdfQ==
 -->
