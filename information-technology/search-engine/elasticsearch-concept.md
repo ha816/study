@@ -1,6 +1,6 @@
 # Overview
 
-엘라스틱서치가 기본적으로 분산 시스템을 지향하다보니 생소한 용어가 많다. 용어가 무엇인지 잘 파악하면 전체 아키텍처를 이해하는데 많은 도움이 될것이다. 엘라스틱서치를 구성하는 주요 개념에는 어떤 것이 있는지 알아보자.
+엘라스틱서치의 데이터에 대한 개념과 관계형 DB에서 개념을 비교한 차트가 기억날 것이다. 
 
 | 엘라스틱서치| 관계형 데이터베이스|
 |--|--|
@@ -12,6 +12,7 @@
 |매핑(Mapping)| 스키마(Schema)|
 |Query DSL(Domain Specific Language)| SQL|
 
+ 이번 장에서는 엘라스틱서치를 구성하는 주요 개념이 무엇ㅇ
 
 # Cluster(클러스터)
 
@@ -137,5 +138,6 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwOTg1ODc5OCwtMTIwNTkzOTUzNV19
+eyJoaXN0b3J5IjpbLTE3MzEzOTIzNjgsLTEyMDU5Mzk1MzVdfQ
+==
 -->
