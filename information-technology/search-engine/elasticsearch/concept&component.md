@@ -28,6 +28,10 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 인덱스에 포함된 문서들은 다수의 노드에 나누어 저장된다. (노드란 엘라스틱 서치가 수행 중인 물리적인 서버를 말한다.) 운영에는 여러 인덱스가 존재하기 때문에 한 노드에서는 이 여러 인덱스의 일부 문서를 관리하게 된다.
 
+>index vs indices 차이
+>index: 색인 데이터
+>indices: 매핑 정보를 저장하는 논리적인 데이터 공간
+
 ## Shard(샤드)
 
 검색 시스템에는 엄청나게 많은 문서가 저장될 수 있다. 하나의 하드웨어에서 제공하는 리소스의 물리적인 한계를 넘기 위해 도입한 개념이 바로 샤드이다. 샤드를 이용하면 문서를 분산 저장할때 손쉽게 수평확장할 수 있다.
@@ -90,5 +94,6 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjk2ODA0NTFdfQ==
+eyJoaXN0b3J5IjpbLTExNzU5MDc2ODYsLTIwNjk2ODA0NTFdfQ
+==
 -->
