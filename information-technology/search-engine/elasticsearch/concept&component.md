@@ -14,7 +14,7 @@
 
  이번 장에서는 엘라스틱서치를 구성하는 주요 개념이 무엇인지 자세히 알아보도록 하자. 더불어 엘라스틱서치를 구성하고 있는 요소(component)에는 무엇이 있는지도 알아보자. 
 
-# Concept
+# Major Concept
 
 ## Index(색인)
 
@@ -109,5 +109,5 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1OTkzMDI3MCwtMjA2OTY4MDQ1MV19
+eyJoaXN0b3J5IjpbODA1OTAwMzExLC0yMDY5NjgwNDUxXX0=
 -->
