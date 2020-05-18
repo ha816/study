@@ -294,7 +294,12 @@ Translog는 루씬에서는 존재하지 않는 엘라스틱서치에서만 존�
 >```
 >POST /moive/_forcemerge?max_num_segments=1
 
+
+# 마치며 
+
+lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 사용하는 analyzer에 대해 알아보자. 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNjM5MTg2MV19
+eyJoaXN0b3J5IjpbNDI1MTM3MzE5XX0=
 -->
