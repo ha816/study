@@ -2,6 +2,17 @@
 
 엘라스틱서치가 기본적으로 분산 시스템을 지향하다보니 생소한 용어가 많다. 용어가 무엇인지 잘 파악하면 전체 아키텍처를 이해하는데 많은 도움이 될것이다. 엘라스틱서치를 구성하는 주요 개념에는 어떤 것이 있는지 알아보자.
 
+| 엘라스틱서치| 관계형 데이터베이스|
+|--|--|
+|인덱스(Index)  |  데이터베이스(Database)|
+|샤드(Shard)  |  파티션(Partition)|
+|타입(Type)  |  테이블(Table)|
+|문서(Document)|  행(Row)|
+|필드(Field)| 열(Col)|
+|매핑(Mapping)| 스키마(Schema)|
+|Query DSL(Domain Specific Language)| SQL|
+
+
 # Cluster(클러스터)
 
  클러스터는 여러 노드(서버)의 집합으로 구성되며, 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 클러스터를 구분한다. 이름을 정하는 것은 매우 중요한데, 어떤 노드가 어느 클러스터에 포함되기 되는지를 이름으로 판별하기 때문이다. 
@@ -126,5 +137,5 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDU5Mzk1MzVdfQ==
+eyJoaXN0b3J5IjpbLTgwOTg1ODc5OCwtMTIwNTkzOTUzNV19
 -->
