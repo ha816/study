@@ -11,7 +11,7 @@
 
 ## 인덱스(Index)
 
-인덱스는 유사한 특성을 가지고 있는 문서들을 모은 컬렉션이다. 클러스터 내부에 생성되는 모든 인덱스는 클러스터 내에서 유일한 인덱스명을 가져야 한다. 이 인덱스 이름을 통해서 데이터 생성, 수정, 삭제, 검색이 이루어지기 때문에 매우 중요하다. 참고로 인덱스 명은 반드시 소문자로 만들어야 한다. 엘라스틱 서치에서 강제하는 사항이므로 반드시 지켜야 한다.
+인덱스는 유사한 특성을 가지고 있는 문서들을 모은 컬렉션이다. 
 
 ## 문서(Document)
 
@@ -280,5 +280,6 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MzA5NTM0NSw0MjUxMzczMTldfQ==
+eyJoaXN0b3J5IjpbNDcwNDQyNzcsMTg1MzA5NTM0NSw0MjUxMz
+czMTldfQ==
 -->
