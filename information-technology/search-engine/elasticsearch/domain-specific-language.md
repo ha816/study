@@ -24,9 +24,12 @@ _source
 
 query
 : 검색 조건문이 들어가는 공간이다.
+
 aggs
 :  통계 및 집계 데이터를 사용하는 공간이다.
-sort는 문서결과를 어떤 순서로 출력할지에 대한 공간이다.
+
+sort
+: 문서결과를 어떤 순서로 출력할지에 대한 공간이다.
 
 ```
 {
@@ -46,9 +49,15 @@ sort는 문서결과를 어떤 순서로 출력할지에 대한 공간이다.
 ```
 
 위의 JSON은 기본 응답 구조이다. 
-took은 쿼리 수행 시간을 나타낸다.
-timed_out은 쿼리 시간이 초과할 경우 나타난다.
-_shards.total은 쿼리를 요청한 저체 샤드의 개수를 나타낸다.
+
+took
+: 쿼리 수행 시간을 나타낸다.
+
+timed_out
+: 쿼리 시간이 초과할 경우 나타난다.
+
+_shards.total
+ 쿼리를 요청한 저체 샤드의 개수를 나타낸다.
 successful은 성공적으로 응답한 샤드의 갯수를 나타낸다.
 failed는 응답에 실패한 샤드의 갯수를 나타낸다.
 
@@ -411,5 +420,5 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NTcxNjAwNl19
+eyJoaXN0b3J5IjpbNDczNjE1Mzc2XX0=
 -->
