@@ -48,7 +48,7 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 위 차트는 엘라스틱 서치와 관계형 데이터베이스의 주요 개념을 배교해서 보여준다. 엘라스틱 서치에서 타입은 테이블과 같은 역할을 한다. 
 하나의 행을 문서라고 부르며, 해당 문서는 데이터베이스의 테이블에서 한 행을 말한다. 
 
-## 검색 시스템으로서과 엘라스틱서치
+## 검색 시스템 엘라스틱서치
 
 대량의 데이터를 빠르게 검색하기 위해 고안된 NoSQL(No Structured Query Language)을 검색 시스템으로 많이 사용한다.
 
@@ -153,6 +153,6 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNDAwODcxOCwtMTc2MDA1NzM1OCwyMD
+eyJoaXN0b3J5IjpbLTk5Nzc3NDA5NCwtMTc2MDA1NzM1OCwyMD
 c3MzM2MDI1LDQ2ODY3MzMyMiwyMDQ5Njk2NjMyXX0=
 -->
