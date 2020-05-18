@@ -2,7 +2,9 @@
 
 이번 장에서는 DSL(domainSpecificLanguage) 쿼리에 대해서 알아보자. DSL 쿼리는 복잡한 여러 조건을 만족하는 문서를 찾기 위해 사용되는 JSON 형태의 쿼리다. DSL로 쿼리를 작성하려면 미리 정의된 문법에 따라 JSON 구조를 작성해야 한다. 
 
-## 요청, 응답 
+## 요청-응답 DSL 
+
+먼저 기본적인 요청 DSL을 보도록 하자. 
 ```
 {	
 	"size":
@@ -33,6 +35,8 @@ aggs
 sort
 : 문서결과를 어떤 순서로 출력할지에 대한 공간이다.
 
+아래는 요청에 대한 기본 응답 DSL 형태이다.
+
 ```
 {
 	"took":
@@ -50,7 +54,7 @@ sort
 }
 ```
 
-위의 JSON은 기본 응답 구조이다. 
+
 
 took
 : 쿼리 수행 시간을 나타낸다.
@@ -430,5 +434,5 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ4ODA0NTQxLDEzMjI5NDg0MTZdfQ==
+eyJoaXN0b3J5IjpbMTAyNjM5NTUwMiwxMzIyOTQ4NDE2XX0=
 -->
