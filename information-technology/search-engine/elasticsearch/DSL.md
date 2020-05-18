@@ -1,4 +1,17 @@
 
+|파라미터|기본값| 설명|
+|--|--|--|
+|q |  | 검색을 수행할 쿼리 문자열 조건을 지정한다.|
+|df |  |쿼리에 검색을 수행할 필드가 지정되지 않았을 경우, 기본 값으로 검색할 필드를 지정한다|
+|analyzer| 검색 새당 필드에 설정된 형태소 분석기|문자열을 형태소 분석할때 사용할 분석기를 지정한다.|
+|analyzer_wildcard| false|와일드카드 검색 활성화여부를 지정한다.|
+|default_operator|OR|두 개 이상의 검색 조건이 쿼리 문자열에 포함된 경우 검색 조건 연산자를 설정한다.|
+|_source| true| 검색 결과에 문서 본문 포함 여부를 지정한다|
+|sort|  |검색 결과의 정렬 기준필드를 지정한다|
+|from|  |검색을 시작할 문서의 위치를 지정한다|
+|size|  |반환할 검색 결과 갯수를 설정한다.|
+
+q 옵션에는 기본적으로 '[필드명]:검색어' 형태로 입력할 수 있으며, 예제와 같이 여러개의 필드를 검색할때는 공백을 입력한 후 추가적인 필드명과 검색어를 입력한다. 
 
 ### Query DSL
 
@@ -393,5 +406,5 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMTIxOTgwMF19
+eyJoaXN0b3J5IjpbLTE2MDYxMzQxMjldfQ==
 -->
