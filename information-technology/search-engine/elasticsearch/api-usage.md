@@ -1,10 +1,12 @@
-# 주요 API
+# Overview
 
  엘라스틱 서치는 RESTful 방식의 API를 제공하며, JSON 기반으로 통신한다. 기본적으로 HTTP 통신을 위해 9200번 포트를 사용한다. 
 
 문서를 색인하기 위해서는 기본적으로 인덱스가 존재 해야 한다. 인덱스를 통해 입력되는 문서의 필드를 정의하고 각 필드에 알맞은 데이터 타입을 지정할 수 있다. 
 
 사실 엘라스틱 서치는 사용 편의성을 위해서 스키마리스(Schemaless) 기능을 제공한다. 스키마리스란 문서를 색인하기 위해서는 기본적으로 필요한 인덱스 생성 과정 없이 문서를 추가해도 문서가 색인 되도록 지원하는 일종의 편의 기능이다. 하지만 **스키마리스는 가급적 사용하지 않도록 하자.** 왜냐하면 스키마리스 사용은 성능과 밀접한 연관이 있기 때문에 특수한 상황에서만 사용해야 한다. 
+
+# Cluster 
 
 ## 인덱스 관리 API
 
@@ -580,5 +582,5 @@ POST movie_search/_validate/query?q=prdtYear:2017
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NDEzNTY4MywtMTc1MDQ4MDc4OV19
+eyJoaXN0b3J5IjpbLTYzNjMxNTI2MSwtMTc1MDQ4MDc4OV19
 -->
