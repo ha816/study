@@ -98,7 +98,7 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 검색 시스템은 엄청난 양의 문서를 다루어야 하고, 개념상 이 문서의 개수는 무한대로 늘어날 수 있다. 이런 상황에서 하나의 하드웨어에서 제공하는 리소스의 물리적인 한계를 넘기 위해 도입한 개념이 바로 샤드이다. 샤드를 이용하면 문서를 분산 저장할때 손쉽게 수평확장이 가능해진다.
 
->Shard의 중요성
+>샤드의 고가용성(High-Availability)
 >지속적으로 증가하는 컨텐츠가 수평적으로 분할되어 하드웨어의 한계를 극복할 수 있다.
 >여러 노드에서 샤드를 통해 분산 처리되므로 성능이나 처리량을 향상 시킬 수 있다.
 
@@ -123,5 +123,5 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NzU2MjgwNiwtMjA2OTY4MDQ1MV19
+eyJoaXN0b3J5IjpbOTA5OTc1Mjg1LC0yMDY5NjgwNDUxXX0=
 -->
