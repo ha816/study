@@ -12,8 +12,11 @@
 	"sort":{}
 }
 ```
-size: 리턴 받는 결과의 갯수를 지정한다. 기본값은 10이다
-from은 몇 번째 문서부터 가져올지 지정한다. 기본값은 0이다.
+size
+: 리턴 받는 결과의 갯수를 지정한다. 기본값은 10이다
+
+from
+: 몇 번째 문서부터 가져올지 지정한다. 기본값은 0이다.
 timeoout은 검색을 요청해서 받는데 까지 걸리는 제한 시간을 나타낸다. timeout을 너무 짧게 잡으면 timeout에 걸리지 않은 문서만 결과로 나타나기 때문에 의도치 않은 결과가 나타날 수 있다. 기본값은 무한대이다. 
 
 _source는 검색시 필요한 필드만 출력하고 싶을 때 사용한다.
@@ -404,5 +407,5 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MTE5NzM3Ml19
+eyJoaXN0b3J5IjpbLTE0MDE5Mzc1MDBdfQ==
 -->
