@@ -63,6 +63,17 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 ## 클러스터(Cluster)
 
+클러스터는 노드(물리적 서버)들의 집합이다. 같은 클러스터 내부의 데이터민 서로 공유가 가능하기 때문에 연관된 노드들끼리 하나의 클러스터로 구성하는 것이 매우 중요하다. 
+
+같은 클러스토로 묶일 노드들은 같은 반드시 같은 클러스터 이름을 가져야 한다. (엘라스틱서치는 이름으로 같은 클러스터인지 아닌지 판별한다)
+
+같은 클러스터에 속한 노드들은 평소 데이터 색인이나 검색 작업을 함께 수행하게 되고 장애가 발생했을때도 데이터 복구를 위해 서로 협력해서 복구한다.
+
+>Cross Cluster Search
+>실무에서 업무를 하다보면 데이터 성격에 따라 다수의 클러스터를 운영하게 된다. 데이터가 커지고 복잡해지면 필연적으로 다수의 클러스터를 함께 검색해야하는 일도 빈번히 발생한다.
+>엘라스틱서치에서는 이처럼 다양한 필요에의해서 다수의 클러스터를 한번에 검색할 수 있는 기능을 제공하는데 그것이 Cross Cluster search다. 
+
+
  클러스터는 여러 노드(서버)의 집합으로 구성되며, 아래 그림에서는 하나의 클러스터만 가정했지만, 여러 개의 클러스터를 구성할 수도 있으며, 이럴때는 클러스터의 이름으로 클러스터를 구분한다. 이 이름은 중요한데, 어떤 노드가 어느 클러스터에 포함되기 되는지를 이름으로 판별하기 때문이다. 
 
 ![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/99AB08425C9F17D928)
@@ -94,6 +105,5 @@ RDMBS에서는 한 database는 다수의 릴레이션 테이블로 이루어져 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzU5MDc2ODYsLTIwNjk2ODA0NTFdfQ
-==
+eyJoaXN0b3J5IjpbMjA0OTE2Njc5NSwtMjA2OTY4MDQ1MV19
 -->
