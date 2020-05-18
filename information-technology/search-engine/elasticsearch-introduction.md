@@ -27,7 +27,7 @@
 검색기(searhcer)
 : 사용자의 질의를 입력받아 색인기에서 저장한 역색인 구조에서 일치하는 문서를 찾아 반환한다. 질의와 문서가 일치하는 지를 유사도 기반의 검색 순위 알고리즘으로 판단한다. 검색기 또한 색인기와 마찬가지로 형태소 분석기를 이용해 사용자 질의에서 유의미한 용어를 추출해 검색한다. 따라서 사용하는 형태소 분석기에 따라 검색 품질이 달라진다. 
 
-## 관계형 데이터베이스와 차이점
+## 관계형 데이터베이스와 차이
 
 검색 엔진을 설명할때 항상 비교되어 설명되는 것이 관계형 데이터베이스(RDBMS)이다. 두 가지 모두 질의와 일치하는 데이터를 찾아 사용자에게 제공한다는 점에서 유사점이 많다. 하지만 관계형 데이터 베이스만으로는의 검색 기능에으로는 한계가 있다.
 
@@ -153,6 +153,6 @@ RDBMS에서는 모든 데이터는 중복을 제거하고 정형의 데이터로
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjAwNTczNTgsMjA3NzMzNjAyNSw0Nj
-g2NzMzMjIsMjA0OTY5NjYzMl19
+eyJoaXN0b3J5IjpbLTUxNDAwODcxOCwtMTc2MDA1NzM1OCwyMD
+c3MzM2MDI1LDQ2ODY3MzMyMiwyMDQ5Njk2NjMyXX0=
 -->
