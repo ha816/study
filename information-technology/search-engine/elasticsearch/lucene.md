@@ -80,19 +80,17 @@
 > 4. 복제본 세그먼트의 병합이 완료되면 원본 세그먼트와 교체하고 원본 세그먼트 삭제
 > 5. IndexSearcher는 새로운 세그먼트를 읽어 검색 결과 제공
 
-## 세그먼트 수정, 삭제
+## 세그먼트 삭제 및 수정
 
-수정 연산의 경우, 세그먼트의 불변성 때문에 데이터를 삭제하고 다시 추가하는 방식으로 동작한다. 기존 데이터는 삭제처리되어 검색 대상에서 제외되고 변경된 데이터는 새로운 세그먼트로 추가되어 검색대상에 포함된다.
+삭제 연산의 경우, 요청 즉시데이터를 삭제하는 것이 아니다. 모든 문서에는 삭제 여부를 표시하는 비트 배열을 내부적으로 가진다. 삭제 요청이 들어오면 삭제될 대상 데이터의 비트 배열을 찾아 삭제 여부만 표시한다. 비트에 표시만 했기 때문에 여전히 그 세그먼트는 남아 았다. 검색에는 비트배열에 설정된 삭제 여부를 항상 먼저 판단하기 때문에 불변성을 훼손하지 않고도 빠르게 검색대상에서 제외할 수 있다. 
 
-삭제 연산의 경우, 즉시 데이터를 삭제하는 것이 아니다. 모든 문서에는 삭제 여부를 표시하는 비트 배열을 내부적으로 가진다. 삭제 요청이 들어오면 삭제될 대상 데이터의 비트 배열을 찾아 삭제 여부만 표시한다. 비트에 표시만 했기 때문에 여전히 그 세그먼트는 남아 았다. 검색에는 비트배열에 설정된 삭제 여부를 항상 먼저 판단하기 때문에 불변성을 훼손하지 않고도 빠르게 검색대상에서 제외할 수 있다. 
-
-루씬에 세그먼트 수정 작업이 요청되면 IndexWriter는 다음과 같이 동작한다. 
-
-세그먼트에서 일부 데이터가 삭제될 경우
+루씬 세그먼트 삭제 작업은 IndexWriter에 의해서 다음과 같이 동작한다. 
 1. 루씬은 삭제될 데이터가 포함된 세그먼트의 삭제 여부 비트 배열을 확인한다.
 2. 삭제 여부 비트 배열의 flag를 삭제로 표시한다.
 3. 세그먼트에 직접적인 변경사항은 없으므로 세그먼트의 불변성을 해치지 않으며 캐시도 그대로 유지된다. 
 4. IndexSearcher는 검색 작업시 삭제 여부 비트 배열을 항상 먼저 확인하고 체크된 데이터를 검색결과에서 제외한다.
+
+수정 연산의 경우, 세그먼트의 불변성 때문에 데이터를 삭제하고 다시 추가하는 방식으로 동작한다. 기존 데이터는 삭제처리되어 검색 대상에서 제외되고 변경된 데이터는 새로운 세그먼트로 추가되어 검색대상에 포함된다.
 
 세그먼트에서 일부 데이터가 수정될 경우
 
@@ -211,11 +209,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDYzNzU4MDksMTE5MTQ0ODU1MSwxMT
-gwODIwNTUyLDQ3NzQ2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAw
-Nyw5ODAxNjEwNjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nz
-c0MjQwLC0yMTI2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0
-MTYsNzE3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNj
-A1MTM2Nzk1LDQzNjgzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1
-MV19
+eyJoaXN0b3J5IjpbLTIwMjcyMDk0ODQsLTE3NDYzNzU4MDksMT
+E5MTQ0ODU1MSwxMTgwODIwNTUyLDQ3NzQ2NTkxLC00OTU0MjY3
+MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjksMTU2NDY3MzY5MiwtNT
+gwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NTMyNTMyLC02MjI3ODUz
+MDcsLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4LDIwMDk5NTg4MzQsMT
+Q0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNjgzMDkyMywtMTM5NzM5
+Njk0MF19
 -->
