@@ -82,7 +82,7 @@
 
 ## 세그먼트 삭제 및 수정
 
-삭제 연산의 경우, 요청 즉시데이터를 삭제하는 것이 아니다. 모든 문서에는 삭제 여부를 표시하는 비트 배열을 내부적으로 가진다. 삭제 요청이 들어오면 삭제될 대상 데이터의 비트 배열을 찾아 삭제 여부만 표시한다. 비트에 표시만 했기 때문에 여전히 그 세그먼트는 남아 았다. 검색에는 비트배열에 설정된 삭제 여부를 항상 먼저 판단하기 때문에 불변성을 훼손하지 않고도 빠르게 검색대상에서 제외할 수 있다. 
+세그먼트 삭제 연산의 경우, **요청즉시 세그먼트를 삭제하는 것이 아니다.** 모든 데이터에는 삭제 여부를 표시하는 비트 배열을 내부적으로 가진다. 삭제 요청이 들어오면 삭제될 대상 데이터의 비트 배열을 찾아 삭제 여부만 표시한다. 비트에 표시만 했기 때문에 여전히 해당 데이터는 남아있다. 검색할때 비트배열에 설정된 삭제 여부를 항상 먼저 판단하기 때문에 불변성을 훼손하지 않고도 빠르게 검색대상에서 제외할 수 있다. 
 
 루씬 세그먼트 삭제 작업은 IndexWriter에 의해서 다음과 같이 동작한다. 
 1. 루씬은 삭제될 데이터가 포함된 세그먼트의 삭제 여부 비트 배열을 확인한다.
@@ -209,11 +209,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjcyMDk0ODQsLTE3NDYzNzU4MDksMT
-E5MTQ0ODU1MSwxMTgwODIwNTUyLDQ3NzQ2NTkxLC00OTU0MjY3
-MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjksMTU2NDY3MzY5MiwtNT
-gwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NTMyNTMyLC02MjI3ODUz
-MDcsLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4LDIwMDk5NTg4MzQsMT
-Q0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNjgzMDkyMywtMTM5NzM5
-Njk0MF19
+eyJoaXN0b3J5IjpbMTI4NjkwODk0NSwtMjAyNzIwOTQ4NCwtMT
+c0NjM3NTgwOSwxMTkxNDQ4NTUxLDExODA4MjA1NTIsNDc3NDY1
+OTEsLTQ5NTQyNjczNywxMTgzMTMxMDA3LDk4MDE2MTA2OSwxNT
+Y0NjczNjkyLC01ODA5MzEyOCwzNTg3NzQyNDAsLTIxMjY1MzI1
+MzIsLTYyMjc4NTMwNywtMTg4NzgyMTQxNiw3MTcwNDUzODgsMj
+AwOTk1ODgzNCwxNDQ4MzYzNTM3LDE2MDUxMzY3OTUsNDM2ODMw
+OTIzXX0=
 -->
