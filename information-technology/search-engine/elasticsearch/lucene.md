@@ -22,15 +22,20 @@
  
 루씬 인덱스의 경우 데이터를 저장할때 내부에 가지고 있는 세그먼트로만 처리가 가능했다. 엘라스틱서치 샤드는 이러한 한계를 넘어 데이터를 무한대로 확장할 수 있게 해준다. 
 
-### 색인 작업시 세그먼트의 기본 동작
-
 하나의 루씬 인덱스는 다수의 세그먼트를 가진다. 읽기 성능이 중요한 검색 엔진에선 하나의 세그먼트로 검색 요청을 처리하는 것 보다 다수의 세그먼트를 생성해 나누어 처리하는 것이 훨씬 효율적이다. 루씬은 검색 요청을 받으면 다수의 작은 세그먼트 조각들이 각 검색 결과를 만들어내고 이를 통합해서 결과로 응답한다. 이러한 검색 방식을 **세그먼트 단위 검색(Per-Segment Search)** 라고 한다. (초록색 DB모형이 세그먼트)
 
 ![enter image description here](https://www.programmersought.com/images/409/1c42be389219e95a5327a096c31c59a1.png)
 
+
+
+### 세그먼트의 기본 동작
+
+
+
+
 최초 색인 작업 요청이 루씬에 들어오면 IndexWriter로 색인 작업이 이루어지고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새그러 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때 마다 이런식으로 세그먼트의 개수는 늘어난다. 
 
-검색 작업 요청시 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락 문제는 없다.
+검색 작업 요청시 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락은 발생하지 않는다.
 
 루씬에는 세그먼트를 관리하기 위한 용도로 **커밋 포인트(Commit Point)**라는 자료구조를 제공한다. 커밋 포인트는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용한다. 자세히는 루씬의 IndexSearcher가 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
 
@@ -220,9 +225,9 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzE0NDQzOTYsLTU4MDkzMTI4LDM1OD
-c3NDI0MCwtMjEyNjUzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIx
-NDE2LDcxNzA0NTM4OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMT
-YwNTEzNjc5NSw0MzY4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1
-NTEsMTg1MzA5NTM0NSw0MjUxMzczMTldfQ==
+eyJoaXN0b3J5IjpbMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nz
+c0MjQwLC0yMTI2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0
+MTYsNzE3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNj
+A1MTM2Nzk1LDQzNjgzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1
+MSwxODUzMDk1MzQ1LDQyNTEzNzMxOV19
 -->
