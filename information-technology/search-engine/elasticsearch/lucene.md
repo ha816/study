@@ -12,6 +12,7 @@
 
 ![enter image description here](https://cdn-images-1.medium.com/max/1600/1*3xcgM8oZUTSV5ZVEjCRnNA.png)
 
+위 그림으로 개념을 정리해보자. 엘라스틱서치의 인덱스는 다수의 물리적 노드에 나누어진 샤드로 구성된다. 그리고 각 샤드는 하나의 루씬 인덱스에 대응한다. 
 
 사실 **하나의 엘라스틱서치 샤드는 하나의 루씬 인덱스**에 대응한다.
 
@@ -242,7 +243,8 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0OD
-M2MzUzNywxNjA1MTM2Nzk1LDQzNjgzMDkyMywtMTM5NzM5Njk0
-MCwxMTQxODU1MSwxODUzMDk1MzQ1LDQyNTEzNzMxOV19
+eyJoaXN0b3J5IjpbLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4LDIwMD
+k5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNjgzMDky
+MywtMTM5NzM5Njk0MCwxMTQxODU1MSwxODUzMDk1MzQ1LDQyNT
+EzNzMxOV19
 -->
