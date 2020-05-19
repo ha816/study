@@ -54,7 +54,8 @@
 
 **정리하자면, 세그먼트의 불변성은 단점보다는 확실한 장점이 많다. 읽기 연산 비중이 큰 루씬에서 세그먼트가 불변성을 가짐으로써 읽기 연산의 성능을 대폭 끌어올릴 수 있었다.** 
 
-## 세그먼트 기본동작
+## 색이세그먼트
+
 
 **색인 작업 요청**이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 
 
@@ -83,6 +84,8 @@
 > 5. IndexSearcher는 새로운 세그먼트를 읽어 검색 결과 제공
 
 ## 세그먼트 수정
+
+
 
 수정 연산의 경우, 세그먼트의 불변성 때문에 데이터를 삭제하고 다시 추가하는 방식으로 동작한다. 기존 데이터는 삭제처리되어 검색 대상에서 제외되고 변경된 데이터는 새로운 세그먼트로 추가되어 검색대상에 포함된다.
 
@@ -215,7 +218,7 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NjM0NTUwNSwxMTgwODIwNTUyLDQ3Nz
+eyJoaXN0b3J5IjpbMTU4NzA1Nzg3NiwxMTgwODIwNTUyLDQ3Nz
 Q2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjks
 MTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NT
 MyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4
