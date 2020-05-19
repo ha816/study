@@ -56,7 +56,7 @@
 > 4. 복제본 세그먼트의 병합이 완료되면 원본 세그먼트와 교체하고 원본 세그먼트 삭제
 > 5. IndexSearcher는 새로운 세그먼트를 읽어 검색 결과 제공
 
-## 세그먼트 불변성
+## 세그먼트 불변성(Segment Invariant)
 
 루씬은 역색인 구조로 세그먼트를 만든다 기본적으로 한번 디스크에 저장된 세그먼트는 수정이 불가능하게 관리된다. 예외적으로 주기적인 병합 작업을 제외하고는 절대 수정을 허용하지 않는다. 이렇기 때문에 색인 작업이 수행될때마다 새로운 세그먼트가 생성될수 밖에 없는 구조이다. 
 
@@ -217,7 +217,7 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODg4NjA0MDgsMTE4MzEzMTAwNyw5OD
+eyJoaXN0b3J5IjpbLTE5NzEwMjgzNzAsMTE4MzEzMTAwNyw5OD
 AxNjEwNjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQw
 LC0yMTI2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNz
 E3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2
