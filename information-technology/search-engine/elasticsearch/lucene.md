@@ -24,7 +24,7 @@
 
 ### 색인 작업시 세그먼트의 기본 동작
 
-하나의 루씬 인덱스는 다수의 세그먼트로 구성되어 있다. 읽기 성능이 중요한 검색 엔진에서는 하나의 세그먼트로 검색 요청을 처리하는 것 보다 다수의 세그먼트를 생성해 나누어 처리하는 것이 훨씬 효율적이다. 
+하나의 루씬 인덱스는 다수의 세그먼트를 가진다. 읽기 성능이 중요한 검색 엔진에선 하나의 세그먼트로 검색 요청을 처리하는 것 보다 다수의 세그먼트를 생성해 나누어 처리하는 것이 훨씬 효율적이다. 
 
 ![enter image description here](https://www.programmersought.com/images/409/1c42be389219e95a5327a096c31c59a1.png)
 
@@ -221,8 +221,8 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NzczMTU1LC02MjI3ODUzMDcsLTE4OD
-c4MjE0MTYsNzE3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUz
-NywxNjA1MTM2Nzk1LDQzNjgzMDkyMywtMTM5NzM5Njk0MCwxMT
-QxODU1MSwxODUzMDk1MzQ1LDQyNTEzNzMxOV19
+eyJoaXN0b3J5IjpbLTIxMjY1MzI1MzIsLTYyMjc4NTMwNywtMT
+g4NzgyMTQxNiw3MTcwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYz
+NTM3LDE2MDUxMzY3OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLD
+ExNDE4NTUxLDE4NTMwOTUzNDUsNDI1MTM3MzE5XX0=
 -->
