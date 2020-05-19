@@ -26,7 +26,7 @@
 
 ![enter image description here](https://www.programmersought.com/images/409/1c42be389219e95a5327a096c31c59a1.png)
 
-루씬에는 세그먼트를 관리하기 위한 용도로 **커밋 포인트(Commit Point)**를 제공한다. 커밋 포인트에는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용한다. 자세히는 루씬의 IndexSearcher가 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
+루씬에는 세그먼트를 관리하기 위한 용도로 **커밋 포인트(Commit Point)**를 제공한다. 커밋 포인트에는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용한다. 자세히는 루씬의 IndexSearcher가 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 사실상 데이터의 누락은 발생하지 않는다.
 
 ## 세그먼트 불변성(Segment Invariant)
 
@@ -79,9 +79,6 @@
 > 3. 복제 세그먼트들이 병합되는 동안 IndexSearcher는 원본 세그먼트를 읽어 검색수행
 > 4. 복제본 세그먼트의 병합이 완료되면 원본 세그먼트와 교체하고 원본 세그먼트 삭제
 > 5. IndexSearcher는 새로운 세그먼트를 읽어 검색 결과 제공
-
-참고로 검색 작업 요청이 루씬에 들어오면 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락은 발생하지 않는다.
-
 
 ## 세그먼트 수정, 삭제
 
@@ -214,11 +211,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MDU5MDIyOCwxMTkxNDQ4NTUxLDExOD
-A4MjA1NTIsNDc3NDY1OTEsLTQ5NTQyNjczNywxMTgzMTMxMDA3
-LDk4MDE2MTA2OSwxNTY0NjczNjkyLC01ODA5MzEyOCwzNTg3Nz
-QyNDAsLTIxMjY1MzI1MzIsLTYyMjc4NTMwNywtMTg4NzgyMTQx
-Niw3MTcwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYzNTM3LDE2MD
-UxMzY3OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLDExNDE4NTUx
-XX0=
+eyJoaXN0b3J5IjpbLTE3NDYzNzU4MDksMTE5MTQ0ODU1MSwxMT
+gwODIwNTUyLDQ3NzQ2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAw
+Nyw5ODAxNjEwNjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nz
+c0MjQwLC0yMTI2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0
+MTYsNzE3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNj
+A1MTM2Nzk1LDQzNjgzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1
+MV19
 -->
