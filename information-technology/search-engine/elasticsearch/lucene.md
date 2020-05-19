@@ -18,19 +18,11 @@
 
 ## Segment(세그먼트)
 
-문서들은 빠른 검색에 유리하도록 설계된 특수한 자료구조 형태로 저장된다. 세그먼트는 루씬 내부에 존재하는 자료구조로, 역색인 구조로 생성되어 읽기에 최적화되어 있다. 
+문서들은 빠른 검색에 유리하도록 설계된 특수한 자료구조인 세그먼트로 저장된다. 세그먼트는 루씬 내부에 존재하는 자료구조로, 역색인 구조로 생성되어 읽기에 최적화되어 있다. 
 
 루씬 인덱스의 경우 데이터를 저장할때 내부에 가지고 있는 세그먼트로만 처리가 가능했다. 엘라스틱서치 샤드는 이러한 한계를 넘어 데이터를 무한대로 확장할 수 있게 해준다. 
 
-서비스를 운영하다보면 시간이 지남에 따라 데이터 크기에 점점 더 커지고 그에 비례해서 성능상의 문제가 발생할 가능성 또한 커진다. 클러스터에 저장된 데이터가 많이질수록 문제가 발생했을때 이를 해결하는 것도 어려워진다. 
-
-클러스터의 성능 문제가 발생하면 샤드 수에 대해 고민을 다시 하게 되는데 말했듯이 **샤드 수는 운영중에 변경이 불가능하다.** 그러므로 맨 처음으로 인덱스를 설계할때 데이터 크기에 대해 충분한 고민을 하고 그에 따라 샤드의 수를 신중하게 결정해야 한다.
-
-# 근실시간 검색(near real time)
-
-엘라스틱서치는 처음부터 근실시간(Near Real Time) 검색을 제공하는 것을 목표로 개발되었다. 어떻게 실시간에 가까운 검색이 제공될 수 있을까? 
-
-## 색인 작업시 세그먼트의 기본 동작
+### 색인 작업시 세그먼트의 기본 동작
 
 하나의 루씬 인덱스는 다수의 세그먼트로 구성되어 있다. 읽기 성능이 중요한 검색 엔진에서는 하나의 세그먼트로 검색 요청을 처리하는 것 보다 다수의 세그먼트를 생성해 나누어 처리하는 것이 훨씬 효율적이다. 
 
@@ -229,8 +221,8 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjEwMDMwMjcsLTYyMjc4NTMwNywtMT
-g4NzgyMTQxNiw3MTcwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYz
-NTM3LDE2MDUxMzY3OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLD
-ExNDE4NTUxLDE4NTMwOTUzNDUsNDI1MTM3MzE5XX0=
+eyJoaXN0b3J5IjpbLTg2NzczMTU1LC02MjI3ODUzMDcsLTE4OD
+c4MjE0MTYsNzE3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUz
+NywxNjA1MTM2Nzk1LDQzNjgzMDkyMywtMTM5NzM5Njk0MCwxMT
+QxODU1MSwxODUzMDk1MzQ1LDQyNTEzNzMxOV19
 -->
