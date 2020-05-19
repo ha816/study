@@ -697,11 +697,11 @@ INNER JOIN은 양 테이블에 조건이 맞는 레코드가 모두 존재하는
 
 사실 OUTER JOIN과 INNER JOIN은 실제 가져와야하는 레코드가 같다면 성능의 차이가 거의 발생하지 않는다. 보통 OUTER JOIN이 드라이빙 테이블의 레코드를 추가로 노출하기 때문에 다소 느릴 수 있다.
 
-하지만 **INNER JOIN과 OUTER JOIN은 성능을 고려해서 선택할게 아니라 업무 요건에 따라 선택하는 것이 바람직하다.** 레코드의 결과에 포
+하지만 **INNER JOIN과 OUTER JOIN은 성능을 고려해서 선택할게 아니라 업무 요건에 따라 선택하는 것이 바람직하다.** 레코드의 결과에 포함되지 않을까 걱정된다면, 테이블 구조와 데이터 특성을 분석해 어떤 JOIN을 사용할지 결정하자. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MDU1Nzk4MiwtOTEwMzA1MjU4LDE0OT
+eyJoaXN0b3J5IjpbLTE4OTY2NzI0OSwtOTEwMzA1MjU4LDE0OT
 QyMTIyMTYsLTMwMzg3Mzg1NCwxNTY0NDk4NzEyLC0yMDU3NDk4
 NjU3LDExMDYzODU2MjYsLTE3NjAxNTQyMTIsLTQxMjI1MjcyLC
 02MTA3MTQ0ODUsLTE5ODgzMTczMjAsMjA5MDg2ODk2OCwxODc4
