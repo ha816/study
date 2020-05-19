@@ -12,14 +12,9 @@
 : 루씬은 다수의 클래스로 구성되어 있는 검색 라이브러리이고, 가장 핵심 클래스는 바로 IndexWriter와 IndexSearcher이다. **IndexWriter는 데이터를 색인하는 클래스**이고, **IndexSearcher는 색인된 데이터를 검색**하는 클래스다. IndexWriter와 IndexSearcher를 활용하여 색인과 검색을 동시에 수행하는 **루씬 인스턴스를 루씬 인덱스**라고 한다. 
 
 엘라스틱서치 샤드
-: 엘라스틱서치는 독립적인 루씬 인덱스를 확장한 샤드를 제공한다. 엘라스틱서치에서 제공하는 가장 작은 단위 검색엔진. 내부적으로 루씬을 확장해서 검색엔진 역할을 수행한다. 다수의 샤드가 협력해서 존재하는 모든 세그먼트를 검색할 수 있다. 
+: 엘라스틱서치는 독립적인 루씬 인덱스를 확장한 샤드를 제공한다. 샤드는 엘라스틱서치에서 제공하는 가장 작은 단위 검색엔진이다. 루씬 인덱스가 자기자신이 가지고 있는 세그먼트 내에서만 검색이 가능한 것과는 달리 샤드는 자기를 포함한 다른 샤드가 가지고 있는 세그먼트도 통합적으로 검색할 수 있다. 
 
- 루씬 인덱스가 자기자신이 가지고 있는 세그먼트 내에서만 검색이 가능한 것과는 달리 샤드는 자기를 포함한 다른 샤드가 가지고 있는 세그먼트도 통합적으로 검색할 수 있다. 
-
-
-
-**샤드는 루씬 인덱스와 같지 않다.** 샤드 엘라스틱서치에서 추가한 다양한 기능을 포함하고 있기 때문이다. 하지만 주요 기능은 루씬 인덱스에 있는 기능이다. 정리하자면, **엘라스틱서치에서 하나의 샤드는 자체적으로 데이터를 색인하고 검색할 수 있는 가장 작은 단위의 검색엔진**이다.
-
+**엘라스틱서치 샤드와 루씬 인덱스는 절대 같지 않다.** 샤드 엘라스틱서치에서 추가한 다양한 기능을 포함하고 있기 때문이다. 하지만 주요 기능은 루씬 인덱스에서 제공하는 기능이다. 
 
 ## Segment(세그먼트)
 
@@ -240,7 +235,7 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTExNjY5MCwtMTg4NzgyMTQxNiw3MT
+eyJoaXN0b3J5IjpbLTYyMjc4NTMwNywtMTg4NzgyMTQxNiw3MT
 cwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYzNTM3LDE2MDUxMzY3
 OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLDExNDE4NTUxLDE4NT
 MwOTUzNDUsNDI1MTM3MzE5XX0=
