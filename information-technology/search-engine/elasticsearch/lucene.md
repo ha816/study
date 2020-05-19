@@ -82,9 +82,7 @@
 > 4. 복제본 세그먼트의 병합이 완료되면 원본 세그먼트와 교체하고 원본 세그먼트 삭제
 > 5. IndexSearcher는 새로운 세그먼트를 읽어 검색 결과 제공
 
-## 세그먼트 수정
-
-
+## 세그먼트 수정, 삭제
 
 수정 연산의 경우, 세그먼트의 불변성 때문에 데이터를 삭제하고 다시 추가하는 방식으로 동작한다. 기존 데이터는 삭제처리되어 검색 대상에서 제외되고 변경된 데이터는 새로운 세그먼트로 추가되어 검색대상에 포함된다.
 
@@ -217,11 +215,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTM1MDY0ODgsMTE4MDgyMDU1Miw0Nz
-c0NjU5MSwtNDk1NDI2NzM3LDExODMxMzEwMDcsOTgwMTYxMDY5
-LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3NDI0MCwtMjEyNj
-UzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIxNDE2LDcxNzA0NTM4
-OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNTEzNjc5NSw0Mz
-Y4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTEsMTg1MzA5NTM0
-NV19
+eyJoaXN0b3J5IjpbMTE5MTQ0ODU1MSwxMTgwODIwNTUyLDQ3Nz
+Q2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjks
+MTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NT
+MyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4
+LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNj
+gzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1MSwxODUzMDk1MzQ1
+XX0=
 -->
