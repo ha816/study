@@ -88,7 +88,7 @@
 
 수정 연산의 경우, 세그먼트의 불변성 때문에 데이터를 삭제하고 다시 추가하는 방식으로 동작한다. 기존 데이터는 삭제처리되어 검색 대상에서 제외되고 변경된 데이터는 새로운 세그먼트로 추가되어 검색대상에 포함된다.
 
-삭제 연산의 경우, 단순히 데이터를 삭제하는 것이 아니다. 사실 모든 문서에는 삭제 여부를 표시하는 비트 배열을 내부적으로 존재한다. 삭제 요청이 들어오면 삭제될 대상 데이터의 비트 배열을 찾아 삭제 여부만 표시하고 끝낸다. 비트에 표시만 했기 때문에 여전히 세그먼트는 남아 았다. 하지만 검색시 비트배열에 설정된 삭제 여부를 항상 먼저 판단하기 때문에 불변성을 훼손하지 않고도 빠르게 검색대상에서 제외할 수 있다. 
+삭제 연산의 경우, 즉시 데이터를 삭제하는 것이 아니다. 모든 문서에는 삭제 여부를 표시하는 비트 배열을 내부적으로 가진다. 삭제 요청이 들어오면 삭제될 대상 데이터의 비트 배열을 찾아 삭제 여부만 표시한다. 비트에 표시만 했기 때문에 여전히 그 세그먼트는 남아 았다. 검색에는 비트배열에 설정된 삭제 여부를 항상 먼저 판단하기 때문에 불변성을 훼손하지 않고도 빠르게 검색대상에서 제외할 수 있다. 
 
 루씬에 데이터 수정 작업이 요청되면 IndexWriter는 다음과 같이 동작한다. 
 
@@ -217,11 +217,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzA2MjA4NDAsMTE4MDgyMDU1Miw0Nz
-c0NjU5MSwtNDk1NDI2NzM3LDExODMxMzEwMDcsOTgwMTYxMDY5
-LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3NDI0MCwtMjEyNj
-UzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIxNDE2LDcxNzA0NTM4
-OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNTEzNjc5NSw0Mz
-Y4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTEsMTg1MzA5NTM0
-NV19
+eyJoaXN0b3J5IjpbMjEwOTQ5NjAyOCwxMTgwODIwNTUyLDQ3Nz
+Q2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjks
+MTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NT
+MyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4
+LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNj
+gzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1MSwxODUzMDk1MzQ1
+XX0=
 -->
