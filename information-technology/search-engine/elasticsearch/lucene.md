@@ -28,11 +28,12 @@
 
 ![enter image description here](https://www.programmersought.com/images/409/1c42be389219e95a5327a096c31c59a1.png)
 
-루씬에는 세그먼트를 관리하기 위한 용도로 **커밋 포인트(Commit Point)**라는 자료구조를 제공한다. 커밋 포인트는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용한다. 자세히는 루씬의 IndexSearcher가 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
-
 최초 색인 작업 요청이 루씬에 들어오면 IndexWriter로 색인 작업이 이루어지고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새그러 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때 마다 이런식으로 세그먼트의 개수는 늘어난다. 
 
-검색 작업 요청시 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락은 문제가 없다. 
+검색 작업 요청시 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락 문제는 없다.
+
+루씬에는 세그먼트를 관리하기 위한 용도로 **커밋 포인트(Commit Point)**라는 자료구조를 제공한다. 커밋 포인트는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용한다. 자세히는 루씬의 IndexSearcher가 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
+
 
 세그먼트의 갯수가 너무 많아지면 읽기의 성능 저하가 생길수 있기 때문에 이를 위해 루씬은 백그라운드에서 주기적으로 세그먼트 파일을 병합(Merge)하는 작업을 수행한다. 이를 통해 모든 세그먼트를 물리적으로 하나의 파일로 병합한다. 
 
@@ -219,9 +220,9 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MDkzMTI4LDM1ODc3NDI0MCwtMjEyNj
-UzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIxNDE2LDcxNzA0NTM4
-OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNTEzNjc5NSw0Mz
-Y4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTEsMTg1MzA5NTM0
-NSw0MjUxMzczMTldfQ==
+eyJoaXN0b3J5IjpbLTE2NzE0NDQzOTYsLTU4MDkzMTI4LDM1OD
+c3NDI0MCwtMjEyNjUzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIx
+NDE2LDcxNzA0NTM4OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMT
+YwNTEzNjc5NSw0MzY4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1
+NTEsMTg1MzA5NTM0NSw0MjUxMzczMTldfQ==
 -->
