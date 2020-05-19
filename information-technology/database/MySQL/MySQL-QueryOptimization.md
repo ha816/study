@@ -4,8 +4,10 @@
 
 DML에는 SELECT, INSERT, UPDATE, DELETE 쿼리로 나뉘며, 이 밖에 REPLACE, MERGE INTO 등과 같이 DBMS 벤더별로 제공되는 비표준 SQL도 있다. ANSI 표준에는 데이터를 조회하는 SELECT를 쿼리라고 하고, 그외의 INSERT, UPDATE 그리고 DELETE와 같은 SQL을 스테이먼트(Statement)라고 구분하기도 한다.
 
+애플리케이션에서 데이터베이스와 통신할때 데이터베이스 서버로 전달되는 것은 SQL뿐이다
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODg1Nzc4Ml19
+eyJoaXN0b3J5IjpbLTIwNjI3NDAxMTAsLTE3ODg1Nzc4Ml19
 -->
