@@ -16,7 +16,7 @@
 
 **엘라스틱서치 샤드와 루씬 인덱스는 절대 같지 않다.** 샤드 엘라스틱서치에서 추가한 다양한 기능을 포함하고 있기 때문이다. 하지만 주요 기능은 루씬 인덱스에서 제공하는 기능이다. 
 
-## Segment(세그먼트)
+# Segment(세그먼트)
 
 문서들은 빠른 검색에 유리하도록 설계된 특수한 자료구조인 세그먼트로 저장된다. 세그먼트는 루씬 내부에 존재하는 자료구조로, 역색인 구조로 생성되어 읽기에 최적화되어 있다. 세그먼트는 역색인 구조를 지닌 파일 자체를 의미하기도 한다.
  
@@ -28,7 +28,7 @@
 
 루씬에는 세그먼트를 관리하기 위한 용도로 **커밋 포인트(Commit Point)**를 제공한다. 커밋 포인트에는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용한다. 자세히는 루씬의 IndexSearcher가 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
 
-### 세그먼트의 작업
+## 세그먼트의 기본동작
 
 색인 작업 요청이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 
 
@@ -80,9 +80,9 @@
 
 이러한 단점을 극복하기 위해 루씬에서는 크기가 작은 다수의 세그먼트를 생성해서 제공하는 방식을 택했다. 즉 변경이 일어날때마다 세그먼트를 다시 만드는 것이 아니라 기존 세그먼트는 그대로 두고 추가로 세그먼트를 생성하는 것이다. 
 
-정리하자면, 세그먼트의 불변성은 단점보다는 확실한 장점이 많다. 읽기 연산 비중이 큰 루씬에서는 세그먼트가 불변성을 가짐으로써 읽기 연산의 성능을 대폭 끌어올릴 수 있었다. 
+**정리하자면, 세그먼트의 불변성은 단점보다는 확실한 장점이 많다. 읽기 연산 비중이 큰 루씬에서 세그먼트가 불변성을 가짐으로써 읽기 연산의 성능을 대폭 끌어올릴 수 있었다.** 
 
-### 세그먼트 추가, 수정, 삭제
+## 세그먼트 추가, 수정, 삭제
 
 색인 작업의 상당수는 데이터가 추가되는 연산이다. 새로운 세그먼트를 가져가는 전략으로 불변성을 깨지 않으면서도 그리 나쁘지 않은 성능을 보장한다.
 
@@ -215,10 +215,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc3NDY1OTEsLTQ5NTQyNjczNywxMTgzMT
-MxMDA3LDk4MDE2MTA2OSwxNTY0NjczNjkyLC01ODA5MzEyOCwz
-NTg3NzQyNDAsLTIxMjY1MzI1MzIsLTYyMjc4NTMwNywtMTg4Nz
-gyMTQxNiw3MTcwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYzNTM3
-LDE2MDUxMzY3OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLDExND
-E4NTUxLDE4NTMwOTUzNDUsNDI1MTM3MzE5XX0=
+eyJoaXN0b3J5IjpbMTE4MDgyMDU1Miw0Nzc0NjU5MSwtNDk1ND
+I2NzM3LDExODMxMzEwMDcsOTgwMTYxMDY5LDE1NjQ2NzM2OTIs
+LTU4MDkzMTI4LDM1ODc3NDI0MCwtMjEyNjUzMjUzMiwtNjIyNz
+g1MzA3LC0xODg3ODIxNDE2LDcxNzA0NTM4OCwyMDA5OTU4ODM0
+LDE0NDgzNjM1MzcsMTYwNTEzNjc5NSw0MzY4MzA5MjMsLTEzOT
+czOTY5NDAsMTE0MTg1NTEsMTg1MzA5NTM0NSw0MjUxMzczMTld
+fQ==
 -->
