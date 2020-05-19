@@ -76,11 +76,11 @@
 
 읽기 연산이 대다수 작업인 검색 엔진의 특성상 캐시 성능을 최대한 활용하고 동시성 문제를 피할 수 있는 불변성은 최고의 성능을 보인다.
 
-물론 세그먼트 불변성도 단점은 있다. 가장 큰 문제는 일부 데이터가 변경 되더라도 전체 역색인 구조가 다시 만들어져야 한다는 것이다. 또 실시간 반영이 상대적으로 어려워 진다. 변경사항을 반영 하려면 역색인을 새로 만들어야 하는데 변경이 매우 빠르게 자주 일어난다면 실시간 반영 자체가 불가능해진다.
+물론 세그먼트 불변성도 단점은 있다. 가장 큰 문제는 일부 데이터가 변경 되더라도 전체 역색인 구조가 다시 만들어져야 한다는 것이다. 또 실시간 반영이 상대적으로 어려워 지는데 변경사항을 반영 하기위해 역색인을 새로 만들어야 하는데 변경이 매우 빠르게 자주 일어난다면 실시간 반영 자체가 불가능해진다.
 
 이러한 단점을 극복하기 위해 루씬에서는 크기가 작은 다수의 세그먼트를 생성해서 제공하는 방식을 택했다. 즉 변경이 일어날때마다 세그먼트를 다시 만드는 것이 아니라 기존 세그먼트는 그대로 두고 추가로 세그먼트를 생성하는 것이다. 
 
-세그먼트의 불변성은 확실히 단점보다는 장점이 많다. 읽기 연산 비중이 큰 루씬에서는 세그먼트가 불변성을 가짐으로써 읽기 연산의 성능을 대폭 끌어올릴 수 있었다. 
+정리하자면, 세그먼트의 불변성은 단점보다는 확실한 장점이 많다. 읽기 연산 비중이 큰 루씬에서는 세그먼트가 불변성을 가짐으로써 읽기 연산의 성능을 대폭 끌어올릴 수 있었다. 
 
 ### 세그먼트 추가, 수정, 삭제
 
@@ -215,10 +215,10 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTg4MTI0MTIsLTQ5NTQyNjczNywxMT
-gzMTMxMDA3LDk4MDE2MTA2OSwxNTY0NjczNjkyLC01ODA5MzEy
-OCwzNTg3NzQyNDAsLTIxMjY1MzI1MzIsLTYyMjc4NTMwNywtMT
-g4NzgyMTQxNiw3MTcwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYz
-NTM3LDE2MDUxMzY3OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLD
-ExNDE4NTUxLDE4NTMwOTUzNDUsNDI1MTM3MzE5XX0=
+eyJoaXN0b3J5IjpbNDc3NDY1OTEsLTQ5NTQyNjczNywxMTgzMT
+MxMDA3LDk4MDE2MTA2OSwxNTY0NjczNjkyLC01ODA5MzEyOCwz
+NTg3NzQyNDAsLTIxMjY1MzI1MzIsLTYyMjc4NTMwNywtMTg4Nz
+gyMTQxNiw3MTcwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYzNTM3
+LDE2MDUxMzY3OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLDExND
+E4NTUxLDE4NTMwOTUzNDUsNDI1MTM3MzE5XX0=
 -->
