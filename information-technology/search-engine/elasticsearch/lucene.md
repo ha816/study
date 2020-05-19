@@ -12,12 +12,7 @@
 
 ![enter image description here](https://cdn-images-1.medium.com/max/1600/1*3xcgM8oZUTSV5ZVEjCRnNA.png)
 
-위 그림으로 개념을 정리해보자. 엘라스틱서치의 인덱스는 다수의 물리적 노드에 나누어진 샤드로 구성된다. 그리고 각 샤드는 하나의 루씬 인덱스에 대응한다. 
-
-사실 **하나의 엘라스틱서치 샤드는 하나의 루씬 인덱스**에 대응한다.
-
-
-루씬 인덱스 내부에는 세그먼트라는 특수한 자료구조가 다 존재한다. 루씬 인덱스는 다수의 세그먼트를 이용해 검색을 수행하는데, 세그먼트는 내부적으로 역색인 구조이기 때문에 이를 통해 빠름 검색 결과를 얻을 수 있다. 
+위 그림으로 개념을 정리해보자. 엘라스틱서치의 인덱스는 다수의 물리적 노드에 나누어진 샤드로 구성된다. 그리고 각 샤드는 하나의 루씬 인덱스(루씬 인스턴스)를 가지고 있다. 루씬 인덱스 내부에는 다수의 세그먼트를 가진다. 루씬 인덱스는 다수의 세그먼트를 이용해 검색을 수행하는데, 세그먼트는 내부적으로 역색인 구조이기 때문에 이를 통해 빠름 검색 결과를 얻을 수 있다. 
 
 물론 샤드가 단순히 루씬 그 자체만은 아니다. 샤드 내부적으로 엘라스틱서치에서 추가한 다양한 기능을 포함하고 있기 때문이다. 하지만 그 본질이 루씬 인덱스임은 변함이 없다. 결론적으로 하나의 샤드는 자체적으로 데이터를 색인하고 검색할 수 있는 가장 작은 단위의 단일 검색엔진이라고도 할 수 있다. 
 
@@ -243,8 +238,8 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4LDIwMD
-k5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNjgzMDky
-MywtMTM5NzM5Njk0MCwxMTQxODU1MSwxODUzMDk1MzQ1LDQyNT
-EzNzMxOV19
+eyJoaXN0b3J5IjpbNjY4MDUxODUyLC0xODg3ODIxNDE2LDcxNz
+A0NTM4OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNTEzNjc5
+NSw0MzY4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTEsMTg1Mz
+A5NTM0NSw0MjUxMzczMTldfQ==
 -->
