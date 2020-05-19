@@ -6,10 +6,14 @@ DML에는 SELECT, INSERT, UPDATE, DELETE 쿼리로 나뉘며, 이 밖에 REPLACE
 
 애플리케이션에서 데이터베이스와 통신할때 데이터베이스 서버로 전달되는 것은 SQL뿐이다. SQL은 어떠한(WHAT) 데이터를 요청하기 위한 언어지 어떻게(HOW) 데이터를 읽을지를 표현하는 언어는 아니므로 일반 프로그래밍 언어보다 상당히 제한적이다. 그래서 SQL을 작성하는 방법, 규칙, 내부적 처리(옵티마이저)에 대해 어느 정도 지식이 필요하다.
 
+애플리케이션에서 코드 튜닝으로 성능을 2배 올리는 것은 굉장히 어려운 일이다. 하지만 DBMS에선 몇십배의 성능 향상은 흔한 일이다. SQL처리에서 어떻게(HOW)를 이해하고 쿼리를 작성하는 게 그만큼 중요하다는 것이다. 
 
+이번 장에선 쿼리 패턴별로 어떻게 처리되는지를 이해하고, 많이 알려져 있지 않지만 코드수를 상당히 줄일 수 있는 유용한 쿼리 패턴도 알아보자. 
+
+# 쿼리와 연관디
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI1NTY0OTU1LC0xNzg4NTc3ODJdfQ==
+eyJoaXN0b3J5IjpbMTAxMjQ5OTkxMSwtMTc4ODU3NzgyXX0=
 -->
