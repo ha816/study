@@ -54,15 +54,13 @@
 
 **정리하자면, 세그먼트의 불변성은 단점보다는 확실한 장점이 많다. 읽기 연산 비중이 큰 루씬에서 세그먼트가 불변성을 가짐으로써 읽기 연산의 성능을 대폭 끌어올릴 수 있었다.** 
 
-## 세그먼트 색인작업
+## 세그먼트 주요 작업
 
 **색인 작업 요청**이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 대다수의 세그먼트 관련 작업이 바로 세그먼트 추가 작업이다.  
 
 세그먼트의 개수가 너무 많아지면 읽기 성능 저하가 생길수 있다. 때문에 루씬은 백그라운드에서 **주기적으로 세그먼트 파일을 병합(Merge)** 하는 작업을 수행한다. 이를 통해 모든 세그먼트를 물리적으로 하나의 파일로 병합한다. 정책에 따라 일부 세그먼트가 선택되어 합쳐지고, 일정 시간이 흘러 더 이상 색인 작업이 없는 상태가 되면 하나의 큰 세그먼트만 남는다. 
 
 ![enter image description here](https://www.bloghome.com.cn/content/images/2019/05/segment-merging-bw-1.png)
-
-검색 작업 요청이 루씬에 들어오면 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락은 발생하지 않는다.
 
 요청과 현 상황에 따라 루씬의 동작방식을 정리하면 아래와 같다.
 
@@ -81,6 +79,7 @@
 > 3. 복제 세그먼트들이 병합되는 동안 IndexSearcher는 원본 세그먼트를 읽어 검색수행
 > 4. 복제본 세그먼트의 병합이 완료되면 원본 세그먼트와 교체하고 원본 세그먼트 삭제
 > 5. IndexSearcher는 새로운 세그먼트를 읽어 검색 결과 제공
+
 
 ## 세그먼트 수정, 삭제
 
@@ -105,8 +104,6 @@
 그렇다면 삭제될 데이터가 물리적으로 실제 삭제되는 시점은 언제일까? 백그라운드에서 주기적으로 일어나는 Merge 작업이 수행될때 삭제가 된다. 루씬이 삭제 데이터를 바로 삭제하지 않고 병합 작업시 삭제를 하는 이유는 세그머트가 가지는 역색인 구조와 관련이 깊다. 
 
 일반적인 역색인 구조는 색인 대상이 되는 문서를 최소단위인 텀 단우의 단어로 분리하고 역색인 구조에 따라 정렬한 뒤 저장한다. 문서 하나를 제거하려면 전체 역색인 구조를 찾아 관련된 모든 텀을 제거해야 하기 때문에 사실 세그먼트를 다시 생성하는 것과 별반 다를바가 없저진다. 그래서 즉시 삭제하는 것이 아니라 주기적으로 세그먼가 재 생성되는 작업에서 물리적인 삭제를 함께 한다. 
-
-
 
 # 루씬을 위한  Flush, Commit, Merge
 
@@ -215,11 +212,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTQ0ODU1MSwxMTgwODIwNTUyLDQ3Nz
-Q2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjks
-MTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NT
-MyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4
-LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNj
-gzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1MSwxODUzMDk1MzQ1
-XX0=
+eyJoaXN0b3J5IjpbNDc0Mzg1NDczLDExOTE0NDg1NTEsMTE4MD
+gyMDU1Miw0Nzc0NjU5MSwtNDk1NDI2NzM3LDExODMxMzEwMDcs
+OTgwMTYxMDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3ND
+I0MCwtMjEyNjUzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIxNDE2
+LDcxNzA0NTM4OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNT
+EzNjc5NSw0MzY4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTFd
+fQ==
 -->
