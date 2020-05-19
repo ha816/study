@@ -695,15 +695,17 @@ INNER JOIN은 양 테이블에 조건이 맞는 레코드가 모두 존재하는
 
 그런데 보통 OUTER JOIN을 사용하지 않아도 될것을 OUTER JOIN으로 사용하는 경우가 상당히 많다. INNER JOIN을 사용했을때 레코드 결과가 나오지 않을까봐 거정하는 경우가 있는것 같다. 반대로 OUTER JOIN으로 실행하면 쿼리 처리가 느려진다고 생각하고 억지로 INNER JOIN으로 쿼리를 작성하는 경우도 있다. 심지어 인터넷에도 OUTER JOIN과 INNER JOIN의 성능 비교를 물어보곤 한다. 
 
-사실 OUTER JOIN과 INNER JOIN은 실제 가져와야하는 레코드가 같다면 성능의 차이가 거의 발생하지 않는다. 보통 OUTER JOIN이 드라이빙 테이블의 레코드를 추가로 노출하기 때문에 성능상 
+사실 OUTER JOIN과 INNER JOIN은 실제 가져와야하는 레코드가 같다면 성능의 차이가 거의 발생하지 않는다. 보통 OUTER JOIN이 드라이빙 테이블의 레코드를 추가로 노출하기 때문에 다소 느릴 수 있다.
+
+하지만 **INNER JOIN과 OUTER JOIN은 성능을 고려해서 선택할게 아니라 업무 요건에 따라 선택하는 것이 바람직하다.** 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTgzMTA0ODksMTQ5NDIxMjIxNiwtMz
-AzODczODU0LDE1NjQ0OTg3MTIsLTIwNTc0OTg2NTcsMTEwNjM4
-NTYyNiwtMTc2MDE1NDIxMiwtNDEyMjUyNzIsLTYxMDcxNDQ4NS
-wtMTk4ODMxNzMyMCwyMDkwODY4OTY4LDE4Nzg0MDQ1MDcsLTU5
-NTM5MTc2NSwtMTQ2OTYxOTEwMCwtMTM5MTA3NTc3MCwtMTk4OT
-Y5OTk1OCwyMDc0NjgxNjYxLDk3MTA0ODg3MSwtNzk1MjI3OTM1
-LC02MDQ1NDI3MDRdfQ==
+eyJoaXN0b3J5IjpbLTkxMDMwNTI1OCwxNDk0MjEyMjE2LC0zMD
+M4NzM4NTQsMTU2NDQ5ODcxMiwtMjA1NzQ5ODY1NywxMTA2Mzg1
+NjI2LC0xNzYwMTU0MjEyLC00MTIyNTI3MiwtNjEwNzE0NDg1LC
+0xOTg4MzE3MzIwLDIwOTA4Njg5NjgsMTg3ODQwNDUwNywtNTk1
+MzkxNzY1LC0xNDY5NjE5MTAwLC0xMzkxMDc1NzcwLC0xOTg5Nj
+k5OTU4LDIwNzQ2ODE2NjEsOTcxMDQ4ODcxLC03OTUyMjc5MzUs
+LTYwNDU0MjcwNF19
 -->
