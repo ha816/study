@@ -88,7 +88,7 @@
 3. 세그먼트에 직접적인 변경사항은 없으므로 세그먼트의 불변성을 해치지 않으며 캐시도 그대로 유지된다. 
 4. IndexSearcher는 검색 작업시 삭제 여부 비트 배열을 항상 먼저 확인하고 체크된 데이터를 검색결과에서 제외한다.
 
-세그먼트 수정 연산의 경우, 세그먼트의 불변성 때문에 데이터를 삭제하고 다시 추가하는 방식으로 동작한다. 기존 데이터는 삭제처리되어 검색 대상에서 제외되고 변경된 데이터는 새로운 세그먼트에 추가되어 검색대상에 포함된다. 수정 작업을 정리하면 아래와 같다.
+세그먼트 수정 연산의 경우, **세그먼트의 불변성 때문에 데이터를 삭제하고 다시 추가하는 방식으로 동작한다.** 기존 데이터는 삭제처리되어 검색 대상에서 제외되고 변경된 데이터는 새로운 세그먼트에 추가되어 검색대상에 포함된다. 수정 작업을 정리하면 아래와 같다.
 1. 앞의 작업(세그먼트에서 일부 데이터가 삭제될 경우)으로 삭제 처리를 먼저 수행한다.
 2. 수정된 데이터를 새로운 세그먼트에 추가하여 생성한다.
 3. IndexSearcher는 모든 세그먼트를 읽어 검색결과를 제공한다.
@@ -204,11 +204,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NTExMTA2NywtMjAyNzIwOTQ4NCwtMT
-c0NjM3NTgwOSwxMTkxNDQ4NTUxLDExODA4MjA1NTIsNDc3NDY1
-OTEsLTQ5NTQyNjczNywxMTgzMTMxMDA3LDk4MDE2MTA2OSwxNT
-Y0NjczNjkyLC01ODA5MzEyOCwzNTg3NzQyNDAsLTIxMjY1MzI1
-MzIsLTYyMjc4NTMwNywtMTg4NzgyMTQxNiw3MTcwNDUzODgsMj
-AwOTk1ODgzNCwxNDQ4MzYzNTM3LDE2MDUxMzY3OTUsNDM2ODMw
-OTIzXX0=
+eyJoaXN0b3J5IjpbNjYyNDY3NzM5LDE4NzUxMTEwNjcsLTIwMj
+cyMDk0ODQsLTE3NDYzNzU4MDksMTE5MTQ0ODU1MSwxMTgwODIw
+NTUyLDQ3NzQ2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAwNyw5OD
+AxNjEwNjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQw
+LC0yMTI2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNz
+E3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2
+Nzk1XX0=
 -->
