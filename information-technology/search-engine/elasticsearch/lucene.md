@@ -30,9 +30,7 @@
 
 ### 세그먼트의 기본 동작
 
-색인 작업 요청이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 
-
-세그먼트의 갯수가 너무 많아지면 읽기의 성능 저하가 생길수 있기 때문에 이를 위해 루씬은 백그라운드에서 주기적으로 세그먼트 파일을 병합(Merge)하는 작업을 수행한다. 이를 통해 모든 세그먼트를 물리적으로 하나의 파일로 병합한다. 
+색인 작업 요청이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 세그먼트의 개수가 너무 많아지면 읽기 성능 저하가 생길수 있다. 때문에 루씬은 백그라운드에서 **주기적으로 세그먼트 파일을 병합(Merge)**하는 작업을 수행한다. 이를 통해 모든 세그먼트를 물리적으로 하나의 파일로 병합한다. 
 
 정책에 따라 몇개의 세그먼트가 순차적으로 선택되어 합쳐지고, 일정 시간이 흘러 더 색인 작업이 없는 상태가 되면 하나의 큰 세그먼트만 남는다. 
 
@@ -220,10 +218,10 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MzEzMTAwNyw5ODAxNjEwNjksMTU2ND
-Y3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NTMyNTMy
-LC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4LDIwMD
-k5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNjgzMDky
-MywtMTM5NzM5Njk0MCwxMTQxODU1MSwxODUzMDk1MzQ1LDQyNT
-EzNzMxOV19
+eyJoaXN0b3J5IjpbMTMzNzIwMDgyLDExODMxMzEwMDcsOTgwMT
+YxMDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3NDI0MCwt
+MjEyNjUzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIxNDE2LDcxNz
+A0NTM4OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNTEzNjc5
+NSw0MzY4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTEsMTg1Mz
+A5NTM0NSw0MjUxMzczMTldfQ==
 -->
