@@ -16,7 +16,7 @@
 
 샤드는 루씬 인덱스와 같지 않다. 샤드 엘라스틱서치에서 추가한 다양한 기능을 포함하고 있기 때문이다. 하지만 주요 기능은 루씬 인덱스에 있는 기능이다. 정리하자면, **엘라스틱서치에서 하나의 샤드는 자체적으로 데이터를 색인하고 검색할 수 있는 가장 작은 단위의 검색엔진**이다.
 
-엘라스틱서치는 독립적인 루씬 인덱스를 엘라스틱 서치의 샤드라는 형태로 확장해서 제공한다. 루씬 인덱스가 자기자신이 가지고 있는 세그먼트 내에서만 검색이 가능한 것과는 달리 샤드는 모든 샤드가 가지고 있는 세그먼트를 논리적으로 통합해서 검색할 수 있다. 
+엘라스틱서치는 독립적인 루씬 인덱스를 확장한 샤드를 제공한다. 루씬 인덱스가 자기자신이 가지고 있는 세그먼트 내에서만 검색이 가능한 것과는 달리 샤드는 자기 뿌샤드가 가지고 있는 세그먼트를 논리적으로 통합해서 검색할 수 있다. 
 
 분산 시스템 특성상 시스템의 고가용성을 보장하기 위해 다수의 샤드와 레플리카를 하나로 묶어서 클러스터를 구성하고 일련의 과정은 사용자에게 철저히 숨긴다.
 
@@ -238,8 +238,8 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MjU2NzI1LC0xODg3ODIxNDE2LDcxNz
-A0NTM4OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNTEzNjc5
-NSw0MzY4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTEsMTg1Mz
-A5NTM0NSw0MjUxMzczMTldfQ==
+eyJoaXN0b3J5IjpbLTE4MTAyODU2NjUsLTE4ODc4MjE0MTYsNz
+E3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2
+Nzk1LDQzNjgzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1MSwxOD
+UzMDk1MzQ1LDQyNTEzNzMxOV19
 -->
