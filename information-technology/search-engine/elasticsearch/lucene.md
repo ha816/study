@@ -26,13 +26,11 @@
 
 ![enter image description here](https://www.programmersought.com/images/409/1c42be389219e95a5327a096c31c59a1.png)
 
-루씬에는 세그먼트를 관리하기 위한 용도로 **커밋 포인트(Commit Point)**라는 자료구조를 제공한다. 커밋 포인트는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용한다. 자세히는 루씬의 IndexSearcher가 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
+루씬에는 세그먼트를 관리하기 위한 용도로 **커밋 포인트(Commit Point)**를 제공한다. 커밋 포인트에는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용한다. 자세히는 루씬의 IndexSearcher가 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
 
 ### 세그먼트의 기본 동작
 
-최초 색인 작업 요청이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 
-
-검색 작업 요청시 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락은 발생하지 않는다.
+색인 작업 요청이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 
 
 세그먼트의 갯수가 너무 많아지면 읽기의 성능 저하가 생길수 있기 때문에 이를 위해 루씬은 백그라운드에서 주기적으로 세그먼트 파일을 병합(Merge)하는 작업을 수행한다. 이를 통해 모든 세그먼트를 물리적으로 하나의 파일로 병합한다. 
 
@@ -41,6 +39,9 @@
 ![enter image description here](https://www.bloghome.com.cn/content/images/2019/05/segment-merging-bw-1.png)
 
 루씬은 역색인 구조로 세그먼트를 만든다 기본적으로 한번 디스크에 저장된 세그먼트는 수정이 불가능하게 관리된다. 예외적으로 주기적인 병합 작업을 제외하고는 절대 수정을 허용하지 않는다. 이렇기 때문에 색인 작업이 수행될때마다 새로운 세그먼트가 생성될수 밖에 없는 구조이다. 
+
+검색 작업 요청시 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락은 발생하지 않는다.
+
 
 루씬에 요청이 들어왔을때 상황에 따라 동작하는 방식
 
@@ -219,9 +220,10 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgwMTYxMDY5LDE1NjQ2NzM2OTIsLTU4MD
-kzMTI4LDM1ODc3NDI0MCwtMjEyNjUzMjUzMiwtNjIyNzg1MzA3
-LC0xODg3ODIxNDE2LDcxNzA0NTM4OCwyMDA5OTU4ODM0LDE0ND
-gzNjM1MzcsMTYwNTEzNjc5NSw0MzY4MzA5MjMsLTEzOTczOTY5
-NDAsMTE0MTg1NTEsMTg1MzA5NTM0NSw0MjUxMzczMTldfQ==
+eyJoaXN0b3J5IjpbMTE4MzEzMTAwNyw5ODAxNjEwNjksMTU2ND
+Y3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NTMyNTMy
+LC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4LDIwMD
+k5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNjgzMDky
+MywtMTM5NzM5Njk0MCwxMTQxODU1MSwxODUzMDk1MzQ1LDQyNT
+EzNzMxOV19
 -->
