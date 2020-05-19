@@ -4,13 +4,21 @@
 
 # 엘라스틱서치 샤드 VS 루씬 인덱스
 
-루씬은 다수의 클래스로 구성되어 있는 검색 라이브러리이고, 이 중에서 가장 중요한 클래스가 바로 IndexWriter와 IndexSearcher이다. 사실 이 두개의 클래스가 루씬의 핵심이라고 해도 과언이 아니다. **IndexWriter는 데이터를 색인하는 클래스**이고, **IndexSearcher는 색인된 데이터를 검색**하는 클래스다. IndexWriter와 IndexSearcher를 활용하여 색인과 검색을 동시에 수행하는 **루씬 인스턴스를 루씬 인덱스**라고 한다. 
-
 ![enter image description here](https://cdn-images-1.medium.com/max/1600/1*3xcgM8oZUTSV5ZVEjCRnNA.png)
 
 위 그림으로 개념을 정리해보자. 엘라스틱서치의 인덱스는 다수의 물리적 노드에 나누어진 샤드로 구성된다. 그리고 각 샤드는 하나의 루씬 인덱스(루씬 인스턴스)를 가지고 있다. 루씬 인덱스는 자기 자신이 가진 다수의 세그먼트를 대상으로 검색을 수행하는데, 세그먼트의 역색인 구조를 이용하여 빠른 검색이 가능하다.
 
+루씬 인덱스(루씬 인스턴스)
+: 루씬은 다수의 클래스로 구성되어 있는 검색 라이브러리이고, 이 중에서 가장 중요한 클래스가 바로 IndexWriter와 IndexSearcher이다. 사실 이 두개의 클래스가 루씬의 핵심이라고 해도 과언이 아니다. **IndexWriter는 데이터를 색인하는 클래스**이고, **IndexSearcher는 색인된 데이터를 검색**하는 클래스다. IndexWriter와 IndexSearcher를 활용하여 색인과 검색을 동시에 수행하는 **루씬 인스턴스를 루씬 인덱스**라고 한다. 
+
+
+
 **샤드는 루씬 인덱스와 같지 않다.** 샤드 엘라스틱서치에서 추가한 다양한 기능을 포함하고 있기 때문이다. 하지만 주요 기능은 루씬 인덱스에 있는 기능이다. 정리하자면, **엘라스틱서치에서 하나의 샤드는 자체적으로 데이터를 색인하고 검색할 수 있는 가장 작은 단위의 검색엔진**이다.
+
+
+엘라스틱서치 샤드
+: 엘라스틱서치에서 제공하는 가장 작은 단위 검색엔진. 내부적으로 루씬을 확장해서 검색엔진 역할을 수행한다. 다수의 샤드가 협력해서 존재하는 모든 세그먼트를 검색할 수 있다. 
+
 
 엘라스틱서치는 독립적인 루씬 인덱스를 확장한 샤드를 제공한다. 루씬 인덱스가 자기자신이 가지고 있는 세그먼트 내에서만 검색이 가능한 것과는 달리 샤드는 자기를 포함한 다른 샤드가 가지고 있는 세그먼트도 통합적으로 검색할 수 있다. 
 
@@ -233,7 +241,7 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM2MTg5MjMxLC0xODg3ODIxNDE2LDcxNz
+eyJoaXN0b3J5IjpbNTIyOTQ3ODgwLC0xODg3ODIxNDE2LDcxNz
 A0NTM4OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNTEzNjc5
 NSw0MzY4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTEsMTg1Mz
 A5NTM0NSw0MjUxMzczMTldfQ==
