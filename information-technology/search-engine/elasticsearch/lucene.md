@@ -54,9 +54,9 @@
 
 **정리하자면, 세그먼트의 불변성은 단점보다는 확실한 장점이 많다. 읽기 연산 비중이 큰 루씬에서 세그먼트가 불변성을 가짐으로써 읽기 연산의 성능을 대폭 끌어올릴 수 있었다.** 
 
-## 세그먼트의 기본동작
+## 세그먼트 기본동작
 
-색인 작업 요청이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 
+**색인 작업 요청**이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 
 
 세그먼트의 개수가 너무 많아지면 읽기 성능 저하가 생길수 있다. 때문에 루씬은 백그라운드에서 **주기적으로 세그먼트 파일을 병합(Merge)** 하는 작업을 수행한다. 이를 통해 모든 세그먼트를 물리적으로 하나의 파일로 병합한다. 정책에 따라 일부 세그먼트가 선택되어 합쳐지고, 일정 시간이 흘러 더 이상 색인 작업이 없는 상태가 되면 하나의 큰 세그먼트만 남는다. 
 
@@ -82,15 +82,13 @@
 > 4. 복제본 세그먼트의 병합이 완료되면 원본 세그먼트와 교체하고 원본 세그먼트 삭제
 > 5. IndexSearcher는 새로운 세그먼트를 읽어 검색 결과 제공
 
-## 세그먼트 추가, 수정, 삭제
-
-색인 작업의 대다수는 세그먼트가 추가되는 연산이다. 새로운 세그먼트를 가져가는 전략으로 불변성을 깨지 않으면서도 그리 나쁘지 않은 성능을 보장한다.
+## 세그먼트 수정
 
 수정 연산의 경우, 세그먼트의 불변성 때문에 데이터를 삭제하고 다시 추가하는 방식으로 동작한다. 기존 데이터는 삭제처리되어 검색 대상에서 제외되고 변경된 데이터는 새로운 세그먼트로 추가되어 검색대상에 포함된다.
 
 삭제 연산의 경우, 즉시 데이터를 삭제하는 것이 아니다. 모든 문서에는 삭제 여부를 표시하는 비트 배열을 내부적으로 가진다. 삭제 요청이 들어오면 삭제될 대상 데이터의 비트 배열을 찾아 삭제 여부만 표시한다. 비트에 표시만 했기 때문에 여전히 그 세그먼트는 남아 았다. 검색에는 비트배열에 설정된 삭제 여부를 항상 먼저 판단하기 때문에 불변성을 훼손하지 않고도 빠르게 검색대상에서 제외할 수 있다. 
 
-루씬에 데이터 수정 작업이 요청되면 IndexWriter는 다음과 같이 동작한다. 
+루씬에 세그먼트 수정 작업이 요청되면 IndexWriter는 다음과 같이 동작한다. 
 
 세그먼트에서 일부 데이터가 삭제될 경우
 1. 루씬은 삭제될 데이터가 포함된 세그먼트의 삭제 여부 비트 배열을 확인한다.
@@ -217,11 +215,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTcxODY3MTIsMTE4MDgyMDU1Miw0Nz
-c0NjU5MSwtNDk1NDI2NzM3LDExODMxMzEwMDcsOTgwMTYxMDY5
-LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3NDI0MCwtMjEyNj
-UzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIxNDE2LDcxNzA0NTM4
-OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNTEzNjc5NSw0Mz
-Y4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTEsMTg1MzA5NTM0
-NV19
+eyJoaXN0b3J5IjpbLTI4NjM0NTUwNSwxMTgwODIwNTUyLDQ3Nz
+Q2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjks
+MTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NT
+MyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4
+LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNj
+gzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1MSwxODUzMDk1MzQ1
+XX0=
 -->
