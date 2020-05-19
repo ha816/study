@@ -26,14 +26,9 @@
 
 ![enter image description here](https://www.programmersought.com/images/409/1c42be389219e95a5327a096c31c59a1.png)
 
-
-
 ### 세그먼트의 기본 동작
 
-
-
-
-최초 색인 작업 요청이 루씬에 들어오면 IndexWriter로 색인 작업이 이루어지고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새그러 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때 마다 이런식으로 세그먼트의 개수는 늘어난다. 
+최초 색인 작업 요청이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 
 
 검색 작업 요청시 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락은 발생하지 않는다.
 
@@ -225,9 +220,9 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nz
-c0MjQwLC0yMTI2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0
-MTYsNzE3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNj
-A1MTM2Nzk1LDQzNjgzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1
-MSwxODUzMDk1MzQ1LDQyNTEzNzMxOV19
+eyJoaXN0b3J5IjpbLTExNTg4NzQzNzEsMTU2NDY3MzY5MiwtNT
+gwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NTMyNTMyLC02MjI3ODUz
+MDcsLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4LDIwMDk5NTg4MzQsMT
+Q0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNjgzMDkyMywtMTM5NzM5
+Njk0MCwxMTQxODU1MSwxODUzMDk1MzQ1LDQyNTEzNzMxOV19
 -->
