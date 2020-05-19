@@ -14,10 +14,9 @@
 
 엘라스틱서치는 독립적인 루씬 인덱스를 확장한 샤드를 제공한다. 루씬 인덱스가 자기자신이 가지고 있는 세그먼트 내에서만 검색이 가능한 것과는 달리 샤드는 자기를 포함한 다른 샤드가 가지고 있는 세그먼트도 통합적으로 검색할 수 있다. 
 
-# Segment(세그먼트)
+## Segment(세그먼트)
 
-문서들은 빠른 검색에 유리하도록 설계된 특수한 자료구조 형태로 저장된다. 루씬에 데이터가 색인되면 데이터는 최소 단위인 토큰으로 분리되고 토큰은 특수한 형태의 자료구조로 저장되는데, 이를 세그먼트라 한다. 세그먼트는 읽기에 최적화된 자료구조이다. 
-
+문서들은 빠른 검색에 유리하도록 설계된 특수한 자료구조 형태로 저장된다. 루씬에 데이터가 색인되면 데이터는 최소 단위인 토큰으로 분리되고 토큰은 특수한 형태의 자료구조로 저장되는데, 이를 세그먼트라 한다. **세그먼트는 읽기에 최적화된 자료구조이다.** 
 
 세그먼트
 : 루씬 내부에 존재하는 자료구조로, 역색인 구조로 생성되어 읽기에 최적화되어 있다. 하나의 루씬 내부에서만 존재하며 확장이 불가능하다.
@@ -237,8 +236,8 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNzA2NjQyNSwtMTg4NzgyMTQxNiw3MT
-cwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYzNTM3LDE2MDUxMzY3
-OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLDExNDE4NTUxLDE4NT
-MwOTUzNDUsNDI1MTM3MzE5XX0=
+eyJoaXN0b3J5IjpbLTE2MjcwNDA2MDAsLTE4ODc4MjE0MTYsNz
+E3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2
+Nzk1LDQzNjgzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1MSwxOD
+UzMDk1MzQ1LDQyNTEzNzMxOV19
 -->
