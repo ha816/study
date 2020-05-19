@@ -18,16 +18,15 @@
 
 ## Segment(세그먼트)
 
-문서들은 빠른 검색에 유리하도록 설계된 특수한 자료구조인 세그먼트로 저장된다. 세그먼트는 루씬 내부에 존재하는 자료구조로, 역색인 구조로 생성되어 읽기에 최적화되어 있다. 
-
+문서들은 빠른 검색에 유리하도록 설계된 특수한 자료구조인 세그먼트로 저장된다. 세그먼트는 루씬 내부에 존재하는 자료구조로, 역색인 구조로 생성되어 읽기에 최적화되어 있다. 세그먼트는 역색인 구조를 지닌 파일 자체를 의미하기도 한다.
+ 
 루씬 인덱스의 경우 데이터를 저장할때 내부에 가지고 있는 세그먼트로만 처리가 가능했다. 엘라스틱서치 샤드는 이러한 한계를 넘어 데이터를 무한대로 확장할 수 있게 해준다. 
 
 ### 색인 작업시 세그먼트의 기본 동작
 
-하나의 루씬 인덱스는 다수의 세그먼트를 가진다. 읽기 성능이 중요한 검색 엔진에선 하나의 세그먼트로 검색 요청을 처리하는 것 보다 다수의 세그먼트를 생성해 나누어 처리하는 것이 훨씬 효율적이다. 루씬은 검색 요청을 받으면 다수의 작은 세그먼트 조각들이 각 검색 결과를 만들어내고 이를 통합해서 결과로 응답한다. 이러한 **검색 방식을 세그먼트 단위 검색(Per-Segment Search)** 라고 한다. (초록색 DB모형이 세그먼트)
+하나의 루씬 인덱스는 다수의 세그먼트를 가진다. 읽기 성능이 중요한 검색 엔진에선 하나의 세그먼트로 검색 요청을 처리하는 것 보다 다수의 세그먼트를 생성해 나누어 처리하는 것이 훨씬 효율적이다. 루씬은 검색 요청을 받으면 다수의 작은 세그먼트 조각들이 각 검색 결과를 만들어내고 이를 통합해서 결과로 응답한다. 이러한 검색 방식을 **세그먼트 단위 검색(Per-Segment Search)** 라고 한다. (초록색 DB모형이 세그먼트)
 
 ![enter image description here](https://www.programmersought.com/images/409/1c42be389219e95a5327a096c31c59a1.png)
-세그먼트는 역색인 구조를 지닌 파일 자체를 의미하는데 세그먼트 내부에는 실제로 색인덴 데이터가 역색인 구조로 저장되어 있다.
 
 루씬에는 세그먼트를 관리하기 위한 용도로 커밋 포인트(Commit Point)라는 자료구조를 제공한다. 커밋 포인트는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용 한다. 루씬의 IndexSearcher는 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트 부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
 
@@ -220,9 +219,9 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU4Nzc0MjQwLC0yMTI2NTMyNTMyLC02Mj
-I3ODUzMDcsLTE4ODc4MjE0MTYsNzE3MDQ1Mzg4LDIwMDk5NTg4
-MzQsMTQ0ODM2MzUzNywxNjA1MTM2Nzk1LDQzNjgzMDkyMywtMT
-M5NzM5Njk0MCwxMTQxODU1MSwxODUzMDk1MzQ1LDQyNTEzNzMx
-OV19
+eyJoaXN0b3J5IjpbLTEzNjQ2MzE0NzIsMzU4Nzc0MjQwLC0yMT
+I2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNzE3MDQ1
+Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2Nzk1LD
+QzNjgzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1MSwxODUzMDk1
+MzQ1LDQyNTEzNzMxOV19
 -->
