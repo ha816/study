@@ -56,7 +56,7 @@
 
 ## 세그먼트 주요 작업
 
-**색인 작업 요청**이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 대다수의 세그먼트 관련 작업이 바로 세그먼트 추가 작업이다.  
+사실 대다수의 세그먼트 관련 작업은 세그먼트를 새로 추가하는 작업이다. **색인 작업 요청**이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 
 
 세그먼트의 개수가 너무 많아지면 읽기 성능 저하가 생길수 있다. 때문에 루씬은 백그라운드에서 **주기적으로 세그먼트 파일을 병합(Merge)** 하는 작업을 수행한다. 이를 통해 모든 세그먼트를 물리적으로 하나의 파일로 병합한다. 정책에 따라 일부 세그먼트가 선택되어 합쳐지고, 일정 시간이 흘러 더 이상 색인 작업이 없는 상태가 되면 하나의 큰 세그먼트만 남는다. 
 
@@ -79,6 +79,8 @@
 > 3. 복제 세그먼트들이 병합되는 동안 IndexSearcher는 원본 세그먼트를 읽어 검색수행
 > 4. 복제본 세그먼트의 병합이 완료되면 원본 세그먼트와 교체하고 원본 세그먼트 삭제
 > 5. IndexSearcher는 새로운 세그먼트를 읽어 검색 결과 제공
+
+참고로 검색 작업 요청이 루씬에 들어오면 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락은 발생하지 않는다.
 
 
 ## 세그먼트 수정, 삭제
@@ -212,11 +214,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0Mzg1NDczLDExOTE0NDg1NTEsMTE4MD
-gyMDU1Miw0Nzc0NjU5MSwtNDk1NDI2NzM3LDExODMxMzEwMDcs
-OTgwMTYxMDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3ND
-I0MCwtMjEyNjUzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIxNDE2
-LDcxNzA0NTM4OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNT
-EzNjc5NSw0MzY4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTFd
-fQ==
+eyJoaXN0b3J5IjpbMTc0MDU5MDIyOCwxMTkxNDQ4NTUxLDExOD
+A4MjA1NTIsNDc3NDY1OTEsLTQ5NTQyNjczNywxMTgzMTMxMDA3
+LDk4MDE2MTA2OSwxNTY0NjczNjkyLC01ODA5MzEyOCwzNTg3Nz
+QyNDAsLTIxMjY1MzI1MzIsLTYyMjc4NTMwNywtMTg4NzgyMTQx
+Niw3MTcwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYzNTM3LDE2MD
+UxMzY3OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLDExNDE4NTUx
+XX0=
 -->
