@@ -8,7 +8,10 @@
 
 # 엘라스틱서치 샤드 VS 루씬 인덱스
 
-루씬은 다수의 클래스로 구성되어 있는 검색 라이브러리이고, 이 중에서 가장 중요한 클래스가 바로 IndexWriter와 IndexSearcher이다. 사실 이 두개의 클래스가 루씬의 핵심이라고 해도 과언이 아니다. **IndexWriter는 데이터를 색인하는 클래스**이고, **IndexSearcher는 색인된 데이터를 검색**하는 클래스다. IndexWriter와 IndexSearcher로 색인과 검색을 동시에 제공하는 **루씬 인스턴스를 루씬 인덱스**라고 하는데, 사실 **하나의 엘라스틱서치 샤드는 하나의 루씬 인덱스**라고 설명할 수 있다. 우리가 알고 있는 엘라스틱서치 인덱스는 물리적으로 분산된 엘라스틱서치 샤드를 논리적인 관점에서 하나의 거대한 데이터로 보는 것이다. 
+루씬은 다수의 클래스로 구성되어 있는 검색 라이브러리이고, 이 중에서 가장 중요한 클래스가 바로 IndexWriter와 IndexSearcher이다. 사실 이 두개의 클래스가 루씬의 핵심이라고 해도 과언이 아니다. **IndexWriter는 데이터를 색인하는 클래스**이고, **IndexSearcher는 색인된 데이터를 검색**하는 클래스다. IndexWriter와 IndexSearcher를 활용하여 색인과 검색을 동시에 수행하는 루씬 인스턴스를 루씬 인덱스라고 한다.
+
+
+사실 **하나의 엘라스틱서치 샤드는 하나의 루씬 인덱스**에 대응한다.
 
 ![enter image description here](https://cdn-images-1.medium.com/max/1600/1*3xcgM8oZUTSV5ZVEjCRnNA.png)
 
@@ -238,7 +241,7 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0OTc5OTAyNSwyMDA5OTU4ODM0LDE0ND
-gzNjM1MzcsMTYwNTEzNjc5NSw0MzY4MzA5MjMsLTEzOTczOTY5
-NDAsMTE0MTg1NTEsMTg1MzA5NTM0NSw0MjUxMzczMTldfQ==
+eyJoaXN0b3J5IjpbLTE3NTc0ODc1MzgsMjAwOTk1ODgzNCwxND
+Q4MzYzNTM3LDE2MDUxMzY3OTUsNDM2ODMwOTIzLC0xMzk3Mzk2
+OTQwLDExNDE4NTUxLDE4NTMwOTUzNDUsNDI1MTM3MzE5XX0=
 -->
