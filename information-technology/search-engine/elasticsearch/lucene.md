@@ -20,12 +20,6 @@
 
 문서들은 빠른 검색에 유리하도록 설계된 특수한 자료구조 형태로 저장된다. 세그먼트는 루씬 내부에 존재하는 자료구조로, 역색인 구조로 생성되어 읽기에 최적화되어 있다. 
 
-루씬 인덱스
-: 검색과 색인 기능을 가진 최소한의 검색엔진이다.  IndexWriter와 IndexSearcher를 이용해 작업을 수행하며, 
-
-엘라스틱서치 샤드
-: 엘라스틱서치에서 제공하는 가장 작은 단위 검색엔진. 내부적으로 루씬을 확장해서 검색엔진 역할을 수행한다. 다수의 샤드가 협력해서 존재하는 모든 세그먼트를 검색할 수 있다. 
-
 루씬 인덱스의 경우 데이터를 저장할때 내부에 가지고 있는 세그먼트로만 처리가 가능했다. 엘라스틱서치 샤드는 이러한 한계를 넘어 데이터를 무한대로 확장할 수 있게 해준다. 
 
 서비스를 운영하다보면 시간이 지남에 따라 데이터 크기에 점점 더 커지고 그에 비례해서 성능상의 문제가 발생할 가능성 또한 커진다. 클러스터에 저장된 데이터가 많이질수록 문제가 발생했을때 이를 해결하는 것도 어려워진다. 
@@ -235,8 +229,8 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMjc4NTMwNywtMTg4NzgyMTQxNiw3MT
-cwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYzNTM3LDE2MDUxMzY3
-OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLDExNDE4NTUxLDE4NT
-MwOTUzNDUsNDI1MTM3MzE5XX0=
+eyJoaXN0b3J5IjpbLTE0MjEwMDMwMjcsLTYyMjc4NTMwNywtMT
+g4NzgyMTQxNiw3MTcwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYz
+NTM3LDE2MDUxMzY3OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLD
+ExNDE4NTUxLDE4NTMwOTUzNDUsNDI1MTM3MzE5XX0=
 -->
