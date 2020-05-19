@@ -38,8 +38,7 @@
 
 검색 작업 요청이 루씬에 들어오면 IndexSearcher가 커밋 포인트를 활용해 모든 세그먼트를 읽고 검색 결과를 제공한다. 이때 존재하는 모든 세그먼트를 검색하기 때문에 데이터의 누락은 발생하지 않는다.
 
-
-루씬에 요청이 들어왔을때 상황에 따라 동작하는 방식
+상황에 따른 루씬의 
 
  최초 색인 요청
  1. IndexWriter가 세그먼트를 생성
@@ -219,10 +218,10 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTIzMjkzMTksMTE4MzEzMTAwNyw5OD
-AxNjEwNjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQw
-LC0yMTI2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNz
-E3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2
-Nzk1LDQzNjgzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1MSwxOD
-UzMDk1MzQ1LDQyNTEzNzMxOV19
+eyJoaXN0b3J5IjpbOTgyNjM5NTQwLDExODMxMzEwMDcsOTgwMT
+YxMDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3NDI0MCwt
+MjEyNjUzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIxNDE2LDcxNz
+A0NTM4OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNTEzNjc5
+NSw0MzY4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTEsMTg1Mz
+A5NTM0NSw0MjUxMzczMTldfQ==
 -->
