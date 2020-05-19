@@ -28,7 +28,7 @@
 
 루씬에는 세그먼트를 관리하기 위한 용도로 **커밋 포인트(Commit Point)**를 제공한다. 커밋 포인트에는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용한다. 자세히는 루씬의 IndexSearcher가 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
 
-### 세그먼트의 기본 동작
+### 세그먼트의 작업
 
 색인 작업 요청이 루씬에 들어오면 IndexWriter가 색인 작업을 하고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새로운 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때마다 세그먼트의 개수는 늘어난다. 
 
@@ -58,7 +58,7 @@
 
 ## 세그먼트 불변성(Segment Invariant)
 
-루씬은 역색인 구조로 세그먼트를 만든다 기본적으로 한번 디스크에 저장된 세그먼트는 수정이 불가능하게 관리된다. 예외적으로 주기적인 병합 작업을 제외하고는 절대 수정을 허용하지 않는다. 이렇기 때문에 색인 작업이 수행될때마다 새로운 세그먼트가 생성될수 밖에 없는 구조이다. 
+기본적으로 루씬의 IndexWriter가 생성한 세그먼트는 한번 디스크에 저장된 이후 수정이 불가능하도 관리된다. 예외적으로 주기적인 병합 작업을 제외하고는 절대 수정을 허용하지 않는다. 이렇기 때문에 색인 작업이 수행될때마다 새로운 세그먼트가 생성될수 밖에 없는 구조이다. 
 
 
 세그먼트의 불변성은 루씬의 입장에서는 매우 중요한 특성이다. 주로 대용량 텍스트를 다루어야 하는 역색인 구조에서는 불변성이 제공하는 여러 장점이 있다. 
@@ -217,7 +217,7 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzEwMjgzNzAsMTE4MzEzMTAwNyw5OD
+eyJoaXN0b3J5IjpbLTIwNzc5ODIwNTcsMTE4MzEzMTAwNyw5OD
 AxNjEwNjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQw
 LC0yMTI2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNz
 E3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2
