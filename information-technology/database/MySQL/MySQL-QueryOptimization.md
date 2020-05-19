@@ -10,10 +10,12 @@ DML에는 SELECT, INSERT, UPDATE, DELETE 쿼리로 나뉘며, 이 밖에 REPLACE
 
 이번 장에선 쿼리 패턴별로 어떻게 처리되는지를 이해하고, 많이 알려져 있지 않지만 코드수를 상당히 줄일 수 있는 유용한 쿼리 패턴도 알아보자. 
 
-# 쿼리와 연관디
+# 쿼리와 연관된 시스템 설정
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMjQ5OTkxMSwtMTc4ODU3NzgyXX0=
+eyJoaXN0b3J5IjpbLTE2MTA2NjI3MTYsLTE3ODg1Nzc4Ml19
 -->
