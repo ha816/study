@@ -58,10 +58,9 @@
 
 ## 세그먼트 불변성(Segment Invariant)
 
-기본적으로 루씬의 IndexWriter가 생성한 세그먼트는 한번 디스크에 저장된 이후 수정이 불가능하도 관리된다. 예외적으로 주기적인 병합 작업을 제외하고는 절대 수정을 허용하지 않는다. 이렇기 때문에 색인 작업이 수행될때마다 새로운 세그먼트가 생성될수 밖에 없는 구조이다. 
+기본적으로 루씬의 IndexWriter가 생성한 세그먼트는 한번 디스크에 저장된 이후 수정이 불가능하도록 관리된다. **예외적으로 주기적인 병합 작업을 제외하고는 절대 수정을 허용하지 않는다.** 때문에 색인 작업이 수행될때마다 기존 세그먼트에 추가하는 방식이 아닌 새로운 세그먼트가 생성될수 밖에 없다.
 
-
-세그먼트의 불변성은 루씬의 입장에서는 매우 중요한 특성이다. 주로 대용량 텍스트를 다루어야 하는 역색인 구조에서는 불변성이 제공하는 여러 장점이 있다. 
+세그먼트의 불변성은 루씬의 입장에서는 매우 중요한 특성이다. 주로 대용량 텍스트를 다루어야 하는 역색인 구조에서는 이 불변성의 특성에서 나오는 장점이 매우 유용하다. 
 
 >동시성 문제 회피
 >불변성이 보장되면 잠금(Lock)이 필요 없어진다. 다수의 쓰레드가 동작하는 다중 쓰레드 환경에서 동시성 문제를 불변성이 보장되면 간단히 피해갈 수 있다.
@@ -217,10 +216,10 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzc5ODIwNTcsMTE4MzEzMTAwNyw5OD
-AxNjEwNjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQw
-LC0yMTI2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNz
-E3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2
-Nzk1LDQzNjgzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1MSwxOD
-UzMDk1MzQ1LDQyNTEzNzMxOV19
+eyJoaXN0b3J5IjpbLTQ5NTQyNjczNywxMTgzMTMxMDA3LDk4MD
+E2MTA2OSwxNTY0NjczNjkyLC01ODA5MzEyOCwzNTg3NzQyNDAs
+LTIxMjY1MzI1MzIsLTYyMjc4NTMwNywtMTg4NzgyMTQxNiw3MT
+cwNDUzODgsMjAwOTk1ODgzNCwxNDQ4MzYzNTM3LDE2MDUxMzY3
+OTUsNDM2ODMwOTIzLC0xMzk3Mzk2OTQwLDExNDE4NTUxLDE4NT
+MwOTUzNDUsNDI1MTM3MzE5XX0=
 -->
