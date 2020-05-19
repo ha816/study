@@ -190,7 +190,7 @@ RENAME TABLE tab_a TO tab_b
 
 AUTO_INCREMENT 기능하는 숫자 값을 추출하기컬럼이 사용된 테이블에선 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 순서대로 증가한 일련번호를 가져야한다. 이를 위해 InnoDB 스토리지 엔진에서는 내부적으로 AUTO_INCREMENT 락이라는 테이블 수준의 잠금을 제공한다.
 
- 락은 INSERT와 REPLACE 쿼리 문장과 같이 새로운 레코드를 입력하는 쿼리에서만 사용한다. 필요**하며, **UPDATE나 DELETE 쿼리에서는 걸리지 않는다.** 
+ 락은 INSERT와 REPLACE 쿼리 문장과 같이 새로운 레코드를 입력하는 쿼리에서만 사용한다. **UPDATE나 DELETE 쿼리에서는 걸리지 않는다.** 
 
 다른 잠금과는 달리, 트랜잭션 관계없이 INSERT나 REPLACE 문장에서 AUTO_INCREMENT 값을 가져오는 순간만 AUTO_INCREMENT 락이 걸렸다가 즉시 해제된다. 
 
@@ -246,14 +246,13 @@ INNER JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id
 INNER JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id;
  * FROM information_sche// 어떤 트랜잭션이 어떤 클라이언트(프로세스)에 의해 기동 중이며, 어떤 잠금을 기다리고 있는지를 관리한다.
 ```
-
 --- 
 5.0이하 버전에서 잠금 확인 및 해제를 확인하고 싶다면 SHOW ENGINE INNODB STATUS 쿼리명령어를 실행하면 된다.
  
 ```
 SHOW ENGINE INNODB STATUS; //5.0 이하버전 
-```
---- TRANSACTION 0 1770, not started, OS thread id 5472
+
+TRANSACTION 0 1770, not started, OS thread id 5472
 MySQL thread id 5, query id 225 localhost 127.0.0.1 root
 show engine innodb status
 --- TRANSACTION 0 1770, ACTIVE 1 sec, OS thread id 5148 starting index read
@@ -263,8 +262,9 @@ MySQL thread id 3, query id 224 localhost 127.0.0.1 root Updating
 UPDATE ...
 WHERE ....
 ...
-```
+
 --- TRANSACTION으로 시작하는 줄 하나가 커넥션에 대한 정보를 의미한다. 바로 뒤의 숫자 2개는 트랜잭션 번호를 의미하고, 그 뒤의 ACTIVE ... sec, not started는 트랜잭션 상태를 표시한다. 그리고 바로 다음 MySQL thread id <숫자> 줄이 있는데 숫자 값이 트랜잭션을 실행하고 있는 프로세스 아이디(커넥션 번호)이다.
+```
 
 **중요한 것은 레코드를 오랫동안 잠그고 있는 프로세스가 있는지 여부**이다. 최대한 트랜잭션이 오랫동안 실행되고 있는 줄을 찾으면 되는데 트랜잭션 상태가 ACTIVE이고, 그 뒤 시간값이 최대한 큰 값을 가진 트랜잭션을 찾으면 된다.
 
@@ -282,7 +282,7 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0Mjc1NDQ5OSw4Njc1Njg3MDIsLTkwNT
+eyJoaXN0b3J5IjpbLTg1MDUzNTAxNiw4Njc1Njg3MDIsLTkwNT
 g2ODc2MiwtMjA0NTAyNTgyMCwxNTE4NjQ3ODIzLDEzODU0MzY4
 NzMsNTY4Nzk3Nzg0LDE3MDEyMzQ0OTEsMTUyOTI3OTc3MiwyMD
 A3NDU0NzUxLC03NTI0MjgzNDQsLTE0MzA2NDkxNjIsNDMyNTA4
