@@ -28,7 +28,7 @@
 
 ![enter image description here](https://www.programmersought.com/images/409/1c42be389219e95a5327a096c31c59a1.png)
 
-루씬에는 세그먼트를 관리하기 위한 용도로 커밋 포인트(Commit Point)라는 자료구조를 제공한다. 커밋 포인트는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용 한다. 루씬의 IndexSearcher는 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트 부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
+루씬에는 세그먼트를 관리하기 위한 용도로 **커밋 포인트(Commit Point)**라는 자료구조를 제공한다. 커밋 포인트는 여러 세그먼트의 목록 정보를 가지고 있으며, 검색 요청시 이를 적극 활용한다. 자세히는 루씬의 IndexSearcher가 검색 요청시 커밋 포인트를 이용해 가장 오래된 세그먼트부터 차례대로 검색한 후에 각 결과를 하나로 합친다. 
 
 최초 색인 작업 요청이 루씬에 들어오면 IndexWriter로 색인 작업이 이루어지고 결과물로 하나의 세그먼트가 생성된다. 그 후 추가 색인 작업이 요청될때마다 새그러 세그먼트가 추가되고 커밋 포인트에 기록된다. 색인 작업이 일어날때 마다 이런식으로 세그먼트의 개수는 늘어난다. 
 
@@ -219,9 +219,9 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjQ2MzE0NzIsMzU4Nzc0MjQwLC0yMT
-I2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNzE3MDQ1
-Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2Nzk1LD
-QzNjgzMDkyMywtMTM5NzM5Njk0MCwxMTQxODU1MSwxODUzMDk1
-MzQ1LDQyNTEzNzMxOV19
+eyJoaXN0b3J5IjpbLTU4MDkzMTI4LDM1ODc3NDI0MCwtMjEyNj
+UzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIxNDE2LDcxNzA0NTM4
+OCwyMDA5OTU4ODM0LDE0NDgzNjM1MzcsMTYwNTEzNjc5NSw0Mz
+Y4MzA5MjMsLTEzOTczOTY5NDAsMTE0MTg1NTEsMTg1MzA5NTM0
+NSw0MjUxMzczMTldfQ==
 -->
