@@ -186,8 +186,7 @@ RENAME TABLE tab_a TO tab_b
 
 ![enter image description here](https://letmecompile.s3.amazonaws.com/wp/wp-content/uploads/2018/06/next_key_lock.png)
 
-###  자동증가 락(Auto Iincrement Llock()
-자동 증가 락)
+###  자동증가 락(Auto Increment Lock)
 
 AUTO_INCREMENT 기능하는 숫자 값을 추출하기컬럼이 사용된 테이블에선 동시에 여러 INSERT가 되는 경우, 저장되는 각 레코드는 중복되지 않고 순서대로 증가한 일련번호를 가져야한다. 이를 위해 InnoDB 스토리지 엔진에서는 내부적으로 AUTO_INCREMENT 락이라는 테이블 수준의 잠금을 제공한다.
 
@@ -283,11 +282,11 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY3NTY4NzAyLC05MDU4Njg3NjIsLTIwND
-UwMjU4MjAsMTUxODY0NzgyMywxMzg1NDM2ODczLDU2ODc5Nzc4
-NCwxNzAxMjM0NDkxLDE1MjkyNzk3NzIsMjAwNzQ1NDc1MSwtNz
-UyNDI4MzQ0LC0xNDMwNjQ5MTYyLDQzMjUwODg1OCwxNDgzNzk3
-NzQsLTU3Njk4MDQ4OCwtMTM5MTAyODM5OCwxMDA5MDczNTg5LC
-00MDA5MjE2NTksLTE2MTI3ODE5NzYsLTUwODY4MDc5Niw0NDU3
-Mzg4ODZdfQ==
+eyJoaXN0b3J5IjpbLTg0Mjc1NDQ5OSw4Njc1Njg3MDIsLTkwNT
+g2ODc2MiwtMjA0NTAyNTgyMCwxNTE4NjQ3ODIzLDEzODU0MzY4
+NzMsNTY4Nzk3Nzg0LDE3MDEyMzQ0OTEsMTUyOTI3OTc3MiwyMD
+A3NDU0NzUxLC03NTI0MjgzNDQsLTE0MzA2NDkxNjIsNDMyNTA4
+ODU4LDE0ODM3OTc3NCwtNTc2OTgwNDg4LC0xMzkxMDI4Mzk4LD
+EwMDkwNzM1ODksLTQwMDkyMTY1OSwtMTYxMjc4MTk3NiwtNTA4
+NjgwNzk2XX0=
 -->
