@@ -49,13 +49,12 @@
 > 2. 세그먼트가 추가 생성되는 동안 기존 세그먼트만 읽어 검색 결과 제공
 > 3. 세그먼트 생성이 완료되면 생성된 세그먼트도 마저 읽어 결과 제공
 
->주기적 세그먼트 병합 작업
-
- 1. IndexWriter가 Merge 대상이 되는 세그먼트를 복제
- 2.  IndexWriter가 복제한 세그먼트를 하나로 병합
- 3. 복제 세그먼트들이 병합되는 동안 IndexSearcher는 원본 세그먼트를 읽어 검색 수행
- 4. 복제본 세그먼트의 병합이 완료되면 원본 세그먼트와 교체하고 원본 세그먼트 삭제
- 5. IndexSearcher는 새로운 세그먼트를 읽어 검색 결과 제공
+>백그라운드 주기적 세그먼트 병합 작업
+> 1. IndexWriter가 Merge 대상이 되는 세그먼트를 복제
+> 2.  IndexWriter가 복제한 세그먼트를 하나로 병합
+> 3. 복제 세그먼트들이 병합되는 동안 IndexSearcher는 원본 세그먼트를 읽어 검색수행
+> 4. 복제본 세그먼트의 병합이 완료되면 원본 세그먼트와 교체하고 원본 세그먼트 삭제
+> 5. IndexSearcher는 새로운 세그먼트를 읽어 검색 결과 제공
 
 ## 세그먼트 불변성
 
@@ -218,7 +217,7 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzE3NzcyOTEsMTE4MzEzMTAwNyw5OD
+eyJoaXN0b3J5IjpbLTEzODg4NjA0MDgsMTE4MzEzMTAwNyw5OD
 AxNjEwNjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQw
 LC0yMTI2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNz
 E3MDQ1Mzg4LDIwMDk5NTg4MzQsMTQ0ODM2MzUzNywxNjA1MTM2
