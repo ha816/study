@@ -180,7 +180,7 @@ Refresh가 작동하는 주기를 수동으로 조절할 수 있는 API가 있�
 
 샤드는 자신에게 발생하는 모든 변경 요청사항을 Translog에 최우선적으로 기록한다. 이는 샤드 장애 상황시 복구를 위해서 모든 변경 사항을 기록하는 것인데, 특별한 조치가 없으면 시간이 흐를수록 Translog의 크기는 커지게 된다.
 
-루씬의 Commit이 정상적으로 수행되어 일정시점까지 기록이 물리적 디스크에 저장되었다면, Translog에 적재되었던 변경사항 기록 중에 Commit이 정상적으로 일어난 시점 전까지 기록 내역은 Translog에서 제거되어도 안전하기 때문에 이 내역은 Translog에서 제거된다.
+루씬의 Commit이 정상적으로 수행되어 일정시점까지 기록이 물리적 디스크에 저장되었다면,  Translog에 적재되었던 변경사항 기록 중에 Commit이 정상적으로 일어난 시점 직전까지 기록 내역은 Translog에서 제거되어도 안전하기 때문에 이 내역은 Translog에서 제거된다.
 
 엘라스틱서치에서는 기본적으로 5초에 한번 주기적으로 엘라스틱서치 Flush 작업이 수행된다. Refresh와 마찬가지로 Flush 주기를 API로 조절할 수 있지만 임의 조정은 권장하지 않는다. 
 
@@ -194,14 +194,12 @@ Refresh가 작동하는 주기를 수동으로 조절할 수 있는 API가 있�
 >```
 >POST /moive/_forcemerge?max_num_segments=1
 >```
-
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwNDI1NDk4LC0zMzE1NTA5OTksLTExNz
-UyMjc2MzAsLTQyOTc1NDczNCwtODIyMjY3MzMxLC03MTI1MjAx
-MDYsMTI3NTU0ODkyNywxNDE5MjkwNDk1LDU3MzI3MzkyLC0xMT
-A4NDIyMTA3LC05MDI1MjIyNDIsLTYyNjI5NzYsNTY3MTU4MTg3
-LDE2Mzc4MTk1NzcsMTk2NjAxNDkxMiwtMTE1NDIyNDQ5NCwyMD
-I0NzExOTgyLC01NzE5NzkzODUsMTIwOTIzMTIxNSwtMTM4ODk3
-MDY1Nl19
+eyJoaXN0b3J5IjpbLTU1NTI1OTg4NywtMzMxNTUwOTk5LC0xMT
+c1MjI3NjMwLC00Mjk3NTQ3MzQsLTgyMjI2NzMzMSwtNzEyNTIw
+MTA2LDEyNzU1NDg5MjcsMTQxOTI5MDQ5NSw1NzMyNzM5MiwtMT
+EwODQyMjEwNywtOTAyNTIyMjQyLC02MjYyOTc2LDU2NzE1ODE4
+NywxNjM3ODE5NTc3LDE5NjYwMTQ5MTIsLTExNTQyMjQ0OTQsMj
+AyNDcxMTk4MiwtNTcxOTc5Mzg1LDEyMDkyMzEyMTUsLTEzODg5
+NzA2NTZdfQ==
 -->
