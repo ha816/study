@@ -112,10 +112,10 @@
 루씬은 이러한 문제를 해결하기 위해 디스크 동기화에 사용하는 상대적으로 무거운 함수 fsync를 쓰는 대신에 상대적으로 가벼운 write 함수로 쓰기 과정을 수행한다. 
 
 fsync()
-: 저수준의 파일 입출력 함수다. 내부 시스템 캐시의 데이터와 물리적인 디스크 데이터를 동기화하기 위한 목적으로 사용된다. 실제 물리적인 디스크로 쓰는 작업을 수행하기 때문에 상대적으로 많은 리소스가 사용된다.
+: 저수준의 파일 입출력 함수다. 내부 시스템 캐시의 데이터와 물리적인 디스크 데이터를 동기화하기 위한 목적으로 사용된다. 실제 물리적인 디스크로 쓰는 작업을 수행하기 때문에 운영체제 입장에서 상대적으로 많은 리소스가 사용한다.
 
 write()
-: 일반적으로 파일을 저장할 때 사용하는 함수다. 운영체제 내부 커널에는 시스템 캐시가 존재하는데 write함수를 이용하면 일단 시스템 캐시에만 기록된다. 이후 실제 데이터는 특정 주기로 물리 디스크에 기록된다. 물리적인 디스크 쓰기 작업을 하지 않기 때문에 빠르지만 시스템이 비정상 종료될 경우에는 데이터 유실이 발생할 수 있다.
+: 일반적으로 파일을 저장할 때 사용하는 함수다. 운영체제 내부 커널에는 시스템 캐시가 존재하는데 write함수를 이용하면 일단 시스템 캐시에만 기록된다. 이후에 특정 주기로 물리디스크와 동기화한다. 물리적인 디스크 쓰기 작업을 하지 않기 때문에 빠르지만 시스템이 비정상 종료될 경우에는 데이터 유실이 발생할 수 있다.
 
 ReOpen() -> openIfChanged()
 : 루씬에서는 IndexSearcher가 일단 생성되고 나면 이후 변경된 사항들을 기본적으로 인지 못한다. 물론 기존 IndexSearcher를 닫고 다시 만들면 되겠지만 문서의 추가나 변경이 빈번히 일어날 경우 많은 리소스가 필요해지기 때문에 권장하지 않는다. 이때 사용할 수 있는것이  ReOpen()이다. 일정 주기마다 문서가 변경된다면 이 함수를 써서 더 효율적으로 리소스를 사용할 수 있다. 루씬 3.5부터는 deprecated되었으며 openIfChanged()를 쓰도록 하자.
@@ -206,11 +206,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc1MzMzMywtNTcxOTc5Mzg1LDEyMDkyMz
-EyMTUsLTEzODg5NzA2NTYsMTgzMDUxNTEyMiw4MTYyMTEwNzgs
-LTE5NTYzMTcyMDgsMTU0OTUwMDczNywxODc1MTExMDY3LC0yMD
-I3MjA5NDg0LC0xNzQ2Mzc1ODA5LDExOTE0NDg1NTEsMTE4MDgy
-MDU1Miw0Nzc0NjU5MSwtNDk1NDI2NzM3LDExODMxMzEwMDcsOT
-gwMTYxMDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3NDI0
-MF19
+eyJoaXN0b3J5IjpbOTYxNzM3MTgyLC01NzE5NzkzODUsMTIwOT
+IzMTIxNSwtMTM4ODk3MDY1NiwxODMwNTE1MTIyLDgxNjIxMTA3
+OCwtMTk1NjMxNzIwOCwxNTQ5NTAwNzM3LDE4NzUxMTEwNjcsLT
+IwMjcyMDk0ODQsLTE3NDYzNzU4MDksMTE5MTQ0ODU1MSwxMTgw
+ODIwNTUyLDQ3NzQ2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAwNy
+w5ODAxNjEwNjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0
+MjQwXX0=
 -->
