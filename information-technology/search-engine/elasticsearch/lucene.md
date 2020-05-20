@@ -137,13 +137,13 @@ Merge는 작업 후에는 어느순간에 반드시 Commit을 해야 한다. Com
 >write로 동기화를 했기 때문에 커널 시스템 캐시에만 데이터가 생성된다. 따라서 실제 물리적디스크까지 동기화가 된 상태는 아니다.
 
 >**루씬 Commit**
->커널 시스템 캐시의 내용을 물리적인 디스크에 쓰는 작업
+>커널 시스템 캐시과 물리적 디스크간에 데이터를 동기화하는 작업
 >실제 물리적인 디스크에 기록되기 때문에 많은 리소스가 필요하다.
 
 >**루씬 Merge** 
 >다수의 세그먼트를 하나로 통합하는 작업
->Merge 과정을 통해 삭제 처리된 데이터가 실제 물리적 디스크에서도 삭제 된다.
->검색할 세그먼트의 개수가 줄어들기 때문에 검색 성능이 좋아진다.
+>Merge 과정을 통해 삭제 처리된 데이터는 실제 물리적 디스크에서도 삭제 된다.
+>Merge 후에는 검색할 세그먼트의 개수가 줄어들기 때문에 검색 성능이 좋아진다.
 
 # 엘라스틱서치를 위한 Refresh, Flush, Optimize API
 
@@ -206,11 +206,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3ODM3NzEwOCwtMTE1NDIyNDQ5NCwyMD
-I0NzExOTgyLC01NzE5NzkzODUsMTIwOTIzMTIxNSwtMTM4ODk3
-MDY1NiwxODMwNTE1MTIyLDgxNjIxMTA3OCwtMTk1NjMxNzIwOC
-wxNTQ5NTAwNzM3LDE4NzUxMTEwNjcsLTIwMjcyMDk0ODQsLTE3
-NDYzNzU4MDksMTE5MTQ0ODU1MSwxMTgwODIwNTUyLDQ3NzQ2NT
-kxLC00OTU0MjY3MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjksMTU2
-NDY3MzY5Ml19
+eyJoaXN0b3J5IjpbLTIxMzI1ODMwMzYsLTExNTQyMjQ0OTQsMj
+AyNDcxMTk4MiwtNTcxOTc5Mzg1LDEyMDkyMzEyMTUsLTEzODg5
+NzA2NTYsMTgzMDUxNTEyMiw4MTYyMTEwNzgsLTE5NTYzMTcyMD
+gsMTU0OTUwMDczNywxODc1MTExMDY3LC0yMDI3MjA5NDg0LC0x
+NzQ2Mzc1ODA5LDExOTE0NDg1NTEsMTE4MDgyMDU1Miw0Nzc0Nj
+U5MSwtNDk1NDI2NzM3LDExODMxMzEwMDcsOTgwMTYxMDY5LDE1
+NjQ2NzM2OTJdfQ==
 -->
