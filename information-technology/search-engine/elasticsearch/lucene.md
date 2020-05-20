@@ -132,16 +132,16 @@ write()
 
 Merge는 작업 후에는 어느순간에 반드시 Commit을 해야 한다. Commit은 매우 비용이 비싼 작업이기 때문에 정책적으로 적절한 주기를 설정하는 것이 매우 중요하다. 루씬은 일정 주기로 Merge 작업을 수행하며, 작업 주기는 최적의 성능을 낼수있도록 자동으로 설정되며 백그라운드로 실행된다.
 
->루씬 Flush
->세그먼트가 생성된 후 검색이 가능해지도록 수행하는 작업
+>**루씬 Flush**
+>색인 작업으로 세그먼트가 생성된 후, 검색이 가능하도록 openIfChanged함수를 호출
 >write() 함수로 동기화가 수행됬기 때문에 커널 시스템 캐시에만 데이터가 생성된다. 이를 통해 유저 모드에서 파일을 열어서 사용하는 것이 가능해 진다.
 >물리적으로 디스크에 쓰여진 상태는 아니다. 
 
->루씬 Commit
+>**루씬 Commit**
 >커널 시스템 캐시의 내용을 물리적인 디스크에 쓰는 작업
 >실제 물리적인 디스크에 기록되기 때문에 많은 리소스가 필요하다.
 
->루씬 Merge 
+>**루씬 Merge** 
 >다수의 세그먼트를 하나로 통합하는 작업
 >Merge 과정을 통해 삭제 처리된 데이터가 실제 물리적 디스크에서도 삭제 된다.
 >검색할 세그먼트의 개수가 줄어들기 때문에 검색 성능이 좋아진다.
@@ -207,11 +207,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTQyMjQ0OTQsMjAyNDcxMTk4MiwtNT
-cxOTc5Mzg1LDEyMDkyMzEyMTUsLTEzODg5NzA2NTYsMTgzMDUx
-NTEyMiw4MTYyMTEwNzgsLTE5NTYzMTcyMDgsMTU0OTUwMDczNy
-wxODc1MTExMDY3LC0yMDI3MjA5NDg0LC0xNzQ2Mzc1ODA5LDEx
-OTE0NDg1NTEsMTE4MDgyMDU1Miw0Nzc0NjU5MSwtNDk1NDI2Nz
-M3LDExODMxMzEwMDcsOTgwMTYxMDY5LDE1NjQ2NzM2OTIsLTU4
-MDkzMTI4XX0=
+eyJoaXN0b3J5IjpbNzEzNzc2NzUxLC0xMTU0MjI0NDk0LDIwMj
+Q3MTE5ODIsLTU3MTk3OTM4NSwxMjA5MjMxMjE1LC0xMzg4OTcw
+NjU2LDE4MzA1MTUxMjIsODE2MjExMDc4LC0xOTU2MzE3MjA4LD
+E1NDk1MDA3MzcsMTg3NTExMTA2NywtMjAyNzIwOTQ4NCwtMTc0
+NjM3NTgwOSwxMTkxNDQ4NTUxLDExODA4MjA1NTIsNDc3NDY1OT
+EsLTQ5NTQyNjczNywxMTgzMTMxMDA3LDk4MDE2MTA2OSwxNTY0
+NjczNjkyXX0=
 -->
