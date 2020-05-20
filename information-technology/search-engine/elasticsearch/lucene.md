@@ -159,9 +159,9 @@ Merge는 작업 후에는 어느순간에 반드시 Commit을 해야 한다. Com
 
 ## Refresh
 
-엘라스틱서치는 대용량 데이터를 색인하고 근실시간 검색을 할 수 있게 설계되었다. 엘라스틱서치는 각 샤드가 가지고 있는 루씬을 제어할 수 있으며, 주기적으로 각 루씬의 인메모리 버퍼에로 루씬 Flush 작업을 수행한다. 엘라스틱서치에서 **Refresh**는 모든 루씬으로 하여금 Flush를 수행한 클러스터에 존재하는 모든 샤드의 인덱스에서는 기본적으로 1초마다 한번씩 Refresh작업이 수행된다.
+엘라스틱서치는 대용량 데이터를 색인하고 근실시간 검색을 할 수 있게 설계되었다. 엘라스틱서치는 각 샤드가 가지고 있는 루씬을 제어할 수 있으며, 주기적으로 각 루씬의 인메모리 버퍼에로 루씬 Flush 작업을 수행한다. 엘라스틱서치에서 **Refresh**는 모든 루씬으로 하여금 Flush를 수행시키는 작업이다. 한 클러스터에 존재하는 모든 샤드의 인덱스에서는 기본적으로 1초마다 한번씩 Refresh작업이 수행된다.
 
-루씬의 Flush를 Refresh라고 부르는 이유는 용어에 좀더 행위의 의미를 담은 측면이 크다. 인덱스를 새로고침한다는 의미인데, 새로 추가한 문서의 검색이 가능해지게 한다는 것이다. 
+루씬의 Flush를 엘라스틱서치에서 Refresh라고 부르는 이유는 용어에 좀더 **행위의 의미**를 담은 측면이 크다. 인덱스를 새로고침한다는 의미인데, 새로 추가한 문서의 검색이 가능해지게 한다는 것이다. 
 
 Refresh 주리를 수동으로 조절할 수 있는 API가 존재한다. 하지만 기본 설정된 주기를 변경하는 것은 별로 권장하지 않는다. Flush 작업이 Commit 작업보다는 가볍다고는 하나 여전히 비용이 발생하는 연산이고 전체 성능에 큰 영향을 주는 작업이기 때문이다.
 
@@ -202,11 +202,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MjQwOTM2NiwtOTAyNTIyMjQyLC02Mj
-YyOTc2LDU2NzE1ODE4NywxNjM3ODE5NTc3LDE5NjYwMTQ5MTIs
-LTExNTQyMjQ0OTQsMjAyNDcxMTk4MiwtNTcxOTc5Mzg1LDEyMD
-kyMzEyMTUsLTEzODg5NzA2NTYsMTgzMDUxNTEyMiw4MTYyMTEw
-NzgsLTE5NTYzMTcyMDgsMTU0OTUwMDczNywxODc1MTExMDY3LC
-0yMDI3MjA5NDg0LC0xNzQ2Mzc1ODA5LDExOTE0NDg1NTEsMTE4
-MDgyMDU1Ml19
+eyJoaXN0b3J5IjpbLTExMDg0MjIxMDcsLTkwMjUyMjI0MiwtNj
+I2Mjk3Niw1NjcxNTgxODcsMTYzNzgxOTU3NywxOTY2MDE0OTEy
+LC0xMTU0MjI0NDk0LDIwMjQ3MTE5ODIsLTU3MTk3OTM4NSwxMj
+A5MjMxMjE1LC0xMzg4OTcwNjU2LDE4MzA1MTUxMjIsODE2MjEx
+MDc4LC0xOTU2MzE3MjA4LDE1NDk1MDA3MzcsMTg3NTExMTA2Ny
+wtMjAyNzIwOTQ4NCwtMTc0NjM3NTgwOSwxMTkxNDQ4NTUxLDEx
+ODA4MjA1NTJdfQ==
 -->
