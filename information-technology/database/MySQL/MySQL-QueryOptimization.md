@@ -12,12 +12,16 @@ DML에는 SELECT, INSERT, UPDATE, DELETE 쿼리로 나뉘며, 이 밖에 REPLACE
 
 # 쿼리와 연관된 시스템 설정
 
-SQL 작성 규칙은 대소문자 구분, 문자열 표기방법등 MySQL 서버 시스템 설정에 따라달라 진다. 시스템 설정에는 무엇이 있는지 ㅇ
+SQL 작성 규칙은 대소문자 구분, 문자열 표기방법등 MySQL 서버 시스템 설정에 따라달라 진다. 시스템 설정에는 무엇이 있는지 예약어에는 어떤 것이 있고, 사용할때 주의사항도 알아보자.
+
+## SQL 모드
+
+MySQL 서버의
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxODc0MjMxNCwtMTE2NTAwOTQyMiwtMT
-c4ODU3NzgyXX0=
+eyJoaXN0b3J5IjpbNTI1OTc0NTk3LC0xMTY1MDA5NDIyLC0xNz
+g4NTc3ODJdfQ==
 -->
