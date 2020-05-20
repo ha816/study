@@ -122,9 +122,9 @@ write()
 일단 Flush 처리에 의해 세그먼트가 생성되면 커널 시스템 캐시에서 세그먼트가 캐시되어 읽기가 가능해진다. 커널 시스템 캐시가 생성되면 루씬의 openIfChanged 함수를 활용하여 IndexSearcher에서도 해당 캐시를 읽을 수 있는 상태가 된다. 
 
 >ReOpen() -> openIfChanged()
->루씬 IndexSearcher는 일단 생성되고 나면 이후 변경된 사항들을 기본적으로 인지 못한다. 물론 기존 IndexSearcher를 닫고 다시 만들면 되겠지만 문서의 추가나 변경이 빈번히 일어날 경우 많은 리소스가 필요해지기 때문에 권장하지 않는다. 이때 사용할 수 있는것이  ReOpen()이다. 일정 주기마다 문서가 변경된다면 이 함수를 써서 더 효율적으로 리소스를 사용할 수 있다. 루씬 3.5부터는 deprecated되었으며 openIfChanged()를 쓰도록 하자.
+>루씬 IndexSearcher는 일단 생성되고 나면 이후 변경된 사항들을 기본적으로 인지 못한다. 물론 기존 IndexSearcher를 닫고 다시 만들면 되겠지만 문서의 추가나 변경이 빈번히 일어날 경우 많은 리소스가 필요해지기 때문에 권장하지 않는다. 이때 사용할 수 있는것이  ReOpen()이다. 일정 주기마다 문서가 변경된다면 이 함수를 써서 더 효율적으로 리소스를 사용할 수 있다. 루씬 3.5부터는 deprecated되었으며 openIfChanged를 쓰도록 하자.
 
-루씬에서는 물리적으로 실제 디스크에 기록을 하는 fsync함수를 호출하는 작업을 Commit이라고 한다. Flush라는 단계가 존재하기 때문에 매번 Commit을 수행할 필요가 없어 보이지만 일정 주기로 Commit 작업을 통해 물리적인 디스크로 기록 작업을 수행해야 한다는 사실을 잊으면 안된다. 
+루씬 **Commit**은 실제 물리적 디스크에 기록을 하는(동기화를 하는) fsync함수를 호출하는 작업을 **Commit**이라고 한다. Flush 단계가 존재하기 때문에 매번 Commit을 수행할 필요가 없어 보이지만 일정 주기로 Commit 작업을 통해 물리적인 디스크로 기록 작업을 수행해야 한다는 사실을 잊으면 안된다. 
 
 
 세그먼트는 불변성을 기반으로 설계되었고, 이러한 불변성이 지닌 이점은 충분하다. 하지만 불변성을 유지하기 위해 루씬의 동작 방식은 다소 복잡해졌다. 불변성 유지를 위해 세그먼트 단위 검색(Per-Segment Search)을 제공하지만 시간이 흐를 수록 세그먼트의 개수가 늘어날 수 밖에 없고 이를 지원하기 위한 커밋 포인트 부하도 증가한다. 그래서 다수의 세그먼트를 하나로 합치는 자업이 필요하다. 이 작업이 Merge 작업이다. 
@@ -208,11 +208,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTMxMjAxMiwtNTcxOTc5Mzg1LDEyMD
-kyMzEyMTUsLTEzODg5NzA2NTYsMTgzMDUxNTEyMiw4MTYyMTEw
-NzgsLTE5NTYzMTcyMDgsMTU0OTUwMDczNywxODc1MTExMDY3LC
-0yMDI3MjA5NDg0LC0xNzQ2Mzc1ODA5LDExOTE0NDg1NTEsMTE4
-MDgyMDU1Miw0Nzc0NjU5MSwtNDk1NDI2NzM3LDExODMxMzEwMD
-csOTgwMTYxMDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3
-NDI0MF19
+eyJoaXN0b3J5IjpbLTU0MTM0OTg0LC01NzE5NzkzODUsMTIwOT
+IzMTIxNSwtMTM4ODk3MDY1NiwxODMwNTE1MTIyLDgxNjIxMTA3
+OCwtMTk1NjMxNzIwOCwxNTQ5NTAwNzM3LDE4NzUxMTEwNjcsLT
+IwMjcyMDk0ODQsLTE3NDYzNzU4MDksMTE5MTQ0ODU1MSwxMTgw
+ODIwNTUyLDQ3NzQ2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAwNy
+w5ODAxNjEwNjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0
+MjQwXX0=
 -->
