@@ -172,9 +172,9 @@ Refresh가 작동하는 주기를 수동으로 조절할 수 있는 API가 있�
 
 ## Flush
 
-엘라스틱서치에서 **Flush**는 **루씬의 Commit 작업을 수행하고 새로운 Translog를 시작한다는 의미다.**  절대로 이 작업을 루씬의 Flush와 혼동해서는 안된다. 
+**엘라스틱서치의 Flush를 절대로 루씬의 Flush와 혼동해서는 안된다.** 
 
-Translog는 루씬에서는 존재하지 않는 엘라스틱서치에서만 존재하는 개념이다. **Translog는 샤드 장애 복구를 위해 제공되는 특수한 파일이다.** 엘라스틱서치 샤드는 자신에게 일어나는 모든 변경사항을 Translog에 먼저 기록한 후 내부에 존재하는 루씬을 호출한다. 시간이 흐를수록 Translog의 파일 크기는 늘어난다.
+엘라스틱서치에서 **Flush**는 **각 루씬이 Commit 작업을 수행하고 Translog를 저장을 시작한다는 의미다.** 여기서 Translog는 루씬에서는 존재하지 않는 엘라스틱서치에서만 존재하는 개념이다. **Translog는 샤드 장애 복구를 위해 제공되는 특수한 파일이다.** 엘라스틱서치 샤드는 자신에게 일어나는 모든 변경사항을 Translog에 먼저 기록한 후 내부에 존재하는 루씬을 호출한다. 시간이 흐를수록 Translog의 파일 크기는 늘어난다.
 
 정책에 의해 루씬 Commit이 정상적으로 수행되면 변경사항이 디스크에 물리적으로 기록되고 Translog 파일에서 Commit이 정상적으로 일어난 시점까지의 내역이 삭제된다. 
 
@@ -198,11 +198,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NTU0ODkyNywxNDE5MjkwNDk1LDU3Mz
-I3MzkyLC0xMTA4NDIyMTA3LC05MDI1MjIyNDIsLTYyNjI5NzYs
-NTY3MTU4MTg3LDE2Mzc4MTk1NzcsMTk2NjAxNDkxMiwtMTE1ND
-IyNDQ5NCwyMDI0NzExOTgyLC01NzE5NzkzODUsMTIwOTIzMTIx
-NSwtMTM4ODk3MDY1NiwxODMwNTE1MTIyLDgxNjIxMTA3OCwtMT
-k1NjMxNzIwOCwxNTQ5NTAwNzM3LDE4NzUxMTEwNjcsLTIwMjcy
-MDk0ODRdfQ==
+eyJoaXN0b3J5IjpbLTcxMjUyMDEwNiwxMjc1NTQ4OTI3LDE0MT
+kyOTA0OTUsNTczMjczOTIsLTExMDg0MjIxMDcsLTkwMjUyMjI0
+MiwtNjI2Mjk3Niw1NjcxNTgxODcsMTYzNzgxOTU3NywxOTY2MD
+E0OTEyLC0xMTU0MjI0NDk0LDIwMjQ3MTE5ODIsLTU3MTk3OTM4
+NSwxMjA5MjMxMjE1LC0xMzg4OTcwNjU2LDE4MzA1MTUxMjIsOD
+E2MjExMDc4LC0xOTU2MzE3MjA4LDE1NDk1MDA3MzcsMTg3NTEx
+MTA2N119
 -->
