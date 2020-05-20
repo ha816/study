@@ -184,27 +184,21 @@ Refresh가 작동하는 주기를 수동으로 조절할 수 있는 API가 있�
 
 ## Optimize API
 
-엘라스틱서치에서는 **인덱스 최적화**를 위해 Optimize API를 제공한다. Optimize API를  **forced merge API**라고도 하는데, 말그대로 루씬의 병합 작업을 강제로 수행하는 기능이다. 이로 파편화된 다스의 세그먼트를 하나의 세그먼트로 통합하여 좀 더 빠른 성능을 제공할 목적으로 사용된다.
+엘라스틱서치에서는 **인덱스 최적화**를 위해 Optimize API를 제공한다. Optimize API를  **forced merge API**라고도 하는데, 말 그대로 **루씬의 Merge 작업을 강제로 수행하는 기능**으로 이해할 수 있다. 파편화된 다수의 세그먼트를 하나의 세그먼트로 통합하여 좀 더 빠른 성능을 제공할 목적으로 사용된다.
 
 일반적으로 변경이 더 이상 일어나지 않는 오래된 인덱스의 경우에는 하나의 세그먼트로 강제로 병합하는 것이 성능상 유리하다. 
 
->오래된 세그먼트를 하나로 강제 병합하기
 >엘라스틱서치에서 제공하는 max_num_segments 옵션을 이용하면 샤드의 세그먼트를 설정된 개수로 강제 병합할 수 있다. 
 >```
 >POST /moive/_forcemerge?max_num_segments=1
 
-
-# 마치며 
-
-lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 사용하는 analyzer에 대해 알아보자. 
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMTU1MDk5OSwtMTE3NTIyNzYzMCwtND
-I5NzU0NzM0LC04MjIyNjczMzEsLTcxMjUyMDEwNiwxMjc1NTQ4
-OTI3LDE0MTkyOTA0OTUsNTczMjczOTIsLTExMDg0MjIxMDcsLT
-kwMjUyMjI0MiwtNjI2Mjk3Niw1NjcxNTgxODcsMTYzNzgxOTU3
-NywxOTY2MDE0OTEyLC0xMTU0MjI0NDk0LDIwMjQ3MTE5ODIsLT
-U3MTk3OTM4NSwxMjA5MjMxMjE1LC0xMzg4OTcwNjU2LDE4MzA1
-MTUxMjJdfQ==
+eyJoaXN0b3J5IjpbLTI4ODU1ODYzOCwtMzMxNTUwOTk5LC0xMT
+c1MjI3NjMwLC00Mjk3NTQ3MzQsLTgyMjI2NzMzMSwtNzEyNTIw
+MTA2LDEyNzU1NDg5MjcsMTQxOTI5MDQ5NSw1NzMyNzM5MiwtMT
+EwODQyMjEwNywtOTAyNTIyMjQyLC02MjYyOTc2LDU2NzE1ODE4
+NywxNjM3ODE5NTc3LDE5NjYwMTQ5MTIsLTExNTQyMjQ0OTQsMj
+AyNDcxMTk4MiwtNTcxOTc5Mzg1LDEyMDkyMzEyMTUsLTEzODg5
+NzA2NTZdfQ==
 -->
