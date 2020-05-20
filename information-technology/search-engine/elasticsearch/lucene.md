@@ -100,9 +100,9 @@
 3. IndexSearcher는 모든 세그먼트를 읽어 검색결과를 제공한다.
 
 
-# 루씬을 위한  Flush, Commit, Merge
+# 루씬을 위한 Flush, Commit, Merge
 
-루씬은 효율적인 색인 작업을 위해 내부적으로 일정 크기의 버퍼를 가지고 있다. 이러한 버퍼를 인메모리 버퍼(In-memory buffer)라고 한다. 그리고 루씬에서 인메모리 버퍼 기반의 처리과정을  Flush라 부른다.
+루씬은 효율적인 색인 작업을 위해 내부적으로 일정크기의 버퍼를 가지고 있다. 이러한 버퍼를 **인 메모리 버퍼(In-memory buffer)**라고 한다. 루씬에서 인메모리 버퍼 기반의 처리과정을 통들어 **Flush**라 부른다.
 
 루씬에 색인 작업이 요청되면 전달된 데이터는 일단 인메모리 버퍼에 순서대로 쌓인다. 그리고 나서 정책에 따라 인메모리 버퍼에 순서대로 쌓인다. 그리고 나서 정책에 따라 내부 버퍼에 일정 크기 이상 데이터가 쌓이거나 일정 시간이 지나면 버퍼에 쌓인 데이터를 모아 한꺼번에 처리한다. 버퍼를 일종의 큐로 활용하는 것이다. 
 
@@ -207,11 +207,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODg5NzA2NTYsMTgzMDUxNTEyMiw4MT
-YyMTEwNzgsLTE5NTYzMTcyMDgsMTU0OTUwMDczNywxODc1MTEx
-MDY3LC0yMDI3MjA5NDg0LC0xNzQ2Mzc1ODA5LDExOTE0NDg1NT
-EsMTE4MDgyMDU1Miw0Nzc0NjU5MSwtNDk1NDI2NzM3LDExODMx
-MzEwMDcsOTgwMTYxMDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LD
-M1ODc3NDI0MCwtMjEyNjUzMjUzMiwtNjIyNzg1MzA3LC0xODg3
-ODIxNDE2XX0=
+eyJoaXN0b3J5IjpbMTIwOTIzMTIxNSwtMTM4ODk3MDY1NiwxOD
+MwNTE1MTIyLDgxNjIxMTA3OCwtMTk1NjMxNzIwOCwxNTQ5NTAw
+NzM3LDE4NzUxMTEwNjcsLTIwMjcyMDk0ODQsLTE3NDYzNzU4MD
+ksMTE5MTQ0ODU1MSwxMTgwODIwNTUyLDQ3NzQ2NTkxLC00OTU0
+MjY3MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjksMTU2NDY3MzY5Mi
+wtNTgwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NTMyNTMyLC02MjI3
+ODUzMDddfQ==
 -->
