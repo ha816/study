@@ -117,17 +117,16 @@ fsync()
 write()
 : 일반적으로 파일을 저장할 때 사용하는 함수다. 운영체제 내부 커널에는 시스템 캐시가 존재하는데 write함수를 이용하면 일단 시스템 캐시에만 기록된다. 이후에 특정 주기로 물리디스크와 동기화한다. 물리적인 디스크 쓰기 작업을 하지 않기 때문에 빠르지만 시스템이 비정상 종료될 경우에는 데이터 유실이 발생할 수 있다.
 
-정리하자면 **루씬의 Flush** 작업은 데이터의 변경 사항을 일단 버퍼에 모아두었다가 일정 주기로 새그먼트를 생성하고 상대적으로 적은 비용의 write 함수로 디스크에 동기화를 하는 일련의 과정을 말한다.
+정리하자면 **루씬 Flush** 작업은 데이터의 변경 사항을 일단 버퍼에 모아두었다가 일정 주기로 새그먼트를 생성하고 상대적으로 적은 비용의 write 함수로 디스크에 동기화를 하는 일련의 과정을 말한다.
 
 일단 Flush 처리에 의해 세그먼트가 생성되면 커널 시스템 캐시에서 세그먼트가 캐시되어 읽기가 가능해진다. 커널 시스템 캐시가 생성되면 루씬의 openIfChanged 함수를 활용하여 IndexSearcher에서도 해당 캐시를 읽을 수 있는 상태가 된다. 
 
 >ReOpen() -> openIfChanged()
 >루씬 IndexSearcher는 일단 생성되고 나면 이후 변경된 사항들을 기본적으로 인지 못한다. 물론 기존 IndexSearcher를 닫고 다시 만들면 되겠지만 문서의 추가나 변경이 빈번히 일어날 경우 많은 리소스가 필요해지기 때문에 권장하지 않는다. 이때 사용할 수 있는것이  ReOpen()이다. 일정 주기마다 문서가 변경된다면 이 함수를 써서 더 효율적으로 리소스를 사용할 수 있다. 루씬 3.5부터는 deprecated되었으며 openIfChanged를 쓰도록 하자.
 
-루씬 **Commit**은 실제 물리적 디스크에 기록을 하는(동기화를 하는) fsync함수를 호출하는 작업을 **Commit**이라고 한다. Flush 단계가 존재하기 때문에 매번 Commit을 수행할 필요가 없어 보이지만 일정 주기로 Commit 작업을 통해 물리적인 디스크로 기록 작업을 수행해야 한다는 사실을 잊으면 안된다. 
+**루씬 Commit**은 실제 물리적 디스크에 기록을 하는(동기화를 하는) fsync함수를 호출하는 작업을 말한다. Flush 단계가 존재하기 때문에 매번 Commit을 수행할 필요가 없어 보이지만 일정 주기로 Commit 작업을 통해 물리적 디스크로 기록(동기화) 작업을 수행해야 한다는 사실을 잊으면 안된다. 
 
-
-세그먼트는 불변성을 기반으로 설계되었고, 이러한 불변성이 지닌 이점은 충분하다. 하지만 불변성을 유지하기 위해 루씬의 동작 방식은 다소 복잡해졌다. 불변성 유지를 위해 세그먼트 단위 검색(Per-Segment Search)을 제공하지만 시간이 흐를 수록 세그먼트의 개수가 늘어날 수 밖에 없고 이를 지원하기 위한 커밋 포인트 부하도 증가한다. 그래서 다수의 세그먼트를 하나로 합치는 자업이 필요하다. 이 작업이 Merge 작업이다. 
+불변성이 지닌 이점세그먼트는 불변성을 기반으로 설계되었고, 이러한 불변성이 지닌 이점은 충분하다. 하지만 불변성을 유지하기 위해 루씬의 동작 방식은 다소 복잡해졌다. 불변성 유지를 위해 세그먼트 단위 검색(Per-Segment Search)을 제공하지만 시간이 흐를 수록 세그먼트의 개수가 늘어날 수 밖에 없고 이를 지원하기 위한 커밋 포인트 부하도 증가한다. 그래서 다수의 세그먼트를 하나로 합치는 자업이 필요하다. 이 작업이 Merge 작업이다. 
 
 병합 작업을 하면, 세그먼트의 수가 줄어들기 때문에 검색 횟수가 줄어들어 검색 성능이 좋아진다. 마찬가지로 수가 줄기 때문에 세그먼트가 차지하는 디스크 용량이 줄어든다. 삭제되는 문서의 경우 병합 작업 전에는 디스크에 물리적으로 남아 있다. 하지만 병합 작업으로 새로운 새그먼트를 생성하면 디스크에서 삭제가 되고 공간 절약이 가능해진다.
 
@@ -208,11 +207,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MTM0OTg0LC01NzE5NzkzODUsMTIwOT
-IzMTIxNSwtMTM4ODk3MDY1NiwxODMwNTE1MTIyLDgxNjIxMTA3
-OCwtMTk1NjMxNzIwOCwxNTQ5NTAwNzM3LDE4NzUxMTEwNjcsLT
-IwMjcyMDk0ODQsLTE3NDYzNzU4MDksMTE5MTQ0ODU1MSwxMTgw
-ODIwNTUyLDQ3NzQ2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAwNy
-w5ODAxNjEwNjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0
-MjQwXX0=
+eyJoaXN0b3J5IjpbLTUyNzM0NDQ0NCwtNTcxOTc5Mzg1LDEyMD
+kyMzEyMTUsLTEzODg5NzA2NTYsMTgzMDUxNTEyMiw4MTYyMTEw
+NzgsLTE5NTYzMTcyMDgsMTU0OTUwMDczNywxODc1MTExMDY3LC
+0yMDI3MjA5NDg0LC0xNzQ2Mzc1ODA5LDExOTE0NDg1NTEsMTE4
+MDgyMDU1Miw0Nzc0NjU5MSwtNDk1NDI2NzM3LDExODMxMzEwMD
+csOTgwMTYxMDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3
+NDI0MF19
 -->
