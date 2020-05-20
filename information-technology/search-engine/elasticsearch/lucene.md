@@ -130,7 +130,7 @@ write()
 
 **루씬 Merge**는 다수의 세그먼트를 하나로 합치는 작업이다. Merge 작업을 하면, 세그먼트의 수가 줄어들기 때문에 검색 횟수가 줄어들어 검색 성능이 좋아진다. 마찬가지로 수가 줄기 때문에 세그먼트가 차지하는 디스크 용량이 줄어든다. 삭제되는 데이터는 Merge 작업 전에는 디스크에 물리적으로 남아 있다가 Merge 작업 후에 새로운 새그먼트를 생성하면서 디스크에서 삭제가 되고 그만큼 공간 절약이 가능해진다.
 
-병합 정렬은 Commit작업을 반드시 동반해야 하는데, Commit작업은 매우 비용이 많이 든다. 따라서 정책적으로 적절한 주기를 설정하는 것이 매우 중요하다. 전체적인 성능 향상을 위해 루씬은 자동 주기로 세그먼트의 병합 작업을 수행한다. 작업 주기는 최적의 성능을 낼수있도록 설정되며 백그라운드로 수행된다. 
+Merge는 반드시 Commit을 동반해야 하는데, Commit 작업은 매우 비용이 많이 든다. 따라서 정책적으로 적절한 주기를 설정하는 것이 매우 중요하다. 전체적인 성능 향상을 위해 루씬은 자동 주기로 세그먼트의 병합 작업을 수행한다. 작업 주기는 최적의 성능을 낼수있도록 설정되며 백그라운드로 수행된다. 
 
 >루씬 Flush
 >세그먼트가 생성된 후 검색이 가능해지도록 수행하는 작업
@@ -207,11 +207,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2NTU1MDA4LDIwMjQ3MTE5ODIsLTU3MT
-k3OTM4NSwxMjA5MjMxMjE1LC0xMzg4OTcwNjU2LDE4MzA1MTUx
-MjIsODE2MjExMDc4LC0xOTU2MzE3MjA4LDE1NDk1MDA3MzcsMT
-g3NTExMTA2NywtMjAyNzIwOTQ4NCwtMTc0NjM3NTgwOSwxMTkx
-NDQ4NTUxLDExODA4MjA1NTIsNDc3NDY1OTEsLTQ5NTQyNjczNy
-wxMTgzMTMxMDA3LDk4MDE2MTA2OSwxNTY0NjczNjkyLC01ODA5
-MzEyOF19
+eyJoaXN0b3J5IjpbLTcxMTI0NzMyNSwyMDI0NzExOTgyLC01Nz
+E5NzkzODUsMTIwOTIzMTIxNSwtMTM4ODk3MDY1NiwxODMwNTE1
+MTIyLDgxNjIxMTA3OCwtMTk1NjMxNzIwOCwxNTQ5NTAwNzM3LD
+E4NzUxMTEwNjcsLTIwMjcyMDk0ODQsLTE3NDYzNzU4MDksMTE5
+MTQ0ODU1MSwxMTgwODIwNTUyLDQ3NzQ2NTkxLC00OTU0MjY3Mz
+csMTE4MzEzMTAwNyw5ODAxNjEwNjksMTU2NDY3MzY5MiwtNTgw
+OTMxMjhdfQ==
 -->
