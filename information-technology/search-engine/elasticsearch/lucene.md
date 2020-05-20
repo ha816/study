@@ -147,7 +147,7 @@ Merge는 작업 후에는 어느순간에 반드시 Commit을 해야 한다. Com
 
 # 엘라스틱서치를 위한 Refresh, Flush, Optimize API
 
-엘라스틱서치샤드는 사실상 루씬 인덱스의 확장이기 때문에 루씬 인덱스의 세그먼트 기반 동작을 그대로 활용한다. 그렇기 때문에 루씬의 설정 파라미터들을 튜닝하면 엘라스틱서치에서도 그에 사응하는 성능상의 이점을 얻을 수 있다. 루씬의 대표적인 튜닝 포인트인 Flush, Commit, Merge은 엘라스틱서치에서 보다 확장된 API로 제공된다. 하지만  엘라스틱서치에서는 전혀 다른 명칭으로 부르고 있기 때문에 주의해야 한다.
+엘라스틱서치샤드는 사실상 루씬 인덱스의 확장이기 때문에 루씬 인덱스의 세그먼트 기반 동작을 그대로 활용한다. 그렇기 때문에 루씬의 설정 파라미터들을 튜닝하면 엘라스틱서치에서도 그에 사응하는 성능상의 이점을 얻을 수 있다. 루씬의 대표적인 튜닝 포인트인 Flush, Commit, Merge은 엘라스틱서치에서 보다 확장된 API로 제공된다. 하지만 엘라스틱서치에서는 전혀 다른 명칭으로 부르고 있기 때문에 주의해야 한다.
 
 |루씬 |엘라스틱서치|
 |--|--|
@@ -204,11 +204,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MTIxNDA2NSwxNjM3ODE5NTc3LDE5Nj
-YwMTQ5MTIsLTExNTQyMjQ0OTQsMjAyNDcxMTk4MiwtNTcxOTc5
-Mzg1LDEyMDkyMzEyMTUsLTEzODg5NzA2NTYsMTgzMDUxNTEyMi
-w4MTYyMTEwNzgsLTE5NTYzMTcyMDgsMTU0OTUwMDczNywxODc1
-MTExMDY3LC0yMDI3MjA5NDg0LC0xNzQ2Mzc1ODA5LDExOTE0ND
-g1NTEsMTE4MDgyMDU1Miw0Nzc0NjU5MSwtNDk1NDI2NzM3LDEx
-ODMxMzEwMDddfQ==
+eyJoaXN0b3J5IjpbNTY3MTU4MTg3LDE2Mzc4MTk1NzcsMTk2Nj
+AxNDkxMiwtMTE1NDIyNDQ5NCwyMDI0NzExOTgyLC01NzE5Nzkz
+ODUsMTIwOTIzMTIxNSwtMTM4ODk3MDY1NiwxODMwNTE1MTIyLD
+gxNjIxMTA3OCwtMTk1NjMxNzIwOCwxNTQ5NTAwNzM3LDE4NzUx
+MTEwNjcsLTIwMjcyMDk0ODQsLTE3NDYzNzU4MDksMTE5MTQ0OD
+U1MSwxMTgwODIwNTUyLDQ3NzQ2NTkxLC00OTU0MjY3MzcsMTE4
+MzEzMTAwN119
 -->
