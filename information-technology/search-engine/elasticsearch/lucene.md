@@ -167,8 +167,10 @@ Refresh가 작동하는 주기를 수동으로 조절할 수 있는 API가 있�
 
 >대량 색인이 필요할때
 >_settings API를 이요하면 Refresh주기를 변경할 수 있다. 만약 대량의 데이터를 한번에 색인 제작이 필요할 경우, Refresh작업을 잠시 비활성화 하고 색인 작업이 끝나면 다시 되돌리는 것이 가능하다. 
+>```
 >PUT movie/_settings 
->{"index" : { "refresh_interval": "-1" } --비활성화 
+>{"index" : { "refresh_interval": "-1" } -- 비활성화 
+>```
 
 ## Flush
 
@@ -191,14 +193,15 @@ Refresh가 작동하는 주기를 수동으로 조절할 수 있는 API가 있�
 >엘라스틱서치에서 제공하는 max_num_segments 옵션을 이용하면 샤드의 세그먼트를 설정된 개수로 강제 병합할 수 있다. 
 >```
 >POST /moive/_forcemerge?max_num_segments=1
+>```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4ODU1ODYzOCwtMzMxNTUwOTk5LC0xMT
-c1MjI3NjMwLC00Mjk3NTQ3MzQsLTgyMjI2NzMzMSwtNzEyNTIw
-MTA2LDEyNzU1NDg5MjcsMTQxOTI5MDQ5NSw1NzMyNzM5MiwtMT
-EwODQyMjEwNywtOTAyNTIyMjQyLC02MjYyOTc2LDU2NzE1ODE4
-NywxNjM3ODE5NTc3LDE5NjYwMTQ5MTIsLTExNTQyMjQ0OTQsMj
-AyNDcxMTk4MiwtNTcxOTc5Mzg1LDEyMDkyMzEyMTUsLTEzODg5
-NzA2NTZdfQ==
+eyJoaXN0b3J5IjpbNTcwNDI1NDk4LC0zMzE1NTA5OTksLTExNz
+UyMjc2MzAsLTQyOTc1NDczNCwtODIyMjY3MzMxLC03MTI1MjAx
+MDYsMTI3NTU0ODkyNywxNDE5MjkwNDk1LDU3MzI3MzkyLC0xMT
+A4NDIyMTA3LC05MDI1MjIyNDIsLTYyNjI5NzYsNTY3MTU4MTg3
+LDE2Mzc4MTk1NzcsMTk2NjAxNDkxMiwtMTE1NDIyNDQ5NCwyMD
+I0NzExOTgyLC01NzE5NzkzODUsMTIwOTIzMTIxNSwtMTM4ODk3
+MDY1Nl19
 -->
