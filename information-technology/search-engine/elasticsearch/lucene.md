@@ -165,13 +165,10 @@ Merge는 작업 후에는 어느순간에 반드시 Commit을 해야 한다. Com
 
 Refresh가 작동하는 주기를 수동으로 조절할 수 있는 API가 있다. 하지만 기본설정 주기를 변경하는 것은 별로 권장하지 않는다. 특별한 경우가 아니라면 Refresh 주기를 임의로 변경하지 말고 엘라스틱서치에게 맡기자. 하지만 대량의 색인을 짧은 시간에 수행해야 한다면 잠깐만 주기를 길게 잡거나 비활성화해서 처리하는 편이 여러모로 유리하다. 루씬의 Flush 작업이 Commit 작업보다는 가볍다고는 하나 여전히 비용이 발생하는 연산이고 전체 성능에 큰 영향을 주는 작업임을 명시하자.
 
->대량 색인이 필요하신 참고할 팁
+>대량 색인이 필요할때
 >_settings API를 이요하면 Refresh주기를 변경할 수 있다. 만약 대량의 데이터를 한번에 색인 제작이 필요할 경우, Refresh작업을 잠시 비활성화 하고 색인 작업이 끝나면 다시 되돌리는 것이 가능하다. 
-
->```
 >PUT movie/_settings 
 >{"index" : { "refresh_interval": "-1" } --비활성화 
-
 
 ## Flush
 
@@ -201,11 +198,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczMjczOTIsLTExMDg0MjIxMDcsLTkwMj
-UyMjI0MiwtNjI2Mjk3Niw1NjcxNTgxODcsMTYzNzgxOTU3Nywx
-OTY2MDE0OTEyLC0xMTU0MjI0NDk0LDIwMjQ3MTE5ODIsLTU3MT
-k3OTM4NSwxMjA5MjMxMjE1LC0xMzg4OTcwNjU2LDE4MzA1MTUx
-MjIsODE2MjExMDc4LC0xOTU2MzE3MjA4LDE1NDk1MDA3MzcsMT
-g3NTExMTA2NywtMjAyNzIwOTQ4NCwtMTc0NjM3NTgwOSwxMTkx
-NDQ4NTUxXX0=
+eyJoaXN0b3J5IjpbMTQxOTI5MDQ5NSw1NzMyNzM5MiwtMTEwOD
+QyMjEwNywtOTAyNTIyMjQyLC02MjYyOTc2LDU2NzE1ODE4Nywx
+NjM3ODE5NTc3LDE5NjYwMTQ5MTIsLTExNTQyMjQ0OTQsMjAyND
+cxMTk4MiwtNTcxOTc5Mzg1LDEyMDkyMzEyMTUsLTEzODg5NzA2
+NTYsMTgzMDUxNTEyMiw4MTYyMTEwNzgsLTE5NTYzMTcyMDgsMT
+U0OTUwMDczNywxODc1MTExMDY3LC0yMDI3MjA5NDg0LC0xNzQ2
+Mzc1ODA5XX0=
 -->
