@@ -117,7 +117,9 @@ fsync()
 write()
 : 일반적으로 파일을 저장할 때 사용하는 함수다. 운영체제 내부 커널에는 시스템 캐시가 존재하는데 write함수를 이용하면 일단 시스템 캐시에만 기록된다. 이후에 특정 주기로 물리디스크와 동기화한다. 물리적인 디스크 쓰기 작업을 하지 않기 때문에 빠르지만 시스템이 비정상 종료될 경우에는 데이터 유실이 발생할 수 있다.
 
-데이터의 변경 사항을 일단 버퍼에 모아두고 일정 주기에 한번씩 새그먼트를 생성하고 상대적으로 적응 비용으로 디스크에 동기화까지 수행하는 것이다. 일단 Flush 처리에 의해 세그먼트가 생성되면 커널 시스템 캐시에 세그먼트가 캐시되어 읽기가 가능해진다. 커널 시스템 캐시에 캐시가 생성되면 루씬의 ReOpen()함수로 IndexSearcher에서도 읽을 수 있는 상태가 된다.
+정리하자면 Flush 작업은 데이터의 변경 사항을 일단 버퍼에 모아두었다가 일정 주기로 새그먼트를 생성하고 상대적으로 적은 비용의 write 함수로 디스크에 동기화를 하는 일련의 과정을 말
+
+일단 Flush 처리에 의해 세그먼트가 생성되면 커널 시스템 캐시에 세그먼트가 캐시되어 읽기가 가능해진다. 커널 시스템 캐시에 캐시가 생성되면 루씬의 ReOpen()함수로 IndexSearcher에서도 읽을 수 있는 상태가 된다.
 
 루씬에서는 물리적으로 실제 디스크에 기록을 하는 fsync함수를 호출하는 작업을 Commit이라고 한다. Flush라는 단계가 존재하기 때문에 매번 Commit을 수행할 필요가 없어 보이지만 일정 주기로 Commit 작업을 통해 물리적인 디스크로 기록 작업을 수행해야 한다는 사실을 잊으면 안된다. 
 
@@ -207,7 +209,7 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTQ1NzU1NCwtNTcxOTc5Mzg1LDEyMD
+eyJoaXN0b3J5IjpbLTMyODg2NjMyOSwtNTcxOTc5Mzg1LDEyMD
 kyMzEyMTUsLTEzODg5NzA2NTYsMTgzMDUxNTEyMiw4MTYyMTEw
 NzgsLTE5NTYzMTcyMDgsMTU0OTUwMDczNywxODc1MTExMDY3LC
 0yMDI3MjA5NDg0LC0xNzQ2Mzc1ODA5LDExOTE0NDg1NTEsMTE4
