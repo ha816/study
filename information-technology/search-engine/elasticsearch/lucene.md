@@ -91,8 +91,7 @@
 
 그렇다면 **삭제될 데이터가 실제 물리적으로 삭제되는 시점은 언제일까?** 바로 백그라운드에서 주기적으로 일어나는 Merge 작업이 수행될때 데이터 삭제가 이루어진다. 루씬이 삭제 데이터를 바로 삭제하지 않고 Merge때 삭제를 하는 이유는 세그머트가 가지는 역색인 구조와 관련이 깊다. 
 
-일반적인 역색인 구조는 색인 대상이 되는 문서를 최소 단위인 텀으로 분리하고 역색인 구조에 따라 정렬한 뒤 저장한다. 문서 하나를 제거하려면 전체 역색인 구조를 찾아 관련된 모든 텀을 제거해야 하기 때문에 사실 세그먼트를 다시 생성하는 것과 별반 다를바가 없저진다. 그래서 즉시 삭제하는 것이 아니라 주기적으로 세그먼가 재 생성되는 작업에서 물리적인 삭제를 함께 한다. 
-
+일반적인 역색인 구조는 색인 대상이 되는 문서를 최소 단위인 텀으로 분리하고 역색인 구조에 따라 정렬한 뒤 저장한다. 문서 하나를 제거하려면 전체 역색인 구조를 찾아 관련된 모든 텀을 제거해야 하기 때문에 **사실상 세그먼트를 다시 생성하는 것과 별반 다르지 않게 된다.** 그래서 즉시 삭제하는 것이 아니라 주기적인 Merge 작업에서 물리적인 데이터 삭제를 함께 진행한다.
 
 세그먼트 수정 작업의 경우, **세그먼트의 불변성 때문에 데이터를 삭제하고 다시 추가하는 방식으로 동작한다.** 기존 데이터는 삭제 처리되어 검색 대상에서 제외되고 변경된 데이터는 새로운 세그먼트에 추가되어 검색대상에 포함된다. 수정 작업을 정리하면 아래와 같다.
 
@@ -208,11 +207,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUyNDM2NTA4LDE4MzA1MTUxMjIsODE2Mj
-ExMDc4LC0xOTU2MzE3MjA4LDE1NDk1MDA3MzcsMTg3NTExMTA2
-NywtMjAyNzIwOTQ4NCwtMTc0NjM3NTgwOSwxMTkxNDQ4NTUxLD
-ExODA4MjA1NTIsNDc3NDY1OTEsLTQ5NTQyNjczNywxMTgzMTMx
-MDA3LDk4MDE2MTA2OSwxNTY0NjczNjkyLC01ODA5MzEyOCwzNT
-g3NzQyNDAsLTIxMjY1MzI1MzIsLTYyMjc4NTMwNywtMTg4Nzgy
-MTQxNl19
+eyJoaXN0b3J5IjpbLTEzODg5NzA2NTYsMTgzMDUxNTEyMiw4MT
+YyMTEwNzgsLTE5NTYzMTcyMDgsMTU0OTUwMDczNywxODc1MTEx
+MDY3LC0yMDI3MjA5NDg0LC0xNzQ2Mzc1ODA5LDExOTE0NDg1NT
+EsMTE4MDgyMDU1Miw0Nzc0NjU5MSwtNDk1NDI2NzM3LDExODMx
+MzEwMDcsOTgwMTYxMDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LD
+M1ODc3NDI0MCwtMjEyNjUzMjUzMiwtNjIyNzg1MzA3LC0xODg3
+ODIxNDE2XX0=
 -->
