@@ -155,9 +155,7 @@ Merge는 작업 후에는 어느순간에 반드시 Commit을 해야 한다. Com
 |Commit  | Flush|
 |Merge  |  Optimize API|
 
-단일 검색 엔진을 표방하는 루씬과는 달리 고가용성이 보장되어야 하는 분산 검색엔진인 엘라스틱서치는 루씬 보다 고려해야 할 사항이 훨씬 많다. 분산 시스템의 특성상 장애가 더 빈번할 수도 있고 단일 샤드에 장애가 발생하더라도 전체 클러스터에 영향이 없어요 햔다. 또한 장애 복구를 위한 레플리카 세트를 운영해야 하는데 레플리카 샤드 또한 일반 샤드와 별반 다를것이 없기 때문에 레플리카 세트가 많아질 수록 색인 비용 또한 많아진다. 
-
-이러한 이유로 **루씬의 작업을 그대로 사용하지 않고 고가용성에 적합하도록 개선 및 확장해서 제공한다.** 
+단일 검색 엔진을 표방하는 루씬과는 달리 고가용성이 보장되어야 하는 분산 검색엔진인 엘라스틱서치는 루씬 보다 고려해야 할 사항이 훨씬 많다. 분산 시스템의 특성상 장애가 더 빈번할 수도 있고 단일 샤드에 장애가 발생하더라도 전체 클러스터에 영향이 없어야 햔다. 또한 장애 복구를 위해 레플리카 세트를 운영해야 하는데 레플리카는 사실 프라이머리 샤드와 별반 다를것이 없기 때문에 레플리카 세트가 많아질 수록 색인 비용 또한 많아진다. 이런 여러 이유로 엘라스틱서치에서는 **루씬의 주요동작을 그대로 사용하지 않고 고가용성에 적합하도록 개선 및 확장해서 제공한다.** 이제 그 긴 
 
 ## Refresh
 
@@ -204,11 +202,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxMTQxOTQ4LDU2NzE1ODE4NywxNjM3OD
-E5NTc3LDE5NjYwMTQ5MTIsLTExNTQyMjQ0OTQsMjAyNDcxMTk4
-MiwtNTcxOTc5Mzg1LDEyMDkyMzEyMTUsLTEzODg5NzA2NTYsMT
-gzMDUxNTEyMiw4MTYyMTEwNzgsLTE5NTYzMTcyMDgsMTU0OTUw
-MDczNywxODc1MTExMDY3LC0yMDI3MjA5NDg0LC0xNzQ2Mzc1OD
-A5LDExOTE0NDg1NTEsMTE4MDgyMDU1Miw0Nzc0NjU5MSwtNDk1
-NDI2NzM3XX0=
+eyJoaXN0b3J5IjpbLTEyNjEyNzEwNyw1NjcxNTgxODcsMTYzNz
+gxOTU3NywxOTY2MDE0OTEyLC0xMTU0MjI0NDk0LDIwMjQ3MTE5
+ODIsLTU3MTk3OTM4NSwxMjA5MjMxMjE1LC0xMzg4OTcwNjU2LD
+E4MzA1MTUxMjIsODE2MjExMDc4LC0xOTU2MzE3MjA4LDE1NDk1
+MDA3MzcsMTg3NTExMTA2NywtMjAyNzIwOTQ4NCwtMTc0NjM3NT
+gwOSwxMTkxNDQ4NTUxLDExODA4MjA1NTIsNDc3NDY1OTEsLTQ5
+NTQyNjczN119
 -->
