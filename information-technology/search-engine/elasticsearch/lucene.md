@@ -126,7 +126,7 @@ write()
 
 **루씬 Commit**은 실제 물리적 디스크에 기록을 하는(동기화를 하는) fsync함수를 호출하는 작업을 말한다. Flush 단계가 존재하기 때문에 매번 Commit을 수행할 필요가 없어 보이지만 일정 주기로 Commit 작업을 통해 물리적 디스크로 기록(동기화) 작업을 수행해야 한다는 사실을 잊으면 안된다. 
 
-불변성이 지닌 이점세그먼트는 불변성을 기반으로 설계되었고, 이러한 불변성이 지닌 이점은 충분하다. 하지만 불변성을 유지하기 위해 루씬의 동작 방식은 다소 복잡해졌다. 불변성 유지를 위해 세그먼트 단위 검색(Per-Segment Search)을 제공하지만 시간이 흐를 수록 세그먼트의 개수가 늘어날 수 밖에 없고 이를 지원하기 위한 커밋 포인트 부하도 증가한다. 그래서 다수의 세그먼트를 하나로 합치는 자업이 필요하다. 이 작업이 Merge 작업이다. 
+세그먼트는 불변성을 기반으로 설계되었고, 불변성을 유지하기 위해 루씬의 동작 방식은 다소 복잡하다. 지속적으로 색인작업을 하고 시간이 흐를수록 세그먼트의 개수는 계속 늘어 이를 지원하기 위한 커밋 포인트 부하도 증가한다. 그래서 다수의 세그먼트를 하나로 합치는 자업이 필요하다. 이 작업이 Merge 작업이다. 
 
 병합 작업을 하면, 세그먼트의 수가 줄어들기 때문에 검색 횟수가 줄어들어 검색 성능이 좋아진다. 마찬가지로 수가 줄기 때문에 세그먼트가 차지하는 디스크 용량이 줄어든다. 삭제되는 문서의 경우 병합 작업 전에는 디스크에 물리적으로 남아 있다. 하지만 병합 작업으로 새로운 새그먼트를 생성하면 디스크에서 삭제가 되고 공간 절약이 가능해진다.
 
@@ -207,7 +207,7 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNzM0NDQ0NCwtNTcxOTc5Mzg1LDEyMD
+eyJoaXN0b3J5IjpbLTMyMDEzNTIwMiwtNTcxOTc5Mzg1LDEyMD
 kyMzEyMTUsLTEzODg5NzA2NTYsMTgzMDUxNTEyMiw4MTYyMTEw
 NzgsLTE5NTYzMTcyMDgsMTU0OTUwMDczNywxODc1MTExMDY3LC
 0yMDI3MjA5NDg0LC0xNzQ2Mzc1ODA5LDExOTE0NDg1NTEsMTE4
