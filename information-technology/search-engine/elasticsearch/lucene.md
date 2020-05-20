@@ -109,7 +109,7 @@
 
 버퍼에 모인 데이터는 세그먼트로 전환되고, 즉시 디스크에 동기화 된다. 하지만 **디스크에 물리적으로 동기화하는 일련의 과정은 운영체제 입장에서는 매우 비용이 큰 연산**이다. 때문에 세그먼트가 생성될때마다 물리적인 동기화를 할 경우 성능이 급격히 나빠질 수 있다. 
 
-루씬은 이러한 문제를 해결하기 위해 무거운 fsync방식을 쓰는 대신에 상대적으로 가벼운 write방식으로 쓰기과정을 수행한다. 
+루씬은 이러한 문제를 해결하기 위해 디스크 동기화에 사용하는 상대적으로 무거운 함수 fsync를 쓰는 대신에 상대적으로 가벼운 write방식으로 쓰기과정을 수행한다. 
 
 write()
 : 일반적으로 파일을 저장할 때 사용하는 함수다. 운영체제 내부 커널에는 시스템 캐시가 존재하는데 write함수를 이용하면 일단 시스템 캐시에만 기록된다. 이후 실제 데이터는 특정 주기로 물리 디스크에 기록된다. 물리적인 디스크 쓰기 작업을 하지 않기 때문에 빠르지만 시스템이 비정상 종료될 경우에는 데이터 유실이 발생할 수 있다.
@@ -206,11 +206,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODU4NTU4NzksLTU3MTk3OTM4NSwxMj
-A5MjMxMjE1LC0xMzg4OTcwNjU2LDE4MzA1MTUxMjIsODE2MjEx
-MDc4LC0xOTU2MzE3MjA4LDE1NDk1MDA3MzcsMTg3NTExMTA2Ny
-wtMjAyNzIwOTQ4NCwtMTc0NjM3NTgwOSwxMTkxNDQ4NTUxLDEx
-ODA4MjA1NTIsNDc3NDY1OTEsLTQ5NTQyNjczNywxMTgzMTMxMD
-A3LDk4MDE2MTA2OSwxNTY0NjczNjkyLC01ODA5MzEyOCwzNTg3
-NzQyNDBdfQ==
+eyJoaXN0b3J5IjpbMTE1MTE3NjM2NywtNTcxOTc5Mzg1LDEyMD
+kyMzEyMTUsLTEzODg5NzA2NTYsMTgzMDUxNTEyMiw4MTYyMTEw
+NzgsLTE5NTYzMTcyMDgsMTU0OTUwMDczNywxODc1MTExMDY3LC
+0yMDI3MjA5NDg0LC0xNzQ2Mzc1ODA5LDExOTE0NDg1NTEsMTE4
+MDgyMDU1Miw0Nzc0NjU5MSwtNDk1NDI2NzM3LDExODMxMzEwMD
+csOTgwMTYxMDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3
+NDI0MF19
 -->
