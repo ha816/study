@@ -104,7 +104,7 @@
 
 루씬은 효율적인 색인 작업을 위해 내부적으로 일정크기의 버퍼를 가지고 있다. 이러한 버퍼를 **인 메모리 버퍼(In-memory buffer)**라고 한다. 루씬에서 인메모리 버퍼 기반의 처리과정을 통들어 **Flush**라 부른다.
 
-루씬에 색인 작업이 요청되면 전달된 데이터는 일단 인메모리 버퍼에 순서대로 쌓인다. 그리고 나서 정책에 따라 인메모리 버퍼에 순서대로 쌓인다. 그리고 나서 정책에 따라 내부 버퍼에 일정 크기 이상 데이터가 쌓이거나 일정 시간이 지나면 버퍼에 쌓인 데이터를 모아 한꺼번에 처리한다. 버퍼를 일종의 큐로 활용하는 것이다. 
+루씬에 색인 작업이 요청되면 전달된 데이터는 먼저 인메모리 버퍼에 순서대로 쌓인다. 그리고 루씬 정책에 따라 인메모리 버퍼에 순서대로 쌓인다. 그리고 나서 정책에 따라 내부 버퍼에 일정 크기 이상 데이터가 쌓이거나 일정 시간이 지나면 버퍼에 쌓인 데이터를 모아 한꺼번에 처리한다. 버퍼를 일종의 큐로 활용하는 것이다. 
 
 ![enter image description here](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLuitG_woohDKnKKdYe90ayzNwf80eG2k_1ba9b1y_Qlg561tK&usqp=CAU)
 
@@ -207,11 +207,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwOTIzMTIxNSwtMTM4ODk3MDY1NiwxOD
-MwNTE1MTIyLDgxNjIxMTA3OCwtMTk1NjMxNzIwOCwxNTQ5NTAw
-NzM3LDE4NzUxMTEwNjcsLTIwMjcyMDk0ODQsLTE3NDYzNzU4MD
-ksMTE5MTQ0ODU1MSwxMTgwODIwNTUyLDQ3NzQ2NTkxLC00OTU0
-MjY3MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjksMTU2NDY3MzY5Mi
-wtNTgwOTMxMjgsMzU4Nzc0MjQwLC0yMTI2NTMyNTMyLC02MjI3
-ODUzMDddfQ==
+eyJoaXN0b3J5IjpbLTU3MTk3OTM4NSwxMjA5MjMxMjE1LC0xMz
+g4OTcwNjU2LDE4MzA1MTUxMjIsODE2MjExMDc4LC0xOTU2MzE3
+MjA4LDE1NDk1MDA3MzcsMTg3NTExMTA2NywtMjAyNzIwOTQ4NC
+wtMTc0NjM3NTgwOSwxMTkxNDQ4NTUxLDExODA4MjA1NTIsNDc3
+NDY1OTEsLTQ5NTQyNjczNywxMTgzMTMxMDA3LDk4MDE2MTA2OS
+wxNTY0NjczNjkyLC01ODA5MzEyOCwzNTg3NzQyNDAsLTIxMjY1
+MzI1MzJdfQ==
 -->
