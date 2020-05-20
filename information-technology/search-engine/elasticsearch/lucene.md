@@ -124,7 +124,7 @@ write()
 >ReOpen() -> openIfChanged()
 >루씬 IndexSearcher는 일단 생성되고 나면 이후 변경된 사항들을 기본적으로 인지 못한다. 물론 기존 IndexSearcher를 닫고 다시 만들면 되겠지만 문서의 추가나 변경이 빈번히 일어날 경우 많은 리소스가 필요해지기 때문에 권장하지 않는다. 이때 사용할 수 있는것이  ReOpen()이다. 일정 주기마다 문서가 변경된다면 이 함수를 써서 더 효율적으로 리소스를 사용할 수 있다. 루씬 3.5부터는 deprecated되었으며 openIfChanged를 쓰도록 하자.
 
-**루씬 Commit**은 실제 물리적 디스크에 기록을 하는(동기화를 하는) fsync함수를 호출하는 작업을 말한다. Flush 단계가 존재하기 때문에 매번 Commit을 수행할 필요가 없어 보이지만 일정 주기로 Commit 작업을 통해 물리적 디스크로 기록(동기화) 작업을 수행해야 한다는 사실을 잊으면 안된다. 
+**루씬 Commit**은 실제 물리적 디스크에 기록을 하는(동기화를 하는) fsync 함수를 호출하는 작업을 말한다. Flush 단계가 존재하기 때문에 매번 Commit을 수행할 필요가 없어 보이지만 일정 주기로 Commit 작업을 통해 물리적 디스크로 기록(동기화) 작업을 수행해야 한다는 사실을 잊으면 안된다. 
 
 세그먼트는 불변성을 기반으로 설계되었고, 불변성을 유지하기 위해 루씬의 동작 방식은 다소 복잡하다. 지속적으로 색인작업을 하면 시간이 흐를수록 세그먼트의 개수는 계속 늘어간다. 개수가 늘어남에 따라 이를 지원하기 위한 커밋 포인트 부하도 증가한다. 
 
@@ -134,7 +134,7 @@ Merge는 작업 후에는 어느순간에 반드시 Commit을 해야 한다. Com
 
 >**루씬 Flush**
 >색인 작업으로 세그먼트가 생성된 후, 시스템 캐시로 검색이 가능하도록 하는 과정
->write로 동기화를 했기 때문에 커널 시스템 캐시에만 데이터가 생성된다. 따라서 실제 물리적디스크에 쓰여진 상태는 아니다. 
+>write로 동기화를 했기 때문에 커널 시스템 캐시에만 데이터가 생성된다. 따라서 실제 물리적디스크까지 동기화가 된 상태는 아니다.
 
 >**루씬 Commit**
 >커널 시스템 캐시의 내용을 물리적인 디스크에 쓰는 작업
@@ -206,11 +206,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc1NjUxNTA1LC0xMTU0MjI0NDk0LDIwMj
-Q3MTE5ODIsLTU3MTk3OTM4NSwxMjA5MjMxMjE1LC0xMzg4OTcw
-NjU2LDE4MzA1MTUxMjIsODE2MjExMDc4LC0xOTU2MzE3MjA4LD
-E1NDk1MDA3MzcsMTg3NTExMTA2NywtMjAyNzIwOTQ4NCwtMTc0
-NjM3NTgwOSwxMTkxNDQ4NTUxLDExODA4MjA1NTIsNDc3NDY1OT
-EsLTQ5NTQyNjczNywxMTgzMTMxMDA3LDk4MDE2MTA2OSwxNTY0
-NjczNjkyXX0=
+eyJoaXN0b3J5IjpbLTg3ODM3NzEwOCwtMTE1NDIyNDQ5NCwyMD
+I0NzExOTgyLC01NzE5NzkzODUsMTIwOTIzMTIxNSwtMTM4ODk3
+MDY1NiwxODMwNTE1MTIyLDgxNjIxMTA3OCwtMTk1NjMxNzIwOC
+wxNTQ5NTAwNzM3LDE4NzUxMTEwNjcsLTIwMjcyMDk0ODQsLTE3
+NDYzNzU4MDksMTE5MTQ0ODU1MSwxMTgwODIwNTUyLDQ3NzQ2NT
+kxLC00OTU0MjY3MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjksMTU2
+NDY3MzY5Ml19
 -->
