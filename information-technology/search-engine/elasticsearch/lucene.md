@@ -147,7 +147,7 @@ Merge는 작업 후에는 어느순간에 반드시 Commit을 해야 한다. Com
 
 # 엘라스틱서치를 위한 Refresh, Flush, Optimize API
 
-엘라스틱서치 샤드는 사실상 루씬 인덱스의 확장이고 세그먼트 기반의 내부 동작을 그대로 검색에 활용한다. 엘라스틱서치는 다수의 샤드로 데이터가 분산 저장되어 있고 모든 샤드가 협력해 데이터 검색을 한다. 
+엘라스틱서치샤드는 사실상 루씬 인덱스의 확장이고 루씬인덱스의 세그먼트 기반 동작을 그대로 활용한다. 엘라스틱서치에서는 다수의 샤드로 데이터가 분산 저장되어 있고 검색시 모든 샤드가 협력한다. 
 
 엘라스틱서치는 사실 내부에 루씬 인덱스가 가지는 기능을 확장해서 API로 제공한다. 그렇게 때문에 루씬의 파라미터들을 튜닝하면 엘라스틱서치에서도 그에 사응하는 성능상의 이점을 얻을 수 있다. 대표적인 튜닝 포인트인 Flush, Commit, Merge 작업 또한 확장되어 API로 제공된다. 하지만 루씬의 작업을 엘라스틱서치에서는 전혀 다른 명칭으로 부르고 있기 때문에 주의해야 한다.
 
@@ -206,11 +206,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg3Njg4NzAwLC0xMTU0MjI0NDk0LDIwMj
-Q3MTE5ODIsLTU3MTk3OTM4NSwxMjA5MjMxMjE1LC0xMzg4OTcw
-NjU2LDE4MzA1MTUxMjIsODE2MjExMDc4LC0xOTU2MzE3MjA4LD
-E1NDk1MDA3MzcsMTg3NTExMTA2NywtMjAyNzIwOTQ4NCwtMTc0
-NjM3NTgwOSwxMTkxNDQ4NTUxLDExODA4MjA1NTIsNDc3NDY1OT
-EsLTQ5NTQyNjczNywxMTgzMTMxMDA3LDk4MDE2MTA2OSwxNTY0
-NjczNjkyXX0=
+eyJoaXN0b3J5IjpbMTk2NjAxNDkxMiwtMTE1NDIyNDQ5NCwyMD
+I0NzExOTgyLC01NzE5NzkzODUsMTIwOTIzMTIxNSwtMTM4ODk3
+MDY1NiwxODMwNTE1MTIyLDgxNjIxMTA3OCwtMTk1NjMxNzIwOC
+wxNTQ5NTAwNzM3LDE4NzUxMTEwNjcsLTIwMjcyMDk0ODQsLTE3
+NDYzNzU4MDksMTE5MTQ0ODU1MSwxMTgwODIwNTUyLDQ3NzQ2NT
+kxLC00OTU0MjY3MzcsMTE4MzEzMTAwNyw5ODAxNjEwNjksMTU2
+NDY3MzY5Ml19
 -->
