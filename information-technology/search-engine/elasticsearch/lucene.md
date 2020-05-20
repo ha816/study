@@ -107,7 +107,7 @@
 루씬에 색인 작업이 요청되면 전달된 데이터는 먼저 인메모리 버퍼에 순서대로 쌓인다. 그리고 루씬 정책에 따라 인메모리 버퍼에 순서대로 쌓인다. 내부 버퍼가 일정크기 이상으로 데이터가 쌓이거나 일정시간이 지나면 버퍼에 쌓인 데이터를 모아 한꺼번에 처리한다. 버퍼를 일종의 큐로 활용하는 것이다.
 ![enter image description here](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLuitG_woohDKnKKdYe90ayzNwf80eG2k_1ba9b1y_Qlg561tK&usqp=CAU)
 
-버퍼에 모여 한꺼번에 처리된 데이터는 세그먼트 형태로 생성되고 즉시 디스크로 동기화 된다. 하지만 디스크에 물리적으로 동기화하는 일련의 과정은 운여에제 입장에서는 매우 비용이 큰 연산이기 때문에 세그먼트가 생성될때마다 물리적인 동기화를 할 경우 성능이 급격히 나빠질 수 있다. 
+버퍼에 모인 데이터는 세그먼트로 전환되고, 즉시 디스크에 동기화 된다. 하지만 **디스크에 물리적으로 동기화하는 일련의 과정은 운영체제 입장에서는 매우 비용이 큰 연산**이다. 때문에 세그먼트가 생성될때마다 물리적인 동기화를 할 경우 성능이 급격히 나빠질 수 있다. 
 
 루씬은 이러한 문제를 해결하기 위해 무거운 fsync방식을 쓰는 대신에 상대적으로 가벼운 write방식으로 쓰기과정을 수행한다. 
 
@@ -206,11 +206,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5ODY5MDgxNSwtNTcxOTc5Mzg1LDEyMD
-kyMzEyMTUsLTEzODg5NzA2NTYsMTgzMDUxNTEyMiw4MTYyMTEw
-NzgsLTE5NTYzMTcyMDgsMTU0OTUwMDczNywxODc1MTExMDY3LC
-0yMDI3MjA5NDg0LC0xNzQ2Mzc1ODA5LDExOTE0NDg1NTEsMTE4
-MDgyMDU1Miw0Nzc0NjU5MSwtNDk1NDI2NzM3LDExODMxMzEwMD
-csOTgwMTYxMDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3
-NDI0MF19
+eyJoaXN0b3J5IjpbLTE1ODU4NTU4NzksLTU3MTk3OTM4NSwxMj
+A5MjMxMjE1LC0xMzg4OTcwNjU2LDE4MzA1MTUxMjIsODE2MjEx
+MDc4LC0xOTU2MzE3MjA4LDE1NDk1MDA3MzcsMTg3NTExMTA2Ny
+wtMjAyNzIwOTQ4NCwtMTc0NjM3NTgwOSwxMTkxNDQ4NTUxLDEx
+ODA4MjA1NTIsNDc3NDY1OTEsLTQ5NTQyNjczNywxMTgzMTMxMD
+A3LDk4MDE2MTA2OSwxNTY0NjczNjkyLC01ODA5MzEyOCwzNTg3
+NzQyNDBdfQ==
 -->
