@@ -82,14 +82,14 @@
 
 ## 세그먼트 삭제 및 수정
 
-세그먼트 삭제 작업의 경우, **요청즉시 세그먼트를 삭제하는 것이 아니다.** 모든 데이터에는 삭제 여부를 표시하는 비트 배열을 내부적으로 가진다. 삭제 요청이 들어오면 삭제될 대상 데이터의 비트 배열을 찾아 삭제 여부만 표시한다. 비트에 표시만 했기 때문에 여전히 해당 데이터는 남아있다. 검색시에는 비트배열에 삭제 여부를 항상 먼저 판단하기 때문에 불변성을 훼손하지 않고도 빠르게 검색대상에서 제외할 수 있다. 루씬 세그먼트 삭제 작업을 정리하면 아래와 같다. 
+세그먼트 삭제 작업의 경우, **요청 즉시 세그먼트를 삭제하는 것이 아니다.** 모든 데이터에는 삭제 여부를 표시하는 비트 배열을 내부적으로 가진다. 삭제 요청이 들어오면 삭제될 대상 데이터의 비트 배열을 찾아 삭제 여부만 표시한다. 비트에 표시만 했기 때문에 여전히 해당 데이터는 남아있다. 검색시에는 비트배열에 삭제 여부를 항상 먼저 판단하기 때문에 불변성을 훼손하지 않고도 빠르게 검색대상에서 제외할 수 있다. 루씬 세그먼트 삭제 작업을 정리하면 아래와 같다. 
 
 1. 루씬은 삭제될 데이터가 포함된 세그먼트의 삭제 여부 비트 배열을 확인한다.
 2. 삭제 여부 비트 배열의 flag를 삭제로 표시한다.
 3. 세그먼트에 직접적인 변경사항은 없으므로 세그먼트의 불변성을 해치지 않으며 캐시도 그대로 유지된다. 
 4. IndexSearcher는 검색 작업시 삭제 여부 비트 배열을 항상 먼저 확인하고 체크된 데이터를 검색결과에서 제외한다.
 
-그렇다면 **삭제될 데이터가 실제 물리적으로 삭제되는 시점은 언제일까?** 백그라운드에서 주기적으로 일어나는 Merge 작업이 수행될때 삭제가 된다. 루씬이 삭제 데이터를 바로 삭제하지 않고 병합 작업시 삭제를 하는 이유는 세그머트가 가지는 역색인 구조와 관련이 깊다. 
+그렇다면 **삭제될 데이터가 실제 물리적으로 삭제되는 시점은 언제일까?** 바로 백그라운드에서 주기적으로 일어나는 Merge 작업이 수행될때 데이터 삭제가 이루어진다. 루씬이 삭제 데이터를 바로 삭제하지 않고 병합 작업시 삭제를 하는 이유는 세그머트가 가지는 역색인 구조와 관련이 깊다. 
 
 일반적인 역색인 구조는 색인 대상이 되는 문서를 최소단위인 텀 단우의 단어로 분리하고 역색인 구조에 따라 정렬한 뒤 저장한다. 문서 하나를 제거하려면 전체 역색인 구조를 찾아 관련된 모든 텀을 제거해야 하기 때문에 사실 세그먼트를 다시 생성하는 것과 별반 다를바가 없저진다. 그래서 즉시 삭제하는 것이 아니라 주기적으로 세그먼가 재 생성되는 작업에서 물리적인 삭제를 함께 한다. 
 
@@ -208,11 +208,11 @@ lucene의 대해서 어느 정도 알게 되었다면, 엘라스틱서치에서 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU4ODA3ODcyLDgxNjIxMTA3OCwtMTk1Nj
-MxNzIwOCwxNTQ5NTAwNzM3LDE4NzUxMTEwNjcsLTIwMjcyMDk0
-ODQsLTE3NDYzNzU4MDksMTE5MTQ0ODU1MSwxMTgwODIwNTUyLD
-Q3NzQ2NTkxLC00OTU0MjY3MzcsMTE4MzEzMTAwNyw5ODAxNjEw
-NjksMTU2NDY3MzY5MiwtNTgwOTMxMjgsMzU4Nzc0MjQwLC0yMT
-I2NTMyNTMyLC02MjI3ODUzMDcsLTE4ODc4MjE0MTYsNzE3MDQ1
-Mzg4XX0=
+eyJoaXN0b3J5IjpbMTgzMDUxNTEyMiw4MTYyMTEwNzgsLTE5NT
+YzMTcyMDgsMTU0OTUwMDczNywxODc1MTExMDY3LC0yMDI3MjA5
+NDg0LC0xNzQ2Mzc1ODA5LDExOTE0NDg1NTEsMTE4MDgyMDU1Mi
+w0Nzc0NjU5MSwtNDk1NDI2NzM3LDExODMxMzEwMDcsOTgwMTYx
+MDY5LDE1NjQ2NzM2OTIsLTU4MDkzMTI4LDM1ODc3NDI0MCwtMj
+EyNjUzMjUzMiwtNjIyNzg1MzA3LC0xODg3ODIxNDE2LDcxNzA0
+NTM4OF19
 -->
