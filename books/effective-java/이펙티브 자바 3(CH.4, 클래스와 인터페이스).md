@@ -417,15 +417,18 @@ class Figure {
 >핵심정리
 >태그 달린 클래스를 써야하는 상황은 거의 없다. 새로운 클래스를 작성하는 데 태그 필드가 등장한다면 태그를 없애고 계층 구조로 대체하는 방법을 생각해보자. 기존 클래스가 태그필드를 사용하고 있다면 계층 구조로 리팩토링하도록 해보자. 
 
-### Item.24 멤버 클래스는 가능하면 static으로 선언하라.
+## Item.24 멤버 클래스는 가능하면 static으로 선언하라.
 
 중첩 클래스(nested class)는 다른 클래스 안에 정의된 클래스이다.중첩 클래스는 중첩 클래스를 감싼 바깥 클래스에서만 사용된다. 그 외에 쓰임새가 있다면 따로 클래스를 만들어야 한다. 중첩 클래스의 종류에는 아래 네 가지가 있다.
 
- 1. 정적 멤버 클래스(Inner Class X)
- 2. 비정적 멤버 클래스(Inner Class)
- 3. 익명 클래스(Inner Class)
- 4. 로컬 클래스(Inner Class)
-정적 멤버 클래스를 제외하면 모두 내부 클래스(inner class) 이다.
+* 정적 멤버 클래스(Inner Class X)
+* 비정적 멤버 클래스(Inner Class)
+* 익명 클래스(Inner Class)
+* 로컬 클래스(Inner Class)
+
+정적 멤버 클래스를 제외하면 모두 내부 클래스(inner class)이다. 이제 순서대로 각 중첩 클래스를 언제 그리고 왜 사용해야 하는지 알아보자.
+
+### 정적 멤버 클래스
 
 정적 멤버 클래스는 가장 간단한 중첩 클래스다. 정적 멤버 클래스는 바깥 클래스의 정적 멤버이며, 다른 정적 멤버와 동일한 접근 권한 규칙을 따른다.
 
@@ -437,11 +440,11 @@ class Figure {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMjAxNjg4OCwxMTEyNzc5OTk2LC0xNz
-c2MjgsLTQ0NjMyMjkzOCwtMTUyMDI2OTU2MSwyMDE2NTEwMDA4
-LC0yMDI3ODg0OTU0LC0xMDY2NTQxNDcwLDY1ODc4NjE2NiwtOT
-M5NTQ2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LDE3MTI1Mzcy
-NjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1NjEzNjI4MC
-wxNzIzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIwMTg3NCwxMzgx
-MTEyNDc4XX0=
+eyJoaXN0b3J5IjpbLTE3OTk5NjM5NiwxNzAyMDE2ODg4LDExMT
+I3Nzk5OTYsLTE3NzYyOCwtNDQ2MzIyOTM4LC0xNTIwMjY5NTYx
+LDIwMTY1MTAwMDgsLTIwMjc4ODQ5NTQsLTEwNjY1NDE0NzAsNj
+U4Nzg2MTY2LC05Mzk1NDYyMDcsLTMwODkyOTgxOSwyNDQ1NTAw
+MjgsMTcxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIyMzY0LC
+0xMzU2MTM2MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NSwxNzIx
+MjAxODc0XX0=
 -->
