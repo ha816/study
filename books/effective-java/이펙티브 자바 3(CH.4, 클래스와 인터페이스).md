@@ -436,16 +436,18 @@ class Figure {
 
 ### 비정적 멤버 클래스(non-static)
 
-정적 멤버 클래스와 비정적 멤버 클래스의 구문상 차이는 단지 static이 붙었느냐 아니냐 차이 뿐이지만, 의미상의 차이는 굉장히 크다. 비정적 멤버 클ㄹ
+정적 멤버 클래스와 비정적 멤버 클래스의 구문상 차이는 단지 static이 붙었느냐 아니냐 차이 뿐이지만, 의미상의 차이는 굉장히 크다. 비정적 멤버 클래스의 인스턴스는 바깥 클래스의 인스턴스와 암묵적으로 연결된다. 그래서 비정적 멤버 클래스의 인스턴스 메서드에서 정규화된 this를 사용하면 바깥 인스턴스의 메서드를 호출하거나, 바깥 인스턴스의 참조를 가져올 수 있다. 
+
+정규화된 this 란
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMjQ2MjEyNywtMzg4OTYyOTQ0LDE1MT
-I3MDE2ODEsLTE3OTk5NjM5NiwxNzAyMDE2ODg4LDExMTI3Nzk5
-OTYsLTE3NzYyOCwtNDQ2MzIyOTM4LC0xNTIwMjY5NTYxLDIwMT
-Y1MTAwMDgsLTIwMjc4ODQ5NTQsLTEwNjY1NDE0NzAsNjU4Nzg2
-MTY2LC05Mzk1NDYyMDcsLTMwODkyOTgxOSwyNDQ1NTAwMjgsMT
-cxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIyMzY0LC0xMzU2
-MTM2MjgwXX0=
+eyJoaXN0b3J5IjpbLTEwMTI0NzY5MjAsLTM4ODk2Mjk0NCwxNT
+EyNzAxNjgxLC0xNzk5OTYzOTYsMTcwMjAxNjg4OCwxMTEyNzc5
+OTk2LC0xNzc2MjgsLTQ0NjMyMjkzOCwtMTUyMDI2OTU2MSwyMD
+E2NTEwMDA4LC0yMDI3ODg0OTU0LC0xMDY2NTQxNDcwLDY1ODc4
+NjE2NiwtOTM5NTQ2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LD
+E3MTI1MzcyNjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1
+NjEzNjI4MF19
 -->
