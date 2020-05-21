@@ -419,12 +419,12 @@ class Figure {
 
 ### Item.24 멤버 클래스는 가능하면 static으로 선언하라.
 
-중첩 클래스(nested class)는 다른 클래스 안에 정의된 클래스이다. 따라서 내부 클래스(inner class)라고도 부른다. 중첩 클래스는 중첩 클래스를 감싼 바깥 클래스에서만 사용된다. 그 외에 쓰임새가 있다면 따로 클래스를 만들어야 한다. 
+중첩 클래스(nested class)는 다른 클래스 안에 정의된 클래스이다.중첩 클래스는 중첩 클래스를 감싼 바깥 클래스에서만 사용된다. 그 외에 쓰임새가 있다면 따로 클래스를 만들어야 한다. 중첩 클래스의 종류에는 아래 네 가지가 있다.
 
- 1. 정적 멤버 클래스 
- 2. 비정적 멤버 클래스 
- 3. 익명 클래스 
- 4. 로컬 클래스
+ 1. 정적 멤버 클래스(Inner Class X)
+ 2. 비정적 멤버 클래스(Inner Class)
+ 3. 익명 클래스(Inner Class)
+ 4. 로컬 클래스(Inner Class)
 정적 멤버 클래스를 제외하면 모두 내부 클래스(inner class) 이다.
 
 정적 멤버 클래스는 가장 간단한 중첩 클래스다. 정적 멤버 클래스는 바깥 클래스의 정적 멤버이며, 다른 정적 멤버와 동일한 접근 권한 규칙을 따른다.
@@ -437,11 +437,11 @@ class Figure {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMjc3OTk5NiwtMTc3NjI4LC00NDYzMj
-I5MzgsLTE1MjAyNjk1NjEsMjAxNjUxMDAwOCwtMjAyNzg4NDk1
-NCwtMTA2NjU0MTQ3MCw2NTg3ODYxNjYsLTkzOTU0NjIwNywtMz
-A4OTI5ODE5LDI0NDU1MDAyOCwxNzEyNTM3MjYyLC0xNDk4NjI3
-MTEwLDE5ODA2MjIzNjQsLTEzNTYxMzYyODAsMTcyMzk2MDQ0MS
-wyMDM3MzU5NDk1LDE3MjEyMDE4NzQsMTM4MTExMjQ3OCwtMTcx
-Njc4OTA5OV19
+eyJoaXN0b3J5IjpbMTcwMjAxNjg4OCwxMTEyNzc5OTk2LC0xNz
+c2MjgsLTQ0NjMyMjkzOCwtMTUyMDI2OTU2MSwyMDE2NTEwMDA4
+LC0yMDI3ODg0OTU0LC0xMDY2NTQxNDcwLDY1ODc4NjE2NiwtOT
+M5NTQ2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LDE3MTI1Mzcy
+NjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1NjEzNjI4MC
+wxNzIzOTYwNDQxLDIwMzczNTk0OTUsMTcyMTIwMTg3NCwxMzgx
+MTEyNDc4XX0=
 -->
