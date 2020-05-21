@@ -417,16 +417,9 @@ class Figure {
 >핵심정리
 >태그 달린 클래스를 써야하는 상황은 거의 없다. 새로운 클래스를 작성하는 데 태그 필드가 등장한다면 태그를 없애고 계층 구조로 대체하는 방법을 생각해보자. 기존 클래스가 태그필드를 사용하고 있다면 계층 구조로 리팩토링하도록 해보자. 
 
+### Item.24 멤버 클래스는 가능하면 static으로 선언하라.
 
-### 21. 전략을 표현하고 싶을때는 함수 객체를 사용해라 
-
-함수 포인터, 대리자, 람다표현식 처럼 특정 함수를 호출 가능한 능력을 가지는 것들이 있다. 보틍은 함수의 인자로 함수를 전달하기 위해서 사용.
-
-자바는 함수 포인터를 지원하지 않지만, 객체 참조를 통해 비슷하게 구현이 가능. 이런 객체를 함수 객체라고 한다. 
-
-### 22. 멤버 클래스는 가능하면 static으로 선언하라.
-
-중첩 클래스(nested class): 클래스 안에 정의된 클래스이다. 
+중첩 클래스(nested class)는 다른 클래스 안에 정의된 클래스이다. 따라서 내부 클inner class 
 중첩 클래스는 해당 클래스가 속한 클래스 안에서만 사용된다. 그렇지 않으면 중첩 클래스로 만들면 안된다.
 
  1. 정적 멤버 클래스 
@@ -445,11 +438,11 @@ class Figure {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzYyOCwtNDQ2MzIyOTM4LC0xNTIwMj
-Y5NTYxLDIwMTY1MTAwMDgsLTIwMjc4ODQ5NTQsLTEwNjY1NDE0
-NzAsNjU4Nzg2MTY2LC05Mzk1NDYyMDcsLTMwODkyOTgxOSwyND
-Q1NTAwMjgsMTcxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIy
-MzY0LC0xMzU2MTM2MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NS
-wxNzIxMjAxODc0LDEzODExMTI0NzgsLTE3MTY3ODkwOTksNzI4
-NjEyMDcyXX0=
+eyJoaXN0b3J5IjpbLTE2Mjg1Mjg5NDUsLTE3NzYyOCwtNDQ2Mz
+IyOTM4LC0xNTIwMjY5NTYxLDIwMTY1MTAwMDgsLTIwMjc4ODQ5
+NTQsLTEwNjY1NDE0NzAsNjU4Nzg2MTY2LC05Mzk1NDYyMDcsLT
+MwODkyOTgxOSwyNDQ1NTAwMjgsMTcxMjUzNzI2MiwtMTQ5ODYy
+NzExMCwxOTgwNjIyMzY0LC0xMzU2MTM2MjgwLDE3MjM5NjA0ND
+EsMjAzNzM1OTQ5NSwxNzIxMjAxODc0LDEzODExMTI0NzgsLTE3
+MTY3ODkwOTldfQ==
 -->
