@@ -430,7 +430,7 @@ class Figure {
 
 ### 정적 멤버 클래스
 
-정적 멤버 클래스는 가장 간단한 중첩 클래스다. 정적 멤버 클래스는 바깥 클래스의 정적 멤버이며, 다른 정적 멤버와 동일한 접근 권한 규칙을 따른다.
+정적 멤버 클래스는 가장 간단한 중첩 클래스다. 정적 멤버 클래스는 다른 클래스안에 선언되고, 바깥 클래스의 private 멤버에서도 저급할 수 있다는 점만 제외하고는 일반 클래스와 동일하다. 정적 멤버 클래스는 다른 정적 멤버와 똑같은 접근 규칙을 가진다
 
 비정적 멤버 클래스는 어댑터를 정의할때 많이 쓰인다. 바깥 클래스 객체를 다른 클래스 객체인것 처처럼 보이게 쓰인다. 
 
@@ -440,11 +440,11 @@ class Figure {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTk5NjM5NiwxNzAyMDE2ODg4LDExMT
-I3Nzk5OTYsLTE3NzYyOCwtNDQ2MzIyOTM4LC0xNTIwMjY5NTYx
-LDIwMTY1MTAwMDgsLTIwMjc4ODQ5NTQsLTEwNjY1NDE0NzAsNj
-U4Nzg2MTY2LC05Mzk1NDYyMDcsLTMwODkyOTgxOSwyNDQ1NTAw
-MjgsMTcxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOTgwNjIyMzY0LC
-0xMzU2MTM2MjgwLDE3MjM5NjA0NDEsMjAzNzM1OTQ5NSwxNzIx
-MjAxODc0XX0=
+eyJoaXN0b3J5IjpbLTI1MTg3Mzk5NiwtMTc5OTk2Mzk2LDE3MD
+IwMTY4ODgsMTExMjc3OTk5NiwtMTc3NjI4LC00NDYzMjI5Mzgs
+LTE1MjAyNjk1NjEsMjAxNjUxMDAwOCwtMjAyNzg4NDk1NCwtMT
+A2NjU0MTQ3MCw2NTg3ODYxNjYsLTkzOTU0NjIwNywtMzA4OTI5
+ODE5LDI0NDU1MDAyOCwxNzEyNTM3MjYyLC0xNDk4NjI3MTEwLD
+E5ODA2MjIzNjQsLTEzNTYxMzYyODAsMTcyMzk2MDQ0MSwyMDM3
+MzU5NDk1XX0=
 -->
