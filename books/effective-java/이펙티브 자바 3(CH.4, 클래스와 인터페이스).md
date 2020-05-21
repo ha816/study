@@ -428,25 +428,24 @@ class Figure {
 
 정적 멤버 클래스를 제외하면 모두 내부 클래스(inner class)이다. 이제 순서대로 각 중첩 클래스를 언제 그리고 왜 사용해야 하는지 알아보자.
 
-### 정적 멤버 클래스
+### 정적 멤버 클래스(static)
 
 정적 멤버 클래스는 가장 간단한 중첩 클래스다. 정적 멤버 클래스는 다른 클래스안에 선언되고, 바깥 클래스의 private 멤버에서도 접근할 수 있다는 점만 제외하고는 일반 클래스와 동일하다. 정적 멤버 클래스는 다른 정적 멤버와 똑같은 접근 규칙을 가진다. 예컨대 private으로 선언하면 바깥 클래스(정적 멤버 클래스를 감싼)에서만 접근할 수 있는 식이다. 
 
-정정 멤버 클래스는 흔히 바깥 클래스와 함께 쓰일때만 유용한 public 도우미 클래스로 쓰인다. 
+정정 멤버 클래스는 흔히 바깥 클래스와 함께 쓰일때만 유용한 public 도우미 클래스로 쓰인다.
 
-비정적 멤버 클래스는 어댑터를 정의할때 많이 쓰인다. 바깥 클래스 객체를 다른 클래스 객체인것 처처럼 보이게 쓰인다. 
+### 비정적 멤버 클래스(non-static)
 
-바깥 클래스 객체에 접근할 필요가 없는 멤버 클래스를 정의할때는 항상 선언문 앞에 static을 붙여서 비-정적 멤버 클래스 대신 정적 멤버 클래스로 만들자. 
-
+정적 멤버 큸
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzc0MzEwNCwxNTEyNzAxNjgxLC0xNz
-k5OTYzOTYsMTcwMjAxNjg4OCwxMTEyNzc5OTk2LC0xNzc2Mjgs
-LTQ0NjMyMjkzOCwtMTUyMDI2OTU2MSwyMDE2NTEwMDA4LC0yMD
-I3ODg0OTU0LC0xMDY2NTQxNDcwLDY1ODc4NjE2NiwtOTM5NTQ2
-MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LDE3MTI1MzcyNjIsLT
-E0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1NjEzNjI4MCwxNzIz
-OTYwNDQxXX0=
+eyJoaXN0b3J5IjpbLTIwNjM5NTM0MjcsMTUxMjcwMTY4MSwtMT
+c5OTk2Mzk2LDE3MDIwMTY4ODgsMTExMjc3OTk5NiwtMTc3NjI4
+LC00NDYzMjI5MzgsLTE1MjAyNjk1NjEsMjAxNjUxMDAwOCwtMj
+AyNzg4NDk1NCwtMTA2NjU0MTQ3MCw2NTg3ODYxNjYsLTkzOTU0
+NjIwNywtMzA4OTI5ODE5LDI0NDU1MDAyOCwxNzEyNTM3MjYyLC
+0xNDk4NjI3MTEwLDE5ODA2MjIzNjQsLTEzNTYxMzYyODAsMTcy
+Mzk2MDQ0MV19
 -->
