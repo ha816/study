@@ -436,16 +436,16 @@ class Figure {
 
 ### 비정적 멤버 클래스(non-static)
 
-정적 멤버 큸
+정적 멤버 클래스와 비정적 멤버 클래스의 구문상 차이는 단지 static이 붙었느냐 아니냐 차이 뿐이지만, 의미상의 차이는 굉장히 크다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjM5NTM0MjcsMTUxMjcwMTY4MSwtMT
-c5OTk2Mzk2LDE3MDIwMTY4ODgsMTExMjc3OTk5NiwtMTc3NjI4
-LC00NDYzMjI5MzgsLTE1MjAyNjk1NjEsMjAxNjUxMDAwOCwtMj
-AyNzg4NDk1NCwtMTA2NjU0MTQ3MCw2NTg3ODYxNjYsLTkzOTU0
-NjIwNywtMzA4OTI5ODE5LDI0NDU1MDAyOCwxNzEyNTM3MjYyLC
-0xNDk4NjI3MTEwLDE5ODA2MjIzNjQsLTEzNTYxMzYyODAsMTcy
-Mzk2MDQ0MV19
+eyJoaXN0b3J5IjpbLTM4ODk2Mjk0NCwxNTEyNzAxNjgxLC0xNz
+k5OTYzOTYsMTcwMjAxNjg4OCwxMTEyNzc5OTk2LC0xNzc2Mjgs
+LTQ0NjMyMjkzOCwtMTUyMDI2OTU2MSwyMDE2NTEwMDA4LC0yMD
+I3ODg0OTU0LC0xMDY2NTQxNDcwLDY1ODc4NjE2NiwtOTM5NTQ2
+MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LDE3MTI1MzcyNjIsLT
+E0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1NjEzNjI4MCwxNzIz
+OTYwNDQxXX0=
 -->
