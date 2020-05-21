@@ -419,8 +419,7 @@ class Figure {
 
 ### Item.24 멤버 클래스는 가능하면 static으로 선언하라.
 
-중첩 클래스(nested class)는 다른 클래스 안에 정의된 클래스이다. 따라서 내부 클inner class 
-중첩 클래스는 해당 클래스가 속한 클래스 안에서만 사용된다. 그렇지 않으면 중첩 클래스로 만들면 안된다.
+중첩 클래스(nested class)는 다른 클래스 안에 정의된 클래스이다. 따라서 내부 클래스(inner class)라고도 부른다. 중첩 클래스는 중첩 클래스를 감싼 바깥 클래스에서만 사용된다. 그 외에 쓰임새가 있다면 따로 클래스를 만들어야 한다. 
 
  1. 정적 멤버 클래스 
  2. 비정적 멤버 클래스 
@@ -438,11 +437,11 @@ class Figure {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjg1Mjg5NDUsLTE3NzYyOCwtNDQ2Mz
-IyOTM4LC0xNTIwMjY5NTYxLDIwMTY1MTAwMDgsLTIwMjc4ODQ5
-NTQsLTEwNjY1NDE0NzAsNjU4Nzg2MTY2LC05Mzk1NDYyMDcsLT
-MwODkyOTgxOSwyNDQ1NTAwMjgsMTcxMjUzNzI2MiwtMTQ5ODYy
-NzExMCwxOTgwNjIyMzY0LC0xMzU2MTM2MjgwLDE3MjM5NjA0ND
-EsMjAzNzM1OTQ5NSwxNzIxMjAxODc0LDEzODExMTI0NzgsLTE3
-MTY3ODkwOTldfQ==
+eyJoaXN0b3J5IjpbMTExMjc3OTk5NiwtMTc3NjI4LC00NDYzMj
+I5MzgsLTE1MjAyNjk1NjEsMjAxNjUxMDAwOCwtMjAyNzg4NDk1
+NCwtMTA2NjU0MTQ3MCw2NTg3ODYxNjYsLTkzOTU0NjIwNywtMz
+A4OTI5ODE5LDI0NDU1MDAyOCwxNzEyNTM3MjYyLC0xNDk4NjI3
+MTEwLDE5ODA2MjIzNjQsLTEzNTYxMzYyODAsMTcyMzk2MDQ0MS
+wyMDM3MzU5NDk1LDE3MjEyMDE4NzQsMTM4MTExMjQ3OCwtMTcx
+Njc4OTA5OV19
 -->
