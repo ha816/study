@@ -438,16 +438,17 @@ class Figure {
 
 정적 멤버 클래스와 비정적 멤버 클래스의 구문상 차이는 단지 static이 붙었느냐 아니냐 차이 뿐이지만, 의미상의 차이는 굉장히 크다. 비정적 멤버 클래스의 인스턴스는 바깥 클래스의 인스턴스와 암묵적으로 연결된다. 그래서 비정적 멤버 클래스의 인스턴스 메서드에서 정규화된 this를 사용하면 바깥 인스턴스의 메서드를 호출하거나, 바깥 인스턴스의 참조를 가져올 수 있다. 
 
-정규화된 this 란
+**정규화된 this**는 클래스명.this형태로 **바깥 클래스의 이름을 명시하는 용법을 말한다.** 
+따라서 개념상 중첩 클래스의 인스턴스가 바깥 인스턴스와 독립적으로 존재할 수 있다면 정적 멤버 클래스로 만들어야 한다. **비정적 멤버 클래스는 바깥 인스턴스 없이는 생성할 수 없기 때문이다**. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTI0NzY5MjAsLTM4ODk2Mjk0NCwxNT
-EyNzAxNjgxLC0xNzk5OTYzOTYsMTcwMjAxNjg4OCwxMTEyNzc5
-OTk2LC0xNzc2MjgsLTQ0NjMyMjkzOCwtMTUyMDI2OTU2MSwyMD
-E2NTEwMDA4LC0yMDI3ODg0OTU0LC0xMDY2NTQxNDcwLDY1ODc4
-NjE2NiwtOTM5NTQ2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LD
-E3MTI1MzcyNjIsLTE0OTg2MjcxMTAsMTk4MDYyMjM2NCwtMTM1
-NjEzNjI4MF19
+eyJoaXN0b3J5IjpbMTM2NTY4ODI1MCwtMTAxMjQ3NjkyMCwtMz
+g4OTYyOTQ0LDE1MTI3MDE2ODEsLTE3OTk5NjM5NiwxNzAyMDE2
+ODg4LDExMTI3Nzk5OTYsLTE3NzYyOCwtNDQ2MzIyOTM4LC0xNT
+IwMjY5NTYxLDIwMTY1MTAwMDgsLTIwMjc4ODQ5NTQsLTEwNjY1
+NDE0NzAsNjU4Nzg2MTY2LC05Mzk1NDYyMDcsLTMwODkyOTgxOS
+wyNDQ1NTAwMjgsMTcxMjUzNzI2MiwtMTQ5ODYyNzExMCwxOTgw
+NjIyMzY0XX0=
 -->
