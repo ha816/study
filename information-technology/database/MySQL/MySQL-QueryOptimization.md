@@ -16,12 +16,12 @@ SQL 작성 규칙은 대소문자 구분, 문자열 표기방법등 MySQL 서버
 
 ## SQL 모드
 
-MySQL 서버의 ㄴ
+MySQL 서버의 sql_mode라는 시스템 설정엔 여러 값이 동시에 설정된다. 그 중 대표적으로 SQL 작성과 결과에 영향이 있는 것들은 무엇인지 알아보자. MySQL 서버 설정 파일에서 sql_mode를 설정할때는 구분자(,)를 사용해 아래 키워드를 동시에 설정할 수 있다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzIzNTU2OSw1MjU5NzQ1OTcsLTExNj
-UwMDk0MjIsLTE3ODg1Nzc4Ml19
+eyJoaXN0b3J5IjpbLTE3MDY0MDg1NjIsNTI1OTc0NTk3LC0xMT
+Y1MDA5NDIyLC0xNzg4NTc3ODJdfQ==
 -->
