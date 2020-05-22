@@ -33,11 +33,17 @@ STRICT_ALL_TABLES, STRICT_TRANS_TABLES와 비슷하지만 조금 더 엄격한 S
 
 MySQL에서는 문자열 값(리터럴)을 표기하기 위해 홑따음표와 쌍따옴표 둘다 사용이 가능하다. 하지만 오라클과 같은 DBMS에서는 홑따옴표는 문자열 값을 표기하는데 사용하고 쌍따옴표는 컬럼 명이나 테이블 명과 같은 식별자를 구분하는 용도로만 사용한다. 
 
+ANSI_QUOTES를 설정하면 홑따옴표만 문자열 값으로 사용할 수 있고, 쌍따옴표는 컬럼명이나 테이블 명과 같은 식별자를 표기하는데만 사용할 수 있다. 
+
+### ONLY_FULL_GROUP_BY
+
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NTc1MDU4OSwtMTcwNjQwODU2Miw1Mj
+eyJoaXN0b3J5IjpbLTcyODA5NDc2OCwtMTcwNjQwODU2Miw1Mj
 U5NzQ1OTcsLTExNjUwMDk0MjIsLTE3ODg1Nzc4Ml19
 -->
