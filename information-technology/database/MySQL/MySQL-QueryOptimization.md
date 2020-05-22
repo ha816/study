@@ -18,10 +18,14 @@ SQL 작성 규칙은 대소문자 구분, 문자열 표기방법등 MySQL 서버
 
 MySQL 서버의 sql_mode라는 시스템 설정엔 여러 값이 동시에 설정된다. 그 중 대표적으로 SQL 작성과 결과에 영향이 있는 것들은 무엇인지 알아보자. MySQL 서버 설정 파일에서 sql_mode를 설정할때는 구분자(,)를 사용해 아래 키워드를 동시에 설정할 수 있다. 
 
+### STRICT_ALL_TABLES
+
+기본 MYSQL에서는 **저장하려는 값의 길이가 컬럼 길이보다 더 긴 경우라도 에러가 발생하지 않는다.** 컬럼의 길이를 초과하는 부분은 버리고 가능한 만큼만 저장한다. 물론 경고 메세지가 발생하지만, 이를 보는 사람은 별로 없을 것이다. 만약 sql_mode 시스템변수에 STRICT_ALL
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDY0MDg1NjIsNTI1OTc0NTk3LC0xMT
-Y1MDA5NDIyLC0xNzg4NTc3ODJdfQ==
+eyJoaXN0b3J5IjpbLTIwMzk0NDU3MzQsLTE3MDY0MDg1NjIsNT
+I1OTc0NTk3LC0xMTY1MDA5NDIyLC0xNzg4NTc3ODJdfQ==
 -->
