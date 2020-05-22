@@ -37,7 +37,11 @@ ANSI_QUOTES를 설정하면 홑따옴표만 문자열 값으로 사용할 수 �
 
 ### ONLY_FULL_GROUP_BY
 
+MySQL의 쿼리에서는 GROUP BY 절에 포함되지 않은 컬럼이더라도 집합 함수의 사용없이 그대로 SELECT 절이나 HAVING 절에 사용할 수 있다. 이 부분도 SQL 표준이나 다른 DBMS와는 다른 동작 방식인데, 이 설정을 하면 SQL 문법에 더 엄격한 규칙을 적용하게 된다.
 
+### PIPE_AS_CONCAT
+
+MySQL에서는 "||"는 OR 연산자와 같은 의미로 사용된다. 이 설정을 하면 오라클과 값이 문자열 ㅇ
 
 
 
@@ -46,7 +50,7 @@ ANSI_QUOTES를 설정하면 홑따옴표만 문자열 값으로 사용할 수 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODM2ODIzODgsLTcyODA5NDc2OCwtMT
+eyJoaXN0b3J5IjpbLTE3OTQzNTc4MDUsLTcyODA5NDc2OCwtMT
 cwNjQwODU2Miw1MjU5NzQ1OTcsLTExNjUwMDk0MjIsLTE3ODg1
 Nzc4Ml19
 -->
