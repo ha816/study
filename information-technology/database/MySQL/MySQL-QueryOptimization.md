@@ -41,7 +41,11 @@ MySQL의 쿼리에서는 GROUP BY 절에 포함되지 않은 컬럼이더라도 
 
 ### PIPE_AS_CONCAT
 
-MySQL에서는 "||"는 OR 연산자와 같은 의미로 사용된다. 이 설정을 하면 오라클과 값이 문자열 ㅇ
+MySQL에서는 "||"는 OR 연산자와 같은 의미로 사용된다. 이 설정을 하면 오라클과 값이 문자열 연결(CONCAT) 연산자로 사용할 수 있다.
+
+### PAD_CHAR_TO_FULL_LENGTH
+
+
 
 
 
@@ -50,7 +54,7 @@ MySQL에서는 "||"는 OR 연산자와 같은 의미로 사용된다. 이 설정
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTQzNTc4MDUsLTcyODA5NDc2OCwtMT
-cwNjQwODU2Miw1MjU5NzQ1OTcsLTExNjUwMDk0MjIsLTE3ODg1
-Nzc4Ml19
+eyJoaXN0b3J5IjpbLTQwMTE4NDQ2MCwtNzI4MDk0NzY4LC0xNz
+A2NDA4NTYyLDUyNTk3NDU5NywtMTE2NTAwOTQyMiwtMTc4ODU3
+NzgyXX0=
 -->
