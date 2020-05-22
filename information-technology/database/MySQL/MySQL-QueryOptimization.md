@@ -16,12 +16,12 @@ SQL 작성 규칙은 대소문자 구분, 문자열 표기방법등 MySQL 서버
 
 ## SQL 모드
 
-MySQL 서버의
+MySQL 서버의 ㄴ
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI1OTc0NTk3LC0xMTY1MDA5NDIyLC0xNz
-g4NTc3ODJdfQ==
+eyJoaXN0b3J5IjpbMjExNzIzNTU2OSw1MjU5NzQ1OTcsLTExNj
+UwMDk0MjIsLTE3ODg1Nzc4Ml19
 -->
