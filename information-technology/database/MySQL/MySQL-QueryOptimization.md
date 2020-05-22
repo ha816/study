@@ -24,12 +24,16 @@ MySQL 서버의 sql_mode라는 시스템 설정엔 여러 값이 동시에 설�
 
 ### STRICT_TRANS_TABLES
 
-**컬럼에 호환되지 않는 값을 저장할때, MySQL 서버는 비슷한 값으로 최대한 바꿔서 저장하려고 한다.** 하지만 이런 부분이 사용자를 더 혼란 스럽게 하기도 한다. 
+**컬럼에 호환되지 않는 값을 저장할때, MySQL 서버는 비슷한 값으로 최대한 바꿔서 저장하려고 한다.** 하지만 이런 부분이 사용자를 더 혼란 스럽게 하기도 한다. STRICT_TRANS_TABLES를 설정하면 맞지 않는 데이터 타입 변환이 필요할때 강제 변환을 하지 않고 에러를 발생시킨다.
+
+### TRADITIONAL
+STRICT_ALL_TABLES, STRICT_TRANS_TABLES와 비슷
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk4MjQyMDA2LC0xNzA2NDA4NTYyLDUyNT
-k3NDU5NywtMTE2NTAwOTQyMiwtMTc4ODU3NzgyXX0=
+eyJoaXN0b3J5IjpbLTgwOTMwNTUwOCwtMTcwNjQwODU2Miw1Mj
+U5NzQ1OTcsLTExNjUwMDk0MjIsLTE3ODg1Nzc4Ml19
 -->
