@@ -45,6 +45,7 @@ MySQL에서는 "||"는 OR 연산자와 같은 의미로 사용된다. 이 설정
 
 ### PAD_CHAR_TO_FULL_LENGTH
 
+MySQL에서는 CHAR 타입이라 하더라도 VARCHAR와 같이 유효 문자열 뒤의 공백문자는 제거되어 반환된다. 이는 주로 애플리케이션 개발자에게 민감한 부분인데, 저자는 MySQL의 불필요한 공백을 제거하는 방식이 편리한거 같다. 하지만 CHAR 타입의 컬럼값을 가져오는 경우, 뒤쪼
 
 
 
@@ -54,7 +55,7 @@ MySQL에서는 "||"는 OR 연산자와 같은 의미로 사용된다. 이 설정
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMTE4NDQ2MCwtNzI4MDk0NzY4LC0xNz
-A2NDA4NTYyLDUyNTk3NDU5NywtMTE2NTAwOTQyMiwtMTc4ODU3
-NzgyXX0=
+eyJoaXN0b3J5IjpbMTE2MDY4NzQ5MiwtNDAxMTg0NDYwLC03Mj
+gwOTQ3NjgsLTE3MDY0MDg1NjIsNTI1OTc0NTk3LC0xMTY1MDA5
+NDIyLC0xNzg4NTc3ODJdfQ==
 -->
