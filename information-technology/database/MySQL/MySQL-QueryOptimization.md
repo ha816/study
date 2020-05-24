@@ -55,6 +55,8 @@ MySQL에서도 일반적인 프로그래밍 언어에서 사용하는 역 슬래
 
 MySQL에서 스토어드 프로시저나 함수의 이름뒤에 공백이 있으면 프로시저나 함수가 없다는 에러가 출력될 수도 있다. 이 현상을 MySQL이 괄호사이에 있는 공백까지도 스토어드 프로시저나 함수의 이름으로 간주해서 그렇다. 이 설정을 추가하면 프로시저나 함수의 괄호 사이의 공백은 무시한다. 
 
+### ANSI
+위에서 설명한 여러 옵션을 조합해서 MySQL 서버가 최대한 SQL 표준에 맞게 동작하도록 설정한다.
 
 
 
@@ -64,7 +66,8 @@ MySQL에서 스토어드 프로시저나 함수의 이름뒤에 공백이 있으
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMTc5OTY2OSw4NjU4Nzk2NDcsLTQwMT
-E4NDQ2MCwtNzI4MDk0NzY4LC0xNzA2NDA4NTYyLDUyNTk3NDU5
-NywtMTE2NTAwOTQyMiwtMTc4ODU3NzgyXX0=
+eyJoaXN0b3J5IjpbMTQyNDU5MDIyMCwyMDAxNzk5NjY5LDg2NT
+g3OTY0NywtNDAxMTg0NDYwLC03MjgwOTQ3NjgsLTE3MDY0MDg1
+NjIsNTI1OTc0NTk3LC0xMTY1MDA5NDIyLC0xNzg4NTc3ODJdfQ
+==
 -->
