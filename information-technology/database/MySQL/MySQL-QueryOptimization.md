@@ -64,7 +64,11 @@ MySQL에서 스토어드 프로시저나 함수의 이름뒤에 공백이 있으
 
 MySQL 서버가 운영체제에 관계없이 대소문자 구분 영향을 받지 않게 하려면 lower_case_table_names 시스템 변수를 설정하면 된다. 기본 설정 값은 0으로, 대소문자 구분을 한다. 또한 이 값은 2로 설정할 수 있는데, 이 경우 저장은 대소문자를 구분하지만 MySQL 쿼리에서는 대소문자를 구분하지 않게 해준다. 사실 이런 설정 자체를 떠나서 가능하면 **초기에 DB나 테이블 생성시 대문자만 또는 소문자만 사용하다록 통일해서 쓰는게 좋다**
 
-## 
+## MySQL 예약어
+
+**데이터 베이스, 테이블, 컬럼 이름을 예약어와 같은 키워드로 생성한다면 SQL에선 항상 역따옴표(`)나 쌍따옴표로 감싸줘야 한다.** 이는 관리 작업시 상당히 성가신 일이 될수 있는데, 또 단순히 문법이 틀리다 라는 형식의 에러만 출력하므로 SQL을 작성하는 개발자가 찾기가 어려운 버그가 될수도 잇다.
+
+
 
 
 
@@ -73,9 +77,9 @@ MySQL 서버가 운영체제에 관계없이 대소문자 구분 영향을 받�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5OTU5ODc3MSwyMDg5Njc3MjQ5LC0xND
-M1NzU0NDAxLC01MDM3NjY1MTcsMTQyNDU5MDIyMCwyMDAxNzk5
-NjY5LDg2NTg3OTY0NywtNDAxMTg0NDYwLC03MjgwOTQ3NjgsLT
-E3MDY0MDg1NjIsNTI1OTc0NTk3LC0xMTY1MDA5NDIyLC0xNzg4
-NTc3ODJdfQ==
+eyJoaXN0b3J5IjpbLTE4OTUyNjcyMjEsMjA4OTY3NzI0OSwtMT
+QzNTc1NDQwMSwtNTAzNzY2NTE3LDE0MjQ1OTAyMjAsMjAwMTc5
+OTY2OSw4NjU4Nzk2NDcsLTQwMTE4NDQ2MCwtNzI4MDk0NzY4LC
+0xNzA2NDA4NTYyLDUyNTk3NDU5NywtMTE2NTAwOTQyMiwtMTc4
+ODU3NzgyXX0=
 -->
