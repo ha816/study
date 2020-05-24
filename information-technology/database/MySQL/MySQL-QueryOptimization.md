@@ -53,7 +53,7 @@ MySQL에서도 일반적인 프로그래밍 언어에서 사용하는 역 슬래
 
 ### IGNORE_SPACE
 
-MySQL에서 스토어드 프로시저나 함수의 이름뒤에 공백이 있으면 프로시저나 함수가 없다는 에러가 출력될 수도 있다. MySQL에서는 
+MySQL에서 스토어드 프로시저나 함수의 이름뒤에 공백이 있으면 프로시저나 함수가 없다는 에러가 출력될 수도 있다. 이 현상을 MySQL이 괄호사이에 있는 공백까지도 스토어드 프로시저나 함수의 이름으로 간주해서 그렇다. 이 설정을 추가하면 프로시저나 함수의 괄호 사이의 공백은 무시한다. 
 
 
 
@@ -64,7 +64,7 @@ MySQL에서 스토어드 프로시저나 함수의 이름뒤에 공백이 있으
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMzk3MTY0LDg2NTg3OTY0NywtNDAxMT
-g0NDYwLC03MjgwOTQ3NjgsLTE3MDY0MDg1NjIsNTI1OTc0NTk3
-LC0xMTY1MDA5NDIyLC0xNzg4NTc3ODJdfQ==
+eyJoaXN0b3J5IjpbMjAwMTc5OTY2OSw4NjU4Nzk2NDcsLTQwMT
+E4NDQ2MCwtNzI4MDk0NzY4LC0xNzA2NDA4NTYyLDUyNTk3NDU5
+NywtMTE2NTAwOTQyMiwtMTc4ODU3NzgyXX0=
 -->
