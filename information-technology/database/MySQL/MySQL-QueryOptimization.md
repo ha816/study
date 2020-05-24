@@ -62,7 +62,7 @@ MySQL에서 스토어드 프로시저나 함수의 이름뒤에 공백이 있으
 
 **MySQL 서버는 설치된 운영체제에 따라 테이블의 대소문자를 구분한다.** 이는 MySQL의 DB나 테이블이 디스크의 디렉터리나 파일로 매핑되기 때문이다. 즉 윈도우에 설치된 MySQL에선 대소문자를 구분하지 않지만 리눅스 계열에선 대소문자를 구분한다. 
 
-MySQL 서버가 운영체제에 관계없이 대소문자 구분 영향을 받지 않게 하려면 lower_case_table_names 시스템 변수를 설정하면 된다. 
+MySQL 서버가 운영체제에 관계없이 대소문자 구분 영향을 받지 않게 하려면 lower_case_table_names 시스템 변수를 설정하면 된다. 기본 설정 값은 0으로, 대소문자 구분을 한다. 또한 이 값은 2로 설정할 수 있는데, 이 경우 저장은 대소문자를 구분하지만 
 
 
 
@@ -72,8 +72,8 @@ MySQL 서버가 운영체제에 관계없이 대소문자 구분 영향을 받�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NjMyNDg1OSwtNTAzNzY2NTE3LDE0Mj
-Q1OTAyMjAsMjAwMTc5OTY2OSw4NjU4Nzk2NDcsLTQwMTE4NDQ2
-MCwtNzI4MDk0NzY4LC0xNzA2NDA4NTYyLDUyNTk3NDU5NywtMT
-E2NTAwOTQyMiwtMTc4ODU3NzgyXX0=
+eyJoaXN0b3J5IjpbLTE0MzU3NTQ0MDEsLTUwMzc2NjUxNywxND
+I0NTkwMjIwLDIwMDE3OTk2NjksODY1ODc5NjQ3LC00MDExODQ0
+NjAsLTcyODA5NDc2OCwtMTcwNjQwODU2Miw1MjU5NzQ1OTcsLT
+ExNjUwMDk0MjIsLTE3ODg1Nzc4Ml19
 -->
