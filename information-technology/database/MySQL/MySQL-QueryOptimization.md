@@ -72,6 +72,9 @@ MySQL에 등록되 예약어의 갯수는 이를 구분해서 모두 기억하�
 
 그래야만 예약어인지 아닌지를 MySQL 서버에서 알려주기 때문이다. 만약 테이블 생성이 실패한다면 해당 예약어는 역따옴표로 감싸지 않고는 사용할 수 없다는 것을 말한다. 
 
+# 메뉴얼 SQL 문법 표기 읽는 법
+
+MySQL 
 
 
 
@@ -80,11 +83,11 @@ MySQL에 등록되 예약어의 갯수는 이를 구분해서 모두 기억하�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDYzMzA2MjIsNDA0OTE2MTcxLC0xNT
-A5NjY5MjkwLC0xNzk2NTg5MzUsLTEwNzUzNjYxOTIsMTcwMTI4
-ODM1MSwtNTQ0MDk0MTksMTkzNjk2Mjc2LDIwODk2NzcyNDksLT
-E0MzU3NTQ0MDEsLTUwMzc2NjUxNywxNDI0NTkwMjIwLDIwMDE3
-OTk2NjksODY1ODc5NjQ3LC00MDExODQ0NjAsLTcyODA5NDc2OC
-wtMTcwNjQwODU2Miw1MjU5NzQ1OTcsLTExNjUwMDk0MjIsLTE3
-ODg1Nzc4Ml19
+eyJoaXN0b3J5IjpbOTYyNzQyMTUwLC0xMzA2MzMwNjIyLDQwND
+kxNjE3MSwtMTUwOTY2OTI5MCwtMTc5NjU4OTM1LC0xMDc1MzY2
+MTkyLDE3MDEyODgzNTEsLTU0NDA5NDE5LDE5MzY5NjI3NiwyMD
+g5Njc3MjQ5LC0xNDM1NzU0NDAxLC01MDM3NjY1MTcsMTQyNDU5
+MDIyMCwyMDAxNzk5NjY5LDg2NTg3OTY0NywtNDAxMTg0NDYwLC
+03MjgwOTQ3NjgsLTE3MDY0MDg1NjIsNTI1OTc0NTk3LC0xMTY1
+MDA5NDIyXX0=
 -->
