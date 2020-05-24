@@ -73,7 +73,7 @@ MySQL에 등록되 예약어의 갯수는 이를 구분해서 모두 기억하�
 그래야만 예약어인지 아닌지를 MySQL 서버에서 알려주기 때문이다. 만약 테이블 생성이 실패한다면 해당 예약어는 역따옴표로 감싸지 않고는 사용할 수 없다는 것을 말한다. 
 
 
-
+![enter image description here](https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http://cfile7.uf.tistory.com/image/99110C465AD813991E5425)
 
 
 
@@ -81,7 +81,7 @@ MySQL에 등록되 예약어의 갯수는 이를 구분해서 모두 기억하�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjkxMzgzNTUsLTE3OTY1ODkzNSwtMT
+eyJoaXN0b3J5IjpbLTE1MDk2NjkyOTAsLTE3OTY1ODkzNSwtMT
 A3NTM2NjE5MiwxNzAxMjg4MzUxLC01NDQwOTQxOSwxOTM2OTYy
 NzYsMjA4OTY3NzI0OSwtMTQzNTc1NDQwMSwtNTAzNzY2NTE3LD
 E0MjQ1OTAyMjAsMjAwMTc5OTY2OSw4NjU4Nzk2NDcsLTQwMTE4
