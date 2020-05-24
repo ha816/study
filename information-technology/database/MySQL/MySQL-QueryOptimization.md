@@ -49,6 +49,11 @@ MySQL에서는 CHAR 타입이라 하더라도 VARCHAR와 같이 유효 문자열
 
 ### NO_BACKSLASH_ESCAPES
 
+MySQL에서도 일반적인 프로그래밍 언어에서 사용하는 역 슬래시 문자를 이스케이프 문자로 사용할 수 있다. 이 설정을 추가하면 **역 슬래시를 문자의 이스케이프 용도로 사용하지 못한다.** 즉 백슬리시 문자도 다른 문자와 동일하게 취급한다. 
+
+### IGNORE_SPACE
+
+MySQL에서 스토어드 프로시저나 함수 
 
 
 
@@ -59,7 +64,7 @@ MySQL에서는 CHAR 타입이라 하더라도 VARCHAR와 같이 유효 문자열
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY1ODc5NjQ3LC00MDExODQ0NjAsLTcyOD
-A5NDc2OCwtMTcwNjQwODU2Miw1MjU5NzQ1OTcsLTExNjUwMDk0
-MjIsLTE3ODg1Nzc4Ml19
+eyJoaXN0b3J5IjpbMTMxNTMyNDg4Myw4NjU4Nzk2NDcsLTQwMT
+E4NDQ2MCwtNzI4MDk0NzY4LC0xNzA2NDA4NTYyLDUyNTk3NDU5
+NywtMTE2NTAwOTQyMiwtMTc4ODU3NzgyXX0=
 -->
