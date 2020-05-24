@@ -58,6 +58,10 @@ MySQL에서 스토어드 프로시저나 함수의 이름뒤에 공백이 있으
 ### ANSI
 위에서 설명한 여러 옵션을 조합해서 MySQL 서버가 최대한 SQL 표준에 맞게 동작하도록 설정한다.
 
+## 영문 대소문자 구분
+
+MySQL 서버는 설치된 운영체제에 따라 테이블의 대소문자를 구분한다. 이는 MySQL의 DBㄴ
+
 
 
 
@@ -66,8 +70,8 @@ MySQL에서 스토어드 프로시저나 함수의 이름뒤에 공백이 있으
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNDU5MDIyMCwyMDAxNzk5NjY5LDg2NT
-g3OTY0NywtNDAxMTg0NDYwLC03MjgwOTQ3NjgsLTE3MDY0MDg1
-NjIsNTI1OTc0NTk3LC0xMTY1MDA5NDIyLC0xNzg4NTc3ODJdfQ
-==
+eyJoaXN0b3J5IjpbLTk2Mjc3NTExNiwxNDI0NTkwMjIwLDIwMD
+E3OTk2NjksODY1ODc5NjQ3LC00MDExODQ0NjAsLTcyODA5NDc2
+OCwtMTcwNjQwODU2Miw1MjU5NzQ1OTcsLTExNjUwMDk0MjIsLT
+E3ODg1Nzc4Ml19
 -->
