@@ -68,7 +68,7 @@ MySQL 서버가 운영체제에 관계없이 대소문자 구분 영향을 받�
 
 **데이터 베이스, 테이블, 컬럼 이름을 예약어와 같은 키워드로 생성한다면 SQL에선 항상 역따옴표(`)나 쌍따옴표로 감싸줘야 한다.** 이는 관리 작업시 상당히 성가신 일이 될수 있는데, 또 단순히 문법이 틀리다 라는 형식의 에러만 출력하므로 SQL을 작성하는 개발자가 찾기가 어려운 버그가 될수도 있다. 
 
-MySQL에 등록되 예약어의 갯수는 이를 구분해서 모두 기억하기란 쉽지 않다. 가장 좋은 방법은 실제 
+MySQL에 등록되 예약어의 갯수는 이를 구분해서 모두 기억하기란 쉽지 않다. 가장 좋은 방법은 실제 쿼리를 수행시켜 보는 것이다. 이때는 역따옴표로 일단 둘러싸지 않고 테이블을 생성해 보자. 만약 역따옴표로 둘러싸소 테이블을 
 
 
 
@@ -79,9 +79,9 @@ MySQL에 등록되 예약어의 갯수는 이를 구분해서 모두 기억하�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNjk2Mjc2LDIwODk2NzcyNDksLTE0Mz
-U3NTQ0MDEsLTUwMzc2NjUxNywxNDI0NTkwMjIwLDIwMDE3OTk2
-NjksODY1ODc5NjQ3LC00MDExODQ0NjAsLTcyODA5NDc2OCwtMT
-cwNjQwODU2Miw1MjU5NzQ1OTcsLTExNjUwMDk0MjIsLTE3ODg1
-Nzc4Ml19
+eyJoaXN0b3J5IjpbLTU0NDA5NDE5LDE5MzY5NjI3NiwyMDg5Nj
+c3MjQ5LC0xNDM1NzU0NDAxLC01MDM3NjY1MTcsMTQyNDU5MDIy
+MCwyMDAxNzk5NjY5LDg2NTg3OTY0NywtNDAxMTg0NDYwLC03Mj
+gwOTQ3NjgsLTE3MDY0MDg1NjIsNTI1OTc0NTk3LC0xMTY1MDA5
+NDIyLC0xNzg4NTc3ODJdfQ==
 -->
