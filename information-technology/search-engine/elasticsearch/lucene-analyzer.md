@@ -14,16 +14,15 @@
 * 전체 문서에서 단어가 몇 개 들어있는지에 대한 정보
 * 하나의 문서에 단어가 몇 번씩 출현했는지에 대한 빈도
 
-예를 들어 2개의 문서가 있다고 하자. 
+예를 들어 아주 간단한 2개의 문서가 있다고 하자. 
 ```
-문서1
+Doc1
 elasticsearch is cool
-
-문서2
+Doc2
 Elasticsearch is great
 ```
 
-문서의 역색인을 만들기 위해선 각 문서를 토큰화 해야 한다. 토큰화된 단어에 대해 문서 상의 위치와 출현 빈도 등의 정보를 체크한다. 따라서 결과물은 대략 다음과 같다. 
+문서의 역색인을 만들기 위해선 각 문서를 토큰화해야 한다. 토큰화된 단어에 대해 문서 상의 위치와 출현 빈도 등의 정보를 체크한다. 따라서 결과물은 대략 다음과 같다. 
 
 |토큰| 문서번호|텀의 위치(Position)| 텀의빈도(Term Frequency)|
 |--|--|--|--|
@@ -213,6 +212,6 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NDEwMjcyOSw5Njg1MDE2ODMsLTQ2OD
-Y4NzI2MCw5NjEyMDc1NDNdfQ==
+eyJoaXN0b3J5IjpbLTEwMjEwMTY1MjMsOTY4NTAxNjgzLC00Nj
+g2ODcyNjAsOTYxMjA3NTQzXX0=
 -->
