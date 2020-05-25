@@ -42,9 +42,10 @@ cool 토큰의 경우, 문서 1의 내용이 나온다. 하지만 "elasticsaerch
 
 분석기가 동작하는 기본 프로세스는 아래와 같다. 
 ```
-문장 -> CHRACTER FILTER(전처리 필터) -> 전처리된 문장 ->
-TOKENIZER FILTER(토큰화)-> Tokens(토큰) 
--> TOKEN FILTER(동의어사전) -> Terms(단어) -> Index
+문장 -> 
+CHRACTER FILTER(전처리 필터) -> 전처리된 문장 ->
+TOKENIZER FILTER(토큰화)-> Tokens(토큰) -> 
+TOKEN FILTER(동의어사전) -> Terms(단어) -> Index
 ```
 
 CHARACTER FILTER(전처리 필터)
@@ -212,9 +213,9 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyODk0MTUwLDkwMTQyMTY2LC0xODcwMz
-AwODc0LDQwMzkxODIyMSwtMTM4ODQzNjk0Nyw5MzgyNzMzMCwx
-MjQwNjc1MTcxLC04Mjk5ODUzNzksLTE4OTg2MDMwOTAsLTEwMj
-EwMTY1MjMsOTY4NTAxNjgzLC00Njg2ODcyNjAsOTYxMjA3NTQz
-XX0=
+eyJoaXN0b3J5IjpbMTI5MTUyOTE0MCw2MjI4OTQxNTAsOTAxND
+IxNjYsLTE4NzAzMDA4NzQsNDAzOTE4MjIxLC0xMzg4NDM2OTQ3
+LDkzODI3MzMwLDEyNDA2NzUxNzEsLTgyOTk4NTM3OSwtMTg5OD
+YwMzA5MCwtMTAyMTAxNjUyMyw5Njg1MDE2ODMsLTQ2ODY4NzI2
+MCw5NjEyMDc1NDNdfQ==
 -->
