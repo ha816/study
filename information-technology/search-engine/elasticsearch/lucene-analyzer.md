@@ -43,12 +43,12 @@ cool 토큰의 경우, 문서 1의 내용이 나온다. 하지만 "elasticsaerch
 분석기가 동작하는 기본 프로세스는 아래와 같다. 
 ```
 문장 -> CHRACTER FILTER(전처리 필터) -> 전처리된 문장 ->
-TOKENIZER FILTER -> Tokens(토큰) -> TOKEN FILTER(동의어 사전) ->
-Terms(단어) -> Index
+TOKENIZER FILTER(토큰화)-> Tokens(토큰) 
+-> TOKEN FILTER(동의어사전) -> Terms(단어) -> Index
 ```
 
 CHARACTER FILTER(전처리 필터)
-: 문장을 분석하기 전에 입력 테스트에 대해 특정한 단어를 변경하거나 HTML 같은 태그를 제거하는 역할을 하는 필터다. 해당 내용은 텍스트를 개별 토큰화하기 전의 전처리 과정이며, ReplaceAll 함수처럼 패턴으로 텍스트를 변경하거나 사용자가 정의한 필터를 적용할 수 있다. 
+: 문장을 분석하기 전에 입력 테스트에 대해 특정한 단어를 변경하거나 HTML 같은 태그를 제거하는 역할을 하는 필터다. 텍스트를 토큰화하기 전 전처리 과정으로, ReplaceAll 함수처럼 패턴으로 텍스트를 변경하거나 사용자가 정의한 필터를 적용할 수 있다. 
 
 TOKENIZER FILTER
 : 토크나이저 필터는 분석기를 구성할때 하나만 사용할 수 있으며 텍스트를 어떻게 나눌것인지 정의한다. 한글을 분해할 때는 한글 형태소 분석기의 토크나이저를 사용하고, 영문을 분석할때는 영문 형태소 분석기를 사용하면 된다.
@@ -211,7 +211,7 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM4MjczMzAsMTI0MDY3NTE3MSwtODI5OT
-g1Mzc5LC0xODk4NjAzMDkwLC0xMDIxMDE2NTIzLDk2ODUwMTY4
-MywtNDY4Njg3MjYwLDk2MTIwNzU0M119
+eyJoaXN0b3J5IjpbLTEzODg0MzY5NDcsOTM4MjczMzAsMTI0MD
+Y3NTE3MSwtODI5OTg1Mzc5LC0xODk4NjAzMDkwLC0xMDIxMDE2
+NTIzLDk2ODUwMTY4MywtNDY4Njg3MjYwLDk2MTIwNzU0M119
 -->
