@@ -96,7 +96,7 @@ Whitespace Analyzer
 
 ### TOKENIZER FILTER(토크나이저 필터)
 
-토크나이저 필터는 분석기를 구성하는 **가장 핵심 구성요소**다. 전처리 필터를 거쳐 토크나이저 필터로 문장이 오면 해당 텍스트는 토크나이저 필터의 특성에 맞게 적절히 분해된다. 분석기에서 어떠한 토크나이저를 사용하느냐에 따라 분석기의 전체적인 성격이 결정된다. 
+토크나이저 필터는 분석기를 구성하는 **가장 핵심 구성요소**다. 전처리 필터를 거쳐 토크나이저 필터로 문장이 오면 해당 텍스트는 토크나이저 필터의 특성에 맞게 적절히 분해된다. 어떤 종류의 토크나이저를 사용하느냐에 따라 분석기의 전체적인 성격이 결정된다. 
 
 #### Standard 토크나이저
 
@@ -213,9 +213,9 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjk4MDkyMzUsMTI5MTUyOTE0MCw2Mj
-I4OTQxNTAsOTAxNDIxNjYsLTE4NzAzMDA4NzQsNDAzOTE4MjIx
-LC0xMzg4NDM2OTQ3LDkzODI3MzMwLDEyNDA2NzUxNzEsLTgyOT
-k4NTM3OSwtMTg5ODYwMzA5MCwtMTAyMTAxNjUyMyw5Njg1MDE2
-ODMsLTQ2ODY4NzI2MCw5NjEyMDc1NDNdfQ==
+eyJoaXN0b3J5IjpbNTkxODY0ODA3LC0xNjI5ODA5MjM1LDEyOT
+E1MjkxNDAsNjIyODk0MTUwLDkwMTQyMTY2LC0xODcwMzAwODc0
+LDQwMzkxODIyMSwtMTM4ODQzNjk0Nyw5MzgyNzMzMCwxMjQwNj
+c1MTcxLC04Mjk5ODUzNzksLTE4OTg2MDMwOTAsLTEwMjEwMTY1
+MjMsOTY4NTAxNjgzLC00Njg2ODcyNjAsOTYxMjA3NTQzXX0=
 -->
