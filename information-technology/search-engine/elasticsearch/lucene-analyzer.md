@@ -73,7 +73,7 @@ PUT /movie_analyzer -- 영화 분석기 설정
 			"custom_movie_analyzer": {
 				"type" : "custom",
 				"chat_filter" : ["html_strip"],-- html 태그 제거
-				"tokenizer" : "standard", --표준 토크나이저 
+				"tokenizer" : "standard", -- 표준 토크나이저 
 				"filter" : ["lowercase"] -- 소문자 토큰필터
 			}
 		}
@@ -211,8 +211,8 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1OTY2NjMwMCwtMTg3MDMwMDg3NCw0MD
-M5MTgyMjEsLTEzODg0MzY5NDcsOTM4MjczMzAsMTI0MDY3NTE3
-MSwtODI5OTg1Mzc5LC0xODk4NjAzMDkwLC0xMDIxMDE2NTIzLD
-k2ODUwMTY4MywtNDY4Njg3MjYwLDk2MTIwNzU0M119
+eyJoaXN0b3J5IjpbOTAxNDIxNjYsLTE4NzAzMDA4NzQsNDAzOT
+E4MjIxLC0xMzg4NDM2OTQ3LDkzODI3MzMwLDEyNDA2NzUxNzEs
+LTgyOTk4NTM3OSwtMTg5ODYwMzA5MCwtMTAyMTAxNjUyMyw5Nj
+g1MDE2ODMsLTQ2ODY4NzI2MCw5NjEyMDc1NDNdfQ==
 -->
