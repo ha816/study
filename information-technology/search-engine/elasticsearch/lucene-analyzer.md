@@ -54,13 +54,13 @@ TOKENIZER FILTER
 : 토크나이저 필터는 분석기를 구성할때 단 하나만 사용할 수 있으며 텍스트를 어떻게 나눌 것인지를 정의한다. 한글을 분해할 때는 한글 형태소 분석기 토크나이저를 사용하고, 영문을 분석할때는 영문 형태소 분석기를 사용하면 된다.
 
 TOKEN FILTER
-: 토큰필터는 토큰화된 단어를 하나씩 필터링하여 사용자가 원하는 토큰으로 변환한다. 예를들어, 불필요한 단어를 제거하거나 동의어 사전을 만들어 단어를 추가하거나 영문 단어를 소문자로 변환하는 등의 작업을 수행할 수 있다. 
+: 토큰필터는 토큰을 하나씩 필터링하여 사용자가 원하는 토큰으로 변환한다. 예를 들어, 불필요한 단어를 제거하거나 동의어 사전을 만들어 단어를 추가하거나 영문 단어를 소문자로 변환하는 등의 작업을 수행할 수 있다. 
 
 
 이제 간단한 분석기를 정의해 보자. 아래 분석기는 들어온 텍스트에서 html 태그를 제거하고 특수문자 혹은 공백을 기준으로 토큰나이징을 한다. 마지막으로 각 토큰을 소문자로 변환하여 인덱스로 저장한다.
 
 ```
-PUT /movie_analyzer 
+PUT /movie_analyzer //영화 분석기 설정  
 {
 	"settings": {
 		"index": {
@@ -211,8 +211,8 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAzOTE4MjIxLC0xMzg4NDM2OTQ3LDkzOD
-I3MzMwLDEyNDA2NzUxNzEsLTgyOTk4NTM3OSwtMTg5ODYwMzA5
-MCwtMTAyMTAxNjUyMyw5Njg1MDE2ODMsLTQ2ODY4NzI2MCw5Nj
-EyMDc1NDNdfQ==
+eyJoaXN0b3J5IjpbLTE4NzAzMDA4NzQsNDAzOTE4MjIxLC0xMz
+g4NDM2OTQ3LDkzODI3MzMwLDEyNDA2NzUxNzEsLTgyOTk4NTM3
+OSwtMTg5ODYwMzA5MCwtMTAyMTAxNjUyMyw5Njg1MDE2ODMsLT
+Q2ODY4NzI2MCw5NjEyMDc1NDNdfQ==
 -->
