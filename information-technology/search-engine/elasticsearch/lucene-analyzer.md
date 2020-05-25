@@ -9,7 +9,7 @@
 
 루씬의 색인은 역색인이라는 특수한 방식을 사용한다. 역색인 구조를 간단히 정리하자면 아래와 같다. 
 
-* 모든 문서가 가지는 단어의 고유 단어 목록
+* 모든 문서가 가지는 단어(Term)의 목록
 * 해당 단어가 어떤 문서에 속해 있는지에 대한 정보
 * 전체 문서에 각 단어가 몇 개 들어있는지에 대한 정보
 * 하나의 문서에 단어가 몇 번씩 출현했는지에 대한 빈도
@@ -213,6 +213,6 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxNTkxOTU2LC00Njg2ODcyNjAsOTYxMj
+eyJoaXN0b3J5IjpbOTY4NTAxNjgzLC00Njg2ODcyNjAsOTYxMj
 A3NTQzXX0=
 -->
