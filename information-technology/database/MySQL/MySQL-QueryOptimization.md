@@ -76,11 +76,14 @@ MySQL에 등록되 예약어의 갯수는 이를 구분해서 모두 기억하�
 
 MySQL 메뉴얼에 명시된 SQL 문법은 사용할 수 있는 모든 키워드나 기능을 하나의 문장에 다 표기해 둿기 때문에 한눈에 이해되지 않는 단점이 있다. 하지만 해당 버전에 맞는 SQL 문법을 참조하기에는 메뉴얼만큼 정확한 자료가 없다. 그래서 더 정확하고 상세한 문법을 확인하려면 MySQL의 SQL 문법을 참조하는것이 정석이다. 이번에는 SQL 문법을 표기하는 방법을 간단히 알아보자 
 
+```
+INSERT [LOW_PRIORITY | DELAYED | HIGH_PRIORITY] [IGNORE]
+
 
 ```
 
 
-```
+
 
 
 
@@ -89,11 +92,11 @@ MySQL 메뉴얼에 명시된 SQL 문법은 사용할 수 있는 모든 키워드
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODU3NzgzNjgsMTEyMjc0MzM5OCw5Nj
-I3NDIxNTAsLTEzMDYzMzA2MjIsNDA0OTE2MTcxLC0xNTA5NjY5
-MjkwLC0xNzk2NTg5MzUsLTEwNzUzNjYxOTIsMTcwMTI4ODM1MS
-wtNTQ0MDk0MTksMTkzNjk2Mjc2LDIwODk2NzcyNDksLTE0MzU3
-NTQ0MDEsLTUwMzc2NjUxNywxNDI0NTkwMjIwLDIwMDE3OTk2Nj
-ksODY1ODc5NjQ3LC00MDExODQ0NjAsLTcyODA5NDc2OCwtMTcw
-NjQwODU2Ml19
+eyJoaXN0b3J5IjpbMjAzMDgxNzk4MywxMTIyNzQzMzk4LDk2Mj
+c0MjE1MCwtMTMwNjMzMDYyMiw0MDQ5MTYxNzEsLTE1MDk2Njky
+OTAsLTE3OTY1ODkzNSwtMTA3NTM2NjE5MiwxNzAxMjg4MzUxLC
+01NDQwOTQxOSwxOTM2OTYyNzYsMjA4OTY3NzI0OSwtMTQzNTc1
+NDQwMSwtNTAzNzY2NTE3LDE0MjQ1OTAyMjAsMjAwMTc5OTY2OS
+w4NjU4Nzk2NDcsLTQwMTE4NDQ2MCwtNzI4MDk0NzY4LC0xNzA2
+NDA4NTYyXX0=
 -->
