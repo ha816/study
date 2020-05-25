@@ -74,7 +74,13 @@ MySQL에 등록되 예약어의 갯수는 이를 구분해서 모두 기억하�
 
 # 메뉴얼 SQL 문법 표기 읽는 법
 
-MySQL 메뉴얼에 명시된 SQL 문법은 사용할 수 있는 모든 키워드나 기능을 하나의 문장에 다 표기해 둿기 때문에 한눈에 이해되지 않는 단점이 있다. 
+MySQL 메뉴얼에 명시된 SQL 문법은 사용할 수 있는 모든 키워드나 기능을 하나의 문장에 다 표기해 둿기 때문에 한눈에 이해되지 않는 단점이 있다. 하지만 해당 버전에 맞는 SQL 문법을 참조하기에는 메뉴얼만큼 정확한 자료가 없다. 그래서 더 정확하고 상세한 문법을 확인하려면 MySQL의 SQL 문법을 참조하는것이 정석이다. 이번에는 SQL 문법을 표기하는 방법을 간단히 알아보자 
+
+
+```
+
+
+```
 
 
 
@@ -83,11 +89,11 @@ MySQL 메뉴얼에 명시된 SQL 문법은 사용할 수 있는 모든 키워드
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMjc0MzM5OCw5NjI3NDIxNTAsLTEzMD
-YzMzA2MjIsNDA0OTE2MTcxLC0xNTA5NjY5MjkwLC0xNzk2NTg5
-MzUsLTEwNzUzNjYxOTIsMTcwMTI4ODM1MSwtNTQ0MDk0MTksMT
-kzNjk2Mjc2LDIwODk2NzcyNDksLTE0MzU3NTQ0MDEsLTUwMzc2
-NjUxNywxNDI0NTkwMjIwLDIwMDE3OTk2NjksODY1ODc5NjQ3LC
-00MDExODQ0NjAsLTcyODA5NDc2OCwtMTcwNjQwODU2Miw1MjU5
-NzQ1OTddfQ==
+eyJoaXN0b3J5IjpbLTE4ODU3NzgzNjgsMTEyMjc0MzM5OCw5Nj
+I3NDIxNTAsLTEzMDYzMzA2MjIsNDA0OTE2MTcxLC0xNTA5NjY5
+MjkwLC0xNzk2NTg5MzUsLTEwNzUzNjYxOTIsMTcwMTI4ODM1MS
+wtNTQ0MDk0MTksMTkzNjk2Mjc2LDIwODk2NzcyNDksLTE0MzU3
+NTQ0MDEsLTUwMzc2NjUxNywxNDI0NTkwMjIwLDIwMDE3OTk2Nj
+ksODY1ODc5NjQ3LC00MDExODQ0NjAsLTcyODA5NDc2OCwtMTcw
+NjQwODU2Ml19
 -->
