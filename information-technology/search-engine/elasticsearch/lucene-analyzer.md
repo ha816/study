@@ -60,7 +60,7 @@ TOKEN FILTER
 이제 간단한 분석기를 정의해 보자. 아래 분석기는 들어온 텍스트에서 html 태그를 제거하고 특수문자 혹은 공백을 기준으로 토큰나이징을 한다. 마지막으로 각 토큰을 소문자로 변환하여 인덱스로 저장한다.
 
 ```
-PUT /movie_analyzer //영화 분석기 설정  
+PUT /movie_analyzer -- 영화 분석기 설정  
 {
 	"settings": {
 		"index": {
@@ -211,8 +211,8 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzAzMDA4NzQsNDAzOTE4MjIxLC0xMz
-g4NDM2OTQ3LDkzODI3MzMwLDEyNDA2NzUxNzEsLTgyOTk4NTM3
-OSwtMTg5ODYwMzA5MCwtMTAyMTAxNjUyMyw5Njg1MDE2ODMsLT
-Q2ODY4NzI2MCw5NjEyMDc1NDNdfQ==
+eyJoaXN0b3J5IjpbLTc1OTY2NjMwMCwtMTg3MDMwMDg3NCw0MD
+M5MTgyMjEsLTEzODg0MzY5NDcsOTM4MjczMzAsMTI0MDY3NTE3
+MSwtODI5OTg1Mzc5LC0xODk4NjAzMDkwLC0xMDIxMDE2NTIzLD
+k2ODUwMTY4MywtNDY4Njg3MjYwLDk2MTIwNzU0M119
 -->
