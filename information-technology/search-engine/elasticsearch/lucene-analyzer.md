@@ -92,7 +92,7 @@ Whitespace Analyzer
 
 ###  CHARACTER FILTER(전처리 필터)
 
-전처리 필터는 사실 토크나이저필터에서도 내부에서도 동일한 처리가 가능하다. 그래서 사실 전처리 필터는 상대적으로 활용도가 많이 떨어진다. 엘라스틱서치에서 공식적으로 제공하는 전처리 필터도 그리 많지 않다. 앞서 보았던 HTML 을 제거하는 전처리 필터인 Html strip char 필터가 대표적이다.
+전처리 필터역할은 사실 토크나이저필터에서도 동일한 처리가 가능하다. 그래서 전처리필터는 상대적으로 활용도가 많이 떨어진다. 엘라스틱서치에서 공식적으로 제공하는 전처리 필터도 그리 많지 않다. 앞서 보았던 HTML 을 제거하는 전처리 필터인 Html strip char 필터가 대표적이다.
 
 ### TOKENIZER FILTER(토크나이저 필터)
 
@@ -213,9 +213,9 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjgwMTM2OCwxMjkxNTI5MTQwLDYyMj
-g5NDE1MCw5MDE0MjE2NiwtMTg3MDMwMDg3NCw0MDM5MTgyMjEs
-LTEzODg0MzY5NDcsOTM4MjczMzAsMTI0MDY3NTE3MSwtODI5OT
-g1Mzc5LC0xODk4NjAzMDkwLC0xMDIxMDE2NTIzLDk2ODUwMTY4
-MywtNDY4Njg3MjYwLDk2MTIwNzU0M119
+eyJoaXN0b3J5IjpbLTE2Mjk4MDkyMzUsMTI5MTUyOTE0MCw2Mj
+I4OTQxNTAsOTAxNDIxNjYsLTE4NzAzMDA4NzQsNDAzOTE4MjIx
+LC0xMzg4NDM2OTQ3LDkzODI3MzMwLDEyNDA2NzUxNzEsLTgyOT
+k4NTM3OSwtMTg5ODYwMzA5MCwtMTAyMTAxNjUyMyw5Njg1MDE2
+ODMsLTQ2ODY4NzI2MCw5NjEyMDc1NDNdfQ==
 -->
