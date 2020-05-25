@@ -44,7 +44,7 @@ cool 토큰의 경우, 문서 1의 내용이 나온다. 하지만 "elasticsaerch
 ```
 문장 -> CHRACTER FILTER(전처리 필터) -> 전처리된 문장 ->
 TOKENIZER FILTER -> Tokens(토큰) -> TOKEN FILTER(동의어 사전) ->
-Terms(단어) -> index
+Terms(단어) -> Index
 ```
 
 CHARACTER FILTER(전처리 필터)
@@ -211,7 +211,7 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NTc0NzYxNCwxMjQwNjc1MTcxLC04Mj
-k5ODUzNzksLTE4OTg2MDMwOTAsLTEwMjEwMTY1MjMsOTY4NTAx
-NjgzLC00Njg2ODcyNjAsOTYxMjA3NTQzXX0=
+eyJoaXN0b3J5IjpbOTM4MjczMzAsMTI0MDY3NTE3MSwtODI5OT
+g1Mzc5LC0xODk4NjAzMDkwLC0xMDIxMDE2NTIzLDk2ODUwMTY4
+MywtNDY4Njg3MjYwLDk2MTIwNzU0M119
 -->
