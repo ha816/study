@@ -51,7 +51,7 @@ CHARACTER FILTER(전처리 필터)
 : 문장을 분석하기 전에 입력 테스트에 대해 특정한 단어를 변경하거나 HTML 같은 태그를 제거하는 역할을 하는 필터다. 텍스트를 토큰화하기 전 전처리 과정으로, ReplaceAll 함수처럼 패턴으로 텍스트를 변경하거나 사용자가 정의한 필터를 적용할 수 있다. 
 
 TOKENIZER FILTER
-: 토크나이저 필터는 분석기를 구성할때 하나만 사용할 수 있으며 텍스트를 어떻게 나눌것인지 정의한다. 한글을 분해할 때는 한글 형태소 분석기의 토크나이저를 사용하고, 영문을 분석할때는 영문 형태소 분석기를 사용하면 된다.
+: 토크나이저 필터는 분석기를 구성할때 단 하나만 사용할 수 있으며 텍스트를 어떻게 나눌 것인지를 정의한다. 한글을 분해할 때는 한글 형태소 분석기 토크나이저를 사용하고, 영문을 분석할때는 영문 형태소 분석기를 사용하면 된다.
 
 TOKEN FILTER
 : 토큰필터는 토큰화된 단어를 하나씩 필터링하여 사용자가 원하는 토큰으로 변환한다. 예를들어, 불필요한 단어를 제거하거나 동의어 사전을 만들어 단어를 추가하거나 영문 단어를 소문자로 변환하는 등의 작업을 수행할 수 있다. 
@@ -211,7 +211,8 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODg0MzY5NDcsOTM4MjczMzAsMTI0MD
-Y3NTE3MSwtODI5OTg1Mzc5LC0xODk4NjAzMDkwLC0xMDIxMDE2
-NTIzLDk2ODUwMTY4MywtNDY4Njg3MjYwLDk2MTIwNzU0M119
+eyJoaXN0b3J5IjpbNDAzOTE4MjIxLC0xMzg4NDM2OTQ3LDkzOD
+I3MzMwLDEyNDA2NzUxNzEsLTgyOTk4NTM3OSwtMTg5ODYwMzA5
+MCwtMTAyMTAxNjUyMyw5Njg1MDE2ODMsLTQ2ODY4NzI2MCw5Nj
+EyMDc1NDNdfQ==
 -->
