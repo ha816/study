@@ -22,9 +22,9 @@ Doc2
 Elasticsearch is great
 ```
 
-문서의 역색인을 만들기 위해선 각 문서를 토큰화해야 한다. 토큰화된 단어에 대해 문서 상의 위치와 출현 빈도 등의 정보를 체크한다. 따라서 결과물은 대략 다음과 같다. 
+문서의 역색인을 만들기 위해선 각 문서를 토큰화해야 한다. 토큰화된 단어에 대해 문서 상의 위치와 출현 빈도 등의 정보를 만든다. 그 결과물은 대략 다음과 같다. 
 
-|토큰| 문서번호|텀의 위치(Position)| 텀의빈도(Term Frequency)|
+|토큰| 문서번호|위치(Position)| 출현빈도(Frequency)|
 |--|--|--|--|
 |elasticsearch  | doc1 | 1| 1| 
 |Elasticsearch  | doc2 | 1| 1| 
@@ -212,6 +212,6 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjEwMTY1MjMsOTY4NTAxNjgzLC00Nj
-g2ODcyNjAsOTYxMjA3NTQzXX0=
+eyJoaXN0b3J5IjpbMTQ0MDA3MzUyOSwtMTAyMTAxNjUyMyw5Nj
+g1MDE2ODMsLTQ2ODY4NzI2MCw5NjEyMDc1NDNdfQ==
 -->
