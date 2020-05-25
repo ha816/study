@@ -81,7 +81,7 @@ PUT /movie_analyzer -- 영화 분석기 설정
 }
 ```
 
-위 설정은 커스마이징 된 ㅁ
+위 설정은 커스마이징 된 분석기를 설정한 사례다. 
 
 Standard Analyzer
 : 인덱스를 생성할때 settings에 analyzer를 정의할 수 있는데, 별다른 정의를 하지 않고 필드의 데이터 타입을 Text 데이터 타입으한다면 이 분석기를 사용한다. 
@@ -213,9 +213,9 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzQyOTA5ODAsOTAxNDIxNjYsLTE4Nz
-AzMDA4NzQsNDAzOTE4MjIxLC0xMzg4NDM2OTQ3LDkzODI3MzMw
-LDEyNDA2NzUxNzEsLTgyOTk4NTM3OSwtMTg5ODYwMzA5MCwtMT
-AyMTAxNjUyMyw5Njg1MDE2ODMsLTQ2ODY4NzI2MCw5NjEyMDc1
-NDNdfQ==
+eyJoaXN0b3J5IjpbNjkyOTUwNzUzLDkwMTQyMTY2LC0xODcwMz
+AwODc0LDQwMzkxODIyMSwtMTM4ODQzNjk0Nyw5MzgyNzMzMCwx
+MjQwNjc1MTcxLC04Mjk5ODUzNzksLTE4OTg2MDMwOTAsLTEwMj
+EwMTY1MjMsOTY4NTAxNjgzLC00Njg2ODcyNjAsOTYxMjA3NTQz
+XX0=
 -->
