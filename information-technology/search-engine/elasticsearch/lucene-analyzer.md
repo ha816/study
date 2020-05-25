@@ -7,11 +7,11 @@
 
 ![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/1168CE4A4F60B00B0C)
 
-루씬의 색인은 역색인이라는 특수한 방식을 사용한다. 역색인 구조를 간단히 정리하자면 아래와 같다. 
+루씬의 색인은 역색인이라는 특수한 방식을 사용한다. 역색인 구조의 특징을 정리하자면 아래와 같다. 
 
 * 모든 문서가 가지는 단어(Term)의 목록
-* 해당 단어가 어떤 문서에 속해 있는지에 대한 정보
-* 전체 문서에 각 단어가 몇 개 들어있는지에 대한 정보
+* 특정 단어가 어느 문서에 속해 있는지에 대한 정보
+* 전체 문서에서 단어가 몇 개 들어있는지에 대한 정보
 * 하나의 문서에 단어가 몇 번씩 출현했는지에 대한 빈도
 
 예를 들어 2개의 문서가 있다고 하자. 
@@ -213,6 +213,6 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY4NTAxNjgzLC00Njg2ODcyNjAsOTYxMj
-A3NTQzXX0=
+eyJoaXN0b3J5IjpbMTc0NDEwMjcyOSw5Njg1MDE2ODMsLTQ2OD
+Y4NzI2MCw5NjEyMDc1NDNdfQ==
 -->
