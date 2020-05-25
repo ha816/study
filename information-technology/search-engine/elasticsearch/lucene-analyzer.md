@@ -87,8 +87,7 @@ Standard Analyzer
 : 별다른 정의를 하지 않고 필드의 데이터 타입을 Text 데이터 타입으로 분석하고 싶다면 이 분석기를 사용한다. 
 
 Whitespace Analyzer
-: 공백 문자열을 기준으로 토큰을 분리하는 매우 간단한 분석기다. 공백으로 토큰을 분리하는 Whitespace Tokenizer를 사용하고 Token Filter에는 아무것도 없다. 
-
+: 공백을 기준으로 토큰을 분리하는 매우 간단한 분석기다. 공백으로 토큰을 분리하는 Whitespace Tokenizer를 사용하고 Token Filter 과정은 건너뛰게 된다.
 
 ###  CHARACTER FILTER(전처리 필터)
 
@@ -213,7 +212,7 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0Nzk5NTI4LDkwMTQyMTY2LC0xODcwMz
+eyJoaXN0b3J5IjpbNjIyODk0MTUwLDkwMTQyMTY2LC0xODcwMz
 AwODc0LDQwMzkxODIyMSwtMTM4ODQzNjk0Nyw5MzgyNzMzMCwx
 MjQwNjc1MTcxLC04Mjk5ODUzNzksLTE4OTg2MDMwOTAsLTEwMj
 EwMTY1MjMsOTY4NTAxNjgzLC00Njg2ODcyNjAsOTYxMjA3NTQz
