@@ -5,6 +5,8 @@
 
 ## 역색인 구조(Inverted Index)
 
+![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/1168CE4A4F60B00B0C)
+
 루씬의 색인은 역색인이라는 특수한 방식을 사용한다. 역색인 구조를 간단히 정리하자면 아래와 같다. 
 
 * 모든 문서가 가지는 단어의 고유 단어 목록
@@ -211,5 +213,6 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2ODY4NzI2MCw5NjEyMDc1NDNdfQ==
+eyJoaXN0b3J5IjpbNTQxNTkxOTU2LC00Njg2ODcyNjAsOTYxMj
+A3NTQzXX0=
 -->
