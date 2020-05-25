@@ -34,7 +34,7 @@ Elasticsearch is great
 
 위 내용을 보면 특정 토큰이 어떤 문서에서 어느 위치에 나왔고, 몇번 나왔는지에 대한 정보를 얻을 수 있다. 이를 바탕으로 **입력한 검색어가 존재하는 문서를 찾기 위해 검색어와 동일한 토큰을 찾아 해당 토큰이 존재하는 문서를 찾는다.**
 
-cool의 경우, 문서 1의 내용이 나온다. 하지만 "elasticsaerch"로 검색을 하면 어떻게 될까? 예상으로는 문서1과 문서2에 해당하는 내용이 다 나와야 할 것이다. 하지만 토큰의 정보가 정확하게 일치하는 데이터만 출력하기 때문에 문서1은 출력되지만 문서2는 출력되지 않는다. 
+cool 토큰의 경우, 문서 1의 내용이 나온다. 하지만 "elasticsaerch"로 검색을 하면 어떻게 될까? 예상으로는 문서1과 문서2에 해당하는 내용이 다 나와야 할 것이다. 하지만 토큰의 정보가 정확하게 일치하는 데이터만 출력하기 때문에 문서1은 출력되지만 문서2는 출력되지 않는다. 
 
 이 문제를 해결하는 가장 간단한 방법은 텍스트 전체를 소문자로 변환한 다음 색인하는 것이다. 
 
@@ -212,6 +212,7 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTg2MDMwOTAsLTEwMjEwMTY1MjMsOT
-Y4NTAxNjgzLC00Njg2ODcyNjAsOTYxMjA3NTQzXX0=
+eyJoaXN0b3J5IjpbMTYzODM5OTI2MiwtMTg5ODYwMzA5MCwtMT
+AyMTAxNjUyMyw5Njg1MDE2ODMsLTQ2ODY4NzI2MCw5NjEyMDc1
+NDNdfQ==
 -->
