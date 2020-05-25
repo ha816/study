@@ -41,8 +41,9 @@ cool 토큰의 경우, 문서 1의 내용이 나온다. 하지만 "elasticsaerch
 ## 분석기의 구조 
 
 분석기가 동작하는 기본 프로세스는 아래와 같다. 
-
+```
 문장 -> CHRACTER FILTER-> 전처리 처리된 문장 -> TOKENIZER FILTER -> Tokens -> TOKEN FILTER(동의어 사전) -> Terms -> index
+```
 
 CHARACTER FILTER(전처리 필터)
 : 문장을 분석하기 전에 입력 테스트에 대해 특정한 단어를 변경하거나 HTML 같은 태그를 제거하는 역할을 하는 필터다. 해당 내용은 텍스트를 개별 토큰화하기 전의 전처리 과정이며, ReplaceAll 함수처럼 패턴으로 텍스트를 변경하거나 사용자가 정의한 필터를 적용할 수 있다. 
@@ -208,7 +209,7 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyOTk4NTM3OSwtMTg5ODYwMzA5MCwtMT
-AyMTAxNjUyMyw5Njg1MDE2ODMsLTQ2ODY4NzI2MCw5NjEyMDc1
-NDNdfQ==
+eyJoaXN0b3J5IjpbMTI0MDY3NTE3MSwtODI5OTg1Mzc5LC0xOD
+k4NjAzMDkwLC0xMDIxMDE2NTIzLDk2ODUwMTY4MywtNDY4Njg3
+MjYwLDk2MTIwNzU0M119
 -->
