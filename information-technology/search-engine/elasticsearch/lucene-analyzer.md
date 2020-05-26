@@ -126,7 +126,7 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 ### TOKEN FILTER(토큰 필터)
 
-토큰 필터는 토크나이저에서 분리된 토큰들을 추가, 수정, 삭제할 때 사용하는 필터다. 토크나이저에 의해서 토큰이 분리가 되면 분리된 토큰은 배열 형태로 토큰 필터에게 전달된다. 토크 나이저가 앞단에서 처리를 해줘야 하기 때문에 토큰 필터는 독립적으로 사용할 수는 없다.
+토큰필터는 토크나이저에서 분리된 토큰들을 추가, 수정, 삭제할 때 사용하는 필터다. 토크나이저에 의해서 토큰이 분리가 되면 분리된 토큰은 배열 형태로 토큰 필터에게 전달된다. 토크 나이저가 앞단에서 처리를 해줘야 하기 때문에 토큰 필터는 독립적으로 사용할 수는 없다.
 
 #### Ascii Folding 토큰 필터
 
@@ -213,9 +213,10 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkxODY0ODA3LC0xNjI5ODA5MjM1LDEyOT
-E1MjkxNDAsNjIyODk0MTUwLDkwMTQyMTY2LC0xODcwMzAwODc0
-LDQwMzkxODIyMSwtMTM4ODQzNjk0Nyw5MzgyNzMzMCwxMjQwNj
-c1MTcxLC04Mjk5ODUzNzksLTE4OTg2MDMwOTAsLTEwMjEwMTY1
-MjMsOTY4NTAxNjgzLC00Njg2ODcyNjAsOTYxMjA3NTQzXX0=
+eyJoaXN0b3J5IjpbLTIwMzg2OTkyNjMsNTkxODY0ODA3LC0xNj
+I5ODA5MjM1LDEyOTE1MjkxNDAsNjIyODk0MTUwLDkwMTQyMTY2
+LC0xODcwMzAwODc0LDQwMzkxODIyMSwtMTM4ODQzNjk0Nyw5Mz
+gyNzMzMCwxMjQwNjc1MTcxLC04Mjk5ODUzNzksLTE4OTg2MDMw
+OTAsLTEwMjEwMTY1MjMsOTY4NTAxNjgzLC00Njg2ODcyNjAsOT
+YxMjA3NTQzXX0=
 -->
