@@ -152,7 +152,7 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 
 ## 동의어 사전(synonym dictionary)
 
-엘라스틱서치에서 제공하는 토큰 필터중 **Synonym 필터**를 사용하면 동의어 처리 가능해진다. 동의어 처리란 **원문에 특정 단어가 없더라도 색인 데이터를 토큰화해서 저장할 때 동의어나 유의어에 해당하는 단어를 함께 저장해서 검색이 가능해지게 하는 기술이다.**  
+엘라스틱서치에서 제공하는 토큰 필터중 **Synonym 필터**를 사용하면 동의어 처리 가능해진다. 동의어 처리란 **입력된 단어의 동의어나 유의어에 해당하는 단어를 함께 저장해서 원문에 특정 단어가 없더라도 검색이 가능해지게 하는 기술이다.**  
 
 예를 들어, "ElasticSearch"라는 단어가 포함된 원문이 필터를 통해 인덱스에 저장된다면 "엘라스틱서치"라고 검색했을때 검색되지 않을 것이다. 하지만 동의어 기능을 색인할때 "엘라스틱서치"도 함께 저장한다면 "ElasticSearch"도 검색이 가능하고 "엘라스틱서치"도 검색이 가능해진다.
 
@@ -211,11 +211,11 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMxNzA5Nzg3LC0xMDYwNTYwMTYyLDE4MT
-MwNjUxMywyMDU5ODcyNjUsODk0NDUwMDU3LDEzMzczNDk3Njks
-LTIwNjczMTUwNzEsLTIwMzg2OTkyNjMsNTkxODY0ODA3LC0xNj
-I5ODA5MjM1LDEyOTE1MjkxNDAsNjIyODk0MTUwLDkwMTQyMTY2
-LC0xODcwMzAwODc0LDQwMzkxODIyMSwtMTM4ODQzNjk0Nyw5Mz
-gyNzMzMCwxMjQwNjc1MTcxLC04Mjk5ODUzNzksLTE4OTg2MDMw
-OTBdfQ==
+eyJoaXN0b3J5IjpbMTI5NjQxMDEzMSw5MzE3MDk3ODcsLTEwNj
+A1NjAxNjIsMTgxMzA2NTEzLDIwNTk4NzI2NSw4OTQ0NTAwNTcs
+MTMzNzM0OTc2OSwtMjA2NzMxNTA3MSwtMjAzODY5OTI2Myw1OT
+E4NjQ4MDcsLTE2Mjk4MDkyMzUsMTI5MTUyOTE0MCw2MjI4OTQx
+NTAsOTAxNDIxNjYsLTE4NzAzMDA4NzQsNDAzOTE4MjIxLC0xMz
+g4NDM2OTQ3LDkzODI3MzMwLDEyNDA2NzUxNzEsLTgyOTk4NTM3
+OV19
 -->
