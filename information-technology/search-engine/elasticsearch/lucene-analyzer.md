@@ -108,7 +108,7 @@ Whitespace Analyzer
 
 #### Ngram 토크나이저
 
-Ngram에서 N은 토큰화할 글자 수를 말한다. 별다른 옵션을 주지 않는다면 기본적으로 한 글자씩 토큰화를 한다. Ngram에 특정 문자를 지정할 수도 있으며, 이 경우 문자의 목록 중 하나를 만날때마다 단어를 자른다. 그 밖에도 다양한 옵션을 조합해서 **자동완성 기능**을 만들때 유용하게 활용할 수 있다. 
+Ngram에서 N은 **토큰화할 글자 수**를 말한다. 별다른 옵션을 주지 않는다면 기본적으로 한 글자씩 토큰화를 한다. Ngram에 특정 문자를 지정할 수도 있으며, 이 경우 문자의 목록 중 하나를 만날때마다 단어를 자른다. 그 밖에도 다양한 옵션을 조합해서 **자동완성 기능**을 만들때 유용하게 활용할 수 있다. 
 
 만약 문장으로 "Harry Potter"를 주고, N이 3이라면 아래와 같은 결과로 토크나이징을 하게 된다. 
 ```
@@ -213,10 +213,10 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzg2OTkyNjMsNTkxODY0ODA3LC0xNj
-I5ODA5MjM1LDEyOTE1MjkxNDAsNjIyODk0MTUwLDkwMTQyMTY2
-LC0xODcwMzAwODc0LDQwMzkxODIyMSwtMTM4ODQzNjk0Nyw5Mz
-gyNzMzMCwxMjQwNjc1MTcxLC04Mjk5ODUzNzksLTE4OTg2MDMw
-OTAsLTEwMjEwMTY1MjMsOTY4NTAxNjgzLC00Njg2ODcyNjAsOT
-YxMjA3NTQzXX0=
+eyJoaXN0b3J5IjpbLTIwNjczMTUwNzEsLTIwMzg2OTkyNjMsNT
+kxODY0ODA3LC0xNjI5ODA5MjM1LDEyOTE1MjkxNDAsNjIyODk0
+MTUwLDkwMTQyMTY2LC0xODcwMzAwODc0LDQwMzkxODIyMSwtMT
+M4ODQzNjk0Nyw5MzgyNzMzMCwxMjQwNjc1MTcxLC04Mjk5ODUz
+NzksLTE4OTg2MDMwOTAsLTEwMjEwMTY1MjMsOTY4NTAxNjgzLC
+00Njg2ODcyNjAsOTYxMjA3NTQzXX0=
 -->
