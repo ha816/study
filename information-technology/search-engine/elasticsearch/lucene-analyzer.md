@@ -126,11 +126,11 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 
 ### TOKEN FILTER(토큰 필터)
 
-토큰필터는 토크나이저에서 분리된 토큰들을 추가, 수정 또는 삭제할 때 사용하는 필터다. 토크나이저에 의해서 토큰이 분리가 되면 분리된 토큰은 배열 형태로 토큰 필터에게 전달된다. 토크 나이저가 앞단에서 처리를 해줘야 하기 때문에 토큰 필터는 독립적으로 사용할 수는 없다.
+토큰필터는 토크나이저에서 분리된 토큰들을 변형할 때 사용하는 필터다. 토크나이저에 의해서 토큰이 분리가 되면 분리된 토큰은 배열 형태로 토큰 필터로 전달된다. 즉 토크 나이저가 앞단에서 처리를 해줘야 하기 때문에 **토큰 필터는 독립적으로 사용할 수는 없다.**
 
 #### Ascii Folding 토큰 필터
 
-아스키 코드에 해당하는 127개의 알파벳, 숫자, 기호에 해당하지 않는 경우 문자를 ASCII 요소로 변환한다. 예를들어 아스키 코드가 아닌 "javaca'fe"라는 단어가 들어오면 이는 "javacafe"로 Ascii 값에 맞게 변경된다.
+아스키 코드에 해당하는 127개의 알파벳, 숫자, 기호에 해당하지 않는 경우 문자를 ASCII 요소로 변환한다. 예를 들어 아스키 코드가 아닌 "javaca'fe"라는 단어가 들어오면 이는 "javacafe"로 Ascii 값에 맞게 변경된다.
 
 #### Lowercase, Uppercase 토큰 필터
 
@@ -213,11 +213,11 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0NDUwMDU3LDEzMzczNDk3NjksLTIwNj
-czMTUwNzEsLTIwMzg2OTkyNjMsNTkxODY0ODA3LC0xNjI5ODA5
-MjM1LDEyOTE1MjkxNDAsNjIyODk0MTUwLDkwMTQyMTY2LC0xOD
-cwMzAwODc0LDQwMzkxODIyMSwtMTM4ODQzNjk0Nyw5MzgyNzMz
-MCwxMjQwNjc1MTcxLC04Mjk5ODUzNzksLTE4OTg2MDMwOTAsLT
-EwMjEwMTY1MjMsOTY4NTAxNjgzLC00Njg2ODcyNjAsOTYxMjA3
-NTQzXX0=
+eyJoaXN0b3J5IjpbMjA1OTg3MjY1LDg5NDQ1MDA1NywxMzM3Mz
+Q5NzY5LC0yMDY3MzE1MDcxLC0yMDM4Njk5MjYzLDU5MTg2NDgw
+NywtMTYyOTgwOTIzNSwxMjkxNTI5MTQwLDYyMjg5NDE1MCw5MD
+E0MjE2NiwtMTg3MDMwMDg3NCw0MDM5MTgyMjEsLTEzODg0MzY5
+NDcsOTM4MjczMzAsMTI0MDY3NTE3MSwtODI5OTg1Mzc5LC0xOD
+k4NjAzMDkwLC0xMDIxMDE2NTIzLDk2ODUwMTY4MywtNDY4Njg3
+MjYwXX0=
 -->
