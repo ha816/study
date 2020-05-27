@@ -117,7 +117,7 @@ Har, arr, rry, Pot, ott, tte, ter
 
 #### Edge Ngram 토크나이저
 
-시작 부분을 고정시켜 Ngram 단어를 자르는 방식으로 사용하는 토크나이저다. 해당 토크나이저도 자동 완성을 구현할때 유용하게 활용할 수 있다. 
+**시작 부분을 고정시켜 Ngram 단어를 자르는 방식으로 사용하는 토크나이저다.** 해당 토크나이저도 자동 완성을 구현할때 유용하게 활용할 수 있다. 
 
 만약 Edge Ngram 토크나이저에게 "Harry Potter"를 주면 아래와 같은 결과로 토크나이징을 하게 된다. 
 ```
@@ -213,10 +213,11 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNzM0OTc2OSwtMjA2NzMxNTA3MSwtMj
-AzODY5OTI2Myw1OTE4NjQ4MDcsLTE2Mjk4MDkyMzUsMTI5MTUy
-OTE0MCw2MjI4OTQxNTAsOTAxNDIxNjYsLTE4NzAzMDA4NzQsND
-AzOTE4MjIxLC0xMzg4NDM2OTQ3LDkzODI3MzMwLDEyNDA2NzUx
-NzEsLTgyOTk4NTM3OSwtMTg5ODYwMzA5MCwtMTAyMTAxNjUyMy
-w5Njg1MDE2ODMsLTQ2ODY4NzI2MCw5NjEyMDc1NDNdfQ==
+eyJoaXN0b3J5IjpbODk0NDUwMDU3LDEzMzczNDk3NjksLTIwNj
+czMTUwNzEsLTIwMzg2OTkyNjMsNTkxODY0ODA3LC0xNjI5ODA5
+MjM1LDEyOTE1MjkxNDAsNjIyODk0MTUwLDkwMTQyMTY2LC0xOD
+cwMzAwODc0LDQwMzkxODIyMSwtMTM4ODQzNjk0Nyw5MzgyNzMz
+MCwxMjQwNjc1MTcxLC04Mjk5ODUzNzksLTE4OTg2MDMwOTAsLT
+EwMjEwMTY1MjMsOTY4NTAxNjgzLC00Njg2ODcyNjAsOTYxMjA3
+NTQzXX0=
 -->
