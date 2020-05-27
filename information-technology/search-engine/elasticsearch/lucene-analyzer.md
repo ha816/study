@@ -143,18 +143,16 @@ H, Ha, Har, Harr, Harry, P, Po, Pot, Pott, Potte, Potter
 #### Stemmer 토큰 필터
 
 Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토큰을 영단어 원형으로 변환한다.  
+#### Trim 필터
+토큰의 앞뒤로 공백을 제거하는 토큰 필터이다. 
 
 #### Synonym 토큰 필터
 
 동의어 처리를 할 수 있는 필터다. 예를 들어 "Harry"라는 토큰이 들어오면 "해리"라는 동의어로 변환할 수 있다. 
 
-#### Trim 필터
-
-토큰의 앞뒤로 공백을 제거하는 토큰 필터이다. 
-
 ## 동의어 사전(synonym dictionary)
 
-엘라스틱서치에서 제공하는 토큰 필터중 Synonym 필터를 사용하면 동의어 처리가 능해진다. 동의어는 검색 기능을 풍부하게 할 수 있게 도와주는 도군 중 하나다. **원문에 특정한 단어가 존재하지 않더라도 색인 데이터를 토큰화해서 저장할 때 동의어나 유의어에 해당하는 단어를 함께 저장해서 검색이 가능해지게 하는 기술이다.**  
+엘라스틱서치에서 제공하는 토큰 필터중 **Synonym 필터**를 사용하면 동의어 처리가 능해진다. 동의어는 검색 기능을 풍부하게 할 수 있게 도와주는 도군 중 하나다. **원문에 특정한 단어가 존재하지 않더라도 색인 데이터를 토큰화해서 저장할 때 동의어나 유의어에 해당하는 단어를 함께 저장해서 검색이 가능해지게 하는 기술이다.**  
 
 예를 들어, "ElasticSearch"라는 단어가 포함된 원문이 필터를 통해 인덱스에 저장된다면 "엘라스틱서치"라고 검색했을때 검색되지 않을 것이다. 하지만 동의어 기능을 색인할때 "엘라스틱서치"도 함께 저장한다면 "ElasticSearch"도 검색이 가능하고 "엘라스틱서치"도 검색이 가능해진다.
 
@@ -213,11 +211,11 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1OTg3MjY1LDg5NDQ1MDA1NywxMzM3Mz
-Q5NzY5LC0yMDY3MzE1MDcxLC0yMDM4Njk5MjYzLDU5MTg2NDgw
-NywtMTYyOTgwOTIzNSwxMjkxNTI5MTQwLDYyMjg5NDE1MCw5MD
-E0MjE2NiwtMTg3MDMwMDg3NCw0MDM5MTgyMjEsLTEzODg0MzY5
-NDcsOTM4MjczMzAsMTI0MDY3NTE3MSwtODI5OTg1Mzc5LC0xOD
-k4NjAzMDkwLC0xMDIxMDE2NTIzLDk2ODUwMTY4MywtNDY4Njg3
-MjYwXX0=
+eyJoaXN0b3J5IjpbMTgxMzA2NTEzLDIwNTk4NzI2NSw4OTQ0NT
+AwNTcsMTMzNzM0OTc2OSwtMjA2NzMxNTA3MSwtMjAzODY5OTI2
+Myw1OTE4NjQ4MDcsLTE2Mjk4MDkyMzUsMTI5MTUyOTE0MCw2Mj
+I4OTQxNTAsOTAxNDIxNjYsLTE4NzAzMDA4NzQsNDAzOTE4MjIx
+LC0xMzg4NDM2OTQ3LDkzODI3MzMwLDEyNDA2NzUxNzEsLTgyOT
+k4NTM3OSwtMTg5ODYwMzA5MCwtMTAyMTAxNjUyMyw5Njg1MDE2
+ODNdfQ==
 -->
