@@ -196,7 +196,7 @@ Harry => 해리 -- 동의어 치환
 
 마지막으로 한 가지 주의해야할 점이 있다. 동의어 사전은 색인 시점에도 사용될 수 있고 검색 시점에 사용될 수도 있는데, **검색 시점에는 사전의 내용이 변경되면 그 내용이 반영된다. 하지만 색인 시점에는 사전의 내용이 변경되더라도 색인이 변경되지는 않는다.** 
 
-검색시점에 사전 변경 내용이 적용되는 이유는 검색 시 동의어를 찾을때는 변경된 동의어 사전 파일을 참고하기 때문이다. 색인 시점의 경우는 기존 색인을 모두 삭제하고 색인을 새로 생성해야만 변경된 동의어 사전 내용이 적용된다. 색인시 사용되는 동의어 사전 데이터는  파일이 아니라 모두 메모리에 올라가 있
+검색시점에 사전 변경 내용이 적용되는 이유는 검색 시 동의어를 찾을때는 변경된 동의어 사전 파일을 참고하기 때문이다. 색인 시점의 경우는 기존 색인을 모두 삭제하고 색인을 새로 생성해야만 변경된 동의어 사전 내용이 적용된다. 색인시 사용되는 동의어 사전 데이터는 변경된 동의어 사전 파일이 아니라 변경전 동의어 사전 파일을  메모리 데이터이기 때문이다.
 
 이러한 문제점 때문에 동의어 사전이 빈번하게 수정되는 인덱스의 경우 색인 시점에는 적용하지 않고 검색 시점에만 적용하는 방식으로 이러한 문제점을 해결하기도 한다. 
 
@@ -211,15 +211,15 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 해리 -- Harry를 치환하는 대체 동의어 토큰
 ```
 
-언급했듯이 동의어 사전이 변경될 경우, 이를 인식시키기 위해서는 인덱스를 Reload해야 한다. 동의어 사전 데이터는 모두 메모리에 올라가 있기 때문에 이를 갱신해 줘야 한다. 
+언급했듯이 동의어 사전이 변경될 경우, 이를 인식시키기 위해서는 인덱스를 Reload해야 한다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MTg0MDc4OSwxOTk2Nzk1NzEyLDE0Nj
-EyODg3NDIsLTkxMDk3ODczNiwtODAwNjYzMTQxLDkzMTcwOTc4
-NywtMTA2MDU2MDE2MiwxODEzMDY1MTMsMjA1OTg3MjY1LDg5ND
-Q1MDA1NywxMzM3MzQ5NzY5LC0yMDY3MzE1MDcxLC0yMDM4Njk5
-MjYzLDU5MTg2NDgwNywtMTYyOTgwOTIzNSwxMjkxNTI5MTQwLD
-YyMjg5NDE1MCw5MDE0MjE2NiwtMTg3MDMwMDg3NCw0MDM5MTgy
-MjFdfQ==
+eyJoaXN0b3J5IjpbMTIzNDUwODMxLDE5OTY3OTU3MTIsMTQ2MT
+I4ODc0MiwtOTEwOTc4NzM2LC04MDA2NjMxNDEsOTMxNzA5Nzg3
+LC0xMDYwNTYwMTYyLDE4MTMwNjUxMywyMDU5ODcyNjUsODk0ND
+UwMDU3LDEzMzczNDk3NjksLTIwNjczMTUwNzEsLTIwMzg2OTky
+NjMsNTkxODY0ODA3LC0xNjI5ODA5MjM1LDEyOTE1MjkxNDAsNj
+IyODk0MTUwLDkwMTQyMTY2LC0xODcwMzAwODc0LDQwMzkxODIy
+MV19
 -->
