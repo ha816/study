@@ -207,19 +207,15 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 해리 -- Harry를 치환하는 대체 동의어 토큰
 ```
 
-언급했듯이 동의어 사전이 변경될 경우, 이를 인식시키기 위해서는 인덱스를 Reload해야 한다. 동의어 사전 데이터는 모두 메모리에 올라가 있는 이를 갱신해 줘야 한다. 
-
-
-**동의어 사전은 실시간으로 적용되지 않는다.** 수정된 동의어를 적용하고 싶다면 해당 동의어 사전을 사용하고 있는 인덱스를 Reload해야 한다. 
-
+언급했듯이 동의어 사전이 변경될 경우, 이를 인식시키기 위해서는 인덱스를 Reload해야 한다. 동의어 사전 데이터는 모두 메모리에 올라가 있기 때문에 이를 갱신해 줘야 한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDEwMDk1NDgsMTQ2MTI4ODc0MiwtOT
-EwOTc4NzM2LC04MDA2NjMxNDEsOTMxNzA5Nzg3LC0xMDYwNTYw
-MTYyLDE4MTMwNjUxMywyMDU5ODcyNjUsODk0NDUwMDU3LDEzMz
-czNDk3NjksLTIwNjczMTUwNzEsLTIwMzg2OTkyNjMsNTkxODY0
-ODA3LC0xNjI5ODA5MjM1LDEyOTE1MjkxNDAsNjIyODk0MTUwLD
-kwMTQyMTY2LC0xODcwMzAwODc0LDQwMzkxODIyMSwtMTM4ODQz
-Njk0N119
+eyJoaXN0b3J5IjpbMTk5Njc5NTcxMiwxNDYxMjg4NzQyLC05MT
+A5Nzg3MzYsLTgwMDY2MzE0MSw5MzE3MDk3ODcsLTEwNjA1NjAx
+NjIsMTgxMzA2NTEzLDIwNTk4NzI2NSw4OTQ0NTAwNTcsMTMzNz
+M0OTc2OSwtMjA2NzMxNTA3MSwtMjAzODY5OTI2Myw1OTE4NjQ4
+MDcsLTE2Mjk4MDkyMzUsMTI5MTUyOTE0MCw2MjI4OTQxNTAsOT
+AxNDIxNjYsLTE4NzAzMDA4NzQsNDAzOTE4MjIxLC0xMzg4NDM2
+OTQ3XX0=
 -->
