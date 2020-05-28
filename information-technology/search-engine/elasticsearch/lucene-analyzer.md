@@ -188,7 +188,13 @@ Elasticsearch, 엘라스틱서치 -- 동의어 추가
 Harry => 해리 -- 동의어 치환
 ```
 
-동의어 사전은 실시간으로 적용되지 않는다. 수정된 동의어를 적용하고 싶다면 해당 동의어 사전을 사용하고 있는 인덱스를 Reload해야 한다. 
+#### 동의어 삭제
+
+동의어 삭제의 경우는 단순히 해당 동의어 단어를 지우면 된다.
+
+--- 
+
+**동의어 사전은 실시간으로 적용되지 않는다.** 수정된 동의어를 적용하고 싶다면 해당 동의어 사전을 사용하고 있는 인덱스를 Reload해야 한다. 
 
 한 가지 주의해야할 점이 있다. 동의어 사전은 색인 시점에도 사용될 수 있고 검색 시점에도 사용할 수 있다는 점이다. 검색 시점에는 사전의 내용이 변경되면 그 내용이 반영된다. 하지만 색인 시점에 동의어 사전이 사용됬다면 사전의 내용이 변경되더라도 색인이 변경되지는 않는다. 이 경우 기존 색인을 모두 삭제하고 색인을 새로 생성해야만 변경된 사전 내용이 적용된다. 이러한 문제점 때문에 동의어 사전이 빈번하게 수정되는 인덱스의 경우 색인 시점에는 적용하지 않고 검색 시점에만 적용하는 방식으로 이러한 문제점을 해결하기도 한다. 
 
@@ -209,11 +215,11 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDY4ODI5NTAsMTQ2MTI4ODc0MiwtOT
-EwOTc4NzM2LC04MDA2NjMxNDEsOTMxNzA5Nzg3LC0xMDYwNTYw
-MTYyLDE4MTMwNjUxMywyMDU5ODcyNjUsODk0NDUwMDU3LDEzMz
-czNDk3NjksLTIwNjczMTUwNzEsLTIwMzg2OTkyNjMsNTkxODY0
-ODA3LC0xNjI5ODA5MjM1LDEyOTE1MjkxNDAsNjIyODk0MTUwLD
-kwMTQyMTY2LC0xODcwMzAwODc0LDQwMzkxODIyMSwtMTM4ODQz
-Njk0N119
+eyJoaXN0b3J5IjpbMjA1NzcxMDI1NiwxNDYxMjg4NzQyLC05MT
+A5Nzg3MzYsLTgwMDY2MzE0MSw5MzE3MDk3ODcsLTEwNjA1NjAx
+NjIsMTgxMzA2NTEzLDIwNTk4NzI2NSw4OTQ0NTAwNTcsMTMzNz
+M0OTc2OSwtMjA2NzMxNTA3MSwtMjAzODY5OTI2Myw1OTE4NjQ4
+MDcsLTE2Mjk4MDkyMzUsMTI5MTUyOTE0MCw2MjI4OTQxNTAsOT
+AxNDIxNjYsLTE4NzAzMDA4NzQsNDAzOTE4MjIxLC0xMzg4NDM2
+OTQ3XX0=
 -->
