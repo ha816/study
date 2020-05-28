@@ -194,7 +194,10 @@ Harry => 해리 -- 동의어 치환
 
 --- 
 
-마지막으로 한 가지 주의해야할 점이 있다. 동의어 사전은 색인 시점에도 사용될 수 있고 검색 시점에 사용될 수도 있는데, **검색 시점에는 사전의 내용이 변경되면 그 내용이 반영된다. 하지만 색인 시점에는 사전의 내용이 변경되더라도 색인이 변경되지는 않는다.** 이 경우 기존 색인을 모두 삭제하고 색인을 새로 생성해야만 변경된 동의어 사전 내용이 적용된다. 이러한 문제점 때문에 동의어 사전이 빈번하게 수정되는 인덱스의 경우 색인 시점에는 적용하지 않고 검색 시점에만 적용하는 방식으로 이러한 문제점을 해결하기도 한다. 
+마지막으로 한 가지 주의해야할 점이 있다. 동의어 사전은 색인 시점에도 사용될 수 있고 검색 시점에 사용될 수도 있는데, **검색 시점에는 사전의 내용이 변경되면 그 내용이 반영된다. 하지만 색인 시점에는 사전의 내용이 변경되더라도 색인이 변경되지는 않는다.** 
+
+검색 시점에는 사전의 내용이 변경
+이 경우 기존 색인을 모두 삭제하고 색인을 새로 생성해야만 변경된 동의어 사전 내용이 적용된다. 이러한 문제점 때문에 동의어 사전이 빈번하게 수정되는 인덱스의 경우 색인 시점에는 적용하지 않고 검색 시점에만 적용하는 방식으로 이러한 문제점을 해결하기도 한다. 
 
 예를 들어 아래 문장이 엘라스틱서치에 들어와 색인 과정을 거칠것이다. 
 ```
@@ -211,11 +214,11 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5Njc5NTcxMiwxNDYxMjg4NzQyLC05MT
-A5Nzg3MzYsLTgwMDY2MzE0MSw5MzE3MDk3ODcsLTEwNjA1NjAx
-NjIsMTgxMzA2NTEzLDIwNTk4NzI2NSw4OTQ0NTAwNTcsMTMzNz
-M0OTc2OSwtMjA2NzMxNTA3MSwtMjAzODY5OTI2Myw1OTE4NjQ4
-MDcsLTE2Mjk4MDkyMzUsMTI5MTUyOTE0MCw2MjI4OTQxNTAsOT
-AxNDIxNjYsLTE4NzAzMDA4NzQsNDAzOTE4MjIxLC0xMzg4NDM2
-OTQ3XX0=
+eyJoaXN0b3J5IjpbMTU3NTM3ODUwMSwxOTk2Nzk1NzEyLDE0Nj
+EyODg3NDIsLTkxMDk3ODczNiwtODAwNjYzMTQxLDkzMTcwOTc4
+NywtMTA2MDU2MDE2MiwxODEzMDY1MTMsMjA1OTg3MjY1LDg5ND
+Q1MDA1NywxMzM3MzQ5NzY5LC0yMDY3MzE1MDcxLC0yMDM4Njk5
+MjYzLDU5MTg2NDgwNywtMTYyOTgwOTIzNSwxMjkxNTI5MTQwLD
+YyMjg5NDE1MCw5MDE0MjE2NiwtMTg3MDMwMDg3NCw0MDM5MTgy
+MjFdfQ==
 -->
