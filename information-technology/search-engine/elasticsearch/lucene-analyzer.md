@@ -160,7 +160,7 @@ Stemming 알고리즘을 이용해 토큰을 변형하는 필터다. 영어 토�
 
 동의어를 모아둔 파일을 일컬어 동의어 사전이라 부른다. 엘라스틱 서치에서 가장 까다로운 부분 중 하나가 바로 이 동의어 사전을 관리하는 것이다. 검색엔진에서 다루는 데이터가 많아지면 많아질 수록 동의어 수도 늘어난다. 분야별로 동의어 파일도 늘어날 것이고  그 안에 변환 규칙도 많아질것이다.
 
-### 동의어 사전 사용법
+### 동의어사전 사용법
 
 동의어 사전 파일은 엘라스틱 서치가 설치된 서버 아래의 config 디렉터리에 생성해야 한다.
 
@@ -209,11 +209,11 @@ elasticsearch  -- 기존 Elasticsearch의 소문자 필터 토큰 생성
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MTI4ODc0MiwtOTEwOTc4NzM2LC04MD
-A2NjMxNDEsOTMxNzA5Nzg3LC0xMDYwNTYwMTYyLDE4MTMwNjUx
-MywyMDU5ODcyNjUsODk0NDUwMDU3LDEzMzczNDk3NjksLTIwNj
-czMTUwNzEsLTIwMzg2OTkyNjMsNTkxODY0ODA3LC0xNjI5ODA5
-MjM1LDEyOTE1MjkxNDAsNjIyODk0MTUwLDkwMTQyMTY2LC0xOD
-cwMzAwODc0LDQwMzkxODIyMSwtMTM4ODQzNjk0Nyw5MzgyNzMz
-MF19
+eyJoaXN0b3J5IjpbLTIwNDY4ODI5NTAsMTQ2MTI4ODc0MiwtOT
+EwOTc4NzM2LC04MDA2NjMxNDEsOTMxNzA5Nzg3LC0xMDYwNTYw
+MTYyLDE4MTMwNjUxMywyMDU5ODcyNjUsODk0NDUwMDU3LDEzMz
+czNDk3NjksLTIwNjczMTUwNzEsLTIwMzg2OTkyNjMsNTkxODY0
+ODA3LC0xNjI5ODA5MjM1LDEyOTE1MjkxNDAsNjIyODk0MTUwLD
+kwMTQyMTY2LC0xODcwMzAwODc0LDQwMzkxODIyMSwtMTM4ODQz
+Njk0N119
 -->
