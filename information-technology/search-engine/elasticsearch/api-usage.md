@@ -168,10 +168,10 @@ POST movie_search/_validate/query?q=prdtYear:2017
 
 쿼리에 대한 상세한 수행 계획과 각 수행 계획별로 수행된 시간을 알려주는 API이다. 성능을 튜닝하거나 디버깅할때 유용하게 사용할 수 있다. 다만 이 API는 쿼리에 대한 내용을 상세하기 설명하므로 결과가 매우 방대하다. 
 
-
+ 
  # DSL
 
-이번 장에서는 DSL(Domain-Specific-Language) 쿼리에 대해서 알아보자. DSL 쿼리는 복잡한 여러 조건을 만족하는 문서를 찾기 위해 사용되는 JSON 형태의 쿼리다. DSL로 쿼리를 작성하려면 미리 정의된 문법에 따라 JSON 구조를 작성해야 한다. 
+앞서 공부했던 검색 API에서 DSL(Domain-Specific-Language) 쿼리에 대해서 알아보자. DSL 쿼리는 복잡한 여러 조건을 만족하는 문서를 찾기 위해 사용되는 JSON 형태의 쿼리다. DSL로 쿼리를 작성하려면 미리 정의된 문법에 따라 JSON 구조를 작성해야 한다. 
 
 ## 요청 DSL 
 
@@ -569,5 +569,5 @@ Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTMwOTI4OSwxMTM4ODMyOTg1XX0=
+eyJoaXN0b3J5IjpbLTEwMjQ4ODYwMjQsMTEzODgzMjk4NV19
 -->
