@@ -171,7 +171,7 @@ POST movie_search/_validate/query?q=prdtYear:2017
  
  # DSL
 
-검색 API에서 Request Body에 사용하는 JSON 방식의 쿼리가 DSL이다. DSL(Domain-Specific-Language) 쿼리에 대해서 알아보자. DSL 쿼리는 복잡한 여러 조건을 만족하는 문서를 찾기 위해 사용되는 JSON 형태의 쿼리다. DSL로 쿼리를 작성하려면 미리 정의된 문법에 따라 JSON 구조를 작성해야 한다. 
+검색 API의 Request Body에 JSON 형태의 쿼리가 DSL이다. 이 DSL(Domain-Specific-Language) 쿼리에 대해서 보다 자세히 알아보자. DSL 쿼리는 복잡한 여러 조건을 만족하는 문서를 찾기 위해 사용되는 JSON 형태의 쿼리다. DSL로 쿼리를 작성하려면 미리 정의된 문법에 따라 JSON 구조를 작성해야 한다. 
 
 ## 요청 DSL 
 
@@ -566,9 +566,7 @@ POST movie_search/_search
 Nested Query는 Nested 데이터 타입의 필드를 검색할때 사용한다. Nested 데이터 타입은 문서 내부에 다른 문서가 존재할때 사용한다. path 옵션으로 중첩된 필드를 명시하고, query 옵션에 Nested 필드 검색에 사용할 쿼리를 입력한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
-
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjIzNzU4OTgsMTg4NTM2MjE2LDExMz
-g4MzI5ODVdfQ==
+eyJoaXN0b3J5IjpbMjE0NjI0NjI5NCwtMTgyMjM3NTg5OCwxOD
+g1MzYyMTYsMTEzODgzMjk4NV19
 -->
