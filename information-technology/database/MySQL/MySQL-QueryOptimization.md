@@ -76,14 +76,16 @@ MySQL에 등록되 예약어의 갯수는 이를 구분해서 모두 기억하�
 
 MySQL 메뉴얼에 명시된 SQL 문법은 사용할 수 있는 모든 키워드나 기능을 하나의 문장에 다 표기해 둿기 때문에 한눈에 이해되지 않는 단점이 있다. 하지만 해당 버전에 맞는 SQL 문법을 참조하기에는 메뉴얼만큼 정확한 자료가 없다. 그래서 더 정확하고 상세한 문법을 확인하려면 MySQL의 SQL 문법을 참조하는것이 정석이다. 이번에는 SQL 문법을 표기하는 방법을 간단히 알아보자 
 
+![enter image description here](https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http://cfile7.uf.tistory.com/image/21784C3C5866670621BE75)
 
+```
 INSERT [LOW_PRIORITY | DELAYED | HIGH_PRIORITY] [IGNORE]
 	[INTO] tlb_name
 	SET col_name = {expr | DEFAULT}, ...
 	[ON DUPLICATE KEY UPDATE
 		col_name = expr
 			[, col_name = expr] ... ]
-			
+```			
 
 
 
@@ -101,11 +103,11 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyOTkzNjQxMywtNDYzODg4MzQ3LDIwMz
-A4MTc5ODMsMTEyMjc0MzM5OCw5NjI3NDIxNTAsLTEzMDYzMzA2
-MjIsNDA0OTE2MTcxLC0xNTA5NjY5MjkwLC0xNzk2NTg5MzUsLT
-EwNzUzNjYxOTIsMTcwMTI4ODM1MSwtNTQ0MDk0MTksMTkzNjk2
-Mjc2LDIwODk2NzcyNDksLTE0MzU3NTQ0MDEsLTUwMzc2NjUxNy
-wxNDI0NTkwMjIwLDIwMDE3OTk2NjksODY1ODc5NjQ3LC00MDEx
-ODQ0NjBdfQ==
+eyJoaXN0b3J5IjpbLTE3MjMwODAwNzAsLTQ2Mzg4ODM0NywyMD
+MwODE3OTgzLDExMjI3NDMzOTgsOTYyNzQyMTUwLC0xMzA2MzMw
+NjIyLDQwNDkxNjE3MSwtMTUwOTY2OTI5MCwtMTc5NjU4OTM1LC
+0xMDc1MzY2MTkyLDE3MDEyODgzNTEsLTU0NDA5NDE5LDE5MzY5
+NjI3NiwyMDg5Njc3MjQ5LC0xNDM1NzU0NDAxLC01MDM3NjY1MT
+csMTQyNDU5MDIyMCwyMDAxNzk5NjY5LDg2NTg3OTY0NywtNDAx
+MTg0NDYwXX0=
 -->
