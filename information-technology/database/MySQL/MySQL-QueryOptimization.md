@@ -97,7 +97,10 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 대괄호([])는 해당 키워드나 표현식 자체가 선택사항임을 말한다. 즉 대괄호로 묶인 키워드나 표현식 없어도 문법적 오류가 발생하지 않고, 있어도 문법적 오류가 발생하지 않음을 뜻한다.
 
-파이프(|)는 앞 뒤의 키워드나 표현식 중에서 단 하나만 선택해서 사용하다는 의미다. 즉 
+파이프(|)는 앞 뒤의 키워드나 표현식 중에서 단 하나만 선택해서 사용하다는 의미다. 즉 첫번재 라인의 LOW, DELAYED, HIGH_PRIORITY 셋중에 단 하나만 사용할 수 있음을 말한다. 그런데 이 세개는 대괄호로 묵여 있기 때문에 INSERT 쿼워드 사이에 아무것도 사용하지 않거나 셋중 하나만 사용할수 있다는 의미다.
+
+중괄호({}) 골화내의 아이템 중에서 반드시 하나를 사용해야 하는 경우를 말한다. ㄷ텍
+
 
 
 
@@ -108,11 +111,11 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODYyMTE4Miw3NzE3NzUyOTUsLTIwNj
-U2MzQ2NTYsLTEyMTk2MTUxMjAsLTE3MjMwODAwNzAsLTQ2Mzg4
-ODM0NywyMDMwODE3OTgzLDExMjI3NDMzOTgsOTYyNzQyMTUwLC
-0xMzA2MzMwNjIyLDQwNDkxNjE3MSwtMTUwOTY2OTI5MCwtMTc5
-NjU4OTM1LC0xMDc1MzY2MTkyLDE3MDEyODgzNTEsLTU0NDA5ND
-E5LDE5MzY5NjI3NiwyMDg5Njc3MjQ5LC0xNDM1NzU0NDAxLC01
-MDM3NjY1MTddfQ==
+eyJoaXN0b3J5IjpbMTc0NDc1NzQ4NSwtMTg4NjIxMTgyLDc3MT
+c3NTI5NSwtMjA2NTYzNDY1NiwtMTIxOTYxNTEyMCwtMTcyMzA4
+MDA3MCwtNDYzODg4MzQ3LDIwMzA4MTc5ODMsMTEyMjc0MzM5OC
+w5NjI3NDIxNTAsLTEzMDYzMzA2MjIsNDA0OTE2MTcxLC0xNTA5
+NjY5MjkwLC0xNzk2NTg5MzUsLTEwNzUzNjYxOTIsMTcwMTI4OD
+M1MSwtNTQ0MDk0MTksMTkzNjk2Mjc2LDIwODk2NzcyNDksLTE0
+MzU3NTQ0MDFdfQ==
 -->
