@@ -93,7 +93,9 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 위 표기법에서 대문자로 표현된 단어는 모두 키워드를 의미한다. 키워드는 대소문자를 특별히 구분하지 않고 사용할 수 있다. 
 
-이탤릭체로 표현한 단어는 사용자가 
+이탤릭체로 표현한 단어는 사용자가 선택해서 작성하는 토큰을 말하는데, 대부분 테이블명이나 컬럼명 또는 표현식을 말한다.  
+
+대괄호는 해당 키워드나 표현식 자체가 선택사항임을 말한다.
 
 
 
@@ -104,11 +106,11 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTk2MTUxMjAsLTE3MjMwODAwNzAsLT
-Q2Mzg4ODM0NywyMDMwODE3OTgzLDExMjI3NDMzOTgsOTYyNzQy
-MTUwLC0xMzA2MzMwNjIyLDQwNDkxNjE3MSwtMTUwOTY2OTI5MC
-wtMTc5NjU4OTM1LC0xMDc1MzY2MTkyLDE3MDEyODgzNTEsLTU0
-NDA5NDE5LDE5MzY5NjI3NiwyMDg5Njc3MjQ5LC0xNDM1NzU0ND
-AxLC01MDM3NjY1MTcsMTQyNDU5MDIyMCwyMDAxNzk5NjY5LDg2
-NTg3OTY0N119
+eyJoaXN0b3J5IjpbLTIwNjU2MzQ2NTYsLTEyMTk2MTUxMjAsLT
+E3MjMwODAwNzAsLTQ2Mzg4ODM0NywyMDMwODE3OTgzLDExMjI3
+NDMzOTgsOTYyNzQyMTUwLC0xMzA2MzMwNjIyLDQwNDkxNjE3MS
+wtMTUwOTY2OTI5MCwtMTc5NjU4OTM1LC0xMDc1MzY2MTkyLDE3
+MDEyODgzNTEsLTU0NDA5NDE5LDE5MzY5NjI3NiwyMDg5Njc3Mj
+Q5LC0xNDM1NzU0NDAxLC01MDM3NjY1MTcsMTQyNDU5MDIyMCwy
+MDAxNzk5NjY5XX0=
 -->
