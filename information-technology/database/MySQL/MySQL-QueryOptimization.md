@@ -85,7 +85,9 @@ INSERT [LOW_PRIORITY | DELAYED | HIGH_PRIORITY] [IGNORE]
 			[, col_name = expr] ... ]
 ```
 
-SQL에서 각 키워드는 그림 
+SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기된 순서대로만 사용할 수 있다. 
+
+위 표기법에서 대문자로 표현된 단어는 모두 키워드를 의미한다. 키워드는 대소문자를 특별히 구분하지 않고 사용할 수 있다. 
 
 
 
@@ -97,11 +99,11 @@ SQL에서 각 키워드는 그림
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NzA5NDgzLDIwMzA4MTc5ODMsMTEyMj
-c0MzM5OCw5NjI3NDIxNTAsLTEzMDYzMzA2MjIsNDA0OTE2MTcx
-LC0xNTA5NjY5MjkwLC0xNzk2NTg5MzUsLTEwNzUzNjYxOTIsMT
-cwMTI4ODM1MSwtNTQ0MDk0MTksMTkzNjk2Mjc2LDIwODk2Nzcy
-NDksLTE0MzU3NTQ0MDEsLTUwMzc2NjUxNywxNDI0NTkwMjIwLD
-IwMDE3OTk2NjksODY1ODc5NjQ3LC00MDExODQ0NjAsLTcyODA5
-NDc2OF19
+eyJoaXN0b3J5IjpbLTQ2Mzg4ODM0NywyMDMwODE3OTgzLDExMj
+I3NDMzOTgsOTYyNzQyMTUwLC0xMzA2MzMwNjIyLDQwNDkxNjE3
+MSwtMTUwOTY2OTI5MCwtMTc5NjU4OTM1LC0xMDc1MzY2MTkyLD
+E3MDEyODgzNTEsLTU0NDA5NDE5LDE5MzY5NjI3NiwyMDg5Njc3
+MjQ5LC0xNDM1NzU0NDAxLC01MDM3NjY1MTcsMTQyNDU5MDIyMC
+wyMDAxNzk5NjY5LDg2NTg3OTY0NywtNDAxMTg0NDYwLC03Mjgw
+OTQ3NjhdfQ==
 -->
