@@ -95,9 +95,9 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 이탤릭체로 표현한 단어는 사용자가 선택해서 작성하는 토큰을 말하는데, 대부분 테이블명이나 컬럼명 또는 표현식을 말한다.  
 
-대괄호는 해당 키워드나 표현식 자체가 선택사항임을 말한다. 즉 대괄호로 묶인 키워드나 표현식 없어도 문법적 오류가 발생하지 않고, 있어도 문법적 오류가 발생하지 않음을 뜻한다.
+대괄호([])는 해당 키워드나 표현식 자체가 선택사항임을 말한다. 즉 대괄호로 묶인 키워드나 표현식 없어도 문법적 오류가 발생하지 않고, 있어도 문법적 오류가 발생하지 않음을 뜻한다.
 
-파이프
+파이프(|)는 앞 뒤의 키워드나 표현식 중에서 단 하나만 선택해서 사용하다는 의미다. 즉 
 
 
 
@@ -108,11 +108,11 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxNzc1Mjk1LC0yMDY1NjM0NjU2LC0xMj
-E5NjE1MTIwLC0xNzIzMDgwMDcwLC00NjM4ODgzNDcsMjAzMDgx
-Nzk4MywxMTIyNzQzMzk4LDk2Mjc0MjE1MCwtMTMwNjMzMDYyMi
-w0MDQ5MTYxNzEsLTE1MDk2NjkyOTAsLTE3OTY1ODkzNSwtMTA3
-NTM2NjE5MiwxNzAxMjg4MzUxLC01NDQwOTQxOSwxOTM2OTYyNz
-YsMjA4OTY3NzI0OSwtMTQzNTc1NDQwMSwtNTAzNzY2NTE3LDE0
-MjQ1OTAyMjBdfQ==
+eyJoaXN0b3J5IjpbLTE4ODYyMTE4Miw3NzE3NzUyOTUsLTIwNj
+U2MzQ2NTYsLTEyMTk2MTUxMjAsLTE3MjMwODAwNzAsLTQ2Mzg4
+ODM0NywyMDMwODE3OTgzLDExMjI3NDMzOTgsOTYyNzQyMTUwLC
+0xMzA2MzMwNjIyLDQwNDkxNjE3MSwtMTUwOTY2OTI5MCwtMTc5
+NjU4OTM1LC0xMDc1MzY2MTkyLDE3MDEyODgzNTEsLTU0NDA5ND
+E5LDE5MzY5NjI3NiwyMDg5Njc3MjQ5LC0xNDM1NzU0NDAxLC01
+MDM3NjY1MTddfQ==
 -->
