@@ -531,7 +531,9 @@ OUTER JOIN은 조인의 결과를 결정하는 OUTER 테이블이 조인의 왼�
 
 JOIN 키워드를 기준으로 왼쪽의 테이블도 OUTER JOIN을 하고 싶고, 오른쪽 테이블도 OUTER JOIN을 하고 싶은 경우 사용하는 쿼리가 FULL OUTER JOIN이다. MySQL에서는 FULL OUTER JOIN을 지원하지 않는다. 
 
-### 주의 사항LEFT OUTER JOIN에서 쉽게 실수할 수 있는 부분이 여러가지 있다. 이제 LEFT OUTER JOIN을 사용할때 주의할 점을 알아보자. 
+### 주의 사항
+
+LEFT OUTER JOIN에서 쉽게 실수할 수 있는 부분이 여러가지 있다. 이제 LEFT OUTER JOIN을 사용할때 주의할 점을 알아보자. 
 
 실행 계획에서는 어떤 조인을 했는지 알려주지 않으므로 OUTER JOIN을 의도한 쿼리가 INNER JOIN으로 실행되지 않았는지 주의해야 한다. 
 
@@ -701,11 +703,11 @@ INNER JOIN은 양 테이블에 조건이 맞는 레코드가 모두 존재하는
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTY2NzI0OSwtOTEwMzA1MjU4LDE0OT
-QyMTIyMTYsLTMwMzg3Mzg1NCwxNTY0NDk4NzEyLC0yMDU3NDk4
-NjU3LDExMDYzODU2MjYsLTE3NjAxNTQyMTIsLTQxMjI1MjcyLC
-02MTA3MTQ0ODUsLTE5ODgzMTczMjAsMjA5MDg2ODk2OCwxODc4
-NDA0NTA3LC01OTUzOTE3NjUsLTE0Njk2MTkxMDAsLTEzOTEwNz
-U3NzAsLTE5ODk2OTk5NTgsMjA3NDY4MTY2MSw5NzEwNDg4NzEs
-LTc5NTIyNzkzNV19
+eyJoaXN0b3J5IjpbMjEyMjgzMDg5MSwtMTg5NjY3MjQ5LC05MT
+AzMDUyNTgsMTQ5NDIxMjIxNiwtMzAzODczODU0LDE1NjQ0OTg3
+MTIsLTIwNTc0OTg2NTcsMTEwNjM4NTYyNiwtMTc2MDE1NDIxMi
+wtNDEyMjUyNzIsLTYxMDcxNDQ4NSwtMTk4ODMxNzMyMCwyMDkw
+ODY4OTY4LDE4Nzg0MDQ1MDcsLTU5NTM5MTc2NSwtMTQ2OTYxOT
+EwMCwtMTM5MTA3NTc3MCwtMTk4OTY5OTk1OCwyMDc0NjgxNjYx
+LDk3MTA0ODg3MV19
 -->
