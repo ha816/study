@@ -114,8 +114,13 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 여타 DBMS에서도 사용되는 기본적인 연산자는 MySQL에도 비슷하게 있지만 MySQL에서만 사용되는 연산자나 표기법이 있다. ANSI 표준은 아닌것도 있기 때문에 혼란스럽게 만들기도 한다. 따라서 SQL의 가독성을 높이기 위해 ANSI 표준형태 연산자를 사용하기를 권한다. 
 
-일반적으로 내장함수는 거의 같은 기능을 제공하지만 
+**일반적으로 내장함수는 거의 같은 기능을 제공하지만 이름이 호환되는 것은 거의 없는 점을 기억하자.**
 
+## 리터럴 표기법
+
+### 문자열
+
+SQL 표준에서는 문자열은 반드시 항상 홑따옴표(')를 사용해야 한다. 하지만 MySQL에서는 쌍따옴표를 사용할 수도 있다. 
 
 
 
@@ -126,11 +131,11 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTM0NjIzNTUsLTIxMzQ5NjM4NzUsMT
-E5MTI2NDUzMiwxOTQ3NTAyODI0LDE1NzI0MTUwMzYsLTE4Mjc1
-MDIyMzcsMTc0NDc1NzQ4NSwtMTg4NjIxMTgyLDc3MTc3NTI5NS
-wtMjA2NTYzNDY1NiwtMTIxOTYxNTEyMCwtMTcyMzA4MDA3MCwt
-NDYzODg4MzQ3LDIwMzA4MTc5ODMsMTEyMjc0MzM5OCw5NjI3ND
-IxNTAsLTEzMDYzMzA2MjIsNDA0OTE2MTcxLC0xNTA5NjY5Mjkw
-LC0xNzk2NTg5MzVdfQ==
+eyJoaXN0b3J5IjpbMTUzNjQyMDI4OSwtMjEzNDk2Mzg3NSwxMT
+kxMjY0NTMyLDE5NDc1MDI4MjQsMTU3MjQxNTAzNiwtMTgyNzUw
+MjIzNywxNzQ0NzU3NDg1LC0xODg2MjExODIsNzcxNzc1Mjk1LC
+0yMDY1NjM0NjU2LC0xMjE5NjE1MTIwLC0xNzIzMDgwMDcwLC00
+NjM4ODgzNDcsMjAzMDgxNzk4MywxMTIyNzQzMzk4LDk2Mjc0Mj
+E1MCwtMTMwNjMzMDYyMiw0MDQ5MTYxNzEsLTE1MDk2NjkyOTAs
+LTE3OTY1ODkzNV19
 -->
