@@ -120,7 +120,9 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 ### 문자열
 
-SQL 표준에서는 문자열은 반드시 항상 홑따옴표(')를 사용해야 한다. 하지만 MySQL에서는 쌍따옴표를 사용할 수도 있다. 
+SQL 표준에서는 문자열은 **반드시 항상 홑따옴표(')를 사용해야 한다.** 하지만 MySQL에서는 쌍따옴표를 사용할 수도 있다. 
+
+SQL 표준에서는 문자열 값에 홑따옴표가 포함되 있을때, 홑따옴표를 두번 연속해서 입력하면 된다. 하지만 MySQL 에서는 쌍따옴표와 홑따옴표를 혼합해서 ㅁ
 
 
 
@@ -131,11 +133,11 @@ SQL 표준에서는 문자열은 반드시 항상 홑따옴표(')를 사용해�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNjQyMDI4OSwtMjEzNDk2Mzg3NSwxMT
-kxMjY0NTMyLDE5NDc1MDI4MjQsMTU3MjQxNTAzNiwtMTgyNzUw
-MjIzNywxNzQ0NzU3NDg1LC0xODg2MjExODIsNzcxNzc1Mjk1LC
-0yMDY1NjM0NjU2LC0xMjE5NjE1MTIwLC0xNzIzMDgwMDcwLC00
-NjM4ODgzNDcsMjAzMDgxNzk4MywxMTIyNzQzMzk4LDk2Mjc0Mj
-E1MCwtMTMwNjMzMDYyMiw0MDQ5MTYxNzEsLTE1MDk2NjkyOTAs
-LTE3OTY1ODkzNV19
+eyJoaXN0b3J5IjpbODQxMTM0NzQ2LDE1MzY0MjAyODksLTIxMz
+Q5NjM4NzUsMTE5MTI2NDUzMiwxOTQ3NTAyODI0LDE1NzI0MTUw
+MzYsLTE4Mjc1MDIyMzcsMTc0NDc1NzQ4NSwtMTg4NjIxMTgyLD
+c3MTc3NTI5NSwtMjA2NTYzNDY1NiwtMTIxOTYxNTEyMCwtMTcy
+MzA4MDA3MCwtNDYzODg4MzQ3LDIwMzA4MTc5ODMsMTEyMjc0Mz
+M5OCw5NjI3NDIxNTAsLTEzMDYzMzA2MjIsNDA0OTE2MTcxLC0x
+NTA5NjY5MjkwXX0=
 -->
