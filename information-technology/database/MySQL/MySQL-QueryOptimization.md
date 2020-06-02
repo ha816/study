@@ -91,11 +91,13 @@ INSERT [LOW_PRIORITY | DELAYED | HIGH_PRIORITY] [IGNORE]
 
 SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기된 순서대로만 사용할 수 있다. 
 
-위 표기법에서 대문자로 표현된 단어는 모두 키워드를 의미한다. 키워드는 대소문자를 특별히 구분하지 않고 사용할 수 있다. 
+대문자로 표현된 단어
+: 모두 키워드를 의미한다. 키워드는 대소문자를 특별히 구분하지 않고 사용할 수 있다. 
 
 이탤릭체로 표현한 단어는 사용자가 선택해서 작성하는 토큰을 말하는데, 대부분 테이블명이나 컬럼명 또는 표현식을 말한다.  
 
-대괄호([])는 해당 키워드나 표현식 자체가 선택사항임을 말한다. 즉 대괄호로 묶인 키워드나 표현식 없어도 문법적 오류가 발생하지 않고, 있어도 문법적 오류가 발생하지 않음을 뜻한다.
+대괄호([])
+: 해당 키워드나 표현식 자체가 선택사항임을 말한다. 즉 대괄호로 묶인 키워드나 표현식 없어도 문법적 오류가 발생하지 않고, 있어도 문법적 오류가 발생하지 않음을 뜻한다.
 
 파이프(|)는 앞 뒤의 키워드나 표현식 중에서 단 하나만 선택해서 사용하다는 의미다. 즉 첫번재 라인의 LOW, DELAYED, HIGH_PRIORITY 셋중에 단 하나만 사용할 수 있음을 말한다. 그런데 이 세개는 대괄호로 묵여 있기 때문에 INSERT 쿼워드 사이에 아무것도 사용하지 않거나 셋중 하나만 사용할수 있다는 의미다.
 
@@ -111,11 +113,11 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjc1MDIyMzcsMTc0NDc1NzQ4NSwtMT
-g4NjIxMTgyLDc3MTc3NTI5NSwtMjA2NTYzNDY1NiwtMTIxOTYx
-NTEyMCwtMTcyMzA4MDA3MCwtNDYzODg4MzQ3LDIwMzA4MTc5OD
-MsMTEyMjc0MzM5OCw5NjI3NDIxNTAsLTEzMDYzMzA2MjIsNDA0
-OTE2MTcxLC0xNTA5NjY5MjkwLC0xNzk2NTg5MzUsLTEwNzUzNj
-YxOTIsMTcwMTI4ODM1MSwtNTQ0MDk0MTksMTkzNjk2Mjc2LDIw
-ODk2NzcyNDldfQ==
+eyJoaXN0b3J5IjpbMTU3MjQxNTAzNiwtMTgyNzUwMjIzNywxNz
+Q0NzU3NDg1LC0xODg2MjExODIsNzcxNzc1Mjk1LC0yMDY1NjM0
+NjU2LC0xMjE5NjE1MTIwLC0xNzIzMDgwMDcwLC00NjM4ODgzND
+csMjAzMDgxNzk4MywxMTIyNzQzMzk4LDk2Mjc0MjE1MCwtMTMw
+NjMzMDYyMiw0MDQ5MTYxNzEsLTE1MDk2NjkyOTAsLTE3OTY1OD
+kzNSwtMTA3NTM2NjE5MiwxNzAxMjg4MzUxLC01NDQwOTQxOSwx
+OTM2OTYyNzZdfQ==
 -->
