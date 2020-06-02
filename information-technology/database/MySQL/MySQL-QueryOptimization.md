@@ -124,6 +124,11 @@ SQL 표준에서는 문자열은 **반드시 항상 홑따옴표(')를 사용해
 
 SQL 표준에서는 문자열 값에 홑따옴표가 포함되 있을때, 홑따옴표를 두번 연속해서 입력하면 된다. 하지만 MySQL 에서는 쌍따옴표와 홑따옴표를 혼합해서 문제를 피해가기도 한다. 
 
+```
+SELECT * FROM departments WHERE dept_no = 'd''001';
+
+```
+
 
 
 
@@ -133,11 +138,11 @@ SQL 표준에서는 문자열 값에 홑따옴표가 포함되 있을때, 홑따
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY3ODQyMDU5LDE1MzY0MjAyODksLTIxMz
-Q5NjM4NzUsMTE5MTI2NDUzMiwxOTQ3NTAyODI0LDE1NzI0MTUw
-MzYsLTE4Mjc1MDIyMzcsMTc0NDc1NzQ4NSwtMTg4NjIxMTgyLD
-c3MTc3NTI5NSwtMjA2NTYzNDY1NiwtMTIxOTYxNTEyMCwtMTcy
-MzA4MDA3MCwtNDYzODg4MzQ3LDIwMzA4MTc5ODMsMTEyMjc0Mz
-M5OCw5NjI3NDIxNTAsLTEzMDYzMzA2MjIsNDA0OTE2MTcxLC0x
-NTA5NjY5MjkwXX0=
+eyJoaXN0b3J5IjpbLTEyNTI0ODI1Myw4Njc4NDIwNTksMTUzNj
+QyMDI4OSwtMjEzNDk2Mzg3NSwxMTkxMjY0NTMyLDE5NDc1MDI4
+MjQsMTU3MjQxNTAzNiwtMTgyNzUwMjIzNywxNzQ0NzU3NDg1LC
+0xODg2MjExODIsNzcxNzc1Mjk1LC0yMDY1NjM0NjU2LC0xMjE5
+NjE1MTIwLC0xNzIzMDgwMDcwLC00NjM4ODgzNDcsMjAzMDgxNz
+k4MywxMTIyNzQzMzk4LDk2Mjc0MjE1MCwtMTMwNjMzMDYyMiw0
+MDQ5MTYxNzFdfQ==
 -->
