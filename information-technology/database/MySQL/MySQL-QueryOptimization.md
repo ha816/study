@@ -112,7 +112,7 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 # MySQL 연산자와 내장함수
 
-여타 DBMS에서도 사용되는 기본적인 연산자는 MySQL에도 비슷하게 있지만, M
+여타 DBMS에서도 사용되는 기본적인 연산자는 MySQL에도 비슷하게 있지만 MySQL에서만 사용되는 연산자나 표기법이 있다. ANSI 표준은 아닌것도 있기 때문에 혼란스럽게 만들기도 한다. 따라서 SQL의 가독성을 높이기 위해 ANSI 표준형태 연산자를 사용하기를 권한다. 
 
 
 
@@ -124,11 +124,11 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI4MTM5MDQ5LC0yMTM0OTYzODc1LDExOT
-EyNjQ1MzIsMTk0NzUwMjgyNCwxNTcyNDE1MDM2LC0xODI3NTAy
-MjM3LDE3NDQ3NTc0ODUsLTE4ODYyMTE4Miw3NzE3NzUyOTUsLT
-IwNjU2MzQ2NTYsLTEyMTk2MTUxMjAsLTE3MjMwODAwNzAsLTQ2
-Mzg4ODM0NywyMDMwODE3OTgzLDExMjI3NDMzOTgsOTYyNzQyMT
-UwLC0xMzA2MzMwNjIyLDQwNDkxNjE3MSwtMTUwOTY2OTI5MCwt
-MTc5NjU4OTM1XX0=
+eyJoaXN0b3J5IjpbLTY0MzY0NzI5NiwtMjEzNDk2Mzg3NSwxMT
+kxMjY0NTMyLDE5NDc1MDI4MjQsMTU3MjQxNTAzNiwtMTgyNzUw
+MjIzNywxNzQ0NzU3NDg1LC0xODg2MjExODIsNzcxNzc1Mjk1LC
+0yMDY1NjM0NjU2LC0xMjE5NjE1MTIwLC0xNzIzMDgwMDcwLC00
+NjM4ODgzNDcsMjAzMDgxNzk4MywxMTIyNzQzMzk4LDk2Mjc0Mj
+E1MCwtMTMwNjMzMDYyMiw0MDQ5MTYxNzEsLTE1MDk2NjkyOTAs
+LTE3OTY1ODkzNV19
 -->
