@@ -110,6 +110,10 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 : ... 표기는 앞에 명시된 키워드나 표현식의 조합이 반복될수 있음을 말한다. 마지막 라인에서 $\cdots$은, "col_name=expr"을 여러번 반복해서 사용할 수 있음을 말한다. 
 
 
+# MySQL 연산자와 내장함수
+
+여타 DBMS에서도 사용되는 기본적인 연산자는 MySQL에도 비슷하게 있지만, M
+
 
 
 
@@ -120,11 +124,11 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzQ5NjM4NzUsMTE5MTI2NDUzMiwxOT
-Q3NTAyODI0LDE1NzI0MTUwMzYsLTE4Mjc1MDIyMzcsMTc0NDc1
-NzQ4NSwtMTg4NjIxMTgyLDc3MTc3NTI5NSwtMjA2NTYzNDY1Ni
-wtMTIxOTYxNTEyMCwtMTcyMzA4MDA3MCwtNDYzODg4MzQ3LDIw
-MzA4MTc5ODMsMTEyMjc0MzM5OCw5NjI3NDIxNTAsLTEzMDYzMz
-A2MjIsNDA0OTE2MTcxLC0xNTA5NjY5MjkwLC0xNzk2NTg5MzUs
-LTEwNzUzNjYxOTJdfQ==
+eyJoaXN0b3J5IjpbNzI4MTM5MDQ5LC0yMTM0OTYzODc1LDExOT
+EyNjQ1MzIsMTk0NzUwMjgyNCwxNTcyNDE1MDM2LC0xODI3NTAy
+MjM3LDE3NDQ3NTc0ODUsLTE4ODYyMTE4Miw3NzE3NzUyOTUsLT
+IwNjU2MzQ2NTYsLTEyMTk2MTUxMjAsLTE3MjMwODAwNzAsLTQ2
+Mzg4ODM0NywyMDMwODE3OTgzLDExMjI3NDMzOTgsOTYyNzQyMT
+UwLC0xMzA2MzMwNjIyLDQwNDkxNjE3MSwtMTUwOTY2OTI5MCwt
+MTc5NjU4OTM1XX0=
 -->
