@@ -134,6 +134,8 @@ SELECT * FROM departments WHERE dept_no = "d'001";
 SELECT * FROM departments WHERE dept_no = "d""001";
 ```
 
+SQL에서 사용되는 식별자(테이블이나 컬럼명 등)가 키워드와 충돌할때 오라클이나 MS-SQL에서는 쌍따옴표나 대괄호를 감싸서 충돌을 피하곤 한다. MySQL에서는 역따옴표로 감싸서 사용하면 예약어와의 충돌을 피할 
+
 
 
 
@@ -143,11 +145,11 @@ SELECT * FROM departments WHERE dept_no = "d""001";
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NjU2MDA0MCwtMTI1MjQ4MjUzLDg2Nz
-g0MjA1OSwxNTM2NDIwMjg5LC0yMTM0OTYzODc1LDExOTEyNjQ1
-MzIsMTk0NzUwMjgyNCwxNTcyNDE1MDM2LC0xODI3NTAyMjM3LD
-E3NDQ3NTc0ODUsLTE4ODYyMTE4Miw3NzE3NzUyOTUsLTIwNjU2
-MzQ2NTYsLTEyMTk2MTUxMjAsLTE3MjMwODAwNzAsLTQ2Mzg4OD
-M0NywyMDMwODE3OTgzLDExMjI3NDMzOTgsOTYyNzQyMTUwLC0x
-MzA2MzMwNjIyXX0=
+eyJoaXN0b3J5IjpbMTcyMzIxMDY2NSwtMjg2NTYwMDQwLC0xMj
+UyNDgyNTMsODY3ODQyMDU5LDE1MzY0MjAyODksLTIxMzQ5NjM4
+NzUsMTE5MTI2NDUzMiwxOTQ3NTAyODI0LDE1NzI0MTUwMzYsLT
+E4Mjc1MDIyMzcsMTc0NDc1NzQ4NSwtMTg4NjIxMTgyLDc3MTc3
+NTI5NSwtMjA2NTYzNDY1NiwtMTIxOTYxNTEyMCwtMTcyMzA4MD
+A3MCwtNDYzODg4MzQ3LDIwMzA4MTc5ODMsMTEyMjc0MzM5OCw5
+NjI3NDIxNTBdfQ==
 -->
