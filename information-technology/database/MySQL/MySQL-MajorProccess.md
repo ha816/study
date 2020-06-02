@@ -537,7 +537,7 @@ LEFT OUTER JOIN에서 쉽게 실수할 수 있는 부분이 여러가지 있다.
 
 실행 계획에서는 어떤 조인을 했는지 알려주지 않으므로 OUTER JOIN을 의도한 쿼리가 INNER JOIN으로 실행되지 않았는지 주의해야 한다. 
 
-**레코드가 없을 수도 있는 쪽의 테이블(드라이븐)에 국한된 조건은 반드시이 부분도 실수하기 쉬운 부분인데, OUTER JOIN에 레코드가 없을 수도 있는 쪽의 테이블에 대한 조건은 반드시 LEFT JOIN의 ON절에 명시하자.** 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다. 
+**레코드가 없을 수도 있는 쪽의 테이블(드라이븐)에 국한된 조건은 반드시, OUTER JOIN에 레코드가 없을 수도 있는 쪽의 테이블에 대한 조건은 반드시 LEFT JOIN의 ON절에 명시하자.** 그렇지 않으면 옵티마이저는 OUTER JOIN을 내부적으로 INNER JOIN으로 변형 시켜 처리할 수도 있다. 
 보다 원론적으로 이야기하자면, ON 과 WHERE 절에는 그 의미의 차이가 있다. ON은 두 테이블간의 관계를 묘사하고 WHERE은 결과로부터 제거해야할 로우를 묘사한다. 
 
 ```
@@ -703,11 +703,11 @@ INNER JOIN은 양 테이블에 조건이 맞는 레코드가 모두 존재하는
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjgzMDg5MSwtMTg5NjY3MjQ5LC05MT
-AzMDUyNTgsMTQ5NDIxMjIxNiwtMzAzODczODU0LDE1NjQ0OTg3
-MTIsLTIwNTc0OTg2NTcsMTEwNjM4NTYyNiwtMTc2MDE1NDIxMi
-wtNDEyMjUyNzIsLTYxMDcxNDQ4NSwtMTk4ODMxNzMyMCwyMDkw
-ODY4OTY4LDE4Nzg0MDQ1MDcsLTU5NTM5MTc2NSwtMTQ2OTYxOT
-EwMCwtMTM5MTA3NTc3MCwtMTk4OTY5OTk1OCwyMDc0NjgxNjYx
-LDk3MTA0ODg3MV19
+eyJoaXN0b3J5IjpbNTM0NjE0NzExLC0xODk2NjcyNDksLTkxMD
+MwNTI1OCwxNDk0MjEyMjE2LC0zMDM4NzM4NTQsMTU2NDQ5ODcx
+MiwtMjA1NzQ5ODY1NywxMTA2Mzg1NjI2LC0xNzYwMTU0MjEyLC
+00MTIyNTI3MiwtNjEwNzE0NDg1LC0xOTg4MzE3MzIwLDIwOTA4
+Njg5NjgsMTg3ODQwNDUwNywtNTk1MzkxNzY1LC0xNDY5NjE5MT
+AwLC0xMzkxMDc1NzcwLC0xOTg5Njk5OTU4LDIwNzQ2ODE2NjEs
+OTcxMDQ4ODcxXX0=
 -->
