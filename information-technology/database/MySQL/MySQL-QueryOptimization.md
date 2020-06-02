@@ -122,7 +122,7 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 SQL 표준에서는 문자열은 **반드시 항상 홑따옴표(')를 사용해야 한다.** 하지만 MySQL에서는 쌍따옴표를 사용할 수도 있다. 
 
-SQL 표준에서는 문자열 값에 홑따옴표가 포함되 있을때, 홑따옴표를 두번 연속해서 입력하면 된다. 하지만 MySQL 에서는 쌍따옴표와 홑따옴표를 혼합해서 ㅁ
+SQL 표준에서는 문자열 값에 홑따옴표가 포함되 있을때, 홑따옴표를 두번 연속해서 입력하면 된다. 하지만 MySQL 에서는 쌍따옴표와 홑따옴표를 혼합해서 문제를 피해가기도 한다. 
 
 
 
@@ -133,7 +133,7 @@ SQL 표준에서는 문자열 값에 홑따옴표가 포함되 있을때, 홑따
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQxMTM0NzQ2LDE1MzY0MjAyODksLTIxMz
+eyJoaXN0b3J5IjpbODY3ODQyMDU5LDE1MzY0MjAyODksLTIxMz
 Q5NjM4NzUsMTE5MTI2NDUzMiwxOTQ3NTAyODI0LDE1NzI0MTUw
 MzYsLTE4Mjc1MDIyMzcsMTc0NDc1NzQ4NSwtMTg4NjIxMTgyLD
 c3MTc3NTI5NSwtMjA2NTYzNDY1NiwtMTIxOTYxNTEyMCwtMTcy
