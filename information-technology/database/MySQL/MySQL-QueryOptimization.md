@@ -138,7 +138,7 @@ SQL에서 사용되는 식별자(테이블이나 컬럼명 등)가 키워드와 
 
 ### 숫자
 
-숫자 값을 상
+숫자 값을 상수로 SQL에 사용할때는 따옴표(홑 따옴표, 쌍따옴표) 없이 숫자값을 입력하면 된다. 또한 문자열 형태로 따옴표를 써도 비교대상이 숫자값이거나 숫자 타입의 컬럼이라면 MySQL 서버가 문자열 값을 숫자 값으로 자동변환 해준다. 하지만 한가지 주의 사항이 있다. 
 
 
 
@@ -149,7 +149,7 @@ SQL에서 사용되는 식별자(테이블이나 컬럼명 등)가 키워드와 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NDYyMzk0NywtMjg2NTYwMDQwLC0xMj
+eyJoaXN0b3J5IjpbLTI1ODc2NjA5MCwtMjg2NTYwMDQwLC0xMj
 UyNDgyNTMsODY3ODQyMDU5LDE1MzY0MjAyODksLTIxMzQ5NjM4
 NzUsMTE5MTI2NDUzMiwxOTQ3NTAyODI0LDE1NzI0MTUwMzYsLT
 E4Mjc1MDIyMzcsMTc0NDc1NzQ4NSwtMTg4NjIxMTgyLDc3MTc3
