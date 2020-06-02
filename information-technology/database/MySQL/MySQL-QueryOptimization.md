@@ -107,7 +107,7 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 : 앞 뒤의 키워드나 표현식 중에서 단 하나만 선택해서 사용하다는 의미다. 즉 첫번재 라인의 LOW, DELAYED, HIGH_PRIORITY 셋중에 단 하나만 사용할 수 있음을 말한다. 그런데 이 세개는 대괄호로 묵여 있기 때문에 INSERT 쿼워드 사이에 아무것도 사용하지 않거나 셋중 하나만 사용할수 있다는 의미다.
 
 ...(...)
-: ... 표기는 앞에 명시된 키워드나 표현식의 조합이 반복될수 있음을 말한다. 마지막 라인에서 ...
+: ... 표기는 앞에 명시된 키워드나 표현식의 조합이 반복될수 있음을 말한다. 마지막 라인에서 $\cdots$은, "col_name=expr"을 여러번 반복해서 사용할 수 있음을 말한다. 
 
 
 
@@ -120,11 +120,11 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNzM3NDA4NCwxMTkxMjY0NTMyLDE5ND
-c1MDI4MjQsMTU3MjQxNTAzNiwtMTgyNzUwMjIzNywxNzQ0NzU3
-NDg1LC0xODg2MjExODIsNzcxNzc1Mjk1LC0yMDY1NjM0NjU2LC
-0xMjE5NjE1MTIwLC0xNzIzMDgwMDcwLC00NjM4ODgzNDcsMjAz
-MDgxNzk4MywxMTIyNzQzMzk4LDk2Mjc0MjE1MCwtMTMwNjMzMD
-YyMiw0MDQ5MTYxNzEsLTE1MDk2NjkyOTAsLTE3OTY1ODkzNSwt
-MTA3NTM2NjE5Ml19
+eyJoaXN0b3J5IjpbLTIxMzQ5NjM4NzUsMTE5MTI2NDUzMiwxOT
+Q3NTAyODI0LDE1NzI0MTUwMzYsLTE4Mjc1MDIyMzcsMTc0NDc1
+NzQ4NSwtMTg4NjIxMTgyLDc3MTc3NTI5NSwtMjA2NTYzNDY1Ni
+wtMTIxOTYxNTEyMCwtMTcyMzA4MDA3MCwtNDYzODg4MzQ3LDIw
+MzA4MTc5ODMsMTEyMjc0MzM5OCw5NjI3NDIxNTAsLTEzMDYzMz
+A2MjIsNDA0OTE2MTcxLC0xNTA5NjY5MjkwLC0xNzk2NTg5MzUs
+LTEwNzUzNjYxOTJdfQ==
 -->
