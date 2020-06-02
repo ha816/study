@@ -134,7 +134,11 @@ SELECT * FROM departments WHERE dept_no = "d'001";
 SELECT * FROM departments WHERE dept_no = "d""001";
 ```
 
-SQL에서 사용되는 식별자(테이블이나 컬럼명 등)가 키워드와 충돌할때 오라클이나 MS-SQL에서는 쌍따옴표나 대괄호를 감싸서 충돌을 피하곤 한다. MySQL에서는 역따옴표로 감싸서 사용하면 예약어와의 충돌을 피할 
+SQL에서 사용되는 식별자(테이블이나 컬럼명 등)가 키워드와 충돌할때 오라클이나 MS-SQL에서는 쌍따옴표나 대괄호를 감싸서 충돌을 피하곤 한다. MySQL에서는 역따옴표로 감싸서 사용하면 예약어와의 충돌을 피할 수 있다. 
+
+### 숫자
+
+숫자 값을 상
 
 
 
@@ -145,7 +149,7 @@ SQL에서 사용되는 식별자(테이블이나 컬럼명 등)가 키워드와 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMzIxMDY2NSwtMjg2NTYwMDQwLC0xMj
+eyJoaXN0b3J5IjpbLTQ4NDYyMzk0NywtMjg2NTYwMDQwLC0xMj
 UyNDgyNTMsODY3ODQyMDU5LDE1MzY0MjAyODksLTIxMzQ5NjM4
 NzUsMTE5MTI2NDUzMiwxOTQ3NTAyODI0LDE1NzI0MTUwMzYsLT
 E4Mjc1MDIyMzcsMTc0NDc1NzQ4NSwtMTg4NjIxMTgyLDc3MTc3
