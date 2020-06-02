@@ -94,7 +94,8 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 대문자로 표현된 단어
 : 모두 키워드를 의미한다. 키워드는 대소문자를 특별히 구분하지 않고 사용할 수 있다. 
 
-이탤릭체로 표현한 단어는 사용자가 선택해서 작성하는 토큰을 말하는데, 대부분 테이블명이나 컬럼명 또는 표현식을 말한다.  
+이탤릭체로 표현한 단어
+: 사용자가 선택해서 작성하는 토큰을 말하는데, 대부분 테이블명이나 컬럼명 또는 표현식을 말한다.  
 
 대괄호([])
 : 해당 키워드나 표현식 자체가 선택사항임을 말한다. 즉 대괄호로 묶인 키워드나 표현식 없어도 문법적 오류가 발생하지 않고, 있어도 문법적 오류가 발생하지 않음을 뜻한다.
@@ -113,11 +114,11 @@ SQL에서 각 키워드는 위 그림과 같이 키워드나 표현식이 표기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MjQxNTAzNiwtMTgyNzUwMjIzNywxNz
-Q0NzU3NDg1LC0xODg2MjExODIsNzcxNzc1Mjk1LC0yMDY1NjM0
-NjU2LC0xMjE5NjE1MTIwLC0xNzIzMDgwMDcwLC00NjM4ODgzND
-csMjAzMDgxNzk4MywxMTIyNzQzMzk4LDk2Mjc0MjE1MCwtMTMw
-NjMzMDYyMiw0MDQ5MTYxNzEsLTE1MDk2NjkyOTAsLTE3OTY1OD
-kzNSwtMTA3NTM2NjE5MiwxNzAxMjg4MzUxLC01NDQwOTQxOSwx
-OTM2OTYyNzZdfQ==
+eyJoaXN0b3J5IjpbMTk0NzUwMjgyNCwxNTcyNDE1MDM2LC0xOD
+I3NTAyMjM3LDE3NDQ3NTc0ODUsLTE4ODYyMTE4Miw3NzE3NzUy
+OTUsLTIwNjU2MzQ2NTYsLTEyMTk2MTUxMjAsLTE3MjMwODAwNz
+AsLTQ2Mzg4ODM0NywyMDMwODE3OTgzLDExMjI3NDMzOTgsOTYy
+NzQyMTUwLC0xMzA2MzMwNjIyLDQwNDkxNjE3MSwtMTUwOTY2OT
+I5MCwtMTc5NjU4OTM1LC0xMDc1MzY2MTkyLDE3MDEyODgzNTEs
+LTU0NDA5NDE5XX0=
 -->
