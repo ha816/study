@@ -129,9 +129,9 @@ SQL 표준에서는 문자열 값에 홑따옴표가 포함되 있을때, 홑따
 SELECT * FROM departments WHERE dept_no = 'd''001';
 SELECT * FROM departments WHERE dept_no = 'd"001';
 
-
-
-
+-- MySQL에서만 지원되는 방법
+SELECT * FROM departments WHERE dept_no = "d'001";
+SELECT * FROM departments WHERE dept_no = "d""001";
 ```
 
 
@@ -143,11 +143,11 @@ SELECT * FROM departments WHERE dept_no = 'd"001';
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDY3NDY1MDcsLTEyNTI0ODI1Myw4Nj
-c4NDIwNTksMTUzNjQyMDI4OSwtMjEzNDk2Mzg3NSwxMTkxMjY0
-NTMyLDE5NDc1MDI4MjQsMTU3MjQxNTAzNiwtMTgyNzUwMjIzNy
-wxNzQ0NzU3NDg1LC0xODg2MjExODIsNzcxNzc1Mjk1LC0yMDY1
-NjM0NjU2LC0xMjE5NjE1MTIwLC0xNzIzMDgwMDcwLC00NjM4OD
-gzNDcsMjAzMDgxNzk4MywxMTIyNzQzMzk4LDk2Mjc0MjE1MCwt
-MTMwNjMzMDYyMl19
+eyJoaXN0b3J5IjpbLTI4NjU2MDA0MCwtMTI1MjQ4MjUzLDg2Nz
+g0MjA1OSwxNTM2NDIwMjg5LC0yMTM0OTYzODc1LDExOTEyNjQ1
+MzIsMTk0NzUwMjgyNCwxNTcyNDE1MDM2LC0xODI3NTAyMjM3LD
+E3NDQ3NTc0ODUsLTE4ODYyMTE4Miw3NzE3NzUyOTUsLTIwNjU2
+MzQ2NTYsLTEyMTk2MTUxMjAsLTE3MjMwODAwNzAsLTQ2Mzg4OD
+M0NywyMDMwODE3OTgzLDExMjI3NDMzOTgsOTYyNzQyMTUwLC0x
+MzA2MzMwNjIyXX0=
 -->
