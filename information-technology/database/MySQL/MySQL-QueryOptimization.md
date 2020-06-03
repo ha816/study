@@ -152,7 +152,11 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 두 번째 쿼리는 주어진 상수값이 숫자 값인데 컬럼은 문자열이다. 이때 앞서 말했듯이 MySQL은 문자열 컬럼을 숫자로 변경한다. 즉 string_column 컬럼의 모든 문자열 값을 숫자로 변환해 비교를 수행한다. 따라서 **string_column에 있덱스가 있다 하더라도 이를 이용하지 못하게 된다.**
 
-원천적으로 이런 문제를 피하려면 숫자값은 숫자 타입 컬럼에만 저장해야 한다. 
+원천적으로 이런 문제를 피하려면 숫자값은 숫자 타입 컬럼에만 저장해야 한다. 항상 주의하도록 하자.
+
+### 날짜
+
+
 
 
 
@@ -163,7 +167,7 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTcxMjA3OTUsLTEwNTk0NzEyMjksLT
+eyJoaXN0b3J5IjpbLTEzNzIzNzE4MDMsLTEwNTk0NzEyMjksLT
 E3Nzk0NDA0MzksLTMyMzkxNDM3OSwzOTY2ODc2NDEsLTE1ODg2
 NzkzMzgsLTI1ODc2NjA5MCwtMjg2NTYwMDQwLC0xMjUyNDgyNT
 MsODY3ODQyMDU5LDE1MzY0MjAyODksLTIxMzQ5NjM4NzUsMTE5
