@@ -148,6 +148,7 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 먼저 비교대상이 문자열과 숫자 타입으로 다를때는 자동으로 타입변환이 일어난다. MySQL에서는 숫자타입을 먼저 우선시 하므로 문자열 값을 숫자 값으로 변환한 후 비교를 수행한다. 
 
+cjtqjsWo zn
 
 
 
@@ -159,11 +160,11 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMzkxNDM3OSwzOTY2ODc2NDEsLTE1OD
-g2NzkzMzgsLTI1ODc2NjA5MCwtMjg2NTYwMDQwLC0xMjUyNDgy
-NTMsODY3ODQyMDU5LDE1MzY0MjAyODksLTIxMzQ5NjM4NzUsMT
-E5MTI2NDUzMiwxOTQ3NTAyODI0LDE1NzI0MTUwMzYsLTE4Mjc1
-MDIyMzcsMTc0NDc1NzQ4NSwtMTg4NjIxMTgyLDc3MTc3NTI5NS
-wtMjA2NTYzNDY1NiwtMTIxOTYxNTEyMCwtMTcyMzA4MDA3MCwt
-NDYzODg4MzQ3XX0=
+eyJoaXN0b3J5IjpbLTU4NTY3NzE2MiwtMzIzOTE0Mzc5LDM5Nj
+Y4NzY0MSwtMTU4ODY3OTMzOCwtMjU4NzY2MDkwLC0yODY1NjAw
+NDAsLTEyNTI0ODI1Myw4Njc4NDIwNTksMTUzNjQyMDI4OSwtMj
+EzNDk2Mzg3NSwxMTkxMjY0NTMyLDE5NDc1MDI4MjQsMTU3MjQx
+NTAzNiwtMTgyNzUwMjIzNywxNzQ0NzU3NDg1LC0xODg2MjExOD
+IsNzcxNzc1Mjk1LC0yMDY1NjM0NjU2LC0xMjE5NjE1MTIwLC0x
+NzIzMDgwMDcwXX0=
 -->
