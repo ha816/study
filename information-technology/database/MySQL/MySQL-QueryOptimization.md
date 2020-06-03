@@ -146,12 +146,13 @@ SELECT * FROM tab_test WHERE number_column = '1001';
 SELECT * FROM tab_test WHERE string_column = 1001;
 ```
 
-먼저 비교대상이 문자열과 숫자 타입으로 다를때는 자동으로 타입변환이 일어난다. MySQL에서는 숫자타입을 먼저 우선시 하므로 문자열 값을 숫자 값으로 변환한 후 비교를 수행한다. 
+먼저 비교대상이 문자열과 숫자 타입으로 다를때는 자동으로 타입변환이 일어난다. **MySQL에서는 문자열 값을 숫자 값으로 변환하는 것을 우선하고 이후 비교를 수행한다.** 
 
 첫번째 쿼리는 주어진 상수값을 숫자로 변환하는데, 이때 상수값 하나만 변환하므로 성능과 관련된 문제가 발생하지 않는다.
 
 두 번째 쿼리는 주어진 상수값이 숫자 값인데 컬럼은 문자열이다. 이때 앞서 말했듯이 MySQL은 문자열 컬럼을 숫자로 변경한다. 즉 string_column 컬럼의 모든 문자열 값을 숫자로 변환해 비교를 수행한다. 따라서 **string_column에 있덱스가 있다 하더라도 이를 이용하지 못하게 된다.**
 
+원천적으로 이런 문제를 피하려면 숫자값은 숫자 타입 컬럼에만 저장해야 한다. 
 
 
 
@@ -162,11 +163,11 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTk0NzEyMjksLTE3Nzk0NDA0MzksLT
-MyMzkxNDM3OSwzOTY2ODc2NDEsLTE1ODg2NzkzMzgsLTI1ODc2
-NjA5MCwtMjg2NTYwMDQwLC0xMjUyNDgyNTMsODY3ODQyMDU5LD
-E1MzY0MjAyODksLTIxMzQ5NjM4NzUsMTE5MTI2NDUzMiwxOTQ3
-NTAyODI0LDE1NzI0MTUwMzYsLTE4Mjc1MDIyMzcsMTc0NDc1Nz
-Q4NSwtMTg4NjIxMTgyLDc3MTc3NTI5NSwtMjA2NTYzNDY1Niwt
-MTIxOTYxNTEyMF19
+eyJoaXN0b3J5IjpbLTE2OTcxMjA3OTUsLTEwNTk0NzEyMjksLT
+E3Nzk0NDA0MzksLTMyMzkxNDM3OSwzOTY2ODc2NDEsLTE1ODg2
+NzkzMzgsLTI1ODc2NjA5MCwtMjg2NTYwMDQwLC0xMjUyNDgyNT
+MsODY3ODQyMDU5LDE1MzY0MjAyODksLTIxMzQ5NjM4NzUsMTE5
+MTI2NDUzMiwxOTQ3NTAyODI0LDE1NzI0MTUwMzYsLTE4Mjc1MD
+IyMzcsMTc0NDc1NzQ4NSwtMTg4NjIxMTgyLDc3MTc3NTI5NSwt
+MjA2NTYzNDY1Nl19
 -->
