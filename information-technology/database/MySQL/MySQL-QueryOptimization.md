@@ -150,7 +150,7 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 첫번째 쿼리는 주어진 상수값을 숫자로 변환하는데, 이때 상수값 하나만 변환하므로 성능과 관련된 문제가 발생하지 않는다.
 
-두 번째
+두 번째 쿼리는 주어진 상수값이 숫자 값인데 컬럼은 문자열이다. 이때 앞서 말했듯이 MySQL은 문자열 컬럼을 숫자로 변경한다. 즉 string_column 컬럼의 모든 문자열 값을 숫자로 
 
 
 
@@ -162,11 +162,11 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NzcyMjYyOCwtMzIzOTE0Mzc5LDM5Nj
-Y4NzY0MSwtMTU4ODY3OTMzOCwtMjU4NzY2MDkwLC0yODY1NjAw
-NDAsLTEyNTI0ODI1Myw4Njc4NDIwNTksMTUzNjQyMDI4OSwtMj
-EzNDk2Mzg3NSwxMTkxMjY0NTMyLDE5NDc1MDI4MjQsMTU3MjQx
-NTAzNiwtMTgyNzUwMjIzNywxNzQ0NzU3NDg1LC0xODg2MjExOD
-IsNzcxNzc1Mjk1LC0yMDY1NjM0NjU2LC0xMjE5NjE1MTIwLC0x
-NzIzMDgwMDcwXX0=
+eyJoaXN0b3J5IjpbLTE3Nzk0NDA0MzksLTMyMzkxNDM3OSwzOT
+Y2ODc2NDEsLTE1ODg2NzkzMzgsLTI1ODc2NjA5MCwtMjg2NTYw
+MDQwLC0xMjUyNDgyNTMsODY3ODQyMDU5LDE1MzY0MjAyODksLT
+IxMzQ5NjM4NzUsMTE5MTI2NDUzMiwxOTQ3NTAyODI0LDE1NzI0
+MTUwMzYsLTE4Mjc1MDIyMzcsMTc0NDc1NzQ4NSwtMTg4NjIxMT
+gyLDc3MTc3NTI5NSwtMjA2NTYzNDY1NiwtMTIxOTYxNTEyMCwt
+MTcyMzA4MDA3MF19
 -->
