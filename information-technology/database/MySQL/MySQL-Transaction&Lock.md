@@ -2,7 +2,6 @@
 
 이 장에서는 MySQL의 동시성에 영향을 미치는 잠금(Lock)과 트랜잭션, 그리고 트랜잭션의 격리 수준(Isolation Level)을 공부한다.
 
-
 # MySQL Transaction
 
 작은 작업 단위를 묶어 이 작업들의 원자성을 보장하는 것이 트랜잭션이다. 이 말은 작은 작업 일부만 적용되는 현상(partial update)가 없다는 말이다. 
@@ -282,11 +281,11 @@ WHERE ....
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MDUzNTAxNiw4Njc1Njg3MDIsLTkwNT
-g2ODc2MiwtMjA0NTAyNTgyMCwxNTE4NjQ3ODIzLDEzODU0MzY4
-NzMsNTY4Nzk3Nzg0LDE3MDEyMzQ0OTEsMTUyOTI3OTc3MiwyMD
-A3NDU0NzUxLC03NTI0MjgzNDQsLTE0MzA2NDkxNjIsNDMyNTA4
-ODU4LDE0ODM3OTc3NCwtNTc2OTgwNDg4LC0xMzkxMDI4Mzk4LD
-EwMDkwNzM1ODksLTQwMDkyMTY1OSwtMTYxMjc4MTk3NiwtNTA4
-NjgwNzk2XX0=
+eyJoaXN0b3J5IjpbLTEyNjk2MDIzMjYsLTg1MDUzNTAxNiw4Nj
+c1Njg3MDIsLTkwNTg2ODc2MiwtMjA0NTAyNTgyMCwxNTE4NjQ3
+ODIzLDEzODU0MzY4NzMsNTY4Nzk3Nzg0LDE3MDEyMzQ0OTEsMT
+UyOTI3OTc3MiwyMDA3NDU0NzUxLC03NTI0MjgzNDQsLTE0MzA2
+NDkxNjIsNDMyNTA4ODU4LDE0ODM3OTc3NCwtNTc2OTgwNDg4LC
+0xMzkxMDI4Mzk4LDEwMDkwNzM1ODksLTQwMDkyMTY1OSwtMTYx
+Mjc4MTk3Nl19
 -->
