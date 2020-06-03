@@ -148,7 +148,9 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 먼저 비교대상이 문자열과 숫자 타입으로 다를때는 자동으로 타입변환이 일어난다. MySQL에서는 숫자타입을 먼저 우선시 하므로 문자열 값을 숫자 값으로 변환한 후 비교를 수행한다. 
 
-cjtqjsWo zn
+첫번째 쿼리는 주어진 상수값을 숫자로 변환하는데, 이때 상수값 하나만 변환하므로 성능과 관련된 문제가 발생하지 않는다.
+
+두 번째
 
 
 
@@ -160,7 +162,7 @@ cjtqjsWo zn
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NTY3NzE2MiwtMzIzOTE0Mzc5LDM5Nj
+eyJoaXN0b3J5IjpbLTU5NzcyMjYyOCwtMzIzOTE0Mzc5LDM5Nj
 Y4NzY0MSwtMTU4ODY3OTMzOCwtMjU4NzY2MDkwLC0yODY1NjAw
 NDAsLTEyNTI0ODI1Myw4Njc4NDIwNTksMTUzNjQyMDI4OSwtMj
 EzNDk2Mzg3NSwxMTkxMjY0NTMyLDE5NDc1MDI4MjQsMTU3MjQx
