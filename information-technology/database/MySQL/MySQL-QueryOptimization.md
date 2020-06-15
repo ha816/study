@@ -158,6 +158,9 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 다른 DBMS에서 날짜 타입을 비교하거나 INSERT하려면 반드시 문자열을 DATE 타입으로 변환하는 코드가 필요하다. 하지만 MySQL에서는 날짜 포맷을 표기하기만 하면 MySQL 서버가 자동으로 DATE나 DATETIME으로 변환하기 때문에 복잡한 함수를 사용하지 않아도 된다.
 
+### 불리언
+
+BOOL이나 BOOLEAN이라는 타입이 있지만 사실 이것은 TINYINT 타입에 대한 동의어일 뿐이다. 
 
 
 
@@ -170,11 +173,11 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc4NDEwODQyLC0xMDIzNTQxNDgzLC0xMz
-cyMzcxODAzLC0xMDU5NDcxMjI5LC0xNzc5NDQwNDM5LC0zMjM5
-MTQzNzksMzk2Njg3NjQxLC0xNTg4Njc5MzM4LC0yNTg3NjYwOT
-AsLTI4NjU2MDA0MCwtMTI1MjQ4MjUzLDg2Nzg0MjA1OSwxNTM2
-NDIwMjg5LC0yMTM0OTYzODc1LDExOTEyNjQ1MzIsMTk0NzUwMj
-gyNCwxNTcyNDE1MDM2LC0xODI3NTAyMjM3LDE3NDQ3NTc0ODUs
-LTE4ODYyMTE4Ml19
+eyJoaXN0b3J5IjpbOTcwODU3Nzg2LDQ3ODQxMDg0MiwtMTAyMz
+U0MTQ4MywtMTM3MjM3MTgwMywtMTA1OTQ3MTIyOSwtMTc3OTQ0
+MDQzOSwtMzIzOTE0Mzc5LDM5NjY4NzY0MSwtMTU4ODY3OTMzOC
+wtMjU4NzY2MDkwLC0yODY1NjAwNDAsLTEyNTI0ODI1Myw4Njc4
+NDIwNTksMTUzNjQyMDI4OSwtMjEzNDk2Mzg3NSwxMTkxMjY0NT
+MyLDE5NDc1MDI4MjQsMTU3MjQxNTAzNiwtMTgyNzUwMjIzNywx
+NzQ0NzU3NDg1XX0=
 -->
