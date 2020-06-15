@@ -160,7 +160,7 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 ### 불리언
 
-BOOL이나 BOOLEAN이라는 타입이 있지만 사실 이것은 TINYINT 타입에 대한 동의어일 뿐이다. 
+BOOL이나 BOOLEAN이라는 타입이 있지만 사실 이것은 TINYINT 타입에 대한 동의어일 뿐이다. 테이블의 컬럼을 BOOL로 생성한 뒤에 조회해보면 컬럼의 타입이 BOOL이 아니라 TINYINT라는 점을 알 수 있다. MySQL
 
 
 
@@ -173,11 +173,11 @@ BOOL이나 BOOLEAN이라는 타입이 있지만 사실 이것은 TINYINT 타입�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcwODU3Nzg2LDQ3ODQxMDg0MiwtMTAyMz
-U0MTQ4MywtMTM3MjM3MTgwMywtMTA1OTQ3MTIyOSwtMTc3OTQ0
-MDQzOSwtMzIzOTE0Mzc5LDM5NjY4NzY0MSwtMTU4ODY3OTMzOC
-wtMjU4NzY2MDkwLC0yODY1NjAwNDAsLTEyNTI0ODI1Myw4Njc4
-NDIwNTksMTUzNjQyMDI4OSwtMjEzNDk2Mzg3NSwxMTkxMjY0NT
-MyLDE5NDc1MDI4MjQsMTU3MjQxNTAzNiwtMTgyNzUwMjIzNywx
-NzQ0NzU3NDg1XX0=
+eyJoaXN0b3J5IjpbLTE4MzIzMDE1NDQsNDc4NDEwODQyLC0xMD
+IzNTQxNDgzLC0xMzcyMzcxODAzLC0xMDU5NDcxMjI5LC0xNzc5
+NDQwNDM5LC0zMjM5MTQzNzksMzk2Njg3NjQxLC0xNTg4Njc5Mz
+M4LC0yNTg3NjYwOTAsLTI4NjU2MDA0MCwtMTI1MjQ4MjUzLDg2
+Nzg0MjA1OSwxNTM2NDIwMjg5LC0yMTM0OTYzODc1LDExOTEyNj
+Q1MzIsMTk0NzUwMjgyNCwxNTcyNDE1MDM2LC0xODI3NTAyMjM3
+LDE3NDQ3NTc0ODVdfQ==
 -->
