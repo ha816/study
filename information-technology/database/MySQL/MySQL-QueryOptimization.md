@@ -162,6 +162,13 @@ SELECT * FROM tab_test WHERE string_column = 1001;
 
 BOOL이나 BOOLEAN이라는 타입이 있지만 사실 이것은 TINYINT 타입에 대한 동의어일 뿐이다. 테이블의 컬럼을 BOOL로 생성한 뒤에 조회해보면 컬럼의 타입이 BOOL이 아니라 TINYINT라는 점을 알 수 있다. MySQL에서는 TRUE나 FALSE 형태로 비교하거나 값을 저장할 수 있는데, 사실 값을 조회해 보면 0 또는 1값이 조회된다. 즉 MySQL은 TRUE나 FALSE같은 불리언 값을 정수로 매핑해서 사용한다. 이때 MySQL에서는 FALSE가 정수 값 0이 되지만, TRUE는 1만을 의미한다는 것을 주의해야 한다. 그래서 숫자 값이 저장된 컬럼을 TRUE나 FALSE로 조회하면 0이나 1이외의 숫자 값은 조회되지 않는다. 
 
+모든 숫자 값이 TRUE나 FALSE 두 개의 불리언 값으로 매핑되지 않는다는 것은 혼란스럽고 버그로 연결될 가능성이 크다. 만약 불리언 타입을 꼭 사용하고 싶다면 ENUM 타입으로 관리하는 것이 더 좋다.
+
+## MySQL 연산자
+
+동등(Equal) 비교 ( =, <=>)
+
+동등 비교는
 
 
 
@@ -173,11 +180,11 @@ BOOL이나 BOOLEAN이라는 타입이 있지만 사실 이것은 TINYINT 타입�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2OTkxNTkyOSwxOTkwNDc4MDAsNDc4ND
-EwODQyLC0xMDIzNTQxNDgzLC0xMzcyMzcxODAzLC0xMDU5NDcx
-MjI5LC0xNzc5NDQwNDM5LC0zMjM5MTQzNzksMzk2Njg3NjQxLC
-0xNTg4Njc5MzM4LC0yNTg3NjYwOTAsLTI4NjU2MDA0MCwtMTI1
-MjQ4MjUzLDg2Nzg0MjA1OSwxNTM2NDIwMjg5LC0yMTM0OTYzOD
-c1LDExOTEyNjQ1MzIsMTk0NzUwMjgyNCwxNTcyNDE1MDM2LC0x
-ODI3NTAyMjM3XX0=
+eyJoaXN0b3J5IjpbMTYwMDE3ODA0NCwxNzY5OTE1OTI5LDE5OT
+A0NzgwMCw0Nzg0MTA4NDIsLTEwMjM1NDE0ODMsLTEzNzIzNzE4
+MDMsLTEwNTk0NzEyMjksLTE3Nzk0NDA0MzksLTMyMzkxNDM3OS
+wzOTY2ODc2NDEsLTE1ODg2NzkzMzgsLTI1ODc2NjA5MCwtMjg2
+NTYwMDQwLC0xMjUyNDgyNTMsODY3ODQyMDU5LDE1MzY0MjAyOD
+ksLTIxMzQ5NjM4NzUsMTE5MTI2NDUzMiwxOTQ3NTAyODI0LDE1
+NzI0MTUwMzZdfQ==
 -->
