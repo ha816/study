@@ -2,7 +2,7 @@
 
 ## Item15. 클래스와 멤버의 접근 권한은 최소화하라
 
-어설프게 설계된 컴포넌트와 잘 설계된 컴포넌트의 가장 큰 차이는 바로 **클래스 내부 데이터와 구현 정보를 외부 컴포넌트로 부터 얼마나 잘 숨겼느냐이다.** 정보은닉 (information hiding), 혹은 캡슐화(capsulation)으로 불리는 이 개념은 소프트웨어 설계의 근간이 되는 원리다. 
+어설프게 설계된 컴포넌트와 잘 설계된 컴포넌트의 가장 큰 차이는 바로 클래스 내부 데이터와 구현 정보를 외부 컴포넌트로 부터 얼마나 잘 숨겼느냐이다. 즉 **정보은닉 (information hiding) 혹은 캡슐화(capsulation)**가 얼마나 잘 되었는 지가 중요하며, 이 개념은 소프트웨어 설계의 근간이 되는 원리다. 
 
 정보은닉 -> 컴포넌트간 의존성을 낮춘다. 개발 관리 비용, 개발 난이도 하락 등등
 
@@ -445,11 +445,11 @@ class Figure {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMyMTY2NzQwLC0xMzM5OTUwMjMyLDEzNj
-U2ODgyNTAsLTEwMTI0NzY5MjAsLTM4ODk2Mjk0NCwxNTEyNzAx
-NjgxLC0xNzk5OTYzOTYsMTcwMjAxNjg4OCwxMTEyNzc5OTk2LC
-0xNzc2MjgsLTQ0NjMyMjkzOCwtMTUyMDI2OTU2MSwyMDE2NTEw
-MDA4LC0yMDI3ODg0OTU0LC0xMDY2NTQxNDcwLDY1ODc4NjE2Ni
-wtOTM5NTQ2MjA3LC0zMDg5Mjk4MTksMjQ0NTUwMDI4LDE3MTI1
-MzcyNjJdfQ==
+eyJoaXN0b3J5IjpbLTMwOTAzOTQ3NiwtMTMzOTk1MDIzMiwxMz
+Y1Njg4MjUwLC0xMDEyNDc2OTIwLC0zODg5NjI5NDQsMTUxMjcw
+MTY4MSwtMTc5OTk2Mzk2LDE3MDIwMTY4ODgsMTExMjc3OTk5Ni
+wtMTc3NjI4LC00NDYzMjI5MzgsLTE1MjAyNjk1NjEsMjAxNjUx
+MDAwOCwtMjAyNzg4NDk1NCwtMTA2NjU0MTQ3MCw2NTg3ODYxNj
+YsLTkzOTU0NjIwNywtMzA4OTI5ODE5LDI0NDU1MDAyOCwxNzEy
+NTM3MjYyXX0=
 -->
