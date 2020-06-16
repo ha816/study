@@ -166,9 +166,9 @@ BOOL이나 BOOLEAN이라는 타입이 있지만 사실 이것은 TINYINT 타입�
 
 ## MySQL 연산자
 
-동등(Equal) 비교 ( =, <=>)
+### 동등(Equal) 비교 ( =, <=>)
 
-동등 비교는
+동등 비교는 다른 DBMS에서와 마찬가지로 "=" 기호를 사용해서 비교를 수행하면 된다. 하지만 MySQL에서는 동등 비교를 위해 "<=>" 
 
 
 
@@ -180,7 +180,7 @@ BOOL이나 BOOLEAN이라는 타입이 있지만 사실 이것은 TINYINT 타입�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMDE3ODA0NCwxNzY5OTE1OTI5LDE5OT
+eyJoaXN0b3J5IjpbMTgwNzQyMTgyOSwxNzY5OTE1OTI5LDE5OT
 A0NzgwMCw0Nzg0MTA4NDIsLTEwMjM1NDE0ODMsLTEzNzIzNzE4
 MDMsLTEwNTk0NzEyMjksLTE3Nzk0NDA0MzksLTMyMzkxNDM3OS
 wzOTY2ODc2NDEsLTE1ODg2NzkzMzgsLTI1ODc2NjA5MCwtMjg2
