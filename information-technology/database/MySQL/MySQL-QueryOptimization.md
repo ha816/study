@@ -170,12 +170,14 @@ BOOL이나 BOOLEAN이라는 타입이 있지만 사실 이것은 TINYINT 타입�
 
 동등 비교는 다른 DBMS에서와 마찬가지로 "=" 기호를 사용해서 비교를 수행하면 된다. 하지만 MySQL에서는 동등 비교를 위해 "<=>" 연산자도 제공한다. "<=>" 연산자는 "=" 연산자와 같으며, 부가적으로 NULL 값에 대한 비교까지 수행한다. MySQL에서는 "<=>" 연산자를 NULL-Safe 비교 연산자라 한다.
 
-
+```
+SELECT 1=1, 1 = NULL;
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MDUyMDk1MiwxNzY5OTE1OTI5LDE5OT
+eyJoaXN0b3J5IjpbLTY4MjA2Njk4MywxNzY5OTE1OTI5LDE5OT
 A0NzgwMCw0Nzg0MTA4NDIsLTEwMjM1NDE0ODMsLTEzNzIzNzE4
 MDMsLTEwNTk0NzEyMjksLTE3Nzk0NDA0MzksLTMyMzkxNDM3OS
 wzOTY2ODc2NDEsLTE1ODg2NzkzMzgsLTI1ODc2NjA5MCwtMjg2
