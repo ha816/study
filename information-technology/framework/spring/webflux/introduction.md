@@ -10,7 +10,7 @@ Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내
 
 ## Reactive API and Building Blocks
 
-[Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)은 비동기/논블라킹 스트림 처리를 위한 명세입니다. 그리고 Reactor는 Reactive Streams의 실제 구현체 입니다.
+[Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)은 비동기/논블라킹 스트림 처리를 위한 명세입니다. 그리고 Reactor는 Reactive Streams의 실제 구현체 입니다. 그 밖에 다른 구현체로는 Rxjava, Akka Streams등이 있습니다. (사실 같은 스펙을 구현했기 때문에 구현체 끼리 비슷한 모양새와
 
 Spring framework는 [Reactor](https://projectreactor.io/)를 내부적으로 사용하며, Reactor는 Reactive Streams 스펙의 구현체 입니다. Reactor는 basic Reactive Streams `Publisher`  뿐만 아니라 복합형의 flux와 mono도 확장한다. 
 
@@ -38,5 +38,5 @@ WebFlux can run on Servlet containers with support for the Servlet 3.1 Non-Block
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MTAxMzM4MywyNTg4NTc2MzJdfQ==
+eyJoaXN0b3J5IjpbLTE3NTIwODM2NDYsMjU4ODU3NjMyXX0=
 -->
