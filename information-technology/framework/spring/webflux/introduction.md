@@ -12,9 +12,11 @@ Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내
 
 MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적이다. 특히 응답성이 많이 향상되므로 상호간 호출이 빈번한 MSA에서 더욱 좋다. ~~마지막으로, 새로운 기술을 활용하는 엘레강스한 개발자가 된 느낌을 받을 수 있다.~~
 
-여러 장점이 있지만 webflux의 사용은 사실 필수가 아니다. 심지어 Spring 내부에서도 반드시 써야하는건 아니라고 했다. 
+여러 장점이 있지만 webflux의 사용은 사실 필수가 아니다. 심지어 Spring 내부에서도 반드시 써야하는건 아니라고 했다. 또 기존 servelet기반의 코드를 webflux로 머지하는 과정이 쉽지 않다. 따라서 무리하여 	webflux로 이관하는 것은 좋지 않으며, 새로운 서비스에 접목하는 것이 좋아 보인다.
 
-또 기존 servelet기반의 코드를 webflux로 머지하는 과정이 쉽지 않다. 따라서 무리하여 	webflux로 머지를 하는 것은 비관적이며, 새
+다른 단점으로는 스트림 기반이다보니 디버깅이 쉽지 않고, 개발자의 사고방식이 비동기 처리에 ㅁ
+
+
 
 
 
@@ -48,6 +50,6 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MTcwNjEzLDIwMDgyMTI4NiwyNTg4NT
+eyJoaXN0b3J5IjpbNjk4OTA4NjcxLDIwMDgyMTI4NiwyNTg4NT
 c2MzJdfQ==
 -->
