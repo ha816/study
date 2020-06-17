@@ -10,10 +10,9 @@ Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내
 
 ## Reactive API and Building Blocks
 
-Spring framework 5는 앞에서  backpressure
-[Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)을 제공합니다.
+Spring framework 5는 앞에서 비동기 컴포넌트와 라이브러리에서 사용되는  backpressure 기능을 위해 [Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)을 제공합니다.
 
-Spring Framework 5 embraces  [Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)  as the contract for communicating backpressure across async components and libraries. Reactive Streams is a specification created through industry collaboration that has also been adopted in Java 9 as  `java.util.concurrent.Flow`.
+Reactive Streams is a specification created through industry collaboration that has also been adopted in Java 9 as  `java.util.concurrent.Flow`.
 
 The Spring Framework uses  [Reactor](https://projectreactor.io/)  internally for its own reactive support. Reactor is a Reactive Streams implementation that further extends the basic Reactive Streams  `Publisher`  contract with the  `Flux`  and  `Mono`  composable API types to provide declarative operations on data sequences of  `0..N`  and  `0..1`.
 
@@ -27,5 +26,5 @@ Spring Framework 5 includes a new  `spring-webflux`  module. The module contains
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NjkwMTY5NV19
+eyJoaXN0b3J5IjpbMTMyODM1NDkxOV19
 -->
