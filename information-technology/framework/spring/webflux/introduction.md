@@ -29,9 +29,12 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 -   Annotation-based with  `@Controller`  and the other annotations supported also with Spring MVC
 -   Functional, Java 8 lambda style routing and handling
 
-Both programming models are executed on the same reactive foundation that adapts non-blocking HTTP runtimes to the Reactive Streams API. The diagram below shows the server-side stack including traditional, Servlet-based Spring MVC on the left from the  `spring-webmvc`  module and also the reactive stack on the right from the  `spring-webflux`  module.
+다행히 위 두가지 모델 모두 Reactive Streams API의 non-blocking HTTPS을 이용하는 같은 
+Both programming models are executed on the same reactive foundation that adapts non-blocking HTTP runtimes to the Reactive Streams API. 
+
+The diagram below shows the server-side stack including traditional, Servlet-based Spring MVC on the left from the  `spring-webmvc`  module and also the reactive stack on the right from the  `spring-webflux`  module.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMDIwMzA0XX0=
+eyJoaXN0b3J5IjpbLTI0MDI2OTczXX0=
 -->
