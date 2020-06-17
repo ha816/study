@@ -27,8 +27,9 @@ webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하�
 
 위 그림은 왼쪽 블럭은 전통적인 서블릿 기반의 Spring MVC의 스택을 보여준다. 오른쪽 블럭에는 reactive stack을 보여주고 있다. 
 
-# reference
+'Spring WebFlux는 어떻게 적은 리소스로 많은 트래픽을 감당할까?'란 궁금증을 시작으로 여기까지 왔다. 이에 대한 답은 I/O를 Non Blockkng을 이용하여 잘 사용하는 것과 Request를 Event-Driven을 통해서 효율적으로 처리하기 때문에 가능하다.
 
+# reference
 
 [https://share.navercorp.com/techtalk698/lecture/44750](https://share.navercorp.com/techtalk698/lecture/44750)
 
@@ -37,7 +38,7 @@ webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTM5NTIxMDIsLTIxMzA1NTkyNCwtNj
-Y5OTg0MTksMTQzMDAwMzc3NCwtMTEyNDc2MDg0MCwyMDA4MjEy
-ODYsMjU4ODU3NjMyXX0=
+eyJoaXN0b3J5IjpbMjE0MzkwMDExMCwtMTExMzk1MjEwMiwtMj
+EzMDU1OTI0LC02Njk5ODQxOSwxNDMwMDAzNzc0LC0xMTI0NzYw
+ODQwLDIwMDgyMTI4NiwyNTg4NTc2MzJdfQ==
 -->
