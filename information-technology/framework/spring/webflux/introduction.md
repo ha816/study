@@ -13,8 +13,7 @@ Reactive Programing에선 기본적으로 모든 것을 스트림(stream)으로 
 	* 특히 응답성이 많이 향상되므로 상호간 호출이 빈번한 MSA에서 더욱 좋다고 알려져있습니다. 
 * ~~신기술을 사용하는 엘레강스한 개발자가 된 느낌을 받을 수 있다.~~ 
 
-여러 장점이 있지만 WebFlux의 사용은 사실 필수가 아니라고 합니다. (심지어 Spring측 의견) 
- 
+WebFlux의 사용은 사실 필수가 아니라고 합니다. (심지어 Spring측 의견) 만약 기존 servelet 기반의 서비스가 이미 있다면 무리하여 WebFlux로 옮기는 ㄱ
 기존 servelet 기반의 코드를 webflux로 머지하는 과정이 어렵다고 합니다. 따라서 새로운 서비스에 접목하는 것이 좋아 보입니다.
 
 다른 단점으로는 비동기의 스트림 기반이다보니 디버깅이 쉽지 않고, 개발자의 사고방식이 비동기 처리에 맞게 바뀌어야 합니다. 마지막으로 webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하지 않는 거의 대다수의 rdbms를 사용하는 경우 입니다.(r2dbc 제외) 아직까진 mysql 등의 rdbms도 지원되지 않습니다. Spring에서 지원하는 NoSQL은 MongoDB, Redis, Cassandra, Couchbase가 있습니다.
@@ -45,7 +44,7 @@ Reactive Programing에선 기본적으로 모든 것을 스트림(stream)으로 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTY0NTMzODIsLTE2NzUwOTc0MDIsMj
+eyJoaXN0b3J5IjpbLTIwMDEyNTMxNzYsLTE2NzUwOTc0MDIsMj
 E0MzkwMDExMCwtMTExMzk1MjEwMiwtMjEzMDU1OTI0LC02Njk5
 ODQxOSwxNDMwMDAzNzc0LC0xMTI0NzYwODQwLDIwMDgyMTI4Ni
 wyNTg4NTc2MzJdfQ==
