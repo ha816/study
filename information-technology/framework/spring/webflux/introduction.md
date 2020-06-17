@@ -16,7 +16,13 @@ MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적이다.
 
 다른 단점으로는 스트림 기반이다보니 디버깅이 쉽지 않고, 개발자의 사고방식이 비동기 처리에 맞게 바뀌어야 한다. 
 
-webflux를 사용할 수 없는 경우가 있는데 바로 RDBMS를 사용하고 있을때이다. Spring에서 지원하는 NoSQL은 MongoDB, Redis, Cassandra, Couchbase가 있다. 
+webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하지 않는 거의 대다수의 rdbms를 사용하는 경우 입니다.(r2dbc 제외)
+
+non-blocking을 지원하는 nosql 데이터베이스를 사용하거나 [r2dbc](https://github.com/r2dbc)를 사용하는 것이 방법이 될 수 있겠으나 아직까진 mysql 등의 rdbms는 지원되지 않습니다.  
+  
+출처: [https://itstory.tk/entry/Spring-Webflux-JDBC혹은-blocking-call-핸들링-방법](https://itstory.tk/entry/Spring-Webflux-JDBC%ED%98%B9%EC%9D%80-blocking-call-%ED%95%B8%EB%93%A4%EB%A7%81-%EB%B0%A9%EB%B2%95) [덕's IT Story]
+
+바로 RDBMS를 사용하고 있을때이다. Spring에서 지원하는 NoSQL은 MongoDB, Redis, Cassandra, Couchbase가 있다. 
 
 
 
@@ -51,6 +57,6 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjQ3NjA4NDAsMjAwODIxMjg2LDI1OD
-g1NzYzMl19
+eyJoaXN0b3J5IjpbMTg4NDIzNTg0NywtMTEyNDc2MDg0MCwyMD
+A4MjEyODYsMjU4ODU3NjMyXX0=
 -->
