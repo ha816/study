@@ -5,9 +5,8 @@
 reactive Programming이란 바로 비동기 데이터 스트림들로 프로그래밍을 하는 것을 말한다.
 > Reactive programming is programming with asynchronous data streams.  
 
-전통적인 클릭 이벤트가 바로 비동기 이벤트 스트림이다. 클릭, 호버 이벤트 뿐만 아니라 그 어떤 것으로 부터도 스트림 데이터를 만들 수 있다. 
+Reactive Programing에선 기본적으로 모든 것을 스트림(stream)으로 본다. 이벤트, ajax call, 등 모든 데이터의 흐름을 시간순서에 의해 전달되어지는 스트림으로 처리한다. 
 
-스트림은 저렴하고, 만능으로 쓰인다. 
 
 In a way, this isn't anything new. Event buses or your typical click events are really an asynchronous event stream, on which you can observe and do some side effects. Reactive is that idea on steroids. You are able to create data streams of anything, not just from click and hover events. Streams are cheap and ubiquitous, anything can be a stream: variables, user inputs, properties, caches, data structures, etc. For example, imagine your Twitter feed would be a data stream in the same fashion that click events are. You can listen to that stream and react accordingly.
 
@@ -53,7 +52,7 @@ webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEyMTY0NTAzLC0xNjc1MDk3NDAyLDIxND
+eyJoaXN0b3J5IjpbMjM2OTMyNjkxLC0xNjc1MDk3NDAyLDIxND
 M5MDAxMTAsLTExMTM5NTIxMDIsLTIxMzA1NTkyNCwtNjY5OTg0
 MTksMTQzMDAwMzc3NCwtMTEyNDc2MDg0MCwyMDA4MjEyODYsMj
 U4ODU3NjMyXX0=
