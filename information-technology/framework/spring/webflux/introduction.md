@@ -9,9 +9,10 @@ Reactive Programing에선 기본적으로 모든 것을 스트림(stream)으로 
 
 ## Pros & Cros
 
+* WebFlux는 기존의 Servelet 
 * WebFlux는 MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적입니다. 
 	* 특히 응답성이 많이 향상되므로 상호간 호출이 빈번한 MSA에서 더욱 좋다고 알려져있습니다. 
-* 신기술을 사용하는 엘레강스한 개발자가 된 느낌을 받을 수 있다. 
+* ~~신기술을 사용하는 엘레강스한 개발자가 된 느낌을 받을 수 있다.~~ 
 
 여러 장점이 있지만 webflux의 사용은 사실 필수가 아니다. 심지어 Spring 내부에서도 반드시 써야하는건 아니라고 했다. 또 기존 servelet기반의 코드를 webflux로 머지하는 과정이 쉽지 않다. 따라서 무리하여 	webflux로 이관하는 것은 좋지 않으며, 새로운 서비스에 접목하는 것이 좋아 보인다.
 
@@ -45,8 +46,8 @@ webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODQ1NDk5NzMsLTE2NzUwOTc0MDIsMj
-E0MzkwMDExMCwtMTExMzk1MjEwMiwtMjEzMDU1OTI0LC02Njk5
-ODQxOSwxNDMwMDAzNzc0LC0xMTI0NzYwODQwLDIwMDgyMTI4Ni
-wyNTg4NTc2MzJdfQ==
+eyJoaXN0b3J5IjpbMTg1NTY5MTczMCwtMTY3NTA5NzQwMiwyMT
+QzOTAwMTEwLC0xMTEzOTUyMTAyLC0yMTMwNTU5MjQsLTY2OTk4
+NDE5LDE0MzAwMDM3NzQsLTExMjQ3NjA4NDAsMjAwODIxMjg2LD
+I1ODg1NzYzMl19
 -->
