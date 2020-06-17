@@ -14,7 +14,7 @@ Spring framework 5는 앞에서 비동기 컴포넌트와 라이브러리에서 
 
 Reactive Streams은 스펙으로 자바 9의 java.util.concurrent.Flow. 에서 적용되었습니다.
 
-Spring framework는 [Reactor](https://projectreactor.io/)를 내부적으로 사용하며, Reactor는 Reactive Streams 스펙의 구현체 입니다. Reactor는 he basic Reactive Streams `Publisher`
+Spring framework는 [Reactor](https://projectreactor.io/)를 내부적으로 사용하며, Reactor는 Reactive Streams 스펙의 구현체 입니다. Reactor는 basic Reactive Streams `Publisher` 를 확장하고 
 
 internally for its own reactive support. Reactor is a Reactive Streams implementation that further extends the basic Reactive Streams  `Publisher`  contract with the  `Flux`  and  `Mono`  composable API types to provide declarative operations on data sequences of  `0..N`  and  `0..1`.
 
@@ -28,5 +28,5 @@ Spring Framework 5 includes a new  `spring-webflux`  module. The module contains
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODM2NzkwNTVdfQ==
+eyJoaXN0b3J5IjpbLTk5NzM4OTc5OF19
 -->
