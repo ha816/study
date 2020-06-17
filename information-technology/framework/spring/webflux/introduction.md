@@ -18,19 +18,15 @@ Spring framework는 [Reactor](https://projectreactor.io/)를 내부적으로 사
 
 Spring framework는 flux와 mono를 많은 reactive API에서 노출하고 있다. 그렇지만 애플리케이션 단계에선, 항상, 스프링은 Rxjava 사용을 완벽히 지원한다. 
 
+## Spring WebFlux Module
 
-
-internally for its own reactive support. Reactor is a Reactive Streams implementation that further extends the basic Reactive Streams  `Publisher`  contract with the  `Flux`  and  `Mono`  composable API types to provide declarative operations on data sequences of  `0..N`  and  `0..1`.
-
-The Spring Framework exposes  `Flux`  and  `Mono`  in many of its own reactive APIs. At the application level however, as always, Spring provides choice and fully supports the use of RxJava. For more on reactive types check the post  ["Understanding Reactive Types"](https://spring.io/blog/2016/04/19/understanding-reactive-types)  by Sebastien Deleuze.
-
-## [](https://docs.spring.io/spring-framework/docs/5.0.0.BUILD-SNAPSHOT/spring-framework-reference/html/web-reactive.html#web-reactive-feature-overview)23.2 Spring WebFlux Module
-
+Sp
 Spring Framework 5 includes a new  `spring-webflux`  module. The module contains support for reactive HTTP and WebSocket clients as well as for reactive server web applications including REST, HTML browser, and WebSocket style interactions.
 
-### [](https://docs.spring.io/spring-framework/docs/5.0.0.BUILD-SNAPSHOT/spring-framework-reference/html/web-reactive.html#web-reactive-server)23.2.1 Server Side
+### Server side
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODU5Mjg3MjNdfQ==
+eyJoaXN0b3J5IjpbLTcyNjM5OTg0M119
 -->
