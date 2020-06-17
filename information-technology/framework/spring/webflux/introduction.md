@@ -6,20 +6,24 @@ reactive programming은 non-blocking applications에 적용되는 프로그래�
 
 reactive applications을 이해하는 키는 backpressure이다. backpressure는 생산자(client)가 소비자(server)를 넘어서지 않도록 보장하는 매커니즘이다. 
 
-Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내는데 큰 영향을 미친다. 이건 마치 blocking code와 CompletableFuture을 사용한 
-
-In plain terms reactive programming is about non-blocking applications that are asynchronous and event-driven and require a small number of threads to scale vertically (i.e. within the JVM) rather than horizontally (i.e. through clustering).
-
-A key aspect of reactive applications is the concept of backpressure which is a mechanism to ensure producers don’t overwhelm consumers. For example in a pipeline of reactive components extending from the database to the HTTP response when the HTTP connection is too slow the data repository can also slow down or stop completely until network capacity frees up.
+Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내는데 큰 영향을 미친다. 이건 마치 절차적인 blocking code와 CompletableFuture을 사용한 멀티쓰레드를 이용한 것의 차이와 비슷하다. 
 
 
+### 23.1.2 Reactive API and Building Blocks
 
-Reactive programming also leads to a major shift from imperative to declarative async composition of logic. It is comparable to writing blocking code vs using the  `CompletableFuture`  from Java 8 to compose follow-up actions via lambda expressions.
+Spring Framework 5 embraces  [Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)  as the contract for communicating backpressure across async components and libraries. Reactive Streams is a specification created through industry collaboration that has also been adopted in Java 9 as  `java.util.concurrent.Flow`.
 
-For a longer introduction check the blog series  ["Notes on Reactive Programming"](https://spring.io/blog/2016/06/07/notes-on-reactive-programming-part-i-the-reactive-landscape)  by Dave Syer.
+The Spring Framework uses  [Reactor](https://projectreactor.io/)  internally for its own reactive support. Reactor is a Reactive Streams implementation that further extends the basic Reactive Streams  `Publisher`  contract with the  `Flux`  and  `Mono`  composable API types to provide declarative operations on data sequences of  `0..N`  and  `0..1`.
 
+The Spring Framework exposes  `Flux`  and  `Mono`  in many of its own reactive APIs. At the application level however, as always, Spring provides choice and fully supports the use of RxJava. For more on reactive types check the post  ["Understanding Reactive Types"](https://spring.io/blog/2016/04/19/understanding-reactive-types)  by Sebastien Deleuze.
+
+## [](https://docs.spring.io/spring-framework/docs/5.0.0.BUILD-SNAPSHOT/spring-framework-reference/html/web-reactive.html#web-reactive-feature-overview)23.2 Spring WebFlux Module
+
+Spring Framework 5 includes a new  `spring-webflux`  module. The module contains support for reactive HTTP and WebSocket clients as well as for reactive server web applications including REST, HTML browser, and WebSocket style interactions.
+
+### [](https://docs.spring.io/spring-framework/docs/5.0.0.BUILD-SNAPSHOT/spring-framework-reference/html/web-reactive.html#web-reactive-server)23.2.1 Server Side
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMDQ4MDc3NF19
+eyJoaXN0b3J5IjpbLTIwMzIwNTkyNzhdfQ==
 -->
