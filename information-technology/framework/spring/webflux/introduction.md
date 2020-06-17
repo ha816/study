@@ -1,4 +1,4 @@
-# webflux 
+# WebFlux 
 
 스프링 5부터 Spring Webflux를 통해 reactive Programming이 가능하게 되었습니다.
 
@@ -6,7 +6,7 @@ reactive programming은 non-blocking applications에 적용되는 프로그래�
 
 reactive applications을 이해하는 키는 backpressure이다. backpressure는 생산자(client)가 소비자(server)를 넘어서지 않도록 보장하는 매커니즘이다. 
 
-# webflux의 장단점
+## WebFlux의 장단점
 
 MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적이다. 특히 응답성이 많이 향상되므로 상호간 호출이 빈번한 MSA에서 더욱 좋다. ~~마지막으로, 새로운 기술을 활용하는 엘레강스한 개발자가 된 느낌을 받을 수 있다.~~
 
@@ -16,9 +16,11 @@ MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적이다.
 
 webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하지 않는 거의 대다수의 rdbms를 사용하는 경우 입니다.(r2dbc 제외) 아직까진 mysql 등의 rdbms도 지원되지 않습니다. Spring에서 지원하는 NoSQL은 MongoDB, Redis, Cassandra, Couchbase가 있습니다.
 
+# WebFlux Core
+
 ## Reactive Streams
 
-[Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)은 비동기/논블라킹 스트림 처리를 위한 명세입니다. 그리고 Reactor는 Reactive Streams의 실제 구현체 입니다. 그 밖에 다른 구현체로는 Rxjava, Akka Streams등이 있습니다. (사실 같은 스펙을 구현했기 때문에 구현체 끼리 비슷한 모양새와 사용법을 가집니다.)
+[Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)은 비동기/논블러킹(Async/Non- 스트림 처리를 위한 명세입니다. 그리고 Reactor는 Reactive Streams의 실제 구현체 입니다. 그 밖에 다른 구현체로는 Rxjava, Akka Streams등이 있습니다. (사실 같은 스펙을 구현했기 때문에 구현체 끼리 비슷한 모양새와 사용법을 가집니다.)
 
 ### MONO VS FLUX
 
@@ -46,6 +48,6 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzczNjI1ODMsLTExMjQ3NjA4NDAsMj
-AwODIxMjg2LDI1ODg1NzYzMl19
+eyJoaXN0b3J5IjpbMTkzNjQ1NjcwMiwtMTEyNDc2MDg0MCwyMD
+A4MjEyODYsMjU4ODU3NjMyXX0=
 -->
