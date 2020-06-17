@@ -1,7 +1,8 @@
 # webflux 
 
-webfl
-What is Reactive Programming?
+webflux에 대해 이해하기 전에 Reactive Programming이 무엇인지 먼저 공부해보자. 
+
+reactive programming은 non-blocking applications을 말하는데 비동기적이고 이벤트 드라이븐 하고 적은 수의 쓰레드를 필요로 한다.
 
 In plain terms reactive programming is about non-blocking applications that are asynchronous and event-driven and require a small number of threads to scale vertically (i.e. within the JVM) rather than horizontally (i.e. through clustering).
 
@@ -14,5 +15,5 @@ For a longer introduction check the blog series  ["Notes on Reactive Programming
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI0ODU5NzddfQ==
+eyJoaXN0b3J5IjpbMTE4ODM2MTY3NF19
 -->
