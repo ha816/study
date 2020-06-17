@@ -20,13 +20,18 @@ Spring framework는 flux와 mono를 많은 reactive API에서 노출하고 있�
 
 ## Spring WebFlux Module
 
-Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이 모듈은 reactive HTTP, WebSocket client, 더 나아가 server web applications
-Spring Framework 5 includes a new  `spring-webflux`  module. The module contains support for reactive HTTP and WebSocket clients as well as for reactive server web applications including REST, HTML browser, and WebSocket style interactions.
+Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이 모듈은 reactive HTTP, WebSocket client, 더 나아가 server web applications도 지원한다.
 
 ### Server side
 
+서버 단에서 WebFlux는 두 가지 프로그래밍 모델을 지원한다.
+
+-   Annotation-based with  `@Controller`  and the other annotations supported also with Spring MVC
+-   Functional, Java 8 lambda style routing and handling
+
+Both programming models are executed on the same reactive foundation that adapts non-blocking HTTP runtimes to the Reactive Streams API. The diagram below shows the server-side stack including traditional, Servlet-based Spring MVC on the left from the  `spring-webmvc`  module and also the reactive stack on the right from the  `spring-webflux`  module.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzg0NjMxMThdfQ==
+eyJoaXN0b3J5IjpbLTMwMDIwMzA0XX0=
 -->
