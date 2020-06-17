@@ -4,7 +4,7 @@ webflux에 대해 이해하기 전에 Reactive Programming이 무엇인지 먼�
 
 reactive programming은 non-blocking applications에 적용되는 프로그래밍을 말하는데, 비동기적이고 이벤트 드라이븐 하고 적은 수의 쓰레드를 필요로 한다. 
 
-reactive applications을 이해하는 키는 backpressure 
+reactive applications을 이해하는 키는 backpressure이다. backpressure는 생산자(client)가 소비자(server)를 넘어서지 않도록 보장하는 매커니즘이다. 
 
 In plain terms reactive programming is about non-blocking applications that are asynchronous and event-driven and require a small number of threads to scale vertically (i.e. within the JVM) rather than horizontally (i.e. through clustering).
 
@@ -17,5 +17,5 @@ For a longer introduction check the blog series  ["Notes on Reactive Programming
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjA5Nzg0MTldfQ==
+eyJoaXN0b3J5IjpbMTg3Nzk0ODY1MF19
 -->
