@@ -14,19 +14,6 @@ MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적이다.
 
 webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하지 않는 거의 대다수의 rdbms를 사용하는 경우 입니다.(r2dbc 제외) 아직까진 mysql 등의 rdbms도 지원되지 않습니다. Spring에서 지원하는 NoSQL은 MongoDB, Redis, Cassandra, Couchbase가 있습니다.
 
-# WebFlux Core
-
-'Spring WebFlux는 어떻게 적은 리소스로 많은 트래픽을 감당할까?'란 궁금증을 시작으로 여기까지 왔다. 이에 대한 답은 I/O를 Non Blockkng을 이용하여 잘 사용하는 것과 Request를 Event-Driven을 통해서 효율적으로 처리하기 때문에 가능하다.
-
-## Reactive Streams
-
-[Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)은 비동기/논블러킹(Async/Non-blocking) 스트림 처리를 위한 표준명세입니다. 그리고 Reactor는 Reactive Streams의 실제 구현체 입니다. 그 밖에 다른 구현체로는 Rxjava, Akka Streams등이 있습니다. (사실 같은 스펙을 구현했기 때문에 구현체 끼리 비슷한 모양새와 사용법을 가집니다.)
-
-### MONO VS FLUX
-
-MONO는 데이터 스트림이 하나 있거나 없거나 하는 경우에 사용된다. 반대로 데이터 스트림이 여러개인 경우 FLUX를 사용해야 한다. 
- 
-
 ### Server side
 
 서버 단에서 WebFlux는 두 가지 프로그래밍 모델을 지원한다.
@@ -50,7 +37,7 @@ MONO는 데이터 스트림이 하나 있거나 없거나 하는 경우에 사�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzE2OTA3MzUsLTIxMzA1NTkyNCwtNj
+eyJoaXN0b3J5IjpbLTExMTM5NTIxMDIsLTIxMzA1NTkyNCwtNj
 Y5OTg0MTksMTQzMDAwMzc3NCwtMTEyNDc2MDg0MCwyMDA4MjEy
 ODYsMjU4ODU3NjMyXX0=
 -->
