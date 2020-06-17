@@ -8,13 +8,12 @@ reactive applications을 이해하는 키는 backpressure이다. backpressure는
 
 Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내는데 큰 영향을 미친다. 이건 마치 절차적인 blocking code와 CompletableFuture을 사용한 멀티쓰레드를 이용한 것의 차이와 비슷하다. 
 
-## Reactive API and Building Blocks
+## Reactive Streams
 
 [Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)은 비동기/논블라킹 스트림 처리를 위한 명세입니다. 그리고 Reactor는 Reactive Streams의 실제 구현체 입니다. 그 밖에 다른 구현체로는 Rxjava, Akka Streams등이 있습니다. (사실 같은 스펙을 구현했기 때문에 구현체 끼리 비슷한 모양새와 사용법을 가집니다.)
 
-### FLUX
-
-### MONO
+### MONO VS FLUX
+ 
 
 ## Spring WebFlux Module
 
@@ -38,5 +37,5 @@ WebFlux can run on Servlet containers with support for the Servlet 3.1 Non-Block
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQzNzkxOTIyLDI1ODg1NzYzMl19
+eyJoaXN0b3J5IjpbMTg5NDUxNzE4OCwyNTg4NTc2MzJdfQ==
 -->
