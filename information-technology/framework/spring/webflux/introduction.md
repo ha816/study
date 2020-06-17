@@ -8,8 +8,7 @@ reactive applications을 이해하는 키는 backpressure이다. backpressure는
 
 Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내는데 큰 영향을 미친다. 이건 마치 절차적인 blocking code와 CompletableFuture을 사용한 멀티쓰레드를 이용한 것의 차이와 비슷하다. 
 
-
-### 23.1.2 Reactive API and Building Blocks
+## Reactive API and Building Blocks
 
 Spring Framework 5 embraces  [Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)  as the contract for communicating backpressure across async components and libraries. Reactive Streams is a specification created through industry collaboration that has also been adopted in Java 9 as  `java.util.concurrent.Flow`.
 
@@ -25,5 +24,5 @@ Spring Framework 5 includes a new  `spring-webflux`  module. The module contains
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzIwNTkyNzhdfQ==
+eyJoaXN0b3J5IjpbMTEwODczNzY3M119
 -->
