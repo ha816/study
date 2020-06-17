@@ -35,8 +35,10 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 위 그림은 왼쪽 블럭은 전통적인 서블릿 기반의 Spring MVC의 스택을 보여준다. 오른쪽 블럭에는 reactive stack을 보여주고 있다. 
 
+WebFlux can run on Servlet containers with support for the Servlet 3.1 Non-Blocking IO API as well as on other async runtimes such as Netty and Undertow. Each runtime is adapted to a reactive `ServerHttpRequest` and `ServerHttpResponse` exposing the body of the request and response as `Flux<DataBuffer>`, rather than `InputStream` and `OutputStream`, with reactive backpressure. REST-style JSON and XML serialization and deserialization is supported on top as a `Flux<Object>`, and so is HTML view rendering and Server-Sent Events.
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTkwODExOV19
+eyJoaXN0b3J5IjpbMjU4ODU3NjMyXX0=
 -->
