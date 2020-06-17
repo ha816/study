@@ -27,10 +27,6 @@ webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하�
 MONO는 데이터 스트림이 하나 있거나 없거나 하는 경우에 사용된다. 반대로 데이터 스트림이 여러개인 경우 FLUX를 사용해야 한다. 
  
 
-## Spring WebFlux Module
-
-Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이 모듈은 reactive HTTP, WebSocket client, 더 나아가 server web applications도 지원한다.
-
 ### Server side
 
 서버 단에서 WebFlux는 두 가지 프로그래밍 모델을 지원한다.
@@ -54,7 +50,7 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgyMTIxMDIxLC0yMTMwNTU5MjQsLTY2OT
-k4NDE5LDE0MzAwMDM3NzQsLTExMjQ3NjA4NDAsMjAwODIxMjg2
-LDI1ODg1NzYzMl19
+eyJoaXN0b3J5IjpbLTE3MzE2OTA3MzUsLTIxMzA1NTkyNCwtNj
+Y5OTg0MTksMTQzMDAwMzc3NCwtMTEyNDc2MDg0MCwyMDA4MjEy
+ODYsMjU4ODU3NjMyXX0=
 -->
