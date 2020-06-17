@@ -1,12 +1,10 @@
 # webflux 
 
-webflux에 대해 이해하기 전에 Reactive Programming이 무엇인지 먼저 공부해보자. 
+스프링 5부터 Spring Webflux를 통해 reactive Programming이 가능하게 되었습니다.
 
 reactive programming은 non-blocking applications에 적용되는 프로그래밍을 말하는데, 비동기적이고 이벤트 드라이븐 하고 적은 수의 쓰레드를 필요로 한다. 
 
 reactive applications을 이해하는 키는 backpressure이다. backpressure는 생산자(client)가 소비자(server)를 넘어서지 않도록 보장하는 매커니즘이다. 
-
-Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내는데 큰 영향을 미친다. 이건 마치 절차적인 blocking code와 CompletableFuture을 사용한 멀티쓰레드를 이용한 것의 차이와 비슷하다. 
 
 # webflux의 장단점
 
@@ -17,7 +15,6 @@ MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적이다.
 다른 단점으로는 스트림 기반이다보니 디버깅이 쉽지 않고, 개발자의 사고방식이 비동기 처리에 맞게 바뀌어야 한다. 
 
 webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하지 않는 거의 대다수의 rdbms를 사용하는 경우 입니다.(r2dbc 제외) 아직까진 mysql 등의 rdbms도 지원되지 않습니다. Spring에서 지원하는 NoSQL은 MongoDB, Redis, Cassandra, Couchbase가 있습니다.
-
 
 ## Reactive Streams
 
@@ -49,6 +46,6 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODkxMTM4NSwtMTEyNDc2MDg0MCwyMD
-A4MjEyODYsMjU4ODU3NjMyXX0=
+eyJoaXN0b3J5IjpbLTE5NzczNjI1ODMsLTExMjQ3NjA4NDAsMj
+AwODIxMjg2LDI1ODg1NzYzMl19
 -->
