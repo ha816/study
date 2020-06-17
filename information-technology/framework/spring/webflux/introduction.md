@@ -46,12 +46,15 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 # reference
 
+
+[https://share.navercorp.com/techtalk698/lecture/44750](https://share.navercorp.com/techtalk698/lecture/44750)
+
 [https://alwayspr.tistory.com/44](https://alwayspr.tistory.com/44)
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzA1NTkyNCwtNjY5OTg0MTksMTQzMD
-AwMzc3NCwtMTEyNDc2MDg0MCwyMDA4MjEyODYsMjU4ODU3NjMy
-XX0=
+eyJoaXN0b3J5IjpbMjgyMTIxMDIxLC0yMTMwNTU5MjQsLTY2OT
+k4NDE5LDE0MzAwMDM3NzQsLTExMjQ3NjA4NDAsMjAwODIxMjg2
+LDI1ODg1NzYzMl19
 -->
