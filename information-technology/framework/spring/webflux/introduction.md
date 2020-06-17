@@ -8,6 +8,12 @@ Reactive Programing에선 기본적으로 모든 것을 스트림(stream)으로 
 Reactive Programing 대표로는 JavaScript, RxJS등이 있습니다. 
 
 
+다시 돌아와, Spring Webflux는 
+n terms reactive programming is about non-blocking applications that are asynchronous and event-driven and require a small number of threads to scale vertically (i.e. within the JVM) rather than horizontally (i.e. through clustering).
+
+A key aspect of reactive applications is the concept of backpressure which is a mechanism to
+
+
 ## WebFlux의 장단점
 
 WebFlux는 MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적입니다. 특히 응답성이 많이 향상되므로 상호간 호출이 빈번한 MSA에서 더욱 좋다. ~~마지막으로, 새로운 기술을 활용하는 엘레강스한 개발자가 된 느낌을 받을 수 있다.~~
@@ -44,8 +50,8 @@ webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTc5NjI1MTMsLTE2NzUwOTc0MDIsMj
-E0MzkwMDExMCwtMTExMzk1MjEwMiwtMjEzMDU1OTI0LC02Njk5
-ODQxOSwxNDMwMDAzNzc0LC0xMTI0NzYwODQwLDIwMDgyMTI4Ni
-wyNTg4NTc2MzJdfQ==
+eyJoaXN0b3J5IjpbMTYxMjkyNzk2NiwtMTY3NTA5NzQwMiwyMT
+QzOTAwMTEwLC0xMTEzOTUyMTAyLC0yMTMwNTU5MjQsLTY2OTk4
+NDE5LDE0MzAwMDM3NzQsLTExMjQ3NjA4NDAsMjAwODIxMjg2LD
+I1ODg1NzYzMl19
 -->
