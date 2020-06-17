@@ -10,6 +10,7 @@ Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내
 
 # webflux의 장단점
 
+MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적이다. 특히 응답성이 향상되
 
 
 
@@ -43,6 +44,6 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0OTMxMDc1NCwyMDA4MjEyODYsMjU4OD
+eyJoaXN0b3J5IjpbMTkwNTU2MDQ1NywyMDA4MjEyODYsMjU4OD
 U3NjMyXX0=
 -->
