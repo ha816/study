@@ -1,11 +1,11 @@
 # WebFlux 
 
 스프링 5부터 Spring Webflux를 통해 reactive Programming이 가능하게 되었습니다.
-reactive programming은 non-blocking 비동기적이고 이벤트 드라이븐 하고 적은 수의 쓰레드를 필요로 한다. 
+reactive programming은 기본적으로 non-blocking 비동기적이고 이벤트 드라이븐 
 
 ## WebFlux의 장단점
 
-WebMSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적이다. 특히 응답성이 많이 향상되므로 상호간 호출이 빈번한 MSA에서 더욱 좋다. ~~마지막으로, 새로운 기술을 활용하는 엘레강스한 개발자가 된 느낌을 받을 수 있다.~~
+WebFlux는 MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적입니다. 특히 응답성이 많이 향상되므로 상호간 호출이 빈번한 MSA에서 더욱 좋다. ~~마지막으로, 새로운 기술을 활용하는 엘레강스한 개발자가 된 느낌을 받을 수 있다.~~
 
 여러 장점이 있지만 webflux의 사용은 사실 필수가 아니다. 심지어 Spring 내부에서도 반드시 써야하는건 아니라고 했다. 또 기존 servelet기반의 코드를 webflux로 머지하는 과정이 쉽지 않다. 따라서 무리하여 	webflux로 이관하는 것은 좋지 않으며, 새로운 서비스에 접목하는 것이 좋아 보인다.
 
@@ -37,7 +37,8 @@ webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTY0NjI5NCwyMTQzOTAwMTEwLC0xMT
-EzOTUyMTAyLC0yMTMwNTU5MjQsLTY2OTk4NDE5LDE0MzAwMDM3
-NzQsLTExMjQ3NjA4NDAsMjAwODIxMjg2LDI1ODg1NzYzMl19
+eyJoaXN0b3J5IjpbLTE2NzUwOTc0MDIsMjE0MzkwMDExMCwtMT
+ExMzk1MjEwMiwtMjEzMDU1OTI0LC02Njk5ODQxOSwxNDMwMDAz
+Nzc0LC0xMTI0NzYwODQwLDIwMDgyMTI4NiwyNTg4NTc2MzJdfQ
+==
 -->
