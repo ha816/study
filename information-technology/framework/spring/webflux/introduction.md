@@ -10,9 +10,9 @@ Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내
 
 ## Reactive API and Building Blocks
 
-Spring framework 5는 앞에서 비동기 컴포넌트와 라이브러리에서 사용되는  backpressure 기능을 위해 [Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)을 제공합니다.
+Spring framework 5는 비동기 컴포넌트와 라이브러리에서 사용되는  backpressure 기능을 위해 [Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)을 제공합니다.
 
-Reactive Streams은 스펙으로 자바 9의 java.util.concurrent.Flow. 에서 적용되었습니다.
+Reactor는 Reactive Streams의 실제 구현체 입니다.
 
 Spring framework는 [Reactor](https://projectreactor.io/)를 내부적으로 사용하며, Reactor는 Reactive Streams 스펙의 구현체 입니다. Reactor는 basic Reactive Streams `Publisher`  뿐만 아니라 복합형의 flux와 mono도 확장한다. 
 
@@ -40,5 +40,5 @@ WebFlux can run on Servlet containers with support for the Servlet 3.1 Non-Block
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4ODU3NjMyXX0=
+eyJoaXN0b3J5IjpbLTE1NTEzNDAzMjUsMjU4ODU3NjMyXX0=
 -->
