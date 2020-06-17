@@ -3,16 +3,7 @@
 스프링 5부터 Spring Webflux를 통해 Reactive Programming(RP)이 가능하게 되었습니다. Reactive Programming이란 바로 비동기 데이터 스트림들로 프로그래밍을 하는 것을 말한다.
 > Reactive programming is programming with asynchronous data streams.  
 
-Reactive Programing에선 기본적으로 모든 것을 스트림(stream)으로 봅니다. 전통적인 클릭 이벤트도 사실 빋
-
-
-In a way, this isn't anything new. Event buses or your typical click events are really an asynchronous event stream, on which you can observe and do some side effects. Reactive is that idea on steroids. You are able to create data streams of anything, not just from click and hover events. Streams are cheap and ubiquitous, anything can be a stream: variables, user inputs, properties, caches, data structures, etc. For example, imagine your Twitter feed would be a data stream in the same fashion that click events are. You can listen to that stream and react accordingly.
-
-
--   Reactive Programing은 기본적으로 모든 것을 스트림(stream)으로 본다. 이벤트, ajax call, 등 모든 데이터의 흐름을 시간순서에 의해 전달되어지는 스트림으로 처리한다. 즉, 스트림이란, 시간순서에 의해 전달되어진 값들의 collection 정도로 이해해 보자.
--   각각의 스트림은 새로 만들어(branch)져서 새로운 스트림이 될 수도 있고, 여러개의 스트림이 합쳐(merge) 질수 도 있다.
--   스트림은 map, filter과 같은 함수형 메소드를 이용하여, immutable하게 처리할 수 있다.
--   스트림을 listening 함으로써 데이터의 결과값을 얻는다. 이를 subscribe라고 표현한다.
+Reactive Programing에선 기본적으로 모든 것을 스트림(stream)으로 봅니다. 전통적인 클릭 이벤트도 사실 비동기 이벤트 스트림으로 볼 수 있습니다. 더 나아가 클릭, 호버와 같은 이벤트가 아닌 어떤 것으로든 스트림을 만들 수 있습니다. (변수, 사용자 입력 등)
 
 
 
@@ -50,7 +41,7 @@ webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5Njk4ODIxNiwtMTY3NTA5NzQwMiwyMT
+eyJoaXN0b3J5IjpbMjA0ODg2MjEzMywtMTY3NTA5NzQwMiwyMT
 QzOTAwMTEwLC0xMTEzOTUyMTAyLC0yMTMwNTU5MjQsLTY2OTk4
 NDE5LDE0MzAwMDM3NzQsLTExMjQ3NjA4NDAsMjAwODIxMjg2LD
 I1ODg1NzYzMl19
