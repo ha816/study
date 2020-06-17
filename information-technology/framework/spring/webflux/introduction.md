@@ -13,6 +13,8 @@ Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내
 [Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)은 비동기/논블라킹 스트림 처리를 위한 명세입니다. 그리고 Reactor는 Reactive Streams의 실제 구현체 입니다. 그 밖에 다른 구현체로는 Rxjava, Akka Streams등이 있습니다. (사실 같은 스펙을 구현했기 때문에 구현체 끼리 비슷한 모양새와 사용법을 가집니다.)
 
 ### MONO VS FLUX
+
+MONO는 데이터 스트림을 한번 또는 보내지 않는 경우를 말한다. 
  
 
 ## Spring WebFlux Module
@@ -37,5 +39,5 @@ WebFlux can run on Servlet containers with support for the Servlet 3.1 Non-Block
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDUxNzE4OCwyNTg4NTc2MzJdfQ==
+eyJoaXN0b3J5IjpbODY1Nzc0NjAsMjU4ODU3NjMyXX0=
 -->
