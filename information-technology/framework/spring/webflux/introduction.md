@@ -20,7 +20,10 @@ webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하�
 
 ## Reactive Streams
 
-[Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)은 비동기/논블러킹(Async/Non- 스트림 처리를 위한 명세입니다. 그리고 Reactor는 Reactive Streams의 실제 구현체 입니다. 그 밖에 다른 구현체로는 Rxjava, Akka Streams등이 있습니다. (사실 같은 스펙을 구현했기 때문에 구현체 끼리 비슷한 모양새와 사용법을 가집니다.)
+[Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)은 비동기/논블러킹(Async/Non-blocking) 스트림 처리를 위한 명세입니다. The purpose of Reactive Streams is to provide a standard for asynchronous stream processing with non-blocking backpressure.
+
+
+그리고 Reactor는 Reactive Streams의 실제 구현체 입니다. 그 밖에 다른 구현체로는 Rxjava, Akka Streams등이 있습니다. (사실 같은 스펙을 구현했기 때문에 구현체 끼리 비슷한 모양새와 사용법을 가집니다.)
 
 ### MONO VS FLUX
 
@@ -48,6 +51,6 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNjQ1NjcwMiwtMTEyNDc2MDg0MCwyMD
+eyJoaXN0b3J5IjpbMTMxOTI2ODIxMywtMTEyNDc2MDg0MCwyMD
 A4MjEyODYsMjU4ODU3NjMyXX0=
 -->
