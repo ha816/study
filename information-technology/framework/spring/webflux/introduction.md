@@ -14,7 +14,7 @@ Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내
 
 ### MONO VS FLUX
 
-MONO는 데이터 스트림을 한번 또는 보내지 않는 경우를 말한다. 
+MONO는 데이터 스트림이 하나 있거나 없거나 하는 경우에 사용된다. 반대로 데이터 스트림이 여러개인 경우 FLUX를 사용해야 한다. 
  
 
 ## Spring WebFlux Module
@@ -39,5 +39,5 @@ WebFlux can run on Servlet containers with support for the Servlet 3.1 Non-Block
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY1Nzc0NjAsMjU4ODU3NjMyXX0=
+eyJoaXN0b3J5IjpbMjAwODIxMjg2LDI1ODg1NzYzMl19
 -->
