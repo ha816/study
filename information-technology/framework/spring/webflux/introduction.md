@@ -44,10 +44,13 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 위 그림은 왼쪽 블럭은 전통적인 서블릿 기반의 Spring MVC의 스택을 보여준다. 오른쪽 블럭에는 reactive stack을 보여주고 있다. 
 
+# reference
+
+[https://alwayspr.tistory.com/44](https://alwayspr.tistory.com/44)
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDAwMzc3NCwtMTEyNDc2MDg0MCwyMD
-A4MjEyODYsMjU4ODU3NjMyXX0=
+eyJoaXN0b3J5IjpbLTY2OTk4NDE5LDE0MzAwMDM3NzQsLTExMj
+Q3NjA4NDAsMjAwODIxMjg2LDI1ODg1NzYzMl19
 -->
