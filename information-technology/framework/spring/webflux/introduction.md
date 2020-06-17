@@ -33,9 +33,12 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 ![enter image description here](https://docs.spring.io/spring-framework/docs/5.0.0.BUILD-SNAPSHOT/spring-framework-reference/html/images/webflux-overview.png)
 
+왼쪽 블럭은 전통적인 서블릿 기반의 Spring MVC의 스택을 보여준다. 또reactive stack은 오른쪽의
+
+
 The diagram below shows the server-side stack including traditional, Servlet-based Spring MVC on the left from the  `spring-webmvc`  module and also the reactive stack on the right from the  `spring-webflux`  module.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzEyMTEwMl19
+eyJoaXN0b3J5IjpbNDg5MzAxMDg5XX0=
 -->
