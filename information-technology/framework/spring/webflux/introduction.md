@@ -12,9 +12,11 @@ Reactive programming 또한 로직의 선언적 비동기 구성을 이끌어내
 
 Spring framework 5는 앞에서 비동기 컴포넌트와 라이브러리에서 사용되는  backpressure 기능을 위해 [Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm#reactive-streams)을 제공합니다.
 
-Reactive Streams은 일종의 스펙으로 자바 9의 java.util.concurrent.Flow. 에서 적용되었습니다.
+Reactive Streams은 스펙으로 자바 9의 java.util.concurrent.Flow. 에서 적용되었습니다.
 
-Spring framework는 The Spring Framework uses  [Reactor](https://projectreactor.io/)  internally for its own reactive support. Reactor is a Reactive Streams implementation that further extends the basic Reactive Streams  `Publisher`  contract with the  `Flux`  and  `Mono`  composable API types to provide declarative operations on data sequences of  `0..N`  and  `0..1`.
+Spring framework는 [Reactor](https://projectreactor.io/)를 내부적으로 사용하며, Reactor는 Reactive Streams 스펙의 구현체 입니다. 
+
+internally for its own reactive support. Reactor is a Reactive Streams implementation that further extends the basic Reactive Streams  `Publisher`  contract with the  `Flux`  and  `Mono`  composable API types to provide declarative operations on data sequences of  `0..N`  and  `0..1`.
 
 The Spring Framework exposes  `Flux`  and  `Mono`  in many of its own reactive APIs. At the application level however, as always, Spring provides choice and fully supports the use of RxJava. For more on reactive types check the post  ["Understanding Reactive Types"](https://spring.io/blog/2016/04/19/understanding-reactive-types)  by Sebastien Deleuze.
 
@@ -26,5 +28,5 @@ Spring Framework 5 includes a new  `spring-webflux`  module. The module contains
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNDQ3NTcxOV19
+eyJoaXN0b3J5IjpbLTExNjA1OTk5NDJdfQ==
 -->
