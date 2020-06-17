@@ -14,7 +14,7 @@ MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적이다.
 
 여러 장점이 있지만 webflux의 사용은 사실 필수가 아니다. 심지어 Spring 내부에서도 반드시 써야하는건 아니라고 했다. 
 
-기존 servelet기반의 코드를 we
+또 기존 servelet기반의 코드를 webflux로 머지하는 과정이 쉽지 않다. 따라서 무리하여 	webflux로 머지를 하는 것은 비관적이며, 새
 
 
 
@@ -48,6 +48,6 @@ Spring Framework 5에선 spring-webflux라는 새로운 모듈이 나왔다. 이
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMzg5NDc3NywyMDA4MjEyODYsMjU4OD
-U3NjMyXX0=
+eyJoaXN0b3J5IjpbLTI5MTcwNjEzLDIwMDgyMTI4NiwyNTg4NT
+c2MzJdfQ==
 -->
