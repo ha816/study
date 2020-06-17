@@ -1,8 +1,7 @@
 # WebFlux 
 
 스프링 5부터 Spring Webflux를 통해 reactive Programming이 가능하게 되었습니다.
-
-reactive programming은 non-blocking applications에 적용되는 프로그래밍을 말하는데, 비동기적이고 이벤트 드라이븐 하고 적은 수의 쓰레드를 필요로 한다. 
+reactive programming은 non-blocking 비동기적이고 이벤트 드라이븐 하고 적은 수의 쓰레드를 필요로 한다. 
 
 ## WebFlux의 장단점
 
@@ -38,7 +37,7 @@ webflux를 사용할 수 없는 경우가 있는데  non-blocking을 지원하�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MzkwMDExMCwtMTExMzk1MjEwMiwtMj
-EzMDU1OTI0LC02Njk5ODQxOSwxNDMwMDAzNzc0LC0xMTI0NzYw
-ODQwLDIwMDgyMTI4NiwyNTg4NTc2MzJdfQ==
+eyJoaXN0b3J5IjpbMTE3MDI3MjM0OCwyMTQzOTAwMTEwLC0xMT
+EzOTUyMTAyLC0yMTMwNTU5MjQsLTY2OTk4NDE5LDE0MzAwMDM3
+NzQsLTExMjQ3NjA4NDAsMjAwODIxMjg2LDI1ODg1NzYzMl19
 -->
