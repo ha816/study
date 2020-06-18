@@ -10,7 +10,6 @@ Reactive Programing에선 기본적으로 모든 것을 스트림(stream)으로 
 ## Features
 
 
-
 * WebFlux는 MSA와 같이 한정된 작은 자원을 써야할 상황에서 효율적입니다. 
 	* 특히 응답성이 많이 향상되므로 상호간 호출이 빈번한 MSA에서 더욱 좋다고 알려져있습니다. 
 
@@ -44,8 +43,8 @@ WebFlux의 사용은 사실 필수가 아니라고 합니다. (심지어 Spring�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjYxNzM0MjgsMTgzNTE1NjQwMSwtMT
-Y3NTA5NzQwMiwyMTQzOTAwMTEwLC0xMTEzOTUyMTAyLC0yMTMw
-NTU5MjQsLTY2OTk4NDE5LDE0MzAwMDM3NzQsLTExMjQ3NjA4ND
-AsMjAwODIxMjg2LDI1ODg1NzYzMl19
+eyJoaXN0b3J5IjpbLTIwNTkxMDcyNzAsLTIwMjYxNzM0MjgsMT
+gzNTE1NjQwMSwtMTY3NTA5NzQwMiwyMTQzOTAwMTEwLC0xMTEz
+OTUyMTAyLC0yMTMwNTU5MjQsLTY2OTk4NDE5LDE0MzAwMDM3Nz
+QsLTExMjQ3NjA4NDAsMjAwODIxMjg2LDI1ODg1NzYzMl19
 -->
