@@ -61,6 +61,8 @@ Maven의 build lifecycle의 개념은 Gradle’s  [lifecycle tasks](https://docs
 
 ### [4. Gradle is extensible in more ways than one](https://docs.gradle.org/current/userguide/what_is_gradle.html#4_gradle_is_extensible_in_more_ways_than_one)
 
+Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그럴일이 별로 없다. 대부분의 build	 
+
 It would be great if you could build your project using only the build logic bundled with Gradle, but that’s rarely possible. Most builds have some special requirements that mean you need to add custom build logic.
 
 Gradle provides several mechanisms that allow you to extend it, such as:
@@ -89,6 +91,6 @@ Gradle provides several mechanisms that allow you to extend it, such as:
 ### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)[5. Build scripts operate against an API](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MTgwNDc5OSwtOTA1NTI0OTQyLC04NT
+eyJoaXN0b3J5IjpbMTkzMDU1ODExNSwtOTA1NTI0OTQyLC04NT
 EyODg3NTUsMTkyMDY4MjMwN119
 -->
