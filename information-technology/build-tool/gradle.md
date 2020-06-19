@@ -6,10 +6,10 @@ Gradle은 불필요한 작업을 피함으로써 높은 성능을 보입니다. 
 
 Gradle은 JVM에 기반을 두고 있습니다. 따라서 JDK(Java Development Kit)이 반드시 필요합니다. 따라서 Java platform에 친숙한 사람에게는 익숙합니다. 그러나 Gradle은 JVM 프로젝트 빌드에만 국한되지 않으며, native 프로젝트 빌드도 지원합니다.
 
-Gradle은 Maven's book의 잎을 따왔고 일반적인 타입의 
-Conventions
+Gradle은 Maven의 Convetions을 가져왔고 일반적인 타입의 프로젝트를 쉽게 빌드할 수 있습니다. 적합한 플러그인을 적용하여 쉽게 빌드가 가능합니다. 
 
-Gradle takes a leaf out of Maven’s book and makes common types of projects — such as Java projects — easy to build by implementing conventions. Apply the appropriate plugins and you can easily end up with slim build scripts for many projects. But these conventions don’t limit you: Gradle allows you to override them, add your own tasks, and make many other customizations to your convention-based builds.
+Gradle을 사용하면 쉽게 
+
 
 Extensibility
 
@@ -127,5 +127,5 @@ Yet there is one area in which it is useful to view a build script as executable
 As Gradle runs on the JVM, build scripts can also use the standard  [Java API](https://docs.oracle.com/javase/8/docs/api). Groovy build scripts can additionally use the Groovy APIs, while Kotlin build scripts can use the Kotlin ones.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2Mzg2NDM0MywxOTIwNjgyMzA3XX0=
+eyJoaXN0b3J5IjpbLTExNTczMDg1MjYsMTkyMDY4MjMwN119
 -->
