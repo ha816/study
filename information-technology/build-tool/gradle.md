@@ -36,7 +36,9 @@ Tasks는 아래 Actions, Inputs, Outputs로 구성됩니다.
 
 사실, 위의 모든 것은 task가 해야할것에 따라 선택적이다. 예를 들어 [standard lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks) 과 같은 몇몇의 tasks는 어떤 actions도 가지지 않는다. 단지 편리하게 다수의 tasks를 묶는 역할만을 한다. 
 
-필요로하는 특정 task를 골라 돌리면,
+필요로하는 특정 task를 골라 돌리면, task를 정의하기 위한 시간을 아낄 수 있다. 만약 unit test를 돌려보고 싶다면, `test` task를 찾으면 됩니다. 만약 애플리케이션을 package하고 싶다면
+
+
 You choose which task to run. Save time by specifying the task that does what you need, but no more than that. If you just want to run the unit tests, choose the task that does that — typically  `test`. If you want to package an application, most builds have an  `assemble`  task for that.
 
 One last thing: Gradle’s  [incremental build](https://docs.gradle.org/current/userguide/more_about_tasks.html#sec:up_to_date_checks)  support is robust and reliable, so keep your builds running fast by avoiding the  `clean`  task unless you actually do want to perform a clean.
@@ -44,5 +46,5 @@ One last thing: Gradle’s  [incremental build](https://docs.gradle.org/current/
 ### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)[3. Gradle has several fixed build phases](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzkwNzY3NDYsMTkyMDY4MjMwN119
+eyJoaXN0b3J5IjpbLTE2ODkyNjk5MDAsMTkyMDY4MjMwN119
 -->
