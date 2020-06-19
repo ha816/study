@@ -8,24 +8,6 @@ Gradle은 JVM에 기반을 두고 있습니다. 따라서 JDK(Java Development K
 
 Gradle은 Maven의 Convetions을 가져왔고 일반적인 타입의 프로젝트를 쉽게 빌드할 수 있습니다. 적합한 플러그인을 적용하여 쉽게 빌드가 가능합니다. 
 
-Gradle을 사용하면 쉽게 
-
-
-Extensibility
-
-You can readily extend Gradle to provide your own task types or even build model. See the Android build support for an example of this: it adds many new build concepts such as flavors and build types.
-
-IDE support
-
-Several major IDEs allow you to import Gradle builds and interact with them: Android Studio, IntelliJ IDEA, Eclipse, and NetBeans. Gradle also has support for generating the solution files required to load a project into Visual Studio.
-
-Insight
-
-[Build scans](https://scans.gradle.com/)  provide extensive information about a build run that you can use to identify build issues. They are particularly good at helping you to identify problems with a build’s performance. You can also share build scans with others, which is particularly useful if you need to ask for advice in fixing an issue with the build.
-
-## [](https://docs.gradle.org/current/userguide/what_is_gradle.html#five_things)[Five things you need to know about Gradle](https://docs.gradle.org/current/userguide/what_is_gradle.html#five_things)
-
-Gradle is a flexible and powerful build tool that can easily feel intimidating when you first start. However, understanding the following core principles will make Gradle much more approachable and you will become adept with the tool before you know it.
 
 ### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)[1. Gradle is a general-purpose build tool](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)
 
@@ -127,5 +109,5 @@ Yet there is one area in which it is useful to view a build script as executable
 As Gradle runs on the JVM, build scripts can also use the standard  [Java API](https://docs.oracle.com/javase/8/docs/api). Groovy build scripts can additionally use the Groovy APIs, while Kotlin build scripts can use the Kotlin ones.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTczMDg1MjYsMTkyMDY4MjMwN119
+eyJoaXN0b3J5IjpbLTEzNTU4MDcyOTEsMTkyMDY4MjMwN119
 -->
