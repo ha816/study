@@ -9,13 +9,13 @@ Gradle은 JVM에 기반을 두고 있습니다. 따라서 JDK(Java Development K
 Gradle은 Maven의 Convetions을 가져왔고 일반적인 타입의 프로젝트를 쉽게 빌드할 수 있습니다. 적합한 플러그인을 적용하여 쉽게 빌드가 가능합니다. 
 
 
-### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)[1. Gradle is a general-purpose build tool](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)
+### [1. Gradle is a general-purpose build tool](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)
 
-Gradle allows you to build any software, because it makes few assumptions about what you’re trying to build or how it should be done. The most notable restriction is that dependency management currently only supports Maven- and Ivy-compatible repositories and the filesystem.
+Gradle을 사용하는데 큰 제약은 없지만, 가장 주의할 제약은 의존성 관리이다. 의존성 관리는 현재 Maven과 dependency management Ivy-compatiblecurrently only supports Maven- and Ivy-compatible repositories and the filesystem.
 
 This doesn’t mean you have to do a lot of work to create a build. Gradle makes it easy to build common types of project — say Java libraries — by adding a layer of conventions and prebuilt functionality through  [_plugins_](https://docs.gradle.org/current/userguide/plugins.html#plugins). You can even create and publish custom plugins to encapsulate your own conventions and build functionality.
 
 ### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#the_core_model_is_based_on_tasks)[2. The core model is based on tasks](https://docs.gradle.org/current/userguide/what_is_gradle.html#the_core_model_is_based_on_tasks)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzc4MzcwODYsMTkyMDY4MjMwN119
+eyJoaXN0b3J5IjpbMjAzNzA0NDkzOSwxOTIwNjgyMzA3XX0=
 -->
