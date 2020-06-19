@@ -55,15 +55,17 @@ Gradle이  Initialization, Configuration, Execution의 세 단계로 build scrip
 Apache Maven terminology(용어)에 빗대어 보자면, Gradle의 build phase는 Maven’s phases와는 다릅니다. Maven은 phases를 build execution을 다수의 stages로 나누기 위해 사용한다. Maven의 phases를 Gradle의 task graph와 유사한 역할을 하지만, 유연함이 떨어집니다.
 Maven의 build lifecycle의 개념은 Gradle’s  [lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks) 보다 느슨하게 비슷합니다.
 
-잘 디자인된 build scripts는 
+잘 디자인된 build scripts는 명령형 로직보다 선언적 설정으로 구성됩니다.
+>Well-designed build scripts consist mostly of  [declarative configuration rather than imperative logic](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts). 
 
+설정은 서
 
-Well-designed build scripts consist mostly of  [declarative configuration rather than imperative logic](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts). That configuration is understandably evaluated during the configuration phase. Even so, many such builds also have task actions — for example via  `doLast {}`  and  `doFirst {}`  blocks — which are evaluated during the execution phase. This is important because code evaluated during the configuration phase won’t see changes that happen during the execution phase.
+That configuration is understandably evaluated during the configuration phase. Even so, many such builds also have task actions — for example via  `doLast {}`  and  `doFirst {}`  blocks — which are evaluated during the execution phase. This is important because code evaluated during the configuration phase won’t see changes that happen during the execution phase.
 
 Another important aspect of the configuration phase is that everything involved in it is evaluated  _every time the build runs_. That is why it’s best practice to  [avoid expensive work during the configuration phase](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:minimize_logic_executed_configuration_phase).  [Build scans](https://scans.gradle.com/)  can help you identify such hotspots, among other things.
 
 ###
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4ODkwMTI3MywtOTA1NTI0OTQyLC04NT
-EyODg3NTUsMTkyMDY4MjMwN119
+eyJoaXN0b3J5IjpbLTEyNjkzNTQsLTkwNTUyNDk0MiwtODUxMj
+g4NzU1LDE5MjA2ODIzMDddfQ==
 -->
