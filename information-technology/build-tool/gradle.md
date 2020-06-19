@@ -1,7 +1,8 @@
-# 
+# Gradle 
 
+Gradle is an open-source [build automation](https://en.wikipedia.org/wiki/Build_automation) tool that is designed to be flexible enough to build almost any type of software. 
 
-Gradle is an open-source  [build automation](https://en.wikipedia.org/wiki/Build_automation)  tool that is designed to be flexible enough to build almost any type of software. The following is a high-level overview of some of its most important features:
+# Core
 
 High performance
 
@@ -135,5 +136,5 @@ Yet there is one area in which it is useful to view a build script as executable
 As Gradle runs on the JVM, build scripts can also use the standard  [Java API](https://docs.oracle.com/javase/8/docs/api). Groovy build scripts can additionally use the Groovy APIs, while Kotlin build scripts can use the Kotlin ones.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDczNDYyMDg5XX0=
+eyJoaXN0b3J5IjpbLTE0NTYxNDg4NDFdfQ==
 -->
