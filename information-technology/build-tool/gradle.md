@@ -20,7 +20,10 @@ Gradle은 tasks로 구성된 Directed Acyclic Graphs (DAGs)로 빌드를 모델�
 
 ![Example task graphs](https://docs.gradle.org/current/userguide/img/task-dag-examples.png)
 
-위 두 그림은 task graphs의 예제이 one abstract and the other concrete, with the dependencies between the tasks represented as arrows:
+위 두 그림은 task graphs의 예제입니다. 화살은 task간의 의존성을 나타냅니다.
+왼쪽 그림은 추상적이고 오른쪽은 실제 구현입니다.
+
+one abstract and the other concrete, with the dependencies between the tasks represented as arrows:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAxMDkzMjgxLDE5MjA2ODIzMDddfQ==
+eyJoaXN0b3J5IjpbOTQ3NjM4MjM2LDE5MjA2ODIzMDddfQ==
 -->
