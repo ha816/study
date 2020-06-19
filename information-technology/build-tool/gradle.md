@@ -23,7 +23,7 @@ Gradle은 tasks로 구성된 Directed Acyclic Graphs (DAGs)로 빌드를 모델�
 위 두 그림은 task graphs의 예제입니다. 화살은 task간의 의존성을 나타냅니다.
 왼쪽 그림은 추상적이고 오른쪽은 실제 구현입니다.
 
-대부분 어떤 빌드 과정도 이런식으로 task 그래프로 모델ㄹ
+대부분 어떤 빌드 과정도 이런식으로 task 그래프로 모델링될 수 있습니다. 그리고 이것이 Gradle이 유연해질 수 있는 이유 입니다. 그리고 task 그래프는 플러그 인과 독자적인 build 스크립트, 
 Almost any build process can be modeled as a graph of tasks in this way, which is one of the reasons why Gradle is so flexible. And that task graph can be defined by both plugins and your own build scripts, with tasks linked together via the  [task dependency mechanism](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies).
 
 Tasks themselves consist of:
@@ -44,5 +44,5 @@ One last thing: Gradle’s  [incremental build](https://docs.gradle.org/current/
 ### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)[3. Gradle has several fixed build phases](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDg1Nzk4MzAsMTkyMDY4MjMwN119
+eyJoaXN0b3J5IjpbLTExNjExMjI0NjIsMTkyMDY4MjMwN119
 -->
