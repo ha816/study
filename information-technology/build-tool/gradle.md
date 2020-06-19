@@ -81,7 +81,9 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 	* Gradle allows you to introduce new concepts into a build beyond tasks, files and dependency configurations. You can see this with most language plugins, which add the concept of  [_source sets_](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)  to a build. Appropriate modeling of a build process can greatly improve a build’s ease of use and its efficiency.
 
 
+[https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NjYyNjgzMSwtOTA1NTI0OTQyLC04NT
-EyODg3NTUsMTkyMDY4MjMwN119
+eyJoaXN0b3J5IjpbLTg5MzgxMTk1NCwyMDg2NjI2ODMxLC05MD
+U1MjQ5NDIsLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
 -->
