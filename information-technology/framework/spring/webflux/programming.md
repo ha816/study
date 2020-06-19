@@ -284,7 +284,32 @@ For more see  [sample tests](https://github.com/spring-projects/spring-framework
 https://docs.spring.io/spring-framework/docs/5.0.0.BUILD-SNAPSHOT/spring-framework-reference/html/web-reactive.html
 
 
+## Spring Framework
+
+  
+
+Servlet Stack에선 HTTP 요청이 오면 Queue에 누적되고, Thread pool이 수용할 수 있는 수(thread pool size)의 요청까지만 동시적으로 처리합니다. (당연히 처리되지 못한 요청은 Queue에서 대기합니다)
+
+즉 **하나의 요청은 하나의 Thread에 대응하여 처리하게 됩니다**. (one request per thread model)
+
+Thread를 생성하는 비용이 크기 때문에 Thread pool에서 Thread를 미리 생성하고 재사용하는 방식으로 동작합니다. Tomcat은 기본설정으로 200개의 Thread Pool Size를 가집니다.
+
+  
+
+그런데 만약 이 Thread Pool Size를 초과하는 대량의 트래픽이 지속적으로 들어오면 어떻게 될까요?
+
+바로 **Thread pool hell** 현상이 발생하게 됩니다. 처리되지 못한 요청건들의 처리시간이 늦어지며 대기시간이 늘어납니다.
+
+![](https://image.slidesharecdn.com/theplayframeworkatlinkedin-final-130604033451-phpapp01/95/the-play-framework-at-linkedin-8-638.jpg?cb=1387132710)
+
+이 현상의 대처법으로 가장 간단하게는 Scale In 또는 Scale Out으로 서버의 처리량을 키우면 되겠지만, 보다 근본적으로 원인을 생각해보겠습니다.
+
+일반적으로 Throutput의 Bottleneck은 DB, Network 등의 I/O가 일어나는 작업입니다.
+
+앞서 설명했듯이, Blocking 데이터를 읽는 동안 CPU가 아무 일도 할 수가 없고, Synchronous Non-Blokcing은 polling 방식이라 불필요하게 CPU 자원를 소비합니다.
+
+Asynchronous Non-Blokcing I/O는 가장 효율적인 방식으로 들어온 요청을 처리하기 때문에, Spring Framework에서도 이 방식을 활용할 수 있는 기술을 만들었습니다. 그것이 바로 Spring WebFlux입니다.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0ODUzMTMyMV19
+eyJoaXN0b3J5IjpbLTE5OTUwMDEwMDYsLTY0ODUzMTMyMV19
 -->
