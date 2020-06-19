@@ -58,14 +58,37 @@ Maven의 build lifecycle의 개념은 Gradle’s  [lifecycle tasks](https://docs
 잘 디자인된 build scripts는 명령형 로직보다 선언적 설정으로 구성됩니다.
 >Well-designed build scripts consist mostly of  [declarative configuration rather than imperative logic](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts). 
 
-설정은 configuration phase동안 평가됩니다. 그렇지만
 
-That configuration is understandably evaluated during the configuration phase. Even so, many such builds also have task actions — for example via  `doLast {}`  and  `doFirst {}`  blocks — which are evaluated during the execution phase. This is important because code evaluated during the configuration phase won’t see changes that happen during the execution phase.
+### [4. Gradle is extensible in more ways than one](https://docs.gradle.org/current/userguide/what_is_gradle.html#4_gradle_is_extensible_in_more_ways_than_one)
 
-Another important aspect of the configuration phase is that everything involved in it is evaluated  _every time the build runs_. That is why it’s best practice to  [avoid expensive work during the configuration phase](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:minimize_logic_executed_configuration_phase).  [Build scans](https://scans.gradle.com/)  can help you identify such hotspots, among other things.
+It would be great if you could build your project using only the build logic bundled with Gradle, but that’s rarely possible. Most builds have some special requirements that mean you need to add custom build logic.
 
-###
+Gradle provides several mechanisms that allow you to extend it, such as:
+
+-   [Custom task types](https://docs.gradle.org/current/userguide/custom_tasks.html).
+    
+    When you want the build to do some work that an existing task can’t do, you can simply write your own task type. It’s typically best to put the source file for a custom task type in the  [_buildSrc_](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources)  directory or in a packaged plugin. Then you can use the custom task type just like any of the Gradle-provided ones.
+    
+-   Custom task actions.
+    
+    You can attach custom build logic that executes before or after a task via the  [Task.doFirst()](https://docs.gradle.org/current/dsl/org.gradle.api.Task.html#org.gradle.api.Task:doFirst(org.gradle.api.Action))  and  [Task.doLast()](https://docs.gradle.org/current/dsl/org.gradle.api.Task.html#org.gradle.api.Task:doLast(org.gradle.api.Action))  methods.
+    
+-   [Extra properties](https://docs.gradle.org/current/userguide/writing_build_scripts.html#sec:extra_properties)  on projects and tasks.
+    
+    These allows you to add your own properties to a project or task that you can then use from your own custom actions or any other build logic. Extra properties can even be applied to tasks that aren’t explicitly created by you, such as those created by Gradle’s core plugins.
+    
+-   Custom conventions.
+    
+    Conventions are a powerful way to simplify builds so that users can understand and use them more easily. This can be seen with builds that use standard project structures and naming conventions, such as  [Java builds](https://docs.gradle.org/current/userguide/building_java_projects.html#building_java_projects). You can write your own plugins that provide conventions — they just need to configure default values for the relevant aspects of a build.
+    
+-   [A custom model](https://guides.gradle.org/implementing-gradle-plugins/#modeling_dsl_like_apis).
+    
+    Gradle allows you to introduce new concepts into a build beyond tasks, files and dependency configurations. You can see this with most language plugins, which add the concept of  [_source sets_](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)  to a build. Appropriate modeling of a build process can greatly improve a build’s ease of use and its efficiency.
+    
+
+### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)[5. Build scripts operate against an API](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTUxMjEwNywtOTA1NTI0OTQyLC04NT
+eyJoaXN0b3J5IjpbMjA3MTgwNDc5OSwtOTA1NTI0OTQyLC04NT
 EyODg3NTUsMTkyMDY4MjMwN119
 -->
