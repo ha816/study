@@ -11,11 +11,15 @@ Gradle은 Maven의 Convetions을 가져왔고 일반적인 타입의 프로젝�
 
 ### [1. Gradle is a general-purpose build tool](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)
 
-Gradle을 사용하는데 큰 제약은 없지만, 가장 주의할 제약은 의존성 관리이다. 의존성 관리는 현재 Maven과 dependency management Ivy-compatiblecurrently only supports Maven- and Ivy-compatible repositories and the filesystem.
+Gradle을 사용하는데 큰 제약은 없지만, 가장 주의할 제약은 의존성 관리이다. 의존성 관리는 현재 Maven의 dependency management와 Ivy-compatible 만 지원한다.
 
-This doesn’t mean you have to do a lot of work to create a build. Gradle makes it easy to build common types of project — say Java libraries — by adding a layer of conventions and prebuilt functionality through  [_plugins_](https://docs.gradle.org/current/userguide/plugins.html#plugins). You can even create and publish custom plugins to encapsulate your own conventions and build functionality.
 
-### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#the_core_model_is_based_on_tasks)[2. The core model is based on tasks](https://docs.gradle.org/current/userguide/what_is_gradle.html#the_core_model_is_based_on_tasks)
+### [2. The core model is based on tasks](https://docs.gradle.org/current/userguide/what_is_gradle.html#the_core_model_is_based_on_tasks)
+
+Gradle 모델은 Directed Acyclic Graphs (DAGs) of tasks (units of work)
+Gradle models its builds as Directed Acyclic Graphs (DAGs) of tasks (units of work). What this means is that a build essentially configures a set of tasks and wires them together — based on their dependencies — to create that DAG. Once the task graph has been created, Gradle determines which tasks need to be run in which order and then proceeds to execute them.
+
+This diagram shows two example task graphs, one abstract and the other concrete, with the dependencies between the tasks represented as arrows:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzA0NDkzOSwxOTIwNjgyMzA3XX0=
+eyJoaXN0b3J5IjpbLTEwMTQ0NDYxMTAsMTkyMDY4MjMwN119
 -->
