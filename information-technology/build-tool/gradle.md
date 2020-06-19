@@ -52,9 +52,9 @@ Gradle이  Initialization, Configuration, Execution의 세 단계로 build scrip
 * Execution
 	* Runs the tasks selected at the end of the configuration phase.
     
-Apache Maven terminology(용어)에 빗대어 보자면, Gradle의 build phase는 Maven’s phases와는 다르다. Maven은 phases를 에 사용한다.
+Apache Maven terminology(용어)에 빗대어 보자면, Gradle의 build phase는 Maven’s phases와는 다르다. Maven은 phases를 build execution을 다수의 stages로 나누기 위해 사용한다. Maven의 phases를 Gradle의 task graph와 유사한 역할을 하지만, 유연함이 떨어집니다.
 
-Maven uses its phases to divide the build execution into multiple stages. They serve a similar role to Gradle’s task graph, although less flexibly.
+They serve a similar role to Gradle’s task graph, although less flexibly.
 
 Maven’s concept of a build lifecycle is loosely similar to Gradle’s  [lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks).
 
@@ -64,6 +64,6 @@ Another important aspect of the configuration phase is that everything involved 
 
 ###
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MzE0NTUzMCwtODUxMjg4NzU1LDE5Mj
+eyJoaXN0b3J5IjpbMTQ1OTY2NTA3MywtODUxMjg4NzU1LDE5Mj
 A2ODIzMDddfQ==
 -->
