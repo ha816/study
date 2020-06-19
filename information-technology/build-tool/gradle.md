@@ -79,11 +79,9 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
     
 * [A custom model](https://guides.gradle.org/implementing-gradle-plugins/#modeling_dsl_like_apis)
 	* Gradle allows you to introduce new concepts into a build beyond tasks, files and dependency configurations. You can see this with most language plugins, which add the concept of  [_source sets_](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)  to a build. Appropriate modeling of a build process can greatly improve a build’s ease of use and its efficiency.
-    
 
-### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)[5. Build scripts operate against an API](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjU1MjY1LC05MDU1MjQ5NDIsLTg1MT
-I4ODc1NSwxOTIwNjgyMzA3XX0=
+eyJoaXN0b3J5IjpbMjA4NjYyNjgzMSwtOTA1NTI0OTQyLC04NT
+EyODg3NTUsMTkyMDY4MjMwN119
 -->
