@@ -16,10 +16,10 @@ Gradle을 사용하는데 큰 제약은 없지만, 가장 주의할 제약은 �
 
 ### [2. The core model is based on tasks](https://docs.gradle.org/current/userguide/what_is_gradle.html#the_core_model_is_based_on_tasks)
 
-Gradle 모델은 Directed Acyclic Graphs (DAGs) of tasks (units of work)
-Gradle models its builds as Directed Acyclic Graphs (DAGs) of tasks (units of work). What this means is that a build essentially configures a set of tasks and wires them together — based on their dependencies — to create that DAG. Once the task graph has been created, Gradle determines which tasks need to be run in which order and then proceeds to execute them.
+Gradle 작업의 단위들로 구성된 Directed Acyclic Graphs (DAGs)로 빌드를 모델링한다. 한 빌드는 필수적으로 작업으
+What this means is that a build essentially configures a set of tasks and wires them together — based on their dependencies — to create that DAG. Once the task graph has been created, Gradle determines which tasks need to be run in which order and then proceeds to execute them.
 
 This diagram shows two example task graphs, one abstract and the other concrete, with the dependencies between the tasks represented as arrows:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTQ0NDYxMTAsMTkyMDY4MjMwN119
+eyJoaXN0b3J5IjpbOTI1MDYzMjM0LDE5MjA2ODIzMDddfQ==
 -->
