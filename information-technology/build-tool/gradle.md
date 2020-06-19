@@ -52,11 +52,9 @@ Gradle이  Initialization, Configuration, Execution의 세 단계로 build scrip
 * Execution
 	* Runs the tasks selected at the end of the configuration phase.
     
-Apache Maven terminology(용어)에 빗대어 보자면, Gradle의 build phase는 Maven’s phases와는 다르다. Maven은 phases를 build execution을 다수의 stages로 나누기 위해 사용한다. Maven의 phases를 Gradle의 task graph와 유사한 역할을 하지만, 유연함이 떨어집니다.
+Apache Maven terminology(용어)에 빗대어 보자면, Gradle의 build phase는 Maven’s phases와는 다릅니다. Maven은 phases를 build execution을 다수의 stages로 나누기 위해 사용한다. Maven의 phases를 Gradle의 task graph와 유사한 역할을 하지만, 유연함이 떨어집니다.
+Maven의 build lifecycle의 개념은 Gradle’s  [lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks) 보다 느슨하게 비슷하다.
 
-They serve a similar role to Gradle’s task graph, although less flexibly.
-
-Maven’s concept of a build lifecycle is loosely similar to Gradle’s  [lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks).
 
 Well-designed build scripts consist mostly of  [declarative configuration rather than imperative logic](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts). That configuration is understandably evaluated during the configuration phase. Even so, many such builds also have task actions — for example via  `doLast {}`  and  `doFirst {}`  blocks — which are evaluated during the execution phase. This is important because code evaluated during the configuration phase won’t see changes that happen during the execution phase.
 
@@ -64,6 +62,6 @@ Another important aspect of the configuration phase is that everything involved 
 
 ###
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1OTY2NTA3MywtODUxMjg4NzU1LDE5Mj
+eyJoaXN0b3J5IjpbLTkwNTUyNDk0MiwtODUxMjg4NzU1LDE5Mj
 A2ODIzMDddfQ==
 -->
