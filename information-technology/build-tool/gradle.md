@@ -58,7 +58,7 @@ Maven의 build lifecycle의 개념은 Gradle’s  [lifecycle tasks](https://docs
 잘 디자인된 build scripts는 명령형 로직보다 선언적 설정으로 구성됩니다.
 >Well-designed build scripts consist mostly of  [declarative configuration rather than imperative logic](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts). 
 
-설정은 서
+설정은 configuration phase동안 평가됩니다. 그렇지만
 
 That configuration is understandably evaluated during the configuration phase. Even so, many such builds also have task actions — for example via  `doLast {}`  and  `doFirst {}`  blocks — which are evaluated during the execution phase. This is important because code evaluated during the configuration phase won’t see changes that happen during the execution phase.
 
@@ -66,6 +66,6 @@ Another important aspect of the configuration phase is that everything involved 
 
 ###
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjkzNTQsLTkwNTUyNDk0MiwtODUxMj
-g4NzU1LDE5MjA2ODIzMDddfQ==
+eyJoaXN0b3J5IjpbLTY5OTUxMjEwNywtOTA1NTI0OTQyLC04NT
+EyODg3NTUsMTkyMDY4MjMwN119
 -->
