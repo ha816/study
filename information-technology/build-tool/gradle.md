@@ -4,18 +4,12 @@ Gradle is an open-source [build automation](https://en.wikipedia.org/wiki/Build_
 
 Gradle은 불필요한 작업을 피함으로써 높은 성능을 보입니다. 또한 build cache를 이용할 수 있고, 그 밖에 많은 최적화 기법이 높아 들어 있고, 개발자 팀의 계속해서 Gradle의 성능을 높이기 위해 노력하고 있습니다. 
 
-Gradle은 JVM에 기반을 두고 있습니다. 따라서 JDK(Java Development Kit)이 반드시 필요합니다.
+Gradle은 JVM에 기반을 두고 있습니다. 따라서 JDK(Java Development Kit)이 반드시 필요합니다. 따라서 Java platform에 친숙한 사람에게는 익숙합니다. 
+
+그러나 Gradle은 JVM 프로젝트 빌드에만 국한되지 않으며
 
 
 # Core
-
-High performance
-
-Gradle avoids unnecessary work by only running the tasks that need to run because their inputs or outputs have changed. You can also use a build cache to enable the reuse of task outputs from previous runs or even from a different machine (with a shared build cache).
-
-There are many other optimizations that Gradle implements and the development team continually work to improve Gradle’s performance.
-
-JVM foundation
 
 Gradle runs on the JVM and you must have a Java Development Kit (JDK) installed to use it. This is a bonus for users familiar with the Java platform as you can use the standard Java APIs in your build logic, such as custom task types and plugins. It also makes it easy to run Gradle on different platforms.
 
@@ -141,5 +135,5 @@ Yet there is one area in which it is useful to view a build script as executable
 As Gradle runs on the JVM, build scripts can also use the standard  [Java API](https://docs.oracle.com/javase/8/docs/api). Groovy build scripts can additionally use the Groovy APIs, while Kotlin build scripts can use the Kotlin ones.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMDY4MjMwN119
+eyJoaXN0b3J5IjpbMTg1MjQwNzIzLDE5MjA2ODIzMDddfQ==
 -->
