@@ -26,14 +26,13 @@ Gradle은 tasks로 구성된 Directed Acyclic Graphs (DAGs)로 빌드를 모델�
 대부분 어떤 빌드 과정도 이런식으로 task 그래프로 모델링될 수 있습니다. 그리고 이것이 Gradle이 유연해질 수 있는 이유 입니다. 그리고 task 그래프는 플러그 인과 독자적인 build 스크립트인 [task dependency mechanism](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)와 연계되어 더 정의될 수 있습니다. 
 
 
-Tasks는 아래 Acti
-Tasks themselves consist of:
-
--   Actions — pieces of work that do something, like copy files or compile source
-    
--   Inputs — values, files and directories that the actions use or operate on
-    
--   Outputs — files and directories that the actions modify or generate
+Tasks는 아래 Actions, Inputs, Outputs로 구성됩니다.
+* Actions
+	* pieces of work that do something, like copy files or compile source
+* Inputs
+	* values, files and directories that the actions use or operate on
+* Outputs
+	* files and directories that the actions modify or generate
     
 
 In fact, all of the above are optional depending on what the task needs to do. Some tasks — such as the  [standard lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)  — don’t even have any actions. They simply aggregate multiple tasks together as a convenience.
@@ -45,5 +44,5 @@ One last thing: Gradle’s  [incremental build](https://docs.gradle.org/current/
 ### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)[3. Gradle has several fixed build phases](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgzNzE2Mzc2LDE5MjA2ODIzMDddfQ==
+eyJoaXN0b3J5IjpbLTEzOTQ3MzQ4MDAsMTkyMDY4MjMwN119
 -->
