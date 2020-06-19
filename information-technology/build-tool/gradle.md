@@ -42,22 +42,17 @@ Gradle’s [incremental build](https://docs.gradle.org/current/userguide/more_ab
 
 ### [3. Gradle has several fixed build phases](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)
 
-Gradle이  Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행하는 것을 이해하는것은 매우 중요합니다.
+Gradle이  Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행하는 것을 이해하는것은 매우 중요합니다. 세 단계는 Gradle’s  [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)
+을 이룹니다. 
 
 * Initialization
 	* Sets up the environment for the build and determine which projects will take part in it.
+* Configuration
+	* Constructs and configures the task graph for the build and then determines which tasks need to run and in which order, based on the task the user wants to run.
+* Execution
+	* Runs the tasks selected at the end of the configuration phase.
     
-2.  Configuration
-    
-    Constructs and configures the task graph for the build and then determines which tasks need to run and in which order, based on the task the user wants to run.
-    
-3.  Execution
-    
-    Runs the tasks selected at the end of the configuration phase.
-    
-
-These phases form Gradle’s  [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle).
-
+M
 Comparison to Apache Maven terminology
 
 Gradle’s build phases are not like Maven’s phases. Maven uses its phases to divide the build execution into multiple stages. They serve a similar role to Gradle’s task graph, although less flexibly.
@@ -70,6 +65,6 @@ Another important aspect of the configuration phase is that everything involved 
 
 ###
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY3MTM1OSwtODUxMjg4NzU1LDE5MjA2OD
-IzMDddfQ==
+eyJoaXN0b3J5IjpbLTIwNjYyMjcxMzksLTg1MTI4ODc1NSwxOT
+IwNjgyMzA3XX0=
 -->
