@@ -42,11 +42,10 @@ Gradle’s [incremental build](https://docs.gradle.org/current/userguide/more_ab
 
 ### [3. Gradle has several fixed build phases](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)
 
-It’s important to understand that Gradle evaluates and executes build scripts in three phases:
+Gradle이  Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행하는 것을 이해하는것은 매우 중요합니다.
 
-1.  Initialization
-    
-    Sets up the environment for the build and determine which projects will take part in it.
+* Initialization
+	* Sets up the environment for the build and determine which projects will take part in it.
     
 2.  Configuration
     
@@ -71,5 +70,6 @@ Another important aspect of the configuration phase is that everything involved 
 
 ###
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
+eyJoaXN0b3J5IjpbNDY3MTM1OSwtODUxMjg4NzU1LDE5MjA2OD
+IzMDddfQ==
 -->
