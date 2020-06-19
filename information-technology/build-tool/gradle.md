@@ -38,14 +38,38 @@ Tasks는 아래 Actions, Inputs, Outputs로 구성됩니다.
 
 필요로하는 특정 task를 골라 돌리면, task를 정의하기 위한 시간을 아낄 수 있다. 만약 unit test를 돌려보고 싶다면, `test` task를 찾으면 됩니다. 만약 애플리케이션을 package하고 싶다면, 일반적으로 `assemble`을 수행하면 됩니다.
 
-Gradle’s [incremental build](https://docs.gradle.org/current/userguide/more_about_tasks.html#sec:up_to_date_checks) support을 이용하면 `clean` task를 하지 않음으로써  
+Gradle’s [incremental build](https://docs.gradle.org/current/userguide/more_about_tasks.html#sec:up_to_date_checks) support을 이용하면 `clean` task를 하지 않아도 빌드 과정을 빠르게 합니다. 
 
-You choose which task to run. Save time by specifying the task that does what you need, but no more than that. If you just want to run the unit tests, choose the task that does that — typically  `test`. If you want to package an application, most builds have an  `assemble`  task for that.
+### [3. Gradle has several fixed build phases](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)
 
-One last thing: Gradle’s  [incremental build](https://docs.gradle.org/current/userguide/more_about_tasks.html#sec:up_to_date_checks)  support is robust and reliable, so keep your builds running fast by avoiding the  `clean`  task unless you actually do want to perform a clean.
+It’s important to understand that Gradle evaluates and executes build scripts in three phases:
 
-### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)[3. Gradle has several fixed build phases](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)
+1.  Initialization
+    
+    Sets up the environment for the build and determine which projects will take part in it.
+    
+2.  Configuration
+    
+    Constructs and configures the task graph for the build and then determines which tasks need to run and in which order, based on the task the user wants to run.
+    
+3.  Execution
+    
+    Runs the tasks selected at the end of the configuration phase.
+    
 
+These phases form Gradle’s  [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle).
+
+Comparison to Apache Maven terminology
+
+Gradle’s build phases are not like Maven’s phases. Maven uses its phases to divide the build execution into multiple stages. They serve a similar role to Gradle’s task graph, although less flexibly.
+
+Maven’s concept of a build lifecycle is loosely similar to Gradle’s  [lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks).
+
+Well-designed build scripts consist mostly of  [declarative configuration rather than imperative logic](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts). That configuration is understandably evaluated during the configuration phase. Even so, many such builds also have task actions — for example via  `doLast {}`  and  `doFirst {}`  blocks — which are evaluated during the execution phase. This is important because code evaluated during the configuration phase won’t see changes that happen during the execution phase.
+
+Another important aspect of the configuration phase is that everything involved in it is evaluated  _every time the build runs_. That is why it’s best practice to  [avoid expensive work during the configuration phase](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:minimize_logic_executed_configuration_phase).  [Build scans](https://scans.gradle.com/)  can help you identify such hotspots, among other things.
+
+###
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1ODY0ODk3MCwxOTIwNjgyMzA3XX0=
+eyJoaXN0b3J5IjpbLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
 -->
