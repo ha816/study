@@ -67,26 +67,23 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 * [Custom task types](https://docs.gradle.org/current/userguide/custom_tasks.html)
 	* When you want the build to do some work that an existing task can’t do, you can simply write your own task type. It’s typically best to put the source file for a custom task type in the  [_buildSrc_](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources)  directory or in a packaged plugin. Then you can use the custom task type just like any of the Gradle-provided ones.
     
--   Custom task actions.
+* Custom task actions
+	* You can attach custom build logic that executes before or after a task via the  [Task.doFirst()](https://docs.gradle.org/current/dsl/org.gradle.api.Task.html#org.gradle.api.Task:doFirst(org.gradle.api.Action))  and  [Task.doLast()](https://docs.gradle.org/current/dsl/org.gradle.api.Task.html#org.gradle.api.Task:doLast(org.gradle.api.Action))  methods.
     
-    You can attach custom build logic that executes before or after a task via the  [Task.doFirst()](https://docs.gradle.org/current/dsl/org.gradle.api.Task.html#org.gradle.api.Task:doFirst(org.gradle.api.Action))  and  [Task.doLast()](https://docs.gradle.org/current/dsl/org.gradle.api.Task.html#org.gradle.api.Task:doLast(org.gradle.api.Action))  methods.
-    
--   [Extra properties](https://docs.gradle.org/current/userguide/writing_build_scripts.html#sec:extra_properties)  on projects and tasks.
-    
-    These allows you to add your own properties to a project or task that you can then use from your own custom actions or any other build logic. Extra properties can even be applied to tasks that aren’t explicitly created by you, such as those created by Gradle’s core plugins.
+* [Extra properties](https://docs.gradle.org/current/userguide/writing_build_scripts.html#sec:extra_properties)  on projects and tasks
+	* These allows you to add your own properties to a project or task that you can then use from your own custom actions or any other build logic. Extra properties can even be applied to tasks that aren’t explicitly created by you, such as those created by Gradle’s core plugins.
     
 -   Custom conventions.
     
     Conventions are a powerful way to simplify builds so that users can understand and use them more easily. This can be seen with builds that use standard project structures and naming conventions, such as  [Java builds](https://docs.gradle.org/current/userguide/building_java_projects.html#building_java_projects). You can write your own plugins that provide conventions — they just need to configure default values for the relevant aspects of a build.
     
--   [A custom model](https://guides.gradle.org/implementing-gradle-plugins/#modeling_dsl_like_apis).
-    
-    Gradle allows you to introduce new concepts into a build beyond tasks, files and dependency configurations. You can see this with most language plugins, which add the concept of  [_source sets_](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)  to a build. Appropriate modeling of a build process can greatly improve a build’s ease of use and its efficiency.
+* [A custom model](https://guides.gradle.org/implementing-gradle-plugins/#modeling_dsl_like_apis)
+	* Gradle allows you to introduce new concepts into a build beyond tasks, files and dependency configurations. You can see this with most language plugins, which add the concept of  [_source sets_](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)  to a build. Appropriate modeling of a build process can greatly improve a build’s ease of use and its efficiency.
     
 
 ### [](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)[5. Build scripts operate against an API](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzgwNzcyODQsLTkwNTUyNDk0MiwtOD
-UxMjg4NzU1LDE5MjA2ODIzMDddfQ==
+eyJoaXN0b3J5IjpbLTEwNjU1MjY1LC05MDU1MjQ5NDIsLTg1MT
+I4ODc1NSwxOTIwNjgyMzA3XX0=
 -->
