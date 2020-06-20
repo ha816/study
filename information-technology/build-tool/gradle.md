@@ -56,15 +56,10 @@ Gradle은 Initialization, Configuration, Execution의 세 단계로 build script
 	* 빌드를 위한 task 그래프를 만들고 조정한 뒤, 사용자가 원하는 task에 따라 어떤 순서로 어떤 tasks가 필요한지 판단하는 단계.
 * Execution
 	* Configuration 단계가 끝난 후, 선택된 tasks를 수행한다.
-    
-
-잘 디자인된 build scripts는 명령형 로직보다 선언적 설정으로 구성됩니다.
->Well-designed build scripts consist mostly of  [declarative configuration rather than imperative logic](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts). 
-
-
+   
 ### [4. Gradle is extensible in more ways than one](https://docs.gradle.org/current/userguide/what_is_gradle.html#4_gradle_is_extensible_in_more_ways_than_one)
 
-Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그럴일이 별로 없다. 대부분의 build는 커스텀 빌드 로직을 추가할 필요가 있다.  Gradle은 커스텀 빌드 로직을 위한 몇가지 메커니즘을 제공한다.
+Gradle의 기본 빌드 로직만을 따라서 프로젝트를 만들 수 있으면 좋겠지만, 그런 경우는 거의 없습니다. 대부분의 build는 커스텀 빌드 로직을 추가할 필요가 있다.  Gradle은 커스텀 빌드 로직을 위한 몇가지 메커니즘을 제공한다.
 
 
 * [Custom task types](https://docs.gradle.org/current/userguide/custom_tasks.html)
@@ -91,7 +86,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MDk2NTIyLC0xOTU2MDM0MTMwLC0xNj
-AxODkyMzg2LC04OTM4MTE5NTQsMjA4NjYyNjgzMSwtOTA1NTI0
-OTQyLC04NTEyODg3NTUsMTkyMDY4MjMwN119
+eyJoaXN0b3J5IjpbMjEyMTMzNzQ4MiwtMTk1NjAzNDEzMCwtMT
+YwMTg5MjM4NiwtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUy
+NDk0MiwtODUxMjg4NzU1LDE5MjA2ODIzMDddfQ==
 -->
