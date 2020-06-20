@@ -1,4 +1,4 @@
-# Gradle
+# Overview
 
 Gradle은 오픈 소스 빌드 자동화 도구입니다. 
 
@@ -10,8 +10,7 @@ Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Developme
 
 마지막으로, Gradle은 [Maven Conventions](https://maven.apache.org/maven-conventions.html)을 따릅니다. 
 
-## 
-
+# Concepts
 
 ### [1. Gradle is a general-purpose build tool](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)
 
@@ -84,11 +83,12 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 * [A custom model](https://guides.gradle.org/implementing-gradle-plugins/#modeling_dsl_like_apis)
 	* Gradle allows you to introduce new concepts into a build beyond tasks, files and dependency configurations. You can see this with most language plugins, which add the concept of  [_source sets_](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)  to a build. Appropriate modeling of a build process can greatly improve a build’s ease of use and its efficiency.
 
+# u
 
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2NTk4NDc3LC0xOTU2MDM0MTMwLC0xNj
-AxODkyMzg2LC04OTM4MTE5NTQsMjA4NjYyNjgzMSwtOTA1NTI0
-OTQyLC04NTEyODg3NTUsMTkyMDY4MjMwN119
+eyJoaXN0b3J5IjpbMTk4ODU3NjkzNSwtMTk1NjAzNDEzMCwtMT
+YwMTg5MjM4NiwtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUy
+NDk0MiwtODUxMjg4NzU1LDE5MjA2ODIzMDddfQ==
 -->
