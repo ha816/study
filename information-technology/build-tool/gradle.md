@@ -16,7 +16,7 @@ Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Developme
 
 Gradle을 활용하면 어떤 소프트웨어도 빌드가 가능합니다. 왜냐하면 어떤 프로젝트를 어떻게 빌드 하든 Gradle의 제약이 거의 없기 때문입니다. 
 
-단 한 가지 주의할 점은 의존성 관리이다. 의존성 관리는 현재 [Maven Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)와 Ivy-compatible 만 지원한다.
+단 한 가지 주의할 점은 현재 Gradle에서 지원하는 의존성 관리는 [Maven Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)와 Ivy-compatible repositories만 
 
 
 ### [2. The core model is based on tasks](https://docs.gradle.org/current/userguide/what_is_gradle.html#the_core_model_is_based_on_tasks)
@@ -93,7 +93,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNTc0OTQwMywtMTk1NjAzNDEzMCwtMT
-YwMTg5MjM4NiwtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUy
-NDk0MiwtODUxMjg4NzU1LDE5MjA2ODIzMDddfQ==
+eyJoaXN0b3J5IjpbOTM2MDcwMDAxLC0xOTU2MDM0MTMwLC0xNj
+AxODkyMzg2LC04OTM4MTE5NTQsMjA4NjYyNjgzMSwtOTA1NTI0
+OTQyLC04NTEyODg3NTUsMTkyMDY4MjMwN119
 -->
