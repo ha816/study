@@ -54,9 +54,10 @@ Gradle은 Initialization, Configuration, Execution의 세 단계로 build script
 	* 빌드를 위한 환경을 구축하고 어떤 프로젝트들이 참가할지 판별하는 단계.
 * Configuration
 	* Constructs and configures the task graph for the build and then determines which tasks need to run and in which order, based on the task the user wants to run.
-	* 빌드를 위한 task 그래프를 만들고 조정한 뒤, 
+	* 빌드를 위한 task 그래프를 만들고 조정한 뒤, 사용자가 원하는 task에 따라 어떤 순서로 어떤 tasks가 필요한지 판단하는 단계.
 * Execution
 	* Runs the tasks selected at the end of the configuration phase.
+	* Configuration단계가 끝난 후, 
     
 Apache Maven Terminology(용어)에 빗대어 비교해보자면, Gradle의 build phase는 Maven의 phases와는 다릅니다. 
 
@@ -96,7 +97,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MDc4Njc5OCwtMTk1NjAzNDEzMCwtMT
+eyJoaXN0b3J5IjpbMTczMzQ0Njg4MSwtMTk1NjAzNDEzMCwtMT
 YwMTg5MjM4NiwtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUy
 NDk0MiwtODUxMjg4NzU1LDE5MjA2ODIzMDddfQ==
 -->
