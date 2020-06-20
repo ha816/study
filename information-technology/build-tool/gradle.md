@@ -37,10 +37,9 @@ task 그래프는 외부 플러그인 또는 Gradle의 [build script](https://do
 * Actions
 	* 복사 또는 소스 컴파일과 같은 작은 작업들
 * Inputs
-	* action을 해야할 파일 또는 디렉토리
-	* values, files and directories that the actions use or operate on
+	* action을 해야할 파일 또는 디렉토리와 같은 값들
 * Outputs
-	* files and directories that the actions modify or generate
+	* action을 통해 수정하거나 생성한 파일 또는 디렉토리들
 
 각 구성요소는 task가 해야할것에 따라 선택적입니다. 예를 들어, [standard lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks) 같은 task는 어떤 actions도 가지지 않는 경우도 있습니다. 
 
@@ -48,10 +47,11 @@ task 그래프는 외부 플러그인 또는 Gradle의 [build script](https://do
 
 ## [3. Gradle has several fixed build phases](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)
 
-Gradle은 Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행합니다. 그리고 이 세 가지 단계는 Gradle의 [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)을 만듭니다.
+Gradle은 Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행합니다. 그리고 이 세 가지 단계는 Gradle의 [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)의 핵심입니다.
 
 * Initialization
 	* Sets up the environment for the build and determine which projects will take part in it.
+	* 빌드를어떤 프로젝트들이 참가할지 
 * Configuration
 	* Constructs and configures the task graph for the build and then determines which tasks need to run and in which order, based on the task the user wants to run.
 * Execution
@@ -95,7 +95,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTcxNTMzNTcsLTE5NTYwMzQxMzAsLT
+eyJoaXN0b3J5IjpbLTE4OTMyNDkxMTAsLTE5NTYwMzQxMzAsLT
 E2MDE4OTIzODYsLTg5MzgxMTk1NCwyMDg2NjI2ODMxLC05MDU1
 MjQ5NDIsLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
 -->
