@@ -29,11 +29,11 @@ Gradle은 tasks로 구성된 Directed Acyclic Graphs(DAGs)로 전체 빌드 과�
 
 대부분의 어떤 빌드 과정도 task 그래프로 모델링될 수 있습니다. 그리고 이것이 Gradle이 유연해질 수 있는 이유입니다. 
 
-task 그래프는 외부 플러그인 또는 Gradle의 독자적인 빌드 스크립트[ㅠㅕㅑ](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)도 
+task 그래프는 외부 플러그인 또는 Gradle의 [build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)으로도 모델링 가능합니다.
 
 ### Tasks
 
-Tasks는 아래 Actions, Inputs, Outputs로 구성됩니다.
+하나의 Tasks는 Actions, Inputs, Outputs로 구성됩니다.
 * Actions
 	* pieces of work that do something, like copy files or compile source
 * Inputs
@@ -95,7 +95,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDYyMDMwOTEsLTE5NTYwMzQxMzAsLT
-E2MDE4OTIzODYsLTg5MzgxMTk1NCwyMDg2NjI2ODMxLC05MDU1
-MjQ5NDIsLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
+eyJoaXN0b3J5IjpbMTUwMTIyNTQ5MywtMTk1NjAzNDEzMCwtMT
+YwMTg5MjM4NiwtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUy
+NDk0MiwtODUxMjg4NzU1LDE5MjA2ODIzMDddfQ==
 -->
