@@ -6,9 +6,11 @@ Gradle은 오픈 소스 빌드 자동화 도구입니다.
 
 Gradle은 빌드 성능을 높이기 위한 많은 최적화 기법을 사용하고 있습니다. 대표적으로  불필요한 빌드 작업을 줄이기 위해 build cache를 적극 활용합니다. 
 
-Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Development Kit)가 반드시 필요합니다. 그러나 Gradle은 JVM 프로젝트 빌드에만 국한되지 않고 다양한 소프트웨어를 빌드할 수 있습니다. 
+Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Development Kit)가 반드시 필요합니다. 그러나 Gradle은 JVM 프로젝트 빌드에만 국한되지 않고 다양한 소프트웨어를 빌드할 수 있습니다.  또한, 프로젝트에 필요한 플러그인도 활용가능합니다.
 
-Gradle은 [Maven Conventions](https://maven.apache.org/maven-conventions.html)을 일반적인 타입의 프로젝트를 쉽게 빌드할 수 있습니다. 적합한 플러그인을 적용하여 쉽게 빌드가 가능합니다. 
+마지막으로, Gradle은 [Maven Conventions](https://maven.apache.org/maven-conventions.html)을 따릅니다. 
+
+## 
 
 
 ### [1. Gradle is a general-purpose build tool](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)
@@ -86,7 +88,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMzI4MDkzMSwtMTk1NjAzNDEzMCwtMT
-YwMTg5MjM4NiwtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUy
-NDk0MiwtODUxMjg4NzU1LDE5MjA2ODIzMDddfQ==
+eyJoaXN0b3J5IjpbOTU2NTk4NDc3LC0xOTU2MDM0MTMwLC0xNj
+AxODkyMzg2LC04OTM4MTE5NTQsMjA4NjYyNjgzMSwtOTA1NTI0
+OTQyLC04NTEyODg3NTUsMTkyMDY4MjMwN119
 -->
