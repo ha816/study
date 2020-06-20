@@ -35,20 +35,20 @@ task 그래프는 외부 플러그인 또는 Gradle의 [build script](https://do
 
 하나의 Task는 Actions, Inputs, Outputs로 구성됩니다.
 * Actions
-	* pieces of work that do something, like copy files or compile source
+	* 복사 또는 소스 컴파일과 같은 작은 작업들
 * Inputs
+	* action을 해야할 파일 또는 디렉토리
 	* values, files and directories that the actions use or operate on
 * Outputs
 	* files and directories that the actions modify or generate
 
-각 구성요소는 task가 해야할것에 따라 선택적입니다. 예를 들어, [standard lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks) 같은 어떤 task는 어떤 actions도 가지지 않는 경우도 있습니다. 
+각 구성요소는 task가 해야할것에 따라 선택적입니다. 예를 들어, [standard lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks) 같은 task는 어떤 actions도 가지지 않는 경우도 있습니다. 
 
 빌드에 필요한 특정 task만 골라 돌리면, task를 새로 만들기 위한 자원을 아낄 수 있다. 만약 unit test를 돌려보고 싶다면, `test` task를 찾으면 됩니다. 만약 애플리케이션을 package하고 싶다면, 일반적으로 `assemble` task를 수행하면 됩니다.
 
 ## [3. Gradle has several fixed build phases](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)
 
-Gradle은 Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행합니다. 이 단계는 Gradle’s  [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)
-을 이룹니다. 
+Gradle은 Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행합니다. 그리고 이 세 가지 단계는 Gradle의 [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)을 만듭니다.
 
 * Initialization
 	* Sets up the environment for the build and determine which projects will take part in it.
@@ -57,7 +57,9 @@ Gradle은 Initialization, Configuration, Execution의 세 단계로 build script
 * Execution
 	* Runs the tasks selected at the end of the configuration phase.
     
-Apache Maven terminology(용어)에 빗대어 보자면, Gradle의 build phase는 Maven’s phases와는 다릅니다. Maven은 phases를 build execution을 다수의 stages로 나누기 위해 사용한다. Maven의 phases를 Gradle의 task graph와 유사한 역할을 하지만, 유연함이 떨어집니다.
+Apache Maven Terminology(용어)에 빗대어 비교해보자면, Gradle의 build phase는 Maven의 phases와는 다릅니다. 
+
+Maven은 phases를 build execution을 다수의 stages로 나누기 위해 사용한다. Maven의 phases를 Gradle의 task graph와 유사한 역할을 하지만, 유연함이 떨어집니다.
 Maven의 build lifecycle의 개념은 Gradle’s  [lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks) 보다 느슨하게 비슷합니다.
 
 잘 디자인된 build scripts는 명령형 로직보다 선언적 설정으로 구성됩니다.
@@ -93,7 +95,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODI4NjA0NzYsLTE5NTYwMzQxMzAsLT
+eyJoaXN0b3J5IjpbLTIxMTcxNTMzNTcsLTE5NTYwMzQxMzAsLT
 E2MDE4OTIzODYsLTg5MzgxMTk1NCwyMDg2NjI2ODMxLC05MDU1
 MjQ5NDIsLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
 -->
