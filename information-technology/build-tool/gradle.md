@@ -24,12 +24,12 @@ Gradle은 tasks로 구성된 Directed Acyclic Graphs(DAGs)로 전체 빌드 과�
 
 ![Example task graphs](https://docs.gradle.org/current/userguide/img/task-dag-examples.png)
 
-위 두 그림은 task graphs의 예제로 화살은 task간의 의존성을 나타냅니다. 
+위 두 그림은 task 그래프의 예제로 화살은 task간의 의존성을 나타냅니다. 
 왼쪽 그림은 추상화된 일반적 task 그래프를 나타냅니다. 오른쪽은 실제 표준 자바를 빌드하는 과정을 표현한 task 그래프입니다.
 
 대부분의 어떤 빌드 과정도 task 그래프로 모델링될 수 있습니다. 그리고 이것이 Gradle이 유연해질 수 있는 이유입니다. 
 
-그래프는 외부 플러그인 또는 Gradle의 독자적인 빌드 스크립트 [task dependency mechanism](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)
+task 그래프는 외부 플러그인 또는 Gradle의 독자적인 빌드 스크립트[ㅠㅕㅑ](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)도 
 
 ### Tasks
 
@@ -95,7 +95,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MjE3NjE2NCwtMTk1NjAzNDEzMCwtMT
-YwMTg5MjM4NiwtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUy
-NDk0MiwtODUxMjg4NzU1LDE5MjA2ODIzMDddfQ==
+eyJoaXN0b3J5IjpbLTEzMDYyMDMwOTEsLTE5NTYwMzQxMzAsLT
+E2MDE4OTIzODYsLTg5MzgxMTk1NCwyMDg2NjI2ODMxLC05MDU1
+MjQ5NDIsLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
 -->
