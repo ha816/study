@@ -14,6 +14,9 @@ Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Developme
 
 ### [1. Gradle is a general-purpose build tool](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)
 
+Gradle allows you to build any software, because it makes few assumptions about what you’re trying to build or how it should be done.
+Gradle을 활용하면 어떤 소프트웨어도 빌드가 가능합니다. 왜냐하면 
+
 Gradle을 사용하는데 큰 제약은 없지만, 가장 주의할 점은 의존성 관리이다. 의존성 관리는 현재 [Maven Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)와 Ivy-compatible 만 지원한다.
 
 
@@ -91,7 +94,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTMxNzE0MzYsLTE5NTYwMzQxMzAsLT
+eyJoaXN0b3J5IjpbLTIwODE4MjM2MTQsLTE5NTYwMzQxMzAsLT
 E2MDE4OTIzODYsLTg5MzgxMTk1NCwyMDg2NjI2ODMxLC05MDU1
 MjQ5NDIsLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
 -->
