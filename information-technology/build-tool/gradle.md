@@ -8,13 +8,13 @@ Gradle은 빌드 성능을 높이기 위한 많은 최적화 기법을 사용하
 
 Gradle은 [Maven Conventions](https://maven.apache.org/maven-conventions.html)을 따릅니다. 
 
-Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Development Kit)가 반드시 필요합니다. 그러나 Gradle은 JVM 프로젝트 빌드에만 국한되지 않고 다양한 소프트웨어를 빌드할 수 있습니다.  또한, 프로젝트에 필요한 플러그인도 활용가능합니다.
+Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Development Kit)가 반드시 필요합니다. 그러나 Gradle은 JVM 프로젝트 빌드에만 국한되지 않고 다양한 소프트웨어를 빌드할 수 있습니다.  당연히 플러그인도 빌드에 활용할 수 있습니다.
 
 # Concepts
 
 ### [1. Gradle is a general-purpose build tool](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)
 
-Gradle을 사용하는데 큰 제약은 없지만, 가장 주의할 제약은 의존성 관리이다. 의존성 관리는 현재 Maven의 dependency management와 Ivy-compatible 만 지원한다.
+Gradle을 사용하는데 큰 제약은 없지만, 가장 주의할 점은 의존성 관리이다. 의존성 관리는 현재 Maven의 dependency management와 Ivy-compatible 만 지원한다.
 
 
 ### [2. The core model is based on tasks](https://docs.gradle.org/current/userguide/what_is_gradle.html#the_core_model_is_based_on_tasks)
@@ -91,7 +91,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUzNDY5NjYsLTE5NTYwMzQxMzAsLTE2MD
-E4OTIzODYsLTg5MzgxMTk1NCwyMDg2NjI2ODMxLC05MDU1MjQ5
-NDIsLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
+eyJoaXN0b3J5IjpbLTg1ODAxNTU0MiwtMTk1NjAzNDEzMCwtMT
+YwMTg5MjM4NiwtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUy
+NDk0MiwtODUxMjg4NzU1LDE5MjA2ODIzMDddfQ==
 -->
