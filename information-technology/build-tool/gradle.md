@@ -59,8 +59,7 @@ Gradle은 Initialization, Configuration, Execution의 세 단계로 build script
    
 ### [4. Gradle is extensible in more ways than one](https://docs.gradle.org/current/userguide/what_is_gradle.html#4_gradle_is_extensible_in_more_ways_than_one)
 
-Gradle의 기본 빌드 로직만을 따라서 프로젝트를 만들 수 있으면 좋겠지만, 그런 경우는 거의 없습니다. 대부분의 build는 커스텀 빌드 로직을 추가할 필요가 있다.  Gradle은 커스텀 빌드 로직을 위한 몇가지 메커니즘을 제공한다.
-
+Gradle의 기본 빌드 로직만을 따라서 프로젝트를 만들 수 있으면 좋겠지만, 그런 경우는 거의 없습니다. 대부분의 빌드에선 커스텀 빌드 로직을 추가해야할 경우가 많습니다. Gradle은 커스텀 빌드 로직을 위한 몇 가지 메커니즘을 제공합니다. 
 
 * [Custom task types](https://docs.gradle.org/current/userguide/custom_tasks.html)
 	* When you want the build to do some work that an existing task can’t do, you can simply write your own task type. It’s typically best to put the source file for a custom task type in the  [_buildSrc_](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources)  directory or in a packaged plugin. Then you can use the custom task type just like any of the Gradle-provided ones.
@@ -81,12 +80,14 @@ Gradle의 기본 빌드 로직만을 따라서 프로젝트를 만들 수 있으
 # Configuration
 
 
+
 # References
 
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMTMzNzQ4MiwtMTk1NjAzNDEzMCwtMT
-YwMTg5MjM4NiwtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUy
-NDk0MiwtODUxMjg4NzU1LDE5MjA2ODIzMDddfQ==
+eyJoaXN0b3J5IjpbMjA1ODE0MzM0NSwyMTIxMzM3NDgyLC0xOT
+U2MDM0MTMwLC0xNjAxODkyMzg2LC04OTM4MTE5NTQsMjA4NjYy
+NjgzMSwtOTA1NTI0OTQyLC04NTEyODg3NTUsMTkyMDY4MjMwN1
+19
 -->
