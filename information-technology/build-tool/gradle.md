@@ -12,22 +12,22 @@ Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Developme
 
 # Concepts
 
-### [1. Gradle is a general-purpose build tool](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)
+## [1. Gradle is a general-purpose build tool](https://docs.gradle.org/current/userguide/what_is_gradle.html#1_gradle_is_a_general_purpose_build_tool)
 
 Gradle을 활용하면 어떤 소프트웨어도 빌드가 가능합니다. 왜냐하면 어떤 프로젝트를 어떻게 빌드 하든 Gradle의 제약이 거의 없기 때문입니다. 
 
 단 한 가지 주의할 것은 현재 Gradle 의존성 관리는 [Maven Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)와 Ivy-compatible repositories만 지원하고 있습니다.
 
-### [2. The core model is based on tasks](https://docs.gradle.org/current/userguide/what_is_gradle.html#the_core_model_is_based_on_tasks)
+## [2. The core model is based on tasks](https://docs.gradle.org/current/userguide/what_is_gradle.html#the_core_model_is_based_on_tasks)
 
 Gradle은 tasks로 구성된 Directed Acyclic Graphs(DAGs)로 전체 빌드 과정을 모델링합니다. 즉 하나의 빌드는 반드시 tasks와 tasks간의 의존성을 나타내는 DAG를 만든다는 의미입니다. 그래프가 생성되면, Gradle은 어떤 task가 어떤 순서로 동작해야 하는지 판단하고 작업을 수행합니다.
 
 ![Example task graphs](https://docs.gradle.org/current/userguide/img/task-dag-examples.png)
 
 위 두 그림은 task graphs의 예제로 화살은 task간의 의존성을 나타냅니다. 
-왼쪽 그림은 추상화된 일밙 오른쪽은 실제 표준 자바를 빌드하는 과정을 구현입니다.
+왼쪽 그림은 추상화된 일반적 task 그래프를 나타냅니다. 오른쪽은 실제 표준 자바를 빌드하는 과정을 표현한 task 그래프입니다.
 
-대부분 어떤 빌드 과정도 이런식으로 task 그래프로 모델링될 수 있습니다. 그리고 이것이 Gradle이 유연해질 수 있는 이유 입니다. 그리고 task 그래프는 플러그 인과 독자적인 build 스크립트인 [task dependency mechanism](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)와 연계되어 더 정의될 수 있습니다. 
+대부분 어떤 빌드 과정도 task 그래프로 모델링될 수 있습니다. 그리고 이것이 Gradle이 유연해질 수 있는 이유이고 그래프는 플러그 인과 독자적인 build 스크립트인 [task dependency mechanism](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)와 연계되어 더 정의될 수 있습니다. 
 
 
 Tasks는 아래 Actions, Inputs, Outputs로 구성됩니다.
@@ -92,7 +92,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMzIwNDgxNSwtMTk1NjAzNDEzMCwtMT
-YwMTg5MjM4NiwtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUy
-NDk0MiwtODUxMjg4NzU1LDE5MjA2ODIzMDddfQ==
+eyJoaXN0b3J5IjpbNzQ0OTM4MDAzLC0xOTU2MDM0MTMwLC0xNj
+AxODkyMzg2LC04OTM4MTE5NTQsMjA4NjYyNjgzMSwtOTA1NTI0
+OTQyLC04NTEyODg3NTUsMTkyMDY4MjMwN119
 -->
