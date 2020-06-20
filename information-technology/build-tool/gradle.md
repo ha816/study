@@ -61,22 +61,14 @@ Gradle은 Initialization, Configuration, Execution의 세 단계로 build script
 
 Gradle의 기본 빌드 로직만을 따라서 프로젝트를 만들 수 있으면 좋겠지만, 그런 경우는 거의 없습니다. 대부분의 빌드에선 커스텀 빌드 로직을 추가해야할 경우가 많습니다. Gradle은 커스텀 빌드 로직을 위한 몇 가지 메커니즘을 제공합니다. 
 
-* [Custom task types](https://docs.gradle.org/current/userguide/custom_tasks.html)
-	* When you want the build to do some work that an existing task can’t do, you can simply write your own task type. It’s typically best to put the source file for a custom task type in the  [_buildSrc_](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources)  directory or in a packaged plugin. Then you can use the custom task type just like any of the Gradle-provided ones.
-    
-* Custom task actions
-	* You can attach custom build logic that executes before or after a task via the  [Task.doFirst()](https://docs.gradle.org/current/dsl/org.gradle.api.Task.html#org.gradle.api.Task:doFirst(org.gradle.api.Action))  and  [Task.doLast()](https://docs.gradle.org/current/dsl/org.gradle.api.Task.html#org.gradle.api.Task:doLast(org.gradle.api.Action))  methods.
-    
+* [Custom task types](https://docs.gradle.org/current/userguide/custom_tasks.html)    
+* Custom task actions    
 * [Extra properties](https://docs.gradle.org/current/userguide/writing_build_scripts.html#sec:extra_properties)  on projects and tasks
-	* These allows you to add your own properties to a project or task that you can then use from your own custom actions or any other build logic. Extra properties can even be applied to tasks that aren’t explicitly created by you, such as those created by Gradle’s core plugins.
-    
--   Custom conventions.
-    
-    Conventions are a powerful way to simplify builds so that users can understand and use them more easily. This can be seen with builds that use standard project structures and naming conventions, such as  [Java builds](https://docs.gradle.org/current/userguide/building_java_projects.html#building_java_projects). You can write your own plugins that provide conventions — they just need to configure default values for the relevant aspects of a build.
-    
+* Custom conventions.
 * [A custom model](https://guides.gradle.org/implementing-gradle-plugins/#modeling_dsl_like_apis)
-	* Gradle allows you to introduce new concepts into a build beyond tasks, files and dependency configurations. You can see this with most language plugins, which add the concept of  [_source sets_](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)  to a build. Appropriate modeling of a build process can greatly improve a build’s ease of use and its efficiency.
 
+
+	
 # Configuration
 
 
@@ -86,8 +78,8 @@ Gradle의 기본 빌드 로직만을 따라서 프로젝트를 만들 수 있으
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1ODE0MzM0NSwyMTIxMzM3NDgyLC0xOT
-U2MDM0MTMwLC0xNjAxODkyMzg2LC04OTM4MTE5NTQsMjA4NjYy
-NjgzMSwtOTA1NTI0OTQyLC04NTEyODg3NTUsMTkyMDY4MjMwN1
-19
+eyJoaXN0b3J5IjpbMjM2NTA5MzIwLDIxMjEzMzc0ODIsLTE5NT
+YwMzQxMzAsLTE2MDE4OTIzODYsLTg5MzgxMTk1NCwyMDg2NjI2
+ODMxLC05MDU1MjQ5NDIsLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX
+0=
 -->
