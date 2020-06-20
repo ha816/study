@@ -41,13 +41,13 @@ task 그래프는 외부 플러그인 또는 Gradle의 [build script](https://do
 * Outputs
 	* files and directories that the actions modify or generate
 
-각 구성요소는 task가 해야할것에 따라 선택적이다(옵션). 예를 들어, [standard lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks) 같은 어떤 task는 어떤 actions도 가지지 않는 경우도 있습니다. 
+각 구성요소는 task가 해야할것에 따라 선택적입니다. 예를 들어, [standard lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks) 같은 어떤 task는 어떤 actions도 가지지 않는 경우도 있습니다. 
 
 빌드에 필요한 특정 task만 골라 돌리면, task를 새로 만들기 위한 자원을 아낄 수 있다. 만약 unit test를 돌려보고 싶다면, `test` task를 찾으면 됩니다. 만약 애플리케이션을 package하고 싶다면, 일반적으로 `assemble` task를 수행하면 됩니다.
 
 ## [3. Gradle has several fixed build phases](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)
 
-Gradle이  Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행하는 것을 이해하는것은 매우 중요합니다. 세 단계는 Gradle’s  [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)
+Gradle은 Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행합니다. 이 단계는 Gradle’s  [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)
 을 이룹니다. 
 
 * Initialization
@@ -93,7 +93,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTE3ODg5NDgsLTE5NTYwMzQxMzAsLT
+eyJoaXN0b3J5IjpbLTExODI4NjA0NzYsLTE5NTYwMzQxMzAsLT
 E2MDE4OTIzODYsLTg5MzgxMTk1NCwyMDg2NjI2ODMxLC05MDU1
 MjQ5NDIsLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
 -->
