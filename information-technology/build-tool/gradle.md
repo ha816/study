@@ -51,9 +51,10 @@ Gradle은 Initialization, Configuration, Execution의 세 단계로 build script
 
 * Initialization
 	* Sets up the environment for the build and determine which projects will take part in it.
-	* 빌드를어떤 프로젝트들이 참가할지 
+	* 빌드를 위한 환경을 구축하고 어떤 프로젝트들이 참가할지 판별하는 단계.
 * Configuration
 	* Constructs and configures the task graph for the build and then determines which tasks need to run and in which order, based on the task the user wants to run.
+	* 빌드를 위한 task 그래프를 만들고 조정한 뒤, 
 * Execution
 	* Runs the tasks selected at the end of the configuration phase.
     
@@ -95,7 +96,7 @@ Gradle의 빌드 로직만 따라서 프로젝트를 만들면 좋겠지만, 그
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTMyNDkxMTAsLTE5NTYwMzQxMzAsLT
-E2MDE4OTIzODYsLTg5MzgxMTk1NCwyMDg2NjI2ODMxLC05MDU1
-MjQ5NDIsLTg1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
+eyJoaXN0b3J5IjpbLTg1MDc4Njc5OCwtMTk1NjAzNDEzMCwtMT
+YwMTg5MjM4NiwtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUy
+NDk0MiwtODUxMjg4NzU1LDE5MjA2ODIzMDddfQ==
 -->
