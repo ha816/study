@@ -291,21 +291,9 @@ buildscript {
 
 `buildscript()` 메서드로 전해진 블럭은 [ScriptHandler](https://docs.gradle.org/current/javadoc/org/gradle/api/initialization/dsl/ScriptHandler.html) 를 조정합니다. `classpath`  configuration에 의존성을 추가함으로 빌드 스크립트 classpath를 선언했습니다. 같은 방법으로, java compile classpath도 선언할 수 있습니다.
 
-프로젝트 의존성을 제외한 어떤
-[dependency types](https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:dependency-types)도 사용가능합니다.
+프로젝트 의존성을 제외한 어떤 [dependency types](https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:dependency-types)도 사용가능합니다.
 
-
-
-
-The block passed to the  `buildscript()`  method configures a  [ScriptHandler](https://docs.gradle.org/current/javadoc/org/gradle/api/initialization/dsl/ScriptHandler.html)  instance. You declare the build script classpath by adding dependencies to the  `classpath`  configuration. This is the same way you declare, for example, the Java compilation classpath. You can use any of the  
-
-Having declared the build script classpath, you can use the classes in your build script as you would any other classes on the classpath. The following example adds to the previous example, and uses classes from the build script classpath.
-
-Example 17. A build script with external dependencies
-
-`Groovy``Kotlin`
-
-build.gradle
+아래 예제는 위의 예제에서 빌드 스크립트 classpath의 클래스를 사용합니다. 
 
 ```groovy
 import org.apache.commons.codec.binary.Base64
@@ -522,7 +510,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMTg1NTY0OCwtMTg4MTg3MTYwOCwtMT
+eyJoaXN0b3J5IjpbLTc3Mzk0ODAxMSwtMTg4MTg3MTYwOCwtMT
 Y3NDY1MTQ4NywxNDA1MTg5OTEwLDcyNDg5ODc1MywyMTM0NDUw
 MTYxLC0xNzg1MDMzMzkwLDIxMzI4NzA3MjddfQ==
 -->
