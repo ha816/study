@@ -289,6 +289,8 @@ buildscript {
 }
 ```
 
+`buildscript()` 메서드로 전해진 블럭은 [ScriptHandler](https://docs.gradle.org/current/javadoc/org/gradle/api/initialization/dsl/ScriptHandler.html) 를 조정합니다. 빌드 스크립트 cl
+
 The block passed to the  `buildscript()`  method configures a  [ScriptHandler](https://docs.gradle.org/current/javadoc/org/gradle/api/initialization/dsl/ScriptHandler.html)  instance. You declare the build script classpath by adding dependencies to the  `classpath`  configuration. This is the same way you declare, for example, the Java compilation classpath. You can use any of the  [dependency types](https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:dependency-types)  except project dependencies.
 
 Having declared the build script classpath, you can use the classes in your build script as you would any other classes on the classpath. The following example adds to the previous example, and uses classes from the build script classpath.
@@ -514,7 +516,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODE4NzE2MDgsLTE2NzQ2NTE0ODcsMT
-QwNTE4OTkxMCw3MjQ4OTg3NTMsMjEzNDQ1MDE2MSwtMTc4NTAz
-MzM5MCwyMTMyODcwNzI3XX0=
+eyJoaXN0b3J5IjpbLTUxMjA1NjQ0NywtMTg4MTg3MTYwOCwtMT
+Y3NDY1MTQ4NywxNDA1MTg5OTEwLDcyNDg5ODc1MywyMTM0NDUw
+MTYxLC0xNzg1MDMzMzkwLDIxMzI4NzA3MjddfQ==
 -->
