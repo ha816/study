@@ -239,15 +239,7 @@ task other {
 
 Gradle의 configuration phase가 끝나면, 수행해야할 모든 task를 알게 됩니다. Gradle은 이 정보를 사용하기 위해 hook을 제공합니다. 하나의 예로, tasks중에서 실행되어야할 release task를 확인할 수 있습니다. 덕분에 몇 가지 변수에 다른 값을 할당할 수도 있습니다. 
 
-아래 예제에서는 `distribution`과 `release`  tasks
-
-In the following example, execution of the  `distribution`  and  `release`  tasks results in different value of the  `version`  variable.
-
-Example 15. Different outcomes of build depending on chosen tasks
-
-`Groovy``Kotlin`
-
-build.gradle
+아래 예제에서는`version`  변수에 따라 `distribution`과 `release`  tasks의 다른 수행 결과를 보여줍니다. 
 
 ```groovy
 task distribution {
@@ -531,6 +523,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY2NzMyOTg4LDcyNDg5ODc1MywyMTM0ND
-UwMTYxLC0xNzg1MDMzMzkwLDIxMzI4NzA3MjddfQ==
+eyJoaXN0b3J5IjpbMTQwNTE4OTkxMCw3MjQ4OTg3NTMsMjEzND
+Q1MDE2MSwtMTc4NTAzMzM5MCwyMTMyODcwNzI3XX0=
 -->
