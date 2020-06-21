@@ -274,7 +274,9 @@ We release now
 
 이 예제는 `version`  변수가 execution에서만 읽히기 때문에 제대로 동작합니다. 따라서 실제 운영 빌드에선 어떤 곳에서도 configuration 과정에서 이 변수가 읽히는 일이 없도록 해야 합니다. 제대로 하지 않으면, 빌드 과정의 configuration과 execution 사이에서 하나의 변수 값이 서로 달라지는 불상사가 발생할지도 모릅니다. 
 
-## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)[External dependencies for the build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)
+## [External dependencies for the build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)
+
+만약 빌드 스크립트가 외부 라이브러리들을 사용해야 한다면, 스크립트의 classpath에 추가하면 된다. `buildscript()`  메서드를 사용하면, 비
 
 If your build script needs to use external libraries, you can add them to the script’s classpath in the build script itself. You do this using the  `buildscript()`  method, passing in a block which declares the build script classpath.
 
@@ -520,7 +522,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzQ2NTE0ODcsMTQwNTE4OTkxMCw3Mj
-Q4OTg3NTMsMjEzNDQ1MDE2MSwtMTc4NTAzMzM5MCwyMTMyODcw
-NzI3XX0=
+eyJoaXN0b3J5IjpbLTcyNzg2NzgyNSwtMTY3NDY1MTQ4NywxND
+A1MTg5OTEwLDcyNDg5ODc1MywyMTM0NDUwMTYxLC0xNzg1MDMz
+MzkwLDIxMzI4NzA3MjddfQ==
 -->
