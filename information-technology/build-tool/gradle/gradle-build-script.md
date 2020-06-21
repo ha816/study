@@ -65,11 +65,7 @@ task taskY {
 
 `taskX` 에서  `taskY`에 대한 의존성은 `taskY`가 정의되기 전에 선언되었더라도 잘 동작합니다. 이것은 multi-project 빌드에 매우 중요한 특성입니다. 
 
-한 가지 주의할 점은 아직 정의 되지 않은 task를 참조할때는,  [shortcut notation](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notati)을 
-
-Please notice that you can’t use  [shortcut notation](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)  when referring to a task that is not yet defined.
-
-
+한 가지 주의할 점은 아직 정의 되지 않은 task를 참조할때는,  [shortcut notation](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notati)을 사용하면 안됩니다. 
 
 
 #### Gradle Wrapper를 사용하는 목적
@@ -253,5 +249,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjk2MjAwOCwyMTMyODcwNzI3XX0=
+eyJoaXN0b3J5IjpbLTExNzE3NTA3MDQsMjEzMjg3MDcyN119
 -->
