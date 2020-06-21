@@ -152,6 +152,7 @@ hello.doLast {
 
 ## [Extra task properties](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)
 
+task의 속성에 특정한 속성을 추가할 수 있습니다. 
 You can add your own properties to a task. To add a property named  `myProperty`, set  `ext.myProperty`  to an initial value. From that point on, the property can be read and set like a predefined task property.
 
 Example 11. Adding extra properties to a task
@@ -178,6 +179,48 @@ Output of  **`gradle -q printTaskProperties`**
 myValue
 
 Extra properties aren’t limited to tasks. You can read more about them in  [Extra properties](https://docs.gradle.org/current/userguide/writing_build_scripts.html#sec:extra_properties).
+
+## [Using methods](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:using_methods)
+
+Gradle scales in how you can organize your build logic. The first level of organizing your build logic for the example above, is extracting a method.
+
+Example 13. Using methods to organize your build logic
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+task checksum {
+    doLast {
+        fileList('./antLoadfileResources').each { File file ->
+            ant.checksum(file: file, property: "cs_$file.name")
+            println "$file.name Checksum: ${ant.properties["cs_$file.name"]}"
+        }
+    }
+}
+
+task loadfile {
+    doLast {
+        fileList('./antLoadfileResources').each { File file ->
+            ant.loadfile(srcFile: file, property: file.name)
+            println "I'm fond of $file.name"
+        }
+    }
+}
+
+File[] fileList(String dir) {
+    file(dir).listFiles({file -> file.isFile() } as FileFilter).sort()
+}
+```
+
+Output of  **`gradle -q loadfile`**
+
+> gradle -q loadfile
+I'm fond of agile.manifesto.txt
+I'm fond of gradle.manifesto.txt
+
+Later you will see that such methods can be shared among subprojects in multi-project builds. If your build logic becomes more complex, Gradle offers you other very convenient ways to organize it. We have devoted a whole chapter to this. See  [Organizing Gradle Projects](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#organizing_gradle_projects).
 
 
 ## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)[Extra task properties](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)
@@ -391,6 +434,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzODI3NTUwNSwtMTc4NTAzMzM5MCwyMT
+eyJoaXN0b3J5IjpbLTgzMzIwNzg4MSwtMTc4NTAzMzM5MCwyMT
 MyODcwNzI3XX0=
 -->
