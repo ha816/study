@@ -315,10 +315,10 @@ task encode {
 }
 ```
 
-Output of  **`gradle -q encode`**
-
 > gradle -q encode
-aGVsbG8gd29ybGQK
+> aGVsbG8gd29ybGQK
+
+multi-project 빌드에서, 한 프로젝트에 선언된 `buildscript()`
 
 For multi-project builds, the dependencies declared with a project’s  `buildscript()`  method are available to the build scripts of all its sub-projects.
 
@@ -510,7 +510,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3Mzk0ODAxMSwtMTg4MTg3MTYwOCwtMT
+eyJoaXN0b3J5IjpbLTc3NzY0NjAxMCwtMTg4MTg3MTYwOCwtMT
 Y3NDY1MTQ4NywxNDA1MTg5OTEwLDcyNDg5ODc1MywyMTM0NDUw
 MTYxLC0xNzg1MDMzMzkwLDIxMzI4NzA3MjddfQ==
 -->
