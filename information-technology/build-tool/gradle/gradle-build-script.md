@@ -233,7 +233,7 @@ task other {
 > Default Cleaning!
 > Default Running!
 
-`gradle -q` 특정 task를 파라미터로 넣지 않아도 디폴트 task를  수행합니다. 사실 `gradle clean run`로 빌드를 실행한 것과 마찬가지입니다. multi-project build every subproject can have its own specific default tasks. If a subproject does not specify default tasks, the default tasks of the parent project are used (if defined).
+`gradle -q` 특정 task를 파라미터로 넣지 않아도 디폴트 task를  수행합니다. 사실 `gradle clean run`로 빌드를 실행한 것과 마찬가지입니다. multi-project 빌드에선 모든 하위 프로젝트가 디폴트 task를 가질 수 있습니다. 만약 하위 프로젝트가 정의된 디폴트 tasks가 없다면, 부모 프로젝트에 정의된 디폴트 task를 사용하게 됩니다. If a subproject does not specify default tasks, the default tasks of the parent project are used (if defined).
 
 ## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#configure-by-dag)[Configure by DAG](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#configure-by-dag)
 
@@ -529,6 +529,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYxMzUyMzUsMjEzNDQ1MDE2MSwtMTc4NT
-AzMzM5MCwyMTMyODcwNzI3XX0=
+eyJoaXN0b3J5IjpbMTIxOTg5MjY2OSwyMTM0NDUwMTYxLC0xNz
+g1MDMzMzkwLDIxMzI4NzA3MjddfQ==
 -->
