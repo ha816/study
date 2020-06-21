@@ -19,9 +19,7 @@ task hello {
 위 빌드 스크립트를 실행해보고 싶다면, 파일이 존재하는 디렉토리로 이동해서 `gradle -q hello`를 실행하면 됩니다. 그런데 여기서 `-q` 는 무엇을 할까요? 
 `-q`는 옵션으로, Gradle의 로그 메세지를 나타냅니다. 이걸 써야만 tasks의 아웃풋만이 결과로 나타납니다. 안쓰고 싶다면 `-q` 옵션을 쓰지 않아도 됩니다. [Logging](https://docs.gradle.org/current/userguide/logging.html#logging)
 
-`gradle -q hello`을 실행하면, 빌드 스크립트에 정의된 hello란 task를 찾아 action을 추가 합니다. Gradle은 추가된 action을 실행하며 hello task의 
-
-What’s going on here? This build script defines a single task, called  `hello`, and adds an action to it. When you run  `gradle hello`, Gradle executes the  `hello`  task, which in turn executes the action you’ve provided. The action is simply a block containing some code to execute.
+`gradle -q hello`을 실행하면, 빌드 스크립트에 정의된 hello란 task를 찾아 action을 추가 합니다. Gradle은 hello task를 실행하며, 추가된 action을 순차적으로 하나씩 처리합니다. action은 단지 한 블럭으로 실행할 코드를 가지고 있습니다. 
 
 If you think this looks similar to Ant’s targets, you would be right. Gradle tasks are the equivalent to Ant targets, but as you will see, they are much more powerful. We have used a different terminology than Ant as we think the word  _task_  is more expressive than the word  _target_. Unfortunately this introduces a terminology clash with Ant, as Ant calls its commands, such as  `javac`  or  `copy`, tasks. So when we talk about tasks, we  _always_  mean Gradle tasks, which are the equivalent to Ant’s targets. If we talk about Ant tasks (Ant commands), we explicitly say  _Ant task_.
 
@@ -209,5 +207,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1OTk5MTk2NV19
+eyJoaXN0b3J5IjpbMjEzMjg3MDcyN119
 -->
