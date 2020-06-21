@@ -196,9 +196,13 @@ SQL 가독성을 높이기 위해서 다른 용도로 사용될 수 있는 "&&" 
 
 ### LIKE 연산자
 
-REGEXP 연산자보다는 훨씬 단순한 문자열 패턴 비교 연산자이지만 DBMS에서는 LIKE 연산자를 더 많이 사용한다. 게다가 큰 차이는 REGEXP 연산자는 인덱스를 전혀 사용하지 못하지만, LIKE 연산자는 인덱스를 이용해 처리할 수도 있다. 
+REGEXP 연산자보다는 훨씬 단순한 문자열 패턴 비교 연산자이지만 DBMS에서는 LIKE 연산자를 더 많이 사용한다. 게다가 큰 차이는 REGEXP 연산자는 인덱스를 전혀 사용하지 못하지만, LIKE 연산자는 인덱스를 이용해 처리할 수도 있다. LIKE 연산자는 정규표현식을 검사하는 것이 아니라, 어떤 상수 문자열이 있는지 없는지 정도를 판단하는 연산자다. 
 
-LIKE 연산자는 정규표현식을 검사하는 것이 아니라, 어떤 상수 문자열이 있느
+%
+: 0또는 1개 이상의 모든 문자에 일치(문자의 내용과 관계없이)
+
+-
+: 정확히 1개의 문제아 일치(문자의 내용과 관계없이
 
 
 
@@ -206,11 +210,11 @@ LIKE 연산자는 정규표현식을 검사하는 것이 아니라, 어떤 상�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NTc1NzUwOSwxMDI3NDI0NjUsLTE5Mj
-kxNjExNTksMTQyNDUwMTgwNiw4MjU4MDM1ODUsMTIzMjQwNjg0
-MywtNjgyMDY2OTgzLDE3Njk5MTU5MjksMTk5MDQ3ODAwLDQ3OD
-QxMDg0MiwtMTAyMzU0MTQ4MywtMTM3MjM3MTgwMywtMTA1OTQ3
-MTIyOSwtMTc3OTQ0MDQzOSwtMzIzOTE0Mzc5LDM5NjY4NzY0MS
-wtMTU4ODY3OTMzOCwtMjU4NzY2MDkwLC0yODY1NjAwNDAsLTEy
-NTI0ODI1M119
+eyJoaXN0b3J5IjpbMjA5MTMyMzE2LDEwMjc0MjQ2NSwtMTkyOT
+E2MTE1OSwxNDI0NTAxODA2LDgyNTgwMzU4NSwxMjMyNDA2ODQz
+LC02ODIwNjY5ODMsMTc2OTkxNTkyOSwxOTkwNDc4MDAsNDc4ND
+EwODQyLC0xMDIzNTQxNDgzLC0xMzcyMzcxODAzLC0xMDU5NDcx
+MjI5LC0xNzc5NDQwNDM5LC0zMjM5MTQzNzksMzk2Njg3NjQxLC
+0xNTg4Njc5MzM4LC0yNTg3NjYwOTAsLTI4NjU2MDA0MCwtMTI1
+MjQ4MjUzXX0=
 -->
