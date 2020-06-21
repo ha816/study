@@ -203,6 +203,158 @@ File[] fileList(String dir) {
 I'm fond of agile.manifesto.txt
 I'm fond of gradle.manifesto.txt
 
+## [Default tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:default_tasks)
+
+Gradle allows you to define one or more default tasks that are executed if no other tasks are specified.
+
+Example 14. Defining a default task
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+defaultTasks 'clean', 'run'
+
+task clean {
+    doLast {
+        println 'Default Cleaning!'
+    }
+}
+
+task run {
+    doLast {
+        println 'Default Running!'
+    }
+}
+
+task other {
+    doLast {
+        println "I'm not a default task!"
+    }
+}
+```
+
+Output of  **`gradle -q`**
+
+> gradle -q
+Default Cleaning!
+Default Running!
+
+This is equivalent to running  `gradle clean run`. In a multi-project build every subproject can have its own specific default tasks. If a subproject does not specify default tasks, the default tasks of the parent project are used (if defined).
+
+## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#configure-by-dag)[Configure by DAG](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#configure-by-dag)
+
+As we later describe in full detail (see  [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)), Gradle has a configuration phase and an execution phase. After the configuration phase, Gradle knows all tasks that should be executed. Gradle offers you a hook to make use of this information. A use-case for this would be to check if the release task is among the tasks to be executed. Depending on this, you can assign different values to some variables.
+
+In the following example, execution of the  `distribution`  and  `release`  tasks results in different value of the  `version`  variable.
+
+Example 15. Different outcomes of build depending on chosen tasks
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+task distribution {
+    doLast {
+        println "We build the zip with version=$version"
+    }
+}
+
+task release {
+    dependsOn 'distribution'
+    doLast {
+        println 'We release now'
+    }
+}
+
+gradle.taskGraph.whenReady { taskGraph ->
+    if (taskGraph.hasTask(":release")) {
+        version = '1.0'
+    } else {
+        version = '1.0-SNAPSHOT'
+    }
+}
+```
+
+Output of  `gradle -q distribution`
+
+> gradle -q distribution
+We build the zip with version=1.0-SNAPSHOT
+
+Output of  `gradle -q release`
+
+> gradle -q release
+We build the zip with version=1.0
+We release now
+
+The important thing is that  `whenReady`  affects the release task  _before_  the release task is executed. This works even when the release task is not the  _primary_  task (i.e., the task passed to the  `gradle`  command).
+
+This example works because the  `version`  value is only read at execution time. When using a similar construct in a real build you must make sure that nowhere is the value read eagerly during configuration. Otherwise your build may use different values for a property between configuration and execution.
+
+## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)[External dependencies for the build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)
+
+If your build script needs to use external libraries, you can add them to the script’s classpath in the build script itself. You do this using the  `buildscript()`  method, passing in a block which declares the build script classpath.
+
+Example 16. Declaring external dependencies for the build script
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'commons-codec', name: 'commons-codec', version: '1.2'
+    }
+}
+```
+
+The block passed to the  `buildscript()`  method configures a  [ScriptHandler](https://docs.gradle.org/current/javadoc/org/gradle/api/initialization/dsl/ScriptHandler.html)  instance. You declare the build script classpath by adding dependencies to the  `classpath`  configuration. This is the same way you declare, for example, the Java compilation classpath. You can use any of the  [dependency types](https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:dependency-types)  except project dependencies.
+
+Having declared the build script classpath, you can use the classes in your build script as you would any other classes on the classpath. The following example adds to the previous example, and uses classes from the build script classpath.
+
+Example 17. A build script with external dependencies
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+import org.apache.commons.codec.binary.Base64
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'commons-codec', name: 'commons-codec', version: '1.2'
+    }
+}
+
+task encode {
+    doLast {
+        def byte[] encodedString = new Base64().encode('hello world\n'.getBytes())
+        println new String(encodedString)
+    }
+}
+```
+
+Output of  **`gradle -q encode`**
+
+> gradle -q encode
+aGVsbG8gd29ybGQK
+
+For multi-project builds, the dependencies declared with a project’s  `buildscript()`  method are available to the build scripts of all its sub-projects.
+
+Build script dependencies may be Gradle plugins. Please consult  [Using Gradle Plugins](https://docs.gradle.org/current/userguide/plugins.html#plugins)  for more information on Gradle plugins.
+
+Every project automatically has a  `buildEnvironment`  task of type  [BuildEnvironmentReportTask](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.diagnostics.BuildEnvironmentReportTask.html)  that can be invoked to report on the resolution of the build script dependencies.
+
 
 #### Gradle Wrapper를 사용하는 목적
 
@@ -385,6 +537,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjQ4NTIzMjMsMjEzNDQ1MDE2MSwtMT
-c4NTAzMzM5MCwyMTMyODcwNzI3XX0=
+eyJoaXN0b3J5IjpbOTI4ODQ1NiwyMTM0NDUwMTYxLC0xNzg1MD
+MzMzkwLDIxMzI4NzA3MjddfQ==
 -->
