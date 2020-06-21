@@ -17,17 +17,9 @@ task hello {
 ```
 
 위 빌드 스크립트를 실행해보고 싶다면, 파일이 존재하는 디렉토리로 이동해서 `gradle -q hello`를 실행하면 됩니다. 그런데 여기서 `-q` 는 무엇을 할까요? 
-
 `-q`는 옵션으로, Gradle의 로그 메세지를 나타냅니다. 이걸 써야만 tasks의 아웃풋만이 결과로 나타납니다. 안쓰고 싶다면 `-q` 옵션을 쓰지 않아도 됩니다. [Logging](https://docs.gradle.org/current/userguide/logging.html#logging)
 
-
-
-Example 2. Execution of a build script
-
-Output of  **`gradle -q hello`**
-
-> gradle -q hello
-Hello world!
+`gradle -q hello`을 실행하면, 빌드 스크립트에 정의된 hello란 task를 찾아 action을 추
 
 What’s going on here? This build script defines a single task, called  `hello`, and adds an action to it. When you run  `gradle hello`, Gradle executes the  `hello`  task, which in turn executes the action you’ve provided. The action is simply a block containing some code to execute.
 
@@ -217,5 +209,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk4OTU4MzEyXX0=
+eyJoaXN0b3J5IjpbLTEzMzI0MDMzNTldfQ==
 -->
