@@ -97,7 +97,6 @@ I'm task number 1
 }
 task0.dependsOn task2, task3 // 의존성 동적 추가
 ```
-> gradle -q task0
 > I'm task number 2
 > I'm task number 3
 > I'm task number 0
@@ -284,5 +283,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODUwMzMzOTAsMjEzMjg3MDcyN119
+eyJoaXN0b3J5IjpbLTEzMjA1MzMyNjQsLTE3ODUwMzMzOTAsMj
+EzMjg3MDcyN119
 -->
