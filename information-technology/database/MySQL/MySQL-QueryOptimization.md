@@ -190,7 +190,9 @@ SELECT 1<=>1, NULL <=> NULL, 1 <=> NULL;
 SQL 가독성을 높이기 위해서 다른 용도로 사용될 수 있는 "&&" 와 "||"를 사용하지 않는 것이 좋다.
 
 
+### REGEXP 연산자
 
+문자열 값이 어떤 패턴을 만족하는지 확인하는 연산자이다.
 
 
 
@@ -198,11 +200,11 @@ SQL 가독성을 높이기 위해서 다른 용도로 사용될 수 있는 "&&" 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNDUwMTgwNiw4MjU4MDM1ODUsMTIzMj
-QwNjg0MywtNjgyMDY2OTgzLDE3Njk5MTU5MjksMTk5MDQ3ODAw
-LDQ3ODQxMDg0MiwtMTAyMzU0MTQ4MywtMTM3MjM3MTgwMywtMT
-A1OTQ3MTIyOSwtMTc3OTQ0MDQzOSwtMzIzOTE0Mzc5LDM5NjY4
-NzY0MSwtMTU4ODY3OTMzOCwtMjU4NzY2MDkwLC0yODY1NjAwND
-AsLTEyNTI0ODI1Myw4Njc4NDIwNTksMTUzNjQyMDI4OSwtMjEz
-NDk2Mzg3NV19
+eyJoaXN0b3J5IjpbLTg2NzQ2Nzg4NCwxNDI0NTAxODA2LDgyNT
+gwMzU4NSwxMjMyNDA2ODQzLC02ODIwNjY5ODMsMTc2OTkxNTky
+OSwxOTkwNDc4MDAsNDc4NDEwODQyLC0xMDIzNTQxNDgzLC0xMz
+cyMzcxODAzLC0xMDU5NDcxMjI5LC0xNzc5NDQwNDM5LC0zMjM5
+MTQzNzksMzk2Njg3NjQxLC0xNTg4Njc5MzM4LC0yNTg3NjYwOT
+AsLTI4NjU2MDA0MCwtMTI1MjQ4MjUzLDg2Nzg0MjA1OSwxNTM2
+NDIwMjg5XX0=
 -->
