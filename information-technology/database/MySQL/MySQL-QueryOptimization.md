@@ -181,7 +181,11 @@ SELECT 1<=>1, NULL <=> NULL, 1 <=> NULL;
 
 ### 부정비교(<>, !=)
 
-같지 않다를 비교할때 일반적으로 "<>"를 많이 사용한다. 물론 "!="를 써도 문제는 없다. 
+같지 않다를 비교할때 일반적으로 "<>"를 많이 사용한다. 물론 "!="를 써도 문제는 없다. 하지만 혼용되면 가독성이 떨어지니 통일해서 사용하는 방법을 권장한다.
+
+### Not 연산자 (!)
+
+TRUE 
 
 
 
@@ -189,11 +193,11 @@ SELECT 1<=>1, NULL <=> NULL, 1 <=> NULL;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzA1MzkxNyw4MjU4MDM1ODUsMTIzMj
-QwNjg0MywtNjgyMDY2OTgzLDE3Njk5MTU5MjksMTk5MDQ3ODAw
-LDQ3ODQxMDg0MiwtMTAyMzU0MTQ4MywtMTM3MjM3MTgwMywtMT
-A1OTQ3MTIyOSwtMTc3OTQ0MDQzOSwtMzIzOTE0Mzc5LDM5NjY4
-NzY0MSwtMTU4ODY3OTMzOCwtMjU4NzY2MDkwLC0yODY1NjAwND
-AsLTEyNTI0ODI1Myw4Njc4NDIwNTksMTUzNjQyMDI4OSwtMjEz
-NDk2Mzg3NV19
+eyJoaXN0b3J5IjpbMTE1MzQ1MTI3LDgyNTgwMzU4NSwxMjMyND
+A2ODQzLC02ODIwNjY5ODMsMTc2OTkxNTkyOSwxOTkwNDc4MDAs
+NDc4NDEwODQyLC0xMDIzNTQxNDgzLC0xMzcyMzcxODAzLC0xMD
+U5NDcxMjI5LC0xNzc5NDQwNDM5LC0zMjM5MTQzNzksMzk2Njg3
+NjQxLC0xNTg4Njc5MzM4LC0yNTg3NjYwOTAsLTI4NjU2MDA0MC
+wtMTI1MjQ4MjUzLDg2Nzg0MjA1OSwxNTM2NDIwMjg5LC0yMTM0
+OTYzODc1XX0=
 -->
