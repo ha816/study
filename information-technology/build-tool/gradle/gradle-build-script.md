@@ -81,12 +81,37 @@ Groovy의 장점은 task가 무엇을 하는지 정의하는 것을 동적으로
 }
 ```
 
-Output of  **`gradle -q task1`**
-
 > gradle -q task1
 I'm task number 1
 
-## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:manipulating_existing_tasks)[Manipulating](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:manipulating_existing_tasks)
+## [Manipulating existing tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:manipulating_existing_tasks)
+
+만
+Once tasks are created they can be accessed via an  _API_. For instance, you could use this to dynamically add dependencies to a task, at runtime. Ant doesn’t allow anything like this.
+
+Example 8. Accessing a task via API - adding a dependency
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+4.times { counter ->
+    task "task$counter" {
+        doLast {
+            println "I'm task number $counter"
+        }
+    }
+}
+task0.dependsOn task2, task3
+```
+
+Output of  **`gradle -q task0`**
+
+> gradle -q task0
+I'm task number 2
+I'm task number 3
+I'm task number 0
 
 
 #### Gradle Wrapper를 사용하는 목적
@@ -270,5 +295,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTgyNzE3NjQsMjEzMjg3MDcyN119
+eyJoaXN0b3J5IjpbLTcyNzQ5NzAyLDIxMzI4NzA3MjddfQ==
 -->
