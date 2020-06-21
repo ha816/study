@@ -69,7 +69,7 @@ Gradle의 기본 빌드 로직만을 따라서 프로젝트를 만들 수 있으
 
 ## [5. Build scripts operate against an API](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)
 
-Gradle의 빌드 스크립트는 실제 실행 코드이다. 이런 빌드 스크립트가 코드인 사실 때문에 Gradle에 대한 잘못된 생각이 있다. 
+Gradle의 빌드 스크립트는 실제 실행 코드이다. 이런 빌드 스크립트가 코드인 사실 덕분에 Gradle의 유연함이 온다고 생각할 수 있는데, 이는 사실이 아니다
 
 잘 설계된 빌드 스크립트는 소프트웨어 필드를 위해 어떤 스텝들이 필요한지 묘사한다, 어떻게 이런 스텝들이 동작해야하는 지가 아니라. 이것이 커스텀 task 타입과 플러그인이 해야할 일이다. 
 
@@ -259,7 +259,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMjE5MjI5OCwtNzgwMzIyNDUsLTkxOD
+eyJoaXN0b3J5IjpbMTQzMzY4OTMyMiwtNzgwMzIyNDUsLTkxOD
 UxMDA3OSwyMTIxMzM3NDgyLC0xOTU2MDM0MTMwLC0xNjAxODky
 Mzg2LC04OTM4MTE5NTQsMjA4NjYyNjgzMSwtOTA1NTI0OTQyLC
 04NTEyODg3NTUsMTkyMDY4MjMwN119
