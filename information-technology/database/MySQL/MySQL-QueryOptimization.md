@@ -179,14 +179,16 @@ SELECT 1<=>1, NULL <=> NULL, 1 <=> NULL;
 ```
 위 연산에도 보았겠지만 **NULL은 IS NULL 연산자 이외에는 비교할 방법이 없다.** 그래서 한쪽이 NULL이면 비교 결과도 NULL인 것이다. 하지만 NULL-Safe 비교 연산자를 이용하면 비교 대상이 모두 NULL 이라면 TRUE를 반환한다. 즉 "<=>" 연산자는 NULL을 하나의 값으로 인식하고 비교하는 방법이라고 볼 수 있다.
 
-### 부정비교(<>, !
+### 부정비교(<>, !=)
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTE2NjMwMzIsODI1ODAzNTg1LDEyMz
+eyJoaXN0b3J5IjpbLTEwMjY4OTExMTIsODI1ODAzNTg1LDEyMz
 I0MDY4NDMsLTY4MjA2Njk4MywxNzY5OTE1OTI5LDE5OTA0Nzgw
 MCw0Nzg0MTA4NDIsLTEwMjM1NDE0ODMsLTEzNzIzNzE4MDMsLT
 EwNTk0NzEyMjksLTE3Nzk0NDA0MzksLTMyMzkxNDM3OSwzOTY2
