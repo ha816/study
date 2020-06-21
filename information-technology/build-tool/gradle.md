@@ -73,17 +73,12 @@ Gradle의 빌드 스크립트는 실제 실행 코드입니다. 이렇듯 빌드
 
 잘 설계된 빌드 스크립트는 소프트웨어 필드를 위해 어떤 스텝들이 필요한지 나타냅니다, 어떻게 이런 스텝들이 동작해야하는 지가 아니라. 이것이 커스텀 task 타입과 플러그인이 해야할 일 입니다.
 
-아직 빌드 스크립트를 실행 가능한 코드로 보는 것이 유용한 영역이 있습니다. 바로 어떻게 빌드 스크립트가 Gradle's API에 대응하는지 구문을 이해하는 것에는 유용합니다.
-
-Gradle's API는 [Groovy DSL Reference](https://docs.gradle.org/current/dsl/)과 [Javadocs](https://docs.gradle.org/current/javadoc/)로 작성 되어있습니다.
+아직 빌드 스크립트를 실행 가능한 코드로 보는 것이 유용한 영역이 있습니다. 바로 어떻게 빌드 스크립트가 Gradle's API에 대응하는지 구문을 이해하는 것에는 유용합니다. Gradle's API는 [Groovy DSL Reference](https://docs.gradle.org/current/dsl/)과 [Javadocs](https://docs.gradle.org/current/javadoc/)로 작성 되어있습니다.
 
 한 빌드 스크립트의 문맥을 잘 파악 하는데는, [Groovy Build Script Primer](https://docs.gradle.org/current/userguide/groovy_build_script_primer.html#groovy_build_script_primer)를 보면 어떻게 API 문서를 효과적으로 사용하는지를 알 수 있습니다.
 
 Gradle은  JVM에서 동작하기 때문에, 빌드 스크릷트들은 표준 [Java API](https://docs.oracle.com/javase/8/docs/api)를 사용할 수 있습니다.
-먄약 Groovy 빌드 스크립트를 사용한다면 Groovy API들도 축
-Groovy build scripts can additionally use the Groovy APIs, while Kotlin build scripts can use the Kotlin ones.
-
-As we recommend in our best practices, you should  [avoid putting much, if any, imperative logic in your build scripts](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts).	
+먄약 Groovy 빌드 스크립트를 사용한다면 Groovy API들도 추가적으로 사용 가능합니다. 반면 Kotlin 빌드 스크립트는 Kotlin것만 사용 가능합니다. 
 
 # Configuration
 
@@ -265,7 +260,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNDQ5MjY1NSwtNzgwMzIyNDUsLTkxOD
+eyJoaXN0b3J5IjpbLTI3MTA2ODY2OCwtNzgwMzIyNDUsLTkxOD
 UxMDA3OSwyMTIxMzM3NDgyLC0xOTU2MDM0MTMwLC0xNjAxODky
 Mzg2LC04OTM4MTE5NTQsMjA4NjYyNjgzMSwtOTA1NTI0OTQyLC
 04NTEyODg3NTUsMTkyMDY4MjMwN119
