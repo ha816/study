@@ -101,13 +101,7 @@ task0.dependsOn task2, task3 // 의존성 동적 추가
 > I'm task number 3
 > I'm task number 0
 
-의존성 추가가 아니라 존재하는 task에 행도you can add behavior to an existing task.
-
-Example 9. Accessing a task via API - adding behaviour
-
-`Groovy``Kotlin`
-
-build.gradle
+의존성 추가가 아니라 존재하는 task에 행동도 추가할 수 있습니다. 
 
 ```groovy
 task hello {
@@ -130,13 +124,13 @@ hello.configure {
 }
 ```
 
-Output of  **`gradle -q hello`**
-
 > gradle -q hello
 Hello Venus
 Hello Earth
 Hello Mars
 Hello Jupiter
+
+`doFirst`와 `doLast`은 여러번 실행될 수 있다. taks action 리스트의 
 
 The calls  `doFirst`  and  `doLast`  can be executed multiple times. They add an action to the beginning or the end of the task’s actions list. When the task executes, the actions in the action list are executed in order.
 
@@ -378,6 +372,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ0OTQ0NDM5LC0xNzg1MDMzMzkwLDIxMz
-I4NzA3MjddfQ==
+eyJoaXN0b3J5IjpbMTMzMDUyODU5MiwtMTc4NTAzMzM5MCwyMT
+MyODcwNzI3XX0=
 -->
