@@ -130,9 +130,7 @@ Hello Earth
 Hello Mars
 Hello Jupiter
 
-`doFirst`와 `doLast`은 여러번 실행될 수 있다. taks action 리스트의 
-
-The calls  `doFirst`  and  `doLast`  can be executed multiple times. They add an action to the beginning or the end of the task’s actions list. When the task executes, the actions in the action list are executed in order.
+`doFirst`와 `doLast`은 여러번 실행될 수 있다. 이것들은 taks action 리스트의 처음이나 끝에 action을 추가합니다. task가 실행되면, action 리스트의 action은 순서대로 실행됩니다. 
 
 ## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)[Groovy DSL shortcut notations](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)
 
@@ -372,6 +370,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDUyODU5MiwtMTc4NTAzMzM5MCwyMT
-MyODcwNzI3XX0=
+eyJoaXN0b3J5IjpbOTk3OTAyNTM2LC0xNzg1MDMzMzkwLDIxMz
+I4NzA3MjddfQ==
 -->
