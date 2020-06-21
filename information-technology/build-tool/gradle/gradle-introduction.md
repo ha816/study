@@ -18,6 +18,13 @@ Gradle은 주로 Groovy로 작성된 빌드 스크립트로 빌드를 하게 됩
 
 # Concepts
 
+## Projects & Tasks
+
+모든 Gradle 빌드는 최소 하나 이상의 프로젝트들로 만들어집니다. 프로젝트가 무엇을 나타내는지는 Gradle로 무엇을 하느냐에 달려 있습니다. 구성에 따라 다르지만, 다수의 프로젝트를 동시에 빌드하는 것도 가능합ㄴ
+
+그리고 각 프로젝트는 하나 이상의 task로 구성됩니다. 
+
+
 ## Task Graph
 
 Gradle은 task 집단으로 구성된 Directed Acyclic Graphs(DAGs)로 전체 빌드 과정을 모델링합니다. 즉 하나의 빌드는 반드시 tasks와 tasks간의 의존성을 나타내는 DAG를 만든다는 의미입니다. 그래프가 생성되면, Gradle은 어떤 task가 어떤 순서로 동작해야 하는지 판단하고 작업을 수행합니다.
@@ -71,5 +78,5 @@ Gradle은  JVM에서 동작하기 때문에, 빌드 스크릷트들은 표준 [J
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI0NzI4MDI2XX0=
+eyJoaXN0b3J5IjpbMjE0NzM5ODI3OV19
 -->
