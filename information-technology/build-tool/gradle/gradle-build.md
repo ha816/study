@@ -5,6 +5,13 @@
 ## Projects & Tasks
 
 
+Everything in Gradle sits on top of two basic concepts:  _projects_  and  _tasks_.
+
+Every Gradle build is made up of one or more  _projects_. What a project represents depends on what it is that you are doing with Gradle. For example, a project might represent a library JAR or a web application. It might represent a distribution ZIP assembled from the JARs produced by other projects. A project does not necessarily represent a thing to be built. It might represent a thing to be done, such as deploying your application to staging or production environments. Don’t worry if this seems a little vague for now. Gradle’s build-by-convention support adds a more concrete definition for what a project is.
+
+Each project is made up of one or more  _tasks_. A task represents some atomic piece of work which a build performs. This might be compiling some classes, creating a JAR, generating Javadoc, or publishing some archives to a repository.
+
+For now, we will look at defining some simple tasks in a build with one project. Later chapters will look at working with multiple projects and more about working with projects and tasks.
 
 
 
@@ -184,5 +191,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTk0MzcyMDhdfQ==
+eyJoaXN0b3J5IjpbNDI3NDc3NTE1XX0=
 -->
