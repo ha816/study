@@ -69,13 +69,19 @@ Gradle의 기본 빌드 로직만을 따라서 프로젝트를 만들 수 있으
 
 ## [5. Build scripts operate against an API](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)
 
-Gradle의 빌드 스크립트 실행 코드로 보기 쉽다. 
+Gradle의 빌드 스크립트는 실제 실행 코드이다. 
 
-잘 설계된 빌드 스크립트는 소프트웨어 필드를 위해 어떤 스텝들이 필요한지 묘사한다, 어떻게 이런 스텝들이 동작해야하는 지가 아니라
+There is a common misconception that Gradle’s power and flexibility come from the fact that its build scripts are code. 
 
-It’s easy to view Gradle’s build scripts as executable code, because that’s what they are. But that’s an implementation detail: well-designed build scripts describe  _what_  steps are needed to build the software, not  _how_  those steps should do the work. That’s a job for custom task types and plugins.
 
-There is a common misconception that Gradle’s power and flexibility come from the fact that its build scripts are code. This couldn’t be further from the truth. It’s the underlying model and API that provide the power. As we recommend in our best practices, you should  [avoid putting much, if any, imperative logic in your build scripts](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts).
+잘 설계된 빌드 스크립트는 소프트웨어 필드를 위해 어떤 스텝들이 필요한지 묘사한다, 어떻게 이런 스텝들이 동작해야하는 지가 아니라. 이것이 커스텀 task 타입과 플러그인이 해야할 일이다. 
+
+
+
+
+There is a common misconception that Gradle’s power and flexibility come from the fact that its build scripts are code. 
+
+This couldn’t be further from the truth. It’s the underlying model and API that provide the power. As we recommend in our best practices, you should  [avoid putting much, if any, imperative logic in your build scripts](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts).
 
 Yet there is one area in which it is useful to view a build script as executable code: in understanding how the syntax of the build script maps to Gradle’s API. The API documentation — formed of the  [Groovy DSL Reference](https://docs.gradle.org/current/dsl/)  and the  [Javadocs](https://docs.gradle.org/current/javadoc/)  — lists methods and properties, and refers to closures and actions. What do these mean within the context of a build script? Check out the  [Groovy Build Script Primer](https://docs.gradle.org/current/userguide/groovy_build_script_primer.html#groovy_build_script_primer)  to learn the answer to that question so that you can make effective use of the API documentation.
 
@@ -261,7 +267,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMTMyNzYxNSwtNzgwMzIyNDUsLTkxOD
+eyJoaXN0b3J5IjpbLTEyMTc0NzI0OSwtNzgwMzIyNDUsLTkxOD
 UxMDA3OSwyMTIxMzM3NDgyLC0xOTU2MDM0MTMwLC0xNjAxODky
 Mzg2LC04OTM4MTE5NTQsMjA4NjYyNjgzMSwtOTA1NTI0OTQyLC
 04NTEyODg3NTUsMTkyMDY4MjMwN119
