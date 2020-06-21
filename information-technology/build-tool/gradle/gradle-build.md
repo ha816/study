@@ -8,10 +8,6 @@
 
 그리고 각 프로젝트는 하나 이상의 task로 구성됩니다. 
 
-Each project is made up of one or more  _tasks_. A task represents some atomic piece of work which a build performs. This might be compiling some classes, creating a JAR, generating Javadoc, or publishing some archives to a repository.
-
-For now, we will look at defining some simple tasks in a build with one project. Later chapters will look at working with multiple projects and more about working with projects and tasks.
-
 
 
 #### Gradle Wrapper를 사용하는 목적
@@ -190,5 +186,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY2MjA0MzAxXX0=
+eyJoaXN0b3J5IjpbLTEwMzE0MDgwNjJdfQ==
 -->
