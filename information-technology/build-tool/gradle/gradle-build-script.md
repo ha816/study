@@ -134,8 +134,7 @@ Hello Jupiter
 
 ## [Groovy DSL shortcut notations](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)
 
-존재하는 task에서 각 속성을 쉽게 사용 가능합니다. task는 빌드 스크립트의 한 속성으로 이것을 사용할 수 있습니다. 
-
+존재하는 task에서 각 속성을 쉽게 사용 가능합니다. 
 ```groovy
 task hello {
     doLast {
@@ -143,17 +142,43 @@ task hello {
     }
 }
 hello.doLast {
-    println "Greetings from the $hello.name task."
+    println "Greetings from the $hello.name task." // hello task의 name 속성
 }
 ```
 
-Output of  **`gradle -q hello`**
-
 > gradle -q hello
-Hello world!
-Greetings from the hello task.
+> Hello world!
+> Greetings from the hello task.
 
-This enables very readable code, especially when using the tasks provided by the plugins, like the  `compile`  task.
+## [Extra task properties](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)
+
+You can add your own properties to a task. To add a property named  `myProperty`, set  `ext.myProperty`  to an initial value. From that point on, the property can be read and set like a predefined task property.
+
+Example 11. Adding extra properties to a task
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+task myTask {
+    ext.myProperty = "myValue"
+}
+
+task printTaskProperties {
+    doLast {
+        println myTask.myProperty
+    }
+}
+```
+
+Output of  **`gradle -q printTaskProperties`**
+
+> gradle -q printTaskProperties
+myValue
+
+Extra properties aren’t limited to tasks. You can read more about them in  [Extra properties](https://docs.gradle.org/current/userguide/writing_build_scripts.html#sec:extra_properties).
+
 
 ## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)[Extra task properties](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)
 
@@ -366,6 +391,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDcxMjEzMTksLTE3ODUwMzMzOTAsMj
-EzMjg3MDcyN119
+eyJoaXN0b3J5IjpbMTQzODI3NTUwNSwtMTc4NTAzMzM5MCwyMT
+MyODcwNzI3XX0=
 -->
