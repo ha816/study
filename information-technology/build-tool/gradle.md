@@ -78,11 +78,10 @@ Gradle의 빌드 스크립트는 실제 실행 코드입니다. 이렇듯 빌드
 Gradle's API는 [Groovy DSL Reference](https://docs.gradle.org/current/dsl/)과 [Javadocs](https://docs.gradle.org/current/javadoc/)로 작성 되어있습니다.
 
 한 빌드 스크립트의 문맥은 어떤 의미일까요? 
-[Groovy Build Script Primer](https://docs.gradle.org/current/userguide/groovy_build_script_primer.html#groovy_build_script_primer)를 보면 어떻게 API 문서를 효과적으로 사용하는지 
+[Groovy Build Script Primer](https://docs.gradle.org/current/userguide/groovy_build_script_primer.html#groovy_build_script_primer)를 보면 어떻게 API 문서를 효과적으로 사용하는지를 알 수 있습니다.
 
-What do these mean within the context of a build script? Check out the  [Groovy Build Script Primer](https://docs.gradle.org/current/userguide/groovy_build_script_primer.html#groovy_build_script_primer)  to learn the answer to that question so that you can make effective use of the API documentation.
-
-As Gradle runs on the JVM, build scripts can also use the standard  [Java API](https://docs.oracle.com/javase/8/docs/api). Groovy build scripts can additionally use the Groovy APIs, while Kotlin build scripts can use the Kotlin ones.
+Gradle은  JVM에서 동작하기 때문에, 빌드 스크릷트들은 표준 [Java API](https://docs.oracle.com/javase/8/docs/api)를 사용할 수 있습니다.
+Groovy build scripts can additionally use the Groovy APIs, while Kotlin build scripts can use the Kotlin ones.
 
 As we recommend in our best practices, you should  [avoid putting much, if any, imperative logic in your build scripts](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts).	
 
@@ -266,8 +265,8 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1ODk2NTY2OSwtNzgwMzIyNDUsLTkxOD
-UxMDA3OSwyMTIxMzM3NDgyLC0xOTU2MDM0MTMwLC0xNjAxODky
-Mzg2LC04OTM4MTE5NTQsMjA4NjYyNjgzMSwtOTA1NTI0OTQyLC
-04NTEyODg3NTUsMTkyMDY4MjMwN119
+eyJoaXN0b3J5IjpbOTk2MzA1Mzc5LC03ODAzMjI0NSwtOTE4NT
+EwMDc5LDIxMjEzMzc0ODIsLTE5NTYwMzQxMzAsLTE2MDE4OTIz
+ODYsLTg5MzgxMTk1NCwyMDg2NjI2ODMxLC05MDU1MjQ5NDIsLT
+g1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
 -->
