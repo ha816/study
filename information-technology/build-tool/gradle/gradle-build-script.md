@@ -320,15 +320,7 @@ task encode {
 
 multi-project 빌드에서, 한 프로젝트의 `buildscript()`로 선언된 의존성을 이것의 하위 프로젝트를 빌드 스크립트에서 사용이 가능합니다. 
 
-빌
-
-For multi-project builds, the dependencies declared with a project’s  `buildscript()`  method are available to the build scripts of all its sub-projects.
-
-Build script dependencies may be Gradle plugins. Please consult  [Using Gradle Plugins](https://docs.gradle.org/current/userguide/plugins.html#plugins)  for more information on Gradle plugins.
-
-Every project automatically has a  `buildEnvironment`  task of type  [BuildEnvironmentReportTask](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.diagnostics.BuildEnvironmentReportTask.html)  that can be invoked to report on the resolution of the build script dependencies.
-
-
+플러그인을 이용한 방법은  [Using Gradle Plugins](https://docs.gradle.org/current/userguide/plugins.html#plugins) 을 보도록 합시다.
 
 
 #### Gradle Wrapper를 사용하는 목적
@@ -512,7 +504,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5ODAyNDkyOSwtMTg4MTg3MTYwOCwtMT
-Y3NDY1MTQ4NywxNDA1MTg5OTEwLDcyNDg5ODc1MywyMTM0NDUw
-MTYxLC0xNzg1MDMzMzkwLDIxMzI4NzA3MjddfQ==
+eyJoaXN0b3J5IjpbLTIwOTA4OTE3MzAsLTE4ODE4NzE2MDgsLT
+E2NzQ2NTE0ODcsMTQwNTE4OTkxMCw3MjQ4OTg3NTMsMjEzNDQ1
+MDE2MSwtMTc4NTAzMzM5MCwyMTMyODcwNzI3XX0=
 -->
