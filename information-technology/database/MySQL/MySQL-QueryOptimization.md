@@ -187,14 +187,18 @@ SELECT 1<=>1, NULL <=> NULL, 1 <=> NULL;
 
 일반적으로 DBMS에서는 불리언 표현식의 결과를 결합하기 위해 AND나 OR을 사용한다. MySQL에선 &&와 || 를 사용하기도 한다. 하지만 오라클에서는 || 가 불리언 표현식의 결합 연산자가 아니라 문자열을 결합하는 연산자로 사용한다. 따라서 오라클에서 MySQL로 넘어온다면 주의해야 한다. 
 
-SQL 가독성
+SQL 가독성을 높이기 위해서 다른 용도로 사용될 수 있는 "&&" 와 "||"를 사용하지 않는 것이 좋다.
+
+### 나누기(/, DIV)와 나머지(%, MOD) 연산자
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxODk2NDIzLDgyNTgwMzU4NSwxMjMyND
+eyJoaXN0b3J5IjpbNDk1ODY1NjAwLDgyNTgwMzU4NSwxMjMyND
 A2ODQzLC02ODIwNjY5ODMsMTc2OTkxNTkyOSwxOTkwNDc4MDAs
 NDc4NDEwODQyLC0xMDIzNTQxNDgzLC0xMzcyMzcxODAzLC0xMD
 U5NDcxMjI5LC0xNzc5NDQwNDM5LC0zMjM5MTQzNzksMzk2Njg3
