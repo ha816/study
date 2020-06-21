@@ -63,9 +63,9 @@ task taskY {
 > taskY
 > taskX
 
-`taskX` 에서  `taskY`에 대한 의존성은 `taskY`가 정의되기 전에 선언되었어도 
+`taskX` 에서  `taskY`에 대한 의존성은 `taskY`가 정의되기 전에 선언되었더라도 잘 동작합니다. 이것은 multi-project 빌드에 매우 중요한 특성입니다. 
 
-The dependency of  `taskX`  to  `taskY`  may be declared before  `taskY`  is defined. This freedom is very important for multi-project builds. Task dependencies are discussed in more detail in  [Adding dependencies to a task](https://docs.gradle.org/current/userguide/more_about_tasks.html#sec:adding_dependencies_to_tasks).
+한 가지 주의할 점은 아직 정의 되지 않은 task를 참조할때는,  [shortcut notation](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notati)을 
 
 Please notice that you can’t use  [shortcut notation](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)  when referring to a task that is not yet defined.
 
@@ -253,5 +253,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODIxMjMwMzQsMjEzMjg3MDcyN119
+eyJoaXN0b3J5IjpbLTEzMjk2MjAwOCwyMTMyODcwNzI3XX0=
 -->
