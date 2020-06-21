@@ -71,14 +71,16 @@ Gradle의 기본 빌드 로직만을 따라서 프로젝트를 만들 수 있으
 
 Gradle의 빌드 스크립트는 실제 실행 코드입니다. 빌드 스크립트가 코드인 사실 덕분에 Gradle의 유연함이 온다고 생각할 수 있는데, 이는 사실이 아닙니다.
 
-잘 설계된 빌드 스크립트는 소프트웨어 필드를 위해 어떤 스텝들이 필요한지 묘사한다, 어떻게 이런 스텝들이 동작해야하는 지가 아니라. 이것이 커스텀 task 타입과 플러그인이 해야할 일이다. 
+잘 설계된 빌드 스크립트는 소프트웨어 필드를 위해 어떤 스텝들이 필요한지 나타냅니다, 어떻게 이런 스텝들이 동작해야하는 지가 아니라. 이것이 커스텀 task 타입과 플러그인이 해야할 일
 
-This couldn’t be further from the truth. It’s the underlying model and API that provide the power. As we recommend in our best practices, you should  [avoid putting much, if any, imperative logic in your build scripts](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts).
+This couldn’t be further from the truth. It’s the underlying model and API that provide the power. 
 
 Yet there is one area in which it is useful to view a build script as executable code: in understanding how the syntax of the build script maps to Gradle’s API. The API documentation — formed of the  [Groovy DSL Reference](https://docs.gradle.org/current/dsl/)  and the  [Javadocs](https://docs.gradle.org/current/javadoc/)  — lists methods and properties, and refers to closures and actions. What do these mean within the context of a build script? Check out the  [Groovy Build Script Primer](https://docs.gradle.org/current/userguide/groovy_build_script_primer.html#groovy_build_script_primer)  to learn the answer to that question so that you can make effective use of the API documentation.
 
 As Gradle runs on the JVM, build scripts can also use the standard  [Java API](https://docs.oracle.com/javase/8/docs/api). Groovy build scripts can additionally use the Groovy APIs, while Kotlin build scripts can use the Kotlin ones.
-	
+
+As we recommend in our best practices, you should  [avoid putting much, if any, imperative logic in your build scripts](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts).	
+
 # Configuration
 
 #### Gradle Wrapper를 사용하는 목적
@@ -259,7 +261,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNDQxMjYwMCwtNzgwMzIyNDUsLTkxOD
+eyJoaXN0b3J5IjpbLTg1MDUwMjUxNSwtNzgwMzIyNDUsLTkxOD
 UxMDA3OSwyMTIxMzM3NDgyLC0xOTU2MDM0MTMwLC0xNjAxODky
 Mzg2LC04OTM4MTE5NTQsMjA4NjYyNjgzMSwtOTA1NTI0OTQyLC
 04NTEyODg3NTUsMTkyMDY4MjMwN119
