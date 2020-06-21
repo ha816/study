@@ -1,9 +1,10 @@
 # Overview
 
-이제 Gradle을 실제 빌드하기 위한 개념을 잡아보자. 
+이제 Gradle을 실제 빌드하기 위한 개념을 잡아봅시다. 
 
 ## Projects & Tasks
 
+모든 Gradle 빌드는 최소 하나 이상의 프로젝트들로 만들어집니다. 프로젝트가 무엇을 나타내는지는 Gradle로 무엇을 하느냐에 달려 있습니다. 
 
 Everything in Gradle sits on top of two basic concepts:  _projects_  and  _tasks_.
 
@@ -191,5 +192,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3NDc3NTE1XX0=
+eyJoaXN0b3J5IjpbMTU1MTcwNTcwNV19
 -->
