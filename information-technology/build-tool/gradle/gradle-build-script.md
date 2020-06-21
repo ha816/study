@@ -1,7 +1,45 @@
 # Overview
 
-이제 Gradle을 실제 빌드하기 위한 개념을 잡아봅시다. 
+스크립트를 실제 어떻게 사용하는지 알아보는 장입니다. 
 
+## [Hello world](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:hello_world)
+
+You run a Gradle build using the  `gradle`  command. The  `gradle`  command looks for a file called  `build.gradle`  in the current directory.[[1](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#_footnotedef_1 "View footnote.")]  We call this  `build.gradle`  file a  _build script_, although strictly speaking it is a build configuration script, as we will see later. The build script defines a project and its tasks.
+
+To try this out, create the following build script named  `build.gradle`.
+
+Example 1. Your first build script
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+task hello {
+    doLast {
+        println 'Hello world!'
+    }
+}
+```
+
+In a command-line shell, move to the containing directory and execute the build script with  `gradle -q hello`:
+
+What does  `-q`  do?
+
+Most of the examples in this user guide are run with the  `-q`  command-line option. This suppresses Gradle’s log messages, so that only the output of the tasks is shown. This keeps the example output in this user guide a little clearer. You don’t need to use this option if you don’t want to. See  [Logging](https://docs.gradle.org/current/userguide/logging.html#logging)  for more details about the command-line options which affect Gradle’s output.
+
+Example 2. Execution of a build script
+
+Output of  **`gradle -q hello`**
+
+> gradle -q hello
+Hello world!
+
+What’s going on here? This build script defines a single task, called  `hello`, and adds an action to it. When you run  `gradle hello`, Gradle executes the  `hello`  task, which in turn executes the action you’ve provided. The action is simply a block containing some code to execute.
+
+If you think this looks similar to Ant’s targets, you would be right. Gradle tasks are the equivalent to Ant targets, but as you will see, they are much more powerful. We have used a different terminology than Ant as we think the word  _task_  is more expressive than the word  _target_. Unfortunately this introduces a terminology clash with Ant, as Ant calls its commands, such as  `javac`  or  `copy`, tasks. So when we talk about tasks, we  _always_  mean Gradle tasks, which are the equivalent to Ant’s targets. If we talk about Ant tasks (Ant commands), we explicitly say  _Ant task_.
+
+## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_scripts_are_code)[Build scripts are code](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_scripts_are_code)
 
 
 #### Gradle Wrapper를 사용하는 목적
@@ -185,5 +223,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNjc4MzUxMF19
+eyJoaXN0b3J5IjpbLTE1ODI4NjE3NTddfQ==
 -->
