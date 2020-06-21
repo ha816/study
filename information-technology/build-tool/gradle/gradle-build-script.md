@@ -44,7 +44,7 @@ task intro {
 >Hello world!
 >I'm Gradle
 
-To add a dependency, the corresponding task does not need to exist.
+의존성을 추가하기 할때는, 대응하는 task가  없어도 됩니다. 아래 예제는 
 
 Example 6. Lazy dependsOn - the other task does not exist (yet)
 
@@ -260,5 +260,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAwOTI5ODI1LDIxMzI4NzA3MjddfQ==
+eyJoaXN0b3J5IjpbMTgzNjMyNTMwLDIxMzI4NzA3MjddfQ==
 -->
