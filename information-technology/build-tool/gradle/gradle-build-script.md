@@ -23,15 +23,7 @@ task hello {
 
 ## [Task dependencies](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)
 
-다른 tasks 위에 또 다른 
-
-you can declare tasks that depend on other tasks.
-
-Example 5. Declaration of task that depends on other task
-
-`Groovy``Kotlin`
-
-build.gradle
+다른 tasks 위에 또 다른 tasks를 선언할 수 있습니다.
 
 ```groovy
 task hello {
@@ -269,5 +261,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MzcxNDk0NCwyMTMyODcwNzI3XX0=
+eyJoaXN0b3J5IjpbMTkwMTk2MjMzOSwyMTMyODcwNzI3XX0=
 -->
