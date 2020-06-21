@@ -21,9 +21,9 @@ task hello {
 
 `gradle -q hello`을 실행하면, 빌드 스크립트에 정의된 hello란 task를 찾아 action을 추가 합니다. Gradle은 hello task를 실행하며, 추가된 action을 순차적으로 하나씩 처리합니다. action은 단지 한 블럭으로 실행할 코드를 가지고 있습니다. 
 
-If you think this looks similar to Ant’s targets, you would be right. Gradle tasks are the equivalent to Ant targets, but as you will see, they are much more powerful. We have used a different terminology than Ant as we think the word  _task_  is more expressive than the word  _target_. Unfortunately this introduces a terminology clash with Ant, as Ant calls its commands, such as  `javac`  or  `copy`, tasks. So when we talk about tasks, we  _always_  mean Gradle tasks, which are the equivalent to Ant’s targets. If we talk about Ant tasks (Ant commands), we explicitly say  _Ant task_.
+## [Build scripts are code](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_scripts_are_code)
 
-## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_scripts_are_code)[Build scripts are code](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_scripts_are_code)
+
 
 
 #### Gradle Wrapper를 사용하는 목적
@@ -207,5 +207,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMjg3MDcyN119
+eyJoaXN0b3J5IjpbMjgyMTI0NDQ3LDIxMzI4NzA3MjddfQ==
 -->
