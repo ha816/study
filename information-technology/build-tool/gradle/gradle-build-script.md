@@ -7,17 +7,16 @@
 기본적으로 Gradle의 빌드 과정에서 `gradle` 명령어를 사용하게 됩니다. `gradle` 명령은 `build.gradle` 파일을 현재 디렉토리에서 찾습니다. `build.gradle`을 빌드 스크립트라고 부르는데, 보다 엄밀히는 빌드 설정 스크립트(build configuration script)라 합니다. 
 빌드 스크립트는 프로젝트와 프로젝트가 가지는 task를 정의합니다.
 
-
-
-build.gradle
-
-```groovy
+``` groovy
+// In build.gradle 
 task hello {
     doLast {
         println 'Hello world!'
     }
 }
 ```
+
+위 빌드 스크립트를 실행해보고 싶다면, v
 
 In a command-line shell, move to the containing directory and execute the build script with  `gradle -q hello`:
 
@@ -220,5 +219,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM4Mjk2NzY4XX0=
+eyJoaXN0b3J5IjpbLTc0MDYzNjc1N119
 -->
