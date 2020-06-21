@@ -86,7 +86,7 @@ I'm task number 1
 
 ## [Manipulating existing tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:manipulating_existing_tasks)
 
-한번 tasks가 만들어지고 API를 통해서 접근가능하다면, API를 통해서 동적으로 의존성을 추가하는게 가능합니다. 
+한번 tasks가 만들어지고 API를 통해서 접근가능하다면, API를 통해서 동적으로 의존성을 추가 가능합니다. 
 ```groovy
 4.times { counter ->
     task "task$counter" {
@@ -95,15 +95,12 @@ I'm task number 1
         }
     }
 }
-task0.dependsOn task2, task3
+task0.dependsOn task2, task3 // 의존성 동적 추가
 ```
-
-Output of  **`gradle -q task0`**
-
 > gradle -q task0
-I'm task number 2
-I'm task number 3
-I'm task number 0
+> I'm task number 2
+> I'm task number 3
+> I'm task number 0
 
 
 #### Gradle Wrapper를 사용하는 목적
@@ -287,5 +284,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNDQ5ODQ4MSwyMTMyODcwNzI3XX0=
+eyJoaXN0b3J5IjpbLTE3ODUwMzMzOTAsMjEzMjg3MDcyN119
 -->
