@@ -17,18 +17,16 @@ Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Developme
 # Concepts
 
 ## Task Graph
-Gradle은 tasks로 구성된 Directed Acyclic Graphs(DAGs)로 전체 빌드 과정을 모델링합니다. 즉 하나의 빌드는 반드시 tasks와 tasks간의 의존성을 나타내는 DAG를 만든다는 의미입니다. 그래프가 생성되면, Gradle은 어떤 task가 어떤 순서로 동작해야 하는지 판단하고 작업을 수행합니다.
+
+Gradle은 task 집단으로 구성된 Directed Acyclic Graphs(DAGs)로 전체 빌드 과정을 모델링합니다. 즉 하나의 빌드는 반드시 tasks와 tasks간의 의존성을 나타내는 DAG를 만든다는 의미입니다. 그래프가 생성되면, Gradle은 어떤 task가 어떤 순서로 동작해야 하는지 판단하고 작업을 수행합니다.
 
 ![Example task graphs](https://docs.gradle.org/current/userguide/img/task-dag-examples.png)
 
-위 두 그림은 task 그래프의 예제로 화살은 task간의 의존성을 나타냅니다. 
-왼쪽 그림은 추상화된 일반적 task 그래프를 나타냅니다. 오른쪽은 실제 표준 자바를 빌드하는 과정을 표현한 task 그래프입니다.
+위 두 그림은 task 그래프의 예제로 화살은 task간의 의존성을 나타냅니다. 왼쪽 그림은 추상화된 일반적 task 그래프를 나타냅니다. 오른쪽은 실제 표준 자바를 빌드하는 과정을 표현한 task 그래프입니다.
 
-대부분의 어떤 빌드 과정도 task 그래프로 모델링될 수 있습니다. 그리고 이것이 Gradle이 유연해질 수 있는 이유입니다. 
+대부분의 어떤 빌드 과정도 task 그래프로 모델링될 수 있습니다. 그리고 이것이 Gradle이 유연해질 수 있는 이유입니다. task 그래프는 외부 플러그인 또는 Gradle의 [build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)으로도 모델링 가능합니다.
 
-task 그래프는 외부 플러그인 또는 Gradle의 [build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)으로도 모델링 가능합니다.
-
-### Task
+## Task
 
 하나의 Task는 Actions, Inputs, Outputs로 구성됩니다.
 * Actions
@@ -54,16 +52,6 @@ Gradle은 Initialization, Configuration, Execution의 세 단계로 build script
 * Execution
 	* Configuration 단계가 끝난 후, 선택된 tasks를 수행한다.
    
-## [4. Gradle is extensible in more ways than one](https://docs.gradle.org/current/userguide/what_is_gradle.html#4_gradle_is_extensible_in_more_ways_than_one)
-
-Gradle의 기본 빌드 로직만을 따라서 프로젝트를 만들 수 있으면 좋겠지만, 그런 경우는 거의 없습니다. 대부분의 빌드에선 커스텀 빌드 로직을 추가해야할 경우가 많습니다. Gradle은 커스텀 빌드 로직을 위한 몇 가지 메커니즘을 제공합니다. 
-
-* [Custom task types](https://docs.gradle.org/current/userguide/custom_tasks.html)    
-* Custom task actions    
-* [Extra properties](https://docs.gradle.org/current/userguide/writing_build_scripts.html#sec:extra_properties)  on projects and tasks
-* Custom conventions.
-* [A custom model](https://guides.gradle.org/implementing-gradle-plugins/#modeling_dsl_like_apis)
-
 ## [5. Build scripts operate against an API](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)
 
 Gradle의 빌드 스크립트는 실제 실행 코드입니다. 이렇듯 빌드 스크립트가 코드인 사실 덕분에 Gradle의 유연함이 온다고 생각할 수 있는데, 이는 사실이 아닙니다.
@@ -257,9 +245,9 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDE2ODY0MTEsMTQ1MTc2MTYwOSwtMj
-cxMDY4NjY4LC03ODAzMjI0NSwtOTE4NTEwMDc5LDIxMjEzMzc0
-ODIsLTE5NTYwMzQxMzAsLTE2MDE4OTIzODYsLTg5MzgxMTk1NC
-wyMDg2NjI2ODMxLC05MDU1MjQ5NDIsLTg1MTI4ODc1NSwxOTIw
-NjgyMzA3XX0=
+eyJoaXN0b3J5IjpbMTI5NzYyNjk0NywtMTYwMTY4NjQxMSwxND
+UxNzYxNjA5LC0yNzEwNjg2NjgsLTc4MDMyMjQ1LC05MTg1MTAw
+NzksMjEyMTMzNzQ4MiwtMTk1NjAzNDEzMCwtMTYwMTg5MjM4Ni
+wtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUyNDk0MiwtODUx
+Mjg4NzU1LDE5MjA2ODIzMDddfQ==
 -->
