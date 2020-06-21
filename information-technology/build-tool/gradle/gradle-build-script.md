@@ -270,10 +270,9 @@ We build the zip with version=1.0-SNAPSHOT
 We build the zip with version=1.0
 We release now
 
-중요한 점은 `whenReady`를 사용하면 release task가 수행되기 전에 적용된다는 점입니다. 심지어 gradle에 인자로 넘어간 task이더라도 
+중요한 점은 `whenReady`를 사용하면 release task가 수행되기 전에 적용된다는 점입니다. 심지어 gradle에 인자로 넘어간 release task가 넘어가지 않더라도 적용됩니다. 즉 언제나 적용됩니다.
 
-The important thing is that  `whenReady`  affects the release task  _before_  the release task is executed. This works even when the release task is not the  _primary_  task (i.e., the task passed to the  `gradle`  command).
-
+이 예제는 `version`  변수가 실행시간에만 읽히기 때문에 
 This example works because the  `version`  value is only read at execution time. When using a similar construct in a real build you must make sure that nowhere is the value read eagerly during configuration. Otherwise your build may use different values for a property between configuration and execution.
 
 ## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)[External dependencies for the build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)
@@ -337,6 +336,8 @@ For multi-project builds, the dependencies declared with a project’s  `buildsc
 Build script dependencies may be Gradle plugins. Please consult  [Using Gradle Plugins](https://docs.gradle.org/current/userguide/plugins.html#plugins)  for more information on Gradle plugins.
 
 Every project automatically has a  `buildEnvironment`  task of type  [BuildEnvironmentReportTask](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.diagnostics.BuildEnvironmentReportTask.html)  that can be invoked to report on the resolution of the build script dependencies.
+
+
 
 
 #### Gradle Wrapper를 사용하는 목적
@@ -520,7 +521,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDQyNzU2OCwxNDA1MTg5OTEwLDcyND
+eyJoaXN0b3J5IjpbLTI5NTE2MDQ2NiwxNDA1MTg5OTEwLDcyND
 g5ODc1MywyMTM0NDUwMTYxLC0xNzg1MDMzMzkwLDIxMzI4NzA3
 MjddfQ==
 -->
