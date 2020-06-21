@@ -67,6 +67,34 @@ task taskY {
 
 한 가지 주의할 점은 아직 정의 되지 않은 task를 참조할때는,  [shortcut notation](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notati)을 사용하면 안됩니다. 
 
+## [Dynamic tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:dynamic_tasks)
+
+Groovy의 장점은 task가 무엇을 하는지 정의하는 것을 동적으로 
+The power of Groovy or Kotlin can be used for more than defining what a task does. For example, you can also use it to dynamically create tasks.
+
+Example 7. Dynamic creation of a task
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+4.times { counter ->
+    task "task$counter" {
+        doLast {
+            println "I'm task number $counter"
+        }
+    }
+}
+```
+
+Output of  **`gradle -q task1`**
+
+> gradle -q task1
+I'm task number 1
+
+## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:manipulating_existing_tasks)[Manipulating](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:manipulating_existing_tasks)
+
 
 #### Gradle Wrapper를 사용하는 목적
 
@@ -249,5 +277,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzE3NTA3MDQsMjEzMjg3MDcyN119
+eyJoaXN0b3J5IjpbLTIzOTExOTc4MSwyMTMyODcwNzI3XX0=
 -->
