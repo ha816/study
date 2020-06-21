@@ -21,17 +21,69 @@ task hello {
 
 `gradle -q hello`을 실행하면, 빌드 스크립트에 정의된 hello란 task를 찾아 action을 추가 합니다. Gradle은 hello task를 실행하며, 추가된 action을 순차적으로 하나씩 처리합니다. action은 단지 한 블럭으로 실행할 코드를 가지고 있습니다. 
 
-## [Build scripts are code](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_scripts_are_code)
+## [Task dependencies](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)
+
+다른 tasks 위에 또 다른 
+
+you can declare tasks that depend on other tasks.
+
+Example 5. Declaration of task that depends on other task
+
+`Groovy``Kotlin`
+
+build.gradle
 
 ```groovy
-task upper {
+task hello {
     doLast {
-        String someString = 'mY_nAmE'
-        println "Original: $someString"
-        println "Upper case: ${someString.toUpperCase()}"
+        println 'Hello world!'
+    }
+}
+task intro {
+    dependsOn hello
+    doLast {
+        println "I'm Gradle"
     }
 }
 ```
+
+Output of  **`gradle -q intro`**
+
+> gradle -q intro
+Hello world!
+I'm Gradle
+
+To add a dependency, the corresponding task does not need to exist.
+
+Example 6. Lazy dependsOn - the other task does not exist (yet)
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+task taskX {
+    dependsOn 'taskY'
+    doLast {
+        println 'taskX'
+    }
+}
+task taskY {
+    doLast {
+        println 'taskY'
+    }
+}
+```
+
+Output of  **`gradle -q taskX`**
+
+> gradle -q taskX
+taskY
+taskX
+
+The dependency of  `taskX`  to  `taskY`  may be declared before  `taskY`  is defined. This freedom is very important for multi-project builds. Task dependencies are discussed in more detail in  [Adding dependencies to a task](https://docs.gradle.org/current/userguide/more_about_tasks.html#sec:adding_dependencies_to_tasks).
+
+Please notice that you can’t use  [shortcut notation](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)  when referring to a task that is not yet defined.
 
 
 
@@ -217,5 +269,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzg5NDE5NzcsMjEzMjg3MDcyN119
+eyJoaXN0b3J5IjpbMTI1MzcxNDk0NCwyMTMyODcwNzI3XX0=
 -->
