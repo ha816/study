@@ -263,13 +263,8 @@ gradle.taskGraph.whenReady { taskGraph ->
     }
 }
 ```
-
-Output of  `gradle -q distribution`
-
 > gradle -q distribution
 We build the zip with version=1.0-SNAPSHOT
-
-Output of  `gradle -q release`
 
 > gradle -q release
 We build the zip with version=1.0
@@ -523,6 +518,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNTE4OTkxMCw3MjQ4OTg3NTMsMjEzND
-Q1MDE2MSwtMTc4NTAzMzM5MCwyMTMyODcwNzI3XX0=
+eyJoaXN0b3J5IjpbLTg2NjM5ODkxLDE0MDUxODk5MTAsNzI0OD
+k4NzUzLDIxMzQ0NTAxNjEsLTE3ODUwMzMzOTAsMjEzMjg3MDcy
+N119
 -->
