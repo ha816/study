@@ -172,7 +172,8 @@ myValue
 
 ## [Using methods](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:using_methods)
 
-빌드 로직을 만드는 첫 번째 단계는 사용될 메서드를 추출하는것 입니다. 
+빌드 로직을 만드는 첫 번째 단계는 사용될 메서드를 추출하는것 입니다. 예제는 아주 간단하지만 보다 자세한 사항을 보고 싶다면 [Organizing Gradle Projects](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#organizing_gradle_projects)을 참조합시다. 
+
 
 ```groovy
 task checksum {
@@ -198,13 +199,9 @@ File[] fileList(String dir) {
 }
 ```
 
-Output of  **`gradle -q loadfile`**
-
 > gradle -q loadfile
 I'm fond of agile.manifesto.txt
 I'm fond of gradle.manifesto.txt
-
-Later you will see that such methods can be shared among subprojects in multi-project builds. If your build logic becomes more complex, Gradle offers you other very convenient ways to organize it. We have devoted a whole chapter to this. See  [Organizing Gradle Projects](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#organizing_gradle_projects).
 
 
 ## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)[Extra task properties](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)
@@ -418,6 +415,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNjk3NDM5OSwtMTc4NTAzMzM5MCwyMT
+eyJoaXN0b3J5IjpbMjEzNDQ1MDE2MSwtMTc4NTAzMzM5MCwyMT
 MyODcwNzI3XX0=
 -->
