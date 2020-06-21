@@ -4,8 +4,6 @@
 
 
 
-
-
 #### Gradle Wrapper를 사용하는 목적
 
 -   이미 존재하는 프로젝트를 새로운 환경에 설치할때 별도의 설치나 설정과정없이 곧 바로 빌드할 수 있게 하기 위함(Java나 Gradle도 설치할 필요가 없음. 또한 로컬에 설치된 Gradle 또는 Java의 버전도 신경쓸 필요가 없음. 따라서 항상 Wrapper를 사용할 것을 권장.)
@@ -187,5 +185,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODI3NjY3OTBdfQ==
+eyJoaXN0b3J5IjpbMTkyNjc4MzUxMF19
 -->
