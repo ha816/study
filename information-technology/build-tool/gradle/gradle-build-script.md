@@ -46,12 +46,6 @@ task intro {
 
 의존성을 추가하기 할때는, 대응하는 task가 실제로 존재하지 않아도 괜찮습니다. 
 
-Example 6. Lazy dependsOn - the other task does not exist (yet)
-
-`Groovy``Kotlin`
-
-build.gradle
-
 ```groovy
 task taskX {
     dependsOn 'taskY'
@@ -66,11 +60,10 @@ task taskY {
 }
 ```
 
-Output of  **`gradle -q taskX`**
+> taskY
+> taskX
 
-> gradle -q taskX
-taskY
-taskX
+`taskX` 에서  `taskY`에 대한 의존성은 `taskY`가 정의되기 전에 선언되었어도 
 
 The dependency of  `taskX`  to  `taskY`  may be declared before  `taskY`  is defined. This freedom is very important for multi-project builds. Task dependencies are discussed in more detail in  [Adding dependencies to a task](https://docs.gradle.org/current/userguide/more_about_tasks.html#sec:adding_dependencies_to_tasks).
 
@@ -260,5 +253,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzAzNzQ4MzQsMjEzMjg3MDcyN119
+eyJoaXN0b3J5IjpbLTExODIxMjMwMzQsMjEzMjg3MDcyN119
 -->
