@@ -4,6 +4,8 @@
 
 ## [Hello world](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:hello_world)
 
+기본적으로 Gradle의 빌드 과정에서 `gradle` 명령어를 사용하게 됩니다. `gradle` 명령은 `build.gradle` 파일을 현재 디렉토리에서 찾습니다. 
+
 You run a Gradle build using the  `gradle`  command. The  `gradle`  command looks for a file called  `build.gradle`  in the current directory.[[1](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#_footnotedef_1 "View footnote.")]  We call this  `build.gradle`  file a  _build script_, although strictly speaking it is a build configuration script, as we will see later. The build script defines a project and its tasks.
 
 To try this out, create the following build script named  `build.gradle`.
@@ -223,5 +225,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODI4NjE3NTddfQ==
+eyJoaXN0b3J5IjpbLTEzNzg4MDcyMzFdfQ==
 -->
