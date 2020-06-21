@@ -18,8 +18,9 @@ task hello {
 
 위 빌드 스크립트를 실행해보고 싶다면, 파일이 존재하는 디렉토리로 이동해서 `gradle -q hello`를 실행하면 됩니다. 그런데 여기서 `-q` 는 무엇을 할까요? 
 
-`-q`는 옵션으로, Gradle의 로그 메세지를 나타냅니다. 이걸 써야만 ta
-Most of the examples in this user guide are run with the  `-q`  command-line option. This suppresses Gradle’s log messages, so that only the output of the tasks is shown. This keeps the example output in this user guide a little clearer. You don’t need to use this option if you don’t want to. See  [Logging](https://docs.gradle.org/current/userguide/logging.html#logging)  for more details about the command-line options which affect Gradle’s output.
+`-q`는 옵션으로, Gradle의 로그 메세지를 나타냅니다. 이걸 써야만 tasks의 아웃풋만이 결과로 나타납니다. 안쓰고 싶다면 `-q` 옵션을 쓰지 않아도 됩니다. [Logging](https://docs.gradle.org/current/userguide/logging.html#logging)
+
+
 
 Example 2. Execution of a build script
 
@@ -216,5 +217,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MzM5NzExNF19
+eyJoaXN0b3J5IjpbOTk4OTU4MzEyXX0=
 -->
