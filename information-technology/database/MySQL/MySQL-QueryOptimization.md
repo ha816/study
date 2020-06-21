@@ -202,7 +202,9 @@ REGEXP 연산자보다는 훨씬 단순한 문자열 패턴 비교 연산자이�
 : 0또는 1개 이상의 모든 문자에 일치(문자의 내용과 관계없이)
 
 -
-: 정확히 1개의 문제아 일치(문자의 내용과 관계없이
+: 정확히 1개의 문제아 일치(문자의 내용과 관계없이)
+
+
 
 
 
@@ -210,7 +212,7 @@ REGEXP 연산자보다는 훨씬 단순한 문자열 패턴 비교 연산자이�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MTMyMzE2LDEwMjc0MjQ2NSwtMTkyOT
+eyJoaXN0b3J5IjpbODU5OTI4NTI3LDEwMjc0MjQ2NSwtMTkyOT
 E2MTE1OSwxNDI0NTAxODA2LDgyNTgwMzU4NSwxMjMyNDA2ODQz
 LC02ODIwNjY5ODMsMTc2OTkxNTkyOSwxOTkwNDc4MDAsNDc4ND
 EwODQyLC0xMDIzNTQxNDgzLC0xMzcyMzcxODAzLC0xMDU5NDcx
