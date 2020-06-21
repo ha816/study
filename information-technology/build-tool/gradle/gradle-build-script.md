@@ -276,15 +276,7 @@ We release now
 
 ## [External dependencies for the build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)
 
-만약 빌드 스크립트가 외부 라이브러리들을 사용해야 한다면, 스크립트의 classpath에 추가하면 된다. `buildscript()`  메서드를 사용하면, 비
-
-If your build script needs to use external libraries, you can add them to the script’s classpath in the build script itself. You do this using the  `buildscript()`  method, passing in a block which declares the build script classpath.
-
-Example 16. Declaring external dependencies for the build script
-
-`Groovy``Kotlin`
-
-build.gradle
+만약 빌드 스크립트가 외부 라이브러리들을 사용해야 한다면, 스크립트의 classpath에 추가하면 된다. `buildscript()`  메서드를 사용하면, classpath에 정의된 블럭을 보고 외부 라이브러리를 빌드한다. 
 
 ```groovy
 buildscript {
@@ -522,7 +514,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNzg2NzgyNSwtMTY3NDY1MTQ4NywxND
-A1MTg5OTEwLDcyNDg5ODc1MywyMTM0NDUwMTYxLC0xNzg1MDMz
-MzkwLDIxMzI4NzA3MjddfQ==
+eyJoaXN0b3J5IjpbLTE4ODE4NzE2MDgsLTE2NzQ2NTE0ODcsMT
+QwNTE4OTkxMCw3MjQ4OTg3NTMsMjEzNDQ1MDE2MSwtMTc4NTAz
+MzM5MCwyMTMyODcwNzI3XX0=
 -->
