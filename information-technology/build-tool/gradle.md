@@ -40,9 +40,9 @@ Gradle은 task 집단으로 구성된 Directed Acyclic Graphs(DAGs)로 전체 �
 
 빌드에 필요한 특정 task만 골라 돌리면, task를 새로 만들기 위한 자원을 아낄 수 있다. 만약 unit test를 돌려보고 싶다면, `test` task를 찾으면 됩니다. 만약 애플리케이션을 package하고 싶다면, 일반적으로 `assemble` task를 수행하면 됩니다.
 
-## [3. Gradle has several fixed build phases](https://docs.gradle.org/current/userguide/what_is_gradle.html#3_gradle_has_several_fixed_build_phases)
+## Build Lifecycle
 
-Gradle은 Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행합니다. 그리고 이 세 가지 단계는 Gradle의 [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)의 핵심입니다.
+Gradle은 Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행합니다. 그리고 이 세 가지 단계가 Gradle의 [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)의 핵심입니다.
 
 * Initialization
 	* Sets up the environment for the build and determine which projects will take part in it.
@@ -52,7 +52,7 @@ Gradle은 Initialization, Configuration, Execution의 세 단계로 build script
 * Execution
 	* Configuration 단계가 끝난 후, 선택된 tasks를 수행한다.
    
-## [5. Build scripts operate against an API](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)
+## API
 
 Gradle의 빌드 스크립트는 실제 실행 코드입니다. 이렇듯 빌드 스크립트가 코드인 사실 덕분에 Gradle의 유연함이 온다고 생각할 수 있는데, 이는 사실이 아닙니다.
 
@@ -245,7 +245,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NzYyNjk0NywtMTYwMTY4NjQxMSwxND
+eyJoaXN0b3J5IjpbLTE5ODgwODc0OSwtMTYwMTY4NjQxMSwxND
 UxNzYxNjA5LC0yNzEwNjg2NjgsLTc4MDMyMjQ1LC05MTg1MTAw
 NzksMjEyMTMzNzQ4MiwtMTk1NjAzNDEzMCwtMTYwMTg5MjM4Ni
 wtODkzODExOTU0LDIwODY2MjY4MzEsLTkwNTUyNDk0MiwtODUx
