@@ -20,22 +20,13 @@ Gradle은 주로 Groovy로 작성된 빌드 스크립트로 빌드를 하게 됩
 
 ## Projects & Tasks
 
-모든 Gradle 빌드는 최소 하나 이상의 프로젝트들로 만들어집니다. 프로젝트가 무엇을 나타내는지는 Gradle로 무엇을 하느냐에 달려 있습니다. 구성에 따라 다르지만, 다수의 프로젝트를 동시에 빌드하는 것도 가능합ㄴ
+모든 Gradle 빌드는 최소 하나 이상의 프로젝트들로 만들어집니다. 프로젝트가 무엇을 나타내는지는 Gradle로 무엇을 하느냐에 달려 있습니다. 구성에 따라 다르지만, 다수의 프로젝트를 동시에 빌드하
+는 것도 가능합니다.
 
-그리고 각 프로젝트는 하나 이상의 task로 구성됩니다. 
+모든 Gradle 빌드에 
+각 프로젝트는 최사 이상의 task로 구성됩니다. 
 
-
-## Task Graph
-
-Gradle은 task 집단으로 구성된 Directed Acyclic Graphs(DAGs)로 전체 빌드 과정을 모델링합니다. 즉 하나의 빌드는 반드시 tasks와 tasks간의 의존성을 나타내는 DAG를 만든다는 의미입니다. 그래프가 생성되면, Gradle은 어떤 task가 어떤 순서로 동작해야 하는지 판단하고 작업을 수행합니다.
-
-![Example task graphs](https://docs.gradle.org/current/userguide/img/task-dag-examples.png)
-
-위 두 그림은 task 그래프의 예제로 화살은 task간의 의존성을 나타냅니다. 왼쪽 그림은 추상화된 일반적 task 그래프를 나타냅니다. 오른쪽은 실제 표준 자바를 빌드하는 과정을 표현한 task 그래프입니다.
-
-대부분의 어떤 빌드 과정도 task 그래프로 모델링될 수 있습니다. 그리고 이것이 Gradle이 유연해질 수 있는 이유입니다. task 그래프는 외부 플러그인 또는 Gradle의 [build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)으로도 모델링 가능합니다.
-
-## Task
+### Task
 
 하나의 Task는 Actions, Inputs, Outputs로 구성됩니다.
 * Actions
@@ -48,6 +39,18 @@ Gradle은 task 집단으로 구성된 Directed Acyclic Graphs(DAGs)로 전체 �
 각 구성요소는 task가 해야할것에 따라 선택적입니다. 예를 들어, [standard lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks) 같은 task는 어떤 actions도 가지지 않는 경우도 있습니다. 
 
 빌드에 필요한 특정 task만 골라 돌리면, task를 새로 만들기 위한 자원을 아낄 수 있다. 만약 unit test를 돌려보고 싶다면, `test` task를 찾으면 됩니다. 만약 애플리케이션을 package하고 싶다면, 일반적으로 `assemble` task를 수행하면 됩니다.
+
+
+
+## Task Graph
+
+Gradle은 task 집단으로 구성된 Directed Acyclic Graphs(DAGs)로 전체 빌드 과정을 모델링합니다. 즉 하나의 빌드는 반드시 tasks와 tasks간의 의존성을 나타내는 DAG를 만든다는 의미입니다. 그래프가 생성되면, Gradle은 어떤 task가 어떤 순서로 동작해야 하는지 판단하고 작업을 수행합니다.
+
+![Example task graphs](https://docs.gradle.org/current/userguide/img/task-dag-examples.png)
+
+위 두 그림은 task 그래프의 예제로 화살은 task간의 의존성을 나타냅니다. 왼쪽 그림은 추상화된 일반적 task 그래프를 나타냅니다. 오른쪽은 실제 표준 자바를 빌드하는 과정을 표현한 task 그래프입니다.
+
+대부분의 어떤 빌드 과정도 task 그래프로 모델링될 수 있습니다. 그리고 이것이 Gradle이 유연해질 수 있는 이유입니다. task 그래프는 외부 플러그인 또는 Gradle의 [build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)으로도 모델링 가능합니다.
 
 ## Build Lifecycle
 
@@ -78,5 +81,5 @@ Gradle은  JVM에서 동작하기 때문에, 빌드 스크릷트들은 표준 [J
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NzM5ODI3OV19
+eyJoaXN0b3J5IjpbLTE5MzExOTM5NTNdfQ==
 -->
