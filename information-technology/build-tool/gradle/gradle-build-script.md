@@ -101,6 +101,101 @@ task0.dependsOn task2, task3 // 의존성 동적 추가
 > I'm task number 3
 > I'm task number 0
 
+의존성 추가가 아니라 존재하는 task에 행도you can add behavior to an existing task.
+
+Example 9. Accessing a task via API - adding behaviour
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+task hello {
+    doLast {
+        println 'Hello Earth'
+    }
+}
+hello.doFirst {
+    println 'Hello Venus'
+}
+hello.configure {
+    doLast {
+        println 'Hello Mars'
+    }
+}
+hello.configure {
+    doLast {
+        println 'Hello Jupiter'
+    }
+}
+```
+
+Output of  **`gradle -q hello`**
+
+> gradle -q hello
+Hello Venus
+Hello Earth
+Hello Mars
+Hello Jupiter
+
+The calls  `doFirst`  and  `doLast`  can be executed multiple times. They add an action to the beginning or the end of the task’s actions list. When the task executes, the actions in the action list are executed in order.
+
+## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)[Groovy DSL shortcut notations](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)
+
+There is a convenient notation for accessing an  _existing_  task. Each task is available as a property of the build script:
+
+Example 10. Accessing task as a property of the build script
+
+build.gradle
+
+```groovy
+task hello {
+    doLast {
+        println 'Hello world!'
+    }
+}
+hello.doLast {
+    println "Greetings from the $hello.name task."
+}
+```
+
+Output of  **`gradle -q hello`**
+
+> gradle -q hello
+Hello world!
+Greetings from the hello task.
+
+This enables very readable code, especially when using the tasks provided by the plugins, like the  `compile`  task.
+
+## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)[Extra task properties](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)
+
+You can add your own properties to a task. To add a property named  `myProperty`, set  `ext.myProperty`  to an initial value. From that point on, the property can be read and set like a predefined task property.
+
+Example 11. Adding extra properties to a task
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+task myTask {
+    ext.myProperty = "myValue"
+}
+
+task printTaskProperties {
+    doLast {
+        println myTask.myProperty
+    }
+}
+```
+
+Output of  **`gradle -q printTaskProperties`**
+
+> gradle -q printTaskProperties
+myValue
+
+Extra properties aren’t limited to tasks. You can read more about them in  [Extra properties](https://docs.gradle.org/current/userguide/writing_build_scripts.html#sec:extra_properties).
+
 
 #### Gradle Wrapper를 사용하는 목적
 
@@ -283,6 +378,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjA1MzMyNjQsLTE3ODUwMzMzOTAsMj
-EzMjg3MDcyN119
+eyJoaXN0b3J5IjpbOTQ0OTQ0NDM5LC0xNzg1MDMzMzkwLDIxMz
+I4NzA3MjddfQ==
 -->
