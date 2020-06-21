@@ -75,9 +75,9 @@ Gradle의 빌드 스크립트는 실제 실행 코드입니다. 빌드 스크립
 
 아직 빌드 스크립트를 실행 가능한 코드로 보는 것이 유용한 영역이 있습니다. 바로 어떻게 빌드 스크립트가 Gradle's API에 대응하는지 문맥을 이해하는 것에는 유용합니다.
 
-[Groovy DSL Reference](https://docs.gradle.org/current/dsl/)과 [Javadocs](https://docs.gradle.org/current/javadoc/)로 작성된 API 문서를 보면, 
+Gradle's API는 [Groovy DSL Reference](https://docs.gradle.org/current/dsl/)과 [Javadocs](https://docs.gradle.org/current/javadoc/)로 작성 되어있습니다.
 
-The API documentation — formed of the  [Groovy DSL Reference](https://docs.gradle.org/current/dsl/)  and the  [Javadocs](https://docs.gradle.org/current/javadoc/)  — lists methods and properties, and refers to closures and actions. 
+한 빌드 스크립트의 
 
 What do these mean within the context of a build script? Check out the  [Groovy Build Script Primer](https://docs.gradle.org/current/userguide/groovy_build_script_primer.html#groovy_build_script_primer)  to learn the answer to that question so that you can make effective use of the API documentation.
 
@@ -265,7 +265,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMTE3ODA1LC03ODAzMjI0NSwtOTE4NT
+eyJoaXN0b3J5IjpbNTg4NTIzMzcyLC03ODAzMjI0NSwtOTE4NT
 EwMDc5LDIxMjEzMzc0ODIsLTE5NTYwMzQxMzAsLTE2MDE4OTIz
 ODYsLTg5MzgxMTk1NCwyMDg2NjI2ODMxLC05MDU1MjQ5NDIsLT
 g1MTI4ODc1NSwxOTIwNjgyMzA3XX0=
