@@ -2,11 +2,7 @@
 
 이제 Gradle을 실제 빌드하기 위한 개념을 잡아봅시다. 
 
-## Projects & Tasks
 
-모든 Gradle 빌드는 최소 하나 이상의 프로젝트들로 만들어집니다. 프로젝트가 무엇을 나타내는지는 Gradle로 무엇을 하느냐에 달려 있습니다. 
-
-그리고 각 프로젝트는 하나 이상의 task로 구성됩니다. 
 
 
 
@@ -181,10 +177,15 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Spring Boot 의 AutoConfiguration 을 살펴보면, 모든 선택적 의존성에 Dependency Optional True 가 붙어 있는 것을 확인할 수 있음. Gradle 에서는 compileOnly 를 사용할 수 있음. 대부분의 선택적 의존성들은 Starter Pack 에 의하여 주입됨.
 
+# references
+
+[https://docs.gradle.org/current/userguide/tutorial_using_tasks.html](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)
+
+[https://dynaticy.tistory.com/entry/Gradle-UserGuide-%EB%8F%84%EC%A0%84%EA%B8%B0-6-Build-Script-Basics?category=536334](https://dynaticy.tistory.com/entry/Gradle-UserGuide-%EB%8F%84%EC%A0%84%EA%B8%B0-6-Build-Script-Basics?category=536334)
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzE0MDgwNjJdfQ==
+eyJoaXN0b3J5IjpbLTE0ODI3NjY3OTBdfQ==
 -->
