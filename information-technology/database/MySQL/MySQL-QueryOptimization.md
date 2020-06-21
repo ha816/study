@@ -204,7 +204,10 @@ REGEXP 연산자보다는 훨씬 단순한 문자열 패턴 비교 연산자이�
 -
 : 정확히 1개의 문제아 일치(문자의 내용과 관계없이)
 
-
+```
+SELECT COUNT(*)
+FROM employees WHERE first_name LIKE 'Christ%';
+```
 
 
 
@@ -212,11 +215,11 @@ REGEXP 연산자보다는 훨씬 단순한 문자열 패턴 비교 연산자이�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU5OTI4NTI3LDEwMjc0MjQ2NSwtMTkyOT
-E2MTE1OSwxNDI0NTAxODA2LDgyNTgwMzU4NSwxMjMyNDA2ODQz
-LC02ODIwNjY5ODMsMTc2OTkxNTkyOSwxOTkwNDc4MDAsNDc4ND
-EwODQyLC0xMDIzNTQxNDgzLC0xMzcyMzcxODAzLC0xMDU5NDcx
-MjI5LC0xNzc5NDQwNDM5LC0zMjM5MTQzNzksMzk2Njg3NjQxLC
-0xNTg4Njc5MzM4LC0yNTg3NjYwOTAsLTI4NjU2MDA0MCwtMTI1
-MjQ4MjUzXX0=
+eyJoaXN0b3J5IjpbLTk2MzAxMzI3Myw4NTk5Mjg1MjcsMTAyNz
+QyNDY1LC0xOTI5MTYxMTU5LDE0MjQ1MDE4MDYsODI1ODAzNTg1
+LDEyMzI0MDY4NDMsLTY4MjA2Njk4MywxNzY5OTE1OTI5LDE5OT
+A0NzgwMCw0Nzg0MTA4NDIsLTEwMjM1NDE0ODMsLTEzNzIzNzE4
+MDMsLTEwNTk0NzEyMjksLTE3Nzk0NDA0MzksLTMyMzkxNDM3OS
+wzOTY2ODc2NDEsLTE1ODg2NzkzMzgsLTI1ODc2NjA5MCwtMjg2
+NTYwMDQwXX0=
 -->
