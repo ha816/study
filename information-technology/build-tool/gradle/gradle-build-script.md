@@ -205,13 +205,7 @@ I'm fond of gradle.manifesto.txt
 
 ## [Default tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:default_tasks)
 
-Gradle allows you to define one or more default tasks that are executed if no other tasks are specified.
-
-Example 14. Defining a default task
-
-`Groovy``Kotlin`
-
-build.gradle
+Gradle은 정의된 다른 tasks가 없다면 디폴트 tasks 정의하도록 허락합니다. 
 
 ```groovy
 defaultTasks 'clean', 'run'
@@ -537,6 +531,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI4ODQ1NiwyMTM0NDUwMTYxLC0xNzg1MD
-MzMzkwLDIxMzI4NzA3MjddfQ==
+eyJoaXN0b3J5IjpbOTc2MTg0MjksMjEzNDQ1MDE2MSwtMTc4NT
+AzMzM5MCwyMTMyODcwNzI3XX0=
 -->
