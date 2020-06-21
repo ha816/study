@@ -172,13 +172,7 @@ myValue
 
 ## [Using methods](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:using_methods)
 
-Gradle scales in how you can organize your build logic. The first level of organizing your build logic for the example above, is extracting a method.
-
-Example 13. Using methods to organize your build logic
-
-`Groovy``Kotlin`
-
-build.gradle
+빌드 로직을 만드는 첫 번째 단계는 사용될 메서드를 추출하는것 입니다. 
 
 ```groovy
 task checksum {
@@ -424,6 +418,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTc3NTM2OCwtMTc4NTAzMzM5MCwyMT
+eyJoaXN0b3J5IjpbMTIzNjk3NDM5OSwtMTc4NTAzMzM5MCwyMT
 MyODcwNzI3XX0=
 -->
