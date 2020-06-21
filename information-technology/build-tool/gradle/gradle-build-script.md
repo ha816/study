@@ -23,7 +23,7 @@ task hello {
 
 ## [Task dependencies](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)
 
-다른 tasks 위에 또 다른 tasks를 선언할 수 있습니다.
+다른 tasks 위에 또 다른 tasks를 선언할 수 있습니다. 아래 예제는 intro task가 hello task에 의지합니다. 
 
 ```groovy
 task hello {
@@ -39,11 +39,10 @@ task intro {
 }
 ```
 
-Output of  **`gradle -q intro`**
+명령어 `gradle -q intro`를 실행 하면 아래 결과가 나타납니다.
 
-> gradle -q intro
-Hello world!
-I'm Gradle
+>Hello world!
+>I'm Gradle
 
 To add a dependency, the corresponding task does not need to exist.
 
@@ -261,5 +260,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTk2MjMzOSwyMTMyODcwNzI3XX0=
+eyJoaXN0b3J5IjpbODAwOTI5ODI1LDIxMzI4NzA3MjddfQ==
 -->
