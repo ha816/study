@@ -10,7 +10,7 @@
 ``` groovy
 // In build.gradle 
 task hello {
-    doLast {
+    doLast { // action
         println 'Hello world!'
     }
 }
@@ -22,6 +22,16 @@ task hello {
 `gradle -q hello`을 실행하면, 빌드 스크립트에 정의된 hello란 task를 찾아 action을 추가 합니다. Gradle은 hello task를 실행하며, 추가된 action을 순차적으로 하나씩 처리합니다. action은 단지 한 블럭으로 실행할 코드를 가지고 있습니다. 
 
 ## [Build scripts are code](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_scripts_are_code)
+
+```groovy
+task upper {
+    doLast {
+        String someString = 'mY_nAmE'
+        println "Original: $someString"
+        println "Upper case: ${someString.toUpperCase()}"
+    }
+}
+```
 
 
 
@@ -207,5 +217,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgyMTI0NDQ3LDIxMzI4NzA3MjddfQ==
+eyJoaXN0b3J5IjpbLTEyNzg5NDE5NzcsMjEzMjg3MDcyN119
 -->
