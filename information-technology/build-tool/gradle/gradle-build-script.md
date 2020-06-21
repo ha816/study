@@ -270,6 +270,8 @@ We build the zip with version=1.0-SNAPSHOT
 We build the zip with version=1.0
 We release now
 
+중요한 점은 `whenReady`를 사용하면 release task가 수행되기 전에 적용된다는 점입니다. 
+
 The important thing is that  `whenReady`  affects the release task  _before_  the release task is executed. This works even when the release task is not the  _primary_  task (i.e., the task passed to the  `gradle`  command).
 
 This example works because the  `version`  value is only read at execution time. When using a similar construct in a real build you must make sure that nowhere is the value read eagerly during configuration. Otherwise your build may use different values for a property between configuration and execution.
@@ -518,7 +520,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NjM5ODkxLDE0MDUxODk5MTAsNzI0OD
-k4NzUzLDIxMzQ0NTAxNjEsLTE3ODUwMzMzOTAsMjEzMjg3MDcy
-N119
+eyJoaXN0b3J5IjpbMTAzODYwMzAxNiwxNDA1MTg5OTEwLDcyND
+g5ODc1MywyMTM0NDUwMTYxLC0xNzg1MDMzMzkwLDIxMzI4NzA3
+MjddfQ==
 -->
