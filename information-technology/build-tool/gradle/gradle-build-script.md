@@ -86,15 +86,7 @@ I'm task number 1
 
 ## [Manipulating existing tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:manipulating_existing_tasks)
 
-만
-Once tasks are created they can be accessed via an  _API_. For instance, you could use this to dynamically add dependencies to a task, at runtime. Ant doesn’t allow anything like this.
-
-Example 8. Accessing a task via API - adding a dependency
-
-`Groovy``Kotlin`
-
-build.gradle
-
+한번 tasks가 만들어지고 API를 통해서 접근가능하다면, API를 통해서 동적으로 의존성을 추가하는게 가능합니다. 
 ```groovy
 4.times { counter ->
     task "task$counter" {
@@ -295,5 +287,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNzQ5NzAyLDIxMzI4NzA3MjddfQ==
+eyJoaXN0b3J5IjpbMTAyNDQ5ODQ4MSwyMTMyODcwNzI3XX0=
 -->
