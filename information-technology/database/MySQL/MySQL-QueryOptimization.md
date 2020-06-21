@@ -183,21 +183,20 @@ SELECT 1<=>1, NULL <=> NULL, 1 <=> NULL;
 
 같지 않다를 비교할때 일반적으로 "<>"를 많이 사용한다. 물론 "!="를 써도 문제는 없다. 하지만 혼용되면 가독성이 떨어지니 통일해서 사용하는 방법을 권장한다.
 
-### Not 연산자 (!)
+### AND(&&) 와 OR(||) 연산자
 
-TRUE 
-
+일반적으로 DBMS에서는 불리언 표현식의 결과를 결합하기 위해 AND나 OR을 사용한다. MySQL에선 &&와 || 를 사용하기도 한다.
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MzQ1MTI3LDgyNTgwMzU4NSwxMjMyND
-A2ODQzLC02ODIwNjY5ODMsMTc2OTkxNTkyOSwxOTkwNDc4MDAs
-NDc4NDEwODQyLC0xMDIzNTQxNDgzLC0xMzcyMzcxODAzLC0xMD
-U5NDcxMjI5LC0xNzc5NDQwNDM5LC0zMjM5MTQzNzksMzk2Njg3
-NjQxLC0xNTg4Njc5MzM4LC0yNTg3NjYwOTAsLTI4NjU2MDA0MC
-wtMTI1MjQ4MjUzLDg2Nzg0MjA1OSwxNTM2NDIwMjg5LC0yMTM0
-OTYzODc1XX0=
+eyJoaXN0b3J5IjpbLTEwMTUzNDEzOTcsODI1ODAzNTg1LDEyMz
+I0MDY4NDMsLTY4MjA2Njk4MywxNzY5OTE1OTI5LDE5OTA0Nzgw
+MCw0Nzg0MTA4NDIsLTEwMjM1NDE0ODMsLTEzNzIzNzE4MDMsLT
+EwNTk0NzEyMjksLTE3Nzk0NDA0MzksLTMyMzkxNDM3OSwzOTY2
+ODc2NDEsLTE1ODg2NzkzMzgsLTI1ODc2NjA5MCwtMjg2NTYwMD
+QwLC0xMjUyNDgyNTMsODY3ODQyMDU5LDE1MzY0MjAyODksLTIx
+MzQ5NjM4NzVdfQ==
 -->
