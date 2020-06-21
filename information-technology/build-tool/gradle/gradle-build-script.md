@@ -272,7 +272,9 @@ We release now
 
 중요한 점은 `whenReady`를 사용하면 release task가 수행되기 전에 적용된다는 점입니다. 심지어 gradle에 인자로 넘어간 release task가 넘어가지 않더라도 적용됩니다. 즉 언제나 적용됩니다.
 
-이 예제는 `version`  변수가 실행시간에만 읽히기 때문에 제대로 동작합니다. 따라서 실제 운영 빌드설정 과정에서 이 변수가 
+이 예제는 `version`  변수가 실행시간에만 읽히기 때문에 제대로 동작합니다. 따라서 실제 운영 빌드에서 설정 과정에서 이 변수가 
+
+제대로 하지 않으면, 빌드 과정의 configuration과 execution 사이에서 다른 변수값을 가질지도 모릅니다. 
 This example works because the  `version`  value is only read at execution time. When using a similar construct in a real build you must make sure that nowhere is the value read eagerly during configuration. Otherwise your build may use different values for a property between configuration and execution.
 
 ## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)[External dependencies for the build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)
@@ -521,7 +523,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NDk2NjM3NiwxNDA1MTg5OTEwLDcyND
-g5ODc1MywyMTM0NDUwMTYxLC0xNzg1MDMzMzkwLDIxMzI4NzA3
-MjddfQ==
+eyJoaXN0b3J5IjpbLTE5OTcwNDM5OTIsMTQwNTE4OTkxMCw3Mj
+Q4OTg3NTMsMjEzNDQ1MDE2MSwtMTc4NTAzMzM5MCwyMTMyODcw
+NzI3XX0=
 -->
