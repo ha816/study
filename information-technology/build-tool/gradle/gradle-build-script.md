@@ -132,13 +132,9 @@ Hello Jupiter
 
 `doFirst`와 `doLast`은 여러번 실행될 수 있다. 이것들은 taks action 리스트의 처음이나 끝에 action을 추가합니다. task가 실행되면, action 리스트의 action은 순서대로 실행됩니다. 
 
-## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)[Groovy DSL shortcut notations](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)
+## [Groovy DSL shortcut notations](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)
 
-There is a convenient notation for accessing an  _existing_  task. Each task is available as a property of the build script:
-
-Example 10. Accessing task as a property of the build script
-
-build.gradle
+존재하는 task에서 각 속성을 쉽게 사용 가능합니다. task는 빌드 스크립트의 한 속성으로 이것을 사용할 수 있습니다. 
 
 ```groovy
 task hello {
@@ -370,6 +366,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk3OTAyNTM2LC0xNzg1MDMzMzkwLDIxMz
-I4NzA3MjddfQ==
+eyJoaXN0b3J5IjpbLTE5MDcxMjEzMTksLTE3ODUwMzMzOTAsMj
+EzMjg3MDcyN119
 -->
