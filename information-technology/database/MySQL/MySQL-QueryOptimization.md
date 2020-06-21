@@ -194,7 +194,9 @@ SQL 가독성을 높이기 위해서 다른 용도로 사용될 수 있는 "&&" 
 
 문자열 값이 어떤 패턴을 만족하는지 확인하는 연산자이다. REGEXP 연산자를 문자열 컬럼 비교에 사용할때, **REGEXP 조건의 비교는 인덱스 레인지 스캔을 사용할 수 없다.** 따라서 WHERE 조건절에 REGEXP 연산자를 사용한 조건만을 단독으로 사용하는 것은 성능이 좋지 않다. 가능하다면 범위를 줄일 수 있는 조건과 함께 REGEXP 연산자를 사용하길 권장한다. 
 
-### 
+### LIKE 연산자
+
+REGEXP 연산자보다는 훨씬 단순한 문자열 패턴 비교 연산자이지만 DBMS에서는 LIKE 연산자를 더 많이 사용한다. 
 
 
 
@@ -202,11 +204,11 @@ SQL 가독성을 높이기 위해서 다른 용도로 사용될 수 있는 "&&" 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTU3MDM0NzEsLTE5MjkxNjExNTksMT
-QyNDUwMTgwNiw4MjU4MDM1ODUsMTIzMjQwNjg0MywtNjgyMDY2
-OTgzLDE3Njk5MTU5MjksMTk5MDQ3ODAwLDQ3ODQxMDg0MiwtMT
-AyMzU0MTQ4MywtMTM3MjM3MTgwMywtMTA1OTQ3MTIyOSwtMTc3
-OTQ0MDQzOSwtMzIzOTE0Mzc5LDM5NjY4NzY0MSwtMTU4ODY3OT
-MzOCwtMjU4NzY2MDkwLC0yODY1NjAwNDAsLTEyNTI0ODI1Myw4
-Njc4NDIwNTldfQ==
+eyJoaXN0b3J5IjpbMTAyNzQyNDY1LC0xOTI5MTYxMTU5LDE0Mj
+Q1MDE4MDYsODI1ODAzNTg1LDEyMzI0MDY4NDMsLTY4MjA2Njk4
+MywxNzY5OTE1OTI5LDE5OTA0NzgwMCw0Nzg0MTA4NDIsLTEwMj
+M1NDE0ODMsLTEzNzIzNzE4MDMsLTEwNTk0NzEyMjksLTE3Nzk0
+NDA0MzksLTMyMzkxNDM3OSwzOTY2ODc2NDEsLTE1ODg2NzkzMz
+gsLTI1ODc2NjA5MCwtMjg2NTYwMDQwLC0xMjUyNDgyNTMsODY3
+ODQyMDU5XX0=
 -->
