@@ -153,13 +153,6 @@ hello.doLast {
 ## [Extra task properties](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)
 
 task의 속성에 특정한 속성을 추가할 수 있습니다. 
-You can add your own properties to a task. To add a property named  `myProperty`, set  `ext.myProperty`  to an initial value. From that point on, the property can be read and set like a predefined task property.
-
-Example 11. Adding extra properties to a task
-
-`Groovy``Kotlin`
-
-build.gradle
 
 ```groovy
 task myTask {
@@ -173,12 +166,9 @@ task printTaskProperties {
 }
 ```
 
-Output of  **`gradle -q printTaskProperties`**
-
 > gradle -q printTaskProperties
 myValue
 
-Extra properties aren’t limited to tasks. You can read more about them in  [Extra properties](https://docs.gradle.org/current/userguide/writing_build_scripts.html#sec:extra_properties).
 
 ## [Using methods](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:using_methods)
 
@@ -434,6 +424,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMzIwNzg4MSwtMTc4NTAzMzM5MCwyMT
+eyJoaXN0b3J5IjpbLTIwNTc3NTM2OCwtMTc4NTAzMzM5MCwyMT
 MyODcwNzI3XX0=
 -->
