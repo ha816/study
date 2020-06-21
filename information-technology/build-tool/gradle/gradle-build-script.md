@@ -69,14 +69,7 @@ task taskY {
 
 ## [Dynamic tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:dynamic_tasks)
 
-Groovy의 장점은 task가 무엇을 하는지 정의하는 것을 동적으로 
-The power of Groovy or Kotlin can be used for more than defining what a task does. For example, you can also use it to dynamically create tasks.
-
-Example 7. Dynamic creation of a task
-
-`Groovy``Kotlin`
-
-build.gradle
+Groovy의 장점은 task가 무엇을 하는지 정의하는 것을 동적으로 할 수 있다는 점입니다. 예를 들어, 동적으로 task를 생성할 수 있습니다.
 
 ```groovy
 4.times { counter ->
@@ -277,5 +270,5 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzOTExOTc4MSwyMTMyODcwNzI3XX0=
+eyJoaXN0b3J5IjpbLTIwMTgyNzE3NjQsMjEzMjg3MDcyN119
 -->
