@@ -12,7 +12,7 @@ Gradle은 [Maven Conventions](https://maven.apache.org/maven-conventions.html)�
 
 Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Development Kit)가 반드시 필요합니다. 그러나 Gradle은 JVM 프로젝트 빌드에만 국한되지 않고 다양한 소프트웨어를 빌드할 수 있습니다.  당연히 플러그인도 빌드에 활용할 수 있습니다.
 
-Gradle은 주로 Groovy로 작성된 빌드 스크립트를 
+Gradle은 주로 Groovy로 작성된 빌드 스크립트로 빌드를 하게 됩니다. Groovy는 JVM에서 작동하는 동적 스크립트 언어 입니다. 
 
 현재 Gradle이 지원하는 의존성 관리는 [Maven Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)와 Ivy-compatible repositories가 있습니다.
 
@@ -243,7 +243,7 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzkyMDgzNiwtODU3Njk3NjU2LC0xNj
+eyJoaXN0b3J5IjpbLTY0ODc4MjQ5NiwtODU3Njk3NjU2LC0xNj
 AxNjg2NDExLDE0NTE3NjE2MDksLTI3MTA2ODY2OCwtNzgwMzIy
 NDUsLTkxODUxMDA3OSwyMTIxMzM3NDgyLC0xOTU2MDM0MTMwLC
 0xNjAxODkyMzg2LC04OTM4MTE5NTQsMjA4NjYyNjgzMSwtOTA1
