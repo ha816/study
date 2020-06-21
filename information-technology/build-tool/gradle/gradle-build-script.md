@@ -237,7 +237,9 @@ task other {
 
 ## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#configure-by-dag)[Configure by DAG](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#configure-by-dag)
 
-As we later describe in full detail (see  [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)), Gradle has a configuration phase and an execution phase. After the configuration phase, Gradle knows all tasks that should be executed. Gradle offers you a hook to make use of this information. A use-case for this would be to check if the release task is among the tasks to be executed. Depending on this, you can assign different values to some variables.
+Gradle의 configuration phase가 끝나면, 수행해야할 모든 task를 알게 됩니다. Gradle은 이 정보를 사용하기 위해 hook을 제공합니다. 하나의 예로, 
+
+Gradle offers you a hook to make use of this information. A use-case for this would be to check if the release task is among the tasks to be executed. Depending on this, you can assign different values to some variables.
 
 In the following example, execution of the  `distribution`  and  `release`  tasks results in different value of the  `version`  variable.
 
@@ -529,6 +531,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI0ODk4NzUzLDIxMzQ0NTAxNjEsLTE3OD
-UwMzMzOTAsMjEzMjg3MDcyN119
+eyJoaXN0b3J5IjpbMTYzNTcwMzY0Miw3MjQ4OTg3NTMsMjEzND
+Q1MDE2MSwtMTc4NTAzMzM5MCwyMTMyODcwNzI3XX0=
 -->
