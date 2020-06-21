@@ -204,36 +204,6 @@ I'm fond of agile.manifesto.txt
 I'm fond of gradle.manifesto.txt
 
 
-## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)[Extra task properties](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)
-
-You can add your own properties to a task. To add a property named  `myProperty`, set  `ext.myProperty`  to an initial value. From that point on, the property can be read and set like a predefined task property.
-
-Example 11. Adding extra properties to a task
-
-`Groovy``Kotlin`
-
-build.gradle
-
-```groovy
-task myTask {
-    ext.myProperty = "myValue"
-}
-
-task printTaskProperties {
-    doLast {
-        println myTask.myProperty
-    }
-}
-```
-
-Output of  **`gradle -q printTaskProperties`**
-
-> gradle -q printTaskProperties
-myValue
-
-Extra properties aren’t limited to tasks. You can read more about them in  [Extra properties](https://docs.gradle.org/current/userguide/writing_build_scripts.html#sec:extra_properties).
-
-
 #### Gradle Wrapper를 사용하는 목적
 
 -   이미 존재하는 프로젝트를 새로운 환경에 설치할때 별도의 설치나 설정과정없이 곧 바로 빌드할 수 있게 하기 위함(Java나 Gradle도 설치할 필요가 없음. 또한 로컬에 설치된 Gradle 또는 Java의 버전도 신경쓸 필요가 없음. 따라서 항상 Wrapper를 사용할 것을 권장.)
@@ -415,6 +385,6 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNDQ1MDE2MSwtMTc4NTAzMzM5MCwyMT
-MyODcwNzI3XX0=
+eyJoaXN0b3J5IjpbLTEzMjQ4NTIzMjMsMjEzNDQ1MDE2MSwtMT
+c4NTAzMzM5MCwyMTMyODcwNzI3XX0=
 -->
