@@ -23,8 +23,7 @@ Gradle은 주로 Groovy로 작성된 빌드 스크립트로 빌드를 하게 됩
 모든 Gradle 빌드는 최소 하나 이상의 프로젝트들로 만들어집니다. 프로젝트가 무엇을 나타내는지는 Gradle로 무엇을 하느냐에 달려 있습니다. 구성에 따라 다르지만, 다수의 프로젝트를 동시에 빌드하
 는 것도 가능합니다.
 
-모든 Gradle 빌드에 
-각 프로젝트는 최사 이상의 task로 구성됩니다. 
+모든 Gradle 빌드에 최소 하나 이상의 프로젝트가 존재하는 것 처럼, 각 프로젝트는 최소 하나 이상의 task로 구성됩니다. 
 
 ### Task
 
@@ -39,7 +38,6 @@ Gradle은 주로 Groovy로 작성된 빌드 스크립트로 빌드를 하게 됩
 각 구성요소는 task가 해야할것에 따라 선택적입니다. 예를 들어, [standard lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks) 같은 task는 어떤 actions도 가지지 않는 경우도 있습니다. 
 
 빌드에 필요한 특정 task만 골라 돌리면, task를 새로 만들기 위한 자원을 아낄 수 있다. 만약 unit test를 돌려보고 싶다면, `test` task를 찾으면 됩니다. 만약 애플리케이션을 package하고 싶다면, 일반적으로 `assemble` task를 수행하면 됩니다.
-
 
 
 ## Task Graph
@@ -81,5 +79,5 @@ Gradle은  JVM에서 동작하기 때문에, 빌드 스크릷트들은 표준 [J
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzExOTM5NTNdfQ==
+eyJoaXN0b3J5IjpbMTk5MzU4MDQ1Nl19
 -->
