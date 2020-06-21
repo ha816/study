@@ -69,6 +69,8 @@ Gradle의 기본 빌드 로직만을 따라서 프로젝트를 만들 수 있으
 
 ## [5. Build scripts operate against an API](https://docs.gradle.org/current/userguide/what_is_gradle.html#5_build_scripts_operate_against_an_api)
 
+Gradle의 빌드 스크립트 실행 코드로 보기 쉽다. 
+
 It’s easy to view Gradle’s build scripts as executable code, because that’s what they are. But that’s an implementation detail: well-designed build scripts describe  _what_  steps are needed to build the software, not  _how_  those steps should do the work. That’s a job for custom task types and plugins.
 
 There is a common misconception that Gradle’s power and flexibility come from the fact that its build scripts are code. This couldn’t be further from the truth. It’s the underlying model and API that provide the power. As we recommend in our best practices, you should  [avoid putting much, if any, imperative logic in your build scripts](https://docs.gradle.org/current/userguide/authoring_maintainable_build_scripts.html#sec:avoid_imperative_logic_in_scripts).
@@ -257,8 +259,8 @@ def queryDslOutput =  file("src-gen/main/java") task generateQueryDSL(type: Java
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxODUxMDA3OSwyMTIxMzM3NDgyLC0xOT
-U2MDM0MTMwLC0xNjAxODkyMzg2LC04OTM4MTE5NTQsMjA4NjYy
-NjgzMSwtOTA1NTI0OTQyLC04NTEyODg3NTUsMTkyMDY4MjMwN1
-19
+eyJoaXN0b3J5IjpbLTc4MDMyMjQ1LC05MTg1MTAwNzksMjEyMT
+MzNzQ4MiwtMTk1NjAzNDEzMCwtMTYwMTg5MjM4NiwtODkzODEx
+OTU0LDIwODY2MjY4MzEsLTkwNTUyNDk0MiwtODUxMjg4NzU1LD
+E5MjA2ODIzMDddfQ==
 -->
