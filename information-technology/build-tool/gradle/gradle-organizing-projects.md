@@ -90,7 +90,7 @@ check.dependsOn integTest
 
 ## [Always define a settings file](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#always_define_a_settings_file)
 
-
+Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다. 이ㄹ
 
 Gradle tries to locate a  `settings.gradle`  (Groovy DSL) or a  `settings.gradle.kts`  (Kotlin DSL) file with every invocation of the build. For that purpose, the runtime walks the hierarchy of the directory tree up to the root directory. The algorithm stops searching as soon as it finds the settings file.
 
@@ -108,7 +108,7 @@ A typical Gradle project with a settings file look as such:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MDU4MzQ5MSw0ODUyMTMzMzYsLTE5OT
+eyJoaXN0b3J5IjpbMTYxNDM3Mzg2NSw0ODUyMTMzMzYsLTE5OT
 c5NTQ4NTQsMTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5
 MiwtMTc1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMT
 cyMzU2NjMwNV19
