@@ -22,6 +22,9 @@ task hello {
 
 `gradle -q hello`을 실행하면, 빌드 스크립트에 정의된 hello란 task를 찾아 action을 추가 합니다. Gradle은 hello task를 실행하며, 추가된 action을 순차적으로 하나씩 처리합니다. action은 단지 한 블럭으로 실행할 코드를 가지고 있습니다. 
 
+
+
+
 # [Task dependencies](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)
 
 다른 tasks 위에 또 다른 tasks를 선언할 수 있습니다. 아래 예제는 intro task가 hello task에 의지합니다. 
@@ -331,8 +334,8 @@ multi-project 빌드에서, 한 프로젝트의 `buildscript()`로 선언된 의
 [https://dynaticy.tistory.com/entry/Gradle-UserGuide-%EB%8F%84%EC%A0%84%EA%B8%B0-6-Build-Script-Basics?category=536334](https://dynaticy.tistory.com/entry/Gradle-UserGuide-%EB%8F%84%EC%A0%84%EA%B8%B0-6-Build-Script-Basics?category=536334)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYzOTY5ODE3LDQ5NTYyNDM3OCwtMTg4MT
-g3MTYwOCwtMTY3NDY1MTQ4NywxNDA1MTg5OTEwLDcyNDg5ODc1
-MywyMTM0NDUwMTYxLC0xNzg1MDMzMzkwLDIxMzI4NzA3MjddfQ
-==
+eyJoaXN0b3J5IjpbMTI1OTgyNjA4Myw3NjM5Njk4MTcsNDk1Nj
+I0Mzc4LC0xODgxODcxNjA4LC0xNjc0NjUxNDg3LDE0MDUxODk5
+MTAsNzI0ODk4NzUzLDIxMzQ0NTAxNjEsLTE3ODUwMzMzOTAsMj
+EzMjg3MDcyN119
 -->
