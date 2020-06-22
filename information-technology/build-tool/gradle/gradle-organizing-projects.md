@@ -70,20 +70,14 @@ rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적�
 subprojects 설정값들은 모든 하위 프로젝트에 적용됩니다. 만약 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면,  allprojects를 사용하면 됩니다.
 
 ```
-buildscript {  
-ext {  
-  _versions = [  
-                springBoot : '2.2.4.RELEASE',  
-                slf4j : '1.7.25',  
-                lombok : '1.16.20',  
-                ...
-	  ]  
-	  
-  profile = project.hasProperty('profile')? profile : System.getProperty('profile') ?: 'local'  
-  branch = project.hasProperty('branch')? branch :  System.getProperty('branch') ?: 'develop'  
-  revision = (branch =~ /^release\/RB-/) ? branch.replaceFirst(/^release\/RB-/, ''): '0.0.1'  
-  
-}
+buildscript {
+	ext {
+	_versions = [  
+	                springBoot : '2.2.4.RELEASE',  
+	                slf4j : '1.7.25',  
+	                lombok : '1.16.20',  
+	                ... ]
+	}
   
  
   
@@ -258,9 +252,10 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOT
-k4Njk1NTEsNTE4MDk3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3
-LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3LDYxMz
-IxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMz
-OTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbMTEyODU4NTY3MywtMTg3NDkwNjQ2OCwtMT
+Q4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MTQ5NjI5
+MCw0NTE0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOT
+QxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2
+MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ
+==
 -->
