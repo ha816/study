@@ -4,9 +4,9 @@
 
 ## [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
 
-Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하는데 컨벤션을 판별합니다. 예를 들어, [Java plugin](https://docs.gradle.org/current/userguide/java_plugin.html#java_plugin)을 사용하는 프로젝트는 자동적으로 `src/main/java`의 디렉토
+Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하는데 컨벤션을 판별합니다. 예를 들어, [Java plugin](https://docs.gradle.org/current/userguide/java_plugin.html#java_plugin)을 사용하는 프로젝트는 자동적으로 `src/main/java`의 디렉토리의 코드를 컴파일합니다. 다른 플러그인도 같은 패턴을 따릅니다. 
 
-Gradle’s language plugins establish conventions for discovering and compiling source code. For example, a project applying the  [Java plugin](https://docs.gradle.org/current/userguide/java_plugin.html#java_plugin)  will automatically compile the code in the directory  `src/main/java`. 
+디렉토리 경로
 
 Other language plugins follow the same pattern. The last portion of the directory path usually indicates the expected language of the source files.
 
@@ -36,6 +36,6 @@ The following source tree contains Java and Kotlin source files. Java source fil
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM5MzkzODQ0LC01NzcyNzMzOTQsMjAyNT
-A0NjgyNiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbLTc5ODg1ODMzNCwtNTc3MjczMzk0LDIwMj
+UwNDY4MjYsMTcyMzU2NjMwNV19
 -->
