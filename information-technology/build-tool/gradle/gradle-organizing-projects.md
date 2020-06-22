@@ -66,9 +66,9 @@ rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적�
 
 최상위 프로젝트의 build.gradle 파일에 설정된 내용은 모든 하위 프로젝트에 공통적으로 적용할 수 있습니다. 
 
-buildscript {} 블럭에서 Gradle 자신을 위한(모듈에 대한 의존성dependencies은 여기에 적으면 안됨) 
+buildscript 블럭에서 Gradle 자신을 위한(모듈에 대한 의존성dependencies은 여기에 적으면 안됨) 
 
-subprojects 설정값들은 모든 하위 프로젝트에 적용됩니다. 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면, subprojects가 아닌 allprojects를 사용하면 됩니다.
+subprojects 설정값들은 모든 하위 프로젝트에 적용됩니다. 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면, subprojects가 아닌 allprojects 블럭을 사용하면 됩니다.
 ```
 buildscript {
 	ext {
@@ -116,27 +116,7 @@ subprojects {
 최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들어 유지보수 할 수 있습니다.
 
 /**  
-buildscript {} 블럭에서 Gradle 자신을 위한(모듈에 대한 의존성dependencies은 여기에 적으면 안됨) 
 
-저장소repositories와 의존성dependencies을 설정할 수 있습니다.예를 들어, 이 블럭은 Gradle을 위한
-
-의존성으로 안드로이드 플러그인을 포함합니다. 왜냐하면 이는 Gradle이 안드로이드 앱 모듈을 빌드하는데
-
-필요한 부가적인 설명을 제공하기 때문입니다. */buildscript {  /** The repositories {} 블럭은 Gradle이 의존성dependencies을 검색, 다운로드할 때
-
- 사용할 저장소repositories를 설정할 수 있습니다. Gradle은 JCenter, Maven Central 
-
- 그리고 Ivy 같은 외부 저장소에 대한 지원을 미리 설정합니다. 또한 당신은 로컬 저장소나 
-
- 당신 소유의 외부 저장소를 사용할 수 있습니다. 아래의 코드는 Gradle이 의존성dependencies
-
- 을 찾아야 하는 저장소로 JCenter를 정의합니다. */ repositories { jcenter()  }  /**  
-     dependencies {} 블럭은 Gradle이 당신의 프로젝트를 빌드하기 위해 필요한 의존성을 설정합니다.
-
- 아래의 라인은 classpath 의존성으로 Gradle 버전 3.0.1을 위한 안드로이드 플러그인을 추가합니다.  
-     */ dependencies { classpath 'com.android.tools.build:gradle:3.0.1'  }  
-}  
-  
 /**  
  allprojects {} 블럭에서 써드 파티 플러그인이나 라이브러리 처럼 모든 모듈에서 사용되는
 
@@ -251,10 +231,10 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTk2MDcyNjMsLTkwNDMyODY2OCwtMT
-g3NDkwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTcz
-NDYsMjA1MTQ5NjI5MCw0NTE0NDA0MjcsNDg1MjEzMzM2LC0xOT
-k3OTU0ODU0LDExOTQxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYy
-OTIsLTE3NTI5OTU2MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LD
-E3MjM1NjYzMDVdfQ==
+eyJoaXN0b3J5IjpbMTI3MjA0ODk3LC05MDQzMjg2NjgsLTE4Nz
+Q5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MDk3MzQ2
+LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNiwtMTk5Nz
+k1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OTM2Mjky
+LC0xNzUyOTk1NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNz
+IzNTY2MzA1XX0=
 -->
