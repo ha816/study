@@ -80,9 +80,9 @@ buildscript {
 	                ... 
                 ]
     }
-	/* Gradle이 의존성 dependencies을 검색, 다운로드할 때, 사용할 저장소repositories를 설정할 수있습니다. JCenter,Maven Central 그리고 Ivy 같은 외부 저장소가 가능합니다. Gradle이 의존성dependencies
-
- 을 찾아야 하는 저장소로 JCenter를 정의합니다.
+	/* Gradle이 의존성 dependencies을 검색 또는 다운로드할 때, 
+	사용할 저장소(repositories)를 설정할 수 있습니다.
+	JCenter,Maven Central 그리고 Ivy 같은 외부 저장소가 가능합니다. */
 
 	 repositories {  
 		  mavenCentral()  
@@ -242,7 +242,7 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMDI3MDI3LC05MDQzMjg2NjgsLTE4Nz
+eyJoaXN0b3J5IjpbOTIyNjE5NjQ0LC05MDQzMjg2NjgsLTE4Nz
 Q5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MDk3MzQ2
 LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNiwtMTk5Nz
 k1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OTM2Mjky
