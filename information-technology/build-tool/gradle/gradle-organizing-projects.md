@@ -69,8 +69,6 @@ rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적�
 최상위 프로젝트의 build.gradle 파일에 설정된 내용은 모든 하위 프로젝트에 공통적으로 적용할 수 있습니다. 
 subprojects 설정값들은 모든 하위 프로젝트에 적용됩니다. 만약 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면,  allprojects를 사용하면 됩니다.
 
-
-
 ```
 subprojects {
 	apply plugin: 'java'        // 'java'라는 Gradle 플러그인 적용
@@ -198,9 +196,9 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3ODY0NjYyNyw5OTg2OTU1MSw1MTgwOT
-czNDYsMjA1MTQ5NjI5MCw0NTE0NDA0MjcsNDg1MjEzMzM2LC0x
-OTk3OTU0ODU0LDExOTQxMjcxMjcsNjEzMjE0NzA3LDE3NTc5Mz
-YyOTIsLTE3NTI5OTU2MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2
-LDE3MjM1NjYzMDVdfQ==
+eyJoaXN0b3J5IjpbLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MD
+k3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNiwt
+MTk5Nzk1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OT
+M2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMzOTQsMjAyNTA0Njgy
+NiwxNzIzNTY2MzA1XX0=
 -->
