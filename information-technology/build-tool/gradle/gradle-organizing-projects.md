@@ -61,12 +61,9 @@ if( file('../soda').exists() ) {
 rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적으로는 프로젝트 폴더명으로 만들어집니다. 
 그리고 tropicana 프로젝트의 하위프로젝트로 core, gateway, internal ... 등이 있습니다. 루트 프로젝트 하위에 프로젝트 폴더가 있어야 합니다.
 
-각 하위 폴더는 하위 Gradle 프로젝트로 만들 차례다. 최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들자.
+최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들 수 있습니다. 
 
-> touch java/build.gradle  
-> touch kotlin/build.gradle
-
-마지막으로 최상위 프로젝트의 build.gradle 파일에 모든 하위 프로젝트에 적용되는 공통 설정을 적용하자.
+최상위 프로젝트의 build.gradle 파일에 설정된 내용은 모든 하위 프로젝트에 공통적으로 설정됩니다. 
 
 subprojects {  
     group = "funfunstudy"    // 생성될 아티팩트의 그룹명  
@@ -185,7 +182,7 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMjYzOTIwOCwyMDUxNDk2MjkwLDQ1MT
+eyJoaXN0b3J5IjpbLTM2MDA0MjI1NiwyMDUxNDk2MjkwLDQ1MT
 Q0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEy
 Nyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
 c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
