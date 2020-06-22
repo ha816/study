@@ -207,20 +207,22 @@ FROM employees WHERE first_name LIKE 'Christ%';
 ```
 
 기본적인 인덱스는 Left-most 특성을 가지기 때문에 위 쿼리를 사용하면 인덱스를 사용할 수 있다.
-즉, 와일드 카드 문자인 %가 검색어 뒤쪽에 있다면 레인지 스캔이
+즉, 와일드 카드 문자인 %가 검색어 뒤쪽에 있다면 레인지 스캔이 가능하지만 앞쪽에 있으면 사용이 불가능 하다.
 
 ### BETWEEN 연산자
 
 
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3Mzc1OTQ0MCwtMjQ3OTg4MjgyLDg1OT
-kyODUyNywxMDI3NDI0NjUsLTE5MjkxNjExNTksMTQyNDUwMTgw
-Niw4MjU4MDM1ODUsMTIzMjQwNjg0MywtNjgyMDY2OTgzLDE3Nj
-k5MTU5MjksMTk5MDQ3ODAwLDQ3ODQxMDg0MiwtMTAyMzU0MTQ4
-MywtMTM3MjM3MTgwMywtMTA1OTQ3MTIyOSwtMTc3OTQ0MDQzOS
-wtMzIzOTE0Mzc5LDM5NjY4NzY0MSwtMTU4ODY3OTMzOCwtMjU4
-NzY2MDkwXX0=
+eyJoaXN0b3J5IjpbLTE5ODc3MTUwNzAsLTI0Nzk4ODI4Miw4NT
+k5Mjg1MjcsMTAyNzQyNDY1LC0xOTI5MTYxMTU5LDE0MjQ1MDE4
+MDYsODI1ODAzNTg1LDEyMzI0MDY4NDMsLTY4MjA2Njk4MywxNz
+Y5OTE1OTI5LDE5OTA0NzgwMCw0Nzg0MTA4NDIsLTEwMjM1NDE0
+ODMsLTEzNzIzNzE4MDMsLTEwNTk0NzEyMjksLTE3Nzk0NDA0Mz
+ksLTMyMzkxNDM3OSwzOTY2ODc2NDEsLTE1ODg2NzkzMzgsLTI1
+ODc2NjA5MF19
 -->
