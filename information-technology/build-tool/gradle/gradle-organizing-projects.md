@@ -10,11 +10,9 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
 
 어떤 컴파일러는 같은 소스 디렉토리에서 다수의 언어를 크로스 컴파일링이 가능합니다. Groovy 컴파일러의 경우, `src/main/groovy`에 있는 자바와 Groovy 코드가 혼합된 소스도 다룰 수 있습니다. 
 
-Gradle은 언어에 따라 
+언어에 따라 디렉토리를 나누고 언어에 맞는 소스를 할당하는것을 Gradle에선 추천하고 있습니다. 왜냐하면 빌드가 너 
 
-Other language plugins follow the same pattern. The last portion of the directory path usually indicates the expected language of the source files.
-
-Some compilers are capable of cross-compiling multiple languages in the same source directory. The Groovy compiler can handle the scenario of mixing Java and Groovy source files located in  `src/main/groovy`. Gradle recommends that you place sources in directories according to their language, because builds are more performant and both the user and build can make stronger assumptions.
+ Gradle recommends that you place sources in directories according to their language, because builds are more performant and both the user and build can make stronger assumptions.
 
 The following source tree contains Java and Kotlin source files. Java source files live in  `src/main/java`, whereas Kotlin source files live in  `src/main/kotlin`.
 
@@ -40,6 +38,7 @@ The following source tree contains Java and Kotlin source files. Java source fil
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
-c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
+eyJoaXN0b3J5IjpbNDM4MDc4MDcwLDE3NTc5MzYyOTIsLTE3NT
+I5OTU2MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYz
+MDVdfQ==
 -->
