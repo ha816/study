@@ -2,7 +2,7 @@
 
 모든 소프트웨어 프로젝트의 소스 코드와 빌드 로직은 의미있게 구성되어야 합니다. 아래 설명할 예제들은 어떻게 하면 읽기 쉽고, 유지보수하기 쉬운 프로젝트를 만드는지 실용적인 부분을 설명합니다. 또한, 일반적인 문제들도 다루면서 어떻게 그것들을 피하는지도 이야기 해보겠습니다.
 
-## [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
+# [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
 
 Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하는데 컨벤션을 판별합니다. 예를 들어, [Java plugin](https://docs.gradle.org/current/userguide/java_plugin.html#java_plugin)을 사용하는 프로젝트는 자동적으로 `src/main/java`의 디렉토리의 코드를 컴파일합니다. 다른 플러그인도 같은 패턴을 따릅니다. 
 
@@ -25,7 +25,7 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
             └── Utils.kt
 ```
 
-## [Separate source files per test type](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
+# [Separate source files per test type](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
 
 한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. (unit tests, integration tests, functional test or smoke tests와 같은)
 
@@ -54,6 +54,60 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
 
 Gradle은 [source set concept](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)의 도움을 받아 소스 코드 디렉토리를 모델링 합니다. 
 소스 집단 객체 하나를 다수의 소스 코드 디렉토리를 가리키도록 하여, Gradle은 자동적으로 대응하는 컴파일 task를 만들어냅니다.
+
+## [Declaring your source files via source sets](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)
+
+Gradle’s Java support was the first to introduce a new concept for building source-based projects:  _source sets_. The main idea is that source files and resources are often logically grouped by type, such as application code, unit tests and integration tests. Each logical group typically has its own sets of file dependencies, classpaths, and more. Significantly, the files that form a source set  _don’t have to be located in the same directory_!
+
+Source sets are a powerful concept that tie together several aspects of compilation:
+
+-   the source files and where they’re located
+    
+-   the compilation classpath, including any required dependencies (via Gradle  [configurations](https://docs.gradle.org/current/userguide/dependency_management_terminology.html#sub:terminology_configuration))
+    
+-   where the compiled class files are placed
+    
+
+You can see how these relate to one another in this diagram:
+
+![java sourcesets compilation](https://docs.gradle.org/current/userguide/img/java-sourcesets-compilation.png)
+
+Figure 1. Source sets and Java compilation
+
+The shaded boxes represent properties of the source set itself. On top of that, the Java Library Plugin automatically creates a compilation task for every source set you or a plugin defines — named  `compile_SourceSet_Java`  — and several  [dependency configurations](https://docs.gradle.org/current/userguide/java_plugin.html#java_source_set_configurations).
+
+The  `main`  source set
+
+Most language plugins, Java included, automatically create a source set called  `main`, which is used for the project’s production code. This source set is special in that its name is not included in the names of the configurations and tasks, hence why you have just a  `compileJava`  task and  `compileOnly`  and  `implementation`  configurations rather than  `compileMainJava`,  `mainCompileOnly`  and  `mainImplementation`  respectively.
+
+Java projects typically include resources other than source files, such as properties files, that may need processing — for example by replacing tokens within the files — and packaging within the final JAR. The Java Library Plugin handles this by automatically creating a dedicated task for each defined source set called  `process_SourceSet_Resources`  (or  `processResources`  for the  `main`  source set). The following diagram shows how the source set fits in with this task:
+
+![java sourcesets process resources](https://docs.gradle.org/current/userguide/img/java-sourcesets-process-resources.png)
+
+Figure 2. Processing non-source files for a source set
+
+As before, the shaded boxes represent properties of the source set, which in this case comprises the locations of the resource files and where they are copied to.
+
+In addition to the  `main`  source set, the Java Library Plugin defines a  `test`  source set that represents the project’s tests. This source set is used by the  `test`  task, which runs the tests. You can learn more about this task and related topics in the  [Java testing](https://docs.gradle.org/current/userguide/java_testing.html#java_testing)  chapter.
+
+Projects typically use this source set for unit tests, but you can also use it for integration, acceptance and other types of test if you wish. The alternative approach is to  [define a new source set](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_sets)  for each of your other test types, which is typically done for one or both of the following reasons:
+
+-   You want to keep the tests separate from one another for aesthetics and manageability
+    
+-   The different test types require different compilation or runtime classpaths or some other difference in setup
+    
+
+You can see an example of this approach in the Java testing chapter, which shows you  [how to set up integration tests](https://docs.gradle.org/current/userguide/java_testing.html#sec:configuring_java_integration_tests)  in a project.
+
+You’ll learn more about source sets and the features they provide in:
+
+-   [Customizing file and directory locations](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
+    
+-   [Configuring Java integration tests](https://docs.gradle.org/current/userguide/java_testing.html#sec:configuring_java_integration_tests)
+    
+
+## [](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_dependency_management_overview)[  
+](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_dependency_management_overview)
 
 Example 1. Integration test source set
 
@@ -101,7 +155,7 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTA1MDU3OTYsMTc1NzkzNjI5MiwtMT
-c1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2
-NjMwNV19
+eyJoaXN0b3J5IjpbMTg1MTk0MTEwNiwxNzU3OTM2MjkyLC0xNz
+UyOTk1NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2
+MzA1XX0=
 -->
