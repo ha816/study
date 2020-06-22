@@ -66,7 +66,7 @@ Example 1. Integration test source set
 ```groovy
 // gradle/integration-test.gradle 
 sourceSets {
-    integTest {
+    integTest { //sourceSets으로 integTest를 정의 
         java.srcDir file('src/integTest/java')
         resources.srcDir file('src/integTest/resources')
         compileClasspath += sourceSets.main.output + configurations.testRuntimeClasspath
@@ -107,7 +107,7 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjU0NjgyODMsLTE5OTc5NTQ4NTQsMT
+eyJoaXN0b3J5IjpbLTE3MzYxNjQ0MDEsLTE5OTc5NTQ4NTQsMT
 E5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5
 NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV
 19
