@@ -1,8 +1,11 @@
 # Overview
 
-스크립트를 실제 어떻게 사용하는지 알아보는 장입니다. 
+빌드 스크립트를 실제 어떻게 만드는지 알아봅시다. 
 
-## [Hello world](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:hello_world)
+
+
+
+# [Hello world](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:hello_world)
 
 기본적으로 Gradle의 빌드 과정에서 `gradle` 명령어를 사용하게 됩니다. `gradle` 명령은 `build.gradle` 파일을 현재 디렉토리에서 찾습니다. `build.gradle`을 빌드 스크립트라고 부르는데, 보다 엄밀히는 빌드 설정 스크립트(build configuration script)라 합니다. 
 빌드 스크립트는 프로젝트와 프로젝트가 가지는 task를 정의합니다.
@@ -333,7 +336,8 @@ multi-project 빌드에서, 한 프로젝트의 `buildscript()`로 선언된 의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk1NjI0Mzc4LC0xODgxODcxNjA4LC0xNj
-c0NjUxNDg3LDE0MDUxODk5MTAsNzI0ODk4NzUzLDIxMzQ0NTAx
-NjEsLTE3ODUwMzMzOTAsMjEzMjg3MDcyN119
+eyJoaXN0b3J5IjpbLTE2MTI3NTM5ODUsNDk1NjI0Mzc4LC0xOD
+gxODcxNjA4LC0xNjc0NjUxNDg3LDE0MDUxODk5MTAsNzI0ODk4
+NzUzLDIxMzQ0NTAxNjEsLTE3ODUwMzMzOTAsMjEzMjg3MDcyN1
+19
 -->
