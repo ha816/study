@@ -86,7 +86,10 @@ buildscript {
 		  maven { url "http://repo.linecorp.com/content/repositories/releases/" }  
 		  maven { url "http://repo.linecorp.com/content/repositories/snapshots/" }  
 	 }  
-	 // Gradle이 프로젝트를 빌드하기 위해 필요한 의존성을 설정합니다.
+	 // Gradle이 프로젝트를 빌드하기 위해 필요한 의존성을 설정.
+	 // 이제 빌드 스크립트 내에서 해당 클래스를 import하고 사용할 수 있게된 것을 확인할 수 있다.
+
+멀티 프로젝트를 구성할때는 buildscript에 설정되 의존성을 모든 서브 프로젝트의 빌드 스크립트에서 사용할 수 있다.
 	 // classpath 의존성으로 boot-gradle-plugin과 dependency-management-plugin을 사용합니다.
 	 dependencies {  
 		 classpath("org.springframework.boot:spring-boot-gradle-plugin:${_versions.springBoot}")  
@@ -227,11 +230,11 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEzOTczODAyLDYxNTQ3MDE3MSwtNTc3ND
-kwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0LC05MDQzMjg2Njgs
-LTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MD
-k3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNiwt
-MTk5Nzk1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OT
-M2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMzOTQsMjAyNTA0Njgy
-Nl19
+eyJoaXN0b3J5IjpbMTUzNTgzMTI0NSw2MTU0NzAxNzEsLTU3Nz
+Q5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4
+LC0xODc0OTA2NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxOD
+A5NzM0NiwyMDUxNDk2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzYs
+LTE5OTc5NTQ4NTQsMTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1Nz
+kzNjI5MiwtMTc1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4
+MjZdfQ==
 -->
