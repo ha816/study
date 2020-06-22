@@ -103,7 +103,7 @@ subprojects {
 	sourceCompatibility = 1.8   // Java 호환 버전을 1.8로 설정
 	group = 'ai.clova.tropicana' // 생성될 아티팩트 그룹의 이름
 
-	repositories {  // 의존성을 가져올 주소를 설정
+	repositories {  //하위 프로젝트가 사용할 의존성을 가져올 주소 설정
 	  mavenCentral()  
 	  ...
 	}  
@@ -238,10 +238,11 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMj
-YxOTY0NCwtOTA0MzI4NjY4LC0xODc0OTA2NDY4LC0xNDg2Mjgx
-OTkxLDk5ODY5NTUxLDUxODA5NzM0NiwyMDUxNDk2MjkwLDQ1MT
-Q0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEy
-Nyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
-c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
+eyJoaXN0b3J5IjpbLTEwMDg1MTgyNzksLTU3NzQ5MDM0MSwtOT
+MzNjIxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4LC0xODc0OTA2
+NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxODA5NzM0NiwyMD
+UxNDk2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4
+NTQsMTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMT
+c1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2
+NjMwNV19
 -->
