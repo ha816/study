@@ -33,8 +33,7 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
 
 아래 소스 트리는 자바 기반 프로젝트에서 integration test를 어떻게 나누는지 보여줍니다.
 
-```groovy
-.
+```groovy.
 ├── build.gradle
 ├── gradle
 │   └── integration-test.gradle
@@ -52,6 +51,8 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
         └── java
             └── StringUtilsTest.java
 ```
+
+Gradle 모델의 소스 코드 디렉토리는 
 
 Gradle models source code directories with the help of the  [source set concept](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets). By pointing an instance of a source set to one or many source code directories, Gradle will automatically create a corresponding compilation task out-of-the-box.
 
@@ -104,7 +105,7 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDg5MDg0OTAsMTc1NzkzNjI5MiwtMT
+eyJoaXN0b3J5IjpbLTEyNjQyMTMyNTAsMTc1NzkzNjI5MiwtMT
 c1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2
 NjMwNV19
 -->
