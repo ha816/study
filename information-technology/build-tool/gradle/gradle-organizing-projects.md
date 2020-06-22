@@ -23,13 +23,9 @@ project/
 
  Gradle Wrapper를 사용하는 목적은 이미 존재하는 프로젝트를 새로운 환경에 설치할때 별도의 설치나 설정과정없이 곧 바로 빌드할 수 있게 하기 위함입니다. 심지어 Java나 Gradle도 설치할 필요도 없고, 로컬에 설치된 Gradle 또는 Java의 버전도 신경쓸 필요가 없다. 따라서 항상 Gradle Wrapper를 사용할 것을 권장합니다. 
  
-**gradle/wrapper/gradle-wrapper.jar 파일**은 Wrapper 파일입니다.  task를 실행할때 이 파일들을 기본적으로 사용하기 때문에 로컬 환경의 영향을 받지 않습니다. 실제론 Wrapper 버전에 맞는 구성들을 로컬 캐시에 다운로드 받습니다. 
+**gradle/wrapper/gradle-wrapper.jar 파일**은 Wrapper 파일입니다. Gradle Wrapper를 이용할때 이 파일들을 기본적으로 사용하기 때문에 로컬 환경의 영향을 받지 않습니다. 필요시에는 Wrapper 버전에 맞는 구성들을 로컬 캐시에 다운로드 받습니다. 
 
-**gradle/wrapper/gradle-wrapper.properties 파일**은 Wrapper 설정 파일입니다. 이 파일에 사용할  Wrapper 버전 등을 저장 변경하면 task 실행시, 자동으로 새로운 Wrapper 파일을 로컬 캐시에 다운로드 받는다.
-
-**build.gradle 파일**은 의존성이나 플러그인 설정 등을 위한 스크립트 파일이다. 뒷부분에서 많이 다룰 것 이다.
-
-**settings.gradle 파일**은 프로젝트의 구성 정보를 기록하는 파일이다. 어떤 하위프로젝트들이 어떤 관계로 구성되어 있는지를 기술한다. Gradle은 이 파일에 기술된대로 프로젝트를 구성한다.
+**gradle/wrapper/gradle-wrapper.properties 파일**은 Wrapper 설정 파일입니다. 이 파일에 사용할  Wrapper 버전 등을 저장하는데, 버전을 변경하면 task 실행시, 자동으로 새로운 Wrapper 파일을 로컬 캐시에 다운로드 받습니다.
 
 # 
 
@@ -149,8 +145,8 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM0MjI3MjgsMjA1MTQ5NjI5MCw0NTE0ND
-A0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcxMjcs
-NjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2MTQsLTU3Nz
-I3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ==
+eyJoaXN0b3J5IjpbMjc2MDg2NDkwLDIwNTE0OTYyOTAsNDUxND
+QwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3
+LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01Nz
+cyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
 -->
