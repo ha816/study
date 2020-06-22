@@ -70,6 +70,7 @@ buildscript 블럭에는 Gradle 자신을 위한 변수, repositories, dependenc
 ```
 // build.gradle
 buildscript {
+	//ext 전역변수; 프로젝트 전체와 서브 프로젝트에서도 접근 가능한 변수
 	ext {
 	_versions = [  springBoot : '2.2.4.RELEASE',  
 	                slf4j : '1.7.25',  
@@ -226,11 +227,11 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNTk3NDk2MSw2MTU0NzAxNzEsLTU3Nz
-Q5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4
-LC0xODc0OTA2NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxOD
-A5NzM0NiwyMDUxNDk2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzYs
-LTE5OTc5NTQ4NTQsMTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1Nz
-kzNjI5MiwtMTc1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4
-MjZdfQ==
+eyJoaXN0b3J5IjpbNDEzOTczODAyLDYxNTQ3MDE3MSwtNTc3ND
+kwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0LC05MDQzMjg2Njgs
+LTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MD
+k3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNiwt
+MTk5Nzk1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OT
+M2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMzOTQsMjAyNTA0Njgy
+Nl19
 -->
