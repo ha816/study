@@ -79,7 +79,7 @@ buildscript {
                 ]
     }
 	// Gradle이 의존성 dependencies을 검색 또는 다운로드할 때, 사용할 저장소(repositories)를 설정할 수 있습니다.
-	// JCenter,Maven Central 그리고 Ivy 같은 외부 저장소가 가능합니다.
+	// JCenter,Maven Central 그리고 Ivy 같은 외부 저장소가 사용가능.
 	 repositories {  
 		  mavenCentral()  
 		  maven { url "https://plugins.gradle.org/m2/" }  
@@ -88,7 +88,7 @@ buildscript {
 	 }  
 	 // Gradle이 프로젝트를 빌드하기 위해 필요한 의존성을 설정.
 	 // 멀티 프로젝트를 구성할때는 root buildscript에 설정된 의존성을 모든 하위 프로젝트 buildscript에서 사용가능.
-	 // classpath 의존성으로 boot-gradle-plugin과 dependency-management-plugin을 사용합니다.
+	 // classpath 의존성으로 boot-gradle-plugin과 dependency-management-plugin을 사용
 	 dependencies {  
 		 classpath("org.springframework.boot:spring-boot-gradle-plugin:${_versions.springBoot}")  
 		 classpath("io.spring.gradle:dependency-management-plugin:1.0.2.RELEASE")  
@@ -228,7 +228,7 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTI1ODA5MzgsNjE1NDcwMTcxLC01Nz
+eyJoaXN0b3J5IjpbLTE2NzA0NjM2NDcsNjE1NDcwMTcxLC01Nz
 c0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2
 OCwtMTg3NDkwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MT
 gwOTczNDYsMjA1MTQ5NjI5MCw0NTE0NDA0MjcsNDg1MjEzMzM2
