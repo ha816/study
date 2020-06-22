@@ -19,7 +19,9 @@ project/
     settings.gradle
 ```
 
-각각에 대해서 살펴보기 전에 Gradle Wrapper에 대해서 알아보자. 일단  **Gradle Wrapper를 사용하는 목적은**  **이미 존재하는 프로젝트를 새로운 환경에 설치할때 별도의 설치나 설정과정없이 곧 바로 빌드할 수 있게 하기 위함이다.** Java나 Gradle도 설치할 필요가 없다. 또한 로컬에 설치된 Gradle 또는 Java의 버전도 신경쓸 필요가 없다. 따라서 항상 Wrapper를 사용할 것을 권장한다.
+# Gradle Wrapper
+
+ Gradle Wrapper를 사용하는 목적은 이미 존재하는 프로젝트를 새로운 환경에 설치할때 별도의 설치나 설정과정없이 곧 바로 빌드할 수 있게 하기 위함입Java나 Gradle도 설치할 필요가 없다. 또한 로컬에 설치된 Gradle 또는 Java의 버전도 신경쓸 필요가 없다. 따라서 항상 Wrapper를 사용할 것을 권장한다.
 
 
 
@@ -125,8 +127,8 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMzgxOTI4LDIwNTE0OTYyOTAsNDUxND
-QwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3
-LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01Nz
-cyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbLTEyMDExNjg4NjgsMjA1MTQ5NjI5MCw0NT
+E0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcx
+MjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2MTQsLT
+U3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ==
 -->
