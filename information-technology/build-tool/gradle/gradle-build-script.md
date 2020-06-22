@@ -3,10 +3,15 @@
 빌드 스크립트를 실제 어떻게 만드는지 알아봅시다. 
 아래 예제는 [Gradle User Guide](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)를 가져와 정리하였습니다.
 
-# [Hello world](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:hello_world)
+# Build Script
 
-기본적으로 Gradle의 빌드 과정에서 `gradle` 명령어를 사용하게 됩니다. `gradle` 명령은 `build.gradle` 파일을 현재 디렉토리에서 찾습니다. `build.gradle`을 빌드 스크립트라고 부르는데, 보다 엄밀히는 빌드 설정 스크립트(build configuration script)라 합니다. 
 빌드 스크립트는 프로젝트와 프로젝트가 가지는 task를 정의합니다.
+
+기본적으로 Gradle의 빌드를 위해 `gradle` 명령어를 사용하게 되며, `gradle` 명령은 `build.gradle` 파일을 현재 디렉토리에서 찾습니다.
+
+`build.gradle 파일을` 빌드 스크립트라고 부르는데, 엄밀히는 빌드 설정 스크립트(build configuration script)라 합니다.
+
+# [Hello world](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:hello_world)
 
 ``` groovy
 // In build.gradle 
@@ -21,9 +26,6 @@ task hello {
 `-q`는 옵션으로, Gradle의 로그 메세지를 나타냅니다. 이걸 써야만 tasks의 아웃풋만이 결과로 나타납니다. 안쓰고 싶다면 `-q` 옵션을 쓰지 않아도 됩니다. [Logging](https://docs.gradle.org/current/userguide/logging.html#logging)
 
 `gradle -q hello`을 실행하면, 빌드 스크립트에 정의된 hello란 task를 찾아 action을 추가 합니다. Gradle은 hello task를 실행하며, 추가된 action을 순차적으로 하나씩 처리합니다. action은 단지 한 블럭으로 실행할 코드를 가지고 있습니다. 
-
-
-
 
 # [Task dependencies](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)
 
@@ -334,8 +336,8 @@ multi-project 빌드에서, 한 프로젝트의 `buildscript()`로 선언된 의
 [https://dynaticy.tistory.com/entry/Gradle-UserGuide-%EB%8F%84%EC%A0%84%EA%B8%B0-6-Build-Script-Basics?category=536334](https://dynaticy.tistory.com/entry/Gradle-UserGuide-%EB%8F%84%EC%A0%84%EA%B8%B0-6-Build-Script-Basics?category=536334)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1OTgyNjA4Myw3NjM5Njk4MTcsNDk1Nj
-I0Mzc4LC0xODgxODcxNjA4LC0xNjc0NjUxNDg3LDE0MDUxODk5
-MTAsNzI0ODk4NzUzLDIxMzQ0NTAxNjEsLTE3ODUwMzMzOTAsMj
-EzMjg3MDcyN119
+eyJoaXN0b3J5IjpbLTY4NTk5Nzg5MSwxMjU5ODI2MDgzLDc2Mz
+k2OTgxNyw0OTU2MjQzNzgsLTE4ODE4NzE2MDgsLTE2NzQ2NTE0
+ODcsMTQwNTE4OTkxMCw3MjQ4OTg3NTMsMjEzNDQ1MDE2MSwtMT
+c4NTAzMzM5MCwyMTMyODcwNzI3XX0=
 -->
