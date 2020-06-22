@@ -66,7 +66,7 @@ rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적�
 
 최상위 프로젝트의 build.gradle 파일에 설정된 내용은 모든 하위 프로젝트에 공통적으로 적용할 수 있습니다. 
 
-최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들 수 있습니다. 
+최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들어 유지보수 할 수 있습니다.
 
 
 
@@ -252,9 +252,10 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNDYwMDA3LC0xODc0OTA2NDY4LC0xND
-g2MjgxOTkxLDk5ODY5NTUxLDUxODA5NzM0NiwyMDUxNDk2Mjkw
-LDQ1MTQ0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5ND
-EyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYx
-NCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
+eyJoaXN0b3J5IjpbMjEyMTIwMzQ1MSwtMTg3NDkwNjQ2OCwtMT
+Q4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MTQ5NjI5
+MCw0NTE0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOT
+QxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2
+MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ
+==
 -->
