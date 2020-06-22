@@ -66,9 +66,8 @@ rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적�
 
 최상위 프로젝트의 build.gradle 파일에 설정된 내용은 모든 하위 프로젝트에 공통적으로 적용할 수 있습니다. 
 
-(모듈에 대한 의존성dependencies은 여기에 적으면 안됨) 
-
 buildscript 블럭에는 Gradle 자신을 위한 변수, repositories, dependencies등을 설정할 수 있습니다. 
+Gradle 자신이 아닌 다른 모듈에 대한 의존성은 buildscript 블럭에 적으면 안됩니다.
 
 ```
 // build.gradle
@@ -80,10 +79,8 @@ buildscript {
 	                ... 
                 ]
     }
-	/* Gradle이 의존성 dependencies을 검색 또는 다운로드할 때, 
-	사용할 저장소(repositories)를 설정할 수 있습니다.
-	JCenter,Maven Central 그리고 Ivy 같은 외부 저장소가 가능합니다. */
-
+	// Gradle이 의존성 dependencies을 검색 또는 다운로드할 때, 사용할 저장소(repositories)를 설정할 수 있습니다.
+	// JCenter,Maven Central 그리고 Ivy 같은 외부 저장소가 가능합니다.
 	 repositories {  
 		  mavenCentral()  
 		  maven { url "https://plugins.gradle.org/m2/" }  
@@ -91,7 +88,7 @@ buildscript {
 		  maven { url "http://repo.linecorp.com/content/repositories/snapshots/" }  
 	 }  
 	 // Gradle이 프로젝트를 빌드하기 위해 필요한 의존성을 설정합니다.
-	 // classpath 의존성으로 boot-gradle-plugin고
+	 // classpath 의존성으로 boot-gradle-plugin과 dependency-management-plugin을 사용합니다.
 	 dependencies {  
 		 classpath("org.springframework.boot:spring-boot-gradle-plugin:${_versions.springBoot}")  
 		 classpath("io.spring.gradle:dependency-management-plugin:1.0.2.RELEASE")  
@@ -243,10 +240,10 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTk5NjA5MDMsOTIyNjE5NjQ0LC05MD
-QzMjg2NjgsLTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1
-NTEsNTE4MDk3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NT
-IxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcw
-NywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMzOTQsMj
-AyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbLTYzNzU3NDM4Miw5MjI2MTk2NDQsLTkwND
+MyODY2OCwtMTg3NDkwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1
+MSw1MTgwOTczNDYsMjA1MTQ5NjI5MCw0NTE0NDA0MjcsNDg1Mj
+EzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcxMjcsNjEzMjE0NzA3
+LDE3NTc5MzYyOTIsLTE3NTI5OTU2MTQsLTU3NzI3MzM5NCwyMD
+I1MDQ2ODI2LDE3MjM1NjYzMDVdfQ==
 -->
