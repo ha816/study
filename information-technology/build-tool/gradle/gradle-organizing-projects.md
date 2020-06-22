@@ -90,11 +90,8 @@ check.dependsOn integTest
 
 ## [Always define a settings file](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#always_define_a_settings_file)
 
-Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다. 이ㄹ
+Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다. 이를 위해서 root 디렉토리부터 하위 디렉토리를 전부 찾기 때문에, 항상`settings.gradle`을 root 디렉토리에 넣도록 합시다. 
 
-Gradle tries to locate a  `settings.gradle`  (Groovy DSL) or a  `settings.gradle.kts`  (Kotlin DSL) file with every invocation of the build. For that purpose, the runtime walks the hierarchy of the directory tree up to the root directory. The algorithm stops searching as soon as it finds the settings file.
-
-Always add a  `settings.gradle`  to the root directory of your build to avoid the initial performance impact. This recommendation applies to single project builds as well as multi-project builds. The file can either be empty or define the desired name of the project.
 
 A typical Gradle project with a settings file look as such:
 
@@ -108,8 +105,8 @@ A typical Gradle project with a settings file look as such:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNDM3Mzg2NSw0ODUyMTMzMzYsLTE5OT
-c5NTQ4NTQsMTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5
-MiwtMTc1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMT
-cyMzU2NjMwNV19
+eyJoaXN0b3J5IjpbLTE5OTMwNTc2NzMsNDg1MjEzMzM2LC0xOT
+k3OTU0ODU0LDExOTQxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYy
+OTIsLTE3NTI5OTU2MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LD
+E3MjM1NjYzMDVdfQ==
 -->
