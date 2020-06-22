@@ -1,4 +1,8 @@
-# 
+# Organizing Gradle Projects
+
+모든 소프트웨어 프로젝트의 소스 코드와 빌드 로직은 
+
+Source code and build logic of every software project should be organized in a meaningful way. This page lays out the best practices that lead to readable, maintainable projects. The following sections also touch on common problems and how to avoid them.
 
 
 
@@ -7,5 +11,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1ODE3MzQ0LDE3MjM1NjYzMDVdfQ==
+eyJoaXN0b3J5IjpbNjAwODk4MzkzLDE3MjM1NjYzMDVdfQ==
 -->
