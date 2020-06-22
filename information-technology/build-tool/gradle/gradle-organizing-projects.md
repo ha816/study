@@ -53,16 +53,17 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
 ```
 
 Gradle 모델의 소스 코드 디렉토리는 
+Gradle models source code directories with the help of the [source set concept](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets). By pointing an instance of a source set to one or many source code directories, Gradle will automatically create a corresponding compilation task out-of-the-box.
 
-Gradle models source code directories with the help of the  [source set concept](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets). By pointing an instance of a source set to one or many source code directories, Gradle will automatically create a corresponding compilation task out-of-the-box.
+
 
 Example 1. Integration test source set
 
-`Groovy``Kotlin`
 
-gradle/integration-test.gradle
+
 
 ```groovy
+// gradle/integration-test.gradle 
 sourceSets {
     integTest {
         java.srcDir file('src/integTest/java')
@@ -105,7 +106,7 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjQyMTMyNTAsMTc1NzkzNjI5MiwtMT
+eyJoaXN0b3J5IjpbLTE2MTU2Mzk1MzMsMTc1NzkzNjI5MiwtMT
 c1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2
 NjMwNV19
 -->
