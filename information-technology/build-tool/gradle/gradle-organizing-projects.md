@@ -27,7 +27,9 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
 
 ## [Separate source files per test type](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
 
-한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. )unit tests, integration tests, functional test or smoke tests와 같은)
+한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. (unit tests, integration tests, functional test or smoke tests와 같은)
+
+최적으로, 각 타입의 테스트 소스 코드 
 
 It’s very common that a project defines and executes different types of tests e.g. unit tests, integration tests, functional tests or smoke tests. Optimally, the test source code for each test type should be stored in dedicated source directories. Separated test source code has a positive impact on maintainability and separation of concerns as you can run test types independent from each other.
 
@@ -106,7 +108,7 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDQyNTU4ODAsMTc1NzkzNjI5MiwtMT
+eyJoaXN0b3J5IjpbLTE4NjIzOTQ0NDgsMTc1NzkzNjI5MiwtMT
 c1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2
 NjMwNV19
 -->
