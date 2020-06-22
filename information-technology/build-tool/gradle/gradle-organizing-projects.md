@@ -41,7 +41,19 @@ Gradle로 컴파일이나 빌드 등을 할때, 아래와 같이 하면 로컬�
 
 > ./gradlew build
 
-# 멀티 프로젝트 구성
+## settings.gradle
+
+rootProject.name = 'tropicana'  
+  
+include 'core'  
+include 'gateway'  
+include 'internal'  
+include 'batch'  
+include 'client'  
+  
+if( file('../soda').exists() ) {  
+    includeBuild '../soda'  
+}
 
 이제 기본적인 설정이 끝났다. 이제 폴리글랏 언어를 지원하는 멀티 프로젝트로 구성해 보자. 먼저 settings.gradle 파일을 열고 아래와 같이 셋팅하자.
 
@@ -190,8 +202,8 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzOTQwNTQzMSwyMDUxNDk2MjkwLDQ1MT
-Q0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEy
-Nyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
-c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
+eyJoaXN0b3J5IjpbLTEyNzY1NzI2OTEsMjA1MTQ5NjI5MCw0NT
+E0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcx
+MjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2MTQsLT
+U3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ==
 -->
