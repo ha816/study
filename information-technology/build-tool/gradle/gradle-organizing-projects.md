@@ -59,8 +59,7 @@ if( file('../soda').exists() ) {
 >
 
 rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적으로는 프로젝트 폴더명으로 만들어집니다. 
-
-그리고 tropicana 프로젝트의 하위프로젝트로 java, kotlin를 포함시켰다. 여기서 만약 하위 프로젝트의 하위 프로젝트를 만드려면  `include 'java::sub'`  와 같이 할 수 있다.
+그리고 tropicana 프로젝트의 하위프로젝트로 core, gateway, internal ... 등이 있습니다.
 
 이제 하위 프로젝트 폴더를 만들자. IDE를 활용하면 간단하게 하위 프로젝트를 생성할 수 있지만, 여기서는 수동으로 만들어 볼 것이다.
 
@@ -198,8 +197,8 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzE1MTExMjksMjA1MTQ5NjI5MCw0NT
-E0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcx
-MjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2MTQsLT
-U3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ==
+eyJoaXN0b3J5IjpbMTgzNTczMjkyMCwyMDUxNDk2MjkwLDQ1MT
+Q0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEy
+Nyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
+c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
 -->
