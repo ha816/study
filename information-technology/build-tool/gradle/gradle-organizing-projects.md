@@ -81,9 +81,14 @@ subprojects {
 	  ...
 	}  
   
-dependencies {  
-	...
-}
+	dependencies {  
+		compile("org.slf4j:slf4j-api:${_versions.slf4j}")  
+		compileOnly("org.projectlombok:lombok:${_versions.lombok}")  
+		testCompileOnly("org.projectlombok:lombok:${_versions.lombok}")  
+		implementation "ai.clova.soda:soda:${revision()}${snapshotSuffix()}"  
+		annotationProcessor 'org.projectlombok:lombok'  
+		testAnnotationProcessor 'org.projectlombok:lombok'
+	}
 ```
 
 # [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
@@ -188,8 +193,8 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MjczMTA1OSwyMDUxNDk2MjkwLDQ1MT
-Q0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEy
-Nyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
-c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
+eyJoaXN0b3J5IjpbOTY0MDAxODIwLDIwNTE0OTYyOTAsNDUxND
+QwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3
+LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01Nz
+cyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
 -->
