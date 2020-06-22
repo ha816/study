@@ -85,7 +85,6 @@ task integTest(type: Test) { //Test 타입 task 정의
     classpath = sourceSets.integTest.runtimeClasspath
     mustRunAfter test
 }
-
 check.dependsOn integTest
 ```
 
@@ -101,8 +100,8 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOT
-QxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2
-MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ
-==
+eyJoaXN0b3J5IjpbLTc5NTY5NzMwMiw0ODUyMTMzMzYsLTE5OT
+c5NTQ4NTQsMTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5
+MiwtMTc1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMT
+cyMzU2NjMwNV19
 -->
