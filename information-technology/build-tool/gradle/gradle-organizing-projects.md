@@ -92,10 +92,7 @@ check.dependsOn integTest
 
 Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다. 이를 위해서 root 디렉토리부터 하위 디렉토리를 전부 찾기 때문에, 항상`settings.gradle`을 root 디렉토리에 넣도록 합시다. 
 
-
-A typical Gradle project with a settings file look as such:
-
-`Groovy``Kotlin`
+전형적인 Gradle 프로젝트는 아래와 같습니다. 
 
 ```groovy
 .
@@ -105,8 +102,8 @@ A typical Gradle project with a settings file look as such:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTMwNTc2NzMsNDg1MjEzMzM2LC0xOT
-k3OTU0ODU0LDExOTQxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYy
-OTIsLTE3NTI5OTU2MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LD
-E3MjM1NjYzMDVdfQ==
+eyJoaXN0b3J5IjpbNDUxNDQwNDI3LDQ4NTIxMzMzNiwtMTk5Nz
+k1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OTM2Mjky
+LC0xNzUyOTk1NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNz
+IzNTY2MzA1XX0=
 -->
