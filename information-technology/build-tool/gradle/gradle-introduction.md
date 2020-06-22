@@ -55,12 +55,11 @@ Gradle은 task 집단으로 구성된 Directed Acyclic Graphs(DAGs)로 전체 �
 Gradle은 Initialization, Configuration, Execution의 세 단계로 build scripts를 평가하고 실행합니다. 그리고 이 세 가지 단계가 Gradle의 [Build Lifecycle](https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle)의 핵심입니다.
 
 * Initialization
-	* Sets up the environment for the build and determine which projects will take part in it.
 	* 빌드를 위한 환경을 구축하고 어떤 프로젝트들이 참가할지 판별하는 단계.
 * Configuration
 	* 빌드를 위한 task 그래프를 만들고 조정한 뒤, 사용자가 원하는 task에 따라 어떤 순서로 어떤 tasks가 필요한지 판단하는 단계.
 * Execution
-	* Configuration 단계가 끝난 후, 선택된 tasks를 수행한다.
+	* Configuration 단계가 끝난 후, 선택된 tasks를 수행하는 단계.
    
 ## API
 
@@ -76,6 +75,6 @@ Gradle은  JVM에서 동작하기 때문에, 빌드 스크릷트들은 표준 [J
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NDM2MTc1MywtMTc5OTc5MjU4NSwxOT
-kzNTgwNDU2XX0=
+eyJoaXN0b3J5IjpbNzg5Njc2ODYsLTk4NDM2MTc1MywtMTc5OT
+c5MjU4NSwxOTkzNTgwNDU2XX0=
 -->
