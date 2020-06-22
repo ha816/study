@@ -71,18 +71,21 @@ subprojects 설정값들은 모든 하위 프로젝트에 적용됩니다. 만�
 
 ```
 buildscript {  
-  ext {  
+ext {  
   _versions = [  
                 springBoot : '2.2.4.RELEASE',  
                 slf4j : '1.7.25',  
                 lombok : '1.16.20',  
                 ...
-  ]  
-  
-        profile = project.hasProperty('profile')? profile : System.getProperty('profile') ?: 'local'  
+	  ]  
+	  
+  profile = project.hasProperty('profile')? profile : System.getProperty('profile') ?: 'local'  
   branch = project.hasProperty('branch')? branch :  System.getProperty('branch') ?: 'develop'  
   revision = (branch =~ /^release\/RB-/) ? branch.replaceFirst(/^release\/RB-/, ''): '0.0.1'  
-  }  
+  
+}
+  
+ 
   
   repositories {  
   mavenCentral()  
@@ -255,9 +258,9 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQwODMzNzkyLC0xNDg2MjgxOTkxLDk5OD
-Y5NTUxLDUxODA5NzM0NiwyMDUxNDk2MjkwLDQ1MTQ0MDQyNyw0
-ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEyNyw2MTMyMT
-Q3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNTc3MjczMzk0
-LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
+eyJoaXN0b3J5IjpbLTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOT
+k4Njk1NTEsNTE4MDk3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3
+LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3LDYxMz
+IxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMz
+OTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
 -->
