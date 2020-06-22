@@ -25,6 +25,79 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
             └── Utils.kt
 ```
 
+## [Separate source files per test type](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
+
+한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. )unit tests, integration tests, functional test or smoke tests와 같은)
+
+It’s very common that a project defines and executes different types of tests e.g. unit tests, integration tests, functional tests or smoke tests. Optimally, the test source code for each test type should be stored in dedicated source directories. Separated test source code has a positive impact on maintainability and separation of concerns as you can run test types independent from each other.
+
+The following source tree demonstrates how to separate unit from integration tests in a Java-based project.
+
+`Groovy``Kotlin`
+
+```groovy
+.
+├── build.gradle
+├── gradle
+│   └── integration-test.gradle
+├── settings.gradle
+└── src
+    ├── integTest
+    │   └── java
+    │       └── DefaultFileReaderIntegrationTest.java
+    ├── main
+    │   └── java
+    │       ├── DefaultFileReader.java
+    │       ├── FileReader.java
+    │       └── StringUtils.java
+    └── test
+        └── java
+            └── StringUtilsTest.java
+```
+
+Gradle models source code directories with the help of the  [source set concept](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets). By pointing an instance of a source set to one or many source code directories, Gradle will automatically create a corresponding compilation task out-of-the-box.
+
+Example 1. Integration test source set
+
+`Groovy``Kotlin`
+
+gradle/integration-test.gradle
+
+```groovy
+sourceSets {
+    integTest {
+        java.srcDir file('src/integTest/java')
+        resources.srcDir file('src/integTest/resources')
+        compileClasspath += sourceSets.main.output + configurations.testRuntimeClasspath
+        runtimeClasspath += output + compileClasspath
+    }
+}
+```
+
+Source sets are only responsible for compiling source code, but do not deal with executing the byte code. For the purpose of test execution, a corresponding task of type  [Test](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.Test.html)  needs to be established.
+
+Example 2. Integration test task
+
+`Groovy``Kotlin`
+
+gradle/integration-test.gradle
+
+```groovy
+task integTest(type: Test) {
+    description = 'Runs the integration tests.'
+    group = 'verification'
+    testClassesDirs = sourceSets.integTest.output.classesDirs
+    classpath = sourceSets.integTest.runtimeClasspath
+    mustRunAfter test
+}
+
+check.dependsOn integTest
+```
+
+## [](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:use_standard_conventions)[Us](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:use_standard_conventions)
+
+
+
 ## [](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)[Se](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
 
 
@@ -33,7 +106,7 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQwNjA1MzkwLDE3NTc5MzYyOTIsLTE3NT
-I5OTU2MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYz
-MDVdfQ==
+eyJoaXN0b3J5IjpbLTEzMDQyNTU4ODAsMTc1NzkzNjI5MiwtMT
+c1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2
+NjMwNV19
 -->
