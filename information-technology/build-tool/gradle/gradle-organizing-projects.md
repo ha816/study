@@ -61,6 +61,9 @@ if( file('../soda').exists() ) {
 rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적으로는 프로젝트 폴더명으로 만들어집니다. 
 그리고 tropicana 프로젝트의 하위프로젝트로 core, gateway, internal ... 등이 있습니다. 루트 프로젝트 하위에 프로젝트 폴더가 있어야 합니다.
 
+
+## build.gradle
+
 최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들 수 있습니다. 
 
 최상위 프로젝트의 build.gradle 파일에 설정된 내용은 모든 하위 프로젝트에 공통적으로 적용할 수 있습니다. 
@@ -68,17 +71,15 @@ subprojects 설정값들은 모든 하위 프로젝트에 적용됩니다.
 만약 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면,  allprojects를 사용하면 됩니다.
 
 ```
-subprojects {  
-
+subprojects {
 	apply plugin: 'java'        // 'java'라는 Gradle 플러그인 적용
 	sourceCompatibility = 1.8   // Java 호환 버전을 1.8로 설정
- 
-  group = 'ai.clova.tropicana' // 생성될 아티팩트 그룹의 이름
+	group = 'ai.clova.tropicana' // 생성될 아티팩트 그룹의 이름
 
-repositories {  
-  mavenCentral()  
-  ...
-}  
+	repositories {  
+	  mavenCentral()  
+	  ...
+	}  
   
 dependencies {  
 	...
@@ -187,8 +188,8 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAxNjY3MDMwLDIwNTE0OTYyOTAsNDUxND
-QwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3
-LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01Nz
-cyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbMTc0MjczMTA1OSwyMDUxNDk2MjkwLDQ1MT
+Q0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEy
+Nyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
+c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
 -->
