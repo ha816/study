@@ -55,7 +55,7 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
 Gradle은 [source set concept](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)의 도움을 받아 소스 코드 디렉토리를 모델링 합니다. 
 소스 집단 객체 하나를 다수의 소스 코드 디렉토리를 가리키도록 하여, Gradle은 자동적으로 대응하는 컴파일 task를 만들어냅니다.
 
-## [Declaring your source files via source sets](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)
+## Source Set
 
 Gradle’s Java support was the first to introduce a new concept for building source-based projects:  _source sets_. The main idea is that source files and resources are often logically grouped by type, such as application code, unit tests and integration tests. Each logical group typically has its own sets of file dependencies, classpaths, and more. Significantly, the files that form a source set  _don’t have to be located in the same directory_!
 
@@ -155,7 +155,7 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MTk0MTEwNiwxNzU3OTM2MjkyLC0xNz
+eyJoaXN0b3J5IjpbMTkxNTUyODIwOSwxNzU3OTM2MjkyLC0xNz
 UyOTk1NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2
 MzA1XX0=
 -->
