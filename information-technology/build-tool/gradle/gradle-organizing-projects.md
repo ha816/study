@@ -123,8 +123,9 @@ subprojects {
 
 최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들어 유지보수 할 수 있습니다.
 
+# 알아두면 좋은 내용들
 
-# [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
+## [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
 
 Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하는데 컨벤션을 판별합니다. 예를 들어, [Java plugin](https://docs.gradle.org/current/userguide/java_plugin.html#java_plugin)을 사용하는 프로젝트는 자동적으로 `src/main/java`의 디렉토리의 코드를 컴파일합니다. 다른 플러그인도 같은 패턴을 따릅니다. 
 
@@ -147,7 +148,7 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
             └── Utils.kt
 ```
 
-# [Separate source files per test type](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
+## [Separate source files per test type](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
 
 한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. (unit tests, integration tests, functional test or smoke tests와 같은)
 
@@ -230,11 +231,11 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MDI2MjQ1LC0xODI0NTEyMTI2LDYxNT
-Q3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0
-LC05MDQzMjg2NjgsLTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOT
-k4Njk1NTEsNTE4MDk3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3
-LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3LDYxMz
-IxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMz
-OTRdfQ==
+eyJoaXN0b3J5IjpbMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MT
+U0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0
+NCwtOTA0MzI4NjY4LC0xODc0OTA2NDY4LC0xNDg2MjgxOTkxLD
+k5ODY5NTUxLDUxODA5NzM0NiwyMDUxNDk2MjkwLDQ1MTQ0MDQy
+Nyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEyNyw2MT
+MyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNTc3Mjcz
+Mzk0XX0=
 -->
