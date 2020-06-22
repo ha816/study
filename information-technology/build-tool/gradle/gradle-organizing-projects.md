@@ -21,23 +21,70 @@ project/
 
 **gradlew, gradlew.bat**은 모두 실행 스크립트입니다. gradlew은 유닉스용 실행 스크립트이고 gradlew.bat은 윈도우 용입니다. 둘의 내용은 동일합니다. 
 
-
-**gradlew.bat 파일**은 원도우용 실행 배치 스크립트다. 원도우에서 실행 가능하다는 점만 제외하면 gradlew와 동일하다.
-
-
-
 **settings.gradle 파일**은 프로젝트의 구성 정보를 기록하는 파일입니다. 어떤 하위프로젝트들이 어떤 관계로 구성되어 있는지를 기술합니다. Gradle은 이 파일에 기술된대로 프로젝트를 구성합니다.
 
 **build.gradle 파일**은 의존성이나 플러그인 설정 등을 위한 스크립트 파일입니다.
 
-Gradle Wrapper
-: Gradle Wrapper를 사용하는 목적은 이미 존재하는 프로젝트를 새로운 환경에 설치할때 별도의 설치나 설정과정없이 곧 바로 빌드할 수 있게 하기 위함입니다. 심지어 Java나 Gradle도 설치할 필요도 없고, 로컬에 설치된 Gradle 또는 Java의 버전도 신경쓸 필요가 없다. 따라서 항상 Gradle Wrapper를 사용할 것을 권장합니다. 
+## Gradle Wrapper
+
+Gradle Wrapper를 사용하는 목적은 이미 존재하는 프로젝트를 새로운 환경에 설치할때 별도의 설치나 설정과정없이 곧 바로 빌드할 수 있게 하기 위함입니다. 심지어 Java나 Gradle도 설치할 필요도 없고, 로컬에 설치된 Gradle 또는 Java의 버전도 신경쓸 필요가 없다. 따라서 항상 Gradle Wrapper를 사용할 것을 권장합니다. 
  
 **gradle/wrapper/gradle-wrapper.jar 파일**은 Wrapper 파일입니다. Gradle Wrapper를 이용할때 이 파일들을 기본적으로 사용하기 때문에 로컬 환경의 영향을 받지 않습니다. 필요시에는 Wrapper 버전에 맞는 구성들을 로컬 캐시에 다운로드 받습니다. 
 
 **gradle/wrapper/gradle-wrapper.properties 파일**은 Wrapper 설정 파일입니다. 이 파일에 사용할  Wrapper 버전 등을 저장하는데, 버전을 변경하면 task 실행시, 자동으로 새로운 Wrapper 파일을 로컬 캐시에 다운로드 받습니다.
 
+Gradle로 컴파일이나 빌드 등을 할때, 아래와 같이 하면 로컬에 설치된 gradle을 사용합니다.
 
+> gradle build
+
+이 경우 Java나 Gradle이 설치되어 있어야 하고, 새로받은 프로젝트의 Gradle 버전과 로컬에 설치된 Gradle 버전이 호환되지 않으면 문제가 발생할 수 있습니다. 따라서 Wrapper를 사용하면 아래와 같이 실행합니다.
+
+> ./gradlew build
+
+# 멀티 프로젝트 구성
+
+이제 기본적인 설정이 끝났다. 이제 폴리글랏 언어를 지원하는 멀티 프로젝트로 구성해 보자. 먼저 settings.gradle 파일을 열고 아래와 같이 셋팅하자.
+
+rootProject.name = 'algorithm'  
+  
+include 'java'  
+include 'kotlin'
+
+**rootProject.name**은 최상위 프로젝트의 이름이다. 기본적으로는 프로젝트 폴더명으로 만들어진다.
+
+그리고 algorithm 프로젝트의 하위프로젝트로 java, kotlin를 포함시켰다. 여기서 만약 하위 프로젝트의 하위 프로젝트를 만드려면  `include 'java::sub'`  와 같이 할 수 있다.
+
+이제 하위 프로젝트 폴더를 만들자. IDE를 활용하면 간단하게 하위 프로젝트를 생성할 수 있지만, 여기서는 수동으로 만들어 볼 것이다.
+
+> mkdir java  
+> mkdir kotlin
+
+그리고 각각의 하위 프로젝트의 기본 폴더 트리를 생성한다.
+
+> mkdir -p java/src/main/java  
+> mkdir -p kotlin/src/main/kotlin
+
+여기서는 각 언어의 기본 폴더 구조가 비슷하지만, 언어에 따라서 다를 수 있다. 여기서 각 하위 프로젝트의 폴더명은 java, kotlin으로 생성되었지만, 모듈명은 기본으로 algorithm-java, algorithm-kotlin이 된다. IDE로 프로젝트를 열어보면 이러한 폴더명과 모듈명을 확인할 수 있다. 또한 모듈명을 직접 변경할 수도 있다.
+
+이제 각 하위 폴더를 Gradle 프로젝트로 만들 차례다. 최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들자.
+
+> touch java/build.gradle  
+> touch kotlin/build.gradle
+
+마지막으로 최상위 프로젝트의 build.gradle 파일에 모든 하위 프로젝트에 적용되는 공통 설정을 적용하자.
+
+subprojects {  
+    group = "funfunstudy"    // 생성될 아티팩트의 그룹명  
+  
+    repositories {  
+        mavenCentral()  
+    }  
+  
+    dependencies {  
+    }  
+}
+
+**subprojects**내의 설정값들은 모든 하위 프로젝트에 적용될 것이다. 만약 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면,  **allprojects**를 사용할 수 있다.
 
 
 
@@ -143,8 +190,8 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA1MTA4NTc0LDIwNTE0OTYyOTAsNDUxND
-QwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3
-LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01Nz
-cyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbMTAzOTQwNTQzMSwyMDUxNDk2MjkwLDQ1MT
+Q0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEy
+Nyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
+c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
 -->
