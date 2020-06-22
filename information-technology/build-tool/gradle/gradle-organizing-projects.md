@@ -87,27 +87,8 @@ subprojects {
 		compile("org.slf4j:slf4j-api:${_versions.slf4j}")  
 		// 컴파일할때는 사용하고, 아티팩트를 만들때는 포함하지 않음
 		compileOnly("org.projectlombok:lombok:${_versions.lombok}")  
-		// 테스트시만 의존성을 받아옴, 
-
-		// 실행할때 의존성을 받아옴(기본적으로 컴파일을 모두 포함)    
-		runtime('org.hibernate:hibernate:3.0.5')
-		
+		// 테스트시만 의존성을 받아옴, 아티팩트를 만들때는 포함하지 않음
 		testCompileOnly("org.projectlombok:lombok:${_versions.lombok}")  
-		implementation "ai.clova.soda:soda:${revision()}${snapshotSuffix()}"  
-		annotationProcessor 'org.projectlombok:lombok'  
-		testAnnotationProcessor 'org.projectlombok:lombok'
-
-		// 로컬 jar 파일의 의존성 설정  
-		compile fileTree(dir: 'libs', include: '*.jar')  
-		// 로컬 프로젝트간 의존성 설정  
-		compile project(':shared')  
-		// 컴파일 타임에 의존성을 받아옴  
-		compile 'com.google.guava', name: 'guava:23.0'  
-		// 테스트시만 의존성을 받아옴  
-		// 마이너 버전을 '+'로 설정해서 항상 4점대 최신 버전을 사용  
-		testCompile group: 'junit', name: 'junit', version: '4.+'  
-		// 컴파일할때는 사용하고, 아티팩트를 만들때는 포함하지 않음  
-		compileOnly 'org.projectlombok:lombok:1.16.18'  
 		// 실행할때 의존성을 받아옴(기본적으로 컴파일을 모두 포함)    
 		runtime('org.hibernate:hibernate:3.0.5')
 	}
@@ -216,9 +197,9 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAwODk1NTIwLDUxODA5NzM0NiwyMDUxND
-k2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQs
-MTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mj
-k5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMw
-NV19
+eyJoaXN0b3J5IjpbOTk4Njk1NTEsNTE4MDk3MzQ2LDIwNTE0OT
+YyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwx
+MTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOT
+k1NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1
+XX0=
 -->
