@@ -70,6 +70,33 @@ rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적�
 subprojects 설정값들은 모든 하위 프로젝트에 적용됩니다. 만약 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면,  allprojects를 사용하면 됩니다.
 
 ```
+buildscript {  
+  ext {  
+  _versions = [  
+                springBoot : '2.2.4.RELEASE',  
+                slf4j : '1.7.25',  
+                lombok : '1.16.20',  
+                ...
+  ]  
+  
+        profile = project.hasProperty('profile')? profile : System.getProperty('profile') ?: 'local'  
+  branch = project.hasProperty('branch')? branch :  System.getProperty('branch') ?: 'develop'  
+  revision = (branch =~ /^release\/RB-/) ? branch.replaceFirst(/^release\/RB-/, ''): '0.0.1'  
+  }  
+  
+  repositories {  
+  mavenCentral()  
+        maven { url "https://plugins.gradle.org/m2/" }  
+  maven { url "http://repo.linecorp.com/content/repositories/releases/" }  
+  maven { url "http://repo.linecorp.com/content/repositories/snapshots/" }  
+  maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }  
+ }  
+  dependencies {  
+  classpath("org.springframework.boot:spring-boot-gradle-plugin:${_versions.springBoot}")  
+        classpath("io.spring.gradle:dependency-management-plugin:1.0.2.RELEASE")  
+    }  
+}
+
 subprojects {
 	apply plugin: 'java'        // 'java'라는 Gradle 플러그인 적용
 	sourceCompatibility = 1.8   // Java 호환 버전을 1.8로 설정
@@ -92,7 +119,39 @@ subprojects {
 	}
 ```
 
+/**  
+buildscript {} 블럭에서 Gradle 자신을 위한(모듈에 대한 의존성dependencies은 여기에 적으면 안됨) 
 
+저장소repositories와 의존성dependencies을 설정할 수 있습니다.예를 들어, 이 블럭은 Gradle을 위한
+
+의존성으로 안드로이드 플러그인을 포함합니다. 왜냐하면 이는 Gradle이 안드로이드 앱 모듈을 빌드하는데
+
+필요한 부가적인 설명을 제공하기 때문입니다. */buildscript {  /** The repositories {} 블럭은 Gradle이 의존성dependencies을 검색, 다운로드할 때
+
+ 사용할 저장소repositories를 설정할 수 있습니다. Gradle은 JCenter, Maven Central 
+
+ 그리고 Ivy 같은 외부 저장소에 대한 지원을 미리 설정합니다. 또한 당신은 로컬 저장소나 
+
+ 당신 소유의 외부 저장소를 사용할 수 있습니다. 아래의 코드는 Gradle이 의존성dependencies
+
+ 을 찾아야 하는 저장소로 JCenter를 정의합니다. */ repositories { jcenter()  }  /**  
+     dependencies {} 블럭은 Gradle이 당신의 프로젝트를 빌드하기 위해 필요한 의존성을 설정합니다.
+
+ 아래의 라인은 classpath 의존성으로 Gradle 버전 3.0.1을 위한 안드로이드 플러그인을 추가합니다.  
+     */ dependencies { classpath 'com.android.tools.build:gradle:3.0.1'  }  
+}  
+  
+/**  
+ allprojects {} 블럭에서 써드 파티 플러그인이나 라이브러리 처럼 모든 모듈에서 사용되는
+
+ 저장소repositories와 의존성dependencies를 설정합니다. 프로젝트의 모든 모듈에서 필요한 것은
+
+ 아닌 의존성dependencies은 module 레벨의 build.gradle 파일에서 설정되어야 합니다. 
+
+ 새로운 프로젝트에서, 안드로이드 스튜디오는 기본 저장소로 JCenter를 설정하지만 이는 아무런 의존성
+
+ 을 설정하지 않습니다.allprojects { repositories { jcenter()  }  
+}
 
 # [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
 
@@ -196,9 +255,9 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MD
-k3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNiwt
-MTk5Nzk1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OT
-M2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMzOTQsMjAyNTA0Njgy
-NiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbNzQwODMzNzkyLC0xNDg2MjgxOTkxLDk5OD
+Y5NTUxLDUxODA5NzM0NiwyMDUxNDk2MjkwLDQ1MTQ0MDQyNyw0
+ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEyNyw2MTMyMT
+Q3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNTc3MjczMzk0
+LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
 -->
