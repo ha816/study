@@ -207,6 +207,7 @@ FROM employees WHERE first_name LIKE 'Christ%';
 ```
 
 기본적인 인덱스는 Left-most 특성을 가지기 때문에 위 쿼리를 사용하면 인덱스를 사용할 수 있다.
+즉, 와일드 카드 문자인 %가 검색어 뒤쪽에 있다면 레인지 스캔이
 
 ### BETWEEN 연산자
 
@@ -215,7 +216,7 @@ FROM employees WHERE first_name LIKE 'Christ%';
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNDA1MTEzMCwtMjQ3OTg4MjgyLDg1OT
+eyJoaXN0b3J5IjpbMTU3Mzc1OTQ0MCwtMjQ3OTg4MjgyLDg1OT
 kyODUyNywxMDI3NDI0NjUsLTE5MjkxNjExNTksMTQyNDUwMTgw
 Niw4MjU4MDM1ODUsMTIzMjQwNjg0MywtNjgyMDY2OTgzLDE3Nj
 k5MTU5MjksMTk5MDQ3ODAwLDQ3ODQxMDg0MiwtMTAyMzU0MTQ4
