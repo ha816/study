@@ -124,8 +124,6 @@ subprojects {
 최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들어 유지보수 할 수 있습니다.
 
 
-
-
 # [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
 
 Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하는데 컨벤션을 판별합니다. 예를 들어, [Java plugin](https://docs.gradle.org/current/userguide/java_plugin.html#java_plugin)을 사용하는 프로젝트는 자동적으로 `src/main/java`의 디렉토리의 코드를 컴파일합니다. 다른 플러그인도 같은 패턴을 따릅니다. 
@@ -226,13 +224,17 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 
 
+
+
 # References
+
+[https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nz
-c0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2
-OCwtMTg3NDkwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MT
-gwOTczNDYsMjA1MTQ5NjI5MCw0NTE0NDA0MjcsNDg1MjEzMzM2
-LC0xOTk3OTU0ODU0LDExOTQxMjcxMjcsNjEzMjE0NzA3LDE3NT
-c5MzYyOTIsLTE3NTI5OTU2MTQsLTU3NzI3MzM5NCwyMDI1MDQ2
-ODI2XX0=
+eyJoaXN0b3J5IjpbMTc5MDI2MjQ1LC0xODI0NTEyMTI2LDYxNT
+Q3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0
+LC05MDQzMjg2NjgsLTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOT
+k4Njk1NTEsNTE4MDk3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3
+LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3LDYxMz
+IxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMz
+OTRdfQ==
 -->
