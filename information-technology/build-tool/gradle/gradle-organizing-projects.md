@@ -4,7 +4,9 @@
 
 ## [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
 
-Gradle’s language plugins establish conventions for discovering and compiling source code. For example, a project applying the  [Java plugin](https://docs.gradle.org/current/userguide/java_plugin.html#java_plugin)  will automatically compile the code in the directory  `src/main/java`. Other language plugins follow the same pattern. The last portion of the directory path usually indicates the expected language of the source files.
+Gradle’s language plugins establish conventions for discovering and compiling source code. For example, a project applying the  [Java plugin](https://docs.gradle.org/current/userguide/java_plugin.html#java_plugin)  will automatically compile the code in the directory  `src/main/java`. 
+
+Other language plugins follow the same pattern. The last portion of the directory path usually indicates the expected language of the source files.
 
 Some compilers are capable of cross-compiling multiple languages in the same source directory. The Groovy compiler can handle the scenario of mixing Java and Groovy source files located in  `src/main/groovy`. Gradle recommends that you place sources in directories according to their language, because builds are more performant and both the user and build can make stronger assumptions.
 
@@ -32,5 +34,6 @@ The following source tree contains Java and Kotlin source files. Java source fil
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbLTEyODk3NjMyNTAsMjAyNTA0NjgyNiwxNz
+IzNTY2MzA1XX0=
 -->
