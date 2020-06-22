@@ -95,6 +95,7 @@ subprojects {
 ```
 
 
+
 # [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
 
 Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하는데 컨벤션을 판별합니다. 예를 들어, [Java plugin](https://docs.gradle.org/current/userguide/java_plugin.html#java_plugin)을 사용하는 프로젝트는 자동적으로 `src/main/java`의 디렉토리의 코드를 컴파일합니다. 다른 플러그인도 같은 패턴을 따릅니다. 
@@ -197,9 +198,9 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk4Njk1NTEsNTE4MDk3MzQ2LDIwNTE0OT
-YyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwx
-MTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOT
-k1NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1
-XX0=
+eyJoaXN0b3J5IjpbLTI3ODY0NjYyNyw5OTg2OTU1MSw1MTgwOT
+czNDYsMjA1MTQ5NjI5MCw0NTE0NDA0MjcsNDg1MjEzMzM2LC0x
+OTk3OTU0ODU0LDExOTQxMjcxMjcsNjEzMjE0NzA3LDE3NTc5Mz
+YyOTIsLTE3NTI5OTU2MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2
+LDE3MjM1NjYzMDVdfQ==
 -->
