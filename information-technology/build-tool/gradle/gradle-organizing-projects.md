@@ -55,53 +55,11 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
 Gradle은 [source set concept](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)의 도움을 받아 소스 코드 디렉토리를 모델링 합니다. 
 소스 집단 객체 하나를 다수의 소스 코드 디렉토리를 가리키도록 하여, Gradle은 자동적으로 대응하는 컴파일 task를 만들어냅니다.
 
-## Source Set
-
-Source Set이란 소스 기반 프로젝트를 빌딩하는데 Gradle 자바가 지원하는 새로운 개념입니다. 가장 중요한 아이디어는 소스 파일들과 자원은 종종 타입별로 모인다는 것입니다. 여기서 타입의 예로는 application 코드, unit tests 그리고 통합 테스트 정도가 있겠습니다. 이렇듯 Source Set의 목적은 소스들를 논리적 그룹으로 묶고 그 목적을 설명하는데 있습니다. 
-
-Java Source Set 
+> Source Set
+> Source Set이란 소스 기반 프로젝트를 빌딩하는데 Gradle 자바가 지원하는 새로운 개념입니다. 가장 중요한 아이디어는 소스 파일들과 자원은 종종 타입별로 모인다는 것입니다. 타입 예로는 application 코드, unit tests 그리고 통합 테스트 정도가 있겠습니다. 이렇듯 Source Set의 목적은 소스들를 논리적 그룹으로 묶고 그 목적을 설명하는데 있습니다. 
+> Java Source Set 
     -   main : 실제 작동 소스코드. 컴파일해서 JAR 파일로 들어감.
     -   test : 단위 테스트 소스코드. 컴파일해서 JUnit이나 TestNG로 실행.
-
-#### 새로운 sourceSet 생성 후 jar에 묶는 법
-
-- 소스 파일과 그들의 위치를 하나로 묶습니다.
-- 필요한 어떤 의존성을 포함한 컴파일 classpath를 하나로 묶습니다.
-- 컴파일이 완료된 파일들이 저장될 위치를 묶습니다.
-    
-You can see how these relate to one another in this diagram:
-
-![java sourcesets compilation](https://docs.gradle.org/current/userguide/img/java-sourcesets-compilation.png)
-
-Figure 1. Source sets and Java compilation
-
-음영진 박스들은 소스셋 자체의 속성을 나타냅니다. 
-
-The shaded boxes represent properties of the source set itself. On top of that, the Java Library Plugin automatically creates a compilation task for every source set you or a plugin defines — named  `compile_SourceSet_Java`  — and several  [dependency configurations](https://docs.gradle.org/current/userguide/java_plugin.html#java_source_set_configurations).
-
-
-
-
-
-Java projects typically include resources other than source files, such as properties files, that may need processing — for example by replacing tokens within the files — and packaging within the final JAR. The Java Library Plugin handles this by automatically creating a dedicated task for each defined source set called  `process_SourceSet_Resources`  (or  `processResources`  for the  `main`  source set). The following diagram shows how the source set fits in with this task:
-
-![java sourcesets process resources](https://docs.gradle.org/current/userguide/img/java-sourcesets-process-resources.png)
-
-Figure 2. Processing non-source files for a source set
-
-As before, the shaded boxes represent properties of the source set, which in this case comprises the locations of the resource files and where they are copied to.
-
-In addition to the  `main`  source set, the Java Library Plugin defines a  `test`  source set that represents the project’s tests. This source set is used by the  `test`  task, which runs the tests. You can learn more about this task and related topics in the  [Java testing](https://docs.gradle.org/current/userguide/java_testing.html#java_testing)  chapter.
-
-Projects typically use this source set for unit tests, but you can also use it for integration, acceptance and other types of test if you wish. The alternative approach is to  [define a new source set](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_sets)  for each of your other test types, which is typically done for one or both of the following reasons:
-
--   You want to keep the tests separate from one another for aesthetics and manageability
-    
--   The different test types require different compilation or runtime classpaths or some other difference in setup
-        
-
-
-
 
 Example 1. Integration test source set
 
@@ -149,8 +107,8 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEyNTI0NzcyLC0xOTk3OTU0ODU0LDExOT
-QxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2
-MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ
-==
+eyJoaXN0b3J5IjpbLTEwNjU0NjgyODMsLTE5OTc5NTQ4NTQsMT
+E5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5
+NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV
+19
 -->
