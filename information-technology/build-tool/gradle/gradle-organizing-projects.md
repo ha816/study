@@ -84,6 +84,7 @@ subprojects {
   
 	dependencies { // 설정된 Repository에서 가져올 아티팩트를 설정
 		compile("org.slf4j:slf4j-api:${_versions.slf4j}")  
+		// 컴파일할때는 사용하고, 아티팩트를 만들때는 포함하지 않음
 		compileOnly("org.projectlombok:lombok:${_versions.lombok}")  
 		testCompileOnly("org.projectlombok:lombok:${_versions.lombok}")  
 		implementation "ai.clova.soda:soda:${revision()}${snapshotSuffix()}"  
@@ -209,8 +210,9 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE4MDk3MzQ2LDIwNTE0OTYyOTAsNDUxND
-QwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3
-LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01Nz
-cyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbNjU0MDY3MTU4LDUxODA5NzM0NiwyMDUxND
+k2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQs
+MTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mj
+k5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMw
+NV19
 -->
