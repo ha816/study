@@ -61,7 +61,7 @@ Gradle은 Initialization, Configuration, Execution의 세 단계로 build script
 * Execution
 	* Configuration 단계가 끝난 후, 선택된 tasks를 수행하는 단계.
    
-## API
+## Build Script
 
 Gradle의 빌드 스크립트는 실제 실행 코드입니다. 이렇듯 빌드 스크립트가 코드인 사실 덕분에 Gradle의 유연함이 온다고 생각할 수 있는데, 이는 사실이 아닙니다.
 
@@ -75,6 +75,6 @@ Gradle은  JVM에서 동작하기 때문에, 빌드 스크릷트들은 표준 [J
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg5Njc2ODYsLTk4NDM2MTc1MywtMTc5OT
-c5MjU4NSwxOTkzNTgwNDU2XX0=
+eyJoaXN0b3J5IjpbNTQ3MTAzMTkxLDc4OTY3Njg2LC05ODQzNj
+E3NTMsLTE3OTk3OTI1ODUsMTk5MzU4MDQ1Nl19
 -->
