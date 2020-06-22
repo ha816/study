@@ -67,8 +67,9 @@ rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적�
 최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들 수 있습니다. 
 
 최상위 프로젝트의 build.gradle 파일에 설정된 내용은 모든 하위 프로젝트에 공통적으로 적용할 수 있습니다. 
-subprojects 설정값들은 모든 하위 프로젝트에 적용됩니다. 
-만약 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면,  allprojects를 사용하면 됩니다.
+subprojects 설정값들은 모든 하위 프로젝트에 적용됩니다. 만약 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면,  allprojects를 사용하면 됩니다.
+
+
 
 ```
 subprojects {
@@ -76,20 +77,35 @@ subprojects {
 	sourceCompatibility = 1.8   // Java 호환 버전을 1.8로 설정
 	group = 'ai.clova.tropicana' // 생성될 아티팩트 그룹의 이름
 
-	repositories {  
+	repositories {  // 의존성을 가져올 주소를 설정
 	  mavenCentral()  
 	  ...
 	}  
   
-	dependencies {  
+	dependencies { // 설정된 Repository에서 가져올 아티팩트를 설정
 		compile("org.slf4j:slf4j-api:${_versions.slf4j}")  
 		compileOnly("org.projectlombok:lombok:${_versions.lombok}")  
 		testCompileOnly("org.projectlombok:lombok:${_versions.lombok}")  
 		implementation "ai.clova.soda:soda:${revision()}${snapshotSuffix()}"  
 		annotationProcessor 'org.projectlombok:lombok'  
 		testAnnotationProcessor 'org.projectlombok:lombok'
+
+		// 로컬 jar 파일의 의존성 설정  
+		compile fileTree(dir: 'libs', include: '*.jar')  
+		// 로컬 프로젝트간 의존성 설정  
+		compile project(':shared')  
+		// 컴파일 타임에 의존성을 받아옴  
+		compile 'com.google.guava', name: 'guava:23.0'  
+		// 테스트시만 의존성을 받아옴  
+		// 마이너 버전을 '+'로 설정해서 항상 4점대 최신 버전을 사용  
+		testCompile group: 'junit', name: 'junit', version: '4.+'  
+		// 컴파일할때는 사용하고, 아티팩트를 만들때는 포함하지 않음  
+		compileOnly 'org.projectlombok:lombok:1.16.18'  
+		// 실행할때 의존성을 받아옴(기본적으로 컴파일을 모두 포함)  
+		runtime('org.hibernate:hibernate:3.0.5')
 	}
 ```
+
 
 # [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
 
@@ -193,7 +209,7 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY0MDAxODIwLDIwNTE0OTYyOTAsNDUxND
+eyJoaXN0b3J5IjpbNTE4MDk3MzQ2LDIwNTE0OTYyOTAsNDUxND
 QwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3
 LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01Nz
 cyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
