@@ -71,13 +71,10 @@ Gradle의 빌드 스크립트는 실제 실행 코드입니다. 이렇듯 빌드
 Gradle은  JVM에서 동작하기 때문에, 빌드 스크릷트들은 표준 [Java API](https://docs.oracle.com/javase/8/docs/api)를 사용할 수 있습니다.
 먄약 Groovy 빌드 스크립트를 사용한다면 Groovy API들도 추가적으로 사용 가능합니다. 반면 Kotlin 빌드 스크립트는 Kotlin것만 사용 가능합니다. 
 
-
-[https://docs.gradle.org/current/userguide/tutorial_using_tasks.html](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)
-
 # References
 
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MzU4MDQ1Nl19
+eyJoaXN0b3J5IjpbLTE3OTk3OTI1ODUsMTk5MzU4MDQ1Nl19
 -->
