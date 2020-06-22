@@ -83,9 +83,15 @@ subprojects {
 	}  
   
 	dependencies { // 설정된 Repository에서 가져올 아티팩트를 설정
+		// 컴파일 타임에 의존성을 받아옴
 		compile("org.slf4j:slf4j-api:${_versions.slf4j}")  
 		// 컴파일할때는 사용하고, 아티팩트를 만들때는 포함하지 않음
 		compileOnly("org.projectlombok:lombok:${_versions.lombok}")  
+		// 테스트시만 의존성을 받아옴, 
+
+		// 실행할때 의존성을 받아옴(기본적으로 컴파일을 모두 포함)    
+		runtime('org.hibernate:hibernate:3.0.5')
+		
 		testCompileOnly("org.projectlombok:lombok:${_versions.lombok}")  
 		implementation "ai.clova.soda:soda:${revision()}${snapshotSuffix()}"  
 		annotationProcessor 'org.projectlombok:lombok'  
@@ -102,7 +108,7 @@ subprojects {
 		testCompile group: 'junit', name: 'junit', version: '4.+'  
 		// 컴파일할때는 사용하고, 아티팩트를 만들때는 포함하지 않음  
 		compileOnly 'org.projectlombok:lombok:1.16.18'  
-		// 실행할때 의존성을 받아옴(기본적으로 컴파일을 모두 포함)  
+		// 실행할때 의존성을 받아옴(기본적으로 컴파일을 모두 포함)    
 		runtime('org.hibernate:hibernate:3.0.5')
 	}
 ```
@@ -210,7 +216,7 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0MDY3MTU4LDUxODA5NzM0NiwyMDUxND
+eyJoaXN0b3J5IjpbODAwODk1NTIwLDUxODA5NzM0NiwyMDUxND
 k2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQs
 MTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mj
 k5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMw
