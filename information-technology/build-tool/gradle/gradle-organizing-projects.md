@@ -62,7 +62,7 @@ Source Set이란 소스 기반 프로젝트를 빌딩하는데 Gradle 자바가 
 source set은 컴파일의 여러 측면을 하나로 묶습니다. 
 
 - 소스 파일과 그들의 위치를 하나로 묶습니다.
-- 
+- 필요한 
 
 
 Source sets are a powerful concept that tie together several aspects of compilation:
@@ -152,7 +152,7 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNzM4NjI1NSwxMTk0MTI3MTI3LDYxMz
-IxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMz
-OTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbLTE1NjYyNjUyNTEsMTE5NDEyNzEyNyw2MT
+MyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNTc3Mjcz
+Mzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
 -->
