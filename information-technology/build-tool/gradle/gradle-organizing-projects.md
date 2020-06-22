@@ -88,19 +88,27 @@ task integTest(type: Test) { //Test 타입 task 정의
 check.dependsOn integTest
 ```
 
-## [](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:use_standard_conventions)[Us](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:use_standard_conventions)
+## [Always define a settings file](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#always_define_a_settings_file)
 
 
 
-## [](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)[Se](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
+Gradle tries to locate a  `settings.gradle`  (Groovy DSL) or a  `settings.gradle.kts`  (Kotlin DSL) file with every invocation of the build. For that purpose, the runtime walks the hierarchy of the directory tree up to the root directory. The algorithm stops searching as soon as it finds the settings file.
+
+Always add a  `settings.gradle`  to the root directory of your build to avoid the initial performance impact. This recommendation applies to single project builds as well as multi-project builds. The file can either be empty or define the desired name of the project.
+
+A typical Gradle project with a settings file look as such:
+
+`Groovy``Kotlin`
+
+```groovy
+.
+├── build.gradle
+└── settings.gradle
+```
 
 
-[https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#organizing_gradle_projects](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#organizing_gradle_projects)
-
-
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTY5NzMwMiw0ODUyMTMzMzYsLTE5OT
+eyJoaXN0b3J5IjpbMTE0MDU4MzQ5MSw0ODUyMTMzMzYsLTE5OT
 c5NTQ4NTQsMTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5
 MiwtMTc1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMT
 cyMzU2NjMwNV19
