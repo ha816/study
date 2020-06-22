@@ -59,15 +59,9 @@ if( file('../soda').exists() ) {
 >
 
 rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적으로는 프로젝트 폴더명으로 만들어집니다. 
-그리고 tropicana 프로젝트의 하위프로젝트로 core, gateway, internal ... 등이 있습니다.
-그리고 각 하위 프로젝트의 기본 폴더 트리가 있어야 합니다.
+그리고 tropicana 프로젝트의 하위프로젝트로 core, gateway, internal ... 등이 있습니다. 루트 프로젝트 하위에 프로젝트 폴더가 있어야 합니다.
 
-> mkdir -p java/src/main/java  
-> mkdir -p kotlin/src/main/kotlin
-
-여기서는 각 언어의 기본 폴더 구조가 비슷하지만, 언어에 따라서 다를 수 있다. 여기서 각 하위 프로젝트의 폴더명은 java, kotlin으로 생성되었지만, 모듈명은 기본으로 algorithm-java, algorithm-kotlin이 된다. IDE로 프로젝트를 열어보면 이러한 폴더명과 모듈명을 확인할 수 있다. 또한 모듈명을 직접 변경할 수도 있다.
-
-이제 각 하위 폴더를 Gradle 프로젝트로 만들 차례다. 최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들자.
+각 하위 폴더는 하위 Gradle 프로젝트로 만들 차례다. 최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들자.
 
 > touch java/build.gradle  
 > touch kotlin/build.gradle
@@ -191,8 +185,8 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxODcyOTYsMjA1MTQ5NjI5MCw0NTE0ND
-A0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcxMjcs
-NjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2MTQsLTU3Nz
-I3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ==
+eyJoaXN0b3J5IjpbMTcwMjYzOTIwOCwyMDUxNDk2MjkwLDQ1MT
+Q0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEy
+Nyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
+c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
 -->
