@@ -97,6 +97,7 @@ buildscript {
 subprojects 블럭에 설정값들은 모든 하위 프로젝트에 적용됩니다. 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면, subprojects블럭이 아닌 allprojects 블럭을 사용하면 됩니다.
 
 ```
+// build.gradle
 subprojects {
 	apply plugin: 'java'        // 'java'라는 Gradle 플러그인 적용
 	sourceCompatibility = 1.8   // Java 호환 버전을 1.8로 설정
@@ -237,10 +238,10 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwND
-MyODY2OCwtMTg3NDkwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1
-MSw1MTgwOTczNDYsMjA1MTQ5NjI5MCw0NTE0NDA0MjcsNDg1Mj
-EzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcxMjcsNjEzMjE0NzA3
-LDE3NTc5MzYyOTIsLTE3NTI5OTU2MTQsLTU3NzI3MzM5NCwyMD
-I1MDQ2ODI2LDE3MjM1NjYzMDVdfQ==
+eyJoaXN0b3J5IjpbLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMj
+YxOTY0NCwtOTA0MzI4NjY4LC0xODc0OTA2NDY4LC0xNDg2Mjgx
+OTkxLDk5ODY5NTUxLDUxODA5NzM0NiwyMDUxNDk2MjkwLDQ1MT
+Q0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEy
+Nyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
+c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
 -->
