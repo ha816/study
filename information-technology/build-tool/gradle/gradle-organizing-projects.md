@@ -78,19 +78,16 @@ buildscript {
 	                lombok : '1.16.20',  
 	                ... ]
 	}
-  
- 
-  
   repositories {  
-  mavenCentral()  
-        maven { url "https://plugins.gradle.org/m2/" }  
-  maven { url "http://repo.linecorp.com/content/repositories/releases/" }  
-  maven { url "http://repo.linecorp.com/content/repositories/snapshots/" }  
-  maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }  
+	  mavenCentral()  
+	  maven { url "https://plugins.gradle.org/m2/" }  
+	  maven { url "http://repo.linecorp.com/content/repositories/releases/" }  
+	  maven { url "http://repo.linecorp.com/content/repositories/snapshots/" }  
+	  maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }  
  }  
-  dependencies {  
-  classpath("org.springframework.boot:spring-boot-gradle-plugin:${_versions.springBoot}")  
-        classpath("io.spring.gradle:dependency-management-plugin:1.0.2.RELEASE")  
+	 dependencies {  
+		 classpath("org.springframework.boot:spring-boot-gradle-plugin:${_versions.springBoot}")  
+		 classpath("io.spring.gradle:dependency-management-plugin:1.0.2.RELEASE")  
     }  
 }
 
@@ -252,10 +249,9 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyODU4NTY3MywtMTg3NDkwNjQ2OCwtMT
-Q4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MTQ5NjI5
-MCw0NTE0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOT
-QxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2
-MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ
-==
+eyJoaXN0b3J5IjpbNzM0Mzk0MjY5LC0xODc0OTA2NDY4LC0xND
+g2MjgxOTkxLDk5ODY5NTUxLDUxODA5NzM0NiwyMDUxNDk2Mjkw
+LDQ1MTQ0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5ND
+EyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYx
+NCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
 -->
