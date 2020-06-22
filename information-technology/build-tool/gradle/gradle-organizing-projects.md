@@ -100,6 +100,8 @@ Projects typically use this source set for unit tests, but you can also use it f
         
 
 
+
+
 Example 1. Integration test source set
 
 ```groovy
@@ -146,7 +148,7 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NT
-I5OTU2MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYz
-MDVdfQ==
+eyJoaXN0b3J5IjpbMTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1Nz
+kzNjI5MiwtMTc1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4
+MjYsMTcyMzU2NjMwNV19
 -->
