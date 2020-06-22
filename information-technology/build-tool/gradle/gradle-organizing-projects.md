@@ -74,19 +74,11 @@ sourceSets {
     }
 }
 ```
-
-source sets은 소스 코드를 컴파일 하는데 책임이 있습니다. 그러나 byte code를 실행하는 것을 다루진 않습니다. test 실행을 위해서, Test 타입에 task를 
-
-Source sets are only responsible for compiling source code, but do not deal with executing the byte code. For the purpose of test execution, a corresponding task of type  [Test](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.Test.html)  needs to be established.
-
-Example 2. Integration test task
-
-`Groovy``Kotlin`
-
-gradle/integration-test.gradle
+source sets은 소스 코드를 컴파일 하는데 책임이 있습니다. 그러나 byte code를 실행하는 것을 다루진 않습니다. test 실행을 위해서, Test 타입에 task가 정의 되어야 합니다. 
 
 ```groovy
-task integTest(type: Test) {
+// gradle/integration-test.gradle
+task integTest(type: Test) { //Test 타입 task 정의
     description = 'Runs the integration tests.'
     group = 'verification'
     testClassesDirs = sourceSets.integTest.output.classesDirs
@@ -109,8 +101,8 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTg1NTczMiwtMTk5Nzk1NDg1NCwxMT
-k0MTI3MTI3LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1
-NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX
-0=
+eyJoaXN0b3J5IjpbNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOT
+QxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2
+MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ
+==
 -->
