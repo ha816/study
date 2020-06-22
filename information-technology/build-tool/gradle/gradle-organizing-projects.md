@@ -59,17 +59,11 @@ Gradle은 [source set concept](https://docs.gradle.org/current/userguide/buildin
 
 Source Set이란 소스 기반 프로젝트를 빌딩하는데 Gradle 자바가 지원하는 새로운 개념입니다. 가장 중요한 아이디어는 소스 파일들과 자원은 종종 타입별로 모인다는 것입니다. 여기서 타입의 예로는 application 코드, unit tests 그리고 통합 테스트 정도가 있겠습니다. 이런 로직 그룹은 전형적으로 고유한 파일 의존성과 classpath 등을 가집니다. 확실히, 한 source set을 형성하는 파일들은 같은 디렉토리에 위치할 필요가 없습니다. 
 
-source set은 컴파일의 여러 측면을 하나로 묶습니다. 
+source set은 아래 측면으로 소스
 
 - 소스 파일과 그들의 위치를 하나로 묶습니다.
-- 필요한 
-
-
-Source sets are a powerful concept that tie together several aspects of compilation:
-
--   the source files and where they’re located
-    
--   the compilation classpath, including any required dependencies (via Gradle  [configurations](https://docs.gradle.org/current/userguide/dependency_management_terminology.html#sub:terminology_configuration))
+- 필요한 어떤 의존성을 포함한 컴파일 classpath를 하나로 묶습니다.
+- 컴파일이 완료된 파일들이 저장될 위치를 묶습니다.
     
 -   where the compiled class files are placed
     
@@ -152,7 +146,7 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjYyNjUyNTEsMTE5NDEyNzEyNyw2MT
+eyJoaXN0b3J5IjpbLTE5NjAyMjIyMTUsMTE5NDEyNzEyNyw2MT
 MyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNTc3Mjcz
 Mzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
 -->
