@@ -19,6 +19,13 @@ project/
     settings.gradle
 ```
 
+**gradlew, gradlew.bat**은 모두 실행 스크립트입니다. gradlew은 유닉스용 실행 스크립트이고 gradlew.bat은 윈도우 용입니다. 둘의 내용은 동일합니다. 
+
+
+**gradlew.bat 파일**은 원도우용 실행 배치 스크립트다. 원도우에서 실행 가능하다는 점만 제외하면 gradlew와 동일하다.
+
+
+
 **settings.gradle 파일**은 프로젝트의 구성 정보를 기록하는 파일입니다. 어떤 하위프로젝트들이 어떤 관계로 구성되어 있는지를 기술합니다. Gradle은 이 파일에 기술된대로 프로젝트를 구성합니다.
 
 **build.gradle 파일**은 의존성이나 플러그인 설정 등을 위한 스크립트 파일입니다.
@@ -30,17 +37,6 @@ Gradle Wrapper
 
 **gradle/wrapper/gradle-wrapper.properties 파일**은 Wrapper 설정 파일입니다. 이 파일에 사용할  Wrapper 버전 등을 저장하는데, 버전을 변경하면 task 실행시, 자동으로 새로운 Wrapper 파일을 로컬 캐시에 다운로드 받습니다.
 
-
-
-**gradlew 파일**은 유닉스용 실행 스크립트다. Gradle로 컴파일이나 빌드 등을 할때, 아래와 같이 하면 로컬에 설치된 gradle을 사용한다.
-
-> gradle build
-
-이 경우 Java나 Gradle이 설치되어 있어야 하고, 새로받은 프로젝트의 Gradle 버전과 로컬에 설치된 Gradle 버전이 호환되지 않으면 문제가 발생할 수 있다. 따라서 Wrapper를 사용하면 아래와 같이 실행한다.
-
-> ./gradlew build
-
-**gradlew.bat 파일**은 원도우용 실행 배치 스크립트다. 원도우에서 실행 가능하다는 점만 제외하면 gradlew와 동일하다.
 
 
 
@@ -147,8 +143,8 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMzQ1OTY5MCwyMDUxNDk2MjkwLDQ1MT
-Q0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEy
-Nyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
-c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
+eyJoaXN0b3J5IjpbNTA1MTA4NTc0LDIwNTE0OTYyOTAsNDUxND
+QwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3
+LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01Nz
+cyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
 -->
