@@ -89,8 +89,9 @@ buildscript {
 		  maven { url "https://plugins.gradle.org/m2/" }  
 		  maven { url "http://repo.linecorp.com/content/repositories/releases/" }  
 		  maven { url "http://repo.linecorp.com/content/repositories/snapshots/" }  
-		  maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }  
 	 }  
+	 // Gradle이 프로젝트를 빌드하기 위해 필요한 의존성을 설정합니다.
+	 // classpath 의존성으로 boot-gradle-plugin고
 	 dependencies {  
 		 classpath("org.springframework.boot:spring-boot-gradle-plugin:${_versions.springBoot}")  
 		 classpath("io.spring.gradle:dependency-management-plugin:1.0.2.RELEASE")  
@@ -242,10 +243,10 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIyNjE5NjQ0LC05MDQzMjg2NjgsLTE4Nz
-Q5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MDk3MzQ2
-LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNiwtMTk5Nz
-k1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OTM2Mjky
-LC0xNzUyOTk1NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNz
-IzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbLTE0MTk5NjA5MDMsOTIyNjE5NjQ0LC05MD
+QzMjg2NjgsLTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1
+NTEsNTE4MDk3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NT
+IxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcw
+NywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMzOTQsMj
+AyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
 -->
