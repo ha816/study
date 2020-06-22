@@ -66,7 +66,7 @@ rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적�
 
 최상위 프로젝트의 build.gradle 파일에 설정된 내용은 모든 하위 프로젝트에 공통적으로 적용할 수 있습니다. 
 
-buildscript 블럭에는 Gradle 자신을 위한 변수, repositories, dependencies등을 설정할 수 있습니다. Gradle 자신이 아닌 다른 모듈에 대한 의존성은 buildscript 블럭에 적으면 안됩니다.
+buildscript 블럭에는 Gradle 자신을 위한 변수, repositories, dependencies등을 설정할 수 있습니다. 여기서 Gradle 자신이 아닌 다른 모듈에 대한 의존성은 buildscript 블럭에 적으면 안됩니다.
 ```
 // build.gradle
 buildscript {
@@ -94,7 +94,7 @@ buildscript {
 }
 ```
 
-subprojects 블럭에 설정값들은 모든 하위 프로젝트에 적용됩니다. 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면, subprojects블럭이 아닌 allprojects 블럭을 사용하면 됩니다.
+subprojects 블럭에 설정값들은 모든 하위 프로젝트에 적용됩니다. 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면, subprojects 블럭이 아닌 allprojects 블럭을 사용하면 됩니다.
 
 ```
 // build.gradle
@@ -224,11 +224,11 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMz
-YyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2
-OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MT
-Q5NjI5MCw0NTE0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0
-LDExOTQxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NT
-I5OTU2MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYz
-MDVdfQ==
+eyJoaXN0b3J5IjpbMTQzNTkyNjEwMSw2MTU0NzAxNzEsLTU3Nz
+Q5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4
+LC0xODc0OTA2NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxOD
+A5NzM0NiwyMDUxNDk2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzYs
+LTE5OTc5NTQ4NTQsMTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1Nz
+kzNjI5MiwtMTc1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4
+MjZdfQ==
 -->
