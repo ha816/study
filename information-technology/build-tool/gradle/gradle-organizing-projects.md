@@ -2,6 +2,25 @@
 
 모든 소프트웨어 프로젝트의 소스 코드와 빌드 로직은 의미있게 구성되어야 합니다. 아래 설명할 예제들은 어떻게 하면 읽기 쉽고, 유지보수하기 쉬운 프로젝트를 만드는지 실용적인 부분을 설명합니다. 또한, 일반적인 문제들도 다루면서 어떻게 그것들을 피하는지도 이야기 해보겠습니다.
 
+Gradle을 설치한후, 프로젝트 폴더를 하나만들어 아래 명령을 실행해봅시다.
+
+> gradle init
+
+그러면 아래 폴더 및 파일들이 생성될 것이다.
+
+project/  
+    gradlew  
+    gradlew.bat  
+    gradle/wrapper/  
+        gradle-wrapper.jar  
+        gradle-wrapper.properties  
+    build.gradle  
+    settings.gradle
+
+각각에 대해서 살펴보기 전에 Gradle Wrapper에 대해서 알아보자. 일단  **Gradle Wrapper를 사용하는 목적은**  **이미 존재하는 프로젝트를 새로운 환경에 설치할때 별도의 설치나 설정과정없이 곧 바로 빌드할 수 있게 하기 위함이다.** Java나 Gradle도 설치할 필요가 없다. 또한 로컬에 설치된 Gradle 또는 Java의 버전도 신경쓸 필요가 없다. 따라서 항상 Wrapper를 사용할 것을 권장한다.
+
+
+
 # [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
 
 Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하는데 컨벤션을 판별합니다. 예를 들어, [Java plugin](https://docs.gradle.org/current/userguide/java_plugin.html#java_plugin)을 사용하는 프로젝트는 자동적으로 `src/main/java`의 디렉토리의 코드를 컴파일합니다. 다른 플러그인도 같은 패턴을 따릅니다. 
@@ -104,8 +123,8 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MTQ5NjI5MCw0NTE0NDA0MjcsNDg1Mj
-EzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcxMjcsNjEzMjE0NzA3
-LDE3NTc5MzYyOTIsLTE3NTI5OTU2MTQsLTU3NzI3MzM5NCwyMD
-I1MDQ2ODI2LDE3MjM1NjYzMDVdfQ==
+eyJoaXN0b3J5IjpbLTEzODY2MDgxODAsMjA1MTQ5NjI5MCw0NT
+E0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcx
+MjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2MTQsLT
+U3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ==
 -->
