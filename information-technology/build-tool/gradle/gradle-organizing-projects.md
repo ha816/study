@@ -57,6 +57,9 @@ Gradle은 [source set concept](https://docs.gradle.org/current/userguide/buildin
 
 ## Source Set
 
+Source Set이란 소스 기반 프로젝트를 빌딩하는데 Gradle 자바가 새로운 
+
+
 Gradle’s Java support was the first to introduce a new concept for building source-based projects:  _source sets_. The main idea is that source files and resources are often logically grouped by type, such as application code, unit tests and integration tests. Each logical group typically has its own sets of file dependencies, classpaths, and more. Significantly, the files that form a source set  _don’t have to be located in the same directory_!
 
 Source sets are a powerful concept that tie together several aspects of compilation:
@@ -95,19 +98,8 @@ Projects typically use this source set for unit tests, but you can also use it f
 -   You want to keep the tests separate from one another for aesthetics and manageability
     
 -   The different test types require different compilation or runtime classpaths or some other difference in setup
-    
+        
 
-You can see an example of this approach in the Java testing chapter, which shows you  [how to set up integration tests](https://docs.gradle.org/current/userguide/java_testing.html#sec:configuring_java_integration_tests)  in a project.
-
-You’ll learn more about source sets and the features they provide in:
-
--   [Customizing file and directory locations](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
-    
--   [Configuring Java integration tests](https://docs.gradle.org/current/userguide/java_testing.html#sec:configuring_java_integration_tests)
-    
-
-## [](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_dependency_management_overview)[  
-](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_dependency_management_overview)
 
 Example 1. Integration test source set
 
@@ -155,7 +147,7 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNTUyODIwOSwxNzU3OTM2MjkyLC0xNz
-UyOTk1NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2
-MzA1XX0=
+eyJoaXN0b3J5IjpbLTExNDI3MzQyODEsMTc1NzkzNjI5MiwtMT
+c1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2
+NjMwNV19
 -->
