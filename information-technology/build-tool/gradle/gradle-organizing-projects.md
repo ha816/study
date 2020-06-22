@@ -43,6 +43,7 @@ Gradle로 컴파일이나 빌드 등을 할때, 아래와 같이 하면 로컬�
 
 ## settings.gradle
 
+```
 rootProject.name = 'tropicana'  
   
 include 'core'  
@@ -54,17 +55,12 @@ include 'client'
 if( file('../soda').exists() ) {  
     includeBuild '../soda'  
 }
+```
+>
 
-이제 기본적인 설정이 끝났다. 이제 폴리글랏 언어를 지원하는 멀티 프로젝트로 구성해 보자. 먼저 settings.gradle 파일을 열고 아래와 같이 셋팅하자.
+rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적으로는 프로젝트 폴더명으로 만들어집니다. 
 
-rootProject.name = 'algorithm'  
-  
-include 'java'  
-include 'kotlin'
-
-**rootProject.name**은 최상위 프로젝트의 이름이다. 기본적으로는 프로젝트 폴더명으로 만들어진다.
-
-그리고 algorithm 프로젝트의 하위프로젝트로 java, kotlin를 포함시켰다. 여기서 만약 하위 프로젝트의 하위 프로젝트를 만드려면  `include 'java::sub'`  와 같이 할 수 있다.
+그리고 tropicana 프로젝트의 하위프로젝트로 java, kotlin를 포함시켰다. 여기서 만약 하위 프로젝트의 하위 프로젝트를 만드려면  `include 'java::sub'`  와 같이 할 수 있다.
 
 이제 하위 프로젝트 폴더를 만들자. IDE를 활용하면 간단하게 하위 프로젝트를 생성할 수 있지만, 여기서는 수동으로 만들어 볼 것이다.
 
@@ -202,7 +198,7 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzY1NzI2OTEsMjA1MTQ5NjI5MCw0NT
+eyJoaXN0b3J5IjpbLTE0MzE1MTExMjksMjA1MTQ5NjI5MCw0NT
 E0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcx
 MjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2MTQsLT
 U3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ==
