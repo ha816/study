@@ -4,17 +4,17 @@ Gradle은 오픈 소스 빌드 자동화 도구입니다.
 
 >Gradle is an open-source [build automation](https://en.wikipedia.org/wiki/Build_automation) tool that is designed to be flexible enough to build almost any type of software. 
 
-Gradle을 활용하면 어떤 소프트웨어도 빌드가 가능합니다. 왜냐하면 어떤 프로젝트를 어떻게 빌드 하든 Gradle에서 강제하는 제약이 거의 없기 때문입니다. 
+* Gradle을 활용하면 어떤 소프트웨어도 빌드가 가능합니다. 왜냐하면 어떤 프로젝트를 어떻게 빌드 하든 Gradle에서 강제하는 제약이 거의 없기 때문입니다. 
 
-Gradle은 빌드 성능을 높이기 위한 많은 최적화 기법을 사용하고 있습니다. 대표적으로  불필요한 빌드 작업을 줄이기 위해 build cache를 활용합니다. 
+* Gradle은 빌드 성능을 높이기 위한 많은 최적화 기법을 사용하고 있습니다. 대표적으로  불필요한 빌드 작업을 줄이기 위해 build cache를 활용합니다. 
 
-Gradle은 [Maven Conventions](https://maven.apache.org/maven-conventions.html)을 따릅니다. 
+* Gradle은 [Maven Conventions](https://maven.apache.org/maven-conventions.html)을 따릅니다. 
 
-Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Development Kit)가 반드시 필요합니다. 그러나 Gradle은 JVM 프로젝트 빌드에만 국한되지 않고 다양한 소프트웨어를 빌드할 수 있습니다.  당연히 플러그인도 빌드에 활용할 수 있습니다.
+* Gradle은 Java 기반입니다. 따라서 사용하기 위해 JDK(Java Development Kit)가 반드시 필요합니다. 그러나 Gradle은 JVM 프로젝트 빌드에만 국한되지 않고 다양한 소프트웨어를 빌드할 수 있습니다.  당연히 플러그인도 빌드에 활용할 수 있습니다.
 
-Gradle은 주로 Groovy로 작성된 빌드 스크립트로 빌드를 하게 됩니다. Groovy는 JVM에서 작동하는 동적 스크립트 언어입니다. 문법이 자바 문법과 아주 비슷하여 배우기에 큰 어려움이 없습니다.
+* Gradle은 주로 Groovy로 작성된 빌드 스크립트로 빌드를 하게 됩니다. Groovy는 JVM에서 작동하는 동적 스크립트 언어입니다. 문법이 자바 문법과 아주 비슷하여 배우기에 큰 어려움이 없습니다.
 
-현재 Gradle이 지원하는 의존성 관리는 [Maven Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)와 Ivy-compatible repositories가 있습니다.
+* Gradle이 지원하는 의존성 관리는 [Maven Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)와 Ivy-compatible repositories가 있습니다.
 
 # Concepts
 
@@ -76,5 +76,6 @@ Gradle은  JVM에서 동작하기 때문에, 빌드 스크릷트들은 표준 [J
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTk3OTI1ODUsMTk5MzU4MDQ1Nl19
+eyJoaXN0b3J5IjpbLTE2MDQ3ODY5NTMsLTE3OTk3OTI1ODUsMT
+k5MzU4MDQ1Nl19
 -->
