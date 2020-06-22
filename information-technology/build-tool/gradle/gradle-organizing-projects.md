@@ -73,9 +73,9 @@ Figure 1. Source sets and Java compilation
 
 The shaded boxes represent properties of the source set itself. On top of that, the Java Library Plugin automatically creates a compilation task for every source set you or a plugin defines — named  `compile_SourceSet_Java`  — and several  [dependency configurations](https://docs.gradle.org/current/userguide/java_plugin.html#java_source_set_configurations).
 
-The  `main`  source set
 
-Most language plugins, Java included, automatically create a source set called  `main`, which is used for the project’s production code. This source set is special in that its name is not included in the names of the configurations and tasks, hence why you have just a  `compileJava`  task and  `compileOnly`  and  `implementation`  configurations rather than  `compileMainJava`,  `mainCompileOnly`  and  `mainImplementation`  respectively.
+
+
 
 Java projects typically include resources other than source files, such as properties files, that may need processing — for example by replacing tokens within the files — and packaging within the final JAR. The Java Library Plugin handles this by automatically creating a dedicated task for each defined source set called  `process_SourceSet_Resources`  (or  `processResources`  for the  `main`  source set). The following diagram shows how the source set fits in with this task:
 
@@ -143,7 +143,7 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NDc5NDYyOSwxMTk0MTI3MTI3LDYxMz
-IxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01NzcyNzMz
-OTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbLTE5OTc5NTQ4NTQsMTE5NDEyNzEyNyw2MT
+MyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNTc3Mjcz
+Mzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
 -->
