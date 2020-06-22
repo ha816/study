@@ -4,7 +4,7 @@ Gradle은 오픈 소스 빌드 자동화 도구입니다.
 
 >Gradle is an open-source [build automation](https://en.wikipedia.org/wiki/Build_automation) tool that is designed to be flexible enough to build almost any type of software. 
 
-* Gradle을 활용하면 어떤 소프트웨어도 빌드가 가능합니다. 왜냐하면 어떤 프로젝트를 어떻게 빌드 하든 Gradle에서 강제하는 제약이 거의 없기 때문입니다. 
+* Gradle을 활용하면 어떤 소프트웨어도 빌드가 가능합니다. 이는 어떤 프로젝트를 어떤식으로 빌드하든 Gradle에서 강제하는 제약이 거의 없기 때문입니다. 
 
 * Gradle은 빌드 성능을 높이기 위한 많은 최적화 기법을 사용하고 있습니다. 대표적으로  불필요한 빌드 작업을 줄이기 위해 build cache를 활용합니다. 
 
@@ -76,6 +76,6 @@ Gradle은  JVM에서 동작하기 때문에, 빌드 스크릷트들은 표준 [J
 [https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88](https://effectivesquid.tistory.com/entry/Gradle-%EB%B9%8C%EB%93%9C%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%B4%88)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDQ3ODY5NTMsLTE3OTk3OTI1ODUsMT
-k5MzU4MDQ1Nl19
+eyJoaXN0b3J5IjpbLTk4NDM2MTc1MywtMTc5OTc5MjU4NSwxOT
+kzNTgwNDU2XX0=
 -->
