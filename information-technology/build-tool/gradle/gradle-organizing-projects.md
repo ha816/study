@@ -70,8 +70,8 @@ rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적�
 
 buildscript 블럭에는 Gradle 자신을 위한 변수, repositories, dependencies등을 설정할 수 있습니다. 
 
-subprojects 설정값들은 모든 하위 프로젝트에 적용됩니다. 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면, subprojects가 아닌 allprojects 블럭을 사용하면 됩니다.
 ```
+// build.gradle
 buildscript {
 	ext {
 	_versions = [  springBoot : '2.2.4.RELEASE',  
@@ -92,7 +92,12 @@ buildscript {
 		 classpath("io.spring.gradle:dependency-management-plugin:1.0.2.RELEASE")  
     }  
 }
+```
 
+subprojects 설정값들은 모든 하위 프로젝트에 적용됩니다. 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면, subprojects가 아닌 allprojects 블럭을 사용하면 됩니다.
+
+
+```
 subprojects {
 	apply plugin: 'java'        // 'java'라는 Gradle 플러그인 적용
 	sourceCompatibility = 1.8   // Java 호환 버전을 1.8로 설정
@@ -233,10 +238,10 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc2NjU3NTY3LC05MDQzMjg2NjgsLTE4Nz
-Q5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MDk3MzQ2
-LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNiwtMTk5Nz
-k1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OTM2Mjky
-LC0xNzUyOTk1NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNz
-IzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbLTU0MzQ1OTg3NiwtOTA0MzI4NjY4LC0xOD
+c0OTA2NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxODA5NzM0
+NiwyMDUxNDk2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzYsLTE5OT
+c5NTQ4NTQsMTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5
+MiwtMTc1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMT
+cyMzU2NjMwNV19
 -->
