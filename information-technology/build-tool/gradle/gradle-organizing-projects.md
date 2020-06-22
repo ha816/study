@@ -61,12 +61,7 @@ Source Set이란 소스 기반 프로젝트를 빌딩하는데 Gradle 자바가 
 
 Source Set의 목적은 소스들를 논리적 그룹으로 묶고 그 목적을 설명하는 데 있음. 통합 테스트용 소스셋, API 인터페이스 클래스들, 구현체 클래스들 형태로 구분 가능.
 
-
--   Java  플러그인에는 Source Set이라는 개념이 들어가 있으며, 이는 함께 컴파일과 실행되는 소스 파일들의 그룹을 뜻함.
--   소스 셋에는 자바 소스 파일과 리소스 파일들이 들어감.
--   다른 플러그인들이 그루비나 스칼라 소스를 추가할 수 있음.
--   소스 셋은 컴파일 클래스패스와 런타임  클래스패스와 관련됨.
--   기본 Java Source Set
+기본 Java Source Set
     -   main : 실제 작동 소스코드. 컴파일해서 JAR 파일로 들어감.
     -   test : 단위 테스트 소스코드. 컴파일해서 JUnit이나 TestNG로 실행.
 
@@ -156,8 +151,8 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MDU5NTUxOSwtMTk5Nzk1NDg1NCwxMT
-k0MTI3MTI3LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1
-NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX
-0=
+eyJoaXN0b3J5IjpbNDQ3NTI0NzQwLC0xOTk3OTU0ODU0LDExOT
+QxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NTI5OTU2
+MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYzMDVdfQ
+==
 -->
