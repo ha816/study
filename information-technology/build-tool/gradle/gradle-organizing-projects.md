@@ -107,8 +107,7 @@ subprojects {
 	  mavenCentral()  
 	  ...
 	}  
-  
-	dependencies { // 설정된 Repository에서 가져올 아티팩트를 설정
+	dependencies { 
 		// 컴파일 타임에 의존성을 받아옴
 		compile("org.slf4j:slf4j-api:${_versions.slf4j}")  
 		// 컴파일할때는 사용하고, 아티팩트를 만들때는 포함하지 않음
@@ -122,19 +121,6 @@ subprojects {
 
 최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들어 유지보수 할 수 있습니다.
 
-/**  
-
-/**  
- allprojects {} 블럭에서 써드 파티 플러그인이나 라이브러리 처럼 모든 모듈에서 사용되는
-
- 저장소repositories와 의존성dependencies를 설정합니다. 프로젝트의 모든 모듈에서 필요한 것은
-
- 아닌 의존성dependencies은 module 레벨의 build.gradle 파일에서 설정되어야 합니다. 
-
- 새로운 프로젝트에서, 안드로이드 스튜디오는 기본 저장소로 JCenter를 설정하지만 이는 아무런 의존성
-
- 을 설정하지 않습니다.allprojects { repositories { jcenter()  }  
-}
 
 # [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
 
@@ -238,11 +224,11 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDg1MTgyNzksLTU3NzQ5MDM0MSwtOT
-MzNjIxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4LC0xODc0OTA2
-NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxODA5NzM0NiwyMD
-UxNDk2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4
-NTQsMTE5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMT
-c1Mjk5NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2
-NjMwNV19
+eyJoaXN0b3J5IjpbNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMz
+YyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2
+OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MT
+Q5NjI5MCw0NTE0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0
+LDExOTQxMjcxMjcsNjEzMjE0NzA3LDE3NTc5MzYyOTIsLTE3NT
+I5OTU2MTQsLTU3NzI3MzM5NCwyMDI1MDQ2ODI2LDE3MjM1NjYz
+MDVdfQ==
 -->
