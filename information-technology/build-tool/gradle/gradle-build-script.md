@@ -1,9 +1,7 @@
 # Overview
 
 빌드 스크립트를 실제 어떻게 만드는지 알아봅시다. 
-
-
-
+아래 예제는 [Gradle User Guide](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)를 가져와 정리하였습니다.
 
 # [Hello world](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:hello_world)
 
@@ -24,7 +22,7 @@ task hello {
 
 `gradle -q hello`을 실행하면, 빌드 스크립트에 정의된 hello란 task를 찾아 action을 추가 합니다. Gradle은 hello task를 실행하며, 추가된 action을 순차적으로 하나씩 처리합니다. action은 단지 한 블럭으로 실행할 코드를 가지고 있습니다. 
 
-## [Task dependencies](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)
+# [Task dependencies](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies)
 
 다른 tasks 위에 또 다른 tasks를 선언할 수 있습니다. 아래 예제는 intro task가 hello task에 의지합니다. 
 
@@ -87,7 +85,7 @@ Groovy의 장점은 task가 무엇을 하는지 정의하는 것을 동적으로
 > gradle -q task1
 I'm task number 1
 
-## [Manipulating existing tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:manipulating_existing_tasks)
+# [Manipulating existing tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:manipulating_existing_tasks)
 
 한번 tasks가 만들어지고 API를 통해서 접근가능하다면, API를 통해서 동적으로 의존성을 추가 가능합니다. 
 ```groovy
@@ -135,7 +133,7 @@ Hello Jupiter
 
 `doFirst`와 `doLast`은 여러번 실행될 수 있다. 이것들은 taks action 리스트의 처음이나 끝에 action을 추가합니다. task가 실행되면, action 리스트의 action은 순서대로 실행됩니다. 
 
-## [Groovy DSL shortcut notations](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)
+# [Groovy DSL shortcut notations](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:shortcut_notations)
 
 존재하는 task에서 각 속성을 쉽게 사용 가능합니다. 
 ```groovy
@@ -153,7 +151,7 @@ hello.doLast {
 > Hello world!
 > Greetings from the hello task.
 
-## [Extra task properties](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)
+# [Extra task properties](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:extra_task_properties)
 
 task의 속성에 특정한 속성을 추가할 수 있습니다. 
 
@@ -173,7 +171,7 @@ task printTaskProperties {
 myValue
 
 
-## [Using methods](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:using_methods)
+# [Using methods](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:using_methods)
 
 빌드 로직을 만드는 첫 번째 단계는 사용될 메서드를 추출하는것 입니다. 예제는 아주 간단하지만 보다 자세한 사항을 보고 싶다면 [Organizing Gradle Projects](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#organizing_gradle_projects)을 참조합시다. 
 
@@ -206,7 +204,7 @@ File[] fileList(String dir) {
 I'm fond of agile.manifesto.txt
 I'm fond of gradle.manifesto.txt
 
-## [Default tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:default_tasks)
+# [Default tasks](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:default_tasks)
 
 Gradle은 정의된 다른 tasks가 없다면 디폴트 tasks 정의하도록 허락합니다. 
 
@@ -336,7 +334,7 @@ multi-project 빌드에서, 한 프로젝트의 `buildscript()`로 선언된 의
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTI3NTM5ODUsNDk1NjI0Mzc4LC0xOD
+eyJoaXN0b3J5IjpbLTIxMjIxNzYzOTEsNDk1NjI0Mzc4LC0xOD
 gxODcxNjA4LC0xNjc0NjUxNDg3LDE0MDUxODk5MTAsNzI0ODk4
 NzUzLDIxMzQ0NTAxNjEsLTE3ODUwMzMzOTAsMjEzMjg3MDcyN1
 19
