@@ -10,7 +10,7 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
 
 어떤 컴파일러는 같은 소스 디렉토리에서 다수의 언어를 크로스 컴파일링이 가능합니다. Groovy 컴파일러의 경우, `src/main/groovy`에 있는 자바와 Groovy 코드가 혼합된 소스도 다룰 수 있습니다. 
 
-Gradle은 언어에 따라
+Gradle은 언어에 따라 
 
 Other language plugins follow the same pattern. The last portion of the directory path usually indicates the expected language of the source files.
 
@@ -40,6 +40,6 @@ The following source tree contains Java and Kotlin source files. Java source fil
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTI5OTU2MTQsLTU3NzI3MzM5NCwyMD
-I1MDQ2ODI2LDE3MjM1NjYzMDVdfQ==
+eyJoaXN0b3J5IjpbMTc1NzkzNjI5MiwtMTc1Mjk5NTYxNCwtNT
+c3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV19
 -->
