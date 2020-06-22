@@ -75,6 +75,8 @@ sourceSets {
 }
 ```
 
+source sets은 소스 코드를 컴파일 하는데 책임이 있습니다. 그러나 byte code를 실행하는 것을 다루진 않습니다. test 실행을 위해서, Test 타입에 task를 
+
 Source sets are only responsible for compiling source code, but do not deal with executing the byte code. For the purpose of test execution, a corresponding task of type  [Test](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.Test.html)  needs to be established.
 
 Example 2. Integration test task
@@ -107,8 +109,8 @@ check.dependsOn integTest
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzYxNjQ0MDEsLTE5OTc5NTQ4NTQsMT
-E5NDEyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5
-NTYxNCwtNTc3MjczMzk0LDIwMjUwNDY4MjYsMTcyMzU2NjMwNV
-19
+eyJoaXN0b3J5IjpbMjEwNTg1NTczMiwtMTk5Nzk1NDg1NCwxMT
+k0MTI3MTI3LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1
+NjE0LC01NzcyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX
+0=
 -->
