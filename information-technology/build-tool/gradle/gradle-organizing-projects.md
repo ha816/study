@@ -65,7 +65,11 @@ rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적�
 
 최상위 프로젝트의 build.gradle 파일에 설정된 내용은 모든 하위 프로젝트에 공통적으로 설정됩니다. 
 
-group은 
+group은 생성될 아티팩트의 이름을 나타냅니다. 
+
+**subprojects**로 의 설정값들은 모든 하위 프로젝트에 적용될 것이다. 만약 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면,  **allprojects**를 사용할 수 있다.
+
+
 ```
 subprojects {  
 	... 
@@ -73,44 +77,18 @@ subprojects {
   apply plugin: 'io.spring.dependency-management'  
   
   group = 'ai.clova.tropicana'
-	..  
-ext {  
-}  
-  
+	...  
+
 repositories {  
   mavenCentral()  
-  jcenter()  
-  maven { url "https://repo.spring.io/milestone" }  
-  maven { url "http://repo.spring.io/libs-milestone" }  
-  maven { url "http://repo.linecorp.com/content/repositories/releases/" }  
-  maven { url "http://repo.linecorp.com/content/repositories/snapshots/" }  
-  maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }  
+  ...
 }  
   
 dependencies {  
-  compile("org.slf4j:slf4j-api:${_versions.slf4j}")
-  compileOnly("org.projectlombok:lombok:${_versions.lombok}")
-  testCompileOnly("org.projectlombok:lombok:${_versions.lombok}")  
-  implementation "ai.clova.soda:soda:${revision()}${snapshotSuffix()}"  
-  annotationProcessor 'org.projectlombok:lombok'  
-  testAnnotationProcessor 'org.projectlombok:lombok'  
+	...
 }
 ...
 ```
-subprojects {  
-    group = "funfunstudy"    // 생성될 아티팩트의 그룹명  
-  
-    repositories {  
-        mavenCentral()  
-    }  
-  
-    dependencies {  
-    }  
-}
-
-**subprojects**내의 설정값들은 모든 하위 프로젝트에 적용될 것이다. 만약 최상위 프로젝트를 포함한 모든 하위 프로젝트에 공통으로 적용하고 싶다면,  **allprojects**를 사용할 수 있다.
-
-
 
 # [Separate language-specific source files](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_language_source_files)
 
@@ -214,8 +192,8 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 # References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM5NzQ3LDIwNTE0OTYyOTAsNDUxNDQwND
-I3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3LDYx
-MzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01NzcyNz
-MzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
+eyJoaXN0b3J5IjpbMTIyMTU0NTE0LDIwNTE0OTYyOTAsNDUxND
+QwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3
+LDYxMzIxNDcwNywxNzU3OTM2MjkyLC0xNzUyOTk1NjE0LC01Nz
+cyNzMzOTQsMjAyNTA0NjgyNiwxNzIzNTY2MzA1XX0=
 -->
