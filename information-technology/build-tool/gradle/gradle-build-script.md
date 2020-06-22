@@ -236,7 +236,7 @@ task other {
 
 `gradle -q` 특정 task를 파라미터로 넣지 않아도 디폴트 task를  수행합니다. 사실 `gradle clean run`로 빌드를 실행한 것과 마찬가지입니다. multi-project 빌드에선 모든 하위 프로젝트가 디폴트 task를 가질 수 있습니다. 만약 하위 프로젝트가 정의된 디폴트 tasks가 없다면, 부모 프로젝트에 정의된 디폴트 task를 사용하게 됩니다. 부모 프로젝트에 디폴트 task에도 없다면 실행하지 않습니다. 
 
-## [](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#configure-by-dag)[Configure by DAG](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#configure-by-dag)
+# [Configure by DAG](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#configure-by-dag)
 
 Gradle의 configuration phase가 끝나면, 수행해야할 모든 task를 알게 됩니다. Gradle은 이 정보를 사용하기 위해 hook을 제공합니다. 하나의 예로, tasks중에서 실행되어야할 release task를 확인할 수 있습니다. 덕분에 몇 가지 변수에 다른 값을 할당할 수도 있습니다. 
 
@@ -275,7 +275,7 @@ We release now
 
 이 예제는 `version`  변수가 execution에서만 읽히기 때문에 제대로 동작합니다. 따라서 실제 운영 빌드에선 어떤 곳에서도 configuration 과정에서 이 변수가 읽히는 일이 없도록 해야 합니다. 제대로 하지 않으면, 빌드 과정의 configuration과 execution 사이에서 하나의 변수 값이 서로 달라지는 불상사가 발생할지도 모릅니다. 
 
-## [External dependencies for the build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)
+# [External dependencies for the build script](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:build_script_external_dependencies)
 
 만약 빌드 스크립트가 외부 라이브러리들을 사용해야 한다면, 스크립트의 classpath에 추가하면 된다. `buildscript()`  메서드를 사용하면, classpath에 정의된 블럭을 보고 외부 라이브러리를 빌드한다. 
 
@@ -330,12 +330,9 @@ multi-project 빌드에서, 한 프로젝트의 `buildscript()`로 선언된 의
 
 [https://dynaticy.tistory.com/entry/Gradle-UserGuide-%EB%8F%84%EC%A0%84%EA%B8%B0-6-Build-Script-Basics?category=536334](https://dynaticy.tistory.com/entry/Gradle-UserGuide-%EB%8F%84%EC%A0%84%EA%B8%B0-6-Build-Script-Basics?category=536334)
 
-
-
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjIxNzYzOTEsNDk1NjI0Mzc4LC0xOD
-gxODcxNjA4LC0xNjc0NjUxNDg3LDE0MDUxODk5MTAsNzI0ODk4
-NzUzLDIxMzQ0NTAxNjEsLTE3ODUwMzMzOTAsMjEzMjg3MDcyN1
-19
+eyJoaXN0b3J5IjpbNzYzOTY5ODE3LDQ5NTYyNDM3OCwtMTg4MT
+g3MTYwOCwtMTY3NDY1MTQ4NywxNDA1MTg5OTEwLDcyNDg5ODc1
+MywyMTM0NDUwMTYxLC0xNzg1MDMzMzkwLDIxMzI4NzA3MjddfQ
+==
 -->
