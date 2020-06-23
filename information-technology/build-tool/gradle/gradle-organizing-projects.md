@@ -209,18 +209,10 @@ Base Plugin으로 추가되었습니다.
 
 `compileJava`
 : JDK 컴파일로러 생성된 Java 소스 파일들을 컴파일합니다. 
-프로젝트 의존성을 통한 classpath에 있는 프로젝트에 의한 `jar` tasks을 포함한 컴파일 classpath에 필요한 모든 tasks를 
+프로젝트 의존성을 통한 classpath에 있는 프로젝트에 의한 `jar` tasks을 포함한 컴파일 classpath에 필요한 모든 tasks가 필요합니다. 
 
-
-_Depends on_: All tasks which contribute to the compilation classpath, including  `jar`  tasks from projects that are on the classpath via project dependencies
-
-Compiles production Java source files using the JDK compiler.
-
-`processResources`  —  [Copy](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Copy.html)
-
-Copies production resources into the production resources directory.
-
-
+`processResources`
+: production resources을 production resources directory로 복사합니다.
 
     
 ## [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)
@@ -365,7 +357,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMDgxNjgzMywtMTQ5Mzc4MDAwMSwxND
+eyJoaXN0b3J5IjpbMTY4NjU0NzYzOCwtMTQ5Mzc4MDAwMSwxND
 MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
 MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
 EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
