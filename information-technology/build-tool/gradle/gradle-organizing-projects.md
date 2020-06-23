@@ -172,12 +172,9 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 이것만으로는 간단하지 않은 자바 프로젝트를 빌드하는데 충분치 않습니다.  왜냐하면 실제 동작시 사용할 의존성이 정리되어 있지 않기 때문입니다. 
 
 자바 라이브러리 플러그인은 위의 tasks를 활용하여 표준 [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)에 맞게 통합하였습니다.
+    
+## [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)
 
--   `jar`  is attached to  `assemble`  [[1](https://docs.gradle.org/current/userguide/building_java_projects.html#_footnotedef_1 "View footnote.")]
-    
--   `test`  is attached to  `check`
-    
-### [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)
 
 `clean`  —  `Delete`
 : 빌드 디렉토리와 그 안에 있는 모든 것을 삭제 합니다.
@@ -192,15 +189,10 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 `build`  — _lifecycle task_
 : 빌드 task를 수행하려면 먼저 `check`,  `assemble` tasks가 먼저 선행되어야 합니다. 빌드 task는 모든 테스트를 수행하고 아티팩트와 문서를 생성합니다. 
 
-`assemble`  —  _lifecycle task_
 
-Plugins and build authors should attach tasks that produce distributions and other consumable artifacts to this lifecycle task. For example,  `jar`  produces the consumable artifact for Java libraries. Attach tasks to this lifecycle task using  `assemble.dependsOn(_task_)`.
-
-`build`  — _lifecycle task_
-
-_Depends on_:  `check`,  `assemble`
-
-Intended to build everything, including running all tests, producing the production artifacts and generating documentation. You will probably rarely attach concrete tasks directly to  `build`  as  `assemble`  and  `check`  are typically more appropriate.
+-   `jar`  is attached to  `assemble`  [[1](https://docs.gradle.org/current/userguide/building_java_projects.html#_footnotedef_1 "View footnote.")]
+    
+-   `test`  is attached to  `check`
 
 
 
@@ -323,7 +315,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDQyODc3OSwtNTg1MDY4NjU0LDIwNT
+eyJoaXN0b3J5IjpbMTQzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNT
 c0ODMyMjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2
 LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5Nj
 Q3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYs
