@@ -173,6 +173,9 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 ### [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)
 
 `clean`  —  `Delete`
+: 빌드 디렉토리와 그 안에 있는 모든 것을 삭제 합니다.
+
+
 
 Deletes the build directory and everything in it, i.e. the path specified by the  [Project.getBuildDir()](https://docs.gradle.org/current/dsl/org.gradle.api.Project.html#org.gradle.api.Project:buildDir)  project property.
 
@@ -340,11 +343,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTUwODg3MTYsMTYzODM0OTEyLDg5ND
-Y4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0
-ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3Mj
-MwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcx
-LC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwND
-MyODY2OCwtMTg3NDkwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1
-MV19
+eyJoaXN0b3J5IjpbNjc1OTc0MDU4LDE2MzgzNDkxMiw4OTQ2OD
+cyMTgsMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMTA3ODk1NDg3
+LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgzMSw0NzIzMD
+c2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3MSwt
+NTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0LC05MDQzMj
+g2NjgsLTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTFd
+fQ==
 -->
