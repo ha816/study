@@ -214,7 +214,100 @@ Base Plugin으로 추가되었습니다.
 `processResources`
 : production resources을 production resources directory로 복사합니다.
 
-    
+## [Source sets](https://docs.gradle.org/current/userguide/java_plugin.html#source_sets)
+
+The plugin adds the following  [source sets](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets):
+
+`main`
+
+Contains the production source code of the project, which is compiled and assembled into a JAR.
+
+`test`
+
+Contains your test source code, which is compiled and executed using JUnit or TestNG. These are typically unit tests, but you can include any test in this source set as long as they all share the same compilation and runtime classpaths.
+
+### [](https://docs.gradle.org/current/userguide/java_plugin.html#sec:source_set_properties)[Source set properties](https://docs.gradle.org/current/userguide/java_plugin.html#sec:source_set_properties)
+
+The following table lists some of the important properties of a source set. You can find more details in the API documentation for  [SourceSet](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.SourceSet.html).
+
+`name`  — (read-only)  `String`
+
+The name of the source set, used to identify it.
+
+`output`  — (read-only)  [SourceSetOutput](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.SourceSetOutput.html)
+
+The output files of the source set, containing its compiled classes and resources.
+
+`output.classesDirs`  — (read-only)  [FileCollection](https://docs.gradle.org/current/javadoc/org/gradle/api/file/FileCollection.html)
+
+_Default value_:  `$buildDir/classes/java/$name`, e.g.  _build/classes/java/main_
+
+The directories to generate the classes of this source set into. May contain directories for other JVM languages, e.g.  _build/classes/kotlin/main_.
+
+`output.resourcesDir`  — `File`
+
+_Default value_:  `$buildDir/resources/$name`, e.g.  _build/resources/main_
+
+The directory to generate the resources of this source set into.
+
+`compileClasspath`  — [FileCollection](https://docs.gradle.org/current/javadoc/org/gradle/api/file/FileCollection.html)
+
+_Default value_:  `${name}CompileClasspath`  configuration
+
+The classpath to use when compiling the source files of this source set.
+
+`annotationProcessorPath`  — [FileCollection](https://docs.gradle.org/current/javadoc/org/gradle/api/file/FileCollection.html)
+
+_Default value_:  `${name}AnnotationProcessor`  configuration
+
+The processor path to use when compiling the source files of this source set.
+
+`runtimeClasspath`  — [FileCollection](https://docs.gradle.org/current/javadoc/org/gradle/api/file/FileCollection.html)
+
+_Default value_:  `$output`,  `${name}RuntimeClasspath`  configuration
+
+The classpath to use when executing the classes of this source set.
+
+`java`  — (read-only)  [SourceDirectorySet](https://docs.gradle.org/current/dsl/org.gradle.api.file.SourceDirectorySet.html)
+
+The Java source files of this source set. Contains only  `.java`  files found in the Java source directories, and excludes all other files.
+
+`java.srcDirs`  — `Set<File>`
+
+_Default value_:  `src/$name/java`, e.g.  _src/main/java_
+
+The source directories containing the Java source files of this source set. You can set this to any value that is described in  [this section](https://docs.gradle.org/current/userguide/working_with_files.html#sec:specifying_multiple_files).
+
+`java.outputDir`  — `File`
+
+_Default value_:  `$buildDir/classes/java/$name`, e.g.  _build/classes/java/main_
+
+The directory to generate compiled Java sources into. You can set this to any value that is described in  [this section](https://docs.gradle.org/current/userguide/working_with_files.html#sec:single_file_paths).
+
+`resources`  — (read-only)  [SourceDirectorySet](https://docs.gradle.org/current/dsl/org.gradle.api.file.SourceDirectorySet.html)
+
+The resources of this source set. Contains only resources, and excludes any  `.java`  files found in the resource directories. Other plugins, such as the  [Groovy Plugin](https://docs.gradle.org/current/userguide/groovy_plugin.html#groovy_plugin), exclude additional types of files from this collection.
+
+`resources.srcDirs`  — `Set<File>`
+
+_Default value_:  `[src/$name/resources]`
+
+The directories containing the resources of this source set. You can set this to any type of value that is described in  [this section](https://docs.gradle.org/current/userguide/working_with_files.html#sec:specifying_multiple_files).
+
+`allJava`  — (read-only)  [SourceDirectorySet](https://docs.gradle.org/current/dsl/org.gradle.api.file.SourceDirectorySet.html)
+
+_Default value_: Same as  `java`  property
+
+All Java files of this source set. Some plugins, such as the Groovy Plugin, add additional Java source files to this collection.
+
+`allSource`  — (read-only)  [SourceDirectorySet](https://docs.gradle.org/current/dsl/org.gradle.api.file.SourceDirectorySet.html)
+
+_Default value_: Sum of everything in the  `resources`  and  `java`  properties
+
+All source files of this source set of any language. This includes all resource files and all Java source files. Some plugins, such as the Groovy Plugin, add additional source files to this collection.
+
+### [](https://docs.gradle.org/current/userguide/java_plugin.html#sec:defining_new_source_sets)[Defining new source sets](https://docs.gradle.org/current/userguide/java_plugin.html#sec:defining_new_source_sets)
+ 
     
 ### [파일과 디렉토리 위치 바꾸기](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
 
@@ -334,11 +427,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njk4ODM3NzIsLTE0OTM3ODAwMDEsMT
-QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
-OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
-IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
-ODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNj
-E1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2
-NDRdfQ==
+eyJoaXN0b3J5IjpbMTQ0ODI5MDE2LC0xNDkzNzgwMDAxLDE0Mz
+I1NTc0MjYsLTU4NTA2ODY1NCwyMDU3NDgzMjIxLDE2MzgzNDkx
+Miw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMT
+A3ODk1NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgz
+MSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNT
+Q3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0
+XX0=
 -->
