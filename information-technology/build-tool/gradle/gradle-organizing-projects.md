@@ -160,10 +160,9 @@ Compiling both your production and test code can be trivially easy if you follow
     
 5.  Run the  `compileJava`  task for the production code and  `compileTestJava`  for the tests
     
+### [파일과 디렉토리 위치 바꾸기Customizing file and directory locations](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
 
-Other JVM language plugins, such as the one for  [Groovy](https://docs.gradle.org/current/userguide/groovy_plugin.html#groovy_plugin), follow the same pattern of conventions. We recommend that you follow these conventions wherever possible, but you don’t have to. There are several options for customization, as you’ll see next.
 
-### [](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)[Customizing file and directory locations](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
 
 Imagine you have a legacy project that uses an  _src_  directory for the production code and  _test_  for the test code. The conventional directory structure won’t work, so you need to tell Gradle where to find the source files. You do that via source set configuration.
 
@@ -190,6 +189,13 @@ sourceSets {
     }
 }
 ```
+
+sourceSets {  
+  main {  
+  resources {  
+  srcDirs "src/main/resources", "src/main/resources-${profile}"  
+  }  
+ }}
 
 Now Gradle will only search directly in  _src_  and  _test_  for the respective source code. What if you don’t want to override the convention, but simply want to  _add_  an extra source directory, perhaps one that contains some third-party source code you want to keep separate? The syntax is similar:
 
@@ -282,11 +288,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1OTk2MDA2NywtMjEwNzg5NTQ4NywyOD
-I4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4MzEsNDcyMzA3NjYs
-MjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MTU0NzAxNzEsLTU3Nz
-Q5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4
-LC0xODc0OTA2NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxOD
-A5NzM0NiwyMDUxNDk2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzZd
-fQ==
+eyJoaXN0b3J5IjpbODEyMDEyNjk4LC0yMTA3ODk1NDg3LDI4Mj
+gzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgzMSw0NzIzMDc2Niwy
+MTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3MSwtNTc3ND
+kwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0LC05MDQzMjg2Njgs
+LTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MD
+k3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNl19
+
 -->
