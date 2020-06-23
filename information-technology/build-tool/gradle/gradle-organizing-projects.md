@@ -164,15 +164,46 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 이것만으로는 간단하지 않은 자바 프로즉테를 빌드하는데는 충분치 않습니다.  왜냐하면 실제 동작시 사용할 의존성이 정리되어 있지 않기 때문입니다. 
 
-자바 라이브러리 플러그인은 위의 tasks를 표준 [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)에 맞게 
+자바 라이브러리 플러그인은 위의 tasks를 표준 [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)에 맞게 통합하였습니다.
 
 -   `jar`  is attached to  `assemble`  [[1](https://docs.gradle.org/current/userguide/building_java_projects.html#_footnotedef_1 "View footnote.")]
     
 -   `test`  is attached to  `check`
     
 
-The rest of the chapter explains the different avenues for customizing the build to your requirements. You will also see later how to adjust the build for libraries, applications, web apps and enterprise apps.
+## [Task](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)
 
+`clean`  —  `Delete`
+
+Deletes the build directory and everything in it, i.e. the path specified by the  [Project.getBuildDir()](https://docs.gradle.org/current/dsl/org.gradle.api.Project.html#org.gradle.api.Project:buildDir)  project property.
+
+`check`  — _lifecycle task_
+
+Plugins and build authors should attach their verification tasks, such as ones that run tests, to this lifecycle task using  `check.dependsOn(_task_)`.
+
+`assemble`  —  _lifecycle task_
+
+Plugins and build authors should attach tasks that produce distributions and other consumable artifacts to this lifecycle task. For example,  `jar`  produces the consumable artifact for Java libraries. Attach tasks to this lifecycle task using  `assemble.dependsOn(_task_)`.
+
+`build`  — _lifecycle task_
+
+_Depends on_:  `check`,  `assemble`
+
+Intended to build everything, including running all tests, producing the production artifacts and generating documentation. You will probably rarely attach concrete tasks directly to  `build`  as  `assemble`  and  `check`  are typically more appropriate.
+
+`build_Configuration_`  — task rule
+
+Assembles those artifacts attached to the named configuration. For example,  `buildArchives`  will execute any task that is required to create any artifact attached to the  `archives`  configuration.
+
+`upload_Configuration_`  — task rule
+
+Does the same as  `build_Configuration_`, but also uploads all the artifacts attached to the given configuration.
+
+`clean_Task_`  — task rule
+
+Removes the  [defined outputs](https://docs.gradle.org/current/userguide/more_about_tasks.html#sec:task_inputs_outputs)  of a task, e.g.  `cleanJar`  will delete the JAR file produced by the  `jar`  task of the Java Plugin.
+
+## [](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_plugin_configurations)[D](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_plugin_configurations)
 
 ## [Compiling](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:compile)
 
@@ -310,11 +341,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MDQ5ODcwLDg5NDY4NzIxOCwyMTM5OD
-k0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAs
-MTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2Nz
-I5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEs
-LTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3ND
-kwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDZd
-fQ==
+eyJoaXN0b3J5IjpbLTE4MDk1NjE2ODYsODk0Njg3MjE4LDIxMz
+k4OTQ1MDYsMTMwMDUzNTc5MSwtMjEwNzg5NTQ4NywyODI4Mzky
+MCwxNzk2NDc5MzYwLDE2NDY2MjE4MzEsNDcyMzA3NjYsMjEyOD
+Y3MjkzNiwtMTgyNDUxMjEyNiw2MTU0NzAxNzEsLTU3NzQ5MDM0
+MSwtOTMzNjIxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4LC0xOD
+c0OTA2NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxODA5NzM0
+Nl19
 -->
