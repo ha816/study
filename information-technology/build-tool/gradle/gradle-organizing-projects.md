@@ -151,7 +151,14 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 만약 자바 라이브러리 플로그인을 적용한다면 아래 tasks를 바로 사용할 수 있습니다.
 
 `compileJava` task
-:  
+:  src/main/java 하위에 모든 자바 소스 파일을 컴파일
+
+`compileTestJava` task
+:  src/test/java 하위에 모든 소스 파일을 컴파일
+
+`compileTestJava` task
+:  src/test/java 하위에 모든 소스 파일을 컴파일
+
 
 -   A  `compileJava`  task that compiles all the Java source files under  _src/main/java_
     
@@ -314,7 +321,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3OTM0NTI2MCwyMTM5ODk0NTA2LDEzMD
+eyJoaXN0b3J5IjpbLTIwODk5OTQ4OSwyMTM5ODk0NTA2LDEzMD
 A1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2
 MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4Mj
 Q1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEy
