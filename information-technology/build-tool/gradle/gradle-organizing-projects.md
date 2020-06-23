@@ -216,15 +216,13 @@ Base Plugin으로 추가되었습니다.
 
 ## [Source sets](https://docs.gradle.org/current/userguide/java_plugin.html#source_sets)
 
-SourceSet은 특정 소스와 자원 파일들의 논리적인 그룹을 말합니다. 즉 실제 소스와 자원을 가지고 있는 것이 아니라 그것들의 위치와 같은 논리
-
-Java Plugin에서는 main과 test SourceSet을 사용합니다. 
+SourceSet은 특정 소스와 자원 파일들의 논리적인 그룹을 말합니다. 즉 실제 소스와 자원을 가지고 있는 것이 아니라 그것들의 위치와 같은 논리적인 정보만을 가집니다. Java Plugin에서는 main과 test source set을 사용합니다. 
 
 >main 
->컴파일되고 통합되어 JAR 파일로 만들어진 프로젝트의 production 소스코드를 포함합니다. 
+>컴파일되고 통합되어 JAR 파일로 만들어질 프로젝트의 production 소스 코드와 자원을 정의합니다.
 
 >test
-> 컴파일되고 JUnit 또는 TestNG으로 실행될 테스트 소스 코드를 포함합니다. 일반적으로 unit test겠지만, 어떤 다른 test도 포함시킬 수 있습니다. 
+> 컴파일되고 JUnit 또는 TestNG으로 실행될 테스트 소스 코드를 정의합니다. 일반적으로 unit test겠지만, 어떤 다른 test도 포함시킬 수 있습니다. 
 
 ```groovy
 //build.gradle
@@ -237,7 +235,7 @@ sourceSets {
 }
 ```
 
-위 코드는 main sourceSets의 설정 중 resources.srcDirs를 수정한다. 기본 값은 `[src/$name/resources]`으로 되어있다. 즉 `[src/main/resources]`이고 main source set의 자원이 있는 디렉토리를 말한다. 
+위 코드는 main sourceSets의 설정 중 resources.srcDirs를 수정합니다. 기본 값은 `[src/$name/resources]`으로 되어있ㅅ. 즉 `[src/main/resources]`이고 main source set의 자원이 있는 디렉토리를 말한다. 
 
 더욱 상세한 설정값들은 [https://docs.gradle.org/current/userguide/java_plugin.html](https://docs.gradle.org/current/userguide/java_plugin.html)을 참고합시다. 
 
@@ -442,11 +440,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTk1MzgsLTEyODQ3ODA2NSwxNDQ4Mj
-kwMTYsLTE0OTM3ODAwMDEsMTQzMjU1NzQyNiwtNTg1MDY4NjU0
-LDIwNTc0ODMyMjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5OD
-k0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAs
-MTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2Nz
-I5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDFd
-fQ==
+eyJoaXN0b3J5IjpbMjMxOTU0OTE3LC0xMjg0NzgwNjUsMTQ0OD
+I5MDE2LC0xNDkzNzgwMDAxLDE0MzI1NTc0MjYsLTU4NTA2ODY1
+NCwyMDU3NDgzMjIxLDE2MzgzNDkxMiw4OTQ2ODcyMTgsMjEzOT
+g5NDUwNiwxMzAwNTM1NzkxLC0yMTA3ODk1NDg3LDI4MjgzOTIw
+LDE3OTY0NzkzNjAsMTY0NjYyMTgzMSw0NzIzMDc2NiwyMTI4Nj
+cyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3MSwtNTc3NDkwMzQx
+XX0=
 -->
