@@ -165,7 +165,14 @@ Top-Down 방식으로 중요한 task를 알아보겠습니다.
 Base Plugin으로 부터 왔습니다.
 
 `check`
-: 테스트를 수행해보는 것과 같은 verification tasks들을 수행하는 것을 통합하는 task입니다. 몇몇 플러그인은 그들만의 verification tasks를 
+: 테스트를 수행해보는 것과 같은 verification tasks들을 수행하는 것을 통합하는 task입니다. 몇몇 플러그인은 그들만의 verification tasks를 `check` task에 넣기도 합니다. 
+Base Plugin으로 부터 왔습니다.
+
+
+* `check`
+	* 테스트를 수행해보는 것과 같은 verification tasks들을 수행하는 것을 통합하는 task입니다. 몇몇 플러그인은 그들만의 verification tasks를 `check` task에 넣기도 합니다. 
+Base Plugin으로 부터 왔습니다.
+
 
 _Depends on_:  `test`
 
@@ -411,11 +418,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMDIwMjEyMCwtMTQ5Mzc4MDAwMSwxND
-MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
-MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
-EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
-MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MT
-U0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0
-NF19
+eyJoaXN0b3J5IjpbLTEwODYzNTkyMDUsLTE0OTM3ODAwMDEsMT
+QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
+OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
+IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
+ODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNj
+E1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2
+NDRdfQ==
 -->
