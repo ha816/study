@@ -229,11 +229,8 @@ sourceSets {
 }
 ```
 
-위 코드는 main sourceSets의 설정 중 resources.srcDirs를 수정한다. 기본 값은 `[src/$name/resources]` 즉 `[src/main/resources]`이므로 해당 디렉토
+위 코드는 main sourceSets의 설정 중 resources.srcDirs를 수정한다. 기본 값은 `[src/$name/resources]`으로 되어있다. 즉 `[src/main/resources]`이고 main sourceset의 자원을 
 
-`resources.srcDirs`  — `Set<File>`
-
-_Default value_:  `[src/$name/resources]`
 
 The directories containing the resources of this source set. You can set this to any type of value that is described in  [this section](https://docs.gradle.org/current/userguide/working_with_files.html#sec:specifying_multiple_files).
 
@@ -446,11 +443,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTQzNzQyNzAsMTQ0ODI5MDE2LC0xND
-kzNzgwMDAxLDE0MzI1NTc0MjYsLTU4NTA2ODY1NCwyMDU3NDgz
-MjIxLDE2MzgzNDkxMiw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMz
-AwNTM1NzkxLC0yMTA3ODk1NDg3LDI4MjgzOTIwLDE3OTY0Nzkz
-NjAsMTY0NjYyMTgzMSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xOD
-I0NTEyMTI2LDYxNTQ3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjEx
-MjBdfQ==
+eyJoaXN0b3J5IjpbMTczOTg4NTY2NywxNDQ4MjkwMTYsLTE0OT
+M3ODAwMDEsMTQzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMy
+MjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMD
+A1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2
+MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4Mj
+Q1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEy
+MF19
 -->
