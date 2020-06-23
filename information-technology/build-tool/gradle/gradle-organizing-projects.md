@@ -162,9 +162,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 `jar`
 : 컴파일된 main 클래스들과 src/main/resources의 resource를 합쳐 단일 jar 파일로 합침
 
-이것만으로는 간단하지 않은 자바 프로즉테를 빌드하는데는 충분치 않습니다.  왜냐하면 실제 동작시 사용할 의존성이
-
-This isn’t sufficient to build any non-trivial Java project — at the very least, you’ll probably have some file dependencies. But it means that your build script only needs the information that is specific to  _your_  project.
+이것만으로는 간단하지 않은 자바 프로즉테를 빌드하는데는 충분치 않습니다.  왜냐하면 실제 동작시 사용할 의존성이 정리되어 있지 않기 때문입니다. 
 
 Although the properties in the example are optional, we recommend that you specify them in your projects. The compatibility options mitigate against problems with the project being built with different Java compiler versions, and the version string is important for tracking the progression of the project. The project version is also used in archive names by default.
 
@@ -314,11 +312,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NTUyMTU4OCwyMTM5ODk0NTA2LDEzMD
-A1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2
-MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4Mj
-Q1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEy
-MCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2OCwtMT
-Q4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MTQ5NjI5
-MF19
+eyJoaXN0b3J5IjpbODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMD
+UzNTc5MSwtMjEwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYw
+LDE2NDY2MjE4MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyND
+UxMjEyNiw2MTU0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIw
+LDkyMjYxOTY0NCwtOTA0MzI4NjY4LC0xODc0OTA2NDY4LC0xND
+g2MjgxOTkxLDk5ODY5NTUxLDUxODA5NzM0NiwyMDUxNDk2Mjkw
+XX0=
 -->
