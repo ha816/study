@@ -67,7 +67,7 @@ Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다
 
 최상위 프로젝트의 build.gradle 파일에 설정된 내용은 모든 하위 프로젝트에 공통적으로 적용할 수 있습니다. 
 
-buildscript 블럭은 기본적으로, Gradle 스스로가 빌드를 위한 변수, repositories, dependencies등을 설정할 수 있습니다. 
+buildscript 블럭은 기본적으로, Gradle 스스로의 빌드를 위한 변수, repositories, dependencies등을 설정하는데 사용합니다.
 
 여기서 Gradle 자신이 아닌 다른 모듈에 대한 의존성은 buildscript 블럭에 적으면 안됩니다.
 
@@ -225,11 +225,11 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA4Mzc5NTUsMTc5NjQ3OTM2MCwxNj
-Q2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIx
-MjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5Mj
-I2MTk2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2OCwtMTQ4NjI4
-MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MTQ5NjI5MCw0NT
-E0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcx
-MjddfQ==
+eyJoaXN0b3J5IjpbLTgyOTU1MTU0NiwxNzk2NDc5MzYwLDE2ND
+Y2MjE4MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEy
+Niw2MTU0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMj
+YxOTY0NCwtOTA0MzI4NjY4LC0xODc0OTA2NDY4LC0xNDg2Mjgx
+OTkxLDk5ODY5NTUxLDUxODA5NzM0NiwyMDUxNDk2MjkwLDQ1MT
+Q0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEy
+N119
 -->
