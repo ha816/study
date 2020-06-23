@@ -148,8 +148,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 ## Building Java
 
-만약 자바 라이브러리 플로그인을 적용한다면 아래 tasks를 바로 사용할 수 있습니다.
-
+만약 자바 라이브러리 플로그인을 적용한다면 아래 tasks를 바로 사용할 수 있습니다
 `compileJava`
 :  src/main/java 하위에 모든 자바 소스 파일을 컴파일
 
@@ -340,11 +339,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5OD
-k0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAs
-MTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2Nz
-I5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEs
-LTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3ND
-kwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDZd
+eyJoaXN0b3J5IjpbOTQ1MjY0MTIyLDE2MzgzNDkxMiw4OTQ2OD
+cyMTgsMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMTA3ODk1NDg3
+LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgzMSw0NzIzMD
+c2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3MSwt
+NTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0LC05MDQzMj
+g2NjgsLTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTFd
 fQ==
 -->
