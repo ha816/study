@@ -202,7 +202,18 @@ Base Plugin으로 추가되었습니다.
 : main  source set으로 설정된 classes와 resources를 기반으로, 생성된 JAR file을 모읍니다.
 `classes`가 필요합니다.
 
+### 
 
+`classes`
+: 단순히 다른 tasks에 의지하는 통합하는 task.	어쩌면 다른 플러그인이 추가적인 컴파일 task를 추가할지도 모릅니다.
+`compileJava`,  `processResources` task
+
+
+
+
+_Depends on_:  `compileJava`,  `processResources`
+
+This is an aggregate task that just depends on other tasks. Other plugins may attach additional compilation tasks to it.
 
 
 
@@ -371,7 +382,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODAwMTQ5NDgsLTE0OTM3ODAwMDEsMT
+eyJoaXN0b3J5IjpbLTIxMjAxMjU5NTQsLTE0OTM3ODAwMDEsMT
 QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
 OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
 IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
