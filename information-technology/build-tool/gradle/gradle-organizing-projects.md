@@ -229,7 +229,7 @@ sourceSets {
 }
 ```
 
-위 코드의 의미를 해석해보면, main sourceSets을 
+위 코드는 main sourceSets의 설정 중 resources.srcDirs를 수정한다. 기본 값은 `[src/$name/resources]` 즉 `[src/main/resources]`이므로 해당 디렉토
 
 `resources.srcDirs`  — `Set<File>`
 
@@ -446,11 +446,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNjA2NzIsMTQ0ODI5MDE2LC0xNDkzNz
-gwMDAxLDE0MzI1NTc0MjYsLTU4NTA2ODY1NCwyMDU3NDgzMjIx
-LDE2MzgzNDkxMiw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMzAwNT
-M1NzkxLC0yMTA3ODk1NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAs
-MTY0NjYyMTgzMSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NT
-EyMTI2LDYxNTQ3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjBd
-fQ==
+eyJoaXN0b3J5IjpbLTEzOTQzNzQyNzAsMTQ0ODI5MDE2LC0xND
+kzNzgwMDAxLDE0MzI1NTc0MjYsLTU4NTA2ODY1NCwyMDU3NDgz
+MjIxLDE2MzgzNDkxMiw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMz
+AwNTM1NzkxLC0yMTA3ODk1NDg3LDI4MjgzOTIwLDE3OTY0Nzkz
+NjAsMTY0NjYyMTgzMSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xOD
+I0NTEyMTI2LDYxNTQ3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjEx
+MjBdfQ==
 -->
