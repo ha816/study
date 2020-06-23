@@ -39,16 +39,12 @@ Database는 Collection들의 물리적인 컨테이너입니다. 각 Database는
 
 # Operations
 
-`launchd` 런치를 위한 데몬에게 `mongod` 몽고 DB를 위한 데몬을 시작하게 
-To have  `launchd`  start  `mongod`  immediately and also restart at login, use:
+`launchd` 런치를 위한 데몬에게 `mongod` 몽고 DB를 위한 데몬을 시작 또는 다시 시작하게 하고 싶다면 아래 명령어를 사용합시다. 
 
 ```
-$ brew services start mongodb-community
-
+brew services start mongodb-community
 ```
-
-If you manage  `mongod`  as a service it will use the default paths listed above. To stop the server instance use:
-
+반대로 서버 인스턴스를 멈추고 싶다면 아래 명령어를 수행합시다. 
 ```
 $ brew services stop mongodb-community
 ```
@@ -56,8 +52,10 @@ $ brew services stop mongodb-community
 
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM4NjA5NTEsLTIwNTcxNzA3OTAsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbNTQ2MzY3NDIwLC0yMDU3MTcwNzkwLDczMD
+k5ODExNl19
 -->
