@@ -84,8 +84,6 @@ db.inventory.insertMany([
 ```
 `insertMany()` 는 새로 삽입된 문서의 `_id`값을 포함한 문서를 반환합니다. 
 
-db.inventory.find( {} )
-
 ## Insert Behavior[](https://docs.mongodb.com/manual/tutorial/insert-documents/#insert-behavior "Permalink to this headline")
 
 ### Collection Creation[](https://docs.mongodb.com/manual/tutorial/insert-documents/#collection-creation "Permalink to this headline")
@@ -119,6 +117,6 @@ SEE ALSO
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzODAwMTAxNCwtMjA1NzE3MDc5MCw3Mz
+eyJoaXN0b3J5IjpbMTA5MTMzNDU5OCwtMjA1NzE3MDc5MCw3Mz
 A5OTgxMTZdfQ==
 -->
