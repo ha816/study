@@ -146,6 +146,12 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
             └── Utils.kt
 ```
 
+# Java Plugin
+
+The Java plugin adds Java compilation along with testing and bundling capabilities to a project. It serves as the basis for many of the other JVM language Gradle plugins. You can find a comprehensive introduction and overview to the Java Plugin in the  [Building Java Projects](https://docs.gradle.org/current/userguide/building_java_projects.html#building_java_projects)  chapter.
+
+As indicated above, this plugin adds basic building blocks for working with JVM projects. Its feature set has been superseded by other plugins, offering more features based on your project type. Instead of applying it directly to your project, you should look into the  `java-library`  or  `application`  plugins or one of the supported alternative JVM language.
+
 
 ## [Separate source files per test type](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
 
@@ -214,11 +220,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2Nj
-IxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYs
-NjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MT
-k2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2OCwtMTQ4NjI4MTk5
-MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MTQ5NjI5MCw0NTE0ND
-A0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcxMjdd
-fQ==
+eyJoaXN0b3J5IjpbLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5Nj
+Q3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYs
+LTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMz
+YyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2
+OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MT
+Q5NjI5MCw0NTE0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0
+XX0=
 -->
