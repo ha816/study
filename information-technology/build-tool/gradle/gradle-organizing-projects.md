@@ -171,7 +171,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 이것만으로는 간단하지 않은 자바 프로젝트를 빌드하는데 충분치 않습니다.  왜냐하면 실제 동작시 사용할 의존성이 정리되어 있지 않기 때문입니다. 
 
-자바 라이브러리 플러그인은 위의 tasks를 표준 [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)에 맞게 통합하였습니다.
+자바 라이브러리 플러그인은 위의 tasks를 활용하여 표준 [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)에 맞게 통합하였습니다.
 
 -   `jar`  is attached to  `assemble`  [[1](https://docs.gradle.org/current/userguide/building_java_projects.html#_footnotedef_1 "View footnote.")]
     
@@ -323,7 +323,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTAzNzQyMiwtNTg1MDY4NjU0LDIwNT
+eyJoaXN0b3J5IjpbMjA5MDQyODc3OSwtNTg1MDY4NjU0LDIwNT
 c0ODMyMjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2
 LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5Nj
 Q3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYs
