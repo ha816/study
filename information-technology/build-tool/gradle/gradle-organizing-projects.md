@@ -146,9 +146,10 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
             └── Utils.kt
 ```
 
-## Building Java
+## Java 
 
-만약 자바 라이브러리 플로그인을 적용한다면 아래 tasks를 바로 사용할 수 있습니다
+만약 자바 라이브러리 플러그인을 적용한다면 아래 tasks를 바로 사용할 수 있습니다.
+
 `compileJava`
 :  src/main/java 하위에 모든 자바 소스 파일을 컴파일
 
@@ -161,7 +162,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 `jar`
 : 컴파일된 main 클래스들과 src/main/resources의 resource를 합쳐 단일 jar 파일로 합침
 
-이것만으로는 간단하지 않은 자바 프로즉테를 빌드하는데는 충분치 않습니다.  왜냐하면 실제 동작시 사용할 의존성이 정리되어 있지 않기 때문입니다. 
+이것만으로는 간단하지 않은 자바 프로젝트를 빌드하는데 충분치 않습니다.  왜냐하면 실제 동작시 사용할 의존성이 정리되어 있지 않기 때문입니다. 
 
 자바 라이브러리 플러그인은 위의 tasks를 표준 [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)에 맞게 통합하였습니다.
 
@@ -339,11 +340,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ1MjY0MTIyLDE2MzgzNDkxMiw4OTQ2OD
-cyMTgsMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMTA3ODk1NDg3
-LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgzMSw0NzIzMD
-c2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3MSwt
-NTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0LC05MDQzMj
-g2NjgsLTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTFd
-fQ==
+eyJoaXN0b3J5IjpbLTIwMTUwODg3MTYsMTYzODM0OTEyLDg5ND
+Y4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0
+ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3Mj
+MwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcx
+LC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwND
+MyODY2OCwtMTg3NDkwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1
+MV19
 -->
