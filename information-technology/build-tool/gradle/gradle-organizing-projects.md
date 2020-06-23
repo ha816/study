@@ -215,29 +215,6 @@ Base Plugin으로 추가되었습니다.
 : production resources을 production resources directory로 복사합니다.
 
     
-## [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)
-
-
-`clean`  —  `Delete`
-: 빌드 디렉토리와 그 안에 있는 모든 것을 삭제 합니다.
-
-`check`  — _lifecycle task_
-: 플러그인과 빌드 작성자는 테스트를 수행했다는 것과 같은 verification tasks과정을 거칩니다.
-
-`assemble`  —  _lifecycle task_
-: 플러그인과 빌드 작성자는 이 lifecycle task를 위해서 생성된 작업물을 모아야 합니다.
-
-
-`build`  — _lifecycle task_
-: 빌드 task를 수행하려면 먼저 `check`,  `assemble` tasks가 먼저 선행되어야 합니다. 빌드 task는 모든 테스트를 수행하고 아티팩트와 문서를 생성합니다. 
-
-
--   `jar`  is attached to  `assemble`  [[1](https://docs.gradle.org/current/userguide/building_java_projects.html#_footnotedef_1 "View footnote.")]
-    
--   `test`  is attached to  `check`
-
-
-
     
 ### [파일과 디렉토리 위치 바꾸기](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
 
@@ -357,11 +334,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NjU0NzYzOCwtMTQ5Mzc4MDAwMSwxND
-MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
-MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
-EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
-MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MT
-U0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0
-NF19
+eyJoaXN0b3J5IjpbLTE4Njk4ODM3NzIsLTE0OTM3ODAwMDEsMT
+QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
+OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
+IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
+ODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNj
+E1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2
+NDRdfQ==
 -->
