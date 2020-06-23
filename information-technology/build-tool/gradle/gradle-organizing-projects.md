@@ -135,7 +135,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 아래 소스 트리는 자바와 코틀린 소스 파일들을 가지고 있습니다. 자바 파일은 `src/main/java`에 있고 Kotlin 파일은 `src/main/kotlin`에 있습니다.
 
-```groovy.
+```groovy
 ├── build.gradle
 ├── settings.gradle
 └── src
@@ -221,6 +221,16 @@ Java Plugin에서는 아래 두가지 종류의 SourceSet을 추가했다.
 
 >main SourceSet
 >컴파일되고 통합되어 JAR 파일로 만들어진 프로젝트의 production 소스코드를 포함합니다. 
+
+
+sourceSets {  
+  main {  
+  resources {  
+  srcDirs "src/main/resources", "src/main/resources-${profile}"  
+  }  
+ }}
+
+
 
 Contains the production source code of the project, which is compiled and assembled into a JAR.
 
@@ -429,7 +439,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjQ2MzA5NiwxNDQ4MjkwMTYsLTE0OT
+eyJoaXN0b3J5IjpbMTIzOTAwNjkxMiwxNDQ4MjkwMTYsLTE0OT
 M3ODAwMDEsMTQzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMy
 MjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMD
 A1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2
