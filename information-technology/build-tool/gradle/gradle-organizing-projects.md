@@ -235,7 +235,10 @@ sourceSets {
 }
 ```
 
-위 코드는 main sourceSets의 설정 중 resources.srcDirs를 수정합니다. 기본 값은 `[src/$name/resources]`으로 되어있ㅅ. 즉 `[src/main/resources]`이고 main source set의 자원이 있는 디렉토리를 말한다. 
+위 코드는 main sourceSets의 설정 중 resources.srcDirs를 수정합니다. 기본 값은 `[src/$name/resources]`으로 되어있습니다. 즉 원래대로라면 `[src/main/resources]`이  main source set에서 사용할 자원이 있는 디렉토리입니다. 
+
+하지만 위 코드로 
+
 
 더욱 상세한 설정값들은 [https://docs.gradle.org/current/userguide/java_plugin.html](https://docs.gradle.org/current/userguide/java_plugin.html)을 참고합시다. 
 
@@ -440,11 +443,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMxOTU0OTE3LC0xMjg0NzgwNjUsMTQ0OD
-I5MDE2LC0xNDkzNzgwMDAxLDE0MzI1NTc0MjYsLTU4NTA2ODY1
-NCwyMDU3NDgzMjIxLDE2MzgzNDkxMiw4OTQ2ODcyMTgsMjEzOT
-g5NDUwNiwxMzAwNTM1NzkxLC0yMTA3ODk1NDg3LDI4MjgzOTIw
-LDE3OTY0NzkzNjAsMTY0NjYyMTgzMSw0NzIzMDc2NiwyMTI4Nj
-cyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3MSwtNTc3NDkwMzQx
-XX0=
+eyJoaXN0b3J5IjpbLTQ1ODM1NjgxOSwtMTI4NDc4MDY1LDE0ND
+gyOTAxNiwtMTQ5Mzc4MDAwMSwxNDMyNTU3NDI2LC01ODUwNjg2
+NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5MTIsODk0Njg3MjE4LDIxMz
+k4OTQ1MDYsMTMwMDUzNTc5MSwtMjEwNzg5NTQ4NywyODI4Mzky
+MCwxNzk2NDc5MzYwLDE2NDY2MjE4MzEsNDcyMzA3NjYsMjEyOD
+Y3MjkzNiwtMTgyNDUxMjEyNiw2MTU0NzAxNzEsLTU3NzQ5MDM0
+MV19
 -->
