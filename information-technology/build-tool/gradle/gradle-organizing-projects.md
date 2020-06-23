@@ -175,7 +175,7 @@ Base Plugin으로 부터 왔습니다.
 Base Plugin으로 추가되었습니다. 
 `jar` task와 `archives`  configuration로 정의된 아티팩트를 생성하는 모든 다른 task가 필요합니다. 
 
-### Java Plugin Tasks
+###  Test Tasks
 
 `test` 
 : JUnit 또는 TestNG를 통해서 unit 테스트를 수행
@@ -186,6 +186,7 @@ Base Plugin으로 추가되었습니다.
 
 `compileTestJava` 
 : JDK 컴파일러로 test 자바 소스 파일을 컴파일 합니다.
+기본적으로 src/test/java 하위에 모든 소스 파일을 컴파일합니다.
 `classes` 와 test 컴파일 classpath를 제공하는 모든 tasks를 필요로 합니다.
 
 `processTestResources`
@@ -193,11 +194,15 @@ Base Plugin으로 추가되었습니다.
 
 
 
+
+
+
+
 `compileJava`
 :  src/main/java 하위에 모든 자바 소스 파일을 컴파일
 
 `compileTestJava`
-:  src/test/java 하위에 모든 소스 파일을 컴파일
+:  
 
 `test`
 :  src/test/java의 테스트를 수행
@@ -358,11 +363,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzk3MTA2MDQsLTE0OTM3ODAwMDEsMT
-QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
-OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
-IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
-ODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNj
-E1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2
-NDRdfQ==
+eyJoaXN0b3J5IjpbLTQ5MTU4NjQ5MSwtMTQ5Mzc4MDAwMSwxND
+MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
+MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
+EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
+MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MT
+U0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0
+NF19
 -->
