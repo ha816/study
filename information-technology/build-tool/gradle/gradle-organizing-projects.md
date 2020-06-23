@@ -216,7 +216,17 @@ Base Plugin으로 추가되었습니다.
 
 ## [Source sets](https://docs.gradle.org/current/userguide/java_plugin.html#source_sets)
 
-SourceSet은 소스와 자원 파일들의 그룹이다. Java Plugin에서는 main과 test SourceSet을 사용합니다. 
+SourceSet은 소스와 자원 파일들의 그룹입니다. Java Plugin에서는 main과 test SourceSet을 사용합니다. 
+
+>main 
+>컴파일되고 통합되어 JAR 파일로 만들어진 프로젝트의 production 소스코드를 포함합니다. 
+
+>test
+> JUnit 또는 TestNG
+Contains your test source code, which is compiled and executed using JUnit or TestNG. These are typically unit tests, but you can include any test in this source set as long as they all share the same compilation and runtime classpaths.
+
+
+
 
 ```groovy
 //build.gradle
@@ -231,14 +241,7 @@ sourceSets {
 
 위 코드는 main sourceSets의 설정 중 resources.srcDirs를 수정한다. 기본 값은 `[src/$name/resources]`으로 되어있다. 즉 `[src/main/resources]`이고 main source set의 자원이 있는 디렉토리를 말한다. 
 
-더욱 상세한 설정값들은 [https://docs.gradle.org/current/userguide/java_plugin.html](https://docs.gradle.org/current/userguide/java_plugin.html)
-
->main 
->컴파일되고 통합되어 JAR 파일로 만들어진 프로젝트의 production 소스코드를 포함합니다. 
-
-`test`
-
-Contains your test source code, which is compiled and executed using JUnit or TestNG. These are typically unit tests, but you can include any test in this source set as long as they all share the same compilation and runtime classpaths.
+더욱 상세한 설정값들은 [https://docs.gradle.org/current/userguide/java_plugin.html](https://docs.gradle.org/current/userguide/java_plugin.html)을 참고합시다. 
 
 ### [](https://docs.gradle.org/current/userguide/java_plugin.html#sec:source_set_properties)[Source set properties](https://docs.gradle.org/current/userguide/java_plugin.html#sec:source_set_properties)
 
@@ -441,7 +444,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDg2NzgyODIsMTQ0ODI5MDE2LC0xND
+eyJoaXN0b3J5IjpbLTE4ODc1MDE0NjMsMTQ0ODI5MDE2LC0xND
 kzNzgwMDAxLDE0MzI1NTc0MjYsLTU4NTA2ODY1NCwyMDU3NDgz
 MjIxLDE2MzgzNDkxMiw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMz
 AwNTM1NzkxLC0yMTA3ODk1NDg3LDI4MjgzOTIwLDE3OTY0Nzkz
