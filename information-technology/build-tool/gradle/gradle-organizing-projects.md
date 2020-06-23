@@ -207,6 +207,19 @@ Base Plugin으로 추가되었습니다.
 : 단순히 다른 tasks에 의지하는 통합하는 task.	어쩌면 다른 플러그인이 추가적인 컴파일 task를 추가할지도 모릅니다.
 `compileJava`,  `processResources` tasks가 선행되어야 합니다.
 
+`compileJava`
+
+JDK 컴파일로러 생성된 Java 소스 파일들을 
+
+
+_Depends on_: All tasks which contribute to the compilation classpath, including  `jar`  tasks from projects that are on the classpath via project dependencies
+
+Compiles production Java source files using the JDK compiler.
+
+`processResources`  —  [Copy](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Copy.html)
+
+Copies production resources into the production resources directory.
+
 
 
     
@@ -352,11 +365,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAzNzUyMTI4LC0xNDkzNzgwMDAxLDE0Mz
-I1NTc0MjYsLTU4NTA2ODY1NCwyMDU3NDgzMjIxLDE2MzgzNDkx
-Miw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMT
-A3ODk1NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgz
-MSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNT
-Q3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0
-XX0=
+eyJoaXN0b3J5IjpbLTkzNDkyOTc3MywtMTQ5Mzc4MDAwMSwxND
+MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
+MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
+EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
+MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MT
+U0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0
+NF19
 -->
