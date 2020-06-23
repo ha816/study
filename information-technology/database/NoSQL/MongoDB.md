@@ -73,29 +73,16 @@ db.inventory.find( { item: "canvas" } )
 db.collection.insertMany()
 : 한 컬렉션에 다수의 문서를 삽입할 수 있습니다.  문서들의 배열을 메서드로 보냅니다. 
 
-아래 예제에선 `inventory`  collection에 3건의 새로운 문서를 삽입합니다. `_id`  필드가 없다면, MongoDB가 자동적으로 각 문서에 대해 
+아래 예제에선 `inventory`  collection에 3건의 새로운 문서를 삽입합니다. `_id`  필드가 없다면, MongoDB가 자동적으로 각 문서에 대해 값을 만듭니다.
 
-The following example inserts three new documents into the  `inventory`  collection. If the documents do not specify an  `_id`  field, MongoDB adds the  `_id`  field with an ObjectId value to each document. See  [Insert Behavior](https://docs.mongodb.com/manual/tutorial/insert-documents/#write-op-insert-behavior).
-
-copy
-
-copied
-
+```
 db.inventory.insertMany([
    { item: "journal", qty: 25, tags: ["blank", "red"], size: { h: 14, w: 21, uom: "cm" } },
    { item: "mat", qty: 85, tags: ["gray"], size: { h: 27.9, w: 35.5, uom: "cm" } },
    { item: "mousepad", qty: 25, tags: ["gel", "blue"], size: { h: 19, w: 22.85, uom: "cm" } }
 ])
-
-You can run the operation in the web shell below:
-
-[`insertMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/#db.collection.insertMany "db.collection.insertMany()")  returns a document that includes the newly inserted documents  `_id`  field values. See the  [reference](https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/#insertmany-examples)  for an example.
-
-To retrieve the inserted documents,  [query the collection](https://docs.mongodb.com/manual/tutorial/query-documents/#read-operations-query-document):
-
-copy
-
-copied
+```
+`insertMany()` 는 새로 삽입된 문서의 `_id`값을 포함한 문서를 반환합니다. 
 
 db.inventory.find( {} )
 
@@ -132,6 +119,6 @@ SEE ALSO
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM4NzI4Mzk3LC0yMDU3MTcwNzkwLDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbLTQzODAwMTAxNCwtMjA1NzE3MDc5MCw3Mz
+A5OTgxMTZdfQ==
 -->
