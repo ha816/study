@@ -49,6 +49,10 @@ brew services start mongodb-community
 $ brew services stop mongodb-community
 ```
 
+## CRUD Operations
+
+Insert(Create)에 해당하는 문서를 보자. [https://docs.mongodb.com/manual/tutorial/insert-documents/](https://docs.mongodb.com/manual/tutorial/insert-documents/)
+
 
 
 
@@ -56,6 +60,6 @@ $ brew services stop mongodb-community
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ2MzY3NDIwLC0yMDU3MTcwNzkwLDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbLTU5OTIyNjc3MCwtMjA1NzE3MDc5MCw3Mz
+A5OTgxMTZdfQ==
 -->
