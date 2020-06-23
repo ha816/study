@@ -241,58 +241,6 @@ sourceSets {
 
 그 밖에 상세한 설정값들은 [https://docs.gradle.org/current/userguide/java_plugin.html](https://docs.gradle.org/current/userguide/java_plugin.html)을 참고합시다. 
  
-    
-### [파일과 디렉토리 위치 바꾸기](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
-
-Each source set defines where its source code resides, along with the resources and the output directory for the class files. You can override the convention values by using the following syntax:
-
-```groovy
-sourceSets {
-    main {
-         java {
-            srcDirs = ['src']
-         }
-    }
-
-    test {
-        java {
-            srcDirs = ['test']
-        }
-    }
-}
-```
-
-sourceSets {  
-  main {  
-  resources {  
-  srcDirs "src/main/resources", "src/main/resources-${profile}"  
-  }  
- }}
-
-Now Gradle will only search directly in  _src_  and  _test_  for the respective source code. What if you don’t want to override the convention, but simply want to  _add_  an extra source directory, perhaps one that contains some third-party source code you want to keep separate? The syntax is similar:
-
-Example 4. Declaring custom source directories additively
-
-`Groovy``Kotlin`
-
-build.gradle
-
-```groovy
-sourceSets {
-    main {
-        java {
-            srcDir 'thirdParty/src/main/java'
-        }
-    }
-}
-```
-
-Crucially, we’re using the  _method_  `srcDir()`  here to append a directory path, whereas setting the  `srcDirs`  property replaces any existing values. This is a common convention in Gradle: setting a property replaces values, while the corresponding method appends values.
-
-You can see all the properties and methods available on source sets in the DSL reference for  [SourceSet](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.SourceSet.html)  and  [SourceDirectorySet](https://docs.gradle.org/current/dsl/org.gradle.api.file.SourceDirectorySet.html). Note that  `srcDirs`  and  `srcDir()`  are both on  `SourceDirectorySet`.
-
-
-
 ## [Separate source files per test type](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
 
 한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. (unit tests, integration tests, functional test or smoke tests와 같은)
@@ -360,11 +308,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTk4MDg0NTUsLTEyODQ3ODA2NSwxND
-Q4MjkwMTYsLTE0OTM3ODAwMDEsMTQzMjU1NzQyNiwtNTg1MDY4
-NjU0LDIwNTc0ODMyMjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMT
-M5ODk0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5
-MjAsMTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMj
-g2NzI5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAz
-NDFdfQ==
+eyJoaXN0b3J5IjpbMTQ3NDc2NzY3MiwtMTI4NDc4MDY1LDE0ND
+gyOTAxNiwtMTQ5Mzc4MDAwMSwxNDMyNTU3NDI2LC01ODUwNjg2
+NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5MTIsODk0Njg3MjE4LDIxMz
+k4OTQ1MDYsMTMwMDUzNTc5MSwtMjEwNzg5NTQ4NywyODI4Mzky
+MCwxNzk2NDc5MzYwLDE2NDY2MjE4MzEsNDcyMzA3NjYsMjEyOD
+Y3MjkzNiwtMTgyNDUxMjEyNiw2MTU0NzAxNzEsLTU3NzQ5MDM0
+MV19
 -->
