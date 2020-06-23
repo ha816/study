@@ -183,7 +183,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 
 `build`  — _lifecycle task_
-: 빌드 task를 수행하려면 먼저 `check`,  `assemble` tasks가 먼저 선행되어야 합니다. 빌드 task
+: 빌드 task를 수행하려면 먼저 `check`,  `assemble` tasks가 먼저 선행되어야 합니다. 빌드 task는 모든 테스트를 수행하고 아티팩트와 문서를 생성합니다. 
 
 `assemble`  —  _lifecycle task_
 
@@ -345,7 +345,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NTU5ODMyMSwyMDU3NDgzMjIxLDE2Mz
+eyJoaXN0b3J5IjpbLTU4NTA2ODY1NCwyMDU3NDgzMjIxLDE2Mz
 gzNDkxMiw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMzAwNTM1Nzkx
 LC0yMTA3ODk1NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0Nj
 YyMTgzMSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2
