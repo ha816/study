@@ -146,7 +146,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
             └── Utils.kt
 ```
 
-## Java 
+## Java Library Plugin
 
 만약 자바 라이브러리 플러그인을 적용한다면 아래 tasks를 바로 사용할 수 있습니다.
 
@@ -161,6 +161,25 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 `jar`
 : 컴파일된 main 클래스들과 src/main/resources의 resource를 합쳐 단일 jar 파일로 합침
+
+위의 ta
+실제 생성 코드와 테스트 코드를 컴파일하는건 아래 컨벤션을 따르면 매우 간단합니다.
+
+1. 생성 코드를 src/main/java 디렉토리에 저장
+2. 테스트 코드는 src/test/java 디렉토리에 저장
+3. 생성 컴파일의 의존성을 `compileOnly`  or  `implementation` 으로 선언합니다.
+
+4.  Put your production source code under the  _src/main/java_  directory
+    
+5.  Put your test source code under  _src/test/java_
+    
+6.  Declare your production compile dependencies in the  `compileOnly`  or  `implementation`  configurations (see previous section)
+    
+7.  Declare your test compile dependencies in the  `testCompileOnly`  or  `testImplementation`  configurations
+    
+8.  Run the  `compileJava`  task for the production code and  `compileTestJava`  for the tests
+
+
 
 이것만으로는 간단하지 않은 자바 프로젝트를 빌드하는데 충분치 않습니다.  왜냐하면 실제 동작시 사용할 의존성이 정리되어 있지 않기 때문입니다. 
 
@@ -195,23 +214,8 @@ _Depends on_:  `check`,  `assemble`
 
 Intended to build everything, including running all tests, producing the production artifacts and generating documentation. You will probably rarely attach concrete tasks directly to  `build`  as  `assemble`  and  `check`  are typically more appropriate.
 
-## [Compiling](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:compile)
 
-실제 생성 코드와 테스트 코드를 컴파일하는건 아래 컨벤션을 따르면 매우 간단합니다.
 
-1. 생성 코드를 src/main/java 디렉토리에 저장
-2. 테스트 코드는 src/test/java 디렉토리에 저장
-3. 생성 컴파일의 의존성을 `compileOnly`  or  `implementation` 으로 선언합니다.
-
-4.  Put your production source code under the  _src/main/java_  directory
-    
-5.  Put your test source code under  _src/test/java_
-    
-6.  Declare your production compile dependencies in the  `compileOnly`  or  `implementation`  configurations (see previous section)
-    
-7.  Declare your test compile dependencies in the  `testCompileOnly`  or  `testImplementation`  configurations
-    
-8.  Run the  `compileJava`  task for the production code and  `compileTestJava`  for the tests
     
 ### [파일과 디렉토리 위치 바꾸기](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
 
@@ -331,11 +335,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIxODI4NTg5LC01ODUwNjg2NTQsMjA1Nz
-Q4MzIyMSwxNjM4MzQ5MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYs
-MTMwMDUzNTc5MSwtMjEwNzg5NTQ4NywyODI4MzkyMCwxNzk2ND
-c5MzYwLDE2NDY2MjE4MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwt
-MTgyNDUxMjEyNiw2MTU0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNj
-IxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4LC0xODc0OTA2NDY4
-XX0=
+eyJoaXN0b3J5IjpbMTQxNTY1MTMyMywtNTg1MDY4NjU0LDIwNT
+c0ODMyMjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2
+LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5Nj
+Q3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYs
+LTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMz
+YyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2
+OF19
 -->
