@@ -170,8 +170,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
     
 -   `test`  is attached to  `check`
     
-
-## [Task](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)
+### [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)
 
 `clean`  —  `Delete`
 
@@ -341,11 +340,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDk1NjE2ODYsODk0Njg3MjE4LDIxMz
-k4OTQ1MDYsMTMwMDUzNTc5MSwtMjEwNzg5NTQ4NywyODI4Mzky
-MCwxNzk2NDc5MzYwLDE2NDY2MjE4MzEsNDcyMzA3NjYsMjEyOD
-Y3MjkzNiwtMTgyNDUxMjEyNiw2MTU0NzAxNzEsLTU3NzQ5MDM0
-MSwtOTMzNjIxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4LC0xOD
-c0OTA2NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxODA5NzM0
-Nl19
+eyJoaXN0b3J5IjpbMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5OD
+k0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAs
+MTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2Nz
+I5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEs
+LTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3ND
+kwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDZd
+fQ==
 -->
