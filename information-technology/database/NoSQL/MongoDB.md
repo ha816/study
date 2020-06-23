@@ -96,25 +96,12 @@ db.collection.find()
 : collection의 문서를 찾는 연산. 특별히 인자를 넣지 않으면 collection에 전체 문서를 찾습니다.
 
 db.collection.findOne()
-: 
-
-## Additional Methods
-
-The following methods can also read documents from a collection:
-
--   [`db.collection.findOne`](https://docs.mongodb.com/manual/reference/method/db.collection.findOne/#db.collection.findOne "db.collection.findOne")
--   In  [aggregation pipeline](https://docs.mongodb.com/manual/core/aggregation-pipeline/), the  [`$match`](https://docs.mongodb.com/manual/reference/operator/aggregation/match/#pipe._S_match "$match")  pipeline stage provides access to MongoDB queries.
-
-NOTE
-
-The  [`db.collection.findOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.findOne/#db.collection.findOne "db.collection.findOne()")  method also performs a read operation to return a single document. Internally, the  [`db.collection.findOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.findOne/#db.collection.findOne "db.collection.findOne()")  method is the  [`db.collection.find()`](https://docs.mongodb.com/manual/reference/method/db.collection.find/#db.collection.find "db.collection.find()")  method with a limit of 1.
-
-
+: collection에 있는 한 문서를 찾는 연산. 내부적으로 db.collection.find() 연산을 호출하며 단지 limit 1 조건을 추가합니다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODk2NDgyLDExODc5MTQzLC0yMDU3MT
-cwNzkwLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTIwODgyODcyNjMsMTE4NzkxNDMsLTIwNT
+cxNzA3OTAsNzMwOTk4MTE2XX0=
 -->
