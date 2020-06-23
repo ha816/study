@@ -160,19 +160,9 @@ Compiling both your production and test code can be trivially easy if you follow
     
 5.  Run the  `compileJava`  task for the production code and  `compileTestJava`  for the tests
     
-### [파일과 디렉토리 위치 바꾸기Customizing file and directory locations](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
-
-
-
-Imagine you have a legacy project that uses an  _src_  directory for the production code and  _test_  for the test code. The conventional directory structure won’t work, so you need to tell Gradle where to find the source files. You do that via source set configuration.
+### [파일과 디렉토리 위치 바꾸기](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
 
 Each source set defines where its source code resides, along with the resources and the output directory for the class files. You can override the convention values by using the following syntax:
-
-Example 3. Declaring custom source directories
-
-`Groovy``Kotlin`
-
-build.gradle
 
 ```groovy
 sourceSets {
@@ -288,7 +278,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEyMDEyNjk4LC0yMTA3ODk1NDg3LDI4Mj
+eyJoaXN0b3J5IjpbNDkzMTg0MDUxLC0yMTA3ODk1NDg3LDI4Mj
 gzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgzMSw0NzIzMDc2Niwy
 MTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3MSwtNTc3ND
 kwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0LC05MDQzMjg2Njgs
