@@ -160,19 +160,9 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 :  src/test/java의 테스트를 수행
 
 `jar`
-: 컴파일된 main 클래스들과 src/main/resources의 resource를 합쳐 단일 jar 파일로 
+: 컴파일된 main 클래스들과 src/main/resources의 resource를 합쳐 단일 jar 파일로 합침
 
-
--   A  `compileJava`  task that compiles all the Java source files under  _src/main/java_
-    
--   A  `compileTestJava`  task for source files under  _src/test/java_
-    
--   A  `test`  task that runs the tests from  _src/test/java_
-    
--   A  `jar`  task that packages the  `main`  compiled classes and resources from  _src/main/resources_  into a single JAR named  _<project>-<version>.jar_
-    
--   A  `javadoc`  task that generates Javadoc for the  `main`  classes
-    
+이것만으로는 간단하지 않은 자바 프로즉테를 빌드하는데는 충분치 않습니다.  왜냐하면 실제 동작시 사용할 의존성이
 
 This isn’t sufficient to build any non-trivial Java project — at the very least, you’ll probably have some file dependencies. But it means that your build script only needs the information that is specific to  _your_  project.
 
@@ -324,11 +314,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTY1NTIzMzQsMjEzOTg5NDUwNiwxMz
-AwNTM1NzkxLC0yMTA3ODk1NDg3LDI4MjgzOTIwLDE3OTY0Nzkz
-NjAsMTY0NjYyMTgzMSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xOD
-I0NTEyMTI2LDYxNTQ3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjEx
-MjAsOTIyNjE5NjQ0LC05MDQzMjg2NjgsLTE4NzQ5MDY0NjgsLT
-E0ODYyODE5OTEsOTk4Njk1NTEsNTE4MDk3MzQ2LDIwNTE0OTYy
-OTBdfQ==
+eyJoaXN0b3J5IjpbMTE2NTUyMTU4OCwyMTM5ODk0NTA2LDEzMD
+A1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2
+MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4Mj
+Q1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEy
+MCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2OCwtMT
+Q4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MTQ5NjI5
+MF19
 -->
