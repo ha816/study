@@ -216,7 +216,9 @@ Base Plugin으로 추가되었습니다.
 
 ## [Source sets](https://docs.gradle.org/current/userguide/java_plugin.html#source_sets)
 
-SourceSet은 소스와 자원 파일들의 그룹입니다. Java Plugin에서는 main과 test SourceSet을 사용합니다. 
+SourceSet은 특정 소스와 자원 파일들의 논리적인 그룹을 말합니다. 즉 실제 소스와 자원을 가지고 있는 것이 아니라 그것들의 위치와 같은 논리
+
+Java Plugin에서는 main과 test SourceSet을 사용합니다. 
 
 >main 
 >컴파일되고 통합되어 JAR 파일로 만들어진 프로젝트의 production 소스코드를 포함합니다. 
@@ -440,11 +442,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODQ3ODA2NSwxNDQ4MjkwMTYsLTE0OT
-M3ODAwMDEsMTQzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMy
-MjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMD
-A1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2
-MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4Mj
-Q1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEy
-MF19
+eyJoaXN0b3J5IjpbMTU4NTk1MzgsLTEyODQ3ODA2NSwxNDQ4Mj
+kwMTYsLTE0OTM3ODAwMDEsMTQzMjU1NzQyNiwtNTg1MDY4NjU0
+LDIwNTc0ODMyMjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5OD
+k0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAs
+MTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2Nz
+I5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDFd
+fQ==
 -->
