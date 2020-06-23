@@ -160,7 +160,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 :  src/test/java의 테스트를 수행
 
 `jar`
-: 컴파일된 메이main
+: 컴파일된 main 클래스들과 src/main/resources의 resource를 합쳐 단일 jar 파일로 
 
 
 -   A  `compileJava`  task that compiles all the Java source files under  _src/main/java_
@@ -324,7 +324,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjU5NzUwNDQsMjEzOTg5NDUwNiwxMz
+eyJoaXN0b3J5IjpbLTIwOTY1NTIzMzQsMjEzOTg5NDUwNiwxMz
 AwNTM1NzkxLC0yMTA3ODk1NDg3LDI4MjgzOTIwLDE3OTY0Nzkz
 NjAsMTY0NjYyMTgzMSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xOD
 I0NTEyMTI2LDYxNTQ3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjEx
