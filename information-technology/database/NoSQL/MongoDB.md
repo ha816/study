@@ -53,6 +53,19 @@ brew services stop mongodb-community
 
 ### [Create(Insert)](https://docs.mongodb.com/manual/tutorial/insert-documents/)
 
+* 만약 생성할 문서가 들어갈 collection이 현재 없다면, insert 연산 수행시 자동으로 생성합니다.
+* 
+
+In MongoDB, each document stored in a collection requires a unique  [_id](https://docs.mongodb.com/manual/reference/glossary/#term-id)  field that acts as a  [primary key](https://docs.mongodb.com/manual/reference/glossary/#term-primary-key). If an inserted document omits the  `_id`  field, the MongoDB driver automatically generates an  [ObjectId](https://docs.mongodb.com/manual/reference/bson-types/#objectid)  for the  `_id`  field.
+
+This also applies to documents inserted through update operations with  [upsert: true](https://docs.mongodb.com/manual/reference/method/db.collection.update/#upsert-parameter).
+
+### Atomicity[](https://docs.mongodb.com/manual/tutorial/insert-documents/#atomicity "Permalink to this headline")
+
+All write operations in MongoDB are atomic on the level of a single document. For more information on MongoDB and atomicity, see  [Atomicity and Transactions](https://docs.mongodb.com/manual/core/write-operations-atomicity/)
+
+
+
 db.collection.insertOne()
 : collection에 단일 문서를 추가합니다. 만약 문서가 `_id`  필드 값을 가지지 않으면, MongoDB에서 자동적으로 ObjectId 값으로  `_id` 필드를 추가합니다. 
 
@@ -84,39 +97,8 @@ db.inventory.insertMany([
 ```
 `insertMany()` 는 새로 삽입된 문서의 `_id`값을 포함한 문서를 반환합니다. 
 
-## Insert Behavior[](https://docs.mongodb.com/manual/tutorial/insert-documents/#insert-behavior "Permalink to this headline")
-
-### Collection Creation[](https://docs.mongodb.com/manual/tutorial/insert-documents/#collection-creation "Permalink to this headline")
-
-If the collection does not currently exist, insert operations will create the collection.
-
-### `_id`  Field[](https://docs.mongodb.com/manual/tutorial/insert-documents/#insert-id-field "Permalink to this headline")
-
-In MongoDB, each document stored in a collection requires a unique  [_id](https://docs.mongodb.com/manual/reference/glossary/#term-id)  field that acts as a  [primary key](https://docs.mongodb.com/manual/reference/glossary/#term-primary-key). If an inserted document omits the  `_id`  field, the MongoDB driver automatically generates an  [ObjectId](https://docs.mongodb.com/manual/reference/bson-types/#objectid)  for the  `_id`  field.
-
-This also applies to documents inserted through update operations with  [upsert: true](https://docs.mongodb.com/manual/reference/method/db.collection.update/#upsert-parameter).
-
-### Atomicity[](https://docs.mongodb.com/manual/tutorial/insert-documents/#atomicity "Permalink to this headline")
-
-All write operations in MongoDB are atomic on the level of a single document. For more information on MongoDB and atomicity, see  [Atomicity and Transactions](https://docs.mongodb.com/manual/core/write-operations-atomicity/)
-
-### Write Acknowledgement[](https://docs.mongodb.com/manual/tutorial/insert-documents/#write-acknowledgement "Permalink to this headline")
-
-With write concerns, you can specify the level of acknowledgement requested from MongoDB for write operations. For details, see  [Write Concern](https://docs.mongodb.com/manual/reference/write-concern/).
-
-SEE ALSO
-
--   [`db.collection.insertOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.insertOne/#db.collection.insertOne "db.collection.insertOne()")
--   [`db.collection.insertMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/#db.collection.insertMany "db.collection.insertMany()")
--   [Additional Methods for Inserts](https://docs.mongodb.com/manual/reference/insert-methods/#additional-inserts)
-
-← [MongoDB CRUD Operations](https://docs.mongodb.com/manual/crud/ "Previous Section: MongoDB CRUD Operations")[Insert Methods](https://docs.mongodb.com/manual/reference/insert-methods/ "Next Section: Insert Methods") →
-
-© MongoDB, Inc 2008-present. MongoDB, Mongo, and the leaf logo are registered trademarks of MongoDB, Inc.
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MTMzNDU5OCwtMjA1NzE3MDc5MCw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE2MzA2NTU2ODAsLTIwNTcxNzA3OTAsNz
+MwOTk4MTE2XX0=
 -->
