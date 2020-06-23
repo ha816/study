@@ -131,7 +131,7 @@ Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하�
 
 어떤 컴파일러는 같은 소스 디렉토리에서 다수의 언어를 크로스 컴파일링이 가능합니다. Groovy 컴파일러의 경우, `src/main/groovy`에 있는 자바와 Groovy 코드가 혼합된 소스도 다룰 수 있습니다. 
 
-Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를 해당 디렉토리에 저장하는 것을 추천합니다. 왜냐하면 빌드가 더 잘 동작할 뿐만 아니라 기본 설정이기 때문에 사용자와 빌드가 모두가 편하기 때문입니다.
+Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를 해당 디렉토리에 저장하는 것을 추천합니다. 왜냐하면 빌드가 더 잘 동작할 뿐만 아니라 기본 설정이기 때문에 사용자와 빌드 모두가 편하기 때문입니다.
 
 아래 소스 트리는 자바와 코틀린 소스 파일들을 가지고 있습니다. 자바 파일은 `src/main/java`에 있고 Kotlin 파일은 `src/main/kotlin`에 있습니다.
 
@@ -214,11 +214,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc3NTgxODI0LDE3OTY0NzkzNjAsMTY0Nj
-YyMTgzMSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2
-LDYxNTQ3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNj
-E5NjQ0LC05MDQzMjg2NjgsLTE4NzQ5MDY0NjgsLTE0ODYyODE5
-OTEsOTk4Njk1NTEsNTE4MDk3MzQ2LDIwNTE0OTYyOTAsNDUxND
-QwNDI3LDQ4NTIxMzMzNiwtMTk5Nzk1NDg1NCwxMTk0MTI3MTI3
-XX0=
+eyJoaXN0b3J5IjpbMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2Nj
+IxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYs
+NjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MT
+k2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2OCwtMTQ4NjI4MTk5
+MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MTQ5NjI5MCw0NTE0ND
+A0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcxMjdd
+fQ==
 -->
