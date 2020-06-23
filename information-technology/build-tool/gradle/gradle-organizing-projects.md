@@ -217,9 +217,10 @@ Base Plugin으로 추가되었습니다.
 ## [Source sets](https://docs.gradle.org/current/userguide/java_plugin.html#source_sets)
 
 SourceSet은 자바 소스와 자원 파일들의 그룹이다. 
+Java Plugin에서는 아래 두가지 종류의 SourceSet을 추가했다.
 
-
-`main`
+>main SourceSet
+>한 JAR 파일로 커
 
 Contains the production source code of the project, which is compiled and assembled into a JAR.
 
@@ -428,11 +429,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MTExMjMwNiwxNDQ4MjkwMTYsLTE0OT
-M3ODAwMDEsMTQzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMy
-MjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMD
-A1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2
-MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4Mj
-Q1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEy
-MF19
+eyJoaXN0b3J5IjpbNDE5NTkxNzExLDE0NDgyOTAxNiwtMTQ5Mz
+c4MDAwMSwxNDMyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIy
+MSwxNjM4MzQ5MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMD
+UzNTc5MSwtMjEwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYw
+LDE2NDY2MjE4MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyND
+UxMjEyNiw2MTU0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIw
+XX0=
 -->
