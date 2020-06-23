@@ -159,6 +159,8 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 Top-Down 방식으로 중요한 task를 알아보겠습니다. 
 
+### LifeCycle Tasks
+
 `build` 
 : 프로젝트의 모든 빌드를 수행하는 task
 `check`,  `assemble` tasks가 선행되어야 합니다.
@@ -167,16 +169,17 @@ Base Plugin으로 부터 왔습니다.
 `check`
 : 테스트를 수행해보는 것과 같은 verification tasks들을 수행하는 것을 통합하는 task. 
 `test` task가 선행되어야 합니다.
+Base Plugin으로 부터 왔습니다.
 어떤 플러그인은 그들만의 verification tasks를 `check` task에 넣기도 합니다. 
-Base Plugin으로 부터 왔습니다.
 
 
-* `check`
-	* 테스트를 수행해보는 것과 같은 verification tasks들을 수행하는 것을 통합하는 task입니다. 몇몇 플러그인은 그들만의 verification tasks를 `check` task에 넣기도 합니다. 
-Base Plugin으로 부터 왔습니다.
+`assemble`
+: 
+:Aggregate task that assembles all the archives in the project. This task is added by the Base Plugin.
 
+_Depends on_:  `jar`, and all other tasks that create artifacts attached to the  `archives`  configuration
 
-_Depends on_:  `test`
+Aggregate task that assembles all the archives in the project. This task is added by the Base Plugin.
 
 Aggregate task that performs verification tasks, such as running the tests. Some plugins add their own verification tasks to  `check`. You should also attach any custom  `Test`  tasks to this lifecycle task if you want them to execute for a full build. This task is added by the Base Plugin.
 
@@ -420,7 +423,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMDIxNTE2OSwtMTQ5Mzc4MDAwMSwxND
+eyJoaXN0b3J5IjpbMTY3MzE4NTU3MSwtMTQ5Mzc4MDAwMSwxND
 MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
 MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
 EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
