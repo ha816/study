@@ -152,8 +152,12 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 ## Tasks 
 
-아래 그림은 Gradle의 최상위 `build` task를 위해 필요로 하는 하위 task에 대한 
+아래 그림은 Gradle의 최상위 `build` task를 위해 필요로 하는 하위 tasks에 대한 모식도입니다.
 ![javaPluginTasks](https://docs.gradle.org/current/userguide/img/javaPluginTasks.png)
+
+Top-Down 방식으로 중요한 task를 알아보겠습니다. 
+
+
 
 `compileJava`  —  [JavaCompile](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html)
 
@@ -390,11 +394,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwNzUxNjcsLTE0OTM3ODAwMDEsMTQzMj
-U1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0OTEy
-LDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLTIxMD
-c4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIxODMx
-LDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNjE1ND
-cwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2NDRd
-fQ==
+eyJoaXN0b3J5IjpbMTgyOTczNzkzNywtMTQ5Mzc4MDAwMSwxND
+MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
+MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
+EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
+MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MT
+U0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0
+NF19
 -->
