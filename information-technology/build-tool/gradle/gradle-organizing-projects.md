@@ -279,7 +279,7 @@ sourceSets {
     }
 }
 ```
-source sets은 소스 코드를 컴파일하는데 책임이 있습니다. 그러나 byte code를 실행하는 것을 다루진 않습니다. test 실행을 위해서, Test 타입에 task가 정의 되어야 합니다. 
+source sets은 소스 코드를 컴파일하는데 까지만 관여합니다. byte code를 실행하는 것을 다루진 않습니다. integTest의 테스트 수행을 위해서, Test 타입에 task가 정의 되어야 합니다. 
 
 ```groovy
 // gradle/integration-test.gradle
@@ -297,7 +297,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjgyMTc4NDYsMTQ3NDc2NzY3MiwtMT
+eyJoaXN0b3J5IjpbLTEwMjcwNDk1OTAsMTQ3NDc2NzY3MiwtMT
 I4NDc4MDY1LDE0NDgyOTAxNiwtMTQ5Mzc4MDAwMSwxNDMyNTU3
 NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5MTIsOD
 k0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMjEwNzg5
