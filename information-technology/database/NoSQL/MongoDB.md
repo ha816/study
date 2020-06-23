@@ -64,20 +64,16 @@ db.inventory.insertOne(
 )
 ```
 
-db.collection.insertMany()
-: 한 컬렉션에 다수의 문서를 삽입할 수 있습니다.  Pass an array of documents to the method. 
-
-
 `insertOne()`의 결과로 새롭게 삽입된 문서의 `_id` 필드 값을 포함한 하나의 문서를 반환합니다.  간단하게 막 삽입한 문서를 보고 싶다면 아래 명령을 수행합니다.
 
 ```
 db.inventory.find( { item: "canvas" } )
 ```
 
-## Insert Multiple Documents[](https://docs.mongodb.com/manual/tutorial/insert-documents/#insert-multiple-documents "Permalink to this headline")
+db.collection.insertMany()
+: 한 컬렉션에 다수의 문서를 삽입할 수 있습니다.  문서들의 배열을 메서드로 보냅니다. 
 
-
-
+아래 예제에선 `inventory`  collection에 3건의 새로운 문서를 삽입합니다. `_id`  필드가 없다면, MongoDB가 자동적으로 각 문서에 대해 
 
 The following example inserts three new documents into the  `inventory`  collection. If the documents do not specify an  `_id`  field, MongoDB adds the  `_id`  field with an ObjectId value to each document. See  [Insert Behavior](https://docs.mongodb.com/manual/tutorial/insert-documents/#write-op-insert-behavior).
 
@@ -136,6 +132,6 @@ SEE ALSO
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTUxMjUwODMsLTIwNTcxNzA3OTAsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNDM4NzI4Mzk3LC0yMDU3MTcwNzkwLDczMD
+k5ODExNl19
 -->
