@@ -56,27 +56,22 @@ Insert(Create)에 해당하는 문서를 보자. [https://docs.mongodb.com/manua
 
 `db.collection.insertOne()`을 사용하면 단일 문서를 추가합니다. 아래 예제에서는 `inventory`  collection 안에 한 문서를 추가합니다. 만약 문서가 `_id`  필드 값을 가지지 않으면, MongoDB에서 자동적으로 ObjectId 값으로  `_id` 필드를 추가합니다. 
 
-
+```
 db.inventory.insertOne(
    { item: "canvas", qty: 100, tags: ["cotton"], size: { h: 28, w: 35.5, uom: "cm" } }
 )
+```
 
-`insertOne()`의 결과로 새롭게 삽입된 문
-[`insertOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.insertOne/#db.collection.insertOne "db.collection.insertOne()")  returns a document that includes the newly inserted document’s  `_id`  field value. For an example of a return document, see  [db.collection.insertOne() reference](https://docs.mongodb.com/manual/reference/method/db.collection.insertOne/#insertone-examples).
+`insertOne()`의 결과로 새롭게 삽입된 문서의 `_id` 필드 값을 포함한 하나의 문서를 반환합니다.  간단하게 막 삽입한 문서를 보고 싶다면 아래 명령을 수행합니다.
 
-To retrieve the document that you just inserted,  [query the collection](https://docs.mongodb.com/manual/core/document/#document-query-filter):
-
-copy
-
-copied
-
+```
 db.inventory.find( { item: "canvas" } )
-
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzg2MTg2LC0yMDU3MTcwNzkwLDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbLTE4NzI5NzgzODcsLTIwNTcxNzA3OTAsNz
+MwOTk4MTE2XX0=
 -->
