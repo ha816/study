@@ -148,7 +148,10 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 ## Building Java
 
-By applying the Java Library Plugin, you get a whole host of features:
+만약 자바 라이브러리 플로그인을 적용한다면 아래 tasks를 바로 사용할 수 있습니다.
+
+`compileJava` task
+:  
 
 -   A  `compileJava`  task that compiles all the Java source files under  _src/main/java_
     
@@ -311,11 +314,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMT
-A3ODk1NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgz
-MSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNT
-Q3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0
-LC05MDQzMjg2NjgsLTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOT
-k4Njk1NTEsNTE4MDk3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3
-XX0=
+eyJoaXN0b3J5IjpbLTg3OTM0NTI2MCwyMTM5ODk0NTA2LDEzMD
+A1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2
+MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4Mj
+Q1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEy
+MCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2OCwtMT
+Q4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MTQ5NjI5
+MF19
 -->
