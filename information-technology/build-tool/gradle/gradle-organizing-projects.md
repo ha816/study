@@ -188,17 +188,10 @@ Base Plugin으로 추가되었습니다.
 : JDK 컴파일러로 test 자바 소스 파일을 컴파일 합니다.
 `classes` 와 test 컴파일 classpath를 제공하는 모든 tasks를 필요로 합니다.
 
-`processTestResources`  —  [Copy](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Copy.html)
-
-Copies test resources into the test resources directory.
-
+`processTestResources`
+ : 테스트 자원(resources)들을 테스트 자원 디렉토리로 복사합니다. 
 
 
-This is an aggregate task that just depends on other tasks. Other plugins may attach additional test compilation tasks to it.
-
-
-
-만약 자바 라이브러리 플러그인을 적용한다면 아래 tasks를 바로 사용할 수 있습니다.
 
 `compileJava`
 :  src/main/java 하위에 모든 자바 소스 파일을 컴파일
@@ -365,7 +358,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDI4ODQyNTIsLTE0OTM3ODAwMDEsMT
+eyJoaXN0b3J5IjpbLTIwMzk3MTA2MDQsLTE0OTM3ODAwMDEsMT
 QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
 OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
 IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
