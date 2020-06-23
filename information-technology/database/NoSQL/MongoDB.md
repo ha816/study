@@ -90,10 +90,17 @@ db.inventory.insertMany([
 ```
 `insertMany()` 는 새로 삽입된 문서의 `_id`값을 포함한 문서를 반환합니다. 
 
-### 
+### [Read(Query)](https://docs.mongodb.com/manual/tutorial/query-documents/)
+
+db.collection.find()
+: collection의 문서를 찾는 연산.
+
+This page provides examples of query operations using the [`db.collection.find()`](https://docs.mongodb.com/manual/reference/method/db.collection.find/#db.collection.find "db.collection.find()") method in the [`mongo`](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo "bin.mongo") shell. The examples on this page use the `inventory` collection. To populate the `inventory` collection, run the following:
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE5Njc5MjgyLC0yMDU3MTcwNzkwLDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbMTE4NzkxNDMsLTIwNTcxNzA3OTAsNzMwOT
+k4MTE2XX0=
 -->
