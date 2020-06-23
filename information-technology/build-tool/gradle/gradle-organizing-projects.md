@@ -150,10 +150,10 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 사실 전체 프로젝트를 빌드하고 수행하기 위해선 다양한 플러그인이 필요합니다. 여기선 가장 핵심적인 Java Plugin이 어떤 기능을 가지고 있는지 알아보겠습니다. 
 
-![javaPluginTasks](https://docs.gradle.org/current/userguide/img/javaPluginTasks.png)
-
-
 ## Tasks 
+
+아래 그림은 Gradle의 최상위 `build` task를 위해 필요로 하는 하위 task에 대한 
+![javaPluginTasks](https://docs.gradle.org/current/userguide/img/javaPluginTasks.png)
 
 `compileJava`  —  [JavaCompile](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html)
 
@@ -390,11 +390,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA1NDQ0ODQ3LC0xNDkzNzgwMDAxLDE0Mz
-I1NTc0MjYsLTU4NTA2ODY1NCwyMDU3NDgzMjIxLDE2MzgzNDkx
-Miw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMT
-A3ODk1NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgz
-MSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNT
-Q3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0
-XX0=
+eyJoaXN0b3J5IjpbODcwNzUxNjcsLTE0OTM3ODAwMDEsMTQzMj
+U1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0OTEy
+LDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLTIxMD
+c4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIxODMx
+LDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNjE1ND
+cwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2NDRd
+fQ==
 -->
