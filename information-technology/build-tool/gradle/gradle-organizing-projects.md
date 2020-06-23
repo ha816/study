@@ -152,7 +152,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 참고로 Java Plugin은 [Base Plugin](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)에 있는 lifecycle tasks중 일부를 가지고 있습니다. 그 밖에 다른 lifecycle도 일부 추가했습니다.
 
-## Tasks 
+## Java Plugin Tasks 
 
 아래 그림은 Gradle의 최상위 `build` task를 위해 필요로 하는 하위 tasks에 대한 모식도입니다.
 ![javaPluginTasks](https://docs.gradle.org/current/userguide/img/javaPluginTasks.png)
@@ -175,11 +175,7 @@ Base Plugin으로 부터 왔습니다.
 Base Plugin으로 추가되었습니다. 
 `jar` task와 `archives`  configuration로 정의된 아티팩트를 생성하는 모든 다른 task가 필요합니다. 
 
-
-
-_Depends on_:  `jar`, and all other tasks that create artifacts attached to the  `archives`  configuration
-
-Aggregate task that assembles all the archives in the project. This task is added by the Base Plugin.
+### Java Plugin Tasks
 
 `compileJava`  —  [JavaCompile](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html)
 
@@ -416,7 +412,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNjE1MDA2NiwtMTQ5Mzc4MDAwMSwxND
+eyJoaXN0b3J5IjpbMTQxODQ0NTA0OCwtMTQ5Mzc4MDAwMSwxND
 MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
 MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
 EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
