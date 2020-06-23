@@ -178,12 +178,8 @@ Base Plugin으로 추가되었습니다.
 ### Java Plugin Tasks
 
 `test`  —  [Test](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.Test.html)
-: JUnit 또는 TestNG를 통해서 unit Runs the unit tests using JUnit or TestNG.
-
-_Depends on_:  `testClasses`, and all tasks which produce the test runtime classpath
-
-Runs the unit tests using JUnit or TestNG.
-
+: JUnit 또는 TestNG를 통해서 unit 테스트를 수행
+`testClasses`와 test runtime classpath를 생성하는 모든 tasks 가 필요합니다.
 
 
 
@@ -355,7 +351,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzQ1Nzc5ODQsLTE0OTM3ODAwMDEsMT
+eyJoaXN0b3J5IjpbLTE0OTY4MTgwNDAsLTE0OTM3ODAwMDEsMT
 QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
 OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
 IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
