@@ -176,7 +176,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 : 빌드 디렉토리와 그 안에 있는 모든 것을 삭제 합니다.
 
 `check`  — _lifecycle task_
-: 
+: 플러그인과 빌드 작성자는 Plugins and build authors should attach their verification tasks
 
 Plugins and build authors should attach their verification tasks, such as ones that run tests, to this lifecycle task using  `check.dependsOn(_task_)`.
 
@@ -340,11 +340,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NzQ4MzIyMSwxNjM4MzQ5MTIsODk0Nj
-g3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMjEwNzg5NTQ4
-NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4MzEsNDcyMz
-A3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MTU0NzAxNzEs
-LTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0NCwtOTA0Mz
-I4NjY4LC0xODc0OTA2NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUx
-XX0=
+eyJoaXN0b3J5IjpbLTEzNjkxNjg1NTUsMjA1NzQ4MzIyMSwxNj
+M4MzQ5MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5
+MSwtMjEwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2ND
+Y2MjE4MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEy
+Niw2MTU0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMj
+YxOTY0NCwtOTA0MzI4NjY4LC0xODc0OTA2NDY4LC0xNDg2Mjgx
+OTkxXX0=
 -->
