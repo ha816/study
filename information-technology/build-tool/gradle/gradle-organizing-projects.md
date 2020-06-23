@@ -192,6 +192,15 @@ Base Plugin으로 추가되었습니다.
 `processTestResources`
  : 테스트 자원(resources)들을 테스트 자원 디렉토리로 복사합니다. 
 
+### Production Tasks
+
+`uploadArchives` 
+: 
+Uploads artifacts in the  `archives`  configuration
+
+_Depends on_:  `jar`, and any other task that produces an artifact attached to the  `archives`  configuration
+
+Uploads artifacts in the  `archives`  configuration — including the production JAR file — to the configured repositories. This task is  _deprecated_, you should use one of the  [Ivy](https://docs.gradle.org/current/userguide/publishing_ivy.html#publishing_ivy)  or  [Maven](https://docs.gradle.org/current/userguide/publishing_maven.html#publishing_maven)  publishing plugins instead.
 
 
 
@@ -363,7 +372,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MTU4NjQ5MSwtMTQ5Mzc4MDAwMSwxND
+eyJoaXN0b3J5IjpbMTI0ODcxNTk5MCwtMTQ5Mzc4MDAwMSwxND
 MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
 MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
 EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
