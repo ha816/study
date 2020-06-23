@@ -243,9 +243,9 @@ sourceSets {
 
 또 다른 방법으로 source Set을 활용하는 방법을 봅시다.  
 
-한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. (unit tests, integration tests, functional test과 가
+한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. (unit tests, integration tests, functional test과 같은)
 
-최적으로, 각 타입의 테스트 소스 코드는 소스 디렉토리에 국한된 곳에 저장되어 있어야 합니다. 이렇게 나눠진 테스트 코드는 각 테스트 타입을 독립적으로 수행할 수 있어 유지보수와 관심사의 분리에 좋습니다. 
+각 타입의 테스트 소스 코드는 소스 디렉토리에 국한된 곳에 저장되어야 좋습니다. 이렇게 나눠진 테스트 코드는 각 테스트 타입을 독립적으로 수행할 수 있어 유지보수와 관심사의 분리에 좋습니다. 
 
 아래 소스 트리는 자바 기반 프로젝트에서 integration test를 어떻게 나누는지 보여줍니다.
 
@@ -300,11 +300,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1NDM1NjIxLDE0NzQ3Njc2NzIsLTEyOD
-Q3ODA2NSwxNDQ4MjkwMTYsLTE0OTM3ODAwMDEsMTQzMjU1NzQy
-NiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0OTEyLDg5ND
-Y4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0
-ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3Mj
-MwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcx
-XX0=
+eyJoaXN0b3J5IjpbLTEwMTA5NTk5MTEsMTQ3NDc2NzY3MiwtMT
+I4NDc4MDY1LDE0NDgyOTAxNiwtMTQ5Mzc4MDAwMSwxNDMyNTU3
+NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5MTIsOD
+k0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMjEwNzg5
+NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4MzEsND
+cyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MTU0NzAx
+NzFdfQ==
 -->
