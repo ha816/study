@@ -148,19 +148,21 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 ## [Compiling](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:compile)
 
-실제 생성 코드와 테스트 코드를 컴파일하는건 아래 컨벤션을 따르면 비교적 
+실제 생성 코드와 테스트 코드를 컴파일하는건 아래 컨벤션을 따르면 비교적 간단합니다.
 
-Compiling both your production and test code can be trivially easy if you follow the conventions:
+1. 생성 코드를 src/main/java 디렉토리에 저장
+2. 테스트 코드는 src/test/java 디렉토리에 저장
+3. 생성 컴파일의 의존성을 
 
-1.  Put your production source code under the  _src/main/java_  directory
+4.  Put your production source code under the  _src/main/java_  directory
     
-2.  Put your test source code under  _src/test/java_
+5.  Put your test source code under  _src/test/java_
     
-3.  Declare your production compile dependencies in the  `compileOnly`  or  `implementation`  configurations (see previous section)
+6.  Declare your production compile dependencies in the  `compileOnly`  or  `implementation`  configurations (see previous section)
     
-4.  Declare your test compile dependencies in the  `testCompileOnly`  or  `testImplementation`  configurations
+7.  Declare your test compile dependencies in the  `testCompileOnly`  or  `testImplementation`  configurations
     
-5.  Run the  `compileJava`  task for the production code and  `compileTestJava`  for the tests
+8.  Run the  `compileJava`  task for the production code and  `compileTestJava`  for the tests
     
 ### [파일과 디렉토리 위치 바꾸기](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
 
@@ -280,11 +282,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTcyODI1MiwtMjEwNzg5NTQ4NywyOD
-I4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4MzEsNDcyMzA3NjYs
-MjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MTU0NzAxNzEsLTU3Nz
-Q5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4
-LC0xODc0OTA2NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxOD
-A5NzM0NiwyMDUxNDk2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzZd
-fQ==
+eyJoaXN0b3J5IjpbLTEzMzYzODY4OTIsLTIxMDc4OTU0ODcsMj
+gyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2
+LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nz
+c0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2
+OCwtMTg3NDkwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MT
+gwOTczNDYsMjA1MTQ5NjI5MCw0NTE0NDA0MjcsNDg1MjEzMzM2
+XX0=
 -->
