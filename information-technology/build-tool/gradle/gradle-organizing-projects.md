@@ -160,13 +160,14 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 Top-Down 방식으로 중요한 task를 알아보겠습니다. 
 
 `build` 
-: 
-* 프로젝트의 모든 빌드를 수행하는 task입니다. 
-빌드 task를 위해선 `check`,  `assemble` tasks가 선행되어야 합니다.
+: 프로젝트의 모든 빌드를 수행하는 task
+`check`,  `assemble` tasks가 선행되어야 합니다.
 Base Plugin으로 부터 왔습니다.
 
 `check`
-: 테스트를 수행해보는 것과 같은 verification tasks들을 수행하는 것을 통합하는 task입니다. 몇몇 플러그인은 그들만의 verification tasks를 `check` task에 넣기도 합니다. 
+: 테스트를 수행해보는 것과 같은 verification tasks들을 수행하는 것을 통합하는 task. 
+`test` task가 선행되어야 합니다.
+어떤 플러그인은 그들만의 verification tasks를 `check` task에 넣기도 합니다. 
 Base Plugin으로 부터 왔습니다.
 
 
@@ -419,7 +420,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5OTIxMTc5NSwtMTQ5Mzc4MDAwMSwxND
+eyJoaXN0b3J5IjpbMTYxMDIxNTE2OSwtMTQ5Mzc4MDAwMSwxND
 MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
 MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
 EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
