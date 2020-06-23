@@ -148,6 +148,8 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 ## [Compiling](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:compile)
 
+실제 생성 코드와 테스트 코드를 컴파일하는건 아래 컨벤션을 따르면 비교적 
+
 Compiling both your production and test code can be trivially easy if you follow the conventions:
 
 1.  Put your production source code under the  _src/main/java_  directory
@@ -278,11 +280,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkzMTg0MDUxLC0yMTA3ODk1NDg3LDI4Mj
-gzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgzMSw0NzIzMDc2Niwy
-MTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3MSwtNTc3ND
-kwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0LC05MDQzMjg2Njgs
-LTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MD
-k3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNl19
-
+eyJoaXN0b3J5IjpbMTI4OTcyODI1MiwtMjEwNzg5NTQ4NywyOD
+I4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4MzEsNDcyMzA3NjYs
+MjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MTU0NzAxNzEsLTU3Nz
+Q5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4
+LC0xODc0OTA2NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxOD
+A5NzM0NiwyMDUxNDk2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzZd
+fQ==
 -->
