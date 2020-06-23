@@ -150,6 +150,9 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 사실 전체 프로젝트를 빌드하고 수행하기 위해선 다양한 플러그인이 필요합니다. 여기선 가장 핵심적인 Java Plugin이 어떤 기능을 가지고 있는지 알아보겠습니다. 
 
+![javaPluginTasks](https://docs.gradle.org/current/userguide/img/javaPluginTasks.png)
+
+
 ## Tasks 
 
 `compileJava`  —  [JavaCompile](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html)
@@ -219,9 +222,6 @@ Deletes the project build directory.
 
 Deletes files created by the specified task. For example,  `cleanJar`  will delete the JAR file created by the  `jar`  task and  `cleanTest`  will delete the test results created by the  `test`  task.
 
-### [](https://docs.gradle.org/current/userguide/java_plugin.html#java_source_set_tasks)[SourceSet Tasks](https://docs.gradle.org/current/userguide/java_plugin.html#java_source_set_tasks)
-
-![](https://miro.medium.com/max/3336/1*E5JMRbW525OHTa1Op7dGGA.png)
 
 만약 자바 라이브러리 플러그인을 적용한다면 아래 tasks를 바로 사용할 수 있습니다.
 
@@ -390,11 +390,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NTUyMzEyNiwtMTQ5Mzc4MDAwMSwxND
-MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
-MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
-EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
-MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MT
-U0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0
-NF19
+eyJoaXN0b3J5IjpbMzA1NDQ0ODQ3LC0xNDkzNzgwMDAxLDE0Mz
+I1NTc0MjYsLTU4NTA2ODY1NCwyMDU3NDgzMjIxLDE2MzgzNDkx
+Miw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMT
+A3ODk1NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgz
+MSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNT
+Q3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0
+XX0=
 -->
