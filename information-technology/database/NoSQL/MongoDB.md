@@ -93,14 +93,14 @@ db.inventory.insertMany([
 ### [Read(Query)](https://docs.mongodb.com/manual/tutorial/query-documents/)
 
 db.collection.find()
-: collection의 문서를 찾는 연산.
+: collection의 문서를 찾는 연산. 특별히 인자를 넣지 않으면 collection에 전체 문서를 찾습니다.
 
-This page provides examples of query operations using the [`db.collection.find()`](https://docs.mongodb.com/manual/reference/method/db.collection.find/#db.collection.find "db.collection.find()") method in the [`mongo`](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo "bin.mongo") shell. The examples on this page use the `inventory` collection. To populate the `inventory` collection, run the following:
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NzkxNDMsLTIwNTcxNzA3OTAsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbLTI0NDUyNDIzNSwxMTg3OTE0MywtMjA1Nz
+E3MDc5MCw3MzA5OTgxMTZdfQ==
 -->
