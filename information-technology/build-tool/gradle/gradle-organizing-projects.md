@@ -162,22 +162,22 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 `jar`
 : 컴파일된 main 클래스들과 src/main/resources의 resource를 합쳐 단일 jar 파일로 합침
 
-위의 ta
-실제 생성 코드와 테스트 코드를 컴파일하는건 아래 컨벤션을 따르면 매우 간단합니다.
+위의 tasks를 기반으로, 실제 생성 코드와 테스트 코드를 컴파일하는건 아래 컨벤션을 따르면 매우 간단합니다.
 
 1. 생성 코드를 src/main/java 디렉토리에 저장
 2. 테스트 코드는 src/test/java 디렉토리에 저장
-3. 생성 컴파일의 의존성을 `compileOnly`  or  `implementation` 으로 선언합니다.
-
-4.  Put your production source code under the  _src/main/java_  directory
+3. 생성 컴파일의 의존성을 `compileOnly`  or  `implementation` 으로 설정.
+4. 테스트 커파일 의존성을 `testCompileOnly`  or  `testImplementation` 으로 설정.
+5.  `compileJava`  task ㄴand  `compileTestJava`  for the tests
+6.  Put your production source code under the  _src/main/java_  directory
     
-5.  Put your test source code under  _src/test/java_
+7.  Put your test source code under  _src/test/java_
     
-6.  Declare your production compile dependencies in the  `compileOnly`  or  `implementation`  configurations (see previous section)
+8.  Declare your production compile dependencies in the  `compileOnly`  or  `implementation`  configurations (see previous section)
     
-7.  Declare your test compile dependencies in the  `testCompileOnly`  or  `testImplementation`  configurations
+9.  Declare your test compile dependencies in the  `testCompileOnly`  or  `testImplementation`  configurations
     
-8.  Run the  `compileJava`  task for the production code and  `compileTestJava`  for the tests
+10.  Run the  `compileJava`  task for the production code and  `compileTestJava`  for the tests
 
 
 
@@ -335,7 +335,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNTY1MTMyMywtNTg1MDY4NjU0LDIwNT
+eyJoaXN0b3J5IjpbMjA4NzQ5ODg4MSwtNTg1MDY4NjU0LDIwNT
 c0ODMyMjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2
 LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5Nj
 Q3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYs
