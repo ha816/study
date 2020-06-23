@@ -56,6 +56,7 @@ brew services stop mongodb-community
 * 만약 생성할 문서가 들어갈 collection이 현재 없다면, insert 연산 수행시 자동으로 생성합니다.
 * MongoDB에선, 컬렉션에 저장된 각 문서는 유니크한 `_id`	필드를 primary key	처럼 가져야 합니다. 만약 삽입하는 문서에 `_id`필드가 빠져있다면, MongoDB 드라이버가 자동으로 Objectid로 `_id`필드를 생성합니다.
 * [upsert: true](https://docs.mongodb.com/manual/reference/method/db.collection.update/#upsert-parameter)로 동작하는 update 연산에서도 동일하게 적용됩니다. 
+* MongoDB의 한 문서에 대한 모든 쓰기 작업은 atomic 합니다. 
 
 
 ### Atomicity
@@ -97,6 +98,6 @@ db.inventory.insertMany([
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MjEwMzkyMSwtMjA1NzE3MDc5MCw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbODUwMjEyMTg1LC0yMDU3MTcwNzkwLDczMD
+k5ODExNl19
 -->
