@@ -56,11 +56,17 @@ brew services stop mongodb-community
 db.collection.insertOne()
 : collection에 단일 문서를 추가합니다. 만약 문서가 `_id`  필드 값을 가지지 않으면, MongoDB에서 자동적으로 ObjectId 값으로  `_id` 필드를 추가합니다. 
 
+아래 예제에서는 `inventory`  collection 안에 한 문서를 추가합니다. 
+
 ```
 db.inventory.insertOne(
    { item: "canvas", qty: 100, tags: ["cotton"], size: { h: 28, w: 35.5, uom: "cm" } }
 )
 ```
+
+db.collection.insertMany()
+: 한 컬렉션에 다수의 문서를 삽입할 수 있습니다.  Pass an array of documents to the method. 
+
 
 `insertOne()`의 결과로 새롭게 삽입된 문서의 `_id` 필드 값을 포함한 하나의 문서를 반환합니다.  간단하게 막 삽입한 문서를 보고 싶다면 아래 명령을 수행합니다.
 
@@ -70,9 +76,8 @@ db.inventory.find( { item: "canvas" } )
 
 ## Insert Multiple Documents[](https://docs.mongodb.com/manual/tutorial/insert-documents/#insert-multiple-documents "Permalink to this headline")
 
-New in version 3.2.
 
-[`db.collection.insertMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/#db.collection.insertMany "db.collection.insertMany()")  can insert  _multiple_  [documents](https://docs.mongodb.com/manual/core/document/#bson-document-format)  into a collection. Pass an array of documents to the method.
+
 
 The following example inserts three new documents into the  `inventory`  collection. If the documents do not specify an  `_id`  field, MongoDB adds the  `_id`  field with an ObjectId value to each document. See  [Insert Behavior](https://docs.mongodb.com/manual/tutorial/insert-documents/#write-op-insert-behavior).
 
@@ -131,6 +136,6 @@ SEE ALSO
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzIyMzY0OTgsLTIwNTcxNzA3OTAsNz
+eyJoaXN0b3J5IjpbLTExMTUxMjUwODMsLTIwNTcxNzA3OTAsNz
 MwOTk4MTE2XX0=
 -->
