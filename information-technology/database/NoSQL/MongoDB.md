@@ -51,11 +51,10 @@ brew services stop mongodb-community
 
 ## CRUD Operations
 
-### Create(Insert)
+### [Create(Insert)](https://docs.mongodb.com/manual/tutorial/insert-documents/)
 
-Insert(Create)에 해당하는 문서를 보자. [https://docs.mongodb.com/manual/tutorial/insert-documents/](https://docs.mongodb.com/manual/tutorial/insert-documents/)
-
-`db.collection.insertOne()`을 사용하면 단일 문서를 추가합니다. 아래 예제에서는 `inventory`  collection 안에 한 문서를 추가합니다. 만약 문서가 `_id`  필드 값을 가지지 않으면, MongoDB에서 자동적으로 ObjectId 값으로  `_id` 필드를 추가합니다. 
+db.collection.insertOne()
+: collection에 단일 문서를 추가합니다. 만약 문서가 `_id`  필드 값을 가지지 않으면, MongoDB에서 자동적으로 ObjectId 값으로  `_id` 필드를 추가합니다. 
 
 ```
 db.inventory.insertOne(
@@ -132,6 +131,6 @@ SEE ALSO
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTM2MjUyLC0yMDU3MTcwNzkwLDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbLTE4NzIyMzY0OTgsLTIwNTcxNzA3OTAsNz
+MwOTk4MTE2XX0=
 -->
