@@ -216,7 +216,8 @@ Base Plugin으로 추가되었습니다.
 
 ## [Source sets](https://docs.gradle.org/current/userguide/java_plugin.html#source_sets)
 
-The plugin adds the following  [source sets](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets):
+SourceSet은 자바 소스와 자원 파일들의 그룹이다. 
+
 
 `main`
 
@@ -427,11 +428,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0ODI5MDE2LC0xNDkzNzgwMDAxLDE0Mz
-I1NTc0MjYsLTU4NTA2ODY1NCwyMDU3NDgzMjIxLDE2MzgzNDkx
-Miw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMT
-A3ODk1NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgz
-MSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNT
-Q3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0
-XX0=
+eyJoaXN0b3J5IjpbLTk3MTExMjMwNiwxNDQ4MjkwMTYsLTE0OT
+M3ODAwMDEsMTQzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMy
+MjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMD
+A1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2
+MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4Mj
+Q1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEy
+MF19
 -->
