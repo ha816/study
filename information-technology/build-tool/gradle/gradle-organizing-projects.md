@@ -146,9 +146,77 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
             └── Utils.kt
 ```
 
-# Java Plugin
+# [Java Plugin](https://docs.gradle.org/current/userguide/java_plugin.html)
 
 사실 전체 프로젝트를 빌드하고 수행하기 위해선 다양한 플러그인이 필요합니다. 여기선 가장 핵심적인 Java Plugin이 어떤 기능을 가지고 있는지 알아보겠습니다. 
+
+## Tasks 
+
+`compileJava`  —  [JavaCompile](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html)
+
+_Depends on_: All tasks which contribute to the compilation classpath, including  `jar`  tasks from projects that are on the classpath via project dependencies
+
+Compiles production Java source files using the JDK compiler.
+
+`processResources`  —  [Copy](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Copy.html)
+
+Copies production resources into the production resources directory.
+
+`classes`
+
+_Depends on_:  `compileJava`,  `processResources`
+
+This is an aggregate task that just depends on other tasks. Other plugins may attach additional compilation tasks to it.
+
+`compileTestJava`  —  [JavaCompile](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html)
+
+_Depends on_:  `classes`, and all tasks that contribute to the test compilation classpath
+
+Compiles test Java source files using the JDK compiler.
+
+`processTestResources`  —  [Copy](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Copy.html)
+
+Copies test resources into the test resources directory.
+
+`testClasses`
+
+_Depends on_:  `compileTestJava`,  `processTestResources`
+
+This is an aggregate task that just depends on other tasks. Other plugins may attach additional test compilation tasks to it.
+
+`jar`  —  [Jar](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html)
+
+_Depends on_:  `classes`
+
+Assembles the production JAR file, based on the classes and resources attached to the  `main`  source set.
+
+`javadoc`  —  [Javadoc](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.javadoc.Javadoc.html)
+
+_Depends on_:  `classes`
+
+Generates API documentation for the production Java source using Javadoc.
+
+`test`  —  [Test](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.Test.html)
+
+_Depends on_:  `testClasses`, and all tasks which produce the test runtime classpath
+
+Runs the unit tests using JUnit or TestNG.
+
+`uploadArchives`  —  [Upload](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Upload.html)
+
+_Depends on_:  `jar`, and any other task that produces an artifact attached to the  `archives`  configuration
+
+Uploads artifacts in the  `archives`  configuration — including the production JAR file — to the configured repositories. This task is  _deprecated_, you should use one of the  [Ivy](https://docs.gradle.org/current/userguide/publishing_ivy.html#publishing_ivy)  or  [Maven](https://docs.gradle.org/current/userguide/publishing_maven.html#publishing_maven)  publishing plugins instead.
+
+`clean`  —  [Delete](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Delete.html)
+
+Deletes the project build directory.
+
+`clean_TaskName_`  —  [Delete](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Delete.html)
+
+Deletes files created by the specified task. For example,  `cleanJar`  will delete the JAR file created by the  `jar`  task and  `cleanTest`  will delete the test results created by the  `test`  task.
+
+### [](https://docs.gradle.org/current/userguide/java_plugin.html#java_source_set_tasks)[SourceSet Tasks](https://docs.gradle.org/current/userguide/java_plugin.html#java_source_set_tasks)
 
 ![](https://miro.medium.com/max/3336/1*E5JMRbW525OHTa1Op7dGGA.png)
 
@@ -319,7 +387,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3OTExNjk0MiwtMTQ5Mzc4MDAwMSwxND
+eyJoaXN0b3J5IjpbLTk3NDA3MjI4NywtMTQ5Mzc4MDAwMSwxND
 MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
 MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
 EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
