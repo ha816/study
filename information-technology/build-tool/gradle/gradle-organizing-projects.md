@@ -146,7 +146,9 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
             └── Utils.kt
 ```
 
-# Build
+# Java Plugin
+
+사실 전체 프로젝트를 빌드하고 수행하기 위해선 다양한 플러그인이 필요합니다. 여기선 가장 핵심적인 Java Plugin이 어떤 기능을 가지고 있는지 알아보겠습니다. 
 
 ![](https://miro.medium.com/max/3336/1*E5JMRbW525OHTa1Op7dGGA.png)
 
@@ -317,11 +319,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTM3ODAwMDEsMTQzMjU1NzQyNiwtNT
-g1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0OTEyLDg5NDY4NzIx
-OCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMj
-gyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2
-LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nz
-c0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2
-OF19
+eyJoaXN0b3J5IjpbMTg3OTExNjk0MiwtMTQ5Mzc4MDAwMSwxND
+MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
+MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
+EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
+MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MT
+U0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0
+NF19
 -->
