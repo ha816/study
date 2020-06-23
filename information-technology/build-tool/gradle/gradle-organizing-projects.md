@@ -154,6 +154,9 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 `compileJava`  —  [JavaCompile](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html)
 
+JDK 컴파일러를 이용해서 자바 소스 파일들을 컴파일 합니다.
+
+
 _Depends on_: All tasks which contribute to the compilation classpath, including  `jar`  tasks from projects that are on the classpath via project dependencies
 
 Compiles production Java source files using the JDK compiler.
@@ -387,7 +390,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NDA3MjI4NywtMTQ5Mzc4MDAwMSwxND
+eyJoaXN0b3J5IjpbLTk0NTUyMzEyNiwtMTQ5Mzc4MDAwMSwxND
 MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
 MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
 EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
