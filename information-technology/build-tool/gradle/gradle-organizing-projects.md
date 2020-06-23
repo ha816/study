@@ -197,48 +197,18 @@ Base Plugin으로 추가되었습니다.
 `uploadArchives` 
 :  `archives` task 설정된 아티팩터들을 레포지토리로 업로드합니다. 더 이상 사용되지 않으며, Ivy나 Maven 레포지토리를 이용합시다.
 
-
 `jar`  
 : main  source set으로 설정된 classes와 resources를 기반으로, 생성된 JAR file을 모읍니다.
 `classes`가 필요합니다.
 
-### 
+### General Tasks
 
 `classes`
 : 단순히 다른 tasks에 의지하는 통합하는 task.	어쩌면 다른 플러그인이 추가적인 컴파일 task를 추가할지도 모릅니다.
-`compileJava`,  `processResources` task
+`compileJava`,  `processResources` tasks가 선행되어야 합니다.
 
 
 
-
-_Depends on_:  `compileJava`,  `processResources`
-
-This is an aggregate task that just depends on other tasks. Other plugins may attach additional compilation tasks to it.
-
-
-
-`compileJava`
-:  src/main/java 하위에 모든 자바 소스 파일을 컴파일
-
-`compileTestJava`
-:  
-
-`test`
-:  src/test/java의 테스트를 수행
-
-`jar`
-: 컴파일된 main 클래스들과 src/main/resources의 resource를 합쳐 단일 jar 파일로 합침
-
-위의 tasks를 기반으로, 실제 생성 코드와 테스트 코드를 컴파일하는건 아래 컨벤션을 따르면 매우 간단합니다.
-
-1. 생성 코드를 src/main/java 디렉토리에 저장, 반면 테스트 코드는 src/test/java 디렉토리에 저장
-3. 생성 코드의 컴파일 의존성을 `compileOnly`  or  `implementation` 을 활용하여 설정.
-4. 테스트 코드의 컴파일 의존성을 `testCompileOnly`  or  `testImplementation` 으로 설정.
-5. 마지막으로  `compileJava`  task는 실제 생성 코드를 컴파일하며 `compileTestJava` 는 테스트 코드를 컴파일
-
-이것만으로는 간단하지 않은 자바 프로젝트를 빌드하는데 충분치 않습니다.  왜냐하면 실제 동작시 사용할 의존성이 정리되어 있지 않기 때문입니다. 
-
-자바 라이브러리 플러그인은 위의 tasks를 활용하여 표준 [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)에 맞게 통합하였습니다.
     
 ## [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)
 
@@ -382,11 +352,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjAxMjU5NTQsLTE0OTM3ODAwMDEsMT
-QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
-OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
-IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
-ODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNj
-E1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2
-NDRdfQ==
+eyJoaXN0b3J5IjpbNzAzNzUyMTI4LC0xNDkzNzgwMDAxLDE0Mz
+I1NTc0MjYsLTU4NTA2ODY1NCwyMDU3NDgzMjIxLDE2MzgzNDkx
+Miw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMT
+A3ODk1NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgz
+MSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNT
+Q3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0
+XX0=
 -->
