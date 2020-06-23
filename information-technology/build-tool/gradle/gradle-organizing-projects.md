@@ -241,11 +241,9 @@ sourceSets {
 
 그 밖에 상세한 설정값들은 [https://docs.gradle.org/current/userguide/java_plugin.html](https://docs.gradle.org/current/userguide/java_plugin.html)을 참고합시다. 
 
-source set을 활용하는 다른 예제를 보겠습니다. 아래 예제에선 `integTest`라는 테스트를 위한 source set을 
+source set을 활용하는 다른 예제를 보겠습니다. 아래 예제에선 `integTest`라는 테스트를 위한 source set을 만들고 수행하는 과정을 보이겠습니다.
 
-한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. (unit tests, integration tests, functional test과 같은)
-
-각 타입의 테스트 소스 코드는 소스 디렉토리에 국한된 곳에 저장되어야 좋습니다. 이렇게 나눠진 테스트 코드는 각 테스트 타입을 독립적으로 수행할 수 있어 유지보수와 관심사의 분리에 좋습니다. 
+한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. (unit tests, integration tests, functional test과 같은) 각 타입의 테스트 소스 코드는 소스 디렉토리에 국한된 곳에 저장되어야 좋습니다. 이렇게 나눠진 테스트 코드는 각 테스트 타입을 독립적으로 수행할 수 있어 유지보수와 관심사의 분리에 좋습니다. 
 
 아래 소스 트리는 자바 기반 프로젝트에서 integration test를 어떻게 나누는지 보여줍니다.
 
@@ -300,11 +298,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjk1MTg1MywxNDc0NzY3NjcyLC0xMj
-g0NzgwNjUsMTQ0ODI5MDE2LC0xNDkzNzgwMDAxLDE0MzI1NTc0
-MjYsLTU4NTA2ODY1NCwyMDU3NDgzMjIxLDE2MzgzNDkxMiw4OT
-Q2ODcyMTgsMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMTA3ODk1
-NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgzMSw0Nz
-IzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3
-MV19
+eyJoaXN0b3J5IjpbMzY2NzExODM0LDE0NzQ3Njc2NzIsLTEyOD
+Q3ODA2NSwxNDQ4MjkwMTYsLTE0OTM3ODAwMDEsMTQzMjU1NzQy
+NiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0OTEyLDg5ND
+Y4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0
+ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3Mj
+MwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcx
+XX0=
 -->
