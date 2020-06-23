@@ -146,6 +146,35 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
             └── Utils.kt
 ```
 
+## Building Java
+
+By applying the Java Library Plugin, you get a whole host of features:
+
+-   A  `compileJava`  task that compiles all the Java source files under  _src/main/java_
+    
+-   A  `compileTestJava`  task for source files under  _src/test/java_
+    
+-   A  `test`  task that runs the tests from  _src/test/java_
+    
+-   A  `jar`  task that packages the  `main`  compiled classes and resources from  _src/main/resources_  into a single JAR named  _<project>-<version>.jar_
+    
+-   A  `javadoc`  task that generates Javadoc for the  `main`  classes
+    
+
+This isn’t sufficient to build any non-trivial Java project — at the very least, you’ll probably have some file dependencies. But it means that your build script only needs the information that is specific to  _your_  project.
+
+Although the properties in the example are optional, we recommend that you specify them in your projects. The compatibility options mitigate against problems with the project being built with different Java compiler versions, and the version string is important for tracking the progression of the project. The project version is also used in archive names by default.
+
+The Java Library Plugin also integrates the above tasks into the standard  [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks):
+
+-   `jar`  is attached to  `assemble`  [[1](https://docs.gradle.org/current/userguide/building_java_projects.html#_footnotedef_1 "View footnote.")]
+    
+-   `test`  is attached to  `check`
+    
+
+The rest of the chapter explains the different avenues for customizing the build to your requirements. You will also see later how to adjust the build for libraries, applications, web apps and enterprise apps.
+
+
 ## [Compiling](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:compile)
 
 실제 생성 코드와 테스트 코드를 컴파일하는건 아래 컨벤션을 따르면 비교적 간단합니다.
@@ -282,11 +311,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDUzNTc5MSwtMjEwNzg5NTQ4NywyOD
-I4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4MzEsNDcyMzA3NjYs
-MjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MTU0NzAxNzEsLTU3Nz
-Q5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4
-LC0xODc0OTA2NDY4LC0xNDg2MjgxOTkxLDk5ODY5NTUxLDUxOD
-A5NzM0NiwyMDUxNDk2MjkwLDQ1MTQ0MDQyNyw0ODUyMTMzMzZd
-fQ==
+eyJoaXN0b3J5IjpbMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMT
+A3ODk1NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgz
+MSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNT
+Q3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0
+LC05MDQzMjg2NjgsLTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOT
+k4Njk1NTEsNTE4MDk3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3
+XX0=
 -->
