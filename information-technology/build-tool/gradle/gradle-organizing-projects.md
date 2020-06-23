@@ -61,18 +61,7 @@ if( file('../soda').exists() ) {
 rootProject.name은 최상위 프로젝트의 이름을 말합니다. 기본적으로는 프로젝트 폴더명으로 만들어집니다. 
 그리고 tropicana 프로젝트의 하위프로젝트로 core, gateway, internal ... 등이 있습니다. 루트 프로젝트 하위에 프로젝트 폴더가 있어야 합니다.
 
-## [Always define a settings file](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#always_define_a_settings_file)
-
-Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다. 이를 위해서 root 디렉토리부터 하위 디렉토리를 전부 찾기 때문에, 항상`settings.gradle`을 root 디렉토리에 넣도록 합시다. 
-
-전형적인 Gradle 프로젝트는 아래와 같습니다. 
-
-```groovy
-.
-├── build.gradle
-└── settings.gradle
-```
-
+Gradle은 매번 빌드가 발생할때 마다 `settings.gradle`를 찾습니다. 이를 위해서 root 디렉토리부터 하위 디렉토리를 전부 찾습니다. 빌드 성능을 위해서라도 반드시 `settings.gradle`을 root 디렉토리에 넣도록 합시다. 
 
 ## build.gradle
 
@@ -229,11 +218,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyND
-UxMjEyNiw2MTU0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIw
-LDkyMjYxOTY0NCwtOTA0MzI4NjY4LC0xODc0OTA2NDY4LC0xND
-g2MjgxOTkxLDk5ODY5NTUxLDUxODA5NzM0NiwyMDUxNDk2Mjkw
-LDQ1MTQ0MDQyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5ND
-EyNzEyNyw2MTMyMTQ3MDcsMTc1NzkzNjI5MiwtMTc1Mjk5NTYx
-NF19
+eyJoaXN0b3J5IjpbMTY0NDk5NTQ3NCw0NzIzMDc2NiwyMTI4Nj
+cyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3MSwtNTc3NDkwMzQx
+LC05MzM2MjExMjAsOTIyNjE5NjQ0LC05MDQzMjg2NjgsLTE4Nz
+Q5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MDk3MzQ2
+LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNiwtMTk5Nz
+k1NDg1NCwxMTk0MTI3MTI3LDYxMzIxNDcwNywxNzU3OTM2Mjky
+XX0=
 -->
