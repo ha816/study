@@ -171,78 +171,21 @@ Base Plugin으로 부터 왔습니다.
 어떤 플러그인은 그들만의 verification tasks를 `check` task에 넣기도 합니다. 
 
 `assemble`
-: 프로젝트의 모든 아카이브를 통합하는 task.
+: 프로젝트의 모든 아카이브를 통합하는 task
 Base Plugin으로 추가되었습니다. 
 `jar` task와 `archives`  configuration로 정의된 아티팩트를 생성하는 모든 다른 task가 필요합니다. 
 
 ### Java Plugin Tasks
 
-`compileJava`  —  [JavaCompile](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html)
-
-JDK 컴파일러를 이용해서 자바 소스 파일들을 컴파일 합니다.
-
-
-_Depends on_: All tasks which contribute to the compilation classpath, including  `jar`  tasks from projects that are on the classpath via project dependencies
-
-Compiles production Java source files using the JDK compiler.
-
-`processResources`  —  [Copy](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Copy.html)
-
-Copies production resources into the production resources directory.
-
-`classes`
-
-_Depends on_:  `compileJava`,  `processResources`
-
-This is an aggregate task that just depends on other tasks. Other plugins may attach additional compilation tasks to it.
-
-`compileTestJava`  —  [JavaCompile](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html)
-
-_Depends on_:  `classes`, and all tasks that contribute to the test compilation classpath
-
-Compiles test Java source files using the JDK compiler.
-
-`processTestResources`  —  [Copy](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Copy.html)
-
-Copies test resources into the test resources directory.
-
-`testClasses`
-
-_Depends on_:  `compileTestJava`,  `processTestResources`
-
-This is an aggregate task that just depends on other tasks. Other plugins may attach additional test compilation tasks to it.
-
-`jar`  —  [Jar](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html)
-
-_Depends on_:  `classes`
-
-Assembles the production JAR file, based on the classes and resources attached to the  `main`  source set.
-
-`javadoc`  —  [Javadoc](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.javadoc.Javadoc.html)
-
-_Depends on_:  `classes`
-
-Generates API documentation for the production Java source using Javadoc.
-
 `test`  —  [Test](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.Test.html)
+: JUnit 또는 TestNG를 통해서 unit Runs the unit tests using JUnit or TestNG.
 
 _Depends on_:  `testClasses`, and all tasks which produce the test runtime classpath
 
 Runs the unit tests using JUnit or TestNG.
 
-`uploadArchives`  —  [Upload](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Upload.html)
 
-_Depends on_:  `jar`, and any other task that produces an artifact attached to the  `archives`  configuration
 
-Uploads artifacts in the  `archives`  configuration — including the production JAR file — to the configured repositories. This task is  _deprecated_, you should use one of the  [Ivy](https://docs.gradle.org/current/userguide/publishing_ivy.html#publishing_ivy)  or  [Maven](https://docs.gradle.org/current/userguide/publishing_maven.html#publishing_maven)  publishing plugins instead.
-
-`clean`  —  [Delete](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Delete.html)
-
-Deletes the project build directory.
-
-`clean_TaskName_`  —  [Delete](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Delete.html)
-
-Deletes files created by the specified task. For example,  `cleanJar`  will delete the JAR file created by the  `jar`  task and  `cleanTest`  will delete the test results created by the  `test`  task.
 
 
 만약 자바 라이브러리 플러그인을 적용한다면 아래 tasks를 바로 사용할 수 있습니다.
@@ -412,11 +355,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxODQ0NTA0OCwtMTQ5Mzc4MDAwMSwxND
-MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
-MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
-EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
-MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MT
-U0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0
-NF19
+eyJoaXN0b3J5IjpbLTE3MzQ1Nzc5ODQsLTE0OTM3ODAwMDEsMT
+QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
+OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
+IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
+ODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNj
+E1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2
+NDRdfQ==
 -->
