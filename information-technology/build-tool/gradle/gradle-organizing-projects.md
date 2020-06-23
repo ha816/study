@@ -125,6 +125,31 @@ subprojects {
 
 최상위 폴더에 build.gradle 파일이 존재하는 것 처럼, 각 하위 프로젝트의 상위에도 build.gradle 파일을 만들어 유지보수 할 수 있습니다.
 
+## src/main/... 
+
+
+Gradle의 language 플러그인은 소스 코드를 발견하고 컴파일 하는데 컨벤션을 판별합니다. 예를 들어, [Java plugin](https://docs.gradle.org/current/userguide/java_plugin.html#java_plugin)을 사용하는 프로젝트는 자동적으로 `src/main/java`의 디렉토리의 코드를 컴파일합니다. 다른 플러그인도 같은 패턴을 따릅니다. 
+
+디렉토리 경로의 마지막 일부는 기대되는 언어의 소스 파일들 나타냅니다.
+
+어떤 컴파일러는 같은 소스 디렉토리에서 다수의 언어를 크로스 컴파일링이 가능합니다. Groovy 컴파일러의 경우, `src/main/groovy`에 있는 자바와 Groovy 코드가 혼합된 소스도 다룰 수 있습니다. 
+
+언어에 따라 디렉토리를 나누고 언어에 맞는 소스를 할당하는것을 Gradle에선 추천하고 있습니다. 왜냐하면 빌드가 더 잘 동작할 뿐만 아니라 사용자와 빌드 모두가 기본 설정을 따라갈 수 있어 편하기 때문입니다.
+
+아래 소스 트리는 자바와 코틀린 소스 파일들을 가지고 있습니다. 자바 파일은 `src/main/java`에 있고 Kotlin 파일은 `src/main/kotlin`에 있습니다.
+
+```groovy.
+├── build.gradle
+├── settings.gradle
+└── src
+    └── main
+        ├── java
+        │   └── HelloWorld.java
+        └── kotlin
+            └── Utils.kt
+```
+
+
 ## [Separate source files per test type](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
 
 한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. (unit tests, integration tests, functional test or smoke tests와 같은)
@@ -192,11 +217,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA1NzgyMSwxNzk2NDc5MzYwLDE2NDY2Mj
-E4MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2
-MTU0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOT
-Y0NCwtOTA0MzI4NjY4LC0xODc0OTA2NDY4LC0xNDg2MjgxOTkx
-LDk5ODY5NTUxLDUxODA5NzM0NiwyMDUxNDk2MjkwLDQ1MTQ0MD
-QyNyw0ODUyMTMzMzYsLTE5OTc5NTQ4NTQsMTE5NDEyNzEyN119
-
+eyJoaXN0b3J5IjpbLTE0NDc3Nzc4NTMsMTc5NjQ3OTM2MCwxNj
+Q2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIx
+MjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5Mj
+I2MTk2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2OCwtMTQ4NjI4
+MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MTQ5NjI5MCw0NT
+E0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0LDExOTQxMjcx
+MjddfQ==
 -->
