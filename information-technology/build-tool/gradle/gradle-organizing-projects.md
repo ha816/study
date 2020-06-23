@@ -146,7 +146,9 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
             └── Utils.kt
 ```
 
-## Java Library Plugin
+# Build
+
+![](https://miro.medium.com/max/3336/1*E5JMRbW525OHTa1Op7dGGA.png)
 
 만약 자바 라이브러리 플러그인을 적용한다면 아래 tasks를 바로 사용할 수 있습니다.
 
@@ -315,11 +317,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNT
-c0ODMyMjEsMTYzODM0OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2
-LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5Nj
-Q3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYs
-LTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMz
-YyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2
+eyJoaXN0b3J5IjpbLTE0OTM3ODAwMDEsMTQzMjU1NzQyNiwtNT
+g1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0OTEyLDg5NDY4NzIx
+OCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMj
+gyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2
+LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nz
+c0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2
 OF19
 -->
