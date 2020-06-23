@@ -146,11 +146,73 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
             └── Utils.kt
 ```
 
-# Java Plugin
+## [Compiling your code](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:compile)
 
-The Java plugin adds Java compilation along with testing and bundling capabilities to a project. It serves as the basis for many of the other JVM language Gradle plugins. You can find a comprehensive introduction and overview to the Java Plugin in the  [Building Java Projects](https://docs.gradle.org/current/userguide/building_java_projects.html#building_java_projects)  chapter.
+Compiling both your production and test code can be trivially easy if you follow the conventions:
 
-As indicated above, this plugin adds basic building blocks for working with JVM projects. Its feature set has been superseded by other plugins, offering more features based on your project type. Instead of applying it directly to your project, you should look into the  `java-library`  or  `application`  plugins or one of the supported alternative JVM language.
+1.  Put your production source code under the  _src/main/java_  directory
+    
+2.  Put your test source code under  _src/test/java_
+    
+3.  Declare your production compile dependencies in the  `compileOnly`  or  `implementation`  configurations (see previous section)
+    
+4.  Declare your test compile dependencies in the  `testCompileOnly`  or  `testImplementation`  configurations
+    
+5.  Run the  `compileJava`  task for the production code and  `compileTestJava`  for the tests
+    
+
+Other JVM language plugins, such as the one for  [Groovy](https://docs.gradle.org/current/userguide/groovy_plugin.html#groovy_plugin), follow the same pattern of conventions. We recommend that you follow these conventions wherever possible, but you don’t have to. There are several options for customization, as you’ll see next.
+
+### [](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)[Customizing file and directory locations](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:custom_java_source_set_paths)
+
+Imagine you have a legacy project that uses an  _src_  directory for the production code and  _test_  for the test code. The conventional directory structure won’t work, so you need to tell Gradle where to find the source files. You do that via source set configuration.
+
+Each source set defines where its source code resides, along with the resources and the output directory for the class files. You can override the convention values by using the following syntax:
+
+Example 3. Declaring custom source directories
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+sourceSets {
+    main {
+         java {
+            srcDirs = ['src']
+         }
+    }
+
+    test {
+        java {
+            srcDirs = ['test']
+        }
+    }
+}
+```
+
+Now Gradle will only search directly in  _src_  and  _test_  for the respective source code. What if you don’t want to override the convention, but simply want to  _add_  an extra source directory, perhaps one that contains some third-party source code you want to keep separate? The syntax is similar:
+
+Example 4. Declaring custom source directories additively
+
+`Groovy``Kotlin`
+
+build.gradle
+
+```groovy
+sourceSets {
+    main {
+        java {
+            srcDir 'thirdParty/src/main/java'
+        }
+    }
+}
+```
+
+Crucially, we’re using the  _method_  `srcDir()`  here to append a directory path, whereas setting the  `srcDirs`  property replaces any existing values. This is a common convention in Gradle: setting a property replaces values, while the corresponding method appends values.
+
+You can see all the properties and methods available on source sets in the DSL reference for  [SourceSet](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.SourceSet.html)  and  [SourceDirectorySet](https://docs.gradle.org/current/dsl/org.gradle.api.file.SourceDirectorySet.html). Note that  `srcDirs`  and  `srcDir()`  are both on  `SourceDirectorySet`.
+
 
 
 ## [Separate source files per test type](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
@@ -220,11 +282,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDc4OTU0ODcsMjgyODM5MjAsMTc5Nj
-Q3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYs
-LTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMz
-YyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3NDkwNjQ2
-OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDYsMjA1MT
-Q5NjI5MCw0NTE0NDA0MjcsNDg1MjEzMzM2LC0xOTk3OTU0ODU0
-XX0=
+eyJoaXN0b3J5IjpbNDU2NzIwNjE3LC0yMTA3ODk1NDg3LDI4Mj
+gzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgzMSw0NzIzMDc2Niwy
+MTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3MSwtNTc3ND
+kwMzQxLC05MzM2MjExMjAsOTIyNjE5NjQ0LC05MDQzMjg2Njgs
+LTE4NzQ5MDY0NjgsLTE0ODYyODE5OTEsOTk4Njk1NTEsNTE4MD
+k3MzQ2LDIwNTE0OTYyOTAsNDUxNDQwNDI3LDQ4NTIxMzMzNl19
+
 -->
