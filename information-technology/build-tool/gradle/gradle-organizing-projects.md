@@ -164,9 +164,7 @@ Gradle에선 language에 따라 디렉토리를 나누고 대응하는 소스를
 
 이것만으로는 간단하지 않은 자바 프로즉테를 빌드하는데는 충분치 않습니다.  왜냐하면 실제 동작시 사용할 의존성이 정리되어 있지 않기 때문입니다. 
 
-Although the properties in the example are optional, we recommend that you specify them in your projects. The compatibility options mitigate against problems with the project being built with different Java compiler versions, and the version string is important for tracking the progression of the project. The project version is also used in archive names by default.
-
-The Java Library Plugin also integrates the above tasks into the standard  [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks):
+자바 라이브러리 플러그인은 위의 tasks를 표준 [Base Plugin lifecycle tasks](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_tasks)에 맞게 
 
 -   `jar`  is attached to  `assemble`  [[1](https://docs.gradle.org/current/userguide/building_java_projects.html#_footnotedef_1 "View footnote.")]
     
@@ -312,11 +310,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMD
-UzNTc5MSwtMjEwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYw
-LDE2NDY2MjE4MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyND
-UxMjEyNiw2MTU0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIw
-LDkyMjYxOTY0NCwtOTA0MzI4NjY4LC0xODc0OTA2NDY4LC0xND
-g2MjgxOTkxLDk5ODY5NTUxLDUxODA5NzM0NiwyMDUxNDk2Mjkw
-XX0=
+eyJoaXN0b3J5IjpbLTI1MDQ5ODcwLDg5NDY4NzIxOCwyMTM5OD
+k0NTA2LDEzMDA1MzU3OTEsLTIxMDc4OTU0ODcsMjgyODM5MjAs
+MTc5NjQ3OTM2MCwxNjQ2NjIxODMxLDQ3MjMwNzY2LDIxMjg2Nz
+I5MzYsLTE4MjQ1MTIxMjYsNjE1NDcwMTcxLC01Nzc0OTAzNDEs
+LTkzMzYyMTEyMCw5MjI2MTk2NDQsLTkwNDMyODY2OCwtMTg3ND
+kwNjQ2OCwtMTQ4NjI4MTk5MSw5OTg2OTU1MSw1MTgwOTczNDZd
+fQ==
 -->
