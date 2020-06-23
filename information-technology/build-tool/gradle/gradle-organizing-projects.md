@@ -195,23 +195,9 @@ _Depends on_:  `check`,  `assemble`
 
 Intended to build everything, including running all tests, producing the production artifacts and generating documentation. You will probably rarely attach concrete tasks directly to  `build`  as  `assemble`  and  `check`  are typically more appropriate.
 
-`build_Configuration_`  — task rule
-
-Assembles those artifacts attached to the named configuration. For example,  `buildArchives`  will execute any task that is required to create any artifact attached to the  `archives`  configuration.
-
-`upload_Configuration_`  — task rule
-
-Does the same as  `build_Configuration_`, but also uploads all the artifacts attached to the given configuration.
-
-`clean_Task_`  — task rule
-
-Removes the  [defined outputs](https://docs.gradle.org/current/userguide/more_about_tasks.html#sec:task_inputs_outputs)  of a task, e.g.  `cleanJar`  will delete the JAR file produced by the  `jar`  task of the Java Plugin.
-
-## [](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_plugin_configurations)[D](https://docs.gradle.org/current/userguide/base_plugin.html#sec:base_plugin_configurations)
-
 ## [Compiling](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:compile)
 
-실제 생성 코드와 테스트 코드를 컴파일하는건 아래 컨벤션을 따르면 비교적 간단합니다.
+실제 생성 코드와 테스트 코드를 컴파일하는건 아래 컨벤션을 따르면 매우 간단합니다.
 
 1. 생성 코드를 src/main/java 디렉토리에 저장
 2. 테스트 코드는 src/test/java 디렉토리에 저장
@@ -345,11 +331,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NTA2ODY1NCwyMDU3NDgzMjIxLDE2Mz
-gzNDkxMiw4OTQ2ODcyMTgsMjEzOTg5NDUwNiwxMzAwNTM1Nzkx
-LC0yMTA3ODk1NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0Nj
-YyMTgzMSw0NzIzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2
-LDYxNTQ3MDE3MSwtNTc3NDkwMzQxLC05MzM2MjExMjAsOTIyNj
-E5NjQ0LC05MDQzMjg2NjgsLTE4NzQ5MDY0NjgsLTE0ODYyODE5
-OTFdfQ==
+eyJoaXN0b3J5IjpbMzIxODI4NTg5LC01ODUwNjg2NTQsMjA1Nz
+Q4MzIyMSwxNjM4MzQ5MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYs
+MTMwMDUzNTc5MSwtMjEwNzg5NTQ4NywyODI4MzkyMCwxNzk2ND
+c5MzYwLDE2NDY2MjE4MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwt
+MTgyNDUxMjEyNiw2MTU0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNj
+IxMTIwLDkyMjYxOTY0NCwtOTA0MzI4NjY4LC0xODc0OTA2NDY4
+XX0=
 -->
