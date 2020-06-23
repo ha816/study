@@ -195,14 +195,16 @@ Base Plugin으로 추가되었습니다.
 ### Production Tasks
 
 `uploadArchives` 
-:  `archives` taskfh 설정된 아티팩터들을 레포지토리로 업로드합니다. 
+:  `archives` task 설정된 아티팩터들을 레포지토리로 업로드합니다. 더 이상 사용되지 않으며, Ivy나 Maven 레포지토리를 이용합시다.
 
 
-_Depends on_:  `jar`, and any other task that produces an artifact attached to the  `archives`  configuration
+`jar`  
+: 
+production JAR file
 
-Uploads artifacts in the  `archives`  configuration — including the production JAR file — to the configured repositories. This task is  _deprecated_, you should use one of the  [Ivy](https://docs.gradle.org/current/userguide/publishing_ivy.html#publishing_ivy)  or  [Maven](https://docs.gradle.org/current/userguide/publishing_maven.html#publishing_maven)  publishing plugins instead.
+_Depends on_:  `classes`
 
-
+Assembles the production JAR file, based on the classes and resources attached to the  `main`  source set.
 
 
 
@@ -372,11 +374,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDA4MzU1NDgsLTE0OTM3ODAwMDEsMT
-QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
-OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
-IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
-ODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNj
-E1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2
-NDRdfQ==
+eyJoaXN0b3J5IjpbMTgyOTcyMjA0MiwtMTQ5Mzc4MDAwMSwxND
+MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
+MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
+EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
+MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MT
+U0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0
+NF19
 -->
