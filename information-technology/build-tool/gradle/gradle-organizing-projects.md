@@ -181,8 +181,21 @@ Base Plugin으로 추가되었습니다.
 : JUnit 또는 TestNG를 통해서 unit 테스트를 수행
 `testClasses`와 test runtime classpath를 생성하는 모든 tasks 가 필요합니다.
 
+
 `testClasses`
-: 단지 다른 tasks를 
+: 단지 다른 tasks를 필요로 하는 통합 task. Java Plugin이 아닌 다른 플러그인이 추가적인 테스트 task를 여기에 추가할지도 모릅니다.
+
+`compileTestJava`  —  [JavaCompile](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html)
+
+_Depends on_:  `classes`, and all tasks that contribute to the test compilation classpath
+
+Compiles test Java source files using the JDK compiler.
+
+`processTestResources`  —  [Copy](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Copy.html)
+
+Copies test resources into the test resources directory.
+
+
 
 This is an aggregate task that just depends on other tasks. Other plugins may attach additional test compilation tasks to it.
 
@@ -355,11 +368,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTQyNDEwNzYsLTE0OTM3ODAwMDEsMT
-QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
-OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
-IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
-ODMxLDQ3MjMwNzY2LDIxMjg2NzI5MzYsLTE4MjQ1MTIxMjYsNj
-E1NDcwMTcxLC01Nzc0OTAzNDEsLTkzMzYyMTEyMCw5MjI2MTk2
-NDRdfQ==
+eyJoaXN0b3J5IjpbLTY0MTczMTU0MSwtMTQ5Mzc4MDAwMSwxND
+MyNTU3NDI2LC01ODUwNjg2NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5
+MTIsODk0Njg3MjE4LDIxMzk4OTQ1MDYsMTMwMDUzNTc5MSwtMj
+EwNzg5NTQ4NywyODI4MzkyMCwxNzk2NDc5MzYwLDE2NDY2MjE4
+MzEsNDcyMzA3NjYsMjEyODY3MjkzNiwtMTgyNDUxMjEyNiw2MT
+U0NzAxNzEsLTU3NzQ5MDM0MSwtOTMzNjIxMTIwLDkyMjYxOTY0
+NF19
 -->
