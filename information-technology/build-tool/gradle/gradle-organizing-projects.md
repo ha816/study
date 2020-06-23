@@ -181,6 +181,10 @@ Base Plugin으로 추가되었습니다.
 : JUnit 또는 TestNG를 통해서 unit 테스트를 수행
 `testClasses`와 test runtime classpath를 생성하는 모든 tasks 가 필요합니다.
 
+`testClasses`
+: 단지 다른 tasks를 
+
+This is an aggregate task that just depends on other tasks. Other plugins may attach additional test compilation tasks to it.
 
 
 
@@ -351,7 +355,7 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTY4MTgwNDAsLTE0OTM3ODAwMDEsMT
+eyJoaXN0b3J5IjpbLTE1MTQyNDEwNzYsLTE0OTM3ODAwMDEsMT
 QzMjU1NzQyNiwtNTg1MDY4NjU0LDIwNTc0ODMyMjEsMTYzODM0
 OTEyLDg5NDY4NzIxOCwyMTM5ODk0NTA2LDEzMDA1MzU3OTEsLT
 IxMDc4OTU0ODcsMjgyODM5MjAsMTc5NjQ3OTM2MCwxNjQ2NjIx
