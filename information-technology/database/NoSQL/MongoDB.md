@@ -39,9 +39,7 @@ Database는 Collection들의 물리적인 컨테이너입니다. 각 Database는
 
 # Operations
 
-## luanch 
-
-
+`launchd` 런치를 위한 데몬에게 `mongod` 몽고 DB를 위한 데몬을 시작하게 
 To have  `launchd`  start  `mongod`  immediately and also restart at login, use:
 
 ```
@@ -60,6 +58,6 @@ $ brew services stop mongodb-community
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MjQ4NzYxMywtMjA1NzE3MDc5MCw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNDM4NjA5NTEsLTIwNTcxNzA3OTAsNzMwOT
+k4MTE2XX0=
 -->
