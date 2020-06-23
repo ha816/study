@@ -240,8 +240,8 @@ sourceSets {
 위와 같은 수정 코드가 없으면, 기본 자원 디렉토리 주소는 `[src/$name/resources]`으로 되어있습니다. 원래대로라면 `[src/main/resources]`가  main source set에서 사용할 자원이 있는 디렉토리 주소 입니다. 
 
 그 밖에 상세한 설정값들은 [https://docs.gradle.org/current/userguide/java_plugin.html](https://docs.gradle.org/current/userguide/java_plugin.html)을 참고합시다. 
- 
-## [Separate source files per test type](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:separate_test_type_source_files)
+
+또 다른 방법으로 source Set을 활용하는 방법을 봅시다.  
 
 한 프로젝트에서 여러 종류의 테스트를 정의하고 실행하는 것은 자주 있는 일입니다. (unit tests, integration tests, functional test or smoke tests와 같은)
 
@@ -268,14 +268,6 @@ sourceSets {
             └── StringUtilsTest.java
 ```
 
-Gradle은 [source set concept](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)의 도움을 받아 소스 코드 디렉토리를 모델링 합니다. 
-소스 집단 객체 하나를 다수의 소스 코드 디렉토리를 가리키도록 하여, Gradle은 자동적으로 대응하는 컴파일 task를 만들어냅니다.
-
-> Source Set
-> Source Set이란 소스 기반 프로젝트를 빌딩하는데 Gradle 자바가 지원하는 새로운 개념입니다. 가장 중요한 아이디어는 소스 파일들과 자원은 종종 타입별로 모인다는 것입니다. 타입 예로는 application 코드, unit tests 그리고 통합 테스트 정도가 있겠습니다. 이렇듯 Source Set의 목적은 소스들를 논리적 그룹으로 묶고 그 목적을 설명하는데 있습니다. 
-> Java Source Set 
-    -   main : 실제 작동 소스코드. 컴파일해서 JAR 파일로 들어감.
-    -   test : 단위 테스트 소스코드. 컴파일해서 JUnit이나 TestNG로 실행.
 
 Example 1. Integration test source set
 
@@ -308,11 +300,11 @@ check.dependsOn integTest
 
 [https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09](https://medium.com/@goinhacker/%EC%9A%B4%EC%98%81-%EC%9E%90%EB%8F%99%ED%99%94-1-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-by-gradle-7630c0993d09)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NDc2NzY3MiwtMTI4NDc4MDY1LDE0ND
-gyOTAxNiwtMTQ5Mzc4MDAwMSwxNDMyNTU3NDI2LC01ODUwNjg2
-NTQsMjA1NzQ4MzIyMSwxNjM4MzQ5MTIsODk0Njg3MjE4LDIxMz
-k4OTQ1MDYsMTMwMDUzNTc5MSwtMjEwNzg5NTQ4NywyODI4Mzky
-MCwxNzk2NDc5MzYwLDE2NDY2MjE4MzEsNDcyMzA3NjYsMjEyOD
-Y3MjkzNiwtMTgyNDUxMjEyNiw2MTU0NzAxNzEsLTU3NzQ5MDM0
+eyJoaXN0b3J5IjpbLTc1NDMyMDEyOCwxNDc0NzY3NjcyLC0xMj
+g0NzgwNjUsMTQ0ODI5MDE2LC0xNDkzNzgwMDAxLDE0MzI1NTc0
+MjYsLTU4NTA2ODY1NCwyMDU3NDgzMjIxLDE2MzgzNDkxMiw4OT
+Q2ODcyMTgsMjEzOTg5NDUwNiwxMzAwNTM1NzkxLC0yMTA3ODk1
+NDg3LDI4MjgzOTIwLDE3OTY0NzkzNjAsMTY0NjYyMTgzMSw0Nz
+IzMDc2NiwyMTI4NjcyOTM2LC0xODI0NTEyMTI2LDYxNTQ3MDE3
 MV19
 -->
