@@ -46,13 +46,14 @@ brew services start mongodb-community
 ```
 반대로 서버 인스턴스를 멈추고 싶다면 아래 명령어를 수행합시다. 
 ```
-$ brew services stop mongodb-community
+brew services stop mongodb-community
 ```
 
 ## CRUD Operations
 
-Insert(Create)에 해당하는 문서를 보자. [https://docs.mongodb.com/manual/tutorial/insert-documents/](https://docs.mongodb.com/manual/tutorial/insert-documents/)
+### Create(Insert)
 
+Insert(Create)에 해당하는 문서를 보자. [https://docs.mongodb.com/manual/tutorial/insert-documents/](https://docs.mongodb.com/manual/tutorial/insert-documents/)
 
 `db.collection.insertOne()`을 사용하면 단일 문서를 추가합니다. 아래 예제에서는 `inventory`  collection 안에 한 문서를 추가합니다. 만약 문서가 `_id`  필드 값을 가지지 않으면, MongoDB에서 자동적으로 ObjectId 값으로  `_id` 필드를 추가합니다. 
 
@@ -68,10 +69,69 @@ db.inventory.insertOne(
 db.inventory.find( { item: "canvas" } )
 ```
 
+## Insert Multiple Documents[](https://docs.mongodb.com/manual/tutorial/insert-documents/#insert-multiple-documents "Permalink to this headline")
+
+New in version 3.2.
+
+[`db.collection.insertMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/#db.collection.insertMany "db.collection.insertMany()")  can insert  _multiple_  [documents](https://docs.mongodb.com/manual/core/document/#bson-document-format)  into a collection. Pass an array of documents to the method.
+
+The following example inserts three new documents into the  `inventory`  collection. If the documents do not specify an  `_id`  field, MongoDB adds the  `_id`  field with an ObjectId value to each document. See  [Insert Behavior](https://docs.mongodb.com/manual/tutorial/insert-documents/#write-op-insert-behavior).
+
+copy
+
+copied
+
+db.inventory.insertMany([
+   { item: "journal", qty: 25, tags: ["blank", "red"], size: { h: 14, w: 21, uom: "cm" } },
+   { item: "mat", qty: 85, tags: ["gray"], size: { h: 27.9, w: 35.5, uom: "cm" } },
+   { item: "mousepad", qty: 25, tags: ["gel", "blue"], size: { h: 19, w: 22.85, uom: "cm" } }
+])
+
+You can run the operation in the web shell below:
+
+[`insertMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/#db.collection.insertMany "db.collection.insertMany()")  returns a document that includes the newly inserted documents  `_id`  field values. See the  [reference](https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/#insertmany-examples)  for an example.
+
+To retrieve the inserted documents,  [query the collection](https://docs.mongodb.com/manual/tutorial/query-documents/#read-operations-query-document):
+
+copy
+
+copied
+
+db.inventory.find( {} )
+
+## Insert Behavior[](https://docs.mongodb.com/manual/tutorial/insert-documents/#insert-behavior "Permalink to this headline")
+
+### Collection Creation[](https://docs.mongodb.com/manual/tutorial/insert-documents/#collection-creation "Permalink to this headline")
+
+If the collection does not currently exist, insert operations will create the collection.
+
+### `_id`  Field[](https://docs.mongodb.com/manual/tutorial/insert-documents/#insert-id-field "Permalink to this headline")
+
+In MongoDB, each document stored in a collection requires a unique  [_id](https://docs.mongodb.com/manual/reference/glossary/#term-id)  field that acts as a  [primary key](https://docs.mongodb.com/manual/reference/glossary/#term-primary-key). If an inserted document omits the  `_id`  field, the MongoDB driver automatically generates an  [ObjectId](https://docs.mongodb.com/manual/reference/bson-types/#objectid)  for the  `_id`  field.
+
+This also applies to documents inserted through update operations with  [upsert: true](https://docs.mongodb.com/manual/reference/method/db.collection.update/#upsert-parameter).
+
+### Atomicity[](https://docs.mongodb.com/manual/tutorial/insert-documents/#atomicity "Permalink to this headline")
+
+All write operations in MongoDB are atomic on the level of a single document. For more information on MongoDB and atomicity, see  [Atomicity and Transactions](https://docs.mongodb.com/manual/core/write-operations-atomicity/)
+
+### Write Acknowledgement[](https://docs.mongodb.com/manual/tutorial/insert-documents/#write-acknowledgement "Permalink to this headline")
+
+With write concerns, you can specify the level of acknowledgement requested from MongoDB for write operations. For details, see  [Write Concern](https://docs.mongodb.com/manual/reference/write-concern/).
+
+SEE ALSO
+
+-   [`db.collection.insertOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.insertOne/#db.collection.insertOne "db.collection.insertOne()")
+-   [`db.collection.insertMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/#db.collection.insertMany "db.collection.insertMany()")
+-   [Additional Methods for Inserts](https://docs.mongodb.com/manual/reference/insert-methods/#additional-inserts)
+
+← [MongoDB CRUD Operations](https://docs.mongodb.com/manual/crud/ "Previous Section: MongoDB CRUD Operations")[Insert Methods](https://docs.mongodb.com/manual/reference/insert-methods/ "Next Section: Insert Methods") →
+
+© MongoDB, Inc 2008-present. MongoDB, Mongo, and the leaf logo are registered trademarks of MongoDB, Inc.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzI5NzgzODcsLTIwNTcxNzA3OTAsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTQ0NTM2MjUyLC0yMDU3MTcwNzkwLDczMD
+k5ODExNl19
 -->
