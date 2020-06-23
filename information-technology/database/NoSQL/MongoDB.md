@@ -54,7 +54,7 @@ brew services stop mongodb-community
 ### [Create(Insert)](https://docs.mongodb.com/manual/tutorial/insert-documents/)
 
 * 만약 생성할 문서가 들어갈 collection이 현재 없다면, insert 연산 수행시 자동으로 생성합니다.
-* 
+* MongoDB에선, 컬렉션에 저장된 각 문서는 유니크한 `_id`	필드를 primary key	처럼 가져야 합니다. 만약 문서를 삽입하고 
 
 In MongoDB, each document stored in a collection requires a unique  [_id](https://docs.mongodb.com/manual/reference/glossary/#term-id)  field that acts as a  [primary key](https://docs.mongodb.com/manual/reference/glossary/#term-primary-key). If an inserted document omits the  `_id`  field, the MongoDB driver automatically generates an  [ObjectId](https://docs.mongodb.com/manual/reference/bson-types/#objectid)  for the  `_id`  field.
 
@@ -99,6 +99,6 @@ db.inventory.insertMany([
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzA2NTU2ODAsLTIwNTcxNzA3OTAsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTc4OTU1NzI5MCwtMjA1NzE3MDc5MCw3Mz
+A5OTgxMTZdfQ==
 -->
