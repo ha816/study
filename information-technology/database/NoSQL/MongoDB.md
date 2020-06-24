@@ -51,7 +51,9 @@ ObjectIds 작고, 빠르게 생성하고, 거의 unique하고 순서가 정해�
 
 While the BSON format itself is little-endian, the  _timestamp_  and  _counter_  values are big-endian, with the most significant bytes appearing first in the byte sequence.
 
-MongoDB 클라이언트는 `_id` 필드를 유일한 ObjectId 로 추가해야 합니다.
+MongoDB 클라이언트는 `_id` 필드를 유일한 ObjectId 로 추가해야 합니다. ObjectIds를 사용하는 것은 아래와 같은 이점들이 있습니다.
+
+* mongo shell에서 , ObjectId
 
  should add an  `_id`  field with a unique ObjectId. Using ObjectIds for the  `_id`  field provides the following additional benefits:
 
@@ -168,7 +170,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NjM5MzMzOSwtMTIxOTkxOTgyNCw4MT
+eyJoaXN0b3J5IjpbLTgyMTMxMDE1NCwtMTIxOTkxOTgyNCw4MT
 U4NTQ3NDEsMTE4NzkxNDMsLTIwNTcxNzA3OTAsNzMwOTk4MTE2
 XX0=
 -->
