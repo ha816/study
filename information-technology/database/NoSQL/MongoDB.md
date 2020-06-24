@@ -59,10 +59,9 @@ hello\x00                  // field name
 \x00                       // 0x00 = type EOO ('end of object')
 ```
 
-JSON을 그대로 사용하는 다른 시스템과는 다르게, MongoDB는 BSON을 이용해서 강력한 인덱스와 쿼리  특성을 제공합니다. 여기서 쿼리 특성이라 하면, 찾거나 수정할 Objects를 JSON/BSON 문서내의 특정 키로 찾을 수 있습니다. 심지어 nested
+JSON을 그대로 사용하는 다른 시스템과는 다르게, MongoDB는 BSON을 이용해서 강력한 인덱스와 쿼리  특성을 제공합니다. 여기서 쿼리 특성이라 하면, 찾거나 수정할 Objects를 JSON/BSON 문서내의 특정 키로 찾을 수 있습니다. 심지어 다수의 레이어로 중첩된 문서에 대해서도 가능합니다.
 
 
-For example, MongoDB allows developers to query and manipulate objects by specific keys inside the JSON/BSON document, even in nested documents many layers deep into a record, and create high performance indexes on those same keys and values.
 
 When using a MongoDB driver in your language of choice, it’s still important to know that you’re accessing BSON data through the abstractions available in that language.
 
@@ -247,9 +246,10 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI2NTg0NzkxLDM4NDg1Mjc5MywtMTI0MT
-IwMjA3MCwxNjM2NjkyODE1LC0xNjQyNzU1NzYwLDE5MTc2OTky
-NDQsLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MD
-EsLTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQsODE1ODU0NzQxLDEx
-ODc5MTQzLC0yMDU3MTcwNzkwLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEyOTc3NzQxNzUsNjI2NTg0NzkxLDM4ND
+g1Mjc5MywtMTI0MTIwMjA3MCwxNjM2NjkyODE1LC0xNjQyNzU1
+NzYwLDE5MTc2OTkyNDQsLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OT
+AsLTEyMTY5MzI3MDEsLTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQs
+ODE1ODU0NzQxLDExODc5MTQzLC0yMDU3MTcwNzkwLDczMDk5OD
+ExNl19
 -->
