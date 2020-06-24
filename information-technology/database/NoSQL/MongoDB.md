@@ -37,7 +37,15 @@ Collection은 Document의 집합입니다. RDMS측에 비유하자면, Table에 
 
 Database는 Collection들의 물리적인 컨테이너입니다. 각 Database는 파일 시스템에 맞게 최적으로 저장됩니다.
 
-# B Format
+# BSON
+
+BSON은 문서를 저장하거나 
+
+[BSON](https://docs.mongodb.com/manual/reference/glossary/#term-bson)  is a binary serialization format used to store documents and make remote procedure calls in MongoDB. The BSON specification is located at  [bsonspec.org](http://bsonspec.org/).
+
+Each BSON type has both integer and string identifiers as listed in the following table:
+
+[https://docs.mongodb.com/manual/reference/bson-types/](https://docs.mongodb.com/manual/reference/bson-types/)
 
 
 # Operations
@@ -135,6 +143,6 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMDIyNjIzMiw4MTU4NTQ3NDEsMTE4Nz
-kxNDMsLTIwNTcxNzA3OTAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMzAxODQzMDIzLDgxNTg1NDc0MSwxMTg3OT
+E0MywtMjA1NzE3MDc5MCw3MzA5OTgxMTZdfQ==
 -->
