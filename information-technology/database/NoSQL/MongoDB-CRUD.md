@@ -56,15 +56,16 @@ db.inventory.find( { status: "D" } )
 
 ## 쿼리 연산자를 이용한 조건
 
-쿼리 필터 문서는 쿼리 연산자를 ㅅ
+쿼리 필터 문서는 쿼리 연산자([query operators](https://docs.mongodb.com/manual/reference/operator/query/#query-selectors))를 사용할 수 있습니다. 
 
-A  [query filter document](https://docs.mongodb.com/manual/core/document/#document-query-filter)  can use the  [query operators](https://docs.mongodb.com/manual/reference/operator/query/#query-selectors)  to specify conditions in the following form:
-
-copy
-
-copied
-
+```groovy
 { <field1>: { <operator1>: <value1> }, ... }
+```
+
+아래 예제는 `inven
+```groovy
+db.inventory.find( { status: { $in: [ "A", "D" ] } } )
+```
 
 The following example retrieves all documents from the  `inventory`  collection where  `status`  equals either  `"A"`  or  `"D"`:
 
@@ -88,6 +89,5 @@ SELECT * FROM inventory WHERE status in ("A", "D")
 
 Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/reference/operator/query/)  document for the complete list of MongoDB query operators.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTk5NTcxNTQsLTE5MzMyNDQ1NjVdfQ
-==
+eyJoaXN0b3J5IjpbMjA2MjIxMjE1MCwtMTkzMzI0NDU2NV19
 -->
