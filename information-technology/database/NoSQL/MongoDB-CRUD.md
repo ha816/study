@@ -95,18 +95,6 @@ db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
 * 만약 update 할려는 문서를 찾지 못하면, update 연산은 새로운 문서를 만들어 삽입합니다. (`upsert  :  true`)
 * MongoDB에서 한 문서에 대한 모든 쓰기 작업은 원자성이 보장됩니다. 
 * `_id`는 불변적입니다. 한번 `_id`필드에 값이 저장되면, 이 값을 다른 문서로 대체하거나 다른 값을 가질 수 없습니다.
-* Once set, you cannot update the value of the  `_id`  field nor can you replace an existing document with a replacement document that has a different  `_id`  field value.
-
-
-
-db.collection.updateOne(filter,  update,  options)
-: 조건에 맞는 최상단 문서 하나를 찾아 수정합니다.
-
-db.collection.updateMany(filter,  update,  options)
-: 조건에 맞는 문서 전체를 찾아 수정합니다.
-
-db.collection.replaceOne(filter,  update,  options)
-: 조건에 맞는 문서를 찾아 대체합니다.
 
 MongoDB는 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set") 같은 문서를 update 하기위한 연산자를 제공합니다. 
 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set")과 같은 어떤 update 연산자는 필드가 존재하지 않으면 필드를 생성합니다. 
@@ -118,6 +106,16 @@ update 연산자를 사용하기 위해선 아래와 같은 update 문서를 메
   ...
 }
 ```
+
+db.collection.updateOne(filter,  update,  options)
+: 조건에 맞는 최상단 문서 하나를 찾아 수정합니다.
+
+
+
+db.collection.updateMany(filter,  update,  options)
+: 조건에 맞는 문서 전체를 찾아 수정합니다.
+
+
 
 updateOne의 경우, item 필드가 paper인 문서 중 제일 앞단의 한 문서에 대해 모든 update 연산을 수행합니다. updateMany의 경우, qty 필드가 50보다 작은 모든 문서를 찾아 모든 update 연산을 수행합니다. 
 
@@ -163,7 +161,7 @@ MongoDB preserves the order of the document fields following write operations  _
 -   Updates that include  [`renaming`](https://docs.mongodb.com/manual/reference/operator/update/rename/#up._S_rename "$rename")  of field names may result in the reordering of fields in the document.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkyNTU4Mzg5LC0zMjkxMjI1OTAsODY5ND
+eyJoaXN0b3J5IjpbODI0NzQ5OTYzLC0zMjkxMjI1OTAsODY5ND
 c1NjY2LDEzNDAyMDEzMDYsLTExOTE5MzkyOSwxOTQwMTY3ODUz
 LC0xOTMzMjQ0NTY1XX0=
 -->
