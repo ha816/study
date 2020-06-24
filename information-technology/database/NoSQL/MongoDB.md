@@ -39,7 +39,9 @@ Database는 Collection들의 물리적인 컨테이너입니다. 각 Database는
 
 # BSON
 
-BSON은 문서를 저장하거나 
+BSON은 문서를 저장하거나 MongoDB에 원격처리 호출을 하는데 사용되는 이진 시리얼 포맷입니다. 
+BSON의 각 타입은 integer와 string 
+
 
 [BSON](https://docs.mongodb.com/manual/reference/glossary/#term-bson)  is a binary serialization format used to store documents and make remote procedure calls in MongoDB. The BSON specification is located at  [bsonspec.org](http://bsonspec.org/).
 
@@ -143,6 +145,6 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxODQzMDIzLDgxNTg1NDc0MSwxMTg3OT
-E0MywtMjA1NzE3MDc5MCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEyMTk5MTk4MjQsODE1ODU0NzQxLDExOD
+c5MTQzLC0yMDU3MTcwNzkwLDczMDk5ODExNl19
 -->
