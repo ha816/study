@@ -112,7 +112,7 @@ update 연산자를 사용하기 위해선 아래와 같은 update 문서를 메
 }
 ```
 
-아래 예제에서 updateOne의 경우, item 필드가 paper인 문서 중 재모든 update 연산을 수행합니다.
+updateOne의 경우, item 필드가 paper인 문서 중 제일 앞단의 한 문서에 대해 모든 update 연산을 수행합니다. updateMany의 경우, qty 필드가 50보다 작은 모든 문서를 찾아 모든 update 연산을 수행합니다. 
 
 * $set 연산자를 사용해서 size,uom필드의 값을 cm으로 바꾸고 status를 p로 바꿉니다.
 * $currentDate 연산자를 사용해서 lastModified 필드의 최신 날짜로 변경을 합니다. 만약 lastModified 필드가 존재하지 않으면 $currentDate가 새로 필드를 만듭니다.
@@ -137,7 +137,7 @@ db.inventory.updateMany(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MjYzODkwNSwtMzI5MTIyNTkwLDg2OT
+eyJoaXN0b3J5IjpbLTE2NDM3NjMwNSwtMzI5MTIyNTkwLDg2OT
 Q3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5MjksMTk0MDE2Nzg1
 MywtMTkzMzI0NDU2NV19
 -->
