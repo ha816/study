@@ -58,7 +58,17 @@ hello\x00                  // field name
 \x00                       // 0x00 = type EOO ('end of object')
 ```
 
-```
+```groovy
+{"BSON": ["awesome", 5.05, 1986]} 
+→
+ \x31\x00\x00\x00
+ \x04BSON\x00
+ \x26\x00\x00\x00
+ \x02\x30\x00\x08\x00\x00\x00awesome\x00
+ \x01\x31\x00\x33\x33\x33\x33\x33\x33\x14\x40
+ \x10\x32\x00\xc2\x07\x00\x00
+ \x00
+ \x00
 ```
 
 Unlike systems that simply store JSON as string-encoded values, or binary-encoded blobs, MongoDB uses BSON to offer the industry’s most powerful indexing and querying features on top of the web’s most usable data format.
@@ -248,7 +258,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0OTA2MjE2LC0xMjQxMjAyMDcwLDE2Mz
+eyJoaXN0b3J5IjpbNzYwNjcyNjg3LC0xMjQxMjAyMDcwLDE2Mz
 Y2OTI4MTUsLTE2NDI3NTU3NjAsMTkxNzY5OTI0NCwtMTM3NDY5
 MjQ2NSwtMTMzNzQ5MzU5MCwtMTIxNjkzMjcwMSwtMTgzNjMyMz
 czMiwtMTIxOTkxOTgyNCw4MTU4NTQ3NDEsMTE4NzkxNDMsLTIw
