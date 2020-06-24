@@ -6,7 +6,7 @@ MongoDB는 오픈소스 문서지향(Document-Oriented)적 Cross-platform 데이
 
 [MySQL](https://namu.wiki/w/MySQL "MySQL") 처럼 전통적인 테이블-관계 기반의 [RDBMS](https://namu.wiki/w/RDBMS "RDBMS")가 아니며 [SQL](https://namu.wiki/w/SQL "SQL")을 사용하지 않습니다. 참고로 mongo는 humongous의 줄임말이라고 합니다. 즉 거대한 DB라는 뜻입니다.
 
-# Basic Concept
+# Component
 
 ## Document
 
@@ -36,6 +36,9 @@ Collection은 Document의 집합입니다. RDMS측에 비유하자면, Table에 
 ## Database
 
 Database는 Collection들의 물리적인 컨테이너입니다. 각 Database는 파일 시스템에 맞게 최적으로 저장됩니다.
+
+# B Format
+
 
 # Operations
 
@@ -98,7 +101,7 @@ db.collection.find()
 db.collection.findOne()
 : collection에 있는 한 문서를 찾는 연산. 내부적으로 db.collection.find() 연산을 호출하며 단지 limit 1 조건을 추가합니다.
 
-## Specify Conditions Using Query Operators[](https://docs.mongodb.com/manual/tutorial/query-documents/#specify-conditions-using-query-operators "Permalink to this headline")
+## Query 
 
 A  [query filter document](https://docs.mongodb.com/manual/core/document/#document-query-filter)  can use the  [query operators](https://docs.mongodb.com/manual/reference/operator/query/#query-selectors)  to specify conditions in the following form:
 
@@ -132,6 +135,6 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE1ODU0NzQxLDExODc5MTQzLC0yMDU3MT
-cwNzkwLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTAwMDIyNjIzMiw4MTU4NTQ3NDEsMTE4Nz
+kxNDMsLTIwNTcxNzA3OTAsNzMwOTk4MTE2XX0=
 -->
