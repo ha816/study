@@ -39,7 +39,7 @@ Database는 Collection들의 물리적인 컨테이너입니다. 각 Database는
 
 # BSON
 
-BSON
+BSON은 간단히 말하자면 "Binary JSON"입니다. BSON의 이진 구조는 타입과 길이 정보를 
 
 [BSON](http://bsonspec.org/)  simply stands for “Binary JSON,” and that’s exactly what it was invented to be. BSON’s binary structure encodes type and length information, which allows it to be parsed much more quickly.
 
@@ -271,9 +271,9 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA5NzA5ODIyLC0xMjQxMjAyMDcwLDE2Mz
-Y2OTI4MTUsLTE2NDI3NTU3NjAsMTkxNzY5OTI0NCwtMTM3NDY5
-MjQ2NSwtMTMzNzQ5MzU5MCwtMTIxNjkzMjcwMSwtMTgzNjMyMz
-czMiwtMTIxOTkxOTgyNCw4MTU4NTQ3NDEsMTE4NzkxNDMsLTIw
-NTcxNzA3OTAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMjAyNjU3Nzg3NCwtMTI0MTIwMjA3MCwxNj
+M2NjkyODE1LC0xNjQyNzU1NzYwLDE5MTc2OTkyNDQsLTEzNzQ2
+OTI0NjUsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MDEsLTE4MzYzMj
+M3MzIsLTEyMTk5MTk4MjQsODE1ODU0NzQxLDExODc5MTQzLC0y
+MDU3MTcwNzkwLDczMDk5ODExNl19
 -->
