@@ -23,7 +23,8 @@ Document는 RDMS의 record 또는 row에 대응하는 데이터 구조입니다.
 Document는 기본적으로 추가될때마다 값이 높아집니다. Document는 동적(dynamic) schema입니다. 즉, 같은 Collection 안에 있는 Document 임에도 서로 다른 schema를 갖고 있을 수 있습니다.
 
 --- 
-Collection은 Document의 집합입니다. RDMS측에 비유하자면, Table에 대응합니다. 하지만 RDMS와 달리 schema를 따로 가지고 있지 않습니다.
+Collection은 Document의 집합입니다.
+RDMS의, Table에 대응합니다. 하지만 RDMS와 달리 schema를 따로 가지고 있지 않습니다.
 
 ![A collection of MongoDB documents.](https://docs.mongodb.com/manual/_images/crud-annotated-collection.bakedsvg.svg)
 
@@ -132,5 +133,5 @@ brew services stop mongodb-community
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY5MTkzNDY0LDQ2Mjc3NTc4M119
+eyJoaXN0b3J5IjpbMTIxMjQ3NjE5MSw0NjI3NzU3ODNdfQ==
 -->
