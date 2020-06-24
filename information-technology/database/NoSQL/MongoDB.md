@@ -39,7 +39,90 @@ Database는 Collection들의 물리적인 컨테이너입니다. 각 Database는
 
 # BSON
 
-BSON은 문서를 저장하거나 MongoDB에 원격처리 호출을 하는데 사용되는 이진 시리얼 포맷입니다. 
+[BSON](http://bsonspec.org/)  simply stands for “Binary JSON,” and that’s exactly what it was invented to be. BSON’s binary structure encodes type and length information, which allows it to be parsed much more quickly.
+
+Since its initial formulation, BSON has been extended to add some optional non-JSON-native data types, like dates and binary data, without which MongoDB would have been missing some valuable support.
+
+Languages that support any kind of complex mathematics typically have different sized integers (ints vs longs) or various levels of decimal precision (float, double, decimal128, etc.).
+
+Not only is it helpful to be able to represent those distinctions in data stored in MongoDB, it also allows for comparisons and calculations to happen directly on data in ways that simplify consuming application code.
+
+## Does MongoDB use BSON, or JSON?
+
+MongoDB stores data in BSON format both internally, and over the network, but that doesn’t mean you can’t think of MongoDB as a JSON database. Anything you can represent in JSON can be natively stored in MongoDB, and retrieved just as easily in JSON.
+
+The following are some example documents (in JavaScript / Python style syntax) and their corresponding BSON representations.
+
+```
+{"hello": "world"} →
+```
+
+```
+\x16\x00\x00\x00           // total document size
+\x02                       // 0x02 = type String
+hello\x00                  // field name
+\x06\x00\x00\x00world\x00  // field value
+\x00                       // 0x00 = type EOO ('end of object')
+```
+
+  
+
+```
+{"BSON": ["awesome", 5.05, 1986]} →
+```
+
+```
+ \x31\x00\x00\x00
+ \x04BSON\x00
+ \x26\x00\x00\x00
+ \x02\x30\x00\x08\x00\x00\x00awesome\x00
+ \x01\x31\x00\x33\x33\x33\x33\x33\x33\x14\x40
+ \x10\x32\x00\xc2\x07\x00\x00
+ \x00
+ \x00
+```
+
+Unlike systems that simply store JSON as string-encoded values, or binary-encoded blobs, MongoDB uses BSON to offer the industry’s most powerful indexing and querying features on top of the web’s most usable data format.
+
+For example, MongoDB allows developers to query and manipulate objects by specific keys inside the JSON/BSON document, even in nested documents many layers deep into a record, and create high performance indexes on those same keys and values.
+
+When using a MongoDB driver in your language of choice, it’s still important to know that you’re accessing BSON data through the abstractions available in that language.
+
+Firstly, BSON objects may contain Date or Binary objects that are not natively representable in pure JSON. Second, each programming language has its own object semantics. JSON objects have ordered keys, for instance, while Python dictionaries (the closest native data structure that’s analogous to JavaScript Objects) are unordered, while differences in numeric and string data types can also come into play. Third, BSON supports a variety of numeric types that are not native to JSON, and each language will represent these differently.
+
+Check your  [driver documentation](https://docs.mongodb.com/ecosystem/drivers/)  to make sure you understand how to best access MongoDB BSON-backed data in your language to avoid confusion, and get the most out of your MongoDB experience.
+
+## JSON vs BSON
+
+**JSON**
+
+**BSON**
+
+Encoding
+
+UTF-8 String
+
+Binary
+
+Data Support
+
+String, Boolean, Number, Array
+
+String, Boolean, Number (Integer, Float, Long, Decimal128...), Array, Date, Raw Binary
+
+Readability
+
+Human and Machine
+
+Machine Only
+
+JSON and BSON are indeed close cousins by design. BSON is designed as a binary representation of JSON data, with specific extensions for broader applications, and optimized for data storage and retrieval.
+
+One particular way in which BSON differs from JSON is in its support for some more advanced types of data. JavaScript does not, for instance, differentiate between integers (which are round numbers), and floating-point numbers (which have decimal precision to various degrees).
+
+Most server-side programming languages have more sophisticated numeric types (standards include integer, regular precision floating point number aka “float”, double-precision floating point aka “double”, and boolean values), each with its own optimal usage for efficient mathematical operations.
+
+
 
 ## ObjectId
 
@@ -186,9 +269,9 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNjY5MjgxNSwtMTY0Mjc1NTc2MCwxOT
-E3Njk5MjQ0LC0xMzc0NjkyNDY1LC0xMzM3NDkzNTkwLC0xMjE2
-OTMyNzAxLC0xODM2MzIzNzMyLC0xMjE5OTE5ODI0LDgxNTg1ND
-c0MSwxMTg3OTE0MywtMjA1NzE3MDc5MCw3MzA5OTgxMTZdfQ==
-
+eyJoaXN0b3J5IjpbLTEyNDEyMDIwNzAsMTYzNjY5MjgxNSwtMT
+Y0Mjc1NTc2MCwxOTE3Njk5MjQ0LC0xMzc0NjkyNDY1LC0xMzM3
+NDkzNTkwLC0xMjE2OTMyNzAxLC0xODM2MzIzNzMyLC0xMjE5OT
+E5ODI0LDgxNTg1NDc0MSwxMTg3OTE0MywtMjA1NzE3MDc5MCw3
+MzA5OTgxMTZdfQ==
 -->
