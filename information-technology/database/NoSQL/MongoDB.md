@@ -75,11 +75,7 @@ BSON은 MongoDB 내부를 위해 특별한 timestamp 타입을 가지고 있습�
 
 BSON 포맷이 little-endian이기 때문에 나머지 bits를 먼저 저장하는 반면에, mongo daemon 객체는 endian 형태를 생각치 않고, 항상 모든 플랫폼에 대한 `ordianl` 값 전에 `time_t` 값을 비교합니다.  
 
-단일 mongo daemon 안에서, timestamp 값은 항상 unique합니다. 
-
-While the BSON format is little-endian, and therefore stores the least significant bits first, the  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  instance always compares the  `time_t`  value before the  `ordinal`  value on all platforms, regardless of endianness.
-
-Within a single  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  instance, timestamp values are always unique.
+단일 mongo daemon 안에서, timestamp 값은 항상 unique합니다. 리플리케이션에서는 
 
 In replication, the  [oplog](https://docs.mongodb.com/manual/reference/glossary/#term-oplog)  has a  `ts`  field. The values in this field reflect the operation time, which uses a BSON timestamp value.
 
@@ -185,7 +181,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDAwODIxMjEsLTEzMzc0OTM1OTAsLT
+eyJoaXN0b3J5IjpbLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OTAsLT
 EyMTY5MzI3MDEsLTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQsODE1
 ODU0NzQxLDExODc5MTQzLC0yMDU3MTcwNzkwLDczMDk5ODExNl
 19
