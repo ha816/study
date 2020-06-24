@@ -41,16 +41,11 @@ Database는 Collection들의 물리적인 컨테이너입니다. 각 Database는
 
 BSON은 간단히 말하자면 "Binary JSON"입니다. BSON의 이진 구조는 타입과 길이 정보를 인코드하여 훨씬 빠르게 파싱되도록 합니다.
 
-date와 binary 데이터와 같은 JSON-native가 아닌 데이터 타입을 추가함으로써, MongoDB가 이런 타입도 지원이 가능하다.
-
-심지어 어떤 복잡한 형태의 수학적인 데이터도 지원합니다. 
-
-
-Languages that support any kind of complex mathematics typically have different sized integers (ints vs longs) or various levels of decimal precision (float, double, decimal128, etc.).
-
-Not only is it helpful to be able to represent those distinctions in data stored in MongoDB, it also allows for comparisons and calculations to happen directly on data in ways that simplify consuming application code.
+date와 binary 데이터와 같은 JSON-native가 아닌 데이터 타입을 추가함으로써, MongoDB가 이런 타입도 지원이 가능하다. 심지어 어떤 복잡한 형태의 수학적인 데이터도 지원합니다. 
 
 ## Does MongoDB use BSON, or JSON?
+
+MongoDB 내부적이르ㅗ 글
 
 MongoDB stores data in BSON format both internally, and over the network, but that doesn’t mean you can’t think of MongoDB as a JSON database. Anything you can represent in JSON can be natively stored in MongoDB, and retrieved just as easily in JSON.
 
@@ -272,9 +267,9 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDA4ODAwMzYsLTEyNDEyMDIwNzAsMT
-YzNjY5MjgxNSwtMTY0Mjc1NTc2MCwxOTE3Njk5MjQ0LC0xMzc0
-NjkyNDY1LC0xMzM3NDkzNTkwLC0xMjE2OTMyNzAxLC0xODM2Mz
-IzNzMyLC0xMjE5OTE5ODI0LDgxNTg1NDc0MSwxMTg3OTE0Mywt
-MjA1NzE3MDc5MCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTg2NDQ0Mzg4MywtMTI0MTIwMjA3MCwxNj
+M2NjkyODE1LC0xNjQyNzU1NzYwLDE5MTc2OTkyNDQsLTEzNzQ2
+OTI0NjUsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MDEsLTE4MzYzMj
+M3MzIsLTEyMTk5MTk4MjQsODE1ODU0NzQxLDExODc5MTQzLC0y
+MDU3MTcwNzkwLDczMDk5ODExNl19
 -->
