@@ -73,7 +73,7 @@ BSON은 MongoDB 내부를 위해 특별한 timestamp 타입을 가지고 있습�
 * 중요한 32bit는 time_t 값입니다.(Unix epoch 이후 흐른 seconds)
 * 나머지 32bit는 주어진 시간안의 연산들의 증가하는 순서를 나타냅니다.
 
-BSON for
+BSON 포맷이 little-endian이기 때문에 나머지 bits를 먼저 저장합니다. mongo daemon 
 
 While the BSON format is little-endian, and therefore stores the least significant bits first, the  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  instance always compares the  `time_t`  value before the  `ordinal`  value on all platforms, regardless of endianness.
 
@@ -183,7 +183,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzAwMDQ5NzAsLTEzMzc0OTM1OTAsLT
+eyJoaXN0b3J5IjpbLTEzNzcxMTU4MjAsLTEzMzc0OTM1OTAsLT
 EyMTY5MzI3MDEsLTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQsODE1
 ODU0NzQxLDExODc5MTQzLC0yMDU3MTcwNzkwLDczMDk5ODExNl
 19
