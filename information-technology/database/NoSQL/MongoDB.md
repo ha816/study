@@ -56,7 +56,9 @@ MongoDB 클라이언트는 `_id` 필드를 유일한 ObjectId 로 추가해야 �
 * mongo shell에서,  `ObjectId.getTimestamp()` 메서드를 사용하면 ObjectId의 생성 시간을 알 수 있습니다. 
 * ObjectId를 저장하면 `_id`필드가 거의 생성 시간으로 정렬된 것과 같습니다. 
 
-주의할 점 :        
+주의할 점
+
+objectid값이 시간에 따라 커져야 하는 것은 맞지만, 필수불가결하게 단조롭게 모든          
     
     While  [ObjectId](https://docs.mongodb.com/manual/reference/bson-types/#objectid)  values should increase over time, they are not necessarily monotonic. This is because they:
     
@@ -158,7 +160,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMzkwMTY4MSwtMTIxOTkxOTgyNCw4MT
+eyJoaXN0b3J5IjpbMTU5Mjg0NzY2MSwtMTIxOTkxOTgyNCw4MT
 U4NTQ3NDEsMTE4NzkxNDMsLTIwNTcxNzA3OTAsNzMwOTk4MTE2
 XX0=
 -->
