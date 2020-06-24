@@ -102,8 +102,8 @@ db.collection.replaceOne(filter,  update,  options)
 : 조건에 맞는 문서를 찾아 대체합니다.
 
 MongoDB는 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set") 같은 문서를 update 하기위한 연산자를 제공합니다. 
-
-이런 update 연산자를 사용하기 위해선 아래와 같은 update 문서를 메서드로 전달해야 합니다. 
+[`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set")과 같은 어떤 update 연산자는 필드가 존재하지 않으면 필드를 생성합니다. 
+update 연산자를 사용하기 위해선 아래와 같은 update 문서를 메서드로 전달해야 합니다. 
 ```groovy
 {
   <update operator>: { <field1>: <value1>, ... },
@@ -111,9 +111,8 @@ MongoDB는 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/se
   ...
 }
 ```
-[`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set")과 같은 어떤 update 연산자는 필드가 존재하지 않으면 필드를 생성합니다. 
 
-아래 예제는 item 필드가 paper인 모든 문서를 찾아 들어온 모든 update 연산을 수행합니다.
+아래 예제에서 updateOne의 경우, item 필드가 paper인 문서 중 재모든 update 연산을 수행합니다.
 
 * $set 연산자를 사용해서 size,uom필드의 값을 cm으로 바꾸고 status를 p로 바꿉니다.
 * $currentDate 연산자를 사용해서 lastModified 필드의 최신 날짜로 변경을 합니다. 만약 lastModified 필드가 존재하지 않으면 $currentDate가 새로 필드를 만듭니다.
@@ -126,11 +125,19 @@ db.inventory.updateOne(
      $currentDate: { lastModified: true }
    }
 )
+
+db.inventory.updateMany(
+   { "qty": { $lt: 50 } },
+   {
+     $set: { "size.uom": "in", status: "P" },
+     $currentDate: { lastModified: true }
+   }
+)
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM3MjQ5NTcsLTMyOTEyMjU5MCw4Njk0Nz
-U2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4NTMs
-LTE5MzMyNDQ1NjVdfQ==
+eyJoaXN0b3J5IjpbLTk3MjYzODkwNSwtMzI5MTIyNTkwLDg2OT
+Q3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5MjksMTk0MDE2Nzg1
+MywtMTkzMzI0NDU2NV19
 -->
