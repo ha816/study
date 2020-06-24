@@ -53,11 +53,7 @@ While the BSON format itself is little-endian, the  _timestamp_  and  _counter_ 
 
 MongoDB 클라이언트는 `_id` 필드를 유일한 ObjectId 로 추가해야 합니다. ObjectIds를 사용하는 것은 아래와 같은 이점들이 있습니다.
 
-* mongo shell에서 , ObjectId
-
- should add an  `_id`  field with a unique ObjectId. Using ObjectIds for the  `_id`  field provides the following additional benefits:
-
--   in the  [`mongo`](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo "bin.mongo")  shell, you can access the creation time of the  `ObjectId`, using the  [`ObjectId.getTimestamp()`](https://docs.mongodb.com/manual/reference/method/ObjectId.getTimestamp/#ObjectId.getTimestamp "ObjectId.getTimestamp()")  method.
+* mongo shell에서,  `ObjectId.getTimestamp()` 메서드를 사용하면 ObjectId의 생성 시간을 알 수 있습니다. 
     
 -   sorting on an  `_id`  field that stores  `ObjectId`  values is roughly equivalent to sorting by creation time.
     
@@ -170,7 +166,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMTMxMDE1NCwtMTIxOTkxOTgyNCw4MT
+eyJoaXN0b3J5IjpbLTkxNzk2NjI1NCwtMTIxOTkxOTgyNCw4MT
 U4NTQ3NDEsMTE4NzkxNDMsLTIwNTcxNzA3OTAsNzMwOTk4MTE2
 XX0=
 -->
