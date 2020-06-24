@@ -82,7 +82,7 @@ db.inventory.find( { status: "A", qty: { $lt: 30 } } )
 
 ## OR Conjunction
 
-## Specify  `OR`  Conditions[](https://docs.mongodb.com/manual/tutorial/query-documents/#specify-or-conditions "Permalink to this headline")
+[`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or") 연산자를 사용하면 논리적인 OR Conjunction을 사용하는 것과 같은 효과를 낼 수 
 
 Using the  [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or")  operator, you can specify a compound query that joins each clause with a logical  `OR`  conjunction so that the query selects the documents in the collection that match at least one condition.
 
@@ -108,6 +108,6 @@ Queries which use  [comparison operators](https://docs.mongodb.com/manual/refere
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTE5MzkyOSwxOTQwMTY3ODUzLC0xOT
-MzMjQ0NTY1XX0=
+eyJoaXN0b3J5IjpbMTgxNjU0MzY3MywtMTE5MTkzOTI5LDE5ND
+AxNjc4NTMsLTE5MzMyNDQ1NjVdfQ==
 -->
