@@ -163,11 +163,32 @@ db.inventory.replaceOne(
 * 모든 쓰기 연산은 단일 문서에 대해선 원자성을 보장합니다. 
 
 db.collection.deleteMany(filter)
-: 조건에 맞는 모든 문서를 제거합니다.
+: 조건에 맞는 모든 문서를 제거합니다. 빈 filter를 인자로 넣으면 컬렉션의 모든 문서를 제거합니다.
 
+아래 예제로 status가 "A"인 모든 문서를 제거합니다.
+```groovy
+db.inventory.deleteMany({ status : "A" })
+```
+
+db.collection.deleteOne(filter)
+: 조건에 맞는 모든 문서를 제거합니다. 빈 filter를 인자로 넣으면 컬렉션의 모든 문서를 제거합니다.
+
+
+
+## Delete Only One Document that Matches a Condition
+
+To delete at most a single document that matches a specified filter (even though multiple documents may match the specified filter) use the  [`db.collection.deleteOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.deleteOne/#db.collection.deleteOne "db.collection.deleteOne()")  method.
+
+The following example deletes the  _first_  document where  `status`  is  `"D"`:
+
+copy
+
+copied
+
+db.inventory.deleteOne( { status: "D" } )
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NjA2NDg0NywxNTMxMzg2MTg2LC0zMj
-kxMjI1OTAsODY5NDc1NjY2LDEzNDAyMDEzMDYsLTExOTE5Mzky
-OSwxOTQwMTY3ODUzLC0xOTMzMjQ0NTY1XX0=
+eyJoaXN0b3J5IjpbLTIwNjYxMjU5NjEsMTUzMTM4NjE4NiwtMz
+I5MTIyNTkwLDg2OTQ3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5
+MjksMTk0MDE2Nzg1MywtMTkzMzI0NDU2NV19
 -->
