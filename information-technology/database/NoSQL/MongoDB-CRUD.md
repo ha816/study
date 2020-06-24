@@ -112,14 +112,13 @@ MongoDB는 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/se
   ...
 }
 ```
-
-어떤 update dustks
-
+[`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set")과 같은 어떤 update 연산자는 필드가 존재하지 않으면 필드를 생성합니다. 
 
 
-Some update operators, such as  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set"), will create the field if the field does not exist. See the individual  [update operator](https://docs.mongodb.com/manual/reference/operator/update)  reference for details.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0ODM1ODI0MywtMzI5MTIyNTkwLDg2OT
-Q3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5MjksMTk0MDE2Nzg1
-MywtMTkzMzI0NDU2NV19
+eyJoaXN0b3J5IjpbLTExMjMzODgzNTIsLTMyOTEyMjU5MCw4Nj
+k0NzU2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4
+NTMsLTE5MzMyNDQ1NjVdfQ==
 -->
