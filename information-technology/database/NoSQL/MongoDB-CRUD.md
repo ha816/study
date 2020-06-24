@@ -82,13 +82,17 @@ db.inventory.find( { status: "A", qty: { $lt: 30 } } )
 
 ## OR Conjunction
 
-[`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or") 연산자를 사용하면 논리적인 OR Conjunction을 사용하는 것과 같은 효과를 낼 수 있습니다. 
+[`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or") 쿼리 연산자를 사용하면 논리적인 OR Conjunction을 사용하는 것과 같은 효과를 낼 수 있습니다. 
+
+```groovy
+{ <field1>: { <operator1>: <value1> }, ... }
+```
 
 ```groovy
 db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
 ```
 위 예제는 status가 "A" 또는 qty가 30보다 작은 모든 문서를 찾습니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5ND
-AxNjc4NTMsLTE5MzMyNDQ1NjVdfQ==
+eyJoaXN0b3J5IjpbNDc3ODk3MjgsMTM0MDIwMTMwNiwtMTE5MT
+kzOTI5LDE5NDAxNjc4NTMsLTE5MzMyNDQ1NjVdfQ==
 -->
