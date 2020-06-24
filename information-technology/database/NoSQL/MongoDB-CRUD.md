@@ -74,24 +74,14 @@ db.inventory.find( { status: { $in: [ "A", "D" ] } } )
 
 다수의 필드를 AND Conjunction으로 조합해서 쿼리를 구성할 수 있습니다. 
 
-The following example retrieves all documents in the  `inventory`  collection where the  `status`  equals  `"A"`  **and**  `qty`  is less than ([`$lt`](https://docs.mongodb.com/manual/reference/operator/query/lt/#op._S_lt "$lt"))  `30`:
-
-copy
-
-copied
-
+아래 예제는 `status` 필드가 "A" 이고 `qty`
+The following example retrieves all documents in the `inventory` collection where the `status` equals `"A"`  **and**  `qty` is less than ([`$lt`](https://docs.mongodb.com/manual/reference/operator/query/lt/#op._S_lt "$lt")) `30`:
+```groovy
 db.inventory.find( { status: "A", qty: { $lt: 30 } } )
+```
 
-The operation corresponds to the following SQL statement:
 
-copy
-
-copied
-
-SELECT * FROM inventory WHERE status = "A" AND qty < 30
-
-See  [comparison operators](https://docs.mongodb.com/manual/reference/operator/query-comparison/#query-selectors-comparison)  for other MongoDB comparison operators.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NTQ1MjMzNSwxOTQwMTY3ODUzLC0xOT
-MzMjQ0NTY1XX0=
+eyJoaXN0b3J5IjpbNTAwNjQ1NDIxLDE5NDAxNjc4NTMsLTE5Mz
+MyNDQ1NjVdfQ==
 -->
