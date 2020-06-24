@@ -75,9 +75,9 @@ BSON이 JSON가 다른 점 한가지는 BSON이 더욱 진보된 형태의 데�
 
 대다수 서버측 프로그래밍 언어는 훨씬 복잡한 숫자형 타입을 가지고 있습니다 (integer, floating point, double 등등), 각 숫자형 타입은 효과적인 수학적 연산을 위해 고유한 최적의 사용법을 가지고 있습니다.
 
+## BSON Extended Types
 
-
-## ObjectId
+### ObjectId
 
 ObjectIds 작고, 빠르게 생성하고, 거의 unique하고 순서가 정해집니다. ObjectId 값은 12bytes 길이로 이 12 bytes으 아래로 구성됩니다.
 
@@ -94,7 +94,7 @@ MongoDB 클라이언트는 `_id` 필드를 유일한 ObjectId 로 추가해야 �
 
 > objectid값이 시간에 따라 커지는 것은 일반적으로 맞지만, 필수불가결하게 단조롭게 모든 objectid값이 항상 커지는 것은 아닙니다. 왜냐하면 같은 초에 생성된 값은 순서를 보장하지 않고, 클라이언트가 objectId를 만들어 시스템 시간이 다를지도 모르기 때문입니다.   
 
-## String 
+### String 
 
 BSON 문자열은 UTF-8을 따릅니다. 
 
@@ -102,7 +102,7 @@ BSON 문자열은 UTF-8을 따릅니다.
 
 UTF-8 문자들을 사용한 문자열에 sort()를 수행하면 자연스럽게 잘 동작합니다. 그러나 sort() 내부적으로 C++ strcmp()를 사용하는데, 몇몇 문자는 잘못 다룰 수도 있습니다. 
 
-## TimeStamp
+### TimeStamp
 
 BSON은 MongoDB 내부를 위해 특별한 timestamp 타입을 가지고 있습니다. 정규 Date 타입과는 관련이 없습니다. timestamp 타입은 64bit 값을 가지고 그 구성은 아래와 같습니다.
 
@@ -118,8 +118,7 @@ BSON 포맷이 little-endian이기 때문에 나머지 bits를 먼저 저장하�
 
 timestamp 값이 빈 상태인 top-level 문서를 삽입하면, MongoDB가 빈 timestamp 값을 현재 timestamp 값으로 대체합니다. 예외로, `_id` 필드 스스로가 timestamp가 없다면, 없는 상태로 들어가며 대체되지 않습니다. 
 
-
-## Date
+### Date
 
 BSON Date는 64bit 정수형으로 Unix epoch (Jan 1, 1970) 이후로 milliseconds의 수를 나타냅니다. 
 공식적인 BSON Date 타입은 UTC datetime입니다. 
@@ -222,7 +221,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTcxNjU1NDIsLTEwMjU5OTI2MjIsLT
+eyJoaXN0b3J5IjpbLTE3ODg3NzU1MTAsLTEwMjU5OTI2MjIsLT
 IwMDc1NzA1NjksNjI2NTg0NzkxLDM4NDg1Mjc5MywtMTI0MTIw
 MjA3MCwxNjM2NjkyODE1LC0xNjQyNzU1NzYwLDE5MTc2OTkyND
 QsLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MDEs
