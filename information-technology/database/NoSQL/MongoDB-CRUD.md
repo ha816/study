@@ -1,5 +1,4 @@
-# [Create(Insert)](https://docs.mongodb.com/manual/tutorial/insert-documents/)
-
+# Insert
 * 만약 생성할 문서가 들어갈 collection이 현재 없다면, insert 연산 수행시 자동으로 생성합니다.
 * MongoDB에선, 컬렉션에 저장된 각 문서는 유니크한 `_id`	필드를 primary key	처럼 가져야 합니다. 만약 삽입하는 문서에 `_id`필드가 빠져있다면, MongoDB 드라이버가 자동으로 Objectid로 `_id`필드를 생성합니다.
 * [upsert: true](https://docs.mongodb.com/manual/reference/method/db.collection.update/#upsert-parameter)로 동작하는 update 연산에서도 동일하게 적용됩니다. 
@@ -37,7 +36,7 @@ db.inventory.insertMany([
 ```
 `insertMany()` 는 새로 삽입된 문서의 `_id`값을 포함한 문서를 반환합니다. 
 
-# [Read(Query)](https://docs.mongodb.com/manual/tutorial/query-documents/)
+# Read(Query)
 
 db.collection.find()
 : collection의 문서를 찾는 연산. 특별히 인자를 넣지 않으면 collection에 전체 문서를 찾습니다.
@@ -178,7 +177,7 @@ db.inventory.deleteOne( { status: "D" } )
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc3MDUwMTc4LDE1MzEzODYxODYsLTMyOT
-EyMjU5MCw4Njk0NzU2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5
-LDE5NDAxNjc4NTMsLTE5MzMyNDQ1NjVdfQ==
+eyJoaXN0b3J5IjpbLTEwNTExODA2MDIsMTUzMTM4NjE4NiwtMz
+I5MTIyNTkwLDg2OTQ3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5
+MjksMTk0MDE2Nzg1MywtMTkzMzI0NDU2NV19
 -->
