@@ -102,16 +102,9 @@ db.collection.updateMany(filter,  update,  options)
 db.collection.replaceOne(filter,  update,  options)
 : 조건에 맞는 문서를 찾아 대체합니다.
 
-MongoDB는 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set") 같은 문서를 update 하기위한 
+MongoDB는 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set") 같은 문서를 update 하기위한 연산자를 제공합니다. 
 
-To update a document, MongoDB provides  [update operators](https://docs.mongodb.com/manual/reference/operator/update), such as  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set"), to modify field values.
-
-To use the update operators, pass to the update methods an update document of the form:
-
-copy
-
-copied
-
+이런 update 연산자를 사용하기 위해선 아래와 같은 update 문서를 메서드로 전달해야 합니다. 
 ```groovy
 {
   <update operator>: { <field1>: <value1>, ... },
@@ -120,12 +113,13 @@ copied
 }
 ```
 
+어떤 update dustks
 
 
 
 Some update operators, such as  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set"), will create the field if the field does not exist. See the individual  [update operator](https://docs.mongodb.com/manual/reference/operator/update)  reference for details.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NzU4MDk2NSwtMzI5MTIyNTkwLDg2OT
+eyJoaXN0b3J5IjpbMTU0ODM1ODI0MywtMzI5MTIyNTkwLDg2OT
 Q3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5MjksMTk0MDE2Nzg1
 MywtMTkzMzI0NDU2NV19
 -->
