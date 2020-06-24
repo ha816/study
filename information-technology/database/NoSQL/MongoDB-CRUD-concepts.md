@@ -2,13 +2,16 @@
 
 CRUD 명령과 관련된 주요 성질을 알아보자. 
 
-#  Atomicity and Transactions
 
-## Atomicity[](https://docs.mongodb.com/manual/core/write-operations-atomicity/#atomicity "Permalink to this headline")
+# Atomicity
+
+MongoDB상에서
 
 In MongoDB, a write operation is atomic on the level of a single document, even if the operation modifies multiple embedded documents  _within_  a single document.
 
-## Multi-Document Transactions[](https://docs.mongodb.com/manual/core/write-operations-atomicity/#multi-document-transactions "Permalink to this headline")
+
+
+## Multi-Document Transactions
 
 When a single write operation (e.g.  [`db.collection.updateMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany()")) modifies multiple documents, the modification of each document is atomic, but the operation as a whole is not atomic.
 
@@ -27,7 +30,7 @@ In most cases, multi-document transaction incurs a greater performance cost over
 
 For additional transactions usage considerations (such as runtime limit and oplog size limit), see also  [Production Considerations](https://docs.mongodb.com/manual/core/transactions-production-consideration/).
 
-## Concurrency Control[](https://docs.mongodb.com/manual/core/write-operations-atomicity/#concurrency-control "Permalink to this headline")
+## Concurrency Control
 
 Concurrency control allows multiple applications to run concurrently without causing data inconsistency or conflicts.
 
@@ -57,5 +60,5 @@ Miscellaneous
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NzUxNjI0XX0=
+eyJoaXN0b3J5IjpbODk0Mjc1Nzk3XX0=
 -->
