@@ -139,24 +139,37 @@ db.inventory.updateMany(
 
 `_id`필드를 제외하곤 문서의 모든 컨텐츠를 바꾸고 싶다면, `db.collection.replaceOne()`에 두번째 인자로 완전히 새로운 문서를 넣으면 됩니다. 대체하는 문서는 반드시 field-value 쌍으로 구성되어야 합니다. 즉 update 연산자를 포함하면 안됩니다.
 
-대체하는 문서는 다른 필드를 가질 수 있고, `_id`필드는 불변이기 때문에 남아 있어야 합니다. 만약 대체하는 문서에 `_id` 필드를 포함하고 
+대체하는 문서는 다른 필드를 가질 수 있고, `_id`필드는 불변이기 때문에 남아 있어야 합니다. 만약 대체하는 문서에 `_id` 필드를 포함하고 있으면 기존의 값하고 동일해야만 합니다. 
 
-
-The replacement document can have different fields from the original document. In the replacement document, you can omit the  `_id`  field since the  `_id`  field is immutable; however, if you do include the  `_id`  field, it must have the same value as the current value.
-
-The following example replaces the  _first_  document from the  `inventory`  collection where  `item:  "paper"`:
-
-copy
-
-copied
-
+```groovy
 db.inventory.replaceOne(
    { item: "paper" },
    { item: "paper", instock: [ { warehouse: "A", qty: 60 }, { warehouse: "B", qty: 40 } ] }
 )
+```
 
+모든 쓰기 작
+
+All write operations in MongoDB are atomic on the level of a single document. For more information on MongoDB and atomicity, see  [Atomicity and Transactions](https://docs.mongodb.com/manual/core/write-operations-atomicity/).
+
+### `_id`  Field[](https://docs.mongodb.com/manual/tutorial/update-documents/#id-field "Permalink to this headline")
+
+Once set, you cannot update the value of the  `_id`  field nor can you replace an existing document with a replacement document that has a different  `_id`  field value.
+
+### Field Order[](https://docs.mongodb.com/manual/tutorial/update-documents/#field-order "Permalink to this headline")
+
+MongoDB preserves the order of the document fields following write operations  _except_  for the following cases:
+
+-   The  `_id`  field is always the first field in the document.
+-   Updates that include  [`renaming`](https://docs.mongodb.com/manual/reference/operator/update/rename/#up._S_rename "$rename")  of field names may result in the reordering of fields in the document.
+
+### Upsert Option
+
+If  [`updateOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/#db.collection.updateOne "db.collection.updateOne()"),  [`updateMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany()"), or  [`replaceOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.replaceOne/#db.collection.replaceOne "db.collection.replaceOne()")  includes  `upsert  :  true`  **and**  no documents match the specified filter, then the operation creates a new document and inserts it. If there are matching documents, then the operation modifies or replaces the matching document or documents.
+
+For details on the new document created, see the individual reference pages for the methods.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NjUwNzQ1LC0zMjkxMjI1OTAsODY5ND
-c1NjY2LDEzNDAyMDEzMDYsLTExOTE5MzkyOSwxOTQwMTY3ODUz
-LC0xOTMzMjQ0NTY1XX0=
+eyJoaXN0b3J5IjpbLTEyNTMzODM0MTcsLTMyOTEyMjU5MCw4Nj
+k0NzU2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4
+NTMsLTE5MzMyNDQ1NjVdfQ==
 -->
