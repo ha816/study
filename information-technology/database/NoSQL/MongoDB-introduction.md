@@ -6,11 +6,12 @@ MongoDB는 오픈소스 문서지향(Document-Oriented)적 Cross-platform 데이
 
 [MySQL](https://namu.wiki/w/MySQL "MySQL") 처럼 전통적인 테이블-관계 기반의 [RDBMS](https://namu.wiki/w/RDBMS "RDBMS")가 아니며 [SQL](https://namu.wiki/w/SQL "SQL")을 사용하지 않습니다. 참고로 mongo는 humongous의 줄임말이라고 합니다. 즉 거대한 DB라는 뜻입니다.
 
-# Store 
 
-## Document
 
-Document는 RDMS의 record, row에 대응하는 데이터 구조입니다. 한 개이상의  key-value pair 로 구성됩니다.
+## Document & Collection
+
+Document는 RDMS의 record 또는 row에 대응하는 데이터 구조입니다. 
+한 개 이상의 key-value pair로 구성됩니다.
 
 아래 Document 예제를 한번 봅시다.
 
@@ -28,7 +29,6 @@ Document는 기본적으로 추가될때마다 값이 높아집니다.
 
 Document는 동적(dynamic) schema입니다. 즉, 같은 Collection 안에 있는 Document 임에도 서로 다른 schema를 갖고 있을 수 있습니다.
 
-## Collection
 
 Collection은 Document의 집합입니다. RDMS측에 비유하자면, Table에 대응합니다. 하지만 RDMS와 달리 schema를 따로 가지고 있지 않습니다.
 
@@ -139,5 +139,5 @@ brew services stop mongodb-community
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTAxMDc2MjIsNDYyNzc1NzgzXX0=
+eyJoaXN0b3J5IjpbMjgzNDA2OTY0LDQ2Mjc3NTc4M119
 -->
