@@ -77,7 +77,6 @@ BSON이 JSON가 다른 점 한가지는 BSON이 더욱 진보된 형태의 데�
 
 
 
-
 ## ObjectId
 
 ObjectIds 작고, 빠르게 생성하고, 거의 unique하고 순서가 정해집니다. ObjectId 값은 12bytes 길이로 이 12 bytes으 아래로 구성됩니다.
@@ -223,10 +222,10 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MDMwNTEzMiwtMTAyNTk5MjYyMiwtMj
-AwNzU3MDU2OSw2MjY1ODQ3OTEsMzg0ODUyNzkzLC0xMjQxMjAy
-MDcwLDE2MzY2OTI4MTUsLTE2NDI3NTU3NjAsMTkxNzY5OTI0NC
-wtMTM3NDY5MjQ2NSwtMTMzNzQ5MzU5MCwtMTIxNjkzMjcwMSwt
-MTgzNjMyMzczMiwtMTIxOTkxOTgyNCw4MTU4NTQ3NDEsMTE4Nz
-kxNDMsLTIwNTcxNzA3OTAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE4NTcxNjU1NDIsLTEwMjU5OTI2MjIsLT
+IwMDc1NzA1NjksNjI2NTg0NzkxLDM4NDg1Mjc5MywtMTI0MTIw
+MjA3MCwxNjM2NjkyODE1LC0xNjQyNzU1NzYwLDE5MTc2OTkyND
+QsLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MDEs
+LTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQsODE1ODU0NzQxLDExOD
+c5MTQzLC0yMDU3MTcwNzkwLDczMDk5ODExNl19
 -->
