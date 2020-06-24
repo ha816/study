@@ -155,8 +155,24 @@ db.inventory.replaceOne(
    { item: "paper", instock: [ { warehouse: "A", qty: 60 }, { warehouse: "B", qty: 40 } ] }
 )
 ```
+
+
+# DELETE
+
+* delete 연산은 생성되 있는 인덱스도 제거하진 않습니다. 심지어 컬렉션의 모든 문서를 제거해도 그렇습니다.
+* 모든 쓰기 
+
+Delete operations do not drop indexes, even if deleting all documents from a collection.
+
+### Atomicity[](https://docs.mongodb.com/manual/tutorial/remove-documents/#atomicity "Permalink to this headline")
+
+All write operations in MongoDB are atomic on the level of a single document. For more information on MongoDB and atomicity, see  [Atomicity and Transactions](https://docs.mongodb.com/manual/core/write-operations-atomicity/).
+
+### Write Acknowledgement[](https://docs.mongodb.com/manual/tutorial/remove-documents/#write-acknowledgement "Permalink to this headline")
+
+With write concerns, you can specify the level of acknowledgement requested from MongoDB for write operations. For details, see  [Write Concern](https://docs.mongodb.com/manual/reference/write-concern/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDU2NTczNiwxNTMxMzg2MTg2LC0zMj
+eyJoaXN0b3J5IjpbLTg0MDE3MDA4NSwxNTMxMzg2MTg2LC0zMj
 kxMjI1OTAsODY5NDc1NjY2LDEzNDAyMDEzMDYsLTExOTE5Mzky
 OSwxOTQwMTY3ODUzLC0xOTMzMjQ0NTY1XX0=
 -->
