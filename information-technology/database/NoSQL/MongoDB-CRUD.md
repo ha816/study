@@ -99,15 +99,8 @@ db.collection.updateOne(filter,  update,  options)
 db.collection.updateMany(filter,  update,  options)
 : 조건에 맞는 문서 전체를 찾아 수정합니다.
 
-
-
-
-
-
-[`db.collection.updateMany(<filter>,  <update>,  <options>)`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany")
--   [`db.collection.replaceOne(<filter>,  <update>,  <options>)`](https://docs.mongodb.com/manual/reference/method/db.collection.replaceOne/#db.collection.replaceOne "db.collection.replaceOne")
-
-
+db.collection.replaceOne(filter,  update,  options)
+: 조건에 맞는 문서를 찾아 수정합니다.
 
 To update a document, MongoDB provides  [update operators](https://docs.mongodb.com/manual/reference/operator/update), such as  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set"), to modify field values.
 
@@ -130,7 +123,7 @@ copied
 
 Some update operators, such as  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set"), will create the field if the field does not exist. See the individual  [update operator](https://docs.mongodb.com/manual/reference/operator/update)  reference for details.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyOTEyMjU5MCw4Njk0NzU2NjYsMTM0MD
-IwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4NTMsLTE5MzMyNDQ1
-NjVdfQ==
+eyJoaXN0b3J5IjpbMzMwNDQwNDIzLC0zMjkxMjI1OTAsODY5ND
+c1NjY2LDEzNDAyMDEzMDYsLTExOTE5MzkyOSwxOTQwMTY3ODUz
+LC0xOTMzMjQ0NTY1XX0=
 -->
