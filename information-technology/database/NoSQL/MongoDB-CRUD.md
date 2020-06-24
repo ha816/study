@@ -87,31 +87,8 @@ db.inventory.find( { status: "A", qty: { $lt: 30 } } )
 ```groovy
 db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
 ```
-
-아래 예제는 status가 "A" 또는 q
-
-The following example retrieves all documents in the collection where the  `status`  equals  `"A"`  **or**  `qty`  is less than ([`$lt`](https://docs.mongodb.com/manual/reference/operator/query/lt/#op._S_lt "$lt"))  `30`:
-
-copy
-
-copied
-
-db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
-
-The operation corresponds to the following SQL statement:
-
-copy
-
-copied
-
-SELECT * FROM inventory WHERE status = "A" OR qty < 30
-
-NOTE
-
-Queries which use  [comparison operators](https://docs.mongodb.com/manual/reference/operator/query-comparison/#query-selectors-comparison)  are subject to  [Type Bracketing](https://docs.mongodb.com/manual/reference/method/db.collection.find/#type-bracketing).
-
-
+위 예제는 status가 "A" 또는 qty가 30보다 작은 모든 문서를 찾습니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDg4ODQxNjYsLTExOTE5MzkyOSwxOT
-QwMTY3ODUzLC0xOTMzMjQ0NTY1XX0=
+eyJoaXN0b3J5IjpbMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5ND
+AxNjc4NTMsLTE5MzMyNDQ1NjVdfQ==
 -->
