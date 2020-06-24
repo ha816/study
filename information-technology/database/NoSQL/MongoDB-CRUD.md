@@ -82,9 +82,13 @@ db.inventory.find( { status: "A", qty: { $lt: 30 } } )
 
 ## OR Conjunction
 
-[`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or") 연산자를 사용하면 논리적인 OR Conjunction을 사용하는 것과 같은 효과를 낼 수 
+[`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or") 연산자를 사용하면 논리적인 OR Conjunction을 사용하는 것과 같은 효과를 낼 수 있습니다. 
 
-Using the  [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or")  operator, you can specify a compound query that joins each clause with a logical  `OR`  conjunction so that the query selects the documents in the collection that match at least one condition.
+```groovy
+db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
+```
+
+아래 예제는 status가 "A" 또는 q
 
 The following example retrieves all documents in the collection where the  `status`  equals  `"A"`  **or**  `qty`  is less than ([`$lt`](https://docs.mongodb.com/manual/reference/operator/query/lt/#op._S_lt "$lt"))  `30`:
 
@@ -108,6 +112,6 @@ Queries which use  [comparison operators](https://docs.mongodb.com/manual/refere
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjU0MzY3MywtMTE5MTkzOTI5LDE5ND
-AxNjc4NTMsLTE5MzMyNDQ1NjVdfQ==
+eyJoaXN0b3J5IjpbLTE4MDg4ODQxNjYsLTExOTE5MzkyOSwxOT
+QwMTY3ODUzLC0xOTMzMjQ0NTY1XX0=
 -->
