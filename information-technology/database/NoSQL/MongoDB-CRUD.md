@@ -1,0 +1,88 @@
+## CRUD Operations
+
+### [Create(Insert)](https://docs.mongodb.com/manual/tutorial/insert-documents/)
+
+* 만약 생성할 문서가 들어갈 collection이 현재 없다면, insert 연산 수행시 자동으로 생성합니다.
+* MongoDB에선, 컬렉션에 저장된 각 문서는 유니크한 `_id`	필드를 primary key	처럼 가져야 합니다. 만약 삽입하는 문서에 `_id`필드가 빠져있다면, MongoDB 드라이버가 자동으로 Objectid로 `_id`필드를 생성합니다.
+* [upsert: true](https://docs.mongodb.com/manual/reference/method/db.collection.update/#upsert-parameter)로 동작하는 update 연산에서도 동일하게 적용됩니다. 
+* MongoDB의 한 문서에 대한 모든 쓰기 작업은 원자성을 보장합니다. 
+	* [Atomicity and Transactions](https://docs.mongodb.com/manual/core/write-operations-atomicity/)
+
+db.collection.insertOne()
+: collection에 단일 문서를 추가합니다. 만약 문서가 `_id`  필드 값을 가지지 않으면, MongoDB에서 자동적으로 ObjectId 값으로  `_id` 필드를 추가합니다. 
+
+아래 예제에서는 `inventory`  collection 안에 한 문서를 추가합니다. 
+
+```
+db.inventory.insertOne(
+   { item: "canvas", qty: 100, tags: ["cotton"], size: { h: 28, w: 35.5, uom: "cm" } }
+)
+```
+
+`insertOne()`의 결과로 새롭게 삽입된 문서의 `_id` 필드 값을 포함한 하나의 문서를 반환합니다.  간단하게 막 삽입한 문서를 보고 싶다면 아래 명령을 수행합니다.
+
+```
+db.inventory.find( { item: "canvas" } )
+```
+
+db.collection.insertMany()
+: 한 컬렉션에 다수의 문서를 삽입할 수 있습니다.  문서들의 배열을 메서드로 보냅니다. 
+
+아래 예제에선 `inventory`  collection에 3건의 새로운 문서를 삽입합니다. `_id`  필드가 없다면, MongoDB가 자동적으로 각 문서에 대해 값을 만듭니다.
+
+```
+db.inventory.insertMany([
+   { item: "journal", qty: 25, tags: ["blank", "red"], size: { h: 14, w: 21, uom: "cm" } },
+   { item: "mat", qty: 85, tags: ["gray"], size: { h: 27.9, w: 35.5, uom: "cm" } },
+   { item: "mousepad", qty: 25, tags: ["gel", "blue"], size: { h: 19, w: 22.85, uom: "cm" } }
+])
+```
+`insertMany()` 는 새로 삽입된 문서의 `_id`값을 포함한 문서를 반환합니다. 
+
+### [Read(Query)](https://docs.mongodb.com/manual/tutorial/query-documents/)
+
+db.collection.find()
+: collection의 문서를 찾는 연산. 특별히 인자를 넣지 않으면 collection에 전체 문서를 찾습니다.
+
+db.collection.findOne()
+: collection에 있는 한 문서를 찾는 연산. 내부적으로 db.collection.find() 연산을 호출하며 단지 limit 1 조건을 추가합니다.
+
+## Query 
+
+A  [query filter document](https://docs.mongodb.com/manual/core/document/#document-query-filter)  can use the  [query operators](https://docs.mongodb.com/manual/reference/operator/query/#query-selectors)  to specify conditions in the following form:
+
+copy
+
+copied
+
+{ <field1>: { <operator1>: <value1> }, ... }
+
+The following example retrieves all documents from the  `inventory`  collection where  `status`  equals either  `"A"`  or  `"D"`:
+
+copy
+
+copied
+
+db.inventory.find( { status: { $in: [ "A", "D" ] } } )
+
+NOTE
+
+Although you can express this query using the  [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or")  operator, use the  [`$in`](https://docs.mongodb.com/manual/reference/operator/query/in/#op._S_in "$in")  operator rather than the  [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or")  operator when performing equality checks on the same field.
+
+The operation corresponds to the following SQL statement:
+
+copy
+
+copied
+
+SELECT * FROM inventory WHERE status in ("A", "D")
+
+Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/reference/operator/query/)  document for the complete list of MongoDB query operators
+
+> Written with [StackEdit](https://stackedit.io/).
+
+
+> Written with [StackEdit](https://stackedit.io/).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5NTA3OTU4ODldfQ==
+-->
