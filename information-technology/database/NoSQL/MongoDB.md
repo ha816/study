@@ -68,7 +68,7 @@ UTF-8 문자들을 사용한 문자열에 sort()를 수행하면 자연스럽게
 
 ## TimeStamp
 
-BSON은 MongoDB 내부를 위해 특별한 timestamp 타입을 가지고 있습니다. 정규 Date 타입과는 
+BSON은 MongoDB 내부를 위해 특별한 timestamp 타입을 가지고 있습니다. 정규 Date 타입과는 관련이 없습니다. timestamp 타입은 64 
 
 BSON has a special timestamp type for  _internal_  MongoDB use and is  **not**  associated with the regular  [Date](https://docs.mongodb.com/manual/reference/bson-types/#document-bson-type-date)  type. This internal timestamp type is a 64 bit value where:
 
@@ -183,7 +183,8 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzc0OTM1OTAsLTEyMTY5MzI3MDEsLT
-E4MzYzMjM3MzIsLTEyMTk5MTk4MjQsODE1ODU0NzQxLDExODc5
-MTQzLC0yMDU3MTcwNzkwLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMzIyMTI2NzEyLC0xMzM3NDkzNTkwLC0xMj
+E2OTMyNzAxLC0xODM2MzIzNzMyLC0xMjE5OTE5ODI0LDgxNTg1
+NDc0MSwxMTg3OTE0MywtMjA1NzE3MDc5MCw3MzA5OTgxMTZdfQ
+==
 -->
