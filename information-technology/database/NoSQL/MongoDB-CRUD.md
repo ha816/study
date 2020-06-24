@@ -162,9 +162,12 @@ db.inventory.replaceOne(
 * delete 연산은 생성되 있는 인덱스도 제거하진 않습니다. 심지어 컬렉션의 모든 문서를 제거해도 그렇습니다.
 * 모든 쓰기 연산은 단일 문서에 대해선 원자성을 보장합니다. 
 
+db.collection.deleteMany(filter)
+: 조건에 맞는 모든 문서를 제거합니다.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0Mjc5OTI1LDE1MzEzODYxODYsLTMyOT
-EyMjU5MCw4Njk0NzU2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5
-LDE5NDAxNjc4NTMsLTE5MzMyNDQ1NjVdfQ==
+eyJoaXN0b3J5IjpbMTg1NjA2NDg0NywxNTMxMzg2MTg2LC0zMj
+kxMjI1OTAsODY5NDc1NjY2LDEzNDAyMDEzMDYsLTExOTE5Mzky
+OSwxOTQwMTY3ODUzLC0xOTMzMjQ0NTY1XX0=
 -->
