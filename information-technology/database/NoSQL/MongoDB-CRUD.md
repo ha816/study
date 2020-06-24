@@ -92,11 +92,16 @@ db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
 
 # Update
 
--   [`db.collection.updateOne(<filter>,  <update>,  <options>)`](https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/#db.collection.updateOne "db.collection.updateOne")
--   [`db.collection.updateMany(<filter>,  <update>,  <options>)`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany")
+
+db.collection.updateOne(<filter>,  <update>,  <options>)
+:
+
+
+
+[`db.collection.updateMany(<filter>,  <update>,  <options>)`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany")
 -   [`db.collection.replaceOne(<filter>,  <update>,  <options>)`](https://docs.mongodb.com/manual/reference/method/db.collection.replaceOne/#db.collection.replaceOne "db.collection.replaceOne")
 
-## Update Documents in a Collection[](https://docs.mongodb.com/manual/tutorial/update-documents/#update-documents-in-a-collection "Permalink to this headline")
+
 
 To update a document, MongoDB provides  [update operators](https://docs.mongodb.com/manual/reference/operator/update), such as  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set"), to modify field values.
 
@@ -106,15 +111,20 @@ copy
 
 copied
 
+```groovy
 {
   <update operator>: { <field1>: <value1>, ... },
   <update operator>: { <field2>: <value2>, ... },
   ...
 }
+```
+
+
+
 
 Some update operators, such as  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set"), will create the field if the field does not exist. See the individual  [update operator](https://docs.mongodb.com/manual/reference/operator/update)  reference for details.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDkxMDQ2NCw4Njk0NzU2NjYsMTM0MD
-IwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4NTMsLTE5MzMyNDQ1
-NjVdfQ==
+eyJoaXN0b3J5IjpbNTQzNjc0Niw4Njk0NzU2NjYsMTM0MDIwMT
+MwNiwtMTE5MTkzOTI5LDE5NDAxNjc4NTMsLTE5MzMyNDQ1NjVd
+fQ==
 -->
