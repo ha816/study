@@ -10,11 +10,7 @@ MongoDB는 오픈소스 문서지향(Document-Oriented)적 Cross-platform 데이
 
 ## Document & Collection
 
-Document는 RDMS의 record 또는 row에 대응하는 데이터 구조입니다. 
-한 개 이상의 key-value pair로 구성됩니다.
-
-아래 Document 예제를 한번 봅시다.
-
+Document는 RDMS의 record 또는 row에 대응하는 데이터 구조입니다. 한 개 이상의 key-value pair로 구성됩니다.
 ```
 {
     "id": ObjectId("5099803df3f4948bd2f98391"),
@@ -22,14 +18,11 @@ Document는 RDMS의 record 또는 row에 대응하는 데이터 구조입니다.
     "name": { first: "M.J.", last: "Kim" }
 }
 ```
+위 예제에서 좌측의 id, username, name은 key이고 대응하는 오른쪽에 값들이 value 입니다.
 
-여기서 id, username, name 은 key이고 대응하는 오른쪽에 값들은 value 입니다.
+Document는 기본적으로 추가될때마다 값이 높아집니다. Document는 동적(dynamic) schema입니다. 즉, 같은 Collection 안에 있는 Document 임에도 서로 다른 schema를 갖고 있을 수 있습니다.
 
-Document는 기본적으로 추가될때마다 값이 높아집니다.
-
-Document는 동적(dynamic) schema입니다. 즉, 같은 Collection 안에 있는 Document 임에도 서로 다른 schema를 갖고 있을 수 있습니다.
-
-
+--- 
 Collection은 Document의 집합입니다. RDMS측에 비유하자면, Table에 대응합니다. 하지만 RDMS와 달리 schema를 따로 가지고 있지 않습니다.
 
 ![A collection of MongoDB documents.](https://docs.mongodb.com/manual/_images/crud-annotated-collection.bakedsvg.svg)
@@ -139,5 +132,5 @@ brew services stop mongodb-community
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgzNDA2OTY0LDQ2Mjc3NTc4M119
+eyJoaXN0b3J5IjpbNDY5MTkzNDY0LDQ2Mjc3NTc4M119
 -->
