@@ -80,7 +80,7 @@ BSON 포맷이 little-endian이기 때문에 나머지 bits를 먼저 저장하�
 > 주의할점
 > BSON timestmp는 내부 MongoDB용으로 사용됩니다. 따라서 대부분의 애플리케이션 개발에서, BSON Date type을 사용하게 될것 입니다. 
 
-timestamp 값이 빈 상태인 top-level 문서를 삽입하면, mon
+timestamp 값이 빈 상태인 top-level 문서를 삽입하면, MongoDB가 빈 timestamp 값을 현재 timestamp 값으로 대체합니다. 예외로, `_id` 필드 스스로가 timestamp가 없다면, 없는 상태로 들어가며 대체되지 않습
 
 When inserting a document that contains top-level fields with empty timestamp values, MongoDB replaces the empty timestamp values with the current timestamp value, with the following exception. If the  `_id`  field itself contains an empty timestamp value, it will always be inserted as is and not replaced.
 
@@ -180,7 +180,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzAxNjAwODMsLTEzNzQ2OTI0NjUsLT
+eyJoaXN0b3J5IjpbLTE4ODgxNTM4NzIsLTEzNzQ2OTI0NjUsLT
 EzMzc0OTM1OTAsLTEyMTY5MzI3MDEsLTE4MzYzMjM3MzIsLTEy
 MTk5MTk4MjQsODE1ODU0NzQxLDExODc5MTQzLC0yMDU3MTcwNz
 kwLDczMDk5ODExNl19
