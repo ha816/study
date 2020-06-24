@@ -67,20 +67,7 @@ db.inventory.find( { status: "D" } )
 db.inventory.find( { status: { $in: [ "A", "D" ] } } )
 ```
 
-[`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or") 연산자 를 이용해서도 같은 표현을 나타낼 수 있습니다. 
-NOTE 
-
-Although you can express this query using the  [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or")  operator, use the  [`$in`](https://docs.mongodb.com/manual/reference/operator/query/in/#op._S_in "$in")  operator rather than the  [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or")  operator when performing equality checks on the same field.
-
-The operation corresponds to the following SQL statement:
-
-copy
-
-copied
-
-SELECT * FROM inventory WHERE status in ("A", "D")
-
-Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/reference/operator/query/)  document for the complete list of MongoDB query operators.
+위 예제는 [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or") 연산자를 이용해서도 같은 표현을 나타낼 수 있습니다. 하지만 [`$in`](https://docs.mongodb.com/manual/reference/operator/query/in/#op._S_in "$in") 연산자가 같은 필드에 대해서 동등 비교를 할때는 더 좋은 성능을 보입니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzQ1NzMzOSwtMTkzMzI0NDU2NV19
+eyJoaXN0b3J5IjpbLTUxOTUyNDI4NiwtMTkzMzI0NDU2NV19
 -->
