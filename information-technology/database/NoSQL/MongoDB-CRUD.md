@@ -80,8 +80,34 @@ db.inventory.find( { status: { $in: [ "A", "D" ] } } )
 db.inventory.find( { status: "A", qty: { $lt: 30 } } )
 ```
 
+## OR Conjunction
+
+## Specify  `OR`  Conditions[](https://docs.mongodb.com/manual/tutorial/query-documents/#specify-or-conditions "Permalink to this headline")
+
+Using the  [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or")  operator, you can specify a compound query that joins each clause with a logical  `OR`  conjunction so that the query selects the documents in the collection that match at least one condition.
+
+The following example retrieves all documents in the collection where the  `status`  equals  `"A"`  **or**  `qty`  is less than ([`$lt`](https://docs.mongodb.com/manual/reference/operator/query/lt/#op._S_lt "$lt"))  `30`:
+
+copy
+
+copied
+
+db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
+
+The operation corresponds to the following SQL statement:
+
+copy
+
+copied
+
+SELECT * FROM inventory WHERE status = "A" OR qty < 30
+
+NOTE
+
+Queries which use  [comparison operators](https://docs.mongodb.com/manual/reference/operator/query-comparison/#query-selectors-comparison)  are subject to  [Type Bracketing](https://docs.mongodb.com/manual/reference/method/db.collection.find/#type-bracketing).
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MTQxNzA4MSwxOTQwMTY3ODUzLC0xOT
+eyJoaXN0b3J5IjpbLTExOTE5MzkyOSwxOTQwMTY3ODUzLC0xOT
 MzMjQ0NTY1XX0=
 -->
