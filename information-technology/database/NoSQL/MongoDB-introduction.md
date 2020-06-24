@@ -113,7 +113,6 @@ BSON Date는 64bit 정수형으로 Unix epoch (Jan 1, 1970) 이후로 millisecon
 공식적인 BSON Date 타입은 UTC datetime입니다. 
 BSON은 양수 값을 가지며, 음수값의 경우는 1970년 이전을 나타냅니다. 
 
-
     
 # Operations
 
@@ -130,5 +129,6 @@ brew services stop mongodb-community
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyMzYwNDQyLDQ2Mjc3NTc4M119
+eyJoaXN0b3J5IjpbMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNz
+c1NzgzXX0=
 -->
