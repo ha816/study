@@ -211,6 +211,10 @@ FROM employees WHERE first_name LIKE 'Christ%';
 
 ### BETWEEN 연산자
 
+`크거나 같다와 작거나 같다`라는 두 개의 연산자를 하나로 합친 연산자다. 
+
+BETWEEN 연산자는 다른 비교조건과 결합해 하나의 인덱스를 사용할땐 주의해야 할 점이 있다. 동등 비교 연산자와 BETWEEN 연산자를 이용해 부서 번호와 사원번호로 dept_emp 테이블을 죄회하는 다음 쿼리는 한번 보자. 
+
 
 
 
@@ -220,11 +224,11 @@ FROM employees WHERE first_name LIKE 'Christ%';
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEyNTQ4NTc0LC0xOTg3NzE1MDcwLC0yND
-c5ODgyODIsODU5OTI4NTI3LDEwMjc0MjQ2NSwtMTkyOTE2MTE1
-OSwxNDI0NTAxODA2LDgyNTgwMzU4NSwxMjMyNDA2ODQzLC02OD
-IwNjY5ODMsMTc2OTkxNTkyOSwxOTkwNDc4MDAsNDc4NDEwODQy
-LC0xMDIzNTQxNDgzLC0xMzcyMzcxODAzLC0xMDU5NDcxMjI5LC
-0xNzc5NDQwNDM5LC0zMjM5MTQzNzksMzk2Njg3NjQxLC0xNTg4
-Njc5MzM4XX0=
+eyJoaXN0b3J5IjpbMTcwNzQ5NzA4NCwtMTk4NzcxNTA3MCwtMj
+Q3OTg4MjgyLDg1OTkyODUyNywxMDI3NDI0NjUsLTE5MjkxNjEx
+NTksMTQyNDUwMTgwNiw4MjU4MDM1ODUsMTIzMjQwNjg0MywtNj
+gyMDY2OTgzLDE3Njk5MTU5MjksMTk5MDQ3ODAwLDQ3ODQxMDg0
+MiwtMTAyMzU0MTQ4MywtMTM3MjM3MTgwMywtMTA1OTQ3MTIyOS
+wtMTc3OTQ0MDQzOSwtMzIzOTE0Mzc5LDM5NjY4NzY0MSwtMTU4
+ODY3OTMzOF19
 -->
