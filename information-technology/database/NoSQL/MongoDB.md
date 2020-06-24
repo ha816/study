@@ -59,6 +59,7 @@ hello\x00                  // field name
 \x00                       // 0x00 = type EOO ('end of object')
 ```
 
+JSON을 그대로 사용하는 다른 시스템과는 다르게, MongoDB
 
 Unlike systems that simply store JSON as string-encoded values, or binary-encoded blobs, MongoDB uses BSON to offer the industry’s most powerful indexing and querying features on top of the web’s most usable data format.
 
@@ -247,7 +248,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NTM2OTAyLDM4NDg1Mjc5MywtMTI0MT
+eyJoaXN0b3J5IjpbLTc2NzUxNzQ3LDM4NDg1Mjc5MywtMTI0MT
 IwMjA3MCwxNjM2NjkyODE1LC0xNjQyNzU1NzYwLDE5MTc2OTky
 NDQsLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MD
 EsLTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQsODE1ODU0NzQxLDEx
