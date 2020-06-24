@@ -49,38 +49,17 @@ MongoDB는 내부적으로 또 네트워크 상으로  BSON 형태로 데이터�
 JSON으로 표현 가능한 어떤것도 MongoDB로 자연스럽게 저장 가능하고, 또 JSON으로 찾을 수 있습니다.  
 
 ```groovy
-
-{"hello": "world"} → 
+{"hello": "world"} 
+→ 
 \x16\x00\x00\x00           // total document size
 \x02                       // 0x02 = type String
 hello\x00                  // field name
 \x06\x00\x00\x00world\x00  // field value
 \x00                       // 0x00 = type EOO ('end of object')
-
 ```
 
 ```
 ```
-
-  
-
-```
-{"BSON": ["awesome", 5.05, 1986]} →
-```
-
-```
- \x31\x00\x00\x00
- \x04BSON\x00
- \x26\x00\x00\x00
- \x02\x30\x00\x08\x00\x00\x00awesome\x00
- \x01\x31\x00\x33\x33\x33\x33\x33\x33\x14\x40
- \x10\x32\x00\xc2\x07\x00\x00
- \x00
- \x00
-```
-
-```
-
 
 Unlike systems that simply store JSON as string-encoded values, or binary-encoded blobs, MongoDB uses BSON to offer the industry’s most powerful indexing and querying features on top of the web’s most usable data format.
 
@@ -269,9 +248,9 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDgzMDkzNTcsLTEyNDEyMDIwNzAsMT
-YzNjY5MjgxNSwtMTY0Mjc1NTc2MCwxOTE3Njk5MjQ0LC0xMzc0
-NjkyNDY1LC0xMzM3NDkzNTkwLC0xMjE2OTMyNzAxLC0xODM2Mz
-IzNzMyLC0xMjE5OTE5ODI0LDgxNTg1NDc0MSwxMTg3OTE0Mywt
-MjA1NzE3MDc5MCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNDM0OTA2MjE2LC0xMjQxMjAyMDcwLDE2Mz
+Y2OTI4MTUsLTE2NDI3NTU3NjAsMTkxNzY5OTI0NCwtMTM3NDY5
+MjQ2NSwtMTMzNzQ5MzU5MCwtMTIxNjkzMjcwMSwtMTgzNjMyMz
+czMiwtMTIxOTkxOTgyNCw4MTU4NTQ3NDEsMTE4NzkxNDMsLTIw
+NTcxNzA3OTAsNzMwOTk4MTE2XX0=
 -->
