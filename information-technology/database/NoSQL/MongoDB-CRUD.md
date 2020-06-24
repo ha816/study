@@ -92,6 +92,11 @@ db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
 
 # Update
 
+*
+
+If  [`updateOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/#db.collection.updateOne "db.collection.updateOne()"),  [`updateMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany()"), or  [`replaceOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.replaceOne/#db.collection.replaceOne "db.collection.replaceOne()")  includes  `upsert  :  true`  **and**  no documents match the specified filter, then the operation creates a new document and inserts it. If there are matching documents, then the operation modifies or replaces the matching document or documents.
+
+
 db.collection.updateOne(filter,  update,  options)
 : 조건에 맞는 최상단 문서 하나를 찾아 수정합니다.
 
@@ -169,7 +174,7 @@ If  [`updateOne()`](https://docs.mongodb.com/manual/reference/method/db.collecti
 
 For details on the new document created, see the individual reference pages for the methods.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0ODM0NTk4NSwtMzI5MTIyNTkwLDg2OT
-Q3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5MjksMTk0MDE2Nzg1
-MywtMTkzMzI0NDU2NV19
+eyJoaXN0b3J5IjpbLTEzMTY2MzIwNjgsLTMyOTEyMjU5MCw4Nj
+k0NzU2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4
+NTMsLTE5MzMyNDQ1NjVdfQ==
 -->
