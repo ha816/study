@@ -82,6 +82,8 @@ BSON 포맷이 little-endian이기 때문에 나머지 bits를 먼저 저장하�
 
 timestamp 값이 빈 상태인 top-level 문서를 삽입하면, MongoDB가 빈 timestamp 값을 현재 timestamp 값으로 대체합니다. 예외로, `_id` 필드 스스로가 timestamp가 없다면, 없는 상태로 들어가며 대체되지 않습니다. 
 
+
+
     
 # Operations
 
@@ -178,8 +180,8 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzY5OTI0NCwtMTM3NDY5MjQ2NSwtMT
-MzNzQ5MzU5MCwtMTIxNjkzMjcwMSwtMTgzNjMyMzczMiwtMTIx
-OTkxOTgyNCw4MTU4NTQ3NDEsMTE4NzkxNDMsLTIwNTcxNzA3OT
-AsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE2NDI3NTU3NjAsMTkxNzY5OTI0NCwtMT
+M3NDY5MjQ2NSwtMTMzNzQ5MzU5MCwtMTIxNjkzMjcwMSwtMTgz
+NjMyMzczMiwtMTIxOTkxOTgyNCw4MTU4NTQ3NDEsMTE4NzkxND
+MsLTIwNTcxNzA3OTAsNzMwOTk4MTE2XX0=
 -->
