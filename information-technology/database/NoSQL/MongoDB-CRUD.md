@@ -92,9 +92,8 @@ db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
 
 # Update
 
-
 db.collection.updateOne(filter,  update,  options)
-: 조건에 맞는 문서 하나를 찾아 수정합니다.
+: 조건에 맞는 최상단 문서 하나를 찾아 수정합니다.
 
 db.collection.updateMany(filter,  update,  options)
 : 조건에 맞는 문서 전체를 찾아 수정합니다.
@@ -114,10 +113,10 @@ MongoDB는 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/se
 ```
 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set")과 같은 어떤 update 연산자는 필드가 존재하지 않으면 필드를 생성합니다. 
 
-아래 예제는 item 필드가 paper인 모든 문서를 찾아 
+아래 예제는 item 필드가 paper인 모든 문서를 찾아 들어온 모든 update 연산을 수행합니다.
 
-$set 연산자를 사용해서 size,uom필드의 값을 cm으로 바꾸고 status를 p로 바꿉니다.
-$currentDate 연산자를 사용해서 lastModified 필드의 최신 날짜로 변경을 합니다. 만약 lastModified 필드가 존재하지 않으면 $currentDate가 새로 필드를 만듭니다.
+* $set 연산자를 사용해서 size,uom필드의 값을 cm으로 바꾸고 status를 p로 바꿉니다.
+* $currentDate 연산자를 사용해서 lastModified 필드의 최신 날짜로 변경을 합니다. 만약 lastModified 필드가 존재하지 않으면 $currentDate가 새로 필드를 만듭니다.
 
 ``` groovy
 db.inventory.updateOne(
@@ -129,13 +128,9 @@ db.inventory.updateOne(
 )
 ```
 
-The update operation:
-
--   uses the  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set")  operator to update the value of the  `size.uom`  field to  `"cm"`  and the value of the  `status`  field to  `"P"`,
--   uses the  [`$currentDate`](https://docs.mongodb.com/manual/reference/operator/update/currentDate/#up._S_currentDate "$currentDate")  operator to update the value of the  `lastModified`  field to the current date. If  `lastModified`  field does not exist,  [`$currentDate`](https://docs.mongodb.com/manual/reference/operator/update/currentDate/#up._S_currentDate "$currentDate")  will create the field. See  [`$currentDate`](https://docs.mongodb.com/manual/reference/operator/update/currentDate/#up._S_currentDate "$currentDate")  for details
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjYxODg4NjksLTMyOTEyMjU5MCw4Nj
-k0NzU2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4
-NTMsLTE5MzMyNDQ1NjVdfQ==
+eyJoaXN0b3J5IjpbOTM3MjQ5NTcsLTMyOTEyMjU5MCw4Njk0Nz
+U2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4NTMs
+LTE5MzMyNDQ1NjVdfQ==
 -->
