@@ -116,6 +116,9 @@ MongoDB는 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/se
 
 아래 예제는 item 필드가 paper인 모든 문서를 찾아 수정합니다.
 
+$set 연산자를 사용해서 size,uom필드의 값을 cm으로 바꾸고 status를 p로 바꿉니다.
+$currentDate 연산자를 사용해서 la
+
 ``` groovy
 db.inventory.updateOne(
    { item: "paper" },
@@ -132,7 +135,7 @@ The update operation:
 -   uses the  [`$currentDate`](https://docs.mongodb.com/manual/reference/operator/update/currentDate/#up._S_currentDate "$currentDate")  operator to update the value of the  `lastModified`  field to the current date. If  `lastModified`  field does not exist,  [`$currentDate`](https://docs.mongodb.com/manual/reference/operator/update/currentDate/#up._S_currentDate "$currentDate")  will create the field. See  [`$currentDate`](https://docs.mongodb.com/manual/reference/operator/update/currentDate/#up._S_currentDate "$currentDate")  for details
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNjMxNDU0MCwtMzI5MTIyNTkwLDg2OT
-Q3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5MjksMTk0MDE2Nzg1
-MywtMTkzMzI0NDU2NV19
+eyJoaXN0b3J5IjpbLTE1NjM5NTYyOTEsLTMyOTEyMjU5MCw4Nj
+k0NzU2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4
+NTMsLTE5MzMyNDQ1NjVdfQ==
 -->
