@@ -45,7 +45,7 @@ date와 binary 데이터와 같은 JSON-native가 아닌 데이터 타입을 추
 
 ## Does MongoDB use BSON, or JSON?
 
-MongoDB 내부적이르ㅗ 글
+MongoDB는 내부적으로 또 네트워크 상으로  BSON 형태로 데이터를 저장합니다. JSON으로 표현 가능한 어떤것도 MongoDB로 자연스럽게 저장 가능하고, 또 JON 
 
 MongoDB stores data in BSON format both internally, and over the network, but that doesn’t mean you can’t think of MongoDB as a JSON database. Anything you can represent in JSON can be natively stored in MongoDB, and retrieved just as easily in JSON.
 
@@ -267,7 +267,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NDQ0Mzg4MywtMTI0MTIwMjA3MCwxNj
+eyJoaXN0b3J5IjpbLTI2MDk2NjM0MCwtMTI0MTIwMjA3MCwxNj
 M2NjkyODE1LC0xNjQyNzU1NzYwLDE5MTc2OTkyNDQsLTEzNzQ2
 OTI0NjUsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MDEsLTE4MzYzMj
 M3MzIsLTEyMTk5MTk4MjQsODE1ODU0NzQxLDExODc5MTQzLC0y
