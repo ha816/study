@@ -5,7 +5,7 @@ CRUD 명령과 관련된 주요 성질을 알아보자.
 
 # Atomicity
 
-MongoDB상에서
+MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성이 보장됩니다. 심지어 단일 문서안에서 다수의 중첩된 문서에 
 
 In MongoDB, a write operation is atomic on the level of a single document, even if the operation modifies multiple embedded documents  _within_  a single document.
 
@@ -60,5 +60,5 @@ Miscellaneous
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0Mjc1Nzk3XX0=
+eyJoaXN0b3J5IjpbLTE3MDU4NDg3MTddfQ==
 -->
