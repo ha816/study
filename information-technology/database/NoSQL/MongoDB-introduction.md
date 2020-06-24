@@ -31,9 +31,8 @@ RDMS의, Table에 대응합니다. 하지만 RDMS와 달리 schema를 따로 가
 
 BSON은 간단히 말하자면 "Binary JSON"입니다. BSON의 이진 구조는 타입과 길이 정보를 인코드하여 훨씬 빠르게 파싱되도록 합니다.
 
-date와 binary 데이터와 같은 JSON-native가 아닌 데이터 타입을 추가함으로써, MongoDB가 이런 타입도 지원이 가능하다. 심지어 어떤 복잡한 형태의 수학적인 데이터도 지원합니다. 
+date와 binary 데이터와 같은 JSON-native가 아닌 데이터 타입을 추가함으로써, MongoDB가 이런 타입도 지원이 가능합니다. 심지어 어떤 복잡한 형태의 수학적인 데이터도 지원합니다. 
 
-## Does MongoDB use BSON, or JSON?
 
 MongoDB는 내부적으로 또 네트워크 상으로  BSON 형태로 데이터를 저장합니다. 
 그러다 보니 MongoDB를 JSON Database가 아니라고 생각할 수 있지만 이는 사실이 아닙니다. 
@@ -131,5 +130,5 @@ brew services stop mongodb-community
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjc1ODc3OSw0NjI3NzU3ODNdfQ==
+eyJoaXN0b3J5IjpbOTgyMzYwNDQyLDQ2Mjc3NTc4M119
 -->
