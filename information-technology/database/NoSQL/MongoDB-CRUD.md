@@ -1,6 +1,4 @@
-## CRUD Operations
-
-### [Create(Insert)](https://docs.mongodb.com/manual/tutorial/insert-documents/)
+# [Create(Insert)](https://docs.mongodb.com/manual/tutorial/insert-documents/)
 
 * 만약 생성할 문서가 들어갈 collection이 현재 없다면, insert 연산 수행시 자동으로 생성합니다.
 * MongoDB에선, 컬렉션에 저장된 각 문서는 유니크한 `_id`	필드를 primary key	처럼 가져야 합니다. 만약 삽입하는 문서에 `_id`필드가 빠져있다면, MongoDB 드라이버가 자동으로 Objectid로 `_id`필드를 생성합니다.
@@ -39,7 +37,7 @@ db.inventory.insertMany([
 ```
 `insertMany()` 는 새로 삽입된 문서의 `_id`값을 포함한 문서를 반환합니다. 
 
-### [Read(Query)](https://docs.mongodb.com/manual/tutorial/query-documents/)
+# [Read(Query)](https://docs.mongodb.com/manual/tutorial/query-documents/)
 
 db.collection.find()
 : collection의 문서를 찾는 연산. 특별히 인자를 넣지 않으면 collection에 전체 문서를 찾습니다.
@@ -47,9 +45,35 @@ db.collection.find()
 db.collection.findOne()
 : collection에 있는 한 문서를 찾는 연산. 내부적으로 db.collection.find() 연산을 호출하며 단지 limit 1 조건을 추가합니다.
 
-## Query
+## 동등 조건 필터
+
+검색시 동등 조건을 사용하고 싶다면 `<field>:<value>` 표현을 쿼리 필터 문서에 넣어야 합니다.
+
+To specify equality conditions, use  `<field>:<value>`  expressions in the  [query filter document](https://docs.mongodb.com/manual/core/document/#document-query-filter):
+
+copy
+
+copied
+
+{ <field1>: <value1>, ... }
+
+The following example selects from the  `inventory`  collection all documents where the  `status`  equals  `"D"`:
+
+copy
+
+copied
+
+db.inventory.find( { status: "D" } )
+
+This operation corresponds to the following SQL statement:
+
+copy
+
+copied
+
+SELECT * FROM inventory WHERE status = "D"
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzMyNDQ1NjVdfQ==
+eyJoaXN0b3J5IjpbNzk2OTE1ODg1LC0xOTMzMjQ0NTY1XX0=
 -->
