@@ -83,6 +83,14 @@ BSON 포맷이 little-endian이기 때문에 나머지 bits를 먼저 저장하�
 timestamp 값이 빈 상태인 top-level 문서를 삽입하면, MongoDB가 빈 timestamp 값을 현재 timestamp 값으로 대체합니다. 예외로, `_id` 필드 스스로가 timestamp가 없다면, 없는 상태로 들어가며 대체되지 않습니다. 
 
 
+## Date
+
+BSON Date is a 64-bit integer that represents the number of milliseconds since the Unix epoch (Jan 1, 1970). This results in a representable date range of about 290 million years into the past and future.
+
+The  [official BSON specification](http://bsonspec.org/#/specification)  refers to the BSON Date type as the  _UTC datetime_.
+
+BSON Date type is signed.  [[2]](https://docs.mongodb.com/manual/reference/bson-types/index.html#unsigned-date)  Negative values represent dates before 1970.
+
 
     
 # Operations
@@ -180,8 +188,9 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDI3NTU3NjAsMTkxNzY5OTI0NCwtMT
-M3NDY5MjQ2NSwtMTMzNzQ5MzU5MCwtMTIxNjkzMjcwMSwtMTgz
-NjMyMzczMiwtMTIxOTkxOTgyNCw4MTU4NTQ3NDEsMTE4NzkxND
-MsLTIwNTcxNzA3OTAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE5Nzc0MzI0OCwtMTY0Mjc1NTc2MCwxOT
+E3Njk5MjQ0LC0xMzc0NjkyNDY1LC0xMzM3NDkzNTkwLC0xMjE2
+OTMyNzAxLC0xODM2MzIzNzMyLC0xMjE5OTE5ODI0LDgxNTg1ND
+c0MSwxMTg3OTE0MywtMjA1NzE3MDc5MCw3MzA5OTgxMTZdfQ==
+
 -->
