@@ -88,7 +88,33 @@ db.inventory.find( { status: "A", qty: { $lt: 30 } } )
 db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
 ```
 위 예제는 status가 "A" 또는 qty가 30보다 작은 모든 문서를 찾습니다. 
+
+
+# Update
+
+-   [`db.collection.updateOne(<filter>,  <update>,  <options>)`](https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/#db.collection.updateOne "db.collection.updateOne")
+-   [`db.collection.updateMany(<filter>,  <update>,  <options>)`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany")
+-   [`db.collection.replaceOne(<filter>,  <update>,  <options>)`](https://docs.mongodb.com/manual/reference/method/db.collection.replaceOne/#db.collection.replaceOne "db.collection.replaceOne")
+
+## Update Documents in a Collection[](https://docs.mongodb.com/manual/tutorial/update-documents/#update-documents-in-a-collection "Permalink to this headline")
+
+To update a document, MongoDB provides  [update operators](https://docs.mongodb.com/manual/reference/operator/update), such as  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set"), to modify field values.
+
+To use the update operators, pass to the update methods an update document of the form:
+
+copy
+
+copied
+
+{
+  <update operator>: { <field1>: <value1>, ... },
+  <update operator>: { <field2>: <value2>, ... },
+  ...
+}
+
+Some update operators, such as  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set"), will create the field if the field does not exist. See the individual  [update operator](https://docs.mongodb.com/manual/reference/operator/update)  reference for details.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5NDc1NjY2LDEzNDAyMDEzMDYsLTExOT
-E5MzkyOSwxOTQwMTY3ODUzLC0xOTMzMjQ0NTY1XX0=
+eyJoaXN0b3J5IjpbLTYwNDkxMDQ2NCw4Njk0NzU2NjYsMTM0MD
+IwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4NTMsLTE5MzMyNDQ1
+NjVdfQ==
 -->
