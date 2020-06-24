@@ -61,19 +61,7 @@ hello\x00                  // field name
 
 JSON을 그대로 사용하는 다른 시스템과는 다르게, MongoDB는 BSON을 이용해서 강력한 인덱스와 쿼리  특성을 제공합니다. 여기서 쿼리 특성이라 하면, 찾거나 수정할 Objects를 JSON/BSON 문서내의 특정 키로 찾을 수 있습니다. 심지어 다수의 레이어로 중첩된 문서에 대해서도 가능합니다.
 
-
-
-When using a MongoDB driver in your language of choice, it’s still important to know that you’re accessing BSON data through the abstractions available in that language.
-
-Firstly, BSON objects may contain Date or Binary objects that are not natively representable in pure JSON. Second, each programming language has its own object semantics. JSON objects have ordered keys, for instance, while Python dictionaries (the closest native data structure that’s analogous to JavaScript Objects) are unordered, while differences in numeric and string data types can also come into play. Third, BSON supports a variety of numeric types that are not native to JSON, and each language will represent these differently.
-
-Check your  [driver documentation](https://docs.mongodb.com/ecosystem/drivers/)  to make sure you understand how to best access MongoDB BSON-backed data in your language to avoid confusion, and get the most out of your MongoDB experience.
-
 ## JSON vs BSON
-
-**JSON**
-
-**BSON**
 
 Encoding
 
@@ -246,7 +234,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTc3NzQxNzUsNjI2NTg0NzkxLDM4ND
+eyJoaXN0b3J5IjpbLTE3ODExNDAzMDcsNjI2NTg0NzkxLDM4ND
 g1Mjc5MywtMTI0MTIwMjA3MCwxNjM2NjkyODE1LC0xNjQyNzU1
 NzYwLDE5MTc2OTkyNDQsLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OT
 AsLTEyMTY5MzI3MDEsLTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQs
