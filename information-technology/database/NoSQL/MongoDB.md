@@ -71,6 +71,9 @@ hello\x00                  // field name
  \x00
 ```
 
+
+
+
 Unlike systems that simply store JSON as string-encoded values, or binary-encoded blobs, MongoDB uses BSON to offer the industry’s most powerful indexing and querying features on top of the web’s most usable data format.
 
 For example, MongoDB allows developers to query and manipulate objects by specific keys inside the JSON/BSON document, even in nested documents many layers deep into a record, and create high performance indexes on those same keys and values.
@@ -258,7 +261,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYwNjcyNjg3LC0xMjQxMjAyMDcwLDE2Mz
+eyJoaXN0b3J5IjpbMzg0ODUyNzkzLC0xMjQxMjAyMDcwLDE2Mz
 Y2OTI4MTUsLTE2NDI3NTU3NjAsMTkxNzY5OTI0NCwtMTM3NDY5
 MjQ2NSwtMTMzNzQ5MzU5MCwtMTIxNjkzMjcwMSwtMTgzNjMyMz
 czMiwtMTIxOTkxOTgyNCw4MTU4NTQ3NDEsMTE4NzkxNDMsLTIw
