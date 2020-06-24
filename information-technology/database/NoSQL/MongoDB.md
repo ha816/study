@@ -64,11 +64,7 @@ BSON 문자열은 UTF-8을 따릅니다.
 
 일반적으로, 프로그래밍 언어의 각 드라이버는 BSON으로 직렬화나 역직렬화를 할때 언어의 문자열 포맷을 UTF-8로 변경합니다. 때문에 대부분의 BSON 문자열의 각 문자들을 저장하는게 쉽습니다. 게다가 MongoDB는 $regex 쿼리로 regex 문자열의  UTF-8을 지원합니다. 
 
-UTF-8 문자들을 사용한 문자열이 주어졌다고 하면, 이 문자열에 sort()
-
-[[1]](https://docs.mongodb.com/manual/reference/bson-types/#id3)
-
-Given strings using UTF-8 character sets, using  [`sort()`](https://docs.mongodb.com/manual/reference/method/cursor.sort/#cursor.sort "cursor.sort()")  on strings will be reasonably correct. However, because internally  [`sort()`](https://docs.mongodb.com/manual/reference/method/cursor.sort/#cursor.sort "cursor.sort()")  uses the C++  `strcmp`  api, the sort order may handle some characters incorrectly.    
+UTF-8 문자들을 사용한 문자열에 sort()를 수행하면 자연스럽게 잘 동작합니다. 그러나 sort() 내부적으로 C++ strcmp()를 사용하는데, 몇몇 문자를 잘못 다룰 수도 있습니다. 
 
     
 # Operations
@@ -166,7 +162,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMDc4OTUxOSwtMTgzNjMyMzczMiwtMT
-IxOTkxOTgyNCw4MTU4NTQ3NDEsMTE4NzkxNDMsLTIwNTcxNzA3
-OTAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEyMTY5MzI3MDEsLTE4MzYzMjM3MzIsLT
+EyMTk5MTk4MjQsODE1ODU0NzQxLDExODc5MTQzLC0yMDU3MTcw
+NzkwLDczMDk5ODExNl19
 -->
