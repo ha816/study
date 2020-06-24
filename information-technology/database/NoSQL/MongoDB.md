@@ -49,14 +49,11 @@ ObjectIds 작고, 빠르게 생성하고, 거의 unique하고 순서가 정해�
 -   a 5-byte  _random value_
 -   a 3-byte  _incrementing counter_, initialized to a random value
 
-
 While the BSON format itself is little-endian, the  _timestamp_  and  _counter_  values are big-endian, with the most significant bytes appearing first in the byte sequence.
 
-In MongoDB, each document stored in a collection requires a unique  [_id](https://docs.mongodb.com/manual/reference/glossary/#term-id)  field that acts as a  [primary key](https://docs.mongodb.com/manual/reference/glossary/#term-primary-key). If an inserted document omits the  `_id`  field, the MongoDB driver automatically generates an  [ObjectId](https://docs.mongodb.com/manual/reference/bson-types/#objectid)  for the  `_id`  field.
+MongoDB 클라이언트는 
 
-This also applies to documents inserted through update operations with  [upsert: true](https://docs.mongodb.com/manual/reference/method/db.collection.update/#upsert-parameter).
-
-MongoDB clients should add an  `_id`  field with a unique ObjectId. Using ObjectIds for the  `_id`  field provides the following additional benefits:
+ should add an  `_id`  field with a unique ObjectId. Using ObjectIds for the  `_id`  field provides the following additional benefits:
 
 -   in the  [`mongo`](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo "bin.mongo")  shell, you can access the creation time of the  `ObjectId`, using the  [`ObjectId.getTimestamp()`](https://docs.mongodb.com/manual/reference/method/ObjectId.getTimestamp/#ObjectId.getTimestamp "ObjectId.getTimestamp()")  method.
     
@@ -171,7 +168,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM4ODc1MTcsLTEyMTk5MTk4MjQsODE1OD
-U0NzQxLDExODc5MTQzLC0yMDU3MTcwNzkwLDczMDk5ODExNl19
-
+eyJoaXN0b3J5IjpbMTU1MzAxNDIxNCwtMTIxOTkxOTgyNCw4MT
+U4NTQ3NDEsMTE4NzkxNDMsLTIwNTcxNzA3OTAsNzMwOTk4MTE2
+XX0=
 -->
