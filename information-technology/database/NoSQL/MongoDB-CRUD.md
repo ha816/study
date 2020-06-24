@@ -137,10 +137,10 @@ db.inventory.updateMany(
 
 --- 
 
-`_id`필드를 제외하곤 문서의 모든 컨텐츠를 바꾸고 싶다면, `db.collection.replaceOne()`에 두번째 인자로 완전히 새로운 문서를 넣으면 됩니다. 이렇게 대체할때 대체하는 문서는 반드시 field-value 쌍으로 구성되어야 합니다.
+`_id`필드를 제외하곤 문서의 모든 컨텐츠를 바꾸고 싶다면, `db.collection.replaceOne()`에 두번째 인자로 완전히 새로운 문서를 넣으면 됩니다. 대체하는 문서는 반드시 field-value 쌍으로 구성되어야 합니다. 즉 update 연산자를 포함하면 안됩니다.
 
+대체하는 문서는 다른 필드를 가질 수 있고, `_id`필드는 불변이기 때문에 남아 있어야 합니다. 만약 대체하는 문서에 `_id` 필드를 포함하고 
 
-When replacing a document, the replacement document must consist of only field/value pairs; i.e. do not include  [update operators](https://docs.mongodb.com/manual/reference/operator/update)  expressions.
 
 The replacement document can have different fields from the original document. In the replacement document, you can omit the  `_id`  field since the  `_id`  field is immutable; however, if you do include the  `_id`  field, it must have the same value as the current value.
 
@@ -156,7 +156,7 @@ db.inventory.replaceOne(
 )
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc4NzUzNTg0LC0zMjkxMjI1OTAsODY5ND
+eyJoaXN0b3J5IjpbMTU2NjUwNzQ1LC0zMjkxMjI1OTAsODY5ND
 c1NjY2LDEzNDAyMDEzMDYsLTExOTE5MzkyOSwxOTQwMTY3ODUz
 LC0xOTMzMjQ0NTY1XX0=
 -->
