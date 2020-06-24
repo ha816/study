@@ -41,9 +41,10 @@ Database는 Collection들의 물리적인 컨테이너입니다. 각 Database는
 
 BSON은 간단히 말하자면 "Binary JSON"입니다. BSON의 이진 구조는 타입과 길이 정보를 인코드하여 훨씬 빠르게 파싱되도록 합니다.
 
-date와 binary 데이터와 같은 JSON-native가 아닌 데이터 타입을 추가함으로써, MongoDB
+date와 binary 데이터와 같은 JSON-native가 아닌 데이터 타입을 추가함으로써, MongoDB가 이런 타입도 지원이 가능하다.
 
-Since its initial formulation, BSON has been extended to add some optional non-JSON-native data types, like dates and binary data, without which MongoDB would have been missing some valuable support.
+심지어 어떤 복잡한 형태의 수학적인 데이터도 지원합니다. 
+
 
 Languages that support any kind of complex mathematics typically have different sized integers (ints vs longs) or various levels of decimal precision (float, double, decimal128, etc.).
 
@@ -271,9 +272,9 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDIxOTUxMSwtMTI0MTIwMjA3MCwxNj
-M2NjkyODE1LC0xNjQyNzU1NzYwLDE5MTc2OTkyNDQsLTEzNzQ2
-OTI0NjUsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MDEsLTE4MzYzMj
-M3MzIsLTEyMTk5MTk4MjQsODE1ODU0NzQxLDExODc5MTQzLC0y
-MDU3MTcwNzkwLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE3MDA4ODAwMzYsLTEyNDEyMDIwNzAsMT
+YzNjY5MjgxNSwtMTY0Mjc1NTc2MCwxOTE3Njk5MjQ0LC0xMzc0
+NjkyNDY1LC0xMzM3NDkzNTkwLC0xMjE2OTMyNzAxLC0xODM2Mz
+IzNzMyLC0xMjE5OTE5ODI0LDgxNTg1NDc0MSwxMTg3OTE0Mywt
+MjA1NzE3MDc5MCw3MzA5OTgxMTZdfQ==
 -->
