@@ -62,20 +62,13 @@ db.inventory.find( { status: "D" } )
 { <field1>: { <operator1>: <value1> }, ... }
 ```
 
-아래 예제는 `inven
+아래 예제는 `inventory` 컬렉션에서 Status필드가 "A" 또는 "B"인 모든 문서를 찾습니다.
 ```groovy
 db.inventory.find( { status: { $in: [ "A", "D" ] } } )
 ```
 
-The following example retrieves all documents from the  `inventory`  collection where  `status`  equals either  `"A"`  or  `"D"`:
-
-copy
-
-copied
-
-db.inventory.find( { status: { $in: [ "A", "D" ] } } )
-
-NOTE
+[`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or") 연산자 를 이용해서도 같은 표현을 나타낼 수 있습니다. 
+NOTE 
 
 Although you can express this query using the  [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or")  operator, use the  [`$in`](https://docs.mongodb.com/manual/reference/operator/query/in/#op._S_in "$in")  operator rather than the  [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or")  operator when performing equality checks on the same field.
 
@@ -89,5 +82,5 @@ SELECT * FROM inventory WHERE status in ("A", "D")
 
 Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/reference/operator/query/)  document for the complete list of MongoDB query operators.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MjIxMjE1MCwtMTkzMzI0NDU2NV19
+eyJoaXN0b3J5IjpbMTIwNzQ1NzMzOSwtMTkzMzI0NDU2NV19
 -->
