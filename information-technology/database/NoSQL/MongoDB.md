@@ -62,6 +62,8 @@ MongoDB 클라이언트는 `_id` 필드를 유일한 ObjectId 로 추가해야 �
 
 BSON 문자열은 UTF-8을 따릅니다. 
 
+일반적으로, 프로그래밍 언어의 각 드라이버는 BSON으로 직렬화나 역직렬화를 할때 언어의 문자열 포맷을 UTF-8로 
+
 
 In general, drivers for each programming language convert from the language’s string format to UTF-8 when serializing and deserializing BSON. This makes it possible to store most international characters in BSON strings with ease.  [[1]](https://docs.mongodb.com/manual/reference/bson-types/#sort-string-internationalization)  In addition, MongoDB  [`$regex`](https://docs.mongodb.com/manual/reference/operator/query/regex/#op._S_regex "$regex")  queries support UTF-8 in the regex string.
 
@@ -165,7 +167,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQsOD
-E1ODU0NzQxLDExODc5MTQzLC0yMDU3MTcwNzkwLDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbLTE5MzUyMTY2NDcsLTE4MzYzMjM3MzIsLT
+EyMTk5MTk4MjQsODE1ODU0NzQxLDExODc5MTQzLC0yMDU3MTcw
+NzkwLDczMDk5ODExNl19
 -->
