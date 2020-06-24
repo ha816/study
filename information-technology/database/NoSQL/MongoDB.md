@@ -45,7 +45,9 @@ date와 binary 데이터와 같은 JSON-native가 아닌 데이터 타입을 추
 
 ## Does MongoDB use BSON, or JSON?
 
-MongoDB는 내부적으로 또 네트워크 상으로  BSON 형태로 데이터를 저장합니다. JSON으로 표현 가능한 어떤것도 MongoDB로 자연스럽게 저장 가능하고, 또 JSON으로 찾을 수 있습니다.  
+MongoDB는 내부적으로 또 네트워크 상으로  BSON 형태로 데이터를 저장합니다. 그러다 보니 MongoDB를 JSON Database가 아니라고 생각할 수 있지만 이는 
+
+JSON으로 표현 가능한 어떤것도 MongoDB로 자연스럽게 저장 가능하고, 또 JSON으로 찾을 수 있습니다.  
 
 ```
 {"hello": "world"} →
@@ -263,9 +265,9 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzIxNTkxMzksLTEyNDEyMDIwNzAsMT
-YzNjY5MjgxNSwtMTY0Mjc1NTc2MCwxOTE3Njk5MjQ0LC0xMzc0
-NjkyNDY1LC0xMzM3NDkzNTkwLC0xMjE2OTMyNzAxLC0xODM2Mz
-IzNzMyLC0xMjE5OTE5ODI0LDgxNTg1NDc0MSwxMTg3OTE0Mywt
-MjA1NzE3MDc5MCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTE3NzAyMTgxNCwtMTI0MTIwMjA3MCwxNj
+M2NjkyODE1LC0xNjQyNzU1NzYwLDE5MTc2OTkyNDQsLTEzNzQ2
+OTI0NjUsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MDEsLTE4MzYzMj
+M3MzIsLTEyMTk5MTk4MjQsODE1ODU0NzQxLDExODc5MTQzLC0y
+MDU3MTcwNzkwLDczMDk5ODExNl19
 -->
