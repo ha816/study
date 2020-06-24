@@ -43,13 +43,12 @@ BSON은 문서를 저장하거나 MongoDB에 원격처리 호출을 하는데 �
 
 ## ObjectId[](https://docs.mongodb.com/manual/reference/bson-types/#objectid "Permalink to this headline")
 
-ObjectIds 작고, 빠르
-
-ObjectIds are small, likely unique, fast to generate, and ordered. ObjectId values are 12 bytes in length, consisting of:
+ObjectIds 작고, 빠르게 생성하고, 거의 unique하고 순서가 정해집니다. ObjectId 값은 12bytes 길이로 이 12 bytes으 아래로 구성됩니다.
 
 -   a 4-byte  _timestamp value_, representing the ObjectId’s creation, measured in seconds since the Unix epoch
 -   a 5-byte  _random value_
 -   a 3-byte  _incrementing counter_, initialized to a random value
+
 
 While the BSON format itself is little-endian, the  _timestamp_  and  _counter_  values are big-endian, with the most significant bytes appearing first in the byte sequence.
 
@@ -172,7 +171,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MjM2Nzg3OCwtMTIxOTkxOTgyNCw4MT
-U4NTQ3NDEsMTE4NzkxNDMsLTIwNTcxNzA3OTAsNzMwOTk4MTE2
-XX0=
+eyJoaXN0b3J5IjpbMjM4ODc1MTcsLTEyMTk5MTk4MjQsODE1OD
+U0NzQxLDExODc5MTQzLC0yMDU3MTcwNzkwLDczMDk5ODExNl19
+
 -->
