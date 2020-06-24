@@ -148,7 +148,7 @@ db.inventory.replaceOne(
 )
 ```
 
-모든 쓰기 작
+MongoDB에서 한 문서에 대한 모든 쓰기 작업은 원자성이 보장됩니다. 
 
 All write operations in MongoDB are atomic on the level of a single document. For more information on MongoDB and atomicity, see  [Atomicity and Transactions](https://docs.mongodb.com/manual/core/write-operations-atomicity/).
 
@@ -169,7 +169,7 @@ If  [`updateOne()`](https://docs.mongodb.com/manual/reference/method/db.collecti
 
 For details on the new document created, see the individual reference pages for the methods.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTMzODM0MTcsLTMyOTEyMjU5MCw4Nj
-k0NzU2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4
-NTMsLTE5MzMyNDQ1NjVdfQ==
+eyJoaXN0b3J5IjpbMTQ0ODM0NTk4NSwtMzI5MTIyNTkwLDg2OT
+Q3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5MjksMTk0MDE2Nzg1
+MywtMTkzMzI0NDU2NV19
 -->
