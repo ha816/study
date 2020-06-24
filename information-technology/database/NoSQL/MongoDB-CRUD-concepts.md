@@ -6,9 +6,7 @@ CRUD 명령과 관련된 주요 성질을 알아보자.
 
 MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성을 보장합니다. 심지어 단일 문서안의 다수의 중첩된 문서에 대한 수정 연산자에 대해서도 보장합니다.  
 
-#
-
-## Multi-Document Transactions
+# Multi-Document Transactions
 
 When a single write operation (e.g.  [`db.collection.updateMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany()")) modifies multiple documents, the modification of each document is atomic, but the operation as a whole is not atomic.
 
@@ -57,6 +55,6 @@ Miscellaneous
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDMwNjgyMDMsLTE3MDU4NDg3MTddfQ
+eyJoaXN0b3J5IjpbLTE2NzcwNzc3OTksLTE3MDU4NDg3MTddfQ
 ==
 -->
