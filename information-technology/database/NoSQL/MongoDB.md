@@ -75,12 +75,10 @@ BSON은 MongoDB 내부를 위해 특별한 timestamp 타입을 가지고 있습�
 
 BSON 포맷이 little-endian이기 때문에 나머지 bits를 먼저 저장하는 반면에, mongo daemon 객체는 endian 형태를 생각치 않고, 항상 모든 플랫폼에 대한 `ordianl` 값 전에 `time_t` 값을 비교합니다.  
 
-단일 mongo daemon 안에서, timestamp 값은 항상 unique합니다. 리플리케이션에서는 
+단일 mongo daemon 안에서, timestamp 값은 항상 unique합니다. 
 
-In replication, the  [oplog](https://docs.mongodb.com/manual/reference/glossary/#term-oplog)  has a  `ts`  field. The values in this field reflect the operation time, which uses a BSON timestamp value.
-
-NOTE
-
+> 주의할점
+> BSON timestmp는 내부 MongoDB용으로 사용됩니다. 대부분의 애플리케이션 개발에서, BSON date type을 사용하게 될
 The BSON timestamp type is for  _internal_  MongoDB use. For most cases, in application development, you will want to use the BSON date type. See  [Date](https://docs.mongodb.com/manual/reference/bson-types/#document-bson-type-date)  for more information.
 
 When inserting a document that contains top-level fields with empty timestamp values, MongoDB replaces the empty timestamp values with the current timestamp value, with the following exception. If the  `_id`  field itself contains an empty timestamp value, it will always be inserted as is and not replaced.
@@ -181,8 +179,8 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OTAsLT
-EyMTY5MzI3MDEsLTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQsODE1
-ODU0NzQxLDExODc5MTQzLC0yMDU3MTcwNzkwLDczMDk5ODExNl
-19
+eyJoaXN0b3J5IjpbLTE0MjMyODkwNDgsLTEzNzQ2OTI0NjUsLT
+EzMzc0OTM1OTAsLTEyMTY5MzI3MDEsLTE4MzYzMjM3MzIsLTEy
+MTk5MTk4MjQsODE1ODU0NzQxLDExODc5MTQzLC0yMDU3MTcwNz
+kwLDczMDk5ODExNl19
 -->
