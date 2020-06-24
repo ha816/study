@@ -47,15 +47,12 @@ db.collection.findOne()
 
 ## 동등 조건 필터
 
-검색시 동등 조건을 사용하고 싶다면 `<field>:<value>` 표현을 쿼리 필터 문서에 넣어야 합니다.
+검색시 동등 조건을 사용하고 싶다면 `<field>:<value>` 표현을 쿼리 필터 문서([query filter document](https://docs.mongodb.com/manual/core/document/#document-query-filter))에 넣어야 합니다.
 
-To specify equality conditions, use  `<field>:<value>`  expressions in the  [query filter document](https://docs.mongodb.com/manual/core/document/#document-query-filter):
-
-copy
-
-copied
-
-{ <field1>: <value1>, ... }
+아래 예제는 `inventory` 컬렉션에서 status필드가 "D" 값을 가지는 모든 문서를 찾습니다.
+```groovy
+db.inventory.find( { status: "D" } )
+```
 
 The following example selects from the  `inventory`  collection all documents where the  `status`  equals  `"D"`:
 
@@ -75,5 +72,5 @@ SELECT * FROM inventory WHERE status = "D"
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk2OTE1ODg1LC0xOTMzMjQ0NTY1XX0=
+eyJoaXN0b3J5IjpbMTg1ODM3NTg3LC0xOTMzMjQ0NTY1XX0=
 -->
