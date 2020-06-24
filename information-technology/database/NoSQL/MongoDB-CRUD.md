@@ -93,8 +93,14 @@ db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
 # Update
 
 
-db.collection.updateOne(<filter>,  <update>,  <options>)
-:
+db.collection.updateOne(filter,  update,  options)
+: 조건에 맞는 문서 하나를 찾아 수정합니다.
+
+db.collection.updateMany(filter,  update,  options)
+: 조건에 맞는 문서 전체를 찾아 수정합니다.
+
+
+
 
 
 
@@ -124,7 +130,7 @@ copied
 
 Some update operators, such as  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set"), will create the field if the field does not exist. See the individual  [update operator](https://docs.mongodb.com/manual/reference/operator/update)  reference for details.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQzNjc0Niw4Njk0NzU2NjYsMTM0MDIwMT
-MwNiwtMTE5MTkzOTI5LDE5NDAxNjc4NTMsLTE5MzMyNDQ1NjVd
-fQ==
+eyJoaXN0b3J5IjpbLTMyOTEyMjU5MCw4Njk0NzU2NjYsMTM0MD
+IwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4NTMsLTE5MzMyNDQ1
+NjVdfQ==
 -->
