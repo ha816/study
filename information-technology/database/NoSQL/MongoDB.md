@@ -75,7 +75,6 @@ BSON이 JSON가 다른 점 한가지는 BSON이 더욱 진보된 형태의 데�
 
 대다수 서버측 프로그래밍 언어는 훨씬 복잡한 숫자형 타입을 가지고 있습니다 (integer, floating point, double 등등), 각 숫자형 타입은 효과적인 수학적 연산을 위해 고유한 최적의 사용법을 가지고 있습니다.
 
-Most server-side programming languages have more sophisticated numeric types (standards include integer, regular precision floating point number aka “float”, double-precision floating point aka “double”, and boolean values), each with its own optimal usage for efficient mathematical operations.
 
 
 
@@ -224,7 +223,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NTE2NzE5NywtMTAyNTk5MjYyMiwtMj
+eyJoaXN0b3J5IjpbMTU1MDMwNTEzMiwtMTAyNTk5MjYyMiwtMj
 AwNzU3MDU2OSw2MjY1ODQ3OTEsMzg0ODUyNzkzLC0xMjQxMjAy
 MDcwLDE2MzY2OTI4MTUsLTE2NDI3NTU3NjAsMTkxNzY5OTI0NC
 wtMTM3NDY5MjQ2NSwtMTMzNzQ5MzU5MCwtMTIxNjkzMjcwMSwt
