@@ -45,7 +45,8 @@ date와 binary 데이터와 같은 JSON-native가 아닌 데이터 타입을 추
 
 ## Does MongoDB use BSON, or JSON?
 
-MongoDB는 내부적으로 또 네트워크 상으로  BSON 형태로 데이터를 저장합니다. 그러다 보니 MongoDB를 JSON Database가 아니라고 생각할 수 있지만 이는 사실이 아닙니다. 
+MongoDB는 내부적으로 또 네트워크 상으로  BSON 형태로 데이터를 저장합니다. 
+그러다 보니 MongoDB를 JSON Database가 아니라고 생각할 수 있지만 이는 사실이 아닙니다. 
 JSON으로 표현 가능한 어떤것도 MongoDB로 자연스럽게 저장 가능하고, 또 JSON으로 찾을 수 있습니다.  
 
 ```groovy
@@ -57,21 +58,6 @@ hello\x00                  // field name
 \x06\x00\x00\x00world\x00  // field value
 \x00                       // 0x00 = type EOO ('end of object')
 ```
-
-```groovy
-{"BSON": ["awesome", 5.05, 1986]} 
-→
- \x31\x00\x00\x00
- \x04BSON\x00
- \x26\x00\x00\x00
- \x02\x30\x00\x08\x00\x00\x00awesome\x00
- \x01\x31\x00\x33\x33\x33\x33\x33\x33\x14\x40
- \x10\x32\x00\xc2\x07\x00\x00
- \x00
- \x00
-```
-
-
 
 
 Unlike systems that simply store JSON as string-encoded values, or binary-encoded blobs, MongoDB uses BSON to offer the industry’s most powerful indexing and querying features on top of the web’s most usable data format.
@@ -261,9 +247,9 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg0ODUyNzkzLC0xMjQxMjAyMDcwLDE2Mz
-Y2OTI4MTUsLTE2NDI3NTU3NjAsMTkxNzY5OTI0NCwtMTM3NDY5
-MjQ2NSwtMTMzNzQ5MzU5MCwtMTIxNjkzMjcwMSwtMTgzNjMyMz
-czMiwtMTIxOTkxOTgyNCw4MTU4NTQ3NDEsMTE4NzkxNDMsLTIw
-NTcxNzA3OTAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTc1NTM2OTAyLDM4NDg1Mjc5MywtMTI0MT
+IwMjA3MCwxNjM2NjkyODE1LC0xNjQyNzU1NzYwLDE5MTc2OTky
+NDQsLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MD
+EsLTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQsODE1ODU0NzQxLDEx
+ODc5MTQzLC0yMDU3MTcwNzkwLDczMDk5ODExNl19
 -->
