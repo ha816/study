@@ -142,6 +142,9 @@ db.inventory.updateMany(
 
 --- 
 
+db.collection.replaceOne(filter,  update,  options)
+: 조건에 맞는 문서를 찾아 새로운 문서로 대체합니다.
+
 `_id`필드를 제외하곤 문서의 모든 컨텐츠를 바꾸고 싶다면, `db.collection.replaceOne()`에 두번째 인자로 완전히 새로운 문서를 넣으면 됩니다. 대체하는 문서는 반드시 field-value 쌍으로 구성되어야 합니다. 즉 update 연산자를 포함하면 안됩니다.
 
 대체하는 문서는 다른 필드를 가질 수 있고, `_id`필드는 불변이기 때문에 남아 있어야 합니다. 만약 대체하는 문서에 `_id` 필드를 포함하고 있으면 기존의 값하고 동일해야만 합니다. 
@@ -161,7 +164,7 @@ MongoDB preserves the order of the document fields following write operations  _
 -   Updates that include  [`renaming`](https://docs.mongodb.com/manual/reference/operator/update/rename/#up._S_rename "$rename")  of field names may result in the reordering of fields in the document.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI0NzQ5OTYzLC0zMjkxMjI1OTAsODY5ND
-c1NjY2LDEzNDAyMDEzMDYsLTExOTE5MzkyOSwxOTQwMTY3ODUz
-LC0xOTMzMjQ0NTY1XX0=
+eyJoaXN0b3J5IjpbMTUzMTM4NjE4NiwtMzI5MTIyNTkwLDg2OT
+Q3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5MjksMTk0MDE2Nzg1
+MywtMTkzMzI0NDU2NV19
 -->
