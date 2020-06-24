@@ -63,23 +63,10 @@ JSON을 그대로 사용하는 다른 시스템과는 다르게, MongoDB는 BSON
 
 ## JSON vs BSON
 
-Encoding
+|Encoding  |  | |
+|--|--|--|
+|  |  ||
 
-UTF-8 String
-
-Binary
-
-Data Support
-
-String, Boolean, Number, Array
-
-String, Boolean, Number (Integer, Float, Long, Decimal128...), Array, Date, Raw Binary
-
-Readability
-
-Human and Machine
-
-Machine Only
 
 JSON and BSON are indeed close cousins by design. BSON is designed as a binary representation of JSON data, with specific extensions for broader applications, and optimized for data storage and retrieval.
 
@@ -234,7 +221,7 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODExNDAzMDcsNjI2NTg0NzkxLDM4ND
+eyJoaXN0b3J5IjpbLTExMzU1MjI4MDQsNjI2NTg0NzkxLDM4ND
 g1Mjc5MywtMTI0MTIwMjA3MCwxNjM2NjkyODE1LC0xNjQyNzU1
 NzYwLDE5MTc2OTkyNDQsLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OT
 AsLTEyMTY5MzI3MDEsLTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQs
