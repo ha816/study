@@ -71,7 +71,7 @@ JSON을 그대로 사용하는 다른 시스템과는 다르게, MongoDB는 BSON
 
 사실 JSON과 BSON은 디자인적으로 매우 가까운 사촌지간이다. BSON은 JSON 데이터의 이진 표현이며 단지 애플리케이션을 위해 추가 확장과 데이터 저장과 검색을 위해 최적화가 되었습니다. 
 
-BSON이 JSON가 다른 점 한가지는 
+BSON이 JSON가 다른 점 한가지는 BSON이 더욱 진보된 형태의 데이터 타입을 지원한다는 것입니다. 예를들어, 두 정수간의 차이 그리고 실수간의 차이를 계
 
 
 One particular way in which BSON differs from JSON is in its support for some more advanced types of data. JavaScript does not, for instance, differentiate between integers (which are round numbers), and floating-point numbers (which have decimal precision to various degrees).
@@ -225,10 +225,10 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA5NzEyMTkwLC0xMDI1OTkyNjIyLC0yMD
-A3NTcwNTY5LDYyNjU4NDc5MSwzODQ4NTI3OTMsLTEyNDEyMDIw
-NzAsMTYzNjY5MjgxNSwtMTY0Mjc1NTc2MCwxOTE3Njk5MjQ0LC
-0xMzc0NjkyNDY1LC0xMzM3NDkzNTkwLC0xMjE2OTMyNzAxLC0x
-ODM2MzIzNzMyLC0xMjE5OTE5ODI0LDgxNTg1NDc0MSwxMTg3OT
-E0MywtMjA1NzE3MDc5MCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE1NzM5MDg4NjIsLTEwMjU5OTI2MjIsLT
+IwMDc1NzA1NjksNjI2NTg0NzkxLDM4NDg1Mjc5MywtMTI0MTIw
+MjA3MCwxNjM2NjkyODE1LC0xNjQyNzU1NzYwLDE5MTc2OTkyND
+QsLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MDEs
+LTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQsODE1ODU0NzQxLDExOD
+c5MTQzLC0yMDU3MTcwNzkwLDczMDk5ODExNl19
 -->
