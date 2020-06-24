@@ -69,7 +69,7 @@ JSON을 그대로 사용하는 다른 시스템과는 다르게, MongoDB는 BSON
 |Data Support|String, Boolean, Number, Array|String, Boolean, Number (Integer, Float, Long, Decimal128...), Array, Date, Raw Binary|
 |Readability| Human and Machine|Machine|
 
-사실 JSON과 BSON은 디자인적으로 매우 가까운 사촌지간이다. BSON은 JSON 데이터의 이진 표현이다. 
+사실 JSON과 BSON은 디자인적으로 매우 가까운 사촌지간이다. BSON은 JSON 데이터의 이진 표현이며 단지 
 
 
 JSON and BSON are indeed close cousins by design. BSON is designed as a binary representation of JSON data, with specific extensions for broader applications, and optimized for data storage and retrieval.
@@ -225,10 +225,10 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MTQxMjg4MCwtMjAwNzU3MDU2OSw2Mj
-Y1ODQ3OTEsMzg0ODUyNzkzLC0xMjQxMjAyMDcwLDE2MzY2OTI4
-MTUsLTE2NDI3NTU3NjAsMTkxNzY5OTI0NCwtMTM3NDY5MjQ2NS
-wtMTMzNzQ5MzU5MCwtMTIxNjkzMjcwMSwtMTgzNjMyMzczMiwt
-MTIxOTkxOTgyNCw4MTU4NTQ3NDEsMTE4NzkxNDMsLTIwNTcxNz
-A3OTAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEwMjU5OTI2MjIsLTIwMDc1NzA1NjksNj
+I2NTg0NzkxLDM4NDg1Mjc5MywtMTI0MTIwMjA3MCwxNjM2Njky
+ODE1LC0xNjQyNzU1NzYwLDE5MTc2OTkyNDQsLTEzNzQ2OTI0Nj
+UsLTEzMzc0OTM1OTAsLTEyMTY5MzI3MDEsLTE4MzYzMjM3MzIs
+LTEyMTk5MTk4MjQsODE1ODU0NzQxLDExODc5MTQzLC0yMDU3MT
+cwNzkwLDczMDk5ODExNl19
 -->
