@@ -6,8 +6,6 @@ MongoDB는 오픈소스 문서지향(Document-Oriented)적 Cross-platform 데이
 
 [MySQL](https://namu.wiki/w/MySQL "MySQL") 처럼 전통적인 테이블-관계 기반의 [RDBMS](https://namu.wiki/w/RDBMS "RDBMS")가 아니며 [SQL](https://namu.wiki/w/SQL "SQL")을 사용하지 않습니다. 참고로 mongo는 humongous의 줄임말이라고 합니다. 즉 거대한 DB라는 뜻입니다.
 
-
-
 ## Document & Collection
 
 Document는 RDMS의 record 또는 row에 대응하는 데이터 구조입니다. 한 개 이상의 key-value pair로 구성됩니다.
@@ -133,5 +131,5 @@ brew services stop mongodb-community
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMjQ3NjE5MSw0NjI3NzU3ODNdfQ==
+eyJoaXN0b3J5IjpbMTAwNjc1ODc3OSw0NjI3NzU3ODNdfQ==
 -->
