@@ -155,16 +155,8 @@ db.inventory.replaceOne(
    { item: "paper", instock: [ { warehouse: "A", qty: 60 }, { warehouse: "B", qty: 40 } ] }
 )
 ```
-
-### Field Order[](https://docs.mongodb.com/manual/tutorial/update-documents/#field-order "Permalink to this headline")
-
-MongoDB preserves the order of the document fields following write operations  _except_  for the following cases:
-
--   The  `_id`  field is always the first field in the document.
--   Updates that include  [`renaming`](https://docs.mongodb.com/manual/reference/operator/update/rename/#up._S_rename "$rename")  of field names may result in the reordering of fields in the document.
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMTM4NjE4NiwtMzI5MTIyNTkwLDg2OT
-Q3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5MjksMTk0MDE2Nzg1
-MywtMTkzMzI0NDU2NV19
+eyJoaXN0b3J5IjpbLTgwMDU2NTczNiwxNTMxMzg2MTg2LC0zMj
+kxMjI1OTAsODY5NDc1NjY2LDEzNDAyMDEzMDYsLTExOTE5Mzky
+OSwxOTQwMTY3ODUzLC0xOTMzMjQ0NTY1XX0=
 -->
