@@ -68,6 +68,29 @@ db.inventory.find( { status: { $in: [ "A", "D" ] } } )
 ```
 
 위 예제는 [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or") 연산자를 이용해서도 같은 표현을 나타낼 수 있습니다. 하지만 [`$in`](https://docs.mongodb.com/manual/reference/operator/query/in/#op._S_in "$in") 연산자가 같은 필드에 대해서 동등 비교를 할때는 더 좋은 성능을 보입니다. 
+
+
+##  `AND` 
+
+A compound query can specify conditions for more than one field in the collection’s documents. Implicitly, a logical  `AND`  conjunction connects the clauses of a compound query so that the query selects the documents in the collection that match all the conditions.
+
+The following example retrieves all documents in the  `inventory`  collection where the  `status`  equals  `"A"`  **and**  `qty`  is less than ([`$lt`](https://docs.mongodb.com/manual/reference/operator/query/lt/#op._S_lt "$lt"))  `30`:
+
+copy
+
+copied
+
+db.inventory.find( { status: "A", qty: { $lt: 30 } } )
+
+The operation corresponds to the following SQL statement:
+
+copy
+
+copied
+
+SELECT * FROM inventory WHERE status = "A" AND qty < 30
+
+See  [comparison operators](https://docs.mongodb.com/manual/reference/operator/query-comparison/#query-selectors-comparison)  for other MongoDB comparison operators.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxOTUyNDI4NiwtMTkzMzI0NDU2NV19
+eyJoaXN0b3J5IjpbMTEzMzE2NzczMywtMTkzMzI0NDU2NV19
 -->
