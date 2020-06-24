@@ -45,7 +45,7 @@ db.collection.find()
 db.collection.findOne()
 : collection에 있는 한 문서를 찾는 연산. 내부적으로 db.collection.find() 연산을 호출하며 단지 limit 1 조건을 추가합니다.
 
-## 동등 조건 필터
+## 동등 조건
 
 검색시 동등 조건을 사용하고 싶다면 `<field>:<value>` 표현을 쿼리 필터 문서([query filter document](https://docs.mongodb.com/manual/core/document/#document-query-filter))에 넣어야 합니다.
 
@@ -54,23 +54,40 @@ db.collection.findOne()
 db.inventory.find( { status: "D" } )
 ```
 
-The following example selects from the  `inventory`  collection all documents where the  `status`  equals  `"D"`:
+## 쿼리 연산자를 이용한 조건
+
+쿼리 필터 문서는 쿼리 연산자를 ㅅ
+
+A  [query filter document](https://docs.mongodb.com/manual/core/document/#document-query-filter)  can use the  [query operators](https://docs.mongodb.com/manual/reference/operator/query/#query-selectors)  to specify conditions in the following form:
 
 copy
 
 copied
 
-db.inventory.find( { status: "D" } )
+{ <field1>: { <operator1>: <value1> }, ... }
 
-This operation corresponds to the following SQL statement:
+The following example retrieves all documents from the  `inventory`  collection where  `status`  equals either  `"A"`  or  `"D"`:
 
 copy
 
 copied
 
-SELECT * FROM inventory WHERE status = "D"
+db.inventory.find( { status: { $in: [ "A", "D" ] } } )
 
+NOTE
 
+Although you can express this query using the  [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or")  operator, use the  [`$in`](https://docs.mongodb.com/manual/reference/operator/query/in/#op._S_in "$in")  operator rather than the  [`$or`](https://docs.mongodb.com/manual/reference/operator/query/or/#op._S_or "$or")  operator when performing equality checks on the same field.
+
+The operation corresponds to the following SQL statement:
+
+copy
+
+copied
+
+SELECT * FROM inventory WHERE status in ("A", "D")
+
+Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/reference/operator/query/)  document for the complete list of MongoDB query operators.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1ODM3NTg3LC0xOTMzMjQ0NTY1XX0=
+eyJoaXN0b3J5IjpbLTE0NTk5NTcxNTQsLTE5MzMyNDQ1NjVdfQ
+==
 -->
