@@ -115,10 +115,26 @@ MongoDB는 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/se
 [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set")과 같은 어떤 update 연산자는 필드가 존재하지 않으면 필드를 생성합니다. 
 
 
+아래 예제는 item 필드가 paper인 모든 문서를 
+ on the  `inventory`  collection to update the  _first_  document where  `item`  equals  `"paper"`:
 
+``` groovy
+db.inventory.updateOne(
+   { item: "paper" },
+   {
+     $set: { "size.uom": "cm", status: "P" },
+     $currentDate: { lastModified: true }
+   }
+)
+```
+
+The update operation:
+
+-   uses the  [`$set`](https://docs.mongodb.com/manual/reference/operator/update/set/#up._S_set "$set")  operator to update the value of the  `size.uom`  field to  `"cm"`  and the value of the  `status`  field to  `"P"`,
+-   uses the  [`$currentDate`](https://docs.mongodb.com/manual/reference/operator/update/currentDate/#up._S_currentDate "$currentDate")  operator to update the value of the  `lastModified`  field to the current date. If  `lastModified`  field does not exist,  [`$currentDate`](https://docs.mongodb.com/manual/reference/operator/update/currentDate/#up._S_currentDate "$currentDate")  will create the field. See  [`$currentDate`](https://docs.mongodb.com/manual/reference/operator/update/currentDate/#up._S_currentDate "$currentDate")  for details
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjMzODgzNTIsLTMyOTEyMjU5MCw4Nj
-k0NzU2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4
-NTMsLTE5MzMyNDQ1NjVdfQ==
+eyJoaXN0b3J5IjpbLTkxNzc4ODk2MSwtMzI5MTIyNTkwLDg2OT
+Q3NTY2NiwxMzQwMjAxMzA2LC0xMTkxOTM5MjksMTk0MDE2Nzg1
+MywtMTkzMzI0NDU2NV19
 -->
