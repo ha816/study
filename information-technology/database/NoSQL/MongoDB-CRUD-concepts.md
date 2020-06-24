@@ -2,14 +2,11 @@
 
 CRUD 명령과 관련된 주요 성질을 알아보자. 
 
-
 # Atomicity
 
-MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성이 보장됩니다. 심지어 단일 문서안에서 다수의 중첩된 문서에 
+MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성을 보장합니다. 심지어 단일 문서안의 다수의 중첩된 문서에 대한 수정 연산자에 대해서도 보장합니다.  
 
-In MongoDB, a write operation is atomic on the level of a single document, even if the operation modifies multiple embedded documents  _within_  a single document.
-
-
+#
 
 ## Multi-Document Transactions
 
@@ -60,5 +57,6 @@ Miscellaneous
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDU4NDg3MTddfQ==
+eyJoaXN0b3J5IjpbLTE3MDMwNjgyMDMsLTE3MDU4NDg3MTddfQ
+==
 -->
