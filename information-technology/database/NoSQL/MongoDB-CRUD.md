@@ -93,8 +93,9 @@ db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
 # Update
 
 * 만약 update 할려는 문서를 찾지 못하면, update 연산은 새로운 문서를 만들어 삽입합니다. (`upsert  :  true`)
+* MongoDB에서 한 문서에 대한 모든 쓰기 작업은 원자성이 보장됩니다. 
+* Once set, you cannot update the value of the  `_id`  field nor can you replace an existing document with a replacement document that has a different  `_id`  field value.
 
-If  [`updateOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/#db.collection.updateOne "db.collection.updateOne()"),  [`updateMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany()"), or  [`replaceOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.replaceOne/#db.collection.replaceOne "db.collection.replaceOne()")  includes  `upsert  :  true`  **and**  no documents match the specified filter, then the operation creates a new document and inserts it. If there are matching documents, then the operation modifies or replaces the matching document or documents.
 
 
 db.collection.updateOne(filter,  update,  options)
@@ -153,14 +154,6 @@ db.inventory.replaceOne(
 )
 ```
 
-MongoDB에서 한 문서에 대한 모든 쓰기 작업은 원자성이 보장됩니다. 
-
-All write operations in MongoDB are atomic on the level of a single document. For more information on MongoDB and atomicity, see  [Atomicity and Transactions](https://docs.mongodb.com/manual/core/write-operations-atomicity/).
-
-### `_id`  Field[](https://docs.mongodb.com/manual/tutorial/update-documents/#id-field "Permalink to this headline")
-
-Once set, you cannot update the value of the  `_id`  field nor can you replace an existing document with a replacement document that has a different  `_id`  field value.
-
 ### Field Order[](https://docs.mongodb.com/manual/tutorial/update-documents/#field-order "Permalink to this headline")
 
 MongoDB preserves the order of the document fields following write operations  _except_  for the following cases:
@@ -168,13 +161,8 @@ MongoDB preserves the order of the document fields following write operations  _
 -   The  `_id`  field is always the first field in the document.
 -   Updates that include  [`renaming`](https://docs.mongodb.com/manual/reference/operator/update/rename/#up._S_rename "$rename")  of field names may result in the reordering of fields in the document.
 
-### Upsert Option
-
-If  [`updateOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/#db.collection.updateOne "db.collection.updateOne()"),  [`updateMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany()"), or  [`replaceOne()`](https://docs.mongodb.com/manual/reference/method/db.collection.replaceOne/#db.collection.replaceOne "db.collection.replaceOne()")  includes  `upsert  :  true`  **and**  no documents match the specified filter, then the operation creates a new document and inserts it. If there are matching documents, then the operation modifies or replaces the matching document or documents.
-
-For details on the new document created, see the individual reference pages for the methods.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDE3NjU5NzMsLTMyOTEyMjU5MCw4Nj
+eyJoaXN0b3J5IjpbLTExNDk5MzcwNTEsLTMyOTEyMjU5MCw4Nj
 k0NzU2NjYsMTM0MDIwMTMwNiwtMTE5MTkzOTI5LDE5NDAxNjc4
 NTMsLTE5MzMyNDQ1NjVdfQ==
 -->
