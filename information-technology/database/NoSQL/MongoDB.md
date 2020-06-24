@@ -63,8 +63,10 @@ JSON을 그대로 사용하는 다른 시스템과는 다르게, MongoDB는 BSON
 
 ## JSON vs BSON
 
-|Encoding  |  | |
+|| JSON | BSON|
 |--|--|--|
+|Encoding    | UTF-8 String| Binary| 
+|Data Support|String, Boolean, Number, Array||
 |  |  ||
 
 
@@ -221,10 +223,10 @@ Refer to the  [Query and Projection Operators](https://docs.mongodb.com/manual/r
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzU1MjI4MDQsNjI2NTg0NzkxLDM4ND
-g1Mjc5MywtMTI0MTIwMjA3MCwxNjM2NjkyODE1LC0xNjQyNzU1
-NzYwLDE5MTc2OTkyNDQsLTEzNzQ2OTI0NjUsLTEzMzc0OTM1OT
-AsLTEyMTY5MzI3MDEsLTE4MzYzMjM3MzIsLTEyMTk5MTk4MjQs
-ODE1ODU0NzQxLDExODc5MTQzLC0yMDU3MTcwNzkwLDczMDk5OD
-ExNl19
+eyJoaXN0b3J5IjpbLTQ3NzQ2ODEwOCw2MjY1ODQ3OTEsMzg0OD
+UyNzkzLC0xMjQxMjAyMDcwLDE2MzY2OTI4MTUsLTE2NDI3NTU3
+NjAsMTkxNzY5OTI0NCwtMTM3NDY5MjQ2NSwtMTMzNzQ5MzU5MC
+wtMTIxNjkzMjcwMSwtMTgzNjMyMzczMiwtMTIxOTkxOTgyNCw4
+MTU4NTQ3NDEsMTE4NzkxNDMsLTIwNTcxNzA3OTAsNzMwOTk4MT
+E2XX0=
 -->
