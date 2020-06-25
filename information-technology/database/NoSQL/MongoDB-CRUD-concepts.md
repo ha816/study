@@ -195,16 +195,7 @@ Primary 1 대 Secondary 1대 총 2대의 멤버에서 디스크의 journal 까�
 
 설정 단위는 milisecond 이다.
 
-  
-  
-출처: [https://bluese05.tistory.com/74](https://bluese05.tistory.com/74) [ㅍㅍㅋㄷ]  
-  
-출처: [https://bluese05.tistory.com/74](https://bluese05.tistory.com/74) [ㅍㅍㅋㄷ]  
-  
-출처: [https://bluese05.tistory.com/74](https://bluese05.tistory.com/74) [ㅍㅍㅋㄷ]
-
-
-## Isolation Guarantees
+# Isolation Guarantees
 
 ### Read Uncommitted
 
@@ -255,10 +246,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTEzOTk0MjcsNTI5NTIyNjI0LDE1Mj
-U4NTc3MCwtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMjgyNzQ5MDQ2
-LDg1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3NzgwNiwtNjAwNz
-YxNDcsLTIxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLTIwNjA4NDgw
-MzAsNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1Miw4ODc4ND
-gzODEsMjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
+eyJoaXN0b3J5IjpbLTEwNDQzMTY5Myw1Mjk1MjI2MjQsMTUyNT
+g1NzcwLC02MjM3NzA3MTIsODA2ODc0MTgwLDEyODI3NDkwNDYs
+ODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2LC02MDA3Nj
+E0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAz
+MCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUyLDg4Nzg0OD
+M4MSwyMDE5MzY2MzU0LC0xNzA1ODQ4NzE3XX0=
 -->
