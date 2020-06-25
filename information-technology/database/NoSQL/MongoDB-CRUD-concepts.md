@@ -39,10 +39,9 @@ MongoDB는 쓰기 작업을 primary에게 적용하고 그 연산을 primary's o
 아래 replica set에는 세 구성원이 있습니다. 
 ![Diagram of default routing of reads and writes to the primary. — Enlarged](https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg)
 
-replica set의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 기본적으로, 
+replica set의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 기본적으로, 딱 하나의 application만 primary 구성원에게 읽기 연산을 줄 수 있습니다. 
 
-All members of the replica set can accept read operations. However, by default, an application directs its read operations to the primary member. See  [Read Preference](https://docs.mongodb.com/manual/core/read-preference/)  for details on changing the default read behavior.
-
+한 replica set에는 최대한 한 
 The replica set can have at most one primary.  [[2]](https://docs.mongodb.com/manual/core/replica-set-members/#edge-cases-2-primaries)  If the current primary becomes unavailable, an election determines the new primary. See  [Replica Set Elections](https://docs.mongodb.com/manual/core/replica-set-elections/)  for more details.
 
 Secondaries
@@ -147,10 +146,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUxMDg0NTg1LC02MjM3NzA3MTIsODA2OD
-c0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcs
-LTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3ND
-Y0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQs
-NzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1OD
-Q4NzE3XX0=
+eyJoaXN0b3J5IjpbMzEwMjkyMTQsLTYyMzc3MDcxMiw4MDY4Nz
+QxODAsMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywt
+NDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0Nj
+Q3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3
+NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MDU4ND
+g3MTddfQ==
 -->
