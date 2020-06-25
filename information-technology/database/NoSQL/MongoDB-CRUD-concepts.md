@@ -88,28 +88,11 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때만 성공적으로 read concern을 보장합니다.
 
-
 ## Write Concern
 
-### DocumentDB 의 Replication
-
-AWS DocumentDB 서비스를 이용하며 알아본 몇가지 내용들을 공유하고자 한다.
-
-이번 포스팅에서는 AWS DocumentDB 사용시 Primary 와 Secondary 간 데이터 일관성을 유지할 수 있는
-
-Write concern 에 대해서 알아보자.
-
-### Write Concern 이란 무엇인가
-
-Write concern 은 MongoDB 가 Client 의 요청으로 데이터를 기록할 때,
-
-**해당 요청에 대한 Response를 어느 시점에 주느냐에 대한 동작 방식**을 지칭한다.
-
-먼저 아래 그림을 보자.
+Write Concern이란 MongoDB 가 Client 의 요청으로 데이터를 기록할 때, 해당 요청에 대한 Response를 어느 시점에 주느냐에 대한 동작 방식을 지정합니다.
 
 ![](https://k.kakaocdn.net/dn/bqWzBJ/btqvCK0MrG1/kkQXAqikXxDAA9h0iKlya1/img.png)
-
-[ MongoDB Replication의 Write data 처리 ]
 
 MongoDB는 Client 가 보낸 데이터를 Primary 에 기록하고, 이에 대한 Response를 Client 에게 보내게 된다.
 
@@ -246,10 +229,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzM3OTA2Miw1Mjk1MjI2MjQsMTUyNT
-g1NzcwLC02MjM3NzA3MTIsODA2ODc0MTgwLDEyODI3NDkwNDYs
-ODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2LC02MDA3Nj
-E0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAz
-MCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUyLDg4Nzg0OD
-M4MSwyMDE5MzY2MzU0LC0xNzA1ODQ4NzE3XX0=
+eyJoaXN0b3J5IjpbMTIyNzczMjY5NywtMTc3Mzc5MDYyLDUyOT
+UyMjYyNCwxNTI1ODU3NzAsLTYyMzc3MDcxMiw4MDY4NzQxODAs
+MTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywtNDM3Nz
+c4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0NjQ3ODk5
+LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3NDc0OT
+IxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MDU4NDg3MTdd
+fQ==
 -->
