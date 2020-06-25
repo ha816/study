@@ -41,11 +41,13 @@ MongoDB는 쓰기 작업을 primary에게 적용하고 그 연산을 primary's o
 
 replica set의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 기본적으로, 딱 하나의 application만 primary 구성원에게 읽기 연산을 줄 수 있습니다. 
 
-한 replica set에는 최대한 한 
-The replica set can have at most one primary.  [[2]](https://docs.mongodb.com/manual/core/replica-set-members/#edge-cases-2-primaries)  If the current primary becomes unavailable, an election determines the new primary. See  [Replica Set Elections](https://docs.mongodb.com/manual/core/replica-set-elections/)  for more details.
+한 replica set에는 최대한 한개의 primary를 가질 수 있습니다. 만약 현재 primary가 이용 불가상태가 되면, 투표를 통해서 새로운 primary를 뽑습니다.
 
-Secondaries
-: primary와 동일한 데이터 셋을 유지하기 위해 primary의 연산자들을 복제합니다. 
+### Secondaries
+
+A secondary maintains a copy of the  [primary’s](https://docs.mongodb.com/manual/reference/glossary/#term-primary)  data set. To replicate data, a secondary applies operations from the primary’s  [oplog](https://docs.mongodb.com/manual/core/replica-set-oplog/)  to its own data set in an asynchronous process.  [[1]](https://docs.mongodb.com/manual/core/replica-set-members/#slow-oplogs)  A replica set can have one or more secondaries.
+
+The following three-member replica set has two secondary members. The secondaries replicate the primary’s oplog and apply the operations to their data sets.
 
 ## Read Concern(Isolation)
 
@@ -146,10 +148,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEwMjkyMTQsLTYyMzc3MDcxMiw4MDY4Nz
-QxODAsMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywt
-NDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0Nj
-Q3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3
-NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MDU4ND
-g3MTddfQ==
+eyJoaXN0b3J5IjpbLTkyMjQwODc5LC02MjM3NzA3MTIsODA2OD
+c0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcs
+LTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3ND
+Y0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQs
+NzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1OD
+Q4NzE3XX0=
 -->
