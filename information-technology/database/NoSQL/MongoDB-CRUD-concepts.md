@@ -49,18 +49,11 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 저장된 데이터를 빠르게 가져오는 Read Concern입니다. 
 이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 최근에 쓰여졌다면, 가져온 데이터가 최신인것을 보장하지 않습니다. 
 
-majority는 실패 이벤트에서도, 성공적으로 문서를 가져옵니다. 
+majority는 실패 이벤트에서도, 성공적으로 문서를 가져옵니다. majority-commit point시점에 인-메모리 데이터를 가져오기 때문에 최신인것은 보장하지 않지만 데이터는 온전하게 있습니다. 
 
-replica set member는 majority-commit point시점에 인-메모리 데이터를 가져옵니다. 
+majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger)을 ㅅ
 
-To fulfill read concern “majority”, the replica set member returns data from its in-memory view of the data at the majority-commit point. As such, read concern  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority"")  is comparable in performance cost to other read concerns.
-
-Availability:
-
--   Read concern  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority"")  is available for use with or without causally consistent sessions and transactions.
--   You can disable read concern  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority"")  for a deployment with a three-member primary-secondary-arbiter (PSA) architecture; however, this has implications for change streams (in MongoDB 4.0 and earlier only) and transactions on sharded clusters. For more information, see  [Disable Read Concern Majority](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority).
-
-**Requirements:**  To use  [read concern](https://docs.mongodb.com/manual/reference/glossary/#term-read-concern)  level of  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority""), replica sets must use  [WiredTiger storage engine](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger).
+**Requirements:**  To use  [read concern](https://docs.mongodb.com/manual/reference/glossary/#term-read-concern)  level of  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority""), replica sets must use  
 
 ## Write Concern
 
@@ -125,9 +118,9 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk1MzU5NzA2LDgwNjg3NDE4MCwxMjgyNz
-Q5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3NzgwNiwt
-NjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLTIwNj
-A4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1Miw4
-ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
+eyJoaXN0b3J5IjpbLTM2MzM1OTcwOCw4MDY4NzQxODAsMTI4Mj
+c0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywtNDM3Nzc4MDYs
+LTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMD
+YwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIs
+ODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MDU4NDg3MTddfQ==
 -->
