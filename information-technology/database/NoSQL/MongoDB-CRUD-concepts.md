@@ -21,7 +21,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ## Concurrency Control
 
-동시성 제어는 다수의 애플리케이션이 동시
+동시성 제어는 다수의 애플리케이션이 동시 수행될때 데이터 불이치 또는 충돌이 없도록 보장합니다. 
 
 Concurrency control allows multiple applications to run concurrently without causing data inconsistency or conflicts.
 
@@ -51,6 +51,6 @@ Miscellaneous
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNzA3NjU1Niw4ODc4NDgzODEsMjAxOT
-M2NjM1NCwtMTcwNTg0ODcxN119
+eyJoaXN0b3J5IjpbNDgwMDE0NDQ3LDg4Nzg0ODM4MSwyMDE5Mz
+Y2MzU0LC0xNzA1ODQ4NzE3XX0=
 -->
