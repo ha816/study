@@ -91,15 +91,118 @@ linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때�
 
 ## Write Concern
 
-Write Concern(쓰기 고려사항)은 쓰기 작업을 단일 mongd, replica sets, shared clusters에 하기 위해, MongoDB로 부터 요청된 지식 레벨을 묘사합니다. 
+### DocumentDB 의 Replication
 
-```groovy
-{ w: <value>, j: <boolean>, wtimeout: <number> }
-```
+AWS DocumentDB 서비스를 이용하며 알아본 몇가지 내용들을 공유하고자 한다.
 
-* w는 쓰기 연산이 특정 수의 mongod 객체에 전파되기를 바란다는 요청 옵션
-* j는 쓰기 연산이 디스크 저널에 쓰기를 바란다는 옵션
-* wtimeout은 다른 쓰기 연산을 막는 제한시간을 지정하는 옵션
+이번 포스팅에서는 AWS DocumentDB 사용시 Primary 와 Secondary 간 데이터 일관성을 유지할 수 있는
+
+Write concern 에 대해서 알아보자.
+
+### Write Concern 이란 무엇인가
+
+Write concern 은 MongoDB 가 Client 의 요청으로 데이터를 기록할 때,
+
+**해당 요청에 대한 Response를 어느 시점에 주느냐에 대한 동작 방식**을 지칭한다.
+
+먼저 아래 그림을 보자.
+
+![](https://k.kakaocdn.net/dn/bqWzBJ/btqvCK0MrG1/kkQXAqikXxDAA9h0iKlya1/img.png)
+
+[ MongoDB Replication의 Write data 처리 ]
+
+MongoDB는 Client 가 보낸 데이터를 Primary 에 기록하고, 이에 대한 Response를 Client 에게 보내게 된다.
+
+이때, MongoDB를 Replication 으로 구성하였을 경우 Primary 의 복제본을 유지하는 Secondary 가 함께 구성되게 된다.
+
+만약 위 그림과 같이 Primary 1대와 Secondary 2대로 구성하였을 경우,
+
+Client 가 보낸 데이터의 Write 처리는 Primary 에서만 먼저 처리하게 되며,
+
+이후 Secondary 로 변경된 데이터를 동기화 시키는 단계를 거친다.
+
+이때 눈여겨 봐야 하는 점은 **Primary와 Secondary 간 동기화 되는데 시간차**가 있다는 점이다.
+
+만약 Client 가 보낸 데이터를 Primary 가 처리 한 직후 Client 쪽으로 Response 를 보내고
+
+이후, Primary 와 Secondary 간 동기화가 진행된다고 가정하면
+
+Client 가 Response를 받은 시점과 Primary 에서 Secondary로 Sync 되는 타이밍 사이에는
+
+데이터 일관성이 보장되지 않는 위험 구간이 존재하게 되는 것이다.
+
+![](https://k.kakaocdn.net/dn/48NyH/btqvBas04QL/0vTCbpKEAIpFnarAI2FjqK/img.png)
+
+[ MongoDB Replication 의 데이터 unmatch ]
+
+만약 이 사이에 Primary 에 장애가 발생 했다고 가정해 보면,
+
+아직 최신 데이터를 Sync 하지 못한 Secondary 멤버가 Primary 로 승격되게 되고
+
+Client 는 이를 알아차리지 못한채 이미 작업이 완료된 Response 를 받았기 때문에
+
+Client 가 알고 있는 데이터와 DB 의 데이터가 unmatch 되는 상황이 발생되게 된다.
+
+이러한 문제를 해결하기 위해
+
+**Client 쪽에 보내는 response 시점을 Primary 와 Secondary 가 동기화 된 이후로 설정이 가능한데**
+
+**이것이 바로 Write concern 설정의 핵심이다.**
+
+![](https://k.kakaocdn.net/dn/daSduH/btqvErfiQPr/YnveydIHjt1YdgInTK1VxK/img.png)
+
+[ MongoDB Replication 의 Write concern ]
+
+Write Concern 을 설정하게 되면
+
+**Primary 가 데이터 쓰기를 처리한 이후 바로 Client 에게 response 를 보내는 것이 아니라**
+
+**Secondary 쪽으로 데이터를 동기화 작업을 완료한 이후에 Client 에게 response 를 보내게 된다.**
+
+이렇게 되면 Client 와 Primary, Secondary 간에 데이터 일관성을 유지할 수 있게 된다.
+
+### Write Concern 옵션
+
+Write Concern 을 지정하는데는 크게 w / j / wtimeout 을 설정 할수 있는데 자세한 내용은 아래와 같다.
+
+**1) w option**
+
+w 를 설정하게 되면, ReplicaSet 에 속한 멤버중 지정된 수만큼의 멤버에게 데이터 쓰기가 완료되었는지 확인한다.
+
+만약 Primary/Secondary 가 총 3대로 구성된 ReplicaSet 일 경우,
+
+w = 3 으로 설정시 3대의 멤버에 데이터 쓰기가 완료 된 것을 확인하고 response 를 반환하게 된다.
+
+보통은 w = 1 이 Default 설정이며, 이런 경우 Primary 에만 기록 완료되면 response 하게 된다.
+
+만약, w = majority 로 설정할 경우, 멤버의 과반수 이상을 자동으로 설정하게 된다.
+
+즉, 3대의 멤버가 Replicaset 에 속해 있을 경우 w = 2 와 동일한 설정으로 보면 된다.
+
+**2) j option**
+
+해당 값을 설정하면, 데이터 쓰기 작업이 디스크상의 journal 에 기록된 후 완료로 판단하는 옵션이다.
+
+만약, Replicaset 의 멤버가 3대인 경우 w = majority, j = true 로 설정시
+
+Primary 1 대 Secondary 1대 총 2대의 멤버에서 디스크의 journal 까지 기록이 완료 된 후 response 하게 된다.
+
+**3) wtimeout**
+
+해당 값을 설정하면, Primary 에서 Secondary 로 데이터 동기화시 timeout 값을 설정하는 옵션이다.
+
+만약 wtimeout 의 limit 을 넘어가게 되면 실제로 데이터가 Primary에 기록되었다고 해도 error 를 리턴하게 된다.
+
+설정 단위는 milisecond 이다.
+
+  
+  
+출처: [https://bluese05.tistory.com/74](https://bluese05.tistory.com/74) [ㅍㅍㅋㄷ]  
+  
+출처: [https://bluese05.tistory.com/74](https://bluese05.tistory.com/74) [ㅍㅍㅋㄷ]  
+  
+출처: [https://bluese05.tistory.com/74](https://bluese05.tistory.com/74) [ㅍㅍㅋㄷ]
+
 
 ## Isolation Guarantees
 
@@ -152,10 +255,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI5NTIyNjI0LDE1MjU4NTc3MCwtNjIzNz
-cwNzEyLDgwNjg3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5Mywx
-NjczODc0MTA3LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0Mj
-QwNDUsLTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcs
-ODQwNTAzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2Nj
-M1NCwtMTcwNTg0ODcxN119
+eyJoaXN0b3J5IjpbLTE5OTEzOTk0MjcsNTI5NTIyNjI0LDE1Mj
+U4NTc3MCwtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMjgyNzQ5MDQ2
+LDg1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3NzgwNiwtNjAwNz
+YxNDcsLTIxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLTIwNjA4NDgw
+MzAsNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1Miw4ODc4ND
+gzODEsMjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
 -->
