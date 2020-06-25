@@ -12,7 +12,9 @@ MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성을 보장�
 
 다수 문서에 대한 쓰기 작업을 수행할때, 단일 또는 다수 쓰기 모든 연산이든지, 다른 연산이 교차로 배치될 수 있다. (interleave; 컴퓨터 하드디스크의 성능을 높이기 위해 데이터를 서로 인접하지 않게 배열하는 방식을 말한다.)
 
-다수의 문서에 대해서 원자성이 보장되는 읽기와 쓰기를 필요로 하는 상황에 대해서 
+복수 문서에 대해서 원자성이 보장되는 읽기와 쓰기를 필요로 하는 상황에 대해서, MongoDB는 복수 문서 트랜잭션을 지원합니다.
+
+
 
 For situations that require atomicity of reads and writes to multiple documents (in a single or multiple collections), MongoDB supports multi-document transactions:
 
@@ -57,5 +59,5 @@ Miscellaneous
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAzNzAzODAyLC0xNzA1ODQ4NzE3XX0=
+eyJoaXN0b3J5IjpbMjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
 -->
