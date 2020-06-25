@@ -30,11 +30,33 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 `readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 consistency와  isolation을 컨트롤 하도록 합니다. 
 
-The  `readConcern`  option allows you to control the consistency and isolation properties of the data read from replica sets and replica set shards.
+### Read Concern Levels
 
-Through the effective use of  [write concerns](https://docs.mongodb.com/manual/reference/write-concern/)  and read concerns, you can adjust the level of consistency and availability guarantees as appropriate, such as waiting for stronger consistency guarantees, or loosening consistency requirements to provide higher availability.
+`level`
 
-MongoDB drivers updated for MongoDB 3.2 or later support specifying read concern.
+Description
+
+[`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")
+
+The query returns data from the instance with no guarantee that the data has been written to a majority of the replica set members (i.e. may be rolled back).
+
+Default for:
+
+-   reads against primary
+    
+-   reads against secondaries if the reads are associated with  [causally consistent sessions](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#sessions).
+    
+    NOTE
+    
+    Causally consistent client sessions only guarantee causal consistency if the associated read operations use  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority"")  read concern and the associated write operations use  [`"majority"`](https://docs.mongodb.com/manual/reference/write-concern/#writeconcern.%22majority%22 ""majority"")  write concern.
+    
+
+**Availability:**  Read concern  `local`  is available for use with or without causally consistent sessions and transactions.
+
+For more information, see the  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  reference page.
+
+
+
 
 ## Write Concern
 
@@ -99,8 +121,8 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzA0NTA5NzgsLTIxMjk0MjQwNDUsLT
-IwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAz
-OTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMT
-cwNTg0ODcxN119
+eyJoaXN0b3J5IjpbMTE1NjY2NTYyNCwtMjEyOTQyNDA0NSwtMj
+A3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5
+OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNz
+A1ODQ4NzE3XX0=
 -->
