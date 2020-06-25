@@ -35,7 +35,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ### Local & Available
 
-이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 쓰여졌다는 것을 보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 않을 수 있습니다.
+가장 최근 데이터를 빠르게 가져오는 Read Concern 입니다. 이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 쓰여졌다는 것을 보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 않을 수 있습니다.
 
 기본적으로 primary에서 데이터를 읽습니다. 그러나 causally consistent sessions와 연관된 읽기라면 secondaries에서 읽습니다. 
 
@@ -134,9 +134,9 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mz
-g3NDEwNywtNDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1
-LC0yMDc0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MD
-UwMzk5NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQs
-LTE3MDU4NDg3MTddfQ==
+eyJoaXN0b3J5IjpbNzcwOTY5MzQ4LDEyODI3NDkwNDYsODUyMD
+I1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2LC02MDA3NjE0Nywt
+MjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1Mj
+U1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwy
+MDE5MzY2MzU0LC0xNzA1ODQ4NzE3XX0=
 -->
