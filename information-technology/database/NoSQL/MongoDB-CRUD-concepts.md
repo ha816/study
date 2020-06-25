@@ -37,14 +37,11 @@ local 레벨의 Read Concern입니다.
 
 이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 쓰여졌다는 것을 보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 않을 수 있습니다.
 
-기본적으로 primary에서 데이터를 읽습니다. 그러나 causally consistent sessions에서 읽
+기본적으로 primary에서 데이터를 읽습니다. 그러나 causally consistent sessions와 연관된 읽기라면 secondaries에서 읽습니다. 
 
-local은 consistent sessions과 transactions이 있든지 없든지 사용이 가능합니다.
+즉, local은 causally consistent sessions과 transactions이 있든지 없든지 사용이 가능합니다.
 
 
--   reads against primary
-    
--   reads against secondaries if the reads are associated with  [causally consistent sessions](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#sessions).
     
     NOTE
     
@@ -121,8 +118,8 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NDUxMDczNiwtNjAwNzYxNDcsLTIxMj
-k0MjQwNDUsLTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTEx
-NzcsODQwNTAzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOT
-M2NjM1NCwtMTcwNTg0ODcxN119
+eyJoaXN0b3J5IjpbLTEwODA0MTkyMTYsLTYwMDc2MTQ3LC0yMT
+I5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUx
+MTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIwMT
+kzNjYzNTQsLTE3MDU4NDg3MTddfQ==
 -->
