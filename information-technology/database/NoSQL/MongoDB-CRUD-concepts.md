@@ -19,14 +19,12 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 >주의사항
 >대부분의 경우, 다수-문서 트랜잭션은 단일 문서 쓰기 보다 훨씬 성능  손실이 큽니다. 그리고 효과적인 schema 디자인을 해놓았다면, 다수-문서 트랜잭션을 사용할 일이 별로 없습니다.
 
-## Concurrency Control
+# Concurrency Control
 
 동시성 제어는 다수의 애플리케이션이 동시 수행될때 데이터 불이치 또는 충돌이 없도록 보장합니다. 
 이를 위해 MongoDB의 접근법은 unique한 값만을 가질 수 있는 unique 인덱스 필드를 만드는 것입니다. 인덱스 필드는 중복된 데이터를 생성하는 것으로부터 insertions과 updates를 막습니다. 
 
-# Isolation Guarantees
-
-## Read Concern
+# Read Concern
 
 `readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 그 데이터의 LATEST, SAFE, FAST을 고려하여 가져온다. 
 
@@ -60,7 +58,7 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때만 성공적으로 read concern을 보장합니다.
 
-## Write Concern
+# Write Concern
 
 Write Concern이란 MongoDB 가 Client 의 요청으로 데이터를 기록할 때, 해당 요청에 대한 Response를 어느 시점에 주느냐에 대한 동작 방식을 지정합니다.
 
@@ -98,12 +96,12 @@ wtimeout option
 만약 wtimeout 의 limit 을 넘어가게 되면 실제로 데이터가 Primary에 기록되었다고 해도 error 를 리턴하게 됩니다.
 설정 단위는 milisecond 이다.
 
-
-
 # Isolation Guarantees
+
 
 ## Read Uncommitted
 
+read concern에 따라, 클라이언트는 
 Depending on the read concern, clients can see the results of writes before the writes are  [durable](
 
 
@@ -151,7 +149,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0ODU3NjQ1NywxNDQxNTI5OTUzLC0xOT
+eyJoaXN0b3J5IjpbMTk5MTE2ODYxOCwxNDQxNTI5OTUzLC0xOT
 U3MTQyMjIzLC0xOTQzMjA1Mzk5LC0xNzczNzkwNjIsNTI5NTIy
 NjI0LDE1MjU4NTc3MCwtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMj
 gyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3Nzgw
