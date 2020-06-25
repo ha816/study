@@ -37,9 +37,13 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 가장 최근 데이터를 빠르게 가져오는 Read Concern 입니다. 이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 쓰여졌다는 것을 보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 않을 수 있습니다.
 
-기본적으로 primary에서 데이터를 읽습니다. 그러나 causally consistent sessions와 연관된 읽기라면 secondaries에서 읽습니다. 
+샤딩된 클러스터에선, `"available"` 을 사용하면 다양한 read concerns 중에서 가장 낮은 레이턴시를 제공합니다. 그러나 샤딩된 컬렉션을 읽는 과정에서 [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) 문서를 읽을 수도 있습니다. 
 
-즉, local은 causally consistent sessions과 transactions이 있든지 없든지 사용이 가능합니다.
+> orphaned document
+> 샤딩된 클러스터에서, 비정상 종료 때문에 실패하거나 불완전한 마이그레이션으로 발생하는 다른 샤드의 문서입니다. `cleanupOrphaned`을 사용해서 사용 디스크 공간과 혼란을 줄이기 위해 orphaned document를 삭제할 수 있습니다.
+
+샤딩된 컬렉션에서 orphaned document를 읽는 리스트를 피하기 위해서, `local` read concern과 같은 다른 concern level을 씁시다.
+
 
 ### Available
 
@@ -48,13 +52,6 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 기본적으로 읽기가 causally consistent sessions와 연관이 없으면 secondaries에서 읽습니다.
 
 `available`은 causally consistent sessions and transactions에선 사용할 수 없습니다. 
-
-샤딩된 클러스터에선, `"available"` 을 사용하면 다양한 read concerns 중에서 가장 낮은 레이턴시를 제공합니다. 그러나 샤딩된 컬렉션을 읽는 과정에서 [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) 문서를 읽을 수도 있습니다. 
-
-> orphaned document
-> 샤딩된 클러스터에서, orphaned document는 비정상 종료 때문에 실패 또는 불완전한 마이그레이션으로 발생하는 다른 샤드의 문서입니다. `cleanupOrphaned`을 사용해서 사용 디스크 공간과 혼란을 줄이기 위해 orphaned document를 삭제할 수 있습니다.
-
-샤딩된 컬렉션에서 orphaned document를 읽는 리스트를 피하기 위해서, `local` read concern과 같은 다른 concern level을 씁시다.
 
 ### majority
 
@@ -134,7 +131,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcwOTY5MzQ4LDEyODI3NDkwNDYsODUyMD
+eyJoaXN0b3J5IjpbNzU3MDI4MzA2LDEyODI3NDkwNDYsODUyMD
 I1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2LC02MDA3NjE0Nywt
 MjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1Mj
 U1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwy
