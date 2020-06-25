@@ -28,7 +28,9 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ## Write Concern
 
+Write Concern(쓰기 고려사항)은 MongoDB로 부터 요청된 지적 레
 
+Write concern describes the level of acknowledgment requested from MongoDB for write operations to a standalone [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod") or to [replica sets](https://docs.mongodb.com/manual/replication/) or to [sharded clusters](https://docs.mongodb.com/manual/sharding/). In sharded clusters, [`mongos`](https://docs.mongodb.com/manual/reference/program/mongos/#bin.mongos "bin.mongos") instances will pass the write concern on to the shards.
 
 ## Isolation Guarantees
 
@@ -81,7 +83,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk4MjU1MTUyLDUyNTUxMTc3LDg0MDUwMz
-k5NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3
-MDU4NDg3MTddfQ==
+eyJoaXN0b3J5IjpbLTEyODY2ODEzMjEsNTI1NTExNzcsODQwNT
+AzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwt
+MTcwNTg0ODcxN119
 -->
