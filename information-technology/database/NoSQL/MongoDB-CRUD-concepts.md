@@ -51,9 +51,9 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 majority는 실패 이벤트에서도, 성공적으로 문서를 가져옵니다. majority-commit point시점에 인-메모리 데이터를 가져오기 때문에 최신인것은 보장하지 않지만 데이터는 온전하게 있습니다. 
 
-majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger)을 ㅅ
+majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger)을 사용해야 합니다.
 
-**Requirements:**  To use  [read concern](https://docs.mongodb.com/manual/reference/glossary/#term-read-concern)  level of  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority""), replica sets must use  
+### 
 
 ## Write Concern
 
@@ -118,7 +118,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MzM1OTcwOCw4MDY4NzQxODAsMTI4Mj
+eyJoaXN0b3J5IjpbLTYyMzc3MDcxMiw4MDY4NzQxODAsMTI4Mj
 c0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywtNDM3Nzc4MDYs
 LTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMD
 YwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIs
