@@ -197,7 +197,7 @@ Primary 1 대 Secondary 1대 총 2대의 멤버에서 디스크의 journal 까�
 
 # Isolation Guarantees
 
-### Read Uncommitted
+## Read Uncommitted
 
 Depending on the read concern, clients can see the results of writes before the writes are  [durable](
 
@@ -213,13 +213,13 @@ However, when a transaction writes to multiple shards, not all outside read oper
 
 Read uncommitted is the default isolation level and applies to  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  standalone instances as well as to replica sets and sharded clusters.
 
-### Read Uncommitted And Single Document Atomicity[](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#read-uncommitted-and-single-document-atomicity "Permalink to this headline")
+## Read Uncommitted And Single Document Atomicity[](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#read-uncommitted-and-single-document-atomicity "Permalink to this headline")
 
 Write operations are atomic with respect to a single document; i.e. if a write is updating multiple fields in the document, a read operation will never see the document with only some of the fields updated. However, although a client may not see a  _partially_  updated document, read uncommitted means that concurrent read operations may still see the updated document before the changes are made  [durable](https://docs.mongodb.com/manual/reference/glossary/#term-durable).
 
 With a standalone  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  instance, a set of read and write operations to a single document is serializable. With a replica set, a set of read and write operations to a single document is serializable  _only_  in the absence of a rollback.
 
-### Read Uncommitted And Multiple Document Write[](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#read-uncommitted-and-multiple-document-write "Permalink to this headline")
+## Read Uncommitted And Multiple Document Write[](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#read-uncommitted-and-multiple-document-write "Permalink to this headline")
 
 When a single write operation (e.g.  [`db.collection.updateMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany()")) modifies multiple documents, the modification of each document is atomic, but the operation as a whole is not atomic.
 
@@ -246,7 +246,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDQzMTY5Myw1Mjk1MjI2MjQsMTUyNT
+eyJoaXN0b3J5IjpbLTE3NzM3OTA2Miw1Mjk1MjI2MjQsMTUyNT
 g1NzcwLC02MjM3NzA3MTIsODA2ODc0MTgwLDEyODI3NDkwNDYs
 ODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2LC02MDA3Nj
 E0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAz
