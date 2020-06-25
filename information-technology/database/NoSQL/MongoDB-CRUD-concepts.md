@@ -50,12 +50,15 @@ local 레벨의 Read Concern입니다.
 
 `available`은 causally consistent sessions and transactions에선 사용할 수 없습니다. 
 
-샤딩된 클러스터에선
-
-For sharded clusters, `"available"` 을 사용하면 다양한 read concerns 중에서 가장 낮은 레이턴시를 제공합니다. 그러나 샤딩된 컬렉션을 읽는 과정에서 
+샤딩된 클러스터에선, `"available"` 을 사용하면 다양한 read concerns 중에서 가장 낮은 레이턴시를 제공합니다. 그러나 샤딩된 컬렉션을 읽는 과정에서 
 
 
-read concern provides the lowest latency reads possible among the various read concerns. However, this comes at the expense of consistency as [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"") read concern can return [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) when reading from a sharded collection. 
+read concern provides the lowest latency reads possible among the various read concerns. However, this comes at the expense of consistency as [`"available"`]  ㅌ ㅌoncern.%22available%22 ""available"") read concern can return [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) when reading from a sharded collection. 
+
+> orphaned document
+
+In a sharded cluster, orphaned documents are those documents on a shard that also exist in chunks on other shards as a result of failed migrations or incomplete migration cleanup due to abnormal shutdown. Delete orphaned documents using  [`cleanupOrphaned`](https://docs.mongodb.com/manual/reference/command/cleanupOrphaned/#dbcmd.cleanupOrphaned "cleanupOrphaned")  to reclaim disk space and reduce confusion.
+
 
 To avoid the risk of returning orphaned documents when reading from sharded collections, use a different read concern such as read concern [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"").
 
@@ -124,8 +127,8 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjA4NDE1OTEsLTQzNzc3ODA2LC02MD
-A3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0
-ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUyLDg4Nz
-g0ODM4MSwyMDE5MzY2MzU0LC0xNzA1ODQ4NzE3XX0=
+eyJoaXN0b3J5IjpbMTU0ODk4Njc0MywtNDM3Nzc4MDYsLTYwMD
+c2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMDYwODQ4
+MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIsODg3OD
+Q4MzgxLDIwMTkzNjYzNTQsLTE3MDU4NDg3MTddfQ==
 -->
