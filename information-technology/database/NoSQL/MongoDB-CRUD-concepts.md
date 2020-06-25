@@ -53,7 +53,9 @@ local 레벨의 Read Concern입니다.
 샤딩된 클러스터에선, `"available"` 을 사용하면 다양한 read concerns 중에서 가장 낮은 레이턴시를 제공합니다. 그러나 샤딩된 컬렉션을 읽는 과정에서 [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) 문서를 읽을 수도 있습니다. 
 
 > orphaned document
-> 샤딩된 클러스테에서, orphaned document는 비정상 종료 때문에 실패 또는 불완전한 마이그레이션으로 발생하는 다른 샤드의 문서입니다. `cleanupOrphaned`을 사용해서 사용 디스크 공간과 혼란을 줄이기 위해 orphaned document를 삭제할 수 있습니다.
+> 샤딩된 클러스터에서, orphaned document는 비정상 종료 때문에 실패 또는 불완전한 마이그레이션으로 발생하는 다른 샤드의 문서입니다. `cleanupOrphaned`을 사용해서 사용 디스크 공간과 혼란을 줄이기 위해 orphaned document를 삭제할 수 있습니다.
+
+샤딩된 컬렉션에서 orphaned document를 읽는 리스트를 피하기 위해서, `local` read concern과 같은 다른 방법을 쓰는
 
 To avoid the risk of returning orphaned documents when reading from sharded collections, use a different read concern such as read concern [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"").
 
@@ -122,7 +124,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NTI4NDcwNiwtNDM3Nzc4MDYsLTYwMD
+eyJoaXN0b3J5IjpbMTY3Mzg3NDEwNywtNDM3Nzc4MDYsLTYwMD
 c2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMDYwODQ4
 MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIsODg3OD
 Q4MzgxLDIwMTkzNjYzNTQsLTE3MDU4NDg3MTddfQ==
