@@ -26,6 +26,16 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 # Read Isolation
 
+
+## Read Concern
+
+The  `readConcern`  option allows you to control the consistency and isolation properties of the data read from replica sets and replica set shards.
+
+Through the effective use of  [write concerns](https://docs.mongodb.com/manual/reference/write-concern/)  and read concerns, you can adjust the level of consistency and availability guarantees as appropriate, such as waiting for stronger consistency guarantees, or loosening consistency requirements to provide higher availability.
+
+MongoDB drivers updated for MongoDB 3.2 or later support specifying read concern.
+
+
 ## Write Concern
 
 Write Concern(쓰기 고려사항)은 쓰기 작업을 단일 mongd, replica sets, shared clusters에 하기 위해, MongoDB로 부터 요청된 지식 레벨을 묘사합니다. 
@@ -89,7 +99,8 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLT
-IwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1
-Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
+eyJoaXN0b3J5IjpbLTQyMzk5NTU1OCwtMjEyOTQyNDA0NSwtMj
+A3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5
+OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNz
+A1ODQ4NzE3XX0=
 -->
