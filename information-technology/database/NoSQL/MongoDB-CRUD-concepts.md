@@ -134,19 +134,13 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 > 주의사항
 > 대부분의 multi-document transaction은 굉장히 나쁜 성능을 보이고, 좋은 스키마 디자인을 대체할 수는 없습니다. 좋은 스키마 또는 모델링을 통해서 최대한 multi-document transaction 사용을 줄이도록 합시다. 
 
-Without isolating the multi-document write operations, MongoDB exhibits the following behavior:
-
-1.  Non-point-in-time read operations. Suppose a read operation begins at time  _t_1  and starts reading documents. A write operation then commits an update to one of the documents at some later time  _t_2. The reader may see the updated version of the document, and therefore does not see a point-in-time snapshot of the data.
-2.  Non-serializable operations. Suppose a read operation reads a document  _d_1  at time  _t_1  and a write operation updates  _d_1  at some later time  _t_3. This introduces a read-write dependency such that, if the operations were to be serialized, the read operation must precede the write operation. But also suppose that the write operation updates document  _d_2  at time  _t_2  and the read operation subsequently reads  _d_2  at some later time  _t_4. This introduces a write-read dependency which would instead require the read operation to come  _after_  the write operation in a serializable schedule. There is a dependency cycle which makes serializability impossible.
-3.  Reads may miss matching documents that are updated during the course of the read operation.
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNzE1MjgyMiw3NzcwODExNDMsMTczOT
-I5ODE0NiwtMTUzODM5MDE0NywyNDc4MTc1NjEsLTEyNjY5NDY3
-MjksLTE2MDgzNzM0MjcsMTQ0MTUyOTk1MywtMTk1NzE0MjIyMy
-wtMTk0MzIwNTM5OSwtMTc3Mzc5MDYyLDUyOTUyMjYyNCwxNTI1
-ODU3NzAsLTYyMzc3MDcxMiw4MDY4NzQxODAsMTI4Mjc0OTA0Ni
-w4NTIwMjUyOTMsMTY3Mzg3NDEwNywtNDM3Nzc4MDYsLTYwMDc2
-MTQ3XX0=
+eyJoaXN0b3J5IjpbLTIwNTU2NDc0MjIsMjEwNzE1MjgyMiw3Nz
+cwODExNDMsMTczOTI5ODE0NiwtMTUzODM5MDE0NywyNDc4MTc1
+NjEsLTEyNjY5NDY3MjksLTE2MDgzNzM0MjcsMTQ0MTUyOTk1My
+wtMTk1NzE0MjIyMywtMTk0MzIwNTM5OSwtMTc3Mzc5MDYyLDUy
+OTUyMjYyNCwxNTI1ODU3NzAsLTYyMzc3MDcxMiw4MDY4NzQxOD
+AsMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywtNDM3
+Nzc4MDZdfQ==
 -->
