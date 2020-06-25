@@ -34,7 +34,10 @@ Write Concern(쓰기 고려사항)은 쓰기 작업을 단일 mongd, replica set
 { w: <value>, j: <boolean>, wtimeout: <number> }
 ```
 
-w는 쓰기 연산이 특정 수의 mongod 객체에 전파되기를 바란다는 요청 옵션
+* w는 쓰기 연산이 특정 수의 mongod 객체에 전파되기를 바란다는 요청 옵션
+* j는 쓰기 연산이 디스크 저널에 쓰기를 바란다는 옵션
+* 
+
 
 
 
@@ -97,7 +100,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTkzNTM3MDMsLTIwNjA4NDgwMzAsNT
-I1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEs
-MjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
+eyJoaXN0b3J5IjpbMTM3OTU5OTMwLC0yMDYwODQ4MDMwLDUyNT
+UxMTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIw
+MTkzNjYzNTQsLTE3MDU4NDg3MTddfQ==
 -->
