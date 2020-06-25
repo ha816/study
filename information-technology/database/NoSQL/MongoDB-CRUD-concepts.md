@@ -28,9 +28,10 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ## Isolation Guarantees
 
-### Read Uncommitted[](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#read-uncommitted "Permalink to this headline")
+### Read Uncommitted
 
-Depending on the read concern, clients can see the results of writes before the writes are  [durable](https://docs.mongodb.com/manual/reference/glossary/#term-durable):
+Depending on the read concern, clients can see the results of writes before the writes are  [durable](
+
 
 -   Regardless of a write’s  [write concern](https://docs.mongodb.com/manual/reference/write-concern/), other clients using  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  or  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern can see the result of a write operation before the write operation is acknowledged to the issuing client.
 -   Clients using  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  or  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern can read data which may be subsequently  [rolled back](https://docs.mongodb.com/manual/core/replica-set-rollbacks/)  during replica set failovers.
@@ -76,7 +77,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUwNzU1NjM3LDg0MDUwMzk5NCw3NDc0OT
-IxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MDU4NDg3MTdd
-fQ==
+eyJoaXN0b3J5IjpbNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5Mj
+E1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
+
 -->
