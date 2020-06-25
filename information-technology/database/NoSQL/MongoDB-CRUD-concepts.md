@@ -59,12 +59,9 @@ local 레벨의 Read Concern입니다.
 
 ### majority
 
-이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 인정되보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 
+이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 인정되었다는 것을 보장하지 않습니다. 심지어 실패 이벤트에서도, 읽기 연산이 성공적으로 문서를 가져옵니다.
 
 
-The query returns the data that has been acknowledged by a majority of the replica set members.
-
-The query returns the data that has been acknowledged by a majority of the replica set members. The documents returned by the read operation are durable, even in the event of failure.
 
 To fulfill read concern “majority”, the replica set member returns data from its in-memory view of the data at the majority-commit point. As such, read concern  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority"")  is comparable in performance cost to other read concerns.
 
@@ -138,9 +135,9 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU4NDg5MzIyLDE2NzM4NzQxMDcsLTQzNz
-c3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5
-OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3ND
-kyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1ODQ4NzE3
-XX0=
+eyJoaXN0b3J5IjpbLTQ0MTQ5MTIwNSwxNjczODc0MTA3LC00Mz
+c3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNzQ2NDc4
+OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0LDc0Nz
+Q5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNTg0ODcx
+N119
 -->
