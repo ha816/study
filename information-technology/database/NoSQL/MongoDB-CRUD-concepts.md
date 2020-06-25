@@ -50,9 +50,9 @@ replica set의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 
 하나의 replica set은 1개 이상의 secondaries를 가질 수 있습니다. ㅋㅌ
 ![Diagram of a 3 member replica set that consists of a primary and two secondaries.](https://docs.mongodb.com/manual/_images/replica-set-primary-with-two-secondaries.bakedsvg.svg)
 
-클라이언트는 데이터를 secondaries에 쓸 수는 없지만, 
+클라이언트는 데이터를 secondaries에 쓸 수는 없지만, 읽어 올 수는 있습니다.
 
-Although clients cannot write data to secondaries, clients can read data from secondary members. See  [Read Preference](https://docs.mongodb.com/manual/core/read-preference/)  for more information on how clients direct read operations to replica sets.
+
 
 A secondary can become a primary. If the current primary becomes unavailable, the replica set holds an  [election](https://docs.mongodb.com/manual/reference/glossary/#term-election)  to choose which of the secondaries becomes the new primary.
 
@@ -157,10 +157,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMDIzOTY0NSwtNjIzNzcwNzEyLDgwNj
-g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
-LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
-Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
-LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNT
-g0ODcxN119
+eyJoaXN0b3J5IjpbMTUyNTg1NzcwLC02MjM3NzA3MTIsODA2OD
+c0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcs
+LTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3ND
+Y0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQs
+NzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1OD
+Q4NzE3XX0=
 -->
