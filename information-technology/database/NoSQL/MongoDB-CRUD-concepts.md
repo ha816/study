@@ -24,17 +24,17 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 동시성 제어는 다수의 애플리케이션이 동시 수행될때 데이터 불이치 또는 충돌이 없도록 보장합니다. 
 이를 위해 MongoDB의 접근법은 unique한 값만을 가질 수 있는 unique 인덱스 필드를 만드는 것입니다. 인덱스 필드는 중복된 데이터를 생성하는 것으로부터 insertions과 updates를 막습니다. 
 
-# Read Isolation
+# Isolation
+
+## Read Concern(Isolation)
 
 
-## Read Concern
 
 The  `readConcern`  option allows you to control the consistency and isolation properties of the data read from replica sets and replica set shards.
 
 Through the effective use of  [write concerns](https://docs.mongodb.com/manual/reference/write-concern/)  and read concerns, you can adjust the level of consistency and availability guarantees as appropriate, such as waiting for stronger consistency guarantees, or loosening consistency requirements to provide higher availability.
 
 MongoDB drivers updated for MongoDB 3.2 or later support specifying read concern.
-
 
 ## Write Concern
 
@@ -99,7 +99,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMzk5NTU1OCwtMjEyOTQyNDA0NSwtMj
+eyJoaXN0b3J5IjpbMTMwNTQwNTM0OSwtMjEyOTQyNDA0NSwtMj
 A3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5
 OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNz
 A1ODQ4NzE3XX0=
