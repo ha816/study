@@ -21,6 +21,8 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ## Concurrency Control
 
+동시성 제어는 다수의 애플리케이션이 데이터 
+
 Concurrency control allows multiple applications to run concurrently without causing data inconsistency or conflicts.
 
 One approach is to create a  [unique index](https://docs.mongodb.com/manual/core/index-unique/#index-type-unique)  on a field that can only have unique values. This prevents insertions or updates from creating duplicate data. Create a unique index on multiple fields to force uniqueness on that combination of field values. For examples of use cases, see  [update() and Unique Index](https://docs.mongodb.com/manual/reference/method/db.collection.update/#update-with-unique-indexes)  and  [findAndModify() and Unique Index](https://docs.mongodb.com/manual/reference/method/db.collection.findAndModify/#upsert-and-unique-index).
@@ -49,6 +51,6 @@ Miscellaneous
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MD
-U4NDg3MTddfQ==
+eyJoaXN0b3J5IjpbLTE2OTkxMjQyODUsODg3ODQ4MzgxLDIwMT
+kzNjYzNTQsLTE3MDU4NDg3MTddfQ==
 -->
