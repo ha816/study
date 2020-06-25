@@ -28,7 +28,11 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ## Read Concern(Isolation)
 
-`readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 그 데이터의 LATEST
+`readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 그 데이터의 LATEST, SAFE, FAST을 고렿
+Read Concern을 생각할 때 고려해야할 점은 lastest, safe, fast 조건인데, 세 가지를 모두 만족하는 옵션이 없기 때문에 어플리케이션의 성격에 따라서 잘 결정하여 선택해야 한다.
+
+**[출처]**  [(mongodb cluster #15) read concerns](http://blog.naver.com/ijoos/221284913886)|**작성자**  [ijoos](http://blog.naver.com/ijoos)
+
 
 ![](http://postfiles10.naver.net/MjAxODA1MjZfMTYx/MDAxNTI3MzQzMzYwOTIx.UWOcjWVn6qw1XhMrWubt4Kr4BL9yjzqkshcjPVxZWFog._OW_LnzY41867zdVE5h3JpB-Jox1aAtV8jllOsN9SMcg.PNG.ijoos/image.png?type=w773)
 
@@ -137,7 +141,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NTI0MTUyOSw4NTIwMjUyOTMsMTY3Mz
+eyJoaXN0b3J5IjpbMTQzMTY1Nzc0NCw4NTIwMjUyOTMsMTY3Mz
 g3NDEwNywtNDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1
 LC0yMDc0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MD
 UwMzk5NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQs
