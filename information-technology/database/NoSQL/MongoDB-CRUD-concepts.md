@@ -119,18 +119,14 @@ w = majority 로 설정할 경우, 멤버의 과반수 이상을 자동으로 �
 
  j option
  : 데이터 쓰기 작업이 디스크상의 journal 에 기록된 후 완료로 판단하는 옵션입니다. 
+ 만약, Replicaset 의 멤버가 3대인 경우 w = majority, j = true 로 설정시 Primary 1 대 Secondary 1대 총 2대의 멤버에서 디스크의 journal 까지 기록이 완료 된 후 response 하게 됩니다.
 
-만약, Replicaset 의 멤버가 3대인 경우 w = majority, j = true 로 설정시
-
-Primary 1 대 Secondary 1대 총 2대의 멤버에서 디스크의 journal 까지 기록이 완료 된 후 response 하게 된다.
-
-**3) wtimeout**
-
-해당 값을 설정하면, Primary 에서 Secondary 로 데이터 동기화시 timeout 값을 설정하는 옵션이다.
-
-만약 wtimeout 의 limit 을 넘어가게 되면 실제로 데이터가 Primary에 기록되었다고 해도 error 를 리턴하게 된다.
-
+wtimeout option
+: Primary 에서 Secondary 로 데이터 동기화시 timeout 값을 설정하는 옵션이다. 
+만약 wtimeout 의 limit 을 넘어가게 되면 실제로 데이터가 Primary에 기록되었다고 해도 error 를 리턴하게 됩니다.
 설정 단위는 milisecond 이다.
+
+
 
 # Isolation Guarantees
 
@@ -183,11 +179,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MzY1NzM4MCwxNDQxNTI5OTUzLC0xOT
-U3MTQyMjIzLC0xOTQzMjA1Mzk5LC0xNzczNzkwNjIsNTI5NTIy
-NjI0LDE1MjU4NTc3MCwtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMj
-gyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3Nzgw
-NiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLT
-IwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1
-Ml19
+eyJoaXN0b3J5IjpbMzg1MDA2MTE1LDE0NDE1Mjk5NTMsLTE5NT
+cxNDIyMjMsLTE5NDMyMDUzOTksLTE3NzM3OTA2Miw1Mjk1MjI2
+MjQsMTUyNTg1NzcwLC02MjM3NzA3MTIsODA2ODc0MTgwLDEyOD
+I3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2
+LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMj
+A2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUy
+XX0=
 -->
