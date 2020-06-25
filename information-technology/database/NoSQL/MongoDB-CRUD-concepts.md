@@ -26,6 +26,10 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 # Read Isolation
 
+## Write Concern
+
+
+
 ## Isolation Guarantees
 
 ### Read Uncommitted
@@ -77,7 +81,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5Mj
-E1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
-
+eyJoaXN0b3J5IjpbOTk4MjU1MTUyLDUyNTUxMTc3LDg0MDUwMz
+k5NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3
+MDU4NDg3MTddfQ==
 -->
