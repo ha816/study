@@ -47,13 +47,16 @@ replica set의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 
 
 한 secondary는 primary의 데이터 셋을 복사본을 유지합니다. 복제를 위해서, secondary는 primary oplog에 기록된 연산을 보고 자신의 데이터에 비동기 프로세스를 통해 적용합니다. 
 
-하나의 replica set은 1개 이상의 secondaries를 가질 수 있습니다. 
-
-maintains a copy of the  [primary’s](https://docs.mongodb.com/manual/reference/glossary/#term-primary)  data set. To replicate data, a secondary applies operations from the primary’s  [oplog](https://docs.mongodb.com/manual/core/replica-set-oplog/)  to its own data set in an asynchronous process.  [[1]](https://docs.mongodb.com/manual/core/replica-set-members/#slow-oplogs)  A replica set can have one or more secondaries.
-
-The following three-member replica set has two secondary members. The secondaries replicate the primary’s oplog and apply the operations to their data sets.
-
+하나의 replica set은 1개 이상의 secondaries를 가질 수 있습니다. ㅋㅌ
 ![Diagram of a 3 member replica set that consists of a primary and two secondaries.](https://docs.mongodb.com/manual/_images/replica-set-primary-with-two-secondaries.bakedsvg.svg)
+
+클라이언트는 데이터를 secondaries에 쓸 수는 없지만, 
+
+Although clients cannot write data to secondaries, clients can read data from secondary members. See  [Read Preference](https://docs.mongodb.com/manual/core/read-preference/)  for more information on how clients direct read operations to replica sets.
+
+A secondary can become a primary. If the current primary becomes unavailable, the replica set holds an  [election](https://docs.mongodb.com/manual/reference/glossary/#term-election)  to choose which of the secondaries becomes the new primary.
+
+See  [Replica Set Elections](https://docs.mongodb.com/manual/core/replica-set-elections/)  for more details.
 
 ## Read Concern(Isolation)
 
@@ -154,7 +157,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NzgyOTM1NSwtNjIzNzcwNzEyLDgwNj
+eyJoaXN0b3J5IjpbMTkzMDIzOTY0NSwtNjIzNzcwNzEyLDgwNj
 g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
 LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
 Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
