@@ -112,7 +112,7 @@ wtimeout option
 
 그러나 한 트랜잭션이 다수의 샤드에 쓰기 작업을 할땐, 샤드들을 가로질러 커밋된 트랜잭션의 결과를 모든 다른 읽기 연산이 기다릴 필요가 없습니다. 
 
-Read uncommitted 설정은 기본 isolation level으로 
+Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, replica sets, 그리고 standalone mongd에 적용되어 있습니다. 
 
 Read uncommitted is the default isolation level and applies to  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  standalone instances as well as to replica sets and sharded clusters.
 
@@ -149,11 +149,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0OTk0NzQsLTEyNjY5NDY3MjksLTE2MD
-gzNzM0MjcsMTQ0MTUyOTk1MywtMTk1NzE0MjIyMywtMTk0MzIw
-NTM5OSwtMTc3Mzc5MDYyLDUyOTUyMjYyNCwxNTI1ODU3NzAsLT
-YyMzc3MDcxMiw4MDY4NzQxODAsMTI4Mjc0OTA0Niw4NTIwMjUy
-OTMsMTY3Mzg3NDEwNywtNDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMT
-I5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUx
-MTc3XX0=
+eyJoaXN0b3J5IjpbMTUyMjIwNTkzMSwtMTI2Njk0NjcyOSwtMT
+YwODM3MzQyNywxNDQxNTI5OTUzLC0xOTU3MTQyMjIzLC0xOTQz
+MjA1Mzk5LC0xNzczNzkwNjIsNTI5NTIyNjI0LDE1MjU4NTc3MC
+wtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAy
+NTI5MywxNjczODc0MTA3LC00Mzc3NzgwNiwtNjAwNzYxNDcsLT
+IxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1
+NTExNzddfQ==
 -->
