@@ -47,11 +47,11 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 ### majority
 
 저장된 데이터를 빠르게 가져오는 Read Concern입니다. 
-이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 최근에  가져온 데이터임을 보장하지 않습니다. 
+이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 최근에 쓰여졌다면, 가져온 데이터가 최신인것을 보장하지 않습니다. 
 
-심지어 실패 이벤트에서도, 읽기 연산이 성공적으로 문서를 가져옵니다.
+majority는 실패 이벤트에서도, 성공적으로 문서를 가져옵니다. 
 
-majority read concern을 위해, replica set member는 majority-commit point시점에 인-메모리 데이터를 가져옵니다. 
+replica set member는 majority-commit point시점에 인-메모리 데이터를 가져옵니다. 
 
 To fulfill read concern “majority”, the replica set member returns data from its in-memory view of the data at the majority-commit point. As such, read concern  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority"")  is comparable in performance cost to other read concerns.
 
@@ -125,9 +125,9 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTg0OTg1ODQsODA2ODc0MTgwLDEyOD
-I3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2
-LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMj
-A2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUy
-LDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1ODQ4NzE3XX0=
+eyJoaXN0b3J5IjpbNzk1MzU5NzA2LDgwNjg3NDE4MCwxMjgyNz
+Q5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3NzgwNiwt
+NjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLTIwNj
+A4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1Miw4
+ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
 -->
