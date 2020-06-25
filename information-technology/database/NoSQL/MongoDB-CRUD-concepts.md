@@ -111,18 +111,14 @@ Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리�
 
 Write Concern 을 지정하는데는 크게 w / j / wtimeout options를 설정 할 수 있습니다.
 
-w options
+w option
 : ReplicaSet 에 속한 멤버중 지정된 수만큼의 멤버에게 데이터 쓰기가 완료되었는지 확인합니다.
 만약 Primary/Secondary 가 총 3대로 구성된 ReplicaSet 일 경우, w = 3 으로 설정시 3대의 멤버에 데이터 쓰기가 완료 된 것을 확인하고 response를 반환합니다.
-w = 1 이 Default 설정이며, 이런 경우 Primary 에만 기록 완료되면 response 합니다.
+w = 1 이 Default 설정이며, 이런 경우 Primary 에만 기록 완료되면 response 합니다. 
+w = majority 로 설정할 경우, 멤버의 과반수 이상을 자동으로 설정하게 된다.
 
-만약, w = majority 로 설정할 경우, 멤버의 과반수 이상을 자동으로 설정하게 된다.
-
-즉, 3대의 멤버가 Replicaset 에 속해 있을 경우 w = 2 와 동일한 설정으로 보면 된다.
-
-**2) j option**
-
-해당 값을 설정하면, 데이터 쓰기 작업이 디스크상의 journal 에 기록된 후 완료로 판단하는 옵션이다.
+ j option
+ : 데이터 쓰기 작업이 디스크상의 journal 에 기록된 후 완료로 판단하는 옵션입니다. 
 
 만약, Replicaset 의 멤버가 3대인 경우 w = majority, j = true 로 설정시
 
@@ -187,11 +183,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQxOTUxNTAyLDE0NDE1Mjk5NTMsLTE5NT
-cxNDIyMjMsLTE5NDMyMDUzOTksLTE3NzM3OTA2Miw1Mjk1MjI2
-MjQsMTUyNTg1NzcwLC02MjM3NzA3MTIsODA2ODc0MTgwLDEyOD
-I3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2
-LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMj
-A2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUy
-XX0=
+eyJoaXN0b3J5IjpbLTQ0MzY1NzM4MCwxNDQxNTI5OTUzLC0xOT
+U3MTQyMjIzLC0xOTQzMjA1Mzk5LC0xNzczNzkwNjIsNTI5NTIy
+NjI0LDE1MjU4NTc3MCwtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMj
+gyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3Nzgw
+NiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLT
+IwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1
+Ml19
 -->
