@@ -37,6 +37,9 @@ local 레벨의 Read Concern입니다.
 
 이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 쓰여졌다는 것을 보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 않을 수 있습니다.
 
+local은 
+
+**Availability:** Read concern `local` is available for use with or without causally consistent sessions and transactions.
 
 
 Default for:
@@ -120,8 +123,8 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMD
-c0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5
-NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MD
-U4NDg3MTddfQ==
+eyJoaXN0b3J5IjpbODkyNjE1NDY5LC02MDA3NjE0NywtMjEyOT
+QyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3
+Nyw4NDA1MDM5OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5Mz
+Y2MzU0LC0xNzA1ODQ4NzE3XX0=
 -->
