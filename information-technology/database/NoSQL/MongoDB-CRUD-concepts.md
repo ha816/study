@@ -38,7 +38,6 @@ Write Concern(쓰기 고려사항)은 쓰기 작업을 단일 mongd, replica set
 * j는 쓰기 연산이 디스크 저널에 쓰기를 바란다는 옵션
 * wtimeout은 다른 쓰기 연산을 막는 제한시간을 지정하는 옵션
 
-
 ## Isolation Guarantees
 
 ### Read Uncommitted
@@ -90,7 +89,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNT
-I1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEs
-MjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
+eyJoaXN0b3J5IjpbLTIxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLT
+IwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1
+Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
 -->
