@@ -34,7 +34,7 @@ Primary
 : 모든 쓰기 연산을 받습니다. 
 
 Secondaries
-: 
+: primary와 동일한 데이터 셋을 유지하기위해 primary의 연산자들을 복제합니다. 
 Secondaries replicate operations from the primary to maintain an identical data set. Secondaries may have additional configurations for special usage profiles. For example, secondaries may be  [non-voting](https://docs.mongodb.com/manual/core/replica-set-elections/#replica-set-non-voting-members)  or  [priority 0](https://docs.mongodb.com/manual/core/replica-set-priority-0-member/#replica-set-secondary-only-members).
 
 ## Read Concern(Isolation)
@@ -136,7 +136,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTcyNjQ5NSwtNjIzNzcwNzEyLDgwNj
+eyJoaXN0b3J5IjpbMTYyODE4MzI4OSwtNjIzNzcwNzEyLDgwNj
 g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
 LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
 Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
