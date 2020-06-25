@@ -8,9 +8,10 @@ MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성을 보장�
 
 # Multi-Document Transactions
 
-단일 쓰기 연산이 다수의 문서를 수정할때, 각 문서에 대한 수정은 원자성을 보장합니다. 
+단일 쓰기 연산이 다수의 문서를 수정할때, 각 문서에 대한 수정은 원자성을 보장합니다. 하지만 **연산 전체가 원자성을 보장하진 않습니다.**
 
-When a single write operation (e.g.  [`db.collection.updateMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany()")) modifies multiple documents, the modification of each document is atomic, but the operation as a whole is not atomic.
+다수 문서에 대한 쓰기 작업을 수행할때, 단일 또는 다수 쓰기 연산 어
+
 
 When performing multi-document write operations, whether through a single write operation or multiple write operations, other operations may interleave.
 
@@ -57,6 +58,5 @@ Miscellaneous
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzAyOTM0ODEsLTE3MDU4NDg3MTddfQ
-==
+eyJoaXN0b3J5IjpbLTYwODc3NDQ1OSwtMTcwNTg0ODcxN119
 -->
