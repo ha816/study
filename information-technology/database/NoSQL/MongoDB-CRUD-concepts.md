@@ -98,19 +98,11 @@ Write Concern이란 MongoDB 가 Client 의 요청으로 데이터를 기록할 �
 
 만약 위 그림과 같이 Primary 1대와 Secondary 2대로 구성하였을 경우, Client가 보낸 데이터의 Write 작업은 Primary에서 먼저 수행하고, 이후 Secondaries가 같은 Write 작업을 진행합니다. 이때 **Primary와 Secondary 간 동기화 되는데 시간차**가 있습니다.
 
-만약 Client 가 보낸 데이터를 Primary 가 처리 한 직후 Client 쪽으로 Response 를 보내고
-
-이후, Primary 와 Secondary 간 동기화가 진행된다고 가정하면
-
-Client 가 Response를 받은 시점과 Primary 에서 Secondary로 Sync 되는 타이밍 사이에는
-
-데이터 일관성이 보장되지 않는 위험 구간이 존재하게 되는 것이다.
+만약 Client가 보낸 데이터를 Primary가 처리 한 직후 Client 쪽으로 Response를 보내고 이후, Primary 와 Secondary 간 동기화가 진행된다고 가정하면 Client 가 Response를 받은 시점과 Primary 에서 Secondary로 Sync 되는 타이밍 사이에는 데이터 일관성이 보장되지 않는 위험 구간이 존재하게 되는 것이다.
 
 ![](https://k.kakaocdn.net/dn/48NyH/btqvBas04QL/0vTCbpKEAIpFnarAI2FjqK/img.png)
 
-[ MongoDB Replication 의 데이터 unmatch ]
-
-만약 이 사이에 Primary 에 장애가 발생 했다고 가정해 보면,
+만약 이 사이에 Primary에 장애가 발생 했다고 가정해 보면,
 
 아직 최신 데이터를 Sync 하지 못한 Secondary 멤버가 Primary 로 승격되게 되고
 
@@ -221,11 +213,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQzMzUzNDc1LC0xOTQzMjA1Mzk5LC0xNz
-czNzkwNjIsNTI5NTIyNjI0LDE1MjU4NTc3MCwtNjIzNzcwNzEy
-LDgwNjg3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczOD
-c0MTA3LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUs
-LTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNT
-AzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NF19
-
+eyJoaXN0b3J5IjpbLTE5NTcxNDIyMjMsLTE5NDMyMDUzOTksLT
+E3NzM3OTA2Miw1Mjk1MjI2MjQsMTUyNTg1NzcwLC02MjM3NzA3
+MTIsODA2ODc0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2Nz
+M4NzQxMDcsLTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0
+NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4ND
+A1MDM5OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0
+XX0=
 -->
