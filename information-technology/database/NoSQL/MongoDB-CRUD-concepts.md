@@ -103,9 +103,9 @@ wtimeout option
 
 클라이언트는 쓰기 작업의 결과를 read concern에 따라 볼 수 있습니다.
 
-* local 또는 available을 쓰는 경우, 쓰기 작업을 write concern과는 관계 없이
+* local 또는 available을 쓰는 경우, 쓰기 작업이 완료되지 않았어도 write concern과는 관계 없이 결과를 받을 수 있습니다.
+* 
 
--   Regardless of a write’s  [write concern](https://docs.mongodb.com/manual/reference/write-concern/), other clients using  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  or  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern can see the result of a write operation before the write operation is acknowledged to the issuing client.
 -   Clients using  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  or  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern can read data which may be subsequently  [rolled back](https://docs.mongodb.com/manual/core/replica-set-rollbacks/)  during replica set failovers.
 
 For operations in a  [multi-document transaction](https://docs.mongodb.com/manual/core/transactions/), when a transaction commits, all data changes made in the transaction are saved and visible outside the transaction. That is, a transaction will not commit some of its changes while rolling back others.
@@ -149,11 +149,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MDgzNTczOSwtMTYwODM3MzQyNywxND
-QxNTI5OTUzLC0xOTU3MTQyMjIzLC0xOTQzMjA1Mzk5LC0xNzcz
-NzkwNjIsNTI5NTIyNjI0LDE1MjU4NTc3MCwtNjIzNzcwNzEyLD
-gwNjg3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0
-MTA3LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLT
-IwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAz
-OTk0XX0=
+eyJoaXN0b3J5IjpbNjUwODI1MjI0LC0xNjA4MzczNDI3LDE0ND
+E1Mjk5NTMsLTE5NTcxNDIyMjMsLTE5NDMyMDUzOTksLTE3NzM3
+OTA2Miw1Mjk1MjI2MjQsMTUyNTg1NzcwLC02MjM3NzA3MTIsOD
+A2ODc0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQx
+MDcsLTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMj
+A3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5
+OTRdfQ==
 -->
