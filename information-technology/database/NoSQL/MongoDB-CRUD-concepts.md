@@ -106,7 +106,9 @@ wtimeout option
 * local 또는 available을 쓰는 경우, 쓰기 작업이 완료되지 않았어도 write concern과는 관계 없이 결과를 받을 수 있습니다. 이 결과는 replica set failovers 중인 잘못된 데이터 일수도 있습니다. 
 
 한 트랜잭션이 커밋을 하면, 트랜잭션에서 모든 변경점을
-[multi-document transaction](https://docs.mongodb.com/manual/core/transactions/)의 연산자들로 볼 수 있습니다. 즉 한 트랜잭션은 
+[multi-document transaction](https://docs.mongodb.com/manual/core/transactions/)의 연산자들로 볼 수 있습니다. 즉 한 트랜잭션은 다른 것을 롤백하는 중에는 변경점을 커밋하지 않을 것 입니다. 
+
+한 트랜잭션이 커밋하기 전에, 트랜잭션 내에서 데이터 변경점은 외부 트랜잭션에선 볼 수 없습니다.
 
 저장되고 외부의 트랜잭션에서 볼수 있습니다.
 
@@ -151,11 +153,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjY5NDY3MjksLTE2MDgzNzM0MjcsMT
-Q0MTUyOTk1MywtMTk1NzE0MjIyMywtMTk0MzIwNTM5OSwtMTc3
-Mzc5MDYyLDUyOTUyMjYyNCwxNTI1ODU3NzAsLTYyMzc3MDcxMi
-w4MDY4NzQxODAsMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3
-NDEwNywtNDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC
-0yMDc0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MDUw
-Mzk5NF19
+eyJoaXN0b3J5IjpbLTEzNTcyNDc2NTgsLTEyNjY5NDY3MjksLT
+E2MDgzNzM0MjcsMTQ0MTUyOTk1MywtMTk1NzE0MjIyMywtMTk0
+MzIwNTM5OSwtMTc3Mzc5MDYyLDUyOTUyMjYyNCwxNTI1ODU3Nz
+AsLTYyMzc3MDcxMiw4MDY4NzQxODAsMTI4Mjc0OTA0Niw4NTIw
+MjUyOTMsMTY3Mzg3NDEwNywtNDM3Nzc4MDYsLTYwMDc2MTQ3LC
+0yMTI5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMDYwODQ4MDMwLDUy
+NTUxMTc3XX0=
 -->
