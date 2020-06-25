@@ -59,9 +59,13 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 읽이 연산 시작 이전에 성공적으로 인정된 모든 데이터를 반영한 최시 데이터를 가져옵니다. 결과를 반환하기 전에 모든 replica set에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 
-You can specify linearizable read concern for read operations on the  [`primary`](https://docs.mongodb.com/manual/reference/replica-states/#replstate.PRIMARY "PRIMARY")  only.
+linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때만 
 
 Linearizable read concern guarantees only apply if read operations specify a query filter that uniquely identifies a single document.
+
+
+You can specify linearizable read concern for read operations on the  [`primary`](https://docs.mongodb.com/manual/reference/replica-states/#replstate.PRIMARY "PRIMARY")  only.
+
 
 ## Write Concern
 
@@ -126,10 +130,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgwODgyNzYxLC02MjM3NzA3MTIsODA2OD
-c0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcs
-LTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3ND
-Y0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQs
-NzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1OD
-Q4NzE3XX0=
+eyJoaXN0b3J5IjpbODQwMTY5MzAsLTYyMzc3MDcxMiw4MDY4Nz
+QxODAsMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywt
+NDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0Nj
+Q3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3
+NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MDU4ND
+g3MTddfQ==
 -->
