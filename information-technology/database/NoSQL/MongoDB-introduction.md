@@ -126,9 +126,35 @@ brew services start mongodb-community
 brew services stop mongodb-community
 ```
 
+# Replica set 
+
+replica set은 mongd 프로세스들의 집합입니다. 또 각 mongd 프로세스는 아래 두 역할군으로 나뉘어 집니다. 
+
+### Primary
+
+Primary는 replica set에서 쓰기 연산을 받는 유일한 구성원 입니다. (마치 MySQL 리플리케이션 Master의 역할과 비슷합니다.)
+
+MongoDB는 쓰기 작업을 primary에게 적용하고 그 연산을 primary's oplog(operation log)에 남깁니다. Secondaries에 구성원은 이 로그를 복사하여 그들의 데이터 셋에 그 연산을 그대로 적용합니다. 
+
+아래 replica set에는 세 구성원이 있습니다. 
+![Diagram of default routing of reads and writes to the primary. — Enlarged](https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg)
+
+replica set의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 기본적으로, 딱 하나의 application만 primary 구성원에게 읽기 연산을 줄 수 있습니다. 
+
+한 replica set에는 최대한 한개의 primary를 가질 수 있습니다. 만약 현재 primary가 이용 불가상태가 되면, 투표를 통해서 새로운 primary를 뽑습니다.
+
+### Secondaries
+
+한 secondary는 primary의 데이터 셋을 복사본을 유지합니다. 복제를 위해서, secondary는 primary oplog에 기록된 연산을 보고 자신의 데이터에 비동기 프로세스를 통해 적용합니다. 
+
+하나의 replica set은 1개 이상의 secondaries를 가질 수 있습니다. ㅋㅌ
+![Diagram of a 3 member replica set that consists of a primary and two secondaries.](https://docs.mongodb.com/manual/_images/replica-set-primary-with-two-secondaries.bakedsvg.svg)
+
+클라이언트는 데이터를 secondaries에 쓸 수는 없지만, 읽어 올 수는 있습니다.
+secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습니다.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNz
-c1NzgzXX0=
+eyJoaXN0b3J5IjpbMTA0NDc3Nzc1NSwxNzA2NTU0MTI0LDk4Mj
+M2MDQ0Miw0NjI3NzU3ODNdfQ==
 -->
