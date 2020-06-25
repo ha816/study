@@ -117,7 +117,8 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 
 ## Read Uncommitted And Single Document Atomicity
 
-단일 문서에 대해선 쓰기 작업은 원자성을 보장합니다. 이 말은 한 쓰기 작업이 문서의 다수 필드를 수정하고 있다면, 읽기 연산은 아주 일부 필드가 수정되어도 문서를 보지 못합니다. 
+단일 문서에 대해선 쓰기 작업은 원자성을 보장합니다. 이 말은 한 쓰기 작업이 문서의 다수 필드를 수정하고 있다면, 읽기 연산은 아주 일부 필드가 수정된 문서는 보지 못합니다. 
+비록 클라이언트가 일부만 수정된 문서를 볼순 없지만, read uncommitted는 변화 결과가 반영되기 전에 문서를 
 
 Write operations are atomic with respect to a single document; i.e. if a write is updating multiple fields in the document, a read operation will never see the document with only some of the fields updated. However, although a client may not see a  _partially_  updated document, read uncommitted means that concurrent read operations may still see the updated document before the changes are made  [durable](https://docs.mongodb.com/manual/reference/glossary/#term-durable).
 
@@ -150,7 +151,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3OTY0NjM2MCwyNDc4MTc1NjEsLTEyNj
+eyJoaXN0b3J5IjpbLTgwNzIyMzI0OCwyNDc4MTc1NjEsLTEyNj
 Y5NDY3MjksLTE2MDgzNzM0MjcsMTQ0MTUyOTk1MywtMTk1NzE0
 MjIyMywtMTk0MzIwNTM5OSwtMTc3Mzc5MDYyLDUyOTUyMjYyNC
 wxNTI1ODU3NzAsLTYyMzc3MDcxMiw4MDY4NzQxODAsMTI4Mjc0
