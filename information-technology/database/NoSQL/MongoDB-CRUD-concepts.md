@@ -14,16 +14,10 @@ MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성을 보장�
 
 복수 문서에 대해서 원자성이 보장되는 읽기와 쓰기를 필요로 하는 상황에 대해서, MongoDB는 복수 문서 트랜잭션을 지원합니다.
 
-
-
-For situations that require atomicity of reads and writes to multiple documents (in a single or multiple collections), MongoDB supports multi-document transactions:
-
--   **In version 4.0**, MongoDB supports multi-document transactions on replica sets.
--   **In version 4.2**, MongoDB introduces distributed transactions, which adds support for multi-document transactions on sharded clusters and incorporates the existing support for multi-document transactions on replica sets.
-
 For details regarding transactions in MongoDB, see the  [Transactions](https://docs.mongodb.com/manual/core/transactions/)  page.
 
-IMPORTANT
+>주의사항
+>대부분의 경우, 다수-문서 트랜잭션은 단일 문서 쓰기 보다 훨씬 많은 성능 
 
 In most cases, multi-document transaction incurs a greater performance cost over single document writes, and the availability of multi-document transactions should not be a replacement for effective schema design. For many scenarios, the  [denormalized data model (embedded documents and arrays)](https://docs.mongodb.com/manual/core/data-model-design/#data-modeling-embedding)  will continue to be optimal for your data and use cases. That is, for many scenarios, modeling your data appropriately will minimize the need for multi-document transactions.
 
@@ -59,5 +53,6 @@ Miscellaneous
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
+eyJoaXN0b3J5IjpbLTIxMzQ0OTg3MTgsMjAxOTM2NjM1NCwtMT
+cwNTg0ODcxN119
 -->
