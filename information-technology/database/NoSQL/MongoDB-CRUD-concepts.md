@@ -47,7 +47,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 ### majority
 
 저장된 데이터를 빠르게 가져오는 Read Concern입니다. 
-이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 최근에 인정되었다는 것을 보장하지 않습니다. 심지어 실패 이벤트에서도, 읽기 연산이 성공적으로 문서를 가져옵니다.
+이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 최근에 쓰여졌다면 최근 데이터 보장하지 않습니다. 심지어 실패 이벤트에서도, 읽기 연산이 성공적으로 문서를 가져옵니다.
 
 majority read concern을 위해, replica set member는 majority-commit point시점에 인-메모리 데이터를 가져옵니다. 
 
@@ -123,9 +123,9 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTM3OTM2MTIsODA2ODc0MTgwLDEyOD
-I3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2
-LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMj
-A2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUy
-LDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1ODQ4NzE3XX0=
+eyJoaXN0b3J5IjpbLTU4NDI5MjkzMiw4MDY4NzQxODAsMTI4Mj
+c0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywtNDM3Nzc4MDYs
+LTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMD
+YwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIs
+ODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MDU4NDg3MTddfQ==
 -->
