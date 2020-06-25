@@ -17,7 +17,7 @@ MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성을 보장�
 For details regarding transactions in MongoDB, see the  [Transactions](https://docs.mongodb.com/manual/core/transactions/)  page.
 
 >주의사항
->대부분의 경우, 다수-문서 트랜잭션은 단일 문서 쓰기 보다 훨씬 많은 성능 
+>대부분의 경우, 다수-문서 트랜잭션은 단일 문서 쓰기 보다 훨씬 성능  손실이 큽니다. 그리고 효과적인 schema 디자인을 해놓았다면, 
 
 In most cases, multi-document transaction incurs a greater performance cost over single document writes, and the availability of multi-document transactions should not be a replacement for effective schema design. For many scenarios, the  [denormalized data model (embedded documents and arrays)](https://docs.mongodb.com/manual/core/data-model-design/#data-modeling-embedding)  will continue to be optimal for your data and use cases. That is, for many scenarios, modeling your data appropriately will minimize the need for multi-document transactions.
 
@@ -53,6 +53,6 @@ Miscellaneous
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzQ0OTg3MTgsMjAxOTM2NjM1NCwtMT
+eyJoaXN0b3J5IjpbLTExOTY3MTI2OTYsMjAxOTM2NjM1NCwtMT
 cwNTg0ODcxN119
 -->
