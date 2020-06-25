@@ -110,9 +110,9 @@ wtimeout option
 
 한 트랜잭션이 커밋하기 전에, 트랜잭션 내에서 데이터 변경점은 외부 트랜잭션에선 볼 수 없습니다.
 
-그러나 한 트랜잭션이 다수의 샤드에 쓰기 작업을 할땐, 샤드들을 가로질러 커밋된 트랜잭션의 결과를 모든 다른 읽기 연산이 기다릴 필ㅇ가 업
+그러나 한 트랜잭션이 다수의 샤드에 쓰기 작업을 할땐, 샤드들을 가로질러 커밋된 트랜잭션의 결과를 모든 다른 읽기 연산이 기다릴 필요가 없습니다. 
 
-However, when a transaction writes to multiple shards, not all outside read operations need to wait for the result of the committed transaction to be visible across the shards. For example, if a transaction is committed and write 1 is visible on shard A but write 2 is not yet visible on shard B, an outside read at read concern  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  can read the results of write 1 without seeing write 2.
+Read uncommitted 설정은 기본 isolation level으로 
 
 Read uncommitted is the default isolation level and applies to  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  standalone instances as well as to replica sets and sharded clusters.
 
@@ -149,11 +149,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0MDExMTEwLC0xMjY2OTQ2NzI5LC0xNj
-A4MzczNDI3LDE0NDE1Mjk5NTMsLTE5NTcxNDIyMjMsLTE5NDMy
-MDUzOTksLTE3NzM3OTA2Miw1Mjk1MjI2MjQsMTUyNTg1NzcwLC
-02MjM3NzA3MTIsODA2ODc0MTgwLDEyODI3NDkwNDYsODUyMDI1
-MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2LC02MDA3NjE0NywtMj
-EyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1
-MTE3N119
+eyJoaXN0b3J5IjpbLTg0OTk0NzQsLTEyNjY5NDY3MjksLTE2MD
+gzNzM0MjcsMTQ0MTUyOTk1MywtMTk1NzE0MjIyMywtMTk0MzIw
+NTM5OSwtMTc3Mzc5MDYyLDUyOTUyMjYyNCwxNTI1ODU3NzAsLT
+YyMzc3MDcxMiw4MDY4NzQxODAsMTI4Mjc0OTA0Niw4NTIwMjUy
+OTMsMTY3Mzg3NDEwNywtNDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMT
+I5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUx
+MTc3XX0=
 -->
