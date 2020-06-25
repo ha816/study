@@ -55,11 +55,20 @@ local 레벨의 Read Concern입니다.
 > orphaned document
 > 샤딩된 클러스터에서, orphaned document는 비정상 종료 때문에 실패 또는 불완전한 마이그레이션으로 발생하는 다른 샤드의 문서입니다. `cleanupOrphaned`을 사용해서 사용 디스크 공간과 혼란을 줄이기 위해 orphaned document를 삭제할 수 있습니다.
 
-샤딩된 컬렉션에서 orphaned document를 읽는 리스트를 피하기 위해서, `local` read concern과 같은 다른 방법을 쓰는
+샤딩된 컬렉션에서 orphaned document를 읽는 리스트를 피하기 위해서, `local` read concern과 같은 다른 concern level을 씁시다.
 
-To avoid the risk of returning orphaned documents when reading from sharded collections, use a different read concern such as read concern [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"").
+### majority
 
+The query returns the data that has been acknowledged by a majority of the replica set members. The documents returned by the read operation are durable, even in the event of failure.
 
+To fulfill read concern “majority”, the replica set member returns data from its in-memory view of the data at the majority-commit point. As such, read concern  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority"")  is comparable in performance cost to other read concerns.
+
+Availability:
+
+-   Read concern  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority"")  is available for use with or without causally consistent sessions and transactions.
+-   You can disable read concern  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority"")  for a deployment with a three-member primary-secondary-arbiter (PSA) architecture; however, this has implications for change streams (in MongoDB 4.0 and earlier only) and transactions on sharded clusters. For more information, see  [Disable Read Concern Majority](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority).
+
+**Requirements:**  To use  [read concern](https://docs.mongodb.com/manual/reference/glossary/#term-read-concern)  level of  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority""), replica sets must use  [WiredTiger storage engine](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger).
 
 ## Write Concern
 
@@ -124,8 +133,9 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3Mzg3NDEwNywtNDM3Nzc4MDYsLTYwMD
-c2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMDYwODQ4
-MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIsODg3OD
-Q4MzgxLDIwMTkzNjYzNTQsLTE3MDU4NDg3MTddfQ==
+eyJoaXN0b3J5IjpbLTE4NDA1MDUwMTgsMTY3Mzg3NDEwNywtND
+M3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0NjQ3
+ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3ND
+c0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MDU4NDg3
+MTddfQ==
 -->
