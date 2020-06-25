@@ -96,9 +96,7 @@ Write Concern이란 MongoDB 가 Client 의 요청으로 데이터를 기록할 �
 
 기본적으로 MongoDB는 Client 가 보낸 데이터를 Primary에 기록하고, 이에 대한 Response를 Client에게 보냅니다. 
 
-만약 위 그림과 같이 Primary 1대와 Secondary 2대로 구성하였을 경우, Client가 보낸 데이터의 Write 작업은 Primary에서 먼저 수행하고, 이후 Secondaries가 같은 연산 
-
-이때 눈여겨 봐야 하는 점은 **Primary와 Secondary 간 동기화 되는데 시간차**가 있다는 점이다.
+만약 위 그림과 같이 Primary 1대와 Secondary 2대로 구성하였을 경우, Client가 보낸 데이터의 Write 작업은 Primary에서 먼저 수행하고, 이후 Secondaries가 같은 Write 작업을 진행합니다. 이때 **Primary와 Secondary 간 동기화 되는데 시간차**가 있습니다.
 
 만약 Client 가 보낸 데이터를 Primary 가 처리 한 직후 Client 쪽으로 Response 를 보내고
 
@@ -223,11 +221,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDMyMDUzOTksLTE3NzM3OTA2Miw1Mj
-k1MjI2MjQsMTUyNTg1NzcwLC02MjM3NzA3MTIsODA2ODc0MTgw
-LDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNz
-c3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5
-OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3ND
-kyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1ODQ4NzE3
-XX0=
+eyJoaXN0b3J5IjpbNDQzMzUzNDc1LC0xOTQzMjA1Mzk5LC0xNz
+czNzkwNjIsNTI5NTIyNjI0LDE1MjU4NTc3MCwtNjIzNzcwNzEy
+LDgwNjg3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczOD
+c0MTA3LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUs
+LTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNT
+AzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NF19
+
 -->
