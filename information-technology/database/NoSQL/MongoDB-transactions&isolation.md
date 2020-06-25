@@ -1,4 +1,6 @@
-# Atomicity
+# Transaction
+
+## Atomicity
 
 MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성을 보장합니다. 심지어 단일 문서안의 다수의 중첩된 문서에 대한 수정 연산자에 대해서도 보장합니다.  
 
@@ -18,7 +20,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 동시성 제어는 다수의 애플리케이션이 동시 수행될때 데이터 불이치 또는 충돌이 없도록 보장합니다. 이를 위해 MongoDB의 접근법은 unique한 값만을 가질 수 있는 unique 인덱스 필드를 만드는 것입니다. 인덱스 필드는 중복된 데이터를 생성하는 것으로부터 insertions과 updates를 막습니다. 
 
-# Read Concern
+## Read Concern
 
 `readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 그 데이터의 LATEST, SAFE, FAST을 고려하여 가져온다. 
 
@@ -48,7 +50,7 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 최신 데이터를 포함하여 저장된 데이터를 가져옵니다.
 
-읽이 연산 시작 이전에 성공적으로 인정된 모든 데이터를 반영한 최시 데이터를 가져옵니다. 결과를 반환하기 전에 모든 replica set에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
+읽ㅅ 연산 시작 이전에 성공적으로 인정된 모든 데이터를 반영한 최시 데이터를 가져옵니다. 결과를 반환하기 전에 모든 replica set에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 
 linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때만 성공적으로 read concern을 보장합니다.
 
@@ -131,5 +133,5 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQ4NjI1ODJdfQ==
+eyJoaXN0b3J5IjpbMTM1OTA3OTM0NF19
 -->
