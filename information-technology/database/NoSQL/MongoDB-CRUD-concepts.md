@@ -51,12 +51,7 @@ replica set의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 
 ![Diagram of a 3 member replica set that consists of a primary and two secondaries.](https://docs.mongodb.com/manual/_images/replica-set-primary-with-two-secondaries.bakedsvg.svg)
 
 클라이언트는 데이터를 secondaries에 쓸 수는 없지만, 읽어 올 수는 있습니다.
-
-
-
-A secondary can become a primary. If the current primary becomes unavailable, the replica set holds an  [election](https://docs.mongodb.com/manual/reference/glossary/#term-election)  to choose which of the secondaries becomes the new primary.
-
-See  [Replica Set Elections](https://docs.mongodb.com/manual/core/replica-set-elections/)  for more details.
+secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습니다.
 
 ## Read Concern(Isolation)
 
@@ -157,10 +152,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNTg1NzcwLC02MjM3NzA3MTIsODA2OD
-c0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcs
-LTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3ND
-Y0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQs
-NzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1OD
-Q4NzE3XX0=
+eyJoaXN0b3J5IjpbNTI5NTIyNjI0LDE1MjU4NTc3MCwtNjIzNz
+cwNzEyLDgwNjg3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5Mywx
+NjczODc0MTA3LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0Mj
+QwNDUsLTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcs
+ODQwNTAzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2Nj
+M1NCwtMTcwNTg0ODcxN119
 -->
