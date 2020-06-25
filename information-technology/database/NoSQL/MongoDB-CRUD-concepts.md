@@ -45,7 +45,7 @@ replica set의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 
 
 ### Secondaries
 
-한 secondary는 primary의 데이터 셋을 복사본을 유지합니다. 복제를 위해서, seco
+한 secondary는 primary의 데이터 셋을 복사본을 유지합니다. 복제를 위해서, secondary는 primary의 oplog에 기록된 연산을 보고 자신의 데이터에 비동기 프로세스를 통해 적용시
 
 maintains a copy of the  [primary’s](https://docs.mongodb.com/manual/reference/glossary/#term-primary)  data set. To replicate data, a secondary applies operations from the primary’s  [oplog](https://docs.mongodb.com/manual/core/replica-set-oplog/)  to its own data set in an asynchronous process.  [[1]](https://docs.mongodb.com/manual/core/replica-set-members/#slow-oplogs)  A replica set can have one or more secondaries.
 
@@ -152,10 +152,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwOTQ3MTU1NywtNjIzNzcwNzEyLDgwNj
-g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
-LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
-Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
-LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNT
-g0ODcxN119
+eyJoaXN0b3J5IjpbLTE5MDE0NzgwMDEsLTYyMzc3MDcxMiw4MD
+Y4NzQxODAsMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEw
+NywtNDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMD
+c0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5
+NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MD
+U4NDg3MTddfQ==
 -->
