@@ -55,6 +55,12 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 ### linearizable
 
+최신 데이터를 포함하여 저장된 데이터를 가져옵니다.
+
+읽이 연산 시작 이전에 
+
+
+
 The query returns data that reflects all successful majority-acknowledged writes that completed prior to the start of the read operation. The query may wait for concurrently executing writes to propagate to a majority of replica set members before returning results.
 
 If a majority of your replica set members crash and restart after the read operation, documents returned by the read operation are durable if  [`writeConcernMajorityJournalDefault`](https://docs.mongodb.com/manual/reference/replica-configuration/#rsconf.writeConcernMajorityJournalDefault "writeConcernMajorityJournalDefault")  is set to the default state of  `true`.
@@ -128,10 +134,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjEwNzgxMywtNjIzNzcwNzEyLDgwNj
-g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
-LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
-Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
-LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNT
-g0ODcxN119
+eyJoaXN0b3J5IjpbNDY1NDEzMjE1LC02MjM3NzA3MTIsODA2OD
+c0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcs
+LTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3ND
+Y0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQs
+NzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1OD
+Q4NzE3XX0=
 -->
