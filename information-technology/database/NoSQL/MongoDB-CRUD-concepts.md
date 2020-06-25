@@ -57,7 +57,7 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 최신 데이터를 포함하여 저장된 데이터를 가져옵니다.
 
-읽이 연산 시작 이전에 
+읽이 연산 시작 이전에 성공적으로 인정된 모든 데이터를 반영한 최시 데이터를 가져옵니다. 결과를 반환하기 전에 모든 replica set에 쓰기 작업을 전파하기 때문에 시간이 걸립니다. 
 
 
 
@@ -134,10 +134,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY1NDEzMjE1LC02MjM3NzA3MTIsODA2OD
-c0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcs
-LTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3ND
-Y0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQs
-NzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1OD
-Q4NzE3XX0=
+eyJoaXN0b3J5IjpbMTYyMTUxMzQ1NiwtNjIzNzcwNzEyLDgwNj
+g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
+LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
+Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
+LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNT
+g0ODcxN119
 -->
