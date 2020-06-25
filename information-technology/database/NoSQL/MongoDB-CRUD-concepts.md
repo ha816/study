@@ -96,7 +96,7 @@ Write Concern이란 MongoDB 가 Client 의 요청으로 데이터를 기록할 �
 
 기본적으로 MongoDB는 Client 가 보낸 데이터를 Primary에 기록하고, 이에 대한 Response를 Client에게 보냅니다. 
 
-만약 위 그림과 같이 Primary 1대와 Secondary 2대로 구성하였을 경우, Client가 보낸 데이터의 Write 처리는 Primary에서 먼저 수행하고, 이후 Secondaries가 
+만약 위 그림과 같이 Primary 1대와 Secondary 2대로 구성하였을 경우, Client가 보낸 데이터의 Write 작업은 Primary에서 먼저 수행하고, 이후 Secondaries가 같은 연산 
 
 이때 눈여겨 봐야 하는 점은 **Primary와 Secondary 간 동기화 되는데 시간차**가 있다는 점이다.
 
@@ -223,7 +223,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTY5Njg3MTQsLTE3NzM3OTA2Miw1Mj
+eyJoaXN0b3J5IjpbLTE5NDMyMDUzOTksLTE3NzM3OTA2Miw1Mj
 k1MjI2MjQsMTUyNTg1NzcwLC02MjM3NzA3MTIsODA2ODc0MTgw
 LDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNz
 c3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5
