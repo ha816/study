@@ -28,7 +28,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ## Read Concern(Isolation)
 
-
+`readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 consistency와  isolation 
 
 The  `readConcern`  option allows you to control the consistency and isolation properties of the data read from replica sets and replica set shards.
 
@@ -99,8 +99,8 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNTQwNTM0OSwtMjEyOTQyNDA0NSwtMj
-A3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5
-OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNz
-A1ODQ4NzE3XX0=
+eyJoaXN0b3J5IjpbLTE5ODExNDExNTQsLTIxMjk0MjQwNDUsLT
+IwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAz
+OTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMT
+cwNTg0ODcxN119
 -->
