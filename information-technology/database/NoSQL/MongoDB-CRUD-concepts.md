@@ -33,7 +33,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 ![](http://postfiles10.naver.net/MjAxODA1MjZfMTYx/MDAxNTI3MzQzMzYwOTIx.UWOcjWVn6qw1XhMrWubt4Kr4BL9yjzqkshcjPVxZWFog._OW_LnzY41867zdVE5h3JpB-Jox1aAtV8jllOsN9SMcg.PNG.ijoos/image.png?type=w773)
 
 
-### Local & Available
+### local & available
 
 가장 최근 데이터를 빠르게 가져오는 Read Concern 입니다. 이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 쓰여졌다는 것을 보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 않을 수 있습니다.
 
@@ -53,7 +53,17 @@ majority는 실패 이벤트에서도, 성공적으로 문서를 가져옵니다
 
 majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger)을 사용해야 합니다.
 
-### 
+### linearizable
+
+The query returns data that reflects all successful majority-acknowledged writes that completed prior to the start of the read operation. The query may wait for concurrently executing writes to propagate to a majority of replica set members before returning results.
+
+If a majority of your replica set members crash and restart after the read operation, documents returned by the read operation are durable if  [`writeConcernMajorityJournalDefault`](https://docs.mongodb.com/manual/reference/replica-configuration/#rsconf.writeConcernMajorityJournalDefault "writeConcernMajorityJournalDefault")  is set to the default state of  `true`.
+
+With  [`writeConcernMajorityJournalDefault`](https://docs.mongodb.com/manual/reference/replica-configuration/#rsconf.writeConcernMajorityJournalDefault "writeConcernMajorityJournalDefault")  set to  `false`, MongoDB does not wait for  [`w:  "majority"`](https://docs.mongodb.com/manual/reference/write-concern/#writeconcern.%22majority%22 ""majority"")  writes to be written to the on-disk journal before acknowledging the writes. As such,  `majority`  write operations could possibly roll back in the event of a transient loss (e.g. crash and restart) of a majority of nodes in a given replica set.
+
+You can specify linearizable read concern for read operations on the  [`primary`](https://docs.mongodb.com/manual/reference/replica-states/#replstate.PRIMARY "PRIMARY")  only.
+
+Linearizable read concern guarantees only apply if read operations specify a query filter that uniquely identifies a single document.
 
 ## Write Concern
 
@@ -118,9 +128,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMzc3MDcxMiw4MDY4NzQxODAsMTI4Mj
-c0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywtNDM3Nzc4MDYs
-LTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMD
-YwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIs
-ODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MDU4NDg3MTddfQ==
+eyJoaXN0b3J5IjpbLTIyNjEwNzgxMywtNjIzNzcwNzEyLDgwNj
+g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
+LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
+Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
+LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNT
+g0ODcxN119
 -->
