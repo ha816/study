@@ -50,11 +50,11 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 최신 데이터를 포함하여 저장된 데이터를 가져옵니다.
 
-읽ㅅ 연산 시작 이전에 성공적으로 인정된 모든 데이터를 반영한 최시 데이터를 가져옵니다. 결과를 반환하기 전에 모든 replica set에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
+읽기 연산 시작 이전에 성공적으로 인정된 모든 데이터를 반영한 최시 데이터를 가져옵니다. 결과를 반환하기 전에 모든 replica set에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 
 linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때만 성공적으로 read concern을 보장합니다.
 
-# Write Concern
+## Write Concern
 
 Write Concern이란 MongoDB 가 Client 의 요청으로 데이터를 기록할 때, 해당 요청에 대한 Response를 어느 시점에 주느냐에 대한 동작 방식을 지정합니다.
 
@@ -92,9 +92,9 @@ wtimeout option
 만약 wtimeout 의 limit 을 넘어가게 되면 실제로 데이터가 Primary에 기록되었다고 해도 error 를 리턴하게 됩니다.
 설정 단위는 milisecond 이다.
 
-# Isolation
+## Isolation
 
-## Read Uncommitted
+### Read Uncommitted
 
 클라이언트는 쓰기 작업의 결과를 read concern에 따라 볼 수 있습니다.
 
@@ -110,7 +110,7 @@ wtimeout option
 Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, replica sets, 그리고 standalone mongd에 적용되어 있습니다. 
 
 
-## Read Uncommitted And Single Document Atomicity
+### Read Uncommitted And Single Document Atomicity
 
 단일 문서에 대해선 쓰기 작업은 원자성을 보장합니다. 이 말은 한 쓰기 작업이 문서의 다수 필드를 수정하고 있다면, 읽기 연산은 아주 일부 필드가 수정된 문서는 보지 못합니다. 
 비록 클라이언트가 일부만 수정된 문서를 볼순 없지만, read uncommitted는 변화 결과
@@ -118,7 +118,7 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 
 만약 standalone 	구성을 하고 있다면, 한 문서에 대한 읽기와 쓰기 작업은 serializable합니다. replica set을 구성하고 있다면, 한 문서에 대한 읽기와 쓰기 작업들은 rollback이 없는 경우만 serializable이 됩니다. 
 
-## Read Uncommitted And Multiple Document Write
+### Read Uncommitted And Multiple Document Write
 
 한 쓰기 작업이 많은 문서를 수정할때, 각 문서의 수정은 원자성이 보장됩니다. 그러나 전체 연산은 원자성이 보장되지 않습니다.
 
@@ -130,8 +130,7 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 > 대부분의 multi-document transaction은 굉장히 나쁜 성능을 보이고, 좋은 스키마 디자인을 대체할 수는 없습니다. 좋은 스키마 또는 모델링을 통해서 최대한 multi-document transaction 사용을 줄이도록 합시다. 
 
 
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1OTA3OTM0NF19
+eyJoaXN0b3J5IjpbLTY4MTQ4MTQwOF19
 -->
