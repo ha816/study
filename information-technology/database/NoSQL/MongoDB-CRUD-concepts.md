@@ -107,15 +107,9 @@ Write 작업을 Primary에서 먼저 수행하고, 이후 Secondaries가 같은 
 
 ![](https://k.kakaocdn.net/dn/daSduH/btqvErfiQPr/YnveydIHjt1YdgInTK1VxK/img.png)
 
-Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리한 이후 바로 Client 에게 response 를 보내는 것이 아니라 Secondary 쪽으로 데이터를 동기화 작업을 완료한 이후에 Client 에게 response 를 보내게 된다.**
+Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리한 이후 바로 Client 에게 response 를 보내는 것이 아니라 Secondary 쪽으로 데이터를 동기화 작업을 완료한 이후에 Client 에게 response 를 보내게 된다.** 이렇게 되면 Client 와 Primary, Secondary 간에 데이터 일관성을 유지할 수 있게 된다.
 
-이렇게 되면 Client 와 Primary, Secondary 간에 데이터 일관성을 유지할 수 있게 된다.
-
-### Write Concern 옵션
-
-Write Concern 을 지정하는데는 크게 w / j / wtimeout 을 설정 할수 있는데 자세한 내용은 아래와 같다.
-
-**1) w option**
+Write Concern 을 지정하는데는 크게 w / j / wtimeout options를 설정 할 수 있습니다.
 
 w 를 설정하게 되면, ReplicaSet 에 속한 멤버중 지정된 수만큼의 멤버에게 데이터 쓰기가 완료되었는지 확인한다.
 
@@ -196,7 +190,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4OTk0NTU1NywxNDQxNTI5OTUzLC0xOT
+eyJoaXN0b3J5IjpbLTQ4NDMyMTU0OSwxNDQxNTI5OTUzLC0xOT
 U3MTQyMjIzLC0xOTQzMjA1Mzk5LC0xNzczNzkwNjIsNTI5NTIy
 NjI0LDE1MjU4NTc3MCwtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMj
 gyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3Nzgw
