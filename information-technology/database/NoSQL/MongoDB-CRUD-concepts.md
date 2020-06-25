@@ -59,10 +59,6 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 읽이 연산 시작 이전에 성공적으로 인정된 모든 데이터를 반영한 최시 데이터를 가져옵니다. 결과를 반환하기 전에 모든 replica set에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 
-If a majority of your replica set members crash and restart after the read operation, documents returned by the read operation are durable if  [`writeConcernMajorityJournalDefault`](https://docs.mongodb.com/manual/reference/replica-configuration/#rsconf.writeConcernMajorityJournalDefault "writeConcernMajorityJournalDefault")  is set to the default state of  `true`.
-
-With  [`writeConcernMajorityJournalDefault`](https://docs.mongodb.com/manual/reference/replica-configuration/#rsconf.writeConcernMajorityJournalDefault "writeConcernMajorityJournalDefault")  set to  `false`, MongoDB does not wait for  [`w:  "majority"`](https://docs.mongodb.com/manual/reference/write-concern/#writeconcern.%22majority%22 ""majority"")  writes to be written to the on-disk journal before acknowledging the writes. As such,  `majority`  write operations could possibly roll back in the event of a transient loss (e.g. crash and restart) of a majority of nodes in a given replica set.
-
 You can specify linearizable read concern for read operations on the  [`primary`](https://docs.mongodb.com/manual/reference/replica-states/#replstate.PRIMARY "PRIMARY")  only.
 
 Linearizable read concern guarantees only apply if read operations specify a query filter that uniquely identifies a single document.
@@ -130,10 +126,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2OTQ3OTY2OCwtNjIzNzcwNzEyLDgwNj
-g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
-LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
-Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
-LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNT
-g0ODcxN119
+eyJoaXN0b3J5IjpbNzgwODgyNzYxLC02MjM3NzA3MTIsODA2OD
+c0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcs
+LTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3ND
+Y0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQs
+NzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1OD
+Q4NzE3XX0=
 -->
