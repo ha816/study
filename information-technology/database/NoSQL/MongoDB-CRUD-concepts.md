@@ -36,18 +36,8 @@ Write Concern(쓰기 고려사항)은 쓰기 작업을 단일 mongd, replica set
 
 * w는 쓰기 연산이 특정 수의 mongod 객체에 전파되기를 바란다는 요청 옵션
 * j는 쓰기 연산이 디스크 저널에 쓰기를 바란다는 옵션
-* 
+* wtimeout은 다른 쓰기 연산을 막는 제한시간을 지정하는 옵션
 
-
-
-
-
--   the  [w](https://docs.mongodb.com/manual/reference/write-concern/#wc-w)  option to request acknowledgment that the write operation has propagated to a specified number of  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  instances or to  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  instances with specified tags.
--   the  [j](https://docs.mongodb.com/manual/reference/write-concern/#wc-j)  option to request acknowledgment that the write operation has been written to the on-disk journal, and
--   the  [wtimeout](https://docs.mongodb.com/manual/reference/write-concern/#wc-wtimeout)  option to specify a time limit to prevent write operations from blocking indefinitely.
-
-
-Write concern describes the level of acknowledgment requested from MongoDB for write operations to a standalone [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod") or to [replica sets](https://docs.mongodb.com/manual/replication/) or to [sharded clusters](https://docs.mongodb.com/manual/sharding/). In sharded clusters, [`mongos`](https://docs.mongodb.com/manual/reference/program/mongos/#bin.mongos "bin.mongos") instances will pass the write concern on to the shards.
 
 ## Isolation Guarantees
 
@@ -100,7 +90,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3OTU5OTMwLC0yMDYwODQ4MDMwLDUyNT
-UxMTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIw
-MTkzNjYzNTQsLTE3MDU4NDg3MTddfQ==
+eyJoaXN0b3J5IjpbLTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNT
+I1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEs
+MjAxOTM2NjM1NCwtMTcwNTg0ODcxN119
 -->
