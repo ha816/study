@@ -28,7 +28,9 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ## Read Concern(Isolation)
 
-`readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 consistency와  isolation을 컨트롤 하도록 합니다. 
+`readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 그 데이터의 LATEST
+
+![](http://postfiles10.naver.net/MjAxODA1MjZfMTYx/MDAxNTI3MzQzMzYwOTIx.UWOcjWVn6qw1XhMrWubt4Kr4BL9yjzqkshcjPVxZWFog._OW_LnzY41867zdVE5h3JpB-Jox1aAtV8jllOsN9SMcg.PNG.ijoos/image.png?type=w773)
 
 
 ### Local
@@ -135,9 +137,9 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNz
-c3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5
-OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3ND
-kyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1ODQ4NzE3
-XX0=
+eyJoaXN0b3J5IjpbLTU0NTI0MTUyOSw4NTIwMjUyOTMsMTY3Mz
+g3NDEwNywtNDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1
+LC0yMDc0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MD
+UwMzk5NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQs
+LTE3MDU4NDg3MTddfQ==
 -->
