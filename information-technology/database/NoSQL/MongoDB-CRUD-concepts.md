@@ -24,27 +24,13 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 동시성 제어는 다수의 애플리케이션이 동시 수행될때 데이터 불이치 또는 충돌이 없도록 보장합니다. 
 이를 위해 MongoDB의 접근법은 unique한 값만을 가질 수 있는 unique 인덱스 필드를 만드는 것입니다. 인덱스 필드는 중복된 데이터를 생성하는 것으로부터 insertions과 updates를 막습니다. 
 
--   [Atomicity and Transactions](https://docs.mongodb.com/manual/core/write-operations-atomicity/)
--   [Read Isolation, Consistency, and Recency](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/)
--   [Distributed Queries](https://docs.mongodb.com/manual/core/distributed-queries/)
--   [Linearizable Reads via findAndModify](https://docs.mongodb.com/manual/tutorial/perform-findAndModify-linearizable-reads/)
-
-Query Plan, Performance, and Analysis
-
--   [Query Plans](https://docs.mongodb.com/manual/core/query-plans/)
--   [Query Optimization](https://docs.mongodb.com/manual/core/query-optimization/)
--   [Analyze Query Performance](https://docs.mongodb.com/manual/tutorial/analyze-query-plan/)
--   [Write Operation Performance](https://docs.mongodb.com/manual/core/write-performance/)
-
-Miscellaneous
-
--   [Tailable Cursors](https://docs.mongodb.com/manual/core/tailable-cursors/)
+# Read Isolation
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNTY1MjUyMCw4NDA1MDM5OTQsNzQ3ND
-kyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1ODQ4NzE3
-XX0=
+eyJoaXN0b3J5IjpbLTE4NTg1NDExMzUsODQwNTAzOTk0LDc0Nz
+Q5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNTg0ODcx
+N119
 -->
