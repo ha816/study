@@ -28,6 +28,8 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ## Replica set 
 
+replica set은 mongd 프로세스들의 집합입니다. 또 각 mongd 프로세스는 
+
 A  _replica set_  in MongoDB is a group of  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  processes that provide redundancy and high availability. The members of a replica set are:
 
 [Primary](https://docs.mongodb.com/manual/core/replica-set-members/#replica-set-primary-member).
@@ -137,7 +139,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MDQyNzI3MywtNjIzNzcwNzEyLDgwNj
+eyJoaXN0b3J5IjpbMjEyMDk2ODQ5NSwtNjIzNzcwNzEyLDgwNj
 g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
 LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
 Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
