@@ -114,9 +114,10 @@ wtimeout option
 
 Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, replica sets, 그리고 standalone mongd에 적용되어 있습니다. 
 
-Read uncommitted is the default isolation level and applies to  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  standalone instances as well as to replica sets and sharded clusters.
 
-## Read Uncommitted And Single Document Atomicity[](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#read-uncommitted-and-single-document-atomicity "Permalink to this headline")
+## Read Uncommitted And Single Document Atomicity
+
+단일 문서에 대해선 쓰기 작업은 원자성을 보장합니다. 
 
 Write operations are atomic with respect to a single document; i.e. if a write is updating multiple fields in the document, a read operation will never see the document with only some of the fields updated. However, although a client may not see a  _partially_  updated document, read uncommitted means that concurrent read operations may still see the updated document before the changes are made  [durable](https://docs.mongodb.com/manual/reference/glossary/#term-durable).
 
@@ -149,11 +150,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMjIwNTkzMSwtMTI2Njk0NjcyOSwtMT
-YwODM3MzQyNywxNDQxNTI5OTUzLC0xOTU3MTQyMjIzLC0xOTQz
-MjA1Mzk5LC0xNzczNzkwNjIsNTI5NTIyNjI0LDE1MjU4NTc3MC
-wtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAy
-NTI5MywxNjczODc0MTA3LC00Mzc3NzgwNiwtNjAwNzYxNDcsLT
-IxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1
-NTExNzddfQ==
+eyJoaXN0b3J5IjpbMjQ3ODE3NTYxLC0xMjY2OTQ2NzI5LC0xNj
+A4MzczNDI3LDE0NDE1Mjk5NTMsLTE5NTcxNDIyMjMsLTE5NDMy
+MDUzOTksLTE3NzM3OTA2Miw1Mjk1MjI2MjQsMTUyNTg1NzcwLC
+02MjM3NzA3MTIsODA2ODc0MTgwLDEyODI3NDkwNDYsODUyMDI1
+MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2LC02MDA3NjE0NywtMj
+EyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1
+MTE3N119
 -->
