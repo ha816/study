@@ -41,18 +41,19 @@ local 레벨의 Read Concern입니다.
 
 즉, local은 causally consistent sessions과 transactions이 있든지 없든지 사용이 가능합니다.
 
+### Availability
+
+The query returns data from the instance with no guarantee that the data has been written to a majority of the replica set members (i.e. may be rolled back).
+
+**Default for:**  reads against secondaries if the reads are  **not**  associated with  [causally consistent sessions](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#sessions).
+
+**Availability:**  Read concern  `available`  is  **unavailable for use**  with causally consistent sessions and transactions.
+
+For sharded clusters,  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern provides the lowest latency reads possible among the various read concerns. However, this comes at the expense of consistency as  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern can return  [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document)  when reading from a sharded collection. To avoid the risk of returning orphaned documents when reading from sharded collections, use a different read concern such as read concern  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"").
+
+For more information, see the  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  reference page.
 
     
-    NOTE
-    
-    Causally consistent client sessions only guarantee causal consistency if the associated read operations use  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority"")  read concern and the associated write operations use  [`"majority"`](https://docs.mongodb.com/manual/reference/write-concern/#writeconcern.%22majority%22 ""majority"")  write concern.
-    
-
-**Availability:**  Read concern  `local`  is available for use with or without causally consistent sessions and transactions.
-
-For more information, see the  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  reference page.
-
-
 
 
 ## Write Concern
@@ -118,8 +119,8 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODA0MTkyMTYsLTYwMDc2MTQ3LC0yMT
-I5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUx
-MTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIwMT
-kzNjYzNTQsLTE3MDU4NDg3MTddfQ==
+eyJoaXN0b3J5IjpbMjAzMTA3MDM1MywtNjAwNzYxNDcsLTIxMj
+k0MjQwNDUsLTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTEx
+NzcsODQwNTAzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOT
+M2NjM1NCwtMTcwNTg0ODcxN119
 -->
