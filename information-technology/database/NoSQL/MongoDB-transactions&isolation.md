@@ -1,7 +1,3 @@
-# Overview
-
-CRUD 명령과 관련된 주요 성질을 알아보자. 
-
 # Atomicity
 
 MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성을 보장합니다. 심지어 단일 문서안의 다수의 중첩된 문서에 대한 수정 연산자에 대해서도 보장합니다.  
@@ -94,7 +90,7 @@ wtimeout option
 만약 wtimeout 의 limit 을 넘어가게 되면 실제로 데이터가 Primary에 기록되었다고 해도 error 를 리턴하게 됩니다.
 설정 단위는 milisecond 이다.
 
-# Isolation Guarantees
+# Isolation
 
 ## Read Uncommitted
 
@@ -135,5 +131,5 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNDMxNjU2XX0=
+eyJoaXN0b3J5IjpbLTE5ODQ4NjI1ODJdfQ==
 -->
