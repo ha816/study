@@ -129,8 +129,6 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 > 주의사항
 > 대부분의 multi-document transaction은 굉장히 나쁜 성능을 보이고, 좋은 스키마 디자인을 대체할 수는 없습니다. 좋은 스키마 또는 모델링을 통해서 최대한 multi-document transaction 사용을 줄이도록 합시다. 
 
-
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MTQ4MTQwOF19
+eyJoaXN0b3J5IjpbLTEzNDc2NjY5OF19
 -->
