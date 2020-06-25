@@ -10,7 +10,7 @@ MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성을 보장�
 
 단일 쓰기 연산이 다수의 문서를 수정할때, 각 문서에 대한 수정은 원자성을 보장합니다. 하지만 **연산 전체가 원자성을 보장하진 않습니다.**
 
-다수 문서에 대한 쓰기 작업을 수행할때, 단일 또는 다수 쓰기 모든 연산이든지, 다른 연산이 교차로 배치될 수 있다
+다수 문서에 대한 쓰기 작업을 수행할때, 단일 또는 다수 쓰기 모든 연산이든지, 다른 연산이 교차로 배치될 수 있다. (
 
 
 When performing multi-document write operations, whether through a single write operation or multiple write operations, other operations may interleave.
@@ -58,5 +58,5 @@ Miscellaneous
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI3OTkyMzczLC0xNzA1ODQ4NzE3XX0=
+eyJoaXN0b3J5IjpbOTg0MzUzMzE1LC0xNzA1ODQ4NzE3XX0=
 -->
