@@ -24,41 +24,13 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 동시성 제어는 다수의 애플리케이션이 동시 수행될때 데이터 불이치 또는 충돌이 없도록 보장합니다. 
 이를 위해 MongoDB의 접근법은 unique한 값만을 가질 수 있는 unique 인덱스 필드를 만드는 것입니다. 인덱스 필드는 중복된 데이터를 생성하는 것으로부터 insertions과 updates를 막습니다. 
 
-# Isolation
+# Isolation Guarantees
 
-## Replica set 
-
-replica set은 mongd 프로세스들의 집합입니다. 또 각 mongd 프로세스는 아래 두 역할군으로 나뉘어 집니다. 
-
-### Primary
-
-Primary는 replica set에서 쓰기 연산을 받는 유일한 구성원 입니다. (마치 MySQL 리플리케이션 Master의 역할과 비슷합니다.)
-
-MongoDB는 쓰기 작업을 primary에게 적용하고 그 연산을 primary's oplog(operation log)에 남깁니다. Secondaries에 구성원은 이 로그를 복사하여 그들의 데이터 셋에 그 연산을 그대로 적용합니다. 
-
-아래 replica set에는 세 구성원이 있습니다. 
-![Diagram of default routing of reads and writes to the primary. — Enlarged](https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg)
-
-replica set의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 기본적으로, 딱 하나의 application만 primary 구성원에게 읽기 연산을 줄 수 있습니다. 
-
-한 replica set에는 최대한 한개의 primary를 가질 수 있습니다. 만약 현재 primary가 이용 불가상태가 되면, 투표를 통해서 새로운 primary를 뽑습니다.
-
-### Secondaries
-
-한 secondary는 primary의 데이터 셋을 복사본을 유지합니다. 복제를 위해서, secondary는 primary oplog에 기록된 연산을 보고 자신의 데이터에 비동기 프로세스를 통해 적용합니다. 
-
-하나의 replica set은 1개 이상의 secondaries를 가질 수 있습니다. ㅋㅌ
-![Diagram of a 3 member replica set that consists of a primary and two secondaries.](https://docs.mongodb.com/manual/_images/replica-set-primary-with-two-secondaries.bakedsvg.svg)
-
-클라이언트는 데이터를 secondaries에 쓸 수는 없지만, 읽어 올 수는 있습니다.
-secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습니다.
-
-## Read Concern(Isolation)
+## Read Concern
 
 `readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 그 데이터의 LATEST, SAFE, FAST을 고려하여 가져온다. 
 
 ![](http://postfiles10.naver.net/MjAxODA1MjZfMTYx/MDAxNTI3MzQzMzYwOTIx.UWOcjWVn6qw1XhMrWubt4Kr4BL9yjzqkshcjPVxZWFog._OW_LnzY41867zdVE5h3JpB-Jox1aAtV8jllOsN9SMcg.PNG.ijoos/image.png?type=w773)
-
 
 ### local & available
 
@@ -179,11 +151,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg1MDA2MTE1LDE0NDE1Mjk5NTMsLTE5NT
-cxNDIyMjMsLTE5NDMyMDUzOTksLTE3NzM3OTA2Miw1Mjk1MjI2
-MjQsMTUyNTg1NzcwLC02MjM3NzA3MTIsODA2ODc0MTgwLDEyOD
-I3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2
-LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMj
-A2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUy
-XX0=
+eyJoaXN0b3J5IjpbLTI0ODU3NjQ1NywxNDQxNTI5OTUzLC0xOT
+U3MTQyMjIzLC0xOTQzMjA1Mzk5LC0xNzczNzkwNjIsNTI5NTIy
+NjI0LDE1MjU4NTc3MCwtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMj
+gyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3Nzgw
+NiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLT
+IwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1
+Ml19
 -->
