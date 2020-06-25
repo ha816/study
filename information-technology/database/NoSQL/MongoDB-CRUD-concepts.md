@@ -131,13 +131,8 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 
 다수의 문서에 대해서 읽기와 쓰기 원자성 보장이 필요할때, MongoDB는 다수 문서 트랜잭션을 지원합니다. 
 
-
--   **In version 4.0**, MongoDB supports multi-document transactions on replica sets.
--   **In version 4.2**, MongoDB introduces distributed transactions, which adds support for multi-document transactions on sharded clusters and incorporates the existing support for multi-document transactions on replica sets.
-
-For details regarding transactions in MongoDB, see the  [Transactions](https://docs.mongodb.com/manual/core/transactions/)  page.
-
-IMPORTANT
+> 주의사항
+> 대부분의 multi-document transaction은 
 
 In most cases, multi-document transaction incurs a greater performance cost over single document writes, and the availability of multi-document transactions should not be a replacement for effective schema design. For many scenarios, the  [denormalized data model (embedded documents and arrays)](https://docs.mongodb.com/manual/core/data-model-design/#data-modeling-embedding)  will continue to be optimal for your data and use cases. That is, for many scenarios, modeling your data appropriately will minimize the need for multi-document transactions.
 
@@ -151,11 +146,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzYzNDg4OTAsNzc3MDgxMTQzLDE3Mz
-kyOTgxNDYsLTE1MzgzOTAxNDcsMjQ3ODE3NTYxLC0xMjY2OTQ2
-NzI5LC0xNjA4MzczNDI3LDE0NDE1Mjk5NTMsLTE5NTcxNDIyMj
-MsLTE5NDMyMDUzOTksLTE3NzM3OTA2Miw1Mjk1MjI2MjQsMTUy
-NTg1NzcwLC02MjM3NzA3MTIsODA2ODc0MTgwLDEyODI3NDkwND
-YsODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2LC02MDA3
-NjE0N119
+eyJoaXN0b3J5IjpbMTk3MTQyMTQwNiw3NzcwODExNDMsMTczOT
+I5ODE0NiwtMTUzODM5MDE0NywyNDc4MTc1NjEsLTEyNjY5NDY3
+MjksLTE2MDgzNzM0MjcsMTQ0MTUyOTk1MywtMTk1NzE0MjIyMy
+wtMTk0MzIwNTM5OSwtMTc3Mzc5MDYyLDUyOTUyMjYyNCwxNTI1
+ODU3NzAsLTYyMzc3MDcxMiw4MDY4NzQxODAsMTI4Mjc0OTA0Ni
+w4NTIwMjUyOTMsMTY3Mzg3NDEwNywtNDM3Nzc4MDYsLTYwMDc2
+MTQ3XX0=
 -->
