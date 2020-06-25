@@ -105,7 +105,7 @@ wtimeout option
 
 * local 또는 available을 쓰는 경우, 쓰기 작업이 완료되지 않았어도 write concern과는 관계 없이 결과를 받을 수 있습니다. 이 결과는 replica set failovers 중인 잘못된 데이터 일수도 있습니다. 
 
-[multi-document transaction](https://docs.mongodb.com/manual/core/transactions/)
+[multi-document transaction](https://docs.mongodb.com/manual/core/transactions/)의 
 
 For operations in a  [multi-document transaction](https://docs.mongodb.com/manual/core/transactions/), when a transaction commits, all data changes made in the transaction are saved and visible outside the transaction. That is, a transaction will not commit some of its changes while rolling back others.
 
@@ -148,7 +148,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3ODUxOTMyMSwtMTYwODM3MzQyNywxND
+eyJoaXN0b3J5IjpbLTgzNTIzODI4OSwtMTYwODM3MzQyNywxND
 QxNTI5OTUzLC0xOTU3MTQyMjIzLC0xOTQzMjA1Mzk5LC0xNzcz
 NzkwNjIsNTI5NTIyNjI0LDE1MjU4NTc3MCwtNjIzNzcwNzEyLD
 gwNjg3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0
