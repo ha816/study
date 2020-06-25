@@ -30,12 +30,20 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 replica set은 mongd 프로세스들의 집합입니다. 또 각 mongd 프로세스는 아래 두 역할군으로 나뉘어 집니다. 
 
+### Primary
+
+Primary는 replica set에서 
+모든 쓰기 연산을 받습니다. 
+
+The primary is the only member in the replica set that receives write operations. MongoDB applies write operations on the  [primary](https://docs.mongodb.com/manual/reference/glossary/#term-primary)  and then records the operations on the primary’s  [oplog](https://docs.mongodb.com/manual/core/replica-set-oplog/).  [Secondary](https://docs.mongodb.com/manual/core/replica-set-members/#replica-set-secondary-members)  members replicate this log and apply the operations to their data sets.
+
+In the following three-member replica set, the primary accepts all write operations. Then the secondaries replicate the oplog to apply to their data sets.
+
 Primary 
-: 모든 쓰기 연산을 받습니다. 
+: 
 
 Secondaries
-: primary와 동일한 데이터 셋을 유지하기위해 primary의 연산자들을 복제합니다. 
-Secondaries replicate operations from the primary to maintain an identical data set. Secondaries may have additional configurations for special usage profiles. For example, secondaries may be  [non-voting](https://docs.mongodb.com/manual/core/replica-set-elections/#replica-set-non-voting-members)  or  [priority 0](https://docs.mongodb.com/manual/core/replica-set-priority-0-member/#replica-set-secondary-only-members).
+: primary와 동일한 데이터 셋을 유지하기 위해 primary의 연산자들을 복제합니다. 
 
 ## Read Concern(Isolation)
 
@@ -136,10 +144,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyODE4MzI4OSwtNjIzNzcwNzEyLDgwNj
-g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
-LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
-Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
-LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNT
-g0ODcxN119
+eyJoaXN0b3J5IjpbLTYyODY4MDk4LC02MjM3NzA3MTIsODA2OD
+c0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcs
+LTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3ND
+Y0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQs
+NzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1OD
+Q4NzE3XX0=
 -->
