@@ -33,9 +33,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 ![](http://postfiles10.naver.net/MjAxODA1MjZfMTYx/MDAxNTI3MzQzMzYwOTIx.UWOcjWVn6qw1XhMrWubt4Kr4BL9yjzqkshcjPVxZWFog._OW_LnzY41867zdVE5h3JpB-Jox1aAtV8jllOsN9SMcg.PNG.ijoos/image.png?type=w773)
 
 
-### Local
-
-local 레벨의 Read Concern입니다. 
+### Local & Available
 
 이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 쓰여졌다는 것을 보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 않을 수 있습니다.
 
@@ -45,7 +43,6 @@ local 레벨의 Read Concern입니다.
 
 ### Available
 
-이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 쓰여졌다는 것을 보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 않을 수 있습니다.
 
 
 기본적으로 읽기가 causally consistent sessions와 연관이 없으면 secondaries에서 읽습니다.
@@ -137,9 +134,9 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzY1ODA5NDgsODUyMDI1MjkzLDE2Nz
-M4NzQxMDcsLTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0
-NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4ND
-A1MDM5OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0
-LC0xNzA1ODQ4NzE3XX0=
+eyJoaXN0b3J5IjpbMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mz
+g3NDEwNywtNDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1
+LC0yMDc0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MD
+UwMzk5NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQs
+LTE3MDU4NDg3MTddfQ==
 -->
