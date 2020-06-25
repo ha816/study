@@ -52,10 +52,12 @@ local 레벨의 Read Concern입니다.
 
 샤딩된 클러스터에선
 
-For sharded clusters, `"available"` 을 사용하면 다양한 read concerns 중에서 가장 낮은 레이턴시 읽기가 
+For sharded clusters, `"available"` 을 사용하면 다양한 read concerns 중에서 가장 낮은 레이턴시를 제공합니다. 그러나 샤딩된 컬렉션을 읽는 과정에서 
 
 
-read concern provides the lowest latency reads possible among the various read concerns. However, this comes at the expense of consistency as [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"") read concern can return [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) when reading from a sharded collection. To avoid the risk of returning orphaned documents when reading from sharded collections, use a different read concern such as read concern [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"").
+read concern provides the lowest latency reads possible among the various read concerns. However, this comes at the expense of consistency as [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"") read concern can return [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) when reading from a sharded collection. 
+
+To avoid the risk of returning orphaned documents when reading from sharded collections, use a different read concern such as read concern [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"").
 
 
 
@@ -122,7 +124,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTAzMzA2MjQsLTQzNzc3ODA2LC02MD
+eyJoaXN0b3J5IjpbLTEyMjA4NDE1OTEsLTQzNzc3ODA2LC02MD
 A3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0
 ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUyLDg4Nz
 g0ODM4MSwyMDE5MzY2MzU0LC0xNzA1ODQ4NzE3XX0=
