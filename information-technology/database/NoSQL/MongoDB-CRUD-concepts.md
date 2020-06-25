@@ -34,12 +34,12 @@ replica set은 mongd 프로세스들의 집합입니다. 또 각 mongd 프로세
 
 Primary는 replica set에서 쓰기 연산을 받는 유일한 구성원 입니다. (마치 MySQL 리플리케이션 Master의 역할과 비슷합니다.)
 
-MongoDB는 쓰기 작업을 primary에게 적용하고 그 연산을 primary's oplog(operation log)에 남깁니다.
+MongoDB는 쓰기 작업을 primary에게 적용하고 그 연산을 primary's oplog(operation log)에 남깁니다. Secondaries에 구성원은 이 로그를 복사하여 그들의 데이터 셋에 그 연산을 그대로 적용합니다. 
 
-
-The primary is the only member in the replica set that receives write operations. MongoDB applies write operations on the  [primary](https://docs.mongodb.com/manual/reference/glossary/#term-primary)  and then records the operations on the primary’s  [oplog](https://docs.mongodb.com/manual/core/replica-set-oplog/).  [Secondary](https://docs.mongodb.com/manual/core/replica-set-members/#replica-set-secondary-members)  members replicate this log and apply the operations to their data sets.
-
+아래 replica set에는 세 구성원이 있습니다. 
 In the following three-member replica set, the primary accepts all write operations. Then the secondaries replicate the oplog to apply to their data sets.
+
+![Diagram of default routing of reads and writes to the primary. — Enlarged](https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg)
 
 Primary 
 : 
@@ -146,10 +146,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDg5MjUwNTUsLTYyMzc3MDcxMiw4MD
-Y4NzQxODAsMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEw
-NywtNDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMD
-c0NjQ3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5
-NCw3NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MD
-U4NDg3MTddfQ==
+eyJoaXN0b3J5IjpbNDgwODEwNzUwLC02MjM3NzA3MTIsODA2OD
+c0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcs
+LTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3ND
+Y0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQs
+NzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1OD
+Q4NzE3XX0=
 -->
