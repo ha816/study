@@ -45,9 +45,13 @@ replica set의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 
 
 ### Secondaries
 
-A secondary maintains a copy of the  [primary’s](https://docs.mongodb.com/manual/reference/glossary/#term-primary)  data set. To replicate data, a secondary applies operations from the primary’s  [oplog](https://docs.mongodb.com/manual/core/replica-set-oplog/)  to its own data set in an asynchronous process.  [[1]](https://docs.mongodb.com/manual/core/replica-set-members/#slow-oplogs)  A replica set can have one or more secondaries.
+한 secondary는 primary의 데이터 셋을 복사본을 유지합니다. 복제를 위해서, seco
+
+maintains a copy of the  [primary’s](https://docs.mongodb.com/manual/reference/glossary/#term-primary)  data set. To replicate data, a secondary applies operations from the primary’s  [oplog](https://docs.mongodb.com/manual/core/replica-set-oplog/)  to its own data set in an asynchronous process.  [[1]](https://docs.mongodb.com/manual/core/replica-set-members/#slow-oplogs)  A replica set can have one or more secondaries.
 
 The following three-member replica set has two secondary members. The secondaries replicate the primary’s oplog and apply the operations to their data sets.
+
+![Diagram of a 3 member replica set that consists of a primary and two secondaries.](https://docs.mongodb.com/manual/_images/replica-set-primary-with-two-secondaries.bakedsvg.svg)
 
 ## Read Concern(Isolation)
 
@@ -148,10 +152,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMjQwODc5LC02MjM3NzA3MTIsODA2OD
-c0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcs
-LTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3ND
-Y0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5OTQs
-NzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNzA1OD
-Q4NzE3XX0=
+eyJoaXN0b3J5IjpbLTcwOTQ3MTU1NywtNjIzNzcwNzEyLDgwNj
+g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
+LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
+Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
+LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNT
+g0ODcxN119
 -->
