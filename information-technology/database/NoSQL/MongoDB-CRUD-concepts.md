@@ -26,11 +26,57 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 # Read Isolation
 
+## Isolation Guarantees
 
+### Read Uncommitted[](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#read-uncommitted "Permalink to this headline")
+
+Depending on the read concern, clients can see the results of writes before the writes are  [durable](https://docs.mongodb.com/manual/reference/glossary/#term-durable):
+
+-   Regardless of a write’s  [write concern](https://docs.mongodb.com/manual/reference/write-concern/), other clients using  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  or  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern can see the result of a write operation before the write operation is acknowledged to the issuing client.
+-   Clients using  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  or  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern can read data which may be subsequently  [rolled back](https://docs.mongodb.com/manual/core/replica-set-rollbacks/)  during replica set failovers.
+
+For operations in a  [multi-document transaction](https://docs.mongodb.com/manual/core/transactions/), when a transaction commits, all data changes made in the transaction are saved and visible outside the transaction. That is, a transaction will not commit some of its changes while rolling back others.
+
+Until a transaction commits, the data changes made in the transaction are not visible outside the transaction.
+
+However, when a transaction writes to multiple shards, not all outside read operations need to wait for the result of the committed transaction to be visible across the shards. For example, if a transaction is committed and write 1 is visible on shard A but write 2 is not yet visible on shard B, an outside read at read concern  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  can read the results of write 1 without seeing write 2.
+
+Read uncommitted is the default isolation level and applies to  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  standalone instances as well as to replica sets and sharded clusters.
+
+### Read Uncommitted And Single Document Atomicity[](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#read-uncommitted-and-single-document-atomicity "Permalink to this headline")
+
+Write operations are atomic with respect to a single document; i.e. if a write is updating multiple fields in the document, a read operation will never see the document with only some of the fields updated. However, although a client may not see a  _partially_  updated document, read uncommitted means that concurrent read operations may still see the updated document before the changes are made  [durable](https://docs.mongodb.com/manual/reference/glossary/#term-durable).
+
+With a standalone  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  instance, a set of read and write operations to a single document is serializable. With a replica set, a set of read and write operations to a single document is serializable  _only_  in the absence of a rollback.
+
+### Read Uncommitted And Multiple Document Write[](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#read-uncommitted-and-multiple-document-write "Permalink to this headline")
+
+When a single write operation (e.g.  [`db.collection.updateMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany()")) modifies multiple documents, the modification of each document is atomic, but the operation as a whole is not atomic.
+
+When performing multi-document write operations, whether through a single write operation or multiple write operations, other operations may interleave.
+
+For situations that require atomicity of reads and writes to multiple documents (in a single or multiple collections), MongoDB supports multi-document transactions:
+
+-   **In version 4.0**, MongoDB supports multi-document transactions on replica sets.
+-   **In version 4.2**, MongoDB introduces distributed transactions, which adds support for multi-document transactions on sharded clusters and incorporates the existing support for multi-document transactions on replica sets.
+
+For details regarding transactions in MongoDB, see the  [Transactions](https://docs.mongodb.com/manual/core/transactions/)  page.
+
+IMPORTANT
+
+In most cases, multi-document transaction incurs a greater performance cost over single document writes, and the availability of multi-document transactions should not be a replacement for effective schema design. For many scenarios, the  [denormalized data model (embedded documents and arrays)](https://docs.mongodb.com/manual/core/data-model-design/#data-modeling-embedding)  will continue to be optimal for your data and use cases. That is, for many scenarios, modeling your data appropriately will minimize the need for multi-document transactions.
+
+For additional transactions usage considerations (such as runtime limit and oplog size limit), see also  [Production Considerations](https://docs.mongodb.com/manual/core/transactions-production-consideration/).
+
+Without isolating the multi-document write operations, MongoDB exhibits the following behavior:
+
+1.  Non-point-in-time read operations. Suppose a read operation begins at time  _t_1  and starts reading documents. A write operation then commits an update to one of the documents at some later time  _t_2. The reader may see the updated version of the document, and therefore does not see a point-in-time snapshot of the data.
+2.  Non-serializable operations. Suppose a read operation reads a document  _d_1  at time  _t_1  and a write operation updates  _d_1  at some later time  _t_3. This introduces a read-write dependency such that, if the operations were to be serialized, the read operation must precede the write operation. But also suppose that the write operation updates document  _d_2  at time  _t_2  and the read operation subsequently reads  _d_2  at some later time  _t_4. This introduces a write-read dependency which would instead require the read operation to come  _after_  the write operation in a serializable schedule. There is a dependency cycle which makes serializability impossible.
+3.  Reads may miss matching documents that are updated during the course of the read operation.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTg1NDExMzUsODQwNTAzOTk0LDc0Nz
-Q5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNTg0ODcx
-N119
+eyJoaXN0b3J5IjpbMjUwNzU1NjM3LDg0MDUwMzk5NCw3NDc0OT
+IxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MDU4NDg3MTdd
+fQ==
 -->
