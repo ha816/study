@@ -127,6 +127,11 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 
 한 쓰기 작업이 많은 문서를 수정할때, 각 문서의 수정은 원자성이 보장됩니다. 그러나 전체 연산은 원자성이 보장되지 않습니다.
 
+다수-문서 쓰기 작업을 수행할때, 다른 연산은 교차 수행될지도 모릅니다. 
+
+다수의 문서에 대해서 읽기와 쓰기 원자성 보장이 필요할때, MongoDB는 다수 문서 트랜재
+
+
 
 When performing multi-document write operations, whether through a single write operation or multiple write operations, other operations may interleave.
 
@@ -151,11 +156,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc3MDgxMTQzLDE3MzkyOTgxNDYsLTE1Mz
-gzOTAxNDcsMjQ3ODE3NTYxLC0xMjY2OTQ2NzI5LC0xNjA4Mzcz
-NDI3LDE0NDE1Mjk5NTMsLTE5NTcxNDIyMjMsLTE5NDMyMDUzOT
-ksLTE3NzM3OTA2Miw1Mjk1MjI2MjQsMTUyNTg1NzcwLC02MjM3
-NzA3MTIsODA2ODc0MTgwLDEyODI3NDkwNDYsODUyMDI1MjkzLD
-E2NzM4NzQxMDcsLTQzNzc3ODA2LC02MDA3NjE0NywtMjEyOTQy
-NDA0NV19
+eyJoaXN0b3J5IjpbLTgwNTU4Mjc2LDc3NzA4MTE0MywxNzM5Mj
+k4MTQ2LC0xNTM4MzkwMTQ3LDI0NzgxNzU2MSwtMTI2Njk0Njcy
+OSwtMTYwODM3MzQyNywxNDQxNTI5OTUzLC0xOTU3MTQyMjIzLC
+0xOTQzMjA1Mzk5LC0xNzczNzkwNjIsNTI5NTIyNjI0LDE1MjU4
+NTc3MCwtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMjgyNzQ5MDQ2LD
+g1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3NzgwNiwtNjAwNzYx
+NDddfQ==
 -->
