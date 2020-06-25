@@ -30,13 +30,12 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 `readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 consistency와  isolation을 컨트롤 하도록 합니다. 
 
-### Read Concern Levels
 
-#### local
+### local
 
-Description
+local 레벨의 Read Concern입니다. 
 
-[`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")
+이 쿼리로 반환된 데이터는 그 데이터가 주요 replica set
 
 The query returns data from the instance with no guarantee that the data has been written to a majority of the replica set members (i.e. may be rolled back).
 
@@ -121,8 +120,8 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ2NTczOTEsLTIxMjk0MjQwNDUsLTIwNz
-Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
-LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNT
-g0ODcxN119
+eyJoaXN0b3J5IjpbMTc0NzgzNjY3NCwtMjEyOTQyNDA0NSwtMj
+A3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5
+OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNz
+A1ODQ4NzE3XX0=
 -->
