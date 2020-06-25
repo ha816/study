@@ -26,6 +26,18 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 # Isolation
 
+## Replica set 
+
+A  _replica set_  in MongoDB is a group of  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  processes that provide redundancy and high availability. The members of a replica set are:
+
+[Primary](https://docs.mongodb.com/manual/core/replica-set-members/#replica-set-primary-member).
+
+The primary receives all write operations.
+
+[Secondaries](https://docs.mongodb.com/manual/core/replica-set-members/#replica-set-secondary-members).
+
+Secondaries replicate operations from the primary to maintain an identical data set. Secondaries may have additional configurations for special usage profiles. For example, secondaries may be  [non-voting](https://docs.mongodb.com/manual/core/replica-set-elections/#replica-set-non-voting-members)  or  [priority 0](https://docs.mongodb.com/manual/core/replica-set-priority-0-member/#replica-set-secondary-only-members).
+
 ## Read Concern(Isolation)
 
 `readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 그 데이터의 LATEST, SAFE, FAST을 고려하여 가져온다. 
@@ -59,12 +71,7 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 읽이 연산 시작 이전에 성공적으로 인정된 모든 데이터를 반영한 최시 데이터를 가져옵니다. 결과를 반환하기 전에 모든 replica set에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 
-linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때만 
-
-Linearizable read concern guarantees only apply if read operations specify a query filter that uniquely identifies a single document.
-
-
-You can specify linearizable read concern for read operations on the  [`primary`](https://docs.mongodb.com/manual/reference/replica-states/#replstate.PRIMARY "PRIMARY")  only.
+linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때만 성공적으로 read concern을 보장합니다.
 
 
 ## Write Concern
@@ -130,10 +137,10 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQwMTY5MzAsLTYyMzc3MDcxMiw4MDY4Nz
-QxODAsMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywt
-NDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0Nj
-Q3ODk5LC0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3
-NDc0OTIxNTIsODg3ODQ4MzgxLDIwMTkzNjYzNTQsLTE3MDU4ND
-g3MTddfQ==
+eyJoaXN0b3J5IjpbLTg2MDQyNzI3MywtNjIzNzcwNzEyLDgwNj
+g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
+LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
+Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
+LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNT
+g0ODcxN119
 -->
