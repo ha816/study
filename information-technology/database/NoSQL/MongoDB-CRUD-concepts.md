@@ -31,7 +31,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 `readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 consistency와  isolation을 컨트롤 하도록 합니다. 
 
 
-### local
+### Local
 
 local 레벨의 Read Concern입니다. 
 
@@ -41,19 +41,16 @@ local 레벨의 Read Concern입니다.
 
 즉, local은 causally consistent sessions과 transactions이 있든지 없든지 사용이 가능합니다.
 
-### Availability
+### Available
 
-The query returns data from the instance with no guarantee that the data has been written to a majority of the replica set members (i.e. may be rolled back).
+이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 쓰여졌다는 것을 보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 않을 수 있습니다.
+
 
 **Default for:**  reads against secondaries if the reads are  **not**  associated with  [causally consistent sessions](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#sessions).
 
 **Availability:**  Read concern  `available`  is  **unavailable for use**  with causally consistent sessions and transactions.
 
-For sharded clusters,  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern provides the lowest latency reads possible among the various read concerns. However, this comes at the expense of consistency as  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern can return  [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document)  when reading from a sharded collection. To avoid the risk of returning orphaned documents when reading from sharded collections, use a different read concern such as read concern  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"").
 
-For more information, see the  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  reference page.
-
-    
 
 
 ## Write Concern
@@ -119,8 +116,8 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMTA3MDM1MywtNjAwNzYxNDcsLTIxMj
-k0MjQwNDUsLTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTEx
-NzcsODQwNTAzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOT
-M2NjM1NCwtMTcwNTg0ODcxN119
+eyJoaXN0b3J5IjpbNDY1MDM3NzQwLC02MDA3NjE0NywtMjEyOT
+QyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3
+Nyw4NDA1MDM5OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5Mz
+Y2MzU0LC0xNzA1ODQ4NzE3XX0=
 -->
