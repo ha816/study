@@ -21,8 +21,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 # Concurrency Control
 
-동시성 제어는 다수의 애플리케이션이 동시 수행될때 데이터 불이치 또는 충돌이 없도록 보장합니다. 
-이를 위해 MongoDB의 접근법은 unique한 값만을 가질 수 있는 unique 인덱스 필드를 만드는 것입니다. 인덱스 필드는 중복된 데이터를 생성하는 것으로부터 insertions과 updates를 막습니다. 
+동시성 제어는 다수의 애플리케이션이 동시 수행될때 데이터 불이치 또는 충돌이 없도록 보장합니다. 이를 위해 MongoDB의 접근법은 unique한 값만을 가질 수 있는 unique 인덱스 필드를 만드는 것입니다. 인덱스 필드는 중복된 데이터를 생성하는 것으로부터 insertions과 updates를 막습니다. 
 
 # Read Concern
 
@@ -134,13 +133,16 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 > 주의사항
 > 대부분의 multi-document transaction은 굉장히 나쁜 성능을 보이고, 좋은 스키마 디자인을 대체할 수는 없습니다. 좋은 스키마 또는 모델링을 통해서 최대한 multi-document transaction 사용을 줄이도록 합시다. 
 
+# Causal Consistency
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTU2NDc0MjIsMjEwNzE1MjgyMiw3Nz
-cwODExNDMsMTczOTI5ODE0NiwtMTUzODM5MDE0NywyNDc4MTc1
-NjEsLTEyNjY5NDY3MjksLTE2MDgzNzM0MjcsMTQ0MTUyOTk1My
-wtMTk1NzE0MjIyMywtMTk0MzIwNTM5OSwtMTc3Mzc5MDYyLDUy
-OTUyMjYyNCwxNTI1ODU3NzAsLTYyMzc3MDcxMiw4MDY4NzQxOD
-AsMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywtNDM3
-Nzc4MDZdfQ==
+eyJoaXN0b3J5IjpbLTMzNTYxNDMzOCwyMTA3MTUyODIyLDc3Nz
+A4MTE0MywxNzM5Mjk4MTQ2LC0xNTM4MzkwMTQ3LDI0NzgxNzU2
+MSwtMTI2Njk0NjcyOSwtMTYwODM3MzQyNywxNDQxNTI5OTUzLC
+0xOTU3MTQyMjIzLC0xOTQzMjA1Mzk5LC0xNzczNzkwNjIsNTI5
+NTIyNjI0LDE1MjU4NTc3MCwtNjIzNzcwNzEyLDgwNjg3NDE4MC
+wxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3
+NzgwNl19
 -->
