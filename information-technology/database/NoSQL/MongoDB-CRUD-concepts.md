@@ -101,9 +101,7 @@ wtimeout option
 
 ## Read Uncommitted
 
-read concern에 따라, 클라이언트는 
-Depending on the read concern, clients can see the results of writes before the writes are  [durable](
-
+클라이언트는 쓰기 작업의 결과를 read concern에 따라 볼 수 있습니다.
 
 -   Regardless of a write’s  [write concern](https://docs.mongodb.com/manual/reference/write-concern/), other clients using  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  or  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern can see the result of a write operation before the write operation is acknowledged to the issuing client.
 -   Clients using  [`"local"`](https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22 ""local"")  or  [`"available"`](https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22 ""available"")  read concern can read data which may be subsequently  [rolled back](https://docs.mongodb.com/manual/core/replica-set-rollbacks/)  during replica set failovers.
@@ -149,11 +147,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MTE2ODYxOCwxNDQxNTI5OTUzLC0xOT
-U3MTQyMjIzLC0xOTQzMjA1Mzk5LC0xNzczNzkwNjIsNTI5NTIy
-NjI0LDE1MjU4NTc3MCwtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMj
-gyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3LC00Mzc3Nzgw
-NiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLT
-IwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1
-Ml19
+eyJoaXN0b3J5IjpbLTE2MDgzNzM0MjcsMTQ0MTUyOTk1MywtMT
+k1NzE0MjIyMywtMTk0MzIwNTM5OSwtMTc3Mzc5MDYyLDUyOTUy
+MjYyNCwxNTI1ODU3NzAsLTYyMzc3MDcxMiw4MDY4NzQxODAsMT
+I4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNywtNDM3Nzc4
+MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0NjQ3ODk5LC
+0yMDYwODQ4MDMwLDUyNTUxMTc3LDg0MDUwMzk5NCw3NDc0OTIx
+NTJdfQ==
 -->
