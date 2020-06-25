@@ -123,9 +123,9 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 
 만약 standalone 	구성을 하고 있다면, 한 문서에 대한 읽기와 쓰기 작업은 serializable합니다. replica set을 구성하고 있다면, 한 문서에 대한 읽기와 쓰기 작업들은 rollback이 없는 경우만 serializable이 됩니다. 
 
-With a standalone  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  instance, a set of read and write operations to a single document is serializable. With a replica set, a set of read and write operations to a single document is serializable  _only_  in the absence of a rollback.
+## Read Uncommitted And Multiple Document Write
 
-## Read Uncommitted And Multiple Document Write[](https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#read-uncommitted-and-multiple-document-write "Permalink to this headline")
+한 쓰기 작업이 많은 문서를 수정할때, 각 문서의 수정은 원자성이 보장됩니다. 
 
 When a single write operation (e.g.  [`db.collection.updateMany()`](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany "db.collection.updateMany()")) modifies multiple documents, the modification of each document is atomic, but the operation as a whole is not atomic.
 
@@ -152,11 +152,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzgzOTAxNDcsMjQ3ODE3NTYxLC0xMj
-Y2OTQ2NzI5LC0xNjA4MzczNDI3LDE0NDE1Mjk5NTMsLTE5NTcx
-NDIyMjMsLTE5NDMyMDUzOTksLTE3NzM3OTA2Miw1Mjk1MjI2Mj
-QsMTUyNTg1NzcwLC02MjM3NzA3MTIsODA2ODc0MTgwLDEyODI3
-NDkwNDYsODUyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2LC
-02MDA3NjE0NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2
-MDg0ODAzMF19
+eyJoaXN0b3J5IjpbMTczOTI5ODE0NiwtMTUzODM5MDE0NywyND
+c4MTc1NjEsLTEyNjY5NDY3MjksLTE2MDgzNzM0MjcsMTQ0MTUy
+OTk1MywtMTk1NzE0MjIyMywtMTk0MzIwNTM5OSwtMTc3Mzc5MD
+YyLDUyOTUyMjYyNCwxNTI1ODU3NzAsLTYyMzc3MDcxMiw4MDY4
+NzQxODAsMTI4Mjc0OTA0Niw4NTIwMjUyOTMsMTY3Mzg3NDEwNy
+wtNDM3Nzc4MDYsLTYwMDc2MTQ3LC0yMTI5NDI0MDQ1LC0yMDc0
+NjQ3ODk5XX0=
 -->
