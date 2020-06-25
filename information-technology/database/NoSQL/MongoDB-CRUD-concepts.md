@@ -106,15 +106,9 @@ Write Concern이란 MongoDB 가 Client 의 요청으로 데이터를 기록할 �
 
 Client 가 알고 있는 데이터와 DB 의 데이터가 unmatch 되는 상황이 발생되게 된다.
 
-이러한 문제를 해결하기 위해
-
-**Client 쪽에 보내는 response 시점을 Primary 와 Secondary 가 동기화 된 이후로 설정이 가능한데**
-
-**이것이 바로 Write concern 설정의 핵심이다.**
+이러한 문제를 해결하기 위해 **Client 쪽에 보내는 response 시점을 Primary 와 Secondary 가 동기화 된 이후로 설정이 가능하며 이것이 바로 Write concern 설정의 핵심이다.**
 
 ![](https://k.kakaocdn.net/dn/daSduH/btqvErfiQPr/YnveydIHjt1YdgInTK1VxK/img.png)
-
-[ MongoDB Replication 의 Write concern ]
 
 Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리한 이후 바로 Client 에게 response 를 보내는 것이 아니라 Secondary 쪽으로 데이터를 동기화 작업을 완료한 이후에 Client 에게 response 를 보내게 된다.**
 
@@ -205,11 +199,11 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM2OTg1NjcxLC0xOTU3MTQyMjIzLC0xOT
-QzMjA1Mzk5LC0xNzczNzkwNjIsNTI5NTIyNjI0LDE1MjU4NTc3
-MCwtNjIzNzcwNzEyLDgwNjg3NDE4MCwxMjgyNzQ5MDQ2LDg1Mj
-AyNTI5MywxNjczODc0MTA3LC00Mzc3NzgwNiwtNjAwNzYxNDcs
-LTIxMjk0MjQwNDUsLTIwNzQ2NDc4OTksLTIwNjA4NDgwMzAsNT
-I1NTExNzcsODQwNTAzOTk0LDc0NzQ5MjE1Miw4ODc4NDgzODFd
-fQ==
+eyJoaXN0b3J5IjpbLTExOTE5NTE1NzAsLTE5NTcxNDIyMjMsLT
+E5NDMyMDUzOTksLTE3NzM3OTA2Miw1Mjk1MjI2MjQsMTUyNTg1
+NzcwLC02MjM3NzA3MTIsODA2ODc0MTgwLDEyODI3NDkwNDYsOD
+UyMDI1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2LC02MDA3NjE0
+NywtMjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAzMC
+w1MjU1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4
+MV19
 -->
