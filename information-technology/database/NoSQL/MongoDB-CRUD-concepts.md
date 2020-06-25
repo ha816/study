@@ -37,7 +37,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 가장 최근 데이터를 빠르게 가져오는 Read Concern 입니다. 이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 쓰여졌다는 것을 보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 않을 수 있습니다.
 
-샤딩된 클러스터에선, `"available"` 을 사용하면 다양한 read concerns 중에서 가장 낮은 레이턴시를 제공합니다. 그러나 샤딩된 컬렉션을 읽는 과정에서 [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) 문서를 읽을 수도 있습니다. 
+샤딩된 클러스터에선, `"available"` 을 사용하면 모든 read concerns(local 포함) 중에서 가장 빠르게 데이터를 가져그러나 샤딩된 컬렉션을 읽는 과정에서 [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) 문서를 읽을 수도 있습니다. 
 
 > orphaned document
 > 샤딩된 클러스터에서, 비정상 종료 때문에 실패하거나 불완전한 마이그레이션으로 발생하는 다른 샤드의 문서입니다. 이 문서를 제거하기 위해 `cleanupOrphaned`을 사용할 수 있습니다.
@@ -131,9 +131,9 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5Mjc4MDA3LDEyODI3NDkwNDYsODUyMD
-I1MjkzLDE2NzM4NzQxMDcsLTQzNzc3ODA2LC02MDA3NjE0Nywt
-MjEyOTQyNDA0NSwtMjA3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1Mj
-U1MTE3Nyw4NDA1MDM5OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwy
-MDE5MzY2MzU0LC0xNzA1ODQ4NzE3XX0=
+eyJoaXN0b3J5IjpbLTE1OTQ1Mjc3MjgsMTI4Mjc0OTA0Niw4NT
+IwMjUyOTMsMTY3Mzg3NDEwNywtNDM3Nzc4MDYsLTYwMDc2MTQ3
+LC0yMTI5NDI0MDQ1LC0yMDc0NjQ3ODk5LC0yMDYwODQ4MDMwLD
+UyNTUxMTc3LDg0MDUwMzk5NCw3NDc0OTIxNTIsODg3ODQ4Mzgx
+LDIwMTkzNjYzNTQsLTE3MDU4NDg3MTddfQ==
 -->
