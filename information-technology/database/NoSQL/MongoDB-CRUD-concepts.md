@@ -28,16 +28,13 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ## Replica set 
 
-replica set은 mongd 프로세스들의 집합입니다. 또 각 mongd 프로세스는 
+replica set은 mongd 프로세스들의 집합입니다. 또 각 mongd 프로세스는 아래 두 역할군으로 나뉘어 집니다. 
 
-A  _replica set_  in MongoDB is a group of  [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod")  processes that provide redundancy and high availability. The members of a replica set are:
+Primary 
+: 모든 쓰기 연산을 받습니다. 
 
-[Primary](https://docs.mongodb.com/manual/core/replica-set-members/#replica-set-primary-member).
-
-The primary receives all write operations.
-
-[Secondaries](https://docs.mongodb.com/manual/core/replica-set-members/#replica-set-secondary-members).
-
+Secondaries
+: 
 Secondaries replicate operations from the primary to maintain an identical data set. Secondaries may have additional configurations for special usage profiles. For example, secondaries may be  [non-voting](https://docs.mongodb.com/manual/core/replica-set-elections/#replica-set-non-voting-members)  or  [priority 0](https://docs.mongodb.com/manual/core/replica-set-priority-0-member/#replica-set-secondary-only-members).
 
 ## Read Concern(Isolation)
@@ -139,7 +136,7 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMDk2ODQ5NSwtNjIzNzcwNzEyLDgwNj
+eyJoaXN0b3J5IjpbMjAzNTcyNjQ5NSwtNjIzNzcwNzEyLDgwNj
 g3NDE4MCwxMjgyNzQ5MDQ2LDg1MjAyNTI5MywxNjczODc0MTA3
 LC00Mzc3NzgwNiwtNjAwNzYxNDcsLTIxMjk0MjQwNDUsLTIwNz
 Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
