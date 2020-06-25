@@ -32,7 +32,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ### Read Concern Levels
 
-`level`
+#### local
 
 Description
 
@@ -121,8 +121,8 @@ Without isolating the multi-document write operations, MongoDB exhibits the foll
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NjY2NTYyNCwtMjEyOTQyNDA0NSwtMj
-A3NDY0Nzg5OSwtMjA2MDg0ODAzMCw1MjU1MTE3Nyw4NDA1MDM5
-OTQsNzQ3NDkyMTUyLDg4Nzg0ODM4MSwyMDE5MzY2MzU0LC0xNz
-A1ODQ4NzE3XX0=
+eyJoaXN0b3J5IjpbMzQ2NTczOTEsLTIxMjk0MjQwNDUsLTIwNz
+Q2NDc4OTksLTIwNjA4NDgwMzAsNTI1NTExNzcsODQwNTAzOTk0
+LDc0NzQ5MjE1Miw4ODc4NDgzODEsMjAxOTM2NjM1NCwtMTcwNT
+g0ODcxN119
 -->
