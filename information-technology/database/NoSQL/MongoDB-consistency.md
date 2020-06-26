@@ -14,14 +14,22 @@ Causal consistency를 사용하기 위해선 아래 두 가지 물리적 요구�
 
 이는 strict consistency보다는 빠른 성능을 보인다. (Network 속도에 클럭이 병목될 정도는 아니다.)  **하지만 operation들이 sequential하게 수행되어야 하므로 성능이 만족할정도로 나오지 않는다.**  (previous operation이 완료 될 때까지 기다려야 하므로 느리다.)
 
+The causal consistency model can be refined into four  **session guarantees.**[[11]](https://en.wikipedia.org/wiki/Causal_consistency#cite_note-11). They can be summarised as follows:
 
-Strict Consistency
-: 가장 엄격한 일관성으로 모든 읽기가 가장 최근에 기록된 결과를 읽어야 한다.
 
-Causal Consistency
-: 타임스탬프보다 이벤트 순서에 일관성을 부여하여, 관련성이 있는 모든 쓰기는 순서대로 읽혀야 한다.
 
- 
+
+
+-   **Read Your Writes**: If a process performs a write, the same process later observes the result of its write.
+
+-   **Monotonic Reads**: the set of writes observed (read) by a process is guaranteed to be monotonically non-decreasing.
+
+-   **Writes Follow Reads**: if some process performs a read followed by a write, and another process observes the result of the write, then it can also observe the read (unless it has been overwritten).
+
+-   **Monotonic Writes**: If some process performs a write, followed some time later by another write, other processes will observe them in the same order.
+
+Transactional session guarantees for serialisability and snapshot isolation are presented by Daudjee and Salem  [[12]](https://en.wikipedia.org/wiki/Causal_consistency#cite_note-12).
+
 
 # Causal Consistency
 
@@ -34,8 +42,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNTEwNTQ0OSwtODgyODg1OTA2LDM4Mz
-Y5ODQ3MywtMTMxMzg0MzQ4MSwtODg2OTIwNzM1LC01MjAxNTYy
-NDksLTI5MjQ5NDQ5NywyMTM5MTY2NjA0LC00NTE3Nzk5MDQsLT
-E5NTY4MjY1OTEsMTY5NzYzMjM0NSwtMTc0MDczODQ0MF19
+eyJoaXN0b3J5IjpbLTc0MjA5MTcyNCwxMDI1MTA1NDQ5LC04OD
+I4ODU5MDYsMzgzNjk4NDczLC0xMzEzODQzNDgxLC04ODY5MjA3
+MzUsLTUyMDE1NjI0OSwtMjkyNDk0NDk3LDIxMzkxNjY2MDQsLT
+Q1MTc3OTkwNCwtMTk1NjgyNjU5MSwxNjk3NjMyMzQ1LC0xNzQw
+NzM4NDQwXX0=
 -->
