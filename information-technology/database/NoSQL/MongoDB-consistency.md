@@ -4,7 +4,8 @@
 
 ## Causal Consistency(Sequential Consistency)
 
-Sequential consistency는 strict consistency보다 한단계 완화된 consistency입니다. Strict consistency는 빛의 속도같은 write operation나 완벽히 동기화되는 global clock을 요구했으나 sequential consistency는 이를 요구하지 않는다. 하지만 아래와 같은 물리적으로 가능한 요구사항이 있다.
+Causal consistency는 strict consistency보다 한단계 완화된 consistency입니다. 
+Causal consistency를 사용하기 위해선 아래 두 가지 물리적 요구사항을 지켜야 합니다.
 
 -   Ordering 유지
 -   Atomic read/write operation
@@ -33,7 +34,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMzI4MzYwMywzODM2OTg0NzMsLTEzMT
+eyJoaXN0b3J5IjpbLTg4Mjg4NTkwNiwzODM2OTg0NzMsLTEzMT
 M4NDM0ODEsLTg4NjkyMDczNSwtNTIwMTU2MjQ5LC0yOTI0OTQ0
 OTcsMjEzOTE2NjYwNCwtNDUxNzc5OTA0LC0xOTU2ODI2NTkxLD
 E2OTc2MzIzNDUsLTE3NDA3Mzg0NDBdfQ==
