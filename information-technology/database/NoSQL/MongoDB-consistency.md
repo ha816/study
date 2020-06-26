@@ -28,11 +28,7 @@ Writes Follow Reads
 if some process performs a read followed by a write, and another process observes the result of the write, then it can also observe the read (unless it has been overwritten).
 
 Monotonic Writes
-: 만약 몇몇의 프로세스가 한 작업을 수행한다면, 후속 쓰기 작업이 추가로 있는, 다른 프로세스가 그것
-: If some process performs a write, followed some time later by another write, other processes will observe them in the same order.
-
-Transactional session guarantees for serialisability and snapshot isolation are presented by Daudjee and Salem  [[12]](https://en.wikipedia.org/wiki/Causal_consistency#cite_note-12).
-
+: 만약 몇몇의 프로세스가 한 작업을 수행한다면, 후속 쓰기 작업이 추가로 있는, 다른 프로세스가 그것들을 같은 순서로 관찰할 것입니다. 
 
 # Causal Consistency
 
@@ -45,9 +41,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc3MzI1MzY5LDUyNjgwNzc5MCwtOTk3OD
-c1NjE3LDEwMjUxMDU0NDksLTg4Mjg4NTkwNiwzODM2OTg0NzMs
-LTEzMTM4NDM0ODEsLTg4NjkyMDczNSwtNTIwMTU2MjQ5LC0yOT
-I0OTQ0OTcsMjEzOTE2NjYwNCwtNDUxNzc5OTA0LC0xOTU2ODI2
-NTkxLDE2OTc2MzIzNDUsLTE3NDA3Mzg0NDBdfQ==
+eyJoaXN0b3J5IjpbMTE0NjQ1NzIyNSw1MjY4MDc3OTAsLTk5Nz
+g3NTYxNywxMDI1MTA1NDQ5LC04ODI4ODU5MDYsMzgzNjk4NDcz
+LC0xMzEzODQzNDgxLC04ODY5MjA3MzUsLTUyMDE1NjI0OSwtMj
+kyNDk0NDk3LDIxMzkxNjY2MDQsLTQ1MTc3OTkwNCwtMTk1Njgy
+NjU5MSwxNjk3NjMyMzQ1LC0xNzQwNzM4NDQwXX0=
 -->
