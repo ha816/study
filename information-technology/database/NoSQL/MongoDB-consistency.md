@@ -1,6 +1,6 @@
 # Consistency
 
-전통적인 DB 시스템에서 일관성이란 
+전통적인 DB 시스템에서 일관성이란 휘발성 저장장치와 비휘발성 저장장치간의 데이터의 일관성 유지를 말한다. 
 
 # Causal Consistency
 
@@ -13,8 +13,8 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTA1MDQ4MSwtMTMxMzg0MzQ4MSwtOD
-g2OTIwNzM1LC01MjAxNTYyNDksLTI5MjQ5NDQ5NywyMTM5MTY2
-NjA0LC00NTE3Nzk5MDQsLTE5NTY4MjY1OTEsMTY5NzYzMjM0NS
-wtMTc0MDczODQ0MF19
+eyJoaXN0b3J5IjpbNzIzNTM0MzQ0LC0xMzEzODQzNDgxLC04OD
+Y5MjA3MzUsLTUyMDE1NjI0OSwtMjkyNDk0NDk3LDIxMzkxNjY2
+MDQsLTQ1MTc3OTkwNCwtMTk1NjgyNjU5MSwxNjk3NjMyMzQ1LC
+0xNzQwNzM4NDQwXX0=
 -->
