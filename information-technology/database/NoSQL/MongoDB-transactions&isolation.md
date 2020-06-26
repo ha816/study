@@ -22,7 +22,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ![](https://k.kakaocdn.net/dn/YYwAw/btqAhqpozl2/IMdpfbgguBj897K4VkEwy1/img.png)
 
-동시성 제어의 목표는 동시에 실행되는 트랜잭션 수를 최대화 하면서 입력, 수정, 삭제, 검색 시 데이터의 무결성을 유지하는데 있습니다. 하지만 읽기 작업에 공유 Lock을 사용하는 일반적인 Locking 메커니즘은 구현이 간단한 반면에 아래와 같은 문제점을 가
+동시성 제어의 목표는 동시에 실행되는 트랜잭션 수를 최대화 하면서 입력, 수정, 삭제, 검색 시 데이터의 무결성을 유지하는데 있습니다. 
 
 동시성 제어는 다수의 애플리케이션이 동시 수행될때 데이터 불이치 또는 충돌이 없도록 보장합니다. 이를 위해 MongoDB의 접근법은 unique한 값만을 가질 수 있는 unique 인덱스 필드를 만드는 것입니다. 인덱스 필드는 중복된 데이터를 생성하는 것으로부터 insertions과 updates를 막습니다. 
 
@@ -137,6 +137,6 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 > 대부분의 multi-document transaction은 굉장히 나쁜 성능을 보이고, 좋은 스키마 디자인을 대체할 수는 없습니다. 좋은 스키마 또는 모델링을 통해서 최대한 multi-document transaction 사용을 줄이도록 합시다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NDExNTkxOCwtMTUwMzA1NTE5OSwtMT
-kwMDE2NTA3MywtMTQ0NzAwNTU4NSwtMTM0NzY2Njk4XX0=
+eyJoaXN0b3J5IjpbLTE2NDM2MzQxNjcsLTE1MDMwNTUxOTksLT
+E5MDAxNjUwNzMsLTE0NDcwMDU1ODUsLTEzNDc2NjY5OF19
 -->
