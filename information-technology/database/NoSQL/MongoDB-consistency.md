@@ -10,7 +10,7 @@ Causal consistency를 사용하기 위해선 아래 두 가지 물리적 요구�
 -   Ordering 유지
 -   Atomic read/write operation
 
-사실 제일 상식적인 consistency이다. 공유 데이터를 접근할 때, single operation queue가 있어 그 큐에는 write operation과 read operation들이 쌓여있다. 그리고 이 operation들은 in-order로 처리되야 한다. 그리고 operation이 수행되고 있으면 single operation queue에 들어있는 다른 operation들은 대기해야 한다.
+공유 데이터를 접근할 때, single operation queue가 있어 그 큐에는 write operation과 read operation들이 쌓여있다. 그리고 이 operation들은 in-order로 처리되야 한다. 그리고 operation이 수행되고 있으면 single operation queue에 들어있는 다른 operation들은 대기해야 한다.
 
 이는 strict consistency보다는 빠른 성능을 보인다. (Network 속도에 클럭이 병목될 정도는 아니다.)  **하지만 operation들이 sequential하게 수행되어야 하므로 성능이 만족할정도로 나오지 않는다.**  (previous operation이 완료 될 때까지 기다려야 하므로 느리다.)
 
@@ -34,8 +34,8 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4Mjg4NTkwNiwzODM2OTg0NzMsLTEzMT
-M4NDM0ODEsLTg4NjkyMDczNSwtNTIwMTU2MjQ5LC0yOTI0OTQ0
-OTcsMjEzOTE2NjYwNCwtNDUxNzc5OTA0LC0xOTU2ODI2NTkxLD
-E2OTc2MzIzNDUsLTE3NDA3Mzg0NDBdfQ==
+eyJoaXN0b3J5IjpbMTAyNTEwNTQ0OSwtODgyODg1OTA2LDM4Mz
+Y5ODQ3MywtMTMxMzg0MzQ4MSwtODg2OTIwNzM1LC01MjAxNTYy
+NDksLTI5MjQ5NDQ5NywyMTM5MTY2NjA0LC00NTE3Nzk5MDQsLT
+E5NTY4MjY1OTEsMTY5NzYzMjM0NSwtMTc0MDczODQ0MF19
 -->
