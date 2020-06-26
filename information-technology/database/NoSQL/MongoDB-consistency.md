@@ -21,10 +21,11 @@ Read Your Writes
 If a process performs a write, the same process later observes the result of its write.
 
 Monotonic Reads
-: 한 프로세스에 의해서 관찰된 쓰기 작업들은 단조롭게
-: the set of writes observed (read) by a process is guaranteed to be monotonically non-decreasing.
+: 한 프로세스에 의해서 관찰된 쓰기 작업들은 단조롭게 감소하는 것이 보장됩니다.
 
--   **Writes Follow Reads**: if some process performs a read followed by a write, and another process observes the result of the write, then it can also observe the read (unless it has been overwritten).
+Writes Follow Reads
+: 몇몇의 프로세스가 쓰기 작업에 의해 읽기 작업을 수행한다면,  
+if some process performs a read followed by a write, and another process observes the result of the write, then it can also observe the read (unless it has been overwritten).
 
 -   **Monotonic Writes**: If some process performs a write, followed some time later by another write, other processes will observe them in the same order.
 
@@ -42,7 +43,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1Nzg3MDI5OCwxMDI1MTA1NDQ5LC04OD
+eyJoaXN0b3J5IjpbLTk5Nzg3NTYxNywxMDI1MTA1NDQ5LC04OD
 I4ODU5MDYsMzgzNjk4NDczLC0xMzEzODQzNDgxLC04ODY5MjA3
 MzUsLTUyMDE1NjI0OSwtMjkyNDk0NDk3LDIxMzkxNjY2MDQsLT
 Q1MTc3OTkwNCwtMTk1NjgyNjU5MSwxNjk3NjMyMzQ1LC0xNzQw
