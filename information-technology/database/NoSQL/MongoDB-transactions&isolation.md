@@ -18,7 +18,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 # Concurrency Control
 
-동시성 제어란  DBMS가 다수의 사용자 사이에서 동시에 작용하는 다중 트랜잭션의 상호간섭 작용에서 Database를 보호하는 것을 의미한다. 일반적으로 동시성을 허용하면 일관성이 낮아지게 되며 이를 그래프로 나타내면 아래와 같다.
+동시성 제어란  DBMS가 다수의 사용자 사이에서 동시에 작용하는 다중 트랜잭션의 상호간섭 작용에서 DB의 일관성과 동시성을 적절히 조절하는 것을 말합니다. 일반적으로 동시성을 허용하면 일관성이 낮아지게 되며 이를 그래프로 나타내면 아래와 같다.
 
 ![](https://k.kakaocdn.net/dn/YYwAw/btqAhqpozl2/IMdpfbgguBj897K4VkEwy1/img.png)
 
@@ -137,5 +137,6 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 > 대부분의 multi-document transaction은 굉장히 나쁜 성능을 보이고, 좋은 스키마 디자인을 대체할 수는 없습니다. 좋은 스키마 또는 모델링을 통해서 최대한 multi-document transaction 사용을 줄이도록 합시다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDcwMDU1ODUsLTEzNDc2NjY5OF19
+eyJoaXN0b3J5IjpbLTE5MDAxNjUwNzMsLTE0NDcwMDU1ODUsLT
+EzNDc2NjY5OF19
 -->
