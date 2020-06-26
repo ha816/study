@@ -1,3 +1,7 @@
+# Consistency
+
+전통적인 DB 시스템에서 일관성이란 
+
 # Causal Consistency
 
 만약 한 연산이 논리적으로 앞전 연산에 의지하고 있다면, 두 연산자 간의 causal한 관계가 있다고 합니다. 예를 들어, 한 쓰기 연산이 모든 문서를 특정 컨디션에 지우고 있다고 하면, 특정 컨디션을 위한 읽기 연산 때문에 둘의 관계는 causal 관계를 이루고 있씁니다.
@@ -9,8 +13,8 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTM4NDM0ODEsLTg4NjkyMDczNSwtNT
-IwMTU2MjQ5LC0yOTI0OTQ0OTcsMjEzOTE2NjYwNCwtNDUxNzc5
-OTA0LC0xOTU2ODI2NTkxLDE2OTc2MzIzNDUsLTE3NDA3Mzg0ND
-BdfQ==
+eyJoaXN0b3J5IjpbLTgwMTA1MDQ4MSwtMTMxMzg0MzQ4MSwtOD
+g2OTIwNzM1LC01MjAxNTYyNDksLTI5MjQ5NDQ5NywyMTM5MTY2
+NjA0LC00NTE3Nzk5MDQsLTE5NTY4MjY1OTEsMTY5NzYzMjM0NS
+wtMTc0MDczODQ0MF19
 -->
