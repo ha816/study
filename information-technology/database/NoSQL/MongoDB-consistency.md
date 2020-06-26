@@ -4,7 +4,8 @@
 
 causally consistent sessions으로, MongoDB는 그들의 causal 관계십에 기반한 순서대로 causal 연산을 수행합니다. 그리고 클라이언트는 casual 관계들에서 일치성이 맞는지 관찰합니다. 
 
-Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 세션에 가능합니다. A causally consistent session은 `majority` 읽기 연산을 가진것과  `majority` 쓰기 연산의 연속들로 구성됩니다.  애플리케이션은 반드시 오직 하나의 쓰레드에서 
+Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 세션에 가능합니다. A causally consistent session은 `majority` 읽기 연산을 가진것과  `majority` 쓰기 연산의 연속들로 구성됩니다.  애플리케이션은 반드시 클라이언트 세션에서 오직 하나의 쓰레드에서 이런 연산이 수행되도록 해야합니다.
+ 
 
 To provide causal consistency, MongoDB 3.6 enables causal consistency in client sessions. A causally consistent session denotes that the associated sequence of read operations with  [`"majority"`](https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22 ""majority"")  read concern and write operations with  [`"majority"`](https://docs.mongodb.com/manual/reference/write-concern/#writeconcern.%22majority%22 ""majority"")  write concern have a causal relationship that is reflected by their ordering.  **Applications must ensure that only one thread at a time executes these operations in a client session.**
 
@@ -13,7 +14,7 @@ For causally related operations:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTUxNjI2OTYsLTUyMDE1NjI0OSwtMj
-kyNDk0NDk3LDIxMzkxNjY2MDQsLTQ1MTc3OTkwNCwtMTk1Njgy
-NjU5MSwxNjk3NjMyMzQ1LC0xNzQwNzM4NDQwXX0=
+eyJoaXN0b3J5IjpbLTg4NjkyMDczNSwtNTIwMTU2MjQ5LC0yOT
+I0OTQ0OTcsMjEzOTE2NjYwNCwtNDUxNzc5OTA0LC0xOTU2ODI2
+NTkxLDE2OTc2MzIzNDUsLTE3NDA3Mzg0NDBdfQ==
 -->
