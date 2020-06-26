@@ -1,10 +1,10 @@
 # Consistency
 
-전통적인 DB 시스템에서 일관성이란 휘발성 저장장치와 비휘발성 저장장치간의 데이터의 일관성 유지를 말한다. Strict Consistency는 가장 기본사항으로 기존 RDBMS에서 사용되어 왔다. 하지만 분산화된 상태에서 strict consistency를 만족하는 것은 매우 어려운 일이며, 또한 DB의 속도를 느리게 만든다. 이런 문제를 해결하기 위해 나온 것인 Causal Consistency이며, 분산 및 병렬처리 환경에서 발생하는 일관성을 인과적 관계로  구현한 기술이다. 
+전통적인 DB 시스템에서 일관성이란 휘발성 저장장치와 비휘발성 저장장치간의 데이터의 일관성 유지를 말합니다. Strict Consistency는 가장 기본사항으로 기존 RDBMS에서 사용되어 왔습니다. 하지만 분산화된 상태에서 strict consistency를 만족하는 것은 매우 어려운 일이며, 또한 DB의 속도를 느리게 만듭니다. 이런 문제를 개선하기 위해 나온것이 Causal Consistency입니다.
 
 ## Causal Consistency(Sequential Consistency)
 
-Sequential consistency는 strict consistency보다 한단계 완화된 consistency이다. Strict consistency는 빛의 속도같은 write operation나 완벽히 동기화되는 global clock을 요구했으나 sequential consistency는 이를 요구하지 않는다. 하지만 아래와 같은 물리적으로 가능한 요구사항이 있다.
+Sequential consistency는 strict consistency보다 한단계 완화된 consistency입니다. Strict consistency는 빛의 속도같은 write operation나 완벽히 동기화되는 global clock을 요구했으나 sequential consistency는 이를 요구하지 않는다. 하지만 아래와 같은 물리적으로 가능한 요구사항이 있다.
 
 -   Ordering 유지
 -   Atomic read/write operation
@@ -33,7 +33,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MDg2NDE1NCwzODM2OTg0NzMsLTEzMT
+eyJoaXN0b3J5IjpbLTcwMzI4MzYwMywzODM2OTg0NzMsLTEzMT
 M4NDM0ODEsLTg4NjkyMDczNSwtNTIwMTU2MjQ5LC0yOTI0OTQ0
 OTcsMjEzOTE2NjYwNCwtNDUxNzc5OTA0LC0xOTU2ODI2NTkxLD
 E2OTc2MzIzNDUsLTE3NDA3Mzg0NDBdfQ==
