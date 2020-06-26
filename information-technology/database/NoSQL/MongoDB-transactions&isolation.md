@@ -24,10 +24,7 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 동시성 제어의 목표는 동시에 실행되는 트랜잭션 수를 최대화 하면서 입력, 수정, 삭제, 검색 시 데이터의 무결성을 유지하는데 있습니다. 
 
-원하는 동시성 제어를 위해선 
-
-specify the expected current value of a field in the query predicate for the write operations.
-
+원하는 동시성 제어를 위해선 Read Concern과 Write Concern을 사용할 수 있습니다. 
 
 ## Read Concern
 
@@ -139,7 +136,7 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 > 대부분의 multi-document transaction은 굉장히 나쁜 성능을 보이고, 좋은 스키마 디자인을 대체할 수는 없습니다. 좋은 스키마 또는 모델링을 통해서 최대한 multi-document transaction 사용을 줄이도록 합시다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjAzMTcxNTYsODAwNTE3MDUsLTE2ND
-M2MzQxNjcsLTE1MDMwNTUxOTksLTE5MDAxNjUwNzMsLTE0NDcw
-MDU1ODUsLTEzNDc2NjY5OF19
+eyJoaXN0b3J5IjpbMTIwMTY5MDg3LDgwMDUxNzA1LC0xNjQzNj
+M0MTY3LC0xNTAzMDU1MTk5LC0xOTAwMTY1MDczLC0xNDQ3MDA1
+NTg1LC0xMzQ3NjY2OThdfQ==
 -->
