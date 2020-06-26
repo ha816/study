@@ -62,7 +62,7 @@ linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때�
 
 ## Write Concern
 
-Write Concern이란 MongoDB 가 Client 의 요청으로 데이터를 기록할 때, 해당 요청에 대한 Response를 어느 시점에 주느냐에 대한 동작 방식을 지정합니다.
+Write Concern이란 MongoDB가 Client의 요청으로 데이터를 기록할 때, 해당 요청에 대한 Response를 어느 시점에 주느냐에 대한 동작 방식을 지정합니다.
 
 ![](https://k.kakaocdn.net/dn/bqWzBJ/btqvCK0MrG1/kkQXAqikXxDAA9h0iKlya1/img.png)
 
@@ -136,7 +136,7 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 > 대부분의 multi-document transaction은 굉장히 나쁜 성능을 보이고, 좋은 스키마 디자인을 대체할 수는 없습니다. 좋은 스키마 또는 모델링을 통해서 최대한 multi-document transaction 사용을 줄이도록 합시다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMTY5MDg3LDgwMDUxNzA1LC0xNjQzNj
+eyJoaXN0b3J5IjpbNzYwMjA1OTQxLDgwMDUxNzA1LC0xNjQzNj
 M0MTY3LC0xNTAzMDU1MTk5LC0xOTAwMTY1MDczLC0xNDQ3MDA1
 NTg1LC0xMzQ3NjY2OThdfQ==
 -->
