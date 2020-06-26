@@ -17,9 +17,11 @@ Causal consistency를 사용하기 위해선 아래 두 가지 물리적 요구�
 causal consistency는 4가지 session guarantees로 재정의 될 수 있습니다. 
 
 Read Your Writes
-: If a process performs a write, the same process later observes the result of its write.
+: 만약 한 프로세스가 쓰기 작업을 수행 했다면,  이 쓰기 작업의 결과를 같은 프로세스가 나중에 관찰한다. 
+If a process performs a write, the same process later observes the result of its write.
 
 Monotonic Reads
+: 한 프로세스에 의해서 관찰된 쓰기 작업들은 단조롭게
 : the set of writes observed (read) by a process is guaranteed to be monotonically non-decreasing.
 
 -   **Writes Follow Reads**: if some process performs a read followed by a write, and another process observes the result of the write, then it can also observe the read (unless it has been overwritten).
@@ -40,9 +42,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUxMTU0MTkxLDEwMjUxMDU0NDksLTg4Mj
-g4NTkwNiwzODM2OTg0NzMsLTEzMTM4NDM0ODEsLTg4NjkyMDcz
-NSwtNTIwMTU2MjQ5LC0yOTI0OTQ0OTcsMjEzOTE2NjYwNCwtND
-UxNzc5OTA0LC0xOTU2ODI2NTkxLDE2OTc2MzIzNDUsLTE3NDA3
-Mzg0NDBdfQ==
+eyJoaXN0b3J5IjpbLTY1Nzg3MDI5OCwxMDI1MTA1NDQ5LC04OD
+I4ODU5MDYsMzgzNjk4NDczLC0xMzEzODQzNDgxLC04ODY5MjA3
+MzUsLTUyMDE1NjI0OSwtMjkyNDk0NDk3LDIxMzkxNjY2MDQsLT
+Q1MTc3OTkwNCwtMTk1NjgyNjU5MSwxNjk3NjMyMzQ1LC0xNzQw
+NzM4NDQwXX0=
 -->
