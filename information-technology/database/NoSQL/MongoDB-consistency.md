@@ -5,8 +5,10 @@
 Strict Consistency
 : 가장 엄격한 일관성으로 모든 읽기가 가장 최근에 기록된 결과를 읽어야 한다.
 
-Ca Consistency
-: 
+Causal Consistency
+: 타임스탬프보다 이벤트 순서에 일관성을 부여하여, 관련성이 있는 모든 쓰기는 순서대로 읽혀야 한다.
+
+ 
 
 # Causal Consistency
 
@@ -19,8 +21,8 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODY3MDI2NSwtMTMxMzg0MzQ4MSwtOD
-g2OTIwNzM1LC01MjAxNTYyNDksLTI5MjQ5NDQ5NywyMTM5MTY2
-NjA0LC00NTE3Nzk5MDQsLTE5NTY4MjY1OTEsMTY5NzYzMjM0NS
-wtMTc0MDczODQ0MF19
+eyJoaXN0b3J5IjpbMzgzNjk4NDczLC0xMzEzODQzNDgxLC04OD
+Y5MjA3MzUsLTUyMDE1NjI0OSwtMjkyNDk0NDk3LDIxMzkxNjY2
+MDQsLTQ1MTc3OTkwNCwtMTk1NjgyNjU5MSwxNjk3NjMyMzQ1LC
+0xNzQwNzM4NDQwXX0=
 -->
