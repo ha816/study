@@ -28,7 +28,9 @@ For details regarding transactions in MongoDB, see the  [Transactions](https://d
 
 ## Unique Indexes
 
+하나의 unique index는 
 
+A unique index ensures that the indexed fields do not store duplicate values; i.e. enforces uniqueness for the indexed fields. By default, MongoDB creates a unique index on the [_id](https://docs.mongodb.com/manual/core/document/#document-id-field) field during the creation of a collection.
 
 
 ## Read Concern
@@ -141,7 +143,7 @@ Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, 
 > 대부분의 multi-document transaction은 굉장히 나쁜 성능을 보이고, 좋은 스키마 디자인을 대체할 수는 없습니다. 좋은 스키마 또는 모델링을 통해서 최대한 multi-document transaction 사용을 줄이도록 합시다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE5NTMzNTkyLC0xNjQzNjM0MTY3LC0xNT
-AzMDU1MTk5LC0xOTAwMTY1MDczLC0xNDQ3MDA1NTg1LC0xMzQ3
-NjY2OThdfQ==
+eyJoaXN0b3J5IjpbLTc3NjkyMDk2NSwtMTY0MzYzNDE2NywtMT
+UwMzA1NTE5OSwtMTkwMDE2NTA3MywtMTQ0NzAwNTU4NSwtMTM0
+NzY2Njk4XX0=
 -->
