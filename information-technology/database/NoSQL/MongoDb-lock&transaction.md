@@ -138,9 +138,11 @@ MongoDB 서버는 처음부터 단일 다큐먼트의 트랜잭션만 지원하�
 
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTU2OTYzNTcsLTU4MDg4OTgyNSw3Mz
-I3MTE1MjgsLTk2MTM2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5
-MywtNjk0NTM5MzE5LDE1MjI5NjExMTZdfQ==
+eyJoaXN0b3J5IjpbLTk3ODI4NzQ5NywtNTgwODg5ODI1LDczMj
+cxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwxODY0OTM2Njkz
+LC02OTQ1MzkzMTksMTUyMjk2MTExNl19
 -->
