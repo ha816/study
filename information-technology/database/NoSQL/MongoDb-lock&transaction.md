@@ -84,7 +84,7 @@ MongoDB Instance > DB > Collection > Document
 
 특정 문서를 읽으려면 동일하게 글로벌 인텐션 잠금, 데이터베이스 인텐션 잠금 그리고 컬렉션 인텐션 잠금을 얻어야 한다. 그런데 다큐먼트를 읽기만 하는 경우는 WiredTiger 스토리지 엔진에서는 별도의 잠금을 이용하지 않는다. 
 
-이는 MongoDB의 MVCC 때문에 가능하다. 
+이는 MongoDB의 MVCC 때문에 가능하다. WiredTiger 스토리지 엔진에서는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가한다. 즉 변경되는 내역을 모두 관리하는데, 따라서 읽기 명령시 현재 트랜잭션이 읽어야할 문서 버전을 찾아 읽기만 하면된다. MVCC를 이용해서 잠금 없이 문서를 읽는다고 하여 이를 잠금없는 일관된 읽기(Consistent non-lock라고도 한다.
 
 
 
@@ -94,7 +94,7 @@ MongoDB Instance > DB > Collection > Document
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NTc1MzM2Myw3MzI3MTE1MjgsLTk2MT
+eyJoaXN0b3J5IjpbMTAwNDgzNDE3Miw3MzI3MTE1MjgsLTk2MT
 M2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5
 LDE1MjI5NjExMTZdfQ==
 -->
