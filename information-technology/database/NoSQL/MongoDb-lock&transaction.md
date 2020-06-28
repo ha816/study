@@ -103,7 +103,7 @@ Yield를 실행하는 규칙은 아래와 같다.
 
 ## 잠금 진단
 
-
+# 트랜잭셔
 
 
 
@@ -113,7 +113,7 @@ Yield를 실행하는 규칙은 아래와 같다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDY3NTE1MTQsNzMyNzExNTI4LC05Nj
+eyJoaXN0b3J5IjpbLTEzNjI2ODU4NTgsNzMyNzExNTI4LC05Nj
 EzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMx
 OSwxNTIyOTYxMTE2XX0=
 -->
