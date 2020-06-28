@@ -22,16 +22,17 @@ MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금은 글로
 db.fsyncLock){fsync:1, lock:true}
 ```
 
-기본적으로 fsync:1으로 설정하면 아직 디스크에 기록되지 못한 데이터(캐시, 메모리) 모두 디스크로 기록합니다. lock:true 옵션이 있으면 글로벌 잠금을 획득하게 되는데, 이는 쓰기 잠
-
+기본적으로 fsync:1으로 설정하면 아직 디스크에 기록되지 못한 데이터(캐시, 메모리) 모두 디스크로 기록합니다. lock:true 옵션이 있으면 글로벌 잠금을 획득하게 되는데, 이는 쓰기 잠금이지 읽기 잠금은 아닙니다. 
 
 ## 오브젝트 잠금
+
+
 
 # 스토리지 엔진의 잠금
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njc3NTgzOTAsMTE1NzQ4Njg0OCwxOD
+eyJoaXN0b3J5IjpbLTEwNTAwNjE1ODQsMTE1NzQ4Njg0OCwxOD
 Y0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTExNl19
 -->
