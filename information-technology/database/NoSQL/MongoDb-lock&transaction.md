@@ -64,6 +64,7 @@ session-1: db.orders.find({user_id:1}})
 session-2: db.orders.update({user_id:2}})
 ```
 
+두 데이터를 조회만 하는 경우라면, orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S잠금또한 필요하다. 
 
 
  
@@ -75,7 +76,7 @@ session-2: db.orders.update({user_id:2}})
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY2MzA4NjQxLC05NjEzNjUzNiwxMTU3ND
-g2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2
-XX0=
+eyJoaXN0b3J5IjpbLTIxMzM3MzE1NDEsLTk2MTM2NTM2LDExNT
+c0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5LDE1MjI5NjEx
+MTZdfQ==
 -->
