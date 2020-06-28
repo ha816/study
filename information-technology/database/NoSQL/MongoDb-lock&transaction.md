@@ -107,7 +107,12 @@ Yield를 실행하는 규칙은 아래와 같다.
 
 WiredTiget 스토리지 엔진이 제공하는 트랜잭션 ACID 속성은 다음와 같은 특징이 있다. 
 
-* 
+* 최고 레벨 격리 수준은 Snapshot(Repetable-Read)
+* 트랜잭션의 커밋과 체크포인트 두 가지 형태로 영속성(Durability) 보장
+* 커밋되지 않은 변경 데이터는 공유 캐시 크기보다 작아야 함
+
+WiredTiger는 Serializable 수준의 격리 수준은 제공하지 않는다. 
+
 
 
 
@@ -117,7 +122,7 @@ WiredTiget 스토리지 엔진이 제공하는 트랜잭션 ACID 속성은 다�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MTAzNzc2MSw3MzI3MTE1MjgsLTk2MT
-M2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5
-LDE1MjI5NjExMTZdfQ==
+eyJoaXN0b3J5IjpbLTE1NjA3MDQzNjQsNzMyNzExNTI4LC05Nj
+EzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMx
+OSwxNTIyOTYxMTE2XX0=
 -->
