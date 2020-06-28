@@ -82,13 +82,15 @@ MongoDB Instance > DB > Collection > Document
 
 특정 문서를 변경하려면 EX락을 획득해야 하는데, 먼저 글로벌 인텐션 잠금, 데이터베이스 인텐션 잠금 그리고 컬렉션 인텐션 잠금을 가져야 한다 
 
-특정 문서를 읽으려면 동일하
+특정 문서를 읽으려면 동일하게 글로벌 인텐션 잠금, 데이터베이스 인텐션 잠금 그리고 컬렉션 인텐션 잠금을 얻어야 한다. 그런데 다큐먼트를 읽기만 하는 경우는 스토리지 엔진에서 별도의 잠금을 이용하지 않는다. 
+
+이를 MVCC라고 하는데 나중에 다시 보자. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3ND
-g2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2
-XX0=
+eyJoaXN0b3J5IjpbOTEyMDQ3ODQ3LDczMjcxMTUyOCwtOTYxMz
+Y1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTks
+MTUyMjk2MTExNl19
 -->
