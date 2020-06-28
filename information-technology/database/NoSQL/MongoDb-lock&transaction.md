@@ -45,9 +45,11 @@ Exclusive| X | X | X|X|
 위 표는 잠금들 간의 상호 사용 관계를 나타냅니다. 
 
 ```
-db.orders.update({user_id:1},)
-
+db.orders.update({user_id:1}, {$set: {order_state:"done"}})
+db.orders.update({user_id:2}, {$set: {order_state:"prepare"}})
 ```
+
+
 
 
 # 스토리지 엔진의 잠금
@@ -55,7 +57,7 @@ db.orders.update({user_id:1},)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyOTc3Mzg4MiwtOTYxMzY1MzYsMTE1Nz
+eyJoaXN0b3J5IjpbLTUwNTIyODM0NSwtOTYxMzY1MzYsMTE1Nz
 Q4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTEx
 Nl19
 -->
