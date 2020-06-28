@@ -17,30 +17,6 @@ Shared lock (공유 잠금)
 어떤 자원에 shared lock이 하나라도 걸려있으면 exclusive lock을 걸 수 없다.
 
 
-* Lock은 DBMS가 자동으로도 적용하기도 하고 수동으로도 줄 수 있다.  
-
-* Lock은 잠금 비용과 동시성비용을 고려해야한다.
-
-만약 lock을 걸어야할 페이지가 많다면, 그럴바에 테이블 전체에 lock을 걸어버리는 편이 한번에 처리하니까 잠금 비용에 낮아져 효율적이다.
-
-하지만 lock의 범위가 넓어질수록 동시에 접근할 수 없는 자원이 많아지므로 동시성 비용이 높아져 효율이 떨어진다.
-
-* Lock이 엄청나게 다양하다.
-
-row lock / table lock 부터 시작해서 그 안에 RX, RS, S, SRX, X등이 있다.
-
-* 격리수준에 따라 Lock종류가 많아진다. 예를 들면 SQL select문에서 Shared lock을 걸지 않게하는 것도 있다.
-
-SELECT * FROM TABLENAME WITH (READUNCOMMITTED) WHERE PK = 5
-
-  
-  
-출처: [https://jeong-pro.tistory.com/94](https://jeong-pro.tistory.com/94) [기본기를 쌓는 정아마추어 코딩블로그]  
-  
-출처: [https://jeong-pro.tistory.com/94](https://jeong-pro.tistory.com/94) [기본기를 쌓는 정아마추어 코딩블로그]  
-  
-출처: [https://jeong-pro.tistory.com/94](https://jeong-pro.tistory.com/94) [기본기를 쌓는 정아마추어 코딩블로그]
-
 
 # MongoDB 엔진의 잠금
 
@@ -57,6 +33,6 @@ MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금은 글로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAzMzU2Njg2LDE4NjQ5MzY2OTMsLTY5ND
-UzOTMxOSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbLTI1NjI3Nzc3MywxODY0OTM2NjkzLC02OT
+Q1MzkzMTksMTUyMjk2MTExNl19
 -->
