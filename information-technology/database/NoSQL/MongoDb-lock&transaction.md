@@ -105,7 +105,9 @@ Yield를 실행하는 규칙은 아래와 같다.
 
 # 트랜잭션
 
+WiredTiget 스토리지 엔진이 제공하는 트랜잭션 ACID 속성은 다음와 같은 특징이 있다. 
 
+* 
 
 
 
@@ -115,7 +117,7 @@ Yield를 실행하는 규칙은 아래와 같다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDk0ODY1NDUsNzMyNzExNTI4LC05Nj
-EzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMx
-OSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbMTA4MTAzNzc2MSw3MzI3MTE1MjgsLTk2MT
+M2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5
+LDE1MjI5NjExMTZdfQ==
 -->
