@@ -116,6 +116,10 @@ WiredTiger는 Serializable 수준의 격리 수준은 제공하지 않는다.
 트랜잭션이 커밋되기 전에는 트랜잭션 로그를 디스크로 기록하지 않는 다는 것이다. 따라서 
 트랜잭션이 변경할 수 있는 데이터의 크기는 WiredTiger 스토리지 엔진이 가진 공유캐시 크기로 제한된다. MongoDB 서버는 기본적으로 다큐먼트 기반의 트랜잭션만 지원한다. 
 
+## 쓰기 충돌(Write Conflict)
+
+데이터를 변경하는 작업 도중에 MongoDB 서버는 쓰기 충돌이 발생할 수 있다. 
+
 
 
 
@@ -124,7 +128,7 @@ WiredTiger는 Serializable 수준의 격리 수준은 제공하지 않는다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzI5MDIzMCw3MzI3MTE1MjgsLTk2MT
+eyJoaXN0b3J5IjpbMjEwNDc1NjIwMyw3MzI3MTE1MjgsLTk2MT
 M2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5
 LDE1MjI5NjExMTZdfQ==
 -->
