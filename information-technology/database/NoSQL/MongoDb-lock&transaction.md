@@ -103,9 +103,9 @@ Yield를 실행하는 규칙은 아래와 같다.
 
 기본적으로 잠금 판단을 위해선 db.currentOp() 명령어를 사용하면 알 수 있다. 
 
-
-
 # 트랜잭션
+
+
 
 
 
@@ -115,7 +115,7 @@ Yield를 실행하는 규칙은 아래와 같다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MDU3NTc5MSw3MzI3MTE1MjgsLTk2MT
-M2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5
-LDE1MjI5NjExMTZdfQ==
+eyJoaXN0b3J5IjpbLTE0NDk0ODY1NDUsNzMyNzExNTI4LC05Nj
+EzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMx
+OSwxNTIyOTYxMTE2XX0=
 -->
