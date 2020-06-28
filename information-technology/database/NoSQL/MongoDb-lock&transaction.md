@@ -112,7 +112,8 @@ WiredTiget 스토리지 엔진이 제공하는 트랜잭션 ACID 속성은 다�
 * 커밋되지 않은 변경 데이터는 공유 캐시 크기보다 작아야 함
 
 WiredTiger는 Serializable 수준의 격리 수준은 제공하지 않는다. 
-
+ 트랜잭션 로그(저널 로그 또는 리두 로그) 뿐만 아니라 체크포인트로도 영속성이 보장된다. 즉 트랜잭션 로그가 없어도 마지막 체크 포인트 시점의 데이터를 복구 할 수 있다. 
+트랜잭션이 변경할 수 있
 
 
 
@@ -122,7 +123,7 @@ WiredTiger는 Serializable 수준의 격리 수준은 제공하지 않는다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjA3MDQzNjQsNzMyNzExNTI4LC05Nj
-EzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMx
-OSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbMjIzNzc4NTY0LDczMjcxMTUyOCwtOTYxMz
+Y1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTks
+MTUyMjk2MTExNl19
 -->
