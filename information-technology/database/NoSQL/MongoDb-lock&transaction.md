@@ -26,9 +26,12 @@ db.fsyncLock){fsync:1, lock:true}
 
 ## 오브젝트 잠금
 
-MongoDB도 다른 
+MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨 잠금 방식을 방식을 지원했습니다.
+
 > Multiple Granularity Locking(다중 레벨 잠금방식)
 > 계층형 오브젝트에 대한 동시성 처리를 위해서 다중 레벨의 잠금 방식
+
+MongoDB에서는 S(Shared Lock), X(Exclusive Lock), 그리고 IS(Intent Shared
 
 
 # 스토리지 엔진의 잠금
@@ -36,6 +39,6 @@ MongoDB도 다른
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzgyOTU1MCwxMTU3NDg2ODQ4LDE4Nj
-Q5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbMzE5NDMyNjUsMTE1NzQ4Njg0OCwxODY0OT
+M2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTExNl19
 -->
