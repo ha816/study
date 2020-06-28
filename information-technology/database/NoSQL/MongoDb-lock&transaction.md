@@ -71,11 +71,11 @@ session-2: db.orders.update({user_id:2}})
 
 스토리지 엔진이라고 했지만, 기본적으로 WiredTiger 스토리지 엔진에 대한 설명이 메인이다. 
 
-WirtedTiger는 
+WirtedTiger는 다른 DBMS처럼 문서(레코드) 기반의 잠금을 사용한다. 하지만 다양한 레벨의 DB 오브젝트에 대한 잠금을 위해 다중 레벨의 잠금 방식도 같이 사용한다. (Multiple Granularity Locking) 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNzI5ODUzNywtOTYxMzY1MzYsMTE1Nz
+eyJoaXN0b3J5IjpbMTIzNzE1NjQ2MCwtOTYxMzY1MzYsMTE1Nz
 Q4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTEx
 Nl19
 -->
