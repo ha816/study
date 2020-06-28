@@ -14,7 +14,7 @@ MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금
 
 ## 글로벌 잠금
 
-MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금은 글로벌 잠금뿐이다. 
+MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금은 글로벌 잠금뿐이다. MongoDB서버 인스턴스에서 단 하나만 있는 잠금이므로, 이를 인스턴스 잠금이라고 한다. 
 
 ## 오브젝트 잠금
 
@@ -23,5 +23,5 @@ MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금은 글로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjg1NDk2MjEsMTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbLTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
 -->
