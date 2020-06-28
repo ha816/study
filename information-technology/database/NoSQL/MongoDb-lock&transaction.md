@@ -127,8 +127,11 @@ MongoDB 서버는 변경하고자 하는 문서가 이미 다른 커넥션에 �
 MongoDB 서버에서 WriteConflict Exception이 얼마나 발생했는지는 db.serverStatus() 명령으로 확인할 수 있다. 
 
 >WirtedTiger의 경우
->WiredTiger  스토리지 엔진에서는 문서를 읽는 쿼리는 WriteConflict와 무관하다. 왜냐하면 MVCC를 통해 읽기 작업에 대한 락을 
+>WiredTiger  스토리지 엔진에서는 문서를 읽는 쿼리는 WriteConflict와 무관하다. 왜냐하면 MVCC를 통해 읽기 작업에 대한 락을 걸지 않기 때문이다. 
 
+## 단일 문서 트랜잭션
+
+MongoDB 서버는 처음부터 단일 다큐먼트의 트랜잭션만 지원하고 있다. 즉 원자 단위의 처리가 보장된다는 것을 말한다. 
 
 
 
@@ -137,7 +140,7 @@ MongoDB 서버에서 WriteConflict Exception이 얼마나 발생했는지는 db.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY4MTE4NDI0LC01ODA4ODk4MjUsNzMyNz
-ExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMs
-LTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbLTE3OTU2OTYzNTcsLTU4MDg4OTgyNSw3Mz
+I3MTE1MjgsLTk2MTM2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5
+MywtNjk0NTM5MzE5LDE1MjI5NjExMTZdfQ==
 -->
