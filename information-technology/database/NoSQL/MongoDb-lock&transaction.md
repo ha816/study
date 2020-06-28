@@ -101,6 +101,9 @@ Yield를 실행하는 규칙은 아래와 같다.
 * 쿼리가 지정된 건수의 문서를 읽는 경우(128건)
 * 쿼리가 지정된 시간동안 수행된 경우(10ms)
 
+## 잠금 진단
+
+
 
 
 
@@ -110,7 +113,7 @@ Yield를 실행하는 규칙은 아래와 같다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU3Nzg4NjY0LDczMjcxMTUyOCwtOTYxMz
-Y1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTks
-MTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbLTE5MDY3NTE1MTQsNzMyNzExNTI4LC05Nj
+EzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMx
+OSwxNTIyOTYxMTE2XX0=
 -->
