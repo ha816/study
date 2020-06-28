@@ -10,9 +10,11 @@ Exclusive Lock(X-Lock)
 
 # MongoDB 엔진의 잠금
 
-MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금으로 나누어 집니다. 
+MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금으로 나누어 집니다. 또 명시적 잠금은 글로벌 잠금뿐이며 나머지 모든 잠금은 묵시적 잠금이다.  데이터베이스 그리고 컬렉션에 대한 잠금은 모두 묵시적인 잠금이며, 쿼리 실행시 자동적으로 획득됐다가 자동으로 해제되는 잠금이다. 
 
 ## 글로벌 잠금
+
+MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금은 글로벌 잠금뿐이다. 
 
 ## 오브젝트 잠금
 
@@ -21,5 +23,5 @@ MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTM5MzEzMSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbLTIwMjg1NDk2MjEsMTUyMjk2MTExNl19
 -->
