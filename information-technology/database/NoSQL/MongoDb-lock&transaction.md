@@ -10,11 +10,11 @@ Exclusive lock (배타적 잠금)
 Shared lock (공유 잠금)
 : 배타적 잠금과는 다르게 다수의 트랜잭션간의 공유가 가능한 락이다. 쓰기가 아닌 읽기에만 국한되어 있다. 즉 리소스를 다른 사용자가 동시에 읽을 수 있게 하되 변경은 불가하게 하는 것이다. 동일한 데이터에 대해서 shared lock 동시 적용이 가능하다. 
 
-# MongoDB 엔진의 잠금
+## MongoDB 엔진의 잠금
 
 MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금으로 나누어 집니다. 또 명시적 잠금은 글로벌 잠금뿐이며 나머지 모든 잠금은 묵시적 잠금이다.  데이터베이스 그리고 컬렉션에 대한 잠금은 모두 묵시적인 잠금이며, 쿼리 실행시 자동적으로 획득됐다가 자동으로 해제되는 잠금이다. 
 
-## 글로벌 잠금(인스턴스 잠금)
+### 글로벌 잠금(인스턴스 잠금)
 
 MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금은 글로벌 잠금뿐이다. MongoDB 서버 인스턴스에서 단 하나만 있는 잠금이므로, 이를 인스턴스 잠금이라고 한다.  
 
@@ -24,7 +24,7 @@ db.fsyncLock){fsync:1, lock:true}
 
 기본적으로 fsync:1으로 설정하면 아직 디스크에 기록되지 못한 데이터(캐시, 메모리) 모두 디스크로 기록합니다. lock:true 옵션이 있으면 글로벌 잠금을 획득하게 되는데, 이는 쓰기 잠금이지 읽기 잠금은 아닙니다. 
 
-## 오브젝트 잠금
+### 오브젝트 잠금
 
 MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨 잠금 방식을 방식을 지원했습니다.
 
@@ -88,7 +88,7 @@ MongoDB Instance > DB > Collection > Document
 
 즉 실제로는 그 문서가 변경되기 전에 버전을 읽는 것이므로 별도의 잠금이 필요로 하지 않는것이다. 
 
-# 잠금 Yield
+## 잠금 Yield
 
 쿼리를 실행하는 도중에 잠시 쉬었다가 쿼리 실행을 재개하는 것을 MongoDB에선 양보(Yield)라고 한다. 단순히 쿼리를 멈추고 잠깐 쉬는(sleep) 것이 아니라, 처리 중인 쿼리를 위해서 획득했던 잠금까지 모두 해제하고 일정시간 쉬게 된다.
 
@@ -101,9 +101,11 @@ Yield를 실행하는 규칙은 아래와 같다.
 * 쿼리가 지정된 건수의 문서를 읽는 경우(128건)
 * 쿼리가 지정된 시간동안 수행된 경우(10ms)
 
-## 잠금 진단
+기본적으로 잠금 판단을 위해선 db.currentOp() 명령어를 사용하면 알 수 있다. 
 
-# 트랜잭셔
+
+
+# 트랜잭션
 
 
 
@@ -113,7 +115,7 @@ Yield를 실행하는 규칙은 아래와 같다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjI2ODU4NTgsNzMyNzExNTI4LC05Nj
-EzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMx
-OSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbMTI2MDU3NTc5MSw3MzI3MTE1MjgsLTk2MT
+M2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5
+LDE1MjI5NjExMTZdfQ==
 -->
