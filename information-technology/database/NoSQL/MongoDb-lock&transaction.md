@@ -90,7 +90,13 @@ MongoDB Instance > DB > Collection > Document
 
 # 잠금 Yield
 
-쿼리를 실행하는 도중에 잠시 쉬었다가 쿼리 실행을 재개하는 것을 MongoDB에선 양보(Yield)라고 한다. 단순히 쿼리를 멈추고 잠깐 쉬는(sleep) 것이 아니라, 처리 중인 쿼리를 위해서 획득했던 잠금까지 모두 해제하는
+쿼리를 실행하는 도중에 잠시 쉬었다가 쿼리 실행을 재개하는 것을 MongoDB에선 양보(Yield)라고 한다. 단순히 쿼리를 멈추고 잠깐 쉬는(sleep) 것이 아니라, 처리 중인 쿼리를 위해서 획득했던 잠금까지 모두 해제하고 일정시간 쉬게 된다.
+
+```
+db.users.find({non_indexed_field:"value"})
+```
+
+이 쿼리를 실행하게 되면, ㅑㄴ 잠금
 
 
 
@@ -100,7 +106,7 @@ MongoDB Instance > DB > Collection > Document
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDY3NDEzNjcsNzMyNzExNTI4LC05Nj
-EzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMx
-OSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbNTc3NTIyNTYxLDczMjcxMTUyOCwtOTYxMz
+Y1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTks
+MTUyMjk2MTExNl19
 -->
