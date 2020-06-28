@@ -33,6 +33,10 @@ MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨
 
 MongoDB에서는 S(Shared Lock), X(Exclusive Lock), 그리고 IS(Intent Shared Lock)과 IX(Intent Exclusive Lock)을 제공한다. IS와 IX는 의도를 표현하는 잠금인데 묶어서 인텐션 잠금이라도도 한다. 
 
+IS는 컬렉션이나 문서 레벨에 Shared Lock을 걸거이라는 의도를 나타냅
+
+lock holder is willing to apply a Shared (**S**) lock on Collection or Document level.
+
 MongoDB에서는 글로벌 잠금, 데이터베이스, 컬렉션 3개 레벨의 오브젝트에 대해서 잠금을 지원한다.
 
 || Intent Shared| Intent Exclusive| Shared| Exclusive |
@@ -57,7 +61,7 @@ db.orders.update({user_id:2}, {$set: {order_state:"prepare"}})
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNTIyODM0NSwtOTYxMzY1MzYsMTE1Nz
+eyJoaXN0b3J5IjpbLTI2MzAzODg4NSwtOTYxMzY1MzYsMTE1Nz
 Q4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTEx
 Nl19
 -->
