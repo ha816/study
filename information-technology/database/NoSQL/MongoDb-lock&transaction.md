@@ -96,7 +96,11 @@ MongoDB Instance > DB > Collection > Document
 db.users.find({non_indexed_field:"value"})
 ```
 
-이 쿼리를 실행하게 되면, ㅑㄴ 잠금
+Yield를 실행하는 규칙은 아래와 같다.
+
+* 쿼리가 지정된 건수의 문서를 읽는 경우(128건)
+* 쿼리가 지정된 시간동안 수행된 경우(10ms)
+
 
 
 
@@ -106,7 +110,7 @@ db.users.find({non_indexed_field:"value"})
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc3NTIyNTYxLDczMjcxMTUyOCwtOTYxMz
+eyJoaXN0b3J5IjpbMzU3Nzg4NjY0LDczMjcxMTUyOCwtOTYxMz
 Y1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTks
 MTUyMjk2MTExNl19
 -->
