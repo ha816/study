@@ -120,6 +120,8 @@ WiredTiger는 Serializable 수준의 격리 수준은 제공하지 않는다.
 
 데이터를 변경하는 작업 도중에 MongoDB 서버는 쓰기 충돌이 발생할 수 있다. 
 
+MongoDB 서버는 변경하고자 하는 문서가 이미 다른 커넥션에 의해서 잠금이 걸려 있으면 즉시 업데이트 실행을 취소한다. 그리곤 WriteConflict Exception에러을 반환 받아, 같은 업데이트 문장을 재실행한다. 이런 재처리 과정은 MongDBㄴ
+
 
 
 
@@ -128,7 +130,7 @@ WiredTiger는 Serializable 수준의 격리 수준은 제공하지 않는다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNDc1NjIwMyw3MzI3MTE1MjgsLTk2MT
-M2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5
-LDE1MjI5NjExMTZdfQ==
+eyJoaXN0b3J5IjpbNzIwNjY2NzA1LDczMjcxMTUyOCwtOTYxMz
+Y1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTks
+MTUyMjk2MTExNl19
 -->
