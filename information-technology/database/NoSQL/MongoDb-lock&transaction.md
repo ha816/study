@@ -55,7 +55,9 @@ session-2: db.orders.update({user_id:2}, {$set: {order_state:"prepare"}})
 
 session-1은 orders 컬렉션의 데이터를 변경하므로 orders 데이터베이스에 대해 IX 잠금을 필요로 합니다. 그리고 orders  컬렉션에 X잠금을 걸어야 한다. 
 
-마찬가지로 session-2도 동일하게 orders 컬렉션의 데이터를 변경하므로 orders 데이터베이스에 대해서 IX잠금을 걸고  
+마찬가지로 session-2도 동일하게 orders 컬렉션의 데이터를 변경하므로 orders 데이터베이스에 대해서 IX잠금을 걸고 orders 컬렉션에 X잠금을 필요로 한다. 
+
+표를 보면, IXwk 
 
 
 
@@ -64,7 +66,7 @@ session-1은 orders 컬렉션의 데이터를 변경하므로 orders 데이터�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU1OTgxNDA5LC05NjEzNjUzNiwxMTU3ND
-g2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2
-XX0=
+eyJoaXN0b3J5IjpbMTMzOTUzNTMzNiwtOTYxMzY1MzYsMTE1Nz
+Q4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTEx
+Nl19
 -->
