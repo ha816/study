@@ -31,7 +31,10 @@ MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨
 > Multiple Granularity Locking(다중 레벨 잠금방식)
 > 계층형 오브젝트에 대한 동시성 처리를 위해서 다중 레벨의 잠금 방식
 
-MongoDB에서는 S(Shared Lock), X(Exclusive Lock), 그리고 IS(Intent Shared
+MongoDB에서는 S(Shared Lock), X(Exclusive Lock), 그리고 IS(Intent Shared Lock)과 IX(Intent Exclusive Lock)을 제공한다. IS와 IX는 의도를 표현하는 잠금인데 묶어서 인텐션 잠금이라도도 한다. 
+
+
+
 
 
 # 스토리지 엔진의 잠금
@@ -39,6 +42,6 @@ MongoDB에서는 S(Shared Lock), X(Exclusive Lock), 그리고 IS(Intent Shared
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE5NDMyNjUsMTE1NzQ4Njg0OCwxODY0OT
-M2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbLTk2MTM2NTM2LDExNTc0ODY4NDgsMTg2ND
+kzNjY5MywtNjk0NTM5MzE5LDE1MjI5NjExMTZdfQ==
 -->
