@@ -33,9 +33,12 @@ MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨
 
 MongoDB에서는 S(Shared Lock), X(Exclusive Lock), 그리고 IS(Intent Shared Lock)과 IX(Intent Exclusive Lock)을 제공한다. IS와 IX는 의도를 표현하는 잠금인데 묶어서 인텐션 잠금이라도도 한다. 
 
-IS는 컬렉션이나 문서 레벨에 Shared Lock을 걸거이라는 의도를 나타냅니다. 이는 현재 쓰레드가 특정 오브젝트에 대해 Lock을 걸 의도를 가지고 있
-
+IS는 컬렉션이나 문서 레벨에 Shared Lock을 걸거이라는 의도를 나타냅니다. 
 IX는 마찬가지로 컬렉션이나 문서 레벨에 Exclusive Lock을 걸거이라는 의도를 나타냅니다. 
+
+Intent Lock은 현재 쓰레드가 특정 오브젝트에 대해 Lock을 걸 의도를 가지고 있지만, 다른 변경의도를 가진 락(Intent Lock)도 허용하는 형태의 잠금입니다. 
+
+
 
 MongoDB에서는 글로벌 잠금, 데이터베이스, 컬렉션 3개 레벨의 오브젝트에 대해서 잠금을 지원한다.
 
@@ -73,9 +76,12 @@ session-2: db.orders.update({user_id:2}})
 
 WirtedTiger는 다른 DBMS처럼 문서(레코드) 기반의 잠금을 사용한다. 하지만 다양한 레벨의 DB 오브젝트에 대한 잠금을 위해 다중 레벨의 잠금 방식도 같이 사용한다. (Multiple Granularity Locking) 
 
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjY1NTg5NDAsLTk2MTM2NTM2LDExNT
-c0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5LDE1MjI5NjEx
-MTZdfQ==
+eyJoaXN0b3J5IjpbNTUxMzY3MjEwLC05NjEzNjUzNiwxMTU3ND
+g2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2
+XX0=
 -->
