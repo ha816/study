@@ -124,6 +124,8 @@ MongoDB 서버는 변경하고자 하는 문서가 이미 다른 커넥션에 �
 
 이렇게 하나의 다큐먼트에 대해서 변경이 집중되면 순강적으로 재처리 과정이 반복 실행되면서 서버 성능이 떨어질수 있다. 
 
+MongoDB 서버에서 WriteConflict Exception이 얼마나 발생했는지는 db.serverStatus() 명령으로 확인할 수 있다. Write Conflict 성능 튜닝을 위해선 
+
 
 
 
@@ -132,7 +134,7 @@ MongoDB 서버는 변경하고자 하는 문서가 이미 다른 커넥션에 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MDg4OTgyNSw3MzI3MTE1MjgsLTk2MT
-M2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5
-LDE1MjI5NjExMTZdfQ==
+eyJoaXN0b3J5IjpbLTEzMDM1NjE2NjMsLTU4MDg4OTgyNSw3Mz
+I3MTE1MjgsLTk2MTM2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5
+MywtNjk0NTM5MzE5LDE1MjI5NjExMTZdfQ==
 -->
