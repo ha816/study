@@ -78,13 +78,17 @@ WirtedTiger는 다른 DBMS처럼 문서(레코드) 기반의 잠금을 사용한
 
 MongoDB의 각 DB 오브젝트는 계층 구조를 가지는데, 각 계층 구조에서 하위 오브 젝트에 대한 잠금을 획득하려면, 상위 계층의 인텐션 잠금을 먼저 획득해야 한다. 
 
+MongoDB Instance > DB > Collection > Document
 
+특정 문서를 변경하려면 EX락을 획득해야 하는데, 먼저 글로벌 인텐션 잠금, 데이터베이스 인텐션 잠금 그리고 컬렉션 인텐션 잠금을 가져야 한다 
+
+특정 문서를 읽으려면 동일하
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTkyNzA5ODYsLTk2MTM2NTM2LDExNT
-c0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5LDE1MjI5NjEx
-MTZdfQ==
+eyJoaXN0b3J5IjpbNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3ND
+g2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2
+XX0=
 -->
