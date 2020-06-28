@@ -8,7 +8,7 @@ Exclusive lock (배타적 잠금)
 : 쓰기 잠금(Write lock)이라고도 불린다. 왜냐하면 어떤 트랜잭션에서 데이터를 변경하고자 할 때, 쓰이는 잠금이라 그렇다. 배타적 잠금이 걸리면, 트랜잭션이 완료될 때까지 해당 테이블 혹은 레코드(row)를 다른 트랜잭션에서 읽거나 쓰지 못하게 된다. exclusive lock이 특정 데이터에 걸리면 shared lock을 걸 수 없고 exclusive lock도 걸수 없습니다.
 
 Shared lock (공유 잠금)
-: 읽기 잠금(Read lock)이라고도 불린다. 읽긴
+: 배타적 잠금과는 다르게 
 리소스를 다른 사용자가 동시에 읽을 수 있게 하되 변경은 불가하게 하는 것이다.
 어떤 데이터에는 shared lock이 동시에 여러개 적용될 수 있다.
 어떤 자원에 shared lock이 하나라도 걸려있으면 exclusive lock을 걸 수 없다.
@@ -30,6 +30,6 @@ MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금은 글로
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMDQ1NDA5OSwxODY0OTM2NjkzLC02OT
-Q1MzkzMTksMTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbLTM5MTA0NDk0LDE4NjQ5MzY2OTMsLTY5ND
+UzOTMxOSwxNTIyOTYxMTE2XX0=
 -->
