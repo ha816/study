@@ -64,19 +64,18 @@ session-1: db.orders.find({user_id:1}})
 session-2: db.orders.update({user_id:2}})
 ```
 
-두 데이터를 조회만 하는 경우라면, orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S잠금또한 필요하다. 
-
-
- 
-
+두 데이터를 조회만 하는 경우라면, orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S잠금또한 필요하다. 다행히 S잠금간에는 호완이 가능하기 때문에 두 커넥션은 동시에 수행이 된다. 
 
 
 # 스토리지 엔진의 잠금
 
+스토리지 엔진이라고 했지만, 기본적으로 WiredTiger 스토리지 엔진에 대한 설명이 메인이다. 
+
+WirtedTiger는 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzM3MzE1NDEsLTk2MTM2NTM2LDExNT
-c0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5LDE1MjI5NjEx
-MTZdfQ==
+eyJoaXN0b3J5IjpbMTgzNzI5ODUzNywtOTYxMzY1MzYsMTE1Nz
+Q4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTEx
+Nl19
 -->
