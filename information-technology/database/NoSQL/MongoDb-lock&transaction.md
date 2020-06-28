@@ -57,7 +57,16 @@ session-1은 orders 컬렉션의 데이터를 변경하므로 orders 데이터�
 
 마찬가지로 session-2도 동일하게 orders 컬렉션의 데이터를 변경하므로 orders 데이터베이스에 대해서 IX잠금을 걸고 orders 컬렉션에 X잠금을 필요로 한다. 
 
-표를 보면, IXwk 
+표를 보면, IX잠금은 동시에 사용 또는 획득할 수 있지만, orders 컬렉션의 X잠금은 동시에 불가능하기 때문에 세션별로 처리를 할수 박에 없다. 
+
+```
+session-1: db.orders.find({user_id:1}})
+session-2: db.orders.update({user_id:2}})
+```
+
+
+
+ 
 
 
 
@@ -66,7 +75,7 @@ session-1은 orders 컬렉션의 데이터를 변경하므로 orders 데이터�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzOTUzNTMzNiwtOTYxMzY1MzYsMTE1Nz
-Q4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTEx
-Nl19
+eyJoaXN0b3J5IjpbNTY2MzA4NjQxLC05NjEzNjUzNiwxMTU3ND
+g2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2
+XX0=
 -->
