@@ -42,7 +42,7 @@ Integer Exclusive| O| O |X|X|
 Shared| O| X | O|X|
 Exclusive| X | X | X|X|
 
-위 표는 잠금들 간의 상호 상
+위 표는 잠금들 간의 상호 사용 관계를 나타냅니다. 
 
 
 # 스토리지 엔진의 잠금
@@ -50,7 +50,7 @@ Exclusive| X | X | X|X|
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNjgwMjQ2LC05NjEzNjUzNiwxMTU3ND
+eyJoaXN0b3J5IjpbMzYxOTI4MzA5LC05NjEzNjUzNiwxMTU3ND
 g2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2
 XX0=
 -->
