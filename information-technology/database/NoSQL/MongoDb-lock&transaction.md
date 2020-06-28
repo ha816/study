@@ -138,11 +138,14 @@ MongoDB 서버는 처음부터 단일 다큐먼트의 트랜잭션만 지원하�
 MongoDB 서버에서는 MMAPv1 스토리지 엔진에서 사용가능한 READ-COMMITED와 WiredTiget에서 사용가능한 SNAPSHOT(RPEATABLE-READ가 있다. 
 
 
-## READ-COMMITED
+>READ-COMMITED
+>다른 세션의 변경 내용이 커밋되어야 다른 세션에서도 영향을 미친다. 
 
-다른 세션의 변경 내용이 커밋되어야 다른 세션에서도 영향을 미친다. 
+>SNAPSHOT
+>하나의 트랜잭션에서는 반복된 읽기를 해도 항상 같은 결과가 나온다.
 
-### 
+## MongoDB 서버의 격리 수준
+
 
 
 
@@ -151,7 +154,7 @@ MongoDB 서버에서는 MMAPv1 스토리지 엔진에서 사용가능한 READ-CO
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMDIyOTQ0LC01ODA4ODk4MjUsNzMyNz
-ExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMs
-LTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbLTgzNDMzODk5NCwtNTgwODg5ODI1LDczMj
+cxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwxODY0OTM2Njkz
+LC02OTQ1MzkzMTksMTUyMjk2MTExNl19
 -->
