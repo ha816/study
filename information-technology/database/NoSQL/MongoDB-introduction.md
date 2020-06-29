@@ -11,7 +11,7 @@ MongoDB는 오픈소스 문서지향(Document-Oriented)적 Cross-platform 데이
 ![A comparative study: MongoDB vs. MySQL | Semantic Scholar](https://d3i71xaburhd42.cloudfront.net/0e95cbfe845adf8d05c1ba0110d6c0d28895e9a8/2-TableI-1.png)
 데이터를 저장하는 자료 구조 관점에서 MongoDB와 MySQL은 많은 공통점이 있습니다. 단지 호칭이 조금 다를뿐입니다.
 
-아마도 MongoDB와 RDBMS를 구분 지어줄수 있는 가장 좋은 단어는 스키마 프리(Schema-Free)일 것 같습니다. 사용할 컬럼을 미리 정의하지 않고 언제든 필요한 시점에 데이터를 컬렉션에 저장할 수 있습니다.
+아마도 MongoDB와 RDBMS를 구분 지어줄수 있는 가장 좋은 단어는 스키마 프리(Schema-Free)일 것 같습니다. MySQL의 테이블과 스키마와는 다르게 MongoDB에선 사용할 컬럼을 미리 정의하지 않고 언제든 필요한 시점에 데이터를 컬렉션에 저장할 수 있습니다. 
 
 ### Document 
 Document는 RDMS의 record 또는 row에 대응하는 데이터 구조입니다. 한 개 이상의 key-value pair로 구성됩니다.
@@ -32,9 +32,7 @@ RDMS의, Table에 대응합니다. 하지만 RDMS와 달리 schema를 따로 가
 
 ![A collection of MongoDB documents.](https://docs.mongodb.com/manual/_images/crud-annotated-collection.bakedsvg.svg)
 
-
-
-## BSON
+### BSON
 
 BSON은 간단히 말하자면 "Binary JSON"입니다. BSON의 이진 구조는 타입과 길이 정보를 인코드하여 훨씬 빠르게 파싱되도록 합니다.
 
@@ -57,7 +55,7 @@ hello\x00                  // field name
 
 JSON을 그대로 사용하는 다른 시스템과는 다르게, MongoDB는 BSON을 이용해서 강력한 인덱스와 쿼리  특성을 제공합니다. 여기서 쿼리 특성이라 하면, 찾거나 수정할 Objects를 JSON/BSON 문서내의 특정 키로 찾을 수 있습니다. 심지어 다수의 레이어로 중첩된 문서에 대해서도 가능합니다.
 
-### JSON vs BSON
+#### JSON vs BSON
 
 || JSON | BSON|
 |--|--|--|
@@ -71,7 +69,7 @@ BSON이 JSON가 다른 점 한가지는 BSON이 더욱 진보된 형태의 데�
 
 대다수 서버측 프로그래밍 언어는 훨씬 복잡한 숫자형 타입을 가지고 있습니다 (integer, floating point, double 등등), 각 숫자형 타입은 효과적인 수학적 연산을 위해 고유한 최적의 사용법을 가지고 있습니다.
 
-## BSON Extended Types
+### BSON Extended Types
 
 ### ObjectId
 
@@ -167,8 +165,8 @@ secondary는 primary가 사용불가 상태가 되면, 투표를 통해서 prima
 
 샤딩된 구조에서 응용 프로그램은 반드시 mongos(MongoDB Router)를 사용해야 합니다. MongoDB 라우터는 자동으로 MongoDB 컨피그 서버로 부터 각 샤드가 가지고 있는 데이터에 대한 메타 정보들을 참조하여 쿼리를 실행합니다.  그 뿐만 아니라 결과를 정렬 및 병합하는 처리도 수행합니다. 라우터는 각 샤드간의 데이터가 재분배되는 시점에도 동일한 일을 수행하여 사용자나 응용 프로그램이 알아채지 못하게 투명하게 데이터 밸런싱 작업을 처리합니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMTUxMDk4Myw0NDkwMzE0NjcsLTUyOT
-EzNDI2NSw4NDE2MTI5OTEsNTgyNzc1MDA1LC0xNzYxNjMwOTgw
-LDE3ODAxNDcwNTEsMTQyMzA4MDM5OCwtNTM1NzY0ODA5LDE3MD
-Y1NTQxMjQsOTgyMzYwNDQyLDQ2Mjc3NTc4M119
+eyJoaXN0b3J5IjpbLTE1Mjc1MDQzNTgsNDQ5MDMxNDY3LC01Mj
+kxMzQyNjUsODQxNjEyOTkxLDU4Mjc3NTAwNSwtMTc2MTYzMDk4
+MCwxNzgwMTQ3MDUxLDE0MjMwODAzOTgsLTUzNTc2NDgwOSwxNz
+A2NTU0MTI0LDk4MjM2MDQ0Miw0NjI3NzU3ODNdfQ==
 -->
