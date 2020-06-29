@@ -25,7 +25,7 @@ WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free
 
 WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 데이터 파일과 서버 장애 발생시 데이터를 복구하기 위한 저널 로그(WAL, Write Ahead Log, Logging)를 가지고 있습니다. 
 
-기본적으로 MongoDB는 문서 단위에 Transactions
+기본적으로 MongoDB는 단일 문서 단위에 Transactions을 보장합니다. 
 
 
 
@@ -40,7 +40,7 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODI5MjI1MywtMTk5NjQxMDk0NCw4MD
+eyJoaXN0b3J5IjpbMTkwNDQ4OTgyNSwtMTk5NjQxMDk0NCw4MD
 g0MTI2NDQsLTE1NTI1Mjc5MDAsLTg4MjAwMzkyLC0xNTMxOTk4
 OTYsMTg0ODQxNDIyMCwtNTkzNDcxODQxLC03NjQxNTA5MDYsLT
 ExMzc3MTgwMjAsMTM3MzM1ODk3MiwtMTM3NDUxNjk4N119
