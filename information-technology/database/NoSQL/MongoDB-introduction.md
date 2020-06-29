@@ -134,13 +134,11 @@ brew services stop mongodb-community
 
 # MongoDB 배포형태
 
-## StandAlone
+## StandAlone(단일노드)
 
-단일 노드로 MongoDB를 사용할때는 어떤 다른 컴포넌트도 필요하지 않습니다. 마치 기존의  RDBMS가 동작하는 방식으로, 이 배포형태를 따르면MongoDB
+단일 노드로 MongoDB를 사용할때는 어떤 다른 컴포넌트도 필요하지 않습니다. 마치 기존의  RDBMS가 동작하는 방식이며 이 배포형태를 따르면 MongoDB는 복제를 위한 로그(OpLog)를 별도로 기록하지 않으며, 다른 노드와의 통신도 필요하지 않습니다. 이러한 형태는 보통 개발 서버의 구성에 사용됩니다.
 
-
-
-## Single Replica set
+## Single Replica set(단일 레플리카 셋)
 
 ##
 
@@ -173,7 +171,7 @@ secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI1MDk3NjM5LC0xNzYxNjMwOTgwLDE3OD
+eyJoaXN0b3J5IjpbNTgyNzc1MDA1LC0xNzYxNjMwOTgwLDE3OD
 AxNDcwNTEsMTQyMzA4MDM5OCwtNTM1NzY0ODA5LDE3MDY1NTQx
 MjQsOTgyMzYwNDQyLDQ2Mjc3NTc4M119
 -->
