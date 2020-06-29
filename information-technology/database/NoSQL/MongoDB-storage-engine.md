@@ -30,9 +30,11 @@ WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 �
 
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0ODQxNDIyMCwtNTkzNDcxODQxLC03Nj
-QxNTA5MDYsLTExMzc3MTgwMjAsMTM3MzM1ODk3MiwtMTM3NDUx
-Njk4N119
+eyJoaXN0b3J5IjpbLTE1MzE5OTg5NiwxODQ4NDE0MjIwLC01OT
+M0NzE4NDEsLTc2NDE1MDkwNiwtMTEzNzcxODAyMCwxMzczMzU4
+OTcyLC0xMzc0NTE2OTg3XX0=
 -->
