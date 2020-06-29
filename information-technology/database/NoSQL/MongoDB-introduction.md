@@ -117,29 +117,16 @@ timestamp 값이 빈 상태인 top-level 문서를 삽입하면, MongoDB가 빈 
 BSON Date는 64bit 정수형으로 Unix epoch (Jan 1, 1970) 이후로 milliseconds의 수를 나타냅니다. 
 공식적인 BSON Date 타입은 UTC datetime입니다. 
 BSON은 양수 값을 가지며, 음수값의 경우는 1970년 이전을 나타냅니다. 
+   
+# MongoDB 구축 형태
 
-    
-# Operations
+## Standalone(단일노드)
 
-`launchd` 런치를 위한 데몬에게 `mongod` 몽고 DB를 위한 데몬을 시작 또는 다시 시작하게 하고 싶다면 아래 명령어를 사용합시다. 
-
-```
-brew services start mongodb-community
-```
-반대로 서버 인스턴스를 멈추고 싶다면 아래 명령어를 수행합시다. 
-```
-brew services stop mongodb-community
-```
-
-# MongoDB 구축형태
-
-## StandAlone(단일노드)
-
-단일 노드로 MongoDB를 사용할때는 어떤 다른 컴포넌트도 필요하지 않습니다. 마치 기존의  RDBMS가 동작하는 방식이며 이 배포형태를 따르면 MongoDB는 복제를 위한 로그(OpLog)를 별도로 기록하지 않으며, 다른 노드와의 통신도 필요하지 않습니다. 이러한 형태는 보통 개발 서버의 구성에 사용됩니다.
+단일 노드로 MongoDB를 사용할때는 어떤 다른 컴포넌트도 필요하지 않습니다. 이 배포형태를 따르면 MongoDB는 복제를 위한 로그(OpLog)를 별도로 기록하지 않으며, 다른 노드와의 통신도 필요하지 않습니다. 이러한 형태는 보통 개발 서버의 구성에 사용됩니다.
 
 ## Single Replica Set(단일 레플리카 셋)
 
-단일 레플리카 셋 구조에서도 별도의 관리용 컴포넌트가 필요하지는 않지만, 구축을 위해서 추가 MongoDB 서버가 필요합니다. 레플리카 셋의 특징은 서버에 장애가 발생하면 자동 복구가 되는 최소단위 이기 때문에 자동 복구가 필요하다면 항상 레플리카 셋을 구축해야 합니다. 레플리카 셋의 각 구성원은 하나의 mongod 인스턴스 가집니다.
+단일 레플리카 셋 구조에서도 별도의 관리용 컴포넌트가 필요하지는 않지만, 구축을 위해서 추가 MongoDB 서버가 필요합니다. 레플리카 셋의 특징은 서버에 장애가 발생하면 자동 복구가 되는 최소단위자동 복구가 필요하다면 항상 레플리카 셋을 구축해야 합니다. 레플리카 셋의 각 구성원은 하나의 mongod 인스턴스 가집니다.
 
 ### Primary
 
@@ -165,7 +152,7 @@ secondary는 primary가 사용불가 상태가 되면, 투표를 통해서 prima
 
 샤딩된 구조에서 응용 프로그램은 반드시 mongos(MongoDB Router)를 사용해야 합니다. MongoDB 라우터는 자동으로 MongoDB 컨피그 서버로 부터 각 샤드가 가지고 있는 데이터에 대한 메타 정보들을 참조하여 쿼리를 실행합니다.  그 뿐만 아니라 결과를 정렬 및 병합하는 처리도 수행합니다. 라우터는 각 샤드간의 데이터가 재분배되는 시점에도 동일한 일을 수행하여 사용자나 응용 프로그램이 알아채지 못하게 투명하게 데이터 밸런싱 작업을 처리합니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjc1MDQzNTgsNDQ5MDMxNDY3LC01Mj
+eyJoaXN0b3J5IjpbLTE1ODExNTAyMDEsNDQ5MDMxNDY3LC01Mj
 kxMzQyNjUsODQxNjEyOTkxLDU4Mjc3NTAwNSwtMTc2MTYzMDk4
 MCwxNzgwMTQ3MDUxLDE0MjMwODAzOTgsLTUzNTc2NDgwOSwxNz
 A2NTU0MTI0LDk4MjM2MDQ0Miw0NjI3NzU3ODNdfQ==
