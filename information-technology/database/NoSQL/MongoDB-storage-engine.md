@@ -25,6 +25,8 @@ WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free
 
 WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 데이터 파일과 서버 장애 발생시 데이터를 복구하기 위한 저널 로그(WAL, Write Ahead Log, Logging)를 가지고 있습니다. 
 
+기본적으로 쓰기 작업에서 Transactions를 통해 
+
 
 
 공유캐시(Cache)
@@ -38,8 +40,8 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MDQyODEzNSw4MDg0MTI2NDQsLTE1NT
-I1Mjc5MDAsLTg4MjAwMzkyLC0xNTMxOTk4OTYsMTg0ODQxNDIy
-MCwtNTkzNDcxODQxLC03NjQxNTA5MDYsLTExMzc3MTgwMjAsMT
-M3MzM1ODk3MiwtMTM3NDUxNjk4N119
+eyJoaXN0b3J5IjpbLTE5OTY0MTA5NDQsODA4NDEyNjQ0LC0xNT
+UyNTI3OTAwLC04ODIwMDM5MiwtMTUzMTk5ODk2LDE4NDg0MTQy
+MjAsLTU5MzQ3MTg0MSwtNzY0MTUwOTA2LC0xMTM3NzE4MDIwLD
+EzNzMzNTg5NzIsLTEzNzQ1MTY5ODddfQ==
 -->
