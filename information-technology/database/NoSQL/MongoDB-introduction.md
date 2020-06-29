@@ -132,6 +132,16 @@ brew services start mongodb-community
 brew services stop mongodb-community
 ```
 
+# MongoDB 배포형태
+
+## StandAlone
+
+
+
+## Single Replica set
+
+##
+
 # Replica set 
 
 replica set은 mongd 프로세스들의 집합입니다. 또 각 mongd 프로세스는 아래 두 역할군으로 나뉘어 집니다. 
@@ -161,7 +171,7 @@ secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01Mz
-U3NjQ4MDksMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNzc1Nzgz
-XX0=
+eyJoaXN0b3J5IjpbLTE3NjE2MzA5ODAsMTc4MDE0NzA1MSwxND
+IzMDgwMzk4LC01MzU3NjQ4MDksMTcwNjU1NDEyNCw5ODIzNjA0
+NDIsNDYyNzc1NzgzXX0=
 -->
