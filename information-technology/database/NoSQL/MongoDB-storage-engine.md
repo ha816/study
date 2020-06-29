@@ -31,15 +31,15 @@ WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 �
 
 Page read/write(I/O)
 
-Block Management(Eviction, reconciliation; 친해직)
+Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzIwMzQwMCwtODgyMDAzOTIsLTE1Mz
-E5OTg5NiwxODQ4NDE0MjIwLC01OTM0NzE4NDEsLTc2NDE1MDkw
-NiwtMTEzNzcxODAyMCwxMzczMzU4OTcyLC0xMzc0NTE2OTg3XX
-0=
+eyJoaXN0b3J5IjpbLTE1NTI1Mjc5MDAsLTg4MjAwMzkyLC0xNT
+MxOTk4OTYsMTg0ODQxNDIyMCwtNTkzNDcxODQxLC03NjQxNTA5
+MDYsLTExMzc3MTgwMjAsMTM3MzM1ODk3MiwtMTM3NDUxNjk4N1
+19
 -->
