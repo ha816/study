@@ -10,6 +10,7 @@ MongoDB는 오픈소스 문서지향(Document-Oriented)적 Cross-platform 데이
 
 
 
+
 ## Document & Collection
 
 Document는 RDMS의 record 또는 row에 대응하는 데이터 구조입니다. 한 개 이상의 key-value pair로 구성됩니다.
@@ -159,6 +160,6 @@ secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTcxMDM2ODQsLTUzNTc2NDgwOSwxNz
-A2NTU0MTI0LDk4MjM2MDQ0Miw0NjI3NzU3ODNdfQ==
+eyJoaXN0b3J5IjpbMTQyMzA4MDM5OCwtNTM1NzY0ODA5LDE3MD
+Y1NTQxMjQsOTgyMzYwNDQyLDQ2Mjc3NTc4M119
 -->
