@@ -126,7 +126,7 @@ BSON은 양수 값을 가지며, 음수값의 경우는 1970년 이전을 나타
 
 ## Single Replica Set(단일 레플리카 셋)
 
-단일 레플리카 셋 구조에서도 별도의 관리용 컴포넌트가 필요하지는 않지만, 구축을 위해서 추가 MongoDB 서버가 필요합니다. 레플리카 셋은 서버에 장애가 발생하면 자동 복구가 되는 최소 단위이기 때문에 자동복구 기능을 위해선 항상 레플리카 셋을 구축해야 합니다. 레플리카 셋의 각 구성원은 하나의 mongod 인스턴스에 대응합니다.
+단일 레플리카 셋 구조에선 추가 MongoDB 서버가 필요합니다. 레플리카 셋의 각 구성원은 하나의 mongod 인스턴스에 대응합니다. 레플리카 셋은 서버에 장애가 발생하면 자동 복구가 되는 최소 단위이기 때문에 자동복구 기능을 위해선 항상 레플리카 셋을 구축해야 합니다. 레플리카 셋의 구성원은 
 
 ### Primary
 
@@ -152,9 +152,9 @@ secondary는 primary가 사용불가 상태가 되면, 투표를 통해서 prima
 
 샤딩된 구조에서 응용 프로그램은 반드시 mongos(MongoDB Router)를 사용해야 합니다. MongoDB 라우터는 자동으로 MongoDB 컨피그 서버로 부터 각 샤드가 가지고 있는 데이터에 대한 메타 정보들을 참조하여 쿼리를 실행합니다.  그 뿐만 아니라 결과를 정렬 및 병합하는 처리도 수행합니다. 라우터는 각 샤드간의 데이터가 재분배되는 시점에도 동일한 일을 수행하여 사용자나 응용 프로그램이 알아채지 못하게 투명하게 데이터 밸런싱 작업을 처리합니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1ODg0NDQzLDQxNDc2OTYxNyw0NDkwMz
-E0NjcsLTUyOTEzNDI2NSw4NDE2MTI5OTEsNTgyNzc1MDA1LC0x
-NzYxNjMwOTgwLDE3ODAxNDcwNTEsMTQyMzA4MDM5OCwtNTM1Nz
-Y0ODA5LDE3MDY1NTQxMjQsOTgyMzYwNDQyLDQ2Mjc3NTc4M119
-
+eyJoaXN0b3J5IjpbMTg5NTcxNjEzOSw0MTQ3Njk2MTcsNDQ5MD
+MxNDY3LC01MjkxMzQyNjUsODQxNjEyOTkxLDU4Mjc3NTAwNSwt
+MTc2MTYzMDk4MCwxNzgwMTQ3MDUxLDE0MjMwODAzOTgsLTUzNT
+c2NDgwOSwxNzA2NTU0MTI0LDk4MjM2MDQ0Miw0NjI3NzU3ODNd
+fQ==
 -->
