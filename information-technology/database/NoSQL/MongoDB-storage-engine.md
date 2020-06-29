@@ -10,9 +10,12 @@ MySQL과 비슷하게 MongoDB도 다양한 스토리지 엔진을 사용할 수 
 
 MongoDB가 처음 출시되었을때 부터 사용되던 스토리지 엔진.
 
-컬렉션 수
+컬렉션 수준의 잠금을 지원합니다.
+자체적으로 내장된 캐시 기능이 없어 운영체제의 캐시를 사용합니다. 이는 커널이 제공하는 시스템 콜을 거치게 되기 때문에 오버헤드가 상대적으로 큰 편입니다.
+
+대부분 낮은 버전의 MongoDB의 문제점은 MMAPv1 스토리지 자체가 가지고 있던 단점 때문입니다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNzYyNTMzNywtMTM3NDUxNjk4N119
+eyJoaXN0b3J5IjpbOTEyMjUzNjY1LC0xMzc0NTE2OTg3XX0=
 -->
