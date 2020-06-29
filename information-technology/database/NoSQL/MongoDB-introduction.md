@@ -8,7 +8,7 @@ MongoDB는 오픈소스 문서지향(Document-Oriented)적 Cross-platform 데이
 
 # MongoDB Architecture
 
-
+![](https://webassets.mongodb.com/_com_assets/cms/StorageEngineArchIMG1-gzt2irtzv7.png)
 
 
 ## Document & Collection
@@ -160,6 +160,7 @@ secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzA4MDM5OCwtNTM1NzY0ODA5LDE3MD
-Y1NTQxMjQsOTgyMzYwNDQyLDQ2Mjc3NTc4M119
+eyJoaXN0b3J5IjpbLTExODU1NTkzOTksMTQyMzA4MDM5OCwtNT
+M1NzY0ODA5LDE3MDY1NTQxMjQsOTgyMzYwNDQyLDQ2Mjc3NTc4
+M119
 -->
