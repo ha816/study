@@ -9,7 +9,7 @@ MongoDB는 오픈소스 문서지향(Document-Oriented)적 Cross-platform 데이
 ## Store Data Structure
 
 ![A comparative study: MongoDB vs. MySQL | Semantic Scholar](https://d3i71xaburhd42.cloudfront.net/0e95cbfe845adf8d05c1ba0110d6c0d28895e9a8/2-TableI-1.png)
-데이터를 저장하는 자료 구조 관점에서 MongoDB와 MySQL
+데이터를 저장하는 자료 구조 관점에서 MongoDB와 MySQL은 많은 공통점이 있습니다. 단지 호칭이 조금 다를뿐입니다.
 
 ### Document 
 Document는 RDMS의 record 또는 row에 대응하는 데이터 구조입니다. 한 개 이상의 key-value pair로 구성됩니다.
@@ -164,8 +164,8 @@ secondary는 primary가 사용불가 상태가 되면, 투표를 통해서 prima
 
 샤딩된 구조에서 응용 프로그램은 반드시 mongos(MongoDB Router)를 사용해야 합니다. MongoDB 라우터는 자동으로 MongoDB 컨피그 서버로 부터 각 샤드가 가지고 있는 데이터에 대한 메타 정보들을 참조하여 쿼리를 실행합니다.  그 뿐만 아니라 결과를 정렬 및 병합하는 처리도 수행합니다. 라우터는 각 샤드간의 데이터가 재분배되는 시점에도 동일한 일을 수행하여 사용자나 응용 프로그램이 알아채지 못하게 투명하게 데이터 밸런싱 작업을 처리합니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMzU4ODAyMyw0NDkwMzE0NjcsLTUyOT
-EzNDI2NSw4NDE2MTI5OTEsNTgyNzc1MDA1LC0xNzYxNjMwOTgw
-LDE3ODAxNDcwNTEsMTQyMzA4MDM5OCwtNTM1NzY0ODA5LDE3MD
-Y1NTQxMjQsOTgyMzYwNDQyLDQ2Mjc3NTc4M119
+eyJoaXN0b3J5IjpbNjc0ODM4MTgyLDQ0OTAzMTQ2NywtNTI5MT
+M0MjY1LDg0MTYxMjk5MSw1ODI3NzUwMDUsLTE3NjE2MzA5ODAs
+MTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01MzU3NjQ4MDksMTcwNj
+U1NDEyNCw5ODIzNjA0NDIsNDYyNzc1NzgzXX0=
 -->
