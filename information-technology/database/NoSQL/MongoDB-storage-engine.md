@@ -15,11 +15,15 @@ MySQL과 비슷하게 MongoDB도 다양한 스토리지 엔진을 사용할 수 
 
 MongoDB의 디폴트 스토리지 엔진. 
 
-WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free Algorithm)을 위해서 하자드 포인터(Hazard-P
+WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free Algorithm)을 위해서 하자드 포인터(Hazard-Pointer)나 스킵 리스트(Skip-List)와 같은 많은 신기술을 채택하였습니다. 
+
+추가적으로 잠금 없는 데이터 읽기(Non-blocking consistent read)를 위한 MVCC 기술과 데이터 파일 압축 그리고 암호화 기능을 모두 제공합니다.
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMTE1MDc1NiwtMTEzNzcxODAyMCwxMz
-czMzU4OTcyLC0xMzc0NTE2OTg3XX0=
+eyJoaXN0b3J5IjpbLTE3NjQ4NDcwMTksLTExMzc3MTgwMjAsMT
+M3MzM1ODk3MiwtMTM3NDUxNjk4N119
 -->
