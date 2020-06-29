@@ -140,10 +140,10 @@ brew services stop mongodb-community
 
 ## Single Replica set(단일 레플리카 셋)
 
-단일 레플리카 셋 구조에서도 별도의 관리용 컴포넌트가 필요하지는 않지만, 구축을 위해서 추가 MongoDB 서버가 필요합니다. 레플리카 셋의 특징
+단일 레플리카 셋 구조에서도 별도의 관리용 컴포넌트가 필요하지는 않지만, 구축을 위해서 추가 MongoDB 서버가 필요합니다. 레플리카 셋의 특징은 서버에 장애가 발생하면 자동 복구가 되는 최소단위 이기 때문에 자동 복구가 필요하다면 항상 레플리카 셋을 구축해야 합니다. 
 
 
-## Primary
+### Primary
 
 Primary는 replica set에서 쓰기 연산을 받는 유일한 구성원 입니다. (마치 MySQL 리플리케이션 Master의 역할과 비슷합니다.)
 
@@ -156,7 +156,7 @@ replica set의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 
 
 한 replica set에는 최대한 한개의 primary를 가질 수 있습니다. 만약 현재 primary가 이용 불가상태가 되면, 투표를 통해서 새로운 primary를 뽑습니다.
 
-## Secondaries
+### Secondaries
 
 한 secondary는 primary의 데이터 셋을 복사본을 유지합니다. 복제를 위해서, secondary는 primary oplog에 기록된 연산을 보고 자신의 데이터에 비동기 프로세스를 통해 적용합니다. 
 
@@ -168,7 +168,7 @@ secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNDg4MzIxMSw1ODI3NzUwMDUsLTE3Nj
+eyJoaXN0b3J5IjpbLTQ2NzQ4MTM4NCw1ODI3NzUwMDUsLTE3Nj
 E2MzA5ODAsMTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01MzU3NjQ4
 MDksMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNzc1NzgzXX0=
 -->
