@@ -29,15 +29,17 @@ WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 �
 
 공유캐시(Cache)
 
-Block Management()
+Page read/write()
+
+Block Management(Eviction, )
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMDYzMzU1NywtODgyMDAzOTIsLTE1Mz
-E5OTg5NiwxODQ4NDE0MjIwLC01OTM0NzE4NDEsLTc2NDE1MDkw
-NiwtMTEzNzcxODAyMCwxMzczMzU4OTcyLC0xMzc0NTE2OTg3XX
-0=
+eyJoaXN0b3J5IjpbNTM3NjI3MjE2LC04ODIwMDM5MiwtMTUzMT
+k5ODk2LDE4NDg0MTQyMjAsLTU5MzQ3MTg0MSwtNzY0MTUwOTA2
+LC0xMTM3NzE4MDIwLDEzNzMzNTg5NzIsLTEzNzQ1MTY5ODddfQ
+==
 -->
