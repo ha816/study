@@ -132,7 +132,7 @@ BSON은 양수 값을 가지며, 음수값의 경우는 1970년 이전을 나타
 
 Primary는 레플리카 셋에서 쓰기 요청을 받는 유일한 구성원입니다. (마치 MySQL 리플리케이션 Master의 역할과 비슷합니다.)
 
-MongoDB는 쓰기 작업을 Primary에게 적용하고 그 연산을 primary's oplog(operation log)에 남깁니다. 후에 Secondaries에 구성원은 이 로그 기록을 보고 자신의 데이터에 기록된 연산을 그대로 수행하여 복제를 수행합니다.
+MongoDB는 쓰기 작업을 Primary에게 적용하고 그 작업을 oplog(operation log)에 기록 합니다. Secondaries에 구성원은 이 로그 기록을 보고 자신의 데이터에 동일한 작업을 그대로 수행하여 복제를 수행합니다.
 
 ![Diagram of default routing of reads and writes to the primary. — Enlarged](https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg)
 
@@ -152,9 +152,9 @@ secondary는 primary가 사용불가 상태가 되면, 투표를 통해서 prima
 
 샤딩된 구조에서 응용 프로그램은 반드시 mongos(MongoDB Router)를 사용해야 합니다. MongoDB 라우터는 자동으로 MongoDB 컨피그 서버로 부터 각 샤드가 가지고 있는 데이터에 대한 메타 정보들을 참조하여 쿼리를 실행합니다.  그 뿐만 아니라 결과를 정렬 및 병합하는 처리도 수행합니다. 라우터는 각 샤드간의 데이터가 재분배되는 시점에도 동일한 일을 수행하여 사용자나 응용 프로그램이 알아채지 못하게 투명하게 데이터 밸런싱 작업을 처리합니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE2NDU4NzgsNDE0NzY5NjE3LDQ0OTAzMT
-Q2NywtNTI5MTM0MjY1LDg0MTYxMjk5MSw1ODI3NzUwMDUsLTE3
-NjE2MzA5ODAsMTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01MzU3Nj
-Q4MDksMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNzc1NzgzXX0=
-
+eyJoaXN0b3J5IjpbLTIwNTc2MTc4NDcsNDE0NzY5NjE3LDQ0OT
+AzMTQ2NywtNTI5MTM0MjY1LDg0MTYxMjk5MSw1ODI3NzUwMDUs
+LTE3NjE2MzA5ODAsMTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01Mz
+U3NjQ4MDksMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNzc1Nzgz
+XX0=
 -->
