@@ -21,9 +21,11 @@ WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free
 
 ## WiredTiger 내부 작동 방식
 
-WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 데이터 파일과 서버 클래시로 부터 데이터를 복구하기 위한 저널 로그(WAL, Write Ahead Log)를 가지고 있습니다. 
-
 ![enter image description here](https://image.slidesharecdn.com/mongodb-wiredtiger-webinar-150709200625-lva1-app6892/95/a-technical-introduction-to-wiredtiger-11-638.jpg?cb=1436472726)
+
+WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 데이터 파일과 서버 장애 발생시 데이터를 복구하기 위한 저널 로그(WAL, Write Ahead Log, Logging)를 가지고 있습니다. 
+
+
 
 공유캐시(Cache)
 
@@ -36,8 +38,8 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA4NDEyNjQ0LC0xNTUyNTI3OTAwLC04OD
-IwMDM5MiwtMTUzMTk5ODk2LDE4NDg0MTQyMjAsLTU5MzQ3MTg0
-MSwtNzY0MTUwOTA2LC0xMTM3NzE4MDIwLDEzNzMzNTg5NzIsLT
-EzNzQ1MTY5ODddfQ==
+eyJoaXN0b3J5IjpbMTM1MDQyODEzNSw4MDg0MTI2NDQsLTE1NT
+I1Mjc5MDAsLTg4MjAwMzkyLC0xNTMxOTk4OTYsMTg0ODQxNDIy
+MCwtNTkzNDcxODQxLC03NjQxNTA5MDYsLTExMzc3MTgwMjAsMT
+M3MzM1ODk3MiwtMTM3NDUxNjk4N119
 -->
