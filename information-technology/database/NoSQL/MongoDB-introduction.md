@@ -160,12 +160,14 @@ secondary는 primary가 사용불가 상태가 되면, 투표를 통해서 prima
 
 ### Sharded Cluster(샤딩된 클러스터)
 
-샤딩된 클러스터 구조에서는 하나 이상의 레플리카 셋이 필요하며, 각 레플리카 셋은 자신만의 파티션된 데이터를 가지게 됩니다.
+샤딩된 클러스터 구조에서는 하나 이상의 레플리카 셋이 필요하며, 각 레플리카 셋은 자신만의 파티션된 데이터를 가지게 됩니다. 샤딩된 클러스터에 참여하고 있는 각 레플리카 셋을 샤드라고 하는데, 이 샤드들이 어떤 정보를 가지는지에 대한 정보는 MongoDB Config 서버가 관리합니다.
 
 ![Data distribution in mongos with shards or replica sets - Database ...](https://i.stack.imgur.com/QgZA3.png)
+
+샤딩된 구조에서 응용 프로그램이 직접 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODU2NzAwNiw4NDE2MTI5OTEsNTgyNz
-c1MDA1LC0xNzYxNjMwOTgwLDE3ODAxNDcwNTEsMTQyMzA4MDM5
-OCwtNTM1NzY0ODA5LDE3MDY1NTQxMjQsOTgyMzYwNDQyLDQ2Mj
-c3NTc4M119
+eyJoaXN0b3J5IjpbNTk5MTI3NDU1LDg0MTYxMjk5MSw1ODI3Nz
+UwMDUsLTE3NjE2MzA5ODAsMTc4MDE0NzA1MSwxNDIzMDgwMzk4
+LC01MzU3NjQ4MDksMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNz
+c1NzgzXX0=
 -->
