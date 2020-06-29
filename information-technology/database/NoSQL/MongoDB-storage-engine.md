@@ -47,7 +47,7 @@ WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 10
 
 일반적인 단순 링크드 리스트의 검색 성능은 $O(n)$인 반면, 스킵 리스트의 평균 검색 성능은 B-Tree와 같은 $O(log n)$이다. 
 
-WT에서
+WT에서 
 
 
 
@@ -85,9 +85,10 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMDc1NTk1OCwtMTI5NTMzMjczNywtMj
-E0MDc4NjczMiwtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQx
-MjY0NCwtMTU1MjUyNzkwMCwtODgyMDAzOTIsLTE1MzE5OTg5Ni
-wxODQ4NDE0MjIwLC01OTM0NzE4NDEsLTc2NDE1MDkwNiwtMTEz
-NzcxODAyMCwxMzczMzU4OTcyLC0xMzc0NTE2OTg3XX0=
+eyJoaXN0b3J5IjpbLTIwNDQyNDk4NzAsMTIxMDc1NTk1OCwtMT
+I5NTMzMjczNywtMjE0MDc4NjczMiwtNjA5NzEyMTIxLC0xOTk2
+NDEwOTQ0LDgwODQxMjY0NCwtMTU1MjUyNzkwMCwtODgyMDAzOT
+IsLTE1MzE5OTg5NiwxODQ4NDE0MjIwLC01OTM0NzE4NDEsLTc2
+NDE1MDkwNiwtMTEzNzcxODAyMCwxMzczMzU4OTcyLC0xMzc0NT
+E2OTg3XX0=
 -->
