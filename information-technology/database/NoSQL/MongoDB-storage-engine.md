@@ -19,9 +19,6 @@ WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free
 
 추가적으로 잠금 없는 데이터 읽기(Non-blocking consistent read)를 위한 MVCC 기술과 데이터 파일 압축 그리고 암호화 기능을 모두 제공합니다. 
 
-## WiredTiger 저장방식
-
-Wired Tiger의 저장방식에는 크게 레코드(Record), 컬럼(Column), LSM(Log Structured Merge Tree) 방식이 있습니다.
 
 
 
@@ -32,6 +29,6 @@ Wired Tiger의 저장방식에는 크게 레코드(Record), 컬럼(Column), LSM(
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyODc2MTEyNywtNzY0MTUwOTA2LC0xMT
-M3NzE4MDIwLDEzNzMzNTg5NzIsLTEzNzQ1MTY5ODddfQ==
+eyJoaXN0b3J5IjpbMTA2MzkwMTU3LC03NjQxNTA5MDYsLTExMz
+c3MTgwMjAsMTM3MzM1ODk3MiwtMTM3NDUxNjk4N119
 -->
