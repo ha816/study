@@ -142,6 +142,8 @@ brew services stop mongodb-community
 
 단일 레플리카 셋 구조에서도 별도의 관리용 컴포넌트가 필요하지는 않지만, 구축을 위해서 추가 MongoDB 서버가 필요합니다. 레플리카 셋의 특징은 서버에 장애가 발생하면 자동 복구가 되는 최소단위 이기 때문에 자동 복구가 필요하다면 항상 레플리카 셋을 구축해야 합니다. 
 
+MongoDB 레플리카 셋은 항상 레플리카 셋에 포함된 노드간 투표를 통해서 프라이머리 노드를 결정하므로 가능하면 홀수 개의 노드로 구성하는 것이 좋습니다. 
+
 
 ### Primary
 
@@ -168,7 +170,7 @@ secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NzQ4MTM4NCw1ODI3NzUwMDUsLTE3Nj
-E2MzA5ODAsMTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01MzU3NjQ4
-MDksMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNzc1NzgzXX0=
+eyJoaXN0b3J5IjpbLTEyMDQ5MDc3MTksNTgyNzc1MDA1LC0xNz
+YxNjMwOTgwLDE3ODAxNDcwNTEsMTQyMzA4MDM5OCwtNTM1NzY0
+ODA5LDE3MDY1NTQxMjQsOTgyMzYwNDQyLDQ2Mjc3NTc4M119
 -->
