@@ -36,7 +36,11 @@ WT는 디스크의 데이터 페이지를 공유 캐시 메모리에 적재하�
 
 #### 하자드 포인터(Hazard Pointer)
 
-사용자 쓰레드는 사용자의 쿼리를 처리하기 위해 WT 캐시를 참조하는 쓰레드이고, 이빅션 쓰레드(Eviction Thread)
+사용자 쓰레드는 사용자의 쿼리를 처리하기 위해 WT 캐시를 참조하는 쓰레드이고, 이빅션 쓰레드(Eviction Thread)는 캐시가 다른 데이터 페이지를 읽어 들일수 있도록 공간을 만들어 주는 쓰레드 입니다. 
+
+사용자 쓰레드는 캐시 데이터를 참조할때 참조하는 페이즈를 하자드 포인터에 등록합니다. 
+이빅션 쓰레드는 동시에 제거해야할 데이터 페이지를 골라서 삭제하는 작업을 실행
+
 
 
 
@@ -72,9 +76,9 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NzIyOTQ5MywtNjA5NzEyMTIxLC0xOT
-k2NDEwOTQ0LDgwODQxMjY0NCwtMTU1MjUyNzkwMCwtODgyMDAz
-OTIsLTE1MzE5OTg5NiwxODQ4NDE0MjIwLC01OTM0NzE4NDEsLT
-c2NDE1MDkwNiwtMTEzNzcxODAyMCwxMzczMzU4OTcyLC0xMzc0
-NTE2OTg3XX0=
+eyJoaXN0b3J5IjpbLTE0Njg5ODMzMTEsLTYwOTcxMjEyMSwtMT
+k5NjQxMDk0NCw4MDg0MTI2NDQsLTE1NTI1Mjc5MDAsLTg4MjAw
+MzkyLC0xNTMxOTk4OTYsMTg0ODQxNDIyMCwtNTkzNDcxODQxLC
+03NjQxNTA5MDYsLTExMzc3MTgwMjAsMTM3MzM1ODk3MiwtMTM3
+NDUxNjk4N119
 -->
