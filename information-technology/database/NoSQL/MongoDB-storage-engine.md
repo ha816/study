@@ -15,7 +15,9 @@ MongoDB가 처음 출시되었을때 부터 사용되던 스토리지 엔진.
 
 대부분 낮은 버전의 MongoDB의 문제점은 MMAPv1 스토리지 자체가 가지고 있던 단점 때문입니다.
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyMjUzNjY1LC0xMzc0NTE2OTg3XX0=
+eyJoaXN0b3J5IjpbLTUzMzMxMTM5LC0xMzc0NTE2OTg3XX0=
 -->
