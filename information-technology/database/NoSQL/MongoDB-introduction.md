@@ -140,9 +140,8 @@ brew services stop mongodb-community
 
 ## Single Replica set(단일 레플리카 셋)
 
-단일 ReplicaSet구조에서
+단일 레플리카 셋 구조에서도 별도의 관리용 컴포넌트가 필요하지는 않지만, 구축을 위해서 추가 MongoDB 서버가 필요합니다. 레플리카 셋의 특징
 
-replica set은 mongd 프로세스들의 집합입니다. 또 각 mongd 프로세스는 아래 두 역할군으로 나뉘어 집니다. 
 
 ## Primary
 
@@ -169,7 +168,7 @@ secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNjczMDMzNCw1ODI3NzUwMDUsLTE3Nj
+eyJoaXN0b3J5IjpbMTAyNDg4MzIxMSw1ODI3NzUwMDUsLTE3Nj
 E2MzA5ODAsMTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01MzU3NjQ4
 MDksMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNzc1NzgzXX0=
 -->
