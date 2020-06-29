@@ -21,7 +21,9 @@ WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free
 
 ## WiredTiger 저장방식
 
-Wired Tiger의 저장방식에는 크게 레코드(Record), 컬럼(Column), LSM(Log Str 방식이 있습니다.
+Wired Tiger의 저장방식에는 크게 레코드(Record), 컬럼(Column), LSM(Log Structured Merge Tree) 방식이 있습니다.
+
+
 
 
 
@@ -30,6 +32,6 @@ Wired Tiger의 저장방식에는 크게 레코드(Record), 컬럼(Column), LSM(
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTIxMDcxNDIsLTc2NDE1MDkwNiwtMT
-EzNzcxODAyMCwxMzczMzU4OTcyLC0xMzc0NTE2OTg3XX0=
+eyJoaXN0b3J5IjpbMTEyODc2MTEyNywtNzY0MTUwOTA2LC0xMT
+M3NzE4MDIwLDEzNzMzNTg5NzIsLTEzNzQ1MTY5ODddfQ==
 -->
