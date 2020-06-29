@@ -6,8 +6,11 @@
 
 MySQL과 비슷하게 MongoDB도 다양한 스토리지 엔진을 사용할 수 있도록 스토리지 엔진이 플러그인 형태로 제공됩니다. MongoDB 스토리지 엔진은 하나의 인스턴스에서 하나의 스토리지 엔진만 사용이 가능합니다.
 
+# MMAPv1
+
+MongoDB가 처음 출시되었을때 부터 사용되던 스토리지 엔진.
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDczMzQ0MjQsLTEzNzQ1MTY5ODddfQ
-==
+eyJoaXN0b3J5IjpbMTEzNzMyNjYyNCwtMTM3NDUxNjk4N119
 -->
