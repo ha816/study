@@ -25,21 +25,19 @@ WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 �
 
 ![enter image description here](https://image.slidesharecdn.com/mongodb-wiredtiger-webinar-150709200625-lva1-app6892/95/a-technical-introduction-to-wiredtiger-11-638.jpg?cb=1436472726)
 
-트랜잭션이 특정 문서에 적용되면, 문서의 변경점이 logging과정을 걸쳐서 저장됩니다. 
-
 공유캐시(Cache)
 
 Page read/write(I/O)
 
 Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
-
+트랜잭션이 특정 문서에 적용되면, 문서의 변경점이 logging과정을 걸쳐서 저장됩니다.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTI1Mjc5MDAsLTg4MjAwMzkyLC0xNT
-MxOTk4OTYsMTg0ODQxNDIyMCwtNTkzNDcxODQxLC03NjQxNTA5
-MDYsLTExMzc3MTgwMjAsMTM3MzM1ODk3MiwtMTM3NDUxNjk4N1
-19
+eyJoaXN0b3J5IjpbODA4NDEyNjQ0LC0xNTUyNTI3OTAwLC04OD
+IwMDM5MiwtMTUzMTk5ODk2LDE4NDg0MTQyMjAsLTU5MzQ3MTg0
+MSwtNzY0MTUwOTA2LC0xMTM3NzE4MDIwLDEzNzMzNTg5NzIsLT
+EzNzQ1MTY5ODddfQ==
 -->
