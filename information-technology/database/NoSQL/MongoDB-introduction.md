@@ -146,7 +146,7 @@ brew services stop mongodb-community
 
 Primary는 레플리카 셋에서 쓰기 요청을 받는 유일한 구성원 입니다. (마치 MySQL 리플리케이션 Master의 역할과 비슷합니다.)
 
-MongoDB는 쓰기 작업을 Primary에게 적용하고 그 연산을 primary's oplog(operation log)에 남깁니다. Secondaries에 구성원은 이 로그 기록을 복사하여 스스로의 데이터 셋에 그 연산을 그대로 적용합니다. 
+MongoDB는 쓰기 작업을 Primary에게 적용하고 그 연산을 primary's oplog(operation log)에 남깁니다. 후에 Secondaries에 구성원은 이 로그 기록을 보고 자신의 데이터에 기록된 연산을 그대로 수행하여 복제를 수행합니다.
 
 ![Diagram of default routing of reads and writes to the primary. — Enlarged](https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg)
 
@@ -162,7 +162,7 @@ secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk0MTQ5MjIxLDU4Mjc3NTAwNSwtMTc2MT
+eyJoaXN0b3J5IjpbNjc3Njc0NDI1LDU4Mjc3NTAwNSwtMTc2MT
 YzMDk4MCwxNzgwMTQ3MDUxLDE0MjMwODAzOTgsLTUzNTc2NDgw
 OSwxNzA2NTU0MTI0LDk4MjM2MDQ0Miw0NjI3NzU3ODNdfQ==
 -->
