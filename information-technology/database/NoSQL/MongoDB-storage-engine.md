@@ -26,9 +26,17 @@ WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free
 WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 데이터 파일과 서버 장애 발생시 데이터를 복구하기 위한 저널 로그(WAL, Write Ahead Log, Logging)를 가지고 있습니다. 
 
 기본적으로 MongoDB는 단일 문서 단위에 Transactions을 보장합니다. 
+만약 사용자가 특정 문서를 변경하면, WT가 트랜잭션을 시작하고 커서를 이용해서 원하는 다큐먼트의 내용을 변경합니다. 변경 내용은 먼저 캐시에 적용되는데, 디스크에 기록되기 전에 변경 내용을 저널 로그에 기록한 다음 사용자에게 작업 처리 결과를 리턴합니다. 
+
+이런 식으로 공유 캐시가 어느 정도 쌓이면 WT는 체크포인트를 발생시켜서 공유 캐시의 더티 페이지들을 모아 디스크에 기록합니다. 이때 메모리 상의 더티 페이지는 디스크에 기롭하기 전 원본 데이터와 변경된 정보의 병합)을 거쳐야하는데, 이를 WT의 Reconciliation 모듈이 처리합니다. 
 
 
-사용자가 쿼리를 실행하면 블록 매니저(Block Manager)를 통해서 필요한 데이터 블록을 디스크에서 읽어온 다음 공유 캐시에 적재 합니다.
+
+
+
+
+사용자가 쿼리를 실행하면 블록 매니저(Block Manager)를 통해서 필요한 데이터 블록을 디스크에서 읽어온 다음 공유 캐시에 적재 하고 처리합니다. 
+
 
 
 
@@ -43,9 +51,8 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTc5NzA1OTcsLTE5OTY0MTA5NDQsOD
-A4NDEyNjQ0LC0xNTUyNTI3OTAwLC04ODIwMDM5MiwtMTUzMTk5
-ODk2LDE4NDg0MTQyMjAsLTU5MzQ3MTg0MSwtNzY0MTUwOTA2LC
-0xMTM3NzE4MDIwLDEzNzMzNTg5NzIsLTEzNzQ1MTY5ODddfQ==
-
+eyJoaXN0b3J5IjpbLTY4MzE2MTE3MiwtMTk5NjQxMDk0NCw4MD
+g0MTI2NDQsLTE1NTI1Mjc5MDAsLTg4MjAwMzkyLC0xNTMxOTk4
+OTYsMTg0ODQxNDIyMCwtNTkzNDcxODQxLC03NjQxNTA5MDYsLT
+ExMzc3MTgwMjAsMTM3MzM1ODk3MiwtMTM3NDUxNjk4N119
 -->
