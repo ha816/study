@@ -43,9 +43,8 @@ WT는 디스크의 데이터 페이지를 공유 캐시 메모리에 적재하�
 
 WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 1000개 입니다. 하자드 포인터의 개수가 부족해서 처리량이 느려진다면 옵션을 변경하여 늘릴 수 있습니다.
 
-하자드 포인터에 있는 데이터 페이지는 지우지 
-
 #### 스킵 리스트(Skip-List)
+
 
 
 
@@ -84,7 +83,7 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNzQ0MTY0MSwtMTI5NTMzMjczNywtMj
+eyJoaXN0b3J5IjpbLTgwOTcxNjYyMywtMTI5NTMzMjczNywtMj
 E0MDc4NjczMiwtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQx
 MjY0NCwtMTU1MjUyNzkwMCwtODgyMDAzOTIsLTE1MzE5OTg5Ni
 wxODQ4NDE0MjIwLC01OTM0NzE4NDEsLTc2NDE1MDkwNiwtMTEz
