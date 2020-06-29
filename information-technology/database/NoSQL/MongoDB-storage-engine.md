@@ -45,7 +45,7 @@ WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 10
 
 #### 스킵 리스트(Skip-List)
 
-
+일반적인 단순 링크드 리스트의 검색 성능은 $O(n)$인 반면, 스킵 리스
 
 
 
@@ -83,7 +83,7 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwOTcxNjYyMywtMTI5NTMzMjczNywtMj
+eyJoaXN0b3J5IjpbMTQ2ODQyNTQ4MSwtMTI5NTMzMjczNywtMj
 E0MDc4NjczMiwtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQx
 MjY0NCwtMTU1MjUyNzkwMCwtODgyMDAzOTIsLTE1MzE5OTg5Ni
 wxODQ4NDE0MjIwLC01OTM0NzE4NDEsLTc2NDE1MDkwNiwtMTEz
