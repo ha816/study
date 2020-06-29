@@ -152,17 +152,15 @@ MongoDB는 쓰기 작업을 Primary에게 적용하고 그 연산을 primary's o
 
 ### Secondaries
 
-한 secondary는 primary의 데이터 셋을 복사본을 유지합니다. 복제를 위해서, secondary는 primary oplog에 기록된 연산을 보고 자신의 데이터에 비동기 프로세스를 통해 적용합니다. 
-
-하나의 replica set은 1개 이상의 secondaries를 가질 수 있습니다. ㅋㅌ
+한 secondary는 primary의 데이터 셋을 계속 복제합니다. 복제를 위해서, secondary는 primary oplog에 기록된 연산을 보고 자신의 데이터에 비동기 프로세스를 통해 적용합니다.  
 ![Diagram of a 3 member replica set that consists of a primary and two secondaries.](https://docs.mongodb.com/manual/_images/replica-set-primary-with-two-secondaries.bakedsvg.svg)
 
-클라이언트는 데이터를 secondaries에 쓸 수는 없지만, 읽어 올 수는 있습니다.
+하나의 replica set은 1개 이상의 secondaries를 가질 수 있습니다. 클라이언트는 데이터를 secondaries에 쓸 수는 없지만, 읽어 올 수는 있습니다.
 secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습니다.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3Njc0NDI1LDU4Mjc3NTAwNSwtMTc2MT
-YzMDk4MCwxNzgwMTQ3MDUxLDE0MjMwODAzOTgsLTUzNTc2NDgw
-OSwxNzA2NTU0MTI0LDk4MjM2MDQ0Miw0NjI3NzU3ODNdfQ==
+eyJoaXN0b3J5IjpbMTk3ODUwMzk4Nyw1ODI3NzUwMDUsLTE3Nj
+E2MzA5ODAsMTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01MzU3NjQ4
+MDksMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNzc1NzgzXX0=
 -->
