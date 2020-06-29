@@ -25,14 +25,16 @@ WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 �
 
 ![enter image description here](https://image.slidesharecdn.com/mongodb-wiredtiger-webinar-150709200625-lva1-app6892/95/a-technical-introduction-to-wiredtiger-11-638.jpg?cb=1436472726)
 
-공유캐
+트랜잭션이 특정 문서에 적용되면, 문서의 변경점이 logging과정을 걸쳐서 저장됩니다. 
+
+공유캐시(Cache0
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTY5NzE1MywtODgyMDAzOTIsLTE1Mz
+eyJoaXN0b3J5IjpbLTY2NTA1MDM5MSwtODgyMDAzOTIsLTE1Mz
 E5OTg5NiwxODQ4NDE0MjIwLC01OTM0NzE4NDEsLTc2NDE1MDkw
 NiwtMTEzNzcxODAyMCwxMzczMzU4OTcyLC0xMzc0NTE2OTg3XX
 0=
