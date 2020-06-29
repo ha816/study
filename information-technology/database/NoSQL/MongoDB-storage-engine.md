@@ -15,8 +15,8 @@ MongoDB가 처음 출시되었을때 부터 사용되던 스토리지 엔진.
 
 대부분 낮은 버전의 MongoDB의 문제점은 MMAPv1 스토리지 자체가 가지고 있던 단점 때문입니다.
 
->MMAPv1 are deprecated
->MongoDB 4.0 버전부터는 MMAPv1 storage engine과 관련된 모든 것들
+>MMAPv1 
+>MongoDB 4.0 버전부터는 MMAPv1 storage engine은 Deprecated 되었습니다.
 
 Deprecated in MongoDB 4.0, the MMAPv1 storage engine and all its related flags and options are removed in MongoDB 4.2. If you are still using MMAPv1
 Deprecated in MongoDB 4.0, the MMAPv1 storage engine and all its related flags and options are removed in MongoDB 4.2. If you are still using MMAPv1
@@ -25,5 +25,6 @@ Deprecated in MongoDB 4.0, the MMAPv1 storage engine and all its related flags a
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MzM1ODk3MiwtMTM3NDUxNjk4N119
+eyJoaXN0b3J5IjpbLTExMzc3MTgwMjAsMTM3MzM1ODk3MiwtMT
+M3NDUxNjk4N119
 -->
