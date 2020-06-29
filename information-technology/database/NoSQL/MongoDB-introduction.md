@@ -132,13 +132,13 @@ brew services start mongodb-community
 brew services stop mongodb-community
 ```
 
-# MongoDB 배포형태
+# MongoDB 구축형태
 
 ## StandAlone(단일노드)
 
 단일 노드로 MongoDB를 사용할때는 어떤 다른 컴포넌트도 필요하지 않습니다. 마치 기존의  RDBMS가 동작하는 방식이며 이 배포형태를 따르면 MongoDB는 복제를 위한 로그(OpLog)를 별도로 기록하지 않으며, 다른 노드와의 통신도 필요하지 않습니다. 이러한 형태는 보통 개발 서버의 구성에 사용됩니다.
 
-## Single Replica set(단일 레플리카 셋)
+## Single Replica Set(단일 레플리카 셋)
 
 단일 레플리카 셋 구조에서도 별도의 관리용 컴포넌트가 필요하지는 않지만, 구축을 위해서 추가 MongoDB 서버가 필요합니다. 레플리카 셋의 특징은 서버에 장애가 발생하면 자동 복구가 되는 최소단위 이기 때문에 자동 복구가 필요하다면 항상 레플리카 셋을 구축해야 합니다. 레플리카 셋의 각 구성원은 하나의 mongod 인스턴스 가집니다.
 
@@ -166,8 +166,8 @@ secondary는 primary가 사용불가 상태가 되면, 투표를 통해서 prima
 
 샤딩된 구조에서 응용 프로그램은 반드시 mongos(MongoDB Router)를 사용해야 합니다. MongoDB 라우터는 자동으로 MongoDB 컨피그 서버로 부터 각 샤드가 가지고 있는 데이터에 대한 메타 정보들을 참조하여 쿼리를 실행합니다.  그 뿐만 아니라 결과를 정렬 및 병합하는 처리도 수행합니다. 라우터는 각 샤드간의 데이터가 재분배되는 시점에도 동일한 일을 수행하여 사용자나 응용 프로그램이 알아채지 못하게 투명하게 데이터 밸런싱 작업을 처리합니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyOTEzNDI2NSw4NDE2MTI5OTEsNTgyNz
-c1MDA1LC0xNzYxNjMwOTgwLDE3ODAxNDcwNTEsMTQyMzA4MDM5
-OCwtNTM1NzY0ODA5LDE3MDY1NTQxMjQsOTgyMzYwNDQyLDQ2Mj
-c3NTc4M119
+eyJoaXN0b3J5IjpbLTEzMTAzODI4ODYsLTUyOTEzNDI2NSw4ND
+E2MTI5OTEsNTgyNzc1MDA1LC0xNzYxNjMwOTgwLDE3ODAxNDcw
+NTEsMTQyMzA4MDM5OCwtNTM1NzY0ODA5LDE3MDY1NTQxMjQsOT
+gyMzYwNDQyLDQ2Mjc3NTc4M119
 -->
