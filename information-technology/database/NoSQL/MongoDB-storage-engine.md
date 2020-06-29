@@ -25,14 +25,15 @@ WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 �
 
 ![enter image description here](https://image.slidesharecdn.com/mongodb-wiredtiger-webinar-150709200625-lva1-app6892/95/a-technical-introduction-to-wiredtiger-11-638.jpg?cb=1436472726)
 
-
+공유캐
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MjAwMzkyLC0xNTMxOTk4OTYsMTg0OD
-QxNDIyMCwtNTkzNDcxODQxLC03NjQxNTA5MDYsLTExMzc3MTgw
-MjAsMTM3MzM1ODk3MiwtMTM3NDUxNjk4N119
+eyJoaXN0b3J5IjpbLTEzNTY5NzE1MywtODgyMDAzOTIsLTE1Mz
+E5OTg5NiwxODQ4NDE0MjIwLC01OTM0NzE4NDEsLTc2NDE1MDkw
+NiwtMTEzNzcxODAyMCwxMzczMzU4OTcyLC0xMzc0NTE2OTg3XX
+0=
 -->
