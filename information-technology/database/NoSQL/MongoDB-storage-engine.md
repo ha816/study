@@ -47,7 +47,9 @@ WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 10
 
 일반적인 단순 링크드 리스트의 검색 성능은 $O(n)$인 반면, 스킵 리스트의 평균 검색 성능은 B-Tree와 같은 $O(log n)$이다. 
 
-WT에서 스킵리스트를 사용하면  
+WT에서 스킵리스트를 사용하면  새로운 노드를 추가하기 위해서 별도의 잠금을 필요로 하지 않으며, 검색 또한 별도의 잠금을 필요로 하지 않는다. 스킵 리스트의 노득 삭제는 잠금을 필요로 하지만, B-Tree 자료 구조보단 잠금을 덜 필요로 하므로 큰 성능 이슈는 아니다. 그래서 여러 쓰레드가 동시에 하나의 스킵 리스트에 노드를 저장하거나 검색을 한다고 하도 서로 전혀 큰 잠금 경합을 하지 않는다.
+
+RDBMS
 
 
 
@@ -85,7 +87,7 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMDE5OTEzNCw3MDI1MDM3NTAsMTIxMD
+eyJoaXN0b3J5IjpbMTEyOTY3NTU1Myw3MDI1MDM3NTAsMTIxMD
 c1NTk1OCwtMTI5NTMzMjczNywtMjE0MDc4NjczMiwtNjA5NzEy
 MTIxLC0xOTk2NDEwOTQ0LDgwODQxMjY0NCwtMTU1MjUyNzkwMC
 wtODgyMDAzOTIsLTE1MzE5OTg5NiwxODQ4NDE0MjIwLC01OTM0
