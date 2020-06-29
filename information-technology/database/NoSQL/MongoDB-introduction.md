@@ -6,6 +6,10 @@ MongoDB는 오픈소스 문서지향(Document-Oriented)적 Cross-platform 데이
 
 [MySQL](https://namu.wiki/w/MySQL "MySQL") 처럼 전통적인 테이블-관계 기반의 [RDBMS](https://namu.wiki/w/RDBMS "RDBMS")가 아니며 [SQL](https://namu.wiki/w/SQL "SQL")을 사용하지 않습니다. 참고로 mongo는 humongous의 줄임말이라고 합니다. 즉 거대한 DB라는 뜻입니다.
 
+# MongoDB Architecture
+
+
+
 ## Document & Collection
 
 Document는 RDMS의 record 또는 row에 대응하는 데이터 구조입니다. 한 개 이상의 key-value pair로 구성됩니다.
@@ -50,7 +54,7 @@ hello\x00                  // field name
 
 JSON을 그대로 사용하는 다른 시스템과는 다르게, MongoDB는 BSON을 이용해서 강력한 인덱스와 쿼리  특성을 제공합니다. 여기서 쿼리 특성이라 하면, 찾거나 수정할 Objects를 JSON/BSON 문서내의 특정 키로 찾을 수 있습니다. 심지어 다수의 레이어로 중첩된 문서에 대해서도 가능합니다.
 
-## JSON vs BSON
+### JSON vs BSON
 
 || JSON | BSON|
 |--|--|--|
@@ -155,6 +159,6 @@ secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNTc2NDgwOSwxNzA2NTU0MTI0LDk4Mj
-M2MDQ0Miw0NjI3NzU3ODNdfQ==
+eyJoaXN0b3J5IjpbLTE1OTcxMDM2ODQsLTUzNTc2NDgwOSwxNz
+A2NTU0MTI0LDk4MjM2MDQ0Miw0NjI3NzU3ODNdfQ==
 -->
