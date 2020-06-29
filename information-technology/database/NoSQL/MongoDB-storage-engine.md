@@ -34,7 +34,9 @@ WT는 디스크의 데이터 페이지를 공유 캐시 메모리에 적재하�
 
 짧은 시간 수많은 쿼리를 처리해야하는 OLTP(On-Line Transaction Processing) 시스템에서는 많은 쿼리들이 공유 캐시에 있는 데이터 페이지를 동시에 참조하기 위해 경합하는 경우도 많습니다. 따라서 공유 캐시에 대한 잠금 경합이 성능에 많은 영향을 미치게 됩니다. WT는 잠금 경합을 최소화하기 위해 Lock-Free 알고리즘을 채용하고 있습니다. 일반적으로 Lock-Free 알고리즘은 잠금을 전혀 사용하지 않는 시스템을 말하는 것이 아니라 잠금 경합을 최소화 하는 알고리즘으로 이를 위해서 하자드 포인터와 스킵리스트 자료구조를 활용합니다. 
 
-####
+#### 하자드 포인터(Hazard Pointer)
+
+사용자 쓰레드는 사용자의 쿼리를 처리하기 위해 WT 캐시를 참조하는 쓰레드이고, 이빅션 쓰레드(Eviction Thread)
 
 
 
@@ -70,7 +72,7 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MjA0NjYxMywtNjA5NzEyMTIxLC0xOT
+eyJoaXN0b3J5IjpbLTk4NzIyOTQ5MywtNjA5NzEyMTIxLC0xOT
 k2NDEwOTQ0LDgwODQxMjY0NCwtMTU1MjUyNzkwMCwtODgyMDAz
 OTIsLTE1MzE5OTg5NiwxODQ4NDE0MjIwLC01OTM0NzE4NDEsLT
 c2NDE1MDkwNiwtMTEzNzcxODAyMCwxMzczMzU4OTcyLC0xMzc0
