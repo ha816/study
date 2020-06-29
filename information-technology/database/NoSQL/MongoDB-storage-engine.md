@@ -31,11 +31,9 @@ WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 �
 이런 식으로 공유 캐시가 어느 정도 쌓이면 WT는 체크포인트를 발생시켜서 공유 캐시의 더티 페이지들을 모아 디스크에 기록합니다. 이때 메모리 상의 더티 페이지는 디스크에 기롭하기 전 원본 데이터와 변경된 정보의 병합)을 거쳐야하는데, 이를 WT의 Reconciliation 모듈이 처리합니다. 
 
 
-
-
-
-
 사용자가 쿼리를 실행하면 블록 매니저(Block Manager)를 통해서 필요한 데이터 블록을 디스크에서 읽어온 다음 공유 캐시에 적재 하고 처리합니다. 
+
+사용자 요청 쿼리가 실행되면 블럭 매니저는 계속해서 새로운 데이터 페이지들을 공유 캐시로 읽어 들여야 하는데, 더 이상 데이터 페이지를 읽어 들일 공간이 없으면 사용자 쿼리를 수행할 수 없게 된다. 이런 상황을 피하기 위해서 WT는 ㄸ
 
 
 
@@ -51,8 +49,9 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MzE2MTE3MiwtMTk5NjQxMDk0NCw4MD
-g0MTI2NDQsLTE1NTI1Mjc5MDAsLTg4MjAwMzkyLC0xNTMxOTk4
-OTYsMTg0ODQxNDIyMCwtNTkzNDcxODQxLC03NjQxNTA5MDYsLT
-ExMzc3MTgwMjAsMTM3MzM1ODk3MiwtMTM3NDUxNjk4N119
+eyJoaXN0b3J5IjpbLTExODU2NzM1NjEsLTE5OTY0MTA5NDQsOD
+A4NDEyNjQ0LC0xNTUyNTI3OTAwLC04ODIwMDM5MiwtMTUzMTk5
+ODk2LDE4NDg0MTQyMjAsLTU5MzQ3MTg0MSwtNzY0MTUwOTA2LC
+0xMTM3NzE4MDIwLDEzNzMzNTg5NzIsLTEzNzQ1MTY5ODddfQ==
+
 -->
