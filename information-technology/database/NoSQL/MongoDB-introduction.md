@@ -140,7 +140,7 @@ brew services stop mongodb-community
 
 ## Single Replica set(단일 레플리카 셋)
 
-단일 레플리카 셋 구조에서도 별도의 관리용 컴포넌트가 필요하지는 않지만, 구축을 위해서 추가 MongoDB 서버가 필요합니다. 레플리카 셋의 특징은 서버에 장애가 발생하면 자동 복구가 되는 최소단위 이기 때문에 자동 복구가 필요하다면 항상 레플리카 셋을 구축해야 합니다. 
+단일 레플리카 셋 구조에서도 별도의 관리용 컴포넌트가 필요하지는 않지만, 구축을 위해서 추가 MongoDB 서버가 필요합니다. 레플리카 셋의 특징은 서버에 장애가 발생하면 자동 복구가 되는 최소단위 이기 때문에 자동 복구가 필요하다면 항상 레플리카 셋을 구축해야 합니다. 레플리카 셋의 각 구성원은 mongod 인스턴스가 
 
 ### Primary
 
@@ -161,8 +161,11 @@ secondary는 primary가 사용불가 상태가 되면, 투표를 통해서 prima
 ### Sharded Cluster(샤딩된 클러스터)
 
 샤딩된 클러스터 구조에서는 하나 이상의 레플리카 셋이 필요하며, 각 레플리카 셋은 자신만의 파티션된 데이터를 가지게 된다. 
+
+![Data distribution in mongos with shards or replica sets - Database ...](https://i.stack.imgur.com/QgZA3.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQxNjEyOTkxLDU4Mjc3NTAwNSwtMTc2MT
-YzMDk4MCwxNzgwMTQ3MDUxLDE0MjMwODAzOTgsLTUzNTc2NDgw
-OSwxNzA2NTU0MTI0LDk4MjM2MDQ0Miw0NjI3NzU3ODNdfQ==
+eyJoaXN0b3J5IjpbMTA1NTgxNTAsODQxNjEyOTkxLDU4Mjc3NT
+AwNSwtMTc2MTYzMDk4MCwxNzgwMTQ3MDUxLDE0MjMwODAzOTgs
+LTUzNTc2NDgwOSwxNzA2NTU0MTI0LDk4MjM2MDQ0Miw0NjI3Nz
+U3ODNdfQ==
 -->
