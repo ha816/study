@@ -4,9 +4,10 @@
 
 ![Building Applications with MongoDB's Pluggable Storage Engines ...](https://webassets.mongodb.com/_com_assets/cms/StorageEngineArchIMG2-ju0tb22fup.png)
 
-MySQL
+MySQL과 비슷하게 MongoDB도 다양한 스토리지 엔진을 사용할 수 있도록 스토리지 엔진이 플러그인 형태로 제공됩니다. 하지만 MongoDB 스토리지 엔진은 하나의 인스턴스에 동시에 여러 스토리지 엔진을 사용할 순 없습니다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTkyMjEwOCwtMTM3NDUxNjk4N119
+eyJoaXN0b3J5IjpbLTIxNDI1Mzk0MDIsLTEzNzQ1MTY5ODddfQ
+==
 -->
