@@ -28,6 +28,9 @@ WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 �
 기본적으로 MongoDB는 단일 문서 단위에 Transactions을 보장합니다. 
 
 
+사용자가 쿼리를 실행하면 블록 매니저(Block Manager)를 통해서 필요한 데이터 블록을 디스크에서 읽어온 다음 공유 캐시에 적재 합니다.
+
+
 
 공유캐시(Cache)
 
@@ -40,8 +43,9 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNDQ4OTgyNSwtMTk5NjQxMDk0NCw4MD
-g0MTI2NDQsLTE1NTI1Mjc5MDAsLTg4MjAwMzkyLC0xNTMxOTk4
-OTYsMTg0ODQxNDIyMCwtNTkzNDcxODQxLC03NjQxNTA5MDYsLT
-ExMzc3MTgwMjAsMTM3MzM1ODk3MiwtMTM3NDUxNjk4N119
+eyJoaXN0b3J5IjpbLTE5OTc5NzA1OTcsLTE5OTY0MTA5NDQsOD
+A4NDEyNjQ0LC0xNTUyNTI3OTAwLC04ODIwMDM5MiwtMTUzMTk5
+ODk2LDE4NDg0MTQyMjAsLTU5MzQ3MTg0MSwtNzY0MTUwOTA2LC
+0xMTM3NzE4MDIwLDEzNzMzNTg5NzIsLTEzNzQ1MTY5ODddfQ==
+
 -->
