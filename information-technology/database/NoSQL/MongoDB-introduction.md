@@ -144,13 +144,11 @@ brew services stop mongodb-community
 
 ### Primary
 
-Primary는 레플리카셋에서 쓰기 요청을 받는 유일한 구성원 입니다. (마치 MySQL 리플리케이션 Master의 역할과 비슷합니다.)
+Primary는 레플리카 셋에서 쓰기 요청을 받는 유일한 구성원 입니다. (마치 MySQL 리플리케이션 Master의 역할과 비슷합니다.)
 
 MongoDB는 쓰기 작업을 Primary에게 적용하고 그 연산을 primary's oplog(operation log)에 남깁니다. Secondaries에 구성원은 이 로그 기록을 복사하여 스스로의 데이터 셋에 그 연산을 그대로 적용합니다. 
 
 ![Diagram of default routing of reads and writes to the primary. — Enlarged](https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg)
-
-레플리카 셋의 모든 구성원은 읽기 연산이 가능합니다. 하지만, 기본적으로, 딱 하나의 application만 primary 구성원에게 읽기 연산을 줄 수 있습니다. 
 
 ### Secondaries
 
@@ -164,7 +162,7 @@ secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2Mzc0NjQ3MSw1ODI3NzUwMDUsLTE3Nj
-E2MzA5ODAsMTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01MzU3NjQ4
-MDksMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNzc1NzgzXX0=
+eyJoaXN0b3J5IjpbNzk0MTQ5MjIxLDU4Mjc3NTAwNSwtMTc2MT
+YzMDk4MCwxNzgwMTQ3MDUxLDE0MjMwODAzOTgsLTUzNTc2NDgw
+OSwxNzA2NTU0MTI0LDk4MjM2MDQ0Miw0NjI3NzU3ODNdfQ==
 -->
