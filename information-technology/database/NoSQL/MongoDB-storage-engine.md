@@ -6,16 +6,20 @@
 
 MySQL과 비슷하게 MongoDB도 다양한 스토리지 엔진을 사용할 수 있도록 스토리지 엔진이 플러그인 형태로 제공됩니다. MongoDB 스토리지 엔진은 하나의 인스턴스에서 하나의 스토리지 엔진만 사용이 가능합니다.
 
-> MMAPv1 스토리지 삭제
+> MMAPv1 스토리지
 > MongoDB가 처음 출시되었을때 부터 사용되던 스토리지 엔진. 
 > 대부분 낮은 버전의 MongoDB의 문제점은 MMAPv1 엔진 자체가 가지고 있던 문제점
-> MongoDB 4.2 버전부터 
+> MongoDB 4.2 버전부터 MMAPv1 엔진은 삭제되었습니다.
 
 # WiredTiger
+
+MongoDB의 디폴트 스토리지 엔진. 
+
+WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free Algorithm)을 위해서 하자드 포인터(Hazard-P
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMjg3MTY5OSwtMTEzNzcxODAyMCwxMz
+eyJoaXN0b3J5IjpbMTEwMTE1MDc1NiwtMTEzNzcxODAyMCwxMz
 czMzU4OTcyLC0xMzc0NTE2OTg3XX0=
 -->
