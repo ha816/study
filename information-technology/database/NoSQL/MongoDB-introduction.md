@@ -156,11 +156,13 @@ MongoDB는 쓰기 작업을 Primary에게 적용하고 그 연산을 primary's o
 ![Diagram of a 3 member replica set that consists of a primary and two secondaries.](https://docs.mongodb.com/manual/_images/replica-set-primary-with-two-secondaries.bakedsvg.svg)
 
 하나의 replica set은 1개 이상의 secondaries를 가질 수 있습니다. 클라이언트는 데이터를 secondaries에 쓸 수는 없지만, 읽어 올 수는 있습니다.
-secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습니다.
+secondary는 primary가 사용불가 상태가 되면, 투표를 통해서 primary가 될 수 있습니다.
 
+### Sharded Cluster(샤딩된 클러스터)
 
+샤딩된 클러스터 구조에서는 하나 이상의 레플리카 셋이 필요하며, 각 레플리카 셋은 자신만의 파티션된 데이터를 가지게 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3ODUwMzk4Nyw1ODI3NzUwMDUsLTE3Nj
-E2MzA5ODAsMTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01MzU3NjQ4
-MDksMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNzc1NzgzXX0=
+eyJoaXN0b3J5IjpbODQxNjEyOTkxLDU4Mjc3NTAwNSwtMTc2MT
+YzMDk4MCwxNzgwMTQ3MDUxLDE0MjMwODAzOTgsLTUzNTc2NDgw
+OSwxNzA2NTU0MTI0LDk4MjM2MDQ0Miw0NjI3NzU3ODNdfQ==
 -->
