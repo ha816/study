@@ -164,9 +164,9 @@ secondary는 primary가 사용불가 상태가 되면, 투표를 통해서 prima
 
 ![Data distribution in mongos with shards or replica sets - Database ...](https://i.stack.imgur.com/QgZA3.png)
 
-샤딩된 구조에서 응용 프로그램은 반드시 mongos(MongoDB Router)를 사용해야 합니다. MongoDB 라우터는 자동으로 MongoDB 컨피그 서버로 부터 각 샤드가 가지고 있는 데이터에 대한 메타 장버들을 참조하여 쿼리를 실행합니다. 
+샤딩된 구조에서 응용 프로그램은 반드시 mongos(MongoDB Router)를 사용해야 합니다. MongoDB 라우터는 자동으로 MongoDB 컨피그 서버로 부터 각 샤드가 가지고 있는 데이터에 대한 메타 정보들을 참조하여 쿼리를 실행합니다.  그 뿐만 아니라 결과를 정렬 및 병합하는 처리도 수행합니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDI0Mzc1MDMsODQxNjEyOTkxLDU4Mj
+eyJoaXN0b3J5IjpbLTE1NzQyNzM2OTMsODQxNjEyOTkxLDU4Mj
 c3NTAwNSwtMTc2MTYzMDk4MCwxNzgwMTQ3MDUxLDE0MjMwODAz
 OTgsLTUzNTc2NDgwOSwxNzA2NTU0MTI0LDk4MjM2MDQ0Miw0Nj
 I3NzU3ODNdfQ==
