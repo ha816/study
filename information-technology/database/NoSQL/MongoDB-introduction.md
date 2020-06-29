@@ -142,14 +142,11 @@ brew services stop mongodb-community
 
 단일 레플리카 셋 구조에서도 별도의 관리용 컴포넌트가 필요하지는 않지만, 구축을 위해서 추가 MongoDB 서버가 필요합니다. 레플리카 셋의 특징은 서버에 장애가 발생하면 자동 복구가 되는 최소단위 이기 때문에 자동 복구가 필요하다면 항상 레플리카 셋을 구축해야 합니다. 
 
-MongoDB 레플리카 셋은 항상 레플리카 셋에 포함된 노드간 투표를 통해서 프라이머리 노드를 결정하므로 가능하면 홀수 개의 노드로 구성하는 것이 좋습니다. 
-
-
 ### Primary
 
-Primary는 replica set에서 쓰기 연산을 받는 유일한 구성원 입니다. (마치 MySQL 리플리케이션 Master의 역할과 비슷합니다.)
+Primary는 레플리카셋에서 쓰기 요청을 받는 유일한 구성원 입니다. (마치 MySQL 리플리케이션 Master의 역할과 비슷합니다.)
 
-MongoDB는 쓰기 작업을 primary에게 적용하고 그 연산을 primary's oplog(operation log)에 남깁니다. Secondaries에 구성원은 이 로그를 복사하여 그들의 데이터 셋에 그 연산을 그대로 적용합니다. 
+MongoDB는 쓰기 작업을 Primary에게 적용하고 그 연산을 primary's oplog(operation log)에 남깁니다. Secondaries에 구성원은 이 로그 기록복사하여 그들의 데이터 셋에 그 연산을 그대로 적용합니다. 
 
 아래 replica set에는 세 구성원이 있습니다. 
 ![Diagram of default routing of reads and writes to the primary. — Enlarged](https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg)
@@ -170,7 +167,7 @@ secondary는 primary가 사용불가 상태가 되면, primary가 될 수 있습
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDQ5MDc3MTksNTgyNzc1MDA1LC0xNz
-YxNjMwOTgwLDE3ODAxNDcwNTEsMTQyMzA4MDM5OCwtNTM1NzY0
-ODA5LDE3MDY1NTQxMjQsOTgyMzYwNDQyLDQ2Mjc3NTc4M119
+eyJoaXN0b3J5IjpbMTcxMjk1OTkzOSw1ODI3NzUwMDUsLTE3Nj
+E2MzA5ODAsMTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01MzU3NjQ4
+MDksMTcwNjU1NDEyNCw5ODIzNjA0NDIsNDYyNzc1NzgzXX0=
 -->
