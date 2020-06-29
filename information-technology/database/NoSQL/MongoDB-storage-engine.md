@@ -23,6 +23,11 @@ WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free
 
 ![enter image description here](https://image.slidesharecdn.com/mongodb-wiredtiger-webinar-150709200625-lva1-app6892/95/a-technical-introduction-to-wiredtiger-11-638.jpg?cb=1436472726)
 
+
+### Cache(공유캐시)
+
+WT 스토리지 엔진에서 사용자의 쿼리는 공유 캐시를 커치지 않고 처리할 수 없습니다. 가끔은 하나의 쿼리를 위해 수천에서 수만번의 캐시 데이터 페이지를 참조해야할 수도 있기 때문에 공유 캐시의 
+
 WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 데이터 파일과 서버 장애 발생시 데이터를 복구하기 위한 저널 로그(WAL, Write Ahead Log, Logging)를 가지고 있습니다. 
 
 기본적으로 MongoDB는 단일 문서 단위에 Transactions을 보장합니다. 
@@ -55,8 +60,9 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwOTcxMjEyMSwtMTk5NjQxMDk0NCw4MD
-g0MTI2NDQsLTE1NTI1Mjc5MDAsLTg4MjAwMzkyLC0xNTMxOTk4
-OTYsMTg0ODQxNDIyMCwtNTkzNDcxODQxLC03NjQxNTA5MDYsLT
-ExMzc3MTgwMjAsMTM3MzM1ODk3MiwtMTM3NDUxNjk4N119
+eyJoaXN0b3J5IjpbMjU2ODgwNDA1LC02MDk3MTIxMjEsLTE5OT
+Y0MTA5NDQsODA4NDEyNjQ0LC0xNTUyNTI3OTAwLC04ODIwMDM5
+MiwtMTUzMTk5ODk2LDE4NDg0MTQyMjAsLTU5MzQ3MTg0MSwtNz
+Y0MTUwOTA2LC0xMTM3NzE4MDIwLDEzNzMzNTg5NzIsLTEzNzQ1
+MTY5ODddfQ==
 -->
