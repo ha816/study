@@ -122,7 +122,7 @@ BSON은 양수 값을 가지며, 음수값의 경우는 1970년 이전을 나타
 
 ## Standalone(단일노드)
 
-단일 노드로 MongoDB를 사용할때는 어떤 다른 컴포넌트도 필요하지 않습니다. 이 배포형태를 따르면 MongoDB는 복제를 위한 로그(OpLog)를 별도로 기록하지 않으며, 다른 노드와의 통신도 필요하지 않습니다. 이러한 형태는 보통 개발 서버의 구성에 사용됩니다.
+단일 노드란 하나의 mongod 객체만 존재하는 것을 말합니다. 이러한 형태는 보통 개발 서버의 구성에 사용됩니다. 복제를 위한 로그(OpLog)를 별도로 기록하지 않으며, 다른 노드와 통신도 필요하지 않습니다. 
 
 ## Single Replica Set(단일 레플리카 셋)
 
@@ -152,8 +152,9 @@ secondary는 primary가 사용불가 상태가 되면, 투표를 통해서 prima
 
 샤딩된 구조에서 응용 프로그램은 반드시 mongos(MongoDB Router)를 사용해야 합니다. MongoDB 라우터는 자동으로 MongoDB 컨피그 서버로 부터 각 샤드가 가지고 있는 데이터에 대한 메타 정보들을 참조하여 쿼리를 실행합니다.  그 뿐만 아니라 결과를 정렬 및 병합하는 처리도 수행합니다. 라우터는 각 샤드간의 데이터가 재분배되는 시점에도 동일한 일을 수행하여 사용자나 응용 프로그램이 알아채지 못하게 투명하게 데이터 밸런싱 작업을 처리합니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE0NzY5NjE3LDQ0OTAzMTQ2NywtNTI5MT
-M0MjY1LDg0MTYxMjk5MSw1ODI3NzUwMDUsLTE3NjE2MzA5ODAs
-MTc4MDE0NzA1MSwxNDIzMDgwMzk4LC01MzU3NjQ4MDksMTcwNj
-U1NDEyNCw5ODIzNjA0NDIsNDYyNzc1NzgzXX0=
+eyJoaXN0b3J5IjpbMjE1ODg0NDQzLDQxNDc2OTYxNyw0NDkwMz
+E0NjcsLTUyOTEzNDI2NSw4NDE2MTI5OTEsNTgyNzc1MDA1LC0x
+NzYxNjMwOTgwLDE3ODAxNDcwNTEsMTQyMzA4MDM5OCwtNTM1Nz
+Y0ODA5LDE3MDY1NTQxMjQsOTgyMzYwNDQyLDQ2Mjc3NTc4M119
+
 -->
