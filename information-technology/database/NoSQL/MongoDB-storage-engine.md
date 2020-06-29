@@ -32,7 +32,7 @@ WT는 디스크의 데이터 페이지를 공유 캐시 메모리에 적재하�
 
 이렇게 디스크 데이터 페이지를 캐시에 적재하는 과정이 여러 변환 과정을 거치기 때문에 기존 RDBMS보다는 느리게 처리됩니다. 하지만 공유 캐시 메모리에 적재된 데이터 페이지에서 필요한 레코드를 검색하고 변경하는 작업은 기존 RDBMS보다 훨씬 효율적으로 동작합니다. 
 
-짧은 시간 수많은 쿼리를 처리해야하는 OLTP(On-Line Transaction Processing) 시스
+짧은 시간 수많은 쿼리를 처리해야하는 OLTP(On-Line Transaction Processing) 시스템에서는 많은 쿼리들이 공유 캐시에 있는 데이터 페이지를 동시에 참조하기 위해 경합하는 경우도 많습니다. 따라서 공유 캐시에 대한 잠금 경합이 성능에 많은 영향을 미치게 됩니다. WT는 잠금 경합을 최소화하기 위해 Lock-Free 알고리즘을 채용하고 있습니다. 일반적으로 Lock-Free 알고리즘은 잠금을 전혀 사
 
 
 
@@ -68,9 +68,9 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxOTUxMjA0NiwtNjA5NzEyMTIxLC0xOT
-k2NDEwOTQ0LDgwODQxMjY0NCwtMTU1MjUyNzkwMCwtODgyMDAz
-OTIsLTE1MzE5OTg5NiwxODQ4NDE0MjIwLC01OTM0NzE4NDEsLT
-c2NDE1MDkwNiwtMTEzNzcxODAyMCwxMzczMzU4OTcyLC0xMzc0
-NTE2OTg3XX0=
+eyJoaXN0b3J5IjpbNjQ2ODE1ODE4LC02MDk3MTIxMjEsLTE5OT
+Y0MTA5NDQsODA4NDEyNjQ0LC0xNTUyNTI3OTAwLC04ODIwMDM5
+MiwtMTUzMTk5ODk2LDE4NDg0MTQyMjAsLTU5MzQ3MTg0MSwtNz
+Y0MTUwOTA2LC0xMTM3NzE4MDIwLDEzNzMzNTg5NzIsLTEzNzQ1
+MTY5ODddfQ==
 -->
