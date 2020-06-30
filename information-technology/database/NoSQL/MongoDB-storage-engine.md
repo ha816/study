@@ -44,7 +44,7 @@ WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 10
 
 #### [스킵 리스트(Skip-List)](https://brilliant.org/wiki/skip-lists/#:~:text=The%20skip%20list%20is%20a,elements,%20but%20no%20new%20elements.)
 
-스킵리스트를 사용하면, 노드 추가, 검색에 별도의 잠금이 필요하지 않습니다. 삭제의 경
+스킵리스트를 사용하면, 노드 추가, 검색에 별도의 잠금이 필요하지 않습니다. 삭제의 경우는 일부 잠금이 필요할 수 있으나 
 
   **새로운 노드를 추가하기 위해서 별도의 잠금을 필요로 하지 않으며, 검색 또한 별도의 잠금을 필요로 하지 않는다.** 스킵 리스트의 노드 삭제는 잠금을 필요로 하지만, B-Tree 자료 구조보단 잠금을 덜 필요로 하므로 큰 성능 이슈는 아니다. 그래서 여러 쓰레드가 동시에 하나의 스킵 리스트에 노드를 저장하거나 검색을 한다고 하도 서로 전혀 큰 잠금 경합을 하지 않는다.
 
@@ -92,11 +92,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2Njg4OTE3LDg4MzM0ODM2NiwtMTk3MD
-g1OTI0NywtMTM0OTY2MTE4LC0xNTk1MTY1Nzg4LC0xMDQwMTk4
-MzAxLC0xODM2MDM3MzA0LC0xNDc4NDk5NjEsLTM3ODcxMzM3LD
-c2Njg5MzU3MCw3MDI1MDM3NTAsMTIxMDc1NTk1OCwtMTI5NTMz
-MjczNywtMjE0MDc4NjczMiwtNjA5NzEyMTIxLC0xOTk2NDEwOT
-Q0LDgwODQxMjY0NCwtMTU1MjUyNzkwMCwtODgyMDAzOTIsLTE1
-MzE5OTg5Nl19
+eyJoaXN0b3J5IjpbLTU0MjAyODg5Myw4ODMzNDgzNjYsLTE5Nz
+A4NTkyNDcsLTEzNDk2NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5
+ODMwMSwtMTgzNjAzNzMwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNy
+w3NjY4OTM1NzAsNzAyNTAzNzUwLDEyMTA3NTU5NTgsLTEyOTUz
+MzI3MzcsLTIxNDA3ODY3MzIsLTYwOTcxMjEyMSwtMTk5NjQxMD
+k0NCw4MDg0MTI2NDQsLTE1NTI1Mjc5MDAsLTg4MjAwMzkyLC0x
+NTMxOTk4OTZdfQ==
 -->
