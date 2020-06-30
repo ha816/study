@@ -26,11 +26,10 @@ MongoDB의 디폴트 스토리지 엔진.
 
 ![enter image description here](https://image.slidesharecdn.com/mongodb-wiredtiger-webinar-150709200625-lva1-app6892/95/a-technical-introduction-to-wiredtiger-11-638.jpg?cb=1436472726)
 
-일반적인 조회 쿼리가 WT(WiredTiger)에 인입되면, 공유 캐시에 있는 데이터로 해당 쿼리를 처리할 수 있는지 확인합니다. 처리하지 못한다면, 블록 매니저(Block Manager)를 통해서 필요한 데이터 블록을 디스크에서 읽어온 다음 공유 캐시에 적재 하고 처리합니다. 
+일반적인 조회 쿼리가 WT(WiredTiger)에 인입되면, 공유 캐시에 있는 데이터로 해당 쿼리를 처리할 수 있는지 확인합니다. 처리하지 못한다면, 블록 매니저(Block Manager)를 통해 필요한 데이터 블록을 디스크에서 읽어와 공유 캐시에 적재하고 쿼리를 처리합니다. 
 
 사용자 요청 쿼리가 실행되면 블럭 매니저는 계속해서 새로운 데이터 페이지들을 공유 캐시로 읽어 들여야 하는데, 더 이상 데이터 페이지를 읽어 들일 공간이 없으면 사용자 쿼리를 수행할 수 없게 된다. 이런 상황을 피하기 위해서 WT는 Eviction 모듈을 사용하며, 이 모듈은 공유 캐시가 적절한 메모리 사용량을 유지하도록 공유 캐시에서 자주 사용되지 않는 데이터 페이지들을 제거하는 작업을 수행한다. 
 
-만약 제거해야 하는 데이터 페이지가 더티 페이지라면, 리컨실리에이션을 수행하고 공유 캐시에서 제거합니다.
 
 
 기본적으로 MongoDB는 단일 문서 단위에 Transactions을 보장합니다. 
@@ -93,11 +92,11 @@ WT는 샤프 체크포인트방식을 사용하고 있는데, 샤프 체크 포�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjkzODAxNzIsLTExMTcxNzEwMzQsLT
-Y4MTY3Njc0MiwyMDc2MjgxMjI5LDE4ODk1MjYzODcsLTQwOTUz
-NDcyMywxMDU3MDI1MTAyLC0zMjA1NzU1MjQsLTI0NzczMDQ2NC
-wtNTQyMDI4ODkzLDg4MzM0ODM2NiwtMTk3MDg1OTI0NywtMTM0
-OTY2MTE4LC0xNTk1MTY1Nzg4LC0xMDQwMTk4MzAxLC0xODM2MD
-M3MzA0LC0xNDc4NDk5NjEsLTM3ODcxMzM3LDc2Njg5MzU3MCw3
-MDI1MDM3NTBdfQ==
+eyJoaXN0b3J5IjpbNTE5NzQzMzg2LC0xMTE3MTcxMDM0LC02OD
+E2NzY3NDIsMjA3NjI4MTIyOSwxODg5NTI2Mzg3LC00MDk1MzQ3
+MjMsMTA1NzAyNTEwMiwtMzIwNTc1NTI0LC0yNDc3MzA0NjQsLT
+U0MjAyODg5Myw4ODMzNDgzNjYsLTE5NzA4NTkyNDcsLTEzNDk2
+NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5ODMwMSwtMTgzNjAzNz
+MwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1NzAsNzAy
+NTAzNzUwXX0=
 -->
