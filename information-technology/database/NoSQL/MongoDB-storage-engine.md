@@ -44,9 +44,7 @@ WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 10
 
 #### [스킵 리스트(Skip-List)](https://brilliant.org/wiki/skip-lists/#:~:text=The%20skip%20list%20is%20a,elements,%20but%20no%20new%20elements.)
 
-스킵리스트를 사용하면, 노드 추가, 검색에 별도의 잠금이 필요하지 않습니다. 삭제의 경우는 일부 잠금이 필요할 수 있으나 RDBMS의 보다는 빠르게 처리 됩니다. 종합적으로 스킵 리스트를 사용하면 
-
-  **새로운 노드를 추가하기 위해서 별도의 잠금을 필요로 하지 않으며, 검색 또한 별도의 잠금을 필요로 하지 않는다.** 스킵 리스트의 노드 삭제는 잠금을 필요로 하지만, B-Tree 자료 구조보단 잠금을 덜 필요로 하므로 큰 성능 이슈는 아니다. 그래서 여러 쓰레드가 동시에 하나의 스킵 리스트에 노드를 저장하거나 검색을 한다고 하도 서로 전혀 큰 잠금 경합을 하지 않는다.
+스킵리스트를 사용하면, 노드 추가, 검색에 별도의 잠금이 필요하지 않습니다. 삭제의 경우는 일부 잠금이 필요할 수 있으나 RDBMS의 보다는 빠르게 처리 됩니다. 종합적으로 스킵 리스트를 사용하면, 잠금 경합이 적어져서 더 좋은 성능을 보입니다. 
 
 RDBMS에서 레코드를 별도의 공간(언두 로그)에 저장하는 이유는 트랜잭션이 롤백 될때 기존 데이터를 복구하기 위함인데, 많은 RDBMS에서는 언두 로그를 잠금 없는 데이터 읽기 용도로 같이 사용한다. WT 스토리지 엔진에서는 **언두로그를 스킵 리스트**로 관리하는데, 조금 독특하게 데이터 페이지의 레코드를 직접 변경하지 않고 변경 이후 데이터를 스킵 리스트에 추가한다. 
 
@@ -92,11 +90,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTE3Njk5MSwtNTQyMDI4ODkzLDg4Mz
-M0ODM2NiwtMTk3MDg1OTI0NywtMTM0OTY2MTE4LC0xNTk1MTY1
-Nzg4LC0xMDQwMTk4MzAxLC0xODM2MDM3MzA0LC0xNDc4NDk5Nj
-EsLTM3ODcxMzM3LDc2Njg5MzU3MCw3MDI1MDM3NTAsMTIxMDc1
-NTk1OCwtMTI5NTMzMjczNywtMjE0MDc4NjczMiwtNjA5NzEyMT
-IxLC0xOTk2NDEwOTQ0LDgwODQxMjY0NCwtMTU1MjUyNzkwMCwt
-ODgyMDAzOTJdfQ==
+eyJoaXN0b3J5IjpbLTEzMDU5NTkyNTIsLTU0MjAyODg5Myw4OD
+MzNDgzNjYsLTE5NzA4NTkyNDcsLTEzNDk2NjExOCwtMTU5NTE2
+NTc4OCwtMTA0MDE5ODMwMSwtMTgzNjAzNzMwNCwtMTQ3ODQ5OT
+YxLC0zNzg3MTMzNyw3NjY4OTM1NzAsNzAyNTAzNzUwLDEyMTA3
+NTU5NTgsLTEyOTUzMzI3MzcsLTIxNDA3ODY3MzIsLTYwOTcxMj
+EyMSwtMTk5NjQxMDk0NCw4MDg0MTI2NDQsLTE1NTI1Mjc5MDAs
+LTg4MjAwMzkyXX0=
 -->
