@@ -44,7 +44,7 @@ WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 10
 
 #### 스킵 리스트(Skip-List)
 
-일반적인 단순 링크드 리스트의 검색 성능은 $O(n)$인 반면, 스킵 리스트의 평균 검색 성능은 B-Tree와 같은 $O(log n)$이다. 
+일반적인 단순 링크드 리스트의 검색 성능은 $O(n)$인 반면, 스킵 리스트의 평균 검색 성능은 B-Tree와 같은 $O(log n)$이다.
 
 WT에서 스킵리스트를 사용하면  **새로운 노드를 추가하기 위해서 별도의 잠금을 필요로 하지 않으며, 검색 또한 별도의 잠금을 필요로 하지 않는다.** 스킵 리스트의 노드 삭제는 잠금을 필요로 하지만, B-Tree 자료 구조보단 잠금을 덜 필요로 하므로 큰 성능 이슈는 아니다. 그래서 여러 쓰레드가 동시에 하나의 스킵 리스트에 노드를 저장하거나 검색을 한다고 하도 서로 전혀 큰 잠금 경합을 하지 않는다.
 
@@ -92,11 +92,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzA4NTkyNDcsLTEzNDk2NjExOCwtMT
-U5NTE2NTc4OCwtMTA0MDE5ODMwMSwtMTgzNjAzNzMwNCwtMTQ3
-ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1NzAsNzAyNTAzNzUwLD
-EyMTA3NTU5NTgsLTEyOTUzMzI3MzcsLTIxNDA3ODY3MzIsLTYw
-OTcxMjEyMSwtMTk5NjQxMDk0NCw4MDg0MTI2NDQsLTE1NTI1Mj
-c5MDAsLTg4MjAwMzkyLC0xNTMxOTk4OTYsMTg0ODQxNDIyMCwt
-NTkzNDcxODQxXX0=
+eyJoaXN0b3J5IjpbMTIwNTcwMzkzNSwtMTk3MDg1OTI0NywtMT
+M0OTY2MTE4LC0xNTk1MTY1Nzg4LC0xMDQwMTk4MzAxLC0xODM2
+MDM3MzA0LC0xNDc4NDk5NjEsLTM3ODcxMzM3LDc2Njg5MzU3MC
+w3MDI1MDM3NTAsMTIxMDc1NTk1OCwtMTI5NTMzMjczNywtMjE0
+MDc4NjczMiwtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQxMj
+Y0NCwtMTU1MjUyNzkwMCwtODgyMDAzOTIsLTE1MzE5OTg5Niwx
+ODQ4NDE0MjIwXX0=
 -->
