@@ -52,11 +52,11 @@ session-1: db.orders.update({user_id:1}, {$set: {order_state:"done"}})
 session-2: db.orders.update({user_id:2}, {$set: {order_state:"prepare"}})
 ```
 
-session-1은 orders 컬렉션의 데이터를 변경하므로 orders 데이터베이스에 대해 IX 잠금을 필요로 합니다. 그리고 orders  컬렉션에 X잠금을 걸어야 한다. 
+session-1은 orders 컬렉션의 데이터를 변경하므로 먼저 상위의 orders 데이터베이스에 대해 IX 잠금을 필요로 합니다. 그리고 orders  컬렉션에 X잠금을 걸어야 합니다.
 
-마찬가지로 session-2도 동일하게 orders 컬렉션의 데이터를 변경하므로 orders 데이터베이스에 대해서 IX잠금을 걸고 orders 컬렉션에 X잠금을 필요로 한다. 
+마찬가지로 session-2도 동일하게 orders 컬렉션의 데이터를 변경하므로 orders 데이터베이스에 대해서 IX잠금을 걸고 orders 컬렉션에 X잠금을 필요로 합니다.
 
-표를 보면, IX잠금은 동시에 사용 또는 획득할 수 있지만, orders 컬렉션의 X잠금은 동시에 불가능하기 때문에 세션별로 처리를 할수 박에 없다. 
+허용관계표를 보면, IX잠금은 동시에  획득할 수 있지만, orders 컬렉션의 X잠금은 동시에 허용이 되지 않기 때문에 세션별로 처리를 할수 박에 없다. 
 
 ```
 session-1: db.orders.find({user_id:1}})
@@ -349,11 +349,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NjM3NDYxMywtMTIyMDk0Mjk5Miw5OT
-MxNDc4MjIsLTk0MTQwMDkyNiwxMTE4MjYxMjMwLDExODY1MjE5
-NDgsLTEyOTk3NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0ODksNz
-c0NjAxOTQzLC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2
-NDQ1MiwxMzM5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMT
-E3MTg1MzY0LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5
-NjldfQ==
+eyJoaXN0b3J5IjpbLTEyOTk5ODExOTYsMTM2NjM3NDYxMywtMT
+IyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQwMDkyNiwxMTE4MjYx
+MjMwLDExODY1MjE5NDgsLTEyOTk3NzI0ODgsNDE4ODY5OTcyLD
+IxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0ODk2NDQxLC01NTU1
+NzE2MDcsLTM2NDg2NDQ1MiwxMzM5MDI4MjcsOTYzMjc2OTYxLD
+I0NTA2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5OCwtNjkxMjYz
+Nzk2XX0=
 -->
