@@ -159,6 +159,8 @@ WT를 사용하는 경우, 데이터를 읽을때
 
 
 
+
+
 # Read & Write Concerns
 
 
@@ -332,8 +334,8 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OT
-EyNjM3OTYsMTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUy
-OCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OT
-Q1MzkzMTksMTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbMjQ1MDY5NjAsLTIxMTcxODUzNjQsNjIyOD
+M1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2OSwtNTgwODg5ODI1
+LDczMjcxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwxODY0OT
+M2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTExNl19
 -->
