@@ -70,12 +70,10 @@ session-2: db.orders.find({user_id:2}})
 
 WirtedTiger는 다른 DBMS처럼 레코드(문서) 기반의 잠금을 사용합니다. 물론, 다양한 레벨의 오브젝트에 대한 잠금을 위해 다중 레벨의 잠금 방식도 같이 사용합니다. (Multiple Granularity Locking) 
 
-WT의 특성으로는 읽기만 하는 경우는 별도의 잠금을 이용하지 않습니다. 이를 잠금없는 일관된 읽기(Non-Locking read)라고도 한다. 
+WT의 특성으로는 읽기만 하는 경우는 별도의 잠금을 이용하지 않습니다. 이를 잠금없는 일관된 읽기(Non-Locking Consistent Read)라고 합니다. 이런 방법을 MVCC를 이용해서 잠금 없이
+WT는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가합니다. 즉 변경되는 내역을 모두 관리하는데, 읽기 명령시 현재 트랜잭션에서 읽어야할 문서 버전을 찾아 읽습니다. 즉 실제로는 그 문서가 변경되기 전에 버전을 읽는 것이므로 별도의 잠금이 필요로 하지 않는것이다. 
 
 
-
-WT는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가합니다. 즉 변경되는 내역을 모두 관리하는데, 읽기 명령시 현재 트랜잭션이 읽어야할 문서 버전을 찾아 읽기만 하면 됩니다. 이런 방법을MVCC를 이용해서 잠금 없이 문서를 읽는다고 하여 
-즉 실제로는 그 문서가 변경되기 전에 버전을 읽는 것이므로 별도의 잠금이 필요로 하지 않는것이다. 
 
 ## 잠금 Yield
 
@@ -342,7 +340,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzQ4OTY2OTQsMTg4MzAwNjc2LC0xNT
+eyJoaXN0b3J5IjpbLTIxNDU1MzI1ODAsMTg4MzAwNjc2LC0xNT
 QxNTU2NjYxLC0yMTczMzQ3MzQsMTM2NjM3NDYxMywtMTIyMDk0
 Mjk5Miw5OTMxNDc4MjIsLTk0MTQwMDkyNiwxMTE4MjYxMjMwLD
 ExODY1MjE5NDgsLTEyOTk3NzI0ODgsNDE4ODY5OTcyLDIxMjY5
