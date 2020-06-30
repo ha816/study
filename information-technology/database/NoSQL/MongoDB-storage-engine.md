@@ -71,6 +71,10 @@ WT도 사용자의 요청을 빠르게 처리하면서 커밋된 트랜잭션의
 체크 포인트는 디스크 데이터 파일과 트랜잭션 로그가 동기화되는 시점을 말합니다. 이 체크 포인트는 주기적으로 백그라운드 쓰레드에 의해서 실행되는데, 체크포인트가 실행되어야만 오래된 트랜잭션 로그를 삭제하거나 새로운 트랜잭션 로그로 덮어쓸 수 있게 됩니다. 
 
 
+체크포인트는 서버 장애가 발생했을때, 복구 시점을 결정하는 기준이 됩니다. 체크포인트의 간격이 너무 길면 서버 복구 시간이 오래걸리고, 너무 짧으면 비번히 체크포인트가 발생하여 성능이 떨어질 수 있습니다. 
+
+WT는 샤프 체크포인트방식을 사용하고 있는데, 샤프 체크 ㅍ
+
 
 WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 데이터 파일과 서버 장애 발생시 데이터를 복구하기 위한 저널 로그(WAL, Write Ahead Log, Logging)를 가지고 있습니다. 
 
@@ -104,11 +108,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzAyNTEwMiwtMzIwNTc1NTI0LC0yND
-c3MzA0NjQsLTU0MjAyODg5Myw4ODMzNDgzNjYsLTE5NzA4NTky
-NDcsLTEzNDk2NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5ODMwMS
-wtMTgzNjAzNzMwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4
-OTM1NzAsNzAyNTAzNzUwLDEyMTA3NTU5NTgsLTEyOTUzMzI3Mz
-csLTIxNDA3ODY3MzIsLTYwOTcxMjEyMSwtMTk5NjQxMDk0NCw4
-MDg0MTI2NDRdfQ==
+eyJoaXN0b3J5IjpbLTQ1ODEzNDM1OSwxMDU3MDI1MTAyLC0zMj
+A1NzU1MjQsLTI0NzczMDQ2NCwtNTQyMDI4ODkzLDg4MzM0ODM2
+NiwtMTk3MDg1OTI0NywtMTM0OTY2MTE4LC0xNTk1MTY1Nzg4LC
+0xMDQwMTk4MzAxLC0xODM2MDM3MzA0LC0xNDc4NDk5NjEsLTM3
+ODcxMzM3LDc2Njg5MzU3MCw3MDI1MDM3NTAsMTIxMDc1NTk1OC
+wtMTI5NTMzMjczNywtMjE0MDc4NjczMiwtNjA5NzEyMTIxLC0x
+OTk2NDEwOTQ0XX0=
 -->
