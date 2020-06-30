@@ -134,14 +134,16 @@ MongoDB 서버에서 WriteConflict Exception이 얼마나 발생했는지는 db.
 MongoDB 서버는 처음부터 단일 다큐먼트의 트랜잭션만 지원하고 있다. 즉 원자 단위의 처리가 보장된다는 것을 말합니다.
 
 >복수 문서 트랜잭션(Multi-Document Transactions)?
->다행이도 MongoDB는 다수 트랜잭션을 지원
->다행이 복수 문서에 대해서 원자성이 보장되는 읽기와 쓰기가 필요합니다.
+>다행이도 MongoDB는 복수 문서에 대한 트랜잭션을 지원한다고 합니다. ([Transactions](https://docs.mongodb.com/manual/core/transactions/))
+>주의사항으로는 서로 다른 연산이 교차로 배치될 수 있습니다. (interleave; 컴퓨터 하드디스크의 성능을 높이기 위해 데이터를 서로 인접하지 않게 배열하는 방식을 말한다.)
+>복수 문서 트랜잭션은 단일
 
 
-다수 문서에 대한 쓰기 작업을 수행할때, 단일 또는 다수 쓰기 모든 연산이든지, 다른 연산이 교차로 배치될 수 있다. (interleave; 컴퓨터 하드디스크의 성능을 높이기 위해 데이터를 서로 인접하지 않게 배열하는 방식을 말한다.)
 
 
-For details regarding transactions in MongoDB, see the  [Transactions](https://docs.mongodb.com/manual/core/transactions/)  page.
+
+
+For details regarding transactions in MongoDB, see the    page.
 
 >주의사항
 >대부분의 경우, 다수-문서 트랜잭션은 단일 문서 쓰기 보다 훨씬 성능  손실이 큽니다. 그리고 효과적인 schema 디자인을 해놓았다면, 다수-문서 트랜잭션을 사용할 일이 별로 없습니다.
@@ -348,8 +350,8 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjgwNTY3OSw2MjI4MzUxOTgsLTY5MT
-I2Mzc5NiwxNzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4
-LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5ND
-UzOTMxOSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbMTIyNzk0NjkxLDYyMjgzNTE5OCwtNjkxMj
+YzNzk2LDE3NzMxOTE5NjksLTU4MDg4OTgyNSw3MzI3MTE1Mjgs
+LTk2MTM2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NT
+M5MzE5LDE1MjI5NjExMTZdfQ==
 -->
