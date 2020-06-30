@@ -27,7 +27,7 @@ MongoDB의 디폴트 스토리지 엔진.
 ![enter image description here](https://image.slidesharecdn.com/mongodb-wiredtiger-webinar-150709200625-lva1-app6892/95/a-technical-introduction-to-wiredtiger-11-638.jpg?cb=1436472726)
 
 
-### Cache(공유캐시)
+## Cache(공유캐시)
 
 WT 스토리지 엔진에서 사용자의 모든 쿼리는 공유 캐시를 거쳐서 처리됩니다. 땨뮨애 공유 캐시의 최적화는 MongoDB 스토리지 성능에 매우 중요한 역할을 담당합니다. 
 
@@ -102,7 +102,7 @@ WT 스토리ㅣ지 엔진의 데이터 블록은 모두 가변사이즈입니다
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDgxOTQwOTMsLTY4MTY3Njc0MiwyMD
+eyJoaXN0b3J5IjpbLTExMTcxNzEwMzQsLTY4MTY3Njc0MiwyMD
 c2MjgxMjI5LDE4ODk1MjYzODcsLTQwOTUzNDcyMywxMDU3MDI1
 MTAyLC0zMjA1NzU1MjQsLTI0NzczMDQ2NCwtNTQyMDI4ODkzLD
 g4MzM0ODM2NiwtMTk3MDg1OTI0NywtMTM0OTY2MTE4LC0xNTk1
