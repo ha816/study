@@ -51,7 +51,7 @@ WT에서 스킵리스트를 사용하면  **새로운 노드를 추가하기 위
 
 RDBMS에서 레코드를 별도의 공간(언두 로그)에 저장하는 이유는 트랜잭션이 롤백 될때 기존 데이터를 복구하기 위함인데, 많은 RDBMS에서는 언두 로그를 잠금 없는 데이터 읽기 용도로 같이 사용한다. WT 스토리지 엔진에서는 **언두로그를 스킵 리스트**로 관리하는데, 조금 독특하게 데이터 페이지의 레코드를 직접 변경하지 않고 변경 이후 데이터를 스킵 리스트에 추가한다. 
 
-데이터 페이지는 디스크에서 공유 캐시 메모리로 읽어 들인 데이터 페이지를 의미하는데, WT에서는 데이터가 변경되어도 디스크에서 읽어 드린 데이터 페이지에 변경된 내용을 직접적으로 변경하지 않는다. 대신 데이터가 변경되면 변경된 내용을 스킵 리스트에 차고차고 기록해 둔다. 그리고 사용자 쿼리가 데이터를 읽을때ㅣ에는 변경 이력이 저장된 스킵 리스트를 검색해서 원하는 시점의 데이터를 가져간다. 이렇게 변경된 내용을 직접 데이터 페이지에 덮어쓰지 않고 별도의 리스트로 관리하는 이유는 쓰기 처리를 빠르게 하기 위함이다. 
+데이터 페이지는 디스크에서 공유 캐시 메모리로 읽어 들인 데이터 페이지를 의미하는데, WT에서는 데이터가 변경되어도 디스크에서 읽어 드린 **데이터 페이지에 변경된 내용을 직접 변경하지 않는다.** 대신 데이터가 변경되면 변경된 내용을 스킵 리스트에 차고차고 기록해 둔다. 그리고 사용자 쿼리가 데이터를 읽을때ㅣ에는 변경 이력이 저장된 스킵 리스트를 검색해서 원하는 시점의 데이터를 가져간다. 이렇게 변경된 내용을 직접 데이터 페이지에 덮어쓰지 않고 별도의 리스트로 관리하는 이유는 쓰기 처리를 빠르게 하기 위함이다. 
 
 기존 RDBMS에서는 데이터가 변경되면 기존 레코드보다 데이터의 크기가 커져서 데이터 페이지 내에서 레코드 위치를 옮겨야 할 수도 있는데, 이 일련의 과정을 데이터 패이지 내에서 처리하면 이를 처리하는 동안 사용자가 기다려야한다. 하지만 WT에서는 단지 변경되는 내용을 스킵리스트에 추가하기만 하면 된다. 또한 스킵 리스트에 추가하는 작업은 매우 빠르게 처리되므로 사용자의 응답 시간도 훨씬 빨라진다.
 
@@ -91,11 +91,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzYwMzczMDQsLTE0Nzg0OTk2MSwtMz
-c4NzEzMzcsNzY2ODkzNTcwLDcwMjUwMzc1MCwxMjEwNzU1OTU4
-LC0xMjk1MzMyNzM3LC0yMTQwNzg2NzMyLC02MDk3MTIxMjEsLT
-E5OTY0MTA5NDQsODA4NDEyNjQ0LC0xNTUyNTI3OTAwLC04ODIw
-MDM5MiwtMTUzMTk5ODk2LDE4NDg0MTQyMjAsLTU5MzQ3MTg0MS
-wtNzY0MTUwOTA2LC0xMTM3NzE4MDIwLDEzNzMzNTg5NzIsLTEz
-NzQ1MTY5ODddfQ==
+eyJoaXN0b3J5IjpbLTEwMjAxNDA3MzcsLTE4MzYwMzczMDQsLT
+E0Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcwMjUwMzc1
+MCwxMjEwNzU1OTU4LC0xMjk1MzMyNzM3LC0yMTQwNzg2NzMyLC
+02MDk3MTIxMjEsLTE5OTY0MTA5NDQsODA4NDEyNjQ0LC0xNTUy
+NTI3OTAwLC04ODIwMDM5MiwtMTUzMTk5ODk2LDE4NDg0MTQyMj
+AsLTU5MzQ3MTg0MSwtNzY0MTUwOTA2LC0xMTM3NzE4MDIwLDEz
+NzMzNTg5NzJdfQ==
 -->
