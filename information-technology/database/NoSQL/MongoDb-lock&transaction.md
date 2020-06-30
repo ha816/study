@@ -173,7 +173,7 @@ Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리�
 > 동기화 제어
 
 * UNACKNOWLEDGED
-	* 클라이언트가 MongoDB로 요청을 보내고 난 뒤, 응답에 관심을 두지 않고, 
+	* 클라이언트가 MongoDB로 요청을 보내고 난 뒤, 응답에 관심을 두지 않습니다. 심지어 바로 다음 쿼리를 수행할 수도 있습니다
 * ACKNOWLEDGED
 * JOURNALED
 * FSYNC
@@ -328,9 +328,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDg2NDQ1MiwxMzM5MDI4MjcsOTYzMj
-c2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5OCwt
-NjkxMjYzNzk2LDE3NzMxOTE5NjksLTU4MDg4OTgyNSw3MzI3MT
-E1MjgsLTk2MTM2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5Mywt
-Njk0NTM5MzE5LDE1MjI5NjExMTZdfQ==
+eyJoaXN0b3J5IjpbMTY2MTYyNjIwMywtMzY0ODY0NDUyLDEzMz
+kwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQs
+NjIyODM1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2OSwtNTgwOD
+g5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwx
+ODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTExNl19
 -->
