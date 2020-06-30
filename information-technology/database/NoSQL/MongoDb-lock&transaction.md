@@ -10,7 +10,7 @@ Shared lock (공유 잠금)
 
 ## MongoDB Lock
 
-MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금으로 나누어 집니다. 명시적 잠금에는 글로벌 잠금만이 해당되며 나머지 모든 잠금(오브젝트 잠금)은 묵시적 잠금입니다.  묵시적 잠금은 쿼리 실행시 자동적으로 획득됐다가 자동으로 해제되는 잠금입니다.
+MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금으로 나누어 집니다. 명시적 잠금에는 글로벌 잠금만이 해당되며 나머지 모든 잠금(Object Lock)은 묵시적 잠금입니다.  묵시적 잠금은 쿼리 실행시 자동적으로 획득됐다가 자동으로 해제되는 잠금입니다.
 
 ### Global Lock(Instance Lock)
 
@@ -22,12 +22,12 @@ db.fsyncLock({fsync:1, lock:true})
 
 fsync:1을 설정하면 아직 디스크에 기록되지 못한 데이터를 모두 디스크에 기록합니다. lock:true 옵션이 있으면 비로소 글로벌 잠금을 획득하게 되는데, 이는 쓰기 잠금이지 읽기 잠금은 아닙니다. 
 
-### 오브젝트 잠금
+### Object Lock
 
-MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨 잠금 방식을 방식을 지원했습니다.
+MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨 잠금 방식을 방식을 지원합니다.
 
 > Multiple Granularity Locking(다중 레벨 잠금방식)
-> 계층형 오브젝트에 대한 동시성 처리를 위해서 다중 레벨의 잠금 방식
+> 계층형 오브젝트에 대한 동시성 처리를 위한 다중 레벨의 잠금 방식
 
 MongoDB에서는 S(Shared Lock), X(Exclusive Lock), 그리고 IS(Intent Shared Lock)과 IX(Intent Exclusive Lock)을 제공한다. IS와 IX는 의도를 표현하는 잠금인데 묶어서 인텐션 잠금이라도도 한다. 
 
@@ -351,11 +351,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc1NDk5MDQ2LDExMTgyNjEyMzAsMTE4Nj
-UyMTk0OCwtMTI5OTc3MjQ4OCw0MTg4Njk5NzIsMjEyNjkyNjQ4
-OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1NTU3MTYwNywtMz
-Y0ODY0NDUyLDEzMzkwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAs
-LTIxMTcxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3OTYsMTc3Mz
-E5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzZd
-fQ==
+eyJoaXN0b3J5IjpbMTM4NzI3NDI0NiwxMTE4MjYxMjMwLDExOD
+Y1MjE5NDgsLTEyOTk3NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0
+ODksNzc0NjAxOTQzLC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLT
+M2NDg2NDQ1MiwxMzM5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYw
+LC0yMTE3MTg1MzY0LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3Nz
+MxOTE5NjksLTU4MDg4OTgyNSw3MzI3MTE1MjgsLTk2MTM2NTM2
+XX0=
 -->
