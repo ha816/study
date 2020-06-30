@@ -63,8 +63,7 @@ session-1: db.orders.find({user_id:1}})
 session-2: db.orders.find({user_id:2}})
 ```
 
-같은 orders 컬렉션을  조회만 하는 경우를 봅시다. orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S잠금또한 필요하다. 다행히 S잠금간에는 호완이 가능하기 때문에 두 커넥션은 동시에 수행이 된다. 
-
+같은 orders 컬렉션을  조회만 하는 경우를 봅시다. orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S 잠금또한 필요합니다. 다행히 S 잠금간에는 호완이 가능하기 때문에 두 커넥션은 동시에 수행이 됩니다.
 
 # 스토리지 엔진의 잠금
 
@@ -349,11 +348,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDU2NDM1MywxMzY2Mzc0NjEzLC0xMj
-IwOTQyOTkyLDk5MzE0NzgyMiwtOTQxNDAwOTI2LDExMTgyNjEy
-MzAsMTE4NjUyMTk0OCwtMTI5OTc3MjQ4OCw0MTg4Njk5NzIsMj
-EyNjkyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1NTU3
-MTYwNywtMzY0ODY0NDUyLDEzMzkwMjgyNyw5NjMyNzY5NjEsMj
-Q1MDY5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3
-OTZdfQ==
+eyJoaXN0b3J5IjpbODc4MzQwNzk5LDEzNjYzNzQ2MTMsLTEyMj
+A5NDI5OTIsOTkzMTQ3ODIyLC05NDE0MDA5MjYsMTExODI2MTIz
+MCwxMTg2NTIxOTQ4LC0xMjk5NzcyNDg4LDQxODg2OTk3MiwyMT
+I2OTI2NDg5LDc3NDYwMTk0MywtMTYzNDg5NjQ0MSwtNTU1NTcx
+NjA3LC0zNjQ4NjQ0NTIsMTMzOTAyODI3LDk2MzI3Njk2MSwyND
+UwNjk2MCwtMjExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MTI2Mzc5
+Nl19
 -->
