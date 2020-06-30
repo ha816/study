@@ -32,8 +32,8 @@ MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨
 MongoDB에서는 다중 레벨 잠금으로 S(Shared Lock), X(Exclusive Lock), IS(Intent Shared Lock), IX(Intent Exclusive Lock)을 제공합니다. 
 
 IS와 IX는 의도를 표현하는 잠금으로 함께 묶어 인텐션 잠금(Intention Lock)이라고도 합니다.
-IS는 컬렉션이나 문서 레벨 오브젝트에 Shared Lock을 걸거이라는 의도를 나타냅니다. 
-IX는 마찬가지로 컬렉션이나 문서 레벨에 Exclusive Lock을 걸거이라는 의도를 나타냅니다. 
+IS는 컬렉션이나 문서 레벨 오브젝트에 Shared Lock을 획득할것이라는 의도를 나타냅니다. 
+IX는 마찬가지로 컬렉션이나 문서 레벨 오브젝트에 Exclusive Lock을 획득할것이라는 의도를 나타냅니다. 
 
 Intent Lock은 현재 쓰레드가 특정 오브젝트에 대해 Lock을 걸 의도를 가지고 있지만, 다른 변경의도를 가진 락(Intent Lock)도 허용하는 형태의 잠금입니다. 
 
@@ -352,11 +352,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MTk2OTk3OSwtOTQxNDAwOTI2LDExMT
-gyNjEyMzAsMTE4NjUyMTk0OCwtMTI5OTc3MjQ4OCw0MTg4Njk5
-NzIsMjEyNjkyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLT
-U1NTU3MTYwNywtMzY0ODY0NDUyLDEzMzkwMjgyNyw5NjMyNzY5
-NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OT
-EyNjM3OTYsMTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUy
-OF19
+eyJoaXN0b3J5IjpbOTkzMTQ3ODIyLC05NDE0MDA5MjYsMTExOD
+I2MTIzMCwxMTg2NTIxOTQ4LC0xMjk5NzcyNDg4LDQxODg2OTk3
+MiwyMTI2OTI2NDg5LDc3NDYwMTk0MywtMTYzNDg5NjQ0MSwtNT
+U1NTcxNjA3LC0zNjQ4NjQ0NTIsMTMzOTAyODI3LDk2MzI3Njk2
+MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MT
+I2Mzc5NiwxNzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4
+XX0=
 -->
