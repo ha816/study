@@ -54,18 +54,7 @@ WT에서는 스킵리스트가 언두로그의 역할을 하게 됩니다. 스�
 
 #### 캐시 이빅션(Cache Eviction)
 
-
-
-
-
-
-
-데이터 페이지는 디스크에서 공유 캐시 메모리로 읽어 들인 데이터 페이지를 의미하는데, WT에서는 데이터가 변경되어도 디스크에서 읽어 드린 **데이터 페이지에 변경된 내용을 직접 변경하지 않는다.** 대신 데이터가 변경되면 변경된 내용을 스킵 리스트에 차고차고 기록해 둔다. 그리고 사용자 쿼리가 데이터를 읽을때ㅣ에는 변경 이력이 저장된 스킵 리스트를 검색해서 원하는 시점의 데이터를 가져간다. 이렇게 변경된 내용을 직접 데이터 페이지에 덮어쓰지 않고 **별도의 리스트로 관리하는 이유는 쓰기 처리를 빠르게 하기 위함이다.** 
-
-기존 RDBMS에서는 데이터가 변경되면 기존 레코드보다 데이터의 크기가 커져서 데이터 페이지 내에서 레코드 위치를 옮겨야 할 수도 있는데, 이 일련의 과정을 데이터 패이지 내에서 처리하면 이를 처리하는 동안 사용자가 기다려야한다. 하지만 WT에서는 단지 변경되는 내용을 스킵리스트에 추가하기만 하면 된다. 또한 스킵 리스트에 추가하는 작업은 매우 빠르게 처리되므로 사용자의 응답 시간도 훨씬 빨라진다.
-
-
-
+WT는 공유 캐시를 위해서 새로운 디스크 데이터 페이지를 읽어 적재할 수 있도록 빈 공간을 항상 유지해야 합니다. 
 
 
 
@@ -101,11 +90,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTE0MzExNDUsLTI0NzczMDQ2NCwtNT
-QyMDI4ODkzLDg4MzM0ODM2NiwtMTk3MDg1OTI0NywtMTM0OTY2
-MTE4LC0xNTk1MTY1Nzg4LC0xMDQwMTk4MzAxLC0xODM2MDM3Mz
-A0LC0xNDc4NDk5NjEsLTM3ODcxMzM3LDc2Njg5MzU3MCw3MDI1
-MDM3NTAsMTIxMDc1NTk1OCwtMTI5NTMzMjczNywtMjE0MDc4Nj
-czMiwtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQxMjY0NCwt
-MTU1MjUyNzkwMF19
+eyJoaXN0b3J5IjpbNjc3NTQwOTIsLTI0NzczMDQ2NCwtNTQyMD
+I4ODkzLDg4MzM0ODM2NiwtMTk3MDg1OTI0NywtMTM0OTY2MTE4
+LC0xNTk1MTY1Nzg4LC0xMDQwMTk4MzAxLC0xODM2MDM3MzA0LC
+0xNDc4NDk5NjEsLTM3ODcxMzM3LDc2Njg5MzU3MCw3MDI1MDM3
+NTAsMTIxMDc1NTk1OCwtMTI5NTMzMjczNywtMjE0MDc4NjczMi
+wtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQxMjY0NCwtMTU1
+MjUyNzkwMF19
 -->
