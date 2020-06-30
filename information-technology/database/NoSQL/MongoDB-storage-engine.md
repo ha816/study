@@ -54,7 +54,9 @@ WT에서는 스킵리스트가 언두로그의 역할을 하게 됩니다. 스�
 
 #### 캐시 이빅션(Cache Eviction)
 
-WT는 공유 캐시를 위해서 새로운 디스크 데이터 페이지를 읽어 적재할 수 있도록 빈 공간을 항상 유지해야 합니다. 
+WT는 공유 캐시를 위해서 새로운 디스크 데이터 페이지를 읽어 적재할 수 있도록 빈 공간을 항상 유지해야 합니다. 그렇지 않으면 쿼리가 필요한 데이터 페이지를 가져오지 못해 처리 응답속도가 느려집니다.
+
+공유 캐시의 적절한 빈 공간 유지를 위해 Eviction 쓰레드가 
 
 
 
@@ -90,11 +92,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3NTQwOTIsLTI0NzczMDQ2NCwtNTQyMD
-I4ODkzLDg4MzM0ODM2NiwtMTk3MDg1OTI0NywtMTM0OTY2MTE4
-LC0xNTk1MTY1Nzg4LC0xMDQwMTk4MzAxLC0xODM2MDM3MzA0LC
-0xNDc4NDk5NjEsLTM3ODcxMzM3LDc2Njg5MzU3MCw3MDI1MDM3
-NTAsMTIxMDc1NTk1OCwtMTI5NTMzMjczNywtMjE0MDc4NjczMi
-wtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQxMjY0NCwtMTU1
-MjUyNzkwMF19
+eyJoaXN0b3J5IjpbLTYyNzIyNTQ0NCwtMjQ3NzMwNDY0LC01ND
+IwMjg4OTMsODgzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMzQ5NjYx
+MTgsLTE1OTUxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMzczMD
+QsLTE0Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcwMjUw
+Mzc1MCwxMjEwNzU1OTU4LC0xMjk1MzMyNzM3LC0yMTQwNzg2Nz
+MyLC02MDk3MTIxMjEsLTE5OTY0MTA5NDQsODA4NDEyNjQ0LC0x
+NTUyNTI3OTAwXX0=
 -->
