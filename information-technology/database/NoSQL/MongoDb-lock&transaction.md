@@ -232,15 +232,16 @@ MongoDB 서버는 레플리카 셋으로 구축되며, 구성원 간의 데이�
 `local`과 `available`으로 반환된 데이터는 레플리카 셋의 대다수 멤버들에 쓰기 연산이 적용되었다는 것을 보장하지 않습니다. 운이 나빠 롤백이 발생하면 해당 데이터가 레플리카 셋이 존재하지 않을 수 있습니다.
 
 `available`의 경우, 샤딩된 클러스터에서만 `local`과 다르게 동작합니다.
-샤딩된 클러스터에서는 Config Server의 메타 데이터를 보고 쿼리 결과를 반환합니다.  따라서모든 read concerns(local 포함) 중에서 가장 빠른 성능을 보입니다. 하지만 샤딩된 컬렉션을 읽는 과정에서 [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) 문서를 읽을 수도 있습니다. 
+샤딩된 클러스터에서는 Config Server의 메타 데이터를 보고 쿼리 결과를 반환합니다.  따라서 모든 read concerns(local 포함) 중에서 가장 빠른 성능을 보입니다. 하지만 샤딩된 컬렉션을 읽는 과정에서 [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) 문서를 읽을 수도 있습니다. 
 
-샤딩된 컬렉션에서 orphaned document를 읽는 상황을 피하기 위해선, `local` read concern과 같은 다른 concern level을 씁시다.
+샤딩된 컬렉션에서 orphaned document를 읽는 상황을 피하기 위해선, `local` read concern과 같은 다른 concern level을 사용해야 합니다.
 
 > orphaned document
 > 샤딩된 클러스터에서, 비정상 종료 때문에 실패하거나 불완전한 마이그레이션으로 발생하는 다른 샤드의 문서입니다. 이 문서를 제거하기 위해 `cleanupOrphaned`을 사용할 수 있습니다.
 
 ### majority
 
+majority로 반환된 데이터는 레플리카 셋에서 다수의 멤버가 최신의 데이터를 가져을때에만 읽기 
 저장된 데이터를 빠르게 가져오는 Read Concern입니다. 
 이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 최근에 쓰여졌다면, 가져온 데이터가 최신인것을 보장하지 않습니다. 
 
@@ -355,11 +356,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMTg2ODk5MCw0MTg4Njk5NzIsMjEyNj
-kyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1NTU3MTYw
-NywtMzY0ODY0NDUyLDEzMzkwMjgyNyw5NjMyNzY5NjEsMjQ1MD
-Y5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3OTYs
-MTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUyOCwtOTYxMz
-Y1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTld
-fQ==
+eyJoaXN0b3J5IjpbLTEyOTk3NzI0ODgsNDE4ODY5OTcyLDIxMj
+Y5MjY0ODksNzc0NjAxOTQzLC0xNjM0ODk2NDQxLC01NTU1NzE2
+MDcsLTM2NDg2NDQ1MiwxMzM5MDI4MjcsOTYzMjc2OTYxLDI0NT
+A2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5OCwtNjkxMjYzNzk2
+LDE3NzMxOTE5NjksLTU4MDg4OTgyNSw3MzI3MTE1MjgsLTk2MT
+M2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5
+XX0=
 -->
