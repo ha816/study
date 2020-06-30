@@ -20,7 +20,7 @@ MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금입니다.
 db.fsyncLock({fsync:1, lock:true})
 ```
 
-기본적으로 fsync:1으로 설정하면 아직 디스크에 기록되지 못한 데이터(캐시, 메모리) 모두 디스크로 기록합니다. lock:true 옵션이 있으면 글로벌 잠금을 획득하게 되는데, 이는 쓰기 잠금이지 읽기 잠금은 아닙니다. 
+fsync:1을 설정하면 락을 획득하기 전에 아직 디스크에 기록되지 못한 데이터를 모두 디스크에 기록합니다. lock:true 옵션이 있으면 글로벌 잠금을 획득하게 되는데, 이는 쓰기 잠금이지 읽기 잠금은 아닙니다. 
 
 ### 오브젝트 잠금
 
@@ -351,11 +351,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNTY0NzQyLDExODY1MjE5NDgsLTEyOT
-k3NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQz
-LC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMz
-M5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0
-LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5NjksLTU4MD
-g4OTgyNSw3MzI3MTE1MjgsLTk2MTM2NTM2LDExNTc0ODY4NDhd
-fQ==
+eyJoaXN0b3J5IjpbLTE2Mzc5ODY0NDksMTE4NjUyMTk0OCwtMT
+I5OTc3MjQ4OCw0MTg4Njk5NzIsMjEyNjkyNjQ4OSw3NzQ2MDE5
+NDMsLTE2MzQ4OTY0NDEsLTU1NTU3MTYwNywtMzY0ODY0NDUyLD
+EzMzkwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUz
+NjQsNjIyODM1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2OSwtNT
+gwODg5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0
+OF19
 -->
