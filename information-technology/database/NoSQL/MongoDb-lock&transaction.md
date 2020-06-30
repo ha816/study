@@ -24,9 +24,7 @@ fsync:1을 설정하면 아직 디스크에 기록되지 못한 데이터를 모
 
 ### Object Lock
 
-MongoDB에서는 데이터베이스, 컬렉션 3개 레벨의 오브젝트에 대해서 잠금을 지원한다.
-
-MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨 잠금(Multiple Granularity Locking)을 지원합니다.
+MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨 잠금(Multiple Granularity Locking)을 지원합니다. MongoDB의 묵시적 잠금은 데이터베이스, 컬렉션 레벨의 오브젝트에 대해서 잠금을 지원합니다.
 
 > Multiple Granularity Locking(다중 레벨 잠금방식)
 > 단일 계층형 오브젝트에 대해 효율적인 동시성 처리를 위한 다중 레벨의 잠금 방식
@@ -73,7 +71,7 @@ session-2: db.orders.update({user_id:2}})
 
 # 스토리지 엔진의 잠금
 
-스토리지 엔진이라고 했지만, 기본적으로 WiredTiger 스토리지 엔진에 대한 설명이 메인ㅇ
+스토리지 엔진이라고 했지만, 기본적으로 WiredTiger 스토리지 엔진에 대한 설명이 메인입니다.
 
 WirtedTiger는 다른 DBMS처럼 문서(레코드) 기반의 잠금을 사용한다. 하지만 다양한 레벨의 DB 오브젝트에 대한 잠금을 위해 다중 레벨의 잠금 방식도 같이 사용한다. (Multiple Granularity Locking) 
 
@@ -354,11 +352,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDU2NjI2NzEsLTEyMjA5NDI5OTIsOT
-kzMTQ3ODIyLC05NDE0MDA5MjYsMTExODI2MTIzMCwxMTg2NTIx
-OTQ4LC0xMjk5NzcyNDg4LDQxODg2OTk3MiwyMTI2OTI2NDg5LD
-c3NDYwMTk0MywtMTYzNDg5NjQ0MSwtNTU1NTcxNjA3LC0zNjQ4
-NjQ0NTIsMTMzOTAyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMj
-ExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkx
-OTY5XX0=
+eyJoaXN0b3J5IjpbMTc5MjU1MTI0MSwtMTIyMDk0Mjk5Miw5OT
+MxNDc4MjIsLTk0MTQwMDkyNiwxMTE4MjYxMjMwLDExODY1MjE5
+NDgsLTEyOTk3NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0ODksNz
+c0NjAxOTQzLC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2
+NDQ1MiwxMzM5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMT
+E3MTg1MzY0LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5
+NjldfQ==
 -->
