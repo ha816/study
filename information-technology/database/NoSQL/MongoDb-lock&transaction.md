@@ -65,11 +65,11 @@ session-2: db.orders.find({user_id:2}})
 
 같은 orders 컬렉션을  조회만 하는 경우를 봅시다. orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S 잠금또한 필요합니다. 다행히 S 잠금간에는 호완이 가능하기 때문에 두 커넥션은 동시에 수행이 됩니다.
 
-# 스토리지 엔진의 잠금
+# Storage Engine Lock
 
-스토리지 엔진이라고 했지만, 기본적으로 WiredTiger 스토리지 엔진에 대한 설명이 메인입니다.
+스토리지 엔진이라고 했지만, 주로 WiredTiger 스토리지 엔진에 대한 설명입니다.
 
-WirtedTiger는 다른 DBMS처럼 문서(레코드) 기반의 잠금을 사용한다. 하지만 다양한 레벨의 DB 오브젝트에 대한 잠금을 위해 다중 레벨의 잠금 방식도 같이 사용한다. (Multiple Granularity Locking) 
+WirtedTiger는 다른 DBMS처럼 레코드() 기반의 잠금을 사용한다. 하지만 다양한 레벨의 DB 오브젝트에 대한 잠금을 위해 다중 레벨의 잠금 방식도 같이 사용한다. (Multiple Granularity Locking) 
 
 MongoDB의 각 DB 오브젝트는 계층 구조를 가지는데, 각 계층 구조에서 하위 오브 젝트에 대한 잠금을 획득하려면, 상위 계층의 인텐션 잠금을 먼저 획득해야 한다. 
 
@@ -348,7 +348,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc4MzQwNzk5LDEzNjYzNzQ2MTMsLTEyMj
+eyJoaXN0b3J5IjpbNzU0ODY2NTc0LDEzNjYzNzQ2MTMsLTEyMj
 A5NDI5OTIsOTkzMTQ3ODIyLC05NDE0MDA5MjYsMTExODI2MTIz
 MCwxMTg2NTIxOTQ4LC0xMjk5NzcyNDg4LDQxODg2OTk3MiwyMT
 I2OTI2NDg5LDc3NDYwMTk0MywtMTYzNDg5NjQ0MSwtNTU1NTcx
