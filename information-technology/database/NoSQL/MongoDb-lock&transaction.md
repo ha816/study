@@ -321,13 +321,11 @@ causally consistent sessions으로, MongoDB는 그들의 causal 관계십에 기
 Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 세션에 가능합니다. A causally consistent session은 `majority` 읽기 연산을 가진것과  `majority` 쓰기 연산의 연속들로 구성됩니다.  애플리케이션은 반드시 클라이언트 세션에서 오직 하나의 쓰레드에서 이런 연산이 수행되도록 해야합니다.
  
 
-> Written with [StackEdit](https://stackedit.io/).
-
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzQ1NzE3ODQsNjIyODM1MTk4LC02OT
-EyNjM3OTYsMTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUy
-OCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OT
-Q1MzkzMTksMTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbMjEwMTA1NDU0Miw2MjI4MzUxOTgsLTY5MT
+I2Mzc5NiwxNzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4
+LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5ND
+UzOTMxOSwxNTIyOTYxMTE2XX0=
 -->
