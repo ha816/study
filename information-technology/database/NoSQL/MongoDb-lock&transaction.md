@@ -168,7 +168,9 @@ Write 작업을 Primary에서 먼저 수행하고, 이후 Secondaries가 같은 
 
 ![](https://k.kakaocdn.net/dn/daSduH/btqvErfiQPr/YnveydIHjt1YdgInTK1VxK/img.png)
 
-Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리한 이후 바로 Client 에게 response 를 보내는 것이 아니라 Secondary 쪽으로 데이터를 동기화 작업을 완료한 이후에 Client 에게 response 를 보내게 된다.** 이렇게 되면 Client 와 Primary, Secondary 간에 데이터 일관성을 유지할 수 있게 된다.
+Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리한 이후 바로 Client 에게 response 를 보내는 것이 아니라 Secondary 쪽으로 데이터를 동기화 작업을 완료한 이후에 Client 에게 response 를 보내게 된다.** 이렇게 되면 Client 와 Primary, Secondary 간에 데이터 일관성을 유지할 수 있게 됩니다.
+
+> 동기화 제어
 
 Write Concern 을 지정하는데는 크게 w / j / wtimeout options를 설정 할 수 있습니다.
 
@@ -320,9 +322,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzOTAyODI3LDk2MzI3Njk2MSwyNDUwNj
-k2MCwtMjExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MTI2Mzc5Niwx
-NzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4LC05NjEzNj
-UzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwx
-NTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbLTIwNzczNTQ0MDMsMTMzOTAyODI3LDk2Mz
+I3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2MjI4MzUxOTgs
+LTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNz
+ExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMs
+LTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
 -->
