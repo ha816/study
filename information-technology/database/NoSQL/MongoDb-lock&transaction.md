@@ -24,6 +24,8 @@ fsync:1을 설정하면 아직 디스크에 기록되지 못한 데이터를 모
 
 ### Object Lock
 
+MongoDB에서는 데이터베이스, 컬렉션 3개 레벨의 오브젝트에 대해서 잠금을 지원한다.
+
 MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨 잠금(Multiple Granularity Locking)을 지원합니다.
 
 > Multiple Granularity Locking(다중 레벨 잠금방식)
@@ -352,7 +354,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODg4NzUxMjcsOTkzMTQ3ODIyLC05ND
+eyJoaXN0b3J5IjpbLTEyMjA5NDI5OTIsOTkzMTQ3ODIyLC05ND
 E0MDA5MjYsMTExODI2MTIzMCwxMTg2NTIxOTQ4LC0xMjk5Nzcy
 NDg4LDQxODg2OTk3MiwyMTI2OTI2NDg5LDc3NDYwMTk0MywtMT
 YzNDg5NjQ0MSwtNTU1NTcxNjA3LC0zNjQ4NjQ0NTIsMTMzOTAy
