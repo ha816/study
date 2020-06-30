@@ -38,8 +38,7 @@ WT 스토리지 엔진에서 사용자의 모든 쿼리는 공유 캐시를 거�
 
 사용자 쓰레드는 쿼리를 처리하기 위해 공유 캐시를 참조하는 쓰레드입니다. 쿼리가 들어오면, 사용자 쓰레드는 사용하려는 데이터 페이지를 자신의 하자드 포인터 리스트에 등록합니다. 필요한 작업을 수행하고 하자드 포인터 리스트에서 사용이 끝난 데이터 페이지를 제거합니다. 
 
-
- 이빅션 쓰레드(Eviction Thread)는 오래된 데이터 페이지를 제거하여 캐시의 여유 공간을 만들어 주는 쓰레드 입니다. 
+이빅션 쓰레드(Eviction Thread)는 자주 사용되지 않는 데이터 페이지를 제거하여 캐시의 여유 공간을 만들어 주는 쓰레드 입니다. 
 
 적절히 제거해도 될법한 페이지(자주 사용되지 않는)를 골라서 페이지를 골라 하자드 포인터에 등록되어 있는지 확인합니다. 이때 등록되어 있으면 그 데이터 페이지는 건너 뛰게 됩니다.
 
@@ -95,11 +94,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAzNjY4NTk5LC0xMzQ5NjYxMTgsLTE1OT
-UxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMzczMDQsLTE0Nzg0
-OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcwMjUwMzc1MCwxMj
-EwNzU1OTU4LC0xMjk1MzMyNzM3LC0yMTQwNzg2NzMyLC02MDk3
-MTIxMjEsLTE5OTY0MTA5NDQsODA4NDEyNjQ0LC0xNTUyNTI3OT
-AwLC04ODIwMDM5MiwtMTUzMTk5ODk2LDE4NDg0MTQyMjAsLTU5
-MzQ3MTg0MV19
+eyJoaXN0b3J5IjpbLTE4MTc3OTI4NzgsLTEzNDk2NjExOCwtMT
+U5NTE2NTc4OCwtMTA0MDE5ODMwMSwtMTgzNjAzNzMwNCwtMTQ3
+ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1NzAsNzAyNTAzNzUwLD
+EyMTA3NTU5NTgsLTEyOTUzMzI3MzcsLTIxNDA3ODY3MzIsLTYw
+OTcxMjEyMSwtMTk5NjQxMDk0NCw4MDg0MTI2NDQsLTE1NTI1Mj
+c5MDAsLTg4MjAwMzkyLC0xNTMxOTk4OTYsMTg0ODQxNDIyMCwt
+NTkzNDcxODQxXX0=
 -->
