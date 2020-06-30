@@ -24,7 +24,7 @@ fsync:1을 설정하면 아직 디스크에 기록되지 못한 데이터를 모
 
 ### Object Lock
 
-MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨 잠금(Multiple Granularity Locking)을 지원합니다. MongoDB의 묵시적 잠금은 데이터베이스, 컬렉션 레벨의 오브젝트에 대해서 잠금을 지원합니다.
+MongoDB도 다른 RDBMS와 같이 계층형 오브젝트에 대한 다중 레벨 잠금(Multiple Granularity Locking)을 지원합니다. 묵시적 잠금은 데이터베이스, 컬렉션 레벨의 오브젝트에 대해서 잠금을 지원합니다.
 
 > Multiple Granularity Locking(다중 레벨 잠금방식)
 > 단일 계층형 오브젝트에 대해 효율적인 동시성 처리를 위한 다중 레벨의 잠금 방식
@@ -38,9 +38,6 @@ IX는 마찬가지로 컬렉션이나 문서 레벨 오브젝트에 Exclusive Lo
 Intent Lock은 현재 쓰레드가 특정 오브젝트에 대해 Lock을 걸 의도를 가지고 있지만, 다른 변경의도를 가진 락(Intent Lock)도 허용하는 형태의 잠금입니다. 
 
 
-
-
-
 || Intent Shared| Intent Exclusive| Shared| Exclusive |
 |--|--|--|--|--|
 Integer Shared| O| O |O |X|
@@ -48,7 +45,7 @@ Integer Exclusive| O| O |X|X|
 Shared| O| X | O|X|
 Exclusive| X | X | X|X|
 
-위 표는 잠금들 간의 상호 사용 관계를 나타냅니다. 
+위 표는 잠금들간 상호 허용 관계를 나타냅니다. 이제 예시를 
 
 ```
 session-1: db.orders.update({user_id:1}, {$set: {order_state:"done"}})
@@ -352,11 +349,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MjU1MTI0MSwtMTIyMDk0Mjk5Miw5OT
-MxNDc4MjIsLTk0MTQwMDkyNiwxMTE4MjYxMjMwLDExODY1MjE5
-NDgsLTEyOTk3NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0ODksNz
-c0NjAxOTQzLC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2
-NDQ1MiwxMzM5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMT
-E3MTg1MzY0LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5
-NjldfQ==
+eyJoaXN0b3J5IjpbNDI0NjE3OTQxLC0xMjIwOTQyOTkyLDk5Mz
+E0NzgyMiwtOTQxNDAwOTI2LDExMTgyNjEyMzAsMTE4NjUyMTk0
+OCwtMTI5OTc3MjQ4OCw0MTg4Njk5NzIsMjEyNjkyNjQ4OSw3Nz
+Q2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1NTU3MTYwNywtMzY0ODY0
+NDUyLDEzMzkwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAsLTIxMT
+cxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2
+OV19
 -->
