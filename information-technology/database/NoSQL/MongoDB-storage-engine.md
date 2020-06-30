@@ -79,8 +79,6 @@ WT는 샤프 체크포인트방식을 사용하고 있는데, 샤프 체크 포�
 
 
 
-WiredTiget 스토리지 엔진은 다른 DBMS와 동일하게 B-Tree 구조의 데이터 파일과 서버 장애 발생시 데이터를 복구하기 위한 저널 로그(WAL, Write Ahead Log, Logging)를 가지고 있습니다. 
-
 기본적으로 MongoDB는 단일 문서 단위에 Transactions을 보장합니다. 
 만약 사용자가 특정 문서를 변경하면, WT가 트랜잭션을 시작하고 커서를 이용해서 원하는 다큐먼트의 내용을 변경합니다. 변경 내용은 먼저 캐시에 적용되는데, 디스크에 기록되기 전에 변경 내용을 저널 로그에 기록한 다음 사용자에게 작업 처리 결과를 리턴합니다. 
 
@@ -99,23 +97,13 @@ WT 스토리ㅣ지 엔진의 데이터 블록은 모두 가변사이즈입니다
 
 
 
-
-공유캐시(Cache)
-
-Page read/write(I/O)
-
-Block Management(Eviction; 퇴거, reconciliation; 친해지기)
-
-트랜잭션이 특정 문서에 적용되면, 문서의 변경점이 logging과정을 걸쳐서 저장됩니다.
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NjI4MTIyOSwxODg5NTI2Mzg3LC00MD
-k1MzQ3MjMsMTA1NzAyNTEwMiwtMzIwNTc1NTI0LC0yNDc3MzA0
-NjQsLTU0MjAyODg5Myw4ODMzNDgzNjYsLTE5NzA4NTkyNDcsLT
-EzNDk2NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5ODMwMSwtMTgz
-NjAzNzMwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1Nz
-AsNzAyNTAzNzUwLDEyMTA3NTU5NTgsLTEyOTUzMzI3MzcsLTIx
-NDA3ODY3MzJdfQ==
+eyJoaXN0b3J5IjpbLTY2NTU3Njg5OSwyMDc2MjgxMjI5LDE4OD
+k1MjYzODcsLTQwOTUzNDcyMywxMDU3MDI1MTAyLC0zMjA1NzU1
+MjQsLTI0NzczMDQ2NCwtNTQyMDI4ODkzLDg4MzM0ODM2NiwtMT
+k3MDg1OTI0NywtMTM0OTY2MTE4LC0xNTk1MTY1Nzg4LC0xMDQw
+MTk4MzAxLC0xODM2MDM3MzA0LC0xNDc4NDk5NjEsLTM3ODcxMz
+M3LDc2Njg5MzU3MCw3MDI1MDM3NTAsMTIxMDc1NTk1OCwtMTI5
+NTMzMjczN119
 -->
