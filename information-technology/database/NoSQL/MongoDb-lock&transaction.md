@@ -150,6 +150,37 @@ MongoDB 서버는 분산 처리를 기본 아키텍처로 선택하기 때문에
 
 ## Write Concern
 
+
+### 단일 노드 동기화 제어
+
+단일 노드 동기화 제어는 MongoDB 서버 내부적으로 변경된 데이터가 어느 정도 디스크에 동기화 되었을때 변경 요청에 완료 메세지를 보낼 것인지 판단하는 기준입니다. 
+
+### UNACKNOWLEDGED
+
+클라이언트가 MongoDB로 요청을 보내고 난 뒤, 응답에 관심을 두지 않습니다. 심지어 클라이언트 측에서 바로 다음 쿼리를 수행할 수도 있습니다.
+일반적인 서비스에서는 사용하지 말아야할 동기화 모드 입니다.
+
+### ACKNOWLEDGED
+
+WriteConcern 모드의 기본값입니다.
+클라이언트가 변경 요청을 하면, 변경 내용을 메모리 상에 적용하고 클라이언트로 성공 또는 실패 응답을 반환합니다. 
+데이터 변경이 성공하면 적어도 MongoDB 서버의 메모리 상에는 적용된 상태 입니다.
+
+하지만 메모리 상에서 변경된 데이터가 디스크로 동기화 되는 것을 보장하지는 않기 때문에 디스크 동기화가 되기전에 MongoDB에 문제가 생겨 비정상 종료되면 데이터가 손실될 위험이 있습니다. 
+
+### JOURNALED
+
+저널 로그는 클라이언트가 변경한 데이터를 메모리에 적용한 후, 디스크의 저널 로그에도 동기화 하도록 합니다. 
+
+ACKNOWLEDGED에 있던 비정상 종료가 되더라도 저널 로그에 기록이 되었기 때문에 MongoDB가 재시작되면서 저널로그에 데이터를 복구할 수 있습니다. 
+일반적으로는 JOURNALED 로도 충분하지만, 레플리카 셋을 쓰는 경우는 추가 문제가 발생할 수 있습니다. 
+
+### FSYNC
+
+저널로그뿐만 아니라 디스크 데이터 까지 모두 동기화하고 클라이언트에게 성공/실패 여부를 반환합니다. 파일을 통째로 디스크로 동기화하는 것은 높은 비용이지만 저널로그가 없던 시점에는 많이 사용 되었습니다.  하지만 저널 로그가 생기고 나선 거의 제거될 기능이 되었습니다. (Deprectaed)
+
+
+
 Write Concern이란 MongoDB가 Client의 요청에 대한 응답을 반환하는 시점을 결정하는 옵션입니다. 
 Write Concern은 데이터 읽기와 무관하여 Insert, Update, 그리고 Delete 연산에서만 설정할 수 있습니다.
 
@@ -326,7 +357,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyNjgyNjQyLC0zNjQ4NjQ0NTIsMTMzOT
+eyJoaXN0b3J5IjpbNzQ5OTk5NjIzLC0zNjQ4NjQ0NTIsMTMzOT
 AyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2
 MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01ODA4OD
 k4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4
