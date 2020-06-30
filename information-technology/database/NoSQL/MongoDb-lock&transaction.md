@@ -49,18 +49,18 @@ Exclusive| X | X | X|X|
 
 ```
 session-1: db.orders.update({user_id:1}, {$set: {order_state:"done"}})
-session-2: db.orders.update({user_id:2}, {$set: {order_state:"prepare"}})
+session-2: db.orders.update({user_id:1}, {$set: {order_state:"prepare"}})
 ```
 
 session-1은 orders 컬렉션의 데이터를 변경하므로 먼저 상위의 orders 데이터베이스에 대해 IX 잠금을 필요로 합니다. 그리고 orders  컬렉션에 X잠금을 걸어야 합니다.
 
 마찬가지로 session-2도 동일하게 orders 컬렉션의 데이터를 변경하므로 orders 데이터베이스에 대해서 IX잠금을 걸고 orders 컬렉션에 X잠금을 필요로 합니다.
 
-허용관계표를 보면, IX잠금은 동시에  획득할 수 있지만, orders 컬렉션의 X잠금은 동시에 허용이 되지 않기 때문에 세션별로 처리를 할수 박에 없다. 
+허용관계표를 보면, IX잠금은 동시에  획득할 수 있지만, orders 컬렉션의 X잠금은 동시에 허용이 되지 않기 때문에 세션별로 나누어 처리하게 됩니다.
 
 ```
 session-1: db.orders.find({user_id:1}})
-session-2: db.orders.update({user_id:2}})
+session-2: db.orders.find({user_id:1}})
 ```
 
 두 데이터를 조회만 하는 경우라면, orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S잠금또한 필요하다. 다행히 S잠금간에는 호완이 가능하기 때문에 두 커넥션은 동시에 수행이 된다. 
@@ -349,11 +349,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTk5ODExOTYsMTM2NjM3NDYxMywtMT
-IyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQwMDkyNiwxMTE4MjYx
-MjMwLDExODY1MjE5NDgsLTEyOTk3NzI0ODgsNDE4ODY5OTcyLD
-IxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0ODk2NDQxLC01NTU1
-NzE2MDcsLTM2NDg2NDQ1MiwxMzM5MDI4MjcsOTYzMjc2OTYxLD
-I0NTA2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5OCwtNjkxMjYz
-Nzk2XX0=
+eyJoaXN0b3J5IjpbLTY2NDIwODU5MCwxMzY2Mzc0NjEzLC0xMj
+IwOTQyOTkyLDk5MzE0NzgyMiwtOTQxNDAwOTI2LDExMTgyNjEy
+MzAsMTE4NjUyMTk0OCwtMTI5OTc3MjQ4OCw0MTg4Njk5NzIsMj
+EyNjkyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1NTU3
+MTYwNywtMzY0ODY0NDUyLDEzMzkwMjgyNyw5NjMyNzY5NjEsMj
+Q1MDY5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3
+OTZdfQ==
 -->
