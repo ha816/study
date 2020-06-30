@@ -60,10 +60,10 @@ session-1은 orders 컬렉션의 데이터를 변경하므로 먼저 상위의 o
 
 ```
 session-1: db.orders.find({user_id:1}})
-session-2: db.orders.find({user_id:1}})
+session-2: db.orders.find({user_id:2}})
 ```
 
-두 데이터를 조회만 하는 경우라면, orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S잠금또한 필요하다. 다행히 S잠금간에는 호완이 가능하기 때문에 두 커넥션은 동시에 수행이 된다. 
+같은 orders 컬렉션을  조회만 하는 경우를 봅시다. orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S잠금또한 필요하다. 다행히 S잠금간에는 호완이 가능하기 때문에 두 커넥션은 동시에 수행이 된다. 
 
 
 # 스토리지 엔진의 잠금
@@ -349,7 +349,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NDIwODU5MCwxMzY2Mzc0NjEzLC0xMj
+eyJoaXN0b3J5IjpbLTE2MDU2NDM1MywxMzY2Mzc0NjEzLC0xMj
 IwOTQyOTkyLDk5MzE0NzgyMiwtOTQxNDAwOTI2LDExMTgyNjEy
 MzAsMTE4NjUyMTk0OCwtMTI5OTc3MjQ4OCw0MTg4Njk5NzIsMj
 EyNjkyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1NTU3
