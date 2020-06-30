@@ -170,11 +170,15 @@ Write 작업을 Primary에서 먼저 수행하고, 이후 Secondaries가 같은 
 
 Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리한 이후 바로 Client 에게 response 를 보내는 것이 아니라 Secondary 쪽으로 데이터를 동기화 작업을 완료한 이후에 Client 에게 response 를 보내게 된다.** 이렇게 되면 Client 와 Primary, Secondary 간에 데이터 일관성을 유지할 수 있게 됩니다.
 
-> 동기화 제어
+## 동기화 제어
+
+
 
 * UNACKNOWLEDGED
-	* 클라이언트가 MongoDB로 요청을 보내고 난 뒤, 응답에 관심을 두지 않습니다. 심지어 바로 다음 쿼리를 수행할 수도 있습니다
+	* 클라이언트가 MongoDB로 요청을 보내고 난 뒤, 응답에 관심을 두지 않습니다. 심지어 클라이언트 측에서 바로 다음 쿼리를 수행할 수도 있습니다.
+	* 일반적인 서비스에서는 사용하지 말아야할 동기화 모드 입니다.
 * ACKNOWLEDGED
+	* WriteConcern 모드의 기본값으로, 
 * JOURNALED
 * FSYNC
 
@@ -328,9 +332,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTYyNjIwMywtMzY0ODY0NDUyLDEzMz
-kwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQs
-NjIyODM1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2OSwtNTgwOD
-g5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwx
-ODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbLTE4MjY3NzY4MTUsLTM2NDg2NDQ1MiwxMz
+M5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0
+LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5NjksLTU4MD
+g4OTgyNSw3MzI3MTE1MjgsLTk2MTM2NTM2LDExNTc0ODY4NDgs
+MTg2NDkzNjY5MywtNjk0NTM5MzE5LDE1MjI5NjExMTZdfQ==
 -->
