@@ -62,6 +62,8 @@ WT는 공유 캐시를 위해서 새로운 디스크 데이터 페이지를 읽�
 
 그런데 SSD와 같이 매우 빠르게 읽기/쓰기 작업이 가능한 저장 매체가 출시되어 한번에 읽어들 일 수 있는 데이터 페이지수가 많아졌습니다.  WT엔진은 가끔씩 캐시의 데이터 페이지 삭제 속도가 데이터 페이지를 읽어 들이는 속도를 따라가지 못하는 이슈도 있습니다. 
 
+그리하여 보통 공유 캐시는 80%정도의 사용량을 유지해야 하는데, 
+
 
 
 
@@ -98,7 +100,7 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNzU5MTU0MCwtMjQ3NzMwNDY0LC01ND
+eyJoaXN0b3J5IjpbLTU5NjE0MDQzOCwtMjQ3NzMwNDY0LC01ND
 IwMjg4OTMsODgzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMzQ5NjYx
 MTgsLTE1OTUxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMzczMD
 QsLTE0Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcwMjUw
