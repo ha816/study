@@ -242,9 +242,7 @@ MongoDB 서버는 레플리카 셋으로 구축되며, 구성원 간의 데이�
 
 ### majority
 
-majority로 반환된 데이터는 레플리카 셋에서 다수의 멤버가 최신의 데이터를 가져을때에만 읽기 
-저장된 데이터를 빠르게 가져오는 Read Concern입니다. 
-이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 최근에 쓰여졌다면, 가져온 데이터가 최신인것을 보장하지 않습니다. 
+`majority`로 반환된 데이터는 그 데이터가 주요 replica sets에 최근에 쓰여졌다면, 가져온 데이터가 최신인것을 보장하지 않습니다. 
 
 majority는 실패 이벤트에서도, 성공적으로 문서를 가져옵니다. majority-commit point시점에 인-메모리 데이터를 가져오기 때문에 최신인것은 보장하지 않지만 데이터는 온전하게 있습니다. 
 
@@ -357,11 +355,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYzMTcxMTcsLTEyOTk3NzI0ODgsNDE4OD
-Y5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0ODk2NDQx
-LC01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMzM5MDI4MjcsOTYzMj
-c2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5OCwt
-NjkxMjYzNzk2LDE3NzMxOTE5NjksLTU4MDg4OTgyNSw3MzI3MT
-E1MjgsLTk2MTM2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5M119
-
+eyJoaXN0b3J5IjpbLTkzNjc2MjU3MywtMTI5OTc3MjQ4OCw0MT
+g4Njk5NzIsMjEyNjkyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0
+NDEsLTU1NTU3MTYwNywtMzY0ODY0NDUyLDEzMzkwMjgyNyw5Nj
+MyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4
+LC02OTEyNjM3OTYsMTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMj
+cxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwxODY0OTM2Njkz
+XX0=
 -->
