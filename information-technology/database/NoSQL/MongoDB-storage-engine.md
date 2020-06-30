@@ -28,7 +28,7 @@ WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free
 
 WT 스토리지 엔진에서 사용자의 모든 쿼리는 공유 캐시를 거쳐서 처리됩니다. 땨뮨애 공유 캐시의 최적화는 MongoDB 스토리지 성능에 매우 중요한 역할을 담당합니다. 
 
-WT는 하드 디스크의 데이터 페이지를 공유 캐시 메모리에 적재하면서 메모리에 적합한 트리 형태로 재구성하면서 적재합니다. 일반적인  RDBMS에서는 한 데이터 페이지내의 레코드들의 대한 인덱스를 별도로 관리합니다. 하지만 WT는 디스크에 데이터 페이지에 대한 레코드 인덱스를 별도로 관리하지 않고 저장해둡니다. 그리고 이를 공유 캐시 메모리에 저장할때 레코드 인덱스를 새롭게 생성해서 메모리에 적재한다. 
+일반적인  RDBMS에서는 한 데이터 페이지내의 레코드들의 대한 인덱스를 별도로 관리합니다. 하지만 WT레코드 인덱스를 별도로 관리하지 않습니다. 때문에 WT는 데이터 페이지를 공유 캐시 메모리에 적재하면서 메모리에 적합한 트리 형태로 재구성하면서 적재합니다. 레코드 인덱스를 새롭게 생성해서 메모리에 적재한다. 
 
 이렇게 디스크 데이터 페이지를 캐시에 적재하는 과정이 여러 변환 과정을 거치기 때문에 기존 RDBMS보다는 느리게 처리됩니다. 하지만 공유 캐시 메모리에 적재된 데이터 페이지에서 필요한 레코드를 검색하고 변경하는 작업은 기존 RDBMS보다 훨씬 효율적으로 동작합니다. 
 
@@ -93,7 +93,7 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIyMTg2MjYxLC0xMDQwMTk4MzAxLC0xOD
+eyJoaXN0b3J5IjpbNjYwNDUxMjQwLC0xMDQwMTk4MzAxLC0xOD
 M2MDM3MzA0LC0xNDc4NDk5NjEsLTM3ODcxMzM3LDc2Njg5MzU3
 MCw3MDI1MDM3NTAsMTIxMDc1NTk1OCwtMTI5NTMzMjczNywtMj
 E0MDc4NjczMiwtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQx
