@@ -229,7 +229,7 @@ MongoDB 서버는 레플리카 셋으로 구축되며, 구성원 간의 데이�
 
 ### local & available
 
-`local`과 `available` read concern은 읽은 데이터가 레플리카 셋의 대다수 멤버들의 
+`local`과 `available` read concern은 읽은 데이터가 레플리카 셋의 대다수 멤버들의 메모리에 동기화된 것을 보장합니다.
 A query with read concern “available” returns data from the instance with no guarantee that the data has been written to a majority of the replica set members
 
 이 쿼리로 반환된 데이터는 그 데이터가 주요 레플리카 셋에 동기화되었다는 것을 보장하지 않습니다. 운이 나빠 롤백이 발생하면 해당 데이터가 레플리카 셋이 존재하지 않을 수 있습니다.
@@ -363,11 +363,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjQ3MzkzMiwyMTI2OTI2NDg5LDc3ND
-YwMTk0MywtMTYzNDg5NjQ0MSwtNTU1NTcxNjA3LC0zNjQ4NjQ0
-NTIsMTMzOTAyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNz
-E4NTM2NCw2MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5
-LC01ODA4ODk4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3ND
-g2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2
-XX0=
+eyJoaXN0b3J5IjpbNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0Nj
+AxOTQzLC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1
+MiwxMzM5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MT
+g1MzY0LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5Njks
+LTU4MDg4OTgyNSw3MzI3MTE1MjgsLTk2MTM2NTM2LDExNTc0OD
+Y4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5LDE1MjI5NjExMTZd
+fQ==
 -->
