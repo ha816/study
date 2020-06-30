@@ -142,28 +142,9 @@ MongoDB에는 MMAPv1에서 사용가능한 READ-COMMITED과 WiredTiget에서 사
 >SNAPSHOT
 >하나의 트랜잭션에서는 반복된 읽기를 해도 항상 같은 결과가 나온다.
 
-WT가 SNAPSHOT 수준의 격리 수준을 지원한다고 해도 결국 MongoDB가 스토리지 엔진을 제어하기 때문에 MongoDB 서버 처리에 의존적일 수 밖에 없습니다. 그리고 MongoDB는 기본적으로 단일 문서에 대한 트랜잭션만 지원합니다.
-
-그리고 MongoDB 서버에서는 명시적으로 트랜잭션을 제어할 수 있는 기능이 없습니다. 
-
-그래서 MongoDB에서는 여러 쿼리를 하나의 트랜잭션에서 실행할 방법이 없습니다. 
-
-MongoDB의 모든 데이터 변경은 하나의 다큐먼트를 변경할때 마다 내부적으로 트랜잭션이 커밋됩니다.  
-
-MonggoDB의 읽기 쿼리는 변경 쿼리와 다른 형태로 트랜잭션이 유지가 됩니다. 
-
-
-
-## MongoDB 서버의 격리 수준
-
-
-
-
-
-
-
-
 # Read & Write Concerns
+
+MongoDB
 
 
 
@@ -336,9 +317,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MDUwNzU0OCw5NjMyNzY5NjEsMjQ1MD
-Y5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3OTYs
-MTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUyOCwtOTYxMz
-Y1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTks
-MTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbNTU0MzI1NzgxLDk2MzI3Njk2MSwyNDUwNj
+k2MCwtMjExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MTI2Mzc5Niwx
+NzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4LC05NjEzNj
+UzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwx
+NTIyOTYxMTE2XX0=
 -->
