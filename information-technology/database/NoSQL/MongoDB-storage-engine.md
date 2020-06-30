@@ -26,6 +26,7 @@ MongoDB의 디폴트 스토리지 엔진.
 
 ![enter image description here](https://image.slidesharecdn.com/mongodb-wiredtiger-webinar-150709200625-lva1-app6892/95/a-technical-introduction-to-wiredtiger-11-638.jpg?cb=1436472726)
 
+일반적인 CRUD 쿼리는 
 
 ## Cache(공유캐시)
 
@@ -78,35 +79,14 @@ WT도 사용자의 요청을 빠르게 처리하면서 커밋된 트랜잭션의
 
 WT는 샤프 체크포인트방식을 사용하고 있는데, 샤프 체크 포인트는 평상시에는 디스크 쓰기가 많지 않지만, 체크포인트가 실행되는 시점에 한번에 모아서 페이지를 기록하는 패턴입니다. 
 
-#### 
-
-
-
-기본적으로 MongoDB는 단일 문서 단위에 Transactions을 보장합니다. 
-만약 사용자가 특정 문서를 변경하면, WT가 트랜잭션을 시작하고 커서를 이용해서 원하는 다큐먼트의 내용을 변경합니다. 변경 내용은 먼저 캐시에 적용되는데, 디스크에 기록되기 전에 변경 내용을 저널 로그에 기록한 다음 사용자에게 작업 처리 결과를 리턴합니다. 
-
-이런 식으로 공유 캐시가 어느 정도 쌓이면 WT는 체크포인트를 발생시켜서 공유 캐시의 더티 페이지들을 모아 디스크에 기록합니다. 이때 메모리 상의 더티 페이지는 디스크에 기롭하기 전 원본 데이터와 변경된 정보의 병합)을 거쳐야하는데, 이를 WT의 Reconciliation 모듈이 처리합니다. 
-
-
-사용자가 쿼리를 실행하면 블록 매니저(Block Manager)를 통해서 필요한 데이터 블록을 디스크에서 읽어온 다음 공유 캐시에 적재 하고 처리합니다. 
-
-사용자 요청 쿼리가 실행되면 블럭 매니저는 계속해서 새로운 데이터 페이지들을 공유 캐시로 읽어 들여야 하는데, 더 이상 데이터 페이지를 읽어 들일 공간이 없으면 사용자 쿼리를 수행할 수 없게 된다. 이런 상황을 피하기 위해서 WT는 Eviction 모듈을 사용하며, 이 모듈은 공유 캐시가 적절한 메모리 사용량을 유지하도록 공유 캐시에서 자주 사용되지 않는 데이터 페이지들을 제거하는 작업을 수행한다. 
-
-만약 제거해야 하는 데이터 페이지가 더티 페이지라면, 리컨실리에이션을 수행하고 공유 캐시에서 제거합니다.
-
-WT 스토리ㅣ지 엔진의 데이터 블록은 모두 가변사이즈입니다. 
-
-
-
-
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM5ODkwNjUzLC0xMTE3MTcxMDM0LC02OD
-E2NzY3NDIsMjA3NjI4MTIyOSwxODg5NTI2Mzg3LC00MDk1MzQ3
-MjMsMTA1NzAyNTEwMiwtMzIwNTc1NTI0LC0yNDc3MzA0NjQsLT
-U0MjAyODg5Myw4ODMzNDgzNjYsLTE5NzA4NTkyNDcsLTEzNDk2
-NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5ODMwMSwtMTgzNjAzNz
-MwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1NzAsNzAy
-NTAzNzUwXX0=
+eyJoaXN0b3J5IjpbMTAyNjY2NjIzMCwtMTExNzE3MTAzNCwtNj
+gxNjc2NzQyLDIwNzYyODEyMjksMTg4OTUyNjM4NywtNDA5NTM0
+NzIzLDEwNTcwMjUxMDIsLTMyMDU3NTUyNCwtMjQ3NzMwNDY0LC
+01NDIwMjg4OTMsODgzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMzQ5
+NjYxMTgsLTE1OTUxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMz
+czMDQsLTE0Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcw
+MjUwMzc1MF19
 -->
