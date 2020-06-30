@@ -154,7 +154,7 @@ Write Concern이란 MongoDB가 Client의 요청에 대한 응답을 반환하는
 Write Concern은 데이터 읽기와 무관하여 Insert, Update, 그리고 Delete 연산에서만 설정할 수 있습니다.
 
 
-### 단일 노드 동기화 제어
+### Single 동기화 제어
 
 단일 노드 동기화 제어는 단일 MongoDB 서버 내부적으로 변경된 데이터가 어느 정도 디스크에 동기화 되었을때 변경 요청에 대응하는 완료 메세지를 보낼 것인지 판단하는 기준입니다. 
 
@@ -204,17 +204,17 @@ Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리�
 
 Write Concern 을 지정하는데는 크게 w / j / wtimeout options를 설정 할 수 있습니다.
 
-w option
+w option(int)
 : ReplicaSet 에 속한 멤버중 지정된 수만큼의 멤버에게 데이터 쓰기가 완료되었는지 확인합니다.
 만약 Primary/Secondary 가 총 3대로 구성된 ReplicaSet 일 경우, w = 3 으로 설정시 3대의 멤버에 데이터 쓰기가 완료 된 것을 확인하고 response를 반환합니다.
 w = 1 이 Default 설정이며, 이런 경우 Primary 에만 기록 완료되면 response 합니다. 
 w = majority 로 설정할 경우, 멤버의 과반수 이상을 자동으로 설정하게 된다.
 
- j option
+ j option(boolean)
  : 데이터 쓰기 작업이 디스크상의 journal 에 기록된 후 완료로 판단하는 옵션입니다. (단일 노드 동기화 모드의 JOURNALED 모드)
  만약, Replicaset 의 멤버가 3대인 경우 w = majority, j = true 로 설정시 Primary 1 대 Secondary 1대 총 2대의 멤버에서 디스크의 journal 까지 기록이 완료 된 후 response 하게 됩니다.
 
-wtimeout option
+wtimeout option(int)
 : Primary 에서 Secondary 로 데이터 동기화시 timeout 값을 설정하는 옵션이다. 
 만약 wtimeout 의 limit 을 넘어가게 되면 실제로 데이터가 Primary에 기록되었다고 해도 error 를 리턴하게 됩니다.
 설정 단위는 milisecond 이다.
@@ -352,7 +352,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTEyNDQ1NCwtNTU1NTcxNjA3LC0zNj
+eyJoaXN0b3J5IjpbLTU0MzA0MTA5NSwtNTU1NTcxNjA3LC0zNj
 Q4NjQ0NTIsMTMzOTAyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwt
 MjExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMT
 kxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwx
