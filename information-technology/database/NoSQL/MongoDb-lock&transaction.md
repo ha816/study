@@ -217,18 +217,9 @@ wtimeout option(number)
 만약 wtimeout 의 limit 을 넘어가게 되면 실제로 데이터가 Primary에 기록되었다고 해도 error 를 리턴하게 됩니다.
 설정 단위는 milisecond 이다.
 
-
-# Concurrency Control
-
-동시성 제어란  DBMS가 다수의 사용자 사이에서 동시에 작용하는 다중 트랜잭션의 상호간섭 작용에서 DB의 일관성과 동시성을 적절히 조절하는 것을 말합니다. 일반적으로 동시성을 허용하면 일관성이 낮아지게 됩니다.
-
-![](https://k.kakaocdn.net/dn/YYwAw/btqAhqpozl2/IMdpfbgguBj897K4VkEwy1/img.png)
-
-동시성 제어의 목표는 동시에 실행되는 트랜잭션 수를 최대화 하면서 입력, 수정, 삭제, 검색 시 데이터의 무결성을 유지하는데 있습니다. 
-
-원하는 동시성 제어를 위해선 Read Concern과 Write Concern을 사용할 수 있습니다. 
-
 ## Read Concern
+
+MongoDB 서버는 레플리카 셋으로 구축되며, 구성원 간의 데이터 동기화는 Write Concern
 
 `readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 그 데이터의 LATEST, SAFE, FAST을 고려하여 가져온다. 
 
@@ -261,6 +252,20 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 읽기 연산 시작 이전에 성공적으로 인정된 모든 데이터를 반영한 최시 데이터를 가져옵니다. 결과를 반환하기 전에 모든 replica set에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 
 linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때만 성공적으로 read concern을 보장합니다.
+
+
+# Concurrency Control
+
+동시성 제어란  DBMS가 다수의 사용자 사이에서 동시에 작용하는 다중 트랜잭션의 상호간섭 작용에서 DB의 일관성과 동시성을 적절히 조절하는 것을 말합니다. 일반적으로 동시성을 허용하면 일관성이 낮아지게 됩니다.
+
+![](https://k.kakaocdn.net/dn/YYwAw/btqAhqpozl2/IMdpfbgguBj897K4VkEwy1/img.png)
+
+동시성 제어의 목표는 동시에 실행되는 트랜잭션 수를 최대화 하면서 입력, 수정, 삭제, 검색 시 데이터의 무결성을 유지하는데 있습니다. 
+
+원하는 동시성 제어를 위해선 Read Concern과 Write Concern을 사용할 수 있습니다. 
+
+
+
 
 ## Isolation
 
@@ -347,10 +352,10 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTI0NTc4MywtNTU1NTcxNjA3LC0zNj
-Q4NjQ0NTIsMTMzOTAyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwt
-MjExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMT
-kxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwx
-MTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOT
-YxMTE2XX0=
+eyJoaXN0b3J5IjpbLTEzMzE3MDY5MDQsLTU1NTU3MTYwNywtMz
+Y0ODY0NDUyLDEzMzkwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAs
+LTIxMTcxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3OTYsMTc3Mz
+E5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYs
+MTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMj
+k2MTExNl19
 -->
