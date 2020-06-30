@@ -150,6 +150,9 @@ MongoDB 서버는 분산 처리를 기본 아키텍처로 선택하기 때문에
 
 ## Write Concern
 
+Write Concern이란 MongoDB가 Client의 요청에 대한 응답을 반환하는 시점을 결정하는 옵션입니다. 
+Write Concern은 데이터 읽기와 무관하여 Insert, Update, 그리고 Delete 연산에서만 설정할 수 있습니다.
+
 
 ### 단일 노드 동기화 제어
 
@@ -181,8 +184,6 @@ ACKNOWLEDGED에 있던 비정상 종료가 되더라도 저널 로그에 기록�
 
 ### 레플리카 셋 간의 동기화 제어
 
-Write Concern이란 MongoDB가 Client의 요청에 대한 응답을 반환하는 시점을 결정하는 옵션입니다. 
-Write Concern은 데이터 읽기와 무관하여 Insert, Update, 그리고 Delete 연산에서만 설정할 수 있습니다.
 
 ![](https://k.kakaocdn.net/dn/bqWzBJ/btqvCK0MrG1/kkQXAqikXxDAA9h0iKlya1/img.png)
 
@@ -200,12 +201,6 @@ Write 작업을 Primary에서 먼저 수행하고, 이후 Secondaries가 같은 
 ![](https://k.kakaocdn.net/dn/daSduH/btqvErfiQPr/YnveydIHjt1YdgInTK1VxK/img.png)
 
 Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리한 이후 바로 Client 에게 response 를 보내는 것이 아니라 Secondary 쪽으로 데이터를 동기화 작업을 완료한 이후에 Client 에게 response 를 보내게 된다.** 이렇게 되면 Client 와 Primary, Secondary 간에 데이터 일관성을 유지할 수 있게 됩니다.
-
-
-
-
-* 
-* FSYNC
 
 Write Concern 을 지정하는데는 크게 w / j / wtimeout options를 설정 할 수 있습니다.
 
@@ -357,9 +352,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg1MTUyMzY1LC0zNjQ4NjQ0NTIsMTMzOT
-AyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2
-MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01ODA4OD
-k4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4
-NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbLTgxMjA4OTE1OCwtMzY0ODY0NDUyLDEzMz
+kwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQs
+NjIyODM1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2OSwtNTgwOD
+g5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwx
+ODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTExNl19
 -->
