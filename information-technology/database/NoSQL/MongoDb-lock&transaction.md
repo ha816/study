@@ -172,6 +172,12 @@ Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리�
 
 > 동기화 제어
 
+* UNACKNOWLEDGED
+	* 클라
+* ACKNOWLEDGED
+* JOURNALED
+* FSYNC
+
 Write Concern 을 지정하는데는 크게 w / j / wtimeout options를 설정 할 수 있습니다.
 
 w option
@@ -322,9 +328,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzczNTQ0MDMsMTMzOTAyODI3LDk2Mz
-I3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2MjI4MzUxOTgs
-LTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNz
-ExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMs
-LTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbOTEyMjQ5Mjc1LDEzMzkwMjgyNyw5NjMyNz
+Y5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4LC02
+OTEyNjM3OTYsMTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMjcxMT
+UyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02
+OTQ1MzkzMTksMTUyMjk2MTExNl19
 -->
