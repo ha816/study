@@ -28,9 +28,9 @@ WiredTiget 스토리지 엔진은 내부적인 잠금 경합 최소화(Lock-free
 
 WT 스토리지 엔진에서 사용자의 모든 쿼리는 공유 캐시를 거쳐서 처리됩니다. 땨뮨애 공유 캐시의 최적화는 MongoDB 스토리지 성능에 매우 중요한 역할을 담당합니다. 
 
-일반적인  RDBMS에서는 한 데이터 페이지내의 레코드들의 대한 인덱스를 별도로 관리합니다. 하지만 WT레코드 인덱스를 별도로 관리하지 않습니다. 때문에 WT는 데이터 페이지를 공유 캐시 메모리에 적재하면서 메모리에 적합한 트리 형태로 재구성하면서 적재합니다. 레코드 인덱스를 새롭게 생성해서 메모리에 적재한다. 
+일반적인  RDBMS에서는 한 데이터 페이지내의 레코드들의 대한 인덱스를 별도로 관리합니다. 하지만 WT레코드 인덱스를 별도로 관리하지 않습니다. 때문에 WT는 데이터 페이지를 공유 캐시 메모리에 적재하면서 레코드 인덱스를 적합한 트리 형태로 재구성하면서 적재합니다.
 
-이렇게 디스크 데이터 페이지를 캐시에 적재하는 과정이 여러 변환 과정을 거치기 때문에 기존 RDBMS보다는 느리게 처리됩니다. 하지만 공유 캐시 메모리에 적재된 데이터 페이지에서 필요한 레코드를 검색하고 변경하는 작업은 기존 RDBMS보다 훨씬 효율적으로 동작합니다. 
+데이터 페이지를 캐시에 적재하는 과정이 여러 변환 과정을 거치기 때문에 기존 RDBMS보다는 느리게 처리됩니다. 하지만 공유 캐시 메모리에 적재된 데이터 페이지에서 필요한 레코드를 검색하고 변경하는 작업은 기존 RDBMS보다 훨씬 효율적으로 동작합니다. 
 
 짧은 시간 수많은 쿼리를 처리해야하는 OLTP(On-Line Transaction Processing) 시스템에서는 많은 쿼리들이 공유 캐시에 있는 데이터 페이지를 동시에 참조하기 위해 경합하는 경우도 많습니다. 따라서 공유 캐시에 대한 잠금 경합이 성능에 많은 영향을 미치게 됩니다. WT는 잠금 경합을 최소화하기 위해 Lock-Free 알고리즘을 채용하고 있습니다. 일반적으로 Lock-Free 알고리즘은 잠금을 전혀 사용하지 않는 시스템을 말하는 것이 아니라 잠금 경합을 최소화 하는 알고리즘으로 이를 위해서 하자드 포인터와 스킵리스트 자료구조를 활용합니다. 
 
@@ -93,11 +93,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYwNDUxMjQwLC0xMDQwMTk4MzAxLC0xOD
-M2MDM3MzA0LC0xNDc4NDk5NjEsLTM3ODcxMzM3LDc2Njg5MzU3
-MCw3MDI1MDM3NTAsMTIxMDc1NTk1OCwtMTI5NTMzMjczNywtMj
-E0MDc4NjczMiwtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQx
-MjY0NCwtMTU1MjUyNzkwMCwtODgyMDAzOTIsLTE1MzE5OTg5Ni
-wxODQ4NDE0MjIwLC01OTM0NzE4NDEsLTc2NDE1MDkwNiwtMTEz
-NzcxODAyMF19
+eyJoaXN0b3J5IjpbMjA2NzA5OTQ4NSwtMTA0MDE5ODMwMSwtMT
+gzNjAzNzMwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1
+NzAsNzAyNTAzNzUwLDEyMTA3NTU5NTgsLTEyOTUzMzI3MzcsLT
+IxNDA3ODY3MzIsLTYwOTcxMjEyMSwtMTk5NjQxMDk0NCw4MDg0
+MTI2NDQsLTE1NTI1Mjc5MDAsLTg4MjAwMzkyLC0xNTMxOTk4OT
+YsMTg0ODQxNDIyMCwtNTkzNDcxODQxLC03NjQxNTA5MDYsLTEx
+Mzc3MTgwMjBdfQ==
 -->
