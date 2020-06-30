@@ -50,7 +50,11 @@ RDBMS에서 레코드를 별도의 공간(언두 로그)에 저장하는 이유�
 
 WT에서는 스킵리스트가 언두로그의 역할을 하게 됩니다. 스킵리스트에는 변경된 데이터 페이지들이 추가되는 구조 입니다. 검색 쿼리가 들어오면, 변경 이력이 저장된 스킵 리스트에서 검색해 원하는 시점의 데이터 페이지를 가져 갑니다. 
 
-일부 RDBMS에서 데이터 페이지는 한 시점에 하나의 쓰레드만 사용(읽고 쓰기)할 수 있다. 하지만 WT은 스킵 리스트로 여러 쓰레드가 하나의 페이지를 동시에 읽거나 쓸 수 있어 동시 처리 성능이 매우 향상된다.
+일부 RDBMS에서 데이터 페이지는 한 시점에 하나의 쓰레드만 사용(읽고 쓰기)할 수 있다. 하지만 WT은 스킵 리스트로 여러 쓰레드가 하나의 페이지를 동시에 읽거나 쓸 수 있어 동시 처리 성능이 매우 향상됩니다.
+
+#### 캐시 이빅션(Cache Eviction)
+
+
 
 
 
@@ -97,11 +101,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzc2NDY4NywtMjQ3NzMwNDY0LC01ND
-IwMjg4OTMsODgzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMzQ5NjYx
-MTgsLTE1OTUxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMzczMD
-QsLTE0Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcwMjUw
-Mzc1MCwxMjEwNzU1OTU4LC0xMjk1MzMyNzM3LC0yMTQwNzg2Nz
-MyLC02MDk3MTIxMjEsLTE5OTY0MTA5NDQsODA4NDEyNjQ0LC0x
-NTUyNTI3OTAwXX0=
+eyJoaXN0b3J5IjpbLTE0NTE0MzExNDUsLTI0NzczMDQ2NCwtNT
+QyMDI4ODkzLDg4MzM0ODM2NiwtMTk3MDg1OTI0NywtMTM0OTY2
+MTE4LC0xNTk1MTY1Nzg4LC0xMDQwMTk4MzAxLC0xODM2MDM3Mz
+A0LC0xNDc4NDk5NjEsLTM3ODcxMzM3LDc2Njg5MzU3MCw3MDI1
+MDM3NTAsMTIxMDc1NTk1OCwtMTI5NTMzMjczNywtMjE0MDc4Nj
+czMiwtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQxMjY0NCwt
+MTU1MjUyNzkwMF19
 -->
