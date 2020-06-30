@@ -148,6 +148,44 @@ MongoDB 서버는 분산 처리를 기본 아키텍처로 선택하기 때문에
 
 즉 기존 RDBMS와 다른 MongoDB만의 다른 특성은 디스크의 동기화 처리를 클라이언트 프로그램에서 쿼리 단위로 다르게 설정할 수 있다는 것입니다. 
 
+## Write Concern
+
+Write Concern이란 MongoDB가 Client의 요청dp 
+
+![](https://k.kakaocdn.net/dn/bqWzBJ/btqvCK0MrG1/kkQXAqikXxDAA9h0iKlya1/img.png)
+
+기본적으로 MongoDB는 Client 가 보낸 데이터를 Primary에 기록하고, 이에 대한 Response를 즉시Client에게 보냅니다. (By Default)
+
+Write 작업을 Primary에서 먼저 수행하고, 이후 Secondaries가 같은 Write 작업을 진행합니다. 이때 **Primary와 Secondary 간 동기화 되는데 시간차**가 있습니다.
+즉 클라이언트가 Response를 받은 시점과 Primary 에서 Secondary로 Sync가 되는 시점에는 데이터 일관성이 보장되지 않는 위험 구간이 존재합니다.
+
+![](https://k.kakaocdn.net/dn/48NyH/btqvBas04QL/0vTCbpKEAIpFnarAI2FjqK/img.png)
+
+만약 이 사이에 Primary에 장애가 발생 했다고 가정해 보면, 아직 최신 데이터를 Sync 하지 못한 Secondary 멤버가 Primary 로 승격되게 되고 Client 는 이를 알아차리지 못한채 이미 작업이 완료된 Response 를 받았기 때문에 Client가 알고 있는 데이터와 DB 의 데이터가 unmatch 되는 상황이 발생합니다.
+
+이러한 문제를 해결하기 위해 **Client 쪽에 보내는 response 시점을 Primary 와 Secondary 가 동기화 된 이후로 설정이 가능하며 이것이 바로 Write concern 설정의 핵심이다.**
+
+![](https://k.kakaocdn.net/dn/daSduH/btqvErfiQPr/YnveydIHjt1YdgInTK1VxK/img.png)
+
+Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리한 이후 바로 Client 에게 response 를 보내는 것이 아니라 Secondary 쪽으로 데이터를 동기화 작업을 완료한 이후에 Client 에게 response 를 보내게 된다.** 이렇게 되면 Client 와 Primary, Secondary 간에 데이터 일관성을 유지할 수 있게 된다.
+
+Write Concern 을 지정하는데는 크게 w / j / wtimeout options를 설정 할 수 있습니다.
+
+w option
+: ReplicaSet 에 속한 멤버중 지정된 수만큼의 멤버에게 데이터 쓰기가 완료되었는지 확인합니다.
+만약 Primary/Secondary 가 총 3대로 구성된 ReplicaSet 일 경우, w = 3 으로 설정시 3대의 멤버에 데이터 쓰기가 완료 된 것을 확인하고 response를 반환합니다.
+w = 1 이 Default 설정이며, 이런 경우 Primary 에만 기록 완료되면 response 합니다. 
+w = majority 로 설정할 경우, 멤버의 과반수 이상을 자동으로 설정하게 된다.
+
+ j option
+ : 데이터 쓰기 작업이 디스크상의 journal 에 기록된 후 완료로 판단하는 옵션입니다. 
+ 만약, Replicaset 의 멤버가 3대인 경우 w = majority, j = true 로 설정시 Primary 1 대 Secondary 1대 총 2대의 멤버에서 디스크의 journal 까지 기록이 완료 된 후 response 하게 됩니다.
+
+wtimeout option
+: Primary 에서 Secondary 로 데이터 동기화시 timeout 값을 설정하는 옵션이다. 
+만약 wtimeout 의 limit 을 넘어가게 되면 실제로 데이터가 Primary에 기록되었다고 해도 error 를 리턴하게 됩니다.
+설정 단위는 milisecond 이다.
+
 
 
 
@@ -195,44 +233,6 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 읽기 연산 시작 이전에 성공적으로 인정된 모든 데이터를 반영한 최시 데이터를 가져옵니다. 결과를 반환하기 전에 모든 replica set에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 
 linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때만 성공적으로 read concern을 보장합니다.
-
-## Write Concern
-
-Write Concern이란 MongoDB가 Client의 요청으로 데이터를 기록할 때, 해당 요청에 대한 Response를 어느 시점에 주느냐에 대한 동작 방식을 지정합니다.
-
-![](https://k.kakaocdn.net/dn/bqWzBJ/btqvCK0MrG1/kkQXAqikXxDAA9h0iKlya1/img.png)
-
-기본적으로 MongoDB는 Client 가 보낸 데이터를 Primary에 기록하고, 이에 대한 Response를 즉시Client에게 보냅니다. (By Default)
-
-Write 작업을 Primary에서 먼저 수행하고, 이후 Secondaries가 같은 Write 작업을 진행합니다. 이때 **Primary와 Secondary 간 동기화 되는데 시간차**가 있습니다.
-즉 클라이언트가 Response를 받은 시점과 Primary 에서 Secondary로 Sync가 되는 시점에는 데이터 일관성이 보장되지 않는 위험 구간이 존재합니다.
-
-![](https://k.kakaocdn.net/dn/48NyH/btqvBas04QL/0vTCbpKEAIpFnarAI2FjqK/img.png)
-
-만약 이 사이에 Primary에 장애가 발생 했다고 가정해 보면, 아직 최신 데이터를 Sync 하지 못한 Secondary 멤버가 Primary 로 승격되게 되고 Client 는 이를 알아차리지 못한채 이미 작업이 완료된 Response 를 받았기 때문에 Client가 알고 있는 데이터와 DB 의 데이터가 unmatch 되는 상황이 발생합니다.
-
-이러한 문제를 해결하기 위해 **Client 쪽에 보내는 response 시점을 Primary 와 Secondary 가 동기화 된 이후로 설정이 가능하며 이것이 바로 Write concern 설정의 핵심이다.**
-
-![](https://k.kakaocdn.net/dn/daSduH/btqvErfiQPr/YnveydIHjt1YdgInTK1VxK/img.png)
-
-Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리한 이후 바로 Client 에게 response 를 보내는 것이 아니라 Secondary 쪽으로 데이터를 동기화 작업을 완료한 이후에 Client 에게 response 를 보내게 된다.** 이렇게 되면 Client 와 Primary, Secondary 간에 데이터 일관성을 유지할 수 있게 된다.
-
-Write Concern 을 지정하는데는 크게 w / j / wtimeout options를 설정 할 수 있습니다.
-
-w option
-: ReplicaSet 에 속한 멤버중 지정된 수만큼의 멤버에게 데이터 쓰기가 완료되었는지 확인합니다.
-만약 Primary/Secondary 가 총 3대로 구성된 ReplicaSet 일 경우, w = 3 으로 설정시 3대의 멤버에 데이터 쓰기가 완료 된 것을 확인하고 response를 반환합니다.
-w = 1 이 Default 설정이며, 이런 경우 Primary 에만 기록 완료되면 response 합니다. 
-w = majority 로 설정할 경우, 멤버의 과반수 이상을 자동으로 설정하게 된다.
-
- j option
- : 데이터 쓰기 작업이 디스크상의 journal 에 기록된 후 완료로 판단하는 옵션입니다. 
- 만약, Replicaset 의 멤버가 3대인 경우 w = majority, j = true 로 설정시 Primary 1 대 Secondary 1대 총 2대의 멤버에서 디스크의 journal 까지 기록이 완료 된 후 response 하게 됩니다.
-
-wtimeout option
-: Primary 에서 Secondary 로 데이터 동기화시 timeout 값을 설정하는 옵션이다. 
-만약 wtimeout 의 limit 을 넘어가게 되면 실제로 데이터가 Primary에 기록되었다고 해도 error 를 리턴하게 됩니다.
-설정 단위는 milisecond 이다.
 
 ## Isolation
 
@@ -319,7 +319,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1Nzk2NTM4MSw5NjMyNzY5NjEsMjQ1MD
+eyJoaXN0b3J5IjpbMTE0MzcwOTMyNSw5NjMyNzY5NjEsMjQ1MD
 Y5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3OTYs
 MTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUyOCwtOTYxMz
 Y1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTks
