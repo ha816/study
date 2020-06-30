@@ -14,10 +14,10 @@ MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금
 
 ### 글로벌 잠금(인스턴스 잠금)
 
-MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금이MongoDB 서버 인스턴스에서 단 하나만 있는 잠금이므로, 이를 인스턴스 잠금이라고 한다.  
+MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금입니다. MongoDB 서버 인스턴스 마다 하나만 있는 잠금이므로, 이를 인스턴스 잠금이라고 한다.  
 
 ```
-db.fsyncLock){fsync:1, lock:true}
+db.fsyncLock({fsync:1, lock:true})
 ```
 
 기본적으로 fsync:1으로 설정하면 아직 디스크에 기록되지 못한 데이터(캐시, 메모리) 모두 디스크로 기록합니다. lock:true 옵션이 있으면 글로벌 잠금을 획득하게 되는데, 이는 쓰기 잠금이지 읽기 잠금은 아닙니다. 
@@ -351,7 +351,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgxNzcxOTExLDExODY1MjE5NDgsLTEyOT
+eyJoaXN0b3J5IjpbMTkwNTY0NzQyLDExODY1MjE5NDgsLTEyOT
 k3NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQz
 LC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMz
 M5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0
