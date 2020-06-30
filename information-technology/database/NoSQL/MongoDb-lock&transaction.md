@@ -131,7 +131,7 @@ MongoDB 서버에서 WriteConflict Exception이 얼마나 발생했는지는 db.
 
 ## 단일 문서 트랜잭션
 
-MongoDB 서버는 처음부터 단일 다큐먼트의 트랜잭션만 지원하고 있다. 즉 원자 단위의 처리가 보장된다는 것을 말합니다.
+MongoDB 서버는 처음부터 단일 다큐먼트의 트랜잭션만 지원합니다. 즉 원자 단위의 처리가 보장된다는 것을 말합니다.
 
 >복수 문서 트랜잭션(Multi-Document Transactions)?
 >다행이도 MongoDB는 복수 문서에 대한 트랜잭션을 지원한다고 합니다. ([Transactions](https://docs.mongodb.com/manual/core/transactions/))
@@ -334,8 +334,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ1MDY5NjAsLTIxMTcxODUzNjQsNjIyOD
-M1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2OSwtNTgwODg5ODI1
-LDczMjcxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwxODY0OT
-M2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbLTIwNTI0NTkyMSwyNDUwNjk2MCwtMjExNz
+E4NTM2NCw2MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5
+LC01ODA4ODk4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3ND
+g2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2
+XX0=
 -->
