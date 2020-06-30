@@ -35,11 +35,7 @@ IS와 IX는 의도를 표현하는 잠금으로 함께 묶어 인텐션 잠금(I
 IS는 컬렉션이나 문서 레벨 오브젝트에 Shared Lock을 획득할것이라는 의도를 나타냅니다. 
 IX는 마찬가지로 컬렉션이나 문서 레벨 오브젝트에 Exclusive Lock을 획득할것이라는 의도를 나타냅니다. 
 
-특정 하위 오브젝트에 대한 잠금을 획득하려면, 상위 계층의 인텐션 잠금을 먼저 획득해야 합니다.
-즉 한 컬렉션에 대해 잠금을 획득하려면, 먼저 글로벌 인텐션 잠금, 데이터베이스 인텐션 잠금 마지막으로 실제 X나 S잠금을 가져야 하
-
-특정 문서를 읽으려면 동일하게 글로벌 인텐션 잠금, 데이터베이스 인텐션 잠금 그리고 컬렉션 인텐션 잠금을 얻어야 한다. 
-
+특정 하위 오브젝트에 대한 잠금을 획득하려면, 상위 계층의 인텐션 잠금을 먼저 획득해야 합니다. 즉 한 컬렉션에 대해 잠금을 획득하려면, 먼저 글로벌 인텐션 잠금, 데이터베이스 인텐션 잠금 마지막으로 컬렉션에 대한 X나 S잠금을 획득해야 합니다.
 
 || Intent Shared| Intent Exclusive| Shared| Exclusive |
 |--|--|--|--|--|
@@ -74,12 +70,8 @@ session-2: db.orders.find({user_id:2}})
 
 WirtedTiger는 다른 DBMS처럼 레코드(문서) 기반의 잠금을 사용합니다. 물론, 다양한 레벨의 오브젝트에 대한 잠금을 위해 다중 레벨의 잠금 방식도 같이 사용합니다. (Multiple Granularity Locking) 
 
-MongoDB Instance > DB > Collection > Document
 
-
-WT의 특성으로 문서를 읽기만 하는 경우는 별도의 잠금을 이용하지 않습니다.
-
-이는 MongoDB의 MVCC 때문에 가능하다. WiredTiger 스토리지 엔진에서는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가한다. 즉 변경되는 내역을 모두 관리하는데, 따라서 읽기 명령시 현재 트랜잭션이 읽어야할 문서 버전을 찾아 읽기만 하면된다. MVCC를 이용해서 잠금 없이 문서를 읽는다고 하여 이를 잠금없는 일관된 읽기(Consistent non-locking read)라고도 한다. 
+WT의 특성으로는 문서를 읽기만 하는 경우는 별도의 잠금을 이용하지 않습니다. 이는 MongoDB의 MVCC WiredTiger 스토리지 엔진에서는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가한다. 즉 변경되는 내역을 모두 관리하는데, 따라서 읽기 명령시 현재 트랜잭션이 읽어야할 문서 버전을 찾아 읽기만 하면된다. MVCC를 이용해서 잠금 없이 문서를 읽는다고 하여 이를 잠금없는 일관된 읽기(Consistent non-locking read)라고도 한다. 
 
 즉 실제로는 그 문서가 변경되기 전에 버전을 읽는 것이므로 별도의 잠금이 필요로 하지 않는것이다. 
 
@@ -348,11 +340,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAzOTU2NTU4LC0yMTczMzQ3MzQsMTM2Nj
-M3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQwMDky
-NiwxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3NzI0ODgsND
-E4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0ODk2
-NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMzM5MDI4MjcsOT
-YzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5
-OF19
+eyJoaXN0b3J5IjpbLTE1NDE1NTY2NjEsLTIxNzMzNDczNCwxMz
+Y2Mzc0NjEzLC0xMjIwOTQyOTkyLDk5MzE0NzgyMiwtOTQxNDAw
+OTI2LDExMTgyNjEyMzAsMTE4NjUyMTk0OCwtMTI5OTc3MjQ4OC
+w0MTg4Njk5NzIsMjEyNjkyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4
+OTY0NDEsLTU1NTU3MTYwNywtMzY0ODY0NDUyLDEzMzkwMjgyNy
+w5NjMyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQsNjIyODM1
+MTk4XX0=
 -->
