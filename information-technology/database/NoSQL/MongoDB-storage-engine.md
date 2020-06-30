@@ -42,7 +42,7 @@ WT 스토리지 엔진에서 사용자의 모든 쿼리는 공유 캐시를 거�
 
 WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 1000개 입니다. 하자드 포인터의 개수가 부족해서 처리량이 느려진다면 옵션을 변경하여 늘릴 수 있습니다.
 
-#### 스킵 리스트(Skip-List)
+#### 스킵 리스트(Skip-List;)
 
 일반적인 단순 링크드 리스트의 검색 성능은 $O(n)$인 반면, 스킵 리스트의 평균 검색 성능은 B-Tree와 같은 $O(log n)$입니다. 
 
@@ -92,11 +92,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1OTkwNDIwMiwtMTk3MDg1OTI0NywtMT
-M0OTY2MTE4LC0xNTk1MTY1Nzg4LC0xMDQwMTk4MzAxLC0xODM2
-MDM3MzA0LC0xNDc4NDk5NjEsLTM3ODcxMzM3LDc2Njg5MzU3MC
-w3MDI1MDM3NTAsMTIxMDc1NTk1OCwtMTI5NTMzMjczNywtMjE0
-MDc4NjczMiwtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQxMj
-Y0NCwtMTU1MjUyNzkwMCwtODgyMDAzOTIsLTE1MzE5OTg5Niwx
-ODQ4NDE0MjIwXX0=
+eyJoaXN0b3J5IjpbLTIwNTI2NTIyNTUsLTE5NzA4NTkyNDcsLT
+EzNDk2NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5ODMwMSwtMTgz
+NjAzNzMwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1Nz
+AsNzAyNTAzNzUwLDEyMTA3NTU5NTgsLTEyOTUzMzI3MzcsLTIx
+NDA3ODY3MzIsLTYwOTcxMjEyMSwtMTk5NjQxMDk0NCw4MDg0MT
+I2NDQsLTE1NTI1Mjc5MDAsLTg4MjAwMzkyLC0xNTMxOTk4OTYs
+MTg0ODQxNDIyMF19
 -->
