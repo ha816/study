@@ -196,7 +196,7 @@ ACKNOWLEDGED에 있던 비정상 종료가 되더라도 저널 로그에 기록�
 
 ### FSYNC
 
-저널로그뿐만 아니라 디스크 데이터 까지 모두 동기화하고 클라이언트에게 성공/실패 여부를 반환합니다. 
+저널로그뿐만 아니라 디스크 데이터 까지 모두 동기화하고 클라이언트에게 성공/실패 여부를 반환합니다. 파일을 통째로 디시
 
 * 
 * FSYNC
@@ -351,9 +351,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2OTI1ODkyNCwtMzY0ODY0NDUyLDEzMz
-kwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQs
-NjIyODM1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2OSwtNTgwOD
-g5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwx
-ODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbNzExOTI3ODg5LC0zNjQ4NjQ0NTIsMTMzOT
+AyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2
+MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01ODA4OD
+k4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4
+NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
 -->
