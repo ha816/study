@@ -185,9 +185,13 @@ WriteConcern 모드의 기본값입니다.
 클라이언트가 변경 요청을 하면, 변경 내용을 메모리 상에 적용하고 클라이언트로 성공 또는 실패 응답을 반환합니다. 
 데이터 변경이 성공하면 적어도 MongoDB 서버의 메모리 상에는 적용된 상태 입니다.
 
+하지만 메모리 상에서 변경된 데이터가 디스크로 동기화 되는 것을 보장하지는 않기 때문에 디스크 동기화가 되기전에 MongoDB에 문제가 생겨 비정상 종료되면 데이터가 손실될 위험이 있습니다. 
 
+### JOURNALED
 
-* JOURNALED
+저널 로그는 클라이언트가 변경한 
+
+* 
 * FSYNC
 
 Write Concern 을 지정하는데는 크게 w / j / wtimeout options를 설정 할 수 있습니다.
@@ -340,7 +344,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc1OTYxMzkyLC0zNjQ4NjQ0NTIsMTMzOT
+eyJoaXN0b3J5IjpbMjcyMTQzNDg1LC0zNjQ4NjQ0NTIsMTMzOT
 AyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2
 MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01ODA4OD
 k4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4
