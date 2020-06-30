@@ -144,7 +144,9 @@ MongoDB에는 MMAPv1에서 사용가능한 READ-COMMITED과 WiredTiget에서 사
 
 # Read & Write Concerns
 
-MongoDB 서버는 분산 처리를 기본 아키텍처로 선택하기 때문에 단일 노드에서 격리 수준뿐만 아니라 레플리카 셋을 구성하는 멤버들간의 동기화도 제어할 수 있어야 합니다. 그래서 MongoDB는 
+MongoDB 서버는 분산 처리를 기본 아키텍처로 선택하기 때문에 단일 노드에서 격리 수준뿐만 아니라 레플리카 셋을 구성하는 멤버들간의 동기화도 제어할 수 있어야 합니다. 그래서 MongoDB는 데이터를 읽고 쓸때, 필요한 데이터의 동기화(ACID의 Durability 속성) 수준에 따라 데이터를 변경하거나 조회할 수 있도록 Read Concern과 Write Concern옵션을 제공한다. 
+
+즉 
 
 
 
@@ -317,9 +319,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NjM5MTAwMiw5NjMyNzY5NjEsMjQ1MD
-Y5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3OTYs
-MTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUyOCwtOTYxMz
-Y1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTks
-MTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbLTIwMjM2NDEyNzEsOTYzMjc2OTYxLDI0NT
+A2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5OCwtNjkxMjYzNzk2
+LDE3NzMxOTE5NjksLTU4MDg4OTgyNSw3MzI3MTE1MjgsLTk2MT
+M2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5
+LDE1MjI5NjExMTZdfQ==
 -->
