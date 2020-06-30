@@ -189,7 +189,7 @@ WriteConcern 모드의 기본값입니다.
 
 ### JOURNALED
 
-저널 로그는 클라이언트가 변경한 
+저널 로그는 클라이언트가 변경한 데이터를 
 
 * 
 * FSYNC
@@ -344,9 +344,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcyMTQzNDg1LC0zNjQ4NjQ0NTIsMTMzOT
-AyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2
-MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01ODA4OD
-k4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4
-NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbLTI1ODk3MjA4NywtMzY0ODY0NDUyLDEzMz
+kwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQs
+NjIyODM1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2OSwtNTgwOD
+g5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwx
+ODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTExNl19
 -->
