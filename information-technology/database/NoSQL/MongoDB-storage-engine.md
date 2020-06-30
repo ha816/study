@@ -46,7 +46,9 @@ WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 10
 
 스킵리스트를 사용하면, 노드 추가, 검색에 별도의 잠금이 필요하지 않습니다. 삭제의 경우는 일부 잠금이 필요할 수 있으나 RDBMS의 보다는 빠르게 처리 됩니다. 종합적으로 스킵 리스트를 사용하면, 잠금 경합이 적어져서 더 좋은 성능을 보입니다. 
 
-RDBMS에서 레코드를 별도의 공간(언두 로그)에 저장하는 이유는 트랜잭션이 롤백 될때 기존 데이터를 복구하기 위함인데, 보통 언두 로그를 잠금 없는 데이터 읽기 용도로도 같이 사용합니다. WT에서는 **언두로그를 스킵 리스트**로 관리하는데, 조금 독특하게 데이터 페이지의 레코드를 직접 변경하지 않고 변경 이후 데이터를 스킵 리스트에 추가한다. 
+RDBMS에서 레코드를 별도의 공간(언두 로그)에 저장하는 이유는 트랜잭션이 롤백 될때 기존 데이터를 복구하기 위함인데, 보통 언두 로그를 잠금 없는 데이터 읽기 용도로도 같이 사용합니다. WT에서는 이 **언두로그를 스킵 리스트**로 관리합니다. 
+
+조금 독특하게 데이터 페이지의 레코드를 직접 변경하지 않고 변경 이후 데이터를 스킵 리스트에 추가한다. 
 
 데이터 페이지는 디스크에서 공유 캐시 메모리로 읽어 들인 데이터 페이지를 의미하는데, WT에서는 데이터가 변경되어도 디스크에서 읽어 드린 **데이터 페이지에 변경된 내용을 직접 변경하지 않는다.** 대신 데이터가 변경되면 변경된 내용을 스킵 리스트에 차고차고 기록해 둔다. 그리고 사용자 쿼리가 데이터를 읽을때ㅣ에는 변경 이력이 저장된 스킵 리스트를 검색해서 원하는 시점의 데이터를 가져간다. 이렇게 변경된 내용을 직접 데이터 페이지에 덮어쓰지 않고 **별도의 리스트로 관리하는 이유는 쓰기 처리를 빠르게 하기 위함이다.** 
 
@@ -90,11 +92,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NzczMDQ2NCwtNTQyMDI4ODkzLDg4Mz
-M0ODM2NiwtMTk3MDg1OTI0NywtMTM0OTY2MTE4LC0xNTk1MTY1
-Nzg4LC0xMDQwMTk4MzAxLC0xODM2MDM3MzA0LC0xNDc4NDk5Nj
-EsLTM3ODcxMzM3LDc2Njg5MzU3MCw3MDI1MDM3NTAsMTIxMDc1
-NTk1OCwtMTI5NTMzMjczNywtMjE0MDc4NjczMiwtNjA5NzEyMT
-IxLC0xOTk2NDEwOTQ0LDgwODQxMjY0NCwtMTU1MjUyNzkwMCwt
-ODgyMDAzOTJdfQ==
+eyJoaXN0b3J5IjpbMTk0OTAxNTA3OSwtMjQ3NzMwNDY0LC01ND
+IwMjg4OTMsODgzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMzQ5NjYx
+MTgsLTE1OTUxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMzczMD
+QsLTE0Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcwMjUw
+Mzc1MCwxMjEwNzU1OTU4LC0xMjk1MzMyNzM3LC0yMTQwNzg2Nz
+MyLC02MDk3MTIxMjEsLTE5OTY0MTA5NDQsODA4NDEyNjQ0LC0x
+NTUyNTI3OTAwXX0=
 -->
