@@ -233,7 +233,7 @@ MongoDB 서버는 레플리카 셋으로 구축되며, 구성원 간의 데이�
 
 샤딩된 클러스터에선, `"available"` 을 사용할 수 있습니다.  모든 read concerns(local 포함) 중에서 가장 빠른 성능을 보입니다. 하지만 샤딩된 컬렉션을 읽는 과정에서 [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) 문서를 읽을 수도 있습니다. 
 
-샤딩된 컬렉션에서 orphaned document를 읽는 상황을 피하기 위해서, `local` read concern과 같은 다른 concern level을 씁시다.
+샤딩된 컬렉션에서 orphaned document를 읽는 상황을 피하기 위해선, `local` read concern과 같은 다른 concern level을 씁시다.
 
 > orphaned document
 > 샤딩된 클러스터에서, 비정상 종료 때문에 실패하거나 불완전한 마이그레이션으로 발생하는 다른 샤드의 문서입니다. 이 문서를 제거하기 위해 `cleanupOrphaned`을 사용할 수 있습니다.
@@ -354,10 +354,10 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc0NjAxOTQzLC0xNjM0ODk2NDQxLC01NT
-U1NzE2MDcsLTM2NDg2NDQ1MiwxMzM5MDI4MjcsOTYzMjc2OTYx
-LDI0NTA2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5OCwtNjkxMj
-YzNzk2LDE3NzMxOTE5NjksLTU4MDg4OTgyNSw3MzI3MTE1Mjgs
-LTk2MTM2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NT
-M5MzE5LDE1MjI5NjExMTZdfQ==
+eyJoaXN0b3J5IjpbLTEwOTk1OTk5MDksNzc0NjAxOTQzLC0xNj
+M0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMzM5MDI4
+MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0LDYyMj
+gzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5NjksLTU4MDg4OTgy
+NSw3MzI3MTE1MjgsLTk2MTM2NTM2LDExNTc0ODY4NDgsMTg2ND
+kzNjY5MywtNjk0NTM5MzE5LDE1MjI5NjExMTZdfQ==
 -->
