@@ -35,11 +35,7 @@ IS와 IX는 의도를 표현하는 잠금으로 함께 묶어 인텐션 잠금(I
 IS는 컬렉션이나 문서 레벨 오브젝트에 Shared Lock을 획득할것이라는 의도를 나타냅니다. 
 IX는 마찬가지로 컬렉션이나 문서 레벨 오브젝트에 Exclusive Lock을 획득할것이라는 의도를 나타냅니다. 
 
-Intent Lock은 현재 쓰레드가 특정 오브젝트에 대해 Lock을 걸 의도를 가지고 있지만, 다른 변경의도를 가진 락(Intent Lock)도 허용하는 형태의 잠금입니다. 
-
-MongoDB의 각 오브젝트 계층 구조에서 하위 오브젝트에 대한 잠금을 획득하려면, 상위 계층의 인텐션 잠금을 먼저 획득해야 한다. 
-
-
+특정 하위 오브젝트에 대한 잠금을 획득하려면, 상위 계층의 인텐션 잠금을 먼저 획득해야 합니다.
 
 || Intent Shared| Intent Exclusive| Shared| Exclusive |
 |--|--|--|--|--|
@@ -349,11 +345,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE3ODU2NTEyLC0yMTczMzQ3MzQsMTM2Nj
-M3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQwMDky
-NiwxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3NzI0ODgsND
-E4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0ODk2
-NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMzM5MDI4MjcsOT
-YzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5
-OF19
+eyJoaXN0b3J5IjpbLTgyMTYwMDM1MCwtMjE3MzM0NzM0LDEzNj
+YzNzQ2MTMsLTEyMjA5NDI5OTIsOTkzMTQ3ODIyLC05NDE0MDA5
+MjYsMTExODI2MTIzMCwxMTg2NTIxOTQ4LC0xMjk5NzcyNDg4LD
+QxODg2OTk3MiwyMTI2OTI2NDg5LDc3NDYwMTk0MywtMTYzNDg5
+NjQ0MSwtNTU1NTcxNjA3LC0zNjQ4NjQ0NTIsMTMzOTAyODI3LD
+k2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2MjI4MzUx
+OThdfQ==
 -->
