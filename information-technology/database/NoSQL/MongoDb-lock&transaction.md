@@ -39,7 +39,7 @@ Intent Lock은 현재 쓰레드가 특정 오브젝트에 대해 Lock을 걸 의
 
 
 
-MongoDB에서는 글로벌 잠금, 데이터베이스, 컬렉션 3개 레벨의 오브젝트에 대해서 잠금을 지원한다.
+
 
 || Intent Shared| Intent Exclusive| Shared| Exclusive |
 |--|--|--|--|--|
@@ -352,11 +352,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkzMTQ3ODIyLC05NDE0MDA5MjYsMTExOD
-I2MTIzMCwxMTg2NTIxOTQ4LC0xMjk5NzcyNDg4LDQxODg2OTk3
-MiwyMTI2OTI2NDg5LDc3NDYwMTk0MywtMTYzNDg5NjQ0MSwtNT
-U1NTcxNjA3LC0zNjQ4NjQ0NTIsMTMzOTAyODI3LDk2MzI3Njk2
-MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MT
-I2Mzc5NiwxNzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4
-XX0=
+eyJoaXN0b3J5IjpbLTE1ODg4NzUxMjcsOTkzMTQ3ODIyLC05ND
+E0MDA5MjYsMTExODI2MTIzMCwxMTg2NTIxOTQ4LC0xMjk5Nzcy
+NDg4LDQxODg2OTk3MiwyMTI2OTI2NDg5LDc3NDYwMTk0MywtMT
+YzNDg5NjQ0MSwtNTU1NTcxNjA3LC0zNjQ4NjQ0NTIsMTMzOTAy
+ODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2Mj
+I4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01ODA4ODk4
+MjVdfQ==
 -->
