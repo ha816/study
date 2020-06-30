@@ -251,12 +251,9 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 `linearizable`로 반환된 데이터는 이 읽기 작업 전에 모든 레플리카 셋에 데이터를 성공적으로 반영하고 반환된 데이터입니다.
 
-따라서 반환된 데이터가 최신 데이터이고 
+따라서 반환된 데이터가 최신 데이터이고 영속성이 보장됩니다.
 
-결과를 반환하기 전에 모든 replica set에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
-
-linearizable은 읽기 연산이 단일 문서에 국한된 필터를 썻을때만 성공적으로 read concern을 보장합니다.
-
+하지만 결과를 반환하기 전에 모든 레플리카 셋에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 
 # Concurrency Control
 
@@ -356,7 +353,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MTYwODYwMCwtMTI5OTc3MjQ4OCw0MT
+eyJoaXN0b3J5IjpbMTE4NjUyMTk0OCwtMTI5OTc3MjQ4OCw0MT
 g4Njk5NzIsMjEyNjkyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0
 NDEsLTU1NTU3MTYwNywtMzY0ODY0NDUyLDEzMzkwMjgyNyw5Nj
 MyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4
