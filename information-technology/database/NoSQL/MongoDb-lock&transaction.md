@@ -174,12 +174,19 @@ Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리�
 
 동기화 제어는 MongoDB 서버 내부적으로 변경된 데이터가 어느 정도 디스크에 동기화 되었을때 변경 요청에 완료 메세지를 보낼 것인지 판단하는 기준입니다. 
 
-* UNACKNOWLEDGED
-	* 클라이언트가 MongoDB로 요청을 보내고 난 뒤, 응답에 관심을 두지 않습니다. 심지어 클라이언트 측에서 바로 다음 쿼리를 수행할 수도 있습니다.
-	* 일반적인 서비스에서는 사용하지 말아야할 동기화 모드 입니다.
-* ACKNOWLEDGED
-	* WriteConcern 모드의 기본값입니다.
-	* 클라이언트가 변경 요청을 하면, 변경 내용을 메모리 상에 적용하고 클라이언트로 성공 
+### UNACKNOWLEDGED
+
+클라이언트가 MongoDB로 요청을 보내고 난 뒤, 응답에 관심을 두지 않습니다. 심지어 클라이언트 측에서 바로 다음 쿼리를 수행할 수도 있습니다.
+일반적인 서비스에서는 사용하지 말아야할 동기화 모드 입니다.
+
+### ACKNOWLEDGED
+
+WriteConcern 모드의 기본값입니다.
+클라이언트가 변경 요청을 하면, 변경 내용을 메모리 상에 적용하고 클라이언트로 성공 또는 실패 응답을 반환합니다. 
+데이터 변경이 성공하면 적어도 MongoDB 서버의 메모리 상에는 적용된 상태 입니다.
+
+
+
 * JOURNALED
 * FSYNC
 
@@ -333,9 +340,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODAzMDQ0MTQsLTM2NDg2NDQ1MiwxMz
-M5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0
-LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5NjksLTU4MD
-g4OTgyNSw3MzI3MTE1MjgsLTk2MTM2NTM2LDExNTc0ODY4NDgs
-MTg2NDkzNjY5MywtNjk0NTM5MzE5LDE1MjI5NjExMTZdfQ==
+eyJoaXN0b3J5IjpbNDc1OTYxMzkyLC0zNjQ4NjQ0NTIsMTMzOT
+AyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2
+MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01ODA4OD
+k4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4
+NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
 -->
