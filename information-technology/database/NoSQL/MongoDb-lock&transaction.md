@@ -36,6 +36,10 @@ IS는 컬렉션이나 문서 레벨 오브젝트에 Shared Lock을 획득할것�
 IX는 마찬가지로 컬렉션이나 문서 레벨 오브젝트에 Exclusive Lock을 획득할것이라는 의도를 나타냅니다. 
 
 특정 하위 오브젝트에 대한 잠금을 획득하려면, 상위 계층의 인텐션 잠금을 먼저 획득해야 합니다.
+즉 한 컬렉션에 대해 잠금을 획득하려면, 먼저 글로벌 인텐션 잠금, 데이터베이스 인텐션 잠금 마지막으로 실제 X나 S잠금을 가져야 하
+
+특정 문서를 읽으려면 동일하게 글로벌 인텐션 잠금, 데이터베이스 인텐션 잠금 그리고 컬렉션 인텐션 잠금을 얻어야 한다. 
+
 
 || Intent Shared| Intent Exclusive| Shared| Exclusive |
 |--|--|--|--|--|
@@ -344,7 +348,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE5NjkxMDQ4LC0yMTczMzQ3MzQsMTM2Nj
+eyJoaXN0b3J5IjpbMzAzOTU2NTU4LC0yMTczMzQ3MzQsMTM2Nj
 M3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQwMDky
 NiwxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3NzI0ODgsND
 E4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0ODk2
