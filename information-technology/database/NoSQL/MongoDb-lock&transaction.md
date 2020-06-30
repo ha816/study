@@ -229,14 +229,10 @@ MongoDB 서버는 레플리카 셋으로 구축되며, 구성원 간의 데이�
 
 ### local & available
 
-`local`과 `available` read concern은 읽은 데이터가 레플리카 셋의 대다수 멤버들에게 쓰기 연산이 적용되었다는 것을 말합니다.
-
-이 쿼리로 반환된 데이터는 그 데이터가 주요 레플리카 셋에 동기화되었다는 것을 보장하지 않습니다. 운이 나빠 롤백이 발생하면 해당 데이터가 레플리카 셋이 존재하지 않을 수 있습니다.
+`local`과 `available`으로 반환된 데이터는 레플리카 셋의 대다수 멤버들에 쓰기 연산이 적용되었다는 것을 보장하지 않습니다. 운이 나빠 롤백이 발생하면 해당 데이터가 레플리카 셋이 존재하지 않을 수 있습니다.
 
 `available`의 경우, 샤딩된 클러스터에서만 `local`과 다르게 동작합니다.
-
-A query with read concern “available” returns data from the instance with no guarantee that the data has been written to a majority of the replica set members
-
+샤딩된 클러스터에서는 
 
 
 모든 read concerns(local 포함) 중에서 가장 빠른 성능을 보입니다. 하지만 샤딩된 컬렉션을 읽는 과정에서 [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) 문서를 읽을 수도 있습니다. 
@@ -362,7 +358,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NzYxODg0Miw0MTg4Njk5NzIsMjEyNj
+eyJoaXN0b3J5IjpbMTc0ODA0MzI5NCw0MTg4Njk5NzIsMjEyNj
 kyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1NTU3MTYw
 NywtMzY0ODY0NDUyLDEzMzkwMjgyNyw5NjMyNzY5NjEsMjQ1MD
 Y5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3OTYs
