@@ -119,7 +119,7 @@ MongoDB 서버에서 WriteConflict Exception이 얼마나 발생했는지는 db.
 >WirtedTiger의 경우
 >WiredTiger  스토리지 엔진에서는 문서를 읽는 쿼리는 WriteConflict와 무관하다. 왜냐하면 MVCC를 통해 읽기 작업에 대한 락을 걸지 않기 때문이다. 
 
-# 격리 수준
+# Isolation Level(격리 수준)
 
 MongoDB에는 MMAPv1에서 사용가능한 READ-COMMITED과 WiredTiget에서 사용가능한 SNAPSHOT(RPEATABLE-READ) 격리 수준이 있습니다.
 
@@ -340,11 +340,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDE1NTY2NjEsLTIxNzMzNDczNCwxMz
-Y2Mzc0NjEzLC0xMjIwOTQyOTkyLDk5MzE0NzgyMiwtOTQxNDAw
-OTI2LDExMTgyNjEyMzAsMTE4NjUyMTk0OCwtMTI5OTc3MjQ4OC
-w0MTg4Njk5NzIsMjEyNjkyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4
-OTY0NDEsLTU1NTU3MTYwNywtMzY0ODY0NDUyLDEzMzkwMjgyNy
-w5NjMyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQsNjIyODM1
-MTk4XX0=
+eyJoaXN0b3J5IjpbMTg4MzAwNjc2LC0xNTQxNTU2NjYxLC0yMT
+czMzQ3MzQsMTM2NjM3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4
+MjIsLTk0MTQwMDkyNiwxMTE4MjYxMjMwLDExODY1MjE5NDgsLT
+EyOTk3NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAx
+OTQzLC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1Mi
+wxMzM5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MTg1
+MzY0XX0=
 -->
