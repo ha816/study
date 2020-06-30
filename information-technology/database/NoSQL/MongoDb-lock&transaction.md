@@ -1,8 +1,6 @@
 # Lock
 
->Exclusive lock과 Shared lock
-
-멀티 트랜잭션 환경에서 데이터베이스의  **일관성(Consistency) **과  **무결성(Integrity)**을 유지하려면  **트랜잭션의 순차적 진행을 보장할 수 있는 직렬화 장치가 필요**하다.
+멀티 트랜잭션 환경에서 데이터베이스의  **일관성(Consistency)** 과  **무결성(Integrity)** 을 유지하려면  **트랜잭션의 순차적 진행을 보장할 수 있는 직렬화 장치**가 필요합니다. 그러한 직렬화 장치가 바로 Lock 입니다.
 
 Exclusive lock (배타적 잠금)
 : 쓰기 잠금(Write lock)이라고도 불린다. 왜냐하면 어떤 트랜잭션에서 데이터를 변경하고자 할 때, 쓰이는 잠금이라 그렇다. 배타적 잠금이 걸리면, 트랜잭션이 완료될 때까지 해당 테이블 혹은 레코드(row)를 다른 트랜잭션에서 읽거나 쓰지 못하게 된다. exclusive lock이 특정 데이터에 걸리면 shared lock을 걸 수 없고 exclusive lock도 걸수 없습니다.
@@ -353,11 +351,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNDAyNTYzLDExODY1MjE5NDgsLTEyOT
-k3NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQz
-LC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMz
-M5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0
-LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5NjksLTU4MD
-g4OTgyNSw3MzI3MTE1MjgsLTk2MTM2NTM2LDExNTc0ODY4NDhd
-fQ==
+eyJoaXN0b3J5IjpbMTQ3ODk1NDU1MywxMTg2NTIxOTQ4LC0xMj
+k5NzcyNDg4LDQxODg2OTk3MiwyMTI2OTI2NDg5LDc3NDYwMTk0
+MywtMTYzNDg5NjQ0MSwtNTU1NTcxNjA3LC0zNjQ4NjQ0NTIsMT
+MzOTAyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2
+NCw2MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01OD
+A4ODk4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4
+XX0=
 -->
