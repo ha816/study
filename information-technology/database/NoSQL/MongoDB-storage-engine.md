@@ -56,7 +56,9 @@ WT에서는 스킵리스트가 언두로그의 역할을 하게 됩니다. 스�
 
 WT는 공유 캐시를 위해서 새로운 디스크 데이터 페이지를 읽어 적재할 수 있도록 빈 공간을 항상 유지해야 합니다. 그렇지 않으면 쿼리가 필요한 데이터 페이지를 가져오지 못해 처리 응답속도가 느려집니다.
 
-공유 캐시의 적절한 빈 공간 유지를 위해 Eviction 쓰레드가 
+공유 캐시의 적절한 빈 공간 유지를 위해 Eviction 쓰레드가 백그라운로 돌아갑니다. 
+
+기본적으로는 현재 공유 캐시에서 페이지 중 자주 사용되지 않은 페이지를 제거하며, B-Tree
 
 
 
@@ -92,7 +94,7 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNzIyNTQ0NCwtMjQ3NzMwNDY0LC01ND
+eyJoaXN0b3J5IjpbMTEzODIzNDk1NSwtMjQ3NzMwNDY0LC01ND
 IwMjg4OTMsODgzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMzQ5NjYx
 MTgsLTE1OTUxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMzczMD
 QsLTE0Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcwMjUw
