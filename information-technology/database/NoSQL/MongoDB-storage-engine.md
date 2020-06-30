@@ -62,8 +62,11 @@ WT는 공유 캐시를 위해서 새로운 디스크 데이터 페이지를 읽�
 
 그런데 SSD와 같이 매우 빠르게 읽기/쓰기 작업이 가능한 저장 매체가 출시되어 한번에 읽어들 일 수 있는 데이터 페이지수가 많아졌습니다.  WT엔진은 가끔씩 캐시의 데이터 페이지 삭제 속도가 데이터 페이지를 읽어 들이는 속도를 따라가지 못하는 이슈도 있습니다. 
 
-이런 경우 보통 공유 캐시는 80%정도의 사용량을 유지해야 하는데, 그걸 넘어서서 데이터 페이지가 가득차게 됩니다. WT는 이런 상황에서 포그라운드 쓰레드인 사용자 쓰레드로 직접 캐시 이
+이런 경우 보통 공유 캐시는 80%정도의 사용량을 유지해야 하는데, 그걸 넘어서서 데이터 페이지가 가득차게 됩니다. WT는 이런 상황에서 포그라운드 쓰레드인 사용자 쓰레드로 직접 캐시 이빅션을 추가로 실행합니다.  이렇게 되면 사용자 쿼리가 처리되지 못하고 쿼리 처리 성능이 크게 떨어지게 됩니다. 
 
+#### 체크 포인트(Checkpoint)
+
+WT도 ㅅ
 
 
 
@@ -100,11 +103,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzk0NDE4NDksLTI0NzczMDQ2NCwtNT
-QyMDI4ODkzLDg4MzM0ODM2NiwtMTk3MDg1OTI0NywtMTM0OTY2
-MTE4LC0xNTk1MTY1Nzg4LC0xMDQwMTk4MzAxLC0xODM2MDM3Mz
-A0LC0xNDc4NDk5NjEsLTM3ODcxMzM3LDc2Njg5MzU3MCw3MDI1
-MDM3NTAsMTIxMDc1NTk1OCwtMTI5NTMzMjczNywtMjE0MDc4Nj
-czMiwtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgwODQxMjY0NCwt
-MTU1MjUyNzkwMF19
+eyJoaXN0b3J5IjpbLTU3ODAzODQzLC0yNDc3MzA0NjQsLTU0Mj
+AyODg5Myw4ODMzNDgzNjYsLTE5NzA4NTkyNDcsLTEzNDk2NjEx
+OCwtMTU5NTE2NTc4OCwtMTA0MDE5ODMwMSwtMTgzNjAzNzMwNC
+wtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1NzAsNzAyNTAz
+NzUwLDEyMTA3NTU5NTgsLTEyOTUzMzI3MzcsLTIxNDA3ODY3Mz
+IsLTYwOTcxMjEyMSwtMTk5NjQxMDk0NCw4MDg0MTI2NDQsLTE1
+NTI1Mjc5MDBdfQ==
 -->
