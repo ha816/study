@@ -154,7 +154,9 @@ WT가 SNAPSHOT 수준의 격리 수준을 지원한다고 해도 결국 MongoDB�
 
 그래서 MongoDB에서는 여러 쿼리를 하나의 트랜잭션에서 실행할 방법이 없습니다. 
 
-MongoDB의 모든 데이터 변경은 하나의 다큐먼트를 변경할때 마다 내부적으로 트랜잭션이 커밋됩니다. 
+MongoDB의 모든 데이터 변경은 하나의 다큐먼트를 변경할때 마다 내부적으로 트랜잭션이 커밋됩니다.  
+
+MonggoDB의 읽기 쿼리는 변경 쿼리와 다른 형태로 트랜잭션이 유지가 됩니다. 
 
 
 
@@ -340,9 +342,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzg2NTY0MzEsMjQ1MDY5NjAsLTIxMT
-cxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2
-OSwtNTgwODg5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYsMTE1Nz
-Q4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTEx
-Nl19
+eyJoaXN0b3J5IjpbOTYzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MT
+g1MzY0LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5Njks
+LTU4MDg4OTgyNSw3MzI3MTE1MjgsLTk2MTM2NTM2LDExNTc0OD
+Y4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5LDE1MjI5NjExMTZd
+fQ==
 -->
