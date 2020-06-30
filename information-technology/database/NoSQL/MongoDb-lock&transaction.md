@@ -105,7 +105,7 @@ Yield를 실행하는 규칙은 아래와 같다.
 
 # 트랜잭션
 
-WiredTiget 스토리지 엔진이 제공하는 트랜잭션 ACID 속성은 다음와 같은 특징이 있다. 
+WiredTiget 스토리지 엔진이 제공하는 트랜잭션 ACID 속성은 다음와 같은 특징이 있습니다.
 
 * 최고 레벨 격리 수준은 Snapshot(Repetable-Read)
 * 트랜잭션의 커밋과 체크포인트 두 가지 형태로 영속성(Durability) 보장
@@ -342,9 +342,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MT
-g1MzY0LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5Njks
-LTU4MDg4OTgyNSw3MzI3MTE1MjgsLTk2MTM2NTM2LDExNTc0OD
-Y4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5LDE1MjI5NjExMTZd
-fQ==
+eyJoaXN0b3J5IjpbNjMxMDE3NTk0LDk2MzI3Njk2MSwyNDUwNj
+k2MCwtMjExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MTI2Mzc5Niwx
+NzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4LC05NjEzNj
+UzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwx
+NTIyOTYxMTE2XX0=
 -->
