@@ -151,6 +151,7 @@ MongoDB 서버는 분산 처리를 기본 아키텍처로 선택하기 때문에
 ## Write Concern
 
 Write Concern이란 MongoDB가 Client의 요청에 대한 응답을 반환하는 시점을 결정하는 옵션입니다. 
+Write Concern은 데이터 읽기와 무관하여 Insert, Update, 그리고 Delete 연산에서만 설정할 수 있습니다.
 
 ![](https://k.kakaocdn.net/dn/bqWzBJ/btqvCK0MrG1/kkQXAqikXxDAA9h0iKlya1/img.png)
 
@@ -319,9 +320,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDY3NTY0NjgsOTYzMjc2OTYxLDI0NT
-A2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5OCwtNjkxMjYzNzk2
-LDE3NzMxOTE5NjksLTU4MDg4OTgyNSw3MzI3MTE1MjgsLTk2MT
-M2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NTM5MzE5
-LDE1MjI5NjExMTZdfQ==
+eyJoaXN0b3J5IjpbMTMzOTAyODI3LDk2MzI3Njk2MSwyNDUwNj
+k2MCwtMjExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MTI2Mzc5Niwx
+NzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4LC05NjEzNj
+UzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwx
+NTIyOTYxMTE2XX0=
 -->
