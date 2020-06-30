@@ -68,7 +68,7 @@ WT는 공유 캐시를 위해서 새로운 디스크 데이터 페이지를 읽�
 
 WT도 사용자의 요청을 빠르게 처리하면서 커밋된 트랜잭션의 영속성(Durability)을 보전하기 위해 트랜잭션 로그(WAL, 저널 로그)를 먼저 기록하고, 실제 데이터 파일에 기록하는 작업은 사용자의 트랜잭션과 관련없이 뒤로 미루어 한꺼번에 처리한다. 
 
-체크 포인트는 디스크 데이터 파일과 트랜잭션 로그가 동기화되는 시점을 말합니다. 이 체크 포인트는 주기적으로 백그라운드 쓰레드에 의해서 실행되는데, 체크포인트가 실행되어야만 오래된 트랜잭션 로그를 삭제하거나 
+체크 포인트는 디스크 데이터 파일과 트랜잭션 로그가 동기화되는 시점을 말합니다. 이 체크 포인트는 주기적으로 백그라운드 쓰레드에 의해서 실행되는데, 체크포인트가 실행되어야만 오래된 트랜잭션 로그를 삭제하거나 새로운 트랜잭션 로그로 덮어쓸 수 있게 됩니다. 
 
 
 
@@ -104,11 +104,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDEyMzQwLC0zMjA1NzU1MjQsLTI0Nz
-czMDQ2NCwtNTQyMDI4ODkzLDg4MzM0ODM2NiwtMTk3MDg1OTI0
-NywtMTM0OTY2MTE4LC0xNTk1MTY1Nzg4LC0xMDQwMTk4MzAxLC
-0xODM2MDM3MzA0LC0xNDc4NDk5NjEsLTM3ODcxMzM3LDc2Njg5
-MzU3MCw3MDI1MDM3NTAsMTIxMDc1NTk1OCwtMTI5NTMzMjczNy
-wtMjE0MDc4NjczMiwtNjA5NzEyMTIxLC0xOTk2NDEwOTQ0LDgw
-ODQxMjY0NF19
+eyJoaXN0b3J5IjpbMTA1NzAyNTEwMiwtMzIwNTc1NTI0LC0yND
+c3MzA0NjQsLTU0MjAyODg5Myw4ODMzNDgzNjYsLTE5NzA4NTky
+NDcsLTEzNDk2NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5ODMwMS
+wtMTgzNjAzNzMwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4
+OTM1NzAsNzAyNTAzNzUwLDEyMTA3NTU5NTgsLTEyOTUzMzI3Mz
+csLTIxNDA3ODY3MzIsLTYwOTcxMjEyMSwtMTk5NjQxMDk0NCw4
+MDg0MTI2NDRdfQ==
 -->
