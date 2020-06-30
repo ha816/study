@@ -219,7 +219,9 @@ wtimeout option(number)
 
 ## Read Concern
 
-MongoDB 서버는 레플리카 셋으로 구축되며, 구성원 간의 데이터 동기화는 Write Concern에 따라 다양한 상태가 될수 있습니다. 하지만 최종적으로는 프라이머리와 세컨더리는 모두 같은 데이터셋을 가지게 되며 이를 Eventual Consistency(최종 동기화 
+MongoDB 서버는 레플리카 셋으로 구축되며, 구성원 간의 데이터 동기화는 Write Concern에 따라 다양한 상태가 될수 있습니다. 하지만 최종적으로는 프라이머리와 세컨더리는 모두 같은 데이터셋을 가지게 되며 이를 Eventual Consistency(최종 동기화) 모델이라고도 합니다. 
+
+하지만 데이터를 읽어 가는 입장에서 최종 동기화 모델은 많은 문제점이 있습니다. 이런 동기화 과정에서 데이터 읽기를 일관성 있게 유지하기 위해 MongoDB에서는 Read Concern dhqtusdmf wprhdgkqslek. 
 
 `readConcern` 옵션은 replica sets 그리고 replica shard set으로 부터 데이터를 읽는데 그 데이터의 LATEST, SAFE, FAST을 고려하여 가져온다. 
 
@@ -352,10 +354,10 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzQ4OTY0NDEsLTU1NTU3MTYwNywtMz
-Y0ODY0NDUyLDEzMzkwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAs
-LTIxMTcxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3OTYsMTc3Mz
-E5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYs
-MTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMj
-k2MTExNl19
+eyJoaXN0b3J5IjpbOTM1MTQ4MTQ4LC0xNjM0ODk2NDQxLC01NT
+U1NzE2MDcsLTM2NDg2NDQ1MiwxMzM5MDI4MjcsOTYzMjc2OTYx
+LDI0NTA2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5OCwtNjkxMj
+YzNzk2LDE3NzMxOTE5NjksLTU4MDg4OTgyNSw3MzI3MTE1Mjgs
+LTk2MTM2NTM2LDExNTc0ODY4NDgsMTg2NDkzNjY5MywtNjk0NT
+M5MzE5LDE1MjI5NjExMTZdfQ==
 -->
