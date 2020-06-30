@@ -17,9 +17,10 @@ MongoDB의 디폴트 스토리지 엔진.
 
 WiredTiget 스토리지 엔진의 특징
 
-* Lock-free Algorithm(잠금 경합 최소화)
+* Lock-Free Algorithm(잠금 경합 최소화)
 	* Hazard-Pointer와 Skip-List 메커니즘 구현
-* MVCC
+* Non-Blocking Consistent Read(잠금 없는 데이터 읽기)
+	* MVCC 지원
 	* 
 
 내부적인 잠금 경합 최소화(Lock-free Algorithm)을 위해서 하자드 포인터(Hazard-Pointer)나 스킵 리스트(Skip-List)와 같은 많은 신기술을 채택하였습니다. 
@@ -106,11 +107,11 @@ WT 스토리ㅣ지 엔진의 데이터 블록은 모두 가변사이즈입니다
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY0NDc2NTU0LC02ODE2NzY3NDIsMjA3Nj
-I4MTIyOSwxODg5NTI2Mzg3LC00MDk1MzQ3MjMsMTA1NzAyNTEw
-MiwtMzIwNTc1NTI0LC0yNDc3MzA0NjQsLTU0MjAyODg5Myw4OD
-MzNDgzNjYsLTE5NzA4NTkyNDcsLTEzNDk2NjExOCwtMTU5NTE2
-NTc4OCwtMTA0MDE5ODMwMSwtMTgzNjAzNzMwNCwtMTQ3ODQ5OT
-YxLC0zNzg3MTMzNyw3NjY4OTM1NzAsNzAyNTAzNzUwLDEyMTA3
-NTU5NThdfQ==
+eyJoaXN0b3J5IjpbMTQzMzQ4NjkyNywtNjgxNjc2NzQyLDIwNz
+YyODEyMjksMTg4OTUyNjM4NywtNDA5NTM0NzIzLDEwNTcwMjUx
+MDIsLTMyMDU3NTUyNCwtMjQ3NzMwNDY0LC01NDIwMjg4OTMsOD
+gzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMzQ5NjYxMTgsLTE1OTUx
+NjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMzczMDQsLTE0Nzg0OT
+k2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcwMjUwMzc1MCwxMjEw
+NzU1OTU4XX0=
 -->
