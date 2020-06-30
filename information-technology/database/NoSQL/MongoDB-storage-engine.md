@@ -75,7 +75,7 @@ WT도 사용자의 요청을 빠르게 처리하면서 커밋된 트랜잭션의
 
 WT는 샤프 체크포인트방식을 사용하고 있는데, 샤프 체크 포인트는 평상시에는 디스크 쓰기가 많지 않지만, 체크포인트가 실행되는 시점에 한번에 모아서 페이지를 기록하는 패턴입니다. 
 
-
+#### 
 
 
 
@@ -111,11 +111,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4OTUyNjM4NywtNDA5NTM0NzIzLDEwNT
-cwMjUxMDIsLTMyMDU3NTUyNCwtMjQ3NzMwNDY0LC01NDIwMjg4
-OTMsODgzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMzQ5NjYxMTgsLT
-E1OTUxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMzczMDQsLTE0
-Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcwMjUwMzc1MC
-wxMjEwNzU1OTU4LC0xMjk1MzMyNzM3LC0yMTQwNzg2NzMyLC02
-MDk3MTIxMjFdfQ==
+eyJoaXN0b3J5IjpbMjA3NjI4MTIyOSwxODg5NTI2Mzg3LC00MD
+k1MzQ3MjMsMTA1NzAyNTEwMiwtMzIwNTc1NTI0LC0yNDc3MzA0
+NjQsLTU0MjAyODg5Myw4ODMzNDgzNjYsLTE5NzA4NTkyNDcsLT
+EzNDk2NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5ODMwMSwtMTgz
+NjAzNzMwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1Nz
+AsNzAyNTAzNzUwLDEyMTA3NTU5NTgsLTEyOTUzMzI3MzcsLTIx
+NDA3ODY3MzJdfQ==
 -->
