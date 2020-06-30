@@ -10,11 +10,11 @@ Shared lock (공유 잠금)
 
 ## MongoDB Lock
 
-MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금으로 나누어 집니다. 명시적 잠금에는 글로벌 잠금뿐이며 나머지 모든 잠금은 묵시적 잠금이다.  데이터베이스 그리고 컬렉션에 대한 잠금은 모두 묵시적인 잠금이며, 쿼리 실행시 자동적으로 획득됐다가 자동으로 해제되는 잠금이다. 
+MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금으로 나누어 집니다. 명시적 잠금에는 글로벌 잠금만이 해당되며 나머지 모든 잠금은 묵시적 잠금입니다.  묵시적 잠금은 쿼리 실행시 자동적으로 획득됐다가 자동으로 해제되는 잠금입니다.
 
 ### 글로벌 잠금(인스턴스 잠금)
 
-MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금은 글로벌 잠금뿐이다. MongoDB 서버 인스턴스에서 단 하나만 있는 잠금이므로, 이를 인스턴스 잠금이라고 한다.  
+MongoDB에서 유일하게 명시적으로 사용할 수 있는 잠금이MongoDB 서버 인스턴스에서 단 하나만 있는 잠금이므로, 이를 인스턴스 잠금이라고 한다.  
 
 ```
 db.fsyncLock){fsync:1, lock:true}
@@ -351,11 +351,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczOTkxMTkzMywxMTg2NTIxOTQ4LC0xMj
-k5NzcyNDg4LDQxODg2OTk3MiwyMTI2OTI2NDg5LDc3NDYwMTk0
-MywtMTYzNDg5NjQ0MSwtNTU1NTcxNjA3LC0zNjQ4NjQ0NTIsMT
-MzOTAyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2
-NCw2MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01OD
-A4ODk4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4
-XX0=
+eyJoaXN0b3J5IjpbNTgxNzcxOTExLDExODY1MjE5NDgsLTEyOT
+k3NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQz
+LC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMz
+M5MDI4MjcsOTYzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0
+LDYyMjgzNTE5OCwtNjkxMjYzNzk2LDE3NzMxOTE5NjksLTU4MD
+g4OTgyNSw3MzI3MTE1MjgsLTk2MTM2NTM2LDExNTc0ODY4NDhd
+fQ==
 -->
