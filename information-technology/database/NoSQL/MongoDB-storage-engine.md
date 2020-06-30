@@ -87,7 +87,7 @@ WT도 사용자의 요청을 빠르게 처리하면서 커밋된 트랜잭션의
 
 체크 포인트는 디스크 데이터 파일과 트랜잭션 로그가 동기화되는 시점을 말합니다.
 
-만약 제거해야 하는 데이터 페이지가 더티 페이지라면, 리컨실리에이션을 수행하고 체코포인트를 수행합니다.
+만약 공유캐시의 데이터 페이지가 트랜잭션 로그와 맞지 않는 더 리컨실리에이션을 수행하고 체코포인트를 수행합니다.
 
 
  이 체크 포인트는 주기적으로 백그라운드 쓰레드에 의해서 실행되는데, 체크포인트가 실행되어야만 오래된 트랜잭션 로그를 삭제하거나 새로운 트랜잭션 로그로 덮어쓸 수 있게 됩니다. 
@@ -102,11 +102,11 @@ WT는 샤프 체크포인트방식을 사용하고 있는데, 샤프 체크 포�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyODM5NDkwLC0xMTE3MTcxMDM0LC02OD
-E2NzY3NDIsMjA3NjI4MTIyOSwxODg5NTI2Mzg3LC00MDk1MzQ3
-MjMsMTA1NzAyNTEwMiwtMzIwNTc1NTI0LC0yNDc3MzA0NjQsLT
-U0MjAyODg5Myw4ODMzNDgzNjYsLTE5NzA4NTkyNDcsLTEzNDk2
-NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5ODMwMSwtMTgzNjAzNz
-MwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1NzAsNzAy
-NTAzNzUwXX0=
+eyJoaXN0b3J5IjpbLTM1NzY5Mjk0NiwtMTExNzE3MTAzNCwtNj
+gxNjc2NzQyLDIwNzYyODEyMjksMTg4OTUyNjM4NywtNDA5NTM0
+NzIzLDEwNTcwMjUxMDIsLTMyMDU3NTUyNCwtMjQ3NzMwNDY0LC
+01NDIwMjg4OTMsODgzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMzQ5
+NjYxMTgsLTE1OTUxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMz
+czMDQsLTE0Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcw
+MjUwMzc1MF19
 -->
