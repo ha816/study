@@ -150,7 +150,7 @@ MongoDB에는 MMAPv1에서 사용가능한 READ-COMMITED과 WiredTiget에서 사
 
 WT가 SNAPSHOT 수준의 격리 수준을 지원한다고 해도 결국 MongoDB가 스토리지 엔진을 제어하기 때문에 MongoDB 서버 처리에 의존적일 수 밖에 없습니다. 그리고 MongoDB는 기본적으로 단일 문서에 대한 트랜잭션만 지원합니다.
 
-
+WT를 사용하는 경우, 데이터를 읽을때
 
 ## MongoDB 서버의 격리 수준
 
@@ -332,8 +332,8 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNTg1NDU1Niw2MjI4MzUxOTgsLTY5MT
-I2Mzc5NiwxNzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4
-LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5ND
-UzOTMxOSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OT
+EyNjM3OTYsMTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUy
+OCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OT
+Q1MzkzMTksMTUyMjk2MTExNl19
 -->
