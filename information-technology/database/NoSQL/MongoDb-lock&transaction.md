@@ -229,7 +229,7 @@ MongoDB 서버는 레플리카 셋으로 구축되며, 구성원 간의 데이�
 
 ### local & available
 
-가장 최근 데이터를 빠르게 가져오는 Read Concern 입니다. 이 쿼리로 반환된 데이터는 그 데이터가 주요 replica sets에 쓰여졌다는 것을 보장하지 않습니다. 운이 나쁘면 해당 데이터는 롤백이 발생하여 데이터가 replica sets에 존재하지 않을 수 있습니다.
+가장 최신의 데이터를 빠르게 가져오는 Read Concern 입니다. 이 쿼리로 반환된 데이터는 그 데이터가 주요 레플리카 셋에 동기화되었다는 것을 보장하지 않습니다. 운이 나빠 롤백이 발생하면 해당 데이터가 레플리카 셋이 존재하지 않을 수 있습니다.
 
 샤딩된 클러스터에선, `"available"` 을 사용하면 모든 read concerns(local 포함) 중에서 가장 빠르게 데이터를 가져옵니다. 그러나 샤딩된 컬렉션을 읽는 과정에서 [orphaned documents](https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document) 문서를 읽을 수도 있습니다. 
 
@@ -354,10 +354,10 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTM5MDUyNTksLTE2MzQ4OTY0NDEsLT
-U1NTU3MTYwNywtMzY0ODY0NDUyLDEzMzkwMjgyNyw5NjMyNzY5
-NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OT
-EyNjM3OTYsMTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUy
-OCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OT
-Q1MzkzMTksMTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbMTM1NDU5NTM3NCwtMTYzNDg5NjQ0MSwtNT
+U1NTcxNjA3LC0zNjQ4NjQ0NTIsMTMzOTAyODI3LDk2MzI3Njk2
+MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MT
+I2Mzc5NiwxNzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4
+LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5ND
+UzOTMxOSwxNTIyOTYxMTE2XX0=
 -->
