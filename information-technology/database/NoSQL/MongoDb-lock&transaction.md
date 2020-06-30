@@ -189,7 +189,9 @@ WriteConcern 모드의 기본값입니다.
 
 ### JOURNALED
 
-저널 로그는 클라이언트가 변경한 데이터를 
+저널 로그는 클라이언트가 변경한 데이터를 메모리에 적용한 후, 디스크의 저널 로그에도 동기화 하도록 합니다. 
+
+ACKNOWLEDGED에 있던 비정상 종료가 되더라도 저널 로그에 기록이 되었기 
 
 * 
 * FSYNC
@@ -344,7 +346,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1ODk3MjA4NywtMzY0ODY0NDUyLDEzMz
+eyJoaXN0b3J5IjpbMTk3MTgwODk3NCwtMzY0ODY0NDUyLDEzMz
 kwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQs
 NjIyODM1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2OSwtNTgwOD
 g5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwx
