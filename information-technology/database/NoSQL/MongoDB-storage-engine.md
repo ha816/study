@@ -28,8 +28,7 @@ MongoDB의 디폴트 스토리지 엔진.
 
 조회 쿼리가 WT(WiredTiger)에 인입되면, 공유 캐시에 있는 데이터로 해당 쿼리를 처리할 수 있는지 확인합니다. 처리하지 못한다면, 블록 매니저(Block Manager)를 통해 필요한 데이터 블록을 디스크에서 읽어와 공유 캐시에 적재하고 이 데이터로 쿼리를 처리합니다. 
 
-수정 쿼리가 인기본적으로 MongoDB는 단일 문서 단위에 Transactions을 보장합니다. 
-만약 사용자가 특정 문서를 변경하면, WT가 트랜잭션을 시작하고 커서를 이용해서 원하는 다큐먼트의 내용을 변경합니다. 변경 내용은 먼저 캐시에 적용되는데, 디스크에 기록되기 전에 변경 내용을 저널 로그에 기록한 다음 사용자에게 작업 처리 결과를 리턴합니다. 
+수정 쿼리가 인입되면, WT는 변경 내용을 먼저 캐시에 적용되는데, 디스크에 기록되기 전에 변경 내용을 저널 로그에 기록한 다음 사용자에게 작업 처리 결과를 리턴합니다. 
 
 블럭 매니저는 계속해서 새로운 데이터 페이지들을 공유 캐시로 읽어 들여야 하는데, 더 이상 데이터 페이지를 읽어 들일 공간이 없으면, 쿼리를 처리할 수 없게 도비니다. 이런 상황을 피하기 위해서 Eviction 모듈을 사용하며, 이 모듈은 공유 캐시가 적절한 메모리 사용량을 유지하도록 공유 캐시에서 자주 사용되지 않는 데이터 페이지들을 제거하는 작업을 수행한다. 
 
@@ -100,11 +99,11 @@ WT는 샤프 체크포인트방식을 사용하고 있는데, 샤프 체크 포�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjA2MzgxMjIsLTgyMjEzMTg3NiwtMT
-ExNzE3MTAzNCwtNjgxNjc2NzQyLDIwNzYyODEyMjksMTg4OTUy
-NjM4NywtNDA5NTM0NzIzLDEwNTcwMjUxMDIsLTMyMDU3NTUyNC
-wtMjQ3NzMwNDY0LC01NDIwMjg4OTMsODgzMzQ4MzY2LC0xOTcw
-ODU5MjQ3LC0xMzQ5NjYxMTgsLTE1OTUxNjU3ODgsLTEwNDAxOT
-gzMDEsLTE4MzYwMzczMDQsLTE0Nzg0OTk2MSwtMzc4NzEzMzcs
-NzY2ODkzNTcwXX0=
+eyJoaXN0b3J5IjpbLTUyNTY2NzQwMiwtODIyMTMxODc2LC0xMT
+E3MTcxMDM0LC02ODE2NzY3NDIsMjA3NjI4MTIyOSwxODg5NTI2
+Mzg3LC00MDk1MzQ3MjMsMTA1NzAyNTEwMiwtMzIwNTc1NTI0LC
+0yNDc3MzA0NjQsLTU0MjAyODg5Myw4ODMzNDgzNjYsLTE5NzA4
+NTkyNDcsLTEzNDk2NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5OD
+MwMSwtMTgzNjAzNzMwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3
+NjY4OTM1NzBdfQ==
 -->
