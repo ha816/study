@@ -36,9 +36,9 @@ WT 스토리지 엔진에서 사용자의 모든 쿼리는 공유 캐시를 거�
 
 하자드 포인터는 수정 또는 삭제 되면 위험한 객체에 대한 포인터를 말합니다. 
 
-사용자 쓰레드는 사용자의 쿼리를 처리하기 위해 공유 캐시를 참조하는 쓰레드이고, 이빅션 쓰레드(Eviction Thread)는 오래된 캐시공간을 만들어 주는 쓰레드 입니다. 
+사용자 쓰레드는 사용자의 쿼리를 처리하기 위해 공유 캐시를 참조하는 쓰레드이고, 이빅션 쓰레드(Eviction Thread)는 오래된 데이터를 제거하여 캐시의 여유 공간을 만들어 주는 쓰레드 입니다. 
 
-사용자 쓰레드는 캐시 데이터를 참조할때 참조하는 페이즈를 하자드 포인터에 등록합니다. 
+다수의 사용자 쓰레드는 캐시에서 참조하는 데이터 페이지를 쓰레드 스스로가 가지는 하자드 포인터에 등록합니다. 
 이빅션 쓰레드는 동시에 제거해야할 데이터 페이지를 골라서 삭제하는 작업을 실행합니다. 적절히 제거해도 될법한 페이지(자주 사용되지 않는)를 골라서 페이지를 골라 하자드 포인터에 등록되어 있는지 확인합니다. 이때 등록되어 있으면 그 데이터 페이지는 건너 뛰게 됩니다.
 
 WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 1000개 입니다. 하자드 포인터의 개수가 부족해서 처리량이 느려진다면 옵션을 변경하여 늘릴 수 있습니다.
@@ -93,11 +93,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTcwMTg3ODMsLTE1OTUxNjU3ODgsLT
-EwNDAxOTgzMDEsLTE4MzYwMzczMDQsLTE0Nzg0OTk2MSwtMzc4
-NzEzMzcsNzY2ODkzNTcwLDcwMjUwMzc1MCwxMjEwNzU1OTU4LC
-0xMjk1MzMyNzM3LC0yMTQwNzg2NzMyLC02MDk3MTIxMjEsLTE5
-OTY0MTA5NDQsODA4NDEyNjQ0LC0xNTUyNTI3OTAwLC04ODIwMD
-M5MiwtMTUzMTk5ODk2LDE4NDg0MTQyMjAsLTU5MzQ3MTg0MSwt
-NzY0MTUwOTA2XX0=
+eyJoaXN0b3J5IjpbLTEyODg3MTU4NSwtMTU5NTE2NTc4OCwtMT
+A0MDE5ODMwMSwtMTgzNjAzNzMwNCwtMTQ3ODQ5OTYxLC0zNzg3
+MTMzNyw3NjY4OTM1NzAsNzAyNTAzNzUwLDEyMTA3NTU5NTgsLT
+EyOTUzMzI3MzcsLTIxNDA3ODY3MzIsLTYwOTcxMjEyMSwtMTk5
+NjQxMDk0NCw4MDg0MTI2NDQsLTE1NTI1Mjc5MDAsLTg4MjAwMz
+kyLC0xNTMxOTk4OTYsMTg0ODQxNDIyMCwtNTkzNDcxODQxLC03
+NjQxNTA5MDZdfQ==
 -->
