@@ -22,7 +22,7 @@ MongoDB의 디폴트 스토리지 엔진.
 * 파일 압축
 * 암호화 기능
 
-## WiredTiger 내부 작동 방식
+## WiredTiger 내부 구성
 
 ![enter image description here](https://image.slidesharecdn.com/mongodb-wiredtiger-webinar-150709200625-lva1-app6892/95/a-technical-introduction-to-wiredtiger-11-638.jpg?cb=1436472726)
 
@@ -102,11 +102,11 @@ WT 스토리ㅣ지 엔진의 데이터 블록은 모두 가변사이즈입니다
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTcxNzEwMzQsLTY4MTY3Njc0MiwyMD
-c2MjgxMjI5LDE4ODk1MjYzODcsLTQwOTUzNDcyMywxMDU3MDI1
-MTAyLC0zMjA1NzU1MjQsLTI0NzczMDQ2NCwtNTQyMDI4ODkzLD
-g4MzM0ODM2NiwtMTk3MDg1OTI0NywtMTM0OTY2MTE4LC0xNTk1
-MTY1Nzg4LC0xMDQwMTk4MzAxLC0xODM2MDM3MzA0LC0xNDc4ND
-k5NjEsLTM3ODcxMzM3LDc2Njg5MzU3MCw3MDI1MDM3NTAsMTIx
-MDc1NTk1OF19
+eyJoaXN0b3J5IjpbNzM5ODkwNjUzLC0xMTE3MTcxMDM0LC02OD
+E2NzY3NDIsMjA3NjI4MTIyOSwxODg5NTI2Mzg3LC00MDk1MzQ3
+MjMsMTA1NzAyNTEwMiwtMzIwNTc1NTI0LC0yNDc3MzA0NjQsLT
+U0MjAyODg5Myw4ODMzNDgzNjYsLTE5NzA4NTkyNDcsLTEzNDk2
+NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5ODMwMSwtMTgzNjAzNz
+MwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1NzAsNzAy
+NTAzNzUwXX0=
 -->
