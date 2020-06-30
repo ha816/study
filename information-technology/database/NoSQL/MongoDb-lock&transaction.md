@@ -133,6 +133,20 @@ MongoDB 서버에서 WriteConflict Exception이 얼마나 발생했는지는 db.
 
 MongoDB 서버는 처음부터 단일 다큐먼트의 트랜잭션만 지원하고 있다. 즉 원자 단위의 처리가 보장된다는 것을 말한다. 
 
+# Multi-Document Transactions
+단일 쓰기 연산이 다수의 문서를 수정할때, 각 문서에 대한 수정은 원자성을 보장합니다. 하지만 **연산 전체가 원자성을 보장하진 않습니다.**
+
+다수 문서에 대한 쓰기 작업을 수행할때, 단일 또는 다수 쓰기 모든 연산이든지, 다른 연산이 교차로 배치될 수 있다. (interleave; 컴퓨터 하드디스크의 성능을 높이기 위해 데이터를 서로 인접하지 않게 배열하는 방식을 말한다.)
+
+복수 문서에 대해서 원자성이 보장되는 읽기와 쓰기를 필요로 하는 상황에 대해서, MongoDB는 복수 문서 트랜잭션을 지원합니다.
+
+For details regarding transactions in MongoDB, see the  [Transactions](https://docs.mongodb.com/manual/core/transactions/)  page.
+
+>주의사항
+>대부분의 경우, 다수-문서 트랜잭션은 단일 문서 쓰기 보다 훨씬 성능  손실이 큽니다. 그리고 효과적인 schema 디자인을 해놓았다면, 다수-문서 트랜잭션을 사용할 일이 별로 없습니다.
+
+
+
 # 격리 수준
 
 MongoDB 서버에서는 MMAPv1 스토리지 엔진에서 사용가능한 READ-COMMITED와 WiredTiget에서 사용가능한 SNAPSHOT(RPEATABLE-READ가 있다. 
@@ -152,25 +166,6 @@ MongoDB 서버에서는 MMAPv1 스토리지 엔진에서 사용가능한 READ-CO
 
 
 
-
-
-# Transaction
-
-## Atomicity
-
-MongoDB에서, 쓰기 연산은 단일 문서에 대해선 원자성을 보장합니다. 심지어 단일 문서안의 다수의 중첩된 문서에 대한 수정 연산자에 대해서도 보장합니다.  
-
-# Multi-Document Transactions
-단일 쓰기 연산이 다수의 문서를 수정할때, 각 문서에 대한 수정은 원자성을 보장합니다. 하지만 **연산 전체가 원자성을 보장하진 않습니다.**
-
-다수 문서에 대한 쓰기 작업을 수행할때, 단일 또는 다수 쓰기 모든 연산이든지, 다른 연산이 교차로 배치될 수 있다. (interleave; 컴퓨터 하드디스크의 성능을 높이기 위해 데이터를 서로 인접하지 않게 배열하는 방식을 말한다.)
-
-복수 문서에 대해서 원자성이 보장되는 읽기와 쓰기를 필요로 하는 상황에 대해서, MongoDB는 복수 문서 트랜잭션을 지원합니다.
-
-For details regarding transactions in MongoDB, see the  [Transactions](https://docs.mongodb.com/manual/core/transactions/)  page.
-
->주의사항
->대부분의 경우, 다수-문서 트랜잭션은 단일 문서 쓰기 보다 훨씬 성능  손실이 큽니다. 그리고 효과적인 schema 디자인을 해놓았다면, 다수-문서 트랜잭션을 사용할 일이 별로 없습니다.
 
 # Concurrency Control
 
@@ -341,7 +336,8 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01OD
-A4ODk4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4
-LDE4NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbOTUwMTI4OTU0LC02OTEyNjM3OTYsMTc3Mz
+E5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYs
+MTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMj
+k2MTExNl19
 -->
