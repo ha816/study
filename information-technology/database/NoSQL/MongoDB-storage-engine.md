@@ -58,7 +58,11 @@ WT는 공유 캐시를 위해서 새로운 디스크 데이터 페이지를 읽�
 
 공유 캐시의 적절한 빈 공간 유지를 위해 Eviction 쓰레드가 백그라운로 돌아갑니다. 
 
-기본적으로는 현재 공유 캐시에서 페이지 중 자주 사용되지 않은 페이지를 제거하며, B-Tree
+기본적으로는 현재 공유 캐시에서 페이지 중 자주 사용되지 않은 페이지를 제거합니다. 이 과정에서 공유 캐시스캔을 상당히 많이 수행하게 됩니다. 
+
+그런데 SSD와 같이 매우 빠르게 읽기/쓰기 작업이 가능한 저장 매체가 출시되면서, 
+
+
 
 
 
@@ -94,7 +98,7 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzODIzNDk1NSwtMjQ3NzMwNDY0LC01ND
+eyJoaXN0b3J5IjpbMTM2NDQxMDc4NiwtMjQ3NzMwNDY0LC01ND
 IwMjg4OTMsODgzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMzQ5NjYx
 MTgsLTE1OTUxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMzczMD
 QsLTE0Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcwMjUw
