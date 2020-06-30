@@ -48,7 +48,9 @@ WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 10
 
 RDBMS에서 레코드를 별도의 공간(언두 로그)에 저장하는 이유는 트랜잭션이 롤백 될때 기존 데이터를 복구하기 위함인데, 보통 언두 로그를 잠금 없는 데이터 읽기 용도로도 같이 사용합니다.
 
-WT에서는 스킵리스트가 언두로그의 역할을 하게 됩니다. 스킵리스트에는 변경된 데이터 페이지들의 추가되는 구조 입니다. 
+WT에서는 스킵리스트가 언두로그의 역할을 하게 됩니다. 스킵리스트에는 변경된 데이터 페이지들이 추가되는 구조 입니다. 검색 쿼리가 들어오면, 변경 이력이 저장된 스킵 리스트에서 검색해 
+
+
 
 
 
@@ -94,7 +96,7 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMjM5NzIyOCwtMjQ3NzMwNDY0LC01ND
+eyJoaXN0b3J5IjpbLTU4MTY1NjgzOCwtMjQ3NzMwNDY0LC01ND
 IwMjg4OTMsODgzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMzQ5NjYx
 MTgsLTE1OTUxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYwMzczMD
 QsLTE0Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLDcwMjUw
