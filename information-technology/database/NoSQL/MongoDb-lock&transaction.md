@@ -204,9 +204,7 @@ Write Concern 을 설정하게 되면, **Primary 가 데이터 쓰기를 처리�
 
 Write Concern 을 지정하는데는 크게 w / j / wtimeout options를 설정 할 수 있습니다.
 
-The `w` option requests acknowledgment that the write operation has propagated to a specified number of [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod") instances or to [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod "bin.mongod") instances with specified tags.
-
-w option은 쿼리의 쓰기 연산이 전파 되어 특정 수 만큼의 mongod 객체로 ACKNOLEDGMENT 
+w option은 쿼리의 쓰기 연산이 전파 되어 특정 수 만큼의 mongod 객체로 ACKNOLEDGMENT 수준까지 전파되었는지 확인합니다. 
 
 
 : 
@@ -357,9 +355,9 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE2MjY5MzI5LC0zNjQ4NjQ0NTIsMTMzOT
-AyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2
-MjI4MzUxOTgsLTY5MTI2Mzc5NiwxNzczMTkxOTY5LC01ODA4OD
-k4MjUsNzMyNzExNTI4LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4
-NjQ5MzY2OTMsLTY5NDUzOTMxOSwxNTIyOTYxMTE2XX0=
+eyJoaXN0b3J5IjpbLTU1NTU3MTYwNywtMzY0ODY0NDUyLDEzMz
+kwMjgyNyw5NjMyNzY5NjEsMjQ1MDY5NjAsLTIxMTcxODUzNjQs
+NjIyODM1MTk4LC02OTEyNjM3OTYsMTc3MzE5MTk2OSwtNTgwOD
+g5ODI1LDczMjcxMTUyOCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwx
+ODY0OTM2NjkzLC02OTQ1MzkzMTksMTUyMjk2MTExNl19
 -->
