@@ -42,6 +42,8 @@ WT 스토리지 엔진에서 사용자의 모든 쿼리는 공유 캐시를 거�
 
 하자드 포인터는 수정 또는 삭제 되면 위험한 객체 포인터를 말합니다. 
 
+![Hazard Pointer - Kongfy's Blog](https://lh3.googleusercontent.com/proxy/gi-JI1j920uqkPnx3oI6y75J8t3wNzPGzBtroYfXtwBRh9JFGZFvPs0nVegKPdCfV_54M8rvmorIBIAlNBZmLfFQUfIdUFkl7ZYqLPrww-A)
+
 사용자 쓰레드는 쿼리를 처리하기 위해 공유 캐시를 참조하는 쓰레드입니다. 쿼리가 들어오면, 사용자 쓰레드는 사용하려는 데이터 페이지를 자신의 하자드 포인터 리스트에 등록합니다. 필요한 작업을 수행하고 하자드 포인터 리스트에서 사용이 끝난 데이터 페이지를 제거합니다. 
 
 이빅션 쓰레드(Eviction Thread)는 자주 사용되지 않는 데이터 페이지를 제거하여 캐시의 여유 공간을 만들어 주는 쓰레드 입니다. 이때 무조건 제거를 하는 것이 아니라 사용자 쓰레드의 하자드 포인터 리스트에 등록되어 있지 않은 데이터 페이지만을 제거합니다. 반대로 등록되어 있으면 해당 페이지는 건너뛰게 됩니다. 왜냐하면 하자드 포인터 리스트에 데이터 페이지가 있다는 이야기는 해당 데이터 페이지가 수정 또는 삭제되면 않된다는 것을 의미하기 때문입니다.
@@ -94,11 +96,11 @@ WT는 샤프 체크포인트방식을 사용하고 있는데, 샤프 체크 포�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzQ0NzYzOSwtODIyMTMxODc2LC0xMT
-E3MTcxMDM0LC02ODE2NzY3NDIsMjA3NjI4MTIyOSwxODg5NTI2
-Mzg3LC00MDk1MzQ3MjMsMTA1NzAyNTEwMiwtMzIwNTc1NTI0LC
-0yNDc3MzA0NjQsLTU0MjAyODg5Myw4ODMzNDgzNjYsLTE5NzA4
-NTkyNDcsLTEzNDk2NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5OD
-MwMSwtMTgzNjAzNzMwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3
-NjY4OTM1NzBdfQ==
+eyJoaXN0b3J5IjpbMzI3ODQ4MTIsMTcyNzQ0NzYzOSwtODIyMT
+MxODc2LC0xMTE3MTcxMDM0LC02ODE2NzY3NDIsMjA3NjI4MTIy
+OSwxODg5NTI2Mzg3LC00MDk1MzQ3MjMsMTA1NzAyNTEwMiwtMz
+IwNTc1NTI0LC0yNDc3MzA0NjQsLTU0MjAyODg5Myw4ODMzNDgz
+NjYsLTE5NzA4NTkyNDcsLTEzNDk2NjExOCwtMTU5NTE2NTc4OC
+wtMTA0MDE5ODMwMSwtMTgzNjAzNzMwNCwtMTQ3ODQ5OTYxLC0z
+Nzg3MTMzN119
 -->
