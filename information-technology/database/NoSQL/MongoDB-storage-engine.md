@@ -42,11 +42,13 @@ WT 스토리지 엔진에서 사용자의 모든 쿼리는 공유 캐시를 거�
 
 WT에서 기본적으로 사용가능한 하자드 포인터 갯수는 최대 1000개 입니다. 하자드 포인터의 개수가 부족해서 처리량이 느려진다면 옵션을 변경하여 늘릴 수 있습니다.
 
-#### 스킵 리스트(Skip-List;)
+#### [스킵 리스트(Skip-List)](https://brilliant.org/wiki/skip-lists/#:~:text=The%20skip%20list%20is%20a,elements,%20but%20no%20new%20elements.)
 
 일반적인 단순 링크드 리스트의 검색 성능은 $O(n)$인 반면, 스킵 리스트의 평균 검색 성능은 B-Tree와 같은 $O(log n)$입니다. 
 
-WT에서 스킵리스트를 사용하면  **새로운 노드를 추가하기 위해서 별도의 잠금을 필요로 하지 않으며, 검색 또한 별도의 잠금을 필요로 하지 않는다.** 스킵 리스트의 노드 삭제는 잠금을 필요로 하지만, B-Tree 자료 구조보단 잠금을 덜 필요로 하므로 큰 성능 이슈는 아니다. 그래서 여러 쓰레드가 동시에 하나의 스킵 리스트에 노드를 저장하거나 검색을 한다고 하도 서로 전혀 큰 잠금 경합을 하지 않는다.
+n a skip list, if you have to insert a new node, only the adjacent nodes will be affected, so you can still access large part of your data while this is happening.
+
+스킵리스트를 사용하면  **새로운 노드를 추가하기 위해서 별도의 잠금을 필요로 하지 않으며, 검색 또한 별도의 잠금을 필요로 하지 않는다.** 스킵 리스트의 노드 삭제는 잠금을 필요로 하지만, B-Tree 자료 구조보단 잠금을 덜 필요로 하므로 큰 성능 이슈는 아니다. 그래서 여러 쓰레드가 동시에 하나의 스킵 리스트에 노드를 저장하거나 검색을 한다고 하도 서로 전혀 큰 잠금 경합을 하지 않는다.
 
 RDBMS에서 레코드를 별도의 공간(언두 로그)에 저장하는 이유는 트랜잭션이 롤백 될때 기존 데이터를 복구하기 위함인데, 많은 RDBMS에서는 언두 로그를 잠금 없는 데이터 읽기 용도로 같이 사용한다. WT 스토리지 엔진에서는 **언두로그를 스킵 리스트**로 관리하는데, 조금 독특하게 데이터 페이지의 레코드를 직접 변경하지 않고 변경 이후 데이터를 스킵 리스트에 추가한다. 
 
@@ -92,11 +94,11 @@ Block Management(Eviction; 퇴거, reconciliation; 친해지기)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTI2NTIyNTUsLTE5NzA4NTkyNDcsLT
-EzNDk2NjExOCwtMTU5NTE2NTc4OCwtMTA0MDE5ODMwMSwtMTgz
-NjAzNzMwNCwtMTQ3ODQ5OTYxLC0zNzg3MTMzNyw3NjY4OTM1Nz
-AsNzAyNTAzNzUwLDEyMTA3NTU5NTgsLTEyOTUzMzI3MzcsLTIx
-NDA3ODY3MzIsLTYwOTcxMjEyMSwtMTk5NjQxMDk0NCw4MDg0MT
-I2NDQsLTE1NTI1Mjc5MDAsLTg4MjAwMzkyLC0xNTMxOTk4OTYs
-MTg0ODQxNDIyMF19
+eyJoaXN0b3J5IjpbODgzMzQ4MzY2LC0xOTcwODU5MjQ3LC0xMz
+Q5NjYxMTgsLTE1OTUxNjU3ODgsLTEwNDAxOTgzMDEsLTE4MzYw
+MzczMDQsLTE0Nzg0OTk2MSwtMzc4NzEzMzcsNzY2ODkzNTcwLD
+cwMjUwMzc1MCwxMjEwNzU1OTU4LC0xMjk1MzMyNzM3LC0yMTQw
+Nzg2NzMyLC02MDk3MTIxMjEsLTE5OTY0MTA5NDQsODA4NDEyNj
+Q0LC0xNTUyNTI3OTAwLC04ODIwMDM5MiwtMTUzMTk5ODk2LDE4
+NDg0MTQyMjBdfQ==
 -->
