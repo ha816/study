@@ -3,14 +3,14 @@
 멀티 트랜잭션 환경에서 데이터베이스의  **일관성(Consistency)** 과  **무결성(Integrity)** 을 유지하려면  **트랜잭션의 순차적 진행을 보장할 수 있는 직렬화 장치**가 필요합니다. 그러한 직렬화 장치가 바로 Lock 입니다.
 
 Exclusive lock (배타적 잠금)
-: 쓰기 잠금(Write lock)이라고도 불린다. 왜냐하면 어떤 트랜잭션에서 데이터를 변경하고자 할 때, 쓰이는 잠금이라 그렇다. 배타적 잠금이 걸리면, 트랜잭션이 완료될 때까지 해당 테이블 혹은 레코드(row)를 다른 트랜잭션에서 읽거나 쓰지 못하게 된다. exclusive lock이 특정 데이터에 걸리면 shared lock을 걸 수 없고 exclusive lock도 걸수 없습니다.
+: 쓰기 잠금(Write lock)이라고도 불립니다. 왜냐하면 어떤 트랜잭션에서 데이터를 변경하고자 할 때, 쓰이는 잠금이라 그렇습니다. 배타적 잠금이 걸리면, 트랜잭션이 완료될 때까지 해당 테이블 혹은 레코드(row)를 다른 트랜잭션에서 읽거나 쓰지 못하게 됩니다. exclusive lock이 특정 데이터에 걸리면 shared lock을 걸 수 없고 exclusive lock도 걸수 없습니다.
 
 Shared lock (공유 잠금)
-: 배타적 잠금과는 다르게 다수의 트랜잭션간의 공유가 가능한 락이다. 쓰기가 아닌 읽기에만 국한되어 있다. 즉 리소스를 다른 사용자가 동시에 읽을 수 있게 하되 변경은 불가하게 하는 것이다. 동일한 데이터에 대해서 shared lock 동시 적용이 가능하다. 
+: 배타적 잠금과는 다르게 다수의 트랜잭션간의 공유가 가능한 락입니다. 쓰기가 아닌 읽기에만 국한되어 있습니다. 즉 리소스를 다른 사용자가 동시에 읽을 수 있게 하되 변경은 불가하게 하는 것이다. 동일한 데이터에 대해서 shared lock 동시 적용이 가능하다. 
 
-## MongoDB 엔진의 잠금
+## MongoDB Lock
 
-MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금으로 나누어 집니다. 또 명시적 잠금은 글로벌 잠금뿐이며 나머지 모든 잠금은 묵시적 잠금이다.  데이터베이스 그리고 컬렉션에 대한 잠금은 모두 묵시적인 잠금이며, 쿼리 실행시 자동적으로 획득됐다가 자동으로 해제되는 잠금이다. 
+MongoDB에서 제공하는 잠금은 크게 명시적 잠금과 묵시적 잠금으로 나누어 집니다. 명시적 잠금에는 글로벌 잠금뿐이며 나머지 모든 잠금은 묵시적 잠금이다.  데이터베이스 그리고 컬렉션에 대한 잠금은 모두 묵시적인 잠금이며, 쿼리 실행시 자동적으로 획득됐다가 자동으로 해제되는 잠금이다. 
 
 ### 글로벌 잠금(인스턴스 잠금)
 
@@ -351,7 +351,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3ODk1NDU1MywxMTg2NTIxOTQ4LC0xMj
+eyJoaXN0b3J5IjpbMTczOTkxMTkzMywxMTg2NTIxOTQ4LC0xMj
 k5NzcyNDg4LDQxODg2OTk3MiwyMTI2OTI2NDg5LDc3NDYwMTk0
 MywtMTYzNDg5NjQ0MSwtNTU1NTcxNjA3LC0zNjQ4NjQ0NTIsMT
 MzOTAyODI3LDk2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2
