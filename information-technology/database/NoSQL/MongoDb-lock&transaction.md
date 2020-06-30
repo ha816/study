@@ -140,7 +140,7 @@ MongoDB 서버는 처음부터 단일 다큐먼트의 트랜잭션만 지원하�
 
 # 격리 수준
 
-MongoDB에는 MMAPv1에서 사용가능한 READ-COMMITED과 WiredTiget에서 사용가능한 SNAPSHOT(RPEATABLE-READ) 격리 수주
+MongoDB에는 MMAPv1에서 사용가능한 READ-COMMITED과 WiredTiget에서 사용가능한 SNAPSHOT(RPEATABLE-READ) 격리 수준이 있습니다.
 
 >READ-COMMITED
 >다른 세션의 변경 내용이 커밋되어야 다른 세션에서도 영향을 미친다. 
@@ -149,6 +149,9 @@ MongoDB에는 MMAPv1에서 사용가능한 READ-COMMITED과 WiredTiget에서 사
 >하나의 트랜잭션에서는 반복된 읽기를 해도 항상 같은 결과가 나온다.
 
 ## MongoDB 서버의 격리 수준
+
+
+WT
 
 
 
@@ -325,8 +328,8 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTYxNDk0NjcsNjIyODM1MTk4LC02OT
-EyNjM3OTYsMTc3MzE5MTk2OSwtNTgwODg5ODI1LDczMjcxMTUy
-OCwtOTYxMzY1MzYsMTE1NzQ4Njg0OCwxODY0OTM2NjkzLC02OT
-Q1MzkzMTksMTUyMjk2MTExNl19
+eyJoaXN0b3J5IjpbMTMwNTQ3MTUxNyw2MjI4MzUxOTgsLTY5MT
+I2Mzc5NiwxNzczMTkxOTY5LC01ODA4ODk4MjUsNzMyNzExNTI4
+LC05NjEzNjUzNiwxMTU3NDg2ODQ4LDE4NjQ5MzY2OTMsLTY5ND
+UzOTMxOSwxNTIyOTYxMTE2XX0=
 -->
