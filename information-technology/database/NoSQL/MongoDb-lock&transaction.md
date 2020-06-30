@@ -72,9 +72,8 @@ WirtedTiger는 다른 DBMS처럼 레코드(문서) 기반의 잠금을 사용합
 
 MongoDB Instance > DB > Collection > Document
 
-특정 문서를 변경하려면 EX락을 획득해야 하는데, 먼저 글로벌 인텐션 잠금, 데이터베이스 인텐션 잠금 그리고 컬렉션 인텐션 잠금을 가져야 한다 
 
-특정 문서를 읽으려면 동일하게 글로벌 인텐션 잠금, 데이터베이스 인텐션 잠금 그리고 컬렉션 인텐션 잠금을 얻어야 한다. 그런데 다큐먼트를 읽기만 하는 경우는 WiredTiger 스토리지 엔진에서는 별도의 잠금을 이용하지 않는다. 
+WT의 특성으로 문서를 읽기만 하는 경우는 별도의 잠금을 이용하지 않습니다.
 
 이는 MongoDB의 MVCC 때문에 가능하다. WiredTiger 스토리지 엔진에서는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가한다. 즉 변경되는 내역을 모두 관리하는데, 따라서 읽기 명령시 현재 트랜잭션이 읽어야할 문서 버전을 찾아 읽기만 하면된다. MVCC를 이용해서 잠금 없이 문서를 읽는다고 하여 이를 잠금없는 일관된 읽기(Consistent non-locking read)라고도 한다. 
 
@@ -345,11 +344,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMTYwMDM1MCwtMjE3MzM0NzM0LDEzNj
-YzNzQ2MTMsLTEyMjA5NDI5OTIsOTkzMTQ3ODIyLC05NDE0MDA5
-MjYsMTExODI2MTIzMCwxMTg2NTIxOTQ4LC0xMjk5NzcyNDg4LD
-QxODg2OTk3MiwyMTI2OTI2NDg5LDc3NDYwMTk0MywtMTYzNDg5
-NjQ0MSwtNTU1NTcxNjA3LC0zNjQ4NjQ0NTIsMTMzOTAyODI3LD
-k2MzI3Njk2MSwyNDUwNjk2MCwtMjExNzE4NTM2NCw2MjI4MzUx
-OThdfQ==
+eyJoaXN0b3J5IjpbODE5NjkxMDQ4LC0yMTczMzQ3MzQsMTM2Nj
+M3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQwMDky
+NiwxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3NzI0ODgsND
+E4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0ODk2
+NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMzM5MDI4MjcsOT
+YzMjc2OTYxLDI0NTA2OTYwLC0yMTE3MTg1MzY0LDYyMjgzNTE5
+OF19
 -->
