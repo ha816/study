@@ -69,7 +69,7 @@ session-2: db.orders.find({user_id:2}})
 
 스토리지 엔진이라고 했지만, 주로 WiredTiger 스토리지 엔진에 대한 설명입니다.
 
-WirtedTiger는 다른 DBMS처럼 레코드() 기반의 잠금을 사용한다. 하지만 다양한 레벨의 DB 오브젝트에 대한 잠금을 위해 다중 레벨의 잠금 방식도 같이 사용한다. (Multiple Granularity Locking) 
+WirtedTiger는 다른 DBMS처럼 레코드(문서) 기반의 잠금을 사용합니다. 물론, 다양한 레벨의 오브젝트에 대한 잠금을 위해 다중 레벨의 잠금 방식도 같이 사용합니다. (Multiple Granularity Locking) 
 
 MongoDB의 각 DB 오브젝트는 계층 구조를 가지는데, 각 계층 구조에서 하위 오브 젝트에 대한 잠금을 획득하려면, 상위 계층의 인텐션 잠금을 먼저 획득해야 한다. 
 
@@ -348,11 +348,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU0ODY2NTc0LDEzNjYzNzQ2MTMsLTEyMj
-A5NDI5OTIsOTkzMTQ3ODIyLC05NDE0MDA5MjYsMTExODI2MTIz
-MCwxMTg2NTIxOTQ4LC0xMjk5NzcyNDg4LDQxODg2OTk3MiwyMT
-I2OTI2NDg5LDc3NDYwMTk0MywtMTYzNDg5NjQ0MSwtNTU1NTcx
-NjA3LC0zNjQ4NjQ0NTIsMTMzOTAyODI3LDk2MzI3Njk2MSwyND
-UwNjk2MCwtMjExNzE4NTM2NCw2MjI4MzUxOTgsLTY5MTI2Mzc5
-Nl19
+eyJoaXN0b3J5IjpbLTIxNzMzNDczNCwxMzY2Mzc0NjEzLC0xMj
+IwOTQyOTkyLDk5MzE0NzgyMiwtOTQxNDAwOTI2LDExMTgyNjEy
+MzAsMTE4NjUyMTk0OCwtMTI5OTc3MjQ4OCw0MTg4Njk5NzIsMj
+EyNjkyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1NTU3
+MTYwNywtMzY0ODY0NDUyLDEzMzkwMjgyNyw5NjMyNzY5NjEsMj
+Q1MDY5NjAsLTIxMTcxODUzNjQsNjIyODM1MTk4LC02OTEyNjM3
+OTZdfQ==
 -->
