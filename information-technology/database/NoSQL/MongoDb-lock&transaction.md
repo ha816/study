@@ -103,17 +103,13 @@ MongoDB는 복수-문서에 대한 트랜잭션을 지원합니다. 하지만 �
 
 WT에서 모든 쿼리는 공유캐시를 거쳐 처리되기 때문에 한 트랜잭션이 변경할 수 있는 데이터의 크기는 공유캐시의 크기로 제한됩니다.
 
-
 ## 쓰기 충돌(Write Conflict)
 
-데이터를 변경하는 작업 도중에 MongoDB 서버는 쓰기 충돌이 발생할 수 있습니다. MongoDB 서버는 변경하고자 하는 문서가 이미 다른 커넥션에 의해서 잠금이 걸려 있으면 즉시 업데이트 실행을 취소합니다. 그리곤 WriteConflict Exception에러을 반환 받아, 같은 업데이트 문장을 재실행한다. 이런 재처리 과정은 MongDB내에서만 작동하며 재처리 과정을 응용 프로그램에서는 모른다. 
+데이터를 변경하는 작업 도중에 MongoDB 서버는 쓰기 충돌이 발생할 수 있습니다. MongoDB 서버는 변경하고자 하는 문서가 이미 다른 커넥션에 의해서 잠금이 걸려 있으면 즉시 업데이트 실행을 취소합니다. 그리곤 WriteConflict Exception 에러을 반환 받아, 같은 업데이트 문장을 재실행합니다. 이런 재처리 과정은 MongDB내에서만 작동하며 재처리 과정을 응용 프로그램에서는 모릅니다.
 
-이렇게 하나의 다큐먼트에 대해서 변경이 집중되면 순강적으로 재처리 과정이 반복 실행되면서 서버 성능이 떨어질수 있다. 
+이렇게 하나의 다큐먼트에 대해서 변경이 집중되면 순가적으로 재처리 과정이 반복 실행되면서 서버 성능이 떨어질수 있다. 
 
 MongoDB 서버에서 WriteConflict Exception이 얼마나 발생했는지는 db.serverStatus() 명령으로 확인할 수 있다. 
-
->WirtedTiger의 경우
->WiredTiger  스토리지 엔진에서는 문서를 읽는 쿼리는 WriteConflict와 무관하다. 왜냐하면 MVCC를 통해 읽기 작업에 대한 락을 걸지 않기 때문이다. 
 
 # Isolation Level(격리 수준)
 
@@ -336,11 +332,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MTA3MjUzMCwtMTIzNzg2NjA1OCwtMT
-M5NDY0NTE5OCw3MTYwNzI0NjAsMjExMzU5NTYxOSwxODgzMDA2
-NzYsLTE1NDE1NTY2NjEsLTIxNzMzNDczNCwxMzY2Mzc0NjEzLC
-0xMjIwOTQyOTkyLDk5MzE0NzgyMiwtOTQxNDAwOTI2LDExMTgy
-NjEyMzAsMTE4NjUyMTk0OCwtMTI5OTc3MjQ4OCw0MTg4Njk5Nz
-IsMjEyNjkyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1
-NTU3MTYwN119
+eyJoaXN0b3J5IjpbOTAzNDczNjkwLC0xMjM3ODY2MDU4LC0xMz
+k0NjQ1MTk4LDcxNjA3MjQ2MCwyMTEzNTk1NjE5LDE4ODMwMDY3
+NiwtMTU0MTU1NjY2MSwtMjE3MzM0NzM0LDEzNjYzNzQ2MTMsLT
+EyMjA5NDI5OTIsOTkzMTQ3ODIyLC05NDE0MDA5MjYsMTExODI2
+MTIzMCwxMTg2NTIxOTQ4LC0xMjk5NzcyNDg4LDQxODg2OTk3Mi
+wyMTI2OTI2NDg5LDc3NDYwMTk0MywtMTYzNDg5NjQ0MSwtNTU1
+NTcxNjA3XX0=
 -->
