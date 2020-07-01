@@ -90,8 +90,9 @@ db.users.find({non_indexed_field:"value"})
 
 # 트랜잭션
 
-WT에서 제공하는 트랜잭션 ACID 속성은 아래와 같은 특징이 있습니다.
+MongoDB의 트랜잭션은 아래와 같은 성질이 있습니다.
 
+* 복수 문서 트랜잭션(Multi-Document Transactions) 지원
 * 최고 레벨 격리 수준은 Snapshot(Repetable-Read)
 * 트랜잭션의 커밋과 체크포인트 두 가지 형태로 영속성(Durability) 보장
 * 커밋되지 않은 변경 데이터는 공유 캐시 크기보다 작아야 함
@@ -337,7 +338,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDgzMzg1MiwtMTIzNzg2NjA1OCwtMT
+eyJoaXN0b3J5IjpbMjA3MzkxODE4MSwtMTIzNzg2NjA1OCwtMT
 M5NDY0NTE5OCw3MTYwNzI0NjAsMjExMzU5NTYxOSwxODgzMDA2
 NzYsLTE1NDE1NTY2NjEsLTIxNzMzNDczNCwxMzY2Mzc0NjEzLC
 0xMjIwOTQyOTkyLDk5MzE0NzgyMiwtOTQxNDAwOTI2LDExMTgy
