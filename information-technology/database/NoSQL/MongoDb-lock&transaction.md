@@ -1,6 +1,6 @@
 # Concurrency VS Consistency
 
-동시성 제어란  DBMS가 다수의 사용자 사이에서 동시에 작용하는 다중 트랜잭션의 상호간섭 작용에서 DB의 일관성과 동시성을 적절히 조절하는 것을 말합니다. 일반적으로 동시성을 허용하면 일관성이 낮아지게 됩니다.
+동시성 제어(Concurrency Control)란 DBMS가 다중 트랜잭션간 상호작용에서 일관성과 동시성을 적절히 조절하는 것을 말합니다. 일반적으로 동시성을 허용하면 일관성이 낮아지게 됩니다.
 
 ![](https://k.kakaocdn.net/dn/YYwAw/btqAhqpozl2/IMdpfbgguBj897K4VkEwy1/img.png)
 
@@ -245,7 +245,7 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 하지만 결과를 반환하기 전에 모든 레플리카 셋에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY1MjIxODE2LDE2NTc2NDQxMjYsMTc3NT
+eyJoaXN0b3J5IjpbNDEyNzcyNzMyLDE2NTc2NDQxMjYsMTc3NT
 A5ODA2MSw5MDM0NzM2OTAsLTEyMzc4NjYwNTgsLTEzOTQ2NDUx
 OTgsNzE2MDcyNDYwLDIxMTM1OTU2MTksMTg4MzAwNjc2LC0xNT
 QxNTU2NjYxLC0yMTczMzQ3MzQsMTM2NjM3NDYxMywtMTIyMDk0
