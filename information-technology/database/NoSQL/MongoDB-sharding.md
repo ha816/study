@@ -8,8 +8,11 @@
 
 다음은 라우터 서버로 쿼리를 요청했을때 진행되는 과정을 나타낸다. 
 
+1. 사용자 쿼리가 참조하는 컬렉션의 청크 메타 정보를 컨피그 서버로부터 가져와 라우터 메모리에 캐시
+2. 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQ2MjU0NSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNjk3MTczNzg2LDczMDk5ODExNl19
 -->
