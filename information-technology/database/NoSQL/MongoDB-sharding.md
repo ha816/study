@@ -40,13 +40,14 @@
 	* 이런 충돌을 피하려면 Locks컬렉션의 잠금을 획득해야 합니다.
 * changelog
 	* 컨피그 서버의 메타 정보 변경을 유발한 이벤트에 대한 정보를 저장합니다. 
-	* 청크
+	* 청크 스플릿이나 마이그레이션 같은 작업은 전체 샤드 성능에 큰 저하를 가져올 수 있습니다. 이런 경우 changelog로 청크의 변화를 시간대 별로 확인 가능합니다. 
+
  
  이 컬렉션들은 모두 컨피그 서버에만 저장됩니다. 
  이 메타 데이터는 샤드 클러스터를 유지하기 위한 내부 관리 목적의 데이터 이므로 사용자가 직접 변경하거나 삭제해서는 안된다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NzI4NDU5MywtMjEyMTM2OTQ2MSwyMD
-EyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEwNDQ2MjM0NDMsLTIxMjEzNjk0NjEsMj
+AxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
 -->
