@@ -10,12 +10,14 @@
 
 1. 사용자 쿼리가 참조하는 컬렉션의 청크 메타 정보를 컨피그 서버로부터 가져와 라우터 메모리에 캐시
 2. 사용자의 쿼리 조건에서 샤딩키를 찾음
-	3. 쿼리 조건에 샤당 키가 있으면 해당 샤딩키를 가지는 모든 청크 정보를 라우터 캐시에서 검색하여 청크를 가지는 모든 샤드로 사용자 쿼리를 요청
-3. 퉈
+	3. 쿼리 조건에 샤당 키가 있으면 해당 샤딩키를 가지는 모든 청크 정보를 라 우터 캐시에서 검색하여 청크를 가지는 모든 샤드로 사용자 쿼리를 요청
+	4. 쿼리 존에 샤딩 키가 없다면 모든 샤드 서버로 사용자 쿼리 요청
+3. 쿼리를 전송한 대상 샤드서버
+
 	
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE2NTAwNTc5LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbODMyMzgwODkwLDczMDk5ODExNl19
 -->
