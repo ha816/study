@@ -26,8 +26,8 @@
 * chunks
 	* 샤딩된 컬렉션의 모든 청크 정보, 샤딩되지 않은 컬렉션의 청크 정보는 제외
 * shards
-	* 
 * mongos
+	* 각 라우터는 30초 단위로 샤드 
 * settings
 * version
 * lockpings
@@ -39,6 +39,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNDIxNjYxMywtMjEyMTM2OTQ2MSwyMD
+eyJoaXN0b3J5IjpbLTkyMjE5MTIxNywtMjEyMTM2OTQ2MSwyMD
 EyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
