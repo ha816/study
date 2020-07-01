@@ -72,9 +72,7 @@ WirtedTiger는 다른 DBMS처럼 레코드(문서) 기반의 잠금을 사용합
 
 WT의 특성으로 읽기의 경우는 별도의 잠금을 이용하지 않습니다. 이를 잠금없는 일관된 읽기(Non-Locking Consistent Read)라고 하는데 MVCC을 구현함으로써 가능해집니다.
 
-WT는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가합니다. 즉 변경되는 내역을 모두 관리하는데, 읽기 명령시 현재 트랜잭션에서 읽어야할 문서 버전을 찾아 읽습니다. 즉 특정 문서가 변경되기 전에 버전을 읽는 것이므로 별도의 잠금이 필요로 하지 않는것이다. 
-
-
+WT는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가합니다. 즉 변경되는 문서 내역을 모두 관리하는데, 읽기 명령시 현재 트랜잭션에서 읽어야할 문서 버전을 찾아 읽습니다. 현재 트랜잭션에서 마땅히 읽어야 버전의 문서를 
 
 ## 잠금 Yield
 
@@ -341,11 +339,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE2MDcyNDYwLDIxMTM1OTU2MTksMTg4Mz
-AwNjc2LC0xNTQxNTU2NjYxLC0yMTczMzQ3MzQsMTM2NjM3NDYx
-MywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQwMDkyNiwxMT
-E4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3NzI0ODgsNDE4ODY5
-OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0ODk2NDQxLC
-01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMzM5MDI4MjcsOTYzMjc2
-OTYxXX0=
+eyJoaXN0b3J5IjpbLTIxMTU0NDY1MjIsNzE2MDcyNDYwLDIxMT
+M1OTU2MTksMTg4MzAwNjc2LC0xNTQxNTU2NjYxLC0yMTczMzQ3
+MzQsMTM2NjM3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLT
+k0MTQwMDkyNiwxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3
+NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC
+0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMzM5
+MDI4MjddfQ==
 -->
