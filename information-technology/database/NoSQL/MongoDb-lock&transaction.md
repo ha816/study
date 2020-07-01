@@ -244,11 +244,6 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 원하는 동시성 제어를 위해선 Read Concern과 Write Concern을 사용할 수 있습니다. 
 
-
-
-
-## Isolation
-
 ### Read Uncommitted
 
 클라이언트는 쓰기 작업의 결과를 read concern에 따라 볼 수 있습니다.
@@ -332,11 +327,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAzNDczNjkwLC0xMjM3ODY2MDU4LC0xMz
-k0NjQ1MTk4LDcxNjA3MjQ2MCwyMTEzNTk1NjE5LDE4ODMwMDY3
-NiwtMTU0MTU1NjY2MSwtMjE3MzM0NzM0LDEzNjYzNzQ2MTMsLT
-EyMjA5NDI5OTIsOTkzMTQ3ODIyLC05NDE0MDA5MjYsMTExODI2
-MTIzMCwxMTg2NTIxOTQ4LC0xMjk5NzcyNDg4LDQxODg2OTk3Mi
-wyMTI2OTI2NDg5LDc3NDYwMTk0MywtMTYzNDg5NjQ0MSwtNTU1
-NTcxNjA3XX0=
+eyJoaXN0b3J5IjpbMTg3Mzg3ODAzNCw5MDM0NzM2OTAsLTEyMz
+c4NjYwNTgsLTEzOTQ2NDUxOTgsNzE2MDcyNDYwLDIxMTM1OTU2
+MTksMTg4MzAwNjc2LC0xNTQxNTU2NjYxLC0yMTczMzQ3MzQsMT
+M2NjM3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQw
+MDkyNiwxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3NzI0OD
+gsNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0
+ODk2NDQxXX0=
 -->
