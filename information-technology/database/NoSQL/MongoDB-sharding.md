@@ -36,14 +36,17 @@
 * lockpings
 	* 컨피그 서버와의 연결 확인시, 어떤 멤버가 언제 연결 상태가 어땟는지 기록합니다.
 * locks
-	* 사드 클러스터에 많은 멤버들이 서로 작업을 동기화하면서 처리하는 과정에 같은 작업을 동시에 시작하면 충돌이 발생할 수 있습니다. 이를 위한 동기화 관리 컬렉션 입니다. 
+	* 사드 클러스터에 많은 멤버들이 서로 작업을 동기화하면서 처리하는 과정에 같은 작업을 동시에 시작하면 충돌이 발생할 수 있습니다. 
+	* 이런 충돌을 피하려면 Locks컬렉션의 잠금을 획득해야 합니다.
 * changelog
+	* 컨피그 서버의 메타 정보 변경을 유발한 이벤트에 대한 정보를 저장합니다. 
+	* 청크
  
  이 컬렉션들은 모두 컨피그 서버에만 저장됩니다. 
  이 메타 데이터는 샤드 클러스터를 유지하기 위한 내부 관리 목적의 데이터 이므로 사용자가 직접 변경하거나 삭제해서는 안된다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAwMjIxNTQ3LC0yMTIxMzY5NDYxLDIwMT
-I2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTU1NzI4NDU5MywtMjEyMTM2OTQ2MSwyMD
+EyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
