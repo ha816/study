@@ -30,8 +30,9 @@
 	* 각 라우터는 30초 단위로 샤드 클러스터의 모든 멤버와 핑 메세지를 주고 받습니다. mongos 컬렉션은 현재 컨피그 서버와 한번이라도 연결했던 모든 mongos 목록을 저장합니다.
 * settings
 	* 청크의 밸런싱 관련 작업 설정이 저장됩니다.
-	* 청크 사이즈, 
+	* 청크 사이즈, 청크 밸런싱 활성화 여부,  밸런싱 시작 시작, 병렬 청크 이동 여부등
 * version
+* 
 * lockpings
 * locks
 * changelog
@@ -41,6 +42,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NTM4MTY1OSwtMjEyMTM2OTQ2MSwyMD
-EyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNjIyNzk0MTIxLC0yMTIxMzY5NDYxLDIwMT
+I2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
 -->
