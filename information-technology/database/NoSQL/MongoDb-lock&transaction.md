@@ -6,6 +6,8 @@
 
 동시성 제어의 목표는 실행되는 트랜잭션 수를 최대화 하면서 동시에 입력, 수정, 삭제, 검색 시 데이터의 무결성을 유지하는데 있습니다. 
 
+일관성을 유지하기 위한 직렬화 장치인 Lock을 공부해보겠습니다. 
+
 # Lock
 
 멀티 트랜잭션 환경에서 데이터베이스의  **일관성(Consistency)** 과  **무결성(Integrity)** 을 유지하려면  **트랜잭션의 순차적 진행을 보장할 수 있는 직렬화 장치**가 필요합니다. 그러한 직렬화 장치가 바로 Lock 입니다.
@@ -242,11 +244,11 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 하지만 결과를 반환하기 전에 모든 레플리카 셋에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNTM1MDc0NSwxNjU3NjQ0MTI2LDE3Nz
-UwOTgwNjEsOTAzNDczNjkwLC0xMjM3ODY2MDU4LC0xMzk0NjQ1
-MTk4LDcxNjA3MjQ2MCwyMTEzNTk1NjE5LDE4ODMwMDY3NiwtMT
-U0MTU1NjY2MSwtMjE3MzM0NzM0LDEzNjYzNzQ2MTMsLTEyMjA5
-NDI5OTIsOTkzMTQ3ODIyLC05NDE0MDA5MjYsMTExODI2MTIzMC
-wxMTg2NTIxOTQ4LC0xMjk5NzcyNDg4LDQxODg2OTk3MiwyMTI2
-OTI2NDg5XX0=
+eyJoaXN0b3J5IjpbMjAwMTU3NjIxMywxNjA1MzUwNzQ1LDE2NT
+c2NDQxMjYsMTc3NTA5ODA2MSw5MDM0NzM2OTAsLTEyMzc4NjYw
+NTgsLTEzOTQ2NDUxOTgsNzE2MDcyNDYwLDIxMTM1OTU2MTksMT
+g4MzAwNjc2LC0xNTQxNTU2NjYxLC0yMTczMzQ3MzQsMTM2NjM3
+NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQwMDkyNi
+wxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3NzI0ODgsNDE4
+ODY5OTcyXX0=
 -->
