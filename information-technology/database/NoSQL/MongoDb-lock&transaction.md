@@ -92,19 +92,17 @@ db.users.find({non_indexed_field:"value"})
 
 MongoDB의 트랜잭션은 아래와 특성이 있습니다.
 
-* 복수 문서 트랜잭션(Multi-Document Transactions) 지원
+* 복수 문서 트랜잭션(Multi-Document Transactions) 지원( 기본적으로 단일 문서 트랜잭션
 * 최고 레벨 격리 수준은 Snapshot(Repetable-Read)
 * 트랜잭션의 커밋과 체크포인트 두 가지 형태로 영속성(Durability) 보장
 * 커밋되지 않은 변경 데이터는 공유 캐시 크기보다 작아야 함
 
 MongoDB는 복수-문서에 대한 트랜잭션을 지원합니다. 하지만 복수-문서 트랜잭션은 단일 트랜잭션보다 성능이 훨씬 안좋기 때문에 좋은 스키마 디자인으로 복수 문서 트랜잭션을 최대한 사용하지 않는게 좋다고 합니다.
 
-트랜잭션 로그(저널로그 또는 리두로그)뿐만 아니라 체크포인트로도 영속성이 보장됩니다. 즉 트랜잭션 로그가 없어도 마지막 체크 포인트 시점의 데이터를 복구 할 수 있습니다.
+트랜잭션 로그(저널로그 또는 리두로그)뿐만 아니라 체크포인트로도 영속성(Durability)이 보장됩니다. 즉 트랜잭션 로그가 없어도 마지막 체크 포인트 시점의 데이터를 복구 할 수 있습니다.
 
 WT에서 모든 쿼리는 공유캐시를 거쳐 처리되기 때문에 한 트랜잭션이 변경할 수 있는 데이터의 크기는 공유캐시의 크기로 제한됩니다.
 
->복수 문서 트랜잭션(Multi-Document Transactions)?
->다행이도 MongoDB는 복수 문서에 대한 트랜잭션을 지원한다고 합니다. ([Transactions]>복수 문서 트랜잭션은 단일보다 성능이 훨씬 안좋기 때문에 스키마 디자인 자체를 잘해서 복수 문서 트랜잭션을 최대한 사용하지 않는게 좋다고 합니다.
 
 ## 쓰기 충돌(Write Conflict)
 
@@ -340,7 +338,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTAzODUwNDIsLTEyMzc4NjYwNTgsLT
+eyJoaXN0b3J5IjpbLTE4Nzc5OTgzNzksLTEyMzc4NjYwNTgsLT
 EzOTQ2NDUxOTgsNzE2MDcyNDYwLDIxMTM1OTU2MTksMTg4MzAw
 Njc2LC0xNTQxNTU2NjYxLC0yMTczMzQ3MzQsMTM2NjM3NDYxMy
 wtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQwMDkyNiwxMTE4
