@@ -57,13 +57,13 @@
 * 리플리카 셋은 아비터를 가질 수 없습니다.
 * 리플리카 셋은 지연된 멤버를 가질 수 없습니다.
 
-
+클라이언트는 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MjUyNTA0NCwtMjEyMTM2OTQ2MSwyMD
-EyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNTg3ODAwNjMyLC0yMTIxMzY5NDYxLDIwMT
+I2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
 -->
