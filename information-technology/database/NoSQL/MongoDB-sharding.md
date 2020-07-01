@@ -22,6 +22,7 @@
 
 * databases
 * collections
+	* 샤드 클러스터에 존재하는 모든 컬렉션, 샤당되지 않은 컬렉션은 제외
 * chunks
 * shards
 * mongos
@@ -36,6 +37,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTc3NDkwMzIsMjAxMjYyMTE2Niw3ND
+eyJoaXN0b3J5IjpbLTIxMjEzNjk0NjEsMjAxMjYyMTE2Niw3ND
 c3MTkxNzgsNzMwOTk4MTE2XX0=
 -->
