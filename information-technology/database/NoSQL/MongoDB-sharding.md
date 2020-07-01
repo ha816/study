@@ -49,14 +49,21 @@
 
 컨피그 서버는 샤딩이 활성화된 유저의 데이터베이스와 컬렉션 정보 그리고 각 컬렉션의 청크 정보를 가지고 있습니다. 이 메타정보들은 일관성 유지를 위한 매우 중요한 정보이므로 반드시 단일 구성이 아닌 복제 서버를 갖추어야 합니다.
 
-리플리카 셋으로 구현된 컨피그 
-CSRS(Config Server as Replica Sets)
+리플리카 셋으로 구현된 컨피그 서버를 CSRS(Config Server as Replica Sets)라고 부릅니다. 
+
+이렇게 CSRS 서버를 구축하려면 아래 조건을 만족해야 합니다. 
+
+* 컨피그 서버는 WiredTiger 스토리지 엔진을 사용해야 합니다.
+* 리플리카 셋은 아비터를 가질 수 없습니다.
+* 리플리카 셋은 지연된 멤버를 가질 수 없습니다.
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDg1MjgsLTIxMjEzNjk0NjEsMjAxMj
-YyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTk5MjUyNTA0NCwtMjEyMTM2OTQ2MSwyMD
+EyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
