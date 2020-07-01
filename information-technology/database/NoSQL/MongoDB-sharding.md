@@ -2,11 +2,13 @@
 
 컨피그 서버는 샤드 클러스터에서 사용자가 생성한 데이터베이스와 컬렉션들의 목록을 관리한다. 하지만 모든 데이터베이스와 컬렉션 목록을 관리하는 것이 아니라, 샤딩이 활성화된 데이터베이스와 컬렉션 정보만을 관리한다. 
 
-샤딩이 되지 않은 객체들은 컨피그 서버가 아니ㄹ
+샤딩이 되지 않은 객체들은 컨피그 서버가 아니라 각 샤드 서버가 로컬로 관리한다. 그리고 이런 샤드를 프라이머리 샤드라고 한다.
+
+컨피각 컬렌션은 여러 사드 서버로 분산되기 위한 정
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzQxNTE5MDAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE2ODEyNDkyMTYsNzMwOTk4MTE2XX0=
 -->
