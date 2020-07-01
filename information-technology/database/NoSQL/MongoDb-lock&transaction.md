@@ -98,7 +98,7 @@ WT의 특성으로 읽기의 경우는 별도의 잠금을 이용하지 않습�
 
 WT는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가합니다. 즉 문서의 변경 버전을 기억해 둡니다. 때문에 다수의 트랜잭션에선 기억해둔 문서의 버전에서 알맞는 문서를 읽어가게 되고 읽기 잠금이 불필요하게 됩니다.
 
-# 트랜잭션
+# Transaction
 
 MongoDB의 트랜잭션은 아래와 특성이 있습니다.
 
@@ -121,7 +121,7 @@ WT에서 모든 쿼리는 공유캐시를 거쳐 처리되기 때문에 한 트�
 
 MongoDB 서버에서 WriteConflict Exception이 얼마나 발생했는지는 db.serverStatus() 명령으로 확인할 수 있다. 
 
-# Isolation Level(격리 수준)
+## Isolation Level(격리 수준)
 
 MongoDB에는 MMAPv1에서 사용가능한 READ-COMMITED과 WiredTiget에서 사용가능한 SNAPSHOT(RPEATABLE-READ) 격리 수준이 있습니다.
 
@@ -291,11 +291,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTA5ODA2MSw5MDM0NzM2OTAsLTEyMz
-c4NjYwNTgsLTEzOTQ2NDUxOTgsNzE2MDcyNDYwLDIxMTM1OTU2
-MTksMTg4MzAwNjc2LC0xNTQxNTU2NjYxLC0yMTczMzQ3MzQsMT
-M2NjM3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQw
-MDkyNiwxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3NzI0OD
-gsNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0
-ODk2NDQxXX0=
+eyJoaXN0b3J5IjpbLTk5Mzc3OTAxOSwxNzc1MDk4MDYxLDkwMz
+Q3MzY5MCwtMTIzNzg2NjA1OCwtMTM5NDY0NTE5OCw3MTYwNzI0
+NjAsMjExMzU5NTYxOSwxODgzMDA2NzYsLTE1NDE1NTY2NjEsLT
+IxNzMzNDczNCwxMzY2Mzc0NjEzLC0xMjIwOTQyOTkyLDk5MzE0
+NzgyMiwtOTQxNDAwOTI2LDExMTgyNjEyMzAsMTE4NjUyMTk0OC
+wtMTI5OTc3MjQ4OCw0MTg4Njk5NzIsMjEyNjkyNjQ4OSw3NzQ2
+MDE5NDNdfQ==
 -->
