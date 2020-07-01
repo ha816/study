@@ -96,8 +96,8 @@ WT에서 제공하는 트랜잭션 ACID 속성은 아래와 같은 특징이 있
 * 트랜잭션의 커밋과 체크포인트 두 가지 형태로 영속성(Durability) 보장
 * 커밋되지 않은 변경 데이터는 공유 캐시 크기보다 작아야 함
 
-WiredTiger는 Serializable 수준의 격리 수준은 제공하지 않는다. 
- 트랜잭션 로그(저널 로그 또는 리두 로그) 뿐만 아니라 체크포인트로도 영속성이 보장된다. 즉 트랜잭션 로그가 없어도 마지막 체크 포인트 시점의 데이터를 복구 할 수 있다.
+트랜잭션 로그(저널로그 또는 리두로그)뿐만 아니라 체크포인트로도 영속성이 보장됩니다. 즉 트랜잭션 로그가 없어도 마지막 체크 포인트 시점의 데이터를 복구 할 수 있습니다.
+
 트랜잭션이 커밋되기 전에는 트랜잭션 로그를 디스크로 기록하지 않는 다는 것이다. 따라서 
 트랜잭션이 변경할 수 있는 데이터의 크기는 WiredTiger 스토리지 엔진이 가진 공유캐시 크기로 제한된다. 
 
@@ -338,11 +338,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzg0ODcxMywtMTM5NDY0NTE5OCw3MT
-YwNzI0NjAsMjExMzU5NTYxOSwxODgzMDA2NzYsLTE1NDE1NTY2
-NjEsLTIxNzMzNDczNCwxMzY2Mzc0NjEzLC0xMjIwOTQyOTkyLD
-k5MzE0NzgyMiwtOTQxNDAwOTI2LDExMTgyNjEyMzAsMTE4NjUy
-MTk0OCwtMTI5OTc3MjQ4OCw0MTg4Njk5NzIsMjEyNjkyNjQ4OS
-w3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1NTU3MTYwNywtMzY0
-ODY0NDUyXX0=
+eyJoaXN0b3J5IjpbLTEyMzc4NjYwNTgsLTEzOTQ2NDUxOTgsNz
+E2MDcyNDYwLDIxMTM1OTU2MTksMTg4MzAwNjc2LC0xNTQxNTU2
+NjYxLC0yMTczMzQ3MzQsMTM2NjM3NDYxMywtMTIyMDk0Mjk5Mi
+w5OTMxNDc4MjIsLTk0MTQwMDkyNiwxMTE4MjYxMjMwLDExODY1
+MjE5NDgsLTEyOTk3NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0OD
+ksNzc0NjAxOTQzLC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2
+NDg2NDQ1Ml19
 -->
