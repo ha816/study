@@ -6,6 +6,8 @@
 
 동시성 제어의 목표는 동시에 실행되는 트랜잭션 수를 최대화 하면서 입력, 수정, 삭제, 검색 시 데이터의 무결성을 유지하는데 있습니다. 
 
+일관성을 유지하기 위한 직렬화 장치인 Lock을 공부해보겠습니다. 
+
 # Lock
 
 멀티 트랜잭션 환경에서 데이터베이스의  **일관성(Consistency)** 과  **무결성(Integrity)** 을 유지하려면  **트랜잭션의 순차적 진행을 보장할 수 있는 직렬화 장치**가 필요합니다. 그러한 직렬화 장치가 바로 Lock 입니다.
@@ -72,16 +74,6 @@ session-2: db.orders.find({user_id:2}})
 
 같은 orders 컬렉션을  조회만 하는 경우를 봅시다. orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S 잠금또한 필요합니다. 다행히 S 잠금간에는 호완이 가능하기 때문에 두 커넥션은 동시에 수행이 됩니다.
 
-# Storage Engine Lock
-
-스토리지 엔진이라고 했지만, 주로 WiredTiger 스토리지 엔진에 대한 설명입니다.
-
-WirtedTiger는 다른 DBMS처럼 레코드(문서) 기반의 잠금을 사용합니다. 물론, 다양한 레벨의 오브젝트에 대한 잠금을 위해 다중 레벨의 잠금 방식도 같이 사용합니다. (Multiple Granularity Locking) 
-
-WT의 특성으로 읽기의 경우는 별도의 잠금을 이용하지 않습니다. 이를 잠금없는 일관된 읽기(Non-Locking Consistent Read)라고 하는데 MVCC을 구현함으로써 가능해집니다.
-
-WT는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가합니다. 즉 문서의 변경 버전을 기억해 둡니다. 때문에 다수의 트랜잭션에선 기억해둔 문서의 버전에서 알맞는 문서를 읽어가게 되고 읽기 잠금이 불필요하게 됩니다.
-
 ## Lock Yield(잠금 양보)
 
 쿼리를 실행하는 도중에 잠시 쉬었다가 쿼리 실행을 재개하는 것을 MongoDB에선 양보(Yield)라고 합니다. 단순히 쿼리를 멈추고 잠깐 쉬는(Sleep) 것이 아니라, 처리 중인 쿼리를 위해서 획득했던 잠금까지 모두 해제하고 일정시간 쉬게 됩니다.
@@ -95,6 +87,16 @@ db.users.find({non_indexed_field:"value"})
 * 쿼리가 지정된 시간동안 수행된 경우(10ms)
 
 특정 쿼리의 잠금 판단을 위해선 db.currentOp() 명령어로 알 수 있습니다.
+
+## Storage Engine Lock
+
+스토리지 엔진이라고 했지만, 주로 WiredTiger 스토리지 엔진에 대한 설명입니다.
+
+WirtedTiger는 다른 DBMS처럼 레코드(문서) 기반의 잠금을 사용합니다. 물론, 다양한 레벨의 오브젝트에 대한 잠금을 위해 다중 레벨의 잠금 방식도 같이 사용합니다. (Multiple Granularity Locking) 
+
+WT의 특성으로 읽기의 경우는 별도의 잠금을 이용하지 않습니다. 이를 잠금없는 일관된 읽기(Non-Locking Consistent Read)라고 하는데 MVCC을 구현함으로써 가능해집니다.
+
+WT는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가합니다. 즉 문서의 변경 버전을 기억해 둡니다. 때문에 다수의 트랜잭션에선 기억해둔 문서의 버전에서 알맞는 문서를 읽어가게 되고 읽기 잠금이 불필요하게 됩니다.
 
 # 트랜잭션
 
@@ -289,11 +291,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTQ3Mjg5NjIsOTAzNDczNjkwLC0xMj
-M3ODY2MDU4LC0xMzk0NjQ1MTk4LDcxNjA3MjQ2MCwyMTEzNTk1
-NjE5LDE4ODMwMDY3NiwtMTU0MTU1NjY2MSwtMjE3MzM0NzM0LD
-EzNjYzNzQ2MTMsLTEyMjA5NDI5OTIsOTkzMTQ3ODIyLC05NDE0
-MDA5MjYsMTExODI2MTIzMCwxMTg2NTIxOTQ4LC0xMjk5NzcyND
-g4LDQxODg2OTk3MiwyMTI2OTI2NDg5LDc3NDYwMTk0MywtMTYz
-NDg5NjQ0MV19
+eyJoaXN0b3J5IjpbMTc3NTA5ODA2MSw5MDM0NzM2OTAsLTEyMz
+c4NjYwNTgsLTEzOTQ2NDUxOTgsNzE2MDcyNDYwLDIxMTM1OTU2
+MTksMTg4MzAwNjc2LC0xNTQxNTU2NjYxLC0yMTczMzQ3MzQsMT
+M2NjM3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQw
+MDkyNiwxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3NzI0OD
+gsNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0
+ODk2NDQxXX0=
 -->
