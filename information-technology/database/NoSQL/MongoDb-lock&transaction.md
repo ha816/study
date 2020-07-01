@@ -1,3 +1,11 @@
+# Concurrency VS Consistency
+
+동시성 제어란  DBMS가 다수의 사용자 사이에서 동시에 작용하는 다중 트랜잭션의 상호간섭 작용에서 DB의 일관성과 동시성을 적절히 조절하는 것을 말합니다. 일반적으로 동시성을 허용하면 일관성이 낮아지게 됩니다.
+
+![](https://k.kakaocdn.net/dn/YYwAw/btqAhqpozl2/IMdpfbgguBj897K4VkEwy1/img.png)
+
+동시성 제어의 목표는 동시에 실행되는 트랜잭션 수를 최대화 하면서 입력, 수정, 삭제, 검색 시 데이터의 무결성을 유지하는데 있습니다. 
+
 # Lock
 
 멀티 트랜잭션 환경에서 데이터베이스의  **일관성(Consistency)** 과  **무결성(Integrity)** 을 유지하려면  **트랜잭션의 순차적 진행을 보장할 수 있는 직렬화 장치**가 필요합니다. 그러한 직렬화 장치가 바로 Lock 입니다.
@@ -234,13 +242,8 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 하지만 결과를 반환하기 전에 모든 레플리카 셋에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 
-# Concurrency Control
 
-동시성 제어란  DBMS가 다수의 사용자 사이에서 동시에 작용하는 다중 트랜잭션의 상호간섭 작용에서 DB의 일관성과 동시성을 적절히 조절하는 것을 말합니다. 일반적으로 동시성을 허용하면 일관성이 낮아지게 됩니다.
 
-![](https://k.kakaocdn.net/dn/YYwAw/btqAhqpozl2/IMdpfbgguBj897K4VkEwy1/img.png)
-
-동시성 제어의 목표는 동시에 실행되는 트랜잭션 수를 최대화 하면서 입력, 수정, 삭제, 검색 시 데이터의 무결성을 유지하는데 있습니다. 
 
 # Consistency
 
@@ -286,11 +289,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTA2NTQyMCw5MDM0NzM2OTAsLTEyMz
-c4NjYwNTgsLTEzOTQ2NDUxOTgsNzE2MDcyNDYwLDIxMTM1OTU2
-MTksMTg4MzAwNjc2LC0xNTQxNTU2NjYxLC0yMTczMzQ3MzQsMT
-M2NjM3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQw
-MDkyNiwxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3NzI0OD
-gsNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC0xNjM0
-ODk2NDQxXX0=
+eyJoaXN0b3J5IjpbLTEwOTQ3Mjg5NjIsOTAzNDczNjkwLC0xMj
+M3ODY2MDU4LC0xMzk0NjQ1MTk4LDcxNjA3MjQ2MCwyMTEzNTk1
+NjE5LDE4ODMwMDY3NiwtMTU0MTU1NjY2MSwtMjE3MzM0NzM0LD
+EzNjYzNzQ2MTMsLTEyMjA5NDI5OTIsOTkzMTQ3ODIyLC05NDE0
+MDA5MjYsMTExODI2MTIzMCwxMTg2NTIxOTQ4LC0xMjk5NzcyND
+g4LDQxODg2OTk3MiwyMTI2OTI2NDg5LDc3NDYwMTk0MywtMTYz
+NDg5NjQ0MV19
 -->
