@@ -76,11 +76,12 @@ WT는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버�
 
 ## Lock Yield(잠금 양보)
 
-쿼리를 실행하는 도중에 잠시 쉬었다가 쿼리 실행을 재개하는 것을 MongoDB에선 양보(Yield)라고 합니다. 단순히 쿼리를 멈추고 잠깐 쉬는(sleep) 것이 아니라, 처리 중인 쿼리를 위해서 획득했던 잠금까지 모두 해제하고 일정시간 쉬게 된다.
+쿼리를 실행하는 도중에 잠시 쉬었다가 쿼리 실행을 재개하는 것을 MongoDB에선 양보(Yield)라고 합니다. 단순히 쿼리를 멈추고 잠깐 쉬는(Sleep) 것이 아니라, 처리 중인 쿼리를 위해서 획득했던 잠금까지 모두 해제하고 일정시간 쉬게 됩니다.
 
 ```
 db.users.find({non_indexed_field:"value"})
 ```
+위 쿼리는 컬렉션의 모든 문서를 반환하는 쿼리입니다. 따라서 잠금 양보가 발생
 
 Yield를 실행하는 규칙은 아래와 같다.
 
@@ -339,11 +340,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTQ2NDUxOTgsNzE2MDcyNDYwLDIxMT
-M1OTU2MTksMTg4MzAwNjc2LC0xNTQxNTU2NjYxLC0yMTczMzQ3
-MzQsMTM2NjM3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLT
-k0MTQwMDkyNiwxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3
-NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0ODksNzc0NjAxOTQzLC
-0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2NDg2NDQ1MiwxMzM5
-MDI4MjddfQ==
+eyJoaXN0b3J5IjpbOTI5OTM0NzczLC0xMzk0NjQ1MTk4LDcxNj
+A3MjQ2MCwyMTEzNTk1NjE5LDE4ODMwMDY3NiwtMTU0MTU1NjY2
+MSwtMjE3MzM0NzM0LDEzNjYzNzQ2MTMsLTEyMjA5NDI5OTIsOT
+kzMTQ3ODIyLC05NDE0MDA5MjYsMTExODI2MTIzMCwxMTg2NTIx
+OTQ4LC0xMjk5NzcyNDg4LDQxODg2OTk3MiwyMTI2OTI2NDg5LD
+c3NDYwMTk0MywtMTYzNDg5NjQ0MSwtNTU1NTcxNjA3LC0zNjQ4
+NjQ0NTJdfQ==
 -->
