@@ -242,47 +242,6 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 동시성 제어의 목표는 동시에 실행되는 트랜잭션 수를 최대화 하면서 입력, 수정, 삭제, 검색 시 데이터의 무결성을 유지하는데 있습니다. 
 
-원하는 동시성 제어를 위해선 Read Concern과 Write Concern을 사용할 수 있습니다. 
-
-### Read Uncommitted
-
-클라이언트는 쓰기 작업의 결과를 read concern에 따라 볼 수 있습니다.
-
-* local 또는 available을 쓰는 경우, 쓰기 작업이 완료되지 않았어도 write concern과는 관계 없이 결과를 받을 수 있습니다. 이 결과는 replica set failovers 중인 잘못된 데이터 일수도 있습니다. 
-
-한 트랜잭션이 커밋을 하면, 트랜잭션에서 모든 변경점을
-[multi-document transaction](https://docs.mongodb.com/manual/core/transactions/)의 연산자들로 볼 수 있습니다. 즉 한 트랜잭션은 다른 것을 롤백하는 중에는 변경점을 커밋하지 않을 것 입니다. 
-
-한 트랜잭션이 커밋하기 전에, 트랜잭션 내에서 데이터 변경점은 외부 트랜잭션에선 볼 수 없습니다.
-
-그러나 한 트랜잭션이 다수의 샤드에 쓰기 작업을 할땐, 샤드들을 가로질러 커밋된 트랜잭션의 결과를 모든 다른 읽기 연산이 기다릴 필요가 없습니다. 
-
-Read uncommitted 설정은 기본 isolation level으로 샤딩된 클러스터, replica sets, 그리고 standalone mongd에 적용되어 있습니다. 
-
-
-### Read Uncommitted And Single Document Atomicity
-
-단일 문서에 대해선 쓰기 작업은 원자성을 보장합니다. 이 말은 한 쓰기 작업이 문서의 다수 필드를 수정하고 있다면, 읽기 연산은 아주 일부 필드가 수정된 문서는 보지 못합니다. 
-비록 클라이언트가 일부만 수정된 문서를 볼순 없지만, read uncommitted는 변화 결과
-가 반영되기 전에 문서를 보아 읽기 연산이 가능합니다. 
-
-만약 standalone 	구성을 하고 있다면, 한 문서에 대한 읽기와 쓰기 작업은 serializable합니다. replica set을 구성하고 있다면, 한 문서에 대한 읽기와 쓰기 작업들은 rollback이 없는 경우만 serializable이 됩니다. 
-
-### Read Uncommitted And Multiple Document Write
-
-한 쓰기 작업이 많은 문서를 수정할때, 각 문서의 수정은 원자성이 보장됩니다. 그러나 전체 연산은 원자성이 보장되지 않습니다.
-
-다수-문서 쓰기 작업을 수행할때, 다른 연산은 교차 수행될지도 모릅니다. 
-
-다수의 문서에 대해서 읽기와 쓰기 원자성 보장이 필요할때, MongoDB는 다수 문서 트랜잭션을 지원합니다. 
-
-> 주의사항
-> 대부분의 multi-document transaction은 굉장히 나쁜 성능을 보이고, 좋은 스키마 디자인을 대체할 수는 없습니다. 좋은 스키마 또는 모델링을 통해서 최대한 multi-document transaction 사용을 줄이도록 합시다. 
-
-
-
-
-
 # Consistency
 
 전통적인 DB 시스템에서 일관성이란 휘발성 저장장치와 비휘발성 저장장치간의 데이터의 일관성 유지를 말합니다. Strict Consistency는 가장 기본사항으로 기존 RDBMS에서 사용되어 왔습니다. 하지만 분산화된 상태에서 strict consistency를 만족하는 것은 매우 어려운 일이며, 또한 DB의 속도를 느리게 만듭니다. 이런 문제를 개선하기 위해 나온것이 Causal Consistency입니다.
@@ -327,7 +286,7 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3Mzg3ODAzNCw5MDM0NzM2OTAsLTEyMz
+eyJoaXN0b3J5IjpbLTI3OTA2NTQyMCw5MDM0NzM2OTAsLTEyMz
 c4NjYwNTgsLTEzOTQ2NDUxOTgsNzE2MDcyNDYwLDIxMTM1OTU2
 MTksMTg4MzAwNjc2LC0xNTQxNTU2NjYxLC0yMTczMzQ3MzQsMT
 M2NjM3NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQw
