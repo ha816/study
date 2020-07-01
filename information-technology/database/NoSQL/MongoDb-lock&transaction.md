@@ -98,8 +98,7 @@ WT에서 제공하는 트랜잭션 ACID 속성은 아래와 같은 특징이 있
 
 트랜잭션 로그(저널로그 또는 리두로그)뿐만 아니라 체크포인트로도 영속성이 보장됩니다. 즉 트랜잭션 로그가 없어도 마지막 체크 포인트 시점의 데이터를 복구 할 수 있습니다.
 
-트랜잭션이 커밋되기 전에는 트랜잭션 로그를 디스크로 기록하지 않는 다는 것이다. 따라서 
-트랜잭션이 변경할 수 있는 데이터의 크기는 WiredTiger 스토리지 엔진이 가진 공유캐시 크기로 제한된다. 
+WT에서 모든 쿼리는 공유캐시를 거쳐 처리되기 때문에 한 트랜잭션이 변경할 수 있는 데이터의 크기는 공유캐시의 크기로 제한됩니다.
 
 >복수 문서 트랜잭션(Multi-Document Transactions)?
 >다행이도 MongoDB는 복수 문서에 대한 트랜잭션을 지원한다고 합니다. ([Transactions]>복수 문서 트랜잭션은 단일보다 성능이 훨씬 안좋기 때문에 스키마 디자인 자체를 잘해서 복수 문서 트랜잭션을 최대한 사용하지 않는게 좋다고 합니다.
@@ -338,11 +337,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzc4NjYwNTgsLTEzOTQ2NDUxOTgsNz
-E2MDcyNDYwLDIxMTM1OTU2MTksMTg4MzAwNjc2LC0xNTQxNTU2
-NjYxLC0yMTczMzQ3MzQsMTM2NjM3NDYxMywtMTIyMDk0Mjk5Mi
-w5OTMxNDc4MjIsLTk0MTQwMDkyNiwxMTE4MjYxMjMwLDExODY1
-MjE5NDgsLTEyOTk3NzI0ODgsNDE4ODY5OTcyLDIxMjY5MjY0OD
-ksNzc0NjAxOTQzLC0xNjM0ODk2NDQxLC01NTU1NzE2MDcsLTM2
-NDg2NDQ1Ml19
+eyJoaXN0b3J5IjpbLTQwNDgzMzg1MiwtMTIzNzg2NjA1OCwtMT
+M5NDY0NTE5OCw3MTYwNzI0NjAsMjExMzU5NTYxOSwxODgzMDA2
+NzYsLTE1NDE1NTY2NjEsLTIxNzMzNDczNCwxMzY2Mzc0NjEzLC
+0xMjIwOTQyOTkyLDk5MzE0NzgyMiwtOTQxNDAwOTI2LDExMTgy
+NjEyMzAsMTE4NjUyMTk0OCwtMTI5OTc3MjQ4OCw0MTg4Njk5Nz
+IsMjEyNjkyNjQ4OSw3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1
+NTU3MTYwN119
 -->
