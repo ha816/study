@@ -24,8 +24,9 @@
 * collections
 	* 샤드 클러스터에 존재하는 모든 컬렉션, 샤당되지 않은 컬렉션은 제외
 * chunks
-	* 
+	* 샤딩된 컬렉션의 모든 청크 정보, 샤딩되지 않은 컬렉션의 청크 정보는 제외
 * shards
+	* 
 * mongos
 * settings
 * version
@@ -38,6 +39,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MDM2ODg1LC0yMTIxMzY5NDYxLDIwMT
-I2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTEwNDIxNjYxMywtMjEyMTM2OTQ2MSwyMD
+EyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
