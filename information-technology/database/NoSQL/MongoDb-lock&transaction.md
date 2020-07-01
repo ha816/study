@@ -81,18 +81,16 @@ WT는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버�
 ```
 db.users.find({non_indexed_field:"value"})
 ```
-위 쿼리는 컬렉션의 모든 문서를 반환하는 쿼리입니다. 따라서 잠금 양보가 발생
-
-Yield를 실행하는 규칙은 아래와 같다.
+위 쿼리는 컬렉션의 모든 문서를 반환하는 쿼리입니다. 따라서 잠금 양보가 발생할 수 있습니다. Yield를 실행하는 규칙은 아래와 같습니다.
 
 * 쿼리가 지정된 건수의 문서를 읽는 경우(128건)
 * 쿼리가 지정된 시간동안 수행된 경우(10ms)
 
-기본적으로 잠금 판단을 위해선 db.currentOp() 명령어를 사용하면 알 수 있다. 
+특정 쿼리의 잠금 판단을 위해선 db.currentOp() 명령어로 알 수 있습니다.
 
 # 트랜잭션
 
-WiredTiget 스토리지 엔진이 제공하는 트랜잭션 ACID 속성은 다음와 같은 특징이 있습니다.
+WT에서 제공하는 트랜잭션 ACID 속성은 아래와 같은 특징이 있습니다.
 
 * 최고 레벨 격리 수준은 Snapshot(Repetable-Read)
 * 트랜잭션의 커밋과 체크포인트 두 가지 형태로 영속성(Durability) 보장
@@ -340,11 +338,11 @@ Causal Consistency을 제공하기 위해선, MongoDB 3.6에서 클라이언트 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5OTM0NzczLC0xMzk0NjQ1MTk4LDcxNj
-A3MjQ2MCwyMTEzNTk1NjE5LDE4ODMwMDY3NiwtMTU0MTU1NjY2
-MSwtMjE3MzM0NzM0LDEzNjYzNzQ2MTMsLTEyMjA5NDI5OTIsOT
-kzMTQ3ODIyLC05NDE0MDA5MjYsMTExODI2MTIzMCwxMTg2NTIx
-OTQ4LC0xMjk5NzcyNDg4LDQxODg2OTk3MiwyMTI2OTI2NDg5LD
-c3NDYwMTk0MywtMTYzNDg5NjQ0MSwtNTU1NTcxNjA3LC0zNjQ4
-NjQ0NTJdfQ==
+eyJoaXN0b3J5IjpbLTExNzg0ODcxMywtMTM5NDY0NTE5OCw3MT
+YwNzI0NjAsMjExMzU5NTYxOSwxODgzMDA2NzYsLTE1NDE1NTY2
+NjEsLTIxNzMzNDczNCwxMzY2Mzc0NjEzLC0xMjIwOTQyOTkyLD
+k5MzE0NzgyMiwtOTQxNDAwOTI2LDExMTgyNjEyMzAsMTE4NjUy
+MTk0OCwtMTI5OTc3MjQ4OCw0MTg4Njk5NzIsMjEyNjkyNjQ4OS
+w3NzQ2MDE5NDMsLTE2MzQ4OTY0NDEsLTU1NTU3MTYwNywtMzY0
+ODY0NDUyXX0=
 -->
