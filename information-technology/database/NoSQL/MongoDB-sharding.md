@@ -20,9 +20,20 @@
 
 컨피그 서버는 샤딩된 클러스터를 운영하는데 있어 필요한 모든 정보를 저장합니다. 컨피그 서버는 버전에 따라 차이가 있지만 다음과 같은 컬렉션을 가지고 있습니다. 
 
+* databases
+* collections
+* chunks
+* shards
+* mongos
+* settings
+* version
+* lockpings
+* locks
+* changelog
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbMTQ5NTgzNTgwMCwyMDEyNjIxMTY2LDc0Nz
+cxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
