@@ -36,6 +36,7 @@
 * lockpings
 	* 컨피그 서버와의 연결 확인시, 어떤 멤버가 언제 연결 상태가 어땟는지 기록합니다.
 * locks
+	* 사드 클러스터에 많은 멤버들이 서로 작업을 동기화하면서 처리하는 과정에 같은 작업을 동시에 시작하면 충돌이 발생할 수 있습니다. 이를 위한 동기화 관리 컬렉션 입니다. 
 * changelog
  
  이 컬렉션들은 모두 컨피그 서버에만 저장됩니다. 
@@ -43,6 +44,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTQ0MTcxNDgsLTIxMjEzNjk0NjEsMj
-AxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMzAwMjIxNTQ3LC0yMTIxMzY5NDYxLDIwMT
+I2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
 -->
