@@ -1,12 +1,14 @@
 # Concurrency VS Consistency
 
-동시성 제어(Concurrency Control)란 DBMS가 다중 트랜잭션간 상호작용에서 일관성과 동시성을 적절히 조절하는 것을 말합니다. 일반적으로 동시성을 허용하면 일관성이 낮아지게 됩니다.
 
-![](https://k.kakaocdn.net/dn/YYwAw/btqAhqpozl2/IMdpfbgguBj897K4VkEwy1/img.png)
+전통적인 DB 시스템에서 일관성이란 휘발성 저장장치와 비휘발성 저장장치간의 데이터의 일관성 유지를 말합니다. 
+
+동시성 제어(Concurrency Control)란 DBMS가 다중 트랜잭션 환경에서 일관성과 동시성을 적절히 조절하는 것을 말합니다. 일반적으로 동시성을 허용하면 일관성이 낮아지게 됩니다.
 
 동시성 제어의 목표는 동시에 실행되는 트랜잭션 수를 최대화 하면서 입력, 수정, 삭제, 검색 시 데이터의 무결성을 유지하는데 있습니다. 
 
-전통적인 DB 시스템에서 일관성이란 휘발성 저장장치와 비휘발성 저장장치간의 데이터의 일관성 유지를 말합니다. 
+![](https://k.kakaocdn.net/dn/YYwAw/btqAhqpozl2/IMdpfbgguBj897K4VkEwy1/img.png)
+
 일관성을 유지하기 위한 직렬화 장치인 Lock을 공부해보겠습니다. 
 
 # Lock
@@ -245,7 +247,7 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 하지만 결과를 반환하기 전에 모든 레플리카 셋에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEyNzcyNzMyLDE2NTc2NDQxMjYsMTc3NT
+eyJoaXN0b3J5IjpbLTM5ODc1MDA4LDE2NTc2NDQxMjYsMTc3NT
 A5ODA2MSw5MDM0NzM2OTAsLTEyMzc4NjYwNTgsLTEzOTQ2NDUx
 OTgsNzE2MDcyNDYwLDIxMTM1OTU2MTksMTg4MzAwNjc2LC0xNT
 QxNTU2NjYxLC0yMTczMzQ3MzQsMTM2NjM3NDYxMywtMTIyMDk0
