@@ -32,8 +32,9 @@
 	* 청크의 밸런싱 관련 작업 설정이 저장됩니다.
 	* 청크 사이즈, 청크 밸런싱 활성화 여부,  밸런싱 시작 시작, 병렬 청크 이동 여부등
 * version
-* 
+	* 
 * lockpings
+	* 컨피그 서버와의 연결 확인시, 어떤 멤버가 언제 연결 상태가 어땟는지 기록합니다.
 * locks
 * changelog
  
@@ -42,6 +43,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyNzk0MTIxLC0yMTIxMzY5NDYxLDIwMT
-I2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE2NTQ0MTcxNDgsLTIxMjEzNjk0NjEsMj
+AxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
 -->
