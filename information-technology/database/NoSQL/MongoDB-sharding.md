@@ -27,7 +27,7 @@
 	* 샤딩된 컬렉션의 모든 청크 정보, 샤딩되지 않은 컬렉션의 청크 정보는 제외
 * shards
 * mongos
-	* 각 라우터는 30초 단위로 샤드 
+	* 각 라우터는 30초 단위로 샤드 클러스터의 모든 멤ㅂ와 핑 메세지를 주고 받는다. mongos 컬렉션은 현재 컨피그 서버와 한번이라도 연결했던 모든 mongos 목록을 저장한다.
 * settings
 * version
 * lockpings
@@ -39,6 +39,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMjE5MTIxNywtMjEyMTM2OTQ2MSwyMD
+eyJoaXN0b3J5IjpbMTg1MTMxNjk1MywtMjEyMTM2OTQ2MSwyMD
 EyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
