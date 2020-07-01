@@ -47,12 +47,12 @@
 
 ## 컨피그 서버 복제
 
-컨피그 서버의 
+컨피그 서버는 샤딩이 활성화된 유저의 데이터베이스와 컬렉션 정보 그리고 각 
 CSRS(Config Server as Replica Sets)
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMTg5NjkxOSwtMjEyMTM2OTQ2MSwyMD
+eyJoaXN0b3J5IjpbMTkzNDM2NzAwNiwtMjEyMTM2OTQ2MSwyMD
 EyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
