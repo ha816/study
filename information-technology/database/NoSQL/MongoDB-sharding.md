@@ -4,11 +4,12 @@
 
 샤딩이 되지 않은 객체들은 컨피그 서버가 아니라 각 샤드 서버가 로컬로 관리한다. 그리고 이런 샤드를 프라이머리 샤드라고 한다.
 
-컨피각 컬렌션은 여러 사드 서버로 분산되기 위한 정
+컨피그 서버는 각 컬렌션이 여러 사드 서버로 분산되기 위한 데이터 조각을 관리하는데 이것을 청크(Chunk) 한다. 
 
+다음은 라우터 서버로 쿼리를 요청했을때 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODEyNDkyMTYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTQ5MjgzNDg4NSw3MzA5OTgxMTZdfQ==
 -->
