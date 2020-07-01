@@ -30,10 +30,12 @@
 * lockpings
 * locks
 * changelog
-
+ 
+ 이 컬렉션들은 모두 컨피그 서버에만 저장됩니다. 
+ 이 메타 데이터는 샤드 클러스터를 유지하기 위한 내부 관리 목적의 데이터 이므로 사용자가 직접 변경하거나 삭제해서는 안된다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTgzNTgwMCwyMDEyNjIxMTY2LDc0Nz
-cxOTE3OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTExNTc3NDkwMzIsMjAxMjYyMTE2Niw3ND
+c3MTkxNzgsNzMwOTk4MTE2XX0=
 -->
