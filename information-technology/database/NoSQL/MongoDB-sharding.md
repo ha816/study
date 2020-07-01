@@ -6,10 +6,10 @@
 
 컨피그 서버는 각 컬렌션이 여러 사드 서버로 분산되기 위한 데이터 조각을 관리하는데 이것을 청크(Chunk) 한다. 
 
-다음은 라우터 서버로 쿼리를 요청했을때 
+다음은 라우터 서버로 쿼리를 요청했을때 진행되는 과정을 나타낸다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MjgzNDg4NSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE4NjQ2MjU0NSw3MzA5OTgxMTZdfQ==
 -->
