@@ -73,13 +73,13 @@
 
 라우터는 컨피그 서버의 정보를 캐시해두고 있어 쿼리를 어느 샤드서버로 보내야할지 판단할 수 있습니다. 
 
-라우터 서버는 샤드로 부터 결과를
+라우터 서버는 샤드로 부터 결과를 병합하여 사용자에게 반환하며, 불필요한 데이터를 제거하는 역할도 합니다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODk0NjMzNTUsNTg3ODAwNjMyLC0yMT
-IxMzY5NDYxLDIwMTI2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbLTk1MDIzMTYwOCw1ODc4MDA2MzIsLTIxMj
+EzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2
+XX0=
 -->
