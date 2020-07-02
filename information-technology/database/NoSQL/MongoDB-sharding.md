@@ -106,12 +106,11 @@ SKIP 옵션이 붙으면, 이런 작업이 불가하고 전체 샤드에서 필�
 
 ![Choosing a good Shard Key in MongoDB | Blog of Ken W. Alger](https://i2.wp.com/www.kenwalger.com/blog/wp-content/uploads/2017/06/ShardingExample.png?resize=600%2C366)
 
-위 예에서는
-라우터 서버의 캐시에서 메타정보를 보고 87값에 대응 하는 샤드 4를 찾습니다. 
+위 예에서는 87값에 대응 하는 샤드키를 만들어 캐시에서 메타정보를
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMzEyMjQzMCwtMTEyNzEzOTE1MSwtMT
+eyJoaXN0b3J5IjpbLTUzMjg1MzY1NywtMTEyNzEzOTE1MSwtMT
 kxMDA2NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1NTUsLTUzODUz
 NjQyMiw1MzE0MzQ4NjMsMTAwMjY2Mjk3MSwyMTMzODg3NTIsLT
 k1MDIzMTYwOCw1ODc4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYy
