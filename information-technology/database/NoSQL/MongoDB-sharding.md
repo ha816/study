@@ -127,7 +127,7 @@ MongoDB 라우터는 MongoDB 드라이버(클라이언트 드라이버)와 Mongo
 
 MongoDB 라우터는 MongoDB 클라이언트로부터 요청되는 쿼리들을 처리하기 위해 내부적으로 TaskExecutorPool을 서버의 CPU 코어 개수만큼 준비합니다. 
 
-TaskExecutorPool은 우리가 알고 있는 Thread Pool과 동일한 개념으로 이해하면 됩니다. 그리고 TaskExectuorPool은 MongoDB 샤드 서버와의 연결정보를 가지는 커넥션 풀을 하나씩 가지며 커넥션 풀은 내부적으로 다시 서브-커넥션 풀(Sub-Connection Pool)을 가집니다. 서브 커넥션 풀은 샤드 서버당 하나씩 생성됩니다. 
+TaskExecutorPool은 우리가 알고 있는 Thread Pool과 동일한 개념으로 이해하면 됩니다. 그리고 TaskExectuorPool은 MongoDB 샤드 서버와의 연결정보를 가지는 커넥션 풀을 하나씩 가지며 커넥션 풀은 내부적으로 다시 서브-커넥션 풀(Sub-Connection Pool)을 가집니다. **서브 커넥션 풀은 샤드 서버당 하나씩 생성됩니다.** 
 
 이 서브 커넥션 풀을 MongoDB에선 specific-pool이라 부릅니다. 
 
@@ -138,14 +138,16 @@ setParameter :
 	taskExecutorPoolSize : 5
 ```
 
-서브 커넥션 풀(Specific Pool)은 
+서브 커넥션 풀(Specific Pool)은 minConnections, maxConnections, hostTimeout이라는 옵션으로 컨넥션 풀의 컨넥션을 얼마나 보유할지 결정하는데합니다.
+
+각 서브 커넥션 풀에 커넥션이 minConnections
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODIxMTU5MTAsLTE4MjYxMDQ4MTgsOD
-cxMDkyODA0LC0zMTc0NzcwNzksLTcxMDI2NDExMSwtMTEyNzEz
-OTE1MSwtMTkxMDA2NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1NT
-UsLTUzODUzNjQyMiw1MzE0MzQ4NjMsMTAwMjY2Mjk3MSwyMTMz
-ODg3NTIsLTk1MDIzMTYwOCw1ODc4MDA2MzIsLTIxMjEzNjk0Nj
-EsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTgwNTY2Mjc3OCwtMTgyNjEwNDgxOCw4Nz
+EwOTI4MDQsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5
+MTUxLC0xOTEwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NS
+wtNTM4NTM2NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLDIxMzM4
+ODc1MiwtOTUwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMTM2OTQ2MS
+wyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
