@@ -59,13 +59,15 @@
 
 레플리카 셋 방식의 컨피그 서버는 최소 3개 이상의 멤버를 갖도록 권장합니다. 컨피그 서버에서는 모든 정보 조회 및 변경 쿼리의 Read Concern과 Write Concern을 "majority"로 설정하는데, 이는 전체 레플리카 셋의 과반수에 접근할 수 있어야 쿼리를 수행한다는 것을 의미합니다. 그래서 만약 커피그 서버가 2대이면, 둘중 하나만 연결되지 않아도 정보 조회와 삭제가 불가하게 됩니다.
 
+컨피그 서버가 샤드 클러스터의 중요한 정보를 저장하긴 하지만, MongoDB 서버가 사용자 쿼리를 처리하는데 컨피그 서버가 항상 필요한 것은 아닙니다. 
 
+라우터 서버는 초기 기동시 메타정보를 일괄적으로 자신의 캐시에 저장해둡니다. 샤드 클러스터에 새로운 멤버가 추가되거나 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODU0MDQ4MTgsNTg3ODAwNjMyLC0yMT
-IxMzY5NDYxLDIwMTI2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbMzc5ODYxMDk3LDU4NzgwMDYzMiwtMjEyMT
+M2OTQ2MSwyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZd
+fQ==
 -->
