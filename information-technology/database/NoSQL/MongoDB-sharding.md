@@ -106,13 +106,14 @@ SKIP 옵션이 붙으면, 이런 작업이 불가하고 전체 샤드에서 필�
 
 ![Choosing a good Shard Key in MongoDB | Blog of Ken W. Alger](https://i2.wp.com/www.kenwalger.com/blog/wp-content/uploads/2017/06/ShardingExample.png?resize=600%2C366)
 
-샤드 키로는 
+* 데이터 요청을 보내느 서버는 
+* 샤드 키로는 단일 필드 뿐만 아니라 복수 필드로도 사용 가능합니다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjEwNDU0MzYsLTExMjcxMzkxNTEsLT
-E5MTAwNjQzMTcsMTA3NTE4MjE4MSwxMzIzNzM0NTU1LC01Mzg1
-MzY0MjIsNTMxNDM0ODYzLDEwMDI2NjI5NzEsMjEzMzg4NzUyLC
-05NTAyMzE2MDgsNTg3ODAwNjMyLC0yMTIxMzY5NDYxLDIwMTI2
-MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTkzOTA0ODY0OSwtMTEyNzEzOTE1MSwtMT
+kxMDA2NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1NTUsLTUzODUz
+NjQyMiw1MzE0MzQ4NjMsMTAwMjY2Mjk3MSwyMTMzODg3NTIsLT
+k1MDIzMTYwOCw1ODc4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYy
+MTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
 -->
