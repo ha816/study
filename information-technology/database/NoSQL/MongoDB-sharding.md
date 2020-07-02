@@ -57,14 +57,13 @@
 * 리플리카 셋은 아비터를 가질 수 없습니다.
 * 리플리카 셋은 지연된 멤버를 가질 수 없습니다.
 
-레플리카 셋 방식으로 구축된 컨피그 서버는 클라이언트가 더 이상 모든 멤버에게 직접 접속하여 쿼리를 실행하지 않는다. 라우터는 컨피그 서버의 프라이머리 멤버로 접속하여 
-
+레플리카 셋 방식의 컨피그 서버는 최소 3개 이상의 멤버를 갖도록 권장합니다. 모든 정보 조회 및 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MTA3MTM2LDU4NzgwMDYzMiwtMjEyMT
+eyJoaXN0b3J5IjpbNjcwMTAzMTAyLDU4NzgwMDYzMiwtMjEyMT
 M2OTQ2MSwyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZd
 fQ==
 -->
