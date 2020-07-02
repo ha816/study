@@ -77,13 +77,13 @@
 
 다중 쿼리를 수행시키다 보면 , 샤드 키에 맞지 않는 문서를보게 됩니다. (Orphaned Document)는 청크 마이크레이션 중이거나, 실패했거나 사용자가 강제로 키에 맞지 않는 데이터로 변경하는 경우 발생할 수 있습니다. 
 
-이럴때 필터링 영할이 중요하며 만약 라우터가 아닌 샤드 서버로 직접 쿼리를 할 경우
+이럴때 필터링 영할이 중요하며 만약 라우터가 아닌 샤드 서버로 직접 쿼리를 할 경우 샤드 키에 맞지 않는 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE1MTYyMzMzLC05NTAyMzE2MDgsNTg3OD
-AwNjMyLC0yMTIxMzY5NDYxLDIwMTI2MjExNjYsNzQ3NzE5MTc4
-LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTExMDE2MDcyNjUsLTk1MDIzMTYwOCw1OD
+c4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkx
+NzgsNzMwOTk4MTE2XX0=
 -->
