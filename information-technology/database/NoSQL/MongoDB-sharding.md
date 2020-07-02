@@ -92,10 +92,14 @@ LIMIT가 붙으면 각 샤드가 LIMIT가 붙은 쿼리를 각 샤드에서  수
 SKIP 옵션이 붙으면, 이런 작업이 불가하고 전체 샤드에서 필요한 결과를 병합한 다음 SKIP으로 필요한 문서를 버리고 
 
 
+## 쿼리 분산
+
+라우터는 쿼리 조건을 기준으로 어느 샤드에 쿼리를 요청할 것잊
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMzMyODk5OCwxMzIzNzM0NTU1LC01Mz
+eyJoaXN0b3J5IjpbMTc2OTE4OTAwMiwxMzIzNzM0NTU1LC01Mz
 g1MzY0MjIsNTMxNDM0ODYzLDEwMDI2NjI5NzEsMjEzMzg4NzUy
 LC05NTAyMzE2MDgsNTg3ODAwNjMyLC0yMTIxMzY5NDYxLDIwMT
 I2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
