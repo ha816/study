@@ -140,14 +140,14 @@ setParameter :
 
 서브 커넥션 풀(Specific Pool)은 minConnections, maxConnections, hostTimeout이라는 옵션으로 컨넥션 풀의 컨넥션을 얼마나 보유할지 결정하는데합니다.
 
-각 서브 커넥션 풀에 커넥션이 minConnections
+각 서브 커넥션 풀에 커넥션이 maxConnections보다 많으면 자동으로 많은 커넥션을 끊어버립니다. minConnections보다 적다하더라도 일정시간동안 쿼리 요청이 없으면 서브 커넥션 풀 자체를 종료하는데 그 시간이 hostT
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNTY2Mjc3OCwtMTgyNjEwNDgxOCw4Nz
-EwOTI4MDQsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5
-MTUxLC0xOTEwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NS
-wtNTM4NTM2NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLDIxMzM4
-ODc1MiwtOTUwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMTM2OTQ2MS
-wyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNjM4OTE5Njc0LC0xODI2MTA0ODE4LDg3MT
+A5MjgwNCwtMzE3NDc3MDc5LC03MTAyNjQxMTEsLTExMjcxMzkx
+NTEsLTE5MTAwNjQzMTcsMTA3NTE4MjE4MSwxMzIzNzM0NTU1LC
+01Mzg1MzY0MjIsNTMxNDM0ODYzLDEwMDI2NjI5NzEsMjEzMzg4
+NzUyLC05NTAyMzE2MDgsNTg3ODAwNjMyLC0yMTIxMzY5NDYxLD
+IwMTI2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
 -->
