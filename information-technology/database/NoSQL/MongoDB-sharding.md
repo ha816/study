@@ -89,14 +89,14 @@ MongoDB 3.X 버전부터는 정렬과 같은 무거운 작업은 처리 성능�
 
 LIMIT가 붙으면 각 샤드가 LIMIT가 붙은 쿼리를 각 샤드에서  수행하고 최종적으로 다시 LIMIT처리를 하여 원하는 개수만 가져옵니다.
 
-SKIP 옵션이 붙으면, 
+SKIP 옵션이 붙으면, 이런 작업이 불가하고 전체 샤드에서 필요한 결과를 병합한 다음 SKIP으로 필요한 문서를 버리고 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMzczNDU1NSwtNTM4NTM2NDIyLDUzMT
-QzNDg2MywxMDAyNjYyOTcxLDIxMzM4ODc1MiwtOTUwMjMxNjA4
-LDU4NzgwMDYzMiwtMjEyMTM2OTQ2MSwyMDEyNjIxMTY2LDc0Nz
-cxOTE3OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMjAzMzMyODk5OCwxMzIzNzM0NTU1LC01Mz
+g1MzY0MjIsNTMxNDM0ODYzLDEwMDI2NjI5NzEsMjEzMzg4NzUy
+LC05NTAyMzE2MDgsNTg3ODAwNjMyLC0yMTIxMzY5NDYxLDIwMT
+I2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
 -->
