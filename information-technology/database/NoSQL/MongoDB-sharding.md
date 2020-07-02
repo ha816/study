@@ -57,13 +57,14 @@
 * 리플리카 셋은 아비터를 가질 수 없습니다.
 * 리플리카 셋은 지연된 멤버를 가질 수 없습니다.
 
-클라이언트는 
+레플리카 셋 방식으로 구축된 컨피그 서버는 클라이언트가 더 이상 모든 멤버에게 직접 접속하여 쿼리를 실행하지 않는다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg3ODAwNjMyLC0yMTIxMzY5NDYxLDIwMT
-I2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTU4NDcxNjQ0MCw1ODc4MDA2MzIsLTIxMj
+EzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2
+XX0=
 -->
