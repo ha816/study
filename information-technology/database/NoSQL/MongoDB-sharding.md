@@ -83,13 +83,13 @@
 
 정렬이 필요하지 않은 쿼리는 샤드로부터 각 결과를 라운드--로빈 방식으로  가져온 다음 결과를 반환합니다. 하지만 정렬해샤 할 경우는 검색해야할 샤드 서버 중에서 프라이머머리 샤드를 정하고, $Orderby$ 옵션을 통해서 쿼리를 전달한다. 그러면 프라이머리 샤드는 나머지 샤드로 부터 쿼리 결과를 받아 수행한 결가를 라우터 서버로 반환한다. 
 
-
+MongoDB 3.X QNXJSMS 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzI3NDExNTIsMTAwMjY2Mjk3MSwyMT
+eyJoaXN0b3J5IjpbLTEwMTA2MzI2NDcsMTAwMjY2Mjk3MSwyMT
 MzODg3NTIsLTk1MDIzMTYwOCw1ODc4MDA2MzIsLTIxMjEzNjk0
 NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
 -->
