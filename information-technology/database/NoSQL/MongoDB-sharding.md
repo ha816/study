@@ -119,13 +119,14 @@ INSERT의 경우, INSERT 되는 문서가 항상 샤드 키를 포함하므로 �
 
 ## 라우터 배포
 
-
+응용 프로그램 서버에 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDI2NDExMSwtMTEyNzEzOTE1MSwtMT
-kxMDA2NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1NTUsLTUzODUz
-NjQyMiw1MzE0MzQ4NjMsMTAwMjY2Mjk3MSwyMTMzODg3NTIsLT
-k1MDIzMTYwOCw1ODc4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYy
-MTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMT
+I3MTM5MTUxLC0xOTEwMDY0MzE3LDEwNzUxODIxODEsMTMyMzcz
+NDU1NSwtNTM4NTM2NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLD
+IxMzM4ODc1MiwtOTUwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMTM2
+OTQ2MSwyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ
+==
 -->
