@@ -63,13 +63,15 @@
 
 라우터 서버는 초기 기동시 메타정보를 일괄적으로 자신의 캐시에 저장해둡니다. 샤드 클러스터에 새로운 멤버가 추가/삭제, 컬렉션 생성/삭제, 청크의 분리/이동에만 라우터 서버가 컨피그 서버에 데이터 변경 쿼리를 실행합니다. 
 
-새로 라우터를 재시작 하지만 않으면 실질적으로 컨피그 서버에 모두 
+새로 라우터를 재시작 하지만 않으면 실질적으로 컨피그 서버에 모두 연결할 수 없더라도 쿼리 처리에 아무런 문제가 없다. 
+
+그래서 하드웨어 교체나 관리 작업을 위해 컨피그 서버를 재시작하는 작업은 크게 시간에 구ㅐ=
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1MTM5OTk2LDU4NzgwMDYzMiwtMjEyMT
+eyJoaXN0b3J5IjpbMjAwNTU2MzYyLDU4NzgwMDYzMiwtMjEyMT
 M2OTQ2MSwyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZd
 fQ==
 -->
