@@ -123,18 +123,13 @@ MongoDB 라우터는 MongoDB 드라이버(클라이언트 드라이버)와 Mongo
 
 하지만 클라이언트쪽은 독립적으로 커넥션이 유지 되므로 커넥션 수를 제어하기가 쉽자 않습니다. 
 
-### MongoDB 클라이언트
-
-
-### MongoDB 라운터 접속
-
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxMDkyODA0LC0zMTc0NzcwNzksLTcxMD
-I2NDExMSwtMTEyNzEzOTE1MSwtMTkxMDA2NDMxNywxMDc1MTgy
-MTgxLDEzMjM3MzQ1NTUsLTUzODUzNjQyMiw1MzE0MzQ4NjMsMT
-AwMjY2Mjk3MSwyMTMzODg3NTIsLTk1MDIzMTYwOCw1ODc4MDA2
-MzIsLTIxMjEzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEwOTI0MzA0OTgsODcxMDkyODA0LC0zMT
+c0NzcwNzksLTcxMDI2NDExMSwtMTEyNzEzOTE1MSwtMTkxMDA2
+NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1NTUsLTUzODUzNjQyMi
+w1MzE0MzQ4NjMsMTAwMjY2Mjk3MSwyMTMzODg3NTIsLTk1MDIz
+MTYwOCw1ODc4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYyMTE2Ni
+w3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
 -->
