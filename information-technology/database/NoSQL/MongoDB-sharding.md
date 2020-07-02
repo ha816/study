@@ -96,11 +96,16 @@ SKIP 옵션이 붙으면, 이런 작업이 불가하고 전체 샤드에서 필�
 
 라우터는 쿼리 조건을 기준으로 어느 샤드에 쿼리를 요청할 것인지 판단해야 합니다. 
 
+컬렉션은 특정 필드의 값을 기준으로 샤딩될 수 있는데, 샤용자 쿼리가 샤딩 기준 값에 대한 조건을 가지고 있느냐에 따라 라우터가 쿼리를 요청할 서버를 결정할 수 있습니다. 
+
+라우터가 사용자의 쿼리로만 요청하는 형태를 타켓쿼리(Targeted Query)라 하며, 모든 서버로 브로드 ㅋ
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTE4MjE4MSwxMzIzNzM0NTU1LC01Mz
-g1MzY0MjIsNTMxNDM0ODYzLDEwMDI2NjI5NzEsMjEzMzg4NzUy
-LC05NTAyMzE2MDgsNTg3ODAwNjMyLC0yMTIxMzY5NDYxLDIwMT
-I2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMjMyNzMwNTMyLDEwNzUxODIxODEsMTMyMz
+czNDU1NSwtNTM4NTM2NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcx
+LDIxMzM4ODc1MiwtOTUwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMT
+M2OTQ2MSwyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZd
+fQ==
 -->
