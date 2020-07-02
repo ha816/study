@@ -65,13 +65,15 @@
 
 새로 라우터를 재시작 하지만 않으면 실질적으로 컨피그 서버에 모두 연결할 수 없더라도 쿼리 처리에 아무런 문제가 없다. 
 
-그래서 하드웨어 교체나 관리 작업을 위해 컨피그 서버를 재시작하는 작업은 크게 시간에 구ㅐ=
+그래서 하드웨어 교체나 관리 작업을 위해 컨피그 서버를 재시작하는 작업은 크게 시간에  구애받지 않고 처리가능합니다. 
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTU2MzYyLDU4NzgwMDYzMiwtMjEyMT
-M2OTQ2MSwyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZd
-fQ==
+eyJoaXN0b3J5IjpbMTc3NzU5ODk3NCw1ODc4MDA2MzIsLTIxMj
+EzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2
+XX0=
 -->
