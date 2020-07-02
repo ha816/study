@@ -104,13 +104,15 @@ SKIP 옵션이 붙으면, 이런 작업이 불가하고 전체 샤드에서 필�
 
 샤드 키 조건으로 사용자가 쿼리가 원하는 데이터가 있는 샤드 서버를 알 수 있습니다. 그리고 실제로 그 샤드서버로만 쿼리를 보냅니다. 
 
+![Choosing a good Shard Key in MongoDB | Blog of Ken W. Alger](https://i2.wp.com/www.kenwalger.com/blog/wp-content/uploads/2017/06/ShardingExample.png?resize=600%2C366)
 
+라우터 서버의 캐시에서 메타정보를 보고 87값에 대응 하는 샤드 4를 찾습
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjcxMzkxNTEsLTE5MTAwNjQzMTcsMT
-A3NTE4MjE4MSwxMzIzNzM0NTU1LC01Mzg1MzY0MjIsNTMxNDM0
-ODYzLDEwMDI2NjI5NzEsMjEzMzg4NzUyLC05NTAyMzE2MDgsNT
-g3ODAwNjMyLC0yMTIxMzY5NDYxLDIwMTI2MjExNjYsNzQ3NzE5
-MTc4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbOTEwMzM0NDk4LC0xMTI3MTM5MTUxLC0xOT
+EwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NSwtNTM4NTM2
+NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLDIxMzM4ODc1MiwtOT
+UwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMTM2OTQ2MSwyMDEyNjIx
+MTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
