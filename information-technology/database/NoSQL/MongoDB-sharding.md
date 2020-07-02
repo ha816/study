@@ -79,11 +79,13 @@
 
 이럴때 필터링 영할이 중요하며 만약 라우터가 아닌 샤드 서버로 직접 쿼리를 할 경우 샤드 키에 맞지 않는 
 
+또한 라우터는 정렬이나 LIMIT 그리고 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDE2MDcyNjUsLTk1MDIzMTYwOCw1OD
+eyJoaXN0b3J5IjpbLTE5MDcwODA1MTcsLTk1MDIzMTYwOCw1OD
 c4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkx
 NzgsNzMwOTk4MTE2XX0=
 -->
