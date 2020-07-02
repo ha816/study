@@ -6,6 +6,8 @@
 
 컨피그 서버는 각 컬렌션이 여러 사드 서버로 분산되기 위한 데이터 조각을 관리하는데 이것을 청크(Chunk) 한다. 
 
+![Mongodb Development setup](https://i.stack.imgur.com/KHCwI.png)
+
 다음은 라우터 서버로 쿼리를 요청했을때 진행되는 과정을 나타낸다. 
 
 1. 사용자 쿼리가 참조하는 컬렉션의 청크 메타 정보를 컨피그 서버로부터 가져와 라우터 메모리에 캐시
@@ -147,11 +149,11 @@ setParameter :
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTA2MDQ5NDIsLTExMzc1ODk4NjYsLT
-I5MjQ2ODc3MywxOTYyOTc2NjQ0LC0xODI2MTA0ODE4LDg3MTA5
-MjgwNCwtMzE3NDc3MDc5LC03MTAyNjQxMTEsLTExMjcxMzkxNT
-EsLTE5MTAwNjQzMTcsMTA3NTE4MjE4MSwxMzIzNzM0NTU1LC01
-Mzg1MzY0MjIsNTMxNDM0ODYzLDEwMDI2NjI5NzEsMjEzMzg4Nz
-UyLC05NTAyMzE2MDgsNTg3ODAwNjMyLC0yMTIxMzY5NDYxLDIw
-MTI2MjExNjZdfQ==
+eyJoaXN0b3J5IjpbMTAyOTU1MTQzNSwtMTc1MDYwNDk0MiwtMT
+EzNzU4OTg2NiwtMjkyNDY4NzczLDE5NjI5NzY2NDQsLTE4MjYx
+MDQ4MTgsODcxMDkyODA0LC0zMTc0NzcwNzksLTcxMDI2NDExMS
+wtMTEyNzEzOTE1MSwtMTkxMDA2NDMxNywxMDc1MTgyMTgxLDEz
+MjM3MzQ1NTUsLTUzODUzNjQyMiw1MzE0MzQ4NjMsMTAwMjY2Mj
+k3MSwyMTMzODg3NTIsLTk1MDIzMTYwOCw1ODc4MDA2MzIsLTIx
+MjEzNjk0NjFdfQ==
 -->
