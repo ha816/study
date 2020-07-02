@@ -87,11 +87,14 @@ MongoDB 2.X에선 정렬을 라우터 서버에서 수행했지만, 라우터에
 
 MongoDB 3.X 버전부터는 정렬과 같은 무거운 작업은 처리 성능이 뛰어난 샤드 서버가 직접 처리하도록 프라이머리 샤드를 선택하고,  정렬을 위임합니다.
 
+LIMIT가 붙으면 각 샤드가 LIMIT가 붙은 쿼리를 각 샤드에서  수행하고 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMxNDM0ODYzLDEwMDI2NjI5NzEsMjEzMz
-g4NzUyLC05NTAyMzE2MDgsNTg3ODAwNjMyLC0yMTIxMzY5NDYx
-LDIwMTI2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTUzODUzNjQyMiw1MzE0MzQ4NjMsMTAwMj
+Y2Mjk3MSwyMTMzODg3NTIsLTk1MDIzMTYwOCw1ODc4MDA2MzIs
+LTIxMjEzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOT
+k4MTE2XX0=
 -->
