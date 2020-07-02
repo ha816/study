@@ -83,15 +83,15 @@
 
 정렬이 필요하지 않은 쿼리는 샤드로부터 각 결과를 라운드--로빈 방식으로  가져온 다음 결과를 반환합니다. 하지만 정렬해샤 할 경우는 검색해야할 샤드 서버 중에서 프라이머머리 샤드를 정하고, $Orderby$ 옵션을 통해서 쿼리를 전달한다. 그러면 프라이머리 샤드는 나머지 샤드로 부터 쿼리 결과를 받아 수행한 결가를 라우터 서버로 반환한다. 
 
-MongoDB 2.X에선 정려
+MongoDB 2.X에선 정렬을 라우터 서버에서 수행했지만, 라우터에서 데이터 정렬 작업을 하면 처리 능력이 떨어질 수 있어 응답속도가 느려지는 경우가 많았습니다. 그래서 
 
-MongoDB 3.X 버전부터는 정렬 기능이 필요한 경우, 입니다 
+MongoDB 3.X 버전부터는 정렬과 같은 무거운 작업은 처리 성능이 뛰어난 샤드 서버가 직접 처리하도록 프라이머리 샤드를 선택하고, 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTYxNjU3MzAsMTAwMjY2Mjk3MSwyMT
-MzODg3NTIsLTk1MDIzMTYwOCw1ODc4MDA2MzIsLTIxMjEzNjk0
-NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTczMTIxMTk4OSwxMDAyNjYyOTcxLDIxMz
+M4ODc1MiwtOTUwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMTM2OTQ2
+MSwyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
