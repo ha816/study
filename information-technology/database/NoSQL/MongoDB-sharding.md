@@ -129,14 +129,14 @@ MongoDB 라우터는 MongoDB 클라이언트로부터 요청되는 쿼리들을 
 
 TaskExecutorPool은 우리가 알고 있는 Thread Pool과 동일한 개념으로 이해하면 됩니다. 그리고 TaskExectuorPool은 MongoDB 샤드 서버와의 연결정보를 가지는 커넥션 풀을 하나씩 가지며 커넥션 풀은 내부적으로 다시 서브-커넥션 풀(Sub-Connection Pool)을 가집니다. 서브 커넥션 풀은 샤드 서버당 하나씩 생성됩니다. 
 
-이 서브 
+이 서브 커넥션 풀을 MongoDB에선 specific-pool이라 부릅니다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTkxNjY2MSw4NzEwOTI4MDQsLTMxNz
-Q3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5MTUxLC0xOTEwMDY0
-MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NSwtNTM4NTM2NDIyLD
-UzMTQzNDg2MywxMDAyNjYyOTcxLDIxMzM4ODc1MiwtOTUwMjMx
-NjA4LDU4NzgwMDYzMiwtMjEyMTM2OTQ2MSwyMDEyNjIxMTY2LD
-c0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0zMT
+c0NzcwNzksLTcxMDI2NDExMSwtMTEyNzEzOTE1MSwtMTkxMDA2
+NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1NTUsLTUzODUzNjQyMi
+w1MzE0MzQ4NjMsMTAwMjY2Mjk3MSwyMTMzODg3NTIsLTk1MDIz
+MTYwOCw1ODc4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYyMTE2Ni
+w3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
 -->
