@@ -57,13 +57,13 @@
 * 리플리카 셋은 아비터를 가질 수 없습니다.
 * 리플리카 셋은 지연된 멤버를 가질 수 없습니다.
 
-레플리카 셋 방식의 컨피그 서버는 최소 3개 이상의 멤버를 갖도록 권장합니다. 컨피그 서버에서는 모든 정보 조회 및 변경 쿼리의 Read Concern과 Write Concern을 "majority"로 설정하는데, 이는 전체 레플리카 셋의 과반수에 접근
+레플리카 셋 방식의 컨피그 서버는 최소 3개 이상의 멤버를 갖도록 권장합니다. 컨피그 서버에서는 모든 정보 조회 및 변경 쿼리의 Read Concern과 Write Concern을 "majority"로 설정하는데, 이는 전체 레플리카 셋의 과반수에 접근할 수 있어야 쿼리를 수행한다는 것을 의미합니다. 그래서 만약 커피그 서버가 2대이면, 둘중 하나만 연결되지 않아도 정보 조회와 삭제가 불가하게 됩니다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEzMTc4MzM0LDU4NzgwMDYzMiwtMjEyMT
-M2OTQ2MSwyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZd
-fQ==
+eyJoaXN0b3J5IjpbLTQwODg1MjA3OCw1ODc4MDA2MzIsLTIxMj
+EzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2
+XX0=
 -->
