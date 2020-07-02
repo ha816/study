@@ -148,14 +148,13 @@ setParameter :
 Exception in thread "pool-1-thread-301" com.mongodb.MongoWaitQueueFullException: Too many threads are already waiting for a connection. Max number of threads (maxWaitQueueSize) of 500 has been exceeded.
 ```
 
-이런 현상을 막으려면 MongoDB 라우터와 샤드 서버간의 커넥션을 미리 준비해두는 것이 유일합니다. 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzc1ODk4NjYsLTI5MjQ2ODc3MywxOT
-YyOTc2NjQ0LC0xODI2MTA0ODE4LDg3MTA5MjgwNCwtMzE3NDc3
-MDc5LC03MTAyNjQxMTEsLTExMjcxMzkxNTEsLTE5MTAwNjQzMT
-csMTA3NTE4MjE4MSwxMzIzNzM0NTU1LC01Mzg1MzY0MjIsNTMx
-NDM0ODYzLDEwMDI2NjI5NzEsMjEzMzg4NzUyLC05NTAyMzE2MD
-gsNTg3ODAwNjMyLC0yMTIxMzY5NDYxLDIwMTI2MjExNjYsNzQ3
-NzE5MTc4XX0=
+eyJoaXN0b3J5IjpbLTI3NTk2MzM5LC0xMTM3NTg5ODY2LC0yOT
+I0Njg3NzMsMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOCw4NzEwOTI4
+MDQsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5MTUxLC
+0xOTEwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NSwtNTM4
+NTM2NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLDIxMzM4ODc1Mi
+wtOTUwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMTM2OTQ2MSwyMDEy
+NjIxMTY2XX0=
 -->
