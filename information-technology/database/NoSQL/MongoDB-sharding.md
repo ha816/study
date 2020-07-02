@@ -144,14 +144,18 @@ setParameter :
 
 운영시 커넥션의 급증하는 시점에는 그 만큼 사용자 쿼리가 지연처리되고, 클라이언트에서는 아래와 같이 쿼리 타임아웃이나 큐 타임아웃등 현상이 발생할 수 있다. 
 
+```
+Exception in thread "pool-1-thread-301" com.mongodb.MongoWaitQueueFullException: Too many threads are already waiting for a connection. Max number of threads (maxWaitQueueSize) of 500 has been exceeded.
+```
 
+이런 현상을 막으려면 MongoDB 라우터와 샤드 서버간의 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MjQ2ODc3MywxOTYyOTc2NjQ0LC0xOD
-I2MTA0ODE4LDg3MTA5MjgwNCwtMzE3NDc3MDc5LC03MTAyNjQx
-MTEsLTExMjcxMzkxNTEsLTE5MTAwNjQzMTcsMTA3NTE4MjE4MS
-wxMzIzNzM0NTU1LC01Mzg1MzY0MjIsNTMxNDM0ODYzLDEwMDI2
-NjI5NzEsMjEzMzg4NzUyLC05NTAyMzE2MDgsNTg3ODAwNjMyLC
-0yMTIxMzY5NDYxLDIwMTI2MjExNjYsNzQ3NzE5MTc4LDczMDk5
-ODExNl19
+eyJoaXN0b3J5IjpbMTYzNDM0NjIxNSwtMjkyNDY4NzczLDE5Nj
+I5NzY2NDQsLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0zMTc0Nzcw
+NzksLTcxMDI2NDExMSwtMTEyNzEzOTE1MSwtMTkxMDA2NDMxNy
+wxMDc1MTgyMTgxLDEzMjM3MzQ1NTUsLTUzODUzNjQyMiw1MzE0
+MzQ4NjMsMTAwMjY2Mjk3MSwyMTMzODg3NTIsLTk1MDIzMTYwOC
+w1ODc4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYyMTE2Niw3NDc3
+MTkxNzhdfQ==
 -->
