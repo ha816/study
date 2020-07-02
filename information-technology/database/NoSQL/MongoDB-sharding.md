@@ -142,19 +142,16 @@ setParameter :
 
 각 서브 커넥션 풀에 커넥션이 maxConnections보다 많으면 자동으로 많은 커넥션을 끊어버립니다. minConnections보다 적다하더라도 일정시간동안 쿼리 요청이 없으면 서브 커넥션 풀 자체를 종료하는데 그 시간이 hostTimeout입니다. 
 
-운영시 커넥션의 급증하는 시점에는 그 만큼 사용자 쿼리가 지연처리되고, 클라이언트에서는 아래와 같이 쿼리 타임아웃이나 큐 타임아웃등 현상이 발생할 수 있다. 
 
-```
-Exception in thread "pool-1-thread-301" com.mongodb.MongoWaitQueueFullException: Too many threads are already waiting for a connection. Max number of threads (maxWaitQueueSize) of 500 has been exceeded.
-```
+## Sharding Algorithms
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NTk2MzM5LC0xMTM3NTg5ODY2LC0yOT
-I0Njg3NzMsMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOCw4NzEwOTI4
-MDQsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5MTUxLC
-0xOTEwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NSwtNTM4
-NTM2NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLDIxMzM4ODc1Mi
-wtOTUwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMTM2OTQ2MSwyMDEy
-NjIxMTY2XX0=
+eyJoaXN0b3J5IjpbLTE3NTA2MDQ5NDIsLTExMzc1ODk4NjYsLT
+I5MjQ2ODc3MywxOTYyOTc2NjQ0LC0xODI2MTA0ODE4LDg3MTA5
+MjgwNCwtMzE3NDc3MDc5LC03MTAyNjQxMTEsLTExMjcxMzkxNT
+EsLTE5MTAwNjQzMTcsMTA3NTE4MjE4MSwxMzIzNzM0NTU1LC01
+Mzg1MzY0MjIsNTMxNDM0ODYzLDEwMDI2NjI5NzEsMjEzMzg4Nz
+UyLC05NTAyMzE2MDgsNTg3ODAwNjMyLC0yMTIxMzY5NDYxLDIw
+MTI2MjExNjZdfQ==
 -->
