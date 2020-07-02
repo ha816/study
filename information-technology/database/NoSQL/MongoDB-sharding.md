@@ -134,12 +134,15 @@ TaskExecutorPool은 우리가 알고 있는 Thread Pool과 동일한 개념으�
 라우터에서 기본적으로 생성되는 TaskExecutorPool은 서버에 장착된 CPU 코어의 개수만큼 생성되는데 만약 명시적으로 제한하고자 한다면 설정 파일에서 수정할 수 있습니다. 
 
 ```
-setPar
+setParameter : 
+	taskExecutorPoolSize : 5
 ```
+
+서브 커넥션 풀(Specific Pool)은 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDM1MjY1MjIsLTE4MjYxMDQ4MTgsOD
+eyJoaXN0b3J5IjpbLTE2ODIxMTU5MTAsLTE4MjYxMDQ4MTgsOD
 cxMDkyODA0LC0zMTc0NzcwNzksLTcxMDI2NDExMSwtMTEyNzEz
 OTE1MSwtMTkxMDA2NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1NT
 UsLTUzODUzNjQyMiw1MzE0MzQ4NjMsMTAwMjY2Mjk3MSwyMTMz
