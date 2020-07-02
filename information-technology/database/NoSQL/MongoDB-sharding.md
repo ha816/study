@@ -67,13 +67,13 @@
 
 그래서 하드웨어 교체나 관리 작업을 위해 컨피그 서버를 재시작하는 작업은 크게 시간에  구애받지 않고 처리가능합니다. 
 
-컨피그 서버가 멈춘 상태에서도 클러스터는 정상 운영 가능하지만 사용자 인증정보는 컨피그 서버에 저장되며,  이 정보를 라우터에서 읽을 수 없으면 MongoDB로 새로운 
+컨피그 서버가 멈춘 상태에서도 클러스터는 정상 운영 가능하지만 사용자 인증정보는 컨피그 서버에 저장되며,  이 정보를 라우터에서 읽을 수 없으면 MongoDB로 새로운 커넥션을 생성할 수가 없습니다. 즉 이미 생성된 커넥션은 쿼리를 실행하지만 새로운 커넥션을 불가한 것 입니다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MjU4MDgzNyw1ODc4MDA2MzIsLTIxMj
+eyJoaXN0b3J5IjpbMTEzMzIwMTM3Nyw1ODc4MDA2MzIsLTIxMj
 EzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2
 XX0=
 -->
