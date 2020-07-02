@@ -75,13 +75,13 @@
 
 라우터 서버는 샤드로 부터 결과를 병합하여 사용자에게 반환하며, 불필요한 데이터를 제거하는 역할도 합니다. 
 
-
+다중 쿼리를 수행시키다 보면 , 샤드 키에 맞지 않는 문서를보게 됩니다. (Orp
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzQwMjU4OCwtOTUwMjMxNjA4LDU4Nz
-gwMDYzMiwtMjEyMTM2OTQ2MSwyMDEyNjIxMTY2LDc0NzcxOTE3
-OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE1NTI3MzUxMjQsLTk1MDIzMTYwOCw1OD
+c4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkx
+NzgsNzMwOTk4MTE2XX0=
 -->
