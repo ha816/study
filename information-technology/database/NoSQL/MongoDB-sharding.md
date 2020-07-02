@@ -81,11 +81,13 @@
 
 또한 라우터는 정렬이나 LIMIT 그리고 SKIP과 같은 쿼리 옵션이 있습니다. 
 
+정렬이 필요하지 않은 쿼리는 샤드로부터 각 결과를 라운드--로빈 방식으로  가져온 다음 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODg2ODM2ODksLTk1MDIzMTYwOCw1OD
-c4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkx
-NzgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTM1Nzg5OTc4MSwtOTUwMjMxNjA4LDU4Nz
+gwMDYzMiwtMjEyMTM2OTQ2MSwyMDEyNjIxMTY2LDc0NzcxOTE3
+OCw3MzA5OTgxMTZdfQ==
 -->
