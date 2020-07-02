@@ -121,13 +121,20 @@ INSERT의 경우, INSERT 되는 문서가 항상 샤드 키를 포함하므로 �
 
 MongoDB 라우터는 MongoDB 드라이버(클라이언트 드라이버)와 MongoDB 샤드서버를 중계하는 역할이므로 클라이언트와 서버쪽 커넥션을 모두 가지고 있어야 합니다. 
 
+하지만 클라이언트쪽은 독립적으로 커넥션이 유지 되므로 커넥션 수를 제어하기가 쉽자 않습니다. 
+
+### MongoDB 클라이언트
+
+
+### MongoDB 라운터 접속
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1Nzk4ODE0MiwtMzE3NDc3MDc5LC03MT
-AyNjQxMTEsLTExMjcxMzkxNTEsLTE5MTAwNjQzMTcsMTA3NTE4
-MjE4MSwxMzIzNzM0NTU1LC01Mzg1MzY0MjIsNTMxNDM0ODYzLD
-EwMDI2NjI5NzEsMjEzMzg4NzUyLC05NTAyMzE2MDgsNTg3ODAw
-NjMyLC0yMTIxMzY5NDYxLDIwMTI2MjExNjYsNzQ3NzE5MTc4LD
-czMDk5ODExNl19
+eyJoaXN0b3J5IjpbODcxMDkyODA0LC0zMTc0NzcwNzksLTcxMD
+I2NDExMSwtMTEyNzEzOTE1MSwtMTkxMDA2NDMxNywxMDc1MTgy
+MTgxLDEzMjM3MzQ1NTUsLTUzODUzNjQyMiw1MzE0MzQ4NjMsMT
+AwMjY2Mjk3MSwyMTMzODg3NTIsLTk1MDIzMTYwOCw1ODc4MDA2
+MzIsLTIxMjEzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNz
+MwOTk4MTE2XX0=
 -->
