@@ -111,13 +111,15 @@ SKIP 옵션이 붙으면, 이런 작업이 불가하고 전체 샤드에서 필�
 
 SELECT, UPDATE, DELETE의 경우 조건이 샤드 키를 포함하는 경우 타겟 쿼리로 동작할 수 있습니다. 
 
+INSERT의 경우, INSERT 되는 문서가 항상 샤드 키를 포함하므로 항상 타겟 쿼리로 작동합니다. 
 
+### B
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MTkxMzA3NSwtMTEyNzEzOTE1MSwtMT
-kxMDA2NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1NTUsLTUzODUz
-NjQyMiw1MzE0MzQ4NjMsMTAwMjY2Mjk3MSwyMTMzODg3NTIsLT
-k1MDIzMTYwOCw1ODc4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYy
-MTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbODA2NTY5MTQxLC0xMTI3MTM5MTUxLC0xOT
+EwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NSwtNTM4NTM2
+NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLDIxMzM4ODc1MiwtOT
+UwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMTM2OTQ2MSwyMDEyNjIx
+MTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
