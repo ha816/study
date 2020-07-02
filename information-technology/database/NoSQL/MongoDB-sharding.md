@@ -142,15 +142,16 @@ setParameter :
 
 각 서브 커넥션 풀에 커넥션이 maxConnections보다 많으면 자동으로 많은 커넥션을 끊어버립니다. minConnections보다 적다하더라도 일정시간동안 쿼리 요청이 없으면 서브 커넥션 풀 자체를 종료하는데 그 시간이 hostTimeout입니다. 
 
-운영시 커넥션의 
+운영시 커넥션의 급증하는 시점에는 그 만큼 사용자 쿼리가 지연처리되고, 클라이언트에서는 아래와 같이 쿼리 타임아웃이나 큐 타임아웃등 현상이 발생할 수 있다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOCw4Nz
-EwOTI4MDQsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5
-MTUxLC0xOTEwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NS
-wtNTM4NTM2NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLDIxMzM4
-ODc1MiwtOTUwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMTM2OTQ2MS
-wyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTI5MjQ2ODc3MywxOTYyOTc2NjQ0LC0xOD
+I2MTA0ODE4LDg3MTA5MjgwNCwtMzE3NDc3MDc5LC03MTAyNjQx
+MTEsLTExMjcxMzkxNTEsLTE5MTAwNjQzMTcsMTA3NTE4MjE4MS
+wxMzIzNzM0NTU1LC01Mzg1MzY0MjIsNTMxNDM0ODYzLDEwMDI2
+NjI5NzEsMjEzMzg4NzUyLC05NTAyMzE2MDgsNTg3ODAwNjMyLC
+0yMTIxMzY5NDYxLDIwMTI2MjExNjYsNzQ3NzE5MTc4LDczMDk5
+ODExNl19
 -->
