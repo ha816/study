@@ -117,9 +117,13 @@ INSERT의 경우, INSERT 되는 문서가 항상 샤드 키를 포함하므로 �
 
 샤드 키를 쿼리 조건으로 가지지 않는 경우에는 라우터가 작업 범위를 특정 샤드로 줄일 수가 없습니다. 이런 경우는 해당 쿼리는 모든 샤드로 요청되고 이를 브로드캐스트 쿼리라고 합니다. 
 
+## 라우터 배포
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMTA5NzAwMSwtMTEyNzEzOTE1MSwtMT
+eyJoaXN0b3J5IjpbLTcxMDI2NDExMSwtMTEyNzEzOTE1MSwtMT
 kxMDA2NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1NTUsLTUzODUz
 NjQyMiw1MzE0MzQ4NjMsMTAwMjY2Mjk3MSwyMTMzODg3NTIsLT
 k1MDIzMTYwOCw1ODc4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYy
