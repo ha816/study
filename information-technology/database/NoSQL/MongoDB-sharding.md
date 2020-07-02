@@ -85,13 +85,13 @@
 
 MongoDB 2.X에선 정렬을 라우터 서버에서 수행했지만, 라우터에서 데이터 정렬 작업을 하면 처리 능력이 떨어질 수 있어 응답속도가 느려지는 경우가 많았습니다. 그래서 
 
-MongoDB 3.X 버전부터는 정렬과 같은 무거운 작업은 처리 성능이 뛰어난 샤드 서버가 직접 처리하도록 프라이머리 샤드를 선택하고, 
+MongoDB 3.X 버전부터는 정렬과 같은 무거운 작업은 처리 성능이 뛰어난 샤드 서버가 직접 처리하도록 프라이머리 샤드를 선택하고,  정렬을 위임합니다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMTIxMTk4OSwxMDAyNjYyOTcxLDIxMz
-M4ODc1MiwtOTUwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMTM2OTQ2
-MSwyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNTMxNDM0ODYzLDEwMDI2NjI5NzEsMjEzMz
+g4NzUyLC05NTAyMzE2MDgsNTg3ODAwNjMyLC0yMTIxMzY5NDYx
+LDIwMTI2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODExNl19
 -->
