@@ -69,13 +69,15 @@
 
 # 라우터
 
-라우터 Mongos는 사용자의 쿼리 요청을 
+라우터 Mongos는 사용자의 쿼리 요청을 샤드 서버로 전달하고, 쿼리 결과를 모아 사용자에게 반환하는 프록시 역할을 한다. 
+
+라우터는 컨피그 서버의 정보를 캐시해두고 있어 쿼리를 어느 ㅅ
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI5NDk0NTY2LDU4NzgwMDYzMiwtMjEyMT
-M2OTQ2MSwyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZd
-fQ==
+eyJoaXN0b3J5IjpbMTg1MzkwMTI3NSw1ODc4MDA2MzIsLTIxMj
+EzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2
+XX0=
 -->
