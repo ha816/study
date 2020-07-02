@@ -119,12 +119,12 @@ INSERT의 경우, INSERT 되는 문서가 항상 샤드 키를 포함하므로 �
 
 ## 커넥션 풀 관리
 
-
+MongoDB 라우터는 MongoDB 드라이버(클라이언트 드라이버)와 MongoDB 샤드서버를 중계하는 역할이므로 클라이언트와 서버쪽 커넥션을 모두 가지고 있어야 합니다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNjM5NjY5NCwtMzE3NDc3MDc5LC03MT
+eyJoaXN0b3J5IjpbLTc1Nzk4ODE0MiwtMzE3NDc3MDc5LC03MT
 AyNjQxMTEsLTExMjcxMzkxNTEsLTE5MTAwNjQzMTcsMTA3NTE4
 MjE4MSwxMzIzNzM0NTU1LC01Mzg1MzY0MjIsNTMxNDM0ODYzLD
 EwMDI2NjI5NzEsMjEzMzg4NzUyLC05NTAyMzE2MDgsNTg3ODAw
