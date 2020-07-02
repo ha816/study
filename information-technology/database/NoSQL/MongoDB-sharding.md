@@ -131,12 +131,14 @@ TaskExecutorPool은 우리가 알고 있는 Thread Pool과 동일한 개념으�
 
 이 서브 커넥션 풀을 MongoDB에선 specific-pool이라 부릅니다. 
 
+라우터에서 기본적으로 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0zMT
-c0NzcwNzksLTcxMDI2NDExMSwtMTEyNzEzOTE1MSwtMTkxMDA2
-NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1NTUsLTUzODUzNjQyMi
-w1MzE0MzQ4NjMsMTAwMjY2Mjk3MSwyMTMzODg3NTIsLTk1MDIz
-MTYwOCw1ODc4MDA2MzIsLTIxMjEzNjk0NjEsMjAxMjYyMTE2Ni
-w3NDc3MTkxNzgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTg3NDM3MTg1MSwtMTgyNjEwNDgxOCw4Nz
+EwOTI4MDQsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5
+MTUxLC0xOTEwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NS
+wtNTM4NTM2NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLDIxMzM4
+ODc1MiwtOTUwMjMxNjA4LDU4NzgwMDYzMiwtMjEyMTM2OTQ2MS
+wyMDEyNjIxMTY2LDc0NzcxOTE3OCw3MzA5OTgxMTZdfQ==
 -->
