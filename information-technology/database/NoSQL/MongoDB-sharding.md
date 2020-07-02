@@ -102,14 +102,14 @@ SKIP 옵션이 붙으면, 이런 작업이 불가하고 전체 샤드에서 필�
 
 ### 타겟 쿼리
 
-샤드 키 조건으로 사용자가 쿼리가 원하는 데이터가 있는 샤드 서버를 알 수 있습니다. 그리고 실제로 그 샤드서버로만 
+샤드 키 조건으로 사용자가 쿼리가 원하는 데이터가 있는 샤드 서버를 알 수 있습니다. 그리고 실제로 그 샤드서버로만 쿼리를 보냅니다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODU0MzE0NiwxMDc1MTgyMTgxLDEzMj
-M3MzQ1NTUsLTUzODUzNjQyMiw1MzE0MzQ4NjMsMTAwMjY2Mjk3
-MSwyMTMzODg3NTIsLTk1MDIzMTYwOCw1ODc4MDA2MzIsLTIxMj
-EzNjk0NjEsMjAxMjYyMTE2Niw3NDc3MTkxNzgsNzMwOTk4MTE2
-XX0=
+eyJoaXN0b3J5IjpbLTE5MTAwNjQzMTcsMTA3NTE4MjE4MSwxMz
+IzNzM0NTU1LC01Mzg1MzY0MjIsNTMxNDM0ODYzLDEwMDI2NjI5
+NzEsMjEzMzg4NzUyLC05NTAyMzE2MDgsNTg3ODAwNjMyLC0yMT
+IxMzY5NDYxLDIwMTI2MjExNjYsNzQ3NzE5MTc4LDczMDk5ODEx
+Nl19
 -->
