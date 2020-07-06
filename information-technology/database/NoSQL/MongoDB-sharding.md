@@ -155,16 +155,18 @@ setParameter :
 
 사용자 데이터를 일정 기준으로 그룹핑해서 관리하는데, 이 그룹이 청크입니다. 레인지 샤딩과 해시 샤딩은 각 데이터를 어떤 청크에 포함시켜야할지 결정합니다. 
 
+해시 샤딩과 레인지 샤딩은 각 청크를 어느 샤드 서버에서 관리할 것인지 사용자가 결정할 수 없지만, 태그 기반 샤딩은 특정 청크를 특정 샤드에만 저장하고 처리할 수 있습니다. 
 
+청크는  샤드 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzODY4MDk2MywtNzY0NjIyNjgxLDEwMj
-k1NTE0MzUsLTE3NTA2MDQ5NDIsLTExMzc1ODk4NjYsLTI5MjQ2
-ODc3MywxOTYyOTc2NjQ0LC0xODI2MTA0ODE4LDg3MTA5MjgwNC
-wtMzE3NDc3MDc5LC03MTAyNjQxMTEsLTExMjcxMzkxNTEsLTE5
-MTAwNjQzMTcsMTA3NTE4MjE4MSwxMzIzNzM0NTU1LC01Mzg1Mz
-Y0MjIsNTMxNDM0ODYzLDEwMDI2NjI5NzEsMjEzMzg4NzUyLC05
-NTAyMzE2MDhdfQ==
+eyJoaXN0b3J5IjpbMzA4NjQ4NjA5LDE4Mzg2ODA5NjMsLTc2ND
+YyMjY4MSwxMDI5NTUxNDM1LC0xNzUwNjA0OTQyLC0xMTM3NTg5
+ODY2LC0yOTI0Njg3NzMsMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOC
+w4NzEwOTI4MDQsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3
+MTM5MTUxLC0xOTEwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczND
+U1NSwtNTM4NTM2NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLDIx
+MzM4ODc1Ml19
 -->
