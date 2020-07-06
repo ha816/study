@@ -170,11 +170,13 @@ setParameter :
 
 샤드 간의 청크 개수의 불균혀이 발생하면 청크가 다른 샤드로 넘어가고, 이로 인해서 MongoDB에 샤드서버에서는 INSERT와 DELETE가 실행됩니다. 
 
-MongoDB와 달리 물리적인 데이터 파티션을 사용하는 NoSQL로는 대표적으로 HBASE가 있습니다. HBASE에서는 데이터의 파티션 밸렁신이 전혀 무겁지 않고 순식간의 처리가 이루어집니다. 물론 HBASE의 방식이 절대적으로 좋은 방식이라는 이야기는 아니고 선택한 방식의 
+MongoDB와 달리 물리적인 데이터 파티션을 사용하는 NoSQL로는 대표적으로 HBASE가 있습니다. HBASE에서는 데이터의 파티션 밸렁신이 전혀 무겁지 않고 순식간의 처리가 이루어집니다. 물론 HBASE의 방식이 절대적으로 좋은 방식이라는 이야기는 아니고 선택한 방식의 장단점이 있고 이는 상호 배타적인 장단점 입니다. 
+
+청크는 다큐먼트 자체를 파티션하는 개념이지 세컨더리 인덱스 까지 파티션 하는 개념은 아니다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjEyMDc4OTcsLTIxMTc3Njg4OTQsMT
+eyJoaXN0b3J5IjpbLTEwMjY1ODg3NjQsLTIxMTc3Njg4OTQsMT
 I1OTE4MTQwMCwtMTkyMzY1Mjc1NCwxODM4NjgwOTYzLC03NjQ2
 MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYwNDk0MiwtMTEzNzU4OT
 g2NiwtMjkyNDY4NzczLDE5NjI5NzY2NDQsLTE4MjYxMDQ4MTgs
