@@ -162,11 +162,13 @@ setParameter :
 ![Diagram of the shard key value space segmented into smaller ranges or chunks.](https://docs.mongodb.com/manual/_images/sharding-range-based.bakedsvg.svg)
 
 
-위 그림에서 처럼 실제 서비스에서 샤드
+위 그림 처럼 실제 서비스에서 샤드 키 값의 단위가 일정하지 않습니다. 
+
+청크는 물리적인 의미를 가지지 않으며, 논리적으로만 존재하는 개념입니다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMzI1NDE3MCwtMTkyMzY1Mjc1NCwxOD
+eyJoaXN0b3J5IjpbMTI1OTE4MTQwMCwtMTkyMzY1Mjc1NCwxOD
 M4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYw
 NDk0MiwtMTEzNzU4OTg2NiwtMjkyNDY4NzczLDE5NjI5NzY2ND
 QsLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0zMTc0NzcwNzksLTcx
