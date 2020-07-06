@@ -174,15 +174,17 @@ MongoDB와 달리 물리적인 데이터 파티션을 사용하는 NoSQL로는 �
 
 청크는 다큐먼트 자체를 파티션하는 개념이지 세컨더리 인덱스 까지 파티션 하는 개념은 아니다. 
 
-MongoDB는 기본적으로 64MB까지 커질 수 있으며, 이 이상으로 커지면 밸런서에 의해 자동으로 Split됩니다. 청크가 빈번히 스플릿 되면 샤드 서버간의 청크 갯수가 불균형하게 될 수 있는데, 큐현이 맞지 아
+MongoDB는 기본적으로 64MB까지 커질 수 있으며, 이 이상으로 커지면 밸런서에 의해 자동으로 Split됩니다. 청크가 빈번히 스플릿 되면 샤드 서버간의 청크 갯수가 불균형하게 될 수 있는데, 균형이 맞지 않으면 맞도록 밸런서가 청크를 이동 시키며 계속 균형을 잡도록 한다. 
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNjM0MzI5NiwtMjExNzc2ODg5NCwxMj
-U5MTgxNDAwLC0xOTIzNjUyNzU0LDE4Mzg2ODA5NjMsLTc2NDYy
-MjY4MSwxMDI5NTUxNDM1LC0xNzUwNjA0OTQyLC0xMTM3NTg5OD
-Y2LC0yOTI0Njg3NzMsMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOCw4
-NzEwOTI4MDQsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MT
-M5MTUxLC0xOTEwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1
-NSwtNTM4NTM2NDIyXX0=
+eyJoaXN0b3J5IjpbLTEyMDEyODI3MTAsLTIxMTc3Njg4OTQsMT
+I1OTE4MTQwMCwtMTkyMzY1Mjc1NCwxODM4NjgwOTYzLC03NjQ2
+MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYwNDk0MiwtMTEzNzU4OT
+g2NiwtMjkyNDY4NzczLDE5NjI5NzY2NDQsLTE4MjYxMDQ4MTgs
+ODcxMDkyODA0LC0zMTc0NzcwNzksLTcxMDI2NDExMSwtMTEyNz
+EzOTE1MSwtMTkxMDA2NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1
+NTUsLTUzODUzNjQyMl19
 -->
