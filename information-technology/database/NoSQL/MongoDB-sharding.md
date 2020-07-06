@@ -179,15 +179,19 @@ MongoDB는 기본적으로 64MB까지 커질 수 있으며, 이 이상으로 커
 
 청크의 크기는 ㅚ대 값으로 변경할 수 있지만 , 청크 이동 자체는 매우 고 비용이다. 
 
-따라서 청크가 커져서 하나의 청크가 많은 문서를 저장하게 되면 청크 이동이 발생했을때 서버에 장기간의 부하를 주게 된다. 또한 청크가 크면 클수록 부하를 조절하기가 여러여무, 청크가 작을 수록 샤드간 부하를 미세하게 분산할 수 있지만
+따라서 청크가 커져서 하나의 청크가 많은 문서를 저장하게 되면 청크 이동이 발생했을때 서버에 장기간의 부하를 주게 된다. 또한 청크가 크면 클수록 부하를 조절하기가 여러여무, 청크가 작을 수록 샤드간 부하를 미세하게 분산할 수 있지만 청크 이동이 빈번하게 발생할 수도 있다. 
+
+### Range Sharding(레인지 샤딩)
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODIzMzAzMTksLTEyMDEyODI3MTAsLT
-IxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mjc1NCwxODM4
-NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYwND
-k0MiwtMTEzNzU4OTg2NiwtMjkyNDY4NzczLDE5NjI5NzY2NDQs
-LTE4MjYxMDQ4MTgsODcxMDkyODA0LC0zMTc0NzcwNzksLTcxMD
-I2NDExMSwtMTEyNzEzOTE1MSwtMTkxMDA2NDMxNywxMDc1MTgy
-MTgxLDEzMjM3MzQ1NTVdfQ==
+eyJoaXN0b3J5IjpbMTk2NjI0MTcxNCwtMTIwMTI4MjcxMCwtMj
+ExNzc2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUyNzU0LDE4Mzg2
+ODA5NjMsLTc2NDYyMjY4MSwxMDI5NTUxNDM1LC0xNzUwNjA0OT
+QyLC0xMTM3NTg5ODY2LC0yOTI0Njg3NzMsMTk2Mjk3NjY0NCwt
+MTgyNjEwNDgxOCw4NzEwOTI4MDQsLTMxNzQ3NzA3OSwtNzEwMj
+Y0MTExLC0xMTI3MTM5MTUxLC0xOTEwMDY0MzE3LDEwNzUxODIx
+ODEsMTMyMzczNDU1NV19
 -->
