@@ -166,13 +166,17 @@ setParameter :
 
 청크는 물리적인 의미를 가지지 않으며, 논리적으로만 존재하는 개념입니다. 즉 청크 단위로 데이터 파일이 생성되거나 데이터가 모여 있지 않습니다. 
 
+청크의 실체는 컨피그 서버에 메타 데이터로만 존재하고 실제 각 MongoDB 샤드 서버는 청크에 개념에 대해 알 필요도 없습니다. 
+
+샤드 간의 청크 개수의 불균혀이 발생하면 청크가 다른 샤드로 넘어가고, 이로 인해서 MongoDB에 샤드서버에서는 INSERT와 DELETE가 실행됩니다. 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDM5ODM4OSwxMjU5MTgxNDAwLC0xOT
-IzNjUyNzU0LDE4Mzg2ODA5NjMsLTc2NDYyMjY4MSwxMDI5NTUx
-NDM1LC0xNzUwNjA0OTQyLC0xMTM3NTg5ODY2LC0yOTI0Njg3Nz
-MsMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOCw4NzEwOTI4MDQsLTMx
-NzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5MTUxLC0xOTEwMD
-Y0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NSwtNTM4NTM2NDIy
-LDUzMTQzNDg2M119
+eyJoaXN0b3J5IjpbLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMT
+kyMzY1Mjc1NCwxODM4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1
+MTQzNSwtMTc1MDYwNDk0MiwtMTEzNzU4OTg2NiwtMjkyNDY4Nz
+czLDE5NjI5NzY2NDQsLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0z
+MTc0NzcwNzksLTcxMDI2NDExMSwtMTEyNzEzOTE1MSwtMTkxMD
+A2NDMxNywxMDc1MTgyMTgxLDEzMjM3MzQ1NTUsLTUzODUzNjQy
+Miw1MzE0MzQ4NjNdfQ==
 -->
