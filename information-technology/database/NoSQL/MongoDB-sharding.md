@@ -149,16 +149,16 @@ setParameter :
 
 데이터 분산 처리의 근간은 바로 여러 사드로 데이터를 분산시키는 기준이며, 데이터 분산 기준을 샤딩 알고리즘이라고 합니다. MongoDB에서 지원하는 샤딩 알고리즘은 세 가지가 있으며, 레인지 샤딩과 해시 샤딩은 가장 기본적인 알고리즘입니다. 
 
-태그기반의 샤딩(Tag-Aware Sharding) 또는 지역
+태그기반의 샤딩(Tag-Aware Sharding) 또는 지역 기반 샤딩은 해시 샤딩과 레인지 샤딩을 특정 샤드와 연결하는 복합적인 샤딩 알고리즘이다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE0MzI1NTMsLTc2NDYyMjY4MSwxMD
-I5NTUxNDM1LC0xNzUwNjA0OTQyLC0xMTM3NTg5ODY2LC0yOTI0
-Njg3NzMsMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOCw4NzEwOTI4MD
-QsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5MTUxLC0x
-OTEwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NSwtNTM4NT
-M2NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLDIxMzM4ODc1Miwt
-OTUwMjMxNjA4XX0=
+eyJoaXN0b3J5IjpbLTU1NjkzMTIyNCwtNzY0NjIyNjgxLDEwMj
+k1NTE0MzUsLTE3NTA2MDQ5NDIsLTExMzc1ODk4NjYsLTI5MjQ2
+ODc3MywxOTYyOTc2NjQ0LC0xODI2MTA0ODE4LDg3MTA5MjgwNC
+wtMzE3NDc3MDc5LC03MTAyNjQxMTEsLTExMjcxMzkxNTEsLTE5
+MTAwNjQzMTcsMTA3NTE4MjE4MSwxMzIzNzM0NTU1LC01Mzg1Mz
+Y0MjIsNTMxNDM0ODYzLDEwMDI2NjI5NzEsMjEzMzg4NzUyLC05
+NTAyMzE2MDhdfQ==
 -->
