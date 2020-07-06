@@ -183,15 +183,17 @@ MongoDB는 기본적으로 64MB까지 커질 수 있으며, 이 이상으로 커
 
 ### Range Sharding(레인지 샤딩)
 
+샤드 키의 값을 기준으로 범위를 나누고, 사용자 데이터가 어느 청크에 포함될지 결정하는 사딩 알고리즘이다. 샤드키의 값을 변형하지 않은 상태에서 샤드 키값의 구간에 따라 청크를 할당한다. 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NjI0MTcxNCwtMTIwMTI4MjcxMCwtMj
-ExNzc2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUyNzU0LDE4Mzg2
-ODA5NjMsLTc2NDYyMjY4MSwxMDI5NTUxNDM1LC0xNzUwNjA0OT
-QyLC0xMTM3NTg5ODY2LC0yOTI0Njg3NzMsMTk2Mjk3NjY0NCwt
-MTgyNjEwNDgxOCw4NzEwOTI4MDQsLTMxNzQ3NzA3OSwtNzEwMj
-Y0MTExLC0xMTI3MTM5MTUxLC0xOTEwMDY0MzE3LDEwNzUxODIx
-ODEsMTMyMzczNDU1NV19
+eyJoaXN0b3J5IjpbODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMD
+EyODI3MTAsLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1
+Mjc1NCwxODM4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNS
+wtMTc1MDYwNDk0MiwtMTEzNzU4OTg2NiwtMjkyNDY4NzczLDE5
+NjI5NzY2NDQsLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0zMTc0Nz
+cwNzksLTcxMDI2NDExMSwtMTEyNzEzOTE1MSwtMTkxMDA2NDMx
+NywxMDc1MTgyMTgxXX0=
 -->
