@@ -157,16 +157,16 @@ setParameter :
 
 해시 샤딩과 레인지 샤딩은 각 청크를 어느 샤드 서버에서 관리할 것인지 사용자가 결정할 수 없지만, 태그 기반 샤딩은 특정 청크를 특정 샤드에만 저장하고 처리할 수 있습니다. 
 
-청크는  샤드 
+청크는  샤드 키의 원본값또는 해시값의 일정 범위를 가집니다. 하나의 컬렉션에서 샤드 키가 가장 작은값은 MinKey이고 가장 큰 값은 MaxKey입니다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA4NjQ4NjA5LDE4Mzg2ODA5NjMsLTc2ND
-YyMjY4MSwxMDI5NTUxNDM1LC0xNzUwNjA0OTQyLC0xMTM3NTg5
-ODY2LC0yOTI0Njg3NzMsMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOC
-w4NzEwOTI4MDQsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3
-MTM5MTUxLC0xOTEwMDY0MzE3LDEwNzUxODIxODEsMTMyMzczND
-U1NSwtNTM4NTM2NDIyLDUzMTQzNDg2MywxMDAyNjYyOTcxLDIx
-MzM4ODc1Ml19
+eyJoaXN0b3J5IjpbLTE5MjM2NTI3NTQsMTgzODY4MDk2MywtNz
+Y0NjIyNjgxLDEwMjk1NTE0MzUsLTE3NTA2MDQ5NDIsLTExMzc1
+ODk4NjYsLTI5MjQ2ODc3MywxOTYyOTc2NjQ0LC0xODI2MTA0OD
+E4LDg3MTA5MjgwNCwtMzE3NDc3MDc5LC03MTAyNjQxMTEsLTEx
+MjcxMzkxNTEsLTE5MTAwNjQzMTcsMTA3NTE4MjE4MSwxMzIzNz
+M0NTU1LC01Mzg1MzY0MjIsNTMxNDM0ODYzLDEwMDI2NjI5NzEs
+MjEzMzg4NzUyXX0=
 -->
