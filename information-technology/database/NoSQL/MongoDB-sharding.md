@@ -151,10 +151,16 @@ setParameter :
 
 태그기반의 샤딩(Tag-Aware Sharding) 또는 지역 기반 샤딩은 해시 샤딩과 레인지 샤딩을 특정 샤드와 연결하는 복합적인 샤딩 알고리즘이다. 
 
+### Chunk(청크)
+
+사용자 데이터를 일정 기준으로 그룹핑해서 관리하는데, 이 그룹이 청크입니다. 레인지 샤딩과 해시 샤딩은 각 데이터를 어떤 청크에 포함시켜야할지 결정합니다. 
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NjkzMTIyNCwtNzY0NjIyNjgxLDEwMj
+eyJoaXN0b3J5IjpbMTgzODY4MDk2MywtNzY0NjIyNjgxLDEwMj
 k1NTE0MzUsLTE3NTA2MDQ5NDIsLTExMzc1ODk4NjYsLTI5MjQ2
 ODc3MywxOTYyOTc2NjQ0LC0xODI2MTA0ODE4LDg3MTA5MjgwNC
 wtMzE3NDc3MDc5LC03MTAyNjQxMTEsLTExMjcxMzkxNTEsLTE5
