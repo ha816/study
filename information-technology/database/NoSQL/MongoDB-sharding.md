@@ -159,14 +159,18 @@ setParameter :
 
 청크는  샤드 키의 원본값또는 해시값의 일정 범위를 가집니다. 하나의 컬렉션에서 샤드 키가 가장 작은값은 MinKey이고 가장 큰 값은 MaxKey입니다. 
 
+![Diagram of the shard key value space segmented into smaller ranges or chunks.](https://docs.mongodb.com/manual/_images/sharding-range-based.bakedsvg.svg)
+
+
+위 그림에서 처럼 실제 서비스에서 샤드
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjM2NTI3NTQsMTgzODY4MDk2MywtNz
-Y0NjIyNjgxLDEwMjk1NTE0MzUsLTE3NTA2MDQ5NDIsLTExMzc1
-ODk4NjYsLTI5MjQ2ODc3MywxOTYyOTc2NjQ0LC0xODI2MTA0OD
-E4LDg3MTA5MjgwNCwtMzE3NDc3MDc5LC03MTAyNjQxMTEsLTEx
-MjcxMzkxNTEsLTE5MTAwNjQzMTcsMTA3NTE4MjE4MSwxMzIzNz
-M0NTU1LC01Mzg1MzY0MjIsNTMxNDM0ODYzLDEwMDI2NjI5NzEs
-MjEzMzg4NzUyXX0=
+eyJoaXN0b3J5IjpbMTYyMzI1NDE3MCwtMTkyMzY1Mjc1NCwxOD
+M4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYw
+NDk0MiwtMTEzNzU4OTg2NiwtMjkyNDY4NzczLDE5NjI5NzY2ND
+QsLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0zMTc0NzcwNzksLTcx
+MDI2NDExMSwtMTEyNzEzOTE1MSwtMTkxMDA2NDMxNywxMDc1MT
+gyMTgxLDEzMjM3MzQ1NTUsLTUzODUzNjQyMiw1MzE0MzQ4NjMs
+MTAwMjY2Mjk3MV19
 -->
