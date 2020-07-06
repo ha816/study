@@ -164,15 +164,15 @@ setParameter :
 
 위 그림 처럼 실제 서비스에서 샤드 키 값의 단위가 일정하지 않습니다. 
 
-청크는 물리적인 의미를 가지지 않으며, 논리적으로만 존재하는 개념입니다. 
+청크는 물리적인 의미를 가지지 않으며, 논리적으로만 존재하는 개념입니다. 즉 청크 단위로 데이터 파일이 생성되거나 데이터가 모여 있지 않습니다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1OTE4MTQwMCwtMTkyMzY1Mjc1NCwxOD
-M4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYw
-NDk0MiwtMTEzNzU4OTg2NiwtMjkyNDY4NzczLDE5NjI5NzY2ND
-QsLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0zMTc0NzcwNzksLTcx
-MDI2NDExMSwtMTEyNzEzOTE1MSwtMTkxMDA2NDMxNywxMDc1MT
-gyMTgxLDEzMjM3MzQ1NTUsLTUzODUzNjQyMiw1MzE0MzQ4NjMs
-MTAwMjY2Mjk3MV19
+eyJoaXN0b3J5IjpbMjA4MDM5ODM4OSwxMjU5MTgxNDAwLC0xOT
+IzNjUyNzU0LDE4Mzg2ODA5NjMsLTc2NDYyMjY4MSwxMDI5NTUx
+NDM1LC0xNzUwNjA0OTQyLC0xMTM3NTg5ODY2LC0yOTI0Njg3Nz
+MsMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOCw4NzEwOTI4MDQsLTMx
+NzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5MTUxLC0xOTEwMD
+Y0MzE3LDEwNzUxODIxODEsMTMyMzczNDU1NSwtNTM4NTM2NDIy
+LDUzMTQzNDg2M119
 -->
