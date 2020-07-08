@@ -216,13 +216,18 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 
 중요한 점은 사실 근본적으로 해시 샤딩도 레인지 샤딩의 일종입니다. 차이점은 MD5 암호화해시함수로 해시함수를 거친 샤드키 값이 전체 범위에 대해서 골고루 분산되는 것 입니다. 
 
+따라서 해시 샤딩은 레인지 샤딩이 가지던 아래 단점을 피할 수 있습니다. 
+
+* 샤드키 값이 특정 범위에 집중될때 발생하는 데이터 불균형
+* 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5Mjc3MzA4MSwyMDg3MDYzODczLC00Mz
-gwMjExMywxMTQxMDY3MzQzLDQ4MDgyNDc1Miw4NjA4ODIxMTAs
-MTk2NjI0MTcxNCwtMTIwMTI4MjcxMCwtMjExNzc2ODg5NCwxMj
-U5MTgxNDAwLC0xOTIzNjUyNzU0LDE4Mzg2ODA5NjMsLTc2NDYy
-MjY4MSwxMDI5NTUxNDM1LC0xNzUwNjA0OTQyLC0xMTM3NTg5OD
-Y2LC0yOTI0Njg3NzMsMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOCw4
-NzEwOTI4MDRdfQ==
+eyJoaXN0b3J5IjpbNzIwMjYyODQsMTI5Mjc3MzA4MSwyMDg3MD
+YzODczLC00MzgwMjExMywxMTQxMDY3MzQzLDQ4MDgyNDc1Miw4
+NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4MjcxMCwtMjExNz
+c2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUyNzU0LDE4Mzg2ODA5
+NjMsLTc2NDYyMjY4MSwxMDI5NTUxNDM1LC0xNzUwNjA0OTQyLC
+0xMTM3NTg5ODY2LC0yOTI0Njg3NzMsMTk2Mjk3NjY0NCwtMTgy
+NjEwNDgxOF19
 -->
