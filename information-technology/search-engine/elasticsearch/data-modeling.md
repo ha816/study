@@ -182,7 +182,7 @@ Hash (_routing) % num_of_shards -- 해시로 분산
 * 객체 또는 중첩문과 같은 JSON 계층의 데이터 타입
 * geo_point, geo_shape 같은 특수한 데이터 타입
 
-### Kkeyword  필드 타입
+### Keyword  필드 타입
 
 말 그대로 키워드 형태로 사용할 데이터에 적잡한 데이터 타입이다. **Keyword 타입을 사용할 경우 별도의 분석기를 거치지 않고 원문 그대로 색인하기 때문에 특정 코드나 키워드등 정형화된 컨텐츠에 주로 사용한다.** 엘라스틱서치의 일부 기능은 형태소 분석을 하지 않아야만 사용이 가능한데 이 경우에도 keyword를 사용한다.
 
@@ -233,7 +233,7 @@ Object 객체 배열을 독립적으로 색인하고 질의하는 형태의 데�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNDM0NzAsLTE4NjM5NDIwMjksLTk4Mz
-IxMDU1NSwyOTc5Njg0NCwtMTUzMjczMzU0OCwtMTg3MDE3ODkx
-OV19
+eyJoaXN0b3J5IjpbOTUwMTA5MzM5LC0zMTQzNDcwLC0xODYzOT
+QyMDI5LC05ODMyMTA1NTUsMjk3OTY4NDQsLTE1MzI3MzM1NDgs
+LTE4NzAxNzg5MTldfQ==
 -->
