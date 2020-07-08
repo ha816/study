@@ -223,13 +223,15 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 
 하지만 해시 샤딩이라 하더라도 샤드 키 값의 원본이 같다면 해시 결과도 같기 때문에 샤드키의 다양성(Cardinality)가 떨어지면 해시 샤동도 점보 청크가 발생하는 현상을 피할 수는 없습니다. 
 
+> 기본적인 청크 제한 크기가 64MB이기 때문에, 가능하면 동일한 샤드 키 값을 가지는 문서 데이터 크기가 64MB보다 작도로 샤드키를 선택해야 합니다. 예를 들어, 한 문서의 크기가 512B라
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MjU2Mjc0MiwxMjkyNzczMDgxLDIwOD
-cwNjM4NzMsLTQzODAyMTEzLDExNDEwNjczNDMsNDgwODI0NzUy
-LDg2MDg4MjExMCwxOTY2MjQxNzE0LC0xMjAxMjgyNzEwLC0yMT
-E3NzY4ODk0LDEyNTkxODE0MDAsLTE5MjM2NTI3NTQsMTgzODY4
-MDk2MywtNzY0NjIyNjgxLDEwMjk1NTE0MzUsLTE3NTA2MDQ5ND
-IsLTExMzc1ODk4NjYsLTI5MjQ2ODc3MywxOTYyOTc2NjQ0LC0x
-ODI2MTA0ODE4XX0=
+eyJoaXN0b3J5IjpbMjU4NTY1NTAxLDEyOTI3NzMwODEsMjA4Nz
+A2Mzg3MywtNDM4MDIxMTMsMTE0MTA2NzM0Myw0ODA4MjQ3NTIs
+ODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEyODI3MTAsLTIxMT
+c3Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mjc1NCwxODM4Njgw
+OTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYwNDk0Mi
+wtMTEzNzU4OTg2NiwtMjkyNDY4NzczLDE5NjI5NzY2NDQsLTE4
+MjYxMDQ4MThdfQ==
 -->
