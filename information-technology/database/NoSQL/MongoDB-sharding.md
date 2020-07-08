@@ -210,11 +210,11 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 
 해시 샤딩은 레인지 샤딩과 달리 샤드 키값을 그대로 청크할당에 활용하는 것이 아니라, 샤드 키 값의 해시 값으로 청크할당을 하는 샤딩 방식입니다. 일반적으로 DBMS에서 사용하는 해시함수는 결과값이 전반적으로 골고루 분산될 수 있는 암호화 해시함수를 주로 사용하는데, MongoDB는 MD5를 사용합니다. 
 
-해시 샤딩 값은 샤드 키값으로 해시 값을 계산한 후, 앞쪽 64bit를 짤라서 64비트 정수형으로 사용합니다; 
+해시 샤딩 값은 샤드 키값으로 해시 값을 계산한 후, 앞쪽 64bit를 짤라서 64비트 정수형으로 사용합니다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3ODY3MDg4MSwyMDg3MDYzODczLC00Mz
+eyJoaXN0b3J5IjpbLTc1NDU5NzI5NCwyMDg3MDYzODczLC00Mz
 gwMjExMywxMTQxMDY3MzQzLDQ4MDgyNDc1Miw4NjA4ODIxMTAs
 MTk2NjI0MTcxNCwtMTIwMTI4MjcxMCwtMjExNzc2ODg5NCwxMj
 U5MTgxNDAwLC0xOTIzNjUyNzU0LDE4Mzg2ODA5NjMsLTc2NDYy
