@@ -189,16 +189,15 @@ MongoDB는 기본적으로 64MB까지 커질 수 있으며, 이 이상으로 커
 
 > mongoDB에서는 청크의 범위를 표시할때 대괄호([,])와 소괄호(())를 구분해서 사용합니다. 대괄호는 경계에 있는 값이 현재 범위에 포함되는 것을 말하고 소괄호는 경계값이 포함되지 않는 것을 의미합니다.
 
-
-레인지 샤딩의
+레인지 샤딩의 핵심은 **샤드 키 값이 별도의 변형과정을 거치지 않고** 그 자체로 정렬되어서 각 청크의 범위가 결정됩니다. 실제 각 청크가 어느 서버로 저장될지는 레인지 샤딩
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMDk1NTcwOCw4NjA4ODIxMTAsMTk2Nj
-I0MTcxNCwtMTIwMTI4MjcxMCwtMjExNzc2ODg5NCwxMjU5MTgx
-NDAwLC0xOTIzNjUyNzU0LDE4Mzg2ODA5NjMsLTc2NDYyMjY4MS
-wxMDI5NTUxNDM1LC0xNzUwNjA0OTQyLC0xMTM3NTg5ODY2LC0y
-OTI0Njg3NzMsMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOCw4NzEwOT
-I4MDQsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5MTUx
-LC0xOTEwMDY0MzE3XX0=
+eyJoaXN0b3J5IjpbLTEzNTQ5NjAyOTYsODYwODgyMTEwLDE5Nj
+YyNDE3MTQsLTEyMDEyODI3MTAsLTIxMTc3Njg4OTQsMTI1OTE4
+MTQwMCwtMTkyMzY1Mjc1NCwxODM4NjgwOTYzLC03NjQ2MjI2OD
+EsMTAyOTU1MTQzNSwtMTc1MDYwNDk0MiwtMTEzNzU4OTg2Niwt
+MjkyNDY4NzczLDE5NjI5NzY2NDQsLTE4MjYxMDQ4MTgsODcxMD
+kyODA0LC0zMTc0NzcwNzksLTcxMDI2NDExMSwtMTEyNzEzOTE1
+MSwtMTkxMDA2NDMxN119
 -->
