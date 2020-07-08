@@ -17,10 +17,9 @@ GET movie_search/_mapping -- 생성된 index movie_search 매핑 정보 가져�
 
 ## [Field Data Types](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html)
 
-Elasticsearch supports a number of different data types for the fields in a document:
+엘라스틱서치는 한 문서안에서 필드들을 위한 다양한 종류의 데이터 타입을 지원합니다.
 
-### [](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html#_core_datatypes)Core data types[edit](https://github.com/elastic/elasticsearch/edit/7.8/docs/reference/mapping/types.asciidoc "Edit this page on GitHub")
-
+### Core data types
 string
 
 [`text`](https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html "Text data type")  and  [`keyword`](https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html "Keyword data type")
@@ -48,6 +47,7 @@ string
 [Range](https://www.elastic.co/guide/en/elasticsearch/reference/current/range.html "Range data types")
 
 `integer_range`,  `float_range`,  `long_range`,  `double_range`,  `date_range`,  `ip_range`
+
 
 ### [](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html#_complex_data_types)Complex data types[edit](https://github.com/elastic/elasticsearch/edit/7.8/docs/reference/mapping/types.asciidoc "Edit this page on GitHub")
 
@@ -361,6 +361,6 @@ Object 객체 배열을 독립적으로 색인하고 질의하는 형태의 데�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk3OTY4NDQsLTE1MzI3MzM1NDgsLTE4Nz
-AxNzg5MTldfQ==
+eyJoaXN0b3J5IjpbLTk4MzIxMDU1NSwyOTc5Njg0NCwtMTUzMj
+czMzU0OCwtMTg3MDE3ODkxOV19
 -->
