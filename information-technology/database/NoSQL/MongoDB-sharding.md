@@ -227,16 +227,17 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 
 해시 샤딩은 레인지 샤딩에 비해서 사용시 제약사항은 더 많습니다. 
 
-* 범위 검색 쿼리는 브로드캐스트 쿼리(Broadcast Query)로 실행
+* 범위 검색 쿼리는 브로드캐스트 쿼리(Broadcast Query)로 실행	
+	* 
 * 샤드 키 필드에 대해 해시 인덱스를 생성해야 함
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTE2ODE0NDUsMTI5Mjc3MzA4MSwyMD
-g3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLDQ4MDgyNDc1
-Miw4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4MjcxMCwtMj
-ExNzc2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUyNzU0LDE4Mzg2
-ODA5NjMsLTc2NDYyMjY4MSwxMDI5NTUxNDM1LC0xNzUwNjA0OT
-QyLC0xMTM3NTg5ODY2LC0yOTI0Njg3NzMsMTk2Mjk3NjY0NCwt
-MTgyNjEwNDgxOF19
+eyJoaXN0b3J5IjpbMTUxNzkxMzY5OSwtMTcxMTY4MTQ0NSwxMj
+kyNzczMDgxLDIwODcwNjM4NzMsLTQzODAyMTEzLDExNDEwNjcz
+NDMsNDgwODI0NzUyLDg2MDg4MjExMCwxOTY2MjQxNzE0LC0xMj
+AxMjgyNzEwLC0yMTE3NzY4ODk0LDEyNTkxODE0MDAsLTE5MjM2
+NTI3NTQsMTgzODY4MDk2MywtNzY0NjIyNjgxLDEwMjk1NTE0Mz
+UsLTE3NTA2MDQ5NDIsLTExMzc1ODk4NjYsLTI5MjQ2ODc3Mywx
+OTYyOTc2NjQ0XX0=
 -->
