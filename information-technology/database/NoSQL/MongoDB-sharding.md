@@ -204,15 +204,15 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 >점보청크
 >MongoDB에선 동일한 샤드키 값은 반드시 하나의 청크에만 포함될 수 있습니다. 극단적으로 모든 문서의 특정 필드가 동일한 필드 값을 가진다고 가정하면 모든 데이터가 하나의 청크에만 포함되게 됩니다. 따라서 해당 청크는 매우 커질것이고 이를 쪼갤 수도 없습니다. 이러한 청크를 점보 청크라고 부릅니다. 점보 청크에 대해서 MongoDB서버는 모든 관리작업(스플릿, 청크 마이그레이션)을 포기하게 됩니다. 
 
-
+결론적으로 레인지 샤딩을 언제 시용해야하는지 궁금할 것입니다. 일반
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzODAyMTEzLDExNDEwNjczNDMsNDgwOD
-I0NzUyLDg2MDg4MjExMCwxOTY2MjQxNzE0LC0xMjAxMjgyNzEw
-LC0yMTE3NzY4ODk0LDEyNTkxODE0MDAsLTE5MjM2NTI3NTQsMT
-gzODY4MDk2MywtNzY0NjIyNjgxLDEwMjk1NTE0MzUsLTE3NTA2
-MDQ5NDIsLTExMzc1ODk4NjYsLTI5MjQ2ODc3MywxOTYyOTc2Nj
-Q0LC0xODI2MTA0ODE4LDg3MTA5MjgwNCwtMzE3NDc3MDc5LC03
-MTAyNjQxMTFdfQ==
+eyJoaXN0b3J5IjpbLTE2NDc3MDMxMjcsLTQzODAyMTEzLDExND
+EwNjczNDMsNDgwODI0NzUyLDg2MDg4MjExMCwxOTY2MjQxNzE0
+LC0xMjAxMjgyNzEwLC0yMTE3NzY4ODk0LDEyNTkxODE0MDAsLT
+E5MjM2NTI3NTQsMTgzODY4MDk2MywtNzY0NjIyNjgxLDEwMjk1
+NTE0MzUsLTE3NTA2MDQ5NDIsLTExMzc1ODk4NjYsLTI5MjQ2OD
+c3MywxOTYyOTc2NjQ0LC0xODI2MTA0ODE4LDg3MTA5MjgwNCwt
+MzE3NDc3MDc5XX0=
 -->
