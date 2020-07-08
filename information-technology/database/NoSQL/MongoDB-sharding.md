@@ -219,15 +219,17 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 따라서 해시 샤딩은 레인지 샤딩이 가지던 아래 단점을 피할 수 있습니다. 
 
 * 샤드키 값이 특정 범위에 집중될때 발생하는 데이터 불균형
-* 
+* 연속되 샤드 키 접근으로 특정 샤드 서버에 편중된 부하
+
+하지만 해시 샤딩이라 하더라도 샤드 키 값의 원본이 같다면 해시 결과도 같기 때문에 샤드키의 다양성(Cardinality)가 떨어지면 해시 샤동도 점보 청크가 발생하는 현상을 피할 수는 없습니다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIwMjYyODQsMTI5Mjc3MzA4MSwyMDg3MD
-YzODczLC00MzgwMjExMywxMTQxMDY3MzQzLDQ4MDgyNDc1Miw4
-NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4MjcxMCwtMjExNz
-c2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUyNzU0LDE4Mzg2ODA5
-NjMsLTc2NDYyMjY4MSwxMDI5NTUxNDM1LC0xNzUwNjA0OTQyLC
-0xMTM3NTg5ODY2LC0yOTI0Njg3NzMsMTk2Mjk3NjY0NCwtMTgy
-NjEwNDgxOF19
+eyJoaXN0b3J5IjpbLTU3MjU2Mjc0MiwxMjkyNzczMDgxLDIwOD
+cwNjM4NzMsLTQzODAyMTEzLDExNDEwNjczNDMsNDgwODI0NzUy
+LDg2MDg4MjExMCwxOTY2MjQxNzE0LC0xMjAxMjgyNzEwLC0yMT
+E3NzY4ODk0LDEyNTkxODE0MDAsLTE5MjM2NTI3NTQsMTgzODY4
+MDk2MywtNzY0NjIyNjgxLDEwMjk1NTE0MzUsLTE3NTA2MDQ5ND
+IsLTExMzc1ODk4NjYsLTI5MjQ2ODc3MywxOTYyOTc2NjQ0LC0x
+ODI2MTA0ODE4XX0=
 -->
