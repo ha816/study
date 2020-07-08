@@ -245,7 +245,10 @@ db.users.insert({
 });
 
 db.users.createIndex({ name: "hashed" }) // 단일필드 인덱스 생성가능
-db.users.createIndex({ c: "hashed" }) // 단일필드 인덱스 생성가능
+db.users.createIndex({ country: "hashed" }) // 단일필드 인덱스 생성가능
+db.users.createIndex({ composite_field: "hashed"}) // 단일필드 인덱스 생성가능
+db.users.createIndex({ name: "hashed" , country: "hashed" }) // 복합필드 인덱스 생성불가
+
 
 ```
 
@@ -253,11 +256,11 @@ db.users.createIndex({ c: "hashed" }) // 단일필드 인덱스 생성가능
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MjE3NDAxMywtMTM3MDg1Nzc5Niw4Mj
-k3MzEyMzYsLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3
-MzA4MSwyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLD
-Q4MDgyNDc1Miw4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4
-MjcxMCwtMjExNzc2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUyNz
-U0LDE4Mzg2ODA5NjMsLTc2NDYyMjY4MSwxMDI5NTUxNDM1LC0x
-NzUwNjA0OTQyXX0=
+eyJoaXN0b3J5IjpbLTIxMjIxNjQ3MjksLTEzNzA4NTc3OTYsOD
+I5NzMxMjM2LC0yMTA2Mzc1OTEwLC0xNzExNjgxNDQ1LDEyOTI3
+NzMwODEsMjA4NzA2Mzg3MywtNDM4MDIxMTMsMTE0MTA2NzM0My
+w0ODA4MjQ3NTIsODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEy
+ODI3MTAsLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mj
+c1NCwxODM4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwt
+MTc1MDYwNDk0Ml19
 -->
