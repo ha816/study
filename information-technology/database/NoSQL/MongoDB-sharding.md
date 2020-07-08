@@ -195,15 +195,17 @@ MongoDB는 기본적으로 64MB까지 커질 수 있으며, 이 이상으로 커
 
 앞서 말한 레인지 샤딩은 샤드키로 선정된 필드의 값을 변형하지 않고 비교 정렬을 하는데, 이러 인해서 레인지 샤딩의 장점과 단점이 정해집니다. 
 
-장점은 검색 쿼리를 타켓 쿼리로 실행할 수 있다는 점 입니다. 
+장점은 검색 쿼리를 타켓 쿼리로 실행할 수 있다는 점 입니다. 특정 필드의 값을 변형없이 그대로 정해진 청크 범위로 판단하여 해당 청크가 있는 샤드에만 요청처리를 보냅니다. 
+
+단점은 각 샤드에 데이터가 균형있게 분산되지 않을 가능성이 높다는 점입니다. 데이터가 일정 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgwODI0NzUyLDg2MDg4MjExMCwxOTY2Mj
-QxNzE0LC0xMjAxMjgyNzEwLC0yMTE3NzY4ODk0LDEyNTkxODE0
-MDAsLTE5MjM2NTI3NTQsMTgzODY4MDk2MywtNzY0NjIyNjgxLD
-EwMjk1NTE0MzUsLTE3NTA2MDQ5NDIsLTExMzc1ODk4NjYsLTI5
-MjQ2ODc3MywxOTYyOTc2NjQ0LC0xODI2MTA0ODE4LDg3MTA5Mj
-gwNCwtMzE3NDc3MDc5LC03MTAyNjQxMTEsLTExMjcxMzkxNTEs
-LTE5MTAwNjQzMTddfQ==
+eyJoaXN0b3J5IjpbLTkzMjUzMzg2Nyw0ODA4MjQ3NTIsODYwOD
+gyMTEwLDE5NjYyNDE3MTQsLTEyMDEyODI3MTAsLTIxMTc3Njg4
+OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mjc1NCwxODM4NjgwOTYzLC
+03NjQ2MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYwNDk0MiwtMTEz
+NzU4OTg2NiwtMjkyNDY4NzczLDE5NjI5NzY2NDQsLTE4MjYxMD
+Q4MTgsODcxMDkyODA0LC0zMTc0NzcwNzksLTcxMDI2NDExMSwt
+MTEyNzEzOTE1MV19
 -->
