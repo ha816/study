@@ -202,15 +202,17 @@ MongoDB는 기본적으로 64MB까지 커질 수 있으며, 이 이상으로 커
 MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수 있습니다. 
 
 >점보청크
->MongoDB에선 동일한 샤드키 값은 반드시 하나의 청크에만 포함될 수 있습니다. 극단적으로 모든 문서의 특정 필드가 동일한 필드 값을 가진다고 가정하면 모든 데이터가 하나의 청크에만 포함되
+>MongoDB에선 동일한 샤드키 값은 반드시 하나의 청크에만 포함될 수 있습니다. 극단적으로 모든 문서의 특정 필드가 동일한 필드 값을 가진다고 가정하면 모든 데이터가 하나의 청크에만 포함되게 됩니다. 따라서 해당 청크는 매우 커질것이고 이를 쪼갤 수도 없습니다. 이러한 청크를 점보 청크라고 부릅니다. 점보 청크에 대해서 MongoDB서버는 모든 관리작업(스플릿, 청크 마이그레이션)을 포기하게 됩니다. 
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDc1MzgwODgsMTE0MTA2NzM0Myw0OD
-A4MjQ3NTIsODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEyODI3
-MTAsLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mjc1NC
-wxODM4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwtMTc1
-MDYwNDk0MiwtMTEzNzU4OTg2NiwtMjkyNDY4NzczLDE5NjI5Nz
-Y2NDQsLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0zMTc0NzcwNzks
-LTcxMDI2NDExMV19
+eyJoaXN0b3J5IjpbLTQzODAyMTEzLDExNDEwNjczNDMsNDgwOD
+I0NzUyLDg2MDg4MjExMCwxOTY2MjQxNzE0LC0xMjAxMjgyNzEw
+LC0yMTE3NzY4ODk0LDEyNTkxODE0MDAsLTE5MjM2NTI3NTQsMT
+gzODY4MDk2MywtNzY0NjIyNjgxLDEwMjk1NTE0MzUsLTE3NTA2
+MDQ5NDIsLTExMzc1ODk4NjYsLTI5MjQ2ODc3MywxOTYyOTc2Nj
+Q0LC0xODI2MTA0ODE4LDg3MTA5MjgwNCwtMzE3NDc3MDc5LC03
+MTAyNjQxMTFdfQ==
 -->
