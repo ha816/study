@@ -185,15 +185,17 @@ MongoDB는 기본적으로 64MB까지 커질 수 있으며, 이 이상으로 커
 
 샤드 키의 값을 기준으로 범위를 나누고, 사용자 데이터가 어느 청크에 포함될지 결정하는 사딩 알고리즘이다. 샤드키의 값을 변형하지 않은 상태에서 샤드 키값의 구간에 따라 청크를 할당한다. 
 
+![Ranged Sharding — MongoDB Manual](https://docs.mongodb.com/manual/_images/sharded-cluster-ranged-distribution-good.bakedsvg.svg)
 
+> mongoDB에서는 청크의 범위를 표시할때 대괄호([,])와 소괄호(())를 구분해서 사용합니다. 대괄호는 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMD
-EyODI3MTAsLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1
-Mjc1NCwxODM4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNS
-wtMTc1MDYwNDk0MiwtMTEzNzU4OTg2NiwtMjkyNDY4NzczLDE5
-NjI5NzY2NDQsLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0zMTc0Nz
-cwNzksLTcxMDI2NDExMSwtMTEyNzEzOTE1MSwtMTkxMDA2NDMx
-NywxMDc1MTgyMTgxXX0=
+eyJoaXN0b3J5IjpbMTU5Mjk0NTQyMCw4NjA4ODIxMTAsMTk2Nj
+I0MTcxNCwtMTIwMTI4MjcxMCwtMjExNzc2ODg5NCwxMjU5MTgx
+NDAwLC0xOTIzNjUyNzU0LDE4Mzg2ODA5NjMsLTc2NDYyMjY4MS
+wxMDI5NTUxNDM1LC0xNzUwNjA0OTQyLC0xMTM3NTg5ODY2LC0y
+OTI0Njg3NzMsMTk2Mjk3NjY0NCwtMTgyNjEwNDgxOCw4NzEwOT
+I4MDQsLTMxNzQ3NzA3OSwtNzEwMjY0MTExLC0xMTI3MTM5MTUx
+LC0xOTEwMDY0MzE3XX0=
 -->
