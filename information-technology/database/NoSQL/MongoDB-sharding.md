@@ -202,15 +202,15 @@ MongoDB는 기본적으로 64MB까지 커질 수 있으며, 이 이상으로 커
 MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수 있습니다. 
 
 >점보청크
->MongoDB에선 동일한 샤드키 값은 반드시 하나의 청크에만 포함될 수 있습니다. 극단적으로 모든 문서의 특정 필드가 동일한 필드 값을 가진다고 생각해봅시다. 
+>MongoDB에선 동일한 샤드키 값은 반드시 하나의 청크에만 포함될 수 있습니다. 극단적으로 모든 문서의 특정 필드가 동일한 필드 값을 가진다고 가정하면 모든 데이터가 하나의 청크에만 포함되
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MTA2NzM0Myw0ODA4MjQ3NTIsODYwOD
-gyMTEwLDE5NjYyNDE3MTQsLTEyMDEyODI3MTAsLTIxMTc3Njg4
-OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mjc1NCwxODM4NjgwOTYzLC
-03NjQ2MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYwNDk0MiwtMTEz
-NzU4OTg2NiwtMjkyNDY4NzczLDE5NjI5NzY2NDQsLTE4MjYxMD
-Q4MTgsODcxMDkyODA0LC0zMTc0NzcwNzksLTcxMDI2NDExMSwt
-MTEyNzEzOTE1MV19
+eyJoaXN0b3J5IjpbLTEwNDc1MzgwODgsMTE0MTA2NzM0Myw0OD
+A4MjQ3NTIsODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEyODI3
+MTAsLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mjc1NC
+wxODM4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwtMTc1
+MDYwNDk0MiwtMTEzNzU4OTg2NiwtMjkyNDY4NzczLDE5NjI5Nz
+Y2NDQsLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0zMTc0NzcwNzks
+LTcxMDI2NDExMV19
 -->
