@@ -20,13 +20,12 @@ GET movie_search/_mapping -- 생성된 index movie_search 매핑 정보 가져�
 엘라스틱서치는 한 문서안에서 필드들을 위한 다양한 종류의 데이터 타입을 지원합니다.
 
 ### Core data types
-string
 
-[`text`](https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html "Text data type")  and  [`keyword`](https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html "Keyword data type")
+string
+: [`text`](https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html "Text data type")  and  [`keyword`](https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html "Keyword data type")
 
 [Numeric](https://www.elastic.co/guide/en/elasticsearch/reference/current/number.html "Numeric data types")
-
-`long`,  `integer`,  `short`,  `byte`,  `double`,  `float`,  `half_float`,  `scaled_float`
+: `long`,  `integer`,  `short`,  `byte`,  `double`,  `float`,  `half_float`,  `scaled_float`
 
 [Date](https://www.elastic.co/guide/en/elasticsearch/reference/current/date.html "Date data type")
 
@@ -361,6 +360,6 @@ Object 객체 배열을 독립적으로 색인하고 질의하는 형태의 데�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MzIxMDU1NSwyOTc5Njg0NCwtMTUzMj
-czMzU0OCwtMTg3MDE3ODkxOV19
+eyJoaXN0b3J5IjpbLTE4NjM5NDIwMjksLTk4MzIxMDU1NSwyOT
+c5Njg0NCwtMTUzMjczMzU0OCwtMTg3MDE3ODkxOV19
 -->
