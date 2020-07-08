@@ -263,12 +263,14 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 
 사실 75000000000는 해시 결과값이기 때문에 문제가 되는 user_name 샤드키 값이 문제인지 알수가 없다. 따라서 user_name 필드로 집계 쿼리를 실행하여 동일한 user_name 값을 가지는 문서 수를 확인해보아야 합니다. 
 
-##
+### 지역기반 샤딩(Zone Sharding)
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQ4ODE3NzUsLTEwNjYxNzU2OTUsLT
+eyJoaXN0b3J5IjpbLTEzMTgwNjE5NzcsLTEwNjYxNzU2OTUsLT
 EzNzA4NTc3OTYsODI5NzMxMjM2LC0yMTA2Mzc1OTEwLC0xNzEx
 NjgxNDQ1LDEyOTI3NzMwODEsMjA4NzA2Mzg3MywtNDM4MDIxMT
 MsMTE0MTA2NzM0Myw0ODA4MjQ3NTIsODYwODgyMTEwLDE5NjYy
