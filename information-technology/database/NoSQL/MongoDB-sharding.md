@@ -234,19 +234,28 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 다시 해시 인덱스의 제약사항은 아래와 같습니다.
 
 * 단일 필드만 해시 인덱스 생성 가능(복수 필드로 만드는 복합 인덱스 불가)
-	* 단일 필드가 
 * 부동 소수점 필드는 소수점 이하를 버리고 함수 수행
 
+
+```
+db.users.insert({
+	name: "matt",
+	country: "korea",
+	composite_field: {name:"matt", country:"korea"}
+});
+
+db.users.createIndex()
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzA4NTc3OTYsODI5NzMxMjM2LC0yMT
-A2Mzc1OTEwLC0xNzExNjgxNDQ1LDEyOTI3NzMwODEsMjA4NzA2
-Mzg3MywtNDM4MDIxMTMsMTE0MTA2NzM0Myw0ODA4MjQ3NTIsOD
-YwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEyODI3MTAsLTIxMTc3
-Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mjc1NCwxODM4NjgwOT
-YzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYwNDk0Miwt
-MTEzNzU4OTg2Nl19
+eyJoaXN0b3J5IjpbLTQxNzc4ODEzMCwtMTM3MDg1Nzc5Niw4Mj
+k3MzEyMzYsLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3
+MzA4MSwyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLD
+Q4MDgyNDc1Miw4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4
+MjcxMCwtMjExNzc2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUyNz
+U0LDE4Mzg2ODA5NjMsLTc2NDYyMjY4MSwxMDI5NTUxNDM1LC0x
+NzUwNjA0OTQyXX0=
 -->
