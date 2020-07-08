@@ -244,14 +244,16 @@ db.users.insert({
 	composite_field: {name:"matt", country:"korea"}
 });
 
-db.users.createIndex()
+db.users.createIndex({ name: "hashed" }) // 단일필드 인덱스 생성가능
+db.users.createIndex({ c: "hashed" }) // 단일필드 인덱스 생성가능
+
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNzc4ODEzMCwtMTM3MDg1Nzc5Niw4Mj
+eyJoaXN0b3J5IjpbLTk0MjE3NDAxMywtMTM3MDg1Nzc5Niw4Mj
 k3MzEyMzYsLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3
 MzA4MSwyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLD
 Q4MDgyNDc1Miw4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4
