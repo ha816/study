@@ -230,14 +230,15 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 * 범위 검색 쿼리는 브로드캐스트 쿼리(Broadcast Query)로 실행	
 	* 범위 안의 모든 값들에 대해 해시 값을 구하고 타켓 쿼리를 찾는것보다 단순히 브로드 캐스트로 찾는게 효율적이다. 
 * 샤드 키 필드에 대해 해시 인덱스를 생성해야 함
+	* 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MDUzMjk0LC0xNzExNjgxNDQ1LDEyOT
-I3NzMwODEsMjA4NzA2Mzg3MywtNDM4MDIxMTMsMTE0MTA2NzM0
-Myw0ODA4MjQ3NTIsODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMD
-EyODI3MTAsLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1
-Mjc1NCwxODM4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNS
-wtMTc1MDYwNDk0MiwtMTEzNzU4OTg2NiwtMjkyNDY4NzczLDE5
-NjI5NzY2NDRdfQ==
+eyJoaXN0b3J5IjpbMjI0NDA5NzQsLTE3MTE2ODE0NDUsMTI5Mj
+c3MzA4MSwyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQz
+LDQ4MDgyNDc1Miw4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMT
+I4MjcxMCwtMjExNzc2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUy
+NzU0LDE4Mzg2ODA5NjMsLTc2NDYyMjY4MSwxMDI5NTUxNDM1LC
+0xNzUwNjA0OTQyLC0xMTM3NTg5ODY2LC0yOTI0Njg3NzMsMTk2
+Mjk3NjY0NF19
 -->
