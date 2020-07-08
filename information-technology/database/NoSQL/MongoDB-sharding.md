@@ -234,11 +234,11 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 다시 해시 인덱스의 제약사항은 아래와 같습니다.
 
 * 단일 필드만 해시 인덱스 생성 가능(멀티 키, 복합 인덱스는 해시 인덱스 불가)
-* 부동 소수점 필드는 
+* 부동 소수점 필드는 소수점 이하를 버리고 함수 수행
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE0NDc5NDMsLTE3MTE2ODE0NDUsMT
+eyJoaXN0b3J5IjpbLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMT
 I5Mjc3MzA4MSwyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3
 MzQzLDQ4MDgyNDc1Miw4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMT
 IwMTI4MjcxMCwtMjExNzc2ODg5NCwxMjU5MTgxNDAwLC0xOTIz
