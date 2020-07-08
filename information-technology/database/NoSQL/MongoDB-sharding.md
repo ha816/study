@@ -261,16 +261,18 @@ MongoDB에서 하나의 청크가 너무 커지면 아래 로그가 MongoDB 서�
 warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75000000000}
 ```
 
-사실 75000000000는 해시 결과값이기 때문에 문제가 되는 user_name 샤드키 값이 문제인지 알수가 없다. 따라서 user_name 필드로 집계 쿼리를 실행하여 동일한 use
+사실 75000000000는 해시 결과값이기 때문에 문제가 되는 user_name 샤드키 값이 문제인지 알수가 없다. 따라서 user_name 필드로 집계 쿼리를 실행하여 동일한 user_name 값을 가지는 문서 수를 확인해보아야 합니다. 
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NzA0OTYwNywtMTM3MDg1Nzc5Niw4Mj
-k3MzEyMzYsLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3
-MzA4MSwyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLD
-Q4MDgyNDc1Miw4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4
-MjcxMCwtMjExNzc2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUyNz
-U0LDE4Mzg2ODA5NjMsLTc2NDYyMjY4MSwxMDI5NTUxNDM1LC0x
-NzUwNjA0OTQyXX0=
+eyJoaXN0b3J5IjpbLTEwNjYxNzU2OTUsLTEzNzA4NTc3OTYsOD
+I5NzMxMjM2LC0yMTA2Mzc1OTEwLC0xNzExNjgxNDQ1LDEyOTI3
+NzMwODEsMjA4NzA2Mzg3MywtNDM4MDIxMTMsMTE0MTA2NzM0My
+w0ODA4MjQ3NTIsODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEy
+ODI3MTAsLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mj
+c1NCwxODM4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwt
+MTc1MDYwNDk0Ml19
 -->
