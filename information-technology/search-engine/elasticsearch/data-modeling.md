@@ -15,6 +15,141 @@
 GET movie_search/_mapping -- 생성된 index movie_search 매핑 정보 가져오기
 ```
 
+## [Field Data Types](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html)
+
+Elasticsearch supports a number of different data types for the fields in a document:
+
+### [](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html#_core_datatypes)Core data types[edit](https://github.com/elastic/elasticsearch/edit/7.8/docs/reference/mapping/types.asciidoc "Edit this page on GitHub")
+
+string
+
+[`text`](https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html "Text data type")  and  [`keyword`](https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html "Keyword data type")
+
+[Numeric](https://www.elastic.co/guide/en/elasticsearch/reference/current/number.html "Numeric data types")
+
+`long`,  `integer`,  `short`,  `byte`,  `double`,  `float`,  `half_float`,  `scaled_float`
+
+[Date](https://www.elastic.co/guide/en/elasticsearch/reference/current/date.html "Date data type")
+
+`date`
+
+[Date nanoseconds](https://www.elastic.co/guide/en/elasticsearch/reference/current/date_nanos.html "Date nanoseconds data type")
+
+`date_nanos`
+
+[Boolean](https://www.elastic.co/guide/en/elasticsearch/reference/current/boolean.html "Boolean data type")
+
+`boolean`
+
+[Binary](https://www.elastic.co/guide/en/elasticsearch/reference/current/binary.html "Binary data type")
+
+`binary`
+
+[Range](https://www.elastic.co/guide/en/elasticsearch/reference/current/range.html "Range data types")
+
+`integer_range`,  `float_range`,  `long_range`,  `double_range`,  `date_range`,  `ip_range`
+
+### [](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html#_complex_data_types)Complex data types[edit](https://github.com/elastic/elasticsearch/edit/7.8/docs/reference/mapping/types.asciidoc "Edit this page on GitHub")
+
+[Object](https://www.elastic.co/guide/en/elasticsearch/reference/current/object.html "Object data type")
+
+`object`  for single JSON objects
+
+[Nested](https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html "Nested data type")
+
+`nested`  for arrays of JSON objects
+
+### [](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html#_geo_data_types)Geo data types[edit](https://github.com/elastic/elasticsearch/edit/7.8/docs/reference/mapping/types.asciidoc "Edit this page on GitHub")
+
+[Geo-point](https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html "Geo-point data type")
+
+`geo_point`  for lat/lon points
+
+[Geo-shape](https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-shape.html "Geo-shape data type")
+
+`geo_shape`  for complex shapes like polygons
+
+### [](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html#_specialised_data_types)Specialised data types[edit](https://github.com/elastic/elasticsearch/edit/7.8/docs/reference/mapping/types.asciidoc "Edit this page on GitHub")
+
+[IP](https://www.elastic.co/guide/en/elasticsearch/reference/current/ip.html "IP data type")
+
+`ip`  for IPv4 and IPv6 addresses
+
+[Completion data type](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-suggesters.html#completion-suggester "Completion Suggester")
+
+`completion`  to provide auto-complete suggestions
+
+[Token count](https://www.elastic.co/guide/en/elasticsearch/reference/current/token-count.html "Token count data type")
+
+`token_count`  to count the number of tokens in a string
+
+[`mapper-murmur3`](https://www.elastic.co/guide/en/elasticsearch/plugins/7.8/mapper-murmur3.html)
+
+`murmur3`  to compute hashes of values at index-time and store them in the index
+
+[`mapper-annotated-text`](https://www.elastic.co/guide/en/elasticsearch/plugins/7.8/mapper-annotated-text.html)
+
+`annotated-text`  to index text containing special markup (typically used for identifying named entities)
+
+[Percolator](https://www.elastic.co/guide/en/elasticsearch/reference/current/percolator.html "Percolator type")
+
+Accepts queries from the query-dsl
+
+[Join](https://www.elastic.co/guide/en/elasticsearch/reference/current/parent-join.html "Join data type")
+
+Defines parent/child relation for documents within the same index
+
+[Rank feature](https://www.elastic.co/guide/en/elasticsearch/reference/current/rank-feature.html "Rank feature data type")
+
+Record numeric feature to boost hits at query time.
+
+[Rank features](https://www.elastic.co/guide/en/elasticsearch/reference/current/rank-features.html "Rank features data type")
+
+Record numeric features to boost hits at query time.
+
+[Dense vector](https://www.elastic.co/guide/en/elasticsearch/reference/current/dense-vector.html "Dense vector data type")
+
+Record dense vectors of float values.
+
+[Sparse vector](https://www.elastic.co/guide/en/elasticsearch/reference/current/sparse-vector.html "Sparse vector data type")
+
+Record sparse vectors of float values.
+
+[Search-as-you-type](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-as-you-type.html "Search-as-you-type data type")
+
+A text-like field optimized for queries to implement as-you-type completion
+
+[Alias](https://www.elastic.co/guide/en/elasticsearch/reference/current/alias.html "Alias data type")
+
+Defines an alias to an existing field.
+
+[Flattened](https://www.elastic.co/guide/en/elasticsearch/reference/current/flattened.html "Flattened data type")
+
+Allows an entire JSON object to be indexed as a single field.
+
+[Shape](https://www.elastic.co/guide/en/elasticsearch/reference/current/shape.html "Shape data type")
+
+`shape`  for arbitrary cartesian geometries.
+
+[Histogram](https://www.elastic.co/guide/en/elasticsearch/reference/current/histogram.html "Histogram data type")
+
+`histogram`  for pre-aggregated numerical values for percentiles aggregations.
+
+[Constant keyword](https://www.elastic.co/guide/en/elasticsearch/reference/current/constant-keyword.html "Constant keyword data type")
+
+Specialization of  `keyword`  for the case when all documents have the same value.
+
+### [](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html#types-array-handling)Arrays[edit](https://github.com/elastic/elasticsearch/edit/7.8/docs/reference/mapping/types.asciidoc "Edit this page on GitHub")
+
+In Elasticsearch, arrays do not require a dedicated field data type. Any field can contain zero or more values by default, however, all values in the array must be of the same data type. See  [Arrays](https://www.elastic.co/guide/en/elasticsearch/reference/current/array.html "Arrays").
+
+### [](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html#_multi_fields)Multi-fields[edit](https://github.com/elastic/elasticsearch/edit/7.8/docs/reference/mapping/types.asciidoc "Edit this page on GitHub")
+
+It is often useful to index the same field in different ways for different purposes. For instance, a  `string`  field could be mapped as a  `text`  field for full-text search, and as a  `keyword`  field for sorting or aggregations. Alternatively, you could index a text field with the  [`standard`  analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-standard-analyzer.html "Standard analyzer"), the  [`english`](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html#english-analyzer "english analyzer")  analyzer, and the  [`french`  analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html#french-analyzer "french analyzer").
+
+This is the purpose of  _multi-fields_. Most data types support multi-fields via the  [`fields`](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html "fields")  parameter.
+
+
 ### 매핑 파라미터 
 매핑 파라미터는 색인할 필드의 데이터를 어떻게 저장할지에 대한 다양한 옵션을 제공한다. 
 
@@ -226,6 +361,6 @@ Object 객체 배열을 독립적으로 색인하고 질의하는 형태의 데�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzI3MzM1NDgsLTE4NzAxNzg5MTldfQ
-==
+eyJoaXN0b3J5IjpbMjk3OTY4NDQsLTE1MzI3MzM1NDgsLTE4Nz
+AxNzg5MTldfQ==
 -->
