@@ -191,12 +191,15 @@ MongoDB는 기본적으로 64MB까지 커질 수 있으며, 이 이상으로 커
 
 레인지 샤딩의 핵심은 **샤드 키 값이 별도의 변형과정을 거치지 않고** 그 자체로 정렬되어서 각 청크의 범위가 결정됩니다. 레인지 샤딩은 단순히 각 청크가 어떤 범위의 값을 가지는지만 결정합니다.
 
-
 실제 각 청크가 어느 서버로 저장될지는 레인지 샤딩의 목적이나 역할이 아닙니다.
+
+앞서 말한 레인지 샤딩은 샤드키로 선정된 필드의 값을 변형하지 않고 비교 정렬을 하는데, 이러 인해서 레인지 샤딩의 장점과 단점이 정해집니다. 
+
+장점은 검색 쿼리를 타켓 쿼리로 실행할 수 있다는 점 입니다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUwOTk4NDc3LDg2MDg4MjExMCwxOTY2Mj
+eyJoaXN0b3J5IjpbNDgwODI0NzUyLDg2MDg4MjExMCwxOTY2Mj
 QxNzE0LC0xMjAxMjgyNzEwLC0yMTE3NzY4ODk0LDEyNTkxODE0
 MDAsLTE5MjM2NTI3NTQsMTgzODY4MDk2MywtNzY0NjIyNjgxLD
 EwMjk1NTE0MzUsLTE3NTA2MDQ5NDIsLTExMzc1ODk4NjYsLTI5
