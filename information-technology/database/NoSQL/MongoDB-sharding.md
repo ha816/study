@@ -208,15 +208,15 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 
 ### 해시 샤딩
 
-해시 샤딩은 레인지 샤딩과 달리 샤드 키값을 그대로 청크할당에 활용하는 것이 아니라 
+해시 샤딩은 레인지 샤딩과 달리 샤드 키값을 그대로 청크할당에 활용하는 것이 아니라, 샤드 키 값의 해시 값으로 청크할당을 하는 샤딩 방식입니다. 일반적으로 DBMS에서 사용하는 해시함수는 결과값이 전반적으로 골고루 분산될 수 있는 암호화 해시함수를 주로 사용하는데, 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NzA2Mzg3MywtNDM4MDIxMTMsMTE0MT
-A2NzM0Myw0ODA4MjQ3NTIsODYwODgyMTEwLDE5NjYyNDE3MTQs
-LTEyMDEyODI3MTAsLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMT
-kyMzY1Mjc1NCwxODM4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1
-MTQzNSwtMTc1MDYwNDk0MiwtMTEzNzU4OTg2NiwtMjkyNDY4Nz
-czLDE5NjI5NzY2NDQsLTE4MjYxMDQ4MTgsODcxMDkyODA0LC0z
-MTc0NzcwNzldfQ==
+eyJoaXN0b3J5IjpbLTIwNTY5MTI1NTMsMjA4NzA2Mzg3MywtND
+M4MDIxMTMsMTE0MTA2NzM0Myw0ODA4MjQ3NTIsODYwODgyMTEw
+LDE5NjYyNDE3MTQsLTEyMDEyODI3MTAsLTIxMTc3Njg4OTQsMT
+I1OTE4MTQwMCwtMTkyMzY1Mjc1NCwxODM4NjgwOTYzLC03NjQ2
+MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYwNDk0MiwtMTEzNzU4OT
+g2NiwtMjkyNDY4NzczLDE5NjI5NzY2NDQsLTE4MjYxMDQ4MTgs
+ODcxMDkyODA0XX0=
 -->
