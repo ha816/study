@@ -234,6 +234,7 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 다시 해시 인덱스의 제약사항은 아래와 같습니다.
 
 * 단일 필드만 해시 인덱스 생성 가능(복수 필드로 만드는 복합 인덱스 불가)
+* 멀티 키 필드에 대해선 해시 인덱스 생성 불가
 * 부동 소수점 필드는 소수점 이하를 버리고 함수 수행
 
 
@@ -256,11 +257,11 @@ db.users.createIndex({ name: "hashed" , country: "hashed" }) // 복합필드 인
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjIxNjQ3MjksLTEzNzA4NTc3OTYsOD
-I5NzMxMjM2LC0yMTA2Mzc1OTEwLC0xNzExNjgxNDQ1LDEyOTI3
-NzMwODEsMjA4NzA2Mzg3MywtNDM4MDIxMTMsMTE0MTA2NzM0My
-w0ODA4MjQ3NTIsODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEy
-ODI3MTAsLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mj
-c1NCwxODM4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwt
-MTc1MDYwNDk0Ml19
+eyJoaXN0b3J5IjpbLTYyODU2ODg5NiwtMTM3MDg1Nzc5Niw4Mj
+k3MzEyMzYsLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3
+MzA4MSwyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLD
+Q4MDgyNDc1Miw4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4
+MjcxMCwtMjExNzc2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUyNz
+U0LDE4Mzg2ODA5NjMsLTc2NDYyMjY4MSwxMDI5NTUxNDM1LC0x
+NzUwNjA0OTQyXX0=
 -->
