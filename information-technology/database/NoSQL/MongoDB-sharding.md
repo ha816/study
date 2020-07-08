@@ -253,15 +253,22 @@ db.users.createIndex({ name: "hashed" , country: "hashed" }) // 복합필드 인
 
 멀티 키 필드에 대해선 해시 인덱스 생성 불가인 경우는 해시 인덱스가 인덱스 키 필드의 모든 필드 값(Embed 문서 포함)에 대한 해시 값을 이용하기 때문에 여러 값을 가지는 배열(필드)에 대한 해시 인덱스를 지원하기 어렵습니다. 
 
-해시 샤딩을 쓰다보면 가끔 문제가 되는 부분이 있는데 바로 로그파일에 출력되는 메세지 
+해시 샤딩을 쓰다보면 가끔 문제가 되는 부분이 있는데 바로 로그파일에 출력되는 메세지 내용입니다. 
+
+MongoDB에서 하나의 청크가 너무 커지면 아래 로그가 MongoDB 서버 에러로 출력됩니다. 다음 메세지는 특정 샤드 키 값을 가지는 문서가 너무 많아서 청크가 스플릿 되지 못하고 계속 커지고 있다는 메세지 입니다.
+
+```
+warning: chunk is larger than bytes because of key {user_name: -}
+```
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MTkyMzI3NCwtMTM3MDg1Nzc5Niw4Mj
-k3MzEyMzYsLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3
-MzA4MSwyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLD
-Q4MDgyNDc1Miw4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4
-MjcxMCwtMjExNzc2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUyNz
-U0LDE4Mzg2ODA5NjMsLTc2NDYyMjY4MSwxMDI5NTUxNDM1LC0x
-NzUwNjA0OTQyXX0=
+eyJoaXN0b3J5IjpbLTE1Nzc2NjAzNjQsLTEzNzA4NTc3OTYsOD
+I5NzMxMjM2LC0yMTA2Mzc1OTEwLC0xNzExNjgxNDQ1LDEyOTI3
+NzMwODEsMjA4NzA2Mzg3MywtNDM4MDIxMTMsMTE0MTA2NzM0My
+w0ODA4MjQ3NTIsODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEy
+ODI3MTAsLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mj
+c1NCwxODM4NjgwOTYzLC03NjQ2MjI2ODEsMTAyOTU1MTQzNSwt
+MTc1MDYwNDk0Ml19
 -->
