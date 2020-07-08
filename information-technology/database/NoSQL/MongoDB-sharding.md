@@ -237,7 +237,7 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 * 멀티 키 필드에 대해선 해시 인덱스 생성 불가
 * 부동 소수점 필드는 소수점 이하를 버리고 함수 수행
 
-
+단일 필드만 해시 인덱스 생성 가능한 경우는 아래 예제를 보면 이해가 쉽습니다.
 ```
 db.users.insert({
 	name: "matt",
@@ -249,15 +249,13 @@ db.users.createIndex({ name: "hashed" }) // 단일필드 인덱스 생성가능
 db.users.createIndex({ country: "hashed" }) // 단일필드 인덱스 생성가능
 db.users.createIndex({ composite_field: "hashed"}) // 단일필드 인덱스 생성가능
 db.users.createIndex({ name: "hashed" , country: "hashed" }) // 복합필드 인덱스 생성불가
-
-
 ```
 
-
+멀티 키 필드에 대해선 해시 인덱스 생성 불가인 경우는 해시 인덱스가 인덱스 키 필드의 모든 필드 값(Embed 문서 포함)에 대한 해시 값을 이용하기 때문에 여러 값을 가지는 Array
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyODU2ODg5NiwtMTM3MDg1Nzc5Niw4Mj
+eyJoaXN0b3J5IjpbLTE4ODYxNzQ0NSwtMTM3MDg1Nzc5Niw4Mj
 k3MzEyMzYsLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3
 MzA4MSwyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLD
 Q4MDgyNDc1Miw4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4
