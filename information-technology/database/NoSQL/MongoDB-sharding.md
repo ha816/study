@@ -197,11 +197,15 @@ MongoDB는 기본적으로 64MB까지 커질 수 있으며, 이 이상으로 커
 
 장점은 검색 쿼리를 타켓 쿼리로 실행할 수 있다는 점 입니다. 특정 필드의 값을 변형없이 그대로 정해진 청크 범위로 판단하여 해당 청크가 있는 샤드에만 요청처리를 보냅니다. 
 
-단점은 각 샤드에 데이터가 균형있게 분산되지 않을 가능성이 높다는 점입니다. 데이터가 일정 
+단점은 각 샤드에 데이터가 균형있게 분산되지 않을 가능성이 높다는 점입니다. 데이터가 특정 청크 범위에만 집중되어 있다면 점보 청크 문제와 샤드 서버의 자원을 균형있게 쓰지 못하는 문제를 가져올 수 있습니다. 
+
+MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수 있습니다. 
+
+점보청크
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMjUzMzg2Nyw0ODA4MjQ3NTIsODYwOD
+eyJoaXN0b3J5IjpbMTg5NjA5MzkwNCw0ODA4MjQ3NTIsODYwOD
 gyMTEwLDE5NjYyNDE3MTQsLTEyMDEyODI3MTAsLTIxMTc3Njg4
 OTQsMTI1OTE4MTQwMCwtMTkyMzY1Mjc1NCwxODM4NjgwOTYzLC
 03NjQ2MjI2ODEsMTAyOTU1MTQzNSwtMTc1MDYwNDk0MiwtMTEz
