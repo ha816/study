@@ -212,9 +212,13 @@ MongoDB에서는 하나의 샤드 키값은 하나의 청크에만 포함될 수
 
 해시 샤딩 값은 샤드 키값으로 해시 값을 계산한 후, 앞쪽 64bit를 짤라서 64비트 정수형으로 사용합니다. 
 
+![Diagram of hashed shard key distribution](https://docs.mongodb.com/manual/_images/sharded-cluster-hashed-distribution.bakedsvg.svg)
+
+중요한 점은 사실 근본적으로 해시 샤딩도 레인지 샤딩의 일종입니다. 차이점은 MD5 암호화해시함수로 해시함수를 거친 샤드키 값이 전체 범위에 대해서 골고루 분산되는 것 입니다. 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NDU5NzI5NCwyMDg3MDYzODczLC00Mz
+eyJoaXN0b3J5IjpbMTI5Mjc3MzA4MSwyMDg3MDYzODczLC00Mz
 gwMjExMywxMTQxMDY3MzQzLDQ4MDgyNDc1Miw4NjA4ODIxMTAs
 MTk2NjI0MTcxNCwtMTIwMTI4MjcxMCwtMjExNzc2ODg5NCwxMj
 U5MTgxNDAwLC0xOTIzNjUyNzU0LDE4Mzg2ODA5NjMsLTc2NDYy
