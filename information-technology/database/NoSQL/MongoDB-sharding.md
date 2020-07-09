@@ -287,17 +287,11 @@ sh.addShardTag("shard-03", "EU")
 샤드키 범위로 할당될 지역(태그)를 할당할 수 있습니다. 
 
 ```
-sh.addTagRange("db.users", { user_id: minKey}, {user_id: 300})
+sh.addTagRange("db.users", { user_id: 0}, {user_id: 300}, "NA")
+sh.addTagRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 ```
 
-
-
-
-
-지역 샤딩을 사용하려면 레인지 샤딩이나 해시샤딩을 한 상태에서 추가로 두 가지 더 필요합니다. 샤드별로 태그를 할당하고 샤드키 범위별로 태그를 할당하는 것 입니다. 
-
-sh.addShardTag는 샤드별로 태그를 할당합니다
-sh.addTagRange는 샤드 키 범위별로 태그를 할당합니다. 
+예를 들어, user_id 값이  25
 
 
 
@@ -309,11 +303,11 @@ sh.addTagRange는 샤드 키 범위별로 태그를 할당합니다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIxMjg3MTMzLC00NDk2NzM0NTAsMjE1OT
-EzMjAsLTMzNTY2ODk5OSw0OTI3MjgwOTEsNjYwMDQ1NDA3LC04
-MzcyODQ2OTcsLTE4NzI1NDg4NTUsLTEzMTgwNjE5NzcsLTEwNj
-YxNzU2OTUsLTEzNzA4NTc3OTYsODI5NzMxMjM2LC0yMTA2Mzc1
-OTEwLC0xNzExNjgxNDQ1LDEyOTI3NzMwODEsMjA4NzA2Mzg3My
-wtNDM4MDIxMTMsMTE0MTA2NzM0Myw0ODA4MjQ3NTIsODYwODgy
-MTEwXX0=
+eyJoaXN0b3J5IjpbMTQ5MTAwODA5NywtNDQ5NjczNDUwLDIxNT
+kxMzIwLC0zMzU2Njg5OTksNDkyNzI4MDkxLDY2MDA0NTQwNywt
+ODM3Mjg0Njk3LC0xODcyNTQ4ODU1LC0xMzE4MDYxOTc3LC0xMD
+Y2MTc1Njk1LC0xMzcwODU3Nzk2LDgyOTczMTIzNiwtMjEwNjM3
+NTkxMCwtMTcxMTY4MTQ0NSwxMjkyNzczMDgxLDIwODcwNjM4Nz
+MsLTQzODAyMTEzLDExNDEwNjczNDMsNDgwODI0NzUyLDg2MDg4
+MjExMF19
 -->
