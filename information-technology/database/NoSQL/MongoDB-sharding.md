@@ -304,15 +304,17 @@ sh.updateZoneKeyRange("db.users", { user_id: 200}, {user_id: 300}, "NA")
 ...
 ```
 
+하나의 샤드는 어떤 지역과 연관이 되지 않을 수도 있고, 1개 이상의 지역과 다중으로 매핑될 수도 있습니다. 
 
 ```
-sh.updateZoneKeyRange("db.users", { user_id: minKey}, {user_id: 100}, "NA")
-sh.updateZoneKeyRange("db.users", { user_id: 100}, {user_id: 200}, "EU" )
-sh.updateZoneKeyRange("db.users", { user_id: 200}, {user_id: 300}, "NA")
+sh.addShardToZone("shard-01", "NA")
+sh.addShardToZone("shard-02", "NA")
+sh.addShardToZone("shard-02", "EU")
+sh.addShardToZone("shard-03", "EU")
 ...
 ```
 
-하나의 샤드는 어떤 지역과 연관이 되지 않을 수도 있고  1개 이상의 지역과 다중으로 매핑될 수도 있습니다. 
+>주의
 
 
 
@@ -328,7 +330,7 @@ sh.updateZoneKeyRange("db.users", { user_id: 200}, {user_id: 300}, "NA")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMjQ0NzcxLDgzNjk0NzI5OCwtNzAzMj
+eyJoaXN0b3J5IjpbNDQzNzk4MzQwLDgzNjk0NzI5OCwtNzAzMj
 k2NTczLDU0NzU2Njk1OSwtNDQ5NjczNDUwLDIxNTkxMzIwLC0z
 MzU2Njg5OTksNDkyNzI4MDkxLDY2MDA0NTQwNywtODM3Mjg0Nj
 k3LC0xODcyNTQ4ODU1LC0xMzE4MDYxOTc3LC0xMDY2MTc1Njk1
