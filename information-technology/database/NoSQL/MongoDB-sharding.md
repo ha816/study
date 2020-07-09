@@ -276,11 +276,11 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 
 ![enter image description here](https://docs.mongodb.com/manual/_images/sharding-segmenting-data-by-location-overview.bakedsvg.svg)
 
-클러스터에서 각 샤드는 자신이 속한 지역(zone, tag)를 가질 수 있습니다. 
+각 샤드는 자신이 속할 지역을 설정할 수 있습니다.
 ```
-sh.addShardTag("shard-01", "NA")
-sh.addShardTag("shard-02", "NA")
-sh.addShardTag("shard-03", "EU")
+sh.addShardToZone("shard-01", "NA")
+sh.addShardToZone("shard-02", "NA")
+sh.addShardToZone("shard-03", "EU")
 ...
 ```
 
@@ -305,11 +305,11 @@ sh.addTagRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ3NTY2OTU5LC00NDk2NzM0NTAsMjE1OT
-EzMjAsLTMzNTY2ODk5OSw0OTI3MjgwOTEsNjYwMDQ1NDA3LC04
-MzcyODQ2OTcsLTE4NzI1NDg4NTUsLTEzMTgwNjE5NzcsLTEwNj
-YxNzU2OTUsLTEzNzA4NTc3OTYsODI5NzMxMjM2LC0yMTA2Mzc1
-OTEwLC0xNzExNjgxNDQ1LDEyOTI3NzMwODEsMjA4NzA2Mzg3My
-wtNDM4MDIxMTMsMTE0MTA2NzM0Myw0ODA4MjQ3NTIsODYwODgy
-MTEwXX0=
+eyJoaXN0b3J5IjpbLTk5NDQ3ODQyNiw1NDc1NjY5NTksLTQ0OT
+Y3MzQ1MCwyMTU5MTMyMCwtMzM1NjY4OTk5LDQ5MjcyODA5MSw2
+NjAwNDU0MDcsLTgzNzI4NDY5NywtMTg3MjU0ODg1NSwtMTMxOD
+A2MTk3NywtMTA2NjE3NTY5NSwtMTM3MDg1Nzc5Niw4Mjk3MzEy
+MzYsLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3MzA4MS
+wyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLDQ4MDgy
+NDc1Ml19
 -->
