@@ -301,8 +301,14 @@ sh.updateZoneKeyRange("db.users", { user_id: 200}, {user_id: 300}, "NA")
 ...
 ```
 
+지역 범위가 반드시 minKey부터 maxKey를 가져야 하는 것은 아닙니다.  이렇게 태그가 매핑되지 않은 범위가 있으면 태그가 매핑되지 않은 샤드가 추가로 필요할 수도 있습니다.
 
-지역 범위가 반드시 minKey부터 maxKey를 가져야 하는 것은 아닙니다.  이렇게 태그가 매핑되지 않은 범위가 있으면 태그가 매ㅣㅇ되지 않은 샤드가 추가로 필요할 수도 있다. 
+```
+sh.updateZoneKeyRange("db.users", { user_id: minKey}, {user_id: 100}, "NA")
+sh.updateZoneKeyRange("db.users", { user_id: 100}, {user_id: 200}, "EU" )
+sh.updateZoneKeyRange("db.users", { user_id: 200}, {user_id: 300}, "NA")
+...
+```
 
 하나의 샤드는 어떤 지역과 연관이 되지 않을 수도 있고  1개 이상의 지역과 다중으로 매핑될 수도 있습니다. 
 
@@ -320,11 +326,11 @@ sh.updateZoneKeyRange("db.users", { user_id: 200}, {user_id: 300}, "NA")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMzI5NjU3Myw1NDc1NjY5NTksLTQ0OT
-Y3MzQ1MCwyMTU5MTMyMCwtMzM1NjY4OTk5LDQ5MjcyODA5MSw2
-NjAwNDU0MDcsLTgzNzI4NDY5NywtMTg3MjU0ODg1NSwtMTMxOD
-A2MTk3NywtMTA2NjE3NTY5NSwtMTM3MDg1Nzc5Niw4Mjk3MzEy
-MzYsLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3MzA4MS
-wyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLDQ4MDgy
-NDc1Ml19
+eyJoaXN0b3J5IjpbODM2OTQ3Mjk4LC03MDMyOTY1NzMsNTQ3NT
+Y2OTU5LC00NDk2NzM0NTAsMjE1OTEzMjAsLTMzNTY2ODk5OSw0
+OTI3MjgwOTEsNjYwMDQ1NDA3LC04MzcyODQ2OTcsLTE4NzI1ND
+g4NTUsLTEzMTgwNjE5NzcsLTEwNjYxNzU2OTUsLTEzNzA4NTc3
+OTYsODI5NzMxMjM2LC0yMTA2Mzc1OTEwLC0xNzExNjgxNDQ1LD
+EyOTI3NzMwODEsMjA4NzA2Mzg3MywtNDM4MDIxMTMsMTE0MTA2
+NzM0M119
 -->
