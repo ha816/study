@@ -284,13 +284,16 @@ sh.addShardToZone("shard-03", "EU")
 ...
 ```
 
-샤드키로 지역의 범위를 설정할 수 있습니다. 
+특정 샤드키로 지역 범위를 설정할 수 있습니다. 
 ```
 sh.updateZoneKeyRange("db.users", { user_id: 0}, {user_id: 300}, "NA")
 sh.updateZoneKeyRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 ```
 
 예를 들어, user_id 값이 250인 사용자는 NA 태그를 할당 받게되고, NA 그룹의 한 샤드에서 필요한 응답을 받게 됩니다.
+
+지역범위를 설정할때 
+
 
 
 
@@ -304,7 +307,7 @@ sh.updateZoneKeyRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5OTcyOTQ3MCw1NDc1NjY5NTksLTQ0OT
+eyJoaXN0b3J5IjpbLTU4OTA2NjEyNCw1NDc1NjY5NTksLTQ0OT
 Y3MzQ1MCwyMTU5MTMyMCwtMzM1NjY4OTk5LDQ5MjcyODA5MSw2
 NjAwNDU0MDcsLTgzNzI4NDY5NywtMTg3MjU0ODg1NSwtMTMxOD
 A2MTk3NywtMTA2NjE3NTY5NSwtMTM3MDg1Nzc5Niw4Mjk3MzEy
