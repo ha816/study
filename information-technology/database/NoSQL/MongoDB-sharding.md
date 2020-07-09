@@ -270,14 +270,14 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 지역 샤딩은 레인지 샤딩이나 해시 샤딩을 적용한 상태에서 데이터를 저장할 샤드를 한번더 조정할 수 있는 옵션이라고 이해할 수 있습니다. 
 
 
-이러한 옵션이 도입된것은 국가나 
+지역 샤딩인 도입된것은 사실 국가나 지역 기반으로 데이터의 저장소를 분리하기 위함이였습니다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NTQzNDg5MiwtODM3Mjg0Njk3LC0xOD
+eyJoaXN0b3J5IjpbMTU2Mzc1OTg2NCwtODM3Mjg0Njk3LC0xOD
 cyNTQ4ODU1LC0xMzE4MDYxOTc3LC0xMDY2MTc1Njk1LC0xMzcw
 ODU3Nzk2LDgyOTczMTIzNiwtMjEwNjM3NTkxMCwtMTcxMTY4MT
 Q0NSwxMjkyNzczMDgxLDIwODcwNjM4NzMsLTQzODAyMTEzLDEx
