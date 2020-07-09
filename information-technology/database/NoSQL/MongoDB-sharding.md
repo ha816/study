@@ -318,7 +318,9 @@ sh.addShardToZone("shard-03", "EU")
 >지역샤딩은 사실 밸런서와 연관이 깊은 부분이지 라우터가 쿼리를 실행할때 어떤 샤드로 쿼리를 전송할지 결정하는 알고리즘과는 거의 무관합니다. 
 >밸런서는 청크의 샤드 키 범위에 기반해서 태그를 알아내고, 태그를 담당하는 샤드 서버를 찾아 해당 샤드로 청크를 마이그레이션 하는 것이 주 역할 입니다. 그렇기 때문에 라우터가 쿼리를 실행할때 지역샤딩에 대해선 고려하지 않고 청크 범위에 기반해서 필요한 샤드에 쿼리를 전송하게 됩니다. 
 
-
+>주의
+>예제로는 레인지 샤딩을 살펴봤는데, 해시샤딩과 지역샤딩의 조합을 생각해볼 수도 있다. 
+>하지만 샤드키의 원본 값이 아니라 해시함수로 변형된 값을 기준으로 지역샤딩을 한다면, 
 
 
 
@@ -335,11 +337,11 @@ sh.addShardToZone("shard-03", "EU")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNzU0NDYzMCwtNjk0ODM0NzExLDgzNj
-k0NzI5OCwtNzAzMjk2NTczLDU0NzU2Njk1OSwtNDQ5NjczNDUw
-LDIxNTkxMzIwLC0zMzU2Njg5OTksNDkyNzI4MDkxLDY2MDA0NT
-QwNywtODM3Mjg0Njk3LC0xODcyNTQ4ODU1LC0xMzE4MDYxOTc3
-LC0xMDY2MTc1Njk1LC0xMzcwODU3Nzk2LDgyOTczMTIzNiwtMj
-EwNjM3NTkxMCwtMTcxMTY4MTQ0NSwxMjkyNzczMDgxLDIwODcw
-NjM4NzNdfQ==
+eyJoaXN0b3J5IjpbLTEyODM5NTU2ODgsLTIzNzU0NDYzMCwtNj
+k0ODM0NzExLDgzNjk0NzI5OCwtNzAzMjk2NTczLDU0NzU2Njk1
+OSwtNDQ5NjczNDUwLDIxNTkxMzIwLC0zMzU2Njg5OTksNDkyNz
+I4MDkxLDY2MDA0NTQwNywtODM3Mjg0Njk3LC0xODcyNTQ4ODU1
+LC0xMzE4MDYxOTc3LC0xMDY2MTc1Njk1LC0xMzcwODU3Nzk2LD
+gyOTczMTIzNiwtMjEwNjM3NTkxMCwtMTcxMTY4MTQ0NSwxMjky
+NzczMDgxXX0=
 -->
