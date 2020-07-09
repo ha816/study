@@ -320,7 +320,7 @@ sh.addShardToZone("shard-03", "EU")
 
 >주의
 >예제로는 레인지 샤딩을 살펴봤는데, 해시샤딩과 지역샤딩의 조합을 생각해볼 수도 있다. 
->하지만 샤드키의 원본 값이 아니라 해시함수로 변형된 값을 기준으로 지역샤딩을 한다면, 
+>하지만 샤드키의 원본 값이 아니라 해시함수로 변형된 값을 기준으로 지역샤딩을 한다면, 해시 값이 어뒤 범위에 포함될지 예측하기가 어렵다. 지역샤딩은 기준이 되는 키 값을 예측할 수 있어야 하는데, 해시샤딩을 쓰면 그것이 불가능한것입니다. 그래서 사실 해시샤딩을 사용하는 경우는 거의 없습니다.
 
 
 
@@ -337,11 +337,11 @@ sh.addShardToZone("shard-03", "EU")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODM5NTU2ODgsLTIzNzU0NDYzMCwtNj
-k0ODM0NzExLDgzNjk0NzI5OCwtNzAzMjk2NTczLDU0NzU2Njk1
-OSwtNDQ5NjczNDUwLDIxNTkxMzIwLC0zMzU2Njg5OTksNDkyNz
-I4MDkxLDY2MDA0NTQwNywtODM3Mjg0Njk3LC0xODcyNTQ4ODU1
-LC0xMzE4MDYxOTc3LC0xMDY2MTc1Njk1LC0xMzcwODU3Nzk2LD
-gyOTczMTIzNiwtMjEwNjM3NTkxMCwtMTcxMTY4MTQ0NSwxMjky
-NzczMDgxXX0=
+eyJoaXN0b3J5IjpbMTE1MjE0OTk1MiwtMjM3NTQ0NjMwLC02OT
+Q4MzQ3MTEsODM2OTQ3Mjk4LC03MDMyOTY1NzMsNTQ3NTY2OTU5
+LC00NDk2NzM0NTAsMjE1OTEzMjAsLTMzNTY2ODk5OSw0OTI3Mj
+gwOTEsNjYwMDQ1NDA3LC04MzcyODQ2OTcsLTE4NzI1NDg4NTUs
+LTEzMTgwNjE5NzcsLTEwNjYxNzU2OTUsLTEzNzA4NTc3OTYsOD
+I5NzMxMjM2LC0yMTA2Mzc1OTEwLC0xNzExNjgxNDQ1LDEyOTI3
+NzMwODFdfQ==
 -->
