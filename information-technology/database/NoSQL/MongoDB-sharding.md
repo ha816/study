@@ -276,8 +276,10 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 
 ![enter image description here](https://docs.mongodb.com/manual/_images/sharding-segmenting-data-by-location-overview.bakedsvg.svg)
 
-하나의 클러스터에서 샤드 그룹을 나타내는 지역(zone)을 가질수 있습니다.
-각 지역은 
+하나의 클러스터에서 각 샤드는 자신이 속한 지역(zone, tag)를 가질 수 있습니다. 
+```
+sh.addShardTag("shard-")
+```
  각 지역마다 독자적인 샤드키를 가지도록 할 수 있습니다.
 
 
@@ -296,11 +298,11 @@ sh.addTagRange는 샤드 키 범위별로 태그를 할당합니다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzM5Mzg4NzEsMjE1OTEzMjAsLTMzNT
-Y2ODk5OSw0OTI3MjgwOTEsNjYwMDQ1NDA3LC04MzcyODQ2OTcs
-LTE4NzI1NDg4NTUsLTEzMTgwNjE5NzcsLTEwNjYxNzU2OTUsLT
-EzNzA4NTc3OTYsODI5NzMxMjM2LC0yMTA2Mzc1OTEwLC0xNzEx
-NjgxNDQ1LDEyOTI3NzMwODEsMjA4NzA2Mzg3MywtNDM4MDIxMT
-MsMTE0MTA2NzM0Myw0ODA4MjQ3NTIsODYwODgyMTEwLDE5NjYy
-NDE3MTRdfQ==
+eyJoaXN0b3J5IjpbMjAwMjQzMTE0NiwyMTU5MTMyMCwtMzM1Nj
+Y4OTk5LDQ5MjcyODA5MSw2NjAwNDU0MDcsLTgzNzI4NDY5Nywt
+MTg3MjU0ODg1NSwtMTMxODA2MTk3NywtMTA2NjE3NTY5NSwtMT
+M3MDg1Nzc5Niw4Mjk3MzEyMzYsLTIxMDYzNzU5MTAsLTE3MTE2
+ODE0NDUsMTI5Mjc3MzA4MSwyMDg3MDYzODczLC00MzgwMjExMy
+wxMTQxMDY3MzQzLDQ4MDgyNDc1Miw4NjA4ODIxMTAsMTk2NjI0
+MTcxNF19
 -->
