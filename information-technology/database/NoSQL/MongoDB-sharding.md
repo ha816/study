@@ -295,8 +295,10 @@ sh.updateZoneKeyRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 지역범위를 설정할때 샤드키의 범위가 연속되어야 하는 것은 아닙니다. 아래와 같이 임의로 할당할 수도 있습니다. 
 
 ```
-sh.updateZoneKeyRange("db.users", { user_id: 0}, {user_id: 300}, "NA")
-sh.updateZoneKeyRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
+sh.updateZoneKeyRange("db.users", { user_id: minKey}, {user_id: 100}, "NA")
+sh.updateZoneKeyRange("db.users", { user_id: 100}, {user_id: 200}, "EU" )
+sh.updateZoneKeyRange("db.users", { user_id: 200}, {user_id: 300}, "NA")
+...
 ```
 
 
@@ -318,11 +320,11 @@ sh.updateZoneKeyRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU5MzQzMTMyLDU0NzU2Njk1OSwtNDQ5Nj
-czNDUwLDIxNTkxMzIwLC0zMzU2Njg5OTksNDkyNzI4MDkxLDY2
-MDA0NTQwNywtODM3Mjg0Njk3LC0xODcyNTQ4ODU1LC0xMzE4MD
-YxOTc3LC0xMDY2MTc1Njk1LC0xMzcwODU3Nzk2LDgyOTczMTIz
-NiwtMjEwNjM3NTkxMCwtMTcxMTY4MTQ0NSwxMjkyNzczMDgxLD
-IwODcwNjM4NzMsLTQzODAyMTEzLDExNDEwNjczNDMsNDgwODI0
-NzUyXX0=
+eyJoaXN0b3J5IjpbLTcwMzI5NjU3Myw1NDc1NjY5NTksLTQ0OT
+Y3MzQ1MCwyMTU5MTMyMCwtMzM1NjY4OTk5LDQ5MjcyODA5MSw2
+NjAwNDU0MDcsLTgzNzI4NDY5NywtMTg3MjU0ODg1NSwtMTMxOD
+A2MTk3NywtMTA2NjE3NTY5NSwtMTM3MDg1Nzc5Niw4Mjk3MzEy
+MzYsLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3MzA4MS
+wyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLDQ4MDgy
+NDc1Ml19
 -->
