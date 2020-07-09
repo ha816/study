@@ -277,6 +277,7 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 ![enter image description here](https://docs.mongodb.com/manual/_images/sharding-segmenting-data-by-location-overview.bakedsvg.svg)
 
 
+
 In sharded clusters, you can create zones that represent a group of shards and associate one or more ranges of [shard key](https://docs.mongodb.com/manual/reference/glossary/#term-shard-key) values to that zone. MongoDB routes reads and writes that fall into a zone range only to those shards inside of the zone.
 
 
@@ -285,11 +286,11 @@ In sharded clusters, you can create zones that represent a group of shards and a
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMzODE1MjIsNDkyNzI4MDkxLDY2MDA0NT
-QwNywtODM3Mjg0Njk3LC0xODcyNTQ4ODU1LC0xMzE4MDYxOTc3
-LC0xMDY2MTc1Njk1LC0xMzcwODU3Nzk2LDgyOTczMTIzNiwtMj
-EwNjM3NTkxMCwtMTcxMTY4MTQ0NSwxMjkyNzczMDgxLDIwODcw
-NjM4NzMsLTQzODAyMTEzLDExNDEwNjczNDMsNDgwODI0NzUyLD
-g2MDg4MjExMCwxOTY2MjQxNzE0LC0xMjAxMjgyNzEwLC0yMTE3
-NzY4ODk0XX0=
+eyJoaXN0b3J5IjpbMTU5MDc5MDI3Miw0OTI3MjgwOTEsNjYwMD
+Q1NDA3LC04MzcyODQ2OTcsLTE4NzI1NDg4NTUsLTEzMTgwNjE5
+NzcsLTEwNjYxNzU2OTUsLTEzNzA4NTc3OTYsODI5NzMxMjM2LC
+0yMTA2Mzc1OTEwLC0xNzExNjgxNDQ1LDEyOTI3NzMwODEsMjA4
+NzA2Mzg3MywtNDM4MDIxMTMsMTE0MTA2NzM0Myw0ODA4MjQ3NT
+IsODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEyODI3MTAsLTIx
+MTc3Njg4OTRdfQ==
 -->
