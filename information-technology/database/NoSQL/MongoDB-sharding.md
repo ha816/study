@@ -274,8 +274,10 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 서버간 통신시에 네트워크 왕복(Ping Latency) 시간이 중요한데, 나라 또는 지역간의 왕복시간은 생각보다 많은 시간이 걸립니다. (200ms 이상) 실제 서비스 단에서 이 정도 반응 속도로는 너무 느립니다. 
 
 
+![enter image description here](https://docs.mongodb.com/manual/_images/sharding-segmenting-data-by-location-overview.bakedsvg.svg)
 
 
+In sharded clusters, you can create zones that represent a group of shards and associate one or more ranges of [shard key](https://docs.mongodb.com/manual/reference/glossary/#term-shard-key) values to that zone. MongoDB routes reads and writes that fall into a zone range only to those shards inside of the zone.
 
 
 
@@ -283,11 +285,11 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMzQ0MjQ4Nyw0OTI3MjgwOTEsNjYwMD
-Q1NDA3LC04MzcyODQ2OTcsLTE4NzI1NDg4NTUsLTEzMTgwNjE5
-NzcsLTEwNjYxNzU2OTUsLTEzNzA4NTc3OTYsODI5NzMxMjM2LC
-0yMTA2Mzc1OTEwLC0xNzExNjgxNDQ1LDEyOTI3NzMwODEsMjA4
-NzA2Mzg3MywtNDM4MDIxMTMsMTE0MTA2NzM0Myw0ODA4MjQ3NT
-IsODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEyODI3MTAsLTIx
-MTc3Njg4OTRdfQ==
+eyJoaXN0b3J5IjpbOTMzODE1MjIsNDkyNzI4MDkxLDY2MDA0NT
+QwNywtODM3Mjg0Njk3LC0xODcyNTQ4ODU1LC0xMzE4MDYxOTc3
+LC0xMDY2MTc1Njk1LC0xMzcwODU3Nzk2LDgyOTczMTIzNiwtMj
+EwNjM3NTkxMCwtMTcxMTY4MTQ0NSwxMjkyNzczMDgxLDIwODcw
+NjM4NzMsLTQzODAyMTEzLDExNDEwNjczNDMsNDgwODI0NzUyLD
+g2MDg4MjExMCwxOTY2MjQxNzE0LC0xMjAxMjgyNzEwLC0yMTE3
+NzY4ODk0XX0=
 -->
