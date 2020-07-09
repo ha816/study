@@ -294,8 +294,15 @@ sh.updateZoneKeyRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 
 지역범위를 설정할때 샤드키의 범위가 연속되어야 하는 것은 아닙니다. 아래와 같이 임의로 할당할 수도 있습니다. 
 
+```
+sh.updateZoneKeyRange("db.users", { user_id: 0}, {user_id: 300}, "NA")
+sh.updateZoneKeyRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
+```
+
+
 지역 범위가 반드시 minKey부터 maxKey를 가져야 하는 것은 아닙니다.  이렇게 태그가 매핑되지 않은 범위가 있으면 태그가 매ㅣㅇ되지 않은 샤드가 추가로 필요할 수도 있다. 
 
+하나의 샤드는 어떤 지역과 연관이 되지 않을 수도 있고  1개 이상의 지역과 다중으로 매핑될 수도 있습니다. 
 
 
 
@@ -311,7 +318,7 @@ sh.updateZoneKeyRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNjQ0Njk5LDU0NzU2Njk1OSwtNDQ5Nj
+eyJoaXN0b3J5IjpbOTU5MzQzMTMyLDU0NzU2Njk1OSwtNDQ5Nj
 czNDUwLDIxNTkxMzIwLC0zMzU2Njg5OTksNDkyNzI4MDkxLDY2
 MDA0NTQwNywtODM3Mjg0Njk3LC0xODcyNTQ4ODU1LC0xMzE4MD
 YxOTc3LC0xMDY2MTc1Njk1LC0xMzcwODU3Nzk2LDgyOTczMTIz
