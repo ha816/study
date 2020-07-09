@@ -286,11 +286,14 @@ sh.addShardToZone("shard-03", "EU")
 
 특정 샤드키로 지역 범위를 설정할 수 있습니다. 
 ```
-sh.updateZoneKeyRange("db.users", { user_id: 0}, {user_id: 300}, "NA")
+sh.updateZoneKeyRange("db.users", { user_id: MinKey}, {user_id: 300}, "NA")
 sh.updateZoneKeyRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
+...
 ```
 
 예를 들어, user_id 값이 250인 사용자는 NA 태그를 할당 받게되고, NA 그룹의 한 샤드에서 필요한 응답을 받게 됩니다.
+
+지역 범위가 반드시 모든 범위 값을 커버해야하는 것은 아닙니다. (MinKey부터 MaxKey)  이렇게 지역이 매핑되지 않은 범위가 있으면 태그가 매핑되지 않은 샤드가 추가로 필요할 수도 있습니다.
 
 지역범위를 설정할때 샤드키의 범위가 연속되어야 하는 것은 아닙니다. 아래와 같이 임의로 할당할 수도 있습니다. 
 
@@ -301,7 +304,6 @@ sh.updateZoneKeyRange("db.users", { user_id: 200}, {user_id: 300}, "NA")
 ...
 ```
 
-지역 범위가 반드시 모든 범위 값을 커버해야하는 것은 아닙니다. (minKey부터 maxKey)  이렇게 지역이 매핑되지 않은 범위가 있으면 태그가 매핑되지 않은 샤드가 추가로 필요할 수도 있습니다.
 
 ```
 sh.updateZoneKeyRange("db.users", { user_id: minKey}, {user_id: 100}, "NA")
@@ -326,11 +328,11 @@ sh.updateZoneKeyRange("db.users", { user_id: 200}, {user_id: 300}, "NA")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNjUwNjE0Niw4MzY5NDcyOTgsLTcwMz
-I5NjU3Myw1NDc1NjY5NTksLTQ0OTY3MzQ1MCwyMTU5MTMyMCwt
-MzM1NjY4OTk5LDQ5MjcyODA5MSw2NjAwNDU0MDcsLTgzNzI4ND
-Y5NywtMTg3MjU0ODg1NSwtMTMxODA2MTk3NywtMTA2NjE3NTY5
-NSwtMTM3MDg1Nzc5Niw4Mjk3MzEyMzYsLTIxMDYzNzU5MTAsLT
-E3MTE2ODE0NDUsMTI5Mjc3MzA4MSwyMDg3MDYzODczLC00Mzgw
-MjExM119
+eyJoaXN0b3J5IjpbMTMwMjQ0NzcxLDgzNjk0NzI5OCwtNzAzMj
+k2NTczLDU0NzU2Njk1OSwtNDQ5NjczNDUwLDIxNTkxMzIwLC0z
+MzU2Njg5OTksNDkyNzI4MDkxLDY2MDA0NTQwNywtODM3Mjg0Nj
+k3LC0xODcyNTQ4ODU1LC0xMzE4MDYxOTc3LC0xMDY2MTc1Njk1
+LC0xMzcwODU3Nzk2LDgyOTczMTIzNiwtMjEwNjM3NTkxMCwtMT
+cxMTY4MTQ0NSwxMjkyNzczMDgxLDIwODcwNjM4NzMsLTQzODAy
+MTEzXX0=
 -->
