@@ -272,18 +272,18 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 
 지역 샤딩인 도입된것은 사실 국가나 지역 기반으로 데이터의 저장소를 분리하기 위함이였습니다. 
 
-서버간 통신시에 네트워크 왕복(Ping Latency) 시간이 중요한데 
+서버간 통신시에 네트워크 왕복(Ping Latency) 시간이 중요한데, 나라 또는 지역간의 왕복시간은 생각보다 많은 시간이 걸립니다. (200ms ) 실제 서비스 단에서 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYwMDQ1NDA3LC04MzcyODQ2OTcsLTE4Nz
-I1NDg4NTUsLTEzMTgwNjE5NzcsLTEwNjYxNzU2OTUsLTEzNzA4
-NTc3OTYsODI5NzMxMjM2LC0yMTA2Mzc1OTEwLC0xNzExNjgxND
-Q1LDEyOTI3NzMwODEsMjA4NzA2Mzg3MywtNDM4MDIxMTMsMTE0
-MTA2NzM0Myw0ODA4MjQ3NTIsODYwODgyMTEwLDE5NjYyNDE3MT
-QsLTEyMDEyODI3MTAsLTIxMTc3Njg4OTQsMTI1OTE4MTQwMCwt
-MTkyMzY1Mjc1NF19
+eyJoaXN0b3J5IjpbMjg3ODM2MDIsNjYwMDQ1NDA3LC04MzcyOD
+Q2OTcsLTE4NzI1NDg4NTUsLTEzMTgwNjE5NzcsLTEwNjYxNzU2
+OTUsLTEzNzA4NTc3OTYsODI5NzMxMjM2LC0yMTA2Mzc1OTEwLC
+0xNzExNjgxNDQ1LDEyOTI3NzMwODEsMjA4NzA2Mzg3MywtNDM4
+MDIxMTMsMTE0MTA2NzM0Myw0ODA4MjQ3NTIsODYwODgyMTEwLD
+E5NjYyNDE3MTQsLTEyMDEyODI3MTAsLTIxMTc3Njg4OTQsMTI1
+OTE4MTQwMF19
 -->
