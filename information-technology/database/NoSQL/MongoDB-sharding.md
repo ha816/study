@@ -267,18 +267,21 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 
 지역 샤딩은 레인지 샤딩이나 해시 샤딩과 달리 독립적으로 사용하는 방식이 아니라 레인지 샤딩이나 해시 샤딩과 반드시 함께 사용해야 합니다. 
 
+지역 샤딩은 레인지 샤딩이나 해시 샤딩을 적용한 상태에서 데이터를 저장할 샤드를 한번더 조정할 수 있는 옵션이라고 이해할 수 있습니다. 
 
+
+이러한 옵션이 도입된것은 국가나 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNzI4NDY5NywtMTg3MjU0ODg1NSwtMT
-MxODA2MTk3NywtMTA2NjE3NTY5NSwtMTM3MDg1Nzc5Niw4Mjk3
-MzEyMzYsLTIxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3Mz
-A4MSwyMDg3MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLDQ4
-MDgyNDc1Miw4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4Mj
-cxMCwtMjExNzc2ODg5NCwxMjU5MTgxNDAwLC0xOTIzNjUyNzU0
-LDE4Mzg2ODA5NjNdfQ==
+eyJoaXN0b3J5IjpbLTM1NTQzNDg5MiwtODM3Mjg0Njk3LC0xOD
+cyNTQ4ODU1LC0xMzE4MDYxOTc3LC0xMDY2MTc1Njk1LC0xMzcw
+ODU3Nzk2LDgyOTczMTIzNiwtMjEwNjM3NTkxMCwtMTcxMTY4MT
+Q0NSwxMjkyNzczMDgxLDIwODcwNjM4NzMsLTQzODAyMTEzLDEx
+NDEwNjczNDMsNDgwODI0NzUyLDg2MDg4MjExMCwxOTY2MjQxNz
+E0LC0xMjAxMjgyNzEwLC0yMTE3NzY4ODk0LDEyNTkxODE0MDAs
+LTE5MjM2NTI3NTRdfQ==
 -->
