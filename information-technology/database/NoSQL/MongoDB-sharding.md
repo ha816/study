@@ -276,7 +276,9 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 
 ![enter image description here](https://docs.mongodb.com/manual/_images/sharding-segmenting-data-by-location-overview.bakedsvg.svg)
 
-하나의 클러스터에서 샤드 그룹을 나타내는 지역(zone)을 생성하고 각 지역마다 독자적인 샤드키를 가지도록 할 수 있습니다.
+하나의 클러스터에서 샤드 그룹을 나타내는 지역(zone)을 가질수 있습니다.
+각 지역은 
+ 각 지역마다 독자적인 샤드키를 가지도록 할 수 있습니다.
 
 
 지역 샤딩을 사용하려면 레인지 샤딩이나 해시샤딩을 한 상태에서 추가로 두 가지 더 필요합니다. 샤드별로 태그를 할당하고 샤드키 범위별로 태그를 할당하는 것 입니다. 
@@ -294,11 +296,11 @@ sh.addTagRange는 샤드 키 범위별로 태그를 할당합니다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1OTEzMjAsLTMzNTY2ODk5OSw0OTI3Mj
-gwOTEsNjYwMDQ1NDA3LC04MzcyODQ2OTcsLTE4NzI1NDg4NTUs
-LTEzMTgwNjE5NzcsLTEwNjYxNzU2OTUsLTEzNzA4NTc3OTYsOD
-I5NzMxMjM2LC0yMTA2Mzc1OTEwLC0xNzExNjgxNDQ1LDEyOTI3
-NzMwODEsMjA4NzA2Mzg3MywtNDM4MDIxMTMsMTE0MTA2NzM0My
-w0ODA4MjQ3NTIsODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEy
-ODI3MTBdfQ==
+eyJoaXN0b3J5IjpbLTE4NzM5Mzg4NzEsMjE1OTEzMjAsLTMzNT
+Y2ODk5OSw0OTI3MjgwOTEsNjYwMDQ1NDA3LC04MzcyODQ2OTcs
+LTE4NzI1NDg4NTUsLTEzMTgwNjE5NzcsLTEwNjYxNzU2OTUsLT
+EzNzA4NTc3OTYsODI5NzMxMjM2LC0yMTA2Mzc1OTEwLC0xNzEx
+NjgxNDQ1LDEyOTI3NzMwODEsMjA4NzA2Mzg3MywtNDM4MDIxMT
+MsMTE0MTA2NzM0Myw0ODA4MjQ3NTIsODYwODgyMTEwLDE5NjYy
+NDE3MTRdfQ==
 -->
