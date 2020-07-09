@@ -291,7 +291,7 @@ sh.addTagRange("db.users", { user_id: 0}, {user_id: 300}, "NA")
 sh.addTagRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 ```
 
-예를 들어, user_id 값이  25
+예를 들어, user_id 값이 250인 사용자는 NA 태그를 할당 받게되고 
 
 
 
@@ -303,7 +303,7 @@ sh.addTagRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MTAwODA5NywtNDQ5NjczNDUwLDIxNT
+eyJoaXN0b3J5IjpbMTQ3NjI0NDQxNywtNDQ5NjczNDUwLDIxNT
 kxMzIwLC0zMzU2Njg5OTksNDkyNzI4MDkxLDY2MDA0NTQwNywt
 ODM3Mjg0Njk3LC0xODcyNTQ4ODU1LC0xMzE4MDYxOTc3LC0xMD
 Y2MTc1Njk1LC0xMzcwODU3Nzk2LDgyOTczMTIzNiwtMjEwNjM3
