@@ -284,7 +284,8 @@ sh.addShardToZone("shard-03", "EU")
 ...
 ```
 
-샤드키 범위로 할당될 지역(태그)를 할당할 수 있습니다. 
+지역 범위를 설정할 수 있습니다. 
+특정샤드키 범위로 할당될 지역(태그)를 할당할 수 있습니다. 
 
 ```
 sh.addTagRange("db.users", { user_id: 0}, {user_id: 300}, "NA")
@@ -305,7 +306,7 @@ sh.addTagRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NDQ3ODQyNiw1NDc1NjY5NTksLTQ0OT
+eyJoaXN0b3J5IjpbLTIyODI3NDQ0OSw1NDc1NjY5NTksLTQ0OT
 Y3MzQ1MCwyMTU5MTMyMCwtMzM1NjY4OTk5LDQ5MjcyODA5MSw2
 NjAwNDU0MDcsLTgzNzI4NDY5NywtMTg3MjU0ODg1NSwtMTMxOD
 A2MTk3NywtMTA2NjE3NTY5NSwtMTM3MDg1Nzc5Niw4Mjk3MzEy
