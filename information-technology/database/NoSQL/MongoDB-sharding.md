@@ -315,7 +315,8 @@ sh.addShardToZone("shard-03", "EU")
 ```
 
 >주의
->지역샤딩은 사실 밸런서와 연관이 깊은 부분
+>지역샤딩은 사실 밸런서와 연관이 깊은 부분이지 라우터가 쿼리를 실행할때 어떤 샤드로 쿼리를 전송할지 결정하는 알고리즘과는 거의 무관합니다. 
+>밸런서는 청크의 샤드 키 범위에 기반해서 태그를 알아내고, 태그를 담당하는 샤드 서버를 찾아 그쪽 샤드로 청크를 마이그레이션 하는 것이 주 역할 입니다. 그렇기 때문에 라우터가 쿼리를 실행할때 지역샤딩에 대해선 고려하지 않고 청크 범
 
 
 
@@ -333,7 +334,7 @@ sh.addShardToZone("shard-03", "EU")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTQ4NjY4NzIsLTY5NDgzNDcxMSw4Mz
+eyJoaXN0b3J5IjpbLTE1NDIwNTU0NDAsLTY5NDgzNDcxMSw4Mz
 Y5NDcyOTgsLTcwMzI5NjU3Myw1NDc1NjY5NTksLTQ0OTY3MzQ1
 MCwyMTU5MTMyMCwtMzM1NjY4OTk5LDQ5MjcyODA5MSw2NjAwND
 U0MDcsLTgzNzI4NDY5NywtMTg3MjU0ODg1NSwtMTMxODA2MTk3
