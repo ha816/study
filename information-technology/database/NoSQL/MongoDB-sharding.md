@@ -284,7 +284,11 @@ sh.addShardTag("shard-03", "EU")
 ...
 ```
 
-그리고 추가로 샤드키 범위로 지역(tag)를 할당 할 수 있습니다. 
+샤드키 범위로 할당될 지역(태그)를 할당할 수 있습니다. 
+
+```
+sh.addTagRange()
+```
 
 
 
@@ -305,11 +309,11 @@ sh.addTagRange는 샤드 키 범위별로 태그를 할당합니다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTYwMzgwMzQsLTQ0OTY3MzQ1MCwyMT
-U5MTMyMCwtMzM1NjY4OTk5LDQ5MjcyODA5MSw2NjAwNDU0MDcs
-LTgzNzI4NDY5NywtMTg3MjU0ODg1NSwtMTMxODA2MTk3NywtMT
-A2NjE3NTY5NSwtMTM3MDg1Nzc5Niw4Mjk3MzEyMzYsLTIxMDYz
-NzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3MzA4MSwyMDg3MDYzOD
-czLC00MzgwMjExMywxMTQxMDY3MzQzLDQ4MDgyNDc1Miw4NjA4
-ODIxMTBdfQ==
+eyJoaXN0b3J5IjpbLTM0OTExMTUwNywtNDQ5NjczNDUwLDIxNT
+kxMzIwLC0zMzU2Njg5OTksNDkyNzI4MDkxLDY2MDA0NTQwNywt
+ODM3Mjg0Njk3LC0xODcyNTQ4ODU1LC0xMzE4MDYxOTc3LC0xMD
+Y2MTc1Njk1LC0xMzcwODU3Nzk2LDgyOTczMTIzNiwtMjEwNjM3
+NTkxMCwtMTcxMTY4MTQ0NSwxMjkyNzczMDgxLDIwODcwNjM4Nz
+MsLTQzODAyMTEzLDExNDEwNjczNDMsNDgwODI0NzUyLDg2MDg4
+MjExMF19
 -->
