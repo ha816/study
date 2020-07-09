@@ -272,12 +272,14 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 
 지역 샤딩인 도입된것은 사실 국가나 지역 기반으로 데이터의 저장소를 분리하기 위함이였습니다. 
 
+서버간 통신시에 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2Mzc1OTg2NCwtODM3Mjg0Njk3LC0xOD
+eyJoaXN0b3J5IjpbMTA4Mzc5MzkzMSwtODM3Mjg0Njk3LC0xOD
 cyNTQ4ODU1LC0xMzE4MDYxOTc3LC0xMDY2MTc1Njk1LC0xMzcw
 ODU3Nzk2LDgyOTczMTIzNiwtMjEwNjM3NTkxMCwtMTcxMTY4MT
 Q0NSwxMjkyNzczMDgxLDIwODcwNjM4NzMsLTQzODAyMTEzLDEx
