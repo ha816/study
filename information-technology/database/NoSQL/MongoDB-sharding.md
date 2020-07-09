@@ -276,7 +276,7 @@ warning: chunk is larger than 8402030000000 bytes because of key {user_name: -75
 
 ![enter image description here](https://docs.mongodb.com/manual/_images/sharding-segmenting-data-by-location-overview.bakedsvg.svg)
 
-
+하나의 클러스터에서 샤드 그룹을 나타내는 지역(zone)을 생성하고 지역 마다 독자적인 샤드키를 대응할 수 있습니다.
 
 In sharded clusters, you can create zones that represent a group of shards and associate one or more ranges of [shard key](https://docs.mongodb.com/manual/reference/glossary/#term-shard-key) values to that zone. MongoDB routes reads and writes that fall into a zone range only to those shards inside of the zone.
 
@@ -286,11 +286,11 @@ In sharded clusters, you can create zones that represent a group of shards and a
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MDc5MDI3Miw0OTI3MjgwOTEsNjYwMD
-Q1NDA3LC04MzcyODQ2OTcsLTE4NzI1NDg4NTUsLTEzMTgwNjE5
-NzcsLTEwNjYxNzU2OTUsLTEzNzA4NTc3OTYsODI5NzMxMjM2LC
-0yMTA2Mzc1OTEwLC0xNzExNjgxNDQ1LDEyOTI3NzMwODEsMjA4
-NzA2Mzg3MywtNDM4MDIxMTMsMTE0MTA2NzM0Myw0ODA4MjQ3NT
-IsODYwODgyMTEwLDE5NjYyNDE3MTQsLTEyMDEyODI3MTAsLTIx
-MTc3Njg4OTRdfQ==
+eyJoaXN0b3J5IjpbODUwMTQ1NzI0LDQ5MjcyODA5MSw2NjAwND
+U0MDcsLTgzNzI4NDY5NywtMTg3MjU0ODg1NSwtMTMxODA2MTk3
+NywtMTA2NjE3NTY5NSwtMTM3MDg1Nzc5Niw4Mjk3MzEyMzYsLT
+IxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3MzA4MSwyMDg3
+MDYzODczLC00MzgwMjExMywxMTQxMDY3MzQzLDQ4MDgyNDc1Mi
+w4NjA4ODIxMTAsMTk2NjI0MTcxNCwtMTIwMTI4MjcxMCwtMjEx
+Nzc2ODg5NF19
 -->
