@@ -315,8 +315,7 @@ sh.addShardToZone("shard-03", "EU")
 ```
 
 >주의
-
-지역샤딩은 단순히 샤드 서버에 지역에 기반하여 사용자 데이터를 분산하는 용도로만 사용하지 않습니다. 더 많은 응용 가능한 부분이 있습니다. 
+>지역샤딩은 사실 밸런서와 연관이 깊은 부분
 
 
 
@@ -334,11 +333,11 @@ sh.addShardToZone("shard-03", "EU")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NDgzNDcxMSw4MzY5NDcyOTgsLTcwMz
-I5NjU3Myw1NDc1NjY5NTksLTQ0OTY3MzQ1MCwyMTU5MTMyMCwt
-MzM1NjY4OTk5LDQ5MjcyODA5MSw2NjAwNDU0MDcsLTgzNzI4ND
-Y5NywtMTg3MjU0ODg1NSwtMTMxODA2MTk3NywtMTA2NjE3NTY5
-NSwtMTM3MDg1Nzc5Niw4Mjk3MzEyMzYsLTIxMDYzNzU5MTAsLT
-E3MTE2ODE0NDUsMTI5Mjc3MzA4MSwyMDg3MDYzODczLC00Mzgw
-MjExM119
+eyJoaXN0b3J5IjpbLTEyMTQ4NjY4NzIsLTY5NDgzNDcxMSw4Mz
+Y5NDcyOTgsLTcwMzI5NjU3Myw1NDc1NjY5NTksLTQ0OTY3MzQ1
+MCwyMTU5MTMyMCwtMzM1NjY4OTk5LDQ5MjcyODA5MSw2NjAwND
+U0MDcsLTgzNzI4NDY5NywtMTg3MjU0ODg1NSwtMTMxODA2MTk3
+NywtMTA2NjE3NTY5NSwtMTM3MDg1Nzc5Niw4Mjk3MzEyMzYsLT
+IxMDYzNzU5MTAsLTE3MTE2ODE0NDUsMTI5Mjc3MzA4MSwyMDg3
+MDYzODczXX0=
 -->
