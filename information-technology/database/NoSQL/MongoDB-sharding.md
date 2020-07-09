@@ -291,7 +291,9 @@ sh.addTagRange("db.users", { user_id: 0}, {user_id: 300}, "NA")
 sh.addTagRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 ```
 
-예를 들어, user_id 값이 250인 사용자는 NA 태그를 할당 받게되고 
+예를 들어, user_id 값이 250인 사용자는 NA 태그를 할당 받게되고, NA 그룹의 한 샤드에서 필요한 응답을 받게 됩니다.
+
+
 
 
 
@@ -303,11 +305,11 @@ sh.addTagRange("db.users", { user_id: 300}, {user_id: 700}, "EU" )
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NjI0NDQxNywtNDQ5NjczNDUwLDIxNT
-kxMzIwLC0zMzU2Njg5OTksNDkyNzI4MDkxLDY2MDA0NTQwNywt
-ODM3Mjg0Njk3LC0xODcyNTQ4ODU1LC0xMzE4MDYxOTc3LC0xMD
-Y2MTc1Njk1LC0xMzcwODU3Nzk2LDgyOTczMTIzNiwtMjEwNjM3
-NTkxMCwtMTcxMTY4MTQ0NSwxMjkyNzczMDgxLDIwODcwNjM4Nz
-MsLTQzODAyMTEzLDExNDEwNjczNDMsNDgwODI0NzUyLDg2MDg4
-MjExMF19
+eyJoaXN0b3J5IjpbNTQ3NTY2OTU5LC00NDk2NzM0NTAsMjE1OT
+EzMjAsLTMzNTY2ODk5OSw0OTI3MjgwOTEsNjYwMDQ1NDA3LC04
+MzcyODQ2OTcsLTE4NzI1NDg4NTUsLTEzMTgwNjE5NzcsLTEwNj
+YxNzU2OTUsLTEzNzA4NTc3OTYsODI5NzMxMjM2LC0yMTA2Mzc1
+OTEwLC0xNzExNjgxNDQ1LDEyOTI3NzMwODEsMjA4NzA2Mzg3My
+wtNDM4MDIxMTMsMTE0MTA2NzM0Myw0ODA4MjQ3NTIsODYwODgy
+MTEwXX0=
 -->
