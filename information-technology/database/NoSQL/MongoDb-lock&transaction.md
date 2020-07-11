@@ -72,7 +72,7 @@ session-1: db.orders.find({user_id:1}})
 session-2: db.orders.find({user_id:2}})
 ```
 
-같은 orders 컬렉션을  조회만 하는 경우를 봅시다. orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S 잠금또한 필요합니다. 다행히 S 잠금간에는 호완이 가능하기 때문에 두 커넥션은 동시에 수행이 됩니다.
+같은 orders 컬렉션을  조회만 하는 경우를 봅시다. orders 데이터 베이스에 대해서 IS 잠금이 필요하고 두 컬렉션에 S 잠금또한 필요합니다. 다행히 S 잠금간에는 호완이 가능하기 때문에 두 커넥션은 동시에 수행이 됩변경할 수 있는 데이터의 크기는 공유캐시 크기로 제한니다.
 
 ## Lock Yield(잠금 양보)
 
@@ -96,7 +96,8 @@ WirtedTiger는 다른 DBMS처럼 레코드(문서) 기반의 잠금을 사용합
 
 WT의 특성으로 읽기의 경우는 별도의 잠금을 이용하지 않습니다. 이를 잠금없는 일관된 읽기(Non-Locking Consistent Read)라고 하는데 MVCC을 구현함으로써 가능해집니다.
 
-WT는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가합니다. 즉 문서의 변경 버전을 기억해 둡니다. 때문에 다수의 트랜잭션에선 기억해둔 문서의 버전에서 알맞는 문서를 읽어가게 되고 읽기 잠금이 불필요하게 됩니다.
+WT는 문서를 변경할때 기존의 버전은 그대로 두고 새로운 버전을 추가합니다. 즉 문서의 변경 버전을 기억해 둡니다. 때문에 다수의 트랜잭션에선 기억해둔변경되는 내역을 모두 관리하는데, 읽기 명령시 현재 트랜잭션에서 읽어야할 문서의 버전에서 알맞는 문서를 읽어가게 되고 읽기을 찾아 읽습니다. 즉 실제로는 그 문서가 변경되기 전에 버전을 읽는 것이므로 별도의 잠금이 불필요하게 됩로 하지 않습니다.
+
 
 # Transaction
 
@@ -109,9 +110,39 @@ MongoDB의 트랜잭션은 아래와 특성이 있습니다.
 
 MongoDB는 복수-문서에 대한 트랜잭션을 지원합니다. 하지만 복수-문서 트랜잭션은 기본적인 단일-문서 트랜잭션보다 성능이 훨씬 안좋기 때문에 좋은 스키마 디자인으로 복수 문서 트랜잭션을 최대한 사용하지 않는게 좋다고 합니다.
 
-트랜잭션 로그(저널로그 또는 리두로그)뿐만 아니라 체크포인트로도 영속성(Durability)이 보장됩니다. 즉 트랜잭션 로그가 없어도 마지막 체크 포인트 시점의 데이터를 복구 할 수 있습니다.
+# 잠금 Yield
 
-WT에서 모든 쿼리는 공유캐시를 거쳐 처리되기 때문에 한 트랜잭션이 변경할 수 있는 데이터의 크기는 공유캐시의 크기로 제한됩니다.
+쿼리를 실행하는 도중에 잠시 쉬었다가 쿼리 실행을 재개하는 것을 MongoDB에선 양보(Yield)라고 한다. 단순히 쿼리를 멈추고 잠깐 쉬는(sleep) 것이 아니라, 처리 중인 쿼리를 위해서 획득했던 잠금까지 모두 해제하고 일정시간 쉬게 된다.
+
+```
+db.users.find({non_indexed_field:"value"})
+```
+
+Yield를 실행하는 규칙은 아래와 같다.
+
+* 쿼리가 지정된 건수의 문서를 읽는 경우(128건)
+* 쿼리가 지정된 시간동안 수행된 경우(10ms)
+
+기본적으로 잠금 판단을 위해선 db.currentOp() 명령어를 사용하면 알 수 있다. 
+
+# 트랜잭션
+
+WiredTiget 스토리지 엔진이 제공하는 트랜잭션 ACID 속성은 다음와 같은 특징이 있습니다.
+
+* 최고 레벨 격리 수준은 Snapshot(Repetable-Read)
+* 트랜잭션의 커밋과 체크포인트 두 가지 형태로 영속성(Durability) 보장
+* 커밋되지 않은 변경 데이터는 공유 캐시 크기보다 작아야 함
+
+WiredTiger는 Serializable 수준의 격리 수준은 제공하지 않는다. 
+ 트랜잭션 로그(저널로그 또는 리두로그)뿐만 아니라 체크포인트로도 영속성(Durability)이 보장됩니된다. 즉  문서 버전 잠금이 필요니다.
+
+#트랜잭션 로그가 없어도 마지막 체크 포인트 시점의 데이터를 복구 할 수 있습니다.
+
+WT에서 모든 쿼리는 공유캐시를 거쳐 처리되기 때문에 한 트랜잭션이 커밋되기 전에는 트랜잭션 로그를 디스크로 기록하지 않는 다는 것이다. 따라서 
+트랜잭션이 변경할 수 있는 데이터의 크기는 WiredTiger 스토리지 엔진이 가진 공유캐시의 크기로 제한됩된다. 
+
+>복수 문서 트랜잭션(Multi-Document Transactions)?
+>다행이도 MongoDB는 복수 문서에 대한 트랜잭션을 지원한다고 합니다. ([Transactions]>복수 문서 트랜잭션은 단일보다 성능이 훨씬 안좋기 때문에 스키마 디자인 자체를 잘해서 복수 문서 트랜잭션을 최대한 사용하지 않는게 좋다고 합니다.
 
 ## 쓰기 충돌(Write Conflict)
 
@@ -244,11 +275,11 @@ majority를 사용하려면 replica sets가 반드시 [WiredTiger storage engine
 
 하지만 결과를 반환하기 전에 모든 레플리카 셋에 쓰기 작업을 전파하기 때문에 모든 read concern 중 제일 느립니다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMTU3NjIxMywxNjA1MzUwNzQ1LDE2NT
-c2NDQxMjYsMTc3NTA5ODA2MSw5MDM0NzM2OTAsLTEyMzc4NjYw
-NTgsLTEzOTQ2NDUxOTgsNzE2MDcyNDYwLDIxMTM1OTU2MTksMT
-g4MzAwNjc2LC0xNTQxNTU2NjYxLC0yMTczMzQ3MzQsMTM2NjM3
-NDYxMywtMTIyMDk0Mjk5Miw5OTMxNDc4MjIsLTk0MTQwMDkyNi
-wxMTE4MjYxMjMwLDExODY1MjE5NDgsLTEyOTk3NzI0ODgsNDE4
-ODY5OTcyXX0=
+eyJoaXN0b3J5IjpbMTgwODYzNDc3LDIwMDE1NzYyMTMsMTYwNT
+M1MDc0NSwxNjU3NjQ0MTI2LDE3NzUwOTgwNjEsOTAzNDczNjkw
+LC0xMjM3ODY2MDU4LC0xMzk0NjQ1MTk4LDcxNjA3MjQ2MCwxOD
+gzMDA2NzYsLTE1NDE1NTY2NjEsLTIxNzMzNDczNCwxMzY2Mzc0
+NjEzLC0xMjIwOTQyOTkyLDk5MzE0NzgyMiwtOTQxNDAwOTI2LD
+ExMTgyNjEyMzAsMTE4NjUyMTk0OCwtMTI5OTc3MjQ4OCw0MTg4
+Njk5NzJdfQ==
 -->
