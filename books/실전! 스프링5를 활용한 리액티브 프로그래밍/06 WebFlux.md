@@ -11,13 +11,13 @@
 WebClient.create("uri").get().retrieve().bodyToMono(User.class).map().subscribe()
 ```
 
-
+create는 팩터리 메서드이고 기본 URI를 정할 수 있습니다. retreive 메서드는 옵션의 내용을 검색해 조회하거나 다음 처리를 위해 데이터를 준비하는 경우 유용합니다. 응답 본문을 생성하는 메서드 입니다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg2OTg1MjkyLDk3NjE2ODIyOCwxNjY0NT
-cxODQwLDE2MzQwMTc3OCwxMTM2MjM2MTg2LDg1MjEwMzM3LDE4
-NjMxMDg3OTZdfQ==
+eyJoaXN0b3J5IjpbNDYzNDQ1NTMyLDQ4Njk4NTI5Miw5NzYxNj
+gyMjgsMTY2NDU3MTg0MCwxNjM0MDE3NzgsMTEzNjIzNjE4Niw4
+NTIxMDMzNywxODYzMTA4Nzk2XX0=
 -->
