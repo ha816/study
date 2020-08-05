@@ -11,13 +11,16 @@
 WebClient.create("uri").get().retrieve().bodyToMono(User.class).map().subscribe()
 ```
 
-create는 팩터리 메서드이고 기본 URI를 정할 수 있습니다. retreive 메서드는 옵션의 내용을 검색해 조회하거나 다음 처리를 위해 데이터를 준비하는 경우 유용합니다. 응답 본문을 생성하는 메서드 입니다. 
+create는 팩터리 메서드이고 기본 URI를 정할 수 있습니다. retreive 메서드는 옵션의 내용을 검색해 조회하거나 다음 처리를 위해 데이터를 준비하는 경우 유용합니다. 
+응답 본문을 생성하는 메서드로 bodyToMono를 사용합니다. 이 메서드는 수신 페이로드를 Mono로 변환합니다. 마지막으로 리액터 API를 사용해 응답의 처리 흐름을 구축하고 subscribe 메서드로 원격 호출을 실행합니다.
+
+WebClient는 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYzNDQ1NTMyLDQ4Njk4NTI5Miw5NzYxNj
-gyMjgsMTY2NDU3MTg0MCwxNjM0MDE3NzgsMTEzNjIzNjE4Niw4
-NTIxMDMzNywxODYzMTA4Nzk2XX0=
+eyJoaXN0b3J5IjpbLTE1ODQzNjA5OTUsNDYzNDQ1NTMyLDQ4Nj
+k4NTI5Miw5NzYxNjgyMjgsMTY2NDU3MTg0MCwxNjM0MDE3Nzgs
+MTEzNjIzNjE4Niw4NTIxMDMzNywxODYzMTA4Nzk2XX0=
 -->
