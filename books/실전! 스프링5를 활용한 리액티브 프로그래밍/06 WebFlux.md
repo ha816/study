@@ -18,14 +18,16 @@ WebClient는 리액티브 스트림 스펙을 따릅니다. 즉 subscribe 메서
 
 대부분의 경우 일반적인 응답 처리는 본문을 처리하는 것이지만, 응답 상태, 헤더 또는 쿠키를 처리하는 경우도 있습니다.
 
+DefaultWebClient는 원격 서버와의 비동기 및 논블로킹 상호 작용을 제공하기 위해 리액터-네티 HttpClient를 사용합니다. 하지만 기본 HTTP 클라이언트를 쉽겨 변경하도록 설계되었기 때문에
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNjU0NDMwMCwtMTU4NDM2MDk5NSw0Nj
-M0NDU1MzIsNDg2OTg1MjkyLDk3NjE2ODIyOCwxNjY0NTcxODQw
-LDE2MzQwMTc3OCwxMTM2MjM2MTg2LDg1MjEwMzM3LDE4NjMxMD
-g3OTZdfQ==
+eyJoaXN0b3J5IjpbLTEyMzgzMzA3MjIsLTgyNjU0NDMwMCwtMT
+U4NDM2MDk5NSw0NjM0NDU1MzIsNDg2OTg1MjkyLDk3NjE2ODIy
+OCwxNjY0NTcxODQwLDE2MzQwMTc3OCwxMTM2MjM2MTg2LDg1Mj
+EwMzM3LDE4NjMxMDg3OTZdfQ==
 -->
