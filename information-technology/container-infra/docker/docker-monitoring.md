@@ -6,7 +6,9 @@ CAdvisor에서는 생성된 모든 컨테이너의 자원 사용량을 확인할
 
 CAdvisor의 대시보드는 60초간의 모니터링 정보만 보여줍니다. Prometheus등과 같이 사용하면 장기간의 모니터링 정보를 수집하고 분석할 수 있습니다. 
 
-그러기 CAdvisor는 단일 도커 호스트만을 모니터링한다는 한계가 있습니다. 여러개의 호스트로 도커를 사용하고 있으며, 이를 기반으로 PaaS(Platfor as Service)와 같은 도커 클러스터를 구축했다면 단일 CAdvisor 컨테이너는 용도에 맞지 않을 수 있습니다. 보통은 쿠버네티스나 스웜 과 같은 오케스트레이션 툴을 설치한뒤 프로메테우스나 influxDB등을 이용해 여러 호스트의 데이터를 수집하는 것이 일반적입닏
+그러기 CAdvisor는 단일 도커 호스트만을 모니터링한다는 한계가 있습니다. 여러개의 호스트로 도커를 사용하고 있으며, 이를 기반으로 PaaS(Platfor as Service)와 같은 도커 클러스터를 구축했다면 단일 CAdvisor 컨테이너는 용도에 맞지 않을 수 있습니다. 보통은 쿠버네티스나 스웜 과 같은 오케스트레이션 툴을 설치한뒤 프로메테우스나 influxDB등을 이용해 여러 호스트의 데이터를 수집하는 것이 일반적입니다. 
+
+
 
 ## 심화
 
@@ -17,5 +19,5 @@ CAdvisor의 대시보드는 60초간의 모니터링 정보만 보여줍니다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzk1NzIxNTMsMTI1Njc0MjM4OV19
+eyJoaXN0b3J5IjpbLTg3ODcwMzcwNiwxMjU2NzQyMzg5XX0=
 -->
