@@ -198,14 +198,16 @@ spec.rules.http.path
 spec.rules.http.paths.backend.serviceName, servicePort
 : path로 들어온 요청이 전달될 서비스와 포트입니다. 즉 위 예시에서는 /echo-hostname 경로로 들어온 요청을 hostname-serivce 서비스의 80포트로 전달합니다. 
 
-위 처럼 인그레스를 생성했지만, 사실 이것만으로는 아무 일도 일어나지 않습니다. 인그레스
+위 처럼 인그레스를 생성했지만, 사실 이것만으로는 아무 일도 일어나지 않습니다. 인그레스는 단지 요청을 처리하는 규칙을 정의하는 선언적인 오브젝트일뿐, 외부 요청을 받아들일 수 있는 실제 서버가 아니기 때문입니다. 
+
+인그레스는 인그레스 컨트롤러라는 특수한 서버에 적용해야만 그 규칙을 사용할 수 있습니다. 즉 실제로 요청을 받고 규칙을 적용하는 것은 인그레스 컨트롤러 서버 입니다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNDU3MTg3NCwtMTkwMDYwODY0MiwzNz
-YzNjQxOTYsLTIxMDA1MTkwMDIsODExMDQ1NTY4LC0xMjU2MDQw
-NzEyLDUyMzkzOTg4NSwtMTQ4NjAzMzYwMywxMDMwOTc2MTgyLD
-c5MTY5MTc2NywtMTM5NjcwODgyMSwtMzU3ODM2OTIsLTEwMDAw
-NDA2OTZdfQ==
+eyJoaXN0b3J5IjpbLTEwMDE2Mjg2MjIsLTE5MDA2MDg2NDIsMz
+c2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMTA0NTU2OCwtMTI1NjA0
+MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2MDMsMTAzMDk3NjE4Mi
+w3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1NzgzNjkyLC0xMDAw
+MDQwNjk2XX0=
 -->
