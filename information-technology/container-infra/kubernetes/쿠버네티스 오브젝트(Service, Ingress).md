@@ -154,6 +154,8 @@ spec:
 	* /apple, /apple/red 등과 같이 특정 경로로 들어온 요청을 어떤 서비스로 전달하지 정의하는 라우팅 규칙을 정할 수 있습니다.
 * 가상 호스트 기반의 처리
 	* 같은 IP에 대해 다른 도메인 이름으로 요청이 도착했을때, 어떻게 처리할 것인지 정의할 수 있습니다. 
+* SSL/TLS  보안 연결 처리
+	* 여러 개의 서비스로 요청을 라우팅할때, 보안 연결을 위한 인증서를 쉽게 적용할 수 있습니다. 
 
 
 인그레스 트래픽은 외부에서 서버로 유입되는 트래픽을 의미하며 인그레스 네트워크는 인그레스 트래픽을 처리하기 위한 네트워크를 의미합니다. 
@@ -163,7 +165,7 @@ spec:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NTQ5NzMwNCwtMTQ4NjAzMzYwMywxMD
-MwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwODgyMSwtMzU3ODM2
-OTIsLTEwMDAwNDA2OTZdfQ==
+eyJoaXN0b3J5IjpbNTIzOTM5ODg1LC0xNDg2MDMzNjAzLDEwMz
+A5NzYxODIsNzkxNjkxNzY3LC0xMzk2NzA4ODIxLC0zNTc4MzY5
+MiwtMTAwMDA0MDY5Nl19
 -->
