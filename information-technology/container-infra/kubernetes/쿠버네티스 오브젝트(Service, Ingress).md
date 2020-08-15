@@ -146,23 +146,18 @@ spec:
 
 예를 들어, 코버네티스의 포드들이 externalname-svc라는 이름으로 요청을 보내는 경우,  쿠버네티스의 DNS는 my.databse.com으로 접근하도록 CNAME 레코드를 반환합니다. 즉 externalname-svc로 요청을 보내면 my.database.com에 접근하게 도비니다. ExternalName 서비스는 코버네티스와 별개로 존재하는 레거시 시스템에 연동해야 하는 상황에서 유용하게 사용할 수 있습니다. CNAME 레코드는 Canonical Name의 줄임말로, 도메인을 가리키는 다른 이름입니다. 
 
-## Ingress 설정
+# Ingress
 
 Ingress는 입구라는 의미입니다. 다양한 웹 애플리케이션을 하나의 로드 밸런서로 서비스하기 위해 Ingress를 사용합니다. 웹 애플리케이션을 배포하는 과정을 보면 외부에서 직접 접근할 수 없도록 애플리케이션을 내부망에 설치하고 외부에서 접근이 가능한  `ALB`나  `Nginx`,  `Apache`를 프록시 서버로 활용합니다. 프록시 서버는 도메인과 Path 조건에 따라 등록된 서버로 요청을 전달하는데 서버가 바뀌거나 IP가 변경되면 매번 설정을 수정해줘야 합니다. 쿠버네티스의 Ingress는 이를 자동화하면서 기존 프록시 서버에서 사용하는 설정을 거의 그대로 사용할 수 있습니다. 새로운 도메인을 추가하거나 업로드 용량을 제한하기 위해 일일이 프록시 서버에 접속하여 설정할 필요가 없습니다.
 
 하나의 클러스터에 여러 개의 Ingress 설정을 할 수 있어 관리자 접속용 Ingress와 일반 접속용 Ingress를 따로 관리할 수 있습니다.
 
 
-## 클라우드 지원
-
-![Cloud](https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/cloud-company.png)
-
-쿠버네티스는 부하에 따라 자동으로 서버를 늘리는 기능AutoScaling이 있고 IP를 할당받아 로드밸런스LoadBalancer로 사용할 수 있습니다. 외부 스토리지를 컨테이너 내부 디렉토리에 마운트하여 사용하는 것도 일반적인데 이를 위해 클라우드 별로 적절한 API를 사용하는 모듈이 필요합니다. 쿠버네티스는 Cloud Controller를 이용하여 클라우드 연동을 손쉽게 확장할 수 있습니다. AWS, 구글 클라우드, 마이크로소프트 애저는 물론 수십 개의 클라우드 업체에서 모듈을 제공하여 관리자는 동일한 설정 파일을 서로 다른 클라우드에서 동일하게 사용할 수 있습니다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDk3MTkyNSwtMTM5NjcwODgyMSwtMz
+eyJoaXN0b3J5IjpbMTgzOTk4OTU5NywtMTM5NjcwODgyMSwtMz
 U3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
 -->
