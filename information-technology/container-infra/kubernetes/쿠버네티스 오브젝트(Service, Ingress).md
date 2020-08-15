@@ -170,13 +170,22 @@ spec:
 
 ## Ingress 구조
 
-```
+```yaml
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-example
+  annotations:
+    nginx.ingress.kuberantes.io/rewrite-target: /
+    kubernetes.io/ingress.class: "nginx"
 
+
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzcxOTgxOTAsODExMDQ1NTY4LC0xMj
+eyJoaXN0b3J5IjpbLTEzMjAxMTQ2NzgsODExMDQ1NTY4LC0xMj
 U2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4NjAzMzYwMywxMDMwOTc2
 MTgyLDc5MTY5MTc2NywtMTM5NjcwODgyMSwtMzU3ODM2OTIsLT
 EwMDAwNDA2OTZdfQ==
