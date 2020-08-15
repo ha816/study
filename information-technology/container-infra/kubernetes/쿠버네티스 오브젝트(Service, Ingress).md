@@ -148,7 +148,7 @@ spec:
 
 # Ingress
 
-Ingress는 입구라는 의미입니다. 
+Ingress는 사전적으로는 입구라는 의미입니다. 일반적으로 
 
 다양한 웹 애플리케이션을 하나의 로드 밸런서로 서비스하기 위해 Ingress를 사용합니다. 웹 애플리케이션을 배포하는 과정을 보면 외부에서 직접 접근할 수 없도록 애플리케이션을 내부망에 설치하고 외부에서 접근이 가능한  `ALB`나  `Nginx`,  `Apache`를 프록시 서버로 활용합니다. 프록시 서버는 도메인과 Path 조건에 따라 등록된 서버로 요청을 전달하는데 서버가 바뀌거나 IP가 변경되면 매번 설정을 수정해줘야 합니다. 쿠버네티스의 Ingress는 이를 자동화하면서 기존 프록시 서버에서 사용하는 설정을 거의 그대로 사용할 수 있습니다. 새로운 도메인을 추가하거나 업로드 용량을 제한하기 위해 일일이 프록시 서버에 접속하여 설정할 필요가 없습니다.
 
@@ -160,6 +160,6 @@ Ingress는 입구라는 의미입니다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDY1MTY1NTEsLTEzOTY3MDg4MjEsLT
-M1NzgzNjkyLC0xMDAwMDQwNjk2XX0=
+eyJoaXN0b3J5IjpbNzkxNjkxNzY3LC0xMzk2NzA4ODIxLC0zNT
+c4MzY5MiwtMTAwMDA0MDY5Nl19
 -->
