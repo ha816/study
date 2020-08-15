@@ -198,13 +198,14 @@ spec.rules.http.path
 spec.rules.http.paths.backend.serviceName, servicePort
 : path로 들어온 요청이 전달될 서비스와 포트입니다. 즉 위 예시에서는 /echo-hostname 경로로 들어온 요청을 hostname-serivce 서비스의 80포트로 전달합니다. 
 
-위 처럼 인그레스를 생성했지만, 사실 이것만으로는 아무 일도 일어나지 않습니다. 
+위 처럼 인그레스를 생성했지만, 사실 이것만으로는 아무 일도 일어나지 않습니다. 인그레스
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDA2MDg2NDIsMzc2MzY0MTk2LC0yMT
-AwNTE5MDAyLDgxMTA0NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4
-ODUsLTE0ODYwMzM2MDMsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLT
-EzOTY3MDg4MjEsLTM1NzgzNjkyLC0xMDAwMDQwNjk2XX0=
+eyJoaXN0b3J5IjpbMTgyNDU3MTg3NCwtMTkwMDYwODY0MiwzNz
+YzNjQxOTYsLTIxMDA1MTkwMDIsODExMDQ1NTY4LC0xMjU2MDQw
+NzEyLDUyMzkzOTg4NSwtMTQ4NjAzMzYwMywxMDMwOTc2MTgyLD
+c5MTY5MTc2NywtMTM5NjcwODgyMSwtMzU3ODM2OTIsLTEwMDAw
+NDA2OTZdfQ==
 -->
