@@ -148,15 +148,20 @@ spec:
 
 # Ingress
 
-서비스 오브젝트가 외부 요청을 받아들이기 위한 것이 었다면, 인그레스는 외부 요청을 어떻게 처리할 것인지 네트워크 7 계층 레벨에서 정의하는 오브젝트입니다. 참고로 Ingress는 사전적으로는 입구라는 의미입니다.
+서비스 오브젝트가 외부 요청을 받아들이기 위한 것이 었다면, 인그레스는 외부 요청을 어떻게 처리할 것인지 네트워크 7 계층 레벨에서 정의하는 오브젝트입니다. 인그레스가 담당하는 기본적인 기능은 아래와 같습니다.
+
+* 외부 요청의 라우팅
+	* /apple, /apple/red 등과 같이 특정 경로
+
 
 인그레스 트래픽은 외부에서 서버로 유입되는 트래픽을 의미하며 인그레스 네트워크는 인그레스 트래픽을 처리하기 위한 네트워크를 의미합니다. 
 
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODYwMzM2MDMsMTAzMDk3NjE4Miw3OT
-E2OTE3NjcsLTEzOTY3MDg4MjEsLTM1NzgzNjkyLC0xMDAwMDQw
-Njk2XX0=
+eyJoaXN0b3J5IjpbNzY1Mzc5NTksLTE0ODYwMzM2MDMsMTAzMD
+k3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1NzgzNjky
+LC0xMDAwMDQwNjk2XX0=
 -->
