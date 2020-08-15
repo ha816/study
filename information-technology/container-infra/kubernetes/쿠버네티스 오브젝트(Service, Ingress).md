@@ -164,7 +164,7 @@ spec:
 
 만약 애플리케이션이 3개의 디플로이먼트로 생성되어 있다고 가정해봅시다. 각 디플로이먼트를 외부에 노출해야 한다면 NodePort 또는 LoadBalancer 타입의 서비스를 3개를 생성해야 합니다. 언뜻 보면 잘 동작하는 것 같지만, 서비스의 변경사항이 필요하면 귀찮은 일이 발생합니다. 왜냐하면 SSL/TLS 보안, 접근 도메인 및 클라이언트 상태에 기반한 라우팅등을 구현하려면 각 서비스와 디플로이먼트에 대한 설정을 일일이 해야 하기 때문입니다. 이런 상황에서 인그레스를 오브젝트를 사용하면 URL 엔드포인트를 하나만 생성함으로써 해결할 수 있습니다.
 
-
+클라이언트에서는 단 하나의 URL에 접근하게 되며, 해당 요청은 인그레스에서 정의한 규칙에 따라 처리가 되고 적절한 디플로이먼트의 포드로 전달됩니다. 
 
 
 
@@ -174,7 +174,7 @@ spec:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjAyNzEzMzQsNTIzOTM5ODg1LC0xND
+eyJoaXN0b3J5IjpbLTEyNTYwNDA3MTIsNTIzOTM5ODg1LC0xND
 g2MDMzNjAzLDEwMzA5NzYxODIsNzkxNjkxNzY3LC0xMzk2NzA4
 ODIxLC0zNTc4MzY5MiwtMTAwMDA0MDY5Nl19
 -->
