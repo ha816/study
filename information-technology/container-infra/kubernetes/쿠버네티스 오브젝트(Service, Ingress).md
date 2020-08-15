@@ -202,11 +202,15 @@ spec.rules.http.paths.backend.serviceName, servicePort
 
 **인그레스는 인그레스 컨트롤러라는 특수한 서버에 적용해야만 그 규칙을 사용할 수 있습니다. 즉 실제로 요청을 받고 규칙을 적용하는 것은 인그레스 컨트롤러 서버 입니다.** 
 
-인그레스 컨트롤러 서버로는 대표적으로 Ng
+인그레스 컨트롤러 서버로는 대표적으로 Nginx 웹 서버 인그레스 컨트롤러가 있습니다. 이 컨트롤러는 쿠버네티스에서 공식적으로 개발되고 있기 때문에 아래 명령어를 실행하면 Nginx 인그레스 컨트롤러와 관련된 모든 리로스를 한번에 설치할 수 있습니다. 
+
+```
+
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTg0NDU5NjAsLTE5MDA2MDg2NDIsMz
+eyJoaXN0b3J5IjpbLTE0MDc0NDI2MzYsLTE5MDA2MDg2NDIsMz
 c2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMTA0NTU2OCwtMTI1NjA0
 MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2MDMsMTAzMDk3NjE4Mi
 w3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1NzgzNjkyLC0xMDAw
