@@ -13,9 +13,8 @@
 Pod는 서로 독립적인 IP주소를 가집니다. 그리고 서비스는 다수의 IP주소를 묶어 하나의 논리적인 서비스 IP주소를 만들 수 있습니다. 그리고 하나로 묶인 파드셋에 걸쳐서 트래픽을 라우팅하게 됩니다.   
 
 ![](https://d33wubrfki0l68.cloudfront.net/b964c59cdc1979dd4e1904c25f43745564ef6bee/f3351/docs/tutorials/kubernetes-basics/public/images/module_04_labels.svg)
-레이블과 셀렉터는 쿠버네티스의 인스턴스들에 대해 논리적인 기본 그룹핑 단위입니다.
-레이블은 오브젝트의 생성 시점 또는 이후 시점에 붙여질 수 있고 언제든지 수정이 가능합니다.
-레이블은 오브젝트들에 붙여진 키/밸류 쌍으로 다양한 방식으로 이용 가능합니다.
+
+레이블과 셀렉터는 쿠버네티스의 인스턴스들에 대해 논리적인 기본 그룹핑 단위입니다. 레이블은 오브젝트의 생성 시점 또는 이후 시점에 붙여질 수 있고 언제든지 수정이 가능합니다. 레이블은 오브젝트들에 붙여진 키/밸류 쌍으로 다양한 방식으로 이용 가능합니다.
 
 ```yaml
 #Label Selector 
@@ -147,10 +146,6 @@ spec:
 
 예를 들어, 코버네티스의 포드들이 externalname-svc라는 이름으로 요청을 보내는 경우,  쿠버네티스의 DNS는 my.databse.com으로 접근하도록 CNAME 레코드를 반환합니다. 즉 externalname-svc로 요청을 보내면 my.database.com에 접근하게 도비니다. ExternalName 서비스는 코버네티스와 별개로 존재하는 레거시 시스템에 연동해야 하는 상황에서 유용하게 사용할 수 있습니다. CNAME 레코드는 Canonical Name의 줄임말로, 도메인을 가리키는 다른 이름입니다. 
 
-## Volume
-
-저장소와 관련된 오브젝트입니다. 호스트 디렉토리를 그대로 사용할 수도 있고 EBS 같은 스토리지를 동적으로 생성하여 사용할 수도 있습니다. 사실상 인기 있는 대부분의 저장 방식을  [지원](https://kubernetes.io/docs/concepts/storage/#types-of-volumes)합니다.
-
 ## Ingress 설정
 
 Ingress는 입구라는 의미입니다. 다양한 웹 애플리케이션을 하나의 로드 밸런서로 서비스하기 위해 Ingress를 사용합니다. 웹 애플리케이션을 배포하는 과정을 보면 외부에서 직접 접근할 수 없도록 애플리케이션을 내부망에 설치하고 외부에서 접근이 가능한  `ALB`나  `Nginx`,  `Apache`를 프록시 서버로 활용합니다. 프록시 서버는 도메인과 Path 조건에 따라 등록된 서버로 요청을 전달하는데 서버가 바뀌거나 IP가 변경되면 매번 설정을 수정해줘야 합니다. 쿠버네티스의 Ingress는 이를 자동화하면서 기존 프록시 서버에서 사용하는 설정을 거의 그대로 사용할 수 있습니다. 새로운 도메인을 추가하거나 업로드 용량을 제한하기 위해 일일이 프록시 서버에 접속하여 설정할 필요가 없습니다.
@@ -168,6 +163,6 @@ Ingress는 입구라는 의미입니다. 다양한 웹 애플리케이션을 하
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTgzMDgwMSwtMTM5NjcwODgyMSwtMz
+eyJoaXN0b3J5IjpbLTk2NDk3MTkyNSwtMTM5NjcwODgyMSwtMz
 U3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
 -->
