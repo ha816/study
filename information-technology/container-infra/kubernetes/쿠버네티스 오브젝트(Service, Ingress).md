@@ -193,13 +193,13 @@ spec.rules.host
 : 해당 도메인 이름으로 접근하는 요청에 대해서 처리 규칙을 적용합니다. 위 예시에서는 aliecek106.examlple.com이라는 도메인으로 접근하는 요청을 처리하지만, 여러 host를 정의할 수도 있습니다.
 
 spec.rules.http.path
-: 해당 경로로 들어온 요청을 어느 서비스로 전달할 것인지 정의합
+: 해당 경로로 들어온 요청을 어느 서비스로 전달할 것인지 정의합니다. 위 예시에서는 /echo-hostname 이라는 경로의 요청을 backend에 정의된 서비스로 전달합니다. 여러 개의 path를 정의해서 경로를 처리할 수도 있습니다.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzE2OTkzMDAsLTIxMDA1MTkwMDIsOD
-ExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4NjAz
-MzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwODgyMS
-wtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
+eyJoaXN0b3J5IjpbMzc2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMT
+A0NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2
+MDMsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLT
+M1NzgzNjkyLC0xMDAwMDQwNjk2XX0=
 -->
