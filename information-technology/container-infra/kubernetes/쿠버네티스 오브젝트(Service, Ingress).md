@@ -162,7 +162,7 @@ spec:
 
 ## Ingress를 사용하는 이유 
 
-
+만약 애플리케이션이 3개의 디플로이먼트로 생성되어 있다고 가정해봅시다. 
 
 
 
@@ -170,7 +170,7 @@ spec:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYyODEzNTQ0LDUyMzkzOTg4NSwtMTQ4Nj
-AzMzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwODgy
-MSwtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
+eyJoaXN0b3J5IjpbLTE2MDgzOTA4MjAsNTIzOTM5ODg1LC0xND
+g2MDMzNjAzLDEwMzA5NzYxODIsNzkxNjkxNzY3LC0xMzk2NzA4
+ODIxLC0zNTc4MzY5MiwtMTAwMDA0MDY5Nl19
 -->
