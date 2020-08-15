@@ -166,18 +166,17 @@ spec:
 
 클라이언트에서는 단 하나의 URL에 접근하게 되며, 해당 요청은 인그레스에서 정의한 규칙에 따라 처리가 되고 적절한 디플로이먼트의 포드로 전달됩니다. 
 
-중요한 점은 라우팅 정의나 보안등과 같은 세부 설정을 서비스와 디플로이먼트가 아닌 인그레스에 의해 수행되는 것입니다. 하나의 설정 지점인 인그레스에서 
+중요한 점은 라우팅 정의나 보안등과 같은 세부 설정을 서비스와 디플로이먼트가 아닌 인그레스에 의해 수행되는 것입니다. 하나의 설정 지점인 인그레스에서 처리 규칙을 정의하기만 하면 됩니다. 즉 **외부 요청에 대한 처리 규칙을 쿠버네티스 자체 기능인 인그레스로 편리하게 관리할 수 있다는 것이 인그레스의 본질입니다.** 
 
-
-
+## Ingress 구조
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2ODc3Mjk1MCwtMTI1NjA0MDcxMiw1Mj
-M5Mzk4ODUsLTE0ODYwMzM2MDMsMTAzMDk3NjE4Miw3OTE2OTE3
-NjcsLTEzOTY3MDg4MjEsLTM1NzgzNjkyLC0xMDAwMDQwNjk2XX
-0=
+eyJoaXN0b3J5IjpbODExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMz
+kzOTg4NSwtMTQ4NjAzMzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2
+NywtMTM5NjcwODgyMSwtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ
+==
 -->
