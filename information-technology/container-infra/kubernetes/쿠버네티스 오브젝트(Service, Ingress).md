@@ -205,14 +205,16 @@ spec.rules.http.paths.backend.serviceName, servicePort
 인그레스 컨트롤러 서버로는 대표적으로 Nginx 웹 서버 인그레스 컨트롤러가 있습니다. 이 컨트롤러는 쿠버네티스에서 공식적으로 개발되고 있기 때문에 아래 명령어를 실행하면 Nginx 인그레스 컨트롤러와 관련된 모든 리로스를 한번에 설치할 수 있습니다. 
 
 ```
-
+kubectl apply -f \https://raw.githubusercontent.com/kubernates/ingress-nginx/master ...
 ```
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDc0NDI2MzYsLTE5MDA2MDg2NDIsMz
-c2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMTA0NTU2OCwtMTI1NjA0
-MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2MDMsMTAzMDk3NjE4Mi
-w3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1NzgzNjkyLC0xMDAw
-MDQwNjk2XX0=
+eyJoaXN0b3J5IjpbLTE5NTYzOTcwMTUsLTE0MDc0NDI2MzYsLT
+E5MDA2MDg2NDIsMzc2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMTA0
+NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2MD
+MsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1
+NzgzNjkyLC0xMDAwMDQwNjk2XX0=
 -->
