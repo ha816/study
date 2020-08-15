@@ -158,7 +158,11 @@ spec:
 * SSL/TLS  보안 연결 처리
 	* 여러 개의 서비스로 요청을 라우팅할때, 보안 연결을 위한 인증서를 쉽게 적용할 수 있습니다. 
 
-인그레스 기능은 위 기능만으로 제한되는 것은 아니며 어떻게 활용하느냐에 따라 다양한 기능을 사용할 수 있습니다. 인그레스 요청을 처리할 서버로 무엇을 선택하는
+인그레스 기능은 위 기능만으로 제한되는 것은 아니며 어떻게 활용하느냐에 따라 다양한 기능을 사용할 수 있습니다.
+
+## Ingress를 사용하는 이유 
+
+
 
 
 
@@ -166,7 +170,7 @@ spec:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MjAzODYxMyw1MjM5Mzk4ODUsLTE0OD
-YwMzM2MDMsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4
-MjEsLTM1NzgzNjkyLC0xMDAwMDQwNjk2XX0=
+eyJoaXN0b3J5IjpbNjYyODEzNTQ0LDUyMzkzOTg4NSwtMTQ4Nj
+AzMzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwODgy
+MSwtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
 -->
