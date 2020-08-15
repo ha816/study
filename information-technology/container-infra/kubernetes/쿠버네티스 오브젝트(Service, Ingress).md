@@ -151,7 +151,9 @@ spec:
 서비스 오브젝트가 외부 요청을 받아들이기 위한 것이 었다면, 인그레스는 외부 요청을 어떻게 처리할 것인지 네트워크 7 계층 레벨에서 정의하는 오브젝트입니다. 인그레스가 담당하는 기본적인 기능은 아래와 같습니다.
 
 * 외부 요청의 라우팅
-	* /apple, /apple/red 등과 같이 특정 경로
+	* /apple, /apple/red 등과 같이 특정 경로로 들어온 요청을 어떤 서비스로 전달하지 정의하는 라우팅 규칙을 정할 수 있습니다.
+* 가상 호스트 기반의 처리
+	* 같은 IP에 대해 다른 도메인 이름으로 요청이 도착했을때, 어떻게 처리할 것인지 정의할 수 있습니다. 
 
 
 인그레스 트래픽은 외부에서 서버로 유입되는 트래픽을 의미하며 인그레스 네트워크는 인그레스 트래픽을 처리하기 위한 네트워크를 의미합니다. 
@@ -161,7 +163,7 @@ spec:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY1Mzc5NTksLTE0ODYwMzM2MDMsMTAzMD
-k3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1NzgzNjky
-LC0xMDAwMDQwNjk2XX0=
+eyJoaXN0b3J5IjpbLTM2NTQ5NzMwNCwtMTQ4NjAzMzYwMywxMD
+MwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwODgyMSwtMzU3ODM2
+OTIsLTEwMDAwNDA2OTZdfQ==
 -->
