@@ -4,6 +4,62 @@
 
 컨테이너 애플리케이션을 구동하기 위해 반드시 알아야할 몇 가지 중요한 오브젝트가 있습니다. 바로 Pod, 레플리카셋(Replica Set), 서비스(Service), 디플로이먼트(deployment) 입니다. 하나씩 알아봅시다.
 
+# 기술하기
+
+쿠버네티스에서 오브젝트를 생성할 때, (이름과 같은)오브젝트에 대한 기본적인 정보와 더불어, 의도한 상태를 기술한 오브젝트 spec을 제시해 줘야만 합니다. 오브젝트를 생성하기 위해 쿠버네티스 API를 사용할 때, API 요청 안에 오브젝트 Spec 정보를 포함시켜 줘야만 합니다.
+
+```yaml
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment # deployment 타입의 쿠버네티스 오브젝트 
+metadata:
+  name: nginx-deployment # 쿠버네티스 오브젝트 이름
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers: # 컨테이너 설정
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+```
+
+위 예시와 같이 .yaml 파일을 이용하여 디플로이먼트를 생성하기 위한 하나의 방식으로는  `kubectl`  커맨드-라인 인터페이스에 인자값으로  `.yaml`  파일을 건네는 커맨드 `kubectl apply`를 이용하는 것 입니다. 
+
+```shell
+kubectl apply -f https://k8s.io/examples/application/deployment.yaml --record
+```
+
+그 출력 내용은 아래와 같이 deployment가 생성되었다고 알려줍니다. 
+
+```
+deployment.apps/nginx-deployment created
+```
+
+### 필수 필드
+
+생성하고자 하는 쿠버네티스 오브젝트에 대한  `.yaml`  파일 내, 다음 필드는 필수 값입니다.
+
+-   `apiVersion` 
+	- 이 오브젝트를 생성하기 위해 사용하고 있는 쿠버네티스 API 버전이 어떤 것인지
+-   `kind`
+	- 어떤 종류의 오브젝트를 생성하고자 하는지
+-   `metadata`
+	- `name`  문자열,  `UID`, 그리고 선택적인  `namespace`를 포함하여 오브젝트를 유일하게 구분지어 줄 필드를 입력
+-   `spec`  
+	- 오브젝트에 대해 어떤 상태 또는 spec을 가지게 할지
+
+쿠버네티스 오브젝트의 종류(kind)에 따라 `spec`의 정확한 포맷이 다릅니다. 더욱이 그 오브젝트 특유의 고유한 중첩된 필드를 가질 수도 있습니다. [Kubernetes API Reference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/)  는 쿠버네티스를 이용하여 생성할 수 있는 오브젝트에 대한 모든 spec 포맷을 살펴볼 수 있도록 해준다. 
+
+예를 들어, Pod에 대한  `spec`  포맷은  [PodSpec v1 Core](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#podspec-v1-core)  에서 확인할 수 있고, 디플로이먼트에 대한  `spec`  포맷은  [DeploymentSpec v1 apps](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#deploymentspec-v1-apps)에서 확인할 수 있습니다.
+
+
 ##  Pod
 
 포드는 컨테이너를 다루는 가장 기본 단위입니다. 포드는 1개 이상의 컨테이너로 구성된 컨테이너의 집합입니다. 즉 1개의 포드에는 다수의 컨태이너가 존재할 수 있습니다. 
@@ -323,5 +379,5 @@ Ingress는 입구라는 의미입니다. 다양한 웹 애플리케이션을 하
 
 쿠버네티스는 부하에 따라 자동으로 서버를 늘리는 기능AutoScaling이 있고 IP를 할당받아 로드밸런스LoadBalancer로 사용할 수 있습니다. 외부 스토리지를 컨테이너 내부 디렉토리에 마운트하여 사용하는 것도 일반적인데 이를 위해 클라우드 별로 적절한 API를 사용하는 모듈이 필요합니다. 쿠버네티스는 Cloud Controller를 이용하여 클라우드 연동을 손쉽게 확장할 수 있습니다. AWS, 구글 클라우드, 마이크로소프트 애저는 물론 수십 개의 클라우드 업체에서 모듈을 제공하여 관리자는 동일한 설정 파일을 서로 다른 클라우드에서 동일하게 사용할 수 있습니다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNTEzMjI0N119
+eyJoaXN0b3J5IjpbMjY3MTA5ODgxLC05MDUxMzIyNDddfQ==
 -->
