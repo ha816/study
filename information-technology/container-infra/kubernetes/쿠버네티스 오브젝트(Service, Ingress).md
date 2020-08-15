@@ -162,7 +162,7 @@ spec:
 
 ## Ingress를 사용하는 이유 
 
-만약 애플리케이션이 3개의 디플로이먼트로 생성되어 있다고 가정해봅시다. 
+만약 애플리케이션이 3개의 디플로이먼트로 생성되어 있다고 가정해봅시다. 각 디플로이먼트를 외부에 노출해야 한다면 NodePort 또는 LoadBalancer 타입의 서비스를 3개를 생성ㅎ
 
 
 
@@ -170,7 +170,7 @@ spec:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDgzOTA4MjAsNTIzOTM5ODg1LC0xND
-g2MDMzNjAzLDEwMzA5NzYxODIsNzkxNjkxNzY3LC0xMzk2NzA4
-ODIxLC0zNTc4MzY5MiwtMTAwMDA0MDY5Nl19
+eyJoaXN0b3J5IjpbMTQ4Mjc2MjExMCw1MjM5Mzk4ODUsLTE0OD
+YwMzM2MDMsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4
+MjEsLTM1NzgzNjkyLC0xMDAwMDQwNjk2XX0=
 -->
