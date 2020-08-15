@@ -44,7 +44,6 @@ spec
 
 작성된 YAML 파일은 `kubectl apply -f `명령어로 쿠버네티스에서 생성할 수 있습니다. 
 
-
 ## ReplicaSet
 
 ![ReplicaSet](https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/replicaset.png)
@@ -84,7 +83,7 @@ spec.replicas
 spec.template 하위 내용들
 : 포드를 생성할때 사용할 템플릿을 설정합니다. 포드를 만들때 사용하던 내용과 동이할게 레플리카 셋에도 적용하여 어떤 포드를 생성할지 명시합니다. 이를 보통 포드 스펙, 포드 템플릿이라고 말합니다.
 
-### 동작원리
+### ReplicaSet 동작원리
 
 레플리카셋을 보면 마치 레플리카 셋이 다수의 포드와 연결된것 처럼 보입니다. 레플리카셋을 생성하면 포드가 생성되고 레플리카 셋을 삭제하면 포드 또한 모두 삭제되기 때문입니다. 그러나 실제론 **레플리카셋은 포드와 연결되어 있지 않습니다**.  오히려 느슨한 연결을 유지하고 있으며, 이런 느슨한 연결은 포드와 레플리카셋의 정의 중 라벨 셀렉터(Label Selector)를 이용해 이루어집니다.
 
@@ -323,6 +322,6 @@ Ingress는 입구라는 의미입니다. 다양한 웹 애플리케이션을 하
 
 쿠버네티스는 부하에 따라 자동으로 서버를 늘리는 기능AutoScaling이 있고 IP를 할당받아 로드밸런스LoadBalancer로 사용할 수 있습니다. 외부 스토리지를 컨테이너 내부 디렉토리에 마운트하여 사용하는 것도 일반적인데 이를 위해 클라우드 별로 적절한 API를 사용하는 모듈이 필요합니다. 쿠버네티스는 Cloud Controller를 이용하여 클라우드 연동을 손쉽게 확장할 수 있습니다. AWS, 구글 클라우드, 마이크로소프트 애저는 물론 수십 개의 클라우드 업체에서 모듈을 제공하여 관리자는 동일한 설정 파일을 서로 다른 클라우드에서 동일하게 사용할 수 있습니다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMDc3OTkxNSwyNjcxMDk4ODEsLTkwNT
-EzMjI0N119
+eyJoaXN0b3J5IjpbMTM4MDE0ODAzLDI2NzEwOTg4MSwtOTA1MT
+MyMjQ3XX0=
 -->
