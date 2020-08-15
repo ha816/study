@@ -192,13 +192,14 @@ spec:
 spec.rules.host
 : 해당 도메인 이름으로 접근하는 요청에 대해서 처리 규칙을 적용합니다. 위 예시에서는 aliecek106.examlple.com이라는 도메인으로 접근하는 요청을 처리하지만, 여러 host를 정의할 수도 있습니다.
 
-spec.rules.http.pa
+spec.rules.http.path
+: 해당 경로로 들어온 요청을 어느 서비스로 전달할 것인지 정의합
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MzQ3MTcwNiwtMjEwMDUxOTAwMiw4MT
-EwNDU1NjgsLTEyNTYwNDA3MTIsNTIzOTM5ODg1LC0xNDg2MDMz
-NjAzLDEwMzA5NzYxODIsNzkxNjkxNzY3LC0xMzk2NzA4ODIxLC
-0zNTc4MzY5MiwtMTAwMDA0MDY5Nl19
+eyJoaXN0b3J5IjpbLTE3MzE2OTkzMDAsLTIxMDA1MTkwMDIsOD
+ExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4NjAz
+MzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwODgyMS
+wtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
 -->
