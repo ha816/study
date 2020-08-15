@@ -189,13 +189,14 @@ spec:
            servicePort: 80
 ```
 
-
+spec.rules.host
+: 해당 도메인 이름으로 접근하는 요청에 대해서 처리 규칙을 적용합니다
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDA1MTkwMDIsODExMDQ1NTY4LC0xMj
-U2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4NjAzMzYwMywxMDMwOTc2
-MTgyLDc5MTY5MTc2NywtMTM5NjcwODgyMSwtMzU3ODM2OTIsLT
-EwMDAwNDA2OTZdfQ==
+eyJoaXN0b3J5IjpbLTExNzI2MDAxOTcsLTIxMDA1MTkwMDIsOD
+ExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4NjAz
+MzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwODgyMS
+wtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
 -->
