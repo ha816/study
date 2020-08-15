@@ -148,7 +148,8 @@ spec:
 
 # Ingress
 
-서비스 오브젝트가 외부 요청을 받아들이기 위한 것이 었다면, 인그레스는 외부 요청을 어떻게 처리할 것인지 네트워크 7 계층 레벨에서 정의하는 오브젝트입니다. 인그레스가 담당하는 기본적인 기능은 아래와 같습니다.
+서비스 오브젝트가 외부 요청을 받아들이기 위한 것이 었다면, 인그레스는 외부 요청을 어떻게 처리할 것인지 네트워크 7 계층 레벨에서 정의하는 오브젝트입니다. 인그레스가 담당하는 기본적인 기능은 아래와 같습니다. 참고로 인그레스 트래픽은 외부에서 서버로 유입되는 트래픽을 의미하며 인그레스 네트워크는 인그레스 트래픽을 처리하기 위한 네트워크를 의미합니다. 
+
 
 * 외부 요청의 라우팅
 	* /apple, /apple/red 등과 같이 특정 경로로 들어온 요청을 어떤 서비스로 전달하지 정의하는 라우팅 규칙을 정할 수 있습니다.
@@ -157,15 +158,15 @@ spec:
 * SSL/TLS  보안 연결 처리
 	* 여러 개의 서비스로 요청을 라우팅할때, 보안 연결을 위한 인증서를 쉽게 적용할 수 있습니다. 
 
+인그레스 기능은 위 기능만으로 제한되는 것은 아니며 어떻게 활용하느냐에 따라 다양한 기능을 사용할 수 있습니다. 인그레스 요청을 처리할 서버로 무엇을 선택하는
 
-인그레스 트래픽은 외부에서 서버로 유입되는 트래픽을 의미하며 인그레스 네트워크는 인그레스 트래픽을 처리하기 위한 네트워크를 의미합니다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIzOTM5ODg1LC0xNDg2MDMzNjAzLDEwMz
-A5NzYxODIsNzkxNjkxNzY3LC0xMzk2NzA4ODIxLC0zNTc4MzY5
-MiwtMTAwMDA0MDY5Nl19
+eyJoaXN0b3J5IjpbMTk4MjAzODYxMyw1MjM5Mzk4ODUsLTE0OD
+YwMzM2MDMsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4
+MjEsLTM1NzgzNjkyLC0xMDAwMDQwNjk2XX0=
 -->
