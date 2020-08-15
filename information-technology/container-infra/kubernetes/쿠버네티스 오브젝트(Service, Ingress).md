@@ -10,8 +10,6 @@
 * 여러 포드에 접근할때, 요청을 분산하는 로드 밸런서 기능을 수행
 * 클라우드 플랫폼의 로드밸런서, 클러스터 노드의 포트 등을 통해 포드를 외부로 노출
 
-![](https://d33wubrfki0l68.cloudfront.net/cc38b0f3c0fd94e66495e3a4198f2096cdecd3d5/ace10/docs/tutorials/kubernetes-basics/public/images/module_04_services.svg)
-
 Pod는 서로 독립적인 IP주소를 가집니다. 그리고 서비스는 다수의 IP주소를 묶어 하나의 논리적인 서비스 IP주소를 만들 수 있습니다. 그리고 하나로 묶인 파드 셋에 걸쳐서 트래픽을 라우팅하게 됩니다.   
 
 ![](https://d33wubrfki0l68.cloudfront.net/b964c59cdc1979dd4e1904c25f43745564ef6bee/f3351/docs/tutorials/kubernetes-basics/public/images/module_04_labels.svg)
@@ -170,6 +168,6 @@ Ingress는 입구라는 의미입니다. 다양한 웹 애플리케이션을 하
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTkwODM2NDIsLTM1NzgzNjkyLC0xMD
+eyJoaXN0b3J5IjpbLTEzOTY3MDg4MjEsLTM1NzgzNjkyLC0xMD
 AwMDQwNjk2XX0=
 -->
