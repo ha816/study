@@ -195,11 +195,13 @@ spec.rules.host
 spec.rules.http.path
 : 해당 경로로 들어온 요청을 어느 서비스로 전달할 것인지 정의합니다. 위 예시에서는 /echo-hostname 이라는 경로의 요청을 backend에 정의된 서비스로 전달합니다. 여러 개의 path를 정의해서 경로를 처리할 수도 있습니다.
 
+se
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMT
-A0NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2
-MDMsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLT
-M1NzgzNjkyLC0xMDAwMDQwNjk2XX0=
+eyJoaXN0b3J5IjpbMTI1NDkxMjc1MCwzNzYzNjQxOTYsLTIxMD
+A1MTkwMDIsODExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4
+NSwtMTQ4NjAzMzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMT
+M5NjcwODgyMSwtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
 -->
