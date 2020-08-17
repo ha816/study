@@ -214,8 +214,7 @@ kubectl apply -f \https://raw.githubusercontent.com/kubernates/ingress-nginx/mas
 
 
 ```yaml
-apiVersion: networking.k8s.io/v1beta1
-kind: Ingress
+kind: 
 metadata:
   name: ingress-example
   annotations:
@@ -232,10 +231,10 @@ spec:
            servicePort: 80
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODI2Njg0NTIsLTEyOTA2NTQwNzAsNz
-k2MTQxMjYwLDE1OTE3NzgzMjcsLTE5NTYzOTcwMTUsLTE0MDc0
-NDI2MzYsLTE5MDA2MDg2NDIsMzc2MzY0MTk2LC0yMTAwNTE5MD
-AyLDgxMTA0NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0
-ODYwMzM2MDMsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MD
-g4MjEsLTM1NzgzNjkyLC0xMDAwMDQwNjk2XX0=
+eyJoaXN0b3J5IjpbMTYzMjI5NDUwNCwtMTI5MDY1NDA3MCw3OT
+YxNDEyNjAsMTU5MTc3ODMyNywtMTk1NjM5NzAxNSwtMTQwNzQ0
+MjYzNiwtMTkwMDYwODY0MiwzNzYzNjQxOTYsLTIxMDA1MTkwMD
+IsODExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4
+NjAzMzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwOD
+gyMSwtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
 -->
