@@ -208,15 +208,17 @@ spec.rules.http.paths.backend.serviceName, servicePort
 kubectl apply -f \https://raw.githubusercontent.com/kubernates/ingress-nginx/master ...
 ```
 
-명령을 실행한 뒤에 시간이 흐르고 나면 `ingress-nginx`라는 네임스페이스에 Nginx 웹서버 디플로이먼트를 생성하고, 그와 관련된 설정을 컨피그맵으로 생성합니다. 그리고 nginx-ingress-controller 디플로이먼트가 생성됩니다. 
+명령을 실행한 뒤에 시간이 흐르고 나면 `ingress-nginx`라는 네임스페이스에 Nginx 웹서버 디플로이먼트를 생성하고, 그와 관련된 설정을 컨피그맵으로 생성합니다. 그리고 nginx-ingress-controller 디플로이먼트가 생성됩니다.
+
+하지만 Nginx 인그레스 컨트롤러를 외부에 노출하기 위한 서비스를 생성해주지는 않습니다. 즉 Nginx  
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTA2NTQwNzAsNzk2MTQxMjYwLDE1OT
-E3NzgzMjcsLTE5NTYzOTcwMTUsLTE0MDc0NDI2MzYsLTE5MDA2
-MDg2NDIsMzc2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMTA0NTU2OC
-wtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2MDMsMTAz
-MDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1NzgzNj
-kyLC0xMDAwMDQwNjk2XX0=
+eyJoaXN0b3J5IjpbLTU1NDA2NzIxMCwtMTI5MDY1NDA3MCw3OT
+YxNDEyNjAsMTU5MTc3ODMyNywtMTk1NjM5NzAxNSwtMTQwNzQ0
+MjYzNiwtMTkwMDYwODY0MiwzNzYzNjQxOTYsLTIxMDA1MTkwMD
+IsODExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4
+NjAzMzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwOD
+gyMSwtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
 -->
