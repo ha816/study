@@ -230,9 +230,17 @@ spec:
       targetPort: http
 ```
 
-## in
+## ingress annotation
+
+```yaml
+annotations: 
+  nginx.ingress.kubernetes.io/rewrite-target: //
+  kubernetes.io/ingress.class: "nginx"
+```
+
+앞서 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MzcyMzYzMywxODk3NDM0NTQsMTg5OD
+eyJoaXN0b3J5IjpbMTE0OTc2NzU3NSwxODk3NDM0NTQsMTg5OD
 QxMjQ0NywtMTI5MDY1NDA3MCw3OTYxNDEyNjAsMTU5MTc3ODMy
 NywtMTk1NjM5NzAxNSwtMTQwNzQ0MjYzNiwtMTkwMDYwODY0Mi
 wzNzYzNjQxOTYsLTIxMDA1MTkwMDIsODExMDQ1NTY4LC0xMjU2
