@@ -210,15 +210,32 @@ kubectl apply -f \https://raw.githubusercontent.com/kubernates/ingress-nginx/mas
 
 명령을 실행한 뒤에 시간이 흐르고 나면 `ingress-nginx`라는 네임스페이스에 Nginx 웹서버 디플로이먼트를 생성하고, 그와 관련된 설정을 컨피그맵으로 생성합니다. 그리고 nginx-ingress-controller 디플로이먼트가 생성됩니다.
 
-하지만 Nginx 인그레스 컨트롤러를 외부에 노출하기 위한 서비스를 생성해주지는 않습니다. 즉 Nginx  
+하지만 Nginx 인그레스 컨트롤러를 외부에 노출하기 위한 서비스를 생성해주지는 않습니다. 즉 Nginx 디플로이먼트만 생성되었을뿐 아직 Nginx 포드에 접근할 수 있는 상태는 아닙니다. 여러분이 환경에 맞게 생성해야 합니다.
 
 
-> Written with [StackEdit](https://stackedit.io/).
+```yaml
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-example
+  annotations:
+    nginx.ingress.kuberantes.io/rewrite-target: /
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: aliecek106.example.com
+    http:
+       paths:
+       - path: /echo-hostname
+         backend:
+           serviceName: hostname-service
+           servicePort: 80
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NDA2NzIxMCwtMTI5MDY1NDA3MCw3OT
-YxNDEyNjAsMTU5MTc3ODMyNywtMTk1NjM5NzAxNSwtMTQwNzQ0
-MjYzNiwtMTkwMDYwODY0MiwzNzYzNjQxOTYsLTIxMDA1MTkwMD
-IsODExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4
-NjAzMzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwOD
-gyMSwtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
+eyJoaXN0b3J5IjpbLTE3ODI2Njg0NTIsLTEyOTA2NTQwNzAsNz
+k2MTQxMjYwLDE1OTE3NzgzMjcsLTE5NTYzOTcwMTUsLTE0MDc0
+NDI2MzYsLTE5MDA2MDg2NDIsMzc2MzY0MTk2LC0yMTAwNTE5MD
+AyLDgxMTA0NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0
+ODYwMzM2MDMsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MD
+g4MjEsLTM1NzgzNjkyLC0xMDAwMDQwNjk2XX0=
 -->
