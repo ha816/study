@@ -256,13 +256,13 @@ path에 해당하는 캡처그룹 | rewrite-garget에 의해 전달되는 경로
 * /echo-hostname -> /
 
 
-예를 들어, echo-hostname/ 으로 접근을 하면 `/` path로 접근합니다. echo-hostname/color/red 안의 /
+예를 들어, echo-hostname/ 으로 접근을 하면 `/` path로 접근합니다. echo-hostname/color/red는 `/color/red` path로 접근하게 됩니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTY5NzM2NDcsLTIxMDMyODY2MTIsNj
-ExNTQyMDE1LDE5MjY3Njc2NTIsMzQ1Mjk1NjE2LDE4OTc0MzQ1
-NCwxODk4NDEyNDQ3LC0xMjkwNjU0MDcwLDc5NjE0MTI2MCwxNT
-kxNzc4MzI3LC0xOTU2Mzk3MDE1LC0xNDA3NDQyNjM2LC0xOTAw
-NjA4NjQyLDM3NjM2NDE5NiwtMjEwMDUxOTAwMiw4MTEwNDU1Nj
-gsLTEyNTYwNDA3MTIsNTIzOTM5ODg1LC0xNDg2MDMzNjAzLDEw
-MzA5NzYxODJdfQ==
+eyJoaXN0b3J5IjpbMTE1MTcwMzk0MywtMjEwMzI4NjYxMiw2MT
+E1NDIwMTUsMTkyNjc2NzY1MiwzNDUyOTU2MTYsMTg5NzQzNDU0
+LDE4OTg0MTI0NDcsLTEyOTA2NTQwNzAsNzk2MTQxMjYwLDE1OT
+E3NzgzMjcsLTE5NTYzOTcwMTUsLTE0MDc0NDI2MzYsLTE5MDA2
+MDg2NDIsMzc2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMTA0NTU2OC
+wtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2MDMsMTAz
+MDk3NjE4Ml19
 -->
