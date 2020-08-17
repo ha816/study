@@ -246,13 +246,15 @@ kubernetes.io/ingress.class는 해당 인그레스 규칙을 어떤 인그레스
 
 nginx.ingress.kubernetes.io/rewrite-target는 Nginx 인그레스 컨트롤러에서만 사용이 가능한 기능입니다. 이 주석은 인그레스에 정의된 경로로 들어오는 요청을 rewrite-target에 설정된 경로로 전달합니다. 
 
-사실 re
+사실 rewrite-target은 Nginx의 캡처 그룹과 함께 사용할때 유용한 기능입니다. 캡처 그룹이란 정규표현식 형태로 요청 경로등의 값을 변수로서 사용할 수 있는 방법입니다.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMwMDM1MjYxLDM0NTI5NTYxNiwxODk3ND
-M0NTQsMTg5ODQxMjQ0NywtMTI5MDY1NDA3MCw3OTYxNDEyNjAs
-MTU5MTc3ODMyNywtMTk1NjM5NzAxNSwtMTQwNzQ0MjYzNiwtMT
-kwMDYwODY0MiwzNzYzNjQxOTYsLTIxMDA1MTkwMDIsODExMDQ1
-NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4NjAzMzYwMy
-wxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwODgyMSwtMzU3
-ODM2OTJdfQ==
+eyJoaXN0b3J5IjpbMTkyNjc2NzY1MiwzNDUyOTU2MTYsMTg5Nz
+QzNDU0LDE4OTg0MTI0NDcsLTEyOTA2NTQwNzAsNzk2MTQxMjYw
+LDE1OTE3NzgzMjcsLTE5NTYzOTcwMTUsLTE0MDc0NDI2MzYsLT
+E5MDA2MDg2NDIsMzc2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMTA0
+NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2MD
+MsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1
+NzgzNjkyXX0=
 -->
