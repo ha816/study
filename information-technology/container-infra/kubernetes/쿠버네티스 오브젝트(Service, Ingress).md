@@ -220,20 +220,18 @@ metadata:
   name: ingress-nginx
   namespace: ingress-nginx
 spec:
-  rules:
-  - host: aliecek106.example.com
-    http:
-       paths:
-       - path: /echo-hostname
-         backend:
-           serviceName: hostname-service
-           servicePort: 80
+  type: LoadBalancer # 로드밸러서 서비스를 사용할 수 있는 AWS, GKE 환경에서...
+  selector:
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/part-of: ingress-nginx
+  ports:
+    - name:
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkxNDMyOTgsLTEyOTA2NTQwNzAsNzk2MT
-QxMjYwLDE1OTE3NzgzMjcsLTE5NTYzOTcwMTUsLTE0MDc0NDI2
-MzYsLTE5MDA2MDg2NDIsMzc2MzY0MTk2LC0yMTAwNTE5MDAyLD
-gxMTA0NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYw
-MzM2MDMsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4Mj
-EsLTM1NzgzNjkyLC0xMDAwMDQwNjk2XX0=
+eyJoaXN0b3J5IjpbNTM1NDE0MzA1LC0xMjkwNjU0MDcwLDc5Nj
+E0MTI2MCwxNTkxNzc4MzI3LC0xOTU2Mzk3MDE1LC0xNDA3NDQy
+NjM2LC0xOTAwNjA4NjQyLDM3NjM2NDE5NiwtMjEwMDUxOTAwMi
+w4MTEwNDU1NjgsLTEyNTYwNDA3MTIsNTIzOTM5ODg1LC0xNDg2
+MDMzNjAzLDEwMzA5NzYxODIsNzkxNjkxNzY3LC0xMzk2NzA4OD
+IxLC0zNTc4MzY5MiwtMTAwMDA0MDY5Nl19
 -->
