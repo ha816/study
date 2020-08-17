@@ -248,13 +248,13 @@ nginx.ingress.kubernetes.io/rewrite-target는 Nginx 인그레스 컨트롤러에
 
 사실 rewrite-target은 Nginx의 캡처 그룹과 함께 사용할때 유용한 기능입니다. 캡처 그룹이란 정규표현식 형태로 요청 경로등의 값을 변수로서 사용할 수 있는 방법입니다.
 
-
+http.path 항목에 정규표현식을 집어 넣어 ㅣ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNjc2NzY1MiwzNDUyOTU2MTYsMTg5Nz
-QzNDU0LDE4OTg0MTI0NDcsLTEyOTA2NTQwNzAsNzk2MTQxMjYw
-LDE1OTE3NzgzMjcsLTE5NTYzOTcwMTUsLTE0MDc0NDI2MzYsLT
-E5MDA2MDg2NDIsMzc2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMTA0
-NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2MD
-MsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1
-NzgzNjkyXX0=
+eyJoaXN0b3J5IjpbMTkzNTg1NTI2MCwxOTI2NzY3NjUyLDM0NT
+I5NTYxNiwxODk3NDM0NTQsMTg5ODQxMjQ0NywtMTI5MDY1NDA3
+MCw3OTYxNDEyNjAsMTU5MTc3ODMyNywtMTk1NjM5NzAxNSwtMT
+QwNzQ0MjYzNiwtMTkwMDYwODY0MiwzNzYzNjQxOTYsLTIxMDA1
+MTkwMDIsODExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NS
+wtMTQ4NjAzMzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5
+NjcwODgyMV19
 -->
