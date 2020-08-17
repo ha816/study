@@ -208,14 +208,15 @@ spec.rules.http.paths.backend.serviceName, servicePort
 kubectl apply -f \https://raw.githubusercontent.com/kubernates/ingress-nginx/master ...
 ```
 
-
+명령을 싷
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MTc3ODMyNywtMTk1NjM5NzAxNSwtMT
-QwNzQ0MjYzNiwtMTkwMDYwODY0MiwzNzYzNjQxOTYsLTIxMDA1
-MTkwMDIsODExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NS
-wtMTQ4NjAzMzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5
-NjcwODgyMSwtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
+eyJoaXN0b3J5IjpbMTI5NjUzODk4MiwxNTkxNzc4MzI3LC0xOT
+U2Mzk3MDE1LC0xNDA3NDQyNjM2LC0xOTAwNjA4NjQyLDM3NjM2
+NDE5NiwtMjEwMDUxOTAwMiw4MTEwNDU1NjgsLTEyNTYwNDA3MT
+IsNTIzOTM5ODg1LC0xNDg2MDMzNjAzLDEwMzA5NzYxODIsNzkx
+NjkxNzY3LC0xMzk2NzA4ODIxLC0zNTc4MzY5MiwtMTAwMDA0MD
+Y5Nl19
 -->
