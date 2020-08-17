@@ -210,11 +210,12 @@ kubectl apply -f \https://raw.githubusercontent.com/kubernates/ingress-nginx/mas
 
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTYzOTcwMTUsLTE0MDc0NDI2MzYsLT
-E5MDA2MDg2NDIsMzc2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMTA0
-NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2MD
-MsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1
-NzgzNjkyLC0xMDAwMDQwNjk2XX0=
+eyJoaXN0b3J5IjpbMTU5MTc3ODMyNywtMTk1NjM5NzAxNSwtMT
+QwNzQ0MjYzNiwtMTkwMDYwODY0MiwzNzYzNjQxOTYsLTIxMDA1
+MTkwMDIsODExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NS
+wtMTQ4NjAzMzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5
+NjcwODgyMSwtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
 -->
