@@ -234,7 +234,7 @@ spec:
 
 ```yaml
 annotations: 
-  nginx.ingress.kubernetes.io/rewrite-target: /
+  nginx.ingress.kubernetes.io/rewrite-target: /$2 path의 정규표현식으로 획득한 경로 전달
   kubernetes.io/ingress.class: "nginx"
 ```
 
@@ -248,13 +248,13 @@ nginx.ingress.kubernetes.io/rewrite-target는 Nginx 인그레스 컨트롤러에
 
 사실 rewrite-target은 Nginx의 캡처 그룹과 함께 사용할때 유용한 기능입니다. 캡처 그룹이란 정규표현식 형태로 요청 경로등의 값을 변수로서 사용할 수 있는 방법입니다.
 
-http.path 항목에 정규표현식을 집어 넣어 rewirte-target을 통해 
+http.path 항목에 정규표현식을 집어 넣어 rewirte-target을 통해 접근하는 경로 뒤에 정보를 얻을 수 있습니다. 즉 요청 경로를 다시 쓰는 애노테이션이라 기억하면 되겠습니다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDAzNDcyMzEsMTkyNjc2NzY1MiwzND
-UyOTU2MTYsMTg5NzQzNDU0LDE4OTg0MTI0NDcsLTEyOTA2NTQw
-NzAsNzk2MTQxMjYwLDE1OTE3NzgzMjcsLTE5NTYzOTcwMTUsLT
-E0MDc0NDI2MzYsLTE5MDA2MDg2NDIsMzc2MzY0MTk2LC0yMTAw
-NTE5MDAyLDgxMTA0NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4OD
-UsLTE0ODYwMzM2MDMsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEz
-OTY3MDg4MjFdfQ==
+eyJoaXN0b3J5IjpbNjExNTQyMDE1LDE5MjY3Njc2NTIsMzQ1Mj
+k1NjE2LDE4OTc0MzQ1NCwxODk4NDEyNDQ3LC0xMjkwNjU0MDcw
+LDc5NjE0MTI2MCwxNTkxNzc4MzI3LC0xOTU2Mzk3MDE1LC0xND
+A3NDQyNjM2LC0xOTAwNjA4NjQyLDM3NjM2NDE5NiwtMjEwMDUx
+OTAwMiw4MTEwNDU1NjgsLTEyNTYwNDA3MTIsNTIzOTM5ODg1LC
+0xNDg2MDMzNjAzLDEwMzA5NzYxODIsNzkxNjkxNzY3LC0xMzk2
+NzA4ODIxXX0=
 -->
