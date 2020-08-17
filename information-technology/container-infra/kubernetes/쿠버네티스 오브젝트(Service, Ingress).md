@@ -260,13 +260,13 @@ path에 해당하는 캡처그룹 | rewrite-garget에 의해 전달되는 경로
 
 ## Nginx 인그레스 컨트롤러에 SSL/TLS 보안 적용
 
-인그레스의 장점 중 하나는 디플로이먼트와 서비스가 아닌 앞쪽에 있는 인그레스 컨트롤러에서 SSL/TLS 보안 연결을 설정할 수 있는 점입니다. 즉 인그레스 
+인그레스의 장점 중 하나는 디플로이먼트와 서비스가 아닌 앞쪽에 있는 인그레스 컨트롤러에서 SSL/TLS 보안 연결을 설정할 수 있는 점입니다. 즉 인그레스 컨트롤러 지점에서 인증서를 적용해 두면 요청이 전달되는 애플리케이션에 대해 모든 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzE5NjM2NzMsMTE1MTcwMzk0MywtMj
-EwMzI4NjYxMiw2MTE1NDIwMTUsMTkyNjc2NzY1MiwzNDUyOTU2
-MTYsMTg5NzQzNDU0LDE4OTg0MTI0NDcsLTEyOTA2NTQwNzAsNz
-k2MTQxMjYwLDE1OTE3NzgzMjcsLTE5NTYzOTcwMTUsLTE0MDc0
-NDI2MzYsLTE5MDA2MDg2NDIsMzc2MzY0MTk2LC0yMTAwNTE5MD
-AyLDgxMTA0NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0
-ODYwMzM2MDNdfQ==
+eyJoaXN0b3J5IjpbMTk2NjA2MTk2NywxMTUxNzAzOTQzLC0yMT
+AzMjg2NjEyLDYxMTU0MjAxNSwxOTI2NzY3NjUyLDM0NTI5NTYx
+NiwxODk3NDM0NTQsMTg5ODQxMjQ0NywtMTI5MDY1NDA3MCw3OT
+YxNDEyNjAsMTU5MTc3ODMyNywtMTk1NjM5NzAxNSwtMTQwNzQ0
+MjYzNiwtMTkwMDYwODY0MiwzNzYzNjQxOTYsLTIxMDA1MTkwMD
+IsODExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4
+NjAzMzYwM119
 -->
