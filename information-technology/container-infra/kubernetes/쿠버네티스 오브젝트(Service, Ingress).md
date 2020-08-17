@@ -238,9 +238,11 @@ annotations:
   kubernetes.io/ingress.class: "nginx"
 ```
 
-앞서 
+앞서 몇가지 주석 항목을 설정했던 것을 기억할 것입니다. 
+
+kubernetes.io/ingress.class는 해당
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0OTc2NzU3NSwxODk3NDM0NTQsMTg5OD
+eyJoaXN0b3J5IjpbMTI2Nzk0NDc2NywxODk3NDM0NTQsMTg5OD
 QxMjQ0NywtMTI5MDY1NDA3MCw3OTYxNDEyNjAsMTU5MTc3ODMy
 NywtMTk1NjM5NzAxNSwtMTQwNzQ0MjYzNiwtMTkwMDYwODY0Mi
 wzNzYzNjQxOTYsLTIxMDA1MTkwMDIsODExMDQ1NTY4LC0xMjU2
