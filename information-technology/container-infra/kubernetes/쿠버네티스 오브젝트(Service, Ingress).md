@@ -250,15 +250,18 @@ nginx.ingress.kubernetes.io/rewrite-target는 Nginx 인그레스 컨트롤러에
 
 http.path 항목에 정규표현식을 집어 넣어 rewirte-target을 통해 접근하는 경로 뒤에 정보를 얻을 수 있습니다. 즉 요청 경로를 다시 쓰는 애노테이션이라 기억하면 되겠습니다. 
 
-* /echo-hostname/color/red -> /color/red
+path에 해당하는 캡처그룹 | rewrite-garget에 의해 전달되는 경로($2)
+* /echo-hostname/color/red -> /color/red 
 * /echo-hostname/color -> /color
-* /echo-h
+* /echo-hostname -> /
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ5NjM1NDYsNjExNTQyMDE1LDE5MjY3Nj
-c2NTIsMzQ1Mjk1NjE2LDE4OTc0MzQ1NCwxODk4NDEyNDQ3LC0x
-MjkwNjU0MDcwLDc5NjE0MTI2MCwxNTkxNzc4MzI3LC0xOTU2Mz
-k3MDE1LC0xNDA3NDQyNjM2LC0xOTAwNjA4NjQyLDM3NjM2NDE5
-NiwtMjEwMDUxOTAwMiw4MTEwNDU1NjgsLTEyNTYwNDA3MTIsNT
-IzOTM5ODg1LC0xNDg2MDMzNjAzLDEwMzA5NzYxODIsNzkxNjkx
-NzY3XX0=
+eyJoaXN0b3J5IjpbLTIxMDMyODY2MTIsNjExNTQyMDE1LDE5Mj
+Y3Njc2NTIsMzQ1Mjk1NjE2LDE4OTc0MzQ1NCwxODk4NDEyNDQ3
+LC0xMjkwNjU0MDcwLDc5NjE0MTI2MCwxNTkxNzc4MzI3LC0xOT
+U2Mzk3MDE1LC0xNDA3NDQyNjM2LC0xOTAwNjA4NjQyLDM3NjM2
+NDE5NiwtMjEwMDUxOTAwMiw4MTEwNDU1NjgsLTEyNTYwNDA3MT
+IsNTIzOTM5ODg1LC0xNDg2MDMzNjAzLDEwMzA5NzYxODIsNzkx
+NjkxNzY3XX0=
 -->
