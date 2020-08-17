@@ -240,13 +240,15 @@ annotations:
 
 앞서 몇가지 주석 항목을 설정했던 것을 기억할 것입니다. 
 
-kubernetes.io/ingress.class는 해당
+kubernetes.io/ingress.class는 해당 인그레스 규칙을 어떤 인그레스 컨트롤러에 적용할 것인지를 의미합니다. 인그레스 컨트롤러는 서버는 nginx 뿐만아니라 kong, GEK도 사용가능 합니다. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2Nzk0NDc2NywxODk3NDM0NTQsMTg5OD
-QxMjQ0NywtMTI5MDY1NDA3MCw3OTYxNDEyNjAsMTU5MTc3ODMy
-NywtMTk1NjM5NzAxNSwtMTQwNzQ0MjYzNiwtMTkwMDYwODY0Mi
-wzNzYzNjQxOTYsLTIxMDA1MTkwMDIsODExMDQ1NTY4LC0xMjU2
-MDQwNzEyLDUyMzkzOTg4NSwtMTQ4NjAzMzYwMywxMDMwOTc2MT
-gyLDc5MTY5MTc2NywtMTM5NjcwODgyMSwtMzU3ODM2OTIsLTEw
-MDAwNDA2OTZdfQ==
+eyJoaXN0b3J5IjpbLTE2NTMzNDYwNDEsMTg5NzQzNDU0LDE4OT
+g0MTI0NDcsLTEyOTA2NTQwNzAsNzk2MTQxMjYwLDE1OTE3Nzgz
+MjcsLTE5NTYzOTcwMTUsLTE0MDc0NDI2MzYsLTE5MDA2MDg2ND
+IsMzc2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMTA0NTU2OCwtMTI1
+NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2MDMsMTAzMDk3Nj
+E4Miw3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1NzgzNjkyLC0x
+MDAwMDQwNjk2XX0=
 -->
