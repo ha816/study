@@ -214,12 +214,11 @@ kubectl apply -f \https://raw.githubusercontent.com/kubernates/ingress-nginx/mas
 
 
 ```yaml
-kind: 
+apiVersion: v1
+kind: Service
 metadata:
-  name: ingress-example
-  annotations:
-    nginx.ingress.kuberantes.io/rewrite-target: /
-    kubernetes.io/ingress.class: "nginx"
+  name: ingress-nginx
+  namespace: ingress-nginx
 spec:
   rules:
   - host: aliecek106.example.com
@@ -231,10 +230,10 @@ spec:
            servicePort: 80
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMjI5NDUwNCwtMTI5MDY1NDA3MCw3OT
-YxNDEyNjAsMTU5MTc3ODMyNywtMTk1NjM5NzAxNSwtMTQwNzQ0
-MjYzNiwtMTkwMDYwODY0MiwzNzYzNjQxOTYsLTIxMDA1MTkwMD
-IsODExMDQ1NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4
-NjAzMzYwMywxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwOD
-gyMSwtMzU3ODM2OTIsLTEwMDAwNDA2OTZdfQ==
+eyJoaXN0b3J5IjpbOTkxNDMyOTgsLTEyOTA2NTQwNzAsNzk2MT
+QxMjYwLDE1OTE3NzgzMjcsLTE5NTYzOTcwMTUsLTE0MDc0NDI2
+MzYsLTE5MDA2MDg2NDIsMzc2MzY0MTk2LC0yMTAwNTE5MDAyLD
+gxMTA0NTU2OCwtMTI1NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYw
+MzM2MDMsMTAzMDk3NjE4Miw3OTE2OTE3NjcsLTEzOTY3MDg4Mj
+EsLTM1NzgzNjkyLC0xMDAwMDQwNjk2XX0=
 -->
