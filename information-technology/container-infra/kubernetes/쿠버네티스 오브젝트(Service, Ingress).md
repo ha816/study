@@ -245,12 +245,14 @@ kubernetes.io/ingress.class는 해당 인그레스 규칙을 어떤 인그레스
 쿠버네티스 클러스터 자체에서 기본적으로 사용하도록 설정된 인그레스 컨트롤러가 존재하는 경우가 있는데 이 경우 반드세 인그레스에 명시해주는것이 좋습니다. 
 
 nginx.ingress.kubernetes.io/rewrite-target는 Nginx 인그레스 컨트롤러에서만 사용이 가능한 기능입니다. 이 주석은 인그레스에 정의된 경로로 들어오는 요청을 rewrite-target에 설정된 경로로 전달합니다. 
+
+사실 re
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1Mjk1NjE2LDE4OTc0MzQ1NCwxODk4ND
-EyNDQ3LC0xMjkwNjU0MDcwLDc5NjE0MTI2MCwxNTkxNzc4MzI3
-LC0xOTU2Mzk3MDE1LC0xNDA3NDQyNjM2LC0xOTAwNjA4NjQyLD
-M3NjM2NDE5NiwtMjEwMDUxOTAwMiw4MTEwNDU1NjgsLTEyNTYw
-NDA3MTIsNTIzOTM5ODg1LC0xNDg2MDMzNjAzLDEwMzA5NzYxOD
-IsNzkxNjkxNzY3LC0xMzk2NzA4ODIxLC0zNTc4MzY5MiwtMTAw
-MDA0MDY5Nl19
+eyJoaXN0b3J5IjpbNTMwMDM1MjYxLDM0NTI5NTYxNiwxODk3ND
+M0NTQsMTg5ODQxMjQ0NywtMTI5MDY1NDA3MCw3OTYxNDEyNjAs
+MTU5MTc3ODMyNywtMTk1NjM5NzAxNSwtMTQwNzQ0MjYzNiwtMT
+kwMDYwODY0MiwzNzYzNjQxOTYsLTIxMDA1MTkwMDIsODExMDQ1
+NTY4LC0xMjU2MDQwNzEyLDUyMzkzOTg4NSwtMTQ4NjAzMzYwMy
+wxMDMwOTc2MTgyLDc5MTY5MTc2NywtMTM5NjcwODgyMSwtMzU3
+ODM2OTJdfQ==
 -->
