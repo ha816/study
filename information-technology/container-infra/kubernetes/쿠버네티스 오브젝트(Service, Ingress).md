@@ -242,13 +242,15 @@ annotations:
 
 kubernetes.io/ingress.class는 해당 인그레스 규칙을 어떤 인그레스 컨트롤러에 적용할 것인지를 의미합니다. 인그레스 컨트롤러는 서버는 nginx 뿐만아니라 kong, GEK도 사용가능 합니다. 
 
+쿠버네티스 클러스터 자체에서 기본적으로 사용하도록 설정된 인그레스 컨트롤러가 존재하는 경우가 있는데 이 경우 반드세 인그레스에 명시해주는것이 좋습니다. 
 
+nginx.ingress.kubernetes.io/rewrite-target는 Nginx 인그레스 컨트롤러에서만 사용이 가능한 기능입니다. 이 주석은 인그레스에 정
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTMzNDYwNDEsMTg5NzQzNDU0LDE4OT
-g0MTI0NDcsLTEyOTA2NTQwNzAsNzk2MTQxMjYwLDE1OTE3Nzgz
-MjcsLTE5NTYzOTcwMTUsLTE0MDc0NDI2MzYsLTE5MDA2MDg2ND
-IsMzc2MzY0MTk2LC0yMTAwNTE5MDAyLDgxMTA0NTU2OCwtMTI1
-NjA0MDcxMiw1MjM5Mzk4ODUsLTE0ODYwMzM2MDMsMTAzMDk3Nj
-E4Miw3OTE2OTE3NjcsLTEzOTY3MDg4MjEsLTM1NzgzNjkyLC0x
-MDAwMDQwNjk2XX0=
+eyJoaXN0b3J5IjpbNDk5NDY0NDA1LDE4OTc0MzQ1NCwxODk4ND
+EyNDQ3LC0xMjkwNjU0MDcwLDc5NjE0MTI2MCwxNTkxNzc4MzI3
+LC0xOTU2Mzk3MDE1LC0xNDA3NDQyNjM2LC0xOTAwNjA4NjQyLD
+M3NjM2NDE5NiwtMjEwMDUxOTAwMiw4MTEwNDU1NjgsLTEyNTYw
+NDA3MTIsNTIzOTM5ODg1LC0xNDg2MDMzNjAzLDEwMzA5NzYxOD
+IsNzkxNjkxNzY3LC0xMzk2NzA4ODIxLC0zNTc4MzY5MiwtMTAw
+MDA0MDY5Nl19
 -->
