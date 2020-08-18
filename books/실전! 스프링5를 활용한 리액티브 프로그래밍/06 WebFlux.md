@@ -38,7 +38,7 @@ WebClient.builer로 사용자가 직접 구현해야 하는 인스턴스를 전�
 class EchoWebSocketHandler implements WebSocketHandler {
 	@Ovverride
 	public Mono<void> handle(WebSocketSession session) {
-
+		
 	}
 }
 
@@ -50,9 +50,9 @@ class EchoWebSocketHandler implements WebSocketHandler {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM0MjcyMDA3LC0xMzY0MjM5MTkwLDYxNz
-k4Mzc0NiwtNTkxODExNzk5LC0zMTA1MzYxNDUsLTgyNjU0NDMw
-MCwtMTU4NDM2MDk5NSw0NjM0NDU1MzIsNDg2OTg1MjkyLDk3Nj
-E2ODIyOCwxNjY0NTcxODQwLDE2MzQwMTc3OCwxMTM2MjM2MTg2
-LDg1MjEwMzM3LDE4NjMxMDg3OTZdfQ==
+eyJoaXN0b3J5IjpbMjAwMDUzNjg3LDMzNDI3MjAwNywtMTM2ND
+IzOTE5MCw2MTc5ODM3NDYsLTU5MTgxMTc5OSwtMzEwNTM2MTQ1
+LC04MjY1NDQzMDAsLTE1ODQzNjA5OTUsNDYzNDQ1NTMyLDQ4Nj
+k4NTI5Miw5NzYxNjgyMjgsMTY2NDU3MTg0MCwxNjM0MDE3Nzgs
+MTEzNjIzNjE4Niw4NTIxMDMzNywxODYzMTA4Nzk2XX0=
 -->
