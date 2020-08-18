@@ -35,7 +35,12 @@ WebClient.builer로 사용자가 직접 구현해야 하는 인스턴스를 전�
 웹소켓 연결을 처리하기 위한 핵심 인터페이스로 WebSocketHandler가 있습니다. 인터페이스에는 WebSocketSession을 허용하는 handle이라는 메서드가 있습니다. WebSocketSession 클래스는 클라이언트와 서버간의 성공적인 통신을 나타내며, 핸드세이크, 세션 속성 및 수신 데이터등의 정보를 제공합니다.
 
 ```
+class EchoWebSocketHandler implements WebSocketHandler {
+	@Ovverride
+	public Mono<void> handle(WebSocketSession session) {
 
+	}
+}
 
 ```
 
@@ -45,7 +50,7 @@ WebClient.builer로 사용자가 직접 구현해야 하는 인스턴스를 전�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc3MTgxNTM2LC0xMzY0MjM5MTkwLDYxNz
+eyJoaXN0b3J5IjpbMzM0MjcyMDA3LC0xMzY0MjM5MTkwLDYxNz
 k4Mzc0NiwtNTkxODExNzk5LC0zMTA1MzYxNDUsLTgyNjU0NDMw
 MCwtMTU4NDM2MDk5NSw0NjM0NDU1MzIsNDg2OTg1MjkyLDk3Nj
 E2ODIyOCwxNjY0NTcxODQwLDE2MzQwMTc3OCwxMTM2MjM2MTg2
