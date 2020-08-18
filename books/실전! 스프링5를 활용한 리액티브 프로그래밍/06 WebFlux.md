@@ -49,7 +49,11 @@ class EchoWebSocketHandler implements WebSocketHandler {
 ```
 
 새로운 웹소켓 API는 리액터 프로젝트의 리액티브 타입을 기반으로 만들어졌습니다. 
-WebSocketHandler 인터페이스 구현외에 서버 측 웹 소켓
+WebSocketHandler 인터페이스 구현외에 서버 측 웹 소켓 API를 설정하려면 추가로 HandlerMapping 및 WebSocketHandlerAdapter 인스턴스를 구성해야 합니다. 
+
+```
+
+```
 
 
 
@@ -57,10 +61,10 @@ WebSocketHandler 인터페이스 구현외에 서버 측 웹 소켓
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjI2OTcyNjIsMjY3NzkyNzIxLDMzND
-I3MjAwNywtMTM2NDIzOTE5MCw2MTc5ODM3NDYsLTU5MTgxMTc5
-OSwtMzEwNTM2MTQ1LC04MjY1NDQzMDAsLTE1ODQzNjA5OTUsND
-YzNDQ1NTMyLDQ4Njk4NTI5Miw5NzYxNjgyMjgsMTY2NDU3MTg0
-MCwxNjM0MDE3NzgsMTEzNjIzNjE4Niw4NTIxMDMzNywxODYzMT
-A4Nzk2XX0=
+eyJoaXN0b3J5IjpbMTY1Njc0MTc1MiwyNjc3OTI3MjEsMzM0Mj
+cyMDA3LC0xMzY0MjM5MTkwLDYxNzk4Mzc0NiwtNTkxODExNzk5
+LC0zMTA1MzYxNDUsLTgyNjU0NDMwMCwtMTU4NDM2MDk5NSw0Nj
+M0NDU1MzIsNDg2OTg1MjkyLDk3NjE2ODIyOCwxNjY0NTcxODQw
+LDE2MzQwMTc3OCwxMTM2MjM2MTg2LDg1MjEwMzM3LDE4NjMxMD
+g3OTZdfQ==
 -->
