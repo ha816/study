@@ -32,7 +32,9 @@ WebClient.builer로 사용자가 직접 구현해야 하는 인스턴스를 전�
 ### 서버 웹소켓 API
 
 
-웹소켓 연결을 처리하기 위한 핵심 인터페이스로 WebSocketHandler가 있습니다. 인터페이스에는 WebSocketSession을 허용하는
+웹소켓 연결을 처리하기 위한 핵심 인터페이스로 WebSocketHandler가 있습니다. 인터페이스에는 WebSocketSession을 허용하는 handle이라는 메서드가 있습니다. WebSocketSession 클래스는 클라이언트와 서버간의 성공적인 통신을 나타내며, 핸드세이크, 세션 속성 및 수신 데이터등의 정보를 제공합니다.
+
+
 
 
 
@@ -40,9 +42,9 @@ WebClient.builer로 사용자가 직접 구현해야 하는 인스턴스를 전�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyODUzMTk1MSw2MTc5ODM3NDYsLTU5MT
-gxMTc5OSwtMzEwNTM2MTQ1LC04MjY1NDQzMDAsLTE1ODQzNjA5
-OTUsNDYzNDQ1NTMyLDQ4Njk4NTI5Miw5NzYxNjgyMjgsMTY2ND
-U3MTg0MCwxNjM0MDE3NzgsMTEzNjIzNjE4Niw4NTIxMDMzNywx
-ODYzMTA4Nzk2XX0=
+eyJoaXN0b3J5IjpbLTEzNjQyMzkxOTAsNjE3OTgzNzQ2LC01OT
+E4MTE3OTksLTMxMDUzNjE0NSwtODI2NTQ0MzAwLC0xNTg0MzYw
+OTk1LDQ2MzQ0NTUzMiw0ODY5ODUyOTIsOTc2MTY4MjI4LDE2Nj
+Q1NzE4NDAsMTYzNDAxNzc4LDExMzYyMzYxODYsODUyMTAzMzcs
+MTg2MzEwODc5Nl19
 -->
