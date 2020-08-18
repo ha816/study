@@ -52,8 +52,17 @@ class EchoWebSocketHandler implements WebSocketHandler {
 WebSocketHandler 인터페이스 구현외에 서버 측 웹 소켓 API를 설정하려면 추가로 HandlerMapping 및 WebSocketHandlerAdapter 인스턴스를 구성해야 합니다. 
 
 ```
-
-```
+@Configuration
+public class WebSocketConfiguration {
+	
+	@Bean
+	public HandlerMapping handlerMapping() {
+		SimpleUrlHandlerMApping mapping = new SimpleHandlerMapping();
+		mapping.setUrlMap(Collections.singletonMap(
+			"/ws/echo", new EchoWebSocketHandler()
+		));
+	}
+}
 
 ```
 
@@ -63,7 +72,7 @@ WebSocketHandler 인터페이스 구현외에 서버 측 웹 소켓 API를 설�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMzc2NTY2OCwxNjU2NzQxNzUyLDI2Nz
+eyJoaXN0b3J5IjpbMTQ4NzMxNzg1MiwxNjU2NzQxNzUyLDI2Nz
 c5MjcyMSwzMzQyNzIwMDcsLTEzNjQyMzkxOTAsNjE3OTgzNzQ2
 LC01OTE4MTE3OTksLTMxMDUzNjE0NSwtODI2NTQ0MzAwLC0xNT
 g0MzYwOTk1LDQ2MzQ0NTUzMiw0ODY5ODUyOTIsOTc2MTY4MjI4
