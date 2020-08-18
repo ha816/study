@@ -55,16 +55,18 @@ WebSocketHandler 인터페이스 구현외에 서버 측 웹 소켓 API를 설�
 
 ```
 
+```
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1Njc0MTc1MiwyNjc3OTI3MjEsMzM0Mj
-cyMDA3LC0xMzY0MjM5MTkwLDYxNzk4Mzc0NiwtNTkxODExNzk5
-LC0zMTA1MzYxNDUsLTgyNjU0NDMwMCwtMTU4NDM2MDk5NSw0Nj
-M0NDU1MzIsNDg2OTg1MjkyLDk3NjE2ODIyOCwxNjY0NTcxODQw
-LDE2MzQwMTc3OCwxMTM2MjM2MTg2LDg1MjEwMzM3LDE4NjMxMD
-g3OTZdfQ==
+eyJoaXN0b3J5IjpbMTMwMzc2NTY2OCwxNjU2NzQxNzUyLDI2Nz
+c5MjcyMSwzMzQyNzIwMDcsLTEzNjQyMzkxOTAsNjE3OTgzNzQ2
+LC01OTE4MTE3OTksLTMxMDUzNjE0NSwtODI2NTQ0MzAwLC0xNT
+g0MzYwOTk1LDQ2MzQ0NTUzMiw0ODY5ODUyOTIsOTc2MTY4MjI4
+LDE2NjQ1NzE4NDAsMTYzNDAxNzc4LDExMzYyMzYxODYsODUyMT
+AzMzcsMTg2MzEwODc5Nl19
 -->
