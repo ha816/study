@@ -74,8 +74,7 @@ public class WebSocketConfiguration {
 
 ### 클라이언트 측 웹소켓 API
 
-
-
+일반적 웹 소켓모듈과는 달리 웹플럭스는 
 
 
 
@@ -84,10 +83,10 @@ public class WebSocketConfiguration {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMzMjM2NDUyLDEwNTI2MzkwNzYsMTY1Nj
-c0MTc1MiwyNjc3OTI3MjEsMzM0MjcyMDA3LC0xMzY0MjM5MTkw
-LDYxNzk4Mzc0NiwtNTkxODExNzk5LC0zMTA1MzYxNDUsLTgyNj
-U0NDMwMCwtMTU4NDM2MDk5NSw0NjM0NDU1MzIsNDg2OTg1Mjky
-LDk3NjE2ODIyOCwxNjY0NTcxODQwLDE2MzQwMTc3OCwxMTM2Mj
-M2MTg2LDg1MjEwMzM3LDE4NjMxMDg3OTZdfQ==
+eyJoaXN0b3J5IjpbLTExNjQwNjk3MjksMTA1MjYzOTA3NiwxNj
+U2NzQxNzUyLDI2Nzc5MjcyMSwzMzQyNzIwMDcsLTEzNjQyMzkx
+OTAsNjE3OTgzNzQ2LC01OTE4MTE3OTksLTMxMDUzNjE0NSwtOD
+I2NTQ0MzAwLC0xNTg0MzYwOTk1LDQ2MzQ0NTUzMiw0ODY5ODUy
+OTIsOTc2MTY4MjI4LDE2NjQ1NzE4NDAsMTYzNDAxNzc4LDExMz
+YyMzYxODYsODUyMTAzMzcsMTg2MzEwODc5Nl19
 -->
