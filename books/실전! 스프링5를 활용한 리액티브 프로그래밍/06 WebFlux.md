@@ -23,7 +23,9 @@ WebClient.builer로 사용자가 직접 구현해야 하는 인스턴스를 전�
 
 ## 리액티브 웹소켓 API
 
+현대 웹의 중요한 부분 중 하나는 클라이언트와 서버가 서로 메세지를 스트리밍하는 모델입니다. 양방향 클라이언트-서버 통신을 위한 가장 잘 알려진 프로토콜 중 하나인 **웹 소켓**을 알아봅시다. 
 
+웹소켓 프로토콜 통신은 2013년 초 스프링 프레임워크에 도입되었습니다. 이는 비 동기 메세지 전송을 위해 설계되었지만 실제로는 여전히 일부 블로킹 동작이 있었습니다. 
 
 
 
@@ -31,8 +33,9 @@ WebClient.builer로 사용자가 직접 구현해야 하는 인스턴스를 전�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MTgxMTc5OSwtMzEwNTM2MTQ1LC04Mj
-Y1NDQzMDAsLTE1ODQzNjA5OTUsNDYzNDQ1NTMyLDQ4Njk4NTI5
-Miw5NzYxNjgyMjgsMTY2NDU3MTg0MCwxNjM0MDE3NzgsMTEzNj
-IzNjE4Niw4NTIxMDMzNywxODYzMTA4Nzk2XX0=
+eyJoaXN0b3J5IjpbNjE3OTgzNzQ2LC01OTE4MTE3OTksLTMxMD
+UzNjE0NSwtODI2NTQ0MzAwLC0xNTg0MzYwOTk1LDQ2MzQ0NTUz
+Miw0ODY5ODUyOTIsOTc2MTY4MjI4LDE2NjQ1NzE4NDAsMTYzND
+AxNzc4LDExMzYyMzYxODYsODUyMTAzMzcsMTg2MzEwODc5Nl19
+
 -->
