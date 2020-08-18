@@ -64,6 +64,8 @@ public class WebSocketConfiguration {
 		mapping.setOrder(-1);
 		return mapping
 	}
+
+	@
 }
 
 ```
@@ -74,10 +76,10 @@ public class WebSocketConfiguration {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MjYzOTA3NiwxNjU2NzQxNzUyLDI2Nz
-c5MjcyMSwzMzQyNzIwMDcsLTEzNjQyMzkxOTAsNjE3OTgzNzQ2
-LC01OTE4MTE3OTksLTMxMDUzNjE0NSwtODI2NTQ0MzAwLC0xNT
-g0MzYwOTk1LDQ2MzQ0NTUzMiw0ODY5ODUyOTIsOTc2MTY4MjI4
-LDE2NjQ1NzE4NDAsMTYzNDAxNzc4LDExMzYyMzYxODYsODUyMT
-AzMzcsMTg2MzEwODc5Nl19
+eyJoaXN0b3J5IjpbLTk1NzIzOTc2MiwxMDUyNjM5MDc2LDE2NT
+Y3NDE3NTIsMjY3NzkyNzIxLDMzNDI3MjAwNywtMTM2NDIzOTE5
+MCw2MTc5ODM3NDYsLTU5MTgxMTc5OSwtMzEwNTM2MTQ1LC04Mj
+Y1NDQzMDAsLTE1ODQzNjA5OTUsNDYzNDQ1NTMyLDQ4Njk4NTI5
+Miw5NzYxNjgyMjgsMTY2NDU3MTg0MCwxNjM0MDE3NzgsMTEzNj
+IzNjE4Niw4NTIxMDMzNywxODYzMTA4Nzk2XX0=
 -->
