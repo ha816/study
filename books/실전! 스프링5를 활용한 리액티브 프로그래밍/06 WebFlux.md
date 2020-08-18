@@ -46,8 +46,10 @@ class EchoWebSocketHandler implements WebSocketHandler {
 				.as(session::send)
 	}
 }
-
 ```
+
+새로운 웹소켓 API는 리액터 프로젝트의 리액티브 타입을 기반으로 만들어졌습니다. 
+WebSocketHandler 인터페이스 구현외에 서버 측 웹 소켓
 
 
 
@@ -55,9 +57,10 @@ class EchoWebSocketHandler implements WebSocketHandler {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3NzkyNzIxLDMzNDI3MjAwNywtMTM2ND
-IzOTE5MCw2MTc5ODM3NDYsLTU5MTgxMTc5OSwtMzEwNTM2MTQ1
-LC04MjY1NDQzMDAsLTE1ODQzNjA5OTUsNDYzNDQ1NTMyLDQ4Nj
-k4NTI5Miw5NzYxNjgyMjgsMTY2NDU3MTg0MCwxNjM0MDE3Nzgs
-MTEzNjIzNjE4Niw4NTIxMDMzNywxODYzMTA4Nzk2XX0=
+eyJoaXN0b3J5IjpbLTE2NjI2OTcyNjIsMjY3NzkyNzIxLDMzND
+I3MjAwNywtMTM2NDIzOTE5MCw2MTc5ODM3NDYsLTU5MTgxMTc5
+OSwtMzEwNTM2MTQ1LC04MjY1NDQzMDAsLTE1ODQzNjA5OTUsND
+YzNDQ1NTMyLDQ4Njk4NTI5Miw5NzYxNjgyMjgsMTY2NDU3MTg0
+MCwxNjM0MDE3NzgsMTEzNjIzNjE4Niw4NTIxMDMzNywxODYzMT
+A4Nzk2XX0=
 -->
