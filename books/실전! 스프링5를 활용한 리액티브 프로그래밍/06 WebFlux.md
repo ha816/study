@@ -61,6 +61,8 @@ public class WebSocketConfiguration {
 		mapping.setUrlMap(Collections.singletonMap(
 			"/ws/echo", new EchoWebSocketHandler()
 		));
+		mapping.setOrder(-1);
+		return mapping
 	}
 }
 
@@ -72,7 +74,7 @@ public class WebSocketConfiguration {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NzMxNzg1MiwxNjU2NzQxNzUyLDI2Nz
+eyJoaXN0b3J5IjpbMTA1MjYzOTA3NiwxNjU2NzQxNzUyLDI2Nz
 c5MjcyMSwzMzQyNzIwMDcsLTEzNjQyMzkxOTAsNjE3OTgzNzQ2
 LC01OTE4MTE3OTksLTMxMDUzNjE0NSwtODI2NTQ0MzAwLC0xNT
 g0MzYwOTk1LDQ2MzQ0NTUzMiw0ODY5ODUyOTIsOTc2MTY4MjI4
