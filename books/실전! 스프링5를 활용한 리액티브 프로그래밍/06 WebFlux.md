@@ -65,10 +65,18 @@ public class WebSocketConfiguration {
 		return mapping
 	}
 
-	@
+	@Bean
+	public HandlerAdapter handlerAdapter() {
+		return new WebSocketHandlerAdapter();
+	}
 }
-
 ```
+
+### 클라이언트 측 웹소켓 API
+
+
+
+
 
 
 
@@ -76,10 +84,10 @@ public class WebSocketConfiguration {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NzIzOTc2MiwxMDUyNjM5MDc2LDE2NT
-Y3NDE3NTIsMjY3NzkyNzIxLDMzNDI3MjAwNywtMTM2NDIzOTE5
-MCw2MTc5ODM3NDYsLTU5MTgxMTc5OSwtMzEwNTM2MTQ1LC04Mj
-Y1NDQzMDAsLTE1ODQzNjA5OTUsNDYzNDQ1NTMyLDQ4Njk4NTI5
-Miw5NzYxNjgyMjgsMTY2NDU3MTg0MCwxNjM0MDE3NzgsMTEzNj
-IzNjE4Niw4NTIxMDMzNywxODYzMTA4Nzk2XX0=
+eyJoaXN0b3J5IjpbNjMzMjM2NDUyLDEwNTI2MzkwNzYsMTY1Nj
+c0MTc1MiwyNjc3OTI3MjEsMzM0MjcyMDA3LC0xMzY0MjM5MTkw
+LDYxNzk4Mzc0NiwtNTkxODExNzk5LC0zMTA1MzYxNDUsLTgyNj
+U0NDMwMCwtMTU4NDM2MDk5NSw0NjM0NDU1MzIsNDg2OTg1Mjky
+LDk3NjE2ODIyOCwxNjY0NTcxODQwLDE2MzQwMTc3OCwxMTM2Mj
+M2MTg2LDg1MjEwMzM3LDE4NjMxMDg3OTZdfQ==
 -->
