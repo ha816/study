@@ -27,13 +27,15 @@ WebClient.builer로 사용자가 직접 구현해야 하는 인스턴스를 전�
 
 웹소켓 프로토콜 통신은 2013년 초 스프링 프레임워크에 도입되었습니다. 이는 비 동기 메세지 전송을 위해 설계되었지만 실제로는 여전히 일부 블로킹 동작이 있었습니다. 예를 들어 I/O 데이터를 쓰거나 읽는 작업은 여전치 차단방식으로 동작하므로 응용 프로그램의 성능에 영향을 미쳤습니다. 그에 따라 웹플럭스 모듈에는 웹소켓을 구조적으로 개선한 새 버전이 추가되었습니다. 
 
+웹 클라이
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MDI1OTkzMyw2MTc5ODM3NDYsLTU5MT
+eyJoaXN0b3J5IjpbLTgxNjQ2NDQyMiw2MTc5ODM3NDYsLTU5MT
 gxMTc5OSwtMzEwNTM2MTQ1LC04MjY1NDQzMDAsLTE1ODQzNjA5
 OTUsNDYzNDQ1NTMyLDQ4Njk4NTI5Miw5NzYxNjgyMjgsMTY2ND
 U3MTg0MCwxNjM0MDE3NzgsMTEzNjIzNjE4Niw4NTIxMDMzNywx
