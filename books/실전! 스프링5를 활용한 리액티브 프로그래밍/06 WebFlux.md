@@ -90,7 +90,23 @@ public interface WebSocketClient {
 }
 ```
 
-WebSocketClient는 서버의 메세지를 처리하는 용도와 메세지를 다시 보내기 위한 용도로 모두 WebSocketHandler 인터페이스를 사용합니다.
+WebSocketClient는 서버의 메세지를 처리하는 용도와 메세지를 다시 보내기 위한 용도로 모두 WebSocketHandler 인터페이스를 사용합니다. Tomcat, Jetty 와 같이 모두 서버 엔진관 관련된 WebSocketClient 구현체가 있습니다. 아래 예제는 ReactorNettyWebSocketClient의 예제입니다.
+
+```java
+public interface WebSocketClient {
+	Mono<Void> execute(
+		URI uri,
+		WebSocketHandler handler
+	);
+	Mono<Void> execute(
+		URI uri,
+		HttpHeaders headers,
+		WebSocketHandler handler
+	);
+}
+```
+
+
 
 
 
@@ -101,11 +117,11 @@ WebSocketClient는 서버의 메세지를 처리하는 용도와 메세지를 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNzgxNzM0MywtMTQ4MTcxOTk3NywtMT
-kxODc1ODA5MywtMTE4NjUzOTkyNCwtMTUwNjQ3NjU0OSwtMTE2
-NDA2OTcyOSwxMDUyNjM5MDc2LDE2NTY3NDE3NTIsMjY3NzkyNz
-IxLDMzNDI3MjAwNywtMTM2NDIzOTE5MCw2MTc5ODM3NDYsLTU5
-MTgxMTc5OSwtMzEwNTM2MTQ1LC04MjY1NDQzMDAsLTE1ODQzNj
-A5OTUsNDYzNDQ1NTMyLDQ4Njk4NTI5Miw5NzYxNjgyMjgsMTY2
-NDU3MTg0MF19
+eyJoaXN0b3J5IjpbLTExODU2NDU3NTgsLTYwNzgxNzM0MywtMT
+Q4MTcxOTk3NywtMTkxODc1ODA5MywtMTE4NjUzOTkyNCwtMTUw
+NjQ3NjU0OSwtMTE2NDA2OTcyOSwxMDUyNjM5MDc2LDE2NTY3ND
+E3NTIsMjY3NzkyNzIxLDMzNDI3MjAwNywtMTM2NDIzOTE5MCw2
+MTc5ODM3NDYsLTU5MTgxMTc5OSwtMzEwNTM2MTQ1LC04MjY1ND
+QzMDAsLTE1ODQzNjA5OTUsNDYzNDQ1NTMyLDQ4Njk4NTI5Miw5
+NzYxNjgyMjhdfQ==
 -->
