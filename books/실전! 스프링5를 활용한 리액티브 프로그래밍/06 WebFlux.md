@@ -76,15 +76,21 @@ public class WebSocketConfiguration {
 
 일반적 웹 소켓모듈과는 달리 웹플럭스는 클라이언트 측면을 지원합니다. 웹 소켓 연결 요청을 보내려면 WebSocketClient 클래스가 필요합니다. WebSocketClient에는 다 코드와 같이 웹소켓 연결을 실행하는 두 메서드가 있습니다.
 
-```
+```java
 public interface WebSocketClient {
 	Mono<Void> execute(
-		URI uri
+		URI uri,
+		WebSocketHandler handler
+	);
+	Mono<Void> execute(
+		URI uri,
+		HttpHeaders headers,
 		WebSocketHandler handler
 	);
 }
-
 ```
+
+WebSocketClient는 서버의 메세지를 처리하는 용도와 메세지를 다시 보내기 위한
 
 
 
@@ -95,11 +101,11 @@ public interface WebSocketClient {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3ODIyMzg2NywtMTkxODc1ODA5MywtMT
-E4NjUzOTkyNCwtMTUwNjQ3NjU0OSwtMTE2NDA2OTcyOSwxMDUy
-NjM5MDc2LDE2NTY3NDE3NTIsMjY3NzkyNzIxLDMzNDI3MjAwNy
-wtMTM2NDIzOTE5MCw2MTc5ODM3NDYsLTU5MTgxMTc5OSwtMzEw
-NTM2MTQ1LC04MjY1NDQzMDAsLTE1ODQzNjA5OTUsNDYzNDQ1NT
-MyLDQ4Njk4NTI5Miw5NzYxNjgyMjgsMTY2NDU3MTg0MCwxNjM0
-MDE3NzhdfQ==
+eyJoaXN0b3J5IjpbLTE0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLT
+ExODY1Mzk5MjQsLTE1MDY0NzY1NDksLTExNjQwNjk3MjksMTA1
+MjYzOTA3NiwxNjU2NzQxNzUyLDI2Nzc5MjcyMSwzMzQyNzIwMD
+csLTEzNjQyMzkxOTAsNjE3OTgzNzQ2LC01OTE4MTE3OTksLTMx
+MDUzNjE0NSwtODI2NTQ0MzAwLC0xNTg0MzYwOTk1LDQ2MzQ0NT
+UzMiw0ODY5ODUyOTIsOTc2MTY4MjI4LDE2NjQ1NzE4NDAsMTYz
+NDAxNzc4XX0=
 -->
