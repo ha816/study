@@ -90,7 +90,7 @@ public interface WebSocketClient {
 }
 ```
 
-WebSocketClient는 서버의 메세지를 처리하는 용도와 메세지를 다시 보내기 위한
+WebSocketClient는 서버의 메세지를 처리하는 용도와 메세지를 다시 보내기 위한 용도로 모두 WebSocketHandler 인터페이스를 사용합니다.
 
 
 
@@ -101,11 +101,11 @@ WebSocketClient는 서버의 메세지를 처리하는 용도와 메세지를 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLT
-ExODY1Mzk5MjQsLTE1MDY0NzY1NDksLTExNjQwNjk3MjksMTA1
-MjYzOTA3NiwxNjU2NzQxNzUyLDI2Nzc5MjcyMSwzMzQyNzIwMD
-csLTEzNjQyMzkxOTAsNjE3OTgzNzQ2LC01OTE4MTE3OTksLTMx
-MDUzNjE0NSwtODI2NTQ0MzAwLC0xNTg0MzYwOTk1LDQ2MzQ0NT
-UzMiw0ODY5ODUyOTIsOTc2MTY4MjI4LDE2NjQ1NzE4NDAsMTYz
-NDAxNzc4XX0=
+eyJoaXN0b3J5IjpbLTYwNzgxNzM0MywtMTQ4MTcxOTk3NywtMT
+kxODc1ODA5MywtMTE4NjUzOTkyNCwtMTUwNjQ3NjU0OSwtMTE2
+NDA2OTcyOSwxMDUyNjM5MDc2LDE2NTY3NDE3NTIsMjY3NzkyNz
+IxLDMzNDI3MjAwNywtMTM2NDIzOTE5MCw2MTc5ODM3NDYsLTU5
+MTgxMTc5OSwtMzEwNTM2MTQ1LC04MjY1NDQzMDAsLTE1ODQzNj
+A5OTUsNDYzNDQ1NTMyLDQ4Njk4NTI5Miw5NzYxNjgyMjgsMTY2
+NDU3MTg0MF19
 -->
