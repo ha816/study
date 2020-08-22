@@ -131,7 +131,13 @@ $N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다. $X$�
 
 다수의 서버로 처리하는 경우 리틀의 법칙은 자연스럽게 완전 균등한 요청의 분배를 가정하고 있습니다. 하지만 실제로는 서버별로 상황이 다르기 때문에 실제 상황을 규칙이 제대로 반영하지 못합니다. 
 
-그리하여 암달의 법칙과 ㅇ
+그리하여 암달의 법칙(Amdahl's Law)과 이를 확장한 보편적 확장성 법칙(USL)을 적용하는 경우가 많습니다. 
+
+## Amdalh's Law
+
+평균 응답시간(대기 시간)에 순차적인 엑세스(Serialized Access)가 미치는 영향에 관한 법ㅊ
+
+
 
 
 
@@ -150,7 +156,7 @@ $N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다. $X$�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDYzODcxMCwtMTAzOTAxMDczLDE4Nj
+eyJoaXN0b3J5IjpbMTU3NDc4MjE1NywtMTAzOTAxMDczLDE4Nj
 gzMTM1NjYsMzAxNTA4NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0
 MSwxODI5NDg0OTc3LC0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLT
 E0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1
