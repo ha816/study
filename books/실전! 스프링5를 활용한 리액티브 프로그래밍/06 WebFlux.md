@@ -146,7 +146,13 @@ $X(1)$은 초기 처리량, $N$은 병렬 처리 개수 또는 워커의 수, $�
 
 ![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/1200px-AmdahlsLaw.svg.png)
 
-병렬처리 수를 높이면 성능 향상이 이루어지지만, 어느 순간 처리량이 느려지기 시작합니다. 그리고 어느 순간 증가하지않고 특정 값에 수렴하게 됩니다.
+병렬처리 수를 높이면 성능 향상이 이루어지지만, 어느 순간처리량이 느려지기 시작합니다. 그리고 어느 순간 증가하지않고 특정 값에 수렴하게 됩니다.
+
+즉 암달의 법칙에 따르면 전체적인 작업에 대해 병렬 처리를 도입하더라도 처리량은 선형으로 증가하지 않고 어느 순간 수렴하게 됩니다. **이는 코드의 순차적인 부분 때문에 병목 현상이 발생하기 때문입니다.** 
+
+이
+
+
 
 
 
@@ -177,11 +183,11 @@ $X(1)$은 초기 처리량, $N$은 병렬 처리 개수 또는 워커의 수, $�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MTc5ODUzNywxNzkzMjAyNzg2LC0xNz
-YwNzU4NDA5LC0xMDM5MDEwNzMsMTg2ODMxMzU2NiwzMDE1MDg2
-MDUsMTAxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5NzcsLT
-ExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3NywtMTkx
-ODc1ODA5MywtMTE4NjUzOTkyNCwtMTUwNjQ3NjU0OSwtMTE2ND
-A2OTcyOSwxMDUyNjM5MDc2LDE2NTY3NDE3NTIsMjY3NzkyNzIx
-LDMzNDI3MjAwN119
+eyJoaXN0b3J5IjpbMjY2NjgzMTI1LDE3OTMyMDI3ODYsLTE3Nj
+A3NTg0MDksLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUwODYw
+NSwxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3NywtMT
+E4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC0xOTE4
+NzU4MDkzLC0xMTg2NTM5OTI0LC0xNTA2NDc2NTQ5LC0xMTY0MD
+Y5NzI5LDEwNTI2MzkwNzYsMTY1Njc0MTc1MiwyNjc3OTI3MjEs
+MzM0MjcyMDA3XX0=
 -->
