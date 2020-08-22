@@ -184,7 +184,7 @@ $$X(N) = \frac{X(1) × N}{1 + σ × (N-1) + k × N × (N-1)}$$
 
 ![enter image description here](https://lh3.googleusercontent.com/proxy/5VDNOgQCL6h-XfesNfNig8s49Y2nT0ELWwCBNVPgX3s0vye_fE-_NsLmuG3_qKVGMTq3-UF1Oeiar6W_ilYz75PBmYaqGsvpbMZ6SMtbPA)
 
-
+위 그림에서 Sync threshing는 동기화 과정이 있는 경우
 
 
 
@@ -233,11 +233,11 @@ $$X(N) = \frac{X(1) × N}{1 + σ × (N-1) + k × N × (N-1)}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTg3MjA3OTYsNDQxNzk3MTE0LDYxNT
-cwMzM5OCwtNDExNDk2NjQ1LC04MDc2MzI1MzYsMjEzNDgyODMw
-NiwxNzkzMjAyNzg2LC0xNzYwNzU4NDA5LC0xMDM5MDEwNzMsMT
-g2ODMxMzU2NiwzMDE1MDg2MDUsMTAxODc5MzM1OSwxMTI0NDU1
-NTQxLDE4Mjk0ODQ5NzcsLTExODU2NDU3NTgsLTYwNzgxNzM0My
-wtMTQ4MTcxOTk3NywtMTkxODc1ODA5MywtMTE4NjUzOTkyNCwt
-MTUwNjQ3NjU0OV19
+eyJoaXN0b3J5IjpbLTU2ODk5NTY3NCwtMTQ1ODcyMDc5Niw0ND
+E3OTcxMTQsNjE1NzAzMzk4LC00MTE0OTY2NDUsLTgwNzYzMjUz
+NiwyMTM0ODI4MzA2LDE3OTMyMDI3ODYsLTE3NjA3NTg0MDksLT
+EwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUwODYwNSwxMDE4Nzkz
+MzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3NywtMTE4NTY0NTc1OC
+wtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC0xOTE4NzU4MDkzLC0x
+MTg2NTM5OTI0XX0=
 -->
