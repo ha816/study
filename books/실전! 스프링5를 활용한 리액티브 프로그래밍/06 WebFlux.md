@@ -164,7 +164,7 @@ $$X(N) = \frac{N}{R} = \frac{X(1) × N}{1 + σ × (N-1)} $$
 
 $$\frac{1}{R} = \frac{X(1) × N}{(1 + σ × (N-1)) × N}$$$$R = \frac{1 + σ × (N-1)}{X(1)}$$
 
-R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습니다. 즉 벼
+R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습니다. 즉 병렬 작업 수를 늘리면 지연 시간도 늘어납니다. 
 
 
 
@@ -208,11 +208,11 @@ R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMTY5NTczLC04MDc2MzI1MzYsMjEzND
-gyODMwNiwxNzkzMjAyNzg2LC0xNzYwNzU4NDA5LC0xMDM5MDEw
-NzMsMTg2ODMxMzU2NiwzMDE1MDg2MDUsMTAxODc5MzM1OSwxMT
-I0NDU1NTQxLDE4Mjk0ODQ5NzcsLTExODU2NDU3NTgsLTYwNzgx
-NzM0MywtMTQ4MTcxOTk3NywtMTkxODc1ODA5MywtMTE4NjUzOT
-kyNCwtMTUwNjQ3NjU0OSwtMTE2NDA2OTcyOSwxMDUyNjM5MDc2
-LDE2NTY3NDE3NTJdfQ==
+eyJoaXN0b3J5IjpbLTQxMTQ5NjY0NSwtODA3NjMyNTM2LDIxMz
+Q4MjgzMDYsMTc5MzIwMjc4NiwtMTc2MDc1ODQwOSwtMTAzOTAx
+MDczLDE4NjgzMTM1NjYsMzAxNTA4NjA1LDEwMTg3OTMzNTksMT
+EyNDQ1NTU0MSwxODI5NDg0OTc3LC0xMTg1NjQ1NzU4LC02MDc4
+MTczNDMsLTE0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLTExODY1Mz
+k5MjQsLTE1MDY0NzY1NDksLTExNjQwNjk3MjksMTA1MjYzOTA3
+NiwxNjU2NzQxNzUyXX0=
 -->
