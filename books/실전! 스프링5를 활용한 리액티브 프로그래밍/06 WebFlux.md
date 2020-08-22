@@ -116,7 +116,9 @@ public interface WebSocketClient {
 ## 리틀의 법칙(Little's Law)
 
 리틀의 법칙 
-: 지정한 대기 시간을 만족하면서 정의된 양을 처리하기 위해 동시에 처리해야하는 요청 수를 계산하는 방법
+: 지정한 대기 시간까지 정의된 양을 처리하기 위해 동시에 얼마나 많은 병렬 작업자가 있어야 하는지 계산하는 방법
+
+즉 리틀 법칙을 통해 안정적인 응답 시간을 유지하면
 
 
 
@@ -132,11 +134,11 @@ public interface WebSocketClient {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODk3Mjk3NzksMTgyOTQ4NDk3NywtMT
-E4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC0xOTE4
-NzU4MDkzLC0xMTg2NTM5OTI0LC0xNTA2NDc2NTQ5LC0xMTY0MD
-Y5NzI5LDEwNTI2MzkwNzYsMTY1Njc0MTc1MiwyNjc3OTI3MjEs
-MzM0MjcyMDA3LC0xMzY0MjM5MTkwLDYxNzk4Mzc0NiwtNTkxOD
-ExNzk5LC0zMTA1MzYxNDUsLTgyNjU0NDMwMCwtMTU4NDM2MDk5
-NSw0NjM0NDU1MzJdfQ==
+eyJoaXN0b3J5IjpbLTE4OTc3MjMwNCwxODI5NDg0OTc3LC0xMT
+g1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5NzcsLTE5MTg3
+NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0NzY1NDksLTExNjQwNj
+k3MjksMTA1MjYzOTA3NiwxNjU2NzQxNzUyLDI2Nzc5MjcyMSwz
+MzQyNzIwMDcsLTEzNjQyMzkxOTAsNjE3OTgzNzQ2LC01OTE4MT
+E3OTksLTMxMDUzNjE0NSwtODI2NTQ0MzAwLC0xNTg0MzYwOTk1
+LDQ2MzQ0NTUzMl19
 -->
