@@ -174,6 +174,8 @@ R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습
 
 **비일관성(incoherence)은 동시성을 지원하는 시스템이 공유 자원을 가진 경우 일반적으로 발생하는 현상입니다.** 
 
+표준 자바 웹 애플리케이션 측면에서 CPU와 같은 자원에 대한 난잡하고 혼란스러운 형태의 스레드 엑세스 형태로 나타납니다. 자바 스레딩 모델은 그다지 이상적이지 않습니다. 실제 프로세서보다 많은 숫자의 Thread 인스턴스가 있는경우, CPU에 ㅇ
+
 
 
 
@@ -218,11 +220,11 @@ R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE1NzAzMzk4LC00MTE0OTY2NDUsLTgwNz
-YzMjUzNiwyMTM0ODI4MzA2LDE3OTMyMDI3ODYsLTE3NjA3NTg0
-MDksLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUwODYwNSwxMD
-E4NzkzMzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3NywtMTE4NTY0
-NTc1OCwtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC0xOTE4NzU4MD
-kzLC0xMTg2NTM5OTI0LC0xNTA2NDc2NTQ5LC0xMTY0MDY5NzI5
-LDEwNTI2MzkwNzZdfQ==
+eyJoaXN0b3J5IjpbLTY5Nzg2NjY0OSw2MTU3MDMzOTgsLTQxMT
+Q5NjY0NSwtODA3NjMyNTM2LDIxMzQ4MjgzMDYsMTc5MzIwMjc4
+NiwtMTc2MDc1ODQwOSwtMTAzOTAxMDczLDE4NjgzMTM1NjYsMz
+AxNTA4NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0MSwxODI5NDg0
+OTc3LC0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5Nz
+csLTE5MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0NzY1NDks
+LTExNjQwNjk3MjldfQ==
 -->
