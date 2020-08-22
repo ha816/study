@@ -125,7 +125,7 @@ MIT가 개설한 경영과학 과정에서 최초로 학위를 받은 존 리틀
 
 $$ N = X×R$$
 
-$N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다.  $X$는 처리량, $R$은 평균 응답 시간 또는 대기 시간 입니다.
+$N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다. $X$는 처리량, $R$은 평균 응답 시간 또는 대기 시간 입니다.
 
 예를 들어, 시스템 평균 응답 시간 R이 0.2초이고 처리량 X가 초당 100건 인 경우 초당 20개의 요청을 동시에 처리하거나 병렬로 처리할 수 있어야 합니다. 
 
@@ -146,11 +146,11 @@ $N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다.  $X$�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMT
-UwODYwNSwxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3
-NywtMTE4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC
-0xOTE4NzU4MDkzLC0xMTg2NTM5OTI0LC0xNTA2NDc2NTQ5LC0x
-MTY0MDY5NzI5LDEwNTI2MzkwNzYsMTY1Njc0MTc1MiwyNjc3OT
-I3MjEsMzM0MjcyMDA3LC0xMzY0MjM5MTkwLDYxNzk4Mzc0Niwt
-NTkxODExNzk5XX0=
+eyJoaXN0b3J5IjpbLTE4NDU4NTY5MjEsLTEwMzkwMTA3MywxOD
+Y4MzEzNTY2LDMwMTUwODYwNSwxMDE4NzkzMzU5LDExMjQ0NTU1
+NDEsMTgyOTQ4NDk3NywtMTE4NTY0NTc1OCwtNjA3ODE3MzQzLC
+0xNDgxNzE5OTc3LC0xOTE4NzU4MDkzLC0xMTg2NTM5OTI0LC0x
+NTA2NDc2NTQ5LC0xMTY0MDY5NzI5LDEwNTI2MzkwNzYsMTY1Nj
+c0MTc1MiwyNjc3OTI3MjEsMzM0MjcyMDA3LC0xMzY0MjM5MTkw
+LDYxNzk4Mzc0Nl19
 -->
