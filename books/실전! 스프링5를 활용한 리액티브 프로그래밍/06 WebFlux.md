@@ -121,7 +121,7 @@ MIT가 개설한 경영과학 과정에서 최초로 학위를 받은 존 리틀
   
 여기서 I는 **재고**이며 λ는 **산출율** 그리고 R은 **흐름시간**을 뜻합니다. 이 공식을 제조업이 아닌 서비스업에 적용한다면 I는 **프로세스 내에 대기하는 손님 숫자**이며 λ는 **손님의 평균 도착율** 그리고 R은 **손님이 프로세스 내에서 평균적으로 대기하는 대기시간**이 됩니다.
 
-리틀의 법칙을 사용하면 안정적인 응답 시간을 유지하면서 지정된 수의 초당 사용자를 처리하는데 필요한 서비스 용량이나 웹 응용 프로그램 인스턴스 수를 계산할 수 있습니다. 
+리틀의 법칙을 사용하면 안정적인 응답 시간을 유지하면서 지정된 수의 초당 사용자를 처리하는데 필요한 서비스 용량이나 웹 응용 프로그램 인스턴스 수를 계산할 수 있습니다. ㄹ
 
 $$ N = X * R$$
 
@@ -146,11 +146,11 @@ $N$은 시스템 또는 대기열에 상주하는 평균 요청 수 말합니다
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMTkwNjQ0LDE4NjgzMTM1NjYsMzAxNT
-A4NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0MSwxODI5NDg0OTc3
-LC0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5NzcsLT
-E5MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0NzY1NDksLTEx
-NjQwNjk3MjksMTA1MjYzOTA3NiwxNjU2NzQxNzUyLDI2Nzc5Mj
-cyMSwzMzQyNzIwMDcsLTEzNjQyMzkxOTAsNjE3OTgzNzQ2LC01
-OTE4MTE3OTldfQ==
+eyJoaXN0b3J5IjpbLTIwNTk4MTI2MzksMTg2ODMxMzU2NiwzMD
+E1MDg2MDUsMTAxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5
+NzcsLTExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3Ny
+wtMTkxODc1ODA5MywtMTE4NjUzOTkyNCwtMTUwNjQ3NjU0OSwt
+MTE2NDA2OTcyOSwxMDUyNjM5MDc2LDE2NTY3NDE3NTIsMjY3Nz
+kyNzIxLDMzNDI3MjAwNywtMTM2NDIzOTE5MCw2MTc5ODM3NDYs
+LTU5MTgxMTc5OV19
 -->
