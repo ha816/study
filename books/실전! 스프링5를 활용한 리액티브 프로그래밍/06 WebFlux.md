@@ -188,7 +188,9 @@ Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기�
 
 종합하자면 확장 가능한 시스템을 모델링하고 시스템 용량을 산정하기 위해서는 리틀의 법칙, 암달의 법칙, 보편적 확장성 법칙을 전박적으로 이해하는 것이 중요합니다. 이들 법칙으로 WebFlux와 WebMVC 모듈을 적절히 분석하고 어떤 방식의 가장 적합한 모델인지 예측해보도록 하겠습니다. 
 
-##
+## WebFlux와 WebMVC 처리 모델이해
+
+
 
 
 
@@ -240,11 +242,11 @@ Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTc5NjI4MTMsLTEyODEwMjQ2MTQsLT
-E0NTg3MjA3OTYsNDQxNzk3MTE0LDYxNTcwMzM5OCwtNDExNDk2
-NjQ1LC04MDc2MzI1MzYsMjEzNDgyODMwNiwxNzkzMjAyNzg2LC
-0xNzYwNzU4NDA5LC0xMDM5MDEwNzMsMTg2ODMxMzU2NiwzMDE1
-MDg2MDUsMTAxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5Nz
-csLTExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3Nywt
-MTkxODc1ODA5M119
+eyJoaXN0b3J5IjpbLTk2ODQ0ODg5NiwtMTI4MTAyNDYxNCwtMT
+Q1ODcyMDc5Niw0NDE3OTcxMTQsNjE1NzAzMzk4LC00MTE0OTY2
+NDUsLTgwNzYzMjUzNiwyMTM0ODI4MzA2LDE3OTMyMDI3ODYsLT
+E3NjA3NTg0MDksLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUw
+ODYwNSwxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3Ny
+wtMTE4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC0x
+OTE4NzU4MDkzXX0=
 -->
