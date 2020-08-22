@@ -164,7 +164,7 @@ $$X(N) = \frac{N}{R} = \frac{X(1) × N}{1 + σ × (N-1)} $$
 
 $$\frac{1}{R} = \frac{X(1) × N}{(1 + σ × (N-1)) × N}$$$$R = \frac{1 + σ × (N-1)}{X(1)}$$
 
-R 대기시간에 대해서 
+R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습니다. 
 
 
 
@@ -208,7 +208,7 @@ R 대기시간에 대해서
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4ODE4NjE5NywyMTM0ODI4MzA2LDE3OT
+eyJoaXN0b3J5IjpbLTgwNzYzMjUzNiwyMTM0ODI4MzA2LDE3OT
 MyMDI3ODYsLTE3NjA3NTg0MDksLTEwMzkwMTA3MywxODY4MzEz
 NTY2LDMwMTUwODYwNSwxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMT
 gyOTQ4NDk3NywtMTE4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgx
