@@ -170,7 +170,9 @@ R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습
 
 ## USL(Universal Scalability Law)
 
-암달의 법칙은 
+암달의 법칙은 병렬처리 즉 시스템의 확장성의 대해서 설명하지만, 실제 응용 프로그램에서는 상당히 다른 결과를 볼 수 있습니다. 닐 건터는 이 연구에 대해서 순차적 실행 뿐만 아니라 비일관성(incoherence)라는 또 하나의 치명적인 문제점을 파악했습니다. 
+
+비일관성(incoherence)은 동시성을 지원하는 시스템이 공유 자원을 가진 경우 일반적으로 발생하는 현상입닏
 
 
 
@@ -214,11 +216,11 @@ R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1NTEwMTMsLTQxMTQ5NjY0NSwtODA3Nj
-MyNTM2LDIxMzQ4MjgzMDYsMTc5MzIwMjc4NiwtMTc2MDc1ODQw
-OSwtMTAzOTAxMDczLDE4NjgzMTM1NjYsMzAxNTA4NjA1LDEwMT
-g3OTMzNTksMTEyNDQ1NTU0MSwxODI5NDg0OTc3LC0xMTg1NjQ1
-NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5NzcsLTE5MTg3NTgwOT
-MsLTExODY1Mzk5MjQsLTE1MDY0NzY1NDksLTExNjQwNjk3Mjks
-MTA1MjYzOTA3Nl19
+eyJoaXN0b3J5IjpbNDg5MjYzNjgxLC00MTE0OTY2NDUsLTgwNz
+YzMjUzNiwyMTM0ODI4MzA2LDE3OTMyMDI3ODYsLTE3NjA3NTg0
+MDksLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUwODYwNSwxMD
+E4NzkzMzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3NywtMTE4NTY0
+NTc1OCwtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC0xOTE4NzU4MD
+kzLC0xMTg2NTM5OTI0LC0xNTA2NDc2NTQ5LC0xMTY0MDY5NzI5
+LDEwNTI2MzkwNzZdfQ==
 -->
