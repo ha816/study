@@ -122,7 +122,7 @@ public interface WebSocketClient {
 
 $$ N = X * R$$
 
-
+이 수식은 다음과 
 
 
 
@@ -138,7 +138,7 @@ $$ N = X * R$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MjIzNzI2MiwxODI5NDg0OTc3LC0xMT
+eyJoaXN0b3J5IjpbMTEyNDQ1NTU0MSwxODI5NDg0OTc3LC0xMT
 g1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5NzcsLTE5MTg3
 NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0NzY1NDksLTExNjQwNj
 k3MjksMTA1MjYzOTA3NiwxNjU2NzQxNzUyLDI2Nzc5MjcyMSwz
