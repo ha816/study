@@ -152,6 +152,10 @@ $X(1)$은 초기 처리량, $N$은 병렬 처리 개수 또는 워커의 수, $�
 
 일반적으로 웹 애플리케이션에서 이 문장을 생각해보면 처리 속도를 증가 시킬 수 없는 단일 조정 지점이 있는 경우 서버를 늘려도 아무런 처리 속도의 증가를 얻을 수 없다는 의미 입니다. 즉 비용을 늘려도 돈을 버리는 행위가 될수 있다는 이야기 입니다. 
 
+자 이제, 앞서 보았던 리틀의 법칙과 암달의 법칙을 합쳐 봅시다. 두 방정식 모두 유입량(X)을 포함합니다. 
+
+$$ㅌ$$
+
 
 
 
@@ -185,11 +189,11 @@ $X(1)$은 초기 처리량, $N$은 병렬 처리 개수 또는 워커의 수, $�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ0MDI0MDc4LDE3OTMyMDI3ODYsLTE3Nj
-A3NTg0MDksLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUwODYw
-NSwxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3NywtMT
-E4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC0xOTE4
-NzU4MDkzLC0xMTg2NTM5OTI0LC0xNTA2NDc2NTQ5LC0xMTY0MD
-Y5NzI5LDEwNTI2MzkwNzYsMTY1Njc0MTc1MiwyNjc3OTI3MjEs
-MzM0MjcyMDA3XX0=
+eyJoaXN0b3J5IjpbMTAwOTk4MDg5NSwxNzkzMjAyNzg2LC0xNz
+YwNzU4NDA5LC0xMDM5MDEwNzMsMTg2ODMxMzU2NiwzMDE1MDg2
+MDUsMTAxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5NzcsLT
+ExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3NywtMTkx
+ODc1ODA5MywtMTE4NjUzOTkyNCwtMTUwNjQ3NjU0OSwtMTE2ND
+A2OTcyOSwxMDUyNjM5MDc2LDE2NTY3NDE3NTIsMjY3NzkyNzIx
+LDMzNDI3MjAwN119
 -->
