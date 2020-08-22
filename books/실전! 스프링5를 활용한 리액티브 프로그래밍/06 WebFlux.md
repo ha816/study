@@ -124,7 +124,7 @@ $$ N = X * R$$
 
 $N$은 시스템 또는 대기열에 상주하는 평균 요청 수 말합니다.  $X$는 처리량, $R$은 평균 응답 시간 또는 대기 시간 입니다.
 
-예를 들어, 시스템 평균 응답 시간 R이 0.2초이고 처리량 X가 초당 100건 인 경우 20개의 요청을 동시에 처리하거나 병렬로 처리할 수 있어야 합니다. 
+예를 들어, 시스템 평균 응답 시간 R이 0.2초이고 처리량 X가 초당 100건 인 경우 초당 20개의 요청을 동시에 처리하거나 병렬로 처리할 수 있어야 합니다. 
 
 
 
@@ -142,11 +142,11 @@ $N$은 시스템 또는 대기열에 상주하는 평균 요청 수 말합니다
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ4MTQ4MjU0LDExMjQ0NTU1NDEsMTgyOT
-Q4NDk3NywtMTE4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgxNzE5
-OTc3LC0xOTE4NzU4MDkzLC0xMTg2NTM5OTI0LC0xNTA2NDc2NT
-Q5LC0xMTY0MDY5NzI5LDEwNTI2MzkwNzYsMTY1Njc0MTc1Miwy
-Njc3OTI3MjEsMzM0MjcyMDA3LC0xMzY0MjM5MTkwLDYxNzk4Mz
-c0NiwtNTkxODExNzk5LC0zMTA1MzYxNDUsLTgyNjU0NDMwMCwt
-MTU4NDM2MDk5NV19
+eyJoaXN0b3J5IjpbMTAxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mj
+k0ODQ5NzcsLTExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcx
+OTk3NywtMTkxODc1ODA5MywtMTE4NjUzOTkyNCwtMTUwNjQ3Nj
+U0OSwtMTE2NDA2OTcyOSwxMDUyNjM5MDc2LDE2NTY3NDE3NTIs
+MjY3NzkyNzIxLDMzNDI3MjAwNywtMTM2NDIzOTE5MCw2MTc5OD
+M3NDYsLTU5MTgxMTc5OSwtMzEwNTM2MTQ1LC04MjY1NDQzMDAs
+LTE1ODQzNjA5OTVdfQ==
 -->
