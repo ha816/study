@@ -122,12 +122,9 @@ public interface WebSocketClient {
 
 $$ N = X * R$$
 
-* N
-	* 시스템 또는 대기열에 상주하는 평균 요청 수를 
-* X
-	* 처리량
-* R
-	* 
+$N$은 시스템 또는 대기열에 상주하는 평균 요청 수 말합니다.  $X$는 처리량, $R
+	* 평균 응답 시간 또는 대기 시간
+
 
 
 
@@ -144,11 +141,11 @@ $$ N = X * R$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDQzMzg5MDAsMTEyNDQ1NTU0MSwxOD
-I5NDg0OTc3LC0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3
-MTk5NzcsLTE5MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0Nz
-Y1NDksLTExNjQwNjk3MjksMTA1MjYzOTA3NiwxNjU2NzQxNzUy
-LDI2Nzc5MjcyMSwzMzQyNzIwMDcsLTEzNjQyMzkxOTAsNjE3OT
-gzNzQ2LC01OTE4MTE3OTksLTMxMDUzNjE0NSwtODI2NTQ0MzAw
-LC0xNTg0MzYwOTk1XX0=
+eyJoaXN0b3J5IjpbMTc0Nzg0NzQ3MiwxMTI0NDU1NTQxLDE4Mj
+k0ODQ5NzcsLTExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcx
+OTk3NywtMTkxODc1ODA5MywtMTE4NjUzOTkyNCwtMTUwNjQ3Nj
+U0OSwtMTE2NDA2OTcyOSwxMDUyNjM5MDc2LDE2NTY3NDE3NTIs
+MjY3NzkyNzIxLDMzNDI3MjAwNywtMTM2NDIzOTE5MCw2MTc5OD
+M3NDYsLTU5MTgxMTc5OSwtMzEwNTM2MTQ1LC04MjY1NDQzMDAs
+LTE1ODQzNjA5OTVdfQ==
 -->
