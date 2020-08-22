@@ -113,9 +113,22 @@ public interface WebSocketClient {
 
 대부분 웹 응용 프로그램의 핵심 성능 지표는 처리량, 대기 시간, CPU 및 메모리 사용량입니다. 
 
-## 리틀의 법칙(Little's Law)ㄹㄹㅇㅎ갸유우ㅏ핃슉ㅍ기퍄기ㅜㅗ꼬슈ㅠㅣ어ㅏㄹ겨ㅓㅜㅍ두
+## 리틀의 법칙(Little's Law)
 
-이 수식은 다음과 
+리틀의 법칙 
+: 지정한 대기 시간까지 정의된 양을 처리하기 위해 동시에 얼마나 많은 병렬 작업자가 있어야 하는지 계산하는 방법
+
+즉 리틀 법칙을 통해 안정적인 응답 시간을 유지하면서 지정된 수의 초당 사용자를 처리하는데 필요한 서비스 용량이나 웹 응용 프로그램 인스턴스 수를 계산할 수 있습니다. 
+
+$$ N = X * R$$
+
+* N
+	* 시스템 또는 대기열에 상주하는 평균 요청 수를 
+* X
+	* 처리량
+* R
+	* 
+
 
 
 
@@ -131,7 +144,7 @@ public interface WebSocketClient {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjY1NTM2ODksMTEyNDQ1NTU0MSwxOD
+eyJoaXN0b3J5IjpbLTExNDQzMzg5MDAsMTEyNDQ1NTU0MSwxOD
 I5NDg0OTc3LC0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3
 MTk5NzcsLTE5MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0Nz
 Y1NDksLTExNjQwNjk3MjksMTA1MjYzOTA3NiwxNjU2NzQxNzUy
