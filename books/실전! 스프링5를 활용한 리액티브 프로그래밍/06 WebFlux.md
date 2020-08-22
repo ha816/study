@@ -139,7 +139,8 @@ $N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다. $X$�
 
 항상 작업을 병렬 처리로 하고 싶더라도 병렬화를 할 수 없는 부분이 발생하고 그 부분에 대해서는 순차적인 처리를 해야 합니다. 예를 들어, 시스템에 분배를 조정하는 역할 워커가 있거나 집계 또는 축소 연산자가 있다면 병렬처리가 불가능합니다. 대규모 마이크로 서비스에서는 로드 밸런서 또는 오케스트레이션 역할을 하는 시스템이 이에 해당합니다.
 
-$$X(N) = \frac{X(1) × N}{1 + ×} $$
+$$X(N) = \frac{X(1) × N}{1 + × (N-1)} $$
+
 
 
 
@@ -166,11 +167,11 @@ $$X(N) = \frac{X(1) × N}{1 + ×} $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NTQ2NDk4NCwtMTAzOTAxMDczLDE4Nj
-gzMTM1NjYsMzAxNTA4NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0
-MSwxODI5NDg0OTc3LC0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLT
-E0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1
-MDY0NzY1NDksLTExNjQwNjk3MjksMTA1MjYzOTA3NiwxNjU2Nz
-QxNzUyLDI2Nzc5MjcyMSwzMzQyNzIwMDcsLTEzNjQyMzkxOTAs
-NjE3OTgzNzQ2XX0=
+eyJoaXN0b3J5IjpbLTE3NjA3NTg0MDksLTEwMzkwMTA3MywxOD
+Y4MzEzNTY2LDMwMTUwODYwNSwxMDE4NzkzMzU5LDExMjQ0NTU1
+NDEsMTgyOTQ4NDk3NywtMTE4NTY0NTc1OCwtNjA3ODE3MzQzLC
+0xNDgxNzE5OTc3LC0xOTE4NzU4MDkzLC0xMTg2NTM5OTI0LC0x
+NTA2NDc2NTQ5LC0xMTY0MDY5NzI5LDEwNTI2MzkwNzYsMTY1Nj
+c0MTc1MiwyNjc3OTI3MjEsMzM0MjcyMDA3LC0xMzY0MjM5MTkw
+LDYxNzk4Mzc0Nl19
 -->
