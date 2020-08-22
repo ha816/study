@@ -166,6 +166,8 @@ $$\frac{1}{R} = \frac{X(1) × N}{(1 + σ × (N-1)) × N}$$$$R = \frac{1 + σ × 
 
 R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습니다. 즉 병렬 작업 수를 늘리면 지연 시간도 늘어납니다. 
 
+암달의 법칙이 설명하는 바와 같이 병렬 실행이 있는 시슽
+
 
 
 
@@ -208,11 +210,11 @@ R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMTQ5NjY0NSwtODA3NjMyNTM2LDIxMz
-Q4MjgzMDYsMTc5MzIwMjc4NiwtMTc2MDc1ODQwOSwtMTAzOTAx
-MDczLDE4NjgzMTM1NjYsMzAxNTA4NjA1LDEwMTg3OTMzNTksMT
-EyNDQ1NTU0MSwxODI5NDg0OTc3LC0xMTg1NjQ1NzU4LC02MDc4
-MTczNDMsLTE0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLTExODY1Mz
-k5MjQsLTE1MDY0NzY1NDksLTExNjQwNjk3MjksMTA1MjYzOTA3
-NiwxNjU2NzQxNzUyXX0=
+eyJoaXN0b3J5IjpbMTY3MjczODk1OCwtNDExNDk2NjQ1LC04MD
+c2MzI1MzYsMjEzNDgyODMwNiwxNzkzMjAyNzg2LC0xNzYwNzU4
+NDA5LC0xMDM5MDEwNzMsMTg2ODMxMzU2NiwzMDE1MDg2MDUsMT
+AxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5NzcsLTExODU2
+NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3NywtMTkxODc1OD
+A5MywtMTE4NjUzOTkyNCwtMTUwNjQ3NjU0OSwtMTE2NDA2OTcy
+OSwxMDUyNjM5MDc2XX0=
 -->
