@@ -115,6 +115,12 @@ public interface WebSocketClient {
 
 ## 리틀의 법칙(Little's Law)
 
+MIT가 개설한 경영과학 과정에서 최초로 학위를 받은 존 리틀에 의해 만들어진 경제와 관련된 법칙으로 프로세스의 안정상태에서의 재고와 산출율 그리고 흐름 시간의 상관관계를 나타낸 법칙이며 식은 아래와 같다  
+  
+  $$I=λ×R$$
+  
+여기서 I는 **재고**이며 λ는 **산출율** 그리고 R은 **흐름시간**을 뜻한다. 이 공식을 제조업이 아닌 서비스업에 적용한다면 I는 **프로세스 내에 대기하는 손님 숫자**이며 λ는 **손님의 평균 도착율** 그리고 R은 **손님이 프로세스 내에서 평균적으로 대기하는 대기시간**이 된다.
+
 리틀의 법칙 
 : 지정한 대기 시간까지 정의된 양을 처리하기 위해 동시에 얼마나 많은 병렬 작업자가 있어야 하는지 계산하는 방법
 
@@ -143,11 +149,11 @@ $N$은 시스템 또는 대기열에 상주하는 평균 요청 수 말합니다
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxNTA4NjA1LDEwMTg3OTMzNTksMTEyND
-Q1NTU0MSwxODI5NDg0OTc3LC0xMTg1NjQ1NzU4LC02MDc4MTcz
-NDMsLTE0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLTExODY1Mzk5Mj
-QsLTE1MDY0NzY1NDksLTExNjQwNjk3MjksMTA1MjYzOTA3Niwx
-NjU2NzQxNzUyLDI2Nzc5MjcyMSwzMzQyNzIwMDcsLTEzNjQyMz
-kxOTAsNjE3OTgzNzQ2LC01OTE4MTE3OTksLTMxMDUzNjE0NSwt
-ODI2NTQ0MzAwXX0=
+eyJoaXN0b3J5IjpbMTM2MjM3MzkzMSwzMDE1MDg2MDUsMTAxOD
+c5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5NzcsLTExODU2NDU3
+NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3NywtMTkxODc1ODA5My
+wtMTE4NjUzOTkyNCwtMTUwNjQ3NjU0OSwtMTE2NDA2OTcyOSwx
+MDUyNjM5MDc2LDE2NTY3NDE3NTIsMjY3NzkyNzIxLDMzNDI3Mj
+AwNywtMTM2NDIzOTE5MCw2MTc5ODM3NDYsLTU5MTgxMTc5OSwt
+MzEwNTM2MTQ1XX0=
 -->
