@@ -182,6 +182,8 @@ $$X(N) = \frac{X(1) × N}{1 + σ × (N-1) + k × N × (N-1)}$$
 
 위 공식에서는 일관성 계수($k$)가 추가 되었습니다. 중요한 점은 처리량 $X(N)$이 병렬 처리 수 $N$의 제곱에 반비례한다는 점입니다. 
 
+![enter image description here](https://lh3.googleusercontent.com/proxy/5VDNOgQCL6h-XfesNfNig8s49Y2nT0ELWwCBNVPgX3s0vye_fE-_NsLmuG3_qKVGMTq3-UF1Oeiar6W_ilYz75PBmYaqGsvpbMZ6SMtbPA)
+
 
 
 
@@ -231,11 +233,11 @@ $$X(N) = \frac{X(1) × N}{1 + σ × (N-1) + k × N × (N-1)}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQxNzk3MTE0LDYxNTcwMzM5OCwtNDExND
-k2NjQ1LC04MDc2MzI1MzYsMjEzNDgyODMwNiwxNzkzMjAyNzg2
-LC0xNzYwNzU4NDA5LC0xMDM5MDEwNzMsMTg2ODMxMzU2NiwzMD
-E1MDg2MDUsMTAxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5
-NzcsLTExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3Ny
-wtMTkxODc1ODA5MywtMTE4NjUzOTkyNCwtMTUwNjQ3NjU0OSwt
-MTE2NDA2OTcyOV19
+eyJoaXN0b3J5IjpbLTE0NTg3MjA3OTYsNDQxNzk3MTE0LDYxNT
+cwMzM5OCwtNDExNDk2NjQ1LC04MDc2MzI1MzYsMjEzNDgyODMw
+NiwxNzkzMjAyNzg2LC0xNzYwNzU4NDA5LC0xMDM5MDEwNzMsMT
+g2ODMxMzU2NiwzMDE1MDg2MDUsMTAxODc5MzM1OSwxMTI0NDU1
+NTQxLDE4Mjk0ODQ5NzcsLTExODU2NDU3NTgsLTYwNzgxNzM0My
+wtMTQ4MTcxOTk3NywtMTkxODc1ODA5MywtMTE4NjUzOTkyNCwt
+MTUwNjQ3NjU0OV19
 -->
