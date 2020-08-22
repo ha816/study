@@ -137,6 +137,8 @@ $N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다. $X$�
 
 암달의 법칙은 평균 응답시간(대기 시간)에 순차적인 엑세스(Serialized Access)가 미치는 영향에 관한 법칙으로 결국 처리량에 관한 법칙입니다. 
 
+항상 작업을 병렬 처리로 하고 싶더라도 병렬화를 할 수 없는 부분이 발생하고 그 부분에 대해서는 순차적인 처리를 해야 합니다. 예를 들어, 시스템에 분배를 조정하는 역할 워커가 있거나 
+
 
 
 
@@ -158,7 +160,7 @@ $N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다. $X$�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMjE1ODUzNSwtMTAzOTAxMDczLDE4Nj
+eyJoaXN0b3J5IjpbLTY5MjMyODEzNCwtMTAzOTAxMDczLDE4Nj
 gzMTM1NjYsMzAxNTA4NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0
 MSwxODI5NDg0OTc3LC0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLT
 E0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1
