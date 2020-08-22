@@ -133,7 +133,8 @@ $N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다. $X$�
 
 그리하여 암달의 법칙(Amdahl's Law)과 이를 확장한 보편적 확장성 법칙(USL)을 적용하는 경우가 많습니다. 
 
-## Amdalh's Law
+## [Amdalh's Law](https://namu.wiki/w/%EC%95%94%EB%8B%AC%EC%9D%98%20%EB%B2%95%EC%B9%99)
+
 
 암달의 법칙은 평균 응답시간(대기 시간)에 순차적인 엑세스(Serialized Access)가 미치는 영향에 관한 법칙으로 결국 처리량에 관한 법칙입니다. 
 
@@ -169,13 +170,15 @@ $X(1)$은 초기 처리량, $N$은 병렬 처리 개수 또는 워커의 수, $�
 
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MzIwMjc4NiwtMTc2MDc1ODQwOSwtMT
-AzOTAxMDczLDE4NjgzMTM1NjYsMzAxNTA4NjA1LDEwMTg3OTMz
-NTksMTEyNDQ1NTU0MSwxODI5NDg0OTc3LC0xMTg1NjQ1NzU4LC
-02MDc4MTczNDMsLTE0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLTEx
-ODY1Mzk5MjQsLTE1MDY0NzY1NDksLTExNjQwNjk3MjksMTA1Mj
-YzOTA3NiwxNjU2NzQxNzUyLDI2Nzc5MjcyMSwzMzQyNzIwMDcs
-LTEzNjQyMzkxOTBdfQ==
+eyJoaXN0b3J5IjpbLTE3Mjc4NTg1NTYsMTc5MzIwMjc4NiwtMT
+c2MDc1ODQwOSwtMTAzOTAxMDczLDE4NjgzMTM1NjYsMzAxNTA4
+NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0MSwxODI5NDg0OTc3LC
+0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5NzcsLTE5
+MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0NzY1NDksLTExNj
+QwNjk3MjksMTA1MjYzOTA3NiwxNjU2NzQxNzUyLDI2Nzc5Mjcy
+MSwzMzQyNzIwMDddfQ==
 -->
