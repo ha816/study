@@ -154,7 +154,14 @@ $X(1)$은 초기 처리량, $N$은 병렬 처리 개수 또는 워커의 수, $�
 
 자 이제, 앞서 보았던 리틀의 법칙과 암달의 법칙을 합쳐 봅시다. 두 방정식 모두 유입량(X)을 포함합니다. 
 
-$$ㅌ$$
+$$X(N) = \frac{N}{R}$$ 
+
+위를 암달의 법칙에 대입해 봅시다. 
+
+$$X(N) = \frac{N}{R} = \frac{X(1) × N}{1 + σ × (N-1)} $$
+
+
+
 
 
 
@@ -189,7 +196,7 @@ $$ㅌ$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwOTk4MDg5NSwxNzkzMjAyNzg2LC0xNz
+eyJoaXN0b3J5IjpbMjEzNDgyODMwNiwxNzkzMjAyNzg2LC0xNz
 YwNzU4NDA5LC0xMDM5MDEwNzMsMTg2ODMxMzU2NiwzMDE1MDg2
 MDUsMTAxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5NzcsLT
 ExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3NywtMTkx
