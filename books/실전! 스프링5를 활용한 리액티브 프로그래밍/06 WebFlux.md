@@ -164,7 +164,7 @@ $$X(N) = \frac{N}{R} = \frac{X(1) × N}{1 + σ × (N-1)} $$
 
 $$\frac{1}{R} = \frac{X(1) × N}{(1 + σ × (N-1)) × N}$$$$R = \frac{1 + σ × (N-1)}{X(1)}$$
 
-R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습니다. 
+R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습니다. 즉 벼
 
 
 
@@ -208,11 +208,11 @@ R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNzYzMjUzNiwyMTM0ODI4MzA2LDE3OT
-MyMDI3ODYsLTE3NjA3NTg0MDksLTEwMzkwMTA3MywxODY4MzEz
-NTY2LDMwMTUwODYwNSwxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMT
-gyOTQ4NDk3NywtMTE4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgx
-NzE5OTc3LC0xOTE4NzU4MDkzLC0xMTg2NTM5OTI0LC0xNTA2ND
-c2NTQ5LC0xMTY0MDY5NzI5LDEwNTI2MzkwNzYsMTY1Njc0MTc1
-MiwyNjc3OTI3MjFdfQ==
+eyJoaXN0b3J5IjpbLTkzMTY5NTczLC04MDc2MzI1MzYsMjEzND
+gyODMwNiwxNzkzMjAyNzg2LC0xNzYwNzU4NDA5LC0xMDM5MDEw
+NzMsMTg2ODMxMzU2NiwzMDE1MDg2MDUsMTAxODc5MzM1OSwxMT
+I0NDU1NTQxLDE4Mjk0ODQ5NzcsLTExODU2NDU3NTgsLTYwNzgx
+NzM0MywtMTQ4MTcxOTk3NywtMTkxODc1ODA5MywtMTE4NjUzOT
+kyNCwtMTUwNjQ3NjU0OSwtMTE2NDA2OTcyOSwxMDUyNjM5MDc2
+LDE2NTY3NDE3NTJdfQ==
 -->
