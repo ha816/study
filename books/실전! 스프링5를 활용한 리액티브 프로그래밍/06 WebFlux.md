@@ -107,9 +107,11 @@ public interface WebSocketClient {
 ```
 
 
-# WebFlux vs Web MVC
+# WebFlux vs WebMVC
 
-새로운 WebFlux가 Web
+새로운 WebFlux가 WebMVC와 비교해서 어떤 점이 나은것인지 아직 알 수 없습니다. 웹 플럭스의 장점을 알아봅시다. 
+
+
 
 
 
@@ -121,11 +123,11 @@ public interface WebSocketClient {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMzNjAxOTEyLC0xMTg1NjQ1NzU4LC02MD
-c4MTczNDMsLTE0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLTExODY1
-Mzk5MjQsLTE1MDY0NzY1NDksLTExNjQwNjk3MjksMTA1MjYzOT
-A3NiwxNjU2NzQxNzUyLDI2Nzc5MjcyMSwzMzQyNzIwMDcsLTEz
-NjQyMzkxOTAsNjE3OTgzNzQ2LC01OTE4MTE3OTksLTMxMDUzNj
-E0NSwtODI2NTQ0MzAwLC0xNTg0MzYwOTk1LDQ2MzQ0NTUzMiw0
-ODY5ODUyOTJdfQ==
+eyJoaXN0b3J5IjpbMTA1Nzk2MzQ4OSwtMTE4NTY0NTc1OCwtNj
+A3ODE3MzQzLC0xNDgxNzE5OTc3LC0xOTE4NzU4MDkzLC0xMTg2
+NTM5OTI0LC0xNTA2NDc2NTQ5LC0xMTY0MDY5NzI5LDEwNTI2Mz
+kwNzYsMTY1Njc0MTc1MiwyNjc3OTI3MjEsMzM0MjcyMDA3LC0x
+MzY0MjM5MTkwLDYxNzk4Mzc0NiwtNTkxODExNzk5LC0zMTA1Mz
+YxNDUsLTgyNjU0NDMwMCwtMTU4NDM2MDk5NSw0NjM0NDU1MzIs
+NDg2OTg1MjkyXX0=
 -->
