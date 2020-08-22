@@ -144,6 +144,9 @@ $$X(N) = \frac{X(1) × N}{1 + σ × (N-1)} $$
 
 $X(1)$은 초기 처리량, $N$은 병렬 처리 개수 또는 워커의 수, $σ$는 경합 계수(직렬화 계수)입니다. 경합 계수란 전체 시간 대비 병렬로 처리할 수 없는 코드를 실행하는데 소비하는 시간의 백분율 입니다. 
 
+![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/1200px-AmdahlsLaw.svg.png)
+
+
 
 
 
@@ -174,11 +177,11 @@ $X(1)$은 초기 처리량, $N$은 병렬 처리 개수 또는 워커의 수, $�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjc4NTg1NTYsMTc5MzIwMjc4NiwtMT
-c2MDc1ODQwOSwtMTAzOTAxMDczLDE4NjgzMTM1NjYsMzAxNTA4
-NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0MSwxODI5NDg0OTc3LC
-0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5NzcsLTE5
-MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0NzY1NDksLTExNj
-QwNjk3MjksMTA1MjYzOTA3NiwxNjU2NzQxNzUyLDI2Nzc5Mjcy
-MSwzMzQyNzIwMDddfQ==
+eyJoaXN0b3J5IjpbMzk1NzU3MzQ5LDE3OTMyMDI3ODYsLTE3Nj
+A3NTg0MDksLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUwODYw
+NSwxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3NywtMT
+E4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC0xOTE4
+NzU4MDkzLC0xMTg2NTM5OTI0LC0xNTA2NDc2NTQ5LC0xMTY0MD
+Y5NzI5LDEwNTI2MzkwNzYsMTY1Njc0MTc1MiwyNjc3OTI3MjEs
+MzM0MjcyMDA3XX0=
 -->
