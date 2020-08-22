@@ -127,9 +127,9 @@ $$ N = X×R$$
 
 $N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다. $X$는 요청 유입양, $R$은 평균 응답 시간 또는 대기 시간 입니다.
 
-예를 들어, 시스템의 평균 응답 시간 R이 0.2초이고 유입양 X가 초당 100건 인 경우 대기열의 요청 수는 20건이 됩니다. 즉 초당 20건의 요청 건을 동시에 처리하거나 병렬로 처리할 수 있어야 합니다. 
+예를 들어, 시스템의 평균 응답 시간 R이 0.2초이고 유입양 X가 초당 100건 인 경우 대기열의 요청 수는 20건이 됩니다. 즉 초당 20건의 요청 건을 단일 서버에서 처리하거나 다수의 서버로 처리해야 합니다.
 
-그런데 
+다수의 서버로 처리하는 경우, 특정 서버에 
 
 
 
@@ -149,11 +149,11 @@ $N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다. $X$�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjM1OTE3NSwtMTAzOTAxMDczLDE4Nj
-gzMTM1NjYsMzAxNTA4NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0
-MSwxODI5NDg0OTc3LC0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLT
-E0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1
-MDY0NzY1NDksLTExNjQwNjk3MjksMTA1MjYzOTA3NiwxNjU2Nz
-QxNzUyLDI2Nzc5MjcyMSwzMzQyNzIwMDcsLTEzNjQyMzkxOTAs
-NjE3OTgzNzQ2XX0=
+eyJoaXN0b3J5IjpbNjA3Mjc0ODM4LC0xMDM5MDEwNzMsMTg2OD
+MxMzU2NiwzMDE1MDg2MDUsMTAxODc5MzM1OSwxMTI0NDU1NTQx
+LDE4Mjk0ODQ5NzcsLTExODU2NDU3NTgsLTYwNzgxNzM0MywtMT
+Q4MTcxOTk3NywtMTkxODc1ODA5MywtMTE4NjUzOTkyNCwtMTUw
+NjQ3NjU0OSwtMTE2NDA2OTcyOSwxMDUyNjM5MDc2LDE2NTY3ND
+E3NTIsMjY3NzkyNzIxLDMzNDI3MjAwNywtMTM2NDIzOTE5MCw2
+MTc5ODM3NDZdfQ==
 -->
