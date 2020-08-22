@@ -184,7 +184,11 @@ $$X(N) = \frac{X(1) × N}{1 + σ × (N-1) + k × N × (N-1)}$$
 
 ![enter image description here](https://lh3.googleusercontent.com/proxy/5VDNOgQCL6h-XfesNfNig8s49Y2nT0ELWwCBNVPgX3s0vye_fE-_NsLmuG3_qKVGMTq3-UF1Oeiar6W_ilYz75PBmYaqGsvpbMZ6SMtbPA)
 
-위 그림에서 Sync threshing 영역은 보편적 확장성 법칙을 따르는 처리량을 보입니다. Sync 
+위 그림에서 Sync threshing 영역은 보편적 확장성 법칙을 따르는 처리량을 보입니다. 반면 Sync threshing + Sync waiting 영역은 암달의 법칙을 따르는 처리량을 보여줍니다. 
+
+Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기화를 위한 추가 연산이 필요할때 
+
+
 
 
 
@@ -233,11 +237,11 @@ $$X(N) = \frac{X(1) × N}{1 + σ × (N-1) + k × N × (N-1)}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIwNjU5MjA2LC0xMjgxMDI0NjE0LC0xND
-U4NzIwNzk2LDQ0MTc5NzExNCw2MTU3MDMzOTgsLTQxMTQ5NjY0
-NSwtODA3NjMyNTM2LDIxMzQ4MjgzMDYsMTc5MzIwMjc4NiwtMT
-c2MDc1ODQwOSwtMTAzOTAxMDczLDE4NjgzMTM1NjYsMzAxNTA4
-NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0MSwxODI5NDg0OTc3LC
-0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5NzcsLTE5
-MTg3NTgwOTNdfQ==
+eyJoaXN0b3J5IjpbMTc3ODE4MDcxNywtMTI4MTAyNDYxNCwtMT
+Q1ODcyMDc5Niw0NDE3OTcxMTQsNjE1NzAzMzk4LC00MTE0OTY2
+NDUsLTgwNzYzMjUzNiwyMTM0ODI4MzA2LDE3OTMyMDI3ODYsLT
+E3NjA3NTg0MDksLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUw
+ODYwNSwxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3Ny
+wtMTE4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC0x
+OTE4NzU4MDkzXX0=
 -->
