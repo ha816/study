@@ -141,6 +141,9 @@ $N$은 시스템 또는 대기열에 있는 요청의 수를 말합니다. $X$�
 
 $$X(N) = \frac{X(1) × N}{1 + σ × (N-1)} $$
 
+$X(1)$은 초기 처리량, $N$은 병렬 처리 개수 또는 워커의 수, $σ$는 경합 계수(직렬화 계수)입니다. 경합 계수란 전체 시간 대비 병렬로 처리할 수 없는 코드를 실행하는데 소비하는 시간의 백분율 입니다. 
+
+
 
 
 
@@ -168,11 +171,11 @@ $$X(N) = \frac{X(1) × N}{1 + σ × (N-1)} $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDg2NzIwOTQsLTE3NjA3NTg0MDksLT
-EwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUwODYwNSwxMDE4Nzkz
-MzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3NywtMTE4NTY0NTc1OC
-wtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC0xOTE4NzU4MDkzLC0x
-MTg2NTM5OTI0LC0xNTA2NDc2NTQ5LC0xMTY0MDY5NzI5LDEwNT
-I2MzkwNzYsMTY1Njc0MTc1MiwyNjc3OTI3MjEsMzM0MjcyMDA3
-LC0xMzY0MjM5MTkwXX0=
+eyJoaXN0b3J5IjpbMTc5MzIwMjc4NiwtMTc2MDc1ODQwOSwtMT
+AzOTAxMDczLDE4NjgzMTM1NjYsMzAxNTA4NjA1LDEwMTg3OTMz
+NTksMTEyNDQ1NTU0MSwxODI5NDg0OTc3LC0xMTg1NjQ1NzU4LC
+02MDc4MTczNDMsLTE0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLTEx
+ODY1Mzk5MjQsLTE1MDY0NzY1NDksLTExNjQwNjk3MjksMTA1Mj
+YzOTA3NiwxNjU2NzQxNzUyLDI2Nzc5MjcyMSwzMzQyNzIwMDcs
+LTEzNjQyMzkxOTBdfQ==
 -->
