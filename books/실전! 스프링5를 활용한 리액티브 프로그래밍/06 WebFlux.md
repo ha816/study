@@ -123,7 +123,6 @@ MIT가 개설한 경영과학 과정에서 최초로 학위를 받은 존 리틀
 
 리틀의 법칙을 사용하면 안정적인 응답 시간을 유지하면서 지정된 수의 초당 사용자를 처리하는데 필요한 서비스 용량이나 웹 응용 프로그램 인스턴스 수를 계산할 수 있습니다. 
 
-
 $$ N = X * R$$
 
 $N$은 시스템 또는 대기열에 상주하는 평균 요청 수 말합니다.  $X$는 처리량, $R$은 평균 응답 시간 또는 대기 시간 입니다.
@@ -147,11 +146,11 @@ $N$은 시스템 또는 대기열에 상주하는 평균 요청 수 말합니다
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2ODMxMzU2NiwzMDE1MDg2MDUsMTAxOD
-c5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5NzcsLTExODU2NDU3
-NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3NywtMTkxODc1ODA5My
-wtMTE4NjUzOTkyNCwtMTUwNjQ3NjU0OSwtMTE2NDA2OTcyOSwx
-MDUyNjM5MDc2LDE2NTY3NDE3NTIsMjY3NzkyNzIxLDMzNDI3Mj
-AwNywtMTM2NDIzOTE5MCw2MTc5ODM3NDYsLTU5MTgxMTc5OSwt
-MzEwNTM2MTQ1XX0=
+eyJoaXN0b3J5IjpbLTUwMTkwNjQ0LDE4NjgzMTM1NjYsMzAxNT
+A4NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0MSwxODI5NDg0OTc3
+LC0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5NzcsLT
+E5MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0NzY1NDksLTEx
+NjQwNjk3MjksMTA1MjYzOTA3NiwxNjU2NzQxNzUyLDI2Nzc5Mj
+cyMSwzMzQyNzIwMDcsLTEzNjQyMzkxOTAsNjE3OTgzNzQ2LC01
+OTE4MTE3OTldfQ==
 -->
