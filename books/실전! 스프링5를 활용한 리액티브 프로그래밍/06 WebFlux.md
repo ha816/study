@@ -184,7 +184,7 @@ $$X(N) = \frac{X(1) × N}{1 + σ × (N-1) + k × N × (N-1)}$$
 
 ![enter image description here](https://lh3.googleusercontent.com/proxy/5VDNOgQCL6h-XfesNfNig8s49Y2nT0ELWwCBNVPgX3s0vye_fE-_NsLmuG3_qKVGMTq3-UF1Oeiar6W_ilYz75PBmYaqGsvpbMZ6SMtbPA)
 
-위 그림에서 Sync threshing는 동기화 과정이 있는 경우의 
+위 그림에서 Sync threshing는 동기화 과정이 있는 경우, Sync waiting은 동기화 과정이 없는 경우, ASync merging 비동기 처리의 경우를 말합니다. 
 
 
 
@@ -233,11 +233,11 @@ $$X(N) = \frac{X(1) × N}{1 + σ × (N-1) + k × N × (N-1)}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg5MTQxMjE0LC0xNDU4NzIwNzk2LDQ0MT
-c5NzExNCw2MTU3MDMzOTgsLTQxMTQ5NjY0NSwtODA3NjMyNTM2
-LDIxMzQ4MjgzMDYsMTc5MzIwMjc4NiwtMTc2MDc1ODQwOSwtMT
-AzOTAxMDczLDE4NjgzMTM1NjYsMzAxNTA4NjA1LDEwMTg3OTMz
-NTksMTEyNDQ1NTU0MSwxODI5NDg0OTc3LC0xMTg1NjQ1NzU4LC
-02MDc4MTczNDMsLTE0ODE3MTk5NzcsLTE5MTg3NTgwOTMsLTEx
-ODY1Mzk5MjRdfQ==
+eyJoaXN0b3J5IjpbMTE4NzUwODU1NSwtMTQ1ODcyMDc5Niw0ND
+E3OTcxMTQsNjE1NzAzMzk4LC00MTE0OTY2NDUsLTgwNzYzMjUz
+NiwyMTM0ODI4MzA2LDE3OTMyMDI3ODYsLTE3NjA3NTg0MDksLT
+EwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUwODYwNSwxMDE4Nzkz
+MzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3NywtMTE4NTY0NTc1OC
+wtNjA3ODE3MzQzLC0xNDgxNzE5OTc3LC0xOTE4NzU4MDkzLC0x
+MTg2NTM5OTI0XX0=
 -->
