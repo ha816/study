@@ -188,7 +188,7 @@ $$X(N) = \frac{X(1) × N}{1 + σ × (N-1) + k × N × (N-1)}$$
 
 Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기화를 위한 추가 연산이 필요한 영역입니다. Sync waiting은 동기화를 위한 공유 엑세스 지점이 없는 경우 입니다. 
 
-
+종합하자면 확장 가능한 시스템을 모델링하고 시스템 용량을 산정하기 위해서는 리틀의 법칙, 암달의 법칙, 보편적 확장성 법칙을 전박적으로 이해하는 것이 중요합니다. 
 
 
 
@@ -239,11 +239,11 @@ Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDA5ODgxOTksLTEyODEwMjQ2MTQsLT
-E0NTg3MjA3OTYsNDQxNzk3MTE0LDYxNTcwMzM5OCwtNDExNDk2
-NjQ1LC04MDc2MzI1MzYsMjEzNDgyODMwNiwxNzkzMjAyNzg2LC
-0xNzYwNzU4NDA5LC0xMDM5MDEwNzMsMTg2ODMxMzU2NiwzMDE1
-MDg2MDUsMTAxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5Nz
-csLTExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3Nywt
-MTkxODc1ODA5M119
+eyJoaXN0b3J5IjpbMzkzNjQ5NzEsLTEyODEwMjQ2MTQsLTE0NT
+g3MjA3OTYsNDQxNzk3MTE0LDYxNTcwMzM5OCwtNDExNDk2NjQ1
+LC04MDc2MzI1MzYsMjEzNDgyODMwNiwxNzkzMjAyNzg2LC0xNz
+YwNzU4NDA5LC0xMDM5MDEwNzMsMTg2ODMxMzU2NiwzMDE1MDg2
+MDUsMTAxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5NzcsLT
+ExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3NywtMTkx
+ODc1ODA5M119
 -->
