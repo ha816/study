@@ -160,6 +160,15 @@ $$X(N) = \frac{N}{R}$$
 
 $$X(N) = \frac{N}{R} = \frac{X(1) × N}{1 + σ × (N-1)} $$
 
+그리고 응답속도 R에 맞게 공식을 변경해봅시다.
+
+$$\frac{1}{R} = \frac{X(1) × N}{(1 + σ × (N-1)) × N}$$
+$${R} = \frac{X(1) × N}{(1 + σ × (N-1)) × N}$$
+
+
+
+
+
 
 
 
@@ -196,11 +205,11 @@ $$X(N) = \frac{N}{R} = \frac{X(1) × N}{1 + σ × (N-1)} $$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNDgyODMwNiwxNzkzMjAyNzg2LC0xNz
-YwNzU4NDA5LC0xMDM5MDEwNzMsMTg2ODMxMzU2NiwzMDE1MDg2
-MDUsMTAxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5NzcsLT
-ExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3NywtMTkx
-ODc1ODA5MywtMTE4NjUzOTkyNCwtMTUwNjQ3NjU0OSwtMTE2ND
-A2OTcyOSwxMDUyNjM5MDc2LDE2NTY3NDE3NTIsMjY3NzkyNzIx
-LDMzNDI3MjAwN119
+eyJoaXN0b3J5IjpbMTk2Mzg1NDIwMiwyMTM0ODI4MzA2LDE3OT
+MyMDI3ODYsLTE3NjA3NTg0MDksLTEwMzkwMTA3MywxODY4MzEz
+NTY2LDMwMTUwODYwNSwxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMT
+gyOTQ4NDk3NywtMTE4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgx
+NzE5OTc3LC0xOTE4NzU4MDkzLC0xMTg2NTM5OTI0LC0xNTA2ND
+c2NTQ5LC0xMTY0MDY5NzI5LDEwNTI2MzkwNzYsMTY1Njc0MTc1
+MiwyNjc3OTI3MjFdfQ==
 -->
