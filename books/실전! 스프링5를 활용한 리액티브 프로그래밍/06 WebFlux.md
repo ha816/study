@@ -176,7 +176,12 @@ R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습
 
 표준 자바 웹 애플리케이션 측면에서 CPU와 같은 자원에 대한 난잡하고 혼란스러운 형태의 스레드 엑세스 형태로 나타납니다. 자바 스레딩 모델은 그다지 이상적이지 않습니다. 실제 프로세서보다 많은 숫자의 Thread 인스턴스가 있는경우, CPU에 엑세스하고 계산을 위한 CPU 시간을 확보하기 위해 서로 다른 Thread 인스턴스 간에 직접적인 충돌이 발생합니다. 이렇게 발생하는 중복된 조정과 일관성 문제를 해결하기 위한 별도의 노력이 필요합니다. 스레드가 공유 메모리에 접근할때 마다 추가적인 동기화가 필요하며 이때문에 응용 프로그램의 처리량이 줄어 들 것입니다. 
 
-보
+보편적 확장성 법칙(USL)은 시스템에서 이러한 동작을 설명하기 위해 병렬 처리에 따라 처리량 변화를 계산하는 아래와 같은 수식을 제공합니다. 
+
+$$X(N) = \frac{X(1) × N}{(1 + σ × (N-1)) × N}$$
+
+
+
 
 
 
@@ -222,11 +227,11 @@ R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc4MDgyOTk3LDYxNTcwMzM5OCwtNDExND
-k2NjQ1LC04MDc2MzI1MzYsMjEzNDgyODMwNiwxNzkzMjAyNzg2
-LC0xNzYwNzU4NDA5LC0xMDM5MDEwNzMsMTg2ODMxMzU2NiwzMD
-E1MDg2MDUsMTAxODc5MzM1OSwxMTI0NDU1NTQxLDE4Mjk0ODQ5
-NzcsLTExODU2NDU3NTgsLTYwNzgxNzM0MywtMTQ4MTcxOTk3Ny
-wtMTkxODc1ODA5MywtMTE4NjUzOTkyNCwtMTUwNjQ3NjU0OSwt
-MTE2NDA2OTcyOV19
+eyJoaXN0b3J5IjpbLTE0MzA2NzY1OSw2MTU3MDMzOTgsLTQxMT
+Q5NjY0NSwtODA3NjMyNTM2LDIxMzQ4MjgzMDYsMTc5MzIwMjc4
+NiwtMTc2MDc1ODQwOSwtMTAzOTAxMDczLDE4NjgzMTM1NjYsMz
+AxNTA4NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0MSwxODI5NDg0
+OTc3LC0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5Nz
+csLTE5MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0NzY1NDks
+LTExNjQwNjk3MjldfQ==
 -->
