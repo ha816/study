@@ -178,7 +178,9 @@ R 대기시간에 전체적인 증가량이 선형인것을 확인할 수 있습
 
 보편적 확장성 법칙(USL)은 시스템에서 이러한 동작을 설명하기 위해 병렬 처리에 따라 처리량 변화를 계산하는 아래와 같은 수식을 제공합니다. 
 
-$$X(N) = \frac{X(1) × N}{(1 + σ × (N-1)) × N}$$
+$$X(N) = \frac{X(1) × N}{1 + σ × (N-1) + k × N × (N-1)}$$
+
+위 공식에서는 일관성 계수($k$)가 추가 되었습니다. 중요한 점은 처리량 $X(N)$이 병렬 
 
 
 
@@ -227,11 +229,11 @@ $$X(N) = \frac{X(1) × N}{(1 + σ × (N-1)) × N}$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzA2NzY1OSw2MTU3MDMzOTgsLTQxMT
-Q5NjY0NSwtODA3NjMyNTM2LDIxMzQ4MjgzMDYsMTc5MzIwMjc4
-NiwtMTc2MDc1ODQwOSwtMTAzOTAxMDczLDE4NjgzMTM1NjYsMz
-AxNTA4NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0MSwxODI5NDg0
-OTc3LC0xMTg1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5Nz
-csLTE5MTg3NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0NzY1NDks
-LTExNjQwNjk3MjldfQ==
+eyJoaXN0b3J5IjpbLTExNDM1MTYwMzQsNjE1NzAzMzk4LC00MT
+E0OTY2NDUsLTgwNzYzMjUzNiwyMTM0ODI4MzA2LDE3OTMyMDI3
+ODYsLTE3NjA3NTg0MDksLTEwMzkwMTA3MywxODY4MzEzNTY2LD
+MwMTUwODYwNSwxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMTgyOTQ4
+NDk3NywtMTE4NTY0NTc1OCwtNjA3ODE3MzQzLC0xNDgxNzE5OT
+c3LC0xOTE4NzU4MDkzLC0xMTg2NTM5OTI0LC0xNTA2NDc2NTQ5
+LC0xMTY0MDY5NzI5XX0=
 -->
