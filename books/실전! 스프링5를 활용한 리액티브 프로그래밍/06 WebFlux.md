@@ -118,7 +118,11 @@ public interface WebSocketClient {
 리틀의 법칙 
 : 지정한 대기 시간까지 정의된 양을 처리하기 위해 동시에 얼마나 많은 병렬 작업자가 있어야 하는지 계산하는 방법
 
-즉 리틀 법칙을 통해 안정적인 응답 시간을 유지하면
+즉 리틀 법칙을 통해 안정적인 응답 시간을 유지하면서 지정된 수의 초당 사용자를 처리하는데 필요한 서비스 용량이나 웹 응용 프로그램 인스턴스 수를 계산할 수 있습니다. 
+
+$$ N = X * R$$
+
+
 
 
 
@@ -134,7 +138,7 @@ public interface WebSocketClient {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTc3MjMwNCwxODI5NDg0OTc3LC0xMT
+eyJoaXN0b3J5IjpbLTc2MjIzNzI2MiwxODI5NDg0OTc3LC0xMT
 g1NjQ1NzU4LC02MDc4MTczNDMsLTE0ODE3MTk5NzcsLTE5MTg3
 NTgwOTMsLTExODY1Mzk5MjQsLTE1MDY0NzY1NDksLTExNjQwNj
 k3MjksMTA1MjYzOTA3NiwxNjU2NzQxNzUyLDI2Nzc5MjcyMSwz
