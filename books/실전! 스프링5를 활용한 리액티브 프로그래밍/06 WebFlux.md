@@ -204,7 +204,7 @@ WebFlux는 논블러킹 하므로 I/O 작업을 차단하는 블로킹을 마주
 
 **WebFlux는 WebMVC보다 하나의 쓰레드를 훨씬 효율적으로 사용하므로 같은 시간에 더 많은 요청을 처리할 수 있습니다.** 
 
-
+멀티 쓰레딩 모델을 사용해도 대기 중인 요청을 빠르게 처리할 수 있으며 거의 동
 
  
 
@@ -263,11 +263,11 @@ WebFlux는 논블러킹 하므로 I/O 작업을 차단하는 블로킹을 마주
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODY4NDk0NjUsLTE1MzE2NjMzODMsNz
-U4MTU5NTgwLDI0Nzk2NDA2MSw1NjM5NDk5NDUsMTIxMzI2OTc2
-MCwxMDM2NTU4MDUxLC03Mzg2MjM3MTYsLTc2ODUzNTIwNCwxOD
-IyMTQ4MjcwLC05Njg0NDg4OTYsLTEyODEwMjQ2MTQsLTE0NTg3
-MjA3OTYsNDQxNzk3MTE0LDYxNTcwMzM5OCwtNDExNDk2NjQ1LC
-04MDc2MzI1MzYsMjEzNDgyODMwNiwxNzkzMjAyNzg2LC0xNzYw
-NzU4NDA5XX0=
+eyJoaXN0b3J5IjpbLTEyNTM4ODM5NCwtMTQ4Njg0OTQ2NSwtMT
+UzMTY2MzM4Myw3NTgxNTk1ODAsMjQ3OTY0MDYxLDU2Mzk0OTk0
+NSwxMjEzMjY5NzYwLDEwMzY1NTgwNTEsLTczODYyMzcxNiwtNz
+Y4NTM1MjA0LDE4MjIxNDgyNzAsLTk2ODQ0ODg5NiwtMTI4MTAy
+NDYxNCwtMTQ1ODcyMDc5Niw0NDE3OTcxMTQsNjE1NzAzMzk4LC
+00MTE0OTY2NDUsLTgwNzYzMjUzNiwyMTM0ODI4MzA2LDE3OTMy
+MDI3ODZdfQ==
 -->
