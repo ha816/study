@@ -199,6 +199,9 @@ WebMVC는 블로킹 I/O를 기반으로 합니다. 즉 요청을 처리하는 �
 
 모든 요청은 하나의 스레드에 의해 순서대로 큐에 들어간 후 처리됩니다. 큐에 들어온 요청이 처리될때 I/O와의 읽기/쓰기 작업이 블로킹 됩니다.
 
+`수신 - 읽기(블로킹) - 처리 - 쓰기(블로킹) - 수신 ...`
+
+
  
 
 
@@ -256,11 +259,11 @@ WebMVC는 블로킹 I/O를 기반으로 합니다. 즉 요청을 처리하는 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3OTY0MDYxLDU2Mzk0OTk0NSwxMjEzMj
-Y5NzYwLDEwMzY1NTgwNTEsLTczODYyMzcxNiwtNzY4NTM1MjA0
-LDE4MjIxNDgyNzAsLTk2ODQ0ODg5NiwtMTI4MTAyNDYxNCwtMT
-Q1ODcyMDc5Niw0NDE3OTcxMTQsNjE1NzAzMzk4LC00MTE0OTY2
-NDUsLTgwNzYzMjUzNiwyMTM0ODI4MzA2LDE3OTMyMDI3ODYsLT
-E3NjA3NTg0MDksLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUw
-ODYwNV19
+eyJoaXN0b3J5IjpbNzU4MTU5NTgwLDI0Nzk2NDA2MSw1NjM5ND
+k5NDUsMTIxMzI2OTc2MCwxMDM2NTU4MDUxLC03Mzg2MjM3MTYs
+LTc2ODUzNTIwNCwxODIyMTQ4MjcwLC05Njg0NDg4OTYsLTEyOD
+EwMjQ2MTQsLTE0NTg3MjA3OTYsNDQxNzk3MTE0LDYxNTcwMzM5
+OCwtNDExNDk2NjQ1LC04MDc2MzI1MzYsMjEzNDgyODMwNiwxNz
+kzMjAyNzg2LC0xNzYwNzU4NDA5LC0xMDM5MDEwNzMsMTg2ODMx
+MzU2Nl19
 -->
