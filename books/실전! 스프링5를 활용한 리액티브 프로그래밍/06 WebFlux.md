@@ -192,7 +192,8 @@ Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기�
 
 시스템 처리량과 대기 시간에 대한 두 모델를 이해하기 위해 간단히 두 모델이 사용자 요청을 처리하는 방법을 간단히 알아봅시다. 
 
-WebMVC는 블로킹 I/O를 기반으로 합니다. 
+WebMVC는 블로킹 I/O를 기반으로 합니다. 즉 요청을 처리하는 스레드가 요청 본문을 읽으면서 I/O를 블로킹할 수 있습니다. 
+
 
 
 
@@ -248,11 +249,11 @@ WebMVC는 블로킹 I/O를 기반으로 합니다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjU1ODA1MSwtNzM4NjIzNzE2LC03Nj
-g1MzUyMDQsMTgyMjE0ODI3MCwtOTY4NDQ4ODk2LC0xMjgxMDI0
-NjE0LC0xNDU4NzIwNzk2LDQ0MTc5NzExNCw2MTU3MDMzOTgsLT
-QxMTQ5NjY0NSwtODA3NjMyNTM2LDIxMzQ4MjgzMDYsMTc5MzIw
-Mjc4NiwtMTc2MDc1ODQwOSwtMTAzOTAxMDczLDE4NjgzMTM1Nj
-YsMzAxNTA4NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0MSwxODI5
-NDg0OTc3XX0=
+eyJoaXN0b3J5IjpbMTIxMzI2OTc2MCwxMDM2NTU4MDUxLC03Mz
+g2MjM3MTYsLTc2ODUzNTIwNCwxODIyMTQ4MjcwLC05Njg0NDg4
+OTYsLTEyODEwMjQ2MTQsLTE0NTg3MjA3OTYsNDQxNzk3MTE0LD
+YxNTcwMzM5OCwtNDExNDk2NjQ1LC04MDc2MzI1MzYsMjEzNDgy
+ODMwNiwxNzkzMjAyNzg2LC0xNzYwNzU4NDA5LC0xMDM5MDEwNz
+MsMTg2ODMxMzU2NiwzMDE1MDg2MDUsMTAxODc5MzM1OSwxMTI0
+NDU1NTQxXX0=
 -->
