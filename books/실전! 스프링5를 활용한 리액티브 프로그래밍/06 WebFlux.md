@@ -200,8 +200,7 @@ WebMVC는 블로킹 I/O를 기반으로 합니다. 즉 요청을 처리하는 �
 
 실제 작업이 처리되는 수신, 처리 작업은 블로킹 때문에 기다려야 합니다. 또 블로킹 시간이 길어질 수록 수신, 처리 작업의 대기 시간이 길어지게 됩니다. 
 
-WebFlux는 논블러킹 하므로 I/O 작업을 차단하는 블로킹을 마주할이 없습니다. 
-
+WebFlux는 논블러킹 하므로 I/O 작업을 차단하는 블로킹을 마주할이 없습니다. 요청을 처리하기 위해 네트워크
 
  
 
@@ -260,11 +259,11 @@ WebFlux는 논블러킹 하므로 I/O 작업을 차단하는 블로킹을 마주
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzE2NjMzODMsNzU4MTU5NTgwLDI0Nz
-k2NDA2MSw1NjM5NDk5NDUsMTIxMzI2OTc2MCwxMDM2NTU4MDUx
-LC03Mzg2MjM3MTYsLTc2ODUzNTIwNCwxODIyMTQ4MjcwLC05Nj
-g0NDg4OTYsLTEyODEwMjQ2MTQsLTE0NTg3MjA3OTYsNDQxNzk3
-MTE0LDYxNTcwMzM5OCwtNDExNDk2NjQ1LC04MDc2MzI1MzYsMj
-EzNDgyODMwNiwxNzkzMjAyNzg2LC0xNzYwNzU4NDA5LC0xMDM5
-MDEwNzNdfQ==
+eyJoaXN0b3J5IjpbLTM0ODIwOTg2MCwtMTUzMTY2MzM4Myw3NT
+gxNTk1ODAsMjQ3OTY0MDYxLDU2Mzk0OTk0NSwxMjEzMjY5NzYw
+LDEwMzY1NTgwNTEsLTczODYyMzcxNiwtNzY4NTM1MjA0LDE4Mj
+IxNDgyNzAsLTk2ODQ0ODg5NiwtMTI4MTAyNDYxNCwtMTQ1ODcy
+MDc5Niw0NDE3OTcxMTQsNjE1NzAzMzk4LC00MTE0OTY2NDUsLT
+gwNzYzMjUzNiwyMTM0ODI4MzA2LDE3OTMyMDI3ODYsLTE3NjA3
+NTg0MDldfQ==
 -->
