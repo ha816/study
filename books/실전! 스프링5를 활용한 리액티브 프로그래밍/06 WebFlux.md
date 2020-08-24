@@ -209,7 +209,9 @@ WebFlux는 논블러킹 하므로 I/O 작업을 차단하는 블로킹을 마주
 ## WebFlux 모델의 해결 과제
 
 
-WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처리하는데 몇개의 소수 스레드만으로 가능합니다. 
+WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처리하는데 몇개의 소수 스레드만으로 가능합니다. 이벤트를 동시에 처리할때 시스템 프로세서/코어 보다 많은 수의 스레드 인스턴스가 필요하지 않습니다. (WebFlux가 네티 기반으로 구축되었기 때문이며 기본적으로 프로세서 * 2 만큼의 쓰레드 인스턴스를 만듭니다 )
+
+하지만 비동기 논블러킹 모델도 
 
 
 
@@ -271,11 +273,11 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUzNjgyMTEsLTE2MDQwNjQ5MTcsLTE0OD
-Y4NDk0NjUsLTE1MzE2NjMzODMsNzU4MTU5NTgwLDI0Nzk2NDA2
-MSw1NjM5NDk5NDUsMTIxMzI2OTc2MCwxMDM2NTU4MDUxLC03Mz
-g2MjM3MTYsLTc2ODUzNTIwNCwxODIyMTQ4MjcwLC05Njg0NDg4
-OTYsLTEyODEwMjQ2MTQsLTE0NTg3MjA3OTYsNDQxNzk3MTE0LD
-YxNTcwMzM5OCwtNDExNDk2NjQ1LC04MDc2MzI1MzYsMjEzNDgy
-ODMwNl19
+eyJoaXN0b3J5IjpbMTQ0ODc0MTIxMyw5NTM2ODIxMSwtMTYwND
+A2NDkxNywtMTQ4Njg0OTQ2NSwtMTUzMTY2MzM4Myw3NTgxNTk1
+ODAsMjQ3OTY0MDYxLDU2Mzk0OTk0NSwxMjEzMjY5NzYwLDEwMz
+Y1NTgwNTEsLTczODYyMzcxNiwtNzY4NTM1MjA0LDE4MjIxNDgy
+NzAsLTk2ODQ0ODg5NiwtMTI4MTAyNDYxNCwtMTQ1ODcyMDc5Ni
+w0NDE3OTcxMTQsNjE1NzAzMzk4LC00MTE0OTY2NDUsLTgwNzYz
+MjUzNl19
 -->
