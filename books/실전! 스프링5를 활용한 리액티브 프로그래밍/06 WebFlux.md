@@ -206,7 +206,11 @@ WebFlux는 논블러킹 하므로 I/O 작업을 차단하는 블로킹을 마주
 
 멀티 쓰레딩 모델을 사용해면 대기 중인 요청을 빠르게 처리할 수 있어 보이지만, 앞서 USL에서 배운것 처럼 시스템이 CPU나 메모리와 같은 리소스를 공유할때 병렬 작업이 늘어나면 병목이 발생합니다. 즉 쓰레드 인스턴스가 어느정도 이상이 되면 동기화를 위해한 성능 저하가 발생합니다. 
 
-### 처리 모델이 시스템 처리량과 대기 시간에 미치는 영향
+## WebFlux 모델의 해결 과제
+
+
+WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 
+
 
 
 
@@ -267,11 +271,11 @@ WebFlux는 논블러킹 하므로 I/O 작업을 차단하는 블로킹을 마주
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDQwNjQ5MTcsLTE0ODY4NDk0NjUsLT
-E1MzE2NjMzODMsNzU4MTU5NTgwLDI0Nzk2NDA2MSw1NjM5NDk5
-NDUsMTIxMzI2OTc2MCwxMDM2NTU4MDUxLC03Mzg2MjM3MTYsLT
-c2ODUzNTIwNCwxODIyMTQ4MjcwLC05Njg0NDg4OTYsLTEyODEw
-MjQ2MTQsLTE0NTg3MjA3OTYsNDQxNzk3MTE0LDYxNTcwMzM5OC
-wtNDExNDk2NjQ1LC04MDc2MzI1MzYsMjEzNDgyODMwNiwxNzkz
-MjAyNzg2XX0=
+eyJoaXN0b3J5IjpbMjA4MzI4MDI4NSwtMTYwNDA2NDkxNywtMT
+Q4Njg0OTQ2NSwtMTUzMTY2MzM4Myw3NTgxNTk1ODAsMjQ3OTY0
+MDYxLDU2Mzk0OTk0NSwxMjEzMjY5NzYwLDEwMzY1NTgwNTEsLT
+czODYyMzcxNiwtNzY4NTM1MjA0LDE4MjIxNDgyNzAsLTk2ODQ0
+ODg5NiwtMTI4MTAyNDYxNCwtMTQ1ODcyMDc5Niw0NDE3OTcxMT
+QsNjE1NzAzMzk4LC00MTE0OTY2NDUsLTgwNzYzMjUzNiwyMTM0
+ODI4MzA2XX0=
 -->
