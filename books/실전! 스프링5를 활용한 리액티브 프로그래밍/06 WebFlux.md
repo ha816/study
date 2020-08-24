@@ -192,16 +192,15 @@ Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기�
 
 시스템 처리량과 대기 시간에 대한 두 모델를 이해하기 위해 간단히 두 모델이 사용자 요청을 처리하는 방법을 간단히 알아봅시다. 
 
-
-### WebMVC
-
 WebMVC는 블로킹 I/O를 기반으로 합니다. 즉 요청을 처리하는 스레드에서 I/O간 읽기/쓰기 작업시 블록킹이 발생한다는 의미입니다. 
 
 모든 요청은 하나의 스레드에 의해 순서대로 큐에 들어간 후 처리됩니다. 큐에 들어온 요청이 처리될때 I/O와의 읽기/쓰기 작업이 블로킹 됩니다.
 
 `수신 - 읽기(I/O 블로킹) - 처리 - 쓰기(I/O 블로킹) - 수신 ...`
 
-실제 작
+실제 작업이 처리되는 수신, 처리 작업은 블로킹 때문에 기다려야 합니다. 또 블로킹 시간이 길어질 수록 수신, 처리 작업의 대기 시간이 길어지게 됩니다. 
+
+WebFlux는 논블러킹에 기간하므로 I/O 작업을 차단하는
 
 
  
@@ -261,11 +260,11 @@ WebMVC는 블로킹 I/O를 기반으로 합니다. 즉 요청을 처리하는 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0Nzg3MTAzMSw3NTgxNTk1ODAsMjQ3OT
-Y0MDYxLDU2Mzk0OTk0NSwxMjEzMjY5NzYwLDEwMzY1NTgwNTEs
-LTczODYyMzcxNiwtNzY4NTM1MjA0LDE4MjIxNDgyNzAsLTk2OD
-Q0ODg5NiwtMTI4MTAyNDYxNCwtMTQ1ODcyMDc5Niw0NDE3OTcx
-MTQsNjE1NzAzMzk4LC00MTE0OTY2NDUsLTgwNzYzMjUzNiwyMT
-M0ODI4MzA2LDE3OTMyMDI3ODYsLTE3NjA3NTg0MDksLTEwMzkw
-MTA3M119
+eyJoaXN0b3J5IjpbNTUwNTY5MTIzLDc1ODE1OTU4MCwyNDc5Nj
+QwNjEsNTYzOTQ5OTQ1LDEyMTMyNjk3NjAsMTAzNjU1ODA1MSwt
+NzM4NjIzNzE2LC03Njg1MzUyMDQsMTgyMjE0ODI3MCwtOTY4ND
+Q4ODk2LC0xMjgxMDI0NjE0LC0xNDU4NzIwNzk2LDQ0MTc5NzEx
+NCw2MTU3MDMzOTgsLTQxMTQ5NjY0NSwtODA3NjMyNTM2LDIxMz
+Q4MjgzMDYsMTc5MzIwMjc4NiwtMTc2MDc1ODQwOSwtMTAzOTAx
+MDczXX0=
 -->
