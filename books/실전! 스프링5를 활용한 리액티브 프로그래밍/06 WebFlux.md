@@ -192,6 +192,7 @@ Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기�
 
 시스템 처리량과 대기 시간에 대한 두 모델를 이해하기 위해 간단히 두 모델이 사용자 요청을 처리하는 방법을 간단히 알아봅시다. 
 
+WebMVC는 블로킹 I/O를 기반으로 합니다. 
 
 
 
@@ -247,11 +248,11 @@ Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczODYyMzcxNiwtNzY4NTM1MjA0LDE4Mj
-IxNDgyNzAsLTk2ODQ0ODg5NiwtMTI4MTAyNDYxNCwtMTQ1ODcy
-MDc5Niw0NDE3OTcxMTQsNjE1NzAzMzk4LC00MTE0OTY2NDUsLT
-gwNzYzMjUzNiwyMTM0ODI4MzA2LDE3OTMyMDI3ODYsLTE3NjA3
-NTg0MDksLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUwODYwNS
-wxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3NywtMTE4
-NTY0NTc1OF19
+eyJoaXN0b3J5IjpbMTAzNjU1ODA1MSwtNzM4NjIzNzE2LC03Nj
+g1MzUyMDQsMTgyMjE0ODI3MCwtOTY4NDQ4ODk2LC0xMjgxMDI0
+NjE0LC0xNDU4NzIwNzk2LDQ0MTc5NzExNCw2MTU3MDMzOTgsLT
+QxMTQ5NjY0NSwtODA3NjMyNTM2LDIxMzQ4MjgzMDYsMTc5MzIw
+Mjc4NiwtMTc2MDc1ODQwOSwtMTAzOTAxMDczLDE4NjgzMTM1Nj
+YsMzAxNTA4NjA1LDEwMTg3OTMzNTksMTEyNDQ1NTU0MSwxODI5
+NDg0OTc3XX0=
 -->
