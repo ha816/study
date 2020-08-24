@@ -204,7 +204,9 @@ WebFlux는 논블러킹 하므로 I/O 작업을 차단하는 블로킹을 마주
 
 **WebFlux는 WebMVC보다 하나의 쓰레드를 훨씬 효율적으로 사용하므로 같은 시간에 더 많은 요청을 처리할 수 있습니다.** 
 
-멀티 쓰레딩 모델을 사용해면 대기 중인 요청을 빠르게 처리할 수 있어 보이지만, 앞서 USL에서 배운것 처럼 시스템이 CPU나 메모리와 같은 리소스를 공유할때 병렬 작업이 늘어나면 시스템의 병목이 됩니다. 쓰레드 인스턴스가 어느정도 이상이 되면 동기화를 
+멀티 쓰레딩 모델을 사용해면 대기 중인 요청을 빠르게 처리할 수 있어 보이지만, 앞서 USL에서 배운것 처럼 시스템이 CPU나 메모리와 같은 리소스를 공유할때 병렬 작업이 늘어나면 병목이 발생합니다. 즉 쓰레드 인스턴스가 어느정도 이상이 되면 동기화를 위해한 성능 저하가 발생합니다. 
+
+## #
 
  
 
@@ -263,7 +265,7 @@ WebFlux는 논블러킹 하므로 I/O 작업을 차단하는 블로킹을 마주
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg5NzczMjgxLC0xNDg2ODQ5NDY1LC0xNT
+eyJoaXN0b3J5IjpbMjk2MDU1OTUwLC0xNDg2ODQ5NDY1LC0xNT
 MxNjYzMzgzLDc1ODE1OTU4MCwyNDc5NjQwNjEsNTYzOTQ5OTQ1
 LDEyMTMyNjk3NjAsMTAzNjU1ODA1MSwtNzM4NjIzNzE2LC03Nj
 g1MzUyMDQsMTgyMjE0ODI3MCwtOTY4NDQ4ODk2LC0xMjgxMDI0
