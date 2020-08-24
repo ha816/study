@@ -190,6 +190,9 @@ Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기�
 
 ## WebFlux와 WebMVC 처리 모델이해
 
+시스템 처리량과 대기 시간에 대한 두 모델를 이해하기 위해 간단히 두 모델이 사용자 요청을 처리하는 방법을 간단히 알아봅시다. 
+
+
 
 
 
@@ -244,11 +247,11 @@ Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2ODUzNTIwNCwxODIyMTQ4MjcwLC05Nj
-g0NDg4OTYsLTEyODEwMjQ2MTQsLTE0NTg3MjA3OTYsNDQxNzk3
-MTE0LDYxNTcwMzM5OCwtNDExNDk2NjQ1LC04MDc2MzI1MzYsMj
-EzNDgyODMwNiwxNzkzMjAyNzg2LC0xNzYwNzU4NDA5LC0xMDM5
-MDEwNzMsMTg2ODMxMzU2NiwzMDE1MDg2MDUsMTAxODc5MzM1OS
-wxMTI0NDU1NTQxLDE4Mjk0ODQ5NzcsLTExODU2NDU3NTgsLTYw
-NzgxNzM0M119
+eyJoaXN0b3J5IjpbLTczODYyMzcxNiwtNzY4NTM1MjA0LDE4Mj
+IxNDgyNzAsLTk2ODQ0ODg5NiwtMTI4MTAyNDYxNCwtMTQ1ODcy
+MDc5Niw0NDE3OTcxMTQsNjE1NzAzMzk4LC00MTE0OTY2NDUsLT
+gwNzYzMjUzNiwyMTM0ODI4MzA2LDE3OTMyMDI3ODYsLTE3NjA3
+NTg0MDksLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUwODYwNS
+wxMDE4NzkzMzU5LDExMjQ0NTU1NDEsMTgyOTQ4NDk3NywtMTE4
+NTY0NTc1OF19
 -->
