@@ -195,9 +195,9 @@ Sync threshing 영역은 시스템이 공유 엑세스 지점이 있어 동기�
 
 ### WebMVC
 
-WebMVC는 블로킹 I/O를 기반으로 합니다. 즉 요청을 처리하는 스레드가 요청 본문을 읽으면서 I/O를 블로킹할 수 있습니다. 
+WebMVC는 블로킹 I/O를 기반으로 합니다. 즉 요청을 처리하는 스레드가 요청을 수신 처리
 
-모든 요청은 하나의 스레드에 의해 순서대로 큐에 들어간 후 처리됩니다. 큐에 들어온 요청이 처리될때 I/O와의 읽기/쓰기 작업이 블로킹 
+모든 요청은 하나의 스레드에 의해 순서대로 큐에 들어간 후 처리됩니다. 큐에 들어온 요청이 처리될때 I/O와의 읽기/쓰기 작업이 블로킹 됩니다. 
 
 
 
@@ -254,11 +254,11 @@ WebMVC는 블로킹 I/O를 기반으로 합니다. 즉 요청을 처리하는 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQwMjMzMzY2LDEyMTMyNjk3NjAsMTAzNj
-U1ODA1MSwtNzM4NjIzNzE2LC03Njg1MzUyMDQsMTgyMjE0ODI3
-MCwtOTY4NDQ4ODk2LC0xMjgxMDI0NjE0LC0xNDU4NzIwNzk2LD
-Q0MTc5NzExNCw2MTU3MDMzOTgsLTQxMTQ5NjY0NSwtODA3NjMy
-NTM2LDIxMzQ4MjgzMDYsMTc5MzIwMjc4NiwtMTc2MDc1ODQwOS
-wtMTAzOTAxMDczLDE4NjgzMTM1NjYsMzAxNTA4NjA1LDEwMTg3
-OTMzNTldfQ==
+eyJoaXN0b3J5IjpbLTkxNTQzNjk2NywxMjEzMjY5NzYwLDEwMz
+Y1NTgwNTEsLTczODYyMzcxNiwtNzY4NTM1MjA0LDE4MjIxNDgy
+NzAsLTk2ODQ0ODg5NiwtMTI4MTAyNDYxNCwtMTQ1ODcyMDc5Ni
+w0NDE3OTcxMTQsNjE1NzAzMzk4LC00MTE0OTY2NDUsLTgwNzYz
+MjUzNiwyMTM0ODI4MzA2LDE3OTMyMDI3ODYsLTE3NjA3NTg0MD
+ksLTEwMzkwMTA3MywxODY4MzEzNTY2LDMwMTUwODYwNSwxMDE4
+NzkzMzU5XX0=
 -->
