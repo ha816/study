@@ -258,7 +258,7 @@ WebFlux를 사용하기 접합한 시스템은 모바일 클라이언트의 접�
 
 ## Streaming 또는 Real-time 시스템
 
-WebFlux를 사용하기 좋은 시스템은 스트리밍 또는 실시간 시스템입니다. 우선 이런 시스템은 낮은 대기 시간과 높은 처리량을 만족해야 합니다. 
+WebFlux를 사용하기 좋은 시스템은 스트리밍 또는 실시간 시스템입니다. 우선 이런 시스템은 낮은 대기 시간과 높은 처리량을 만족해야 합니다. WebFlux를 사용하면 낮은 대기 시간과 높은 처리량을 만족할 수 있습니다.  
 
 
 
@@ -324,11 +324,11 @@ WebFlux를 사용하기 좋은 시스템은 스트리밍 또는 실시간 시스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MDkyMjk3NCwzMzA2Mjg4MywyMDc5OT
-U2NzYsMTYwNTAwNDczMCwtMjc4ODcyOTkyLC00ODQwNzAzNDAs
-OTYzODQwMjA1LDEyMTU2ODE4MDIsNDU3ODY1NjY0LDE0NTA5NT
-E2NDYsMTIwMjc4NjA0LC00OTQ1MDUxMjIsOTUzNjgyMTEsLTE2
-MDQwNjQ5MTcsLTE0ODY4NDk0NjUsLTE1MzE2NjMzODMsNzU4MT
-U5NTgwLDI0Nzk2NDA2MSw1NjM5NDk5NDUsMTIxMzI2OTc2MF19
+eyJoaXN0b3J5IjpbMTEyMTg0NDY3MSwxNjYwOTIyOTc0LDMzMD
+YyODgzLDIwNzk5NTY3NiwxNjA1MDA0NzMwLC0yNzg4NzI5OTIs
+LTQ4NDA3MDM0MCw5NjM4NDAyMDUsMTIxNTY4MTgwMiw0NTc4Nj
+U2NjQsMTQ1MDk1MTY0NiwxMjAyNzg2MDQsLTQ5NDUwNTEyMiw5
+NTM2ODIxMSwtMTYwNDA2NDkxNywtMTQ4Njg0OTQ2NSwtMTUzMT
+Y2MzM4Myw3NTgxNTk1ODAsMjQ3OTY0MDYxLDU2Mzk0OTk0NV19
 
 -->
