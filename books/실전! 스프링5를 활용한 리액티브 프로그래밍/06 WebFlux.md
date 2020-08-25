@@ -246,7 +246,11 @@ WebFlux는 아직 충분히 입증되지 않았고 잠재적으로 많은 버그
 
 ## MSA
 
-WebFlux를 사용하기 가장 적합한 곳은 MSA(마이크로서비스 시스템)입니다. 
+WebFlux를 사용하기 가장 적합한 곳은 MSA(마이크로서비스 시스템)입니다. 마이크로 서비스의 핵심은 많은 수의 I/O 통신입니다. I/O 통신을 블로킹 방식이 아닌 WebFlux를 쓰면 좋습니다. 
+
+## 접속이 느린 클라이언트를 처리하는 시스템
+
+
 
 
 
@@ -310,11 +314,11 @@ WebFlux를 사용하기 가장 적합한 곳은 MSA(마이크로서비스 시스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNTAwNDczMCwtMjc4ODcyOTkyLC00OD
-QwNzAzNDAsOTYzODQwMjA1LDEyMTU2ODE4MDIsNDU3ODY1NjY0
-LDE0NTA5NTE2NDYsMTIwMjc4NjA0LC00OTQ1MDUxMjIsOTUzNj
-gyMTEsLTE2MDQwNjQ5MTcsLTE0ODY4NDk0NjUsLTE1MzE2NjMz
-ODMsNzU4MTU5NTgwLDI0Nzk2NDA2MSw1NjM5NDk5NDUsMTIxMz
-I2OTc2MCwxMDM2NTU4MDUxLC03Mzg2MjM3MTYsLTc2ODUzNTIw
-NF19
+eyJoaXN0b3J5IjpbMjA3OTk1Njc2LDE2MDUwMDQ3MzAsLTI3OD
+g3Mjk5MiwtNDg0MDcwMzQwLDk2Mzg0MDIwNSwxMjE1NjgxODAy
+LDQ1Nzg2NTY2NCwxNDUwOTUxNjQ2LDEyMDI3ODYwNCwtNDk0NT
+A1MTIyLDk1MzY4MjExLC0xNjA0MDY0OTE3LC0xNDg2ODQ5NDY1
+LC0xNTMxNjYzMzgzLDc1ODE1OTU4MCwyNDc5NjQwNjEsNTYzOT
+Q5OTQ1LDEyMTMyNjk3NjAsMTAzNjU1ODA1MSwtNzM4NjIzNzE2
+XX0=
 -->
