@@ -230,7 +230,10 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 $$R= Rnet + Rprocessing + Rnet$$
 
-반면 일반적인 WebMVC의 최초 
+반면 일반적인 WebMVC의 평균 처리 시간은 아래와 같습니다. 
+
+$$R = N * (Rnet + Rprocessing) + Rnet$$
+
 
 
 
@@ -294,11 +297,11 @@ $$R= Rnet + Rprocessing + Rnet$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTM5NDc3MDIsOTYzODQwMjA1LDEyMT
-U2ODE4MDIsNDU3ODY1NjY0LDE0NTA5NTE2NDYsMTIwMjc4NjA0
-LC00OTQ1MDUxMjIsOTUzNjgyMTEsLTE2MDQwNjQ5MTcsLTE0OD
-Y4NDk0NjUsLTE1MzE2NjMzODMsNzU4MTU5NTgwLDI0Nzk2NDA2
-MSw1NjM5NDk5NDUsMTIxMzI2OTc2MCwxMDM2NTU4MDUxLC03Mz
-g2MjM3MTYsLTc2ODUzNTIwNCwxODIyMTQ4MjcwLC05Njg0NDg4
-OTZdfQ==
+eyJoaXN0b3J5IjpbLTQ4NDA3MDM0MCw5NjM4NDAyMDUsMTIxNT
+Y4MTgwMiw0NTc4NjU2NjQsMTQ1MDk1MTY0NiwxMjAyNzg2MDQs
+LTQ5NDUwNTEyMiw5NTM2ODIxMSwtMTYwNDA2NDkxNywtMTQ4Nj
+g0OTQ2NSwtMTUzMTY2MzM4Myw3NTgxNTk1ODAsMjQ3OTY0MDYx
+LDU2Mzk0OTk0NSwxMjEzMjY5NzYwLDEwMzY1NTgwNTEsLTczOD
+YyMzcxNiwtNzY4NTM1MjA0LDE4MjIxNDgyNzAsLTk2ODQ0ODg5
+Nl19
 -->
