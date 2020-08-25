@@ -226,7 +226,7 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 실제 다수의 벤치마킹 결과를 보면 거의 두배에 가까운 차이로 WebFlux가 효율적으로 메모리를 사용합니다. 
 
-리액터 - 네티 서버를 사용했을때 처리량과 대기시간에 대해서 생각해봅시다. 
+리액터 - 네티 서버를 사용했을때 처리량과 대기시간에 대해서 생각해봅시다. WebFlux는 요청 본문의 일부만 받은 상태에서도 데이터 처리를 할 수 있습니다. 응답 본문을 클라이언트에 보낼때도 마찬가지입니다. 
 
 
 
@@ -290,7 +290,7 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODU3NjE0Niw5NjM4NDAyMDUsMTIxNT
+eyJoaXN0b3J5IjpbLTgyMzA2Nzc0NCw5NjM4NDAyMDUsMTIxNT
 Y4MTgwMiw0NTc4NjU2NjQsMTQ1MDk1MTY0NiwxMjAyNzg2MDQs
 LTQ5NDUwNTEyMiw5NTM2ODIxMSwtMTYwNDA2NDkxNywtMTQ4Nj
 g0OTQ2NSwtMTUzMTY2MzM4Myw3NTgxNTk1ODAsMjQ3OTY0MDYx
