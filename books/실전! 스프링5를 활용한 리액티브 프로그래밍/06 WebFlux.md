@@ -238,7 +238,9 @@ $$R = N * (Rnet + Rprocessing) + Rnet$$
 
 ## 처리 모델과 사용성 
 
-두 모델의 비교에는 졍량적 지표 뿐만 아니라 정성적 지표도 포함해야 합니다. 대표적인 정성적 지표는 바로 학습 시간입니다. WebMVC는 기업에서 10년 이상 사용된 프레임워크입니다. 따라서 기업에선 WebMVC와 스프링을 이용해서 프로젝트를 시작하면 아주 쉽게 숙련된 개발자를 찾을 수 있고 새로운 개발자를 가르치는 것도 저렴한것을 의미합니다. 반대로 WebFlux를 사용하면 반대
+두 모델의 비교에는 졍량적 지표 뿐만 아니라 정성적 지표도 포함해야 합니다. 대표적인 정성적 지표는 바로 학습 시간입니다. WebMVC는 기업에서 10년 이상 사용된 프레임워크입니다. 따라서 기업에선 WebMVC와 스프링을 이용해서 프로젝트를 시작하면 아주 쉽게 숙련된 개발자를 찾을 수 있고 새로운 개발자를 가르치는 것도 저렴한것을 의미합니다. 반대로 WebFlux를 사용하면 반대의 상황이 됩니다. 
+
+WebFlux는 아직 충분히 입증되지 않았고 잠재적으로 많은 버그와 취약점이 있는 기술입니다. 
 
 
 
@@ -302,7 +304,7 @@ $$R = N * (Rnet + Rprocessing) + Rnet$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2Mzc5MTA2MiwtMjc4ODcyOTkyLC00OD
+eyJoaXN0b3J5IjpbLTcyMDk1Nzg2NSwtMjc4ODcyOTkyLC00OD
 QwNzAzNDAsOTYzODQwMjA1LDEyMTU2ODE4MDIsNDU3ODY1NjY0
 LDE0NTA5NTE2NDYsMTIwMjc4NjA0LC00OTQ1MDUxMjIsOTUzNj
 gyMTEsLTE2MDQwNjQ5MTcsLTE0ODY4NDk0NjUsLTE1MzE2NjMz
