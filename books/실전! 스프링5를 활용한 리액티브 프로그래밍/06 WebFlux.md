@@ -236,6 +236,9 @@ $$R = N * (Rnet + Rprocessing) + Rnet$$
 
 즉 N개의 데이터가 모두 도착해야하는  WebMVC는 데이터의 크기가 클수록 선형적으로 최초 응답 속도가 느려집니다.
 
+## 처리 모델과 사용성 
+
+두 모델의 비교에는 졍량적 지표 뿐만 아니라 정성적 지표도 포함해야 합니다. 
 
 
 
@@ -299,11 +302,11 @@ $$R = N * (Rnet + Rprocessing) + Rnet$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTYyMDI5MzcsLTQ4NDA3MDM0MCw5Nj
-M4NDAyMDUsMTIxNTY4MTgwMiw0NTc4NjU2NjQsMTQ1MDk1MTY0
-NiwxMjAyNzg2MDQsLTQ5NDUwNTEyMiw5NTM2ODIxMSwtMTYwND
-A2NDkxNywtMTQ4Njg0OTQ2NSwtMTUzMTY2MzM4Myw3NTgxNTk1
-ODAsMjQ3OTY0MDYxLDU2Mzk0OTk0NSwxMjEzMjY5NzYwLDEwMz
-Y1NTgwNTEsLTczODYyMzcxNiwtNzY4NTM1MjA0LDE4MjIxNDgy
-NzBdfQ==
+eyJoaXN0b3J5IjpbLTI3ODg3Mjk5MiwtNDg0MDcwMzQwLDk2Mz
+g0MDIwNSwxMjE1NjgxODAyLDQ1Nzg2NTY2NCwxNDUwOTUxNjQ2
+LDEyMDI3ODYwNCwtNDk0NTA1MTIyLDk1MzY4MjExLC0xNjA0MD
+Y0OTE3LC0xNDg2ODQ5NDY1LC0xNTMxNjYzMzgzLDc1ODE1OTU4
+MCwyNDc5NjQwNjEsNTYzOTQ5OTQ1LDEyMTMyNjk3NjAsMTAzNj
+U1ODA1MSwtNzM4NjIzNzE2LC03Njg1MzUyMDQsMTgyMjE0ODI3
+MF19
 -->
