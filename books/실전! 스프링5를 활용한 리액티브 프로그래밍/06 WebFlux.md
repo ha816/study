@@ -215,7 +215,7 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 이 문제를 해결하려면 이러한 장기 실행 작업의 경우 별도의 프로세서에 위임해야 합니다. 또한 기존 스레드 풀 모델이나 연결당 새로운 쓰레드를 할당하는 기존 모델에서는 쓰레드간의 경합을 통한 스위칭이 계속해서 발생하기 때문에 이런 문제가 발생하지 않습니다. 
 
-그리하여 아래와 같은 효율적인 이벤트 루프를 구성하여 해결합니다. 하나의 쓰레드가 
+그리하여 아래와 같은 효율적인 이벤트 루프를 구성하여 해결합니다. 하나의 쓰레드가 요청 수신을 전담하는 수신 쓰레드가 되고, 실제 작업 처리는 다른 워커 쓰레드가 처리하게 됩니다. 
 
 
 
@@ -288,11 +288,11 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyODE4MTcwMiwtNDk0NTA1MTIyLDk1Mz
-Y4MjExLC0xNjA0MDY0OTE3LC0xNDg2ODQ5NDY1LC0xNTMxNjYz
-MzgzLDc1ODE1OTU4MCwyNDc5NjQwNjEsNTYzOTQ5OTQ1LDEyMT
-MyNjk3NjAsMTAzNjU1ODA1MSwtNzM4NjIzNzE2LC03Njg1MzUy
-MDQsMTgyMjE0ODI3MCwtOTY4NDQ4ODk2LC0xMjgxMDI0NjE0LC
-0xNDU4NzIwNzk2LDQ0MTc5NzExNCw2MTU3MDMzOTgsLTQxMTQ5
-NjY0NV19
+eyJoaXN0b3J5IjpbMTIwMjc4NjA0LC00OTQ1MDUxMjIsOTUzNj
+gyMTEsLTE2MDQwNjQ5MTcsLTE0ODY4NDk0NjUsLTE1MzE2NjMz
+ODMsNzU4MTU5NTgwLDI0Nzk2NDA2MSw1NjM5NDk5NDUsMTIxMz
+I2OTc2MCwxMDM2NTU4MDUxLC03Mzg2MjM3MTYsLTc2ODUzNTIw
+NCwxODIyMTQ4MjcwLC05Njg0NDg4OTYsLTEyODEwMjQ2MTQsLT
+E0NTg3MjA3OTYsNDQxNzk3MTE0LDYxNTcwMzM5OCwtNDExNDk2
+NjQ1XX0=
 -->
