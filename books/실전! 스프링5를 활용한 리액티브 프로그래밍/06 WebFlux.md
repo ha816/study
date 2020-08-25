@@ -250,7 +250,9 @@ WebFlux를 사용하기 가장 적합한 곳은 MSA(마이크로서비스 시스
 
 ## 접속이 느린 클라이언트를 처리하는 시스템
 
+WebFlux를 사용하기 접합한 시스템은 모바일 클라이언트의 접속이 느리거나 불안정한 네트워크에서도 동작하도록 설계된 시스템입니다. 
 
+문제는 클라이언트에서 서버로 데이터를 전송하는데 상당한 시간이 걸릴 수 있으며, 응답에도 많은 시간이 걸릴 수 있다는 것입니다. 
 
 
 
@@ -314,11 +316,11 @@ WebFlux를 사용하기 가장 적합한 곳은 MSA(마이크로서비스 시스
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3OTk1Njc2LDE2MDUwMDQ3MzAsLTI3OD
-g3Mjk5MiwtNDg0MDcwMzQwLDk2Mzg0MDIwNSwxMjE1NjgxODAy
-LDQ1Nzg2NTY2NCwxNDUwOTUxNjQ2LDEyMDI3ODYwNCwtNDk0NT
-A1MTIyLDk1MzY4MjExLC0xNjA0MDY0OTE3LC0xNDg2ODQ5NDY1
-LC0xNTMxNjYzMzgzLDc1ODE1OTU4MCwyNDc5NjQwNjEsNTYzOT
-Q5OTQ1LDEyMTMyNjk3NjAsMTAzNjU1ODA1MSwtNzM4NjIzNzE2
+eyJoaXN0b3J5IjpbMTY3Mjc5MTU1NCwyMDc5OTU2NzYsMTYwNT
+AwNDczMCwtMjc4ODcyOTkyLC00ODQwNzAzNDAsOTYzODQwMjA1
+LDEyMTU2ODE4MDIsNDU3ODY1NjY0LDE0NTA5NTE2NDYsMTIwMj
+c4NjA0LC00OTQ1MDUxMjIsOTUzNjgyMTEsLTE2MDQwNjQ5MTcs
+LTE0ODY4NDk0NjUsLTE1MzE2NjMzODMsNzU4MTU5NTgwLDI0Nz
+k2NDA2MSw1NjM5NDk5NDUsMTIxMzI2OTc2MCwxMDM2NTU4MDUx
 XX0=
 -->
