@@ -254,6 +254,10 @@ WebFlux를 사용하기 접합한 시스템은 모바일 클라이언트의 접�
 
 문제는 클라이언트에서 서버로 데이터를 전송하는데 상당한 시간이 걸릴 수 있으며, 응답에도 많은 시간이 걸릴 수 있다는 것입니다. 연결당 쓰레드를 할당하는 모델을 사용하면 연결된 클라이언트의 수가 늘어나면 시스템이 비정상 동작할 가능성이 높아집니다.  예를 들어 Dos 공격을 하면 해커가 쉽게 서버를 마비시킬 수 있습니다. 
 
+대조적으로 WebFlux는 블로킹 없이 연결을 허용합니다. 따라서 느린 연결로 인한 문제가 발생하지 않습니다. 그리고 이벤트 기반이기 때문에 필요할때 데이터를 사용할 수 있어, 즉 네트워크 상태에 따라 이벤트 처리 상태를 제어할 수 있습니다. 
+
+## Streaming 또는 Real-time 
+
 
 
 
@@ -318,11 +322,11 @@ WebFlux를 사용하기 접합한 시스템은 모바일 클라이언트의 접�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkxNDUxODc0LDMzMDYyODgzLDIwNzk5NT
-Y3NiwxNjA1MDA0NzMwLC0yNzg4NzI5OTIsLTQ4NDA3MDM0MCw5
-NjM4NDAyMDUsMTIxNTY4MTgwMiw0NTc4NjU2NjQsMTQ1MDk1MT
-Y0NiwxMjAyNzg2MDQsLTQ5NDUwNTEyMiw5NTM2ODIxMSwtMTYw
-NDA2NDkxNywtMTQ4Njg0OTQ2NSwtMTUzMTY2MzM4Myw3NTgxNT
-k1ODAsMjQ3OTY0MDYxLDU2Mzk0OTk0NSwxMjEzMjY5NzYwXX0=
+eyJoaXN0b3J5IjpbLTE2NDg3OTg3NiwzMzA2Mjg4MywyMDc5OT
+U2NzYsMTYwNTAwNDczMCwtMjc4ODcyOTkyLC00ODQwNzAzNDAs
+OTYzODQwMjA1LDEyMTU2ODE4MDIsNDU3ODY1NjY0LDE0NTA5NT
+E2NDYsMTIwMjc4NjA0LC00OTQ1MDUxMjIsOTUzNjgyMTEsLTE2
+MDQwNjQ5MTcsLTE0ODY4NDk0NjUsLTE1MzE2NjMzODMsNzU4MT
+U5NTgwLDI0Nzk2NDA2MSw1NjM5NDk5NDUsMTIxMzI2OTc2MF19
 
 -->
