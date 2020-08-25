@@ -228,7 +228,9 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 리액터 - 네티 서버를 사용했을때 처리량과 대기시간에 대해서 생각해봅시다. WebFlux는 요청 본문의 일부만 받은 상태에서도 데이터 처리를 할 수 있습니다. 응답 본문을 클라이언트에 보낼때도 마찬가지입니다. 최초 응답을 수신하는 속도는 아래와 같이 계산할 수 있습니다.
 
-$$R=$$
+$$R= Rnet + Rprocessing + Rnet$$
+
+반면 일반적인 WebMVC의 최초 
 
 
 
@@ -292,11 +294,11 @@ $$R=$$
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MDM3MDgxMCw5NjM4NDAyMDUsMTIxNT
-Y4MTgwMiw0NTc4NjU2NjQsMTQ1MDk1MTY0NiwxMjAyNzg2MDQs
-LTQ5NDUwNTEyMiw5NTM2ODIxMSwtMTYwNDA2NDkxNywtMTQ4Nj
-g0OTQ2NSwtMTUzMTY2MzM4Myw3NTgxNTk1ODAsMjQ3OTY0MDYx
-LDU2Mzk0OTk0NSwxMjEzMjY5NzYwLDEwMzY1NTgwNTEsLTczOD
-YyMzcxNiwtNzY4NTM1MjA0LDE4MjIxNDgyNzAsLTk2ODQ0ODg5
-Nl19
+eyJoaXN0b3J5IjpbLTE1NTM5NDc3MDIsOTYzODQwMjA1LDEyMT
+U2ODE4MDIsNDU3ODY1NjY0LDE0NTA5NTE2NDYsMTIwMjc4NjA0
+LC00OTQ1MDUxMjIsOTUzNjgyMTEsLTE2MDQwNjQ5MTcsLTE0OD
+Y4NDk0NjUsLTE1MzE2NjMzODMsNzU4MTU5NTgwLDI0Nzk2NDA2
+MSw1NjM5NDk5NDUsMTIxMzI2OTc2MCwxMDM2NTU4MDUxLC03Mz
+g2MjM3MTYsLTc2ODUzNTIwNCwxODIyMTQ4MjcwLC05Njg0NDg4
+OTZdfQ==
 -->
