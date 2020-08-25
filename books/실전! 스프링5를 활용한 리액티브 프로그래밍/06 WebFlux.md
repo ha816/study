@@ -252,7 +252,9 @@ WebFlux를 사용하기 가장 적합한 곳은 MSA(마이크로서비스 시스
 
 WebFlux를 사용하기 접합한 시스템은 모바일 클라이언트의 접속이 느리거나 불안정한 네트워크에서도 동작하도록 설계된 시스템입니다. 
 
-문제는 클라이언트에서 서버로 데이터를 전송하는데 상당한 시간이 걸릴 수 있으며, 응답에도 많은 시간이 걸릴 수 있다는 것입니다. 연결당 쓰레드를 할당ㅇ하는 모델을 사용하면 연결된 클라이언트의 수가 늘어나면 시스템이 비정상 동작할 가능성이 높아집니다. 
+문제는 클라이언트에서 서버로 데이터를 전송하는데 상당한 시간이 걸릴 수 있으며, 응답에도 많은 시간이 걸릴 수 있다는 것입니다. 연결당 쓰레드를 할당하는 모델을 사용하면 연결된 클라이언트의 수가 늘어나면 시스템이 비정상 동작할 가능성이 높아집니다.  예를 들어 Dos 공격을 하면 해커가 쉽게 서버를 마비시킬 수 있습니다. 
+
+
 
 
 
@@ -316,11 +318,11 @@ WebFlux를 사용하기 접합한 시스템은 모바일 클라이언트의 접�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMwNjI4ODMsMjA3OTk1Njc2LDE2MDUwMD
-Q3MzAsLTI3ODg3Mjk5MiwtNDg0MDcwMzQwLDk2Mzg0MDIwNSwx
-MjE1NjgxODAyLDQ1Nzg2NTY2NCwxNDUwOTUxNjQ2LDEyMDI3OD
-YwNCwtNDk0NTA1MTIyLDk1MzY4MjExLC0xNjA0MDY0OTE3LC0x
-NDg2ODQ5NDY1LC0xNTMxNjYzMzgzLDc1ODE1OTU4MCwyNDc5Nj
-QwNjEsNTYzOTQ5OTQ1LDEyMTMyNjk3NjAsMTAzNjU1ODA1MV19
+eyJoaXN0b3J5IjpbNjkxNDUxODc0LDMzMDYyODgzLDIwNzk5NT
+Y3NiwxNjA1MDA0NzMwLC0yNzg4NzI5OTIsLTQ4NDA3MDM0MCw5
+NjM4NDAyMDUsMTIxNTY4MTgwMiw0NTc4NjU2NjQsMTQ1MDk1MT
+Y0NiwxMjAyNzg2MDQsLTQ5NDUwNTEyMiw5NTM2ODIxMSwtMTYw
+NDA2NDkxNywtMTQ4Njg0OTQ2NSwtMTUzMTY2MzM4Myw3NTgxNT
+k1ODAsMjQ3OTY0MDYxLDU2Mzk0OTk0NSwxMjEzMjY5NzYwXX0=
 
 -->
