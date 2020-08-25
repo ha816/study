@@ -224,7 +224,7 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 프레임워크에 또 중요한 요소는 메모리 사용량을 비교하는 것입니다. 연결달 스레드를 하나씩 할당하는 모델은 작은 이벤트 객체를 메모리에 할당하는 대신 새로운 커다란 스레드를 할당하는 것을 알고 있습니다. 
 
-
+실제 다수의 벤치마킹 결과를 보면 거의 두배에 가까운 차이로 WebFlux가 효율적으로 메모리를 사용합니다. 
 
 
 
@@ -289,11 +289,11 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNTY4MTgwMiw0NTc4NjU2NjQsMTQ1MD
-k1MTY0NiwxMjAyNzg2MDQsLTQ5NDUwNTEyMiw5NTM2ODIxMSwt
-MTYwNDA2NDkxNywtMTQ4Njg0OTQ2NSwtMTUzMTY2MzM4Myw3NT
-gxNTk1ODAsMjQ3OTY0MDYxLDU2Mzk0OTk0NSwxMjEzMjY5NzYw
-LDEwMzY1NTgwNTEsLTczODYyMzcxNiwtNzY4NTM1MjA0LDE4Mj
-IxNDgyNzAsLTk2ODQ0ODg5NiwtMTI4MTAyNDYxNCwtMTQ1ODcy
-MDc5Nl19
+eyJoaXN0b3J5IjpbOTYzODQwMjA1LDEyMTU2ODE4MDIsNDU3OD
+Y1NjY0LDE0NTA5NTE2NDYsMTIwMjc4NjA0LC00OTQ1MDUxMjIs
+OTUzNjgyMTEsLTE2MDQwNjQ5MTcsLTE0ODY4NDk0NjUsLTE1Mz
+E2NjMzODMsNzU4MTU5NTgwLDI0Nzk2NDA2MSw1NjM5NDk5NDUs
+MTIxMzI2OTc2MCwxMDM2NTU4MDUxLC03Mzg2MjM3MTYsLTc2OD
+UzNTIwNCwxODIyMTQ4MjcwLC05Njg0NDg4OTYsLTEyODEwMjQ2
+MTRdfQ==
 -->
