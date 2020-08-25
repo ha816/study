@@ -222,7 +222,7 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 ## 처리 모델에 따른 메모리 사용량
 
-
+프레임워크에 또 중요한 요소는 메모리 사용량을 비교하느
 
 
 
@@ -290,11 +290,11 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDExMjMwMzcsMTQ1MDk1MTY0NiwxMj
-AyNzg2MDQsLTQ5NDUwNTEyMiw5NTM2ODIxMSwtMTYwNDA2NDkx
-NywtMTQ4Njg0OTQ2NSwtMTUzMTY2MzM4Myw3NTgxNTk1ODAsMj
-Q3OTY0MDYxLDU2Mzk0OTk0NSwxMjEzMjY5NzYwLDEwMzY1NTgw
-NTEsLTczODYyMzcxNiwtNzY4NTM1MjA0LDE4MjIxNDgyNzAsLT
-k2ODQ0ODg5NiwtMTI4MTAyNDYxNCwtMTQ1ODcyMDc5Niw0NDE3
-OTcxMTRdfQ==
+eyJoaXN0b3J5IjpbMTYwMzAxNDA0LDE0NTA5NTE2NDYsMTIwMj
+c4NjA0LC00OTQ1MDUxMjIsOTUzNjgyMTEsLTE2MDQwNjQ5MTcs
+LTE0ODY4NDk0NjUsLTE1MzE2NjMzODMsNzU4MTU5NTgwLDI0Nz
+k2NDA2MSw1NjM5NDk5NDUsMTIxMzI2OTc2MCwxMDM2NTU4MDUx
+LC03Mzg2MjM3MTYsLTc2ODUzNTIwNCwxODIyMTQ4MjcwLC05Nj
+g0NDg4OTYsLTEyODEwMjQ2MTQsLTE0NTg3MjA3OTYsNDQxNzk3
+MTE0XX0=
 -->
