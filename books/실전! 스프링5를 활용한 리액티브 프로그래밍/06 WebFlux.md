@@ -217,6 +217,7 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 그리하여 아래와 같은 효율적인 이벤트 루프를 구성하여 해결합니다. 하나의 쓰레드가 요청 수신을 전담하는 수신 쓰레드가 되고, 실제 작업 처리는 다른 워커 쓰레드가 처리하게 됩니다. 
 
+![enter image description here](https://o7planning.org/en/11951/cache/images/i/21212668.png)
 
 
 
@@ -289,11 +290,11 @@ WebFlux는 시스템에 블로킹 I/O가 없기 때문에 모든 요청을 처�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MDk1MTY0NiwxMjAyNzg2MDQsLTQ5ND
-UwNTEyMiw5NTM2ODIxMSwtMTYwNDA2NDkxNywtMTQ4Njg0OTQ2
-NSwtMTUzMTY2MzM4Myw3NTgxNTk1ODAsMjQ3OTY0MDYxLDU2Mz
-k0OTk0NSwxMjEzMjY5NzYwLDEwMzY1NTgwNTEsLTczODYyMzcx
-NiwtNzY4NTM1MjA0LDE4MjIxNDgyNzAsLTk2ODQ0ODg5NiwtMT
-I4MTAyNDYxNCwtMTQ1ODcyMDc5Niw0NDE3OTcxMTQsNjE1NzAz
-Mzk4XX0=
+eyJoaXN0b3J5IjpbNzc1OTE5OTc5LDE0NTA5NTE2NDYsMTIwMj
+c4NjA0LC00OTQ1MDUxMjIsOTUzNjgyMTEsLTE2MDQwNjQ5MTcs
+LTE0ODY4NDk0NjUsLTE1MzE2NjMzODMsNzU4MTU5NTgwLDI0Nz
+k2NDA2MSw1NjM5NDk5NDUsMTIxMzI2OTc2MCwxMDM2NTU4MDUx
+LC03Mzg2MjM3MTYsLTc2ODUzNTIwNCwxODIyMTQ4MjcwLC05Nj
+g0NDg4OTYsLTEyODEwMjQ2MTQsLTE0NTg3MjA3OTYsNDQxNzk3
+MTE0XX0=
 -->
