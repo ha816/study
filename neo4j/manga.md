@@ -6,7 +6,8 @@ MATCH (b:MangaBook)-[:IS_A_BOOK_OF_PRODUCT]->(p:MangaProduct {oid:111850511})-[:
 MATCH (b:MangaBook)-[:IS_A_BOOK_OF_PRODUCT]->(product) WHERE b.`props.onStatus`[0] = 'true' AND b.`props.display`[0] = 'true' AND datetime(b.`props.permitStartDateTime`[0]) < datetime() AND datetime() < datetime(b.`props.permitEndDateTime`[0]) WITH b AS pagedBooks, product, toInteger(b.`props.volume`[0]) AS volume ORDER BY volume DESC LIMIT 10 
 ```
 ```
-// 3번 단락 - 모든 책 가져오기 MATCH (b:MangaBook)-[:IS_A_BOOK_OF_PRODUCT]->(product) WHERE b.`props.onStatus`[0] = 'true' AND b.`props.display`[0] = 'true' AND datetime(b.`props.permitStartDateTime`[0]) < datetime() AND datetime() < datetime(b.`props.permitEndDateTime`[0]) WITH b AS books, pagedBooks, product RETURN apoc.create.virtual.fromNode(product, ['name', 'oid']) AS product, [ (product)-[:AUTHOR_IS]->(author:MangaAuthor) | apoc.create.virtual.fromNode(author, ['name', 'oid']) ] AS authors, [ book IN COLLECT(DISTINCT pagedBooks) | apoc.create.virtual.fromNode(book, ['name', 'oid', 'props.volume']) ] AS pagedBooks, [ book IN COLLECT(books) WHERE toInteger(book.`props.volume`[0]) = 0 | apoc.create.virtual.fromNode(book, ['name', 'oid', 'props.volume']) ][0] AS firstBook, apoc.coll.min([ book IN COLLECT(books) WHERE book.`props.freeEndDateTime`[0] <> '' | datetime(book.`props.freeEndDateTime`[0])]) AS minFreeEndDateTime
+// 3번 단락 - 모든 책 가져오기 
+MATCH (b:MangaBook)-[:IS_A_BOOK_OF_PRODUCT]->(product) WHERE b.`props.onStatus`[0] = 'true' AND b.`props.display`[0] = 'true' AND datetime(b.`props.permitStartDateTime`[0]) < datetime() AND datetime() < datetime(b.`props.permitEndDateTime`[0]) WITH b AS books, pagedBooks, product RETURN apoc.create.virtual.fromNode(product, ['name', 'oid']) AS product, [ (product)-[:AUTHOR_IS]->(author:MangaAuthor) | apoc.create.virtual.fromNode(author, ['name', 'oid']) ] AS authors, [ book IN COLLECT(DISTINCT pagedBooks) | apoc.create.virtual.fromNode(book, ['name', 'oid', 'props.volume']) ] AS pagedBooks, [ book IN COLLECT(books) WHERE toInteger(book.`props.volume`[0]) = 0 | apoc.create.virtual.fromNode(book, ['name', 'oid', 'props.volume']) ][0] AS firstBook, apoc.coll.min([ book IN COLLECT(books) WHERE book.`props.freeEndDateTime`[0] <> '' | datetime(book.`props.freeEndDateTime`[0])]) AS minFreeEndDateTime
 ```
 
 ```
@@ -20,5 +21,5 @@ MATCH (product:MangaProduct {oid:111850511})-[:AUTHOR_IS]->(author:MangaAuthor)<
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI2MDIxMjE0XX0=
+eyJoaXN0b3J5IjpbNzM3NjQ4NzUyXX0=
 -->
