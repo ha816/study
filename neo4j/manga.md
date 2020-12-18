@@ -15,7 +15,7 @@ MATCH (b:MangaBook)-[:IS_A_BOOK_OF_PRODUCT]->(product) WHERE b.`props.onStatus`[
 MATCH (product:MangaProduct {oid:111850511})-[:AUTHOR_IS]->(author:MangaAuthor)<-[:AUTHOR_IS]-(relatedProduct:MangaProduct)<-[:IS_A_BOOK_OF_PRODUCT]-(firstBook:MangaBook) WHERE product <> relatedProduct AND toInteger(firstBook.`props.volume`[0]) = 0 WITH relatedProduct, firstBook, toInteger(relatedProduct.`props.reviewCount`[0]) AS reviewCount ORDER BY reviewCount DESC LIMIT 10 CALL apoc.create.vNode(['MangaProduct', 'TheOne'],{ name:relatedProduct.name, id:relatedProduct.oid, reviewCount:relatedProduct.reviewCount, firstBook:firstBook.oid }) yield node AS result RETURN result
 ```
 
-
+₩
 
 
 
@@ -23,5 +23,6 @@ MATCH (product:MangaProduct {oid:111850511})-[:AUTHOR_IS]->(author:MangaAuthor)<
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDUwMjg3ODgsNzM3NjQ4NzUyXX0=
+eyJoaXN0b3J5IjpbODQyNTAyMDgzLC0xMTA1MDI4Nzg4LDczNz
+Y0ODc1Ml19
 -->
