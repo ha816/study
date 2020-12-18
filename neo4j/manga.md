@@ -15,7 +15,9 @@ MATCH (b:MangaBook)-[:IS_A_BOOK_OF_PRODUCT]->(product) WHERE b.`props.onStatus`[
 MATCH (product:MangaProduct {oid:111850511})-[:AUTHOR_IS]->(author:MangaAuthor)<-[:AUTHOR_IS]-(relatedProduct:MangaProduct)<-[:IS_A_BOOK_OF_PRODUCT]-(firstBook:MangaBook) WHERE product <> relatedProduct AND toInteger(firstBook.`props.volume`[0]) = 0 WITH relatedProduct, firstBook, toInteger(relatedProduct.`props.reviewCount`[0]) AS reviewCount ORDER BY reviewCount DESC LIMIT 10 CALL apoc.create.vNode(['MangaProduct', 'TheOne'],{ name:relatedProduct.name, id:relatedProduct.oid, reviewCount:relatedProduct.reviewCount, firstBook:firstBook.oid }) yield node AS result RETURN result
 ```
 
-₩
+```
+// 1번 단락 - 노출여부판단 및 우선순위 정하기 MATCH (b:MangaBook)-[:IS_A_BOOK_OF_PRODUCT]->(p:MangaProduct {oid:111850511})-[:HAS_KEYWORD]->(k:TheOneKeyword) WHERE toInteger(p.`props.serviceRating`[0]) < 17 AND toInteger(p.`props.productType`[0]) = 0 AND (p.`props.onStatus`[0] = 'true' OR p.`props.firstBookId`[0] = '' ) AND p.`props.periodic`[0] = 'false' // 주의 출판만화인(periodic = fase)만 노출하도록... AND b.`props.onStatus`[0] = 'true' AND b.`props.display`[0] = 'true' AND datetime(b.`props.permitStartDateTime`[0]) < datetime() AND datetime() < datetime(b.`props.permitEndDateTime`[0]) WITH p AS product, toBoolean(p.`props.periodic`[0]) AS periodic, p.`props.lastVolume`[0] AS lastVolume ORDER BY periodic, lastVolume DESC LIMIT 1 // 2번 단락 - 작가의 다른작품 가져오기 (9권씩 pagination), 작품의 1권 책도 함께(firstBook) MATCH (product)-[:AUTHOR_IS]->(author:MangaAuthor)<-[:AUTHOR_IS]-(relatedProduct:MangaProduct)<-[:IS_A_BOOK_OF_PRODUCT]-(firstBook:MangaBook) WHERE product <> relatedProduct AND toInteger(firstBook.`props.volume`[0]) = 0 WITH relatedProduct, firstBook, toInteger(relatedProduct.`props.reviewCount`[0]) AS reviewCount ORDER BY reviewCount DESC SKIP 0 LIMIT 9 CALL apoc.create.vNode(['MangaProduct', 'TheOne'],{ name:relatedProduct.name, id:relatedProduct.oid, reviewCount:relatedProduct.reviewCount, firstBook:firstBook.oid }) yield node AS result RETURN result
+```
 
 
 
@@ -23,6 +25,6 @@ MATCH (product:MangaProduct {oid:111850511})-[:AUTHOR_IS]->(author:MangaAuthor)<
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQyNTAyMDgzLC0xMTA1MDI4Nzg4LDczNz
-Y0ODc1Ml19
+eyJoaXN0b3J5IjpbLTE4Mzk0Njg0NzEsLTExMDUwMjg3ODgsNz
+M3NjQ4NzUyXX0=
 -->
