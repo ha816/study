@@ -19,7 +19,9 @@ MATCH (product:MangaProduct {oid:111850511})-[:AUTHOR_IS]->(author:MangaAuthor)<
 
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM3NjQ4NzUyXX0=
+eyJoaXN0b3J5IjpbLTExMDUwMjg3ODgsNzM3NjQ4NzUyXX0=
 -->
