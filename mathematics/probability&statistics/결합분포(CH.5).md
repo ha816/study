@@ -10,7 +10,8 @@
 
 # 결합 분포
 
-지금까지는 확률변수를 하나만 생각했다. 그럼 2개 혹은 그 이상일때에는 어떻게 될까?  
+지금까지는 확률변수를 하나만 생각했다. 그럼 2개 혹은 그 이상일때에는 어떻게 될까?
+확률변수 X, Y와 이에 대응하는 확률밀도함수가 $f(X),Y)$가 주어질때
 
 그렇다면 중간고사점수와 기말고사점수 2개를 모두다 고려한 확률밀도함수는
 
@@ -31,6 +32,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2ODAzNzY1MSwtMTc0ODg0MDkyMiwxNj
+eyJoaXN0b3J5IjpbMTI2NzMyMDEzMCwtMTc0ODg0MDkyMiwxNj
 A1MDA0NDY2XX0=
 -->
