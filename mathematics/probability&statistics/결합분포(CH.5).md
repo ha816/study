@@ -14,7 +14,6 @@
 
   
 
-예를들어 중간고사 점수의 확률변수를 X라 하고 기말고사 점수의 확률변수를 Y라 했을때
 
   
 
@@ -45,5 +44,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDg4NDA5MjIsMTYwNTAwNDQ2Nl19
+eyJoaXN0b3J5IjpbMjMzMjgwMjY0LC0xNzQ4ODQwOTIyLDE2MD
+UwMDQ0NjZdfQ==
 -->
