@@ -10,20 +10,7 @@
 
 # 결합 분포
 
-지금까지는 확률변수를 하나만 생각했다. 그럼 2개 혹은 그 이상일때에는 어떻게 될까?
-
-  
-
-
-  
-
-**중간고사 점수에 관한 확률밀도함수 f(X), 기말고사 점수에 관한 확률밀도함수 f(Y)**가 존재한다.
-
-(probability density function 연속형일경우 확률밀도함수, 이산형일경우 확률질량함수 probability mass function)
-
-  
-
-  
+지금까지는 확률변수를 하나만 생각했다. 그럼 2개 혹은 그 이상일때에는 어떻게 될까?  
 
 그렇다면 중간고사점수와 기말고사점수 2개를 모두다 고려한 확률밀도함수는
 
@@ -44,6 +31,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMzMjgwMjY0LC0xNzQ4ODQwOTIyLDE2MD
-UwMDQ0NjZdfQ==
+eyJoaXN0b3J5IjpbLTY2ODAzNzY1MSwtMTc0ODg0MDkyMiwxNj
+A1MDA0NDY2XX0=
 -->
