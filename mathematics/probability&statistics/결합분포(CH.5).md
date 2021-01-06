@@ -8,7 +8,7 @@
 
 그러면 우리는 왜 세 가지 요소들이 필요하고 어떻게 이용될까? 확률 함수는 확률 변수가 일어날 확률을 나타내는 함수이므로, 우리가 특정 확률 변수의 확률 함수를 알고 있다면, 특정 사건이 일어날 확률을 계산 할 수 있다. 
 
-# 결합 분포
+# 결합 확률밀도함수분포
 
 지금까지는 확률변수를 하나만 생각했다. 그럼 2개 혹은 그 이상일때에는 어떻게 될까?
 확률변수 X, Y와 이에 대응하는 확률밀도함수가 $f(X), f(Y)$가 주어질때, 두 변수를 모두 고려한 확률밀도함수는 **f(X,Y)**로 표현할 수 있다. 그리고 이것이 **결합확률밀도함수(joint probability density function)** 이다. 
@@ -27,6 +27,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3MzkxNTgwLC0xNzQ4ODQwOTIyLDE2MD
-UwMDQ0NjZdfQ==
+eyJoaXN0b3J5IjpbLTEyMzE5MzcwMjksNjU3MzkxNTgwLC0xNz
+Q4ODQwOTIyLDE2MDUwMDQ0NjZdfQ==
 -->
