@@ -8,25 +8,21 @@
 
 그러면 우리는 왜 세 가지 요소들이 필요하고 어떻게 이용될까? 확률 함수는 확률 변수가 일어날 확률을 나타내는 함수이므로, 우리가 특정 확률 변수의 확률 함수를 알고 있다면, 특정 사건이 일어날 확률을 계산 할 수 있다. 
 
-# 결합 확률밀도함수분포
+# 결합 확률밀도함수
 
 지금까지는 확률변수를 하나만 생각했다. 그럼 2개 혹은 그 이상일때에는 어떻게 될까?
 확률변수 X, Y와 이에 대응하는 확률밀도함수가 $f(X), f(Y)$가 주어질때, 두 변수를 모두 고려한 확률밀도함수는 **f(X,Y)**로 표현할 수 있다. 그리고 이것이 **결합확률밀도함수(joint probability density function)** 이다. 
   
+다음과 같이 정의된 ![](https://t1.daumcdn.net/cfile/tistory/254CC74B58BBB47B34) 를 두 확률변수 X,Y 의  **결합확률밀도함수(joint density function)**라 한다.
 
-변수가 1개 있을 경우 2차원 그래프에 확률밀도함수를 그릴 수 있지만
+  
 
-변수가 2개 있다면 X축을 중간고사점수, Y축을 기말고사점수로 한 다음 Z 축을 확률값으로 하여 3차원 그래프로 나타낼 수 있을 것이다.
+(1) 이산형: ![](https://t1.daumcdn.net/cfile/tistory/276F413758BBB58F12)
 
-물론 2차원그래프의 아래 면적, 3차원그래프의 아래 부피는 확률밀도함수의 정의에 의해 모두 1이다.
-
-
-## 결합 확률밀도함수
-
-
+(2) 연속형: ![](https://t1.daumcdn.net/cfile/tistory/23494D3B58BBBFB71D)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzE5MzcwMjksNjU3MzkxNTgwLC0xNz
-Q4ODQwOTIyLDE2MDUwMDQ0NjZdfQ==
+eyJoaXN0b3J5IjpbODYxMjQ0Mzc1LDY1NzM5MTU4MCwtMTc0OD
+g0MDkyMiwxNjA1MDA0NDY2XX0=
 -->
