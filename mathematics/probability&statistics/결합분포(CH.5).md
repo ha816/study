@@ -11,12 +11,7 @@
 # 결합 분포
 
 지금까지는 확률변수를 하나만 생각했다. 그럼 2개 혹은 그 이상일때에는 어떻게 될까?
-확률변수 X, Y와 이에 대응하는 확률밀도함수가 $f(X),Y)$가 주어질때
-
-그렇다면 중간고사점수와 기말고사점수 2개를 모두다 고려한 확률밀도함수는
-
-**f(X,Y)**로 표현할 수 있을 것이고 이를  **결합확률밀도함수(joint probability density function)** 라 한다.
-
+확률변수 X, Y와 이에 대응하는 확률밀도함수가 $f(X), f(Y)$가 주어질때, 두 변수를 모두 고려한 확률밀도함수는 **f(X,Y)**로 표현할 수 있다. 그리고 이것이 **결합확률밀도함수(joint probability density function)** 이다. 
   
 
 변수가 1개 있을 경우 2차원 그래프에 확률밀도함수를 그릴 수 있지만
@@ -32,6 +27,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NzMyMDEzMCwtMTc0ODg0MDkyMiwxNj
-A1MDA0NDY2XX0=
+eyJoaXN0b3J5IjpbNjU3MzkxNTgwLC0xNzQ4ODQwOTIyLDE2MD
+UwMDQ0NjZdfQ==
 -->
