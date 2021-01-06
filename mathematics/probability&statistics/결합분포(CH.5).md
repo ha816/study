@@ -21,8 +21,31 @@
 
 (2) 연속형: ![](https://t1.daumcdn.net/cfile/tistory/23494D3B58BBBFB71D)
 
-> Written with [StackEdit](https://stackedit.io/).
+
+
+**합누적분포함수(joint cumulative distribution function)**는 자연스럽게 다음과 같다.
+
+![](https://t1.daumcdn.net/cfile/tistory/222D243C58BBB78407)
+
+  
+
+그렇다면 여기서 몇가지 정리될 수 있는 사실을 나열해 보면  
+
+  
+
+(1) 이산형:
+
+![](https://t1.daumcdn.net/cfile/tistory/2749323458BBBFC92B)
+
+  
+
+(2) 연속형:
+
+![](https://t1.daumcdn.net/cfile/tistory/2678D13458BBB8EC30)
+
+
+https://destrudo.tistory.com/13
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxMjQ0Mzc1LDY1NzM5MTU4MCwtMTc0OD
-g0MDkyMiwxNjA1MDA0NDY2XX0=
+eyJoaXN0b3J5IjpbLTc3OTgwNjA4Myw2NTczOTE1ODAsLTE3ND
+g4NDA5MjIsMTYwNTAwNDQ2Nl19
 -->
