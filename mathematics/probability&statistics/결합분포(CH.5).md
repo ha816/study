@@ -34,7 +34,8 @@
 ## 결합확률질량함수의 성질
 
 * $f(x,y) \ge 0$
-* $f(x,y) \ge 0$
+* $\sum_{i=1}^
+*  {}$
 * * $f(x,y) \ge 0$
 
 
@@ -54,6 +55,6 @@
 
 https://destrudo.tistory.com/13
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk5MjE1MzI5LC03Nzk4MDYwODMsNjU3Mz
-kxNTgwLC0xNzQ4ODQwOTIyLDE2MDUwMDQ0NjZdfQ==
+eyJoaXN0b3J5IjpbLTE1ODM1ODIwNTIsLTc3OTgwNjA4Myw2NT
+czOTE1ODAsLTE3NDg4NDA5MjIsMTYwNTAwNDQ2Nl19
 -->
