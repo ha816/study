@@ -34,9 +34,8 @@
 ## 결합확률질량함수의 성질
 
 * $f(x,y) \ge 0$
-* $\sum_{i=1}^
-*  {}$
-* * $f(x,y) \ge 0$
+* $\sum_{i}\sum_{j}f(x_i, y_j) = 1$
+* $P(x_1 <= X)$
 
 
 
@@ -55,6 +54,6 @@
 
 https://destrudo.tistory.com/13
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODM1ODIwNTIsLTc3OTgwNjA4Myw2NT
-czOTE1ODAsLTE3NDg4NDA5MjIsMTYwNTAwNDQ2Nl19
+eyJoaXN0b3J5IjpbLTIzNjU4MzYxOSwtNzc5ODA2MDgzLDY1Nz
+M5MTU4MCwtMTc0ODg0MDkyMiwxNjA1MDA0NDY2XX0=
 -->
