@@ -33,7 +33,7 @@
 
 ## 결합확률질량함수의 성질
 
-이산형의 두 확률변수가 주
+이산형의 두 확률변수가 주어졌을때 그 결합확률질량함수 f(x,y)는 아래 설징을 만족한다.
 
 $$f(x,y) \ge 0$$
 $$\sum_{i}\sum_{j}f(x_i, y_j) = 1$$
@@ -52,6 +52,6 @@ $$P(x_1 <= X <= x_m, y1_ <= Y <= y_n) = \sum_{i=1}^m\sum_{j=1}^nf(x_i, y_j)$$
 
 https://destrudo.tistory.com/13
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NTM3NDUwNiwtNzc5ODA2MDgzLDY1Nz
+eyJoaXN0b3J5IjpbLTgzNTUyMTI4NywtNzc5ODA2MDgzLDY1Nz
 M5MTU4MCwtMTc0ODg0MDkyMiwxNjA1MDA0NDY2XX0=
 -->
