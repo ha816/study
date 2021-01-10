@@ -35,7 +35,7 @@
 
 * $f(x,y) \ge 0$
 * $\sum_{i}\sum_{j}f(x_i, y_j) = 1$
-* $P(x_1 <= X)$
+* $P(x_1 <= X <= x_m, y1_ <= Y <= y_n) = \sum_{i=1}^m\sum_{j=1}^nf(x_i, y_j) = 1$
 
 
 
@@ -54,6 +54,6 @@
 
 https://destrudo.tistory.com/13
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNjU4MzYxOSwtNzc5ODA2MDgzLDY1Nz
+eyJoaXN0b3J5IjpbLTcyMDA3ODc5NiwtNzc5ODA2MDgzLDY1Nz
 M5MTU4MCwtMTc0ODg0MDkyMiwxNjA1MDA0NDY2XX0=
 -->
