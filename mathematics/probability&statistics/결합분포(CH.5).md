@@ -31,6 +31,14 @@
 
 그렇다면 여기서 몇가지 정리될 수 있는 사실을 나열해 보면  
 
+## 결합확률질량함수의 성질
+
+* $f(x,y) \ge 0$
+* $f(x,y) \ge 0$
+* * $f(x,y) \ge 0$
+
+
+
   
 
 (1) 이산형:
@@ -46,6 +54,6 @@
 
 https://destrudo.tistory.com/13
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3OTgwNjA4Myw2NTczOTE1ODAsLTE3ND
-g4NDA5MjIsMTYwNTAwNDQ2Nl19
+eyJoaXN0b3J5IjpbOTk5MjE1MzI5LC03Nzk4MDYwODMsNjU3Mz
+kxNTgwLC0xNzQ4ODQwOTIyLDE2MDUwMDQ0NjZdfQ==
 -->
