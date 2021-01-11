@@ -39,13 +39,13 @@ ElasticSearch는 준실시간성 검색 엔진이다. 준실시간성 검색 엔
 
 Node2로 요청을 보내고 부하가 크면 Node3로 요청을 보낼 수도 있다. 
 
-스키마리스는 문서를 입력하기도 전에 문서에 어떤 필드를 저장할 것인지 사전에 정의하지 않아도 된다는 의미이다. 
+스키마리스는 문서를 입력하기도 전에 문서에 어떤 필드를 저장할 것인지 사전에 정의하지 않아도 된다는 의미이다. RDBMS와는 다르게 ElasticSearch를 미리 문서를 정의하지 않아도 된다. 또한 이미 입력된 정보와 최근에 입력한 정보사이에 필드가 추가되는 것과 같은 변경점에도
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTk1Nzk3MiwtMTY5NjQ0MDQ4LDI2ND
+eyJoaXN0b3J5IjpbLTk1NDQyNzM3OSwtMTY5NjQ0MDQ4LDI2ND
 MxMjI1MiwyMDU3Njg3NDAyXX0=
 -->
