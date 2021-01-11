@@ -25,15 +25,18 @@ ElasticSearch는 루씬 기반의 오프 소스 검색 엔진이다. JSON 기반
 | 스키마리스 | 입력될 데이터에 대해 미리 스키마를 정의하지 않아도 동적으로 스키마 생성이 가능|
 | Rest API| Rest API 기반의 쉬운 인터페이스로 비교적 진입장벽이 낮음|
 
-ElasticSearch는 준실시간성 검색 엔진이다. 준실시간성 검색 엔진이란 실시간에 준하는 검색을 제공한다는 의미이다. 
+ElasticSearch는 준실시간성 검색 엔진이다. 준실시간성 검색 엔진이란 실시간에 준하는 검색을 제공한다는 의미이다. JSON 문서가 입력되면 우선 ElasticSearch의 메모리에 저장되고 후에 샤드라는 데이터 저장공간에 저장되고 문서를 검색할 수 있게 된다.
 
 준실시간성은 refresh_interval이라는 파라미터의 영향을 받는다. 해당 파라미터를 조절하면 특정 시간 이후에 검색할 수 있게 변경할 수 있다. 
 
+클러스터란 여러 대의 컴퓨터 혹은 구성 요소들을 논리적으로 결합하여 전체리르 하나의 커뮤터 혹은 하나의 구성요소처럼 사용할 수 있게 해주는 기술이다. 
+
+클러스터로 구성하면 높은 수
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjA3MTIxMywyMDU3Njg3NDAyXX0=
+eyJoaXN0b3J5IjpbLTE3ODgxMjg4NDksMjA1NzY4NzQwMl19
 -->
