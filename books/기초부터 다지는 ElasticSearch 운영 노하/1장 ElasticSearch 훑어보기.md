@@ -58,7 +58,11 @@ RPM으로 설치한다면 rpm 명령 한줄로 ElasticSearch 설치 작업이 �
 |/var/lib/elasticsearch  |디폴트로 설정되는 힙 덤프 생성 디렉터리이다. ElasticSearch 프로세스가 비정상적으로 종료되거나 힙 덤프 생성을 요청했을때 이 디렉터리에 생성된다.|
 |/var/run/elasticsearch  | 디폴트로 설정되는 프로세스 ID 저장 디렉터리이다. ElasticSearch 프로세스가 실행된 이후에 해당 프로세스의 ID가 elasticsearch.pid라는 파일로 저장된다.|
 
-환경에 대한 자세한 내용은 4장에서 다룬다. 자 이제 ElasticSearch 프로세스를 실행ㅎ
+환경에 대한 자세한 내용은 4장에서 다룬다. 자 이제 ElasticSearch 프로세스를 실행시켜보자. 
+```
+sudo systemctl start elasticsearch //실행
+sudo systemctl status // 상태확인
+```
 
 
 
@@ -72,7 +76,7 @@ RPM으로 설치한다면 rpm 명령 한줄로 ElasticSearch 설치 작업이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjQ1Mjk5MjQsLTE3NjkzMTY1ODAsLT
+eyJoaXN0b3J5IjpbLTE2NzEwMjQ0MzAsLTE3NjkzMTY1ODAsLT
 c1MzQzNTE0NCwxMDM4MjQ1OTI1LDU3NzI1NDA3LC0yNzI4OTgw
 ODcsLTE2OTY0NDA0OCwyNjQzMTIyNTIsMjA1NzY4NzQwMl19
 -->
