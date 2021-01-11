@@ -45,13 +45,16 @@ ElasticSearch는 검색 엔진으로서 기능뿐만 아니라 입력된 문서�
 
 ## 설치하기
 
-ElasticSearch는 다양한 방법으로 설치할 수 있다. 
+ElasticSearch는 다양한 방법으로 설치할 수 있다. RPM은 리눅스에서 제공하는 레드햇 기반의 패키지 설치매니저이다. 간단하게 설치가 가능하고 ElasticSearch 실행과 중지를 위한 스크립트도 만들어 주기 때문에 편리하다. 
+
+설치 환경은 CeonOS7 이다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc3MjU0MDcsLTI3Mjg5ODA4NywtMTY5Nj
-Q0MDQ4LDI2NDMxMjI1MiwyMDU3Njg3NDAyXX0=
+eyJoaXN0b3J5IjpbMTAzODI0NTkyNSw1NzcyNTQwNywtMjcyOD
+k4MDg3LC0xNjk2NDQwNDgsMjY0MzEyMjUyLDIwNTc2ODc0MDJd
+fQ==
 -->
