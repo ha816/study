@@ -27,14 +27,17 @@ curl -X PUT "localhost:9200/user/_doc/1?pretty" -H 'Content-Type: application/js
 		"failed" : 0
 	},
 	"_seq_no" : 0,
-	"_pr" : 1
+	"_primary_term" : 1
 }
-
 ```
+
+위 curl을 딱 한줄의 명령이지만, ES 내부적으로는 인덱스를 생성하고 문서를 색인하고 문서와 관련된 스키마를 만드는 등 많은 작업을 한다. 좀 더 자세히 알아보자. 
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTQ5NjYyNDEsLTExMDEzMTc4NDUsMT
-kxNDAxMjcxNV19
+eyJoaXN0b3J5IjpbODc1OTE2MjUxLC0xMTAxMzE3ODQ1LDE5MT
+QwMTI3MTVdfQ==
 -->
