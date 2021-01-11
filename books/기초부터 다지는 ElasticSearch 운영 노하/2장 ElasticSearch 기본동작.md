@@ -13,11 +13,21 @@ ElasticSearch는 JSON형태의 문서를 저장할 수 있으며 스키마리스
 ```
 curl -X PUT "localhost:9200/user/_doc/1?pretty" -H 'Content-Type: application/json' -d
 {
+	"username" : "alden.kang"
+}
+{
 	"_index" : "user",
 	"_type" : "_doc",
 	"_id" : "1",
 	"_version" : 1,
-	"_version" : 1,
+	"result" : "created",
+	"_shards" : {
+		"total" : 2,
+		"successful" : 1,
+		"failed" : 0
+	},
+	"_seq_no" : 0,
+	"_pr" : 1
 }
 
 ```
@@ -25,6 +35,6 @@ curl -X PUT "localhost:9200/user/_doc/1?pretty" -H 'Content-Type: application/js
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NTI2ODM1LC0xMTAxMzE3ODQ1LDE5MT
-QwMTI3MTVdfQ==
+eyJoaXN0b3J5IjpbLTE2NTQ5NjYyNDEsLTExMDEzMTc4NDUsMT
+kxNDAxMjcxNV19
 -->
