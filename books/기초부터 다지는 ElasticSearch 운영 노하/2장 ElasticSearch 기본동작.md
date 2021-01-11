@@ -10,11 +10,14 @@
 
 ElasticSearch는 JSON형태의 문서를 저장할 수 있으며 스키마리스이기 때문에 문서를 색인하기 위해 정형화된 문서의 스키마를 미리 정의할 필요가 없다. 
 
+```
+curl -X PUT "localhost:9200/user/_doc/1?pretty" -H 'Content-Type: application/json' 
 
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTEzNDI1MiwtMTEwMTMxNzg0NSwxOT
-E0MDEyNzE1XX0=
+eyJoaXN0b3J5IjpbLTc4ODc4NTQ3LC0xMTAxMzE3ODQ1LDE5MT
+QwMTI3MTVdfQ==
 -->
