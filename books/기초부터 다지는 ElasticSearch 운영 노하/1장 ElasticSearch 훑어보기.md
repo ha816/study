@@ -16,11 +16,16 @@ ElasticSearch 클러스터를 구축하고 운영하고자 하는 개발자, 데
 
 ## ElasticSearch란?
 
+ElasticSearch는 루씬 기반의 오프 소스 검색 엔진이다. JSON 기반의 문서를 저장하고 검색할 수 있으며, 문서들의 데이터를 기반으로 분석작업도 가능하다.
+
+| 항목 |특징|
+|--|--|
+| 준실시간 검색엔진 | 실시간이라고 할만큼 색인된 데이터가 빠르게 검색됨 |
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NzY4NzQwMl19
+eyJoaXN0b3J5IjpbMTMyMDg1NzkxLDIwNTc2ODc0MDJdfQ==
 -->
