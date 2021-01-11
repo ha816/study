@@ -6,10 +6,10 @@
 * 인덱스를 생성하고 삭제하는 법
 * 문서를 검색하고 문서의 내용을 분석하는 법
 
-
+# 문서 색인과 조회
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNDAxMjcxNV19
+eyJoaXN0b3J5IjpbLTExMDEzMTc4NDUsMTkxNDAxMjcxNV19
 -->
