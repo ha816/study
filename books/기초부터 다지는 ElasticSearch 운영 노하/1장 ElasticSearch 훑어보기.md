@@ -25,7 +25,7 @@ ElasticSearch는 루씬 기반의 오프 소스 검색 엔진이다. JSON 기반
 | 스키마리스 | 입력될 데이터에 대해 미리 스키마를 정의하지 않아도 동적으로 스키마 생성이 가능|
 | Rest API| Rest API 기반의 쉬운 인터페이스로 비교적 진입장벽이 낮음|
 
-
+ElasticSearch는 준실시간성 검색 엔진이다. 준실시간성 검색 엔진이란 실시간에 준하는 검색을 제공한ㄷ
 
 
 
@@ -33,5 +33,5 @@ ElasticSearch는 루씬 기반의 오프 소스 검색 엔진이다. JSON 기반
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzk1MjI0MzAsMjA1NzY4NzQwMl19
+eyJoaXN0b3J5IjpbLTQzMjEwNjMyNiwyMDU3Njg3NDAyXX0=
 -->
