@@ -64,6 +64,7 @@ sudo systemctl start elasticsearch //실행
 sudo systemctl status // 상태확인
 ```
 
+systemctl status 명령으로 프로세스 실행 여부를 확인했다면 curl 명령어로 잘 동작하는지 확인할 수 있다. 기본적으로 ElasticSearch는 9200번 포트로 실행된다. 
 
 
 
@@ -76,7 +77,8 @@ sudo systemctl status // 상태확인
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzEwMjQ0MzAsLTE3NjkzMTY1ODAsLT
-c1MzQzNTE0NCwxMDM4MjQ1OTI1LDU3NzI1NDA3LC0yNzI4OTgw
-ODcsLTE2OTY0NDA0OCwyNjQzMTIyNTIsMjA1NzY4NzQwMl19
+eyJoaXN0b3J5IjpbLTkyMTk0Nzc0OSwtMTY3MTAyNDQzMCwtMT
+c2OTMxNjU4MCwtNzUzNDM1MTQ0LDEwMzgyNDU5MjUsNTc3MjU0
+MDcsLTI3Mjg5ODA4NywtMTY5NjQ0MDQ4LDI2NDMxMjI1MiwyMD
+U3Njg3NDAyXX0=
 -->
