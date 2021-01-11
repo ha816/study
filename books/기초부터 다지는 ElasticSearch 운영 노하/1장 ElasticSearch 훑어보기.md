@@ -21,11 +21,17 @@ ElasticSearch는 루씬 기반의 오프 소스 검색 엔진이다. JSON 기반
 | 항목 |특징|
 |--|--|
 | 준실시간 검색엔진 | 실시간이라고 할만큼 색인된 데이터가 빠르게 검색됨 |
+| 클러스터구성| 한 대 이상의 노드를 클러스터로 구성하여 높은 수준의 안정성을 이루고 부하를 분산할 수 있음|
+| 스키마리스 | 입력될 데이터에 대해 미리 스키마를 정의하지 않아도 동적으로 스키마 생성이 가능|
+| Rest API| Rest API 기반의 쉬운 인터페이스로 비교적 진입장벽이 낮음|
+
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMDg1NzkxLDIwNTc2ODc0MDJdfQ==
+eyJoaXN0b3J5IjpbLTEyNzk1MjI0MzAsMjA1NzY4NzQwMl19
 -->
