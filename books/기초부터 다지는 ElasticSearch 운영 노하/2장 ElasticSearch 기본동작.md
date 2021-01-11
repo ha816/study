@@ -36,13 +36,16 @@ curl -X PUT "localhost:9200/user/_doc/1?pretty" -H 'Content-Type: application/js
 ```PUT "localhost:9200/user/_doc/1?pretty"```
 
 PUT은 REST API의 메서드를 나타낸다. 
-/user는 문서를 색인할 인덱스의 이름이다. 인덱스
+/user는 문서를 색인할 인덱스의 이름이다. 인덱스는 문서를 저장하는 가장 큰 논리적 단위를 의미하며, 같은 성격의 문서들을 하나의 인덱스에 저장하게 된다. 
+
+_doc은 문서 타입의 이름이다. ElasticSearch 5이하에서는 멀티타입을 지원하여 하나의 엔덱스 안에 다양한 타입의 데이터를 저장할 수 있었지만 ElasitcSearch 6이상에서는 인덱스에 하나의 타입만 저장할 수 있게 변경됭
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgyMjk5MDMsMTE3MDM0OTMxNCw4NzU5MT
-YyNTEsLTExMDEzMTc4NDUsMTkxNDAxMjcxNV19
+eyJoaXN0b3J5IjpbMTU4MzkwNjg4NSwxMTcwMzQ5MzE0LDg3NT
+kxNjI1MSwtMTEwMTMxNzg0NSwxOTE0MDEyNzE1XX0=
 -->
