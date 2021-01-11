@@ -36,12 +36,13 @@ curl -X PUT "localhost:9200/user/_doc/1?pretty" -H 'Content-Type: application/js
 ```PUT "localhost:9200/user/_doc/1?pretty"```
 
 PUT은 REST API의 메서드를 나타낸다. 
+/user는 문서를 색인할 인덱스의 이름이다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5Mjg5MDcyNCw4NzU5MTYyNTEsLTExMD
+eyJoaXN0b3J5IjpbMTE3MDM0OTMxNCw4NzU5MTYyNTEsLTExMD
 EzMTc4NDUsMTkxNDAxMjcxNV19
 -->
