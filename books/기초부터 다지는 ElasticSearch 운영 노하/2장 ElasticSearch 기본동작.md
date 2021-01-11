@@ -8,11 +8,13 @@
 
 # 문서 색인과 조회
 
-ElasticSearch는 JSON형태의 문서를 저장할 수 있으며 
+ElasticSearch는 JSON형태의 문서를 저장할 수 있으며 스키마리스이기 때문에 문서를 색인하기 위해 정형화된 문서의 스키마를 미리 정의할 필요가 없다. 
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDA3NzUyMjgsLTExMDEzMTc4NDUsMT
-kxNDAxMjcxNV19
+eyJoaXN0b3J5IjpbLTIwOTEzNDI1MiwtMTEwMTMxNzg0NSwxOT
+E0MDEyNzE1XX0=
 -->
