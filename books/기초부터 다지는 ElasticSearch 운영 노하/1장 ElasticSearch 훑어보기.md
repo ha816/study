@@ -62,9 +62,12 @@ RPM으로 설치한다면 rpm 명령 한줄로 ElasticSearch 설치 작업이 �
 ```
 sudo systemctl start elasticsearch //실행
 sudo systemctl status // 상태확인
+sudo systemctl start elasticsearch //중단
 ```
 
 systemctl status 명령으로 프로세스 실행 여부를 확인했다면 curl 명령어로 잘 동작하는지 확인할 수 있다. 기본적으로 ElasticSearch는 9200번 포트로 실행된다. 
+
+(https://eglowc.tistory.com/16)
 
 
 
@@ -77,8 +80,8 @@ systemctl status 명령으로 프로세스 실행 여부를 확인했다면 curl
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMTk0Nzc0OSwtMTY3MTAyNDQzMCwtMT
-c2OTMxNjU4MCwtNzUzNDM1MTQ0LDEwMzgyNDU5MjUsNTc3MjU0
-MDcsLTI3Mjg5ODA4NywtMTY5NjQ0MDQ4LDI2NDMxMjI1MiwyMD
-U3Njg3NDAyXX0=
+eyJoaXN0b3J5IjpbNzk1Mjc1OTYwLC05MjE5NDc3NDksLTE2Nz
+EwMjQ0MzAsLTE3NjkzMTY1ODAsLTc1MzQzNTE0NCwxMDM4MjQ1
+OTI1LDU3NzI1NDA3LC0yNzI4OTgwODcsLTE2OTY0NDA0OCwyNj
+QzMTIyNTIsMjA1NzY4NzQwMl19
 -->
