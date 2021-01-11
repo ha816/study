@@ -31,12 +31,12 @@ ElasticSearch는 준실시간성 검색 엔진이다. 준실시간성 검색 엔
 
 클러스터란 여러 대의 컴퓨터 혹은 구성 요소들을 논리적으로 결합하여 전체리르 하나의 커뮤터 혹은 하나의 구성요소처럼 사용할 수 있게 해주는 기술이다. 
 
-클러스터로 구성하면 높은 수
+클러스터로 구성하면 높은 수준의 안정성을 얻고 부하를 분산 시킬 수 있다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODgxMjg4NDksMjA1NzY4NzQwMl19
+eyJoaXN0b3J5IjpbMjY0MzEyMjUyLDIwNTc2ODc0MDJdfQ==
 -->
