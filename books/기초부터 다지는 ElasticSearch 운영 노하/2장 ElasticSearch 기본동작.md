@@ -43,7 +43,10 @@ _doc은 문서 타입의 이름이다. ElasticSearch 5이하에서는 멀티타�
 
 /1은 문서의 ID를 나타낸다. ID는 인덱스 내에서 유일한 값이며, 같은 ID가 입력되면 해당 문서를 수정한다고 인식한다. 
 
-즉 REST API느
+즉 REST API는 user 인덱스의 1번 _doc를 색인해 달라는 요청이다. 색인 과정을 좀 더 논리적으로 확인해보자. 
+
+
+
 
 
 
@@ -51,6 +54,6 @@ _doc은 문서 타입의 이름이다. ElasticSearch 5이하에서는 멀티타�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5NzkzMzM2LDExNzAzNDkzMTQsODc1OT
-E2MjUxLC0xMTAxMzE3ODQ1LDE5MTQwMTI3MTVdfQ==
+eyJoaXN0b3J5IjpbMTgyNTI1MjM1OCwxMTcwMzQ5MzE0LDg3NT
+kxNjI1MSwtMTEwMTMxNzg0NSwxOTE0MDEyNzE1XX0=
 -->
