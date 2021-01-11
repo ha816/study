@@ -50,6 +50,11 @@ ElasticSearch는 다양한 방법으로 설치할 수 있다. RPM(Redhat Package
 설치 환경은 CeonOS7 이다. CentOS 7이상은 systemd를 사용하기 때문에 ElasticSearch 프로세스를 띄우기 위한 스크립트 역시 systemd 스크립트로 제공된다.  
 RPM으로 설치한다면 rpm 명령 한줄로 ElasticSearch 설치 작업이 끝난다. 자동으로 설치되는 디렉터리들은 아래와 같다. 
 
+|항목| 내용|
+|--|--|
+|/etc/elasticsearch  | ElasticSearch의 환결설정과 관련된 파일들이 모여 있는 디렉터리. elasticsearch.yml과 jvm.options 파일등이 있다.|
+|/etc/elasticsearch  | ElasticSearch의 환결설정과 관련된 파일들이 모여 있는 디렉터리. elasticsearch.yml과 jvm.options 파일등이 있다.|
+
 
 
 
@@ -59,7 +64,7 @@ RPM으로 설치한다면 rpm 명령 한줄로 ElasticSearch 설치 작업이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjkzMTY1ODAsLTc1MzQzNTE0NCwxMD
-M4MjQ1OTI1LDU3NzI1NDA3LC0yNzI4OTgwODcsLTE2OTY0NDA0
-OCwyNjQzMTIyNTIsMjA1NzY4NzQwMl19
+eyJoaXN0b3J5IjpbLTIyMTYyNzMwNywtMTc2OTMxNjU4MCwtNz
+UzNDM1MTQ0LDEwMzgyNDU5MjUsNTc3MjU0MDcsLTI3Mjg5ODA4
+NywtMTY5NjQ0MDQ4LDI2NDMxMjI1MiwyMDU3Njg3NDAyXX0=
 -->
