@@ -53,7 +53,9 @@ RPM으로 설치한다면 rpm 명령 한줄로 ElasticSearch 설치 작업이 �
 |항목| 내용|
 |--|--|
 |/etc/elasticsearch  | ElasticSearch의 환결설정과 관련된 파일들이 모여 있는 디렉터리. elasticsearch.yml과 jvm.options 파일등이 있다.|
-|/usr/share/elasticsearch/bin  | ElasticSearch실행을 위한 바이너리 파일이 모여 있는 디렉터리이다. syste|
+|/usr/share/elasticsearch/bin  | ElasticSearch실행을 위한 바이너리 파일이 모여 있는 디렉터리이다. systemd에서 실행시키는 bin/elasticsearch와 플러그인 설치 시 사용하는 bin/elasticsearch-plugin등이 있다.|
+|/var/log/elasticsearch  | 디폴트로 설정되는 로그파일 저장 디렉터리. elasticsearch.yml 파일에 다른 디렉터리를 정한다면 이 디렉터리는 빈 디렉터리가 된다.|
+
 
 
 
@@ -64,7 +66,7 @@ RPM으로 설치한다면 rpm 명령 한줄로 ElasticSearch 설치 작업이 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTc2MzgyOTAsLTE3NjkzMTY1ODAsLT
-c1MzQzNTE0NCwxMDM4MjQ1OTI1LDU3NzI1NDA3LC0yNzI4OTgw
-ODcsLTE2OTY0NDA0OCwyNjQzMTIyNTIsMjA1NzY4NzQwMl19
+eyJoaXN0b3J5IjpbLTE5Nzk1NTczNSwtMTc2OTMxNjU4MCwtNz
+UzNDM1MTQ0LDEwMzgyNDU5MjUsNTc3MjU0MDcsLTI3Mjg5ODA4
+NywtMTY5NjQ0MDQ4LDI2NDMxMjI1MiwyMDU3Njg3NDAyXX0=
 -->
