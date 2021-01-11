@@ -70,18 +70,12 @@ systemctl status 명령으로 프로세스 실행 여부를 확인했다면 curl
 (https://eglowc.tistory.com/16)
 
 
-
-
-
-
-
-
-
+그 밖에 RPM이 아닌 DEB, tar 확장자의 elasticsearch 파일로 어떻게 설치하는지 알 수 있다. 다음 장에서는 ElasticSearch의 기본동작을 알아보자.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk1Mjc1OTYwLC05MjE5NDc3NDksLTE2Nz
-EwMjQ0MzAsLTE3NjkzMTY1ODAsLTc1MzQzNTE0NCwxMDM4MjQ1
-OTI1LDU3NzI1NDA3LC0yNzI4OTgwODcsLTE2OTY0NDA0OCwyNj
-QzMTIyNTIsMjA1NzY4NzQwMl19
+eyJoaXN0b3J5IjpbNjU0MTE2MjMsLTkyMTk0Nzc0OSwtMTY3MT
+AyNDQzMCwtMTc2OTMxNjU4MCwtNzUzNDM1MTQ0LDEwMzgyNDU5
+MjUsNTc3MjU0MDcsLTI3Mjg5ODA4NywtMTY5NjQ0MDQ4LDI2ND
+MxMjI1MiwyMDU3Njg3NDAyXX0=
 -->
