@@ -8,8 +8,11 @@
 
 # 문서 색인과 조회
 
+ElasticSearch는 JSON형태의 문서를 저장할 수 있으며 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDEzMTc4NDUsMTkxNDAxMjcxNV19
+eyJoaXN0b3J5IjpbLTEyMDA3NzUyMjgsLTExMDEzMTc4NDUsMT
+kxNDAxMjcxNV19
 -->
