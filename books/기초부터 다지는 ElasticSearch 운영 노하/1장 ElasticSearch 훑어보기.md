@@ -35,13 +35,13 @@ ElasticSearch는 준실시간성 검색 엔진이다. 준실시간성 검색 엔
 
 클러스터를 구성하는 모든 노드는 메시 형태로 요청을 주고 받는다. 이 때문에 어떤 노드에서도 색인/검색 작업을 처리할 수 있다. 
 
-메시 형태(mesh) - 모든 구성요소가 서로 논리적으로 연결되어 있어서 다른 노드들과 직접적으
+메시 형태(mesh) - 모든 구성요소가 서로 논리적으로 연결되어 있어서 다른 노드들과 직접적으로 통신할 수 있는 네트워크 형태를 말한다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ4MTk3NjI4LDI2NDMxMjI1MiwyMDU3Nj
-g3NDAyXX0=
+eyJoaXN0b3J5IjpbLTE2OTY0NDA0OCwyNjQzMTIyNTIsMjA1Nz
+Y4NzQwMl19
 -->
