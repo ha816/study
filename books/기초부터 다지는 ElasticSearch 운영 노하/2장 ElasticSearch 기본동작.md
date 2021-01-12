@@ -47,6 +47,10 @@ _doc은 문서 타입의 이름이다. ElasticSearch 5이하에서는 멀티타�
 
 ## 색인 과정 
 
+* 인덱스 존재 여부
+* 타입 존재 여부
+* 스키마 존재 여부
+* 문서의 존재 여부
 색인 요청이 들어오면 인덱스 여부를 확인한다. 인덱스가 존재하지 않는다면 해당 인덱스를 생성한다. 
 
 
@@ -57,7 +61,7 @@ _doc은 문서 타입의 이름이다. ElasticSearch 5이하에서는 멀티타�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNjUxMDI4NywxODI1MjUyMzU4LDExNz
-AzNDkzMTQsODc1OTE2MjUxLC0xMTAxMzE3ODQ1LDE5MTQwMTI3
-MTVdfQ==
+eyJoaXN0b3J5IjpbLTE5MjYwMDAyMjksMTgyNTI1MjM1OCwxMT
+cwMzQ5MzE0LDg3NTkxNjI1MSwtMTEwMTMxNzg0NSwxOTE0MDEy
+NzE1XX0=
 -->
