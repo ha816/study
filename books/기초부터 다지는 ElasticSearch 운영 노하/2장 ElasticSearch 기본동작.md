@@ -83,14 +83,26 @@ curl -X GET "localhost:9200/user/_doc/1?pretty"
 
 ## 문서 삭제
 
+```
+curl -X DELETE "localhost:9200/user/_doc/1?pretty"
+{
+	"_index" : "user", 
+	"_type" : "_doc", // 문서 타입
+	"_id" : "1", // 문서 Id
+	"_version" : 1,
+	"_seq_no" : 1,
+	...
+	"resul"
+}
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTYxNDkzNjUsMTgyMjI2NjQyMiwxND
-g4Mjk1MjI5LC0xOTI2MDAwMjI5LDE4MjUyNTIzNTgsMTE3MDM0
-OTMxNCw4NzU5MTYyNTEsLTExMDEzMTc4NDUsMTkxNDAxMjcxNV
-19
+eyJoaXN0b3J5IjpbLTY1MzgzMjA4MywxODIyMjY2NDIyLDE0OD
+gyOTUyMjksLTE5MjYwMDAyMjksMTgyNTI1MjM1OCwxMTcwMzQ5
+MzE0LDg3NTkxNjI1MSwtMTEwMTMxNzg0NSwxOTE0MDEyNzE1XX
+0=
 -->
