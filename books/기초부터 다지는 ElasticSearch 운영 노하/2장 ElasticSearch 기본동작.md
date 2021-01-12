@@ -92,16 +92,18 @@ curl -X DELETE "localhost:9200/user/_doc/1?pretty"
 	"_version" : 1,
 	"_seq_no" : 1,
 	...
-	"resul"
+	"result" : "deleted" // result에 정상적으로 삭제되었음이 출력된다.
 }
 ```
 
 
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MzgzMjA4MywxODIyMjY2NDIyLDE0OD
+eyJoaXN0b3J5IjpbLTk1MzE0ODQ5MCwxODIyMjY2NDIyLDE0OD
 gyOTUyMjksLTE5MjYwMDAyMjksMTgyNTI1MjM1OCwxMTcwMzQ5
 MzE0LDg3NTkxNjI1MSwtMTEwMTMxNzg0NSwxOTE0MDEyNzE1XX
 0=
