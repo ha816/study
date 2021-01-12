@@ -64,12 +64,27 @@ _doc은 문서 타입의 이름이다. ElasticSearch 5이하에서는 멀티타�
 
 ## 문서 조회
 
+```
+curl -X GET "localhost:9200/user/_doc/1?pretty"
+{
+	"_index" : "user",
+	"_type" : "_doc",
+	"_id" : "1",
+	"_version" : 1,
+	"_seq_no" : 0,
+	"_primary_term" : 1,
+	"found" : true,
+	"_source"
+}
+```
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4ODI5NTIyOSwtMTkyNjAwMDIyOSwxOD
-I1MjUyMzU4LDExNzAzNDkzMTQsODc1OTE2MjUxLC0xMTAxMzE3
-ODQ1LDE5MTQwMTI3MTVdfQ==
+eyJoaXN0b3J5IjpbLTQzOTY0NDA3NSwxNDg4Mjk1MjI5LC0xOT
+I2MDAwMjI5LDE4MjUyNTIzNTgsMTE3MDM0OTMxNCw4NzU5MTYy
+NTEsLTExMDEzMTc4NDUsMTkxNDAxMjcxNV19
 -->
