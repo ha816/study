@@ -81,6 +81,12 @@ curl -X GET "localhost:9200/user/_doc/1?pretty"
 
 조회시에는 해당 문서의 메타데이터가 함께 나오는데, 메타데이터에는 어떤 인덱스에 있는지, 어떤 타입인지, 그리고 문서 Id가 무엇인), 문서의 내용이 노출된다. 
 
+```
+curl -X GET "localhost:9200/books/_search?q=*&pretty"
+```
+q=*라는 파라미터에
+
+
 ## 문서 삭제
 
 ```
@@ -103,8 +109,8 @@ curl -X DELETE "localhost:9200/user/_doc/1?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MzE0ODQ5MCwxODIyMjY2NDIyLDE0OD
-gyOTUyMjksLTE5MjYwMDAyMjksMTgyNTI1MjM1OCwxMTcwMzQ5
-MzE0LDg3NTkxNjI1MSwtMTEwMTMxNzg0NSwxOTE0MDEyNzE1XX
-0=
+eyJoaXN0b3J5IjpbLTkxOTk5NjA3NSwtOTUzMTQ4NDkwLDE4Mj
+IyNjY0MjIsMTQ4ODI5NTIyOSwtMTkyNjAwMDIyOSwxODI1MjUy
+MzU4LDExNzAzNDkzMTQsODc1OTE2MjUxLC0xMTAxMzE3ODQ1LD
+E5MTQwMTI3MTVdfQ==
 -->
