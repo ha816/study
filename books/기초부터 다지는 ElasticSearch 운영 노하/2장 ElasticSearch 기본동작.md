@@ -45,6 +45,9 @@ _doc은 문서 타입의 이름이다. ElasticSearch 5이하에서는 멀티타�
 
 즉 REST API는 user 인덱스의 1번 _doc를 색인해 달라는 요청이다. 색인 과정을 좀 더 논리적으로 확인해보자. 
 
+## 색인 과정 
+
+색인 요ㅛ청
 
 
 
@@ -54,6 +57,7 @@ _doc은 문서 타입의 이름이다. ElasticSearch 5이하에서는 멀티타�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTI1MjM1OCwxMTcwMzQ5MzE0LDg3NT
-kxNjI1MSwtMTEwMTMxNzg0NSwxOTE0MDEyNzE1XX0=
+eyJoaXN0b3J5IjpbLTE2NzA1NjE4NDMsMTgyNTI1MjM1OCwxMT
+cwMzQ5MzE0LDg3NTkxNjI1MSwtMTEwMTMxNzg0NSwxOTE0MDEy
+NzE1XX0=
 -->
