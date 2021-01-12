@@ -74,9 +74,13 @@ curl -X GET "localhost:9200/user/_doc/1?pretty"
 	"_seq_no" : 0,
 	"_primary_term" : 1,
 	"found" : true,
-	"_source"
+	"_source" : {
+		"username" : "alden.kang"
+	}
 }
 ```
+
+조회시에는 해당 문서의 메타데이터가 함께 나오는데, 메타데이터에는 어떤 인덱스에 있는지,
 
 
 
@@ -84,7 +88,7 @@ curl -X GET "localhost:9200/user/_doc/1?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzOTY0NDA3NSwxNDg4Mjk1MjI5LC0xOT
+eyJoaXN0b3J5IjpbMTQ3Mjc2MzY2NCwxNDg4Mjk1MjI5LC0xOT
 I2MDAwMjI5LDE4MjUyNTIzNTgsMTE3MDM0OTMxNCw4NzU5MTYy
 NTEsLTExMDEzMTc4NDUsMTkxNDAxMjcxNV19
 -->
