@@ -131,7 +131,11 @@ curl -X DELETE "localhost:9200/user/_doc/1?pretty"
 }
 ```
 
-## 문서 붃
+## 문서 분석
+
+거
+
+
 
 
 
@@ -139,7 +143,7 @@ curl -X DELETE "localhost:9200/user/_doc/1?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NDQwOTg4NSwxMTQzMDI3NTQ0LDIwND
+eyJoaXN0b3J5IjpbMTYxODU0Mjg4OSwxMTQzMDI3NTQ0LDIwND
 cyNTAyMTksLTk1MzE0ODQ5MCwxODIyMjY2NDIyLDE0ODgyOTUy
 MjksLTE5MjYwMDAyMjksMTgyNTI1MjM1OCwxMTcwMzQ5MzE0LD
 g3NTkxNjI1MSwtMTEwMTMxNzg0NSwxOTE0MDEyNzE1XX0=
