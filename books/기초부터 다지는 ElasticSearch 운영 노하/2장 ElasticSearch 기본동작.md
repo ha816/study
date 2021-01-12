@@ -92,7 +92,13 @@ q=*라는 파라미터에서 q는 쿼리, '*'은 모든 단어를 의미한다.
 ```
 {
 	"took" : 27, 
-	
+	"timed_out" : false,
+	"_shards" : {
+		"total" : 5,
+		"successful" : 5,
+		
+
+	}
 
 }
 ```
@@ -121,8 +127,8 @@ curl -X DELETE "localhost:9200/user/_doc/1?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NzI1MDIxOSwtOTUzMTQ4NDkwLDE4Mj
-IyNjY0MjIsMTQ4ODI5NTIyOSwtMTkyNjAwMDIyOSwxODI1MjUy
-MzU4LDExNzAzNDkzMTQsODc1OTE2MjUxLC0xMTAxMzE3ODQ1LD
-E5MTQwMTI3MTVdfQ==
+eyJoaXN0b3J5IjpbMTE0MzAyNzU0NCwyMDQ3MjUwMjE5LC05NT
+MxNDg0OTAsMTgyMjI2NjQyMiwxNDg4Mjk1MjI5LC0xOTI2MDAw
+MjI5LDE4MjUyNTIzNTgsMTE3MDM0OTMxNCw4NzU5MTYyNTEsLT
+ExMDEzMTc4NDUsMTkxNDAxMjcxNV19
 -->
