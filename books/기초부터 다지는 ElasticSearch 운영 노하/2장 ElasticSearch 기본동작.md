@@ -63,7 +63,6 @@ _doc은 문서 타입의 이름이다. ElasticSearch 5이하에서는 멀티타�
 마지막으로 동일한 문서가 존재하는지 파악한다. 만약 동일한 ID가 존재하면 수정하고 아니라면 새로 생성한다. 
 
 ## 문서 조회
-
 ```
 curl -X GET "localhost:9200/user/_doc/1?pretty"
 {
@@ -82,6 +81,7 @@ curl -X GET "localhost:9200/user/_doc/1?pretty"
 
 조회시에는 해당 문서의 메타데이터가 함께 나오는데, 메타데이터에는 어떤 인덱스에 있는지, 어떤 타입인지, 그리고 문서 Id가 무엇인), 문서의 내용이 노출된다. 
 
+## 문서 삭제
 
 
 
@@ -89,7 +89,8 @@ curl -X GET "localhost:9200/user/_doc/1?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMjI2NjQyMiwxNDg4Mjk1MjI5LC0xOT
-I2MDAwMjI5LDE4MjUyNTIzNTgsMTE3MDM0OTMxNCw4NzU5MTYy
-NTEsLTExMDEzMTc4NDUsMTkxNDAxMjcxNV19
+eyJoaXN0b3J5IjpbLTE4MTYxNDkzNjUsMTgyMjI2NjQyMiwxND
+g4Mjk1MjI5LC0xOTI2MDAwMjI5LDE4MjUyNTIzNTgsMTE3MDM0
+OTMxNCw4NzU5MTYyNTEsLTExMDEzMTc4NDUsMTkxNDAxMjcxNV
+19
 -->
