@@ -90,9 +90,11 @@ curl -X GET "localhost:9200/books/_search?q=elasticsearch&pretty"
 q=*라는 파라미터에서 q는 쿼리, '*'은 모든 단어를 의미한다.  
 
 ```
-curl -X GET "localhost:9200/books/_search?q=*&pretty" // 풀스캔 쿼리
-curl -X GET "localhost:9200/books/_search?q=elasticsearch&pretty" 
-// 특정 문자(elasticsearch)가 포함된 문서검색
+{
+	"took" : 27, 
+	
+
+}
 ```
 
 
@@ -119,7 +121,7 @@ curl -X DELETE "localhost:9200/user/_doc/1?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5Mzc5NjgyNSwtOTUzMTQ4NDkwLDE4Mj
+eyJoaXN0b3J5IjpbMjA0NzI1MDIxOSwtOTUzMTQ4NDkwLDE4Mj
 IyNjY0MjIsMTQ4ODI5NTIyOSwtMTkyNjAwMDIyOSwxODI1MjUy
 MzU4LDExNzAzNDkzMTQsODc1OTE2MjUxLC0xMTAxMzE3ODQ1LD
 E5MTQwMTI3MTVdfQ==
