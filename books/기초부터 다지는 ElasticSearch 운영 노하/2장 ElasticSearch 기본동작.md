@@ -141,8 +141,11 @@ curl -X GET "localhost:9200/books/_search?pretty"
 {
 	"size" : 0,
 	"aggs" : {
-		"group_by_st"
-
+		"group_by_state" : {
+			"terms" : {
+				"field" : "topics.keyword"
+			}
+		}
 	}
 }
 ```
@@ -155,8 +158,8 @@ curl -X GET "localhost:9200/books/_search?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMDg1MDY1OSwxMTQzMDI3NTQ0LDIwND
-cyNTAyMTksLTk1MzE0ODQ5MCwxODIyMjY2NDIyLDE0ODgyOTUy
-MjksLTE5MjYwMDAyMjksMTgyNTI1MjM1OCwxMTcwMzQ5MzE0LD
-g3NTkxNjI1MSwtMTEwMTMxNzg0NSwxOTE0MDEyNzE1XX0=
+eyJoaXN0b3J5IjpbLTE2Nzc1NTA2MjMsMTE0MzAyNzU0NCwyMD
+Q3MjUwMjE5LC05NTMxNDg0OTAsMTgyMjI2NjQyMiwxNDg4Mjk1
+MjI5LC0xOTI2MDAwMjI5LDE4MjUyNTIzNTgsMTE3MDM0OTMxNC
+w4NzU5MTYyNTEsLTExMDEzMTc4NDUsMTkxNDAxMjcxNV19
 -->
