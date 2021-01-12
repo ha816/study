@@ -67,20 +67,21 @@ _doc은 문서 타입의 이름이다. ElasticSearch 5이하에서는 멀티타�
 ```
 curl -X GET "localhost:9200/user/_doc/1?pretty"
 {
-	"_index" : "user",
-	"_type" : "_doc",
-	"_id" : "1",
+	"_index" : "user", // 인덱스 종류
+	"_type" : "_doc", // 문서 타입
+	"_id" : "1", // 문서 Id
 	"_version" : 1,
 	"_seq_no" : 0,
 	"_primary_term" : 1,
 	"found" : true,
-	"_source" : {
+	"_source" : { // 문서 내용
 		"username" : "alden.kang"
 	}
 }
 ```
 
-조회시에는 해당 문서의 메타데이터가 함께 나오는데, 메타데이터에는 어떤 인덱스에 있는지,
+조회시에는 해당 문서의 메타데이터가 함께 나오는데, 메타데이터에는 어떤 인덱스에 있는지, 어떤 타입인지, 그리고 문서 Id가 무엇인), 문서의 내용이 노출된다. 
+
 
 
 
@@ -88,7 +89,7 @@ curl -X GET "localhost:9200/user/_doc/1?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3Mjc2MzY2NCwxNDg4Mjk1MjI5LC0xOT
+eyJoaXN0b3J5IjpbMTgyMjI2NjQyMiwxNDg4Mjk1MjI5LC0xOT
 I2MDAwMjI5LDE4MjUyNTIzNTgsMTE3MDM0OTMxNCw4NzU5MTYy
 NTEsLTExMDEzMTc4NDUsMTkxNDAxMjcxNV19
 -->
