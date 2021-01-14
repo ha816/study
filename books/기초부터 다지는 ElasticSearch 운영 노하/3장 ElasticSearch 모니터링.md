@@ -9,11 +9,17 @@ Head는 클러스터의 상태를 한누에 살펴볼 수 있는 유용한 모�
 git을 통해 소스 코드를 다운 받은 후 폴더를 열면 package.json 파일이 있다. 이 파일에는 npm(node package manager)이 Head를 설치하기 위해 필요한 패키지들이 나열되어 있다. 
 
 먼저 npm을 설치하는 명령어는 아래와 같다. 
+```
+yum -y install npm
+```
+
+npm 설치 후 package.json 파일을 참조하여 필요한 패키지들을 설치한다.
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0OTczNjUzMywtMTA3MjgzMjcxOCwtMj
-A1OTU5MTAzMCwtMTMxMDcwODk3Nyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNTI1ODk1MTg1LC0xMDcyODMyNzE4LC0yMD
+U5NTkxMDMwLC0xMzEwNzA4OTc3LDczMDk5ODExNl19
 -->
