@@ -40,9 +40,16 @@ http.cors.allow-origin: "*" // CORS 설정으로 접근할 있는 사이트를 �
 
 설정을 마치고 ES를 재시작하면 해당 ES 클러스터에 연결이 가능하다. 
 
+Head에서 제공하는 다양한 기능이 있지만 자세한것은 홈페이지에서 찾아보도록 하자.
+
+# 프로메테우스를 활용한 모니터링
+
+ES 6.3버전부터 X-Pack의 배이직 라이센스를 기본으로 탑재하여 라이선스를 규칙적으로 갱신하지 않아도 모니터링 기능을 사용할 수 있다. 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOT
-AzNTIwMjAsMTM4Njg4OTQ2NSwtMTA3MjgzMjcxOCwtMjA1OTU5
-MTAzMCwtMTMxMDcwODk3Nyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTY4NDI1OTMzLC03OTY1MTI1MDgsLTkxNT
+U1ODcxMywxMDkwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3
+MTgsLTIwNTk1OTEwMzAsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX
+0=
 -->
