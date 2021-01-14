@@ -15,11 +15,13 @@ yum -y install npm
 
 npm 설치 후 package.json 파일을 참조하여 필요한 패키지들을 설치한다.
 
-
+```
+npm install
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI1ODk1MTg1LC0xMDcyODMyNzE4LC0yMD
-U5NTkxMDMwLC0xMzEwNzA4OTc3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTM4Njg4OTQ2NSwtMTA3MjgzMjcxOCwtMj
+A1OTU5MTAzMCwtMTMxMDcwODk3Nyw3MzA5OTgxMTZdfQ==
 -->
