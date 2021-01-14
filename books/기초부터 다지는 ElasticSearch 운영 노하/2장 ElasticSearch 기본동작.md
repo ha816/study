@@ -151,6 +151,14 @@ curl -X GET "localhost:9200/books/_search?pretty"
 {
 	"took" : 1,
 	"timed_out" : false,
+	"_shards" : {
+		"total" : 5,
+		"successful" : 5,
+		...
+	},
+	"hits" : {
+
+	}
 }
 ```
 
@@ -162,9 +170,9 @@ curl -X GET "localhost:9200/books/_search?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3Mjc5NjgsLTE2Nzc1NTA2MjMsMTE0Mz
-AyNzU0NCwyMDQ3MjUwMjE5LC05NTMxNDg0OTAsMTgyMjI2NjQy
-MiwxNDg4Mjk1MjI5LC0xOTI2MDAwMjI5LDE4MjUyNTIzNTgsMT
-E3MDM0OTMxNCw4NzU5MTYyNTEsLTExMDEzMTc4NDUsMTkxNDAx
-MjcxNV19
+eyJoaXN0b3J5IjpbOTkxMzkxMTg4LC0xNjc3NTUwNjIzLDExND
+MwMjc1NDQsMjA0NzI1MDIxOSwtOTUzMTQ4NDkwLDE4MjIyNjY0
+MjIsMTQ4ODI5NTIyOSwtMTkyNjAwMDIyOSwxODI1MjUyMzU4LD
+ExNzAzNDkzMTQsODc1OTE2MjUxLC0xMTAxMzE3ODQ1LDE5MTQw
+MTI3MTVdfQ==
 -->
