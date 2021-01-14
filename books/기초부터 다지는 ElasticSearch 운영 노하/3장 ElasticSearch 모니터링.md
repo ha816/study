@@ -48,12 +48,14 @@ ES 6.3버전부터 X-Pack의 배이직 라이센스를 기본으로 탑재하여
 
 프로메테우스(Prometheus)는 데이터를 시간의 흐름대로 저장할 수 있는 **시계열 데이터 베이스의 일종**이다. 데이터 베이스의 일종이지만 더 나아가 수집된 데이터를 바탕으로 임계치를 설정하고 경고 메세지를 받을수 있는 오픈소스 모니터링 시스템으로도 활용이 가능하다. 
 
+![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/997CAA3F5A815A361C)
 
+프로메테우스는 각종 메트릭을 저장하는 TSDB(Time Series Data Base)의 역할을 하는 Prometheus Server가 중추적 역할을 한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMzM3MjA2MiwtNzk2NTEyNTA4LC05MT
-U1NTg3MTMsMTA5MDM1MjAyMCwxMzg2ODg5NDY1LC0xMDcyODMy
-NzE4LC0yMDU5NTkxMDMwLC0xMzEwNzA4OTc3LDczMDk5ODExNl
-19
+eyJoaXN0b3J5IjpbMTA0MTM3NzA1LC04MzMzNzIwNjIsLTc5Nj
+UxMjUwOCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAsMTM4Njg4OTQ2
+NSwtMTA3MjgzMjcxOCwtMjA1OTU5MTAzMCwtMTMxMDcwODk3Ny
+w3MzA5OTgxMTZdfQ==
 -->
