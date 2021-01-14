@@ -186,6 +186,8 @@ curl -X GET "localhost:9200/books/_search?pretty"
 ```
 위와 같은 결과가 나타난다. 사실 분석 작업은 위와 같은 쿼리를 직접 생성하기 보다는 Kibana 혹은 Grafana와 같은 시각화 툴을 사용한다. 이는 나중에 ElastStack을 활용 하면서 살펴볼 것이다. 
 
+로그를 수집한 후 로그의 총 개수를 세거나, 로그의 유형별 개수를 세는 작업등은 경우에 따라 많은 양의 힙 메모리를 필요로 하기도 하기 때문에 시각화 툴을 
+
 
 
 
@@ -193,9 +195,9 @@ curl -X GET "localhost:9200/books/_search?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTY2OTUwMDQsMTI0NzY3NDg3OSwtMT
-Y3NzU1MDYyMywxMTQzMDI3NTQ0LDIwNDcyNTAyMTksLTk1MzE0
-ODQ5MCwxODIyMjY2NDIyLDE0ODgyOTUyMjksLTE5MjYwMDAyMj
-ksMTgyNTI1MjM1OCwxMTcwMzQ5MzE0LDg3NTkxNjI1MSwtMTEw
-MTMxNzg0NSwxOTE0MDEyNzE1XX0=
+eyJoaXN0b3J5IjpbLTE0Mzg1Nzc2NDIsLTE2NTY2OTUwMDQsMT
+I0NzY3NDg3OSwtMTY3NzU1MDYyMywxMTQzMDI3NTQ0LDIwNDcy
+NTAyMTksLTk1MzE0ODQ5MCwxODIyMjY2NDIyLDE0ODgyOTUyMj
+ksLTE5MjYwMDAyMjksMTgyNTI1MjM1OCwxMTcwMzQ5MzE0LDg3
+NTkxNjI1MSwtMTEwMTMxNzg0NSwxOTE0MDEyNzE1XX0=
 -->
