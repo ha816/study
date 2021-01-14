@@ -50,12 +50,12 @@ ES 6.3버전부터 X-Pack의 배이직 라이센스를 기본으로 탑재하여
 
 ![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/997CAA3F5A815A361C)
 
-프로메테우스는 각종 메트릭을 저장하는 TSDB(Time Series Data Base)의 역할을 하는 Prometheus Server가 중추적 역할을 한다. 
+프로메테우스는 각종 메트릭을 저장하는 TSDB(Time Series Data Base)의 역할을 하는 Prometheus Server가 중추적 역할을 한다. 각종 지표들을 Exporters를 통해 가져올수도 있고 Pushgateway를 통해 입력할 수도 있다. 각 항목에 대해 임계치를
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MTM3NzA1LC04MzMzNzIwNjIsLTc5Nj
-UxMjUwOCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAsMTM4Njg4OTQ2
-NSwtMTA3MjgzMjcxOCwtMjA1OTU5MTAzMCwtMTMxMDcwODk3Ny
-w3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTI0ODg3ODAyOCwxMDQxMzc3MDUsLTgzMz
+M3MjA2MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMsMTA5MDM1MjAy
+MCwxMzg2ODg5NDY1LC0xMDcyODMyNzE4LC0yMDU5NTkxMDMwLC
+0xMzEwNzA4OTc3LDczMDk5ODExNl19
 -->
