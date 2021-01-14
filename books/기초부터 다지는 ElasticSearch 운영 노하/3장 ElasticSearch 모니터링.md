@@ -50,12 +50,16 @@ ES 6.3버전부터 X-Pack의 배이직 라이센스를 기본으로 탑재하여
 
 ![enter image description here](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https://t1.daumcdn.net/cfile/tistory/997CAA3F5A815A361C)
 
-프로메테우스는 각종 메트릭을 저장하는 TSDB(Time Series Data Base)의 역할을 하는 Prometheus Server가 중추적 역할을 한다. 각종 지표들을 Exporters를 통해 가져올수도 있고 Pushgateway를 통해 입력할 수도 있다. 각 항목에 대해 임계치를
+프로메테우스는 각종 메트릭을 저장하는 TSDB(Time Series Data Base)의 역할을 하는 Prometheus Server가 중추적 역할을 한다. 각종 지표들을 Exporters를 통해 가져올수도 있고 Pushgateway를 통해 입력할 수도 있다. 각 항목에 대해 임계치를 설정하여 AlertManager를 통해 경고 메세지를 받을 수도 있다.
+
+이번 장에서는 Prometheus Server와 Exporter를 설정해보고 데이터를 Grafana로 시각화하는 과정을 다룰것이다.
+
+사실 프로메테우스는 ES말고도 많은 시스템을 모니터링 할 수 있는 Exporer를 제공한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0ODg3ODAyOCwxMDQxMzc3MDUsLTgzMz
-M3MjA2MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMsMTA5MDM1MjAy
-MCwxMzg2ODg5NDY1LC0xMDcyODMyNzE4LC0yMDU5NTkxMDMwLC
-0xMzEwNzA4OTc3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNzM0MjUyMTg3LDEwNDEzNzcwNSwtODMzMz
+cyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMDkwMzUyMDIw
+LDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMzAsLT
+EzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
 -->
