@@ -169,13 +169,22 @@ curl -X GET "localhost:9200/books/_search?pretty"
 				{
 					"key" : "Web Servers",
 					"doc_count" : 3,
+					"average_reviews" : {
+						"value" : 8.60000
+					}
+				},
+				{
+					"key" : "hadoop"
+					"doc_count" : 2,
+					
 				}
+				...
 			]
 		}
 	}
 }
 ```
-
+위와 같은 결과가 나타난다. 사실 분석 작업은 위와 같은 쿼리를 직접 생성하기 보다
 
 
 
@@ -184,9 +193,9 @@ curl -X GET "localhost:9200/books/_search?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzc5MjkxMzksMTI0NzY3NDg3OSwtMT
-Y3NzU1MDYyMywxMTQzMDI3NTQ0LDIwNDcyNTAyMTksLTk1MzE0
-ODQ5MCwxODIyMjY2NDIyLDE0ODgyOTUyMjksLTE5MjYwMDAyMj
-ksMTgyNTI1MjM1OCwxMTcwMzQ5MzE0LDg3NTkxNjI1MSwtMTEw
-MTMxNzg0NSwxOTE0MDEyNzE1XX0=
+eyJoaXN0b3J5IjpbMTUwOTA4NDE1MiwxMjQ3Njc0ODc5LC0xNj
+c3NTUwNjIzLDExNDMwMjc1NDQsMjA0NzI1MDIxOSwtOTUzMTQ4
+NDkwLDE4MjIyNjY0MjIsMTQ4ODI5NTIyOSwtMTkyNjAwMDIyOS
+wxODI1MjUyMzU4LDExNzAzNDkzMTQsODc1OTE2MjUxLC0xMTAx
+MzE3ODQ1LDE5MTQwMTI3MTVdfQ==
 -->
