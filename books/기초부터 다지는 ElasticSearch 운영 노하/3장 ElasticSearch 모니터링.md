@@ -25,11 +25,11 @@ node의 버전에 따라 경고 메세지가 노출되지만 실행에는 큰 �
 npm run start
 ```
 
-Head를 실행하면 프로세스가 9100번을 통해 사
+Head를 실행하면 프로세스가 9100번을 통해 사용자의 접속을 처리할 수 있도록 대기 중 상태에 있다. 웹 브라우저를 통해 9100번 포트로 Head에 접속이 가능하다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NDE2NjczNSwxMzg2ODg5NDY1LC0xMD
+eyJoaXN0b3J5IjpbMTA5MDM1MjAyMCwxMzg2ODg5NDY1LC0xMD
 cyODMyNzE4LC0yMDU5NTkxMDMwLC0xMzEwNzA4OTc3LDczMDk5
 ODExNl19
 -->
