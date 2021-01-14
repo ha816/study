@@ -19,9 +19,17 @@ npm 설치 후 package.json 파일을 참조하여 필요한 패키지들을 설
 npm install
 ```
 
+node의 버전에 따라 경고 메세지가 노출되지만 실행에는 큰 영향이 없으니 무시해도 된다. 다음으로 npm을 실행해보자.
+
+```
+npm run start
+```
+
+Head를 실행하면 프로세스가 9100번을 통해 사
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4Njg4OTQ2NSwtMTA3MjgzMjcxOCwtMj
-A1OTU5MTAzMCwtMTMxMDcwODk3Nyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTM1NDE2NjczNSwxMzg2ODg5NDY1LC0xMD
+cyODMyNzE4LC0yMDU5NTkxMDMwLC0xMzEwNzA4OTc3LDczMDk5
+ODExNl19
 -->
