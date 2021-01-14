@@ -29,11 +29,16 @@ Head를 실행하면 프로세스가 9100번을 통해 사용자의 접속을 �
 
 웹 브라우저로 접속하면 먼저 overview 탭을 보여준다. 최상단에 실행중인 클러스터의 주소를 입력할 수 있는 영역이 있고, 여기에 클러스터 주소를 입력하면 된다. 
 
-Head를 통해 클러스터의 노드에 접근하려면 클러스터에서 접근 허용 설정 작업을 해주
+Head를 통해 클러스터의 노드에 접근하려면 클러스터에서 접근 허용 설정 작업을 해줘야 한다. 클러스터 노드에 있는 elasticsearch.yml 파일에 CORS 허용을 해주어야 한다. 
+
+```
+http.cors.enabled: true // CORS 설정 활성
+http.cors.allow-origin: "*" // CORS 설정으로 접근할 있는 사이트를 지정. * 모든 사이트에서 접근가능
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk5MDI0OTY5LDEwOTAzNTIwMjAsMTM4Nj
+eyJoaXN0b3J5IjpbLTk5MjgwMzQyLDEwOTAzNTIwMjAsMTM4Nj
 g4OTQ2NSwtMTA3MjgzMjcxOCwtMjA1OTU5MTAzMCwtMTMxMDcw
 ODk3Nyw3MzA5OTgxMTZdfQ==
 -->
