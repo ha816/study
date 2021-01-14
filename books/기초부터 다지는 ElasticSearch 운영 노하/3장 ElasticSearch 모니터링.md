@@ -31,16 +31,18 @@ Head를 실행하면 프로세스가 9100번을 통해 사용자의 접속을 �
 
 Head를 통해 클러스터의 노드에 접근하려면 클러스터에서 접근 허용 설정 작업을 해줘야 한다. 클러스터 노드에 있는 elasticsearch.yml 파일에 CORS 허용을 해주어야 한다. 
 
-CORS - Cross-Origin Resource Sharing의 약자로 웹 애플리케이션이 사용 중인 도메인이 아닌 외부 도메인에서의 리소스 호출 허용 여부를 결정하기 위해 사용되는 기술 중 하나이다. 
+CORS는 Cross-Origin Resource Sharing의 약자로 웹 애플리케이션이 사용 중인 도메인이 아닌 외부 도메인에서의 리소스 호출 허용 여부를 결정하기 위해 사용되는 기술 중 하나이다. 
 
 ```
 http.cors.enabled: true // CORS 설정 활성
 http.cors.allow-origin: "*" // CORS 설정으로 접근할 있는 사이트를 지정. "*"은 모든 사이트에서 접근가능.
 ```
 
+설정을 마치고 ES를 재시작하면 해당 ES 클러스터에 연결이 가능하다. 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNTU1ODcxMywxMDkwMzUyMDIwLDEzOD
-Y4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMzAsLTEzMTA3
-MDg5NzcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTc5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOT
+AzNTIwMjAsMTM4Njg4OTQ2NSwtMTA3MjgzMjcxOCwtMjA1OTU5
+MTAzMCwtMTMxMDcwODk3Nyw3MzA5OTgxMTZdfQ==
 -->
