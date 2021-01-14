@@ -162,7 +162,16 @@ curl -X GET "localhost:9200/books/_search?pretty"
 		"hits" : []
 	},
 	"aggregations" : {
-		
+		"group_by_state" : {
+			"doc_count_error_upper_bound" : 0,
+			"sum_other_doc_count" : 0, 
+			"buckets" : [
+				{
+					"key" : "Web Servers",
+					"doc_count" : 3,
+				}
+			]
+		}
 	}
 }
 ```
@@ -175,9 +184,9 @@ curl -X GET "localhost:9200/books/_search?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NzY3NDg3OSwtMTY3NzU1MDYyMywxMT
-QzMDI3NTQ0LDIwNDcyNTAyMTksLTk1MzE0ODQ5MCwxODIyMjY2
-NDIyLDE0ODgyOTUyMjksLTE5MjYwMDAyMjksMTgyNTI1MjM1OC
-wxMTcwMzQ5MzE0LDg3NTkxNjI1MSwtMTEwMTMxNzg0NSwxOTE0
-MDEyNzE1XX0=
+eyJoaXN0b3J5IjpbLTEwMzc5MjkxMzksMTI0NzY3NDg3OSwtMT
+Y3NzU1MDYyMywxMTQzMDI3NTQ0LDIwNDcyNTAyMTksLTk1MzE0
+ODQ5MCwxODIyMjY2NDIyLDE0ODgyOTUyMjksLTE5MjYwMDAyMj
+ksMTgyNTI1MjM1OCwxMTcwMzQ5MzE0LDg3NTkxNjI1MSwtMTEw
+MTMxNzg0NSwxOTE0MDEyNzE1XX0=
 -->
