@@ -27,9 +27,13 @@ npm run start
 
 Head를 실행하면 프로세스가 9100번을 통해 사용자의 접속을 처리할 수 있도록 대기 중 상태에 있다. 웹 브라우저를 통해 9100번 포트로 Head에 접속이 가능하다. 
 
+웹 브라우저로 접속하면 먼저 overview 탭을 보여준다. 최상단에 실행중인 클러스터의 주소를 입력할 수 있는 영역이 있고, 여기에 클러스터 주소를 입력하면 된다. 
+
+Head를 통해 클러스터의 노드에 접근하려면 클러스터에서 접근 허용 설정 작업을 해주
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MDM1MjAyMCwxMzg2ODg5NDY1LC0xMD
-cyODMyNzE4LC0yMDU5NTkxMDMwLC0xMzEwNzA4OTc3LDczMDk5
-ODExNl19
+eyJoaXN0b3J5IjpbMjk5MDI0OTY5LDEwOTAzNTIwMjAsMTM4Nj
+g4OTQ2NSwtMTA3MjgzMjcxOCwtMjA1OTU5MTAzMCwtMTMxMDcw
+ODk3Nyw3MzA5OTgxMTZdfQ==
 -->
