@@ -148,6 +148,10 @@ curl -X GET "localhost:9200/books/_search?pretty"
 		}
 	}
 }
+{
+	"took" : 1,
+	"timed_out" : false,
+}
 ```
 
 
@@ -158,8 +162,9 @@ curl -X GET "localhost:9200/books/_search?pretty"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Nzc1NTA2MjMsMTE0MzAyNzU0NCwyMD
-Q3MjUwMjE5LC05NTMxNDg0OTAsMTgyMjI2NjQyMiwxNDg4Mjk1
-MjI5LC0xOTI2MDAwMjI5LDE4MjUyNTIzNTgsMTE3MDM0OTMxNC
-w4NzU5MTYyNTEsLTExMDEzMTc4NDUsMTkxNDAxMjcxNV19
+eyJoaXN0b3J5IjpbMTI3Mjc5NjgsLTE2Nzc1NTA2MjMsMTE0Mz
+AyNzU0NCwyMDQ3MjUwMjE5LC05NTMxNDg0OTAsMTgyMjI2NjQy
+MiwxNDg4Mjk1MjI5LC0xOTI2MDAwMjI5LDE4MjUyNTIzNTgsMT
+E3MDM0OTMxNCw4NzU5MTYyNTEsLTExMDEzMTc4NDUsMTkxNDAx
+MjcxNV19
 -->
