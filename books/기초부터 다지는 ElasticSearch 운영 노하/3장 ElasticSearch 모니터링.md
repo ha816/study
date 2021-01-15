@@ -94,9 +94,11 @@ scrape_configs는 Prometheus Server가 메트릭을 가져올 항목을 정의�
 ./prometheus --config.file=prometheus.yml
 ```
 
+## Exporter 실행
 
+다음으로 Exporter를 실행해보자. ES를 위한 Exporter는 여러가지가 있는데 그 중 가장 많이 사용하는 elasticsearch_exporter를 사용해보자.
 
-다음으로 Exporter를 실행해보자. ES를 위한 Exporter는 여러가지가 있는데 그 중 가장 많이 사용하는 elasticsearch_exporter를 사용해보자. 
+github에 elasticsearch_exporter를 검색하여 바이너리 파일을 다운 받는다. 이제 모니터링 하고자 하는 클러스터의 URL을 넣고 -es 
 
 
 
@@ -105,9 +107,9 @@ scrape_configs는 Prometheus Server가 메트릭을 가져올 항목을 정의�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NDM5MDc2MiwtMTcwNTYxOTgxNiw0ND
-EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
-NSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMD
-kwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1
-OTEwMzAsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNTg0MjExNDg4LC0xNzA1NjE5ODE2LDQ0MT
+AwNzY5OCwtMTY0NTMzMTk4Myw3MzQyNTIxODcsMTA0MTM3NzA1
+LC04MzMzNzIwNjIsLTc5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOT
+AzNTIwMjAsMTM4Njg4OTQ2NSwtMTA3MjgzMjcxOCwtMjA1OTU5
+MTAzMCwtMTMxMDcwODk3Nyw3MzA5OTgxMTZdfQ==
 -->
