@@ -75,7 +75,11 @@ LICENSE, NOTICE, console_libraries, consoles, data, prometheus, prometheus.yml, 
 이 중에 prometheus.yml 파일이 환경설정 파일이며, 다양한 항목을 설정할 수 있다. 
 
 ```
+global:
+... 
 
+scrape_configs:
+	- job_name: 'elasticsearch'
 
 ```
 
@@ -84,9 +88,9 @@ LICENSE, NOTICE, console_libraries, consoles, data, prometheus, prometheus.yml, 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQxMDA3Njk4LC0xNjQ1MzMxOTgzLDczND
-I1MjE4NywxMDQxMzc3MDUsLTgzMzM3MjA2MiwtNzk2NTEyNTA4
-LC05MTU1NTg3MTMsMTA5MDM1MjAyMCwxMzg2ODg5NDY1LC0xMD
-cyODMyNzE4LC0yMDU5NTkxMDMwLC0xMzEwNzA4OTc3LDczMDk5
-ODExNl19
+eyJoaXN0b3J5IjpbMjA4ODAxMTAwNiw0NDEwMDc2OTgsLTE2ND
+UzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcwNSwtODMzMzcyMDYy
+LC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMDkwMzUyMDIwLDEzOD
+Y4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMzAsLTEzMTA3
+MDg5NzcsNzMwOTk4MTE2XX0=
 -->
