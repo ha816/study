@@ -93,14 +93,19 @@ scrape_configs는 Prometheus Server가 메트릭을 가져올 항목을 정의�
 ```
 ./prometheus --config.file=prometheus.yml
 ```
-다음으로 Exporter를 실행해보자. ES를 위한 Exporter는 여러가지가 있는데 그 중 가장 많이 사용ㅎ
+
+
+
+다음으로 Exporter를 실행해보자. ES를 위한 Exporter는 여러가지가 있는데 그 중 가장 많이 사용하는 elasticsearch_exporter를 사용해보자. 
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MzE0NDkwMCwtMTcwNTYxOTgxNiw0ND
+eyJoaXN0b3J5IjpbMjA2NDM5MDc2MiwtMTcwNTYxOTgxNiw0ND
 EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
 NSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMD
 kwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1
