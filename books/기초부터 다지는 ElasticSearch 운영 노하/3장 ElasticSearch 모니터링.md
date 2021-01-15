@@ -58,11 +58,21 @@ ES 6.3버전부터 X-Pack의 배이직 라이센스를 기본으로 탑재하여
 
 ## 프로메테우스 서버 설치
 
-자 이제 Prometheus Server부터 설치해보자. 공식 홈페이지에서 본인의 환경에 맞는 바이너리를 선택해서 받는다. 다운로드한 후 /user/local/ 디렉터리로 압축 파일을 복사해서 
+자 이제 Prometheus Server부터 설치해보자. 공식 홈페이지에서 본인의 환경에 맞는 바이너리를 선택해서 받는다. 다운로드한 후 /user/local/ 디렉터리로 압축 파일을 복사해서 압축을 풀면 아래와 같은 디렉터리가 생성된다. 
+
+```
+bin games java lib libexec 
+share etc include jdk-11.0.1 lib64
+sbin
+prometheus-2.6.0.linux-amd64
+```
+prometheus-2.6.0.linux-amd64에 들어가면 아래와 같은 파일들을 추가로 볼 수 있다
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MzQ2NDA0NiwtMTY0NTMzMTk4Myw3Mz
+eyJoaXN0b3J5IjpbLTE1MjI3NDQwOSwtMTY0NTMzMTk4Myw3Mz
 QyNTIxODcsMTA0MTM3NzA1LC04MzMzNzIwNjIsLTc5NjUxMjUw
 OCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAsMTM4Njg4OTQ2NSwtMT
 A3MjgzMjcxOCwtMjA1OTU5MTAzMCwtMTMxMDcwODk3Nyw3MzA5
