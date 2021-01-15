@@ -115,15 +115,18 @@ ES -> Exporter -> Prometheus Server
 
 ## Grafana 설치 및 실행
 
+Grafana의 설치와 실행도 매우 간단하다. 
 
+RPM 파일을 다운로드하고 rpm -ivh 명령을 통해서 설치하면 /etc/grafana 디렉터리가 생성된다.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MjE4Mzc1OSwtMTcwNTYxOTgxNiw0ND
-EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
-NSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMD
-kwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1
-OTEwMzAsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTExOTMyNTY4NTgsLTg3MjE4Mzc1OSwtMT
+cwNTYxOTgxNiw0NDEwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUy
+MTg3LDEwNDEzNzcwNSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLT
+kxNTU1ODcxMywxMDkwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4
+MzI3MTgsLTIwNTk1OTEwMzAsLTEzMTA3MDg5NzcsNzMwOTk4MT
+E2XX0=
 -->
