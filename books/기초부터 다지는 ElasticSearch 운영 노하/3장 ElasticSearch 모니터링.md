@@ -109,7 +109,9 @@ Exporter를 실행한 후에 메트릭을 잘 가져오는지 확인하려면 cu
 curl -s http://localhost:9108/metrics | more // 9108 Export에 질의하기 
 ```
 
+여기까지 잘 동작이 되었다면 Prometheus Server는 자동으로 Exporter를 통해 메트릭을 수집하고 있을것이다. 
 
+ES -> Exporter -> Prometheus Server
 
 
 
@@ -118,9 +120,9 @@ curl -s http://localhost:9108/metrics | more // 9108 Export에 질의하기
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MzIyNTYyMSwtMTcwNTYxOTgxNiw0ND
-EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
-NSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMD
-kwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1
-OTEwMzAsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMzA0NjAwMjAwLC0xNzA1NjE5ODE2LDQ0MT
+AwNzY5OCwtMTY0NTMzMTk4Myw3MzQyNTIxODcsMTA0MTM3NzA1
+LC04MzMzNzIwNjIsLTc5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOT
+AzNTIwMjAsMTM4Njg4OTQ2NSwtMTA3MjgzMjcxOCwtMjA1OTU5
+MTAzMCwtMTMxMDcwODk3Nyw3MzA5OTgxMTZdfQ==
 -->
