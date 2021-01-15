@@ -81,6 +81,9 @@ global:
 scrape_configs:
 	- job_name: 'elasticsearch'
 
+	# metrics_path defaults to '/metrics'
+	# scheme defaults to 'http'
+
 ```
 
 
@@ -88,9 +91,9 @@ scrape_configs:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4ODAxMTAwNiw0NDEwMDc2OTgsLTE2ND
-UzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcwNSwtODMzMzcyMDYy
-LC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMDkwMzUyMDIwLDEzOD
-Y4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMzAsLTEzMTA3
-MDg5NzcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE3MDU2MTk4MTYsNDQxMDA3Njk4LC0xNj
+Q1MzMxOTgzLDczNDI1MjE4NywxMDQxMzc3MDUsLTgzMzM3MjA2
+MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMsMTA5MDM1MjAyMCwxMz
+g2ODg5NDY1LC0xMDcyODMyNzE4LC0yMDU5NTkxMDMwLC0xMzEw
+NzA4OTc3LDczMDk5ODExNl19
 -->
