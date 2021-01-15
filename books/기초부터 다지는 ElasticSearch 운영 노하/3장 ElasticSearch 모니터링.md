@@ -54,12 +54,12 @@ ES 6.3버전부터 X-Pack의 배이직 라이센스를 기본으로 탑재하여
 
 이번 장에서는 Prometheus Server와 Exporter를 설정해보고 데이터를 Grafana로 시각화하는 과정을 다룰것이다.
 
-사실 프로메테우스는 ES말고도 많은 시스템을 모니터링 할 수 있는 Exporer를 제공한다. 
+사실 프로메테우스는 ES말고도 많은 시스템을 모니터링 할 수 있는 Exporter를 제공한다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM0MjUyMTg3LDEwNDEzNzcwNSwtODMzMz
-cyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMDkwMzUyMDIw
-LDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMzAsLT
-EzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwND
+EzNzcwNSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcx
+MywxMDkwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLT
+IwNTk1OTEwMzAsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
 -->
