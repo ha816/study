@@ -78,11 +78,14 @@ LICENSE, NOTICE, console_libraries, consoles, data, prometheus, prometheus.yml, 
 global:
 ... 
 
-scrape_configs:
-	- job_name: 'elasticsearch'
+scrape_configs: // 1
+	- job_name: 'elasticsearch' // 2
 
 	# metrics_path defaults to '/metrics'
 	# scheme defaults to 'http'
+
+	static_configs:
+	- targets: ['prometheus-test002.domain.com:9108'] // 3
 
 ```
 
@@ -91,9 +94,9 @@ scrape_configs:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDU2MTk4MTYsNDQxMDA3Njk4LC0xNj
-Q1MzMxOTgzLDczNDI1MjE4NywxMDQxMzc3MDUsLTgzMzM3MjA2
-MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMsMTA5MDM1MjAyMCwxMz
-g2ODg5NDY1LC0xMDcyODMyNzE4LC0yMDU5NTkxMDMwLC0xMzEw
-NzA4OTc3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTcyODc5MjYwNSwtMTcwNTYxOTgxNiw0ND
+EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
+NSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMD
+kwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1
+OTEwMzAsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
 -->
