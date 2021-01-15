@@ -88,15 +88,21 @@ scrape_configs: // 1: 가져올 메트릭 항목
 	- targets: ['prometheus-test002.domain.com:9108'] // 3
 ```
 
-scrape_configs는 Prometheus Server가 메트릭을 가져올 항목을 정의한다. 여러 개의 풀링 항목을 정의 할 수 있으며, 여기서는 job_name이 elasticsearch이고 prometheus-test002.domain.com에서 데이터를 가져오도록 정의했다. 
+scrape_configs는 Prometheus Server가 메트릭을 가져올 항목을 정의한다. 여러 개의 풀링 항목을 정의 할 수 있으며, 여기서는 job_name이 elasticsearch이고 prometheus-test002.domain.com에서 데이터를 가져오도록 정의했다. 자 이제 Prometheus Server를 실행해보자.
+
+```
+./prometheus --config.file=prometheus.yml
+```
+다음으로 Exporter를 실행해보자. ES를 위한 Exporter는 여러가지가 있는데 그 중 가장 많이 사용ㅎ
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NDc1ODYsLTE3MDU2MTk4MTYsNDQxMD
-A3Njk4LC0xNjQ1MzMxOTgzLDczNDI1MjE4NywxMDQxMzc3MDUs
-LTgzMzM3MjA2MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMsMTA5MD
-M1MjAyMCwxMzg2ODg5NDY1LC0xMDcyODMyNzE4LC0yMDU5NTkx
-MDMwLC0xMzEwNzA4OTc3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTk4MzE0NDkwMCwtMTcwNTYxOTgxNiw0ND
+EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
+NSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMD
+kwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1
+OTEwMzAsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
 -->
