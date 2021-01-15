@@ -101,8 +101,13 @@ scrape_configs는 Prometheus Server가 메트릭을 가져올 항목을 정의�
 github에 elasticsearch_exporter를 검색하여 바이너리 파일을 다운 받는다. 이제 모니터링 하고자 하는 클러스터의 URL을 넣고 -es.all, -es.indices 옵션을 추가해서 실행하면 된다. 
 
 ```
-./elasticsearch_exporter -es.uri http://elasticsearch.domain.com:9200 -es.all -es.indices level=info ts=""
+./elasticsearch_exporter -es.uri http://elasticsearch.domain.com:9200 -es.all -es.indices level=info ts="" caller=main.go:95 msg="starting elasticsearch_exporter" addr=:9108
 ``` 
+
+Exporter를 실행한 후에 메트릭을 잘 가져오는지 확인하려면 curl을 사용하면 된다. 
+```
+curl -s http://localho
+```
 
 
 
@@ -111,7 +116,7 @@ github에 elasticsearch_exporter를 검색하여 바이너리 파일을 다운 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NTk5NDgyOCwtMTcwNTYxOTgxNiw0ND
+eyJoaXN0b3J5IjpbMTIzODQ3NTQ4MSwtMTcwNTYxOTgxNiw0ND
 EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
 NSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMD
 kwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1
