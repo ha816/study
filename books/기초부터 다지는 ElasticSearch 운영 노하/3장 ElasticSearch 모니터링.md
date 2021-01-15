@@ -79,13 +79,13 @@ global:
 ... 
 
 scrape_configs: // 1: 가져올 메트릭 항목
-	- job_name: 'elasticsearch' // 2: jonb 이름
+	- job_name: 'elasticsearch' // 2: jon 이름
 
 	# metrics_path defaults to '/metrics'
 	# scheme defaults to 'http'
 
 	static_configs:
-	- targets: ['prometheus-test002.domain.com:9108'] // 3
+	- targets: ['prometheus-test002.domain.com:9108'] // 데이터를 가져올 장소(exporter)
 ```
 
 scrape_configs는 Prometheus Server가 메트릭을 가져올 항목을 정의한다. 여러 개의 풀링 항목을 정의 할 수 있으며, 여기서는 job_name이 elasticsearch이고 prometheus-test002.domain.com에서 데이터를 가져오도록 정의했다. 자 이제 Prometheus Server를 실행해보자.
@@ -94,7 +94,7 @@ scrape_configs는 Prometheus Server가 메트릭을 가져올 항목을 정의�
 ./prometheus --config.file=prometheus.yml
 ```
 
-## Exporter 실행
+## Exporter 설치 및 실행
 
 다음으로 Exporter를 실행해보자. ES를 위한 Exporter는 여러가지가 있는데 그 중 가장 많이 사용하는 elasticsearch_exporter를 사용해보자.
 
@@ -113,6 +113,7 @@ curl -s http://localhost:9108/metrics | more // 9108 Export에 질의하기
 
 ES -> Exporter -> Prometheus Server
 
+## Grafana 설치 및 실행
 
 
 
@@ -120,9 +121,9 @@ ES -> Exporter -> Prometheus Server
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA0NjAwMjAwLC0xNzA1NjE5ODE2LDQ0MT
-AwNzY5OCwtMTY0NTMzMTk4Myw3MzQyNTIxODcsMTA0MTM3NzA1
-LC04MzMzNzIwNjIsLTc5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOT
-AzNTIwMjAsMTM4Njg4OTQ2NSwtMTA3MjgzMjcxOCwtMjA1OTU5
-MTAzMCwtMTMxMDcwODk3Nyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTg3MjE4Mzc1OSwtMTcwNTYxOTgxNiw0ND
+EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
+NSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMD
+kwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1
+OTEwMzAsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
 -->
