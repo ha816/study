@@ -78,23 +78,23 @@ LICENSE, NOTICE, console_libraries, consoles, data, prometheus, prometheus.yml, 
 global:
 ... 
 
-scrape_configs: // 1
-	- job_name: 'elasticsearch' // 2
+scrape_configs: // 1: 가져올 메트릭 항목
+	- job_name: 'elasticsearch' // 2: jonb 이름
 
 	# metrics_path defaults to '/metrics'
 	# scheme defaults to 'http'
 
 	static_configs:
 	- targets: ['prometheus-test002.domain.com:9108'] // 3
-
 ```
 
+Prometheus Server가 메트릭을 가져올 항목을 정의한다. 여러 개의 풀링 항목을 정의 할 수 있으며, 여기서는 job_name이 elasticsearch이고 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODc5MjYwNSwtMTcwNTYxOTgxNiw0ND
+eyJoaXN0b3J5IjpbLTc1NjIwNDIyMCwtMTcwNTYxOTgxNiw0ND
 EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
 NSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMD
 kwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1
