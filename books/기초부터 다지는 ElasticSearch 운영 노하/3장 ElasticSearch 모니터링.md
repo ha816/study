@@ -106,8 +106,10 @@ github에 elasticsearch_exporter를 검색하여 바이너리 파일을 다운 �
 
 Exporter를 실행한 후에 메트릭을 잘 가져오는지 확인하려면 curl을 사용하면 된다. 
 ```
-curl -s http://localho
+curl -s http://localhost:9108/metrics | more // 9108 Export에 질의하기 
 ```
+
+
 
 
 
@@ -116,7 +118,7 @@ curl -s http://localho
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzODQ3NTQ4MSwtMTcwNTYxOTgxNiw0ND
+eyJoaXN0b3J5IjpbMTg5MzIyNTYyMSwtMTcwNTYxOTgxNiw0ND
 EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
 NSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMD
 kwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1
