@@ -66,15 +66,21 @@ share etc include jdk-11.0.1 lib64
 sbin
 prometheus-2.6.0.linux-amd64
 ```
-prometheus-2.6.0.linux-amd64에 들어가면 아래와 같은 파일들을 추가로 볼 수 있다
+prometheus-2.6.0.linux-amd64에 들어가면 아래와 같은 파일들을 추가로 볼 수 있다.
+
+```
+LICENSE, NOTICE, console_libraries, consoles, data, prometheus, prometheus.yml, promtool
+```
+
+이 중에 prometheus.yml 파일이 환경설정 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjI3NDQwOSwtMTY0NTMzMTk4Myw3Mz
-QyNTIxODcsMTA0MTM3NzA1LC04MzMzNzIwNjIsLTc5NjUxMjUw
-OCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAsMTM4Njg4OTQ2NSwtMT
-A3MjgzMjcxOCwtMjA1OTU5MTAzMCwtMTMxMDcwODk3Nyw3MzA5
-OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE3OTU1MTkxMzQsLTE2NDUzMzE5ODMsNz
+M0MjUyMTg3LDEwNDEzNzcwNSwtODMzMzcyMDYyLC03OTY1MTI1
+MDgsLTkxNTU1ODcxMywxMDkwMzUyMDIwLDEzODY4ODk0NjUsLT
+EwNzI4MzI3MTgsLTIwNTk1OTEwMzAsLTEzMTA3MDg5NzcsNzMw
+OTk4MTE2XX0=
 -->
