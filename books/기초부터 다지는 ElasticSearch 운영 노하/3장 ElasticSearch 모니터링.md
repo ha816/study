@@ -119,16 +119,24 @@ Grafana의 설치와 실행도 매우 간단하다.
 
 RPM 파일을 다운로드하고 rpm -ivh 명령을 통해서 설치하면 /etc/grafana 디렉터리가 생성된다.
 
+grafana.ini 파일로 환경을 설정한다. 
 
+```
+[server]
+#Protocoal (http, https, socket)
+;protocol = http
+
+# The ip address to bind to, empt
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTgyODgwNjIsLTExOTMyNTY4NTgsLT
-g3MjE4Mzc1OSwtMTcwNTYxOTgxNiw0NDEwMDc2OTgsLTE2NDUz
-MzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcwNSwtODMzMzcyMDYyLC
-03OTY1MTI1MDgsLTkxNTU1ODcxMywxMDkwMzUyMDIwLDEzODY4
-ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMzAsLTEzMTA3MD
-g5NzcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTkzNTU2NTUwMCwtMTE5MzI1Njg1OCwtOD
+cyMTgzNzU5LC0xNzA1NjE5ODE2LDQ0MTAwNzY5OCwtMTY0NTMz
+MTk4Myw3MzQyNTIxODcsMTA0MTM3NzA1LC04MzMzNzIwNjIsLT
+c5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAsMTM4Njg4
+OTQ2NSwtMTA3MjgzMjcxOCwtMjA1OTU5MTAzMCwtMTMxMDcwOD
+k3Nyw3MzA5OTgxMTZdfQ==
 -->
