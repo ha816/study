@@ -134,16 +134,16 @@ http_port = 3000
 
 ```
 
-Grafana가 외부 요청을 받기 위해 사용할 IP주소는 http_addr이다. 
+Grafana가 외부 요청을 받기 위해 사용할 IP주소는 http_addr이다. 0.0.0.0으로 설정하면 내부에서의 호출과 외부에서의 호출을 모두 받을 수 있다. 기본값은 127.0.0.1이지만 127.0.0.1로 설정할 경우 서버의 외부에서는 호출이 불가능해지기 때문에 0.0.0.0으로 설정
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMTExMzg4MCwtMTE5MzI1Njg1OCwtOD
-cyMTgzNzU5LC0xNzA1NjE5ODE2LDQ0MTAwNzY5OCwtMTY0NTMz
-MTk4Myw3MzQyNTIxODcsMTA0MTM3NzA1LC04MzMzNzIwNjIsLT
-c5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAsMTM4Njg4
-OTQ2NSwtMTA3MjgzMjcxOCwtMjA1OTU5MTAzMCwtMTMxMDcwOD
-k3Nyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbODkwMzA1MjI0LDE4MTExMTM4ODAsLTExOT
+MyNTY4NTgsLTg3MjE4Mzc1OSwtMTcwNTYxOTgxNiw0NDEwMDc2
+OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcwNSwtOD
+MzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMDkwMzUy
+MDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMz
+AsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
 -->
