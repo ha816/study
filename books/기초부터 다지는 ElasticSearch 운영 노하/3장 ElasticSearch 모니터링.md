@@ -143,16 +143,19 @@ Grafana가 외부 요청을 받기 위해 사용할 IP주소는 http_addr이다.
 import 화면에서 JSON 파일을 업로드해도 되고 Exporter에서 제공해주는 JSON 파일을 복사해서 붙여 넣어도 된다.
 
 gitHub에서도 대시보드 JSON 파일이 위치한 곳을 찾을 수 있다.
-// git
+// github.com/justwatchcom/
+
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3NTg5OTg3LDE4MTExMTM4ODAsLTExOT
-MyNTY4NTgsLTg3MjE4Mzc1OSwtMTcwNTYxOTgxNiw0NDEwMDc2
-OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcwNSwtOD
-MzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMDkwMzUy
-MDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMz
-AsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEzMDY1MTczMTUsMTgxMTExMzg4MCwtMT
+E5MzI1Njg1OCwtODcyMTgzNzU5LC0xNzA1NjE5ODE2LDQ0MTAw
+NzY5OCwtMTY0NTMzMTk4Myw3MzQyNTIxODcsMTA0MTM3NzA1LC
+04MzMzNzIwNjIsLTc5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOTAz
+NTIwMjAsMTM4Njg4OTQ2NSwtMTA3MjgzMjcxOCwtMjA1OTU5MT
+AzMCwtMTMxMDcwODk3Nyw3MzA5OTgxMTZdfQ==
 -->
