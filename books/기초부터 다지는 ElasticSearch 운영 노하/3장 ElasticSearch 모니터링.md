@@ -145,17 +145,22 @@ import 화면에서 JSON 파일을 업로드해도 되고 Exporter에서 제공�
 gitHub에서도 대시보드 JSON 파일이 위치한 곳을 찾을 수 있다.
 // github.com/justwatchcom/
 
-대시보드 설정이 완료되면 프로메테우스를 통해서 데이터를 볼 수 있다. 대시보드를 통해 전체 문서의 수, 인덱스들의 데이터 크기, 평균 힙 메모리 사용량등 클러스터의 상태를 알 수 있는 다양한 정보를 확인할 수 있다. 
+대시보드 설정이 완료되면 프로메테우스를 통해서 데이터를 볼 수 있다. 대시보드를 통해 전체 문서의 수, 인덱스들의 데이터 크기, 평균 힙 메모리 사용량등 클러스터의 상태를 알 수 있는 다양한 정보를 확인할 수 있다. 보다 자세한 내용은 7장에서 다루겠다. 
+
+##
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjMzOTgyNzAsMTgxMTExMzg4MCwtMT
-E5MzI1Njg1OCwtODcyMTgzNzU5LC0xNzA1NjE5ODE2LDQ0MTAw
-NzY5OCwtMTY0NTMzMTk4Myw3MzQyNTIxODcsMTA0MTM3NzA1LC
-04MzMzNzIwNjIsLTc5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOTAz
-NTIwMjAsMTM4Njg4OTQ2NSwtMTA3MjgzMjcxOCwtMjA1OTU5MT
-AzMCwtMTMxMDcwODk3Nyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMjM0MDk2Nzc5LC0xNzYzMzk4MjcwLDE4MT
+ExMTM4ODAsLTExOTMyNTY4NTgsLTg3MjE4Mzc1OSwtMTcwNTYx
+OTgxNiw0NDEwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LD
+EwNDEzNzcwNSwtODMzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1
+ODcxMywxMDkwMzUyMDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MT
+gsLTIwNTk1OTEwMzAsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
+
 -->
