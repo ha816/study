@@ -159,6 +159,11 @@ X-Pack 모니터링을 사용하기 위해선 먼저 Kibana 설치가 필요하�
 
 Kibana는 공식 홈페이지에서 사용할 수 있다. 
 
+```
+
+
+```
+
 
 
 
@@ -166,11 +171,11 @@ Kibana는 공식 홈페이지에서 사용할 수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTgyNTI2MTYsLTIwMzk3NzYwOTAsLT
-E3NjMzOTgyNzAsMTgxMTExMzg4MCwtMTE5MzI1Njg1OCwtODcy
-MTgzNzU5LC0xNzA1NjE5ODE2LDQ0MTAwNzY5OCwtMTY0NTMzMT
-k4Myw3MzQyNTIxODcsMTA0MTM3NzA1LC04MzMzNzIwNjIsLTc5
-NjUxMjUwOCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAsMTM4Njg4OT
-Q2NSwtMTA3MjgzMjcxOCwtMjA1OTU5MTAzMCwtMTMxMDcwODk3
-Nyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTI2MDgxNDkwMiwtMjAzOTc3NjA5MCwtMT
+c2MzM5ODI3MCwxODExMTEzODgwLC0xMTkzMjU2ODU4LC04NzIx
+ODM3NTksLTE3MDU2MTk4MTYsNDQxMDA3Njk4LC0xNjQ1MzMxOT
+gzLDczNDI1MjE4NywxMDQxMzc3MDUsLTgzMzM3MjA2MiwtNzk2
+NTEyNTA4LC05MTU1NTg3MTMsMTA5MDM1MjAyMCwxMzg2ODg5ND
+Y1LC0xMDcyODMyNzE4LC0yMDU5NTkxMDMwLC0xMzEwNzA4OTc3
+LDczMDk5ODExNl19
 -->
