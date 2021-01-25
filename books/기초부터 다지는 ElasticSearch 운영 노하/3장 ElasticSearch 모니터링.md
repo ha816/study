@@ -140,16 +140,19 @@ Grafana가 외부 요청을 받기 위해 사용할 IP주소는 http_addr이다.
 
 추가 가능한 여러 데이터 소스 중에서 Prometheus를 선택한다. 마지막으로 Exporter에서 제공하는 Grafana 대시보드를 추가해보자. import를 선택한다. 
 
-import 화면에서 JSON 파일을 업로드해도 되고 Exporter에서 제공
+import 화면에서 JSON 파일을 업로드해도 되고 Exporter에서 제공해주는 JSON 파일을 복사해서 붙여 넣어도 된다.
+
+gitHub에서도 대시보드 JSON 파일이 위치한 곳을 찾을 수 있다.
+// git
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMTAwNjcxMCwxODExMTEzODgwLC0xMT
-kzMjU2ODU4LC04NzIxODM3NTksLTE3MDU2MTk4MTYsNDQxMDA3
-Njk4LC0xNjQ1MzMxOTgzLDczNDI1MjE4NywxMDQxMzc3MDUsLT
-gzMzM3MjA2MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMsMTA5MDM1
-MjAyMCwxMzg2ODg5NDY1LC0xMDcyODMyNzE4LC0yMDU5NTkxMD
-MwLC0xMzEwNzA4OTc3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMjQ3NTg5OTg3LDE4MTExMTM4ODAsLTExOT
+MyNTY4NTgsLTg3MjE4Mzc1OSwtMTcwNTYxOTgxNiw0NDEwMDc2
+OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcwNSwtOD
+MzMzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMDkwMzUy
+MDIwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMz
+AsLTEzMTA3MDg5NzcsNzMwOTk4MTE2XX0=
 -->
