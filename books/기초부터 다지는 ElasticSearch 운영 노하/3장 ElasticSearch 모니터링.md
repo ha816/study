@@ -149,7 +149,9 @@ gitHub에서도 대시보드 JSON 파일이 위치한 곳을 찾을 수 있다.
 
 # X-Pack을 이용한 모니터링
 
-X-Pack의 모니터링 기능은 베이직 라이선스로 활용할 수 있으며, 베이직 라이선스는 무료로 사용할 수 있따. 
+X-Pack의 모니터링 기능은 베이직 라이선스로 활용할 수 있으며, 베이직 라이선스는 무료로 사용할 수 있다.
+
+6.3 이전 버전은 1년에 한번 베이직 라이센스를 재활성화하기 위해 클러스터 노드를 전부 재시작해야 하지만, 관리하고 있는 클러스터와 노드의 수가 적다면 X-Pack 모니터링도 좋은 방
 
 
 
@@ -158,11 +160,11 @@ X-Pack의 모니터링 기능은 베이직 라이선스로 활용할 수 있으�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzk3NzYwOTAsLTE3NjMzOTgyNzAsMT
-gxMTExMzg4MCwtMTE5MzI1Njg1OCwtODcyMTgzNzU5LC0xNzA1
-NjE5ODE2LDQ0MTAwNzY5OCwtMTY0NTMzMTk4Myw3MzQyNTIxOD
-csMTA0MTM3NzA1LC04MzMzNzIwNjIsLTc5NjUxMjUwOCwtOTE1
-NTU4NzEzLDEwOTAzNTIwMjAsMTM4Njg4OTQ2NSwtMTA3MjgzMj
-cxOCwtMjA1OTU5MTAzMCwtMTMxMDcwODk3Nyw3MzA5OTgxMTZd
-fQ==
+eyJoaXN0b3J5IjpbLTQ0NTc1Nzc3LC0yMDM5Nzc2MDkwLC0xNz
+YzMzk4MjcwLDE4MTExMTM4ODAsLTExOTMyNTY4NTgsLTg3MjE4
+Mzc1OSwtMTcwNTYxOTgxNiw0NDEwMDc2OTgsLTE2NDUzMzE5OD
+MsNzM0MjUyMTg3LDEwNDEzNzcwNSwtODMzMzcyMDYyLC03OTY1
+MTI1MDgsLTkxNTU1ODcxMywxMDkwMzUyMDIwLDEzODY4ODk0Nj
+UsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMzAsLTEzMTA3MDg5Nzcs
+NzMwOTk4MTE2XX0=
 -->
