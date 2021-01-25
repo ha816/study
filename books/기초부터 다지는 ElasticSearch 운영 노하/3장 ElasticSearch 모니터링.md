@@ -153,7 +153,7 @@ X-Pack의 모니터링 기능은 베이직 라이선스로 활용할 수 있으�
 
 6.3 이전 버전은 1년에 한번 베이직 라이센스를 재활성화하기 위해 클러스터 노드를 전부 재시작해야 하지만, 관리하고 있는 클러스터와 노드의 수가 적다면 X-Pack 모니터링도 좋은 방안이다. 
 
-X-Pack 모니터링을 사용
+X-Pack 모니터링을 사용하기 위해선 먼저 Kibana 설치가 필요하다. Kibana는 ElasticSearch에 저장된 로그를 검색하거나 그래프 등으로 시각화할때 활용하는 도구이다. 사실상 ElasticSearch의 웹 UI와 같은 역활을 하는 도구로 생각하면 된다. ES에 저장된 문서 조회, 간단한 
 
 
 
@@ -162,7 +162,7 @@ X-Pack 모니터링을 사용
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzIzMzY0OTUsLTIwMzk3NzYwOTAsLT
+eyJoaXN0b3J5IjpbLTE1NzE5ODUyMTEsLTIwMzk3NzYwOTAsLT
 E3NjMzOTgyNzAsMTgxMTExMzg4MCwtMTE5MzI1Njg1OCwtODcy
 MTgzNzU5LC0xNzA1NjE5ODE2LDQ0MTAwNzY5OCwtMTY0NTMzMT
 k4Myw3MzQyNTIxODcsMTA0MTM3NzA1LC04MzMzNzIwNjIsLTc5
