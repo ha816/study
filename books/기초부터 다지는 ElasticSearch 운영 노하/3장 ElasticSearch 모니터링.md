@@ -126,14 +126,21 @@ grafana.ini 파일로 환경을 설정한다.
 #Protocoal (http, https, socket)
 ;protocol = http
 
-# The ip address to bind to, empt
+# The ip address to bind to, empty will bind to all interfaces 
+http_addr = 0.0.0.0
+
+# The http port to use
+http_port = 3000
+
 ```
+
+Grafana가 외부 요청을 받기 위해 사용할 IP주소는 http_addr이다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNTU2NTUwMCwtMTE5MzI1Njg1OCwtOD
+eyJoaXN0b3J5IjpbMTgxMTExMzg4MCwtMTE5MzI1Njg1OCwtOD
 cyMTgzNzU5LC0xNzA1NjE5ODE2LDQ0MTAwNzY5OCwtMTY0NTMz
 MTk4Myw3MzQyNTIxODcsMTA0MTM3NzA1LC04MzMzNzIwNjIsLT
 c5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAsMTM4Njg4
