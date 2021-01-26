@@ -73,6 +73,10 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 인제스트 노드는 사용자가 색인하길 원하는 문서와 내용 중 변환이 필요한 부분을 사전에 처리한다. 데이터 노드에 저장하기 전에 특정 필드의 값을 가공해야 할 경우 유용하게 동작한다. 
 
+인제스트는 
+
+
+
  
 
 
@@ -80,8 +84,8 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTg3MDY4NzYsLTY5MTc3NDc4OCwtMT
-g1NTIxMzI5NiwtMTc3Nzg1NzExNSwyMTM3NTc3MzAsLTE0OTI1
-NTE1ODMsLTIwODMxMDkxNjgsMTk4NzAzMDA3MiwtMTE1NTMyNj
-E5Nl19
+eyJoaXN0b3J5IjpbLTEzNTYzNDg1OTIsLTE0OTg3MDY4NzYsLT
+Y5MTc3NDc4OCwtMTg1NTIxMzI5NiwtMTc3Nzg1NzExNSwyMTM3
+NTc3MzAsLTE0OTI1NTE1ODMsLTIwODMxMDkxNjgsMTk4NzAzMD
+A3MiwtMTE1NTMyNjE5Nl19
 -->
