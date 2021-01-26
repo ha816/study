@@ -89,7 +89,11 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 위에서도 언급했지만 각 노드들은 하나의 노드 역할만 수행하는게 아니라 동시에 다양한 역할을 수행할 수 있다. 
 
-예를 들어
+예를 들어, 한 노드에 아래와 같이 다양한 동시에 부여할 수 있다.
+노드1 : 마스터 + 코디네이터
+노드2 : 데이터 + 인제스트 + 코디네이트 
+
+# 인덱스와 타입 
 
 
 
@@ -100,7 +104,7 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTgzNDE0MDIsMTE1MzYzODEzMywtMT
+eyJoaXN0b3J5IjpbLTE0Njk0Mzg3MjYsMTE1MzYzODEzMywtMT
 Q5ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2LC0xNzc3
 ODU3MTE1LDIxMzc1NzczMCwtMTQ5MjU1MTU4MywtMjA4MzEwOT
 E2OCwxOTg3MDMwMDcyLC0xMTU1MzI2MTk2XX0=
