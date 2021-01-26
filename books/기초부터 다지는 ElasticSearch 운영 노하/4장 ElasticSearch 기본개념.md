@@ -73,7 +73,11 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 인제스트 노드는 사용자가 색인하길 원하는 문서와 내용 중 변환이 필요한 부분을 사전에 처리한다. 데이터 노드에 저장하기 전에 특정 필드의 값을 가공해야 할 경우 유용하게 동작한다. 
 
-인제스트는 
+(인제스트는 섭취하다. 받아들이다라는 뜻을 가진다.)
+
+### 코디네이트 노드
+
+코디네이트 노드는 실제 데이터를 저장하고 처리하지는 않지만, 사용자의 색인이나 검색 등 모든 요청을 데이터 노드에 전달하는 전달자 역할을 한다. 문서를 저장하지 않는 데이터 노드라고 생
 
 
 
@@ -84,8 +88,8 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTYzNDg1OTIsLTE0OTg3MDY4NzYsLT
-Y5MTc3NDc4OCwtMTg1NTIxMzI5NiwtMTc3Nzg1NzExNSwyMTM3
-NTc3MzAsLTE0OTI1NTE1ODMsLTIwODMxMDkxNjgsMTk4NzAzMD
-A3MiwtMTE1NTMyNjE5Nl19
+eyJoaXN0b3J5IjpbLTM2MzYyNzcyMiwtMTQ5ODcwNjg3NiwtNj
+kxNzc0Nzg4LC0xODU1MjEzMjk2LC0xNzc3ODU3MTE1LDIxMzc1
+NzczMCwtMTQ5MjU1MTU4MywtMjA4MzEwOTE2OCwxOTg3MDMwMD
+cyLC0xMTU1MzI2MTk2XX0=
 -->
