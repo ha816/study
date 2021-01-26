@@ -170,7 +170,15 @@ rpm -ivh ./kibana-6.4.2-x86_64.rpm
 | server.host  | Kibana가 외부의 접근을 처리하기 위한 IP 주소를 지정한다. 외부에서 접근할 수 있도록 하려면 기본값인 127.0.0.1이 아닌 0.0.0.0으로 설정한다. |
 |elasticsearch.url| Kibana가 접근해서 문서를 조회하거나 시각화하는 등의 작업을 하게될 ElasticSearch 클러스터의 주소를 입력해준다.|
 
-사실 K
+사실 Kibana 7점대부터 elasticsearch.url 대신 elasticsearch.hosts 설정이 사용된다. 
+
+kibana.yml 파일 변경하기
+```
+server.host: "0.0.0.0"
+elasticsearch.url: "http://elasticsearchserver:9200"
+```
+
+
 
 
 
@@ -180,11 +188,11 @@ rpm -ivh ./kibana-6.4.2-x86_64.rpm
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MDQzMzAyMywtMjYwODE0OTAyLC0yMD
-M5Nzc2MDkwLC0xNzYzMzk4MjcwLDE4MTExMTM4ODAsLTExOTMy
-NTY4NTgsLTg3MjE4Mzc1OSwtMTcwNTYxOTgxNiw0NDEwMDc2OT
-gsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcwNSwtODMz
-MzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMDkwMzUyMD
-IwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMzAs
-LTEzMTA3MDg5NzddfQ==
+eyJoaXN0b3J5IjpbODQ4MDcyNjQsLTI2MDgxNDkwMiwtMjAzOT
+c3NjA5MCwtMTc2MzM5ODI3MCwxODExMTEzODgwLC0xMTkzMjU2
+ODU4LC04NzIxODM3NTksLTE3MDU2MTk4MTYsNDQxMDA3Njk4LC
+0xNjQ1MzMxOTgzLDczNDI1MjE4NywxMDQxMzc3MDUsLTgzMzM3
+MjA2MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMsMTA5MDM1MjAyMC
+wxMzg2ODg5NDY1LC0xMDcyODMyNzE4LC0yMDU5NTkxMDMwLC0x
+MzEwNzA4OTc3XX0=
 -->
