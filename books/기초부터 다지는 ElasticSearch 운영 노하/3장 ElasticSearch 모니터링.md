@@ -201,6 +201,11 @@ old GC는 시스템의 성능에 영향을 줄 수 있는 매우 중요한 정�
 
 # 마치며 
 
+|모니터링 시스템  | 장점 | 단점|
+|--|--|--|
+|Head 모니터링  | 클러스터의 전반적인 동작 상태를 확인가능 ||
+|프로메테우스 모니터링  |  ||
+|X-Pack 모니터링 |  ||
 
 
 
@@ -211,11 +216,11 @@ old GC는 시스템의 성능에 영향을 줄 수 있는 매우 중요한 정�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjEzMTg1MjIsLTgyMDk1MDYxNywtMT
-I4OTYzMTM2NCw2MjkzMzM5NzcsLTE1ODQwNDE1MTcsLTEzNzE3
-Mzc1NDQsLTI2MDgxNDkwMiwtMjAzOTc3NjA5MCwtMTc2MzM5OD
-I3MCwxODExMTEzODgwLC0xMTkzMjU2ODU4LC04NzIxODM3NTks
-LTE3MDU2MTk4MTYsNDQxMDA3Njk4LC0xNjQ1MzMxOTgzLDczND
-I1MjE4NywxMDQxMzc3MDUsLTgzMzM3MjA2MiwtNzk2NTEyNTA4
-LC05MTU1NTg3MTNdfQ==
+eyJoaXN0b3J5IjpbLTE1OTExNTgyMDEsLTEyNjEzMTg1MjIsLT
+gyMDk1MDYxNywtMTI4OTYzMTM2NCw2MjkzMzM5NzcsLTE1ODQw
+NDE1MTcsLTEzNzE3Mzc1NDQsLTI2MDgxNDkwMiwtMjAzOTc3Nj
+A5MCwtMTc2MzM5ODI3MCwxODExMTEzODgwLC0xMTkzMjU2ODU4
+LC04NzIxODM3NTksLTE3MDU2MTk4MTYsNDQxMDA3Njk4LC0xNj
+Q1MzMxOTgzLDczNDI1MjE4NywxMDQxMzc3MDUsLTgzMzM3MjA2
+MiwtNzk2NTEyNTA4XX0=
 -->
