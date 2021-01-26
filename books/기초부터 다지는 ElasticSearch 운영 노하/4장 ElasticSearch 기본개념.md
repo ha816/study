@@ -35,13 +35,17 @@ curl localhost:9200
 }
 ```
 
-name은 클러스터에 속한 노드들 중에서 
+name은 클러스터에 속한 노드들 중 현재 요청에 응답한 노드의 이름이다. 클러스터가 다수의 노드로 구성된다면 노드별로 name값은 달라질 수 있다. 현재는 단일 노드이다. 
+
+cluster_name은 클러스터의 이름이다. 클러스터에 속한 모든 노드들은 클러스터 이름이 같다. 새로운 노드를 클러스터에 추가하기 위해선 반드시 같은 클러스터 이름을 사용해야 한다. 만약 이름이 다른 노드가 클러스터에 합류하려고 하면 에러가 발생한다. 
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTAyMzAzNTEsLTIwODMxMDkxNjgsMT
+eyJoaXN0b3J5IjpbLTE0OTI1NTE1ODMsLTIwODMxMDkxNjgsMT
 k4NzAzMDA3MiwtMTE1NTMyNjE5Nl19
 -->
