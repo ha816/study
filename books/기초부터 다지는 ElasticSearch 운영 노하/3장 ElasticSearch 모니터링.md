@@ -167,7 +167,10 @@ rpm -ivh ./kibana-6.4.2-x86_64.rpm
 
 |항목  | 내용|
 |--|--|
-| server.host  | Kibana가 외부의 접근을 처리하기 위한 IP 주소를 지 |
+| server.host  | Kibana가 외부의 접근을 처리하기 위한 IP 주소를 지정한다. 외부에서 접근할 수 있도록 하려면 기본값인 127.0.0.1이 아닌 0.0.0.0으로 설정한다. |
+|elasticsearch.url| Kibana가 접근해서 문서를 조회하거나 시각화하는 등의 작업을 하게될 ElasticSearch 클러스터의 주소를 입력해준다.|
+
+사실 K
 
 
 
@@ -177,7 +180,7 @@ rpm -ivh ./kibana-6.4.2-x86_64.rpm
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMTY1NDQ1MywtMjYwODE0OTAyLC0yMD
+eyJoaXN0b3J5IjpbLTg4MDQzMzAyMywtMjYwODE0OTAyLC0yMD
 M5Nzc2MDkwLC0xNzYzMzk4MjcwLDE4MTExMTM4ODAsLTExOTMy
 NTY4NTgsLTg3MjE4Mzc1OSwtMTcwNTYxOTgxNiw0NDEwMDc2OT
 gsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcwNSwtODMz
