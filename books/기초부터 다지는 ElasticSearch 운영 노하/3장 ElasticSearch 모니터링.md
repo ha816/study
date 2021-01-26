@@ -189,7 +189,7 @@ Monitoring에서는 클러스터의 Health 상태, 노드의 개수, 인덱스 �
 
 [Nodes]에서는 클러스터를 구성하고 있는 노드들의 CPU 사용량, 메모리 사용량 등의 정보를 확인할 수 있다. 또한 노드에 샤드가 고르게 분배되고 있는지 여부도 확인할 수 있다. 
 
-
+특정 노드를 클리하면 노드의 세부정보도 알 수 있는다. JVM Heap 영역에서 힙 메모리의 최대치와 현재 사용량을 확인할 수 있으며 그
 
 
 
@@ -199,11 +199,11 @@ Monitoring에서는 클러스터의 Health 상태, 노드의 개수, 인덱스 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI5MzMzOTc3LC0xNTg0MDQxNTE3LC0xMz
-cxNzM3NTQ0LC0yNjA4MTQ5MDIsLTIwMzk3NzYwOTAsLTE3NjMz
-OTgyNzAsMTgxMTExMzg4MCwtMTE5MzI1Njg1OCwtODcyMTgzNz
-U5LC0xNzA1NjE5ODE2LDQ0MTAwNzY5OCwtMTY0NTMzMTk4Myw3
-MzQyNTIxODcsMTA0MTM3NzA1LC04MzMzNzIwNjIsLTc5NjUxMj
-UwOCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAsMTM4Njg4OTQ2NSwt
-MTA3MjgzMjcxOF19
+eyJoaXN0b3J5IjpbLTEyOTYzNTAwNjcsNjI5MzMzOTc3LC0xNT
+g0MDQxNTE3LC0xMzcxNzM3NTQ0LC0yNjA4MTQ5MDIsLTIwMzk3
+NzYwOTAsLTE3NjMzOTgyNzAsMTgxMTExMzg4MCwtMTE5MzI1Nj
+g1OCwtODcyMTgzNzU5LC0xNzA1NjE5ODE2LDQ0MTAwNzY5OCwt
+MTY0NTMzMTk4Myw3MzQyNTIxODcsMTA0MTM3NzA1LC04MzMzNz
+IwNjIsLTc5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAs
+MTM4Njg4OTQ2NV19
 -->
