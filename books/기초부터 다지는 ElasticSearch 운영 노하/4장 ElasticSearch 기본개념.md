@@ -11,13 +11,13 @@
 
 먼저 클러스터와 노드에 대해서 살펴보자. 클러스터란 여러 대의 컴퓨터 혹은 구성요소들을 논리적으로 결합하여 전체를 하나의 컴퓨터 혹은 하나의 구성요소처럼 사용할 수 있게 해주는 기술이다. 마찬가지로 ElasticSearch 클러스터 역시 여러 개의 ES 프로세스들을 논리적으로 결합하여 하나의 ES 프로세스처럼 사용할 수 있게 해준다.
 
-
+이러한 클러스터를 구성하는 하나하나의 ES 프로세스를 노드라고 부른다. 즉, 여러 개의 ES 노드들을 마치 하나의 ES로 동작하게 하는 것이 ES 클러스터라고 할 수 있다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTYxMzU1MjgsLTExNTUzMjYxOTZdfQ
+eyJoaXN0b3J5IjpbLTEzNzkzMzY3MzEsLTExNTUzMjYxOTZdfQ
 ==
 -->
