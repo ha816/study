@@ -178,7 +178,9 @@ server.host: "0.0.0.0"
 elasticsearch.url: "http://elasticsearchserver:9200"
 ```
 
+netstat - nlp | grep 5601
 
+이제 5601 포트로 웹을 열어보면 Kibana화면이 실행된다. 
 
 
 
@@ -188,11 +190,11 @@ elasticsearch.url: "http://elasticsearchserver:9200"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4MDcyNjQsLTI2MDgxNDkwMiwtMjAzOT
-c3NjA5MCwtMTc2MzM5ODI3MCwxODExMTEzODgwLC0xMTkzMjU2
-ODU4LC04NzIxODM3NTksLTE3MDU2MTk4MTYsNDQxMDA3Njk4LC
-0xNjQ1MzMxOTgzLDczNDI1MjE4NywxMDQxMzc3MDUsLTgzMzM3
-MjA2MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMsMTA5MDM1MjAyMC
-wxMzg2ODg5NDY1LC0xMDcyODMyNzE4LC0yMDU5NTkxMDMwLC0x
-MzEwNzA4OTc3XX0=
+eyJoaXN0b3J5IjpbLTEzNzE3Mzc1NDQsLTI2MDgxNDkwMiwtMj
+AzOTc3NjA5MCwtMTc2MzM5ODI3MCwxODExMTEzODgwLC0xMTkz
+MjU2ODU4LC04NzIxODM3NTksLTE3MDU2MTk4MTYsNDQxMDA3Nj
+k4LC0xNjQ1MzMxOTgzLDczNDI1MjE4NywxMDQxMzc3MDUsLTgz
+MzM3MjA2MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMsMTA5MDM1Mj
+AyMCwxMzg2ODg5NDY1LC0xMDcyODMyNzE4LC0yMDU5NTkxMDMw
+LC0xMzEwNzA4OTc3XX0=
 -->
