@@ -13,11 +13,12 @@
 
 이러한 클러스터를 구성하는 하나하나의 ES 프로세스를 노드라고 부른다. 즉, 여러 개의 ES 노드들을 마치 하나의 ES로 동작하게 하는 것이 ES 클러스터라고 할 수 있다. 
 
+클러스터는 하나 이상의 노드로 구성된다. 3개의 노드가 마치 하나의 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzkzMzY3MzEsLTExNTUzMjYxOTZdfQ
-==
+eyJoaXN0b3J5IjpbLTQ1NDUzMTE5MCwtMTE1NTMyNjE5Nl19
 -->
