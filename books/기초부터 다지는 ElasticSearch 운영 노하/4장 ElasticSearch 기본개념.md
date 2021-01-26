@@ -71,6 +71,7 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 ### 인제스트 노드
 
+인제스트 노드는 사용자가 색인하길 원하는 문서와 내용 중 변환이 필요한 붑
 
  
 
@@ -79,7 +80,8 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MTc3NDc4OCwtMTg1NTIxMzI5NiwtMT
-c3Nzg1NzExNSwyMTM3NTc3MzAsLTE0OTI1NTE1ODMsLTIwODMx
-MDkxNjgsMTk4NzAzMDA3MiwtMTE1NTMyNjE5Nl19
+eyJoaXN0b3J5IjpbODEzMTkwMDgzLC02OTE3NzQ3ODgsLTE4NT
+UyMTMyOTYsLTE3Nzc4NTcxMTUsMjEzNzU3NzMwLC0xNDkyNTUx
+NTgzLC0yMDgzMTA5MTY4LDE5ODcwMzAwNzIsLTExNTUzMjYxOT
+ZdfQ==
 -->
