@@ -181,7 +181,11 @@ elasticsearch.url: "http://elasticsearchserver:9200"
 netstat - nlp | grep 5601
 
 이제 5601 포트로 웹을 열어보면 Kibana화면이 실행된다. 
-Kibana를 설치하고 접속한 다음 왼쪽 
+Kibana를 설치하고 접속한 다음 왼쪽의 Monitoring 탭을 클릭하면 현제 모니터링 상태에 대한 안내 메세지가 나타난다. 
+
+Turn on monitoring 버튼을 클릭하면 모니터링을 설정하고 있다는 메시지가 나타난 뒤 모니터링 화면이 나타난다. 
+
+Monitoring에서는 클러스터의 Health 상태, 노드의 ㄱ
 
 
 
@@ -191,11 +195,11 @@ Kibana를 설치하고 접속한 다음 왼쪽
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODQwNDE1MTcsLTEzNzE3Mzc1NDQsLT
-I2MDgxNDkwMiwtMjAzOTc3NjA5MCwtMTc2MzM5ODI3MCwxODEx
-MTEzODgwLC0xMTkzMjU2ODU4LC04NzIxODM3NTksLTE3MDU2MT
-k4MTYsNDQxMDA3Njk4LC0xNjQ1MzMxOTgzLDczNDI1MjE4Nywx
-MDQxMzc3MDUsLTgzMzM3MjA2MiwtNzk2NTEyNTA4LC05MTU1NT
-g3MTMsMTA5MDM1MjAyMCwxMzg2ODg5NDY1LC0xMDcyODMyNzE4
-LC0yMDU5NTkxMDMwXX0=
+eyJoaXN0b3J5IjpbLTEwMjk0MzA1OTUsLTE1ODQwNDE1MTcsLT
+EzNzE3Mzc1NDQsLTI2MDgxNDkwMiwtMjAzOTc3NjA5MCwtMTc2
+MzM5ODI3MCwxODExMTEzODgwLC0xMTkzMjU2ODU4LC04NzIxOD
+M3NTksLTE3MDU2MTk4MTYsNDQxMDA3Njk4LC0xNjQ1MzMxOTgz
+LDczNDI1MjE4NywxMDQxMzc3MDUsLTgzMzM3MjA2MiwtNzk2NT
+EyNTA4LC05MTU1NTg3MTMsMTA5MDM1MjAyMCwxMzg2ODg5NDY1
+LC0xMDcyODMyNzE4XX0=
 -->
