@@ -15,10 +15,15 @@
 
 클러스터는 하나 이상의 노드로 구성된다. 클러스터가 3개의 노드로 구성되어 있다고 하자. 3개의 노드가 마치 하나의 ES처럼 동작하기 때문에 사실 3개의 노드 중 어떤 노드에 API를 요청해도 동일한 응답과 동작을 보장받는다. 
 
+클러스터가 단일 노드로 구성된 경우에도 클러스터처럼 동작하기 때문에 정상적인 응답과 동작을 기대할 수 있다.
+
+다수의 노드로 구성된 ES 클러스터는 고유의 클러스터 이름과 UUID(Universally Unique Identifier)를 가진다. 그리고 이 두 가지 고유한 속성을 통해 클러스터 내에 속한 노드들이 서로 동일한 클러스터 내에 잇음으
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NzAzMDA3MiwtMTE1NTMyNjE5Nl19
+eyJoaXN0b3J5IjpbNTI0MTYxMDk2LDE5ODcwMzAwNzIsLTExNT
+UzMjYxOTZdfQ==
 -->
