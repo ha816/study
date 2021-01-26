@@ -57,7 +57,11 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 ### 마스터
 
-마스터 노드는 클러스터의 메타 데이터를 관리하는 역할을 한다. 
+마스터 노드는 클러스터의 메타 데이터를 관리하는 역할을 한다. 그리고 클러스터내에서 반드시 한대 이상이 있어야 한다. 
+
+클러스터 안의 모든 노드는 현재 노드의 상태, 성능 정보, 자신이 가지고 있는 샤드의 정보를 마스터 노드에 알린다. 마스터 노드를 이런 정보를 수집하고 관리하면서 클러스터의 안정성 확보를 위한 작업을 수행한다. 
+
+### 데이터 노드 
 
  
 
@@ -66,7 +70,7 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzc4NTcxMTUsMjEzNzU3NzMwLC0xND
-kyNTUxNTgzLC0yMDgzMTA5MTY4LDE5ODcwMzAwNzIsLTExNTUz
-MjYxOTZdfQ==
+eyJoaXN0b3J5IjpbLTE4NTUyMTMyOTYsLTE3Nzc4NTcxMTUsMj
+EzNzU3NzMwLC0xNDkyNTUxNTgzLC0yMDgzMTA5MTY4LDE5ODcw
+MzAwNzIsLTExNTUzMjYxOTZdfQ==
 -->
