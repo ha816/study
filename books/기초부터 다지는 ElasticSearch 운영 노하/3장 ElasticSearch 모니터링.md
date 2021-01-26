@@ -185,7 +185,11 @@ Kibana를 설치하고 접속한 다음 왼쪽의 Monitoring 탭을 클릭하면
 
 Turn on monitoring 버튼을 클릭하면 모니터링을 설정하고 있다는 메시지가 나타난 뒤 모니터링 화면이 나타난다. 
 
-Monitoring에서는 클러스터의 Health 상태, 노드의 개수, 인덱스 개수등을 볼 수 있다. Overview를 보면 초당 발생하는 색인의 양, 그리고 성능을 의미하느
+Monitoring에서는 클러스터의 Health 상태, 노드의 개수, 인덱스 개수등을 볼 수 있다. Overview를 보면 초당 발생하는 색인의 양, 그리고 성능을 의미하는 Latency등을 간략하게 볼 수 있다. 
+
+[Nodes]에서는 클러스터를 구성하고 있는 노드들의 CPU 사용량, 메모리 사용량 등의 정보를 확인할 수 있다. 또한 노드에 샤드가 고르게 분배되고 있는지 여부도 확인할 수 있다. 
+
+
 
 
 
@@ -195,11 +199,11 @@ Monitoring에서는 클러스터의 Health 상태, 노드의 개수, 인덱스 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzAwMzM5NjMsLTE1ODQwNDE1MTcsLT
-EzNzE3Mzc1NDQsLTI2MDgxNDkwMiwtMjAzOTc3NjA5MCwtMTc2
-MzM5ODI3MCwxODExMTEzODgwLC0xMTkzMjU2ODU4LC04NzIxOD
-M3NTksLTE3MDU2MTk4MTYsNDQxMDA3Njk4LC0xNjQ1MzMxOTgz
-LDczNDI1MjE4NywxMDQxMzc3MDUsLTgzMzM3MjA2MiwtNzk2NT
-EyNTA4LC05MTU1NTg3MTMsMTA5MDM1MjAyMCwxMzg2ODg5NDY1
-LC0xMDcyODMyNzE4XX0=
+eyJoaXN0b3J5IjpbNjI5MzMzOTc3LC0xNTg0MDQxNTE3LC0xMz
+cxNzM3NTQ0LC0yNjA4MTQ5MDIsLTIwMzk3NzYwOTAsLTE3NjMz
+OTgyNzAsMTgxMTExMzg4MCwtMTE5MzI1Njg1OCwtODcyMTgzNz
+U5LC0xNzA1NjE5ODE2LDQ0MTAwNzY5OCwtMTY0NTMzMTk4Myw3
+MzQyNTIxODcsMTA0MTM3NzA1LC04MzMzNzIwNjIsLTc5NjUxMj
+UwOCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAsMTM4Njg4OTQ2NSwt
+MTA3MjgzMjcxOF19
 -->
