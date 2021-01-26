@@ -163,7 +163,12 @@ Kibana는 공식 홈페이지에서 다운로드할 수 있다.
 rpm -ivh ./kibana-6.4.2-x86_64.rpm
 ```
 
-설치하면 /etc/kibana 디렉
+설치하면 /etc/kibana 디렉터리가 자동으로 생성되며 디렉터리 안에 kibana.yml이라는 환경 설정 파일이 들어 있다. 환경 설정 파일의 항목들 중 대부분은 그대로 사용해도 되지만 아래 두 항목은 반드시 환경에 맞춰서 바꾸어 주어야 한다. 
+
+|항목  | 내용|
+|--|--|
+| server.host  | Kibana가 외부의 접근을 처리하기 위한 IP 주소를 지 |
+
 
 
 
@@ -172,11 +177,11 @@ rpm -ivh ./kibana-6.4.2-x86_64.rpm
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mzg1MDQxMzYsLTI2MDgxNDkwMiwtMj
-AzOTc3NjA5MCwtMTc2MzM5ODI3MCwxODExMTEzODgwLC0xMTkz
-MjU2ODU4LC04NzIxODM3NTksLTE3MDU2MTk4MTYsNDQxMDA3Nj
-k4LC0xNjQ1MzMxOTgzLDczNDI1MjE4NywxMDQxMzc3MDUsLTgz
-MzM3MjA2MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMsMTA5MDM1Mj
-AyMCwxMzg2ODg5NDY1LC0xMDcyODMyNzE4LC0yMDU5NTkxMDMw
-LC0xMzEwNzA4OTc3XX0=
+eyJoaXN0b3J5IjpbMTgzMTY1NDQ1MywtMjYwODE0OTAyLC0yMD
+M5Nzc2MDkwLC0xNzYzMzk4MjcwLDE4MTExMTM4ODAsLTExOTMy
+NTY4NTgsLTg3MjE4Mzc1OSwtMTcwNTYxOTgxNiw0NDEwMDc2OT
+gsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcwNSwtODMz
+MzcyMDYyLC03OTY1MTI1MDgsLTkxNTU1ODcxMywxMDkwMzUyMD
+IwLDEzODY4ODk0NjUsLTEwNzI4MzI3MTgsLTIwNTk1OTEwMzAs
+LTEzMTA3MDg5NzddfQ==
 -->
