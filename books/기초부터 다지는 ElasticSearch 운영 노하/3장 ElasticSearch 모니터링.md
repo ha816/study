@@ -197,6 +197,8 @@ old GC는 시스템의 성능에 영향을 줄 수 있는 매우 중요한 정�
 
 [Indices]는 인덱스별로 발생하는 색인의 양을 알 수 있다. 쌓고 있는 데이터가 로그의 형태일때 색인하면 안되는 인덱스도 색인하고 있지 않은지 등을 확인 할 수 있다. 
 
+'Shard Legend'를 보면 해당 인덱스의 샤드들이 어떤 노드에 배치되어 있는지, 그리고 unassgined 상태의 샤드는 없는지 한눈에 살펴볼 수 있어서 노드간 샤드의 불균형 파악에 도움이 된다. 
+
 
 
 
@@ -207,7 +209,7 @@ old GC는 시스템의 성능에 영향을 줄 수 있는 매우 중요한 정�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyOTUxOTM3MiwtMTI4OTYzMTM2NCw2Mj
+eyJoaXN0b3J5IjpbLTgyMDk1MDYxNywtMTI4OTYzMTM2NCw2Mj
 kzMzM5NzcsLTE1ODQwNDE1MTcsLTEzNzE3Mzc1NDQsLTI2MDgx
 NDkwMiwtMjAzOTc3NjA5MCwtMTc2MzM5ODI3MCwxODExMTEzOD
 gwLC0xMTkzMjU2ODU4LC04NzIxODM3NTksLTE3MDU2MTk4MTYs
