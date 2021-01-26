@@ -193,6 +193,12 @@ Monitoring에서는 클러스터의 Health 상태, 노드의 개수, 인덱스 �
 
 [Advanced]에서는 더 자세한 정보를 볼 수 있다. 여기서 가장 중요한것은 GC(Garbage Collection) 관련 지표이다. 
 
+old GC는 시스템의 성능에 영향을 줄 수 있는 매우 중요한 정보이고 old GC Duration이 길면 그만큼 시스템이 느려지기 때문에 주의해야 한다.
+
+[Indices]는 인덱스별로 발생하는 색인의 양을 알 수 있다. 쌓고 있는 데이터가 로그의 형태일때 색인하면 안되는 인덱스도 색인하고 있지 않은지 등을 확인 할 수 있다. 
+
+
+
 
 
 
@@ -201,11 +207,11 @@ Monitoring에서는 클러스터의 Health 상태, 노드의 개수, 인덱스 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODk2MzEzNjQsNjI5MzMzOTc3LC0xNT
-g0MDQxNTE3LC0xMzcxNzM3NTQ0LC0yNjA4MTQ5MDIsLTIwMzk3
-NzYwOTAsLTE3NjMzOTgyNzAsMTgxMTExMzg4MCwtMTE5MzI1Nj
-g1OCwtODcyMTgzNzU5LC0xNzA1NjE5ODE2LDQ0MTAwNzY5OCwt
-MTY0NTMzMTk4Myw3MzQyNTIxODcsMTA0MTM3NzA1LC04MzMzNz
-IwNjIsLTc5NjUxMjUwOCwtOTE1NTU4NzEzLDEwOTAzNTIwMjAs
-MTM4Njg4OTQ2NV19
+eyJoaXN0b3J5IjpbLTgyOTUxOTM3MiwtMTI4OTYzMTM2NCw2Mj
+kzMzM5NzcsLTE1ODQwNDE1MTcsLTEzNzE3Mzc1NDQsLTI2MDgx
+NDkwMiwtMjAzOTc3NjA5MCwtMTc2MzM5ODI3MCwxODExMTEzOD
+gwLC0xMTkzMjU2ODU4LC04NzIxODM3NTksLTE3MDU2MTk4MTYs
+NDQxMDA3Njk4LC0xNjQ1MzMxOTgzLDczNDI1MjE4NywxMDQxMz
+c3MDUsLTgzMzM3MjA2MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMs
+MTA5MDM1MjAyMF19
 -->
