@@ -207,7 +207,7 @@ old GC는 시스템의 성능에 영향을 줄 수 있는 매우 중요한 정�
 |프로메테우스 모니터링  | 다량의 클러스터를 운영하고 있을때 구축하기 수월하다.| 확인할 수 있는 정보량이 X-Pack 모니터링에 비해 상대적으로 적다|
 |X-Pack 모니터링 | 모니터링 시스템 중 가장 많은 정보를 확인할 수 있다.| 6.3이전 버전이라면 Basic 라이선스를 갱신해야 하며, 색인 성능에 영향을 줄 수 있다.|
 
-
+이번 장에서는 Head, 프로메테우스, X-Pack을 이용한 모니터링 시스템을 살펴보았다. 다양한 지표들이 어떤 의미인지는 7장에서 자세히 다룰것이고, 알아보았던 모니터링에서 어떤 시스템으
 
 
 
@@ -218,11 +218,11 @@ old GC는 시스템의 성능에 영향을 줄 수 있는 매우 중요한 정�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzM1MTQxNiwtMTU5MTE1ODIwMSwtMT
-I2MTMxODUyMiwtODIwOTUwNjE3LC0xMjg5NjMxMzY0LDYyOTMz
-Mzk3NywtMTU4NDA0MTUxNywtMTM3MTczNzU0NCwtMjYwODE0OT
-AyLC0yMDM5Nzc2MDkwLC0xNzYzMzk4MjcwLDE4MTExMTM4ODAs
-LTExOTMyNTY4NTgsLTg3MjE4Mzc1OSwtMTcwNTYxOTgxNiw0ND
-EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
-NSwtODMzMzcyMDYyXX0=
+eyJoaXN0b3J5IjpbMzYyOTQwNzQ0LC0xNTkxMTU4MjAxLC0xMj
+YxMzE4NTIyLC04MjA5NTA2MTcsLTEyODk2MzEzNjQsNjI5MzMz
+OTc3LC0xNTg0MDQxNTE3LC0xMzcxNzM3NTQ0LC0yNjA4MTQ5MD
+IsLTIwMzk3NzYwOTAsLTE3NjMzOTgyNzAsMTgxMTExMzg4MCwt
+MTE5MzI1Njg1OCwtODcyMTgzNzU5LC0xNzA1NjE5ODE2LDQ0MT
+AwNzY5OCwtMTY0NTMzMTk4Myw3MzQyNTIxODcsMTA0MTM3NzA1
+LC04MzMzNzIwNjJdfQ==
 -->
