@@ -63,6 +63,8 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 ### 데이터 노드 
 
+데이터 노드느
+
  
 
 
@@ -70,7 +72,7 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTUyMTMyOTYsLTE3Nzc4NTcxMTUsMj
-EzNzU3NzMwLC0xNDkyNTUxNTgzLC0yMDgzMTA5MTY4LDE5ODcw
-MzAwNzIsLTExNTUzMjYxOTZdfQ==
+eyJoaXN0b3J5IjpbLTE2MzIwMDgxMjAsLTE4NTUyMTMyOTYsLT
+E3Nzc4NTcxMTUsMjEzNzU3NzMwLC0xNDkyNTUxNTgzLC0yMDgz
+MTA5MTY4LDE5ODcwMzAwNzIsLTExNTUzMjYxOTZdfQ==
 -->
