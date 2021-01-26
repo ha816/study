@@ -23,15 +23,25 @@
 curl 명령을 통해서 각각의 노드에서 해당 노드가 속한 클러스터의 정보를 확인할 수 있다. 
 
 ```
-
-
+curl localhost:9200
+{
+	"name" : "elasticsearch",
+	"cluster_name" : "my-elasticsearch",
+	"cluster_uuid" : "680Dns66Rpkencwewe",
+	"version" : {
+		...
+	},
+	...
+}
 ```
+
+name은 클러스터에 속한 노드들 중에서 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODMxMDkxNjgsMTk4NzAzMDA3MiwtMT
-E1NTMyNjE5Nl19
+eyJoaXN0b3J5IjpbLTEyMTAyMzAzNTEsLTIwODMxMDkxNjgsMT
+k4NzAzMDA3MiwtMTE1NTMyNjE5Nl19
 -->
