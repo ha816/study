@@ -63,7 +63,14 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 ### 데이터 노드 
 
-데이터 노드느
+데이터 노드는 사용자가 색인한 문서를 저장하고, 검색 요청을 처리하여 결과를 반환하는 역할을 한다. 
+
+상황에 따라 자신이 받은 요청 중 자신이 처리할 수 있는 요청은 직접 처리하고, 다른 데이터 노드들이 처리해야할 요청은 해당 데이터 노드에 전달한다. 
+
+이때 어떤 노드로 요청을 전달할 것인지는 마스터 노드를 통해 받은 클러스터의 전체 상태 정보를 바탕으로 한다. 
+
+### 인제스트 노드
+
 
  
 
@@ -72,7 +79,7 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzIwMDgxMjAsLTE4NTUyMTMyOTYsLT
-E3Nzc4NTcxMTUsMjEzNzU3NzMwLC0xNDkyNTUxNTgzLC0yMDgz
-MTA5MTY4LDE5ODcwMzAwNzIsLTExNTUzMjYxOTZdfQ==
+eyJoaXN0b3J5IjpbLTY5MTc3NDc4OCwtMTg1NTIxMzI5NiwtMT
+c3Nzg1NzExNSwyMTM3NTc3MzAsLTE0OTI1NTE1ODMsLTIwODMx
+MDkxNjgsMTk4NzAzMDA3MiwtMTE1NTMyNjE5Nl19
 -->
