@@ -79,6 +79,10 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 코디네이트 노드는 실제 데이터를 저장하고 처리하지는 않지만, 사용자의 색인이나 검색 등 모든 요청을 데이터 노드에 전달하는 전달자 역할을 한다. 문서를 저장하지 않는 데이터 노드라고 생각할 수도 있다.
 
+## 유의사항
+
+클러스터 내에서 메타 데이터를 관리하는 마스터 노드는 반드시 한대다. 마스터 노드는 마스터의 역할이 가능한 노드와 실제 마스터 역하을 하는 노드 
+
 
 
  
@@ -88,8 +92,8 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MzYzODEzMywtMTQ5ODcwNjg3NiwtNj
-kxNzc0Nzg4LC0xODU1MjEzMjk2LC0xNzc3ODU3MTE1LDIxMzc1
-NzczMCwtMTQ5MjU1MTU4MywtMjA4MzEwOTE2OCwxOTg3MDMwMD
-cyLC0xMTU1MzI2MTk2XX0=
+eyJoaXN0b3J5IjpbLTIxMjQyMzc2MTUsMTE1MzYzODEzMywtMT
+Q5ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2LC0xNzc3
+ODU3MTE1LDIxMzc1NzczMCwtMTQ5MjU1MTU4MywtMjA4MzEwOT
+E2OCwxOTg3MDMwMDcyLC0xMTU1MzI2MTk2XX0=
 -->
