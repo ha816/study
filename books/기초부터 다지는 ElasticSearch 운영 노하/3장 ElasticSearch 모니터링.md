@@ -204,8 +204,10 @@ old GC는 시스템의 성능에 영향을 줄 수 있는 매우 중요한 정�
 |모니터링 시스템  | 장점 | 단점|
 |--|--|--|
 |Head 모니터링  | 클러스터의 전반적인 동작 상태를 확인가능 |성능 지표등은 확인이 어렵다|
-|프로메테우스 모니터링  | 다량의 클러스터를 운영하고 있을때 구축하기 ||
-|X-Pack 모니터링 |  ||
+|프로메테우스 모니터링  | 다량의 클러스터를 운영하고 있을때 구축하기 수월하다.| 확인할 수 있는 정보량이 X-Pack 모니터링에 비해 상대적으로 적다|
+|X-Pack 모니터링 | 모니터링 시스템 중 가장 많은 정보를 확인할 수 있다.| 6.3이전 버전이라면 Basic 라이선스를 갱신해야 하며, 색인 성능에 영향을 줄 수 있다.|
+
+
 
 
 
@@ -216,11 +218,11 @@ old GC는 시스템의 성능에 영향을 줄 수 있는 매우 중요한 정�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTE4MjAzOTcsLTE1OTExNTgyMDEsLT
-EyNjEzMTg1MjIsLTgyMDk1MDYxNywtMTI4OTYzMTM2NCw2Mjkz
-MzM5NzcsLTE1ODQwNDE1MTcsLTEzNzE3Mzc1NDQsLTI2MDgxND
-kwMiwtMjAzOTc3NjA5MCwtMTc2MzM5ODI3MCwxODExMTEzODgw
-LC0xMTkzMjU2ODU4LC04NzIxODM3NTksLTE3MDU2MTk4MTYsND
-QxMDA3Njk4LC0xNjQ1MzMxOTgzLDczNDI1MjE4NywxMDQxMzc3
-MDUsLTgzMzM3MjA2Ml19
+eyJoaXN0b3J5IjpbLTk2MzM1MTQxNiwtMTU5MTE1ODIwMSwtMT
+I2MTMxODUyMiwtODIwOTUwNjE3LC0xMjg5NjMxMzY0LDYyOTMz
+Mzk3NywtMTU4NDA0MTUxNywtMTM3MTczNzU0NCwtMjYwODE0OT
+AyLC0yMDM5Nzc2MDkwLC0xNzYzMzk4MjcwLDE4MTExMTM4ODAs
+LTExOTMyNTY4NTgsLTg3MjE4Mzc1OSwtMTcwNTYxOTgxNiw0ND
+EwMDc2OTgsLTE2NDUzMzE5ODMsNzM0MjUyMTg3LDEwNDEzNzcw
+NSwtODMzMzcyMDYyXX0=
 -->
