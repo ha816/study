@@ -199,6 +199,8 @@ old GC는 시스템의 성능에 영향을 줄 수 있는 매우 중요한 정�
 
 'Shard Legend'를 보면 해당 인덱스의 샤드들이 어떤 노드에 배치되어 있는지, 그리고 unassgined 상태의 샤드는 없는지 한눈에 살펴볼 수 있어서 노드간 샤드의 불균형 파악에 도움이 된다. 
 
+# 마치며 
+
 
 
 
@@ -209,11 +211,11 @@ old GC는 시스템의 성능에 영향을 줄 수 있는 매우 중요한 정�
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMDk1MDYxNywtMTI4OTYzMTM2NCw2Mj
-kzMzM5NzcsLTE1ODQwNDE1MTcsLTEzNzE3Mzc1NDQsLTI2MDgx
-NDkwMiwtMjAzOTc3NjA5MCwtMTc2MzM5ODI3MCwxODExMTEzOD
-gwLC0xMTkzMjU2ODU4LC04NzIxODM3NTksLTE3MDU2MTk4MTYs
-NDQxMDA3Njk4LC0xNjQ1MzMxOTgzLDczNDI1MjE4NywxMDQxMz
-c3MDUsLTgzMzM3MjA2MiwtNzk2NTEyNTA4LC05MTU1NTg3MTMs
-MTA5MDM1MjAyMF19
+eyJoaXN0b3J5IjpbLTEyNjEzMTg1MjIsLTgyMDk1MDYxNywtMT
+I4OTYzMTM2NCw2MjkzMzM5NzcsLTE1ODQwNDE1MTcsLTEzNzE3
+Mzc1NDQsLTI2MDgxNDkwMiwtMjAzOTc3NjA5MCwtMTc2MzM5OD
+I3MCwxODExMTEzODgwLC0xMTkzMjU2ODU4LC04NzIxODM3NTks
+LTE3MDU2MTk4MTYsNDQxMDA3Njk4LC0xNjQ1MzMxOTgzLDczND
+I1MjE4NywxMDQxMzc3MDUsLTgzMzM3MjA2MiwtNzk2NTEyNTA4
+LC05MTU1NTg3MTNdfQ==
 -->
