@@ -95,13 +95,15 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 # 인덱스와 타입 
 
-인덱스는 사용자의 데이터가 저장되는 논리적인 공간을 의미하며 타입은 인덱스 안
+인덱스는 사용자의 데이터가 저장되는 논리적인 공간을 의미하며 타입은 인덱스 안의 데이터를 유형별로 논리적으로 나눠 놓은 공간을 의미한다. 보통 인덱스와 타입에 대해 이야기 할때 RDBMS와 비교하기도 한다. 
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDQ3MjMyNDMsLTE2NjgyNDM4ODcsLT
+eyJoaXN0b3J5IjpbLTE4NDQ0NTkxNjYsLTE2NjgyNDM4ODcsLT
 EyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzODEzMywtMTQ5
 ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2LC0xNzc3OD
 U3MTE1LDIxMzc1NzczMCwtMTQ5MjU1MTU4MywtMjA4MzEwOTE2
