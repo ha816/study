@@ -95,15 +95,15 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 # 인덱스와 타입 
 
-인덱스는 
+인덱스는 사용자의 데이터가 저장되는 논리적인 공간을 의미하며 타입은 인덱스 안
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjgyNDM4ODcsLTEyNDcwOTU3MjAsLT
-E0Njk0Mzg3MjYsMTE1MzYzODEzMywtMTQ5ODcwNjg3NiwtNjkx
-Nzc0Nzg4LC0xODU1MjEzMjk2LC0xNzc3ODU3MTE1LDIxMzc1Nz
-czMCwtMTQ5MjU1MTU4MywtMjA4MzEwOTE2OCwxOTg3MDMwMDcy
-LC0xMTU1MzI2MTk2XX0=
+eyJoaXN0b3J5IjpbLTIxMDQ3MjMyNDMsLTE2NjgyNDM4ODcsLT
+EyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzODEzMywtMTQ5
+ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2LC0xNzc3OD
+U3MTE1LDIxMzc1NzczMCwtMTQ5MjU1MTU4MywtMjA4MzEwOTE2
+OCwxOTg3MDMwMDcyLC0xMTU1MzI2MTk2XX0=
 -->
