@@ -97,13 +97,13 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 인덱스는 사용자의 데이터가 저장되는 논리적인 공간을 의미하며 타입은 인덱스 안의 데이터를 유형별로 논리적으로 나눠 놓은 공간을 의미한다. 보통 인덱스와 타입에 대해 이야기 할때 RDBMS와 비교하기도 한다. 
 
-ES
+ES에서 인덱스는 RDBMS에서 데이터베이스, 타입은 테이블과 비슷한 개념이다. 하지만 RDBMS에서는 데이터베이스 안에 여러 개의 테이블을 가질 수 있는 것과 달리 ES는 6버전 이후로 반드시 하나의 인덱스에 하나의 타입만을 가질 수 있다
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NTk4MTA2OCwtMTg0NDQ1OTE2NiwtMT
+eyJoaXN0b3J5IjpbMTcwMzQxOTIzNCwtMTg0NDQ1OTE2NiwtMT
 Y2ODI0Mzg4NywtMTI0NzA5NTcyMCwtMTQ2OTQzODcyNiwxMTUz
 NjM4MTMzLC0xNDk4NzA2ODc2LC02OTE3NzQ3ODgsLTE4NTUyMT
 MyOTYsLTE3Nzc4NTcxMTUsMjEzNzU3NzMwLC0xNDkyNTUxNTgz
