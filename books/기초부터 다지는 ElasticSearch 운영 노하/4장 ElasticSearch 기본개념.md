@@ -103,16 +103,17 @@ nginx 웹서버에서 발생하는 접속 로그를 수집한다고 가정해보
 
 접속로그에 해당 인덱스에 쌓게 될 문서들의 타입명이 필요할 것이다. ES 6이후부터는 단일 타입만 허용하기 때문에 큰 이슈가 없다면 _doc이라는 타입명으로 저장된다. 
 
-사용자에게 영화와 책에 대한 검색 엔진을 구축한다고 가정하면 각각의 문서를 저장할 인덱스가 필요할 것이다. 영화와 책은 서로 다른 형태의 JSON 문서를 가지게 되기 때문에 인덱스도 분리하는 것이 
+사용자에게 영화와 책에 대한 검색 엔진을 구축한다고 가정하면 각각의 문서를 저장할 인덱스가 필요할 것이다. 영화와 책은 서로 다른 형태의 JSON 문서를 가지게 되기 때문에 인덱스도 분리하는 것이 좋다. 영화와 관련된 movies 인덱스에,  책과 관련된 문서는 books인덱스에 저장한다. 마찬가지로 타입도 _doc을 사용하게 된다. 
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDMyMTQxODcsLTE4NDQ0NTkxNjYsLT
-E2NjgyNDM4ODcsLTEyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1
-MzYzODEzMywtMTQ5ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1Mj
-EzMjk2LC0xNzc3ODU3MTE1LDIxMzc1NzczMCwtMTQ5MjU1MTU4
-MywtMjA4MzEwOTE2OCwxOTg3MDMwMDcyLC0xMTU1MzI2MTk2XX
-0=
+eyJoaXN0b3J5IjpbMTkyNjYyNTM1LC0xODQ0NDU5MTY2LC0xNj
+Y4MjQzODg3LC0xMjQ3MDk1NzIwLC0xNDY5NDM4NzI2LDExNTM2
+MzgxMzMsLTE0OTg3MDY4NzYsLTY5MTc3NDc4OCwtMTg1NTIxMz
+I5NiwtMTc3Nzg1NzExNSwyMTM3NTc3MzAsLTE0OTI1NTE1ODMs
+LTIwODMxMDkxNjgsMTk4NzAzMDA3MiwtMTE1NTMyNjE5Nl19
 -->
