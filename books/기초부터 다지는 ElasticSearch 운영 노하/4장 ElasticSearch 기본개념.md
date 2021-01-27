@@ -107,16 +107,16 @@ nginx 웹서버에서 발생하는 접속 로그를 수집한다고 가정해보
 
 인덱스의 이름은 클러스터 내에서 유일해야 하며, 동일한 이름의 다른 인덱스를 만들 수는 없다. 인덱스내에 저장된 문서들은 데이터 노드들에 분산되어 저장된다. 
 
-## 멀
+## 멀티타입(Deprecated)
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MjI0Nzg2NSwxOTI2NjI1MzUsLTE4ND
-Q0NTkxNjYsLTE2NjgyNDM4ODcsLTEyNDcwOTU3MjAsLTE0Njk0
-Mzg3MjYsMTE1MzYzODEzMywtMTQ5ODcwNjg3NiwtNjkxNzc0Nz
-g4LC0xODU1MjEzMjk2LC0xNzc3ODU3MTE1LDIxMzc1NzczMCwt
-MTQ5MjU1MTU4MywtMjA4MzEwOTE2OCwxOTg3MDMwMDcyLC0xMT
-U1MzI2MTk2XX0=
+eyJoaXN0b3J5IjpbLTIwOTQ5MTE5MTQsMTkyNjYyNTM1LC0xOD
+Q0NDU5MTY2LC0xNjY4MjQzODg3LC0xMjQ3MDk1NzIwLC0xNDY5
+NDM4NzI2LDExNTM2MzgxMzMsLTE0OTg3MDY4NzYsLTY5MTc3ND
+c4OCwtMTg1NTIxMzI5NiwtMTc3Nzg1NzExNSwyMTM3NTc3MzAs
+LTE0OTI1NTE1ODMsLTIwODMxMDkxNjgsMTk4NzAzMDA3MiwtMT
+E1NTMyNjE5Nl19
 -->
