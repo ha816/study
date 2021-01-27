@@ -101,16 +101,18 @@ ES에서 인덱스는 RDBMS에서 데이터베이스, 타입은 테이블과 비
 
 nginx 웹서버에서 발생하는 접속 로그를 수집한다고 가정해보자. 먼저 접속 로그를 저장할 인덱스가 필요할 것이다. 인덱스의 이름은 자유롭게 만들 수 있지만 nginx-access-log-2019.05.07과 같이 의미 있는 이름으로 짓는것이 해당 인덱스에 있는 로그 데이터들의 생성날짜, 유형등을 짐작 할 수 있어 나중에 정보 파악에 유리하다. 
 
-접속로그에 해당 인덱스에 쌓게 될 문서들의 타입명이 필요할 것이다. 
+접속로그에 해당 인덱스에 쌓게 될 문서들의 타입명이 필요할 것이다. ES 6이후부터는 단일 타입만 허용하기 때문에 큰 이슈가 없다면 _doc이라는 타입명으로 저장된다. 
+
+사용자에게 영화와 책에 대한 검색 엔진을 구축한다고 가정하면 각각의 문서를 저장할 인덱스가 필요할 것이다. 영화와 책은 서로 다른 형태의 JSON 문서를 가지게 되기 때문에 인덱스도 분리하는 것이 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NjQ0OTQ5MywtMTg0NDQ1OTE2NiwtMT
-Y2ODI0Mzg4NywtMTI0NzA5NTcyMCwtMTQ2OTQzODcyNiwxMTUz
-NjM4MTMzLC0xNDk4NzA2ODc2LC02OTE3NzQ3ODgsLTE4NTUyMT
-MyOTYsLTE3Nzc4NTcxMTUsMjEzNzU3NzMwLC0xNDkyNTUxNTgz
-LC0yMDgzMTA5MTY4LDE5ODcwMzAwNzIsLTExNTUzMjYxOTZdfQ
-==
+eyJoaXN0b3J5IjpbLTEwNDMyMTQxODcsLTE4NDQ0NTkxNjYsLT
+E2NjgyNDM4ODcsLTEyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1
+MzYzODEzMywtMTQ5ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1Mj
+EzMjk2LC0xNzc3ODU3MTE1LDIxMzc1NzczMCwtMTQ5MjU1MTU4
+MywtMjA4MzEwOTE2OCwxOTg3MDMwMDcyLC0xMTU1MzI2MTk2XX
+0=
 -->
