@@ -99,16 +99,16 @@ cluster_uuid는 클러스터의 UUID이다. 이 값 역시 클러스터에 속�
 
 ES에서 인덱스는 RDBMS에서 데이터베이스, 타입은 테이블과 비슷한 개념이다. 하지만 RDBMS에서는 데이터베이스 안에 여러 개의 테이블을 가질 수 있는 것과 달리 ES는 6버전 이후로 반드시 하나의 인덱스에 하나의 타입만을 가질 수 있다. 
 
-nginx 웹서버에서 발생하는 접속 로그를 수집한다고 가정해보자. 먼저 접속 로그를 저장할 인덱스가 필요할 것이다. 
+nginx 웹서버에서 발생하는 접속 로그를 수집한다고 가정해보자. 먼저 접속 로그를 저장할 인덱스가 필요할 것이다. 인덱스의 이름은 자유롭게 만들 수 있지만 nginx-access-log-2019.05.07과 같이 의미 있는
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjM5OTU3OTcsLTE4NDQ0NTkxNjYsLT
-E2NjgyNDM4ODcsLTEyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1
-MzYzODEzMywtMTQ5ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1Mj
-EzMjk2LC0xNzc3ODU3MTE1LDIxMzc1NzczMCwtMTQ5MjU1MTU4
-MywtMjA4MzEwOTE2OCwxOTg3MDMwMDcyLC0xMTU1MzI2MTk2XX
-0=
+eyJoaXN0b3J5IjpbLTQ2MDY4MDg1NywtMTg0NDQ1OTE2NiwtMT
+Y2ODI0Mzg4NywtMTI0NzA5NTcyMCwtMTQ2OTQzODcyNiwxMTUz
+NjM4MTMzLC0xNDk4NzA2ODc2LC02OTE3NzQ3ODgsLTE4NTUyMT
+MyOTYsLTE3Nzc4NTcxMTUsMjEzNzU3NzMwLC0xNDkyNTUxNTgz
+LC0yMDgzMTA5MTY4LDE5ODcwMzAwNzIsLTExNTUzMjYxOTZdfQ
+==
 -->
