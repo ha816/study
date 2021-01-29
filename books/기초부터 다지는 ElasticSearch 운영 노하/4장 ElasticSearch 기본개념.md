@@ -153,13 +153,17 @@ ES에 검색시 name필드로 elasticsearch에 해당하는  문서를 검색했
 
 ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 있으며, 이후에는 _doc이라는 이름으로 고정될 예정이다. 참고로 5버전 이하에서는 _ 언더바로 타입을 생성할 수 없다. 
 
+# 샤드와 세그먼트
+
+샤드는 인덱스에 색인되는 문서들이 저장되는 논리적인 공간을 의미한다. 세그먼트는 샤드의 데이터들을 가지고 있는 물리적인 파일을 의미한다. 인덱스와 샫
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MjA0MzA0OSwtMTc2MzI0NDIxNCwtND
-QyNzA2NDAyLC0yMDk0OTExOTE0LDE5MjY2MjUzNSwtMTg0NDQ1
-OTE2NiwtMTY2ODI0Mzg4NywtMTI0NzA5NTcyMCwtMTQ2OTQzOD
-cyNiwxMTUzNjM4MTMzLC0xNDk4NzA2ODc2LC02OTE3NzQ3ODgs
-LTE4NTUyMTMyOTYsLTE3Nzc4NTcxMTUsMjEzNzU3NzMwLC0xND
-kyNTUxNTgzLC0yMDgzMTA5MTY4LDE5ODcwMzAwNzIsLTExNTUz
-MjYxOTZdfQ==
+eyJoaXN0b3J5IjpbLTEyNTE3MjE1MzIsLTE3NjMyNDQyMTQsLT
+Q0MjcwNjQwMiwtMjA5NDkxMTkxNCwxOTI2NjI1MzUsLTE4NDQ0
+NTkxNjYsLTE2NjgyNDM4ODcsLTEyNDcwOTU3MjAsLTE0Njk0Mz
+g3MjYsMTE1MzYzODEzMywtMTQ5ODcwNjg3NiwtNjkxNzc0Nzg4
+LC0xODU1MjEzMjk2LC0xNzc3ODU3MTE1LDIxMzc1NzczMCwtMT
+Q5MjU1MTU4MywtMjA4MzEwOTE2OCwxOTg3MDMwMDcyLC0xMTU1
+MzI2MTk2XX0=
 -->
