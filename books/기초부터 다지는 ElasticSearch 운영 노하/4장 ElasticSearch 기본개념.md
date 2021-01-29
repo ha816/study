@@ -171,13 +171,15 @@ ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 �
 
 만약에 위 3번 샤드에서 문제가 발생된다면, 샤드 3에 저장된 문서들은 검색할 수 없거나 색인되지 않는 등의 문제가 생긴다. 문서들이 인덱스 내에 저장된다는 개념을 정확히 이해하려면 이런 장애가 발생했을때 장애의 규모를 정확하게 파악할 수 있다. 
 
+ES는 인덱스를 샤드로 나누고 데이터 노드에 샤드를 할당한다. 그리고 각각의 샤드에 문서를 저장하는 방식으로 사용자의 데이터를 저장한다.
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1OTMxMjI3OCw2MTc5OTIyMTksLTU3MT
-MwODUxOSwzMjE3NTM4NzEsLTE2ODQzODY0MzAsMTg5OTM3ODE5
-MiwzMTIxMzIyNjAsLTE3NjMyNDQyMTQsLTQ0MjcwNjQwMiwtMj
-A5NDkxMTkxNCwxOTI2NjI1MzUsLTE4NDQ0NTkxNjYsLTE2Njgy
-NDM4ODcsLTEyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzOD
-EzMywtMTQ5ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2
-LC0xNzc3ODU3MTE1XX0=
+eyJoaXN0b3J5IjpbLTE5OTI0NTIzMDEsMTM1OTMxMjI3OCw2MT
+c5OTIyMTksLTU3MTMwODUxOSwzMjE3NTM4NzEsLTE2ODQzODY0
+MzAsMTg5OTM3ODE5MiwzMTIxMzIyNjAsLTE3NjMyNDQyMTQsLT
+Q0MjcwNjQwMiwtMjA5NDkxMTkxNCwxOTI2NjI1MzUsLTE4NDQ0
+NTkxNjYsLTE2NjgyNDM4ODcsLTEyNDcwOTU3MjAsLTE0Njk0Mz
+g3MjYsMTE1MzYzODEzMywtMTQ5ODcwNjg3NiwtNjkxNzc0Nzg4
+LC0xODU1MjEzMjk2XX0=
 -->
