@@ -109,14 +109,16 @@ nginx 웹서버에서 발생하는 접속 로그를 수집한다고 가정해보
 
 ## 멀티타입(Deprecated)
 
+ES 버전 6 이상 버전은 하나의 인덱스에 하나의 타입만을 사용하도록 강제하고 있지만, 과거에는 다수의 타입을 사용할 수 있었다. 
 
+그러면 왜 6버전부터는 ㅁ
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTQ5MTE5MTQsMTkyNjYyNTM1LC0xOD
-Q0NDU5MTY2LC0xNjY4MjQzODg3LC0xMjQ3MDk1NzIwLC0xNDY5
-NDM4NzI2LDExNTM2MzgxMzMsLTE0OTg3MDY4NzYsLTY5MTc3ND
-c4OCwtMTg1NTIxMzI5NiwtMTc3Nzg1NzExNSwyMTM3NTc3MzAs
-LTE0OTI1NTE1ODMsLTIwODMxMDkxNjgsMTk4NzAzMDA3MiwtMT
-E1NTMyNjE5Nl19
+eyJoaXN0b3J5IjpbNDY0MTc4NzkzLC0yMDk0OTExOTE0LDE5Mj
+Y2MjUzNSwtMTg0NDQ1OTE2NiwtMTY2ODI0Mzg4NywtMTI0NzA5
+NTcyMCwtMTQ2OTQzODcyNiwxMTUzNjM4MTMzLC0xNDk4NzA2OD
+c2LC02OTE3NzQ3ODgsLTE4NTUyMTMyOTYsLTE3Nzc4NTcxMTUs
+MjEzNzU3NzMwLC0xNDkyNTUxNTgzLC0yMDgzMTA5MTY4LDE5OD
+cwMzAwNzIsLTExNTUzMjYxOTZdfQ==
 -->
