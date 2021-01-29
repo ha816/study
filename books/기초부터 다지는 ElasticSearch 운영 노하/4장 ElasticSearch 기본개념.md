@@ -116,11 +116,16 @@ ES 버전 6 이상 버전은 하나의 인덱스에 하나의 타입만을 사�
 
 예를 들어 test_index라는 인덱스에 test_type1, test_type2라는 타입을 만들고 문서를 각각 하나씩 색인했다고 가정하자. 
 
-
+그리고 JSON 문서로  
+```
+{
+	"name" 
+}
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDAzMjUwMTIsLTIwOTQ5MTE5MTQsMT
+eyJoaXN0b3J5IjpbLTE1MjYyMjkwNDcsLTIwOTQ5MTE5MTQsMT
 kyNjYyNTM1LC0xODQ0NDU5MTY2LC0xNjY4MjQzODg3LC0xMjQ3
 MDk1NzIwLC0xNDY5NDM4NzI2LDExNTM2MzgxMzMsLTE0OTg3MD
 Y4NzYsLTY5MTc3NDc4OCwtMTg1NTIxMzI5NiwtMTc3Nzg1NzEx
