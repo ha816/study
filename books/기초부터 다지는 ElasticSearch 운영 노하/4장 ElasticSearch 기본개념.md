@@ -111,14 +111,19 @@ nginx 웹서버에서 발생하는 접속 로그를 수집한다고 가정해보
 
 ES 버전 6 이상 버전은 하나의 인덱스에 하나의 타입만을 사용하도록 강제하고 있지만, 과거에는 다수의 타입을 사용할 수 있었다. 
 
-그러면 왜 6버전부터는 ㅁ
+그러면 왜 6버전부터는 멀티타입을 허용하지 않게 됬을까? 
+그 이유 중하나는 인덱스에 존재하는 서로 다른 타입에서 동일한 이름의 JSON 필드를 만들 수 있어서 의도치 않은 검색 결과가 나타나는 현상이 있었기 때문이다. 
+
+예를 들어 test_index라는 인덱스에 test_type1, test_type2라는 타입을 만들고 문서를 각각 하나씩 색인했다고 가정하자. 
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY0MTc4NzkzLC0yMDk0OTExOTE0LDE5Mj
-Y2MjUzNSwtMTg0NDQ1OTE2NiwtMTY2ODI0Mzg4NywtMTI0NzA5
-NTcyMCwtMTQ2OTQzODcyNiwxMTUzNjM4MTMzLC0xNDk4NzA2OD
-c2LC02OTE3NzQ3ODgsLTE4NTUyMTMyOTYsLTE3Nzc4NTcxMTUs
-MjEzNzU3NzMwLC0xNDkyNTUxNTgzLC0yMDgzMTA5MTY4LDE5OD
-cwMzAwNzIsLTExNTUzMjYxOTZdfQ==
+eyJoaXN0b3J5IjpbLTEyNDAzMjUwMTIsLTIwOTQ5MTE5MTQsMT
+kyNjYyNTM1LC0xODQ0NDU5MTY2LC0xNjY4MjQzODg3LC0xMjQ3
+MDk1NzIwLC0xNDY5NDM4NzI2LDExNTM2MzgxMzMsLTE0OTg3MD
+Y4NzYsLTY5MTc3NDc4OCwtMTg1NTIxMzI5NiwtMTc3Nzg1NzEx
+NSwyMTM3NTc3MzAsLTE0OTI1NTE1ODMsLTIwODMxMDkxNjgsMT
+k4NzAzMDA3MiwtMTE1NTMyNjE5Nl19
 -->
