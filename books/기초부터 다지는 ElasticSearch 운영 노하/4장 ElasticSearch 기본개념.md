@@ -173,15 +173,18 @@ ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 �
 
 ES는 인덱스를 샤드로 나누고 데이터 노드에 샤드를 할당한다. 그리고 각각의 샤드에 문서를 저장하는 방식으로 사용자의 데이터를 저장한다. 샤드는 원본이 프라이머리 샤드와 복제본이 레플리카 샤드로 구성된다. 
 
-만약 샤드 0에 장애가 발생하면 사드 0에 저장된 문서에는 접근할 수 없게 되고, 심각하게는 문서가 유실될 수도 있다.
+만약 샤드 0에 장애가 발생하면 사드 0에 저장된 문서에는 접근할 수 없게 되고, 심각하게는 문서가 유실될 수도 있다. 이러한 최악의 상황을 방지하기 위해 데이터를 한번더 복제해서 레플리카 샤드를 만들어 데이터의 안정성을 보장한다. 
+
+프라이머리 샤드는 최초 인덱스를 생성할 때 개수를 결정하는데, 이때 결정한 프라이머리 샤드의 개수는 이후에 변경할 수 없다. 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMzg5OTEwNSwtMTk5MjQ1MjMwMSwxMz
-U5MzEyMjc4LDYxNzk5MjIxOSwtNTcxMzA4NTE5LDMyMTc1Mzg3
-MSwtMTY4NDM4NjQzMCwxODk5Mzc4MTkyLDMxMjEzMjI2MCwtMT
-c2MzI0NDIxNCwtNDQyNzA2NDAyLC0yMDk0OTExOTE0LDE5MjY2
-MjUzNSwtMTg0NDQ1OTE2NiwtMTY2ODI0Mzg4NywtMTI0NzA5NT
-cyMCwtMTQ2OTQzODcyNiwxMTUzNjM4MTMzLC0xNDk4NzA2ODc2
-LC02OTE3NzQ3ODhdfQ==
+eyJoaXN0b3J5IjpbNjQ0NzMxNjg1LC02MDM4OTkxMDUsLTE5OT
+I0NTIzMDEsMTM1OTMxMjI3OCw2MTc5OTIyMTksLTU3MTMwODUx
+OSwzMjE3NTM4NzEsLTE2ODQzODY0MzAsMTg5OTM3ODE5MiwzMT
+IxMzIyNjAsLTE3NjMyNDQyMTQsLTQ0MjcwNjQwMiwtMjA5NDkx
+MTkxNCwxOTI2NjI1MzUsLTE4NDQ0NTkxNjYsLTE2NjgyNDM4OD
+csLTEyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzODEzMywt
+MTQ5ODcwNjg3Nl19
 -->
