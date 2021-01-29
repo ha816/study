@@ -164,20 +164,20 @@ ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 �
 |인덱스|
 |--|
 | 샤드0{"no":1, "id":1230, "name":"Park"}|
-| 샤드1{"no":1, "id":1230, "name":"Park"}|
-| 샤드2{"no":1, "id":1230, "name":"Park"}|
-| 샤드3{"no":1, "id":1230, "name":"Park"}|
-| 샤드4{"no":1, "id":1230, "name":"Park"}|
+| 샤드1{"no":2, "id":1230, "name":"Park"}|
+| 샤드2{"no":3, "id":1230, "name":"Park"}|
+| 샤드3{"no":4, "id":1230, "name":"Park"}|
+| 샤드4{"no":5, "id":1230, "name":"Park"}|
 
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIxNzUzODcxLC0xNjg0Mzg2NDMwLDE4OT
-kzNzgxOTIsMzEyMTMyMjYwLC0xNzYzMjQ0MjE0LC00NDI3MDY0
-MDIsLTIwOTQ5MTE5MTQsMTkyNjYyNTM1LC0xODQ0NDU5MTY2LC
-0xNjY4MjQzODg3LC0xMjQ3MDk1NzIwLC0xNDY5NDM4NzI2LDEx
-NTM2MzgxMzMsLTE0OTg3MDY4NzYsLTY5MTc3NDc4OCwtMTg1NT
-IxMzI5NiwtMTc3Nzg1NzExNSwyMTM3NTc3MzAsLTE0OTI1NTE1
-ODMsLTIwODMxMDkxNjhdfQ==
+eyJoaXN0b3J5IjpbLTU3MTMwODUxOSwzMjE3NTM4NzEsLTE2OD
+QzODY0MzAsMTg5OTM3ODE5MiwzMTIxMzIyNjAsLTE3NjMyNDQy
+MTQsLTQ0MjcwNjQwMiwtMjA5NDkxMTkxNCwxOTI2NjI1MzUsLT
+E4NDQ0NTkxNjYsLTE2NjgyNDM4ODcsLTEyNDcwOTU3MjAsLTE0
+Njk0Mzg3MjYsMTE1MzYzODEzMywtMTQ5ODcwNjg3NiwtNjkxNz
+c0Nzg4LC0xODU1MjEzMjk2LC0xNzc3ODU3MTE1LDIxMzc1Nzcz
+MCwtMTQ5MjU1MTU4M119
 -->
