@@ -114,21 +114,25 @@ ES 버전 6 이상 버전은 하나의 인덱스에 하나의 타입만을 사�
 그러면 왜 6버전부터는 멀티타입을 허용하지 않게 됬을까? 
 그 이유 중하나는 인덱스에 존재하는 서로 다른 타입에서 동일한 이름의 JSON 필드를 만들 수 있어서 의도치 않은 검색 결과가 나타나는 현상이 있었기 때문이다. 
 
-예를 들어 test_index라는 인덱스에 test_type1, test_type2라는 타입을 만들고 문서를 각각 하나씩 색인했다고 가정하자. 
-
-그리고 JSON 문서로  
+예를 들어 test_index라는 인덱스에 test_type1, test_type2라는 타입을 만들고 아래와 같은 문서를 각각 하나씩 색인했다고 가정하자. 
 ```
 {
-	"name" 
+	"name": "elasticsearch",
+	"type_name": "test_type1",
+}
+{
+	"name": "elasticsearch",
+	"type_name": "test_type2",
 }
 ```
+그러면 두 문서는 서로 다른 타입이지만 name이라는 같은 필드를 가지게 된다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjYyMjkwNDcsLTIwOTQ5MTE5MTQsMT
-kyNjYyNTM1LC0xODQ0NDU5MTY2LC0xNjY4MjQzODg3LC0xMjQ3
-MDk1NzIwLC0xNDY5NDM4NzI2LDExNTM2MzgxMzMsLTE0OTg3MD
-Y4NzYsLTY5MTc3NDc4OCwtMTg1NTIxMzI5NiwtMTc3Nzg1NzEx
-NSwyMTM3NTc3MzAsLTE0OTI1NTE1ODMsLTIwODMxMDkxNjgsMT
-k4NzAzMDA3MiwtMTE1NTMyNjE5Nl19
+eyJoaXN0b3J5IjpbMTA3MTAxMzM5MywtMjA5NDkxMTkxNCwxOT
+I2NjI1MzUsLTE4NDQ0NTkxNjYsLTE2NjgyNDM4ODcsLTEyNDcw
+OTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzODEzMywtMTQ5ODcwNj
+g3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2LC0xNzc3ODU3MTE1
+LDIxMzc1NzczMCwtMTQ5MjU1MTU4MywtMjA4MzEwOTE2OCwxOT
+g3MDMwMDcyLC0xMTU1MzI2MTk2XX0=
 -->
