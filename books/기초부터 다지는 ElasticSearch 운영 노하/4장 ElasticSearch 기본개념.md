@@ -139,17 +139,21 @@ curl -XGET "http://localhost:9200/test_index/_search?q=name:elasticsearch&pretty
 			"_index" : "test_index",
 			"_type" : "test_type1",
 			"_id" : "abcde", 
+			},
+			{
+			"_index" : "test_index",
+			"_type" : "test_type2",
+			"_id" : "abcde", 
 			}
 		]
 	]
 }
-
-
 ```
+ES에 검색시 name필드로 elasticsearch에 해당하는  문서를 검색했다. test_type1, test_type2
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NTQwMzkwNywtNDQyNzA2NDAyLC0yMD
+eyJoaXN0b3J5IjpbLTI4MTU4NTY5NiwtNDQyNzA2NDAyLC0yMD
 k0OTExOTE0LDE5MjY2MjUzNSwtMTg0NDQ1OTE2NiwtMTY2ODI0
 Mzg4NywtMTI0NzA5NTcyMCwtMTQ2OTQzODcyNiwxMTUzNjM4MT
 MzLC0xNDk4NzA2ODc2LC02OTE3NzQ3ODgsLTE4NTUyMTMyOTYs
