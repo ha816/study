@@ -132,7 +132,15 @@ curl -XGET "http://localhost:9200/test_index/_search?q=name:elasticsearch&pretty
 {
 ...
 	"hits" : [
-
+		"total" : 2,
+		"max_score" : 0.28...
+		"hits" : [
+			{
+			"_index" : "test_index",
+			"_type" : "test_type1",
+			"_id" : "abcde", 
+			}
+		]
 	]
 }
 
@@ -141,10 +149,10 @@ curl -XGET "http://localhost:9200/test_index/_search?q=name:elasticsearch&pretty
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzI5ODI1MTgsLTQ0MjcwNjQwMiwtMj
-A5NDkxMTkxNCwxOTI2NjI1MzUsLTE4NDQ0NTkxNjYsLTE2Njgy
-NDM4ODcsLTEyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzOD
-EzMywtMTQ5ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2
-LC0xNzc3ODU3MTE1LDIxMzc1NzczMCwtMTQ5MjU1MTU4MywtMj
-A4MzEwOTE2OCwxOTg3MDMwMDcyLC0xMTU1MzI2MTk2XX0=
+eyJoaXN0b3J5IjpbMTM2NTQwMzkwNywtNDQyNzA2NDAyLC0yMD
+k0OTExOTE0LDE5MjY2MjUzNSwtMTg0NDQ1OTE2NiwtMTY2ODI0
+Mzg4NywtMTI0NzA5NTcyMCwtMTQ2OTQzODcyNiwxMTUzNjM4MT
+MzLC0xNDk4NzA2ODc2LC02OTE3NzQ3ODgsLTE4NTUyMTMyOTYs
+LTE3Nzc4NTcxMTUsMjEzNzU3NzMwLC0xNDkyNTUxNTgzLC0yMD
+gzMTA5MTY4LDE5ODcwMzAwNzIsLTExNTUzMjYxOTZdfQ==
 -->
