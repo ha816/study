@@ -175,16 +175,16 @@ ES는 인덱스를 샤드로 나누고 데이터 노드에 샤드를 할당한�
 
 만약 샤드 0에 장애가 발생하면 사드 0에 저장된 문서에는 접근할 수 없게 되고, 심각하게는 문서가 유실될 수도 있다. 이러한 최악의 상황을 방지하기 위해 데이터를 한번더 복제해서 레플리카 샤드를 만들어 데이터의 안정성을 보장한다. 
 
-프라이머리 샤드는 최초 인덱스를 생성할 때 개수를 결정하는데, 이때 결정한 프라이머리 샤드의 개수는 이후에 변경할 수 없다. 
+프라이머리 샤드는 최초 인덱스를 생성할 때 개수를 결정하는데, 이때 결정한 프라이머리 샤드의 개수는 이후에 변경할 수 없다. 따라서 인덱스를 초기에 생성할때, 몇개의 프라이머리 샤드를 생성할지 신중하게 결정해야 한다. 하지만 아쉽게도 프라이머리 샤드의 개수를 결정하는 것은 정해져 있는 방법이 있는 것이 아니고 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ0NzMxNjg1LC02MDM4OTkxMDUsLTE5OT
-I0NTIzMDEsMTM1OTMxMjI3OCw2MTc5OTIyMTksLTU3MTMwODUx
-OSwzMjE3NTM4NzEsLTE2ODQzODY0MzAsMTg5OTM3ODE5MiwzMT
-IxMzIyNjAsLTE3NjMyNDQyMTQsLTQ0MjcwNjQwMiwtMjA5NDkx
-MTkxNCwxOTI2NjI1MzUsLTE4NDQ0NTkxNjYsLTE2NjgyNDM4OD
-csLTEyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzODEzMywt
-MTQ5ODcwNjg3Nl19
+eyJoaXN0b3J5IjpbLTk5MjA5OTEwNiw2NDQ3MzE2ODUsLTYwMz
+g5OTEwNSwtMTk5MjQ1MjMwMSwxMzU5MzEyMjc4LDYxNzk5MjIx
+OSwtNTcxMzA4NTE5LDMyMTc1Mzg3MSwtMTY4NDM4NjQzMCwxOD
+k5Mzc4MTkyLDMxMjEzMjI2MCwtMTc2MzI0NDIxNCwtNDQyNzA2
+NDAyLC0yMDk0OTExOTE0LDE5MjY2MjUzNSwtMTg0NDQ1OTE2Ni
+wtMTY2ODI0Mzg4NywtMTI0NzA5NTcyMCwtMTQ2OTQzODcyNiwx
+MTUzNjM4MTMzXX0=
 -->
