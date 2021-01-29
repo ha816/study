@@ -125,11 +125,15 @@ ES 버전 6 이상 버전은 하나의 인덱스에 하나의 타입만을 사�
 	"type_name": "test_type2",
 }
 ```
-그러면 두 문서는 서로 다른 타입이지만 name이라는 같은 필드를 가지게 된다.
+그러면 두 문서는 서로 다른 타입이지만 name이라는 같은 필드를 가지게 된다. 그리고 아래와 같은 쿼리를 test_index에 요청해보자.
+
+```
+curl -XGET "http://localhost:9200/test_index/_search?q=name:elasticsearch&pretty"
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MTAxMzM5MywtMjA5NDkxMTkxNCwxOT
+eyJoaXN0b3J5IjpbLTQ0MjcwNjQwMiwtMjA5NDkxMTkxNCwxOT
 I2NjI1MzUsLTE4NDQ0NTkxNjYsLTE2NjgyNDM4ODcsLTEyNDcw
 OTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzODEzMywtMTQ5ODcwNj
 g3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2LC0xNzc3ODU3MTE1
