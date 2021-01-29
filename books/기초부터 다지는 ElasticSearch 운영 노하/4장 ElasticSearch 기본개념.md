@@ -129,14 +129,22 @@ ES 버전 6 이상 버전은 하나의 인덱스에 하나의 타입만을 사�
 
 ```
 curl -XGET "http://localhost:9200/test_index/_search?q=name:elasticsearch&pretty"
+{
+...
+	"hits" : [
+
+	]
+}
+
+
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MjcwNjQwMiwtMjA5NDkxMTkxNCwxOT
-I2NjI1MzUsLTE4NDQ0NTkxNjYsLTE2NjgyNDM4ODcsLTEyNDcw
-OTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzODEzMywtMTQ5ODcwNj
-g3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2LC0xNzc3ODU3MTE1
-LDIxMzc1NzczMCwtMTQ5MjU1MTU4MywtMjA4MzEwOTE2OCwxOT
-g3MDMwMDcyLC0xMTU1MzI2MTk2XX0=
+eyJoaXN0b3J5IjpbLTE5NzI5ODI1MTgsLTQ0MjcwNjQwMiwtMj
+A5NDkxMTkxNCwxOTI2NjI1MzUsLTE4NDQ0NTkxNjYsLTE2Njgy
+NDM4ODcsLTEyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzOD
+EzMywtMTQ5ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2
+LC0xNzc3ODU3MTE1LDIxMzc1NzczMCwtMTQ5MjU1MTU4MywtMj
+A4MzEwOTE2OCwxOTg3MDMwMDcyLC0xMTU1MzI2MTk2XX0=
 -->
