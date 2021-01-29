@@ -164,20 +164,21 @@ ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 �
 |인덱스|
 |--|
 | 샤드0{"no":1, "id":1230, "name":"Park"}|
-| 샤드1{"no":2, "id":1230, "name":"Park"}|
-| 샤드2{"no":3, "id":1230, "name":"Park"}|
-| 샤드3{"no":4, "id":1230, "name":"Park"}|
-| 샤드4{"no":5, "id":1230, "name":"Park"}|
+| 샤드1{"no":2, "id":4235, "name":"kim"}|
+| 샤드2{"no":3, "id":2358, "name":"lee"}|
+| 샤드3{"no":4, "id":4444, "name":"kang"}|
+| 샤드4{"no":5, "id":5555, "name":"lee"}|
 
+만약에 위 3번 샤드에서 문제가 발생된다면, 샤드 3에 저장된 문서들만 검색할 수 없거나 샤드 3에 저장되야할 문서들만 
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTMwODUxOSwzMjE3NTM4NzEsLTE2OD
-QzODY0MzAsMTg5OTM3ODE5MiwzMTIxMzIyNjAsLTE3NjMyNDQy
-MTQsLTQ0MjcwNjQwMiwtMjA5NDkxMTkxNCwxOTI2NjI1MzUsLT
-E4NDQ0NTkxNjYsLTE2NjgyNDM4ODcsLTEyNDcwOTU3MjAsLTE0
-Njk0Mzg3MjYsMTE1MzYzODEzMywtMTQ5ODcwNjg3NiwtNjkxNz
-c0Nzg4LC0xODU1MjEzMjk2LC0xNzc3ODU3MTE1LDIxMzc1Nzcz
-MCwtMTQ5MjU1MTU4M119
+eyJoaXN0b3J5IjpbLTQ3NTE3MTkyOSwtNTcxMzA4NTE5LDMyMT
+c1Mzg3MSwtMTY4NDM4NjQzMCwxODk5Mzc4MTkyLDMxMjEzMjI2
+MCwtMTc2MzI0NDIxNCwtNDQyNzA2NDAyLC0yMDk0OTExOTE0LD
+E5MjY2MjUzNSwtMTg0NDQ1OTE2NiwtMTY2ODI0Mzg4NywtMTI0
+NzA5NTcyMCwtMTQ2OTQzODcyNiwxMTUzNjM4MTMzLC0xNDk4Nz
+A2ODc2LC02OTE3NzQ3ODgsLTE4NTUyMTMyOTYsLTE3Nzc4NTcx
+MTUsMjEzNzU3NzMwXX0=
 -->
