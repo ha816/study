@@ -151,14 +151,15 @@ curl -XGET "http://localhost:9200/test_index/_search?q=name:elasticsearch&pretty
 ```
 ES에 검색시 name필드로 elasticsearch에 해당하는  문서를 검색했다. test_type1, test_type2 문서가 모두 검색된다. 이러한 문제 때문에 6버전부터는 하나의 인덱스에 하나의 타입만 지원하게 되었다.
 
-ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 있으며, 이후에는 _doc이라는 이름으로 고정될 예정이다. 
+ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 있으며, 이후에는 _doc이라는 이름으로 고정될 예정이다. 참고로 5버전 이하에서는 _ 언더바로 타입을 생성할 수 없다. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjMyNDQyMTQsLTQ0MjcwNjQwMiwtMj
-A5NDkxMTkxNCwxOTI2NjI1MzUsLTE4NDQ0NTkxNjYsLTE2Njgy
-NDM4ODcsLTEyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzOD
-EzMywtMTQ5ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2
-LC0xNzc3ODU3MTE1LDIxMzc1NzczMCwtMTQ5MjU1MTU4MywtMj
-A4MzEwOTE2OCwxOTg3MDMwMDcyLC0xMTU1MzI2MTk2XX0=
+eyJoaXN0b3J5IjpbMTc0MjA0MzA0OSwtMTc2MzI0NDIxNCwtND
+QyNzA2NDAyLC0yMDk0OTExOTE0LDE5MjY2MjUzNSwtMTg0NDQ1
+OTE2NiwtMTY2ODI0Mzg4NywtMTI0NzA5NTcyMCwtMTQ2OTQzOD
+cyNiwxMTUzNjM4MTMzLC0xNDk4NzA2ODc2LC02OTE3NzQ3ODgs
+LTE4NTUyMTMyOTYsLTE3Nzc4NTcxMTUsMjEzNzU3NzMwLC0xND
+kyNTUxNTgzLC0yMDgzMTA5MTY4LDE5ODcwMzAwNzIsLTExNTUz
+MjYxOTZdfQ==
 -->
