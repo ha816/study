@@ -157,15 +157,23 @@ ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 �
 
 샤드는 인덱스에 색인되는 문서들이 저장되는 논리적인 공간을 의미한다. 세그먼트는 샤드의 데이터들을 가지고 있는 물리적인 파일을 의미한다. 인덱스와 샤드, 세그먼트의 관계는 아래와 같다. 
 
-하나의 인덱스는 다수의 샤드로 구성되고 하나의 샤드는 다수의 세그먼트로 구성된다. 샤드는 1개 이상의 세그먼트로 구성되는데 샤드마다 세그먼트의 개수는 서로 다룰 수 있다.  
+하나의 인덱스는 다수의 샤드로 구성되고 하나의 샤드는 다수의 세그먼트로 구성된다. 샤드는 1개 이상의 세그먼트로 구성되는데 샤드마다 세그먼트의 개수는 서로 다룰 수 있다. 
+
+만약 5개의 샤드로 구성된 인덱스라면 실제 문서는 아래와 같이 각각의 샤드에 나누어 저장된다. 
+
+|인덱스|
+|--|
+| 샤드{"no":1, "id"}|
+
+ 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODQzODY0MzAsMTg5OTM3ODE5MiwzMT
-IxMzIyNjAsLTE3NjMyNDQyMTQsLTQ0MjcwNjQwMiwtMjA5NDkx
-MTkxNCwxOTI2NjI1MzUsLTE4NDQ0NTkxNjYsLTE2NjgyNDM4OD
-csLTEyNDcwOTU3MjAsLTE0Njk0Mzg3MjYsMTE1MzYzODEzMywt
-MTQ5ODcwNjg3NiwtNjkxNzc0Nzg4LC0xODU1MjEzMjk2LC0xNz
-c3ODU3MTE1LDIxMzc1NzczMCwtMTQ5MjU1MTU4MywtMjA4MzEw
-OTE2OCwxOTg3MDMwMDcyXX0=
+eyJoaXN0b3J5IjpbLTEzOTM5OTIzOTQsLTE2ODQzODY0MzAsMT
+g5OTM3ODE5MiwzMTIxMzIyNjAsLTE3NjMyNDQyMTQsLTQ0Mjcw
+NjQwMiwtMjA5NDkxMTkxNCwxOTI2NjI1MzUsLTE4NDQ0NTkxNj
+YsLTE2NjgyNDM4ODcsLTEyNDcwOTU3MjAsLTE0Njk0Mzg3MjYs
+MTE1MzYzODEzMywtMTQ5ODcwNjg3NiwtNjkxNzc0Nzg4LC0xOD
+U1MjEzMjk2LC0xNzc3ODU3MTE1LDIxMzc1NzczMCwtMTQ5MjU1
+MTU4MywtMjA4MzEwOTE2OF19
 -->
