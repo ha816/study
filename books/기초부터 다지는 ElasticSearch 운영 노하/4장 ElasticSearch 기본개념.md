@@ -189,18 +189,20 @@ ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 �
 
 프라이머리 샤드는 최초 인덱스를 생성할 때 사용할 샤드 개수를 결정하는데, 이때 결정한 프라이머리 샤드의 개수는 이후에 변경할 수 없다. 따라서 인덱스를 초기에 생성할때, 몇개의 프라이머리 샤드를 생성할지 신중하게 결정해야 한다. 하지만 아쉽게도 프라이머리 샤드의 개수를 결정하는 것은 정해져 있는 방법이 있는 것이 아니고 ES 사용 용도에 따라 천차만별이기 때문에 굉장히 어려운 작업이다. 이것은 12장에서 다루게 될 것이다. 
 
-ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 단위
+ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 단위로 문서를 저장한다. 샤드의 상태를 정상적으로 유지하고 장애 상황에서도 유실되지 않게 하는것은 꼭 필요한 작업이다. 이런 클러스터 서비스의 연속성을 유지하기 위해 샤드를 프라이머리 샤드와 레플리카 샤드로 나누어 관리한다. 
+
+레플리카 샤드는 프라이머리 샤드와 동일한 문서를 가진다. 때문에 사용자의 검색 요청에도 응답이 가능하다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODcwNjE5NzEsMTEzNDcxNjg0NywxMT
-M1MTk1Mjk5LDIxMDU3NzgwOTksMTA0ODI4NjYzMSwtMTg4OTA4
-NjQxNiwyMDQ1OTc0MzEsOTAxNDQ5NzA5LDY0NDczMTY4NSwtNj
-AzODk5MTA1LC0xOTkyNDUyMzAxLDEzNTkzMTIyNzgsNjE3OTky
-MjE5LC01NzEzMDg1MTksMzIxNzUzODcxLC0xNjg0Mzg2NDMwLD
-E4OTkzNzgxOTIsMzEyMTMyMjYwLC0xNzYzMjQ0MjE0LC00NDI3
-MDY0MDJdfQ==
+eyJoaXN0b3J5IjpbLTc2Mjk4MjY1OCwxMTM0NzE2ODQ3LDExMz
+UxOTUyOTksMjEwNTc3ODA5OSwxMDQ4Mjg2NjMxLC0xODg5MDg2
+NDE2LDIwNDU5NzQzMSw5MDE0NDk3MDksNjQ0NzMxNjg1LC02MD
+M4OTkxMDUsLTE5OTI0NTIzMDEsMTM1OTMxMjI3OCw2MTc5OTIy
+MTksLTU3MTMwODUxOSwzMjE3NTM4NzEsLTE2ODQzODY0MzAsMT
+g5OTM3ODE5MiwzMTIxMzIyNjAsLTE3NjMyNDQyMTQsLTQ0Mjcw
+NjQwMl19
 -->
