@@ -221,7 +221,9 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 동적 매핑은 미리 스키마를 정의하지 않은 상태에서 최초에 색인된 문서를 바탕으로 자동으로 매핑을 생성해주는 방식으로 높은 편의성을 제공한다. 두 방식의 자세한 차이점은 10장의 색인 성능 최적화에서 알아보자. 
 
-매핑이 생성된 이후로 생성되느
+매핑이 생성된 이후로 생성되는 문서는 자연스럽게 기존 매핑 정보에 따라 색인되어야 한다. 예를 들어, long 데이터 타입으로 매핑이 생성된 필드는 문자열 데이터가 들어오면 색인되지 않는다. 
+
+
 
 
 
@@ -231,11 +233,11 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTk4NzYzMTcsODA4OTE3OTIsLTIxMz
-c4NTIyMjYsLTc2Mjk4MjY1OCwxMTM0NzE2ODQ3LDExMzUxOTUy
-OTksMjEwNTc3ODA5OSwxMDQ4Mjg2NjMxLC0xODg5MDg2NDE2LD
-IwNDU5NzQzMSw5MDE0NDk3MDksNjQ0NzMxNjg1LC02MDM4OTkx
-MDUsLTE5OTI0NTIzMDEsMTM1OTMxMjI3OCw2MTc5OTIyMTksLT
-U3MTMwODUxOSwzMjE3NTM4NzEsLTE2ODQzODY0MzAsMTg5OTM3
-ODE5Ml19
+eyJoaXN0b3J5IjpbNjczMDg2MzA4LDgwODkxNzkyLC0yMTM3OD
+UyMjI2LC03NjI5ODI2NTgsMTEzNDcxNjg0NywxMTM1MTk1Mjk5
+LDIxMDU3NzgwOTksMTA0ODI4NjYzMSwtMTg4OTA4NjQxNiwyMD
+Q1OTc0MzEsOTAxNDQ5NzA5LDY0NDczMTY4NSwtNjAzODk5MTA1
+LC0xOTkyNDUyMzAxLDEzNTkzMTIyNzgsNjE3OTkyMjE5LC01Nz
+EzMDg1MTksMzIxNzUzODcxLC0xNjg0Mzg2NDMwLDE4OTkzNzgx
+OTJdfQ==
 -->
