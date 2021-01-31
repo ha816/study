@@ -229,7 +229,7 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 |--|--|--|
 | String  | 문자열 데이터 타입  |text, keyword |
 | Numeric  | 숫자형 데이터 타입  |long, integer, short, byte, double, float, half_float, scaled_float|
-| Date  | 문자열 데이터 타입  |text, keyword |
+| Date  | 날짜형 ㅇ데이터 타입  |text, keyword |
 
 
 
@@ -240,11 +240,11 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1Mzg5MDYxMyw2NzMwODYzMDgsODA4OT
-E3OTIsLTIxMzc4NTIyMjYsLTc2Mjk4MjY1OCwxMTM0NzE2ODQ3
-LDExMzUxOTUyOTksMjEwNTc3ODA5OSwxMDQ4Mjg2NjMxLC0xOD
-g5MDg2NDE2LDIwNDU5NzQzMSw5MDE0NDk3MDksNjQ0NzMxNjg1
-LC02MDM4OTkxMDUsLTE5OTI0NTIzMDEsMTM1OTMxMjI3OCw2MT
-c5OTIyMTksLTU3MTMwODUxOSwzMjE3NTM4NzEsLTE2ODQzODY0
-MzBdfQ==
+eyJoaXN0b3J5IjpbODIzNTY5MzI5LDY3MzA4NjMwOCw4MDg5MT
+c5MiwtMjEzNzg1MjIyNiwtNzYyOTgyNjU4LDExMzQ3MTY4NDcs
+MTEzNTE5NTI5OSwyMTA1Nzc4MDk5LDEwNDgyODY2MzEsLTE4OD
+kwODY0MTYsMjA0NTk3NDMxLDkwMTQ0OTcwOSw2NDQ3MzE2ODUs
+LTYwMzg5OTEwNSwtMTk5MjQ1MjMwMSwxMzU5MzEyMjc4LDYxNz
+k5MjIxOSwtNTcxMzA4NTE5LDMyMTc1Mzg3MSwtMTY4NDM4NjQz
+MF19
 -->
