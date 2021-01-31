@@ -231,7 +231,11 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 | Numeric  | 숫자형 데이터 타입  |long, integer, short, byte, double, float, half_float, scaled_float|
 | Date  | 날짜형 데이터 타입  | date|
 | Boolean  | 불 데이터 타입  | boolean|
-| Date  | 날짜형 데이터 타입  | date|
+| Binary  | 바이너리 데이터 타입  | binary|
+| Range  | 범주 데이터 타입  | integer_range, float_range, long_range, double_range, date_range|
+
+위의 필드 내용에 따라 지정할 수 있는 필드 데이터타입이 다르며, 같은 종류의 데이터라도 여러 필드 타입이 존재한다. 
+
 
 
 
@@ -242,11 +246,11 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjU2NDE1NjMsODIzNTY5MzI5LDY3Mz
-A4NjMwOCw4MDg5MTc5MiwtMjEzNzg1MjIyNiwtNzYyOTgyNjU4
-LDExMzQ3MTY4NDcsMTEzNTE5NTI5OSwyMTA1Nzc4MDk5LDEwND
-gyODY2MzEsLTE4ODkwODY0MTYsMjA0NTk3NDMxLDkwMTQ0OTcw
-OSw2NDQ3MzE2ODUsLTYwMzg5OTEwNSwtMTk5MjQ1MjMwMSwxMz
-U5MzEyMjc4LDYxNzk5MjIxOSwtNTcxMzA4NTE5LDMyMTc1Mzg3
-MV19
+eyJoaXN0b3J5IjpbMTcxMjQzNzA2Myw4MjM1NjkzMjksNjczMD
+g2MzA4LDgwODkxNzkyLC0yMTM3ODUyMjI2LC03NjI5ODI2NTgs
+MTEzNDcxNjg0NywxMTM1MTk1Mjk5LDIxMDU3NzgwOTksMTA0OD
+I4NjYzMSwtMTg4OTA4NjQxNiwyMDQ1OTc0MzEsOTAxNDQ5NzA5
+LDY0NDczMTY4NSwtNjAzODk5MTA1LC0xOTkyNDUyMzAxLDEzNT
+kzMTIyNzgsNjE3OTkyMjE5LC01NzEzMDg1MTksMzIxNzUzODcx
+XX0=
 -->
