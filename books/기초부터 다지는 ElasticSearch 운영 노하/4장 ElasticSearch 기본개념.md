@@ -191,18 +191,20 @@ ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 �
 
 ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 단위로 문서를 저장한다. 샤드의 상태를 정상적으로 유지하고 장애 상황에서도 유실되지 않게 하는것은 꼭 필요한 작업이다. 이런 클러스터 서비스의 연속성을 유지하기 위해 샤드를 프라이머리 샤드와 레플리카 샤드로 나누어 관리한다. 
 
-레플리카 샤드는 프라이머리 샤드와 동일한 문서를 가진다. 때문에 사용자의 검색 요청에도 응답이 가능하다. 
+레플리카 샤드는 프라이머리 샤드와 동일한 문서를 가진다. 때문에 사용자의 검색 요청에도 응답이 가능하다. 따라서 레플리카 샤드를 늘리면 응답 속도를 높일 수 있다. 
+
+먼저 프라이머리 샤드를 살펴보자. 기본적으로 프라이머리 샤드는 5개의 디폴트 값을 가진다. 인덱스가 5개의 프라이머리 샤드로 구성되고 나면, 사용자의 문서는 각 프라이머리 샤드에 분산되어 저장된다. 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2Mjk4MjY1OCwxMTM0NzE2ODQ3LDExMz
-UxOTUyOTksMjEwNTc3ODA5OSwxMDQ4Mjg2NjMxLC0xODg5MDg2
-NDE2LDIwNDU5NzQzMSw5MDE0NDk3MDksNjQ0NzMxNjg1LC02MD
-M4OTkxMDUsLTE5OTI0NTIzMDEsMTM1OTMxMjI3OCw2MTc5OTIy
-MTksLTU3MTMwODUxOSwzMjE3NTM4NzEsLTE2ODQzODY0MzAsMT
-g5OTM3ODE5MiwzMTIxMzIyNjAsLTE3NjMyNDQyMTQsLTQ0Mjcw
-NjQwMl19
+eyJoaXN0b3J5IjpbMTcyNDA1NjE1MywtNzYyOTgyNjU4LDExMz
+Q3MTY4NDcsMTEzNTE5NTI5OSwyMTA1Nzc4MDk5LDEwNDgyODY2
+MzEsLTE4ODkwODY0MTYsMjA0NTk3NDMxLDkwMTQ0OTcwOSw2ND
+Q3MzE2ODUsLTYwMzg5OTEwNSwtMTk5MjQ1MjMwMSwxMzU5MzEy
+Mjc4LDYxNzk5MjIxOSwtNTcxMzA4NTE5LDMyMTc1Mzg3MSwtMT
+Y4NDM4NjQzMCwxODk5Mzc4MTkyLDMxMjEzMjI2MCwtMTc2MzI0
+NDIxNF19
 -->
