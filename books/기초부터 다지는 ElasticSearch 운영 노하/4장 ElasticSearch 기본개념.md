@@ -211,7 +211,7 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 사용자가 따로 설정하지 않는다면 각 프라이머리 샤드당 하나의 레플리케이션 샤드를 만들도록 기본설정이 되어 있다. 변경하고 싶다면 검색하여 찾아보자. 
 
-
+레플리카 샤드의 갯수는 운영중에도 변경이 가능한점을 기억하자. 샤드의 개수는 
 
 
 
@@ -221,7 +221,7 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMzg1MDg2OCwtMjEzNzg1MjIyNiwtNz
+eyJoaXN0b3J5IjpbLTcxNjIyODA5OCwtMjEzNzg1MjIyNiwtNz
 YyOTgyNjU4LDExMzQ3MTY4NDcsMTEzNTE5NTI5OSwyMTA1Nzc4
 MDk5LDEwNDgyODY2MzEsLTE4ODkwODY0MTYsMjA0NTk3NDMxLD
 kwMTQ0OTcwOSw2NDQ3MzE2ODUsLTYwMzg5OTEwNSwtMTk5MjQ1
