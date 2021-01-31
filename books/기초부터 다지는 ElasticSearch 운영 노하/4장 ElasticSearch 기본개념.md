@@ -203,7 +203,9 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 그리고 바로 이 해시함수 때문에 프라이머리 샤드 개수를 변경할 수가 없다. 만약 프라이머리 샤드 개수가 변경되어야 한다면, 지금까지 저장된 문서의 프라이머리 샤드 번호가 모두 변경되어야 하기 때문이다. 
 
-그렇다면 특정 노드에서 장애가 발생하여 클러
+특정 노드에서 장애가 발생하여 샤드가 클러스터에서 이탈하면 레플리카 샤드를 사용하게 된다. 
+
+
 
 
 
@@ -211,11 +213,11 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMzQ0NTM4LC03NjI5ODI2NTgsMTEzND
-cxNjg0NywxMTM1MTk1Mjk5LDIxMDU3NzgwOTksMTA0ODI4NjYz
-MSwtMTg4OTA4NjQxNiwyMDQ1OTc0MzEsOTAxNDQ5NzA5LDY0ND
-czMTY4NSwtNjAzODk5MTA1LC0xOTkyNDUyMzAxLDEzNTkzMTIy
-NzgsNjE3OTkyMjE5LC01NzEzMDg1MTksMzIxNzUzODcxLC0xNj
-g0Mzg2NDMwLDE4OTkzNzgxOTIsMzEyMTMyMjYwLC0xNzYzMjQ0
-MjE0XX0=
+eyJoaXN0b3J5IjpbLTQxMTU2NjE2NiwtNzYyOTgyNjU4LDExMz
+Q3MTY4NDcsMTEzNTE5NTI5OSwyMTA1Nzc4MDk5LDEwNDgyODY2
+MzEsLTE4ODkwODY0MTYsMjA0NTk3NDMxLDkwMTQ0OTcwOSw2ND
+Q3MzE2ODUsLTYwMzg5OTEwNSwtMTk5MjQ1MjMwMSwxMzU5MzEy
+Mjc4LDYxNzk5MjIxOSwtNTcxMzA4NTE5LDMyMTc1Mzg3MSwtMT
+Y4NDM4NjQzMCwxODk5Mzc4MTkyLDMxMjEzMjI2MCwtMTc2MzI0
+NDIxNF19
 -->
