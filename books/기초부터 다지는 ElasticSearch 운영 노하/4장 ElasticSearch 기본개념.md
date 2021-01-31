@@ -230,6 +230,8 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 | String  | 문자열 데이터 타입  |text, keyword |
 | Numeric  | 숫자형 데이터 타입  |long, integer, short, byte, double, float, half_float, scaled_float|
 | Date  | 날짜형 데이터 타입  | date|
+| Boolean  | 불 데이터 타입  | boolean|
+| Date  | 날짜형 데이터 타입  | date|
 
 
 
@@ -240,7 +242,7 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTMxNDc5NjAsODIzNTY5MzI5LDY3Mz
+eyJoaXN0b3J5IjpbLTExNjU2NDE1NjMsODIzNTY5MzI5LDY3Mz
 A4NjMwOCw4MDg5MTc5MiwtMjEzNzg1MjIyNiwtNzYyOTgyNjU4
 LDExMzQ3MTY4NDcsMTEzNTE5NTI5OSwyMTA1Nzc4MDk5LDEwND
 gyODY2MzEsLTE4ODkwODY0MTYsMjA0NTk3NDMxLDkwMTQ0OTcw
