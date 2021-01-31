@@ -157,8 +157,7 @@ ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 �
 
 샤드는 인덱스에 색인되는 문서들이 저장되는 논리적인 공간을 의미한다. 즉 샤드는 논리적인 공간이기 때문에 실제 물리적으로는 각 데이터 노드에 나누어져 저장될 것이다.
 
-세그먼트는 색인된 문서들의 집합으로 실제 물리적인 파일이다. 하나의 인덱스는 다수의 샤드로 구성되고 하나의 샤드는 다수의 세그먼트로 구성된다. 샤드는 1개 이상의 세그먼트로 구성되는데 샤드마다 세그먼트의 개수는 서로 다룰 수 있다. 
-
+세그먼트는 색인된 문서들의 집합으로 실제 물리적인 파일이다. 하나의 인덱스는 다수의 샤드로 구성되고 하나의 샤드는 다수의 세그먼트로 구성된다. 샤드는 1개 이상의 세그먼트로 구성되는데 샤드마다 가지는 세그먼트의 개수는 서로 다룰 수 있다. 
 
 ![enter image description here](https://leonlibraries.github.io/2017/04/27/ElasticSearch%E5%86%85%E9%83%A8%E6%9C%BA%E5%88%B6%E6%B5%85%E6%9E%90%E4%B8%89/segments.jpg)
 
@@ -201,11 +200,11 @@ ES는 데이터를 업데이트하려고 하면 새로운 세그먼트에 새롭
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDQxMzc2MDcsMTA0ODI4NjYzMSwtMT
-g4OTA4NjQxNiwyMDQ1OTc0MzEsOTAxNDQ5NzA5LDY0NDczMTY4
-NSwtNjAzODk5MTA1LC0xOTkyNDUyMzAxLDEzNTkzMTIyNzgsNj
-E3OTkyMjE5LC01NzEzMDg1MTksMzIxNzUzODcxLC0xNjg0Mzg2
-NDMwLDE4OTkzNzgxOTIsMzEyMTMyMjYwLC0xNzYzMjQ0MjE0LC
-00NDI3MDY0MDIsLTIwOTQ5MTE5MTQsMTkyNjYyNTM1LC0xODQ0
-NDU5MTY2XX0=
+eyJoaXN0b3J5IjpbMjEwNTc3ODA5OSwxMDQ4Mjg2NjMxLC0xOD
+g5MDg2NDE2LDIwNDU5NzQzMSw5MDE0NDk3MDksNjQ0NzMxNjg1
+LC02MDM4OTkxMDUsLTE5OTI0NTIzMDEsMTM1OTMxMjI3OCw2MT
+c5OTIyMTksLTU3MTMwODUxOSwzMjE3NTM4NzEsLTE2ODQzODY0
+MzAsMTg5OTM3ODE5MiwzMTIxMzIyNjAsLTE3NjMyNDQyMTQsLT
+Q0MjcwNjQwMiwtMjA5NDkxMTkxNCwxOTI2NjI1MzUsLTE4NDQ0
+NTkxNjZdfQ==
 -->
