@@ -227,7 +227,9 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 |데이터 타입| 설명 | 종류|
 |--|--|--|
-| String  | 문자열 데디ㅌ  | |
+| String  | 문자열 데이터 타입  |text, keyword |
+| Numeric  | 숫자형 데이터 타입  |long, integer, short, byte, double, float, half_float, scaled_float|
+| Date  | 문자열 데이터 타입  |text, keyword |
 
 
 
@@ -238,7 +240,7 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2OTIxODI2MSw2NzMwODYzMDgsODA4OT
+eyJoaXN0b3J5IjpbMTI1Mzg5MDYxMyw2NzMwODYzMDgsODA4OT
 E3OTIsLTIxMzc4NTIyMjYsLTc2Mjk4MjY1OCwxMTM0NzE2ODQ3
 LDExMzUxOTUyOTksMjEwNTc3ODA5OSwxMDQ4Mjg2NjMxLC0xOD
 g5MDg2NDE2LDIwNDU5NzQzMSw5MDE0NDk3MDksNjQ0NzMxNjg1
