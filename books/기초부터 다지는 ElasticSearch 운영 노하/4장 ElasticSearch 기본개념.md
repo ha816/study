@@ -203,7 +203,11 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 그리고 바로 이 해시함수 때문에 프라이머리 샤드 개수를 변경할 수가 없다. 만약 프라이머리 샤드 개수가 변경되어야 한다면, 지금까지 저장된 문서의 프라이머리 샤드 번호가 모두 변경되어야 하기 때문이다. 
 
-특정 노드에서 장애가 발생하여 샤드가 클러스터에서 이탈하면 레플리카 샤드를 사용하게 된다. 
+## 장애복구
+
+특정 노드에서 장애가 발생하여 샤드가 클러스터에서 이탈하면 레플리카 샤드를 사용하게 된다. 레플리카 샤드는 프라이머리 샤드의 복제본으로, 프라이머리 샤드가 저장되니 서버 노드와는 다른 노드에 저장된다. 당연한 이야기지만 노드 한대가 장애가 났을때 복제본도 동일한 노드에 있다면 복제의 의미가 없기 때문이다. 
+
+
 
 
 
@@ -213,11 +217,11 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMTU2NjE2NiwtNzYyOTgyNjU4LDExMz
-Q3MTY4NDcsMTEzNTE5NTI5OSwyMTA1Nzc4MDk5LDEwNDgyODY2
-MzEsLTE4ODkwODY0MTYsMjA0NTk3NDMxLDkwMTQ0OTcwOSw2ND
-Q3MzE2ODUsLTYwMzg5OTEwNSwtMTk5MjQ1MjMwMSwxMzU5MzEy
-Mjc4LDYxNzk5MjIxOSwtNTcxMzA4NTE5LDMyMTc1Mzg3MSwtMT
-Y4NDM4NjQzMCwxODk5Mzc4MTkyLDMxMjEzMjI2MCwtMTc2MzI0
-NDIxNF19
+eyJoaXN0b3J5IjpbLTIxMzc4NTIyMjYsLTc2Mjk4MjY1OCwxMT
+M0NzE2ODQ3LDExMzUxOTUyOTksMjEwNTc3ODA5OSwxMDQ4Mjg2
+NjMxLC0xODg5MDg2NDE2LDIwNDU5NzQzMSw5MDE0NDk3MDksNj
+Q0NzMxNjg1LC02MDM4OTkxMDUsLTE5OTI0NTIzMDEsMTM1OTMx
+MjI3OCw2MTc5OTIyMTksLTU3MTMwODUxOSwzMjE3NTM4NzEsLT
+E2ODQzODY0MzAsMTg5OTM3ODE5MiwzMTIxMzIyNjAsLTE3NjMy
+NDQyMTRdfQ==
 -->
