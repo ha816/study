@@ -189,18 +189,18 @@ ES는 데이터를 업데이트하려고 하면 새로운 세그먼트에 새롭
 
 ## 세그먼트 병합
 
-
+세그먼트 병합은 백그라운드로 발생하는 병합 작업으로, 여러개의 작은 세그먼트를 합쳐 큰 세그먼트로 만드는 작업이 무수히 일어난다. 이 과정에서 불용처리된 세그먼트는 병합에서 제외되고 실제 디스크에서도 삭제된다. 이렇게 병합작업을 통해서 검색 요청시 적브
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMwMjQ4ODQzLDIwNDU5NzQzMSw5MDE0ND
-k3MDksNjQ0NzMxNjg1LC02MDM4OTkxMDUsLTE5OTI0NTIzMDEs
-MTM1OTMxMjI3OCw2MTc5OTIyMTksLTU3MTMwODUxOSwzMjE3NT
-M4NzEsLTE2ODQzODY0MzAsMTg5OTM3ODE5MiwzMTIxMzIyNjAs
-LTE3NjMyNDQyMTQsLTQ0MjcwNjQwMiwtMjA5NDkxMTkxNCwxOT
-I2NjI1MzUsLTE4NDQ0NTkxNjYsLTE2NjgyNDM4ODcsLTEyNDcw
-OTU3MjBdfQ==
+eyJoaXN0b3J5IjpbLTUwMzEwOTQzNSwyMDQ1OTc0MzEsOTAxND
+Q5NzA5LDY0NDczMTY4NSwtNjAzODk5MTA1LC0xOTkyNDUyMzAx
+LDEzNTkzMTIyNzgsNjE3OTkyMjE5LC01NzEzMDg1MTksMzIxNz
+UzODcxLC0xNjg0Mzg2NDMwLDE4OTkzNzgxOTIsMzEyMTMyMjYw
+LC0xNzYzMjQ0MjE0LC00NDI3MDY0MDIsLTIwOTQ5MTE5MTQsMT
+kyNjYyNTM1LC0xODQ0NDU5MTY2LC0xNjY4MjQzODg3LC0xMjQ3
+MDk1NzIwXX0=
 -->
