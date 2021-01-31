@@ -223,6 +223,11 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 매핑이 생성된 이후로 생성되는 문서는 자연스럽게 기존 매핑 정보에 따라 색인되어야 한다. 예를 들어, long 데이터 타입으로 매핑이 생성된 필드는 문자열 데이터가 들어오면 색인되지 않는다. 
 
+다음은 ES에서 사용 가능한 필드 데이터 종류이다.
+
+|데이터 타입| 설명 | 종류|
+|--|--|--|
+| String  | 문자열 데디ㅌ  | |
 
 
 
@@ -233,11 +238,11 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjczMDg2MzA4LDgwODkxNzkyLC0yMTM3OD
-UyMjI2LC03NjI5ODI2NTgsMTEzNDcxNjg0NywxMTM1MTk1Mjk5
-LDIxMDU3NzgwOTksMTA0ODI4NjYzMSwtMTg4OTA4NjQxNiwyMD
-Q1OTc0MzEsOTAxNDQ5NzA5LDY0NDczMTY4NSwtNjAzODk5MTA1
-LC0xOTkyNDUyMzAxLDEzNTkzMTIyNzgsNjE3OTkyMjE5LC01Nz
-EzMDg1MTksMzIxNzUzODcxLC0xNjg0Mzg2NDMwLDE4OTkzNzgx
-OTJdfQ==
+eyJoaXN0b3J5IjpbLTU2OTIxODI2MSw2NzMwODYzMDgsODA4OT
+E3OTIsLTIxMzc4NTIyMjYsLTc2Mjk4MjY1OCwxMTM0NzE2ODQ3
+LDExMzUxOTUyOTksMjEwNTc3ODA5OSwxMDQ4Mjg2NjMxLC0xOD
+g5MDg2NDE2LDIwNDU5NzQzMSw5MDE0NDk3MDksNjQ0NzMxNjg1
+LC02MDM4OTkxMDUsLTE5OTI0NTIzMDEsMTM1OTMxMjI3OCw2MT
+c5OTIyMTksLTU3MTMwODUxOSwzMjE3NTM4NzEsLTE2ODQzODY0
+MzBdfQ==
 -->
