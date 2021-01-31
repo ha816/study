@@ -179,15 +179,16 @@ ES는 인덱스를 샤드로 나누고 데이터 노드에 샤드를 할당한�
 
 인덱스에 저장되는 문서는 해시 알고리즘에 의해서 샤드들에 분산 저장되고 이 문서들은 실제로는 세그먼트라는 물리적 파일에 저장된다. 하지만 문서가 처음부터 세그먼트에 저장되는 것은 아니다. 색인된 문서는 먼저 시스템의 메모리 버퍼 캐시에 저장되는데 이 단계에서는 문서가 검색 되지 않는다. 이후 ES의 refresh 과정을 거쳐야 디스크에 세그먼트 단위로 문서가 저장되고 해당 문서의 검색이 가능해진다. refresh에 대해선 10장 색인 성능 최적화에서 자세히 다루겠다.
 
-세그먼트는 불변의 특성을 갖는다. 
+세그먼트는 불변의 특성을 갖는다. 불변의 특성을 이야기하기 위해 문서를 하나 생성하고 그 문서를 수정하는 상황을 가정해보자. 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NTk3NDMxLDkwMTQ0OTcwOSw2NDQ3Mz
-E2ODUsLTYwMzg5OTEwNSwtMTk5MjQ1MjMwMSwxMzU5MzEyMjc4
-LDYxNzk5MjIxOSwtNTcxMzA4NTE5LDMyMTc1Mzg3MSwtMTY4ND
-M4NjQzMCwxODk5Mzc4MTkyLDMxMjEzMjI2MCwtMTc2MzI0NDIx
-NCwtNDQyNzA2NDAyLC0yMDk0OTExOTE0LDE5MjY2MjUzNSwtMT
-g0NDQ1OTE2NiwtMTY2ODI0Mzg4NywtMTI0NzA5NTcyMCwtMTQ2
-OTQzODcyNl19
+eyJoaXN0b3J5IjpbMTYwODg2NDc0MSwyMDQ1OTc0MzEsOTAxND
+Q5NzA5LDY0NDczMTY4NSwtNjAzODk5MTA1LC0xOTkyNDUyMzAx
+LDEzNTkzMTIyNzgsNjE3OTkyMjE5LC01NzEzMDg1MTksMzIxNz
+UzODcxLC0xNjg0Mzg2NDMwLDE4OTkzNzgxOTIsMzEyMTMyMjYw
+LC0xNzYzMjQ0MjE0LC00NDI3MDY0MDIsLTIwOTQ5MTE5MTQsMT
+kyNjYyNTM1LC0xODQ0NDU5MTY2LC0xNjY4MjQzODg3LC0xMjQ3
+MDk1NzIwXX0=
 -->
