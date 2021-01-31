@@ -215,7 +215,7 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 # 매핑
 
-매핑은 RDB
+매핑은 RDBMS과 비교하자면 스키마와 유사하다. 
 
 
 
@@ -225,11 +225,11 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMzUwNTU0NCwtMjEzNzg1MjIyNiwtNz
-YyOTgyNjU4LDExMzQ3MTY4NDcsMTEzNTE5NTI5OSwyMTA1Nzc4
-MDk5LDEwNDgyODY2MzEsLTE4ODkwODY0MTYsMjA0NTk3NDMxLD
-kwMTQ0OTcwOSw2NDQ3MzE2ODUsLTYwMzg5OTEwNSwtMTk5MjQ1
-MjMwMSwxMzU5MzEyMjc4LDYxNzk5MjIxOSwtNTcxMzA4NTE5LD
-MyMTc1Mzg3MSwtMTY4NDM4NjQzMCwxODk5Mzc4MTkyLDMxMjEz
-MjI2MF19
+eyJoaXN0b3J5IjpbODA4OTE3OTIsLTIxMzc4NTIyMjYsLTc2Mj
+k4MjY1OCwxMTM0NzE2ODQ3LDExMzUxOTUyOTksMjEwNTc3ODA5
+OSwxMDQ4Mjg2NjMxLC0xODg5MDg2NDE2LDIwNDU5NzQzMSw5MD
+E0NDk3MDksNjQ0NzMxNjg1LC02MDM4OTkxMDUsLTE5OTI0NTIz
+MDEsMTM1OTMxMjI3OCw2MTc5OTIyMTksLTU3MTMwODUxOSwzMj
+E3NTM4NzEsLTE2ODQzODY0MzAsMTg5OTM3ODE5MiwzMTIxMzIy
+NjBdfQ==
 -->
