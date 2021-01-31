@@ -183,13 +183,13 @@ ES는 인덱스를 샤드로 나누고 데이터 노드에 샤드를 할당한�
 
 ES는 데이터를 업데이트하려고 하면 새로운 세그먼트에 새롭게 업데이트된 문서를 쓰고, 기존 문서는 불용 처리한다. 이 동작은 delete도 마찬가지인데 불용처리만 한다. 
 
-하지만 이렇게 세그먼트 단위로 파일을 생성해서 문서를 색인한다.
+하지만 이렇게 세그먼트 단위로 파일을 생성해서 문서를 저장할때, 불변의 특성을 유지하기 위해 여러 세그먼트로 문서를 색인하면, 시간이 지나
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjI5NDk5NCwyMDQ1OTc0MzEsOTAxND
+eyJoaXN0b3J5IjpbMTE5NzUxNjY5NSwyMDQ1OTc0MzEsOTAxND
 Q5NzA5LDY0NDczMTY4NSwtNjAzODk5MTA1LC0xOTkyNDUyMzAx
 LDEzNTkzMTIyNzgsNjE3OTkyMjE5LC01NzEzMDg1MTksMzIxNz
 UzODcxLC0xNjg0Mzg2NDMwLDE4OTkzNzgxOTIsMzEyMTMyMjYw
