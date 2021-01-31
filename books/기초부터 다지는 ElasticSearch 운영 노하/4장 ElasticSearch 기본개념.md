@@ -215,7 +215,9 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 # 매핑
 
-매핑은 RDBMS과 비교하자면 스키마와 유사하다. 
+매핑은 RDBMS과 비교하자면 스키마와 유사하다. 스키마란 ES에 저장될 JSON 문서들이 어떤 키와 어떤 형태의 값을 가지고 있는지 정의한 것이다. 
+
+사실 매핑 정보는 미리정의해도 
 
 
 
@@ -225,11 +227,11 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA4OTE3OTIsLTIxMzc4NTIyMjYsLTc2Mj
-k4MjY1OCwxMTM0NzE2ODQ3LDExMzUxOTUyOTksMjEwNTc3ODA5
-OSwxMDQ4Mjg2NjMxLC0xODg5MDg2NDE2LDIwNDU5NzQzMSw5MD
-E0NDk3MDksNjQ0NzMxNjg1LC02MDM4OTkxMDUsLTE5OTI0NTIz
-MDEsMTM1OTMxMjI3OCw2MTc5OTIyMTksLTU3MTMwODUxOSwzMj
-E3NTM4NzEsLTE2ODQzODY0MzAsMTg5OTM3ODE5MiwzMTIxMzIy
-NjBdfQ==
+eyJoaXN0b3J5IjpbLTExMjA4MDg0MzEsODA4OTE3OTIsLTIxMz
+c4NTIyMjYsLTc2Mjk4MjY1OCwxMTM0NzE2ODQ3LDExMzUxOTUy
+OTksMjEwNTc3ODA5OSwxMDQ4Mjg2NjMxLC0xODg5MDg2NDE2LD
+IwNDU5NzQzMSw5MDE0NDk3MDksNjQ0NzMxNjg1LC02MDM4OTkx
+MDUsLTE5OTI0NTIzMDEsMTM1OTMxMjI3OCw2MTc5OTIyMTksLT
+U3MTMwODUxOSwzMjE3NTM4NzEsLTE2ODQzODY0MzAsMTg5OTM3
+ODE5Ml19
 -->
