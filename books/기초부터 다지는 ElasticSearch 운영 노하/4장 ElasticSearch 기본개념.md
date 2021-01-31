@@ -179,7 +179,7 @@ ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 �
 
 ## 세그먼트 병합
 
-세그먼트는 불변의 특성을 갖는다. 즉 ES에서 데이터를 수정하려고 하면 새로운 세그먼트에 수정된 문서를 저장하고, 기존 문서는 불용 처리한다. 이 동작은 delete도 마찬가지인데 불용처리만 한다. 
+세그먼트는 불변의 특성을 갖는다. 즉 ES에서 문서를 수정하려고 하면 새로운 세그먼트에 문서를 저장하고, 기존 문서는 불용 처리한다. 이 동작은 delete도 마찬가지인데 불용처리만 한다. 
 
 하지만 이렇게 세그먼트 단위로 파일을 생성해서 문서를 저장할때, 불변의 특성을 유지하기 위해 여러 세그먼트로 문서를 색인하면, 시간이 지나서 작은 크기의 세그먼트가 점점 늘어나게 되고, 사용자가 문서를 검색할때 마다 많은 수의 세그먼트들을 검색하여 검생공간이 커진다는 단점이 있다. 또한 불용 처리한 데이터들로 인해 세그먼트의 크기가 커지게 된다. 
 
@@ -195,11 +195,11 @@ ES에서는 _doc이라는 이름으로 타입을 사용하도록 권고하고 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0NzUwNDgxLDExMzUxOTUyOTksMjEwNT
-c3ODA5OSwxMDQ4Mjg2NjMxLC0xODg5MDg2NDE2LDIwNDU5NzQz
-MSw5MDE0NDk3MDksNjQ0NzMxNjg1LC02MDM4OTkxMDUsLTE5OT
-I0NTIzMDEsMTM1OTMxMjI3OCw2MTc5OTIyMTksLTU3MTMwODUx
-OSwzMjE3NTM4NzEsLTE2ODQzODY0MzAsMTg5OTM3ODE5MiwzMT
-IxMzIyNjAsLTE3NjMyNDQyMTQsLTQ0MjcwNjQwMiwtMjA5NDkx
-MTkxNF19
+eyJoaXN0b3J5IjpbLTI1NTk1NjgyMiwxMTM1MTk1Mjk5LDIxMD
+U3NzgwOTksMTA0ODI4NjYzMSwtMTg4OTA4NjQxNiwyMDQ1OTc0
+MzEsOTAxNDQ5NzA5LDY0NDczMTY4NSwtNjAzODk5MTA1LC0xOT
+kyNDUyMzAxLDEzNTkzMTIyNzgsNjE3OTkyMjE5LC01NzEzMDg1
+MTksMzIxNzUzODcxLC0xNjg0Mzg2NDMwLDE4OTkzNzgxOTIsMz
+EyMTMyMjYwLC0xNzYzMjQ0MjE0LC00NDI3MDY0MDIsLTIwOTQ5
+MTE5MTRdfQ==
 -->
