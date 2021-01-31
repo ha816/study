@@ -195,12 +195,18 @@ ES는 인덱스를 샤드로 나누고 나뉘어진 각 샤드에 세그먼트 �
 
 먼저 프라이머리 샤드를 살펴보자. 기본적으로 프라이머리 샤드는 5개의 디폴트 값을 가진다. 인덱스가 5개의 프라이머리 샤드로 구성되고 나면, 사용자의 문서는 각 프라이머리 샤드에 분산되어 저장된다. 
 
+각 프라이머리 샤드는 구성될때 샤드 번호를 부여받는데 기본적으로 0번 부터 순차적으로 받는다. 그렇다면 문서는 어떤 기준으로 샤드의 번호를 할당받을까? 바로 해시함수이다. 
+
+```
+할당된 프라이머리 샤드번호 = hash(문서 Id % 프라이머리 샤드 개수
+```
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNDA1NjE1MywtNzYyOTgyNjU4LDExMz
+eyJoaXN0b3J5IjpbMTEzNjc2ODIzNywtNzYyOTgyNjU4LDExMz
 Q3MTY4NDcsMTEzNTE5NTI5OSwyMTA1Nzc4MDk5LDEwNDgyODY2
 MzEsLTE4ODkwODY0MTYsMjA0NTk3NDMxLDkwMTQ0OTcwOSw2ND
 Q3MzE2ODUsLTYwMzg5OTEwNSwtMTk5MjQ1MjMwMSwxMzU5MzEy
