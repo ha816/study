@@ -61,10 +61,13 @@ KafkaProducer의 송신 처리는 비동기적으로 이루어지기 때문에 s
 
 Callback 클래스의 메서드는 메시지 송신에 성공했을때와 실패했을때 동일한 내용이 호출된다. 메시지 송신에 성공하면 메서드 인수인 RecordMetadata가 null이 아닌 객체이고 Exception은 null이 된다.
 
+# 컨슈머 애플리케이션 개발
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjQwODM4ODQsNzIxNTg2NTM5LC0xMj
-MzNjk2NzY3LC0xNTI0NjczOSwtMTIxODQ3NTU1LDQ0ODkwNDMz
-XX0=
+eyJoaXN0b3J5IjpbLTc1OTYxNjIxMyw3MjE1ODY1MzksLTEyMz
+M2OTY3NjcsLTE1MjQ2NzM5LC0xMjE4NDc1NTUsNDQ4OTA0MzNd
+fQ==
 -->
