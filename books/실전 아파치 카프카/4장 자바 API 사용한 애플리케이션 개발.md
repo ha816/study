@@ -78,18 +78,21 @@ for(int count = 0; count < 300; count++) {
 		String msg = record.key(), record.value();
 		TopicPartition tp = new TopicPartition(record.topic(), record.partition());
 		OffsetAndMetadata oam = new OffsetAndMetadata(record.offset() + 1);
-		Map
+		Map<TopicPartition, OffsetAndMetaData> commitInfo = Collections.singletonMap(tp, oam);
+		consumer.commitSync(commitInfo;
+		
+		consumer.close();
 	}
-
 }
-
 ```
+
+## ㅎ
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzczNzgwOSwxMjU4Mzg5MjE0LC03NT
-k2MTYyMTMsNzIxNTg2NTM5LC0xMjMzNjk2NzY3LC0xNTI0Njcz
-OSwtMTIxODQ3NTU1LDQ0ODkwNDMzXX0=
+eyJoaXN0b3J5IjpbMTYwMDA4NzM2NiwtMjY3NzM3ODA5LDEyNT
+gzODkyMTQsLTc1OTYxNjIxMyw3MjE1ODY1MzksLTEyMzM2OTY3
+NjcsLTE1MjQ2NzM5LC0xMjE4NDc1NTUsNDQ4OTA0MzNdfQ==
 -->
