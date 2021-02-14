@@ -63,13 +63,20 @@ Callback 클래스의 메서드는 메시지 송신에 성공했을때와 실패
 
 # 컨슈머 애플리케이션 개발
 
+```
+Properties conf = new Properties();
+conf.setProperty("bootstrap.servers", "kafka-broker01:9092, kafka-broker02:9092, kafka-broker3:9092");
+conf.setProperty("key.serializer", "org.apache.kafka.common.serialization.IntegerSerializer");
+conf.setProperty("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
+Con<Integer, String> producer = new KafkaProducer<>(conf);
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMTc1Nzk0NSwtNzU5NjE2MjEzLDcyMT
+eyJoaXN0b3J5IjpbLTY1OTU4MzU1NiwtNzU5NjE2MjEzLDcyMT
 U4NjUzOSwtMTIzMzY5Njc2NywtMTUyNDY3MzksLTEyMTg0NzU1
 NSw0NDg5MDQzM119
 -->
