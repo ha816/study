@@ -4,11 +4,11 @@
 
 # 애플리케이션 개발 환경 준비
 
-본 설명은 리눅스 환경에서 애플리케이션을 개발하는 것을 전제로 한다. 
+본 설명은 리눅스 환경에서 애플리케이션을 개발하는 것을 전제로 한다. 카프카에서 자바 API를 이용해서 애플리케이션을 개발할때는 JDK가 필요하다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzMzOTQwMTksNDQ4OTA0MzNdfQ==
+eyJoaXN0b3J5IjpbMTUzMzIwMzMwMyw0NDg5MDQzM119
 -->
