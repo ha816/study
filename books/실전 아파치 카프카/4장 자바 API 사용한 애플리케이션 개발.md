@@ -41,7 +41,14 @@ KafkaProducer를 이용하여 메시지를 보낼때는 송신 메시지를 Prod
 producer.send(record, new CallBack(){
 
 	@Override
-	public void onCompletion(RecordMetadata metadata,)
+	public void onCompletion(RecordMetadata metadata, Exception e) {
+		if(metadata != null) {
+			metadata.partition();
+			metadata.offset();
+		} else {
+
+		}
+	}
 
 });
 ```
@@ -49,6 +56,6 @@ producer.send(record, new CallBack(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODc1ODA4ODUsLTE1MjQ2NzM5LC0xMj
+eyJoaXN0b3J5IjpbLTEyMzM2OTY3NjcsLTE1MjQ2NzM5LC0xMj
 E4NDc1NTUsNDQ4OTA0MzNdfQ==
 -->
