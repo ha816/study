@@ -8,10 +8,15 @@ JDK, Gradle, Maven 등 애플리케이션이 필요하다.
 
 # 프로듀서 애플리케이션
 
+카프카의 자바 API로 메시지를 송신하기 위해서는 KafkaProducer 객체를 이용한다. 예제 코드에선 KafkaProducer에 필요한 설정을 하고 객체를 생성한다. 
 
+```
+
+
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA1MTYxNjIsNDQ4OTA0MzNdfQ==
+eyJoaXN0b3J5IjpbLTQxODcxNTUwMyw0NDg5MDQzM119
 -->
