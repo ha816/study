@@ -86,17 +86,18 @@ for(int count = 0; count < 300; count++) {
 }
 ```
 
-## 핵심
+##  메시지 수신하기
 
 KafkaConsumer 객체는 카프카의 자바 API에서 메시지 수신을 담당한다. 
 
 bootstrap.servers는 프로듀서 애플리케이션과 마찬가지로 접속할 브로커를 지정할때 사용한다. 
 
+KafkaConsumer 객체를 이용하여 메시지를 수신할때 토픽을 구독할 필요가 있다. subscribe 메서드로 구독을 하는데 등록시 여러 토픽으
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDc4MjU4MzMsLTI2NzczNzgwOSwxMj
-U4Mzg5MjE0LC03NTk2MTYyMTMsNzIxNTg2NTM5LC0xMjMzNjk2
-NzY3LC0xNTI0NjczOSwtMTIxODQ3NTU1LDQ0ODkwNDMzXX0=
+eyJoaXN0b3J5IjpbMTI2MjQwNzMzMCwtMjY3NzM3ODA5LDEyNT
+gzODkyMTQsLTc1OTYxNjIxMyw3MjE1ODY1MzksLTEyMzM2OTY3
+NjcsLTE1MjQ2NzM5LC0xMjE4NDc1NTUsNDQ4OTA0MzNdfQ==
 -->
