@@ -14,8 +14,11 @@ JDK, Gradle, Maven 등 애플리케이션이 필요하다.
 Properties conf = new Properties();
 conf.setProperty("bootstrap.servers", "kafka-broker01:9092, kafka-broker02:9092, kafka-broker3:9092");
 
-conf.setProperty("bootstrap.servers", "kafka-broker01:9092, kafka-broker02:9092, kafka-broker3:9092");
+conf.setProperty("key.serializer", "org.apache.kafka.common.serialization.IntegerSerializer");
 
+conf.setProperty("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+
+Producer<Integer,>
 
 
 ```
@@ -23,5 +26,5 @@ conf.setProperty("bootstrap.servers", "kafka-broker01:9092, kafka-broker02:9092,
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk1NDIyMzA4LDQ0ODkwNDMzXX0=
+eyJoaXN0b3J5IjpbLTIwNTExNjU2ODQsNDQ4OTA0MzNdfQ==
 -->
