@@ -98,12 +98,12 @@ KafkaConsumer 객체를 이용하여 메시지를 수신할때 토픽을 구독�
 
 OffsetAndMetadata은 처리된 메시지의 오프셋을 정하는 객체이다. (사실 Auto Offset Commit을 가능하게 하면 본 코드는 불필요한 코드이다. )
 
-여기에서는 오프셋 커밋 정보가 카프카 클러스터로 기록이 완료될때 까지 처리를 기다리는 commitSync 메서드를 사용하고 있다. commitSync는 제대로 메시지가 송신되어 카프카 클러스터에서 ACK 반환하는 처리를 블록해서 기다린다. 
-
+여기에서는 오프셋 커밋 정보가 카프카 클러스터로 기록이 완료될때 까지 처리를 기다리는 commitSync 메서드를 사용하고 있다. commitSync는 제대로 메시지가 송신되어 카프카 클러스터에서 ACK 반환하는 처리를 블록해서 기다린다. 비동기적으로 처리하고, 처리완료를 기다리지 않고 다음 처리로 진행하는 commitAsync라는 메서드도 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MDMyODAyMiwtMjY3NzM3ODA5LDEyNT
-gzODkyMTQsLTc1OTYxNjIxMyw3MjE1ODY1MzksLTEyMzM2OTY3
-NjcsLTE1MjQ2NzM5LC0xMjE4NDc1NTUsNDQ4OTA0MzNdfQ==
+eyJoaXN0b3J5IjpbMTE5MjM0ODYzNiwtNTQwMzI4MDIyLC0yNj
+c3Mzc4MDksMTI1ODM4OTIxNCwtNzU5NjE2MjEzLDcyMTU4NjUz
+OSwtMTIzMzY5Njc2NywtMTUyNDY3MzksLTEyMTg0NzU1NSw0ND
+g5MDQzM119
 -->
