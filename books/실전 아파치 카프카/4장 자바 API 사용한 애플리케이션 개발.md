@@ -45,17 +45,21 @@ producer.send(record, new CallBack(){
 		if(metadata != null) {
 			metadata.partition();
 			metadata.offset();
-		} else {
-
+		} else { 
+			// Failed 
+			e.getMessage();
 		}
 	}
-
 });
 ```
+
+위 Callback 클래스를 구현하여 KafkaProducer에 전달하고 있다. 이 Callback 클래스에서 구현하고 있는 onCompletion 메서드에서는 송신을 완료했을때 실행되어야 할 처리를 하고 있다. 
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzM2OTY3NjcsLTE1MjQ2NzM5LC0xMj
-E4NDc1NTUsNDQ4OTA0MzNdfQ==
+eyJoaXN0b3J5IjpbNzIxNTg2NTM5LC0xMjMzNjk2NzY3LC0xNT
+I0NjczOSwtMTIxODQ3NTU1LDQ0ODkwNDMzXX0=
 -->
