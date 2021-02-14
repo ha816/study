@@ -70,14 +70,20 @@ conf.setProperty("key.serializer", "org.apache.kafka.common.serialization.Intege
 conf.setProperty("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
 Consumer<Integer, String> consumer = new KafkaConsumer<>(conf);
-consumer.subscribe()
+consumer.subscribe(Collections.singletonList(topicName));
+
+for(int count = 0; count < 300; count++) {
+	
+
+}
+
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTc5MjUxNywtNzU5NjE2MjEzLDcyMT
-U4NjUzOSwtMTIzMzY5Njc2NywtMTUyNDY3MzksLTEyMTg0NzU1
-NSw0NDg5MDQzM119
+eyJoaXN0b3J5IjpbLTE1OTIzODQ3NzUsLTc1OTYxNjIxMyw3Mj
+E1ODY1MzksLTEyMzM2OTY3NjcsLTE1MjQ2NzM5LC0xMjE4NDc1
+NTUsNDQ4OTA0MzNdfQ==
 -->
