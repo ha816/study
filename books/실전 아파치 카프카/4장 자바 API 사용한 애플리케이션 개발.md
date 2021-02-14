@@ -38,13 +38,15 @@ ProducerRecord<Integer, String> record = new ProducerRecord<>(topicName, key, va
 KafkaProducer를 이용하여 메시지를 보낼때는 송신 메시지를 ProducerRecord라는 객체에 저장한다. 이때 Key,Value외에도 topicName도 함께 등록한다. 
 
 ```
+producer.send() {
 
 
+}
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NzE0MTY4LC0xMjE4NDc1NTUsNDQ4OT
+eyJoaXN0b3J5IjpbLTE1MjQ2NzM5LC0xMjE4NDc1NTUsNDQ4OT
 A0MzNdfQ==
 -->
