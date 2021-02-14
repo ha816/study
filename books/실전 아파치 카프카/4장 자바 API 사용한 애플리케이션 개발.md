@@ -22,8 +22,13 @@ Producer<Integer, String> producer = new KafkaProducer<>(conf);
 위 코드는 동작하는데 필요한 최소한의 설정만 세팅하고 있다. 
 bootstraps.servers는 KafkaProducer가 메시지를 보낼 브로커의 호스트명과 포트번호를 저장하고 있다. 
 
+카프카에서는 모든 메시지가 직렬화된 상태로 전송된다. 이때 key.serializer, value.serializer가 사용된다. 
+
+카프카에서는 기본적인 시리얼라이저가 준비되어 있다. 또 커스터마이징 시리얼라이저를 직접 만들어 사용할 수도 있다. 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTg0NzU1NSw0NDg5MDQzM119
+eyJoaXN0b3J5IjpbLTE3MzAwMTM4MjQsLTEyMTg0NzU1NSw0ND
+g5MDQzM119
 -->
