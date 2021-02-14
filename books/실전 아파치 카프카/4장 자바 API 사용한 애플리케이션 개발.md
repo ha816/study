@@ -33,12 +33,18 @@ Producer를 보면 Generic 타입으로 Key와 Value를 받는다. 위 코드에
 ```
 // 송신메시지 생성
 ProducerRecord<Integer, String> record = new ProducerRecord<>(topicName, key, value);
+```
+
+KafkaProducer를 이용하여 메시지를 보낼때는 송신 메시지를 ProducerRecord라는 객체에 저장한다. 이때 Key,Value외에도 topicName도 함께 등록한다. 
+
+```
+
 
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMxNDIwNzM5LC0xMjE4NDc1NTUsNDQ4OT
+eyJoaXN0b3J5IjpbMTU0NzE0MTY4LC0xMjE4NDc1NTUsNDQ4OT
 A0MzNdfQ==
 -->
