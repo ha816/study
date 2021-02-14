@@ -26,9 +26,15 @@ bootstraps.servers는 KafkaProducer가 메시지를 보낼 브로커의 호스�
 
 카프카에서는 기본적인 시리얼라이저가 준비되어 있다. 또 커스터마이징 시리얼라이저를 직접 만들어 사용할 수도 있다. 
 
+Producer를 보면 Generic 타입으로 Key와 Value를 받는다. 위 코드에서는 Key로 Integer, Value로 문자형을 받고 있다. 여기서 지정한 형은 시리얼 라이저와 대응해야 정상 동작한다. 
+
+## 메시지 송신하기 
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzAwMTM4MjQsLTEyMTg0NzU1NSw0ND
-g5MDQzM119
+eyJoaXN0b3J5IjpbMTI5NzQyNTg4MSwtMTIxODQ3NTU1LDQ0OD
+kwNDMzXX0=
 -->
