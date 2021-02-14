@@ -96,14 +96,14 @@ KafkaConsumer 객체를 이용하여 메시지를 수신할때 토픽을 구독�
 
 토픽을 수기한 후에는 poll 메서드를 호출하여 메시지를 얻는다. 이때 메시지는 ConsumerRecords라는 객체로 전달된다. ConsumerRecords에는 수신된 메시지 key,Vlaue, 타임 스탬프등의 메타데이터가 포함되어 있다. 
 
-OffsetAndMetadata은 처리된 메시지의 
+OffsetAndMetadata은 처리된 메시지의 오프셋을 정하는 객체이다. (사실 Auto Offset Commit을 가능하게 하면 본 코드는 불필요한 코드이다. )
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTI2MDMzODIsLTI2NzczNzgwOSwxMj
+eyJoaXN0b3J5IjpbLTExODI0MTY4MDgsLTI2NzczNzgwOSwxMj
 U4Mzg5MjE0LC03NTk2MTYyMTMsNzIxNTg2NTM5LC0xMjMzNjk2
 NzY3LC0xNTI0NjczOSwtMTIxODQ3NTU1LDQ0ODkwNDMzXX0=
 -->
