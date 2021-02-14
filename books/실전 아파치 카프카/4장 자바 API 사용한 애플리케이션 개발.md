@@ -57,12 +57,14 @@ producer.send(record, new CallBack(){
 
 KafkaProducer의 송신 처리는 비동기적으로 이루어지기 때문에 send 메서드를 호출할때 바로 처리가 되지 않는다. send 메서드의 처리는 송신 큐에 메시지를 넣을뿐이다. 송신 큐에 넣은 메시지는 사용자 애플리케이션과는 다른 별도의 쓰레드에서 순차적으로 송신된다. 
 
+메시지가 송신된 이후 카프카 클러스터에서 Ack가 반환된다. Callback 클래스는 그 Ack를 수신했을때 처리된다. 
 
+Callback 클래스의 메서드는 메시지 송신에 성공했을때와 실패했을때 동일한 내용이 호출된다. 메시지 송신에 성공하면 메서드 인수인 RecordMetadata가 null이 아닌 객체이고 Exception은 null이 된다.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MTI4NDM5LDcyMTU4NjUzOSwtMTIzMz
-Y5Njc2NywtMTUyNDY3MzksLTEyMTg0NzU1NSw0NDg5MDQzM119
-
+eyJoaXN0b3J5IjpbLTEwNjQwODM4ODQsNzIxNTg2NTM5LC0xMj
+MzNjk2NzY3LC0xNTI0NjczOSwtMTIxODQ3NTU1LDQ0ODkwNDMz
+XX0=
 -->
