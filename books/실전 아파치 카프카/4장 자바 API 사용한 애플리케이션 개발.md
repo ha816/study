@@ -55,11 +55,14 @@ producer.send(record, new CallBack(){
 
 위 Callback 클래스를 구현하여 KafkaProducer에 전달하고 있다. 이 Callback 클래스에서 구현하고 있는 onCompletion 메서드에서는 송신을 완료했을때 실행되어야 할 처리를 하고 있다. 
 
+KafkaProducer의 송신 처리는 비동기적으로 이루어지기 때문에 send 메서드를 호출할때 바로 처리가 되지 않는다. send 메서드의 처리는 송신 큐에 메시지를 넣을뿐이다. 송신 큐에 넣은 메시지는 사용자 애플리케이션과는 다른 별도의 쓰레드에서 순차적으로 송신된다. 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIxNTg2NTM5LC0xMjMzNjk2NzY3LC0xNT
-I0NjczOSwtMTIxODQ3NTU1LDQ0ODkwNDMzXX0=
+eyJoaXN0b3J5IjpbMTg5MTI4NDM5LDcyMTU4NjUzOSwtMTIzMz
+Y5Njc2NywtMTUyNDY3MzksLTEyMTg0NzU1NSw0NDg5MDQzM119
+
 -->
