@@ -90,11 +90,13 @@ for(int count = 0; count < 300; count++) {
 
 KafkaConsumer 객체는 카프카의 자바 API에서 메시지 수신을 담당한다. 
 
+bootstrap.servers는 프로듀서 애플리케이션과 마찬가지로 접속할 브로커를 지정할때 사용한다. 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTc4MDY1NzEsLTI2NzczNzgwOSwxMj
+eyJoaXN0b3J5IjpbLTEzMDc4MjU4MzMsLTI2NzczNzgwOSwxMj
 U4Mzg5MjE0LC03NTk2MTYyMTMsNzIxNTg2NTM5LC0xMjMzNjk2
 NzY3LC0xNTI0NjczOSwtMTIxODQ3NTU1LDQ0ODkwNDMzXX0=
 -->
