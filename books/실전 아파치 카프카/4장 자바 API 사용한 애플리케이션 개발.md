@@ -76,7 +76,9 @@ for(int count = 0; count < 300; count++) {
 	ConsumerRecords<Integer, String> records = consumer.poll(1);
 	for(ConsumerRecord<Integer, String> record: records) {
 		String msg = record.key(), record.value();
-		
+		TopicPartition tp = new TopicPartition(record.topic(), record.partition());
+		OffsetAndMetadata oam = new OffsetAndMetadata(record.offset() + 1);
+		Map
 	}
 
 }
@@ -87,7 +89,7 @@ for(int count = 0; count < 300; count++) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODM4OTIxNCwtNzU5NjE2MjEzLDcyMT
-U4NjUzOSwtMTIzMzY5Njc2NywtMTUyNDY3MzksLTEyMTg0NzU1
-NSw0NDg5MDQzM119
+eyJoaXN0b3J5IjpbLTI2NzczNzgwOSwxMjU4Mzg5MjE0LC03NT
+k2MTYyMTMsNzIxNTg2NTM5LC0xMjMzNjk2NzY3LC0xNTI0Njcz
+OSwtMTIxODQ3NTU1LDQ0ODkwNDMzXX0=
 -->
