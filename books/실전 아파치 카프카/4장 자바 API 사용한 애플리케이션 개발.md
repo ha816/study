@@ -30,11 +30,15 @@ Producer를 보면 Generic 타입으로 Key와 Value를 받는다. 위 코드에
 
 ## 메시지 송신하기 
 
+```
+ProducerRecord
 
+
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NzQyNTg4MSwtMTIxODQ3NTU1LDQ0OD
-kwNDMzXX0=
+eyJoaXN0b3J5IjpbMzYyNjkwNDM2LC0xMjE4NDc1NTUsNDQ4OT
+A0MzNdfQ==
 -->
