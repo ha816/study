@@ -13,18 +13,17 @@ JDK, Gradle, Maven 등 애플리케이션이 필요하다.
 ```
 Properties conf = new Properties();
 conf.setProperty("bootstrap.servers", "kafka-broker01:9092, kafka-broker02:9092, kafka-broker3:9092");
-
 conf.setProperty("key.serializer", "org.apache.kafka.common.serialization.IntegerSerializer");
-
 conf.setProperty("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
-Producer<Integer,>
-
-
+Producer<Integer, String> producer = new KafkaProducer<>(conf);
 ```
+
+위 코드는 동작하는데 필요한 최소한의 설정만 세팅하고 있다. 
+bootstraps.servers는 KafkaProducer가 메시지를 보낼 브로커의 호스트명과 포트번호를 저장하고 있다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTExNjU2ODQsNDQ4OTA0MzNdfQ==
+eyJoaXN0b3J5IjpbLTEyMTg0NzU1NSw0NDg5MDQzM119
 -->
