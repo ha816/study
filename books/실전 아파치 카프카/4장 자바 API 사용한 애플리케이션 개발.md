@@ -86,13 +86,15 @@ for(int count = 0; count < 300; count++) {
 }
 ```
 
-## ㅎ
+## 핵심
+
+KafkaConsumer 객체는 카프카의 자바 API에서 메시지 수신을 담당한다. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMDA4NzM2NiwtMjY3NzM3ODA5LDEyNT
-gzODkyMTQsLTc1OTYxNjIxMyw3MjE1ODY1MzksLTEyMzM2OTY3
-NjcsLTE1MjQ2NzM5LC0xMjE4NDc1NTUsNDQ4OTA0MzNdfQ==
+eyJoaXN0b3J5IjpbLTE2MTc4MDY1NzEsLTI2NzczNzgwOSwxMj
+U4Mzg5MjE0LC03NTk2MTYyMTMsNzIxNTg2NTM5LC0xMjMzNjk2
+NzY3LC0xNTI0NjczOSwtMTIxODQ3NTU1LDQ0ODkwNDMzXX0=
 -->
