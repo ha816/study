@@ -69,14 +69,15 @@ conf.setProperty("bootstrap.servers", "kafka-broker01:9092, kafka-broker02:9092,
 conf.setProperty("key.serializer", "org.apache.kafka.common.serialization.IntegerSerializer");
 conf.setProperty("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
-Con<Integer, String> producer = new KafkaProducer<>(conf);
+Consumer<Integer, String> consumer = new KafkaConsumer<>(conf);
+consumer.subscribe()
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTU4MzU1NiwtNzU5NjE2MjEzLDcyMT
+eyJoaXN0b3J5IjpbMTUwOTc5MjUxNywtNzU5NjE2MjEzLDcyMT
 U4NjUzOSwtMTIzMzY5Njc2NywtMTUyNDY3MzksLTEyMTg0NzU1
 NSw0NDg5MDQzM119
 -->
