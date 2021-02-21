@@ -15,10 +15,14 @@ Kafka Connect에서는 카프카에 데이터를 넣는 프로듀서 쪽 커넥�
 
 # 스키마 에볼루션
 
-운영 중에 데이터 스키마가 변경되는 경우, 이를 
+운영 중에 데이터 스키마가 변경되는 경우를 스키마 에볼루션이라고 한다.   시간이 경과하면서 데이터 스키마가 변화할 것을 감안하여 시스템을 설계할 필요가 있다.
+
+# 스키마 호환성
+
+스키마 진화를 할땐 주변 시스템의 일관성을 유지해야 한다. 이를 시
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDgxMDQ4LC00MDQzMTUyOTYsLTEyNj
-c3Mjk4MDAsMTYxNjI3NDA3OSwtNzQ4NjExMTNdfQ==
+eyJoaXN0b3J5IjpbLTc0MDk5OTY3NSwtNDA0MzE1Mjk2LC0xMj
+Y3NzI5ODAwLDE2MTYyNzQwNzksLTc0ODYxMTEzXX0=
 -->
