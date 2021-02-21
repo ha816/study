@@ -31,8 +31,12 @@ Kafka Connect에서는 카프카에 데이터를 넣는 프로듀서 쪽 커넥�
 
 
 
+## 전방 호완성
+
+후방 호완성과 전장 호완성을 모두 갖춘 경우를 완전 호완성이라고 부른다. 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjI2NzY5ODAsLTQwNDMxNTI5NiwtMT
-I2NzcyOTgwMCwxNjE2Mjc0MDc5LC03NDg2MTExM119
+eyJoaXN0b3J5IjpbLTY0NDU5MzkwMiwtNDA0MzE1Mjk2LC0xMj
+Y3NzI5ODAwLDE2MTYyNzQwNzksLTc0ODYxMTEzXX0=
 -->
