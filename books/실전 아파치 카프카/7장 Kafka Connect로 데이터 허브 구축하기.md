@@ -19,10 +19,16 @@ Kafka Connect에서는 카프카에 데이터를 넣는 프로듀서 쪽 커넥�
 
 # 스키마 호환성
 
-스키마 진화를 할땐 주변 시스템의 일관성을 유지해야 한다. 이를 시
+스키마 진화를 할땐 주변 시스템의 일관성을 유지해야 한다. 이를 실현하기 위해 진화 전후의 스키마에 어느 정도 호환성을 갖도록 한다. 호환성에는 아래와 같은 것들이 있다. 
+
+* 후방(하위) 호완성(backward compatiblity)
+* 전방(상위) 호완성(forward compatibility)
+* 완전 호완성(full compatibility)
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDk5OTY3NSwtNDA0MzE1Mjk2LC0xMj
+eyJoaXN0b3J5IjpbMTA1Njg2OTY1MiwtNDA0MzE1Mjk2LC0xMj
 Y3NzI5ODAwLDE2MTYyNzQwNzksLTc0ODYxMTEzXX0=
 -->
