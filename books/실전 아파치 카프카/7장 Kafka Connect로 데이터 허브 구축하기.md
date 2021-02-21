@@ -15,10 +15,10 @@ Kafka Connect에서는 카프카에 데이터를 넣는 프로듀서 쪽 커넥�
 
 # 스키마 에볼루션
 
-
+운영 중에 데이터 스키마가 변경되는 경우, 이를 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDMxNTI5NiwtMTI2NzcyOTgwMCwxNj
-E2Mjc0MDc5LC03NDg2MTExM119
+eyJoaXN0b3J5IjpbMTE0NDgxMDQ4LC00MDQzMTUyOTYsLTEyNj
+c3Mjk4MDAsMTYxNjI3NDA3OSwtNzQ4NjExMTNdfQ==
 -->
