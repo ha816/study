@@ -33,11 +33,16 @@ Kafka Connect에서는 카프카에 데이터를 넣는 프로듀서 쪽 커넥�
 
 # Schema Registry
 
+카프카에서 스키마 에볼루션을 고려할때 스키마 레지스트리를 사용하면 편리하다. 
+
+스키마 레지스트리는 카프카 클러스터 외부에서 스키마만을 관리하는 기능을 지닌 서비스다. 이는 컨플루언트가 제공하고 있다. 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4OTgzODUzOSwtNDA0MzE1Mjk2LC0xMj
-Y3NzI5ODAwLDE2MTYyNzQwNzksLTc0ODYxMTEzXX0=
+eyJoaXN0b3J5IjpbMTg5MTQ4MjY0MCwyMDg5ODM4NTM5LC00MD
+QzMTUyOTYsLTEyNjc3Mjk4MDAsMTYxNjI3NDA3OSwtNzQ4NjEx
+MTNdfQ==
 -->
