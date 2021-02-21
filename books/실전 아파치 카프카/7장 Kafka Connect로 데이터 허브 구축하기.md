@@ -25,10 +25,14 @@ Kafka Connect에서는 카프카에 데이터를 넣는 프로듀서 쪽 커넥�
 * 전방(상위) 호완성(forward compatibility)
 * 완전 호완성(full compatibility)
 
+## 후방 호완성
+
+이전 스키마의 데이터를 새로운 스키마를 사용하는데도 문제 없이 사용할 수 있는 성질을 후방 호완성이라고 한다. 예를 들어, 기존 스키마의 컬럼을 추가하는 것은 컨슈머에서 해당 컬럼을 무시하는 방향으로 해서 오류없이 처리가 가능하다. 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1Njg2OTY1MiwtNDA0MzE1Mjk2LC0xMj
-Y3NzI5ODAwLDE2MTYyNzQwNzksLTc0ODYxMTEzXX0=
+eyJoaXN0b3J5IjpbLTEzMjI2NzY5ODAsLTQwNDMxNTI5NiwtMT
+I2NzcyOTgwMCwxNjE2Mjc0MDc5LC03NDg2MTExM119
 -->
