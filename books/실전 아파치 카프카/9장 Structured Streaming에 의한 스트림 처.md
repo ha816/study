@@ -70,14 +70,16 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 
 대다수 스트림 처리 컴포넌트는 스트림 데이터가 도착한 시점에 처리되는 Event-Driven 방식을 따른다. 반면 Strucutred Streaming은 트리거라 불리는 데이터 처리를 위한 시간을 정의하고 있다. 
 
-트리커는 정기적인 간격으로 반복해서 데이터를 수신하고, 수백 밀리초에서 수초 정도의 짧은 배치를 반복 실행하여 스트림을 처리한다. 
+트리커는 정기적인 간격으로 반복해서 데이터를 수신하고, 수백 밀리초에서 수초 정도의 짧은 배치를 반복 실행하여 스트림을 처리한다.  이것을 마이크로 배치라고 부른다.
 
 또한 데이터 모델의 특징도 있는데, Strucutred Streaming에서는 데이터 스트림을 RDBMS의 테이블 처럼 취급한다. 그리고 데이터 스트림 안의 데이터를 테이블에 무한히 추가되는 레코드로 취급한다. 이런 가상의 테이블을 입력 테이블(input table)이라 한다.
 
 트리거마다 실행되는 마이크로 배치는 점진적으로 레코드가 추가되는 입력 테이블에 쿼리를 실행해 데이터를 처리한다. 입력 테이블에 쿼리를 실행해 얻는 결과를 결과 테이블이라고 부른다. 
 
+마이크로 배치 1회의 출력은 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTI0MTE0NDUsLTE2MDA4MTc0NDQsLT
-Y1MzI4NjMzNSwyMzQxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbMjA0NDExOTI0LC0yMTEyNDExNDQ1LC0xNj
+AwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
 -->
