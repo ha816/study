@@ -82,10 +82,13 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 	* 생성된 결과 테이블에 포함된 레코드를 모두 출력한다.
 * Update
 	* 이전 트리커에서 생성된 결과를 갱신 또는 추가된 레코드를 출력한다.
-* 
+* Append
+	* 직전 트리거에서 생성된 결과 테이블에 추가된 레코드를 출력한다.
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNj
-AwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
+eyJoaXN0b3J5IjpbLTEyNTIwNDA1MzYsODA5MDQ4MTg2LC0yMT
+EyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4
+MzU0XX0=
 -->
