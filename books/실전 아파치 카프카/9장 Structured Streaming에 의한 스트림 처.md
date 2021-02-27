@@ -64,10 +64,14 @@ Strucutred Streaming은 스파크를 구성하는 컴포넌트 중 하나로 스
 
 Strucutred Streaming은 Spark SQL에서 동작하는 새로운 스트림 처리를 위한 컴포넌트다. Strucutred Streaming은 장애 발생 후 일관된 복구를 위해 설계되었고, 이벤트 타임 윈도 집계 처리 지원등 Spark Streaming에서 어려웠던 기능이 구현되어 있다. Strucutred Streaming은 Dataset을 대상으로 한 컴포넌트이다. 
 
-Strucutred Streaming은 
+Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처리 애플리케이션을 개발할 때와 동일한 API를 사용해 처리할 수 있다. 따라서 배치 처리와 스트림 처리를 혼용할 경우도 통일된 방법으로 처리를 할 수 있다. 또한 Spark SQL 옵티마이저로 최적화 가능한 장점도 있다. 
+
+## Strucutred Streaming 데이터 처리 모델
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTMzMjc0MDcsLTE2MDA4MTc0NDQsLT
-Y1MzI4NjMzNSwyMzQxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbMTc0MDM5MzA1NSwtMTYwMDgxNzQ0NCwtNj
+UzMjg2MzM1LDIzNDExODM1NF19
 -->
