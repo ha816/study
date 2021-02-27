@@ -39,8 +39,12 @@ wordCountRdd.savaAsText("result.txt");
 
 데이터 처리 결과는 액션이라는 종류의 함수를 사용하여 그 결과를 취급한다. 액션 함수 중 하나로 saveAsText는 처리 결과를 파일로 저장할 수 있다.
 
+개발자가 작성한 데이터 처리 로직은 스케쥴러등과 함께 Driver Program에 모이게 된다. Driver Program은 Driver라고 불리는 프로세스에 실행된다. 스파크 애플리케이션의 경우 클러스터 내의 단일 슬레이브 서버에서 Driver를 실행하는 경우와 스파크 애플리케이션을 실행하는 클라이언트가 Driver를 겸업하는 경우가 있다. 
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTgyNTE3MzYsLTY1MzI4NjMzNSwyMz
-QxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTE3OTU1NDI1LC02NTMyODYzMzUsMjM0MT
+E4MzU0XX0=
 -->
