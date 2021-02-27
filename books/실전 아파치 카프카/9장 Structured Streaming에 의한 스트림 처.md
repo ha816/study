@@ -48,9 +48,12 @@ wordCountRdd.savaAsText("result.txt");
 
 ## DateFrame / Dataset
 
+RDD는 스파크를 이용하는데 가장 기본적인 데이터 구조이자 인터페이스다. 그러나 복잡한 처리에서는 최적화가 어렵고 처리 내용을 파악하기 어려워 개발 언어에 따라서 성능의 차이가 생길 수 있다. 
+
+클러스터 안에서 병렬 처리시 Executors는 JVM에서 동작하지만, 데이터 처리 로직을 작성한 프로그래밍 언어에 따라서는 처리 부분이 Executor가 아닌 다른 프로세스에서 동작할 수 있다. 예를 들어, 파이썬으로 데이터 로지
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMz
-QxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTQ2MDMwMjYyOSwtMTYwMDgxNzQ0NCwtNj
+UzMjg2MzM1LDIzNDExODM1NF19
 -->
