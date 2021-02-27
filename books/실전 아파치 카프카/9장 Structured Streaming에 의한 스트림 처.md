@@ -50,10 +50,12 @@ wordCountRdd.savaAsText("result.txt");
 
 RDD는 스파크를 이용하는데 가장 기본적인 데이터 구조이자 인터페이스다. 그러나 복잡한 처리에서는 최적화가 어렵고 처리 내용을 파악하기 어려워 개발 언어에 따라서 성능의 차이가 생길 수 있다. 
 
-클러스터 안에서 병렬 처리시 Executors는 JVM에서 동작하지만, 데이터 처리 로직을 작성한 프로그래밍 언어에 따라서는 처리 부분이 Executor가 아닌 다른 프로세스에서 동작할 수 있다. 예를 들어, 파이썬으로 데이터 로지
+클러스터 안에서 병렬 처리시 Executors는 JVM에서 동작하지만, 데이터 처리 로직을 작성한 프로그래밍 언어에 따라서는 처리 부분이 Executor가 아닌 다른 프로세스에서 동작할 수 있다. 예를 들어, 파이썬으로 데이터 로직을 작성한 경우 슬레이브 서버에서 실행된 일부가 파이썬 프로그램으로 실행된다. 파이썬 인터프리터의 성능이나 파이썬에 동작하는 프로그램과 Executor와 통신이 스칼라나 자바로 데이터 로직을 작성한 경우에 비해 성능이 저하되는 경우가 있다. 
+
+최근 이러한 문제를 해결한 구조로 DateFrame / Dataset이 있다. DateFrame/Dataset은 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDMwMjYyOSwtMTYwMDgxNzQ0NCwtNj
-UzMjg2MzM1LDIzNDExODM1NF19
+eyJoaXN0b3J5IjpbMzk5NzU1Mzg4LC0xNjAwODE3NDQ0LC02NT
+MyODYzMzUsMjM0MTE4MzU0XX0=
 -->
