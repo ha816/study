@@ -33,10 +33,14 @@ val wordCountRDD = rdd.flatMap(_.split("" ).map(word => (word, 1))).reducesByKey
 wordCountRdd.savaAsText("result.txt");
 ```
 
-개별 RDD요소에 정의한 map과 부여한 조건에 일치하는 요소를 거르는 filter, 특정 키별로 요소를 그룹화해서 보여주는 reduceByKey 등 미리 정의된 함
+개별 RDD요소에 정의한 map과 부여한 조건에 일치하는 요소를 거르는 filter, 특정 키별로 요소를 그룹화해서 보여주는 reduceByKey 등 미리 정의된 함수를 적용하여 데이터 처리 로직을 작성 가능하다. 
+
+이처럼 RDD에 대한 여러 처리를 위한 함수를 변환이라고 한다. 변환 하나하나는 단순한 데이터를 처리하는 경우가 많지만, 여러 변환을 체인으로 연결하여 복잡한 데이터 처리 로직을 작성할 수 있다. 
+
+데이터 처리 결과는 액션이라는 종류의 함수를 사용하여 그 결과를 취급한다. 액션 함수 중 하나로 saveAsText는 처리 결과를 파일로 저장할 수 있다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjk0MDAzNDksLTY1MzI4NjMzNSwyMz
+eyJoaXN0b3J5IjpbLTE5OTgyNTE3MzYsLTY1MzI4NjMzNSwyMz
 QxMTgzNTRdfQ==
 -->
