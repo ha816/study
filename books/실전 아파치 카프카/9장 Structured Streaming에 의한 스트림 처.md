@@ -45,8 +45,12 @@ wordCountRdd.savaAsText("result.txt");
 
 태스크를 실행하는 슬레이브 서버에서 동작하는 Executor라 불리는 프로세스다. 스파크에서는 클러스터 내부의 여러 Executor가 병렬로 태스크를 실행함으로써 전체 클러스터에서 병렬 분산 처리를 하고 있다. 
 
+
+## DateFrame / Dataset
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMTcwNDY4MiwtNjUzMjg2MzM1LDIzND
-ExODM1NF19
+eyJoaXN0b3J5IjpbLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMz
+QxMTgzNTRdfQ==
 -->
