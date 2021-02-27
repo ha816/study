@@ -98,12 +98,14 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 
 # Spark 애플리케이션 동작 환경
 
-트위터에서 수집한 트윗 데이터를 처리하는 애플리케이션을 만들고 카프카와 Strucutred Streaming을 연계하는 법
+트위터에서 수집한 트윗 데이터를 처리하는 애플리케이션을 만들고 카프카와 Strucutred Streaming을 연계하는 법을 알아보자. 
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1NzYxNjc1LC0xMzk1ODkwNjc4LDgwOT
-A0ODE4NiwtMjExMjQxMTQ0NSwtMTYwMDgxNzQ0NCwtNjUzMjg2
-MzM1LDIzNDExODM1NF19
+eyJoaXN0b3J5IjpbMTc5MDU0ODEwMSwtMTM5NTg5MDY3OCw4MD
+kwNDgxODYsLTIxMTI0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4
+NjMzNSwyMzQxMTgzNTRdfQ==
 -->
