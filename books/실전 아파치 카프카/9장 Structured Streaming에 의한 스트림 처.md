@@ -24,9 +24,14 @@
 // 각 레코드는 RDD의 한 요소로 추상화된다.
 ```
 
-RDD는 데이터 처리을 위한 추상화된 인터페이스로 이해할 수 있다. 레코드를 RDD로 추상화하여 개발자는 분산 처리를 의식하지 않고 컬렉션 처리 코드를 자
+RDD는 데이터 처리을 위한 추상화된 인터페이스로 이해할 수 있다. 레코드를 RDD로 추상화하여 개발자는 분산 처리를 의식하지 않고 컬렉션 처리 코드를 작성하여 애플리케이션 개발이 가능하다. 스파크는 처리 대상의 파일이나 RDBMS의 데이블 등 처리 대상의 데이터에 대한 RDD 인터페이스를 부여하는 수단과 기능을 제공한다. 
+
+```
+val rdd = sc.textFile("data.txt");
+
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNDA1NDU1MCwyMzQxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTY1MzI4NjMzNSwyMzQxMTgzNTRdfQ==
 -->
