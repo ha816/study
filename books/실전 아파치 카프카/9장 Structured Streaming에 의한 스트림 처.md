@@ -94,11 +94,13 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 * Append
 	* 컬럼의 선택이나 필터, 조인, 워터마크가 설정된 집약 처리
 
-프로그래밍 측면에서는 Dataset이 입력 테이블이나 결과 테이블, 그리고 그 중간 테이블의 인터페이스가 된다. 입력 테이블에 해당ㅎ
+프로그래밍 측면에서는 Dataset이 입력 테이블이나 결과 테이블, 그리고 그 중간 테이블의 인터페이스가 된다. 입력 테이블에 해당하는 DataSet에 대한 쿼리를 작성하면 중간 테이블에 해당하는 Dataset을 얻을 수 있다. 그리고 중간 테이블에 해당하는 Dataset도 마찬가지로 쿼리를 작성해 이를 반복하여 최종으로 얻은 Dataset은 결과 테이블에 해당한다. 또한 입력 테이블에 해당하는 Dataset에서 결과 테이블에 해당하는 Dataset을 얻을 때까지 일련의 쿼리는 통상 마이크로 배치 1회당 1번 실행된다. 
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyMTI4MzkyLC0xMzk1ODkwNjc4LDgwOT
+eyJoaXN0b3J5IjpbNTY4ODUyODMyLC0xMzk1ODkwNjc4LDgwOT
 A0ODE4NiwtMjExMjQxMTQ0NSwtMTYwMDgxNzQ0NCwtNjUzMjg2
 MzM1LDIzNDExODM1NF19
 -->
