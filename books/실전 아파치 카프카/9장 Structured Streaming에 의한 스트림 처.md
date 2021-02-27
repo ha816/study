@@ -76,10 +76,16 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 
 트리거마다 실행되는 마이크로 배치는 점진적으로 레코드가 추가되는 입력 테이블에 쿼리를 실행해 데이터를 처리한다. 입력 테이블에 쿼리를 실행해 얻는 결과를 결과 테이블이라고 부른다. 
 
-마이크로 배치 1회의 출력은 
+마이크로 배치 1회의 출력은 결과 테이블에 포함된 레코드의 일부거나 전부 일 수 있다. 이 출력 레코드는 출력 모드에 의해 제어 되는데 크게 세가지 종류가 있다. 
+
+* Complete
+	* 생성된 결과 테이블에 포함된 레코드를 모두 출력한다.
+* Update
+	* 이전 트리커에서 생성된 결과를 갱신 또는 추가된 레코드를 출력한다.
+* 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NDExOTI0LC0yMTEyNDExNDQ1LC0xNj
+eyJoaXN0b3J5IjpbODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNj
 AwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
 -->
