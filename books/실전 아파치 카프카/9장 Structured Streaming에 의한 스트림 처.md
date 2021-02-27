@@ -68,10 +68,14 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 
 ### Strucutred Streaming 데이터 처리 모델
 
-대다수 스트림 처리 컴포넌트는 스트림 데이터가 도착한 시점에 처리되는 Event-Driven 방
+대다수 스트림 처리 컴포넌트는 스트림 데이터가 도착한 시점에 처리되는 Event-Driven 방식을 따른다. 반면 Strucutred Streaming은 트리거라 불리는 데이터 처리를 위한 시간을 정의하고 있다. 
+
+트리커는 정기적인 간격으로 반복해서 데이터를 수신하고, 수백 밀리초에서 수초 정도의 짧은 배치를 반복 실행하여 스트림을 처리한다. 
+
+또한 데이터 모델의 특징도 있는데, Strucutred Streaming에서는 데이터 스트림을 RDBMS의 테이블 처럼 취급한다. 그리고 데이터 스트림 안의 데이터를 테이블에 무한히 추가되는 레코드로 취급한다. ㅇ
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MDI1MDE5OSwtMTYwMDgxNzQ0NCwtNj
+eyJoaXN0b3J5IjpbMTA1MzA5NTk4NSwtMTYwMDgxNzQ0NCwtNj
 UzMjg2MzM1LDIzNDExODM1NF19
 -->
