@@ -18,10 +18,15 @@
 
 스파크는 처리 대상 데이터를 RDD(Resilient Distributed Dateset; 탄력이 있게 분산된 데이터 셋)라 불리는 내장애성을 지닌 분산 컬렉션으로 추상화 한다. 즉 처리 대상의 레코드 하나하나를 RDD로 취급한다. 
 
-₩₩
+```
+// 아래 각 레코드는 모든 하나의 추상화된 컬렉션 구조로 취급된다.
+고양이, 개, 여우, 너구리
+// 각 레코드는 RDD의 한 요소로 추상화된다.
+```
 
+RDD는 데이터 처리을 위한 추상화된 인터페이스로 이해할 수 있다. 레코드를 RDD로 추상화하여 개발자는 분산 처리를 의식하지 않고 컬렉션 처리 코드를 자
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNjE0Njc0OSwyMzQxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbMTgzNDA1NDU1MCwyMzQxMTgzNTRdfQ==
 -->
