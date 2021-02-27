@@ -28,10 +28,14 @@ RDD는 데이터 처리을 위한 추상화된 인터페이스로 이해할 수 
 
 ```
 val rdd = sc.textFile("data.txt");
+val wordCountRDD = rdd.flatMap(_.split("" ).map(word => (word, 1))).reducesByKey(_+_)
+
+word
 
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MzI4NjMzNSwyMzQxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTQ5OTIzNjk4NywtNjUzMjg2MzM1LDIzND
+ExODM1NF19
 -->
