@@ -30,12 +30,13 @@ RDD는 데이터 처리을 위한 추상화된 인터페이스로 이해할 수 
 val rdd = sc.textFile("data.txt");
 val wordCountRDD = rdd.flatMap(_.split("" ).map(word => (word, 1))).reducesByKey(_+_)
 
-word
-
+wordCountRdd.savaAsText("result.txt");
 ```
+
+개별 RDD요소에 정의한 map과 부여한 조건에 일치하는 요소를 거르는 filter, 특정 키별로 요소를 그룹화해서 보여주는 reduceByKey 등 미리 정의된 함
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5OTIzNjk4NywtNjUzMjg2MzM1LDIzND
-ExODM1NF19
+eyJoaXN0b3J5IjpbLTE2Mjk0MDAzNDksLTY1MzI4NjMzNSwyMz
+QxMTgzNTRdfQ==
 -->
