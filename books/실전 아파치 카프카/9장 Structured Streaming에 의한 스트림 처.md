@@ -87,9 +87,14 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 
 어떤 출력 모드를 설정 할 수 있는지는 쿼리로 표현된 데이터 처리 종류에 따라 다르다. 다음은 각 출력 모드가 설정 가능한 처리의 예이다.
 
+* Complete
+	* 집약 처리의 결과 노출시 사용 가능
+* Update
+	* 컬럼의 선택이나 필터, 집약 처리에 사용 가능
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MzU1MDY2Myw4MDkwNDgxODYsLTIxMT
-I0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMzQxMTgz
-NTRdfQ==
+eyJoaXN0b3J5IjpbLTEzOTU4OTA2NzgsODA5MDQ4MTg2LC0yMT
+EyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4
+MzU0XX0=
 -->
