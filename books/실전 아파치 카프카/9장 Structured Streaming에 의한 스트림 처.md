@@ -85,10 +85,11 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 * Append
 	* 직전 트리거에서 생성된 결과 테이블에 추가된 레코드를 출력한다.
 
+어떤 출력 모드를 설정 할 수 있는지는 쿼리로 표현된 데이터 처리 종류에 따라 다르다. 다음은 각 출력 모드가 설정 가능한 처리의 예이다.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTIwNDA1MzYsODA5MDQ4MTg2LC0yMT
-EyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4
-MzU0XX0=
+eyJoaXN0b3J5IjpbMTc5MzU1MDY2Myw4MDkwNDgxODYsLTIxMT
+I0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMzQxMTgz
+NTRdfQ==
 -->
