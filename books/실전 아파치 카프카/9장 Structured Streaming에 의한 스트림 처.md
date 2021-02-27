@@ -62,10 +62,12 @@ RDD는 스파크를 이용하는데 가장 기본적인 데이터 구조이자 �
 
 Strucutred Streaming은 스파크를 구성하는 컴포넌트 중 하나로 스트림 처리를 여러 서버에서 병렬로 실행하는데 사용된다. 
 
-Spark Streaming이라 불리는 스트림 처리를 위한 커
+Strucutred Streaming은 Spark SQL에서 동작하는 새로운 스트림 처리를 위한 컴포넌트다. Strucutred Streaming은 장애 발생 후 일관된 복구를 위해 설계되었고, 이벤트 타임 윈도 집계 처리 지원등 Spark Streaming에서 어려웠던 기능이 구현되어 있다. Strucutred Streaming은 Dataset을 대상으로 한 컴포넌트이다. 
+
+Strucutred Streaming은 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzYwMTQwNywtMTYwMDgxNzQ0NCwtNj
-UzMjg2MzM1LDIzNDExODM1NF19
+eyJoaXN0b3J5IjpbLTE3OTMzMjc0MDcsLTE2MDA4MTc0NDQsLT
+Y1MzI4NjMzNSwyMzQxMTgzNTRdfQ==
 -->
