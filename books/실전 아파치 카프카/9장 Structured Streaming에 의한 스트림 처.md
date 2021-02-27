@@ -91,10 +91,14 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 	* 집약 처리의 결과 노출시 사용 가능
 * Update
 	* 컬럼의 선택이나 필터, 집약 처리에 사용 가능
+* Append
+	* 컬럼의 선택이나 필터, 조인, 워터마크가 설정된 집약 처리
+
+프로그래밍 측면에서는 Dataset이 입력 테이블이나 결과 테이블, 그리고 그 중간 테이블의 인터페이스가 된다. 입력 테이블에 해당ㅎ
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTU4OTA2NzgsODA5MDQ4MTg2LC0yMT
-EyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4
-MzU0XX0=
+eyJoaXN0b3J5IjpbNzMyMTI4MzkyLC0xMzk1ODkwNjc4LDgwOT
+A0ODE4NiwtMjExMjQxMTQ0NSwtMTYwMDgxNzQ0NCwtNjUzMjg2
+MzM1LDIzNDExODM1NF19
 -->
