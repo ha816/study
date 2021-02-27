@@ -12,10 +12,16 @@
 
 스파크는 맵리듀스 프레임 워크에 비해 더 효율적으로 데이터를 처리할 수 있도록 설계되어 있다. 이외에도 다양한 프로그래밍 언어로 애플리케이션 개발이 가능한 점이나, 머신러닝, 쿼리 처리, 그리고 이 장의 주제인 스트림 처리 등 특정 용도에 있어서 병렬 분산 처리를 쉽게 활용할 수 있는 컴포넌트가 포함되어 있다는 점도 장점이다. 
 
-스파크로 개발한 애플리케이션은 클러스터 관리자에 의해 계산 리소스가 관리되는 클러스터에서 동작한다. 클러스터 관리자에는 하둡의 YARN과 아파치 Mesos, 스파크에 포함된 Standalone이 있으며, 쿠버네티스도 이르
+스파크로 개발한 애플리케이션은 클러스터 관리자에 의해 계산 리소스가 관리되는 클러스터에서 동작한다. 클러스터 관리자에는 하둡의 YARN과 아파치 Mesos, 스파크에 포함된 Standalone이 있으며, 쿠버네티스도 이를 지원하고 있다. 
+
+## 스파크의 데이터 처리 모델
+
+스파크는 처리 대상 데이터를 RDD(Resilient Distributed Dateset; 탄력이 있게 분산된 데이터 셋)라 불리는 내장애성을 지닌 분산 컬렉션으로 추상화 한다. 즉 처리 대상의 레코드 하나하나를 RDD로 취급한다. 
+
+₩₩
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNTM1NjgzNSwyMzQxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTYwNjE0Njc0OSwyMzQxMTgzNTRdfQ==
 -->
