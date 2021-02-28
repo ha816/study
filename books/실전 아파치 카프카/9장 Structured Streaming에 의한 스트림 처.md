@@ -149,12 +149,18 @@ Structured Streaming에는 장애 등으로 스트림 처리가 중단된 뒤에
 스트림 처리 과정에서 필요한 내용을 스파크 셀을 사용한다. 스파크 셀은 스파크에 속한 도구로 스칼라로 코드를 작성하거나 대화식으로 실행하는 셀이다. 매번 코드를 빌드할 필요 없이 프로토 타입 작성 단계에서 테스트가 가능하다. 
 
 ```
-sp
+spark-shell --master local[10]
 ```
+
+--master local[10] 옵션은 스파크 셀을 로컬 모드로 실행하기 위한 옵션이다. 대괄호 안에 숫자는 에뮬레이트하는 병렬도를 뜻한다. 보다 정확한 의미로는 로컬모드로 에뮬레이트 할때 사용할 스레드의 개수를 말한다. 
+
+### Dataset 생성
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDU3Mjk0NjMsLTE3NzY3NDc4ODUsLT
+eyJoaXN0b3J5IjpbLTIwODg3OTAxMjQsLTE3NzY3NDc4ODUsLT
 E3MDU2MzY1MDQsLTQzMzU1MzEyMCwxODMxMTA0MTY3LDIwMDQ0
 ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4OTA2NzgsODA5MDQ4MT
 g2LC0yMTEyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyODYzMzUs
