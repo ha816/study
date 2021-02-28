@@ -212,13 +212,17 @@ tweetDS.printSchema
 
 카프카에서 수신한 데이터 key, value는 Date의 key 컬럼과 value 컬럼의 이진형으로 저장된다. 작성한 트윗 프로듀서에서는 트윗 데이터를 카프카에 송신하는 데이터의 Value로 표현했다. 송신된 트윗 데이터는 tweetDS의 value의 컬럼에 보관되다. 
 
+## 쿼리 작성
+
+생성된 Dataset에 대해서는 Spark SQL이 제공하는 API를 이용하여 쿼리를 작성할 수 있다. 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3OTYzMDY5MCwzMDIwNTYyMTQsLTU5MT
-YwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYz
-NjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MS
-wtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIx
-MTI0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMzQxMT
-gzNTRdfQ==
+eyJoaXN0b3J5IjpbLTIxMDMxMjgzMzcsMzAyMDU2MjE0LC01OT
+E2MDA0NTMsLTIwODg3OTAxMjQsLTE3NzY3NDc4ODUsLTE3MDU2
+MzY1MDQsLTQzMzU1MzEyMCwxODMxMTA0MTY3LDIwMDQ0ODcwNz
+EsLTExMzM5MTY1NzIsLTEzOTU4OTA2NzgsODA5MDQ4MTg2LC0y
+MTEyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyODYzMzUsMjM0MT
+E4MzU0XX0=
 -->
