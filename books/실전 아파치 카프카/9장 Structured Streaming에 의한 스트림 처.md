@@ -138,12 +138,15 @@ kafka-topics \
 
 메타 데이터 디렉터리 작성
 
-Structured Streaming에는 장애 등
+Structured Streaming에는 장애 등으로 스트림 처리가 중단된 뒤에도 도중에 재개할 수 있는 복구 법이 있다. 이 방법의 하나로 Strucutrued Streaming에서는 복구에 필요한 메타 데이터를 파일 시스템상에 기록한다. 보통 HDFS와 같이 분산 파일 시스템이 사용되는 것이 일반적이지만 로컬 모드에서는 동작 확인 등을 목적으로 클라이언트의 파일 시스템을 사용하는 것도 가능하다. 이 책에서는 Spark-client가 로컬 파일 시스템을 사용하므로 로컬 파일 시스템의 홈 디렉터리에 메타 데이터 저장용 디렉터리를 작성한다;
+
+```
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkzMjc4NzcwLC0xNzA1NjM2NTA0LC00Mz
+eyJoaXN0b3J5IjpbMzU4MjQ5MTA0LC0xNzA1NjM2NTA0LC00Mz
 M1NTMxMjAsMTgzMTEwNDE2NywyMDA0NDg3MDcxLC0xMTMzOTE2
 NTcyLC0xMzk1ODkwNjc4LDgwOTA0ODE4NiwtMjExMjQxMTQ0NS
 wtMTYwMDgxNzQ0NCwtNjUzMjg2MzM1LDIzNDExODM1NF19
