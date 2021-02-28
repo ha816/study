@@ -190,14 +190,24 @@ val = optionConfigured = formatConfigured.option("subscribe", "tweet")
 
 참고로 여러 옵션을 체인 메서드 형태로 호출하는 것 외에도 Map 형태로 담아 보내는 것도 가능하다. 
 
-포맷이나 옵션이 설정된 DataStreamReader에서 load 메서드를 호출하면 Dataset이 생성된다.
+포맷이나 옵션이 설정된 DataStreamReader에서 load 메서드를 호출하면 Dataset이 생성된다. 
+
+생성된 Dataset에는 자동적으로 스키마가 부여되어 있다. 스키마는 Dataset의 printSchema 메서드로 확인하고 있다. 
+
+```
+val tweetDS = optionConfigured.load
+tweetDS.printSchema
+```
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAyMDU2MjE0LC01OTE2MDA0NTMsLTIwOD
-g3OTAxMjQsLTE3NzY3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1
-MzEyMCwxODMxMTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1Nz
-IsLTEzOTU4OTA2NzgsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0x
-NjAwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
+eyJoaXN0b3J5IjpbMTQxODk2MTA5OCwzMDIwNTYyMTQsLTU5MT
+YwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYz
+NjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MS
+wtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIx
+MTI0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMzQxMT
+gzNTRdfQ==
 -->
