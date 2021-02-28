@@ -165,13 +165,17 @@ val = reader = spark.readStream
 val formatConfigured = reader.format("kafka")
 ```
 
-DataStreamReader에서는 format 
+DataStreamReader에서는 format 메서드로 입력 데이터 형식을 설정할 수 있다. 카프카에서 데이터를 수신하는 경우는 kafka라고 설정한다.
+
+카프카에서 데이터 수신하는 경우 Executor는 브로커에 대해 컨슈머로 동작한다. 컨슈머의 동작은 DataStreamReader의 option을 사용하여 제어할 수 있다. 
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzI0Mzc3NDUsLTIwODg3OTAxMjQsLT
-E3NzY3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1MzEyMCwxODMx
-MTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4OT
-A2NzgsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNjAwODE3NDQ0
-LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
+eyJoaXN0b3J5IjpbLTU5MTYwMDQ1MywtMjA4ODc5MDEyNCwtMT
+c3Njc0Nzg4NSwtMTcwNTYzNjUwNCwtNDMzNTUzMTIwLDE4MzEx
+MDQxNjcsMjAwNDQ4NzA3MSwtMTEzMzkxNjU3MiwtMTM5NTg5MD
+Y3OCw4MDkwNDgxODYsLTIxMTI0MTE0NDUsLTE2MDA4MTc0NDQs
+LTY1MzI4NjMzNSwyMzQxMTgzNTRdfQ==
 -->
