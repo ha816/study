@@ -169,13 +169,21 @@ DataStreamReader에서는 format 메서드로 입력 데이터 형식을 설정�
 
 카프카에서 데이터 수신하는 경우 Executor는 브로커에 대해 컨슈머로 동작한다. 컨슈머의 동작은 DataStreamReader의 option을 사용하여 제어할 수 있다. 
 
+일반적인 컨슈머에서는 처음에 접속할 브로커의 목록, Group ID, 레코드 Key와 Value의 디시리얼라이저의 설정이 필수 였지만, StructuredStreaming에서는 브로커 목록만이 필수설정이다. 
+
+데이터 수신원이 되는 토픽을 설정하기 위한 옵션은 아래와 같다.
+
+|  |  |
+|--|--|
+|  |  |
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MTYwMDQ1MywtMjA4ODc5MDEyNCwtMT
-c3Njc0Nzg4NSwtMTcwNTYzNjUwNCwtNDMzNTUzMTIwLDE4MzEx
-MDQxNjcsMjAwNDQ4NzA3MSwtMTEzMzkxNjU3MiwtMTM5NTg5MD
-Y3OCw4MDkwNDgxODYsLTIxMTI0MTE0NDUsLTE2MDA4MTc0NDQs
-LTY1MzI4NjMzNSwyMzQxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbODU4MDQwMjQ1LC01OTE2MDA0NTMsLTIwOD
+g3OTAxMjQsLTE3NzY3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1
+MzEyMCwxODMxMTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1Nz
+IsLTEzOTU4OTA2NzgsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0x
+NjAwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
 -->
