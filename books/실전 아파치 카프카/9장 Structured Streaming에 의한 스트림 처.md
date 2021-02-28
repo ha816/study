@@ -190,14 +190,14 @@ val = optionConfigured = formatConfigured.option("subscribe", "tweet")
 
 참고로 여러 옵션을 체인 메서드 형태로 호출하는 것 외에도 Map 형태로 담아 보내는 것도 가능하다. 
 
-포맷이나 옵션이 설정된 DataStreamReader
+포맷이나 옵션이 설정된 DataStreamReader에서 load 메서드를 호출하면 Dataset이 생성된다.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTk3NzAzNTAsLTU5MTYwMDQ1MywtMj
-A4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYzNjUwNCwtNDMz
-NTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MSwtMTEzMzkxNj
-U3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIxMTI0MTE0NDUs
-LTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMzQxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbMzAyMDU2MjE0LC01OTE2MDA0NTMsLTIwOD
+g3OTAxMjQsLTE3NzY3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1
+MzEyMCwxODMxMTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1Nz
+IsLTEzOTU4OTA2NzgsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0x
+NjAwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
 -->
