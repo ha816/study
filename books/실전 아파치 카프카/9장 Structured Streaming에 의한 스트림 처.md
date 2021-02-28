@@ -158,13 +158,20 @@ spark-shell --master local[10]
 
 Structured Streaming에 의한 스트림 처리는 입력 데이터에 대응한 Dataset을 생성하는 것 부터 시작한다. 처음에는 DataStreamReader이다. DateStreamReader는 SparkSession의 readStream 메서드를 호출하여 얻을 수 있다. 
 
-SparkSession은 Spark SQL의 세션을 나타내는 클래스다. 스파크 셀을 실행햇을때 Spark session A
+SparkSession은 Spark SQL의 세션을 나타내는 클래스다. 스파크 셀을 실행햇을때 Spark session available as sparkf에 확인이 가능하다. 스파크 셀은 처음부터 spark라는 인스터스가 생성되어 있다. 
+
+```
+val = reader = spark.readStream
+val formatConfigured = reader.format("kafka")
+```
+
+DataStreamReader에서는 format 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIzMTEyODYsLTIwODg3OTAxMjQsLTE3Nz
-Y3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1MzEyMCwxODMxMTA0
-MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4OTA2Nz
-gsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNjAwODE3NDQ0LC02
-NTMyODYzMzUsMjM0MTE4MzU0XX0=
+eyJoaXN0b3J5IjpbLTE1NzI0Mzc3NDUsLTIwODg3OTAxMjQsLT
+E3NzY3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1MzEyMCwxODMx
+MTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4OT
+A2NzgsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNjAwODE3NDQ0
+LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
 -->
