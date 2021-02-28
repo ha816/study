@@ -222,15 +222,15 @@ tweetDS.printSchema
 
 좋아요 횟수가 1000이상이 트윗 데이터를 추출하는 쿼리를 작성해보자. 
 
-첫 번째 단계에서는 selectExpr를 이용해서 selectedDS를 생성한다. 
+첫 번째 단계에서는 selectExpr를 이용해서 selectedDS를 생성한다. selectExpr은 SQL의 SELECT 구문에 해당하는 처리를 하는 메서드로, 투영의 원본이 되는 Dataset의 컬럼을 지정하거나 식을 작성할 수 있다. 트윗 데이터의 각종 ㅅ
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MjQ5MDYyLDE2MDU5NTYyMjksMzAyMD
-U2MjE0LC01OTE2MDA0NTMsLTIwODg3OTAxMjQsLTE3NzY3NDc4
-ODUsLTE3MDU2MzY1MDQsLTQzMzU1MzEyMCwxODMxMTA0MTY3LD
-IwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4OTA2NzgsODA5
-MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyOD
-YzMzUsMjM0MTE4MzU0XX0=
+eyJoaXN0b3J5IjpbLTExMDc2MzUwNTUsLTc3MjQ5MDYyLDE2MD
+U5NTYyMjksMzAyMDU2MjE0LC01OTE2MDA0NTMsLTIwODg3OTAx
+MjQsLTE3NzY3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1MzEyMC
+wxODMxMTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEz
+OTU4OTA2NzgsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNjAwOD
+E3NDQ0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
 -->
