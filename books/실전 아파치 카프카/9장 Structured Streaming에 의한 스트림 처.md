@@ -136,13 +136,15 @@ kafka-topics \
 
 ## 아파치 스파크 설정
 
+메타 데이터 디렉터리 작성
 
+Structured Streaming에는 장애 등
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDU2MzY1MDQsLTQzMzU1MzEyMCwxOD
-MxMTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4
-OTA2NzgsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNjAwODE3ND
-Q0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
+eyJoaXN0b3J5IjpbOTkzMjc4NzcwLC0xNzA1NjM2NTA0LC00Mz
+M1NTMxMjAsMTgzMTEwNDE2NywyMDA0NDg3MDcxLC0xMTMzOTE2
+NTcyLC0xMzk1ODkwNjc4LDgwOTA0ODE4NiwtMjExMjQxMTQ0NS
+wtMTYwMDgxNzQ0NCwtNjUzMjg2MzM1LDIzNDExODM1NF19
 -->
