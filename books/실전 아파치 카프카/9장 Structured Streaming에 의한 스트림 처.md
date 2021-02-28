@@ -206,12 +206,15 @@ tweetDS.printSchema
 | key | binary | Key로 설정된 데이터|
 | value | binary | Value로 설정된 데이터|
 | topic | string | 토픽명 |
+| partition | int | 파티션번호 |
+| timestamp | long | 타임스탬프 |
+| timestamType | int | timestamp 컬럼에 설정된 값을 나타내는 타임 스탬프  |
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NzYyOTIxMiwzMDIwNTYyMTQsLTU5MT
+eyJoaXN0b3J5IjpbMTEwMzU3OTA5MywzMDIwNTYyMTQsLTU5MT
 YwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYz
 NjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MS
 wtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIx
