@@ -102,7 +102,10 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 
 1. Twitter API를 이용하여 트윗 데이터를 수집하는 Tweet Producer가 존재.
 2. Tweet Producer의 JSON 형식의 트윗 데이터를 Kafka의 Tweet 토픽에 송신
-3. Apache Spark로 만든 스트림 처리 애플리케이션(Structred Streaming)에서 Tweet 토필에 쌓인 트윗 데이터를 스트림 처리 하고 다시 
+3. Apache Spark로 만든 스트림 처리 애플리케이션(Structred Streaming)에서 Tweet 토필에 쌓인 트윗 데이터를 스트림 처리 하고 다시 Kafka processed-tweat 토픽에 송신한다.
+4. Kafka Console Consumer에서 processed-tweet 을 경유하여 수신한 트윗 데이터의 처리 결과를 콘솔에 표시
+
+
 
 
 ## Spark 설정
@@ -112,7 +115,7 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQxOTc1MjM2LC0xMTMzOTE2NTcyLC0xMz
-k1ODkwNjc4LDgwOTA0ODE4NiwtMjExMjQxMTQ0NSwtMTYwMDgx
-NzQ0NCwtNjUzMjg2MzM1LDIzNDExODM1NF19
+eyJoaXN0b3J5IjpbLTEyMDQ3NTcwNSwtMTEzMzkxNjU3MiwtMT
+M5NTg5MDY3OCw4MDkwNDgxODYsLTIxMTI0MTE0NDUsLTE2MDA4
+MTc0NDQsLTY1MzI4NjMzNSwyMzQxMTgzNTRdfQ==
 -->
