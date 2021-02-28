@@ -142,13 +142,15 @@ Structured Streaming에는 장애 등으로 스트림 처리가 중단된 뒤에
 
 ## 카프카와 Structured Streaming 연계
 
+앞단에서 트윗 데이터를 kafka에 공급하는 것 까지는 완료되었다고 가정한다. 
 
+###
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzY3NDc4ODUsLTE3MDU2MzY1MDQsLT
-QzMzU1MzEyMCwxODMxMTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5
-MTY1NzIsLTEzOTU4OTA2NzgsODA5MDQ4MTg2LC0yMTEyNDExND
-Q1LC0xNjAwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
-
+eyJoaXN0b3J5IjpbNTEwNjM2NzA1LC0xNzc2NzQ3ODg1LC0xNz
+A1NjM2NTA0LC00MzM1NTMxMjAsMTgzMTEwNDE2NywyMDA0NDg3
+MDcxLC0xMTMzOTE2NTcyLC0xMzk1ODkwNjc4LDgwOTA0ODE4Ni
+wtMjExMjQxMTQ0NSwtMTYwMDgxNzQ0NCwtNjUzMjg2MzM1LDIz
+NDExODM1NF19
 -->
