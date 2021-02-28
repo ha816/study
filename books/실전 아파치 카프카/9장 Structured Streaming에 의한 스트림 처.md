@@ -130,16 +130,19 @@ kafka-topics \
 --zookeeper kafka-broker01:2081
 --create \
 --topic processed-tweet \
---par
+--partitions 1
+--replication-factor 1 
 ```
+
+## 아파치 스파크 설정
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMzMjEyMjMzLC00MzM1NTMxMjAsMTgzMT
-EwNDE2NywyMDA0NDg3MDcxLC0xMTMzOTE2NTcyLC0xMzk1ODkw
-Njc4LDgwOTA0ODE4NiwtMjExMjQxMTQ0NSwtMTYwMDgxNzQ0NC
-wtNjUzMjg2MzM1LDIzNDExODM1NF19
+eyJoaXN0b3J5IjpbLTE3MDU2MzY1MDQsLTQzMzU1MzEyMCwxOD
+MxMTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4
+OTA2NzgsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNjAwODE3ND
+Q0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
 -->
