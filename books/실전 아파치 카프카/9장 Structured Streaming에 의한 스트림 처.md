@@ -250,19 +250,22 @@ val filteredDS = selectedDS.filter("retweet_count >= 1000 AND favortie_count >= 
 마지막으로 추출한 트윗 데이터를 processed-tweet 토픽에 출력하기 위해 세 번째 쿼리를 작성한다. filteredDS 각 컬럼에 저장된 값을 연결하여 같은 형식의 문자열을 생성하려면 CONCAT 함수를 사용한다. 
 
 ```
-retweet_count =
+retweet_count = <리트윗 함수>, favortie_count = '좋아요 버튼이 눌린 횟수', text = <트윗본문>
 ```
+
+selectExpr을 이용해 생성된 문자열을 resultDS의 value 컬럼으로 가져온다. 
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM2MzM2MzYsMTExODE3NjAxMSwtMTk5Nj
-YyMTU3OSwtNzcyNDkwNjIsMTYwNTk1NjIyOSwzMDIwNTYyMTQs
-LTU5MTYwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMT
-cwNTYzNjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4
-NzA3MSwtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwNDgxOD
-YsLTIxMTI0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwy
-MzQxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTIwNjQwMTM5ODQsMTExODE3NjAxMSwtMT
+k5NjYyMTU3OSwtNzcyNDkwNjIsMTYwNTk1NjIyOSwzMDIwNTYy
+MTQsLTU5MTYwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NS
+wtMTcwNTYzNjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAw
+NDQ4NzA3MSwtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwND
+gxODYsLTIxMTI0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMz
+NSwyMzQxMTgzNTRdfQ==
 -->
