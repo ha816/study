@@ -238,10 +238,9 @@ val selectedDs = tweetDS.selectExpr("CAST(value AS string) AS value_as_str",
 
 
 
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxODk1NjY2NSwtMTk5NjYyMTU3OSwtNz
+eyJoaXN0b3J5IjpbMTExODE3NjAxMSwtMTk5NjYyMTU3OSwtNz
 cyNDkwNjIsMTYwNTk1NjIyOSwzMDIwNTYyMTQsLTU5MTYwMDQ1
 MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYzNjUwNC
 wtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MSwtMTEz
