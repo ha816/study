@@ -186,13 +186,16 @@ format 메서드는 DateStreamReader 인스턴스 자신을 반환하기 때문�
 ```
 val = optionConfigured = formatConfigured.option("subscribe", "tweet")
 .option("kafka.bootstrap.servers", "kafka-broker01:9092, ..." )
-
 ```
+
+참고로 여러 옵션을 체인 메서드 형태로 호출하는 것 외에도 Map 형태로 담아 보내는 것도 가능하다. 
+
+포맷이나 옵션이 설정된 DataStreamReader
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjgyNzg5NDQsLTU5MTYwMDQ1MywtMj
+eyJoaXN0b3J5IjpbLTE1MTk3NzAzNTAsLTU5MTYwMDQ1MywtMj
 A4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYzNjUwNCwtNDMz
 NTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MSwtMTEzMzkxNj
 U3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIxMTI0MTE0NDUs
