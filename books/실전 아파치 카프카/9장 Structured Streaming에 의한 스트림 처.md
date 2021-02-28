@@ -181,14 +181,20 @@ DataStreamReader에서는 format 메서드로 입력 데이터 형식을 설정�
 
 format 메서드는 DateStreamReader 인스턴스 자신을 반환하기 때문에 계속해서 option 메서드를 활용하여 설정이 가능하다. 
 
-아래처럼 tweet 트윅 데이터를 가져오도록 subscribe ㅇ보
+아래처럼 tweet 트윅 데이터를 가져오도록 subscribe 옵션을 설정해보자.
+
+```
+val = optionConfigured = formatConfigured.option("subscribe", "tweet")
+.option("kafka.bootstrap.servers", "kafka-broker01:9092, ..." )
+
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzcxMDE2OCwtNTkxNjAwNDUzLC0yMD
-g4NzkwMTI0LC0xNzc2NzQ3ODg1LC0xNzA1NjM2NTA0LC00MzM1
-NTMxMjAsMTgzMTEwNDE2NywyMDA0NDg3MDcxLC0xMTMzOTE2NT
-cyLC0xMzk1ODkwNjc4LDgwOTA0ODE4NiwtMjExMjQxMTQ0NSwt
-MTYwMDgxNzQ0NCwtNjUzMjg2MzM1LDIzNDExODM1NF19
+eyJoaXN0b3J5IjpbLTExNjgyNzg5NDQsLTU5MTYwMDQ1MywtMj
+A4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYzNjUwNCwtNDMz
+NTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MSwtMTEzMzkxNj
+U3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIxMTI0MTE0NDUs
+LTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMzQxMTgzNTRdfQ==
 -->
