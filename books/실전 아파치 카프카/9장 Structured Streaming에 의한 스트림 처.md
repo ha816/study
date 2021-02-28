@@ -173,15 +173,17 @@ DataStreamReader에서는 format 메서드로 입력 데이터 형식을 설정�
 
 데이터 수신원이 되는 토픽을 설정하기 위한 옵션은 아래와 같다.
 
-|  |  |
-|--|--|
-|  |  |
+|옵션| 설정값 형식  | 예|
+|--|--|--|
+| assign| JSON 형식으로 토픽과 파티션 번호 목록을 쌍으로 열거한다.| { "topic1":[0,1,2], "topic2": [3,4]} |
+| subscribe| 데이터 | |
+| subscribePattern|  | |
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4MDQwMjQ1LC01OTE2MDA0NTMsLTIwOD
+eyJoaXN0b3J5IjpbODgwNTM0OTU3LC01OTE2MDA0NTMsLTIwOD
 g3OTAxMjQsLTE3NzY3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1
 MzEyMCwxODMxMTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1Nz
 IsLTEzOTU4OTA2NzgsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0x
