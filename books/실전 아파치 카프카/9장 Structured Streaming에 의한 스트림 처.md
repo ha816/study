@@ -234,17 +234,19 @@ val selectedDs = tweetDS.selectExpr("CAST(value AS string) AS value_as_str",
 ...
 ```
 
+이렇게 얻어진 selectedDs 스키마는 아래와 같다. 
+sele
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODE3NjAxMSwtMTk5NjYyMTU3OSwtNz
-cyNDkwNjIsMTYwNTk1NjIyOSwzMDIwNTYyMTQsLTU5MTYwMDQ1
-MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYzNjUwNC
-wtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MSwtMTEz
-MzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIxMTI0MT
-E0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMzQxMTgzNTRd
-fQ==
+eyJoaXN0b3J5IjpbLTE5Njg3ODI2MDcsMTExODE3NjAxMSwtMT
+k5NjYyMTU3OSwtNzcyNDkwNjIsMTYwNTk1NjIyOSwzMDIwNTYy
+MTQsLTU5MTYwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NS
+wtMTcwNTYzNjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAw
+NDQ4NzA3MSwtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwND
+gxODYsLTIxMTI0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMz
+NSwyMzQxMTgzNTRdfQ==
 -->
