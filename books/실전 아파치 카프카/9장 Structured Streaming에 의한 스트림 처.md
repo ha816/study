@@ -220,15 +220,17 @@ tweetDS.printSchema
 
 예를 들어, 트윗 데이터에는 retweeted_status 속성에 포함된 것이 있는데, 이 속성이 포함된 트윗 데이터는 다른 트윗의 리트윗을 나타낸다. 또한 리트윗된 원래 트윗 데이터의 각종 속성은 retweeted_status 속성 값이 중첩된 방식으로 표현되어 있다. 
 
-좋아요 횟수가 1000이상이 트윗 데이터를 추출하는 
+좋아요 횟수가 1000이상이 트윗 데이터를 추출하는 쿼리를 작성해보자. 
+
+첫 번째 단계에서는 se
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgyMDc5MTMzLDE2MDU5NTYyMjksMzAyMD
-U2MjE0LC01OTE2MDA0NTMsLTIwODg3OTAxMjQsLTE3NzY3NDc4
-ODUsLTE3MDU2MzY1MDQsLTQzMzU1MzEyMCwxODMxMTA0MTY3LD
-IwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4OTA2NzgsODA5
-MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyOD
-YzMzUsMjM0MTE4MzU0XX0=
+eyJoaXN0b3J5IjpbMTkzNjE0NjUxMCwxNjA1OTU2MjI5LDMwMj
+A1NjIxNCwtNTkxNjAwNDUzLC0yMDg4NzkwMTI0LC0xNzc2NzQ3
+ODg1LC0xNzA1NjM2NTA0LC00MzM1NTMxMjAsMTgzMTEwNDE2Ny
+wyMDA0NDg3MDcxLC0xMTMzOTE2NTcyLC0xMzk1ODkwNjc4LDgw
+OTA0ODE4NiwtMjExMjQxMTQ0NSwtMTYwMDgxNzQ0NCwtNjUzMj
+g2MzM1LDIzNDExODM1NF19
 -->
