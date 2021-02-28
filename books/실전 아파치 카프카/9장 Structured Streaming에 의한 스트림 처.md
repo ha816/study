@@ -243,7 +243,14 @@ selectExpr에 의해 새로운 Dataset이 생성되었다. 이렇게 메서드�
 
 ```
 val filteredDS = selectedDS.filter("retweet_count >= 1000 AND favortie_count >= 1000")
+```
 
+조건식에는 SQL에서 지원하는 일반적인 연산자와 함수를 사용할 수 있다. 또한 AND 연산자와 OR연산자로 여러 조건식을 조합할 수 있다. 
+
+마지막으로 추출한 트윗 데이터를 processed-tweet 토픽에 출력하기 위해 세 번째 쿼리를 작성한다. filteredDS 각 컬럼에 저장된 값을 연결하여 같은 형식의 문자열을 생성하려면 CONCAT 함수를 사용한다. 
+
+```
+retweet_count =
 ```
 
 
@@ -251,11 +258,11 @@ val filteredDS = selectedDS.filter("retweet_count >= 1000 AND favortie_count >= 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQzMTQyNCwxMTE4MTc2MDExLC0xOT
-k2NjIxNTc5LC03NzI0OTA2MiwxNjA1OTU2MjI5LDMwMjA1NjIx
-NCwtNTkxNjAwNDUzLC0yMDg4NzkwMTI0LC0xNzc2NzQ3ODg1LC
-0xNzA1NjM2NTA0LC00MzM1NTMxMjAsMTgzMTEwNDE2NywyMDA0
-NDg3MDcxLC0xMTMzOTE2NTcyLC0xMzk1ODkwNjc4LDgwOTA0OD
-E4NiwtMjExMjQxMTQ0NSwtMTYwMDgxNzQ0NCwtNjUzMjg2MzM1
-LDIzNDExODM1NF19
+eyJoaXN0b3J5IjpbODM2MzM2MzYsMTExODE3NjAxMSwtMTk5Nj
+YyMTU3OSwtNzcyNDkwNjIsMTYwNTk1NjIyOSwzMDIwNTYyMTQs
+LTU5MTYwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMT
+cwNTYzNjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4
+NzA3MSwtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwNDgxOD
+YsLTIxMTI0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwy
+MzQxMTgzNTRdfQ==
 -->
