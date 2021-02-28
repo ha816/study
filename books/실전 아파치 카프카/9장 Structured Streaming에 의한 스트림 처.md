@@ -199,12 +199,19 @@ val tweetDS = optionConfigured.load
 tweetDS.printSchema
 ```
 
+부여된 스키마는 format 메서드에서 설정한 포멧에 따라 다르지만 아래 스키마가 부여되어 있다. 
+
+|컬럼| 데이터 형  | 의미|
+|--|--|--|
+| key | binary | Key로 설정된 데이터|
+| value | binary | Value로 설정된 데이터|
+| topic | string | 토픽명 |
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxODk2MTA5OCwzMDIwNTYyMTQsLTU5MT
+eyJoaXN0b3J5IjpbMTU4NzYyOTIxMiwzMDIwNTYyMTQsLTU5MT
 YwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYz
 NjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MS
 wtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIx
