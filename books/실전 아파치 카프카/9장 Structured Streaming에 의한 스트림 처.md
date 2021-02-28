@@ -208,13 +208,14 @@ tweetDS.printSchema
 | topic | string | 토픽명 |
 | partition | int | 파티션번호 |
 | timestamp | long | 타임스탬프 |
-| timestamType | int | timestamp 컬럼에 설정된 값을 나타내는 타임 스탬프  |
+| timestamType | int | timestamp 컬럼에 설정된 값을 나타내는 타임 스탬프 종류에 따라 다음과 결정하다 |
 
+카프카에서 수신한 데이터 key, value는 Date의 key 컬럼과 value 컬럼의 이진형으로 저장된다. 작성한 트윗 프로듀서에서는 트윗 데이터를 카프카에 송신하는 데이터의 Value로 표현했다. 송신된 트윗 데이터는 tweetDS의 value의 컬럼에 보관되다. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzU3OTA5MywzMDIwNTYyMTQsLTU5MT
+eyJoaXN0b3J5IjpbMTE3OTYzMDY5MCwzMDIwNTYyMTQsLTU5MT
 YwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYz
 NjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MS
 wtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIx
