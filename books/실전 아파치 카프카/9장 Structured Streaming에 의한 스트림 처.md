@@ -117,15 +117,23 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 
 tweet 및 processed-tweet은 카프카 클러스터를 실행한 상태로 kafka-client에서 다음 명령을 실행한다. 
 
+```
+kafka-topics \
+--zookeeper kafka-broker01:2181, ...
+--create
+--topic tweet \
+--partitions 1 \
+--replication-factor 1
 
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMTEwNDE2NywyMDA0NDg3MDcxLC0xMT
-MzOTE2NTcyLC0xMzk1ODkwNjc4LDgwOTA0ODE4NiwtMjExMjQx
-MTQ0NSwtMTYwMDgxNzQ0NCwtNjUzMjg2MzM1LDIzNDExODM1NF
-19
+eyJoaXN0b3J5IjpbLTQzMzU1MzEyMCwxODMxMTA0MTY3LDIwMD
+Q0ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4OTA2NzgsODA5MDQ4
+MTg2LC0yMTEyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyODYzMz
+UsMjM0MTE4MzU0XX0=
 -->
