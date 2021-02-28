@@ -222,12 +222,16 @@ tweetDS.printSchema
 
 좋아요 횟수가 1000이상이 트윗 데이터를 추출하는 쿼리를 작성해보자. 
 
-첫 번째 단계에서는 selectExpr를 이용해서 selectedDS를 생성한다. selectExpr은 SQL의 SELECT 구문에 해당하는 처리를 하는 메서드로, 투영의 원본이 되는 Dataset의 컬럼을 지정하거나 식을 작성할 수 있다. 트윗 데이터의 각종 ㅅ
+첫 번째 단계에서는 selectExpr를 이용해서 selectedDS를 생성한다. selectExpr은 SQL의 SELECT 구문에 해당하는 처리를 하는 메서드로, 투영의 원본이 되는 Dataset의 컬럼을 지정하거나 식을 작성할 수 있다. 트윗 데이터의 각종 속성은 JSON 필드로 value 컬럼에 저장된다. 
+
+Spark SQL에서는 SQL과 마찬가지로 많은 내장 연산자와 함수가 제공된다. 그리고 JSON 형식의 문자열에서 특정 필드를 추출하기 위해서는 get_json_object 함수를 사용할 수 있다. 
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDc2MzUwNTUsLTc3MjQ5MDYyLDE2MD
+eyJoaXN0b3J5IjpbLTIwNzQ3NTU1NDEsLTc3MjQ5MDYyLDE2MD
 U5NTYyMjksMzAyMDU2MjE0LC01OTE2MDA0NTMsLTIwODg3OTAx
 MjQsLTE3NzY3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1MzEyMC
 wxODMxMTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEz
