@@ -218,15 +218,17 @@ tweetDS.printSchema
 
 원래  트윗 데이터를 가공하는 쿼리 작성의 예를 소개하겠다. tweetDS의 value 컬럼에는 JSON 형식의 데이터가 저장된다. 그리고 JSON 각 필드는 트윗의 속성을 표현하고 있다. 
 
-예를 들어, 트윗 데이터에는 retweeted_status 속성에 포함된 것이 있는데, 
+예를 들어, 트윗 데이터에는 retweeted_status 속성에 포함된 것이 있는데, 이 속성이 포함된 트윗 데이터는 다른 트윗의 리트윗을 나타낸다. 또한 리트윗된 원래 트윗 데이터의 각종 속성은 retweeted_status 속성 값이 중첩된 방식으로 표현되어 있다. 
+
+좋아요 횟수가 1000이상이 트윗 데이터를 추출하는 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNTk1NjIyOSwzMDIwNTYyMTQsLTU5MT
-YwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYz
-NjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MS
-wtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIx
-MTI0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMzQxMT
-gzNTRdfQ==
+eyJoaXN0b3J5IjpbNTgyMDc5MTMzLDE2MDU5NTYyMjksMzAyMD
+U2MjE0LC01OTE2MDA0NTMsLTIwODg3OTAxMjQsLTE3NzY3NDc4
+ODUsLTE3MDU2MzY1MDQsLTQzMzU1MzEyMCwxODMxMTA0MTY3LD
+IwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4OTA2NzgsODA5
+MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyOD
+YzMzUsMjM0MTE4MzU0XX0=
 -->
