@@ -235,18 +235,20 @@ val selectedDs = tweetDS.selectExpr("CAST(value AS string) AS value_as_str",
 ```
 
 이렇게 얻어진 selectedDs 스키마는 아래와 같다. 
-sele
+selectExpr에 의해 새로운 Dataset이 생성되었다. 이렇게 메서드를 호출할때마다 생성되는 Dataset은 입력 테이블에서 결과 테이블을 얻기까지 중간 테이블을 추상화 한것이다. 
+
+이어서 두번째 단계를 실시할 쿼리를 작성한다.  DataFrame안의 레코드 중에 특정 조건에 일치하는 것만 추출하려면 filter 또는 where 조건을 사용한다. filter는 SQL의 WHERE 구문과 유사하며, Dat
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njg3ODI2MDcsMTExODE3NjAxMSwtMT
-k5NjYyMTU3OSwtNzcyNDkwNjIsMTYwNTk1NjIyOSwzMDIwNTYy
-MTQsLTU5MTYwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NS
-wtMTcwNTYzNjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAw
-NDQ4NzA3MSwtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwND
-gxODYsLTIxMTI0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMz
-NSwyMzQxMTgzNTRdfQ==
+eyJoaXN0b3J5IjpbMTE3Nzg0NDc4NywxMTE4MTc2MDExLC0xOT
+k2NjIxNTc5LC03NzI0OTA2MiwxNjA1OTU2MjI5LDMwMjA1NjIx
+NCwtNTkxNjAwNDUzLC0yMDg4NzkwMTI0LC0xNzc2NzQ3ODg1LC
+0xNzA1NjM2NTA0LC00MzM1NTMxMjAsMTgzMTEwNDE2NywyMDA0
+NDg3MDcxLC0xMTMzOTE2NTcyLC0xMzk1ODkwNjc4LDgwOTA0OD
+E4NiwtMjExMjQxMTQ0NSwtMTYwMDgxNzQ0NCwtNjUzMjg2MzM1
+LDIzNDExODM1NF19
 -->
