@@ -229,7 +229,8 @@ Spark SQL에서는 SQL과 마찬가지로 많은 내장 연산자와 함수가 �
 여러가지를 바탕으로 코드를 짜면 아래와 같다. 
 
 ```
-
+val selectedDs = tweetDS.selectExpr("CAST(value AS string) AS value_as_str")
+.selectExpr("Cast(get_json_object")
 ```
 
 
@@ -237,10 +238,11 @@ Spark SQL에서는 SQL과 마찬가지로 많은 내장 연산자와 함수가 �
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTY2MjE1NzksLTc3MjQ5MDYyLDE2MD
-U5NTYyMjksMzAyMDU2MjE0LC01OTE2MDA0NTMsLTIwODg3OTAx
-MjQsLTE3NzY3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1MzEyMC
-wxODMxMTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEz
-OTU4OTA2NzgsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNjAwOD
-E3NDQ0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
+eyJoaXN0b3J5IjpbMTExMjQyNDk0NywtMTk5NjYyMTU3OSwtNz
+cyNDkwNjIsMTYwNTk1NjIyOSwzMDIwNTYyMTQsLTU5MTYwMDQ1
+MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYzNjUwNC
+wtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MSwtMTEz
+MzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIxMTI0MT
+E0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMzQxMTgzNTRd
+fQ==
 -->
