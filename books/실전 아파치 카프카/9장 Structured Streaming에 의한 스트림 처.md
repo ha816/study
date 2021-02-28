@@ -214,12 +214,16 @@ tweetDS.printSchema
 
 ## 쿼리 작성
 
-생성된 Dataset에 대해서는 Spark SQL이 제공하는 API를 이용하여 쿼리를 작성할 수 있다. 
+생성된 Dataset에 대해서는 Spark SQL이 제공하는 API를 이용하여 쿼리를 작성할 수 있다. 이러한 API는 selectExpr이나 filter 등, SQL 구문과 유사한 메서드 군이 포함되어 있다. 
+
+원래  트윗 데이터를 가공하는 쿼리 작성의 예를 소개하겠다. tweetDS의 value 컬럼에는 JSON 형식의 데이터가 저장된다. 그리고 JSON 각 필드는 트윗의 속성을 표현하고 있다. 
+
+예를 들어, 트윗 데이터에는 ret
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDMxMjgzMzcsMzAyMDU2MjE0LC01OT
+eyJoaXN0b3J5IjpbLTE4NzQ2NTM5MDcsMzAyMDU2MjE0LC01OT
 E2MDA0NTMsLTIwODg3OTAxMjQsLTE3NzY3NDc4ODUsLTE3MDU2
 MzY1MDQsLTQzMzU1MzEyMCwxODMxMTA0MTY3LDIwMDQ0ODcwNz
 EsLTExMzM5MTY1NzIsLTEzOTU4OTA2NzgsODA5MDQ4MTg2LC0y
