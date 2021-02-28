@@ -156,13 +156,15 @@ spark-shell --master local[10]
 
 ### Dataset 생성
 
+Structured Streaming에 의한 스트림 처리는 입력 데이터에 대응한 Dataset을 생성하는 것 부터 시작한다. 처음에는 DataStreamReader이다. DateStreamReader는 SparkSession의 readStream 메서드를 호출하여 얻을 수 있다. 
 
+SparkSession은 Spark SQL의 세션을 나타내는 클래스다. 스파크 셀을 실행햇을때 Spark session A
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODg3OTAxMjQsLTE3NzY3NDc4ODUsLT
-E3MDU2MzY1MDQsLTQzMzU1MzEyMCwxODMxMTA0MTY3LDIwMDQ0
-ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4OTA2NzgsODA5MDQ4MT
-g2LC0yMTEyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyODYzMzUs
-MjM0MTE4MzU0XX0=
+eyJoaXN0b3J5IjpbMjIzMTEyODYsLTIwODg3OTAxMjQsLTE3Nz
+Y3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1MzEyMCwxODMxMTA0
+MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4OTA2Nz
+gsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0xNjAwODE3NDQ0LC02
+NTMyODYzMzUsMjM0MTE4MzU0XX0=
 -->
