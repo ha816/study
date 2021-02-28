@@ -218,15 +218,15 @@ tweetDS.printSchema
 
 원래  트윗 데이터를 가공하는 쿼리 작성의 예를 소개하겠다. tweetDS의 value 컬럼에는 JSON 형식의 데이터가 저장된다. 그리고 JSON 각 필드는 트윗의 속성을 표현하고 있다. 
 
-예를 들어, 트윗 데이터에는 ret
+예를 들어, 트윗 데이터에는 retweeted_status 속성에 포함된 것이 있는데, 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzQ2NTM5MDcsMzAyMDU2MjE0LC01OT
-E2MDA0NTMsLTIwODg3OTAxMjQsLTE3NzY3NDc4ODUsLTE3MDU2
-MzY1MDQsLTQzMzU1MzEyMCwxODMxMTA0MTY3LDIwMDQ0ODcwNz
-EsLTExMzM5MTY1NzIsLTEzOTU4OTA2NzgsODA5MDQ4MTg2LC0y
-MTEyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyODYzMzUsMjM0MT
-E4MzU0XX0=
+eyJoaXN0b3J5IjpbMTYwNTk1NjIyOSwzMDIwNTYyMTQsLTU5MT
+YwMDQ1MywtMjA4ODc5MDEyNCwtMTc3Njc0Nzg4NSwtMTcwNTYz
+NjUwNCwtNDMzNTUzMTIwLDE4MzExMDQxNjcsMjAwNDQ4NzA3MS
+wtMTEzMzkxNjU3MiwtMTM5NTg5MDY3OCw4MDkwNDgxODYsLTIx
+MTI0MTE0NDUsLTE2MDA4MTc0NDQsLTY1MzI4NjMzNSwyMzQxMT
+gzNTRdfQ==
 -->
