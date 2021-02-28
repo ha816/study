@@ -237,14 +237,21 @@ val selectedDs = tweetDS.selectExpr("CAST(value AS string) AS value_as_str",
 이렇게 얻어진 selectedDs 스키마는 아래와 같다. 
 selectExpr에 의해 새로운 Dataset이 생성되었다. 이렇게 메서드를 호출할때마다 생성되는 Dataset은 입력 테이블에서 결과 테이블을 얻기까지 중간 테이블을 추상화 한것이다. 
 
-이어서 두번째 단계를 실시할 쿼리를 작성한다.  DataFrame안의 레코드 중에 특정 조건에 일치하는 것만 추출하려면 filter 또는 where 조건을 사용한다. filter는 SQL의 WHERE 구문과 유사하며, Dat
+이어서 두번째 단계를 실시할 쿼리를 작성한다.  DataFrame안의 레코드 중에 특정 조건에 일치하는 것만 추출하려면 filter 또는 where 조건을 사용한다. filter는 SQL의 WHERE 구문과 유사하며, Dataset안의 컬럼등을 피연산자로 해서 조건식을 기술함으로써 조건에 일치하는 레코드를 추출한 Dataset을 생성한다. 
+
+앞 단의 selectExpr에서 AS 연산자를 사용하여 각 컬럼에 별칭을 부여했다. 따라서 filter에 기술하는 조건식의 피연산자는 별칭으로 참조할 수 있다. 
+
+```
+val filteredDS = selectedDS.filter("retweet_count >= 1000 AND favortie_count >= 1000")
+
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3Nzg0NDc4NywxMTE4MTc2MDExLC0xOT
+eyJoaXN0b3J5IjpbLTE0ODQzMTQyNCwxMTE4MTc2MDExLC0xOT
 k2NjIxNTc5LC03NzI0OTA2MiwxNjA1OTU2MjI5LDMwMjA1NjIx
 NCwtNTkxNjAwNDUzLC0yMDg4NzkwMTI0LC0xNzc2NzQ3ODg1LC
 0xNzA1NjM2NTA0LC00MzM1NTMxMjAsMTgzMTEwNDE2NywyMDA0
