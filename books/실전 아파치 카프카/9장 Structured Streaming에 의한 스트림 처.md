@@ -176,16 +176,19 @@ DataStreamReader에서는 format 메서드로 입력 데이터 형식을 설정�
 |옵션| 설정값 형식  | 예|
 |--|--|--|
 | assign| JSON 형식으로 토픽과 파티션 번호 목록을 쌍으로 열거한다.| { "topic1":[0,1,2], "topic2": [3,4]} |
-| subscribe| 데이터 | |
-| subscribePattern|  | |
+| subscribe| 데이터 수신원이 되는 토픽을 쉼표로 구분하여 열거| topic2, topic3 |
+| subscribePattern| 자바의 정규 표현식 문법으로 수신원이 되는 토픽 패턴을 작성| topic[1-3]|
 
+format 메서드는 DateStreamReader 인스턴스 자신을 반환하기 때문에 계속해서 option 메서드를 활용하여 설정이 가능하다. 
+
+아래처럼 tweet 트윅 데이터를 가져오도록 subscribe ㅇ보
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgwNTM0OTU3LC01OTE2MDA0NTMsLTIwOD
-g3OTAxMjQsLTE3NzY3NDc4ODUsLTE3MDU2MzY1MDQsLTQzMzU1
-MzEyMCwxODMxMTA0MTY3LDIwMDQ0ODcwNzEsLTExMzM5MTY1Nz
-IsLTEzOTU4OTA2NzgsODA5MDQ4MTg2LC0yMTEyNDExNDQ1LC0x
-NjAwODE3NDQ0LC02NTMyODYzMzUsMjM0MTE4MzU0XX0=
+eyJoaXN0b3J5IjpbMTgxNzcxMDE2OCwtNTkxNjAwNDUzLC0yMD
+g4NzkwMTI0LC0xNzc2NzQ3ODg1LC0xNzA1NjM2NTA0LC00MzM1
+NTMxMjAsMTgzMTEwNDE2NywyMDA0NDg3MDcxLC0xMTMzOTE2NT
+cyLC0xMzk1ODkwNjc4LDgwOTA0ODE4NiwtMjExMjQxMTQ0NSwt
+MTYwMDgxNzQ0NCwtNjUzMjg2MzM1LDIzNDExODM1NF19
 -->
