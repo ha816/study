@@ -111,14 +111,20 @@ Strucutred Streaming은 Dateset을 기반하기 때문에 SparkSQL로 배치 처
 
 단 클러스터의 구축 절차는 이 책의 범위를 벗어남으로 작성한 애플리케이션은 클러스터 관리자가 아닌 로컬 모드로 동작한다. 로컬모드는 스파크 애플리케이션을 실행하는 클라이언트가 Driver로 동작해서 여러 스레드를 사용해 클러스터상에서 Executor에 의한 병렬 분산 처리를 애뮬레이트 하는 모드다. 주로 애플리케이션을 개발할때 동작 확인에 사용한다. 
 
-이 책에서는 로컬 모드로 애플리케이션을 동작시킨다는 전재로 설명하지만 작성할 애플리케이션을 클러스터상에서 실제로 병
+이 책에서는 로컬 모드로 애플리케이션을 동작시킨다는 전재로 설명하지만 작성할 애플리케이션을 클러스터상에서 실제로 병렬 처리시킬 수도 있다. 클러스터 관리자에서 YARN을 사용해 하둡 클러스터에서 애플리케이션을 동작시키는 경우는 나중에 스파크를 하둡과 함께 사용할때의 설정에서 나중에 알아보겠다.
+
+## 카프카 설정
+
+tweet 및 processed-tweet은 카프카 클러스터를 실행한 상태로 kafka-client에서 다음 명령을 실행한다. 
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNzI5Mzc2NywyMDA0NDg3MDcxLC0xMT
+eyJoaXN0b3J5IjpbMTgzMTEwNDE2NywyMDA0NDg3MDcxLC0xMT
 MzOTE2NTcyLC0xMzk1ODkwNjc4LDgwOTA0ODE4NiwtMjExMjQx
 MTQ0NSwtMTYwMDgxNzQ0NCwtNjUzMjg2MzM1LDIzNDExODM1NF
 19
