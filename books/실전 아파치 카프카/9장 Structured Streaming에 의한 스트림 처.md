@@ -144,13 +144,19 @@ Structured Streaming에는 장애 등으로 스트림 처리가 중단된 뒤에
 
 앞단에서 트윗 데이터를 kafka에 공급하는 것 까지는 완료되었다고 가정한다. 
 
-###
+### 스파크 셀 실행
+
+스트림 처리 과정에서 필요한 내용을 스파크 셀을 사용한다. 스파크 셀은 스파크에 속한 도구로 스칼라로 코드를 작성하거나 대화식으로 실행하는 셀이다. 매번 코드를 빌드할 필요 없이 프로토 타입 작성 단계에서 테스트가 가능하다. 
+
+```
+sp
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEwNjM2NzA1LC0xNzc2NzQ3ODg1LC0xNz
-A1NjM2NTA0LC00MzM1NTMxMjAsMTgzMTEwNDE2NywyMDA0NDg3
-MDcxLC0xMTMzOTE2NTcyLC0xMzk1ODkwNjc4LDgwOTA0ODE4Ni
-wtMjExMjQxMTQ0NSwtMTYwMDgxNzQ0NCwtNjUzMjg2MzM1LDIz
-NDExODM1NF19
+eyJoaXN0b3J5IjpbLTEyNDU3Mjk0NjMsLTE3NzY3NDc4ODUsLT
+E3MDU2MzY1MDQsLTQzMzU1MzEyMCwxODMxMTA0MTY3LDIwMDQ0
+ODcwNzEsLTExMzM5MTY1NzIsLTEzOTU4OTA2NzgsODA5MDQ4MT
+g2LC0yMTEyNDExNDQ1LC0xNjAwODE3NDQ0LC02NTMyODYzMzUs
+MjM0MTE4MzU0XX0=
 -->
