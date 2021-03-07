@@ -7,7 +7,9 @@
 -   **Filter**: These are instances of  [Spring Framework  `GatewayFilter`](https://docs.spring.io/spring/docs/5.0.x/javadoc-api/org/springframework/web/server/GatewayFilter.html)  that have been constructed with a specific factory. Here, you can modify requests and responses before or after sending the downstream request.
 
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1OTU1NjE3OF19
+eyJoaXN0b3J5IjpbLTEwNjI2NDY5OTRdfQ==
 -->
